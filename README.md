@@ -1,2 +1,2 @@
-# COSC425-MAIN
-Main repo which points to the 2 submodules.
+# COSC425-DATA
+Repo which handles all the data part of the project.
