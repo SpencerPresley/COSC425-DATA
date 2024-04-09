@@ -1,5 +1,5 @@
 import os
-from GeneralUtilities_Backend.file_ops.file_ops import FileOps
+from GeneralUtilities.file_ops.file_ops import FileOps
 from typing import Tuple
 
 class AbstractCategoryMap:
