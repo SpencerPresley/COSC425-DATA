@@ -110,8 +110,8 @@ if __name__ == "__main__":
     abstract_list = [key for key, __ in data.items()]
     #print(abstract_list)
     category_list = [value for __, value in data.items()]
-    Tester = ResearchTaxonomy(abstract_list)
-    Taxonomy_Dict = Tester.get_taxonomy_abstracts(num_iter=3)
+    Tester = ResearchTaxonomy()
+    Taxonomy_Dict = Tester.get_taxonomy_abstracts()
     #print(Taxonomy_Dict)
     #Tester.get_reduced_taxonomy(Taxonomy_Dict)
     #print(Taxonomy_Dict)
