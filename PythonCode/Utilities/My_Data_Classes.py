@@ -10,6 +10,7 @@ class CategoryInfo:
     files: Set[str] = field(default_factory=set)
     faculty: Set[str] = field(default_factory=set)
     departments: Set[str] = field(default_factory=set)
+    titles: Set[str] = field(default_factory=set)
     # article_set: Set[str] = field(default_factory=set)
 
     def to_dict(self) -> dict:
