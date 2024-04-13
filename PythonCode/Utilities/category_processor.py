@@ -14,7 +14,7 @@ class CategoryProcessor:
         lines = file_content.splitlines()
         for line in lines:
             if line.startswith("WC"):
-                attributes_to_retrieve = ["author", "department", "wc_pattern"]
+                attributes_to_retrieve = ["author", "department", "wc_pattern", "title"]
                 attribute_results = self.utils.get_attributes(
                     entry_text=file_content, attributes=attributes_to_retrieve
                 )
@@ -45,7 +45,14 @@ class CategoryProcessor:
                 self.faculty_department_manager.update_article_counts(
                     self.category_counts
                 )
-
+                
+                title = attribute_results["title"][1] if attribute_results["title"][0] else None
+                if title is not None:
+                    self.faculty_department_manager.update_title_set(
+                        categories, title
+                    )
+                
+                
     def initialize_categories(self, categories):
         for i, category in enumerate(categories):
             # if category starts with 'WC ', remove it
