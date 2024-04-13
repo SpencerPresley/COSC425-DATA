@@ -1,4 +1,8 @@
 import os
+
+import sys
+sys.path.append('/mnt/linuxlab/home/spresley1/REAL_COSC425/MainRepo/COSC425-MAIN/backend/')
+
 from GeneralUtilities.file_ops.file_ops import FileOps
 from typing import Tuple
 
