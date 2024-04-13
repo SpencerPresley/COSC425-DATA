@@ -3,7 +3,7 @@ import os
 import warnings
 import time
 import json
-from AttributeExtractionStrategies import AuthorExtractionStrategy, DefaultExtractionStrategy, WosCategoryExtractionStrategy, DepartmentExtractionStrategy
+from AttributeExtractionStrategies import AuthorExtractionStrategy, DefaultExtractionStrategy, WosCategoryExtractionStrategy, TitleExtractionStrategy, DepartmentExtractionStrategy
 
 # TODO: make documentation on the class and it's methods
 
@@ -22,7 +22,7 @@ class Utilities:
         # attribute patterns
         self.attribute_patterns = {
             "author": AuthorExtractionStrategy(),
-            "title": DefaultExtractionStrategy(),
+            "title": TitleExtractionStrategy(),
             "abstract": DefaultExtractionStrategy(),
             "end_record": DefaultExtractionStrategy(),
             "wc_pattern": WosCategoryExtractionStrategy(),
@@ -58,6 +58,9 @@ class Utilities:
 
                 elif attribute == "wc_pattern":
                     attribute_results[attribute] = self.attribute_patterns[attribute].extract_attribute(entry_text)
+                
+                elif attribute == "title":
+                    attribute_results[attribute] = self.attribute_patterns[attribute].extract_attribute(entry_text)
                     
                 else:
                     # Extract the attribute and add it to results dictionary
@@ -91,6 +94,12 @@ class Utilities:
         # Truncate to avoid excessively long file names
         return sanitized[:max_length]
 
+    def get_article_title(self, entry_text):
+        """
+        Extracts the title of the article from the entry text.
+        """
+        return self.attribute_patterns["title"].extract_attribute(entry_text)
+    
     def get_file_name(self, author, title):
         """
         Constructs a filename using the first author's name and the title of an entry.

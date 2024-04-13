@@ -1,5 +1,6 @@
 import re
 import warnings
+from html import unescape
 
 class AttributeExtractionStrategy:
     def extract_attribute(self, entry_text):
@@ -135,6 +136,38 @@ class WosCategoryExtractionStrategy(AttributeExtractionStrategy):
         """
         return [category.strip() for category in category_string.split(";")]
     
+class TitleExtractionStrategy(AttributeExtractionStrategy):
+    def __init__(self):
+        self.title_pattern = re.compile(r"TI\s(.+?)(?=\nSO)", re.DOTALL)
+    
+    def extract_attribute(self, entry_text):
+        """
+        Extracts the title from the entry text, removing newline characters, HTML tags,
+        and condensing multiple spaces into a single space.
+
+        Parameters:
+            entry_text (str): The text of the entry from which to extract the title.
+
+        Returns:
+            tuple: A tuple containing a boolean indicating whether the extraction was successful,
+            and the cleaned title or None.
+        """
+        match = self.title_pattern.search(entry_text)
+        if match:
+            title = match.group(1).strip()
+            # Remove newline characters
+            title = title.replace("\n", " ")
+            # Remove HTML tags
+            title = re.sub(r"<[^>]+>", "", title)
+            # Unescape HTML entities
+            title = unescape(title)
+            # Condense multiple spaces into a single space
+            title = re.sub(r"\s+", " ", title)
+            return True, title
+        else:
+            warnings.warn("Attribute: 'Title' was not found in the entry", RuntimeWarning)
+            return False, None
+    
 class DefaultExtractionStrategy(AttributeExtractionStrategy):
     def __init__(self):
         self.patterns = {
@@ -174,3 +207,4 @@ class DefaultExtractionStrategy(AttributeExtractionStrategy):
             warnings.warn(f"Attribute: '{attribute}' was not found in the entry", RuntimeWarning)
             return False, None
         return True, match.group(1).strip()
+    
