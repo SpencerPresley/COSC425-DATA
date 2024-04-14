@@ -80,7 +80,7 @@ class WosClassification:
 if __name__ == "__main__":
     # Define path to the directory containing the WoS txt files you want to process
     # directory_path = "~/Desktop/425testing/ResearchNotes/Rommel-Center-Research/PythonCode/Utilities/split_files"
-    directory_path = "/home/cole/Desktop/COSC425-DATA/PythonCode/Utilities/split_files"
+    directory_path = "/mnt/linuxlab/home/cbarbes1/COSC425-DATA/PythonCode/Utilities/split_files"
     directory_path = os.path.expanduser(directory_path)
 
     # Instantiate the orchestrator class
