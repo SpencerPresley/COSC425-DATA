@@ -4,6 +4,7 @@ from typing import Set
 
 @dataclass
 class CategoryInfo:
+    url: str = ""
     faculty_count: int = 0
     department_count: int = 0
     article_count: int = 0
