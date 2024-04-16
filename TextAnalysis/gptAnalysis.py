@@ -138,8 +138,8 @@ if __name__ == "__main__":
         data = json.load(file)
     outFile = input("Please enter the output files name: ")
     Tester = ResearchTaxonomy(data, file_name=outFile)
-    # Tester.get_taxonomy_abstracts()
-    Tester.get_individual_taxonomy(data['Probability puppets'], title='Probability puppets')
+    #Tester.get_taxonomy_abstracts()
+    Tester.get_individual_taxonomy(data['Resilience as a coping strategy for reducing auditor turnover intentions'], title='Resilience as a coping strategy for reducing auditor turnover intentions')
     # Taxonomy_Dict = Tester.get_categories()
     # with open('taxonomyExample.json', 'w') as file:
     #     json.dump(Taxonomy_Dict, file, indent=4)
