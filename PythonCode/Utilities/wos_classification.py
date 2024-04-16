@@ -6,7 +6,8 @@ from faculty_department_manager import FacultyDepartmentManager
 from faculty_set_postprocessor import FacultyPostprocessor
 import os
 import json
-from _AbstractCategoryMap import AbstractCategoryMap
+import re
+from AbstractCategoryMap import AbstractCategoryMap
 
 class WosClassification:
     def __init__(self, *, directory_path):
@@ -60,10 +61,24 @@ class WosClassification:
         self.faculty_department_manager.update_faculty_count()
         self.faculty_department_manager.update_department_count()
 
+    def addUrl(self):
+        tempDict = self.get_category_counts()
+        # This pattern now matches characters not allowed in a URL
+        pattern = re.compile(r'[^A-Za-z0-9-]+')
+        for category, values in tempDict.items():
+            # Replace matched characters with a hyphen
+            url = pattern.sub('-', category.lower())
+            # Remove potential multiple hyphens with a single one
+            url = re.sub('-+', '-', url)
+            # Remove leading or trailing hyphens
+            url = url.strip('-')
+            values.url = url
+        
     def serialize_and_save_data(self, output_path="category_data.json"):
         """
         Serializes category data to JSON and saves it to a file.
         """
+        self.addUrl()
         # Prepare category data for serialization using to_dict method from CategoryInfo class from My_Data_Classes.py
         categories_serializable = {
             category: category_info.to_dict()
@@ -80,7 +95,7 @@ class WosClassification:
 if __name__ == "__main__":
     # Define path to the directory containing the WoS txt files you want to process
     # directory_path = "~/Desktop/425testing/ResearchNotes/Rommel-Center-Research/PythonCode/Utilities/split_files"
-    directory_path = "/mnt/linuxlab/home/cbarbes1/COSC425-DATA/PythonCode/Utilities/split_files"
+    directory_path = "//Users/spencerpresley/COSC425-MAIN/backend/PythonCode/Utilities/split_files"
     directory_path = os.path.expanduser(directory_path)
 
     # Instantiate the orchestrator class
