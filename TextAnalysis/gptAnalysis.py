@@ -8,9 +8,9 @@ import random
 import os
 import json
 
-# from dotenv import load_dotenv
+from dotenv import load_dotenv
 
-# load_dotenv('/home/cole/.openai')
+load_dotenv('/home/cole/.openai')
 
 API_KEY = os.getenv('OPENAI_API_KEY')
 class ResearchTaxonomy:
@@ -88,25 +88,31 @@ class ResearchTaxonomy:
             json.dump(json_output, file, indent=4)
         print("Taxonomy of abstract Complete")
     
-    def get_individual_taxonomy(self, abstractData, title):
-        with open(self.file_name, 'w') as file:
-            json_output = {}
-            messages = [
-                {'role':'system', 'content':self.prompt[self.prompt_num]},
-                {'role':'user', 'content': abstractData['abstract']},
-            ]
+    def get_individual_taxonomy(self, abstractData, title, outputType):
+        json_output = {}
+        messages = [
+            {'role':'system', 'content':self.prompt[self.prompt_num]},
+            {'role':'user', 'content': abstractData['abstract']},
+        ]
 
-            output_taxonomy = self.get_response(messages=messages)
-            json_output[title] = json.loads(output_taxonomy)
-            json.dump(json_output, file, indent=4)
+        output_taxonomy = self.get_response(messages=messages)
+        json_output[title] = json.loads(output_taxonomy)
         print("Taxonomy of abstract Complete")
-    
-    def get_reduced_taxonomy(self):
+        if outputType.lower() == 'file':
+            with open(self.file_name, 'w') as file:
+                json.dump(json_output, file, indent=4)
+        return json_output
+        
+
+    def get_taxonomy(self):
         """
         Function to reduce category taxonomy 
         Category_Dict : {"upper level" : "mid-level" : {"low-level":"theme"}}
         """
-        print()
+        fileName = input('Please enter the full path to the file: ')
+        with open(fileName, 'r+w') as file:
+            json.read_file()
+            self.get_individual_taxonomy()
 
     def get_categories(self):
         """

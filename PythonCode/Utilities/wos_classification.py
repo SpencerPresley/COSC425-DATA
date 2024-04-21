@@ -7,7 +7,7 @@ from faculty_set_postprocessor import FacultyPostprocessor
 import os
 import json
 import re
-from AbstractCategoryMap import AbstractCategoryMap
+from _AbstractCategoryMap import AbstractCategoryMap
 
 class WosClassification:
     def __init__(self, *, directory_path):
@@ -95,7 +95,7 @@ class WosClassification:
 if __name__ == "__main__":
     # Define path to the directory containing the WoS txt files you want to process
     # directory_path = "~/Desktop/425testing/ResearchNotes/Rommel-Center-Research/PythonCode/Utilities/split_files"
-    directory_path = "//Users/spencerpresley/COSC425-MAIN/backend/PythonCode/Utilities/split_files"
+    directory_path = "/mnt/linuxlab/home/cbarbes1/COSC425-DATA/PythonCode/Utilities/split_files"
     directory_path = os.path.expanduser(directory_path)
 
     # Instantiate the orchestrator class
