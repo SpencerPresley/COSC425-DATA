@@ -7,16 +7,12 @@ import openai
 import random
 import os
 import json
+import re
 
-from dotenv import load_dotenv
-
-load_dotenv('/home/cole/.openai')
-
-API_KEY = os.getenv('OPENAI_API_KEY')
 class ResearchTaxonomy:
     def __init__(self,prompt_num=0, file_name="Taxonomy.json"):
-        self.inFile = '/home/cole/Desktop/COSC425-DATA/PythonCode/Utilities/abstracts_to_categories.json'
-        format_final = """{
+        self.inFile = input("Please enter the path to the abstract file: ")
+        format_final = """
             "Upper Level Categories" : [
                 "Computer Science", 
                 "Health and Medicine", 
@@ -33,22 +29,21 @@ class ResearchTaxonomy:
                 "Unsupervised Learning", 
                 "Named Entity Recognition", 
                 "Sentiment Analysis", 
-                "Object Detection", 
+                "Object Detection", { "hello world " : ["yuck"]} 
                 "Image Segmentation"
                 "Sorting Algorithms", 
                 "Graph Algorithms"
             ]
-        }
         """
         self.prompt = [f"""
-        You are an expert constructing a category taxonomy from an abstract to output JSON. \
+        You are an expert constructing a category taxonomy from an abstract\
+        The output Must be in JSON, do not output this with ```json ``` around the JSON\
         Given a list of predefined categories and topics \
         Please find a hierarchy of topics 
-        Output the taxonomy in JSON\
         <Parent Category> : <Child Category>, <Child Category> \
         This should be a concise category like Computer Science
         Only give about 5 or 6 categories, they should be categories from this site https://arxiv.org/category_taxonomy\
-        heres how it should look{format_final}""",
+        heres how it should look {format_final}""",
         """You are an expert at creating a taxonomy of categories for a collection of abstracts. Given an abstract form 3 JSON objects for Upper Level Categories, Middle level categories, Themes: {"Upper_level" : ["Medicine", "Computer Science", "Biology"] "Mid_level" : ["Cardiology", "Artificial Intelligence", "Marine Biology"] "Themes" : ["Heart Transplants","Large Language Models", "Marine Organisms"]}Take categories from the following websites: https://arxiv.org/category_taxonomy"""] 
         with open(self.inFile, 'r') as file:
             self.AbstractDict = json.load(file)
@@ -87,7 +82,14 @@ class ResearchTaxonomy:
                 
                 output_taxonomy = self.get_response(messages=messages)
                 print(output_taxonomy)
-                json_output[key] = json.loads(output_taxonomy)
+                # test the output to be sure that it is correct
+                try:
+                    json_output[key] = json.loads(output_taxonomy)
+                    print(json_output)
+                except json.JSONDecodeError:
+                    # use a regex to fix the string
+                    cleaned_json = re.sub(r'^```json\s*|\s*```$', '', output_taxonomy).strip()
+            json.dump(json_output, file, indent=4)
         print("Taxonomy of abstract Complete")
         return json_output
     
