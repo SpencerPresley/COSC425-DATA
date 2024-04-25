@@ -14,7 +14,8 @@ load_dotenv('/home/cole/.openai')
 
 API_KEY = os.getenv('OPENAI_API_KEY')
 class ResearchTaxonomy:
-    def __init__(self, abstracts = {}, prompt_num=0, file_name="Taxonomy.json"):
+    def __init__(self,prompt_num=0, file_name="Taxonomy.json"):
+        self.inFile = '/home/cole/Desktop/COSC425-DATA/PythonCode/Utilities/abstracts_to_categories.json'
         format_final = """{
             "Upper Level Categories" : [
                 "Computer Science", 
@@ -49,14 +50,14 @@ class ResearchTaxonomy:
         Only give about 5 or 6 categories, they should be categories from this site https://arxiv.org/category_taxonomy\
         heres how it should look{format_final}""",
         """You are an expert at creating a taxonomy of categories for a collection of abstracts. Given an abstract form 3 JSON objects for Upper Level Categories, Middle level categories, Themes: {"Upper_level" : ["Medicine", "Computer Science", "Biology"] "Mid_level" : ["Cardiology", "Artificial Intelligence", "Marine Biology"] "Themes" : ["Heart Transplants","Large Language Models", "Marine Organisms"]}Take categories from the following websites: https://arxiv.org/category_taxonomy"""] 
-        self.AbstractDict = abstracts
+        with open(self.inFile, 'r') as file:
+            self.AbstractDict = json.load(file)
         self.prompt_num = prompt_num if prompt_num <= len(self.prompt) else 0
         self.file_name=file_name
-        self.category_dict = self.get_categories()
-        self.taxonomy = self.get_taxonomy_abstracts()
-        self.analyzed = self.get_website_taxonomy()
+        # self.category_dict = self.get_categories()
+        # self.taxonomy = self.get_taxonomy_abstracts()
 
-    def get_response(self, messages, model='gpt-3.5-turbo', temperature=0.5, max_tokens=500):
+    def get_response(self, messages, model='gpt-3.5-turbo', temperature=0.5, max_tokens=1000):
         """
         This function prompts the openai api and returns the output
         Parameters: The message in open ai format, the model, the temperature, and the maximum token size
@@ -76,8 +77,6 @@ class ResearchTaxonomy:
         parameters: The abstract list, the prompt and the number of abstracts
         print to json file
         """
-        # with open(file_name, 'r') as infile:
-        #     json_output = json.load(infile)
         with open(self.file_name, 'w') as file:
             json_output = {}
             for key, value in self.AbstractDict.items():
@@ -85,38 +84,28 @@ class ResearchTaxonomy:
                     {'role':'system', 'content':self.prompt[self.prompt_num]},
                     {'role':'user', 'content': value['abstract']},
                 ]
-
+                
                 output_taxonomy = self.get_response(messages=messages)
+                print(output_taxonomy)
                 json_output[key] = json.loads(output_taxonomy)
-            #json.dump(json_output, file, indent=4)
         print("Taxonomy of abstract Complete")
         return json_output
     
-    def get_individual_taxonomy(self, abstractData, title, outputType):
+    def get_individual_taxonomy(self, abstractData, title, outputType='file'):
         json_output = {}
         messages = [
             {'role':'system', 'content':self.prompt[self.prompt_num]},
-            {'role':'user', 'content': abstractData['abstract']},
+            {'role':'user', 'content': abstractData},
         ]
 
         output_taxonomy = self.get_response(messages=messages)
+        print(output_taxonomy)
         json_output[title] = json.loads(output_taxonomy)
         print("Taxonomy of abstract Complete")
         if outputType.lower() == 'file':
             with open(self.file_name, 'w') as file:
                 json.dump(json_output, file, indent=4)
         return json_output
-        
-
-    def get_taxonomy(self):
-        """
-        Function to reduce category taxonomy 
-        Category_Dict : {"upper level" : "mid-level" : {"low-level":"theme"}}
-        """
-        fileName = input('Please enter the full path to the file: ')
-        with open(fileName, 'r+w') as file:
-            json.read_file()
-            self.get_individual_taxonomy()
 
     def get_categories(self):
         """
@@ -140,29 +129,24 @@ class ResearchTaxonomy:
             [theme_set.add(i) for i in temp_dict["Themes"]]
         # return a dictionary of the categories for later use 
         return {"Upper":list(Upper_category_set), "Mid":list(mid_category_set), "Theme":list(theme_set)}
-    
-    def get_website_taxonomy(self):
-        data_dict = set()
-        [data_dict.add(i) for i in self.category_dict["Upper"]]
-        [data_dict.add(i) for i in self.category_dict["Mid"]]
-        print(list(data_dict))
+        
+
+    def add_theme_taxonomy(self):
+        """
+        Function to add themes to the taxonomy
+        """
+        fileName = '/home/cole/Desktop/COSC425-DATA/PythonCode/Utilities/processed_category_data.json'
+        with open(fileName, 'r+') as file:
+            categoryDict = json.load(file)
+
+        result_dict = self.get_taxonomy_abstracts()
+
+        for key, value in categoryDict.items():
+            value['Themes'] = []
+            for title in value['titles']:
+                print()
+
 
 if __name__ == "__main__":
-    file_path = input("Please enter the path to the data file: ")
-    with open(file_path, 'r') as file:
-        data = json.load(file)
-    outFile = input("Please enter the output files name: ")
-<<<<<<< HEAD
-    Tester = ResearchTaxonomy(data, file_name=outFile)
-    #Tester.get_taxonomy_abstracts()
-    Tester.get_individual_taxonomy(data['Resilience as a coping strategy for reducing auditor turnover intentions'], title='Resilience as a coping strategy for reducing auditor turnover intentions')
-    # Taxonomy_Dict = Tester.get_categories()
-=======
-    Tester = ResearchTaxonomy(data)
-
-    # Tester.get_taxonomy_abstracts()
-    #Tester.get_individual_taxonomy(data['Probability puppets'], title='Probability puppets')
-    Taxonomy_Dict = Tester.get_categories()
->>>>>>> 68ebb913a2053e7254aaa654f9a0dee80414dfe0
-    # with open('taxonomyExample.json', 'w') as file:
-    #     json.dump(Taxonomy_Dict, file, indent=4)
+    Tester = ResearchTaxonomy()
+    Tester.get_taxonomy_abstracts()
