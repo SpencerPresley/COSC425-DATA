@@ -10,7 +10,7 @@ import json
 import re
 
 class ResearchTaxonomy:
-    def __init__(self,prompt_num=0, file_name="Taxonomy.json"):
+    def __init__(self,prompt_num=0, file_name="Taxonomy.json", data_needed=False):
         self.inFile = input("Please enter the path to the abstract file: ")
         format_final = """
             "Upper Level Categories" : [
@@ -35,6 +35,7 @@ class ResearchTaxonomy:
                 "Graph Algorithms"
             ]
         """
+        # set of prompts for the class to use, more can be added when instanciated
         self.prompt = [f"""
         You are an expert constructing a category taxonomy from an abstract\
         The output Must be in JSON, do not output this with ```json ``` around the JSON\
@@ -47,10 +48,13 @@ class ResearchTaxonomy:
         """You are an expert at creating a taxonomy of categories for a collection of abstracts. Given an abstract form 3 JSON objects for Upper Level Categories, Middle level categories, Themes: {"Upper_level" : ["Medicine", "Computer Science", "Biology"] "Mid_level" : ["Cardiology", "Artificial Intelligence", "Marine Biology"] "Themes" : ["Heart Transplants","Large Language Models", "Marine Organisms"]}Take categories from the following websites: https://arxiv.org/category_taxonomy"""] 
         with open(self.inFile, 'r') as file:
             self.AbstractDict = json.load(file)
+        #set the prompt number
         self.prompt_num = prompt_num if prompt_num <= len(self.prompt) else 0
+        # set the file name
         self.file_name=file_name
-        # self.category_dict = self.get_categories()
-        # self.taxonomy = self.get_taxonomy_abstracts()
+
+        if data_needed is True:
+            self.get_taxonomy_abstracts()
 
     def get_response(self, messages, model='gpt-3.5-turbo', temperature=0.5, max_tokens=1000):
         """
@@ -81,11 +85,9 @@ class ResearchTaxonomy:
                 ]
                 
                 output_taxonomy = self.get_response(messages=messages)
-                print(output_taxonomy)
                 # test the output to be sure that it is correct
                 try:
                     json_output[key] = json.loads(output_taxonomy)
-                    print(json_output)
                 except json.JSONDecodeError:
                     # use a regex to fix the string
                     cleaned_json = re.sub(r'^```json\s*|\s*```$', '', output_taxonomy).strip()
@@ -94,6 +96,14 @@ class ResearchTaxonomy:
         return json_output
     
     def get_individual_taxonomy(self, abstractData, title, outputType='file'):
+        """
+        This function gets an individual publications taxonomy
+        parameters needed: the abstracts data should be as follows in a dictionary { "title":"..."{
+        "abstract":"...",
+        "categories":"...",
+        }}
+        optionally, you can set whether
+        """
         json_output = {}
         messages = [
             {'role':'system', 'content':self.prompt[self.prompt_num]},
@@ -133,22 +143,29 @@ class ResearchTaxonomy:
         return {"Upper":list(Upper_category_set), "Mid":list(mid_category_set), "Theme":list(theme_set)}
         
 
-    def add_theme_taxonomy(self):
+    def add_theme_taxonomy(self, fileName):
         """
         Function to add themes to the taxonomy
         """
-        fileName = '/home/cole/Desktop/COSC425-DATA/PythonCode/Utilities/processed_category_data.json'
-        with open(fileName, 'r+') as file:
+        with open(fileName, 'r') as file:
             categoryDict = json.load(file)
 
-        result_dict = self.get_taxonomy_abstracts()
+        with open(self.file_name, 'r') as file:
+            result_dict = file.read()
+            result_dict = json.loads(result_dict)
 
-        for key, value in categoryDict.items():
-            value['Themes'] = []
-            for title in value['titles']:
-                print()
+        categoryList= list(categoryDict.keys())
+
+        for category in categoryList:
+            for title in categoryDict[category]['titles']: 
+                if title in result_dict:
+                    categoryDict[category]['themes'] = result_dict[title]['Themes']
+
+        with open('output_data.json', 'w') as file:
+            json.dump(categoryDict, file, indent=4)
 
 
 if __name__ == "__main__":
-    Tester = ResearchTaxonomy()
-    Tester.get_taxonomy_abstracts()
+    Tester = ResearchTaxonomy(data_needed=True)
+    filePath = input("Please enter the path to the file containing the taxonomy: ")
+    Tester.add_theme_taxonomy(fileName=filePath)
