@@ -72,6 +72,24 @@ class Utilities:
                 raise ValueError(f"Unknown attribute: '{attribute}' requested.")
         return attribute_results
 
+    def get_tc_list(self, entry_text):
+        """
+        Extracts the list of topic categories from the entry text.
+
+        Args:
+            entry_text (str): The text of the entry.
+
+        Returns:
+            list: A list of topic categories.
+        """
+        tc_list = []
+        
+        for line in entry_text.split("\n"):
+            if line.startswith("TC"):
+                tc_list.append(line[3:])
+        
+        return tc_list
+    
     def sanitize_filename(self, text, max_length=MAX_FILENAME_LENGTH):
         """
         Sanitizes a string for use as part of a file name.

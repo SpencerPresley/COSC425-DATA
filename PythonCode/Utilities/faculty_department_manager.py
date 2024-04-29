@@ -60,6 +60,11 @@ class FacultyDepartmentManager:
             info.article_count = len(info.files)
         return categories_dict
     
+    def update_tc_count(self, categories_dict):
+        for _, info in categories_dict.items():
+            info.tc_count = len(info.tc_list)
+        return categories_dict
+    
     def get_total_article_count(self):
         total_article_count = 0
         for category, category_info in self.category_processor.category_counts.items():

@@ -1,5 +1,5 @@
 from dataclasses import dataclass, field, asdict
-from typing import Set
+from typing import Set, List
 
 
 @dataclass
@@ -12,6 +12,9 @@ class CategoryInfo:
     faculty: Set[str] = field(default_factory=set)
     departments: Set[str] = field(default_factory=set)
     titles: Set[str] = field(default_factory=set)
+    tc_count: int = 0
+    tc_list: List[int] = field(default_factory=list)
+    
     # article_set: Set[str] = field(default_factory=set)
 
     def to_dict(self) -> dict:
