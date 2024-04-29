@@ -52,6 +52,9 @@ class CategoryProcessor:
                         categories, title
                     )
                 
+                self.update_tc_list(lines, self.category_counts, categories)
+                self.update_tc_count(self.category_counts, categories)                
+                
                 
     def initialize_categories(self, categories):
         for i, category in enumerate(categories):
@@ -64,6 +67,22 @@ class CategoryProcessor:
                 # Intialize a new CategoryInfo dataclass instance for the given category
                 self.category_counts[category] = CategoryInfo()
 
+    @staticmethod
+    def update_tc_list(lines, category_counts, categories):
+        for line in lines:
+            if line.startswith("TC"):
+                for category in categories:
+                    category_counts[category].tc_list.append(int(line[3:]))
+        
+    @staticmethod
+    def update_tc_count(category_counts, categories):
+        for category in categories:
+            sum = 0
+            for tc in category_counts[category].tc_list:
+                sum += tc
+            category_counts[category].tc_count = sum
+        
+        
     def update_category_counts_files_set(self, categories, file_name):
         for category in categories:
             if category in self.category_counts:
