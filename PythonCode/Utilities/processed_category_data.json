@@ -440,6 +440,7 @@
             "Green, Daniel C.",
             "Rivera, Allyson",
             "Yoon, David J.",
+            "Olortegui, Ashley",
             "Petrolino, Ashley V.",
             "Demond, Whitney",
             "Townsend, Zachary",
@@ -1237,10 +1238,12 @@
         "faculty": [
             "Troup, Nicholas",
             "Wesolowski, Sarah C."
+            "Troup, Nicholas",
+            "Wesolowski, Sarah C."
         ],
         "departments": [
-            "Phys",
-            "Math & Comp Sci"
+            "Math & Comp Sci",
+            "Phys"
         ],
         "titles": [
             "The close binary fraction as a function of stellar parameters in APOGEE: a strong anticorrelation with \u03b1 abundances",
@@ -1614,6 +1617,8 @@
             "Miao, Chao",
             "Caviglia-Harris, Jill",
             "Park, Minseok",
+            "Nan, Wenxiu (Vince)",
+            "Miao, Chao",
             "Chambers, Dustin",
             "Adams, Stephen B.",
             "Nan, Wenxiu (Vince)"
@@ -1877,13 +1882,18 @@
         "department_count": 0,
         "article_count": 2,
         "faculty": [
-            "Polkinghorn, Brian D.",
-            "Park, Minseok"
+            "Park, Minseok",
+            "Polkinghorn, Brian D."
         ],
         "departments": [],
         "titles": [
-            "Responding to epidemic-driven demand: the role of supply channels",
-            "Collaborative Partnering for Airport Construction Projects: State-of-Practice"
+            "Collaborative Partnering for Airport Construction Projects: State-of-Practice",
+            "Responding to epidemic-driven demand: the role of supply channels"
+        ],
+        "tc_count": 3,
+        "tc_list": [
+            1,
+            2
         ]
     },
     "Engineering, Manufacturing": {
@@ -1896,8 +1906,13 @@
         ],
         "departments": [],
         "titles": [
-            "Responding to epidemic-driven demand: the role of supply channels",
-            "Does Forecast-Accuracy-Based Allocation Induce Customers to Share Truthful Order Forecasts?"
+            "Does Forecast-Accuracy-Based Allocation Induce Customers to Share Truthful Order Forecasts?",
+            "Responding to epidemic-driven demand: the role of supply channels"
+        ],
+        "tc_count": 12,
+        "tc_list": [
+            1,
+            11
         ]
     },
     "Operations Research & Management Science": {
@@ -1906,6 +1921,8 @@
         "department_count": 1,
         "article_count": 3,
         "faculty": [
+            "Wu, Yun",
+            "Park, Minseok"
             "Wu, Yun",
             "Park, Minseok"
         ],
@@ -2054,6 +2071,7 @@
         ],
         "departments": [
             "Educ Leadership",
+            "Biol Sci",
             "Biol Sci",
             "Geog & Geosci"
         ],
@@ -2651,6 +2669,7 @@
         "url": "regional-urban-planning",
         "faculty_count": 1,
         "department_count": 0,
+        "department_count": 0,
         "article_count": 1,
         "faculty": [
             "Wu, Yun"
@@ -2658,6 +2677,10 @@
         "departments": [],
         "titles": [
             "Value co-creation in online healthcare communities"
+        ],
+        "tc_count": 23,
+        "tc_list": [
+            23
         ]
     },
     "Anatomy & Morphology": {
@@ -2693,6 +2716,10 @@
         ],
         "titles": [
             "SARS-CoV-2 and Multiple Sclerosis: Potential for Disease Exacerbation"
+        ],
+        "tc_count": 11,
+        "tc_list": [
+            11
         ]
     },
     "Soil Science": {
@@ -2889,6 +2916,10 @@
         "departments": [],
         "titles": [
             "Job insecurity and subjective sleep quality: The role of spillover and gender"
+        ],
+        "tc_count": 13,
+        "tc_list": [
+            13
         ]
     },
     "Cardiac & Cardiovascular Systems": {
@@ -2939,6 +2970,10 @@
         "departments": [],
         "titles": [
             "Collaborative Partnering for Airport Construction Projects: State-of-Practice"
+        ],
+        "tc_count": 2,
+        "tc_list": [
+            2
         ]
     },
     "Urban Studies": {
@@ -3101,6 +3136,10 @@
         ],
         "titles": [
             "Sex differences in social odor discrimination by southern giant pouched rats (Cricetomys ansorgei)"
+        ],
+        "tc_count": 1,
+        "tc_list": [
+            1
         ]
     },
     "Philosophy": {
