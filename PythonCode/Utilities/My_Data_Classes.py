@@ -14,6 +14,7 @@ class CategoryInfo:
     titles: Set[str] = field(default_factory=set)
     tc_count: int = 0
     tc_list: List[int] = field(default_factory=list)
+    citation_average: float = 0.0
     
     # article_set: Set[str] = field(default_factory=set)
 
