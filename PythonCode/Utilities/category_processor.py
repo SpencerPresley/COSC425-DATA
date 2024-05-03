@@ -55,7 +55,7 @@ class CategoryProcessor:
                 self.update_tc_list(lines, self.category_counts, categories)
                 self.update_tc_count(self.category_counts, categories)
 
-                self.set_citation_average(self.category_counts, categories)               
+                self.set_citation_average(self.category_counts, categories)         
                 
                 
     def initialize_categories(self, categories):
@@ -97,6 +97,6 @@ class CategoryProcessor:
     @staticmethod
     def set_citation_average(category_counts, categories):
         for category in categories:
-            citation_avg = float(category_counts[category].tc_count) / float(category_counts[category].article_count)
+            citation_avg = category_counts[category].tc_count // category_counts[category].article_count
             category_counts[category].citation_average = citation_avg
             
