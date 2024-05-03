@@ -87,6 +87,9 @@ class WosClassification:
             category: category_info.to_dict()
             for category, category_info in self.get_category_counts().items()
         }
+        
+        for category, category_info in categories_serializable.items():
+            del category_info["tc_list"]
 
         # Serialize to JSON and save to a file
         with open(output_path, "w") as json_file:
