@@ -76,7 +76,7 @@ class ResearchTaxonomy:
         parameters: The abstract list, the prompt and the number of abstracts
         print to json file
         """
-        with open(self.file_name, 'w') as file:
+        with open(self.file_name, 'a') as file:
             json_output = {}
             for key, value in self.AbstractDict.items():
                 messages = [
