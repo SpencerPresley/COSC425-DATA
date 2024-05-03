@@ -16,7 +16,7 @@
 
 ### Core Features
 - 1. [ ] Add theme data to category pages.
-- 2. [ ] Add department list to faculty page.
+- 2. [x] Add department list to faculty page.
 - 3. [ ] Pages need to be statically generated. They are currently making calls to the S3 bucket a ludicrous number of times.
 - 4. [ ] Add most influential papers and faculty to category pages.
   - Limit display of each to 5 items.
