@@ -9,16 +9,18 @@ import json
 import re
 
 import sys
-sys.path.append('/Users/spencerpresley/COSC425-MAIN/backend/PythonCode')
+
+sys.path.append("/Users/spencerpresley/COSC425-MAIN/backend/PythonCode")
 from _AbstractCategoryMap import AbstractCategoryMap
+
 
 class WosClassification:
     def __init__(self, *, directory_path):
         """Handles entire orchestration of pipeline. Just create object and pass in directory_path as keyword argument."""
         self.directory_path = directory_path
         self.utils = Utilities()
-        #self.faculty_postprocessor = FacultyPostprocessor()
-         
+        # self.faculty_postprocessor = FacultyPostprocessor()
+
         # Initialize the CategoryProcessor and FacultyDepartmentManager with dependencies
         self.category_processor = CategoryProcessor(self.utils, None)
 
@@ -32,17 +34,19 @@ class WosClassification:
             self.faculty_department_manager
         )
         self.file_handler = FileHandler(self.utils)
-        self.process_directory(directory_path=self.directory_path, category_processor=self.category_processor)
-        
+        self.process_directory(
+            directory_path=self.directory_path,
+            category_processor=self.category_processor,
+        )
+
         # Refine faculty sets to remove near duplicates and update counts
         self.refine_faculty_sets()
 
         # Serialize the processed data and save it
         self.serialize_and_save_data("processed_category_data.json")
-    
+
         self.file_handler.save_cat_dict("category_dict.pkl", self.get_category_counts())
         AbstractCategoryMap(self.utils, dir_path="./split_files")
-
 
     def process_directory(self, *, directory_path, category_processor):
         """
@@ -50,7 +54,9 @@ class WosClassification:
         extracting categories, and updating faculty and department data.
         """
         # Use FileHandler to traverse the directory and process each file
-        self.file_handler.construct_categories(directory_path=directory_path, category_processor=category_processor)
+        self.file_handler.construct_categories(
+            directory_path=directory_path, category_processor=category_processor
+        )
 
     def get_category_counts(self):
         """
@@ -60,23 +66,25 @@ class WosClassification:
 
     def refine_faculty_sets(self):
         faculty_postprocessor = FacultyPostprocessor()
-        faculty_postprocessor.remove_near_duplicates(category_dict=self.get_category_counts())
+        faculty_postprocessor.remove_near_duplicates(
+            category_dict=self.get_category_counts()
+        )
         self.faculty_department_manager.update_faculty_count()
         self.faculty_department_manager.update_department_count()
 
     def addUrl(self):
         tempDict = self.get_category_counts()
         # This pattern now matches characters not allowed in a URL
-        pattern = re.compile(r'[^A-Za-z0-9-]+')
+        pattern = re.compile(r"[^A-Za-z0-9-]+")
         for category, values in tempDict.items():
             # Replace matched characters with a hyphen
-            url = pattern.sub('-', category.lower())
+            url = pattern.sub("-", category.lower())
             # Remove potential multiple hyphens with a single one
-            url = re.sub('-+', '-', url)
+            url = re.sub("-+", "-", url)
             # Remove leading or trailing hyphens
-            url = url.strip('-')
+            url = url.strip("-")
             values.url = url
-        
+
     def serialize_and_save_data(self, output_path="category_data.json"):
         """
         Serializes category data to JSON and saves it to a file.
@@ -87,7 +95,7 @@ class WosClassification:
             category: category_info.to_dict()
             for category, category_info in self.get_category_counts().items()
         }
-        
+
         for category, category_info in categories_serializable.items():
             del category_info["tc_list"]
 

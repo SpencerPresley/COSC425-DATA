@@ -34,6 +34,7 @@ class JsonTransformer:
         with open("categories_and_category_metadata.json", "w") as json_file:
             json.dump(new_dictionary, json_file, indent=4)
 
+
 if __name__ == "__main__":
     jt = JsonTransformer()
     jt.remove_files()

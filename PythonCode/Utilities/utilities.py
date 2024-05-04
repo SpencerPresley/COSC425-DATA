@@ -3,13 +3,20 @@ import os
 import warnings
 import time
 import json
-from AttributeExtractionStrategies import AuthorExtractionStrategy, DefaultExtractionStrategy, WosCategoryExtractionStrategy, TitleExtractionStrategy, DepartmentExtractionStrategy
+from AttributeExtractionStrategies import (
+    AuthorExtractionStrategy,
+    DefaultExtractionStrategy,
+    WosCategoryExtractionStrategy,
+    TitleExtractionStrategy,
+    DepartmentExtractionStrategy,
+)
 
 # TODO: make documentation on the class and it's methods
 
 """
 This script contains a class that has various utility methods that will be used for many purposes throughout the project
 """
+
 
 class Utilities:
     MAX_FILENAME_LENGTH = 255
@@ -51,22 +58,30 @@ class Utilities:
             # Check if the requested attribute is defined in the attribute patterns dictionary
             if attribute in self.attribute_patterns:
                 if attribute == "author":
-                    attribute_results[attribute] = self.attribute_patterns[attribute].extract_attribute(entry_text)
-                
+                    attribute_results[attribute] = self.attribute_patterns[
+                        attribute
+                    ].extract_attribute(entry_text)
+
                 elif attribute == "department":
-                    attribute_results[attribute] = self.attribute_patterns[attribute].extract_attribute(entry_text)
+                    attribute_results[attribute] = self.attribute_patterns[
+                        attribute
+                    ].extract_attribute(entry_text)
 
                 elif attribute == "wc_pattern":
-                    attribute_results[attribute] = self.attribute_patterns[attribute].extract_attribute(entry_text)
-                
+                    attribute_results[attribute] = self.attribute_patterns[
+                        attribute
+                    ].extract_attribute(entry_text)
+
                 elif attribute == "title":
-                    attribute_results[attribute] = self.attribute_patterns[attribute].extract_attribute(entry_text)
-                    
+                    attribute_results[attribute] = self.attribute_patterns[
+                        attribute
+                    ].extract_attribute(entry_text)
+
                 else:
                     # Extract the attribute and add it to results dictionary
-                    attribute_results[attribute] = self.attribute_patterns[attribute].extract_attribute(
-                        attribute, entry_text
-                    )
+                    attribute_results[attribute] = self.attribute_patterns[
+                        attribute
+                    ].extract_attribute(attribute, entry_text)
             else:
                 # Raise an error if an unknown attribute is requested
                 raise ValueError(f"Unknown attribute: '{attribute}' requested.")
@@ -83,13 +98,13 @@ class Utilities:
             list: A list of topic categories.
         """
         tc_list = []
-        
+
         for line in entry_text.split("\n"):
             if line.startswith("TC"):
                 tc_list.append(line[3:])
-        
+
         return tc_list
-    
+
     def sanitize_filename(self, text, max_length=MAX_FILENAME_LENGTH):
         """
         Sanitizes a string for use as part of a file name.
@@ -117,7 +132,7 @@ class Utilities:
         Extracts the title of the article from the entry text.
         """
         return self.attribute_patterns["title"].extract_attribute(entry_text)
-    
+
     def get_file_name(self, author, title):
         """
         Constructs a filename using the first author's name and the title of an entry.
@@ -159,7 +174,6 @@ class Utilities:
         if not os.path.exists(path):
             os.makedirs(path, exist_ok=True)
         return path
-
 
     def splitter(self, path_to_file):
         """

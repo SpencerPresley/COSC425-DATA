@@ -1,8 +1,9 @@
-'''
+"""
 Author: Cole Barbes
 Last Updated: 03/27/2024
 File Converter class structure to manage all needed file conversions
-'''
+"""
+
 import pandas as pd
 
 # import torch
@@ -23,18 +24,18 @@ class File_Convert:
         self.text = None
 
     def from_csv(self, output_format):
-        '''
+        """
         convert the csv file to a pandas data frame
-        '''
+        """
         self.file = pd.read_csv(self.path)
 
         if output_format == "json":
             self.to_json("csv")
 
     def from_rtf(self, output_format):
-        '''
+        """
         convert the rtf using the library an send the text output to a given type
-        '''
+        """
         with open(self.path, "r") as self.file:
             rtf_text = self.file.read()
 
@@ -77,7 +78,7 @@ class File_Convert:
                     txt_dict[current_section].append(
                         {"Citation": entry[0], "Total Citations": entry[1]}
                     )
-                elif len(entry) == 3:  # Extract the Journal name entry or a total 
+                elif len(entry) == 3:  # Extract the Journal name entry or a total
                     # grab the entry that has the totals for the journal
                     if "Total" in entry[0]:
                         txt_dict[current_section].append(

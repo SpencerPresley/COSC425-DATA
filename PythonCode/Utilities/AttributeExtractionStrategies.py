@@ -2,6 +2,7 @@ import re
 import warnings
 from html import unescape
 
+
 class AttributeExtractionStrategy:
     def extract_attribute(self, entry_text):
         pass
@@ -42,7 +43,7 @@ class AttributeExtractionStrategy:
             salisbury_author.strip()
             for salisbury_author in salisbury_authors.split(";")
         ]
-        
+
     def extract_dept_from_c1(self, entry_text):
         """
         Extracts department and school names from the 'C1' content in the entry text.
@@ -70,21 +71,21 @@ class AttributeExtractionStrategy:
                 elif dept_match_alt:
                     c1_content.append(dept_match_alt.group(1))
         # return '\n'.join(c1_content)
-        return c1_content        
-        
-    
+        return c1_content
+
+
 class AuthorExtractionStrategy(AttributeExtractionStrategy):
     def __init__(self):
         self.author_pattern = re.compile(r"AF\s(.+?)(?=\nTI)", re.DOTALL)
-        
-    def extract_attribute(self, entry_text):        
+
+    def extract_attribute(self, entry_text):
         author_c1_content = self.extract_c1_content(entry_text)
 
         # Use the get_salisbury_authors method to extract authors affiliated with Salisbury University
         salisbury_authors = self.split_salisbury_authors(author_c1_content)
-        
+
         result = ()
-        
+
         if salisbury_authors:
             result = (True, salisbury_authors)
         else:
@@ -92,9 +93,10 @@ class AuthorExtractionStrategy(AttributeExtractionStrategy):
             warnings.warn(
                 "Attribute: 'Author' was not found in the entry", RuntimeWarning
             )
-        
+
         return result
-    
+
+
 class DepartmentExtractionStrategy(AttributeExtractionStrategy):
     def __init__(self):
         self.dept_pattern = re.compile(r"Dept (.*?)(,|$)")
@@ -103,11 +105,12 @@ class DepartmentExtractionStrategy(AttributeExtractionStrategy):
     def extract_attribute(self, entry_text):
         departments = self.extract_dept_from_c1(entry_text)
         return (True, departments) if departments else (False, None)
-    
+
+
 class WosCategoryExtractionStrategy(AttributeExtractionStrategy):
     def __init__(self):
         self.wc_pattern = re.compile(r"WC\s+(.+?)(?=\nWE)", re.DOTALL)
-    
+
     def extract_attribute(self, entry_text):
         match = self.wc_pattern.search(entry_text)
         if match:
@@ -120,7 +123,7 @@ class WosCategoryExtractionStrategy(AttributeExtractionStrategy):
             f"Attribute: 'WoS_Category' was not found in the entry", RuntimeWarning
         )
         return False, None
-    
+
     def wos_category_splitter(self, category_string):
         """
         Splits a string of Web of Science (WoS) categories into a list of individual categories.
@@ -135,11 +138,12 @@ class WosCategoryExtractionStrategy(AttributeExtractionStrategy):
             list: A list of strings, where each string is a trimmed category extracted from the input string.
         """
         return [category.strip() for category in category_string.split(";")]
-    
+
+
 class TitleExtractionStrategy(AttributeExtractionStrategy):
     def __init__(self):
         self.title_pattern = re.compile(r"TI\s(.+?)(?=\nSO)", re.DOTALL)
-    
+
     def extract_attribute(self, entry_text):
         """
         Extracts the title from the entry text, removing newline characters, HTML tags,
@@ -165,9 +169,12 @@ class TitleExtractionStrategy(AttributeExtractionStrategy):
             title = re.sub(r"\s+", " ", title)
             return True, title
         else:
-            warnings.warn("Attribute: 'Title' was not found in the entry", RuntimeWarning)
+            warnings.warn(
+                "Attribute: 'Title' was not found in the entry", RuntimeWarning
+            )
             return False, None
-    
+
+
 class DefaultExtractionStrategy(AttributeExtractionStrategy):
     def __init__(self):
         self.patterns = {
@@ -175,9 +182,9 @@ class DefaultExtractionStrategy(AttributeExtractionStrategy):
             "abstract": re.compile(r"AB\s(.+?)(?=\nC1)", re.DOTALL),
             "end_record": re.compile(r"DA \d{4}-\d{2}-\d{2}\nER\n?", re.DOTALL),
         }
-        
-        self.missing_abstracts_file = "missing_abstracts.txt" # File to store entries where abstract weren't found, to be used for debugging/ verification
-        
+
+        self.missing_abstracts_file = "missing_abstracts.txt"  # File to store entries where abstract weren't found, to be used for debugging/ verification
+
     def extract_attribute(self, attribute, entry_text):
         """
         Extracts a single attribute from the entry text based on predefined patterns.
@@ -195,7 +202,7 @@ class DefaultExtractionStrategy(AttributeExtractionStrategy):
                 f"Attribute: '{attribute}' pattern not defined", RuntimeWarning
             )
             return False, None
-        
+
         pattern = self.patterns[attribute]
         match = pattern.search(entry_text)
         if not match:
@@ -203,8 +210,11 @@ class DefaultExtractionStrategy(AttributeExtractionStrategy):
             with open(self.missing_abstracts_file, "a") as file:
                 file.write(f"Missing '{attribute}' in entry:\n{entry_text}\n\n")
             # Print a notification to the console
-            print(f"An entry missing '{attribute}' has been written to {self.missing_abstracts_file}.")
-            warnings.warn(f"Attribute: '{attribute}' was not found in the entry", RuntimeWarning)
+            print(
+                f"An entry missing '{attribute}' has been written to {self.missing_abstracts_file}."
+            )
+            warnings.warn(
+                f"Attribute: '{attribute}' was not found in the entry", RuntimeWarning
+            )
             return False, None
         return True, match.group(1).strip()
-    
