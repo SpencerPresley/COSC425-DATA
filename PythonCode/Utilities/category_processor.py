@@ -23,13 +23,13 @@ class CategoryProcessor:
                 self.update_category_counts_files_set(
                     categories=categories, file_name=file_path
                 )
-                
+
                 faculty_members: list[str] = []
-                if (attribute_results["author"][0]):
+                if attribute_results["author"][0]:
                     for attribute in attribute_results["author"][1]:
                         if attribute != "":
                             faculty_members.append(attribute)
-                
+
                 department_members = (
                     attribute_results["department"][1]
                     if attribute_results["department"][0]
@@ -45,19 +45,20 @@ class CategoryProcessor:
                 self.faculty_department_manager.update_article_counts(
                     self.category_counts
                 )
-                
-                title = attribute_results["title"][1] if attribute_results["title"][0] else None
+
+                title = (
+                    attribute_results["title"][1]
+                    if attribute_results["title"][0]
+                    else None
+                )
                 if title is not None:
-                    self.faculty_department_manager.update_title_set(
-                        categories, title
-                    )
-                
+                    self.faculty_department_manager.update_title_set(categories, title)
+
                 self.update_tc_list(lines, self.category_counts, categories)
                 self.update_tc_count(self.category_counts, categories)
 
-                self.set_citation_average(self.category_counts, categories)         
-                
-                
+                self.set_citation_average(self.category_counts, categories)
+
     def initialize_categories(self, categories):
         for i, category in enumerate(categories):
             # if category starts with 'WC ', remove it
@@ -75,7 +76,7 @@ class CategoryProcessor:
             if line.startswith("TC"):
                 for category in categories:
                     category_counts[category].tc_list.append(int(line[3:]))
-        
+
     @staticmethod
     def update_tc_count(category_counts, categories):
         for category in categories:
@@ -83,8 +84,7 @@ class CategoryProcessor:
             for tc in category_counts[category].tc_list:
                 sum += tc
             category_counts[category].tc_count = sum
-        
-        
+
     def update_category_counts_files_set(self, categories, file_name):
         for category in categories:
             if category in self.category_counts:
@@ -97,6 +97,8 @@ class CategoryProcessor:
     @staticmethod
     def set_citation_average(category_counts, categories):
         for category in categories:
-            citation_avg = category_counts[category].tc_count // category_counts[category].article_count
+            citation_avg = (
+                category_counts[category].tc_count
+                // category_counts[category].article_count
+            )
             category_counts[category].citation_average = citation_avg
-            
