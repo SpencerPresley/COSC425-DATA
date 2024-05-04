@@ -1,14 +1,15 @@
 # End of Semester TODO for the team.
 
 ## Backend
-1. [ ] Export raw data in spreadsheet format to deliver to client.  
-2. [ ] Finish auxillary stats
+1. [x] Export raw data in spreadsheet format to deliver to client.  
+2. [ ] Spreadsheet with aux stats
+3. [ ] Finish auxillary stats
    - Total citations for category.
    - Total citations per paper per category. Needed for displaying most influential papers.
    - Total citation per author per category. Needed for displaying most influential faculty.
    - Average citations per paper per category.
 
-3. [ ] Document code verbosely. 
+4. [ ] Document code verbosely. 
    - [ ] Make a branch of the final main release and go through all the code you've been involved in and write abundant amounts of comments. I'm talking 2-3 comments per individual line. When we come back this will help immensely with getting back up to speed on how we implemented things.
    - [ ] Write general documentation of the code and how it's used and why it was written how it was.
 
