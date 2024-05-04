@@ -35,13 +35,14 @@ def create_general_info_sheet(data, writer):
 def create_list_sheet(data, writer, sheet_name, list_key):
     expanded_list = {
         'Category': [],
-        'item': []
+        'item': [],
     }
     
     for category, details in data.items():
-        for item in details[list_key]:
-            expanded_list['Category'].append(category)
-            expanded_list['item'].append(item)
+        if list_key in details:
+            for item in details[list_key]:
+                expanded_list['Category'].append(category)
+                expanded_list['item'].append(item)
         
     df = pd.DataFrame(expanded_list)
     print(f"{sheet_name} DataFrame:")
@@ -50,10 +51,12 @@ def create_list_sheet(data, writer, sheet_name, list_key):
     df.to_excel(writer, sheet_name=sheet_name, index=False)
     
 def main():
-    file_path = 'processed_category_data.json'
+    file_path = '/Users/spencerpresley/COSC425-MAIN/backend/TextAnalysis/output_data.json'
     data = load_json(file_path)
-    
-    output_file = 'SU_Category_Data.xlsx'
+    print(data)
+    input("Press Enter to continue...")
+        
+    output_file = 'SU_Category_Data_Themes.xlsx'
     
     # Context manager to handle Excel writer
     with pd.ExcelWriter(output_file, engine='openpyxl') as writer:
@@ -61,6 +64,7 @@ def main():
         create_list_sheet(data, writer, 'Faculty Members', 'faculty')
         create_list_sheet(data, writer, 'Departments', 'departments')
         create_list_sheet(data, writer, 'Article Titles', 'titles')
+        create_list_sheet(data, writer, 'Research Themes', 'themes')
     
     # Check file size to confirm data was written
     file_size = os.path.getsize(output_file)
