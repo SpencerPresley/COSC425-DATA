@@ -14,50 +14,76 @@ class CategoryProcessor:
         lines = file_content.splitlines()
         for line in lines:
             if line.startswith("WC"):
-                attributes_to_retrieve = ["author", "department", "wc_pattern", "title"]
-                attribute_results = self.utils.get_attributes(
-                    entry_text=file_content, attributes=attributes_to_retrieve
-                )
-                categories = attribute_results["wc_pattern"][1]
-                self.initialize_categories(categories=categories)
-                self.update_category_counts_files_set(
-                    categories=categories, file_name=file_path
-                )
+                self.update_category_stats(file_path, file_content, lines)
 
-                faculty_members: list[str] = []
-                if attribute_results["author"][0]:
-                    for attribute in attribute_results["author"][1]:
-                        if attribute != "":
-                            faculty_members.append(attribute)
+    def update_category_stats(self, file_path, file_content, lines):
+        attribute_results = self.get_attributes(file_content)
+        categories = self.get_categories(file_path, attribute_results)
+        faculty_members = self.get_faculty_members(attribute_results)
+        department_members = self.get_department_members(attribute_results)
+        self.update_faculty_set(categories, faculty_members)
+        self.update_department_set(categories, department_members)
+        self.update_article_set()
+        title = self.get_title(attribute_results)
+        self.update_title_set(categories, title)
+        self.update_tc_list(lines, self.category_counts, categories)
+        self.update_tc_count(self.category_counts, categories)
+        self.set_citation_average(self.category_counts, categories)
 
-                department_members = (
-                    attribute_results["department"][1]
-                    if attribute_results["department"][0]
-                    else None
-                )
-                self.faculty_department_manager.update_faculty_set(
-                    categories, faculty_members
-                )
-                if department_members is not None:
-                    self.faculty_department_manager.update_department_set_2(
-                        categories, department_members
-                    )
-                self.faculty_department_manager.update_article_counts(
-                    self.category_counts
-                )
+    def update_title_set(self, categories, title):
+        if title is not None:
+            self.faculty_department_manager.update_title_set(categories, title)
 
-                title = (
-                    attribute_results["title"][1]
-                    if attribute_results["title"][0]
-                    else None
-                )
-                if title is not None:
-                    self.faculty_department_manager.update_title_set(categories, title)
+    def get_title(self, attribute_results):
+        title = attribute_results["title"][1] if attribute_results["title"][0] else None
 
-                self.update_tc_list(lines, self.category_counts, categories)
-                self.update_tc_count(self.category_counts, categories)
+        return title
 
-                self.set_citation_average(self.category_counts, categories)
+    def update_article_set(self):
+        self.faculty_department_manager.update_article_counts(self.category_counts)
+
+    def update_department_set(self, categories, department_members):
+        if department_members is not None:
+            self.faculty_department_manager.update_department_set_2(
+                categories, department_members
+            )
+
+    def update_faculty_set(self, categories, faculty_members):
+        self.faculty_department_manager.update_faculty_set(categories, faculty_members)
+
+    def get_department_members(self, attribute_results):
+        department_members = (
+            attribute_results["department"][1]
+            if attribute_results["department"][0]
+            else None
+        )
+
+        return department_members
+
+    def get_attributes(self, file_content):
+        attributes_to_retrieve = ["author", "department", "wc_pattern", "title"]
+        attribute_results = self.utils.get_attributes(
+            entry_text=file_content, attributes=attributes_to_retrieve
+        )
+
+        return attribute_results
+
+    def get_categories(self, file_path, attribute_results):
+        categories = attribute_results["wc_pattern"][1]
+        self.initialize_categories(categories=categories)
+        self.update_category_counts_files_set(
+            categories=categories, file_name=file_path
+        )
+
+        return categories
+
+    def get_faculty_members(self, attribute_results):
+        faculty_members: list[str] = []
+        if attribute_results["author"][0]:
+            for attribute in attribute_results["author"][1]:
+                if attribute != "":
+                    faculty_members.append(attribute)
+        return faculty_members
 
     def initialize_categories(self, categories):
         for i, category in enumerate(categories):
