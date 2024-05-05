@@ -11,6 +11,7 @@ class FacultyPostprocessor:
         self.faculty_occurence_dict = {}
         self.processed_sets_list = []
         self.minhash_util = MinHashUtility(num_hashes=100)
+        self.name_variations: dict[str, NameVariation] = {}
 
     def get_temp_dict(self):
         return self.temp_dict
@@ -128,7 +129,7 @@ class FacultyPostprocessor:
         return refined_fac_set
 
     def get_most_frequent_name_variation(self, faculty_sets_list):
-        name_variations: dict = {}
+        name_variations: dict[str, NameVariation] = self.name_variations
 
         for faculty_set in faculty_sets_list:
             for name in faculty_set:
