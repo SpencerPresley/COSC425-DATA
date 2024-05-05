@@ -27,6 +27,6 @@ class FileHandler:
         return False
 
     @staticmethod
-    def save_cat_dict(file_path: str, cat_dict: dict):
+    def save_dict(file_path: str, cat_dict: dict):
         with open(file_path, "wb") as f:
             pickle.dump(cat_dict, f)
