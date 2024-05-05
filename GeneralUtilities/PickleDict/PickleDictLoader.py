@@ -1,6 +1,7 @@
 from PythonCode.Utilities.My_Data_Classes import CategoryInfo
 import pickle
 
+
 class PickleDictLoader:
     def __init__(self, pickle_path: str):
         self.pickle_path: str = pickle_path

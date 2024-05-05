@@ -61,9 +61,14 @@ class CategoryProcessor:
             tc_count=tc_count,
             title=title,
         )
-        
+
         # update article stats for the category
-        self.update_article_stats(article_stats=self.article_stats, categories=categories, title=title, tc_count=tc_count)
+        self.update_article_stats(
+            article_stats=self.article_stats,
+            categories=categories,
+            title=title,
+            tc_count=tc_count,
+        )
 
     @staticmethod
     def update_faculty_members_stats(
@@ -104,14 +109,20 @@ class CategoryProcessor:
 
                 # update the members article citation map for the category
                 member_info.citation_map.article_citation_map[title] = tc_count
-                
+
     @staticmethod
-    def update_article_stats(*, article_stats: dict[str, ArticleStats], categories: list[str], title: str, tc_count: int):
+    def update_article_stats(
+        *,
+        article_stats: dict[str, ArticleStats],
+        categories: list[str],
+        title: str,
+        tc_count: int,
+    ):
         for category in categories:
             if category not in article_stats:
                 article_stats[category] = ArticleStats()
             article_stats[category].article_citation_map[title] = tc_count
-        
+
     def update_title_set(self, categories, title):
         if title is not None:
             self.faculty_department_manager.update_title_set(categories, title)
