@@ -96,10 +96,11 @@ class FacultyStats:
                 data_dict[key] = list(value)
         return data_dict
 
+
 @dataclass
 class ArticleStats:
     article_citation_map: dict[str, int] = field(default_factory=dict)
-    
+
     def to_dict(self) -> dict:
         # Utilize asdict utility from dataclasses, then change sets to lists
         data_dict = asdict(self)
@@ -113,5 +114,6 @@ class ArticleStats:
             if isinstance(value, Set):
                 data_dict[key] = list(value)
         return data_dict
+
 
 # article title: citation count

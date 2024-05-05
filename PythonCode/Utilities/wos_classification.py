@@ -69,7 +69,7 @@ class WosClassification:
         self.file_handler.save_dict(
             "faculty_stats_dict.pkl", self.category_processor.faculty_stats
         )
-        
+
         self.file_handler.save_dict(
             "article_stats_dict.pkl", self.category_processor.article_stats
         )
@@ -172,8 +172,10 @@ class WosClassification:
             json.dump(faculty_stats_serializable, json_file, indent=4)
 
         print(f"Faculty Stat Data serialized and saved to {output_path}")
-        
-    def serialize_and_save_article_stats_data(self, output_path="article_stats_data.json"):
+
+    def serialize_and_save_article_stats_data(
+        self, output_path="article_stats_data.json"
+    ):
         """
         Serializes article stats data to JSON and saves it to a file.
         """
@@ -181,7 +183,7 @@ class WosClassification:
             category: article_stats.to_dict()
             for category, article_stats in self.category_processor.article_stats.items()
         }
-        
+
         # Serialize to JSON and save to a file
         with open(output_path, "w") as json_file:
             json.dump(article_stats_serializable, json_file, indent=4)
