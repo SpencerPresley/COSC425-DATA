@@ -61,12 +61,17 @@ class WosClassification:
         # Serialize the processed data and save it
         self.serialize_and_save_data("processed_category_data.json")
         self.serialize_and_save_faculty_stats_data("processed_faculty_stats_data.json")
+        self.serialize_and_save_article_stats_data("processed_article_stats_data.json")
 
         # save instances of the category counts and faculty stats dictionaries
         self.file_handler.save_dict("category_dict.pkl", self.get_category_counts())
 
         self.file_handler.save_dict(
             "faculty_stats_dict.pkl", self.category_processor.faculty_stats
+        )
+        
+        self.file_handler.save_dict(
+            "article_stats_dict.pkl", self.category_processor.article_stats
         )
 
         AbstractCategoryMap(self.utils, dir_path="./split_files")
@@ -167,6 +172,21 @@ class WosClassification:
             json.dump(faculty_stats_serializable, json_file, indent=4)
 
         print(f"Faculty Stat Data serialized and saved to {output_path}")
+        
+    def serialize_and_save_article_stats_data(self, output_path="article_stats_data.json"):
+        """
+        Serializes article stats data to JSON and saves it to a file.
+        """
+        article_stats_serializable = {
+            category: article_stats.to_dict()
+            for category, article_stats in self.category_processor.article_stats.items()
+        }
+        
+        # Serialize to JSON and save to a file
+        with open(output_path, "w") as json_file:
+            json.dump(article_stats_serializable, json_file, indent=4)
+
+        print(f"Article Stat Data serialized and saved to {output_path}")
 
 
 if __name__ == "__main__":

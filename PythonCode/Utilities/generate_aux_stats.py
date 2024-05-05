@@ -96,5 +96,22 @@ class FacultyStats:
                 data_dict[key] = list(value)
         return data_dict
 
+@dataclass
+class ArticleStats:
+    article_citation_map: dict[str, int] = field(default_factory=dict)
+    
+    def to_dict(self) -> dict:
+        # Utilize asdict utility from dataclasses, then change sets to lists
+        data_dict = asdict(self)
+
+        # Exclude 'files' from the dictionary
+        if "files" in data_dict:
+            del data_dict["files"]
+
+        # Convert sets to lists for JSON serialization
+        for key, value in data_dict.items():
+            if isinstance(value, Set):
+                data_dict[key] = list(value)
+        return data_dict
 
 # article title: citation count

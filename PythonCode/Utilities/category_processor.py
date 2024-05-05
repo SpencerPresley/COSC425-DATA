@@ -1,7 +1,7 @@
 from utilities import Utilities
 import warnings
 from My_Data_Classes import CategoryInfo
-from generate_aux_stats import FacultyStats, FacultyInfo
+from generate_aux_stats import FacultyStats, FacultyInfo, ArticleStats
 
 # Imported for type hinting.
 # Actual object is passed in to CategoryProcessor's constructor
@@ -19,6 +19,7 @@ class CategoryProcessor:
 
         # influential stats dictionaries
         self.faculty_stats: dict[str, FacultyStats] = {}
+        self.article_stats: dict[str, ArticleStats] = {}
 
     def category_finder(self, current_file, file_path):
         file_content = current_file.read()
@@ -60,6 +61,9 @@ class CategoryProcessor:
             tc_count=tc_count,
             title=title,
         )
+        
+        # update article stats for the category
+        self.update_article_stats(article_stats=self.article_stats, categories=categories, title=title, tc_count=tc_count)
 
     @staticmethod
     def update_faculty_members_stats(
@@ -100,22 +104,14 @@ class CategoryProcessor:
 
                 # update the members article citation map for the category
                 member_info.citation_map.article_citation_map[title] = tc_count
-
-                # faculty_info: dict[str, FacultyInfo] = faculty_stats[faculty_member].faculty_stats
-
-                # if faculty_member not in faculty_info:
-                #     faculty_info[faculty_member] = FacultyInfo()
-
-                # member_info = faculty_info[faculty_member]
-
-                # member_info.article_count += 1
-                # member_info.total_citations += tc_count
-
-                # if member_info.article_count > 0:
-                #     member_info.average_citations = member_info.total_citations // member_info.article_count
-
-                # member_info.citation_map.article_citation_map[title] = tc_count
-
+                
+    @staticmethod
+    def update_article_stats(*, article_stats: dict[str, ArticleStats], categories: list[str], title: str, tc_count: int):
+        for category in categories:
+            if category not in article_stats:
+                article_stats[category] = ArticleStats()
+            article_stats[category].article_citation_map[title] = tc_count
+        
     def update_title_set(self, categories, title):
         if title is not None:
             self.faculty_department_manager.update_title_set(categories, title)
