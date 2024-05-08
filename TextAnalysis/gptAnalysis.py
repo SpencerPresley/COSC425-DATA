@@ -13,7 +13,10 @@ import re
 
 class ResearchTaxonomy:
     def __init__(self, prompt_num=0, file_name="Taxonomy.json", data_needed=False):
-        self.inFile = input("Please enter the path to the abstract file: ")
+        if(data_needed == True):
+            self.inFile = input("Please enter the path to the abstract file: ")
+            with open(self.inFile, "r") as file:
+                self.AbstractDict = json.load(file)
         format_final = """
             "Upper Level Categories" : [
                 "Computer Science", 
@@ -49,9 +52,16 @@ class ResearchTaxonomy:
         Only give about 5 or 6 categories, they should be categories from this site https://arxiv.org/category_taxonomy\
         heres how it should look {format_final}""",
             """You are an expert at creating a taxonomy of categories for a collection of abstracts. Given an abstract form 3 JSON objects for Upper Level Categories, Middle level categories, Themes: {"Upper_level" : ["Medicine", "Computer Science", "Biology"] "Mid_level" : ["Cardiology", "Artificial Intelligence", "Marine Biology"] "Themes" : ["Heart Transplants","Large Language Models", "Marine Organisms"]}Take categories from the following websites: https://arxiv.org/category_taxonomy""",
+            """
+                Using the category given to you, go to wikipedia https://www.wikipedia.org/ 
+                and grab a definition for the category. This definition should be in direct correlation to the category.
+                output the quote as follows in JSON format.
+                Education :{
+                        "Definition": "Education is the transmission of knowledge, skills, and character traits and manifests in various forms. Formal education occurs within a structured institutional framework, such as public schools, following a curriculum. Non-formal education also follows a structured approach but occurs outside the formal schooling system, while informal education entails unstructured learning through daily experiences. ",
+                        "source": "wikipedia"
+                } 
+            """
         ]
-        with open(self.inFile, "r") as file:
-            self.AbstractDict = json.load(file)
         # set the prompt number
         self.prompt_num = prompt_num if prompt_num <= len(self.prompt) else 0
         # set the file name
@@ -175,8 +185,38 @@ class ResearchTaxonomy:
         with open("output_data.json", "w") as file:
             json.dump(categoryDict, file, indent=4)
 
+        return categoryDict
+
+    def get_definition(self, fileName):
+        with open(fileName, "r") as file:
+            categoryDict = json.load(file)
+
+        for category, value in categoryDict.items():
+            json_output = {}
+            messages = [
+                {"role": "system", "content": self.prompt[2]},
+                {"role": "user", "content": category},
+            ]
+            output_taxonomy = self.get_response(messages=messages)
+            #print(category, " ", output_taxonomy)
+            try:
+                    value['definition'] = json.loads(output_taxonomy)
+            except json.JSONDecodeError:
+                # use a regex to fix the string
+                cleaned_json = re.sub(
+                    r"^```json\s*|\s*```$", "", output_taxonomy
+                ).strip()
+        
+        with open("definition_output.json", "w") as file:
+            json.dump(categoryDict, file, indent=4)
+
+        
 
 if __name__ == "__main__":
-    Tester = ResearchTaxonomy(data_needed=True)
+    Tester = ResearchTaxonomy(data_needed=False)
     filePath = input("Please enter the path to the file containing the taxonomy: ")
-    Tester.add_theme_taxonomy(fileName=filePath)
+    type = input("Would you like to add the themes to the taxonomy? ")
+    if type == "yes":
+        Tester.add_theme_taxonomy(fileName=filePath)
+    else:
+        Tester.get_definition(fileName=filePath)
