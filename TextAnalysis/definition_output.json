@@ -96,12 +96,13 @@
         ],
         "tc_count": 132,
         "citation_average": 3,
-        "definition": {
-            "Education": {
-                "Definition": "Education is the transmission of knowledge, skills, and character traits and manifests in various forms. Formal education occurs within a structured institutional framework, such as public schools, following a curriculum. Non-formal education also follows a structured approach but occurs outside the formal schooling system, while informal education entails unstructured learning through daily experiences.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Certification Programs",
+            "Workshop Effectiveness",
+            "Certification Pass Rates",
+            "Award Recipients"
+        ],
+        "definition": "\"Education is the transmission of knowledge, skills, and character traits and manifests in various forms. Formal education occurs within a structured institutional framework, such as public schools, following a curriculum. Non-formal education also follows a structured approach but occurs outside the formal schooling system, while informal education entails unstructured learning through daily experiences.\" - Wikipedia"
     },
     "Behavioral Sciences": {
         "url": "behavioral-sciences",
@@ -142,12 +143,14 @@
         ],
         "tc_count": 109,
         "citation_average": 8,
-        "definition": {
-            "Behavioral Sciences": {
-                "Definition": "Behavioral sciences explore the cognitive processes within organisms and the behavioral interactions between organisms in the natural world. It involves the study of psychology, sociology, anthropology, and other related disciplines to understand human behavior and societal patterns.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Habitual Routes",
+            "Cognitive Mapping",
+            "Intraindividual Differences",
+            "Spatial Encoding",
+            "Intersection Choice"
+        ],
+        "definition": "\"Behavioral sciences explore the cognitive processes within organisms and the behavioral interactions between organisms in the natural world. It involves the systematic analysis and investigation of human and animal behavior through controlled and naturalistic observation, and disciplined scientific experimentation.\" - wikipedia"
     },
     "Zoology": {
         "url": "zoology",
@@ -198,10 +201,15 @@
         ],
         "tc_count": 134,
         "citation_average": 7,
-        "definition": {
-            "Definition": "Zoology is the branch of biology that studies the animal kingdom, including the structure, embryology, evolution, classification, habits, and distribution of all animals, both living and extinct, and how they interact with their ecosystems.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Impact of Human Activities on Animal Traditions",
+            "Tool Use in Non-Human Primates",
+            "Remote Sensing and Imagery Analysis",
+            "Predictive Modeling for Land Cover Changes",
+            "Private Conservation Efforts",
+            "Behavioral Traditions in Conservation"
+        ],
+        "definition": "\"Zoology is the branch of biology that studies the animal kingdom, including the structure, embryology, evolution, classification, habits, and distribution of all animals, both living and extinct. Zoology is a diverse field that encompasses a wide range of topics, from the smallest microorganisms to the largest mammals.\" - wikipedia"
     },
     "Education, Special": {
         "url": "education-special",
@@ -223,10 +231,16 @@
         ],
         "tc_count": 6,
         "citation_average": 2,
-        "definition": {
-            "Definition": "Special education is the practice of educating students in a way that addresses their individual differences and needs. Ideally, this process involves the individually planned and systematically monitored arrangement of teaching procedures, adapted equipment and materials, and accessible settings. These interventions are designed to help individuals with special needs achieve a higher level of personal self-sufficiency and success in school and community than might be available if the student were only given access to a typical classroom education.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Humor Styles",
+            "Depression",
+            "Daily Affect",
+            "Mental and Physical Functioning",
+            "Somatic Symptoms",
+            "Health Behaviors",
+            "Positive Reappraisal"
+        ],
+        "definition": "\"Special education is the practice of educating students in a way that addresses their individual differences and needs. Ideally, this process involves the individually planned and systematically monitored arrangement of teaching procedures, adapted equipment, materials, and accessible settings. These interventions are designed to help individuals with special needs achieve a higher level of personal self-sufficiency and success in school and their community, than may be available if the student were only given access to a typical classroom education. Special education includes learning disabilities, communication disorders, emotional and behavioral disorders, physical disabilities, and developmental disabilities. Students with these kinds of special needs are likely to benefit from additional educational services such as different approaches to teaching, the use of technology, a specifically adapted teaching area, or a resource room.\" - wikipedia"
     },
     "Psychology, Educational": {
         "url": "psychology-educational",
@@ -252,10 +266,17 @@
         ],
         "tc_count": 41,
         "citation_average": 8,
-        "definition": {
-            "Definition": "Educational psychology is the branch of psychology concerned with the scientific study of human learning. The study of learning processes, from both cognitive and behavioral perspectives, allows researchers to understand individual differences in intelligence, cognitive development, affect, motivation, self-regulation, and self-concept, as well as their role in learning.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Structural Equation Modeling",
+            "Latent Factor Analysis",
+            "Mediation Analysis",
+            "Reading Time",
+            "Prior Knowledge",
+            "Age Effects",
+            "Higher-level Comprehension",
+            "Lower-level Comprehension"
+        ],
+        "definition": "\"Educational psychology is the branch of psychology concerned with the scientific study of human learning. The study of learning processes, from both cognitive and behavioral perspectives, allows researchers to understand individual differences in intelligence, cognitive development, affect, motivation, self-regulation, and self-concept, as well as their role in learning. The field of educational psychology relies heavily on quantitative methods, including testing and measurement, to enhance educational activities related to instructional design, classroom management, and assessment, which serve to facilitate learning processes in various educational settings across the lifespan.\" - wikipedia"
     },
     "Rehabilitation": {
         "url": "rehabilitation",
@@ -276,12 +297,16 @@
         ],
         "tc_count": 8,
         "citation_average": 2,
-        "definition": {
-            "Rehabilitation": {
-                "Definition": "Rehabilitation is the process of restoring someone to health or normal life through training and therapy after imprisonment, addiction, or illness.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Humor Styles",
+            "Depression",
+            "Daily Affect",
+            "Mental and Physical Functioning",
+            "Somatic Symptoms",
+            "Health Behaviors",
+            "Positive Reappraisal"
+        ],
+        "definition": "\"Rehabilitation is the process of helping an individual achieve the highest level of function, independence, and quality of life possible. This may involve physical therapy, occupational therapy, speech therapy, and other interventions to address physical, cognitive, emotional, or social challenges. The goal of rehabilitation is to restore the individual to their optimal level of functioning and to help them participate fully in their communities. - wikipedia\""
     },
     "Social Work": {
         "url": "social-work",
@@ -329,12 +354,15 @@
         ],
         "tc_count": 36,
         "citation_average": 2,
-        "definition": {
-            "Social Work": {
-                "Definition": "Social work is an academic discipline and practice-based profession that promotes social change and development, social cohesion, and the empowerment and liberation of people. Principles of social justice, human rights, collective responsibility, and respect for diversities are central to social work. Underpinned by theories of social work, social sciences, humanities, and indigenous knowledge, social work engages people and structures to address life challenges and enhance well-being.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Identity",
+            "Values",
+            "Relationships",
+            "Well-being",
+            "Intercultural Communication",
+            "Parenting Styles"
+        ],
+        "definition": "\"Social work is an academic discipline and practice-based profession that concerns itself with individuals, families, groups, and communities in an effort to enhance social functioning and overall well-being. Social functioning refers to the way in which people perform their social roles, and the structural institutions that are provided to sustain them. Social work applies social sciences, such as sociology, psychology, political science, public health, community development, law, and economics, to engage with client systems, conduct assessments, and develop interventions to solve social problems and create social change.\" - wikipedia"
     },
     "Nursing": {
         "url": "nursing",
@@ -383,10 +411,14 @@
         ],
         "tc_count": 80,
         "citation_average": 4,
-        "definition": {
-            "Definition": "Nursing is a profession within the healthcare sector focused on the care of individuals, families, and communities so they may attain, maintain, or recover optimal health and quality of life. Nurses may be differentiated from other healthcare providers by their approach to patient care, training, and scope of practice. Nurses practice in many specialties with differing levels of prescription authority.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Advocacy Skills Development",
+            "Patient Safety",
+            "Quality of Care",
+            "Barriers to Advocacy",
+            "Simulation-based Learning"
+        ],
+        "definition": "\"Nursing is a profession within the healthcare sector focused on the care of individuals, families, and communities so they may attain, maintain, or recover optimal health and quality of life.\" - wikipedia"
     },
     "Information Science & Library Science": {
         "url": "information-science-library-science",
@@ -409,10 +441,15 @@
         ],
         "tc_count": 41,
         "citation_average": 10,
-        "definition": {
-            "Definition": "Information science is a field primarily concerned with the analysis, collection, classification, manipulation, storage, retrieval, movement, dissemination, and protection of information. Library science is an interdisciplinary field that applies the practices, perspectives, and tools of management, information technology, education, and other areas to libraries; the collection, organization, preservation, and dissemination of information resources; and the political economy of information.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Vulnerability Analysis",
+            "Application Security",
+            "Latent Class Model",
+            "Regression Analysis",
+            "Information Security",
+            "IT Vendor Strategies"
+        ],
+        "definition": "\"Information science is a field primarily concerned with the analysis, collection, classification, manipulation, storage, retrieval, movement, dissemination, and protection of information. Library science is an interdisciplinary field that applies the practices, perspectives, and tools of management, information technology, education, and other areas to libraries; the collection, organization, preservation, and dissemination of information resources; and the political economy of information. - wikipedia\""
     },
     "Asian Studies": {
         "url": "asian-studies",
@@ -433,10 +470,14 @@
         ],
         "tc_count": 2,
         "citation_average": 0,
-        "definition": {
-            "Definition": "Asian studies is a broad interdisciplinary field that focuses on the study of Asia, including its history, culture, languages, politics, and economies. It encompasses various disciplines such as anthropology, history, sociology, political science, and literature to provide a comprehensive understanding of the diverse countries and regions in Asia.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Postcolonial Theory",
+            "Postcolonial Feminism",
+            "Intersectional Feminism",
+            "Secularism",
+            "Literary Works on Postsecularism"
+        ],
+        "definition": "Asian Studies is the study of the languages, cultures, histories, politics, economies, and societies of Asian countries and regions. It encompasses a wide range of disciplines, including anthropology, history, literature, political science, and sociology, among others. Asian Studies aims to provide a comprehensive understanding of the diverse and dynamic Asian continent, its people, and its influence on the global stage. - wikipedia"
     },
     "Public, Environmental & Occupational Health": {
         "url": "public-environmental-occupational-health",
@@ -490,10 +531,15 @@
         ],
         "tc_count": 112,
         "citation_average": 6,
-        "definition": {
-            "Definition": "Public health is the science and art of preventing disease, prolonging life, and promoting health through organized efforts and informed choices of society, organizations, public and private, communities and individuals. It is concerned with threats to health based on population health analysis. The focus is on the health of entire populations rather than individuals.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Community Detection",
+            "User Behavior Analysis",
+            "Network Security",
+            "Neural Networks",
+            "Query Optimization",
+            "Privacy-Preserving Data Mining"
+        ],
+        "definition": "\"Public health is the science and art of preventing disease, prolonging life, and promoting health through the organized efforts and informed choices of society, organizations, public and private communities, and individuals. It is concerned with threats to health based on population health analysis. The focus is on the health of entire populations rather than individuals. The aim is to prevent health problems from happening or re-occurring by implementing educational programs, developing policies, administering services, and conducting research. In many cases, treating a disease or controlling a pathogen can be vital to preventing it in others, such as during an outbreak. Vaccination programs and distribution of condoms to prevent the spread of communicable diseases are examples of common preventive public health measures, as are educational campaigns to promote vaccination and the use of condoms (including overcoming resistance to such).\" - wikipedia"
     },
     "Anatomy & Morphology": {
         "url": "anatomy-morphology",
@@ -515,12 +561,14 @@
         ],
         "tc_count": 0,
         "citation_average": 0,
-        "definition": {
-            "Anatomy & Morphology": {
-                "Definition": "Anatomy is the branch of biology concerned with the study of the structure of organisms and their parts. Morphology is a branch of biology dealing with the study of the form and structure of organisms and their specific structural features.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Dietary Specialization",
+            "Craniofacial Features",
+            "Primate Evolution",
+            "Mechanically Challenging Foods",
+            "Phylogenetic Analysis"
+        ],
+        "definition": "Anatomy & Morphology is the branch of biology that deals with the structure of organisms and their parts. It encompasses the study of the structure, shape, and form of living organisms, as well as their internal and external features. This field of study involves the examination and classification of different anatomical structures and their functions, providing valuable insights into the diversity and complexity of life forms on Earth. - wikipedia"
     },
     "Developmental Biology": {
         "url": "developmental-biology",
@@ -544,10 +592,14 @@
         ],
         "tc_count": 5,
         "citation_average": 2,
-        "definition": {
-            "Definition": "Developmental biology is the study of the process by which organisms grow and develop. It encompasses the biological changes that occur from fertilization to adulthood, including cell growth, differentiation, and morphogenesis. Developmental biologists investigate how genes and environmental factors interact to regulate these processes, ultimately leading to the formation of complex multicellular organisms.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Adaptive Traits",
+            "Shell Evolution",
+            "Embryonic Development",
+            "Phenotypic Diversification",
+            "Tetrapod Evolution"
+        ],
+        "definition": "Developmental biology is the study of the process by which organisms grow and develop. It covers the entire life cycle, from the fertilized egg to the adult organism, and involves the study of how cells divide, differentiate, and interact to form complex structures. Developmental biology seeks to understand the genetic, molecular, and cellular mechanisms that control these processes and how they are regulated in normal development and in disease. - wikipedia"
     },
     "Biology": {
         "url": "biology",
@@ -584,12 +636,15 @@
         ],
         "tc_count": 135,
         "citation_average": 15,
-        "definition": {
-            "Biology": {
-                "Definition": "Biology is the natural science that studies life and living organisms, including their physical structure, chemical processes, molecular interactions, physiological mechanisms, development, and evolution.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Gut Microbiota",
+            "Amino Acid Metabolism",
+            "16S rRNA Gene Sequencing",
+            "Carbon Isotope Analysis",
+            "Protein-deficient Diets",
+            "Structural Tissues Synthesis"
+        ],
+        "definition": "\"Biology is the natural science that studies life and living organisms, including their physical structure, chemical processes, molecular interactions, physiological mechanisms, development, and evolution.\" - wikipedia"
     },
     "Fisheries": {
         "url": "fisheries",
@@ -609,12 +664,14 @@
         ],
         "tc_count": 9,
         "citation_average": 4,
-        "definition": {
-            "Fisheries": {
-                "Definition": "Fisheries is the activity of catching fish, either for food or as a recreational pursuit. It includes the cultivation of fish and other aquatic species in controlled environments for commercial purposes. Fisheries can be marine or freshwater-based and play a crucial role in providing food and livelihoods for millions of people worldwide.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Impact of Temperature on Growth Rate",
+            "Effects of Diel-cycling Dissolved Oxygen on Growth",
+            "Synergistic Interaction of Diel-cycling DO and Temperature on Growth",
+            "pH Cycles and Growth Rate",
+            "High pCO2 Levels and Future Projections"
+        ],
+        "definition": "Fisheries is the commercial activity of capturing fish and other seafood for human consumption, as well as the process of managing and conserving those resources. This includes wild fisheries and fish farms, both of which play a crucial role in providing food and livelihoods for people around the world. - wikipedia"
     },
     "Marine & Freshwater Biology": {
         "url": "marine-freshwater-biology",
@@ -645,10 +702,14 @@
         ],
         "tc_count": 22,
         "citation_average": 3,
-        "definition": {
-            "Definition": "Marine biology is the scientific study of organisms in the ocean or other marine bodies of water. Given that in biology many phyla, families and genera have some species that live in the sea and others that live on land, marine biology classifies species based on the environment rather than on taxonomy. Freshwater biology is the scientific biological study of freshwater ecosystems and is a branch of limnology. This field seeks to understand the relationships between living organisms in lakes, rivers, and wetlands, including their interactions with their physical environment.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Trophic Structure Analysis",
+            "Biosynthetic Sources",
+            "Compound-Specific Isotope Analysis",
+            "Organic Matter Contribution",
+            "Detrital Subsidies"
+        ],
+        "definition": "Marine biology is the scientific study of marine life, organisms in the sea. Given that in biology many phyla, families and genera have some species that live in the sea and others that live on land, marine biology classifies species based on the environment rather than on taxonomy.  - wikipedia"
     },
     "Business": {
         "url": "business",
@@ -720,12 +781,15 @@
         ],
         "tc_count": 318,
         "citation_average": 9,
-        "definition": {
-            "Business": {
-                "Definition": "A business is an organization where goods and services are exchanged for one another or for money. Every business requires some form of investment and enough customers to whom its output can be sold on a consistent basis in order to make a profit.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Store-in-Store Agreements",
+            "Firm Value",
+            "Retailer Characteristics",
+            "Retail Space Leasing",
+            "Brand Image Congruence",
+            "Retail Presence"
+        ],
+        "definition": "\"Business is the activity of making one's living or making money by producing or buying and selling products (such as goods and services). Simply put, it is any activity or enterprise entered into for profit. It does not mean it is a company, a corporation, partnership, or have any such formal organization, but it can range from a street peddler to General Motors.  - wikipedia\""
     },
     "International Relations": {
         "url": "international-relations",
@@ -741,12 +805,15 @@
         ],
         "tc_count": 0,
         "citation_average": 0,
-        "definition": {
-            "International Relations": {
-                "Definition": "International relations (IR) is the study of relationships between countries, including the roles of states, intergovernmental organizations, non-governmental organizations (NGOs), and multinational corporations. It is a field that seeks to analyze and understand the interactions among various actors in the international system, including their motivations, behaviors, and conflicts.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Green Product Intensity",
+            "Environmental Lobbying",
+            "Regulatory Impact",
+            "Government Incentives",
+            "Market Dynamics",
+            "Electric Vehicle Market Analysis"
+        ],
+        "definition": "International Relations is the study of relationships between countries, including the roles of states, intergovernmental organizations, non-governmental organizations (NGOs), and multinational corporations. It is a field that focuses on the interactions between different actors in the global political arena, examining issues such as diplomacy, international law, conflict resolution, and economic development. - wikipedia"
     },
     "Political Science": {
         "url": "political-science",
@@ -785,12 +852,13 @@
         ],
         "tc_count": 84,
         "citation_average": 6,
-        "definition": {
-            "Political Science": {
-                "Definition": "Political science is the scientific study of politics and government. It examines the theory and practice of politics and the analysis of political systems and political behavior. Political scientists study issues such as governance, public policy, political ideology, and political institutions.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Barriers to Entry",
+            "Economic Rents",
+            "Occupational Licensure",
+            "Financial Regulation"
+        ],
+        "definition": "\"Political science is a social science discipline that deals with systems of governance and the analysis of political activity and political behavior. It deals extensively with the theory and practice of politics which is commonly thought of as determining of the distribution of power and resources. Political scientists \"see themselves engaged in revealing the relationships underlying political events and conditions, and from these revelations they attempt to construct general principles about the way the world of politics works.\" - wikipedia\""
     },
     "Ecology": {
         "url": "ecology",
@@ -868,12 +936,14 @@
         ],
         "tc_count": 148,
         "citation_average": 5,
-        "definition": {
-            "Ecology": {
-                "Definition": "Ecology is the branch of biology that studies the interactions among organisms and their biophysical environment, which includes both biotic and abiotic components.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Species Decline",
+            "White-nose Syndrome",
+            "Species Distribution",
+            "Genetic Confirmation",
+            "Surveys and Monitoring"
+        ],
+        "definition": "Ecology is the branch of biology that studies the interactions among organisms and their biophysical environment, which includes both biotic and abiotic components.  - wikipedia"
     },
     "Environmental Sciences": {
         "url": "environmental-sciences",
@@ -935,12 +1005,14 @@
         ],
         "tc_count": 132,
         "citation_average": 6,
-        "definition": {
-            "Environmental Sciences": {
-                "Definition": "Environmental science is an interdisciplinary academic field that integrates physical, biological and information sciences to the study of the environment, and the solution of environmental problems.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Environmental DNA (eDNA) Detection",
+            "Invasive Species Monitoring",
+            "Crustacean Biology",
+            "Estuarine Ecosystems",
+            "Species-specific Droplet Digital PCR (ddPCR) Assay"
+        ],
+        "definition": "Environmental science is an interdisciplinary academic field that integrates physical, biological, and information sciences to study the environment and solve environmental problems. - wikipedia"
     },
     "Literature": {
         "url": "literature",
@@ -958,12 +1030,7 @@
         ],
         "tc_count": 0,
         "citation_average": 0,
-        "definition": {
-            "Literature": {
-                "Definition": "Literature is any body of written works that reflect a culture's language and storytelling traditions. It encompasses various genres such as poetry, novels, plays, and essays, and often explores themes of human experience, emotions, and societal issues.",
-                "source": "wikipedia"
-            }
-        }
+        "definition": "Literature is a term used to describe written or spoken material. It is a body of written works of language, period, or culture. Literature can be classified according to whether it is fiction or non-fiction and whether it is poetry or prose. It can be further distinguished according to major forms such as the novel, short story, or drama; and works are often categorized according to historical periods or their adherence to certain aesthetic features or expectations (genre). - wikipedia"
     },
     "Astronomy & Astrophysics": {
         "url": "astronomy-astrophysics",
@@ -991,12 +1058,14 @@
         ],
         "tc_count": 463,
         "citation_average": 51,
-        "definition": {
-            "Astronomy & Astrophysics": {
-                "Definition": "Astronomy is a natural science that studies celestial objects and phenomena. It uses mathematics, physics, and chemistry to explain their origin and evolution. Astrophysics is a branch of astronomy that deals with the physical properties and processes of celestial objects.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Radial Velocities",
+            "Alpha Elements",
+            "Close Binary Fraction",
+            "Protostellar Discs",
+            "Gravitational Stability"
+        ],
+        "definition": "\"Astronomy is a natural science that studies celestial objects and phenomena. It applies mathematics, physics, and chemistry in an effort to explain the origin of those objects and phenomena and their evolution. Objects of interest include planets, moons, stars, galaxies, and comets; the phenomena also includes supernova explosions, gamma ray bursts, and cosmic microwave background radiation. More generally, all phenomena that originate outside Earth's atmosphere are within the purview of astronomy. A related but distinct subject is physical cosmology, which is the study of the Universe as a whole.\" - wikipedia"
     },
     "Psychology, Applied": {
         "url": "psychology-applied",
@@ -1030,10 +1099,13 @@
         ],
         "tc_count": 107,
         "citation_average": 11,
-        "definition": {
-            "Definition": "Applied psychology is the use of psychological methods and findings of scientific psychology to solve practical problems of human and animal behavior and experience. Some of the areas of applied psychology include clinical psychology, counseling psychology, industrial-organizational psychology, forensic psychology, and sports psychology.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Employee Self-Efficacy",
+            "Organizational Support Climate",
+            "Positive Workplace Interactions",
+            "Service Performance"
+        ],
+        "definition": "\"Applied psychology is the use of psychological methods and findings of scientific psychology to solve practical problems of human and animal behavior and experience. Some of the areas of applied psychology include clinical psychology, counseling psychology, industrial and organizational psychology, forensic psychology, and sports psychology. - wikipedia\""
     },
     "Management": {
         "url": "management",
@@ -1101,12 +1173,15 @@
         ],
         "tc_count": 332,
         "citation_average": 9,
-        "definition": {
-            "Management": {
-                "Definition": "Management is the coordination and organization of activities within an organization to achieve defined objectives. It involves planning, organizing, leading, and controlling resources such as human, financial, and material to achieve organizational goals effectively and efficiently.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Store-in-Store Agreements",
+            "Firm Value",
+            "Retailer Characteristics",
+            "Retail Space Leasing",
+            "Brand Image Congruence",
+            "Retail Presence"
+        ],
+        "definition": "\"Management is the administration of an organization, whether it is a business, a not-for-profit organization, or government body. It involves the coordination of resources such as labor, capital, and information to achieve organizational goals. Management is also concerned with the planning, organizing, directing, and controlling of activities to ensure that objectives are met efficiently and effectively. - wikipedia\""
     },
     "Environmental Studies": {
         "url": "environmental-studies",
@@ -1142,12 +1217,15 @@
         ],
         "tc_count": 44,
         "citation_average": 4,
-        "definition": {
-            "Environmental Studies": {
-                "Definition": "Environmental studies is a broad field that examines the interaction between humans and the environment. It encompasses the impact of human activity on the environment, as well as strategies for sustainable development and conservation of natural resources.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Deforestation",
+            "Riparian Preservation Areas",
+            "Forest Restoration",
+            "Stream Size Impact",
+            "Illegal Logging",
+            "Environmental Policy"
+        ],
+        "definition": "Environmental studies is a broad field that encompasses the scientific study of the environment and the solutions to environmental problems. It integrates various disciplines such as biology, chemistry, physics, ecology, geology, geography, and sociology to understand the complex interactions between humans and the environment. Environmental studies aim to promote sustainability, conservation, and the protection of natural resources for future generations. - wikipedia"
     },
     "Criminology & Penology": {
         "url": "criminology-penology",
@@ -1171,10 +1249,15 @@
         ],
         "tc_count": 2,
         "citation_average": 0,
-        "definition": {
-            "Definition": "Criminology is the scientific study of the nature, extent, causes, and control of criminal behavior in both the individual and in society. Penology is the study of the punishment of crime and prison management.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Empathy with Rape Victim",
+            "Empathy with Rapist",
+            "Sexual Aggression Experience Groups",
+            "Gender Disparities in Empathy",
+            "Perspective-Taking",
+            "Future Research Recommendations"
+        ],
+        "definition": "\"Criminology is the scientific study of the nature, extent, management, causes, control, consequences, and prevention of criminal behavior, both on individual and social levels. Penology focuses on the punishment of crime and prison management. Together, these fields aim to understand and address crime within society.\" - wikipedia"
     },
     "Economics": {
         "url": "economics",
@@ -1236,12 +1319,14 @@
         ],
         "tc_count": 169,
         "citation_average": 5,
-        "definition": {
-            "Economics": {
-                "Definition": "Economics is the social science that studies the production, distribution, and consumption of goods and services. It focuses on how individuals, businesses, governments, and nations make choices about how to allocate resources to satisfy their needs and wants. Economists study how incentives, such as prices or policies, influence people's behavior and the overall economy.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Labor Supply Response",
+            "Spousal Health Shock",
+            "Long-Term Adaptation Model",
+            "Household Dynamics",
+            "Gender Roles in Labor"
+        ],
+        "definition": "\"Economics is the social science that studies the production, distribution, and consumption of goods and services. It involves analyzing the behavior of individuals, businesses, and governments in making choices about how to allocate resources. Economics can be divided into two main branches: microeconomics, which focuses on individual behavior, and macroeconomics, which looks at the economy as a whole. - wikipedia\""
     },
     "Evolutionary Biology": {
         "url": "evolutionary-biology",
@@ -1279,12 +1364,16 @@
         ],
         "tc_count": 50,
         "citation_average": 7,
-        "definition": {
-            "Evolutionary Biology": {
-                "Definition": "Evolutionary biology is the subfield of biology that studies the evolution of biological diversity, the origins of new species, and the mechanisms that drive evolutionary change. It involves understanding how organisms have evolved over time through processes such as natural selection, genetic drift, and speciation.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Epigenetics",
+            "Population Dynamics",
+            "Amphibian Biodiversity",
+            "Urbanization Effects",
+            "Fungal Pathogens",
+            "Adaptive Responses",
+            "DNA Methylation"
+        ],
+        "definition": "Evolutionary biology is the subfield of biology that studies the evolutionary processes that produced the diversity of life on Earth, starting from a single common ancestor. These processes include natural selection, common descent, and speciation. - wikipedia"
     },
     "Oncology": {
         "url": "oncology",
@@ -1306,12 +1395,14 @@
         ],
         "tc_count": 13,
         "citation_average": 4,
-        "definition": {
-            "Oncology": {
-                "Definition": "Oncology is a branch of medicine that deals with the prevention, diagnosis, and treatment of cancer. It includes medical oncology (the use of chemotherapy, hormone therapy, and other drugs to treat cancer), surgical oncology (the use of surgery to diagnose and treat cancer), and radiation oncology (the use of radiation therapy to treat cancer). Oncologists are doctors who specialize in the field of oncology.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Prostate Cancer",
+            "Drug Resistance",
+            "Gene Expression",
+            "Cell Survival",
+            "RNA Interference"
+        ],
+        "definition": "Oncology is a branch of medicine that deals with the prevention, diagnosis, and treatment of cancer. It includes medical oncology (the use of chemotherapy, hormone therapy, and other drugs to treat cancer), surgical oncology (the use of surgery to treat cancer), and radiation oncology (the use of radiation therapy to treat cancer). - wikipedia"
     },
     "Public Administration": {
         "url": "public-administration",
@@ -1340,10 +1431,15 @@
         ],
         "tc_count": 16,
         "citation_average": 3,
-        "definition": {
-            "Definition": "Public administration is the implementation of government policy and an academic discipline that studies this implementation and prepares civil servants for working in the public service. As a field of inquiry with a diverse scope, its fundamental goal is to advance management and policies so that government can function effectively.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Epidemiologic Theory",
+            "Youth Civic Engagement",
+            "School-Based Interventions",
+            "Civics Education Initiatives",
+            "Vulnerable Populations",
+            "Herd Immunity and Critical Mass"
+        ],
+        "definition": "\"Public administration refers to the implementation of government policy and an academic discipline that studies this implementation and prepares civil servants for working in the public service. It involves the management of public programs, the formulation of policies, and the allocation of resources to achieve the goals of the public sector.\" - wikipedia"
     },
     "Geography": {
         "url": "geography",
@@ -1363,12 +1459,15 @@
         ],
         "tc_count": 0,
         "citation_average": 0,
-        "definition": {
-            "Geography": {
-                "Definition": "Geography is a field of science dedicated to the study of the lands, features, inhabitants, and phenomena of the Earth and other planets. It encompasses both the physical aspects of the Earth, such as mountains, rivers, climate, and ecosystems, as well as the human aspects, including populations, cultures, economies, and political systems.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "National Comprehensive TBI Database",
+            "GIS in TBI Research",
+            "Legislative Actions for TBI Data Infrastructure",
+            "Multi-tiered Conceptual Framework for TBI Data Structure",
+            "Precision TBI Research",
+            "Global Efforts on TBI"
+        ],
+        "definition": "\"Geography is a field of science devoted to the study of the lands, features, inhabitants, and phenomena of the Earth and planets. The first person to use the word \"geography\" was Eratosthenes (276\u2013194 BC). Four historical traditions in geographical research are spatial analysis of the natural and the human phenomena (geography as the study of distribution), area studies (places and regions), study of the human-land relationship, and research in the Earth sciences. - wikipedia\""
     },
     "Geography, Physical": {
         "url": "geography-physical",
@@ -1388,12 +1487,15 @@
         ],
         "tc_count": 0,
         "citation_average": 0,
-        "definition": {
-            "Geography, Physical": {
-                "Definition": "Physical geography is the branch of natural science which deals with the study of processes and patterns in the natural environment like the atmosphere, hydrosphere, biosphere, and geosphere, as opposed to the cultural or built environment, the domain of human geography.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "National Comprehensive TBI Database",
+            "GIS in TBI Research",
+            "Legislative Actions for TBI Data Infrastructure",
+            "Multi-tiered Conceptual Framework for TBI Data Structure",
+            "Precision TBI Research",
+            "Global Efforts on TBI"
+        ],
+        "definition": "Physical geography is one of the two major subfields of geography. Physical geography is the branch of natural science which deals with the study of processes and patterns in the natural environment like the atmosphere, hydrosphere, biosphere, and geosphere, as opposed to the cultural or built environment, the domain of human geography.  - wikipedia"
     },
     "Remote Sensing": {
         "url": "remote-sensing",
@@ -1418,10 +1520,15 @@
         ],
         "tc_count": 26,
         "citation_average": 8,
-        "definition": {
-            "Definition": "Remote sensing is the acquisition of information about an object or phenomenon without making physical contact with the object and thus in contrast to on-site observation, especially the Earth. Remote sensing is used in numerous fields, including geography, land surveying, agriculture, forestry, urban planning, emergency response, and military intelligence.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "National Comprehensive TBI Database",
+            "GIS in TBI Research",
+            "Legislative Actions for TBI Data Infrastructure",
+            "Multi-tiered Conceptual Framework for TBI Data Structure",
+            "Precision TBI Research",
+            "Global Efforts on TBI"
+        ],
+        "definition": "Remote sensing is the acquisition of information about an object or phenomenon without making physical contact with the object and thus in contrast to on-site observation.  - wikipedia"
     },
     "Business, Finance": {
         "url": "business-finance",
@@ -1471,12 +1578,14 @@
         ],
         "tc_count": 102,
         "citation_average": 5,
-        "definition": {
-            "Business, Finance": {
-                "Definition": "Finance is a field that is concerned with the allocation of assets and liabilities over space and time, often under conditions of risk or uncertainty. Business is the activity of making one's living or making money by producing or buying and selling products (such as goods and services). Simply put, it is any activity or enterprise entered into for profit.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Home Bias",
+            "Endowment Bias",
+            "Investor Characteristics",
+            "Risk Tolerance",
+            "Financial Education"
+        ],
+        "definition": "\"Finance is a field that is concerned with the allocation (investment) of assets and liabilities over space and time, often under conditions of risk or uncertainty. Finance can also be defined as the art of money management. Participants in the market aim to price assets based on their risk level, fundamental value, and their expected rate of return.\" - wikipedia"
     },
     "Mathematics": {
         "url": "mathematics",
@@ -1516,12 +1625,15 @@
         ],
         "tc_count": 20,
         "citation_average": 1,
-        "definition": {
-            "Mathematics": {
-                "Definition": "Mathematics includes the study of quantity, structure, space, and change. It seeks out patterns and formulates new conjectures. Mathematicians resolve the truth or falsity of these conjectures through mathematical proof. The research required to solve mathematical problems can take years or even centuries of sustained inquiry.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Schubert Varieties",
+            "Weyl Group Elements",
+            "Quasi-Homogeneous Spaces",
+            "Hecke Products",
+            "Bruhat Order",
+            "Homogeneous Cases"
+        ],
+        "definition": "\"Mathematics includes the study of such topics as quantity (numbers), structure, space, and change. It has no generally accepted definition.\" - wikipedia"
     },
     "Parasitology": {
         "url": "parasitology",
@@ -1539,12 +1651,15 @@
         ],
         "tc_count": 8,
         "citation_average": 8,
-        "definition": {
-            "Parasitology": {
-                "Definition": "Parasitology is the study of parasites, their hosts, and the relationship between them. It is a branch of biology that focuses on the interactions between parasites and their hosts, including the mechanisms of parasitism, the impact on the host's health, and the ecology of parasitic organisms.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Gene Expression Analysis",
+            "Host-Parasite Interactions",
+            "GPCRs",
+            "RNA-seq Data Analysis",
+            "Model Organisms",
+            "Neuronal Expression Patterns"
+        ],
+        "definition": "\"Parasitology is the study of parasites, their hosts, and the relationship between them. It encompasses various disciplines such as biology, ecology, and medicine to understand the behavior, evolution, and impact of parasites on their hosts and ecosystems. Parasitologists investigate the diversity of parasites, their life cycles, transmission methods, and the development of strategies to control and prevent parasitic infections. - wikipedia\""
     },
     "Development Studies": {
         "url": "development-studies",
@@ -1572,12 +1687,19 @@
         ],
         "tc_count": 31,
         "citation_average": 6,
-        "definition": {
-            "Development Studies": {
-                "Definition": "Development studies is an interdisciplinary branch of social science that focuses on the process of social, economic, political, and cultural change in developing countries and regions. It examines the causes and consequences of development, as well as the policies and strategies that can promote sustainable and equitable development.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Country-level Formal Institutions",
+            "Government Effectiveness",
+            "Political Freedom",
+            "Informal Institutions",
+            "Religiosity",
+            "Entrepreneurial Activity",
+            "Global Entrepreneurship Monitor",
+            "World Governance Indicators",
+            "WIN-Gallup International Global Index",
+            "Interplay between Formal and Informal Institutions"
+        ],
+        "definition": "Development studies is a multidisciplinary branch of social science that addresses issues of social and economic development. It focuses on the processes of change in developing countries and the ways in which these changes can be understood, analyzed, and promoted. Development studies encompass a wide range of topics, including poverty, inequality, globalization, sustainability, governance, and human rights. - wikipedia"
     },
     "Health Care Sciences & Services": {
         "url": "health-care-sciences-services",
@@ -1602,10 +1724,16 @@
         ],
         "tc_count": 4,
         "citation_average": 1,
-        "definition": {
-            "Definition": "Health care sciences and services encompass a wide range of disciplines and activities aimed at maintaining or improving the health of individuals and communities. This includes medical diagnosis, treatment, prevention of diseases, and promotion of overall well-being through various healthcare interventions and services.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Self-Efficacy",
+            "Work-Life Balance",
+            "Stress Management",
+            "Professionalism",
+            "Needs Assessment",
+            "Resiliency",
+            "Self-Care"
+        ],
+        "definition": "\"Health care sciences and services encompass a wide range of disciplines focused on the maintenance and improvement of individual and population health. This includes the study and application of medical knowledge, healthcare delivery systems, public health initiatives, and the development of healthcare policies. Professionals in this field work to diagnose, treat, and prevent illnesses, as well as promote overall well-being and quality of life for patients.\" - wikipedia"
     },
     "Integrative & Complementary Medicine": {
         "url": "integrative-complementary-medicine",
@@ -1619,10 +1747,12 @@
         ],
         "tc_count": 2,
         "citation_average": 2,
-        "definition": {
-            "Definition": "Integrative and complementary medicine (ICM) is an approach to healthcare that combines conventional medicine with evidence-based complementary therapies and practices. It emphasizes treating the whole person, including physical, emotional, mental, social, and spiritual aspects, to promote overall well-being and healing.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Orthopedics",
+            "Material Testing",
+            "Statistical Analysis"
+        ],
+        "definition": "Integrative and complementary medicine is a healthcare approach that combines conventional medicine with evidence-based complementary therapies to promote overall wellness. It focuses on treating the whole person, including their physical, emotional, mental, and spiritual well-being. Integrative and complementary medicine often involves a partnership between the patient and healthcare provider to develop a personalized treatment plan. - wikipedia"
     },
     "Psychology, Multidisciplinary": {
         "url": "psychology-multidisciplinary",
@@ -1661,10 +1791,14 @@
         ],
         "tc_count": 26,
         "citation_average": 2,
-        "definition": {
-            "Definition": "Multidisciplinary psychology is a field that involves the integration of different disciplines within psychology to address complex issues and problems. It combines perspectives and approaches from various subfields of psychology, such as clinical, social, cognitive, and developmental psychology, to provide a comprehensive understanding of human behavior and mental processes.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Faculty Diversity Initiatives",
+            "Postdoc-to-Faculty Conversion",
+            "Collaborative Consortia Approach",
+            "Professional Development",
+            "Tenure-Track Positions"
+        ],
+        "definition": "\"Multidisciplinary psychology refers to the study of behavior and mind from multiple perspectives and disciplines, such as biology, sociology, anthropology, and philosophy. This approach allows for a comprehensive understanding of human behavior and mental processes by integrating insights and methodologies from various fields.\" - wikipedia"
     },
     "Social Sciences, Interdisciplinary": {
         "url": "social-sciences-interdisciplinary",
@@ -1691,10 +1825,14 @@
         ],
         "tc_count": 2,
         "citation_average": 0,
-        "definition": {
-            "Definition": "Social sciences is a category of academic disciplines focused on society and the relationships among individuals within a society. It includes disciplines such as anthropology, economics, political science, psychology, sociology, and interdisciplinary fields like urban studies, gender studies, and international relations. Interdisciplinary studies involve the combination of two or more disciplines to create a comprehensive approach to understanding complex social issues.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Symbolism in Politics",
+            "Impact of Political Figures",
+            "Future Uncertainty",
+            "Community Engagement",
+            "Political Mobilization"
+        ],
+        "definition": "Interdisciplinary studies is a broad field that encompasses the integration of knowledge, methodologies, and perspectives from multiple disciplines to address complex issues and problems. It involves collaboration across traditional academic boundaries to gain a more comprehensive understanding of social phenomena and human behavior. Interdisciplinary approaches encourage critical thinking, creativity, and innovation by drawing on diverse sources of knowledge and fostering connections between different areas of study. - wikipedia"
     },
     "Health Policy & Services": {
         "url": "health-policy-services",
@@ -1715,10 +1853,14 @@
         ],
         "tc_count": 5,
         "citation_average": 2,
-        "definition": {
-            "Definition": "Health policy and services are the set of decisions, plans, and actions undertaken to achieve specific healthcare goals within a society. They encompass the organization, financing, and delivery of healthcare services, as well as the development and implementation of policies that influence the health of individuals and populations.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Body Awareness in Healing",
+            "Self-Reflexivity",
+            "Embodied Interaction",
+            "Therapeutic Goals",
+            "Patient-Centered Healthcare"
+        ],
+        "definition": "Health policy and services refer to the decisions, plans, and actions undertaken to achieve specific health care goals within a society. An explicit health policy can achieve several things: it defines a vision for the future which in turn helps to establish targets and points of reference for the short and medium term. It outlines priorities and the expected roles of different groups; and it builds consensus and informs people.  - wikipedia"
     },
     "Gerontology": {
         "url": "gerontology",
@@ -1738,10 +1880,14 @@
         ],
         "tc_count": 2,
         "citation_average": 0,
-        "definition": {
-            "Definition": "Gerontology is the study of the social, psychological, cognitive, and biological aspects of aging. It involves research into the aging process, the challenges faced by older adults, and the ways in which society can support and care for its aging population.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Bioelectrical Impedance Analysis",
+            "Appendicular Lean Mass Estimation",
+            "Dual-Energy X-ray Absorptiometry",
+            "Multifrequency BIA",
+            "Sarcopenia Diagnosis"
+        ],
+        "definition": "\"Gerontology is the study of the social, cultural, psychological, cognitive, and biological aspects of aging. It is a multidisciplinary field that encompasses the study of aging from multiple perspectives, including biology, psychology, sociology, and health care.\" - wikipedia"
     },
     "Education, Scientific Disciplines": {
         "url": "education-scientific-disciplines",
@@ -1792,10 +1938,14 @@
         ],
         "tc_count": 83,
         "citation_average": 5,
-        "definition": {
-            "Definition": "Scientific disciplines are defined as specific branches of science that focus on a particular area of study, such as biology, chemistry, physics, or astronomy. Each discipline follows a systematic approach to understanding the natural world through observation, experimentation, and analysis, leading to the development of theories and principles.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Science Perception",
+            "Gender Imbalance",
+            "Stereotyping",
+            "Educational Interventions",
+            "Assessment Methods"
+        ],
+        "definition": "\"Scientific disciplines are defined as particular branches of science, organized bodies of knowledge, and areas of study that are systematically developed and explored. These disciplines encompass various fields such as physics, chemistry, biology, and astronomy, each with its own principles, methodologies, and applications. - wikipedia\""
     },
     "Biodiversity Conservation": {
         "url": "biodiversity-conservation",
@@ -1838,12 +1988,14 @@
         ],
         "tc_count": 52,
         "citation_average": 4,
-        "definition": {
-            "Biodiversity Conservation": {
-                "Definition": "Biodiversity conservation is the protection and management of biodiversity to ensure its sustainable utilization for present and future generations. It involves the conservation of species, ecosystems, and genetic diversity to maintain the balance of nature and the benefits it provides to humans and other living organisms.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Ant Diversity",
+            "Habitat Comparison",
+            "Pitfall Trapping",
+            "New Species Records",
+            "Barriers to Species Distribution"
+        ],
+        "definition": "\"Biodiversity conservation is the practice of protecting and preserving the variety of life on Earth, including ecosystems, species, and genetic diversity. It aims to maintain and enhance the health of the planet by preventing the extinction of species, promoting sustainable land use practices, and fostering coexistence between humans and nature. Biodiversity conservation is crucial for maintaining ecosystem services, such as clean air and water, as well as for the well-being of current and future generations. - wikipedia\""
     },
     "Ornithology": {
         "url": "ornithology",
@@ -1867,12 +2019,14 @@
         ],
         "tc_count": 4,
         "citation_average": 1,
-        "definition": {
-            "Ornithology": {
-                "Definition": "Ornithology is a branch of zoology that concerns the study of birds. Several aspects of ornithology differ from related disciplines, due partly to the high visibility and the aesthetic appeal of birds.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Impact of Forest Composition on Neotropical Migratory Songbirds",
+            "Long-term Population Trends of Ground-nesting Warblers",
+            "Effects of Vegetation on Bird Occupancy and Nest Success",
+            "Differences in Responses of Ovenbirds and Worm-eating Warblers to Forest Characteristics",
+            "Management Strategies for Ground-nesting Warblers in the Atlantic Coastal Plain"
+        ],
+        "definition": "Ornithology is a branch of zoology that concerns the study of birds. It includes the scientific study of the anatomy, physiology, behavior, and ecology of birds. Ornithologists often conduct research to better understand bird species, their habitats, and their conservation needs. - wikipedia"
     },
     "Statistics & Probability": {
         "url": "statistics-probability",
@@ -1891,10 +2045,14 @@
         ],
         "tc_count": 2,
         "citation_average": 1,
-        "definition": {
-            "Definition": "Statistics is a branch of mathematics dealing with data collection, organization, analysis, interpretation, and presentation. Probability is a measure of the likelihood that an event will occur. It is used to quantify uncertainty and risk in various fields, such as science, engineering, and economics.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Beta Regression",
+            "Inflated Beta Regression",
+            "Continuous Regression Models",
+            "Prior Distributions",
+            "Model Fit"
+        ],
+        "definition": "\"Statistics is a branch of mathematics dealing with data collection, organization, analysis, interpretation, and presentation. Probability is a measure of the likelihood that an event will occur. Together, statistics and probability play a crucial role in various fields such as science, engineering, business, and social sciences by helping to make informed decisions based on data analysis and predictions. - wikipedia\""
     },
     "Agronomy": {
         "url": "agronomy",
@@ -1913,12 +2071,15 @@
         ],
         "tc_count": 10,
         "citation_average": 10,
-        "definition": {
-            "Agronomy": {
-                "Definition": "Agronomy is the science and technology of producing and using plants in agriculture for food, fuel, fiber, and land restoration. It involves studying plant genetics, physiology, and ecology to improve crop production and management practices.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Neonicotinoid Insecticides",
+            "Contact Insecticide Treatment",
+            "Horizontal Transfer of Insecticides",
+            "Enzyme Activity in Ants",
+            "Foraging Behavior of Ants",
+            "Nesting Activities of Ants"
+        ],
+        "definition": "\"Agronomy is the science and technology of producing and using plants in agriculture for food, fuel, fiber, and land reclamation. It encompasses work in the areas of plant genetics, plant physiology, meteorology, and soil science.\" - wikipedia"
     },
     "Entomology": {
         "url": "entomology",
@@ -1956,12 +2117,14 @@
         ],
         "tc_count": 54,
         "citation_average": 6,
-        "definition": {
-            "Entomology": {
-                "Definition": "Entomology is the scientific study of insects, a branch of zoology. Insects are a group of arthropods that have a chitinous exoskeleton, a three-part body (head, thorax, and abdomen), three pairs of jointed legs, compound eyes, and one pair of antennae. Entomologists study the classification, behavior, ecology, physiology, and genetics of insects.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Insect Foraging Behavior",
+            "Particle Covering Behavior",
+            "Ant Communication",
+            "Food Search Strategies",
+            "Soil Particle Manipulation"
+        ],
+        "definition": "Entomology is the scientific study of insects, a branch of zoology. In the past the term \"insect\" was more vague, and historically the definition of entomology included the study of terrestrial animals in other arthropod groups or other phyla, such as arachnids, myriapods, earthworms, land snails, and slugs.  - wikipedia"
     },
     "Engineering, Industrial": {
         "url": "engineering-industrial",
@@ -1979,10 +2142,15 @@
         ],
         "tc_count": 3,
         "citation_average": 1,
-        "definition": {
-            "Definition": "Industrial engineering is an engineering profession that is concerned with the optimization of complex processes, systems, or organizations by developing, improving and implementing integrated systems of people, money, knowledge, information, equipment, energy, materials, analysis and synthesis. Industrial engineers use specialized knowledge and skills in the mathematical, physical and social sciences, together with the principles and methods of engineering analysis and design, to specify, predict, and evaluate the results obtained from systems and processes.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Supply Chain Optimization",
+            "Demand Forecasting",
+            "Market Analysis",
+            "Sales Performance",
+            "Risk Management",
+            "Epidemic Response"
+        ],
+        "definition": "\"Industrial engineering is an engineering profession that is concerned with the optimization of complex processes, systems, or organizations. Industrial engineers work to eliminate waste of time, money, materials, person-hours, machine time, energy and other resources that do not generate value. - wikipedia\""
     },
     "Engineering, Manufacturing": {
         "url": "engineering-manufacturing",
@@ -1999,12 +2167,15 @@
         ],
         "tc_count": 12,
         "citation_average": 6,
-        "definition": {
-            "Engineering, Manufacturing": {
-                "Definition": "Manufacturing engineering is a branch of professional engineering that shares many common concepts and ideas with other fields of engineering such as mechanical, chemical, electrical, and industrial engineering. Manufacturing engineering requires the ability to plan the practices of manufacturing; to research and to develop tools, processes, machines and equipment; and to integrate the facilities and systems for producing quality products with optimal expenditure. Like other engineers, manufacturing engineers use computers to help create and analyze designs, run simulations and test how a machine will operate.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Supply Chain Optimization",
+            "Demand Forecasting",
+            "Market Analysis",
+            "Sales Performance",
+            "Risk Management",
+            "Epidemic Response"
+        ],
+        "definition": "\"Engineering is the application of scientific, economic, social, and practical knowledge in order to invent, design, build, maintain, research, and improve structures, machines, devices, systems, materials, and processes. Manufacturing is the production of goods through the use of labor, machines, tools, and chemical or biological processing or formulation. - wikipedia\""
     },
     "Operations Research & Management Science": {
         "url": "operations-research-management-science",
@@ -2025,10 +2196,15 @@
         ],
         "tc_count": 13,
         "citation_average": 4,
-        "definition": {
-            "Definition": "Operations research (OR) is a discipline that deals with the application of advanced analytical methods to help make better decisions. It involves the use of mathematical modeling, statistical analysis, and optimization techniques to solve complex problems in various fields such as business, engineering, and healthcare. Management science is a related field that focuses on using analytical tools and techniques to improve decision-making and strategic planning within organizations.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Supply Chain Optimization",
+            "Demand Forecasting",
+            "Market Analysis",
+            "Sales Performance",
+            "Risk Management",
+            "Epidemic Response"
+        ],
+        "definition": "\"Operations research is a discipline that deals with the application of advanced analytical methods to help make better decisions. It is often used in complex decision-making processes within organizations to improve efficiency and effectiveness. Management science, on the other hand, focuses on the use of mathematical modeling and analytical methods to help managers make informed decisions. Together, operations research and management science provide valuable tools for optimizing processes, resources, and strategies in various industries. - wikipedia\""
     },
     "Physics, Nuclear": {
         "url": "physics-nuclear",
@@ -2049,10 +2225,14 @@
         ],
         "tc_count": 182,
         "citation_average": 60,
-        "definition": {
-            "Definition": "Nuclear physics is the field of physics that studies atomic nuclei and their constituents and interactions. It includes the study of nuclear reactions, radioactivity, and nuclear properties. Nuclear physics plays a crucial role in various applications, such as nuclear power generation, medical imaging, and nuclear weapons.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Effective Field Theories",
+            "Bayesian Inference",
+            "Chiral Effective Field Theory",
+            "Parameter Estimation",
+            "NN Potential Estimation"
+        ],
+        "definition": "\"Nuclear physics is the field of physics that studies atomic nuclei and their constituents and interactions. Other forms of nuclear matter are also studied. Nuclear physics should not be confused with atomic physics, which studies the atom as a whole, including its electrons.\" - wikipedia"
     },
     "Women's Studies": {
         "url": "women-s-studies",
@@ -2080,10 +2260,14 @@
         ],
         "tc_count": 4,
         "citation_average": 0,
-        "definition": {
-            "Definition": "Women's studies is an academic field that focuses on the experiences, contributions, and perspectives of women in society. It explores the ways in which gender shapes and influences various aspects of life, including history, culture, politics, and economics. Women's studies also examines issues related to gender equality, women's rights, and feminism.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Discrimination and Identity",
+            "Mental Health Outcomes",
+            "Community Support",
+            "Gender Differences",
+            "Racism and Policy Actions"
+        ],
+        "definition": "\"Women's studies is an academic field that explores the experiences, contributions, and challenges faced by women in society. It examines gender roles, inequality, and discrimination, as well as the history of women's movements and feminist theories. Women's studies aims to promote gender equality and social justice through research, education, and advocacy. - wikipedia\""
     },
     "Psychology, Developmental": {
         "url": "psychology-developmental",
@@ -2104,10 +2288,13 @@
         ],
         "tc_count": 5,
         "citation_average": 2,
-        "definition": {
-            "Definition": "Developmental psychology is the scientific study of how and why human beings change over the course of their life. Originally concerned with infants and children, the field has expanded to include adolescence, adult development, aging, and the entire lifespan.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Developmental Assets",
+            "Ecological-Transactional Frameworks",
+            "Neighborhood Collective Efficacy",
+            "Intervention Strategies"
+        ],
+        "definition": "\"Developmental psychology is the scientific study of how and why human beings change over the course of their life. Originally concerned with infants and children, the field has expanded to include adolescence, adult development, aging, and the entire lifespan.\" - wikipedia"
     },
     "Chemistry, Multidisciplinary": {
         "url": "chemistry-multidisciplinary",
@@ -2141,10 +2328,14 @@
         ],
         "tc_count": 29,
         "citation_average": 7,
-        "definition": {
-            "Definition": "Multidisciplinary chemistry is a branch of chemistry that involves the application of chemical principles and techniques to solve problems in various fields such as biology, physics, environmental science, and materials science. It integrates knowledge and methods from different disciplines to address complex scientific challenges.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Carbon Metabolism",
+            "Enzyme Catalysis",
+            "Gene Expression Regulation",
+            "Bacterial Pathways",
+            "Biochemical Reactions"
+        ],
+        "definition": "\"Multidisciplinary chemistry is a branch of science that combines principles and research methods from various disciplines such as biology, physics, and engineering to study chemical processes and phenomena. It aims to provide a comprehensive understanding of chemical interactions and their applications in different fields.\" - Wikipedia"
     },
     "Sociology": {
         "url": "sociology",
@@ -2170,12 +2361,13 @@
         ],
         "tc_count": 7,
         "citation_average": 1,
-        "definition": {
-            "Sociology": {
-                "Definition": "Sociology is the study of society, human social behavior, patterns of social relationships, social interaction, and culture that surrounds everyday life. It is a social science that uses various methods of empirical investigation and critical analysis to understand social order, social change, and the development of society.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Forest Composition",
+            "Tree Species Distribution",
+            "Impact of Human Activity on Forests",
+            "Succession in Forest Ecosystems"
+        ],
+        "definition": "\"Sociology is the study of society, patterns of social relationships, social interaction, and culture of everyday life. It is a social science that uses various methods of empirical investigation and critical analysis to develop a body of knowledge about social order, social disorder, and social change.\" - wikipedia"
     },
     "Computer Science, Information Systems": {
         "url": "computer-science-information-systems",
@@ -2198,10 +2390,14 @@
         ],
         "tc_count": 40,
         "citation_average": 13,
-        "definition": {
-            "Definition": "Computer Science is the study of the theory, experimentation, and engineering that form the basis for the design and use of computers. It involves the study of algorithms that process, store, and communicate digital information. Information Systems is a field that focuses on the design, implementation, and management of information systems to support business processes and decision-making within organizations.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Core Competence",
+            "IT Application Maturity",
+            "Institutional Capability",
+            "Process Management",
+            "ISO Certification"
+        ],
+        "definition": "\"Information systems is the study of complementary networks of hardware and software that people and organizations use to collect, filter, process, create, and distribute data.\" - wikipedia"
     },
     "Engineering, Electrical & Electronic": {
         "url": "engineering-electrical-electronic",
@@ -2217,10 +2413,15 @@
         ],
         "tc_count": 0,
         "citation_average": 0,
-        "definition": {
-            "Definition": "Electrical engineering is an engineering discipline concerned with the study, design, and application of equipment, devices, and systems which use electricity, electronics, and electromagnetism. It emerged as an identifiable occupation in the latter half of the 19th century after commercialization of the electric telegraph, the telephone, and electrical power generation, distribution, and use.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Sports Analytics",
+            "Performance Metrics",
+            "Feature Selection",
+            "Regression Analysis",
+            "Biometric Sensing",
+            "COVID-19 Impact"
+        ],
+        "definition": "\"Electrical engineering is an engineering discipline concerned with the study, design, and application of equipment, devices, and systems which use electricity, electronics, and electromagnetism. It emerged as an identifiable occupation in the latter half of the 19th century after commercialization of the electric telegraph, the telephone, and electrical power generation, distribution, and use.\" - wikipedia"
     },
     "Telecommunications": {
         "url": "telecommunications",
@@ -2236,12 +2437,15 @@
         ],
         "tc_count": 0,
         "citation_average": 0,
-        "definition": {
-            "Telecommunications": {
-                "Definition": "Telecommunications is the transmission of information over significant distances to communicate. In earlier times, telecommunications involved the use of visual signals, such as beacons, smoke signals, semaphore telegraphs, signal flags, and optical heliographs, or audio messages via coded drumbeats, lung-blown horns, or loud whistles.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Sports Analytics",
+            "Performance Metrics",
+            "Feature Selection",
+            "Regression Analysis",
+            "Biometric Sensing",
+            "COVID-19 Impact"
+        ],
+        "definition": "\"Telecommunication is the transmission of signs, signals, messages, words, writings, images and sounds or information of any nature by wire, radio, optical or other electromagnetic systems. Telecommunication occurs when the exchange of information between communication participants includes the use of technology.\" - wikipedia"
     },
     "Law": {
         "url": "law",
@@ -2264,10 +2468,20 @@
         ],
         "tc_count": 10,
         "citation_average": 2,
-        "definition": {
-            "Definition": "Law is a system of rules created and enforced through social or governmental institutions to regulate behavior, with its precise definition a matter of longstanding debate. It has been variously described as a science and the art of justice. State-enforced laws can be made by a collective legislature or by a single legislator, resulting in statutes; by the executive through decrees and regulations; or established by judges through precedent, usually in common law jurisdictions.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Trade Barriers",
+            "Export Entry Rate",
+            "Export Entry Density",
+            "Business Regulations",
+            "Trade Costs",
+            "Governance Quality",
+            "Political Stability",
+            "Rule of Law",
+            "Net Entry Rate",
+            "Survival Rates",
+            "Exporters"
+        ],
+        "definition": "\"Law is a system of rules created and enforced through social or governmental institutions to regulate behavior, with its precise definition a matter of longstanding debate. It has been variously described as a science and the art of justice.\" - wikipedia"
     },
     "Geriatrics & Gerontology": {
         "url": "geriatrics-gerontology",
@@ -2289,10 +2503,14 @@
         ],
         "tc_count": 6,
         "citation_average": 2,
-        "definition": {
-            "Definition": "Geriatrics is a medical specialty that focuses on healthcare of elderly people. It aims to promote health by preventing and treating diseases and disabilities in older adults. Gerontology, on the other hand, is the study of the social, psychological, cognitive, and biological aspects of aging. It encompasses the study of aging from multiple perspectives and disciplines.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Bioelectrical Impedance Analysis",
+            "Appendicular Lean Mass Estimation",
+            "Dual-Energy X-ray Absorptiometry",
+            "Multifrequency BIA",
+            "Sarcopenia Diagnosis"
+        ],
+        "definition": "\"Geriatrics and gerontology are closely related fields that focus on the health and care of older adults. Geriatrics specifically deals with the medical care of older adults, while gerontology is the study of the aging process and the social, psychological, and biological aspects of aging. Both fields aim to improve the quality of life and well-being of older individuals.\" - wikipedia"
     },
     "Medicine, Legal": {
         "url": "medicine-legal",
@@ -2308,16 +2526,13 @@
         ],
         "tc_count": 4,
         "citation_average": 4,
-        "definition": {
-            "Medicine": {
-                "Definition": "Medicine is the science and practice of the diagnosis, treatment, and prevention of disease. It encompasses a variety of health care practices evolved to maintain and restore health by the prevention and treatment of illness.",
-                "source": "wikipedia"
-            },
-            "Legal": {
-                "Definition": "Legal education is the education of individuals in the principles, practices, and theory of law. It may be undertaken for several reasons, including to provide the knowledge and skills necessary for admission to legal practice in a particular jurisdiction.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "CT Imaging",
+            "Forensic Identification",
+            "Visual Comparison",
+            "Cost-Effective Techniques"
+        ],
+        "definition": "Law is a system of rules created and enforced through social or governmental institutions to regulate behavior, with its precise definition a matter of longstanding debate. It has been variously described as a science and the art of justice.  - wikipedia"
     },
     "Literature, African, Australian, Canadian": {
         "url": "literature-african-australian-canadian",
@@ -2332,7 +2547,15 @@
             "Justice, subalternism, and literary justice: Aravind Adiga'sThe White Tiger"
         ],
         "tc_count": 1,
-        "citation_average": 1
+        "citation_average": 1,
+        "themes": [
+            "Representation of Class and Caste",
+            "Modernization and Oppression",
+            "Human Rights in Literature",
+            "Deconstruction Theory",
+            "Colonialism and Oppression"
+        ],
+        "definition": "\"Education is the transmission of knowledge, skills, and character traits and manifests in various forms. Formal education occurs within a structured institutional framework, such as public schools, following a curriculum. Non-formal education also follows a structured approach but occurs outside the formal schooling system, while informal education entails unstructured learning through daily experiences.  - wikipedia\""
     },
     "Multidisciplinary Sciences": {
         "url": "multidisciplinary-sciences",
@@ -2371,10 +2594,15 @@
         ],
         "tc_count": 156,
         "citation_average": 14,
-        "definition": {
-            "Definition": "Multidisciplinary sciences refer to the combination of different academic disciplines or fields of study to address complex problems or phenomena. This approach involves integrating knowledge, methodologies, and perspectives from multiple disciplines to gain a more comprehensive understanding of a particular subject.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Obesogens",
+            "Metabolic Disorders",
+            "Inflammation",
+            "Pharmaceutical Exposure",
+            "Pregnancy Effects",
+            "Dyslipidemia"
+        ],
+        "definition": "\"Multidisciplinary Sciences involve the study of a particular subject from multiple disciplines, integrating knowledge and methodologies from various fields to gain a comprehensive understanding. This approach allows for a more holistic and interconnected view of complex topics, leading to innovative solutions and advancements in research and technology. - wikipedia\""
     },
     "Surgery": {
         "url": "surgery",
@@ -2390,12 +2618,14 @@
         ],
         "tc_count": 0,
         "citation_average": 0,
-        "definition": {
-            "Surgery": {
-                "Definition": "Surgery is a medical specialty that uses operative manual and instrumental techniques on a patient to investigate or treat a pathological condition such as a disease or injury, to help improve bodily function or appearance, or to repair unwanted ruptured areas.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Cardiac Tumors",
+            "Migraines with Aura",
+            "Symptoms and Diagnosis",
+            "Treatment and Relief",
+            "Complications and Resolution"
+        ],
+        "definition": "\"Surgery is a medical specialty that uses operative manual and instrumental techniques on a patient to investigate or treat a pathological condition such as a disease or injury, to help improve bodily function or appearance or to repair unwanted ruptured areas.  - wikipedia\""
     },
     "Mathematics, Applied": {
         "url": "mathematics-applied",
@@ -2422,10 +2652,14 @@
         ],
         "tc_count": 6,
         "citation_average": 1,
-        "definition": {
-            "Definition": "Applied mathematics is the application of mathematical methods by different fields such as science, engineering, business, computer science, and industry. The practical usage of mathematics in solving real-world problems distinguishes applied mathematics from theoretical mathematics.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Partition Theory",
+            "Schubert Calculus",
+            "Quantum Algebra",
+            "Bruhat Order",
+            "Grassmannians"
+        ],
+        "definition": "\"Applied mathematics is the application of mathematical methods by different fields such as science, engineering, business, computer science, and industry. Thus, applied mathematics is a combination of mathematical science and specialized knowledge.\" - wikipedia"
     },
     "Mathematics, Interdisciplinary Applications": {
         "url": "mathematics-interdisciplinary-applications",
@@ -2443,10 +2677,15 @@
         ],
         "tc_count": 4,
         "citation_average": 2,
-        "definition": {
-            "Definition": "Interdisciplinary mathematics is a branch of mathematics that combines mathematical techniques and principles with other fields of study, such as biology, economics, engineering, and physics. It involves applying mathematical concepts to solve problems and gain insights in various interdisciplinary areas.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Diffusive FitzHugh-Nagumo Equations",
+            "Absorbing Set",
+            "Global Dynamics",
+            "Dissipative Systems",
+            "Exponential Synchronization",
+            "Numerical Simulations"
+        ],
+        "definition": "\"Interdisciplinary mathematics is a branch of mathematics that combines mathematical techniques and theories with other fields of study, such as biology, physics, engineering, and social sciences, to solve complex real-world problems. It involves the application of mathematical concepts to diverse areas, leading to new insights and innovations in various disciplines.\" - wikipedia"
     },
     "Mechanics": {
         "url": "mechanics",
@@ -2462,12 +2701,15 @@
         ],
         "tc_count": 0,
         "citation_average": 0,
-        "definition": {
-            "Mechanics": {
-                "Definition": "Mechanics is the branch of physics concerned with the behavior of physical bodies when subjected to forces or displacements, and the subsequent effects of the bodies on their environment.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Diffusive FitzHugh-Nagumo Equations",
+            "Absorbing Set",
+            "Global Dynamics",
+            "Dissipative Systems",
+            "Exponential Synchronization",
+            "Numerical Simulations"
+        ],
+        "definition": "Mechanics is the area of physics concerned with the motions of macroscopic objects. Forces applied to objects result in displacements, or changes of an object's position relative to its environment. This branch of physics has its origins in Ancient Greece with the writings of Aristotle and Archimedes. - wikipedia"
     },
     "Physics, Fluids & Plasmas": {
         "url": "physics-fluids-plasmas",
@@ -2483,10 +2725,15 @@
         ],
         "tc_count": 0,
         "citation_average": 0,
-        "definition": {
-            "Definition": "Fluids and plasmas are states of matter that exhibit fluid-like behavior. Fluids are substances that can flow and take the shape of their container, while plasmas are ionized gases that conduct electricity. Physics of fluids and plasmas study the behavior, properties, and interactions of these substances, including their flow, turbulence, and electromagnetic effects.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Diffusive FitzHugh-Nagumo Equations",
+            "Absorbing Set",
+            "Global Dynamics",
+            "Dissipative Systems",
+            "Exponential Synchronization",
+            "Numerical Simulations"
+        ],
+        "definition": "\"Physics is the natural science that studies matter, its motion and behavior through space and time, and the related entities of energy and force. Physics is one of the most fundamental scientific disciplines, and its main goal is to understand how the universe behaves.\" - wikipedia"
     },
     "Physics, Mathematical": {
         "url": "physics-mathematical",
@@ -2502,10 +2749,15 @@
         ],
         "tc_count": 0,
         "citation_average": 0,
-        "definition": {
-            "Definition": "Physics is the natural science that studies matter, its motion and behavior through space and time, and the related entities of energy and force. It aims to understand how the universe behaves at every scale, from the subatomic particles to the galaxies. Mathematical physics refers to the application of mathematical methods to problems in physics, allowing for the formulation and solution of physical theories using mathematical concepts and techniques.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Diffusive FitzHugh-Nagumo Equations",
+            "Absorbing Set",
+            "Global Dynamics",
+            "Dissipative Systems",
+            "Exponential Synchronization",
+            "Numerical Simulations"
+        ],
+        "definition": "\"Mathematical physics refers to the development of mathematical methods for application to problems in physics. The Journal of Mathematical Physics defines the field as 'the application of mathematics to problems in physics and the development of mathematical methods suitable for such applications and for the formulation of physical theories.' Mathematical physics is a highly interdisciplinary field, with researchers drawing from both mathematics and physics to address complex problems in the natural world.\" - wikipedia"
     },
     "Communication": {
         "url": "communication",
@@ -2540,12 +2792,14 @@
         ],
         "tc_count": 63,
         "citation_average": 7,
-        "definition": {
-            "Communication": {
-                "Definition": "Communication is the act of conveying intended meanings from one entity or group to another through the use of mutually understood signs, symbols, and semiotic rules.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Hyperlocal Coverage",
+            "Underrepresented Communities",
+            "Journalistic Role",
+            "Quantitative Analysis",
+            "Audience Preferences"
+        ],
+        "definition": "Communication is the act of conveying intended meanings from one entity or group to another through the use of mutually understood signs, symbols, and semiotic rules. - wikipedia"
     },
     "Agricultural Economics & Policy": {
         "url": "agricultural-economics-policy",
@@ -2568,10 +2822,14 @@
         ],
         "tc_count": 3,
         "citation_average": 1,
-        "definition": {
-            "Definition": "Agricultural economics is an applied field of economics concerned with the application of economic theory in optimizing the production and distribution of food and fiber. Agricultural policy focuses on the decisions made by governments regarding agricultural production and farm income support. It aims to address issues such as food security, sustainability, and rural development.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Habit Formation",
+            "Variety Seeking",
+            "Recreation Site Choice",
+            "Willingness to Pay",
+            "Dynamic Choice Models"
+        ],
+        "definition": "\"Agricultural economics is an applied field of economics concerned with the application of economic theory in optimizing the production and distribution of food and fiber. Agricultural policy is the set of government decisions and actions relating to domestic agriculture and imports of foreign agricultural products. Both agricultural economics and policy play a crucial role in shaping the agricultural sector and ensuring food security for the population. - wikipedia\""
     },
     "Biochemistry & Molecular Biology": {
         "url": "biochemistry-molecular-biology",
@@ -2594,10 +2852,14 @@
         ],
         "tc_count": 63,
         "citation_average": 21,
-        "definition": {
-            "Definition": "Biochemistry and Molecular Biology are branches of science that explore the chemical processes and structures of living organisms at the molecular level. Biochemistry focuses on the chemical reactions and compounds within cells and organisms, while Molecular Biology studies the interactions between various components of cells, including DNA, RNA, proteins, and other molecules.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Dispersal Patterns",
+            "Spatial Genetic Structure",
+            "Density-dependent Dispersal",
+            "Natal Return Rates",
+            "Fitness of Recruits and Immigrants"
+        ],
+        "definition": "\"Biochemistry is the branch of science that explores the chemical processes within and related to living organisms. It is a laboratory-based science that brings together biology and chemistry. By using chemical knowledge and techniques, biochemists can understand and solve biological problems. Molecular biology is the study of biology at a molecular level, including the interactions between the various systems of a cell, including the interactions between DNA, RNA, and protein synthesis and how these interactions are regulated. Both biochemistry and molecular biology are essential fields in the study of life sciences.\" - wikipedia"
     },
     "Cell Biology": {
         "url": "cell-biology",
@@ -2620,12 +2882,14 @@
         ],
         "tc_count": 63,
         "citation_average": 21,
-        "definition": {
-            "Cell Biology": {
-                "Definition": "Cell biology is a branch of biology that studies the structure, function, and behavior of cells. This includes the study of cell organelles, cell metabolism, cell communication, cell cycle, and cell division. Cell biology is crucial in understanding the basic processes of life and how cells contribute to the functions of tissues, organs, and organisms.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Glial-Mediated Synaptic Regeneration",
+            "CSF Composition and Impact on Neural Response",
+            "Cell Culture Media in Nervous System Research",
+            "Chemotactic Behaviors of Glial Cells",
+            "Neurite Outgrowth in CSF Replacement Solutions"
+        ],
+        "definition": "Cell biology is a branch of biology that studies the structure, function, and behavior of cells. Cell biology encompasses both the study of single-celled organisms like bacteria and the complex processes that occur in multicellular organisms like humans. - wikipedia"
     },
     "Area Studies": {
         "url": "area-studies",
@@ -2643,12 +2907,14 @@
         ],
         "tc_count": 0,
         "citation_average": 0,
-        "definition": {
-            "Area Studies": {
-                "Definition": "Area studies are interdisciplinary fields of research and scholarship pertaining to particular geographical, national/federal, or cultural regions. The term exists primarily as a general description for what are, in the practice of scholarship, many heterogeneous fields of research, each of which takes its own unique approach to the study of regional or specific subjects.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Archiving Practices",
+            "Black History Preservation",
+            "Sociability Networks",
+            "Historical Contributions",
+            "Refutation of White Supremacy"
+        ],
+        "definition": "Area studies is a multidisciplinary field of research that examines the social, political, economic, and cultural aspects of a particular geographical region, often focusing on specific countries or continents. Scholars in area studies typically analyze the history, language, literature, and other characteristics of a region to gain a comprehensive understanding of its complexities and nuances. - wikipedia"
     },
     "Humanities, Multidisciplinary": {
         "url": "humanities-multidisciplinary",
@@ -2672,10 +2938,14 @@
         ],
         "tc_count": 0,
         "citation_average": 0,
-        "definition": {
-            "Definition": "Multidisciplinary humanities is an academic field that integrates knowledge and methodologies from various disciplines within the humanities, such as history, literature, philosophy, and cultural studies, to gain a comprehensive understanding of human culture, society, and values.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Contemporary Art",
+            "Cinematic Space",
+            "Political Aesthetics",
+            "Cultural Geography",
+            "Black Feminist Praxis"
+        ],
+        "definition": "\"Multidisciplinary humanities is an academic field that integrates knowledge and methodologies from multiple disciplines within the humanities, such as history, literature, philosophy, and cultural studies, to gain a comprehensive understanding of human culture and society. This interdisciplinary approach allows for a more holistic exploration of complex issues and phenomena, leading to new insights and perspectives.\" - wikipedia"
     },
     "Physiology": {
         "url": "physiology",
@@ -2703,12 +2973,15 @@
         ],
         "tc_count": 13,
         "citation_average": 6,
-        "definition": {
-            "Physiology": {
-                "Definition": "Physiology is the scientific study of the functions and mechanisms which work within a living system. A sub-discipline of biology, the focus is on how organisms, organ systems, organs, cells, and biomolecules carry out the chemical and physical functions that exist in a living system. Physiology aims to understand the mechanisms that work to keep living organisms alive and functioning, allowing them to survive and reproduce.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Diabetes Mellitus",
+            "Peripheral Neuropathy",
+            "Zebrafish Model",
+            "Hyperglycemia",
+            "Neurological Disorders",
+            "Molecular Mechanisms"
+        ],
+        "definition": "Physiology is the scientific study of the normal function within living creatures. It is a sub-discipline of biology, covering a range of topics that include organs, anatomy, cells, biological compounds, and how they interact to create life. - wikipedia"
     },
     "Physics, Multidisciplinary": {
         "url": "physics-multidisciplinary",
@@ -2730,10 +3003,14 @@
         ],
         "tc_count": 3,
         "citation_average": 0,
-        "definition": {
-            "Definition": "Multidisciplinary physics refers to the study of physics in conjunction with other fields such as biology, chemistry, engineering, and environmental science. It involves the integration of knowledge and methodologies from various disciplines to address complex scientific problems.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Low-cost Experiments",
+            "Sensor Technology",
+            "Data Collection",
+            "Magnetic Field Measurement",
+            "Wireless Technology"
+        ],
+        "definition": "\"Multidisciplinary physics is a branch of physics that combines different areas of study, such as biology, chemistry, and engineering, to solve complex problems and gain a deeper understanding of the natural world. By integrating knowledge and techniques from various disciplines, multidisciplinary physics offers new perspectives and approaches to scientific research and innovation. - wikipedia\""
     },
     "Neurosciences": {
         "url": "neurosciences",
@@ -2768,12 +3045,14 @@
         ],
         "tc_count": 17,
         "citation_average": 3,
-        "definition": {
-            "Neurosciences": {
-                "Definition": "Neuroscience is the scientific study of the nervous system. It is a multidisciplinary branch of biology that combines physiology, anatomy, molecular biology, developmental biology, cytology, mathematical modeling, and psychology to understand the fundamental and emergent properties of neurons and neural circuits.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Communication Systems",
+            "Acoustic Communication",
+            "Auditory Morphology",
+            "Hearing Sensitivity",
+            "Phylogenetic Independent Scaling"
+        ],
+        "definition": "Neuroscience is the scientific study of the nervous system. It is a multidisciplinary branch of biology that combines physiology, anatomy, molecular biology, developmental biology, cytology, mathematical modeling, and psychology to understand the fundamental and emergent properties of neurons and neural circuits. - wikipedia"
     },
     "Geosciences, Multidisciplinary": {
         "url": "geosciences-multidisciplinary",
@@ -2796,12 +3075,14 @@
         ],
         "tc_count": 52,
         "citation_average": 17,
-        "definition": {
-            "Geosciences, Multidisciplinary": {
-                "Definition": "Geosciences, multidisciplinary, is the study of the Earth's structure, processes, and history, as well as the interactions between Earth systems and the environment. It encompasses various scientific disciplines such as geology, hydrology, meteorology, oceanography, and environmental science, to provide a comprehensive understanding of the Earth and its complex systems.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Storm Surge Modeling",
+            "Coastal Inundation",
+            "Climate Change Impact",
+            "Sea Level Rise",
+            "Extreme Weather Events"
+        ],
+        "definition": "\"Geoscience is the study of the Earth - its oceans, atmosphere, rivers and lakes, ice sheets and glaciers, soils, its complex surface, rocky interior, and metallic core. This includes many aspects of how living things, including humans, interact with the Earth. Geoscience involves a wide range of scientific disciplines, including geology, geophysics, hydrology, oceanography, physical geography, soil science, ecology, and atmospheric science. - wikipedia\""
     },
     "Meteorology & Atmospheric Sciences": {
         "url": "meteorology-atmospheric-sciences",
@@ -2823,10 +3104,14 @@
         ],
         "tc_count": 40,
         "citation_average": 20,
-        "definition": {
-            "Definition": "Meteorology is a branch of the atmospheric sciences which includes atmospheric chemistry and atmospheric physics, with a major focus on weather forecasting. The study of meteorology dates back millennia, though significant progress in meteorology did not occur until the 18th century. The 19th century saw modest progress in the field after weather observation networks were formed across broad regions. Prior attempts at prediction of weather depended on historical data. It wasn't until after the elucidation of the laws of physics and more particularly the development of the computer, allowing for the automated solution of a great many equations that model the weather, in the latter half of the 20th century that significant breakthroughs in weather forecasting were achieved.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Storm Surge Modeling",
+            "Coastal Inundation",
+            "Climate Change Impact",
+            "Sea Level Rise",
+            "Extreme Weather Events"
+        ],
+        "definition": "Meteorology is a branch of the atmospheric sciences that focuses on the study of the Earth's atmosphere, particularly its weather and climate. Meteorologists use scientific principles to observe, understand, and predict atmospheric phenomena, providing crucial information for weather forecasting, aviation, agriculture, and environmental protection. - wikipedia"
     },
     "Water Resources": {
         "url": "water-resources",
@@ -2845,10 +3130,14 @@
         ],
         "tc_count": 26,
         "citation_average": 26,
-        "definition": {
-            "Definition": "Water resources are sources of water that are potentially useful. Uses of water include agricultural, industrial, household, recreational, and environmental activities. The majority of human uses require fresh water. Water resources can be managed sustainably through policies and practices that ensure their availability for present and future generations.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Storm Surge Modeling",
+            "Coastal Inundation",
+            "Climate Change Impact",
+            "Sea Level Rise",
+            "Extreme Weather Events"
+        ],
+        "definition": "\"Water resources are sources of water that are potentially useful. Uses of water include agricultural, industrial, household, recreational and environmental activities. The majority of human uses require fresh water.  - wikipedia\""
     },
     "Psychology, Social": {
         "url": "psychology-social",
@@ -2873,10 +3162,14 @@
         ],
         "tc_count": 22,
         "citation_average": 5,
-        "definition": {
-            "Definition": "Social psychology is the scientific study of how people's thoughts, feelings, and behaviors are influenced by the actual, imagined, or implied presence of others. By understanding social behavior and the underlying psychological processes, social psychologists aim to uncover the factors that shape our interactions with others and the larger social environment.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Humor Styles",
+            "Psychological Distress",
+            "Communication Difficulties",
+            "Positive Interactions",
+            "Somatic Symptoms"
+        ],
+        "definition": "\"Social psychology is the scientific study of how the thoughts, feelings, and behaviors of individuals are influenced by the actual, imagined, or implied presence of others. By exploring the interactions between people in various social settings, social psychology seeks to understand and explain how individuals perceive, influence, and relate to others. - wikipedia\""
     },
     "Linguistics": {
         "url": "linguistics",
@@ -2905,12 +3198,15 @@
         ],
         "tc_count": 50,
         "citation_average": 7,
-        "definition": {
-            "Linguistics": {
-                "Definition": "Linguistics is the scientific study of language and its structure, including the study of grammar, syntax, semantics, phonetics, and phonology. It involves analyzing language form, language meaning, and language in context.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Chronotopic-scalar System",
+            "Language Use",
+            "Semiotic Resources",
+            "Multilingual Practices",
+            "Spatiotemporal Understandings",
+            "Hybridity of Language Practices"
+        ],
+        "definition": "\"Linguistics is the scientific study of language and its structure, including the analysis of language form, language meaning, and language in context. Linguistics traditionally includes phonetics, phonology, morphology, syntax, semantics, pragmatics, and discourse analysis. - wikipedia\""
     },
     "Language & Linguistics": {
         "url": "language-linguistics",
@@ -2938,12 +3234,14 @@
         ],
         "tc_count": 3,
         "citation_average": 0,
-        "definition": {
-            "Language & Linguistics": {
-                "Definition": "Linguistics is the scientific study of language and its structure, including the analysis of language form, language meaning, and language in context. Linguistics also involves the study of language acquisition, language use, and the relationship between language and society.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Translanguaging Practices",
+            "Academic Writing",
+            "Multilingual Students in Monolingual School Contexts",
+            "Anti-deficit Approaches to Literacy Development",
+            "Monolingual Teacher Strategies"
+        ],
+        "definition": "\"Linguistics is the scientific study of language and its structure, including the analysis of language form, language meaning, and language in context. Linguistics traditionally includes phonetics, phonology, morphology, syntax, semantics, pragmatics, and discourse analysis.\" - wikipedia"
     },
     "Computer Science, Hardware & Architecture": {
         "url": "computer-science-hardware-architecture",
@@ -2961,10 +3259,7 @@
         ],
         "tc_count": 6,
         "citation_average": 6,
-        "definition": {
-            "Definition": "Computer architecture is a specification detailing how a set of software and hardware technology standards interact to form a computer system or platform. In simpler terms, computer architecture refers to the design of computer systems including CPU, memory, and input/output devices.",
-            "source": "wikipedia"
-        }
+        "definition": "\"Computer hardware is the collection of physical elements that constitute a computer system. Computer architecture is a specification detailing how a set of software and hardware technology standards interact to form a computer system or platform.\" - wikipedia"
     },
     "Computer Science, Software Engineering": {
         "url": "computer-science-software-engineering",
@@ -2982,10 +3277,7 @@
         ],
         "tc_count": 6,
         "citation_average": 6,
-        "definition": {
-            "Definition": "Computer science is the study of algorithmic processes, computational machines, and computation itself. As a discipline, it covers a wide range of topics from theoretical studies of algorithms and the limits of computation to the practical issues of implementing computing systems in hardware and software. Software engineering is the application of engineering principles to the design, development, maintenance, testing, and evaluation of software and systems that make computers or anything containing software work.",
-            "source": "wikipedia"
-        }
+        "definition": "\"Software engineering is the systematic application of engineering approaches to the development of software. It involves the design, development, and maintenance of software systems by applying technologies and practices from computer science, project management, engineering, application domains, and other fields.\" - wikipedia"
     },
     "Computer Science, Theory & Methods": {
         "url": "computer-science-theory-methods",
@@ -3003,10 +3295,7 @@
         ],
         "tc_count": 6,
         "citation_average": 6,
-        "definition": {
-            "Definition": "Computer Science is the study of the theory, experimentation, and engineering that form the basis for the design and use of computers. It involves the study of algorithms that process, store, and communicate digital information. Computer Science encompasses both theoretical and practical aspects, including the development of software and hardware systems, as well as the application of computational techniques to solve problems.",
-            "source": "wikipedia"
-        }
+        "definition": "\"Computer Science is the study of algorithmic processes, computational machines, and computation itself. It involves the understanding of both the theoretical and practical aspects of computer systems and their applications. Computer Science theory encompasses the fundamental principles that govern computation, while methods refer to the techniques and approaches used to solve problems and design efficient algorithms. - wikipedia\""
     },
     "Film, Radio, Television": {
         "url": "film-radio-television",
@@ -3025,10 +3314,13 @@
         ],
         "tc_count": 2,
         "citation_average": 0,
-        "definition": {
-            "Definition": "Film, radio, and television are mass media forms used for entertainment, news, advertising, and cultural expression. Film refers to motion pictures captured on celluloid film or digital media. Radio involves the transmission of audio signals through electromagnetic waves. Television broadcasts moving images and sound through electronic signals. These mediums play a crucial role in shaping popular culture and influencing public opinion.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Montage Theory",
+            "Critical Analysis",
+            "Spatial Politics",
+            "Geographic Language"
+        ],
+        "definition": "Film, radio, and television are forms of media used for entertainment, information, and communication. They involve the production and distribution of visual and audio content to a wide audience through various platforms. These mediums play a significant role in shaping culture, influencing opinions, and providing a means of storytelling and expression. - wikipedia"
     },
     "Psychology": {
         "url": "psychology",
@@ -3046,12 +3338,14 @@
         ],
         "tc_count": 13,
         "citation_average": 6,
-        "definition": {
-            "Psychology": {
-                "Definition": "Psychology is the scientific study of the mind and behavior. It encompasses the biological influences, social pressures, and environmental factors that affect how people think, act, and feel.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Job Stress",
+            "Sleep Quality",
+            "Work Spillover",
+            "Gender Differences",
+            "Mediation Analysis"
+        ],
+        "definition": "\"Psychology is the science of mind and behavior. Psychology includes the study of conscious and unconscious phenomena, as well as feeling and thought. It is an academic discipline of immense scope. Psychologists seek an understanding of the emergent properties of brains, and all the variety of phenomena linked to those emergent properties, joining this way the broader neuro-scientific group of researchers.\" - wikipedia"
     },
     "Sport Sciences": {
         "url": "sport-sciences",
@@ -3092,12 +3386,14 @@
         ],
         "tc_count": 8,
         "citation_average": 1,
-        "definition": {
-            "Sport Sciences": {
-                "Definition": "Sport science is a discipline that studies how the healthy human body works during exercise, and how sport and physical activity promote health and performance from cellular to whole-body levels. It involves the study of the scientific principles underlying sport performance, physical activity, and exercise.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Blood Flow Restriction Training",
+            "Arterial Stiffness",
+            "Pulse Wave Velocity",
+            "Autoregulated Blood Flow Restriction",
+            "Non-Autoregulated Blood Flow Restriction"
+        ],
+        "definition": "\"Sport science is a discipline that studies how the healthy human body works during exercise, and how sport and physical activity promote health and performance from cellular to whole body perspectives. - wikipedia\""
     },
     "Ethics": {
         "url": "ethics",
@@ -3119,12 +3415,14 @@
         ],
         "tc_count": 6,
         "citation_average": 3,
-        "definition": {
-            "Ethics": {
-                "Definition": "Ethics is a branch of philosophy that involves systematizing, defending, and recommending concepts of right and wrong behavior. Ethics can also refer to a set of moral principles that guide an individual's behavior or the behavior of a group.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "User Experience",
+            "Search Algorithms",
+            "Regression Analysis",
+            "Strategic Interactions",
+            "Trust and Credibility in Information Systems"
+        ],
+        "definition": "Ethics is a branch of philosophy that involves systematizing, defending, and recommending concepts of right and wrong conduct. The term comes from the Greek word ethos, which means \"character\". Ethics is a complement to aesthetics in the philosophy field of axiology. Ethics seeks to resolve questions of human morality by defining concepts such as good and evil, right and wrong, virtue and vice, justice and crime.  - wikipedia"
     },
     "Biotechnology & Applied Microbiology": {
         "url": "biotechnology-applied-microbiology",
@@ -3148,12 +3446,14 @@
         ],
         "tc_count": 3,
         "citation_average": 1,
-        "definition": {
-            "Biotechnology & Applied Microbiology": {
-                "Definition": "Biotechnology is the use of living systems and organisms to develop or make products, or any technological application that uses biological systems, living organisms, or derivatives thereof, to make or modify products or processes for specific use. Applied microbiology is a scientific discipline that deals with the application of microorganisms and the knowledge about them in various fields, such as agriculture, industry, medicine, and environmental sustainability.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Glial-Mediated Synaptic Regeneration",
+            "CSF Composition and Impact on Neural Response",
+            "Cell Culture Media in Nervous System Research",
+            "Chemotactic Behaviors of Glial Cells",
+            "Neurite Outgrowth in CSF Replacement Solutions"
+        ],
+        "definition": "\"Biotechnology & Applied Microbiology involves the exploitation of biological processes for industrial and other purposes, including the genetic manipulation of microorganisms for the production of antibiotics, hormones, and other products. This field encompasses a wide range of applications, from agriculture and medicine to environmental protection and energy production. - wikipedia\""
     },
     "Microbiology": {
         "url": "microbiology",
@@ -3177,12 +3477,15 @@
         ],
         "tc_count": 2,
         "citation_average": 1,
-        "definition": {
-            "Microbiology": {
-                "Definition": "Microbiology is the study of microorganisms, those being unicellular, multicellular, or acellular. Microbiology encompasses numerous sub-disciplines including virology, bacteriology, protistology, mycology, immunology and parasitology.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Alpha Diversity",
+            "Community Succession",
+            "Important Taxa Identification",
+            "Metabolic Enrichment",
+            "Bioindicators",
+            "Inundation Stress"
+        ],
+        "definition": "Microbiology is the study of microorganisms, those being unicellular, multicellular, or acellular. Microbiology encompasses numerous sub-disciplines including virology, bacteriology, protistology, mycology, immunology and parasitology.  - wikipedia"
     },
     "Anthropology": {
         "url": "anthropology",
@@ -3201,12 +3504,13 @@
         ],
         "tc_count": 6,
         "citation_average": 6,
-        "definition": {
-            "Anthropology": {
-                "Definition": "Anthropology is the study of humans, human behavior, and societies in the past and present. It examines the similarities and differences among cultures, as well as the ways in which people interact with each other and their environments.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Forest Composition",
+            "Tree Species Distribution",
+            "Impact of Human Activity on Forests",
+            "Succession in Forest Ecosystems"
+        ],
+        "definition": "\"Anthropology is the scientific study of humanity, concerned with human behavior, human biology, cultures, societies, and languages, in both the present and the past. - wikipedia\""
     },
     "Regional & Urban Planning": {
         "url": "regional-urban-planning",
@@ -3222,10 +3526,14 @@
         ],
         "tc_count": 23,
         "citation_average": 23,
-        "definition": {
-            "Definition": "Regional and urban planning is a profession that involves designing and organizing land use and infrastructure in urban areas and regions to ensure sustainable development, efficient transportation, affordable housing, and environmental protection. Planners work to create well-functioning communities that are economically viable, socially equitable, and environmentally sustainable.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Online Communities",
+            "Value Co-Creation",
+            "Social Support",
+            "Peer-to-Peer Platforms",
+            "Healthcare Technology"
+        ],
+        "definition": "Regional and urban planning is a profession that involves designing and organizing land use and infrastructure in urban areas to ensure sustainable development and efficient use of resources. Planners work to create communities that meet the needs of their residents while also considering factors such as transportation, housing, and environmental impact. - wikipedia"
     },
     "Oceanography": {
         "url": "oceanography",
@@ -3252,12 +3560,16 @@
         ],
         "tc_count": 24,
         "citation_average": 6,
-        "definition": {
-            "Oceanography": {
-                "Definition": "Oceanography is the study of the physical, chemical, biological, and geological aspects of the ocean. It is an interdisciplinary science that combines elements of physics, chemistry, biology, geology, and meteorology to understand the oceans and their interactions with the Earth and atmosphere.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Genetic Adaptations",
+            "Physiological Mechanisms",
+            "Energy Allocation",
+            "Symbiont-Host Interactions",
+            "Photoacclimatization",
+            "Photosynthetic Pigments",
+            "Isotopic Signatures"
+        ],
+        "definition": "Oceanography is the study of the physical, chemical, biological, and geological aspects of the ocean. It is an interdisciplinary science that combines elements of physics, chemistry, biology, geology, and meteorology to understand the complex interactions within the ocean and between the ocean and the atmosphere, land, and ice caps. - wikipedia"
     },
     "History": {
         "url": "history",
@@ -3287,10 +3599,14 @@
         ],
         "tc_count": 8,
         "citation_average": 0,
-        "definition": {
-            "Definition": "History is the study of the past. It is the record of human actions and events as they unfold over time, encompassing all aspects of human experience. Historians use a variety of sources, including written records, artifacts, and oral traditions, to reconstruct and interpret the past in order to understand the present and anticipate the future.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Political Power Dynamics",
+            "Spiritual Authority",
+            "Prophetic Vision",
+            "Religious-Political Interactions",
+            "Social Influence"
+        ],
+        "definition": "\"History is the study of the past. Events occurring before the invention of writing systems are considered prehistory. 'History' is an umbrella term that relates to past events as well as the memory, discovery, collection, organization, presentation, and interpretation of information about these events.\" - wikipedia"
     },
     "Immunology": {
         "url": "immunology",
@@ -3309,12 +3625,15 @@
         ],
         "tc_count": 11,
         "citation_average": 11,
-        "definition": {
-            "Immunology": {
-                "Definition": "Immunology is a branch of biology that covers the study of immune systems in all organisms. Immunology charts, measures, and contextualizes the physiological functioning of the immune system in states of both health and diseases; malfunctions of the immune system in immunological disorders (such as autoimmune diseases, hypersensitivities, immune deficiency, and transplant rejection); the physical, chemical, and physiological characteristics of the components of the immune system in vitro, in situ, and in vivo. Immunology has applications in numerous disciplines of medicine, particularly in the fields of organ transplantation, oncology, rheumatology, virology, bacteriology, parasitology, psychiatry, and dermatology.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Neuroimmune Disorders",
+            "Viral Infections",
+            "Central Nervous System",
+            "Demyelinating Diseases",
+            "Autoimmunity",
+            "Inflammatory Response"
+        ],
+        "definition": "Immunology is a branch of biology that covers the study of immune systems in all organisms. Immunology charts, measures, and contextualizes the physiological functioning of the immune system in states of both health and diseases; malfunctions of the immune system in immunological disorders (such as autoimmune diseases, hypersensitivities, immune deficiency, and transplant rejection); the physical, chemical, and physiological characteristics of the components of the immune system in vitro, in situ, and in vivo. - wikipedia"
     },
     "Chemistry, Organic": {
         "url": "chemistry-organic",
@@ -3340,10 +3659,14 @@
         ],
         "tc_count": 4,
         "citation_average": 4,
-        "definition": {
-            "Definition": "Organic chemistry is a subdiscipline of chemistry that studies the structure, properties, and reactions of organic compounds, which contain carbon in covalent bonding. The study of organic reactions includes their mechanisms, methods, and the principles that govern them. The term 'organic' is historical and dates back to the 19th century when it was believed that organic compounds could only be synthesized in living organisms.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Ligand Synthesis",
+            "Metal Extraction",
+            "Hydrophilic Compounds",
+            "Actinide Chemistry",
+            "Nuclear Waste Management"
+        ],
+        "definition": "\"Organic chemistry is a branch of chemistry that studies the structure, properties, and reactions of compounds containing carbon-hydrogen bonds. The study of organic compounds is vital because all living organisms, including humans, are composed of carbon-containing compounds. Organic chemistry plays a crucial role in various industries such as pharmaceuticals, petrochemicals, and agriculture. - wikipedia\""
     },
     "Forestry": {
         "url": "forestry",
@@ -3363,12 +3686,13 @@
         ],
         "tc_count": 19,
         "citation_average": 9,
-        "definition": {
-            "Forestry": {
-                "Definition": "Forestry is the science and practice of managing forests and tree plantations to meet the environmental, economic, and social needs of society. It involves the sustainable management of forests for timber, wildlife habitat, recreation, water quality, and other ecosystem services.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Aggregation Behavior",
+            "Larval Development",
+            "Survivorship",
+            "Horizontal Transfer of Avermectin"
+        ],
+        "definition": "\"Forestry is the science and craft of creating, managing, using, conserving, and repairing forests, woodlands, and associated resources for human and environmental benefits.\" - wikipedia"
     },
     "Imaging Science & Photographic Technology": {
         "url": "imaging-science-photographic-technology",
@@ -3388,10 +3712,26 @@
         ],
         "tc_count": 26,
         "citation_average": 13,
-        "definition": {
-            "Definition": "Imaging science and photographic technology involves the study of the creation, manipulation, and interpretation of images using various imaging techniques and technologies. It encompasses the scientific principles behind image formation, as well as the practical application of these principles in fields such as photography, medical imaging, remote sensing, and digital image processing.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Tidal Processes",
+            "Sediment Accretion",
+            "Vegetated Platform Erosion",
+            "Salt Marsh Evolution",
+            "Restoration Strategies",
+            "Channel Morphodynamics",
+            "Vegetation Variations",
+            "High-Resolution Mapping",
+            "Structure-from-Motion Algorithms",
+            "Multi-View-Stereo Algorithms",
+            "3D Geometry Reconstruction",
+            "Orthomosaics",
+            "Digital Terrain Models",
+            "GNSS Survey",
+            "UAV-Based Photogrammetry",
+            "GNSS RTK Ground Surveys",
+            "Shoreline Management"
+        ],
+        "definition": "\"Imaging science and photographic technology involve the study and application of techniques used to create, process, analyze, and reproduce images. This field encompasses a wide range of technologies and methodologies aimed at capturing and manipulating visual information for various purposes, such as photography, medical imaging, remote sensing, and digital image processing.\" - wikipedia"
     },
     "Genetics & Heredity": {
         "url": "genetics-heredity",
@@ -3420,12 +3760,16 @@
         ],
         "tc_count": 12,
         "citation_average": 4,
-        "definition": {
-            "Genetics & Heredity": {
-                "Definition": "Genetics is a branch of biology that studies how traits are passed from parents to offspring. It involves the study of genes, which are segments of DNA that code for specific traits. Heredity refers to the passing of traits from parents to offspring through genetic inheritance.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Epigenetics",
+            "Population Dynamics",
+            "Amphibian Biodiversity",
+            "Urbanization Effects",
+            "Fungal Pathogens",
+            "Adaptive Responses",
+            "DNA Methylation"
+        ],
+        "definition": "\"Genetics is a branch of biology concerned with the study of genes, genetic variation, and heredity in organisms. It encompasses the study of how genetic information is passed from one generation to the next, the structure and function of genes, gene expression, and genetic disorders. Heredity refers to the passing of traits from parents to their offspring through genetic information contained in DNA. - wikipedia\""
     },
     "Religion": {
         "url": "religion",
@@ -3449,12 +3793,15 @@
         ],
         "tc_count": 3,
         "citation_average": 1,
-        "definition": {
-            "Religion": {
-                "Definition": "Religion is a social-cultural system of designated behaviors and practices, morals, worldviews, texts, sanctified places, prophecies, ethics, or organizations, that relates humanity to supernatural, transcendental, and spiritual elements.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Psychology of Religion Courses",
+            "Undergraduate Education",
+            "Diversity in Education",
+            "Scientific Knowledge",
+            "Graduate Education",
+            "Impact of Coursework"
+        ],
+        "definition": "\"Religion is a cultural system that establishes symbols that relate humanity to spirituality and moral values. Many religions have narratives, symbols, traditions, and sacred histories that are intended to give meaning to life or to explain the origin of life or the universe. They tend to derive morality, ethics, religious laws, or a preferred lifestyle from their ideas about the cosmos and human nature.  - wikipedia\""
     },
     "Social Issues": {
         "url": "social-issues",
@@ -3473,12 +3820,14 @@
         ],
         "tc_count": 0,
         "citation_average": 0,
-        "definition": {
-            "Social Issues": {
-                "Definition": "Social issues are matters which directly or indirectly affect a person or many members of a society and are considered to be problems or controversies related to moral values, social norms, or both.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Discrimination and Identity",
+            "Mental Health Outcomes",
+            "Community Support",
+            "Gender Differences",
+            "Racism and Policy Actions"
+        ],
+        "definition": "\"Social issues are matters which directly or indirectly affect a person or many members of a society and are considered to be problems, controversies related to moral values, or both. Social issues include poverty, violence, pollution, injustice, and inequality, and can manifest in various forms such as discrimination, crime, and environmental degradation.\" - wikipedia"
     },
     "History Of Social Sciences": {
         "url": "history-of-social-sciences",
@@ -3495,10 +3844,15 @@
         ],
         "tc_count": 1,
         "citation_average": 0,
-        "definition": {
-            "Definition": "Social sciences are a category of academic disciplines that study human aspects of the world. They include disciplines such as anthropology, archaeology, economics, geography, history, law, linguistics, political science, psychology, and sociology. The social sciences explore the relationships between individuals and societies, as well as the development and functioning of human societies.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Entrepreneurial Processes",
+            "Economic Growth",
+            "Industry Development",
+            "Business Success Factors",
+            "Innovation",
+            "Future Studies and Research"
+        ],
+        "definition": "\"Social science is the branch of science devoted to the study of societies and the relationships among individuals within those societies. The term was formerly used to refer to the field of sociology, the original 'science of society', established in the 19th century. In addition to sociology, it now encompasses a wide array of academic disciplines, including anthropology, archaeology, economics, human geography, linguistics, political science, psychology, and social history.\" - wikipedia"
     },
     "Industrial Relations & Labor": {
         "url": "industrial-relations-labor",
@@ -3521,12 +3875,15 @@
         ],
         "tc_count": 24,
         "citation_average": 8,
-        "definition": {
-            "Industrial Relations & Labor": {
-                "Definition": "Industrial relations or employment relations is the multidisciplinary academic field that studies the employment relationship; that is, the complex interrelations between employers and employees, labor/trade unions, employer organizations and the state.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Organizational Citizenship Behavior",
+            "Counterproductive Work Behavior",
+            "Cultural Dimensions",
+            "State Positive Affect",
+            "State Negative Affect",
+            "Human Resource Development"
+        ],
+        "definition": "\"Industrial relations or employment relations is the multidisciplinary academic field that studies the employment relationship; that is, the complex interrelations between employers and employees, labor/trade unions, employer organizations and the state.\" - wikipedia"
     },
     "Literature, American": {
         "url": "literature-american",
@@ -3542,12 +3899,15 @@
         ],
         "tc_count": 1,
         "citation_average": 1,
-        "definition": {
-            "Literature, American": {
-                "Definition": "American literature is literature predominantly written or produced in English in the United States and its preceding colonies. Before the founding of the United States, the British colonies on the eastern coast of the present-day United States were heavily influenced by English literature. The American literary tradition thus began as part of the broader tradition of English literature.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Self-Fashioning",
+            "Revolutionary Ideals",
+            "Nature's Influence",
+            "Literary Allusions",
+            "Poetics of Imposture",
+            "Politics of Subversion"
+        ],
+        "definition": "\"American literature is literature predominantly written or produced in English in the United States of America and its preceding colonies. Before the founding of the United States, the British colonies on the eastern coast of the present-day United States were heavily influenced by English literature. The American literary tradition thus began as part of the broader tradition of English literature. However, the unique American identity and experience have also produced a rich and diverse literary heritage that reflects the country's history, culture, and values.\" - wikipedia"
     },
     "Green & Sustainable Science & Technology": {
         "url": "green-sustainable-science-technology",
@@ -3568,10 +3928,15 @@
         ],
         "tc_count": 7,
         "citation_average": 3,
-        "definition": {
-            "Definition": "Green technology, also known as sustainable technology, takes into account the long- and short-term impact something has on the environment. Green technology is not only good for the environment but also for the bottom line. It is the application of environmental science to conserve natural resources and protect the environment for future generations.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Education's Role in Disaster Awareness",
+            "PISA 2018 Science Test Results",
+            "Relationship between Education and WRI",
+            "Frequency, Magnitude, and Exposure of Natural Hazards",
+            "Correlation between Education Factor and WRI Parameters",
+            "Awareness Discrepancy in High and Low-Risk Countries"
+        ],
+        "definition": "\"Sustainable technology is the application of technology to promote sustainable development. It includes technologies designed to use resources in a sustainable manner, taking into account the long-term impact on the environment. Green technology, on the other hand, focuses on creating products and processes that are environmentally friendly. Both fields aim to reduce the ecological impact of human activities and promote a more sustainable future. - wikipedia\""
     },
     "Ethnic Studies": {
         "url": "ethnic-studies",
@@ -3589,10 +3954,15 @@
         ],
         "tc_count": 1,
         "citation_average": 0,
-        "definition": {
-            "Definition": "Ethnic studies is the interdisciplinary study of race, ethnicity, and indigeneity with a focus on the experiences and perspectives of people of color. It explores the history, culture, politics, and contributions of diverse ethnic groups, challenging traditional narratives and centering marginalized voices.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Academic Job Market",
+            "Temporary Work",
+            "Semiotics",
+            "Academic Capitalism",
+            "Ethnic Exclusion",
+            "Transnational Mobility"
+        ],
+        "definition": "\"Ethnic studies, also known as ethnic and race studies, is the interdisciplinary study of race, ethnicity, and indigeneity with a focus on the experiences and perspectives of people of color within and beyond the United States. It explores the history, culture, politics, and contributions of diverse ethnic groups, challenging traditional narratives and promoting social justice and equity. - wikipedia\""
     },
     "Social Sciences, Mathematical Methods": {
         "url": "social-sciences-mathematical-methods",
@@ -3611,12 +3981,12 @@
         ],
         "tc_count": 5,
         "citation_average": 2,
-        "definition": {
-            "Social Sciences": {
-                "Definition": "Social science is the branch of science devoted to the study of societies and the relationships among individuals within those societies. The social sciences include disciplines such as anthropology, sociology, economics, psychology, political science, and history.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Regulatory Impact on Mortality",
+            "Cost-Benefit Analysis",
+            "State-Level Data Analysis"
+        ],
+        "definition": "\"Mathematical Methods in Social Sciences refer to the use of mathematical models, theories, and techniques to analyze social phenomena and behavior. This interdisciplinary approach allows researchers to apply mathematical tools to study human interactions, societal trends, and other aspects of the social world, providing valuable insights and understanding. - wikipedia\""
     },
     "Cultural Studies": {
         "url": "cultural-studies",
@@ -3632,12 +4002,7 @@
         ],
         "tc_count": 2,
         "citation_average": 2,
-        "definition": {
-            "Cultural Studies": {
-                "Definition": "Cultural studies is an interdisciplinary field that explores the relationship between culture, politics, and society. It examines how cultural practices, beliefs, and norms shape and are shaped by power dynamics, social structures, and historical contexts.",
-                "source": "wikipedia"
-            }
-        }
+        "definition": "\"Cultural studies is a field of theoretically, politically, and empirically engaged cultural analysis that concentrates upon the political dynamics of contemporary culture, its historical foundations, defining traits, conflicts, and contingencies. Cultural studies researchers generally investigate how cultural practices relate to wider systems of power associated with or operating through social phenomena, such as ideology, class structures, national formations, ethnicity, sexual orientation, gender, and generation.\" - wikipedia"
     },
     "Cardiac & Cardiovascular Systems": {
         "url": "cardiac-cardiovascular-systems",
@@ -3656,10 +4021,14 @@
         ],
         "tc_count": 11,
         "citation_average": 11,
-        "definition": {
-            "Definition": "The cardiac and cardiovascular systems are responsible for circulating blood throughout the body. The cardiovascular system consists of the heart and blood vessels, including arteries, veins, and capillaries. The heart pumps blood to deliver oxygen and nutrients to the body's tissues and organs, while the blood vessels transport the blood to and from the heart. The cardiac system specifically refers to the heart and its functions in pumping and regulating blood flow.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Lower Leg Heating",
+            "Popliteal Artery Blood Flow",
+            "6-Minute Walk Distance",
+            "Leg Perfusion",
+            "Exercise Capacity"
+        ],
+        "definition": "\"The cardiovascular system, also known as the circulatory system, is a vast network of organs and blood vessels that is responsible for the flow of blood, nutrients, oxygen, and hormones to cells throughout the body. It also helps to remove waste products and carbon dioxide. The heart is the central organ of the cardiovascular system, pumping blood through a network of arteries, veins, and capillaries to nourish the body's cells. - wikipedia\""
     },
     "Theater": {
         "url": "theater",
@@ -3675,10 +4044,12 @@
         ],
         "tc_count": 0,
         "citation_average": 0,
-        "definition": {
-            "Definition": "Theatre or theater is a collaborative form of performing art that uses live performers, typically actors or actresses, to present the experience of a real or imagined event before a live audience in a specific place, often a stage. The performers may communicate this experience to the audience through combinations of gesture, speech, song, music, and dance.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Language and Communication",
+            "Symbolism",
+            "Meaning and Interpretation"
+        ],
+        "definition": "\"Theater is a collaborative form of performing art that uses live performers, typically actors or actresses, to present the experience of a real or imagined event before a live audience in a specific place, often a stage. The performers may communicate this experience to the audience through combinations of gesture, speech, song, music, and dance. Elements of art, such as painted scenery and stagecraft such as lighting, are used to enhance the physicality, presence, and immediacy of the experience. The specific place of the performance is also named by the word \"theatre\" as derived from the Ancient Greek \u03b8\u03ad\u03b1\u03c4\u03c1\u03bf\u03bd (th\u00e9atron, \"a place for viewing\"), itself from \u03b8\u03b5\u03ac\u03bf\u03bc\u03b1\u03b9 (the\u00e1omai, \"to see\", \"to watch\", \"to observe\").  - wikipedia\""
     },
     "Psychiatry": {
         "url": "psychiatry",
@@ -3694,12 +4065,14 @@
         ],
         "tc_count": 13,
         "citation_average": 13,
-        "definition": {
-            "Psychiatry": {
-                "Definition": "Psychiatry is the medical specialty devoted to the diagnosis, prevention, and treatment of mental disorders. These include various maladaptive behaviors, cognitive impairments, and emotional disturbances. Psychiatry aims to understand the underlying biological, psychological, and social factors contributing to mental illnesses and provide appropriate interventions to improve the well-being of individuals.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Job Stress",
+            "Sleep Quality",
+            "Work Spillover",
+            "Gender Differences",
+            "Mediation Analysis"
+        ],
+        "definition": "\"Psychiatry is the medical specialty devoted to the diagnosis, prevention, and treatment of mental disorders. These include various maladaptations related to mood, behavior, cognition, and perceptions. Psychiatry differs from psychology, which involves the study of human behavior and mind but is not limited to medical aspects.\" - wikipedia"
     },
     "Literary Reviews": {
         "url": "literary-reviews",
@@ -3715,12 +4088,7 @@
         ],
         "tc_count": 0,
         "citation_average": 0,
-        "definition": {
-            "Literary Reviews": {
-                "Definition": "A literary review is a written evaluation of a literary work. It involves analyzing the content, style, and significance of a piece of literature, often in the form of a critical essay or article.",
-                "source": "wikipedia"
-            }
-        }
+        "definition": "Literary review is a written evaluation of a work of literature, which can be a book, play, film, poem, etc. It typically involves analysis, critique, and interpretation of the piece, focusing on elements such as plot, characters, themes, and writing style. - wikipedia"
     },
     "Plant Sciences": {
         "url": "plant-sciences",
@@ -3740,10 +4108,14 @@
         ],
         "tc_count": 0,
         "citation_average": 0,
-        "definition": {
-            "Definition": "Plant science is a branch of biology that focuses on understanding the physiology, structure, development, genetics, and ecological relationships of plants. It encompasses various sub-disciplines such as botany, agronomy, horticulture, and plant pathology.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Biogeography",
+            "Land Use Change",
+            "Tree Species Distribution",
+            "Soil Drainage Characteristics",
+            "Witness Tree Analysis"
+        ],
+        "definition": "\"Plant science is a branch of biology that focuses on understanding the scientific principles governing the life of plants. It encompasses a variety of disciplines such as plant physiology, genetics, ecology, and molecular biology to study plant growth, development, and responses to the environment. Plant scientists work towards improving crop production, developing sustainable agricultural practices, and preserving plant biodiversity. - wikipedia\""
     },
     "Engineering, Civil": {
         "url": "engineering-civil",
@@ -3759,10 +4131,14 @@
         ],
         "tc_count": 2,
         "citation_average": 2,
-        "definition": {
-            "Definition": "Civil engineering is a professional engineering discipline that deals with the design, construction, and maintenance of the physical and naturally built environment, including public works such as roads, bridges, canals, dams, airports, sewerage systems, pipelines, structural components of buildings, and railways.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Collaborative Partnering",
+            "Aviation Construction Projects",
+            "State Departments of Transportation",
+            "Stakeholder Management",
+            "Project Delivery Methods"
+        ],
+        "definition": "\"Civil engineering is a professional engineering discipline that deals with the design, construction, and maintenance of the physical and naturally built environment, including public works such as roads, bridges, canals, dams, airports, sewerage systems, pipelines, structural components of buildings, and railways. - wikipedia\""
     },
     "Philosophy": {
         "url": "philosophy",
@@ -3780,12 +4156,14 @@
         ],
         "tc_count": 1,
         "citation_average": 1,
-        "definition": {
-            "Philosophy": {
-                "Definition": "Philosophy is the study of general and fundamental questions about existence, knowledge, values, reason, mind, and language. Such questions are often posed as problems to be studied or resolved. The term was probably coined by Pythagoras. Philosophical methods include questioning, critical discussion, rational argument, and systematic presentation.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Evolutionary Theory",
+            "Historical Contingencies",
+            "Systematic Necessities",
+            "Historical Temporality",
+            "Ontological Infrastructure"
+        ],
+        "definition": "\"Philosophy is the study of general and fundamental questions about existence, knowledge, values, reason, mind, and language. Such questions are often posed as problems to be studied or resolved. The term was probably coined by Pythagoras. Philosophical methods include questioning, critical discussion, rational argument, and systematic presentation.\" - wikipedia"
     },
     "Physics, Particles & Fields": {
         "url": "physics-particles-fields",
@@ -3803,10 +4181,14 @@
         ],
         "tc_count": 67,
         "citation_average": 67,
-        "definition": {
-            "Definition": "Particle physics is a branch of physics that studies the nature of particles that are the constituents of what is usually referred to as matter and radiation. These particles are extremely small and exhibit wave-particle duality. The field of particle physics evolved out of nuclear physics and the study of cosmic rays. It is concerned with the structure and interactions of subatomic particles, including those that make up atomic nuclei and those that are produced in high-energy collisions.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Effective Field Theories",
+            "Bayesian Inference",
+            "Chiral Effective Field Theory",
+            "Parameter Estimation",
+            "NN Potential Estimation"
+        ],
+        "definition": "\"Particle physics is a branch of physics that studies the nature of particles that are the constituents of matter and radiation. Although the word particle can refer to various types of very small objects (e.g. protons, gas particles, or even household dust), \"particle physics\" usually investigates the irreducibly smallest detectable particles and the fundamental interactions necessary to explain their behaviour. By our current understanding, these elementary particles are excitations of the quantum fields that also govern their interactions.\" - wikipedia"
     },
     "Family Studies": {
         "url": "family-studies",
@@ -3831,10 +4213,15 @@
         ],
         "tc_count": 7,
         "citation_average": 1,
-        "definition": {
-            "Definition": "Family studies is an academic discipline that focuses on the dynamics and interactions within families and the impact of family structures on individuals and society. It examines topics such as family relationships, communication patterns, parenting styles, and family roles. Family studies also explore how families adapt to changes and challenges over time.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Verbal Coercion",
+            "Self-Esteem",
+            "Sexual Victimization",
+            "Sexual Experiences Survey",
+            "Criticism Tactics",
+            "Threat Tactics"
+        ],
+        "definition": "Family studies is a field that focuses on the family as a social institution and the relationships within families. It examines the structure, function, and dynamics of families, as well as how families interact with their environment and society. Family studies may include topics such as marriage, parenting, communication within families, family roles, and family systems theory. It seeks to understand the complexities of family life and how families contribute to the well-being of individuals and society as a whole. - wikipedia"
     },
     "Limnology": {
         "url": "limnology",
@@ -3852,10 +4239,16 @@
         ],
         "tc_count": 12,
         "citation_average": 12,
-        "definition": {
-            "Definition": "Limnology is the study of inland aquatic ecosystems, including lakes, reservoirs, rivers, streams, wetlands, and groundwater. It is a multidisciplinary field that incorporates aspects of biology, chemistry, physics, geology, and environmental science to understand the physical, chemical, and biological processes that occur in freshwater environments.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Genetic Adaptations",
+            "Physiological Mechanisms",
+            "Energy Allocation",
+            "Symbiont-Host Interactions",
+            "Photoacclimatization",
+            "Photosynthetic Pigments",
+            "Isotopic Signatures"
+        ],
+        "definition": "Limnology is the study of inland aquatic ecosystems, including lakes, reservoirs, rivers, streams, wetlands, and groundwater. It is a branch of environmental science that deals with the chemical, physical, geological, and biological characteristics of these bodies of water. Limnology also encompasses the study of the impact of human activities on freshwater systems and the conservation and management of these important resources. - wikipedia"
     },
     "Music": {
         "url": "music",
@@ -3875,12 +4268,14 @@
         ],
         "tc_count": 11,
         "citation_average": 5,
-        "definition": {
-            "Music": {
-                "Definition": "Music is an art form and cultural activity whose medium is sound organized in time. The common elements of music are pitch (which governs melody and harmony), rhythm (and its associated concepts tempo, meter, and articulation), dynamics, and the sonic qualities of timbre and texture.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Post-Conceptual Art",
+            "Non-Conceptual Art",
+            "Aesthetic Modernism",
+            "Absolute Music",
+            "Musical Contemporary Art"
+        ],
+        "definition": "\"Music is an art form and cultural activity whose medium is sound organized in time. The common elements of music are pitch (which governs melody and harmony), rhythm (and its associated concepts tempo, meter, and articulation), dynamics, and the sonic qualities of timbre and texture. Different styles or types of music may emphasize, de-emphasize or omit some of these elements. Music is performed with a vast range of instruments and vocal techniques ranging from singing to rapping; there are solely instrumental pieces, solely vocal pieces (such as songs without instrumental accompaniment) and pieces that combine singing and instruments.\" - wikipedia"
     },
     "Psychology, Experimental": {
         "url": "psychology-experimental",
@@ -3898,10 +4293,18 @@
         ],
         "tc_count": 9,
         "citation_average": 9,
-        "definition": {
-            "Definition": "Experimental psychology refers to work done by those who apply experimental methods to the study of behavior and the processes that underlie it. Experimental psychologists employ human participants and animal subjects to study a great many topics, including sensation & perception, memory, cognition, learning, motivation, emotion; developmental processes, social psychology, and the neural substrates of all of these. The use of animals and humans in the laboratory is a key component of experimental psychology, and the field is considered the most methodologically rigorous of all psychological subfields.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Stress Reduction",
+            "Music Listening",
+            "Musical Improvisation",
+            "Behavioral Measures",
+            "Physiological Measures",
+            "Skin Conductance",
+            "Electrodermal Activity",
+            "Mood Improvement",
+            "Satisfaction Levels"
+        ],
+        "definition": "\"Experimental psychology is an approach to psychological research where people systematically manipulate variables to observe their effect on behavior or mental processes. It is often conducted in a laboratory setting and aims to provide empirical evidence to support theories and hypotheses in psychology. - wikipedia\""
     },
     "Soil Science": {
         "url": "soil-science",
@@ -3930,10 +4333,18 @@
         ],
         "tc_count": 8,
         "citation_average": 8,
-        "definition": {
-            "Definition": "Soil science is the study of soil as a natural resource on the surface of the Earth including soil formation, classification, and mapping; physical, chemical, biological, and fertility properties of soils; and these properties in relation to the use and management of soils.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Microbial Enzymatic Activity",
+            "Soil Microbial Community Composition",
+            "Land Use Changes Impact",
+            "Fluorescein Diacetate Hydrolysis",
+            "Dehydrogenase Activity",
+            "Bacterial Phyla Composition",
+            "Genera Abundance",
+            "Soil pH and Organic Matter Correlation",
+            "Phylotype Richness and Diversity"
+        ],
+        "definition": "\"Soil science is the study of soil as a natural resource on the surface of the Earth including soil formation, classification and mapping; physical, chemical, biological, and fertility properties of soils; and these properties in relation to the use and management of soils.\" - wikipedia"
     },
     "Clinical Neurology": {
         "url": "clinical-neurology",
@@ -3951,10 +4362,14 @@
         ],
         "tc_count": 0,
         "citation_average": 0,
-        "definition": {
-            "Definition": "Clinical neurology is a medical specialty that deals with the diagnosis and management of disorders of the nervous system. This includes diseases of the brain, spinal cord, nerves, and muscles. Clinical neurologists evaluate patients with symptoms such as headaches, seizures, memory loss, movement disorders, and other neurological issues, and use various diagnostic tools and treatments to help patients manage their conditions.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Temporal Dynamics in Chronic Pain",
+            "Ayurvedic Protocols",
+            "Spatiotemporal Present Moment Awareness",
+            "Embodied Time",
+            "Ontological Framework in Pain Management"
+        ],
+        "definition": "Clinical neurology is a branch of medicine that deals with the diagnosis and management of neurological conditions that affect the brain, spinal cord, and nerves. It involves the study of the nervous system and the treatment of disorders such as stroke, epilepsy, multiple sclerosis, and Parkinson's disease. Clinical neurologists are medical doctors who specialize in this field and are trained to evaluate, diagnose, and treat patients with neurological symptoms. - wikipedia"
     },
     "Veterinary Sciences": {
         "url": "veterinary-sciences",
@@ -3972,10 +4387,14 @@
         ],
         "tc_count": 3,
         "citation_average": 3,
-        "definition": {
-            "Definition": "Veterinary science is the branch of medicine that deals with the prevention, diagnosis, and treatment of disease, disorder, and injury in animals. Along with this, it also involves the study of animal behavior, welfare, and husbandry. Veterinary science aims to promote the health and well-being of both domestic and wild animals.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Salmonella Transmission",
+            "Bacterial Shedding",
+            "Ecology and Significance as Sentinels",
+            "Genetic Relatedness between Turtle and Human Isolates",
+            "Public Health Concerns"
+        ],
+        "definition": "\"Veterinary science is the branch of medicine that deals with the prevention, diagnosis, and treatment of disease, disorder, and injury in animals. The scope of veterinary science is wide, covering all animal species, both domesticated and wild, with a wide range of conditions that can affect different species.\" - wikipedia"
     },
     "Mathematical & Computational Biology": {
         "url": "mathematical-computational-biology",
@@ -3993,10 +4412,13 @@
         ],
         "tc_count": 0,
         "citation_average": 0,
-        "definition": {
-            "Definition": "Mathematical and computational biology is an interdisciplinary field that applies mathematical and computational techniques to solve biological problems. It involves the development and application of mathematical models, computational simulations, and data analysis to study complex biological systems and processes.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Population Dispersal",
+            "Common Ancestor Analysis",
+            "Habitat Dynamics",
+            "Population Isolation"
+        ],
+        "definition": "\"Mathematical and computational biology involves the development and application of mathematical models, computational techniques, and theoretical frameworks to study biological systems. This interdisciplinary field aims to gain a deeper understanding of complex biological processes by using mathematical and computational tools to analyze and interpret biological data. Researchers in mathematical and computational biology work on a wide range of topics, including modeling biological networks, simulating biological systems, and predicting the behavior of biological molecules. By combining principles from mathematics, computer science, and biology, this field helps researchers uncover new insights into the fundamental principles of life.\" - wikipedia"
     },
     "Psychology, Biological": {
         "url": "psychology-biological",
@@ -4014,10 +4436,13 @@
         ],
         "tc_count": 1,
         "citation_average": 1,
-        "definition": {
-            "Definition": "Biological psychology, also known as biopsychology, is a field in psychology that explores the relationship between the brain, behavior, and mental processes. It examines how biological factors such as genetics, hormones, and the nervous system influence behavior and mental functions.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Chemical Communication",
+            "Sex Differences in Behavior",
+            "Social Behavior",
+            "Reproductive Strategies"
+        ],
+        "definition": "\"Biological psychology, also known as biopsychology, is a field in psychology that analyzes how thoughts, behaviors, and emotions are influenced by biological factors. This branch of psychology examines how the brain, nervous system, hormones, and genetics impact an individual's mental processes and behavior. Biological psychologists study a wide range of topics, including brain structure and function, neurotransmitters, genetics, and the effects of various biological processes on psychological phenomena.\" - wikipedia"
     },
     "Cell & Tissue Engineering": {
         "url": "cell-tissue-engineering",
@@ -4035,10 +4460,14 @@
         ],
         "tc_count": 2,
         "citation_average": 2,
-        "definition": {
-            "Definition": "Cell and tissue engineering is a multidisciplinary field that combines principles of engineering and life sciences to create biological substitutes that can restore, maintain, or improve tissue function. It involves the manipulation of cells, biomaterials, and biochemical factors to create living tissues that can be used in regenerative medicine, drug testing, and disease modeling.",
-            "source": "wikipedia"
-        }
+        "themes": [
+            "Glial-Mediated Synaptic Regeneration",
+            "CSF Composition and Impact on Neural Response",
+            "Cell Culture Media in Nervous System Research",
+            "Chemotactic Behaviors of Glial Cells",
+            "Neurite Outgrowth in CSF Replacement Solutions"
+        ],
+        "definition": "\"Cell and tissue engineering is a multidisciplinary field that combines principles of engineering and life sciences to develop biological substitutes to restore, maintain, or improve tissue function. This involves the use of cells, biomaterials, and biochemical factors to create constructs that mimic natural tissues and organs, with the goal of advancing regenerative medicine and tissue repair. - wikipedia\""
     },
     "Engineering, Biomedical": {
         "url": "engineering-biomedical",
@@ -4056,12 +4485,14 @@
         ],
         "tc_count": 2,
         "citation_average": 2,
-        "definition": {
-            "Engineering, Biomedical": {
-                "Definition": "Biomedical engineering is the application of engineering principles and design concepts to medicine and biology for healthcare purposes. This field seeks to close the gap between engineering and medicine, combining the design and problem-solving skills of engineering with medical and biological sciences to advance healthcare treatment, including diagnosis, monitoring, and therapy.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Glial-Mediated Synaptic Regeneration",
+            "CSF Composition and Impact on Neural Response",
+            "Cell Culture Media in Nervous System Research",
+            "Chemotactic Behaviors of Glial Cells",
+            "Neurite Outgrowth in CSF Replacement Solutions"
+        ],
+        "definition": "Biomedical engineering is the application of the principles and problem-solving techniques of engineering to biology and medicine. This is evident throughout healthcare, from diagnosis and analysis to treatment and recovery, and has entered the public conscience though the proliferation of implantable medical devices, such as pacemakers and artificial hips, to more futuristic technologies such as stem cell engineering and the 3-D printing of biological organs. - wikipedia"
     },
     "Urban Studies": {
         "url": "urban-studies",
@@ -4079,11 +4510,13 @@
         ],
         "tc_count": 2,
         "citation_average": 2,
-        "definition": {
-            "Urban Studies": {
-                "Definition": "Urban studies is the study of cities and urban life. It involves examining the social, political, economic, and environmental aspects of urban areas, as well as the challenges and opportunities they present. Urban studies often focus on topics such as urban planning, public policy, community development, and the impact of urbanization on society.",
-                "source": "wikipedia"
-            }
-        }
+        "themes": [
+            "Gender Disparities",
+            "Marital Status",
+            "Homeownership Determinants",
+            "Heterogeneity in Homeownership Factors",
+            "Chinese Household Studies"
+        ],
+        "definition": "Urban studies is the study of cities, their development, their social, political, economic, and environmental characteristics, and the effects they have on society. It encompasses various disciplines such as urban planning, urban sociology, urban geography, and urban economics. Urban studies aim to understand the challenges and opportunities that arise in urban areas and to develop strategies for sustainable urban development. - wikipedia"
     }
 }

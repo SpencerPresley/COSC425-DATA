@@ -55,11 +55,8 @@ class ResearchTaxonomy:
             """
                 Using the category given to you, go to wikipedia https://www.wikipedia.org/ 
                 and grab a definition for the category. This definition should be in direct correlation to the category.
-                output the quote as follows in JSON format.
-                Education :{
-                        "Definition": "Education is the transmission of knowledge, skills, and character traits and manifests in various forms. Formal education occurs within a structured institutional framework, such as public schools, following a curriculum. Non-formal education also follows a structured approach but occurs outside the formal schooling system, while informal education entails unstructured learning through daily experiences. ",
-                        "source": "wikipedia"
-                } 
+                output the quote as follows.
+                "Education is the transmission of knowledge, skills, and character traits and manifests in various forms. Formal education occurs within a structured institutional framework, such as public schools, following a curriculum. Non-formal education also follows a structured approach but occurs outside the formal schooling system, while informal education entails unstructured learning through daily experiences.  - wikipedia"
             """
         ]
         # set the prompt number
@@ -197,16 +194,9 @@ class ResearchTaxonomy:
                 {"role": "system", "content": self.prompt[2]},
                 {"role": "user", "content": category},
             ]
-            output_taxonomy = self.get_response(messages=messages)
+            output_definition = self.get_response(messages=messages)
             #print(category, " ", output_taxonomy)
-            try:
-                    value['definition'] = json.loads(output_taxonomy)
-            except json.JSONDecodeError:
-                # use a regex to fix the string
-                cleaned_json = re.sub(
-                    r"^```json\s*|\s*```$", "", output_taxonomy
-                ).strip()
-        
+            value['definition'] = output_definition
         with open("definition_output.json", "w") as file:
             json.dump(categoryDict, file, indent=4)
 
@@ -215,8 +205,6 @@ class ResearchTaxonomy:
 if __name__ == "__main__":
     Tester = ResearchTaxonomy(data_needed=False)
     filePath = input("Please enter the path to the file containing the taxonomy: ")
-    type = input("Would you like to add the themes to the taxonomy? ")
-    if type == "yes":
-        Tester.add_theme_taxonomy(fileName=filePath)
-    else:
-        Tester.get_definition(fileName=filePath)
+    Tester.add_theme_taxonomy(fileName=filePath)    
+    filePath = input("Please enter the path to the file containing the taxonomy: ")
+    Tester.get_definition(fileName=filePath)
