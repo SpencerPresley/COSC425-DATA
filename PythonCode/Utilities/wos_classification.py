@@ -59,9 +59,9 @@ class WosClassification:
         )
 
         # Serialize the processed data and save it
-        self.serialize_and_save_data("processed_category_data.json")
-        self.serialize_and_save_faculty_stats_data("processed_faculty_stats_data.json")
-        self.serialize_and_save_article_stats_data("processed_article_stats_data.json")
+        self.serialize_and_save_data("test_processed_category_data.json")
+        self.serialize_and_save_faculty_stats_data("test_processed_faculty_stats_data.json")
+        self.serialize_and_save_article_stats_data("test_processed_article_stats_data.json")
 
         # save instances of the category counts and faculty stats dictionaries
         self.file_handler.save_dict("category_dict.pkl", self.get_category_counts())

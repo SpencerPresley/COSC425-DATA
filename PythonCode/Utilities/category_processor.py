@@ -129,7 +129,6 @@ class CategoryProcessor:
 
     def get_title(self, attribute_results):
         title = attribute_results["title"][1] if attribute_results["title"][0] else None
-
         return title
 
     def update_article_set(self):
