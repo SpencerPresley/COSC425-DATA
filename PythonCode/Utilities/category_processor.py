@@ -28,6 +28,8 @@ class CategoryProcessor:
             if line.startswith("WC"):
                 self.update_category_stats(file_path, file_content, lines)
 
+        # current json object = the object from the db that was passed to this function
+
     def update_category_stats(self, file_path, file_content, lines):
         # get attributes from the file
         attribute_results = self.get_attributes(file_content)

@@ -12,6 +12,9 @@ class FileHandler:
         for filename in os.listdir(directory_path):
             file_path = os.path.join(directory_path, filename)
             # ensure it's a file
+            
+            # Pull abstract out, call AI API, get categories back
+            
             if FileHandler.check_file_status(file_path=file_path):
                 with open(file_path, "r") as current_file:
                     category_processor.category_finder(current_file, file_path)

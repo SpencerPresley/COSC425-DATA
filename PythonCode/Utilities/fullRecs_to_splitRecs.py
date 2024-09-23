@@ -3,8 +3,8 @@ import json
 
 
 def main():
-    path_to_file = "savedrecs.txt"
-    output_dir = "./split_files"
+    path_to_file = "savedrecs-5.txt"
+    output_dir = "./split_files_2"
 
     utils = Utilities()
 

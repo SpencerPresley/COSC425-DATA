@@ -194,7 +194,7 @@ class WosClassification:
 if __name__ == "__main__":
     # Define path to the directory containing the WoS txt files you want to process
     # directory_path = "~/Desktop/425testing/ResearchNotes/Rommel-Center-Research/PythonCode/Utilities/split_files"
-    directory_path = "./split_files"
+    directory_path = "./split_files_2"
     directory_path = os.path.expanduser(directory_path)
 
     # Instantiate the orchestrator class

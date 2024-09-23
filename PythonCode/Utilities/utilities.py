@@ -9,6 +9,7 @@ from AttributeExtractionStrategies import (
     WosCategoryExtractionStrategy,
     TitleExtractionStrategy,
     DepartmentExtractionStrategy,
+    CrossrefTitleExtractionStrategy,
 )
 
 # TODO: make documentation on the class and it's methods
@@ -25,6 +26,8 @@ class Utilities:
 
         # for WoS categories
         self.wc_pattern = re.compile(r"WC\s+(.+?)(?=\nWE)", re.DOTALL)
+        
+        self.end_record_pattern = re.compile(r"DA \d{4}-\d{2}-\d{2}\nER\n?", re.DOTALL)
 
         # attribute patterns
         self.attribute_patterns = {
@@ -34,6 +37,7 @@ class Utilities:
             "end_record": DefaultExtractionStrategy(),
             "wc_pattern": WosCategoryExtractionStrategy(),
             "department": DepartmentExtractionStrategy(),
+            "crossref-title": CrossrefTitleExtractionStrategy(),
         }
 
     def get_attributes(self, entry_text, attributes):
@@ -57,31 +61,38 @@ class Utilities:
         for attribute in attributes:
             # Check if the requested attribute is defined in the attribute patterns dictionary
             if attribute in self.attribute_patterns:
-                if attribute == "author":
-                    attribute_results[attribute] = self.attribute_patterns[
-                        attribute
-                    ].extract_attribute(entry_text)
+                attribute_results[attribute] = self.attribute_patterns[
+                    attribute
+                ].extract_attribute(entry_text)
+            # if attribute in self.attribute_patterns:
+            #     if attribute == "author":
+            #         attribute_results[attribute] = self.attribute_patterns[
+            #             attribute
+            #         ].extract_attribute(entry_text)
 
-                elif attribute == "department":
-                    attribute_results[attribute] = self.attribute_patterns[
-                        attribute
-                    ].extract_attribute(entry_text)
+            #     elif attribute == "department":
+            #         attribute_results[attribute] = self.attribute_patterns[
+            #             attribute
+            #         ].extract_attribute(entry_text)
 
-                elif attribute == "wc_pattern":
-                    attribute_results[attribute] = self.attribute_patterns[
-                        attribute
-                    ].extract_attribute(entry_text)
+            #     elif attribute == "wc_pattern":
+            #         attribute_results[attribute] = self.attribute_patterns[
+            #             attribute
+            #         ].extract_attribute(entry_text)
 
-                elif attribute == "title":
-                    attribute_results[attribute] = self.attribute_patterns[
-                        attribute
-                    ].extract_attribute(entry_text)
-
-                else:
-                    # Extract the attribute and add it to results dictionary
-                    attribute_results[attribute] = self.attribute_patterns[
-                        attribute
-                    ].extract_attribute(attribute, entry_text)
+            #     elif attribute == "title":
+            #         attribute_results[attribute] = self.attribute_patterns[
+            #             attribute
+            #         ].extract_attribute(entry_text)
+            #     elif attribute == "crossref-title":
+            #         attribute_results[attribute] = self.attribute_patterns[
+            #             attribute
+            #         ].extract_attribute(entry_text)
+            #     else:
+            #         # Extract the attribute and add it to results dictionary
+            #         attribute_results[attribute] = self.attribute_patterns[
+            #             attribute
+            #         ].extract_attribute(attribute, entry_text)
             else:
                 # Raise an error if an unknown attribute is requested
                 raise ValueError(f"Unknown attribute: '{attribute}' requested.")

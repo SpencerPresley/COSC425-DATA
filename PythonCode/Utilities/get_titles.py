@@ -2,18 +2,26 @@ import sys
 import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from utilities import Utilities  
+import json
 
 
 if __name__ == "__main__":
-    split_files_path = './split_files'
+    split_files_path = './split_files_2'
     utilities = Utilities()
     all_titles = []
     for file in os.listdir(split_files_path):
         with open(os.path.join(split_files_path, file), 'r') as f:
             text = f.read()
             title = utilities.get_attributes(text, ['title'])['title'][1]
+            if title is None:
+                print(file)
+                input("Press Enter to continue...")
+                continue
             all_titles.append(title)
-            print(title)
-    with open('ALL_TITLES.txt', 'w') as f:
-        for title in all_titles:
-            f.write(title + '\n') 
+    with open('2024_titles.json', 'w') as f:
+        titles_dict = {
+            "year": 2024,
+            "titles_count": len(all_titles),
+            "titles": all_titles
+        }
+        json.dump(titles_dict, f, indent=4)

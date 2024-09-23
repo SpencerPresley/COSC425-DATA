@@ -1,7 +1,7 @@
 import re
 import warnings
 from html import unescape
-
+from bs4 import BeautifulSoup
 
 class AttributeExtractionStrategy:
     def extract_attribute(self, entry_text):
@@ -218,3 +218,21 @@ class DefaultExtractionStrategy(AttributeExtractionStrategy):
             )
             return False, None
         return True, match.group(1).strip()
+
+class CrossrefTitleExtractionStrategy(AttributeExtractionStrategy):
+    def __init__(self):
+        self.title_key = "title"
+        
+    def clean_title(self, title):
+        # Remove HTML tags using BeautifulSoup
+        b_soup = BeautifulSoup(title, 'html.parser')
+        return b_soup.get_text()
+    
+    def extract_attribute(self, entry_text):
+        titles = entry_text.get(self.title_key, [])
+        if not isinstance(titles, list):
+            titles = [titles]
+        cleaned_titles = [self.clean_title(title) for title in titles]
+        return (True, cleaned_titles) if cleaned_titles else (False, None)
+        
+
