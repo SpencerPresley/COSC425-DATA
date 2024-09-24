@@ -10,6 +10,7 @@ from AttributeExtractionStrategies import (
     TitleExtractionStrategy,
     DepartmentExtractionStrategy,
     CrossrefTitleExtractionStrategy,
+    CrossrefAbstractExtractionStrategy,
 )
 
 # TODO: make documentation on the class and it's methods
@@ -38,6 +39,7 @@ class Utilities:
             "wc_pattern": WosCategoryExtractionStrategy(),
             "department": DepartmentExtractionStrategy(),
             "crossref-title": CrossrefTitleExtractionStrategy(),
+            "crossref-abstract": CrossrefAbstractExtractionStrategy(),
         }
 
     def get_attributes(self, entry_text, attributes):

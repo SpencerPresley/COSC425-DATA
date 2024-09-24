@@ -2,6 +2,9 @@ import re
 import warnings
 from html import unescape
 from bs4 import BeautifulSoup
+import json
+from markdownify import markdownify as md
+import html2markdown
 
 class AttributeExtractionStrategy:
     def extract_attribute(self, entry_text):
@@ -28,7 +31,74 @@ class AttributeExtractionStrategy:
                     c1_content.append(line[start + 1 : end])
                 break
         return "\n".join(c1_content)
+    
+    def html_to_dict(self, soup):
+        sections = soup.find_all("jats:sec")
+        
+        result = {}
+        if sections:
+            for section in sections:
+                title_tag = section.find("jats:title")
+                title = title_tag.get_text(strip=True) if title_tag else "No Title"
+                paragraphs = section.find_all("jats:p")
+                text = " ".join(p.get_text(separator=' ', strip=True) for p in paragraphs)
+                result[title] = text
+        else:
+            # Handle case where there are no <jats:sec> tags
+            paragraphs = soup.find_all("jats:p")
+            text = " ".join(p.get_text(separator=' ', strip=True) for p in paragraphs)
 
+            result["Abstract"] = text
+        
+        return result
+
+    # def html_to_markdown(self, soup):
+    #     markdown = []
+
+    #     sections = soup.find_all("jats:sec")
+    #     for section in sections:
+    #         title_tag = section.find("jats:title")
+    #         if title_tag:
+    #             title = title_tag.get_text(strip=True)
+    #             markdown.append(f"## {title}")
+            
+    #         paragraphs = section.find_all("jats:p")
+    #         for paragraph in paragraphs:
+    #             text = paragraph.get_text(separator=" ", strip=True)
+    #             markdown.append(text)
+    #             markdown.append("")  # Add a blank line for spacing
+
+    #     return "\n".join(markdown)
+
+    def html_to_markdown(self, html_content):
+        # Use BeautifulSoup to parse the HTML content
+        soup = BeautifulSoup(html_content, 'lxml')
+        
+        markdown_content = []
+        
+        # Check if there are any <jats:sec> sections
+        sections = soup.find_all('jats:sec')
+        if sections:
+            for section in sections:
+                title = section.find('jats:title')
+                if title: 
+                    string = f"## {title.get_text(strip=True)}:"
+                    if title.get_text(strip=True).endswith(":"):
+                        string = string[:-1]
+                    markdown_content.append(string)
+                
+                paragraphs = section.find_all('jats:p')
+                for paragraph in paragraphs:
+                    markdown_content.append(paragraph.get_text(strip=True) + "\n")
+        else:
+            # If no sections, combine all paragraphs
+            paragraphs = soup.find_all('jats:p')
+            for paragraph in paragraphs:
+                markdown_content.append(paragraph.get_text(strip=True) + "\n")
+        
+        return "\n".join(markdown_content)
+
+    
     def split_salisbury_authors(self, salisbury_authors):
         """
         Splits the authors string at each ';' and stores the items in a list.
@@ -225,8 +295,8 @@ class CrossrefTitleExtractionStrategy(AttributeExtractionStrategy):
         
     def clean_title(self, title):
         # Remove HTML tags using BeautifulSoup
-        b_soup = BeautifulSoup(title, 'html.parser')
-        return b_soup.get_text()
+        soup = BeautifulSoup(title, 'html.parser')
+        return soup.get_text()
     
     def extract_attribute(self, entry_text):
         titles = entry_text.get(self.title_key, [])
@@ -234,5 +304,34 @@ class CrossrefTitleExtractionStrategy(AttributeExtractionStrategy):
             titles = [titles]
         cleaned_titles = [self.clean_title(title) for title in titles]
         return (True, cleaned_titles) if cleaned_titles else (False, None)
+        
+
+class CrossrefAbstractExtractionStrategy(AttributeExtractionStrategy):
+    def __init__(self):
+        self.abstract_key = "abstract"
+        
+    def clean_abstract(self, abstract):
+        # Remove HTML tags using BeautifulSoup
+        soup = BeautifulSoup(abstract, 'lxml')
+        print(f"Cleaned Abstract:\n{soup.get_text(separator=' ')}")
+        input("Press Enter to continue...")
+        print(f"{'-'*100}")
+        print(f"Prettified:\n{soup.prettify()}")
+        input("Press Enter to continue...")
+        print(f"As dictionary:\n{json.dumps(self.html_to_dict(soup), indent=4)}")
+        input("Press Enter to continue...")
+        print(f"As markdown:\n{self.html_to_markdown(abstract)}")
+        input("Press Enter to continue...")
+        return self.html_to_markdown(abstract)
+    
+    def extract_attribute(self, entry_text):
+        abstract = entry_text.get(self.abstract_key, None)
+        if abstract:
+            abstract = self.clean_abstract(abstract)
+            return (True, abstract)
+        warnings.warn(
+            f"Attribute: 'Crossref_Abstract' was not found in the entry", RuntimeWarning
+        )
+        return (False, None)
         
 
