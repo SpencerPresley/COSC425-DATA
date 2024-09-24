@@ -3,8 +3,6 @@ import warnings
 from html import unescape
 from bs4 import BeautifulSoup
 import json
-from markdownify import markdownify as md
-import html2markdown
 
 class AttributeExtractionStrategy:
     def extract_attribute(self, entry_text):
@@ -51,24 +49,6 @@ class AttributeExtractionStrategy:
             result["Abstract"] = text
         
         return result
-
-    # def html_to_markdown(self, soup):
-    #     markdown = []
-
-    #     sections = soup.find_all("jats:sec")
-    #     for section in sections:
-    #         title_tag = section.find("jats:title")
-    #         if title_tag:
-    #             title = title_tag.get_text(strip=True)
-    #             markdown.append(f"## {title}")
-            
-    #         paragraphs = section.find_all("jats:p")
-    #         for paragraph in paragraphs:
-    #             text = paragraph.get_text(separator=" ", strip=True)
-    #             markdown.append(text)
-    #             markdown.append("")  # Add a blank line for spacing
-
-    #     return "\n".join(markdown)
 
     def html_to_markdown(self, html_content):
         # Use BeautifulSoup to parse the HTML content
@@ -143,6 +123,12 @@ class AttributeExtractionStrategy:
         # return '\n'.join(c1_content)
         return c1_content
 
+    def get_crossref_author_affils(self, author_item):
+        raw_affils = author_item["affiliation"]
+        affils: list[str] = []
+        for affil in raw_affils:
+            affils.append(affil["name"])
+        return affils
 
 class AuthorExtractionStrategy(AttributeExtractionStrategy):
     def __init__(self):
@@ -311,17 +297,6 @@ class CrossrefAbstractExtractionStrategy(AttributeExtractionStrategy):
         self.abstract_key = "abstract"
         
     def clean_abstract(self, abstract):
-        # Remove HTML tags using BeautifulSoup
-        soup = BeautifulSoup(abstract, 'lxml')
-        print(f"Cleaned Abstract:\n{soup.get_text(separator=' ')}")
-        input("Press Enter to continue...")
-        print(f"{'-'*100}")
-        print(f"Prettified:\n{soup.prettify()}")
-        input("Press Enter to continue...")
-        print(f"As dictionary:\n{json.dumps(self.html_to_dict(soup), indent=4)}")
-        input("Press Enter to continue...")
-        print(f"As markdown:\n{self.html_to_markdown(abstract)}")
-        input("Press Enter to continue...")
         return self.html_to_markdown(abstract)
     
     def extract_attribute(self, entry_text):
@@ -335,3 +310,45 @@ class CrossrefAbstractExtractionStrategy(AttributeExtractionStrategy):
         return (False, None)
         
 
+class CrossrefAuthorExtractionStrategy(AttributeExtractionStrategy):
+    def __init__(self):
+        self.author_key = "author"
+        self.author_sequence_dict = {
+            "first": {
+                "author_name": "",
+                "affiliation": []
+            },
+            "additional": []
+        }
+        self.unknown_authors = {
+            "unknown_authors": []
+        }
+
+    def get_author_obj(self, crossref_json):
+        authors = crossref_json.get("author", None)
+        return authors
+    
+    def set_author_sequence_dict(self, authors):
+        for author_item in authors:
+            sequence = author_item.get("sequence", None)
+            author_given_name = author_item.get("given", None)
+            author_family_name = author_item.get("family", None)
+
+
+            author_name = ""
+            if author_given_name and author_family_name:
+                author_name = f"{author_given_name} {author_family_name}"
+            else:
+                warnings.warn("Author name not found, being added to unknown authors file", RuntimeWarning)
+                self.unkown_authors["unknown_authors"].append(author_item)
+
+            author_affiliations = self.get_crossref_author_affils(author_item)
+
+            if sequence == "first":
+                self.author_sequence_dict[sequence]["author_name"] = author_name
+                for affiliation in author_affiliations:
+                    self.author_sequence_dict[sequence]["affiliation"].append(author_affiliations)
+
+            
+    
+    def extract_attribute(self, entry_text):
