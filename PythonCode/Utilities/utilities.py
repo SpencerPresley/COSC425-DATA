@@ -11,6 +11,7 @@ from AttributeExtractionStrategies import (
     DepartmentExtractionStrategy,
     CrossrefTitleExtractionStrategy,
     CrossrefAbstractExtractionStrategy,
+    CrossrefAuthorExtractionStrategy,
 )
 
 # TODO: make documentation on the class and it's methods
@@ -40,6 +41,7 @@ class Utilities:
             "department": DepartmentExtractionStrategy(),
             "crossref-title": CrossrefTitleExtractionStrategy(),
             "crossref-abstract": CrossrefAbstractExtractionStrategy(),
+            "crossref-authors": CrossrefAuthorExtractionStrategy(),
         }
 
     def get_attributes(self, entry_text, attributes):
