@@ -11,9 +11,9 @@ def get_crossref_ab(file_path: str, output_file_path: str, utils: Utilities):
     for item in items:
         authors.extend(utils.get_attributes(item, ['crossref-authors'])['crossref-authors'][1])
 
-    
+    authors_dict = {"authors": authors}
     with open(output_file_path, "w") as file:
-        json.dump(authors, file, indent=4)
+        json.dump(authors_dict, file, indent=4)
 
 if __name__ == "__main__":
     utils = Utilities()
