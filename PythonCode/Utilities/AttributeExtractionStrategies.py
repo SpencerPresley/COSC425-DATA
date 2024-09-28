@@ -313,14 +313,19 @@ class CrossrefAbstractExtractionStrategy(AttributeExtractionStrategy):
 class CrossrefAuthorExtractionStrategy(AttributeExtractionStrategy):
     def __init__(self):
         self.author_key = "author"
-        self.author_sequence_dict = {
+        self.unknown_authors = self.create_unknown_authors_dict()
+
+    def create_author_sequence_dict(self):
+        return {
             "first": {
                 "author_name": "",
                 "affiliations": []
             },
             "additional": []
         }
-        self.unknown_authors = {
+
+    def create_unknown_authors_dict(self):
+        return {
             "unknown_authors": []
         }
 
@@ -332,7 +337,7 @@ class CrossrefAuthorExtractionStrategy(AttributeExtractionStrategy):
         authors = crossref_json.get("author", None)
         return authors
     
-    def set_author_sequence_dict(self, *, author_items):
+    def set_author_sequence_dict(self, *, author_items, author_sequence_dict):
         for author_item in author_items:
             sequence = author_item.get("sequence", None)
             author_given_name = author_item.get("given", None)
@@ -349,9 +354,9 @@ class CrossrefAuthorExtractionStrategy(AttributeExtractionStrategy):
             author_affiliations = self.get_crossref_author_affils(author_item)
 
             if sequence == "first":
-                self.author_sequence_dict[sequence]["author_name"] = author_name
+                author_sequence_dict[sequence]["author_name"] = author_name
                 for affiliation in author_affiliations:
-                    self.author_sequence_dict[sequence]["affiliations"].append(affiliation)
+                    author_sequence_dict[sequence]["affiliations"].append(affiliation)
 
             elif sequence == "additional":
                 additional_author_dict = {}
@@ -359,19 +364,20 @@ class CrossrefAuthorExtractionStrategy(AttributeExtractionStrategy):
                 additional_author_dict["affiliations"] = []
                 for affiliation in author_affiliations:
                     additional_author_dict["affiliations"].append(affiliation)
-                self.author_sequence_dict["additional"].append(additional_author_dict)
+                author_sequence_dict["additional"].append(additional_author_dict)
 
-            self.write_missing_authors_file(self.unknown_authors)
+        self.write_missing_authors_file(self.unknown_authors)
     
-    def get_authors_as_list(self):
+    def get_authors_as_list(self, *, author_sequence_dict):
         authors = []
-        authors.append(self.author_sequence_dict["first"]["author_name"])
-        for item in self.author_sequence_dict["additional"]:
+        authors.append(author_sequence_dict["first"]["author_name"])
+        for item in author_sequence_dict["additional"]:
             authors.append(item["author_name"])
         return authors
 
 
     def extract_attribute(self, crossref_json):
         author_items = self.get_author_obj(crossref_json=crossref_json)
-        self.set_author_sequence_dict(author_items=author_items)
-        return (True, self.get_authors_as_list())
+        author_sequence_dict = self.create_author_sequence_dict()
+        self.set_author_sequence_dict(author_items=author_items, author_sequence_dict=author_sequence_dict)
+        return (True, self.get_authors_as_list(author_sequence_dict=author_sequence_dict))
