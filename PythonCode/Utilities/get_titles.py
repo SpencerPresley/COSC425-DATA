@@ -3,7 +3,7 @@ import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from utilities import Utilities  
 import json
-
+from enums import AttributeTypes
 
 if __name__ == "__main__":
     split_files_path = './split_files_2'
@@ -12,7 +12,7 @@ if __name__ == "__main__":
     for file in os.listdir(split_files_path):
         with open(os.path.join(split_files_path, file), 'r') as f:
             text = f.read()
-            title = utilities.get_attributes(text, ['title'])['title'][1]
+            title = utilities.get_attributes(text, [AttributeTypes.TITLE])[AttributeTypes.TITLE][1]
             if title is None:
                 print(file)
                 input("Press Enter to continue...")

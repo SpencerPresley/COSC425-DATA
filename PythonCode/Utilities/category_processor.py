@@ -7,7 +7,7 @@ from generate_aux_stats import FacultyStats, FacultyInfo, ArticleStats
 # Actual object is passed in to CategoryProcessor's constructor
 # via dependency injection.
 from faculty_department_manager import FacultyDepartmentManager
-
+from enums import AttributeTypes
 
 class CategoryProcessor:
     def __init__(self, utils, faculty_department_manager):
@@ -32,7 +32,15 @@ class CategoryProcessor:
 
     def update_category_stats(self, file_path, file_content, lines):
         # get attributes from the file
-        attribute_results = self.get_attributes(file_content)
+        attribute_results = self.utils.get_attributes(
+            file_content,
+            [
+                AttributeTypes.AUTHOR,
+                AttributeTypes.DEPARTMENT,
+                AttributeTypes.WC_PATTERN,
+                AttributeTypes.TITLE,
+            ]
+        )
         categories = self.get_categories(file_path, attribute_results)
         faculty_members = self.get_faculty_members(attribute_results)
         department_members = self.get_department_members(attribute_results)
@@ -130,7 +138,7 @@ class CategoryProcessor:
             self.faculty_department_manager.update_title_set(categories, title)
 
     def get_title(self, attribute_results):
-        title = attribute_results["title"][1] if attribute_results["title"][0] else None
+        title = attribute_results[AttributeTypes.TITLE][1] if attribute_results[AttributeTypes.TITLE][0] else None
         return title
 
     def update_article_set(self):
@@ -147,23 +155,28 @@ class CategoryProcessor:
 
     def get_department_members(self, attribute_results):
         department_members = (
-            attribute_results["department"][1]
-            if attribute_results["department"][0]
+            attribute_results[AttributeTypes.DEPARTMENT][1]
+            if attribute_results[AttributeTypes.DEPARTMENT][0]
             else None
         )
 
         return department_members
 
-    def get_attributes(self, file_content):
-        attributes_to_retrieve = ["author", "department", "wc_pattern", "title"]
-        attribute_results = self.utils.get_attributes(
-            entry_text=file_content, attributes=attributes_to_retrieve
-        )
+    # def get_attributes(self, file_content):
+    #     attributes_to_retrieve = [
+    #         AttributeTypes.AUTHOR,
+    #         AttributeTypes.DEPARTMENT,
+    #         AttributeTypes.WC_PATTERN,
+    #         AttributeTypes.TITLE,
+    #     ]
+    #     attribute_results = self.utils.get_attributes(
+    #         entry_text=file_content, attributes=attributes_to_retrieve
+    #     )
 
-        return attribute_results
+    #     return attribute_results
 
     def get_categories(self, file_path, attribute_results):
-        categories = attribute_results["wc_pattern"][1]
+        categories = attribute_results[AttributeTypes.WC_PATTERN][1]
         self.initialize_categories(categories=categories)
         self.update_category_counts_files_set(
             categories=categories, file_name=file_path
@@ -172,8 +185,8 @@ class CategoryProcessor:
 
     def get_faculty_members(self, attribute_results):
         faculty_members: list[str] = []
-        if attribute_results["author"][0]:
-            for attribute in attribute_results["author"][1]:
+        if attribute_results[AttributeTypes.AUTHOR][0]:
+            for attribute in attribute_results[AttributeTypes.AUTHOR][1]:
                 if attribute != "":
                     faculty_members.append(attribute)
         return faculty_members

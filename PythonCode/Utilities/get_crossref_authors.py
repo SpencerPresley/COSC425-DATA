@@ -5,6 +5,7 @@ import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from utilities import Utilities
 import logging
+from enums import AttributeTypes
 
 logging.basicConfig(
     level=logging.INFO,
@@ -17,7 +18,7 @@ def get_crossref_ab(file_path: str, output_file_path: str, utils: Utilities):
     items = ijson.items(open(file_path, 'r'), 'item')
     authors = []
     for i, item in enumerate(items):
-        new_authors = utils.get_attributes(item, ['crossref-authors'])['crossref-authors'][1]
+        new_authors = utils.get_attributes(item, [AttributeTypes.CROSSREF_AUTHORS])[AttributeTypes.CROSSREF_AUTHORS][1]
         authors.extend(new_authors)
         logging.info(f"Item {i}: Added {len(new_authors)} authors. Total authors: {len(authors)}")
         if i % 100 == 0:

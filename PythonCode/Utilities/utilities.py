@@ -3,17 +3,19 @@ import os
 import warnings
 import time
 import json
-from AttributeExtractionStrategies import (
-    AuthorExtractionStrategy,
-    DefaultExtractionStrategy,
-    WosCategoryExtractionStrategy,
-    TitleExtractionStrategy,
-    DepartmentExtractionStrategy,
-    CrossrefTitleExtractionStrategy,
-    CrossrefAbstractExtractionStrategy,
-    CrossrefAuthorExtractionStrategy,
-)
-
+# from AttributeExtractionStrategies import (
+#     AuthorExtractionStrategy,
+#     DefaultExtractionStrategy,
+#     WosCategoryExtractionStrategy,
+#     TitleExtractionStrategy,
+#     DepartmentExtractionStrategy,
+#     CrossrefTitleExtractionStrategy,
+#     CrossrefAbstractExtractionStrategy,
+#     CrossrefAuthorExtractionStrategy,
+# )
+import AttributeExtractionStrategies
+from strategy_factory import StrategyFactory
+from enums import AttributeTypes
 # TODO: make documentation on the class and it's methods
 
 """
@@ -23,27 +25,7 @@ This script contains a class that has various utility methods that will be used 
 
 class Utilities:
     MAX_FILENAME_LENGTH = 255
-
-    def __init__(self):
-
-        # for WoS categories
-        self.wc_pattern = re.compile(r"WC\s+(.+?)(?=\nWE)", re.DOTALL)
-        
-        self.end_record_pattern = re.compile(r"DA \d{4}-\d{2}-\d{2}\nER\n?", re.DOTALL)
-
-        # attribute patterns
-        self.attribute_patterns = {
-            "author": AuthorExtractionStrategy(),
-            "title": TitleExtractionStrategy(),
-            "abstract": DefaultExtractionStrategy(),
-            "end_record": DefaultExtractionStrategy(),
-            "wc_pattern": WosCategoryExtractionStrategy(),
-            "department": DepartmentExtractionStrategy(),
-            "crossref-title": CrossrefTitleExtractionStrategy(),
-            "crossref-abstract": CrossrefAbstractExtractionStrategy(),
-            "crossref-authors": CrossrefAuthorExtractionStrategy(),
-        }
-
+    
     def get_attributes(self, entry_text, attributes):
         """
         Extracts specified attributes from the article entry and returns them in a dictionary.
@@ -63,43 +45,8 @@ class Utilities:
         """
         attribute_results = {}
         for attribute in attributes:
-            # Check if the requested attribute is defined in the attribute patterns dictionary
-            if attribute in self.attribute_patterns:
-                attribute_results[attribute] = self.attribute_patterns[
-                    attribute
-                ].extract_attribute(entry_text)
-            # if attribute in self.attribute_patterns:
-            #     if attribute == "author":
-            #         attribute_results[attribute] = self.attribute_patterns[
-            #             attribute
-            #         ].extract_attribute(entry_text)
-
-            #     elif attribute == "department":
-            #         attribute_results[attribute] = self.attribute_patterns[
-            #             attribute
-            #         ].extract_attribute(entry_text)
-
-            #     elif attribute == "wc_pattern":
-            #         attribute_results[attribute] = self.attribute_patterns[
-            #             attribute
-            #         ].extract_attribute(entry_text)
-
-            #     elif attribute == "title":
-            #         attribute_results[attribute] = self.attribute_patterns[
-            #             attribute
-            #         ].extract_attribute(entry_text)
-            #     elif attribute == "crossref-title":
-            #         attribute_results[attribute] = self.attribute_patterns[
-            #             attribute
-            #         ].extract_attribute(entry_text)
-            #     else:
-            #         # Extract the attribute and add it to results dictionary
-            #         attribute_results[attribute] = self.attribute_patterns[
-            #             attribute
-            #         ].extract_attribute(attribute, entry_text)
-            else:
-                # Raise an error if an unknown attribute is requested
-                raise ValueError(f"Unknown attribute: '{attribute}' requested.")
+            extraction_strategy = StrategyFactory.get_strategy(attribute)
+            attribute_results[attribute] = extraction_strategy.extract_attribute(entry_text)
         return attribute_results
 
     def get_tc_list(self, entry_text):
@@ -235,9 +182,9 @@ class Utilities:
 
         for index, split in enumerate(splits, start=1):
             # Extract attributes to form filename
-            attributes = self.get_attributes(split, ["author", "title"])
-            author = attributes["author"][1] if attributes["author"][0] else "Unknown"
-            title = attributes["title"][1] if attributes["title"][0] else "Unkown"
+            attributes = self.get_attributes(split, [AttributeTypes.AUTHOR, AttributeTypes.TITLE])
+            author = attributes[AttributeTypes.AUTHOR][1] if attributes[AttributeTypes.AUTHOR][0] else "Unknown"
+            title = attributes[AttributeTypes.TITLE][1] if attributes[AttributeTypes.TITLE][0] else "Unkown"
 
             # Construct file name
             file_name = self.get_file_name(author, title)
