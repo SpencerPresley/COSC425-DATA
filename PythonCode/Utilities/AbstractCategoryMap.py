@@ -9,8 +9,7 @@ sys.path.append(project_root)
 from GeneralUtilities.file_ops.file_ops import FileOps
 from typing import Tuple
 from utilities import Utilities
-
-
+from enums import AttributeTypes
 
 class AbstractCategoryMap:
     def __init__(self, Utilities_obj: object, *, dir_path: str):
@@ -32,25 +31,38 @@ class AbstractCategoryMap:
             file_content = self.file_ops.read_file(file_path)
 
             attributes = self.utilities.get_attributes(
-                file_content, ["title", "abstract", "wc_pattern", "author", "department"]
+                file_content,
+                [
+                    AttributeTypes.TITLE,
+                    AttributeTypes.ABSTRACT,
+                    AttributeTypes.WC_PATTERN,
+                    AttributeTypes.AUTHOR,
+                    AttributeTypes.DEPARTMENT,
+                ]
             )
 
-            title, abstract, categories, authors, department = self.extract_abstract_and_categories(
-                attributes=attributes
-            )
+            # title, abstract, categories, authors, department = self.extract_abstract_and_categories(
+            #     attributes=attributes
+            # )
+            title = attributes[AttributeTypes.TITLE][1] if attributes[AttributeTypes.TITLE][0] else None
+            abstract = attributes[AttributeTypes.ABSTRACT][1] if attributes[AttributeTypes.ABSTRACT][0] else None
+            categories = attributes[AttributeTypes.WC_PATTERN][1] if attributes[AttributeTypes.WC_PATTERN][0] else []
+            authors = attributes[AttributeTypes.AUTHOR][1] if attributes[AttributeTypes.AUTHOR][0] else []
+            department = attributes[AttributeTypes.DEPARTMENT][1] if attributes[AttributeTypes.DEPARTMENT][0] else []
+            
             if abstract:
                 results[title] = {"abstract": abstract, "categories": categories, "authors": authors, "department": department}
 
         return results
 
-    @staticmethod
-    def extract_abstract_and_categories(*, attributes: Tuple[bool, str]):
-        title = attributes["title"][1] if ["title"][0] else None
-        abstract = attributes["abstract"][1] if ["abstract"][0] else None
-        categories = attributes["wc_pattern"][1] if ["wc_pattern"] else []
-        authors = attributes["author"][1] if ["author"] else []
-        department = attributes["department"][1] if ["department"] else []
-        return title, abstract, categories, authors, department
+    # @staticmethod
+    # def extract_abstract_and_categories(*, attributes: Tuple[bool, str]):
+    #     title = attributes["title"][1] if ["title"][0] else None
+    #     abstract = attributes["abstract"][1] if ["abstract"][0] else None
+    #     categories = attributes["wc_pattern"][1] if ["wc_pattern"] else []
+    #     authors = attributes["author"][1] if ["author"] else []
+    #     department = attributes["department"][1] if ["department"] else []
+    #     return title, abstract, categories, authors, department
     
     def get_results(self):
         return self.results

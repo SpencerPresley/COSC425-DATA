@@ -4,13 +4,13 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from utilities import Utilities  
 import json
 import ijson
-
+from enums import AttributeTypes
 def get_crossref_titles(file_path: str, output_file_path: str, utils: Utilities):
     items = ijson.items(open(file_path, 'r'), 'item')
     title_dict = {}
     titles = []
     for item in items:
-        title_list = utils.get_attributes(item, ['crossref-title'])['crossref-title'][1]
+        title_list = utils.get_attributes(item, [AttributeTypes.CROSSREF_TITLE])[AttributeTypes.CROSSREF_TITLE][1]
         # Ensure title_list is a list
         if not isinstance(title_list, list):
             title_list = [title_list]

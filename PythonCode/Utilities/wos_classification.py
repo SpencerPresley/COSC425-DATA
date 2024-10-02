@@ -12,6 +12,7 @@ import re
 import sys
 
 sys.path.append("/Users/spencerpresley/COSC425-MAIN/backend/PythonCode")
+sys.path.append("/Users/spencerpresley/COSC425-MAIN/backend/GeneralUtilities")
 from _AbstractCategoryMap import AbstractCategoryMap
 
 
@@ -140,6 +141,7 @@ class WosClassification:
         Serializes category data to JSON and saves it to a file.
         """
         self.addUrl()
+        
         # Prepare category data for serialization using to_dict method from CategoryInfo class from My_Data_Classes.py
         categories_serializable = {
             category: category_info.to_dict()
@@ -149,6 +151,7 @@ class WosClassification:
         for category, category_info in categories_serializable.items():
             del category_info["tc_list"]
 
+        
         # Serialize to JSON and save to a file
         with open(output_path, "w") as json_file:
             json.dump(categories_serializable, json_file, indent=4)
@@ -194,7 +197,7 @@ class WosClassification:
 if __name__ == "__main__":
     # Define path to the directory containing the WoS txt files you want to process
     # directory_path = "~/Desktop/425testing/ResearchNotes/Rommel-Center-Research/PythonCode/Utilities/split_files"
-    directory_path = "./split_files_2"
+    directory_path = "./split_files"
     directory_path = os.path.expanduser(directory_path)
 
     # Instantiate the orchestrator class

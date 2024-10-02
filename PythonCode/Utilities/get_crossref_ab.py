@@ -4,12 +4,13 @@ import sys
 import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from utilities import Utilities
+from enums import AttributeTypes
 
 def get_crossref_ab(file_path: str, output_file_path: str, utils: Utilities):
     items = ijson.items(open(file_path, 'r'), 'item')
     abstracts = []
     for item in items:
-        abstract = utils.get_attributes(item, ['crossref-abstract'])['crossref-abstract'][1]
+        abstract = utils.get_attributes(item, [AttributeTypes.CROSSREF_ABSTRACT])[AttributeTypes.CROSSREF_ABSTRACT][1]
         if abstract != None and abstract != "":
             abstracts.append(abstract)
     

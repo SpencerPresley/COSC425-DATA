@@ -3,10 +3,15 @@ import warnings
 from html import unescape
 from bs4 import BeautifulSoup
 import json
+from abc import ABC, abstractmethod
 
-class AttributeExtractionStrategy:
+from strategy_factory import StrategyFactory
+from enums import AttributeTypes
+
+class AttributeExtractionStrategy(ABC):
+    @abstractmethod
     def extract_attribute(self, entry_text):
-        pass
+        raise NotImplementedError("This method must be implemented in a subclass")
 
     def extract_c1_content(self, entry_text):
         """
@@ -130,6 +135,7 @@ class AttributeExtractionStrategy:
             affils.append(affil["name"])
         return affils
 
+@StrategyFactory.register_strategy(AttributeTypes.AUTHOR)
 class AuthorExtractionStrategy(AttributeExtractionStrategy):
     def __init__(self):
         self.author_pattern = re.compile(r"AF\s(.+?)(?=\nTI)", re.DOTALL)
@@ -152,7 +158,7 @@ class AuthorExtractionStrategy(AttributeExtractionStrategy):
 
         return result
 
-
+@StrategyFactory.register_strategy(AttributeTypes.DEPARTMENT)
 class DepartmentExtractionStrategy(AttributeExtractionStrategy):
     def __init__(self):
         self.dept_pattern = re.compile(r"Dept (.*?)(,|$)")
@@ -162,7 +168,7 @@ class DepartmentExtractionStrategy(AttributeExtractionStrategy):
         departments = self.extract_dept_from_c1(entry_text)
         return (True, departments) if departments else (False, None)
 
-
+@StrategyFactory.register_strategy(AttributeTypes.WC_PATTERN)
 class WosCategoryExtractionStrategy(AttributeExtractionStrategy):
     def __init__(self):
         self.wc_pattern = re.compile(r"WC\s+(.+?)(?=\nWE)", re.DOTALL)
@@ -195,7 +201,7 @@ class WosCategoryExtractionStrategy(AttributeExtractionStrategy):
         """
         return [category.strip() for category in category_string.split(";")]
 
-
+@StrategyFactory.register_strategy(AttributeTypes.TITLE)
 class TitleExtractionStrategy(AttributeExtractionStrategy):
     def __init__(self):
         self.title_pattern = re.compile(r"TI\s(.+?)(?=\nSO)", re.DOTALL)
@@ -229,52 +235,42 @@ class TitleExtractionStrategy(AttributeExtractionStrategy):
                 "Attribute: 'Title' was not found in the entry", RuntimeWarning
             )
             return False, None
-
-
-class DefaultExtractionStrategy(AttributeExtractionStrategy):
+    
+@StrategyFactory.register_strategy(AttributeTypes.ABSTRACT)
+class AbstractExtractionStrategy(AttributeExtractionStrategy):
     def __init__(self):
-        self.patterns = {
-            "title": re.compile(r"TI\s(.+?)(?=\nSO)", re.DOTALL),
-            "abstract": re.compile(r"AB\s(.+?)(?=\nC1)", re.DOTALL),
-            "end_record": re.compile(r"DA \d{4}-\d{2}-\d{2}\nER\n?", re.DOTALL),
-        }
-
-        self.missing_abstracts_file = "missing_abstracts.txt"  # File to store entries where abstract weren't found, to be used for debugging/ verification
-
-    def extract_attribute(self, attribute, entry_text):
-        """
-        Extracts a single attribute from the entry text based on predefined patterns.
-
-        Parameters:
-            attribute (str): The name of the attribute to extract.
-            entry_text (str): The text of the entry from which to extract the attribute.
-
-        Returns:
-            tuple: A tuple containing a boolean indicating whether the extraction was successful,
-            and the extracted attribute value or None.
-        """
-        if attribute not in self.patterns:
-            warnings.warn(
-                f"Attribute: '{attribute}' pattern not defined", RuntimeWarning
-            )
-            return False, None
-
-        pattern = self.patterns[attribute]
-        match = pattern.search(entry_text)
+        self.abstract_pattern = re.compile(r"AB\s(.+?)(?=\nC1)", re.DOTALL)
+        self.missing_abstracts_file = "missing_abstracts.txt"
+    
+    def extract_attribute(self, entry_text):
+        match = self.abstract_pattern.search(entry_text)
         if not match:
-            # Write the entry to a file for missing abstracts
             with open(self.missing_abstracts_file, "a") as file:
-                file.write(f"Missing '{attribute}' in entry:\n{entry_text}\n\n")
-            # Print a notification to the console
+                file.write(f"Missing 'Abstract' in entry:\n{entry_text}\n\n")
             print(
-                f"An entry missing '{attribute}' has been written to {self.missing_abstracts_file}."
+                f"An entry missing 'Abstract' has been written to {self.missing_abstracts_file}."
             )
             warnings.warn(
-                f"Attribute: '{attribute}' was not found in the entry", RuntimeWarning
+                "Attribute: 'Abstract' was not found in the entry", RuntimeWarning
             )
             return False, None
         return True, match.group(1).strip()
 
+@StrategyFactory.register_strategy(AttributeTypes.END_RECORD)
+def EndRecordExtractionStrategy(AttributeExtractionStrategy):
+    def __init__(self):
+        self.end_record_pattern = re.compile(r"DA \d{4}-\d{2}-\d{2}\nER\n?", re.DOTALL)
+        
+    def extract_attribute(self, entry_text):
+        match = self.end_record_pattern.search(entry_text)
+        if not match:
+            warnings.warn(
+                "Attribute: 'End_Record' was not found in the entry", RuntimeWarning
+            )
+            return False, None
+        return True, match.group(0).strip()
+
+@StrategyFactory.register_strategy(AttributeTypes.CROSSREF_TITLE)
 class CrossrefTitleExtractionStrategy(AttributeExtractionStrategy):
     def __init__(self):
         self.title_key = "title"
@@ -291,7 +287,7 @@ class CrossrefTitleExtractionStrategy(AttributeExtractionStrategy):
         cleaned_titles = [self.clean_title(title) for title in titles]
         return (True, cleaned_titles) if cleaned_titles else (False, None)
         
-
+@StrategyFactory.register_strategy(AttributeTypes.CROSSREF_ABSTRACT)
 class CrossrefAbstractExtractionStrategy(AttributeExtractionStrategy):
     def __init__(self):
         self.abstract_key = "abstract"
@@ -309,7 +305,7 @@ class CrossrefAbstractExtractionStrategy(AttributeExtractionStrategy):
         )
         return (False, None)
         
-
+@StrategyFactory.register_strategy(AttributeTypes.CROSSREF_AUTHORS)
 class CrossrefAuthorExtractionStrategy(AttributeExtractionStrategy):
     def __init__(self):
         self.author_key = "author"
@@ -374,7 +370,7 @@ class CrossrefAuthorExtractionStrategy(AttributeExtractionStrategy):
         for item in author_sequence_dict["additional"]:
             authors.append(item["author_name"])
         return authors
-
+    
 
     def extract_attribute(self, crossref_json):
         author_items = self.get_author_obj(crossref_json=crossref_json)
