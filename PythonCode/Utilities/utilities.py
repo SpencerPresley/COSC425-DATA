@@ -3,16 +3,8 @@ import os
 import warnings
 import time
 import json
-# from AttributeExtractionStrategies import (
-#     AuthorExtractionStrategy,
-#     DefaultExtractionStrategy,
-#     WosCategoryExtractionStrategy,
-#     TitleExtractionStrategy,
-#     DepartmentExtractionStrategy,
-#     CrossrefTitleExtractionStrategy,
-#     CrossrefAbstractExtractionStrategy,
-#     CrossrefAuthorExtractionStrategy,
-# )
+
+#! THIS HAS TO BE IMPORTED OR IT WILL NOT SEE THE STRATEGY FACTORY AND THUS YOU WILL GET AN ERROR
 import AttributeExtractionStrategies
 from strategy_factory import StrategyFactory
 from enums import AttributeTypes
