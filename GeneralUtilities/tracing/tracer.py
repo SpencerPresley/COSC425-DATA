@@ -3,7 +3,9 @@ import time
 import os
 import traceback
 from datetime import datetime
+import sys
 
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 def trace(
     log_file="/mnt/linuxlab/home/spresley1/COSC425/RecentAsOf_3-8/Rommel-Center-Research/GeneralUtilities/tracing/trace_logs/trace_logs.txt",

@@ -1,6 +1,8 @@
 from PythonCode.Utilities.My_Data_Classes import CategoryInfo
 import pickle
-
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 class PickleDictLoader:
     def __init__(self, pickle_path: str):

@@ -26,10 +26,11 @@ class DatabaseSetup:
         collection = db["Categories"]
         collection.insert_many(category_data)
         print("Data inserted successfully")
-        client.close()
+        client.close
 
-    def update_category_data(self, )
-
+    def update_category_data(self):
+        pass
+        
 
 if __name__ == "__main__":
     with open("processed_category_data.json", "r") as file:

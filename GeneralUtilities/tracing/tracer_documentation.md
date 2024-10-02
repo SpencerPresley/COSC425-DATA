@@ -12,7 +12,7 @@ def my_function(param1, param2):
 ```
 
 ### Parameters
-
+****
 - **log_file** (`str`, optional): Path to the log file. Defaults to `None`, which means logging will be directed to the standard output (stdout).
 - **level** (`str`, optional): Specifies the logging level. Supports "ERROR", "INFO", and "DEBUG". Defaults to "INFO". Higher levels include more detailed logging.
 

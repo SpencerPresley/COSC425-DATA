@@ -1,7 +1,8 @@
 import logging
 import os
+import sys
 
-
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 def configure_logger(
     name, log_file=None, level=logging.DEBUG, enable_console_logging=True
 ):
