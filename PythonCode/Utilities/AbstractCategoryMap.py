@@ -17,7 +17,7 @@ class AbstractCategoryMap:
         self.dir_path = dir_path
         self.file_ops = FileOps(
             output_dir="."
-        )
+        ) 
         self.results = self.map_abstract_categories(dir_path=self.dir_path)
         self.file_ops.write_json("for_jensen.json", self.results)
 
@@ -41,9 +41,6 @@ class AbstractCategoryMap:
                 ]
             )
 
-            # title, abstract, categories, authors, department = self.extract_abstract_and_categories(
-            #     attributes=attributes
-            # )
             title = attributes[AttributeTypes.TITLE][1] if attributes[AttributeTypes.TITLE][0] else None
             abstract = attributes[AttributeTypes.ABSTRACT][1] if attributes[AttributeTypes.ABSTRACT][0] else None
             categories = attributes[AttributeTypes.WC_PATTERN][1] if attributes[AttributeTypes.WC_PATTERN][0] else []
@@ -54,15 +51,6 @@ class AbstractCategoryMap:
                 results[title] = {"abstract": abstract, "categories": categories, "authors": authors, "department": department}
 
         return results
-
-    # @staticmethod
-    # def extract_abstract_and_categories(*, attributes: Tuple[bool, str]):
-    #     title = attributes["title"][1] if ["title"][0] else None
-    #     abstract = attributes["abstract"][1] if ["abstract"][0] else None
-    #     categories = attributes["wc_pattern"][1] if ["wc_pattern"] else []
-    #     authors = attributes["author"][1] if ["author"] else []
-    #     department = attributes["department"][1] if ["department"] else []
-    #     return title, abstract, categories, authors, department
     
     def get_results(self):
         return self.results
