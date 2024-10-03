@@ -65,15 +65,15 @@ class WosClassification:
         self.serialize_and_save_article_stats_data("test_processed_article_stats_data.json")
 
         # save instances of the category counts and faculty stats dictionaries
-        self.file_handler.save_dict("category_dict.pkl", self.get_category_counts())
+        # self.file_handler.save_dict("category_dict.pkl", self.get_category_counts())
 
-        self.file_handler.save_dict(
-            "faculty_stats_dict.pkl", self.category_processor.faculty_stats
-        )
+        # self.file_handler.save_dict(
+        #     "faculty_stats_dict.pkl", self.category_processor.faculty_stats
+        # )
 
-        self.file_handler.save_dict(
-            "article_stats_dict.pkl", self.category_processor.article_stats
-        )
+        # self.file_handler.save_dict(
+        #     "article_stats_dict.pkl", self.category_processor.article_stats
+        # )
 
         AbstractCategoryMap(self.utils, dir_path="./split_files")
 
