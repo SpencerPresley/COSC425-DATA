@@ -114,6 +114,3 @@ class ArticleStats:
             if isinstance(value, Set):
                 data_dict[key] = list(value)
         return data_dict
-
-
-# article title: citation count

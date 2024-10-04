@@ -1,13 +1,13 @@
 import re
 import os
-import warnings
-import time
 import json
+from warning_manager import WarningManager
 
 #! THIS HAS TO BE IMPORTED OR IT WILL NOT SEE THE STRATEGY FACTORY AND THUS YOU WILL GET AN ERROR
 import AttributeExtractionStrategies
 from strategy_factory import StrategyFactory
 from enums import AttributeTypes
+
 # TODO: make documentation on the class and it's methods
 
 """
@@ -17,7 +17,13 @@ This script contains a class that has various utility methods that will be used 
 
 class Utilities:
     MAX_FILENAME_LENGTH = 255
-    
+
+    def __init__(
+        self, *, strategy_factory: StrategyFactory, warning_manager: WarningManager
+    ):
+        self.strategy_factory = strategy_factory
+        self.warning_manager = warning_manager
+
     def get_attributes(self, entry_text, attributes):
         """
         Extracts specified attributes from the article entry and returns them in a dictionary.
@@ -37,8 +43,12 @@ class Utilities:
         """
         attribute_results = {}
         for attribute in attributes:
-            extraction_strategy = StrategyFactory.get_strategy(attribute)
-            attribute_results[attribute] = extraction_strategy.extract_attribute(entry_text)
+            extraction_strategy = StrategyFactory.get_strategy(
+                attribute, self.warning_manager
+            )
+            attribute_results[attribute] = extraction_strategy.extract_attribute(
+                entry_text
+            )
         return attribute_results
 
     def get_tc_list(self, entry_text):
@@ -174,9 +184,19 @@ class Utilities:
 
         for index, split in enumerate(splits, start=1):
             # Extract attributes to form filename
-            attributes = self.get_attributes(split, [AttributeTypes.AUTHOR, AttributeTypes.TITLE])
-            author = attributes[AttributeTypes.AUTHOR][1] if attributes[AttributeTypes.AUTHOR][0] else "Unknown"
-            title = attributes[AttributeTypes.TITLE][1] if attributes[AttributeTypes.TITLE][0] else "Unkown"
+            attributes = self.get_attributes(
+                split, [AttributeTypes.AUTHOR, AttributeTypes.TITLE]
+            )
+            author = (
+                attributes[AttributeTypes.AUTHOR][1]
+                if attributes[AttributeTypes.AUTHOR][0]
+                else "Unknown"
+            )
+            title = (
+                attributes[AttributeTypes.TITLE][1]
+                if attributes[AttributeTypes.TITLE][0]
+                else "Unkown"
+            )
 
             # Construct file name
             file_name = self.get_file_name(author, title)
@@ -196,6 +216,7 @@ class Utilities:
                 # Track the created file
                 file_paths[index] = path
             else:
-                print(f"File {path} already exists. Skipping.")
-
+                self.warning_manager.log_warning(
+                    "File Creation", f"File {path} already exists. Skipping."
+                )
         return file_paths

@@ -1,5 +1,6 @@
 from enum import Enum
 
+
 class AttributeTypes(Enum):
     AUTHOR = "author"
     TITLE = "title"

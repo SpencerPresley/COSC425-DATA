@@ -1,5 +1,4 @@
-from utilities import Utilities
-import warnings
+from utilities import Utilities  # for type hinting
 from My_Data_Classes import CategoryInfo
 from generate_aux_stats import FacultyStats, FacultyInfo, ArticleStats
 
@@ -8,10 +7,18 @@ from generate_aux_stats import FacultyStats, FacultyInfo, ArticleStats
 # via dependency injection.
 from faculty_department_manager import FacultyDepartmentManager
 from enums import AttributeTypes
+from warning_manager import WarningManager  # for type hinting
+
 
 class CategoryProcessor:
-    def __init__(self, utils, faculty_department_manager):
+    def __init__(
+        self,
+        utils: Utilities,
+        faculty_department_manager: FacultyDepartmentManager,
+        warning_manager: WarningManager,
+    ):
         self.utils: Utilities = utils
+        self.warning_manager: WarningManager = warning_manager
         self.faculty_department_manager: FacultyDepartmentManager = (
             faculty_department_manager
         )
@@ -28,8 +35,6 @@ class CategoryProcessor:
             if line.startswith("WC"):
                 self.update_category_stats(file_path, file_content, lines)
 
-        # current json object = the object from the db that was passed to this function
-
     def update_category_stats(self, file_path, file_content, lines):
         # get attributes from the file
         attribute_results = self.utils.get_attributes(
@@ -39,7 +44,7 @@ class CategoryProcessor:
                 AttributeTypes.DEPARTMENT,
                 AttributeTypes.WC_PATTERN,
                 AttributeTypes.TITLE,
-            ]
+            ],
         )
         categories = self.get_categories(file_path, attribute_results)
         faculty_members = self.get_faculty_members(attribute_results)
@@ -138,7 +143,11 @@ class CategoryProcessor:
             self.faculty_department_manager.update_title_set(categories, title)
 
     def get_title(self, attribute_results):
-        title = attribute_results[AttributeTypes.TITLE][1] if attribute_results[AttributeTypes.TITLE][0] else None
+        title = (
+            attribute_results[AttributeTypes.TITLE][1]
+            if attribute_results[AttributeTypes.TITLE][0]
+            else None
+        )
         return title
 
     def update_article_set(self):
@@ -161,19 +170,6 @@ class CategoryProcessor:
         )
 
         return department_members
-
-    # def get_attributes(self, file_content):
-    #     attributes_to_retrieve = [
-    #         AttributeTypes.AUTHOR,
-    #         AttributeTypes.DEPARTMENT,
-    #         AttributeTypes.WC_PATTERN,
-    #         AttributeTypes.TITLE,
-    #     ]
-    #     attribute_results = self.utils.get_attributes(
-    #         entry_text=file_content, attributes=attributes_to_retrieve
-    #     )
-
-    #     return attribute_results
 
     def get_categories(self, file_path, attribute_results):
         categories = attribute_results[AttributeTypes.WC_PATTERN][1]
@@ -234,8 +230,9 @@ class CategoryProcessor:
             if category in self.category_counts:
                 self.category_counts[category].files.add(file_name)
             else:
-                warnings.warn(
-                    f"Warning: Category {category} not found in category_counts. Continuing to next category."
+                self.warning_manager.log_warning(
+                    "Category Processing",
+                    f"Category {category} not found in category_counts. Continuing to next category.",
                 )
 
     @staticmethod

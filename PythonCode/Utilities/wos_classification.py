@@ -8,8 +8,9 @@ from faculty_set_postprocessor import FacultyPostprocessor, NameVariation
 import os
 import json
 import re
-
 import sys
+from strategy_factory import StrategyFactory
+from warning_manager import WarningManager
 
 sys.path.append("/Users/spencerpresley/COSC425-MAIN/backend/PythonCode")
 sys.path.append("/Users/spencerpresley/COSC425-MAIN/backend/GeneralUtilities")
@@ -17,14 +18,25 @@ from _AbstractCategoryMap import AbstractCategoryMap
 
 
 class WosClassification:
-    def __init__(self, *, directory_path):
+    def __init__(
+        self,
+        *,
+        directory_path,
+        strategy_factory: StrategyFactory,
+        warning_manager: WarningManager,
+    ):
         """Handles entire orchestration of pipeline. Just create object and pass in directory_path as keyword argument."""
         self.directory_path = directory_path
-        self.utils = Utilities()
-        # self.faculty_postprocessor = FacultyPostprocessor()
+        self.strategy_factory = strategy_factory
+        self.warning_manager = warning_manager
+        self.utils = Utilities(
+            strategy_factory=self.strategy_factory, warning_manager=self.warning_manager
+        )
 
         # Initialize the CategoryProcessor and FacultyDepartmentManager with dependencies
-        self.category_processor = CategoryProcessor(self.utils, None)
+        self.category_processor = CategoryProcessor(
+            self.utils, None, self.warning_manager
+        )
 
         # Intialize FacultyDepartmentManager
         self.faculty_department_manager = FacultyDepartmentManager(
@@ -39,10 +51,8 @@ class WosClassification:
         self.file_handler = FileHandler(self.utils)
 
         self.process_directory(
-            directory_path=self.directory_path,
-            category_processor=self.category_processor,
+            directory_path=directory_path, category_processor=self.category_processor
         )
-
         # post-processor object
         faculty_postprocessor = FacultyPostprocessor()
 
@@ -61,21 +71,18 @@ class WosClassification:
 
         # Serialize the processed data and save it
         self.serialize_and_save_data("test_processed_category_data.json")
-        self.serialize_and_save_faculty_stats_data("test_processed_faculty_stats_data.json")
-        self.serialize_and_save_article_stats_data("test_processed_article_stats_data.json")
+        self.serialize_and_save_faculty_stats_data(
+            "test_processed_faculty_stats_data.json"
+        )
+        self.serialize_and_save_article_stats_data(
+            "test_processed_article_stats_data.json"
+        )
 
-        # save instances of the category counts and faculty stats dictionaries
-        # self.file_handler.save_dict("category_dict.pkl", self.get_category_counts())
-
-        # self.file_handler.save_dict(
-        #     "faculty_stats_dict.pkl", self.category_processor.faculty_stats
-        # )
-
-        # self.file_handler.save_dict(
-        #     "article_stats_dict.pkl", self.category_processor.article_stats
-        # )
-
-        AbstractCategoryMap(self.utils, dir_path="./split_files")
+        AbstractCategoryMap(
+            utilities_obj=self.utils,
+            warning_manager=self.warning_manager,
+            dir_path=self.directory_path,
+        )
 
     def process_directory(self, *, directory_path, category_processor):
         """
@@ -84,7 +91,9 @@ class WosClassification:
         """
         # Use FileHandler to traverse the directory and process each file
         self.file_handler.construct_categories(
-            directory_path=directory_path, category_processor=category_processor
+            directory_path=directory_path,
+            category_processor=category_processor,
+            warning_manager=self.warning_manager,
         )
 
     def get_category_counts(self):
@@ -141,7 +150,7 @@ class WosClassification:
         Serializes category data to JSON and saves it to a file.
         """
         self.addUrl()
-        
+
         # Prepare category data for serialization using to_dict method from CategoryInfo class from My_Data_Classes.py
         categories_serializable = {
             category: category_info.to_dict()
@@ -151,7 +160,6 @@ class WosClassification:
         for category, category_info in categories_serializable.items():
             del category_info["tc_list"]
 
-        
         # Serialize to JSON and save to a file
         with open(output_path, "w") as json_file:
             json.dump(categories_serializable, json_file, indent=4)
@@ -174,7 +182,10 @@ class WosClassification:
         with open(output_path, "w") as json_file:
             json.dump(faculty_stats_serializable, json_file, indent=4)
 
-        print(f"Faculty Stat Data serialized and saved to {output_path}")
+        self.warning_manager.log_warning(
+            "Data Serialization",
+            f"Faculty Stat Data serialized and saved to {output_path}",
+        )
 
     def serialize_and_save_article_stats_data(
         self, output_path="article_stats_data.json"
@@ -191,15 +202,24 @@ class WosClassification:
         with open(output_path, "w") as json_file:
             json.dump(article_stats_serializable, json_file, indent=4)
 
-        print(f"Article Stat Data serialized and saved to {output_path}")
+        self.warning_manager.log_warning(
+            "Data Serialization",
+            f"Article Stat Data serialized and saved to {output_path}",
+        )
 
 
 if __name__ == "__main__":
     # Define path to the directory containing the WoS txt files you want to process
-    # directory_path = "~/Desktop/425testing/ResearchNotes/Rommel-Center-Research/PythonCode/Utilities/split_files"
     directory_path = "./split_files"
     directory_path = os.path.expanduser(directory_path)
 
+    strategy_factory = StrategyFactory()
+    warning_manager = WarningManager()
+
     # Instantiate the orchestrator class
-    wos_classifiction = WosClassification(directory_path=directory_path)
-    print("Processing complete.")
+    wos_classifiction = WosClassification(
+        directory_path=directory_path,
+        strategy_factory=strategy_factory,
+        warning_manager=warning_manager,
+    )
+    warning_manager.log_warning("Processing", "Processing complete.")
