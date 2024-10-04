@@ -160,8 +160,20 @@ class Utilities:
         # re-add delimiter for completeness if needed
         splits = [split + "DA 2024-02-08\nER" for split in splits if split.strip()]
         return splits
-
-    def make_files(self, path_to_file, output_dir):
+    
+    def crossref_file_splitter(self, *, path_to_file, output_dir):
+        with open(path_to_file, 'r') as f:
+            data = json.load(f)
+        crossref_filename_suffix = "_crossref_item"
+        files = []
+        for i, item in enumerate(data):
+            file_name = f"{i}{crossref_filename_suffix}"
+            full_file_path = os.path.join(output_dir, file_name)
+            with open(full_file_path, 'w') as f:
+                json.dump(item, f, indent=4)
+            files.append(full_file_path)
+    
+    def make_files(self, *, path_to_file: str, output_dir: str, crossref_bool: bool = False):
         """
         Splits a document into individual entries and creates a separate file for each entry in the specified output directory.
 
@@ -177,6 +189,9 @@ class Utilities:
         ensures the output directory exists, and writes each entry's content to a new file in the output directory.
         Then returns the file_paths dictionary to make referencing any specific document later easier
         """
+        if crossref_bool:
+            return self.crossref_file_splitter(path_to_file=path_to_file, output_dir=output_dir)
+
         splits = self.splitter(path_to_file)
 
         # dictionary to keep track of created files and their paths

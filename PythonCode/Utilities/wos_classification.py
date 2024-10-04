@@ -21,12 +21,13 @@ class WosClassification:
     def __init__(
         self,
         *,
-        directory_path,
+        path,
         strategy_factory: StrategyFactory,
         warning_manager: WarningManager,
+        crossref_run: bool = False
     ):
         """Handles entire orchestration of pipeline. Just create object and pass in directory_path as keyword argument."""
-        self.directory_path = directory_path
+        self.path = path
         self.strategy_factory = strategy_factory
         self.warning_manager = warning_manager
         self.utils = Utilities(
@@ -37,6 +38,7 @@ class WosClassification:
         self.category_processor = CategoryProcessor(
             self.utils, None, self.warning_manager
         )
+        
         # Intialize FacultyDepartmentManager
         self.faculty_department_manager = FacultyDepartmentManager(
             self.category_processor
@@ -50,8 +52,9 @@ class WosClassification:
         self.file_handler = FileHandler(self.utils)
 
         self.process_directory(
-            directory_path=directory_path, category_processor=self.category_processor
+            directory_path=path, category_processor=self.category_processor, crossref_bool=crossref_run
         )
+
         # post-processor object
         faculty_postprocessor = FacultyPostprocessor()
 
@@ -80,19 +83,21 @@ class WosClassification:
         AbstractCategoryMap(
             utilities_obj=self.utils,
             warning_manager=self.warning_manager,
-            dir_path=self.directory_path,
+            dir_path=self.path,
+            crossref_bool=crossref_run
         )
 
-    def process_directory(self, *, directory_path, category_processor):
+    def process_directory(self, *, path, category_processor, crossref_bool):
         """
         Orchestrates the process of reading files from a directory,
         extracting categories, and updating faculty and department data.
         """
         # Use FileHandler to traverse the directory and process each file
         self.file_handler.construct_categories(
-            directory_path=directory_path,
+            directory_path=path,
             category_processor=category_processor,
             warning_manager=self.warning_manager,
+            crossref_bool=crossref_bool
         )
 
     def get_category_counts(self):
@@ -209,16 +214,17 @@ class WosClassification:
 
 if __name__ == "__main__":
     # Define path to the directory containing the WoS txt files you want to process
-    directory_path = "./split_files"
-    directory_path = os.path.expanduser(directory_path)
+    # directory_path = "./split_files"
+    # directory_path = os.path.expanduser(directory_path)
 
     strategy_factory = StrategyFactory()
     warning_manager = WarningManager()
 
     # Instantiate the orchestrator class
     wos_classifiction = WosClassification(
-        directory_path=directory_path,
+        directory_path=path,
         strategy_factory=strategy_factory,
         warning_manager=warning_manager,
+        crossref_run=True
     )
     warning_manager.log_warning("Processing", "Processing complete.")

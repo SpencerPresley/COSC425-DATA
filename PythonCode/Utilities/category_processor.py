@@ -8,6 +8,7 @@ from generate_aux_stats import FacultyStats, FacultyInfo, ArticleStats
 from faculty_department_manager import FacultyDepartmentManager
 from enums import AttributeTypes
 from warning_manager import WarningManager  # for type hinting
+import json
 
 
 class CategoryProcessor:
@@ -28,24 +29,57 @@ class CategoryProcessor:
         self.faculty_stats: dict[str, FacultyStats] = {}
         self.article_stats: dict[str, ArticleStats] = {}
 
-    def category_finder(self, current_file, file_path):
+    def category_finder(self, current_file, file_path, crossref_bool):
+        if crossref_bool:
+            self.run_category_generation_engine(current_file, file_path)
+        
         file_content = current_file.read()
         lines = file_content.splitlines()
         for line in lines:
             if line.startswith("WC"):
                 self.update_category_stats(file_path, file_content, lines)
 
-    def update_category_stats(self, file_path, file_content, lines):
+    def run_category_generation_engine(self, current_file, file_path):
+        categories = [
+            "math",
+            "science",
+            "porn",
+            "hardcore porn",
+            "extreme porn that makes you question what you're doing with your life",
+            "uhhhhhhhhh not comfortable talking bout this one tho"
+        ]
+        crossref_items = None
+        with open(current_file, 'r') as f:
+            crossref_items: list[dict] = json.load(f)
+        for i, item in enumerate(crossref_items):
+            item['categories'] = categories[i % len(categories)]
+        self.update_category_stats(file_path=file_path, data=crossref_items, crossref_bool=True)
+
+    def update_category_stats(self, file_path, data, lines = None, crossref_bool=False):
         # get attributes from the file
-        attribute_results = self.utils.get_attributes(
-            file_content,
-            [
-                AttributeTypes.AUTHOR,
-                AttributeTypes.DEPARTMENT,
-                AttributeTypes.WC_PATTERN,
-                AttributeTypes.TITLE,
-            ],
-        )
+        attribute_results = None
+        categories = None
+        if crossref_bool:
+            categories = data['categories']
+            attribute_results = self.utils.get_attributes(
+                data,
+                [
+                    AttributeTypes.CROSSREF_AUTHORS,
+                    AttributeTypes.CROSSREF_DEPARTMENT,
+                    AttributeTypes.CROSSREF_TITLE
+                ]
+            )
+        else: 
+            attribute_results = self.utils.get_attributes(
+                data,
+                [
+                    AttributeTypes.AUTHOR,
+                    AttributeTypes.DEPARTMENT,
+                    AttributeTypes.WC_PATTERN,
+                    AttributeTypes.TITLE,
+                ],
+            )
+
         categories = self.get_categories(file_path, attribute_results)
         faculty_members = self.get_faculty_members(attribute_results)
         department_members = self.get_department_members(attribute_results)
