@@ -4,6 +4,7 @@ import sys
 from typing import Dict, Set, List
 from dataclasses import dataclass, field, asdict
 
+
 @dataclass
 class CategoryInfo:
     url: str = ""
@@ -27,8 +28,17 @@ class CategoryInfo:
                 data_dict[key] = list(value)
         return data_dict
 
+
 class TitleExtractor:
-    def __init__(self, json_file_path, primary_pattern, secondary_pattern, output_file_name, primary_group=1, secondary_group=1):
+    def __init__(
+        self,
+        json_file_path,
+        primary_pattern,
+        secondary_pattern,
+        output_file_name,
+        primary_group=1,
+        secondary_group=1,
+    ):
         self.json_file_path = json_file_path
         self.primary_pattern = primary_pattern
         self.secondary_pattern = secondary_pattern
@@ -41,7 +51,7 @@ class TitleExtractor:
         self.non_match_titles = []
         self.titles = []
         self.data = self.load_json_data()
-        self.output_file = open(self.output_file_name, 'w')
+        self.output_file = open(self.output_file_name, "w")
         self.original_stdout = sys.stdout
         sys.stdout = self
 
@@ -57,7 +67,7 @@ class TitleExtractor:
         self.output_file.flush()
 
     def load_json_data(self):
-        with open(self.json_file_path, 'r') as file:
+        with open(self.json_file_path, "r") as file:
             return json.load(file)
 
     def extract_titles(self):
@@ -66,7 +76,7 @@ class TitleExtractor:
             if "Citation" in item:
                 self.citation_count += 1
                 citation = item["Citation"]
-                
+
                 match = re.match(self.primary_pattern, citation)
                 if match:
                     self.match_count += 1
@@ -89,7 +99,11 @@ class TitleExtractor:
                 self.match_count += 1
                 self.non_match_count -= 1
         self.titles.extend(additional_titles)
-        self.non_match_titles = [citation for citation in self.non_match_titles if citation not in processed_citations]
+        self.non_match_titles = [
+            citation
+            for citation in self.non_match_titles
+            if citation not in processed_citations
+        ]
 
     def get_titles(self):
         self.extract_titles()
@@ -99,19 +113,19 @@ class TitleExtractor:
     def print_stats(self):
         # print("Starting program...")
         # print("CategoryInfo class defined...")
-        
+
         def dict_to_category_info(data: Dict) -> CategoryInfo:
             return CategoryInfo(
-                url=data.get('url', ''),
-                faculty_count=data.get('faculty_count', 0),
-                department_count=data.get('department_count', 0),
-                article_count=data.get('article_count', 0),
-                faculty=set(data.get('faculty', [])),
-                departments=set(data.get('departments', [])),
-                titles=set(data.get('titles', [])),
-                tc_count=data.get('tc_count', 0),
-                tc_list=data.get('tc_list', []),
-                citation_average=data.get('citation_average', 0)
+                url=data.get("url", ""),
+                faculty_count=data.get("faculty_count", 0),
+                department_count=data.get("department_count", 0),
+                article_count=data.get("article_count", 0),
+                faculty=set(data.get("faculty", [])),
+                departments=set(data.get("departments", [])),
+                titles=set(data.get("titles", [])),
+                tc_count=data.get("tc_count", 0),
+                tc_list=data.get("tc_list", []),
+                citation_average=data.get("citation_average", 0),
             )
 
         def get_all_titles(categories: Dict[str, CategoryInfo]) -> Set[str]:
@@ -121,7 +135,7 @@ class TitleExtractor:
             return all_titles
 
         # print("Converting data to CategoryInfo objects...")
-        with open('PythonCode/Utilities/processed_category_data.json', 'r') as file:
+        with open("PythonCode/Utilities/processed_category_data.json", "r") as file:
             data = json.load(file)
         categories = {name: dict_to_category_info(info) for name, info in data.items()}
 
@@ -134,23 +148,23 @@ class TitleExtractor:
 
         titles_set = set()
         processed_titles_set = set()
-        
+
         title_tracker = {}
         processed_title_tracker = {}
         print("Printing all titles from extracted titles...")
         for title in self.titles:
             print(title)
             normalized_title = title.lower()
-            normalized_title = re.sub(r'\s+', '', normalized_title).strip()
-            
+            normalized_title = re.sub(r"\s+", "", normalized_title).strip()
+
             if normalized_title not in title_tracker:
                 title_tracker[normalized_title] = title
                 titles_set.add(normalized_title)
 
         for title in titles_from_processed_category_data:
             normalized_title = title.lower()
-            normalized_title = re.sub(r'\s+', '', normalized_title).strip()
-            
+            normalized_title = re.sub(r"\s+", "", normalized_title).strip()
+
             if normalized_title not in processed_title_tracker:
                 processed_title_tracker[normalized_title] = title
                 processed_titles_set.add(normalized_title)
@@ -161,33 +175,38 @@ class TitleExtractor:
         for i, title in enumerate(first_verification_set, 1):
             print(f"{i}. {title_tracker[title]}")
 
+
 # Usage
-accounting_primary_pattern = r'\.\s*\(\d{4}\)\.\s*([^\.]+)\.'
-accounting_secondary_pattern = r'(?:(?:[A-Z][a-z]+,\s[A-Z]\.(?:\s[A-Z]\.)?,?\s)+)([^\.]+)\.'
+accounting_primary_pattern = r"\.\s*\(\d{4}\)\.\s*([^\.]+)\."
+accounting_secondary_pattern = (
+    r"(?:(?:[A-Z][a-z]+,\s[A-Z]\.(?:\s[A-Z]\.)?,?\s)+)([^\.]+)\."
+)
 
 accounting_extractor = TitleExtractor(
-    'assets/json_data/Accounting-and-Legal-Studies.json',
+    "assets/json_data/Accounting-and-Legal-Studies.json",
     accounting_primary_pattern,
     accounting_secondary_pattern,
-    'accounting_output.txt',
+    "accounting_output.txt",
     primary_group=2,
-    secondary_group=1
+    secondary_group=1,
 )
 accounting_titles = accounting_extractor.get_titles()
 accounting_extractor.print_stats()
 
 # You can define different patterns for Economics if needed
-economics_primary_pattern = r'^[^\.]+\.\s*\(\d{4}\)\.\s*([^\.]+)\.'
-economics_secondary_pattern = r'(?:(?:[A-Z][a-z]+,\s[A-Z]\.(?:\s[A-Z]\.)?,?\s)+)([^\.]+)\.'
+economics_primary_pattern = r"^[^\.]+\.\s*\(\d{4}\)\.\s*([^\.]+)\."
+economics_secondary_pattern = (
+    r"(?:(?:[A-Z][a-z]+,\s[A-Z]\.(?:\s[A-Z]\.)?,?\s)+)([^\.]+)\."
+)
 
 
 economics_extractor = TitleExtractor(
-    'assets/json_data/Economics.json',
+    "assets/json_data/Economics.json",
     economics_primary_pattern,
     economics_secondary_pattern,
-    'economics_output.txt',
+    "economics_output.txt",
     primary_group=1,
-    secondary_group=1
+    secondary_group=1,
 )
 economics_titles = economics_extractor.get_titles()
 economics_extractor.print_stats()

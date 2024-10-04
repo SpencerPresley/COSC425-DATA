@@ -13,7 +13,7 @@ import re
 
 class ResearchTaxonomy:
     def __init__(self, prompt_num=0, file_name="Taxonomy.json", data_needed=False):
-        if(data_needed == True):
+        if data_needed == True:
             self.inFile = input("Please enter the path to the abstract file: ")
             with open(self.inFile, "r") as file:
                 self.AbstractDict = json.load(file)
@@ -57,7 +57,7 @@ class ResearchTaxonomy:
                 and grab a definition for the category. This definition should be in direct correlation to the category.
                 output the quote as follows.
                 "Education is the transmission of knowledge, skills, and character traits and manifests in various forms. Formal education occurs within a structured institutional framework, such as public schools, following a curriculum. Non-formal education also follows a structured approach but occurs outside the formal schooling system, while informal education entails unstructured learning through daily experiences.  - wikipedia"
-            """
+            """,
         ]
         # set the prompt number
         self.prompt_num = prompt_num if prompt_num <= len(self.prompt) else 0
@@ -195,16 +195,15 @@ class ResearchTaxonomy:
                 {"role": "user", "content": category},
             ]
             output_definition = self.get_response(messages=messages)
-            #print(category, " ", output_taxonomy)
-            value['definition'] = output_definition
+            # print(category, " ", output_taxonomy)
+            value["definition"] = output_definition
         with open("definition_output.json", "w") as file:
             json.dump(categoryDict, file, indent=4)
 
-        
 
 if __name__ == "__main__":
     Tester = ResearchTaxonomy(data_needed=False)
     filePath = input("Please enter the path to the file containing the taxonomy: ")
-    Tester.add_theme_taxonomy(fileName=filePath)    
+    Tester.add_theme_taxonomy(fileName=filePath)
     filePath = input("Please enter the path to the file containing the taxonomy: ")
     Tester.get_definition(fileName=filePath)

@@ -2,7 +2,9 @@ import time
 import psutil
 import sys
 import os
+
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 
 def monitor_system_resources():
     """Prints the current system's CPU and memory usage."""

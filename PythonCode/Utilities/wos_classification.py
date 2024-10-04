@@ -37,7 +37,6 @@ class WosClassification:
         self.category_processor = CategoryProcessor(
             self.utils, None, self.warning_manager
         )
-
         # Intialize FacultyDepartmentManager
         self.faculty_department_manager = FacultyDepartmentManager(
             self.category_processor
