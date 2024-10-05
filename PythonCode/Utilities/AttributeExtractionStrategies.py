@@ -495,3 +495,43 @@ class CrossrefAuthorExtractionStrategy(AttributeExtractionStrategy):
             True,
             self.get_authors_as_list(author_sequence_dict=author_sequence_dict),
         )
+
+@StrategyFactory.register_strategy(AttributeTypes.CROSSREF_DEPARTMENTS)
+class CrossrefDepartmentExtractionStrategy(AttributeExtractionStrategy):
+    def __init__(self, warning_manager: WarningManager):
+        super().__init__(warning_manager=warning_manager)
+
+    def extract_attribute(self, crossref_json: dict) -> tuple[bool, list[str]]:
+        departments = [
+            "Computer Science",
+            "Salisbury University"
+        ]
+
+        return (
+            True,
+            departments
+        )
+        
+@StrategyFactory.register_strategy(AttributeTypes.CROSSREF_CATEGORIES)
+class CrossrefCategoriesExtractionStrategy(AttributeExtractionStrategy):
+    def __init__(self, warning_manager: WarningManager):
+        super().__init__(warning_manager=warning_manager)
+
+    def extract_attribute(self, crossref_json: dict) -> tuple[bool, list[str]]:
+        categories = crossref_json.get("categories", None)
+        return (
+            True if categories else False,
+            categories
+        )
+    
+@StrategyFactory.register_strategy(AttributeTypes.CROSSREF_CITATION_COUNT)
+class CrossrefCitationCountExtractionStrategy(AttributeExtractionStrategy):
+    def __init__(self, warning_manager: WarningManager):
+        super().__init__(warning_manager=warning_manager)
+
+    def extract_attribute(self, crossref_json: dict) -> tuple[bool, int]:
+        citation_count = crossref_json.get("is-referenced-by-count", 0)
+        return (
+            True,
+            citation_count
+        )

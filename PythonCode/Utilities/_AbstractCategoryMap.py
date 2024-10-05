@@ -19,7 +19,8 @@ class AbstractCategoryMap:
         *,
         utilities_obj: Utilities,
         warning_manager: WarningManager,
-        dir_path: str
+        dir_path: str,
+        crossref_bool: bool
     ):
         self.utilities = utilities_obj
         self.warning_manager = warning_manager

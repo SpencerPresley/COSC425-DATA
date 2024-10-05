@@ -21,24 +21,41 @@ class WosClassification:
     def __init__(
         self,
         *,
-        path,
+        input_dir_path: str,
+        output_dir_path: str,
         strategy_factory: StrategyFactory,
         warning_manager: WarningManager,
-        crossref_run: bool = False
+        crossref_run: bool = False,
+        make_files: bool = False
     ):
         """Handles entire orchestration of pipeline. Just create object and pass in directory_path as keyword argument."""
-        self.path = path
+        self.input_dir_path = input_dir_path
+        self.output_dir_path = output_dir_path
+
         self.strategy_factory = strategy_factory
         self.warning_manager = warning_manager
         self.utils = Utilities(
             strategy_factory=self.strategy_factory, warning_manager=self.warning_manager
         )
 
+        if not isinstance(make_files, bool):
+            raise AttributeError(f"Param: make_files value is {make_files} and is of type: {type(make_files)} for class: {self.__class__.__name__}. The make_files param must be of type: {type(bool)}.")
+
+        elif make_files and not os.listdir(input_dir_path):
+            raise Exception("Input directory: {input_dir_path} contains no files to process.")
+
+        elif make_files:
+            files_to_split = []
+            for f in os.listdir(input_dir_path):
+                files_to_split.append(os.path.join(input_dir_path, f))
+            for f in files_to_split:
+                self.utils.make_files(path_to_file=f, output_dir=output_dir_path, crossref_bool=crossref_run)
+
         # Initialize the CategoryProcessor and FacultyDepartmentManager with dependencies
         self.category_processor = CategoryProcessor(
             self.utils, None, self.warning_manager
         )
-        
+
         # Intialize FacultyDepartmentManager
         self.faculty_department_manager = FacultyDepartmentManager(
             self.category_processor
@@ -52,7 +69,9 @@ class WosClassification:
         self.file_handler = FileHandler(self.utils)
 
         self.process_directory(
-            directory_path=path, category_processor=self.category_processor, crossref_bool=crossref_run
+            output_dir_path=output_dir_path,
+            category_processor=self.category_processor,
+            crossref_bool=crossref_run,
         )
 
         # post-processor object
@@ -80,24 +99,24 @@ class WosClassification:
             "test_processed_article_stats_data.json"
         )
 
-        AbstractCategoryMap(
-            utilities_obj=self.utils,
-            warning_manager=self.warning_manager,
-            dir_path=self.path,
-            crossref_bool=crossref_run
-        )
+        # AbstractCategoryMap(
+        #     utilities_obj=self.utils,
+        #     warning_manager=self.warning_manager,
+        #     dir_path=self.directory_path,
+        #     crossref_bool=crossref_run,
+        # )
 
-    def process_directory(self, *, path, category_processor, crossref_bool):
+    def process_directory(self, *, output_dir_path, category_processor, crossref_bool):
         """
         Orchestrates the process of reading files from a directory,
         extracting categories, and updating faculty and department data.
         """
         # Use FileHandler to traverse the directory and process each file
         self.file_handler.construct_categories(
-            directory_path=path,
+            directory_path=output_dir_path,
             category_processor=category_processor,
             warning_manager=self.warning_manager,
-            crossref_bool=crossref_bool
+            crossref_bool=crossref_bool,
         )
 
     def get_category_counts(self):
@@ -220,11 +239,18 @@ if __name__ == "__main__":
     strategy_factory = StrategyFactory()
     warning_manager = WarningManager()
 
+    input_dir_path = "./input_files"
+    output_dir_path = "./crossref_split_files"
+    input_dir_path = os.path.expanduser(input_dir_path)
+    output_dir_path = os.path.expanduser(output_dir_path)
+    
     # Instantiate the orchestrator class
     wos_classifiction = WosClassification(
-        directory_path=path,
+        input_dir_path=input_dir_path,
+        output_dir_path=output_dir_path,
         strategy_factory=strategy_factory,
         warning_manager=warning_manager,
-        crossref_run=True
+        crossref_run=True,
+        make_files=True
     )
-    warning_manager.log_warning("Processing", "Processing complete.")
+    print("Processing complete.")

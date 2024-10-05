@@ -29,61 +29,93 @@ class CategoryProcessor:
         self.faculty_stats: dict[str, FacultyStats] = {}
         self.article_stats: dict[str, ArticleStats] = {}
 
-    def category_finder(self, current_file, file_path, crossref_bool):
+    def category_finder(self, file_path, crossref_bool):
         if crossref_bool:
-            self.run_category_generation_engine(current_file, file_path)
-        
-        file_content = current_file.read()
-        lines = file_content.splitlines()
-        for line in lines:
-            if line.startswith("WC"):
-                self.update_category_stats(file_path, file_content, lines)
+            self.run_category_generation_engine(file_path)
+        else:
+            file_content = None
+            with open(file_path, 'r') as current_file:
+                file_content = current_file.read()
+            lines = file_content.splitlines()
+            for line in lines:
+                if line.startswith("WC"):
+                    self.update_category_stats(file_path, file_content, lines)
 
-    def run_category_generation_engine(self, current_file, file_path):
-        categories = [
-            "math",
-            "science",
-            "porn",
-            "hardcore porn",
-            "extreme porn that makes you question what you're doing with your life",
-            "uhhhhhhhhh not comfortable talking bout this one tho"
-        ]
+    def run_category_generation_engine(self, file_path):
+        print(f"path from generation: {file_path}")
+        input("press enter to continue")
+        categories = ["math"]
         crossref_items = None
-        with open(current_file, 'r') as f:
-            crossref_items: list[dict] = json.load(f)
-        for i, item in enumerate(crossref_items):
-            item['categories'] = categories[i % len(categories)]
-        self.update_category_stats(file_path=file_path, data=crossref_items, crossref_bool=True)
+        with open(file_path, "r") as f:
+            crossref_items = json.load(f)
+        print(f"CROSSREFITEMS:\n{crossref_items}")
+        input("press enter to continue")
+        crossref_items["categories"] = categories
+        self.update_category_stats(
+            file_path=file_path, data=crossref_items, crossref_bool=True
+        )
 
-    def update_category_stats(self, file_path, data, lines = None, crossref_bool=False):
-        # get attributes from the file
-        attribute_results = None
-        categories = None
+    def call_get_attributes(self, *, data, crossref_bool, lines):
+        categories, faculty_members, department_members, title, tc_count = [None for i in range(5)]
+
         if crossref_bool:
-            categories = data['categories']
-            attribute_results = self.utils.get_attributes(
-                data,
-                [
-                    AttributeTypes.CROSSREF_AUTHORS,
-                    AttributeTypes.CROSSREF_DEPARTMENT,
-                    AttributeTypes.CROSSREF_TITLE
-                ]
-            )
-        else: 
-            attribute_results = self.utils.get_attributes(
-                data,
-                [
-                    AttributeTypes.AUTHOR,
-                    AttributeTypes.DEPARTMENT,
-                    AttributeTypes.WC_PATTERN,
-                    AttributeTypes.TITLE,
-                ],
+            attribute_results = (
+                self.utils.get_attributes(
+                    data,
+                    [
+                        AttributeTypes.CROSSREF_CATEGORIES,
+                        AttributeTypes.CROSSREF_AUTHORS,
+                        AttributeTypes.CROSSREF_DEPARTMENTS,
+                        AttributeTypes.CROSSREF_TITLE,
+                        AttributeTypes.CROSSREF_CITATION_COUNT
+                    ]
+                )
             )
 
-        categories = self.get_categories(file_path, attribute_results)
-        faculty_members = self.get_faculty_members(attribute_results)
-        department_members = self.get_department_members(attribute_results)
-        title = self.get_title(attribute_results)
+            if attribute_results[AttributeTypes.CROSSREF_CATEGORIES][0]:
+                categories = attribute_results[AttributeTypes.CROSSREF_CATEGORIES][1]
+            else:
+                raise Exception(f"No category found for data: {data}")
+
+            faculty_members = attribute_results[AttributeTypes.CROSSREF_AUTHORS][1] if attribute_results[AttributeTypes.CROSSREF_AUTHORS][0] else None
+            department_members = attribute_results[AttributeTypes.CROSSREF_DEPARTMENTS][1] if attribute_results[AttributeTypes.CROSSREF_DEPARTMENTS][0] else None
+            title = attribute_results[AttributeTypes.CROSSREF_TITLE][1] if attribute_results[AttributeTypes.CROSSREF_TITLE][0] else None
+            tc_count = attribute_results[AttributeTypes.CROSSREF_CITATION_COUNT][1] if attribute_results[AttributeTypes.CROSSREF_CITATION_COUNT][0] else None
+
+        else:
+            attribute_results = (
+                self.utils.get_attributes(
+                    data,
+                    [
+                        AttributeTypes.WC_PATTERN,
+                        AttributeTypes.AUTHOR,
+                        AttributeTypes.DEPARTMENT,
+                        AttributeTypes.TITLE,
+                    ]
+                )
+            )
+                        
+            categories = attribute_results[AttributeTypes.WC_PATTERN][1] if attribute_results[AttributeTypes.WC_PATTERN][0] else None
+            faculty_members = attribute_results[AttributeTypes.AUTHOR][1] if attribute_results[AttributeTypes.AUTHOR][0] else None
+            department_members = attribute_results[AttributeTypes.DEPARTMENT][1] if attribute_results[AttributeTypes.DEPARTMENT][0] else None
+            title = attribute_results[AttributeTypes.TITLE][1] if attribute_results[AttributeTypes.TITLE][0] else None
+            tc_count: int = self.get_tc_count(lines)
+
+        return categories, faculty_members, department_members, title, tc_count
+
+    def update_category_stats(self, file_path, data, lines=None, crossref_bool=False):
+        # get attributes from the file
+        print(f"DATA FROM UPDATE CATEGORY: {data}")
+        input("press enter to continue...")
+        categories, faculty_members, department_members, title, tc_count = (
+            self.call_get_attributes(
+                data=data, crossref_bool=crossref_bool, lines=lines
+            )
+        )
+
+        self.initialize_and_update_categories(file_path, categories)
+        faculty_members = self.clean_faculty_members(faculty_members)
+        department_members = self.clean_department_members(department_members)
 
         # update the category counts dict with the new data
         self.update_faculty_set(categories, faculty_members)
@@ -91,9 +123,8 @@ class CategoryProcessor:
         self.update_article_set()
         self.update_title_set(categories, title)
 
-        # citation related
-        tc_count: int = self.get_tc_count(lines)
-        self.update_tc_list(lines, self.category_counts, categories)
+        # citation updates related
+        self.update_tc_list(lines=lines, category_counts=self.category_counts, categories=categories, tc_count=tc_count, crossref_bool=crossref_bool)
         self.update_tc_count(self.category_counts, categories)
         self.set_citation_average(self.category_counts, categories)
 
@@ -157,7 +188,12 @@ class CategoryProcessor:
                     )
 
                 # update the members article citation map for the category
-                member_info.citation_map.article_citation_map[title] = tc_count
+                if isinstance(title, list):
+                    for t in title:
+                        member_info.citation_map.article_citation_map[t] = tc_count
+                elif isinstance(title, str):
+                    member_info.citation_map.article_citation_map[title] = tc_count
+
 
     @staticmethod
     def update_article_stats(
@@ -170,24 +206,25 @@ class CategoryProcessor:
         for category in categories:
             if category not in article_stats:
                 article_stats[category] = ArticleStats()
-            article_stats[category].article_citation_map[title] = tc_count
+
+            if isinstance(title, list):
+                for t in title:    
+                    article_stats[category].article_citation_map[t] = tc_count
+            if isinstance(title, str):
+                article_stats[category].article_citation_map[title] = tc_count
+
 
     def update_title_set(self, categories, title):
         if title is not None:
+            print(f"UPDATE TITLE SET\nCATS:{categories}\nTITLE:{title}")
             self.faculty_department_manager.update_title_set(categories, title)
-
-    def get_title(self, attribute_results):
-        title = (
-            attribute_results[AttributeTypes.TITLE][1]
-            if attribute_results[AttributeTypes.TITLE][0]
-            else None
-        )
-        return title
 
     def update_article_set(self):
         self.faculty_department_manager.update_article_counts(self.category_counts)
 
     def update_department_set(self, categories, department_members):
+        print(f"\n\nDEPARTMENT MEMBERS\n\n{department_members}")
+        input("ayyy")
         if department_members is not None:
             self.faculty_department_manager.update_department_set_2(
                 categories, department_members
@@ -196,30 +233,27 @@ class CategoryProcessor:
     def update_faculty_set(self, categories, faculty_members):
         self.faculty_department_manager.update_faculty_set(categories, faculty_members)
 
-    def get_department_members(self, attribute_results):
-        department_members = (
-            attribute_results[AttributeTypes.DEPARTMENT][1]
-            if attribute_results[AttributeTypes.DEPARTMENT][0]
-            else None
-        )
-
-        return department_members
-
-    def get_categories(self, file_path, attribute_results):
-        categories = attribute_results[AttributeTypes.WC_PATTERN][1]
+    def clean_department_members(self, department_members):
+        print(f"\n\nIN CLEAN DEPARTMENT\n\n{department_members}")
+        clean_department_members: list[str] = []
+        for department_member in department_members:
+            if department_member != "":
+                clean_department_members.append(department_member)
+        return clean_department_members
+    
+    def initialize_and_update_categories(self, file_path, categories):
         self.initialize_categories(categories=categories)
         self.update_category_counts_files_set(
             categories=categories, file_name=file_path
         )
         return categories
 
-    def get_faculty_members(self, attribute_results):
-        faculty_members: list[str] = []
-        if attribute_results[AttributeTypes.AUTHOR][0]:
-            for attribute in attribute_results[AttributeTypes.AUTHOR][1]:
-                if attribute != "":
-                    faculty_members.append(attribute)
-        return faculty_members
+    def clean_faculty_members(self, faculty_members):
+        clean_faculty_members: list[str] = []
+        for faculty_member in faculty_members:
+                if faculty_member != "":
+                    clean_faculty_members.append(faculty_member)
+        return clean_faculty_members
 
     def initialize_categories(self, categories):
         for i, category in enumerate(categories):
@@ -236,11 +270,15 @@ class CategoryProcessor:
         return self.faculty_stats
 
     @staticmethod
-    def update_tc_list(lines, category_counts, categories):
-        for line in lines:
-            if line.startswith("TC"):
-                for category in categories:
-                    category_counts[category].tc_list.append(int(line[3:]))
+    def update_tc_list(*, lines, category_counts: dict[str, CategoryInfo], categories: list[str], tc_count: int, crossref_bool: bool = False):
+        if crossref_bool:
+            for category in categories:
+                category_counts[category].tc_list.append(tc_count)
+        else:
+            for line in lines:
+                if line.startswith("TC"):
+                    for category in categories:
+                        category_counts[category].tc_list.append(int(line[3:]))
 
     @staticmethod
     def update_tc_count(category_counts, categories):

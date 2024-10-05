@@ -1,6 +1,7 @@
 from enums import AttributeTypes
 from warning_manager import WarningManager  # for type hinting
 
+
 class StrategyFactory:
     """
     A factory class for managing and retrieving attribute extraction strategies.
@@ -17,9 +18,9 @@ class StrategyFactory:
     Usage:
         add a strategy to the factory:
         StrategyFactory.register_strategy(AttributeTypes.TITLE)(TitleExtractionStrategy)
-        
+
         add the enum to enums.py
-        
+
         get a strategy from the factory:
         get_attributes() in utilities.py will then use this factory to get the strategy for a given attribute type.
     """
@@ -43,6 +44,7 @@ class StrategyFactory:
         Returns:
             function: A decorator function that registers the strategy class.
         """
+
         def decorator(strategy_class):
             for attribute_type in attribute_types:
                 cls._strategies[attribute_type] = strategy_class

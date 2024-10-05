@@ -44,7 +44,11 @@ class FacultyDepartmentManager:
         for category in categories:
             if category in self.category_processor.category_counts:
                 category_info = self.category_processor.category_counts[category]
-                category_info.titles.add(title)
+                if isinstance(title, list):
+                    for t in title:
+                        category_info.titles.add(t)
+                elif isinstance(title, str):
+                    category_info.title.add(title)
 
     def update_faculty_count(self):
         for category, category_info in self.category_processor.category_counts.items():
