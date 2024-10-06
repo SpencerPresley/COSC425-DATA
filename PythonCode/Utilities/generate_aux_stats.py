@@ -52,6 +52,7 @@ class FacultyInfo:
     total_citations: int = 0
     article_count: int = 0
     average_citations: int = 0
+    department_affiliations: list[str] = field(default_factory=list)
     citation_map: FacultyArticleStats = field(default_factory=FacultyArticleStats)
 
 

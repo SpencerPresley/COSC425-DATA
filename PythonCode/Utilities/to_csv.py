@@ -120,9 +120,6 @@ def main():
     faculty_data = load_json(faculty_file_path)
     article_data = load_json(article_file_path)
 
-    print(data)
-    input("Press Enter to continue...")
-
     output_file = "SU_Category_Data_Themes.xlsx"
 
     # Context manager to handle Excel writer

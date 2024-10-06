@@ -22,13 +22,8 @@ class FileHandler:
             raise Exception(f"Directory: {directory_path} does not exist. Check that you had a valid input file path and output file path, as well as a input file inside of the input file path directory in the initalization of WosClassification class.")
         
         for f in os.listdir(directory_path):
-            print(f"path 1:{f}")
-            input("press enter")
             path = os.path.expanduser(os.path.join(directory_path, f))
-            print(f"Path 2: {path}")
             if FileHandler.check_file_status(file_path=path):
-                print(os.path.expanduser(os.path.join(directory_path, f)))
-                print(f"path 4: {path}")
                 self.category_processor.category_finder(path, crossref_bool)
             else:
                 warning_manager.log_warning(
@@ -38,7 +33,6 @@ class FileHandler:
 
     @staticmethod
     def check_file_status(*, file_path) -> bool:
-        print(f"path 3: {file_path}")
         if os.path.isfile(file_path):
             return True
         return False

@@ -11,7 +11,7 @@ def save_items_to_file(*, path: str, items: list[dict]) -> None:
 def get_n_items(*, n, path):
     with open(path, "r") as f:
         data = json.load(f)
-    save_items_to_file(path="n-paper-doi-list", items=data[:n])
+    save_items_to_file(path=f"input_files/{n}-paper-doi-list.json", items=data[:n])
 
 
 if __name__ == "__main__":

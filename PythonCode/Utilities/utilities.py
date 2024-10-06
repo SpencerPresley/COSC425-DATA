@@ -166,7 +166,7 @@ class Utilities:
         
         with open(path_to_file, "r") as f:
             data = json.load(f)
-        crossref_filename_suffix = "_crossref_item"
+        crossref_filename_suffix = "_crossref_item.json"
         
         for i, item in enumerate(data):
             file_name = f"{i}{crossref_filename_suffix}"
@@ -175,8 +175,6 @@ class Utilities:
                 json.dump(item, f, indent=4)
         
         files = os.listdir(output_dir)
-        print(f"FILES FROM CROSSREF SPLITER\n{files}")
-        input("press enter to continue")
         return files
 
     def make_files(
