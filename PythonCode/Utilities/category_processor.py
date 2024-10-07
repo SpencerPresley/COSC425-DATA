@@ -42,14 +42,10 @@ class CategoryProcessor:
                     self.update_category_stats(file_path, file_content, lines)
 
     def run_category_generation_engine(self, file_path):
-        print(f"path from generation: {file_path}")
-        input("press enter to continue")
         categories = ["math"]
         crossref_items = None
         with open(file_path, "r") as f:
             crossref_items = json.load(f)
-        print(f"CROSSREFITEMS:\n{crossref_items}")
-        input("press enter to continue")
         crossref_items["categories"] = categories
         self.update_category_stats(
             file_path=file_path, data=crossref_items, crossref_bool=True
@@ -78,7 +74,7 @@ class CategoryProcessor:
                 raise Exception(f"No category found for data: {data}")
 
             faculty_members = attribute_results[AttributeTypes.CROSSREF_AUTHORS][1] if attribute_results[AttributeTypes.CROSSREF_AUTHORS][0] else None
-            department_members = attribute_results[AttributeTypes.CROSSREF_DEPARTMENTS][1] if attribute_results[AttributeTypes.CROSSREF_DEPARTMENTS][0] else None
+            faculty_affiliations = attribute_results[AttributeTypes.CROSSREF_DEPARTMENTS][1] if attribute_results[AttributeTypes.CROSSREF_DEPARTMENTS][0] else None
             title = attribute_results[AttributeTypes.CROSSREF_TITLE][1] if attribute_results[AttributeTypes.CROSSREF_TITLE][0] else None
             tc_count = attribute_results[AttributeTypes.CROSSREF_CITATION_COUNT][1] if attribute_results[AttributeTypes.CROSSREF_CITATION_COUNT][0] else None
 
@@ -97,29 +93,31 @@ class CategoryProcessor:
                         
             categories = attribute_results[AttributeTypes.WC_PATTERN][1] if attribute_results[AttributeTypes.WC_PATTERN][0] else None
             faculty_members = attribute_results[AttributeTypes.AUTHOR][1] if attribute_results[AttributeTypes.AUTHOR][0] else None
-            department_members = attribute_results[AttributeTypes.DEPARTMENT][1] if attribute_results[AttributeTypes.DEPARTMENT][0] else None
+            faculty_affiliations = attribute_results[AttributeTypes.DEPARTMENT][1] if attribute_results[AttributeTypes.DEPARTMENT][0] else None
             title = attribute_results[AttributeTypes.TITLE][1] if attribute_results[AttributeTypes.TITLE][0] else None
             tc_count: int = self.get_tc_count(lines)
 
-        return categories, faculty_members, department_members, title, tc_count
+        return categories, faculty_members, faculty_affiliations, title, tc_count
 
     def update_category_stats(self, file_path, data, lines=None, crossref_bool=False):
         # get attributes from the file
-        print(f"DATA FROM UPDATE CATEGORY: {data}")
-        input("press enter to continue...")
-        categories, faculty_members, department_members, title, tc_count = (
+        categories, faculty_members, faculty_affiliations, title, tc_count = (
             self.call_get_attributes(
                 data=data, crossref_bool=crossref_bool, lines=lines
             )
         )
-
+        
         self.initialize_and_update_categories(file_path, categories)
         faculty_members = self.clean_faculty_members(faculty_members)
-        department_members = self.clean_department_members(department_members)
+        faculty_affiliations = self.clean_faculty_affiliations(faculty_affiliations)
 
+        department_affiliations_list: list[str] = []
+        for faculty_member, department_affiliation in faculty_affiliations.items():
+            department_affiliations_list.append(department_affiliation)
+            
         # update the category counts dict with the new data
         self.update_faculty_set(categories, faculty_members)
-        self.update_department_set(categories, department_members)
+        self.update_department_set(categories, department_affiliations_list)
         self.update_article_set()
         self.update_title_set(categories, title)
 
@@ -138,6 +136,7 @@ class CategoryProcessor:
             faculty_stats=self.faculty_stats,
             categories=categories,
             faculty_members=faculty_members,
+            faculty_affiliations=faculty_affiliations,
             tc_count=tc_count,
             title=title,
         )
@@ -156,6 +155,7 @@ class CategoryProcessor:
         faculty_stats: dict[str, FacultyStats],
         categories: list[str],
         faculty_members: list[str],
+        faculty_affiliations: dict[str, list[str]],
         tc_count: int,
         title: str,
     ):
@@ -170,18 +170,17 @@ class CategoryProcessor:
                 faculty_stats[category] = FacultyStats()
 
             category_faculty_stats = faculty_stats[category].faculty_stats
-
             for faculty_member in faculty_members:
                 if faculty_member not in category_faculty_stats:
                     category_faculty_stats[faculty_member] = FacultyInfo()
 
                 member_info = category_faculty_stats[faculty_member]
-
+                
                 # update members total citations and article count for the category
+                member_info.department_affiliations.append(faculty_affiliations[faculty_member])
                 member_info.total_citations += tc_count
                 member_info.article_count += 1
-
-                # update members average citations for the category
+                
                 if member_info.article_count > 0:
                     member_info.average_citations = (
                         member_info.total_citations // member_info.article_count
@@ -223,8 +222,6 @@ class CategoryProcessor:
         self.faculty_department_manager.update_article_counts(self.category_counts)
 
     def update_department_set(self, categories, department_members):
-        print(f"\n\nDEPARTMENT MEMBERS\n\n{department_members}")
-        input("ayyy")
         if department_members is not None:
             self.faculty_department_manager.update_department_set_2(
                 categories, department_members
@@ -233,13 +230,14 @@ class CategoryProcessor:
     def update_faculty_set(self, categories, faculty_members):
         self.faculty_department_manager.update_faculty_set(categories, faculty_members)
 
-    def clean_department_members(self, department_members):
-        print(f"\n\nIN CLEAN DEPARTMENT\n\n{department_members}")
-        clean_department_members: list[str] = []
-        for department_member in department_members:
-            if department_member != "":
-                clean_department_members.append(department_member)
-        return clean_department_members
+    def clean_faculty_affiliations(self, faculty_affiliations):
+        print(f"\n\nIN CLEAN DEPARTMENT\n\n{faculty_affiliations}")
+        department_affiliations: dict[str, str] = {}
+        for faculty_member, affiliations in faculty_affiliations.items():
+            for affiliation in affiliations:
+                if affiliation != "":
+                    department_affiliations[faculty_member] = affiliation
+        return department_affiliations
     
     def initialize_and_update_categories(self, file_path, categories):
         self.initialize_categories(categories=categories)

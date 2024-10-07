@@ -175,8 +175,6 @@ class Utilities:
                 json.dump(item, f, indent=4)
         
         files = os.listdir(output_dir)
-        print(f"FILES FROM CROSSREF SPLITER\n{files}")
-        input("press enter to continue")
         return files
 
     def make_files(
