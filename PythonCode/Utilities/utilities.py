@@ -166,7 +166,7 @@ class Utilities:
         
         with open(path_to_file, "r") as f:
             data = json.load(f)
-        crossref_filename_suffix = "_crossref_item"
+        crossref_filename_suffix = "_crossref_item.json"
         
         for i, item in enumerate(data):
             file_name = f"{i}{crossref_filename_suffix}"

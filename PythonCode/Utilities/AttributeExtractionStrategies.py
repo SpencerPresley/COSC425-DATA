@@ -25,6 +25,9 @@ class AttributeExtractionStrategy(ABC):
         self.abstract_pattern = re.compile(r"AB\s(.+?)(?=\nC1)", re.DOTALL)
         self.missing_abstracts_file = missing_abstracts_file
         self.warning_manager = warning_manager
+        self.crossref_author_key: str = "author"
+
+
 
     @abstractmethod
     def extract_attribute(self, entry_text):
@@ -153,6 +156,70 @@ class AttributeExtractionStrategy(ABC):
         for affil in raw_affils:
             affils.append(affil["name"])
         return affils
+    
+    def get_author_obj(self, *, crossref_json: dict) -> list[dict]:
+        authors: list[dict] = crossref_json.get(self.crossref_author_key, None)
+        return authors
+    
+    def set_author_sequence_dict(
+        self, *, author_items: list[dict], author_sequence_dict: dict, unknown_authors_file: str
+    ) -> None:
+        for author_item in author_items:
+            sequence: str = author_item.get("sequence", None)
+            author_given_name: str = author_item.get("given", None)
+            author_family_name: str = author_item.get("family", None)
+
+            author_name: str = ""
+            if author_given_name and author_family_name:
+                author_name = f"{author_given_name} {author_family_name}"
+            else:
+                self.log_extraction_warning(
+                    attribute_class_name=self.__class__.__name__,
+                    warning_message="Attribute: 'Crossref_Author' was not found in the entry",
+                    entry_id=author_item,
+                )
+                self.unknown_authors["unknown_authors"].append(author_item)
+                continue
+
+            author_affiliations: list[str] = self.get_crossref_author_affils(
+                author_item
+            )
+
+            if not sequence:
+                self.log_extraction_warning(
+                    attribute_class_name=self.__class__.__name__,
+                    warning_message="Attribute: 'Crossref_Author' was not found in the entry",
+                    entry_id=author_item,
+                )
+                self.unknown_authors["unknown_authors"].append(
+                    f"Error ID: {self.generate_error_id()} - {author_item}"
+                )
+                continue
+
+            if sequence == "first":
+                author_sequence_dict[sequence]["author_name"] = author_name
+                for affiliation in author_affiliations:
+                    author_sequence_dict[sequence]["affiliations"].append(affiliation)
+
+            elif sequence == "additional":
+                additional_author_dict: dict = {}
+                additional_author_dict["author_name"] = author_name
+                additional_author_dict["affiliations"] = []
+                for affiliation in author_affiliations:
+                    additional_author_dict["affiliations"].append(affiliation)
+                author_sequence_dict["additional"].append(additional_author_dict)
+
+        self.write_missing_authors_file(self.unknown_authors)
+        
+    def write_missing_authors_file(self, unknown_authors: dict) -> None:
+        with open(self.missing_authors_file, "w") as unknown_authors_file:
+            json.dump(unknown_authors, unknown_authors_file, indent=4)
+            
+    def create_author_sequence_dict(self) -> dict:
+        return {"first": {"author_name": "", "affiliations": []}, "additional": []}
+
+    def create_unknown_authors_dict(self) -> dict:
+        return {"unknown_authors": []}
 
     def log_extraction_warning(
         self,
@@ -394,26 +461,10 @@ class CrossrefAbstractExtractionStrategy(AttributeExtractionStrategy):
 class CrossrefAuthorExtractionStrategy(AttributeExtractionStrategy):
     def __init__(self, warning_manager: WarningManager):
         super().__init__(warning_manager=warning_manager)
-        self.author_key: str = "author"
         self.unknown_authors: dict = self.create_unknown_authors_dict()
-        self.missing_authors_file: str = "unknown_authors.json"
 
-    def create_author_sequence_dict(self) -> dict:
-        return {"first": {"author_name": "", "affiliations": []}, "additional": []}
-
-    def create_unknown_authors_dict(self) -> dict:
-        return {"unknown_authors": []}
-
-    def write_missing_authors_file(self, unknown_authors: dict) -> None:
-        with open(self.missing_authors_file, "w") as unknown_authors_file:
-            json.dump(unknown_authors, unknown_authors_file, indent=4)
-
-    def get_author_obj(self, *, crossref_json: dict) -> list[dict]:
-        authors: list[dict] = crossref_json.get(self.author_key, None)
-        return authors
-
-    def get_affiliations(self, author_item: dict) -> list[str]:
-        return [affil["name"] for affil in author_item.get("affiliation", [])]
+    # def get_affiliations(self, author_item: dict) -> list[str]:
+    #     return [affil["name"] for affil in author_item.get("affiliation", [])]
 
     def get_author_name(self, author_item: dict) -> str:
         given_name: str = author_item.get("given", "")
@@ -428,56 +479,6 @@ class CrossrefAuthorExtractionStrategy(AttributeExtractionStrategy):
             )
             return None
 
-    def set_author_sequence_dict(
-        self, *, author_items: list[dict], author_sequence_dict: dict
-    ) -> None:
-        for author_item in author_items:
-            sequence: str = author_item.get("sequence", None)
-            author_given_name: str = author_item.get("given", None)
-            author_family_name: str = author_item.get("family", None)
-
-            author_name: str = ""
-            if author_given_name and author_family_name:
-                author_name = f"{author_given_name} {author_family_name}"
-            else:
-                self.log_extraction_warning(
-                    attribute_class_name=self.__class__.__name__,
-                    warning_message="Attribute: 'Crossref_Author' was not found in the entry",
-                    entry_id=author_item,
-                )
-                self.unknown_authors["unknown_authors"].append(author_item)
-                continue
-
-            author_affiliations: list[str] = self.get_crossref_author_affils(
-                author_item
-            )
-
-            if not sequence:
-                self.log_extraction_warning(
-                    attribute_class_name=self.__class__.__name__,
-                    warning_message="Attribute: 'Crossref_Author' was not found in the entry",
-                    entry_id=author_item,
-                )
-                self.unknown_authors["unknown_authors"].append(
-                    f"Error ID: {self.generate_error_id()} - {author_item}"
-                )
-                continue
-
-            if sequence == "first":
-                author_sequence_dict[sequence]["author_name"] = author_name
-                for affiliation in author_affiliations:
-                    author_sequence_dict[sequence]["affiliations"].append(affiliation)
-
-            elif sequence == "additional":
-                additional_author_dict: dict = {}
-                additional_author_dict["author_name"] = author_name
-                additional_author_dict["affiliations"] = []
-                for affiliation in author_affiliations:
-                    additional_author_dict["affiliations"].append(affiliation)
-                author_sequence_dict["additional"].append(additional_author_dict)
-
-        self.write_missing_authors_file(self.unknown_authors)
-
     def get_authors_as_list(self, *, author_sequence_dict: dict) -> list[str]:
         authors: list[str] = []
         authors.append(author_sequence_dict["first"]["author_name"])
@@ -489,7 +490,7 @@ class CrossrefAuthorExtractionStrategy(AttributeExtractionStrategy):
         author_items: list[dict] = self.get_author_obj(crossref_json=crossref_json)
         author_sequence_dict: dict = self.create_author_sequence_dict()
         self.set_author_sequence_dict(
-            author_items=author_items, author_sequence_dict=author_sequence_dict
+            author_items=author_items, author_sequence_dict=author_sequence_dict, unknown_authors_file='AuthorExtractionMissingAuthors.json'
         )
         return (
             True,
