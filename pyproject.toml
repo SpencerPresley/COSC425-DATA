@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "academic_metrics"
+version = "0.1.0"
+description = "A tool to extract and format academic data from Web of Science and Crossref"
+authors = [
+    { name = "Spencer Presley", email = "spencerpresley96@gmail.com" },
+    { name = "Cole Barbes", email = "cbarbes1@gulls.salisbury.edu" },
+]
+dependencies = [
+    "beautifulsoup4",
+    "fuzzywuzzy",
+    "ijson",
+    "numpy",
+    "openpyxl",
+    "pandas",
+    "psutil",
+    "Requests",
+    "striprtf",
+    "datasketch",
+]
+
+[tool.setuptools.packages.find]
+where = ["PythonCode"]
+include = ["academic_metrics*"]
+namespaces = false
