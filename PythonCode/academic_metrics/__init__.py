@@ -6,6 +6,7 @@ from . import mapping
 from . import main
 from . import enums
 from . import digital_measures_verification
+from . import data_collection
 
 # Expose commonly used classes/functions at the package level
 from .utils import Utilities, FileHandler, WarningManager, configure_logger
@@ -18,3 +19,9 @@ from .core import (
     NameVariation,
 )
 from .enums import AttributeTypes
+
+from .data_collection import (
+    Crf_dict_cursor_async,
+    fetch_data_for_multiple_years
+)
+

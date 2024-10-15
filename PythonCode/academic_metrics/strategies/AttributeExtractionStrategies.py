@@ -233,7 +233,7 @@ class AttributeExtractionStrategy(ABC):
         markdown_content: list[str] = []
 
         # Check if there are any <jats:sec> sections
-        sections: list[BeautifulSoup] = soup.find_all("jats:sec")
+        sections: list[BeautifulSoup] = soup.find_all(["jats:sec", "section"])
         if sections:
             for section in sections:
                 title = section.find("jats:title")
@@ -243,12 +243,12 @@ class AttributeExtractionStrategy(ABC):
                         string = string[:-1]
                     markdown_content.append(string)
 
-                paragraphs: list[BeautifulSoup] = section.find_all("jats:p")
+                paragraphs: list[BeautifulSoup] = section.find_all(["jats:p", "p"])
                 for paragraph in paragraphs:
                     markdown_content.append(paragraph.get_text(strip=True) + "\n")
         else:
             # If no sections, combine all paragraphs
-            paragraphs: list[BeautifulSoup] = soup.find_all("jats:p")
+            paragraphs: list[BeautifulSoup] = soup.find_all(["jats:p", "p"])
             for paragraph in paragraphs:
                 markdown_content.append(paragraph.get_text(strip=True) + "\n")
 
