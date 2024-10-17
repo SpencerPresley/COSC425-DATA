@@ -49,7 +49,7 @@ class FacultyDepartmentManager:
     #                     category_info.titles.add(t)
     #             elif isinstance(title, str):
     #                 category_info.titles.add(title)
-    
+
     def update_title_set(self, categories, title):
         for category in categories:
             if category in self.category_processor.category_counts:

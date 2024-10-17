@@ -7,13 +7,13 @@ from academic_metrics.utils.warning_manager import WarningManager  # for type hi
 class FileHandler:
     """
     A class for handling file operations such as checking file status, saving dictionaries, and constructing categories.
-    
+
     Attributes:
         utils (Utilities): The utilities to be used for file handling.
         category_processor (CategoryProcessor): The category processor to be used for processing the categories.
         warning_manager (WarningManager): The warning manager to be used for managing the warnings.
         crossref_bool (bool): Whether the files are crossref files.
-        
+
     Methods:
         construct_categories(self, *, directory_path, category_processor, warning_manager, crossref_bool):
             Constructs the categories for the given directory path.
@@ -21,17 +21,18 @@ class FileHandler:
             Checks if the file at the given path is a file.
         save_dict(self, file_path: str, cat_dict: dict):
             Saves the given dictionary to the specified file path.
-            
+
     Summary:
         This class provides methods for file handling operations such as checking file status, saving dictionaries, and constructing categories.
     """
+
     def __init__(self, utils: Utilities):
         """
         Initializes the FileHandler class with the provided utilities.
 
         Args:
             utils (Utilities): The utilities to be used for file handling.
-        
+
         Summary:
             This method initializes the FileHandler class with the provided utilities.
         """
@@ -53,7 +54,7 @@ class FileHandler:
             category_processor (CategoryProcessor): The category processor to be used for processing the categories.
             warning_manager (WarningManager): The warning manager to be used for managing the warnings.
             crossref_bool (bool): Whether the files are crossref files.
-            
+
         ! NOTE: Currently has tight coupling with the CategoryProcessor and WarningManager classes. This will be loosened in the future.
         """
         # print(f"Dir: {directory_path}, Cat: {category_processor}, warning: {warning_manager}, crossrefbool: {crossref_bool}")
@@ -80,7 +81,7 @@ class FileHandler:
 
         Args:
             file_path (str): The path to the file to be checked.
-        
+
         Returns:
             bool: True if the file exists and is a file, False otherwise.
         """
@@ -96,7 +97,7 @@ class FileHandler:
         Args:
             file_path (str): The path to the file where the dictionary will be saved.
             cat_dict (dict): The dictionary to be saved.
-        
+
         Summary:
             This method saves the given dictionary to the specified file path.
             It uses the pickle module to serialize the dictionary and save it to the file.

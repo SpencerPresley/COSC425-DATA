@@ -44,6 +44,7 @@ class GenerateAuxStats:
         Facilitates the generation and organization of auxiliary statistics from WoS data,
         focusing on influential faculty and articles.
     """
+
     def __init__(self, *, split_files_path: str, cat_data: dict[str, Any]):
         """
         Initializes the GenerateAuxStats instance.
@@ -87,6 +88,7 @@ class FacultyArticleStats:
     Attributes:
         article_citation_map (dict[str, int]): A mapping of article titles to their citation counts.
     """
+
     article_citation_map: dict[str, int] = field(default_factory=dict)
 
 
@@ -102,6 +104,7 @@ class FacultyInfo:
         department_affiliations (list[str]): List of departments the faculty is affiliated with.
         citation_map (FacultyArticleStats): Detailed citation information for each article.
     """
+
     total_citations: int = 0
     article_count: int = 0
     average_citations: int = 0
@@ -122,6 +125,7 @@ class FacultyStats:
         get_refined_faculty_name: Gets the refined name for a faculty member.
         to_dict: Converts the dataclass instance to a dictionary suitable for JSON serialization.
     """
+
     faculty_stats: dict[str, FacultyInfo] = field(default_factory=dict)
 
     def refine_faculty_stats(
@@ -179,7 +183,7 @@ class FacultyStats:
         Returns:
             dict: A dictionary representation of the FacultyStats instance.
         """
-        
+
         # Utilize asdict utility from dataclasses, then change sets to lists
         data_dict = asdict(self)
 
@@ -204,9 +208,17 @@ class ArticleDetails:
         faculty_members (list[str]): List of faculty members associated with the article.
         faculty_affiliations (dict[str, list[str]]): Mapping of faculty members to their affiliations.
     """
+
     tc_count: int = 0
     faculty_members: list[str] = field(default_factory=list)
     faculty_affiliations: dict[str, list[str]] = field(default_factory=dict)
+    abstract: str = field(default="")
+    license_url: str = field(default="")
+    date_published_print: str = field(default="")
+    date_published_online: str = field(default="")
+    journal: str = field(default="")
+    download_url: str = field(default="")
+    doi: str = field(default="")
 
 
 @dataclass
@@ -220,7 +232,7 @@ class ArticleStats:
     Methods:
         to_dict: Converts the dataclass instance to a dictionary suitable for JSON serialization.
     """
-    
+
     article_citation_map: dict[str, ArticleDetails] = field(default_factory=dict)
 
     def to_dict(self) -> dict:
@@ -230,7 +242,7 @@ class ArticleStats:
         Returns:
             dict: A dictionary representation of the ArticleStats instance.
         """
-        
+
         # Utilize asdict utility from dataclasses, then change sets to lists
         data_dict = asdict(self)
 

@@ -63,6 +63,13 @@ class CategoryProcessor:
                     AttributeTypes.CROSSREF_DEPARTMENTS,
                     AttributeTypes.CROSSREF_TITLE,
                     AttributeTypes.CROSSREF_CITATION_COUNT,
+                    AttributeTypes.CROSSREF_ABSTRACT,
+                    AttributeTypes.CROSSREF_LICENSE_URL,
+                    AttributeTypes.CROSSREF_PUBLISHED_PRINT,
+                    AttributeTypes.CROSSREF_PUBLISHED_ONLINE,
+                    AttributeTypes.CROSSREF_JOURNAL,
+                    AttributeTypes.CROSSREF_URL,
+                    AttributeTypes.CROSSREF_DOI,
                 ],
             )
 
@@ -90,6 +97,55 @@ class CategoryProcessor:
                 attribute_results[AttributeTypes.CROSSREF_CITATION_COUNT][1]
                 if attribute_results[AttributeTypes.CROSSREF_CITATION_COUNT][0]
                 else None
+            )
+            abstract = (
+                attribute_results[AttributeTypes.CROSSREF_ABSTRACT][1]
+                if attribute_results[AttributeTypes.CROSSREF_ABSTRACT][0]
+                else None
+            )
+            license_url = (
+                attribute_results[AttributeTypes.CROSSREF_LICENSE_URL][1]
+                if attribute_results[AttributeTypes.CROSSREF_LICENSE_URL][0]
+                else None
+            )
+            date_published_print = (
+                attribute_results[AttributeTypes.CROSSREF_PUBLISHED_PRINT][1]
+                if attribute_results[AttributeTypes.CROSSREF_PUBLISHED_PRINT][0]
+                else None
+            )
+            date_published_online = (
+                attribute_results[AttributeTypes.CROSSREF_PUBLISHED_ONLINE][1]
+                if attribute_results[AttributeTypes.CROSSREF_PUBLISHED_ONLINE][0]
+                else None
+            )
+            journal = (
+                attribute_results[AttributeTypes.CROSSREF_JOURNAL][1]
+                if attribute_results[AttributeTypes.CROSSREF_JOURNAL][0]
+                else None
+            )
+            download_url = (
+                attribute_results[AttributeTypes.CROSSREF_URL][1]
+                if attribute_results[AttributeTypes.CROSSREF_URL][0]
+                else None
+            )
+            doi = (
+                attribute_results[AttributeTypes.CROSSREF_DOI][1]
+                if attribute_results[AttributeTypes.CROSSREF_DOI][0]
+                else None
+            )
+            return (
+                categories,
+                faculty_members,
+                faculty_affiliations,
+                title,
+                tc_count,
+                abstract,
+                license_url,
+                date_published_print,
+                date_published_online,
+                journal,
+                download_url,
+                doi,
             )
 
         else:
@@ -125,15 +181,33 @@ class CategoryProcessor:
             )
             tc_count: int = self.get_tc_count(lines)
 
-        return categories, faculty_members, faculty_affiliations, title, tc_count
+            return categories, faculty_members, faculty_affiliations, title, tc_count
 
     def update_category_stats(self, file_path, data, lines=None, crossref_bool=False):
         # get attributes from the file
-        categories, faculty_members, faculty_affiliations, title, tc_count = (
-            self.call_get_attributes(
+        if crossref_bool:
+            (
+                categories,
+                faculty_members,
+                faculty_affiliations,
+                title,
+                tc_count,
+                abstract,
+                license_url,
+                date_published_print,
+                date_published_online,
+                journal,
+                download_url,
+                doi,
+            ) = self.call_get_attributes(
                 data=data, crossref_bool=crossref_bool, lines=lines
             )
-        )
+        else:
+            categories, faculty_members, faculty_affiliations, title, tc_count = (
+                self.call_get_attributes(
+                    data=data, crossref_bool=crossref_bool, lines=lines
+                )
+            )
 
         self.initialize_and_update_categories(file_path, categories)
         faculty_members = self.clean_faculty_members(faculty_members)
@@ -176,23 +250,55 @@ class CategoryProcessor:
             crossref_bool=crossref_bool,
         )
 
-        # update article stats for the category
-        self.update_article_stats(
-            article_stats=self.article_stats,
-            categories=categories,
-            title=title,
-            tc_count=tc_count,
-            faculty_affiliations=faculty_affiliations,
-            faculty_members=faculty_members,
-            crossref_bool=crossref_bool,
-        )
-        
-        self.update_article_stats_obj(
-            title=title,
-            tc_count=tc_count,
-            faculty_affiliations=faculty_affiliations,
-            faculty_members=faculty_members,
-        )
+        if crossref_bool:
+            # update article stats for the category
+            self.update_article_stats(
+                article_stats=self.article_stats,
+                categories=categories,
+                title=title,
+                tc_count=tc_count,
+                faculty_affiliations=faculty_affiliations,
+                faculty_members=faculty_members,
+                crossref_bool=crossref_bool,
+                abstract=abstract,
+                license_url=license_url,
+                date_published_print=date_published_print,
+                date_published_online=date_published_online,
+                journal=journal,
+                download_url=download_url,
+                doi=doi,
+            )
+
+            self.update_article_stats_obj(
+                title=title,
+                tc_count=tc_count,
+                faculty_affiliations=faculty_affiliations,
+                faculty_members=faculty_members,
+                abstract=abstract,
+                license_url=license_url,
+                date_published_print=date_published_print,
+                date_published_online=date_published_online,
+                journal=journal,
+                download_url=download_url,
+                doi=doi,
+            )
+
+        else:
+            self.update_article_stats_obj(
+                title=title,
+                tc_count=tc_count,
+                faculty_affiliations=faculty_affiliations,
+                faculty_members=faculty_members,
+            )
+
+            self.update_article_stats(
+                article_stats=self.article_stats,
+                categories=categories,
+                title=title,
+                tc_count=tc_count,
+                faculty_affiliations=faculty_affiliations,
+                faculty_members=faculty_members,
+            )
 
     @staticmethod
     def update_faculty_members_stats(
@@ -252,21 +358,48 @@ class CategoryProcessor:
         tc_count: int,
         faculty_affiliations: dict[str, list[str]],
         faculty_members: list[str],
+        abstract: str = None,
         crossref_bool: bool = False,
+        license_url: str = None,
+        date_published_print: str = None,
+        date_published_online: str = None,
+        journal: str = None,
+        download_url: str = None,
+        doi: str = None,
     ):
         for category in categories:
             if category not in article_stats:
                 article_stats[category] = ArticleStats()
 
+            titles = []
             if isinstance(title, str):
                 titles = [title]  # Convert to list for consistent processing
+            else:
+                titles = title
 
-            for t in titles:
-                if t not in article_stats[category].article_citation_map:
-                    article_stats[category].article_citation_map[t] = ArticleDetails()
+            for title in titles:
+                if title not in article_stats[category].article_citation_map:
+                    article_stats[category].article_citation_map[
+                        title
+                    ] = ArticleDetails()
 
-                article_details = article_stats[category].article_citation_map[t]
+                article_details = article_stats[category].article_citation_map[title]
                 article_details.tc_count += tc_count
+                article_details.abstract += abstract if abstract is not None else ""
+                article_details.license_url += (
+                    license_url if license_url is not None else ""
+                )
+                article_details.date_published_print += (
+                    date_published_print if date_published_print is not None else ""
+                )
+                article_details.date_published_online += (
+                    date_published_online if date_published_online is not None else ""
+                )
+                article_details.journal += journal if journal is not None else ""
+                article_details.download_url += (
+                    download_url if download_url is not None else ""
+                )
+                article_details.doi += doi if doi is not None else ""
 
                 if crossref_bool:
                     for faculty_member in faculty_members:
@@ -284,7 +417,7 @@ class CategoryProcessor:
         for category in article_stats:
             for article in article_stats[category].article_citation_map.values():
                 article.faculty_members = list(set(article.faculty_members))
-                
+
     def update_article_stats_obj(
         self,
         *,
@@ -292,17 +425,38 @@ class CategoryProcessor:
         tc_count: int,
         faculty_affiliations: dict[str, list[str]],
         faculty_members: list[str],
+        abstract: str = None,
+        license_url: str = None,
+        date_published_print: str = None,
+        date_published_online: str = None,
+        journal: str = None,
+        download_url: str = None,
+        doi: str = None,
     ):
+        titles = []
         if isinstance(title, str):
             titles = [title]
-            
-        for t in titles: 
-            self.article_stats_obj.article_citation_map[t] = ArticleDetails(
+        else:
+            titles = title
+
+        for title in titles:
+            self.article_stats_obj.article_citation_map[title] = ArticleDetails(
                 tc_count=tc_count,
                 faculty_members=faculty_members,
                 faculty_affiliations=faculty_affiliations,
+                abstract=abstract if abstract is not None else "",
+                license_url=license_url if license_url is not None else "",
+                date_published_print=(
+                    date_published_print if date_published_print is not None else ""
+                ),
+                date_published_online=(
+                    date_published_online if date_published_online is not None else ""
+                ),
+                journal=journal if journal is not None else "",
+                download_url=download_url if download_url is not None else "",
+                doi=doi if doi is not None else "",
             )
-        
+
     def update_title_set(self, categories, title):
         if title is not None:
             # print(f"UPDATE TITLE SET\nCATS:{categories}\nTITLE:{title}")

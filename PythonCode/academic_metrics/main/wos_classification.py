@@ -1,10 +1,10 @@
 import sys
 import os
 
-print("Python version:", sys.version)
-print("sys.path:", sys.path)
-print("Current working directory:", os.getcwd())
-print("Contents of current directory:", os.listdir())
+# print("Python version:", sys.version)
+# print("sys.path:", sys.path)
+# print("Current working directory:", os.getcwd())
+# print("Contents of current directory:", os.listdir())
 
 from academic_metrics.mapping import AbstractCategoryMap
 from academic_metrics.strategies import StrategyFactory
@@ -19,6 +19,8 @@ from academic_metrics.data_models import (
     CategoryInfo,
     FacultyStats,
 )
+from urllib.parse import quote
+import shortuuid
 
 print("Imports successful")
 
@@ -67,6 +69,7 @@ class WosClassification:
         Provides a high-level interface for processing academic publication data,
         including categorization, faculty and department management, and data serialization.
     """
+
     def __init__(
         self,
         *,
@@ -177,15 +180,25 @@ class WosClassification:
         )
 
         # Serialize the processed data and save it
-        self.serialize_and_save_data(output_path=os.path.join(output_dir_path, "test_processed_category_data.json"))
+        self.serialize_and_save_data(
+            output_path=os.path.join(
+                output_dir_path, "test_processed_category_data.json"
+            )
+        )
         self.serialize_and_save_faculty_stats_data(
-            output_path=os.path.join(output_dir_path, "test_processed_faculty_stats_data.json")
+            output_path=os.path.join(
+                output_dir_path, "test_processed_faculty_stats_data.json"
+            )
         )
         self.serialize_and_save_article_stats_data(
-            output_path=os.path.join(output_dir_path, "test_processed_article_stats_data.json")
+            output_path=os.path.join(
+                output_dir_path, "test_processed_article_stats_data.json"
+            )
         )
         self.serialize_and_save_article_stats_obj(
-            output_path=os.path.join(output_dir_path, "test_processed_article_stats_obj_data.json")
+            output_path=os.path.join(
+                output_dir_path, "test_processed_article_stats_obj_data.json"
+            )
         )
 
         # AbstractCategoryMap(
@@ -195,7 +208,9 @@ class WosClassification:
         #     crossref_bool=crossref_run,
         # )
 
-    def process_directory(self, *, split_files_dir_path, category_processor, crossref_bool):
+    def process_directory(
+        self, *, split_files_dir_path, category_processor, crossref_bool
+    ):
         """
         Orchestrates the process of reading files from a directory,
         extracting categories, and updating faculty and department data.
@@ -317,6 +332,10 @@ class WosClassification:
             url = url.strip("-")
             values.url = url
 
+    def generate_short_uuid_as_url(self, article_stats_to_save):
+        for title, article_details in article_stats_to_save.items():
+            article_details["url"] = shortuuid.uuid(title)
+
     def serialize_and_save_data(self, *, output_path):
         """
         Serializes category data to JSON and saves it to a file.
@@ -356,9 +375,7 @@ class WosClassification:
 
         print(f"Data serialized and saved to {output_path}")
 
-    def serialize_and_save_faculty_stats_data(
-        self, *, output_path
-    ):
+    def serialize_and_save_faculty_stats_data(self, *, output_path):
         """
         Serializes faculty stats data to JSON and saves it to a file.
 
@@ -395,9 +412,7 @@ class WosClassification:
             f"Faculty Stat Data serialized and saved to {output_path}",
         )
 
-    def serialize_and_save_article_stats_data(
-        self, *, output_path
-    ):
+    def serialize_and_save_article_stats_data(self, *, output_path):
         """
         Serializes article stats data to JSON and saves it to a file.
 
@@ -432,20 +447,21 @@ class WosClassification:
             "Data Serialization",
             f"Article Stat Data serialized and saved to {output_path}",
         )
-        
-    def serialize_and_save_article_stats_obj(
-        self, *, output_path
-    ):
+
+    def serialize_and_save_article_stats_obj(self, *, output_path):
         article_stats_serializable = self.category_processor.article_stats_obj.to_dict()
+        article_stats_to_save = article_stats_serializable["article_citation_map"]
+
+        self.generate_short_uuid_as_url(article_stats_to_save)
 
         if self.extend:
             with open(output_path, "r") as json_file:
                 existing_data = json.load(json_file)
-            existing_data.update(article_stats_serializable)
-            article_stats_serializable = existing_data
+            existing_data.update(article_stats_to_save)
+            article_stats_to_save = existing_data
 
         with open(output_path, "w") as json_file:
-            json.dump(article_stats_serializable, json_file, indent=4)
+            json.dump(article_stats_to_save, json_file, indent=4)
 
         self.warning_manager.log_warning(
             "Data Serialization",
@@ -486,19 +502,14 @@ if __name__ == "__main__":
     strategy_factory = StrategyFactory()
     warning_manager = WarningManager()
 
-    
-    
     this_directory = os.path.dirname(os.path.abspath(__file__))
     data_core_dir = os.path.join(this_directory, "..", "..", "data", "core")
     input_dir_path = os.path.join(data_core_dir, "input_files")
-    split_files_dir_path  = os.path.join(data_core_dir, "crossref_split_files")
-    input_dir_full_path = os.path.expanduser(input_dir_path)    
+    split_files_dir_path = os.path.join(data_core_dir, "crossref_split_files")
+    input_dir_full_path = os.path.expanduser(input_dir_path)
     split_files_dir_full_path = os.path.expanduser(split_files_dir_path)
     output_dir_path = os.path.join(data_core_dir, "output_files")
     output_dir_full_path = os.path.expanduser(output_dir_path)
-    print(output_dir_full_path)
-    input("Press Enter to continue...")
-
     # Instantiate the orchestrator class
     wos_classifiction = WosClassification(
         input_dir_path=input_dir_full_path,
@@ -507,7 +518,7 @@ if __name__ == "__main__":
         strategy_factory=strategy_factory,
         warning_manager=warning_manager,
         crossref_run=True,
-        make_files=True,
-        extend=False
+        make_files=False,
+        extend=False,
     )
     print("Processing complete.")
