@@ -184,6 +184,9 @@ class WosClassification:
         self.serialize_and_save_article_stats_data(
             output_path=os.path.join(output_dir_path, "test_processed_article_stats_data.json")
         )
+        self.serialize_and_save_article_stats_obj(
+            output_path=os.path.join(output_dir_path, "test_processed_article_stats_obj_data.json")
+        )
 
         # AbstractCategoryMap(
         #     utilities_obj=self.utils,
@@ -422,6 +425,25 @@ class WosClassification:
             article_stats_serializable = existing_data
 
         # Serialize to JSON and save to a file
+        with open(output_path, "w") as json_file:
+            json.dump(article_stats_serializable, json_file, indent=4)
+
+        self.warning_manager.log_warning(
+            "Data Serialization",
+            f"Article Stat Data serialized and saved to {output_path}",
+        )
+        
+    def serialize_and_save_article_stats_obj(
+        self, *, output_path
+    ):
+        article_stats_serializable = self.category_processor.article_stats_obj.to_dict()
+
+        if self.extend:
+            with open(output_path, "r") as json_file:
+                existing_data = json.load(json_file)
+            existing_data.update(article_stats_serializable)
+            article_stats_serializable = existing_data
+
         with open(output_path, "w") as json_file:
             json.dump(article_stats_serializable, json_file, indent=4)
 

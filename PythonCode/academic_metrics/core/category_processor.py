@@ -7,6 +7,7 @@ from academic_metrics.data_models import (
     ArticleDetails,
 )
 from academic_metrics.enums import AttributeTypes
+import uuid
 
 
 class CategoryProcessor:
@@ -24,6 +25,7 @@ class CategoryProcessor:
         # influential stats dictionaries
         self.faculty_stats: dict[str, FacultyStats] = {}
         self.article_stats: dict[str, ArticleStats] = {}
+        self.article_stats_obj = ArticleStats()
 
     def category_finder(self, file_path, crossref_bool):
         if crossref_bool:
@@ -184,6 +186,13 @@ class CategoryProcessor:
             faculty_members=faculty_members,
             crossref_bool=crossref_bool,
         )
+        
+        self.update_article_stats_obj(
+            title=title,
+            tc_count=tc_count,
+            faculty_affiliations=faculty_affiliations,
+            faculty_members=faculty_members,
+        )
 
     @staticmethod
     def update_faculty_members_stats(
@@ -250,9 +259,9 @@ class CategoryProcessor:
                 article_stats[category] = ArticleStats()
 
             if isinstance(title, str):
-                title = [title]  # Convert to list for consistent processing
+                titles = [title]  # Convert to list for consistent processing
 
-            for t in title:
+            for t in titles:
                 if t not in article_stats[category].article_citation_map:
                     article_stats[category].article_citation_map[t] = ArticleDetails()
 
@@ -275,7 +284,25 @@ class CategoryProcessor:
         for category in article_stats:
             for article in article_stats[category].article_citation_map.values():
                 article.faculty_members = list(set(article.faculty_members))
-
+                
+    def update_article_stats_obj(
+        self,
+        *,
+        title: str,
+        tc_count: int,
+        faculty_affiliations: dict[str, list[str]],
+        faculty_members: list[str],
+    ):
+        if isinstance(title, str):
+            titles = [title]
+            
+        for t in titles: 
+            self.article_stats_obj.article_citation_map[t] = ArticleDetails(
+                tc_count=tc_count,
+                faculty_members=faculty_members,
+                faculty_affiliations=faculty_affiliations,
+            )
+        
     def update_title_set(self, categories, title):
         if title is not None:
             # print(f"UPDATE TITLE SET\nCATS:{categories}\nTITLE:{title}")
