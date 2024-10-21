@@ -2,466 +2,643 @@
     "indexed": {
         "date-parts": [
             [
-                2023,
+                2024,
                 9,
-                7
+                23
             ]
         ],
-        "date-time": "2023-09-07T20:16:48Z",
-        "timestamp": 1694117808809
+        "date-time": "2024-09-23T04:47:59Z",
+        "timestamp": 1727066879574
     },
-    "reference-count": 60,
-    "publisher": "IGI Global",
-    "isbn-type": [
+    "reference-count": 96,
+    "publisher": "Wiley",
+    "license": [
         {
-            "value": "9781522572145",
-            "type": "print"
-        },
-        {
-            "value": "9781522572152",
-            "type": "electronic"
+            "start": {
+                "date-parts": [
+                    [
+                        2023,
+                        10,
+                        18
+                    ]
+                ],
+                "date-time": "2023-10-18T00:00:00Z",
+                "timestamp": 1697587200000
+            },
+            "content-version": "vor",
+            "delay-in-days": 0,
+            "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/"
         }
     ],
     "content-domain": {
-        "domain": [],
-        "crossmark-restriction": false
+        "domain": [
+            "onlinelibrary.wiley.com"
+        ],
+        "crossmark-restriction": true
     },
-    "published-print": {
-        "date-parts": [
-            [
-                2019
-            ]
-        ]
-    },
-    "abstract": "<jats:p>This chapter combines three less-studied factors on employee knowledge sharing, namely, social relationship, contextual performance, and IT competence. Using a survey study that was targeted to professional employees in a R&amp;D department, we reveal that both social relationship\u2014which incorporates degree of centrality of employee's social network and frequency of interpersonal interaction\u2014and employee's contextual performance have significant positive impacts on knowledge sharing. This association, however, is found to be further positively moderated by employee's IT competence. Our work extends the literature pertaining to knowledge sharing by, not only providing an enhanced approach to measure social relationship, but also emphasizing that social relationship or contextual performance can magnify the impact on knowledge sharing through a high level of IT competence. The findings provide managerial and future research insights pertaining to promoting knowledge sharing by enhancing social relationship, rewarding contextual performance, and improving IT competence of employees.</jats:p>",
-    "DOI": "10.4018/978-1-5225-7214-5.ch001",
-    "type": "book-chapter",
+    "short-container-title": [
+        "J Management Studies"
+    ],
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>E\u2010petitions have evoked an important debate about the potential for digital activism to pressure firms to change social policies and practices. One prevailing perspective is that slacktivism, a tendency of online supporters to provide only token support, undermines any possible impact. An alternative perspective is that social media dynamics underlying digital activism offer new pathways for social activists to pressure firms toward social change. To explore this debate, we combine insights from research on social movements, social media, and the logic of connective action to theorize the impact of social media mechanisms such as e\u2010petition connectivity and velocity. With a hand\u2010coded database of 1587 e\u2010petitions targeting Fortune 500 firms from 2012 to 2017 through the platform <jats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"http://change.org\">Change.org</jats:ext-link>, we empirically evaluate whether these e\u2010petitions matter. Our empirical results strongly suggest that e\u2010petitions do matter, and we explain when digital activism has impact. The activation of social media mechanisms spreads negative information and directly intensifies the threat to the targeted firm's reputation, pressuring firms to concede to e\u2010petitioner demands. Furthermore, our findings indicate that firm visibility and resource availability can represent boundary conditions for the firm's vulnerability and ability to respond to digital activism.</jats:p>",
+    "DOI": "10.1111/joms.13010",
+    "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2018,
-                8,
-                8
+                2023,
+                10,
+                19
             ]
         ],
-        "date-time": "2018-08-08T16:23:50Z",
-        "timestamp": 1533745430000
+        "date-time": "2023-10-19T00:14:05Z",
+        "timestamp": 1697674445000
     },
-    "page": "1-20",
+    "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 1,
+    "is-referenced-by-count": 4,
     "title": [
-        "Knowledge Sharing From Employee's Perspective"
+        "Firms\u2019 Response to Slacktivism: When and Why are E\u2010Petitions Effective?"
     ],
-    "prefix": "10.4018",
+    "prefix": "10.1111",
     "author": [
         {
-            "given": "Jianping",
-            "family": "Peng",
+            "ORCID": "http://orcid.org/0000-0002-6406-0112",
+            "authenticated-orcid": false,
+            "given": "Ronei",
+            "family": "Leonel",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Sun Yat-sen University, China"
+                    "name": "Salisbury University"
                 }
             ]
         },
         {
-            "ORCID": "http://orcid.org/0000-0002-5318-809X",
-            "authenticated-orcid": true,
-            "given": "Jing (\"Jim\")",
-            "family": "Quan",
+            "ORCID": "http://orcid.org/0000-0002-5206-4765",
+            "authenticated-orcid": false,
+            "given": "Kathleen",
+            "family": "Rehbein",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Salisbury University, USA"
+                    "name": "Marquette University"
                 }
             ]
         },
         {
-            "given": "Guoying",
-            "family": "Zhang",
+            "ORCID": "http://orcid.org/0000-0002-8439-2990",
+            "authenticated-orcid": false,
+            "given": "Michelle",
+            "family": "Westermann\u2010Behaylo",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Midwestern State University, USA"
+                    "name": "University of Amsterdam"
                 }
             ]
         },
         {
-            "given": "Alan J.",
-            "family": "Dubinsky",
+            "given": "Elise",
+            "family": "Perrault",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Midwestern State University, CALIMT Learning and Innovation Research Center, and Purdue University, USA"
+                    "name": "Ameriprise Financial Inc"
                 }
             ]
         }
     ],
-    "member": "2432",
+    "member": "311",
+    "published-online": {
+        "date-parts": [
+            [
+                2023,
+                10,
+                18
+            ]
+        ]
+    },
     "reference": [
         {
-            "key": "978-1-5225-7214-5.ch001.-1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.scico.2013.12.012"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch001.-2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/07421222.2001.11045660"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch001.-3",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.4018/irmj.2002040102"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch001.-4",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/25148669"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch001.-5",
-            "author": "S. P.Borgatti",
-            "year": "2002",
-            "journal-title": "Ucinet for Windows: Software for Social Network Analysis"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch001.-6",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1207/s15327043hup1002_3"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch001.-7",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/hrm.21514"
-        },
-        {
-            "issue": "3",
-            "key": "978-1-5225-7214-5.ch001.-8",
-            "first-page": "101",
-            "article-title": "Exploring Employee\u2019s Knowledge Sharing: The Social Network Approach.",
-            "volume": "2",
-            "author": "H.-T.Chang",
-            "year": "2002",
-            "journal-title": "Human Resource Management Review"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch001.-9",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1287/mnsc.1030.0134"
-        },
-        {
-            "issue": "5/6",
-            "key": "978-1-5225-7214-5.ch001.-10",
-            "first-page": "294",
-            "article-title": "Predictors of employees\u2019 perceptions of knowledge sharing cultures.",
-            "volume": "24",
-            "author": "C.Connelly",
-            "year": "2004",
-            "journal-title": "Leadership and Organization Development Journal"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch001.-11",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0021-9010.84.1.3"
-        },
-        {
-            "issue": "6",
-            "key": "978-1-5225-7214-5.ch001.-12",
+            "key": "e_1_2_8_2_1",
             "doi-asserted-by": "crossref",
-            "first-page": "928",
-            "DOI": "10.2307/20159632",
-            "article-title": "Tie and Network Correlates of Individual Performance in Knowledge Intensive Work.",
-            "volume": "47",
-            "author": "R.Cross",
-            "year": "2004",
-            "journal-title": "Academy of Management Journal"
+            "unstructured": "Adame K. Koski J. Lem K.andMcVay S.(2020).Free cash flow disclosure in earnings announcements. Available at SSRN:https://doi.org/10.2139/ssrn.3134922(accessed 22 February 2023).",
+            "DOI": "10.2308/JFR-2020-010"
         },
         {
-            "key": "978-1-5225-7214-5.ch001.-13",
-            "author": "T. H.Davenport",
-            "year": "1998",
-            "journal-title": "Working Knowledge: How Organizations Manage What They Know"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch001.-14",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1365-2575.2012.00400.x"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch001.-15",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/job.2134"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch001.-16",
-            "unstructured": "French, J. R. P. Jr., & Raven, B. (1968). The bases of social power. In D. Cartwright (Ed.), Studies in Social Power (pp. 150-167)."
-        },
-        {
-            "key": "978-1-5225-7214-5.ch001.-17",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1086/225469"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch001.-18",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/2667032"
-        },
-        {
-            "issue": "2",
-            "key": "978-1-5225-7214-5.ch001.-19",
-            "first-page": "106",
-            "article-title": "What\u2019s Your Strategy for Managing Knowledge?",
-            "volume": "77",
-            "author": "M. T.Hansen",
-            "year": "1999",
-            "journal-title": "Harvard Business Review"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch001.-20",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.ijinfomgt.2012.10.009"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch001.-21",
+            "key": "e_1_2_8_3_1",
             "doi-asserted-by": "crossref",
-            "unstructured": "Hemsley, J., & Mason, R. M. (2012, January). The Nature of Knowledge in the Social Media Age: Implications for Knowledge Management Models. In 2012 45th Hawaii International Conference on System Science (HICSS) (pp. 3928-3937). IEEE.",
-            "DOI": "10.1109/HICSS.2012.580"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch001.-22",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/(SICI)1099-1441(199906)6:2<91::AID-KPM54>3.0.CO;2-M"
-        },
-        {
-            "issue": "6",
-            "key": "978-1-5225-7214-5.ch001.-23",
-            "first-page": "32",
-            "article-title": "Innovation: The core competence.",
-            "volume": "23",
-            "author": "J. M.Higgins",
-            "year": "1995",
-            "journal-title": "Strategy and Leadership"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch001.-24",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.5465/amp.2014.0140"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch001.-25",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1109/52.2014"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch001.-26",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1057/palgrave.jit.2000053"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch001.-27",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/2393414"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch001.-28",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0093650202029002002"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch001.-29",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1108/14601060210415144"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch001.-30",
-            "unstructured": "Kang, S. C., Morris, S. S., & Snell, S. A. (2003). Extending the Human Resource Architecture: Relational Archetypes and Value Creation (working paper). CAHRS'."
-        },
-        {
-            "key": "978-1-5225-7214-5.ch001.-31",
-            "first-page": "89",
-            "article-title": "The Empirical Research on the Relation between Social Capital and Team Performance in the R&D Department: The Mediating Role of Knowledge Sharing and Knowledge Integration.",
-            "volume": "3",
-            "author": "J.Ke",
-            "year": "2007",
-            "journal-title": "Management World"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch001.-32",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0018726710388676"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch001.-33",
-            "first-page": "18",
-            "article-title": "User Motivation and Knowledge sharing in Idea Crowdsource.",
-            "author": "M.Kosonen",
+            "first-page": "1317",
+            "DOI": "10.1177/1461444814523726",
+            "article-title": "Redefining virality in less broad strokes: Predicting viral behavioral intentions from motivations and uses of Facebook and Twitter",
+            "volume": "17",
+            "author": "Alhabash S.",
             "year": "2014",
-            "journal-title": "International Journal of Innovation Management"
+            "journal-title": "New Media & Society"
         },
         {
-            "key": "978-1-5225-7214-5.ch001.-34",
+            "key": "e_1_2_8_4_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0378-7206(00)00074-4"
+            "DOI": "10.4135/9781412993869"
         },
         {
-            "key": "978-1-5225-7214-5.ch001.-35",
+            "key": "e_1_2_8_5_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1287/mnsc.1030.0136"
+            "DOI": "10.2307/j.ctvcm4j72"
         },
         {
-            "key": "978-1-5225-7214-5.ch001.-36",
+            "key": "e_1_2_8_6_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1108/13673271111108693"
+            "DOI": "10.1017/S0003055419000352"
         },
         {
-            "key": "978-1-5225-7214-5.ch001.-37",
+            "key": "e_1_2_8_7_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1108/01437720710755272"
+            "DOI": "10.5465/amp.2017.0080"
         },
         {
-            "key": "978-1-5225-7214-5.ch001.-38",
-            "author": "J. D.Luo",
-            "year": "2010",
-            "journal-title": "Social Network Analysis"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch001.-39",
+            "key": "e_1_2_8_8_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.4018/irmj.2000010104"
+            "DOI": "10.1287/orsc.1120.0770"
         },
         {
-            "key": "978-1-5225-7214-5.ch001.-40",
+            "key": "e_1_2_8_9_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.ibusrev.2006.11.002"
+            "DOI": "10.1080/1369118X.2012.670661"
         },
         {
-            "key": "978-1-5225-7214-5.ch001.-41",
+            "key": "e_1_2_8_10_1",
+            "first-page": "169",
+            "volume-title": "Handbook of Digital Politics",
+            "author": "Bennett W. L.",
+            "year": "2015"
+        },
+        {
+            "key": "e_1_2_8_11_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/1476127018776482"
+        },
+        {
+            "key": "e_1_2_8_12_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/02650487.2015.1137537"
+        },
+        {
+            "key": "e_1_2_8_13_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5465/amr.2018.0259"
+        },
+        {
+            "key": "e_1_2_8_14_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1467-8608.2006.00424.x"
+        },
+        {
+            "key": "e_1_2_8_15_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5465/amj.2013.0255"
+        },
+        {
+            "key": "e_1_2_8_16_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/19416520.2016.1153261"
+        },
+        {
+            "key": "e_1_2_8_17_1",
+            "volume-title": "Reputation, Image, and Impression Management",
+            "author": "Bromley D.",
+            "year": "1993"
+        },
+        {
+            "key": "e_1_2_8_18_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5465/amr.2013.0027"
+        },
+        {
+            "key": "e_1_2_8_19_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5465/amr.2011.0179"
+        },
+        {
+            "key": "e_1_2_8_20_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/1094428120976838"
+        },
+        {
+            "key": "e_1_2_8_21_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/01492063211006458"
+        },
+        {
+            "key": "e_1_2_8_22_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s10940-007-9024-4"
+        },
+        {
+            "key": "e_1_2_8_23_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/1094428118773455"
+        },
+        {
+            "key": "e_1_2_8_24_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/smj.2475"
+        },
+        {
+            "key": "e_1_2_8_25_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/smj.2586"
+        },
+        {
+            "key": "e_1_2_8_26_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/smj.2574"
+        },
+        {
+            "key": "e_1_2_8_27_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.17705/1jais.00530"
+        },
+        {
+            "key": "e_1_2_8_28_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0007650315613966"
+        },
+        {
+            "key": "e_1_2_8_29_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/09585192.2013.770781"
+        },
+        {
+            "key": "e_1_2_8_30_1",
+            "volume-title": "The Symbolic Dimension of Collective Action",
+            "author": "Della Porta D.",
+            "year": "1999"
+        },
+        {
+            "key": "e_1_2_8_31_1",
+            "unstructured": "Della Porta D.andDiani M.(2006).Social Movements: An Introduction. 2d ed.Malden MA:Blackwell."
+        },
+        {
+            "key": "e_1_2_8_32_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5465/AMR.2007.25275682"
+        },
+        {
+            "key": "e_1_2_8_33_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/joms.12063"
+        },
+        {
+            "key": "e_1_2_8_34_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5465/amr.2016.0107"
+        },
+        {
+            "key": "e_1_2_8_35_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/smj.2458"
+        },
+        {
+            "key": "e_1_2_8_36_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/smj.536"
+        },
+        {
+            "key": "e_1_2_8_37_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/256337"
+        },
+        {
+            "key": "e_1_2_8_38_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5465/amr.2014.0280"
+        },
+        {
+            "key": "e_1_2_8_39_1",
             "doi-asserted-by": "crossref",
-            "author": "M.Mauss",
-            "year": "2002",
-            "journal-title": "The Gift: The Form and Reason for Exchange in Archaic Societies",
-            "DOI": "10.4324/9780203407448"
+            "first-page": "163",
+            "DOI": "10.1108/CCIJ-10-2013-0082",
+            "article-title": "Facebook and the public framing of a corporate crisis",
+            "volume": "20",
+            "author": "Etter M. A.",
+            "year": "2016",
+            "journal-title": "Corporate Communications: An International Journal"
         },
         {
-            "key": "978-1-5225-7214-5.ch001.-42",
+            "key": "e_1_2_8_40_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0021-9010.79.4.475"
+            "DOI": "10.2307/256324"
         },
         {
-            "key": "978-1-5225-7214-5.ch001.-43",
+            "key": "e_1_2_8_41_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.dss.2010.11.031"
+            "DOI": "10.1002/smj.3134"
         },
         {
-            "key": "978-1-5225-7214-5.ch001.-44",
-            "article-title": "Enhancing knowledge sharing with information and communication technology.",
-            "author": "M. S.Phang",
-            "year": "2006",
-            "journal-title": "Proceedings of 3rd International Business Research Conference 2006"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch001.-45",
+            "key": "e_1_2_8_42_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1287/orsc.1060.0223"
+            "DOI": "10.5465/amr.2006.20208684"
         },
         {
-            "issue": "11",
-            "key": "978-1-5225-7214-5.ch001.-46",
-            "first-page": "17",
-            "article-title": "Sharing knowledge.",
-            "volume": "14",
-            "author": "P.Senge",
-            "year": "1997",
-            "journal-title": "Executive Excellence"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch001.-47",
+            "key": "e_1_2_8_43_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2307/270723"
+            "DOI": "10.1016/j.infoandorg.2019.04.001"
         },
         {
-            "key": "978-1-5225-7214-5.ch001.-48",
+            "key": "e_1_2_8_44_1",
+            "first-page": "1",
+            "article-title": "Social media update 2016",
+            "volume": "11",
+            "author": "Greenwood S.",
+            "year": "2016",
+            "journal-title": "Pew Research Center"
+        },
+        {
+            "key": "e_1_2_8_45_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/smj.290"
+            "DOI": "10.1002/smj.1961"
         },
         {
-            "key": "978-1-5225-7214-5.ch001.-49",
+            "key": "e_1_2_8_46_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1145/1556460.1556496"
+            "DOI": "10.1016/j.riob.2009.06.002"
         },
         {
-            "key": "978-1-5225-7214-5.ch001.-50",
-            "unstructured": "Stevenson, M. A. (1997). The Antecedents and consequences of interpersonal trust in mixed-motive dyadic negotiation [Doctoral dissertation]. The Ohio State University."
-        },
-        {
-            "key": "978-1-5225-7214-5.ch001.-51",
+            "key": "e_1_2_8_47_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.25300/MISQ/2017/41.3.11"
+            "DOI": "10.1007/s10551-020-04540-2"
         },
         {
-            "key": "978-1-5225-7214-5.ch001.-52",
+            "key": "e_1_2_8_48_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0018726706064175"
+            "DOI": "10.1177/0149206320960533"
         },
         {
-            "key": "978-1-5225-7214-5.ch001.-53",
+            "key": "e_1_2_8_49_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0021-9010.81.5.525"
+            "DOI": "10.1002/smj.582"
         },
         {
-            "issue": "9",
-            "key": "978-1-5225-7214-5.ch001.-54",
-            "first-page": "25",
-            "article-title": "Study on the Impact of Group Internal Social Network on Group Creativity.",
-            "author": "D.Wang",
+            "key": "e_1_2_8_50_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/00076503211073516"
+        },
+        {
+            "key": "e_1_2_8_51_1",
+            "first-page": "153",
+            "volume-title": "Language of Politics",
+            "author": "Janis I.",
+            "year": "1965"
+        },
+        {
+            "key": "e_1_2_8_52_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.bushor.2009.09.003"
+        },
+        {
+            "key": "e_1_2_8_53_1",
+            "volume-title": "A Guide to Econometrics",
+            "author": "Kennedy P.",
+            "year": "2008"
+        },
+        {
+            "key": "e_1_2_8_54_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5465/amj.2015.0770"
+        },
+        {
+            "key": "e_1_2_8_55_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2189/asqu.53.3.395"
+        },
+        {
+            "key": "e_1_2_8_56_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1525/sp.2011.58.4.491"
+        },
+        {
+            "key": "e_1_2_8_57_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/1056492617744683"
+        },
+        {
+            "key": "e_1_2_8_58_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/joms.12624"
+        },
+        {
+            "key": "e_1_2_8_59_1",
+            "first-page": "430",
+            "volume-title": "Corporate Social Responsibility in a Globalizing World: Toward Effective Global CSR Frameworks",
+            "author": "King B.",
+            "year": "2012"
+        },
+        {
+            "key": "e_1_2_8_60_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2189/asqu.52.3.413"
+        },
+        {
+            "key": "e_1_2_8_61_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1086/674137"
+        },
+        {
+            "key": "e_1_2_8_62_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1057/palgrave.crr.1540192"
+        },
+        {
+            "key": "e_1_2_8_63_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/0960085X.2018.1512944"
+        },
+        {
+            "key": "e_1_2_8_64_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.17705/1jais.00390"
+        },
+        {
+            "key": "e_1_2_8_65_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5465/amj.2015.0693"
+        },
+        {
+            "key": "e_1_2_8_66_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5465/AMR.2010.53503029"
+        },
+        {
+            "key": "e_1_2_8_67_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/orsc.2015.1017"
+        },
+        {
+            "key": "e_1_2_8_68_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0001839213500032"
+        },
+        {
+            "key": "e_1_2_8_69_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0003122417747289"
+        },
+        {
+            "key": "e_1_2_8_70_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0003122415581335"
+        },
+        {
+            "key": "e_1_2_8_71_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2139/ssrn.2880402"
+        },
+        {
+            "key": "e_1_2_8_72_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/1461444818803373"
+        },
+        {
+            "key": "e_1_2_8_73_1",
+            "article-title": "The brave new world of slacktivism",
+            "author": "Morozov E.",
             "year": "2009",
-            "journal-title": "Management Science"
+            "journal-title": "Foreign Policy"
         },
         {
-            "key": "978-1-5225-7214-5.ch001.-55",
+            "key": "e_1_2_8_74_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.hrmr.2009.10.001"
+            "DOI": "10.1111/jcom.12088"
         },
         {
-            "key": "978-1-5225-7214-5.ch001.-56",
+            "key": "e_1_2_8_75_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0149206311412192"
+            "DOI": "10.5465/amj.2010.54533222"
         },
         {
-            "key": "978-1-5225-7214-5.ch001.-57",
+            "key": "e_1_2_8_76_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2307/25148667"
+            "DOI": "10.5465/annals.2017.0086"
         },
         {
-            "key": "978-1-5225-7214-5.ch001.-58",
+            "key": "e_1_2_8_77_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1023/A:1017952221572"
+            "DOI": "10.2307/30040654"
         },
         {
-            "issue": "4",
-            "key": "978-1-5225-7214-5.ch001.-59",
-            "first-page": "493",
-            "article-title": "The complementarities between Information and Communication Technologies Use, New Organizational Practices and Employee\u2019s Contextual Performance: Evidence from Europe in 2005 and 2010. Revue d Economie Politique",
-            "volume": "124",
-            "author": "A. B.Youssef",
-            "year": "2014",
-            "journal-title": "Editions Dalloz"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch001.-60",
+            "key": "e_1_2_8_78_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.nedt.2013.05.018"
+            "DOI": "10.1057/crr.2011.5"
+        },
+        {
+            "key": "e_1_2_8_79_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/1476127006064067"
+        },
+        {
+            "key": "e_1_2_8_80_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0007650304266869"
+        },
+        {
+            "key": "e_1_2_8_81_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0149206317741962"
+        },
+        {
+            "key": "e_1_2_8_82_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5465/amj.2005.19573108"
+        },
+        {
+            "key": "e_1_2_8_83_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1525/cmr.2011.53.2.87"
+        },
+        {
+            "key": "e_1_2_8_84_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/ejsp.2084"
+        },
+        {
+            "key": "e_1_2_8_85_1",
+            "doi-asserted-by": "crossref",
+            "first-page": "129",
+            "DOI": "10.1108/S0733-558X20180000056006",
+            "volume-title": "Social Movements, Stakeholders and Non\u2010Market Strategy",
+            "author": "Soule S.",
+            "year": "2018"
+        },
+        {
+            "key": "e_1_2_8_86_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/bse.1937"
+        },
+        {
+            "key": "e_1_2_8_87_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/107769900708400405"
+        },
+        {
+            "key": "e_1_2_8_88_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.25300/MISQ/2017/41.4.08"
+        },
+        {
+            "key": "e_1_2_8_89_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/0304-4076(81)90028-2"
+        },
+        {
+            "key": "e_1_2_8_90_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0003122412448796"
+        },
+        {
+            "key": "e_1_2_8_91_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5465/amr.2017.0375"
+        },
+        {
+            "key": "e_1_2_8_92_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1038/srep02522"
+        },
+        {
+            "key": "e_1_2_8_93_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/smj.2995"
+        },
+        {
+            "key": "e_1_2_8_94_1",
+            "volume-title": "Econometric Analysis of Cross Section and Panel Data",
+            "author": "Wooldridge J.",
+            "year": "2010"
+        },
+        {
+            "key": "e_1_2_8_95_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1017/nws.2020.36"
+        },
+        {
+            "key": "e_1_2_8_96_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5465/amj.2013.0611"
+        },
+        {
+            "key": "e_1_2_8_97_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1057/palgrave.crr.1540191"
         }
     ],
     "container-title": [
-        "Advances in IT Standards and Standardization Research",
-        "Handbook of Research on the Evolution of IT and the Rise of E-Society"
+        "Journal of Management Studies"
     ],
+    "language": "en",
     "link": [
         {
-            "URL": "https://www.igi-global.com/viewtitle.aspx?TitleId=211608",
+            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/joms.13010",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -471,54 +648,69 @@
         "date-parts": [
             [
                 2023,
-                9,
-                4
+                10,
+                19
             ]
         ],
-        "date-time": "2023-09-04T07:05:39Z",
-        "timestamp": 1693811139000
+        "date-time": "2023-10-19T00:14:19Z",
+        "timestamp": 1697674459000
     },
-    "score": 11.777993,
+    "score": 13.417066,
     "resource": {
         "primary": {
-            "URL": "http://services.igi-global.com/resolvedoi/resolve.aspx?doi=10.4018/978-1-5225-7214-5.ch001"
+            "URL": "https://onlinelibrary.wiley.com/doi/10.1111/joms.13010"
         }
     },
-    "subtitle": [
-        "Social Relationship, Contextual Performance, and IT Competence"
-    ],
     "issued": {
         "date-parts": [
             [
-                2019
+                2023,
+                10,
+                18
             ]
         ]
     },
-    "ISBN": [
-        "9781522572145",
-        "9781522572152"
+    "references-count": 96,
+    "alternative-id": [
+        "10.1111/joms.13010"
     ],
-    "references-count": 60,
-    "URL": "http://dx.doi.org/10.4018/978-1-5225-7214-5.ch001",
+    "URL": "http://dx.doi.org/10.1111/joms.13010",
+    "archive": [
+        "Portico"
+    ],
     "ISSN": [
-        "1935-3391",
-        "1935-3405"
+        "0022-2380",
+        "1467-6486"
     ],
     "issn-type": [
         {
-            "value": "1935-3391",
+            "value": "0022-2380",
             "type": "print"
         },
         {
-            "value": "1935-3405",
+            "value": "1467-6486",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2019
+                2023,
+                10,
+                18
             ]
         ]
-    }
+    },
+    "assertion": [
+        {
+            "value": "2023-10-18",
+            "order": 2,
+            "name": "published",
+            "label": "Published",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
+        }
+    ]
 }

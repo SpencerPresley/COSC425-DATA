@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 from firecrawl import FirecrawlApp
-import json 
+import json
 from openai import OpenAI
 import requests
 
@@ -11,6 +11,7 @@ firecrawl_api_key = os.getenv("FIRECRAWL_API_KEY")
 # Load your API key from an environment variable or directly set it here
 api_key = os.getenv("OPENAI_API_KEY")
 
+
 def firecrawl_missing_abstracts(url_dict: dict[str, str]):
     app = FirecrawlApp(api_key=firecrawl_api_key)
 
@@ -18,25 +19,20 @@ def firecrawl_missing_abstracts(url_dict: dict[str, str]):
     output_dict = {}
     for doi, url in url_dict.items():
         # Crawl a website:
-        scrape_status = app.scrape_url(
-            url, 
-            params={
-                'formats': ['markdown', 'html']
-            }
-        )
+        scrape_status = app.scrape_url(url, params={"formats": ["markdown", "html"]})
 
         try:
-            scrape_data = scrape_status['content']
+            scrape_data = scrape_status["content"]
 
             completion = client.chat.completions.create(
                 model="gpt-4o-mini",
                 messages=[
-                    {"role": "system", "content": " You are a markdown processing assistant. Given a string of markdown, the markdown are from doi webpages that have abstracts for academic research papers. You extract the abstract from the markdown and return it."},
                     {
-                        "role": "user",
-                        "content": scrape_data
-                    }
-                ]
+                        "role": "system",
+                        "content": " You are a markdown processing assistant. Given a string of markdown, the markdown are from doi webpages that have abstracts for academic research papers. You extract the abstract from the markdown and return it.",
+                    },
+                    {"role": "user", "content": scrape_data},
+                ],
             )
             Abstract = completion.choices[0].message.content
 
@@ -45,7 +41,7 @@ def firecrawl_missing_abstracts(url_dict: dict[str, str]):
             print(f"Ran out of tokens {e}")
             return output_dict
     return output_dict
-        
+
 
 def AI_get_missing_abstracts(url_dict: dict[str, str]):
     client = OpenAI(api_key=api_key)
@@ -67,12 +63,12 @@ def AI_get_missing_abstracts(url_dict: dict[str, str]):
             completion = client.chat.completions.create(
                 model="gpt-4o-mini",
                 messages=[
-                    {"role": "system", "content": " You are a html processing assistant. Given a string of html, the html are from doi webpages that have abstracts for academic research papers. You extract the abstract from the html and return it."},
                     {
-                        "role": "user",
-                        "content": scrape_data
-                    }
-                ]
+                        "role": "system",
+                        "content": " You are a html processing assistant. Given a string of html, the html are from doi webpages that have abstracts for academic research papers. You extract the abstract from the html and return it.",
+                    },
+                    {"role": "user", "content": scrape_data},
+                ],
             )
             Abstract = completion.choices[0].message.content
 

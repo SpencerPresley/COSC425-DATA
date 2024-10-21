@@ -3,699 +3,716 @@
         "date-parts": [
             [
                 2024,
-                7,
-                22
+                8,
+                29
             ]
         ],
-        "date-time": "2024-07-22T19:49:41Z",
-        "timestamp": 1721677781949
+        "date-time": "2024-08-29T17:15:44Z",
+        "timestamp": 1724951744530
     },
-    "reference-count": 63,
-    "publisher": "MDPI AG",
-    "issue": "8",
+    "reference-count": 109,
+    "publisher": "Wiley",
+    "issue": "1",
     "license": [
         {
             "start": {
                 "date-parts": [
                     [
-                        2020,
-                        4,
-                        21
+                        2023,
+                        7,
+                        3
                     ]
                 ],
-                "date-time": "2020-04-21T00:00:00Z",
-                "timestamp": 1587427200000
+                "date-time": "2023-07-03T00:00:00Z",
+                "timestamp": 1688342400000
             },
             "content-version": "vor",
             "delay-in-days": 0,
-            "URL": "https://creativecommons.org/licenses/by/4.0/"
-        }
-    ],
-    "funder": [
-        {
-            "DOI": "10.13039/100011188",
-            "name": "Fulton School of Liberal Arts",
-            "doi-asserted-by": "publisher",
-            "award": [
-                "Fulton School of Liberal Arts"
-            ],
-            "id": [
-                {
-                    "id": "10.13039/100011188",
-                    "id-type": "DOI",
-                    "asserted-by": "publisher"
-                }
-            ]
-        },
-        {
-            "name": "Office of Graduate Studies and Research, Salisbury UniversityOffice of Graduate Studies and Research, Salisbury University",
-            "award": [
-                "N/A"
-            ]
+            "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
         }
     ],
     "content-domain": {
-        "domain": [],
-        "crossmark-restriction": false
+        "domain": [
+            "onlinelibrary.wiley.com"
+        ],
+        "crossmark-restriction": true
     },
     "short-container-title": [
-        "IJERPH"
+        "Higher Education Quarterly"
     ],
-    "abstract": "<jats:p>Background: Ayurveda\u2019s preventive focus complements its strength with the interventionist approach of the biomedical in chronic pain self-management. Patient-centered care (PCC) using ethnomedicine promises greater patient self-management; however, few studies have examined environmental relationships and PCC in self-management of chronic pain through Ayurveda. Objective: To examine how Ayurveda\u2019s philosophical focus on whole system frameworks describes the integration of the individual and the ecological in tailoring an integrative patient-centered diagnostic and prognostic approach to chronic pain management. Methods: This qualitative case study conducted in-depth semi-structured interviews of Ayurvedic physicians from India (N = 10) and a qualitative inductive content analytic approach. Findings: The diagnostic and interpretational framework of the doshas supports the integration of the individual and the ecological through (a) the circadian and seasonal cycles relating mind-body awareness with diet, lifestyle (e.g., yoga), and breath (e.g., pranayama), and (b) biogeographical and ecosystemic regions relating the biogeographical and the ecological (e.g., desh) with the regulatory principle of pain and its physiological and anatomical perception (vata) in an approach that goes beyond treating pain etiology to a whole person PCC approach. Conclusions: The study highlights how circadian and seasonal cycles and evolutionary spatial-temporal factors of biogeographical and ecological regions are employed in patient assessment and self-management to support patient involvement. Recommendations for PCC in integrative chronic pain management include supporting patient ownership of their care through the dosha framework that relates the individual and the ecological in the patient\u2019s own life-context and supports co-creation of a collaborative plan of care using an ethnomedical framework.</jats:p>",
-    "DOI": "10.3390/ijerph17082842",
+    "published-print": {
+        "date-parts": [
+            [
+                2024,
+                1
+            ]
+        ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>As the roles of faculty members have continued to expand, leaders in higher education need a better understanding of the drivers of faculty engagement. The current paper develops and tests a hypothesized model of faculty engagement in which faculty member grit is positively related to faculty member engagement both directly and indirectly through faculty member\u2013academic chair leader member exchange (LMX). Using a sample of 156 faculty members in a mid\u2010sized public university in the mid\u2010Atlantic region of the United States, we tested the hypothesized model using PROCESS Model 4 with 5000 boot\u2010strapped samples and a 95% confidence interval. Results show significant direct positive relationships between faculty member grit and faculty member engagement and between faculty member\u2013academic chair LMX and faculty member engagement, but no significant indirect relationship of faculty member grit through LMX. Implications for higher education leaders are discussed, along with limitations and directions for future research.</jats:p>",
+    "DOI": "10.1111/hequ.12450",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2020,
-                4,
-                21
+                2023,
+                7,
+                3
             ]
         ],
-        "date-time": "2020-04-21T08:49:38Z",
-        "timestamp": 1587458978000
+        "date-time": "2023-07-03T10:38:58Z",
+        "timestamp": 1688380738000
     },
-    "page": "2842",
+    "page": "153-172",
+    "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 8,
+    "is-referenced-by-count": 1,
     "title": [
-        "Patient Assessment and Chronic Pain Self-Management in Ethnomedicine: Seasonal and Ecosystemic Embodiment in Ayurvedic Patient-Centered Care"
+        "Broken engagement: The role of grit and LMX in enhancing faculty engagement"
     ],
-    "prefix": "10.3390",
-    "volume": "17",
+    "prefix": "10.1111",
+    "volume": "78",
     "author": [
         {
-            "given": "Vinita",
-            "family": "Agarwal",
+            "ORCID": "http://orcid.org/0000-0002-2140-232X",
+            "authenticated-orcid": false,
+            "given": "Yvonne Downie",
+            "family": "Hanley",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Department of Communication, Fulton School of Liberal Arts, Salisbury University, Maryland, MA 21801, USA"
+                    "name": "Franklin P. Perdue School of Business Salisbury University  Salisbury Maryland USA"
+                }
+            ]
+        },
+        {
+            "ORCID": "http://orcid.org/0000-0002-8380-1334",
+            "authenticated-orcid": false,
+            "given": "Sherry A.",
+            "family": "Maykrantz",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "School of Health Sciences Salisbury University  Salisbury Maryland USA"
+                }
+            ]
+        },
+        {
+            "ORCID": "http://orcid.org/0000-0002-9662-0567",
+            "authenticated-orcid": false,
+            "given": "Jeffery D.",
+            "family": "Houghton",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "John Chambers College of Business West Virginia University  Morgantown West Virginia USA"
                 }
             ]
         }
     ],
-    "member": "1968",
+    "member": "311",
     "published-online": {
         "date-parts": [
             [
-                2020,
-                4,
-                21
+                2023,
+                7,
+                3
             ]
         ]
     },
     "reference": [
         {
-            "key": "ref_1",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Goldberg, D.S., and McGee, S.J. (2011). Pain as a global public health priority. BMC Public Health, 11.",
-            "DOI": "10.1186/1471-2458-11-770"
+            "key": "e_1_2_10_2_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1108/13620431211241063"
         },
         {
-            "key": "ref_2",
-            "doi-asserted-by": "crossref",
-            "first-page": "e183044",
-            "DOI": "10.1001/jamanetworkopen.2018.3044",
-            "article-title": "Coverage of Nonpharmacologic Treatments for Low Back Pain Among US Public and Private Insurers",
+            "key": "e_1_2_10_3_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/02678373.2013.872208"
+        },
+        {
+            "key": "e_1_2_10_4_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/0033-2909.103.3.411"
+        },
+        {
+            "key": "e_1_2_10_5_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/03075070500249260"
+        },
+        {
+            "key": "e_1_2_10_6_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/BF02723327"
+        },
+        {
+            "key": "e_1_2_10_7_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/13594320344000165"
+        },
+        {
+            "key": "e_1_2_10_8_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1108/02683940710733115"
+        },
+        {
+            "key": "e_1_2_10_9_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1146/annurev\u2010orgpsych\u2010031413\u2010091235"
+        },
+        {
+            "key": "e_1_2_10_10_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/dch.30077"
+        },
+        {
+            "issue": "2",
+            "key": "e_1_2_10_11_1",
+            "first-page": "194",
+            "article-title": "Online teaching during Covid 19: Prevalence of occupational stress among University Faculty in Pakistan",
+            "volume": "14",
+            "author": "Batool S. B.",
+            "year": "2020",
+            "journal-title": "Journal of Research"
+        },
+        {
+            "key": "e_1_2_10_12_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/S0090\u20102616(00)80008\u2010X"
+        },
+        {
+            "key": "e_1_2_10_13_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.ijpsycho.2017.02.013"
+        },
+        {
+            "key": "e_1_2_10_14_1",
+            "volume-title": "Doing quantitative research in the social sciences",
+            "author": "Black T. R.",
+            "year": "1999"
+        },
+        {
+            "key": "e_1_2_10_15_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/9781118977620.ch24"
+        },
+        {
+            "key": "e_1_2_10_16_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1108/jmp\u201003\u20102013\u20100088"
+        },
+        {
+            "key": "e_1_2_10_17_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/03075079.2017.1389877"
+        },
+        {
+            "key": "e_1_2_10_18_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/03075079.2016.1152464"
+        },
+        {
+            "key": "e_1_2_10_19_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1108/IJOTB-16-04-2013-B002"
+        },
+        {
+            "key": "e_1_2_10_20_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1744\u20106570.2010.01203.x"
+        },
+        {
+            "key": "e_1_2_10_21_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1257/jep.28.3.205"
+        },
+        {
+            "key": "e_1_2_10_22_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/pspp0000102"
+        },
+        {
+            "key": "e_1_2_10_23_1",
+            "unstructured": "Creedon P. J. &Hayes A. F.(2015).Small sample mediation analysis: How far can you push the bootstrap?Paper presented at the annual conference of the Association for Psychological Science New York NY."
+        },
+        {
+            "key": "e_1_2_10_24_1",
+            "volume-title": "The academic chairperson's handbook Lincoln",
+            "author": "Creswell J. W.",
+            "year": "1990"
+        },
+        {
+            "key": "e_1_2_10_25_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/0030-5073(75)90005-7"
+        },
+        {
+            "key": "e_1_2_10_26_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.chb.2020.106677"
+        },
+        {
+            "key": "e_1_2_10_27_1",
+            "volume-title": "Research design in social research",
+            "author": "De Vaus D. A.",
+            "year": "2001"
+        },
+        {
+            "key": "e_1_2_10_28_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/0021-9010.86.3.499"
+        },
+        {
+            "key": "e_1_2_10_29_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/hequ.12194"
+        },
+        {
+            "key": "e_1_2_10_30_1",
+            "volume-title": "The power of passion and perseverance",
+            "author": "Duckworth A.",
+            "year": "2016"
+        },
+        {
+            "key": "e_1_2_10_31_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/0022\u20103514.92.6.1087"
+        },
+        {
+            "key": "e_1_2_10_32_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/00223890802634290"
+        },
+        {
+            "key": "e_1_2_10_33_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.14687/jhs.v15i2.5162"
+        },
+        {
+            "key": "e_1_2_10_34_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/002224378101800104"
+        },
+        {
+            "key": "e_1_2_10_35_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/jts.2490050308"
+        },
+        {
+            "key": "e_1_2_10_36_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jpsychores.2018.05.017"
+        },
+        {
+            "key": "e_1_2_10_37_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1108/IJM\u201004\u20102015\u20100060"
+        },
+        {
+            "key": "e_1_2_10_38_1",
+            "volume-title": "Closing the engagement gap: How great companies unlock employee potential for superior results",
+            "author": "Gebauer J.",
+            "year": "2008"
+        },
+        {
+            "key": "e_1_2_10_39_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/0021\u20109010.82.6.827"
+        },
+        {
+            "key": "e_1_2_10_40_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1468-2273.2008.00402.x"
+        },
+        {
+            "key": "e_1_2_10_41_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/cc.10505"
+        },
+        {
+            "key": "e_1_2_10_42_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1108/LODJ\u201007\u20102012\u20100086"
+        },
+        {
+            "key": "e_1_2_10_43_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/03075079.2016.1138938"
+        },
+        {
+            "key": "e_1_2_10_44_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/he.149"
+        },
+        {
+            "key": "e_1_2_10_45_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.profnurs.2009.11.001"
+        },
+        {
+            "key": "e_1_2_10_46_1",
+            "volume-title": "Leadership\u2010making applies equally well to sponsors, competence networks, and teammates",
+            "author": "Graen G.",
+            "year": "1991"
+        },
+        {
+            "key": "e_1_2_10_47_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/1048-9843(95)90036-5"
+        },
+        {
+            "key": "e_1_2_10_48_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.19030/jber.v4i12.2722"
+        },
+        {
+            "key": "e_1_2_10_49_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/hequ.12239"
+        },
+        {
+            "key": "e_1_2_10_50_1",
+            "volume-title": "Multivariate data analysis",
+            "author": "Hair J. F.",
+            "year": "2006"
+        },
+        {
+            "key": "e_1_2_10_51_1",
+            "first-page": "102",
+            "volume-title": "Work engagement: A Handbook of essential theory and research",
+            "author": "Halbesleben J. R.",
+            "year": "2010"
+        },
+        {
+            "key": "e_1_2_10_52_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jm.2004.06.004"
+        },
+        {
+            "key": "e_1_2_10_53_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/he.318"
+        },
+        {
+            "key": "e_1_2_10_54_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/0021\u20109010.87.2.268"
+        },
+        {
+            "key": "e_1_2_10_55_1",
+            "volume-title": "Introduction to mediation, moderation, and conditional process analysis: A regression\u2010based approach",
+            "author": "Hayes A. F.",
+            "year": "2018"
+        },
+        {
+            "key": "e_1_2_10_56_1",
+            "first-page": "245",
+            "article-title": "The role of LMX and communication in the goal setting process",
             "volume": "1",
-            "author": "Heyward",
-            "year": "2018",
-            "journal-title": "JAMA Netw. Open"
-        },
-        {
-            "key": "ref_3",
-            "doi-asserted-by": "crossref",
-            "first-page": "249",
-            "DOI": "10.1016/0304-3959(91)90216-K",
-            "article-title": "Coping with chronic pain: A critical review of the literature",
-            "volume": "47",
-            "author": "Jensen",
-            "year": "1991",
-            "journal-title": "Pain"
-        },
-        {
-            "key": "ref_4",
-            "unstructured": "Osterweis, M., Kleinman, A., and Mechanic, D. (1987). Pain and Disability: Clinical, Behavioral, and Public Policy Perspectives, National Academies Press."
-        },
-        {
-            "key": "ref_5",
-            "doi-asserted-by": "crossref",
-            "first-page": "S76",
-            "DOI": "10.1111/pme.12408",
-            "article-title": "Active Self-Care Therapies for Pain (PACT) Working Group Multimodal, Integrative Therapies for the Self-Management of Chronic Pain Symptoms",
-            "volume": "15",
-            "author": "Lee",
-            "year": "2014",
-            "journal-title": "Pain Med."
-        },
-        {
-            "key": "ref_6",
-            "doi-asserted-by": "crossref",
-            "first-page": "472",
-            "DOI": "10.1111/j.1365-2648.2006.04042.x",
-            "article-title": "Developing a conceptual framework for person centered nursing",
-            "volume": "56",
-            "author": "McCormack",
+            "author": "Henderson D. J.",
             "year": "2006",
-            "journal-title": "J. Adv. Nurs."
+            "journal-title": "Sharing Network Leadership"
         },
         {
-            "key": "ref_7",
-            "doi-asserted-by": "crossref",
-            "first-page": "2406",
-            "DOI": "10.1111/jan.13734",
-            "article-title": "Re-conceptualizing pain through patient-centered care in the complementary and alternative medicine therapeutic relationship",
-            "volume": "74",
-            "author": "Agarwal",
-            "year": "2018",
-            "journal-title": "J. Adv. Nurs."
+            "key": "e_1_2_10_57_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.leaqua.2009.04.003"
         },
         {
-            "key": "ref_8",
-            "doi-asserted-by": "crossref",
-            "first-page": "908",
-            "DOI": "10.1136/bmj.323.7318.908",
-            "article-title": "Observational study of effect of patient centeredness and positive approach on outcomes of general practice consultations",
-            "volume": "323",
-            "author": "Little",
-            "year": "2001",
-            "journal-title": "BMJ"
+            "key": "e_1_2_10_58_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037//0003\u2010066x.44.3.513"
         },
         {
-            "key": "ref_9",
-            "doi-asserted-by": "crossref",
-            "first-page": "18",
-            "DOI": "10.7812/TPP/12.967",
-            "article-title": "Reductions in Pain Medication Use Associated with Traditional Chinese Medicine for Chronic Pain",
-            "volume": "16",
-            "author": "Elder",
-            "year": "2012",
-            "journal-title": "Perm. J."
+            "key": "e_1_2_10_59_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1146/annurev-orgpsych-032117-104640"
         },
         {
-            "key": "ref_10",
-            "doi-asserted-by": "crossref",
-            "first-page": "354",
-            "DOI": "10.3122/jabfm.2010.03.080252",
-            "article-title": "Perceived Benefit of Complementary and Alternative Medicine (CAM) for Back Pain: A National Survey",
-            "volume": "23",
-            "author": "Kanodia",
-            "year": "2010",
-            "journal-title": "J. Am. Board Fam. Med."
+            "key": "e_1_2_10_60_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/10705519909540118"
         },
         {
-            "key": "ref_11",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Yuan, Q.-L., Guo, T.-M., Liu, L., Sun, F., and Zhang, Y.-G. (2015). Traditional Chinese Medicine for Neck Pain and Low Back Pain: A Systematic Review and Meta-Analysis. PLoS ONE, 10.",
-            "DOI": "10.1371/journal.pone.0117146"
+            "key": "e_1_2_10_61_1",
+            "volume-title": "The condition of education 2020 (NCES 2020\u2010144)",
+            "author": "Hussar B.",
+            "year": "2020"
         },
         {
-            "key": "ref_12",
-            "doi-asserted-by": "crossref",
-            "first-page": "387",
-            "DOI": "10.4103/0974-8520.190687",
-            "article-title": "Therapeutic evaluation of \u201cAyush Tulsi Jiwan Plus\u201d oil for chronic musculoskeletal pain relief",
-            "volume": "36",
-            "author": "Sharma",
-            "year": "2015",
-            "journal-title": "AYU"
+            "key": "e_1_2_10_62_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/978-3-030-57389-8_5"
         },
         {
-            "key": "ref_13",
-            "doi-asserted-by": "crossref",
-            "first-page": "634",
-            "DOI": "10.1016/j.biopha.2017.05.079",
-            "article-title": "Alternative treatment strategies for neuropathic pain: Role of Indian medicinal plants and compounds of plant origin\u2014A review",
-            "volume": "92",
-            "author": "Singh",
-            "year": "2017",
-            "journal-title": "Biomed. Pharmacother."
+            "key": "e_1_2_10_63_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.paid.2017.02.012"
         },
         {
-            "key": "ref_14",
-            "doi-asserted-by": "crossref",
-            "first-page": "53",
-            "DOI": "10.1016/j.jaim.2015.10.002",
-            "article-title": "Ayurvedic approach for management of ankylosing spondylitis: A case report",
-            "volume": "7",
-            "author": "Singh",
-            "year": "2016",
-            "journal-title": "J. Ayurveda Integr. Med."
+            "key": "e_1_2_10_64_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s10755\u2010022\u201009600\u20101"
         },
         {
-            "key": "ref_15",
-            "doi-asserted-by": "crossref",
-            "first-page": "111",
-            "DOI": "10.4103/0973-6131.133884",
-            "article-title": "Effect of yogic colon cleansing (Laghu Sankhaprakshalana Kriya) on pain, spinal flexibility, disability and state anxiety in chronic low back pain",
-            "volume": "7",
-            "author": "Tekur",
-            "year": "2014",
-            "journal-title": "Int. J. Yoga"
+            "key": "e_1_2_10_65_1",
+            "volume-title": "The 2015 Inside Higher Ed study of college and university faculty workplace engagement: A study by Gallup and Inside Higher Ed",
+            "author": "Jaschik S.",
+            "year": "2015"
         },
         {
-            "key": "ref_16",
-            "first-page": "494",
-            "article-title": "The Significance of Ayurvedic Medicinal Plants",
-            "volume": "22",
-            "author": "Kumar",
-            "year": "2016",
-            "journal-title": "J. Evid.-Based Integr. Med."
+            "key": "e_1_2_10_66_1",
+            "volume-title": "The relationship between the selection/appointment method of academic department chairs and corresponding faculty support in Oklahoma's regional universities",
+            "author": "Jones W. D.",
+            "year": "2002"
         },
         {
-            "key": "ref_17",
-            "doi-asserted-by": "crossref",
-            "first-page": "203",
-            "DOI": "10.1093/fampra/cmr083",
-            "article-title": "Will shared decision making between patients with chronic musculoskeletal pain and physiotherapists, osteopaths and chiropractors improve patient care?",
-            "volume": "29",
-            "author": "Parsons",
-            "year": "2011",
-            "journal-title": "Fam. Pract."
+            "key": "e_1_2_10_67_1",
+            "volume-title": "Principles and practice of structural equation modeling",
+            "author": "Kline R. B.",
+            "year": "2005"
         },
         {
-            "key": "ref_18",
-            "doi-asserted-by": "crossref",
-            "first-page": "1548",
-            "DOI": "10.1001/jama.279.19.1548",
-            "article-title": "Why Patients Use Alternative Medicine",
-            "volume": "279",
-            "author": "Astin",
-            "year": "1998",
-            "journal-title": "JAMA"
+            "key": "e_1_2_10_68_1",
+            "volume-title": "Leadership for 21st century learning: Global perspectives from educational innovators",
+            "author": "Latchem C.",
+            "year": "2001"
         },
         {
-            "key": "ref_19",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Fleming, S., Rabago, D.P., Mundt, M.P., and Fleming, M.F. (2007). CAM therapies among primary care patients using opioid therapy for chronic pain. BMC Complement. Altern. Med., 7.",
-            "DOI": "10.1186/1472-6882-7-15"
+            "key": "e_1_2_10_69_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/S0149\u20102063(99)80053\u20101"
         },
         {
-            "key": "ref_20",
-            "doi-asserted-by": "crossref",
-            "first-page": "16",
-            "DOI": "10.1111/j.1526-4637.2009.00767.x",
-            "article-title": "Predictors of Complementary and Alternative Medicine Use in Chronic Pain Patients",
-            "volume": "11",
-            "author": "Green",
-            "year": "2010",
-            "journal-title": "Pain Med."
+            "key": "e_1_2_10_70_1",
+            "first-page": "47",
+            "volume-title": "Research in personnel and human resources management",
+            "author": "Liden R. C.",
+            "year": "1997"
         },
         {
-            "key": "ref_21",
-            "doi-asserted-by": "crossref",
-            "first-page": "344",
-            "DOI": "10.7326/0003-4819-135-5-200109040-00011",
-            "article-title": "Perceptions about complementary therapies relative to conventional therapies among adults who use both: results from a national survey",
-            "volume": "135",
-            "author": "Eisenberg",
-            "year": "2001",
-            "journal-title": "Ann. Intern. Med."
+            "key": "e_1_2_10_71_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/03075079.2018.1458221"
         },
         {
-            "key": "ref_22",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Sherman, K., Cherkin, D.C., Connelly, M.T., Erro, J.H., Savetsky, J.B., Davis, R.B., and Eisenberg, D.M. (2004). Complementary and alternative medical therapies for chronic low back pain: What treatments are patients willing to try?. BMC Complement. Altern. Med., 4.",
-            "DOI": "10.1186/1472-6882-4-9"
+            "key": "e_1_2_10_72_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/mnsc.1060.0597"
         },
         {
-            "key": "ref_23",
-            "doi-asserted-by": "crossref",
-            "first-page": "751403",
-            "DOI": "10.1155/2013/751403",
-            "article-title": "Additive Complex Ayurvedic Treatment in Patients with Fibromyalgia Syndrome Compared to Conventional Standard Care Alone: A Nonrandomized Controlled Clinical Pilot Study (KAFA Trial)",
-            "volume": "2013",
-            "author": "Kessler",
-            "year": "2013",
-            "journal-title": "Evid.-Based Complement. Altern. Med."
+            "key": "e_1_2_10_73_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1108/11766091111124702"
         },
         {
-            "key": "ref_24",
-            "doi-asserted-by": "crossref",
-            "first-page": "2658",
-            "DOI": "10.1016/j.socscimed.2005.11.043",
-            "article-title": "Of spineless babies and folic acid: Evidence and efficacy in biomedicine and ayurvedic medicine",
-            "volume": "62",
-            "author": "Naraindas",
-            "year": "2006",
-            "journal-title": "Soc. Sci. Med."
-        },
-        {
-            "key": "ref_25",
-            "doi-asserted-by": "crossref",
-            "first-page": "2019",
-            "DOI": "10.1177/1049732317723891",
-            "article-title": "Breaking Boundaries: Complementary and Alternative Medicine Provider Framing of Preventive Care",
-            "volume": "27",
-            "author": "Agarwal",
-            "year": "2017",
-            "journal-title": "Qual. Health Res."
-        },
-        {
-            "key": "ref_26",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Mahesh, S., Wele, A., Patgiri, B.J., and P\u00f3rsz\u00e1sz, R. (2019). Review of Pain: An Ayurvedic Approach. Int. Res. J. Pharm., 10.",
-            "DOI": "10.7897/2230-8407.1009256"
-        },
-        {
-            "key": "ref_27",
-            "doi-asserted-by": "crossref",
-            "first-page": "5",
-            "DOI": "10.7453/gahmj.2015.133",
-            "article-title": "Integrative Medicine and Health Disparities",
-            "volume": "5",
-            "author": "Saper",
-            "year": "2016",
-            "journal-title": "Glob. Adv. Health Med."
-        },
-        {
-            "key": "ref_28",
-            "doi-asserted-by": "crossref",
-            "first-page": "195",
-            "DOI": "10.1682/JRRD.2006.06.0063",
-            "article-title": "Efficacy of selected complementary and alternative medicine interventions for chronic pain",
-            "volume": "44",
-            "author": "Tan",
-            "year": "2007",
-            "journal-title": "J. Rehabil. Res. Dev."
-        },
-        {
-            "key": "ref_29",
-            "first-page": "364",
-            "article-title": "Ayurvedic research an methodology: Present status and future strategies",
-            "volume": "36",
-            "author": "Chauhan",
-            "year": "2015",
-            "journal-title": "Ayush"
-        },
-        {
-            "key": "ref_30",
-            "doi-asserted-by": "crossref",
-            "first-page": "91",
-            "DOI": "10.4103/0975-9476.65067",
-            "article-title": "Exploring issues in the development of Ayurvedic research methodology",
-            "volume": "1",
-            "author": "Singh",
-            "year": "2010",
-            "journal-title": "J. Ayurveda Integr. Med."
-        },
-        {
-            "key": "ref_31",
-            "first-page": "243",
-            "article-title": "How knowledgeable are investigators studying therapies of traditional medicines?",
-            "volume": "35",
-            "author": "Narahari",
-            "year": "2014",
-            "journal-title": "Selendang Ayu Oil Spill Lessons Learn."
-        },
-        {
-            "key": "ref_32",
-            "doi-asserted-by": "crossref",
-            "first-page": "41",
-            "DOI": "10.1093/ecam/neh017",
-            "article-title": "Neurobiology of Acupuncture: Toward CAM",
-            "volume": "1",
-            "author": "Ma",
-            "year": "2004",
-            "journal-title": "Evid.-Based Complement. Altern. Med."
-        },
-        {
-            "key": "ref_33",
-            "doi-asserted-by": "crossref",
-            "first-page": "11",
-            "DOI": "10.1093/ecam/nem090",
-            "article-title": "Analgesic Action of Acupuncture and Moxibustion: A Review of Unique Approaches in Japan",
-            "volume": "6",
-            "author": "Okada",
-            "year": "2007",
-            "journal-title": "Evid.-Based Complement. Altern. Med."
-        },
-        {
-            "key": "ref_34",
-            "doi-asserted-by": "crossref",
-            "first-page": "321",
-            "DOI": "10.1016/0277-9536(94)E0098-D",
-            "article-title": "Ecology and ethnomedicine: Exploring links between current environmental crisis and indigenous medical practices",
-            "volume": "40",
-            "author": "Anyinam",
-            "year": "1995",
-            "journal-title": "Soc. Sci. Med."
-        },
-        {
-            "key": "ref_35",
-            "doi-asserted-by": "crossref",
-            "first-page": "1005",
-            "DOI": "10.1016/S0277-9536(98)00162-2",
-            "article-title": "Environment, vulnerability, and gender in Andean ethnomedicine",
-            "volume": "47",
-            "author": "Larme",
-            "year": "1998",
-            "journal-title": "Soc. Sci. Med."
-        },
-        {
-            "key": "ref_36",
-            "doi-asserted-by": "crossref",
-            "first-page": "4076",
-            "DOI": "10.3390/ijerph120404076",
-            "article-title": "Community-Based Research as a Mechanism to Reduce Environmental Health Disparities in American Indian and Alaska Native Communities",
-            "volume": "12",
-            "author": "McOliver",
-            "year": "2015",
-            "journal-title": "Int. J. Environ. Res. Public Health"
-        },
-        {
-            "key": "ref_37",
-            "doi-asserted-by": "crossref",
+            "issue": "1",
+            "key": "e_1_2_10_74_1",
             "first-page": "1",
-            "DOI": "10.1016/j.puhe.2018.07.021",
-            "article-title": "Traditional health practitioners and sustainable development: A case study in South Africa",
-            "volume": "165",
-            "author": "Street",
-            "year": "2018",
-            "journal-title": "Public Health"
-        },
-        {
-            "key": "ref_38",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Chorgade, M.S. (2007). Drug Discovery and Development, John Wiley.",
-            "DOI": "10.1002/0470085223"
-        },
-        {
-            "key": "ref_39",
-            "doi-asserted-by": "crossref",
-            "first-page": "125002",
-            "DOI": "10.1289/EHP1944",
-            "article-title": "Native American Perspectives on Health and Traditional Ecological Knowledge",
-            "volume": "126",
-            "author": "Isaac",
-            "year": "2018",
-            "journal-title": "Environ. Health Perspect."
-        },
-        {
-            "key": "ref_40",
-            "doi-asserted-by": "crossref",
-            "first-page": "433",
-            "DOI": "10.1007/BF01565848",
-            "article-title": "Female sexuality, social reproduction, and the politics of medical intervention in Niger: Kel Ewey Tuareg perspectives",
-            "volume": "18",
-            "author": "Rasmussen",
-            "year": "1994",
-            "journal-title": "Cult. Med. Psychiatry"
-        },
-        {
-            "key": "ref_41",
-            "doi-asserted-by": "crossref",
-            "first-page": "73",
-            "DOI": "10.1016/j.jaim.2016.07.002",
-            "article-title": "Strengthening the Ayurveda ecosystem",
-            "volume": "7",
-            "author": "Patwardhan",
+            "article-title": "Administrative hierarchy and faculty work: Examining faculty satisfaction with academic leadership",
+            "volume": "12",
+            "author": "Miller M. T.",
             "year": "2016",
-            "journal-title": "J. Ayurveda Integr. Med."
+            "journal-title": "Journal of Academic Administration in Higher Education"
         },
         {
-            "key": "ref_42",
-            "doi-asserted-by": "crossref",
-            "first-page": "971",
-            "DOI": "10.1126/science.150.3699.971",
-            "article-title": "Pain Mechanisms: A New Theory",
-            "volume": "150",
-            "author": "Melzack",
-            "year": "1965",
-            "journal-title": "Science"
+            "key": "e_1_2_10_75_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s12144-013-9186-1"
         },
         {
-            "key": "ref_43",
-            "doi-asserted-by": "crossref",
-            "first-page": "S42",
-            "DOI": "10.1097/01.j.pain.0000460347.77341.bd",
-            "article-title": "Effect of environment on the long-term consequences of chronic pain",
-            "volume": "156",
-            "author": "Bushnell",
-            "year": "2015",
-            "journal-title": "Pain"
+            "key": "e_1_2_10_76_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/job.4030160204"
         },
         {
-            "key": "ref_44",
-            "doi-asserted-by": "crossref",
-            "first-page": "303",
-            "DOI": "10.1016/S0166-2236(03)00123-1",
-            "article-title": "A new view of pain as a homeostatic emotion",
-            "volume": "26",
-            "author": "Craig",
-            "year": "2003",
-            "journal-title": "Trends Neurosci."
+            "key": "e_1_2_10_77_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3390/su13105409"
         },
         {
-            "key": "ref_45",
-            "doi-asserted-by": "crossref",
-            "first-page": "420",
-            "DOI": "10.1126/science.6143402",
-            "article-title": "View through a window may influence recovery from surgery",
-            "volume": "224",
-            "author": "Ulrich",
-            "year": "1984",
-            "journal-title": "Science"
+            "key": "e_1_2_10_78_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1146/annurev.ecolsys.28.1.341"
         },
         {
-            "key": "ref_46",
-            "doi-asserted-by": "crossref",
-            "first-page": "462",
-            "DOI": "10.1046/j.1365-2702.2002.00608.x",
-            "article-title": "The effect of visual stimuli on pain threshold and tolerance",
-            "volume": "11",
-            "author": "Tse",
-            "year": "2002",
-            "journal-title": "J. Clin. Nurs."
+            "key": "e_1_2_10_79_1",
+            "unstructured": "National Center for Education Statistics(2014).https://nces.ed.gov/pubs2014/2014083.pdf"
         },
         {
-            "key": "ref_47",
-            "doi-asserted-by": "crossref",
-            "first-page": "65",
-            "DOI": "10.1037/a0018440",
-            "article-title": "Differential effects on pain intensity and unpleasantness of two meditation practices",
-            "volume": "10",
-            "author": "Perlman",
-            "year": "2010",
-            "journal-title": "Emotion"
+            "key": "e_1_2_10_80_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/1359432X.2021.1953989"
         },
         {
-            "key": "ref_48",
-            "doi-asserted-by": "crossref",
-            "first-page": "5540",
-            "DOI": "10.1523/JNEUROSCI.5791-10.2011",
-            "article-title": "Brain mechanisms supporting the modulation of pain by mindfulness meditation",
-            "volume": "31",
-            "author": "Zeidan",
-            "year": "2011",
-            "journal-title": "J. Neurosci."
+            "key": "e_1_2_10_81_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/0021\u20109010.88.5.879"
         },
         {
-            "key": "ref_49",
-            "doi-asserted-by": "crossref",
-            "first-page": "2352",
-            "DOI": "10.1016/j.pain.2012.08.001",
-            "article-title": "Associations between daily chronic pain intensity, daily anger expression, and trait anger expressiveness: An ecological momentary assessment study",
-            "volume": "153",
-            "author": "Bruehl",
-            "year": "2012",
-            "journal-title": "Pain"
+            "key": "e_1_2_10_82_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/00221546.2007.11772328"
         },
         {
-            "key": "ref_50",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Skelly, A.C., Chou, R., Dettori, J.R., Turner, J.A., Friedly, J.L., Rundell, S.D., Fu, R., Brodt, E.D., Ngoc Wasson, B.S., and Cassandra, M.P.H. (2018). Noninvasive nonpharmacological treatment for chronic pain: A systematic review. Comparative Effectiveness Review No. 209, Agency for Healthcare Research and Quality.",
-            "DOI": "10.23970/AHRQEPCCER209"
+            "key": "e_1_2_10_83_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.19173/irrodl.v14i4.1582"
         },
         {
-            "key": "ref_51",
-            "unstructured": "Center for Substance Abuse Treatment (2012). Chronic pain management. Managing Chronic Pain in Adults with or in Recovery from Substance Use Disorders, Substance Abuse and Mental Health Services Administration."
+            "key": "e_1_2_10_84_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1108/OTH\u201003\u20102015\u20100011"
         },
         {
-            "key": "ref_52",
-            "first-page": "112",
-            "article-title": "Mind-body therapies\u2014Use in chronic pain management",
-            "volume": "42",
-            "author": "Hassed",
-            "year": "2013",
-            "journal-title": "Aust. Fam. Physician"
+            "key": "e_1_2_10_85_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s10551\u2010018\u20103927\u2010x"
         },
         {
-            "key": "ref_53",
-            "unstructured": "Creswell, J.W. (2013). Research Design: Qualitative, Quantitative, and Mixed Methods Approaches, Sage."
+            "key": "e_1_2_10_86_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/03075079.2019.1696765"
         },
         {
-            "key": "ref_54",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Agarwal, V. (2020). The semi-structured interviewing method in a qualitative study examining complementary and alternative medicine providers\u2019 knowledge discourse. Sage Res. Methods Cases Med. Health.",
-            "DOI": "10.4135/9781529715989"
+            "key": "e_1_2_10_87_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3390/ijerph19148761"
         },
         {
-            "key": "ref_55",
-            "unstructured": "Yin, R.K. (2018). Case Study Research and Applications: Design and Methods, Sage."
+            "key": "e_1_2_10_88_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/0021\u20109010.69.3.428"
         },
         {
-            "key": "ref_56",
-            "doi-asserted-by": "crossref",
-            "first-page": "107",
-            "DOI": "10.1111/j.1365-2648.2007.04569.x",
-            "article-title": "The qualitative content analysis process",
-            "volume": "62",
-            "author": "Elo",
-            "year": "2008",
-            "journal-title": "J. Adv. Nurs."
+            "key": "e_1_2_10_89_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/job.248"
         },
         {
-            "key": "ref_57",
-            "unstructured": "Strauss, A.L., and Corbin, J.M. (1997). Grounded Theory in Practice, Sage."
+            "key": "e_1_2_10_90_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0013164405282471"
         },
         {
-            "key": "ref_58",
-            "doi-asserted-by": "crossref",
-            "first-page": "2331",
-            "DOI": "10.1098/rstb.2011.0064",
-            "article-title": "Biogeography and ecology: two views of one world",
-            "volume": "366",
-            "author": "Jenkins",
-            "year": "2011",
-            "journal-title": "Philos. Trans. R. Soc. B Biol. Sci."
+            "key": "e_1_2_10_91_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1023/A:1015630930326"
         },
         {
-            "key": "ref_59",
-            "unstructured": "Golley, F.B. (1996). A History of the Ecosystem Concept in Ecology: More than the Sum of the Parts, Yale University Press."
+            "key": "e_1_2_10_92_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/21532974.2021.1911556"
         },
         {
-            "key": "ref_60",
-            "unstructured": "Whittaker, R. (1988). Island Biogeography: Ecology, Evolution, and Conservation, Oxford University Press."
+            "key": "e_1_2_10_93_1",
+            "volume-title": "The department chair: New roles, responsibilities, and challenges (Ashe\u2010Eric higher education report, no. 1, 1993)",
+            "author": "Seagren A.",
+            "year": "1993"
         },
         {
-            "key": "ref_61",
-            "doi-asserted-by": "crossref",
-            "first-page": "206",
-            "DOI": "10.1016/j.pec.2011.08.010",
-            "article-title": "What perceptions do patients have of decision making (DM)? Toward an integrative patient-centered care model. A qualitative study using focus-group interviews",
-            "volume": "87",
-            "author": "Moreau",
-            "year": "2012",
-            "journal-title": "Patient Educ. Couns."
+            "key": "e_1_2_10_94_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/1534484311410840"
         },
         {
-            "key": "ref_62",
-            "unstructured": "Patton, M.Q. (1990). Qualitative Evaluation and Research Methods, Sage. [2nd ed.]."
+            "key": "e_1_2_10_95_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/nha3.10299"
         },
         {
-            "key": "ref_63",
-            "unstructured": "Agarwal, V. An Ecology of Wholeness: Medical Humanism, Chronic Illness, and the Body in Pain, Lexington Books. pre-publication."
+            "key": "e_1_2_10_96_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1353/book52483"
+        },
+        {
+            "key": "e_1_2_10_97_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.9790/487X\u20101811032127"
+        },
+        {
+            "key": "e_1_2_10_98_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/2319510X18811776"
+        },
+        {
+            "key": "e_1_2_10_99_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/1094428105284955"
+        },
+        {
+            "key": "e_1_2_10_100_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0149206316687295"
+        },
+        {
+            "key": "e_1_2_10_101_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.18870/hlrc.v11i0.1218"
+        },
+        {
+            "issue": "3",
+            "key": "e_1_2_10_102_1",
+            "first-page": "70",
+            "article-title": "Work on yourself first",
+            "volume": "70",
+            "author": "Stoneham D.",
+            "year": "2016",
+            "journal-title": "Talent Development"
+        },
+        {
+            "key": "e_1_2_10_103_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1371/journal.pone.0137501"
+        },
+        {
+            "key": "e_1_2_10_104_1",
+            "volume-title": "Charing the academic department: Leadership among peers",
+            "author": "Tucker A.",
+            "year": "1984"
+        },
+        {
+            "key": "e_1_2_10_105_1",
+            "unstructured": "Tugend A.(2020).\u201cOn the verge of burnout\u201d Covid\u201019's impact on faculty well\u2010being and career plans.https://connect.chronicle.com/rs/931\u2010EKA\u2010218/images/Covid%26FacultyCareerPaths_Fidelity_ResearchBrief_v3%20%281%29.pdf"
+        },
+        {
+            "key": "e_1_2_10_106_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2466/pr0.2002.91.1.220"
+        },
+        {
+            "key": "e_1_2_10_107_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/bjet.13065"
+        },
+        {
+            "key": "e_1_2_10_108_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/1523422311431220"
+        },
+        {
+            "issue": "4",
+            "key": "e_1_2_10_109_1",
+            "first-page": "389",
+            "article-title": "Commitment, psychological well\u2010being and job performance: An examination of conservation of resources (COR) theory and job burnout",
+            "volume": "9",
+            "author": "Wright T. A.",
+            "year": "2004",
+            "journal-title": "Journal of Business and Management"
+        },
+        {
+            "key": "e_1_2_10_110_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/1072\u20105245.14.2.121"
         }
     ],
     "container-title": [
-        "International Journal of Environmental Research and Public Health"
+        "Higher Education Quarterly"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://www.mdpi.com/1660-4601/17/8/2842/pdf",
+            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/hequ.12450",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -705,60 +722,100 @@
         "date-parts": [
             [
                 2024,
-                6,
-                27
+                1,
+                21
             ]
         ],
-        "date-time": "2024-06-27T02:45:27Z",
-        "timestamp": 1719456327000
+        "date-time": "2024-01-21T11:47:44Z",
+        "timestamp": 1705837664000
     },
-    "score": 12.772783,
+    "score": 16.081804,
     "resource": {
         "primary": {
-            "URL": "https://www.mdpi.com/1660-4601/17/8/2842"
+            "URL": "https://onlinelibrary.wiley.com/doi/10.1111/hequ.12450"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2020,
-                4,
-                21
+                2023,
+                7,
+                3
             ]
         ]
     },
-    "references-count": 63,
+    "references-count": 109,
     "journal-issue": {
-        "issue": "8",
-        "published-online": {
+        "issue": "1",
+        "published-print": {
             "date-parts": [
                 [
-                    2020,
-                    4
+                    2024,
+                    1
                 ]
             ]
         }
     },
     "alternative-id": [
-        "ijerph17082842"
+        "10.1111/hequ.12450"
     ],
-    "URL": "http://dx.doi.org/10.3390/ijerph17082842",
+    "URL": "http://dx.doi.org/10.1111/hequ.12450",
+    "archive": [
+        "Portico"
+    ],
     "ISSN": [
-        "1660-4601"
+        "0951-5224",
+        "1468-2273"
     ],
     "issn-type": [
         {
-            "value": "1660-4601",
+            "value": "0951-5224",
+            "type": "print"
+        },
+        {
+            "value": "1468-2273",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2020,
-                4,
-                21
+                2023,
+                7,
+                3
             ]
         ]
-    }
+    },
+    "assertion": [
+        {
+            "value": "2022-05-23",
+            "order": 0,
+            "name": "received",
+            "label": "Received",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
+        },
+        {
+            "value": "2023-06-15",
+            "order": 1,
+            "name": "accepted",
+            "label": "Accepted",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
+        },
+        {
+            "value": "2023-07-03",
+            "order": 2,
+            "name": "published",
+            "label": "Published",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
+        }
+    ]
 }

@@ -3,220 +3,400 @@
         "date-parts": [
             [
                 2024,
-                2,
-                8
+                9,
+                6
             ]
         ],
-        "date-time": "2024-02-08T00:18:31Z",
-        "timestamp": 1707351511126
+        "date-time": "2024-09-06T00:11:52Z",
+        "timestamp": 1725581512278
     },
-    "reference-count": 26,
-    "publisher": "Informa UK Limited",
-    "issue": "2",
+    "reference-count": 46,
+    "publisher": "SAGE Publications",
+    "issue": "10",
+    "license": [
+        {
+            "start": {
+                "date-parts": [
+                    [
+                        2019,
+                        10,
+                        1
+                    ]
+                ],
+                "date-time": "2019-10-01T00:00:00Z",
+                "timestamp": 1569888000000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://journals.sagepub.com/page/policies/text-and-data-mining-license"
+        }
+    ],
+    "funder": [
+        {
+            "DOI": "10.13039/100002418",
+            "name": "Intel Corporation",
+            "doi-asserted-by": "crossref",
+            "id": [
+                {
+                    "id": "10.13039/100002418",
+                    "id-type": "DOI",
+                    "asserted-by": "crossref"
+                }
+            ]
+        },
+        {
+            "name": "Moore School Research Grant Program, University of South Carolina"
+        }
+    ],
     "content-domain": {
         "domain": [
-            "www.tandfonline.com"
+            "journals.sagepub.com"
         ],
         "crossmark-restriction": true
     },
     "short-container-title": [
-        "Atlantic Journal of Communication"
+        "Production and Operations Management"
     ],
     "published-print": {
         "date-parts": [
             [
-                2024,
-                3,
-                14
+                2019,
+                10
             ]
         ]
     },
-    "DOI": "10.1080/15456870.2022.2099547",
+    "abstract": "<jats:p> Through a behavioral study, we investigate buyers\u2019 strategic order forecasting behavior in a multi\u2010period setting under a forecast accuracy\u2010based allocation policy, where the supplier allocates (proportionally) more inventory to the buyer with the better order forecast accuracy in case of scarce supply. We developed an interactive game that simulates a supply chain in which one supplier sells a key component to two buyers, who in turn sell to consumers. In each period, buyers share forecasts of future orders with their supplier. The participants in the game play the role of a buyer, while the supplier is automated. Our experimental findings suggest that rewarding forecast accuracy in allocating inventory can significantly improve the order forecast accuracy of the buyers and reduce their forecast inflation behavior. Interestingly, even without communication of the policy, buyers learn over time that more accurate forecasts lead to better service from their supplier and improve their order forecast accuracy. </jats:p>",
+    "DOI": "10.1111/poms.13066",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2022,
-                7,
-                12
+                2019,
+                6,
+                18
             ]
         ],
-        "date-time": "2022-07-12T10:42:50Z",
-        "timestamp": 1657622570000
+        "date-time": "2019-06-18T03:38:21Z",
+        "timestamp": 1560829101000
     },
-    "page": "167-179",
-    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
+    "page": "2500-2513",
+    "update-policy": "http://dx.doi.org/10.1177/sage-journals-update-policy",
     "source": "Crossref",
-    "is-referenced-by-count": 1,
+    "is-referenced-by-count": 13,
     "title": [
-        "\u201cI\u2019m in:\u201d presidential campaign announcement speeches among well known and unknown candidates"
+        "Does Forecast\u2010Accuracy\u2010Based Allocation Induce Customers to Share Truthful Order Forecasts?"
     ],
-    "prefix": "10.1080",
-    "volume": "32",
+    "prefix": "10.1177",
+    "volume": "28",
     "author": [
         {
-            "ORCID": "http://orcid.org/0000-0003-0074-2875",
-            "authenticated-orcid": false,
-            "given": "Joshua P.",
-            "family": "Bolton",
+            "given": "Pelin",
+            "family": "Pekg\u00fcn",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Department of Communication, Salisbury University, Salisbury, Maryland, USA"
+                    "name": "Moore School of Business,  University of South Carolina,  Columbia,  South Carolina, 29208, USA"
+                }
+            ]
+        },
+        {
+            "given": "Minseok",
+            "family": "Park",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Perdue School of Business,  Salisbury University,  Salisbury,  Maryland, 21801, USA"
+                }
+            ]
+        },
+        {
+            "given": "P\u0131nar",
+            "family": "Keskinocak",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "H. Milton Stewart School of Industrial and Systems Engineering,  Georgia Institute of Technology,  Atlanta,  Georgia, 30332, USA"
+                }
+            ]
+        },
+        {
+            "given": "Mani",
+            "family": "Janakiram",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Intel Corporation,  Chandler,  Arizona, 85226, USA"
                 }
             ]
         }
     ],
-    "member": "301",
+    "member": "179",
     "published-online": {
         "date-parts": [
             [
-                2022,
-                7,
-                12
+                2019,
+                10,
+                1
             ]
         ]
     },
     "reference": [
         {
-            "key": "e_1_3_2_2_1",
-            "volume-title": "The permanent campaign: Inside the world of elite political operatives",
-            "author": "Blumenthal S.",
-            "year": "1980",
-            "unstructured": "Blumenthal, S. (1980). The permanent campaign: Inside the world of elite political operatives. Boston, MA: Beacon Press."
-        },
-        {
-            "key": "e_1_3_2_3_1",
+            "key": "bibr0001-poms.13066",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/1470593108100065"
+            "DOI": "10.1111/poms.12355"
         },
         {
-            "key": "e_1_3_2_4_1",
-            "unstructured": "Burns A. (2019 April 25). Joe Biden\u2019s campaign announcement video annotated. The New York Times . Retrieved from https://www.nytimes.com/2019/04/25/us/politics/biden-campaign-video-announcement.html"
-        },
-        {
-            "key": "e_1_3_2_5_1",
-            "unstructured": "CNN Staff. (2019). Here are the 26 candidates who are running for president. CNN . Retrieved from https://www.cnn.com/2019/01/21/politics/2020-democrats-running-for-president/index.html"
-        },
-        {
-            "key": "e_1_3_2_6_1",
-            "unstructured": "C-SPAN (2019 April 30). User clip: Joe Biden campaign kickoff speech. Retrieved from https://www.c-span.org/video/?c4794842/user-clip-joe-biden-campaign-kickoff-speech"
-        },
-        {
-            "key": "e_1_3_2_7_1",
-            "volume-title": "Political campaign communication: Principles and practices",
-            "author": "Denton R. E.",
-            "year": "2019",
-            "unstructured": "Denton, R. E., Jr, Trent, J. S., & Friedenberg, R. V. (2019). Political campaign communication: Principles and practices (9th ed.). Westport, CT: Praeger.",
-            "edition": "9"
-        },
-        {
-            "key": "e_1_3_2_8_1",
+            "key": "bibr0002-poms.13066",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1057/bm.2009.19"
+            "DOI": "10.1016/j.ijpe.2016.08.009"
         },
         {
-            "key": "e_1_3_2_9_1",
-            "unstructured": "Hamby P. (2014 November 5). Get ready: 2016 starts now. CNN . Retrieved from http://www.cnn.com/2014/11/05/politics/2016-starts-now/"
-        },
-        {
-            "key": "e_1_3_2_10_1",
-            "unstructured": "KTVU FOX2. (2019 January 27). Transcript: Kamala Harris kicks off presidential campaign in Oakland. KTVU FOX2 . Retrieved from https://www.ktvu.com/news/transcript-kamala-harris-kicks-off-presidential-campaign-in-oakland"
-        },
-        {
-            "key": "e_1_3_2_11_1",
-            "unstructured": "Lange K. (2019 April 15). Full transcript of Pete Buttigieg\u2019s 2020 presidential campaign announcement. Indianapolis Star . Retrieved from https://www.indystar.com/story/news/politics/2019/04/15/full-transcript-pete-buttigiegs-2020-presidential-campaign-announcement/3472030002/"
-        },
-        {
-            "key": "e_1_3_2_12_1",
-            "unstructured": "Monmouth University (2019 August 8). Iowa: Biden holds lead Warren on the chase . Author. Retrieved from https://www.monmouth.edu/polling-institute/documents/monmouthpoll_ia_080819.pdf/"
-        },
-        {
-            "key": "e_1_3_2_13_1",
+            "key": "bibr0003-poms.13066",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/pa.139"
+            "DOI": "10.1016/j.jom.2005.10.001"
         },
         {
-            "key": "e_1_3_2_14_1",
+            "key": "bibr0004-poms.13066",
+            "unstructured": "Bloomberg. 2002. Cisco: Behind the hype. Available at http://www.bloomberg.com/news/articles/2002-01-20/cisco-behindthe-hype (accessed date September 24, 2016)."
+        },
+        {
+            "key": "bibr0005-poms.13066",
             "doi-asserted-by": "publisher",
-            "DOI": "10.4135/9781483326702"
+            "DOI": "10.1111/poms.12017"
         },
         {
-            "key": "e_1_3_2_15_1",
+            "key": "bibr0006-poms.13066",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/pa.67"
+            "DOI": "10.1287/msom.1060.0190"
         },
         {
-            "key": "e_1_3_2_16_1",
+            "key": "bibr0007-poms.13066",
             "doi-asserted-by": "publisher",
-            "DOI": "10.3138/9781442669734"
+            "DOI": "10.1287/mnsc.45.8.1091"
         },
         {
-            "key": "e_1_3_2_17_1",
-            "first-page": "350",
-            "article-title": "Candidate announcement addresses: Campaign strategies and voting behavior",
-            "volume": "26",
-            "author": "Palazzolo D. T.",
-            "year": "1996",
-            "unstructured": "Palazzolo, D. T., & Theriault, S. M. (1996). Candidate announcement addresses: Campaign strategies and voting behavior. Presidential Studies Quarterly, 26, 350\u2013363. https://www.jstor.org/stable/27551582",
-            "journal-title": "Presidential Studies Quarterly"
-        },
-        {
-            "key": "e_1_3_2_18_1",
-            "unstructured": "Pioneer Press. (2019 February 10). Senator Amy Klobuchar\u2019s remarks as prepared for delivery. Twin Cities Pioneer Press . Retrieved from https://www.twincities.com/2019/02/10/amy-klobuchars-big-speech-today-heres-a-sneak-peak/"
-        },
-        {
-            "key": "e_1_3_2_19_1",
+            "key": "bibr0008-poms.13066",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2307/2111296"
+            "DOI": "10.1080/07408179908969885"
         },
         {
-            "key": "e_1_3_2_20_1",
+            "key": "bibr0009-poms.13066",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF02729836"
+            "DOI": "10.1287/mnsc.47.5.629.10486"
         },
         {
-            "key": "e_1_3_2_21_1",
+            "key": "bibr0010-poms.13066",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/1470593109103068"
+            "DOI": "10.1287/mnsc.2015.2193"
         },
         {
-            "key": "e_1_3_2_22_1",
-            "unstructured": "Soga A. (2019 February 19). Bernie Sanders announces 2020 presidential campaign. Burlington Free Press . Retrieved from https://www.burlingtonfreepress.com/story/news/politics/elections/2019/02/19/bernie-sanders-2020-presidential-campaign-announcement-democratic-party/2911315002/"
-        },
-        {
-            "key": "e_1_3_2_23_1",
+            "key": "bibr0011-poms.13066",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/03637757809375974"
+            "DOI": "10.1287/mnsc.1080.0983"
         },
         {
-            "key": "e_1_3_2_24_1",
-            "first-page": "43",
-            "volume-title": "The 1992 Presidential Campaign: A communication perspective",
-            "author": "Trent J. S",
-            "year": "1994",
-            "unstructured": "Trent, J. S. (1994). The early campaign. In R. E. Denton (Ed.), The 1992 Presidential Campaign: A communication perspective (pp. 43\u201364). New York, NY: Praeger."
+            "key": "bibr0012-poms.13066",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/mnsc.1120.1531"
         },
         {
-            "key": "e_1_3_2_25_1",
-            "unstructured": "VT Editor (2019 March 2). Full text: Sen. Bernie Sanders\u2019 2020 presidential campaign kickoff speech. VTDigger . Retrieved from https://VTdigger.org/2019/03/02/full-text-sen-bernie-sanders-2020-presidential-campaign-kickoff-speech/"
+            "key": "bibr0013-poms.13066",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/poms.12257"
         },
         {
-            "key": "e_1_3_2_26_1",
-            "unstructured": "Young S. (2019 February 9). Read: Elizabeth Warren\u2019s 2020 announcement speech. Mass Live! Retrieved from https://www.masslive.com/politics/2019/02/read-elizabeth-warrens-2020-announcement-speech.html"
+            "key": "bibr0014-poms.13066",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/mnsc.49.12.1653.25115"
         },
         {
-            "key": "e_1_3_2_27_1",
-            "unstructured": "Zhou L. (2019 January 21). Kamala Harris announces her historic 2020 presidential campaign. Vox . Retrieved from https://www.vox.com/2019/1/21/18175628/kamala-harris-2020-campaign-president"
+            "key": "bibr0015-poms.13066",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/mnsc.1050.0436"
+        },
+        {
+            "key": "bibr0016-poms.13066",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1937-5956.2012.01422.x"
+        },
+        {
+            "key": "bibr0017-poms.13066",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jom.2012.12.001"
+        },
+        {
+            "key": "bibr0018-poms.13066",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/mnsc.2016.2655"
+        },
+        {
+            "key": "bibr0019-poms.13066",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/mnsc.1050.0471"
+        },
+        {
+            "key": "bibr0020-poms.13066",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1937-5956.2010.01199.x"
+        },
+        {
+            "key": "bibr0021-poms.13066",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1937-5956.2011.01284.x"
+        },
+        {
+            "key": "bibr0022-poms.13066",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/msom.1070.0205"
+        },
+        {
+            "key": "bibr0023-poms.13066",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/msom.1120.0400"
+        },
+        {
+            "key": "bibr0024-poms.13066",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/mksc.2016.0981"
+        },
+        {
+            "key": "bibr0025-poms.13066",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1937-5956.2005.tb00017.x"
+        },
+        {
+            "key": "bibr0026-poms.13066",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/educ.1110.0090"
+        },
+        {
+            "key": "bibr0027-poms.13066",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/mnsc.1110.1382"
+        },
+        {
+            "key": "bibr0028-poms.13066",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/mnsc.2015.2259"
+        },
+        {
+            "key": "bibr0029-poms.13066",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2139/ssrn.1021950"
+        },
+        {
+            "key": "bibr0030-poms.13066",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/mnsc.43.4.546"
+        },
+        {
+            "key": "bibr0031-poms.13066",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.ejor.2003.08.019"
+        },
+        {
+            "key": "bibr0032-poms.13066",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1937-5956.2009.01013.x"
+        },
+        {
+            "key": "bibr0033-poms.13066",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/poms.12105"
+        },
+        {
+            "key": "bibr0034-poms.13066",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/poms.12343"
+        },
+        {
+            "key": "bibr0035-poms.13066",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1540-5915.2011.00334.x"
+        },
+        {
+            "key": "bibr0036-poms.13066",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/mnsc.1060.0521"
+        },
+        {
+            "key": "bibr0037-poms.13066",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/mnsc.1110.1334"
+        },
+        {
+            "key": "bibr0038-poms.13066",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/mnsc.2014.1905"
+        },
+        {
+            "key": "bibr0039-poms.13066",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/opre.1090.0750"
+        },
+        {
+            "key": "bibr0040-poms.13066",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/mnsc.2017.2805"
+        },
+        {
+            "key": "bibr0041-poms.13066",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/mnsc.46.3.404.12070"
+        },
+        {
+            "volume-title": "Nonparametric Statistics for the Behavioral Sciences",
+            "year": "1965",
+            "author": "Seigel S.",
+            "key": "bibr0042-poms.13066"
+        },
+        {
+            "key": "bibr0043-poms.13066",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/mnsc.2015.2261"
+        },
+        {
+            "key": "bibr0044-poms.13066",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/mnsc.35.3.321"
+        },
+        {
+            "key": "bibr0045-poms.13066",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/mnsc.1100.1204"
+        },
+        {
+            "key": "bibr0046-poms.13066",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/mnsc.1040.0317"
         }
     ],
     "container-title": [
-        "Atlantic Journal of Communication"
+        "Production and Operations Management"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/15456870.2022.2099547",
+            "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1111%2Fpoms.13066",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://journals.sagepub.com/doi/pdf/10.1111/poms.13066",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://journals.sagepub.com/doi/full-xml/10.1111/poms.13066",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://journals.sagepub.com/doi/pdf/10.1111/poms.13066",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -226,91 +406,63 @@
         "date-parts": [
             [
                 2024,
-                2,
-                7
+                9,
+                5
             ]
         ],
-        "date-time": "2024-02-07T11:38:54Z",
-        "timestamp": 1707305934000
+        "date-time": "2024-09-05T19:23:32Z",
+        "timestamp": 1725564212000
     },
-    "score": 15.791133,
+    "score": 12.988238,
     "resource": {
         "primary": {
-            "URL": "https://www.tandfonline.com/doi/full/10.1080/15456870.2022.2099547"
+            "URL": "https://journals.sagepub.com/doi/10.1111/poms.13066"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2022,
-                7,
-                12
+                2019,
+                10
             ]
         ]
     },
-    "references-count": 26,
+    "references-count": 46,
     "journal-issue": {
-        "issue": "2",
+        "issue": "10",
         "published-print": {
             "date-parts": [
                 [
-                    2024,
-                    3,
-                    14
+                    2019,
+                    10
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1080/15456870.2022.2099547"
+        "10.1111/poms.13066"
     ],
-    "URL": "http://dx.doi.org/10.1080/15456870.2022.2099547",
+    "URL": "http://dx.doi.org/10.1111/poms.13066",
     "ISSN": [
-        "1545-6870",
-        "1545-6889"
+        "1059-1478",
+        "1937-5956"
     ],
     "issn-type": [
         {
-            "value": "1545-6870",
-            "type": "print"
+            "type": "print",
+            "value": "1059-1478"
         },
         {
-            "value": "1545-6889",
-            "type": "electronic"
+            "type": "electronic",
+            "value": "1937-5956"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2022,
-                7,
-                12
+                2019,
+                10
             ]
         ]
-    },
-    "assertion": [
-        {
-            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
-            "order": 1,
-            "name": "peerreview_statement",
-            "label": "Peer Review Statement"
-        },
-        {
-            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=hajc20",
-            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=hajc20",
-            "order": 2,
-            "name": "aims_and_scope_url",
-            "label": "Aim & Scope"
-        },
-        {
-            "value": "2022-07-12",
-            "order": 2,
-            "name": "published",
-            "label": "Published",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        }
-    ]
+    }
 }

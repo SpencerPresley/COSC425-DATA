@@ -2,197 +2,391 @@
     "indexed": {
         "date-parts": [
             [
-                2023,
-                10,
-                13
+                2024,
+                7,
+                5
             ]
         ],
-        "date-time": "2023-10-13T05:09:14Z",
-        "timestamp": 1697173754316
+        "date-time": "2024-07-05T18:38:11Z",
+        "timestamp": 1720204691666
     },
-    "reference-count": 14,
-    "publisher": "Wiley",
-    "issue": "4",
-    "license": [
+    "reference-count": 52,
+    "publisher": "Informa UK Limited",
+    "issue": "7",
+    "funder": [
         {
-            "start": {
-                "date-parts": [
-                    [
-                        2023,
-                        1,
-                        2
-                    ]
-                ],
-                "date-time": "2023-01-02T00:00:00Z",
-                "timestamp": 1672617600000
-            },
-            "content-version": "vor",
-            "delay-in-days": 0,
-            "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+            "DOI": "10.13039/501100002486",
+            "name": "Hankuk University of Foreign Studies",
+            "doi-asserted-by": "publisher",
+            "award": [
+                "20181169001"
+            ],
+            "id": [
+                {
+                    "id": "10.13039/501100002486",
+                    "id-type": "DOI",
+                    "asserted-by": "publisher"
+                }
+            ]
         }
     ],
     "content-domain": {
         "domain": [
-            "onlinelibrary.wiley.com"
+            "www.tandfonline.com"
         ],
         "crossmark-restriction": true
     },
     "short-container-title": [
-        "Bulletin of Econ Res"
+        "Technology Analysis &amp; Strategic Management"
     ],
     "published-print": {
         "date-parts": [
             [
-                2023,
-                10
+                2019,
+                7,
+                3
             ]
         ]
     },
-    "abstract": "<jats:title>Abstract</jats:title><jats:p>In the early 2000s, the Montgomery County (Maryland) Public School system implemented district\u2010wide changes to funding, curriculum, staffing, and technology. Using data from 1995 to 2014, we employ a difference\u2010in\u2010differences strategy to show that the reforms significantly increased the percentage of students in Montgomery County who scored advanced on third\u2010 and fifth\u2010grade math and reading tests. Using an event study strategy, we find that the positive impacts extended through the end of the panel. Our results contribute to the literature on school reform by finding positive impacts of school reform in a district that was high performing prior to reforms.</jats:p>",
-    "DOI": "10.1111/boer.12382",
+    "DOI": "10.1080/09537325.2018.1558197",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2023,
-                1,
-                2
+                2018,
+                12,
+                18
             ]
         ],
-        "date-time": "2023-01-02T11:35:12Z",
-        "timestamp": 1672659312000
+        "date-time": "2018-12-18T03:19:07Z",
+        "timestamp": 1545103147000
     },
-    "page": "813-827",
-    "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+    "page": "848-861",
+    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
     "source": "Crossref",
-    "is-referenced-by-count": 0,
+    "is-referenced-by-count": 4,
     "title": [
-        "District\u2010wide school reform and student performance: Evidence from Montgomery County, Maryland"
+        "Impact of Korean pro-market reforms on firm innovation strategies"
     ],
-    "prefix": "10.1111",
-    "volume": "75",
+    "prefix": "10.1080",
+    "volume": "31",
     "author": [
         {
-            "given": "Mark",
-            "family": "Cimiluca",
+            "given": "Kwang Wook",
+            "family": "Gang",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Department of Economics and Finance Salisbury University  Salisbury Maryland USA"
+                    "name": "Franklin P.\u00a0Perdue School of Business, Salisbury University, Salisbury, MD, USA"
                 }
             ]
         },
         {
-            "ORCID": "http://orcid.org/0000-0002-9671-0853",
-            "authenticated-orcid": false,
-            "given": "Brian",
-            "family": "Hill",
+            "given": "Byungchul",
+            "family": "Choi",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Department of Economics and Finance Salisbury University  Salisbury Maryland USA"
+                    "name": "College of Business, Hankuk University of Foreign Studies, Seoul, Korea"
                 }
             ]
         }
     ],
-    "member": "311",
+    "member": "301",
     "published-online": {
         "date-parts": [
             [
-                2023,
-                1,
-                2
+                2018,
+                12,
+                18
             ]
         ]
     },
     "reference": [
         {
-            "key": "e_1_2_11_2_1",
-            "unstructured": "Baltimore Sun. (2002 March 6). Bye\u2010bye MSPAP. Baltimore Sun. Retrieved October/November 2016 fromhttps://articles.baltimoresun.com/2002-03-06/news/0203060065_1_optional-test-local-school-boards-school-officials"
-        },
-        {
-            "key": "e_1_2_11_3_1",
+            "key": "CIT0001",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1162/003355304772839588"
+            "DOI": "10.1002/smj.157"
         },
         {
-            "key": "e_1_2_11_4_1",
+            "key": "CIT0002",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0019793918774318"
+            "DOI": "10.1037/0022-3514.51.6.1173"
         },
         {
-            "key": "e_1_2_11_5_1",
+            "key": "CIT0003",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0895904817719520"
+            "DOI": "10.1177/014920639101700108"
         },
         {
-            "key": "e_1_2_11_6_1",
-            "volume-title": "Differentiated treatment in Montgomery County Public Schools",
-            "author": "Elmore R.",
-            "year": "2006"
-        },
-        {
-            "key": "e_1_2_11_7_1",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Gill B. Zimmer R. Christman J. & Blanc S. (2007). State Takeover School Restructuring Private Management and Student Achievement in Philadelphia.https://doi.org/10.7249/mg533",
-            "DOI": "10.7249/MG533"
-        },
-        {
-            "key": "e_1_2_11_8_1",
-            "unstructured": "Harris D. N. &Larsen M.(2016).The effects of the New Orleans post\u2010Katrina school reforms on student academic outcomes. (Technical Report) New Orleans LA Education Research Alliance for New Orleans. Retrieved fromhttps://educationresearchalliancenola.org/files/publications/The\u2010Effects\u2010of\u2010the\u2010New\u2010Orleans\u2010Post\u2010Katrina\u2010School\u2010Reforms\u2010on\u2010Student\u2010Academic\u2010Outcomes.pdf"
-        },
-        {
-            "key": "e_1_2_11_9_1",
+            "key": "CIT0004",
             "doi-asserted-by": "publisher",
-            "DOI": "10.3102/0013189X08323842"
+            "DOI": "10.2307/256301"
         },
         {
-            "key": "e_1_2_11_10_1",
-            "unstructured": "Maryland Department of Education. (2000).Maryland school performance program report. Baltimore MD.https://salisbury.on.worldcat.org/oclc/22922532"
-        },
-        {
-            "key": "e_1_2_11_11_1",
-            "unstructured": "Montgomery County. (1999).Our call to action: Raising the bar and closing the gap because all children matter. Revised.https://files.eric.ed.gov/fulltext/ED455334.pdf"
-        },
-        {
-            "key": "e_1_2_11_12_1",
-            "unstructured": "Olson L.(2008 February 19).When \u2018unequal\u2019 is fair treatment.Education Week.http://www.edweek.org/ew/articles/2008/02/20/24zones.h27.html"
-        },
-        {
-            "key": "e_1_2_11_13_1",
+            "key": "CIT0005",
             "doi-asserted-by": "publisher",
-            "DOI": "10.3102/0162373716685824"
+            "DOI": "10.1016/j.respol.2009.12.005"
         },
         {
-            "key": "e_1_2_11_14_1",
+            "key": "CIT0006",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1162/EDFP_a_00188"
+            "DOI": "10.2307/30040617"
         },
         {
-            "key": "e_1_2_11_15_1",
+            "key": "CIT0007",
             "doi-asserted-by": "publisher",
-            "DOI": "10.3102/0162373717705729"
+            "DOI": "10.1287/orsc.1060.0202"
+        },
+        {
+            "key": "CIT0008",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/smj.949"
+        },
+        {
+            "key": "CIT0009",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jwb.2013.10.002"
+        },
+        {
+            "key": "CIT0010",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jbusres.2014.10.007"
+        },
+        {
+            "key": "CIT0011",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1467-8551.2009.00628.x"
+        },
+        {
+            "key": "CIT0012",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/3069342"
+        },
+        {
+            "key": "CIT0013",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5465/amj.2008.30772877"
+        },
+        {
+            "key": "CIT0014",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/mnsc.35.12.1504"
+        },
+        {
+            "key": "CIT0015",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/1097-0266(200010/11)21:10/11<1105::AID-SMJ133>3.0.CO;2-E"
+        },
+        {
+            "key": "CIT0016",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/mnsc.30.6.682"
+        },
+        {
+            "issue": "3",
+            "key": "CIT0017",
+            "first-page": "281",
+            "volume": "8",
+            "author": "Gang K. W.",
+            "year": "2018",
+            "journal-title": "International Journal of Corporate Governance"
+        },
+        {
+            "key": "CIT0018",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/smj.4250140906"
+        },
+        {
+            "key": "CIT0019",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/1540-5885.1330191"
+        },
+        {
+            "key": "CIT0020",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/2058544"
+        },
+        {
+            "key": "CIT0021",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/256948"
+        },
+        {
+            "key": "CIT0022",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2189/asqu.2010.55.2.255"
+        },
+        {
+            "key": "CIT0023",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/257025"
+        },
+        {
+            "key": "CIT0024",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/smj.4250140107"
+        },
+        {
+            "key": "CIT0025",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.respol.2008.04.010"
+        },
+        {
+            "key": "CIT0026",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/0304-405X(76)90026-X"
+        },
+        {
+            "key": "CIT0027",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/S0304-405X(03)00068-0"
+        },
+        {
+            "key": "CIT0028",
+            "volume-title": "Djnomics: A New Foundation for the Korean Economy",
+            "author": "Kim D. J.",
+            "year": "1999"
+        },
+        {
+            "key": "CIT0029",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1057/jibs.2010.17"
+        },
+        {
+            "key": "CIT0030",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/orsc.1080.0360"
+        },
+        {
+            "key": "CIT0031",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s11138-011-0149-1"
+        },
+        {
+            "issue": "3",
+            "key": "CIT0032",
+            "first-page": "53",
+            "volume": "3",
+            "author": "Long M.",
+            "year": "1985",
+            "journal-title": "Midland Corporate Finance Journal"
+        },
+        {
+            "key": "CIT0033",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1086/259000"
+        },
+        {
+            "key": "CIT0034",
+            "first-page": "127",
+            "volume-title": "R&D, Patents, and Productivity",
+            "author": "Mansfield E.",
+            "year": "1984"
+        },
+        {
+            "key": "CIT0035",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1509/jmkg.67.1.63.18595"
+        },
+        {
+            "key": "CIT0036",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/0304-405X(84)90023-0"
+        },
+        {
+            "key": "CIT0037",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1017/CBO9780511808678"
+        },
+        {
+            "key": "CIT0038",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/smj.308"
+        },
+        {
+            "key": "CIT0039",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1787/eco_surveys-kor-1998-en"
+        },
+        {
+            "key": "CIT0040",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1787/eco_surveys-kor-1999-en"
+        },
+        {
+            "key": "CIT0041",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/smj.391"
+        },
+        {
+            "key": "CIT0042",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5465/amp.2009.43479264"
+        },
+        {
+            "key": "CIT0043",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/978-1-349-14865-3"
+        },
+        {
+            "issue": "4",
+            "key": "CIT0044",
+            "first-page": "647",
+            "volume": "14",
+            "author": "Pradhan J. P.",
+            "year": "2003",
+            "journal-title": "Journal of Indian School of Political Economy"
+        },
+        {
+            "key": "CIT0045",
+            "volume-title": "The Theory of Economic Development: An Inquiry into Pro\u00d6ts, Capital, Credit, Interest and the Business Cycle",
+            "author": "Schumpeter J. A.",
+            "year": "1934"
+        },
+        {
+            "key": "CIT0046",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.4324/9780203202050"
+        },
+        {
+            "key": "CIT0047",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/(SICI)1097-0266(200001)21:1<31::AID-SMJ76>3.0.CO;2-T"
+        },
+        {
+            "key": "CIT0048",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/smj.4250171004"
+        },
+        {
+            "key": "CIT0049",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/3665906"
+        },
+        {
+            "key": "CIT0050",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/1097-0266(200101)22:2<157::AID-SMJ152>3.0.CO;2-2"
+        },
+        {
+            "key": "CIT0051",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/smj.4250050207"
+        },
+        {
+            "key": "CIT0052",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1257/jep.4.3.41"
         }
     ],
     "container-title": [
-        "Bulletin of Economic Research"
+        "Technology Analysis &amp; Strategic Management"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/boer.12382",
-            "content-type": "application/pdf",
-            "content-version": "vor",
-            "intended-application": "text-mining"
-        },
-        {
-            "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1111/boer.12382",
-            "content-type": "application/xml",
-            "content-version": "vor",
-            "intended-application": "text-mining"
-        },
-        {
-            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/boer.12382",
+            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/09537325.2018.1558197",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -201,74 +395,94 @@
     "deposited": {
         "date-parts": [
             [
-                2023,
-                10,
-                12
+                2019,
+                5,
+                17
             ]
         ],
-        "date-time": "2023-10-12T04:08:08Z",
-        "timestamp": 1697083688000
+        "date-time": "2019-05-17T09:04:53Z",
+        "timestamp": 1558083893000
     },
-    "score": 16.642124,
+    "score": 14.778338,
     "resource": {
         "primary": {
-            "URL": "https://onlinelibrary.wiley.com/doi/10.1111/boer.12382"
+            "URL": "https://www.tandfonline.com/doi/full/10.1080/09537325.2018.1558197"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2023,
-                1,
-                2
+                2018,
+                12,
+                18
             ]
         ]
     },
-    "references-count": 14,
+    "references-count": 52,
     "journal-issue": {
-        "issue": "4",
+        "issue": "7",
+        "published-online": {
+            "date-parts": [
+                [
+                    2019,
+                    1,
+                    21
+                ]
+            ]
+        },
         "published-print": {
             "date-parts": [
                 [
-                    2023,
-                    10
+                    2019,
+                    7,
+                    3
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1111/boer.12382"
+        "10.1080/09537325.2018.1558197"
     ],
-    "URL": "http://dx.doi.org/10.1111/boer.12382",
-    "archive": [
-        "Portico"
-    ],
+    "URL": "http://dx.doi.org/10.1080/09537325.2018.1558197",
     "ISSN": [
-        "0307-3378",
-        "1467-8586"
+        "0953-7325",
+        "1465-3990"
     ],
     "issn-type": [
         {
-            "value": "0307-3378",
+            "value": "0953-7325",
             "type": "print"
         },
         {
-            "value": "1467-8586",
+            "value": "1465-3990",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2023,
-                1,
-                2
+                2018,
+                12,
+                18
             ]
         ]
     },
     "assertion": [
         {
-            "value": "2021-08-12",
+            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
+            "order": 1,
+            "name": "peerreview_statement",
+            "label": "Peer Review Statement"
+        },
+        {
+            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=ctas20",
+            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=ctas20",
+            "order": 2,
+            "name": "aims_and_scope_url",
+            "label": "Aim & Scope"
+        },
+        {
+            "value": "2017-05-27",
             "order": 0,
             "name": "received",
             "label": "Received",
@@ -278,8 +492,18 @@
             }
         },
         {
-            "value": "2022-12-04",
+            "value": "2018-10-02",
             "order": 1,
+            "name": "revised",
+            "label": "Revised",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
+        },
+        {
+            "value": "2018-11-20",
+            "order": 2,
             "name": "accepted",
             "label": "Accepted",
             "group": {
@@ -288,8 +512,8 @@
             }
         },
         {
-            "value": "2023-01-02",
-            "order": 2,
+            "value": "2018-12-18",
+            "order": 3,
             "name": "published",
             "label": "Published",
             "group": {

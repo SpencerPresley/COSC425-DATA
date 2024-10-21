@@ -31,6 +31,7 @@ class AbstractCategoryMap:
         Provides functionality to create a mapping between abstracts, categories, and titles
         from a set of files, and stores this mapping in a JSON format.
     """
+
     def __init__(
         self,
         *,

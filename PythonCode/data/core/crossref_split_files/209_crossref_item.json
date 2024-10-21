@@ -2,498 +2,347 @@
     "indexed": {
         "date-parts": [
             [
-                2024,
-                1,
-                25
+                2022,
+                4,
+                2
             ]
         ],
-        "date-time": "2024-01-25T11:08:12Z",
-        "timestamp": 1706180892935
+        "date-time": "2022-04-02T13:01:32Z",
+        "timestamp": 1648904492557
     },
-    "reference-count": 80,
-    "publisher": "Informa UK Limited",
-    "issue": "1",
+    "reference-count": 45,
+    "publisher": "IGI Global",
     "content-domain": {
-        "domain": [
-            "www.tandfonline.com"
-        ],
-        "crossmark-restriction": true
+        "domain": [],
+        "crossmark-restriction": false
     },
-    "short-container-title": [
-        "Sexual and Gender Diversity in Social Services"
-    ],
     "published-print": {
         "date-parts": [
             [
-                2024,
-                1,
-                2
+                2020
             ]
         ]
     },
-    "DOI": "10.1080/10538720.2023.2245342",
-    "type": "journal-article",
+    "abstract": "<jats:p>This study examines influencing factors for users' intentions to tap through mobile advertisements. This chapter uses a data set with 115,899 records of ad tap-through from a mobile advertising company in China to fit a logit model to examine how the probability of advertisement tap-through is related to the identified factors. The results show that the influencing variables are application type, mobile operators, scrolling frequency, and the regional income level as they are positively correlated with the likelihood whether users would tap on certain types of advertising. Moreover, a Bayesian network model is used to estimate the conditional probability for a user to tap on an advertisement in an application after the user already taps on another advertisement in the same application. Based on the findings, strategies for mobile advertisers to engage in effective and targeted mobile advertising are proposed. </jats:p>",
+    "DOI": "10.4018/978-1-7998-2235-6.ch006",
+    "type": "book-chapter",
     "created": {
         "date-parts": [
             [
-                2023,
-                8,
-                11
+                2020,
+                5,
+                21
             ]
         ],
-        "date-time": "2023-08-11T03:51:20Z",
-        "timestamp": 1691725880000
+        "date-time": "2020-05-21T13:05:20Z",
+        "timestamp": 1590066320000
     },
-    "page": "27-57",
-    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
+    "page": "116-137",
     "source": "Crossref",
     "is-referenced-by-count": 0,
     "title": [
-        "LGBTQ\u2009+\u2009people\u2019s lived experience with LGBTQ\u2009+\u2009serving organizations during the pandemic: A qualitative study"
+        "Using Big Data to Understand Chinese Users' Intentions to Tap Through Mobile Advertisements"
     ],
-    "prefix": "10.1080",
-    "volume": "36",
+    "prefix": "10.4018",
     "author": [
         {
-            "given": "Kathryn",
-            "family": "Wagner",
+            "ORCID": "http://orcid.org/0000-0002-5318-809X",
+            "authenticated-orcid": true,
+            "given": "Jing (\"Jim\")",
+            "family": "Quan",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Department of Psychology, Gallaudet University, Washington, District of Columbia, USA"
-                }
-            ]
-        },
-        {
-            "given": "Michele M.",
-            "family": "Schlehofer",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Psychology, Salisbury University, Salisbury, Maryland, USA"
+                    "name": "Salisbury University, USA"
                 }
             ]
         }
     ],
-    "member": "301",
-    "published-online": {
-        "date-parts": [
-            [
-                2023,
-                8,
-                10
-            ]
-        ]
-    },
+    "member": "2432",
     "reference": [
         {
-            "key": "e_1_3_5_2_1",
+            "key": "978-1-7998-2235-6.ch006.-1",
+            "unstructured": "Ahn, H., Kim, K., & Han, I. (2006). Mobile advertisement recommender system using collaborative filtering: MAR-CF. Proceedings from the KGSF-Conference 2006, 709-715."
+        },
+        {
+            "key": "978-1-7998-2235-6.ch006.-2",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1037/sgd0000516"
+            "DOI": "10.1108/JRIM-Mar-2012-0013"
         },
         {
-            "key": "e_1_3_5_3_1",
+            "key": "978-1-7998-2235-6.ch006.-3",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1503/cmaj.141076"
+            "DOI": "10.1002/dir.10000"
         },
         {
-            "key": "e_1_3_5_4_1",
-            "unstructured": "American Psychological Association. (2020). How COVID 19 impacts sexual and gender minorities. American Psychological Association: https://www.apa.org/topics/covid-19/sexual-gender-minorities"
+            "issue": "3",
+            "key": "978-1-7998-2235-6.ch006.-4",
+            "first-page": "181",
+            "article-title": "Driving consumer acceptance of mobile marketing: A theoretical framework and empirical study.",
+            "volume": "6",
+            "author": "H. H.Bauer",
+            "year": "2005",
+            "journal-title": "Journal of Electronic Commerce Research"
         },
         {
-            "key": "e_1_3_5_5_1",
-            "unstructured": "Armed Conflict Location and Event Data (2020). Demonstrations and political violence in America: New data for Summer 2020. https://acleddata.com/2020/09/03/demonstrations-political-violence-in-america-new-data-for-summer-2020/"
+            "key": "978-1-7998-2235-6.ch006.-5",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.techfore.2011.08.011"
         },
         {
-            "key": "e_1_3_5_6_1",
-            "volume-title": "The practice of social research",
-            "author": "Babbie E.",
+            "key": "978-1-7998-2235-6.ch006.-6",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2501/S0265048709200710"
+        },
+        {
+            "issue": "2",
+            "key": "978-1-7998-2235-6.ch006.-7",
+            "first-page": "33",
+            "article-title": "Consumer attitude toward mobile advertising in an emerging market: An empirical study.",
+            "volume": "1",
+            "author": "H. K.Chowdhury",
+            "year": "2006",
+            "journal-title": "International Journal of Mobile Marketing"
+        },
+        {
+            "key": "978-1-7998-2235-6.ch006.-8",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/mnsc.1060.0514"
+        },
+        {
+            "key": "978-1-7998-2235-6.ch006.-9",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/MDM.2006.105"
+        },
+        {
+            "key": "978-1-7998-2235-6.ch006.-10",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.chb.2015.03.051"
+        },
+        {
+            "key": "978-1-7998-2235-6.ch006.-11",
+            "unstructured": "Dogtiev, A. (2016). Mobile Advertising Revenue Forecasts Roundup. http://www.mobyaffiliates.com/blog/mobile-advertising-blog/mobile-advertising-revenue-forecasts-roundup/"
+        },
+        {
+            "key": "978-1-7998-2235-6.ch006.-12",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/1080569911423964"
+        },
+        {
+            "key": "978-1-7998-2235-6.ch006.-13",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.17722/jorm.v6i1.130"
+        },
+        {
+            "key": "978-1-7998-2235-6.ch006.-14",
+            "author": "W.Huang",
             "year": "2010",
-            "unstructured": "Babbie, E. (2010). The practice of social research (12th ed.). Wadsworth.",
-            "edition": "12"
+            "journal-title": "Credibility of the mobile phone advertising media. Journalism & Media Research, (9), 24-26"
         },
         {
-            "key": "e_1_3_5_7_1",
+            "issue": "1",
+            "key": "978-1-7998-2235-6.ch006.-15",
+            "first-page": "50",
+            "article-title": "Mobile media use and its impact on consumer attitudes toward mobile advertising.",
+            "volume": "2",
+            "author": "J. W.Jun",
+            "year": "2007",
+            "journal-title": "International Journal of Mobile Marketing"
+        },
+        {
+            "key": "978-1-7998-2235-6.ch006.-16",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1037/a0023244"
+            "DOI": "10.1016/j.techfore.2014.01.011"
         },
         {
-            "key": "e_1_3_5_8_1",
+            "key": "978-1-7998-2235-6.ch006.-17",
+            "first-page": "1",
+            "article-title": "Mobile advertisement system using data push scheduling based on user preference.",
+            "author": "Y.Kim",
+            "year": "2009",
+            "journal-title": "Proceedings of the 2009 Wireless Telecommunications Symposium"
+        },
+        {
+            "key": "978-1-7998-2235-6.ch006.-18",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/2631831820939017"
+            "DOI": "10.2501/S0021849909090035"
         },
         {
-            "key": "e_1_3_5_9_1",
+            "issue": "2",
+            "key": "978-1-7998-2235-6.ch006.-19",
+            "first-page": "87",
+            "article-title": "Attitudes toward mobile advertising: A study of mobile web display and mobile app display advertising.",
+            "volume": "19",
+            "author": "T. D.Le",
+            "year": "2014",
+            "journal-title": "Asian Academy of Management Journal"
+        },
+        {
+            "key": "978-1-7998-2235-6.ch006.-20",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00918369.2020.1868190"
+            "DOI": "10.1016/j.chb.2016.07.027"
         },
         {
-            "key": "e_1_3_5_10_1",
+            "key": "978-1-7998-2235-6.ch006.-21",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1525/sp.2009.56.4.647"
+            "DOI": "10.2224/sbp.2014.42.9.1409"
         },
         {
-            "key": "e_1_3_5_11_1",
+            "issue": "2",
+            "key": "978-1-7998-2235-6.ch006.-22",
+            "first-page": "28",
+            "article-title": "Mobile advertising: Does it work for everyone?",
+            "volume": "4",
+            "author": "J.Ma",
+            "year": "2009",
+            "journal-title": "International Journal of Mobile Marketing"
+        },
+        {
+            "key": "978-1-7998-2235-6.ch006.-23",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/josi.12405"
+            "DOI": "10.2224/sbp.2015.43.6.883"
         },
         {
-            "key": "e_1_3_5_12_1",
+            "key": "978-1-7998-2235-6.ch006.-24",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/jacc.12523"
+            "DOI": "10.1016/j.jbusres.2017.12.047"
         },
         {
-            "key": "e_1_3_5_13_1",
+            "key": "978-1-7998-2235-6.ch006.-25",
+            "unstructured": "MetaRain Blog. (2014). An Experiment in iAd. http://blog.metarain.com/post/83086723160/an-experiment-in-iad"
+        },
+        {
+            "key": "978-1-7998-2235-6.ch006.-26",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.pec.2017.06.003"
+            "DOI": "10.1016/j.elerap.2018.11.006"
         },
         {
-            "key": "e_1_3_5_14_1",
+            "key": "978-1-7998-2235-6.ch006.-27",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s11199-012-0152-4"
+            "DOI": "10.1080/13527266.2018.1547918"
         },
         {
-            "key": "e_1_3_5_15_1",
+            "key": "978-1-7998-2235-6.ch006.-28",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1037/qup0000196"
+            "DOI": "10.1080/10447318.2011.641899"
         },
         {
-            "key": "e_1_3_5_16_1",
+            "key": "978-1-7998-2235-6.ch006.-29",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1037/13620-004"
+            "DOI": "10.1080/01449290600958882"
         },
         {
-            "key": "e_1_3_5_17_1",
-            "volume-title": "A queer history of the United States",
-            "author": "Bronski M.",
-            "year": "2011",
-            "unstructured": "Bronski, M. (2011). A queer history of the United States. Beacon Press."
-        },
-        {
-            "key": "e_1_3_5_18_1",
+            "key": "978-1-7998-2235-6.ch006.-30",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/mhw.32559"
+            "DOI": "10.4018/IRMJ.2017100102"
         },
         {
-            "key": "e_1_3_5_19_1",
+            "key": "978-1-7998-2235-6.ch006.-31",
             "doi-asserted-by": "publisher",
-            "DOI": "10.3390/ijerph16193636"
+            "DOI": "10.2753/JOA0091-3367360410"
         },
         {
-            "key": "e_1_3_5_20_1",
-            "unstructured": "Centers for Disease Control and Prevention (2021). COVID-19 risks and vaccine information for older adults. CDC Online . https://www.cdc.gov/aging/covid19/covid19-older-adults.html#:\u223c:text=Older%20adults%20are%20more%20likely 60s%2C%2070s%2C%20and%2080s."
+            "issue": "2",
+            "key": "978-1-7998-2235-6.ch006.-32",
+            "first-page": "61",
+            "article-title": "MMS to improve mobile advertising acceptance and replace billboards.",
+            "volume": "4",
+            "author": "S. K.Samanta",
+            "year": "2009",
+            "journal-title": "International Journal of Mobile Marketing"
         },
         {
-            "key": "e_1_3_5_21_1",
-            "unstructured": "Centers for Disease Control and Prevention (2023). End of the federal COVID-19 public health emergency (PHE) declaration. https://www.cdc.gov/coronavirus/2019-ncov/your-health/end-of-phe.html#:\u223c:text=May%2011%2C%202023%2C%20marks%20the federal%20COVID%2D19%20PHE%20declaration"
-        },
-        {
-            "key": "e_1_3_5_22_1",
+            "key": "978-1-7998-2235-6.ch006.-33",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/2378023120971472"
+            "DOI": "10.1080/0965254X.2017.1384043"
         },
         {
-            "key": "e_1_3_5_23_1",
+            "key": "978-1-7998-2235-6.ch006.-34",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/15579883211062681"
+            "DOI": "10.4018/978-1-4666-8125-5.ch003"
         },
         {
-            "key": "e_1_3_5_24_1",
-            "unstructured": "Dawson L. Kates J. (2022). Youth access to gender-affirming care: The federal and state policy landscape. Kaiser Family Foundation. https://www.kff.org/other/issue-brief/youth-access-to-gender-affirming-care-the-federal-and-state-policy-landscape/"
-        },
-        {
-            "key": "e_1_3_5_25_1",
-            "unstructured": "Dawson L. Kirzinger A. Kates J. (2021). The impact of the covid-19 pandemic on LGBT people . Kaiser Family Foundation. https://www.kff.org/coronavirus-covid-19/poll-finding/the-impact-of-the-covid-19-pandemic-on-lgbt-people/"
-        },
-        {
-            "key": "e_1_3_5_26_1",
+            "key": "978-1-7998-2235-6.ch006.-35",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1300/J035v12n01_06"
+            "DOI": "10.1109/TKDE.2006.144"
         },
         {
-            "key": "e_1_3_5_27_1",
+            "key": "978-1-7998-2235-6.ch006.-36",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1300/J159v05n01_05"
+            "DOI": "10.1080/10864415.2004.11044301"
         },
         {
-            "key": "e_1_3_5_28_1",
+            "issue": "2",
+            "key": "978-1-7998-2235-6.ch006.-37",
+            "first-page": "44",
+            "article-title": "Consumer attitudes toward mobile marketing and its impact on customers.",
+            "volume": "7",
+            "author": "S.Varshney",
+            "year": "2015",
+            "journal-title": "International Journal of Information, Business and Management"
+        },
+        {
+            "issue": "1",
+            "key": "978-1-7998-2235-6.ch006.-38",
+            "first-page": "28",
+            "article-title": "An empirical study of factors affecting use of mobile advertising.",
+            "volume": "5",
+            "author": "R.Vatanparast",
+            "year": "2010",
+            "journal-title": "International Journal of Mobile Marketing"
+        },
+        {
+            "key": "978-1-7998-2235-6.ch006.-39",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jadohealth.2020.06.002"
+            "DOI": "10.1145/2591971.2592003"
         },
         {
-            "key": "e_1_3_5_29_1",
+            "issue": "9",
+            "key": "978-1-7998-2235-6.ch006.-40",
+            "first-page": "444",
+            "article-title": "Attitudes of young consumers towards SMS advertising.",
+            "volume": "3",
+            "author": "D.Waldt",
+            "year": "2009",
+            "journal-title": "African Journal of Business Management"
+        },
+        {
+            "key": "978-1-7998-2235-6.ch006.-41",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10964-019-01129-5"
+            "DOI": "10.1016/j.tele.2015.03.003"
         },
         {
-            "key": "e_1_3_5_30_1",
+            "issue": "2",
+            "key": "978-1-7998-2235-6.ch006.-42",
+            "first-page": "9",
+            "article-title": "The influence of personalization in affecting consumer attitudes toward mobile advertising in China.",
+            "volume": "47",
+            "author": "D. J. J.Xu",
+            "year": "2006",
+            "journal-title": "Journal of Computer Information Systems"
+        },
+        {
+            "key": "978-1-7998-2235-6.ch006.-43",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1089/lgbt.2020.0489"
+            "DOI": "10.4018/jeco.2006070104"
         },
         {
-            "key": "e_1_3_5_31_1",
+            "key": "978-1-7998-2235-6.ch006.-44",
+            "unstructured": "Zhu, X. (2013). Machine teaching for Bayesian learners in the exponential family. Advances in Neural Information Processing Systems, 26, 1905-1913."
+        },
+        {
+            "key": "978-1-7998-2235-6.ch006.-45",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1073/pnas.2118525119"
-        },
-        {
-            "key": "e_1_3_5_32_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/19361653.2013.879464"
-        },
-        {
-            "key": "e_1_3_5_33_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/17441692.2019.1682028"
-        },
-        {
-            "key": "e_1_3_5_34_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/hast.1134"
-        },
-        {
-            "key": "e_1_3_5_35_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/sgd0000451"
-        },
-        {
-            "key": "e_1_3_5_36_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00918369.2012.648877"
-        },
-        {
-            "key": "e_1_3_5_37_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0022167816652534"
-        },
-        {
-            "key": "e_1_3_5_38_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/hsc.13531"
-        },
-        {
-            "key": "e_1_3_5_39_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.17645/up.v8i2.6404"
-        },
-        {
-            "key": "e_1_3_5_40_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00918369.2020.1868191"
-        },
-        {
-            "key": "e_1_3_5_41_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/ccp0000489"
-        },
-        {
-            "key": "e_1_3_5_42_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10538720.2019.1642820"
-        },
-        {
-            "issue": "5",
-            "key": "e_1_3_5_43_1",
-            "first-page": "S80",
-            "article-title": "Special issues in LGBTQ geriatric psychiatry",
-            "volume": "35",
-            "author": "Johnson K. K.",
-            "year": "2018",
-            "unstructured": "Johnson, K. K. (2018). Special issues in LGBTQ geriatric psychiatry. Psychiatry Times, 35(5), S80. https://www.psychiatrictimes.com/view/special-issues-lgbtq-geriatric-psychiatry",
-            "journal-title": "Psychiatry Times"
-        },
-        {
-            "key": "e_1_3_5_44_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/1077801219836728"
-        },
-        {
-            "key": "e_1_3_5_45_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00918369.2020.1868185"
-        },
-        {
-            "key": "e_1_3_5_46_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/0142159X.2020.1755030"
-        },
-        {
-            "key": "e_1_3_5_47_1",
-            "volume-title": "Reporting qualitative research in psychology: How to meet APA style journal article reporting standards",
-            "author": "Levitt H. M.",
-            "year": "2020",
-            "unstructured": "Levitt, H. M. (2020). Reporting qualitative research in psychology: How to meet APA style journal article reporting standards (Rev. ed.). American Psychological Association."
-        },
-        {
-            "key": "e_1_3_5_48_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.33043/JSACP.5.2.10-25"
-        },
-        {
-            "key": "e_1_3_5_49_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/infdis/jiab392"
-        },
-        {
-            "key": "e_1_3_5_50_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s13178-021-00665-9"
-        },
-        {
-            "key": "e_1_3_5_51_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00918369.2023.2169851"
-        },
-        {
-            "key": "e_1_3_5_52_1",
-            "unstructured": "Morris B. (2009). History of Lesbian Gay Bisexual and Transgender social movements . American Psychological Association. https://www.apa.org/pi/lgbt/resources/history"
-        },
-        {
-            "key": "e_1_3_5_53_1",
-            "unstructured": "Movement Advancement Project (2020). The Disproportionate Impacts of COVID-19 on LGBTQ Households in the U.S . www.lgbtmap.org/2020-covid-lgbtq-households"
-        },
-        {
-            "key": "e_1_3_5_54_1",
-            "unstructured": "National Association of School Psychologists (2021). Organizations supporting LGBTQ youth. https://www.nasponline.org/resources-and-publications/resources-and-podcasts/diversity-and-social-justice/lgbtq-youth/organizations-supporting-lgbtq-youth"
-        },
-        {
-            "key": "e_1_3_5_55_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10935-012-0271-2"
-        },
-        {
-            "key": "e_1_3_5_56_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10538720.2022.2053025"
-        },
-        {
-            "key": "e_1_3_5_57_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10538720.2016.1155518"
-        },
-        {
-            "key": "e_1_3_5_58_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/cou0000578"
-        },
-        {
-            "key": "e_1_3_5_59_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1089/lgbt.2020.0187"
-        },
-        {
-            "key": "e_1_3_5_60_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/15586898221126816"
-        },
-        {
-            "key": "e_1_3_5_61_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10538720.2022.2042452"
-        },
-        {
-            "key": "e_1_3_5_62_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1136/bmjgh-2020-004424"
-        },
-        {
-            "key": "e_1_3_5_63_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/sgd0000510"
-        },
-        {
-            "key": "e_1_3_5_64_1",
-            "unstructured": "Robbins C. G. Durso L. E. Bewkes F. J. Schultz E. (2017). People need paid leave policies that cover chosen family . Center for American Progress. https://www.lgbtmap.org/file/LGBT-People-With-Disabilities.pdf"
-        },
-        {
-            "key": "e_1_3_5_65_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.psychres.2021.113725"
-        },
-        {
-            "key": "e_1_3_5_66_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0033354920954511"
-        },
-        {
-            "key": "e_1_3_5_67_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/tra0000837"
-        },
-        {
-            "key": "e_1_3_5_68_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/ajcp.12632"
-        },
-        {
-            "key": "e_1_3_5_69_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s13178-023-00802-6"
-        },
-        {
-            "key": "e_1_3_5_70_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/2167696820968699"
-        },
-        {
-            "key": "e_1_3_5_71_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00918369.2017.1374060"
-        },
-        {
-            "key": "e_1_3_5_72_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jagp.2020.10.005"
-        },
-        {
-            "key": "e_1_3_5_73_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s13178-022-00735-6"
-        },
-        {
-            "key": "e_1_3_5_74_1",
-            "unstructured": "The Trevor Project (2019). The Trevor Project research brief: Suicide attempts among LGBTQ\u2009+\u2009youth of color. https://www.thetrevorproject.org/wp-content/uploads/2019/11/Youth-of-Color-Research-Brief-Nov-2019-2.pdf"
-        },
-        {
-            "key": "e_1_3_5_75_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jsxm.2022.01.522"
-        },
-        {
-            "key": "e_1_3_5_76_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1001/jama.2020.21753"
-        },
-        {
-            "key": "e_1_3_5_77_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1525/sop.2008.51.3.563"
-        },
-        {
-            "key": "e_1_3_5_78_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10538720.2014.955556"
-        },
-        {
-            "key": "e_1_3_5_79_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1353/csd.2018.0040"
-        },
-        {
-            "key": "e_1_3_5_80_1",
-            "unstructured": "World Health Organization (2020). WHO Director-General\u2019s opening remarks at the media briefing on COVID-19 - 11 March 2020. https://www.who.int/director-general/speeches/detail/who-director-general-s-opening-remarks-at-the-media-briefing-on-covid-19\u2013-11-march"
-        },
-        {
-            "key": "e_1_3_5_81_1",
-            "unstructured": "Zonkel P. (2020). L.A. Pride\u2019s Black Lives Matter protest criticized as tone deaf. Q Voice News June 7. https://qvoicenews.com/2020/06/07/la-prides-black-lives-matter-protest-criticized-as-tone-deaf/"
+            "DOI": "10.1016/j.bushor.2015.01.006"
         }
     ],
     "container-title": [
-        "Sexual and Gender Diversity in Social Services"
+        "Advances in Knowledge Acquisition, Transfer, and Management",
+        "Optimizing Data and New Methods for Efficient Knowledge Discovery and Information Resources Management"
     ],
-    "language": "en",
     "link": [
         {
-            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/10538720.2023.2245342",
+            "URL": "https://www.igi-global.com/viewtitle.aspx?TitleId=255754",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -502,92 +351,51 @@
     "deposited": {
         "date-parts": [
             [
-                2024,
-                1,
+                2021,
+                9,
                 25
             ]
         ],
-        "date-time": "2024-01-25T09:59:26Z",
-        "timestamp": 1706176766000
+        "date-time": "2021-09-25T03:08:08Z",
+        "timestamp": 1632539288000
     },
-    "score": 14.975613,
+    "score": 14.278776,
     "resource": {
         "primary": {
-            "URL": "https://www.tandfonline.com/doi/full/10.1080/10538720.2023.2245342"
+            "URL": "http://services.igi-global.com/resolvedoi/resolve.aspx?doi=10.4018/978-1-7998-2235-6.ch006"
         }
     },
+    "subtitle": [
+        ""
+    ],
     "issued": {
         "date-parts": [
             [
-                2023,
-                8,
-                10
+                2020
             ]
         ]
     },
-    "references-count": 80,
-    "journal-issue": {
-        "issue": "1",
-        "published-print": {
-            "date-parts": [
-                [
-                    2024,
-                    1,
-                    2
-                ]
-            ]
-        }
-    },
-    "alternative-id": [
-        "10.1080/10538720.2023.2245342"
-    ],
-    "URL": "http://dx.doi.org/10.1080/10538720.2023.2245342",
+    "references-count": 45,
+    "URL": "http://dx.doi.org/10.4018/978-1-7998-2235-6.ch006",
     "ISSN": [
-        "2993-3021",
-        "2993-303X"
+        "2326-7607",
+        "2326-7615"
     ],
     "issn-type": [
         {
-            "value": "2993-3021",
+            "value": "2326-7607",
             "type": "print"
         },
         {
-            "value": "2993-303X",
+            "value": "2326-7615",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2023,
-                8,
-                10
+                2020
             ]
         ]
-    },
-    "assertion": [
-        {
-            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
-            "order": 1,
-            "name": "peerreview_statement",
-            "label": "Peer Review Statement"
-        },
-        {
-            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=wgls21",
-            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=wgls21",
-            "order": 2,
-            "name": "aims_and_scope_url",
-            "label": "Aim & Scope"
-        },
-        {
-            "value": "2023-08-10",
-            "order": 2,
-            "name": "published",
-            "label": "Published",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        }
-    ]
+    }
 }

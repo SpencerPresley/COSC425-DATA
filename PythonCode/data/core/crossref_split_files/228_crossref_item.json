@@ -2,297 +2,467 @@
     "indexed": {
         "date-parts": [
             [
-                2023,
-                11,
-                30
+                2024,
+                9,
+                10
             ]
         ],
-        "date-time": "2023-11-30T16:11:30Z",
-        "timestamp": 1701360690253
+        "date-time": "2024-09-10T15:53:21Z",
+        "timestamp": 1725983601901
     },
-    "reference-count": 35,
-    "publisher": "Informa UK Limited",
-    "issue": "2",
+    "reference-count": 41,
+    "publisher": "MDPI AG",
+    "issue": "18",
+    "license": [
+        {
+            "start": {
+                "date-parts": [
+                    [
+                        2020,
+                        9,
+                        16
+                    ]
+                ],
+                "date-time": "2020-09-16T00:00:00Z",
+                "timestamp": 1600214400000
+            },
+            "content-version": "vor",
+            "delay-in-days": 0,
+            "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+    ],
     "content-domain": {
-        "domain": [
-            "www.tandfonline.com"
-        ],
-        "crossmark-restriction": true
+        "domain": [],
+        "crossmark-restriction": false
     },
     "short-container-title": [
-        "Journal of Curriculum and Pedagogy"
+        "Sustainability"
     ],
-    "published-print": {
-        "date-parts": [
-            [
-                2020,
-                5,
-                3
-            ]
-        ]
-    },
-    "DOI": "10.1080/15505170.2020.1771484",
+    "abstract": "<jats:p>Education could play a role in decreasing and mitigating damages caused by natural disaster. By analysing relationships between level of education and components of the World Risk Index, this study demonstrated an education\u2019s role in natural hazard awareness and mitigation. For this purpose, we analysed relationships between the components of WRI, created an education factor independent of WRI (based on PISA 2018 Science test results), analysed the frequency, magnitude and exposure of natural hazards of an extreme event character in selected countries and analysed the relationships between the education factor and WRI components among the countries. A detailed analysis was performed for 15 countries representing the full global range of natural hazards (frequency, magnitude and exposure to droughts, earthquakes, hurricanes, floods (not related to hurricanes), mass movements, volcanic eruptions, and tsunamis) and level of education. We found that the education factor (ranked and normalised to the maximal value among the considered countries) has significant negative correlation with the following WRI parameters: the Natural Hazard Factor (relative vulnerability, based on the difference between the relative and calculated WRI, ranked and normalised to the maximal value of WRI differences), susceptibility, lack of coping capacities and lack of adaptive capacities (all ranked and normalised to the maximal value). Results indicated that countries at low risk tend to be over-aware while countries at high risk are under-aware of natural hazards. Education can significantly increase awareness of natural hazards and reduce their impact.</jats:p>",
+    "DOI": "10.3390/su12187623",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
                 2020,
-                7,
-                27
+                9,
+                16
             ]
         ],
-        "date-time": "2020-07-27T22:45:36Z",
-        "timestamp": 1595889936000
+        "date-time": "2020-09-16T14:30:12Z",
+        "timestamp": 1600266612000
     },
-    "page": "135-157",
-    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
+    "page": "7623",
     "source": "Crossref",
-    "is-referenced-by-count": 2,
+    "is-referenced-by-count": 15,
     "title": [
-        "Getting read as rad: Performances of \u201cnice white lady\u201d and tensions in teaching about white supremacy"
+        "The Role of Education in Increasing Awareness and Reducing Impact of Natural Hazards"
     ],
-    "prefix": "10.1080",
-    "volume": "17",
+    "prefix": "10.3390",
+    "volume": "12",
     "author": [
         {
-            "given": "Colleen H.",
-            "family": "Clements",
+            "given": "David",
+            "family": "Cerulli",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Department of Curriculum and Instruction, University of Minnesota, Minneapolis, Minnesota, USA"
+                    "name": "Centre of Natural Science Education, Institute of Ecology and Earth Sciences, University of Tartu, Vanemuise 46, 51014 Tartu, Estonia"
                 }
             ]
         },
         {
-            "given": "Erin",
-            "family": "Stutelberg",
+            "given": "Michael",
+            "family": "Scott",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Department of Secondary and Physical Education, Salisbury University, Salisbury, Maryland, USA"
+                    "name": "Department of Geography and Geosciences, Salisbury University, 1101 Camden Avenue, Salisbury, MD 21801, USA"
+                }
+            ]
+        },
+        {
+            "given": "Raivo",
+            "family": "Aunap",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Geography, Institute of Ecology and Earth Sciences, University of Tartu, Vanemuise 46, 51014 Tartu, Estonia"
+                }
+            ]
+        },
+        {
+            "ORCID": "http://orcid.org/0000-0002-7534-3927",
+            "authenticated-orcid": false,
+            "given": "Ain",
+            "family": "Kull",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Geography, Institute of Ecology and Earth Sciences, University of Tartu, Vanemuise 46, 51014 Tartu, Estonia"
+                }
+            ]
+        },
+        {
+            "given": "Jaan",
+            "family": "P\u00e4rn",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Geography, Institute of Ecology and Earth Sciences, University of Tartu, Vanemuise 46, 51014 Tartu, Estonia"
+                }
+            ]
+        },
+        {
+            "ORCID": "http://orcid.org/0000-0002-1642-8701",
+            "authenticated-orcid": false,
+            "given": "Jack",
+            "family": "Holbrook",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Centre of Natural Science Education, Institute of Ecology and Earth Sciences, University of Tartu, Vanemuise 46, 51014 Tartu, Estonia"
+                }
+            ]
+        },
+        {
+            "ORCID": "http://orcid.org/0000-0003-2340-6989",
+            "authenticated-orcid": false,
+            "given": "\u00dclo",
+            "family": "Mander",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Geography, Institute of Ecology and Earth Sciences, University of Tartu, Vanemuise 46, 51014 Tartu, Estonia"
                 }
             ]
         }
     ],
-    "member": "301",
+    "member": "1968",
     "published-online": {
         "date-parts": [
             [
                 2020,
-                7,
-                27
+                9,
+                16
             ]
         ]
     },
     "reference": [
         {
-            "key": "CIT0001",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0263276404042133"
+            "key": "ref_1",
+            "unstructured": "Paton, D., and Johnston, D. (2006). Natural Hazards. Disaster Resilience: An Integrated Approach, Charles C Thomas."
         },
         {
-            "key": "CIT0002",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/15505170.2005.10411532"
+            "key": "ref_2",
+            "doi-asserted-by": "crossref",
+            "first-page": "175",
+            "DOI": "10.1007/s11069-016-2186-3",
+            "article-title": "Critical infrastructure, panarchies and the vulnerability paths of cascading disasters",
+            "volume": "82",
+            "author": "Pescaroli",
+            "year": "2016",
+            "journal-title": "Nat. Hazards"
         },
         {
-            "key": "CIT0003",
-            "volume-title": "Killing Me Softly: Color-blind Racism in American Schools",
-            "author": "Bonilla-Silva E.",
-            "year": "2019"
+            "key": "ref_3",
+            "doi-asserted-by": "crossref",
+            "first-page": "458",
+            "DOI": "10.1038/d41586-018-06783-6",
+            "article-title": "How do natural hazards cascade to cause disasters?",
+            "volume": "561",
+            "author": "AghaKouchak",
+            "year": "2018",
+            "journal-title": "Nature"
         },
         {
-            "key": "CIT0004",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/2657316"
+            "key": "ref_4",
+            "unstructured": "Birkmann, J., Garschagen, M., Mucke, P., Schauder, A., Seibert, T., Welle, T., Rhyner, J., Kohler, S., Loster, T., and Reinhard, D. (2014). World Risk Report 2014, B\u00fcndnis Entwicklung Hilft and UNU-EHS."
         },
         {
-            "key": "CIT0005",
-            "volume-title": "(Re)Narrating teacher identity: Telling truths and becoming teachers",
-            "author": "Clements C.",
-            "year": "2017"
+            "key": "ref_5",
+            "doi-asserted-by": "crossref",
+            "first-page": "529",
+            "DOI": "10.1007/s11069-006-9072-3",
+            "article-title": "Increasing public awareness of natural hazards via the Internet",
+            "volume": "42",
+            "author": "Dunbar",
+            "year": "2007",
+            "journal-title": "Nat. Hazards"
         },
         {
-            "key": "CIT0006",
-            "volume-title": "White woman\u2019s work: Examining the intersectionality of cultural norms, teaching, and identity formation in urban schools",
-            "author": "Coffee A.",
-            "year": "2016"
+            "key": "ref_6",
+            "unstructured": "United Nations International Strategy for Disaster Reduction (2009). Terminology on Disaster Risk Reduction, UNISDR."
         },
         {
-            "key": "CIT0007",
-            "volume-title": "Doing collective biography",
-            "author": "Davies B.",
-            "year": "2006"
+            "key": "ref_7",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Sivakumar, M., Motha, R.P., and Das, H.P. (2005). Impacts of Natural Disasters in Agriculture, Rangeland and Forestry: An Overview. Natural Disasters and Extreme Events in Agriculture, Springer.",
+            "DOI": "10.1007/3-540-28307-2"
         },
         {
-            "key": "CIT0008",
-            "volume-title": "White femininity: Race, gender & power",
-            "author": "Deliovsky K.",
-            "year": "2010"
+            "key": "ref_8",
+            "unstructured": "Emergency Events Database (EM-DAT) (2020, July 28). The International Disaster Database. Available online: http://www.emdat.be/advanced_search/index.html."
         },
         {
-            "key": "CIT0009",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.4135/9781412985390"
+            "key": "ref_9",
+            "unstructured": "National Oceanic and Atmospheric Administration (2020, September 16). Natural Hazards Data, Images and Education, Available online: https://ngdc.noaa.gov/hazard/hazards.shtml."
         },
         {
-            "key": "CIT0010",
-            "volume-title": "White fragility: Why it\u2019s so hard for white people to talk about racism",
-            "author": "DiAngelo R.",
-            "year": "2018"
+            "key": "ref_10",
+            "unstructured": "Stocker, T.F., Qin, D., Plattner, G.-K., Tignor, M., Allen, S.K., Boschung, J., Nauels, A., Xia, Y., Bex, V., and Midgley, P.M. (2013). Intergovernmental Panel on Climate Change. Summary for Policymakers. Climate Change 2013: The Physical Science Basis. Contribution of Working Group I to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change, Cambridge University Press."
         },
         {
-            "key": "CIT0011",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.4324/9780203973431"
+            "key": "ref_11",
+            "doi-asserted-by": "crossref",
+            "first-page": "1036",
+            "DOI": "10.1126/science.1112122",
+            "article-title": "Social-ecological resilience to coastal disasters",
+            "volume": "309",
+            "author": "Adger",
+            "year": "2005",
+            "journal-title": "Science"
         },
         {
-            "key": "CIT0012",
-            "volume-title": "Fortunes of feminism: From state-managed capitalism to neoliberal crisis",
-            "author": "Fraser N.",
-            "year": "2013"
-        },
-        {
-            "key": "CIT0013",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/08164640802433498"
-        },
-        {
-            "key": "CIT0014",
-            "volume-title": "Female sexualization: A collective work of memory",
-            "author": "Haug F.",
-            "year": "1987"
-        },
-        {
-            "key": "CIT0015",
-            "volume-title": "Memory-work as a method of social science research: A detailed rendering of memory-work method",
-            "author": "Haug F.",
-            "year": "1987"
-        },
-        {
-            "key": "CIT0016",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3102/0034654316629798"
-        },
-        {
-            "key": "CIT0017",
-            "volume-title": "Stamped from the beginning: The definitive history of racist ideas in America",
-            "author": "Kendi I. X.",
-            "year": "2017"
-        },
-        {
-            "key": "CIT0018",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.4324/9781315180359"
-        },
-        {
-            "key": "CIT0019",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.17763/haer.83.3.35054h14l8230574"
-        },
-        {
-            "key": "CIT0020",
-            "volume-title": "We want to do more than survive: Abolitionist teaching and the pursuit of educational freedom",
-            "author": "Love B. L.",
-            "year": "2019"
-        },
-        {
-            "key": "CIT0021",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/09518398.2016.1174899"
-        },
-        {
-            "key": "CIT0022",
-            "volume-title": "Space, place and gender",
-            "author": "Massey D.",
-            "year": "2013"
-        },
-        {
-            "issue": "2",
-            "key": "CIT0023",
-            "first-page": "53",
-            "volume": "40",
-            "author": "Matias C. E.",
+            "key": "ref_12",
+            "doi-asserted-by": "crossref",
+            "first-page": "79",
+            "DOI": "10.1038/nature12859",
+            "article-title": "Ecosystem-based coastal defence in the face of global change",
+            "volume": "504",
+            "author": "Temmerman",
             "year": "2013",
-            "journal-title": "Teacher Education Quarterly"
+            "journal-title": "Nature"
         },
         {
-            "key": "CIT0024",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10665684.2014.933692"
+            "key": "ref_13",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Ribeiro, R.R.R., Sulaiman, S.N., Bonatti, M., Sieber, S., and Lana, M.A. (2020). Perception of natural hazards in rural areas: A case study examination of the influence of seasonal weather. Sustainability, 12.",
+            "DOI": "10.3390/su12062251"
         },
         {
-            "key": "CIT0025",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/09540250120098861"
+            "key": "ref_14",
+            "doi-asserted-by": "crossref",
+            "first-page": "1",
+            "DOI": "10.1142/S2345737615500037",
+            "article-title": "The World Risk Index\u2014An approach to assess risk and vulnerability on a global scale",
+            "volume": "2",
+            "author": "Welle",
+            "year": "2015",
+            "journal-title": "J. Extrem. Events"
         },
         {
-            "key": "CIT0026",
-            "volume-title": "My grandmother\u2019s hands: Racialized trauma and the pathway to mending our hearts and bodies",
-            "author": "Menakem R.",
-            "year": "2017"
+            "key": "ref_15",
+            "unstructured": "International Organization for Migration (2002). Committee on Communication for Behavior Change in the 21st Century. Improving the Health of Diverse Populations. Speaking of Health: Assessing Health Communication Strategies for Diverse Populations, National Academy Press."
         },
         {
-            "key": "CIT0027",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/09575146.2016.1223022"
-        },
-        {
-            "key": "CIT0028",
-            "volume-title": "I\u2019m a Black feminist, and I think call-out culture is toxic",
-            "author": "Ross L.",
-            "year": "2019"
-        },
-        {
-            "key": "CIT0029",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.9783/9780812200928"
-        },
-        {
-            "key": "CIT0030",
-            "volume-title": "Performance theory",
-            "author": "Schechner R.",
-            "year": "1988"
-        },
-        {
-            "key": "CIT0031",
-            "volume-title": "Performance studies: An introduction",
-            "author": "Schechner R.",
-            "year": "2013"
-        },
-        {
-            "key": "CIT0032",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0042085916668957"
-        },
-        {
-            "key": "CIT0033",
-            "first-page": "559",
-            "volume-title": "Handbook of research in teacher education: Enduring issues in changing contexts",
-            "author": "Sleeter C. E.",
+            "key": "ref_16",
+            "first-page": "4",
+            "article-title": "Managing tsunami risk in coastal communities: Identifying predictors of preparedness",
+            "volume": "23",
+            "author": "Paton",
             "year": "2008",
-            "edition": "3"
+            "journal-title": "Aust. J. Emerg. Manag."
         },
         {
-            "key": "CIT0034",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/15505170.2017.1297745"
+            "key": "ref_17",
+            "doi-asserted-by": "crossref",
+            "first-page": "765",
+            "DOI": "10.1007/s11069-010-9500-2",
+            "article-title": "Predicting community earthquake preparedness: A cross-cultural comparison of Japan and New Zealand",
+            "volume": "54",
+            "author": "Paton",
+            "year": "2010",
+            "journal-title": "Nat. Hazards"
         },
         {
-            "key": "CIT0035",
-            "volume-title": "Learning to be white: Money, race, and god in America",
-            "author": "Thandeka",
-            "year": "2000"
+            "key": "ref_18",
+            "doi-asserted-by": "crossref",
+            "first-page": "2237",
+            "DOI": "10.1080/09500693.2015.1075076",
+            "article-title": "A Competence-based Science Learning Framework illustrated through the Study of Natural Hazards and Disaster Risk Reduction",
+            "volume": "37",
+            "author": "Oyao",
+            "year": "2015",
+            "journal-title": "Int. J. Sci. Educ."
+        },
+        {
+            "key": "ref_19",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Fishbein, M., and Ajzen, I. (2010). Predicting and Changing Behavior: The Reasoned Action Approach, Psychology Press.",
+            "DOI": "10.4324/9780203838020"
+        },
+        {
+            "key": "ref_20",
+            "unstructured": "Fishbein, M., and Ajzen, I. (1975). Belief, Attitude, Intention and Behavior: An Introduction to Theory and Research, Addison-Wesley."
+        },
+        {
+            "key": "ref_21",
+            "unstructured": "Bandura, A. (1997). Self-Efficacy: The Exercise of Control, W.H. Freeman and Company."
+        },
+        {
+            "key": "ref_22",
+            "doi-asserted-by": "crossref",
+            "first-page": "84",
+            "DOI": "10.1016/j.ijdrr.2013.07.002",
+            "article-title": "Recent tsunami events and preparedness: Development of tsunami awareness in Indonesia, Chile and Japan",
+            "volume": "5",
+            "author": "Esteban",
+            "year": "2013",
+            "journal-title": "Int. J. Disaster Risk Reduc."
+        },
+        {
+            "key": "ref_23",
+            "doi-asserted-by": "crossref",
+            "first-page": "1507",
+            "DOI": "10.1007/s11069-018-3365-1",
+            "article-title": "Tsunami awareness: A comparative assessment between Japan and the USA",
+            "volume": "93",
+            "author": "Esteban",
+            "year": "2018",
+            "journal-title": "Nat. Hazards"
+        },
+        {
+            "key": "ref_24",
+            "doi-asserted-by": "crossref",
+            "first-page": "37",
+            "DOI": "10.24910/jsustain/3.1/3745",
+            "article-title": "Typhoon Haiyan 2013 evacuation preparations and awareness",
+            "volume": "31",
+            "author": "Esteban",
+            "year": "2015",
+            "journal-title": "Int. J. Sustain. Future Hum. Secur."
+        },
+        {
+            "key": "ref_25",
+            "first-page": "61",
+            "article-title": "Filipinos \u201cviews on the disaster information for the 2013 Super Typhoon Haiyan in the Philippines\u201d",
+            "volume": "2",
+            "author": "Leelawat",
+            "year": "2013",
+            "journal-title": "Int. J. Sustain. Future Hum. Secur."
+        },
+        {
+            "key": "ref_26",
+            "doi-asserted-by": "crossref",
+            "first-page": "399",
+            "DOI": "10.1111/j.1559-1816.2005.tb02127.x",
+            "article-title": "Social and personal factors as predictors of earthquake preparation: The role of support provision, network discussion, negative effect, age, and education",
+            "volume": "35",
+            "author": "Heller",
+            "year": "2005",
+            "journal-title": "J. Appl. Soc. Psychol."
+        },
+        {
+            "key": "ref_27",
+            "doi-asserted-by": "crossref",
+            "first-page": "1310",
+            "DOI": "10.1111/j.1559-1816.2000.tb02522.x",
+            "article-title": "Tornado preparedness of students, nonstudent renters, and nonstudent owners: Issues of PrE-theory",
+            "volume": "30",
+            "author": "Mulilis",
+            "year": "2000",
+            "journal-title": "J. Appl. Soc. Psychol."
+        },
+        {
+            "key": "ref_28",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Santos-Reyes, J.R., and Gouzeva, T. (2018). High School Students\u2019 Knowledge and Seismic Risk Perception: The Case of Mexico City. IEEE International Conference on Industrial Engineering and Engineering Management 2017-December, IEEE.",
+            "DOI": "10.1109/IEEM.2017.8290088"
+        },
+        {
+            "key": "ref_29",
+            "unstructured": "Davidson, R., and Shah, H. (1997). An Urban Earthquake Disaster Risk Index, The John A Blume Earthquake Engineering Center Stanford University."
+        },
+        {
+            "key": "ref_30",
+            "doi-asserted-by": "crossref",
+            "first-page": "1149",
+            "DOI": "10.5194/nhess-9-1149-2009",
+            "article-title": "Assessing global exposure and vulnerability towards natural hazards: The Disaster Risk Index",
+            "volume": "9",
+            "author": "Peduzzi",
+            "year": "2009",
+            "journal-title": "Nat. Hazards Earth Syst. Sci."
+        },
+        {
+            "key": "ref_31",
+            "unstructured": "IPCC (2012). Climate Change: New Dimensions in Disaster Risk, Exposure, Vulnerability, and Resilience. Managing the Risks of Extreme Events and Disasters to Advance Climate Change Adaptation. A Special Report of Working Groups I and II of the Intergovernmental Panel on Climate Change, Cambridge University Press."
+        },
+        {
+            "key": "ref_32",
+            "unstructured": "Birkmann, J., Welle, T., Krause, D., Wolfertz, J., Suarez, D.-C., and Setiadi, N. (2011). World Risk Index: Concept and Results. B\u00fcndnis Entwicklung Hilft, World Risk Report 2011, B\u00fcndnis Entwicklung Hilft (Alliance Development Works)."
+        },
+        {
+            "key": "ref_33",
+            "unstructured": "United Nations University\u2014Institute for Environment and Human Security (2020, September 16). World Risk Report. Available online: https://collections.unu.edu/eserv/UNU:5763/WorldRiskReport2016_small_meta.pdf."
+        },
+        {
+            "key": "ref_34",
+            "unstructured": "Schleicher, A. (2019). PISA 2018: Insights and Interpretations, OECD."
+        },
+        {
+            "key": "ref_35",
+            "doi-asserted-by": "crossref",
+            "first-page": "775",
+            "DOI": "10.1002/wcc.314",
+            "article-title": "Assessment of vulnerability to climate change using indicators: A meta-analysis of the literature",
+            "volume": "5",
+            "author": "Tonmoy",
+            "year": "2014",
+            "journal-title": "Wiley Interdiscip. Rev. Clim. Chang."
+        },
+        {
+            "key": "ref_36",
+            "first-page": "59",
+            "article-title": "Devising an instrument for determining students\u2019 preparedness for an Education through Science learning approach within the topic of Natural Hazards",
+            "volume": "27",
+            "author": "Cerulli",
+            "year": "2016",
+            "journal-title": "Sci. Educ. Int."
+        },
+        {
+            "key": "ref_37",
+            "unstructured": "World Bank (2020, July 28). List of Countries by GDP (Nominal). Available online: https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)."
+        },
+        {
+            "key": "ref_38",
+            "unstructured": "World Population Review (2020, September 16). Education Rankings by Country 2020. Available online: https://worldpopulationreview.com/country-rankings/education-rankings-by-country."
+        },
+        {
+            "key": "ref_39",
+            "unstructured": "United Nations Development Programme (2020, July 28). Human Development Data 1990\u20132018. Education Index. Available online: http://hdr.undp.org/en/data."
+        },
+        {
+            "key": "ref_40",
+            "doi-asserted-by": "crossref",
+            "first-page": "361",
+            "DOI": "10.1080/03050068.2013.803784",
+            "article-title": "Geographies of social exclusion: Education access in the Philippines",
+            "volume": "49",
+            "author": "Symaco",
+            "year": "2013",
+            "journal-title": "Comp. Educ."
+        },
+        {
+            "key": "ref_41",
+            "doi-asserted-by": "crossref",
+            "first-page": "391",
+            "DOI": "10.1016/j.marpol.2018.10.038",
+            "article-title": "Conceptual advances on global scale assessments of vulnerability: Informing investments for coastal populations at risk of climate change",
+            "volume": "99",
+            "author": "Comte",
+            "year": "2019",
+            "journal-title": "Mar. Policy"
         }
     ],
     "container-title": [
-        "Journal of Curriculum and Pedagogy"
+        "Sustainability"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/15505170.2020.1771484",
+            "URL": "https://www.mdpi.com/2071-1050/12/18/7623/pdf",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -301,57 +471,51 @@
     "deposited": {
         "date-parts": [
             [
-                2021,
-                5,
-                26
+                2024,
+                7,
+                3
             ]
         ],
-        "date-time": "2021-05-26T03:59:02Z",
-        "timestamp": 1622001542000
+        "date-time": "2024-07-03T07:02:35Z",
+        "timestamp": 1719990155000
     },
-    "score": 14.6708555,
+    "score": 9.762205,
     "resource": {
         "primary": {
-            "URL": "https://www.tandfonline.com/doi/full/10.1080/15505170.2020.1771484"
+            "URL": "https://www.mdpi.com/2071-1050/12/18/7623"
         }
     },
     "issued": {
         "date-parts": [
             [
                 2020,
-                5,
-                3
+                9,
+                16
             ]
         ]
     },
-    "references-count": 35,
+    "references-count": 41,
     "journal-issue": {
-        "issue": "2",
-        "published-print": {
+        "issue": "18",
+        "published-online": {
             "date-parts": [
                 [
                     2020,
-                    5,
-                    3
+                    9
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1080/15505170.2020.1771484"
+        "su12187623"
     ],
-    "URL": "http://dx.doi.org/10.1080/15505170.2020.1771484",
+    "URL": "http://dx.doi.org/10.3390/su12187623",
     "ISSN": [
-        "1550-5170",
-        "2156-8154"
+        "2071-1050"
     ],
     "issn-type": [
         {
-            "value": "1550-5170",
-            "type": "print"
-        },
-        {
-            "value": "2156-8154",
+            "value": "2071-1050",
             "type": "electronic"
         }
     ],
@@ -359,64 +523,9 @@
         "date-parts": [
             [
                 2020,
-                5,
-                3
+                9,
+                16
             ]
         ]
-    },
-    "assertion": [
-        {
-            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
-            "order": 1,
-            "name": "peerreview_statement",
-            "label": "Peer Review Statement"
-        },
-        {
-            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=ujcp20",
-            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=ujcp20",
-            "order": 2,
-            "name": "aims_and_scope_url",
-            "label": "Aim & Scope"
-        },
-        {
-            "value": "2019-08-08",
-            "order": 0,
-            "name": "received",
-            "label": "Received",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2020-05-01",
-            "order": 1,
-            "name": "revised",
-            "label": "Revised",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2020-05-05",
-            "order": 2,
-            "name": "accepted",
-            "label": "Accepted",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2020-07-27",
-            "order": 3,
-            "name": "published",
-            "label": "Published",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        }
-    ]
+    }
 }

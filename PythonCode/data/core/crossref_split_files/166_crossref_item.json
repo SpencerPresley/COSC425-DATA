@@ -2,16 +2,35 @@
     "indexed": {
         "date-parts": [
             [
-                2024,
-                6,
-                20
+                2022,
+                4,
+                3
             ]
         ],
-        "date-time": "2024-06-20T00:23:02Z",
-        "timestamp": 1718842982122
+        "date-time": "2022-04-03T05:04:47Z",
+        "timestamp": 1648962287158
     },
-    "reference-count": 75,
+    "reference-count": 44,
     "publisher": "Informa UK Limited",
+    "issue": "3",
+    "license": [
+        {
+            "start": {
+                "date-parts": [
+                    [
+                        2020,
+                        8,
+                        12
+                    ]
+                ],
+                "date-time": "2020-08-12T00:00:00Z",
+                "timestamp": 1597190400000
+            },
+            "content-version": "unspecified",
+            "delay-in-days": 132,
+            "URL": "http://creativecommons.org/licenses/by/4.0/"
+        }
+    ],
     "content-domain": {
         "domain": [
             "www.tandfonline.com"
@@ -19,39 +38,67 @@
         "crossmark-restriction": true
     },
     "short-container-title": [
-        "Social Work Education"
+        "Annals of GIS"
     ],
-    "DOI": "10.1080/02615479.2024.2368174",
+    "published-print": {
+        "date-parts": [
+            [
+                2020,
+                7,
+                2
+            ]
+        ]
+    },
+    "DOI": "10.1080/19475683.2020.1744724",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2024,
-                6,
-                19
+                2020,
+                4,
+                2
             ]
         ],
-        "date-time": "2024-06-19T16:23:00Z",
-        "timestamp": 1718814180000
+        "date-time": "2020-04-02T09:17:33Z",
+        "timestamp": 1585819053000
     },
-    "page": "1-16",
+    "page": "311-318",
     "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
     "source": "Crossref",
     "is-referenced-by-count": 0,
     "title": [
-        "Insights from the lived experience of Buddhist ethics: implications for social work ethics education"
+        "Enhancing the U.S. TBI data infrastructure: geospatial perspective"
     ],
     "prefix": "10.1080",
+    "volume": "26",
     "author": [
         {
-            "ORCID": "http://orcid.org/0000-0002-2107-352X",
-            "authenticated-orcid": false,
-            "given": "Bibiana D.",
-            "family": "Koh",
+            "given": "Mara",
+            "family": "Chen",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "School of Social Work, Salisbury University, Salisbury, MD, USA"
+                    "name": "Department of Geography & Geosciences, Salisbury University, Salisbury, MD, USA"
+                }
+            ]
+        },
+        {
+            "given": "Donna",
+            "family": "Ritenour",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Athletic Training, Salisbury University, Salisbury, MD, USA"
+                }
+            ]
+        },
+        {
+            "given": "Karl",
+            "family": "Maier",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Psychology, Salisbury University, Salisbury, MD, USA"
                 }
             ]
         }
@@ -60,471 +107,251 @@
     "published-online": {
         "date-parts": [
             [
-                2024,
-                6,
-                19
+                2020,
+                4,
+                2
             ]
         ]
     },
     "reference": [
         {
-            "key": "e_1_3_3_2_1",
+            "key": "cit0001",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10428232.2016.1108169"
+            "DOI": "10.1080/026990597123223"
         },
         {
-            "key": "e_1_3_3_3_1",
+            "key": "cit0002",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0020872820949614"
+            "DOI": "10.1186/s12942-019-0171-2"
         },
         {
-            "key": "e_1_3_3_4_1",
+            "key": "cit0003",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10437797.2022.2119061"
+            "DOI": "10.1016/S2542-5196(19)30170-6"
         },
         {
-            "key": "e_1_3_3_5_1",
-            "volume-title": "Ethics and values in social work",
-            "author": "Barsky A.",
-            "year": "2019",
-            "unstructured": "Barsky, A. (2019). Ethics and values in social work (2nd ed.). Oxford University Press.",
-            "edition": "2"
-        },
-        {
-            "key": "e_1_3_3_6_1",
-            "first-page": "361",
-            "volume-title": "Theoretical perspectives for direct social work practice: A generalist-eclectic approach",
-            "author": "Beauchemin J.",
-            "year": "2022",
-            "unstructured": "Beauchemin, J. (2022). Mindfulness-based approaches. In K. W. Bolton, J. C. Hall, & P. Lehmann (Eds.), Theoretical perspectives for direct social work practice: A generalist-eclectic approach (pp. 361\u2013375). Springer."
-        },
-        {
-            "key": "e_1_3_3_7_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/13645579.2016.1252188"
-        },
-        {
-            "key": "e_1_3_3_8_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1089/sur.2020.145"
-        },
-        {
-            "key": "e_1_3_3_9_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1191/1478088706qp063oa"
-        },
-        {
-            "key": "e_1_3_3_10_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1515/9780691216102"
-        },
-        {
-            "key": "e_1_3_3_11_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1515/9781400848058"
-        },
-        {
-            "key": "e_1_3_3_12_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/15426432.2018.1520671"
-        },
-        {
-            "key": "e_1_3_3_13_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/15426432.2017.1311246"
-        },
-        {
-            "key": "e_1_3_3_14_1",
-            "volume-title": "Constructing grounded theory",
-            "author": "Charmaz K.",
-            "year": "2014",
-            "unstructured": "Charmaz, K. (2014). Constructing grounded theory. Sage."
-        },
-        {
-            "key": "e_1_3_3_15_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1515/9780691216058"
-        },
-        {
-            "key": "e_1_3_3_16_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/15332985.2014.891554"
-        },
-        {
-            "key": "e_1_3_3_17_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10943-017-0401-5"
-        },
-        {
-            "key": "e_1_3_3_18_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10447-013-9202-z"
-        },
-        {
-            "key": "e_1_3_3_19_1",
-            "first-page": "15",
-            "volume-title": "Korean Buddhist nuns and laywomen",
-            "author": "Cho E. S.",
-            "year": "2011",
-            "unstructured": "Cho, E. S. (2011). Female Buddhist practice in Korea\u2014A historical account. In E. S. Cho (Ed.), Korean Buddhist nuns and laywomen (pp. 15\u201343). State University of New York Press."
-        },
-        {
-            "key": "e_1_3_3_20_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/oso/9780190080891.001.0001"
-        },
-        {
-            "key": "e_1_3_3_21_1",
-            "first-page": "137",
-            "volume-title": "Theoretical perspectives for direct social work practice",
-            "author": "Cobb N. H.",
-            "year": "2022",
-            "unstructured": "Cobb, N. H. (2022). Cognitive behavioral theory and treatment. In K. W. Bolton, J. C. Hall, & P. Lehmann (Eds.), Theoretical perspectives for direct social work practice (pp. 137\u2013161). Springer."
-        },
-        {
-            "key": "e_1_3_3_22_1",
-            "volume-title": "Basics of qualitative research",
-            "author": "Corbin J.",
-            "year": "2015",
-            "unstructured": "Corbin, J., & Strauss, A. (2015). Basics of qualitative research (4th Ed.). Sage.",
-            "edition": "4"
-        },
-        {
-            "key": "e_1_3_3_23_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/imre.12095"
-        },
-        {
-            "key": "e_1_3_3_24_1",
-            "volume-title": "An introduction to engaged Buddhism",
-            "author": "Fuller P.",
-            "year": "2021",
-            "unstructured": "Fuller, P. (2021). An introduction to engaged Buddhism. Bloomsbury Academic."
-        },
-        {
-            "key": "e_1_3_3_25_1",
-            "volume-title": "Social work theories and methods",
-            "author": "Garland E. L.",
-            "year": "2013",
-            "unstructured": "Garland, E. L., Thyer, B. A. (2013). Cognitive-behavioural approach. In Gray M. & Webb S. A. (Eds.), Social work theories and methods (pp. 160\u2013172). Sage."
-        },
-        {
-            "key": "e_1_3_3_26_1",
-            "volume-title": "In a different voice",
-            "author": "Gilligan C.",
-            "year": "2016",
-            "unstructured": "Gilligan, C. (2016). In a different voice (2nd ed.). Harvard University Press.",
-            "edition": "2"
-        },
-        {
-            "key": "e_1_3_3_27_1",
-            "volume-title": "The discovery of grounded theory: Strategies for qualitative research",
-            "author": "Glaser B.",
-            "year": "2012",
-            "unstructured": "Glaser, B., & Strauss, A. (2012). The discovery of grounded theory: Strategies for qualitative research. Aldine Transaction."
-        },
-        {
-            "key": "e_1_3_3_28_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/096973309500200205"
-        },
-        {
-            "key": "e_1_3_3_29_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1001/jamainternmed.2013.13018"
-        },
-        {
-            "key": "e_1_3_3_30_1",
-            "unstructured": "Grand Challenges for Social Work. (2020 June). Grand challenges for social work announces grand challenge to eliminate racism. https://grandchallengesforsocialwork.org/grand-challenges-for-social-work/announcing-the-grand-challenge-to-eliminate-racism/"
-        },
-        {
-            "key": "e_1_3_3_31_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1371/journal.pone.0232076"
-        },
-        {
-            "key": "e_1_3_3_32_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1017/CBO9780511800801"
-        },
-        {
-            "key": "e_1_3_3_33_1",
-            "volume-title": "An introduction to Buddhism",
-            "author": "Harvey P.",
-            "year": "2013",
-            "unstructured": "Harvey, P. (2013). An introduction to Buddhism (2nd ed.). Cambridge University Press.",
-            "edition": "2"
-        },
-        {
-            "key": "e_1_3_3_34_1",
-            "first-page": "7",
-            "volume-title": "The Oxford handbook of Buddhist ethics",
-            "author": "Harvey P.",
+            "issue": "1",
+            "key": "cit0004",
+            "first-page": "555629",
+            "volume": "4",
+            "author": "Chen X. M.",
             "year": "2018",
-            "unstructured": "Harvey, P. (2018). Karma. In D. Cozort & J. M. Shields (Eds.), The Oxford handbook of Buddhist ethics (pp. 7\u201328). Oxford University Press."
+            "journal-title": "JOJ Public Health"
         },
         {
-            "issue": "2",
-            "key": "e_1_3_3_35_1",
-            "first-page": "70",
-            "article-title": "Truth, reconciliation, and social work: A critical pathway to social justice and anti-oppressive practice",
-            "volume": "16",
-            "author": "Havig K.",
-            "year": "2019",
-            "unstructured": "Havig, K., & Byers, L. (2019). Truth, reconciliation, and social work: A critical pathway to social justice and anti-oppressive practice. Journal of Social Work Values & Ethics, 16(2), 70\u201380.",
-            "journal-title": "Journal of Social Work Values & Ethics"
-        },
-        {
-            "key": "e_1_3_3_36_1",
-            "volume-title": "Acceptance and commitment therapy: An experiential approach to behavior change",
-            "author": "Hayes S. C.",
-            "year": "1999",
-            "unstructured": "Hayes, S. C., Strosahl, K., & Wilson, K. G. (1999). Acceptance and commitment therapy: An experiential approach to behavior change. Guilford Press."
-        },
-        {
-            "key": "e_1_3_3_37_1",
-            "volume-title": "Ethics: A pluralistic approach to moral theory",
-            "author": "Hinman L. M.",
-            "year": "2013",
-            "unstructured": "Hinman, L. M. (2013). Ethics: A pluralistic approach to moral theory (5th ed.). Wadsworth, Cengage Learning.",
-            "edition": "5"
-        },
-        {
-            "key": "e_1_3_3_38_1",
-            "doi-asserted-by": "crossref",
-            "first-page": "397",
-            "DOI": "10.1007/978-981-19-1015-9_19",
-            "volume-title": "Social work theory and ethics",
-            "author": "Hugman R.",
-            "year": "2023",
-            "unstructured": "Hugman, R. (2023). Ethical pluralism and social work. In R. Hugman & D. McAulliffe (Eds.), Social work theory and ethics (pp. 397\u201341). Springer."
-        },
-        {
-            "key": "e_1_3_3_39_1",
-            "volume-title": "Ideas: General introduction to pure phenomenology",
-            "author": "Husserl E.",
-            "year": "1931",
-            "unstructured": "Husserl, E. (1931). Ideas: General introduction to pure phenomenology. Martino Fine Books."
-        },
-        {
-            "key": "e_1_3_3_40_1",
-            "unstructured": "International Federation of Social Workers. (2018 July 2). Global social work statement of ethical principles. https://www.ifsw.org/global-social-work-statement-of-ethical-principles/"
-        },
-        {
-            "key": "e_1_3_3_41_1",
-            "volume-title": "Diary of a Korean Zen monk",
-            "author": "Jihoe V.",
-            "year": "2010",
-            "unstructured": "Jihoe, V. (2010). Diary of a Korean Zen monk. Association of Korean Buddhist Orders."
-        },
-        {
-            "key": "e_1_3_3_42_1",
-            "first-page": "275",
-            "volume-title": "Makers of modern Korean Buddhism",
-            "author": "Jorgensen J.",
-            "year": "2010",
-            "unstructured": "Jorgensen, J. (2010). Minjung Buddhism: A Buddhist critique of the status quo\u2014it\u2019s history, philosophy, and critique. In J. Y. Park (Ed.), Makers of modern Korean Buddhism (pp. 275\u2013313). State University of New York Press."
-        },
-        {
-            "key": "e_1_3_3_43_1",
-            "volume-title": "The mindful way through depression",
-            "author": "Kabat-Zinn J.",
-            "year": "2007",
-            "unstructured": "Kabat-Zinn, J. (2007). The mindful way through depression. Guilford Press."
-        },
-        {
-            "key": "e_1_3_3_44_1",
-            "volume-title": "The nature of Buddhist ethics",
-            "author": "Keown D.",
-            "year": "2001",
-            "unstructured": "Keown, D. (2001). The nature of Buddhist ethics. Palgrave."
-        },
-        {
-            "key": "e_1_3_3_45_1",
+            "key": "cit0005",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1353/jkr.2016.0009"
+            "DOI": "10.1186/1742-7622-8-7"
         },
         {
-            "key": "e_1_3_3_46_1",
-            "volume-title": "Doing dialectical behavior therapy",
-            "author": "Koerner K.",
-            "year": "2012",
-            "unstructured": "Koerner, K. (2012). Doing dialectical behavior therapy. The Guilford Press."
-        },
-        {
-            "key": "e_1_3_3_47_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/15313204.2023.2291658"
-        },
-        {
-            "key": "e_1_3_3_48_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/02615479.2022.2069746"
-        },
-        {
-            "key": "e_1_3_3_49_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/09638237.2020.1757052"
-        },
-        {
-            "key": "e_1_3_3_50_1",
-            "volume-title": "DBT skills training manual",
-            "author": "Linehan M.",
-            "year": "2014",
-            "unstructured": "Linehan, M. (2014). DBT skills training manual (2nd ed.). Guilford Press.",
-            "edition": "2"
-        },
-        {
-            "key": "e_1_3_3_51_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/978-0-230-31357-6_16"
-        },
-        {
-            "key": "e_1_3_3_52_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/15524256.2013.794060"
-        },
-        {
-            "key": "e_1_3_3_53_1",
-            "volume-title": "Code of ethics of the National Association of Social Workers",
-            "author": "National Association of Social Workers",
-            "year": "2017",
-            "unstructured": "National Association of Social Workers. (2017). Code of ethics of the National Association of Social Workers. Author."
-        },
-        {
-            "key": "e_1_3_3_54_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s40037-019-0509-2"
-        },
-        {
-            "key": "e_1_3_3_55_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/00208728231170078"
-        },
-        {
-            "key": "e_1_3_3_56_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/bjsw/bcr181"
-        },
-        {
-            "key": "e_1_3_3_57_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.46743/2160-3715/2021.4613"
-        },
-        {
-            "key": "e_1_3_3_58_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/17496530802481573"
-        },
-        {
-            "key": "e_1_3_3_59_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/14737167.2020.1734453"
-        },
-        {
-            "key": "e_1_3_3_60_1",
-            "volume-title": "Buddhism and postmodernity: Zen, Huayan, and the possibility of Buddhist postmodern ethics",
-            "author": "Park J. Y.",
-            "year": "2008",
-            "unstructured": "Park, J. Y. (2008). Buddhism and postmodernity: Zen, Huayan, and the possibility of Buddhist postmodern ethics. Lexington Books."
-        },
-        {
-            "key": "e_1_3_3_61_1",
+            "issue": "5",
+            "key": "cit0006",
             "first-page": "1",
-            "volume-title": "Makers of modern Korean Buddhism",
-            "author": "Park J. Y.",
-            "year": "2010",
-            "unstructured": "Park, J. Y. (2010). Buddhism and modernity in Korea. In J. Y. Park (Ed.), Makers of modern Korean Buddhism (pp. 1\u201315). State of New York University Press."
-        },
-        {
-            "key": "e_1_3_3_62_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1207/s1532768xjepc1004_1"
-        },
-        {
-            "key": "e_1_3_3_63_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/sw/43.6.488"
-        },
-        {
-            "key": "e_1_3_3_64_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.7312/ream18828"
-        },
-        {
-            "key": "e_1_3_3_65_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S1077-7229(02)80040-2"
-        },
-        {
-            "key": "e_1_3_3_66_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.4324/9780203945735"
-        },
-        {
-            "key": "e_1_3_3_67_1",
-            "volume-title": "Manual of Zen Buddhism",
-            "author": "Suzuki D. T.",
-            "year": "1983",
-            "unstructured": "Suzuki, D. T. (1983). Manual of Zen Buddhism. Rider."
-        },
-        {
-            "key": "e_1_3_3_68_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/17496535.2012.704058"
-        },
-        {
-            "key": "e_1_3_3_69_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/02615470903164950"
-        },
-        {
-            "key": "e_1_3_3_70_1",
-            "volume-title": "Echoes from Mt. Kaya",
-            "author": "Ven W. T.",
-            "year": "1988",
-            "unstructured": "Ven, W. T. (1988). Echoes from Mt. Kaya (B. Barry, Trans.). Changyonggak Publishing Co."
-        },
-        {
-            "key": "e_1_3_3_71_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10508422.2016.1275968"
-        },
-        {
-            "key": "e_1_3_3_72_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/sw/45.3.213"
-        },
-        {
-            "key": "e_1_3_3_73_1",
-            "volume-title": "Five ways of doing qualitative analysis",
-            "author": "Wertz F. J.",
+            "volume": "60",
+            "author": "Coronado V. G.",
             "year": "2011",
-            "unstructured": "Wertz, F. J., Charmaz, K., McMullen, L. M., Josselson Anderson, R., & McSpadden, E. (2011). Five ways of doing qualitative analysis. Guilford Press."
+            "journal-title": "MMWR Surveillance Summary"
         },
         {
-            "key": "e_1_3_3_74_1",
+            "key": "cit0007",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1038/s41598-021-90729-y"
+            "DOI": "10.15585/mmwr.mm6429a2"
         },
         {
-            "key": "e_1_3_3_75_1",
+            "key": "cit0008",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/1757743818810565"
+            "DOI": "10.1097/HTR.0000000000000090"
         },
         {
-            "key": "e_1_3_3_76_1",
+            "key": "cit0009",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.cptl.2019.06.005"
+            "DOI": "10.1016/j.csda.2016.02.008"
+        },
+        {
+            "key": "cit0010",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3171/2017.10.JNS17352"
+        },
+        {
+            "key": "cit0011",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/15614263.2014.972618"
+        },
+        {
+            "key": "cit0012",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/19475683.2015.1007895"
+        },
+        {
+            "key": "cit0013",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1089/neu.2013.2857"
+        },
+        {
+            "key": "cit0014",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2147/CEOR.S44625"
+        },
+        {
+            "key": "cit0015",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3233/NRE-2007-22502"
+        },
+        {
+            "key": "cit0016",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/24694452.2017.1293500"
+        },
+        {
+            "key": "cit0017",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.25122/jml-2019-0016"
+        },
+        {
+            "issue": "594",
+            "key": "cit0018",
+            "first-page": "79",
+            "volume": "13",
+            "author": "Kim D.",
+            "year": "2018",
+            "journal-title": "Geospatial Health"
+        },
+        {
+            "key": "cit0019",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.annepidem.2016.12.001"
+        },
+        {
+            "key": "cit0020",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1136/bmj.h904"
+        },
+        {
+            "key": "cit0021",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/S1474-4422(17)30371-X"
+        },
+        {
+            "key": "cit0022",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1097/PSY.0000000000000515"
+        },
+        {
+            "key": "cit0023",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/09602011.2014.999000"
+        },
+        {
+            "key": "cit0024",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/S0277-9536(96)00345-0"
+        },
+        {
+            "key": "cit0025",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s10552-009-9312-4"
+        },
+        {
+            "key": "cit0026",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.sste.2010.10.001"
+        },
+        {
+            "key": "cit0027",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1023/B:NERV.0000048181.46159.61"
+        },
+        {
+            "key": "cit0028",
+            "unstructured": "National Center for Injury Prevention and Control. 2010. \u201cTraumatic Brain Injury in the United State: Emergency Department Visits, Hospitalizations and Deaths 2002 \u2013 2006.\u201d https://www.cdc.gov/traumaticbraininjury/pdf/blue_book.pdf"
+        },
+        {
+            "key": "cit0029",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1176/appi.ajp.2013.13020190"
+        },
+        {
+            "key": "cit0030",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1542/peds.2011-0840"
+        },
+        {
+            "key": "cit0031",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.18043/ncm.76.2.96"
+        },
+        {
+            "key": "cit0032",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.14236/jhi.v24i2.940"
+        },
+        {
+            "key": "cit0033",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.4258/hir.2012.18.2.88"
+        },
+        {
+            "key": "cit0034",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/13658810902950625"
+        },
+        {
+            "key": "cit0035",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/19475683.2015.1031204"
+        },
+        {
+            "key": "cit0036",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2340/16501977-1156"
+        },
+        {
+            "key": "cit0037",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/15433710802633734"
+        },
+        {
+            "key": "cit0038",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1097/WCO.0000000000000613"
+        },
+        {
+            "key": "cit0039",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1542/peds.2011-2074"
+        },
+        {
+            "key": "cit0040",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.15585/mmwr.ss6609a1"
+        },
+        {
+            "key": "cit0041",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s11065-014-9273-6"
+        },
+        {
+            "key": "cit0042",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/S0090-3019(03)00378-1"
+        },
+        {
+            "key": "cit0043",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s11136-017-1586-5"
+        },
+        {
+            "key": "cit0044",
+            "unstructured": "World Health Organization. 2006. \u201cNeurological Disorders: Public Health Challenges.\u201d https://www.who.int/mental_health/neurology/neurological_disorders_report_web.pdf"
         }
     ],
     "container-title": [
-        "Social Work Education"
+        "Annals of GIS"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/02615479.2024.2368174",
+            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/19475683.2020.1744724",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -533,54 +360,66 @@
     "deposited": {
         "date-parts": [
             [
-                2024,
-                6,
-                19
+                2021,
+                5,
+                29
             ]
         ],
-        "date-time": "2024-06-19T16:23:22Z",
-        "timestamp": 1718814202000
+        "date-time": "2021-05-29T21:57:19Z",
+        "timestamp": 1622325439000
     },
-    "score": 15.676397,
+    "score": 17.175812,
     "resource": {
         "primary": {
-            "URL": "https://www.tandfonline.com/doi/full/10.1080/02615479.2024.2368174"
+            "URL": "https://www.tandfonline.com/doi/full/10.1080/19475683.2020.1744724"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2024,
-                6,
-                19
+                2020,
+                4,
+                2
             ]
         ]
     },
-    "references-count": 75,
+    "references-count": 44,
+    "journal-issue": {
+        "issue": "3",
+        "published-print": {
+            "date-parts": [
+                [
+                    2020,
+                    7,
+                    2
+                ]
+            ]
+        }
+    },
     "alternative-id": [
-        "10.1080/02615479.2024.2368174"
+        "10.1080/19475683.2020.1744724"
     ],
-    "URL": "http://dx.doi.org/10.1080/02615479.2024.2368174",
+    "URL": "http://dx.doi.org/10.1080/19475683.2020.1744724",
     "ISSN": [
-        "0261-5479",
-        "1470-1227"
+        "1947-5683",
+        "1947-5691"
     ],
     "issn-type": [
         {
-            "value": "0261-5479",
+            "value": "1947-5683",
             "type": "print"
         },
         {
-            "value": "1470-1227",
+            "value": "1947-5691",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2024,
-                6,
-                19
+                2020,
+                4,
+                2
             ]
         ]
     },
@@ -592,14 +431,14 @@
             "label": "Peer Review Statement"
         },
         {
-            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=cswe20",
-            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=cswe20",
+            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=tagi20",
+            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=tagi20",
             "order": 2,
             "name": "aims_and_scope_url",
             "label": "Aim & Scope"
         },
         {
-            "value": "2023-10-21",
+            "value": "2019-10-06",
             "order": 0,
             "name": "received",
             "label": "Received",
@@ -609,8 +448,8 @@
             }
         },
         {
-            "value": "2024-06-09",
-            "order": 1,
+            "value": "2020-03-11",
+            "order": 2,
             "name": "accepted",
             "label": "Accepted",
             "group": {
@@ -619,8 +458,8 @@
             }
         },
         {
-            "value": "2024-06-19",
-            "order": 2,
+            "value": "2020-04-02",
+            "order": 3,
             "name": "published",
             "label": "Published",
             "group": {

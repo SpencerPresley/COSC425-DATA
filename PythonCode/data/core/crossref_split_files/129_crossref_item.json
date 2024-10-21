@@ -3,372 +3,722 @@
         "date-parts": [
             [
                 2024,
-                8,
-                6
+                7,
+                22
             ]
         ],
-        "date-time": "2024-08-06T00:23:59Z",
-        "timestamp": 1722903839807
+        "date-time": "2024-07-22T13:40:16Z",
+        "timestamp": 1721655616524
     },
-    "reference-count": 49,
-    "publisher": "Informa UK Limited",
-    "content-domain": {
-        "domain": [
-            "www.tandfonline.com"
-        ],
-        "crossmark-restriction": true
-    },
-    "short-container-title": [
-        "International Journal of Kinesiology in Higher Education"
+    "reference-count": 89,
+    "publisher": "Wiley",
+    "issue": "6",
+    "license": [
+        {
+            "start": {
+                "date-parts": [
+                    [
+                        2020,
+                        8,
+                        23
+                    ]
+                ],
+                "date-time": "2020-08-23T00:00:00Z",
+                "timestamp": 1598140800000
+            },
+            "content-version": "am",
+            "delay-in-days": 366,
+            "URL": "http://onlinelibrary.wiley.com/termsAndConditions#am"
+        },
+        {
+            "start": {
+                "date-parts": [
+                    [
+                        2019,
+                        8,
+                        23
+                    ]
+                ],
+                "date-time": "2019-08-23T00:00:00Z",
+                "timestamp": 1566518400000
+            },
+            "content-version": "vor",
+            "delay-in-days": 0,
+            "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+        }
     ],
-    "DOI": "10.1080/24711616.2024.2381442",
-    "type": "journal-article",
-    "created": {
-        "date-parts": [
-            [
-                2024,
-                8,
-                5
-            ]
-        ],
-        "date-time": "2024-08-05T20:33:13Z",
-        "timestamp": 1722889993000
-    },
-    "page": "1-14",
-    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
-    "source": "Crossref",
-    "is-referenced-by-count": 0,
-    "title": [
-        "Physical Activity and Exercise Motivation Differences Among College Students"
-    ],
-    "prefix": "10.1080",
-    "author": [
+    "funder": [
         {
-            "given": "Zachary",
-            "family": "Townsend",
-            "sequence": "first",
-            "affiliation": [
+            "DOI": "10.13039/100000155",
+            "name": "Division of Environmental Biology",
+            "doi-asserted-by": "publisher",
+            "award": [
+                "0640932",
+                "1310874",
+                "1242510"
+            ],
+            "id": [
                 {
-                    "name": "School of Health Sciences, Salisbury University, Salisbury, Maryland"
-                }
-            ]
-        },
-        {
-            "given": "William",
-            "family": "Torrence",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "College of Graduate Studies, Concordia University Chicago, River Forest, Illinois"
-                }
-            ]
-        },
-        {
-            "given": "Daniel",
-            "family": "Smith",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "College of Graduate Studies, Concordia University Chicago, River Forest, Illinois"
-                }
-            ]
-        },
-        {
-            "given": "Tim",
-            "family": "Werner",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "School of Health Sciences, Salisbury University, Salisbury, Maryland"
+                    "id": "10.13039/100000155",
+                    "id-type": "DOI",
+                    "asserted-by": "publisher"
                 }
             ]
         }
     ],
-    "member": "301",
+    "content-domain": {
+        "domain": [
+            "onlinelibrary.wiley.com"
+        ],
+        "crossmark-restriction": true
+    },
+    "short-container-title": [
+        "Evolution and Development"
+    ],
+    "published-print": {
+        "date-parts": [
+            [
+                2019,
+                11
+            ]
+        ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>A key trend in the 210\u2010million\u2010year\u2010old history of modern turtles was the evolution of shell kinesis, that is, shell movement during neck and limb retraction. Kinesis is hypothesized to enhance predator defense in small terrestrial and semiaquatic turtles and has evolved multiple times since the early Cretaceous. This complex phenotype is nonfunctional and far from fully differentiated following embryogenesis. Instead, kinesis develops slowly in juveniles, providing a unique opportunity to illustrate the postembryonic origins of an adaptive trait. To this end, we examined ventral shell (plastral) kinesis in emydine box turtles and found that hatchling plastron shape differs from that of akinetic\u2010shelled relatives, particularly where the hinge that enables kinesis differentiates. We also demonstrated shape changes relative to plastron size in juveniles, coinciding with a shift in the carapace\u2010plastron structural connection, rearrangement of ectodermal plates, and bone repatterning. Furthermore, because the shell grows larger relative to the head, complete concealment of the head and extremities is only achieved after relative shell proportions increase. Structural alterations that facilitate the box turtle's transformation are probably prepatterned in embryos but require function\u2010induced changes to differentiate in juveniles. This mode of delayed trait differentiation is essential to phenotypic diversification in turtles and perhaps other tetrapods.</jats:p>",
+    "DOI": "10.1111/ede.12307",
+    "type": "journal-article",
+    "created": {
+        "date-parts": [
+            [
+                2019,
+                8,
+                23
+            ]
+        ],
+        "date-time": "2019-08-23T09:25:52Z",
+        "timestamp": 1566552352000
+    },
+    "page": "297-310",
+    "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 4,
+    "title": [
+        "The postembryonic transformation of the shell in emydine box turtles"
+    ],
+    "prefix": "10.1111",
+    "volume": "21",
+    "author": [
+        {
+            "ORCID": "http://orcid.org/0000-0002-9137-1741",
+            "authenticated-orcid": false,
+            "given": "Gerardo A.",
+            "family": "Cordero",
+            "sequence": "first",
+            "affiliation": [
+                {
+                    "name": "Department of Ecology, Evolution, and Organismal Biology Iowa State University Ames Iowa USA"
+                },
+                {
+                    "name": "Department of Geosciences Eberhard\u2010Karls\u2010Universit\u00e4t T\u00fcbingen T\u00fcbingen Germany"
+                }
+            ]
+        },
+        {
+            "given": "Samantha",
+            "family": "Stearns",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Ecology, Evolution, and Organismal Biology Iowa State University Ames Iowa USA"
+                }
+            ]
+        },
+        {
+            "given": "Kevin",
+            "family": "Quinteros",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Ecology, Evolution, and Organismal Biology Iowa State University Ames Iowa USA"
+                }
+            ]
+        },
+        {
+            "given": "Chelsea M.",
+            "family": "Berns",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Biology Salisbury University Salisbury Maryland USA"
+                }
+            ]
+        },
+        {
+            "given": "Steven M.",
+            "family": "Binz",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Physics Salisbury University Salisbury Maryland USA"
+                }
+            ]
+        },
+        {
+            "given": "Fredric",
+            "family": "Janzen",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Ecology, Evolution, and Organismal Biology Iowa State University Ames Iowa USA"
+                }
+            ]
+        }
+    ],
+    "member": "311",
     "published-online": {
         "date-parts": [
             [
-                2024,
+                2019,
                 8,
-                5
+                23
             ]
         ]
     },
     "reference": [
         {
-            "key": "e_1_3_2_2_1",
-            "unstructured": "American College Health Association. (2021). National college health assessment. https://www.acha.org/NCHA/NCHA_Home"
-        },
-        {
-            "key": "e_1_3_2_3_1",
+            "key": "e_1_2_6_1_2_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1186/1479-5868-6-21"
+            "DOI": "10.1111/2041-210X.12511"
         },
         {
-            "key": "e_1_3_2_4_1",
+            "key": "e_1_2_6_1_3_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2522/ptj.20110037"
+            "DOI": "10.1186/1471-2148-10-216"
         },
         {
-            "key": "e_1_3_2_5_1",
+            "key": "e_1_2_6_1_4_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1123/jpah.2013-0332"
+            "DOI": "10.1111/2041-210X.12035"
         },
         {
-            "key": "e_1_3_2_6_1",
+            "key": "e_1_2_6_1_5_1",
+            "volume-title": "Contributions to the natural history of the United States of America: pt. I. Essay on classification. pt. II. North American Testudinata",
+            "author": "Agassiz L.",
+            "year": "1857"
+        },
+        {
+            "key": "e_1_2_6_1_6_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/24711616.2020.1869512"
+            "DOI": "10.1017/S0094837300006588"
         },
         {
-            "key": "e_1_3_2_7_1",
+            "key": "e_1_2_6_1_7_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/24711616.2017.1328196"
+            "DOI": "10.1111/bij.12010"
         },
         {
-            "key": "e_1_3_2_8_1",
+            "key": "e_1_2_6_1_8_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.psychsport.2012.10.005"
+            "DOI": "10.1111/j.1558-5646.2010.01118.x"
         },
         {
-            "key": "e_1_3_2_9_1",
+            "key": "e_1_2_6_1_9_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.3390/ijerph18158002"
+            "DOI": "10.1017/CBO9780511606830"
         },
         {
-            "key": "e_1_3_2_10_1",
+            "key": "e_1_2_6_1_10_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.21315/mjms2018.25.5.9"
+            "DOI": "10.1111/j.1469-185X.1991.tb01138.x"
         },
         {
-            "key": "e_1_3_2_11_1",
+            "key": "e_1_2_6_1_11_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.3389/fpsyg.2018.01940"
+            "DOI": "10.1007/s11692-015-9317-8"
         },
         {
-            "key": "e_1_3_2_12_1",
+            "key": "e_1_2_6_1_12_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1123/rsj.2013-0006"
+            "DOI": "10.2307/1442685"
         },
         {
-            "key": "e_1_3_2_13_1",
+            "issue": "4",
+            "key": "e_1_2_6_1_13_1",
+            "first-page": "205",
+            "article-title": "A reevaluation of plastral kinesis in African turtles of the genus Pelusios",
+            "volume": "37",
+            "author": "Bramble D. M.",
+            "year": "1981",
+            "journal-title": "Herpetologica"
+        },
+        {
+            "key": "e_1_2_6_1_14_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.12659/MSM.899816"
+            "DOI": "10.2307/1445203"
         },
         {
-            "key": "e_1_3_2_14_1",
+            "key": "e_1_2_6_1_15_1",
+            "first-page": "77",
+            "volume-title": "Great Transformaitons in Vertebrate Evolution",
+            "author": "Burke A. C.",
+            "year": "2015"
+        },
+        {
+            "key": "e_1_2_6_1_16_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1155/2012/803769"
+            "DOI": "10.1093/sysbio/syw043"
         },
         {
-            "key": "e_1_3_2_15_1",
+            "key": "e_1_2_6_1_17_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/07448481.2010.513074"
+            "DOI": "10.1007/s11692-018-9463-x"
         },
         {
-            "key": "e_1_3_2_16_1",
-            "unstructured": "Hales C. M. Carroll M. D. Fryar C. D. & Ogden C. L. (2020). Prevalence of obesity and severe obesity among adults: United States 2017\u20132018 (360) [Dataset]. National Center for Health Statistics. https://www.cdc.gov/nchs/data/databriefs/db360-h.pdf"
+            "key": "e_1_2_6_1_18_1",
+            "volume-title": "Handbook of turtles: The turtles of the United States, Canada, and Baja California",
+            "author": "Carr A. F.",
+            "year": "1952"
         },
         {
-            "key": "e_1_3_2_17_1",
+            "key": "e_1_2_6_1_19_1",
+            "volume-title": "The turtle shell: Morphogenesis and evolution",
+            "author": "Cherepanov G. O.",
+            "year": "2005"
+        },
+        {
+            "key": "e_1_2_6_1_20_1",
+            "first-page": "34",
+            "article-title": "Convergence induced by plastral kinesis and phylogenetic constraints in Testudinoidea: A geometric morphometric assessment",
+            "volume": "1",
+            "author": "Claude J.",
+            "year": "2006",
+            "journal-title": "Russian Journal of Herpetology"
+        },
+        {
+            "key": "e_1_2_6_1_21_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.ehb.2013.05.003"
+            "DOI": "10.1046/j.1095-8312.2003.00198.x"
         },
         {
-            "key": "e_1_3_2_18_1",
+            "key": "e_1_2_6_1_22_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1123/kr.2021-0028"
+            "DOI": "10.1038/hdy.2014.75"
         },
         {
-            "key": "e_1_3_2_19_1",
+            "key": "e_1_2_6_1_23_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.3200/JACH.54.2.116-126"
+            "DOI": "10.1016/j.cub.2016.12.040"
         },
         {
-            "key": "e_1_3_2_20_1",
+            "key": "e_1_2_6_1_24_1",
+            "unstructured": "Cordero G. A.(2019). Der Schildkr\u00f6tenpanzer als Modell f\u00fcr Bionik Biomechanik und skeletale Plastizit\u00e4t. In I. Werneburg & O. Betz (Eds.) Phylogenie Funktionsmorphologie und Bionik. Texte zum 60. Phylogenetischen Symposium in T\u00fcbingen(Vol. In press). T\u00fcbingen: Scidinge Hall Verlag."
+        },
+        {
+            "key": "e_1_2_6_1_25_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1017/S1368980012002996"
+            "DOI": "10.1111/jeb.12938"
         },
         {
-            "key": "e_1_3_2_21_1",
+            "key": "e_1_2_6_1_26_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1038/oby.2010.262"
+            "DOI": "10.1002/jmor.20226"
         },
         {
-            "key": "e_1_3_2_22_1",
+            "key": "e_1_2_6_1_27_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0140-6736(12)61031-9"
+            "DOI": "10.1111/ede.12264"
         },
         {
-            "key": "e_1_3_2_23_1",
+            "key": "e_1_2_6_1_28_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/09593985.2018.1457112"
+            "DOI": "10.1098/rsbl.2015.0022"
         },
         {
-            "key": "e_1_3_2_24_1",
+            "key": "e_1_2_6_1_29_1",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Cordero G. A. Quinteros K. &Janzen F. J.(2018). Delayed trait development and the convergent evolution of shell kinesis in turtles.Proceedings of the Royal Society B: Biological Sciences.",
+            "DOI": "10.1098/rspb.2018.1585"
+        },
+        {
+            "key": "e_1_2_6_1_30_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1123/jsep.26.2.191"
+            "DOI": "10.1002/jmor.20339"
         },
         {
-            "key": "e_1_3_2_25_1",
+            "key": "e_1_2_6_1_31_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.4236/ojpm.2014.44022"
+            "DOI": "10.2307/1443874"
         },
         {
-            "key": "e_1_3_2_26_1",
+            "key": "e_1_2_6_1_32_1",
+            "volume-title": "Embryos and ancestors",
+            "author": "Beer G. R.",
+            "year": "1958"
+        },
+        {
+            "key": "e_1_2_6_1_33_1",
+            "volume-title": "North American box turtles: A natural history",
+            "author": "Dodd C. K.",
+            "year": "2002"
+        },
+        {
+            "key": "e_1_2_6_1_34_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0191-8869(97)00107-4"
+            "DOI": "10.2307/1446248"
         },
         {
-            "key": "e_1_3_2_27_1",
+            "key": "e_1_2_6_1_35_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/1091367X.2017.1297711"
+            "DOI": "10.1006/mpev.2001.1070"
         },
         {
-            "key": "e_1_3_2_28_1",
-            "volume-title": "Total fall enrollment in degree-granting postsecondary institutions, by attendance status, sex, and age of student: Selected years, 1970 through 2029",
-            "author": "National Center for Educational Statistics",
-            "year": "2020",
-            "unstructured": "National Center for Educational Statistics. (2020). Total fall enrollment in degree-granting postsecondary institutions, by attendance status, sex, and age of student: Selected years, 1970 through 2029 [Dataset]. Institute of Education Sciences. https://nces.ed.gov/programs/digest/d19/tables/dt19_303.40.asp"
-        },
-        {
-            "issue": "2",
-            "key": "e_1_3_2_29_1",
-            "first-page": "250",
-            "article-title": "Exercise motivation in university community members: A behavioural intervention",
-            "volume": "19",
-            "author": "Ortis L. C.",
-            "year": "2007",
-            "unstructured": "Ortis, L. C., Maym\u00ed, J. N., Feliu, J. C., Vidal, J. M., Romero, E. P., Bassets, M. P., Herreros, M. V., & Brosa, J. V. (2007). Exercise motivation in university community members: A behavioural intervention. Psicothema, 19(2), 250\u2013255.",
-            "journal-title": "Psicothema"
-        },
-        {
-            "key": "e_1_3_2_30_1",
+            "key": "e_1_2_6_1_36_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/07448481.2015.1015027"
+            "DOI": "10.1038/srep09840"
         },
         {
-            "key": "e_1_3_2_31_1",
+            "key": "e_1_2_6_1_37_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/1090198115598983"
+            "DOI": "10.1086/282640"
         },
         {
-            "key": "e_1_3_2_32_1",
+            "key": "e_1_2_6_1_38_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s11135-020-00988-6"
+            "DOI": "10.1007/s11692-011-9142-7"
         },
         {
-            "key": "e_1_3_2_33_1",
+            "key": "e_1_2_6_1_39_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.23736/S0022-4707.17.06665-8"
+            "DOI": "10.1046/j.1525-142x.2001.003002047.x"
         },
         {
-            "key": "e_1_3_2_34_1",
+            "key": "e_1_2_6_1_40_1",
+            "volume-title": "The material basis of evolution",
+            "author": "Goldschmidt R.",
+            "year": "1940"
+        },
+        {
+            "key": "e_1_2_6_1_41_1",
+            "volume-title": "Ontogeny and phylogeny",
+            "author": "Gould S. J.",
+            "year": "1977"
+        },
+        {
+            "key": "e_1_2_6_1_42_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/24711616.2022.2066584"
+            "DOI": "10.1007/BF02291478"
         },
         {
-            "key": "e_1_3_2_35_1",
+            "key": "e_1_2_6_1_43_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.3390/ijerph17197161"
+            "DOI": "10.1002/jez.b.22579"
         },
         {
-            "issue": "10",
-            "key": "e_1_3_2_36_1",
-            "first-page": "1239",
-            "article-title": "Levels of physical activity, motivation and barriers to participation in university students",
-            "volume": "56",
-            "author": "Sevil J.",
-            "year": "2016",
-            "unstructured": "Sevil, J., Pr\u00e1xedes, A., Abarca-Sos, A., Del-Villar, F., & Garc\u00eda-Gonz\u00e1lez, L. (2016). Levels of physical activity, motivation and barriers to participation in university students. The Journal of Sports Medicine and Physical Fitness, 56(10), 1239\u20131248.",
-            "journal-title": "The Journal of Sports Medicine and Physical Fitness"
+            "issue": "4",
+            "key": "e_1_2_6_1_44_1",
+            "first-page": "114",
+            "article-title": "Terrapene carolina carolina (eastern box turtle). Morphology and behavior",
+            "volume": "15",
+            "author": "Holman J. A.",
+            "year": "1984",
+            "journal-title": "Herpetological Review"
         },
         {
-            "key": "e_1_3_2_37_1",
+            "key": "e_1_2_6_1_45_1",
+            "first-page": "1",
+            "article-title": "Emydoidea (Emydidae, Testudines) from the Barstovian (Miocene) of Nebraska",
+            "volume": "37",
+            "author": "Hutchison J. H.",
+            "year": "1981",
+            "journal-title": "Paleo Bios"
+        },
+        {
+            "key": "e_1_2_6_1_46_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0031512518788743"
+            "DOI": "10.1007/978-94-007-4309-0_26"
         },
         {
-            "issue": "3",
-            "key": "e_1_3_2_38_1",
-            "first-page": "330",
-            "article-title": "The relationship of living environment with behavioral and fitness outcomes by sex: An exploratory study in college-aged students",
-            "volume": "10",
-            "author": "Shaffer K.",
-            "year": "2017",
-            "unstructured": "Shaffer, K., Bopp, M., Papalia, Z., Sims, D., & Bopp, C. M. (2017). The relationship of living environment with behavioral and fitness outcomes by sex: An exploratory study in college-aged students. International Journal of Exercise Science, 10(3), 330\u2013339.",
-            "journal-title": "International Journal of Exercise Science"
+            "key": "e_1_2_6_1_47_1",
+            "volume-title": "Problems of relative growth",
+            "author": "Huxley J. S.",
+            "year": "1932"
         },
         {
-            "key": "e_1_3_2_39_1",
+            "key": "e_1_2_6_1_48_1",
+            "volume-title": "Life in a shell: A physiologists view of a turtle",
+            "author": "Jackson D. C.",
+            "year": "2013"
+        },
+        {
+            "key": "e_1_2_6_1_49_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/24711616.2020.1866470"
+            "DOI": "10.1666/11-073.1"
         },
         {
-            "key": "e_1_3_2_40_1",
+            "key": "e_1_2_6_1_50_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.5334/pb.ai"
+            "DOI": "10.1127/njgpa/218/2000/399"
         },
         {
-            "key": "e_1_3_2_41_1",
+            "key": "e_1_2_6_1_51_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1590/1980-0037.2013v15n2p164"
+            "DOI": "10.1127/njgpa/226/2002/343"
         },
         {
-            "key": "e_1_3_2_42_1",
+            "key": "e_1_2_6_1_52_1",
+            "volume-title": "Natural history of the ornate box turtle, Terrapene ornata ornata Agassiz",
+            "author": "Legler J. M.",
+            "year": "1960"
+        },
+        {
+            "key": "e_1_2_6_1_53_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1123/rsj.37.1.14"
+            "DOI": "10.1080/106351501753328785"
         },
         {
-            "key": "e_1_3_2_43_1",
-            "volume-title": "Research methods in physical activity",
-            "author": "Thomas J. R.",
-            "year": "2023",
-            "unstructured": "Thomas, J. R., Martin, P. E., Etnier, J. L., & Silverman, S. J. (2023). Research methods in physical activity (8th ed.). Human Kinetics.",
-            "edition": "8"
-        },
-        {
-            "key": "e_1_3_2_44_1",
+            "key": "e_1_2_6_1_54_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1186/s12889-017-4757-y"
+            "DOI": "10.1038/s41467-018-06257-3"
         },
         {
-            "key": "e_1_3_2_45_1",
+            "key": "e_1_2_6_1_55_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1037/a0030632"
+            "DOI": "10.1086/414425"
         },
         {
-            "key": "e_1_3_2_46_1",
+            "key": "e_1_2_6_1_56_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1186/1479-5868-8-97"
+            "DOI": "10.1655/HERPETOLOGICA-D-15-00037"
         },
         {
-            "key": "e_1_3_2_47_1",
+            "key": "e_1_2_6_1_57_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/07448481.2021.1965150"
+            "DOI": "10.1126/science.1226265"
         },
         {
-            "key": "e_1_3_2_48_1",
+            "key": "e_1_2_6_1_58_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/07448481.2020.1804388"
+            "DOI": "10.1016/j.gde.2017.03.016"
         },
         {
-            "key": "e_1_3_2_49_1",
+            "key": "e_1_2_6_1_59_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.pmedr.2019.100984"
+            "DOI": "10.1242/dev.109041"
         },
         {
-            "key": "e_1_3_2_50_1",
+            "key": "e_1_2_6_1_60_1",
+            "first-page": "99",
+            "volume-title": "Evolutionary Innovations",
+            "author": "M\u00fcller G. B.",
+            "year": "1990"
+        },
+        {
+            "key": "e_1_2_6_1_61_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1751-9861.2006.tb00021.x"
+            "DOI": "10.1126/science.1173826"
+        },
+        {
+            "key": "e_1_2_6_1_62_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1655/HERPETOLOGICA-D-09-0003.1"
+        },
+        {
+            "key": "e_1_2_6_1_63_1",
+            "doi-asserted-by": "crossref",
+            "first-page": "221",
+            "DOI": "10.7551/mitpress/5182.003.0019",
+            "volume-title": "Origination of organismal form",
+            "author": "Newman S. A.",
+            "year": "2003"
+        },
+        {
+            "key": "e_1_2_6_1_64_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/B978-012730055-9/50037-9"
+        },
+        {
+            "key": "e_1_2_6_1_65_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/jez.b.21066"
+        },
+        {
+            "key": "e_1_2_6_1_66_1",
+            "volume-title": "Morphological integration",
+            "author": "Olson E. C.",
+            "year": "1958"
+        },
+        {
+            "key": "e_1_2_6_1_67_1",
+            "volume-title": "Reptiles of North Carolina",
+            "author": "Palmer W. M.",
+            "year": "1995"
+        },
+        {
+            "key": "e_1_2_6_1_68_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.ympev.2017.05.008"
+        },
+        {
+            "key": "e_1_2_6_1_69_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/02724634.2016.1111225"
+        },
+        {
+            "key": "e_1_2_6_1_70_1",
+            "volume-title": "Vertebrate life",
+            "author": "Pough F. H.",
+            "year": "2001"
+        },
+        {
+            "key": "e_1_2_6_1_71_1",
+            "first-page": "671",
+            "article-title": "Akinesis and plastral scute homologies in Sternotherus (Testudines: Kinosternidae)",
+            "volume": "4",
+            "author": "Pritchard P. C. H.",
+            "year": "2003",
+            "journal-title": "Chelonian Conservation and Biology"
+        },
+        {
+            "key": "e_1_2_6_1_72_1",
+            "first-page": "45",
+            "volume-title": "Biology of turtles",
+            "author": "Pritchard P. C. H.",
+            "year": "2008"
+        },
+        {
+            "key": "e_1_2_6_1_73_1",
+            "volume-title": "Conservation biology of freshwater turtles and tortoises: A compilation project of the IUCN/SSC tortoise and freshwater turtle specialist group. Chelonian research monographs",
+            "author": "Rhodin A. G. J.",
+            "year": "2017"
+        },
+        {
+            "key": "e_1_2_6_1_74_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/2423209"
+        },
+        {
+            "key": "e_1_2_6_1_75_1",
+            "volume-title": "tpsDig (Version version 2.16)",
+            "author": "Rohlf F. J.",
+            "year": "2010"
+        },
+        {
+            "key": "e_1_2_6_1_76_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/106351500750049806"
+        },
+        {
+            "key": "e_1_2_6_1_77_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/jmor.20844"
+        },
+        {
+            "key": "e_1_2_6_1_78_1",
+            "first-page": "1",
+            "article-title": "The mechanisms of carapacial and plastral hinges in chelonians",
+            "volume": "130",
+            "author": "Shah R. V.",
+            "year": "1960",
+            "journal-title": "Brevoria"
+        },
+        {
+            "key": "e_1_2_6_1_79_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s004420050547"
+        },
+        {
+            "key": "e_1_2_6_1_80_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/1564442"
+        },
+        {
+            "key": "e_1_2_6_1_81_1",
+            "volume-title": "The age of dinosaurs in Russia and Mongolia",
+            "author": "Sukhanov V. B.",
+            "year": "2000"
+        },
+        {
+            "key": "e_1_2_6_1_82_1",
+            "doi-asserted-by": "crossref",
+            "volume-title": "On growth and form",
+            "author": "Thompson D. W.",
+            "year": "1945",
+            "DOI": "10.5962/bhl.title.6462"
+        },
+        {
+            "key": "e_1_2_6_1_83_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2108/zsj.20.749"
+        },
+        {
+            "key": "e_1_2_6_1_84_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1515/9781400851461"
+        },
+        {
+            "key": "e_1_2_6_1_85_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1365-2435.2007.01283.x"
+        },
+        {
+            "key": "e_1_2_6_1_86_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/3671551"
+        },
+        {
+            "key": "e_1_2_6_1_87_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1093/icb/icm025"
+        },
+        {
+            "key": "e_1_2_6_1_88_1",
+            "first-page": "311",
+            "volume-title": "Biology of the Reptilia",
+            "author": "Zangerl R.",
+            "year": "1969"
+        },
+        {
+            "key": "e_1_2_6_1_89_1",
+            "volume-title": "Geometric Morphometrics for Biologists: A Primer",
+            "author": "Zelditch M. L.",
+            "year": "2012"
+        },
+        {
+            "key": "e_1_2_6_1_90_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s11692-008-9034-7"
         }
     ],
     "container-title": [
-        "International Journal of Kinesiology in Higher Education"
+        "Evolution &amp; Development"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/24711616.2024.2381442",
+            "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1111%2Fede.12307",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/ede.12307",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1111/ede.12307",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://onlinelibrary.wiley.com/doi/am-pdf/10.1111/ede.12307",
+            "content-type": "application/pdf",
+            "content-version": "am",
+            "intended-application": "syndication"
+        },
+        {
+            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/ede.12307",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -378,73 +728,74 @@
         "date-parts": [
             [
                 2024,
-                8,
-                5
+                7,
+                22
             ]
         ],
-        "date-time": "2024-08-05T20:33:21Z",
-        "timestamp": 1722890001000
+        "date-time": "2024-07-22T12:58:01Z",
+        "timestamp": 1721653081000
     },
-    "score": 15.967358,
+    "score": 14.28126,
     "resource": {
         "primary": {
-            "URL": "https://www.tandfonline.com/doi/full/10.1080/24711616.2024.2381442"
+            "URL": "https://onlinelibrary.wiley.com/doi/10.1111/ede.12307"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2024,
+                2019,
                 8,
-                5
+                23
             ]
         ]
     },
-    "references-count": 49,
+    "references-count": 89,
+    "journal-issue": {
+        "issue": "6",
+        "published-print": {
+            "date-parts": [
+                [
+                    2019,
+                    11
+                ]
+            ]
+        }
+    },
     "alternative-id": [
-        "10.1080/24711616.2024.2381442"
+        "10.1111/ede.12307"
     ],
-    "URL": "http://dx.doi.org/10.1080/24711616.2024.2381442",
+    "URL": "http://dx.doi.org/10.1111/ede.12307",
+    "archive": [
+        "Portico"
+    ],
     "ISSN": [
-        "2471-1616",
-        "2471-1624"
+        "1520-541X",
+        "1525-142X"
     ],
     "issn-type": [
         {
-            "value": "2471-1616",
+            "value": "1520-541X",
             "type": "print"
         },
         {
-            "value": "2471-1624",
+            "value": "1525-142X",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2024,
+                2019,
                 8,
-                5
+                23
             ]
         ]
     },
     "assertion": [
         {
-            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
-            "order": 1,
-            "name": "peerreview_statement",
-            "label": "Peer Review Statement"
-        },
-        {
-            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=ukhe20",
-            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=ukhe20",
+            "value": "2019-08-23",
             "order": 2,
-            "name": "aims_and_scope_url",
-            "label": "Aim & Scope"
-        },
-        {
-            "value": "2024-08-05",
-            "order": 3,
             "name": "published",
             "label": "Published",
             "group": {

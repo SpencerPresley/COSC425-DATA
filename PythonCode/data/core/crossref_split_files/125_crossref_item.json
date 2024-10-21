@@ -2,93 +2,228 @@
     "indexed": {
         "date-parts": [
             [
-                2022,
-                4,
-                5
+                2024,
+                5,
+                9
             ]
         ],
-        "date-time": "2022-04-05T05:31:08Z",
-        "timestamp": 1649136668081
+        "date-time": "2024-05-09T18:39:15Z",
+        "timestamp": 1715279955365
     },
-    "reference-count": 1,
-    "publisher": "Informa UK Limited",
-    "issue": "4",
+    "reference-count": 24,
+    "publisher": "IGI Global",
+    "issue": "1",
     "content-domain": {
-        "domain": [
-            "www.tandfonline.com"
-        ],
-        "crossmark-restriction": true
+        "domain": [],
+        "crossmark-restriction": false
     },
-    "short-container-title": [
-        "Popular Communication"
-    ],
     "published-print": {
         "date-parts": [
             [
-                2021,
-                10,
-                2
+                2019,
+                1,
+                1
             ]
         ]
     },
-    "DOI": "10.1080/15405702.2021.1939876",
+    "abstract": "<p>This article studies the influence of enterprise core competence on IT application maturity (ITAM) from the perspectives of management institutional and process management capabilities. The roles of firm ownership and international organization of standard (ISO) certifications are also studied. Based on reliable and valid measurements of IT applications maturity, management institutional capability, and process management capability, the authors collect corresponding data from 123 companies in China. They find a positive relationship between capabilities and ITAM. Management institutional capability has a stronger relationship with ITAM in Chinese state-owned enterprises or public companies; while multinational companies or joint ventures witness a stronger relationship with process management capability. ISO helps companies with low management institutional capability to improve ITAM. However, for companies with higher management institutional capability, ISO mitigates the relationship and poses a shift of the importance to process management capability in improving ITAM.</p>",
+    "DOI": "10.4018/joeuc.2019010104",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2021,
-                7,
-                16
+                2018,
+                10,
+                23
             ]
         ],
-        "date-time": "2021-07-16T13:43:55Z",
-        "timestamp": 1626443035000
+        "date-time": "2018-10-23T18:47:26Z",
+        "timestamp": 1540320446000
     },
-    "page": "321-324",
-    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
+    "page": "61-85",
     "source": "Crossref",
-    "is-referenced-by-count": 0,
+    "is-referenced-by-count": 22,
     "title": [
-        "Extraordinarily ordinary: Us Weekly and the rise of reality television celebrity"
+        "IT Application Maturity, Management Institutional Capability and Process Management Capability"
     ],
-    "prefix": "10.1080",
-    "volume": "19",
+    "prefix": "10.4018",
+    "volume": "31",
     "author": [
         {
-            "given": "Shannon E. M.",
-            "family": "O\u2019Sullivan",
+            "given": "Jianping",
+            "family": "Peng",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Communication, Salisbury University, Salisbury, Maryland, USA"
+                    "name": "Sun Yat-sen Business School, Sun Yat-sen University, Guangzhou, China"
+                }
+            ]
+        },
+        {
+            "given": "Jing",
+            "family": "Quan",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Salisbury University, Salisbury, USA"
+                }
+            ]
+        },
+        {
+            "given": "Le",
+            "family": "Peng",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Krannert School of Management, Purdue University, West Lafayette, USA"
                 }
             ]
         }
     ],
-    "member": "301",
-    "published-online": {
-        "date-parts": [
-            [
-                2021,
-                7,
-                16
-            ]
-        ]
-    },
+    "member": "2432",
     "reference": [
         {
-            "key": "cit0001",
+            "key": "JOEUC.2019010104-0",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/19392397.2010.511133"
+            "DOI": "10.2307/4132321"
+        },
+        {
+            "key": "JOEUC.2019010104-1",
+            "unstructured": "CMU. (1993). Capability Maturity Model for Software (Technical Report CMU/SEI-93-TR-024 ESC-TR-93-177, Version 1.1)."
+        },
+        {
+            "key": "JOEUC.2019010104-2",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.dss.2008.04.003"
+        },
+        {
+            "key": "JOEUC.2019010104-3",
+            "article-title": "The Process Audit.",
+            "author": "M.Hammer",
+            "year": "2007",
+            "journal-title": "Harvard Business Review"
+        },
+        {
+            "key": "JOEUC.2019010104-4",
+            "author": "P.Harmon",
+            "year": "2004",
+            "journal-title": "Evaluating an Organization\u2019s Business Process Maturity"
+        },
+        {
+            "key": "JOEUC.2019010104-5",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/52.2014"
+        },
+        {
+            "key": "JOEUC.2019010104-6",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.dss.2007.02.002"
+        },
+        {
+            "key": "JOEUC.2019010104-7",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/25148735"
+        },
+        {
+            "key": "JOEUC.2019010104-8",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/25148781"
+        },
+        {
+            "key": "JOEUC.2019010104-9",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.im.2003.12.011"
+        },
+        {
+            "key": "JOEUC.2019010104-10",
+            "unstructured": "Min, Q. (2005). An empirical study of ERP critical success factors in Chinese enterprises [Doctoral Dissertation]. Dalian University of Science and Technology, Dalian, China."
+        },
+        {
+            "issue": "November-December",
+            "key": "JOEUC.2019010104-11",
+            "first-page": "61",
+            "article-title": "What is strategy?",
+            "author": "M. E.Porter",
+            "year": "1996",
+            "journal-title": "Harvard Business Review"
+        },
+        {
+            "key": "JOEUC.2019010104-12",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/mnsc.1060.0583"
+        },
+        {
+            "key": "JOEUC.2019010104-13",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.ejor.2005.07.002"
+        },
+        {
+            "key": "JOEUC.2019010104-14",
+            "unstructured": "Somers, T. M., & Nelson, K. 2001. The impact of Critical Factor across the Stages of ERP implementation. In 34th Hawaii international Conference on system Sciences."
+        },
+        {
+            "key": "JOEUC.2019010104-15",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/S0164-1212(99)00121-1"
+        },
+        {
+            "key": "JOEUC.2019010104-16",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/S0377-2217(02)00547-7"
+        },
+        {
+            "key": "JOEUC.2019010104-17",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jss.2007.10.004"
+        },
+        {
+            "key": "JOEUC.2019010104-18",
+            "unstructured": "Xiao, J. 2007. Research on IT Application Maturity and Critical Factors [Doctoral Dissertation]. Sun Yat-sen University, Guangzhou, China."
+        },
+        {
+            "key": "JOEUC.2019010104-19",
+            "author": "J.Xiao",
+            "year": "2010",
+            "journal-title": "Theory and Method of Evaluation of Enterprise Informatization Level"
+        },
+        {
+            "issue": "5",
+            "key": "JOEUC.2019010104-20",
+            "first-page": "110",
+            "article-title": "An Exploratory Study of IT Application Maturity in Enterprises.",
+            "volume": "47",
+            "author": "J.Xiao",
+            "year": "2007",
+            "journal-title": "Journal of Sun Yat-sen University"
+        },
+        {
+            "key": "JOEUC.2019010104-21",
+            "author": "W. P.Yu",
+            "year": "2004",
+            "journal-title": "The Research on Enterprise Sustainable Development Based on Capability Mix Model"
+        },
+        {
+            "key": "JOEUC.2019010104-22",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1108/14637159710161585"
+        },
+        {
+            "key": "JOEUC.2019010104-23",
+            "first-page": "73",
+            "article-title": "An empirical analysis of ERP critical success factors in Chinese enterprises.",
+            "volume": "2",
+            "author": "Q.Zhong",
+            "year": "2004",
+            "journal-title": "Chinese Journal of Soft Science"
         }
     ],
     "container-title": [
-        "Popular Communication"
+        "Journal of Organizational and End User Computing"
     ],
-    "language": "en",
+    "language": "ng",
     "link": [
         {
-            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/15405702.2021.1939876",
+            "URL": "https://www.igi-global.com/viewtitle.aspx?TitleId=216972",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -97,95 +232,66 @@
     "deposited": {
         "date-parts": [
             [
-                2021,
-                9,
-                29
+                2022,
+                5,
+                6
             ]
         ],
-        "date-time": "2021-09-29T08:18:25Z",
-        "timestamp": 1632903505000
+        "date-time": "2022-05-06T15:49:53Z",
+        "timestamp": 1651852193000
     },
-    "score": 15.99171,
+    "score": 14.554772,
     "resource": {
         "primary": {
-            "URL": "https://www.tandfonline.com/doi/full/10.1080/15405702.2021.1939876"
+            "URL": "https://services.igi-global.com/resolvedoi/resolve.aspx?doi=10.4018/JOEUC.2019010104"
         }
     },
     "subtitle": [
-        "by Erin A. Meyers, New Brunswick, Camden, and Newark, NJ and London, Rutgers University Press, 2020, 144 pp., US List: $27.95 (paperback), ISBN 9780813599427"
+        ""
     ],
     "issued": {
         "date-parts": [
             [
-                2021,
-                7,
-                16
+                2019,
+                1,
+                1
             ]
         ]
     },
-    "references-count": 1,
+    "references-count": 24,
     "journal-issue": {
-        "issue": "4",
+        "issue": "1",
         "published-print": {
             "date-parts": [
                 [
-                    2021,
-                    10,
-                    2
+                    2019,
+                    1
                 ]
             ]
         }
     },
-    "alternative-id": [
-        "10.1080/15405702.2021.1939876"
-    ],
-    "URL": "http://dx.doi.org/10.1080/15405702.2021.1939876",
+    "URL": "http://dx.doi.org/10.4018/joeuc.2019010104",
     "ISSN": [
-        "1540-5702",
-        "1540-5710"
+        "1546-2234",
+        "1546-5012"
     ],
     "issn-type": [
         {
-            "value": "1540-5702",
+            "value": "1546-2234",
             "type": "print"
         },
         {
-            "value": "1540-5710",
+            "value": "1546-5012",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2021,
-                7,
-                16
+                2019,
+                1,
+                1
             ]
         ]
-    },
-    "assertion": [
-        {
-            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
-            "order": 1,
-            "name": "peerreview_statement",
-            "label": "Peer Review Statement"
-        },
-        {
-            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=hppc20",
-            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=hppc20",
-            "order": 2,
-            "name": "aims_and_scope_url",
-            "label": "Aim & Scope"
-        },
-        {
-            "value": "2021-07-16",
-            "order": 3,
-            "name": "published",
-            "label": "Published",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        }
-    ]
+    }
 }

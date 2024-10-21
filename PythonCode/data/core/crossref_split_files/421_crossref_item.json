@@ -3,740 +3,408 @@
         "date-parts": [
             [
                 2024,
-                8,
-                30
+                6,
+                12
             ]
         ],
-        "date-time": "2024-08-30T13:59:08Z",
-        "timestamp": 1725026348021
+        "date-time": "2024-06-12T13:19:05Z",
+        "timestamp": 1718198345079
     },
-    "reference-count": 102,
-    "publisher": "Informa UK Limited",
-    "issue": "5",
-    "funder": [
+    "reference-count": 61,
+    "publisher": "SAGE Publications",
+    "issue": "10",
+    "license": [
         {
-            "DOI": "10.13039/501100020193",
-            "name": "Business School, University of Auckland",
-            "doi-asserted-by": "crossref",
-            "award": [
-                "FRDF-3720090"
-            ],
-            "id": [
-                {
-                    "id": "10.13039/501100020193",
-                    "id-type": "DOI",
-                    "asserted-by": "crossref"
-                }
-            ]
+            "start": {
+                "date-parts": [
+                    [
+                        2023,
+                        7,
+                        17
+                    ]
+                ],
+                "date-time": "2023-07-17T00:00:00Z",
+                "timestamp": 1689552000000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "http://journals.sagepub.com/page/policies/text-and-data-mining-license"
         }
     ],
     "content-domain": {
         "domain": [
-            "www.tandfonline.com"
+            "journals.sagepub.com"
         ],
         "crossmark-restriction": true
     },
     "short-container-title": [
-        "International Journal of Production Research"
+        "Workplace Health Saf"
     ],
     "published-print": {
         "date-parts": [
             [
-                2024,
-                3,
-                3
+                2023,
+                10
             ]
         ]
     },
-    "DOI": "10.1080/00207543.2022.2118890",
+    "abstract": "<jats:sec><jats:title>Background:</jats:title><jats:p> Cardiovascular disease (CVD) remains the leading cause of morbidity and mortality in the United States, with 20% of deaths in adults under age 65. Commercial drivers have an increased CVD incidence rate of 50% compared to 30% for the general population, yet one third of drivers will not be screened for risk factors due to a lack of insurance or primary care. With approximately 3.5 million commercial drivers nationally and correlation of CVD to increased motor vehicle accidents, fatalities, and excessive healthcare costs, addressing the care gap for this high-risk population is imperative. </jats:p></jats:sec><jats:sec><jats:title>Methods:</jats:title><jats:p> An evidence-based practice (EBP) project synthesized the literature and implemented CVD risk screening for commercial drivers examined in an occupational practice setting. Using the non-laboratory Framingham CVD risk score calculator, over 90% of drivers were screened during mandated medical examinations and provided education regarding modifiable risk factors during a 2-month period. </jats:p></jats:sec><jats:sec><jats:title>Findings:</jats:title><jats:p> Over 40% of commercial drivers were at high risk for CVD with 25% uninsured and 32% without primary care. The average CVD risk score was twice the general population\u2019s risk score, with obesity, hypertension, and smoking being the most common risk factors discussed. </jats:p></jats:sec><jats:sec><jats:title>Conclusions/Application to Practice:</jats:title><jats:p> Incorporating CVD risk screening and education during opportune encounters is logical, efficient, and financially prudent. The EBP change supports occupational professionals\u2019 standards, and ongoing review of CVD screening guidelines with integration into practice provides health promotion and promotes public safety for these essential workers. </jats:p></jats:sec>",
+    "DOI": "10.1177/21650799231184374",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2022,
-                9,
-                12
+                2023,
+                7,
+                17
             ]
         ],
-        "date-time": "2022-09-12T10:56:53Z",
-        "timestamp": 1662980213000
+        "date-time": "2023-07-17T10:04:56Z",
+        "timestamp": 1689588296000
     },
-    "page": "1879-1900",
-    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
+    "page": "465-475",
+    "update-policy": "http://dx.doi.org/10.1177/sage-journals-update-policy",
     "source": "Crossref",
-    "is-referenced-by-count": 0,
+    "is-referenced-by-count": 1,
     "title": [
-        "Responding to epidemic-driven demand: the role of supply channels"
+        "Cardiovascular Disease Risk Screening for Commercial Drivers Examined in Occupational Practice: Implementing Evidence-Based Practice to Champion the Health of Essential Workers"
     ],
-    "prefix": "10.1080",
-    "volume": "62",
+    "prefix": "10.1177",
+    "volume": "71",
     "author": [
         {
-            "ORCID": "http://orcid.org/0000-0003-4671-2268",
+            "ORCID": "http://orcid.org/0000-0001-9619-1734",
             "authenticated-orcid": false,
-            "given": "Jaeseok",
-            "family": "Lee",
+            "given": "Annette",
+            "family": "Barnes",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Information Systems and Operations Management, The University of Auckland Business School, Auckland, New Zealand"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0001-6865-2257",
-            "authenticated-orcid": false,
-            "given": "Min Kyung",
-            "family": "Lee",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Hankamer School of Business, Baylor University, Waco, TX, USA"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0002-8663-9280",
-            "authenticated-orcid": false,
-            "given": "Seongkyoon",
-            "family": "Jeong",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Haslam College of Business, University of Tennessee, Knoxville, Knoxville, TN, USA"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0002-3428-4983",
-            "authenticated-orcid": false,
-            "given": "Brandon",
-            "family": "Lee",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "School of Business, University of Dayton, Dayton, OH, USA"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0002-1398-0429",
-            "authenticated-orcid": false,
-            "given": "Minseok",
-            "family": "Park",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Information and Decision Sciences, Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA"
+                    "name": "Salisbury University"
                 }
             ]
         }
     ],
-    "member": "301",
+    "member": "179",
     "published-online": {
         "date-parts": [
             [
-                2022,
-                9,
-                12
+                2023,
+                7,
+                17
             ]
         ]
     },
     "reference": [
         {
-            "key": "e_1_3_5_2_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/poms.12948"
+            "key": "bibr1-21650799231184374",
+            "unstructured": "Agency for Healthcare Research and Quality. (2022). Integrating cardiovascular disease risk calculators into primary care. https://www.ahrq.gov/evidencenow/tools/cvd-risk-calculator.html"
         },
         {
-            "key": "e_1_3_5_3_1",
-            "volume-title": "Competition and Growth: Reconciling Theory and Evidence",
-            "author": "Aghion Phillipe Philippe",
-            "year": "2005",
-            "unstructured": "Aghion, Phillipe Philippe, and Rachel Griffith. 2005. Competition and Growth: Reconciling Theory and Evidence. MIT press. https://books.google.com/books?hl=en&lr=&id=TrofEAAAQBAJ&oi=fnd&pg=PR7&dq=competition+growth+firms&ots=Sq4j4V8IoU&sig=WLJkMZuWZ2A2MkKMi9tB5TIEkco#v=onepage&q=competitiongrowthfirms&f=false."
+            "key": "bibr2-21650799231184374",
+            "unstructured": "American Association of Occupational Health Nurses. (n.d.) Standards. http://aaohn.org/page/standards-of-practice"
         },
         {
-            "key": "e_1_3_5_4_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0049124187016001003"
+            "key": "bibr3-21650799231184374",
+            "unstructured": "American College of Cardiology/American Heart Association. (2020). 2019 ACC/AHA guideline on the primary prevention of cardiovascular disease: Executive summary: A report of the American college of cardiology/American heart association task force on clinical practice guidelines. Journal of the American College of Cardiology, 74(10), 1376\u20131414. https://www.ahajournals.org/doi/10.1161/CIR.0000000000000677"
         },
         {
-            "key": "e_1_3_5_5_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1287/orsc.2013.0854"
+            "key": "bibr4-21650799231184374",
+            "unstructured": "American College of Occupational and Environmental Medicine. (2021). OEM core competencies. https://acoem.org/learning/oemcompetencies"
         },
         {
-            "key": "e_1_3_5_6_1",
-            "volume-title": "Organizational Learning: Creating, Retaining and Transferring Knowledge. 2nd ed",
-            "author": "Argote Linda.",
-            "year": "2012",
-            "unstructured": "Argote, Linda. 2012. Organizational Learning: Creating, Retaining and Transferring Knowledge. 2nd ed. New York: Springer Science & Business Media."
-        },
-        {
-            "key": "e_1_3_5_7_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1287/mnsc.1110.1469"
-        },
-        {
-            "issue": "1",
-            "key": "e_1_3_5_8_1",
-            "first-page": "1",
-            "article-title": "Seemingly Unrelated Regression (SUR) Models as a Solution to Path Analytic Models with Correlated Errors",
-            "volume": "34",
-            "author": "Beasley T Mark.",
-            "year": "2008",
-            "unstructured": "Beasley, T Mark. 2008. \u201cSeemingly Unrelated Regression (SUR) Models as a Solution to Path Analytic Models with Correlated Errors.\u201d Multiple Linear Regression Viewpoints 34 (1): 1\u20137.",
-            "journal-title": "Multiple Linear Regression Viewpoints"
-        },
-        {
-            "key": "e_1_3_5_9_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jom.2008.09.006"
-        },
-        {
-            "key": "e_1_3_5_10_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1108/eb053944"
-        },
-        {
-            "key": "e_1_3_5_11_1",
-            "article-title": "Middle East Respiratory Syndrome (MERS)",
-            "author": "CDC",
-            "year": "2019",
-            "unstructured": "CDC. 2019. \u201cMiddle East Respiratory Syndrome (MERS).\u201d Centers for Disease Control and Prevention. https://www.cdc.gov/coronavirus/mers/about/index.html.",
-            "journal-title": "Centers for Disease Control and Prevention"
-        },
-        {
-            "key": "e_1_3_5_12_1",
-            "article-title": "South Korean Hospital Scrutinized in MERS Outbreak",
-            "author": "Choe Sang-Hun.",
-            "year": "2015",
-            "unstructured": "Choe, Sang-Hun. 17 June 2015. \u201cSouth Korean Hospital Scrutinized in MERS Outbreak.\u201d The New York Times. https://www.nytimes.com/2015/06/18/world/asia/south-korean-hospital-scrutinized-in-mers-outbreak.html.",
-            "journal-title": "The New York Times"
-        },
-        {
-            "key": "e_1_3_5_13_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jom.2005.07.002"
-        },
-        {
-            "key": "e_1_3_5_14_1",
-            "volume-title": "Supply Chain Management: Strategy, Planning, and Operation",
-            "author": "Chopra S.",
-            "year": "2013",
-            "unstructured": "Chopra, S., P. Meindl, and D. V. Kalra. 2013. Supply Chain Management: Strategy, Planning, and Operation. Upper Saddle River, N.J.: Pearson."
-        },
-        {
-            "key": "e_1_3_5_15_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1287/mnsc.2017.2924"
-        },
-        {
-            "key": "e_1_3_5_16_1",
-            "article-title": "WHO Calls MERS Outbreak a \u2018Wakeup Call.\u2019",
-            "author": "CNN",
-            "year": "2015",
-            "unstructured": "CNN. 2015. \u201cWHO Calls MERS Outbreak a \u2018Wakeup Call.\u2019.\u201d CNN. https://edition.cnn.com/2015/06/15/asia/south-korea-mers-outbreak.",
-            "journal-title": "CNN"
-        },
-        {
-            "key": "e_1_3_5_17_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/deci.12468"
-        },
-        {
-            "key": "e_1_3_5_18_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jom.2006.05.008"
-        },
-        {
-            "key": "e_1_3_5_19_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/0022-1082.00084"
-        },
-        {
-            "key": "e_1_3_5_20_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1287/msom.1080.0242"
-        },
-        {
-            "key": "e_1_3_5_21_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1287/mnsc.2017.2963"
-        },
-        {
-            "key": "e_1_3_5_22_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00207543.2020.1774679"
-        },
-        {
-            "key": "e_1_3_5_23_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/1251829"
-        },
-        {
-            "key": "e_1_3_5_24_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1287/msom.2013.0460"
-        },
-        {
-            "key": "e_1_3_5_25_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/jscm.12136"
-        },
-        {
-            "key": "e_1_3_5_26_1",
-            "article-title": "How South Korea Scaled Coronavirus Testing While the U.S. Fell Dangerously Behind",
-            "author": "Engelberg Stephen",
-            "year": "2020",
-            "unstructured": "Engelberg, Stephen, Lisa Song, and Lydia DePillis. 15 March 2020. \u201cHow South Korea Scaled Coronavirus Testing While the U.S. Fell Dangerously Behind.\u201d ProPublica. https://www.propublica.org/article/how-south-korea-scaled-coronavirus-testing-while-the-us-fell-dangerously-behind.",
-            "journal-title": "ProPublica"
-        },
-        {
-            "key": "e_1_3_5_27_1",
-            "author": "Farris Paul W.",
-            "year": "2010",
-            "unstructured": "Farris, Paul W., Neil Bendle, Phillip E. Pfeifer, and D. Reibstein. 2010. Marketing Metrics: The Definitive Guide to Measuring Marketing Performance. 2nd ed. Pearson Education.",
-            "journal-title": "Marketing Metrics: The Definitive Guide to Measuring Marketing Performance"
-        },
-        {
-            "issue": "20",
-            "key": "e_1_3_5_28_1",
-            "first-page": "2",
-            "article-title": "Why the U.S. Still Has a Severe Shortage of Medical Supplies",
-            "volume": "9",
-            "author": "Finkenstadt Daniel Joseph",
-            "year": "2020",
-            "unstructured": "Finkenstadt, Daniel Joseph, Robert Handfield, and Peter Guinto. 2020. \u201cWhy the U.S. Still Has a Severe Shortage of Medical Supplies.\u201d Harvard Business Review 9 (20): 2\u20136. https://hbr.org/2020/09/why-the-u-s-still-has-a-severe-shortage-of-medical-supplies.",
-            "journal-title": "Harvard Business Review"
-        },
-        {
-            "key": "e_1_3_5_29_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/jscm.12106"
-        },
-        {
-            "key": "e_1_3_5_30_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/1924568"
-        },
-        {
-            "key": "e_1_3_5_31_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.ijpe.2020.108001"
-        },
-        {
-            "key": "e_1_3_5_32_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.tre.2020.101967"
-        },
-        {
-            "key": "e_1_3_5_33_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0272-6963(03)00040-8"
-        },
-        {
-            "key": "e_1_3_5_34_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/256244"
-        },
-        {
-            "key": "e_1_3_5_35_1",
-            "article-title": "Firm-Level Exposure to Epidemic Diseases: COVID-19, SARS, and H1N1",
-            "author": "Hassan Tarek Alexander",
-            "year": "2020",
-            "unstructured": "Hassan, Tarek Alexander, Stephan Hollander, Laurence van Lent, and Ahmed Tahoun. 2020. \u201cFirm-Level Exposure to Epidemic Diseases: COVID-19, SARS, and H1N1.\u201d SSRN Electronic Journal. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3566530.",
-            "journal-title": "SSRN Electronic Journal"
-        },
-        {
-            "key": "e_1_3_5_36_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/j.2158-1592.2010.tb00154.x"
-        },
-        {
-            "key": "e_1_3_5_37_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jom.2006.05.003"
-        },
-        {
-            "key": "e_1_3_5_38_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1937-5956.2012.01342.x"
-        },
-        {
-            "key": "e_1_3_5_39_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/jscm.12139"
-        },
-        {
-            "key": "e_1_3_5_40_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1108/SCM-08-2015-0336"
-        },
-        {
-            "key": "e_1_3_5_41_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10479-020-03640-6"
-        },
-        {
-            "key": "e_1_3_5_42_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00207543.2021.1890852"
-        },
-        {
-            "key": "e_1_3_5_43_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00207543.2020.1750727\u00ef"
-        },
-        {
-            "key": "e_1_3_5_44_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00207543.2020.1748248"
-        },
-        {
-            "key": "e_1_3_5_45_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1287/mnsc.49.12.1684.25112"
-        },
-        {
-            "key": "e_1_3_5_46_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1089/hs.2018.0115"
-        },
-        {
-            "key": "e_1_3_5_47_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3390/su8050454"
-        },
-        {
-            "key": "e_1_3_5_48_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1745-493X.2002.tb00139.x"
-        },
-        {
-            "key": "e_1_3_5_49_1",
-            "unstructured": "KHIDI (Korea Health Industry Development Institute). 2021. \u201cOne-Stop Service Center for Medical Device Industry.\u201d https://www.khidi.or.kr/emd."
-        },
-        {
-            "key": "e_1_3_5_50_1",
-            "first-page": "1",
-            "article-title": "COVID-19: Managing Supply Chain Risk and Disruption",
-            "author": "Kilpatrick Jim",
-            "year": "2020",
-            "unstructured": "Kilpatrick, Jim, and Lee Barter. 2020. \u201cCOVID-19: Managing Supply Chain Risk and Disruption.\u201d Deloitte, 1\u201315. https://www2.deloitte.com/global/en/pages/risk/articles/covid-19-managing-supply-chain-risk-and-disruption.html.",
-            "journal-title": "Deloitte"
-        },
-        {
-            "key": "e_1_3_5_51_1",
-            "article-title": "South Korea Learned Its Successful Covid-19 Strategy from a Previous Coronavirus Outbreak: MERS",
-            "author": "Kim HyunJung.",
-            "year": "2020",
-            "unstructured": "Kim, HyunJung. 20 March 2020. \u201cSouth Korea Learned Its Successful Covid-19 Strategy from a Previous Coronavirus Outbreak: MERS.\u201d Bulletin of the Atomic Scientists. https://thebulletin.org/2020/03/south-korea-learned-its-successful-covid-19-strategy-from-a-previous-coronavirus-outbreak-mers/.",
-            "journal-title": "Bulletin of the Atomic Scientists"
-        },
-        {
-            "key": "e_1_3_5_52_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0149206315599214"
-        },
-        {
-            "key": "e_1_3_5_53_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00207543.2020.1791999"
-        },
-        {
-            "key": "e_1_3_5_54_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/deci.12117"
-        },
-        {
-            "key": "e_1_3_5_55_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1109/ICEMMS.2010.5563408"
-        },
-        {
-            "key": "e_1_3_5_56_1",
-            "article-title": "There Aren't Enough Ventilators to Cope With the Coronavirus",
-            "author": "Kliff Sarah",
-            "year": "2020",
-            "unstructured": "Kliff, Sarah, Adam Satariano, Jessica Silver-Greenberg, and Nicholas Kulish. 18 March 2020. \u201cThere Aren't Enough Ventilators to Cope With the Coronavirus.\u201d The New York Times. https://www.nytimes.com/2020/03/18/business/coronavirus-ventilator-shortage.html.",
-            "journal-title": "The New York Times"
-        },
-        {
-            "key": "e_1_3_5_57_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1287/orsc.2020.1366"
-        },
-        {
-            "key": "e_1_3_5_58_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jesp.2013.03.013"
-        },
-        {
-            "key": "e_1_3_5_59_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/nav.21734"
-        },
-        {
-            "key": "e_1_3_5_60_1",
-            "article-title": "Cuomo Announces 7-State Coalition for Purchasing Medical Equipment",
-            "author": "Linton Caroline.",
-            "year": "2020",
-            "unstructured": "Linton, Caroline. 4 May 2020. \u201cCuomo Announces 7-State Coalition for Purchasing Medical Equipment.\u201d CBS NEWS. https://www.cbsnews.com/news/andrew-cuomo-ppe-medical-equipment-coronavirus-7-state-coalition/.",
-            "journal-title": "CBS NEWS"
-        },
-        {
-            "key": "e_1_3_5_61_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jom.2018.10.001"
-        },
-        {
-            "key": "e_1_3_5_62_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jom.2017.10.001"
-        },
-        {
-            "key": "e_1_3_5_63_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.omega.2017.01.001"
-        },
-        {
-            "key": "e_1_3_5_64_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00207543.2018.1504173"
-        },
-        {
-            "key": "e_1_3_5_65_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/nav.21905"
-        },
-        {
-            "key": "e_1_3_5_66_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00207543.2022.2029610"
-        },
-        {
-            "key": "e_1_3_5_67_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.ejor.2020.12.054"
-        },
-        {
-            "key": "e_1_3_5_68_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/deci.12510"
-        },
-        {
-            "key": "e_1_3_5_69_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/poms.13230"
-        },
-        {
-            "key": "e_1_3_5_70_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.bushor.2012.09.008"
-        },
-        {
-            "key": "e_1_3_5_71_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1108/IJPDLM-04-2020-0127"
-        },
-        {
-            "key": "e_1_3_5_72_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s40171-020-00248-4"
-        },
-        {
-            "key": "e_1_3_5_73_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10479-020-03685-7"
-        },
-        {
-            "key": "e_1_3_5_74_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1056/NEJMp2009027"
-        },
-        {
-            "key": "e_1_3_5_75_1",
-            "article-title": "Covid-Stricken India Receives Ventilators, International Aid As Several Countries Promise Help",
-            "author": "Ray Siladitya.",
-            "year": "2021",
-            "unstructured": "Ray, Siladitya. 28 April 2021. \u201cCovid-Stricken India Receives Ventilators, International Aid As Several Countries Promise Help.\u201d Forbes. https://www.forbes.com/sites/siladityaray/2021/04/28/covid-stricken-india-receives-ventilators-international-aid-as-several-countries-promise-help/?sh=77dad2627f52.",
-            "journal-title": "Forbes"
-        },
-        {
-            "key": "e_1_3_5_76_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/0148-6195(85)90027-X"
-        },
-        {
-            "key": "e_1_3_5_77_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10479-021-03974-9"
-        },
-        {
-            "key": "e_1_3_5_78_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.bushor.2018.01.009"
-        },
-        {
-            "key": "e_1_3_5_79_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1287/mnsc.2013.1785"
-        },
-        {
-            "key": "e_1_3_5_80_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1287/mnsc.2016.2632"
-        },
-        {
-            "key": "e_1_3_5_81_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/joom.1067"
-        },
-        {
-            "issue": "5",
-            "key": "e_1_3_5_82_1",
-            "first-page": "82",
-            "article-title": "Global Supply Chains in a Post-Pandemic World",
-            "volume": "98",
-            "author": "Shih Willy C.",
-            "year": "2020",
-            "unstructured": "Shih, Willy C. 2020. \u201cGlobal Supply Chains in a Post-Pandemic World.\u201d Harvard Business Review 98 (5): 82\u201389.",
-            "journal-title": "Harvard Business Review"
-        },
-        {
-            "issue": "1",
-            "key": "e_1_3_5_83_1",
-            "first-page": "96",
-            "article-title": "From Superstorms to Factory Fires",
-            "volume": "92",
-            "author": "Simchi-Levi David",
+            "key": "bibr5-21650799231184374",
+            "volume": "37",
+            "author": "American Diabetes Association",
             "year": "2014",
-            "unstructured": "Simchi-Levi, David, Willam Schmidt, and Yehua Wei. 2014. \u201cFrom Superstorms to Factory Fires.\u201d Harvard Business Review 92 (1/2): 96\u2013101. http://esc-web.lib.cbs.dk/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=bth&AN=93302839&site=ehost-live&scope=site.",
-            "journal-title": "Harvard Business Review"
+            "journal-title": "Diabetes Care"
         },
         {
-            "key": "e_1_3_5_84_1",
+            "key": "bibr6-21650799231184374",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1287/inte.2015.0804"
+            "DOI": "10.2337/dc22-S002"
         },
         {
-            "key": "e_1_3_5_85_1",
+            "key": "bibr7-21650799231184374",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00207543.2020.1792000"
+            "DOI": "10.1177/216507991306101006"
         },
         {
-            "key": "e_1_3_5_86_1",
+            "key": "bibr8-21650799231184374",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Apostolopoulos Y., S\u00f6nmez S., Shattell M. M., Gonzales C., Fehrenbacher C. (2013). Health survey of U.S. long-haul truck drivers: Work environment, physical health, and healthcare access. Work, 46(1), 113\u2013123. https://content.iospress.com/articles/work/wor01553",
+            "DOI": "10.3233/WOR-121553"
+        },
+        {
+            "key": "bibr9-21650799231184374",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2307/270723"
+            "DOI": "10.1016/j.mayocp.2013.03.002"
         },
         {
-            "key": "e_1_3_5_87_1",
+            "key": "bibr10-21650799231184374",
+            "volume-title": "The complexities of physician supply and demand: Projections from 2018 to 2033",
+            "author": "Association of American Medical Colleges",
+            "year": "2021"
+        },
+        {
+            "key": "bibr11-21650799231184374",
+            "unstructured": "Barnes A. H. (2015). Implementing non-laboratory Framingham cardiovascular disease (CVD) risk assessment of commercial drivers (CD) examined in occupational medicine (Order No. 27740515). Available from Dissertations & Theses @ Salisbury University; ProQuest Dissertations & Theses Global. (2384227467). https://proxy-su.researchport.umd.edu/login?url=https://www.proquest.com/dissertations-theses/implementing-non-laboratory-framingham/docview/2384227467/se-2"
+        },
+        {
+            "key": "bibr12-21650799231184374",
+            "unstructured": "Centers for Disease Control and Prevention, National Center for Health Statistics. (2021a). About multiple cause of death, 1999\u20132019. https://wonder.cdc.gov/mcd-icd10.html"
+        },
+        {
+            "key": "bibr13-21650799231184374",
+            "unstructured": "Centers for Disease Control and Prevention, National Center for Health Statistics. (2021b). Underlying cause of death 1999-2020 on CDC WONDER online database. http://wonder.cdc.gov/ucd-icd10.html"
+        },
+        {
+            "key": "bibr14-21650799231184374",
+            "unstructured": "Centers for Disease Control and Prevention. (2022a). About adult BMI. https://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/index.html#InterpretedAdults"
+        },
+        {
+            "key": "bibr15-21650799231184374",
+            "unstructured": "Centers for Disease Control and Prevention. (2022b). About heart disease. https://www.cdc.gov/heartdisease/about.htm"
+        },
+        {
+            "key": "bibr16-21650799231184374",
+            "unstructured": "Centers for Diseases Control and Prevention. (2023). Cardiovascular disease and work. https://www.cdc.gov/niosh/topics/heartdisease/#occ"
+        },
+        {
+            "key": "bibr17-21650799231184374",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1108/IJOPM-09-2020-0614"
+            "DOI": "10.1161/JAHA.121.024790"
         },
         {
-            "key": "e_1_3_5_88_1",
+            "key": "bibr18-21650799231184374",
+            "unstructured": "Day J. C., Hait A. W. (2019). United States Census Bureau. Number of truckers at all-time high. https://www.census.gov/library/stories/2019/06/america-keeps-on-trucking.html"
+        },
+        {
+            "key": "bibr19-21650799231184374",
             "doi-asserted-by": "publisher",
-            "DOI": "10.4172/2472-1654.100070"
+            "DOI": "10.1093/occmed/kqy156"
         },
         {
-            "key": "e_1_3_5_89_1",
+            "key": "bibr20-21650799231184374",
+            "unstructured": "Federal Motor Carriers Safety Administration. (2020). Commercial driver safety risk factors (CDSRF), FMCSA-RRR-17-014. https://rosap.ntl.bts.gov/view/dot/49620"
+        },
+        {
+            "key": "bibr21-21650799231184374",
+            "unstructured": "Federal Motor Carriers Safety Administration (FMCSA, n.d.). Medical Examination Report (MER) Form, MCSA-5875. https://www.fmcsa.dot.gov/regulations/medical/medical-examination-report-form-commercial-driver-medical-certification"
+        },
+        {
+            "key": "bibr22-21650799231184374",
+            "unstructured": "Framingham Heart Study. (2022). FHS Cardiovascular Disease (10-year risk). https://www.framinghamheartstudy.org/fhs-risk-functions/cardiovascular-disease-10-year-risk/"
+        },
+        {
+            "key": "bibr23-21650799231184374",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/aepr.12363"
+            "DOI": "10.5334/gh.531"
         },
         {
-            "key": "e_1_3_5_90_1",
+            "key": "bibr24-21650799231184374",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1287/mnsc.1060.0515"
+            "DOI": "10.1016/S0140-6736(08)60418-3"
         },
         {
-            "key": "e_1_3_5_91_1",
-            "article-title": "Middle East Respiratory Syndrome: Health Emergency Supply Note",
-            "author": "Unicef",
-            "year": "2018",
-            "unstructured": "Unicef. 2018. \u201cMiddle East Respiratory Syndrome: Health Emergency Supply Note.\u201d Unicef Supply Division. https://www.unicef.org/supply/media/1161/file/MiddleEastrespiratorysyndrome:healthemergencysupplynote.pdf.",
-            "journal-title": "Unicef Supply Division"
-        },
-        {
-            "key": "e_1_3_5_92_1",
+            "key": "bibr25-21650799231184374",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00207543.2015.1053578"
+            "DOI": "10.1161/JAHA.120.016115"
         },
         {
-            "key": "e_1_3_5_93_1",
+            "key": "bibr26-21650799231184374",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/poms.13184"
+            "DOI": "10.1007/s10865-012-9407-3"
         },
         {
-            "key": "e_1_3_5_94_1",
-            "article-title": "Middle East Respiratory Syndrome Coronavirus (MERS-CoV) \u2013 Republic of Korea",
-            "author": "WHO",
-            "year": "2015",
-            "unstructured": "WHO. 2015. \u201cMiddle East Respiratory Syndrome Coronavirus (MERS-CoV) \u2013 Republic of Korea.\u201d WHO. https://www.who.int/csr/don/25-october-2015-mers-korea/en/.",
-            "journal-title": "WHO"
+            "key": "bibr27-21650799231184374",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.4103/1995-705X.185130"
         },
         {
-            "key": "e_1_3_5_95_1",
-            "unstructured": "WHO. 2018. Managing Epidemics: Key Facts about Major Deadly Diseases."
+            "key": "bibr28-21650799231184374",
+            "unstructured": "Health Resources and Services Administration. (2013). Projecting the supply and demand for primary care practitioners through 2020. https://bhw.hrsa.gov/data-research/projecting-health-workforce-supply-demand/primary-care-practitioners"
         },
         {
-            "key": "e_1_3_5_96_1",
-            "article-title": "WHO MERS Global Summary and Assessment Risk",
-            "author": "WHO",
+            "key": "bibr29-21650799231184374",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1371/journal.pone.0207322"
+        },
+        {
+            "key": "bibr30-21650799231184374",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2105/AJPH.2013.301816"
+        },
+        {
+            "key": "bibr31-21650799231184374",
+            "unstructured": "Iakoubova O., Lagier R. J., Fragala M. S., McNamara K., Castro Sweet C. M., Birse C. E. (2019). Abstract 11923: Annual screening and digital behavioral counseling in a workplace setting reduces 10-year cardiovascular risk. Circulation, 140(Suppl. 1), 11923. https://doi.org/10.1161/circ.140.suppl_1.11923"
+        },
+        {
+            "key": "bibr32-21650799231184374",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1371/journal.pone.0119183"
+        },
+        {
+            "key": "bibr33-21650799231184374",
+            "unstructured": "Kaiser Family Foundation. (2022). State health facts: Marketplace enrollment 2014-2022. https://www.kff.org/health-reform/state-indicator/marketplace-enrollment/"
+        },
+        {
+            "key": "bibr34-21650799231184374",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2459/JCM.0000000000000583"
+        },
+        {
+            "key": "bibr35-21650799231184374",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1089/pop.2012.0006"
+        },
+        {
+            "key": "bibr36-21650799231184374",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1001/jamacardio.2018.0022"
+        },
+        {
+            "key": "bibr37-21650799231184374",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jacc.2018.11.005"
+        },
+        {
+            "key": "bibr38-21650799231184374",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.26444/aaem/128017"
+        },
+        {
+            "key": "bibr39-21650799231184374",
+            "volume-title": "Evidence-based practice in nursing & healthcare: A guide to best practice",
+            "author": "Melnyk B. M.",
             "year": "2019",
-            "unstructured": "WHO. 2019a. \u201cWHO MERS Global Summary and Assessment Risk.\u201d WHO MERS Global Summary and Assessment of Risk. https://www.who.int/emergencies/mers-cov/en/.",
-            "journal-title": "WHO MERS Global Summary and Assessment of Risk"
+            "edition": "4"
         },
         {
-            "key": "e_1_3_5_97_1",
-            "article-title": "Middle East Respiratory Syndrome Coronavirus (MERS-CoV)",
-            "author": "WHO",
-            "year": "2019",
-            "unstructured": "WHO. 2019b. \u201cMiddle East Respiratory Syndrome Coronavirus (MERS-CoV).\u201d WHO. https://www.who.int/news-room/fact-sheets/detail/middle-east-respiratory-syndrome-coronavirus-(mers-cov).",
-            "journal-title": "WHO"
-        },
-        {
-            "key": "e_1_3_5_98_1",
+            "key": "bibr40-21650799231184374",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2471/BLT.20.265892"
+            "DOI": "10.1093/eurheartj/ehaa460"
         },
         {
-            "key": "e_1_3_5_99_1",
-            "article-title": "What\u2019s New in Econometrics? Lecture 10 Difference-in-Differences Estimation",
-            "author": "Wooldridge Jeff.",
-            "year": "2007",
-            "unstructured": "Wooldridge, Jeff. 2007. \u201cWhat\u2019s New in Econometrics? Lecture 10 Difference-in-Differences Estimation.\u201d NBER Summer Institute. https://www.nber.org/sites/default/files/2021-03/slides_10_diffindiffs.pdf.",
-            "journal-title": "NBER Summer Institute"
+            "key": "bibr41-21650799231184374",
+            "volume-title": "National transportation, warehousing, and utilities agenda",
+            "author": "National Occupational Research Agenda",
+            "year": "2009"
         },
         {
-            "key": "e_1_3_5_100_1",
+            "key": "bibr42-21650799231184374",
+            "unstructured": "National Occupational Research Agenda Transportation, Warehousing, and Utilities Sector. (2018). https://www.cdc.gov/nora/councils/twu/agenda.html"
+        },
+        {
+            "key": "bibr43-21650799231184374",
             "doi-asserted-by": "publisher",
-            "DOI": "10.3904/KJIM.2020.371"
+            "DOI": "10.1161/CIRCULATIONAHA.117.028595"
         },
         {
-            "key": "e_1_3_5_101_1",
+            "key": "bibr44-21650799231184374",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/poms.13136"
+            "DOI": "10.1093/eurjpc/zwab202"
         },
         {
-            "key": "e_1_3_5_102_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.indmarman.2020.05.026"
+            "key": "bibr45-21650799231184374",
+            "unstructured": "Peterson Center on Health Care, Kaiser Family Foundation. (2017). What do we know about the burden of disease in the U.S. https://www.healthsystemtracker.org/chart-collection/know-burden-disease"
         },
         {
-            "key": "e_1_3_5_103_1",
+            "key": "bibr46-21650799231184374",
+            "unstructured": "Preferred Reporting Items for Systematic Reviews and Meta-Analyses. (n.d.). PRISMA flow diagram. http://www.prisma-statement.org/PRISMAStatement/FlowDiagram"
+        },
+        {
+            "key": "bibr47-21650799231184374",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/01621459.1963.10480681"
+            "DOI": "10.1038/s41598-021-90188-5"
+        },
+        {
+            "key": "bibr48-21650799231184374",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1186/s12967-022-03336-4"
+        },
+        {
+            "key": "bibr49-21650799231184374",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3390/jcdd6020019"
+        },
+        {
+            "key": "bibr50-21650799231184374",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1097/JOM.0000000000000806"
+        },
+        {
+            "key": "bibr51-21650799231184374",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Sieber W. K., Robinson C. F., Birdsey J., Chen G. X., Hitchcock E. M. (2014). Obesity and other risk factors: The national survey of U.S. long-haul truck driver health and injury. American Journal of Industrial Medicine, 57, 615\u2013626. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4511102/",
+            "DOI": "10.1002/ajim.22293"
+        },
+        {
+            "key": "bibr52-21650799231184374",
+            "unstructured": "Tolbert J., Drake P., Damico A. (2022, December 19). Key facts about the uninsured population. Retrieved February 4, 2023, from https://www.kff.org/uninsured/issue-brief/key-facts-about-the-uninsured-population/"
+        },
+        {
+            "key": "bibr53-21650799231184374",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3389/fpubh.2021.760795"
+        },
+        {
+            "key": "bibr54-21650799231184374",
+            "unstructured": "United States Department of Health and Human Services. (2021). About Million Hearts\u00ae 2027. https://millionhearts.hhs.gov/about-million-hearts/index.html"
+        },
+        {
+            "key": "bibr55-21650799231184374",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.7326/0003-4819-150-6-200903170-00008"
+        },
+        {
+            "key": "bibr56-21650799231184374",
+            "unstructured": "United States Preventive Services Task Force. (2022). Aspirin use to prevent cardiovascular disease: Preventive medication. https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/aspirin-to-prevent-cardiovascular-disease-preventive-medication"
+        },
+        {
+            "key": "bibr57-21650799231184374",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1161/CIR.0000000000000757"
+        },
+        {
+            "key": "bibr58-21650799231184374",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Whelton P. K., Carey R. M., Aronow W. S., Casey D. E.Jr., Collins K. J., Dennison Himmelfarb C., DePalma S. M., Gidding S., Jamerson K. A., Jones D. W., MacLaughlin E. J., Muntner P., Ovbiagele B., Smith S. C.Jr., Spencer C. C., Stafford R. S., Taler S. J., Thomas R. J., Williams K. A.Jr. (2018). 2017 ACC/AHA/AAPA/ABC/ACPM/AGS/APhA/ASH/ASPC/NMA/PCNA guideline for the prevention, detection, evaluation, and management of high blood pressure in adults: Executive summary: A report of the American College of Cardiology/American Heart Association Task Force on Clinical Practice Guidelines. Hypertension, 71(6), 1269\u20131324. https://doi.org/10.1161/HYP.0000000000000066",
+            "DOI": "10.1161/HYP.0000000000000066"
+        },
+        {
+            "key": "bibr59-21650799231184374",
+            "unstructured": "The White House. (2022). American rescue plan. https://www.whitehouse.gov/american-rescue-plan/"
+        },
+        {
+            "key": "bibr60-21650799231184374",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.7326/0003-4819-150-6-200903170-00009"
+        },
+        {
+            "key": "bibr61-21650799231184374",
+            "unstructured": "Zippia. (2022). Commercial truck driver demographics and statistics in the U.S. https://www.zippia.com/commercial-truck-driver-jobs/demographics/"
         }
     ],
     "container-title": [
-        "International Journal of Production Research"
+        "Workplace Health &amp; Safety"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/00207543.2022.2118890",
+            "URL": "http://journals.sagepub.com/doi/pdf/10.1177/21650799231184374",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "http://journals.sagepub.com/doi/full-xml/10.1177/21650799231184374",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "http://journals.sagepub.com/doi/pdf/10.1177/21650799231184374",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -745,112 +413,66 @@
     "deposited": {
         "date-parts": [
             [
-                2024,
-                2,
-                6
+                2023,
+                9,
+                15
             ]
         ],
-        "date-time": "2024-02-06T12:35:24Z",
-        "timestamp": 1707222924000
+        "date-time": "2023-09-15T07:03:02Z",
+        "timestamp": 1694761382000
     },
-    "score": 12.430795,
+    "score": 14.453241,
     "resource": {
         "primary": {
-            "URL": "https://www.tandfonline.com/doi/full/10.1080/00207543.2022.2118890"
+            "URL": "http://journals.sagepub.com/doi/10.1177/21650799231184374"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2022,
-                9,
-                12
+                2023,
+                7,
+                17
             ]
         ]
     },
-    "references-count": 102,
+    "references-count": 61,
     "journal-issue": {
-        "issue": "5",
+        "issue": "10",
         "published-print": {
             "date-parts": [
                 [
-                    2024,
-                    3,
-                    3
+                    2023,
+                    10
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1080/00207543.2022.2118890"
+        "10.1177/21650799231184374"
     ],
-    "URL": "http://dx.doi.org/10.1080/00207543.2022.2118890",
+    "URL": "http://dx.doi.org/10.1177/21650799231184374",
     "ISSN": [
-        "0020-7543",
-        "1366-588X"
+        "2165-0799",
+        "2165-0969"
     ],
     "issn-type": [
         {
-            "value": "0020-7543",
+            "value": "2165-0799",
             "type": "print"
         },
         {
-            "value": "1366-588X",
+            "value": "2165-0969",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2022,
-                9,
-                12
+                2023,
+                7,
+                17
             ]
         ]
-    },
-    "assertion": [
-        {
-            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
-            "order": 1,
-            "name": "peerreview_statement",
-            "label": "Peer Review Statement"
-        },
-        {
-            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=tprs20",
-            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=tprs20",
-            "order": 2,
-            "name": "aims_and_scope_url",
-            "label": "Aim & Scope"
-        },
-        {
-            "value": "2021-12-21",
-            "order": 0,
-            "name": "received",
-            "label": "Received",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2022-07-08",
-            "order": 1,
-            "name": "accepted",
-            "label": "Accepted",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2022-09-12",
-            "order": 2,
-            "name": "published",
-            "label": "Published",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        }
-    ]
+    }
 }

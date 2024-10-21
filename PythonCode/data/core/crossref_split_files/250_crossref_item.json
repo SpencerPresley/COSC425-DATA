@@ -2,205 +2,247 @@
     "indexed": {
         "date-parts": [
             [
-                2024,
-                2,
-                23
+                2022,
+                4,
+                3
             ]
         ],
-        "date-time": "2024-02-23T08:42:44Z",
-        "timestamp": 1708677764507
+        "date-time": "2022-04-03T14:54:39Z",
+        "timestamp": 1648997679088
     },
-    "reference-count": 6,
-    "publisher": "SAGE Publications",
-    "issue": "3",
+    "reference-count": 0,
+    "publisher": "Wiley",
+    "issue": "S1",
     "license": [
         {
             "start": {
                 "date-parts": [
                     [
-                        2017,
-                        6,
+                        2021,
+                        5,
+                        14
+                    ]
+                ],
+                "date-time": "2021-05-14T00:00:00Z",
+                "timestamp": 1620950400000
+            },
+            "content-version": "vor",
+            "delay-in-days": 13,
+            "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+        },
+        {
+            "start": {
+                "date-parts": [
+                    [
+                        2021,
+                        5,
                         1
                     ]
                 ],
-                "date-time": "2017-06-01T00:00:00Z",
-                "timestamp": 1496275200000
+                "date-time": "2021-05-01T00:00:00Z",
+                "timestamp": 1619827200000
             },
             "content-version": "tdm",
             "delay-in-days": 0,
-            "URL": "https://journals.sagepub.com/page/policies/text-and-data-mining-license"
+            "URL": "http://doi.wiley.com/10.1002/tdm_license_1.1"
         }
     ],
     "content-domain": {
-        "domain": [
-            "journals.sagepub.com"
-        ],
-        "crossmark-restriction": true
+        "domain": [],
+        "crossmark-restriction": false
     },
     "short-container-title": [
-        "Environmental Values"
+        "FASEB j."
     ],
     "published-print": {
         "date-parts": [
             [
-                2017,
-                6
+                2021,
+                5
             ]
         ]
     },
-    "DOI": "10.3197/096327117x14913285800742",
+    "DOI": "10.1096/fasebj.2021.35.s1.04463",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2017,
-                5,
-                4
+                2021,
+                6,
+                11
             ]
         ],
-        "date-time": "2017-05-04T03:01:36Z",
-        "timestamp": 1493866896000
+        "date-time": "2021-06-11T00:33:05Z",
+        "timestamp": 1623371585000
     },
-    "page": "400-402",
-    "update-policy": "http://dx.doi.org/10.1177/sage-journals-update-policy",
     "source": "Crossref",
     "is-referenced-by-count": 0,
     "title": [
-        "Alex V. Barnard, <i>Freegans: Diving into the Wealth of Food Waste in America</i>"
+        "The Effects of a 11\u2010Week Resistance Training Program on Arterial Stiffness in Females"
     ],
-    "prefix": "10.1177",
-    "volume": "26",
+    "prefix": "10.1096",
+    "volume": "35",
     "author": [
         {
-            "given": "Sarah",
-            "family": "Surak",
+            "given": "Thomas",
+            "family": "Pellinger",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Salisbury University, USA"
+                    "name": "Physical TherapyUniversity of Maryland Eastern ShorePrincess AnneMD"
+                }
+            ]
+        },
+        {
+            "given": "Ateeb",
+            "family": "Mirza",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Salisbury UniversitySalisburyMD"
+                }
+            ]
+        },
+        {
+            "given": "Joshua",
+            "family": "Nicolas",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Salisbury UniversitySalisburyMD"
+                }
+            ]
+        },
+        {
+            "given": "Meghan",
+            "family": "Shepherd",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Salisbury UniversitySalisburyMD"
+                }
+            ]
+        },
+        {
+            "given": "Colin",
+            "family": "Gimblet",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Health &amp; Human PhysiologyUniversity of IowaIowa CityIA"
+                }
+            ]
+        },
+        {
+            "given": "Austin",
+            "family": "Ortlip",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Salisbury UniversitySalisburyMD"
+                }
+            ]
+        },
+        {
+            "given": "Jessica",
+            "family": "Walters",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Exercise ScienceSalisbury UniversitySalisburyMD"
+                }
+            ]
+        },
+        {
+            "given": "Tim",
+            "family": "Werner",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Salisbury UniversitySalisburyMD"
                 }
             ]
         }
     ],
-    "member": "179",
+    "member": "311",
     "published-online": {
         "date-parts": [
             [
-                2017,
-                6,
-                1
+                2021,
+                5,
+                14
             ]
         ]
     },
-    "reference": [
-        {
-            "key": "bibr1-096327117X14913285800742",
-            "volume-title": "Seinfeld",
-            "author": "Ackerman A.",
-            "year": "1994"
-        },
-        {
-            "key": "bibr2-096327117X14913285800742",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.5749/minnesota/9780816698110.001.0001"
-        },
-        {
-            "key": "bibr3-096327117X14913285800742",
-            "unstructured": "Chrisafis A. 2016. \u2018French law forbids food waste by supermarkets\u2019. The Guardian, February 4. https://www.theguardian.com/world/2016/feb/04/french-law-forbids-food-waste-by-supermarkets."
-        },
-        {
-            "key": "bibr4-096327117X14913285800742",
-            "unstructured": "Forster M. 2016. \u2018Serving wedding guests food destined for the bin\u2019. BBC News website. http://www.bbc.com/news/uk-36181334."
-        },
-        {
-            "key": "bibr5-096327117X14913285800742",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1068/a42122"
-        },
-        {
-            "key": "bibr6-096327117X14913285800742",
-            "unstructured": "Jacobs A. 2016. \u2018Celebrity chefs turn wasted Olympics food into meals for homeless\u2019. The New York Times, August 14. http://www.nytimes.com/2016/08/15/world/americas/rio-olympics-chef-food-homeless.html."
-        }
-    ],
     "container-title": [
-        "Environmental Values"
+        "The FASEB Journal"
     ],
     "language": "en",
-    "link": [
-        {
-            "URL": "http://journals.sagepub.com/doi/pdf/10.3197/096327117X14913285800742",
-            "content-type": "application/pdf",
-            "content-version": "vor",
-            "intended-application": "text-mining"
-        },
-        {
-            "URL": "http://journals.sagepub.com/doi/pdf/10.3197/096327117X14913285800742",
-            "content-type": "unspecified",
-            "content-version": "vor",
-            "intended-application": "similarity-checking"
-        }
-    ],
     "deposited": {
         "date-parts": [
             [
-                2024,
-                2,
-                23
+                2021,
+                6,
+                11
             ]
         ],
-        "date-time": "2024-02-23T08:06:00Z",
-        "timestamp": 1708675560000
+        "date-time": "2021-06-11T00:53:57Z",
+        "timestamp": 1623372837000
     },
-    "score": 14.466338,
+    "score": 16.149456,
     "resource": {
         "primary": {
-            "URL": "http://journals.sagepub.com/doi/10.3197/096327117X14913285800742"
+            "URL": "https://onlinelibrary.wiley.com/doi/10.1096/fasebj.2021.35.S1.04463"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2017,
-                6
+                2021,
+                5
             ]
         ]
     },
-    "references-count": 6,
+    "references-count": 0,
     "journal-issue": {
-        "issue": "3",
+        "issue": "S1",
         "published-print": {
             "date-parts": [
                 [
-                    2017,
-                    6
+                    2021,
+                    5
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.3197/096327117X14913285800742"
+        "10.1096/fasebj.2021.35.S1.04463"
     ],
-    "URL": "http://dx.doi.org/10.3197/096327117x14913285800742",
+    "URL": "http://dx.doi.org/10.1096/fasebj.2021.35.s1.04463",
+    "archive": [
+        "Portico"
+    ],
     "ISSN": [
-        "0963-2719",
-        "1752-7015"
+        "0892-6638",
+        "1530-6860"
     ],
     "issn-type": [
         {
-            "value": "0963-2719",
+            "value": "0892-6638",
             "type": "print"
         },
         {
-            "value": "1752-7015",
+            "value": "1530-6860",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2017,
-                6
+                2021,
+                5
             ]
         ]
-    }
+    },
+    "article-number": "fasebj.2021.35.S1.04463"
 }

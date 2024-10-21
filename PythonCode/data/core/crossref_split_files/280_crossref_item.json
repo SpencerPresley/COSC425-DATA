@@ -3,532 +3,394 @@
         "date-parts": [
             [
                 2024,
-                7,
-                17
+                8,
+                8
             ]
         ],
-        "date-time": "2024-07-17T17:11:04Z",
-        "timestamp": 1721236264585
+        "date-time": "2024-08-08T21:11:00Z",
+        "timestamp": 1723151460807
     },
-    "reference-count": 69,
-    "publisher": "Informa UK Limited",
-    "issue": "1",
+    "reference-count": 52,
+    "publisher": "Wiley",
+    "issue": "3",
+    "license": [
+        {
+            "start": {
+                "date-parts": [
+                    [
+                        2021,
+                        6,
+                        23
+                    ]
+                ],
+                "date-time": "2021-06-23T00:00:00Z",
+                "timestamp": 1624406400000
+            },
+            "content-version": "vor",
+            "delay-in-days": 0,
+            "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+        }
+    ],
     "content-domain": {
         "domain": [
-            "www.tandfonline.com"
+            "onlinelibrary.wiley.com"
         ],
         "crossmark-restriction": true
     },
     "short-container-title": [
-        "Journal of College Reading and Learning"
+        "Risk Analysis"
     ],
     "published-print": {
         "date-parts": [
             [
-                2018,
-                1,
-                2
+                2022,
+                3
             ]
         ]
     },
-    "DOI": "10.1080/10790195.2017.1362970",
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>Previous research speculates that some regulations are counterproductive in the sense that they increase (rather than decrease) mortality risk. However, few empirical studies have measured the extent to which this phenomenon holds across the regulatory system as a whole. Using a novel U.S. state panel data set spanning the period 2000\u20132014, we estimate the effect of U.S. federal regulation on state\u2010level mortality. We find that a 1% increase in federal regulation of state economies is associated with an increase in an index of state mortality of between 0.53% and 1.35%. These findings are robust to the form of mortality measure, choice of covariates, and the inclusion/exclusion of various regions, states, and industries. We also provide an update of the \u201ccost\u2010per\u2010life saved cutoff,\u201d which is the counterproductive risk threshold for expenditures. We find that expenditures in excess of $38.6 million (2019 dollars) per life saved can be expected to increase mortality risk. This article fills an important gap in the empirical literature and boosts the credibility of mortality risk analysis, whereby public policymakers weigh both the expected lives saved and lost due to a proposed regulation or other policy.</jats:p>",
+    "DOI": "10.1111/risa.13774",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2017,
-                9,
-                29
+                2021,
+                6,
+                24
             ]
         ],
-        "date-time": "2017-09-29T14:44:16Z",
-        "timestamp": 1506696256000
+        "date-time": "2021-06-24T02:29:56Z",
+        "timestamp": 1624501796000
     },
-    "page": "25-46",
-    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
+    "page": "592-613",
+    "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 11,
+    "is-referenced-by-count": 3,
     "title": [
-        "Constructing an Understanding of Undergraduate Disciplinary Reading: An Analysis of Contemporary Scholarship"
+        "Federal Regulation and Mortality in the 50 States"
     ],
-    "prefix": "10.1080",
-    "volume": "48",
+    "prefix": "10.1111",
+    "volume": "42",
     "author": [
         {
-            "given": "Heather D.",
-            "family": "Porter",
+            "given": "James",
+            "family": "Broughel",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Salisbury University"
+                    "name": "Mercatus Center at George Mason University  Arlington VA USA"
+                }
+            ]
+        },
+        {
+            "given": "Dustin",
+            "family": "Chambers",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Mercatus Center at George Mason University  Arlington VA USA"
+                },
+                {
+                    "name": "Perdue School of Business Salisbury University  Salisbury MD USA"
                 }
             ]
         }
     ],
-    "member": "301",
+    "member": "311",
     "published-online": {
         "date-parts": [
             [
-                2017,
-                9,
-                29
+                2021,
+                6,
+                23
             ]
         ]
     },
     "reference": [
         {
-            "key": "CIT0001",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10790195.2011.10850348"
-        },
-        {
-            "key": "CIT0002",
-            "first-page": "41",
-            "volume": "37",
-            "author": "Bauer L. B.",
-            "year": "2011",
-            "journal-title": "Journal of College Literacy & Learning"
-        },
-        {
-            "key": "CIT0003",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1598/RRQ.39.3.3"
-        },
-        {
-            "key": "CIT0004",
-            "first-page": "1",
-            "volume": "2",
-            "author": "Cao L.",
-            "year": "2007",
-            "journal-title": "Teaching Educational Psychology"
-        },
-        {
-            "key": "CIT0005",
-            "volume-title": "Handbook of college reading and study strategy research",
-            "author": "Caverly D.",
-            "year": "2000"
-        },
-        {
-            "key": "CIT0006",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10790195.2004.10850166"
-        },
-        {
-            "key": "CIT0007",
-            "doi-asserted-by": "crossref",
-            "first-page": "1",
-            "DOI": "10.1080/19388071.2015.1063742",
-            "volume": "55",
-            "author": "Cisco J.",
+            "issue": "1",
+            "key": "e_1_2_10_2_1",
+            "first-page": "2017",
+            "article-title": "RegData: A numerical database on industry\u2010specific regulations for all United States industries and federal regulations, 1997\u20132012",
+            "volume": "11",
+            "author": "Al\u2010Ubaydli O.",
             "year": "2015",
-            "journal-title": "Literacy Research and Instruction"
+            "journal-title": "Regulation and Governance"
         },
         {
-            "key": "CIT0008",
-            "volume-title": "The handbook of research synthesis and meta-analysis",
-            "author": "Cooper H.",
-            "year": "2009",
-            "edition": "2"
+            "key": "e_1_2_10_3_1",
+            "unstructured": "America's Health Rankings. (n.d.).Annual report. Retrieved fromhttps://www.americashealthrankings.org/explore/annual/measure/Obesity/state/ALL"
         },
         {
-            "key": "CIT0009",
-            "first-page": "15",
-            "volume": "38",
-            "author": "Culver T. F.",
-            "year": "2012",
-            "journal-title": "Journal of College Literacy & Learning"
-        },
-        {
-            "key": "CIT0010",
-            "volume-title": "Helping students use their textbooks more effectively. Faculty focus special report. 11 Strategies for getting students to read what\u2019s assigned. Reproduced from The Teaching Professor",
-            "author": "Culver T. F.",
-            "year": "2010"
-        },
-        {
-            "issue": "1",
-            "key": "CIT0011",
-            "first-page": "10",
-            "volume": "35",
-            "author": "Durkin D.",
-            "year": "1978",
-            "journal-title": "Reading Research Quarterly"
-        },
-        {
-            "key": "CIT0012",
-            "volume-title": "How does it mean? Engaging reluctant readers through literary theory",
-            "author": "Eckert L. S.",
-            "year": "2006"
-        },
-        {
-            "key": "CIT0013",
-            "first-page": "278",
-            "volume": "45",
-            "author": "Falk-Ross F.",
-            "year": "2001",
-            "journal-title": "Journal of Adolescent and Adult Literacy"
-        },
-        {
-            "key": "CIT0014",
+            "key": "e_1_2_10_4_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/JAAL.190"
+            "DOI": "10.1007/s11149-017-9343-9"
         },
         {
-            "key": "CIT0015",
+            "key": "e_1_2_10_5_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2307/492010"
+            "DOI": "10.1007/s11127-018-0517-5"
         },
         {
-            "key": "CIT0016",
+            "key": "e_1_2_10_6_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10790195.2014.950876"
+            "DOI": "10.1093/oep/gpm020"
         },
         {
-            "key": "CIT0018",
+            "key": "e_1_2_10_7_1",
+            "volume-title": "Memorandum on modernizing regulatory review",
+            "author": "Biden J. R.",
+            "year": "2021"
+        },
+        {
+            "key": "e_1_2_10_8_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1207/s15548430jlr3602_2"
+            "DOI": "10.1086/519816"
         },
         {
-            "key": "CIT0019",
+            "key": "e_1_2_10_9_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/JAAL.226"
+            "DOI": "10.1111/coep.12483"
         },
         {
-            "key": "CIT0020",
-            "first-page": "29",
-            "volume": "37",
-            "author": "Kim J. Y.",
-            "year": "2011",
-            "journal-title": "Journal of College Literacy & Learning"
+            "key": "e_1_2_10_10_1",
+            "unstructured": "Bureau of Labor Statistics. (2017).Census of Fatal Occupational Injuries (CFOI)\u2014Archived data. Retrieved fromhttps://www.bls.gov/iif/oshcfoiarchive.htm#RATES"
         },
         {
-            "issue": "1",
-            "key": "CIT0021",
-            "first-page": "30",
-            "volume": "47",
-            "author": "Lei S. A.",
-            "year": "2010",
-            "journal-title": "Reading Improvement"
-        },
-        {
-            "key": "CIT0022",
+            "key": "e_1_2_10_11_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10790195.2006.10850189"
+            "DOI": "10.2307/j.ctvpr7rb2"
         },
         {
-            "key": "CIT0023",
+            "key": "e_1_2_10_12_1",
+            "unstructured": "Centers for Disease Control and Prevention. (n.d.\u2010a).CDC WONDER home page. Retrieved fromhttps://wonder.cdc.gov/controller/datarequest/D154"
+        },
+        {
+            "key": "e_1_2_10_13_1",
+            "unstructured": "Centers for Disease Control and Prevention. (n.d.\u2010b).Marriage rates by state: 1990 1995 and 1999\u20122014. Retrieved fromhttps://www.cdc.gov/nchs/data/dvs/state_marriage_rates_90_95_and_99\u201014.pdf"
+        },
+        {
+            "key": "e_1_2_10_14_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/02702711.2012.726696"
+            "DOI": "10.1007/s11127-017-0479-z"
         },
         {
-            "key": "CIT0024",
+            "key": "e_1_2_10_15_1",
+            "volume-title": "Employment and output effects of federal regulations on small business. Mercatus Working Paper",
+            "author": "Chambers D.",
+            "year": "2020"
+        },
+        {
+            "key": "e_1_2_10_16_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0022-0663.94.4.778"
+            "DOI": "10.1007/s11127-018-0603-8"
         },
         {
-            "key": "CIT0025",
+            "key": "e_1_2_10_17_1",
+            "volume-title": "Regulation and income inequality in the United States. Mercatus Working Paper",
+            "author": "Chambers D.",
+            "year": "2020"
+        },
+        {
+            "key": "e_1_2_10_18_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10790195.2010.10850327"
+            "DOI": "10.1007/BF00353330"
         },
         {
-            "issue": "1",
-            "key": "CIT0026",
-            "first-page": "19",
-            "volume": "32",
-            "author": "Liu G.",
-            "year": "2016",
-            "journal-title": "International Journal of Engineering Education"
-        },
-        {
-            "key": "CIT0027",
+            "key": "e_1_2_10_19_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0022-0663.85.2.239"
+            "DOI": "10.1086/467170"
         },
         {
-            "issue": "3",
-            "key": "CIT0028",
-            "first-page": "71",
-            "volume": "37",
-            "author": "Lord T.",
-            "year": "2008",
-            "journal-title": "SCST: Society for College Science Teachers"
-        },
-        {
-            "key": "CIT0029",
+            "key": "e_1_2_10_20_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/003172170608700909"
+            "DOI": "10.2307/1242393"
         },
         {
-            "key": "CIT0030",
+            "key": "e_1_2_10_21_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/B978-0-12-742460-6.50007-4"
+            "DOI": "10.1001/jama.2016.13645"
         },
         {
-            "key": "CIT0031",
+            "key": "e_1_2_10_22_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.3102/0091732X07300046001"
+            "DOI": "10.1111/grow.12332"
         },
         {
-            "key": "CIT0032",
+            "key": "e_1_2_10_23_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1598/JAAL.52.2.1"
+            "DOI": "10.3386/w21308"
         },
         {
-            "key": "CIT0033",
+            "key": "e_1_2_10_24_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0022-0663.94.2.249"
+            "DOI": "10.1093/qje/qjs020"
         },
         {
-            "key": "CIT0034",
+            "key": "e_1_2_10_25_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1598/JAAL.52.7.6"
+            "DOI": "10.1111/j.1465-7295.2008.00122.x"
         },
         {
-            "key": "CIT0035",
+            "key": "e_1_2_10_26_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/jaal.394"
+            "DOI": "10.54155/jbs.31.1.241-263"
         },
         {
-            "key": "CIT0036",
-            "volume-title": "Handbook of college reading and study strategy research",
-            "author": "Nist S. L.",
-            "year": "2000"
+            "key": "e_1_2_10_27_1",
+            "unstructured": "Frank M. W.(2019).U.S. state\u2010level income inequality data\u2014Mark W. Frank. Retrieved fromhttps://www.shsu.edu/eco_mwf/inequality.html"
         },
         {
-            "key": "CIT0037",
-            "first-page": "42",
-            "volume-title": "Teaching reading, & study strategies at the college level",
-            "author": "Nist S. L.",
-            "year": "1991"
-        },
-        {
-            "issue": "1",
-            "key": "CIT0038",
-            "first-page": "43",
-            "volume": "21",
-            "author": "Orlando V.",
-            "year": "1989",
-            "journal-title": "Forum for Reading"
-        },
-        {
-            "issue": "3",
-            "key": "CIT0039",
-            "first-page": "2",
-            "volume": "33",
-            "author": "Paulson E. J.",
-            "year": "2010",
-            "journal-title": "Journal of Developmental Education"
-        },
-        {
-            "key": "CIT0040",
+            "key": "e_1_2_10_28_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10734-013-9675-z"
+            "DOI": "10.1093/qje/qjaa029"
         },
         {
-            "key": "CIT0041",
-            "volume-title": "Patterns of development in thought and values of students in a liberal arts college: A validation of a scheme",
-            "author": "Perry W. G.",
-            "year": "1968"
-        },
-        {
-            "key": "CIT0042",
+            "key": "e_1_2_10_29_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2308/iace.2007.22.1.21"
+            "DOI": "10.1093/epolic/eix019"
         },
         {
-            "key": "CIT0043",
-            "first-page": "3",
-            "volume": "35",
-            "author": "Poole A.",
-            "year": "2008",
-            "journal-title": "Journal of College Literacy & Learning"
-        },
-        {
-            "key": "CIT0044",
+            "key": "e_1_2_10_30_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10790195.2013.10850368"
+            "DOI": "10.1016/S1574-0064(00)80166-3"
         },
         {
-            "key": "CIT0045",
-            "volume-title": "Verbal protocols of reading: The nature of constructively responsive reading",
-            "author": "Pressley M.",
-            "year": "1995"
-        },
-        {
-            "issue": "1",
-            "key": "CIT0046",
-            "first-page": "77",
-            "volume": "33",
-            "author": "Pritchard R. E.",
-            "year": "1999",
-            "journal-title": "College Student Journal"
-        },
-        {
-            "key": "CIT0047",
-            "volume-title": "College reading and study strategy programs",
-            "author": "Pugh S. L.",
-            "year": "1991"
-        },
-        {
-            "key": "CIT0048",
-            "volume-title": "Handbook of college reading and study strategy research",
-            "author": "Pugh S. L.",
-            "year": "2000"
-        },
-        {
-            "key": "CIT0049",
+            "key": "e_1_2_10_31_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/insp.2007.8.issue-3"
+            "DOI": "10.1016/S0001-4575(01)00084-7"
         },
         {
-            "key": "CIT0050",
+            "key": "e_1_2_10_32_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2307/378648"
+            "DOI": "10.3386/w26598"
         },
         {
-            "issue": "2",
-            "key": "CIT0051",
-            "first-page": "165",
-            "volume-title": "Pedagogy: Critical Approaches to Teaching Literature, Language, Composition, and Culture",
-            "volume": "2",
-            "author": "Scholes R.",
-            "year": "2002"
+            "key": "e_1_2_10_33_1",
+            "unstructured": "Kaiser Family Foundation. (n.d.).Health care expenditures per capita by state of residence: 2014. Retrieved fromhttps://www.kff.org/other/state-indicator/health-spending-per-capita/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22 %22sort%22:%22asc%22%7D"
         },
         {
-            "key": "CIT0052",
+            "key": "e_1_2_10_34_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0022-0663.82.3.498"
+            "DOI": "10.1111/j.1539-6924.1990.tb01029.x"
         },
         {
-            "key": "CIT0053",
+            "key": "e_1_2_10_35_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1598/RRQ.31.3.4"
+            "DOI": "10.1023/A:1007754402585"
         },
         {
-            "key": "CIT0054",
-            "first-page": "240",
-            "volume-title": "Handbook of research on reading comprehension",
-            "author": "Shanahan C.",
-            "year": "2009"
-        },
-        {
-            "key": "CIT0055",
-            "volume-title": "Methods of literacy research: The methodology chapters from the handbook of research",
-            "author": "Shanahan T.",
-            "year": "2002"
-        },
-        {
-            "key": "CIT0056",
+            "key": "e_1_2_10_36_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.17763/haer.78.1.v62444321p602101"
+            "DOI": "10.1164/rccm.200503-443OC"
         },
         {
-            "key": "CIT0057",
+            "key": "e_1_2_10_37_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1097/TLD.0b013e318244557a"
+            "DOI": "10.1007/BF01064085"
         },
         {
-            "key": "CIT0058",
+            "key": "e_1_2_10_38_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0346-251X(01)00039-2"
+            "DOI": "10.2139/ssrn.2939260"
         },
         {
-            "key": "CIT0059",
-            "volume-title": "Handbook of college reading and study strategy research",
-            "author": "Stahl N. A.",
-            "year": "2000"
-        },
-        {
-            "key": "CIT0060",
-            "first-page": "3",
-            "volume-title": "Handbook of college reading and study strategy research",
-            "author": "Stahl, N. A., &amp; King, J. R",
-            "year": "2009"
-        },
-        {
-            "key": "CIT0061",
+            "key": "e_1_2_10_39_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/027027100750061930"
+            "DOI": "10.1007/s11127-018-0600-y"
         },
         {
-            "issue": "1",
-            "key": "CIT0062",
-            "first-page": "12",
-            "volume": "24",
-            "author": "Taraban R.",
-            "year": "2000",
-            "journal-title": "Journal of Developmental Education"
-        },
-        {
-            "issue": "4",
-            "key": "CIT0063",
-            "first-page": "46",
-            "volume": "42",
-            "author": "Tuten H.",
-            "year": "2013",
-            "journal-title": "Journal of College Science Teaching"
-        },
-        {
-            "key": "CIT0064",
+            "key": "e_1_2_10_40_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10790195.2006.10850190"
+            "DOI": "10.1007/s11127-018-0597-2"
         },
         {
-            "issue": "1",
-            "key": "CIT0065",
-            "doi-asserted-by": "crossref",
-            "first-page": "45",
-            "DOI": "10.1080/10790195.2004.10850161",
-            "volume": "34",
-            "author": "Van Blerkom M. L",
-            "year": "2004",
-            "journal-title": "Journal of College Reading and Learning"
+            "key": "e_1_2_10_41_1",
+            "volume-title": "Free for all: Lessons from the RAND health insurance experiment",
+            "author": "Newhouse J.",
+            "year": "1993"
         },
         {
-            "issue": "1",
-            "key": "CIT0066",
-            "first-page": "86",
-            "volume": "13",
-            "author": "Van Camp D.",
-            "year": "2013",
-            "journal-title": "Journal of the Scholarship of Teaching and Learning"
-        },
-        {
-            "key": "CIT0067",
-            "volume-title": "Sources of coherence in text comprehension (pp. 353\u2013373). Hillsdale, NJ: Erlbaum.",
-            "author": "van den Broek P.",
-            "year": "1995"
-        },
-        {
-            "issue": "1",
-            "key": "CIT0068",
-            "first-page": "38",
-            "volume": "41",
-            "author": "White H. L.",
-            "year": "2004",
-            "journal-title": "Reading Improvement"
-        },
-        {
-            "issue": "1",
-            "key": "CIT0069",
-            "first-page": "24",
-            "volume": "42",
-            "author": "White J. W.",
-            "year": "2013",
-            "journal-title": "American Secondary Education"
-        },
-        {
-            "key": "CIT0070",
+            "key": "e_1_2_10_42_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1353/rhe.2010.0028"
+            "DOI": "10.1001/jama.287.9.1132"
+        },
+        {
+            "key": "e_1_2_10_43_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1257/jep.13.2.145"
+        },
+        {
+            "key": "e_1_2_10_44_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1162/ajhe_a_00080"
+        },
+        {
+            "key": "e_1_2_10_45_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1056/NEJMsa1202099"
+        },
+        {
+            "key": "e_1_2_10_46_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.7326/M13-2275"
+        },
+        {
+            "key": "e_1_2_10_47_1",
+            "unstructured": "US Census Bureau. (2016).State intercensal tables: 2000\u20122010. Retrieved fromhttps://www.census.gov/data/tables/time\u2010series/demo/popest/intercensal\u20102000\u20102010\u2010state.html"
+        },
+        {
+            "key": "e_1_2_10_48_1",
+            "unstructured": "US Census Bureau. (2019).State population totals and components of change: 2010\u20122019. Retrieved fromhttps://www.census.gov/data/tables/time\u2010series/demo/popest/2010s\u2010state\u2010total.html"
+        },
+        {
+            "key": "e_1_2_10_49_1",
+            "volume-title": "Final regulatory impact analysis: The safer affordable fuel\u2010efficient (SAFE) vehicles rule for model year 2021\u20122026 passenger cars and light trucks",
+            "author": "US Department of Transportation and Environmental Protection Agency",
+            "year": "2020"
+        },
+        {
+            "key": "e_1_2_10_50_1",
+            "volume-title": "2018, 2019 and 2020 report to Congress on the benefits and costs of federal regulations and agency compliance with the Unfunded Mandates Reform Act",
+            "author": "US Office of Management and Budget",
+            "year": "2021"
+        },
+        {
+            "key": "e_1_2_10_51_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/2555855"
+        },
+        {
+            "key": "e_1_2_10_52_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2469/faj.v37.n2.19"
+        },
+        {
+            "key": "e_1_2_10_53_1",
+            "volume-title": "Searching for safety",
+            "author": "Wildavsky A.",
+            "year": "1988"
         }
     ],
     "container-title": [
-        "Journal of College Reading and Learning"
+        "Risk Analysis"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/10790195.2017.1362970",
+            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/risa.13774",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1111/risa.13774",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/risa.13774",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -537,91 +399,101 @@
     "deposited": {
         "date-parts": [
             [
-                2017,
-                9,
-                29
+                2023,
+                8,
+                25
             ]
         ],
-        "date-time": "2017-09-29T14:44:36Z",
-        "timestamp": 1506696276000
+        "date-time": "2023-08-25T17:05:18Z",
+        "timestamp": 1692983118000
     },
-    "score": 14.417821,
+    "score": 14.294095,
     "resource": {
         "primary": {
-            "URL": "https://www.tandfonline.com/doi/full/10.1080/10790195.2017.1362970"
+            "URL": "https://onlinelibrary.wiley.com/doi/10.1111/risa.13774"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2017,
-                9,
-                29
+                2021,
+                6,
+                23
             ]
         ]
     },
-    "references-count": 69,
+    "references-count": 52,
     "journal-issue": {
-        "issue": "1",
-        "published-online": {
-            "date-parts": [
-                [
-                    2017,
-                    9,
-                    29
-                ]
-            ]
-        },
+        "issue": "3",
         "published-print": {
             "date-parts": [
                 [
-                    2018,
-                    1,
-                    2
+                    2022,
+                    3
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1080/10790195.2017.1362970"
+        "10.1111/risa.13774"
     ],
-    "URL": "http://dx.doi.org/10.1080/10790195.2017.1362970",
+    "URL": "http://dx.doi.org/10.1111/risa.13774",
+    "archive": [
+        "Portico"
+    ],
     "ISSN": [
-        "1079-0195",
-        "2332-7413"
+        "0272-4332",
+        "1539-6924"
     ],
     "issn-type": [
         {
-            "value": "1079-0195",
+            "value": "0272-4332",
             "type": "print"
         },
         {
-            "value": "2332-7413",
+            "value": "1539-6924",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2017,
-                9,
-                29
+                2021,
+                6,
+                23
             ]
         ]
     },
     "assertion": [
         {
-            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
-            "order": 1,
-            "name": "peerreview_statement",
-            "label": "Peer Review Statement"
+            "value": "2020-12-24",
+            "order": 0,
+            "name": "received",
+            "label": "Received",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
         },
         {
-            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=ucrl20",
-            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=ucrl20",
+            "value": "2021-06-07",
+            "order": 1,
+            "name": "accepted",
+            "label": "Accepted",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
+        },
+        {
+            "value": "2021-06-23",
             "order": 2,
-            "name": "aims_and_scope_url",
-            "label": "Aim & Scope"
+            "name": "published",
+            "label": "Published",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
         }
     ]
 }

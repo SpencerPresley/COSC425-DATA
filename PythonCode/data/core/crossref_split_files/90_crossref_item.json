@@ -3,610 +3,469 @@
         "date-parts": [
             [
                 2024,
-                8,
-                9
+                7,
+                7
             ]
         ],
-        "date-time": "2024-08-09T05:07:40Z",
-        "timestamp": 1723180060824
+        "date-time": "2024-07-07T22:10:13Z",
+        "timestamp": 1720390213204
     },
-    "reference-count": 89,
-    "publisher": "Wiley",
-    "issue": "2",
-    "license": [
-        {
-            "start": {
-                "date-parts": [
-                    [
-                        2021,
-                        5,
-                        10
-                    ]
-                ],
-                "date-time": "2021-05-10T00:00:00Z",
-                "timestamp": 1620604800000
-            },
-            "content-version": "vor",
-            "delay-in-days": 0,
-            "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
-        }
-    ],
+    "reference-count": 50,
+    "publisher": "John Benjamins Publishing Company",
+    "issue": "1",
     "content-domain": {
-        "domain": [
-            "onlinelibrary.wiley.com"
-        ],
-        "crossmark-restriction": true
+        "domain": [],
+        "crossmark-restriction": false
     },
     "short-container-title": [
-        "Accounting Perspectives"
+        "JLAC"
     ],
     "published-print": {
         "date-parts": [
             [
-                2021,
-                6
+                2018,
+                7,
+                2
             ]
         ]
     },
-    "abstract": "<jats:title>ABSTRACT</jats:title><jats:p>This study's objective is to examine the role of resilience in the dynamic between academic burnout and psychological distress using a sample of US undergraduate accounting majors. It extends prior research\u2014that is, Garc\u00eda\u2010Izquierdo et al. (2018), who examine these relationships using a sample of Spanish nursing students. For this study, a survey instrument was concurrently administered to 443 accounting majors at four geographically dispersed universities. Two alternative models are tested. The first model positions resilience as an exogenous predictor, and dimensions of academic burnout antecedent to psychological distress. The results indicate a significant negative association between resilience, psychological distress, and each of the three academic burnout dimensions. In addition, emotional exhaustion and academic inefficacy have a significant positive association with psychological distress. The alternative model positions psychological distress antecedent to each of the academic burnout dimensions. The results indicate that resilience has a significant negative association with psychological distress, cynicism, and academic inefficacy, but not emotional exhaustion. Moreover, psychological distress has significant positive associations with each academic burnout dimension. In the alternative model specification, resilience is also found to moderate the association between psychological distress and academic inefficacy. This single moderating effect notwithstanding, the findings suggest that the primary role of resilience is that of a compensatory mechanism by acting as an independent exogenous predictor of distress and burnout.</jats:p>",
-    "DOI": "10.1111/1911-3838.12254",
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>Using four tweets by Steven Salaita about the Israeli-Palestinian conflict that resulted in the retraction of his academic job offer in September 2014 as our case study, we investigate the role of Twitter in the shaping and reception of the controversial messages. Our analysis combines Gricean pragmatics with im/politeness and hate-speech research to reveal a complex layering of potential meanings stemming from what is linguistically encoded in each tweet. Their construal as hate speech, in particular, depends on which of these potential meanings critics chose to focus upon. We account for this finding by considering the diversity of potential audiences of a tweet and suggest that the effects of context collapse on implicated meanings can be especially detrimental. Competition for attention among incoming tweets, Twitter\u2019s central affiliative function and applicable length restrictions can, nevertheless, place a premium on communicating such meanings.</jats:p>",
+    "DOI": "10.1075/jlac.00002.ter",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2021,
-                3,
-                19
+                2018,
+                7,
+                2
             ]
         ],
-        "date-time": "2021-03-19T11:46:19Z",
-        "timestamp": 1616154379000
+        "date-time": "2018-07-02T06:21:01Z",
+        "timestamp": 1530512461000
     },
-    "page": "227-254",
-    "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+    "page": "26-57",
     "source": "Crossref",
-    "is-referenced-by-count": 14,
+    "is-referenced-by-count": 22,
     "title": [
-        "Resilience, Psychological Distress, and Academic Burnout among Accounting Students*"
+        "Uncivil Twitter"
     ],
-    "prefix": "10.1111",
-    "volume": "20",
+    "prefix": "10.1075",
+    "volume": "6",
     "author": [
         {
-            "given": "Kenneth J.",
-            "family": "Smith",
+            "given": "Marina",
+            "family": "Terkourafi",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Salisbury University"
+                    "name": "Leiden University, The Netherlands"
                 }
             ]
         },
         {
-            "given": "David J.",
-            "family": "Emerson",
+            "given": "Lydia",
+            "family": "Catedral",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Salisbury University"
+                    "name": "City University of Hong Kong, Hong Kong"
+                }
+            ]
+        },
+        {
+            "given": "Iftikhar",
+            "family": "Haider",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "University of Illinois Urbana Champaign, USA"
+                }
+            ]
+        },
+        {
+            "given": "Farzad",
+            "family": "Karimzad",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Salisbury University, USA"
+                }
+            ]
+        },
+        {
+            "given": "Jeriel",
+            "family": "Melgares",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "University of Illinois Urbana Champaign, USA"
+                }
+            ]
+        },
+        {
+            "given": "Cristina",
+            "family": "Mostacero-Pinilla",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "University of Illinois Urbana Champaign, USA"
+                }
+            ]
+        },
+        {
+            "given": "Julie",
+            "family": "Nelson",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "University of Illinois Urbana Champaign, USA"
+                }
+            ]
+        },
+        {
+            "given": "Benjamin",
+            "family": "Weissman",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "University of Illinois Urbana Champaign, USA"
                 }
             ]
         }
     ],
-    "member": "311",
+    "member": "1757",
     "published-online": {
         "date-parts": [
             [
-                2021,
-                5,
-                10
+                2018,
+                7,
+                2
             ]
         ]
     },
     "reference": [
         {
-            "key": "e_1_2_9_2_1",
+            "key": "CIT0051",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.tourman.2016.06.004"
+            "DOI": "10.1017/CBO9780511777912"
         },
         {
-            "key": "e_1_2_9_3_1",
+            "key": "CIT0052",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2308/bria.2002.14.1.1"
+            "DOI": "10.1111/j.1468-0017.1994.tb00220.x"
         },
         {
-            "key": "e_1_2_9_4_1",
+            "key": "CIT0053",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0033-2909.103.3.411"
+            "DOI": "10.1177/0894439313490405"
         },
         {
-            "key": "e_1_2_9_5_1",
+            "key": "CIT0054",
+            "first-page": "1",
+            "article-title": "Tweet, Tweet, Retweet: Conversational Aspects of Retweeting on Twitter",
+            "author": "boyd",
+            "year": "2010",
+            "journal-title": "Proceedings of the 43rd Annual Hawaii International Conference on System Sciences (HICSS), Kauai, HI, January 5\u20138"
+        },
+        {
+            "key": "CIT0055",
+            "first-page": "562",
+            "article-title": "Cooooooooooooooollllllllllllll!!!!!!!!!!!!!!: Using Word Lengthening to Detect Sentiment in Microblogs",
+            "volume-title": "Proceedings of the 2011 Conference on Empirical Methods in Natural Language Processing",
+            "author": "Brody",
+            "year": "2011"
+        },
+        {
+            "key": "CIT0056",
+            "volume-title": "Politeness: Some Universals in Language Usage",
+            "author": "Brown",
+            "year": "(1978) 1987"
+        },
+        {
+            "key": "CIT0057",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0001-8791(02)00030-1"
+            "DOI": "10.1002/9780470754603"
         },
         {
-            "key": "e_1_2_9_6_1",
+            "key": "CIT0058",
+            "volume-title": "The Grammar Book: An ESL/EFL Teacher\u2019s Course",
+            "author": "Celce-Murcia",
+            "year": "1999",
+            "edition": "2"
+        },
+        {
+            "key": "CIT0059",
+            "first-page": "257",
+            "article-title": "The Synchronic and Diachronic Status of Conversational Implicature",
+            "volume-title": "Syntax and Semantics 3: Speech Acts",
+            "author": "Cole",
+            "year": "1975"
+        },
+        {
+            "key": "CIT0060",
+            "first-page": "89",
+            "article-title": "Political Polarization on Twitter",
+            "volume-title": "Proceedings of the Fifth International Conference on Weblogs and Social Media, Barcelona",
+            "author": "Conover",
+            "year": "2011"
+        },
+        {
+            "key": "CIT0061",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0191-8869(02)00027-2"
+            "DOI": "10.1075/jlac.5.1.01cul"
         },
         {
-            "key": "e_1_2_9_7_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/1094428105278021"
+            "key": "CIT0062",
+            "volume-title": "Threats and Promises: The Pursuit of International Influence",
+            "author": "Davis",
+            "year": "2000"
         },
         {
-            "key": "e_1_2_9_8_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.leaqua.2014.07.012"
+            "key": "CIT0063",
+            "first-page": "359",
+            "article-title": "What to Do about Bad Language on the Internet",
+            "author": "Eisenstein",
+            "year": "2013",
+            "journal-title": "Proceedings of the 2013 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (HLT-NAACL)"
         },
         {
-            "key": "e_1_2_9_9_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/9781118619179"
+            "key": "CIT0064",
+            "first-page": "80",
+            "article-title": "Annotating Named Entities in Twitter Data with Crowdsourcing",
+            "volume-title": "Proceedings of the NAACL HLT 2010 Workshop on Creating Speech and Language Data with Amazon\u2019s Mechanical Turk",
+            "author": "Finin",
+            "year": "2010"
         },
         {
-            "key": "e_1_2_9_10_1",
-            "volume-title": "Thriving under stress: Harnessing demands in the workplace",
-            "author": "Britt T. W.",
-            "year": "2015"
+            "issue": "4",
+            "key": "CIT0065",
+            "first-page": "561",
+            "article-title": "On Invited Inferences",
+            "volume": "2",
+            "author": "Geis",
+            "year": "1971",
+            "journal-title": "Linguistic Inquiry"
         },
         {
-            "key": "e_1_2_9_11_1",
-            "volume-title": "Structural equation modeling with EQS and EQS/Windows",
-            "author": "Byrne B. M.",
-            "year": "2006"
+            "key": "CIT0066",
+            "volume-title": "Forms of Talk",
+            "author": "Goffman",
+            "year": "1981"
         },
         {
-            "key": "e_1_2_9_12_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/09639284.2014.931240"
+            "key": "CIT0067",
+            "first-page": "147",
+            "article-title": "Utterer\u2019s Meaning and Intentions",
+            "volume-title": "Philosophical Review Studies in the way of words",
+            "author": "Grice",
+            "year": "(1969) 1989"
         },
         {
-            "key": "e_1_2_9_13_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.brat.2005.05.001"
+            "key": "CIT0068",
+            "first-page": "41",
+            "article-title": "Logic and Conversation",
+            "volume-title": "Syntax and Semantics Studies in the Way of Words",
+            "author": "Grice",
+            "year": "(1975) 1989"
         },
         {
-            "key": "e_1_2_9_14_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/jts.20271"
-        },
-        {
-            "key": "e_1_2_9_15_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.kjms.2010.11.005"
-        },
-        {
-            "key": "e_1_2_9_16_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1287/isre.14.2.189.16018"
-        },
-        {
-            "key": "e_1_2_9_17_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2753/MTP1069-6679160402"
-        },
-        {
-            "key": "e_1_2_9_18_1",
-            "volume-title": "Statistical power analysis for the behavioral sciences",
-            "author": "Cohen J.",
-            "year": "1988"
-        },
-        {
-            "key": "e_1_2_9_19_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/da.10113"
-        },
-        {
-            "key": "e_1_2_9_20_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/258593"
-        },
-        {
-            "key": "e_1_2_9_21_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/014920639902500305"
-        },
-        {
-            "key": "e_1_2_9_22_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3928/00485713-20131206-05"
-        },
-        {
-            "issue": "1",
-            "key": "e_1_2_9_23_1",
-            "first-page": "23",
-            "article-title": "Career plateaus in the salesforce: Understanding and removing blockages to employee growth",
-            "volume": "8",
-            "author": "Feldman D.",
-            "year": "1988",
-            "journal-title": "Journal of Personal Selling and Sales Management"
-        },
-        {
-            "key": "e_1_2_9_24_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/002224378101800104"
-        },
-        {
-            "key": "e_1_2_9_25_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0022-3514.84.2.365"
-        },
-        {
-            "key": "e_1_2_9_26_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1186/1477-7525-2-63"
-        },
-        {
-            "key": "e_1_2_9_27_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/01443410.2017.1383073"
-        },
-        {
-            "key": "e_1_2_9_28_1",
-            "volume-title": "Controlling stress and tension",
-            "author": "Giordano D.",
-            "year": "1986"
-        },
-        {
-            "key": "e_1_2_9_29_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/17437199.2018.1426484"
-        },
-        {
-            "key": "e_1_2_9_30_1",
-            "volume-title": "The user's guide to the General Health Questionnaire",
-            "author": "Goldberg D. P.",
-            "year": "1988"
-        },
-        {
-            "key": "e_1_2_9_31_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF00782952"
-        },
-        {
-            "key": "e_1_2_9_32_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/014107689809100502"
-        },
-        {
-            "key": "e_1_2_9_33_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.sbspro.2010.07.157"
-        },
-        {
-            "key": "e_1_2_9_34_1",
-            "volume-title": "A primer on partial least squares structural equation modelling (PLS\u2010SEM)",
-            "author": "Hair J. F.",
-            "year": "2013"
-        },
-        {
-            "key": "e_1_2_9_35_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1108/EBR-11-2018-0203"
-        },
-        {
-            "key": "e_1_2_9_36_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1108/EBR-10-2013-0128"
-        },
-        {
-            "key": "e_1_2_9_37_1",
-            "volume-title": "Modern factor analysis",
-            "author": "Harman H. H.",
+            "key": "CIT0069",
+            "volume-title": "Beyond Culture",
+            "author": "Hall",
             "year": "1976"
         },
         {
-            "key": "e_1_2_9_38_1",
+            "key": "CIT0070",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/15487768.2010.523372"
+            "DOI": "10.1177/0957926501012004003"
         },
         {
-            "key": "e_1_2_9_39_1",
+            "key": "CIT0071",
+            "volume-title": "Im/politeness Implicatures",
+            "author": "Haugh",
+            "year": "2014"
+        },
+        {
+            "key": "CIT0072",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/07448481.2010.515632"
+            "DOI": "10.1016/j.pragma.2011.11.002"
         },
         {
-            "key": "e_1_2_9_40_1",
+            "key": "CIT0073",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1007/978-3-540-32827-8_31"
+            "DOI": "10.1111/jcc4.12001"
         },
         {
-            "key": "e_1_2_9_41_1",
+            "key": "CIT0074",
+            "first-page": "11",
+            "article-title": "Toward a New Taxonomy for Pragmatic Inference: Q-based and R-based Implicature",
+            "volume-title": "Meaning, Form, and Use in Context: Linguistic Applications",
+            "author": "Horn",
+            "year": "1984"
+        },
+        {
+            "key": "CIT0075",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s11747-014-0403-8"
+            "DOI": "10.1016/S0378-2166(99)00053-3"
         },
         {
-            "key": "e_1_2_9_42_1",
+            "key": "CIT0076",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2308/acch-50181"
+            "DOI": "10.1080/03637758609376126"
         },
         {
-            "key": "e_1_2_9_43_1",
+            "key": "CIT0077",
+            "volume-title": "La Conversation",
+            "author": "Kerbrat-Orecchioni",
+            "year": "1996"
+        },
+        {
+            "key": "CIT0078",
+            "first-page": "292",
+            "article-title": "The Logic of Politeness: Or, Minding Your P\u2019s and Q\u2019s",
+            "volume-title": "Papers from the Ninth Regional Meeting of the Chicago Linguistics Society, Chicago",
+            "author": "Lakoff",
+            "year": "1973"
+        },
+        {
+            "key": "CIT0079",
+            "volume-title": "Principles of Pragmatics",
+            "author": "Leech",
+            "year": "1983"
+        },
+        {
+            "key": "CIT0080",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2308/ciia-51479"
+            "DOI": "10.1093/acprof:oso/9780195341386.001.0001"
         },
         {
-            "key": "e_1_2_9_44_1",
+            "key": "CIT0081",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1093/occmed/kql169"
+            "DOI": "10.1207/S15326926CLP0602_2"
         },
         {
-            "key": "e_1_2_9_45_1",
+            "key": "CIT0082",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2308/bria.2010.22.1.21"
+            "DOI": "10.1177/0261927X03022002001"
         },
         {
-            "key": "e_1_2_9_46_1",
+            "key": "CIT0083",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1046/j.1365-2648.2001.01769.x"
+            "DOI": "10.1111/j.1468-2958.1997.tb00415.x"
         },
         {
-            "key": "e_1_2_9_47_1",
+            "key": "CIT0084",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/08832320903218133"
+            "DOI": "10.1016/j.chb.2013.06.004"
         },
         {
-            "key": "e_1_2_9_48_1",
+            "key": "CIT0085",
+            "doi-asserted-by": "crossref",
+            "first-page": "336",
+            "DOI": "10.1007/978-3-319-13734-6_25",
+            "article-title": "Is Twitter a Public Sphere for Online Conflicts? A Cross-ideological and Cross-hierarchical Look",
+            "volume-title": "Proceedings of the 6th International Conference of Social Informatics (SocInfo2014)",
+            "author": "Liu",
+            "year": "2014"
+        },
+        {
+            "key": "CIT0086",
             "doi-asserted-by": "publisher",
-            "DOI": "10.5465/amj.2005.18803921"
+            "DOI": "10.1177/1461444810365313"
         },
         {
-            "issue": "1",
-            "key": "e_1_2_9_49_1",
-            "first-page": "88",
-            "article-title": "Perceived stress, coping strategy and general health: A study on accounting students in Malaysia",
-            "volume": "4",
-            "author": "Lim Y. M.",
-            "year": "2013",
-            "journal-title": "Researchers World"
-        },
-        {
-            "key": "e_1_2_9_50_1",
+            "key": "CIT0087",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1046/j.1365-2648.2000.02251.x"
+            "DOI": "10.1017/CBO9780511615238"
         },
         {
-            "key": "e_1_2_9_51_1",
+            "key": "CIT0088",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/1467-8624.00164"
+            "DOI": "10.1080/13507486.2011.574681"
         },
         {
-            "key": "e_1_2_9_52_1",
+            "key": "CIT0089",
+            "volume-title": "Treatise on Constitutional Law: Substance and Procedure",
+            "author": "Nowak",
+            "year": "1986"
+        },
+        {
+            "key": "CIT0090",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/17439760903157133"
+            "DOI": "10.1177/1461444804041444"
         },
         {
-            "key": "e_1_2_9_53_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0022167811422497"
+            "key": "CIT091a",
+            "first-page": "631",
+            "volume-title": "The unconstitutionality of campus bans on \u201cracist speech\u201d: The view from without and within",
+            "author": "Sedler",
+            "year": "1992"
         },
         {
-            "key": "e_1_2_9_54_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/pits.20149"
+            "key": "CIT0091",
+            "volume-title": "Relevance: Communication and Cognition",
+            "author": "Sperber",
+            "year": "1986"
         },
         {
-            "key": "e_1_2_9_55_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0734282907313767"
-        },
-        {
-            "key": "e_1_2_9_56_1",
-            "volume-title": "Job Stress and Burnout: Research, Theory, and Intervention Perspectives",
-            "author": "Maslach C.",
-            "year": "1982"
-        },
-        {
-            "key": "e_1_2_9_57_1",
-            "volume-title": "MBI\u2010General Survey (Students) MBI\u2010GS (S)",
-            "author": "Maslach C.",
+            "key": "CIT0092",
+            "first-page": "239",
+            "article-title": "Twitter: Design, Discourse, and the Implications of Public Text",
+            "volume-title": "The Routledge Handbook of Language and Digital Communication",
+            "author": "Squires",
             "year": "2016"
         },
         {
-            "key": "e_1_2_9_58_1",
+            "key": "CIT0093",
+            "doi-asserted-by": "crossref",
+            "first-page": "331",
+            "DOI": "10.1515/9783110346831.331",
+            "article-title": "Tweets in the News. Legitimizing Medium, Standardizing Form",
+            "volume-title": "Mediatization and Sociolinguistic Change",
+            "author": "Squires",
+            "year": "2014"
+        },
+        {
+            "key": "CIT0094",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0003-066X.56.3.227"
+            "DOI": "10.1515/jplr.2011.009"
         },
         {
-            "key": "e_1_2_9_59_1",
+            "key": "CIT0095",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.nedt.2008.10.011"
+            "DOI": "10.4324/9780203468005"
         },
         {
-            "issue": "1",
-            "key": "e_1_2_9_60_1",
-            "first-page": "53",
-            "article-title": "Mental health in university students: Incidence of psychopathology and history of suicidal behavior in population going to a student health service",
-            "volume": "29",
-            "author": "Micin S.",
-            "year": "2011",
-            "journal-title": "Psychological Therapy"
-        },
-        {
-            "key": "e_1_2_9_61_1",
+            "key": "CIT0096",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1037/a0036472"
+            "DOI": "10.1075/pc.15.1.13wod"
         },
         {
-            "key": "e_1_2_9_62_1",
+            "key": "CIT0097",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1023/A:1018755201899"
+            "DOI": "10.1177/1461444810385097"
         },
         {
-            "key": "e_1_2_9_63_1",
-            "volume-title": "Psychometric theory",
-            "author": "Nunnally J",
-            "year": "1978"
+            "key": "CIT0098",
+            "doi-asserted-by": "crossref",
+            "volume-title": "Discourse of Twitter and Social Media: How we Use Language to Create Affiliation on the Web",
+            "author": "Zappavigna",
+            "year": "2012",
+            "DOI": "10.5040/9781472541642"
         },
         {
-            "key": "e_1_2_9_64_1",
+            "key": "CIT0099",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.ajp.2014.02.010"
-        },
-        {
-            "key": "e_1_2_9_65_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3200/JACH.56.5.569-578"
-        },
-        {
-            "key": "e_1_2_9_66_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0022-3514.91.4.730"
-        },
-        {
-            "key": "e_1_2_9_67_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0021-9010.88.5.879"
-        },
-        {
-            "key": "e_1_2_9_68_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1300/J075v08n02_03"
-        },
-        {
-            "key": "e_1_2_9_69_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.intacc.2010.12.002"
-        },
-        {
-            "key": "e_1_2_9_70_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.ijnurstu.2012.03.010"
-        },
-        {
-            "key": "e_1_2_9_71_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/978-3-319-05542-8_15-1"
-        },
-        {
-            "key": "e_1_2_9_72_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1023/A:1015630930326"
-        },
-        {
-            "key": "e_1_2_9_73_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1108/EJM-02-2019-0189"
-        },
-        {
-            "key": "e_1_2_9_74_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2466/pr0.99.2.396-406"
-        },
-        {
-            "key": "e_1_2_9_75_1",
-            "first-page": "127",
-            "article-title": "An assessment of the contribution of stress arousal to the beyond the role stress model",
-            "volume": "10",
-            "author": "Smith K. J.",
-            "year": "2007",
-            "journal-title": "Advances in Accounting Behavioral Research"
-        },
-        {
-            "key": "e_1_2_9_76_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.adiac.2017.04.003"
-        },
-        {
-            "key": "e_1_2_9_77_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1108/S1475-148820170000020004"
-        },
-        {
-            "key": "e_1_2_9_78_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0748-5751(01)00026-4"
-        },
-        {
-            "key": "e_1_2_9_79_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/1911-3838.12023"
-        },
-        {
-            "key": "e_1_2_9_80_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3200/JACH.56.44.445-454"
-        },
-        {
-            "key": "e_1_2_9_81_1",
-            "volume-title": "Life 3.0: Being human in the age of artificial intelligence",
-            "author": "Tegmark M.",
-            "year": "2017"
-        },
-        {
-            "issue": "2",
-            "key": "e_1_2_9_82_1",
-            "first-page": "165",
-            "article-title": "Development and psychometric",
-            "volume": "1",
-            "author": "Wagnild G.",
-            "year": "1993",
-            "journal-title": "Journal of Nursing Measurement"
-        },
-        {
-            "key": "e_1_2_9_83_1",
-            "first-page": "45",
-            "volume-title": "Educational Resilience in Inner\u2010City America: Challenges and Prospects",
-            "author": "Wang M. C.",
-            "year": "1994"
-        },
-        {
-            "key": "e_1_2_9_84_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/09639284.2016.1191274"
-        },
-        {
-            "key": "e_1_2_9_85_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0021-9010.71.2.219"
-        },
-        {
-            "key": "e_1_2_9_86_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1017/S0959259810000420"
-        },
-        {
-            "key": "e_1_2_9_87_1",
-            "volume-title": "Mastering partial least squares structural equation modeling (PLS\u2010SEM) with SmartPLS in 38 Hours",
-            "author": "Wong K.K.K.",
-            "year": "2019"
-        },
-        {
-            "key": "e_1_2_9_88_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1440-172X.2012.02056.x"
-        },
-        {
-            "key": "e_1_2_9_89_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0149206307305562"
-        },
-        {
-            "key": "e_1_2_9_90_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1300/J147v22n03_03"
+            "DOI": "10.1057/9781137029317.0012"
         }
     ],
     "container-title": [
-        "Accounting Perspectives"
+        "Journal of Language Aggression and Conflict"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/1911-3838.12254",
-            "content-type": "application/pdf",
-            "content-version": "vor",
-            "intended-application": "text-mining"
-        },
-        {
-            "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1111/1911-3838.12254",
-            "content-type": "application/xml",
-            "content-version": "vor",
-            "intended-application": "text-mining"
-        },
-        {
-            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/1911-3838.12254",
+            "URL": "http://www.jbe-platform.com/deliver/fulltext/jlac.00002.ter.pdf",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -615,81 +474,79 @@
     "deposited": {
         "date-parts": [
             [
-                2023,
-                8,
-                30
+                2024,
+                7,
+                7
             ]
         ],
-        "date-time": "2023-08-30T08:48:53Z",
-        "timestamp": 1693385333000
+        "date-time": "2024-07-07T21:40:44Z",
+        "timestamp": 1720388444000
     },
-    "score": 16.271313,
+    "score": 10.226621,
     "resource": {
         "primary": {
-            "URL": "https://onlinelibrary.wiley.com/doi/10.1111/1911-3838.12254"
+            "URL": "http://www.jbe-platform.com/content/journals/10.1075/jlac.00002.ter"
         }
     },
+    "subtitle": [
+        "A sociopragmatic analysis"
+    ],
     "issued": {
         "date-parts": [
             [
-                2021,
-                5,
-                10
+                2018,
+                7,
+                2
             ]
         ]
     },
-    "references-count": 89,
+    "references-count": 50,
     "journal-issue": {
-        "issue": "2",
+        "issue": "1",
+        "published-online": {
+            "date-parts": [
+                [
+                    2018,
+                    7,
+                    2
+                ]
+            ]
+        },
         "published-print": {
             "date-parts": [
                 [
-                    2021,
-                    6
+                    2018,
+                    7,
+                    2
                 ]
             ]
         }
     },
-    "alternative-id": [
-        "10.1111/1911-3838.12254"
-    ],
-    "URL": "http://dx.doi.org/10.1111/1911-3838.12254",
+    "URL": "http://dx.doi.org/10.1075/jlac.00002.ter",
     "archive": [
         "Portico"
     ],
     "ISSN": [
-        "1911-382X",
-        "1911-3838"
+        "2213-1272",
+        "2213-1280"
     ],
     "issn-type": [
         {
-            "value": "1911-382X",
+            "value": "2213-1272",
             "type": "print"
         },
         {
-            "value": "1911-3838",
+            "value": "2213-1280",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2021,
-                5,
-                10
+                2018,
+                7,
+                2
             ]
         ]
-    },
-    "assertion": [
-        {
-            "value": "2021-05-10",
-            "order": 2,
-            "name": "published",
-            "label": "Published",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        }
-    ]
+    }
 }

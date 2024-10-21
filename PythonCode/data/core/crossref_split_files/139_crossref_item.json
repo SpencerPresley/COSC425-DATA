@@ -3,32 +3,32 @@
         "date-parts": [
             [
                 2024,
-                10,
-                5
+                6,
+                24
             ]
         ],
-        "date-time": "2024-10-05T04:24:37Z",
-        "timestamp": 1728102277432
+        "date-time": "2024-06-24T02:13:03Z",
+        "timestamp": 1719195183968
     },
-    "reference-count": 18,
+    "reference-count": 50,
     "publisher": "SAGE Publications",
-    "issue": "2",
+    "issue": "3",
     "license": [
         {
             "start": {
                 "date-parts": [
                     [
-                        2018,
-                        3,
-                        23
+                        2019,
+                        2,
+                        14
                     ]
                 ],
-                "date-time": "2018-03-23T00:00:00Z",
-                "timestamp": 1521763200000
+                "date-time": "2019-02-14T00:00:00Z",
+                "timestamp": 1550102400000
             },
             "content-version": "tdm",
             "delay-in-days": 0,
-            "URL": "https://journals.sagepub.com/page/policies/text-and-data-mining-license"
+            "URL": "http://journals.sagepub.com/page/policies/text-and-data-mining-license"
         }
     ],
     "content-domain": {
@@ -38,47 +38,67 @@
         "crossmark-restriction": true
     },
     "short-container-title": [
-        "Teaching of Psychology"
+        "Entrepreneurship Education and Pedagogy"
     ],
     "published-print": {
         "date-parts": [
             [
-                2018,
-                4
+                2019,
+                7
             ]
         ]
     },
-    "abstract": "<jats:p> Segments are a structured presentation style that is commonly used on late-night talk and variety television shows. Research has shown that shows that contain segments with both entertaining and informative content (e.g., The Daily Show) have increased students\u2019 political knowledge. This study investigated how the structure of segments could be adapted to present material in classroom lectures to promote recall of both learning events and course content. For the first two units in a three-unit child development course, students experienced segments along with traditional lecture activities. Although performance varied across measures, results indicated that segments are a useful teaching tool to promote retention of material and recall of learning events. The use of segments in other types of courses is discussed. </jats:p>",
-    "DOI": "10.1177/0098628318762927",
+    "abstract": "<jats:p> Research examining the similarities and differences between the types of problems that students enrolled in entrepreneurship courses encounter and the types of problems that successful entrepreneurs encounter when working on ventures is limited. Providing projects and activities that closely resemble real-world situations would likely increase the amount of knowledge and skills that students are able to transfer from school into the workforce. In this article, 7 successful professional entrepreneurs and 32 students enrolled in entrepreneurial classes were interviewed and asked to describe the problems that they encountered when working on projects. Fifteen different types of problems were classified based on the interviews. Entrepreneurs did not encounter three types of problems that students struggled with. Students encountered all but three of the same types of problems as entrepreneurs; but within these types of problems, there were some qualitative differences between the two groups. Implications and suggestions for improving courses and activities in entrepreneurship education are discussed. </jats:p>",
+    "DOI": "10.1177/2515127419829396",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2018,
-                3,
-                23
+                2019,
+                2,
+                15
             ]
         ],
-        "date-time": "2018-03-23T07:17:15Z",
-        "timestamp": 1521789435000
+        "date-time": "2019-02-15T01:16:08Z",
+        "timestamp": 1550193368000
     },
-    "page": "183-188",
+    "page": "214-244",
     "update-policy": "http://dx.doi.org/10.1177/sage-journals-update-policy",
     "source": "Crossref",
-    "is-referenced-by-count": 0,
+    "is-referenced-by-count": 7,
     "title": [
-        "Repeating Something Familiar"
+        "A Comparison of the Types of Problems Encountered by Entrepreneurial Students and Successful Professional Entrepreneurs"
     ],
     "prefix": "10.1177",
-    "volume": "45",
+    "volume": "2",
     "author": [
         {
-            "given": "Rhyannon H.",
-            "family": "Bemis",
+            "given": "Philip M.",
+            "family": "Reeves",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Department of Psychology, Salisbury University, Salisbury, MD, USA"
+                    "name": "Poorvu Center for Teaching and Learning, Yale University, New Haven, CT, USA"
+                }
+            ]
+        },
+        {
+            "given": "Sarah E.",
+            "family": "Zappe",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Leonhard Center for the Enhancement of Engineering Education, College of Engineering, The Pennsylvania State University, University Park, PA, USA"
+                }
+            ]
+        },
+        {
+            "given": "D. Jake",
+            "family": "Follmer",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Doctoral Studies in Literacy, Salisbury University, Salisbury, MD, USA"
                 }
             ]
         }
@@ -87,124 +107,346 @@
     "published-online": {
         "date-parts": [
             [
-                2018,
-                3,
-                23
+                2019,
+                2,
+                14
             ]
         ]
     },
     "reference": [
         {
-            "key": "bibr1-0098628318762927",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0093650209346805"
+            "key": "bibr1-2515127419829396",
+            "volume-title": "Pivot: How top entrepreneurs adapt and change course to find ultimate success",
+            "author": "Arteaga R.",
+            "year": "2014"
         },
         {
-            "key": "bibr2-0098628318762927",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.4159/9780674419377"
+            "key": "bibr2-2515127419829396",
+            "first-page": "29",
+            "volume": "9",
+            "author": "Arvanites D. A.",
+            "year": "2006",
+            "journal-title": "Journal of Entrepreneurship Education"
         },
         {
-            "key": "bibr3-0098628318762927",
+            "key": "bibr5-2515127419829396",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/acp.2350060603"
+            "DOI": "10.1111/etap.12095"
         },
         {
-            "key": "bibr4-0098628318762927",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0096-3445.126.4.393"
+            "key": "bibr7-2515127419829396",
+            "volume-title": "Problem-based learning: An approach to medical education",
+            "author": "Barrows H. S.",
+            "year": "1980"
         },
         {
-            "key": "bibr5-0098628318762927",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/15205436.2012.735742"
+            "issue": "3",
+            "key": "bibr9-2515127419829396",
+            "first-page": "190",
+            "volume": "14",
+            "author": "Boticki I.",
+            "year": "2011",
+            "journal-title": "Journal of Educational Technology & Society"
         },
         {
-            "key": "bibr6-0098628318762927",
+            "key": "bibr13-2515127419829396",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/acp.729"
+            "DOI": "10.1002/tl.334"
         },
         {
-            "key": "bibr7-0098628318762927",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0959-4752(01)00038-X"
+            "key": "bibr14-2515127419829396",
+            "volume-title": "A practical guide to research methods",
+            "author": "Charmaz K.",
+            "year": "2008",
+            "edition": "2"
         },
         {
-            "key": "bibr8-0098628318762927",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/acp.947"
+            "key": "bibr15-2515127419829396",
+            "volume-title": "Impact of entrepreneurship education",
+            "author": "Charney A.",
+            "year": "2000"
         },
         {
-            "key": "bibr9-0098628318762927",
+            "key": "bibr16-2515127419829396",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0033-2909.114.1.3"
+            "DOI": "10.1108/00483480710726136"
         },
         {
-            "key": "bibr10-0098628318762927",
+            "key": "bibr19-2515127419829396",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/13504620600688906"
+            "DOI": "10.1016/0883-9026(90)90004-D"
         },
         {
-            "key": "bibr11-0098628318762927",
+            "key": "bibr21-2515127419829396",
             "doi-asserted-by": "publisher",
-            "DOI": "10.3102/00028312019004623"
+            "DOI": "10.1177/026624268900700201"
         },
         {
-            "key": "bibr12-0098628318762927",
+            "key": "bibr22-2515127419829396",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1207/s15326985ep2802_5"
+            "DOI": "10.1080/00220973.2013.835299"
         },
         {
-            "key": "bibr13-0098628318762927",
+            "key": "bibr23-2515127419829396",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1207/S1532690XCI1801_04"
+            "DOI": "10.1080/10528008.2007.11489003"
         },
         {
-            "key": "bibr14-0098628318762927",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3102/00028312032001185"
+            "key": "bibr24-2515127419829396",
+            "first-page": "60",
+            "volume": "17",
+            "author": "Dobratz C. L.",
+            "year": "2014",
+            "journal-title": "Journal of Entrepreneurship Education"
         },
         {
-            "key": "bibr15-0098628318762927",
+            "key": "bibr25-2515127419829396",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/87567555.2014.972318"
+            "DOI": "10.1146/annurev.psych.47.1.273"
         },
         {
-            "volume-title": "Elements of episodic memory",
-            "year": "1983",
-            "author": "Tulving E.",
-            "key": "bibr16-0098628318762927"
+            "key": "bibr26-2515127419829396",
+            "first-page": "1",
+            "volume-title": "Toward a general theory of expertise: Prospects and limits",
+            "author": "Ericsson K. A.",
+            "year": "1991"
         },
         {
-            "key": "bibr17-0098628318762927",
+            "key": "bibr27-2515127419829396",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1207/S15328023TOP2702_02"
+            "DOI": "10.1016/0883-9026(89)90019-0"
         },
         {
-            "key": "bibr18-0098628318762927",
+            "key": "bibr28-2515127419829396",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00220973.1988.10806492"
+            "DOI": "10.1080/0260293990240401"
+        },
+        {
+            "issue": "1",
+            "key": "bibr29-2515127419829396",
+            "first-page": "14",
+            "volume": "10",
+            "author": "Grable J. E.",
+            "year": "1999",
+            "journal-title": "Journal of Financial Counseling and Planning"
+        },
+        {
+            "key": "bibr30-2515127419829396",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1540-6520.2009.00296.x"
+        },
+        {
+            "key": "bibr31-2515127419829396",
+            "volume-title": "Handbook of inter-rater reliability: The definitive guide to measuring the extent of agreement among raters",
+            "author": "Gwet K. L.",
+            "year": "2014",
+            "edition": "4"
+        },
+        {
+            "key": "bibr32-2515127419829396",
+            "first-page": "124",
+            "volume": "33",
+            "author": "Heriot K.",
+            "year": "2009",
+            "journal-title": "Small Business Institute National Proceedings"
+        },
+        {
+            "key": "bibr36-2515127419829396",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0266242699181004"
+        },
+        {
+            "key": "bibr37-2515127419829396",
+            "first-page": "485",
+            "volume": "3",
+            "author": "Hung W.",
+            "year": "2008",
+            "journal-title": "Handbook of research on educational communications and technology"
+        },
+        {
+            "key": "bibr38-2515127419829396",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.7771/1541-5015.1080"
+        },
+        {
+            "key": "bibr39-2515127419829396",
+            "first-page": "209",
+            "volume-title": "The psychology of entrepreneurship",
+            "author": "Katz J. A.",
+            "year": "2006"
+        },
+        {
+            "key": "bibr40-2515127419829396",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/256548"
+        },
+        {
+            "key": "bibr41-2515127419829396",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3102/00346543060002265"
+        },
+        {
+            "key": "bibr42-2515127419829396",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s10551-005-0276-3"
+        },
+        {
+            "key": "bibr43-2515127419829396",
+            "first-page": "1",
+            "volume": "15",
+            "author": "Leung K. Y.",
+            "year": "2012",
+            "journal-title": "Journal of Entrepreneurship Education"
+        },
+        {
+            "key": "bibr44-2515127419829396",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/0021-9010.79.3.381"
+        },
+        {
+            "issue": "2",
+            "key": "bibr45-2515127419829396",
+            "first-page": "39",
+            "volume": "21",
+            "author": "Miller B. K.",
+            "year": "2009",
+            "journal-title": "Journal of Business and Entrepreneurship"
+        },
+        {
+            "issue": "1",
+            "key": "bibr46-2515127419829396",
+            "first-page": "41",
+            "volume": "16",
+            "author": "Misra R.",
+            "year": "2000",
+            "journal-title": "American Journal of Health Studies"
+        },
+        {
+            "key": "bibr47-2515127419829396",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/2515127417737286"
+        },
+        {
+            "key": "bibr49-2515127419829396",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.7814/jeen5v4p4pld"
+        },
+        {
+            "key": "bibr50-2515127419829396",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0266242607080656"
+        },
+        {
+            "issue": "5",
+            "key": "bibr52-2515127419829396",
+            "first-page": "31",
+            "volume": "35",
+            "author": "Savery J. R.",
+            "year": "1995",
+            "journal-title": "Educational Technology"
+        },
+        {
+            "key": "bibr54-2515127419829396",
+            "volume-title": "Conceptualizing and proposing qualitative research",
+            "author": "Schram T. E.",
+            "year": "2006"
+        },
+        {
+            "key": "bibr55-2515127419829396",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1108/14626000710746637"
+        },
+        {
+            "issue": "1",
+            "key": "bibr56-2515127419829396",
+            "first-page": "1",
+            "volume": "1",
+            "author": "Solomon G. T.",
+            "year": "2002",
+            "journal-title": "International Journal of Entrepreneurship Education"
+        },
+        {
+            "key": "bibr57-2515127419829396",
+            "volume-title": "Basics of qualitative research: Grounded theory procedures and techniques",
+            "author": "Strauss A.",
+            "year": "1990"
+        },
+        {
+            "key": "bibr58-2515127419829396",
+            "volume-title": "Basis of qualitative research: Techniques and procedures for developing grounded theory",
+            "author": "Strauss A.",
+            "year": "1998"
+        },
+        {
+            "key": "bibr59-2515127419829396",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1108/00400910610692606"
+        },
+        {
+            "key": "bibr60-2515127419829396",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/104225879301700301"
+        },
+        {
+            "key": "bibr62-2515127419829396",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3102/00346543064001037"
+        },
+        {
+            "key": "bibr64-2515127419829396",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1540-627X.2010.00315.x"
+        },
+        {
+            "key": "bibr65-2515127419829396",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jebo.2010.02.015"
+        },
+        {
+            "key": "bibr66-2515127419829396",
+            "first-page": "15",
+            "volume": "16",
+            "author": "Winkel D.",
+            "year": "2013",
+            "journal-title": "Journal of Entrepreneurship Education"
+        },
+        {
+            "key": "bibr67-2515127419829396",
+            "first-page": "43",
+            "volume": "11",
+            "author": "Wu S.",
+            "year": "2008",
+            "journal-title": "Journal of Entrepreneurship Education"
+        },
+        {
+            "issue": "1",
+            "key": "bibr68-2515127419829396",
+            "first-page": "1",
+            "volume": "7",
+            "author": "Wu C.",
+            "year": "2002",
+            "journal-title": "Journal of Developmental Entrepreneurship"
         }
     ],
     "container-title": [
-        "Teaching of Psychology"
+        "Entrepreneurship Education and Pedagogy"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://journals.sagepub.com/doi/pdf/10.1177/0098628318762927",
+            "URL": "http://journals.sagepub.com/doi/pdf/10.1177/2515127419829396",
             "content-type": "application/pdf",
             "content-version": "vor",
             "intended-application": "text-mining"
         },
         {
-            "URL": "https://journals.sagepub.com/doi/full-xml/10.1177/0098628318762927",
+            "URL": "http://journals.sagepub.com/doi/full-xml/10.1177/2515127419829396",
             "content-type": "application/xml",
             "content-version": "vor",
             "intended-application": "text-mining"
         },
         {
-            "URL": "https://journals.sagepub.com/doi/pdf/10.1177/0098628318762927",
+            "URL": "http://journals.sagepub.com/doi/pdf/10.1177/2515127419829396",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -213,68 +455,74 @@
     "deposited": {
         "date-parts": [
             [
-                2024,
+                2019,
                 10,
-                4
+                1
             ]
         ],
-        "date-time": "2024-10-04T22:09:33Z",
-        "timestamp": 1728079773000
+        "date-time": "2019-10-01T00:52:54Z",
+        "timestamp": 1569891174000
     },
-    "score": 15.825668,
+    "score": 13.291319,
     "resource": {
         "primary": {
-            "URL": "https://journals.sagepub.com/doi/10.1177/0098628318762927"
+            "URL": "http://journals.sagepub.com/doi/10.1177/2515127419829396"
         }
     },
-    "subtitle": [
-        "Using Reoccurring, Television-Inspired Segments to Promote Students\u2019 Recall of Learning Events and Course Content"
-    ],
     "issued": {
         "date-parts": [
             [
-                2018,
-                3,
-                23
+                2019,
+                2,
+                14
             ]
         ]
     },
-    "references-count": 18,
+    "references-count": 50,
     "journal-issue": {
-        "issue": "2",
+        "issue": "3",
+        "published-online": {
+            "date-parts": [
+                [
+                    2019,
+                    2,
+                    14
+                ]
+            ]
+        },
         "published-print": {
             "date-parts": [
                 [
-                    2018,
-                    4
+                    2019,
+                    7
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1177/0098628318762927"
+        "10.1177/2515127419829396"
     ],
-    "URL": "http://dx.doi.org/10.1177/0098628318762927",
+    "URL": "http://dx.doi.org/10.1177/2515127419829396",
     "ISSN": [
-        "0098-6283",
-        "1532-8023"
+        "2515-1274",
+        "2515-1274"
     ],
     "issn-type": [
         {
-            "type": "print",
-            "value": "0098-6283"
+            "value": "2515-1274",
+            "type": "print"
         },
         {
-            "type": "electronic",
-            "value": "1532-8023"
+            "value": "2515-1274",
+            "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2018,
-                3,
-                23
+                2019,
+                2,
+                14
             ]
         ]
     }

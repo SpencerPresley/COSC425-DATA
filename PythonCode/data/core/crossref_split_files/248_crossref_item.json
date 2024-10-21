@@ -2,118 +2,104 @@
     "indexed": {
         "date-parts": [
             [
-                2023,
-                11,
-                30
+                2022,
+                4,
+                2
             ]
         ],
-        "date-time": "2023-11-30T00:52:11Z",
-        "timestamp": 1701305531948
+        "date-time": "2022-04-02T07:34:01Z",
+        "timestamp": 1648884841575
     },
     "reference-count": 0,
-    "publisher": "SAGE Publications",
-    "issue": "4",
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "2",
     "license": [
         {
             "start": {
                 "date-parts": [
                     [
-                        2023,
-                        11,
-                        29
+                        2021,
+                        9,
+                        1
                     ]
                 ],
-                "date-time": "2023-11-29T00:00:00Z",
-                "timestamp": 1701216000000
+                "date-time": "2021-09-01T00:00:00Z",
+                "timestamp": 1630454400000
             },
-            "content-version": "tdm",
+            "content-version": "vor",
             "delay-in-days": 0,
-            "URL": "http://journals.sagepub.com/page/policies/text-and-data-mining-license"
+            "URL": "https://academic.oup.com/journals/pages/open_access/funder_policies/chorus/standard_publication_model"
         }
     ],
     "content-domain": {
-        "domain": [
-            "journals.sagepub.com"
-        ],
-        "crossmark-restriction": true
+        "domain": [],
+        "crossmark-restriction": false
     },
-    "short-container-title": [
-        "Theological Studies"
-    ],
     "published-print": {
         "date-parts": [
             [
-                2023,
-                12
+                2021,
+                9,
+                1
             ]
         ]
     },
-    "abstract": "<jats:p> Divine providence, as traditionally conceived, keeps historical time subordinate to God\u2019s sovereignty so that the divine plan for it is fulfilled. This article argues that the starting point for theologizing about providence ought to be the logic of radical generosity in play when the divine Thou creates historical time as a reality unto itself by giving it an unprecedented future. Providence does not protect the historically conditioned universe from this future; it draws the universe into it. The human experience of grace offers us a paradigmatic example of this. </jats:p>",
-    "DOI": "10.1177/00405639231204940",
+    "DOI": "10.1093/jahist/jaab210",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2023,
-                11,
-                29
+                2021,
+                6,
+                22
             ]
         ],
-        "date-time": "2023-11-29T08:54:17Z",
-        "timestamp": 1701248057000
+        "date-time": "2021-06-22T19:12:54Z",
+        "timestamp": 1624389174000
     },
-    "page": "657-678",
-    "update-policy": "http://dx.doi.org/10.1177/sage-journals-update-policy",
+    "page": "419-420",
     "source": "Crossref",
     "is-referenced-by-count": 0,
     "title": [
-        "On the Way to Divine Providence: From the Abyss of Time to the Throe of Eternity"
+        "The Campaign to Impeach Justice William O. Douglas: Nixon, Vietnam, and the Conservative Attack on Judicial Independence"
     ],
-    "prefix": "10.1177",
-    "volume": "84",
+    "prefix": "10.1093",
+    "volume": "108",
     "author": [
         {
-            "ORCID": "http://orcid.org/0000-0001-7311-7734",
-            "authenticated-orcid": false,
-            "given": "Jerome A.",
-            "family": "Miller",
+            "given": "Dean J",
+            "family": "Kotlowski",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Salisbury University, USA"
+                    "name": "Salisbury University, Salisbury, Maryland"
                 }
             ]
         }
     ],
-    "member": "179",
+    "member": "286",
     "published-online": {
         "date-parts": [
             [
-                2023,
-                11,
-                29
+                2021,
+                9,
+                1
             ]
         ]
     },
     "container-title": [
-        "Theological Studies"
+        "Journal of American History"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "http://journals.sagepub.com/doi/pdf/10.1177/00405639231204940",
+            "URL": "http://academic.oup.com/jah/article-pdf/108/2/419/40363434/jaab210.pdf",
             "content-type": "application/pdf",
             "content-version": "vor",
-            "intended-application": "text-mining"
+            "intended-application": "syndication"
         },
         {
-            "URL": "http://journals.sagepub.com/doi/full-xml/10.1177/00405639231204940",
-            "content-type": "application/xml",
-            "content-version": "vor",
-            "intended-application": "text-mining"
-        },
-        {
-            "URL": "http://journals.sagepub.com/doi/pdf/10.1177/00405639231204940",
+            "URL": "http://academic.oup.com/jah/article-pdf/108/2/419/40363434/jaab210.pdf",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -122,65 +108,80 @@
     "deposited": {
         "date-parts": [
             [
-                2023,
-                11,
-                29
+                2021,
+                9,
+                14
             ]
         ],
-        "date-time": "2023-11-29T08:54:56Z",
-        "timestamp": 1701248096000
+        "date-time": "2021-09-14T10:22:03Z",
+        "timestamp": 1631614923000
     },
-    "score": 14.466338,
+    "score": 16.177132,
     "resource": {
         "primary": {
-            "URL": "http://journals.sagepub.com/doi/10.1177/00405639231204940"
+            "URL": "https://academic.oup.com/jah/article/108/2/419/6367841"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2023,
-                11,
-                29
+                2021,
+                9,
+                1
             ]
         ]
     },
     "references-count": 0,
     "journal-issue": {
-        "issue": "4",
+        "issue": "2",
+        "published-online": {
+            "date-parts": [
+                [
+                    2021,
+                    9,
+                    1
+                ]
+            ]
+        },
         "published-print": {
             "date-parts": [
                 [
-                    2023,
-                    12
+                    2021,
+                    9,
+                    1
                 ]
             ]
         }
     },
-    "alternative-id": [
-        "10.1177/00405639231204940"
-    ],
-    "URL": "http://dx.doi.org/10.1177/00405639231204940",
+    "URL": "http://dx.doi.org/10.1093/jahist/jaab210",
     "ISSN": [
-        "0040-5639",
-        "2169-1304"
+        "0021-8723",
+        "1945-2314"
     ],
     "issn-type": [
         {
-            "value": "0040-5639",
+            "value": "0021-8723",
             "type": "print"
         },
         {
-            "value": "2169-1304",
+            "value": "1945-2314",
             "type": "electronic"
         }
     ],
+    "published-other": {
+        "date-parts": [
+            [
+                2021,
+                9
+            ]
+        ]
+    },
     "published": {
         "date-parts": [
             [
-                2023,
-                11,
-                29
+                2021,
+                9,
+                1
             ]
         ]
     }

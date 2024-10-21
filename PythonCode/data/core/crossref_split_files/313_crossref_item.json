@@ -3,632 +3,912 @@
         "date-parts": [
             [
                 2024,
-                7,
-                16
+                9,
+                11
             ]
         ],
-        "date-time": "2024-07-16T23:40:04Z",
-        "timestamp": 1721173204446
+        "date-time": "2024-09-11T11:09:42Z",
+        "timestamp": 1726052982509
     },
-    "reference-count": 74,
-    "publisher": "Informa UK Limited",
-    "issue": "3",
-    "content-domain": {
-        "domain": [
-            "www.tandfonline.com"
-        ],
-        "crossmark-restriction": true
-    },
-    "short-container-title": [
-        "Action in Teacher Education"
-    ],
-    "published-print": {
-        "date-parts": [
-            [
-                2019,
-                7,
-                3
-            ]
-        ]
-    },
-    "DOI": "10.1080/01626620.2019.1600598",
-    "type": "journal-article",
-    "created": {
-        "date-parts": [
-            [
-                2019,
-                4,
-                16
-            ]
-        ],
-        "date-time": "2019-04-16T18:46:35Z",
-        "timestamp": 1555440395000
-    },
-    "page": "265-283",
-    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
-    "source": "Crossref",
-    "is-referenced-by-count": 3,
-    "title": [
-        "\u201cWhere to Take Risks and Where to Lay Low\u201d: Tensions between Preservice Teacher Learning and Program Ideological Coherence"
-    ],
-    "prefix": "10.1080",
-    "volume": "41",
-    "author": [
+    "reference-count": 76,
+    "publisher": "MDPI AG",
+    "issue": "7",
+    "license": [
         {
-            "given": "Thea",
-            "family": "Williamson",
-            "sequence": "first",
-            "affiliation": [
-                {
-                    "name": "Salisbury University"
-                }
-            ]
-        },
+            "start": {
+                "date-parts": [
+                    [
+                        2021,
+                        4,
+                        2
+                    ]
+                ],
+                "date-time": "2021-04-02T00:00:00Z",
+                "timestamp": 1617321600000
+            },
+            "content-version": "vor",
+            "delay-in-days": 0,
+            "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+    ],
+    "funder": [
         {
-            "given": "Amber",
-            "family": "Warrington",
-            "sequence": "additional",
-            "affiliation": [
+            "DOI": "10.13039/100010064",
+            "name": "Salisbury University",
+            "doi-asserted-by": "publisher",
+            "award": [
+                "Minigrant 2018 - Salisbury University - Department of Mathematics and Computer Science"
+            ],
+            "id": [
                 {
-                    "name": "Boise State University"
+                    "id": "10.13039/100010064",
+                    "id-type": "DOI",
+                    "asserted-by": "publisher"
                 }
             ]
         }
     ],
-    "member": "301",
+    "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+    },
+    "short-container-title": [
+        "Remote Sensing"
+    ],
+    "abstract": "<jats:p>Tidal processes regulating sediment accretion rates and vegetated platform erosion in tidal systems strongly affect salt marsh evolution. A balance between erosion and deposition in a restored salt marsh is crucial for analyzing restoration strategies to be adopted within a natural context. Marsh morphology is also coupled with tidal mudflats and channel networks and this makes micro-tidal systems crucial for a detailed assessment of restoration interventions. Here, we present a methodological approach for monitoring channel morphodynamics and vegetation variations over a time frame of six years in a low tidal energy salt marsh of the Paul S. Sarbanes Ecosystem Restoration Project at Poplar Island (Maryland, USA). The project is a restoration site where sediment dredged from the shipping channels in the upper Chesapeake Bay is used to restore a tidal marsh habitat in mid-Chesapeake Bay. Aerial surveys with an Unmanned Aerial Vehicle (UAV) have been performed for the high-resolution mapping of a small tidal system. Flight missions were planned to obtain a Ground Sample Distance (GSD) of 2 cm. Structure-from-Motion (SfM) and Multi-View-Stereo (MVS) algorithms have been used to reconstruct the 3D geometry of the site. The mapping of channel morphology and an elevation assessment on the mudflat were performed using orthomosaics, Digital Terrain Models (DTMs) and GNSS survey. The results highlight that the workflow adopted in this pilot work is suitable to assess the geomorphological evolution over time in a micro-tidal system. However, issues were encountered for salt marsh due to the presence of dense vegetation. The UAV-based photogrammetry approach with GNSS RTK ground surveys can hence be replicated in similar sites all over the world to evaluate restoration interventions and to develop new strategies for a better management of existing shorelines.</jats:p>",
+    "DOI": "10.3390/rs13071364",
+    "type": "journal-article",
+    "created": {
+        "date-parts": [
+            [
+                2021,
+                4,
+                2
+            ]
+        ],
+        "date-time": "2021-04-02T08:13:51Z",
+        "timestamp": 1617351231000
+    },
+    "page": "1364",
+    "source": "Crossref",
+    "is-referenced-by-count": 22,
+    "title": [
+        "High-Resolution Monitoring of Tidal Systems Using UAV: A Case Study on Poplar Island, MD (USA)"
+    ],
+    "prefix": "10.3390",
+    "volume": "13",
+    "author": [
+        {
+            "ORCID": "http://orcid.org/0000-0002-7301-5508",
+            "authenticated-orcid": false,
+            "given": "Yuri",
+            "family": "Taddia",
+            "sequence": "first",
+            "affiliation": [
+                {
+                    "name": "Engineering Department, University of Ferrara, Via Saragat 1, 44122 Ferrara, Italy"
+                },
+                {
+                    "name": "Horn Point Laboratory, University of Maryland Center for Environmental Science, 2020 Horns Point Road, Cambridge, MA 21613, USA"
+                }
+            ]
+        },
+        {
+            "ORCID": "http://orcid.org/0000-0002-8977-3864",
+            "authenticated-orcid": false,
+            "given": "Alberto",
+            "family": "Pellegrinelli",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Engineering Department, University of Ferrara, Via Saragat 1, 44122 Ferrara, Italy"
+                }
+            ]
+        },
+        {
+            "given": "Corinne",
+            "family": "Corbau",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Horn Point Laboratory, University of Maryland Center for Environmental Science, 2020 Horns Point Road, Cambridge, MA 21613, USA"
+                }
+            ]
+        },
+        {
+            "given": "Giulia",
+            "family": "Franchi",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Mathematics and Computer Science, Salisbury University, 1101 Camden Avenue, Salisbury, MD 21801, USA"
+                }
+            ]
+        },
+        {
+            "given": "Lorie W.",
+            "family": "Staver",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Horn Point Laboratory, University of Maryland Center for Environmental Science, 2020 Horns Point Road, Cambridge, MA 21613, USA"
+                }
+            ]
+        },
+        {
+            "given": "John Court",
+            "family": "Stevenson",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Horn Point Laboratory, University of Maryland Center for Environmental Science, 2020 Horns Point Road, Cambridge, MA 21613, USA"
+                }
+            ]
+        },
+        {
+            "ORCID": "http://orcid.org/0000-0002-5490-879X",
+            "authenticated-orcid": false,
+            "given": "William",
+            "family": "Nardin",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Horn Point Laboratory, University of Maryland Center for Environmental Science, 2020 Horns Point Road, Cambridge, MA 21613, USA"
+                }
+            ]
+        }
+    ],
+    "member": "1968",
     "published-online": {
         "date-parts": [
             [
-                2019,
+                2021,
                 4,
-                16
+                2
             ]
         ]
     },
     "reference": [
         {
-            "issue": "1",
-            "key": "e_1_3_2_2_1",
+            "key": "ref_1",
             "doi-asserted-by": "crossref",
-            "first-page": "85",
-            "DOI": "10.58680/rte19983913",
-            "article-title": "Negotiating different conceptions about reading and teaching literature in a preservice literature class",
-            "volume": "33",
-            "author": "Agee J.",
-            "year": "1998",
-            "unstructured": "Agee, J. (1998). Negotiating different conceptions about reading and teaching literature in a preservice literature class. Research in the Teaching of English, 33(1), 85.",
-            "journal-title": "Research in the Teaching of English"
+            "first-page": "251",
+            "DOI": "10.1016/j.ocecoaman.2018.11.014",
+            "article-title": "Effect of coastal land use change on coastline dynamics along the Nigerian Transgressive Mahin mud coast",
+            "volume": "168",
+            "author": "Dada",
+            "year": "2019",
+            "journal-title": "Ocean Coast. Manag."
         },
         {
-            "key": "e_1_3_2_3_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1467-9620.2004.00357.x"
+            "key": "ref_2",
+            "doi-asserted-by": "crossref",
+            "first-page": "56",
+            "DOI": "10.1016/j.ocecoaman.2019.01.007",
+            "article-title": "Analysis of coastline change in relation to meteorological conditions and human activities in Ca mau cape, Viet Nam",
+            "volume": "171",
+            "author": "Thoai",
+            "year": "2019",
+            "journal-title": "Ocean Coast. Manag."
         },
         {
-            "key": "e_1_3_2_4_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0042085909354445"
+            "key": "ref_3",
+            "doi-asserted-by": "crossref",
+            "first-page": "10184",
+            "DOI": "10.3390/rs70810184",
+            "article-title": "Multiple Stable States and Catastrophic Shifts in Coastal Wetlands: Progress, Challenges, and Opportunities in Validating Theory Using Remote Sensing and Other Methods",
+            "volume": "7",
+            "author": "Moffett",
+            "year": "2015",
+            "journal-title": "Remote Sens."
         },
         {
-            "key": "e_1_3_2_5_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/03626784.1981.11075236"
+            "key": "ref_4",
+            "doi-asserted-by": "crossref",
+            "first-page": "1",
+            "DOI": "10.1016/j.coastaleng.2016.03.009",
+            "article-title": "Determining shoreline response to sea level rise",
+            "volume": "114",
+            "author": "Dean",
+            "year": "2016",
+            "journal-title": "Coast. Eng."
         },
         {
-            "key": "e_1_3_2_6_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.tate.2006.03.008"
+            "key": "ref_5",
+            "doi-asserted-by": "crossref",
+            "first-page": "356",
+            "DOI": "10.1016/j.earscirev.2015.11.007",
+            "article-title": "Coastal lagoons and rising sea level: A review",
+            "volume": "154",
+            "author": "Carrasco",
+            "year": "2016",
+            "journal-title": "Earth Sci. Rev."
         },
         {
-            "key": "e_1_3_2_7_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/016146811211400703"
+            "key": "ref_6",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Alizad, K., Hagen, S.C., Medeiros, S.C., Bilskie, M.V., Morris, J.T., Balthis, L., and Buckel, C.A. (2016). Dynamic responses and implications to coastal wetlands and the surrounding regions under sea level rise. PLoS ONE, 13.",
+            "DOI": "10.1371/journal.pone.0205176"
         },
         {
-            "key": "e_1_3_2_8_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1598/JAAL.49.6.4"
+            "key": "ref_7",
+            "doi-asserted-by": "crossref",
+            "first-page": "236",
+            "DOI": "10.1016/j.advwatres.2016.01.001",
+            "article-title": "Influence of vegetation on spatial patterns of sediment deposition in deltaic islands during flood",
+            "volume": "93",
+            "author": "Nardin",
+            "year": "2016",
+            "journal-title": "Adv. Water Resour."
         },
         {
-            "key": "e_1_3_2_9_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0042085912452155"
+            "key": "ref_8",
+            "doi-asserted-by": "crossref",
+            "first-page": "98",
+            "DOI": "10.1016/j.ecss.2018.06.009",
+            "article-title": "Tradeoffs among hydrodynamics, sediment fluxes and vegetation community in the Virginia Coast Reserve, USA",
+            "volume": "210",
+            "author": "Nardin",
+            "year": "2018",
+            "journal-title": "Estuar. Coast. Shelf Sci."
         },
         {
-            "key": "e_1_3_2_10_1",
+            "key": "ref_9",
+            "doi-asserted-by": "crossref",
+            "first-page": "92",
+            "DOI": "10.1016/j.geomorph.2017.11.001",
+            "article-title": "Dynamic interactions between coastal storms and salt marshes: A review",
+            "volume": "301",
+            "author": "Leonardi",
+            "year": "2018",
+            "journal-title": "Geomorphology"
+        },
+        {
+            "key": "ref_10",
+            "doi-asserted-by": "crossref",
+            "first-page": "159",
+            "DOI": "10.1002/2015EF000332",
+            "article-title": "Tidal hydrodynamics under future sea level rise and coastal morphology in the Northern Gulf of Mexico",
+            "volume": "4",
+            "author": "Passeri",
+            "year": "2016",
+            "journal-title": "Earth\u2019s Future"
+        },
+        {
+            "key": "ref_11",
+            "doi-asserted-by": "crossref",
+            "first-page": "483",
+            "DOI": "10.1002/2016EF000385",
+            "article-title": "Coastal wetland response to sea-level rise in a fluvial estuarine system",
+            "volume": "4",
+            "author": "Alizad",
+            "year": "2016",
+            "journal-title": "Earth\u2019s Future"
+        },
+        {
+            "key": "ref_12",
+            "doi-asserted-by": "crossref",
+            "first-page": "1599",
+            "DOI": "10.1007/s11069-014-1386-y",
+            "article-title": "On the significance of incorporating shoreline changes for evaluating coastal hydrodynamics under sea level rise scenarios",
+            "volume": "75",
+            "author": "Passeri",
+            "year": "2015",
+            "journal-title": "Nat. Hazards"
+        },
+        {
+            "key": "ref_13",
+            "doi-asserted-by": "crossref",
+            "first-page": "125",
+            "DOI": "10.1016/j.ecss.2017.12.016",
+            "article-title": "The effect of vegetation height and biomass on the sediment budget of a European saltmarsh",
+            "volume": "202",
+            "author": "Reef",
+            "year": "2018",
+            "journal-title": "Estuar. Coast. Shelf Sci."
+        },
+        {
+            "key": "ref_14",
+            "doi-asserted-by": "crossref",
+            "first-page": "3377",
+            "DOI": "10.1111/j.1365-2486.2012.02792.x",
+            "article-title": "Vegetation\u2019s importance in regulating surface elevation in a coastal salt marsh facing elevated rates of sea level rise",
+            "volume": "18",
+            "author": "Baustian",
+            "year": "2012",
+            "journal-title": "Glob. Chang. Biol."
+        },
+        {
+            "key": "ref_15",
+            "doi-asserted-by": "crossref",
+            "first-page": "1",
+            "DOI": "10.1016/0304-3770(88)90085-X",
+            "article-title": "Tidal salt marsh restoration",
+            "volume": "32",
+            "author": "Broome",
+            "year": "1988",
+            "journal-title": "Aquat. Bot."
+        },
+        {
+            "key": "ref_16",
+            "doi-asserted-by": "crossref",
+            "first-page": "263",
+            "DOI": "10.1016/j.biocon.2016.10.015",
+            "article-title": "Assessing tidal marsh resilience to sea-level rise at broad geographic scales with multi-metric indices",
+            "volume": "204",
+            "author": "Raposa",
+            "year": "2016",
+            "journal-title": "Biol. Conserv."
+        },
+        {
+            "key": "ref_17",
+            "doi-asserted-by": "crossref",
+            "first-page": "152",
+            "DOI": "10.1016/j.envsoft.2018.08.004",
+            "article-title": "Do salt marshes survive sea level rise? Modelling wave action, morphodynamics and vegetation dynamics",
+            "volume": "109",
+            "author": "Best",
+            "year": "2018",
+            "journal-title": "Environ. Model. Softw."
+        },
+        {
+            "key": "ref_18",
+            "doi-asserted-by": "crossref",
+            "first-page": "2869",
+            "DOI": "10.1890/0012-9658(2002)083[2869:ROCWTR]2.0.CO;2",
+            "article-title": "Responses of coastal wetlands to rising sea level",
+            "volume": "83",
+            "author": "Morris",
+            "year": "2002",
+            "journal-title": "Ecology"
+        },
+        {
+            "key": "ref_19",
+            "doi-asserted-by": "crossref",
+            "first-page": "169",
+            "DOI": "10.1890/10-1510.1",
+            "article-title": "The value of estuarine and coastal ecosystem services",
+            "volume": "81",
+            "author": "Barbier",
+            "year": "2011",
+            "journal-title": "Ecol. Monogr."
+        },
+        {
+            "key": "ref_20",
+            "doi-asserted-by": "crossref",
+            "first-page": "95",
+            "DOI": "10.1016/j.margeo.2019.03.008",
+            "article-title": "Coupling between tidal mudflats and salt marshes affects marsh morphology",
+            "volume": "412",
+            "author": "Schuerch",
+            "year": "2019",
+            "journal-title": "Mar. Geol."
+        },
+        {
+            "key": "ref_21",
+            "doi-asserted-by": "crossref",
+            "first-page": "141493",
+            "DOI": "10.1016/j.scitotenv.2020.141493",
+            "article-title": "Efficient tidal channel networks alleviate the drought-induced die-off of salt marshes: Implications for coastal restoration and management",
+            "volume": "749",
+            "author": "Liu",
+            "year": "2020",
+            "journal-title": "Sci. Total Environ."
+        },
+        {
+            "key": "ref_22",
+            "doi-asserted-by": "crossref",
+            "first-page": "884",
+            "DOI": "10.1038/nclimate1597",
+            "article-title": "Hotspot of accelerated sea-level rise on the Atlantic Coast of North America",
+            "volume": "2",
+            "author": "Sallenger",
+            "year": "2012",
+            "journal-title": "Nat. Clim. Chang."
+        },
+        {
+            "key": "ref_23",
+            "doi-asserted-by": "crossref",
+            "first-page": "3917",
+            "DOI": "10.1002/2016JC012597",
+            "article-title": "Impact of sea level rise on tidal range in Chesapeake and Delaware Bays",
+            "volume": "122",
+            "author": "Lee",
+            "year": "2017",
+            "journal-title": "J. Geophys. Res. Ocean."
+        },
+        {
+            "key": "ref_24",
+            "doi-asserted-by": "crossref",
+            "first-page": "8638",
+            "DOI": "10.1029/2018JC014104",
+            "article-title": "Roles of Wind-Driven Currents and Surface Waves in Sediment Resuspension and Transport during a Tropical Storm",
+            "volume": "123",
+            "author": "Xie",
+            "year": "2018",
+            "journal-title": "J. Geophys. Res. Ocean."
+        },
+        {
+            "key": "ref_25",
+            "unstructured": "Boon, J.D., Brubaker, J.M., and Forrest, D.R. (2010). Chesapeake bay land subsidence and sea level change: An evaluation of past and present trends and future outlook. Applied Marine Science and Ocean Engineering, Virginia Institute of Marine Science, William & Mary. Special Report No., 425."
+        },
+        {
+            "key": "ref_26",
+            "unstructured": "Paul, S., and USACE (2019, May 02). Sarbanes Ecosystem Restoration Project at Poplar Island, Talbot County, MD\u2013Fact Sheet as of 1 February 2019. U.S. Army Corps of Engineers\u2014Baltimore District. Available online: https://usace.contentdm.oclc.org/digital/collection/p16021coll11/id/3442."
+        },
+        {
+            "key": "ref_27",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Fleri, J.R., Lera, S., Gerevini, A., Staver, L., and Nardin, W. (2019). Empirical observations and numerical modelling of tides, channel morphology, and vegetative effects on accretion in a restored tidal marsh. Earth Surf. Process. Landf.",
+            "DOI": "10.1002/esp.4646"
+        },
+        {
+            "key": "ref_28",
+            "doi-asserted-by": "crossref",
+            "first-page": "47",
+            "DOI": "10.1016/j.earscirev.2014.08.005",
+            "article-title": "Approaches to evaluate the recent impacts of sea-level rise on shoreline changes",
+            "volume": "138",
+            "author": "Garcin",
+            "year": "2014",
+            "journal-title": "Earth Sci. Rev."
+        },
+        {
+            "key": "ref_29",
+            "doi-asserted-by": "crossref",
+            "first-page": "61",
+            "DOI": "10.1007/BF03325962",
+            "article-title": "Coastline change detection using remote sensing",
+            "volume": "4",
+            "author": "Alesheikh",
+            "year": "2007",
+            "journal-title": "Int. J. Environ. Sci. Technol."
+        },
+        {
+            "key": "ref_30",
+            "doi-asserted-by": "crossref",
+            "first-page": "131",
+            "DOI": "10.1016/j.geomorph.2016.12.029",
+            "article-title": "Understanding coastal change using shoreline trend analysis supported by cluster-based segmentation",
+            "volume": "282",
+            "author": "Burningham",
+            "year": "2017",
+            "journal-title": "Geomorphology"
+        },
+        {
+            "key": "ref_31",
+            "first-page": "363",
+            "article-title": "UAVS to assess the evolution of embryo dunes",
+            "volume": "XLII-2/W6",
+            "author": "Taddia",
+            "year": "2017",
+            "journal-title": "ISPRS Int. Arch. Photogramm. Remote Sens. Spat. Inf. Sci."
+        },
+        {
+            "key": "ref_32",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Lowe, M.K., Adnan, F.A.F., Hamylton, S.M., Carvalho, R.C., and Woodroffe, C.D. (2019). Assessing Reef-Island Shoreline Change Using UAV-Derived Orthomosaics and Digital Surface Models. Drones, 3.",
+            "DOI": "10.3390/drones3020044"
+        },
+        {
+            "key": "ref_33",
+            "doi-asserted-by": "crossref",
+            "first-page": "300",
+            "DOI": "10.1016/j.geomorph.2012.08.021",
+            "article-title": "\u2018Structure-from-Motion\u2019 photogrammetry: A low-cost, effective tool for geoscience applications",
+            "volume": "179",
+            "author": "Westoby",
+            "year": "2012",
+            "journal-title": "Geomorphology"
+        },
+        {
+            "key": "ref_34",
+            "doi-asserted-by": "crossref",
+            "first-page": "6880",
+            "DOI": "10.3390/rs5126880",
+            "article-title": "Using Unmanned Aerial Vehicles (UAV) for High-Resolution Reconstruction of Topography: The Structure from Motion Approach on Coastal Environments",
+            "volume": "5",
+            "author": "Mancini",
+            "year": "2013",
+            "journal-title": "Remote Sens."
+        },
+        {
+            "key": "ref_35",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Gong, C., Lei, S., Bian, Z., Liu, Y., Zhang, Z., and Cheng, W. (2019). Analysis of the Development of an Erosion Gully in an Open-Pit Coal Mine Dump During a Winter Freeze-Thaw Cycle by Using Low-Cost UAVs. Remote Sens., 11.",
+            "DOI": "10.3390/rs11111356"
+        },
+        {
+            "key": "ref_36",
+            "doi-asserted-by": "crossref",
+            "first-page": "2",
+            "DOI": "10.1016/j.enggeo.2011.03.012",
+            "article-title": "UAV-based remote sensing of the Super-Sauze landslide: Evaluation and results",
+            "volume": "128",
+            "author": "Niethammer",
+            "year": "2012",
+            "journal-title": "Eng. Geol."
+        },
+        {
+            "key": "ref_37",
+            "doi-asserted-by": "crossref",
+            "first-page": "16",
+            "DOI": "10.1016/j.geomorph.2013.03.023",
+            "article-title": "Geomorphological mapping with a small unmanned aircraft system (sUAS): Feature detection and accuracy assessment of a photogrammetrically-derived digital terrain model",
+            "volume": "194",
+            "author": "Hugenholtz",
+            "year": "2013",
+            "journal-title": "Geomorphology"
+        },
+        {
+            "key": "ref_38",
+            "doi-asserted-by": "crossref",
+            "first-page": "1573",
+            "DOI": "10.3390/rs4061573",
+            "article-title": "Assessing the Accuracy of Georeferenced Point Clouds Produced via Multi-View Stereopsis from Unmanned Aerial Vehicle (UAV) Imagery",
+            "volume": "4",
+            "author": "Harwin",
+            "year": "2012",
+            "journal-title": "Remote Sens."
+        },
+        {
+            "key": "ref_39",
+            "unstructured": "Drummond, C.D., Harley, M.D., Turner, I.L., AMatheen, A.N., and Glamore, W.C. (2015, January 15\u201318). UAV applications to coastal engineering. Proceedings of the Australasian Coasts & Ports Conference 2015: 22nd Australasian Coastal and Ocean Engineering Conference and the 15th Australasian Port and Harbour Conference, Engineers Australia and IPENZ, Auckland, New Zealand."
+        },
+        {
+            "key": "ref_40",
+            "doi-asserted-by": "crossref",
+            "first-page": "19",
+            "DOI": "10.1016/j.coastaleng.2016.03.011",
+            "article-title": "UAVs for coastal surveying",
+            "volume": "114",
+            "author": "Turner",
+            "year": "2016",
+            "journal-title": "Coast. Eng."
+        },
+        {
+            "key": "ref_41",
+            "doi-asserted-by": "crossref",
+            "first-page": "101",
+            "DOI": "10.1016/j.isprsjprs.2015.02.009",
+            "article-title": "UAV photogrammetry for topographic monitoring of coastal areas",
+            "volume": "104",
+            "author": "Henriques",
+            "year": "2015",
+            "journal-title": "ISPRS J. Photogramm. Remote Sens."
+        },
+        {
+            "key": "ref_42",
+            "first-page": "27",
+            "article-title": "Seasonal dune and beach monitoring using photogrammetry from UAV surveys to apply in the ICZM on the Ravenna coast (Emilia-Romagna, Italy)",
+            "volume": "7",
+            "author": "Scarelli",
+            "year": "2017",
+            "journal-title": "Remote Sens. Appl. Soc. Environ."
+        },
+        {
+            "key": "ref_43",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Taddia, Y., Corbau, C., Zambello, E., and Pellegrinelli, A. (2019). UAVs for Structure-From-Motion Coastal Monitoring: A Case Study to Assess the Evolution of Embryo Dunes over a Two-Year Time Frame in the Po River Delta, Italy. Sensors, 19.",
+            "DOI": "10.3390/s19071717"
+        },
+        {
+            "key": "ref_44",
+            "doi-asserted-by": "crossref",
+            "first-page": "151",
+            "DOI": "10.1007/s00367-016-0435-9",
+            "article-title": "Drones as tools for monitoring beach topography changes in the Ligurian Sea (NW Mediterranean)",
+            "volume": "36",
+            "author": "Casella",
+            "year": "2016",
+            "journal-title": "Geo Mar. Lett."
+        },
+        {
+            "key": "ref_45",
             "doi-asserted-by": "crossref",
             "first-page": "23",
-            "DOI": "10.58680/ee20054139",
-            "article-title": "Tensions between traditions: The role of contexts in learning to teach",
-            "volume": "38",
-            "author": "Bickmore S. T.",
-            "year": "2005",
-            "unstructured": "Bickmore, S. T., Smagorinsky, P., & O\u2018Donnell-Allen, C. (2005). Tensions between traditions: The role of contexts in learning to teach. English Education, 38, 23\u201352.",
-            "journal-title": "English Education"
-        },
-        {
-            "key": "e_1_3_2_11_1",
-            "volume-title": "Building adolescent literacy in today\u2019s English classrooms",
-            "author": "Bomer R.",
-            "year": "2011",
-            "unstructured": "Bomer, R. (2011). Building adolescent literacy in today\u2019s English classrooms. Portsmouth, NH: Heinemann."
-        },
-        {
-            "key": "e_1_3_2_12_1",
-            "volume-title": "Becoming a critically reflective teacher",
-            "author": "Brookfield S.",
-            "year": "1995",
-            "unstructured": "Brookfield, S. (1995). Becoming a critically reflective teacher. San Francisco, CA: Jossey-Bass."
-        },
-        {
-            "key": "e_1_3_2_13_1",
-            "volume-title": "Writing to persuade: Minilessons to help students plan, draft, and revise, grades 3\u20138",
-            "author": "Caine K",
-            "year": "2008",
-            "unstructured": "Caine, K. (2008). Writing to persuade: Minilessons to help students plan, draft, and revise, grades 3\u20138. Portsmouth, NH: Heinemann."
-        },
-        {
-            "key": "e_1_3_2_14_1",
-            "volume-title": "The art of teaching writing",
-            "author": "Calkins L.",
-            "year": "1994",
-            "unstructured": "Calkins, L. (1994). The art of teaching writing. Portsmouth, NH: Heinemann."
-        },
-        {
-            "key": "e_1_3_2_15_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0022487117737305"
-        },
-        {
-            "issue": "1",
-            "key": "e_1_3_2_16_1",
-            "first-page": "80",
-            "article-title": "Preparing teachers for urban schools: Evaluation of a community-based model",
-            "volume": "7",
-            "author": "Catapano S.",
-            "year": "2010",
-            "unstructured": "Catapano, S., & Huisman, S. (2010). Preparing teachers for urban schools: Evaluation of a community-based model. Penn GSE Perspectives on Urban Education, 7(1), 80\u201390.",
-            "journal-title": "Penn GSE Perspectives on Urban Education"
-        },
-        {
-            "issue": "3",
-            "key": "e_1_3_2_17_1",
-            "doi-asserted-by": "crossref",
-            "first-page": "265",
-            "DOI": "10.58680/ee201729043",
-            "article-title": "How English language arts teachers are prepared for twenty-first century classrooms: Results of a national study",
-            "volume": "49",
-            "author": "Caughlan S.",
+            "DOI": "10.1117/12.2278121",
+            "article-title": "Coastal areas mapping using UAV photogrammetry",
+            "volume": "10428",
+            "author": "Nikolakopoulos",
             "year": "2017",
-            "unstructured": "Caughlan, S., Pasternak, D. L., Hallman, H. L., Renzi, L., Rush, L. F., & Frisby, M. (2017). How English language arts teachers are prepared for twenty-first century classrooms: Results of a national study. English Education, 49(3), 265\u2013297.",
-            "journal-title": "English Education"
+            "journal-title": "Earth Resour. Environ. Remote Sens. Gis Appl. Viii"
         },
         {
-            "key": "e_1_3_2_18_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.tate.2012.08.003"
+            "key": "ref_46",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Torres-Freyermuth, A., Medell\u00edn, G., Mendoza, E.T., Ojeda, E., and Salles, P. (2019). Morphodynamic Response to Low-Crested Detached Breakwaters on a Sea Breeze-Dominated Coast. Water, 11.",
+            "DOI": "10.3390/w11040635"
         },
         {
-            "key": "e_1_3_2_19_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0022487110377507"
-        },
-        {
-            "key": "e_1_3_2_20_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1525/aeq.2007.38.4.380"
-        },
-        {
-            "key": "e_1_3_2_21_1",
-            "volume-title": "Pedagogy of the oppressed",
-            "author": "Freire P.",
-            "year": "1970",
-            "unstructured": "Freire, P. (1970). Pedagogy of the oppressed. (M. B. Ramos, Trans.) (30th Anniversary). New York, NY: Bloomsbury Academic."
-        },
-        {
-            "key": "e_1_3_2_22_1",
-            "first-page": "1",
-            "article-title": "Learning to teach in an urban teacher residency",
-            "author": "Gatti L.",
+            "key": "ref_47",
+            "doi-asserted-by": "crossref",
+            "first-page": "317",
+            "DOI": "10.1016/j.proeng.2016.07.482",
+            "article-title": "UAV Photogrammetry for Monitoring Changes in River Topography and Vegetation",
+            "volume": "154",
+            "author": "Watanabe",
             "year": "2016",
-            "unstructured": "Gatti, L. (2016). Learning to teach in an urban teacher residency. Urban Education, 1\u201329. https://journals.sagepub.com/doi/full/10.1177/0042085916641171#articleCitationDownloadContainer",
-            "journal-title": "Urban Education"
+            "journal-title": "Procedia Eng."
         },
         {
-            "key": "e_1_3_2_23_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0042085915618720"
-        },
-        {
-            "key": "e_1_3_2_24_1",
-            "first-page": "75",
-            "volume-title": "Provoking conversations on inquiry in teacher education",
-            "author": "Grumet M. R.",
-            "year": "2012",
-            "unstructured": "Grumet, M. R. (2012). Toward a curriculum of curiosity. In D. E. Lund, E. L. Panayotidis, H. Smits, & J. Towers (Eds.), Provoking conversations on inquiry in teacher education (pp. 75\u201378). Washington, DC: Peter Lang."
-        },
-        {
-            "key": "e_1_3_2_25_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3102/0013189X032005019"
-        },
-        {
-            "key": "e_1_3_2_26_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00405841.2015.977664"
-        },
-        {
-            "key": "e_1_3_2_27_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0042085915618722"
-        },
-        {
-            "key": "e_1_3_2_28_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/01626620.2012.729472"
-        },
-        {
-            "key": "e_1_3_2_29_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0042085911400336"
-        },
-        {
-            "key": "e_1_3_2_30_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/19388070209558378"
-        },
-        {
-            "key": "e_1_3_2_31_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.17763/haer.58.3.d171833kp7v732j1"
-        },
-        {
-            "key": "e_1_3_2_32_1",
-            "volume-title": "Harlem on our minds: Place, race and the literacies of urban youth",
-            "author": "Kinloch V",
-            "year": "2009",
-            "unstructured": "Kinloch, V. (2009). Harlem on our minds: Place, race and the literacies of urban youth. In Language and Literacy Series. New York, NY: Teachers College Press."
-        },
-        {
-            "key": "e_1_3_2_33_1",
-            "volume-title": "The dreamkeepers: Successful teachers of African American children",
-            "author": "Ladson-Billings G.",
-            "year": "1994",
-            "unstructured": "Ladson-Billings, G. (1994). The dreamkeepers: Successful teachers of African American children (1st ed.). San Francisco, CA: Jossey-Bass Publishers.",
-            "edition": "1"
-        },
-        {
-            "key": "e_1_3_2_34_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3102/0013189X035007003"
-        },
-        {
-            "key": "e_1_3_2_35_1",
-            "volume-title": "The dreamkeepers: Successful teachers of African American children",
-            "author": "Ladson-Billings G",
-            "year": "2009",
-            "unstructured": "Ladson-Billings, G. (2009). The dreamkeepers: Successful teachers of African American children. San Francisco, CA: Jossey-Bass."
-        },
-        {
-            "issue": "2",
-            "key": "e_1_3_2_36_1",
-            "first-page": "55",
-            "article-title": "Developing novice teachers as change agents: Student teacher placements \u201cagainst the grain",
-            "volume": "30",
-            "author": "Lane S.",
-            "year": "2003",
-            "unstructured": "Lane, S., Lacefield-Parachini, N., & Isken, J. (2003). Developing novice teachers as change agents: Student teacher placements \u201cagainst the grain. Teacher Education Quarterly, 30(2, Teacher Education and Social Justice), 55\u201368.",
-            "journal-title": "Teacher Education Quarterly"
-        },
-        {
-            "key": "e_1_3_2_37_1",
-            "volume-title": "Teaching English language and content in mainstream classes: One class, many paths",
-            "author": "Levine L. N.",
-            "year": "2012",
-            "unstructured": "Levine, L. N., & McCloskey, M. L. (2012). Teaching English language and content in mainstream classes: One class, many paths (2nd ed.). Boston, MA: Pearson.",
-            "edition": "2"
-        },
-        {
-            "key": "e_1_3_2_38_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/0147-1767(85)90062-8"
-        },
-        {
-            "key": "e_1_3_2_39_1",
-            "volume-title": "English with an accent: Language, ideology and discrimination in the United States (1st ed",
-            "author": "Lippi-Green R",
-            "year": "1997",
-            "unstructured": "Lippi-Green, R. (1997). English with an accent: Language, ideology and discrimination in the United States (1st ed.). New York, NY: Routledge."
-        },
-        {
-            "issue": "1",
-            "key": "e_1_3_2_40_1",
+            "key": "ref_48",
             "doi-asserted-by": "crossref",
-            "first-page": "85",
-            "DOI": "10.58680/rte20044463",
-            "article-title": "At last: The trouble with English",
-            "volume": "39",
-            "author": "Luke A.",
-            "year": "2004",
-            "unstructured": "Luke, A. (2004). At last: The trouble with English. Research in the Teaching of English, 39(1), 85\u201395.",
-            "journal-title": "Research in the Teaching of English"
+            "first-page": "159",
+            "DOI": "10.1016/j.geomorph.2017.12.039",
+            "article-title": "Rapid melting dynamics of an alpine glacier with repeated UAV photogrammetry",
+            "volume": "304",
+            "author": "Rossini",
+            "year": "2018",
+            "journal-title": "Geomorphology"
         },
         {
-            "issue": "2",
-            "key": "e_1_3_2_41_1",
+            "key": "ref_49",
             "doi-asserted-by": "crossref",
-            "first-page": "124",
-            "DOI": "10.58680/rte201012743",
-            "article-title": "Spanglish as literacy tool: Toward an understanding of the potential role of Spanish-English code-switching in the development of academic literacy",
-            "volume": "45",
-            "author": "Mart\u00ednez R. A",
-            "year": "2010",
-            "unstructured": "Mart\u00ednez, R. A. (2010). Spanglish as literacy tool: Toward an understanding of the potential role of Spanish-English code-switching in the development of academic literacy. Research in the Teaching of English, 45(2), 124\u2013149.",
-            "journal-title": "Research in the Teaching of English"
-        },
-        {
-            "key": "e_1_3_2_42_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/09650792.2012.727640"
-        },
-        {
-            "issue": "3",
-            "key": "e_1_3_2_43_1",
-            "first-page": "79",
-            "article-title": "Student teacher inquiry as an \u201centry point\u201d for advocacy",
-            "volume": "33",
-            "author": "Merino B. J.",
-            "year": "2006",
-            "unstructured": "Merino, B. J., & Holmes, P. (2006). Student teacher inquiry as an \u201centry point\u201d for advocacy. Teacher Education Quarterly, 33(3), 79\u201396.",
-            "journal-title": "Teacher Education Quarterly"
-        },
-        {
-            "key": "e_1_3_2_44_1",
-            "volume-title": "Qualitative data analysis: A methods sourcebook",
-            "author": "Miles M. B.",
+            "first-page": "93",
+            "DOI": "10.1016/j.rse.2014.04.025",
+            "article-title": "High-resolution monitoring of Himalayan glacier dynamics using unmanned aerial vehicles",
+            "volume": "150",
+            "author": "Immerzeel",
             "year": "2014",
-            "unstructured": "Miles, M. B., Huberman, A. M., & Salda\u00f1a, J. (2014). Qualitative data analysis: A methods sourcebook (3rd ed.). Thousand Oaks, CA: SAGE Publications, Inc.",
-            "edition": "3"
+            "journal-title": "Remote Sens. Environ."
         },
         {
-            "key": "e_1_3_2_45_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0042085912447516"
-        },
-        {
-            "key": "e_1_3_2_46_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00405849209543534"
-        },
-        {
-            "issue": "1",
-            "key": "e_1_3_2_47_1",
+            "key": "ref_50",
             "doi-asserted-by": "crossref",
-            "first-page": "89",
-            "DOI": "10.58680/rte20097246",
-            "article-title": "A longitudinal study of consequential transitions in the teaching of literature",
-            "volume": "44",
-            "author": "Newell G. E.",
-            "year": "2009",
-            "unstructured": "Newell, G. E., Tallman, L., & Letcher, M. (2009). A longitudinal study of consequential transitions in the teaching of literature. Research in the Teaching of English, 44(1), 89\u2013126.",
-            "journal-title": "Research in the Teaching of English"
+            "unstructured": "Thiebes, B., Tomelleri, E., Mejia-Aguilar, A., Rabanser, M., Schl\u00f6gel, R., Mulas, M., and Corsini, A. (2016, January 12\u201319). Assessment of the 2006 to 2015 Corvara landslide evolution using a UAV-derived DSM and orthophoto. Proceedings of the 12th International Symposium on Landslides, Naples, Italy.",
+            "DOI": "10.1201/b21520-237"
         },
         {
-            "issue": "3",
-            "key": "e_1_3_2_48_1",
-            "first-page": "9",
-            "article-title": "Weaving teacher education into the fabric of urban schools and communities",
-            "volume": "37",
-            "author": "Noel J.",
-            "year": "2010",
-            "unstructured": "Noel, J. (2010). Weaving teacher education into the fabric of urban schools and communities. Teacher Education Quarterly, 37(3), 9\u201325.",
-            "journal-title": "Teacher Education Quarterly"
-        },
-        {
-            "key": "e_1_3_2_49_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.17763/haer.79.3.64j4678647mj7g35"
-        },
-        {
-            "key": "e_1_3_2_50_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.17763/haer.84.1.982l873k2ht16m77"
-        },
-        {
-            "key": "e_1_3_2_51_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0022487102250284"
-        },
-        {
-            "key": "e_1_3_2_52_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.tate.2016.05.011"
-        },
-        {
-            "key": "e_1_3_2_53_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/1086296X12440430"
-        },
-        {
-            "issue": "3",
-            "key": "e_1_3_2_54_1",
-            "first-page": "73",
-            "article-title": "Student teachers negotiating identity, role, and agency",
-            "volume": "35",
-            "author": "Sexton D. M.",
-            "year": "2008",
-            "unstructured": "Sexton, D. M. (2008). Student teachers negotiating identity, role, and agency. Teacher Education Quarterly, 35(3), 73\u201388.",
-            "journal-title": "Teacher Education Quarterly"
-        },
-        {
-            "key": "e_1_3_2_55_1",
-            "volume-title": "Living the questions: A guide for teacher-researchers",
-            "author": "Shagoury R.",
-            "year": "1999",
-            "unstructured": "Shagoury, R., & Power, B. M. (1999). Living the questions: A guide for teacher-researchers. York, ME: Stenhouse Publishers."
-        },
-        {
-            "issue": "4",
-            "key": "e_1_3_2_56_1",
+            "key": "ref_51",
             "doi-asserted-by": "crossref",
-            "first-page": "322",
-            "DOI": "10.58680/ee201323852",
-            "article-title": "Building multiliterate and multilingual writing practices and identities",
-            "volume": "45",
-            "author": "Skerrett A.",
-            "year": "2013",
-            "unstructured": "Skerrett, A. (2013). Building multiliterate and multilingual writing practices and identities. English Education, 45(4), 322\u2013360.",
-            "journal-title": "English Education"
+            "first-page": "593",
+            "DOI": "10.1007/s10346-017-0922-8",
+            "article-title": "Acquiring high-resolution topography and performing spatial analysis of loess landslides by using low-cost UAVs",
+            "volume": "15",
+            "author": "Hu",
+            "year": "2018",
+            "journal-title": "Landslides"
         },
         {
-            "issue": "3",
-            "key": "e_1_3_2_57_1",
+            "key": "ref_52",
             "doi-asserted-by": "crossref",
-            "first-page": "313",
-            "DOI": "10.58680/rte201322714",
-            "article-title": "Recruiting languages and lifeworlds for border-crossing compositions",
-            "volume": "47",
-            "author": "Skerrett A.",
-            "year": "2013",
-            "unstructured": "Skerrett, A., & Bomer, R. (2013). Recruiting languages and lifeworlds for border-crossing compositions. Research in the Teaching of English, 47(3), 313\u2013337.",
-            "journal-title": "Research in the Teaching of English"
+            "first-page": "206",
+            "DOI": "10.1111/phor.12197",
+            "article-title": "Documentation of heritage buildings using close-range UAV images: Dense matching issues, comparison and case studies",
+            "volume": "32",
+            "author": "Murtiyoso",
+            "year": "2017",
+            "journal-title": "Photogramm. Rec."
         },
         {
-            "key": "e_1_3_2_58_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s11256-015-0325-x"
-        },
-        {
-            "key": "e_1_3_2_59_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/tcre.2003.105.issue-8"
-        },
-        {
-            "key": "e_1_3_2_60_1",
+            "key": "ref_53",
             "doi-asserted-by": "crossref",
-            "first-page": "214",
-            "DOI": "10.58680/ee20042810",
-            "article-title": "Praxis shock: Making the transition from a student-centered university program to the corporate climate of schools",
+            "first-page": "549",
+            "DOI": "10.1080/15583058.2018.1440030",
+            "article-title": "Modeling and deterioration mapping of fa\u00e7ades in historical urban context by close-range ultra-lightweight UAVs photogrammetry",
+            "volume": "13",
+            "author": "Russo",
+            "year": "2019",
+            "journal-title": "Int. J. Archit. Herit."
+        },
+        {
+            "key": "ref_54",
+            "doi-asserted-by": "crossref",
+            "first-page": "195",
+            "DOI": "10.1016/j.geomorph.2016.11.009",
+            "article-title": "An evaluation of the effectiveness of low-cost UAVs and structure from motion for geomorphic change detection",
+            "volume": "278",
+            "author": "Cook",
+            "year": "2017",
+            "journal-title": "Geomorphology"
+        },
+        {
+            "key": "ref_55",
+            "doi-asserted-by": "crossref",
+            "first-page": "4",
+            "DOI": "10.1016/j.geomorph.2015.05.011",
+            "article-title": "Reproducibility of UAV-based earth topography reconstructions based on Structure-from-Motion algorithms",
+            "volume": "260",
+            "author": "Clapuyt",
+            "year": "2016",
+            "journal-title": "Geomorphology"
+        },
+        {
+            "key": "ref_56",
+            "doi-asserted-by": "crossref",
+            "first-page": "51",
+            "DOI": "10.1016/j.geomorph.2016.11.021",
+            "article-title": "Optimising UAV topographic surveys processed with structure-from-motion: Ground control quality, quantity and bundle adjustment",
+            "volume": "280",
+            "author": "James",
+            "year": "2017",
+            "journal-title": "Geomorphology"
+        },
+        {
+            "key": "ref_57",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Jaud, M., Grasso, F., Le Dantec, N., Verney, R., Delacourt, C., Ammann, J., Deloffre, J., and Grandjean, P. (2016). Potential of UAVs for Monitoring Mudflat Morphodynamics (Application to the Seine Estuary, France). ISPRS Int. J. Geo Inf., 5.",
+            "DOI": "10.3390/ijgi5040050"
+        },
+        {
+            "key": "ref_58",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Taddia, Y., Nardin, W., Corbau, C., Franchi, G., Stevenson, C.J., and Staver, L.W. (2019). Channels\u2019 shape evolution detected by uavs in a\nrestored salt marsh. Coastal Sediments 2019, World Scientific.",
+            "DOI": "10.1142/9789811204487_0131"
+        },
+        {
+            "key": "ref_59",
+            "unstructured": "(2018, January 24). DJI. Phantom 3 Professional User Manual v1.8. Available online: https://www.dji.com/it/phantom-3-pro/info."
+        },
+        {
+            "key": "ref_60",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Agisoft (2021, February 18). Agisoft Metashape User Manual, Professional Edition, Version 1.5. Available online: https://www.agisoft.com/pdf/metashape-pro_1_5_en.pdf.",
+            "DOI": "10.3390/quat5010005"
+        },
+        {
+            "key": "ref_61",
+            "doi-asserted-by": "crossref",
+            "first-page": "3507",
+            "DOI": "10.3390/rs70403507",
+            "article-title": "Adjusting Lidar-Derived Digital Terrain Models in Coastal Marshes Based on Estimated Aboveground Biomass Density",
+            "volume": "7",
+            "author": "Medeiros",
+            "year": "2015",
+            "journal-title": "Remote Sens."
+        },
+        {
+            "key": "ref_62",
+            "doi-asserted-by": "crossref",
+            "first-page": "1770",
+            "DOI": "10.1002/esp.2199",
+            "article-title": "A comparison of GPS and lidar salt marsh DEMs",
             "volume": "36",
-            "author": "Smagorinsky P.",
-            "year": "2004",
-            "unstructured": "Smagorinsky, P., Gibson, N., Bickmore, S. T., Moore, C. P., & Cook, L. S. (2004). Praxis shock: Making the transition from a student-centered university program to the corporate climate of schools. English Education, 36(3), 214\u2013245.",
-            "journal-title": "English Education"
-        },
-        {
-            "key": "e_1_3_2_61_1",
-            "doi-asserted-by": "crossref",
-            "first-page": "187",
-            "DOI": "10.58680/ee20021609",
-            "article-title": "Acquiescence, accommodation, and resistance in learning to teach within a prescribed curriculum",
-            "volume": "34",
-            "author": "Smagorinsky P.",
-            "year": "2002",
-            "unstructured": "Smagorinsky, P., Lakly, A., & Johnson, T. S. (2002). Acquiescence, accommodation, and resistance in learning to teach within a prescribed curriculum. English Education, 34, 187\u2013213.",
-            "journal-title": "English Education"
-        },
-        {
-            "key": "e_1_3_2_62_1",
-            "doi-asserted-by": "crossref",
-            "first-page": "147",
-            "DOI": "10.58680/ee201322152",
-            "article-title": "Competing centers of gravity: A beginning English teacher\u2019s socialization process within conflictual settings",
-            "volume": "45",
-            "author": "Smagorinsky P.",
-            "year": "2013",
-            "unstructured": "Smagorinsky, P., Rhym, D., & Moore, C. P. (2013). Competing centers of gravity: A beginning English teacher\u2019s socialization process within conflictual settings. English Education, 45, 147\u2013183.",
-            "journal-title": "English Education"
-        },
-        {
-            "issue": "3",
-            "key": "e_1_3_2_63_1",
-            "doi-asserted-by": "crossref",
-            "first-page": "262",
-            "DOI": "10.58680/ee201114002",
-            "article-title": "Teaching grammar and writing: A beginning teacher\u2019s dilemma",
-            "volume": "43",
-            "author": "Smagorinsky P.",
+            "author": "Chassereau",
             "year": "2011",
-            "unstructured": "Smagorinsky, P., Wilson, A. A., & Moore, C. (2011). Teaching grammar and writing: A beginning teacher\u2019s dilemma. English Education, 43(3), 262\u2013292.",
-            "journal-title": "English Education"
+            "journal-title": "Earth Surf. Process. Landf."
         },
         {
-            "key": "e_1_3_2_64_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0022487106295727"
+            "key": "ref_63",
+            "doi-asserted-by": "crossref",
+            "first-page": "5221",
+            "DOI": "10.1080/01431160500219018",
+            "article-title": "Integrating LIDAR elevation data, multi-spectral imagery and neural network modelling for marsh characterization",
+            "volume": "26",
+            "author": "Morris",
+            "year": "2005",
+            "journal-title": "Int. J. Remote Sens."
         },
         {
-            "key": "e_1_3_2_65_1",
-            "volume-title": "The art of case study research",
-            "author": "Stake R. E.",
+            "key": "ref_64",
+            "doi-asserted-by": "crossref",
+            "first-page": "511",
+            "DOI": "10.1641/0006-3568(2004)054[0511:HSRRSD]2.0.CO;2",
+            "article-title": "High Spatial Resolution Remotely Sensed Data for Ecosystem Characterization",
+            "volume": "54",
+            "author": "Wulder",
+            "year": "2004",
+            "journal-title": "BioScience"
+        },
+        {
+            "key": "ref_65",
+            "doi-asserted-by": "crossref",
+            "first-page": "39",
+            "DOI": "10.1002/esp.3290200105",
+            "article-title": "The response of coastal marshes to sea-level rise: Survival or submergence?",
+            "volume": "20",
+            "author": "Reed",
             "year": "1995",
-            "unstructured": "Stake, R. E. (1995). The art of case study research. Thousand Oaks, CA: Sage."
+            "journal-title": "Earth Surf. Process. Landf."
         },
         {
-            "key": "e_1_3_2_66_1",
-            "volume-title": "A different mirror: A history of multicultural America",
-            "author": "Takaki R",
-            "year": "2008",
-            "unstructured": "Takaki, R. (2008). A different mirror: A history of multicultural America. New York, NY: Back Bay Books."
+            "key": "ref_66",
+            "doi-asserted-by": "crossref",
+            "first-page": "e2019JF005200",
+            "DOI": "10.1029/2019JF005200",
+            "article-title": "Salt Marsh Dynamics in a Period of Accelerated Sea Level Rise",
+            "volume": "125",
+            "author": "Fagherazzi",
+            "year": "2020",
+            "journal-title": "J. Geophys. Res. Earth Surf."
         },
         {
-            "key": "e_1_3_2_67_1",
-            "volume-title": "Subtractive schooling: Issues of caring in education of U.S.-Mexican youth",
-            "author": "Valenzuela A.",
-            "year": "1999",
-            "unstructured": "Valenzuela, A. (1999). Subtractive schooling: Issues of caring in education of U.S.-Mexican youth. Albany: State University of New York Press."
+            "key": "ref_67",
+            "doi-asserted-by": "crossref",
+            "first-page": "3687",
+            "DOI": "10.1002/esp.4992",
+            "article-title": "A new algorithm for estimating ground elevation and vegetation characteristics in coastal salt marshes from high-resolution UAV-based LiDAR point clouds",
+            "volume": "45",
+            "author": "Pinton",
+            "year": "2020",
+            "journal-title": "Earth Surf. Process. Landf."
         },
         {
-            "key": "e_1_3_2_68_1",
-            "volume-title": "Mind in society: The development of higher psychological processes",
-            "author": "Vygotsky L. S.",
-            "year": "1978",
-            "unstructured": "Vygotsky, L. S. (1978). Mind in society: The development of higher psychological processes. (M. Cole, Trans.). Cambridge, MA: Harvard University Press."
+            "key": "ref_68",
+            "doi-asserted-by": "crossref",
+            "first-page": "758",
+            "DOI": "10.1109/OCEANS.2003.178410",
+            "article-title": "Integrating bathymetry, topography, and shoreline, and the importance of vertical datums",
+            "volume": "Volume 2",
+            "author": "Parker",
+            "year": "2003",
+            "journal-title": "Oceans 2003. Celebrating the Past... Teaming toward the Future"
         },
         {
-            "key": "e_1_3_2_69_1",
-            "volume-title": "Using tension as a resource: New visions in teaching the English language arts methods class",
-            "author": "Warrington A.",
-            "unstructured": "Warrington, A., & Fowler-Amato, M. (in press). Engaging preservice teachers in productive struggle through antideficit English education. In H. Hallman, K. Pastore-Capuana, & D. Pasternak (Eds.), Using tension as a resource: New visions in teaching the English language arts methods class. Lanham, MD: Rowman & Littlefield."
+            "key": "ref_69",
+            "doi-asserted-by": "crossref",
+            "first-page": "7\u20131",
+            "DOI": "10.1029/2001WR000404",
+            "article-title": "Tidal meanders",
+            "volume": "38",
+            "author": "Marani",
+            "year": "2002",
+            "journal-title": "Water Resour. Res."
         },
         {
-            "key": "e_1_3_2_70_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1017/CBO9780511803932"
+            "key": "ref_70",
+            "doi-asserted-by": "crossref",
+            "first-page": "249",
+            "DOI": "10.1016/j.advwatres.2015.11.020",
+            "article-title": "Sediment and vegetation spatial dynamics facing sea-level rise in microtidal salt marshes: Insights from an ecogeomorphic model",
+            "volume": "93",
+            "author": "Belliard",
+            "year": "2016",
+            "journal-title": "Adv. Water Resour."
         },
         {
-            "key": "e_1_3_2_71_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0022487113494845"
+            "key": "ref_71",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Forlani, G., Dall\u2019Asta, E., Diotri, F., Cella, U.M.D., Roncella, R., and Santise, M. (2018). Quality Assessment of DSMs Produced from UAV Flights Georeferenced with On-Board RTK Positioning. Remote Sens., 10.",
+            "DOI": "10.3390/rs10020311"
         },
         {
-            "key": "e_1_3_2_72_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1598/JAAL.54.7.6"
+            "key": "ref_72",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Taddia, Y., Stecchi, F., and Pellegrinelli, A. (2020). Coastal Mapping Using DJI Phantom 4 RTK in Post-Processing Kinematic Mode. Drones, 4.",
+            "DOI": "10.3390/drones4020009"
         },
         {
-            "key": "e_1_3_2_73_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0042085915623342"
+            "key": "ref_73",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Jiang, S., and Jiang, W. (2018). Efficient SfM for Oblique UAV Images: From Match Pair Selection to Geometrical Verification. Remote Sens., 10.",
+            "DOI": "10.3390/rs10081246"
         },
         {
-            "key": "e_1_3_2_74_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/1361332052000341006"
+            "key": "ref_74",
+            "first-page": "625",
+            "article-title": "Using dji phantom 4 rtk drone for topographic mapping of coastal areas",
+            "volume": "XLII-2/W13",
+            "author": "Taddia",
+            "year": "2019",
+            "journal-title": "ISPRS Int. Arch. Photogramm. Remote Sens. Spat. Inf. Sci."
         },
         {
-            "key": "e_1_3_2_75_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/002248719004100202"
+            "key": "ref_75",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Toma\u0161t\u00edk, J., Mokro\u0161, M., Surov\u00fd, P., Grzn\u00e1rov\u00e1, A., and Mergani\u010d, J. (2019). UAV RTK/PPK Method\u2014An Optimal Solution for Mapping Inaccessible Forested Areas?. Remote Sens., 11.",
+            "DOI": "10.3390/rs11060721"
+        },
+        {
+            "key": "ref_76",
+            "doi-asserted-by": "crossref",
+            "first-page": "11933",
+            "DOI": "10.3390/rs70911933",
+            "article-title": "The Impact of the Calibration Method on the Accuracy of Point Clouds Derived Using Unmanned Aerial Vehicle Multi-View Stereopsis",
+            "volume": "7",
+            "author": "Harwin",
+            "year": "2015",
+            "journal-title": "Remote Sens."
         }
     ],
     "container-title": [
-        "Action in Teacher Education"
+        "Remote Sensing"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/01626620.2019.1600598",
+            "URL": "https://www.mdpi.com/2072-4292/13/7/1364/pdf",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -639,110 +919,59 @@
             [
                 2024,
                 7,
-                16
+                10
             ]
         ],
-        "date-time": "2024-07-16T23:26:30Z",
-        "timestamp": 1721172390000
+        "date-time": "2024-07-10T16:25:33Z",
+        "timestamp": 1720628733000
     },
-    "score": 14.1062565,
+    "score": 9.808733,
     "resource": {
         "primary": {
-            "URL": "https://www.tandfonline.com/doi/full/10.1080/01626620.2019.1600598"
+            "URL": "https://www.mdpi.com/2072-4292/13/7/1364"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2019,
+                2021,
                 4,
-                16
+                2
             ]
         ]
     },
-    "references-count": 74,
+    "references-count": 76,
     "journal-issue": {
-        "issue": "3",
-        "published-print": {
+        "issue": "7",
+        "published-online": {
             "date-parts": [
                 [
-                    2019,
-                    7,
-                    3
+                    2021,
+                    4
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1080/01626620.2019.1600598"
+        "rs13071364"
     ],
-    "URL": "http://dx.doi.org/10.1080/01626620.2019.1600598",
+    "URL": "http://dx.doi.org/10.3390/rs13071364",
     "ISSN": [
-        "0162-6620",
-        "2158-6098"
+        "2072-4292"
     ],
     "issn-type": [
         {
-            "value": "0162-6620",
-            "type": "print"
-        },
-        {
-            "value": "2158-6098",
+            "value": "2072-4292",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2019,
+                2021,
                 4,
-                16
+                2
             ]
         ]
-    },
-    "assertion": [
-        {
-            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
-            "order": 1,
-            "name": "peerreview_statement",
-            "label": "Peer Review Statement"
-        },
-        {
-            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=uate20",
-            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=uate20",
-            "order": 2,
-            "name": "aims_and_scope_url",
-            "label": "Aim & Scope"
-        },
-        {
-            "value": "2017-04-17",
-            "order": 0,
-            "name": "received",
-            "label": "Received",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2019-03-01",
-            "order": 1,
-            "name": "accepted",
-            "label": "Accepted",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2019-04-16",
-            "order": 2,
-            "name": "published",
-            "label": "Published",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        }
-    ]
+    }
 }

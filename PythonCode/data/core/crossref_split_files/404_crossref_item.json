@@ -2,150 +2,134 @@
     "indexed": {
         "date-parts": [
             [
-                2022,
-                4,
-                2
+                2023,
+                10,
+                25
             ]
         ],
-        "date-time": "2022-04-02T10:52:33Z",
-        "timestamp": 1648896753514
+        "date-time": "2023-10-25T16:12:49Z",
+        "timestamp": 1698250369551
     },
     "reference-count": 0,
-    "publisher": "American Society of Mechanical Engineers",
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "Supplement_2",
     "license": [
         {
             "start": {
                 "date-parts": [
                     [
-                        2020,
-                        11,
-                        16
+                        2023,
+                        10,
+                        24
                     ]
                 ],
-                "date-time": "2020-11-16T00:00:00Z",
-                "timestamp": 1605484800000
+                "date-time": "2023-10-24T00:00:00Z",
+                "timestamp": 1698105600000
             },
             "content-version": "vor",
-            "delay-in-days": 0,
-            "URL": "https://www.asme.org/publications-submissions/publishing-information/legal-policies"
+            "delay-in-days": 23,
+            "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
         }
     ],
     "content-domain": {
-        "domain": [
-            "asmedigitalcollection.asme.org"
-        ],
-        "crossmark-restriction": true
+        "domain": [],
+        "crossmark-restriction": false
     },
     "published-print": {
         "date-parts": [
             [
-                2020,
-                11,
-                16
+                2023,
+                10,
+                24
             ]
         ]
     },
-    "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>Computation Tree Measurement Language (CTML) is a newly developed formal language that offers simultaneous model verification and performance evaluation measures. While the theory behind CTML has been established, the language has yet to be tested on a practical example. In this work, we wish to demonstrate the utility of CTML when applied to a real-world application based in manufacturing. Mobile manipulators may enable more flexible, dynamic workflows within industry. Therefore, an artifact-based performance measurement test method for mobile manipulator robots developed at the National Institute of Standards and Technology was selected for evaluation. Contributions of this work include the modeling of robot tasks implemented for the performance measurement test using Petri nets, as well as the formulation and execution of sample queries using CTML. To compare the numerical results, query support, ease of implementation, and empirical runtime of CTML to other temporal logics in such applications, the queries were re-formulated and evaluated using the PRISM Model Checker. Finally, a discussion is included that considers future extensions of this work, relative to other existing research, that could potentially enable the integration of CTML with Systems Modeling Language (SysML) and Product Life-cycle Management (PLM) software solutions.</jats:p>",
-    "DOI": "10.1115/imece2020-23234",
-    "type": "proceedings-article",
+    "abstract": "<jats:title>Abstract</jats:title>\n               <jats:sec>\n                  <jats:title>Background</jats:title>\n                  <jats:p>There is increasing interest in understanding the relationship between social capital and undesirable health outcomes. Social capital theory suggests that better health outcomes may result from certain \u201cneighborly\u201d aspects of social capital.</jats:p>\n               </jats:sec>\n               <jats:sec>\n                  <jats:title>Methods</jats:title>\n                  <jats:p>This study used secondary data from the Social Capital Index. Bivariate correlations were calculated between neighborly social capital and health outcome variables. Next, neighborly social capital variables were entered as predictors of health outcomes in a series of stepwise regressions. Regional comparisons were conducted across four U.S. regions. Comparisons of the regression model structures were conducted by applying a model derived from one region to the data from another region and contrasting the resulting crossed R2 with the original direct R2 to identify differential regression weights across the four regions that warrant interpretation.</jats:p>\n               </jats:sec>\n               <jats:sec>\n                  <jats:title>Results</jats:title>\n                  <jats:p>The correlation and regression analyses showed significant negative relationships between three neighborly social capital variables (% who do favors for their neighbors, % who worked with neighbors to improve something, and % who trust all or most of their neighbors) and health outcomes including: % in fair/poor health, premature mortality rate, % diabetic, and % obese. In regional comparisons, only the South region had a direct and crossed R2 significantly different from other regions, with this difference largely attributable to an unexpected positive relationship between trusting neighbors and negative health outcomes in the South.</jats:p>\n               </jats:sec>\n               <jats:sec>\n                  <jats:title>Conclusions</jats:title>\n                  <jats:p>Interventions to increase neighborly social capital may help to alleviate negative health outcomes in the U.S. Anomalously, in the South, trusting neighbors may be related to worse health outcomes.</jats:p>\n               </jats:sec>\n               <jats:sec>\n                  <jats:title>Key messages</jats:title>\n                  <jats:p>\u2022\u2003Being neighborly may enhance positive health outcomes in most parts of the U.S.</jats:p>\n                  <jats:p>\u2022\u2003Strong social support impacts urban health.</jats:p>\n               </jats:sec>",
+    "DOI": "10.1093/eurpub/ckad160.1167",
+    "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2021,
-                2,
-                16
+                2023,
+                10,
+                24
             ]
         ],
-        "date-time": "2021-02-16T16:03:51Z",
-        "timestamp": 1613491431000
+        "date-time": "2023-10-24T18:54:56Z",
+        "timestamp": 1698173696000
     },
-    "update-policy": "http://dx.doi.org/10.1115/crossmarkpolicy-asme",
     "source": "Crossref",
     "is-referenced-by-count": 0,
     "title": [
-        "Formalizing Performance Evaluation of Mobile Manipulator Robots Using CTML"
+        "The relationship between neighborly social capital and health outcomes"
     ],
-    "prefix": "10.1115",
+    "prefix": "10.1093",
+    "volume": "33",
     "author": [
         {
-            "given": "Omar",
-            "family": "Aboul-Enein",
-            "sequence": "additional",
+            "given": "S A",
+            "family": "Maykrantz",
+            "sequence": "first",
             "affiliation": [
                 {
-                    "name": "National Institute of Standards and Technology"
+                    "name": "School of Health Sciences, Salisbury University , Salisbury, USA"
                 }
             ]
         },
         {
-            "given": "Yaping",
-            "family": "Jing",
+            "given": "J E",
+            "family": "Kost",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Salisbury University"
+                    "name": "Clarke Honors College, Public Health, Salisbury University , Salisbury, USA"
                 }
             ]
         },
         {
-            "given": "Roger",
-            "family": "Bostelman",
+            "given": "C B",
+            "family": "Neck",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "National Institute of Standards and Technology"
+                    "name": "John Chambers College of Business/Economics, West Virginia University , Morgantown, USA"
+                }
+            ]
+        },
+        {
+            "given": "J D",
+            "family": "Houghton",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "John Chambers College of Business/Economics, West Virginia University , Morgantown, USA"
                 }
             ]
         }
     ],
-    "member": "33",
+    "member": "286",
     "published-online": {
         "date-parts": [
             [
-                2021,
-                2,
-                16
+                2023,
+                10,
+                24
             ]
         ]
     },
-    "event": {
-        "name": "ASME 2020 International Mechanical Engineering Congress and Exposition",
-        "location": "Virtual, Online",
-        "acronym": "IMECE2020",
-        "sponsor": [
-            "ASME"
-        ],
-        "start": {
-            "date-parts": [
-                [
-                    2020,
-                    11,
-                    16
-                ]
-            ]
-        },
-        "end": {
-            "date-parts": [
-                [
-                    2020,
-                    11,
-                    19
-                ]
-            ]
-        }
-    },
     "container-title": [
-        "Volume 2B: Advanced Manufacturing"
+        "European Journal of Public Health"
     ],
+    "language": "en",
     "link": [
         {
-            "URL": "http://asmedigitalcollection.asme.org/IMECE/proceedings-pdf/doi/10.1115/IMECE2020-23234/6636796/v02bt02a004-imece2020-23234.pdf",
+            "URL": "https://academic.oup.com/eurpub/article-pdf/33/Supplement_2/ckad160.1167/52417128/ckad160.1167.pdf",
             "content-type": "application/pdf",
             "content-version": "vor",
             "intended-application": "syndication"
         },
         {
-            "URL": "http://asmedigitalcollection.asme.org/IMECE/proceedings-pdf/doi/10.1115/IMECE2020-23234/6636796/v02bt02a004-imece2020-23234.pdf",
+            "URL": "https://academic.oup.com/eurpub/article-pdf/33/Supplement_2/ckad160.1167/52417128/ckad160.1167.pdf",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -154,37 +138,81 @@
     "deposited": {
         "date-parts": [
             [
-                2021,
-                2,
-                16
+                2023,
+                10,
+                24
             ]
         ],
-        "date-time": "2021-02-16T16:03:51Z",
-        "timestamp": 1613491431000
+        "date-time": "2023-10-24T18:54:56Z",
+        "timestamp": 1698173696000
     },
-    "score": 12.750485,
+    "score": 15.968611,
     "resource": {
         "primary": {
-            "URL": "https://asmedigitalcollection.asme.org/IMECE/proceedings/IMECE2020/84492/Virtual,%20Online/1098962"
+            "URL": "https://academic.oup.com/eurpub/article/doi/10.1093/eurpub/ckad160.1167/7328160"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2020,
-                11,
-                16
+                2023,
+                10,
+                1
             ]
         ]
     },
     "references-count": 0,
-    "URL": "http://dx.doi.org/10.1115/imece2020-23234",
+    "journal-issue": {
+        "issue": "Supplement_2",
+        "published-online": {
+            "date-parts": [
+                [
+                    2023,
+                    10,
+                    24
+                ]
+            ]
+        },
+        "published-print": {
+            "date-parts": [
+                [
+                    2023,
+                    10,
+                    24
+                ]
+            ]
+        }
+    },
+    "URL": "http://dx.doi.org/10.1093/eurpub/ckad160.1167",
+    "ISSN": [
+        "1101-1262",
+        "1464-360X"
+    ],
+    "issn-type": [
+        {
+            "value": "1101-1262",
+            "type": "print"
+        },
+        {
+            "value": "1464-360X",
+            "type": "electronic"
+        }
+    ],
+    "published-other": {
+        "date-parts": [
+            [
+                2023,
+                10,
+                1
+            ]
+        ]
+    },
     "published": {
         "date-parts": [
             [
-                2020,
-                11,
-                16
+                2023,
+                10,
+                1
             ]
         ]
     }

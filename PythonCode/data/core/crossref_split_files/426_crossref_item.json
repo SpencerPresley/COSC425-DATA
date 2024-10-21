@@ -2,431 +2,500 @@
     "indexed": {
         "date-parts": [
             [
-                2024,
-                7,
-                13
+                2023,
+                8,
+                15
             ]
         ],
-        "date-time": "2024-07-13T09:06:13Z",
-        "timestamp": 1720861573723
+        "date-time": "2023-08-15T04:28:59Z",
+        "timestamp": 1692073739690
     },
-    "reference-count": 49,
-    "publisher": "Wiley",
-    "issue": "S1",
-    "license": [
-        {
-            "start": {
-                "date-parts": [
-                    [
-                        2018,
-                        12,
-                        13
-                    ]
-                ],
-                "date-time": "2018-12-13T00:00:00Z",
-                "timestamp": 1544659200000
-            },
-            "content-version": "am",
-            "delay-in-days": 365,
-            "URL": "http://onlinelibrary.wiley.com/termsAndConditions#am"
-        },
-        {
-            "start": {
-                "date-parts": [
-                    [
-                        2017,
-                        12,
-                        13
-                    ]
-                ],
-                "date-time": "2017-12-13T00:00:00Z",
-                "timestamp": 1513123200000
-            },
-            "content-version": "vor",
-            "delay-in-days": 0,
-            "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
-        }
-    ],
-    "funder": [
-        {
-            "DOI": "10.13039/100000001",
-            "name": "National Science Foundation",
-            "doi-asserted-by": "publisher",
-            "award": [
-                "0620910, 1239764"
-            ],
-            "id": [
-                {
-                    "id": "10.13039/100000001",
-                    "id-type": "DOI",
-                    "asserted-by": "publisher"
-                }
-            ]
-        }
-    ],
+    "reference-count": 54,
+    "publisher": "National Council of Teachers of English",
+    "issue": "3",
     "content-domain": {
-        "domain": [
-            "rmets.onlinelibrary.wiley.com"
-        ],
-        "crossmark-restriction": true
+        "domain": [],
+        "crossmark-restriction": false
     },
-    "short-container-title": [
-        "Intl Journal of Climatology"
-    ],
     "published-print": {
         "date-parts": [
             [
-                2018,
-                4
+                2023,
+                2,
+                1
             ]
         ]
     },
-    "abstract": "<jats:title>ABSTRACT</jats:title><jats:p>The tropical forests of northeast Puerto Rico (NE PR) and the Luquillo Mountains (LM) are a large repository for biodiversity and have an important role in regional biogeochemical processes. Precipitation is a key driver of the productivity of these sensitive ecosystems. This study analyses historical precipitation variability from 1985 to 2014 at El Verde Field Station (EVFS) at 380\u2009m on the north facing slope of the LM. The primary objective of this study is to identify atmospheric states that lead to extreme wet/dry conditions at EVFS. This study also investigates how those wet/dry atmospheric states change over the study period through an epoch approach on annual and seasonal timescales.</jats:p><jats:p>Self\u2010organizing maps (SOMs) are used to produce atmospheric states from ERA\u2010Interim low\u2010tropospheric moisture and circulation variables. These atmospheric states are downscaled to precipitation at the EVFS rain gauge. A probability density function of observed precipitation is calculated for each atmospheric state. Changes in node frequency, which is the number of days mapping to a particular node compared to the total number of days in the temporal period, are used to evaluate changes in wet/dry atmospheric states at EVFS.</jats:p><jats:p>Results indicate that low\u2010precipitation days at EVFS are associated with atmospheric states with high 1000\u2013700\u2009hPa bulk wind shear and decreased 700\u2009hPa moisture. Wet days in the study region are associated with moist low\u2010tropospheric environments with low wind shear. Our results indicate an increased frequency of dry season atmospheric states with lower 700\u2009hPa moisture. Over the study period, the dry season has a decrease in median and extreme precipitation during rainy days (days &gt;0\u2009mm). A decrease in early rainfall season median precipitation on rainy days is observed despite an increase in days with measurable precipitation, likely driven by an increase in light rainfall days (&lt;5\u2009mm).</jats:p>",
-    "DOI": "10.1002/joc.5364",
+    "abstract": "<jats:p>Drawing on critical theories of labor and commodification, this qualitative embedded case study explores how students experience alienation and intimacy in the work of writing for an English language arts class. Analysis of fieldnotes from 30 observations, student writing products, and reflective interviews with focal students and the teacher illuminated the meaningful assemblages where conditions of intimacy permeated instruction. Two practices supported intimacy in working conditions: knowledge about writing built through a collective process of noticing, and open-ended work time characterized by \u201cmanaged nonmanagement\u201d (, p. 176), or calculated flexibility in rules and expectations. Findings illustrate how a literacy practice might contribute to students\u2019 experience of alienation or intimacy (or both) while writing, depending on conditions of industrialization and commodification. Even as the teacher strove to deindustrialize work, commodification through grades and standardized assessments heightened alienation in the writing environment. The study provides an example of an educational context governed by an industrial system of assessment where local actors (the teacher and students) disrupted alienation by working in smaller scales and more closely with texts.</jats:p>",
+    "DOI": "10.58680/rte202332355",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2017,
-                12,
-                13
+                2023,
+                8,
+                15
             ]
         ],
-        "date-time": "2017-12-13T08:12:57Z",
-        "timestamp": 1513152777000
+        "date-time": "2023-08-15T02:41:43Z",
+        "timestamp": 1692067303000
     },
-    "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+    "page": "271-293",
     "source": "Crossref",
-    "is-referenced-by-count": 12,
+    "is-referenced-by-count": 0,
     "title": [
-        "Analysing regional climate forcing on historical precipitation variability in Northeast Puerto Rico"
+        "Experiences of Alienation and Intimacy: The Work of Secondary Writing Instruction"
     ],
-    "prefix": "10.1002",
-    "volume": "38",
+    "prefix": "10.58680",
+    "volume": "57",
     "author": [
         {
-            "ORCID": "http://orcid.org/0000-0003-0290-4639",
-            "authenticated-orcid": false,
-            "given": "Craig A.",
-            "family": "Ramseyer",
+            "given": "Thea",
+            "family": "Williamson",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Department of Geography and Geosciences Salisbury University  MD USA"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0002-0021-0134",
-            "authenticated-orcid": false,
-            "given": "Thomas L.",
-            "family": "Mote",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Climatology Research Laboratory, Department of Geography University of Georgia  Athens GA USA"
+                    "name": "Salisbury University"
                 }
             ]
         }
     ],
-    "member": "311",
-    "published-online": {
-        "date-parts": [
-            [
-                2017,
-                12,
-                13
-            ]
-        ]
-    },
+    "member": "37632",
     "reference": [
         {
-            "key": "e_1_2_7_2_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1029/2009JD012990"
+            "key": "B1",
+            "volume-title": "Our schools suck: Students talk back to a segregated nation on the failures of urban education",
+            "author": "Alonso",
+            "year": "2009"
         },
         {
-            "key": "e_1_2_7_3_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1890/1051-0761(1999)009[0656:EOALHD]2.0.CO;2"
+            "key": "B2",
+            "volume-title": "Literature in the secondary school: Studies of curriculum and instruction in the United States",
+            "author": "Applebee",
+            "year": "1993"
         },
         {
-            "key": "e_1_2_7_4_1",
+            "key": "B3",
+            "doi-asserted-by": "crossref",
+            "first-page": "13",
+            "DOI": "10.37514/INT-B.2017.0919.2.01",
+            "volume-title": "Research on writing: Multiple perspectives",
+            "author": "Applebee",
+            "year": "2017"
+        },
+        {
+            "issue": "6",
+            "key": "B4",
+            "first-page": "14",
+            "article-title": "A snapshot of writing instruction in middle schools and high schools",
+            "volume": "100",
+            "author": "Applebee",
+            "year": "2011",
+            "journal-title": "English Journal"
+        },
+        {
+            "key": "B5",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/joc.1926"
+            "DOI": "10.3102/0013189X07306523"
+        },
+        {
+            "key": "B6",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/00220272.2010.521261"
+        },
+        {
+            "key": "B7",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/1077800414530258"
+        },
+        {
+            "key": "B8",
+            "doi-asserted-by": "crossref",
+            "volume-title": "Genre and the invention of the writer: Reconsidering the place of invention in composition",
+            "author": "Bawarshi",
+            "year": "2003",
+            "DOI": "10.2307/j.ctt46nxp6"
+        },
+        {
+            "key": "B9",
+            "volume-title": "Building adolescent literacy in today\u2019s English classrooms",
+            "author": "Bomer",
+            "year": "2011"
+        },
+        {
+            "key": "B10",
+            "volume-title": "The rise of writing: Redefining mass literacy",
+            "author": "Brandt",
+            "year": "2015"
         },
         {
             "issue": "4",
-            "key": "e_1_2_7_5_1",
-            "first-page": "1",
-            "article-title": "Predicted changes in synoptic forcing of net precipitation in large Arctic river basins during the 21st century",
-            "volume": "112",
-            "author": "Cassano JJ",
-            "year": "2007",
-            "journal-title": "J. Geophys. Res. Biogeochem."
+            "key": "B11",
+            "first-page": "293",
+            "article-title": "The trouble is English: Reframing English studies in secondary schools",
+            "volume": "40",
+            "author": "Brauer",
+            "year": "2008",
+            "journal-title": "English Education"
         },
         {
-            "key": "e_1_2_7_6_1",
+            "issue": "4",
+            "key": "B12",
+            "doi-asserted-by": "crossref",
+            "first-page": "353",
+            "DOI": "10.1016/S0898-5898(00)00032-2",
+            "article-title": "Interactional ethnography: An approach to studying the social construction of literate practices",
+            "volume": "11",
+            "author": "Castanheira",
+            "year": "2001",
+            "journal-title": "Linguistics and Education"
+        },
+        {
+            "key": "B13",
+            "volume-title": "The anti-racist writing workshop: Decolonizing the creative classroom",
+            "author": "Chavez",
+            "year": "2021"
+        },
+        {
+            "key": "B14",
+            "doi-asserted-by": "crossref",
+            "volume-title": "Literacy and literacies: Texts, power, and identity",
+            "author": "Collins",
+            "year": "2003",
+            "DOI": "10.1017/CBO9780511486661"
+        },
+        {
+            "key": "B15",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1175/1520-0442(2000)013<1718:USOMTI>2.0.CO;2"
+            "DOI": "10.2307/377264"
         },
         {
-            "key": "e_1_2_7_7_1",
-            "first-page": "95",
-            "article-title": "Performance of NCEP\u2010NCAR reanalysis variables in statistical downscaling of daily precipitation",
-            "volume": "28",
-            "author": "Cavazos T",
+            "key": "B16",
+            "first-page": "28",
+            "volume-title": "Writing instruction that works: Proven methods for middle and high school classrooms",
+            "author": "Dawson",
+            "year": "2013"
+        },
+        {
+            "issue": "2",
+            "key": "B17",
+            "doi-asserted-by": "crossref",
+            "first-page": "203",
+            "DOI": "10.17763/haer.80.2.h6r65285tu252448",
+            "article-title": "Rethinking education and emancipation: Being, teaching, and power",
+            "volume": "80",
+            "author": "De Lissovoy",
+            "year": "2010",
+            "journal-title": "Harvard Educational Review"
+        },
+        {
+            "issue": "1",
+            "key": "B18",
+            "first-page": "11",
+            "article-title": "On the ascendance of argument: A critique of the assumptions of academe\u2019s dominant form",
+            "volume": "50",
+            "author": "DeStigter",
+            "year": "2015",
+            "journal-title": "Research in the Teaching of English"
+        },
+        {
+            "key": "B19",
+            "doi-asserted-by": "crossref",
+            "volume-title": "Writing ethnographic fieldnotes",
+            "author": "Emerson",
+            "year": "1995",
+            "DOI": "10.7208/chicago/9780226206851.001.0001"
+        },
+        {
+            "issue": "5",
+            "key": "B20",
+            "doi-asserted-by": "crossref",
+            "first-page": "432",
+            "DOI": "10.58680/ce201930150",
+            "article-title": "When writers aren\u2019t authors: A qualitative study of unattributed writers",
+            "volume": "81",
+            "author": "Findlay",
+            "year": "2019",
+            "journal-title": "College English"
+        },
+        {
+            "issue": "1",
+            "key": "B21",
+            "first-page": "62",
+            "article-title": "Teaching English in untracked classrooms",
+            "volume": "40",
+            "author": "Freedman",
             "year": "2005",
-            "journal-title": "Clim. Res."
+            "journal-title": "Research in the Teaching of English"
         },
         {
-            "key": "e_1_2_7_8_1",
+            "key": "B22",
+            "volume-title": "Releasing the imagination: Essays on education, the arts, and social change",
+            "author": "Greene",
+            "year": "2000"
+        },
+        {
+            "key": "B23",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1175/2007JAS2474.1"
+            "DOI": "10.1086/669901"
         },
         {
-            "key": "e_1_2_7_9_1",
+            "key": "B24",
+            "doi-asserted-by": "crossref",
+            "volume-title": "Antiracist writing assessment ecologies: Teaching and assessing writing for a socially just future",
+            "author": "Inoue",
+            "year": "2015",
+            "DOI": "10.37514/PER-B.2015.0698"
+        },
+        {
+            "key": "B25",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/joc.711"
+            "DOI": "10.1215/15314200-7615366"
         },
         {
-            "key": "e_1_2_7_10_1",
+            "key": "B26",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1175/2007JHM804.1"
+            "DOI": "10.1007/s11145-013-9493-9"
         },
         {
-            "key": "e_1_2_7_11_1",
+            "key": "B27",
+            "volume-title": "Choice words: How our language affects children\u2019s learning",
+            "author": "Johnston",
+            "year": "2004"
+        },
+        {
+            "key": "B28",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1029/2010JD015414"
+            "DOI": "10.3102/0002831208321444"
         },
         {
-            "key": "e_1_2_7_12_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1046/j.1365-2427.2003.01093.x"
+            "issue": "1",
+            "key": "B29",
+            "doi-asserted-by": "crossref",
+            "first-page": "136",
+            "DOI": "10.1037/a0013097",
+            "article-title": "Teaching writing to high school students: A national survey",
+            "volume": "101",
+            "author": "Kiuhara",
+            "year": "2009",
+            "journal-title": "Journal of Educational Psychology"
         },
         {
-            "key": "e_1_2_7_13_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1899/0887-3593(2006)25[99:EODAHD]2.0.CO;2"
+            "key": "B30",
+            "volume-title": "Bird by bird: Some instructions on writing and life",
+            "author": "Lamott",
+            "year": "1995"
         },
         {
-            "key": "e_1_2_7_14_1",
-            "unstructured": "CrookKE ScatenaFN PringleCM.2007. Water withdrawal from the Luquillo Experimental Forest 2004. General Technical Report IIT\u2010GTR\u201034 U.S. Department of Agriculture Forest Service International Institute of Tropical Forestry: San Juan Puerto Rico 26 pp."
+            "issue": "4",
+            "key": "B31",
+            "doi-asserted-by": "crossref",
+            "first-page": "371",
+            "DOI": "10.17763/haer.64.4.u1q517012jt516t6",
+            "article-title": "Writing workshop as carnival: Reflections",
+            "volume": "64",
+            "author": "Lensmire",
+            "year": "1994",
+            "journal-title": "Harvard Educational Review"
         },
         {
-            "key": "e_1_2_7_15_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/aqc.1025"
+            "key": "B32",
+            "volume-title": "We want to do more than survive: Abolitionist teaching and the pursuit of educational freedom",
+            "author": "Love",
+            "year": "2019"
         },
         {
-            "key": "e_1_2_7_16_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s00704-007-0342-0"
+            "issue": "1",
+            "key": "B33",
+            "first-page": "85",
+            "article-title": "At last: The trouble with English",
+            "volume": "39",
+            "author": "Luke",
+            "year": "2004",
+            "journal-title": "Research in the Teaching of English"
         },
         {
-            "key": "e_1_2_7_17_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/qj.828"
+            "key": "B34",
+            "article-title": "The hustle economy",
+            "author": "McMillan Cottom",
+            "year": "2020",
+            "journal-title": "Dissent"
         },
         {
-            "key": "e_1_2_7_18_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/joc.1600"
+            "issue": "6",
+            "key": "B35",
+            "first-page": "488",
+            "article-title": "Writing material",
+            "volume": "76",
+            "author": "Micciche",
+            "year": "2014",
+            "journal-title": "College English"
         },
         {
-            "key": "e_1_2_7_19_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S1464-1909(00)00231-8"
-        },
-        {
-            "key": "e_1_2_7_20_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jhydrol.2006.09.019"
-        },
-        {
-            "key": "e_1_2_7_21_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/joc.4490"
-        },
-        {
-            "key": "e_1_2_7_22_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3354/cr022013"
-        },
-        {
-            "key": "e_1_2_7_23_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/joc.1314"
-        },
-        {
-            "key": "e_1_2_7_24_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/joc.605"
-        },
-        {
-            "key": "e_1_2_7_25_1",
-            "volume-title": "Climate Change 2014. Synthesis Report. Contribution of Working Groups I, II and III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change",
-            "author": "IPCC",
+            "key": "B36",
+            "volume-title": "Qualitative data analysis: A methods sourcebook",
+            "author": "Miles",
             "year": "2014"
         },
         {
-            "key": "e_1_2_7_26_1",
-            "unstructured": "KohonenT HynninenJ KangasJ LaaksonenJ.1996. SOM_PAK. The self\u2010organizing map program package. Technical Report A31 Laboratory of Computer and Information Science Helsinki University of Technology Espoo Finland."
+            "issue": "3",
+            "key": "B37",
+            "first-page": "224",
+            "article-title": "Searching for full vision: Writing representations of African American adolescent girls",
+            "volume": "49",
+            "author": "Muhammad",
+            "year": "2015",
+            "journal-title": "Research in the Teaching of English"
         },
         {
-            "key": "e_1_2_7_27_1",
+            "issue": "2",
+            "key": "B38",
+            "first-page": "95",
+            "article-title": "High school English language arts teachers\u2019 argumentative epistemologies for teaching writing",
+            "volume": "49",
+            "author": "Newell",
+            "year": "2014",
+            "journal-title": "Research in the Teaching of English"
+        },
+        {
+            "issue": "3",
+            "key": "B39",
+            "first-page": "271",
+            "article-title": "The more things change, the more they stay the same: A survey of high school students\u2019 writing experiences",
+            "volume": "39",
+            "author": "Scherff",
+            "year": "2005",
+            "journal-title": "Research in the Teaching of English"
+        },
+        {
+            "issue": "3",
+            "key": "B40",
+            "first-page": "313",
+            "article-title": "Recruiting languages and lifeworlds for border-crossing compositions",
+            "volume": "47",
+            "author": "Skerrett",
+            "year": "2013",
+            "journal-title": "Research in the Teaching of English"
+        },
+        {
+            "key": "B41",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/02723646.2000.10642723"
+            "DOI": "10.1002/jaal.444"
         },
         {
-            "key": "e_1_2_7_28_1",
+            "issue": "3",
+            "key": "B42",
+            "first-page": "200",
+            "article-title": "Examining emotional rules in the English classroom: A critical discourse analysis of one student\u2019s literary responses in two academic contexts",
+            "volume": "49",
+            "author": "Thein",
+            "year": "2015",
+            "journal-title": "Research in the Teaching of English"
+        },
+        {
+            "key": "B43",
+            "volume-title": "The mushroom at the end of the world: On the possibility of life in capitalist ruins",
+            "author": "Tsing",
+            "year": "2015"
+        },
+        {
+            "key": "B44",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/joc.1305"
+            "DOI": "10.1002/rrq.196"
         },
         {
-            "key": "e_1_2_7_29_1",
+            "key": "B45",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1175/1520-0442(1999)012<1577:TMDOMA>2.0.CO;2"
+            "DOI": "10.3102/0091732X08330003"
         },
         {
-            "key": "e_1_2_7_30_1",
+            "issue": "1",
+            "key": "B46",
+            "doi-asserted-by": "crossref",
+            "first-page": "1",
+            "DOI": "10.1177/016146811812000103",
+            "article-title": "Five portraits of teachers\u2019 experiences teaching writing: Negotiating knowledge, student need, and policy",
+            "volume": "120",
+            "author": "Wahleithner",
+            "year": "2018",
+            "journal-title": "Teachers College Record"
+        },
+        {
+            "issue": "3",
+            "key": "B47",
+            "first-page": "201",
+            "article-title": "Beyond strategies: Teacher practice, writing process, and the influence of inquiry",
+            "volume": "40",
+            "author": "Whitney",
+            "year": "2008",
+            "journal-title": "English Education"
+        },
+        {
+            "issue": "7",
+            "key": "B48",
+            "doi-asserted-by": "crossref",
+            "first-page": "525",
+            "DOI": "10.1598/JAAL.54.7.6",
+            "article-title": "Beyond \u201cIs this OK?\u201d: High school writers building understandings of genre",
+            "volume": "54",
+            "author": "Whitney",
+            "year": "2011",
+            "journal-title": "Journal of Adolescent & Adult Literacy"
+        },
+        {
+            "issue": "2",
+            "key": "B49",
+            "first-page": "66",
+            "article-title": "Avoiding the gaze of the test: High-stakes literacy policy implementation",
+            "volume": "5",
+            "author": "Williamson",
+            "year": "2017",
+            "journal-title": "Texas Education Review"
+        },
+        {
+            "key": "B50",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1175/1520-0442(1999)012<0977:CZIPRB>2.0.CO;2"
+            "DOI": "10.1177/2381336919870291"
         },
         {
-            "key": "e_1_2_7_31_1",
+            "issue": "1",
+            "key": "B51",
+            "first-page": "126",
+            "article-title": "Toward a restorative English education",
+            "volume": "48",
+            "author": "Winn",
+            "year": "2013",
+            "journal-title": "Research in the Teaching of English"
+        },
+        {
+            "key": "B52",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1175/1520-0442(1998)011<2713:ENOSOA>2.0.CO;2"
+            "DOI": "10.1086/685848"
         },
         {
-            "key": "e_1_2_7_32_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1175/JTECH-D-11-00103.1"
+            "key": "B53",
+            "volume-title": "Case study research: Design and methods",
+            "author": "Yin",
+            "year": "2014"
         },
         {
-            "key": "e_1_2_7_33_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/2015JD024550"
-        },
-        {
-            "key": "e_1_2_7_34_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s00382-015-2858-9"
-        },
-        {
-            "key": "e_1_2_7_35_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/(SICI)1097-0088(199802)18:2<131::AID-JOC228>3.0.CO;2-S"
-        },
-        {
-            "key": "e_1_2_7_36_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/1468028"
-        },
-        {
-            "key": "e_1_2_7_37_1",
-            "first-page": "114",
-            "volume-title": "Tropical Managed Ecosystems: New Perspectives on Sustainability",
-            "author": "Pringle CM",
-            "year": "1998"
-        },
-        {
-            "key": "e_1_2_7_38_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1029/JC077i027p05255"
-        },
-        {
-            "key": "e_1_2_7_39_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s00382-016-2980-3"
-        },
-        {
-            "key": "e_1_2_7_40_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s00382-007-0359-1"
-        },
-        {
-            "key": "e_1_2_7_41_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/789610199"
-        },
-        {
-            "key": "e_1_2_7_42_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1175/2011JCLI4155.1"
-        },
-        {
-            "key": "e_1_2_7_43_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1029/2009JD011706"
-        },
-        {
-            "key": "e_1_2_7_44_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0309133310397582"
-        },
-        {
-            "key": "e_1_2_7_45_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.5772/54299"
-        },
-        {
-            "key": "e_1_2_7_46_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/07055900.2011.641908"
-        },
-        {
-            "key": "e_1_2_7_47_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1029/2001JC001097"
-        },
-        {
-            "key": "e_1_2_7_48_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1175/EI-D-14-0023.1"
-        },
-        {
-            "key": "e_1_2_7_49_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/joc.2010"
-        },
-        {
-            "key": "e_1_2_7_50_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1175/1520-0442(2003)016<0799:SPDOTN>2.0.CO;2"
+            "issue": "2",
+            "key": "B54",
+            "first-page": "148",
+            "article-title": "Rewriting the curricular script: Teachers and children translating writing practices in a kindergarten classroom",
+            "volume": "48",
+            "author": "Yoon",
+            "year": "2013",
+            "journal-title": "Research in the Teaching of English"
         }
     ],
     "container-title": [
-        "International Journal of Climatology"
+        "Research in the Teaching of English"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fjoc.5364",
-            "content-type": "application/pdf",
-            "content-version": "vor",
-            "intended-application": "text-mining"
-        },
-        {
-            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/joc.5364",
-            "content-type": "application/pdf",
-            "content-version": "vor",
-            "intended-application": "text-mining"
-        },
-        {
-            "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/joc.5364",
-            "content-type": "application/xml",
-            "content-version": "vor",
-            "intended-application": "text-mining"
-        },
-        {
-            "URL": "https://rmets.onlinelibrary.wiley.com/doi/am-pdf/10.1002/joc.5364",
-            "content-type": "application/pdf",
-            "content-version": "am",
-            "intended-application": "syndication"
-        },
-        {
-            "URL": "https://rmets.onlinelibrary.wiley.com/doi/pdf/10.1002/joc.5364",
+            "URL": "https://publicationsncte.org/content/journals/10.58680/rte202332355?crawler=true&mimetype=application/pdf",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -436,100 +505,63 @@
         "date-parts": [
             [
                 2023,
-                9,
-                16
+                8,
+                15
             ]
         ],
-        "date-time": "2023-09-16T23:18:53Z",
-        "timestamp": 1694906333000
+        "date-time": "2023-08-15T02:45:26Z",
+        "timestamp": 1692067526000
     },
-    "score": 12.258417,
+    "score": 14.430676,
     "resource": {
         "primary": {
-            "URL": "https://rmets.onlinelibrary.wiley.com/doi/10.1002/joc.5364"
+            "URL": "https://publicationsncte.org/content/journals/10.58680/rte202332355"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2017,
-                12,
-                13
+                2023,
+                2,
+                1
             ]
         ]
     },
-    "references-count": 49,
+    "references-count": 54,
     "journal-issue": {
-        "issue": "S1",
+        "issue": "3",
         "published-print": {
             "date-parts": [
                 [
-                    2018,
-                    4
+                    2023,
+                    2,
+                    1
                 ]
             ]
         }
     },
-    "alternative-id": [
-        "10.1002/joc.5364"
-    ],
-    "URL": "http://dx.doi.org/10.1002/joc.5364",
-    "archive": [
-        "Portico"
-    ],
+    "URL": "http://dx.doi.org/10.58680/rte202332355",
     "ISSN": [
-        "0899-8418",
-        "1097-0088"
+        "0034-527X",
+        "1943-2348"
     ],
     "issn-type": [
         {
-            "value": "0899-8418",
+            "value": "0034-527X",
             "type": "print"
         },
         {
-            "value": "1097-0088",
+            "value": "1943-2348",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2017,
-                12,
-                13
+                2023,
+                2,
+                1
             ]
         ]
-    },
-    "assertion": [
-        {
-            "value": "2016-08-22",
-            "order": 0,
-            "name": "received",
-            "label": "Received",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2017-10-26",
-            "order": 1,
-            "name": "accepted",
-            "label": "Accepted",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2017-12-13",
-            "order": 2,
-            "name": "published",
-            "label": "Published",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        }
-    ]
+    }
 }

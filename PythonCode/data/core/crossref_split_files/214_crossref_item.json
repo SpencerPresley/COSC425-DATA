@@ -2,300 +2,145 @@
     "indexed": {
         "date-parts": [
             [
-                2024,
-                4,
-                2
+                2023,
+                2,
+                10
             ]
         ],
-        "date-time": "2024-04-02T15:08:25Z",
-        "timestamp": 1712070505986
+        "date-time": "2023-02-10T05:20:01Z",
+        "timestamp": 1676006401081
     },
-    "reference-count": 30,
-    "publisher": "Wiley",
+    "reference-count": 8,
+    "publisher": "Informa UK Limited",
     "issue": "1",
-    "license": [
-        {
-            "start": {
-                "date-parts": [
-                    [
-                        2018,
-                        11,
-                        8
-                    ]
-                ],
-                "date-time": "2018-11-08T00:00:00Z",
-                "timestamp": 1541635200000
-            },
-            "content-version": "vor",
-            "delay-in-days": 0,
-            "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
-        }
-    ],
     "content-domain": {
         "domain": [
-            "onlinelibrary.wiley.com"
+            "www.tandfonline.com"
         ],
         "crossmark-restriction": true
     },
     "short-container-title": [
-        "Infant and Child Development"
+        "ANQ: A Quarterly Journal of Short Articles, Notes and Reviews"
     ],
     "published-print": {
         "date-parts": [
             [
-                2019,
-                1
+                2023,
+                1,
+                2
             ]
         ]
     },
-    "abstract": "<jats:title>Abstract</jats:title><jats:sec><jats:label /><jats:p>Accurately remembering how and when one's own learning occurs is an important metacognitive skill that matures during the early school years. In two studies, the impact of a delay on this ability was examined. In Study 1, 30 children in two age groups (4\u2010year\u2010olds and 5\u2010year\u2010olds) participated in two\u2010staged learning events and were interviewed immediately after each event about the facts they had learned in the events and about how they had acquired them. Children in both age groups learned the facts, but had significant difficulty reporting on their own learning. In Study 2, 79 children in the same age range participated in one staged learning event and were given similar interviews as in Study 1, either immediately after the event or after a 2\u2010 to 3\u2010day delay. Five\u2010year\u2010olds were more accurate in their memories of learning in the delay condition than in the immediate condition, but 4\u2010year\u2010olds showed no performance differences as a function of delay. Findings are interpreted in light of developmental literature on episodic memory, source monitoring, and memory binding.</jats:p></jats:sec><jats:sec><jats:title>Highlights</jats:title><jats:p>\n<jats:list list-type=\"bullet\">\n<jats:list-item><jats:p>How does a delay interval between impact children's ability to accurately recall episodic memories of their own learning?</jats:p></jats:list-item>\n<jats:list-item><jats:p>Children completed staged learning events. Four\u2010 and five\u2010year\u2010olds struggled to recall instances of learning immediately, but five\u2010year\u2010olds improved after a delay.</jats:p></jats:list-item>\n<jats:list-item><jats:p>Five\u2010year\u2010olds, but not four\u2010year\u2010olds, appear to benefit from a moderate delay when recalling learning episodes. This could be due to developments in other metacognitive skills.</jats:p></jats:list-item>\n</jats:list></jats:p></jats:sec>",
-    "DOI": "10.1002/icd.2113",
+    "DOI": "10.1080/0895769x.2020.1860734",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2018,
-                11,
-                8
+                2020,
+                12,
+                21
             ]
         ],
-        "date-time": "2018-11-08T13:43:03Z",
-        "timestamp": 1541684583000
+        "date-time": "2020-12-21T07:33:06Z",
+        "timestamp": 1608535986000
     },
-    "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+    "page": "94-97",
+    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
     "source": "Crossref",
-    "is-referenced-by-count": 2,
+    "is-referenced-by-count": 0,
     "title": [
-        "That was last time! The effect of a delay on children's episodic memories of learning new facts"
+        "\u201cMystery and Magic\u201d: Additional Biblical Allusions in Welty\u2019s \u201cA Worn Path\u201d"
     ],
-    "prefix": "10.1002",
-    "volume": "28",
+    "prefix": "10.1080",
+    "volume": "36",
     "author": [
         {
-            "ORCID": "http://orcid.org/0000-0003-2167-5528",
-            "authenticated-orcid": false,
-            "given": "Rhyannon H.",
-            "family": "Bemis",
+            "given": "Gary",
+            "family": "Harrington",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Salisbury University Department of Psychology  Salisbury Maryland USA"
-                }
-            ]
-        },
-        {
-            "given": "Michelle D.",
-            "family": "Leichtman",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "University of New Hampshire Department of Psychology  Durham New Hampshire USA"
+                    "name": "Salisbury University Fulton School of Liberal Arts"
                 }
             ]
         }
     ],
-    "member": "311",
+    "member": "301",
     "published-online": {
         "date-parts": [
             [
-                2018,
-                11,
-                8
+                2020,
+                12,
+                20
             ]
         ]
     },
     "reference": [
         {
-            "key": "e_1_2_6_2_1",
-            "volume-title": "Remembering the times of our lives: Memory in infancy and beyond",
-            "author": "Bauer P.",
-            "year": "2007"
+            "issue": "3",
+            "key": "cit0001",
+            "first-page": "255",
+            "volume": "66",
+            "author": "Brans Jo",
+            "year": "1981",
+            "journal-title": "Southwest Review"
         },
         {
-            "key": "e_1_2_6_3_1",
+            "key": "cit0002",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/infa.12005"
+            "DOI": "10.2307/813111"
         },
         {
-            "key": "e_1_2_6_4_1",
+            "issue": "1",
+            "key": "cit0003",
+            "first-page": "75",
+            "volume": "71",
+            "author": "Isaacs Neil D.",
+            "year": "1963",
+            "journal-title": "The Sewanee Review"
+        },
+        {
+            "key": "cit0004",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/icd.700"
+            "DOI": "10.2307/3200218"
         },
         {
-            "key": "e_1_2_6_5_1",
+            "key": "cit0005",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/icd.1807"
+            "DOI": "10.2307/3189944"
         },
         {
-            "key": "e_1_2_6_6_1",
-            "doi-asserted-by": "crossref",
-            "first-page": "393",
-            "DOI": "10.1037/0096-3445.126.4.393",
-            "article-title": "Change in memory awareness during learning: The acquisition of knowledge by psychology undergraduates",
-            "volume": "126",
-            "author": "Conway M. A.",
-            "year": "1997",
-            "journal-title": "Journal of Experimental Psychology: General"
+            "issue": "1",
+            "key": "cit0006",
+            "first-page": "62",
+            "volume": "25",
+            "author": "Saunders James Robert",
+            "year": "1992",
+            "journal-title": "The Southern Literary Journal"
         },
         {
-            "key": "e_1_2_6_7_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0956797615607350"
+            "issue": "3",
+            "key": "cit0007",
+            "volume": "53",
+            "author": "Warfield Adrienne Akins",
+            "year": "2017",
+            "journal-title": "Papers on Language & Literature"
         },
         {
-            "key": "e_1_2_6_8_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/1467-7687.00243"
-        },
-        {
-            "key": "e_1_2_6_9_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1073/pnas.0700094104"
-        },
-        {
-            "key": "e_1_2_6_10_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0885-2014(97)90030-7"
-        },
-        {
-            "key": "e_1_2_6_11_1",
-            "volume-title": "Brain quest, revised",
-            "author": "Feder C. W.",
-            "year": "2005"
-        },
-        {
-            "key": "e_1_2_6_12_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/1130499"
-        },
-        {
-            "key": "e_1_2_6_13_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/0885-2014(91)90048-I"
-        },
-        {
-            "key": "e_1_2_6_14_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/acp.947"
-        },
-        {
-            "key": "e_1_2_6_15_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0033-2909.114.1.3"
-        },
-        {
-            "key": "e_1_2_6_16_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jecp.2016.11.002"
-        },
-        {
-            "key": "e_1_2_6_17_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1467-8624.2009.01353.x"
-        },
-        {
-            "key": "e_1_2_6_18_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1207/s15326985ep2802_5"
-        },
-        {
-            "key": "e_1_2_6_19_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/desc.12162"
-        },
-        {
-            "key": "e_1_2_6_20_1",
-            "volume-title": "Origins and development of recollection: Perspectives from psychology and neuroscience (pp. 73\u2013100)",
-            "author": "Newcombe N. S.",
-            "year": "2011"
-        },
-        {
-            "key": "e_1_2_6_21_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/B978-0-12-009735-7.50007-4"
-        },
-        {
-            "key": "e_1_2_6_22_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3102/00028312032001185"
-        },
-        {
-            "key": "e_1_2_6_23_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/dev.21004"
-        },
-        {
-            "key": "e_1_2_6_24_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0278-7393.32.1.89"
-        },
-        {
-            "key": "e_1_2_6_25_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jecp.2015.01.004"
-        },
-        {
-            "key": "e_1_2_6_26_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/15248370701446806"
-        },
-        {
-            "key": "e_1_2_6_27_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/15248372.2011.577759"
-        },
-        {
-            "key": "e_1_2_6_28_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jecp.2007.01.003"
-        },
-        {
-            "key": "e_1_2_6_29_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/icd.1963"
-        },
-        {
-            "key": "e_1_2_6_30_1",
-            "doi-asserted-by": "crossref",
-            "first-page": "1581",
-            "DOI": "10.2307/1131282",
-            "article-title": "Children's understanding of knowledge acquisition: The tendency for children to report they have always known what they have just learned",
-            "volume": "65",
-            "author": "Taylor M.",
-            "year": "1994",
-            "journal-title": "Child Development"
-        },
-        {
-            "key": "e_1_2_6_31_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/dev.21423"
+            "key": "cit0008",
+            "first-page": "142",
+            "volume-title": "The Collected Stories of Eudora Welty",
+            "author": "Welty Eudora",
+            "year": "1980"
         }
     ],
     "container-title": [
-        "Infant and Child Development"
+        "ANQ: A Quarterly Journal of Short Articles, Notes and Reviews"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Ficd.2113",
-            "content-type": "application/pdf",
-            "content-version": "vor",
-            "intended-application": "text-mining"
-        },
-        {
-            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/icd.2113",
-            "content-type": "application/pdf",
-            "content-version": "vor",
-            "intended-application": "text-mining"
-        },
-        {
-            "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/icd.2113",
-            "content-type": "application/xml",
-            "content-version": "vor",
-            "intended-application": "text-mining"
-        },
-        {
-            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/icd.2113",
+            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/0895769X.2020.1860734",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -305,94 +150,85 @@
         "date-parts": [
             [
                 2023,
-                9,
-                14
+                2,
+                9
             ]
         ],
-        "date-time": "2023-09-14T12:35:18Z",
-        "timestamp": 1694694918000
+        "date-time": "2023-02-09T10:14:55Z",
+        "timestamp": 1675937695000
     },
-    "score": 14.915369,
+    "score": 13.687798,
     "resource": {
         "primary": {
-            "URL": "https://onlinelibrary.wiley.com/doi/10.1002/icd.2113"
+            "URL": "https://www.tandfonline.com/doi/full/10.1080/0895769X.2020.1860734"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2018,
-                11,
-                8
+                2020,
+                12,
+                20
             ]
         ]
     },
-    "references-count": 30,
+    "references-count": 8,
     "journal-issue": {
         "issue": "1",
         "published-print": {
             "date-parts": [
                 [
-                    2019,
-                    1
+                    2023,
+                    1,
+                    2
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1002/icd.2113"
+        "10.1080/0895769X.2020.1860734"
     ],
-    "URL": "http://dx.doi.org/10.1002/icd.2113",
-    "archive": [
-        "Portico"
-    ],
+    "URL": "http://dx.doi.org/10.1080/0895769x.2020.1860734",
     "ISSN": [
-        "1522-7227",
-        "1522-7219"
+        "0895-769X",
+        "1940-3364"
     ],
     "issn-type": [
         {
-            "value": "1522-7227",
+            "value": "0895-769X",
             "type": "print"
         },
         {
-            "value": "1522-7219",
+            "value": "1940-3364",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2018,
-                11,
-                8
+                2020,
+                12,
+                20
             ]
         ]
     },
     "assertion": [
         {
-            "value": "2017-09-29",
-            "order": 0,
-            "name": "received",
-            "label": "Received",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2018-09-17",
+            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
             "order": 1,
-            "name": "accepted",
-            "label": "Accepted",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
+            "name": "peerreview_statement",
+            "label": "Peer Review Statement"
         },
         {
-            "value": "2018-11-08",
+            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=vanq20",
+            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=vanq20",
             "order": 2,
+            "name": "aims_and_scope_url",
+            "label": "Aim & Scope"
+        },
+        {
+            "value": "2020-12-20",
+            "order": 3,
             "name": "published",
             "label": "Published",
             "group": {

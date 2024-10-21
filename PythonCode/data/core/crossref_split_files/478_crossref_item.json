@@ -4,963 +4,360 @@
             [
                 2024,
                 9,
-                23
+                25
             ]
         ],
-        "date-time": "2024-09-23T04:11:58Z",
-        "timestamp": 1727064718221
+        "date-time": "2024-09-25T04:37:46Z",
+        "timestamp": 1727239066037
     },
-    "reference-count": 150,
-    "publisher": "Annual Reviews",
-    "issue": "1",
+    "reference-count": 39,
+    "publisher": "Informa UK Limited",
+    "issue": "2",
     "content-domain": {
-        "domain": [],
-        "crossmark-restriction": false
+        "domain": [
+            "www.tandfonline.com"
+        ],
+        "crossmark-restriction": true
     },
     "short-container-title": [
-        "Annu. Rev. Environ. Resour."
+        "Women &amp; Therapy"
     ],
     "published-print": {
         "date-parts": [
             [
-                2019,
-                10,
-                17
+                2024,
+                4,
+                2
             ]
         ]
     },
-    "abstract": "<jats:p> Intertidal mangrove forests are a dynamic ecosystem experiencing rapid changes in extent and habitat quality over geological history, today and into the future. Climate and sea level have drastically altered mangrove distribution since their appearance in the geological record \u223c75 million years ago (Mya), through to the Holocene. In contrast, contemporary mangrove dynamics are driven primarily by anthropogenic threats, including pollution, overextraction, and conversion to aquaculture and agriculture. Deforestation rates have declined in the past decade, but the future of mangroves is uncertain; new deforestation frontiers are opening, particularly in Southeast Asia and West Africa, despite international conservation policies and ambitious global targets for rehabilitation. In addition, geological and climatic processes such as sea-level rise that were important over geological history will continue to influence global mangrove distribution in the future. Recommendations are given to reframe mangrove conservation, with a view to improving the state of mangroves in the future. </jats:p>",
-    "DOI": "10.1146/annurev-environ-101718-033302",
+    "DOI": "10.1080/02703149.2024.2342197",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2019,
-                8,
-                10
+                2024,
+                5,
+                13
             ]
         ],
-        "date-time": "2019-08-10T00:33:52Z",
-        "timestamp": 1565397232000
+        "date-time": "2024-05-13T07:21:33Z",
+        "timestamp": 1715584893000
     },
-    "page": "89-115",
+    "page": "225-250",
+    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
     "source": "Crossref",
-    "is-referenced-by-count": 441,
+    "is-referenced-by-count": 0,
     "title": [
-        "The State of the World's Mangrove Forests: Past, Present, and Future"
+        "Making Waves in Academia: Asian/Asian American Feminist Mentoring as Activism"
     ],
-    "prefix": "10.1146",
-    "volume": "44",
+    "prefix": "10.1080",
+    "volume": "47",
     "author": [
         {
-            "given": "Daniel A.",
-            "family": "Friess",
+            "ORCID": "http://orcid.org/0000-0001-6993-5996",
+            "authenticated-orcid": false,
+            "given": "Grace",
+            "family": "S. Kim",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Department of Geography, National University of Singapore, Singapore 117570;"
-                },
-                {
-                    "name": "Mangrove Specialist Group, International Union for Conservation of Nature (IUCN)"
+                    "name": "Boston University, Boston, MA, USA"
                 }
             ]
         },
         {
-            "given": "Kerrylee",
-            "family": "Rogers",
+            "ORCID": "http://orcid.org/0000-0003-3812-0406",
+            "authenticated-orcid": false,
+            "given": "Yuki",
+            "family": "Okubo",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "School of Earth and Environmental Science, University of Wollongong, Wollongong, New South Wales 2522, Australia"
+                    "name": "Salisbury University, Salisbury, MD, USA"
                 }
             ]
         },
         {
-            "given": "Catherine E.",
-            "family": "Lovelock",
+            "ORCID": "http://orcid.org/0000-0003-3743-6935",
+            "authenticated-orcid": false,
+            "given": "Matthew",
+            "family": "R. Lee",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "School of Biological Sciences, The University of Queensland, Brisbane St. Lucia, Queensland 4072, Australia"
+                    "name": "Northeastern University, Boston, MA, USA"
                 }
             ]
         },
         {
-            "given": "Ken W.",
-            "family": "Krauss",
+            "ORCID": "http://orcid.org/0000-0003-2113-027X",
+            "authenticated-orcid": false,
+            "given": "Jean-Arellia",
+            "family": "C. Tolentino",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Wetland and Aquatic Research Center, United States Geological Survey, Lafayette, Louisiana 70506, USA"
+                    "name": "Independent Researcher, Oakland, CA, USA"
                 }
             ]
         },
         {
-            "given": "Stuart E.",
-            "family": "Hamilton",
+            "ORCID": "http://orcid.org/0000-0003-2374-4953",
+            "authenticated-orcid": false,
+            "given": "Tanvi",
+            "family": "N. Shah",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Department of Geography and Geosciences, Salisbury University, Salisbury, Maryland 21801, USA"
+                    "name": "Boston University, Boston, MA, USA"
                 }
             ]
         },
         {
-            "given": "Shing Yip",
-            "family": "Lee",
+            "given": "Sarah",
+            "family": "Yi",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Mangrove Specialist Group, International Union for Conservation of Nature (IUCN)"
-                },
-                {
-                    "name": "Simon F.S. Li Marine Science Laboratory, Chinese University of Hong Kong, Shatin, Hong Kong"
-                }
-            ]
-        },
-        {
-            "given": "Richard",
-            "family": "Lucas",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Geography and Earth Sciences, Aberystwyth University, Aberystwyth SY23 3DB, United Kingdom"
-                }
-            ]
-        },
-        {
-            "given": "Jurgenne",
-            "family": "Primavera",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Mangrove Specialist Group, International Union for Conservation of Nature (IUCN)"
-                },
-                {
-                    "name": "Zoological Society of London, Iloilo City 5000, Philippines"
-                }
-            ]
-        },
-        {
-            "given": "Anusha",
-            "family": "Rajkaran",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Biodiversity and Conservation Biology, University of the Western Cape, Bellville 7535, South Africa"
-                }
-            ]
-        },
-        {
-            "given": "Suhua",
-            "family": "Shi",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "School of Life Sciences, Sun Yat-Sen University, Guangzhou 510275, China"
+                    "name": "Independent Practice, Chicago, IL, USA"
                 }
             ]
         }
     ],
-    "member": "22",
+    "member": "301",
+    "published-online": {
+        "date-parts": [
+            [
+                2024,
+                5,
+                13
+            ]
+        ]
+    },
     "reference": [
         {
-            "key": "B1",
+            "key": "e_1_3_3_2_1",
+            "unstructured": "American Council on Education (n.d.). Race and ethnicity of U.S. graduate students. https://www.equityinhighered.org/indicators/enrollment-in-graduate-education/race-and-ethnicity-of-u-s-graduate-students/"
+        },
+        {
+            "key": "e_1_3_3_3_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1890/10-1510.1"
+            "DOI": "10.1177/001000018823782"
         },
         {
-            "key": "B2",
+            "key": "e_1_3_3_4_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/fee.1451"
+            "DOI": "10.1002/j.2161-1912.2012.00007.x"
         },
         {
-            "key": "B3",
+            "key": "e_1_3_3_5_1",
+            "first-page": "428",
+            "article-title": "A multicultural feminist model of mentoring",
+            "volume": "32",
+            "author": "Benishek L. A.",
+            "year": "2004",
+            "unstructured": "Benishek, L. A., Bieschke, K. J., Park, J., & Slattery, S. M. (2004). A multicultural feminist model of mentoring. Journal of Multicultural Counseling & Development, 32, 428\u2013442.",
+            "journal-title": "Journal of Multicultural Counseling & Development"
+        },
+        {
+            "key": "e_1_3_3_6_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1073/pnas.1510272113"
+            "DOI": "10.1080/13611267.2017.1416265"
         },
         {
-            "key": "B4",
+            "key": "e_1_3_3_7_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1371/journal.pone.0179302"
+            "DOI": "10.1037/cou0000079"
         },
         {
-            "key": "B5",
+            "key": "e_1_3_3_8_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1442-9993.2006.01581.x"
+            "DOI": "10.1080/19416520.2011.576087"
         },
         {
-            "key": "B6",
+            "volume-title": "Collaborative autoethnography",
+            "year": "2021",
+            "author": "Chang H.",
+            "key": "e_1_3_3_9_1",
+            "unstructured": "Chang, H., Ngunjiri, F. W., & Hernandez, K. C. (2021). Collaborative autoethnography. Left Coast Press."
+        },
+        {
+            "key": "e_1_3_3_10_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1038/nature15538"
+            "DOI": "10.1177/1077800404269420"
         },
         {
-            "key": "B7",
+            "key": "e_1_3_3_11_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1071/MF16322"
+            "DOI": "10.1037/ort0000411"
         },
         {
-            "issue": "3",
-            "key": "B8",
-            "volume": "3",
-            "author": "Saenger P",
-            "year": "1983",
-            "journal-title": "Environmentalist"
-        },
-        {
-            "key": "B9",
-            "volume-title": "World Mangrove Atlas",
-            "author": "Spalding M",
-            "year": "1997"
-        },
-        {
-            "key": "B10",
+            "key": "e_1_3_3_12_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1641/0006-3568(2001)051[0807:MFOOTW]2.0.CO;2"
+            "DOI": "10.1080/02703149.2019.1684677"
         },
         {
-            "key": "B11",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1017/S0376892902000231"
-        },
-        {
-            "key": "B12",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1126/science.317.5834.41b"
-        },
-        {
-            "key": "B13",
-            "author": "Food Agric. Organ. U. N. (FAO)",
-            "year": "2003",
-            "journal-title": "Status and trends in mangrove area extent worldwide"
-        },
-        {
-            "key": "B14",
-            "volume-title": "The world's mangroves 1980\u20132005",
-            "author": "Food Agric. Organ. U. N. (FAO)",
-            "year": "2007"
-        },
-        {
-            "key": "B15",
-            "author": "Van Bochove J",
+            "volume-title": "Internalized oppression: The psychology of marginalized groups",
             "year": "2014",
-            "journal-title": "The importance of mangroves to people: a call to action"
+            "author": "David E. J. R.",
+            "key": "e_1_3_3_13_1",
+            "unstructured": "David, E. J. R. (2014). Internalized oppression: The psychology of marginalized groups. Springer."
         },
         {
-            "key": "B16",
+            "key": "e_1_3_3_14_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10750-017-3331-z"
+            "DOI": "10.1007/s11133-014-9289-5"
         },
         {
-            "key": "B17",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/978-3-319-62206-4_2"
-        },
-        {
-            "key": "B18",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1023/A:1011148522181"
-        },
-        {
-            "key": "B19",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1371/journal.pone.0145385"
-        },
-        {
-            "key": "B20",
-            "first-page": "35634",
-            "volume": "6",
-            "author": "Zhang Z",
-            "year": "2016",
-            "journal-title": "Rep"
-        },
-        {
-            "key": "B21",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1023/A:1011118204434"
-        },
-        {
-            "key": "B22",
-            "doi-asserted-by": "crossref",
-            "first-page": "721",
-            "DOI": "10.1093/nsr/nwx065",
-            "volume": "4",
-            "author": "Xu S",
-            "year": "2017",
-            "journal-title": "Nat. Sci. Rev."
-        },
-        {
-            "key": "B23",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1086/508711"
-        },
-        {
-            "key": "B24",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/jbi.13151"
-        },
-        {
-            "key": "B25",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1186/s12864-015-1813-9"
-        },
-        {
-            "key": "B26",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF00029124"
-        },
-        {
-            "key": "B27",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s00468-001-0141-7"
-        },
-        {
-            "key": "B28",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1130/G38547.1"
-        },
-        {
-            "key": "B29",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1017/CBO9781139024440"
-        },
-        {
-            "key": "B30",
-            "first-page": "65",
-            "volume-title": "Coastal Wetlands: An Integrated Ecosystem Approach",
-            "author": "Woodroffe CD",
-            "year": "2009"
-        },
-        {
-            "key": "B31",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/0033-5894(78)90033-9"
-        },
-        {
-            "key": "B32",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/geb.12449"
-        },
-        {
-            "key": "B33",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1126/science.288.5468.1033"
-        },
-        {
-            "key": "B34",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.palaeo.2009.04.008"
-        },
-        {
-            "key": "B35",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.quascirev.2008.10.010"
-        },
-        {
-            "key": "B36",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.yqres.2012.07.001"
-        },
-        {
-            "key": "B37",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.quaint.2009.11.032"
-        },
-        {
-            "key": "B38",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1745-5871.2006.00360.x"
-        },
-        {
-            "key": "B39",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1023/A:1003886725832"
-        },
-        {
-            "key": "B40",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/0037-0738(93)90016-X"
-        },
-        {
-            "key": "B41",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1038/317711a0"
-        },
-        {
-            "key": "B42",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF00300959"
-        },
-        {
-            "key": "B43",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.ecss.2010.05.001"
-        },
-        {
-            "key": "B44",
-            "first-page": "960",
-            "volume": "59",
-            "author": "Parkinson RW.",
-            "year": "1989",
-            "journal-title": "J. Sediment. Res."
-        },
-        {
-            "key": "B45",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/0025-3227(81)90085-2"
-        },
-        {
-            "key": "B46",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1130/0016-7606(1979)90<59:EOFBFI>2.0.CO;2"
-        },
-        {
-            "key": "B47",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1017/RDC.2016.3"
-        },
-        {
-            "key": "B48",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00438240600708188"
-        },
-        {
-            "key": "B49",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.foreco.2016.03.020"
-        },
-        {
-            "key": "B50",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3197/096734005774462754"
-        },
-        {
-            "key": "B51",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0959683610365941"
-        },
-        {
-            "key": "B52",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.ocecoaman.2015.10.015"
-        },
-        {
-            "key": "B53",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.5343/bms.2012.1069"
-        },
-        {
-            "key": "B54",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1365-2109.1997.tb01006.x"
-        },
-        {
-            "key": "B55",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.marpolbul.2003.09.006"
-        },
-        {
-            "key": "B56",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1365-2699.2007.01806.x"
-        },
-        {
-            "key": "B57",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1365-2109.2009.02360.x"
-        },
-        {
-            "key": "B58",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/1747423X.2010.550694"
-        },
-        {
-            "key": "B59",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10661-007-9636-z"
-        },
-        {
-            "key": "B60",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.ocecoaman.2012.12.014"
-        },
-        {
-            "key": "B61",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10668-004-6001-z"
-        },
-        {
-            "key": "B62",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s13157-013-0449-2"
+            "key": "e_1_3_3_15_1",
+            "unstructured": "Education Data Initiative (2021). College enrollment and student demographic statistics. https://educationdata.org/college-enrollment-statistics#international"
         },
         {
-            "key": "B63",
+            "key": "e_1_3_3_16_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.3390/s8042104"
+            "DOI": "10.1037/10929-009"
         },
         {
-            "key": "B64",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.gloenvcha.2013.10.007"
-        },
-        {
-            "key": "B65",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.ocecoaman.2016.03.011"
-        },
-        {
-            "key": "B66",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.foreco.2008.08.037"
-        },
-        {
-            "key": "B67",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s12237-013-9638-8"
-        },
-        {
-            "key": "B68",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.ocecoaman.2014.11.006"
-        },
-        {
-            "key": "B69",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.geoforum.2014.02.013"
-        },
-        {
-            "key": "B70",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s00468-001-0150-6"
-        },
-        {
-            "key": "B71",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1023/A:1011125310794"
-        },
-        {
-            "key": "B72",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.marpolbul.2016.06.082"
-        },
-        {
-            "key": "B73",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.4324/9781849776608"
-        },
-        {
-            "key": "B74",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/geb.12140"
-        },
-        {
-            "key": "B75",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1466-8238.2010.00584.x"
-        },
-        {
-            "key": "B76",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3390/rs10101669"
-        },
-        {
-            "key": "B77",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/jpe/rtp009"
-        },
-        {
-            "key": "B78",
-            "volume-title": "Attaining Aichi Target 11: How well are marine ecosystem services covered by protected areas?",
-            "author": "Spalding M",
-            "year": "2014"
-        },
-        {
-            "key": "B79",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/cobi.12784"
-        },
-        {
-            "key": "B80",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1890/14-1853.1"
-        },
-        {
-            "key": "B81",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.chemosphere.2017.03.027"
-        },
-        {
-            "key": "B82",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.marpolbul.2016.06.083"
-        },
-        {
-            "key": "B83",
-            "volume-title": "Goals and Objectives",
-            "author": "Global Mangrove Alliance",
-            "year": "2018"
-        },
-        {
-            "key": "B84",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1371/journal.pone.0118571"
-        },
-        {
-            "key": "B85",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1073/pnas.1211658109"
-        },
-        {
-            "key": "B86",
-            "doi-asserted-by": "crossref",
-            "first-page": "1067",
-            "DOI": "10.1111/jfb.12187",
-            "volume": "83",
-            "author": "Beveridge MCM",
-            "year": "2013",
-            "journal-title": "J. Fish Biol."
-        },
-        {
-            "key": "B87",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.aquaculture.2015.02.001"
-        },
-        {
-            "key": "B88",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1073/pnas.1808737115"
-        },
-        {
-            "key": "B89",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.scitotenv.2017.09.309"
-        },
-        {
-            "key": "B90",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.marpol.2017.02.002"
-        },
-        {
-            "key": "B91",
-            "volume-title": "Salt-affected soils of Malaysia",
-            "author": "Hashim GM.",
-            "year": "2003"
-        },
-        {
-            "key": "B92",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/01436597.2015.1120155"
-        },
-        {
-            "key": "B93",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/sjtg.12228"
-        },
-        {
-            "key": "B94",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/978-4-431-56481-2_11"
-        },
-        {
-            "key": "B95",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10750-018-3673-1"
-        },
-        {
-            "key": "B96",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1098/rsbl.2018.0781"
-        },
-        {
-            "key": "B97",
-            "volume-title": "Supplement to the 2006 IPCC Guidelines for National Greenhouse Gas Inventories: Wetlands",
-            "author": "Intergov. Panel Clim. Change (IPCC)",
-            "year": "2013"
-        },
-        {
-            "key": "B98",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1038/s41558-018-0090-4"
-        },
-        {
-            "key": "B99",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1038/nclimate3326"
-        },
-        {
-            "key": "B100",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1098/rsbl.2018.0251"
-        },
-        {
-            "key": "B101",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1038/ngeo1123"
-        },
-        {
-            "key": "B102",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.marpol.2015.12.020"
-        },
-        {
-            "key": "B103",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.ecolecon.2014.07.028"
-        },
-        {
-            "key": "B104",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2989/16085914.2016.1146122"
-        },
-        {
-            "key": "B105",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s11273-008-9101-y"
-        },
-        {
-            "key": "B106",
-            "first-page": "217",
-            "volume-title": "Treatise on Estuarine and Coastal Science",
-            "author": "Primavera JH",
-            "year": "2012"
-        },
-        {
-            "key": "B107",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/rec.12492"
-        },
-        {
-            "key": "B108",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1890/15-1077"
-        },
-        {
-            "key": "B109",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.ecoleng.2004.10.003"
-        },
-        {
-            "key": "B110",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3354/meps09364"
+            "volume-title": "Applications for new awards",
+            "year": "2020",
+            "author": "Federal Register",
+            "key": "e_1_3_3_17_1",
+            "unstructured": "Federal Register (2020). Applications for new awards. Asian American and Native American."
         },
         {
-            "issue": "2",
-            "key": "B111",
+            "key": "e_1_3_3_18_1",
             "first-page": "53",
-            "volume": "7",
-            "author": "Brown B",
-            "year": "2014",
-            "journal-title": "SAPIENS"
+            "article-title": "\u201cIt\u2019s not you. You belong here.\u201d A Latinx conversation on mentorship and belonging in the academy",
+            "volume": "49",
+            "author": "Garcia C.",
+            "year": "2021",
+            "unstructured": "Garcia, C., Campos, L. H., Garcia de Mueller, G., & Cedillo, C. V. (2021). \u201cIt\u2019s not you. You belong here.\u201d A Latinx conversation on mentorship and belonging in the academy. Composition Studies, 49, 53\u201369.",
+            "journal-title": "Composition Studies"
         },
         {
-            "key": "B112",
+            "key": "e_1_3_3_19_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.marpolbul.2016.05.049"
+            "DOI": "10.1080/00131946.2015.1075989"
         },
         {
-            "key": "B113",
+            "key": "e_1_3_3_20_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s11273-014-9383-1"
+            "DOI": "10.1037/dhe0000118"
         },
         {
-            "key": "B114",
+            "volume-title": "Breaking the bamboo ceiling: Career strategies for Asians",
+            "year": "2005",
+            "author": "Hyun J.",
+            "key": "e_1_3_3_21_1",
+            "unstructured": "Hyun, J. (2005). Breaking the bamboo ceiling: Career strategies for Asians. HarperCollins."
+        },
+        {
+            "key": "e_1_3_3_22_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0921-8009(00)00170-1"
+            "DOI": "10.1080/02703149.2019.1684684"
         },
         {
-            "key": "B115",
-            "volume-title": "A guide to the Restoration Opportunities Assessment Methodology (ROAM): Assessing forest landscape restoration opportunities at the national or sub-national level",
-            "author": "Int. Union Conserv. Nat. (IUCN), World Resour. Inst. (WRI)",
-            "year": "2014"
-        },
-        {
-            "key": "B116",
+            "key": "e_1_3_3_23_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.ocecoaman.2015.10.008"
+            "DOI": "10.1080/13613324.2020.1753675"
         },
         {
-            "key": "B117",
+            "key": "e_1_3_3_24_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.ecss.2006.12.019"
+            "DOI": "10.1080/15427609.2021.1942686"
         },
         {
-            "key": "B118",
+            "key": "e_1_3_3_25_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.csr.2008.09.017"
+            "DOI": "10.1102/ss.20343"
         },
         {
-            "key": "B119",
+            "volume-title": "A consideration of feminist process",
+            "author": "Lakeman L.",
+            "key": "e_1_3_3_26_1",
+            "unstructured": "Lakeman, L. (n.d.). A consideration of feminist process. Canadian Association of Sexual Assault Centres. https://casac.ca/a-consideration-of-feminist-process-2/"
+        },
+        {
+            "key": "e_1_3_3_27_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/esp.3759"
+            "DOI": "10.1080/13611267.2016.1275390"
         },
         {
-            "key": "B120",
+            "key": "e_1_3_3_28_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.marpolbul.2017.11.008"
+            "DOI": "10.1108/IJMCE-02-2019-0026"
         },
         {
-            "key": "B121",
+            "key": "e_1_3_3_29_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.geomorph.2018.06.018"
+            "DOI": "10.1037/aap0000104"
         },
         {
-            "key": "B122",
+            "key": "e_1_3_3_30_1",
+            "unstructured": "National Center for Education Statistics (n.d.). Asian American and Pacific Islander heritage month. https://nces.ed.gov/fastfacts/display.asp?id=1102"
+        },
+        {
+            "key": "e_1_3_3_31_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/1365-2745.12571"
+            "DOI": "10.1002/aehe.20013"
         },
         {
-            "key": "B123",
+            "key": "e_1_3_3_32_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/gcb.12341"
+            "DOI": "10.1177/0011000011429831"
         },
         {
-            "key": "B124",
+            "key": "e_1_3_3_33_1",
+            "first-page": "31",
+            "volume-title": "Asian Americans and Pacific Islanders in higher education: Research and perspectives on identity, leadership, and success",
+            "author": "Pendakur S.",
+            "year": "2012",
+            "unstructured": "Pendakur, S., & Pendakur, V. (2012). Let\u2019s get radical: Being a practitioner-ally for Asian Pacific Islander American college students. In D. Ching & A. Agbayani (Eds.). Asian Americans and Pacific Islanders in higher education: Research and perspectives on identity, leadership, and success (pp. 31\u201355). NASPA-Students Affairs Administrators in Higher Education."
+        },
+        {
+            "key": "e_1_3_3_34_1",
+            "unstructured": "Postsecondary National Policy Institute (2021). Factsheets: Asian American and Pacific Islander students. Retrieved from https://pnpi.org/asian-americans-and-pacific-islanders/"
+        },
+        {
+            "key": "e_1_3_3_35_1",
+            "unstructured": "Rothberg S. (2020 October 19). List of AANAPISIs. Retrieved from https://www.collegerecruiter.com/blog/2020/10/19/list-of-aanapisis/"
+        },
+        {
+            "key": "e_1_3_3_36_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1073/pnas.1315800111"
+            "DOI": "10.1111/j.1471-6402.2010.01604.x"
         },
         {
-            "key": "B125",
+            "key": "e_1_3_3_37_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1890/06-1614.1"
+            "DOI": "10.1080/0966369X.2019.1636768"
         },
         {
-            "key": "B126",
+            "key": "e_1_3_3_38_1",
+            "volume-title": "Basics of qualitative research: Techniques and procedures for developing grounded theory",
+            "author": "Strauss A. L.",
+            "year": "1998",
+            "unstructured": "Strauss, A. L., & Corbin, J. M. (1998). Basics of qualitative research: Techniques and procedures for developing grounded theory (2nd ed.). Sage.",
+            "edition": "2"
+        },
+        {
+            "key": "e_1_3_3_39_1",
+            "unstructured": "Truong K. A. (2021 May 28). Making the invisible visible. Inside Higher Ed. https://www.insidehighered.com/advice/2021/05/28/why-and-how-colleges-should-acknowledge-invisible-labor-faculty-color-opinion"
+        },
+        {
+            "key": "e_1_3_3_40_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1890/11-1430.1"
-        },
-        {
-            "key": "B127",
-            "first-page": "51",
-            "volume-title": "Mangroves of the Western Indian Ocean: Status and Management",
-            "author": "Rajkaran A",
-            "year": "2016"
-        },
-        {
-            "key": "B128",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1146/annurev-marine-122414-034025"
-        },
-        {
-            "key": "B129",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1038/s41586-018-0476-5"
-        },
-        {
-            "key": "B130",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/conl.12213"
-        },
-        {
-            "key": "B131",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1071/MF17252"
-        },
-        {
-            "key": "B132",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s00027-014-0377-0"
-        },
-        {
-            "key": "B133",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.gloplacha.2015.12.018"
-        },
-        {
-            "key": "B134",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/nph.12605"
-        },
-        {
-            "key": "B135",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1006/ecss.1996.0120"
-        },
-        {
-            "key": "B136",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0272-7714(02)00184-1"
-        },
-        {
-            "key": "B137",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1098/rstb.2010.0094"
-        },
-        {
-            "key": "B138",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10750-017-3178-3"
-        },
-        {
-            "key": "B139",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1466-8238.2007.00317.x"
-        },
-        {
-            "key": "B140",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.ecss.2014.11.026"
-        },
-        {
-            "key": "B141",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1046/j.1365-2745.2003.00841.x"
-        },
-        {
-            "key": "B142",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1371/journal.pone.0107868"
-        },
-        {
-            "key": "B143",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1038/nclimate1756"
-        },
-        {
-            "key": "B144",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/2016JG003510"
-        },
-        {
-            "key": "B145",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/ecm.1248"
-        },
-        {
-            "key": "B146",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10750-014-2091-2"
-        },
-        {
-            "key": "B147",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10750-017-3149-8"
-        },
-        {
-            "key": "B148",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1038/s41598-017-01927-6"
-        },
-        {
-            "key": "B149",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.ecss.2018.10.011"
-        },
-        {
-            "key": "B150",
-            "author": "Miththapala S.",
-            "year": "2008",
-            "journal-title": "Mangroves"
+            "DOI": "10.1177/0011000003031003001"
         }
     ],
     "container-title": [
-        "Annual Review of Environment and Resources"
+        "Women &amp; Therapy"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://www.annualreviews.org/doi/pdf/10.1146/annurev-environ-101718-033302",
+            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/02703149.2024.2342197",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -969,67 +366,92 @@
     "deposited": {
         "date-parts": [
             [
-                2021,
-                10,
-                9
+                2024,
+                9,
+                24
             ]
         ],
-        "date-time": "2021-10-09T02:54:37Z",
-        "timestamp": 1633748077000
+        "date-time": "2024-09-24T21:02:48Z",
+        "timestamp": 1727211768000
     },
-    "score": 8.712733,
+    "score": 14.129845,
     "resource": {
         "primary": {
-            "URL": "https://www.annualreviews.org/doi/10.1146/annurev-environ-101718-033302"
+            "URL": "https://www.tandfonline.com/doi/full/10.1080/02703149.2024.2342197"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2019,
-                10,
-                17
+                2024,
+                4,
+                2
             ]
         ]
     },
-    "references-count": 150,
+    "references-count": 39,
     "journal-issue": {
-        "issue": "1",
+        "issue": "2",
         "published-print": {
             "date-parts": [
                 [
-                    2019,
-                    10,
-                    17
+                    2024,
+                    4,
+                    2
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1146/annurev-environ-101718-033302"
+        "10.1080/02703149.2024.2342197"
     ],
-    "URL": "http://dx.doi.org/10.1146/annurev-environ-101718-033302",
+    "URL": "http://dx.doi.org/10.1080/02703149.2024.2342197",
     "ISSN": [
-        "1543-5938",
-        "1545-2050"
+        "0270-3149",
+        "1541-0315"
     ],
     "issn-type": [
         {
-            "value": "1543-5938",
-            "type": "print"
+            "type": "print",
+            "value": "0270-3149"
         },
         {
-            "value": "1545-2050",
-            "type": "electronic"
+            "type": "electronic",
+            "value": "1541-0315"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2019,
-                10,
-                17
+                2024,
+                4,
+                2
             ]
         ]
-    }
+    },
+    "assertion": [
+        {
+            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
+            "order": 1,
+            "name": "peerreview_statement",
+            "label": "Peer Review Statement"
+        },
+        {
+            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=wwat20",
+            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=wwat20",
+            "order": 2,
+            "name": "aims_and_scope_url",
+            "label": "Aim & Scope"
+        },
+        {
+            "value": "2024-05-13",
+            "order": 3,
+            "name": "published",
+            "label": "Published",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
+        }
+    ]
 }

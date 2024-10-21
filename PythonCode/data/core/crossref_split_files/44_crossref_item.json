@@ -2,493 +2,590 @@
     "indexed": {
         "date-parts": [
             [
-                2023,
-                12,
-                15
+                2024,
+                9,
+                1
             ]
         ],
-        "date-time": "2023-12-15T11:21:17Z",
-        "timestamp": 1702639277027
+        "date-time": "2024-09-01T08:24:55Z",
+        "timestamp": 1725179095396
     },
-    "reference-count": 66,
-    "publisher": "Informa UK Limited",
-    "issue": "1",
+    "reference-count": 85,
+    "publisher": "SAGE Publications",
+    "issue": "4",
+    "license": [
+        {
+            "start": {
+                "date-parts": [
+                    [
+                        2017,
+                        9,
+                        6
+                    ]
+                ],
+                "date-time": "2017-09-06T00:00:00Z",
+                "timestamp": 1504656000000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "http://journals.sagepub.com/page/policies/text-and-data-mining-license"
+        }
+    ],
     "content-domain": {
         "domain": [
-            "www.tandfonline.com"
+            "journals.sagepub.com"
         ],
         "crossmark-restriction": true
     },
     "short-container-title": [
-        "Marketing Education Review"
+        "Group &amp; Organization Management"
     ],
     "published-print": {
         "date-parts": [
             [
-                2022,
-                1,
-                2
+                2019,
+                8
             ]
         ]
     },
-    "DOI": "10.1080/10528008.2021.1910522",
+    "abstract": "<jats:p>Drawing on expectation states theory and expertise utilization literature, we examine the effects of team members\u2019 actual expertise and social status on the degree of influence they exert over team processes via perceived expertise. We also explore the conditions under which teams rely on perceived expertise versus social status in determining influence relationships in teams. To do so, we present a contingency model in which the salience of expertise and social status depends on the types of intragroup conflicts. Using multiwave survey data from 50 student project teams with 320 members at a large national research institute located in South Korea, we found that both actual expertise and social status had direct and indirect effects on member influence through perceived expertise. Furthermore, perceived expertise at the early stage of team projects is driven by social status, whereas perceived expertise at the later stage of a team project is mainly driven by actual expertise. Finally, we found that members who are being perceived as experts are more influential when task conflict is high or when relationship conflict is low. We discuss the implications of these findings for research and practice.</jats:p>",
+    "DOI": "10.1177/1059601117728145",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2021,
-                4,
-                8
+                2017,
+                9,
+                7
             ]
         ],
-        "date-time": "2021-04-08T17:18:23Z",
-        "timestamp": 1617902303000
+        "date-time": "2017-09-07T10:54:13Z",
+        "timestamp": 1504781653000
     },
-    "page": "54-64",
-    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
+    "page": "745-776",
+    "update-policy": "http://dx.doi.org/10.1177/sage-journals-update-policy",
     "source": "Crossref",
-    "is-referenced-by-count": 2,
+    "is-referenced-by-count": 11,
     "title": [
-        "THE MANDATORY INTERNAL ROLE-PLAY SALES COMPETITION: EFFECTS ON CLASSROOM EFFICIENCY AND SALES CAREER INTENT"
+        "The Effects of Expertise and Social Status on Team Member Influence and the Moderating Roles of Intragroup Conflicts"
     ],
-    "prefix": "10.1080",
-    "volume": "32",
+    "prefix": "10.1177",
+    "volume": "44",
     "author": [
         {
-            "ORCID": "http://orcid.org/0000-0002-7642-3435",
-            "authenticated-orcid": false,
-            "given": "Aaron",
-            "family": "Johnson",
+            "given": "Woonki",
+            "family": "Hong",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA"
+                    "name": "Ulsan National Institute of Science and Technology, Ulsan, South Korea"
                 }
             ]
         },
         {
-            "ORCID": "http://orcid.org/0000-0003-3019-0506",
-            "authenticated-orcid": false,
-            "given": "M. Judi",
-            "family": "Billups",
+            "given": "Lu",
+            "family": "Zhang",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA"
+                    "name": "Ulsan National Institute of Science and Technology, Ulsan, South Korea"
                 }
             ]
         },
         {
-            "given": "Amit",
-            "family": "Poddar",
+            "given": "Kwangwook",
+            "family": "Gang",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA"
+                    "name": "Salisbury University, Maryland, USA"
+                }
+            ]
+        },
+        {
+            "given": "Boreum",
+            "family": "Choi",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "University of Seoul, Seoul, South Korea"
                 }
             ]
         }
     ],
-    "member": "301",
+    "member": "179",
     "published-online": {
         "date-parts": [
             [
-                2021,
-                4,
-                8
+                2017,
+                9,
+                6
             ]
         ]
     },
     "reference": [
         {
-            "key": "cit0001",
+            "key": "bibr1-1059601117728145",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10528008.2015.1044859"
+            "DOI": "10.2307/256633"
         },
         {
-            "key": "cit0002",
-            "unstructured": "American Assembly of Collegiate Schools of Business (2019), Eligibility procedures and accreditation standards for business accreditation. Accessed January 1, 2020. Retrieved from https://www.aacsb.edu/-/media/1f7806c0739e49b48bed544577e3edd5.ashx"
-        },
-        {
-            "key": "cit0003",
-            "volume-title": "Feedback and human behavior",
-            "author": "Annett J.",
-            "year": "1969"
-        },
-        {
-            "issue": "23",
-            "key": "cit0004",
-            "volume": "1986",
-            "author": "Bandura A.",
-            "year": "1986",
-            "journal-title": "Englewood Cliffs"
-        },
-        {
-            "key": "cit0005",
+            "key": "bibr2-1059601117728145",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/1350507606060980"
+            "DOI": "10.1037/0022-3514.83.6.1362"
         },
         {
-            "key": "cit0006",
+            "key": "bibr3-1059601117728145",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/027347538300500103"
+            "DOI": "10.1177/109442819814001"
         },
         {
-            "key": "cit0007",
+            "key": "bibr4-1059601117728145",
+            "first-page": "349",
+            "volume-title": "Multi-level theory, research and methods in organizations: Foundations, extensions, and new directions",
+            "author": "Bliese P. D.",
+            "year": "2000"
+        },
+        {
+            "key": "bibr5-1059601117728145",
             "doi-asserted-by": "publisher",
-            "DOI": "10.3200/JOEB.81.5.242-249"
+            "DOI": "10.1016/S0749-5978(02)00010-9"
         },
         {
-            "key": "cit0008",
+            "key": "bibr6-1059601117728145",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/002224299405800206"
+            "DOI": "10.1016/j.obhdp.2006.05.001"
         },
         {
-            "key": "cit0009",
+            "key": "bibr7-1059601117728145",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10528008.2006.11488931"
+            "DOI": "10.1287/mnsc.49.4.432.14428"
         },
         {
-            "key": "cit0010",
+            "key": "bibr8-1059601117728145",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0022-4359(00)00028-2"
+            "DOI": "10.1037/0021-9010.69.2.214"
         },
         {
-            "key": "cit0011",
+            "key": "bibr9-1059601117728145",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0273475313481157"
+            "DOI": "10.1287/orsc.1040.0069"
         },
         {
-            "key": "cit0012",
+            "key": "bibr10-1059601117728145",
+            "first-page": "389",
+            "volume-title": "Handbook of cross-cultural psychology",
+            "volume": "2",
+            "author": "Brislin R. W.",
+            "year": "1980"
+        },
+        {
+            "key": "bibr11-1059601117728145",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0273475314568431"
+            "DOI": "10.1207/s15327906mbr2404_4"
         },
         {
-            "issue": "1",
-            "key": "cit0013",
-            "first-page": "43",
-            "volume": "20",
-            "author": "DelVecchio S.",
-            "year": "2000",
-            "journal-title": "Journal of Personal Selling & Sales Management"
-        },
-        {
-            "key": "cit0014",
-            "volume-title": "The significance of the problem of knowledge",
-            "volume": "1",
-            "author": "Dewey J.",
-            "year": "1897"
-        },
-        {
-            "key": "cit0015",
+            "key": "bibr12-1059601117728145",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0273475311430805"
+            "DOI": "10.2307/3556637"
         },
         {
-            "key": "cit0016",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1744-6570.1986.tb00954.x"
-        },
-        {
-            "key": "cit0017",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10528008.2005.11488887"
-        },
-        {
-            "key": "cit0018",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1108/02621710210448011"
-        },
-        {
-            "issue": "7",
-            "key": "cit0019",
-            "first-page": "94",
-            "volume": "90",
-            "author": "Fogel S.",
-            "year": "2012",
-            "journal-title": "Harvard Business Review"
-        },
-        {
-            "issue": "1",
-            "key": "cit0020",
-            "first-page": "6",
-            "volume": "14",
-            "author": "Forbes L. P.",
-            "year": "2014",
-            "journal-title": "Journal of Selling"
-        },
-        {
-            "key": "cit0021",
-            "unstructured": "Foundation, S. E. (2019), Growth chart of sales programs 2007-2019. Accessed January 1, 2020. Retrieved from https://salesfoundation.org/knowledge-center/"
-        },
-        {
-            "key": "cit0022",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10528008.1996.11488560"
-        },
-        {
-            "key": "cit0023",
-            "volume": "6",
-            "author": "Healy W. J.",
-            "year": "2011",
-            "journal-title": "Journal of Instructional Pedagogies"
-        },
-        {
-            "issue": "1",
-            "key": "cit0024",
-            "first-page": "97",
-            "volume": "18",
-            "author": "Heinze T.",
-            "year": "2018",
-            "journal-title": "Journal of Selling"
-        },
-        {
-            "key": "cit0025",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10528008.2003.11488841"
-        },
-        {
-            "key": "cit0026",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/2489870"
-        },
-        {
-            "key": "cit0027",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0021-9010.64.4.349"
-        },
-        {
-            "key": "cit0028",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0273475317752451"
-        },
-        {
-            "key": "cit0029",
-            "first-page": "4",
-            "volume": "18",
-            "author": "Jackowski M.",
-            "year": "2018",
-            "journal-title": "Journal of Higher Education Theory and Practice"
-        },
-        {
-            "key": "cit0030",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0273475310389151"
-        },
-        {
-            "key": "cit0031",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/027347538901100311"
-        },
-        {
-            "key": "cit0032",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0273475314531963"
-        },
-        {
-            "key": "cit0033",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10528008.2018.1464884"
-        },
-        {
-            "key": "cit0034",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0273475320947774"
-        },
-        {
-            "key": "cit0035",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0273475315606785"
-        },
-        {
-            "key": "cit0036",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0273475314531964"
-        },
-        {
-            "key": "cit0037",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/978-1-4471-0181-9_12"
-        },
-        {
-            "key": "cit0038",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10528008.1994.11488469"
-        },
-        {
-            "key": "cit0039",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10528008.1991.11488319"
-        },
-        {
-            "key": "cit0040",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10528008.1994.11488440"
-        },
-        {
-            "key": "cit0041",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1023/A:1015406420028"
-        },
-        {
-            "key": "cit0042",
+            "key": "bibr13-1059601117728145",
             "doi-asserted-by": "crossref",
-            "first-page": "46",
-            "DOI": "10.1177/002224378001700405",
-            "volume": "17",
-            "author": "Oliver R. L.",
-            "year": "1980",
-            "journal-title": "Journal of Marketing Research"
+            "volume-title": "Structural holes: The social structure of competition",
+            "author": "Burt R.",
+            "year": "1992",
+            "DOI": "10.4159/9780674029095"
         },
         {
-            "key": "cit0043",
-            "doi-asserted-by": "crossref",
-            "first-page": "12",
-            "DOI": "10.2307/2490414",
-            "volume": "16",
-            "author": "Otley D. T.",
-            "year": "1978",
-            "journal-title": "Journal of Accounting Research"
-        },
-        {
-            "issue": "9",
-            "key": "cit0044",
-            "first-page": "42",
-            "volume": "23",
-            "author": "Paul P.",
-            "year": "2001",
-            "journal-title": "American Demographics"
-        },
-        {
-            "key": "cit0045",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0021-9010.71.2.211"
-        },
-        {
-            "key": "cit0046",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0273475313520443"
-        },
-        {
-            "key": "cit0047",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.indmarman.2009.02.003"
-        },
-        {
-            "key": "cit0048",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10528008.2015.999595"
-        },
-        {
-            "key": "cit0049",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.4135/9781452229102.n1"
-        },
-        {
-            "key": "cit0050",
-            "first-page": "1",
-            "volume": "14",
-            "author": "Schaefer A.",
-            "year": "2014",
-            "journal-title": "Journal of Instructional Pedagogies"
-        },
-        {
-            "key": "cit0051",
-            "unstructured": "Sellers, I. I. I. D. (1986). College professors report they use role playing to teach the selling/salesmanship course."
-        },
-        {
-            "key": "cit0052",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10528008.2008.11489021"
-        },
-        {
-            "key": "cit0053",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1108/19355181200000006"
-        },
-        {
-            "key": "cit0054",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/002224299606000302"
-        },
-        {
-            "key": "cit0055",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/13562517.2015.1020778"
-        },
-        {
-            "issue": "3",
-            "key": "cit0056",
-            "first-page": "17",
-            "volume": "19",
-            "author": "Sujan H.",
-            "year": "1999",
-            "journal-title": "Journal of Personal Selling & Sales Management"
-        },
-        {
-            "issue": "2",
-            "key": "cit0057",
-            "first-page": "57",
-            "volume": "10",
-            "author": "Tan S. L.",
-            "year": "2012",
-            "journal-title": "Journal of Applied Management Accounting Research"
-        },
-        {
-            "key": "cit0058",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10528008.2018.1431051"
-        },
-        {
-            "key": "cit0059",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/h0026022"
-        },
-        {
-            "key": "cit0060",
-            "unstructured": "University Sales Center Alliance (2019), USCA Growth. Accessed January 1, 2020. Retrieved from https://www.universitysalescenteralliance.org/content.aspx?page_id=22&club_id=554502&module_id=254697"
-        },
-        {
-            "key": "cit0061",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s11747-010-0211-8"
-        },
-        {
-            "key": "cit0062",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0021-9010.83.4.586"
-        },
-        {
-            "key": "cit0063",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/002224298104500109"
-        },
-        {
-            "key": "cit0064",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10528008.2007.11488990"
-        },
-        {
-            "key": "cit0065",
-            "first-page": "1",
+            "key": "bibr14-1059601117728145",
+            "first-page": "55",
             "volume": "13",
-            "author": "Wurdinger S.",
-            "year": "2017",
-            "journal-title": "Journal of E-learning and Knowledge Society"
+            "author": "Cappelli P.",
+            "year": "1991",
+            "journal-title": "Research in Organizational Behavior"
         },
         {
-            "key": "cit0066",
+            "key": "bibr15-1059601117728145",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/002224299606000203"
+            "DOI": "10.5465/amr.2004.12736071"
+        },
+        {
+            "key": "bibr16-1059601117728145",
+            "first-page": "29",
+            "volume-title": "Handbook of social psychology",
+            "author": "Correll S. J.",
+            "year": "2003"
+        },
+        {
+            "key": "bibr17-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0149206305277795"
+        },
+        {
+            "key": "bibr18-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/0021-9010.88.4.741"
+        },
+        {
+            "key": "bibr19-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/0021-9010.86.6.1191"
+        },
+        {
+            "key": "bibr20-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/104649649903000506"
+        },
+        {
+            "key": "bibr21-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/0033-295X.109.3.573"
+        },
+        {
+            "key": "bibr22-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/256740"
+        },
+        {
+            "key": "bibr23-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/2089716"
+        },
+        {
+            "key": "bibr24-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/1082-989X.12.2.121"
+        },
+        {
+            "key": "bibr25-1059601117728145",
+            "first-page": "150",
+            "volume-title": "Studies in social power",
+            "author": "French J. R.",
+            "year": "1959"
+        },
+        {
+            "key": "bibr26-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5465/amj.2010.0604"
+        },
+        {
+            "key": "bibr27-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1162/003355300554926"
+        },
+        {
+            "key": "bibr28-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5465/amr.1985.4279045"
+        },
+        {
+            "key": "bibr29-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/1040-3590.4.1.26"
+        },
+        {
+            "key": "bibr30-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1146/annurev.psych.47.1.307"
+        },
+        {
+            "key": "bibr31-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5465/3069328"
+        },
+        {
+            "key": "bibr32-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/0021-9010.90.3.431"
+        },
+        {
+            "key": "bibr33-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/014920639802400504"
+        },
+        {
+            "key": "bibr34-1059601117728145",
+            "volume-title": "Cultures and organizations",
+            "author": "Hofstede G.",
+            "year": "1997"
+        },
+        {
+            "key": "bibr35-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5465/amr.2000.2791606"
+        },
+        {
+            "key": "bibr36-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5465/AMBPP.2014.15872abstract"
+        },
+        {
+            "key": "bibr37-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/10705519909540118"
+        },
+        {
+            "key": "bibr38-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1108/eb028872"
+        },
+        {
+            "key": "bibr39-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5465/amr.1993.3997507"
+        },
+        {
+            "key": "bibr40-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/2393414"
+        },
+        {
+            "key": "bibr41-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/0021-9010.69.1.85"
+        },
+        {
+            "key": "bibr42-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/2393638"
+        },
+        {
+            "key": "bibr43-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/3069453"
+        },
+        {
+            "key": "bibr44-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/2667054"
+        },
+        {
+            "key": "bibr45-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5465/amr.2006.20208687"
+        },
+        {
+            "key": "bibr46-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0001839214528331"
+        },
+        {
+            "key": "bibr47-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/job.119"
+        },
+        {
+            "key": "bibr48-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.emj.2013.04.012"
+        },
+        {
+            "key": "bibr49-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/109442810033001"
+        },
+        {
+            "key": "bibr50-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/0021-9010.88.4.587"
+        },
+        {
+            "key": "bibr51-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/mnsc.1040.0257"
+        },
+        {
+            "key": "bibr52-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/orsc.1110.0647"
+        },
+        {
+            "key": "bibr53-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/0021-9010.72.1.81"
+        },
+        {
+            "key": "bibr54-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/1089-2699.1.4.324"
+        },
+        {
+            "key": "bibr55-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1006/obhd.1997.2677"
+        },
+        {
+            "key": "bibr56-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/0022-3514.69.5.877"
+        },
+        {
+            "key": "bibr57-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5465/19416520802211628"
+        },
+        {
+            "key": "bibr58-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/1082-989X.1.1.30"
+        },
+        {
+            "key": "bibr59-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5465/amr.1996.9605060217"
+        },
+        {
+            "key": "bibr60-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1006/obhd.2000.2891"
+        },
+        {
+            "key": "bibr61-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.leaqua.2004.02.006"
+        },
+        {
+            "key": "bibr62-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.dss.2004.03.003"
+        },
+        {
+            "key": "bibr63-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/orsc.7.6.615"
+        },
+        {
+            "key": "bibr64-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/2667029"
+        },
+        {
+            "key": "bibr65-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1146/annurev-psych-120710-100452"
+        },
+        {
+            "key": "bibr66-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3758/BF03206553"
+        },
+        {
+            "key": "bibr67-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3758/BRM.40.3.879"
+        },
+        {
+            "key": "bibr68-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/a0020141"
+        },
+        {
+            "key": "bibr69-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0149206305279898"
+        },
+        {
+            "key": "bibr70-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/mnsc.1050.0366"
+        },
+        {
+            "key": "bibr71-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/a0021340"
+        },
+        {
+            "key": "bibr72-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/0033-2909.86.2.420"
+        },
+        {
+            "key": "bibr73-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/1094428109351241"
+        },
+        {
+            "key": "bibr74-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/0021-9010.85.1.102"
+        },
+        {
+            "key": "bibr75-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0146167209353349"
+        },
+        {
+            "key": "bibr76-1059601117728145",
+            "volume-title": "Multilevel analysis: An introduction to basic and advanced multilevel modeling",
+            "author": "Snijders T. A. B.",
+            "year": "1999"
+        },
+        {
+            "key": "bibr77-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/3069458"
+        },
+        {
+            "key": "bibr78-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0170840604048162"
+        },
+        {
+            "key": "bibr79-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/mnsc.49.4.464.14425"
+        },
+        {
+            "key": "bibr80-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5465/amj.2006.22798169"
+        },
+        {
+            "key": "bibr81-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/1389491"
+        },
+        {
+            "key": "bibr82-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/014920630102700202"
+        },
+        {
+            "key": "bibr83-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/0022-3514.61.6.923"
+        },
+        {
+            "key": "bibr84-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1108/S1535-1203(2009)0000005016"
+        },
+        {
+            "key": "bibr85-1059601117728145",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5465/AMBPP.2010.54485295"
         }
     ],
     "container-title": [
-        "Marketing Education Review"
+        "Group &amp; Organization Management"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/10528008.2021.1910522",
+            "URL": "http://journals.sagepub.com/doi/pdf/10.1177/1059601117728145",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "http://journals.sagepub.com/doi/full-xml/10.1177/1059601117728145",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "http://journals.sagepub.com/doi/pdf/10.1177/1059601117728145",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -499,90 +596,73 @@
             [
                 2022,
                 8,
-                9
+                2
             ]
         ],
-        "date-time": "2022-08-09T10:54:04Z",
-        "timestamp": 1660042444000
+        "date-time": "2022-08-02T11:06:53Z",
+        "timestamp": 1659438413000
     },
-    "score": 16.908949,
+    "score": 11.232001,
     "resource": {
         "primary": {
-            "URL": "https://www.tandfonline.com/doi/full/10.1080/10528008.2021.1910522"
+            "URL": "http://journals.sagepub.com/doi/10.1177/1059601117728145"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2021,
-                4,
-                8
+                2017,
+                9,
+                6
             ]
         ]
     },
-    "references-count": 66,
+    "references-count": 85,
     "journal-issue": {
-        "issue": "1",
+        "issue": "4",
+        "published-online": {
+            "date-parts": [
+                [
+                    2017,
+                    12,
+                    22
+                ]
+            ]
+        },
         "published-print": {
             "date-parts": [
                 [
-                    2022,
-                    1,
-                    2
+                    2019,
+                    8
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1080/10528008.2021.1910522"
+        "10.1177/1059601117728145"
     ],
-    "URL": "http://dx.doi.org/10.1080/10528008.2021.1910522",
+    "URL": "http://dx.doi.org/10.1177/1059601117728145",
     "ISSN": [
-        "1052-8008",
-        "2153-9987"
+        "1059-6011",
+        "1552-3993"
     ],
     "issn-type": [
         {
-            "value": "1052-8008",
+            "value": "1059-6011",
             "type": "print"
         },
         {
-            "value": "2153-9987",
+            "value": "1552-3993",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2021,
-                4,
-                8
+                2017,
+                9,
+                6
             ]
         ]
-    },
-    "assertion": [
-        {
-            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
-            "order": 1,
-            "name": "peerreview_statement",
-            "label": "Peer Review Statement"
-        },
-        {
-            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=mmer20",
-            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=mmer20",
-            "order": 2,
-            "name": "aims_and_scope_url",
-            "label": "Aim & Scope"
-        },
-        {
-            "value": "2021-04-08",
-            "order": 3,
-            "name": "published",
-            "label": "Published",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        }
-    ]
+    }
 }

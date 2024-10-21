@@ -3,397 +3,266 @@
         "date-parts": [
             [
                 2024,
-                10,
-                1
+                7,
+                26
             ]
         ],
-        "date-time": "2024-10-01T04:08:44Z",
-        "timestamp": 1727755724790
+        "date-time": "2024-07-26T09:59:13Z",
+        "timestamp": 1721987953285
     },
-    "reference-count": 50,
-    "publisher": "SAGE Publications",
-    "issue": "2",
-    "license": [
-        {
-            "start": {
-                "date-parts": [
-                    [
-                        2019,
-                        3,
-                        11
-                    ]
-                ],
-                "date-time": "2019-03-11T00:00:00Z",
-                "timestamp": 1552262400000
-            },
-            "content-version": "unspecified",
-            "delay-in-days": 0,
-            "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
-        }
-    ],
-    "funder": [
-        {
-            "name": "Fulton School of Liberal Arts Faculty Research Grant"
-        }
-    ],
+    "reference-count": 27,
+    "publisher": "Association for Computing Machinery (ACM)",
+    "issue": "10",
     "content-domain": {
         "domain": [
-            "journals.sagepub.com"
+            "dl.acm.org"
         ],
         "crossmark-restriction": true
     },
     "short-container-title": [
-        "Journal of Patient Experience"
+        "Commun. ACM"
     ],
     "published-print": {
         "date-parts": [
             [
                 2020,
-                4
+                9,
+                23
             ]
         ]
     },
-    "abstract": "<jats:sec><jats:title>Background:</jats:title><jats:p> Patient descriptions of pain shape the pain experience, yet there is insufficient understanding of how patient communication can help providers lessen pain\u2019s psychological and physical impact. </jats:p></jats:sec><jats:sec><jats:title>Objective:</jats:title><jats:p> To examine how individuals communicate their pain experience in the complementary and alternative medicine (CAM) provider-patient relationship. </jats:p></jats:sec><jats:sec><jats:title>Method:</jats:title><jats:p> Qualitative thematic framing examining semistructured interviews of a purposive and snowball sample of CAM patients (N = 13; 850 double-spaced pages) recruited from the mid-Atlantic region of the United States. </jats:p></jats:sec><jats:sec><jats:title>Results:</jats:title><jats:p> Complementary and alternative medicine patients communicate the pain experience through an awareness of their interdependence with: (a) relational spaces as attention to the self, the healing practices, and the provider; (b) physical spaces as openness to surroundings and the spatiality and temporality of self; and (c) physiological spaces as breathing and neurological and immune system functioning. </jats:p></jats:sec><jats:sec><jats:title>Conclusion:</jats:title><jats:p> A therapeutic relationship cultivating interdependence through awareness of relational, physical, and physiological spaces supports patients\u2019 ability to open up to, know, and accept their body. The CAM provider\u2019s work connects their practice with patient awareness of control over their environment, relationships, and physiology to redefine their pain experience. </jats:p></jats:sec>",
-    "DOI": "10.1177/2374373519826137",
+    "abstract": "<jats:p>The value of learning skillsets within a trio of disciplines and the role each plays in DevOps.</jats:p>",
+    "DOI": "10.1145/3372114",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2019,
-                3,
-                11
+                2020,
+                9,
+                23
             ]
         ],
-        "date-time": "2019-03-11T12:00:55Z",
-        "timestamp": 1552305655000
+        "date-time": "2020-09-23T14:26:49Z",
+        "timestamp": 1600871209000
     },
-    "page": "238-244",
-    "update-policy": "http://dx.doi.org/10.1177/sage-journals-update-policy",
+    "page": "48-53",
+    "update-policy": "http://dx.doi.org/10.1145/crossmark-policy",
     "source": "Crossref",
-    "is-referenced-by-count": 5,
+    "is-referenced-by-count": 12,
     "title": [
-        "Patient Communication of Chronic Pain in the Complementary and Alternative Medicine Therapeutic Relationship"
+        "What do agile, lean, and ITIL mean to DevOps?"
     ],
-    "prefix": "10.1177",
-    "volume": "7",
+    "prefix": "10.1145",
+    "volume": "63",
     "author": [
         {
-            "ORCID": "http://orcid.org/0000-0002-0040-1715",
-            "authenticated-orcid": false,
-            "given": "Vinita",
-            "family": "Agarwal",
+            "given": "Stuart",
+            "family": "Galup",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Department of Communication Arts, Fulton School of Liberal Arts, Salisbury University, Salisbury, MD, USA"
+                    "name": "Florida Atlantic University, Boca Raton, FL"
+                }
+            ]
+        },
+        {
+            "given": "Ronald",
+            "family": "Dattero",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Missouri State University, Springfield, MO"
+                }
+            ]
+        },
+        {
+            "given": "Jing",
+            "family": "Quan",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Salisbury University, Salisbury, MD"
                 }
             ]
         }
     ],
-    "member": "179",
+    "member": "320",
     "published-online": {
         "date-parts": [
             [
-                2019,
-                3,
-                11
+                2020,
+                9,
+                23
             ]
         ]
     },
     "reference": [
         {
-            "key": "bibr1-2374373519826137",
-            "unstructured": "National Center for Complementary and Integrative Health. Introduction. 2017. Retrieved January 25, 2019, from: https://nccih.nih.gov/about/strategic-plans/2016/introduction."
+            "key": "e_1_2_1_1_1",
+            "volume-title": "Agile software development methods: A comparative review. Agile Software Development",
+            "author": "Abrahamsson P.",
+            "year": "2010",
+            "unstructured": "Abrahamsson , P. , Oza , N. and Siponen , M.T . Agile software development methods: A comparative review. Agile Software Development ( 2010 ), 31--59. Abrahamsson, P., Oza, N. and Siponen, M.T. Agile software development methods: A comparative review. Agile Software Development (2010), 31--59."
         },
         {
-            "key": "bibr2-2374373519826137",
-            "unstructured": "International Association for the Study of Pain. 2018. Retrieved January 25, 2019, from: http://www.iasp-pain.org/index.aspx."
+            "key": "e_1_2_1_2_1",
+            "volume-title": "AXELOS Lean Enterprise Podcast",
+            "author": "Anand A.",
+            "year": "2017",
+            "unstructured": "Anand , A. AXELOS Lean Enterprise Podcast ( 2017 ). Anand, A. AXELOS Lean Enterprise Podcast (2017)."
         },
         {
-            "key": "bibr3-2374373519826137",
+            "key": "e_1_2_1_3_1",
+            "unstructured": "AXELOS.com; https://www.axelos.com  AXELOS.com; https://www.axelos.com"
+        },
+        {
+            "key": "e_1_2_1_4_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2147/PRBM.S15375"
+            "DOI": "10.2307/135901"
         },
         {
-            "key": "bibr4-2374373519826137",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1146/annurev-clinpsy-090310-120430"
+            "key": "e_1_2_1_5_1",
+            "volume-title": "The Next Evolution of ITIL. Learning Tree International",
+            "author": "Beadle A.",
+            "year": "2018",
+            "unstructured": "Beadle , A. Getting Ready for ITIL 4 , The Next Evolution of ITIL. Learning Tree International , 2018 ; www.learningtree.com Beadle, A. Getting Ready for ITIL 4, The Next Evolution of ITIL. Learning Tree International, 2018; www.learningtree.com"
         },
         {
-            "key": "bibr5-2374373519826137",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1526-4610.2010.01763.x"
-        },
-        {
-            "key": "bibr6-2374373519826137",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.11124/jbisrir-2015-1072"
-        },
-        {
-            "key": "bibr7-2374373519826137",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.pec.2013.06.021"
-        },
-        {
-            "key": "bibr8-2374373519826137",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2174/157488411796151192"
-        },
-        {
-            "key": "bibr9-2374373519826137",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1399-6576.2006.01097.x"
-        },
-        {
-            "key": "bibr10-2374373519826137",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jpsychores.2007.05.009"
-        },
-        {
-            "key": "bibr11-2374373519826137",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1200/JCO.2006.08.3725"
-        },
-        {
-            "key": "bibr12-2374373519826137",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0029-6465(02)00098-1"
-        },
-        {
-            "key": "bibr13-2374373519826137",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/jan.13734"
-        },
-        {
-            "key": "bibr14-2374373519826137",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/1049732317723891"
-        },
-        {
-            "key": "bibr15-2374373519826137",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3310/hsdr01120"
-        },
-        {
-            "journal-title": "Natl Health Stat Report",
-            "first-page": "1",
+            "key": "e_1_2_1_6_1",
+            "volume-title": "Lean IT: Enabling and Sustaining Your Lean Transformation",
+            "author": "Bell S.C.",
             "year": "2016",
-            "author": "Clarke TC",
-            "key": "bibr16-2374373519826137"
+            "unstructured": "Bell , S.C. and Orzen , M.A . Lean IT: Enabling and Sustaining Your Lean Transformation . CRC Press , 2016 . Bell, S.C. and Orzen, M.A. Lean IT: Enabling and Sustaining Your Lean Transformation. CRC Press, 2016."
         },
         {
-            "key": "bibr17-2374373519826137",
+            "key": "e_1_2_1_7_1",
+            "volume-title": "IT Service Management: An Introduction",
+            "author": "van Bon J.",
+            "year": "2002",
+            "unstructured": "van Bon , J. , Kemmerling , G. and Pondman , D . IT Service Management: An Introduction , 2002 . van Bon, J., Kemmerling, G. and Pondman, D. IT Service Management: An Introduction, 2002."
+        },
+        {
+            "key": "e_1_2_1_8_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1188/07.CJON.699-704"
+            "DOI": "10.1145/1743546.1743580"
         },
         {
-            "key": "bibr18-2374373519826137",
-            "first-page": "127",
-            "volume": "86",
-            "author": "Marletta G",
-            "year": "2015",
-            "journal-title": "Acta Biomed"
+            "key": "e_1_2_1_9_1",
+            "first-page": "3",
+            "article-title": "It pays to be agile",
+            "volume": "57",
+            "author": "Dattero R.",
+            "year": "2016",
+            "unstructured": "Dattero , R. , Galup , S.D. , Kan , A. and Quan , J . It pays to be agile . J. Computer Information Systems 57 , 3 ( 2016 ), 252--257. Dattero, R., Galup, S.D., Kan, A. and Quan, J. It pays to be agile. J. Computer Information Systems 57, 3 (2016), 252--257.",
+            "journal-title": "J. Computer Information Systems"
         },
         {
-            "key": "bibr19-2374373519826137",
+            "key": "e_1_2_1_10_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.ctcp.2015.01.006"
+            "DOI": "10.1108/SL-07-2015-0057"
         },
         {
-            "key": "bibr20-2374373519826137",
+            "key": "e_1_2_1_11_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.ctcp.2008.04.002"
+            "DOI": "10.1145/3159169"
         },
         {
-            "volume": "4",
-            "journal-title": "Cochrane Database Syst Rev",
-            "year": "2015",
-            "author": "Theadom A",
-            "key": "bibr21-2374373519826137"
-        },
-        {
-            "key": "bibr22-2374373519826137",
+            "key": "e_1_2_1_12_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1523/JNEUROSCI.22-07-02748.2002"
+            "DOI": "10.1145/1506409.1506439"
         },
         {
-            "key": "bibr23-2374373519826137",
+            "key": "e_1_2_1_13_1",
+            "volume-title": "Management, Engineering, and Technology 7, 2",
+            "author": "Galup S.D.",
+            "year": "2016",
+            "unstructured": "Galup , S.D. , Dattero , R. and Quan , J.J . The compensation benefit of ITIL\u00ae skills and certifications. Intern. J. Service Science , Management, Engineering, and Technology 7, 2 ( 2016 ), 1--15. Galup, S.D., Dattero, R. and Quan, J.J. The compensation benefit of ITIL\u00ae skills and certifications. Intern. J. Service Science, Management, Engineering, and Technology 7, 2 (2016), 1--15."
+        },
+        {
+            "key": "e_1_2_1_14_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0096-3445.109.2.160"
+            "DOI": "10.1108/vjikms-02-2017-0007"
         },
         {
-            "volume": "6",
-            "journal-title": "Healthcare (Basel)",
-            "year": "2018",
-            "author": "Grocott A",
-            "key": "bibr24-2374373519826137"
+            "key": "e_1_2_1_15_1",
+            "volume-title": "Stationery Office. ITIL Service Operation. Stationery Office/Tso",
+            "author": "Great Britain",
+            "year": "2011",
+            "unstructured": "Great Britain . Cabinet Office and Great Britain . Stationery Office. ITIL Service Operation. Stationery Office/Tso , 2011 . Great Britain. Cabinet Office and Great Britain. Stationery Office. ITIL Service Operation. Stationery Office/Tso, 2011."
         },
         {
-            "key": "bibr25-2374373519826137",
+            "key": "e_1_2_1_16_1",
+            "volume-title": "ITIL Continual Service Improvement. Stationery Office/Tso",
+            "author": "Great Britain",
+            "year": "2011",
+            "unstructured": "Great Britain . Cabinet Office and Stationery Office . ITIL Continual Service Improvement. Stationery Office/Tso , 2011 . Great Britain. Cabinet Office and Stationery Office. ITIL Continual Service Improvement. Stationery Office/Tso, 2011."
+        },
+        {
+            "key": "e_1_2_1_17_1",
+            "unstructured": "Haddad C. DevOps = DevOps Principles + DevOps Practices - DZone DevOps 2014 dzone.com; https://dzone.com/articles/devops-devops-principles  Haddad C. DevOps = DevOps Principles + DevOps Practices - DZone DevOps 2014 dzone.com; https://dzone.com/articles/devops-devops-principles"
+        },
+        {
+            "key": "e_1_2_1_18_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1526-4637.2007.00312.x"
+            "DOI": "10.1145/2896941.2896957"
         },
         {
-            "key": "bibr26-2374373519826137",
+            "key": "e_1_2_1_19_1",
+            "volume-title": "The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations. IT Revolution",
+            "author": "Kim G.",
+            "year": "2016",
+            "unstructured": "Kim , G. , Debois , P. , Willis , J. and Humble , J . The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations. IT Revolution 2016 . Kim, G., Debois, P., Willis, J. and Humble, J. The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations. IT Revolution 2016."
+        },
+        {
+            "key": "e_1_2_1_20_1",
+            "unstructured": "Lean Enterprise Institute | Lean Production | Lean Manufacturing | LEI | Lean Services; https://www.lean.org  Lean Enterprise Institute | Lean Production | Lean Manufacturing | LEI | Lean Services; https://www.lean.org"
+        },
+        {
+            "key": "e_1_2_1_21_1",
+            "unstructured": "Mincer J. Schooling Experience and Earnings. 1974.  Mincer J. Schooling Experience and Earnings. 1974."
+        },
+        {
+            "key": "e_1_2_1_22_1",
+            "unstructured": "Pink Elephant; https://www.pinkelephant.com/en.us/  Pink Elephant; https://www.pinkelephant.com/en.us/"
+        },
+        {
+            "key": "e_1_2_1_23_1",
+            "volume-title": "Lean Software Development: An Agile Toolkit: An Agile Toolkit",
+            "author": "Poppendieck M.",
+            "year": "2003",
+            "unstructured": "Poppendieck , M. and Poppendieck , T . Lean Software Development: An Agile Toolkit: An Agile Toolkit . Addison-Wesley , Reading, PA , 2003 . Poppendieck, M. and Poppendieck, T. Lean Software Development: An Agile Toolkit: An Agile Toolkit. Addison-Wesley, Reading, PA, 2003."
+        },
+        {
+            "key": "e_1_2_1_24_1",
+            "unstructured": "Quint Wellington Redwood. ITIL4 FAQs | Quint Group; https://www.quintgroup.com/en-us/insights/itil4-frequently-asked-questions/  Quint Wellington Redwood. ITIL4 FAQs | Quint Group; https://www.quintgroup.com/en-us/insights/itil4-frequently-asked-questions/"
+        },
+        {
+            "key": "e_1_2_1_25_1",
+            "unstructured": "Ranger. Ranger4 | DevOps Evolution Experts; https://www.ranger4.com  Ranger. Ranger4 | DevOps Evolution Experts; https://www.ranger4.com"
+        },
+        {
+            "key": "e_1_2_1_26_1",
+            "first-page": "239",
+            "article-title": "The distribution of earnings and of individual output",
+            "volume": "60",
+            "author": "Roy A.D",
+            "year": "1950",
+            "unstructured": "Roy , A.D . The distribution of earnings and of individual output . Econ. J. Nepal 60 , 239 ( 1950 ), 489. Roy, A.D. The distribution of earnings and of individual output. Econ. J. Nepal 60, 239 (1950), 489.",
+            "journal-title": "Econ. J. Nepal"
+        },
+        {
+            "key": "e_1_2_1_27_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.pec.2015.02.018"
-        },
-        {
-            "key": "bibr27-2374373519826137",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1089/acm.2016.0263"
-        },
-        {
-            "key": "bibr28-2374373519826137",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1089/acm.2012.0533"
-        },
-        {
-            "key": "bibr29-2374373519826137",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0277-9536(00)00351-8"
-        },
-        {
-            "key": "bibr30-2374373519826137",
-            "first-page": "630",
-            "volume": "4",
-            "author": "Ben-Arye E",
-            "year": "2015",
-            "journal-title": "Transl Lung Cancer Res"
-        },
-        {
-            "key": "bibr31-2374373519826137",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.7453/gahmj.2014.076"
-        },
-        {
-            "key": "bibr32-2374373519826137",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1377/hlthaff.2009.0450"
-        },
-        {
-            "key": "bibr33-2374373519826137",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10410236.2010.541990"
-        },
-        {
-            "journal-title": "J Bone Joint Surg",
-            "first-page": "87",
-            "year": "2005",
-            "author": "Tongue JR",
-            "key": "bibr34-2374373519826137"
-        },
-        {
-            "key": "bibr35-2374373519826137",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10410236.2012.725124"
-        },
-        {
-            "key": "bibr36-2374373519826137",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10410236.2013.783773"
-        },
-        {
-            "key": "bibr37-2374373519826137",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1207/S15327027HC1603_6"
-        },
-        {
-            "journal-title": "Qual Health Res",
-            "year": "2018",
-            "author": "Th\u00f3rarinsd\u00f3ttir K",
-            "key": "bibr38-2374373519826137"
-        },
-        {
-            "key": "bibr39-2374373519826137",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2522/ptj.20120137"
-        },
-        {
-            "key": "bibr40-2374373519826137",
-            "first-page": "25",
-            "volume": "18",
-            "author": "Andersson S",
-            "year": "2012",
-            "journal-title": "Altern Ther Health Med"
-        },
-        {
-            "key": "bibr41-2374373519826137",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1038/s41394-017-0032-9"
-        },
-        {
-            "key": "bibr42-2374373519826137",
-            "first-page": "1503",
-            "volume": "46",
-            "author": "Schwenk TL",
-            "year": "1992",
-            "journal-title": "Am Fam Physician"
-        },
-        {
-            "key": "bibr43-2374373519826137",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/2049463713516755"
-        },
-        {
-            "key": "bibr44-2374373519826137",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1370/afm.81"
-        },
-        {
-            "key": "bibr45-2374373519826137",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.4135/9781412963909.n420"
-        },
-        {
-            "volume-title": "Qualitative Research Methods for the Social Sciences",
-            "year": "2004",
-            "author": "Berg BL",
-            "key": "bibr46-2374373519826137"
-        },
-        {
-            "volume-title": "Research Design: Qualitative, Quantitative, and Mixed Methods Approaches",
-            "year": "2014",
-            "author": "Cresswell J.",
-            "key": "bibr47-2374373519826137"
-        },
-        {
-            "volume-title": "Basics of Qualitative Research: Techniques and Procedures for Developing Grounded Theory",
-            "year": "2015",
-            "author": "Strauss A",
-            "key": "bibr48-2374373519826137"
-        },
-        {
-            "volume-title": "Qualitative Data Analysis: A Sourcebook of New Methods",
-            "year": "1999",
-            "author": "Miles MB",
-            "key": "bibr49-2374373519826137"
-        },
-        {
-            "key": "bibr50-2374373519826137",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1089/acm.2007.0537"
+            "DOI": "10.1086/258393"
         }
     ],
     "container-title": [
-        "Journal of Patient Experience"
+        "Communications of the ACM"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://journals.sagepub.com/doi/pdf/10.1177/2374373519826137",
-            "content-type": "application/pdf",
-            "content-version": "vor",
-            "intended-application": "text-mining"
-        },
-        {
-            "URL": "https://journals.sagepub.com/doi/full-xml/10.1177/2374373519826137",
-            "content-type": "application/xml",
-            "content-version": "vor",
-            "intended-application": "text-mining"
-        },
-        {
-            "URL": "https://journals.sagepub.com/doi/pdf/10.1177/2374373519826137",
+            "URL": "https://dl.acm.org/doi/pdf/10.1145/3372114",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -402,66 +271,79 @@
     "deposited": {
         "date-parts": [
             [
-                2024,
-                9,
-                30
+                2023,
+                1,
+                1
             ]
         ],
-        "date-time": "2024-09-30T04:02:16Z",
-        "timestamp": 1727668936000
+        "date-time": "2023-01-01T06:28:25Z",
+        "timestamp": 1672554505000
     },
-    "score": 15.268838,
+    "score": 15.287504,
     "resource": {
         "primary": {
-            "URL": "https://journals.sagepub.com/doi/10.1177/2374373519826137"
+            "URL": "https://dl.acm.org/doi/10.1145/3372114"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2019,
-                3,
-                11
+                2020,
+                9,
+                23
             ]
         ]
     },
-    "references-count": 50,
+    "references-count": 27,
     "journal-issue": {
-        "issue": "2",
+        "issue": "10",
         "published-print": {
             "date-parts": [
                 [
                     2020,
-                    4
+                    9,
+                    23
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1177/2374373519826137"
+        "10.1145/3372114"
     ],
-    "URL": "http://dx.doi.org/10.1177/2374373519826137",
+    "URL": "http://dx.doi.org/10.1145/3372114",
     "ISSN": [
-        "2374-3735",
-        "2374-3743"
+        "0001-0782",
+        "1557-7317"
     ],
     "issn-type": [
         {
-            "type": "print",
-            "value": "2374-3735"
+            "value": "0001-0782",
+            "type": "print"
         },
         {
-            "type": "electronic",
-            "value": "2374-3743"
+            "value": "1557-7317",
+            "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2019,
-                3,
-                11
+                2020,
+                9,
+                23
             ]
         ]
-    }
+    },
+    "assertion": [
+        {
+            "value": "2020-09-23",
+            "order": 2,
+            "name": "published",
+            "label": "Published",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
+        }
+    ]
 }

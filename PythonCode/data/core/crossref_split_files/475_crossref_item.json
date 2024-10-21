@@ -4,31 +4,31 @@
             [
                 2024,
                 9,
-                20
+                16
             ]
         ],
-        "date-time": "2024-09-20T16:50:32Z",
-        "timestamp": 1726851032160
+        "date-time": "2024-09-16T14:25:29Z",
+        "timestamp": 1726496729517
     },
-    "reference-count": 66,
-    "publisher": "MDPI AG",
-    "issue": "21",
+    "reference-count": 43,
+    "publisher": "University College Cork",
+    "issue": "27",
     "license": [
         {
             "start": {
                 "date-parts": [
                     [
-                        2021,
-                        10,
-                        20
+                        2024,
+                        7,
+                        2
                     ]
                 ],
-                "date-time": "2021-10-20T00:00:00Z",
-                "timestamp": 1634688000000
+                "date-time": "2024-07-02T00:00:00Z",
+                "timestamp": 1719878400000
             },
             "content-version": "vor",
             "delay-in-days": 0,
-            "URL": "https://creativecommons.org/licenses/by/4.0/"
+            "URL": "https://creativecommons.org/licenses/by-nc/4.0/"
         }
     ],
     "content-domain": {
@@ -36,810 +36,303 @@
         "crossmark-restriction": false
     },
     "short-container-title": [
-        "Remote Sensing"
+        "Alphaville"
     ],
-    "abstract": "<jats:p>Salt marsh evolution is strongly affected by tidal processes and ecology, which regulate sediment accretion and erosional rates. A balance between marsh erosion and deposition in a restored tidal wetland is crucial for analyzing restoration strategies to adopt in a natural context. Here, we present an integrated approach monitoring salt marsh seasonal changes over several months in a microtidal restored salt marsh of the Paul S. Sarbanes Ecosystem Restoration Project at Poplar Island (MD, USA). The project is undertaken at a restoration site where sediment dredged from the shipping channels in the upper Chesapeake Bay is being used to restore a tidal marsh habitat in mid-Chesapeake Bay. We flew an Unmanned Aerial Vehicle (UAV) with an RGB and a multispectral camera to obtain a high-resolution map of the planimetric position of vegetation and to monitor the health of the marsh vegetation in diverse seasons. Due to its extension of 400 m by 400 m, a total of four flight plans were necessary to cover the entire marsh flying at a 40 m altitude obtaining a 2 cm Ground Sample Distance (GSD). This technique provides reliable results at a very low cost, enabling an accurate assessment of the marsh platforms to be conducted over time, due to both the very high spatial resolution and the precise georeferencing of the images for the comparisons. Our results show seasonal variability in the two dominant species colonizing the low marsh, Spartina alterniflora, and high marsh, Sporobolus pumilus. While the lower marshes showed a higher variability along seasons, the up-land vegetation showed persistent green foliage during cold seasons. Detecting salt marsh evolution and seasonality coupled with field measurements can help to improve the accuracy of hydrodynamic and sediment transport models. Understanding the drivers of salt marsh evolution is vital for informing restoration practices and designs, in order to improve coastal resilience, and develop and coastal management strategies.</jats:p>",
-    "DOI": "10.3390/rs13214207",
+    "abstract": "<jats:p>This article revolves around two soundtracks Walker has admired along with the person to whom this issue of Alphaville is dedicated: Danijela Kulezic-Wilson. The soundtracks come from Soul by Pete Docter and Kemp Powers and Nomadland by Chlo\u00e9 Zhao, both released in 2020. The films are sonically worlds apart: Soul is dominated by jazz music by Jon Batiste and contemporary electronic music by Trent Reznor and Atticus Ross, while Nomadland features modern classical music by Ludovico Einaudi and \u00d3lafur Arnalds. Ironically, despite sounding profoundly different, both films draw from true stories in order to teach audioviewers about living well, even in the midst of death. Or, to reapply Danijela\u2019s words about Waking Life (Richard Linklater, 2001), these films emphasise \u201cthe dualistic nature of human experience, the pleasure of being alive and the implicit proximity of death.\u201d Walker combines cinematherapy with sound studies to make a case for the wisdom of both films that have helped her cope with the grief of Danijela\u2019s death, in the hope that this might resonate for those readers who find similar comfort in their own film-to-person relationships.</jats:p>",
+    "DOI": "10.33178/alpha.27.17",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2021,
-                10,
-                21
+                2024,
+                7,
+                1
             ]
         ],
-        "date-time": "2021-10-21T01:31:26Z",
-        "timestamp": 1634779886000
+        "date-time": "2024-07-01T12:51:41Z",
+        "timestamp": 1719838301000
     },
-    "page": "4207",
+    "page": "206-222",
     "source": "Crossref",
-    "is-referenced-by-count": 13,
+    "is-referenced-by-count": 0,
     "title": [
-        "Seasonality and Characterization Mapping of Restored Tidal Marsh by NDVI Imageries Coupling UAVs and Multispectral Camera"
+        "Remembering my friend and rehearing two films"
     ],
-    "prefix": "10.3390",
-    "volume": "13",
+    "prefix": "10.33178",
     "author": [
         {
-            "ORCID": "http://orcid.org/0000-0002-5490-879X",
-            "authenticated-orcid": false,
-            "given": "William",
-            "family": "Nardin",
+            "given": "Elsie",
+            "family": "Walker",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Horn Point Laboratory, Center for Environmental Science, University of Maryland, Cambridge, MD 21613, USA"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0002-7301-5508",
-            "authenticated-orcid": false,
-            "given": "Yuri",
-            "family": "Taddia",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Horn Point Laboratory, Center for Environmental Science, University of Maryland, Cambridge, MD 21613, USA"
-                },
-                {
-                    "name": "Engineering Department, University of Ferrara, 44122 Ferrara, Italy"
-                }
-            ]
-        },
-        {
-            "given": "Michela",
-            "family": "Quitadamo",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Horn Point Laboratory, Center for Environmental Science, University of Maryland, Cambridge, MD 21613, USA"
-                },
-                {
-                    "name": "Engineering Department, University of Ferrara, 44122 Ferrara, Italy"
-                }
-            ]
-        },
-        {
-            "given": "Iacopo",
-            "family": "Vona",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Horn Point Laboratory, Center for Environmental Science, University of Maryland, Cambridge, MD 21613, USA"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0002-9210-9745",
-            "authenticated-orcid": false,
-            "given": "Corinne",
-            "family": "Corbau",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Horn Point Laboratory, Center for Environmental Science, University of Maryland, Cambridge, MD 21613, USA"
-                },
-                {
-                    "name": "Department of Physics and Earth Sciences, University of Ferrara, 44122 Ferrara, Italy"
-                }
-            ]
-        },
-        {
-            "given": "Giulia",
-            "family": "Franchi",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Computer Science, Salisbury University, Salisbury, MD 2180, USA"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0002-1443-4008",
-            "authenticated-orcid": false,
-            "given": "Lorie W.",
-            "family": "Staver",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Horn Point Laboratory, Center for Environmental Science, University of Maryland, Cambridge, MD 21613, USA"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0002-8977-3864",
-            "authenticated-orcid": false,
-            "given": "Alberto",
-            "family": "Pellegrinelli",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Engineering Department, University of Ferrara, 44122 Ferrara, Italy"
+                    "name": "Salisbury University"
                 }
             ]
         }
     ],
-    "member": "1968",
+    "member": "13136",
     "published-online": {
         "date-parts": [
             [
-                2021,
-                10,
-                20
+                2024,
+                7,
+                2
             ]
         ]
     },
     "reference": [
         {
-            "key": "ref_1",
+            "unstructured": "Arnalds, \u00d3lafur. \u201cEpilogue.\u201d Nomadland (Original Motion Picture Soundtrack). Ludovico Einaudi and Various Artists, Decca, 2021.",
+            "key": "ref0"
+        },
+        {
+            "unstructured": "Batiste, Jon. \u201cBigger Than Us.\u201d Soul Soundtrack album. Trent Reznor, Atticus Ross, and Various Artists, Walt Disney, 2020.",
+            "key": "ref1"
+        },
+        {
+            "unstructured": "Batiste, Jon. \u201cCollard Greens and Cornbread Strut.\u201d Soul Soundtrack album. Trent Reznor, Atticus Ross, and Various Artists, Walt Disney, 2020.",
+            "key": "ref2"
+        },
+        {
+            "unstructured": "Batiste, Jon. \u201cLooking at Life.\u201d Soul Soundtrack album. Trent Reznor, Atticus Ross, and Various Artists, Walt Disney, 2020.",
+            "key": "ref3"
+        },
+        {
+            "unstructured": "Batiste, Jon. \u201cSpace Maker.\u201d Soul Soundtrack album. Trent Reznor, Atticus Ross, and Various Artists, Walt Disney, 2020.",
+            "key": "ref4"
+        },
+        {
+            "doi-asserted-by": "publisher",
+            "unstructured": "Berg-Cross, Linda, et al. \u201cCinematherapy: Theory and Application.\u201d Psychotherapy in Private Practice, vol. 8, no. 1, 1990, pp.135\u2013156. https://doi.org/10.1300/J294v08n01_15.",
+            "key": "ref5",
+            "DOI": "10.1300/j294v08n01_15"
+        },
+        {
+            "unstructured": "Bruder, Jessica. Nomadland: Surviving America in the Twenty-First Century. W. W. Norton & Co., 2017.",
+            "key": "ref6"
+        },
+        {
+            "unstructured": "Cole, Nat King. \u201cAnswer Me, My Love.\u201d Nomadland (Original Motion Picture Soundtrack). Ludovico Einaudi and Various Artists, Decca, 2021.",
+            "key": "ref7"
+        },
+        {
+            "unstructured": "Clements, Ron, John Musker, and Don Hall, directors. Moana. Walt Disney Pictures and Hurwitz Creative, 2016.",
+            "key": "ref8"
+        },
+        {
+            "unstructured": "Docter, Pete, and Kemp Powers, directors. Soul. Disney Pixar, 2020.",
+            "key": "ref9"
+        },
+        {
+            "unstructured": "Docter, Pete, Davide Silverman, and Lee Unkrich, directors. Monsters, Inc. Pixar Animation Studios, 2001.",
+            "key": "ref10"
+        },
+        {
+            "unstructured": "Eggers, Robert, director. The Lighthouse. A24 and Maiden Voyage Pictures, 2019.",
+            "key": "ref11"
+        },
+        {
+            "unstructured": "Einaudi, Ludovico. \u201cPetricor.\u201d Nomadland (Original Motion Picture Soundtrack). Ludovico Einaudi and Various Artists, Decca, 2021.",
+            "key": "ref12"
+        },
+        {
+            "unstructured": "Einaudi, Ludovico, and Various Artists. Nomadland (Original Motion Picture Soundtrack). Decca, 2021.",
+            "key": "ref13"
+        },
+        {
+            "unstructured": "Fincher, David, director. The Social Network. Columbia Pictures and Relativity Media, 2010.",
+            "key": "ref14"
+        },
+        {
+            "unstructured": "Frampton, Daniel. Filmosophy: A Manifesto for a Radically New Way of Understanding Cinema. Wallflower Press, 2006.",
+            "key": "ref15"
+        },
+        {
+            "unstructured": "Grobler, Lindi. \u201cAn Exploration of the Use of Positive Psychology Movies to Enhance Well-being.\u201d 2012. MA Thesis, North-West University, South Africa, dspace.nwu.ac.za/bitstream/handle/10394/9051/Grobler_L(b).pdf?isAllowed=y&sequence=1. Accessed 23 Feb. 2024.",
+            "key": "ref16"
+        },
+        {
+            "unstructured": "Jacobsen, Kevin, and Chris Beachum. \u201cTrent Rexnor and Atticus Ross on the Different Process for Composing Scores for Soul and Mank.\u201d\u00a0Goldderby, 21 Feb. 2021, www.goldderby.com/feature/trent-reznor-atticus-ross-soul-mank-composers-video-interview-transcript-1204049774.",
+            "key": "ref17"
+        },
+        {
+            "unstructured": "Kacala, Alexander. \u201cMeet the Music Teacher Who Helped Inspire the Film Soul.\u201d Today, 29 Jan. 2021, www.today.com/popculture/meet-music-teacher-who-inspired-disney-film-soul-t207375.",
+            "key": "ref18"
+        },
+        {
+            "unstructured": "Kasdan, Lawrence, director. The Accidental Tourist. Warner Bros. and Roadshow Films, 1988.",
+            "key": "ref19"
+        },
+        {
+            "unstructured": "Kulezic-Wilson, Danijela. \u201cSonic Demons in Robert Eggers\u2019 The Lighthouse.\u201d Music and the Moving Image XVI, NYU Steinhardt, USA, 30 May 2020, online.",
+            "key": "ref20"
+        },
+        {
             "doi-asserted-by": "crossref",
-            "first-page": "10184",
-            "DOI": "10.3390/rs70810184",
-            "article-title": "Multiple Stable States and Catastrophic Shifts in Coastal Wetlands: Progress, Challenges, and Opportunities in Validating Theory Using Remote Sensing and Other Methods",
-            "volume": "7",
-            "author": "Moffett",
-            "year": "2015",
-            "journal-title": "Remote Sens."
+            "unstructured": "Kulezic-Wilson, Danijela. Sound Design is the New Score. Oxford UP, 2020.",
+            "key": "ref21",
+            "DOI": "10.1093/oso/9780190855314.001.0001"
         },
         {
-            "key": "ref_2",
-            "doi-asserted-by": "crossref",
-            "first-page": "98",
-            "DOI": "10.1016/j.ecss.2018.06.009",
-            "article-title": "Tradeoffs among hydrodynamics, sediment fluxes and vegetation community in the Virginia Coast Reserve, USA",
-            "volume": "210",
-            "author": "Nardin",
-            "year": "2018",
-            "journal-title": "Estuar. Coast. Shelf Sci."
+            "doi-asserted-by": "publisher",
+            "unstructured": "Kulezic-Wilson, Danijela. \u201cTango for a Dream: Narrative Liminality and Musical Sensuality in Richard Linklater\u2019s Waking Life.\u201d Alphaville: Journal of Film and Screen Media, no. 8, 2015, pp. 60\u201375. https://doi.org/10.33178/alpha.8.04.",
+            "key": "ref22",
+            "DOI": "10.33178/alpha.8.04"
         },
         {
-            "key": "ref_3",
-            "doi-asserted-by": "crossref",
-            "first-page": "2223",
-            "DOI": "10.1002/esp.4646",
-            "article-title": "Empirical observations and numerical modelling of tides, channel morphology, and vegetative effects on accretion in a restored tidal marsh",
-            "volume": "44",
-            "author": "Fleri",
-            "year": "2019",
-            "journal-title": "Earth Surf. Process. Landf."
+            "unstructured": "Langley, Travis. \u201cInside Out: Emotional Truths by Way of Pixar.\u201d Psychology Today, 24 June 2015, www.psychologytoday.com/us/blog/beyond-heroes-and-villains/201506/inside-out-emotional-truths-way-pixar.",
+            "key": "ref23"
         },
         {
-            "key": "ref_4",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Fagherazzi, S., Mariotti, G., Leonardi, N., Canestrelli, A., Nardin, W., and Kearney, W.S. (2020). Salt Marsh Dynamics in a Period of Accelerated Sea Level Rise. J. Geophys. Res. Earth Surf., 125.",
-            "DOI": "10.1029/2019JF005200"
+            "unstructured": "Lasseter, John, director. Toy Story. Pixar Animation Studios, 1995.",
+            "key": "ref24"
         },
         {
-            "key": "ref_5",
-            "doi-asserted-by": "crossref",
-            "first-page": "169",
-            "DOI": "10.1890/10-1510.1",
-            "article-title": "The value of estuarine and coastal ecosystem services",
-            "volume": "81",
-            "author": "Barbier",
-            "year": "2011",
-            "journal-title": "Ecol. Monogr."
+            "unstructured": "Linklater, Richard, director. Waking Life. Searchlight Pictures and Independent Film Channel (IFC), 2001.",
+            "key": "ref25"
         },
         {
-            "key": "ref_6",
-            "doi-asserted-by": "crossref",
-            "first-page": "505",
-            "DOI": "10.1038/ngeo1477",
-            "article-title": "Seagrass ecosystems as a globally significant carbon stock",
-            "volume": "5",
-            "author": "Fourqurean",
-            "year": "2012",
-            "journal-title": "Nat. Geosci."
+            "doi-asserted-by": "publisher",
+            "unstructured": "Niemic, Ryan M., and Stefan E. Schulenberg. \u201cUnderstanding Death Attitudes: The Integration of Movies, Positive Psychology, and Meaning Management.\u201d Death Studies, vol. 35, no. 5, 2011, pp. 387\u2013407. https://doi.org/10.1080/07481187.2010.544517.",
+            "key": "ref26",
+            "DOI": "10.1080/07481187.2010.544517"
         },
         {
-            "key": "ref_7",
-            "doi-asserted-by": "crossref",
-            "first-page": "884",
-            "DOI": "10.1038/nclimate1597",
-            "article-title": "Hotspot of accelerated sea-level rise on the Atlantic coast of North America",
-            "volume": "2",
-            "author": "Sallenger",
-            "year": "2012",
-            "journal-title": "Nat. Clim. Chang."
+            "doi-asserted-by": "publisher",
+            "unstructured": "Penwarden, Sarah. \u201cCrafting Order and Beauty from Loss: Using Found Poems as a Form of Grief Therapy.\u201d Journal of Poetry Therapy, vol. 35, no. 1, 2022, pp.13\u201326. https://doi.org/10.1080/08893675.2021.2004370.",
+            "key": "ref27",
+            "DOI": "10.1080/08893675.2021.2004370"
         },
         {
-            "key": "ref_8",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Cronin, W.B. (2005). The Disappearing Islands of the Chesapeake, Johns Hopkins University Press.",
-            "DOI": "10.56021/9780801874352"
+            "unstructured": "Perine, Aaron. \u201cSoul: Angela Bassett Reveals How She Brought Dorothea Williams to Life.\u201d Comicbook, 21 Mar. 2021, comicbook.com/movies/news/soul-angela-bassett-dorothea-williams-reveals-life.",
+            "key": "ref28"
         },
         {
-            "key": "ref_9",
-            "doi-asserted-by": "crossref",
-            "first-page": "73",
-            "DOI": "10.1890/070219",
-            "article-title": "Forecasting the effects of accelerated sea-level rise on tidal marsh ecosystem services",
-            "volume": "7",
-            "author": "Craft",
-            "year": "2009",
-            "journal-title": "Front. Ecol. Environ."
+            "unstructured": "Reznor, Trent, and Atticus Ross. \u201cEpiphany.\u201d Soul Soundtrack album. Trent Reznor, Atticus Ross, and Various Artists, Walt Disney, 2020.",
+            "key": "ref29"
         },
         {
-            "key": "ref_10",
-            "first-page": "2092",
-            "article-title": "Seasonal-Scale and Decadal-Scale Sediment-Vegetation Interactions on the Subaqueous Susquehanna River Delta, Upper Chesapeake Bay",
-            "volume": "41",
-            "author": "Russ",
-            "year": "2018",
-            "journal-title": "Chesap. Sci."
+            "unstructured": "Reznor, Trent, and Atticus Ross. \u201cPortal/The Hall of Everything.\u201d Soul Soundtrack album, Trent Reznor, Atticus Ross, and Various Artists, Walt Disney, 2020.",
+            "key": "ref30"
         },
         {
-            "key": "ref_11",
-            "first-page": "165",
-            "article-title": "Flow, sedimentation, and biomass production on a vegetated salt marsh in South Carolina: Toward a predictive model of marsh morphologic and ecologic evolution",
-            "volume": "59",
-            "author": "Mudd",
-            "year": "2004",
-            "journal-title": "Ecogeomorphol. Tidal Marshes Coast. Estuar. Stud."
+            "unstructured": "Reznor, Trent, and Atticus Ross. The Social Network Soundtrack. Null, 2010.",
+            "key": "ref31"
         },
         {
-            "key": "ref_12",
-            "doi-asserted-by": "crossref",
-            "first-page": "2869",
-            "DOI": "10.1890/0012-9658(2002)083[2869:ROCWTR]2.0.CO;2",
-            "article-title": "Responses of coastal wetlands to rising sea level",
-            "volume": "83",
-            "author": "Morris",
-            "year": "2002",
-            "journal-title": "Ecology"
+            "unstructured": "Reznor, Trent, Atticus Ross, and Various Artists. Soul Soundtrack album. Walt Disney, 2020.",
+            "key": "ref32"
         },
         {
-            "key": "ref_13",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Temmerman, S., Bouma, T.J., Govers, G., Wang, Z.B., De Vries, M., and Herman, P. (2005). Impact of vegetation on flow routing and sedimentation patterns: Three-dimensional modeling for a tidal marsh. J. Geophys. Res. Space Phys., 110.",
-            "DOI": "10.1029/2005JF000301"
+            "doi-asserted-by": "publisher",
+            "unstructured": "Sandler, Irwin N., et al. \u201cResilience Rather Than Recovery: A Contextual Framework on Adaptation Following Bereavement.\u201d Death Studies, vol. 32, no. 1, 2008, pp. 59\u201373. https://doi.org/10.1080/07481180701741343.",
+            "key": "ref33",
+            "DOI": "10.1080/07481180701741343"
         },
         {
-            "key": "ref_14",
-            "doi-asserted-by": "crossref",
-            "first-page": "6118",
-            "DOI": "10.1073/pnas.0700958104",
-            "article-title": "A coupled geomorphic and ecological model of tidal marsh evolution",
-            "volume": "104",
-            "author": "Kirwan",
-            "year": "2007",
-            "journal-title": "Proc. Natl. Acad. Sci. USA"
+            "unstructured": "Schroeder, Barbet, director. Barfly. The Cannon Group and Pushkar Films, 1987.",
+            "key": "ref34"
         },
         {
-            "key": "ref_15",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Fagherazzi, S., Kirwan, M.L., Mudd, S.M., Guntenspergen, G.R., Temmerman, S., D\u2019Alpaos, A., Van De Koppel, J., Rybczyk, J.M., Reyes, E., and Craft, C.B. (2012). Numerical models of salt marsh evolution: Ecological, geomorphic, and climatic factors. Rev. Geophys., 50.",
-            "DOI": "10.1029/2011RG000359"
+            "doi-asserted-by": "publisher",
+            "unstructured": "Shakespeare, William. \u201cShall I Compare Thee to a Summer\u2019s Day? (Sonnet 18).\u201d 1609. The Poetry Archive, poetryarchive.org/poem/shall-i-compare-thee-summers-day-sonnet-18. Accessed 23 Feb. 2024.",
+            "key": "ref35",
+            "DOI": "10.1093/notesj/gjaa066"
         },
         {
-            "key": "ref_16",
-            "doi-asserted-by": "crossref",
-            "first-page": "325",
-            "DOI": "10.1016/j.ecss.2006.05.004",
-            "article-title": "The effect of standing biomass on flow velocity and turbulence in Spartina alterniflora canopies",
-            "volume": "69",
-            "author": "Leonard",
-            "year": "2006",
-            "journal-title": "Estuar. Coast. Shelf Sci."
+            "doi-asserted-by": "publisher",
+            "unstructured": "Stilwell, Robynn. \u201cThe Fantastical Gap Between Diegetic and Nondiegetic.\u201d Beyond the Soundtrack: Representing Music in Cinema, edited by Daniel Goldmark, et al., U. of California P., 2007, pp. 184\u2013202. https://doi.org/10.1525/9780520940550-013.",
+            "key": "ref36",
+            "DOI": "10.1525/9780520940550-013"
         },
         {
-            "key": "ref_17",
-            "doi-asserted-by": "crossref",
-            "first-page": "82",
-            "DOI": "10.1016/j.coastaleng.2013.10.004",
-            "article-title": "Wave attenuation by flexible, idealized salt marsh vegetation",
-            "volume": "83",
-            "author": "Anderson",
-            "year": "2013",
-            "journal-title": "Coast. Eng."
+            "unstructured": "The Smiths. \u201cRubber Ring.\u201d (B-Side to \u201cThe Boy with a Thorn in His Side\u201d). Rough Trade Records, 1985.",
+            "key": "ref37"
         },
         {
-            "key": "ref_18",
-            "doi-asserted-by": "crossref",
-            "first-page": "85",
-            "DOI": "10.1016/0025-3227(84)90089-6",
-            "article-title": "The influence of waves and seagrass communities on suspended particulates in an estuarine embayment",
-            "volume": "59",
-            "author": "Ward",
-            "year": "1984",
-            "journal-title": "Mar. Geol."
+            "unstructured": "Vulture Editors. \u201cReal-Life Nomad Bob Wells Poured His Own Grief Into Nomadland.\u201d Vulture, 24 Feb. 2021, www.vulture.com/2021/02/real-nomad-bob-wells-poured-his-own-grief-into-nomadland.html.",
+            "key": "ref38"
         },
         {
-            "key": "ref_19",
-            "doi-asserted-by": "crossref",
-            "first-page": "483",
-            "DOI": "10.1080/15481603.2014.947838",
-            "article-title": "Mapping salt-marsh land-cover vegetation using high-spatial and hyperspectral satellite data to assist wetland inventory",
-            "volume": "51",
-            "author": "Kumar",
-            "year": "2014",
-            "journal-title": "GISci. Remote Sens."
+            "unstructured": "Wenders, Wim, director. Wings of Desire. Road Movies Filmproducktion and Argos Films, 1987.",
+            "key": "ref39"
         },
         {
-            "key": "ref_20",
-            "doi-asserted-by": "crossref",
-            "first-page": "61",
-            "DOI": "10.1016/j.ecss.2018.08.007",
-            "article-title": "Classification mapping of salt marsh vegetation by flexible monthly NDVI time-series using Landsat imagery",
-            "volume": "213",
-            "author": "Sun",
-            "year": "2018",
-            "journal-title": "Estuar. Coast. Shelf Sci."
+            "unstructured": "Wiley, Melissa. \u201cMeet Bob Wells, the Godfather of Van Living Who Stars as Himself in Nomadland.\u201d Insider, 28 Apr. 2021, www.insider.com/nomadland-van-dweller-nomad-bob-wells-cheap-rv-living-2021-4.",
+            "key": "ref40"
         },
         {
-            "key": "ref_21",
-            "doi-asserted-by": "crossref",
-            "first-page": "104319",
-            "DOI": "10.1016/j.csr.2020.104319",
-            "article-title": "Sediment deposition affects mangrove forests in the Mekong delta, Vietnam",
-            "volume": "213",
-            "author": "Nardin",
-            "year": "2020",
-            "journal-title": "Cont. Shelf Res."
+            "unstructured": "Winer, Paul (a. k. a. Sweet Pie). \u201cNext to the Track Blues.\u201d Nomadland (Original Motion Picture Soundtrack). Ludovico Einaudi and Various Artists, Decca, 2021.",
+            "key": "ref41"
         },
         {
-            "key": "ref_22",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Taddia, Y., Nardin, W., Corbau, C., Franchi, G., Stevenson, C.J., and Staver, L.W. (2019). Channels\u2019 shape evolution detected by UAVs in a restored salt marsh. Coastal Sediments, World Scientific.",
-            "DOI": "10.1142/9789811204487_0131"
-        },
-        {
-            "key": "ref_23",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Ad\u00e3o, T., Hru\u0161ka, J., P\u00e1dua, L., Bessa, J., Peres, E., Morais, R., and Sousa, J.J. (2017). Hyperspectral Imaging: A Review on UAV-Based Sensors, Data Processing and Applications for Agriculture and Forestry. Remote Sens., 9.",
-            "DOI": "10.3390/rs9111110"
-        },
-        {
-            "key": "ref_24",
-            "doi-asserted-by": "crossref",
-            "first-page": "1687",
-            "DOI": "10.1007/s13157-020-01295-4",
-            "article-title": "Tidal Marsh Restoration at Poplar Island: II. Elevation Trends, Vegetation Development, and Carbon Dynamics",
-            "volume": "40",
-            "author": "Staver",
-            "year": "2020",
-            "journal-title": "Wetlands"
-        },
-        {
-            "key": "ref_25",
-            "doi-asserted-by": "crossref",
-            "first-page": "236",
-            "DOI": "10.1016/j.advwatres.2016.01.001",
-            "article-title": "Influence of vegetation on spatial patterns of sediment deposition in deltaic islands during flood",
-            "volume": "93",
-            "author": "Nardin",
-            "year": "2016",
-            "journal-title": "Adv. Water Resour."
-        },
-        {
-            "key": "ref_26",
-            "doi-asserted-by": "crossref",
-            "first-page": "144",
-            "DOI": "10.1016/j.csr.2017.07.007",
-            "article-title": "Temporal patterns in species zonation in a mangrove forest in the Mekong Delta, Vietnam, using a time series of Landsat imagery",
-            "volume": "147",
-            "author": "Bullock",
-            "year": "2017",
-            "journal-title": "Cont. Shelf Res."
-        },
-        {
-            "key": "ref_27",
-            "doi-asserted-by": "crossref",
-            "unstructured": "D\u00edaz-Delgado, R., Cazacu, C., and Adamescu, M. (2018). Rapid Assessment of Ecological Integrity for LTER Wetland Sites by Using UAV Multispectral Mapping. Drones, 3.",
-            "DOI": "10.3390/drones3010003"
-        },
-        {
-            "key": "ref_28",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Martin, F.-M., M\u00fcllerov\u00e1, J., Borgniet, L., Dommanget, F., Breton, V., and Evette, A. (2018). Using Single- and Multi-Date UAV and Satellite Imagery to Accurately Monitor Invasive Knotweed Species. Remote Sens., 10.",
-            "DOI": "10.3390/rs10101662"
-        },
-        {
-            "key": "ref_29",
-            "doi-asserted-by": "crossref",
-            "first-page": "105979",
-            "DOI": "10.1016/j.ecolind.2019.105979",
-            "article-title": "Fine scale plant community assessment in coastal meadows using UAV based multispectral data",
-            "volume": "111",
-            "author": "Villoslada",
-            "year": "2020",
-            "journal-title": "Ecol. Indic."
-        },
-        {
-            "key": "ref_30",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Doughty, C.L., and Cavanaugh, K.C. (2019). Mapping Coastal Wetland Biomass from High Resolution Unmanned Aerial Vehicle (UAV) Imagery. Remote Sens., 11.",
-            "DOI": "10.3390/rs11050540"
-        },
-        {
-            "key": "ref_31",
-            "doi-asserted-by": "crossref",
-            "first-page": "649",
-            "DOI": "10.1093/jpe/rtw005",
-            "article-title": "Satellite remote sensing of grasslands: From observation to management",
-            "volume": "9",
-            "author": "Ali",
-            "year": "2016",
-            "journal-title": "J. Plant Ecol."
-        },
-        {
-            "key": "ref_32",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Baena, S., Moat, J., Whaley, O., and Boyd, D. (2017). Identifying species from the air: UAVs and the very high resolution challenge for plant conservation. PLoS ONE, 12.",
-            "DOI": "10.1371/journal.pone.0188714"
-        },
-        {
-            "key": "ref_33",
-            "doi-asserted-by": "crossref",
-            "first-page": "1673",
-            "DOI": "10.1007/s13157-020-01294-5",
-            "article-title": "Tidal Marsh Restoration at Poplar Island I: Transformation of Estuarine Sediments into Marsh Soils",
-            "volume": "40",
-            "author": "Cornwell",
-            "year": "2020",
-            "journal-title": "Wetlands"
-        },
-        {
-            "key": "ref_34",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Kelly, W., and Paul, S. (2017). Sarbanes Ecosystem Restoration Project at Poplar Island, Engineering for Sustainable Communities: Principles and Practices.",
-            "DOI": "10.1061/9780784414811.ch30"
-        },
-        {
-            "key": "ref_35",
-            "unstructured": "Kent, J. (2015). Water Level Variations at Poplar Island, MD, NOAA Technical Report NOS-OPS 076."
-        },
-        {
-            "key": "ref_36",
-            "unstructured": "Drummond, C.D., Harley, M.D., Turner, I.L., A Matheen, A.N., and Glamore, W.C. (2015, January 15\u201318). UAV applications to coastal engineering. Proceedings of the Australasian Coasts & Ports Conference 2015: 22nd Australasian Coastal and Ocean Engineering Conference and the 15th Australasian Port and Harbour Conference, Auckland, New Zealand."
-        },
-        {
-            "key": "ref_37",
-            "doi-asserted-by": "crossref",
-            "first-page": "4",
-            "DOI": "10.1016/j.geomorph.2015.05.011",
-            "article-title": "Reproducibility of UAV-based earth topography reconstructions based on Structure-from-Motion algorithms",
-            "volume": "260",
-            "author": "Clapuyt",
-            "year": "2016",
-            "journal-title": "Geomorphology"
-        },
-        {
-            "key": "ref_38",
-            "doi-asserted-by": "crossref",
-            "first-page": "19",
-            "DOI": "10.1016/j.coastaleng.2016.03.011",
-            "article-title": "UAVs for coastal surveying",
-            "volume": "114",
-            "author": "Turner",
-            "year": "2016",
-            "journal-title": "Coast. Eng."
-        },
-        {
-            "key": "ref_39",
-            "doi-asserted-by": "crossref",
-            "first-page": "317",
-            "DOI": "10.1016/j.proeng.2016.07.482",
-            "article-title": "UAV Photogrammetry for Monitoring Changes in River Topography and Vegetation",
-            "volume": "154",
-            "author": "Watanabe",
-            "year": "2016",
-            "journal-title": "Procedia Eng."
-        },
-        {
-            "key": "ref_40",
-            "doi-asserted-by": "crossref",
-            "first-page": "6880",
-            "DOI": "10.3390/rs5126880",
-            "article-title": "Using Unmanned Aerial Vehicles (UAV) for High-Resolution Reconstruction of Topography: The Structure from Motion Approach on Coastal Environments",
-            "volume": "5",
-            "author": "Mancini",
-            "year": "2013",
-            "journal-title": "Remote Sens."
-        },
-        {
-            "key": "ref_41",
-            "doi-asserted-by": "crossref",
-            "first-page": "16",
-            "DOI": "10.1016/j.geomorph.2013.03.023",
-            "article-title": "Geomorphological mapping with a small unmanned aircraft system (sUAS): Feature detection and accuracy assessment of a photogrammetrically-derived digital terrain model",
-            "volume": "194",
-            "author": "Hugenholtz",
-            "year": "2013",
-            "journal-title": "Geomorphology"
-        },
-        {
-            "key": "ref_42",
-            "doi-asserted-by": "crossref",
-            "first-page": "151",
-            "DOI": "10.1007/s00367-016-0435-9",
-            "article-title": "Drones as tools for monitoring beach topography changes in the Ligurian Sea (NW Mediterranean)",
-            "volume": "36",
-            "author": "Casella",
-            "year": "2016",
-            "journal-title": "Geo-Mar. Lett."
-        },
-        {
-            "key": "ref_43",
-            "doi-asserted-by": "crossref",
-            "first-page": "51",
-            "DOI": "10.1016/j.geomorph.2016.11.021",
-            "article-title": "Optimising UAV topographic surveys processed with structure-from-motion: Ground control quality, quantity and bundle adjustment",
-            "volume": "280",
-            "author": "James",
-            "year": "2017",
-            "journal-title": "Geomorphology"
-        },
-        {
-            "key": "ref_44",
-            "doi-asserted-by": "crossref",
-            "first-page": "300",
-            "DOI": "10.1016/j.geomorph.2012.08.021",
-            "article-title": "\u2018Structure-from-Motion\u2019photogrammetry: A low-cost, effective tool for geoscience applications",
-            "volume": "179",
-            "author": "Westoby",
-            "year": "2012",
-            "journal-title": "Geomorphology"
-        },
-        {
-            "key": "ref_45",
-            "doi-asserted-by": "crossref",
-            "first-page": "195",
-            "DOI": "10.1016/j.geomorph.2016.11.009",
-            "article-title": "An evaluation of the effectiveness of low-cost UAVs and structure from motion for geomorphic change detection",
-            "volume": "278",
-            "author": "Cook",
-            "year": "2017",
-            "journal-title": "Geomorphology"
-        },
-        {
-            "key": "ref_46",
-            "unstructured": "Agisoft, L.L.C. (2018, October 01). PhotoScan User Manual, Professional Edition, Version 1.4. Available online: http://www.agisoft.com/pdf/photoscan-pro_1_4_en.pdf."
-        },
-        {
-            "key": "ref_47",
-            "doi-asserted-by": "crossref",
-            "first-page": "19",
-            "DOI": "10.1007/s12518-019-00270-x",
-            "article-title": "Multispectral UAV monitoring of submerged seaweed in shallow water",
-            "volume": "12",
-            "author": "Taddia",
-            "year": "2019",
-            "journal-title": "Appl. Geomat."
-        },
-        {
-            "key": "ref_48",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Pomeroy, L.R., Darley, W.M., Dunn, E.L., Gallagher, J.L., Haines, E.B., and Whitney, D.M. (1981). Primary Production. The Ecology of a Salt Marsh, Springer.",
-            "DOI": "10.1007/978-1-4612-5893-3_3"
-        },
-        {
-            "key": "ref_49",
-            "doi-asserted-by": "crossref",
-            "first-page": "1005",
-            "DOI": "10.2307/1941255",
-            "article-title": "Persistent Differences in Two Forms of Spartina Alterniflora: A Common Garden Experiment",
-            "volume": "69",
-            "author": "Gallagher",
-            "year": "1988",
-            "journal-title": "Ecology"
-        },
-        {
-            "key": "ref_50",
-            "doi-asserted-by": "crossref",
-            "first-page": "935",
-            "DOI": "10.2112/JCOASTRES-D-09-00154.1",
-            "article-title": "The Biological Flora of Coastal Dunes and Wetlands: Spartina patens (W. Aiton) G.H. Muhlenberg",
-            "volume": "265",
-            "author": "Lonard",
-            "year": "2010",
-            "journal-title": "J. Coast. Res."
-        },
-        {
-            "key": "ref_51",
-            "doi-asserted-by": "crossref",
-            "first-page": "389",
-            "DOI": "10.1007/s10661-020-08330-1",
-            "article-title": "A comparative study of remote sensing classification methods for monitoring and assessing desert vegetation using a UAV-based multispectral sensor",
-            "volume": "192",
-            "author": "Abdullah",
-            "year": "2020",
-            "journal-title": "Environ. Monit. Assess."
-        },
-        {
-            "key": "ref_52",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Wahab, I., Hall, O., and Jirstr\u00f6m, M. (2018). Remote Sensing of Yields: Application of UAV Imagery-Derived NDVI for Estimating Maize Vigor and Yields in Complex Farming Systems in Sub-Saharan Africa. Drones, 2.",
-            "DOI": "10.3390/drones2030028"
-        },
-        {
-            "key": "ref_53",
-            "doi-asserted-by": "crossref",
-            "first-page": "9676",
-            "DOI": "10.1002/ece3.3494",
-            "article-title": "Effects of seasonality and environmental gradients on Spartina alterniflora allometry and primary production",
-            "volume": "7",
-            "author": "Hill",
-            "year": "2017",
-            "journal-title": "Ecol. Evol."
-        },
-        {
-            "key": "ref_54",
-            "doi-asserted-by": "crossref",
-            "first-page": "263",
-            "DOI": "10.1016/j.biocon.2016.10.015",
-            "article-title": "Assessing tidal marsh resilience to sea-level rise at broad geographic scales with multi-metric indices",
-            "volume": "204",
-            "author": "Raposa",
-            "year": "2016",
-            "journal-title": "Biol. Conserv."
-        },
-        {
-            "key": "ref_55",
-            "first-page": "940",
-            "article-title": "Massive Upland to Wetland Conversion Compensated for Historical Marsh Loss in Chesapeake Bay, USA",
-            "volume": "41",
-            "author": "Schieder",
-            "year": "2017",
-            "journal-title": "Chesap. Sci."
-        },
-        {
-            "key": "ref_56",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Alizad, K., Hagen, S.C., Medeiros, S.C., Bilskie, M.V., Morris, J.T., Balthis, L., and Buckel, C.A. (2016). Dynamic responses and implications to coastal wetlands and the surrounding regions under sea level rise. PLoS ONE, 13.",
-            "DOI": "10.1371/journal.pone.0205176"
-        },
-        {
-            "key": "ref_57",
-            "unstructured": "Boesch, D.F., Atkinson, L.P., Boicourt, W.C., Boon, J.D., Cahoon, D.R., Dalrymple, R., Ezer, T.A., Horton, B.P., Johnson, Z.P., and Kopp, R.E. (2013). Updating Maryland\u2019s Sea-Level Rise Projections, University of Maryland Center for Environmental Science. Special Report of the Scientific and Technical Working Group to the Maryland Climate Change Commission."
-        },
-        {
-            "key": "ref_58",
-            "unstructured": "Boesch, D.F., Boicourt, W.C., Cullather, R.I., Ezer, T., Galloway, G.E., Johnson, Z.P., Kilbourne, K.H., Kirwan, M.L., Kopp, R.E., and Land, S. (2018). Sea-Level Rise: Projections for Maryland, University of Maryland Center for Environmental Science."
-        },
-        {
-            "key": "ref_59",
-            "doi-asserted-by": "crossref",
-            "first-page": "137",
-            "DOI": "10.1016/j.envsci.2015.04.006",
-            "article-title": "Future of our coasts: The potential for natural and hybrid infrastructure to enhance the resilience of our coastal communities, economies and ecosystems",
-            "volume": "51",
-            "author": "Wowk",
-            "year": "2015",
-            "journal-title": "Environ. Sci. Policy"
-        },
-        {
-            "key": "ref_60",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Sutton-Grier, A., Gittman, R., Arkema, K., Bennett, R., Benoit, J., Blitch, S., Burks-Copes, K., Colden, A., Dausman, A., and DeAngelis, B. (2018). Investing in Natural and Nature-Based Infrastructure: Building Better Along Our Coasts. Sustainability, 10.",
-            "DOI": "10.3390/su10020523"
-        },
-        {
-            "key": "ref_61",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Farris, A.S., Defne, Z., and Ganju, N.K. (2019). Identifying Salt Marsh Shorelines from Remotely Sensed Elevation Data and Imagery. Remote Sens., 11.",
-            "DOI": "10.3390/rs11151795"
-        },
-        {
-            "key": "ref_62",
-            "doi-asserted-by": "crossref",
-            "first-page": "1260",
-            "DOI": "10.2112/JCOASTRES-D-15-00005.1",
-            "article-title": "Coastal and Environmental Remote Sensing from Unmanned Aerial Vehicles: An Overview",
-            "volume": "315",
-            "author": "Klemas",
-            "year": "2015",
-            "journal-title": "J. Coast. Res."
-        },
-        {
-            "key": "ref_63",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Pinton, D., Canestrelli, A., and Fantuzzi, L. (2020). A UAV-Based Dye-Tracking Technique to Measure Surface Velocities over Tidal Channels and Salt Marshes. J. Mar. Sci. Eng., 8.",
-            "DOI": "10.3390/jmse8050364"
-        },
-        {
-            "key": "ref_64",
-            "doi-asserted-by": "crossref",
-            "first-page": "22",
-            "DOI": "10.1016/j.isprsjprs.2015.10.004",
-            "article-title": "Remote sensing platforms and sensors: A survey",
-            "volume": "115",
-            "author": "Toth",
-            "year": "2016",
-            "journal-title": "ISPRS J. Photogramm. Remote Sens."
-        },
-        {
-            "key": "ref_65",
-            "doi-asserted-by": "crossref",
-            "first-page": "520",
-            "DOI": "10.1016/j.rse.2009.10.011",
-            "article-title": "Salt-marsh characterization, zonation assessment and mapping through a dual-wavelength LiDAR",
-            "volume": "114",
-            "author": "Collin",
-            "year": "2010",
-            "journal-title": "Remote Sens. Environ."
-        },
-        {
-            "key": "ref_66",
-            "first-page": "155",
-            "article-title": "Developing a land cover classification of salt marshes using uas time-series imagery and an open source workflow",
-            "volume": "42",
-            "author": "Myers",
-            "year": "2018",
-            "journal-title": "ISPRS Int. Arch. Photogramm. Remote Sens. Spat. Inf. Sci."
+            "unstructured": "Zhao, Chlo\u00e9, director. Nomadland. Cor Cordium Productions, Hear/Say Productions, and Highwayman Films, 2020.",
+            "key": "ref42"
         }
     ],
     "container-title": [
-        "Remote Sensing"
+        "Alphaville: journal of film and screen media"
     ],
     "language": "en",
-    "link": [
-        {
-            "URL": "https://www.mdpi.com/2072-4292/13/21/4207/pdf",
-            "content-type": "unspecified",
-            "content-version": "vor",
-            "intended-application": "similarity-checking"
-        }
-    ],
     "deposited": {
         "date-parts": [
             [
                 2024,
                 7,
-                20
+                1
             ]
         ],
-        "date-time": "2024-07-20T13:45:38Z",
-        "timestamp": 1721483138000
+        "date-time": "2024-07-01T13:09:11Z",
+        "timestamp": 1719839351000
     },
-    "score": 9.583955,
+    "score": 14.421429,
     "resource": {
         "primary": {
-            "URL": "https://www.mdpi.com/2072-4292/13/21/4207"
+            "URL": "https://www.alphavillejournal.com/Issue27/HTML/ArticleWalker.html"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2021,
-                10,
-                20
+                2024,
+                7,
+                2
             ]
         ]
     },
-    "references-count": 66,
+    "references-count": 43,
+    "issue-title": [
+        "100 Years of Disney"
+    ],
     "journal-issue": {
-        "issue": "21",
+        "issue": "27",
         "published-online": {
             "date-parts": [
                 [
-                    2021,
-                    11
+                    2024,
+                    7,
+                    2
                 ]
             ]
         }
     },
-    "alternative-id": [
-        "rs13214207"
-    ],
-    "URL": "http://dx.doi.org/10.3390/rs13214207",
+    "URL": "http://dx.doi.org/10.33178/alpha.27.17",
     "ISSN": [
-        "2072-4292"
+        "2009-4078"
     ],
     "issn-type": [
         {
-            "value": "2072-4292",
-            "type": "electronic"
+            "type": "electronic",
+            "value": "2009-4078"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2021,
-                10,
-                20
+                2024,
+                7,
+                2
             ]
         ]
     }

@@ -1,125 +1,128 @@
 {
-    "institution": [
-        {
-            "name": "Research Square"
-        }
-    ],
     "indexed": {
         "date-parts": [
             [
-                2024,
-                3,
-                3
+                2023,
+                8,
+                22
             ]
         ],
-        "date-time": "2024-03-03T12:38:23Z",
-        "timestamp": 1709469503326
+        "date-time": "2023-08-22T04:42:43Z",
+        "timestamp": 1692679363829
     },
-    "posted": {
-        "date-parts": [
-            [
-                2021,
-                2,
-                4
-            ]
-        ]
-    },
-    "group-title": "In Review",
     "reference-count": 0,
-    "publisher": "Research Square Platform LLC",
+    "publisher": "Wiley",
+    "issue": "2",
     "license": [
         {
             "start": {
                 "date-parts": [
                     [
-                        2021,
-                        2,
-                        4
+                        2022,
+                        9,
+                        23
                     ]
                 ],
-                "date-time": "2021-02-04T00:00:00Z",
-                "timestamp": 1612396800000
+                "date-time": "2022-09-23T00:00:00Z",
+                "timestamp": 1663891200000
             },
-            "content-version": "unspecified",
-            "delay-in-days": 0,
-            "URL": "https://creativecommons.org/licenses/by/4.0/"
+            "content-version": "vor",
+            "delay-in-days": 22,
+            "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
         }
     ],
     "content-domain": {
-        "domain": [],
-        "crossmark-restriction": false
+        "domain": [
+            "ila.onlinelibrary.wiley.com"
+        ],
+        "crossmark-restriction": true
     },
-    "accepted": {
+    "short-container-title": [
+        "J Adolescent &amp;amp; Adult Lit"
+    ],
+    "published-print": {
         "date-parts": [
             [
-                2021,
-                1,
-                25
+                2022,
+                9
             ]
         ]
     },
-    "abstract": "<jats:title>Abstract</jats:title>\n        <jats:p>Evidence suggests that climate change will increase the frequency of intense storms. Mangroves may protect economic activity in coastal areas. We develop a model that illustrates protections from mangroves and coastal elevation and estimate the impacts of cyclones on coastal economic activity. We find that higher elevation or expansive mangroves alone shelter economic activity from \u201cindirect\u201d cyclone exposure whereas economic activity is only protected from \u201cdirect\u201d cyclone exposure in high elevation communities with expansive mangroves. Our global mapping reveals that the majority of these \u201csafe havens\u201d are in upper middle-income countries but are used by populations in lower middle-income countries.</jats:p>",
-    "DOI": "10.21203/rs.3.rs-154759/v1",
-    "type": "posted-content",
+    "DOI": "10.1002/jaal.1259",
+    "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2021,
-                2,
-                4
+                2022,
+                9,
+                23
             ]
         ],
-        "date-time": "2021-02-04T22:45:52Z",
-        "timestamp": 1612478752000
+        "date-time": "2022-09-23T21:21:27Z",
+        "timestamp": 1663968087000
     },
+    "page": "54-54",
+    "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
     "source": "Crossref",
     "is-referenced-by-count": 0,
     "title": [
-        "When do Mangroves Create an Economic \u201cSafe Haven\u201d from Tropical Storms?"
+        "Reflecting on <scp><i>JAAL</i></scp> as an evolving community"
     ],
-    "prefix": "10.21203",
+    "prefix": "10.1002",
+    "volume": "66",
     "author": [
         {
-            "given": "Jacob",
-            "family": "Hochard",
+            "given": "Judith",
+            "family": "Franzak",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "University of Wyoming"
+                    "name": "Seidel School of Education Salisbury University  Salisbury Maryland USA"
                 }
             ]
         },
         {
-            "given": "Edward",
-            "family": "Barbier",
+            "given": "Koomi",
+            "family": "Kim",
             "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Colorado State University"
-                }
-            ]
+            "affiliation": []
         },
         {
-            "given": "Stuart",
-            "family": "Hamilton",
+            "given": "Heather",
+            "family": "Porter",
             "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Salisbury University"
-                }
-            ]
+            "affiliation": []
         }
     ],
-    "member": "8761",
+    "member": "311",
+    "published-online": {
+        "date-parts": [
+            [
+                2022,
+                9,
+                23
+            ]
+        ]
+    },
+    "container-title": [
+        "Journal of Adolescent &amp; Adult Literacy"
+    ],
+    "language": "en",
     "link": [
         {
-            "URL": "https://www.researchsquare.com/article/rs-154759/v1",
-            "content-type": "text/html",
+            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/jaal.1259",
+            "content-type": "application/pdf",
             "content-version": "vor",
             "intended-application": "text-mining"
         },
         {
-            "URL": "https://www.researchsquare.com/article/rs-154759/v1.html",
+            "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/jaal.1259",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://ila.onlinelibrary.wiley.com/doi/pdf/10.1002/jaal.1259",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -128,48 +131,99 @@
     "deposited": {
         "date-parts": [
             [
-                2022,
-                7,
-                29
+                2023,
+                8,
+                21
             ]
         ],
-        "date-time": "2022-07-29T01:00:57Z",
-        "timestamp": 1659056457000
+        "date-time": "2023-08-21T21:54:57Z",
+        "timestamp": 1692654897000
     },
-    "score": 13.696568,
+    "score": 15.697566,
     "resource": {
         "primary": {
-            "URL": "https://www.researchsquare.com/article/rs-154759/v1"
+            "URL": "https://ila.onlinelibrary.wiley.com/doi/10.1002/jaal.1259"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2021,
-                2,
-                4
+                2022,
+                9
             ]
         ]
     },
     "references-count": 0,
-    "URL": "http://dx.doi.org/10.21203/rs.3.rs-154759/v1",
-    "relation": {
-        "is-preprint-of": [
-            {
-                "id-type": "doi",
-                "id": "10.1038/s41598-021-94207-3",
-                "asserted-by": "subject"
-            }
-        ]
+    "journal-issue": {
+        "issue": "2",
+        "published-print": {
+            "date-parts": [
+                [
+                    2022,
+                    9
+                ]
+            ]
+        }
     },
+    "alternative-id": [
+        "10.1002/jaal.1259"
+    ],
+    "URL": "http://dx.doi.org/10.1002/jaal.1259",
+    "archive": [
+        "Portico"
+    ],
+    "ISSN": [
+        "1081-3004",
+        "1936-2706"
+    ],
+    "issn-type": [
+        {
+            "value": "1081-3004",
+            "type": "print"
+        },
+        {
+            "value": "1936-2706",
+            "type": "electronic"
+        }
+    ],
     "published": {
         "date-parts": [
             [
-                2021,
-                2,
-                4
+                2022,
+                9
             ]
         ]
     },
-    "subtype": "preprint"
+    "assertion": [
+        {
+            "value": "2022-07-27",
+            "order": 0,
+            "name": "received",
+            "label": "Received",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
+        },
+        {
+            "value": "2022-07-27",
+            "order": 1,
+            "name": "accepted",
+            "label": "Accepted",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
+        },
+        {
+            "value": "2022-09-23",
+            "order": 2,
+            "name": "published",
+            "label": "Published",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
+        }
+    ]
 }

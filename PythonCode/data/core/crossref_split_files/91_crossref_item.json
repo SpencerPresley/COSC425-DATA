@@ -3,247 +3,434 @@
         "date-parts": [
             [
                 2024,
-                8,
-                2
+                1,
+                27
             ]
         ],
-        "date-time": "2024-08-02T17:16:55Z",
-        "timestamp": 1722619015075
+        "date-time": "2024-01-27T08:46:11Z",
+        "timestamp": 1706345171866
     },
-    "reference-count": 23,
-    "publisher": "Informa UK Limited",
-    "issue": "5",
-    "funder": [
-        {
-            "DOI": "10.13039/100004969",
-            "name": "Maryland State Department of Education",
-            "doi-asserted-by": "publisher",
-            "award": [
-                "# 089010227"
-            ],
-            "id": [
-                {
-                    "id": "10.13039/100004969",
-                    "id-type": "DOI",
-                    "asserted-by": "publisher"
-                }
-            ]
-        }
-    ],
+    "reference-count": 56,
+    "publisher": "American Physiological Society",
+    "issue": "2",
     "content-domain": {
-        "domain": [
-            "www.tandfonline.com"
-        ],
-        "crossmark-restriction": true
+        "domain": [],
+        "crossmark-restriction": false
     },
     "short-container-title": [
-        "American Journal of Health Education"
+        "Journal of Neurophysiology"
     ],
     "published-print": {
         "date-parts": [
             [
-                2017,
-                9,
-                3
+                2019,
+                8,
+                1
             ]
         ]
     },
-    "DOI": "10.1080/19325037.2017.1335628",
+    "abstract": "<jats:p> Diabetes mellitus-induced hyperglycemia is associated with a number of pathologies such as retinopathy, nephropathy, delayed wound healing, and diabetic peripheral neuropathy (DPN). Approximately 50% of patients with diabetes mellitus will develop DPN, which is characterized by disrupted sensory and/or motor functioning, with treatment limited to pain management. Zebrafish ( Danio rerio) are an emerging animal model used to study a number of metabolic disorders, including diabetes. Diabetic retinopathy, nephropathy, and delayed wound healing have all been demonstrated in zebrafish. Recently, our laboratory has demonstrated that following the ablation of the insulin-producing \u03b2-cells of the pancreas (and subsequent hyperglycemia), the peripheral nerves begin to show signs of dysregulation. In this study, we take a different approach, taking advantage of the transdermal absorption abilities of zebrafish larvae to extend the period of hyperglycemia. Following 5 days of 60 mM d-glucose treatment, we observed motor axon defasciculation, disturbances in perineurial glia sheath formation, decreased myelination of motor axons, and sensory neuron mislocalization. This study extends our understanding of the structural changes of the peripheral nerve following induction of hyperglycemia and does so in an animal model capable of potential DPN drug discovery in the future. </jats:p><jats:p> NEW &amp; NOTEWORTHY Zebrafish are emerging as a robust model system for the study of diabetic complications such as retinopathy, nephropathy, and impaired wound healing. We present a novel model of diabetic peripheral neuropathy in zebrafish in which the integrity of the peripheral nerve is dysregulated following the induction of hyperglycemia. By using this model, future studies can focus on elucidating the underlying molecular mechanisms currently unknown. </jats:p>",
+    "DOI": "10.1152/jn.00318.2019",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2017,
+                2019,
                 7,
-                17
+                3
             ]
         ],
-        "date-time": "2017-07-17T18:12:39Z",
-        "timestamp": 1500315159000
+        "date-time": "2019-07-03T13:07:06Z",
+        "timestamp": 1562159226000
     },
-    "page": "306-319",
-    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
+    "page": "862-871",
     "source": "Crossref",
-    "is-referenced-by-count": 15,
+    "is-referenced-by-count": 8,
     "title": [
-        "Exploring Perceptions about and Behaviors Related to Mental Illness and Mental Health Service Utilization among College Students Using the Health Belief Model (HBM)"
+        "Disruption of peripheral nerve development in a zebrafish model of hyperglycemia"
     ],
-    "prefix": "10.1080",
-    "volume": "48",
+    "prefix": "10.1152",
+    "volume": "122",
     "author": [
         {
-            "ORCID": "http://orcid.org/0000-0002-3091-2540",
-            "authenticated-orcid": false,
-            "given": "Brandye D.",
-            "family": "Nobiling",
+            "given": "Hannah",
+            "family": "Ennerfelt",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Salisbury University"
+                    "name": "Department of Biological Sciences, Salisbury University, Salisbury, Maryland"
+                },
+                {
+                    "name": "Department of Psychology, Salisbury University, Salisbury, Maryland"
                 }
             ]
         },
         {
-            "given": "Sherry Azadi",
-            "family": "Maykrantz",
+            "given": "Gabrielle",
+            "family": "Voithofer",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Salisbury University"
+                    "name": "Department of Biological Sciences, Salisbury University, Salisbury, Maryland"
+                },
+                {
+                    "name": "Department of Psychology, Salisbury University, Salisbury, Maryland"
+                }
+            ]
+        },
+        {
+            "given": "Morgan",
+            "family": "Tibbo",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Biological Sciences, Salisbury University, Salisbury, Maryland"
+                },
+                {
+                    "name": "Department of Psychology, Salisbury University, Salisbury, Maryland"
+                }
+            ]
+        },
+        {
+            "given": "Derrick",
+            "family": "Miller",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Chemistry, Salisbury University, Salisbury, Maryland"
+                }
+            ]
+        },
+        {
+            "given": "Rebecca",
+            "family": "Warfield",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Biological Sciences, Salisbury University, Salisbury, Maryland"
+                },
+                {
+                    "name": "Department of Psychology, Salisbury University, Salisbury, Maryland"
+                }
+            ]
+        },
+        {
+            "given": "Samantha",
+            "family": "Allen",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Biological Sciences, Salisbury University, Salisbury, Maryland"
+                }
+            ]
+        },
+        {
+            "given": "Jessica",
+            "family": "Kennett Clark",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Biological Sciences, Salisbury University, Salisbury, Maryland"
                 }
             ]
         }
     ],
-    "member": "301",
-    "published-online": {
-        "date-parts": [
-            [
-                2017,
-                7,
-                17
-            ]
-        ]
-    },
+    "member": "24",
     "reference": [
         {
-            "key": "CIT0001",
-            "unstructured": "American College Health Association. National College Health Assessment: Fall 2016 reference group executive summary. http://www.acha-ncha.org/docs/NCHA-II_FALL_2016_REFERENCE_GROUP_EXECUTIVE_SUMMARY.pdf. Published Fall 2016. Accessed June 20, 2017."
-        },
-        {
-            "key": "CIT0003",
+            "key": "B1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.3200/JACH.57.2.173-182"
+            "DOI": "10.1097/00000542-200607000-00024"
         },
         {
-            "key": "CIT0004",
+            "key": "B2",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/87568225.2012.685852"
+            "DOI": "10.1242/dev.071001"
         },
         {
-            "key": "CIT0005",
+            "key": "B3",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1468-2850.2009.01181.x"
+            "DOI": "10.1242/dmm.003772"
         },
         {
-            "key": "CIT0007",
-            "volume-title": "Navigating through the Transition Years",
-            "author": "Geddes A.",
-            "year": "2010"
-        },
-        {
-            "key": "CIT0008",
+            "key": "B4",
             "doi-asserted-by": "publisher",
-            "DOI": "10.3200/JACH.57.1.61-68"
+            "DOI": "10.1016/j.cmet.2012.04.018"
         },
         {
-            "key": "CIT0009",
+            "key": "B5",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/jan.12423"
+            "DOI": "10.1007/BF00305868"
         },
         {
-            "key": "CIT0010",
-            "doi-asserted-by": "crossref",
-            "first-page": "35",
-            "DOI": "10.5694/j.1326-5377.2007.tb01334.x",
-            "volume": "187",
-            "author": "Rickwood DJ",
-            "year": "2007",
-            "journal-title": "Med J Aust"
-        },
-        {
-            "key": "CIT0011",
-            "volume-title": "Psychosocial Disorders in Young People: Time Trends and Their Causes",
-            "author": "Rutter M",
-            "year": "1995"
-        },
-        {
-            "key": "CIT0013",
-            "first-page": "349",
-            "volume": "28",
-            "author": "Akhtar MA.",
-            "year": "2012",
-            "journal-title": "Pak J Med Sci"
-        },
-        {
-            "key": "CIT0016",
+            "key": "B6",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.psychres.2007.10.009"
+            "DOI": "10.1073/pnas.0914191107"
         },
         {
-            "key": "CIT0017",
+            "key": "B7",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/02791072.2007.10399873"
+            "DOI": "10.1016/j.cbpb.2014.03.005"
         },
         {
-            "key": "CIT0019",
-            "volume-title": "Health Behavior and Health Education: Theory, Research, and Practice",
-            "author": "Glanz K",
-            "year": "2002",
-            "edition": "3"
-        },
-        {
-            "key": "CIT0020",
+            "key": "B8",
             "doi-asserted-by": "publisher",
-            "DOI": "10.5993/AJHB.24.2.1"
+            "DOI": "10.1016/j.bbr.2014.08.033"
         },
         {
-            "key": "CIT0021",
+            "key": "B9",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1744-6163.2008.00173.x"
+            "DOI": "10.2337/diabetes.52.9.2363"
         },
         {
-            "key": "CIT0022",
-            "volume-title": "An Introduction to Community & Public Health",
-            "author": "McKenzie J",
-            "year": "2015",
-            "edition": "8"
-        },
-        {
-            "key": "CIT0023",
-            "unstructured": "Department of Health & Human Services. For people with mental health problems. https://www.mentalhealth.gov/talk/people-with-mental-health-problems/index.html. Updated August 31, 2016. Accessed April 10, 2017."
-        },
-        {
-            "key": "CIT0024",
+            "key": "B10",
             "doi-asserted-by": "publisher",
-            "DOI": "10.3200/JACH.56.1.69-74"
+            "DOI": "10.1002/dvdy.24158"
         },
         {
-            "key": "CIT0025",
+            "key": "B11",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s11414-008-9130-6"
+            "DOI": "10.1002/ana.10364"
         },
         {
-            "key": "CIT0026",
+            "key": "B12",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10911359.2013.835760"
+            "DOI": "10.2337/db15-0153"
         },
         {
-            "key": "CIT0027",
-            "volume-title": "Research Design: Qualitative, Quantitative, and Mixed Method Approaches",
-            "author": "Creswell JW.",
-            "year": "2003",
-            "edition": "2"
-        },
-        {
-            "key": "CIT0028",
-            "volume-title": "Qualitative Inquiry & Research Design: Choosing among Five Approaches",
-            "author": "Creswell JW.",
-            "year": "2007",
-            "edition": "2"
-        },
-        {
-            "key": "CIT0029",
+            "key": "B13",
             "doi-asserted-by": "publisher",
-            "DOI": "10.3109/10673229.2012.712839"
+            "DOI": "10.1089/zeb.2009.0640"
+        },
+        {
+            "key": "B14",
+            "first-page": "131",
+            "volume": "14",
+            "author": "El-Barrany WG",
+            "year": "2009",
+            "journal-title": "Neurosciences (Riyadh)"
+        },
+        {
+            "key": "B15",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1677/JME-06-0037"
+        },
+        {
+            "key": "B16",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1152/jappl.2000.89.6.2235"
+        },
+        {
+            "key": "B17",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s004010050961"
+        },
+        {
+            "key": "B18",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s00592-007-0257-3"
+        },
+        {
+            "key": "B19",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s00125-006-0485-z"
+        },
+        {
+            "key": "B20",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jns.2003.09.011"
+        },
+        {
+            "key": "B21",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1074/jbc.M404167200"
+        },
+        {
+            "key": "B22",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.bbrc.2005.11.057"
+        },
+        {
+            "key": "B23",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1155/2013/149452"
+        },
+        {
+            "key": "B24",
+            "first-page": "265",
+            "volume": "44",
+            "author": "Johnson PC",
+            "year": "1981",
+            "journal-title": "Lab Invest"
+        },
+        {
+            "key": "B25",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.ygcen.2010.10.010"
+        },
+        {
+            "key": "B26",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1155/2009/793281"
+        },
+        {
+            "key": "B27",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1365-2990.1988.tb00874.x"
+        },
+        {
+            "key": "B28",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1038/nn1803"
+        },
+        {
+            "key": "B29",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1101/cshperspect.a020511"
+        },
+        {
+            "key": "B30",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1038/nn2025"
+        },
+        {
+            "key": "B31",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1155/2014/870930"
+        },
+        {
+            "key": "B32",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s10072-014-1848-8"
+        },
+        {
+            "key": "B33",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/bdra.20654"
+        },
+        {
+            "key": "B34",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1073/pnas.1525096113"
+        },
+        {
+            "key": "B35",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1006/exnr.1998.6938"
+        },
+        {
+            "key": "B36",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/S0022-510X(96)00285-7"
+        },
+        {
+            "key": "B37",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1524-475X.2010.00613.x"
+        },
+        {
+            "key": "B38",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2337/db11-0588"
+        },
+        {
+            "key": "B39",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.cell.2008.04.037"
+        },
+        {
+            "key": "B40",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1073/pnas.89.6.2218"
+        },
+        {
+            "key": "B41",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1073/pnas.85.13.4879"
+        },
+        {
+            "key": "B42",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2337/dc16-2042"
+        },
+        {
+            "key": "B43",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/BF00690832"
+        },
+        {
+            "key": "B44",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1242/dev.072439"
+        },
+        {
+            "key": "B45",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.nbd.2006.11.016"
+        },
+        {
+            "key": "B46",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1152/ajpregu.00258.2018"
+        },
+        {
+            "key": "B47",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/wrr.12027"
+        },
+        {
+            "key": "B48",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/BF01252274"
+        },
+        {
+            "key": "B49",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1038/nmeth.2019"
+        },
+        {
+            "key": "B50",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/ana.410180105"
+        },
+        {
+            "key": "B51",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1152/ajpendo.00245.2009"
+        },
+        {
+            "key": "B52",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2337/diacare.26.9.2604"
+        },
+        {
+            "key": "B53",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2337/dc10-1303"
+        },
+        {
+            "key": "B54",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/B978-0-444-53480-4.00030-8"
+        },
+        {
+            "key": "B55",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1242/dev.052696"
+        },
+        {
+            "key": "B56",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/1073858408316175"
         }
     ],
     "container-title": [
-        "American Journal of Health Education"
+        "Journal of Neurophysiology"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/19325037.2017.1335628",
+            "URL": "https://www.physiology.org/doi/pdf/10.1152/jn.00318.2019",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -254,89 +441,65 @@
             [
                 2019,
                 9,
-                30
+                8
             ]
         ],
-        "date-time": "2019-09-30T16:15:56Z",
-        "timestamp": 1569860156000
+        "date-time": "2019-09-08T16:24:17Z",
+        "timestamp": 1567959857000
     },
-    "score": 16.271313,
+    "score": 17.948421,
     "resource": {
         "primary": {
-            "URL": "https://www.tandfonline.com/doi/full/10.1080/19325037.2017.1335628"
+            "URL": "https://www.physiology.org/doi/10.1152/jn.00318.2019"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2017,
-                7,
-                17
+                2019,
+                8,
+                1
             ]
         ]
     },
-    "references-count": 23,
+    "references-count": 56,
     "journal-issue": {
-        "issue": "5",
-        "published-online": {
-            "date-parts": [
-                [
-                    2017,
-                    7,
-                    17
-                ]
-            ]
-        },
+        "issue": "2",
         "published-print": {
             "date-parts": [
                 [
-                    2017,
-                    9,
-                    3
+                    2019,
+                    8,
+                    1
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1080/19325037.2017.1335628"
+        "10.1152/jn.00318.2019"
     ],
-    "URL": "http://dx.doi.org/10.1080/19325037.2017.1335628",
+    "URL": "http://dx.doi.org/10.1152/jn.00318.2019",
     "ISSN": [
-        "1932-5037",
-        "2168-3751"
+        "0022-3077",
+        "1522-1598"
     ],
     "issn-type": [
         {
-            "value": "1932-5037",
+            "value": "0022-3077",
             "type": "print"
         },
         {
-            "value": "2168-3751",
+            "value": "1522-1598",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2017,
-                7,
-                17
+                2019,
+                8,
+                1
             ]
         ]
-    },
-    "assertion": [
-        {
-            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
-            "order": 1,
-            "name": "peerreview_statement",
-            "label": "Peer Review Statement"
-        },
-        {
-            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=ujhe20",
-            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=ujhe20",
-            "order": 2,
-            "name": "aims_and_scope_url",
-            "label": "Aim & Scope"
-        }
-    ]
+    }
 }

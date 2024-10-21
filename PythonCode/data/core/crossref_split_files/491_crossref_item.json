@@ -3,78 +3,59 @@
         "date-parts": [
             [
                 2024,
-                9,
-                13
+                1,
+                11
             ]
         ],
-        "date-time": "2024-09-13T09:11:16Z",
-        "timestamp": 1726218676170
+        "date-time": "2024-01-11T00:24:50Z",
+        "timestamp": 1704932690075
     },
-    "reference-count": 85,
-    "publisher": "Oxford University Press (OUP)",
-    "issue": "2",
+    "reference-count": 61,
+    "publisher": "SAGE Publications",
     "license": [
         {
             "start": {
                 "date-parts": [
                     [
-                        2020,
-                        9,
-                        23
+                        2024,
+                        1,
+                        1
                     ]
                 ],
-                "date-time": "2020-09-23T00:00:00Z",
-                "timestamp": 1600819200000
+                "date-time": "2024-01-01T00:00:00Z",
+                "timestamp": 1704067200000
             },
-            "content-version": "vor",
+            "content-version": "unspecified",
             "delay-in-days": 0,
-            "URL": "https://academic.oup.com/journals/pages/open_access/funder_policies/chorus/standard_publication_model"
+            "URL": "https://creativecommons.org/licenses/by/4.0/"
         }
     ],
     "funder": [
         {
-            "DOI": "10.13039/100001309",
-            "name": "Research Corporation for Science Advancement",
+            "DOI": "10.13039/100000026",
+            "name": "National Institute on Drug Abuse",
             "doi-asserted-by": "publisher",
             "award": [
-                "26077"
+                "1R03DA047597-01"
             ],
             "id": [
                 {
-                    "id": "10.13039/100001309",
+                    "id": "10.13039/100000026",
                     "id-type": "DOI",
                     "asserted-by": "publisher"
                 }
             ]
         },
         {
-            "DOI": "10.13039/100000001",
-            "name": "National Science Foundation",
+            "DOI": "10.13039/100000026",
+            "name": "National Institute on Drug Abuse",
             "doi-asserted-by": "publisher",
             "award": [
-                "AST-1909022",
-                "AST-1909584",
-                "AST-1616636",
-                "1616684"
+                "1R21CA277849-01"
             ],
             "id": [
                 {
-                    "id": "10.13039/100000001",
-                    "id-type": "DOI",
-                    "asserted-by": "publisher"
-                }
-            ]
-        },
-        {
-            "DOI": "10.13039/100000104",
-            "name": "National Aeronautics and Space Administration",
-            "doi-asserted-by": "publisher",
-            "award": [
-                "80NSSC18K0726"
-            ],
-            "id": [
-                {
-                    "id": "10.13039/100000104",
+                    "id": "10.13039/100000026",
                     "id-type": "DOI",
                     "asserted-by": "publisher"
                 }
@@ -82,1192 +63,470 @@
         }
     ],
     "content-domain": {
-        "domain": [],
-        "crossmark-restriction": false
+        "domain": [
+            "journals.sagepub.com"
+        ],
+        "crossmark-restriction": true
     },
+    "short-container-title": [
+        "Substance Use: Research and Treatment"
+    ],
     "published-print": {
         "date-parts": [
             [
-                2020,
-                10,
-                15
+                2024,
+                1
             ]
         ]
     },
-    "abstract": "<jats:title>ABSTRACT</jats:title>\n               <jats:p>We use observations from the Apache Point Observatory Galactic Evolution Experiment (APOGEE) survey to explore the relationship between stellar parameters and multiplicity. We combine high-resolution repeat spectroscopy for 41\u2009363 dwarf and subgiant stars with abundance measurements from the APOGEE pipeline and distances and stellar parameters derived using Gaia DR2 parallaxes from Sanders &amp; Das to identify and characterize stellar multiples with periods below 30\u00a0yr, corresponding to \u0394RVmax\u00a0\u2273 3\u00a0km s\u22121, where \u0394RVmax is the maximum APOGEE-detected shift in the radial velocities. Chemical composition is responsible for most of the variation in the close binary fraction in our sample, with stellar parameters like mass and age playing a secondary role. In addition to the previously identified strong anticorrelation between the close binary fraction and [Fe/H],\u2009we find that high abundances of \u03b1 elements also suppress multiplicity at most values of [Fe/H] sampled by APOGEE. The anticorrelation between \u03b1 abundances and multiplicity is substantially steeper than that observed for Fe, suggesting C, O, and Si in the form of dust and ices dominate the opacity of primordial protostellar discs and their propensity for fragmentation via gravitational stability. Near [Fe/H] = 0 dex, the bias-corrected close binary fraction (a &amp;lt; 10 au) decreases from \u2248100 per cent at [\u03b1/H] = \u22120.2 dex to \u224815 per cent near [\u03b1/H] = 0.08 dex, with a suggestive turn-up to \u224820 per cent near [\u03b1/H] = 0.2. We conclude that the relationship between stellar multiplicity and chemical composition for sun-like dwarf stars in the field of the Milky Way is complex, and that this complexity should be accounted for in future studies of interacting binaries.</jats:p>",
-    "DOI": "10.1093/mnras/staa2859",
+    "abstract": "<jats:sec><jats:title>Objective:</jats:title><jats:p> The COVID-19 pandemic placed extreme burden on hospitals, while opioid overdose is another challenging public health issue. This study aimed to examine the trends and outcomes of opioid overdose hospitalizations in Pennsylvania during 2018 to 2021. </jats:p></jats:sec><jats:sec><jats:title>Design:</jats:title><jats:p> We identified opioid overdose hospitalizations in the state of Pennsylvania using the state-wide hospital discharge database (PHC4) 2018 to 2021. We examined the number of opioid overdose hospitalizations, the corresponding mortality and discharges against medical advice comparing the pre-COVID period (2018-2019) and the COVID period (2020-2021). We also assessed what patient and hospital characteristics were associated with in-hospital death or leaving against medical advice. </jats:p></jats:sec><jats:sec><jats:title>Results:</jats:title><jats:p> A total of 13\u2009446 opioid-related hospitalizations were identified in 2018 to 2021. Compared to pre-pandemic, a higher percentage of cases involving synthetics (17.0%vs 10.3%, P\u2009&lt;\u2009.0001) were observed during COVID. After controlling for covariates, there was no significant difference in opioid overdose in-hospital deaths in the years 2020 to 2021 compared to 2018 to 2019 (OR\u2009=\u20090.846, 95% CI: 0.71-1.01, P\u2009=\u2009.065). The COVID period was significantly associated with more leaving against medical advice compared to years 2018 to 2019 (OR\u2009=\u20091.265, 95% CI: 1.11-1.44, P\u2009=\u2009.0003). Compared to commercial insurance, Medicaid insurance was associated with higher odds of both in-hospital death (OR\u2009=\u20091.383, 95% CI: 1.06-1.81, P\u2009=\u2009.0176) and leaving against medical advice (OR\u2009=\u20091.903, 95% CI: 1.56-2.33, P\u2009&lt;\u2009.0001). </jats:p></jats:sec><jats:sec><jats:title>Conclusion:</jats:title><jats:p> There were no substantial changes in the number of overall opioid overdose cases and deaths at hospitals following the outbreak of COVID-19 in Pennsylvania. This observation suggests that an increased number of patients may have succumbed to overdoses outside of hospital settings, possibly due to a higher severity of overdoses. Further, we found that patients were more likely to leave against medical advice during the COVID-19 pandemic. </jats:p></jats:sec>",
+    "DOI": "10.1177/11782218231222343",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2020,
-                9,
-                22
+                2024,
+                1,
+                10
             ]
         ],
-        "date-time": "2020-09-22T11:20:02Z",
-        "timestamp": 1600773602000
+        "date-time": "2024-01-10T10:48:26Z",
+        "timestamp": 1704883706000
     },
-    "page": "1607-1626",
+    "update-policy": "http://dx.doi.org/10.1177/sage-journals-update-policy",
     "source": "Crossref",
-    "is-referenced-by-count": 33,
+    "is-referenced-by-count": 0,
     "title": [
-        "The close binary fraction as a function of stellar parameters in APOGEE: a strong anticorrelation with \u03b1 abundances"
+        "Opioid Overdose Hospitalizations During COVID-19: The Experience of Pennsylvania"
     ],
-    "prefix": "10.1093",
-    "volume": "499",
+    "prefix": "10.1177",
+    "volume": "18",
     "author": [
         {
-            "ORCID": "http://orcid.org/0000-0003-2116-2159",
-            "authenticated-orcid": false,
-            "given": "Christine N",
-            "family": "Mazzola",
+            "given": "Chan",
+            "family": "Shen",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Department of Physics and Astronomy and Pittsburgh Particle Physics, Astrophysics and Cosmology Center (PITT PACC), University of Pittsburgh, 3941 O\u2018Hara Street, Pittsburgh, PA 15260, USA"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0003-3494-343X",
-            "authenticated-orcid": false,
-            "given": "Carles",
-            "family": "Badenes",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Physics and Astronomy and Pittsburgh Particle Physics, Astrophysics and Cosmology Center (PITT PACC), University of Pittsburgh, 3941 O\u2018Hara Street, Pittsburgh, PA 15260, USA"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0002-0870-6388",
-            "authenticated-orcid": false,
-            "given": "Maxwell",
-            "family": "Moe",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Steward Observatory, University of Arizona, 933 North Cherry Avenue, Tucson, AZ 85721, USA"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0003-2644-135X",
-            "authenticated-orcid": false,
-            "given": "Sergey E",
-            "family": "Koposov",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Institute for Astronomy, University of Edinburgh, Royal Observatory, Blackford Hill, Edinburgh EH9 3HJ, UK"
+                    "name": "Department of Surgery, The Pennsylvania State University, College of Medicine, Hershey, PA, USA"
                 },
                 {
-                    "name": "Institute of Astronomy, University of Cambridge, Madingley Road, Cambridge CB3 0HA, UK"
+                    "name": "Department of Public Health Sciences, The Pennsylvania State University, College of Medicine, Hershey, PA, USA"
                 }
             ]
         },
         {
-            "ORCID": "http://orcid.org/0000-0002-5365-1267",
-            "authenticated-orcid": false,
-            "given": "Marina",
-            "family": "Kounkel",
+            "given": "James Douglas",
+            "family": "Thornton",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Department of Physics and Astronomy, Western Washington University, 516 High St., Bellingham, WA 98225, USA"
+                    "name": "Department of Pharmaceutical Health Outcomes and Policy, College of Pharmacy, University of Houston, TX, USA"
                 }
             ]
         },
         {
-            "ORCID": "http://orcid.org/0000-0001-5253-1338",
-            "authenticated-orcid": false,
-            "given": "Kaitlin",
-            "family": "Kratter",
+            "given": "Ning",
+            "family": "Li",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Steward Observatory, University of Arizona, 933 North Cherry Avenue, Tucson, AZ 85721, USA"
+                    "name": "Department of Economics and Finance, Salisbury University, Salisbury, MD, USA"
                 }
             ]
         },
         {
-            "ORCID": "http://orcid.org/0000-0001-6914-7797",
-            "authenticated-orcid": false,
-            "given": "Kevin",
-            "family": "Covey",
+            "given": "Shouhao",
+            "family": "Zhou",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Department of Physics and Astronomy, Western Washington University, 516 High St., Bellingham, WA 98225, USA"
+                    "name": "Department of Public Health Sciences, The Pennsylvania State University, College of Medicine, Hershey, PA, USA"
                 }
             ]
         },
         {
-            "ORCID": "http://orcid.org/0000-0003-2496-1925",
-            "authenticated-orcid": false,
-            "given": "Matthew G",
-            "family": "Walker",
+            "given": "Li",
+            "family": "Wang",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "McWilliams Center for Cosmology, Department of Physics, Carnegie Mellon University, 5000 Forbes Avenue, Pittsburgh, PA 15213, USA"
+                    "name": "Department of Public Health Sciences, The Pennsylvania State University, College of Medicine, Hershey, PA, USA"
                 }
             ]
         },
         {
-            "given": "Todd A",
-            "family": "Thompson",
+            "given": "Douglas L.",
+            "family": "Leslie",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Department of Astronomy, The Ohio State University, 140\u00a0W. 18th Ave., Columbus, OH 43210, USA"
-                },
-                {
-                    "name": "Center for Cosmology and AstroParticle Physics, The Ohio State University, 191\u00a0W. Woodruff Ave., Columbus, OH 43210, USA"
+                    "name": "Department of Public Health Sciences, The Pennsylvania State University, College of Medicine, Hershey, PA, USA"
                 }
             ]
         },
         {
-            "ORCID": "http://orcid.org/0000-0001-8085-5890",
-            "authenticated-orcid": false,
-            "given": "Brett",
-            "family": "Andrews",
+            "given": "Sarah S.",
+            "family": "Kawasaki",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Department of Physics and Astronomy and Pittsburgh Particle Physics, Astrophysics and Cosmology Center (PITT PACC), University of Pittsburgh, 3941 O\u2018Hara Street, Pittsburgh, PA 15260, USA"
-                }
-            ]
-        },
-        {
-            "given": "Peter E",
-            "family": "Freeman",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Statistics, Carnegie Mellon University, 5000 Forbes Avenue, Pittsburgh, PA 15213, USA"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0001-5261-4336",
-            "authenticated-orcid": false,
-            "given": "Borja",
-            "family": "Anguiano",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Astronomy, University of Virginia, 530 McCormick Road, Charlottesville, VA 22904-4325, USA"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0001-5926-4471",
-            "authenticated-orcid": false,
-            "given": "Joleen K",
-            "family": "Carlberg",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Space Telescope Science Institute, 3700 San Martin Dr., Baltimore, MD 21218, USA"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0002-3657-0705",
-            "authenticated-orcid": false,
-            "given": "Nathan M",
-            "family": "De\u00a0Lee",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Physics, Geology, and Engineering Technology, Northern Kentucky University, Highland Heights, KY 41099, USA"
-                },
-                {
-                    "name": "Department of Physics & Astronomy, Vanderbilt University, Nashville, TN 37235, USA"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0002-0740-8346",
-            "authenticated-orcid": false,
-            "given": "Peter M",
-            "family": "Frinchaboy",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Physics & Astronomy, Texas Christian University, Fort Worth, TX 76129, USA"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0002-7871-085X",
-            "authenticated-orcid": false,
-            "given": "Hannah M",
-            "family": "Lewis",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Astronomy, University of Virginia, 530 McCormick Road, Charlottesville, VA 22904-4325, USA"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0003-2025-3147",
-            "authenticated-orcid": false,
-            "given": "Steven",
-            "family": "Majewski",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Astronomy, University of Virginia, 530 McCormick Road, Charlottesville, VA 22904-4325, USA"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0002-1793-3689",
-            "authenticated-orcid": false,
-            "given": "David",
-            "family": "Nidever",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Physics, Montana State University, P.O. Box 173840, Bozeman, MT 59717-3840, USA"
-                },
-                {
-                    "name": "NSF\u2019s National Optical-Infrared Astronomy Research Laboratory, 950 North Cherry Ave, Tucson, AZ 85719, USA"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0003-4752-4365",
-            "authenticated-orcid": false,
-            "given": "Christian",
-            "family": "Nitschelm",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Centro de Astronom\u00eda (CITEVA), Universidad de Antofagasta, Avenida Angamos 601, Antofagasta 1270300, Chile"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0003-0872-7098",
-            "authenticated-orcid": false,
-            "given": "Adrian M",
-            "family": "Price-Whelan",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Center for Computational Astrophysics, Flatiron Institute, Simons Foundation, 162 Fifth Avenue, New York, NY 10010, USA"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0002-1379-4204",
-            "authenticated-orcid": false,
-            "given": "Alexandre",
-            "family": "Roman-Lopes",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Departamento de F\u00edsica, Facultad de Ciencias, Universidad de La Serena, Cisternas 1200, La Serena, Chile"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0002-3481-9052",
-            "authenticated-orcid": false,
-            "given": "Keivan G",
-            "family": "Stassun",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Physics & Astronomy, Vanderbilt University, Nashville, TN 37235, USA"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0003-3248-3097",
-            "authenticated-orcid": false,
-            "given": "Nicholas W",
-            "family": "Troup",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Physics, Salisbury University, Salisbury, MD 21801, USA"
+                    "name": "Penn State Health Milton S. Hershey Medical Center, Hershey, PA, USA"
                 }
             ]
         }
     ],
-    "member": "286",
+    "member": "179",
     "published-online": {
         "date-parts": [
             [
-                2020,
-                9,
-                23
+                2024,
+                1,
+                10
             ]
         ]
     },
     "reference": [
         {
-            "key": "2021092300013686800_bib1",
+            "key": "bibr1-11782218231222343",
             "doi-asserted-by": "publisher",
-            "first-page": "19",
-            "DOI": "10.3847/1538-4365/aa9e8a",
-            "volume": "235",
-            "author": "Abolfathi",
-            "year": "2018",
-            "journal-title": "ApJS"
+            "DOI": "10.1001/jamanetworkopen.2021.25538"
         },
         {
-            "key": "2021092300013686800_bib2",
+            "key": "bibr2-11782218231222343",
             "doi-asserted-by": "publisher",
-            "first-page": "25",
-            "DOI": "10.3847/1538-4365/aa8992",
-            "volume": "233",
-            "author": "Albareti",
-            "year": "2017",
-            "journal-title": "ApJS"
+            "DOI": "10.1016/j.drugalcdep.2020.108176"
         },
         {
-            "key": "2021092300013686800_bib4",
+            "key": "bibr3-11782218231222343",
             "doi-asserted-by": "publisher",
-            "first-page": "L11",
-            "DOI": "10.1088/2041-8205/749/1/l11",
-            "volume": "749",
-            "author": "Badenes",
-            "year": "2012",
-            "journal-title": "ApJ"
+            "DOI": "10.1080/07853890.2022.2067350"
         },
         {
-            "key": "2021092300013686800_bib3",
-            "doi-asserted-by": "publisher",
-            "first-page": "147",
-            "DOI": "10.3847/1538-4357/aaa765",
-            "volume": "854",
-            "author": "Badenes",
-            "year": "2018",
-            "journal-title": "ApJ"
-        },
-        {
-            "key": "2021092300013686800_bib5",
-            "doi-asserted-by": "publisher",
-            "first-page": "285",
-            "DOI": "10.1093/mnras/stu795",
-            "volume": "442",
-            "author": "Bate",
-            "year": "2014",
-            "journal-title": "MNRAS"
-        },
-        {
-            "key": "2021092300013686800_bib6",
-            "doi-asserted-by": "publisher",
-            "first-page": "2341",
-            "DOI": "10.1093/mnras/stz103",
-            "volume": "484",
-            "author": "Bate",
-            "year": "2019",
-            "journal-title": "MNRAS"
-        },
-        {
-            "key": "2021092300013686800_bib7",
-            "doi-asserted-by": "publisher",
-            "first-page": "28",
-            "DOI": "10.3847/1538-3881/aa7567",
-            "volume": "154",
-            "author": "Blanton",
-            "year": "2017",
-            "journal-title": "AJ"
-        },
-        {
-            "key": "2021092300013686800_bib8",
-            "doi-asserted-by": "publisher",
-            "first-page": "49",
-            "DOI": "10.3847/0004-637x/817/1/49",
-            "volume": "817",
-            "author": "Bovy",
-            "year": "2016",
-            "journal-title": "ApJ"
-        },
-        {
-            "key": "2021092300013686800_bib10",
-            "doi-asserted-by": "publisher",
-            "first-page": "102",
-            "DOI": "10.3847/0004-637x/823/2/102",
-            "volume": "823",
-            "author": "Choi",
-            "year": "2016",
-            "journal-title": "ApJ"
-        },
-        {
-            "key": "2021092300013686800_bib11",
-            "doi-asserted-by": "publisher",
-            "first-page": "1066",
-            "DOI": "10.1111/j.1365-2966.2009.14774.x",
-            "volume": "396",
-            "author": "Clarke",
-            "year": "2009",
-            "journal-title": "MNRAS"
-        },
-        {
-            "key": "2021092300013686800_bib12",
-            "doi-asserted-by": "publisher",
-            "first-page": "e001",
-            "DOI": "10.1017/pasa.2016.52",
-            "volume": "34",
-            "author": "De\u00a0Marco",
-            "year": "2017",
-            "journal-title": "Publ. Astron. Soc. Aust."
-        },
-        {
-            "key": "2021092300013686800_bib13",
-            "doi-asserted-by": "publisher",
-            "first-page": "58",
-            "DOI": "10.1088/0004-637x/814/1/58",
-            "volume": "814",
-            "author": "de\u00a0Mink",
-            "year": "2015",
-            "journal-title": "ApJ"
-        },
-        {
-            "key": "2021092300013686800_bib14",
-            "doi-asserted-by": "publisher",
-            "first-page": "8",
-            "DOI": "10.3847/0067-0049/222/1/8",
-            "volume": "222",
-            "author": "Dotter",
-            "year": "2016",
-            "journal-title": "ApJS"
-        },
-        {
-            "key": "2021092300013686800_bib15",
-            "doi-asserted-by": "publisher",
-            "first-page": "269",
-            "DOI": "10.1146/annurev-astro-081710-102602",
-            "volume": "51",
-            "author": "Duch\u00eane",
-            "year": "2013",
-            "journal-title": "ARA&A"
-        },
-        {
-            "key": "2021092300013686800_bib16",
-            "doi-asserted-by": "publisher",
-            "first-page": "368",
-            "DOI": "10.1086/160960",
-            "volume": "268",
-            "author": "Eggleton",
-            "year": "1983",
-            "journal-title": "ApJ"
-        },
-        {
-            "key": "2021092300013686800_bib18",
-            "doi-asserted-by": "publisher",
-            "first-page": "L139",
-            "DOI": "10.1093/mnrasl/sly206",
-            "volume": "482",
-            "author": "El-Badry",
-            "year": "2018",
-            "journal-title": "MNRAS"
-        },
-        {
-            "key": "2021092300013686800_bib19",
-            "doi-asserted-by": "publisher",
-            "first-page": "5043",
-            "DOI": "10.1093/mnras/stx2758",
-            "volume": "473",
-            "author": "El-Badry",
-            "year": "2018",
-            "journal-title": "MNRAS"
-        },
-        {
-            "key": "2021092300013686800_bib17",
-            "doi-asserted-by": "publisher",
-            "first-page": "528",
-            "DOI": "10.1093/mnras/sty240",
-            "volume": "476",
-            "author": "El-Badry",
-            "year": "2018",
-            "journal-title": "MNRAS"
-        },
-        {
-            "key": "2021092300013686800_bib20",
-            "doi-asserted-by": "publisher",
-            "first-page": "769",
-            "DOI": "10.1086/380111",
-            "volume": "600",
-            "author": "Fisher",
-            "year": "2004",
-            "journal-title": "ApJ"
-        },
-        {
-            "key": "2021092300013686800_bib21",
-            "doi-asserted-by": "publisher",
-            "first-page": "L37",
-            "DOI": "10.1088/2041-8205/788/2/l37",
-            "volume": "788",
-            "author": "Gao",
-            "year": "2014",
-            "journal-title": "ApJ"
-        },
-        {
-            "key": "2021092300013686800_bib22",
-            "doi-asserted-by": "publisher",
-            "first-page": "L68",
-            "DOI": "10.1093/mnrasl/slx048",
-            "volume": "469",
-            "author": "Gao",
-            "year": "2017",
-            "journal-title": "MNRAS"
-        },
-        {
-            "key": "2021092300013686800_bib23",
-            "doi-asserted-by": "publisher",
-            "first-page": "144",
-            "DOI": "10.3847/0004-6256/151/6/144",
-            "volume": "151",
-            "author": "Garc\u00eda\u00a0P\u00e9rez",
-            "year": "2016",
-            "journal-title": "AJ"
-        },
-        {
-            "key": "2021092300013686800_bib24",
-            "doi-asserted-by": "publisher",
-            "first-page": "1220",
-            "DOI": "10.1086/521714",
-            "volume": "669",
-            "author": "Grether",
-            "year": "2007",
-            "journal-title": "ApJ"
-        },
-        {
-            "key": "2021092300013686800_bib25",
-            "doi-asserted-by": "publisher",
-            "first-page": "2332",
-            "DOI": "10.1086/500975",
-            "volume": "131",
-            "author": "Gunn",
-            "year": "2006",
-            "journal-title": "AJ"
-        },
-        {
-            "key": "2021092300013686800_bib26",
-            "doi-asserted-by": "publisher",
-            "first-page": "132",
-            "DOI": "10.1088/0004-637x/808/2/132",
-            "volume": "808",
-            "author": "Hayden",
-            "year": "2015",
-            "journal-title": "ApJ"
-        },
-        {
-            "key": "2021092300013686800_bib27",
-            "doi-asserted-by": "publisher",
-            "first-page": "215",
-            "DOI": "10.1051/0004-6361:20078321",
-            "volume": "480",
-            "author": "Hekker",
-            "year": "2008",
-            "journal-title": "A&A"
-        },
-        {
-            "key": "2021092300013686800_bib28",
-            "doi-asserted-by": "publisher",
-            "first-page": "148",
-            "DOI": "10.1088/0004-6256/150/5/148",
-            "volume": "150",
-            "author": "Holtzman",
-            "year": "2015",
-            "journal-title": "AJ"
-        },
-        {
-            "key": "2021092300013686800_bib29",
-            "doi-asserted-by": "publisher",
-            "first-page": "125",
-            "DOI": "10.3847/1538-3881/aad4f9",
-            "volume": "156",
-            "author": "Holtzman",
-            "year": "2018",
-            "journal-title": "AJ"
-        },
-        {
-            "key": "2021092300013686800_bib30",
-            "doi-asserted-by": "publisher",
-            "first-page": "90",
-            "DOI": "10.1109/mcse.2007.55",
-            "volume": "9",
-            "author": "Hunter",
-            "year": "2007",
-            "journal-title": "Comput. Sci. Eng."
+            "key": "bibr4-11782218231222343",
+            "unstructured": "Centers for Disease Control and Prevention. Drug overdose deaths remain high. Published 2022, Accessed July 5, 2022. 2022. https://www.cdc.gov/drugoverdose/deaths/index.html"
         },
         {
-            "key": "2021092300013686800_bib31",
-            "doi-asserted-by": "publisher",
-            "first-page": "A6",
-            "DOI": "10.1051/0004-6361/201219058",
-            "volume": "553",
-            "author": "Husser",
-            "year": "2013",
-            "journal-title": "A&A"
-        },
-        {
-            "key": "2021092300013686800_bib32",
-            "doi-asserted-by": "publisher",
-            "first-page": "719",
-            "DOI": "10.1086/162455",
-            "volume": "284",
-            "author": "Iben",
-            "year": "1984",
-            "journal-title": "ApJ"
-        },
-        {
-            "key": "2021092300013686800_bib33",
-            "author": "Jayasinghe",
-            "year": "2020"
-        },
-        {
-            "key": "2021092300013686800_bib34",
-            "doi-asserted-by": "publisher",
-            "first-page": "545",
-            "DOI": "10.1051/0004-6361:200810413",
-            "volume": "492",
-            "author": "Joergens",
-            "year": "2008",
-            "journal-title": "A&A"
-        },
-        {
-            "key": "2021092300013686800_bib35",
-            "doi-asserted-by": "publisher",
-            "first-page": "126",
-            "DOI": "10.3847/1538-3881/aad4f5",
-            "volume": "156",
-            "author": "J\u00f6nsson",
-            "year": "2018",
-            "journal-title": "AJ"
-        },
-        {
-            "key": "2021092300013686800_bib36",
-            "doi-asserted-by": "crossref",
-            "first-page": "120",
-            "DOI": "10.3847/1538-3881/aba592",
-            "volume": "160",
-            "author": "J\u00f6nsson",
-            "year": "2020",
-            "journal-title": "AJ"
-        },
-        {
-            "key": "2021092300013686800_bib37",
-            "doi-asserted-by": "publisher",
-            "first-page": "196",
-            "DOI": "10.3847/1538-3881/ab13b1",
-            "volume": "157",
-            "author": "Kounkel",
-            "year": "2019",
-            "journal-title": "AJ"
-        },
-        {
-            "key": "2021092300013686800_bib38",
-            "doi-asserted-by": "publisher",
-            "first-page": "271",
-            "DOI": "10.1146/annurev-astro-081915-023307",
-            "volume": "54",
-            "author": "Kratter",
-            "year": "2016",
-            "journal-title": "ARA&A"
-        },
-        {
-            "key": "2021092300013686800_bib39",
-            "doi-asserted-by": "publisher",
-            "first-page": "1563",
-            "DOI": "10.1111/j.1365-2966.2006.11103.x",
-            "volume": "373",
-            "author": "Kratter",
-            "year": "2006",
-            "journal-title": "MNRAS"
-        },
-        {
-            "key": "2021092300013686800_bib40",
-            "doi-asserted-by": "publisher",
-            "first-page": "1585",
-            "DOI": "10.1088/0004-637x/708/2/1585",
-            "volume": "708",
-            "author": "Kratter",
-            "year": "2010",
-            "journal-title": "ApJ"
-        },
-        {
-            "key": "2021092300013686800_bib41",
-            "doi-asserted-by": "publisher",
-            "first-page": "1375",
-            "DOI": "10.1088/0004-637x/710/2/1375",
-            "volume": "710",
-            "author": "Kratter",
-            "year": "2010",
-            "journal-title": "ApJ"
-        },
-        {
-            "key": "2021092300013686800_bib42",
-            "doi-asserted-by": "publisher",
-            "first-page": "115",
-            "DOI": "10.1007/978-94-007-5612-0_4",
-            "volume-title": "Planets, Stars and Stellar Systems",
-            "author": "Kroupa",
-            "year": "2013"
-        },
-        {
-            "key": "2021092300013686800_bib43",
-            "doi-asserted-by": "publisher",
-            "first-page": "L63",
-            "DOI": "10.1086/503158",
-            "volume": "640",
-            "author": "Lada",
-            "year": "2006",
-            "journal-title": "ApJ"
-        },
-        {
-            "key": "2021092300013686800_bib44",
-            "doi-asserted-by": "publisher",
-            "first-page": "232",
-            "DOI": "10.3847/1538-4357/ab584b",
-            "volume": "887",
-            "author": "Lee",
-            "year": "2019",
-            "journal-title": "ApJ"
+            "key": "bibr5-11782218231222343",
+            "unstructured": "Centers for Disease Control and Prevention, National Center for Health Statistics. Vital statistics rapid release: provisional drug overdose death counts. 2023. Accessed January 11, 2023. https://www.cdc.gov/nchs/nvss/vsrr/drug-overdose-data.htm"
         },
         {
-            "key": "2021092300013686800_bib45",
+            "key": "bibr6-11782218231222343",
             "doi-asserted-by": "publisher",
-            "first-page": "550",
-            "DOI": "10.1093/mnras/stz2274",
-            "volume": "490",
-            "author": "Liu",
-            "year": "2019",
-            "journal-title": "MNRAS"
+            "DOI": "10.1016/j.ajem.2020.12.047"
         },
         {
-            "key": "2021092300013686800_bib46",
+            "key": "bibr7-11782218231222343",
             "doi-asserted-by": "publisher",
-            "first-page": "1255",
-            "DOI": "10.1111/j.1365-2966.2009.15394.x",
-            "volume": "399",
-            "author": "Machida",
-            "year": "2009",
-            "journal-title": "MNRAS"
+            "DOI": "10.3386/w27796"
         },
         {
-            "key": "2021092300013686800_bib47",
+            "key": "bibr8-11782218231222343",
             "doi-asserted-by": "publisher",
-            "first-page": "3057",
-            "DOI": "10.1093/mnras/stx1774",
-            "volume": "471",
-            "author": "Mackereth",
-            "year": "2017",
-            "journal-title": "MNRAS"
+            "DOI": "10.1515/dx-2021-0046"
         },
         {
-            "key": "2021092300013686800_bib48",
+            "key": "bibr9-11782218231222343",
             "doi-asserted-by": "publisher",
-            "first-page": "176",
-            "DOI": "10.1093/mnras/stz1521",
-            "volume": "489",
-            "author": "Mackereth",
-            "year": "2019",
-            "journal-title": "MNRAS"
+            "DOI": "10.1016/S0140-6736(21)02143-7"
         },
         {
-            "key": "2021092300013686800_bib49",
+            "key": "bibr10-11782218231222343",
             "doi-asserted-by": "publisher",
-            "first-page": "94",
-            "DOI": "10.3847/1538-3881/aa784d",
-            "volume": "154",
-            "author": "Majewski",
-            "year": "2017",
-            "journal-title": "AJ"
+            "DOI": "10.1097/YCO.0000000000000717"
         },
         {
-            "key": "2021092300013686800_bib50",
+            "key": "bibr11-11782218231222343",
             "doi-asserted-by": "publisher",
-            "first-page": "143",
-            "DOI": "10.1088/0004-637x/751/2/143",
-            "volume": "751",
-            "author": "Maoz",
-            "year": "2012",
-            "journal-title": "ApJ"
+            "DOI": "10.1016/j.drugpo.2021.103392"
         },
         {
-            "key": "2021092300013686800_bib51",
-            "author": "Miglio",
-            "year": "2020"
-        },
-        {
-            "key": "2021092300013686800_bib52",
-            "first-page": "347",
-            "volume": "90",
-            "author": "Moe",
-            "year": "2019",
-            "journal-title": "Mem. Soc. Astron. Ital."
-        },
-        {
-            "key": "2021092300013686800_bib53",
-            "doi-asserted-by": "publisher",
-            "first-page": "15",
-            "DOI": "10.3847/1538-4365/aa6fb6",
-            "volume": "230",
-            "author": "Moe",
-            "year": "2017",
-            "journal-title": "ApJS"
-        },
-        {
-            "key": "2021092300013686800_bib54",
-            "doi-asserted-by": "publisher",
-            "first-page": "44",
-            "DOI": "10.3847/1538-4357/aaa6d2",
-            "volume": "854",
-            "author": "Moe",
-            "year": "2018",
-            "journal-title": "ApJ"
-        },
-        {
-            "key": "2021092300013686800_bib55",
-            "doi-asserted-by": "publisher",
-            "first-page": "61",
-            "DOI": "10.3847/1538-4357/ab0d88",
-            "volume": "875",
-            "author": "Moe",
-            "year": "2019",
-            "journal-title": "ApJ"
-        },
-        {
-            "key": "2021092300013686800_bib56",
-            "doi-asserted-by": "publisher",
-            "first-page": "4322",
-            "DOI": "10.1093/mnras/stx3049",
-            "volume": "474",
-            "author": "Murphy",
-            "year": "2018",
-            "journal-title": "MNRAS"
-        },
-        {
-            "key": "2021092300013686800_bib57",
-            "doi-asserted-by": "publisher",
-            "first-page": "114",
-            "DOI": "10.3847/0004-637x/823/2/114",
-            "volume": "823",
-            "author": "Ness",
-            "year": "2016",
-            "journal-title": "ApJ"
-        },
-        {
-            "key": "2021092300013686800_bib58",
+            "key": "bibr12-11782218231222343",
             "doi-asserted-by": "publisher",
-            "first-page": "173",
-            "DOI": "10.1088/0004-6256/150/6/173",
-            "volume": "150",
-            "author": "Nidever",
-            "year": "2015",
-            "journal-title": "AJ"
+            "DOI": "10.1186/s12954-021-00534-z"
         },
         {
-            "key": "2021092300013686800_bib59",
+            "key": "bibr13-11782218231222343",
             "doi-asserted-by": "publisher",
-            "first-page": "183",
-            "DOI": "10.1146/annurev.aa.09.090171.001151",
-            "volume": "9",
-            "author": "Paczynski",
-            "year": "1971",
-            "journal-title": "ARA&A"
+            "DOI": "10.1016/j.chest.2020.09.070"
         },
         {
-            "key": "2021092300013686800_bib60",
+            "key": "bibr14-11782218231222343",
             "doi-asserted-by": "publisher",
-            "first-page": "5932",
-            "DOI": "10.1093/mnras/stz1681",
-            "volume": "487",
-            "author": "Pawlak",
-            "year": "2019",
-            "journal-title": "MNRAS"
+            "DOI": "10.1177/00333549221091781"
         },
         {
-            "key": "2021092300013686800_bib63",
+            "key": "bibr15-11782218231222343",
             "doi-asserted-by": "publisher",
-            "first-page": "3",
-            "DOI": "10.1088/0067-0049/192/1/3",
-            "volume": "192",
-            "author": "Paxton",
-            "year": "2011",
-            "journal-title": "ApJS"
+            "DOI": "10.3390/ijerph18158172"
         },
         {
-            "key": "2021092300013686800_bib61",
+            "key": "bibr16-11782218231222343",
             "doi-asserted-by": "publisher",
-            "first-page": "4",
-            "DOI": "10.1088/0067-0049/208/1/4",
-            "volume": "208",
-            "author": "Paxton",
-            "year": "2013",
-            "journal-title": "ApJS"
+            "DOI": "10.1056/NEJMp2006141"
         },
         {
-            "key": "2021092300013686800_bib62",
+            "key": "bibr17-11782218231222343",
             "doi-asserted-by": "publisher",
-            "first-page": "15",
-            "DOI": "10.1088/0067-0049/220/1/15",
-            "volume": "220",
-            "author": "Paxton",
-            "year": "2015",
-            "journal-title": "ApJS"
+            "DOI": "10.1016/j.ypmed.2020.106263"
         },
         {
-            "key": "2021092300013686800_bib64",
+            "key": "bibr18-11782218231222343",
             "doi-asserted-by": "publisher",
-            "first-page": "21",
-            "DOI": "10.1109/mcse.2007.53",
-            "volume": "9",
-            "author": "Perez",
-            "year": "2007",
-            "journal-title": "Comput. Sci. Eng."
+            "DOI": "10.1097/CCE.0000000000000233"
         },
         {
-            "key": "2021092300013686800_bib65",
+            "key": "bibr19-11782218231222343",
             "doi-asserted-by": "publisher",
-            "first-page": "32",
-            "DOI": "10.3847/1538-4365/aaebfd",
-            "volume": "239",
-            "author": "Pinsonneault",
-            "year": "2018",
-            "journal-title": "ApJS"
+            "DOI": "10.4103/ija.IJA_987_20"
         },
         {
-            "key": "2021092300013686800_bib9",
-            "first-page": "206",
-            "volume": "51",
-            "author": "Price-Whelan",
-            "year": "2019",
-            "journal-title": "BAAS"
+            "key": "bibr20-11782218231222343",
+            "volume": "13",
+            "author": "Yakobi M",
+            "year": "2021",
+            "journal-title": "Cureus"
         },
         {
-            "key": "2021092300013686800_bib66",
-            "doi-asserted-by": "publisher",
-            "first-page": "18",
-            "DOI": "10.3847/1538-3881/aac387",
-            "volume": "156",
-            "author": "Price-Whelan",
-            "year": "2018",
-            "journal-title": "AJ"
-        },
-        {
-            "key": "2021092300013686800_bib67",
-            "doi-asserted-by": "publisher",
-            "first-page": "2",
-            "DOI": "10.3847/1538-4357/ab8acc",
-            "volume": "895",
-            "author": "Price-Whelan",
-            "year": "2020",
-            "journal-title": "ApJ"
-        },
-        {
-            "key": "2021092300013686800_bib68",
-            "doi-asserted-by": "publisher",
-            "first-page": "L69",
-            "DOI": "10.1086/428899",
-            "volume": "621",
-            "author": "Rafikov",
-            "year": "2005",
-            "journal-title": "ApJ"
-        },
-        {
-            "key": "2021092300013686800_bib69",
-            "doi-asserted-by": "publisher",
-            "first-page": "1",
-            "DOI": "10.1088/0067-0049/190/1/1",
-            "volume": "190",
-            "author": "Raghavan",
-            "year": "2010",
-            "journal-title": "ApJS"
-        },
-        {
-            "key": "2021092300013686800_bib70",
-            "doi-asserted-by": "publisher",
-            "first-page": "A33",
-            "DOI": "10.1051/0004-6361/201322068",
-            "volume": "558",
-            "author": "Robitaille",
-            "year": "2013",
-            "journal-title": "A&A"
-        },
-        {
-            "key": "2021092300013686800_bib71",
-            "doi-asserted-by": "publisher",
-            "first-page": "4093",
-            "DOI": "10.1093/mnras/sty2490",
-            "volume": "481",
-            "author": "Sanders",
-            "year": "2018",
-            "journal-title": "MNRAS"
-        },
-        {
-            "key": "2021092300013686800_bib72",
-            "doi-asserted-by": "publisher",
-            "first-page": "611",
-            "DOI": "10.1051/0004-6361:20031279",
-            "volume": "410",
-            "author": "Semenov",
+            "key": "bibr21-11782218231222343",
+            "first-page": "417",
+            "volume": "168",
+            "author": "Hwang S",
             "year": "2003",
-            "journal-title": "A&A"
+            "journal-title": "CMAJ"
         },
         {
-            "key": "2021092300013686800_bib73",
+            "key": "bibr22-11782218231222343",
+            "first-page": "100",
+            "volume": "110",
+            "author": "Link K",
+            "year": "1983",
+            "journal-title": "Va Med"
+        },
+        {
+            "key": "bibr23-11782218231222343",
             "doi-asserted-by": "publisher",
-            "first-page": "2201",
-            "DOI": "10.1093/mnras/staa2089",
-            "volume": "497",
-            "author": "Stanway",
+            "DOI": "10.1186/s12913-018-3756-8"
+        },
+        {
+            "key": "bibr24-11782218231222343",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1001/jama.2018.2844"
+        },
+        {
+            "key": "bibr25-11782218231222343",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.drugalcdep.2018.05.004"
+        },
+        {
+            "key": "bibr26-11782218231222343",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jemermed.2020.08.013"
+        },
+        {
+            "key": "bibr27-11782218231222343",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1377/hlthaff.2020.00980"
+        },
+        {
+            "key": "bibr28-11782218231222343",
+            "volume-title": "Trends in Overall and Non-COVID-19 Hospital Admissions",
+            "author": "Heist T",
+            "year": "2021"
+        },
+        {
+            "key": "bibr29-11782218231222343",
+            "first-page": "1",
+            "volume": "1",
+            "author": "Wong L",
             "year": "2020",
-            "journal-title": "MNRAS"
+            "journal-title": "Nejm Catalyst"
         },
         {
-            "key": "2021092300013686800_bib74",
+            "key": "bibr30-11782218231222343",
             "doi-asserted-by": "publisher",
-            "first-page": "L46",
-            "DOI": "10.1093/mnrasl/slt033",
-            "volume": "432",
-            "author": "Suda",
-            "year": "2013",
-            "journal-title": "MNRAS"
+            "DOI": "10.28982/josam.907496"
         },
         {
-            "key": "2021092300013686800_bib75",
+            "key": "bibr31-11782218231222343",
             "doi-asserted-by": "publisher",
-            "first-page": "1884",
-            "DOI": "10.1093/mnras/stu069",
-            "volume": "439",
-            "author": "Tanaka",
-            "year": "2014",
-            "journal-title": "MNRAS"
+            "DOI": "10.1016/j.annepidem.2022.11.007"
         },
         {
-            "key": "2021092300013686800_bib76",
-            "doi-asserted-by": "publisher",
-            "first-page": "69",
-            "DOI": "10.3847/1538-4357/ab2331",
-            "volume": "879",
-            "author": "Ting",
-            "year": "2019",
-            "journal-title": "ApJ"
+            "key": "bibr32-11782218231222343",
+            "first-page": "2685",
+            "volume": "14",
+            "author": "Chen C",
+            "year": "2022",
+            "journal-title": "Am J Transl Res"
         },
         {
-            "key": "2021092300013686800_bib77",
+            "key": "bibr33-11782218231222343",
             "doi-asserted-by": "publisher",
-            "first-page": "3461",
-            "DOI": "10.1093/mnras/stx707",
-            "volume": "468",
-            "author": "Tokovinin",
-            "year": "2017",
-            "journal-title": "MNRAS"
+            "DOI": "10.1056/NEJMc2304991"
         },
         {
-            "key": "2021092300013686800_bib78",
+            "key": "bibr34-11782218231222343",
             "doi-asserted-by": "publisher",
-            "first-page": "5158",
-            "DOI": "10.1093/mnras/stz3299",
-            "volume": "491",
-            "author": "Tokovinin",
+            "DOI": "10.1097/ADM.0000000000000874"
+        },
+        {
+            "key": "bibr35-11782218231222343",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s11524-022-00610-0"
+        },
+        {
+            "key": "bibr36-11782218231222343",
+            "unstructured": "U.S. Census Bureau. U.S. Census Bureau QuickFacts: Pennsylvania, 2023. https://www.census.gov/quickfacts/fact/table/PA/"
+        },
+        {
+            "key": "bibr37-11782218231222343",
+            "unstructured": "Multiple Cause of Death 2018-2021 on CDC WONDER Online Database, released. 2022. Data are from the Multiple Cause of Death Files, 2018-2021, as compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative Program. http://wonder.cdc.gov/mcd-icd10.html."
+        },
+        {
+            "key": "bibr38-11782218231222343",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.ypmed.2021.106845"
+        },
+        {
+            "key": "bibr39-11782218231222343",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/1073110518782949"
+        },
+        {
+            "key": "bibr40-11782218231222343",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.janxdis.2021.102455"
+        },
+        {
+            "key": "bibr41-11782218231222343",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.15585/mmwr.mm7005a3"
+        },
+        {
+            "key": "bibr42-11782218231222343",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1093/geront/gnaa217"
+        },
+        {
+            "key": "bibr43-11782218231222343",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.drugalcdep.2021.108849"
+        },
+        {
+            "key": "bibr44-11782218231222343",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jad.2021.08.067"
+        },
+        {
+            "key": "bibr45-11782218231222343",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1176/appi.ajp.2011.10101476"
+        },
+        {
+            "key": "bibr46-11782218231222343",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1093/cid/ciac311"
+        },
+        {
+            "key": "bibr47-11782218231222343",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.drugpo.2017.06.010"
+        },
+        {
+            "key": "bibr48-11782218231222343",
+            "unstructured": "Ahmad FB, Rossen LM, Sutton P. Provisional Drug Overdose Death Counts. National Center for Health Statistics; 2021;12"
+        },
+        {
+            "key": "bibr49-11782218231222343",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1186/s12954-022-00614-8"
+        },
+        {
+            "key": "bibr50-11782218231222343",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.drugpo.2017.06.005"
+        },
+        {
+            "key": "bibr51-11782218231222343",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.drugpo.2017.12.011"
+        },
+        {
+            "key": "bibr52-11782218231222343",
+            "volume": "4",
+            "author": "Lazzerini M",
             "year": "2020",
-            "journal-title": "MNRAS"
+            "journal-title": "Lancet Child Adolesc Heal"
         },
         {
-            "key": "2021092300013686800_bib79",
+            "key": "bibr53-11782218231222343",
             "doi-asserted-by": "publisher",
-            "first-page": "173",
-            "DOI": "10.1088/0004-637x/794/2/173",
-            "volume": "794",
-            "author": "Vera-Ciro",
-            "year": "2014",
-            "journal-title": "ApJ"
+            "DOI": "10.1016/j.jemermed.2019.12.023"
         },
         {
-            "key": "2021092300013686800_bib80",
-            "doi-asserted-by": "publisher",
-            "first-page": "102",
-            "DOI": "10.3847/1538-4357/ab07c7",
-            "volume": "874",
-            "author": "Weinberg",
-            "year": "2019",
-            "journal-title": "ApJ"
+            "key": "bibr54-11782218231222343",
+            "first-page": "541",
+            "volume": "35",
+            "author": "Sohal A",
+            "year": "2022",
+            "journal-title": "Ann Gastroenterol"
         },
         {
-            "key": "2021092300013686800_bib81",
+            "key": "bibr55-11782218231222343",
             "doi-asserted-by": "publisher",
-            "first-page": "055001",
-            "DOI": "10.1088/1538-3873/ab0075",
-            "volume": "131",
-            "author": "Wilson",
-            "year": "2019",
-            "journal-title": "PASP"
+            "DOI": "10.1111/imj.12109"
         },
         {
-            "key": "2021092300013686800_bib82",
+            "key": "bibr56-11782218231222343",
             "doi-asserted-by": "publisher",
-            "first-page": "216",
-            "DOI": "10.3847/1538-3881/ab05dc",
-            "volume": "157",
-            "author": "Winters",
-            "year": "2019",
-            "journal-title": "AJ"
+            "DOI": "10.15171/ijhpm.2019.26"
         },
         {
-            "key": "2021092300013686800_bib83",
+            "key": "bibr57-11782218231222343",
             "doi-asserted-by": "publisher",
-            "first-page": "135",
-            "DOI": "10.1088/0004-637x/799/2/135",
-            "volume": "799",
-            "author": "Yuan",
-            "year": "2015",
-            "journal-title": "ApJ"
+            "DOI": "10.1186/1472-6963-13-415"
         },
         {
-            "key": "2021092300013686800_bib84",
+            "key": "bibr58-11782218231222343",
             "doi-asserted-by": "publisher",
-            "first-page": "81",
-            "DOI": "10.1088/0004-6256/146/4/81",
-            "volume": "146",
-            "author": "Zasowski",
-            "year": "2013",
-            "journal-title": "AJ"
+            "DOI": "10.1176/ps.2006.57.8.1192"
         },
         {
-            "key": "2021092300013686800_bib85",
+            "key": "bibr59-11782218231222343",
             "doi-asserted-by": "publisher",
-            "first-page": "198",
-            "DOI": "10.3847/1538-3881/aa8df9",
-            "volume": "154",
-            "author": "Zasowski",
-            "year": "2017",
-            "journal-title": "AJ"
+            "DOI": "10.1007/s11999-014-3924-z"
+        },
+        {
+            "key": "bibr60-11782218231222343",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3390/healthcare9020111"
+        },
+        {
+            "key": "bibr61-11782218231222343",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1097/00126334-200401010-00008"
         }
     ],
     "container-title": [
-        "Monthly Notices of the Royal Astronomical Society"
+        "Substance Use: Research and Treatment"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "http://academic.oup.com/mnras/advance-article-pdf/doi/10.1093/mnras/staa2859/33784187/staa2859.pdf",
-            "content-type": "application/pdf",
-            "content-version": "am",
-            "intended-application": "syndication"
-        },
-        {
-            "URL": "http://academic.oup.com/mnras/article-pdf/499/2/1607/33890920/staa2859.pdf",
+            "URL": "http://journals.sagepub.com/doi/pdf/10.1177/11782218231222343",
             "content-type": "application/pdf",
             "content-version": "vor",
-            "intended-application": "syndication"
+            "intended-application": "text-mining"
         },
         {
-            "URL": "http://academic.oup.com/mnras/article-pdf/499/2/1607/33890920/staa2859.pdf",
+            "URL": "http://journals.sagepub.com/doi/full-xml/10.1177/11782218231222343",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "http://journals.sagepub.com/doi/pdf/10.1177/11782218231222343",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -1276,71 +535,52 @@
     "deposited": {
         "date-parts": [
             [
-                2021,
-                9,
-                23
+                2024,
+                1,
+                10
             ]
         ],
-        "date-time": "2021-09-23T00:06:58Z",
-        "timestamp": 1632355618000
+        "date-time": "2024-01-10T10:48:45Z",
+        "timestamp": 1704883725000
     },
-    "score": 5.395499,
+    "score": 10.299081,
     "resource": {
         "primary": {
-            "URL": "https://academic.oup.com/mnras/article/499/2/1607/5910510"
+            "URL": "http://journals.sagepub.com/doi/10.1177/11782218231222343"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2020,
-                9,
-                23
+                2024,
+                1
             ]
         ]
     },
-    "references-count": 85,
-    "journal-issue": {
-        "issue": "2",
-        "published-print": {
-            "date-parts": [
-                [
-                    2020,
-                    10,
-                    15
-                ]
-            ]
-        }
-    },
-    "URL": "http://dx.doi.org/10.1093/mnras/staa2859",
+    "references-count": 61,
+    "alternative-id": [
+        "10.1177/11782218231222343"
+    ],
+    "URL": "http://dx.doi.org/10.1177/11782218231222343",
     "ISSN": [
-        "0035-8711",
-        "1365-2966"
+        "2976-8357",
+        "2976-8357"
     ],
     "issn-type": [
         {
-            "value": "0035-8711",
+            "value": "2976-8357",
             "type": "print"
         },
         {
-            "value": "1365-2966",
+            "value": "2976-8357",
             "type": "electronic"
         }
     ],
-    "published-other": {
-        "date-parts": [
-            [
-                2020,
-                12
-            ]
-        ]
-    },
     "published": {
         "date-parts": [
             [
-                2020,
-                9,
-                23
+                2024,
+                1
             ]
         ]
     }

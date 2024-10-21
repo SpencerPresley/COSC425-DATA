@@ -2,13 +2,13 @@
     "indexed": {
         "date-parts": [
             [
-                2023,
-                12,
-                1
+                2022,
+                4,
+                5
             ]
         ],
-        "date-time": "2023-12-01T00:05:32Z",
-        "timestamp": 1701389132937
+        "date-time": "2022-04-05T22:58:56Z",
+        "timestamp": 1649199536539
     },
     "reference-count": 0,
     "publisher": "Oxford University Press (OUP)",
@@ -18,17 +18,17 @@
             "start": {
                 "date-parts": [
                     [
-                        2023,
-                        1,
+                        2021,
+                        12,
                         1
                     ]
                 ],
-                "date-time": "2023-01-01T00:00:00Z",
-                "timestamp": 1672531200000
+                "date-time": "2021-12-01T00:00:00Z",
+                "timestamp": 1638316800000
             },
             "content-version": "vor",
             "delay-in-days": 0,
-            "URL": "https://academic.oup.com/pages/standard-publication-reuse-rights"
+            "URL": "https://academic.oup.com/journals/pages/open_access/funder_policies/chorus/standard_publication_model"
         }
     ],
     "content-domain": {
@@ -38,39 +38,37 @@
     "published-print": {
         "date-parts": [
             [
-                2023,
-                11,
-                30
+                2022,
+                2,
+                9
             ]
         ]
     },
-    "DOI": "10.1093/psquar/qqad084",
+    "DOI": "10.1093/ahr/rhab630",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2023,
-                9,
-                25
+                2021,
+                11,
+                23
             ]
         ],
-        "date-time": "2023-09-25T23:29:10Z",
-        "timestamp": 1695684550000
+        "date-time": "2021-11-23T12:14:05Z",
+        "timestamp": 1637669645000
     },
-    "page": "598-600",
+    "page": "1646-1647",
     "source": "Crossref",
     "is-referenced-by-count": 0,
     "title": [
-        "A Voice but No Power: Organizing for Social Justice in Minneapolis <i>by David Forrest</i>"
+        "H<scp>eather</scp> M<scp>artel</scp>. <i>Deadly Virtue: Fort Caroline and the Early Protestant Roots of American Whiteness</i>."
     ],
     "prefix": "10.1093",
-    "volume": "138",
+    "volume": "126",
     "author": [
         {
-            "ORCID": "http://orcid.org/0000-0003-0119-3089",
-            "authenticated-orcid": false,
-            "given": "Michelle N",
-            "family": "Fletcher",
+            "given": "C\u00e9line",
+            "family": "Carayon",
             "sequence": "first",
             "affiliation": [
                 {
@@ -83,25 +81,25 @@
     "published-online": {
         "date-parts": [
             [
-                2023,
-                9,
-                25
+                2022,
+                2,
+                9
             ]
         ]
     },
     "container-title": [
-        "Political Science Quarterly"
+        "The American Historical Review"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://academic.oup.com/psq/article-pdf/138/4/598/53709738/qqad084.pdf",
+            "URL": "https://academic.oup.com/ahr/article-pdf/126/4/1646/42453926/rhab630.pdf",
             "content-type": "application/pdf",
             "content-version": "vor",
             "intended-application": "syndication"
         },
         {
-            "URL": "https://academic.oup.com/psq/article-pdf/138/4/598/53709738/qqad084.pdf",
+            "URL": "https://academic.oup.com/ahr/article-pdf/126/4/1646/42453926/rhab630.pdf",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -110,24 +108,26 @@
     "deposited": {
         "date-parts": [
             [
-                2023,
-                11,
-                30
+                2022,
+                2,
+                9
             ]
         ],
-        "date-time": "2023-11-30T04:07:02Z",
-        "timestamp": 1701317222000
+        "date-time": "2022-02-09T18:30:16Z",
+        "timestamp": 1644431416000
     },
-    "score": 14.43423,
+    "score": 14.453241,
     "resource": {
         "primary": {
-            "URL": "https://academic.oup.com/psq/article/138/4/598/7282115"
+            "URL": "https://academic.oup.com/ahr/article/126/4/1646/6525087"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2023
+                2021,
+                12,
+                1
             ]
         ]
     },
@@ -137,48 +137,52 @@
         "published-online": {
             "date-parts": [
                 [
-                    2023,
-                    9,
-                    25
+                    2022,
+                    2,
+                    9
                 ]
             ]
         },
         "published-print": {
             "date-parts": [
                 [
-                    2023,
-                    11,
-                    30
+                    2022,
+                    2,
+                    9
                 ]
             ]
         }
     },
-    "URL": "http://dx.doi.org/10.1093/psquar/qqad084",
+    "URL": "http://dx.doi.org/10.1093/ahr/rhab630",
     "ISSN": [
-        "0032-3195",
-        "1538-165X"
+        "0002-8762",
+        "1937-5239"
     ],
     "issn-type": [
         {
-            "value": "0032-3195",
+            "value": "0002-8762",
             "type": "print"
         },
         {
-            "value": "1538-165X",
+            "value": "1937-5239",
             "type": "electronic"
         }
     ],
     "published-other": {
         "date-parts": [
             [
-                2023
+                2021,
+                12,
+                1
             ]
         ]
     },
     "published": {
         "date-parts": [
             [
-                2023
+                2021,
+                12,
+                1
             ]
         ]
     }

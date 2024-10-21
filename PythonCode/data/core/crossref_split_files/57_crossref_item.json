@@ -2,243 +2,346 @@
     "indexed": {
         "date-parts": [
             [
-                2024,
-                6,
-                24
+                2023,
+                5,
+                16
             ]
         ],
-        "date-time": "2024-06-24T09:59:23Z",
-        "timestamp": 1719223163869
+        "date-time": "2023-05-16T15:39:46Z",
+        "timestamp": 1684251586820
     },
-    "reference-count": 21,
-    "publisher": "Lepidopterists' Society",
-    "issue": "4",
+    "reference-count": 25,
+    "publisher": "National Inquiry Services Center (NISC)",
+    "issue": "1",
+    "funder": [
+        {
+            "name": "Maryland State Department of Eduaction",
+            "award": [
+                "155262"
+            ]
+        }
+    ],
     "content-domain": {
-        "domain": [],
-        "crossmark-restriction": false
+        "domain": [
+            "www.tandfonline.com"
+        ],
+        "crossmark-restriction": true
     },
     "short-container-title": [
-        "The Journal of the Lepidopterists' Society"
+        "Journal of Child &amp; Adolescent Mental Health"
     ],
     "published-print": {
         "date-parts": [
             [
-                2022,
-                11,
-                22
+                2018,
+                5,
+                18
             ]
         ]
     },
-    "DOI": "10.18473/lepi.76i4.a3",
+    "DOI": "10.2989/17280583.2017.1419250",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2022,
-                11,
-                22
+                2018,
+                4,
+                13
             ]
         ],
-        "date-time": "2022-11-22T15:28:38Z",
-        "timestamp": 1669130918000
+        "date-time": "2018-04-13T08:40:57Z",
+        "timestamp": 1523608857000
     },
+    "page": "1-10",
+    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
     "source": "Crossref",
-    "is-referenced-by-count": 1,
+    "is-referenced-by-count": 2,
     "title": [
-        "Survey and Habitat Assessment of King's Hairstreak (Satyrium kingi) in Maryland Coastal Plain Forests"
+        "Perceptions of rural school mental health services: a focus group study"
     ],
-    "prefix": "10.18473",
-    "volume": "76",
+    "prefix": "10.2989",
+    "volume": "30",
     "author": [
         {
-            "given": "Connor",
-            "family": "Morningred",
+            "given": "Amy D",
+            "family": "Habeger",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Salisbury University, 1101 Camden Avenue, Salisbury, MD 21801"
+                    "name": "Division of Behavioral Health, Nemours/AI DuPont Hospital for Children, Wilmington, Delaware, USA"
                 }
             ]
         },
         {
-            "given": "Brittany",
-            "family": "Grubb",
+            "given": "Kimberly S",
+            "family": "van Vulpen",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Salisbury University, 1101 Camden Avenue, Salisbury, MD 21801"
+                    "name": "Department of Social Work, Salisbury University, Salisbury, Maryland, USA"
                 }
             ]
         },
         {
-            "given": "Dana L.",
-            "family": "Price",
+            "given": "Teresa F",
+            "family": "Simmons",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Salisbury University, 1101 Camden Avenue, Salisbury, MD 21801"
-                }
-            ]
-        },
-        {
-            "given": "Jennifer A.",
-            "family": "Selfridge",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Maryland Department of Natural Resources, 909 Wye Mills Road, Wye Mills, MD 21679"
+                    "name": "Department of Social Work, Salisbury University, Salisbury, Maryland, USA"
                 }
             ]
         }
     ],
-    "member": "7734",
+    "member": "14412",
+    "published-online": {
+        "date-parts": [
+            [
+                2018,
+                4,
+                13
+            ]
+        ]
+    },
     "reference": [
         {
-            "key": "7",
-            "unstructured": "(2022)"
+            "key": "CIT0002",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1017/jgc.2015.28"
         },
         {
-            "key": "1",
-            "unstructured": "\"Great Cypress Swamp.\" (2022)"
+            "key": "CIT0003",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/a0037969"
         },
         {
-            "key": "2",
-            "unstructured": "J. C. Floyd, \"J. Lepid. Soc.\" 28, \"A new foodplant record for Satyrium kingi (Lycaenidae).\" 353 (1974)"
+            "key": "CIT0004",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1542/peds.2008-1406"
         },
         {
-            "key": "3",
-            "unstructured": "S. M. Gifford and P. A. Opler \"J. Lepid. Soc.\" 37, \"Natural history of seven hairstreaks in coastal North Carolina.\" 97 (1983)"
+            "key": "CIT0005",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/pits.21844"
         },
         {
-            "key": "4",
-            "unstructured": "T. G. Harbison, \"J. Elisha Mitchell Sci. Soc.\" 46, \"SYMPLOCOS TINCTORIA ASHEI: A new dyebush from the southern mountains.\" 218 (1931)"
+            "key": "CIT0006",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s10826-011-9529-1"
         },
         {
-            "key": "5",
-            "unstructured": "J. S. Kleinman, J. D. Goode, J. L. Hart, \"Appl Veg Sci.\" 24, \"Ground flora cover, diversity, and life-history trait representation after wind disturbance, salvage logging, and prescribed fire in a Pinus palustris woodland.\" e12541 (2021)"
+            "key": "CIT0007",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/0003-066X.58.6-7.466"
         },
         {
-            "key": "6",
-            "unstructured": "G. Lamas, \"Contribuciones taxon\u00f3micas en \u00f3rdenes de insectos hiperdiversos.\" \"La sistem\u00b7tica sobre mariposas (Lepidoptera: Hesperioidea y Papilionoidea) en el mundo: Estado actual y perspectivas futuras\" 57 (2008)"
+            "key": "CIT0008",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/10522158.2017.1342468"
         },
         {
-            "key": "8",
-            "unstructured": "\"Chesapeake Forest Lands.\" (2022)"
+            "key": "CIT0009",
+            "unstructured": "Health Resources and Services Administration. (2016).HPSA find. Retrieved from http://dawawarehouse.hrsa.gov/tools/analyzers/hpsafind.aspx"
         },
         {
-            "key": "9",
-            "unstructured": "\"List of rare, threatened, and endangered animals of Maryland.\" (2021a)"
+            "key": "CIT0010",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/jcop.10074"
         },
         {
-            "key": "10",
-            "unstructured": "\"List of rare, threatened, and endangered plants of Maryland.\" (2021b)"
+            "key": "CIT0011",
+            "volume-title": "The mental health of adolescents: A national profile, 2008",
+            "author": "Knopf D. K.",
+            "year": "2008"
         },
         {
-            "key": "11",
-            "unstructured": "D. Moskowitz, \"News Lepid. Soc.\" 59, \"Caterpillar hunting with a UV flashlight.\" 42 (2017)"
+            "key": "CIT0012",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s12310-010-9038-1"
         },
         {
-            "key": "12",
-            "unstructured": "\"NatureServe Network Biodiversity Location Data accessed through NatureServe Explorer [web application].\" (2022)"
+            "key": "CIT0013",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jaac.2010.05.017"
         },
         {
-            "key": "13",
-            "unstructured": "P. Opler, \"Lepidoptera of North America 2. Distribution of the Butterflies (Papilionidea and Hesperoidea) of the eastern United Sates.\" 170 (1995)"
+            "key": "CIT0014",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/978-1-4614-7624-5_3"
         },
         {
-            "key": "14",
+            "key": "CIT0015",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1093/cs/cdv004"
+        },
+        {
+            "key": "CIT0016",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1023/A:1005129403974"
+        },
+        {
+            "key": "CIT0017",
+            "volume-title": "Blueprint for Change: Research on Child and Adolescent Mental Health.",
+            "author": "National Institute of Health.",
+            "year": "2001"
+        },
+        {
+            "key": "CIT0018",
+            "volume-title": "Achieving the Promise: Transforming Mental Health Care in America",
+            "author": "New Freedom Commission on Mental Health.",
+            "year": "2003"
+        },
+        {
+            "key": "CIT0019",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1097/00004583-200206000-00013"
+        },
+        {
+            "key": "CIT0020",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1093/cs/cdu026"
+        },
+        {
+            "key": "CIT0021",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s10902-013-9476-1"
+        },
+        {
+            "key": "CIT0022",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/jclp.20688"
+        },
+        {
+            "issue": "3",
+            "key": "CIT0023",
+            "first-page": "141",
+            "volume": "2",
+            "author": "Stiffman A. R.",
+            "year": "2000",
+            "journal-title": "The role of providers\u2019 training, resource connectivity, and assessment of need. Mental Health Services Research"
+        },
+        {
+            "key": "CIT0024",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s12310-013-9116-2"
+        },
+        {
+            "issue": "1",
+            "key": "CIT0026",
             "doi-asserted-by": "crossref",
-            "unstructured": "C. M. P. Ozanne, \"Insect Sampling in Forest Ecosystems.\" \"Techniques and methods for sampling canopy insects.\" 303pp (2005)",
-            "DOI": "10.1002/9780470750513.ch7"
+            "first-page": "89",
+            "DOI": "10.1002/pits.20453",
+            "volume": "47",
+            "author": "Weist M. D.",
+            "year": "2010",
+            "journal-title": "Psychology in the Schools"
         },
         {
-            "key": "15",
-            "unstructured": "D. F. Schweitzer, M. C. Minno, D. L. Wagner, \"Rare, Declining, and Poorly Known Butterflies and Moths (Lepidoptera) of Forests and Woodlands in the Eastern United States.\" 517 (2011)"
-        },
-        {
-            "key": "16",
-            "unstructured": "\"Global biodiversity outlook 4. A mid-term assessment of progress towards the implementation of the Strategic Plan for Biodiversity 2011\u20132020.\" (2014)"
-        },
-        {
-            "key": "17",
-            "unstructured": "\"Prescribed Fire Plan: Nassawango Creek.\" 38pp (2021)"
-        },
-        {
-            "key": "18",
-            "unstructured": "\"Nassawango Creek Preserve.\" (2022)"
-        },
-        {
-            "key": "19",
-            "unstructured": "\"Plants, Symplocos tinctoria (L.) L'H\u00e9r.\" (2021)"
-        },
-        {
-            "key": "20",
-            "unstructured": "\"Frosted Elfin Habitat and Butterfly Survey Protocol.\" (2020)"
-        },
-        {
-            "key": "21",
-            "unstructured": "D. L. Wagner and B. L. Gagliardi \"American Entomologist.\" 61, \"Hairstreaks (and other insects) feeding at galls, honeydew, extrafloral nectaries, sugar bait, cars, and other routine substrates.\" 160 (2015)"
+            "key": "CIT0027",
+            "volume-title": "Child and adolescent mental health",
+            "author": "WHO"
         }
     ],
     "container-title": [
-        "The Journal of the Lepidopterists' Society"
+        "Journal of Child &amp; Adolescent Mental Health"
+    ],
+    "language": "en",
+    "link": [
+        {
+            "URL": "https://www.tandfonline.com/doi/pdf/10.2989/17280583.2017.1419250",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+        }
     ],
     "deposited": {
         "date-parts": [
             [
-                2023,
-                12,
-                1
+                2020,
+                10,
+                31
             ]
         ],
-        "date-time": "2023-12-01T15:08:12Z",
-        "timestamp": 1701443292000
+        "date-time": "2020-10-31T18:29:11Z",
+        "timestamp": 1604168951000
     },
-    "score": 16.767618,
+    "score": 16.072624,
     "resource": {
         "primary": {
-            "URL": "https://bioone.org/journals/the-journal-of-the-lepidopterists-society/volume-76/issue-4/lepi.76i4.a3/Survey-and-Habitat-Assessment-of-Kings-Hairstreak-Satyrium-kingi-in/10.18473/lepi.76i4.a3.full"
+            "URL": "https://www.tandfonline.com/doi/full/10.2989/17280583.2017.1419250"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2022,
-                11,
-                22
+                2018,
+                4,
+                13
             ]
         ]
     },
-    "references-count": 21,
+    "references-count": 25,
     "journal-issue": {
-        "issue": "4",
+        "issue": "1",
         "published-online": {
             "date-parts": [
                 [
-                    2022,
-                    11,
-                    1
+                    2018,
+                    5,
+                    15
+                ]
+            ]
+        },
+        "published-print": {
+            "date-parts": [
+                [
+                    2018,
+                    5,
+                    18
                 ]
             ]
         }
     },
-    "URL": "http://dx.doi.org/10.18473/lepi.76i4.a3",
+    "alternative-id": [
+        "10.2989/17280583.2017.1419250"
+    ],
+    "URL": "http://dx.doi.org/10.2989/17280583.2017.1419250",
     "ISSN": [
-        "0024-0966"
+        "1728-0583",
+        "1728-0591"
     ],
     "issn-type": [
         {
-            "value": "0024-0966",
+            "value": "1728-0583",
             "type": "print"
+        },
+        {
+            "value": "1728-0591",
+            "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2022,
-                11,
-                22
+                2018,
+                4,
+                13
             ]
         ]
-    }
+    },
+    "assertion": [
+        {
+            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
+            "order": 1,
+            "name": "peerreview_statement",
+            "label": "Peer Review Statement"
+        },
+        {
+            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=rcmh20",
+            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=rcmh20",
+            "order": 2,
+            "name": "aims_and_scope_url",
+            "label": "Aim & Scope"
+        }
+    ]
 }

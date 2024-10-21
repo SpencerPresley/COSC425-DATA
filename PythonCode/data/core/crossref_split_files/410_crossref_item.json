@@ -3,332 +3,252 @@
         "date-parts": [
             [
                 2024,
-                1,
-                3
+                8,
+                26
             ]
         ],
-        "date-time": "2024-01-03T00:56:24Z",
-        "timestamp": 1704243384913
+        "date-time": "2024-08-26T01:12:10Z",
+        "timestamp": 1724634730198
     },
-    "reference-count": 32,
-    "publisher": "Informa UK Limited",
+    "reference-count": 25,
+    "publisher": "SAGE Publications",
+    "issue": "4",
+    "license": [
+        {
+            "start": {
+                "date-parts": [
+                    [
+                        2023,
+                        5,
+                        16
+                    ]
+                ],
+                "date-time": "2023-05-16T00:00:00Z",
+                "timestamp": 1684195200000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://journals.sagepub.com/page/policies/text-and-data-mining-license"
+        }
+    ],
     "content-domain": {
         "domain": [
-            "www.tandfonline.com"
+            "journals.sagepub.com"
         ],
         "crossmark-restriction": true
     },
     "short-container-title": [
-        "Journal of American College Health"
+        "Labor Studies Journal"
     ],
-    "DOI": "10.1080/07448481.2023.2299431",
+    "published-print": {
+        "date-parts": [
+            [
+                2023,
+                12
+            ]
+        ]
+    },
+    "abstract": "<jats:p> Millions of workers hold more than one job. Multiple jobholders work various combinations of part-time and full-time jobs, which suggests they might spend their time differently than single jobholders, and the second job might affect an individual's subjective well-being. Using data from the 2003-2019 American Time Use Survey, I show that multiple jobholders work and commute more, and spend less time relaxing, sleeping, and doing housework than single jobholders. Overall, multiple jobholders are less likely to report being rested and having a good life relative to single jobholders. I also show how these differences vary by gender and race. </jats:p>",
+    "DOI": "10.1177/0160449x231174938",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2024,
-                1,
-                2
+                2023,
+                5,
+                16
             ]
         ],
-        "date-time": "2024-01-02T16:41:55Z",
-        "timestamp": 1704213715000
+        "date-time": "2023-05-16T23:29:51Z",
+        "timestamp": 1684279791000
     },
-    "page": "1-7",
-    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
+    "page": "305-323",
+    "update-policy": "http://dx.doi.org/10.1177/sage-journals-update-policy",
     "source": "Crossref",
-    "is-referenced-by-count": 0,
+    "is-referenced-by-count": 1,
     "title": [
-        "How traditional undergraduate college students define and perceive wellness: A qualitative phenomenological study"
+        "Time Use and Subjective Well-Being of Multiple Jobholders: Evidence From the American Time Use Survey"
     ],
-    "prefix": "10.1080",
+    "prefix": "10.1177",
+    "volume": "48",
     "author": [
         {
-            "ORCID": "http://orcid.org/0000-0003-3478-4109",
+            "ORCID": "http://orcid.org/0000-0002-9671-0853",
             "authenticated-orcid": false,
-            "given": "Alisa",
-            "family": "Ward",
+            "given": "Brian",
+            "family": "Hill",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Rocky Mountain University of Health Professions, Provo, Utah, USA"
-                },
-                {
-                    "name": "Point Loma Nazarene University, San Diego, California, USA"
-                }
-            ]
-        },
-        {
-            "given": "Laura",
-            "family": "Marinaro",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Salisbury University, Salisbury, Maryland, USA"
-                }
-            ]
-        },
-        {
-            "given": "Ryan",
-            "family": "Nokes",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Point Loma Nazarene University, San Diego, California, USA"
-                }
-            ]
-        },
-        {
-            "given": "Hannah",
-            "family": "Erickson",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Point Loma Nazarene University, San Diego, California, USA"
-                }
-            ]
-        },
-        {
-            "given": "Leamor",
-            "family": "Kahanov",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Stockton University, Galloway Township, New Jersey, USA"
-                }
-            ]
-        },
-        {
-            "given": "Malissa",
-            "family": "Martin",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Rocky Mountain University of Health Professions, Provo, Utah, USA"
+                    "name": "Department of Economics and Finance, Salisbury University, Salisbury, MD, USA"
                 }
             ]
         }
     ],
-    "member": "301",
+    "member": "179",
     "published-online": {
         "date-parts": [
             [
-                2024,
-                1,
-                2
+                2023,
+                5,
+                16
             ]
         ]
     },
     "reference": [
         {
-            "key": "e_1_3_2_2_1",
+            "key": "bibr1-0160449X231174938",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1108/MHSI-09-2022-0065"
+            "DOI": "10.2478/jos-2019-0021"
         },
         {
-            "key": "e_1_3_2_3_1",
+            "key": "bibr2-0160449X231174938",
+            "first-page": "1",
+            "author": "Allard Mary Dorinda",
+            "year": "2018",
+            "journal-title": "Monthly Labor Review"
+        },
+        {
+            "key": "bibr3-0160449X231174938",
             "doi-asserted-by": "publisher",
-            "DOI": "10.3390/ijerph20010539"
+            "DOI": "10.1080/00036840010007957"
         },
         {
-            "issue": "1",
-            "key": "e_1_3_2_4_1",
-            "doi-asserted-by": "crossref",
-            "first-page": "133",
-            "DOI": "10.1016/j.jaac.2020.08.466",
-            "article-title": "Impact of COVID-19 pandemic on college student mental health and wellness",
-            "volume": "60",
-            "author": "Copeland W",
-            "year": "2021",
-            "unstructured": "Copeland W, McGinnis E, Bai Y, et\u00a0al. Impact of COVID-19 pandemic on college student mental health and wellness. J Am Acad Child Adolesc Psychiatry. 2021;60(1):133\u2013141.",
-            "journal-title": "J Am Acad Child Adolesc Psychiatry"
-        },
-        {
-            "key": "e_1_3_2_5_1",
+            "key": "bibr4-0160449X231174938",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1371/journal.pone.0247999"
+            "DOI": "10.1016/j.labeco.2021.102009"
         },
         {
-            "key": "e_1_3_2_6_1",
+            "key": "bibr5-0160449X231174938",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/07448481.2020.1803882"
+            "DOI": "10.1093/sleep/30.9.1085"
         },
         {
-            "key": "e_1_3_2_7_1",
+            "key": "bibr6-0160449X231174938",
+            "volume-title": "Multiple Jobholders in the United States: 2013",
+            "author": "Beckhusen Julia.",
+            "year": "2019"
+        },
+        {
+            "key": "bibr7-0160449X231174938",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1155/2018/9524861"
+            "DOI": "10.1111/ecoj.12269"
         },
         {
-            "key": "e_1_3_2_8_1",
+            "key": "bibr8-0160449X231174938",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0003-066X.55.5.469"
+            "DOI": "10.1177/0149206319882756"
         },
         {
-            "key": "e_1_3_2_9_1",
-            "volume-title": "Critical Synthesis of Wellness Literature",
-            "author": "Miller G",
+            "key": "bibr9-0160449X231174938",
+            "unstructured": "Centers for Disease Control and Prevention. 2022. \u201cHow Much Sleep Do I Need?\u201d https://www.cdc.gov/sleep/about_sleep/how_much_sleep.html."
+        },
+        {
+            "key": "bibr10-0160449X231174938",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/S0927-5371(97)00023-7"
+        },
+        {
+            "key": "bibr11-0160449X231174938",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/00197939211063863"
+        },
+        {
+            "key": "bibr12-0160449X231174938",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/00036841003724403"
+        },
+        {
+            "key": "bibr13-0160449X231174938",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s11205-016-1429-8"
+        },
+        {
+            "key": "bibr14-0160449X231174938",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s11205-008-9380-y"
+        },
+        {
+            "key": "bibr15-0160449X231174938",
+            "first-page": "21",
+            "volume": "133",
+            "author": "Hipple Steven F.",
             "year": "2010",
-            "unstructured": "Miller G, Foster L. Critical Synthesis of Wellness Literature. Victoria: University of Victoria; 2010."
+            "journal-title": "Monthly Labor Review"
         },
         {
-            "key": "e_1_3_2_10_1",
-            "volume-title": "Wellness Workbook",
-            "author": "Travis J",
-            "year": "1981",
-            "unstructured": "Travis J, Ryan R. Wellness Workbook. 1st ed. Berkeley, CA: Ten Speed Press; 1981.",
-            "edition": "1"
-        },
-        {
-            "key": "e_1_3_2_11_1",
+            "key": "bibr16-0160449X231174938",
             "doi-asserted-by": "publisher",
-            "DOI": "10.15183/slm2013.07.1112"
+            "DOI": "10.1016/j.joep.2021.102363"
         },
         {
-            "key": "e_1_3_2_12_1",
+            "key": "bibr17-0160449X231174938",
             "doi-asserted-by": "publisher",
-            "DOI": "10.14485/HBPR.1.5.3"
+            "DOI": "10.7758/rsf.2019.5.5.07"
         },
         {
-            "key": "e_1_3_2_13_1",
+            "key": "bibr18-0160449X231174938",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/19325037.2013.807754"
+            "DOI": "10.1111/0019-8676.00198"
         },
         {
-            "key": "e_1_3_2_14_1",
-            "unstructured": "Marinaro L. Effect of a 15-week lifelong fitness and wellness class on perceived wellness in emerging adults . Dissertation. Concordia University at Chicago; 2020. http://pointloma.idm.oclc.org/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=psyh&AN=2020-04051-031&site=ehost-live"
-        },
-        {
-            "key": "e_1_3_2_15_1",
+            "key": "bibr19-0160449X231174938",
             "doi-asserted-by": "publisher",
-            "DOI": "10.18061/bhac.v5i1.8046"
+            "DOI": "10.1257/aer.102.3.594"
         },
         {
-            "key": "e_1_3_2_16_1",
+            "key": "bibr20-0160449X231174938",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/19325037.2020.1844103"
+            "DOI": "10.2105/AJPH.2014.301921"
+        },
+        {
+            "key": "bibr21-0160449X231174938",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s10826-016-0416-7"
         },
         {
             "issue": "3",
-            "key": "e_1_3_2_17_1",
-            "first-page": "628",
-            "article-title": "The impact of a 15-week lifetime wellness course on behavior change and self-efficacy in college students",
-            "volume": "46",
-            "author": "Lockwood P",
-            "year": "2012",
-            "unstructured": "Lockwood P, Wohl R. The impact of a 15-week lifetime wellness course on behavior change and self-efficacy in college students. Coll Stud J. 2012;46(3):628\u2013641.",
-            "journal-title": "Coll Stud J"
+            "key": "bibr22-0160449X231174938",
+            "first-page": "298",
+            "volume": "66",
+            "author": "Shishko Robert",
+            "year": "1976",
+            "journal-title": "The American Economic Review"
         },
         {
-            "issue": "1",
-            "key": "e_1_3_2_18_1",
-            "first-page": "15",
-            "article-title": "The longitudinal impact of an undergraduate general educational wellness course in early adulthood",
-            "volume": "4",
-            "author": "Polacek G",
-            "year": "2013",
-            "unstructured": "Polacek G, Erwin T, Rau J. The longitudinal impact of an undergraduate general educational wellness course in early adulthood. J Health Edu Teach. 2013;4(1):15\u201323.",
-            "journal-title": "J Health Edu Teach"
-        },
-        {
-            "key": "e_1_3_2_19_1",
+            "key": "bibr23-0160449X231174938",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/00178969221092732"
+            "DOI": "10.1111/jftr.12248"
         },
         {
-            "key": "e_1_3_2_20_1",
+            "key": "bibr24-0160449X231174938",
+            "unstructured": "U.S. Bureau of Labor Statistics. 2019. \u201cTable A-16. Persons Not in the Labor Force and Multiple Jobholders by Sex, Not Seasonally Adjusted.\u201d Retrieved from https://www.bls.gov/news.release/empsit.t16.htm."
+        },
+        {
+            "key": "bibr25-0160449X231174938",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/07448480009595692"
-        },
-        {
-            "key": "e_1_3_2_21_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/008124630603600308"
-        },
-        {
-            "key": "e_1_3_2_22_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00207594.2011.626046"
-        },
-        {
-            "issue": "1",
-            "key": "e_1_3_2_23_1",
-            "doi-asserted-by": "crossref",
-            "first-page": "979",
-            "DOI": "10.1186/s12889-021-11003-4",
-            "article-title": "Examining the relation between the subjective and objective social status with health reported needs and health-seeking behaviour in Dande, Angola",
-            "volume": "21",
-            "author": "Rosario E",
-            "year": "2021",
-            "unstructured": "Rosario E, Severo M, Francisco D, Brito M, Costa D. Examining the relation between the subjective and objective social status with health reported needs and health-seeking behaviour in Dande, Angola. BMC Pub Health. 2021;21(1):979.",
-            "journal-title": "BMC Pub Health"
-        },
-        {
-            "key": "e_1_3_2_24_1",
-            "volume-title": "Qualitative Inquiry in Physical Activity and the Health Professions",
-            "author": "Pitney WJP.",
-            "year": "2009",
-            "unstructured": "Pitney WJP. Qualitative Inquiry in Physical Activity and the Health Professions. Champaign, IL: Human Kinetics; 2009."
-        },
-        {
-            "key": "e_1_3_2_25_1",
-            "volume-title": "Qualitative Inquiry and Research Design: Choosing among Five Approaches",
-            "author": "Creswell J.",
-            "year": "2013",
-            "unstructured": "Creswell J. Qualitative Inquiry and Research Design: Choosing among Five Approaches. Thousand Oaks, CA: Sage Publications; 2013."
-        },
-        {
-            "key": "e_1_3_2_26_1",
-            "volume-title": "Qualitative Research: A Guide to Design and Implementation",
-            "author": "Merriam S",
-            "year": "2016",
-            "unstructured": "Merriam S, Tisdell E. Qualitative Research: A Guide to Design and Implementation. San Francisco, CA: Jossey-Bass; 2016."
-        },
-        {
-            "key": "e_1_3_2_27_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.4278/0890-1171-11.3.208"
-        },
-        {
-            "key": "e_1_3_2_28_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/j.1556-6676.2000.tb01906.x"
-        },
-        {
-            "key": "e_1_3_2_29_1",
-            "volume-title": "Concepts of Fitness and Wellness: A Comprehensive Lifestyle Approach",
-            "author": "Corbin C",
-            "year": "2008",
-            "unstructured": "Corbin C, Welk G, Corbin W, Welk K. Concepts of Fitness and Wellness: A Comprehensive Lifestyle Approach. 14th ed. New York, NY: McGraw-Hill Educator; 2008.",
-            "edition": "14"
-        },
-        {
-            "key": "e_1_3_2_30_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1746-1561.1985.tb01164.x"
-        },
-        {
-            "key": "e_1_3_2_31_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/07448481.2018.1549047"
-        },
-        {
-            "key": "e_1_3_2_32_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.18061/bhac.v4i1.7267"
-        },
-        {
-            "key": "e_1_3_2_33_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/24711616.2020.1866471"
+            "DOI": "10.1080/00036840701335520"
         }
     ],
     "container-title": [
-        "Journal of American College Health"
+        "Labor Studies Journal"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/07448481.2023.2299431",
+            "URL": "http://journals.sagepub.com/doi/pdf/10.1177/0160449X231174938",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "http://journals.sagepub.com/doi/full-xml/10.1177/0160449X231174938",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "http://journals.sagepub.com/doi/pdf/10.1177/0160449X231174938",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -338,99 +258,65 @@
         "date-parts": [
             [
                 2024,
-                1,
-                2
+                2,
+                13
             ]
         ],
-        "date-time": "2024-01-02T16:42:02Z",
-        "timestamp": 1704213722000
+        "date-time": "2024-02-13T15:08:45Z",
+        "timestamp": 1707836925000
     },
-    "score": 12.634765,
+    "score": 15.596747,
     "resource": {
         "primary": {
-            "URL": "https://www.tandfonline.com/doi/full/10.1080/07448481.2023.2299431"
+            "URL": "http://journals.sagepub.com/doi/10.1177/0160449X231174938"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2024,
-                1,
-                2
+                2023,
+                5,
+                16
             ]
         ]
     },
-    "references-count": 32,
+    "references-count": 25,
+    "journal-issue": {
+        "issue": "4",
+        "published-print": {
+            "date-parts": [
+                [
+                    2023,
+                    12
+                ]
+            ]
+        }
+    },
     "alternative-id": [
-        "10.1080/07448481.2023.2299431"
+        "10.1177/0160449X231174938"
     ],
-    "URL": "http://dx.doi.org/10.1080/07448481.2023.2299431",
+    "URL": "http://dx.doi.org/10.1177/0160449x231174938",
     "ISSN": [
-        "0744-8481",
-        "1940-3208"
+        "0160-449X",
+        "1538-9758"
     ],
     "issn-type": [
         {
-            "value": "0744-8481",
+            "value": "0160-449X",
             "type": "print"
         },
         {
-            "value": "1940-3208",
+            "value": "1538-9758",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2024,
-                1,
-                2
+                2023,
+                5,
+                16
             ]
         ]
-    },
-    "assertion": [
-        {
-            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
-            "order": 1,
-            "name": "peerreview_statement",
-            "label": "Peer Review Statement"
-        },
-        {
-            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=vach20",
-            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=vach20",
-            "order": 2,
-            "name": "aims_and_scope_url",
-            "label": "Aim & Scope"
-        },
-        {
-            "value": "2023-06-02",
-            "order": 0,
-            "name": "received",
-            "label": "Received",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2023-12-15",
-            "order": 1,
-            "name": "accepted",
-            "label": "Accepted",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2024-01-02",
-            "order": 2,
-            "name": "published",
-            "label": "Published",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        }
-    ]
+    }
 }

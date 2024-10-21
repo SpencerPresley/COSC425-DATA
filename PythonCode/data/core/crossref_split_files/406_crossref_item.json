@@ -2,264 +2,262 @@
     "indexed": {
         "date-parts": [
             [
-                2022,
-                4,
-                3
+                2023,
+                6,
+                9
             ]
         ],
-        "date-time": "2022-04-03T15:42:46Z",
-        "timestamp": 1649000566454
+        "date-time": "2023-06-09T04:29:08Z",
+        "timestamp": 1686284948212
     },
-    "reference-count": 27,
-    "publisher": "IGI Global",
+    "reference-count": 37,
+    "publisher": "Informa UK Limited",
     "content-domain": {
-        "domain": [],
-        "crossmark-restriction": false
+        "domain": [
+            "www.tandfonline.com"
+        ],
+        "crossmark-restriction": true
     },
-    "published-print": {
-        "date-parts": [
-            [
-                2019
-            ]
-        ]
-    },
-    "abstract": "<jats:p>This study examines factors related to the effectiveness of mobile advertising. Using a large data set with 115,899 records of ad tap-through from a mobile advertising company in China, the authors identify that the influencing factors for advertisement tap through are application type, mobile operators, scrolling frequency, and regional income level. They use a logit model to analyze how the probability of advertisement tap through is related to the identified factors. The results show that application type, mobile operators, scrolling frequency, and the regional income level are positively correlated with the likelihood whether users would tap on certain types of advertising. In addition, they use the Bayesian network model to estimate the conditional probability for a user to tap on an advertisement in an application after the user already taps on another advertisement in the same application. Based on the findings, the authors propose strategies for mobile advertisers to engage in effective and targeted mobile advertising. </jats:p>",
-    "DOI": "10.4018/978-1-5225-7116-2.ch009",
-    "type": "book-chapter",
+    "short-container-title": [
+        "Journal of American College Health"
+    ],
+    "DOI": "10.1080/07448481.2023.2220410",
+    "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2018,
-                9,
-                5
+                2023,
+                6,
+                8
             ]
         ],
-        "date-time": "2018-09-05T14:56:00Z",
-        "timestamp": 1536159360000
+        "date-time": "2023-06-08T19:48:50Z",
+        "timestamp": 1686253730000
     },
-    "page": "140-155",
+    "page": "1-4",
+    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
     "source": "Crossref",
     "is-referenced-by-count": 0,
     "title": [
-        "An Exploratory Study of the Effectiveness of Mobile Advertising"
+        "Sexual victimization experience, acknowledgment labeling and rape empathy among college men and women"
     ],
-    "prefix": "10.4018",
+    "prefix": "10.1080",
     "author": [
         {
-            "given": "Jianping",
-            "family": "Peng",
+            "given": "Suzanne L.",
+            "family": "Osman",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Sun Yat-sen University, China"
-                }
-            ]
-        },
-        {
-            "given": "Juanjuan",
-            "family": "Qu",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Sun Yat-sen University, China"
-                }
-            ]
-        },
-        {
-            "given": "Le",
-            "family": "Peng",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Purdue University, USA"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0002-5318-809X",
-            "authenticated-orcid": true,
-            "given": "Jing (\"Jim\")",
-            "family": "Quan",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Salisbury University, USA"
+                    "name": "Department of Psychology, Salisbury University, Salisbury, Maryland, USA"
                 }
             ]
         }
     ],
-    "member": "2432",
+    "member": "301",
+    "published-online": {
+        "date-parts": [
+            [
+                2023,
+                6,
+                8
+            ]
+        ]
+    },
     "reference": [
         {
-            "key": "978-1-5225-7116-2.ch009.-1",
+            "key": "CIT0001",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1109/MDM.2006.105"
+            "DOI": "10.1177/1524838016631129"
         },
         {
-            "key": "978-1-5225-7116-2.ch009.-2",
+            "key": "CIT0002",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.techfore.2011.08.011"
+            "DOI": "10.1016/j.cpr.2017.06.002"
         },
         {
-            "key": "978-1-5225-7116-2.ch009.-3",
+            "key": "CIT0003",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2501/S0265048709200710"
+            "DOI": "10.1037/0022-3514.43.2.372"
         },
         {
-            "key": "978-1-5225-7116-2.ch009.-4",
+            "key": "CIT0004",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1287/mnsc.1060.0514"
+            "DOI": "10.1111/j.1559-1816.2003.tb01907.x"
         },
         {
-            "key": "978-1-5225-7116-2.ch009.-5",
+            "key": "CIT0005",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.chb.2015.03.051"
+            "DOI": "10.1177/1079063211423944"
         },
         {
-            "key": "978-1-5225-7116-2.ch009.-6",
-            "unstructured": "Dogtiev, A. (2016). Mobile Advertising Revenue Forecasts Roundup. mobyaffiliates.com. Retrieved from http://www.mobyaffiliates.com/blog/mobile-advertising-blog/mobile-advertising-revenue-forecasts-roundup/"
-        },
-        {
-            "key": "978-1-5225-7116-2.ch009.-7",
+            "key": "CIT0006",
             "doi-asserted-by": "publisher",
-            "DOI": "10.17722/jorm.v6i1.130"
+            "DOI": "10.1111/j.1559-1816.1998.tb01715.x"
         },
         {
-            "key": "978-1-5225-7116-2.ch009.-8",
-            "unstructured": "Huang, W., & Wang, H. (2010). Credibility of the mobile phone advertising media, Journalism & Media Research, 9, 24-26. (in Chinese)"
-        },
-        {
-            "issue": "1",
-            "key": "978-1-5225-7116-2.ch009.-9",
-            "first-page": "50",
-            "article-title": "Mobile media use and its impact on consumer attitudes toward mobile advertising.",
-            "volume": "2",
-            "author": "J. W.Jun",
-            "year": "2007",
-            "journal-title": "International Journal of Mobile Marketing"
-        },
-        {
-            "key": "978-1-5225-7116-2.ch009.-10",
+            "key": "CIT0007",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.techfore.2014.01.011"
+            "DOI": "10.1007/s11896-010-9075-6"
         },
         {
-            "key": "978-1-5225-7116-2.ch009.-11",
-            "unstructured": "Kim, Y. S., Lee, J. W., Park, S. R., & Choi, B. C. (2009). Mobile Advertisement System using Data Push Scheduling based on user preference. Proceedings of theWireless Telecommunications Symposium."
-        },
-        {
-            "key": "978-1-5225-7116-2.ch009.-12",
+            "key": "CIT0008",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2501/S0021849909090035"
+            "DOI": "10.1891/0886-6708.8.4.339"
         },
         {
-            "issue": "2",
-            "key": "978-1-5225-7116-2.ch009.-13",
-            "first-page": "87",
-            "article-title": "Attitudes toward mobile advertising: A study of mobile web display and mobile app display advertising.",
-            "volume": "19",
-            "author": "T. D.Le",
-            "year": "2014",
-            "journal-title": "Asian Academy of Management Journal"
-        },
-        {
-            "key": "978-1-5225-7116-2.ch009.-14",
+            "key": "CIT0009",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.chb.2016.07.027"
+            "DOI": "10.1177/088626000015009004"
         },
         {
-            "key": "978-1-5225-7116-2.ch009.-15",
+            "key": "CIT0010",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2224/sbp.2014.42.9.1409"
+            "DOI": "10.1177/0886260516681155"
         },
         {
-            "key": "978-1-5225-7116-2.ch009.-16",
+            "key": "CIT0011",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2224/sbp.2015.43.6.883"
+            "DOI": "10.1037/0022-3514.32.6.1134"
         },
         {
-            "key": "978-1-5225-7116-2.ch009.-17",
-            "unstructured": "MetaRain Blog. (2014) Metarain. Retrieved from http://blog.metarain.com/post/83086723160/an-experiment-in-iad"
-        },
-        {
-            "key": "978-1-5225-7116-2.ch009.-18",
+            "key": "CIT0012",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10447318.2011.641899"
+            "DOI": "10.1891/0886-6708.2.4.255"
         },
         {
-            "key": "978-1-5225-7116-2.ch009.-19",
+            "key": "CIT0013",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2753/JOA0091-3367360410"
+            "DOI": "10.1521/jscp.2014.33.8.732"
         },
         {
-            "key": "978-1-5225-7116-2.ch009.-20",
+            "key": "CIT0014",
             "doi-asserted-by": "publisher",
-            "DOI": "10.4018/978-1-4666-8125-5.ch003"
+            "DOI": "10.1007/s11199-010-9910-3"
         },
         {
-            "key": "978-1-5225-7116-2.ch009.-21",
+            "key": "CIT0015",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1109/TKDE.2006.144"
+            "DOI": "10.1177/1077801215610864"
         },
         {
-            "issue": "3",
-            "key": "978-1-5225-7116-2.ch009.-22",
-            "doi-asserted-by": "crossref",
-            "first-page": "65",
-            "DOI": "10.1080/10864415.2004.11044301",
-            "article-title": "Consumer Attitudes Toward Mobile Advertising: An Empirical Study.",
-            "volume": "8",
-            "author": "M. M.Tsang",
-            "year": "2004",
-            "journal-title": "International Journal of Electronic Commerce"
-        },
-        {
-            "issue": "2",
-            "key": "978-1-5225-7116-2.ch009.-23",
-            "first-page": "44",
-            "article-title": "Consumer attitudes toward mobile marketing and its impact on customers. International Journal of Information",
-            "volume": "7",
-            "author": "S.Varshney",
-            "year": "2015",
-            "journal-title": "Business and Management"
-        },
-        {
-            "key": "978-1-5225-7116-2.ch009.-24",
+            "key": "CIT0016",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1145/2637364.2592003"
+            "DOI": "10.1111/j.1471-6402.1985.tb00872.x"
         },
         {
-            "issue": "9",
-            "key": "978-1-5225-7116-2.ch009.-25",
-            "first-page": "444",
-            "article-title": "Attitudes of Young Consumers Towards SMS Advertising.",
-            "volume": "3",
-            "author": "D.Waldt",
-            "year": "2009",
-            "journal-title": "African Journal of Business Management."
-        },
-        {
-            "key": "978-1-5225-7116-2.ch009.-26",
+            "key": "CIT0017",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.tele.2015.03.003"
+            "DOI": "10.1007/s12103-020-09589-3"
         },
         {
-            "issue": "2",
-            "key": "978-1-5225-7116-2.ch009.-27",
-            "first-page": "9",
-            "article-title": "The influence of personalization in affecting consumer attitudes toward mobile advertising in China.",
-            "volume": "47",
-            "author": "D. J. J.Xu",
-            "year": "2006",
-            "journal-title": "Journal of Computer Information Systems"
+            "key": "CIT0018",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/men0000073"
+        },
+        {
+            "key": "CIT0019",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/a0033376"
+        },
+        {
+            "key": "CIT0020",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/a0023207"
+        },
+        {
+            "key": "CIT0021",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/men0000230"
+        },
+        {
+            "key": "CIT0022",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/1524838015576391"
+        },
+        {
+            "key": "CIT0023",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0886260513479033"
+        },
+        {
+            "key": "CIT0024",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/1077801204272240"
+        },
+        {
+            "key": "CIT0025",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0886260514534777"
+        },
+        {
+            "key": "CIT0026",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3138/cjhs.253-A1"
+        },
+        {
+            "key": "CIT0027",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1097/01.psy.0000171809.12117.79"
+        },
+        {
+            "key": "CIT0028",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1891/0886-6708.VV-D-12-00049"
+        },
+        {
+            "key": "CIT0029",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s11199-020-01133-1"
+        },
+        {
+            "key": "CIT0030",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1471-6402.2007.00385.x"
+        },
+        {
+            "key": "CIT0031",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/sgd0000304"
+        },
+        {
+            "key": "CIT0032",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1891/0886-6708.VV-D-15-00110"
+        },
+        {
+            "key": "CIT0033",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/sgd0000204"
+        },
+        {
+            "key": "CIT0034",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0361684311410210"
+        },
+        {
+            "key": "CIT0035",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s11199-010-9919-7"
+        },
+        {
+            "key": "CIT0036",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0361684315624460"
+        },
+        {
+            "key": "CIT0037",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/jclp.22379"
         }
     ],
     "container-title": [
-        "Brand Culture and Identity"
+        "Journal of American College Health"
     ],
+    "language": "en",
     "link": [
         {
-            "URL": "https://www.igi-global.com/viewtitle.aspx?TitleId=213703",
+            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/07448481.2023.2220410",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -268,37 +266,110 @@
     "deposited": {
         "date-parts": [
             [
-                2020,
-                5,
-                18
+                2023,
+                6,
+                8
             ]
         ],
-        "date-time": "2020-05-18T20:30:07Z",
-        "timestamp": 1589833807000
+        "date-time": "2023-06-08T19:48:53Z",
+        "timestamp": 1686253733000
     },
-    "score": 12.713352,
+    "score": 15.779351,
     "resource": {
         "primary": {
-            "URL": "http://services.igi-global.com/resolvedoi/resolve.aspx?doi=10.4018/978-1-5225-7116-2.ch009"
+            "URL": "https://www.tandfonline.com/doi/full/10.1080/07448481.2023.2220410"
         }
     },
-    "subtitle": [
-        ""
-    ],
     "issued": {
         "date-parts": [
             [
-                2019
+                2023,
+                6,
+                8
             ]
         ]
     },
-    "references-count": 27,
-    "URL": "http://dx.doi.org/10.4018/978-1-5225-7116-2.ch009",
+    "references-count": 37,
+    "alternative-id": [
+        "10.1080/07448481.2023.2220410"
+    ],
+    "URL": "http://dx.doi.org/10.1080/07448481.2023.2220410",
+    "ISSN": [
+        "0744-8481",
+        "1940-3208"
+    ],
+    "issn-type": [
+        {
+            "value": "0744-8481",
+            "type": "print"
+        },
+        {
+            "value": "1940-3208",
+            "type": "electronic"
+        }
+    ],
     "published": {
         "date-parts": [
             [
-                2019
+                2023,
+                6,
+                8
             ]
         ]
-    }
+    },
+    "assertion": [
+        {
+            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
+            "order": 1,
+            "name": "peerreview_statement",
+            "label": "Peer Review Statement"
+        },
+        {
+            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=vach20",
+            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=vach20",
+            "order": 2,
+            "name": "aims_and_scope_url",
+            "label": "Aim & Scope"
+        },
+        {
+            "value": "2022-07-26",
+            "order": 0,
+            "name": "received",
+            "label": "Received",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
+        },
+        {
+            "value": "2023-04-17",
+            "order": 1,
+            "name": "revised",
+            "label": "Revised",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
+        },
+        {
+            "value": "2023-05-19",
+            "order": 2,
+            "name": "accepted",
+            "label": "Accepted",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
+        },
+        {
+            "value": "2023-06-08",
+            "order": 3,
+            "name": "published",
+            "label": "Published",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
+        }
+    ]
 }

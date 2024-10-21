@@ -2,408 +2,197 @@
     "indexed": {
         "date-parts": [
             [
-                2024,
-                8,
-                22
+                2023,
+                10,
+                13
             ]
         ],
-        "date-time": "2024-08-22T01:38:17Z",
-        "timestamp": 1724290697350
+        "date-time": "2023-10-13T05:09:14Z",
+        "timestamp": 1697173754316
     },
-    "reference-count": 55,
-    "publisher": "Informa UK Limited",
-    "issue": "3",
+    "reference-count": 14,
+    "publisher": "Wiley",
+    "issue": "4",
+    "license": [
+        {
+            "start": {
+                "date-parts": [
+                    [
+                        2023,
+                        1,
+                        2
+                    ]
+                ],
+                "date-time": "2023-01-02T00:00:00Z",
+                "timestamp": 1672617600000
+            },
+            "content-version": "vor",
+            "delay-in-days": 0,
+            "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+        }
+    ],
     "content-domain": {
         "domain": [
-            "www.tandfonline.com"
+            "onlinelibrary.wiley.com"
         ],
         "crossmark-restriction": true
     },
     "short-container-title": [
-        "Journalism Practice"
+        "Bulletin of Econ Res"
     ],
     "published-print": {
         "date-parts": [
             [
-                2019,
-                3,
-                16
+                2023,
+                10
             ]
         ]
     },
-    "DOI": "10.1080/17512786.2018.1424021",
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>In the early 2000s, the Montgomery County (Maryland) Public School system implemented district\u2010wide changes to funding, curriculum, staffing, and technology. Using data from 1995 to 2014, we employ a difference\u2010in\u2010differences strategy to show that the reforms significantly increased the percentage of students in Montgomery County who scored advanced on third\u2010 and fifth\u2010grade math and reading tests. Using an event study strategy, we find that the positive impacts extended through the end of the panel. Our results contribute to the literature on school reform by finding positive impacts of school reform in a district that was high performing prior to reforms.</jats:p>",
+    "DOI": "10.1111/boer.12382",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2018,
+                2023,
                 1,
-                17
+                2
             ]
         ],
-        "date-time": "2018-01-17T07:50:42Z",
-        "timestamp": 1516175442000
+        "date-time": "2023-01-02T11:35:12Z",
+        "timestamp": 1672659312000
     },
-    "page": "331-348",
-    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
+    "page": "813-827",
+    "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 29,
+    "is-referenced-by-count": 0,
     "title": [
-        "Mobile Journalism as Lifestyle Journalism?"
+        "District\u2010wide school reform and student performance: Evidence from Montgomery County, Maryland"
     ],
-    "prefix": "10.1080",
-    "volume": "13",
+    "prefix": "10.1111",
+    "volume": "75",
     "author": [
         {
-            "ORCID": "http://orcid.org/0000-0002-6645-1117",
-            "authenticated-orcid": false,
-            "given": "Gregory",
-            "family": "Perreault",
+            "given": "Mark",
+            "family": "Cimiluca",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Department of Communication, Appalachian State University, USA."
+                    "name": "Department of Economics and Finance Salisbury University  Salisbury Maryland USA"
                 }
             ]
         },
         {
-            "given": "Kellie",
-            "family": "Stanfield",
+            "ORCID": "http://orcid.org/0000-0002-9671-0853",
+            "authenticated-orcid": false,
+            "given": "Brian",
+            "family": "Hill",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Departmernt of Communication Arts, Salisbury University, USA."
+                    "name": "Department of Economics and Finance Salisbury University  Salisbury Maryland USA"
                 }
             ]
         }
     ],
-    "member": "301",
+    "member": "311",
     "published-online": {
         "date-parts": [
             [
-                2018,
+                2023,
                 1,
-                16
+                2
             ]
         ]
     },
     "reference": [
         {
-            "key": "CIT0001",
+            "key": "e_1_2_11_2_1",
+            "unstructured": "Baltimore Sun. (2002 March 6). Bye\u2010bye MSPAP. Baltimore Sun. Retrieved October/November 2016 fromhttps://articles.baltimoresun.com/2002-03-06/news/0203060065_1_optional-test-local-school-boards-school-officials"
+        },
+        {
+            "key": "e_1_2_11_3_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0022-3514.52.6.1087"
+            "DOI": "10.1162/003355304772839588"
         },
         {
-            "key": "CIT0002a",
+            "key": "e_1_2_11_4_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1023/A:1006982529917"
+            "DOI": "10.1177/0019793918774318"
         },
         {
-            "key": "CIT0002b",
+            "key": "e_1_2_11_5_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10584600490481299"
+            "DOI": "10.1177/0895904817719520"
         },
         {
-            "key": "CIT0001a",
+            "key": "e_1_2_11_6_1",
+            "volume-title": "Differentiated treatment in Montgomery County Public Schools",
+            "author": "Elmore R.",
+            "year": "2006"
+        },
+        {
+            "key": "e_1_2_11_7_1",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Gill B. Zimmer R. Christman J. & Blanc S. (2007). State Takeover School Restructuring Private Management and Student Achievement in Philadelphia.https://doi.org/10.7249/mg533",
+            "DOI": "10.7249/MG533"
+        },
+        {
+            "key": "e_1_2_11_8_1",
+            "unstructured": "Harris D. N. &Larsen M.(2016).The effects of the New Orleans post\u2010Katrina school reforms on student academic outcomes. (Technical Report) New Orleans LA Education Research Alliance for New Orleans. Retrieved fromhttps://educationresearchalliancenola.org/files/publications/The\u2010Effects\u2010of\u2010the\u2010New\u2010Orleans\u2010Post\u2010Katrina\u2010School\u2010Reforms\u2010on\u2010Student\u2010Academic\u2010Outcomes.pdf"
+        },
+        {
+            "key": "e_1_2_11_9_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10584600600629802"
+            "DOI": "10.3102/0013189X08323842"
         },
         {
-            "key": "CIT0002c",
-            "volume-title": "Bourdieu and the Journalistic Field",
-            "author": "Benson Rodney",
-            "year": "2005"
+            "key": "e_1_2_11_10_1",
+            "unstructured": "Maryland Department of Education. (2000).Maryland school performance program report. Baltimore MD.https://salisbury.on.worldcat.org/oclc/22922532"
         },
         {
-            "key": "CIT0003",
+            "key": "e_1_2_11_11_1",
+            "unstructured": "Montgomery County. (1999).Our call to action: Raising the bar and closing the gap because all children matter. Revised.https://files.eric.ed.gov/fulltext/ED455334.pdf"
+        },
+        {
+            "key": "e_1_2_11_12_1",
+            "unstructured": "Olson L.(2008 February 19).When \u2018unequal\u2019 is fair treatment.Education Week.http://www.edweek.org/ew/articles/2008/02/20/24zones.h27.html"
+        },
+        {
+            "key": "e_1_2_11_13_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/146488490000100203"
+            "DOI": "10.3102/0162373716685824"
         },
         {
-            "key": "CIT0004",
+            "key": "e_1_2_11_14_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/17512780701768568"
+            "DOI": "10.1162/EDFP_a_00188"
         },
         {
-            "key": "CIT0004a",
+            "key": "e_1_2_11_15_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/17512786.2015.1063080"
-        },
-        {
-            "key": "CIT0005",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/amet.12112"
-        },
-        {
-            "key": "CIT0006",
-            "first-page": "52",
-            "volume-title": "The Logic of Practice",
-            "author": "Bourdieu Pierre.",
-            "year": "1980"
-        },
-        {
-            "key": "CIT0006a",
-            "volume-title": "The State Nobility: Elite Schools in the Field of Power",
-            "author": "Bourdieu Pierre.",
-            "year": "1998"
-        },
-        {
-            "key": "CIT0008",
-            "first-page": "29",
-            "volume-title": "Bourdieu and the Journalistic Field",
-            "author": "Bourdieu Pierre.",
-            "year": "2005"
-        },
-        {
-            "issue": "4",
-            "key": "CIT0012",
-            "first-page": "89",
-            "volume": "19",
-            "author": "Cameron David.",
-            "year": "2009",
-            "journal-title": "Artigo consultado a"
-        },
-        {
-            "key": "CIT0013",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/21670811.2015.1076344"
-        },
-        {
-            "key": "CIT0014",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.9790/0837-194399104"
-        },
-        {
-            "key": "CIT0015",
-            "volume-title": "Normative Theories of the Media",
-            "author": "Christians Cliff",
-            "year": "2009"
-        },
-        {
-            "key": "CIT0016",
-            "first-page": "15",
-            "volume-title": "Journalism and Citizenship: New Agendas in Communication",
-            "author": "Deuze Mark.",
-            "year": "2009"
-        },
-        {
-            "key": "CIT0016a",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/17512780701504864"
-        },
-        {
-            "key": "CIT0018",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0093650203260203"
-        },
-        {
-            "key": "CIT0020",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0163443713495076"
-        },
-        {
-            "key": "CIT0021",
-            "first-page": "11",
-            "volume-title": "Lifestyle Journalism",
-            "author": "F\u00fcrsich Elfriede.",
-            "year": "2013"
-        },
-        {
-            "key": "CIT0022",
-            "volume-title": "The Presentation of Self in Everyday Life",
-            "author": "Goffman Erving.",
-            "year": "1959"
-        },
-        {
-            "key": "CIT0022a",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/1461670X.2014.890329"
-        },
-        {
-            "key": "CIT0023",
-            "first-page": "473",
-            "volume-title": "The Global Journalist in the 21st Century",
-            "author": "Hanitzsch Thomas",
-            "year": "2013"
-        },
-        {
-            "key": "CIT0024",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/14616700903290569"
-        },
-        {
-            "key": "CIT0025",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/17512786.2011.622895"
-        },
-        {
-            "key": "CIT0026",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.4324/9781315829470"
-        },
-        {
-            "key": "CIT0027",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/1369118X.2015.1106571"
-        },
-        {
-            "key": "CIT0028",
-            "author": "Johnstone John",
-            "year": "1976",
-            "journal-title": "The News People: A Sociological Portrait of American Journalists and Their Work"
-        },
-        {
-            "key": "CIT0029",
-            "volume-title": "A Tale of Four Augusts: Obama\u2019s Syria Policy",
-            "author": "Kanat Kilic.",
-            "year": "2015"
-        },
-        {
-            "key": "CIT0031",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1468-2885.2005.tb00329.x"
-        },
-        {
-            "key": "CIT0032",
-            "volume-title": "The Structure and Function of Communication in Society",
-            "author": "Lasswell Harold.",
-            "year": "1948"
-        },
-        {
-            "key": "CIT0033",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/1369118X.2012.674150"
-        },
-        {
-            "key": "CIT0034a",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/17512780802681264"
-        },
-        {
-            "key": "CIT0036",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0093650206287073"
-        },
-        {
-            "key": "CIT0037",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/1464884916670932"
-        },
-        {
-            "key": "CIT0038",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1460-2466.2011.01603.x"
-        },
-        {
-            "key": "CIT0038a",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/14616700500450343"
-        },
-        {
-            "key": "CIT0038b",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1146/annurev.soc.33.040406.131627"
-        },
-        {
-            "issue": "2",
-            "key": "CIT0040",
-            "first-page": "29",
-            "volume": "6",
-            "author": "Scolari Carlos",
-            "year": "2012",
-            "journal-title": "iJIM"
-        },
-        {
-            "key": "CIT0040b",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/9781118313978.ch5"
-        },
-        {
-            "key": "CIT0040a",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.4324/9781315727684-2"
-        },
-        {
-            "key": "CIT0040c",
-            "first-page": "60",
-            "volume": "18",
-            "author": "Skovsgaard Morten",
-            "year": "2016",
-            "journal-title": "Journalistic Role Performance: Concepts, Contexts, and Methods"
-        },
-        {
-            "key": "CIT0041a",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/0950238032000083863a"
-        },
-        {
-            "key": "CIT0042",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/1461670X.2014.946309"
-        },
-        {
-            "key": "CIT0044",
-            "first-page": "118",
-            "volume-title": "Print Journalism: A Critical Introduction",
-            "author": "Taylor Jane.",
-            "year": "2005"
-        },
-        {
-            "key": "CIT0045",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.5406/illinois/9780252040511.001.0001"
-        },
-        {
-            "key": "CIT0047",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/1464884911421705"
-        },
-        {
-            "key": "CIT0047a",
-            "volume-title": "The American Journalist: A Portrait of US News People and their Work",
-            "author": "Weaver David Hugh",
-            "year": "1986"
-        },
-        {
-            "key": "CIT0048",
-            "volume-title": "The American Journalist in the 21st Century",
-            "author": "Weaver David",
-            "year": "2007"
-        },
-        {
-            "key": "CIT0050",
-            "volume-title": "The American Journalist in the 1990s: US News People at the End of an Era",
-            "author": "Weaver David G.",
-            "year": "1996"
-        },
-        {
-            "key": "CIT0052",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/1931243114546807"
-        },
-        {
-            "key": "CIT0053",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/21670811.2012.740273"
-        },
-        {
-            "key": "CIT0053a",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/1464884912442638"
-        },
-        {
-            "key": "CIT0055",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/15295039309366865"
+            "DOI": "10.3102/0162373717705729"
         }
     ],
     "container-title": [
-        "Journalism Practice"
+        "Bulletin of Economic Research"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/17512786.2018.1424021",
+            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/boer.12382",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1111/boer.12382",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/boer.12382",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -412,98 +201,95 @@
     "deposited": {
         "date-parts": [
             [
-                2019,
-                3,
-                8
+                2023,
+                10,
+                12
             ]
         ],
-        "date-time": "2019-03-08T11:45:14Z",
-        "timestamp": 1552045514000
+        "date-time": "2023-10-12T04:08:08Z",
+        "timestamp": 1697083688000
     },
-    "score": 12.891167,
+    "score": 16.643215,
     "resource": {
         "primary": {
-            "URL": "https://www.tandfonline.com/doi/full/10.1080/17512786.2018.1424021"
+            "URL": "https://onlinelibrary.wiley.com/doi/10.1111/boer.12382"
         }
     },
-    "subtitle": [
-        "Field Theory in the integration of mobile in the newsroom and mobile journalist role conception"
-    ],
     "issued": {
         "date-parts": [
             [
-                2018,
+                2023,
                 1,
-                16
+                2
             ]
         ]
     },
-    "references-count": 55,
+    "references-count": 14,
     "journal-issue": {
-        "issue": "3",
-        "published-online": {
-            "date-parts": [
-                [
-                    2018,
-                    1,
-                    12
-                ]
-            ]
-        },
+        "issue": "4",
         "published-print": {
             "date-parts": [
                 [
-                    2019,
-                    3,
-                    16
+                    2023,
+                    10
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1080/17512786.2018.1424021"
+        "10.1111/boer.12382"
     ],
-    "URL": "http://dx.doi.org/10.1080/17512786.2018.1424021",
+    "URL": "http://dx.doi.org/10.1111/boer.12382",
+    "archive": [
+        "Portico"
+    ],
     "ISSN": [
-        "1751-2786",
-        "1751-2794"
+        "0307-3378",
+        "1467-8586"
     ],
     "issn-type": [
         {
-            "value": "1751-2786",
+            "value": "0307-3378",
             "type": "print"
         },
         {
-            "value": "1751-2794",
+            "value": "1467-8586",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2018,
+                2023,
                 1,
-                16
+                2
             ]
         ]
     },
     "assertion": [
         {
-            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
+            "value": "2021-08-12",
+            "order": 0,
+            "name": "received",
+            "label": "Received",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
+        },
+        {
+            "value": "2022-12-04",
             "order": 1,
-            "name": "peerreview_statement",
-            "label": "Peer Review Statement"
+            "name": "accepted",
+            "label": "Accepted",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
         },
         {
-            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=rjop20",
-            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=rjop20",
+            "value": "2023-01-02",
             "order": 2,
-            "name": "aims_and_scope_url",
-            "label": "Aim & Scope"
-        },
-        {
-            "value": "2018-01-16",
-            "order": 3,
             "name": "published",
             "label": "Published",
             "group": {

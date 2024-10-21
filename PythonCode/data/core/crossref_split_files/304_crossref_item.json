@@ -3,1073 +3,587 @@
         "date-parts": [
             [
                 2024,
-                9,
-                3
+                8,
+                19
             ]
         ],
-        "date-time": "2024-09-03T08:17:14Z",
-        "timestamp": 1725351434040
+        "date-time": "2024-08-19T03:04:34Z",
+        "timestamp": 1724036674545
     },
-    "reference-count": 93,
-    "publisher": "Royal Society of Chemistry (RSC)",
-    "issue": "10",
-    "funder": [
-        {
-            "DOI": "10.13039/100000165",
-            "name": "Division of Chemistry",
-            "doi-asserted-by": "publisher",
-            "award": [
-                "CHE-1531823"
-            ],
-            "id": [
-                {
-                    "id": "10.13039/100000165",
-                    "id-type": "DOI",
-                    "asserted-by": "publisher"
-                }
-            ]
-        }
-    ],
+    "reference-count": 78,
+    "publisher": "Informa UK Limited",
+    "issue": "3",
     "content-domain": {
         "domain": [
-            "rsc.org"
+            "www.tandfonline.com"
         ],
         "crossmark-restriction": true
     },
     "short-container-title": [
-        "Analyst"
+        "Peabody Journal of Education"
     ],
-    "abstract": "<p>Charge detection mass spectrometry (CDMS) is a single molecule method where the mass of each ion is directly determined from individual measurements of its mass-to-charge ratio and charge.</p>",
-    "DOI": "10.1039/c7an00277g",
+    "published-print": {
+        "date-parts": [
+            [
+                2021,
+                5,
+                27
+            ]
+        ]
+    },
+    "DOI": "10.1080/0161956x.2021.1942703",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2017,
-                4,
-                26
+                2021,
+                7,
+                14
             ]
         ],
-        "date-time": "2017-04-26T08:56:20Z",
-        "timestamp": 1493196980000
+        "date-time": "2021-07-14T19:13:05Z",
+        "timestamp": 1626289985000
     },
-    "page": "1654-1671",
-    "update-policy": "http://dx.doi.org/10.1039/rsc_crossmark_policy",
+    "page": "235-246",
+    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
     "source": "Crossref",
-    "is-referenced-by-count": 98,
+    "is-referenced-by-count": 29,
     "title": [
-        "Charge detection mass spectrometry: weighing heavier things"
+        "A Systematic Review of the Last Decade of Civic Education Research in the United States"
     ],
-    "prefix": "10.1039",
-    "volume": "142",
+    "prefix": "10.1080",
+    "volume": "96",
     "author": [
         {
-            "given": "David Z.",
-            "family": "Keifer",
+            "given": "Jason C.",
+            "family": "Fitzgerald",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Department of Chemistry"
+                    "name": "Monmouth University"
+                }
+            ]
+        },
+        {
+            "ORCID": "http://orcid.org/0000-0001-9848-934X",
+            "authenticated-orcid": false,
+            "given": "Alison K.",
+            "family": "Cohen",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "University of California San Francisco"
                 },
+                {
+                    "name": "CIRCLE, Tufts University"
+                }
+            ]
+        },
+        {
+            "given": "Elena",
+            "family": "Maker Castro",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "University of California Los Angeles"
+                }
+            ]
+        },
+        {
+            "given": "Alexander",
+            "family": "Pope",
+            "sequence": "additional",
+            "affiliation": [
                 {
                     "name": "Salisbury University"
-                },
-                {
-                    "name": "Salisbury"
-                },
-                {
-                    "name": "USA"
-                }
-            ]
-        },
-        {
-            "given": "Elizabeth E.",
-            "family": "Pierson",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Analytical Sciences"
-                },
-                {
-                    "name": "Pharmaceutical Sciences and Clinical Supplies"
-                },
-                {
-                    "name": "Merck Research Laboratories"
-                },
-                {
-                    "name": "Merck & Co."
-                },
-                {
-                    "name": "Inc."
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0001-7084-176X",
-            "authenticated-orcid": false,
-            "given": "Martin F.",
-            "family": "Jarrold",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Chemistry Department"
-                },
-                {
-                    "name": "Indiana University"
-                },
-                {
-                    "name": "Bloomington"
-                },
-                {
-                    "name": "USA"
                 }
             ]
         }
     ],
-    "member": "292",
+    "member": "301",
     "published-online": {
         "date-parts": [
             [
-                2017
+                2021,
+                7,
+                14
             ]
         ]
     },
     "reference": [
         {
-            "key": "C7AN00277G-(cit1)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "4020",
-            "DOI": "10.1002/anie.201210197",
-            "volume": "52",
-            "author": "Snijder",
-            "year": "2013",
-            "journal-title": "Angew. Chem., Int. Ed."
+            "key": "cit0001",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/1090198118769357"
         },
         {
-            "key": "C7AN00277G-(cit2)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "217",
-            "DOI": "10.1016/S1387-3806(00)00245-1",
-            "volume": "202",
-            "author": "Gilmore",
-            "year": "2000",
-            "journal-title": "Int. J. Mass Spectrom."
+            "key": "cit0002",
+            "volume-title": "Cosmopolitanism: Ethics in a world of strangers",
+            "author": "Appiah K. A.",
+            "year": "2006"
         },
         {
-            "key": "C7AN00277G-(cit3)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "1854",
-            "DOI": "10.1002/1097-0231(20001015)14:19<1854::AID-RCM102>3.0.CO;2-M",
-            "volume": "14",
-            "author": "Westmacott",
-            "year": "2000",
-            "journal-title": "Rapid Commun. Mass Spectrom."
+            "key": "cit0003",
+            "volume-title": "Cultural politics and education",
+            "author": "Apple M. W.",
+            "year": "1996"
         },
         {
-            "key": "C7AN00277G-(cit4)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "13",
-            "DOI": "10.1016/S1387-3806(01)00553-X",
-            "volume": "215",
-            "author": "Fraser",
-            "year": "2002",
-            "journal-title": "Int. J. Mass Spectrom."
+            "key": "cit0004",
+            "volume-title": "Education still under siege",
+            "author": "Aronowitz S.",
+            "year": "1993",
+            "edition": "2"
         },
         {
-            "key": "C7AN00277G-(cit5)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "906",
-            "DOI": "10.1007/s13361-014-0874-3",
-            "volume": "25",
-            "author": "L\u00f6ssl",
-            "year": "2014",
-            "journal-title": "J. Am. Soc. Mass Spectrom."
+            "key": "cit0005",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1207/S1532480XADS0703_6"
         },
         {
-            "key": "C7AN00277G-(cit6)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "101",
-            "DOI": "10.1016/j.ijms.2004.10.011",
-            "volume": "240",
-            "author": "Loboda",
-            "year": "2005",
-            "journal-title": "Int. J. Mass Spectrom."
+            "key": "cit0006",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.4324/9781351040266-20"
         },
         {
-            "key": "C7AN00277G-(cit7)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "546",
-            "DOI": "10.1021/j100313a058",
-            "volume": "92",
-            "author": "Wong",
-            "year": "1988",
-            "journal-title": "J. Phys. Chem."
+            "key": "cit0007",
+            "volume-title": "Multicultural education: Issues and perspectives",
+            "author": "Banks J. A.",
+            "year": "2010",
+            "edition": "7"
         },
         {
-            "key": "C7AN00277G-(cit8)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "541",
-            "DOI": "10.1016/j.jmb.2007.03.020",
-            "volume": "369",
-            "author": "Stockley",
-            "year": "2007",
-            "journal-title": "J. Mol. Biol."
+            "key": "cit0008",
+            "unstructured": "Bass, J. (2012).Engaging students in politics. ASCD Express. http://www.ascd.org/ascd-express/vol7/723-bass.aspx"
         },
         {
-            "key": "C7AN00277G-(cit9)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "1437",
-            "DOI": "10.1007/s00216-013-7548-z",
-            "volume": "406",
-            "author": "Bereszczak",
-            "year": "2014",
-            "journal-title": "Anal. Bioanal. Chem."
-        },
-        {
-            "key": "C7AN00277G-(cit10)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "9216",
-            "DOI": "10.1073/pnas.0800406105",
-            "volume": "105",
-            "author": "Uetrecht",
-            "year": "2008",
-            "journal-title": "Proc. Natl. Acad. Sci. U. S. A."
-        },
-        {
-            "key": "C7AN00277G-(cit11)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "498",
-            "DOI": "10.1007/s13361-016-1582-y",
-            "volume": "28",
-            "author": "Keifer",
-            "year": "2017",
-            "journal-title": "J. Am. Soc. Mass Spectrom."
-        },
-        {
-            "key": "C7AN00277G-(cit12)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "596",
-            "DOI": "10.1002/rcm.275",
-            "volume": "15",
-            "author": "Tahallah",
-            "year": "2001",
-            "journal-title": "Rapid Commun. Mass Spectrom."
-        },
-        {
-            "key": "C7AN00277G-(cit13)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "508",
-            "DOI": "10.1002/(SICI)1097-0231(19980515)12:9<508::AID-RCM197>3.0.CO;2-L",
-            "volume": "12",
-            "author": "Krutchinsky",
-            "year": "1998",
-            "journal-title": "Rapid Commun. Mass Spectrom."
-        },
-        {
-            "key": "C7AN00277G-(cit14)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "1754",
-            "DOI": "10.1021/ac035406j",
-            "volume": "76",
-            "author": "Chernushevich",
-            "year": "2004",
-            "journal-title": "Anal. Chem."
-        },
-        {
-            "key": "C7AN00277G-(cit15)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "198",
-            "DOI": "10.1016/j.ijms.2007.06.012",
-            "volume": "268",
-            "author": "Lorenzen",
-            "year": "2007",
-            "journal-title": "Int. J. Mass Spectrom."
-        },
-        {
-            "key": "C7AN00277G-(cit16)/*[position()=1]",
+            "issue": "1",
+            "key": "cit0009",
             "doi-asserted-by": "crossref",
             "first-page": "81",
-            "DOI": "10.1002/rcm.1290040305",
-            "volume": "4",
-            "author": "Chowdhury",
-            "year": "1990",
-            "journal-title": "Rapid Commun. Mass Spectrom."
-        },
-        {
-            "key": "C7AN00277G-(cit17)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "3550",
-            "DOI": "10.1021/ja993740k",
-            "volume": "122",
-            "author": "Tito",
-            "year": "2000",
-            "journal-title": "J. Am. Chem. Soc."
-        },
-        {
-            "key": "C7AN00277G-(cit18)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "7295",
-            "DOI": "10.1021/ja502616y",
-            "volume": "136",
-            "author": "Snijder",
-            "year": "2014",
-            "journal-title": "J. Am. Chem. Soc."
-        },
-        {
-            "key": "C7AN00277G-(cit19)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "013435",
-            "DOI": "10.1103/PhysRevA.87.013435",
-            "volume": "87",
-            "author": "Antoine",
-            "year": "2013",
-            "journal-title": "Phys. Rev. A"
-        },
-        {
-            "key": "C7AN00277G-(cit20)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "7",
-            "DOI": "10.1007/s13361-014-1011-z",
-            "volume": "26",
-            "author": "Doussineau",
-            "year": "2015",
-            "journal-title": "J. Am. Soc. Mass Spectrom."
-        },
-        {
-            "key": "C7AN00277G-(cit21)/*[position()=1]",
-            "doi-asserted-by": "publisher",
-            "author": "Keifer",
-            "year": "2017",
-            "journal-title": "Mass Spectrom. Rev.",
-            "DOI": "10.1002/mas.21495"
-        },
-        {
-            "key": "C7AN00277G-(cit22)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "137",
-            "DOI": "10.1038/369137a0",
-            "volume": "369",
-            "author": "Smith",
-            "year": "1994",
-            "journal-title": "Nature"
-        },
-        {
-            "key": "C7AN00277G-(cit23)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "7839",
-            "DOI": "10.1021/ja00096a046",
-            "volume": "116",
-            "author": "Bruce",
-            "year": "1994",
-            "journal-title": "J. Am. Chem. Soc."
-        },
-        {
-            "key": "C7AN00277G-(cit24)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "507",
-            "DOI": "10.1016/0021-9797(83)90365-X",
-            "volume": "91",
-            "author": "Philip",
-            "year": "1983",
-            "journal-title": "J. Colloid Interface Sci."
-        },
-        {
-            "key": "C7AN00277G-(cit25)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "4245",
-            "DOI": "10.1063/1.359480",
-            "volume": "77",
-            "author": "Hars",
-            "year": "1995",
-            "journal-title": "J. Appl. Phys."
-        },
-        {
-            "key": "C7AN00277G-(cit26)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "5410",
-            "DOI": "10.1063/1.1397295",
-            "volume": "90",
-            "author": "Schlemmer",
-            "year": "2001",
-            "journal-title": "J. Appl. Phys."
-        },
-        {
-            "key": "C7AN00277G-(cit27)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "12534",
-            "DOI": "10.1021/nn505374d",
-            "volume": "8",
-            "author": "Howder",
-            "year": "2014",
-            "journal-title": "ACS Nano"
-        },
-        {
-            "key": "C7AN00277G-(cit28)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "103303",
-            "DOI": "10.1063/1.2804074",
-            "volume": "78",
-            "author": "Dohn",
-            "year": "2007",
-            "journal-title": "Rev. Sci. Instrum."
-        },
-        {
-            "key": "C7AN00277G-(cit29)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "602",
-            "DOI": "10.1038/nnano.2012.119",
-            "volume": "7",
-            "author": "Hanay",
-            "year": "2012",
-            "journal-title": "Nat. Nanotechnol."
-        },
-        {
-            "key": "C7AN00277G-(cit30)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "6482",
-            "DOI": "10.1038/ncomms7482",
-            "volume": "6",
-            "author": "Sage",
-            "year": "2015",
-            "journal-title": "Nat. Commun."
-        },
-        {
-            "key": "C7AN00277G-(cit31)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "3964",
-            "DOI": "10.1021/ac00094a018",
-            "volume": "66",
-            "author": "Chen",
-            "year": "1994",
-            "journal-title": "Anal. Chem."
-        },
-        {
-            "key": "C7AN00277G-(cit32)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "3865",
-            "DOI": "10.1002/anie.200700309",
-            "volume": "46",
-            "author": "Peng",
-            "year": "2007",
-            "journal-title": "Angew. Chem., Int. Ed."
-        },
-        {
-            "key": "C7AN00277G-(cit33)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "8",
-            "DOI": "10.1016/j.ijms.2007.10.012",
-            "volume": "270",
-            "author": "Nie",
-            "year": "2008",
-            "journal-title": "Int. J. Mass Spectrom."
-        },
-        {
-            "key": "C7AN00277G-(cit34)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "155",
-            "DOI": "10.1002/(SICI)1098-2787(1999)18:3/4<155::AID-MAS1>3.0.CO;2-W",
-            "volume": "18",
-            "author": "Frank",
-            "year": "1999",
-            "journal-title": "Mass Spectrom. Rev."
-        },
-        {
-            "key": "C7AN00277G-(cit35)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "242",
-            "DOI": "10.1109/77.919329",
-            "volume": "11",
-            "author": "Rabin",
-            "year": "2001",
-            "journal-title": "IEEE Trans. Appl. Supercond."
-        },
-        {
-            "key": "C7AN00277G-(cit36)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "4329",
-            "DOI": "10.1021/ac0482054",
-            "volume": "77",
-            "author": "Wenzel",
-            "year": "2005",
-            "journal-title": "Anal. Chem."
-        },
-        {
-            "key": "C7AN00277G-(cit37)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "635",
-            "DOI": "10.1063/1.1710367",
-            "volume": "9",
-            "author": "Shockley",
-            "year": "1938",
-            "journal-title": "J. Appl. Phys."
-        },
-        {
-            "key": "C7AN00277G-(cit38)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "298",
-            "DOI": "10.1175/1520-0426(1988)005<0298:TCIOAC>2.0.CO;2",
-            "volume": "5",
-            "author": "Weinheimer",
-            "year": "1988",
-            "journal-title": "J. Atmos. Oceanic Technol."
-        },
-        {
-            "key": "C7AN00277G-(cit39)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "1243",
-            "DOI": "10.1063/1.1735813",
-            "volume": "31",
-            "author": "Shelton",
-            "year": "1960",
-            "journal-title": "J. Appl. Phys."
-        },
-        {
-            "key": "C7AN00277G-(cit40)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "70",
-            "DOI": "10.1016/0029-554X(64)90351-9",
-            "volume": "28",
-            "author": "Friichtenicht",
-            "year": "1964",
-            "journal-title": "Nucl. Instrum. Methods"
-        },
-        {
-            "key": "C7AN00277G-(cit41)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "1993",
-            "DOI": "10.1515/zna-1966-1126",
-            "volume": "21",
-            "author": "Rudolph",
-            "year": "1966",
-            "journal-title": "Z. Naturforsch. Ser. A"
-        },
-        {
-            "key": "C7AN00277G-(cit42)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "719",
-            "DOI": "10.1016/0734-743X(93)90066-G",
-            "volume": "14",
-            "author": "Stradling",
-            "year": "1993",
-            "journal-title": "Int. J. Impact Eng."
-        },
-        {
-            "key": "C7AN00277G-(cit43)/*[position()=1]",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1140/epjti/s40485-017-0037-6",
-            "volume-title": "EPJ TI",
-            "author": "Adamson",
-            "year": "2017",
-            "unstructured": "B. D. Adamson , M. E. C.Miller and R. E.Continetti, The Aerosol Impact Spectrometer: A Versatile Platform for Studying the Velocity Dependence of Nanoparticle-Surface Impact Phenomena, EPJ TI, 2017, in press, DOI:10.1140/epjti/s40485-017-0037-6"
-        },
-        {
-            "key": "C7AN00277G-(cit44)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "1528",
-            "DOI": "10.1002/rcm.1290091513",
-            "volume": "9",
-            "author": "Fuerstenau",
-            "year": "1995",
-            "journal-title": "Rapid Commun. Mass Spectrom."
-        },
-        {
-            "key": "C7AN00277G-(cit45)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "305",
-            "DOI": "10.1016/S1044-0305(97)00290-0",
-            "volume": "9",
-            "author": "Schultz",
-            "year": "1998",
-            "journal-title": "J. Am. Soc. Mass Spectrom."
-        },
-        {
-            "key": "C7AN00277G-(cit46)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "15",
-            "DOI": "10.1002/(SICI)1097-0231(19990115)13:1<15::AID-RCM439>3.0.CO;2-A",
-            "volume": "13",
-            "author": "Schultz",
-            "year": "1999",
-            "journal-title": "Rapid Commun. Mass Spectrom."
-        },
-        {
-            "key": "C7AN00277G-(cit47)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "559",
-            "DOI": "10.1002/1521-3757(20010202)113:3<559::AID-ANGE559>3.0.CO;2-#",
-            "volume": "113",
-            "author": "Fuerstenau",
-            "year": "2001",
-            "journal-title": "Angew. Chem., Int. Ed."
-        },
-        {
-            "key": "C7AN00277G-(cit48)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "617",
-            "DOI": "10.1002/rcm.4900",
-            "volume": "25",
-            "author": "Doussineau",
-            "year": "2011",
-            "journal-title": "Rapid Commun. Mass spectrum."
-        },
-        {
-            "key": "C7AN00277G-(cit49)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "414",
-            "DOI": "10.1021/mz300011b",
-            "volume": "1",
-            "author": "Doussineau",
-            "year": "2012",
-            "journal-title": "ACS Macro Lett."
-        },
-        {
-            "key": "C7AN00277G-(cit50)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "603",
-            "DOI": "10.1002/cphc.201200777",
-            "volume": "14",
-            "author": "Doussineau",
-            "year": "2013",
-            "journal-title": "ChemPhysChem"
-        },
-        {
-            "key": "C7AN00277G-(cit51)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "10844",
-            "DOI": "10.1021/jp510081v",
-            "volume": "119",
-            "author": "Doussineau",
-            "year": "2015",
-            "journal-title": "J. Phys. Chem. C"
-        },
-        {
-            "key": "C7AN00277G-(cit52)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "14074",
-            "DOI": "10.1021/la403516y",
-            "volume": "29",
-            "author": "Ouadah",
-            "year": "2013",
-            "journal-title": "Langmuir"
-        },
-        {
-            "key": "C7AN00277G-(cit53)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "1929",
-            "DOI": "10.1021/ja511423m",
-            "volume": "137",
-            "author": "Warren",
-            "year": "2015",
-            "journal-title": "J. Am. Chem. Soc."
-        },
-        {
-            "key": "C7AN00277G-(cit54)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "12607",
-            "DOI": "10.1021/jp064581b",
-            "volume": "110",
-            "author": "Maze",
-            "year": "2006",
-            "journal-title": "J. Phys. Chem. A"
-        },
-        {
-            "key": "C7AN00277G-(cit55)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "8431",
-            "DOI": "10.1021/ac071513s",
-            "volume": "79",
-            "author": "Mabbett",
-            "year": "2007",
-            "journal-title": "Anal. Chem."
-        },
-        {
-            "key": "C7AN00277G-(cit56)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "13352",
-            "DOI": "10.1021/jp806995h",
-            "volume": "112",
-            "author": "Zilch",
-            "year": "2008",
-            "journal-title": "J. Phys. Chem. A"
-        },
-        {
-            "key": "C7AN00277G-(cit57)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "132",
-            "DOI": "10.1002/rcm.7426",
-            "volume": "30",
-            "author": "Viod\u00e9",
-            "year": "2016",
-            "journal-title": "Rapid Commun. Mass Spectrom."
-        },
-        {
-            "key": "C7AN00277G-(cit58)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "950",
-            "DOI": "10.1021/ac102633p",
-            "volume": "83",
-            "author": "Smith",
-            "year": "2011",
-            "journal-title": "Anal. Chem."
-        },
-        {
-            "key": "C7AN00277G-(cit59)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "043301",
-            "DOI": "10.1063/1.2721408",
-            "volume": "78",
-            "author": "Gamero-casta\u00f1o",
-            "year": "2007",
-            "journal-title": "Rev. Sci. Instrum."
-        },
-        {
-            "key": "C7AN00277G-(cit60)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "053301",
-            "DOI": "10.1063/1.3128730",
-            "volume": "80",
-            "author": "Gamero-casta\u00f1o",
-            "year": "2009",
-            "journal-title": "Rev. Sci. Instrum."
-        },
-        {
-            "key": "C7AN00277G-(cit61)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "114101",
-            "DOI": "10.1063/1.4828668",
-            "volume": "84",
-            "author": "Barney",
-            "year": "2013",
-            "journal-title": "Rev. Sci. Instrum."
-        },
-        {
-            "key": "C7AN00277G-(cit62)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "4162",
-            "DOI": "10.1021/ac970163e",
-            "volume": "69",
-            "author": "Benner",
-            "year": "1997",
-            "journal-title": "Anal. Chem."
-        },
-        {
-            "key": "C7AN00277G-(cit63)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "084104",
-            "DOI": "10.1063/1.3628667",
-            "volume": "82",
-            "author": "Doussineau",
-            "year": "2011",
-            "journal-title": "Rev. Sci. Instrum."
-        },
-        {
-            "key": "C7AN00277G-(cit64)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "523",
-            "DOI": "10.1016/S0168-583X(00)00415-8",
-            "volume": "173",
-            "author": "Schmidt",
-            "year": "2001",
-            "journal-title": "Nucl. Instrum. Methods Phys. Res., Sect. B"
-        },
-        {
-            "key": "C7AN00277G-(cit65)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "153",
-            "DOI": "10.1016/j.ijms.2012.07.010",
-            "volume": "345\u2013347",
-            "author": "Contino",
-            "year": "2013",
-            "journal-title": "Int. J. Mass Spectrom."
-        },
-        {
-            "key": "C7AN00277G-(cit66)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "1213",
-            "DOI": "10.1007/s13361-015-1126-x",
-            "volume": "26",
-            "author": "Pierson",
-            "year": "2015",
-            "journal-title": "J. Am. Soc. Mass Spectrom."
-        },
-        {
-            "key": "C7AN00277G-(cit67)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "101",
-            "DOI": "10.1007/s13361-012-0525-5",
-            "volume": "24",
-            "author": "Contino",
-            "year": "2013",
-            "journal-title": "J. Am. Soc. Mass Spectrom."
-        },
-        {
-            "key": "C7AN00277G-(cit68)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "10330",
-            "DOI": "10.1021/acs.analchem.5b02324",
-            "volume": "87",
-            "author": "Keifer",
-            "year": "2015",
-            "journal-title": "Anal. Chem."
-        },
-        {
-            "key": "C7AN00277G-(cit69)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "45",
-            "DOI": "10.1016/j.ijms.2017.01.007",
-            "volume": "414",
-            "author": "Elliot",
-            "year": "2017",
-            "journal-title": "Int. J. Mass Spectrom."
-        },
-        {
-            "key": "C7AN00277G-(cit70)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "S196",
-            "DOI": "10.1002/elps.200900218",
-            "volume": "1",
-            "author": "Karger",
-            "year": "2009",
-            "journal-title": "Electrophoresis"
-        },
-        {
-            "key": "C7AN00277G-(cit71)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "2141",
-            "DOI": "10.1021/jz300844e",
-            "volume": "3",
-            "author": "Doussineau",
-            "year": "2012",
-            "journal-title": "J. Phys. Chem. Lett."
-        },
-        {
-            "key": "C7AN00277G-(cit72)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "715",
-            "DOI": "10.1038/nprot.2007.73",
+            "DOI": "10.5296/jet.v2i1.6479",
             "volume": "2",
-            "author": "Hernandez",
-            "year": "2007",
-            "journal-title": "Nat. Protoc."
+            "author": "Berson M. J.",
+            "year": "2014",
+            "journal-title": "Journal of Education and Training Studies"
         },
         {
-            "key": "C7AN00277G-(cit73)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "50",
-            "DOI": "10.1016/j.ijms.2013.01.002",
-            "volume": "337",
-            "author": "Pierson",
-            "year": "2013",
-            "journal-title": "Int. J. Mass Spectrom."
+            "key": "cit0010",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/00933104.2016.1203853"
         },
         {
-            "key": "C7AN00277G-(cit74)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "2386",
-            "DOI": "10.1002/ange.201508995",
-            "volume": "128",
-            "author": "Doussineau",
-            "year": "2016",
-            "journal-title": "Angew. Chem., Int. Ed."
+            "key": "cit0011",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/15512169.2015.1090905"
         },
         {
-            "key": "C7AN00277G-(cit75)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "172",
-            "DOI": "10.1038/nchem.945",
-            "volume": "3",
-            "author": "Bleiholder",
-            "year": "2010",
-            "journal-title": "Nat. Chem."
+            "key": "cit0012",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/15210960.2014.952300"
         },
         {
-            "key": "C7AN00277G-(cit76)/*[position()=1]",
-            "doi-asserted-by": "crossref",
+            "key": "cit0013",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3102/0002831216670510"
+        },
+        {
+            "issue": "3",
+            "key": "cit0014",
             "first-page": "45",
-            "DOI": "10.1016/S1074-5521(96)90083-6",
-            "volume": "3",
-            "author": "Siuzdak",
-            "year": "1996",
-            "journal-title": "Chem. Biol."
+            "volume": "15",
+            "author": "Buch K.",
+            "year": "2011",
+            "journal-title": "Journal of Higher Education Outreach and Engagement"
         },
         {
-            "key": "C7AN00277G-(cit77)/*[position()=1]",
+            "key": "cit0015",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3102/0091732X16686948"
+        },
+        {
+            "issue": "1",
+            "key": "cit0016",
+            "first-page": "1",
+            "volume": "16",
+            "author": "Chandler P. T.",
+            "year": "2011",
+            "journal-title": "Current Issues in Middle Level Education"
+        },
+        {
+            "key": "cit0017",
+            "first-page": "181",
+            "author": "Chant R. H.",
+            "year": "2009",
+            "journal-title": "Teacher Education Quarterly"
+        },
+        {
+            "key": "cit0018",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.childyouth.2013.09.005"
+        },
+        {
+            "issue": "4",
+            "key": "cit0019",
+            "first-page": "58",
+            "volume": "12",
+            "author": "Chenneville T.",
+            "year": "2012",
+            "journal-title": "Journal of Scholarship of Teaching and Learning"
+        },
+        {
+            "key": "cit0020",
+            "volume-title": "The Clearing House",
+            "author": "Cohen A. K.",
+            "year": "2021"
+        },
+        {
+            "key": "cit0021",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1386/ctl.13.3.351_1"
+        },
+        {
+            "issue": "2",
+            "key": "cit0022",
+            "first-page": "37",
+            "volume": "4",
+            "author": "Dabach D. B.",
+            "year": "2014",
+            "journal-title": "Journal of International Social Studies"
+        },
+        {
+            "key": "cit0023",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/15512169.2015.1063434"
+        },
+        {
+            "key": "cit0024",
+            "first-page": "32",
+            "author": "Diaz A.",
+            "year": "2010",
+            "journal-title": "Michigan Journal of Community Service Learning"
+        },
+        {
+            "key": "cit0025",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1467-8624.2011.01650.x"
+        },
+        {
+            "key": "cit0026",
+            "volume-title": "Reconfiguring citizenship: Social exclusion and diversity within inclusive citizenship practice",
+            "author": "Dominelli L.",
+            "year": "2016"
+        },
+        {
+            "key": "cit0027",
+            "first-page": "1",
+            "author": "Duffy J.",
+            "year": "2011",
+            "journal-title": "Advances in Engineering Education"
+        },
+        {
+            "key": "cit0028",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/00139157.2016.1208995"
+        },
+        {
+            "key": "cit0029",
+            "unstructured": "ECS. (2014).High school graduation requirement or credit toward graduation: Service-learning/community service. http://ecs.force.com/mbdata/mbquest3RTE?Rep=SL1301"
+        },
+        {
+            "key": "cit0030",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/15512169.2014.947419"
+        },
+        {
+            "key": "cit0031",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/13540602.2013.827364"
+        },
+        {
+            "key": "cit0032",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1353/foc.0.0043"
+        },
+        {
+            "key": "cit0033",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/15582159.2014.905397"
+        },
+        {
+            "key": "cit0034",
+            "author": "Garcia A.",
+            "year": "2019",
+            "journal-title": "American Educational Research Journal"
+        },
+        {
+            "key": "cit0035",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/1131600"
+        },
+        {
+            "key": "cit0036",
+            "volume-title": "Black youth rising: Activism and radical healing in urban America",
+            "author": "Ginwright S. A.",
+            "year": "2010"
+        },
+        {
+            "key": "cit0037",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/09540253.2015.1123227"
+        },
+        {
+            "key": "cit0038",
+            "author": "Gustafson E.",
+            "year": "2019",
+            "journal-title": "Youth & Society"
+        },
+        {
+            "issue": "2",
+            "key": "cit0039",
+            "volume": "17",
+            "author": "Hawkins L. B.",
+            "year": "2016",
+            "journal-title": "Journal of the National Collegiate Honors Council"
+        },
+        {
+            "key": "cit0040",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/00220485.2016.1213678"
+        },
+        {
+            "issue": "6",
+            "key": "cit0041",
+            "first-page": "293",
+            "volume": "78",
+            "author": "Hess D.",
+            "year": "2014",
+            "journal-title": "Social Education"
+        },
+        {
+            "key": "cit0042",
+            "first-page": "169",
+            "author": "Hester J. A.",
+            "year": "2017",
+            "journal-title": "Journal of the National Collegiate Honors Council"
+        },
+        {
+            "key": "cit0043",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0042085915574524"
+        },
+        {
+            "key": "cit0044",
+            "first-page": "14",
+            "author": "Hurtado S.",
+            "year": "2012",
+            "journal-title": "Liberal Education"
+        },
+        {
+            "key": "cit0045",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/15210960903445905"
+        },
+        {
+            "key": "cit0046",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/00933104.2014.1001106"
+        },
+        {
+            "issue": "1",
+            "key": "cit0047",
+            "first-page": "34",
+            "volume": "72",
+            "author": "Kahne J.",
+            "year": "2008",
+            "journal-title": "Social Education"
+        },
+        {
+            "key": "cit0048",
+            "author": "Kennedy H.",
+            "year": "2019",
+            "journal-title": "Journal of Adolescent Research"
+        },
+        {
+            "key": "cit0049",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.18574/nyu/9781479861316.001.0001"
+        },
+        {
+            "key": "cit0050",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1750-8606.2012.00243.x"
+        },
+        {
+            "key": "cit0051",
             "doi-asserted-by": "crossref",
-            "first-page": "258",
-            "DOI": "10.1002/cbic.200300754",
-            "volume": "5",
-            "author": "Bothner",
+            "volume-title": "Liberty: Thriving and civic engagement among America\u2019s youth",
+            "author": "Lerner R. M.",
             "year": "2004",
-            "journal-title": "ChemBioChem"
+            "DOI": "10.4135/9781452233581"
         },
         {
-            "key": "C7AN00277G-(cit78)/*[position()=1]",
+            "key": "cit0052",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.4159/harvard.9780674065291"
+        },
+        {
+            "issue": "5",
+            "key": "cit0053",
             "doi-asserted-by": "crossref",
             "first-page": "1",
-            "DOI": "10.1101/SQB.1962.027.001.005",
-            "volume": "27",
-            "author": "Caspar",
-            "year": "1962",
-            "journal-title": "Cold Spring Harbor Symp. Quant. Biol."
+            "DOI": "10.1177/016146811912100503",
+            "volume": "121",
+            "author": "Levy B. L.",
+            "year": "2019",
+            "journal-title": "Teachers College Record"
         },
         {
-            "key": "C7AN00277G-(cit79)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "59",
-            "DOI": "10.1006/jmbi.1994.1473",
-            "volume": "241",
-            "author": "Zlotnick",
-            "year": "1994",
-            "journal-title": "J. Mol. Biol."
+            "key": "cit0054",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/cdp0000429"
         },
         {
-            "key": "C7AN00277G-(cit80)/*[position()=1]",
+            "key": "cit0055",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/curi.12000"
+        },
+        {
+            "key": "cit0056",
             "doi-asserted-by": "crossref",
-            "first-page": "126",
-            "DOI": "10.1038/nchem.947",
-            "volume": "3",
-            "author": "Uetrecht",
+            "unstructured": "McAvoy, P. & McAvoy, G. (2021). Can debate and deliberation reduce partisan divisions? Evidence from a study of high school students.Peabody Journal of Education. https://doi.org/10.1080/0161956X.2021.1942706",
+            "DOI": "10.1080/0161956X.2021.1942706"
+        },
+        {
+            "key": "cit0057",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.7591/9780801471353"
+        },
+        {
+            "key": "cit0058",
+            "volume-title": "The college, career, and civic life (C3) framework for social studies state standards: Guidance for enhancing the rigor of K-12 civics, economics, geography, and history",
+            "author": "NCSS",
+            "year": "2013"
+        },
+        {
+            "key": "cit0059",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1386/ctl.9.3.241_1"
+        },
+        {
+            "issue": "5",
+            "key": "cit0060",
+            "first-page": "265",
+            "volume": "75",
+            "author": "Pope A.",
             "year": "2011",
-            "journal-title": "Nat. Chem."
+            "journal-title": "Social Education"
         },
         {
-            "key": "C7AN00277G-(cit81)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "3536",
-            "DOI": "10.1021/ja411460w",
-            "volume": "136",
-            "author": "Pierson",
-            "year": "2014",
-            "journal-title": "J. Am. Chem. Soc."
+            "key": "cit0061",
+            "first-page": "60",
+            "author": "Richard D.",
+            "year": "2017",
+            "journal-title": "Michigan Journal of Community Service Learning"
         },
         {
-            "key": "C7AN00277G-(cit82)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "e1005802",
-            "DOI": "10.1371/journal.ppat.1005802",
-            "volume": "12",
-            "author": "Chen",
-            "year": "2016",
-            "journal-title": "PLoS Pathog."
+            "key": "cit0062",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s11256-009-0146-x"
         },
         {
-            "key": "C7AN00277G-(cit83)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "14105",
-            "DOI": "10.1128/JVI.01840-14",
-            "volume": "88",
-            "author": "Kukreja",
-            "year": "2014",
-            "journal-title": "J. Virol."
+            "key": "cit0063",
+            "volume-title": "Teaching and learning in the age of Trump: Increasing stress and hostility in America\u2019s high schools",
+            "author": "Rogers J.",
+            "year": "2017"
         },
         {
-            "key": "C7AN00277G-(cit84)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "292",
-            "DOI": "10.1016/j.jmb.2015.06.019",
-            "volume": "428",
-            "author": "Pierson",
-            "year": "2016",
-            "journal-title": "J. Mol. Biol."
+            "issue": "1",
+            "key": "cit0064",
+            "first-page": "2",
+            "volume": "2",
+            "author": "Ryter D.",
+            "year": "2012",
+            "journal-title": "Journal of International Social Studies"
         },
         {
-            "key": "C7AN00277G-(cit85)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "2993",
-            "DOI": "10.1016/j.bpj.2010.02.051",
-            "volume": "98",
-            "author": "Luque",
-            "year": "2010",
-            "journal-title": "Biophys. J."
+            "key": "cit0065",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1207/S1532480XADS0604_11"
         },
         {
-            "key": "C7AN00277G-(cit86)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "6718",
-            "DOI": "10.1021/acs.analchem.6b00883",
-            "volume": "88",
-            "author": "Pierson",
-            "year": "2016",
-            "journal-title": "Anal. Chem."
+            "key": "cit0066",
+            "volume-title": "Schooling for critical consciousness: Engaging black and latinx youth in analyzing, navigating, and challenging racial injustice",
+            "author": "Seider S.",
+            "year": "2020"
         },
         {
-            "key": "C7AN00277G-(cit87)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "483",
-            "DOI": "10.1002/rcm.6809",
-            "volume": "28",
-            "author": "Keifer",
-            "year": "2014",
-            "journal-title": "Rapid Commun. Mass Spectrom."
+            "key": "cit0067",
+            "unstructured": "Shapiro, S. & Brown, C. (2018).The state of civics education. Center for American Progress. https://www.americanprogress.org/issues/education-k-12/reports/2018/02/21/446857/state-civics-education/"
         },
         {
-            "key": "C7AN00277G-(cit88)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "418",
-            "DOI": "10.1016/j.virol.2011.06.025",
-            "volume": "417",
-            "author": "Suhanovsky",
-            "year": "2011",
-            "journal-title": "Virology"
+            "key": "cit0068",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.18546/IJDEGL.9.1.05"
         },
         {
-            "key": "C7AN00277G-(cit89)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "1028",
-            "DOI": "10.1007/s13361-016-1362-8",
-            "volume": "6",
-            "author": "Keifer",
-            "year": "2016",
-            "journal-title": "J. Am. Soc. Mass Spectrom."
+            "key": "cit0069",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/10888690801997036"
         },
         {
-            "key": "C7AN00277G-(cit90)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "184",
-            "DOI": "10.1080/14786448208628425",
-            "volume": "14",
-            "author": "Rayleigh",
-            "year": "1882",
-            "journal-title": "Philos. Mag., Ser. 5"
+            "key": "cit0070",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/15427609.2015.1010350"
         },
         {
-            "key": "C7AN00277G-(cit91)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "93",
-            "DOI": "10.1016/S0003-2670(99)00601-7",
-            "volume": "406",
-            "author": "Fernandez de la Mora",
-            "year": "2000",
-            "journal-title": "Anal. Chim. Acta"
+            "key": "cit0071",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0731121414556473"
         },
         {
-            "key": "C7AN00277G-(cit92)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "368",
-            "DOI": "10.1002/mas.10081",
-            "volume": "23",
-            "author": "Heck",
-            "year": "2004",
-            "journal-title": "Mass Spectrom. Rev."
+            "key": "cit0072",
+            "unstructured": "The Center for Information and Research on Civic Learning and Engagement. (2012).New CIRCLE fact sheet describes state laws, standards, and requirements for k-12 civics. http://www.civicyouth.org/new-circle-fact-sheet-describes-state-laws-standards-and-requirements-for-k-12-civics/"
         },
         {
-            "key": "C7AN00277G-(cit93)/*[position()=1]",
-            "doi-asserted-by": "crossref",
-            "first-page": "1957",
-            "DOI": "10.1002/rcm.7673",
-            "volume": "30",
-            "author": "Keifer",
-            "year": "2016",
-            "journal-title": "Rapid Commun. Mass Spectrom."
+            "key": "cit0073",
+            "volume-title": "A crucible moment: College learning and democracy\u2019s future",
+            "author": "The National Task Force on Civic Learning and Democratic Engagement",
+            "year": "2012"
+        },
+        {
+            "key": "cit0074",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/cd.310"
+        },
+        {
+            "key": "cit0075",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/jcop.20178"
+        },
+        {
+            "key": "cit0076",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3102/00028312041002237"
+        },
+        {
+            "key": "cit0077",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/j.ctv16f6dbw"
+        },
+        {
+            "key": "cit0078",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1093/acprof:oso/9780195183177.001.0001"
         }
     ],
     "container-title": [
-        "The Analyst"
+        "Peabody Journal of Education"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "http://pubs.rsc.org/en/content/articlepdf/2017/AN/C7AN00277G",
+            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/0161956X.2021.1942703",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -1078,105 +592,91 @@
     "deposited": {
         "date-parts": [
             [
-                2024,
-                4,
-                17
+                2023,
+                1,
+                4
             ]
         ],
-        "date-time": "2024-04-17T19:51:51Z",
-        "timestamp": 1713383511000
+        "date-time": "2023-01-04T06:47:07Z",
+        "timestamp": 1672814827000
     },
-    "score": 14.159965,
+    "score": 12.629555,
     "resource": {
         "primary": {
-            "URL": "https://xlink.rsc.org/?DOI=C7AN00277G"
+            "URL": "https://www.tandfonline.com/doi/full/10.1080/0161956X.2021.1942703"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2017
+                2021,
+                5,
+                27
             ]
         ]
     },
-    "references-count": 93,
+    "references-count": 78,
     "journal-issue": {
-        "issue": "10",
+        "issue": "3",
         "published-print": {
             "date-parts": [
                 [
-                    2017
+                    2021,
+                    5,
+                    27
                 ]
             ]
         }
     },
-    "URL": "http://dx.doi.org/10.1039/c7an00277g",
+    "alternative-id": [
+        "10.1080/0161956X.2021.1942703"
+    ],
+    "URL": "http://dx.doi.org/10.1080/0161956x.2021.1942703",
     "ISSN": [
-        "0003-2654",
-        "1364-5528"
+        "0161-956X",
+        "1532-7930"
     ],
     "issn-type": [
         {
-            "value": "0003-2654",
+            "value": "0161-956X",
             "type": "print"
         },
         {
-            "value": "1364-5528",
+            "value": "1532-7930",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2017
+                2021,
+                5,
+                27
             ]
         ]
     },
     "assertion": [
         {
-            "value": "This document is Similarity Check deposited",
-            "name": "similarity_check",
-            "explanation": {
-                "URL": "https://www.crossref.org/services/similarity-check/"
-            },
-            "group": {
-                "name": "similarity_check",
-                "label": "SIMILARITY CHECK"
-            }
-        },
-        {
-            "value": "Martin F. Jarrold (ORCID)",
-            "URL": "http://orcid.org/0000-0001-7084-176X",
-            "name": "identifier",
-            "group": {
-                "name": "author_identifiers",
-                "label": "IDENTIFIERS"
-            }
-        },
-        {
-            "value": "The Royal Society of Chemistry has an exclusive publication licence for this journal",
-            "name": "copyright_licence",
-            "group": {
-                "name": "copyright_licensing",
-                "label": "COPYRIGHT AND LICENSING"
-            }
-        },
-        {
-            "value": "Single-blind",
-            "order": 2,
-            "name": "peer_review_method",
-            "group": {
-                "name": "peer_review_method",
-                "label": "PEER REVIEW METHOD"
-            }
-        },
-        {
-            "value": "Received 16 February 2017; Accepted 6 April 2017; Advance Article published 26 April 2017; Version of Record published 15 May 2017",
+            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
             "order": 1,
-            "name": "history",
+            "name": "peerreview_statement",
+            "label": "Peer Review Statement"
+        },
+        {
+            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=hpje20",
+            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=hpje20",
+            "order": 2,
+            "name": "aims_and_scope_url",
+            "label": "Aim & Scope"
+        },
+        {
+            "value": "2021-07-14",
+            "order": 3,
+            "name": "published",
+            "label": "Published",
             "group": {
                 "name": "publication_history",
-                "label": "PUBLICATION HISTORY"
+                "label": "Publication History"
             }
         }
     ]

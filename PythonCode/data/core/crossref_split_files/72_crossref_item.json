@@ -2,667 +2,358 @@
     "indexed": {
         "date-parts": [
             [
-                2024,
-                2,
-                9
+                2022,
+                4,
+                25
             ]
         ],
-        "date-time": "2024-02-09T07:52:56Z",
-        "timestamp": 1707465176565
+        "date-time": "2022-04-25T22:12:12Z",
+        "timestamp": 1650924732544
     },
-    "reference-count": 80,
-    "publisher": "Wiley",
-    "issue": "1",
-    "license": [
-        {
-            "start": {
-                "date-parts": [
-                    [
-                        2023,
-                        1,
-                        4
-                    ]
-                ],
-                "date-time": "2023-01-04T00:00:00Z",
-                "timestamp": 1672790400000
-            },
-            "content-version": "vor",
-            "delay-in-days": 3,
-            "URL": "http://creativecommons.org/licenses/by/4.0/"
-        }
-    ],
+    "reference-count": 59,
+    "publisher": "Philosophy of Education Society",
     "content-domain": {
-        "domain": [
-            "onlinelibrary.wiley.com"
-        ],
-        "crossmark-restriction": true
+        "domain": [],
+        "crossmark-restriction": false
     },
     "short-container-title": [
-        "Ecology and Evolution"
+        "PES"
     ],
-    "published-print": {
-        "date-parts": [
-            [
-                2023,
-                1
-            ]
-        ]
-    },
-    "abstract": "<jats:title>Abstract</jats:title><jats:p>Sex\u2010biased dispersal is common in many animals, with male\u2010biased dispersal often found in studies of mammals and reptiles, including interpretations of spatial genetic structure, ostensibly as a result of male\u2013male competition and a lack of male parental care. Few studies of sex\u2010biased dispersal have been conducted in turtles, but a handful of studies, in saltwater turtles and in terrestrial turtles, have detected male\u2010biased dispersal as expected. We tested for sex\u2010biased dispersal in the endangered freshwater turtle, the spotted turtle (<jats:italic>Clemmys guttata</jats:italic>) by investigating fine\u2010scale genetic spatial structure of males and females. We found significant spatial genetic structure in both sexes, but the patterns mimicked each other. Both males and females typically had higher than expected relatedness at distances &lt;25\u2009km, and in many distance classes greater than 25\u2009km, less than expected relatedness. Similar patterns were apparent whether we used only loci in Hardy\u2013Weinberg equilibrium (<jats:italic>n</jats:italic>\u00a0=\u00a07) or also included loci with potential null alleles (<jats:italic>n</jats:italic>\u00a0=\u00a05). We conclude that, contrary to expectations, sex\u2010biased dispersal is not occurring in this species, possibly related to the reverse sexual dimorphism in this species, with females having brighter colors. We did, however, detect significant spatial genetic structure in males and females, separate and combined, showing philopatry within a genetic patch size of &lt;25\u2009km in <jats:italic>C.\u00a0guttata</jats:italic>, which is concerning for an endangered species whose populations are often separated by distances greater than the genetic patch size.</jats:p>",
-    "DOI": "10.1002/ece3.9734",
+    "DOI": "10.47925/74.634",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2023,
-                1,
-                5
+                2022,
+                4,
+                25
             ]
         ],
-        "date-time": "2023-01-05T03:26:10Z",
-        "timestamp": 1672889170000
+        "date-time": "2022-04-25T21:42:30Z",
+        "timestamp": 1650922950000
     },
-    "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+    "page": "634-645",
     "source": "Crossref",
-    "is-referenced-by-count": 2,
+    "is-referenced-by-count": 0,
     "title": [
-        "(Not) far from home: No sex bias in dispersal, but limited genetic patch size, in an endangered species, the Spotted Turtle (<i>Clemmys guttata</i>)"
+        "Sweetness Follows"
     ],
-    "prefix": "10.1002",
-    "volume": "13",
+    "prefix": "10.47925",
+    "volume": "74",
     "author": [
         {
-            "ORCID": "http://orcid.org/0000-0001-6828-3172",
-            "authenticated-orcid": false,
-            "given": "Eric B.",
-            "family": "Liebgold",
+            "given": "Cristina",
+            "family": "Cammarano",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Department of Biological Sciences Salisbury University  Salisbury Maryland USA"
-                }
-            ]
-        },
-        {
-            "given": "Myra J.",
-            "family": "Dickey",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Entomology Texas A &amp; M University  College Station Texas USA"
-                }
-            ]
-        },
-        {
-            "given": "Stephanie M.",
-            "family": "Lamb",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Biological Sciences Salisbury University  Salisbury Maryland USA"
-                }
-            ]
-        },
-        {
-            "given": "Hunter J.",
-            "family": "Howell",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Biology University of Miami  Coral Gables Florida USA"
-                }
-            ]
-        },
-        {
-            "given": "Tami S.",
-            "family": "Ransom",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Environmental Studies Salisbury University  Salisbury Maryland USA"
+                    "name": "Salisbury University"
                 }
             ]
         }
     ],
-    "member": "311",
+    "member": "27497",
     "published-online": {
         "date-parts": [
             [
-                2023,
-                1,
-                4
+                2018
             ]
         ]
     },
     "reference": [
         {
-            "key": "e_1_2_9_2_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1365-294X.2012.05485.x"
-        },
-        {
-            "key": "e_1_2_9_3_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1365-294X.2004.02156.x"
-        },
-        {
-            "key": "e_1_2_9_4_1",
-            "first-page": "363",
-            "article-title": "Plumage pattern dimorphism in a shorebird exhibiting sex\u2010role reversal (Actitis macularius)",
-            "volume": "134",
-            "author": "Blizzard M.",
-            "year": "2017",
-            "journal-title": "American Ornithological Society"
-        },
-        {
-            "key": "e_1_2_9_5_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s12304-015-9249-9"
-        },
-        {
-            "key": "e_1_2_9_6_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3390/d11070099"
-        },
-        {
-            "key": "e_1_2_9_7_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/1436818"
-        },
-        {
-            "key": "e_1_2_9_8_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0022-0981(01)00365-3"
-        },
-        {
-            "key": "e_1_2_9_9_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s002270100697"
-        },
-        {
-            "key": "e_1_2_9_10_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1365-294X.2005.02486.x"
-        },
-        {
-            "key": "e_1_2_9_11_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/molbev/msl191"
-        },
-        {
-            "key": "e_1_2_9_12_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1017/S0016672399004152"
-        },
-        {
-            "key": "e_1_2_9_13_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1146/annurev.es.18.110187.001321"
-        },
-        {
-            "key": "e_1_2_9_14_1",
-            "unstructured": "CITES. (2013).Consideration of proposals for amendment of appendices I and II. Sixteenth meeting of the conference of the parties prop. 29 Bangkok Thailand.https://cites.org/sites/default/files/eng/cop/16/prop/E\u2010CoP16\u2010Prop\u201029.pdf>"
-        },
-        {
-            "key": "e_1_2_9_15_1",
-            "unstructured": "Cooch E. &White G.(2005).A gentle introduction 17th MARK edition.http://www.phidot.org/software/mark/docs/book/"
-        },
-        {
-            "key": "e_1_2_9_16_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10592-013-0540-5"
-        },
-        {
-            "key": "e_1_2_9_17_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/1755-0998.12157"
-        },
-        {
-            "key": "e_1_2_9_18_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1365-294X.2008.03859.x"
-        },
-        {
-            "key": "e_1_2_9_19_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1365-294X.2010.04539.x"
-        },
-        {
-            "key": "e_1_2_9_20_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1139/Z09-112"
-        },
-        {
-            "key": "e_1_2_9_21_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.56021/9780801891212"
-        },
-        {
-            "key": "e_1_2_9_22_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/genetics/147.4.1843"
-        },
-        {
-            "key": "e_1_2_9_23_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1371/journal.pone.0214439"
-        },
-        {
-            "key": "e_1_2_9_24_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10592-021-01365-y"
-        },
-        {
-            "key": "e_1_2_9_25_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1017/S0016672300034455"
-        },
-        {
-            "key": "e_1_2_9_26_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1046/j.1365-294X.2002.01496.x"
-        },
-        {
-            "key": "e_1_2_9_27_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0003-3472(80)80103-5"
-        },
-        {
-            "key": "e_1_2_9_28_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1534/genetics.105.046847"
-        },
-        {
-            "key": "e_1_2_9_29_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1655/HERPETOLOGICA-D-12-00017"
-        },
-        {
-            "key": "e_1_2_9_30_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1643/CH-19-177"
-        },
-        {
-            "key": "e_1_2_9_31_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1365-294X.2008.03923.x"
-        },
-        {
-            "key": "e_1_2_9_32_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1023/B:COGE.0000041021.91777.1a"
-        },
-        {
-            "key": "e_1_2_9_33_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1471-8286.2004.00845.x"
-        },
-        {
-            "key": "e_1_2_9_34_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1098/rsbl.2006.0570"
-        },
-        {
-            "key": "e_1_2_9_35_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10592-004-1854-0"
-        },
-        {
-            "key": "e_1_2_9_36_1",
-            "unstructured": "Lamb S. M.(2018).Determining population demographics and genetic structure of an endangered species the spotted turtle. Clemmys guttata on the Delmarva Peninsula(Masters' thesis) Salisbury University."
-        },
-        {
-            "key": "e_1_2_9_37_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1365-294X.2006.03152.x"
-        },
-        {
-            "key": "e_1_2_9_38_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/beheco/arl002"
-        },
-        {
-            "key": "e_1_2_9_39_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1365-294X.2010.04614.x"
-        },
-        {
-            "key": "e_1_2_9_40_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1365-294X.2006.03115.x"
-        },
-        {
-            "key": "e_1_2_9_41_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1365-294X.2010.04946.x"
-        },
-        {
-            "key": "e_1_2_9_42_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/mec.12508"
-        },
-        {
-            "key": "e_1_2_9_43_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1126/science.aan1362"
-        },
-        {
-            "key": "e_1_2_9_44_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1643/0045-8511(2006)6[281:SDILIT]2.0.CO;2"
-        },
-        {
-            "key": "e_1_2_9_45_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1670/14-027"
-        },
-        {
-            "key": "e_1_2_9_46_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10980-022-01420-0"
-        },
-        {
-            "key": "e_1_2_9_47_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1643/CE-19-206"
-        },
-        {
-            "key": "e_1_2_9_48_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1558-5646.1995.tb02253.x"
-        },
-        {
-            "key": "e_1_2_9_49_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1046/j.1095-8312.2003.00116.x"
-        },
-        {
-            "key": "e_1_2_9_50_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1471-8286.2004.00684.x"
-        },
-        {
-            "key": "e_1_2_9_51_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1046/j.1471-8286.2002.00176.x"
-        },
-        {
-            "key": "e_1_2_9_52_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1365-294X.2004.02286.x"
-        },
-        {
-            "key": "e_1_2_9_53_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/jhered/esq020"
-        },
-        {
-            "key": "e_1_2_9_54_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/1447248"
-        },
-        {
-            "key": "e_1_2_9_55_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.0014-3820.2003.tb00327.x"
-        },
-        {
-            "key": "e_1_2_9_56_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1471-8286.2005.01155.x"
-        },
-        {
-            "key": "e_1_2_9_57_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1365-294X.2009.04386.x"
-        },
-        {
-            "key": "e_1_2_9_58_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1086/303236"
-        },
-        {
-            "key": "e_1_2_9_59_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1086/303296"
-        },
-        {
-            "key": "e_1_2_9_60_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10592-004-1974-6"
-        },
-        {
-            "key": "e_1_2_9_61_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1038/sj.hdy.6800060"
-        },
-        {
-            "key": "e_1_2_9_62_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/0169-5347(87)90081-4"
-        },
-        {
-            "key": "e_1_2_9_63_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/oxfordjournals.jhered.a111573"
-        },
-        {
-            "key": "e_1_2_9_64_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/jwmg.1024"
-        },
-        {
-            "key": "e_1_2_9_65_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1442-9993.2006.01661.x"
-        },
-        {
-            "key": "e_1_2_9_66_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10592-006-9172-3"
-        },
-        {
-            "key": "e_1_2_9_67_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1471-8286.2007.01931.x"
-        },
-        {
-            "key": "e_1_2_9_68_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1163/15685381-00002847"
-        },
-        {
-            "key": "e_1_2_9_69_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.22621/cfn.v132i1.2029"
-        },
-        {
-            "key": "e_1_2_9_70_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1038/hdy.2017.26"
-        },
-        {
-            "key": "e_1_2_9_71_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1365-294X.2010.04876.x"
-        },
-        {
-            "key": "e_1_2_9_72_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1046/j.1365-2540.1999.00518.x"
-        },
-        {
-            "key": "e_1_2_9_73_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1365-294X.2008.03839.x"
-        },
-        {
-            "key": "e_1_2_9_74_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1046/j.1365-294X.2001.01253.x"
-        },
-        {
-            "key": "e_1_2_9_75_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1672/0277-5212(2003)023[0494:GIWOTU]2.0.CO;2"
-        },
-        {
-            "key": "e_1_2_9_76_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s002650050519"
-        },
-        {
-            "key": "e_1_2_9_77_1",
+            "key": "ref0",
             "doi-asserted-by": "crossref",
-            "unstructured": "Van Dijk P. P.(2011).Clemmys guttata. (errata version published in 2016) The IUCN red list of threatened species of threatened species 2011. International Union for Conservation of Nature and Natural Resources.https://doi.org/10.2305/IUCN.UK.2011\u20131.RLTS.T4968A11103766.en",
-            "DOI": "10.2305/IUCN.UK.2011-1.RLTS.T4968A11103766.en"
+            "unstructured": "1 Jan Masschelein, \u201cHow to Conceive of Critical Educational Theory Today?,\u201d Journal of Philosophy of Education 38, no. 3, 355.",
+            "DOI": "10.1111/j.0309-8249.2004.00390.x"
         },
         {
-            "key": "e_1_2_9_78_1",
-            "volume-title": "Herpetology: An introductory biology of amphibians and reptiles",
-            "author": "Vitt L.",
-            "year": "2014"
+            "key": "ref1",
+            "unstructured": "2 Ibid."
         },
         {
-            "key": "e_1_2_9_79_1",
+            "key": "ref2",
+            "unstructured": "3 Ibid."
+        },
+        {
+            "key": "ref3",
+            "unstructured": "4 Ibid."
+        },
+        {
+            "key": "ref4",
+            "unstructured": "5 Alexandra Perisic, \u201cCaribbean Philosophy and the Challenge to Neoliberal Imagination,\u201d L\u00e1piz, Proceedings from the 2015 LAPES Symposium, no. 2 (2015), 57."
+        },
+        {
+            "key": "ref5",
+            "unstructured": "6 Ibid."
+        },
+        {
+            "key": "ref6",
+            "unstructured": "7 As it happens in pedagogical situations, there may well be a chasm between what"
+        },
+        {
+            "key": "ref7",
+            "unstructured": "the instructor perceived and what happened for the students. In writing this essay"
+        },
+        {
+            "key": "ref8",
+            "unstructured": "and describing the \u201ccritical powerless student,\u201d I build an image that hopefully helps"
+        },
+        {
+            "key": "ref9",
+            "unstructured": "me understand a quandary in my own pedagogy. While I believe that my interpretation is plausible, I want to remind myself and the reader that I can claim no special"
+        },
+        {
+            "key": "ref10",
+            "unstructured": "access to the reasons why a student does or does not respond to my pedagogy in the"
+        },
+        {
+            "key": "ref11",
+            "unstructured": "way I hope for. The repetition of \u201cto seem\u201d in the above paragraph tries to express my awareness, and perhaps also a bit of frustration, at this chasm, and to also"
+        },
+        {
+            "key": "ref12",
+            "unstructured": "maintain that the inadequacy of my knowledge will still allow me to theorize more"
+        },
+        {
+            "key": "ref13",
+            "unstructured": "appropriately and in a critical manner, that is aware of its own limits."
+        },
+        {
+            "key": "ref14",
+            "unstructured": "8 Perisic, \u201cCaribbean Philosophy,\u201d 57."
+        },
+        {
+            "key": "ref15",
+            "unstructured": "9 I first learned about this very successful chain of theme-parks from an article on"
+        },
+        {
+            "key": "ref16",
+            "unstructured": "The New Yorker: Rebecca Mead, \u201cWhen I Grow Up: The theme-park chain where"
+        },
+        {
+            "key": "ref17",
+            "unstructured": "children pretend to be adults,\u201d The New Yorker, January 19, 2015."
+        },
+        {
+            "key": "ref18",
+            "unstructured": "10 Nicholas Burbules and Rupert Berk, \u201cCritical Thinking and Critical Pedagogy:"
+        },
+        {
+            "key": "ref19",
+            "unstructured": "Relations, Differences, and Limits,\u201d Theories in Education, eds. Thomas S. Popkewitz"
+        },
+        {
+            "key": "ref20",
+            "unstructured": "and Lynn Fendler (New York: Routledge, 1999), 355."
+        },
+        {
+            "key": "ref21",
+            "unstructured": "11 Luc Boltanski, On Critique: A Sociology of Emancipation (Oxford: Polity, 2011), 3."
+        },
+        {
+            "key": "ref22",
+            "unstructured": "12 Ibid., 4."
+        },
+        {
+            "key": "ref23",
+            "unstructured": "13 Reflective thinking is thinking per se John Dewey, Democracy and Education: An Introduction to the Philosophy of Education (New York: The MacMillan Company, 1916/44),"
+        },
+        {
+            "key": "ref24",
+            "unstructured": "146. It is nothing else than a \u201cbetter way of thinking\u201d compared to other ways of"
+        },
+        {
+            "key": "ref25",
+            "unstructured": "thought in which we engage, in John Dewey, How We Think. A Restatement of the Relation of Reflective Thinking to the Educative Process (Boston, New York: Houghton Mifflin"
+        },
+        {
+            "key": "ref26",
+            "unstructured": "Company, 1933/98), 3. When we say \u201cthink it out\u201d we suggest that \u201can entanglement must be straightened and something obscure cleared up\u201d through thought (6)."
+        },
+        {
+            "key": "ref27",
+            "unstructured": "Reflective thinking consists in the movement of disentanglement and bringing out"
+        },
+        {
+            "key": "ref28",
+            "unstructured": "(which, I may note, surprisingly recalls the Latin root of education, e-ducere= to lead"
+        },
+        {
+            "key": "ref29",
+            "unstructured": "out). It happens when \u201cthought implied is made explicit\u201d because reflection consists"
+        },
+        {
+            "key": "ref30",
+            "unstructured": "in the rendering explicit the \u201cintelligent element in our experience\u201d (Dewey, Democracy and Education, 146)."
+        },
+        {
+            "key": "ref31",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00063659909477239"
+            "unstructured": "14 Jan Masschelein, \u201cHow to Imagine Something Exterior to the System: Critical Education as Problematization,\u201d Educational Theory 48, no. 4 (1998): 521\u2013530. He writes:",
+            "DOI": "10.1111/j.1741-5446.1998.00521.x"
         },
         {
-            "key": "e_1_2_9_80_1",
-            "first-page": "118",
-            "article-title": "Sexual dimorphism and geographic variation in the Asian lance\u2010headed pitviper Protobothrops mucrosquamatus in the mainland China",
-            "volume": "8",
-            "author": "Zhong G.",
-            "year": "2017",
-            "journal-title": "Asian Herpetological Research"
+            "key": "ref32",
+            "unstructured": "\u201cFor me, the challenge for critical pedagogy today is to construct a critique that is"
         },
         {
-            "key": "e_1_2_9_81_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/biolinnean/blaa177"
+            "key": "ref33",
+            "unstructured": "not informed by any representation (of the possible or of the original potential)\u201d"
+        },
+        {
+            "key": "ref34",
+            "unstructured": "(525). Masschelein expresses a certain distrust towards prescriptive takes on critical"
+        },
+        {
+            "key": "ref35",
+            "unstructured": "pedagogy: the anti-capitalist mission, however worthy, makes education instrumental"
+        },
+        {
+            "key": "ref36",
+            "unstructured": "to its enactment and therefore betrays the very starting point of critique, that is, the"
+        },
+        {
+            "key": "ref37",
+            "unstructured": "idea that everything can be subject to it."
+        },
+        {
+            "key": "ref38",
+            "unstructured": "15 Boltanski, On Critique, 5."
+        },
+        {
+            "key": "ref39",
+            "unstructured": "16 Ibid., 7."
+        },
+        {
+            "key": "ref40",
+            "unstructured": "17 Ibid., 8."
+        },
+        {
+            "key": "ref41",
+            "unstructured": "18 On how this plays out for philosophers of education, see how Claudia Ruitenberg"
+        },
+        {
+            "key": "ref42",
+            "unstructured": "argues that, indeed, searching for positions of defamiliarization promotes philosophical thinking itself, in \u201cDistance and Defamiliarisation: Translation as Philosophical"
+        },
+        {
+            "key": "ref43",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Method,\u201d Journal of Philosophy of Education 43, no. 3 (2009): 421\u2013435.",
+            "DOI": "10.1111/j.1467-9752.2009.00697.x"
+        },
+        {
+            "key": "ref44",
+            "unstructured": "19 He tells how Solon the sage has traveled from Athens through Egypt and has"
+        },
+        {
+            "key": "ref45",
+            "unstructured": "arrived at the court of the king Croesus. The king greets him by saying, \u201cMy guest"
+        },
+        {
+            "key": "ref46",
+            "unstructured": "[xenos] from Athens, we have heard much about you in Sardis for your learning and"
+        },
+        {
+            "key": "ref47",
+            "unstructured": "wisdom [sophia] and for your travels [plane]. We hear that as one who loves learning"
+        },
+        {
+            "key": "ref48",
+            "unstructured": "and wisdom [hos philosopheon] you have journeyed the earth, for the sake of seeing"
+        },
+        {
+            "key": "ref49",
+            "unstructured": "it [theoria]. So now I want to ask you who is the happiest man you have ever come"
+        },
+        {
+            "key": "ref50",
+            "unstructured": "across\u201d (Herodotus, The Histories, I.30.2)."
+        },
+        {
+            "key": "ref51",
+            "unstructured": "20 Silvia Montiglio, Wandering in Ancient Greek Culture (Chicago: The University of"
+        },
+        {
+            "key": "ref52",
+            "unstructured": "Chicago Press, 2005)."
+        },
+        {
+            "key": "ref53",
+            "unstructured": "21 Ibid., 131."
+        },
+        {
+            "key": "ref54",
+            "unstructured": "22 Megan Laverty \u201c\u2018There is No Substitute for a Sense of Reality\u2019: Humanizing the"
+        },
+        {
+            "key": "ref55",
+            "unstructured": "Humanities,\u201d Educational Theory 65, no. 6 (2015), 649."
+        },
+        {
+            "key": "ref56",
+            "unstructured": "23 Boltanski, On Critique, 8."
+        },
+        {
+            "key": "ref57",
+            "unstructured": "24 The reference, here and in the title, is to the R.E.M. song \u201cSweetness Follows\u201d"
+        },
+        {
+            "key": "ref58",
+            "unstructured": "(track six, Automatic for the People, Warner Bros Records, 1992, album)."
         }
     ],
     "container-title": [
-        "Ecology and Evolution"
+        "Philosophy of Education"
     ],
     "language": "en",
-    "link": [
-        {
-            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/ece3.9734",
-            "content-type": "application/pdf",
-            "content-version": "vor",
-            "intended-application": "text-mining"
-        },
-        {
-            "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/ece3.9734",
-            "content-type": "application/xml",
-            "content-version": "vor",
-            "intended-application": "text-mining"
-        },
-        {
-            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/ece3.9734",
-            "content-type": "unspecified",
-            "content-version": "vor",
-            "intended-application": "similarity-checking"
-        }
-    ],
     "deposited": {
         "date-parts": [
             [
-                2023,
-                8,
-                19
+                2022,
+                4,
+                25
             ]
         ],
-        "date-time": "2023-08-19T16:49:21Z",
-        "timestamp": 1692463761000
+        "date-time": "2022-04-25T21:42:42Z",
+        "timestamp": 1650922962000
     },
-    "score": 16.48766,
+    "score": 14.465688,
     "resource": {
         "primary": {
-            "URL": "https://onlinelibrary.wiley.com/doi/10.1002/ece3.9734"
+            "URL": "https://www.philofed.org/_files/ugd/803b74_5a9ddd90f1214b3b81a7ea79c7379692.pdf?index=true"
         }
     },
+    "subtitle": [
+        "Notes on the Pedagogy of Critique in a Philosophy of Education Course"
+    ],
     "issued": {
         "date-parts": [
             [
-                2023,
-                1
+                2018
             ]
         ]
     },
-    "references-count": 80,
-    "journal-issue": {
-        "issue": "1",
-        "published-print": {
-            "date-parts": [
-                [
-                    2023,
-                    1
-                ]
-            ]
-        }
-    },
-    "alternative-id": [
-        "10.1002/ece3.9734"
-    ],
-    "URL": "http://dx.doi.org/10.1002/ece3.9734",
+    "references-count": 59,
+    "URL": "http://dx.doi.org/10.47925/74.634",
     "archive": [
-        "Portico"
+        "Internet Archive"
     ],
     "ISSN": [
-        "2045-7758",
-        "2045-7758"
+        "2771-9618"
     ],
     "issn-type": [
         {
-            "value": "2045-7758",
-            "type": "print"
-        },
-        {
-            "value": "2045-7758",
+            "value": "2771-9618",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2023,
-                1
+                2018
             ]
         ]
-    },
-    "assertion": [
-        {
-            "value": "2021-10-22",
-            "order": 0,
-            "name": "received",
-            "label": "Received",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2022-12-22",
-            "order": 1,
-            "name": "accepted",
-            "label": "Accepted",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2023-01-04",
-            "order": 2,
-            "name": "published",
-            "label": "Published",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        }
-    ]
+    }
 }

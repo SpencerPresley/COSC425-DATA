@@ -2,72 +2,100 @@
     "indexed": {
         "date-parts": [
             [
-                2023,
-                9,
-                20
+                2024,
+                2,
+                26
             ]
         ],
-        "date-time": "2023-09-20T11:43:08Z",
-        "timestamp": 1695210188591
+        "date-time": "2024-02-26T08:41:02Z",
+        "timestamp": 1708936862318
     },
     "reference-count": 0,
-    "publisher": "Louisiana State University Libraries",
-    "issue": "1",
+    "publisher": "Ovid Technologies (Wolters Kluwer Health)",
+    "issue": "8S",
     "content-domain": {
         "domain": [],
         "crossmark-restriction": false
     },
-    "short-container-title": [
-        "cwbr"
-    ],
-    "DOI": "10.31390/cwbr.22.1.20",
+    "published-print": {
+        "date-parts": [
+            [
+                2021,
+                8
+            ]
+        ]
+    },
+    "DOI": "10.1249/01.mss.0000759368.70965.fb",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2020,
-                3,
-                13
+                2021,
+                7,
+                12
             ]
         ],
-        "date-time": "2020-03-13T16:31:49Z",
-        "timestamp": 1584117109000
+        "date-time": "2021-07-12T09:01:51Z",
+        "timestamp": 1626080511000
     },
+    "page": "28-28",
     "source": "Crossref",
     "is-referenced-by-count": 0,
     "title": [
-        "France and the American Civil War, A Diplomatic History"
+        "COMPARISON OF SPRINT INTERVAL TRAINING AND MODERATE INTENSITY CONTINUOUS TRAINING TO MAXIMIZE NEUROMUSCULAR ADAPTATIONS"
     ],
-    "prefix": "10.31390",
-    "volume": "22",
+    "prefix": "10.1249",
+    "volume": "53",
     "author": [
         {
-            "given": "Bart",
-            "family": "Talbert",
+            "given": "Masoud",
+            "family": "Moghaddam",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Salisbury University"
+                    "name": "Salisbury University, Salisbury, MD."
+                }
+            ]
+        },
+        {
+            "given": "Carlos A.",
+            "family": "Estrada",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Aurora University, Aurora, IL."
+                }
+            ]
+        },
+        {
+            "given": "Tyler W.D.",
+            "family": "Muddle",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "3Mississippi University for Women, Columbus, MS."
+                }
+            ]
+        },
+        {
+            "given": "Bert H.",
+            "family": "Jacobson",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Oklahoma State University, Stillwater, OK."
                 }
             ]
         }
     ],
-    "member": "16314",
-    "published-online": {
-        "date-parts": [
-            [
-                2020,
-                1,
-                1
-            ]
-        ]
-    },
+    "member": "276",
     "container-title": [
-        "Civil War Book Review"
+        "Medicine &amp; Science in Sports &amp; Exercise"
     ],
+    "language": "en",
     "link": [
         {
-            "URL": "https://digitalcommons.lsu.edu/cgi/viewcontent.cgi?article=3515&amp;context=cwbr&amp;unstamped=1",
+            "URL": "https://journals.lww.com/10.1249/01.mss.0000759368.70965.fb",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -76,58 +104,62 @@
     "deposited": {
         "date-parts": [
             [
-                2023,
-                9,
-                19
+                2024,
+                2,
+                26
             ]
         ],
-        "date-time": "2023-09-19T22:00:18Z",
-        "timestamp": 1695160818000
+        "date-time": "2024-02-26T08:07:02Z",
+        "timestamp": 1708934822000
     },
-    "score": 14.43837,
+    "score": 14.973116,
     "resource": {
         "primary": {
-            "URL": "https://repository.lsu.edu/cwbr/vol22/iss1/20"
+            "URL": "https://journals.lww.com/10.1249/01.mss.0000759368.70965.fb"
         }
     },
+    "subtitle": [
+        "89"
+    ],
     "issued": {
         "date-parts": [
             [
-                2020,
-                1,
-                1
+                2021,
+                8
             ]
         ]
     },
     "references-count": 0,
     "journal-issue": {
-        "issue": "1",
-        "published-online": {
+        "issue": "8S",
+        "published-print": {
             "date-parts": [
                 [
-                    2020,
-                    1,
-                    1
+                    2021
                 ]
             ]
         }
     },
-    "URL": "http://dx.doi.org/10.31390/cwbr.22.1.20",
+    "URL": "http://dx.doi.org/10.1249/01.mss.0000759368.70965.fb",
     "ISSN": [
-        "1528-6592"
+        "1530-0315",
+        "0195-9131"
     ],
     "issn-type": [
         {
-            "value": "1528-6592",
+            "value": "1530-0315",
             "type": "electronic"
+        },
+        {
+            "value": "0195-9131",
+            "type": "print"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2020,
-                1,
-                1
+                2021,
+                8
             ]
         ]
     }

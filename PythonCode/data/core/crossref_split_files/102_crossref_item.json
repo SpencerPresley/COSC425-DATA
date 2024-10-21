@@ -2,176 +2,194 @@
     "indexed": {
         "date-parts": [
             [
-                2023,
-                12,
-                12
+                2024,
+                7,
+                16
             ]
         ],
-        "date-time": "2023-12-12T00:29:52Z",
-        "timestamp": 1702340992875
+        "date-time": "2024-07-16T03:40:21Z",
+        "timestamp": 1721101221086
     },
-    "reference-count": 0,
-    "publisher": "Wiley",
-    "issue": "S1",
-    "license": [
-        {
-            "start": {
-                "date-parts": [
-                    [
-                        2022,
-                        5,
-                        13
-                    ]
-                ],
-                "date-time": "2022-05-13T00:00:00Z",
-                "timestamp": 1652400000000
-            },
-            "content-version": "vor",
-            "delay-in-days": 12,
-            "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
-        }
-    ],
+    "reference-count": 11,
+    "publisher": "Coleopterists Society",
+    "issue": "1",
     "content-domain": {
-        "domain": [
-            "faseb.onlinelibrary.wiley.com"
-        ],
-        "crossmark-restriction": true
+        "domain": [],
+        "crossmark-restriction": false
     },
     "short-container-title": [
-        "The FASEB Journal"
+        "The Coleopterists Bulletin"
     ],
     "published-print": {
         "date-parts": [
             [
-                2022,
-                5
+                2019,
+                3,
+                25
             ]
         ]
     },
-    "abstract": "<jats:p>Diabetic peripheral neuropathy (DPN) results in degenerating peripheral nerves and affects over 50% of people with diabetes. Despite its high prevalence, DPN\u2019s molecular pathways remain unknown, limiting treatment to pain management. The Clark lab has characterized two novel models of hyperglycemia in zebrafish in which DPN\u2010like phenotypes are recapitulated, including demyelination. In an attempt to elucidate the unknown molecular mechanisms of DPN, candidate small molecule drugs are currently being tested to accentuate or attenuate neurodegeneration. Lavendustin\u2010A, an EGFR tyrosine kinase inhibitor (TKI), was hypothesized to have a neuroprotective role, as overactivation of EGFR in hyperglycemic environments is associated with fibrosis and the inhibition of regeneration in various tissue types. <jats:italic>Tg(mbp:gfpcaax)</jats:italic> larval zebrafish were incubated in egg water (control 1) or 120mM glucose solution (control 2 and treatment) starting five days post\u2010fertilization (dpf) until 10dpf. From 10\u201012dpf, control 1 remained in egg water + 1% DMSO, control 2 remained in glucose solution + 1% DMSO, and the treatment group remained in glucose solution + 1% DMSO + 65.5\u00b5M Lavendustin\u2010A. 12dpf, lateral images of myelinated (MBP<jats:sup>+</jats:sup>) peripheral motor nerves were taken on an EVOS imaging system. Fiji (NIH) software was used to measure the length and fluorescent intensity of the myelinated nerves. Both nerve length (*<jats:italic>p=</jats:italic>0.025) and MBP fluorescent intensity (**<jats:italic>p</jats:italic>=0.0013) were significantly greater in the treatment group compared to the hyperglycemic fish (control 2), and no significant difference was observed between the treatment group and control 1. To determine if function was impacted, a touch\u2010response assay was conducted before (10dpf) and after (12dpf) drug treatment. Escape response was significantly impaired in hyperglycemic fish (treatment and control 2) at 10dpf (**<jats:italic>*p</jats:italic>=0.0007) and significantly improved in the treatment group by 12dpf (***<jats:italic>p</jats:italic>=0.0003), yet did not fully recover, as there was still a significant difference between the treatment group and control 1 (**<jats:italic>p</jats:italic>=0.0017). Our data suggests a possible role of EGFR in hyperglycemia\u2010induced neurodegeneration, getting us one step closer to identifying potential therapeutics for clinical application.</jats:p>",
-    "DOI": "10.1096/fasebj.2022.36.s1.r3213",
+    "DOI": "10.1649/0010-065x-73.1.200",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2022,
-                5,
-                3
+                2019,
+                3,
+                25
             ]
         ],
-        "date-time": "2022-05-03T08:29:59Z",
-        "timestamp": 1651566599000
+        "date-time": "2019-03-25T10:54:00Z",
+        "timestamp": 1553511240000
     },
-    "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+    "page": "200",
     "source": "Crossref",
     "is-referenced-by-count": 0,
     "title": [
-        "The Effects of Lavendustin\u2010A on Peripheral Nerve Degeneration in Hyperglycemic <i>Danio rerio</i>"
+        "New State Record for Deltochilum gibbosum (Fabricius) (Coleoptera: Scarabaeidae) in Maryland, Usa"
     ],
-    "prefix": "10.1096",
-    "volume": "36",
+    "prefix": "10.1649",
+    "volume": "73",
     "author": [
         {
-            "given": "Madison",
-            "family": "MacDougall",
+            "given": "Patrick",
+            "family": "Simons",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Salisbury University Salisbury MD"
+                    "name": "Department of Biological Sciences Salisbury University, Salisbury, MD 21801, USA patricksimons16@gmail.com, dlprice@salisbury.edu"
+                }
+            ]
+        },
+        {
+            "given": "Dana L.",
+            "family": "Price",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Biological Sciences Salisbury University, Salisbury, MD 21801, USA patricksimons16@gmail.com, dlprice@salisbury.edu"
                 }
             ]
         }
     ],
-    "member": "311",
-    "published-online": {
-        "date-parts": [
-            [
-                2022,
-                5,
-                13
-            ]
-        ]
-    },
-    "container-title": [
-        "The FASEB Journal"
+    "member": "1224",
+    "reference": [
+        {
+            "key": "1",
+            "unstructured": "R. J. Barney, \"The Coleopterists Bulletin.\" 34, \"First report of Deltochilum gibbosum gibbosum (F.) in Illinois (Coleoptera: Scarabaeidae).\" 84 (1980)"
+        },
+        {
+            "key": "2",
+            "doi-asserted-by": "crossref",
+            "unstructured": "A. Evans, \"Beetles of Eastern North America.\" , (2014)",
+            "DOI": "10.1515/9781400851829"
+        },
+        {
+            "key": "3",
+            "doi-asserted-by": "crossref",
+            "unstructured": "J. G. Fiene, M. B. Connior, R. Androw, et al. \"The American Midland Naturalist.\" 165, \"Surveys of Arkansas dung beetles (Coleoptera: Scarabaeidae and Geotrupidae): Phenologies, mass occurrences, state and distributional records.\" 319 (2010)",
+            "DOI": "10.1674/0003-0031-165.2.319"
+        },
+        {
+            "key": "4",
+            "doi-asserted-by": "crossref",
+            "unstructured": "F. G\u00e9nier, \"Zootaxa.\" 3357, \"A new species and notes on the subgenus Deltochilum (Deltochilum) Eschscholtz, 1822 (Coleoptera: Scarabaeinae: Deltochilini).\" 25 (2012)",
+            "DOI": "10.11646/zootaxa.3357.1.2"
+        },
+        {
+            "key": "5",
+            "doi-asserted-by": "crossref",
+            "unstructured": "A. Gonz\u00e1lez-Alvarado and F. Z. Vaz-de-Mello \"Annales de la Soci\u00e9t\u00e9 entomologique de France (N.S.).\" 50, \"Taxonomic review of the subgenus Hybomidium Shipp 1897 (Coleoptera: Scarabaeidae: Scarabaeinae: Deltochilum).\" 431 (2015)",
+            "DOI": "10.1080/00379271.2014.989178"
+        },
+        {
+            "key": "6",
+            "unstructured": "P. J. Harpootlian, \"Scarab Beetles (Coleoptera: Scarabaeidae) of South Carolina.\" , (2001)"
+        },
+        {
+            "key": "7",
+            "doi-asserted-by": "crossref",
+            "unstructured": "H. F. Howden and P. O. Ritcher \"The Coleopterists Bulletin.\" 6, \"Biology of Deltochilum gibbosum (Fab.) with a description of the larva.\" 53 (1952)",
+            "DOI": "10.5962/p.372147"
+        },
+        {
+            "key": "8",
+            "unstructured": "et al. \"aspx (accessed 16 June 2018).\" , \"Maryland State Park History. Maryland Department of Natural Resources. dnr.maryland.gov/publiclands/ Pages/southern/pointlookout.\" (2018)"
+        },
+        {
+            "key": "9",
+            "doi-asserted-by": "crossref",
+            "unstructured": "A. Masis and R. J. Marquis \"Forest Ecology and Management.\" 257, \"Effects of even-aged and uneven-aged timber management on dung beetle community attributes in a Missouri Ozark forest.\" 536 (2009)",
+            "DOI": "10.1016/j.foreco.2008.09.036"
+        },
+        {
+            "key": "10",
+            "unstructured": "E. Wilson, \"Fiscal Year 2016 DNR Owned Lands Acreage. Maryland Department of Natural Resources. dnr.maryland.gov/land/Documents/ Stewardship/CurrentAcreageReport.pdf (accessed 16 June 2018).\" , (2016)"
+        },
+        {
+            "key": "11",
+            "unstructured": "R. E. Woodruff, \"The Scarab Beetles of Florida (Coleoptera: Scarabaeidae) Part I. The Laparosticti (Subfamilies: Scarabaeinae, Aphodiinae, Hybosorinae, Ochodaeinae, Geotrupinae, Acanthocerinae).\" , (1973)"
+        }
     ],
-    "language": "en",
+    "container-title": [
+        "The Coleopterists Bulletin"
+    ],
     "deposited": {
         "date-parts": [
             [
-                2023,
-                12,
-                11
+                2024,
+                7,
+                16
             ]
         ],
-        "date-time": "2023-12-11T10:11:41Z",
-        "timestamp": 1702289501000
+        "date-time": "2024-07-16T03:19:39Z",
+        "timestamp": 1721099979000
     },
-    "score": 16.182083,
+    "score": 16.222466,
     "resource": {
         "primary": {
-            "URL": "https://faseb.onlinelibrary.wiley.com/doi/10.1096/fasebj.2022.36.S1.R3213"
+            "URL": "https://bioone.org/journals/the-coleopterists-bulletin/volume-73/issue-1/0010-065X-73.1.200/New-State-Record-for-Deltochilum-gibbosum-Fabricius-Coleoptera--Scarabaeidae/10.1649/0010-065X-73.1.200.full"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2022,
-                5
+                2019,
+                3,
+                25
             ]
         ]
     },
-    "references-count": 0,
+    "references-count": 11,
     "journal-issue": {
-        "issue": "S1",
-        "published-print": {
+        "issue": "1",
+        "published-online": {
             "date-parts": [
                 [
-                    2022,
-                    5
+                    2019,
+                    3,
+                    1
                 ]
             ]
         }
     },
-    "alternative-id": [
-        "10.1096/fasebj.2022.36.S1.R3213"
-    ],
-    "URL": "http://dx.doi.org/10.1096/fasebj.2022.36.s1.r3213",
-    "archive": [
-        "Portico"
-    ],
+    "URL": "http://dx.doi.org/10.1649/0010-065x-73.1.200",
     "ISSN": [
-        "0892-6638",
-        "1530-6860"
+        "0010-065X"
     ],
     "issn-type": [
         {
-            "value": "0892-6638",
+            "value": "0010-065X",
             "type": "print"
-        },
-        {
-            "value": "1530-6860",
-            "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2022,
-                5
+                2019,
+                3,
+                25
             ]
         ]
-    },
-    "assertion": [
-        {
-            "value": "2022-05-13",
-            "order": 2,
-            "name": "published",
-            "label": "Published",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        }
-    ]
+    }
 }

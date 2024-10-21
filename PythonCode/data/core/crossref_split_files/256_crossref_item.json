@@ -2,171 +2,184 @@
     "indexed": {
         "date-parts": [
             [
-                2023,
-                12,
-                12
+                2022,
+                4,
+                5
             ]
         ],
-        "date-time": "2023-12-12T00:29:02Z",
-        "timestamp": 1702340942892
+        "date-time": "2022-04-05T05:31:08Z",
+        "timestamp": 1649136668081
     },
-    "reference-count": 0,
-    "publisher": "Wiley",
-    "issue": "S1",
-    "license": [
-        {
-            "start": {
-                "date-parts": [
-                    [
-                        2020,
-                        4,
-                        19
-                    ]
-                ],
-                "date-time": "2020-04-19T00:00:00Z",
-                "timestamp": 1587254400000
-            },
-            "content-version": "vor",
-            "delay-in-days": 18,
-            "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
-        }
-    ],
+    "reference-count": 1,
+    "publisher": "Informa UK Limited",
+    "issue": "4",
     "content-domain": {
         "domain": [
-            "faseb.onlinelibrary.wiley.com"
+            "www.tandfonline.com"
         ],
         "crossmark-restriction": true
     },
     "short-container-title": [
-        "The FASEB Journal"
+        "Popular Communication"
     ],
     "published-print": {
         "date-parts": [
             [
-                2020,
-                4
+                2021,
+                10,
+                2
             ]
         ]
     },
-    "abstract": "<jats:p>L\u2010Ascorbate, commonly known as Vitamin C, is a naturally abundant carbon source produced in high quantities by plants. The involvement of L\u2010ascorbate as an antioxidant in processes within the body systems of mammals is well studied, yet L\u2010ascorbate can also function as a carbon source for some bacterial species. <jats:italic>Ralstonia eutropha</jats:italic> H16 (<jats:italic>Cupriavidus necator</jats:italic> H16) is a soil bacterium that stores excess carbon in bioplastic granules and catabolizes L\u2010ascorbate via a previously unknown metabolic pathway. Transcripts for eight genes were upregulated &gt;50\u2010fold in <jats:italic>R. eutropha</jats:italic> cells grown with L\u2010ascorbate compared to fructose or succinate. Three encode homologs of enzymes in L\u2010lyxonate catabolism to \u03b1\u2010ketoglutarate. Based on annotated functions of the five remaining enzymes, a predicated pathway was hypothesized to generate a\u2010ketoglutarate from L\u2010ascorbate. Enzymes not homologous to the L\u2010lyxonate pathway enzymes were purified and characterized <jats:italic>in vitro</jats:italic> by collaborators. Mutant <jats:italic>R. eutropha</jats:italic> strains were generated, each lacking one of the eight genes, and displayed significant growth defects when grown with L\u2010ascorbate. Support for a novel pathway for L\u2010ascorbate catabolism increases our knowledge of related enzyme functions and the involvement of L\u2010ascorbate in the carbon cycle.</jats:p>",
-    "DOI": "10.1096/fasebj.2020.34.s1.07042",
+    "DOI": "10.1080/15405702.2021.1939876",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2020,
-                4,
-                19
+                2021,
+                7,
+                16
             ]
         ],
-        "date-time": "2020-04-19T21:27:37Z",
-        "timestamp": 1587331657000
+        "date-time": "2021-07-16T13:43:55Z",
+        "timestamp": 1626443035000
     },
-    "page": "1-1",
-    "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+    "page": "321-324",
+    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
     "source": "Crossref",
     "is-referenced-by-count": 0,
     "title": [
-        "Characterizing a Novel L\u2010Ascorbate Metabolic Pathway in Bacteria"
+        "Extraordinarily ordinary: Us Weekly and the rise of reality television celebrity"
     ],
-    "prefix": "10.1096",
-    "volume": "34",
+    "prefix": "10.1080",
+    "volume": "19",
     "author": [
         {
-            "given": "Madison Danielle",
-            "family": "Jermain",
+            "given": "Shannon E. M.",
+            "family": "O\u2019Sullivan",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Salisbury University"
+                    "name": "Communication, Salisbury University, Salisbury, Maryland, USA"
                 }
             ]
         }
     ],
-    "member": "311",
+    "member": "301",
     "published-online": {
         "date-parts": [
             [
-                2020,
-                4,
-                19
+                2021,
+                7,
+                16
             ]
         ]
     },
+    "reference": [
+        {
+            "key": "cit0001",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/19392397.2010.511133"
+        }
+    ],
     "container-title": [
-        "The FASEB Journal"
+        "Popular Communication"
     ],
     "language": "en",
+    "link": [
+        {
+            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/15405702.2021.1939876",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+        }
+    ],
     "deposited": {
         "date-parts": [
             [
-                2023,
-                12,
-                11
+                2021,
+                9,
+                29
             ]
         ],
-        "date-time": "2023-12-11T11:39:06Z",
-        "timestamp": 1702294746000
+        "date-time": "2021-09-29T08:18:25Z",
+        "timestamp": 1632903505000
     },
-    "score": 14.4515,
+    "score": 15.993384,
     "resource": {
         "primary": {
-            "URL": "https://faseb.onlinelibrary.wiley.com/doi/10.1096/fasebj.2020.34.s1.07042"
+            "URL": "https://www.tandfonline.com/doi/full/10.1080/15405702.2021.1939876"
         }
     },
+    "subtitle": [
+        "by Erin A. Meyers, New Brunswick, Camden, and Newark, NJ and London, Rutgers University Press, 2020, 144 pp., US List: $27.95 (paperback), ISBN 9780813599427"
+    ],
     "issued": {
         "date-parts": [
             [
-                2020,
-                4
+                2021,
+                7,
+                16
             ]
         ]
     },
-    "references-count": 0,
+    "references-count": 1,
     "journal-issue": {
-        "issue": "S1",
+        "issue": "4",
         "published-print": {
             "date-parts": [
                 [
-                    2020,
-                    4
+                    2021,
+                    10,
+                    2
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1096/fasebj.2020.34.s1.07042"
+        "10.1080/15405702.2021.1939876"
     ],
-    "URL": "http://dx.doi.org/10.1096/fasebj.2020.34.s1.07042",
-    "archive": [
-        "Portico"
-    ],
+    "URL": "http://dx.doi.org/10.1080/15405702.2021.1939876",
     "ISSN": [
-        "0892-6638",
-        "1530-6860"
+        "1540-5702",
+        "1540-5710"
     ],
     "issn-type": [
         {
-            "value": "0892-6638",
+            "value": "1540-5702",
             "type": "print"
         },
         {
-            "value": "1530-6860",
+            "value": "1540-5710",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2020,
-                4
+                2021,
+                7,
+                16
             ]
         ]
     },
     "assertion": [
         {
-            "value": "2020-04-19",
+            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
+            "order": 1,
+            "name": "peerreview_statement",
+            "label": "Peer Review Statement"
+        },
+        {
+            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=hppc20",
+            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=hppc20",
             "order": 2,
+            "name": "aims_and_scope_url",
+            "label": "Aim & Scope"
+        },
+        {
+            "value": "2021-07-16",
+            "order": 3,
             "name": "published",
             "label": "Published",
             "group": {

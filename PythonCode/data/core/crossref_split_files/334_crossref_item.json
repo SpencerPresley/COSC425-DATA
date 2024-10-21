@@ -2,291 +2,197 @@
     "indexed": {
         "date-parts": [
             [
-                2022,
-                4,
-                1
+                2023,
+                11,
+                21
             ]
         ],
-        "date-time": "2022-04-01T19:37:15Z",
-        "timestamp": 1648841835430
+        "date-time": "2023-11-21T00:21:06Z",
+        "timestamp": 1700526066338
     },
-    "reference-count": 39,
-    "publisher": "IGI Global",
+    "reference-count": 16,
+    "publisher": "World Scientific Pub Co Pte Ltd",
+    "issue": "02",
     "content-domain": {
         "domain": [],
         "crossmark-restriction": false
     },
+    "short-container-title": [
+        "Rev. Pac. Basin Finan. Mark. Pol."
+    ],
     "published-print": {
         "date-parts": [
             [
-                2019
+                2022,
+                6
             ]
         ]
     },
-    "abstract": "<jats:p>With China becoming an economic powerhouse, there has been increasing need for more studies on issues related to information systems localization in China and ways to solve them. Most information systems adoption literatures have been conducted in the context of Western society, especially in America, and due to differences in the cultural, social, and legal environment, these theories and findings out of these studies need to be tested in the context of Chinese culture. This chapter adopts the technology, organization, and environment framework to explain why a Chinese apparel manufacturing company failed in its first enterprise resource planning (ERP) project, and how it achieved success in the second project with government's assistance and what they have learned from their first experience with ERP. This study provides insight on the characteristics of Chinese companies and the unique challenges they have encountered in the informatization process. </jats:p>",
-    "DOI": "10.4018/978-1-5225-7214-5.ch008",
-    "type": "book-chapter",
+    "abstract": "<jats:p>This paper investigates the impact of state ownership on the efficiency-equality tradeoff in a mixed economy with both state and nonstate sectors. Using overall capital productivity as an efficiency proxy and state output share as an inequality proxy, we identify the efficiency threshold of state capital share that splits the efficiency-equality relationship between a tradeoff and nontradeoff. When state capital share is greater than the threshold (as evidenced in the case of China), lowering state capital share improves efficiency and reduces inequality. Furthermore, our simulation results suggest that the threshold is sensitive to capital shares in output of the both sectors. A broad scope for mutual gains in efficiency and\u00a0equality exists by raising the capital share in nonstate output and lowering the capital share in state output.</jats:p>",
+    "DOI": "10.1142/s0219091522500151",
+    "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2018,
-                8,
-                8
+                2022,
+                4,
+                22
             ]
         ],
-        "date-time": "2018-08-08T16:23:50Z",
-        "timestamp": 1533745430000
+        "date-time": "2022-04-22T14:24:55Z",
+        "timestamp": 1650637495000
     },
-    "page": "162-178",
     "source": "Crossref",
     "is-referenced-by-count": 0,
     "title": [
-        "A Tale of Two Systems"
+        "An Analysis of State Capital Share and Its Implications to the Efficiency-Equality Nexus"
     ],
-    "prefix": "10.4018",
+    "prefix": "10.1142",
+    "volume": "25",
     "author": [
         {
-            "given": "Wendy",
-            "family": "Wang",
+            "ORCID": "http://orcid.org/0000-0001-5079-0168",
+            "authenticated-orcid": false,
+            "given": "Ying",
+            "family": "Wu",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Trident University International, USA"
+                    "name": "Department of Economics and Finance, Franklin P. Perdue School of Business (AACSB Accreditation), Salisbury University, Salisbury, MD 21801-6860, USA"
                 }
             ]
         },
         {
-            "given": "Yun",
-            "family": "Wu",
+            "given": "Hong",
+            "family": "Yao",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Salisbury University, USA"
+                    "name": "Department of Economics and Finance, Salisbury University, Salisbury, MD 21801-6860, USA"
                 }
             ]
         }
     ],
-    "member": "2432",
+    "member": "219",
+    "published-online": {
+        "date-parts": [
+            [
+                2022,
+                7,
+                4
+            ]
+        ]
+    },
     "reference": [
         {
-            "key": "978-1-5225-7214-5.ch008.-1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.4018/jeis.2007070105"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch008.-2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.im.2007.05.004"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch008.-3",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.4018/jeis.2009070101"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch008.-4",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/249403"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch008.-5",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10196780701296287"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch008.-6",
-            "unstructured": "Campbell, R. R. (2013). Becoming a Techno-Industrial Power: Chinese Science and Technology Policy. Issues in Technology Innovation, 23, 1-15. Retrieved from https://www.brookings.edu/wpcontent/uploads/2016/06/29-science-technology-policy-china-campbell.pdf"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch008.-7",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.4018/jeis.2011070104"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch008.-8",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1108/09574091211265350"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch008.-9",
-            "author": "H.Chan",
-            "year": "2016",
-            "journal-title": "China Internet and Software: All eyes on cloud and internet finance"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch008.-10",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1287/isre.3.1.60"
+            "issue": "2",
+            "key": "S0219091522500151BIB001",
+            "first-page": "391",
+            "volume": "72",
+            "author": "Andersen TM",
+            "year": "2020",
+            "journal-title": "Oxford Economic Papers"
         },
         {
             "issue": "3",
-            "key": "978-1-5225-7214-5.ch008.-11",
-            "first-page": "68",
-            "article-title": "An Analysis of Interdepartmental Relations in Enterprise Resource Planning Implementation: A Social Capital Perspective.",
-            "volume": "11",
-            "author": "E.Ebru",
-            "year": "2015",
-            "journal-title": "International Journal of Enterprise Information Systems"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch008.-12",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.im.2015.06.009"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch008.-13",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.4018/jeis.2005100102"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch008.-14",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.chb.2016.10.022"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch008.-15",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/17517570903040196"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch008.-16",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.ijinfomgt.2017.03.002"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch008.-17",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.4018/jeis.2006070103"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch008.-18",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.im.2011.01.003"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch008.-19",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.ijinfomgt.2015.06.004"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch008.-20",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.4018/jeis.2013070104"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch008.-21",
-            "first-page": "173",
-            "article-title": "The Enterprise System Experience \u2013 From Adoption to Success",
-            "author": "M. L.Markus",
-            "year": "2000",
-            "journal-title": "Framing the Domains of IT Research: Glimpsing the Future Through the Past"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch008.-22",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.4018/jeis.2007070102"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch008.-23",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.4018/jeis.2008010105"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch008.-24",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.im.2014.03.006"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch008.-25",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.im.2011.01.001"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch008.-26",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.4018/ijeis.2014070103"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch008.-27",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1108/JEIM-03-2014-0028"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch008.-28",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/20721429"
-        },
-        {
-            "issue": "4",
-            "key": "978-1-5225-7214-5.ch008.-29",
+            "key": "S0219091522500151BIB002",
             "doi-asserted-by": "crossref",
-            "first-page": "73",
-            "DOI": "10.4018/ijeis.2014100105",
-            "article-title": "Evaluating the Internal and External Factors Toward ERP Success: Examples from Bruneian Businesses.",
-            "volume": "10",
-            "author": "A. H.Seyal",
+            "first-page": "387",
+            "DOI": "10.1111/ecpo.12017",
+            "volume": "25",
+            "author": "Avsar V",
+            "year": "2013",
+            "journal-title": "Economics and Politics"
+        },
+        {
+            "key": "S0219091522500151BIB003",
+            "volume-title": "VoxEU, CEPR",
+            "author": "B\u00fcge M",
+            "year": "2013"
+        },
+        {
+            "key": "S0219091522500151BIB004",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1023/A:1009850119329"
+        },
+        {
+            "key": "S0219091522500151BIB008",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jcorpfin.2010.08.004"
+        },
+        {
+            "key": "S0219091522500151BIB012",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1086/338747"
+        },
+        {
+            "key": "S0219091522500151BIB014",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.ribaf.2017.07.165"
+        },
+        {
+            "issue": "1",
+            "key": "S0219091522500151BIB015",
+            "first-page": "113",
+            "volume": "6",
+            "author": "Hermann C",
             "year": "2014",
-            "journal-title": "International Journal of Enterprise Information Systems"
+            "journal-title": "International Journal of Labour Research"
         },
         {
-            "key": "978-1-5225-7214-5.ch008.-30",
+            "issue": "1",
+            "key": "S0219091522500151BIB016",
+            "first-page": "1",
+            "volume": "45",
+            "author": "Kuznets S",
+            "year": "1955",
+            "journal-title": "American Economic Review"
+        },
+        {
+            "key": "S0219091522500151BIB017",
             "doi-asserted-by": "publisher",
-            "DOI": "10.25300/MISQ/2015/39.1.03"
+            "DOI": "10.1086/450006"
         },
         {
-            "key": "978-1-5225-7214-5.ch008.-31",
-            "author": "L. G.Tornatzky",
-            "year": "1990",
-            "journal-title": "The processes of technological innovation"
+            "key": "S0219091522500151BIB018",
+            "volume-title": "The State Strikes Back: The End of Economic Reform in China?",
+            "author": "Lardy NR",
+            "year": "2019"
         },
         {
-            "key": "978-1-5225-7214-5.ch008.-32",
-            "unstructured": "Tse, E. (2016). The Rise of Entrepreneurship in China. Retrieved from https://www.forbes.com/sites/tseedward/2016/04/05/the-rise-of-entrepreneurship-in-china/#51f8b4403efc"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch008.-33",
+            "key": "S0219091522500151BIB019",
             "doi-asserted-by": "publisher",
-            "DOI": "10.4018/jeis.2008100103"
+            "DOI": "10.1016/j.cjar.2019.12.001"
         },
         {
-            "key": "978-1-5225-7214-5.ch008.-34",
+            "key": "S0219091522500151BIB020",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.im.2010.01.005"
+            "DOI": "10.22459/CYRD.07.2018.20"
         },
         {
-            "key": "978-1-5225-7214-5.ch008.-35",
+            "key": "S0219091522500151BIB022",
+            "volume-title": "Equality and Efficiency: The Big Tradeoff",
+            "author": "Okun A",
+            "year": "1975"
+        },
+        {
+            "key": "S0219091522500151BIB025",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2307/30036540"
+            "DOI": "10.1007/s11156-020-00954-1"
         },
         {
-            "key": "978-1-5225-7214-5.ch008.-36",
+            "key": "S0219091522500151BIB026",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1745-493x.2012.03287.x"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch008.-37",
-            "author": "R.Yin",
-            "year": "1994",
-            "journal-title": "Case study research - design and methods"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch008.-38",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.ijpe.2004.09.004"
-        },
-        {
-            "key": "978-1-5225-7214-5.ch008.-39",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.ijinfomgt.2009.09.007"
+            "DOI": "10.1016/j.jwb.2019.02.001"
         }
     ],
     "container-title": [
-        "Advances in IT Standards and Standardization Research",
-        "Handbook of Research on the Evolution of IT and the Rise of E-Society"
+        "Review of Pacific Basin Financial Markets and Policies"
     ],
+    "language": "en",
     "link": [
         {
-            "URL": "https://www.igi-global.com/viewtitle.aspx?TitleId=211615",
+            "URL": "https://www.worldscientific.com/doi/pdf/10.1142/S0219091522500151",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -295,50 +201,63 @@
     "deposited": {
         "date-parts": [
             [
-                2020,
-                5,
-                18
+                2023,
+                11,
+                20
             ]
         ],
-        "date-time": "2020-05-18T20:57:59Z",
-        "timestamp": 1589835479000
+        "date-time": "2023-11-20T11:45:10Z",
+        "timestamp": 1700480710000
     },
-    "score": 13.790426,
+    "score": 16.239445,
     "resource": {
         "primary": {
-            "URL": "http://services.igi-global.com/resolvedoi/resolve.aspx?doi=10.4018/978-1-5225-7214-5.ch008"
+            "URL": "https://www.worldscientific.com/doi/10.1142/S0219091522500151"
         }
     },
-    "subtitle": [
-        "ERP in China \u2013 Failure and Success"
-    ],
     "issued": {
         "date-parts": [
             [
-                2019
+                2022,
+                6
             ]
         ]
     },
-    "references-count": 39,
-    "URL": "http://dx.doi.org/10.4018/978-1-5225-7214-5.ch008",
+    "references-count": 16,
+    "journal-issue": {
+        "issue": "02",
+        "published-print": {
+            "date-parts": [
+                [
+                    2022,
+                    6
+                ]
+            ]
+        }
+    },
+    "alternative-id": [
+        "10.1142/S0219091522500151"
+    ],
+    "URL": "http://dx.doi.org/10.1142/s0219091522500151",
     "ISSN": [
-        "1935-3391",
-        "1935-3405"
+        "0219-0915",
+        "1793-6705"
     ],
     "issn-type": [
         {
-            "value": "1935-3391",
+            "value": "0219-0915",
             "type": "print"
         },
         {
-            "value": "1935-3405",
+            "value": "1793-6705",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2019
+                2022,
+                6
             ]
         ]
     }

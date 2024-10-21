@@ -3,447 +3,341 @@
         "date-parts": [
             [
                 2024,
-                7,
-                16
+                2,
+                4
             ]
         ],
-        "date-time": "2024-07-16T01:37:10Z",
-        "timestamp": 1721093830838
+        "date-time": "2024-02-04T06:04:19Z",
+        "timestamp": 1707026659320
     },
-    "reference-count": 63,
-    "publisher": "Informa UK Limited",
-    "issue": "8",
-    "funder": [
-        {
-            "DOI": "10.13039/501100002486",
-            "name": "Hankuk University of Foreign Studies",
-            "doi-asserted-by": "publisher",
-            "award": [
-                "Research Fund"
-            ],
-            "id": [
-                {
-                    "id": "10.13039/501100002486",
-                    "id-type": "DOI",
-                    "asserted-by": "publisher"
-                }
-            ]
-        }
-    ],
+    "reference-count": 41,
+    "publisher": "IGI Global",
+    "issue": "1",
     "content-domain": {
-        "domain": [
-            "www.tandfonline.com"
-        ],
-        "crossmark-restriction": true
+        "domain": [],
+        "crossmark-restriction": false
     },
-    "short-container-title": [
-        "Technology Analysis &amp; Strategic Management"
-    ],
     "published-print": {
         "date-parts": [
             [
-                2023,
-                8,
-                3
+                2019,
+                1
             ]
         ]
     },
-    "DOI": "10.1080/09537325.2021.1991572",
+    "abstract": "<jats:p>This research investigates the software vendor-based relationships between software vulnerability and application security risk. The data is obtained from the China National Vulnerability Database of Information Security (CNNVD). At first, we use the latent class model to classify the software vendors into three categories, and then employ regression models to estimate relationships between software vulnerability and application security risk for each of the three categories of the software vendors. The results show the relationships vary across the software vendors. The findings suggest that an IT vendor should learn specific vulnerability features according to its type to effectively avoid vulnerability generation on their products.</jats:p>",
+    "DOI": "10.4018/irmj.2019010103",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2021,
+                2018,
                 10,
-                19
+                8
             ]
         ],
-        "date-time": "2021-10-19T10:55:55Z",
-        "timestamp": 1634640955000
+        "date-time": "2018-10-08T17:08:35Z",
+        "timestamp": 1539018515000
     },
-    "page": "1067-1079",
-    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
+    "page": "48-57",
     "source": "Crossref",
-    "is-referenced-by-count": 1,
+    "is-referenced-by-count": 5,
     "title": [
-        "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+        "Software Vulnerability and Application Security Risk"
     ],
-    "prefix": "10.1080",
-    "volume": "35",
+    "prefix": "10.4018",
+    "volume": "32",
     "author": [
         {
-            "given": "KwangWook",
-            "family": "Gang",
+            "given": "Jianping",
+            "family": "Peng",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA"
+                    "name": "Sun Yat-Sen University, Guang Zhou, China"
                 }
             ]
         },
         {
-            "given": "Byungchul",
-            "family": "Choi",
+            "given": "Meiwen",
+            "family": "Guo",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "College of Business, Hankuk University of Foreign Studies, Seoul, Korea"
+                    "name": "Xinhua College of Sun Yet-Sen University, Guang Zhou, China"
                 }
             ]
         },
         {
-            "given": "Minseok",
-            "family": "Park",
+            "given": "Jing",
+            "family": "Quan",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA"
+                    "name": "Salisbury University, Salisbury, USA"
                 }
             ]
         }
     ],
-    "member": "301",
-    "published-online": {
-        "date-parts": [
-            [
-                2021,
-                10,
-                19
-            ]
-        ]
-    },
+    "member": "2432",
     "reference": [
         {
-            "key": "CIT0001",
+            "issue": "1",
+            "key": "IRMJ.2019010103-0",
+            "first-page": "39",
+            "article-title": "The Elusive Silver Lining: How We Fail to Learn from Software Development Failures.",
+            "volume": "32",
+            "author": "T. K.Abdel-Hamid",
+            "year": "1990",
+            "journal-title": "Sloan Management Review"
+        },
+        {
+            "issue": "1",
+            "key": "IRMJ.2019010103-1",
+            "first-page": "1",
+            "article-title": "A general, but Readily Adaptable Model Information System Risk.",
+            "volume": "14",
+            "author": "S.Alter",
+            "year": "2004",
+            "journal-title": "Communications of the Association for Information Systems"
+        },
+        {
+            "key": "IRMJ.2019010103-2",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/smj.157"
+            "DOI": "10.1080/02664769823250"
         },
         {
-            "key": "CIT0002",
+            "key": "IRMJ.2019010103-3",
+            "unstructured": "Andreessen, M. (2011, August 20). Why Software Is Eating The World. Wall Street Journal -Eastern Edition, C2."
+        },
+        {
+            "key": "IRMJ.2019010103-4",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0022-3514.51.6.1173"
+            "DOI": "10.1287/isre.1080.0226"
         },
         {
-            "key": "CIT0003",
+            "key": "IRMJ.2019010103-5",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0378-4266(99)00129-6"
+            "DOI": "10.1145/1330311.1330325"
         },
         {
-            "key": "CIT0004",
+            "key": "IRMJ.2019010103-6",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Bozorgi, M., Saul, L. K., Savage, S., & Voelker, G. M. (2010). Beyond heuristics: Learning to Classify Vulnerabilities and Predict Exploits. In Proceedings of the 16th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining. Dge Discovery and Data Mining.",
+            "DOI": "10.1145/1835804.1835821"
+        },
+        {
+            "issue": "4",
+            "key": "IRMJ.2019010103-7",
+            "first-page": "58",
+            "article-title": "The Relationship between Job Satisfaction, Affective Commitment, Organizational Learning Climate and Corporate Performance.",
+            "volume": "2",
+            "author": "A.Budihardjo",
+            "year": "2013",
+            "journal-title": "GSTF Business Review"
+        },
+        {
+            "key": "IRMJ.2019010103-8",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/0304-405X(94)90030-2"
+            "DOI": "10.1007/s00181-010-0413-4"
         },
         {
-            "key": "CIT0005",
+            "key": "IRMJ.2019010103-9",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jfineco.2017.07.005"
+            "DOI": "10.1007/s10260-012-0214-3"
         },
         {
-            "key": "CIT0006",
+            "key": "IRMJ.2019010103-10",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2307/256301"
+            "DOI": "10.1108/14635771211244309"
         },
         {
-            "key": "CIT0007",
+            "key": "IRMJ.2019010103-11",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.lrp.2016.07.003"
+            "DOI": "10.1016/j.asoc.2010.06.005"
         },
         {
-            "key": "CIT0008",
+            "key": "IRMJ.2019010103-12",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10490-013-9357-5"
+            "DOI": "10.2307/1879431"
         },
         {
-            "key": "CIT0009",
+            "key": "IRMJ.2019010103-13",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1086/467423"
+            "DOI": "10.1016/S0191-2615(02)00046-2"
         },
         {
-            "key": "CIT0010",
+            "key": "IRMJ.2019010103-14",
+            "year": "2002",
+            "journal-title": "ISO/IEC. 12207:2002. Information technology\u2014Software life cycle processes"
+        },
+        {
+            "key": "IRMJ.2019010103-15",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1287/orsc.2016.1089"
+            "DOI": "10.1016/j.ijinfomgt.2008.02.002"
         },
         {
-            "key": "CIT0011",
+            "key": "IRMJ.2019010103-16",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jbusres.2014.10.007"
+            "DOI": "10.2307/3172759"
         },
         {
-            "key": "CIT0012",
+            "key": "IRMJ.2019010103-17",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2307/3665623"
+            "DOI": "10.2753/JEC1086-4415140201"
         },
         {
-            "key": "CIT0013",
-            "volume-title": "Applied Multiple Regression/Correlation Analysis for the Behavioral Sciences",
-            "author": "Cohen J.",
-            "year": "1975"
-        },
-        {
-            "key": "CIT0014",
+            "key": "IRMJ.2019010103-18",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1467-6486.2010.00958.x"
+            "DOI": "10.1145/1096000.1096004"
         },
         {
-            "key": "CIT0015",
+            "key": "IRMJ.2019010103-19",
+            "author": "W. E.Lewis",
+            "year": "2016",
+            "journal-title": "Software testing and continuous quality improvement"
+        },
+        {
+            "key": "IRMJ.2019010103-20",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0304-405X(00)00092-1"
+            "DOI": "10.5465/AMP.2006.20591002"
         },
         {
-            "key": "CIT0016",
+            "key": "IRMJ.2019010103-21",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2307/3069342"
+            "DOI": "10.1108/03321641311296873"
         },
         {
-            "key": "CIT0017",
+            "key": "IRMJ.2019010103-22",
             "doi-asserted-by": "publisher",
-            "DOI": "10.5465/amj.2008.30772877"
+            "DOI": "10.1109/MSP.2006.145"
         },
         {
-            "key": "CIT0018",
+            "issue": "7",
+            "key": "IRMJ.2019010103-23",
+            "first-page": "1279",
+            "article-title": "A micro model for predicting quantity of vulnerabilities.",
+            "volume": "48",
+            "author": "C. J.Nie",
+            "year": "2011",
+            "journal-title": "Journal of Computer Research and Development"
+        },
+        {
+            "key": "IRMJ.2019010103-24",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/smj.523"
+            "DOI": "10.1007/s11135-011-9574-2"
         },
         {
-            "key": "CIT0019",
+            "key": "IRMJ.2019010103-25",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2307/259316"
+            "DOI": "10.1016/j.cor.2010.11.013"
         },
         {
-            "key": "CIT0020",
+            "key": "IRMJ.2019010103-26",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/cjas.152"
+            "DOI": "10.1057/palgrave.jit.2000122"
         },
         {
-            "key": "CIT0021",
+            "key": "IRMJ.2019010103-27",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1093/wber/14.1.49"
+            "DOI": "10.1214/aos/1176344136"
         },
         {
-            "key": "CIT0022",
+            "key": "IRMJ.2019010103-28",
+            "unstructured": "Software Engineering Institute (SEI). (2004). Capability maturity model integration (CMMI), version 1.1 CMMI (CMMI-SE/SW/IPPD/SS, v1.1) staged representation. Pittsburgh, PA: SEI."
+        },
+        {
+            "key": "IRMJ.2019010103-29",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/smj.535"
+            "DOI": "10.1016/j.ijinfomgt.2015.11.009"
         },
         {
-            "key": "CIT0023",
+            "key": "IRMJ.2019010103-30",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.lrp.2019.01.003"
+            "DOI": "10.1108/ITP-03-2013-0052"
         },
         {
-            "key": "CIT0024",
+            "key": "IRMJ.2019010103-31",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2307/30040661"
+            "DOI": "10.1016/j.chb.2017.11.024"
         },
         {
-            "key": "CIT0025",
+            "key": "IRMJ.2019010103-32",
+            "first-page": "183",
+            "article-title": "A Soft Set and Multi-Attribute based Comprehensive Method to Discover Software Vulnerabilities.",
+            "volume": "5",
+            "author": "C. H.Tang",
+            "year": "2015",
+            "journal-title": "Computer Science"
+        },
+        {
+            "key": "IRMJ.2019010103-33",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2307/2393549"
+            "DOI": "10.1093/icc/3.3.537-a"
         },
         {
-            "key": "CIT0026",
+            "key": "IRMJ.2019010103-34",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/smj.524"
+            "DOI": "10.1109/TSE.2007.70712"
         },
         {
-            "key": "CIT0027",
+            "key": "IRMJ.2019010103-35",
+            "first-page": "2087",
+            "article-title": "Software Vulnerability Industry: Present Situation and Development.",
+            "volume": "49",
+            "author": "T.Wei",
+            "year": "2009",
+            "journal-title": "Qinghua Daxue Xuebao. Ziran Kexue Ban"
+        },
+        {
+            "key": "IRMJ.2019010103-36",
+            "first-page": "131",
+            "article-title": "Study and Revelation of Vulnerability Database Development.",
+            "volume": "11",
+            "author": "S. P.Wu",
+            "year": "2012",
+            "journal-title": "Network & Computer Security"
+        },
+        {
+            "key": "IRMJ.2019010103-37",
+            "first-page": "1309",
+            "article-title": "Progress of Software Vulnerability Analysis Technology.",
+            "volume": "2",
+            "author": "S. Z.Wu",
+            "year": "2012",
+            "journal-title": "Qinghua Daxue Xuebao. Ziran Kexue Ban"
+        },
+        {
+            "key": "IRMJ.2019010103-38",
+            "first-page": "89",
+            "article-title": "Development Research of Scrum Agile Software Combined with CMMI.",
+            "volume": "24",
+            "author": "W.Xu",
+            "year": "2014",
+            "journal-title": "Computer Technology and Development"
+        },
+        {
+            "key": "IRMJ.2019010103-39",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/smj.4250120303"
+            "DOI": "10.4028/www.scientific.net/AMM.513-517.369"
         },
         {
-            "key": "CIT0028",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1108/02621710810916295"
-        },
-        {
-            "key": "CIT0029",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/258018"
-        },
-        {
-            "key": "CIT0030",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jcorpfin.2014.10.013"
-        },
-        {
-            "key": "CIT0031",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/smj.4250140107"
-        },
-        {
-            "key": "CIT0032",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1467-646X.2004.00107.x"
-        },
-        {
-            "key": "CIT0033",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jbusres.2013.05.037"
-        },
-        {
-            "key": "CIT0034",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0304-405X(03)00068-0"
-        },
-        {
-            "key": "CIT0035",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0927-538X(02)00095-1"
-        },
-        {
-            "key": "CIT0036",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0304-405X(97)00023-8"
-        },
-        {
-            "key": "CIT0037",
-            "volume-title": "Japanese Takeovers: the Global Contest for Corporate Control",
-            "author": "Kester W. C.",
-            "year": "1991"
-        },
-        {
-            "key": "CIT0038",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/0022-1082.00229"
-        },
-        {
-            "key": "CIT0039",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1287/orsc.1080.0360"
-        },
-        {
-            "key": "CIT0040",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1287/mnsc.48.2.171.253"
-        },
-        {
-            "key": "CIT0041",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/0304-405X(95)00842-3"
-        },
-        {
-            "key": "CIT0042",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/0022-1082.00115"
-        },
-        {
-            "key": "CIT0043",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0304-405X(00)00065-9"
-        },
-        {
-            "key": "CIT0044",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1467-8381.2012.02080.x"
-        },
-        {
-            "key": "CIT0045",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/30040615"
-        },
-        {
-            "key": "CIT0046",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1287/orsc.3.4.556"
-        },
-        {
-            "key": "CIT0047",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/biomet/73.1.13"
-        },
-        {
-            "key": "CIT0048",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.bushor.2013.07.007"
-        },
-        {
-            "key": "CIT0049",
-            "volume": "71",
-            "author": "Loncan T.",
-            "year": "2018",
-            "journal-title": "International Review of Financial Analysis"
-        },
-        {
-            "key": "CIT0050",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3390/ijfs8040079"
-        },
-        {
-            "key": "CIT0051",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.euroecorev.2015.09.007"
-        },
-        {
-            "key": "CIT0052",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1017/CBO9780511808678"
-        },
-        {
-            "issue": "5",
-            "key": "CIT0053",
-            "first-page": "65",
-            "volume": "70",
-            "author": "Porter M. E.",
-            "year": "1992",
-            "journal-title": "Harvard Business Review"
-        },
-        {
-            "key": "CIT0054",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.bushor.2007.09.005"
-        },
-        {
-            "key": "CIT0055",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1086/261524"
-        },
-        {
-            "key": "CIT0056",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/2937861"
-        },
-        {
-            "key": "CIT0057",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/smj.4250171105"
-        },
-        {
-            "key": "CIT0058",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/0014-2921(92)90021-N"
-        },
-        {
-            "key": "CIT0059",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/256787"
-        },
-        {
-            "key": "CIT0060",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0263-7863(02)00025-X"
-        },
-        {
-            "key": "CIT0061",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jbusres.2014.11.005"
-        },
-        {
-            "key": "CIT0062",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1467-6486.2009.00891.x"
-        },
-        {
-            "key": "CIT0063",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1108/17506141111118471"
+            "key": "IRMJ.2019010103-40",
+            "first-page": "167",
+            "article-title": "An Approach to Detect Multi-Threaded Software Concurrent Vulnerabilities.",
+            "volume": "2",
+            "author": "C. C.Zhu",
+            "year": "2015",
+            "journal-title": "Journal of Xidian University"
         }
     ],
     "container-title": [
-        "Technology Analysis &amp; Strategic Management"
+        "Information Resources Management Journal"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/09537325.2021.1991572",
+            "URL": "https://www.igi-global.com/viewtitle.aspx?TitleId=216441",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -452,122 +346,56 @@
     "deposited": {
         "date-parts": [
             [
-                2023,
-                7,
-                24
+                2022,
+                5,
+                5
             ]
         ],
-        "date-time": "2023-07-24T10:54:09Z",
-        "timestamp": 1690196049000
+        "date-time": "2022-05-05T23:46:09Z",
+        "timestamp": 1651794369000
     },
-    "score": 16.067251,
+    "score": 14.967015,
     "resource": {
         "primary": {
-            "URL": "https://www.tandfonline.com/doi/full/10.1080/09537325.2021.1991572"
+            "URL": "http://services.igi-global.com/resolvedoi/resolve.aspx?doi=10.4018/IRMJ.2019010103"
         }
     },
+    "subtitle": [
+        ""
+    ],
     "issued": {
         "date-parts": [
             [
-                2021,
-                10,
-                19
+                2019,
+                1
             ]
         ]
     },
-    "references-count": 63,
+    "references-count": 41,
     "journal-issue": {
-        "issue": "8",
-        "published-print": {
-            "date-parts": [
-                [
-                    2023,
-                    8,
-                    3
-                ]
-            ]
-        }
+        "issue": "1"
     },
-    "alternative-id": [
-        "10.1080/09537325.2021.1991572"
-    ],
-    "URL": "http://dx.doi.org/10.1080/09537325.2021.1991572",
+    "URL": "http://dx.doi.org/10.4018/irmj.2019010103",
     "ISSN": [
-        "0953-7325",
-        "1465-3990"
+        "1040-1628",
+        "1533-7979"
     ],
     "issn-type": [
         {
-            "value": "0953-7325",
+            "value": "1040-1628",
             "type": "print"
         },
         {
-            "value": "1465-3990",
+            "value": "1533-7979",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2021,
-                10,
-                19
+                2019,
+                1
             ]
         ]
-    },
-    "assertion": [
-        {
-            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
-            "order": 1,
-            "name": "peerreview_statement",
-            "label": "Peer Review Statement"
-        },
-        {
-            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=ctas20",
-            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=ctas20",
-            "order": 2,
-            "name": "aims_and_scope_url",
-            "label": "Aim & Scope"
-        },
-        {
-            "value": "2020-09-13",
-            "order": 0,
-            "name": "received",
-            "label": "Received",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2021-10-01",
-            "order": 1,
-            "name": "revised",
-            "label": "Revised",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2021-10-05",
-            "order": 2,
-            "name": "accepted",
-            "label": "Accepted",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2021-10-19",
-            "order": 3,
-            "name": "published",
-            "label": "Published",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        }
-    ]
+    }
 }

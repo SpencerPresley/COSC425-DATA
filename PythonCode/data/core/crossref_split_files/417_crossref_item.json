@@ -3,27 +3,28 @@
         "date-parts": [
             [
                 2023,
-                10,
+                7,
                 22
             ]
         ],
-        "date-time": "2023-10-22T20:46:40Z",
-        "timestamp": 1698007600796
+        "date-time": "2023-07-22T04:13:53Z",
+        "timestamp": 1689999233359
     },
-    "reference-count": 28,
+    "reference-count": 17,
     "publisher": "SAGE Publications",
+    "issue": "5",
     "license": [
         {
             "start": {
                 "date-parts": [
                     [
                         2023,
-                        10,
-                        20
+                        5,
+                        22
                     ]
                 ],
-                "date-time": "2023-10-20T00:00:00Z",
-                "timestamp": 1697760000000
+                "date-time": "2023-05-22T00:00:00Z",
+                "timestamp": 1684713600000
             },
             "content-version": "tdm",
             "delay-in-days": 0,
@@ -37,125 +38,59 @@
         "crossmark-restriction": true
     },
     "short-container-title": [
-        "Health Promotion Practice"
+        "Public Finance Review"
     ],
-    "abstract": "<jats:p> As both public health and public libraries continue to evolve, there are opportunities for collaboration focused on building policies, systems, and environments that support communities making healthy choices easy choices. Given the health disparities related to physical inactivity, such as diabetes and heart disease in rural America, public libraries within rural communities are emerging as important settings for health promotion and disease prevention. This study sought to better understand how rural libraries promote physical activity opportunities on Facebook. Based on a content analysis of Facebook posts of a random sample of 118 libraries made during the Summer of 2022, 47 of the 118 had at least one post related to physical activity and 42 had multiple posts. The most frequent offering was events or classes; libraries also supported physical activity by lending equipment and making changes to the built environment. This study provides evidence that some rural libraries are offering physical activity opportunities through community health partnerships, particularly for youth and families. Considering this evidence, public health professionals are encouraged to collaborate with local libraries to promote physical activity and advance rural health equity. Researchers are invited to continue to develop the evidence base around promoting physical activity with rural libraries. </jats:p>",
-    "DOI": "10.1177/15248399231206085",
+    "published-print": {
+        "date-parts": [
+            [
+                2023,
+                9
+            ]
+        ]
+    },
+    "abstract": "<jats:p> Numerous states have altered the sales factor weight in their corporate income tax (CIT) apportionment formulas. We are among the first to examine which political and economic factors are important in determining whether and when states manipulate sales factor weights. We apply survival model techniques to a panel of state-level data for the years 1985\u22122012. Our most striking result is that a higher CIT rate is associated with faster movement to a higher sales factor weight. Perhaps indicating that, for economic development, states use sales factor manipulation in lieu of reducing CIT rates broadly, or alternatively, that states raise sales factor weights to compensate for higher statutory CIT rates. Results also indicate that stronger growth in the CIT base and in non-corporate tax revenues hasten sales factor weight increases. Democratic control of the state government and gubernatorial election years are also important in the timing of sales factor manipulation. </jats:p>",
+    "DOI": "10.1177/10911421231167137",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
                 2023,
-                10,
-                21
+                5,
+                23
             ]
         ],
-        "date-time": "2023-10-21T06:40:04Z",
-        "timestamp": 1697870404000
+        "date-time": "2023-05-23T06:07:08Z",
+        "timestamp": 1684822028000
     },
+    "page": "669-687",
     "update-policy": "http://dx.doi.org/10.1177/sage-journals-update-policy",
     "source": "Crossref",
     "is-referenced-by-count": 0,
     "title": [
-        "Understanding Libraries as Part of the Rural Active Living Environment: Evidence From a Content Analysis of Library Facebook Posts Made in Summer 2022"
+        "What Factors Entice States to Manipulate Corporate Income Tax Apportionment Formulas?"
     ],
     "prefix": "10.1177",
+    "volume": "51",
     "author": [
         {
-            "ORCID": "http://orcid.org/0000-0001-7613-066X",
+            "ORCID": "http://orcid.org/0000-0001-6858-1743",
             "authenticated-orcid": false,
-            "given": "Noah",
-            "family": "Lenstra",
+            "given": "John",
+            "family": "Deskins",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "University of North Carolina at Greensboro, Greensboro, NC, USA"
+                    "name": "Department of Economics, West Virginia University, Morgantown, WV, USA"
                 }
             ]
         },
         {
-            "ORCID": "http://orcid.org/0000-0001-6383-7244",
-            "authenticated-orcid": false,
-            "given": "Nancy Tompkins",
-            "family": "O\u2019Hara",
+            "given": "Brian",
+            "family": "Hill",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "West Virginia University, Morgantown, WV, USA"
-                }
-            ]
-        },
-        {
-            "given": "Dina L.",
-            "family": "Jones",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "West Virginia University, Morgantown, WV, USA"
-                }
-            ]
-        },
-        {
-            "given": "Zachary",
-            "family": "Townsend",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Salisbury University, Salisbury, MD, USA"
-                }
-            ]
-        },
-        {
-            "given": "Sandra",
-            "family": "Slater",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Concordia University Wisconsin, Mequon, WI, USA"
-                }
-            ]
-        },
-        {
-            "given": "Andrew C.",
-            "family": "Pickett",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Indiana University Bloomington, Bloomington, IN, USA"
-                }
-            ]
-        },
-        {
-            "given": "Kelsey R.",
-            "family": "Day",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "University of South Carolina, Columbia, SC, USA"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0001-5525-943X",
-            "authenticated-orcid": false,
-            "given": "M. Renee Umstattd",
-            "family": "Meyer",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Baylor University, Waco, TX, USA"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0002-8167-5936",
-            "authenticated-orcid": false,
-            "given": "Cynthia",
-            "family": "Perry",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Oregon Health & Sciences University, Portland, OR, USA"
+                    "name": "Department of Economics and Finance, Salisbury University, Salisbury, Maryland, USA"
                 }
             ]
         }
@@ -165,168 +100,118 @@
         "date-parts": [
             [
                 2023,
-                10,
-                20
+                5,
+                22
             ]
         ]
     },
     "reference": [
         {
-            "key": "bibr1-15248399231206085",
+            "key": "bibr1-10911421231167137",
             "doi-asserted-by": "publisher",
-            "DOI": "10.15585/mmwr.mm7204a1"
+            "DOI": "10.1109/TAC.1974.1100705"
         },
         {
-            "key": "bibr2-15248399231206085",
-            "unstructured": "American Library Association, & Public Library Association. (2018). From awareness to funding: Voter perceptions and support of public libraries in 2018. OCLC. https://alair.ala.org/bitstream/handle/11213/16329/2018_From_Awareness_to_Funding_Report.pdf"
-        },
-        {
-            "key": "bibr3-15248399231206085",
-            "unstructured": "Appalachian Regional Commission. (2018). Creating a culture of health in Appalachia\u2014Disparities and bright spots: Exploring bright spots in Appalachian health\u2014Case studies: McCreary county. Appalachian Regional Commission. https://www.arc.gov/research/researchreportdetails.asp?REPORT_ID=145"
-        },
-        {
-            "key": "bibr4-15248399231206085",
+            "key": "bibr2-10911421231167137",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1377/hlthaff.2019.00910"
+            "DOI": "10.1162/003465399558409"
         },
         {
-            "key": "bibr5-15248399231206085",
+            "key": "bibr3-10911421231167137",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/01616846.2013.818814"
+            "DOI": "10.17310/ntj.2012.2.05"
         },
         {
-            "key": "bibr6-15248399231206085",
-            "unstructured": "County Health Rankings & Roadmaps. (2023). 2023 County health rankings national findings report. https://www.countyhealthrankings.org/reports/2023-county-health-rankings-national-findings-report"
-        },
-        {
-            "key": "bibr7-15248399231206085",
+            "key": "bibr4-10911421231167137",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.puhe.2015.04.001"
+            "DOI": "10.17310/ntj.2016.2.04"
         },
         {
-            "key": "bibr8-15248399231206085",
+            "key": "bibr5-10911421231167137",
             "doi-asserted-by": "publisher",
-            "DOI": "10.3138/jelis.57.2.143"
+            "DOI": "10.1111/j.2517-6161.1972.tb00899.x"
         },
         {
-            "key": "bibr9-15248399231206085",
+            "key": "bibr6-10911421231167137",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.lisr.2022.101217"
+            "DOI": "10.17310/ntj.2002.2.03"
         },
         {
-            "key": "bibr10-15248399231206085",
+            "key": "bibr7-10911421231167137",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0961000612470278"
+            "DOI": "10.1177/1091142106289016"
         },
         {
-            "key": "bibr11-15248399231206085",
+            "key": "bibr8-10911421231167137",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1108/OIR-10-2017-0288"
+            "DOI": "10.1177/1091142107303720"
         },
         {
-            "key": "bibr12-15248399231206085",
+            "key": "bibr9-10911421231167137",
             "doi-asserted-by": "publisher",
-            "DOI": "10.5888/pcd19.210417"
+            "DOI": "10.1177/1091142105279333"
         },
         {
-            "key": "bibr13-15248399231206085",
+            "key": "bibr10-10911421231167137",
             "doi-asserted-by": "publisher",
-            "DOI": "10.4148/1051-0834.2347"
+            "DOI": "10.17310/ntj.2005.1.07"
         },
         {
-            "key": "bibr14-15248399231206085",
+            "key": "bibr11-10911421231167137",
             "doi-asserted-by": "publisher",
-            "DOI": "10.21900/j.jloe.v2i1.883"
+            "DOI": "10.1016/S0047-2727(99)00036-5"
         },
         {
-            "key": "bibr15-15248399231206085",
+            "key": "bibr12-10911421231167137",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/15248399211073602"
+            "DOI": "10.2307/1914303"
         },
         {
-            "key": "bibr16-15248399231206085",
+            "key": "bibr13-10911421231167137",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1108/JD-08-2018-0137"
+            "DOI": "10.17310/ntj.2005.3.17"
         },
         {
-            "key": "bibr17-15248399231206085",
+            "key": "bibr14-10911421231167137",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/1524839917735304"
+            "DOI": "10.2308/jata.1999.21.s-1.42"
         },
         {
-            "key": "bibr18-15248399231206085",
-            "unstructured": "Physical Activity Policy Research and Evaluation Network. (2013). Rural active living group. https://papren.org/papren-work-groups/rural-active-living-work-group/"
-        },
-        {
-            "key": "bibr19-15248399231206085",
+            "key": "bibr15-10911421231167137",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.ypmed.2014.05.021"
+            "DOI": "10.17310/ntj.2007.1.03"
         },
         {
-            "key": "bibr20-15248399231206085",
+            "key": "bibr16-10911421231167137",
+            "volume-title": "The \u2018single sales factor\u2019 formula for state corporate taxes: A boon to economic development or a costly giveaway?",
+            "author": "Mazerov Michael.",
+            "year": "2005"
+        },
+        {
+            "key": "bibr17-10911421231167137",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1146/annurev.publhealth.27.021405.102100"
-        },
-        {
-            "key": "bibr21-15248399231206085",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/08901171221134797"
-        },
-        {
-            "key": "bibr22-15248399231206085",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/01616846.2019.1659070"
-        },
-        {
-            "key": "bibr23-15248399231206085",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1097/PHH.0000000000000333"
-        },
-        {
-            "key": "bibr24-15248399231206085",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3390/ijerph18199976"
-        },
-        {
-            "key": "bibr25-15248399231206085",
-            "unstructured": "U.S. Institute of Museum & Library Services. (2022). Public libraries survey fiscal year, 2020. https://www.imls.gov/research-evaluation/data-collection/public-libraries-survey"
-        },
-        {
-            "key": "bibr26-15248399231206085",
-            "volume-title": "Examining the organizational capacity of public libraries that offer obesity prevention programs",
-            "author": "Whitt O.",
-            "year": "2020"
-        },
-        {
-            "key": "bibr27-15248399231206085",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1108/RSR-09-2022-0037"
-        },
-        {
-            "key": "bibr28-15248399231206085",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2105/AJPH.2020.305868"
+            "DOI": "10.2308/jata.2004.26.s-1.103"
         }
     ],
     "container-title": [
-        "Health Promotion Practice"
+        "Public Finance Review"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "http://journals.sagepub.com/doi/pdf/10.1177/15248399231206085",
+            "URL": "http://journals.sagepub.com/doi/pdf/10.1177/10911421231167137",
             "content-type": "application/pdf",
             "content-version": "vor",
             "intended-application": "text-mining"
         },
         {
-            "URL": "http://journals.sagepub.com/doi/full-xml/10.1177/15248399231206085",
+            "URL": "http://journals.sagepub.com/doi/full-xml/10.1177/10911421231167137",
             "content-type": "application/xml",
             "content-version": "vor",
             "intended-application": "text-mining"
         },
         {
-            "URL": "http://journals.sagepub.com/doi/pdf/10.1177/15248399231206085",
+            "URL": "http://journals.sagepub.com/doi/pdf/10.1177/10911421231167137",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -336,44 +221,55 @@
         "date-parts": [
             [
                 2023,
-                10,
+                7,
                 21
             ]
         ],
-        "date-time": "2023-10-21T06:40:10Z",
-        "timestamp": 1697870410000
+        "date-time": "2023-07-21T10:50:43Z",
+        "timestamp": 1689936643000
     },
-    "score": 12.543191,
+    "score": 14.9374075,
     "resource": {
         "primary": {
-            "URL": "http://journals.sagepub.com/doi/10.1177/15248399231206085"
+            "URL": "http://journals.sagepub.com/doi/10.1177/10911421231167137"
         }
     },
     "issued": {
         "date-parts": [
             [
                 2023,
-                10,
-                20
+                5,
+                22
             ]
         ]
     },
-    "references-count": 28,
+    "references-count": 17,
+    "journal-issue": {
+        "issue": "5",
+        "published-print": {
+            "date-parts": [
+                [
+                    2023,
+                    9
+                ]
+            ]
+        }
+    },
     "alternative-id": [
-        "10.1177/15248399231206085"
+        "10.1177/10911421231167137"
     ],
-    "URL": "http://dx.doi.org/10.1177/15248399231206085",
+    "URL": "http://dx.doi.org/10.1177/10911421231167137",
     "ISSN": [
-        "1524-8399",
-        "1552-6372"
+        "1091-1421",
+        "1552-7530"
     ],
     "issn-type": [
         {
-            "value": "1524-8399",
+            "value": "1091-1421",
             "type": "print"
         },
         {
-            "value": "1552-6372",
+            "value": "1552-7530",
             "type": "electronic"
         }
     ],
@@ -381,8 +277,8 @@
         "date-parts": [
             [
                 2023,
-                10,
-                20
+                5,
+                22
             ]
         ]
     }

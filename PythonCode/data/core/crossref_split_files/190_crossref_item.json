@@ -2,326 +2,203 @@
     "indexed": {
         "date-parts": [
             [
-                2024,
-                7,
-                26
+                2022,
+                4,
+                5
             ]
         ],
-        "date-time": "2024-07-26T09:59:13Z",
-        "timestamp": 1721987953285
+        "date-time": "2022-04-05T18:07:16Z",
+        "timestamp": 1649182036233
     },
-    "reference-count": 27,
-    "publisher": "Association for Computing Machinery (ACM)",
-    "issue": "10",
+    "reference-count": 0,
+    "publisher": "American Society of Clinical Oncology (ASCO)",
+    "issue": "15_suppl",
+    "funder": [
+        {
+            "DOI": "10.13039/100000002",
+            "name": "U.S. National Institutes of Health",
+            "doi-asserted-by": "crossref",
+            "id": [
+                {
+                    "id": "10.13039/100000002",
+                    "id-type": "DOI",
+                    "asserted-by": "crossref"
+                }
+            ]
+        },
+        {
+            "name": "Pharmaceutical/Biotech Company"
+        }
+    ],
     "content-domain": {
-        "domain": [
-            "dl.acm.org"
-        ],
-        "crossmark-restriction": true
+        "domain": [],
+        "crossmark-restriction": false
     },
     "short-container-title": [
-        "Commun. ACM"
+        "JCO"
     ],
     "published-print": {
         "date-parts": [
             [
                 2020,
-                9,
-                23
+                5,
+                20
             ]
         ]
     },
-    "abstract": "<jats:p>The value of learning skillsets within a trio of disciplines and the role each plays in DevOps.</jats:p>",
-    "DOI": "10.1145/3372114",
+    "abstract": "<jats:p> e17534 </jats:p><jats:p> Background: PIM kinases are highly expressed in high risk prostate cancer and are associated with aggressiveness and poor prognosis, presenting a therapeutic target. Methods: We studied PIM inhibition (PIMi) in both hormone-dependent (LNCaP) and -independent (DU145, 22Rv1) prostate cancer cell lines and mouse xenografts. We evaluated PIMi effects via Western blotting, immunofluorescence, and RNAseq of multiple relevant pathways, and performed radiosensitization analysis with colony formation assays. We also investigated xenograft tumor growth with PIMi +/- radiation (RT) or docetaxel. Results: Pretreating the cell lines with PIMi prior to RT caused marked changes in H2AX phosphorylation compared to no PIMi + RT, with most significant alteration in DU145. However, in colony formation assays, 22Rv1 showed greatest radiosensitization with colony survival reduced from 23% to 15% with PIMi. 22Rv1 xenografts were grown in castrated mice, which were randomized to 30 Gy in 15 treatments vs no RT over 3 weeks, -/+ PIMi on RT days. RT + PIMi eliminated gross tumor, compared to an average of 78% and 51% of initial tumor volumes remaining with PIMi alone and RT alone, respectively. Immunofluorescence and Western blotting of harvested tumors showed PIMi altered patterns in proteins involved with hypoxic response (COX-2), cell survival (MDM2), and androgen receptor and suggested interactions between RT and PIMi for both MDM2 and androgen receptor but not COX-2. RNAseq analysis of xenografts showed daily PIMi affected multiple pathways involved in metabolism, growth, and DNA repair. Finally, we tested PIMi -/+ docetaxel in castrated mice with hormone-sensitive (LNCaP) or -resistant (22Rv1) xenografts treated with PIMi -/+ docetaxel. With both xenografts, PIMi + docetaxel reduced tumor size best, with 22Rv1 xenografts most dramatically showing 74% volume reduction from baseline with PIMi + docetaxel compared to 50% and 25% reduction in volumes with PIMi alone and docetaxel alone, respectively. Conclusions: PIMi has multiple pathway effects in prostate cancer. PIMi significantly reduces disease burden, particularly in combination with RT or docetaxel. Our data provide rationale for testing PIMi in clinical trials for prostate cancer. </jats:p>",
+    "DOI": "10.1200/jco.2020.38.15_suppl.e17534",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
                 2020,
-                9,
-                23
+                5,
+                25
             ]
         ],
-        "date-time": "2020-09-23T14:26:49Z",
-        "timestamp": 1600871209000
+        "date-time": "2020-05-25T15:31:03Z",
+        "timestamp": 1590420663000
     },
-    "page": "48-53",
-    "update-policy": "http://dx.doi.org/10.1145/crossmark-policy",
+    "page": "e17534-e17534",
     "source": "Crossref",
-    "is-referenced-by-count": 12,
+    "is-referenced-by-count": 0,
     "title": [
-        "What do agile, lean, and ITIL mean to DevOps?"
+        "Inhibition of PIM kinase with fractionated radiation and docetaxel in preclinical prostate cancer models."
     ],
-    "prefix": "10.1145",
-    "volume": "63",
+    "prefix": "10.1200",
+    "volume": "38",
     "author": [
         {
-            "given": "Stuart",
-            "family": "Galup",
+            "given": "Anne",
+            "family": "Rajkumar-Calkins",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Florida Atlantic University, Boca Raton, FL"
+                    "name": "Vanderbilt University Medical Center, Nashville, TN;"
                 }
             ]
         },
         {
-            "given": "Ronald",
-            "family": "Dattero",
+            "given": "Vinay",
+            "family": "Sagar",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Missouri State University, Springfield, MO"
+                    "name": "Northwestern University Feinberg School of Medicine, Chicago, IL;"
                 }
             ]
         },
         {
-            "given": "Jing",
-            "family": "Quan",
+            "given": "Jian",
+            "family": "Wang",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Salisbury University, Salisbury, MD"
+                    "name": "Department of Radiation Oncology, Vanderbilt University Medical Center, Nashville, TN;"
+                }
+            ]
+        },
+        {
+            "given": "Shania",
+            "family": "Bailey",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Salisbury University, Salisbury, MD;"
+                }
+            ]
+        },
+        {
+            "given": "Philip",
+            "family": "Anderson",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Salisbury University, Salisbury, MD;"
+                }
+            ]
+        },
+        {
+            "given": "Sarki",
+            "family": "Abdulkadir",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Northwestern University Feinberg School of Medicine, Chicago, IL;"
+                }
+            ]
+        },
+        {
+            "given": "Austin Noah",
+            "family": "Kirschner",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Radiation Oncology, Vanderbilt University Medical Center, Nashville, TN;"
                 }
             ]
         }
     ],
-    "member": "320",
-    "published-online": {
-        "date-parts": [
-            [
-                2020,
-                9,
-                23
-            ]
-        ]
-    },
-    "reference": [
-        {
-            "key": "e_1_2_1_1_1",
-            "volume-title": "Agile software development methods: A comparative review. Agile Software Development",
-            "author": "Abrahamsson P.",
-            "year": "2010",
-            "unstructured": "Abrahamsson , P. , Oza , N. and Siponen , M.T . Agile software development methods: A comparative review. Agile Software Development ( 2010 ), 31--59. Abrahamsson, P., Oza, N. and Siponen, M.T. Agile software development methods: A comparative review. Agile Software Development (2010), 31--59."
-        },
-        {
-            "key": "e_1_2_1_2_1",
-            "volume-title": "AXELOS Lean Enterprise Podcast",
-            "author": "Anand A.",
-            "year": "2017",
-            "unstructured": "Anand , A. AXELOS Lean Enterprise Podcast ( 2017 ). Anand, A. AXELOS Lean Enterprise Podcast (2017)."
-        },
-        {
-            "key": "e_1_2_1_3_1",
-            "unstructured": "AXELOS.com; https://www.axelos.com  AXELOS.com; https://www.axelos.com"
-        },
-        {
-            "key": "e_1_2_1_4_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/135901"
-        },
-        {
-            "key": "e_1_2_1_5_1",
-            "volume-title": "The Next Evolution of ITIL. Learning Tree International",
-            "author": "Beadle A.",
-            "year": "2018",
-            "unstructured": "Beadle , A. Getting Ready for ITIL 4 , The Next Evolution of ITIL. Learning Tree International , 2018 ; www.learningtree.com Beadle, A. Getting Ready for ITIL 4, The Next Evolution of ITIL. Learning Tree International, 2018; www.learningtree.com"
-        },
-        {
-            "key": "e_1_2_1_6_1",
-            "volume-title": "Lean IT: Enabling and Sustaining Your Lean Transformation",
-            "author": "Bell S.C.",
-            "year": "2016",
-            "unstructured": "Bell , S.C. and Orzen , M.A . Lean IT: Enabling and Sustaining Your Lean Transformation . CRC Press , 2016 . Bell, S.C. and Orzen, M.A. Lean IT: Enabling and Sustaining Your Lean Transformation. CRC Press, 2016."
-        },
-        {
-            "key": "e_1_2_1_7_1",
-            "volume-title": "IT Service Management: An Introduction",
-            "author": "van Bon J.",
-            "year": "2002",
-            "unstructured": "van Bon , J. , Kemmerling , G. and Pondman , D . IT Service Management: An Introduction , 2002 . van Bon, J., Kemmerling, G. and Pondman, D. IT Service Management: An Introduction, 2002."
-        },
-        {
-            "key": "e_1_2_1_8_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1145/1743546.1743580"
-        },
-        {
-            "key": "e_1_2_1_9_1",
-            "first-page": "3",
-            "article-title": "It pays to be agile",
-            "volume": "57",
-            "author": "Dattero R.",
-            "year": "2016",
-            "unstructured": "Dattero , R. , Galup , S.D. , Kan , A. and Quan , J . It pays to be agile . J. Computer Information Systems 57 , 3 ( 2016 ), 252--257. Dattero, R., Galup, S.D., Kan, A. and Quan, J. It pays to be agile. J. Computer Information Systems 57, 3 (2016), 252--257.",
-            "journal-title": "J. Computer Information Systems"
-        },
-        {
-            "key": "e_1_2_1_10_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1108/SL-07-2015-0057"
-        },
-        {
-            "key": "e_1_2_1_11_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1145/3159169"
-        },
-        {
-            "key": "e_1_2_1_12_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1145/1506409.1506439"
-        },
-        {
-            "key": "e_1_2_1_13_1",
-            "volume-title": "Management, Engineering, and Technology 7, 2",
-            "author": "Galup S.D.",
-            "year": "2016",
-            "unstructured": "Galup , S.D. , Dattero , R. and Quan , J.J . The compensation benefit of ITIL\u00ae skills and certifications. Intern. J. Service Science , Management, Engineering, and Technology 7, 2 ( 2016 ), 1--15. Galup, S.D., Dattero, R. and Quan, J.J. The compensation benefit of ITIL\u00ae skills and certifications. Intern. J. Service Science, Management, Engineering, and Technology 7, 2 (2016), 1--15."
-        },
-        {
-            "key": "e_1_2_1_14_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1108/vjikms-02-2017-0007"
-        },
-        {
-            "key": "e_1_2_1_15_1",
-            "volume-title": "Stationery Office. ITIL Service Operation. Stationery Office/Tso",
-            "author": "Great Britain",
-            "year": "2011",
-            "unstructured": "Great Britain . Cabinet Office and Great Britain . Stationery Office. ITIL Service Operation. Stationery Office/Tso , 2011 . Great Britain. Cabinet Office and Great Britain. Stationery Office. ITIL Service Operation. Stationery Office/Tso, 2011."
-        },
-        {
-            "key": "e_1_2_1_16_1",
-            "volume-title": "ITIL Continual Service Improvement. Stationery Office/Tso",
-            "author": "Great Britain",
-            "year": "2011",
-            "unstructured": "Great Britain . Cabinet Office and Stationery Office . ITIL Continual Service Improvement. Stationery Office/Tso , 2011 . Great Britain. Cabinet Office and Stationery Office. ITIL Continual Service Improvement. Stationery Office/Tso, 2011."
-        },
-        {
-            "key": "e_1_2_1_17_1",
-            "unstructured": "Haddad C. DevOps = DevOps Principles + DevOps Practices - DZone DevOps 2014 dzone.com; https://dzone.com/articles/devops-devops-principles  Haddad C. DevOps = DevOps Principles + DevOps Practices - DZone DevOps 2014 dzone.com; https://dzone.com/articles/devops-devops-principles"
-        },
-        {
-            "key": "e_1_2_1_18_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1145/2896941.2896957"
-        },
-        {
-            "key": "e_1_2_1_19_1",
-            "volume-title": "The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations. IT Revolution",
-            "author": "Kim G.",
-            "year": "2016",
-            "unstructured": "Kim , G. , Debois , P. , Willis , J. and Humble , J . The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations. IT Revolution 2016 . Kim, G., Debois, P., Willis, J. and Humble, J. The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations. IT Revolution 2016."
-        },
-        {
-            "key": "e_1_2_1_20_1",
-            "unstructured": "Lean Enterprise Institute | Lean Production | Lean Manufacturing | LEI | Lean Services; https://www.lean.org  Lean Enterprise Institute | Lean Production | Lean Manufacturing | LEI | Lean Services; https://www.lean.org"
-        },
-        {
-            "key": "e_1_2_1_21_1",
-            "unstructured": "Mincer J. Schooling Experience and Earnings. 1974.  Mincer J. Schooling Experience and Earnings. 1974."
-        },
-        {
-            "key": "e_1_2_1_22_1",
-            "unstructured": "Pink Elephant; https://www.pinkelephant.com/en.us/  Pink Elephant; https://www.pinkelephant.com/en.us/"
-        },
-        {
-            "key": "e_1_2_1_23_1",
-            "volume-title": "Lean Software Development: An Agile Toolkit: An Agile Toolkit",
-            "author": "Poppendieck M.",
-            "year": "2003",
-            "unstructured": "Poppendieck , M. and Poppendieck , T . Lean Software Development: An Agile Toolkit: An Agile Toolkit . Addison-Wesley , Reading, PA , 2003 . Poppendieck, M. and Poppendieck, T. Lean Software Development: An Agile Toolkit: An Agile Toolkit. Addison-Wesley, Reading, PA, 2003."
-        },
-        {
-            "key": "e_1_2_1_24_1",
-            "unstructured": "Quint Wellington Redwood. ITIL4 FAQs | Quint Group; https://www.quintgroup.com/en-us/insights/itil4-frequently-asked-questions/  Quint Wellington Redwood. ITIL4 FAQs | Quint Group; https://www.quintgroup.com/en-us/insights/itil4-frequently-asked-questions/"
-        },
-        {
-            "key": "e_1_2_1_25_1",
-            "unstructured": "Ranger. Ranger4 | DevOps Evolution Experts; https://www.ranger4.com  Ranger. Ranger4 | DevOps Evolution Experts; https://www.ranger4.com"
-        },
-        {
-            "key": "e_1_2_1_26_1",
-            "first-page": "239",
-            "article-title": "The distribution of earnings and of individual output",
-            "volume": "60",
-            "author": "Roy A.D",
-            "year": "1950",
-            "unstructured": "Roy , A.D . The distribution of earnings and of individual output . Econ. J. Nepal 60 , 239 ( 1950 ), 489. Roy, A.D. The distribution of earnings and of individual output. Econ. J. Nepal 60, 239 (1950), 489.",
-            "journal-title": "Econ. J. Nepal"
-        },
-        {
-            "key": "e_1_2_1_27_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1086/258393"
-        }
-    ],
+    "member": "233",
     "container-title": [
-        "Communications of the ACM"
+        "Journal of Clinical Oncology"
     ],
     "language": "en",
-    "link": [
-        {
-            "URL": "https://dl.acm.org/doi/pdf/10.1145/3372114",
-            "content-type": "unspecified",
-            "content-version": "vor",
-            "intended-application": "similarity-checking"
-        }
-    ],
     "deposited": {
         "date-parts": [
             [
-                2023,
-                1,
-                1
+                2020,
+                5,
+                25
             ]
         ],
-        "date-time": "2023-01-01T06:28:25Z",
-        "timestamp": 1672554505000
+        "date-time": "2020-05-25T15:33:37Z",
+        "timestamp": 1590420817000
     },
-    "score": 15.28705,
+    "score": 15.314435,
     "resource": {
         "primary": {
-            "URL": "https://dl.acm.org/doi/10.1145/3372114"
+            "URL": "https://ascopubs.org/doi/10.1200/JCO.2020.38.15_suppl.e17534"
         }
     },
     "issued": {
         "date-parts": [
             [
                 2020,
-                9,
-                23
+                5,
+                20
             ]
         ]
     },
-    "references-count": 27,
+    "references-count": 0,
     "journal-issue": {
-        "issue": "10",
+        "issue": "15_suppl",
         "published-print": {
             "date-parts": [
                 [
                     2020,
-                    9,
-                    23
+                    5,
+                    20
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1145/3372114"
+        "10.1200/JCO.2020.38.15_suppl.e17534"
     ],
-    "URL": "http://dx.doi.org/10.1145/3372114",
+    "URL": "http://dx.doi.org/10.1200/jco.2020.38.15_suppl.e17534",
     "ISSN": [
-        "0001-0782",
-        "1557-7317"
+        "0732-183X",
+        "1527-7755"
     ],
     "issn-type": [
         {
-            "value": "0001-0782",
+            "value": "0732-183X",
             "type": "print"
         },
         {
-            "value": "1557-7317",
+            "value": "1527-7755",
             "type": "electronic"
         }
     ],
@@ -329,21 +206,9 @@
         "date-parts": [
             [
                 2020,
-                9,
-                23
+                5,
+                20
             ]
         ]
-    },
-    "assertion": [
-        {
-            "value": "2020-09-23",
-            "order": 2,
-            "name": "published",
-            "label": "Published",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        }
-    ]
+    }
 }

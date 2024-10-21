@@ -3,227 +3,236 @@
         "date-parts": [
             [
                 2024,
-                5,
-                9
+                7,
+                8
             ]
         ],
-        "date-time": "2024-05-09T18:39:15Z",
-        "timestamp": 1715279955365
+        "date-time": "2024-07-08T05:21:15Z",
+        "timestamp": 1720416075626
     },
-    "reference-count": 24,
-    "publisher": "IGI Global",
-    "issue": "1",
+    "reference-count": 20,
+    "publisher": "SAGE Publications",
+    "issue": "23-24",
+    "license": [
+        {
+            "start": {
+                "date-parts": [
+                    [
+                        2021,
+                        12,
+                        23
+                    ]
+                ],
+                "date-time": "2021-12-23T00:00:00Z",
+                "timestamp": 1640217600000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "http://journals.sagepub.com/page/policies/text-and-data-mining-license"
+        }
+    ],
     "content-domain": {
-        "domain": [],
-        "crossmark-restriction": false
+        "domain": [
+            "journals.sagepub.com"
+        ],
+        "crossmark-restriction": true
     },
+    "short-container-title": [
+        "J Interpers Violence"
+    ],
     "published-print": {
         "date-parts": [
             [
-                2019,
-                1,
-                1
+                2022,
+                12
             ]
         ]
     },
-    "abstract": "<p>This article studies the influence of enterprise core competence on IT application maturity (ITAM) from the perspectives of management institutional and process management capabilities. The roles of firm ownership and international organization of standard (ISO) certifications are also studied. Based on reliable and valid measurements of IT applications maturity, management institutional capability, and process management capability, the authors collect corresponding data from 123 companies in China. They find a positive relationship between capabilities and ITAM. Management institutional capability has a stronger relationship with ITAM in Chinese state-owned enterprises or public companies; while multinational companies or joint ventures witness a stronger relationship with process management capability. ISO helps companies with low management institutional capability to improve ITAM. However, for companies with higher management institutional capability, ISO mitigates the relationship and poses a shift of the importance to process management capability in improving ITAM.</p>",
-    "DOI": "10.4018/joeuc.2019010104",
+    "abstract": "<jats:p> Verbal coercion experience is common among college women and has sometimes been associated with lower self-esteem. The current study examined self-esteem based on the two verbal coercion items included in the latest version of the most popular measure of sexual victimization experience, the Sexual Experiences Survey-Short Form Victimization (SES-SFV; Koss et al., 2007 ). One item includes verbal tactics categorized as \u201cthreat\u201d and the other item includes verbal tactics categorized as \u201ccriticism.\u201d Undergraduate women ( n = 479) completed the Rosenberg Self-Esteem Scale and the SES-SFV. Results showed that women who experienced criticism reported lower self-esteem than those who did not experience criticism. However, threat experience was not significantly related to women\u2019s self-esteem. Findings support Koss et al.\u2019s suggestion that criticism tactics are more negative than threat tactics, and imply that self-esteem may be negatively associated with some sexually coercive verbal tactics but not associated with others. Future researchers should pay careful attention to operational definitions of verbal coercion. </jats:p>",
+    "DOI": "10.1177/08862605211062989",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2018,
-                10,
+                2021,
+                12,
                 23
             ]
         ],
-        "date-time": "2018-10-23T18:47:26Z",
-        "timestamp": 1540320446000
+        "date-time": "2021-12-23T10:06:08Z",
+        "timestamp": 1640253968000
     },
-    "page": "61-85",
+    "page": "NP23495-NP23503",
+    "update-policy": "http://dx.doi.org/10.1177/sage-journals-update-policy",
     "source": "Crossref",
-    "is-referenced-by-count": 22,
+    "is-referenced-by-count": 2,
     "title": [
-        "IT Application Maturity, Management Institutional Capability and Process Management Capability"
+        "Predicting College Women\u2019s Self-esteem Based on Verbal Coercion Experience and Verbal Tactic Items on the Revised Sexual Experiences Survey"
     ],
-    "prefix": "10.4018",
-    "volume": "31",
+    "prefix": "10.1177",
+    "volume": "37",
     "author": [
         {
-            "given": "Jianping",
-            "family": "Peng",
+            "ORCID": "http://orcid.org/0000-0003-1843-0482",
+            "authenticated-orcid": false,
+            "given": "Suzanne L.",
+            "family": "Osman",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Sun Yat-sen Business School, Sun Yat-sen University, Guangzhou, China"
+                    "name": "Department of Psychology, Salisbury University, Salisbury, MD, USA"
                 }
             ]
         },
         {
-            "given": "Jing",
-            "family": "Quan",
+            "given": "Halle L.",
+            "family": "Lane",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Salisbury University, Salisbury, USA"
-                }
-            ]
-        },
-        {
-            "given": "Le",
-            "family": "Peng",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Krannert School of Management, Purdue University, West Lafayette, USA"
+                    "name": "Department of Psychology, Salisbury University, Salisbury, MD, USA"
                 }
             ]
         }
     ],
-    "member": "2432",
+    "member": "179",
+    "published-online": {
+        "date-parts": [
+            [
+                2021,
+                12,
+                23
+            ]
+        ]
+    },
     "reference": [
         {
-            "key": "JOEUC.2019010104-0",
+            "key": "bibr1-08862605211062989",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2307/4132321"
+            "DOI": "10.1891/0886-6708.26.5.608"
         },
         {
-            "key": "JOEUC.2019010104-1",
-            "unstructured": "CMU. (1993). Capability Maturity Model for Software (Technical Report CMU/SEI-93-TR-024 ESC-TR-93-177, Version 1.1)."
-        },
-        {
-            "key": "JOEUC.2019010104-2",
+            "key": "bibr2-08862605211062989",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.dss.2008.04.003"
+            "DOI": "10.1080/00224490509552275"
         },
         {
-            "key": "JOEUC.2019010104-3",
-            "article-title": "The Process Audit.",
-            "author": "M.Hammer",
+            "key": "bibr3-08862605211062989",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0886260513506052"
+        },
+        {
+            "key": "bibr4-08862605211062989",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0011000012461379"
+        },
+        {
+            "key": "bibr5-08862605211062989",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/a0035915"
+        },
+        {
+            "key": "bibr6-08862605211062989",
+            "first-page": "201",
+            "volume": "18",
+            "author": "Glenn S. A.",
+            "year": "2009",
+            "journal-title": "The Canadian Journal of Human Sexuality"
+        },
+        {
+            "issue": "1",
+            "key": "bibr7-08862605211062989",
+            "first-page": "31",
+            "volume": "16",
+            "author": "Hartwick C.",
             "year": "2007",
-            "journal-title": "Harvard Business Review"
+            "journal-title": "Canadian Journal of Human Sexuality"
         },
         {
-            "key": "JOEUC.2019010104-4",
-            "author": "P.Harmon",
-            "year": "2004",
-            "journal-title": "Evaluating an Organization\u2019s Business Process Maturity"
-        },
-        {
-            "key": "JOEUC.2019010104-5",
+            "key": "bibr8-08862605211062989",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1109/52.2014"
+            "DOI": "10.1891/0886-6708.VV-D-15-00110"
         },
         {
-            "key": "JOEUC.2019010104-6",
+            "key": "bibr9-08862605211062989",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.dss.2007.02.002"
+            "DOI": "10.1111/j.1471-6402.2007.00385.x"
         },
         {
-            "key": "JOEUC.2019010104-7",
+            "key": "bibr10-08862605211062989",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2307/25148735"
+            "DOI": "10.1037/0022-006X.55.2.162"
         },
         {
-            "key": "JOEUC.2019010104-8",
+            "key": "bibr11-08862605211062989",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2307/25148781"
+            "DOI": "10.1037/0022-006X.50.3.455"
         },
         {
-            "key": "JOEUC.2019010104-9",
+            "key": "bibr12-08862605211062989",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.im.2003.12.011"
+            "DOI": "10.1111/j.1471-6402.2004.00146.x"
         },
         {
-            "key": "JOEUC.2019010104-10",
-            "unstructured": "Min, Q. (2005). An empirical study of ERP critical success factors in Chinese enterprises [Doctoral Dissertation]. Dalian University of Science and Technology, Dalian, China."
-        },
-        {
-            "issue": "November-December",
-            "key": "JOEUC.2019010104-11",
-            "first-page": "61",
-            "article-title": "What is strategy?",
-            "author": "M. E.Porter",
-            "year": "1996",
-            "journal-title": "Harvard Business Review"
-        },
-        {
-            "key": "JOEUC.2019010104-12",
+            "key": "bibr13-08862605211062989",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1287/mnsc.1060.0583"
+            "DOI": "10.1080/00223891.2014.923436"
         },
         {
-            "key": "JOEUC.2019010104-13",
+            "key": "bibr14-08862605211062989",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.ejor.2005.07.002"
+            "DOI": "10.1177/0886260508314336"
         },
         {
-            "key": "JOEUC.2019010104-14",
-            "unstructured": "Somers, T. M., & Nelson, K. 2001. The impact of Critical Factor across the Stages of ERP implementation. In 34th Hawaii international Conference on system Sciences."
-        },
-        {
-            "key": "JOEUC.2019010104-15",
+            "key": "bibr15-08862605211062989",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0164-1212(99)00121-1"
+            "DOI": "10.1111/j.1471-6402.2004.00125.x"
         },
         {
-            "key": "JOEUC.2019010104-16",
+            "key": "bibr16-08862605211062989",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0377-2217(02)00547-7"
+            "DOI": "10.1515/9781400876136"
         },
         {
-            "key": "JOEUC.2019010104-17",
+            "key": "bibr17-08862605211062989",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jss.2007.10.004"
+            "DOI": "10.1177/088626099014005006"
         },
         {
-            "key": "JOEUC.2019010104-18",
-            "unstructured": "Xiao, J. 2007. Research on IT Application Maturity and Critical Factors [Doctoral Dissertation]. Sun Yat-sen University, Guangzhou, China."
-        },
-        {
-            "key": "JOEUC.2019010104-19",
-            "author": "J.Xiao",
-            "year": "2010",
-            "journal-title": "Theory and Method of Evaluation of Enterprise Informatization Level"
-        },
-        {
-            "issue": "5",
-            "key": "JOEUC.2019010104-20",
-            "first-page": "110",
-            "article-title": "An Exploratory Study of IT Application Maturity in Enterprises.",
-            "volume": "47",
-            "author": "J.Xiao",
-            "year": "2007",
-            "journal-title": "Journal of Sun Yat-sen University"
-        },
-        {
-            "key": "JOEUC.2019010104-21",
-            "author": "W. P.Yu",
-            "year": "2004",
-            "journal-title": "The Research on Enterprise Sustainable Development Based on Capability Mix Model"
-        },
-        {
-            "key": "JOEUC.2019010104-22",
+            "key": "bibr18-08862605211062989",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1108/14637159710161585"
+            "DOI": "10.1891/0886-6708.13.1.47"
         },
         {
-            "key": "JOEUC.2019010104-23",
-            "first-page": "73",
-            "article-title": "An empirical analysis of ERP critical success factors in Chinese enterprises.",
-            "volume": "2",
-            "author": "Q.Zhong",
-            "year": "2004",
-            "journal-title": "Chinese Journal of Soft Science"
+            "key": "bibr19-08862605211062989",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1023/A:1018717216774"
+        },
+        {
+            "key": "bibr20-08862605211062989",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/088626097012002009"
         }
     ],
     "container-title": [
-        "Journal of Organizational and End User Computing"
+        "Journal of Interpersonal Violence"
     ],
-    "language": "ng",
+    "language": "en",
     "link": [
         {
-            "URL": "https://www.igi-global.com/viewtitle.aspx?TitleId=216972",
+            "URL": "http://journals.sagepub.com/doi/pdf/10.1177/08862605211062989",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "http://journals.sagepub.com/doi/full-xml/10.1177/08862605211062989",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "http://journals.sagepub.com/doi/pdf/10.1177/08862605211062989",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -233,64 +242,64 @@
         "date-parts": [
             [
                 2022,
-                5,
-                6
+                11,
+                1
             ]
         ],
-        "date-time": "2022-05-06T15:49:53Z",
-        "timestamp": 1651852193000
+        "date-time": "2022-11-01T10:28:06Z",
+        "timestamp": 1667298486000
     },
-    "score": 14.565618,
+    "score": 16.860111,
     "resource": {
         "primary": {
-            "URL": "https://services.igi-global.com/resolvedoi/resolve.aspx?doi=10.4018/JOEUC.2019010104"
+            "URL": "http://journals.sagepub.com/doi/10.1177/08862605211062989"
         }
     },
-    "subtitle": [
-        ""
-    ],
     "issued": {
         "date-parts": [
             [
-                2019,
-                1,
-                1
+                2021,
+                12,
+                23
             ]
         ]
     },
-    "references-count": 24,
+    "references-count": 20,
     "journal-issue": {
-        "issue": "1",
+        "issue": "23-24",
         "published-print": {
             "date-parts": [
                 [
-                    2019,
-                    1
+                    2022,
+                    12
                 ]
             ]
         }
     },
-    "URL": "http://dx.doi.org/10.4018/joeuc.2019010104",
+    "alternative-id": [
+        "10.1177/08862605211062989"
+    ],
+    "URL": "http://dx.doi.org/10.1177/08862605211062989",
     "ISSN": [
-        "1546-2234",
-        "1546-5012"
+        "0886-2605",
+        "1552-6518"
     ],
     "issn-type": [
         {
-            "value": "1546-2234",
+            "value": "0886-2605",
             "type": "print"
         },
         {
-            "value": "1546-5012",
+            "value": "1552-6518",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2019,
-                1,
-                1
+                2021,
+                12,
+                23
             ]
         ]
     }

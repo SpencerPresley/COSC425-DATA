@@ -2,283 +2,288 @@
     "indexed": {
         "date-parts": [
             [
-                2023,
-                9,
-                16
+                2024,
+                10,
+                7
             ]
         ],
-        "date-time": "2023-09-16T08:15:06Z",
-        "timestamp": 1694852106262
+        "date-time": "2024-10-07T04:07:40Z",
+        "timestamp": 1728274060361
     },
-    "reference-count": 33,
-    "publisher": "Informa UK Limited",
+    "reference-count": 19,
+    "publisher": "SAGE Publications",
     "issue": "1",
+    "license": [
+        {
+            "start": {
+                "date-parts": [
+                    [
+                        2019,
+                        8,
+                        18
+                    ]
+                ],
+                "date-time": "2019-08-18T00:00:00Z",
+                "timestamp": 1566086400000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://journals.sagepub.com/page/policies/text-and-data-mining-license"
+        }
+    ],
     "content-domain": {
         "domain": [
-            "www.tandfonline.com"
+            "journals.sagepub.com"
         ],
         "crossmark-restriction": true
     },
     "short-container-title": [
-        "Social Dynamics"
+        "Literacy Research: Theory, Method, and Practice"
     ],
     "published-print": {
         "date-parts": [
             [
                 2019,
-                1,
-                2
+                11
             ]
         ]
     },
-    "DOI": "10.1080/02533952.2019.1589323",
+    "abstract": "<jats:p> This article draws from an ongoing longitudinal qualitative inquiry into the preparation and development of social justice\u2013oriented urban English teachers. It examines the cases of three graduates of an urban education\u2013focused teacher preparation program who claim different intersectional identities and have completed their fourth year as urban educators. The article explores two research questions. First, how do these teachers understand and enact critical education practices within their curriculum and instruction, socially situated relationships, and institutional structures? Second, how do they experience and understand their sociocultural identities as contributors to their practices as critical educators and the associated outcomes? Two findings are discussed. First, the teachers felt greatest agency and success within their classrooms (in comparison to other institutional spaces) to enact social justice\u2013oriented curricula, instruction, and other educational practices, using relationship-building with students as the foundation of their work. Second, identity constructs of gender, age, and race significantly mediated the teachers\u2019 relationship-building efforts with colleagues and administrators, the teachers\u2019 feelings of agency, and their activities and outcomes related to justice-oriented change at institutional levels beyond the classroom. This study contributes a rare longitudinal example of how in-service critical educators\u2019 sociocultural identities impact their literacy pedagogies and institutional efforts to advance educational justice. </jats:p>",
+    "DOI": "10.1177/2381336919870267",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
                 2019,
-                4,
-                8
+                8,
+                19
             ]
         ],
-        "date-time": "2019-04-08T11:59:57Z",
-        "timestamp": 1554724797000
+        "date-time": "2019-08-19T04:22:25Z",
+        "timestamp": 1566188545000
     },
-    "page": "138-155",
-    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
+    "page": "183-204",
+    "update-policy": "http://dx.doi.org/10.1177/sage-journals-update-policy",
     "source": "Crossref",
-    "is-referenced-by-count": 0,
+    "is-referenced-by-count": 1,
     "title": [
-        "William Dorsey and the construction of an African American history archive"
+        "The Intersections of Identities and Justice-Oriented Efforts of Urban Literacy Educators"
     ],
-    "prefix": "10.1080",
-    "volume": "45",
+    "prefix": "10.1177",
+    "volume": "68",
     "author": [
         {
-            "ORCID": "http://orcid.org/0000-0003-1787-7397",
-            "authenticated-orcid": false,
-            "given": "Aston",
-            "family": "Gonzalez",
+            "given": "Allison",
+            "family": "Skerrett",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Department of History, Salisbury University, Salisbury, USA"
+                    "name": "The University of Texas at Austin, Austin, TX, USA"
+                }
+            ]
+        },
+        {
+            "ORCID": "http://orcid.org/0000-0003-1205-7250",
+            "authenticated-orcid": false,
+            "given": "Thea",
+            "family": "Williamson",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Salisbury University, Salisbury, MD, USA"
+                }
+            ]
+        },
+        {
+            "given": "Amber",
+            "family": "Warrington",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Boise State University, Boise, ID, USA"
+                }
+            ]
+        },
+        {
+            "given": "Cori",
+            "family": "Salmer\u00f3n",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "The University of Texas at Austin, Austin, TX, USA"
+                }
+            ]
+        },
+        {
+            "given": "Randi Beth",
+            "family": "Brady",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "The University of Texas at Austin, Austin, TX, USA"
                 }
             ]
         }
     ],
-    "member": "301",
+    "member": "179",
     "published-online": {
         "date-parts": [
             [
                 2019,
-                4,
-                8
+                8,
+                18
             ]
         ]
     },
     "reference": [
         {
-            "key": "CIT0001",
-            "unstructured": ""
+            "volume-title": "Building adolescent literacy in today\u2019s English classrooms",
+            "year": "2011",
+            "author": "Bomer R.",
+            "key": "bibr1-2381336919870267"
         },
         {
-            "key": "CIT0003",
-            "unstructured": "Historical Society of Pennsylvania (HSP)"
+            "volume-title": "Transforming qualitative information: Thematic analysis and code development",
+            "year": "1998",
+            "author": "Boyatzis R. E.",
+            "key": "bibr2-2381336919870267"
         },
         {
-            "key": "CIT0006",
-            "unstructured": "Anon. 1878.Sixty-First Annual Report of the American Colonization Society. Washington: American Colonization Society."
-        },
-        {
-            "key": "CIT0007",
-            "volume-title": "Minutes of the Fifth Annual Convention of the Colored Citizens of the State of New York",
-            "author": "Anon",
-            "year": "1844"
-        },
-        {
-            "key": "CIT0008",
-            "volume-title": "Rare Afro-Americana: A Reconstruction of the Adger Library",
-            "author": "Ball W.",
-            "year": "1981"
-        },
-        {
-            "key": "CIT0009",
-            "volume-title": "Frederick Douglass\u2019 Civil War: Keeping Faith in Jubilee",
-            "author": "Blight D. W.",
-            "year": "1991"
-        },
-        {
-            "key": "CIT0011",
-            "unstructured": "Chambliss, M. 2016. \u201cSaving the Race: Black Archives and the Structuring of African American History, 1914\u20131968.\u201d PhD diss., Yale University."
-        },
-        {
-            "key": "CIT0012",
-            "volume-title": "Liberation Historiography: African American Writers and the Challenge of History, 1794\u20131861",
-            "author": "Ernest J.",
-            "year": "2004"
-        },
-        {
-            "key": "CIT0013",
-            "volume-title": "George Washington Williams: A Biography",
-            "author": "Franklin J. H.",
-            "year": "1998"
-        },
-        {
-            "key": "CIT0014",
-            "volume-title": "Writing with Scissors: American Scrapbooks from the Civil War to the Harlem Renaissance",
-            "author": "Garvey E. G.",
-            "year": "2013"
-        },
-        {
-            "key": "CIT0015",
+            "key": "bibr3-2381336919870267",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1353/afa.2015.0004"
+            "DOI": "10.1017/S1742058X13000349"
         },
         {
-            "key": "CIT0016",
+            "key": "bibr4-2381336919870267",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/978-90-481-2660-6_27"
+        },
+        {
+            "key": "bibr5-2381336919870267",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/1229039"
+        },
+        {
+            "key": "bibr6-2381336919870267",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1468-5914.1990.tb00174.x"
+        },
+        {
+            "volume-title": "Pedagogy of the oppressed",
+            "year": "1970",
+            "author": "Freire P",
+            "key": "bibr7-2381336919870267"
+        },
+        {
+            "key": "bibr8-2381336919870267",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1468-5914.1991.tb00203.x"
+        },
+        {
+            "volume-title": "Literacy and power",
+            "year": "2010",
+            "author": "Janks H.",
+            "key": "bibr9-2381336919870267"
+        },
+        {
+            "volume-title": "Qualitative data analysis: A methods sourcebook",
+            "year": "2013",
+            "author": "Miles M. B.",
+            "key": "bibr10-2381336919870267"
+        },
+        {
+            "key": "bibr11-2381336919870267",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/1464700115620864"
+        },
+        {
+            "key": "bibr12-2381336919870267",
             "doi-asserted-by": "crossref",
-            "volume-title": "The Emergence of Professional Social Science: The American Social Science Association and the Nineteenth-Century Crisis of Authority",
-            "author": "Haskell T. L.",
-            "year": "2001",
-            "DOI": "10.56021/9780801865732"
+            "first-page": "41",
+            "DOI": "10.58680/ee201527529",
+            "volume": "48",
+            "author": "Simon R.",
+            "year": "2015",
+            "journal-title": "English Education"
         },
         {
-            "key": "CIT0017",
-            "volume-title": "David Ruggles: A Radical Black Abolitionist and the Underground Railroad in New York City",
-            "author": "Hodges G. R. G.",
-            "year": "2012"
-        },
-        {
-            "key": "CIT0018",
+            "key": "bibr13-2381336919870267",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1086/JAAHv92n2p218"
+            "DOI": "10.1080/13613324.2010.543391"
         },
         {
-            "key": "CIT0019",
+            "key": "bibr14-2381336919870267",
+            "doi-asserted-by": "crossref",
+            "first-page": "314",
+            "DOI": "10.58680/ee201527380",
+            "volume": "47",
+            "author": "Skerrett A.",
+            "year": "2015",
+            "journal-title": "English Education"
+        },
+        {
+            "key": "bibr15-2381336919870267",
+            "doi-asserted-by": "crossref",
+            "first-page": "116",
+            "DOI": "10.58680/ee201829439",
+            "volume": "50",
+            "author": "Skerrett A.",
+            "year": "2018",
+            "journal-title": "English Education"
+        },
+        {
+            "key": "bibr16-2381336919870267",
+            "doi-asserted-by": "crossref",
+            "first-page": "64",
+            "DOI": "10.2307/464747",
+            "volume": "17",
+            "author": "Spillers H. J.",
+            "year": "1987",
+            "journal-title": "Diacritics, Culture and Countermemory: The \u201cAmerican\u201d Connection"
+        },
+        {
+            "key": "bibr17-2381336919870267",
             "doi-asserted-by": "publisher",
-            "DOI": "10.5149/9780807888902_jones"
+            "DOI": "10.1177/016146811111300107"
         },
         {
-            "key": "CIT0020",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1353/jer.2006.0030"
+            "key": "bibr18-2381336919870267",
+            "doi-asserted-by": "crossref",
+            "first-page": "154",
+            "DOI": "10.58680/rte201527600",
+            "volume": "50",
+            "author": "Thomas E. E.",
+            "year": "2015",
+            "journal-title": "Research in the Teaching of English"
         },
         {
-            "key": "CIT0021",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1353/jer.0.0072"
-        },
-        {
-            "key": "CIT0022",
-            "volume-title": "Festivals of Freedom: Memory and Meaning in African American Emancipation Celebrations, 1808\u20131915",
-            "author": "Kachun M. S.",
-            "year": "2003"
-        },
-        {
-            "key": "CIT0023",
-            "volume-title": "William Dorsey\u2019s Philadelphia and Ours",
-            "author": "Lane R.",
-            "year": "1993"
-        },
-        {
-            "key": "CIT0024",
-            "first-page": "23",
-            "volume-title": "Black Bibliophiles and Collectors: Preservers of Black History",
-            "author": "Martin T.",
-            "year": "1990"
-        },
-        {
-            "key": "CIT0025",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1215/9780822384144"
-        },
-        {
-            "key": "CIT0026",
-            "volume-title": "Early History of Negroes in Business in Philadelphia: Read before the American Negro Historical Society, March, 1913",
-            "author": "Minton H. M.",
-            "year": "1913"
-        },
-        {
-            "key": "CIT0027",
-            "volume-title": "Exodusters: Black Migration to Kansas after Reconstruction",
-            "author": "Painter N. I.",
-            "year": "1992"
-        },
-        {
-            "key": "CIT0028",
-            "volume-title": "In Memoriam of the Late Rev. Alex Crummell, D. D. Of Washington, D.C",
-            "author": "Phillips H. L.",
-            "year": "1899"
-        },
-        {
-            "key": "CIT0029",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/2292029"
-        },
-        {
-            "key": "CIT0030",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/523208"
-        },
-        {
-            "key": "CIT0031",
-            "volume-title": "Men of Mark: Eminent, Progressive and Rising",
-            "author": "Simmons W. J.",
-            "year": "1887"
-        },
-        {
-            "key": "CIT0032",
-            "volume-title": "Arthur Alfonso Schomburg: Black Bibliophile & Collector",
-            "author": "Sinnette E. D. V.",
-            "year": "1989"
-        },
-        {
-            "issue": "4",
-            "key": "CIT0033",
-            "first-page": "254",
-            "volume": "37",
-            "author": "Spady J. G.",
-            "year": "1974",
-            "journal-title": "Negro History Bulletin"
-        },
-        {
-            "key": "CIT0034",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.9783/9780812295771"
-        },
-        {
-            "key": "CIT0035",
-            "volume-title": "Recording America\u2019s Past: An Interpretation of the Development of Historical Studies in America, 1607\u20131884",
-            "author": "Van Tassel D. D.",
-            "year": "1960"
-        },
-        {
-            "issue": "2",
-            "key": "CIT0036",
-            "first-page": "287",
-            "volume": "6",
-            "author": "Wayman H. H.",
-            "year": "1903",
-            "journal-title": "Colored American Magazine"
-        },
-        {
-            "issue": "2",
-            "key": "CIT0037",
-            "first-page": "165",
-            "volume": "42",
-            "author": "Welburn W. C.",
-            "year": "2007",
-            "journal-title": "Libraries & the Cultural Record"
+            "key": "bibr19-2381336919870267",
+            "first-page": "66",
+            "volume": "5",
+            "author": "Williamson T.",
+            "year": "2017",
+            "journal-title": "Texas Education Review"
         }
     ],
     "container-title": [
-        "Social Dynamics"
+        "Literacy Research: Theory, Method, and Practice"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/02533952.2019.1589323",
+            "URL": "https://journals.sagepub.com/doi/pdf/10.1177/2381336919870267",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://journals.sagepub.com/doi/full-xml/10.1177/2381336919870267",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://journals.sagepub.com/doi/pdf/10.1177/2381336919870267",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -287,101 +292,66 @@
     "deposited": {
         "date-parts": [
             [
-                2023,
-                9,
-                15
+                2024,
+                10,
+                6
             ]
         ],
-        "date-time": "2023-09-15T13:57:35Z",
-        "timestamp": 1694786255000
+        "date-time": "2024-10-06T07:47:11Z",
+        "timestamp": 1728200831000
     },
-    "score": 15.867793,
+    "score": 13.613001,
     "resource": {
         "primary": {
-            "URL": "https://www.tandfonline.com/doi/full/10.1080/02533952.2019.1589323"
+            "URL": "https://journals.sagepub.com/doi/10.1177/2381336919870267"
         }
     },
     "issued": {
         "date-parts": [
             [
                 2019,
-                1,
-                2
+                8,
+                18
             ]
         ]
     },
-    "references-count": 33,
+    "references-count": 19,
     "journal-issue": {
         "issue": "1",
-        "published-online": {
-            "date-parts": [
-                [
-                    2019,
-                    4,
-                    17
-                ]
-            ]
-        },
         "published-print": {
             "date-parts": [
                 [
                     2019,
-                    1,
-                    2
+                    11
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1080/02533952.2019.1589323"
+        "10.1177/2381336919870267"
     ],
-    "URL": "http://dx.doi.org/10.1080/02533952.2019.1589323",
+    "URL": "http://dx.doi.org/10.1177/2381336919870267",
     "ISSN": [
-        "0253-3952",
-        "1940-7874"
+        "2381-3377",
+        "2381-3377"
     ],
     "issn-type": [
         {
-            "value": "0253-3952",
-            "type": "print"
+            "type": "print",
+            "value": "2381-3377"
         },
         {
-            "value": "1940-7874",
-            "type": "electronic"
+            "type": "electronic",
+            "value": "2381-3377"
         }
     ],
     "published": {
         "date-parts": [
             [
                 2019,
-                1,
-                2
+                8,
+                18
             ]
         ]
-    },
-    "assertion": [
-        {
-            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
-            "order": 1,
-            "name": "peerreview_statement",
-            "label": "Peer Review Statement"
-        },
-        {
-            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=rsdy20",
-            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=rsdy20",
-            "order": 2,
-            "name": "aims_and_scope_url",
-            "label": "Aim & Scope"
-        },
-        {
-            "value": "2019-04-08",
-            "order": 3,
-            "name": "published",
-            "label": "Published",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        }
-    ]
+    }
 }

@@ -4,31 +4,31 @@
             [
                 2022,
                 4,
-                5
+                2
             ]
         ],
-        "date-time": "2022-04-05T22:01:16Z",
-        "timestamp": 1649196076224
+        "date-time": "2022-04-02T12:27:29Z",
+        "timestamp": 1648902449904
     },
     "reference-count": 0,
     "publisher": "Oxford University Press (OUP)",
-    "issue": "2",
+    "issue": "Supplement_1",
     "license": [
         {
             "start": {
                 "date-parts": [
                     [
-                        2020,
-                        9,
-                        1
+                        2019,
+                        11,
+                        9
                     ]
                 ],
-                "date-time": "2020-09-01T00:00:00Z",
-                "timestamp": 1598918400000
+                "date-time": "2019-11-09T00:00:00Z",
+                "timestamp": 1573257600000
             },
             "content-version": "vor",
-            "delay-in-days": 0,
-            "URL": "https://academic.oup.com/journals/pages/open_access/funder_policies/chorus/standard_publication_model"
+            "delay-in-days": 8,
+            "URL": "http://creativecommons.org/licenses/by/4.0/"
         }
     ],
     "content-domain": {
@@ -38,41 +38,42 @@
     "published-print": {
         "date-parts": [
             [
-                2020,
-                9,
-                1
+                2019,
+                11,
+                8
             ]
         ]
     },
-    "DOI": "10.1093/jahist/jaaa300",
+    "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>With the aging of Baby Boomers, 2030 will mark the first time in U.S. history that those aged 65 and older will outnumber children. This population shift is expected to place unprecedented demands on the healthcare system in terms of both volume and complexity of care. Given these population shifts and emphasis on an interdisciplinary approach to care, a 4-credit Honors aging course was developed for Honors students in nursing and other health-related majors. Aging Reexamined, Reimagined is offered in a discussion/seminar format with limited enrollment to allow for deep reflective discourse about pertinent issues affecting older adults. Topics include physical/cognitive changes, ageism, Alzheimer\u2019s disease, sexuality, aging in place, polypharmacy, addiction, depression, caregiving, elder justice, and end-of-life care. Guest speakers share their expertise on selected issues, otherwise students alternate leading discussions on remaining topics. There are three focused reflections on assigned experiences which include conducting a videotaped interview with a retired community-based older adult, attending a support group or senior center activity, and visiting a center to view various physical/technological adaptive aids that maintain mobility and independence in the home. There is also a culminating research paper on an issue of their choice. Student evaluations are overwhelmingly positive; comments include gaining in-depth knowledge about the unique needs of this population and the importance of healthy aging with an emphasis on a positive, inter-professional approach to care. It is incumbent upon educators to better prepare students to recognize ageist attitudes, as well as address the significant impact of this \u201clongevity revolution\u201d.</jats:p>",
+    "DOI": "10.1093/geroni/igz038.540",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2020,
-                8,
-                12
+                2019,
+                11,
+                11
             ]
         ],
-        "date-time": "2020-08-12T03:37:34Z",
-        "timestamp": 1597203454000
+        "date-time": "2019-11-11T21:11:54Z",
+        "timestamp": 1573506714000
     },
-    "page": "469-470",
+    "page": "S150-S150",
     "source": "Crossref",
     "is-referenced-by-count": 0,
     "title": [
-        "Creole Drama: Theatre and Society in Antebellum New Orleans"
+        "DEVELOPMENT AND IMPLEMENTATION OF AN INTERDISCIPLINARY HONORS COURSE ON AGING"
     ],
     "prefix": "10.1093",
-    "volume": "107",
+    "volume": "3",
     "author": [
         {
-            "given": "Aston",
-            "family": "Gonzalez",
+            "given": "Mary C",
+            "family": "DiBartolo",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Salisbury University, Salisbury, Maryland"
+                    "name": "Salisbury University, Salisbury, Maryland, United States"
                 }
             ]
         }
@@ -81,25 +82,25 @@
     "published-online": {
         "date-parts": [
             [
-                2020,
-                9,
-                1
+                2019,
+                11,
+                8
             ]
         ]
     },
     "container-title": [
-        "Journal of American History"
+        "Innovation in Aging"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "http://academic.oup.com/jah/article-pdf/107/2/469/33762865/jaaa300.pdf",
+            "URL": "http://academic.oup.com/innovateage/article-pdf/3/Supplement_1/S150/33005845/igz038.540.pdf",
             "content-type": "application/pdf",
             "content-version": "vor",
             "intended-application": "syndication"
         },
         {
-            "URL": "http://academic.oup.com/jah/article-pdf/107/2/469/33762865/jaaa300.pdf",
+            "URL": "http://academic.oup.com/innovateage/article-pdf/3/Supplement_1/S150/33005845/igz038.540.pdf",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -109,80 +110,63 @@
         "date-parts": [
             [
                 2020,
-                9,
-                22
+                4,
+                4
             ]
         ],
-        "date-time": "2020-09-22T13:35:28Z",
-        "timestamp": 1600781728000
+        "date-time": "2020-04-04T07:45:46Z",
+        "timestamp": 1585986346000
     },
-    "score": 16.16397,
+    "score": 16.019142,
     "resource": {
         "primary": {
-            "URL": "https://academic.oup.com/jah/article/107/2/469/5907695"
+            "URL": "https://academic.oup.com/innovateage/article/3/Supplement_1/S150/5617350"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2020,
-                9,
-                1
+                2019,
+                11
             ]
         ]
     },
     "references-count": 0,
     "journal-issue": {
-        "issue": "2",
-        "published-online": {
-            "date-parts": [
-                [
-                    2020,
-                    9,
-                    1
-                ]
-            ]
-        },
+        "issue": "Supplement_1",
         "published-print": {
             "date-parts": [
                 [
-                    2020,
-                    9,
-                    1
+                    2019,
+                    11,
+                    8
                 ]
             ]
         }
     },
-    "URL": "http://dx.doi.org/10.1093/jahist/jaaa300",
+    "URL": "http://dx.doi.org/10.1093/geroni/igz038.540",
     "ISSN": [
-        "0021-8723",
-        "1945-2314"
+        "2399-5300"
     ],
     "issn-type": [
         {
-            "value": "0021-8723",
-            "type": "print"
-        },
-        {
-            "value": "1945-2314",
+            "value": "2399-5300",
             "type": "electronic"
         }
     ],
     "published-other": {
         "date-parts": [
             [
-                2020,
-                9,
-                1
+                2019,
+                11
             ]
         ]
     },
     "published": {
         "date-parts": [
             [
-                2020,
-                9,
-                1
+                2019,
+                11
             ]
         ]
     }

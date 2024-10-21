@@ -3,341 +3,248 @@
         "date-parts": [
             [
                 2024,
-                2,
-                4
+                5,
+                28
             ]
         ],
-        "date-time": "2024-02-04T06:04:19Z",
-        "timestamp": 1707026659320
+        "date-time": "2024-05-28T05:11:54Z",
+        "timestamp": 1716873114476
     },
-    "reference-count": 41,
-    "publisher": "IGI Global",
-    "issue": "1",
+    "reference-count": 15,
+    "publisher": "World Scientific Pub Co Pte Lt",
+    "issue": "10",
+    "funder": [
+        {
+            "name": "the National Science Foundation",
+            "award": [
+                "DMS-170222"
+            ]
+        }
+    ],
     "content-domain": {
         "domain": [],
         "crossmark-restriction": false
     },
+    "short-container-title": [
+        "Int. J. Number Theory"
+    ],
     "published-print": {
         "date-parts": [
             [
-                2019,
-                1
+                2020,
+                11
             ]
         ]
     },
-    "abstract": "<jats:p>This research investigates the software vendor-based relationships between software vulnerability and application security risk. The data is obtained from the China National Vulnerability Database of Information Security (CNNVD). At first, we use the latent class model to classify the software vendors into three categories, and then employ regression models to estimate relationships between software vulnerability and application security risk for each of the three categories of the software vendors. The results show the relationships vary across the software vendors. The findings suggest that an IT vendor should learn specific vulnerability features according to its type to effectively avoid vulnerability generation on their products.</jats:p>",
-    "DOI": "10.4018/irmj.2019010103",
+    "abstract": "<jats:p> For primitive nontrivial Dirichlet characters [Formula: see text] and [Formula: see text], we study the weight zero newform Eisenstein series [Formula: see text] at [Formula: see text]. The holomorphic part of this function has a transformation rule that we express in finite terms as a generalized Dedekind sum. This gives rise to the explicit construction (in finite terms) of elements of [Formula: see text]. We also give a short proof of the reciprocity formula for this Dedekind sum. </jats:p>",
+    "DOI": "10.1142/s1793042120501092",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2018,
-                10,
-                8
+                2020,
+                6,
+                12
             ]
         ],
-        "date-time": "2018-10-08T17:08:35Z",
-        "timestamp": 1539018515000
+        "date-time": "2020-06-12T06:43:45Z",
+        "timestamp": 1591944225000
     },
-    "page": "48-57",
+    "page": "2129-2139",
     "source": "Crossref",
-    "is-referenced-by-count": 5,
+    "is-referenced-by-count": 4,
     "title": [
-        "Software Vulnerability and Application Security Risk"
+        "Dedekind sums arising from newform Eisenstein series"
     ],
-    "prefix": "10.4018",
-    "volume": "32",
+    "prefix": "10.1142",
+    "volume": "16",
     "author": [
         {
-            "given": "Jianping",
-            "family": "Peng",
+            "given": "T.",
+            "family": "Stucker",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Sun Yat-Sen University, Guang Zhou, China"
+                    "name": "University of Idaho, Moscow, ID 83844, USA"
                 }
             ]
         },
         {
-            "given": "Meiwen",
-            "family": "Guo",
+            "given": "A.",
+            "family": "Vennos",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Xinhua College of Sun Yet-Sen University, Guang Zhou, China"
+                    "name": "Salisbury University, Salisbury, MD 21801, USA"
                 }
             ]
         },
         {
-            "given": "Jing",
-            "family": "Quan",
+            "given": "M. P.",
+            "family": "Young",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Salisbury University, Salisbury, USA"
+                    "name": "Department of Mathematics, Texas A&M University, College Station, TX 77843-3368, USA"
                 }
             ]
         }
     ],
-    "member": "2432",
+    "member": "219",
+    "published-online": {
+        "date-parts": [
+            [
+                2020,
+                8,
+                21
+            ]
+        ]
+    },
     "reference": [
         {
-            "issue": "1",
-            "key": "IRMJ.2019010103-0",
-            "first-page": "39",
-            "article-title": "The Elusive Silver Lining: How We Fail to Learn from Software Development Failures.",
-            "volume": "32",
-            "author": "T. K.Abdel-Hamid",
-            "year": "1990",
-            "journal-title": "Sloan Management Review"
-        },
-        {
-            "issue": "1",
-            "key": "IRMJ.2019010103-1",
-            "first-page": "1",
-            "article-title": "A general, but Readily Adaptable Model Information System Risk.",
-            "volume": "14",
-            "author": "S.Alter",
-            "year": "2004",
-            "journal-title": "Communications of the Association for Information Systems"
-        },
-        {
-            "key": "IRMJ.2019010103-2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/02664769823250"
-        },
-        {
-            "key": "IRMJ.2019010103-3",
-            "unstructured": "Andreessen, M. (2011, August 20). Why Software Is Eating The World. Wall Street Journal -Eastern Edition, C2."
-        },
-        {
-            "key": "IRMJ.2019010103-4",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1287/isre.1080.0226"
-        },
-        {
-            "key": "IRMJ.2019010103-5",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1145/1330311.1330325"
-        },
-        {
-            "key": "IRMJ.2019010103-6",
+            "key": "S1793042120501092BIB001",
             "doi-asserted-by": "crossref",
-            "unstructured": "Bozorgi, M., Saul, L. K., Savage, S., & Voelker, G. M. (2010). Beyond heuristics: Learning to Classify Vulnerabilities and Predict Exploits. In Proceedings of the 16th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining. Dge Discovery and Data Mining.",
-            "DOI": "10.1145/1835804.1835821"
+            "unstructured": "T. Apostol,  Modular Functions and Dirichlet Series in Number Theory,  2nd edn.  Graduate Texts in Mathematics, Vol.  41  (Springer-Verlag,  New York,  1990),  x+204 pp.",
+            "DOI": "10.1007/978-1-4612-0999-7"
+        },
+        {
+            "key": "S1793042120501092BIB002",
+            "doi-asserted-by": "crossref",
+            "unstructured": "B. Berndt,  Character Transformation Formulae Similar to Those for The Dedekind Eta-Function,  Proceedings of Symposia in Pure Mathematics, Vol.  24  (American Mathematical Society,  Providence, RI,  1973),  pp. 9\u201330.",
+            "DOI": "10.1090/pspum/024/0337787"
+        },
+        {
+            "issue": "3",
+            "key": "S1793042120501092BIB003",
+            "doi-asserted-by": "crossref",
+            "first-page": "299",
+            "DOI": "10.4064/aa-28-3-299-320",
+            "volume": "28",
+            "author": "Berndt B.",
+            "year": "1975",
+            "journal-title": "Acta Arith."
         },
         {
             "issue": "4",
-            "key": "IRMJ.2019010103-7",
-            "first-page": "58",
-            "article-title": "The Relationship between Job Satisfaction, Affective Commitment, Organizational Learning Climate and Corporate Performance.",
-            "volume": "2",
-            "author": "A.Budihardjo",
-            "year": "2013",
-            "journal-title": "GSTF Business Review"
+            "key": "S1793042120501092BIB004",
+            "doi-asserted-by": "crossref",
+            "first-page": "413",
+            "DOI": "10.1016/0022-314X(75)90045-1",
+            "volume": "7",
+            "author": "Berndt B.",
+            "year": "1975",
+            "journal-title": "J. Number Theory"
         },
         {
-            "key": "IRMJ.2019010103-8",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s00181-010-0413-4"
+            "issue": "2",
+            "key": "S1793042120501092BIB005",
+            "doi-asserted-by": "crossref",
+            "first-page": "346",
+            "DOI": "10.1016/j.jnt.2006.09.006",
+            "volume": "124",
+            "author": "Cenkci M.",
+            "year": "2007",
+            "journal-title": "J. Number Theory"
         },
         {
-            "key": "IRMJ.2019010103-9",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10260-012-0214-3"
-        },
-        {
-            "key": "IRMJ.2019010103-10",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1108/14635771211244309"
-        },
-        {
-            "key": "IRMJ.2019010103-11",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.asoc.2010.06.005"
-        },
-        {
-            "key": "IRMJ.2019010103-12",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/1879431"
-        },
-        {
-            "key": "IRMJ.2019010103-13",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0191-2615(02)00046-2"
-        },
-        {
-            "key": "IRMJ.2019010103-14",
-            "year": "2002",
-            "journal-title": "ISO/IEC. 12207:2002. Information technology\u2014Software life cycle processes"
-        },
-        {
-            "key": "IRMJ.2019010103-15",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.ijinfomgt.2008.02.002"
-        },
-        {
-            "key": "IRMJ.2019010103-16",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/3172759"
-        },
-        {
-            "key": "IRMJ.2019010103-17",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2753/JEC1086-4415140201"
-        },
-        {
-            "key": "IRMJ.2019010103-18",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1145/1096000.1096004"
-        },
-        {
-            "key": "IRMJ.2019010103-19",
-            "author": "W. E.Lewis",
-            "year": "2016",
-            "journal-title": "Software testing and continuous quality improvement"
-        },
-        {
-            "key": "IRMJ.2019010103-20",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.5465/AMP.2006.20591002"
-        },
-        {
-            "key": "IRMJ.2019010103-21",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1108/03321641311296873"
-        },
-        {
-            "key": "IRMJ.2019010103-22",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1109/MSP.2006.145"
-        },
-        {
-            "issue": "7",
-            "key": "IRMJ.2019010103-23",
-            "first-page": "1279",
-            "article-title": "A micro model for predicting quantity of vulnerabilities.",
-            "volume": "48",
-            "author": "C. J.Nie",
-            "year": "2011",
-            "journal-title": "Journal of Computer Research and Development"
-        },
-        {
-            "key": "IRMJ.2019010103-24",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s11135-011-9574-2"
-        },
-        {
-            "key": "IRMJ.2019010103-25",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.cor.2010.11.013"
-        },
-        {
-            "key": "IRMJ.2019010103-26",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1057/palgrave.jit.2000122"
-        },
-        {
-            "key": "IRMJ.2019010103-27",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1214/aos/1176344136"
-        },
-        {
-            "key": "IRMJ.2019010103-28",
-            "unstructured": "Software Engineering Institute (SEI). (2004). Capability maturity model integration (CMMI), version 1.1 CMMI (CMMI-SE/SW/IPPD/SS, v1.1) staged representation. Pittsburgh, PA: SEI."
-        },
-        {
-            "key": "IRMJ.2019010103-29",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.ijinfomgt.2015.11.009"
-        },
-        {
-            "key": "IRMJ.2019010103-30",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1108/ITP-03-2013-0052"
-        },
-        {
-            "key": "IRMJ.2019010103-31",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.chb.2017.11.024"
-        },
-        {
-            "key": "IRMJ.2019010103-32",
-            "first-page": "183",
-            "article-title": "A Soft Set and Multi-Attribute based Comprehensive Method to Discover Software Vulnerabilities.",
-            "volume": "5",
-            "author": "C. H.Tang",
+            "key": "S1793042120501092BIB006",
+            "doi-asserted-by": "crossref",
+            "first-page": "105",
+            "DOI": "10.1016/j.jnt.2015.04.013",
+            "volume": "156",
+            "author": "Da\u011fl\u0131 M. C.",
             "year": "2015",
-            "journal-title": "Computer Science"
+            "journal-title": "J. Number Theory"
         },
         {
-            "key": "IRMJ.2019010103-33",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/icc/3.3.537-a"
+            "key": "S1793042120501092BIB007",
+            "unstructured": "F. Diamond and  J. Shurman,  A First Course in Modular Forms,  Graduate Texts in Mathematics, Vol.  228  (Springer-Verlag,  New York,  2005),  pp. xvi+436."
         },
         {
-            "key": "IRMJ.2019010103-34",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1109/TSE.2007.70712"
+            "key": "S1793042120501092BIB008",
+            "doi-asserted-by": "crossref",
+            "first-page": "21",
+            "DOI": "10.1017/S0027763000015567",
+            "volume": "50",
+            "author": "Goldstein L.",
+            "year": "1973",
+            "journal-title": "Nagaya Math. J."
         },
         {
-            "key": "IRMJ.2019010103-35",
-            "first-page": "2087",
-            "article-title": "Software Vulnerability Industry: Present Situation and Development.",
-            "volume": "49",
-            "author": "T.Wei",
-            "year": "2009",
-            "journal-title": "Qinghua Daxue Xuebao. Ziran Kexue Ban"
+            "key": "S1793042120501092BIB009",
+            "doi-asserted-by": "crossref",
+            "first-page": "93",
+            "DOI": "10.1017/S002776300001744X",
+            "volume": "63",
+            "author": "Goldstein L. J.",
+            "year": "1976",
+            "journal-title": "Nagoya Math. J."
         },
         {
-            "key": "IRMJ.2019010103-36",
-            "first-page": "131",
-            "article-title": "Study and Revelation of Vulnerability Database Development.",
-            "volume": "11",
-            "author": "S. P.Wu",
-            "year": "2012",
-            "journal-title": "Network & Computer Security"
+            "key": "S1793042120501092BIB010",
+            "unstructured": "M. N. Huxley,  Scattering Matrices for Congruence Subgroups,  Modular Forms  (Horwood,  Chichester, Durham,  1983),  pp. 141\u2013156."
         },
         {
-            "key": "IRMJ.2019010103-37",
-            "first-page": "1309",
-            "article-title": "Progress of Software Vulnerability Analysis Technology.",
-            "volume": "2",
-            "author": "S. Z.Wu",
-            "year": "2012",
-            "journal-title": "Qinghua Daxue Xuebao. Ziran Kexue Ban"
+            "key": "S1793042120501092BIB011",
+            "series-title": "Graduate Studies in Mathematics",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1090/gsm/017",
+            "volume-title": "Topics in Classical Automorphic Forms",
+            "volume": "17",
+            "author": "Iwaniec H.",
+            "year": "1997"
         },
         {
-            "key": "IRMJ.2019010103-38",
-            "first-page": "89",
-            "article-title": "Development Research of Scrum Agile Software Combined with CMMI.",
-            "volume": "24",
-            "author": "W.Xu",
-            "year": "2014",
-            "journal-title": "Computer Technology and Development"
+            "issue": "1",
+            "key": "S1793042120501092BIB012",
+            "doi-asserted-by": "crossref",
+            "first-page": "137",
+            "DOI": "10.2140/pjm.2000.194.137",
+            "volume": "194",
+            "author": "Meyer J.",
+            "year": "2000",
+            "journal-title": "Pacific J. Math."
         },
         {
-            "key": "IRMJ.2019010103-39",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.4028/www.scientific.net/AMM.513-517.369"
+            "issue": "3",
+            "key": "S1793042120501092BIB013",
+            "doi-asserted-by": "crossref",
+            "first-page": "374",
+            "DOI": "10.1016/0022-314X(84)90078-7",
+            "volume": "19",
+            "author": "Nagasaka C.",
+            "year": "1984",
+            "journal-title": "J. Number Theory"
         },
         {
-            "key": "IRMJ.2019010103-40",
-            "first-page": "167",
-            "article-title": "An Approach to Detect Multi-Threaded Software Concurrent Vulnerabilities.",
-            "volume": "2",
-            "author": "C. C.Zhu",
-            "year": "2015",
-            "journal-title": "Journal of Xidian University"
+            "issue": "1",
+            "key": "S1793042120501092BIB014",
+            "doi-asserted-by": "crossref",
+            "first-page": "1",
+            "DOI": "10.4064/aa116-1-1",
+            "volume": "116",
+            "author": "Sekine C.",
+            "year": "2005",
+            "journal-title": "Acta Arithmetica"
+        },
+        {
+            "key": "S1793042120501092BIB015",
+            "doi-asserted-by": "crossref",
+            "first-page": "1",
+            "DOI": "10.1016/j.jnt.2018.11.007",
+            "volume": "199",
+            "author": "Young M.",
+            "year": "2019",
+            "journal-title": "J. Number Theory"
         }
     ],
     "container-title": [
-        "Information Resources Management Journal"
+        "International Journal of Number Theory"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://www.igi-global.com/viewtitle.aspx?TitleId=216441",
+            "URL": "https://www.worldscientific.com/doi/pdf/10.1142/S1793042120501092",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -346,55 +253,65 @@
     "deposited": {
         "date-parts": [
             [
-                2022,
-                5,
-                5
+                2020,
+                10,
+                28
             ]
         ],
-        "date-time": "2022-05-05T23:46:09Z",
-        "timestamp": 1651794369000
+        "date-time": "2020-10-28T07:29:01Z",
+        "timestamp": 1603870141000
     },
-    "score": 14.995644,
+    "score": 14.396579,
     "resource": {
         "primary": {
-            "URL": "http://services.igi-global.com/resolvedoi/resolve.aspx?doi=10.4018/IRMJ.2019010103"
+            "URL": "https://www.worldscientific.com/doi/abs/10.1142/S1793042120501092"
         }
     },
-    "subtitle": [
-        ""
-    ],
     "issued": {
         "date-parts": [
             [
-                2019,
-                1
+                2020,
+                8,
+                21
             ]
         ]
     },
-    "references-count": 41,
+    "references-count": 15,
     "journal-issue": {
-        "issue": "1"
+        "issue": "10",
+        "published-print": {
+            "date-parts": [
+                [
+                    2020,
+                    11
+                ]
+            ]
+        }
     },
-    "URL": "http://dx.doi.org/10.4018/irmj.2019010103",
+    "alternative-id": [
+        "10.1142/S1793042120501092"
+    ],
+    "URL": "http://dx.doi.org/10.1142/s1793042120501092",
     "ISSN": [
-        "1040-1628",
-        "1533-7979"
+        "1793-0421",
+        "1793-7310"
     ],
     "issn-type": [
         {
-            "value": "1040-1628",
+            "value": "1793-0421",
             "type": "print"
         },
         {
-            "value": "1533-7979",
+            "value": "1793-7310",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2019,
-                1
+                2020,
+                8,
+                21
             ]
         ]
     }

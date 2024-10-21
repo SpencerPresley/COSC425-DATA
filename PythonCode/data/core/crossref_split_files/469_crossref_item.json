@@ -4,134 +4,138 @@
             [
                 2024,
                 9,
-                8
+                11
             ]
         ],
-        "date-time": "2024-09-08T11:46:57Z",
-        "timestamp": 1725796017258
+        "date-time": "2024-09-11T00:24:09Z",
+        "timestamp": 1726014249175
     },
-    "reference-count": 0,
-    "publisher": "WORLD SCIENTIFIC",
+    "reference-count": 5,
+    "publisher": "SAGE Publications",
+    "issue": "3",
+    "license": [
+        {
+            "start": {
+                "date-parts": [
+                    [
+                        2024,
+                        5,
+                        26
+                    ]
+                ],
+                "date-time": "2024-05-26T00:00:00Z",
+                "timestamp": 1716681600000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://journals.sagepub.com/page/policies/text-and-data-mining-license"
+        }
+    ],
     "content-domain": {
-        "domain": [],
-        "crossmark-restriction": false
+        "domain": [
+            "journals.sagepub.com"
+        ],
+        "crossmark-restriction": true
     },
+    "short-container-title": [
+        "J Pastoral Care Counsel"
+    ],
     "published-print": {
         "date-parts": [
             [
-                2019,
-                5
+                2024,
+                9
             ]
         ]
     },
-    "DOI": "10.1142/9789811204487_0131",
-    "type": "proceedings-article",
+    "DOI": "10.1177/15423050241257680",
+    "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2019,
+                2024,
                 5,
-                17
+                27
             ]
         ],
-        "date-time": "2019-05-17T01:52:40Z",
-        "timestamp": 1558057960000
+        "date-time": "2024-05-27T06:52:35Z",
+        "timestamp": 1716792755000
     },
-    "page": "1519-1527",
+    "page": "127-128",
+    "update-policy": "http://dx.doi.org/10.1177/sage-journals-update-policy",
     "source": "Crossref",
-    "is-referenced-by-count": 2,
+    "is-referenced-by-count": 0,
     "title": [
-        "CHANNELS\u2019 SHAPE EVOLUTION DETECTED BY UAVs IN A RESTORED SALT MARSH"
+        "Soul of the Nation: Freedom to Exist, 2023"
     ],
-    "prefix": "10.1142",
+    "prefix": "10.1177",
+    "volume": "78",
     "author": [
         {
-            "given": "YURI",
-            "family": "TADDIA",
+            "ORCID": "http://orcid.org/0000-0001-5301-8819",
+            "authenticated-orcid": false,
+            "given": "Alison",
+            "family": "Sutton-Ryan",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Horn Point Laboratory, University of Maryland Center for Environmental Science, 2020 Horns Point Road, Cambridge, MD 21613, USA"
-                },
-                {
-                    "name": "Engineering Department, University of Ferrara, 1 Saragat Street, Ferrara, 44122, Italy"
-                }
-            ]
-        },
-        {
-            "given": "WILLIAM",
-            "family": "NARDIN",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Horn Point Laboratory, University of Maryland Center for Environmental Science, 2020 Horns Point Road, Cambridge, MD 21613, USA"
-                }
-            ]
-        },
-        {
-            "given": "CORINNE",
-            "family": "CORBAU",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Horn Point Laboratory, University of Maryland Center for Environmental Science, 2020 Horns Point Road, Cambridge, MD 21613, USA"
-                },
-                {
-                    "name": "Department of Physics and Earth Sciences, University of Ferrara, Ferrara, Italy"
-                }
-            ]
-        },
-        {
-            "given": "GIULIA",
-            "family": "FRANCHI",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Math and Computer Science, Salisbury University, 1101 Camden Ave, Salisbury, MD 2180, USA"
-                }
-            ]
-        },
-        {
-            "given": "COURT J.",
-            "family": "STEVENSON",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Horn Point Laboratory, University of Maryland Center for Environmental Science, 2020 Horns Point Road, Cambridge, MD 21613, USA"
-                }
-            ]
-        },
-        {
-            "given": "LORIE W.",
-            "family": "STAVER",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Horn Point Laboratory, University of Maryland Center for Environmental Science, 2020 Horns Point Road, Cambridge, MD 21613, USA"
+                    "name": "Department of Social Work, Salisbury University, Salisbury, MD, USA"
                 }
             ]
         }
     ],
-    "member": "219",
+    "member": "179",
     "published-online": {
         "date-parts": [
             [
-                2019,
+                2024,
                 5,
-                16
+                26
             ]
         ]
     },
-    "event": {
-        "name": "International Conference on Coastal Sediments 2019",
-        "location": "Tampa/St. Petersburg, Florida, USA"
-    },
-    "container-title": [
-        "Coastal Sediments 2019"
+    "reference": [
+        {
+            "key": "bibr1-15423050241257680",
+            "unstructured": "ABC. (2023). Freedom to Exist\u2014A Soul of the Nation Presentation. Available on Hulu."
+        },
+        {
+            "key": "bibr2-15423050241257680",
+            "unstructured": "APA. (2023). Understanding transgender people, gender identify and gender expression. Retrieved from: https://www.apa.org/topics/lgbtq/transgender-people-gender-identity-gender-expression"
+        },
+        {
+            "key": "bibr3-15423050241257680",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jhealeco.2023.102750"
+        },
+        {
+            "key": "bibr4-15423050241257680",
+            "unstructured": "Contreras R. (2023). The Forces Behind anti-trans bills in the US. Retrieved from: https://www.axios.com/2023/03/31/anti-trans-bills-2023-america"
+        },
+        {
+            "key": "bibr5-15423050241257680",
+            "unstructured": "Transtracker. (2023). 2023 Anti-Trans Bill Tracker. Retrieved from: https://translegislation.com"
+        }
     ],
+    "container-title": [
+        "Journal of Pastoral Care &amp; Counseling: Advancing theory and professional practice through scholarly and reflective publications"
+    ],
+    "language": "en",
     "link": [
         {
-            "URL": "https://www.worldscientific.com/doi/pdf/10.1142/9789811204487_0131",
+            "URL": "https://journals.sagepub.com/doi/pdf/10.1177/15423050241257680",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://journals.sagepub.com/doi/full-xml/10.1177/15423050241257680",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://journals.sagepub.com/doi/pdf/10.1177/15423050241257680",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -140,39 +144,65 @@
     "deposited": {
         "date-parts": [
             [
-                2019,
-                5,
-                17
+                2024,
+                9,
+                10
             ]
         ],
-        "date-time": "2019-05-17T01:54:06Z",
-        "timestamp": 1558058046000
+        "date-time": "2024-09-10T13:37:34Z",
+        "timestamp": 1725975454000
     },
-    "score": 9.794607,
+    "score": 15.679865,
     "resource": {
         "primary": {
-            "URL": "https://www.worldscientific.com/doi/abs/10.1142/9789811204487_0131"
+            "URL": "https://journals.sagepub.com/doi/10.1177/15423050241257680"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2019,
-                5
+                2024,
+                5,
+                26
             ]
         ]
     },
-    "references-count": 0,
+    "references-count": 5,
+    "journal-issue": {
+        "issue": "3",
+        "published-print": {
+            "date-parts": [
+                [
+                    2024,
+                    9
+                ]
+            ]
+        }
+    },
     "alternative-id": [
-        "10.1142/9789811204487_0131",
-        "10.1142/11391"
+        "10.1177/15423050241257680"
     ],
-    "URL": "http://dx.doi.org/10.1142/9789811204487_0131",
+    "URL": "http://dx.doi.org/10.1177/15423050241257680",
+    "ISSN": [
+        "1542-3050",
+        "2167-776X"
+    ],
+    "issn-type": [
+        {
+            "type": "print",
+            "value": "1542-3050"
+        },
+        {
+            "type": "electronic",
+            "value": "2167-776X"
+        }
+    ],
     "published": {
         "date-parts": [
             [
-                2019,
-                5
+                2024,
+                5,
+                26
             ]
         ]
     }

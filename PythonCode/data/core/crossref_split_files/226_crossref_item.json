@@ -3,32 +3,98 @@
         "date-parts": [
             [
                 2024,
-                10,
-                1
+                8,
+                2
             ]
         ],
-        "date-time": "2024-10-01T19:10:14Z",
-        "timestamp": 1727809814395
+        "date-time": "2024-08-02T13:17:35Z",
+        "timestamp": 1722604655323
     },
-    "reference-count": 75,
-    "publisher": "Wiley",
-    "issue": "4",
+    "reference-count": 51,
+    "publisher": "Hindawi Limited",
+    "issue": "2",
     "license": [
         {
             "start": {
                 "date-parts": [
                     [
-                        2023,
-                        10,
-                        7
+                        2021,
+                        12,
+                        4
                     ]
                 ],
-                "date-time": "2023-10-07T00:00:00Z",
-                "timestamp": 1696636800000
+                "date-time": "2021-12-04T00:00:00Z",
+                "timestamp": 1638576000000
+            },
+            "content-version": "am",
+            "delay-in-days": 354,
+            "URL": "http://onlinelibrary.wiley.com/termsAndConditions#am"
+        },
+        {
+            "start": {
+                "date-parts": [
+                    [
+                        2020,
+                        12,
+                        15
+                    ]
+                ],
+                "date-time": "2020-12-15T00:00:00Z",
+                "timestamp": 1607990400000
             },
             "content-version": "vor",
             "delay-in-days": 0,
             "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+        },
+        {
+            "start": {
+                "date-parts": [
+                    [
+                        2020,
+                        12,
+                        15
+                    ]
+                ],
+                "date-time": "2020-12-15T00:00:00Z",
+                "timestamp": 1607990400000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "http://doi.wiley.com/10.1002/tdm_license_1.1"
+        }
+    ],
+    "funder": [
+        {
+            "DOI": "10.13039/100000001",
+            "name": "National Science Foundation",
+            "doi-asserted-by": "publisher",
+            "award": [
+                "CBET 0939511",
+                "CBET 1950509"
+            ],
+            "id": [
+                {
+                    "id": "10.13039/100000001",
+                    "id-type": "DOI",
+                    "asserted-by": "publisher"
+                }
+            ]
+        },
+        {
+            "DOI": "10.13039/100005200",
+            "name": "New Jersey Commission on Spinal Cord Research",
+            "doi-asserted-by": "publisher",
+            "award": [
+                "CSCR14IRG005",
+                "CSCR17ERG005"
+            ],
+            "id": [
+                {
+                    "id": "10.13039/100005200",
+                    "id-type": "DOI",
+                    "asserted-by": "publisher"
+                }
+            ]
         }
     ],
     "content-domain": {
@@ -38,459 +104,406 @@
         "crossmark-restriction": true
     },
     "short-container-title": [
-        "Agribusiness"
+        "J Tissue Eng Regen Med"
     ],
     "published-print": {
         "date-parts": [
             [
-                2024,
-                10
+                2021,
+                2
             ]
         ]
     },
-    "abstract": "<jats:title>Abstract</jats:title><jats:p>Food retailing in developing economies has undergone significant transformations over the past three decades. Progressing in three waves across regions like Latin America, Asia, Africa, and beyond, food retailers have transitioned from traditional open markets to modern supermarkets akin to those in more developed economies. In this article, we provide an overview of the structure of food retailing in developing economies and examine the empirical literature that delves into the reasons behind the evolution of retailers in developing countries worldwide, as well as their impact on suppliers and consumers. We propose avenues for future research, building upon an empirical framework that recognizes the consumer\u2010driven nature of retail evolution and how the structure of retailing develops as an equilibrium outcome within a dynamic, imperfectly competitive environment. In conclusion, we identify significant gaps in the existing empirical literature and shed light on emerging questions that are likely to gain importance in the future. [EconLit Citations: D43, L13, M31].</jats:p>",
-    "DOI": "10.1002/agr.21867",
+    "DOI": "10.1002/term.3164",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2023,
-                10,
-                8
+                2020,
+                12,
+                4
             ]
         ],
-        "date-time": "2023-10-08T18:48:47Z",
-        "timestamp": 1696790927000
+        "date-time": "2020-12-04T12:15:47Z",
+        "timestamp": 1607084147000
     },
-    "page": "926-949",
+    "page": "176-188",
     "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 0,
+    "is-referenced-by-count": 2,
     "title": [
-        "Food retailing in developing economies: Review of empirical insights and new directions"
+        "Cerebrospinal fluid replacement solutions promote neuroglia migratory behaviors and spinal explant outgrowth in microfluidic culture"
     ],
-    "prefix": "10.1002",
-    "volume": "40",
+    "prefix": "10.1155",
+    "volume": "15",
     "author": [
         {
-            "ORCID": "http://orcid.org/0000-0001-8832-9609",
-            "authenticated-orcid": false,
-            "given": "Timothy J.",
-            "family": "Richards",
+            "given": "Richard N.",
+            "family": "Cliver",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Morrison School of Agribusiness, W. P. Carey School of Business Arizona State University Mesa Arizona USA"
+                    "name": "Department of Biomedical Engineering Rutgers, The State University of New Jersey  Piscataway New Jersey USA"
                 }
             ]
         },
         {
-            "given": "Simba",
-            "family": "Pasirayi",
+            "given": "Brian",
+            "family": "Ayers",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Department of Marketing Salisbury University Salisbury Maryland USA"
+                    "name": "Department of Biomedical Engineering Rutgers, The State University of New Jersey  Piscataway New Jersey USA"
+                }
+            ]
+        },
+        {
+            "given": "Alyssa",
+            "family": "Brady",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Physics Salisbury University  Salisbury Maryland USA"
+                }
+            ]
+        },
+        {
+            "ORCID": "http://orcid.org/0000-0002-1679-3565",
+            "authenticated-orcid": false,
+            "given": "Bonnie L.",
+            "family": "Firestein",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Cell Biology and Neuroscience Rutgers, The State University of New Jersey  Piscataway New Jersey USA"
+                }
+            ]
+        },
+        {
+            "ORCID": "http://orcid.org/0000-0002-6184-3103",
+            "authenticated-orcid": false,
+            "given": "Maribel",
+            "family": "Vazquez",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Biomedical Engineering Rutgers, The State University of New Jersey  Piscataway New Jersey USA"
                 }
             ]
         }
     ],
-    "member": "311",
+    "member": "98",
     "published-online": {
         "date-parts": [
             [
-                2023,
-                10,
-                7
+                2020,
+                12,
+                15
             ]
         ]
     },
     "reference": [
         {
-            "key": "e_1_2_12_2_1",
+            "key": "e_1_2_8_2_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/s0022-4359(02)00073-8"
+            "DOI": "10.1089/ten.teb.2019.0182"
         },
         {
-            "key": "e_1_2_12_3_1",
+            "key": "e_1_2_8_3_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1257/aer.97.2.449"
+            "DOI": "10.1016/j.neuroscience.2003.07.006"
         },
         {
-            "key": "e_1_2_12_4_1",
+            "key": "e_1_2_8_4_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/joie.12112"
+            "DOI": "10.1007/s11095-009-0009-x"
         },
         {
-            "key": "e_1_2_12_5_1",
+            "key": "e_1_2_8_5_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1287/mksc.10.3.185"
+            "DOI": "10.1016/S0165-0270(96)00136-7"
         },
         {
-            "key": "e_1_2_12_6_1",
+            "key": "e_1_2_8_6_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1093/restud/rdw012"
+            "DOI": "10.1002/jnr.490350513"
         },
         {
-            "key": "e_1_2_12_7_1",
+            "key": "e_1_2_8_7_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1086/695476"
+            "DOI": "10.1186/2045-8118-11-10"
         },
         {
-            "key": "e_1_2_12_8_1",
+            "key": "e_1_2_8_8_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.0092-5853.2003.00521.x"
+            "DOI": "10.1007/s12031-019-01433-6"
         },
         {
-            "key": "e_1_2_12_9_1",
-            "unstructured": "Barrett C. B. Reardon T. Swinnen J. &Zilberman D.(2019).Structural transformation and economic development: Insights from the agri\u2010food value chain revolution. Working Paper Dyson School of Applied Economics and Management Cornell University."
-        },
-        {
-            "key": "e_1_2_12_10_1",
+            "key": "e_1_2_8_9_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1530-9134.2009.00235.x"
+            "DOI": "10.1016/j.isci.2019.100788"
         },
         {
-            "key": "e_1_2_12_11_1",
+            "key": "e_1_2_8_10_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1207/15327660051044178"
+            "DOI": "10.1016/j.brainres.2009.10.060"
         },
         {
-            "key": "e_1_2_12_12_1",
+            "issue": "9",
+            "key": "e_1_2_8_11_1",
+            "first-page": "355",
+            "article-title": "Cerebrospinal fluid and its circulation",
+            "volume": "11",
+            "author": "Craven J.",
+            "year": "2010",
+            "journal-title": "Neurosurgical Anaesthesia"
+        },
+        {
+            "key": "e_1_2_8_12_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1287/mksc.17.1.66"
+            "DOI": "10.1128/IAI.00955-19"
         },
         {
-            "key": "e_1_2_12_13_1",
+            "issue": "3",
+            "key": "e_1_2_8_13_1",
+            "first-page": "453",
+            "article-title": "The effect of cerebrospinal fluid in collagen guide channel on Sciatic nerve regeneration in rats",
+            "volume": "27",
+            "author": "Farjah G. H.",
+            "year": "2017",
+            "journal-title": "Turk Neurosurg"
+        },
+        {
+            "key": "e_1_2_8_14_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1108/10610421211203060"
+            "DOI": "10.3389/fncel.2020.00046"
         },
         {
-            "key": "e_1_2_12_14_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.foodpol.2005.05.003"
-        },
-        {
-            "key": "e_1_2_12_15_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1108/ijrdm-02-2017-0035"
-        },
-        {
-            "key": "e_1_2_12_16_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.cosust.2022.101169"
-        },
-        {
-            "key": "e_1_2_12_17_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.ijresmar.2013.03.006"
-        },
-        {
-            "key": "e_1_2_12_18_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jretai.2014.01.003"
-        },
-        {
-            "key": "e_1_2_12_19_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1509/jmkr.46.2.176"
-        },
-        {
-            "key": "e_1_2_12_20_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1257/jep.29.4.113"
-        },
-        {
-            "key": "e_1_2_12_21_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jbusres.2017.09.030"
-        },
-        {
-            "key": "e_1_2_12_22_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.0013-0133.1997.167.x"
-        },
-        {
-            "key": "e_1_2_12_23_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1287/mksc.1080.0472"
-        },
-        {
-            "key": "e_1_2_12_24_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1467-7679.2004.00264.x"
-        },
-        {
-            "key": "e_1_2_12_25_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/s0024-6301(02)00109-7"
-        },
-        {
-            "key": "e_1_2_12_26_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/1069031x20914265"
-        },
-        {
-            "key": "e_1_2_12_27_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1162/rest.88.4.748"
-        },
-        {
-            "key": "e_1_2_12_28_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1745-493x.2012.03271.x"
-        },
-        {
-            "key": "e_1_2_12_29_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1509/jmkr.47.5.791"
-        },
-        {
-            "key": "e_1_2_12_30_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jretconser.2004.10.002"
-        },
-        {
-            "key": "e_1_2_12_31_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/s0022-4359(02)00098-2"
-        },
-        {
-            "key": "e_1_2_12_32_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10887-015-9121-4"
-        },
-        {
-            "key": "e_1_2_12_33_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.worlddev.2011.02.005"
-        },
-        {
-            "volume-title": "Global Marketing, global edition",
+            "issue": "0213",
+            "key": "e_1_2_8_15_1",
+            "first-page": "30141",
+            "article-title": "Neoplastic meningitis in solid: Updated review of diagnosis, prognosis, therapeutic management, and future directions",
+            "volume": "18",
+            "author": "Garcia Molina E.",
             "year": "2020",
-            "author": "Green M. C.",
-            "key": "e_1_2_12_34_1"
+            "journal-title": "Neurologia"
         },
         {
-            "key": "e_1_2_12_35_1",
+            "key": "e_1_2_8_16_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jdeveco.2014.04.007"
+            "DOI": "10.1016/j.jneumeth.2009.12.010"
         },
         {
-            "key": "e_1_2_12_36_1",
+            "key": "e_1_2_8_17_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1287/mksc.1040.0061"
+            "DOI": "10.4103/1673-5374.198989"
         },
         {
-            "key": "e_1_2_12_37_1",
+            "key": "e_1_2_8_18_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jretconser.2009.09.005"
+            "DOI": "10.1016/j.stem.2020.01.003"
         },
         {
-            "key": "e_1_2_12_38_1",
+            "key": "e_1_2_8_19_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.3982/ecta7699"
+            "DOI": "10.1113/JP270874"
         },
         {
-            "key": "e_1_2_12_39_1",
+            "key": "e_1_2_8_20_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1509/jm.12.0179"
+            "DOI": "10.1016/j.stem.2018.05.015"
         },
         {
-            "key": "e_1_2_12_40_1",
+            "key": "e_1_2_8_21_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1467-7679.2004.00265.x"
+            "DOI": "10.3325/cmj.2014.55.287"
         },
         {
-            "key": "e_1_2_12_41_1",
+            "key": "e_1_2_8_22_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1093/jeg/lbm008"
+            "DOI": "10.1016/j.actbio.2018.06.014"
         },
         {
-            "key": "e_1_2_12_42_1",
+            "key": "e_1_2_8_23_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.3386/w17204"
+            "DOI": "10.1177/1545968319899920"
         },
         {
-            "key": "e_1_2_12_43_1",
+            "key": "e_1_2_8_24_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jinteco.2012.12.004"
+            "DOI": "10.1016/j.biomaterials.2020.119978"
         },
         {
-            "key": "e_1_2_12_44_1",
+            "key": "e_1_2_8_25_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0149206320945028"
+            "DOI": "10.1186/s12987-018-0098-1"
         },
         {
-            "key": "e_1_2_12_45_1",
+            "key": "e_1_2_8_26_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jretai.2014.08.005"
+            "DOI": "10.1007/s10529-017-2437-8"
         },
         {
-            "key": "e_1_2_12_46_1",
+            "key": "e_1_2_8_27_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1073/pnas.0913714108"
+            "DOI": "10.3389/fnsys.2019.00001"
         },
         {
-            "key": "e_1_2_12_47_1",
+            "key": "e_1_2_8_28_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jretconser.2013.11.002"
+            "DOI": "10.1021/acsomega.9b00973"
         },
         {
-            "key": "e_1_2_12_48_1",
+            "key": "e_1_2_8_29_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2307/2228621"
+            "DOI": "10.1310/sci2304-285"
         },
         {
-            "key": "e_1_2_12_49_1",
+            "key": "e_1_2_8_30_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1073/pnas.1909501116"
+            "DOI": "10.1227/00006123-199604000-00019"
         },
         {
-            "key": "e_1_2_12_50_1",
+            "key": "e_1_2_8_31_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.worlddev.2011.07.013"
+            "DOI": "10.3389/fneur.2020.00148"
         },
         {
-            "key": "e_1_2_12_51_1",
+            "key": "e_1_2_8_32_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.indmarman.2018.09.001"
+            "DOI": "10.3390/mi10080513"
         },
         {
-            "key": "e_1_2_12_52_1",
+            "key": "e_1_2_8_33_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1430-9134.1995.00509.x"
+            "DOI": "10.1089/neu.2014.3467"
         },
         {
-            "key": "e_1_2_12_53_1",
+            "key": "e_1_2_8_34_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jretai.2019.04.002"
+            "DOI": "10.1007/s11626-017-0186-6"
         },
         {
-            "key": "e_1_2_12_54_1",
+            "key": "e_1_2_8_35_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.worlddev.2008.08.026"
+            "DOI": "10.1016/j.neuroimage.2017.03.021"
         },
         {
-            "key": "e_1_2_12_55_1",
+            "key": "e_1_2_8_36_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1467-7679.2004.00271.x"
+            "DOI": "10.1046/j.1471-4159.1996.66041432.x"
         },
         {
-            "key": "e_1_2_12_56_1",
+            "key": "e_1_2_8_37_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jbusres.2022.113302"
+            "DOI": "10.1242/dmm.031997"
         },
         {
-            "key": "e_1_2_12_57_1",
+            "key": "e_1_2_8_38_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1093/jeg/lbm007"
+            "DOI": "10.3892/mmr.2017.6777"
         },
         {
-            "key": "e_1_2_12_58_1",
+            "key": "e_1_2_8_39_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/09578810601070613"
+            "DOI": "10.1093/ajcp/aqz121.017"
         },
         {
-            "key": "e_1_2_12_59_1",
+            "key": "e_1_2_8_40_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1467-7679.2004.00263.x"
+            "DOI": "10.1016/S1470-2045(20)30059-0"
         },
         {
-            "key": "e_1_2_12_60_1",
+            "issue": "5",
+            "key": "e_1_2_8_41_1",
+            "first-page": "1",
+            "article-title": "Development of artificial cerebrospinal fluid: Basic experiments, and phase II and III clinical trials",
+            "volume": "4",
+            "author": "Shiobara R.",
+            "year": "2013",
+            "journal-title": "Journal of Neurology & Neurophysiology"
+        },
+        {
+            "key": "e_1_2_8_42_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.0092-5853.2003.00520.x"
+            "DOI": "10.1002/term.3025"
         },
         {
-            "issue": "2",
-            "key": "e_1_2_12_61_1",
-            "first-page": "15",
-            "article-title": "The rapid rise of supermarkets in developing countries: Induced organizational, institutional, and technological change in agrifood systems",
-            "volume": "1",
-            "author": "Reardon T.",
-            "year": "2004",
-            "journal-title": "Agricultural and Development Economics Division (ESA) FAO"
-        },
-        {
-            "key": "e_1_2_12_62_1",
+            "key": "e_1_2_8_43_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jretai.2011.04.009"
+            "DOI": "10.1007/s40883-019-00095-5"
         },
         {
-            "key": "e_1_2_12_63_1",
+            "key": "e_1_2_8_44_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/0148-2963(93)90018-k"
+            "DOI": "10.1016/j.bbrc.2019.09.008"
         },
         {
-            "key": "e_1_2_12_64_1",
+            "key": "e_1_2_8_45_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jbusres.2017.07.009"
+            "DOI": "10.1177/1756286419892360"
         },
         {
-            "key": "e_1_2_12_65_1",
+            "key": "e_1_2_8_46_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1146/annurev-resource-100517-023312"
+            "DOI": "10.2147/IJN.S62260"
         },
         {
-            "key": "e_1_2_12_66_1",
+            "key": "e_1_2_8_47_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/1520-6297(200124)17:1<59::aid-agr1003>3.0.co;2-d"
+            "DOI": "10.1098/rsif.2019.0572"
         },
         {
-            "key": "e_1_2_12_67_1",
+            "key": "e_1_2_8_48_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2307/1251790"
+            "DOI": "10.1002/jnr.21084"
         },
         {
-            "key": "e_1_2_12_68_1",
+            "key": "e_1_2_8_49_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.ijresmar.2008.01.001"
+            "DOI": "10.1111/j.1460-9568.2008.06415.x"
         },
         {
-            "key": "e_1_2_12_69_1",
+            "key": "e_1_2_8_50_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1509/jim.12.0148"
+            "DOI": "10.1046/j.1471-4159.1994.63051646.x"
         },
         {
-            "key": "e_1_2_12_70_1",
+            "key": "e_1_2_8_51_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1467-7679.2006.00320.x"
+            "DOI": "10.1191/1078155202jp087oa"
         },
         {
-            "key": "e_1_2_12_71_1",
-            "unstructured": "United Nations. (2019).World Population Prospects. Accessed March 15 2020.https://population.un.org/wpp/"
-        },
-        {
-            "key": "e_1_2_12_72_1",
+            "key": "e_1_2_8_52_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jretai.2015.04.003"
-        },
-        {
-            "key": "e_1_2_12_73_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/1467-7679.00214"
-        },
-        {
-            "key": "e_1_2_12_74_1",
-            "unstructured": "World Bank. (2021). GDP per capita PPP (current international $)\u2014Ukraine Russian Federation.https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD?locations=UA-RU"
-        },
-        {
-            "key": "e_1_2_12_75_1",
-            "unstructured": "World Population Review. (2019). Developing countries 2023.https://worldpopulationreview.com/country-rankings/developing-countries"
-        },
-        {
-            "key": "e_1_2_12_76_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jretai.2016.06.001"
+            "DOI": "10.4103/1673-5374.266048"
         }
     ],
     "container-title": [
-        "Agribusiness"
+        "Journal of Tissue Engineering and Regenerative Medicine"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/agr.21867",
+            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/term.3164",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/term.3164",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://onlinelibrary.wiley.com/doi/am-pdf/10.1002/term.3164",
+            "content-type": "application/pdf",
+            "content-version": "am",
+            "intended-application": "syndication"
+        },
+        {
+            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/term.3164",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -499,74 +512,74 @@
     "deposited": {
         "date-parts": [
             [
-                2024,
-                10,
-                1
+                2022,
+                12,
+                20
             ]
         ],
-        "date-time": "2024-10-01T18:35:13Z",
-        "timestamp": 1727807713000
+        "date-time": "2022-12-20T13:25:21Z",
+        "timestamp": 1671542721000
     },
-    "score": 14.702288,
+    "score": 11.880377,
     "resource": {
         "primary": {
-            "URL": "https://onlinelibrary.wiley.com/doi/10.1002/agr.21867"
+            "URL": "https://onlinelibrary.wiley.com/doi/10.1002/term.3164"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2023,
-                10,
-                7
+                2020,
+                12,
+                15
             ]
         ]
     },
-    "references-count": 75,
+    "references-count": 51,
     "journal-issue": {
-        "issue": "4",
+        "issue": "2",
         "published-print": {
             "date-parts": [
                 [
-                    2024,
-                    10
+                    2021,
+                    2
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1002/agr.21867"
+        "10.1002/term.3164"
     ],
-    "URL": "http://dx.doi.org/10.1002/agr.21867",
+    "URL": "http://dx.doi.org/10.1002/term.3164",
     "archive": [
         "Portico"
     ],
     "ISSN": [
-        "0742-4477",
-        "1520-6297"
+        "1932-6254",
+        "1932-7005"
     ],
     "issn-type": [
         {
-            "type": "print",
-            "value": "0742-4477"
+            "value": "1932-6254",
+            "type": "print"
         },
         {
-            "type": "electronic",
-            "value": "1520-6297"
+            "value": "1932-7005",
+            "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2023,
-                10,
-                7
+                2020,
+                12,
+                15
             ]
         ]
     },
     "assertion": [
         {
-            "value": "2022-12-30",
+            "value": "2020-07-15",
             "order": 0,
             "name": "received",
             "label": "Received",
@@ -576,8 +589,8 @@
             }
         },
         {
-            "value": "2023-09-14",
-            "order": 2,
+            "value": "2020-11-25",
+            "order": 1,
             "name": "accepted",
             "label": "Accepted",
             "group": {
@@ -586,8 +599,8 @@
             }
         },
         {
-            "value": "2023-10-07",
-            "order": 3,
+            "value": "2020-12-15",
+            "order": 2,
             "name": "published",
             "label": "Published",
             "group": {

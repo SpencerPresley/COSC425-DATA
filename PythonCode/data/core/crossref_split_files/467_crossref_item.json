@@ -3,451 +3,182 @@
         "date-parts": [
             [
                 2024,
-                10,
-                9
+                8,
+                7
             ]
         ],
-        "date-time": "2024-10-09T01:40:17Z",
-        "timestamp": 1728438017168
+        "date-time": "2024-08-07T00:43:42Z",
+        "timestamp": 1722991422970
     },
-    "reference-count": 44,
-    "publisher": "SAGE Publications",
-    "issue": "3",
+    "reference-count": 9,
+    "publisher": "IEEE",
     "license": [
         {
             "start": {
                 "date-parts": [
                     [
-                        2022,
-                        2,
-                        15
+                        2024,
+                        6,
+                        19
                     ]
                 ],
-                "date-time": "2022-02-15T00:00:00Z",
-                "timestamp": 1644883200000
+                "date-time": "2024-06-19T00:00:00Z",
+                "timestamp": 1718755200000
             },
-            "content-version": "tdm",
+            "content-version": "stm-asf",
             "delay-in-days": 0,
-            "URL": "https://journals.sagepub.com/page/policies/text-and-data-mining-license"
-        }
-    ],
-    "funder": [
+            "URL": "https://doi.org/10.15223/policy-029"
+        },
         {
-            "DOI": "10.13039/100006222",
-            "name": "United States - India Educational Foundation",
-            "doi-asserted-by": "publisher",
-            "award": [
-                "USIEF/OSI/2018/03"
-            ],
-            "id": [
-                {
-                    "id": "10.13039/100006222",
-                    "id-type": "DOI",
-                    "asserted-by": "publisher"
-                }
-            ]
+            "start": {
+                "date-parts": [
+                    [
+                        2024,
+                        6,
+                        19
+                    ]
+                ],
+                "date-time": "2024-06-19T00:00:00Z",
+                "timestamp": 1718755200000
+            },
+            "content-version": "stm-asf",
+            "delay-in-days": 0,
+            "URL": "https://doi.org/10.15223/policy-037"
         }
     ],
     "content-domain": {
-        "domain": [
-            "journals.sagepub.com"
-        ],
-        "crossmark-restriction": true
+        "domain": [],
+        "crossmark-restriction": false
     },
-    "short-container-title": [
-        "Journalism &amp; Mass Communication Educator"
-    ],
     "published-print": {
         "date-parts": [
             [
-                2022,
-                9
+                2024,
+                6,
+                19
             ]
         ]
     },
-    "abstract": "<jats:p> This paper describes a curricular project in which a network of media educators, in making a case for the educational and social values of an interactive documentary, integrated it in a media degree program to encourage activism in students and promote civic engagement. The project provides valid and important results in an immediate sense, while also establishing the foundation for strengthening the media curriculum at educational institutions. For educators, this has positive implications, as along with the traditional content we teach, we also strive to increase the awareness of civic issues among our students to make them better citizens. </jats:p>",
-    "DOI": "10.1177/10776958221076057",
-    "type": "journal-article",
+    "DOI": "10.1109/chase60773.2024.00034",
+    "type": "proceedings-article",
     "created": {
         "date-parts": [
             [
-                2022,
-                2,
-                16
+                2024,
+                8,
+                5
             ]
         ],
-        "date-time": "2022-02-16T04:25:57Z",
-        "timestamp": 1644985557000
+        "date-time": "2024-08-05T17:31:02Z",
+        "timestamp": 1722879062000
     },
-    "page": "263-277",
-    "update-policy": "http://dx.doi.org/10.1177/sage-journals-update-policy",
+    "page": "191-192",
     "source": "Crossref",
     "is-referenced-by-count": 0,
     "title": [
-        "Interactive Documentary Filmmaking and Student Engagement With Community"
+        "Poster: Motion Sensor Based Dragging Feet Detection Using Lightweight Classification Model"
     ],
-    "prefix": "10.1177",
-    "volume": "77",
+    "prefix": "10.1109",
     "author": [
         {
-            "given": "Andrew",
-            "family": "Sharma",
+            "given": "Michelle",
+            "family": "Zhou",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Salisbury University, MD, USA"
+                    "name": "Jamestown High School,Williamsburg,Virginia"
                 }
             ]
         },
         {
-            "given": "Edward",
-            "family": "Robeck",
+            "given": "Shuangquan",
+            "family": "Wang",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "American Geosciences Institute, Alexandria, VA, USA"
-                }
-            ]
-        },
-        {
-            "given": "Ruchi",
-            "family": "Jaggi",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Symbiosis Institute of Media and Communication, Pune, Maharashtra, India"
-                }
-            ]
-        },
-        {
-            "given": "Mithunchandra",
-            "family": "Chaudhari",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Symbiosis Institute of Media and Communication, Pune, Maharashtra, India"
-                }
-            ]
-        },
-        {
-            "given": "Sushobhan",
-            "family": "Patankar",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Symbiosis Institute of Media and Communication, Pune, Maharashtra, India"
-                }
-            ]
-        },
-        {
-            "given": "Gagan",
-            "family": "Prakash",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Symbiosis Institute of Media and Communication, Pune, Maharashtra, India"
+                    "name": "Salisbury University,Salisbury,Maryland"
                 }
             ]
         }
     ],
-    "member": "179",
-    "published-online": {
-        "date-parts": [
-            [
-                2022,
-                2,
-                15
-            ]
-        ]
-    },
+    "member": "263",
     "reference": [
         {
-            "volume-title": "Understanding the effects of service-learning: A study of students and faculty",
-            "year": "2006",
-            "author": "Astin A. W.",
-            "key": "bibr1-10776958221076057"
-        },
-        {
-            "volume-title": "The encyclopedia of politics and social media",
-            "year": "2014",
-            "author": "Aston J.",
-            "first-page": "704",
-            "key": "bibr2-10776958221076057"
-        },
-        {
+            "key": "ref1",
             "doi-asserted-by": "publisher",
-            "key": "bibr3-10776958221076057",
-            "DOI": "10.1386/sdf.6.2.125_1"
+            "DOI": "10.1109/CDC42340.2020.9304106"
         },
         {
-            "issue": "2",
-            "key": "bibr4-10776958221076057",
-            "first-page": "5",
-            "volume": "14",
-            "author": "Bernacki M. L.",
-            "year": "2008",
-            "journal-title": "Michigan Journal of Community Service Learning"
-        },
-        {
+            "key": "ref2",
             "doi-asserted-by": "publisher",
-            "key": "bibr5-10776958221076057",
-            "DOI": "10.1177/097133361102400102"
+            "DOI": "10.1109/TNSRE.2017.2736939"
         },
         {
+            "key": "ref3",
             "doi-asserted-by": "publisher",
-            "key": "bibr6-10776958221076057",
-            "DOI": "10.1162/0162287042379810"
+            "DOI": "10.3390/s21041206"
         },
         {
-            "volume-title": "Educating for eco-justice and community",
-            "year": "2001",
-            "author": "Bowers C. A.",
-            "key": "bibr7-10776958221076057"
-        },
-        {
-            "volume-title": "The silent epidemic report",
-            "year": "2006",
-            "author": "Bridgeland J. M.",
-            "key": "bibr8-10776958221076057"
-        },
-        {
-            "issue": "2",
-            "key": "bibr9-10776958221076057",
-            "first-page": "164",
-            "volume": "14",
-            "author": "Carpentier N.",
-            "year": "2012",
-            "journal-title": "Fronteiras"
-        },
-        {
+            "key": "ref4",
             "doi-asserted-by": "publisher",
-            "key": "bibr10-10776958221076057",
-            "DOI": "10.7146/tjcp.v2i2.23117"
+            "DOI": "10.1109/ICHMS49158.2020.9209449"
         },
         {
+            "key": "ref5",
             "doi-asserted-by": "publisher",
-            "key": "bibr11-10776958221076057",
-            "DOI": "10.3145/epi.2016.jul.07"
+            "DOI": "10.1007/978-981-16-1119-3_31"
         },
         {
-            "volume-title": "Civic engagement and student success: Leveraging multiple degrees of achievement. Diversity and democracy",
-            "year": "2012",
-            "author": "Cress C. M.",
-            "key": "bibr12-10776958221076057"
-        },
-        {
-            "volume-title": "A promising connection: Increasing college access and success through civic engagement",
-            "year": "2010",
-            "author": "Cress C. M.",
-            "key": "bibr13-10776958221076057"
-        },
-        {
+            "key": "ref6",
             "doi-asserted-by": "publisher",
-            "key": "bibr14-10776958221076057",
-            "DOI": "10.1177/2158244013495542"
+            "DOI": "10.1109/CSCWD.2018.8465248"
         },
         {
-            "volume-title": "Civic engagement highest in developed countries",
-            "year": "2011",
-            "author": "English C.",
-            "key": "bibr15-10776958221076057"
-        },
-        {
-            "volume-title": "Development through civic engagement: Mapping assets in South Asia",
-            "year": "2010",
-            "author": "Etra A.",
-            "key": "bibr16-10776958221076057"
-        },
-        {
-            "volume-title": "Environmental education: A pathway to sustainability",
-            "year": "1993",
-            "author": "Fien J.",
-            "key": "bibr17-10776958221076057"
-        },
-        {
-            "volume-title": "A brief review of the evidence on civic learning in higher education",
-            "year": "2012",
-            "author": "Finley A.",
-            "key": "bibr18-10776958221076057"
-        },
-        {
-            "year": "2018",
-            "author": "Gallup",
-            "journal-title": "Global civic engagement",
-            "key": "bibr19-10776958221076057"
-        },
-        {
-            "volume-title": "The living documentary: From representing reality to co-creating reality in digital interactive documentary",
-            "year": "2013",
-            "author": "Gaudenzi S.",
-            "key": "bibr20-10776958221076057"
-        },
-        {
-            "volume-title": "World-class standards and local pedagogies: Can we do both?",
-            "year": "2000",
-            "author": "Gibbs T.",
-            "key": "bibr21-10776958221076057"
-        },
-        {
-            "volume-title": "McLuhan Galaxy Conference Proceedings",
-            "year": "2011",
-            "author": "Gifreu-Castells A.",
-            "first-page": "367",
-            "key": "bibr22-10776958221076057"
-        },
-        {
+            "key": "ref7",
             "doi-asserted-by": "publisher",
-            "key": "bibr23-10776958221076057",
-            "DOI": "10.1007/978-3-319-67732-3_11"
+            "DOI": "10.1145/3580252.3589414"
         },
         {
-            "issue": "2",
-            "key": "bibr24-10776958221076057",
-            "first-page": "14",
-            "volume": "98",
-            "author": "Hurtado S.",
-            "year": "2012",
-            "journal-title": "Liberal Education"
-        },
-        {
-            "volume-title": "Convergence culture: Where old and new media collide",
-            "year": "2006",
-            "author": "Jenkins H.",
-            "key": "bibr25-10776958221076057"
-        },
-        {
-            "volume-title": "Social studies today: Research & practice",
-            "year": "2009",
-            "author": "Kahne J.",
-            "first-page": "141",
-            "key": "bibr26-10776958221076057"
-        },
-        {
-            "volume-title": "The scientific dissemination documentary",
-            "year": "1999",
-            "author": "Le\u00f3n B.",
-            "key": "bibr27-10776958221076057"
-        },
-        {
-            "volume-title": "Civic engagement in the classroom: Strategies for incorporating education for civic and social responsibility in the undergraduate curriculum",
-            "year": "2009",
-            "author": "Liazos A.",
-            "key": "bibr28-10776958221076057"
-        },
-        {
-            "volume-title": "Civic engagement in higher education",
-            "year": "2009",
-            "author": "Lopez M. H.",
-            "first-page": "31",
-            "key": "bibr29-10776958221076057"
-        },
-        {
+            "key": "ref8",
             "doi-asserted-by": "publisher",
-            "key": "bibr30-10776958221076057",
-            "DOI": "10.1215/9780822385196"
+            "DOI": "10.1016/j.smhl.2018.07.004"
         },
         {
-            "doi-asserted-by": "publisher",
-            "key": "bibr31-10776958221076057",
-            "DOI": "10.1080/1359866X.2010.540894"
-        },
-        {
-            "volume-title": "Civic engagement in higher education",
-            "year": "2009",
-            "author": "Musil C.",
-            "first-page": "49",
-            "key": "bibr32-10776958221076057"
-        },
-        {
-            "volume-title": "Representing reality: Issues and concepts in documentary",
-            "year": "1991",
-            "author": "Nichols B.",
-            "key": "bibr33-10776958221076057"
-        },
-        {
-            "volume-title": "Place-based education pedagogy",
-            "year": "2010",
-            "author": "Norman E.",
-            "key": "bibr34-10776958221076057"
-        },
-        {
-            "volume-title": "Improving student learning outcomes with service learning",
-            "year": "2010",
-            "author": "Prentice M.",
-            "key": "bibr35-10776958221076057"
-        },
-        {
-            "doi-asserted-by": "publisher",
-            "key": "bibr36-10776958221076057",
-            "DOI": "10.1163/9789087904371"
-        },
-        {
-            "doi-asserted-by": "publisher",
-            "key": "bibr37-10776958221076057",
-            "DOI": "10.5408/17-276.1"
-        },
-        {
-            "doi-asserted-by": "publisher",
-            "key": "bibr38-10776958221076057",
-            "DOI": "10.1177/003172170208300806"
-        },
-        {
-            "volume-title": "Place and community-based education in schools",
-            "year": "2010",
-            "author": "Smith G.",
-            "key": "bibr39-10776958221076057"
-        },
-        {
-            "volume-title": "Place-based education: Connecting classrooms and communities",
-            "year": "2005",
-            "author": "Sobel D.",
-            "key": "bibr40-10776958221076057"
-        },
-        {
-            "doi-asserted-by": "publisher",
-            "key": "bibr41-10776958221076057",
-            "DOI": "10.1080/1350462980040404"
-        },
-        {
-            "doi-asserted-by": "publisher",
-            "key": "bibr42-10776958221076057",
-            "DOI": "10.1086/500711"
-        },
-        {
-            "issue": "1",
-            "key": "bibr43-10776958221076057",
-            "first-page": "106",
-            "volume": "15",
-            "author": "Theobald P.",
-            "year": "2000",
-            "journal-title": "FORUM for Applied Research and Public Policy"
-        },
-        {
-            "volume-title": "Schools that work: America\u2019s most innovative public education programs",
-            "year": "1992",
-            "author": "Wood G.",
-            "key": "bibr44-10776958221076057"
+            "journal-title": "Morgan Kaufmann Publishers Inc.",
+            "article-title": "Data Mining: Practical Machine Learning Tools and Techniques",
+            "year": "2016",
+            "author": "Witten",
+            "key": "ref9"
         }
     ],
+    "event": {
+        "name": "2024 IEEE/ACM Conference on Connected Health: Applications, Systems and Engineering Technologies (CHASE)",
+        "start": {
+            "date-parts": [
+                [
+                    2024,
+                    6,
+                    19
+                ]
+            ]
+        },
+        "location": "Wilmington, DE, USA",
+        "end": {
+            "date-parts": [
+                [
+                    2024,
+                    6,
+                    21
+                ]
+            ]
+        }
+    },
     "container-title": [
-        "Journalism &amp; Mass Communication Educator"
+        "2024 IEEE/ACM Conference on Connected Health: Applications, Systems and Engineering Technologies (CHASE)"
     ],
-    "language": "en",
     "link": [
         {
-            "URL": "https://journals.sagepub.com/doi/pdf/10.1177/10776958221076057",
-            "content-type": "application/pdf",
-            "content-version": "vor",
-            "intended-application": "text-mining"
-        },
-        {
-            "URL": "https://journals.sagepub.com/doi/full-xml/10.1177/10776958221076057",
-            "content-type": "application/xml",
-            "content-version": "vor",
-            "intended-application": "text-mining"
-        },
-        {
-            "URL": "https://journals.sagepub.com/doi/pdf/10.1177/10776958221076057",
+            "URL": "http://xplorestaging.ieee.org/ielx8/10614360/10614402/10614446.pdf?arnumber=10614446",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -457,64 +188,36 @@
         "date-parts": [
             [
                 2024,
-                10,
-                9
+                8,
+                6
             ]
         ],
-        "date-time": "2024-10-09T00:58:41Z",
-        "timestamp": 1728435521000
+        "date-time": "2024-08-06T09:53:37Z",
+        "timestamp": 1722938017000
     },
-    "score": 9.928662,
+    "score": 15.697566,
     "resource": {
         "primary": {
-            "URL": "https://journals.sagepub.com/doi/10.1177/10776958221076057"
+            "URL": "https://ieeexplore.ieee.org/document/10614446/"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2022,
-                2,
-                15
+                2024,
+                6,
+                19
             ]
         ]
     },
-    "references-count": 44,
-    "journal-issue": {
-        "issue": "3",
-        "published-print": {
-            "date-parts": [
-                [
-                    2022,
-                    9
-                ]
-            ]
-        }
-    },
-    "alternative-id": [
-        "10.1177/10776958221076057"
-    ],
-    "URL": "http://dx.doi.org/10.1177/10776958221076057",
-    "ISSN": [
-        "1077-6958",
-        "2161-4326"
-    ],
-    "issn-type": [
-        {
-            "type": "print",
-            "value": "1077-6958"
-        },
-        {
-            "type": "electronic",
-            "value": "2161-4326"
-        }
-    ],
+    "references-count": 9,
+    "URL": "http://dx.doi.org/10.1109/chase60773.2024.00034",
     "published": {
         "date-parts": [
             [
-                2022,
-                2,
-                15
+                2024,
+                6,
+                19
             ]
         ]
     }

@@ -2,33 +2,33 @@
     "indexed": {
         "date-parts": [
             [
-                2024,
-                5,
-                11
+                2023,
+                12,
+                12
             ]
         ],
-        "date-time": "2024-05-11T02:10:23Z",
-        "timestamp": 1715393423627
+        "date-time": "2023-12-12T00:15:01Z",
+        "timestamp": 1702340101870
     },
-    "reference-count": 65,
+    "reference-count": 40,
     "publisher": "SAGE Publications",
-    "issue": "2",
+    "issue": "4",
     "license": [
         {
             "start": {
                 "date-parts": [
                     [
-                        2024,
-                        1,
-                        15
+                        2023,
+                        11,
+                        21
                     ]
                 ],
-                "date-time": "2024-01-15T00:00:00Z",
-                "timestamp": 1705276800000
+                "date-time": "2023-11-21T00:00:00Z",
+                "timestamp": 1700524800000
             },
             "content-version": "tdm",
             "delay-in-days": 0,
-            "URL": "https://journals.sagepub.com/page/policies/text-and-data-mining-license"
+            "URL": "http://journals.sagepub.com/page/policies/text-and-data-mining-license"
         }
     ],
     "content-domain": {
@@ -38,79 +38,49 @@
         "crossmark-restriction": true
     },
     "short-container-title": [
-        "Journal of Industrial Relations"
+        "Journal of Literacy Research"
     ],
     "published-print": {
         "date-parts": [
             [
-                2024,
-                4
+                2023,
+                12
             ]
         ]
     },
-    "abstract": "<jats:p> We study whether the quality of the first job is lower for professional Asian nationals than for non-Asian nationals in the USA. With over a million professionals from Asia entering the US labor market in the past decade, a potential under placement may be both inefficient and discriminatory. We collected data on all newly hired assistant professors of management in research-intensive (R1) universities in the USA between 2010 and 2021. We focus on the quality of the university into which first hires are placed and examine whether first-job placement quality is lower for individuals who were born in East, South and Southeast Asia. We find that the quality and quantity of publication record are positively related to the quality of the placement and that Asian nationals have higher performance. However, Asian nationals are placed at lower-quality universities relative to their peers. Further, Asian nationals require a strong performance signal, in the form of first or second authorship on a publication to narrow the placement gap. Our results are explained by a combination of direct bias against applicants of Asian nationality and a requirement of a higher performance \u201cburden of proof\u201d from these applicants, compared to peers who are non-Asian nationals. </jats:p>",
-    "DOI": "10.1177/00221856231226270",
+    "abstract": "<jats:p> Blending narrative portraiture and feminist methods, this study explored the lives of two rural women who are creative writers. The study asked (1) What are their critical purposes? and (2) How did gender and place intersect in their writing lives? The findings were that the women used creative writing to engage in praxis by creating and disseminating knowledge. Their writing critically interrogated and redefined conceptions of womanhood. Additional critical purposes were unique to women's intersectional identities and lived experiences. They ranged from interrogating societal perspectives of gender, sexuality, and race to interrogating rurality and sexual violence. The aesthetic texts they created articulated and advocated for intersubjective truths. Shifting the focus of critical literacy from pedagogy and reading to writing beyond educational spaces, the women drew upon critical literacy not as a means of being taught how to understand the power of texts, but to wield the power of texts themselves. </jats:p>",
+    "DOI": "10.1177/1086296x231215759",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2024,
-                1,
-                16
+                2023,
+                11,
+                22
             ]
         ],
-        "date-time": "2024-01-16T03:31:47Z",
-        "timestamp": 1705375907000
+        "date-time": "2023-11-22T07:21:10Z",
+        "timestamp": 1700637670000
     },
-    "page": "263-290",
+    "page": "361-382",
     "update-policy": "http://dx.doi.org/10.1177/sage-journals-update-policy",
     "source": "Crossref",
     "is-referenced-by-count": 0,
     "title": [
-        "Inefficiencies and bias in first job placement: The case of professional Asian nationals in the United States"
+        "Rural Women, Creative Writing, and Resistance"
     ],
     "prefix": "10.1177",
-    "volume": "66",
+    "volume": "55",
     "author": [
         {
-            "ORCID": "http://orcid.org/0000-0002-3404-818X",
+            "ORCID": "http://orcid.org/0000-0003-2807-6851",
             "authenticated-orcid": false,
-            "given": "Amit",
-            "family": "Kramer",
+            "given": "Honor B.",
+            "family": "McElroy",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "University of Illinois at Urbana-Champaign, USA"
-                }
-            ]
-        },
-        {
-            "given": "Kwon Hee",
-            "family": "Han",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "University of Illinois at Urbana-Champaign, USA"
-                }
-            ]
-        },
-        {
-            "given": "Yun Kyoung",
-            "family": "Kim",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Salisbury University, USA"
-                }
-            ]
-        },
-        {
-            "given": "Karen Z.",
-            "family": "Kramer",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "University of Illinois at Urbana-Champaign, USA"
+                    "name": "Seidel School of Education, Salisbury University, MD, USA"
                 }
             ]
         }
@@ -119,357 +89,276 @@
     "published-online": {
         "date-parts": [
             [
-                2024,
-                1,
-                15
+                2023,
+                11,
+                21
             ]
         ]
     },
     "reference": [
         {
-            "key": "bibr1-00221856231226270",
+            "key": "bibr1-1086296X231215759",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1162/003355300554881"
+            "DOI": "10.1002/jaal.1108"
         },
         {
-            "key": "bibr2-00221856231226270",
+            "key": "bibr2-1086296X231215759",
+            "unstructured": "American Civil Liberties Union (2023). Women\u2019s rights. https://www.aclu.org/issues/womens-rights"
+        },
+        {
+            "issue": "4",
+            "key": "bibr3-1086296X231215759",
+            "first-page": "312",
+            "volume": "46",
+            "author": "Blackburn M. V.",
+            "year": "2002",
+            "journal-title": "Journal of Adolescent & Adult Literacy"
+        },
+        {
+            "key": "bibr4-1086296X231215759",
+            "first-page": "349",
+            "volume-title": "Theoretical models and processes of Reading",
+            "author": "Brooks M. D.",
+            "year": "2019",
+            "edition": "7"
+        },
+        {
+            "key": "bibr5-1086296X231215759",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1086/682938"
+            "DOI": "10.46743/2160-3715/2017.2332"
         },
         {
-            "key": "bibr3-00221856231226270",
+            "key": "bibr6-1086296X231215759",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1257/aer.20160613"
+            "DOI": "10.1177/00420859211003933"
         },
         {
-            "key": "bibr4-00221856231226270",
+            "key": "bibr7-1086296X231215759",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1086/723500"
+            "DOI": "10.1111/cccr.12172"
         },
         {
-            "key": "bibr5-00221856231226270",
+            "issue": "10",
+            "key": "bibr8-1086296X231215759",
+            "first-page": "1",
+            "volume": "28",
+            "author": "Corbett M.",
+            "year": "2013",
+            "journal-title": "Journal of Research in Rural Education"
+        },
+        {
+            "issue": "5",
+            "key": "bibr9-1086296X231215759",
+            "first-page": "1",
+            "volume": "32",
+            "author": "Corbett M.",
+            "year": "2017",
+            "journal-title": "Journal of Research in Rural Education"
+        },
+        {
+            "key": "bibr10-1086296X231215759",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/001979391206500105"
+            "DOI": "10.1215/9780822375371"
         },
         {
-            "key": "bibr6-00221856231226270",
+            "key": "bibr11-1086296X231215759",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0019793915570873"
+            "DOI": "10.2307/1229039"
         },
         {
-            "key": "bibr7-00221856231226270",
+            "key": "bibr12-1086296X231215759",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0019793914546300"
+            "DOI": "10.4324/9781003064503-6"
         },
         {
-            "key": "bibr8-00221856231226270",
-            "unstructured": "Batalova J, Hanna M, Levesque C (2021) Frequently requested statistics on immigrants and immigration in the United States. Available at: https://www.migrationpolicy.org/article/frequently-requested-statistics-immigrants-and-immigration-united-states-2020#demographic-educational-linguistic (January 2023)."
-        },
-        {
-            "key": "bibr9-00221856231226270",
+            "key": "bibr13-1086296X231215759",
             "doi-asserted-by": "publisher",
-            "DOI": "10.3386/w25836"
+            "DOI": "10.1177/002205748316500103"
         },
         {
-            "key": "bibr10-00221856231226270",
+            "key": "bibr14-1086296X231215759",
+            "first-page": "90",
+            "volume-title": "Reclaiming the rural: Essays on literacy, rhetoric, and pedagogy",
+            "author": "Greer J.",
+            "year": "2012"
+        },
+        {
+            "key": "bibr15-1086296X231215759",
+            "first-page": "164",
+            "volume-title": "Genders, cultures, and literacies: understanding intersecting identities",
+            "author": "Guzzetti B. J."
+        },
+        {
+            "key": "bibr16-1086296X231215759",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2307/2095307"
+            "DOI": "10.1002/rrq.377"
         },
         {
-            "key": "bibr11-00221856231226270",
+            "key": "bibr17-1086296X231215759",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1300/J051v12n03_04"
+            "DOI": "10.1002/jaal.1191"
         },
         {
-            "key": "bibr12-00221856231226270",
-            "unstructured": "Budiman A (2020) Key findings about U.S. immigrants. Available at: https://www.pewresearch.org/fact-tank/2020/08/20/key-findings-about-u-s-immigrants/ (January 2023)."
-        },
-        {
-            "key": "bibr13-00221856231226270",
+            "key": "bibr18-1086296X231215759",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/1470595813491237"
+            "DOI": "10.2307/j.ctt1djmhkj"
         },
         {
-            "key": "bibr14-00221856231226270",
+            "key": "bibr19-1086296X231215759",
+            "volume-title": "Yearning: Race, gender, and cultural politics",
+            "author": "hooks b.",
+            "year": "1990"
+        },
+        {
+            "key": "bibr20-1086296X231215759",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0019793914564961"
+            "DOI": "10.1177/1086296X20966367"
         },
         {
-            "key": "bibr15-00221856231226270",
-            "unstructured": "Carnegie Foundation for the Advancement of Teaching (2021) The Carnegie classification of institutions of higher education, 2021 edition. Available at: https://carnegieclassifications.iu.edu/classification_descriptions/basic.php (January 2023)."
-        },
-        {
-            "key": "bibr16-00221856231226270",
+            "key": "bibr21-1086296X231215759",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/1529100614541236"
+            "DOI": "10.58680/ccc202131442"
         },
         {
-            "key": "bibr17-00221856231226270",
+            "key": "bibr22-1086296X231215759",
+            "volume-title": "The art and science of portraiture",
+            "author": "Lawrence-Lightfoot S.",
+            "year": "1997"
+        },
+        {
+            "key": "bibr23-1086296X231215759",
+            "first-page": "349",
+            "volume-title": "Theoretical models and processes of Reading",
+            "author": "Luke A.",
+            "year": "2019",
+            "edition": "7"
+        },
+        {
+            "key": "bibr24-1086296X231215759",
+            "first-page": "1",
+            "volume-title": "Queer, trans, and intersectional theory in educational practice: Student, teacher, and community experiences",
+            "author": "Mayo C.",
+            "year": "2020"
+        },
+        {
+            "key": "bibr25-1086296X231215759",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1073/pnas.1014871108"
+            "DOI": "10.1177/0042085919893734"
         },
         {
-            "key": "bibr18-00221856231226270",
+            "key": "bibr26-1086296X231215759",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1371/journal.pone.0051332"
+            "DOI": "10.1002/9781118323342.ch30"
         },
         {
-            "key": "bibr19-00221856231226270",
+            "key": "bibr27-1086296X231215759",
+            "volume-title": "Critical literacy and the aesthetic: Transforming the English classroom",
+            "author": "Misson R.",
+            "year": "2006"
+        },
+        {
+            "key": "bibr28-1086296X231215759",
+            "first-page": "291",
+            "volume-title": "Literacy research methodologies",
+            "author": "Montero M.",
+            "year": "2021",
+            "edition": "3"
+        },
+        {
+            "key": "bibr29-1086296X231215759",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/1468-0297.t01-1-00151"
+            "DOI": "10.1002/JAAL.00129"
         },
         {
-            "key": "bibr20-00221856231226270",
-            "unstructured": "Echeverria-Estrada C, Batalova J (2020) Chinese immigrants in the United States. Available at: https://www.migrationpolicy.org/article/chinese-immigrants-united-states-2018 (January 2023)."
+            "key": "bibr30-1086296X231215759",
+            "first-page": "30",
+            "volume-title": "Doing feminist research",
+            "author": "Oakley A.",
+            "year": "1981"
         },
         {
-            "key": "bibr21-00221856231226270",
+            "key": "bibr31-1086296X231215759",
+            "volume-title": "Qualitative evaluation and research methods",
+            "author": "Patton M. Q.",
+            "year": "1990",
+            "edition": "2"
+        },
+        {
+            "key": "bibr32-1086296X231215759",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0019793918814476"
+            "DOI": "10.1002/rrq.412"
         },
         {
-            "key": "bibr22-00221856231226270",
+            "key": "bibr33-1086296X231215759",
+            "volume-title": "The coding manual for qualitative researchers",
+            "author": "Salda\u00f1a J.",
+            "year": "2016",
+            "edition": "3"
+        },
+        {
+            "key": "bibr34-1086296X231215759",
+            "volume-title": "Feminist methodologies for critical researchers: Bridging differences",
+            "author": "Sprague J.",
+            "year": "2016"
+        },
+        {
+            "issue": "18",
+            "key": "bibr35-1086296X231215759",
+            "first-page": "1",
+            "volume": "2",
+            "author": "Thwaites R.",
+            "year": "2017",
+            "journal-title": "Frontiers in Sociology"
+        },
+        {
+            "key": "bibr36-1086296X231215759",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1353/rhe.2002.0024"
+            "DOI": "10.1353/clj.2019.0016"
         },
         {
-            "key": "bibr23-00221856231226270",
+            "key": "bibr37-1086296X231215759",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1371/journal.pone.0209749"
+            "DOI": "10.4324/b23279-27"
         },
         {
-            "key": "bibr24-00221856231226270",
+            "key": "bibr38-1086296X231215759",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0019793916668875"
+            "DOI": "10.1080/13613321003751601"
         },
         {
-            "key": "bibr25-00221856231226270",
-            "unstructured": "Financial Times (2016) Business schools rankings. Available at: https://rankings.ft.com/rankings/2866/mba."
-        },
-        {
-            "key": "bibr26-00221856231226270",
+            "key": "bibr39-1086296X231215759",
             "doi-asserted-by": "publisher",
-            "DOI": "10.54648/IJCL2016024"
+            "DOI": "10.1598/JAAL.51.4.5"
         },
         {
-            "key": "bibr27-00221856231226270",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/2667088"
-        },
-        {
-            "key": "bibr28-00221856231226270",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/1753-6405.13021"
-        },
-        {
-            "key": "bibr29-00221856231226270",
-            "unstructured": "Hanna M, Batalova J (2020) Indian immigrants in the United States. Available at: https://www.migrationpolicy.org/article/indian-immigrants-united-states-2019 (January 2023)."
-        },
-        {
-            "key": "bibr30-00221856231226270",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0019793916668880"
-        },
-        {
-            "key": "bibr31-00221856231226270",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1108/02683941011019339"
-        },
-        {
-            "key": "bibr32-00221856231226270",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1186/s40176-018-0128-4"
-        },
-        {
-            "key": "bibr33-00221856231226270",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1086/260808"
-        },
-        {
-            "key": "bibr34-00221856231226270",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3386/w19377"
-        },
-        {
-            "key": "bibr35-00221856231226270",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2139/ssrn.3900884"
-        },
-        {
-            "key": "bibr36-00221856231226270",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/001979390605900402"
-        },
-        {
-            "key": "bibr37-00221856231226270",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.euroecorev.2015.08.015"
-        },
-        {
-            "key": "bibr38-00221856231226270",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1073/pnas.1918896117"
-        },
-        {
-            "key": "bibr39-00221856231226270",
-            "first-page": "65",
-            "volume": "16",
-            "author": "Lynch W",
-            "year": "2006",
-            "journal-title": "Temple Political & Civil Rights Law Review"
-        },
-        {
-            "key": "bibr40-00221856231226270",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0018726712467048"
-        },
-        {
-            "key": "bibr41-00221856231226270",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1468-232X.2008.00538.x"
-        },
-        {
-            "key": "bibr42-00221856231226270",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/amp0000480"
-        },
-        {
-            "key": "bibr43-00221856231226270",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1257/pol.3.4.148"
-        },
-        {
-            "key": "bibr44-00221856231226270",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1257/jep.20.3.143"
-        },
-        {
-            "key": "bibr45-00221856231226270",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1186/2193-8997-2-4"
-        },
-        {
-            "key": "bibr46-00221856231226270",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0149206308319533"
-        },
-        {
-            "key": "bibr47-00221856231226270",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/bjir.12703"
-        },
-        {
-            "key": "bibr48-00221856231226270",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/job.163"
-        },
-        {
-            "key": "bibr49-00221856231226270",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0019793919894554"
-        },
-        {
-            "key": "bibr50-00221856231226270",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/00197939211041301"
-        },
-        {
-            "key": "bibr51-00221856231226270",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0003122412463213"
-        },
-        {
-            "key": "bibr52-00221856231226270",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1108/03090561111111307"
-        },
-        {
-            "key": "bibr53-00221856231226270",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/019791839903300207"
-        },
-        {
-            "key": "bibr54-00221856231226270",
-            "first-page": "61",
-            "volume-title": "Differentiation Between Social Groups: Studies in the Social Psychology of Intergroup Relations",
-            "author": "Tajfel H",
-            "year": "1978"
-        },
-        {
-            "key": "bibr55-00221856231226270",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0730888418785657"
-        },
-        {
-            "key": "bibr56-00221856231226270",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0022185620951830"
-        },
-        {
-            "key": "bibr57-00221856231226270",
-            "unstructured": "United States Census Bureau (2006) Historical census statistics on the foreign-born population of the United States: 1850 to 2000. Available at: https://www.census.gov/content/dam/Census/library/working-papers/2006/demo/POP-twps0081.pdf (January 2023)."
-        },
-        {
-            "key": "bibr58-00221856231226270",
-            "unstructured": "USCIS (2019) H 1B petitions by gender and country of birth fiscal year 2019. Available at: https://www.uscis.gov/sites/default/files/document/data/h-1b-petitions-by-gender-country-of-birth-fy2019.pdf"
-        },
-        {
-            "key": "bibr59-00221856231226270",
-            "unstructured": "U.S. Equal Employment Opportunity Commission (2022) National origin discrimination. Available at: https://www.eeoc.gov/national-origin-discrimination#:\u223c:text=National%20origin%20discrimination%20involves%20treating,even%20if%20they%20are%20not (January 2023)."
-        },
-        {
-            "key": "bibr60-00221856231226270",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1108/01443330110789871"
-        },
-        {
-            "issue": "2",
-            "key": "bibr61-00221856231226270",
-            "first-page": "181",
-            "volume": "120",
-            "author": "Wang LL-C",
-            "year": "1991",
-            "journal-title": "Daedalus"
-        },
-        {
-            "key": "bibr62-00221856231226270",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0019793919875707"
-        },
-        {
-            "key": "bibr63-00221856231226270",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/10353046211041365"
-        },
-        {
-            "key": "bibr64-00221856231226270",
-            "unstructured": "Yang JR, Liu J (2021) Strengthening accountability for discrimination. Economic Policy Institute. Available at: https://www.epi.org/unequalpower/publications/strengthening-accountability-for-discrimination-confronting-fundamental-power-imbalances-in-the-employment-relationship/."
-        },
-        {
-            "key": "bibr65-00221856231226270",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/1369183X.2015.1133279"
+            "issue": "4",
+            "key": "bibr40-1086296X231215759",
+            "first-page": "405",
+            "volume": "45",
+            "author": "Wissman K. K.",
+            "year": "2011",
+            "journal-title": "Research in the Teaching of English"
         }
     ],
     "container-title": [
-        "Journal of Industrial Relations"
+        "Journal of Literacy Research"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://journals.sagepub.com/doi/pdf/10.1177/00221856231226270",
+            "URL": "http://journals.sagepub.com/doi/pdf/10.1177/1086296X231215759",
             "content-type": "application/pdf",
             "content-version": "vor",
             "intended-application": "text-mining"
         },
         {
-            "URL": "https://journals.sagepub.com/doi/full-xml/10.1177/00221856231226270",
+            "URL": "http://journals.sagepub.com/doi/full-xml/10.1177/1086296X231215759",
             "content-type": "application/xml",
             "content-version": "vor",
             "intended-application": "text-mining"
         },
         {
-            "URL": "https://journals.sagepub.com/doi/pdf/10.1177/00221856231226270",
+            "URL": "http://journals.sagepub.com/doi/pdf/10.1177/1086296X231215759",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -478,65 +367,65 @@
     "deposited": {
         "date-parts": [
             [
-                2024,
-                5,
+                2023,
+                12,
                 11
             ]
         ],
-        "date-time": "2024-05-11T01:56:47Z",
-        "timestamp": 1715392607000
+        "date-time": "2023-12-11T16:04:12Z",
+        "timestamp": 1702310652000
     },
-    "score": 11.896753,
+    "score": 13.58713,
     "resource": {
         "primary": {
-            "URL": "https://journals.sagepub.com/doi/10.1177/00221856231226270"
+            "URL": "http://journals.sagepub.com/doi/10.1177/1086296X231215759"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2024,
-                1,
-                15
+                2023,
+                11,
+                21
             ]
         ]
     },
-    "references-count": 65,
+    "references-count": 40,
     "journal-issue": {
-        "issue": "2",
+        "issue": "4",
         "published-print": {
             "date-parts": [
                 [
-                    2024,
-                    4
+                    2023,
+                    12
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1177/00221856231226270"
+        "10.1177/1086296X231215759"
     ],
-    "URL": "http://dx.doi.org/10.1177/00221856231226270",
+    "URL": "http://dx.doi.org/10.1177/1086296x231215759",
     "ISSN": [
-        "0022-1856",
-        "1472-9296"
+        "1086-296X",
+        "1554-8430"
     ],
     "issn-type": [
         {
-            "value": "0022-1856",
+            "value": "1086-296X",
             "type": "print"
         },
         {
-            "value": "1472-9296",
+            "value": "1554-8430",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2024,
-                1,
-                15
+                2023,
+                11,
+                21
             ]
         ]
     }

@@ -2,360 +2,196 @@
     "indexed": {
         "date-parts": [
             [
-                2022,
-                3,
-                30
+                2023,
+                12,
+                12
             ]
         ],
-        "date-time": "2022-03-30T22:41:30Z",
-        "timestamp": 1648680090920
+        "date-time": "2023-12-12T00:29:27Z",
+        "timestamp": 1702340967253
     },
-    "reference-count": 29,
-    "publisher": "Informa UK Limited",
-    "issue": "4",
-    "funder": [
+    "reference-count": 0,
+    "publisher": "Wiley",
+    "issue": "S1",
+    "license": [
         {
-            "DOI": "10.13039/100010064",
-            "name": "Salisbury University",
-            "doi-asserted-by": "publisher",
-            "award": [
-                "Faculty Research Mini Grant"
-            ],
-            "id": [
-                {
-                    "id": "10.13039/100010064",
-                    "id-type": "DOI",
-                    "asserted-by": "publisher"
-                }
-            ]
+            "start": {
+                "date-parts": [
+                    [
+                        2022,
+                        5,
+                        13
+                    ]
+                ],
+                "date-time": "2022-05-13T00:00:00Z",
+                "timestamp": 1652400000000
+            },
+            "content-version": "vor",
+            "delay-in-days": 12,
+            "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
         }
     ],
     "content-domain": {
         "domain": [
-            "www.tandfonline.com"
+            "faseb.onlinelibrary.wiley.com"
         ],
         "crossmark-restriction": true
     },
     "short-container-title": [
-        "Health Communication"
+        "The FASEB Journal"
     ],
     "published-print": {
         "date-parts": [
             [
-                2018,
-                4,
-                3
+                2022,
+                5
             ]
         ]
     },
-    "DOI": "10.1080/10410236.2016.1278492",
+    "abstract": "<jats:p>RNA\u2010protein aggregates akin to membraneless organelles in modern biology offer a potential model for protocells and precursors to protocells in the chemistry of early Earth. In this project, we explore the aggregation properties of nucleic acids and their nucleotide monomers under a variety of conditions using a fluorescence dye\u2010based assay for aggregation. The building blocks of RNA \u2013 guanosine monophosphate and adenosine monophosphate showed intrinsic concentration\u2010dependent aggregation. Cyclic incubation between high and low temperatures, mimicking for example conditions around a hydrothermal vent, increased aggregation. This trend was enhanced when experiments were repeated with total RNA extracted from bacterial and fungal sources. RNA aggregation was further enhanced by the incorporation of peptides featuring an RNA binding sequence combined with an intrinsically disordered region. Our results show that RNA aggregation, a key first step on the pathway to protocells, can be enhanced through temperature cycling and the binding of short disordered peptides.</jats:p>",
+    "DOI": "10.1096/fasebj.2022.36.s1.r6283",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2017,
-                2,
+                2022,
+                5,
                 3
             ]
         ],
-        "date-time": "2017-02-03T16:25:30Z",
-        "timestamp": 1486139130000
+        "date-time": "2022-05-03T08:23:48Z",
+        "timestamp": 1651566228000
     },
-    "page": "423-432",
-    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
+    "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 2,
+    "is-referenced-by-count": 0,
     "title": [
-        "Taking Care, Bringing Life: A Post-structuralist Feminist Analysis of Maternal Discourses of Mothers and<i>Dai</i>s in India"
+        "Enhancing RNA aggregation through temperature cycling and intrinsically disordered RNA binding peptides"
     ],
-    "prefix": "10.1080",
-    "volume": "33",
+    "prefix": "10.1096",
+    "volume": "36",
     "author": [
         {
-            "given": "Vinita",
-            "family": "Agarwal",
+            "given": "Brandon M.",
+            "family": "Tenaglia",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Department of Communication Arts, Salisbury University"
+                    "name": "Chemistry Salisbury University Salisbury MD"
+                }
+            ]
+        },
+        {
+            "given": "Casey",
+            "family": "Finnegan",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Salisbury University Salisbury MD"
+                }
+            ]
+        },
+        {
+            "given": "Joshua E.",
+            "family": "Sokoloski",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Salisbury University Salisbury MD"
                 }
             ]
         }
     ],
-    "member": "301",
+    "member": "311",
     "published-online": {
         "date-parts": [
             [
-                2017,
-                2,
-                3
+                2022,
+                5,
+                13
             ]
         ]
     },
-    "reference": [
-        {
-            "key": "CIT0001",
-            "first-page": "235",
-            "author": "The American Congress of Obstetricians and Gynecologists (ACOG)",
-            "year": "2006",
-            "journal-title": "Obstetrics & Gynecology, 108"
-        },
-        {
-            "key": "CIT0003",
-            "volume-title": "Frequently asked questions FAQ001 Pregnancy: Nutrition during pregnancy",
-            "author": "The American Congress of Obstetricians and Gynecologists (ACOG)",
-            "year": "2015"
-        },
-        {
-            "key": "CIT0004",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1057/9780230501263"
-        },
-        {
-            "key": "CIT0005",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1215/9780822394990-005"
-        },
-        {
-            "key": "CIT0006",
-            "volume-title": "Gender trouble: Feminism and the subversion of identity",
-            "author": "Butler J.",
-            "year": "1990"
-        },
-        {
-            "key": "CIT0007",
-            "volume-title": "Bodies that matter: On the discursive limits of \u201csex.\u201d",
-            "author": "Butler J.",
-            "year": "1993"
-        },
-        {
-            "key": "CIT0008",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1136/bmjopen-2013-004401"
-        },
-        {
-            "key": "CIT0011",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.14682885.2004.tb00313.x"
-        },
-        {
-            "key": "CIT0012",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1207/s15327027hc1102_3"
-        },
-        {
-            "key": "CIT0013",
-            "volume-title": "Language and power",
-            "author": "Fairclough N.",
-            "year": "1989"
-        },
-        {
-            "key": "CIT0014",
-            "volume-title": "The archaeology of knowledge",
-            "author": "Foucault M.",
-            "year": "1972"
-        },
-        {
-            "key": "CIT0015",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10410236.2014.976605"
-        },
-        {
-            "key": "CIT0018",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.4135/9781412973588"
-        },
-        {
-            "key": "CIT0019",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10410236.2013.831515"
-        },
-        {
-            "key": "CIT0020",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10570319709374569"
-        },
-        {
-            "key": "CIT0021",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10810730.2014.918216"
-        },
-        {
-            "key": "CIT0022",
-            "volume-title": "Qualitative communication research methods",
-            "author": "Lindlof T.",
-            "year": "2002",
-            "edition": "2"
-        },
-        {
-            "key": "CIT0023",
-            "volume-title": "Colonialism/postcolonialism: The new critical idiom",
-            "author": "Loomba A.",
-            "year": "2005"
-        },
-        {
-            "key": "CIT0024",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0277-9536(96)00353-X"
-        },
-        {
-            "key": "CIT0025",
-            "volume-title": "Medicine as culture: Illness, disease, and the body in Western societies",
-            "author": "Lupton D.",
-            "year": "2003",
-            "edition": "2"
-        },
-        {
-            "key": "CIT0026",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0277-9536(00)00396-8"
-        },
-        {
-            "key": "CIT0027",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1215/9780822384649"
-        },
-        {
-            "key": "CIT0028",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1215/9780822394990-003"
-        },
-        {
-            "key": "CIT0029",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00909880902792297"
-        },
-        {
-            "key": "CIT0030",
-            "doi-asserted-by": "crossref",
-            "volume-title": "A critique of postcolonial reason: Toward a history of the vanishing present",
-            "author": "Spivak G. C.",
-            "year": "1999",
-            "DOI": "10.2307/j.ctvjsf541"
-        },
-        {
-            "key": "CIT0031",
-            "volume-title": "Social inclusion of internal migrants in India: Internal migration in India initiative",
-            "author": "UNESCO",
-            "year": "2013"
-        },
-        {
-            "key": "CIT0033",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3329/jhpn.v27i2.3363"
-        },
-        {
-            "key": "CIT0034",
-            "volume-title": "Feminist practice and poststructuralist theory",
-            "author": "Weedon C.",
-            "year": "1996"
-        },
-        {
-            "key": "CIT0035",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/07491409.2005.10162486"
-        }
-    ],
     "container-title": [
-        "Health Communication"
+        "The FASEB Journal"
     ],
     "language": "en",
-    "link": [
-        {
-            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/10410236.2016.1278492",
-            "content-type": "unspecified",
-            "content-version": "vor",
-            "intended-application": "similarity-checking"
-        }
-    ],
     "deposited": {
         "date-parts": [
             [
-                2019,
-                9,
-                18
+                2023,
+                12,
+                11
             ]
         ],
-        "date-time": "2019-09-18T03:21:07Z",
-        "timestamp": 1568776867000
+        "date-time": "2023-12-11T09:56:21Z",
+        "timestamp": 1702288581000
     },
-    "score": 14.019323,
+    "score": 17.732317,
     "resource": {
         "primary": {
-            "URL": "https://www.tandfonline.com/doi/full/10.1080/10410236.2016.1278492"
+            "URL": "https://faseb.onlinelibrary.wiley.com/doi/10.1096/fasebj.2022.36.S1.R6283"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2017,
-                2,
-                3
+                2022,
+                5
             ]
         ]
     },
-    "references-count": 29,
+    "references-count": 0,
     "journal-issue": {
-        "issue": "4",
-        "published-online": {
-            "date-parts": [
-                [
-                    2017,
-                    1,
-                    17
-                ]
-            ]
-        },
+        "issue": "S1",
         "published-print": {
             "date-parts": [
                 [
-                    2018,
-                    4,
-                    3
+                    2022,
+                    5
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1080/10410236.2016.1278492"
+        "10.1096/fasebj.2022.36.S1.R6283"
     ],
-    "URL": "http://dx.doi.org/10.1080/10410236.2016.1278492",
+    "URL": "http://dx.doi.org/10.1096/fasebj.2022.36.s1.r6283",
+    "archive": [
+        "Portico"
+    ],
     "ISSN": [
-        "1041-0236",
-        "1532-7027"
+        "0892-6638",
+        "1530-6860"
     ],
     "issn-type": [
         {
-            "value": "1041-0236",
+            "value": "0892-6638",
             "type": "print"
         },
         {
-            "value": "1532-7027",
+            "value": "1530-6860",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2017,
-                2,
-                3
+                2022,
+                5
             ]
         ]
     },
     "assertion": [
         {
-            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
-            "order": 1,
-            "name": "peerreview_statement",
-            "label": "Peer Review Statement"
-        },
-        {
-            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=hhth20",
-            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=hhth20",
+            "value": "2022-05-13",
             "order": 2,
-            "name": "aims_and_scope_url",
-            "label": "Aim & Scope"
+            "name": "published",
+            "label": "Published",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
         }
     ]
 }

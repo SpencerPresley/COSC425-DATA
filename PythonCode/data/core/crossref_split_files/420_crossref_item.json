@@ -2,413 +2,181 @@
     "indexed": {
         "date-parts": [
             [
-                2023,
-                12,
-                28
+                2024,
+                1,
+                24
             ]
         ],
-        "date-time": "2023-12-28T00:10:27Z",
-        "timestamp": 1703722227600
+        "date-time": "2024-01-24T00:37:52Z",
+        "timestamp": 1706056672100
     },
-    "reference-count": 51,
-    "publisher": "Wiley",
-    "issue": "3-4",
-    "license": [
-        {
-            "start": {
-                "date-parts": [
-                    [
-                        2023,
-                        11,
-                        16
-                    ]
-                ],
-                "date-time": "2023-11-16T00:00:00Z",
-                "timestamp": 1700092800000
-            },
-            "content-version": "vor",
-            "delay-in-days": 0,
-            "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
-        }
-    ],
+    "reference-count": 16,
+    "publisher": "Duke University Press",
+    "issue": "3",
     "content-domain": {
-        "domain": [
-            "onlinelibrary.wiley.com"
-        ],
-        "crossmark-restriction": true
+        "domain": [],
+        "crossmark-restriction": false
     },
-    "short-container-title": [
-        "American J of Comm Psychol"
-    ],
     "published-print": {
         "date-parts": [
             [
                 2023,
-                12
+                12,
+                1
             ]
         ]
     },
-    "abstract": "<jats:title>Abstract</jats:title><jats:p>The Society for Community Research and Action (SCRA) is the primary professional home for community psychologists in the United States\u00a0and increasingly around the world. Since the formation of the American Psychological Association Division 27: Community Psychology in 1966, now SCRA, 54 people have served in the Presidential role. Presidential leaders' annual addresses both reflect the current state of the field and have the ability to shape the future of both SCRA as an organization and community psychology as a discipline given their positions as leaders. This commentary explores the trajectory of SCRA as an organization via 33 available presidential addresses, 28 of which were published in the <jats:italic>American Journal of Community Psychology</jats:italic> (AJCP). Using thematic analysis and drawing on both dialectical and life cycle organizational processes, three periods of SCRA and community psychology more broadly were identified: <jats:italic>defining community psychology</jats:italic>, <jats:italic>applying community psychology</jats:italic>, and <jats:italic>re\u2010imagining community psychology</jats:italic>. Themes speak to tensions between the ideals of the society and the work of the society. We conclude by offering a series of questions for consideration as SCRA positions itself for the future.</jats:p>",
-    "DOI": "10.1002/ajcp.12725",
+    "DOI": "10.1215/00358118-10807083",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2023,
-                11,
-                16
+                2024,
+                1,
+                23
             ]
         ],
-        "date-time": "2023-11-16T12:15:04Z",
-        "timestamp": 1700136904000
+        "date-time": "2024-01-23T08:16:03Z",
+        "timestamp": 1705997763000
     },
-    "page": "341-354",
-    "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+    "page": "575-582",
     "source": "Crossref",
-    "is-referenced-by-count": 1,
+    "is-referenced-by-count": 0,
     "title": [
-        "Then and now: A 50\u2010year retrospective thematic analysis of Society for Community Research and Action presidential addresses"
+        "Beyond Analogy"
     ],
-    "prefix": "10.1002",
-    "volume": "72",
+    "prefix": "10.1215",
+    "volume": "114",
     "author": [
         {
-            "ORCID": "http://orcid.org/0000-0002-0880-2986",
-            "authenticated-orcid": false,
-            "given": "Christopher D.",
-            "family": "Nettles",
+            "given": "Arnaud",
+            "family": "Perret",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "California Tendai Monastery Tendai Buddhist Institute Cobb CA USA"
-                }
-            ]
-        },
-        {
-            "given": "Mich\u00e8le M.",
-            "family": "Schlehofer",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Psychology Salisbury University Salisbury Maryland USA"
-                }
-            ]
-        },
-        {
-            "given": "Sara L.",
-            "family": "Buckingham",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Psychology University of Alaska Anchorage Anchorage Alaska USA"
-                }
-            ]
-        },
-        {
-            "given": "Craig (Kwesi)",
-            "family": "Brookins",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Psychology Michigan State University East Lansing Michigan USA"
-                }
-            ]
-        },
-        {
-            "given": "Yvette G.",
-            "family": "Flores",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Chicana and Chicano Studies University of California, Davis Davis California USA"
-                }
-            ]
-        },
-        {
-            "given": "Amber E.",
-            "family": "Kelly",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "SCRA Washington District of Columbia USA"
+                    "name": "Salisbury University"
                 }
             ]
         }
     ],
-    "member": "311",
-    "published-online": {
-        "date-parts": [
-            [
-                2023,
-                11,
-                16
-            ]
-        ]
-    },
+    "member": "73",
     "reference": [
         {
-            "key": "e_1_2_5_3_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s11135-006-9044-4"
+            "key": "2024012308155556100_rom10807083C1",
+            "volume-title": "\u00c9loge de la Cr\u00e9olit\u00e9",
+            "author": "Bernab\u00e9",
+            "year": "1993"
         },
         {
-            "key": "e_1_2_5_4_1",
-            "volume-title": "Community psychology: A report of the Boston Conference on the Education of Psychologists for Community Mental Health",
-            "author": "Bennett C. C.",
-            "year": "1966"
+            "key": "2024012308155556100_rom10807083C2",
+            "volume-title": "Discours sur le colonialisme, suivi de Discours sur la N\u00e9gritude",
+            "author": "C\u00e9saire",
+            "year": "2004"
         },
         {
-            "key": "e_1_2_5_5_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/2391741"
+            "key": "2024012308155556100_rom10807083C3",
+            "unstructured": "Constitution imp\u00e9riale de 1805\n          . Ha\u00efti-r\u00e9f\u00e9rence: Un guide de r\u00e9f\u00e9rence sur Ha\u00efti. https://www.haiti-reference.info/pages/plan/histoire-et-societe/documents-historiques/constitutions/imperiale-1805-texte/ (accessed August8, 2023)."
         },
         {
-            "key": "e_1_2_5_6_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF00881242"
+            "key": "2024012308155556100_rom10807083C4",
+            "volume-title": "Bonjour et adieu \u00e0 la N\u00e9gritude, suivi de travaux d\u2019identit\u00e9",
+            "author": "Depestre",
+            "year": "1980"
         },
         {
-            "key": "e_1_2_5_7_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10464-008-9215-7"
+            "issue": "3",
+            "key": "2024012308155556100_rom10807083C5",
+            "doi-asserted-by": "crossref",
+            "first-page": "404",
+            "DOI": "10.1093/fs/knw131",
+            "article-title": "World Literature in French, Litt\u00e9rature-Monde, and the Translingual Turn",
+            "volume": "70",
+            "author": "Dutoon",
+            "year": "2016",
+            "journal-title": "French Studies"
         },
         {
-            "key": "e_1_2_5_8_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1023/A:1022229926119"
+            "key": "2024012308155556100_rom10807083C6",
+            "volume-title": "Les Damn\u00e9s de la terre",
+            "author": "Fanon",
+            "year": "2002"
         },
         {
-            "key": "e_1_2_5_9_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1191/1478088706qp063oa"
+            "key": "2024012308155556100_rom10807083C7",
+            "volume-title": "Po\u00e9tique de la relation",
+            "author": "Glissant",
+            "year": "1990"
         },
         {
-            "key": "e_1_2_5_10_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1353/rhe.1983.0009"
+            "key": "2024012308155556100_rom10807083C8",
+            "volume-title": "Le Proc\u00e8s de la colonisation fran\u00e7aise",
+            "author": "Ho Chi Minh",
+            "year": "2007"
         },
         {
-            "key": "e_1_2_5_11_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF00878038"
+            "key": "2024012308155556100_rom10807083C9",
+            "volume-title": "Maghreb pluriel",
+            "author": "Khatibi",
+            "year": "1983"
         },
         {
-            "key": "e_1_2_5_12_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/01421590400016308"
+            "key": "2024012308155556100_rom10807083C10",
+            "volume-title": "La Condition postmoderne",
+            "author": "Lyotard",
+            "year": "1979"
         },
         {
-            "key": "e_1_2_5_13_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF00877950"
+            "key": "2024012308155556100_rom10807083C11",
+            "volume-title": "La Guerre des Alg\u00e9riens",
+            "author": "Lyotard",
+            "year": "1989"
         },
         {
-            "key": "e_1_2_5_14_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF00893365"
+            "key": "2024012308155556100_rom10807083C12",
+            "volume-title": "Portrait du colonis\u00e9, pr\u00e9c\u00e9d\u00e9 de Portrait du colonisateur",
+            "author": "Memmi",
+            "year": "1957"
         },
         {
-            "key": "e_1_2_5_15_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF00890095"
+            "key": "2024012308155556100_rom10807083C13",
+            "volume-title": "Ainsi parla l\u2019oncle",
+            "author": "Price-Mars",
+            "year": "2021"
         },
         {
-            "issue": "4",
-            "key": "e_1_2_5_16_1",
-            "first-page": "1",
-            "article-title": "Fall from the president",
-            "volume": "55",
-            "author": "Flores Y. G.",
-            "year": "2022",
-            "journal-title": "The Community Psychologist"
+            "key": "2024012308155556100_rom10807083C14",
+            "unstructured": "Ternisien\n              Xavier\n            \n          . \u201cQuand Bayrou retirait C\u00e9saire des programmes de fran\u00e7ais.\u201d Le Monde, May10, 2008. https://www.lemonde.fr/societe/article/2008/05/10/quand-bayrou-retirait-cesaire-des-programmes-de-francais_1043339_3224.html."
         },
         {
-            "key": "e_1_2_5_17_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10649-011-9309-2"
+            "key": "2024012308155556100_rom10807083C15",
+            "doi-asserted-by": "crossref",
+            "first-page": "256",
+            "DOI": "10.4000/books.pub.43127",
+            "article-title": "L\u2019Enseignement des litt\u00e9ratures francophones dans le secondaire",
+            "volume-title": "Litt\u00e9ratures, savoirs et enseignement",
+            "author": "Vaudin",
+            "year": "2008"
         },
         {
-            "key": "e_1_2_5_18_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/cou0000560"
-        },
-        {
-            "key": "e_1_2_5_19_1",
-            "unstructured": "Guzman B. Lewis R. Martin P. Bernal I. Dinh K. Fernandez J. &Flores Y.(2021). Justice delayed is justice denied: SCRA's response to two pandemics\u00a0[Unpublished video]. Provided by the first author."
-        },
-        {
-            "key": "e_1_2_5_20_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1086/226424"
-        },
-        {
-            "key": "e_1_2_5_21_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF00931199"
-        },
-        {
-            "key": "e_1_2_5_22_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.34293/education.v8i4.3232"
-        },
-        {
-            "key": "e_1_2_5_23_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/h0036925"
-        },
-        {
-            "key": "e_1_2_5_24_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF00942250"
-        },
-        {
-            "key": "e_1_2_5_25_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/h0029484"
-        },
-        {
-            "key": "e_1_2_5_26_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/0142159X.2020.1755030"
-        },
-        {
-            "key": "e_1_2_5_27_1",
-            "unstructured": "Kloos B.(August 2015).Relevance of community psychology for psychology: Symbiosis synergy or separation\u00a0[Unpublished manuscript]. American Psychological Association (123rd Annual Meeting)."
-        },
-        {
-            "key": "e_1_2_5_28_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/14780887.2017.1400144"
-        },
-        {
-            "key": "e_1_2_5_29_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF00922686"
-        },
-        {
-            "key": "e_1_2_5_30_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1366/000370258774615410"
-        },
-        {
-            "key": "e_1_2_5_31_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1023/A:1005190312887"
-        },
-        {
-            "key": "e_1_2_5_32_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/ajcp.12253"
-        },
-        {
-            "key": "e_1_2_5_33_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/10281-003"
-        },
-        {
-            "key": "e_1_2_5_34_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF00892277"
-        },
-        {
-            "key": "e_1_2_5_35_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10464-005-9010-7"
-        },
-        {
-            "key": "e_1_2_5_36_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF00923256"
-        },
-        {
-            "key": "e_1_2_5_37_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF00896357"
-        },
-        {
-            "key": "e_1_2_5_38_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/h0026124"
-        },
-        {
-            "key": "e_1_2_5_39_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF00919754"
-        },
-        {
-            "key": "e_1_2_5_40_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF00929903"
-        },
-        {
-            "key": "e_1_2_5_41_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF00906069"
-        },
-        {
-            "key": "e_1_2_5_42_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF02506813"
-        },
-        {
-            "key": "e_1_2_5_43_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF00942179"
-        },
-        {
-            "key": "e_1_2_5_44_1",
-            "unstructured": "Society for Community Research and Action. (n.d.).Who we are.https://scra27.org/who-we-are/"
-        },
-        {
-            "key": "e_1_2_5_45_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1023/A:1005285425527"
-        },
-        {
-            "key": "e_1_2_5_46_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/ajcp.12414"
-        },
-        {
-            "key": "e_1_2_5_47_1",
-            "unstructured": "Thomas D. Wilson C. Ojeda\u2010Leitner D. Paterson D. Kivell N. Palmer G. &McKee K.(2020 June).SCRA call to action on anti\u2010Blackness.\u00a0SCRA.\u00a0https://scra27.org/index.php/download_file/view/2511/3418/"
-        },
-        {
-            "key": "e_1_2_5_48_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10464-005-1883-y"
-        },
-        {
-            "key": "e_1_2_5_49_1",
-            "unstructured": "Torres\u2010Harding S. Bernal I. Dinh K. Flores Y. Fernandez J. Kohn\u2010Wood L.\u2026Martin P.(2020). Subverting white supremacy centering Black lives amidst two public health crisis: Anti\u2010Black racism and COVID\u201019\u00a0[Video].https://vimeo.com/442572845/e3f60d3e71"
-        },
-        {
-            "key": "e_1_2_5_50_1",
-            "unstructured": "Torres\u2010Harding S. Olson B. Guzman B. Cook J. Lichty L. Birman D. &Wolfe S.(2020 June).SCRA executive committee response to call to action on anti\u2010Blackness in SCRA. SCRA.https://scra27.org/index.php/download_file/view/2512/3418/"
-        },
-        {
-            "key": "e_1_2_5_51_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF00896748"
-        },
-        {
-            "key": "e_1_2_5_52_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.5465/amr.1995.9508080329"
-        },
-        {
-            "key": "e_1_2_5_53_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1023/A:1023954503247"
+            "key": "2024012308155556100_rom10807083C16",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Veldwachter\n              Nad\u00e8ge\n            \n          . \u201cLitt\u00e9rature fran\u00e7aise et litt\u00e9ratures francophones: Une union inconvenante?\u201d Fabula-LhT, May8, 2011. https://www.fabula.org/lht/8/veldwachter.html.",
+            "DOI": "10.58282/lht.236"
         }
     ],
     "container-title": [
-        "American Journal of Community Psychology"
+        "Romanic Review"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/ajcp.12725",
+            "URL": "https://read.dukeupress.edu/romanic-review/article-pdf/114/3/575/2036547/575perret.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "syndication"
+        },
+        {
+            "URL": "https://read.dukeupress.edu/romanic-review/article-pdf/114/3/575/2036547/575perret.pdf",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -417,59 +185,54 @@
     "deposited": {
         "date-parts": [
             [
-                2023,
-                12,
-                27
+                2024,
+                1,
+                23
             ]
         ],
-        "date-time": "2023-12-27T06:53:44Z",
-        "timestamp": 1703660024000
+        "date-time": "2024-01-23T08:16:16Z",
+        "timestamp": 1705997776000
     },
-    "score": 12.45665,
+    "score": 14.453241,
     "resource": {
         "primary": {
-            "URL": "https://onlinelibrary.wiley.com/doi/10.1002/ajcp.12725"
+            "URL": "https://read.dukeupress.edu/romanic-review/article/114/3/575/384236/Beyond-AnalogyFrench-and-Francophone-Studies-and"
         }
     },
     "issued": {
         "date-parts": [
             [
                 2023,
-                11,
-                16
+                12,
+                1
             ]
         ]
     },
-    "references-count": 51,
+    "references-count": 16,
     "journal-issue": {
-        "issue": "3-4",
+        "issue": "3",
         "published-print": {
             "date-parts": [
                 [
                     2023,
-                    12
+                    12,
+                    1
                 ]
             ]
         }
     },
-    "alternative-id": [
-        "10.1002/ajcp.12725"
-    ],
-    "URL": "http://dx.doi.org/10.1002/ajcp.12725",
-    "archive": [
-        "Portico"
-    ],
+    "URL": "http://dx.doi.org/10.1215/00358118-10807083",
     "ISSN": [
-        "0091-0562",
-        "1573-2770"
+        "0035-8118",
+        "2688-5220"
     ],
     "issn-type": [
         {
-            "value": "0091-0562",
+            "value": "0035-8118",
             "type": "print"
         },
         {
-            "value": "1573-2770",
+            "value": "2688-5220",
             "type": "electronic"
         }
     ],
@@ -477,41 +240,9 @@
         "date-parts": [
             [
                 2023,
-                11,
-                16
+                12,
+                1
             ]
         ]
-    },
-    "assertion": [
-        {
-            "value": "2023-02-17",
-            "order": 0,
-            "name": "received",
-            "label": "Received",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2023-10-24",
-            "order": 1,
-            "name": "accepted",
-            "label": "Accepted",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2023-11-16",
-            "order": 2,
-            "name": "published",
-            "label": "Published",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        }
-    ]
+    }
 }

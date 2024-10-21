@@ -36,7 +36,7 @@ class CategoryInfo:
         Encapsulates all relevant information about an academic category,
         providing a structured way to store and manipulate category-related data.
     """
-    
+
     url: str = ""
     faculty_count: int = 0
     department_count: int = 0
@@ -72,7 +72,7 @@ class CategoryInfo:
             Provides a JSON-serializable dictionary representation of the CategoryInfo instance,
             facilitating data export and storage.
         """
-        
+
         # Utilize asdict utility from dataclasses, then change sets to lists
         data_dict = asdict(self)
 

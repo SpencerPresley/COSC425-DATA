@@ -3,664 +3,841 @@
         "date-parts": [
             [
                 2024,
-                9,
-                25
+                7,
+                11
             ]
         ],
-        "date-time": "2024-09-25T04:30:29Z",
-        "timestamp": 1727238629164
+        "date-time": "2024-07-11T00:50:39Z",
+        "timestamp": 1720659039997
     },
-    "reference-count": 93,
-    "publisher": "Wiley",
+    "reference-count": 71,
+    "publisher": "MDPI AG",
+    "issue": "2",
     "license": [
         {
             "start": {
                 "date-parts": [
                     [
-                        2024,
-                        9,
-                        24
+                        2021,
+                        1,
+                        10
                     ]
                 ],
-                "date-time": "2024-09-24T00:00:00Z",
-                "timestamp": 1727136000000
+                "date-time": "2021-01-10T00:00:00Z",
+                "timestamp": 1610236800000
             },
             "content-version": "vor",
             "delay-in-days": 0,
-            "URL": "http://creativecommons.org/licenses/by/4.0/"
+            "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+    ],
+    "funder": [
+        {
+            "DOI": "10.13039/501100003725",
+            "name": "national research foundation of Korea",
+            "doi-asserted-by": "publisher",
+            "award": [
+                "NRF-2017S1A6A3A01078538"
+            ],
+            "id": [
+                {
+                    "id": "10.13039/501100003725",
+                    "id-type": "DOI",
+                    "asserted-by": "publisher"
+                }
+            ]
         }
     ],
     "content-domain": {
-        "domain": [
-            "onlinelibrary.wiley.com"
-        ],
-        "crossmark-restriction": true
+        "domain": [],
+        "crossmark-restriction": false
     },
     "short-container-title": [
-        "Future in Educational Research"
+        "Sustainability"
     ],
-    "abstract": "<jats:title>Abstract</jats:title><jats:p>This exploratory study sought to address the gap in strengthening science, technology, engineering, and mathematics (STEM) teacher preparation in elementary and secondary teacher education programs. Integrated STEM education is attracting increased attention and gaining momentum from educators, politicians, STEM industries, and the media across the nation. Many state and national organizations have called for a new workforce of problem solvers, innovators, and inventors who are self\u2010reliant and able to think logically, also suggesting that creating such capacity is one of the critical foundations that drive innovative capacity in the nation. A key to developing these skills is STEM competencies and career goals in every K\u201012 student. To do this, teachers must be educated on how to connect STEM careers and integrate STEM content into their curriculum. Providing integrated STEM micro\u2010credentials for preservice and in\u2010service teachers can be a flexible solution for providing teachers a method to learn how to improve their content knowledge and pedagogy (Digital Promise, 2019). Participants were a combination of undergraduate preservice teachers and graduate early\u2010career teachers who were asked about their STEM preparation. The majority of the participants received very little to no integrated STEM preparation. As a possible solution for this, participants were asked about their preferred type of professional development (PD) and if participating in a micro\u2010credential course would be a possibility. Nearly all of the participants agreed that a self\u2010paced micro\u2010credential that blended online and in\u2010person instruction would be something they would do to learn how to integrate STEM more effectively into their pedagogy. Micro\u2010credentials could be a successful solution for educator PD.</jats:p>",
-    "DOI": "10.1002/fer3.55",
+    "abstract": "<jats:p>Despite the benefits of using smart speakers, serious privacy concerns have been raised, particularly due to their constantly listening microphones. Given the mixture of the advantages and risks deciding whether to use them is not an easy matter, casting a doubt about sustainable growth and development of smart speakers. Using a sample of 559 users in South Korea and the U.S., we empirically investigated the dilemma of users seeking to adopt smart speakers. The results revealed users\u2019 perceived usefulness and enjoyment positively influenced the intention to adopt smart speakers. No direct effect of perceived ease of use was found but this effect was completely mediated by perceived usefulness and enjoyment. Perceived enjoyment was found to be twice as strong as perceived usefulness in determining the usage intention, confirming the hedonic aspect of smart speakers. Conversely, perceived privacy risks were shown to be a significant negative factor. This negative impact was significantly stronger in the U.S. than in South Korea. We could infer that the more mature the stage of acceptance of smart speakers, the greater the sensitivity of users to privacy risks. Lastly, in the South Korean sample, we found that the perceived usefulness could reduce the negative impact of perceived risks on the intention. to adopt smart speakers.</jats:p>",
+    "DOI": "10.3390/su13020602",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2024,
-                9,
-                24
+                2021,
+                1,
+                11
             ]
         ],
-        "date-time": "2024-09-24T15:48:52Z",
-        "timestamp": 1727192932000
+        "date-time": "2021-01-11T04:03:42Z",
+        "timestamp": 1610337822000
     },
-    "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+    "page": "602",
     "source": "Crossref",
-    "is-referenced-by-count": 0,
+    "is-referenced-by-count": 7,
     "title": [
-        "Bridging the gap in early career teachers' STEM pedagogy: Exploring micro\u2010credentials as a possible creative solution"
+        "Sustainability Calculus in Adopting Smart Speakers\u2014Personalized Services and Privacy Risks"
     ],
-    "prefix": "10.1002",
+    "prefix": "10.3390",
+    "volume": "13",
     "author": [
         {
-            "given": "Gina",
-            "family": "Solano",
+            "given": "Hoon S.",
+            "family": "Cha",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Secondary Education and Educational Technology Department SUNY Oneonta  Oneonta New York USA"
+                    "name": "Department of Information and Decision Sciences, Perdue School of Business, Salisbury University, Salisbury, MD 21804, USA"
                 }
             ]
         },
         {
-            "ORCID": "http://orcid.org/0000-0002-3957-8219",
-            "authenticated-orcid": false,
-            "given": "Gurupriya",
-            "family": "Ramanathan",
+            "given": "Jong Hyun",
+            "family": "Wi",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Department of Early and Elementary Education Seidel School of Education Salisbury University  Salisbury Maryland USA"
+                    "name": "College of Business and Economics, Chung-Ang University, Dongjak-gu, Seoul 06974, Korea"
+                }
+            ]
+        },
+        {
+            "given": "Chanhi",
+            "family": "Park",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "College of Business and Economics, Chung-Ang University, Dongjak-gu, Seoul 06974, Korea"
+                }
+            ]
+        },
+        {
+            "given": "Taeha",
+            "family": "Kim",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "College of Business and Economics, Chung-Ang University, Dongjak-gu, Seoul 06974, Korea"
                 }
             ]
         }
     ],
-    "member": "311",
+    "member": "1968",
     "published-online": {
         "date-parts": [
             [
-                2024,
-                9,
-                24
+                2021,
+                1,
+                10
             ]
         ]
     },
     "reference": [
         {
-            "issue": "5",
-            "key": "e_1_2_15_2_1",
-            "first-page": "1",
-            "article-title": "Supporting elementary pre\u2010service teachers to teach STEM through place\u2010based teaching and learning experiences",
-            "volume": "18",
-            "author": "Adams A. E.",
-            "year": "2014",
-            "journal-title": "Electronic Journal of Science Education"
+            "key": "ref_1",
+            "unstructured": "Olson, C., and Kemery, K. (2019). 2019 Voice Report: Consumer Adoption of Voice Technology and Digital Assistants, Microsoft."
         },
         {
-            "key": "e_1_2_15_3_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/sce.21591"
+            "key": "ref_2",
+            "unstructured": "Chung, H., and Lee, S. (2018). Intelligent Virtual Assistant knows Your Life. arXiv."
         },
         {
-            "key": "e_1_2_15_4_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.5688/aj7408141"
+            "key": "ref_3",
+            "unstructured": "Day, M., Turner, G., and Drozdiak, N. (2019). Amazon Workers Are Listening to What You Tell Alexa, Bloomberg."
         },
         {
-            "key": "e_1_2_15_5_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.14689/ejer.2020.88.1"
+            "key": "ref_4",
+            "doi-asserted-by": "crossref",
+            "first-page": "59",
+            "DOI": "10.1145/1047671.1047705",
+            "article-title": "Privacy and trust issues with invisible computers",
+            "volume": "48",
+            "author": "Lahlou",
+            "year": "2005",
+            "journal-title": "Commun. ACM"
         },
         {
-            "issue": "2",
-            "key": "e_1_2_15_6_1",
-            "article-title": "Engineering curricula in early education: Describing the landscape of open resources",
-            "volume": "12",
-            "author": "Bagiati A.",
-            "year": "2010",
-            "journal-title": "Early Childhood Research & Practice"
+            "key": "ref_5",
+            "doi-asserted-by": "crossref",
+            "first-page": "61",
+            "DOI": "10.1287/isre.1060.0080",
+            "article-title": "An Extended Privacy Calculus Model for E-Commerce Transactions",
+            "volume": "17",
+            "author": "Dinev",
+            "year": "2006",
+            "journal-title": "Inf. Syst. Res."
         },
         {
-            "key": "e_1_2_15_7_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s11528\u2010022\u201000732\u2010x"
-        },
-        {
-            "key": "e_1_2_15_8_1",
-            "article-title": "Report of the 2012 national survey of science and mathematics education",
-            "author": "Banilower E. R.",
-            "year": "2013",
-            "journal-title": "Horizon Research"
-        },
-        {
-            "key": "e_1_2_15_9_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/01930826.2017.1392223"
-        },
-        {
-            "issue": "5",
-            "key": "e_1_2_15_10_1",
-            "first-page": "23",
-            "article-title": "Effects of integrative approaches among science, technology, engineering, and mathematics (STEM) subjects on students\u2019 learning: A preliminary meta\u2010analysis",
-            "volume": "12",
-            "author": "Becker K.",
-            "year": "2011",
-            "journal-title": "Journal of STEM Education: Innovations and Research"
-        },
-        {
-            "key": "e_1_2_15_11_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10798\u2010018\u20109440\u20109"
-        },
-        {
-            "key": "e_1_2_15_12_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1949\u20108594.2011.00111.x"
-        },
-        {
-            "key": "e_1_2_15_13_1",
-            "volume-title": "Addressing the STEM workforce shortage",
-            "author": "Boggs G. R.",
-            "year": "2022"
-        },
-        {
-            "key": "e_1_2_15_14_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.compedu.2021.104158"
-        },
-        {
-            "key": "e_1_2_15_15_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.56059/jl4d.v8i2.525"
-        },
-        {
-            "key": "e_1_2_15_16_1",
-            "volume-title": "STEM education: Challenges and opportunities",
-            "author": "Bybee R. W.",
-            "year": "2013"
-        },
-        {
-            "key": "e_1_2_15_17_1",
-            "volume-title": "Learning while earning: The new normal",
-            "author": "Carnevale A. P.",
-            "year": "2015"
-        },
-        {
-            "key": "e_1_2_15_18_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10643\u2010020\u2010010553"
-        },
-        {
-            "key": "e_1_2_15_19_1",
-            "article-title": "Encouraging non\u2010STEM teachers in STEM classrooms",
-            "author": "Chiangpradit L.",
-            "year": "2023",
-            "journal-title": "STEM Sports"
-        },
-        {
-            "key": "e_1_2_15_20_1",
-            "unstructured": "Collegis Education. (2022).Microcredentials in higher education. Retrieved fromhttps://collegiseducation.com/insights/microcredentials/"
-        },
-        {
-            "key": "e_1_2_15_21_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0022487119899101"
-        },
-        {
-            "key": "e_1_2_15_22_1",
-            "volume-title": "Qualitative inquiry & research design: Choosing among five approaches",
-            "author": "Creswell J. W.",
-            "year": "2013"
-        },
-        {
-            "key": "e_1_2_15_23_1",
-            "article-title": "Engineering is elementary",
-            "volume": "30",
-            "author": "Cunningham C. M.",
-            "year": "2009",
-            "journal-title": "The Bridge"
-        },
-        {
-            "key": "e_1_2_15_24_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/02619768.2021.1961734"
-        },
-        {
-            "key": "e_1_2_15_25_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1207/s15327965pli1104_01"
-        },
-        {
-            "key": "e_1_2_15_26_1",
-            "volume-title": "The Oxford handbook of work engagement, motivation, and self\u2010determination theory",
-            "author": "Deci E. L.",
-            "year": "2014"
-        },
-        {
-            "issue": "1",
-            "key": "e_1_2_15_27_1",
-            "first-page": "77",
-            "article-title": "America\u2019s children: Providing early exposure to STEM (science, technology, engineering and math) initiatives",
-            "volume": "133",
-            "author": "DeJarnette N. K.",
-            "year": "2012",
-            "journal-title": "Education"
-        },
-        {
-            "issue": "2",
-            "key": "e_1_2_15_28_1",
-            "first-page": "96",
-            "article-title": "Early childhood STEAM: Reflections from a year of STEAM initiatives implemented in a high\u2010needs primary school",
-            "volume": "139",
-            "author": "DeJarnette N. K.",
-            "year": "2018",
-            "journal-title": "Education"
-        },
-        {
-            "issue": "1",
-            "key": "e_1_2_15_29_1",
-            "first-page": "40",
-            "article-title": "Integrating engineering, science, reading, and robotics across grades 3\u20108 in a STEM education era",
-            "volume": "6",
-            "author": "Deniz H.",
-            "year": "2021",
-            "journal-title": "Journal of Learning and Teaching in Digital Age"
-        },
-        {
-            "key": "e_1_2_15_30_1",
-            "unstructured": "Digital Promise. (2019).Micro\u2010credentials and education policy in the United States: Recognizing learning and leadership for our nation\u2019s teachers. Retrieved fromhttps://eric.ed.gov/?id=ED614390"
-        },
-        {
-            "key": "e_1_2_15_31_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1353/book.1764"
-        },
-        {
-            "key": "e_1_2_15_32_1",
-            "article-title": "Exploratory research",
-            "author": "Dudovskiy J.",
-            "journal-title": "Business Research Methodology"
-        },
-        {
-            "key": "e_1_2_15_33_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s11528\u2010017\u20100168\u20102"
-        },
-        {
-            "key": "e_1_2_15_34_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/978-3-319-15425-1_1"
-        },
-        {
-            "key": "e_1_2_15_35_1",
-            "unstructured": "Ellucian. (2024).Microcredentials and higher education: Your questions answered. Retrieved fromhttps://www.ellucian.com/blog/microcredentials\u2010and\u2010higher\u2010education\u2010your\u2010questions\u2010answered#:~:text=Compared%20to%20most%20degree%20programs and%20are%20changing%20student%20expectations"
-        },
-        {
-            "key": "e_1_2_15_36_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/tea.20040"
-        },
-        {
-            "key": "e_1_2_15_37_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/oxfordhb/9780199794911.013.006"
-        },
-        {
-            "key": "e_1_2_15_38_1",
-            "volume-title": "STEM integration in K\u201012 education: Status, prospects, and an agenda for research",
-            "author": "Honey M.",
-            "year": "2014"
-        },
-        {
-            "issue": "4",
-            "key": "e_1_2_15_39_1",
-            "first-page": "389",
-            "article-title": "Implement stem literacy in the elementary school curriculum",
+            "key": "ref_6",
+            "doi-asserted-by": "crossref",
+            "first-page": "493",
+            "DOI": "10.1109/TSC.2016.2575825",
+            "article-title": "Covering the Sensitive Subjects to Protect Personal Privacy in Personalized Recommendation",
             "volume": "11",
-            "author": "Huang S.",
-            "year": "2017",
-            "journal-title": "Journal of Education Research"
+            "author": "Wu",
+            "year": "2018",
+            "journal-title": "IEEE Trans. Serv. Comput."
         },
         {
-            "key": "e_1_2_15_40_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1108/DLO\u201009\u20102019\u20100215"
-        },
-        {
-            "issue": "2",
-            "key": "e_1_2_15_41_1",
-            "first-page": "173",
-            "article-title": "STEM teacher preparation and practice\u2010capturing a \"Sputnik moment",
-            "volume": "26",
-            "author": "Jenlink P. M.",
-            "year": "2013",
-            "journal-title": "Teacher Education & Practice"
-        },
-        {
-            "key": "e_1_2_15_42_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3390/su142013533"
-        },
-        {
-            "issue": "1",
-            "key": "e_1_2_15_43_1",
-            "first-page": "3",
-            "article-title": "Children\u2019s engineering and the arts",
-            "volume": "16",
-            "author": "Jones C.",
-            "year": "2011",
-            "journal-title": "Children\u2019s Technology & Engineering"
-        },
-        {
-            "key": "e_1_2_15_44_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1949\u20108594.2003.tb18231.x"
-        },
-        {
-            "key": "e_1_2_15_45_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/13540602.2016.1211523"
-        },
-        {
-            "key": "e_1_2_15_46_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/tea.21410"
-        },
-        {
-            "key": "e_1_2_15_47_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/19388071.2013.781253"
-        },
-        {
-            "key": "e_1_2_15_48_1",
-            "volume-title": "Declining education degrees compound problems in the classroom",
-            "author": "Lonas L.",
-            "year": "2023"
-        },
-        {
-            "key": "e_1_2_15_49_1",
-            "article-title": "Integrating micro\u2010credentials into professional learning: Lessons from five districts",
-            "author": "Luke C.",
+            "key": "ref_7",
+            "doi-asserted-by": "crossref",
+            "first-page": "61",
+            "DOI": "10.1109/MSEC.2019.2953324",
+            "article-title": "Handling of Personal Information and Deidentified, Aggregated, and Pseudonymized Information Under the California Consumer Privacy Act",
+            "volume": "18",
+            "author": "Stallings",
             "year": "2020",
-            "journal-title": "Digital Promise"
+            "journal-title": "IEEE Secur. Priv."
         },
         {
-            "issue": "2",
-            "key": "e_1_2_15_50_1",
-            "first-page": "266",
-            "article-title": "Preservice teachers\u2019 beliefs and confidence after working with STEM faculty mentors: An exploratory study",
-            "volume": "26",
-            "author": "Maher P. A.",
-            "year": "2013",
-            "journal-title": "Teacher Education & Practice"
+            "key": "ref_8",
+            "doi-asserted-by": "crossref",
+            "first-page": "100",
+            "DOI": "10.1093/idpl/ipx004",
+            "article-title": "Structure and enforcement of data privacy law in South Korea",
+            "volume": "7",
+            "author": "Ko",
+            "year": "2017",
+            "journal-title": "Int. Data Priv. Law"
         },
         {
-            "key": "e_1_2_15_51_1",
-            "volume-title": "Qualitative research: A guide to design and implementation",
-            "author": "Merriam S. B.",
-            "year": "2016"
+            "key": "ref_9",
+            "doi-asserted-by": "crossref",
+            "first-page": "104",
+            "DOI": "10.1287/orsc.10.1.104",
+            "article-title": "Information Privacy Concerns, Procedural Fairness, and Impersonal Trust: An Empirical Investigation",
+            "volume": "10",
+            "author": "Culnan",
+            "year": "1999",
+            "journal-title": "Organ. Sci."
         },
         {
-            "key": "e_1_2_15_52_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1108/IJEM\u201002\u20102023\u20100066"
+            "key": "ref_10",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Bugeja, J., Jacobsson, A., and Davidsson, P. (2016, January 17\u201319). On Privacy and Security Challenges in Smart Connected Homes. Proceedings of the European Intelligence and Security Informatics Conference (EISIC), Uppsala, Sweden.",
+            "DOI": "10.1109/EISIC.2016.044"
         },
         {
-            "key": "e_1_2_15_53_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1467\u20109620.2006.00684.x"
+            "key": "ref_11",
+            "doi-asserted-by": "crossref",
+            "first-page": "106115",
+            "DOI": "10.1016/j.chb.2019.08.022",
+            "article-title": "The privacy calculus contextualized: The influence of affordances",
+            "volume": "104",
+            "author": "Trepte",
+            "year": "2020",
+            "journal-title": "Comput. Hum. Behav."
         },
         {
-            "key": "e_1_2_15_54_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.4324/9781003034902-4"
+            "key": "ref_12",
+            "doi-asserted-by": "crossref",
+            "first-page": "323",
+            "DOI": "10.1111/1540-4560.00067",
+            "article-title": "Consumer Privacy: Balancing Economic and Justice Considerations",
+            "volume": "59",
+            "author": "Culnan",
+            "year": "2003",
+            "journal-title": "J. Soc. Issues"
         },
         {
-            "key": "e_1_2_15_55_1",
-            "volume-title": "Indicators for monitoring undergraduate STEM education",
-            "author": "National Academies of Sciences, Engineering, and Medicine",
-            "year": "2018"
+            "key": "ref_13",
+            "unstructured": "Davis, F.D. (1986). A Technology Acceptance Model for Empirically Testing New End-User Information System: Theory and Results. [Ph.D. Thesis, Massachusetts Institute of Technology]."
         },
         {
-            "key": "e_1_2_15_56_1",
-            "volume-title": "Diversity and STEM: Women, minorities, and persons with disabilities 2023",
-            "author": "National Center for Science and Engineering Statistics (NCSES)",
-            "year": "2023"
+            "key": "ref_14",
+            "doi-asserted-by": "crossref",
+            "first-page": "1111",
+            "DOI": "10.1111/j.1559-1816.1992.tb00945.x",
+            "article-title": "Extrinsic and intrinsic motivation to use computers in the workplace",
+            "volume": "22",
+            "author": "Davis",
+            "year": "1992",
+            "journal-title": "J. Appl. Soc. Psychol."
         },
         {
-            "key": "e_1_2_15_57_1",
-            "volume-title": "Micro\u2010credentials",
-            "author": "National Education Association",
-            "year": "2024"
+            "key": "ref_15",
+            "doi-asserted-by": "crossref",
+            "first-page": "695",
+            "DOI": "10.2307/25148660",
+            "article-title": "User acceptance of hedonic information systems",
+            "volume": "28",
+            "year": "2004",
+            "journal-title": "MIS Q."
         },
         {
-            "key": "e_1_2_15_58_1",
-            "article-title": "New Coursera survey: Industry certificates hold strong appeal for college students and employers",
-            "author": "Nietzel M. T.",
-            "year": "2022",
-            "journal-title": "Forbes"
+            "key": "ref_16",
+            "doi-asserted-by": "crossref",
+            "first-page": "319",
+            "DOI": "10.2307/249008",
+            "article-title": "Perceived usefulness, perceived ease of use, and user acceptance of information technology",
+            "volume": "13",
+            "author": "Davis",
+            "year": "1989",
+            "journal-title": "MIS Q."
         },
         {
-            "key": "e_1_2_15_59_1",
-            "volume-title": "Paper presented at the American society for engineering education",
-            "author": "O\u2019Brien S.",
-            "year": "2010"
+            "key": "ref_17",
+            "unstructured": "Fishbein, M., and Ajzen, I. (1975). Belief, Attitude, Intention and Behavior: An Introduction to Theory and Research, Addison-Wesley."
         },
         {
-            "key": "e_1_2_15_60_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s11191\u2010020\u201000139\u20101"
+            "key": "ref_18",
+            "unstructured": "Kuhl, J., and Beckman, J. (1985). From Intentions to Actions: A Theory of Planned Behavior. Action-Control: From Cognition to Behavior, Springer."
         },
         {
-            "key": "e_1_2_15_61_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.11648/j.ajap.20170605.12"
+            "key": "ref_19",
+            "doi-asserted-by": "crossref",
+            "first-page": "227",
+            "DOI": "10.2307/249577",
+            "article-title": "Perceived usefulness, ease of use, and usage of information technology: A replication",
+            "volume": "16",
+            "author": "Adams",
+            "year": "1992",
+            "journal-title": "MIS Q."
         },
         {
-            "key": "e_1_2_15_62_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.tate.2017.08.014"
-        },
-        {
-            "key": "e_1_2_15_63_1",
-            "volume-title": "U.S. Department of Education launches new initiative to enhance STEM education for all students",
-            "author": "Press Office",
-            "year": "2022"
-        },
-        {
-            "key": "e_1_2_15_64_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10956\u2010016\u20109633\u20105"
-        },
-        {
-            "key": "e_1_2_15_65_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1949\u20108594.2011.00112.x"
-        },
-        {
-            "key": "e_1_2_15_66_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10798\u2010018\u20109440\u20109"
-        },
-        {
-            "key": "e_1_2_15_67_1",
-            "volume-title": "The coding manual for qualitative researchers",
-            "author": "Salda\u00f1a J.",
-            "year": "2021"
-        },
-        {
-            "key": "e_1_2_15_68_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.tate.2021.103305"
-        },
-        {
-            "key": "e_1_2_15_69_1",
-            "unstructured": "Saunders M. E. &Wells J. G.(2010).Virginia Tech integrative STEM education graduate program. Retrieved fromhttp://web.archive.org/web/20100924150636/"
-        },
-        {
-            "key": "e_1_2_15_70_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.21153/jtlge2021vol12no1art942"
-        },
-        {
-            "key": "e_1_2_15_71_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/1175860"
-        },
-        {
-            "key": "e_1_2_15_72_1",
-            "volume-title": "National centre for vocational education research (NCVER)",
-            "author": "Siekmann G.",
-            "year": "2016"
-        },
-        {
-            "key": "e_1_2_15_73_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/09243453.2020.1772841"
-        },
-        {
-            "key": "e_1_2_15_74_1",
-            "article-title": "Microcredentials for educators: A powerful professional learning option",
-            "author": "Spangler D.",
-            "year": "2023",
-            "journal-title": "SmartBrief"
-        },
-        {
-            "key": "e_1_2_15_75_1",
-            "volume-title": "Beginning elementary school teachers' perceptions of structural and cultural context factors impacting their science teaching",
-            "author": "Sterling H. A.",
-            "year": "2006"
-        },
-        {
-            "key": "e_1_2_15_76_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.5703/1288284314653"
-        },
-        {
-            "key": "e_1_2_15_77_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.5032/jae.2016.0308"
-        },
-        {
-            "issue": "2",
-            "key": "e_1_2_15_78_1",
-            "first-page": "63",
-            "article-title": "Increasing the self\u2010efficacy of inservice teachers through content knowledge",
-            "volume": "36",
-            "author": "Swackhamer L. E.",
+            "key": "ref_20",
+            "doi-asserted-by": "crossref",
+            "first-page": "29",
+            "DOI": "10.1016/j.chb.2008.06.002",
+            "article-title": "Exploring Chinese users\u2019 acceptance of instant messaging using the theory of planned behavior, the technology acceptance model, and the flow theory",
+            "volume": "25",
+            "author": "Lu",
             "year": "2009",
-            "journal-title": "Teacher Education Quarterly"
+            "journal-title": "Comput. Hum. Behav."
         },
         {
-            "key": "e_1_2_15_79_1",
-            "article-title": "Teacher professional development, explained",
-            "author": "Swartz S.",
-            "year": "2023",
-            "journal-title": "Education Week"
+            "key": "ref_21",
+            "doi-asserted-by": "crossref",
+            "first-page": "279",
+            "DOI": "10.2307/249498",
+            "article-title": "Personal computing acceptance factors in small firms: A structural equation model",
+            "volume": "21",
+            "author": "Igbaria",
+            "year": "1997",
+            "journal-title": "MIS Q."
         },
         {
-            "key": "e_1_2_15_80_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1017/9781108762519.002"
+            "key": "ref_22",
+            "doi-asserted-by": "crossref",
+            "first-page": "451",
+            "DOI": "10.1111/j.1540-5915.1996.tb01822.x",
+            "article-title": "A model of the antecedents of perceived ease of use: Development and test",
+            "volume": "27",
+            "author": "Venkatesh",
+            "year": "1996",
+            "journal-title": "Decis. Sci."
         },
         {
-            "key": "e_1_2_15_81_1",
-            "unstructured": "The State University of New York. (n.d.).Gain new skills knowledge and experience with microcredentials at SUNY. Retrieved fromhttps://www.suny.edu/microcredentials/"
+            "key": "ref_23",
+            "doi-asserted-by": "crossref",
+            "first-page": "982",
+            "DOI": "10.1287/mnsc.35.8.982",
+            "article-title": "User acceptance of computer technology: A comparison of two theoretical models",
+            "volume": "35",
+            "author": "Davis",
+            "year": "1989",
+            "journal-title": "Manag. Sci."
         },
         {
-            "key": "e_1_2_15_82_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.46767/kfp.2016\u20100022"
+            "key": "ref_24",
+            "doi-asserted-by": "crossref",
+            "first-page": "85",
+            "DOI": "10.1287/isre.1050.0042",
+            "article-title": "A Theoretical Integration of User Satisfaction and Technology Acceptance",
+            "volume": "16",
+            "author": "Wixom",
+            "year": "2005",
+            "journal-title": "Inf. Syst. Res."
         },
         {
-            "key": "e_1_2_15_83_1",
-            "article-title": "Harnessing micro\u2010credentials for teacher growth: A national review of early best practices",
-            "author": "Tooly M.",
-            "year": "2021",
-            "journal-title": "New America"
+            "key": "ref_25",
+            "doi-asserted-by": "crossref",
+            "first-page": "273",
+            "DOI": "10.1111/j.1540-5915.2008.00192.x",
+            "article-title": "Technology acceptance model 3 and a research agenda on interventions",
+            "volume": "39",
+            "author": "Venkatesh",
+            "year": "2008",
+            "journal-title": "Decis. Sci."
         },
         {
-            "key": "e_1_2_15_84_1",
-            "article-title": "Building a science, technology, engineering, and math agenda",
-            "author": "Toulmin C. N.",
-            "year": "2007",
-            "journal-title": "National Governors Association"
+            "key": "ref_26",
+            "doi-asserted-by": "crossref",
+            "first-page": "237",
+            "DOI": "10.1016/S0378-7206(98)00096-2",
+            "article-title": "The psychological origins of perceived usefulness and ease-of-use",
+            "volume": "35",
+            "author": "Karahanna",
+            "year": "1999",
+            "journal-title": "Inf. Manag."
         },
         {
-            "issue": "1",
-            "key": "e_1_2_15_85_1",
-            "first-page": "168",
-            "article-title": "STEM pedagogical content knowledge of preservice teachers",
-            "volume": "8",
-            "author": "Twaddle J.",
-            "year": "2023",
-            "journal-title": "International Journal of Multidisciplinary Perspectives in Higher Education"
+            "key": "ref_27",
+            "doi-asserted-by": "crossref",
+            "first-page": "183",
+            "DOI": "10.2307/249751",
+            "article-title": "Information technology adoption across time: A cross-sectional comparison of pre-adoption and post-adoption beliefs",
+            "volume": "23",
+            "author": "Karahanna",
+            "year": "1999",
+            "journal-title": "MIS Q."
         },
         {
-            "key": "e_1_2_15_86_1",
-            "first-page": "37",
-            "volume-title": "Handbook of self\u2010determination research",
-            "author": "Vallerand R. J.",
-            "year": "2002"
+            "key": "ref_28",
+            "doi-asserted-by": "crossref",
+            "first-page": "269",
+            "DOI": "10.1016/S0167-9236(00)00076-2",
+            "article-title": "The technology acceptance model and the World Wide Web",
+            "volume": "29",
+            "author": "Lederer",
+            "year": "2000",
+            "journal-title": "Decis. Support. Syst."
         },
         {
-            "key": "e_1_2_15_87_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1186/s41239\u2010023\u201000381\u2010x"
+            "key": "ref_29",
+            "doi-asserted-by": "crossref",
+            "first-page": "1",
+            "DOI": "10.1016/S0378-7206(01)00075-1",
+            "article-title": "Determinants of the intention to use Internet/WWW at work: A confirmatory study",
+            "volume": "39",
+            "author": "Chang",
+            "year": "2001",
+            "journal-title": "Inf. Manag."
         },
         {
-            "key": "e_1_2_15_88_1",
-            "article-title": "What\u2019s new with microcredentials in higher education?",
-            "author": "Viano A.",
-            "year": "2023",
-            "journal-title": "EdTech: Focus on Higher Education"
+            "key": "ref_30",
+            "doi-asserted-by": "crossref",
+            "first-page": "205",
+            "DOI": "10.1287/isre.13.2.205.83",
+            "article-title": "Applying the technology acceptance model and flow theory to online consumer behavior",
+            "volume": "13",
+            "author": "Koufaris",
+            "year": "2002",
+            "journal-title": "Inf. Syst. Res."
         },
         {
-            "key": "e_1_2_15_89_1",
-            "unstructured": "Walden University. (2023).Professional development. Retrieved fromhttps://lifelonglearning.waldenu.edu/professional\u2010development"
+            "key": "ref_31",
+            "doi-asserted-by": "crossref",
+            "first-page": "198",
+            "DOI": "10.1108/10662240410542634",
+            "article-title": "The theory of planned behavior and Internet purchasing",
+            "volume": "14",
+            "author": "George",
+            "year": "2004",
+            "journal-title": "Internet Res."
         },
         {
-            "key": "e_1_2_15_90_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.21061/jte.v27i2.a.1"
+            "key": "ref_32",
+            "doi-asserted-by": "crossref",
+            "first-page": "889",
+            "DOI": "10.1016/j.ijhcs.2006.04.004",
+            "article-title": "A longitudinal investigation of continued online shopping behavior: An extension of the theory of planned behavior",
+            "volume": "64",
+            "author": "Hsu",
+            "year": "2006",
+            "journal-title": "Int. J. Hum. Comput. Stud."
         },
         {
-            "key": "e_1_2_15_91_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.4018/978-1-6684-5939-3.ch005"
+            "key": "ref_33",
+            "doi-asserted-by": "crossref",
+            "first-page": "115",
+            "DOI": "10.2307/25148720",
+            "article-title": "Understanding and Predicting Electronic Commerce Adoption: An Extension of the Theory of Planned Behavior",
+            "volume": "30",
+            "author": "Pavlou",
+            "year": "2006",
+            "journal-title": "MIS Q."
         },
         {
-            "key": "e_1_2_15_92_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/09500693.2021.1900623"
+            "key": "ref_34",
+            "doi-asserted-by": "crossref",
+            "first-page": "2830",
+            "DOI": "10.1016/j.chb.2008.04.008",
+            "article-title": "The effect of innovativeness on the adoption of B2C e-commerce: A model based on the Theory of Planned Behaviour",
+            "volume": "24",
+            "author": "Crespo",
+            "year": "2008",
+            "journal-title": "Comput. Hum. Behav."
         },
         {
-            "key": "e_1_2_15_93_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/13540602.2021.2003324"
+            "key": "ref_35",
+            "doi-asserted-by": "crossref",
+            "first-page": "51",
+            "DOI": "10.2307/30036519",
+            "article-title": "Trust and TAM in online shopping: An integrated model",
+            "volume": "27",
+            "author": "Gefen",
+            "year": "2003",
+            "journal-title": "MIS Q."
         },
         {
-            "key": "e_1_2_15_94_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.tate.2005.01.007"
+            "key": "ref_36",
+            "doi-asserted-by": "crossref",
+            "first-page": "65",
+            "DOI": "10.1016/j.im.2007.11.001",
+            "article-title": "Acceptance of blog usage: The roles of technology acceptance, social influence and knowledge sharing motivation",
+            "volume": "45",
+            "author": "Hsu",
+            "year": "2008",
+            "journal-title": "Inf. Manag."
+        },
+        {
+            "key": "ref_37",
+            "doi-asserted-by": "crossref",
+            "first-page": "339",
+            "DOI": "10.2307/20650295",
+            "article-title": "Adoption of electronic health records in the presence of privacy concerns: The elaboration likelihood model and individual persuasion",
+            "volume": "33",
+            "author": "Angst",
+            "year": "2009",
+            "journal-title": "MIS Q."
+        },
+        {
+            "key": "ref_38",
+            "doi-asserted-by": "crossref",
+            "first-page": "103",
+            "DOI": "10.1016/j.chb.2008.07.007",
+            "article-title": "Towards an understanding of the behavioral intention to use 3G mobile value-added services",
+            "volume": "25",
+            "author": "Kuo",
+            "year": "2009",
+            "journal-title": "Comput. Hum. Behav."
+        },
+        {
+            "key": "ref_39",
+            "doi-asserted-by": "crossref",
+            "first-page": "1",
+            "DOI": "10.1016/j.ijinfomgt.2013.06.002",
+            "article-title": "Understanding the Internet banking adoption: A unified theory of acceptance and use of technology and perceived risk application",
+            "volume": "34",
+            "author": "Martins",
+            "year": "2014",
+            "journal-title": "Int. J. Inf. Manag."
+        },
+        {
+            "key": "ref_40",
+            "doi-asserted-by": "crossref",
+            "first-page": "418",
+            "DOI": "10.1016/j.chb.2015.04.024",
+            "article-title": "Understanding mobile banking: The unified theory of acceptance and use of technology combined with cultural moderators",
+            "volume": "50",
+            "author": "Baptista",
+            "year": "2015",
+            "journal-title": "Comput. Hum. Behav."
+        },
+        {
+            "key": "ref_41",
+            "doi-asserted-by": "crossref",
+            "first-page": "186",
+            "DOI": "10.1287/mnsc.46.2.186.11926",
+            "article-title": "A Theoretical Extension of the Technology Acceptance Model: Four Longitudinal Field Studies",
+            "volume": "46",
+            "author": "Venkatesh",
+            "year": "2000",
+            "journal-title": "Manag. Sci."
+        },
+        {
+            "key": "ref_42",
+            "doi-asserted-by": "crossref",
+            "first-page": "127",
+            "DOI": "10.1080/07421222.1996.11518115",
+            "article-title": "A Motivational Model of Microcomputer Usage",
+            "volume": "13",
+            "author": "Igbaria",
+            "year": "1996",
+            "journal-title": "J. Manag. Inf. Syst."
+        },
+        {
+            "key": "ref_43",
+            "doi-asserted-by": "crossref",
+            "first-page": "349",
+            "DOI": "10.1080/01449299408914616",
+            "article-title": "The respective roles of perceived usefulness and perceived fun in the acceptance of microcomputer technology",
+            "volume": "13",
+            "author": "Igbaria",
+            "year": "1994",
+            "journal-title": "Behav. Inf. Technol."
+        },
+        {
+            "key": "ref_44",
+            "doi-asserted-by": "crossref",
+            "first-page": "239",
+            "DOI": "10.2307/249753",
+            "article-title": "Creation of Favorable User Perceptions: Exploring the Role of Intrinsic Motivation",
+            "volume": "23",
+            "author": "Venkatesh",
+            "year": "1999",
+            "journal-title": "MIS Q."
+        },
+        {
+            "key": "ref_45",
+            "doi-asserted-by": "crossref",
+            "first-page": "217",
+            "DOI": "10.1016/S0378-7206(00)00061-6",
+            "article-title": "Extending the TAM for a World-Wide-Web context",
+            "volume": "38",
+            "author": "Moon",
+            "year": "2001",
+            "journal-title": "Inf. Manag."
+        },
+        {
+            "key": "ref_46",
+            "doi-asserted-by": "crossref",
+            "first-page": "28",
+            "DOI": "10.1016/j.chb.2019.05.009",
+            "article-title": "Hey Alexa\u2026examine the variables influencing the use of artificial intelligent in-home voice assistants",
+            "volume": "99",
+            "author": "McLean",
+            "year": "2019",
+            "journal-title": "Comput. Hum. Behav."
+        },
+        {
+            "key": "ref_47",
+            "doi-asserted-by": "crossref",
+            "first-page": "1095",
+            "DOI": "10.1016/j.im.2003.10.007",
+            "article-title": "Acceptance of Internet-based learning medium: The role of extrinsic and intrinsic motivation",
+            "volume": "42",
+            "author": "Lee",
+            "year": "2005",
+            "journal-title": "Inf. Manag."
+        },
+        {
+            "key": "ref_48",
+            "doi-asserted-by": "crossref",
+            "first-page": "368",
+            "DOI": "10.1111/jcc4.12163",
+            "article-title": "An Extended Privacy Calculus Model for SNSs: Analyzing Self-Disclosure and Self-Withdrawal in a Representative U.S. Sample",
+            "volume": "21",
+            "author": "Dienlin",
+            "year": "2016",
+            "journal-title": "J. Comput. Mediat. Commun."
+        },
+        {
+            "key": "ref_49",
+            "first-page": "62",
+            "article-title": "Understanding Situational Online Information Disclosure as a Privacy Calculus",
+            "volume": "51",
+            "author": "Li",
+            "year": "2010",
+            "journal-title": "J. Comput. Inf. Syst."
+        },
+        {
+            "key": "ref_50",
+            "doi-asserted-by": "crossref",
+            "first-page": "127",
+            "DOI": "10.1007/s12599-012-0216-6",
+            "article-title": "Self-disclosure and Privacy Calculus on Social Networking Sites: The Role of Culture",
+            "volume": "4",
+            "author": "Krasnova",
+            "year": "2012",
+            "journal-title": "Bus. Inf. Syst. Eng."
+        },
+        {
+            "key": "ref_51",
+            "doi-asserted-by": "crossref",
+            "first-page": "1163",
+            "DOI": "10.1016/j.ijhcs.2013.08.016",
+            "article-title": "Information disclosure on mobile devices: Re-examining privacy calculus with actual user behavior",
+            "volume": "71",
+            "author": "Keith",
+            "year": "2013",
+            "journal-title": "Int. J. Hum. Comput. Stud."
+        },
+        {
+            "key": "ref_52",
+            "doi-asserted-by": "crossref",
+            "first-page": "273",
+            "DOI": "10.1016/j.chb.2018.11.022",
+            "article-title": "Willingness to provide personal information: Perspective of privacy calculus in IoT services",
+            "volume": "92",
+            "author": "Kim",
+            "year": "2019",
+            "journal-title": "Comput. Hum. Behav."
+        },
+        {
+            "key": "ref_53",
+            "doi-asserted-by": "crossref",
+            "first-page": "2118",
+            "DOI": "10.1016/j.tele.2018.07.013",
+            "article-title": "The effect of platform characteristics on the adoption of smart speakers: Empirical evidence in South Korea",
+            "volume": "35",
+            "author": "Park",
+            "year": "2018",
+            "journal-title": "Telemat. Inform."
+        },
+        {
+            "key": "ref_54",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Liao, Y., Vitak, J., Kumar, P., Zimmer, M., and Kritikos, K. (April, January 31). Understanding the Role of Privacy and Trust in Intelligent Personal Assistant Adoption. Proceedings of the 14th International Conference, iConference 2019, Washington, DC, USA.",
+            "DOI": "10.1007/978-3-030-15742-5_9"
+        },
+        {
+            "key": "ref_55",
+            "doi-asserted-by": "crossref",
+            "first-page": "237",
+            "DOI": "10.2307/249690",
+            "article-title": "On the use, usefulness, and ease of use of structural equation modeling in MIS research: A note of caution",
+            "volume": "19",
+            "author": "Chin",
+            "year": "1995",
+            "journal-title": "MIS Q."
+        },
+        {
+            "key": "ref_56",
+            "doi-asserted-by": "crossref",
+            "first-page": "157",
+            "DOI": "10.2307/41410412",
+            "article-title": "Consumer Acceptance and Use of Information Technology: Extending the Unified Theory of Acceptance and Use of Technology",
+            "volume": "36",
+            "author": "Venkatesh",
+            "year": "2012",
+            "journal-title": "MIS Q."
+        },
+        {
+            "key": "ref_57",
+            "unstructured": "Editions, T. (2013). PLS Path Modeling with R, Berkeley."
+        },
+        {
+            "key": "ref_58",
+            "doi-asserted-by": "crossref",
+            "first-page": "197",
+            "DOI": "10.2307/20650285",
+            "article-title": "Assessing Between-Group Differences in Information Systems Research: A Comparison of Covariance-and Componet-based SEM",
+            "volume": "33",
+            "author": "Qureshi",
+            "year": "2009",
+            "journal-title": "MIS Q."
+        },
+        {
+            "key": "ref_59",
+            "doi-asserted-by": "crossref",
+            "first-page": "177",
+            "DOI": "10.2307/20650284",
+            "article-title": "Using PLS Path Modeling for Assessing Hierarchical Construct Models: Guidelines and Empirical Illustration",
+            "volume": "33",
+            "author": "Wetzels",
+            "year": "2009",
+            "journal-title": "MIS Q."
+        },
+        {
+            "key": "ref_60",
+            "first-page": "00407",
+            "article-title": "Structural Equation Modeling and Regression: Guidelines for Research Practice",
+            "volume": "4",
+            "author": "Gefen",
+            "year": "2000",
+            "journal-title": "Commun. Assoc. Inf. Syst."
+        },
+        {
+            "key": "ref_61",
+            "doi-asserted-by": "crossref",
+            "first-page": "39",
+            "DOI": "10.1177/002224378101800104",
+            "article-title": "Evaluating structural equation models with unobservable variables and measurement error",
+            "volume": "18",
+            "author": "Fornell",
+            "year": "1981",
+            "journal-title": "J. Mark. Res."
+        },
+        {
+            "key": "ref_62",
+            "doi-asserted-by": "crossref",
+            "first-page": "371",
+            "DOI": "10.2307/3250922",
+            "article-title": "Media and group cohesion: Relative influences on social present, task participation, and group consensus",
+            "volume": "25",
+            "author": "Yoo",
+            "year": "2001",
+            "journal-title": "MIS Q."
+        },
+        {
+            "key": "ref_63",
+            "doi-asserted-by": "crossref",
+            "first-page": "1173",
+            "DOI": "10.1037/0022-3514.51.6.1173",
+            "article-title": "The moderator-mediator variable distinction in social psychological research: Conceptual, strategic and statistical considerations",
+            "volume": "51",
+            "author": "Baron",
+            "year": "1986",
+            "journal-title": "J. Personal. Soc. Psychol."
+        },
+        {
+            "key": "ref_64",
+            "doi-asserted-by": "crossref",
+            "first-page": "115",
+            "DOI": "10.1037/0022-0167.51.1.115",
+            "article-title": "Testing Moderator and Mediator Effects in Counseling Psychology",
+            "volume": "51",
+            "author": "Frazier",
+            "year": "2004",
+            "journal-title": "J. Couns. Psychol."
+        },
+        {
+            "key": "ref_65",
+            "doi-asserted-by": "crossref",
+            "first-page": "422",
+            "DOI": "10.1037/1082-989X.7.4.422",
+            "article-title": "Mediation in experimental and non-experimental studies: New procedures and recommendations",
+            "volume": "7",
+            "author": "Shrout",
+            "year": "2002",
+            "journal-title": "Psychol. Methods"
+        },
+        {
+            "key": "ref_66",
+            "doi-asserted-by": "crossref",
+            "first-page": "290",
+            "DOI": "10.2307/270723",
+            "article-title": "Asymptotic confidence intervals for indirect effects in structural equation models",
+            "volume": "13",
+            "author": "Sobel",
+            "year": "1982",
+            "journal-title": "Sociol. Methodol."
+        },
+        {
+            "key": "ref_67",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Kamara, S., and Lauter, K. (2010). Cryptographic Cloud Storage, Springer.",
+            "DOI": "10.1007/978-3-642-14992-4_13"
+        },
+        {
+            "key": "ref_68",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Kamara, S., Papamanthou, C., and Roeder, T. (2012, January 16\u201318). Dynamic Searchable Symmetric Encryption. Proceedings of the 2012 ACM Conference on Computer and Communications Aecurity, Association for Computing Machinery, Raleigh, NC, USA.",
+            "DOI": "10.1145/2382196.2382298"
+        },
+        {
+            "key": "ref_69",
+            "doi-asserted-by": "crossref",
+            "first-page": "53",
+            "DOI": "10.1016/j.adhoc.2013.04.013",
+            "article-title": "Multi-party trust computation in decentralized environments in the presence of malicious adversaries",
+            "volume": "15",
+            "author": "Dimitriou",
+            "year": "2014",
+            "journal-title": "Ad Hoc Netw."
+        },
+        {
+            "key": "ref_70",
+            "first-page": "1271",
+            "article-title": "(F)unctional Sifting: A Privacy-Preserving Reputation System Through Multi-Input Functional Encryption (extended version)",
+            "volume": "2020",
+            "author": "Bakas",
+            "year": "2020",
+            "journal-title": "IACR Cryptol. ePrint Arch."
+        },
+        {
+            "key": "ref_71",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Michalas, A. (2019, January 8\u201312). The Lord of the Shares: Combining Attribute-Based Encryption and Searchable Encryption for Flexible Data Sharing. Proceedings of the 34th ACM/SIGAPP Symposium on Applied Computing, Association for Computing Machinery, Limassol, Cyprus.",
+            "DOI": "10.1145/3297280.3297297"
         }
     ],
     "container-title": [
-        "Future in Educational Research"
+        "Sustainability"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/fer3.55",
+            "URL": "https://www.mdpi.com/2071-1050/13/2/602/pdf",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -670,89 +847,60 @@
         "date-parts": [
             [
                 2024,
-                9,
-                24
+                7,
+                7
             ]
         ],
-        "date-time": "2024-09-24T15:49:05Z",
-        "timestamp": 1727192945000
+        "date-time": "2024-07-07T04:53:52Z",
+        "timestamp": 1720328032000
     },
-    "score": 14.14352,
+    "score": 12.514832,
     "resource": {
         "primary": {
-            "URL": "https://onlinelibrary.wiley.com/doi/10.1002/fer3.55"
+            "URL": "https://www.mdpi.com/2071-1050/13/2/602"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2024,
-                9,
-                24
+                2021,
+                1,
+                10
             ]
         ]
     },
-    "references-count": 93,
+    "references-count": 71,
+    "journal-issue": {
+        "issue": "2",
+        "published-online": {
+            "date-parts": [
+                [
+                    2021,
+                    1
+                ]
+            ]
+        }
+    },
     "alternative-id": [
-        "10.1002/fer3.55"
+        "su13020602"
     ],
-    "URL": "http://dx.doi.org/10.1002/fer3.55",
-    "archive": [
-        "Portico"
-    ],
+    "URL": "http://dx.doi.org/10.3390/su13020602",
     "ISSN": [
-        "2835-9402",
-        "2835-9402"
+        "2071-1050"
     ],
     "issn-type": [
         {
-            "value": "2835-9402",
-            "type": "print"
-        },
-        {
-            "value": "2835-9402",
+            "value": "2071-1050",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2024,
-                9,
-                24
+                2021,
+                1,
+                10
             ]
         ]
-    },
-    "assertion": [
-        {
-            "value": "2024-03-30",
-            "order": 0,
-            "name": "received",
-            "label": "Received",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2024-08-26",
-            "order": 2,
-            "name": "accepted",
-            "label": "Accepted",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2024-09-24",
-            "order": 3,
-            "name": "published",
-            "label": "Published",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        }
-    ]
+    }
 }

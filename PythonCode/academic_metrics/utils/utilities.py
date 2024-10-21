@@ -7,14 +7,15 @@ from academic_metrics.enums import AttributeTypes
 This script contains a class that has various utility methods that will be used for many purposes throughout the project
 """
 
+
 class Utilities:
     """
     A class containing various utility methods for processing and analyzing academic data.
-    
+
     Attributes:
         strategy_factory (StrategyFactory): An instance of the StrategyFactory class.
         warning_manager (WarningManager): An instance of the WarningManager class.
-        
+
     Methods:
         get_attributes(self, entry_text, attributes):
             Extracts specified attributes from the article entry and returns them in a dictionary.
@@ -34,18 +35,18 @@ class Utilities:
             Splits a crossref file into individual entries and creates a separate file for each entry in the specified output directory.
         make_files(self, *, path_to_file: str, split_files_dir_path: str, crossref_bool: bool = False):
             Splits a document into individual entries and creates a separate file for each entry in the specified output directory.
-            This method first splits the document into individual entries using the `splitter` method OR 
+            This method first splits the document into individual entries using the `splitter` method OR
             the `crossref_file_splitter` method depending on the value of the `crossref_bool` parameter.
             It then iterates over each entry, extracts the necessary attributes to form a filename,
             ensures the output directory exists, and writes each entry's content to a new file in the output directory.
             Then returns the file_paths dictionary to make referencing any specific document later easier
-            
+
             Support WoS export txt files or crossref api json files.
-        
+
         Usage:
         To use the Utilities class, you need to have instances of StrategyFactory and WarningManager.
         You can initialize the class with these instances and then call its methods to process your data.
-        
+
         Example:
         from strategy_factory import StrategyFactory
         from warning_manager import WarningManager
@@ -57,6 +58,7 @@ class Utilities:
         utilities = Utilities(strategy_factory, warning_manager)
 
     """
+
     MAX_FILENAME_LENGTH = 255
 
     def __init__(self, *, strategy_factory, warning_manager):
@@ -127,12 +129,12 @@ class Utilities:
 
         Returns:
             str: A sanitized string safe for use in a file name.
-            
+
         Details:
         - Removes any potential HTML tags
         - Replaces invalid filename characters with underscores
         - Truncates the string to avoid excessively long file names
-        
+
         Regular Expression:
         - <[^>]+>: Matches any text that starts with "<" and ends with ">"
             - <: Matches the opening angle bracket of an HTML tag
@@ -153,7 +155,7 @@ class Utilities:
     def get_article_title(self, entry_text):
         """
         Extracts the title of the article from WoS export txt files.
-        
+
         !DEPRECATED
         """
         return self.attribute_patterns["title"].extract_attribute(entry_text)
@@ -190,7 +192,7 @@ class Utilities:
 
         Returns:
             str: The path to the output directory.
-            
+
         !DEPRECATED
         """
         # Use current working directory if no path is provided
@@ -239,25 +241,29 @@ class Utilities:
 
         with open(path_to_file, "r") as f:
             data = json.load(f)
-            
+
         crossref_filename_suffix = "_crossref_item.json"
 
         for i, item in enumerate(data):
             # Create file names, file names are the index of the item in the list + the suffix, e.g. 0_crossref_item.json
             file_name = f"{i}{crossref_filename_suffix}"
             full_file_path = os.path.join(split_files_dir_path, file_name)
-            
+
             if not os.path.exists(split_files_dir_path):
                 os.makedirs(split_files_dir_path, exist_ok=True)
-            
+
             with open(full_file_path, "w") as f:
                 json.dump(item, f, indent=4)
-                
+
         files = os.listdir(split_files_dir_path)
         return files
 
     def make_files(
-        self, *, path_to_file: str, split_files_dir_path: str, crossref_bool: bool = False
+        self,
+        *,
+        path_to_file: str,
+        split_files_dir_path: str,
+        crossref_bool: bool = False,
     ):
         """
         Splits a document into individual entries and creates a separate file for each entry in the specified output directory.
@@ -279,7 +285,9 @@ class Utilities:
                 path_to_file=path_to_file, split_files_dir_path=split_files_dir_path
             )
 
-        splits = self.splitter(path_to_file=path_to_file, split_files_dir_path=split_files_dir_path)
+        splits = self.splitter(
+            path_to_file=path_to_file, split_files_dir_path=split_files_dir_path
+        )
 
         # dictionary to keep track of created files and their paths
         file_paths = {}

@@ -3,332 +3,366 @@
         "date-parts": [
             [
                 2024,
-                6,
-                26
+                10,
+                9
             ]
         ],
-        "date-time": "2024-06-26T12:36:09Z",
-        "timestamp": 1719405369418
+        "date-time": "2024-10-09T04:30:29Z",
+        "timestamp": 1728448229434
     },
-    "reference-count": 29,
-    "publisher": "Informa UK Limited",
-    "issue": "3",
+    "reference-count": 52,
+    "publisher": "SAGE Publications",
+    "issue": "2",
+    "license": [
+        {
+            "start": {
+                "date-parts": [
+                    [
+                        2022,
+                        4,
+                        25
+                    ]
+                ],
+                "date-time": "2022-04-25T00:00:00Z",
+                "timestamp": 1650844800000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://journals.sagepub.com/page/policies/text-and-data-mining-license"
+        }
+    ],
     "content-domain": {
         "domain": [
-            "www.tandfonline.com"
+            "journals.sagepub.com"
         ],
         "crossmark-restriction": true
     },
     "short-container-title": [
-        "Peabody Journal of Education"
+        "Newspaper Research Journal"
     ],
     "published-print": {
         "date-parts": [
             [
-                2021,
-                5,
-                27
+                2022,
+                6
             ]
         ]
     },
-    "DOI": "10.1080/0161956x.2021.1958633",
+    "abstract": "<jats:p> This study examined 286 stories posted about the Black Lives Matter movement and protests following George Floyd\u2019s death by the six most-viewed U.S. news outlets on Facebook during summer 2020. These organizations published a significant amount of content, though the frequency declined throughout the summer. Stories mostly framed protesters positively and police negatively. Organizations regularly used law/crime spot news to frame protests. The findings may signal a potential shift away from the media\u2019s protest paradigm. </jats:p>",
+    "DOI": "10.1177/07395329221092719",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2021,
-                8,
-                20
+                2022,
+                4,
+                25
             ]
         ],
-        "date-time": "2021-08-20T19:41:04Z",
-        "timestamp": 1629488464000
+        "date-time": "2022-04-25T09:26:46Z",
+        "timestamp": 1650878806000
     },
-    "page": "229-234",
-    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
+    "page": "155-175",
+    "update-policy": "http://dx.doi.org/10.1177/sage-journals-update-policy",
     "source": "Crossref",
     "is-referenced-by-count": 6,
     "title": [
-        "Civic Education and Civic Capacity in Public Schools: The State of the Field and Directions for the Future"
+        "Black Lives Matter to media (finally): A content analysis of news coverage during summer 2020"
     ],
-    "prefix": "10.1080",
-    "volume": "96",
+    "prefix": "10.1177",
+    "volume": "43",
     "author": [
         {
-            "ORCID": "http://orcid.org/0000-0001-9848-934X",
-            "authenticated-orcid": false,
-            "given": "Alison K.",
-            "family": "Cohen",
+            "given": "Jennifer Brannock",
+            "family": "Cox",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "University of California San Francisco"
-                },
-                {
-                    "name": "Tufts University"
-                }
-            ]
-        },
-        {
-            "suffix": "IV",
-            "given": "Alexander",
-            "family": "Pope",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Salisbury University"
-                }
-            ]
-        },
-        {
-            "given": "Kenneth K.",
-            "family": "Wong",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Brown University"
+                    "name": "Cox is a professor at Salisbury University"
                 }
             ]
         }
     ],
-    "member": "301",
+    "member": "179",
     "published-online": {
         "date-parts": [
             [
-                2021,
-                8,
-                20
+                2022,
+                4,
+                25
             ]
         ]
     },
     "reference": [
         {
-            "issue": "3",
-            "key": "cit0001",
-            "doi-asserted-by": "crossref",
-            "first-page": "285",
-            "DOI": "10.1080/0161956X.2021.1942707",
-            "volume": "96",
-            "author": "Andes S.",
-            "year": "2021",
-            "journal-title": "Peabody Journal of Education"
+            "key": "bibr1-07395329221092719",
+            "unstructured": "ACAB [@ChicKamNigglet]. (2020, June 17). Did y\u2019all notice how looting died down and peaceful protests continued, but the media coverage of the protests has died [Tweet]. Twitter. https://twitter.com/ChicKamNigglet/status/1273287892744450051"
         },
         {
-            "key": "cit0002",
+            "key": "bibr2-07395329221092719",
+            "unstructured": "Black Lives Matter. (n.d.). https://blacklivesmatter.com/"
+        },
+        {
+            "key": "bibr3-07395329221092719",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/ajcp.12103"
+            "DOI": "10.1177/1461444817750396"
         },
         {
-            "key": "cit0003",
-            "unstructured": "CCSSO. (2018).The marginalization of social studies. https://ccsso.org/sites/default/files/2018-11/Elementary%20SS%20Brief%2045%20Minute%20Version_0.pdf"
+            "key": "bibr4-07395329221092719",
+            "unstructured": "Buchanan L., Bui Q., Patel J. K. (2020, July 3). Black Lives Matter may be the largest movement in U.S. history. The New York Times. https://www.nytimes.com/interactive/2020/07/03/us/george-floyd-protests-crowd-size.html"
         },
         {
-            "issue": "3",
-            "key": "cit0004",
-            "doi-asserted-by": "crossref",
-            "first-page": "319",
-            "DOI": "10.1080/0161956X.2021.1958633",
-            "volume": "96",
-            "author": "Cohen A.",
-            "year": "2021",
-            "journal-title": "Peabody Journal of Education"
-        },
-        {
-            "key": "cit0005",
+            "key": "bibr5-07395329221092719",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1386/ctl.13.3.351_1"
+            "DOI": "10.1177/107769900708400407"
         },
         {
-            "issue": "3",
-            "key": "cit0006",
-            "doi-asserted-by": "crossref",
-            "first-page": "341",
-            "DOI": "10.1080/0161956X.2021.1943239",
-            "volume": "96",
-            "author": "Collins J.",
-            "year": "2021",
-            "journal-title": "Peabody Journal of Education"
+            "key": "bibr6-07395329221092719",
+            "unstructured": "Cohn N., Quealy K. (2020, June 10). How public opinion has moved on Black Lives Matter. The New York Times. https://www.nytimes.com/interactive/2020/06/10/upshot/black-lives-matter-attitudes.html"
         },
         {
-            "issue": "3",
-            "key": "cit0007",
-            "doi-asserted-by": "crossref",
-            "first-page": "307",
-            "DOI": "10.1080/0161956X.2021.1942709",
-            "volume": "96",
-            "author": "Dawley-Carr J. R.",
-            "year": "2021",
-            "journal-title": "Peabody Journal of Education"
+            "key": "bibr7-07395329221092719",
+            "unstructured": "Dassarma A. (2020, August 6). Yes, \u201cthe media\u201d actually is covering that. The Baltimore Sun. https://www.baltimoresun.com/opinion/op-ed/bs-ed-op-0807-local-media-20200806-b32vb2dwcvamfnmtxcremejeku-story.html"
         },
         {
-            "key": "cit0008",
-            "volume-title": "Democracy and education: An introduction to the philosophy of education",
-            "author": "Dewey J.",
-            "year": "1916"
-        },
-        {
-            "issue": "3",
-            "key": "cit0009",
-            "doi-asserted-by": "crossref",
-            "first-page": "261",
-            "DOI": "10.1080/0161956X.2021.1942705",
-            "volume": "96",
-            "author": "DiGiacomo D. K.",
-            "year": "2021",
-            "journal-title": "Peabody Journal of Education"
-        },
-        {
-            "key": "cit0010",
-            "volume-title": "Measuring ideology over time: Sorting out partisan and electoral polarization in the American public",
-            "author": "Feldman S.",
-            "year": "2018"
-        },
-        {
-            "issue": "3",
-            "key": "cit0011",
-            "doi-asserted-by": "crossref",
-            "first-page": "235",
-            "DOI": "10.1080/0161956X.2021.1942703",
-            "volume": "96",
-            "author": "Fitzgerald J. C.",
-            "year": "2021",
-            "journal-title": "Peabody Journal of Education"
-        },
-        {
-            "key": "cit0012",
-            "volume-title": "Guardian of democracy: The civic mission of schools",
-            "author": "Gould J.",
-            "year": "2011"
-        },
-        {
-            "key": "cit0013",
-            "volume-title": "Democratic education",
-            "author": "Gutmann A.",
-            "year": "1987"
-        },
-        {
-            "key": "cit0014",
+            "key": "bibr8-07395329221092719",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1515/9781400823291"
+            "DOI": "10.1111/j.1460-2466.2007.00376.x"
         },
         {
-            "key": "cit0015",
-            "unstructured": "Kahne, J. & Middaugh, E. (2008).Democracy for some: The civic opportunity gap in high school(CIRCLE Working Paper 59). Center for Information and Research on Civic Learning and Engagement, Tufts University. http://www.civicyouth.org/PopUps/WorkingPapers/WP59Kahne.pdf"
-        },
-        {
-            "issue": "3",
-            "key": "cit0016",
-            "doi-asserted-by": "crossref",
-            "first-page": "294",
-            "DOI": "10.1080/0161956X.2021.1942708",
-            "volume": "96",
-            "author": "Kirshner B.",
-            "year": "2021",
-            "journal-title": "Peabody Journal of Education"
-        },
-        {
-            "key": "cit0017",
+            "key": "bibr9-07395329221092719",
             "doi-asserted-by": "publisher",
-            "DOI": "10.4159/harvard.9780674065291"
+            "DOI": "10.1111/j.1460-2466.2000.tb02845.x"
         },
         {
-            "key": "cit0018",
-            "volume-title": "When democracies die",
-            "author": "Levitsky S.",
-            "year": "2018"
+            "key": "bibr10-07395329221092719",
+            "unstructured": "eBizMBA. (2020, August). Top 15 most popular news websites. http://www.ebizmba.com/articles/news-websites"
         },
         {
-            "issue": "3",
-            "key": "cit0019",
-            "doi-asserted-by": "crossref",
-            "first-page": "247",
-            "DOI": "10.1080/0161956X.2021.1942704",
-            "volume": "96",
-            "author": "Littenberg-Tobias J.",
-            "year": "2021",
-            "journal-title": "Peabody Journal of Education"
-        },
-        {
-            "issue": "3",
-            "key": "cit0020",
-            "doi-asserted-by": "crossref",
-            "first-page": "275",
-            "DOI": "10.1080/0161956X.2021.1942706",
-            "volume": "96",
-            "author": "McAvoy P.",
-            "year": "2021",
-            "journal-title": "Peabody Journal of Education"
-        },
-        {
-            "issue": "3",
-            "key": "cit0021",
-            "doi-asserted-by": "crossref",
-            "first-page": "330",
-            "DOI": "10.1080/0161956X.2021.1943238",
-            "volume": "96",
-            "author": "Morel D.",
-            "year": "2021",
-            "journal-title": "Peabody Journal of Education"
-        },
-        {
-            "key": "cit0022",
+            "key": "bibr11-07395329221092719",
             "doi-asserted-by": "publisher",
-            "DOI": "10.4159/9780674984776"
+            "DOI": "10.1140/epjds/s13688-019-0194-8"
         },
         {
-            "key": "cit0023",
-            "volume-title": "Public engagement for public education",
-            "author": "Orr M.",
-            "year": "2011"
-        },
-        {
-            "key": "cit0024",
-            "first-page": "93",
-            "volume-title": "Urban citizenship and American democracy",
-            "author": "Orr M.",
-            "year": "2016"
-        },
-        {
-            "issue": "5",
-            "key": "cit0025",
-            "first-page": "265",
-            "volume": "75",
-            "author": "Pope A.",
-            "year": "2011",
-            "journal-title": "Social Education"
-        },
-        {
-            "key": "cit0026",
+            "key": "bibr12-07395329221092719",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1145/358916.361990"
+            "DOI": "10.1080/17512786.2016.1208058"
         },
         {
-            "key": "cit0027",
-            "first-page": "79",
-            "author": "Roth K.",
-            "year": "2017",
-            "journal-title": "Journal of International Affairs"
+            "key": "bibr13-07395329221092719",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.7208/chicago/9780226210773.001.0001"
         },
         {
-            "key": "cit0028",
-            "volume-title": "Diminished democracy",
-            "author": "Skocpol T.",
-            "year": "2003"
+            "key": "bibr14-07395329221092719",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.4324/9780203076828"
         },
         {
-            "key": "cit0029",
-            "volume-title": "Building civic capacity: The politics of reforming urban schools",
-            "author": "Stone C. N.",
-            "year": "2001"
+            "key": "bibr15-07395329221092719",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/BF02701600"
+        },
+        {
+            "first-page": "81",
+            "volume-title": "Brown and Black communication: Latino and African American conflict and convergence in mass media",
+            "year": "2003",
+            "author": "Heider D.",
+            "key": "bibr16-07395329221092719"
+        },
+        {
+            "key": "bibr17-07395329221092719",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/1075547014534077"
+        },
+        {
+            "key": "bibr18-07395329221092719",
+            "unstructured": "Hill E., Tiefenth\u00e4ler A., Triebert C., Jordan D., Willis H., Stein R. (2020, May 31). How George Floyd was killed in police custody. The New York Times. https://www.nytimes.com/2020/05/31/us/george-floyd-investigation.html"
+        },
+        {
+            "key": "bibr19-07395329221092719",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/1077699012456022"
+        },
+        {
+            "key": "bibr20-07395329221092719",
+            "unstructured": "Huitsing M. (2021, March 11). MSNBC. Media Bias/fact Check. https://mediabiasfactcheck.com/msnbc/"
+        },
+        {
+            "key": "bibr21-07395329221092719",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/josi.12102"
+        },
+        {
+            "key": "bibr22-07395329221092719",
+            "unstructured": "Irving D. (2020, March 4). American news habits and the challenge of truth decay. Rand Review. https://www.rand.org/blog/rand-review/2020/03/american-news-habits-and-the-challenge-of-truth-decay.html"
+        },
+        {
+            "key": "bibr23-07395329221092719",
+            "unstructured": "Johnson T. (2020, December 24). Cable news networks see big gains in viewership during tumultuous 2020. Deadline. https://deadline.com/2020/12/ratings-cable-news-networks-2020-/1234660751"
+        },
+        {
+            "key": "bibr24-07395329221092719",
+            "unstructured": "Jurkowitz M. (2020, July 9). Younger adults differ from older ones in perceptions of news about COVID-19, George Floyd protests. Pew Research Center. https://www.pewresearch.org/fact-tank/2020/07/09/younger-adults-differ-from-older-ones-in-perceptions-of-news-about-covid-19-george-floyd-protests/"
+        },
+        {
+            "key": "bibr25-07395329221092719",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/1940161219853517"
+        },
+        {
+            "key": "bibr26-07395329221092719",
+            "unstructured": "Knight Foundation. (2020, August 4). Gallup/Knight Poll: Americans\u2019 concerns about media bias deepen, even as they see it vital for democracy. https://knightfoundation.org/press/releases/gallup-knight-poll-americans-concerns-about-media-bias-deepen-even-as-they-see-it-as-vital-for-democracy/"
+        },
+        {
+            "key": "bibr27-07395329221092719",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/1060826519846429"
+        },
+        {
+            "key": "bibr28-07395329221092719",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0021934720946802"
+        },
+        {
+            "key": "bibr29-07395329221092719",
+            "unstructured": "Mayer S. [@santiagomayer_]. (2020, July 16). The entire world should be looking at Portland right now [Tweet]. Twitter. https://twitter.com/santiagomayer_/status/1283968105249570818"
+        },
+        {
+            "issue": "1",
+            "key": "bibr30-07395329221092719",
+            "first-page": "185",
+            "volume": "2007",
+            "author": "McLeod D. M.",
+            "year": "2007",
+            "journal-title": "Journal of Dispute Resolution"
+        },
+        {
+            "first-page": "305",
+            "volume-title": "Mass media, social control and social change: A macrosocial perspective",
+            "year": "1999",
+            "author": "McLeod D. M.",
+            "key": "bibr31-07395329221092719"
+        },
+        {
+            "key": "bibr32-07395329221092719",
+            "unstructured": "Mehta D. (2020, June 11). National media coverage of Black Lives Matter had fallen during the Trump era\u2014Until now. FiveThirtyEight. https://fivethirtyeight.com/features/national-media-coverage-of-black-lives-matter-had-fallen-during-the-trump-era-until-now/"
+        },
+        {
+            "key": "bibr33-07395329221092719",
+            "unstructured": "nabila.114. [@nabila.114]. (2020, July 21). This is what the media won\u2019t show you [Video]. Instagram."
+        },
+        {
+            "key": "bibr34-07395329221092719",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.4135/9781071802878"
+        },
+        {
+            "key": "bibr35-07395329221092719",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1108/S0195-744920180000020010"
+        },
+        {
+            "key": "bibr36-07395329221092719",
+            "unstructured": "Pasley J. (2019, December 31). Fox News and CNN are 2 of America\u2019s biggest news sources\u2014But they couldn\u2019t be more different. Here\u2019s how they\u2019ve changed in the past decade. Business Insider. https://www.businessinsider.com/fox-news-cnn-change-evolution-2010-2019-11"
+        },
+        {
+            "key": "bibr37-07395329221092719",
+            "unstructured": "Pew Research Center for the People and the Press. (2013). Internet overtakes newspapers as news outlet. http://pewresearch.org/pubs/1066/internet-overtakes-newspapers-as-news-source"
+        },
+        {
+            "key": "bibr38-07395329221092719",
+            "unstructured": "Pew Research Center for the People and the Press. (2020). Cable TV and COVID-19: How Americans perceive the outbreak and view media coverage differ by main news source. https://www.pewresearch.org/journalism/2020/04/01/cable-tv-and-covid-19-how-americans-perceive-the-outbreak-and-view-media-coverage-differ-by-main-news-source/"
+        },
+        {
+            "key": "bibr39-07395329221092719",
+            "unstructured": "Ralli T. (2005). Who\u2019s a looter? In storm\u2019s aftermath, pictures kick up a different kind of tempest. The New York Times. https://www.nytimes.com/2005/09/05/business/whos-a-looter-in-storms-aftermath-pictures-kick-up-a-different.html"
+        },
+        {
+            "key": "bibr40-07395329221092719",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/15205436.2016.1174268"
+        },
+        {
+            "key": "bibr41-07395329221092719",
+            "first-page": "542",
+            "volume": "439",
+            "author": "Rusdi F.",
+            "year": "2019",
+            "journal-title": "Advances in Social Science, Education and Humanities Research"
+        },
+        {
+            "issue": "2",
+            "key": "bibr42-07395329221092719",
+            "first-page": "17",
+            "volume": "24",
+            "author": "Schaudt S.",
+            "year": "2009",
+            "journal-title": "Southwestern Mass Communication Journal"
+        },
+        {
+            "key": "bibr43-07395329221092719",
+            "unstructured": "Schudson M. (2019, Winter). The fall, rise, and fall of media trust. Columbia Journalism Review. https://www.cjr.org/special_report/the-fall-rise-and-fall-of-media-trust.php"
+        },
+        {
+            "key": "bibr44-07395329221092719",
+            "unstructured": "Shearer E., Mitchell A. (2021). News use across social media platforms in 2020. Pew Research Center. https://www.journalism.org/2021/01/12/news-use-across-social-media-platforms-in-2020/"
+        },
+        {
+            "key": "bibr45-07395329221092719",
+            "unstructured": "Statista. (2020, September 22). Most popular social networks worldwide as of January 2021, ranked by number of active users. https://www.statista.com/statistics/272014/global-social-networks-ranked-by-number-of-users/"
+        },
+        {
+            "key": "bibr46-07395329221092719",
+            "unstructured": "Statista. (2021, February 4). Most popular mobile social networking apps in the United States as of September 2019, by monthly users. https://www.statista.com/statistics/248074/most-popular-us-social-networking-apps-ranked-by-audience/"
+        },
+        {
+            "key": "bibr47-07395329221092719",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/10584600500477385"
+        },
+        {
+            "key": "bibr48-07395329221092719",
+            "unstructured": "Thomas D., Horowitz J. M. (2020, September 16). Support for Black Lives Matter has decreased since June but remains strong among Black Americans. Pew Research Center. https://www.pewresearch.org/fact-tank/2020/09/16/support-for-black-lives-matter-has-decreased-since-june-but-remains-strong-among-black-americans/"
+        },
+        {
+            "key": "bibr49-07395329221092719",
+            "unstructured": "The Wall Street Journal. (1997). Glossary of terms: Journalism. http://info.wsj.com/college/glossary/journalism.pdf"
+        },
+        {
+            "key": "bibr50-07395329221092719",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/009365093020003004"
+        },
+        {
+            "key": "bibr51-07395329221092719",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/1461444818784302"
+        },
+        {
+            "key": "bibr52-07395329221092719",
+            "unstructured": "Yarrish H. (2019). White protests, black riots: Racialized representation in American media. Young Scholars in Writing, 16, 6\u201324. https://youngscholarsinwriting.org/index.php/ysiw/article/view/271"
         }
     ],
     "container-title": [
-        "Peabody Journal of Education"
+        "Newspaper Research Journal"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/0161956X.2021.1958633",
+            "URL": "https://journals.sagepub.com/doi/pdf/10.1177/07395329221092719",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://journals.sagepub.com/doi/full-xml/10.1177/07395329221092719",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://journals.sagepub.com/doi/pdf/10.1177/07395329221092719",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -337,92 +371,66 @@
     "deposited": {
         "date-parts": [
             [
-                2023,
-                1,
-                7
+                2024,
+                10,
+                8
             ]
         ],
-        "date-time": "2023-01-07T19:43:12Z",
-        "timestamp": 1673120592000
+        "date-time": "2024-10-08T18:33:43Z",
+        "timestamp": 1728412423000
     },
-    "score": 13.311134,
+    "score": 13.700431,
     "resource": {
         "primary": {
-            "URL": "https://www.tandfonline.com/doi/full/10.1080/0161956X.2021.1958633"
+            "URL": "https://journals.sagepub.com/doi/10.1177/07395329221092719"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2021,
-                5,
-                27
+                2022,
+                4,
+                25
             ]
         ]
     },
-    "references-count": 29,
+    "references-count": 52,
     "journal-issue": {
-        "issue": "3",
+        "issue": "2",
         "published-print": {
             "date-parts": [
                 [
-                    2021,
-                    5,
-                    27
+                    2022,
+                    6
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1080/0161956X.2021.1958633"
+        "10.1177/07395329221092719"
     ],
-    "URL": "http://dx.doi.org/10.1080/0161956x.2021.1958633",
+    "URL": "http://dx.doi.org/10.1177/07395329221092719",
     "ISSN": [
-        "0161-956X",
-        "1532-7930"
+        "0739-5329",
+        "2376-4791"
     ],
     "issn-type": [
         {
-            "value": "0161-956X",
-            "type": "print"
+            "type": "print",
+            "value": "0739-5329"
         },
         {
-            "value": "1532-7930",
-            "type": "electronic"
+            "type": "electronic",
+            "value": "2376-4791"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2021,
-                5,
-                27
+                2022,
+                4,
+                25
             ]
         ]
-    },
-    "assertion": [
-        {
-            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
-            "order": 1,
-            "name": "peerreview_statement",
-            "label": "Peer Review Statement"
-        },
-        {
-            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=hpje20",
-            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=hpje20",
-            "order": 2,
-            "name": "aims_and_scope_url",
-            "label": "Aim & Scope"
-        },
-        {
-            "value": "2021-08-20",
-            "order": 3,
-            "name": "published",
-            "label": "Published",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        }
-    ]
+    }
 }

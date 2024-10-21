@@ -3,345 +3,523 @@
         "date-parts": [
             [
                 2024,
-                5,
-                26
+                7,
+                10
             ]
         ],
-        "date-time": "2024-05-26T10:14:24Z",
-        "timestamp": 1716718464792
+        "date-time": "2024-07-10T05:59:31Z",
+        "timestamp": 1720591171437
     },
-    "reference-count": 44,
-    "publisher": "Informa UK Limited",
-    "issue": "7",
+    "reference-count": 78,
+    "publisher": "American Geophysical Union (AGU)",
+    "issue": "20",
+    "license": [
+        {
+            "start": {
+                "date-parts": [
+                    [
+                        2017,
+                        10,
+                        30
+                    ]
+                ],
+                "date-time": "2017-10-30T00:00:00Z",
+                "timestamp": 1509321600000
+            },
+            "content-version": "vor",
+            "delay-in-days": 3,
+            "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+        }
+    ],
+    "funder": [
+        {
+            "name": "NSF Luquillo Long-Term Ecological Research Program",
+            "award": [
+                "1239764"
+            ]
+        }
+    ],
     "content-domain": {
-        "domain": [
-            "www.tandfonline.com"
-        ],
-        "crossmark-restriction": true
+        "domain": [],
+        "crossmark-restriction": false
     },
     "short-container-title": [
-        "Journal of Gender Studies"
+        "JGR Atmospheres"
     ],
     "published-print": {
         "date-parts": [
             [
-                2023,
+                2017,
                 10,
-                3
+                27
             ]
         ]
     },
-    "DOI": "10.1080/09589236.2021.2016382",
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>Eastern Puerto Rico and the surrounding Caribbean experienced a severe drought in 2015 that resulted in record\u2010low reservoir and river levels. Rainfall deficits in April and May, which represent the period when the drought began, were more severe in 2015 than recent droughts of record. While El Ni\u00f1o has been associated with drought in the Caribbean, onset of the 2015 drought was strongly associated with lower\u2010than\u2010average values of a recently developed tool used by weather forecasters in San Juan, the G\u00e1lvez\u2010Davison Index (GDI), which is used to measure the potential for thunderstorm development and rainfall. Persistently low GDI values indicate strong and frequent intrusions of hot, dry air in the low to middle troposphere, suppressing convection, both locally and in development regions for tropical waves that impact Puerto Rico. The Saharan Air Layer (SAL) is largely responsible for this anomalously hot, dry air, which produced thermodynamically stable conditions and limited thunderstorms and rainfall. Moreover, higher\u2010than\u2010normal aerosol concentrations, typically associated with SAL intrusion over the Caribbean, were recorded in April and May 2015. A comparison to advanced very high resolution radiometer aerosol optical thickness demonstrates that higher Caribbean aerosols in the early rainfall season, particularly June, are associated with decreased rainfall in eastern Puerto Rico. Results here demonstrate a direct link between the early and more pronounced SAL intrusions into the Caribbean and the suppression of the early rainfall season. More broadly, a reduction in the GDI and increase in the trade wind inversion was associated with reduced early season rainfall in the eastern Caribbean.</jats:p>",
+    "DOI": "10.1002/2017jd026911",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2021,
-                12,
-                27
+                2017,
+                10,
+                13
             ]
         ],
-        "date-time": "2021-12-27T07:02:17Z",
-        "timestamp": 1640588537000
+        "date-time": "2017-10-13T03:16:36Z",
+        "timestamp": 1507864596000
     },
-    "page": "707-718",
-    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
     "source": "Crossref",
-    "is-referenced-by-count": 2,
+    "is-referenced-by-count": 30,
     "title": [
-        "Muslim women negotiating their identity in the era of the Muslim ban"
+        "The Saharan Air Layer as an Early Rainfall Season Suppressant in the Eastern Caribbean: The 2015 Puerto Rico Drought"
     ],
-    "prefix": "10.1080",
-    "volume": "32",
+    "prefix": "10.1029",
+    "volume": "122",
     "author": [
         {
-            "given": "Rachel R.",
-            "family": "Steele",
+            "ORCID": "http://orcid.org/0000-0002-0021-0134",
+            "authenticated-orcid": false,
+            "given": "Thomas L.",
+            "family": "Mote",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Psychology Department, Salisbury University, Salisbury, MD, USA"
+                    "name": "Department of Geography University of Georgia  Athens GA USA"
                 }
             ]
         },
         {
-            "given": "Sakina",
-            "family": "Bengali",
+            "ORCID": "http://orcid.org/0000-0003-0290-4639",
+            "authenticated-orcid": false,
+            "given": "Craig A.",
+            "family": "Ramseyer",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Department of Psychological and Brain Sciences, University of Massachusetts-Amherst, Amherst, MA, USA"
+                    "name": "Department of Geography and Geosciences Salisbury University  Salisbury MD USA"
                 }
             ]
         },
         {
-            "given": "Gwynne",
-            "family": "Richardson",
+            "given": "Paul W.",
+            "family": "Miller",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Psychology Department, Salisbury University, Salisbury, MD, USA"
-                }
-            ]
-        },
-        {
-            "given": "Mackensie",
-            "family": "Disbennett",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Psychology Department, Salisbury University, Salisbury, MD, USA"
-                }
-            ]
-        },
-        {
-            "given": "Yasmeen",
-            "family": "Othman",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Psychology Department, Salisbury University, Salisbury, MD, USA"
+                    "name": "Department of Geography University of Georgia  Athens GA USA"
                 }
             ]
         }
     ],
-    "member": "301",
+    "member": "13",
     "published-online": {
         "date-parts": [
             [
-                2021,
-                12,
-                26
+                2017,
+                10,
+                30
             ]
         ]
     },
     "reference": [
         {
-            "key": "e_1_3_3_2_1",
+            "key": "e_1_2_7_2_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/1534765609342281"
+            "DOI": "10.1126/science.245.4923.1227"
         },
         {
-            "key": "e_1_3_3_3_1",
+            "key": "e_1_2_7_3_1",
+            "unstructured": "Alvarez L.(2015).Water crisis brings out Puerto Rico's creative side accessed 2 April 2017. Retrieved from:http://www.nytimes.com/2015/07/15/us/in\u2010drought\u2010puerto\u2010rico\u2010rations\u2010water\u2010setting\u2010off\u2010a\u2010collection\u2010frenzy.html?_r=0"
+        },
+        {
+            "key": "e_1_2_7_4_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/15564900802487634"
+            "DOI": "10.1029/2009JD012990"
         },
         {
-            "key": "e_1_3_3_4_1",
+            "key": "e_1_2_7_5_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/1534765612441975"
+            "DOI": "10.1175/1520-0493(1987)115<1083:CSAPOL>2.0.CO;2"
         },
         {
-            "key": "e_1_3_3_5_1",
+            "key": "e_1_2_7_6_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1037/ort0000321"
+            "DOI": "10.1890/04-1114"
         },
         {
-            "key": "e_1_3_3_6_1",
+            "key": "e_1_2_7_7_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/1360200032000139938"
+            "DOI": "10.1175/2009MWR3135.1"
         },
         {
-            "key": "e_1_3_3_7_1",
+            "key": "e_1_2_7_8_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.5406/womgenfamcol.5.1.0073"
+            "DOI": "10.1655/03-50"
         },
         {
-            "key": "e_1_3_3_8_1",
+            "key": "e_1_2_7_9_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0891243220932156"
+            "DOI": "10.1175/1520-0450(1972)011<0283:TLSMOS>2.0.CO;2"
         },
         {
-            "key": "e_1_3_3_9_1",
-            "volume-title": "Islamophobia",
-            "author": "Allen C",
-            "year": "2010",
-            "unstructured": "Allen, C. (2010). Islamophobia. Farnham, UK: Ashgate."
-        },
-        {
-            "key": "e_1_3_3_10_1",
-            "unstructured": "American Civil Liberties Union Washington. (2020). Timeline of the Muslim ban. American Civil Liberties Union Washington Accessed 6 January 2021. Retrieved from https://www.aclu-wa.org/pages/timeline-muslim-ban"
-        },
-        {
-            "key": "e_1_3_3_11_1",
+            "key": "e_1_2_7_10_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.3998/jmmh.10381607.0007.104"
+            "DOI": "10.1002/joc.1334"
         },
         {
-            "key": "e_1_3_3_12_1",
+            "key": "e_1_2_7_11_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.avb.2016.02.001"
+            "DOI": "10.1002/joc.711"
         },
         {
-            "key": "e_1_3_3_13_1",
+            "key": "e_1_2_7_12_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0146167217752118"
+            "DOI": "10.1046/j.1365-2427.2003.01093.x"
         },
         {
-            "key": "e_1_3_3_14_1",
+            "key": "e_1_2_7_13_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0269758012446983"
+            "DOI": "10.1002/2016GL071206"
         },
         {
-            "key": "e_1_3_3_15_1",
+            "key": "e_1_2_7_14_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/asap.12143"
+            "DOI": "10.5194/acp-15-2749-2015"
         },
         {
-            "issue": "8",
-            "key": "e_1_3_3_16_1",
-            "first-page": "139",
-            "article-title": "Demarginalizing the intersection of race and sex: A black feminist critique of antidiscrimination doctrine, feminist theory and antiracist politics",
-            "author": "Crenshaw K",
-            "year": "1989",
-            "unstructured": "Crenshaw, K. (1989). Demarginalizing the intersection of race and sex: A black feminist critique of antidiscrimination doctrine, feminist theory and antiracist politics. University of Chicago Legal Forum, Issue 1, (article 8), 139\u2013167. Accessed 1 August 2021. Retrieved from http://chicagounbound.uchicago.edu/uclf/vol1989/iss1/8",
-            "journal-title": "University of Chicago Legal Forum, Issue 1"
-        },
-        {
-            "key": "e_1_3_3_17_1",
+            "key": "e_1_2_7_15_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/1468796807084017"
+            "DOI": "10.1002/2015GL063839"
         },
         {
-            "key": "e_1_3_3_18_1",
+            "key": "e_1_2_7_16_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1525/california/9780520235946.003.0003"
+            "DOI": "10.1002/qj.828"
         },
         {
-            "key": "e_1_3_3_19_1",
-            "unstructured": "Federal Bureau of Investigation. (n.d.). Hate crimes statistics. Federal Bureau of Investigation . Accessed 14 April 2020. Retrieved from https://www.fbi.gov/services/cjis/ucr/hate-crime"
-        },
-        {
-            "key": "e_1_3_3_20_1",
+            "key": "e_1_2_7_17_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1037/sgd0000440"
+            "DOI": "10.1002/2016JD024783"
         },
         {
-            "key": "e_1_3_3_21_1",
+            "key": "e_1_2_7_18_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00313220903109185"
+            "DOI": "10.1175/2010JCLI3496.1"
         },
         {
-            "key": "e_1_3_3_22_1",
+            "key": "e_1_2_7_19_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0018726712469540"
+            "DOI": "10.1175/BAMS-85-3-353"
         },
         {
-            "key": "e_1_3_3_23_1",
-            "unstructured": "Githens-Mazer J. & Lambert R. (2010). Islamophobia and anti-Muslim hate crime: A London case study . Accessed 27 March 2020. Retrieved from https://lemosandcrane.co.uk/resources/Islamophobia_and_Anti-Muslim_Hate_Crime.pdf"
-        },
-        {
-            "key": "e_1_3_3_24_1",
-            "volume-title": "Pedagogies of de-veiling: Muslim girls and the hijab discourse",
-            "author": "Hamzeh M",
-            "year": "2012",
-            "unstructured": "Hamzeh, M. (2012). Pedagogies of de-veiling: Muslim girls and the hijab discourse. Charlotte, NC: Information Age Publishing."
-        },
-        {
-            "key": "e_1_3_3_25_1",
+            "key": "e_1_2_7_20_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/jmft.12339"
+            "DOI": "10.1029/2007GC001774"
         },
         {
-            "key": "e_1_3_3_26_1",
+            "key": "e_1_2_7_21_1",
+            "unstructured": "G\u00e1lvez J. M. &Davison M.(2014a).G\u00e1lvez\u2010Davison Index calculation accessed 2 April 2017. Retrieved from:http://www.wpc.ncep.noaa.gov/international/gdi/GDI_Calculation_Algorithm_20140702.pdf"
+        },
+        {
+            "key": "e_1_2_7_22_1",
+            "unstructured": "G\u00e1lvez J. M. &Davison M.(2014b).The G\u00e1lvez\u2010Davison index for tropical convection. 26th Conf. on Weather Analysis and Forecasting Atlanta GA 2\u20136 February."
+        },
+        {
+            "key": "e_1_2_7_23_1",
+            "unstructured": "G\u00e1lvez J. M. &Davison M.(2016).The G\u00e1lvez\u2010Davison Index for tropical convection accessed 10 July 2017. Retrieved from:http://www.wpc.ncep.noaa.gov/international/gdi/GDI_Manuscript_V20161021.pdf"
+        },
+        {
+            "key": "e_1_2_7_24_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00049182.2016.1191133"
+            "DOI": "10.1111/gec3.12125"
         },
         {
-            "key": "e_1_3_3_27_1",
+            "key": "e_1_2_7_25_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/09589236.2016.1243047"
+            "DOI": "10.1002/joc.1600"
         },
         {
-            "key": "e_1_3_3_28_1",
-            "unstructured": "Kishi K. (2017 November 15). Assaults against Muslims in U.S. surpass 2001 level. Pew Research Center . Accessed 3 April 2020. Retrieved from https://www.pewresearch.org/fact-tank/2017/11/15/assaults-against-muslims-in-u-s-surpass-2001-level/"
-        },
-        {
-            "key": "e_1_3_3_29_1",
-            "unstructured": "Levin B. (2016 September 16). Special status report: Hate crimes in the United States. Center for the Study of Hate & Extremism University of California-San Bernardino . Accessed 30 May 2020. Retrieved from https://www.documentcloud.org/documents/3110202-SPECIAL-STATUS-REPORT-v5-9-16-16.html"
-        },
-        {
-            "key": "e_1_3_3_30_1",
+            "key": "e_1_2_7_26_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0963721418770442"
+            "DOI": "10.1175/1520-0442(2001)014<4530:TETTTT>2.0.CO;2"
         },
         {
-            "key": "e_1_3_3_31_1",
-            "unstructured": "Lichtblau E. (2016 September 18 Accessed 20 April 2020). Hate crimes against American Muslims most since post-9/11 era. New York Times . Retrieved from https://www.nytimes.com/2016/09/18/us/politics/hate-crimes-american-muslims-rise.html"
-        },
-        {
-            "key": "e_1_3_3_32_1",
-            "unstructured": "Lipka M. (2017 August 9). Muslims and Islam: Key findings in the U.S. and around the world. Pew Research Center . Accessed 15 April 2020. Retrieved from https://www.pewresearch.org/fact-tank/2017/08/09/muslims-and-islam-key-findings-in-the-u-s-and-around-the-world/"
-        },
-        {
-            "key": "e_1_3_3_33_1",
+            "key": "e_1_2_7_27_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1146/annurev.psych.56.091103.070137"
+            "DOI": "10.1175/1520-0442(2000)013<0297:IVOCRE>2.0.CO;2"
         },
         {
-            "key": "e_1_3_3_34_1",
+            "key": "e_1_2_7_28_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0022-0167.51.4.418"
+            "DOI": "10.1016/S1364-8152(03)00114-2"
         },
         {
-            "key": "e_1_3_3_35_1",
-            "unstructured": "Muslim Public Affairs Council. (2018 December 8). The Muslims ban: One year later. Muslim Public Affairs Council . Accessed 29 December 2020. Retrieved from https://www.mpac.org/blog/policy-analysis/one-year-later-the-muslim-ban.php?gclid=CjwKCAjw4871BRAjEiwAbxXi23aEe1ACW6VB07NUS93-TcpsV6BTHjsZbHVNwenIEgK5LgQwiJ4uhRoCy18QAvD_BwE"
-        },
-        {
-            "key": "e_1_3_3_36_1",
-            "unstructured": "New America. (2018). Anti-Muslim activities in the United States 2012\u20132018: Violence threats and discrimination at the local level. New America . Accessed 28 December 2020. Retrieved from https://www.newamerica.org/in-depth/anti-muslim-activity/"
-        },
-        {
-            "key": "e_1_3_3_37_1",
+            "key": "e_1_2_7_29_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/13504630.2013.864467"
+            "DOI": "10.1002/2015GL065002"
         },
         {
-            "key": "e_1_3_3_38_1",
-            "unstructured": "Rashid Q. (2018 September 28). Anyone who says that Quran advocates terrorism hasn\u2019t read its lessons on violence. GVwire . Accessed 23 March 2021. Retrieved from https://gvwire.com/2018/09/28/anyone-who-says-the-quran-advocates-terrorism-hasnt-read-its-lessons-on-violence/"
-        },
-        {
-            "key": "e_1_3_3_39_1",
+            "key": "e_1_2_7_30_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/089124300014003003"
+            "DOI": "10.1016/S0012-8252(01)00067-8"
         },
         {
-            "key": "e_1_3_3_41_1",
-            "unstructured": "Sides J. & Mogahed D. (2018). Muslims in America: Public perceptions in the Trump Era. Voter Study Group . Accessed 4 January 2021. Retrieved from https://www.voterstudygroup.org/publication/muslims-in-america"
-        },
-        {
-            "key": "e_1_3_3_42_1",
+            "key": "e_1_2_7_31_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10888690701454658"
+            "DOI": "10.1175/JCLI-D-11-00269.1"
         },
         {
-            "key": "e_1_3_3_43_1",
+            "key": "e_1_2_7_32_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/09627250208553447"
+            "DOI": "10.5194/acp-13-1521-2013"
         },
         {
-            "key": "e_1_3_3_44_1",
+            "key": "e_1_2_7_33_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/gwao.12256"
+            "DOI": "10.1007/BF02243853"
         },
         {
-            "key": "e_1_3_3_45_1",
+            "key": "e_1_2_7_34_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0964663907076527"
+            "DOI": "10.1016/j.jhydrol.2006.09.019"
         },
         {
-            "key": "e_1_3_3_46_1",
+            "key": "e_1_2_7_35_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s11199-018-0989-2"
+            "DOI": "10.1002/joc.4490"
+        },
+        {
+            "key": "e_1_2_7_36_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1029/2009JD012516"
+        },
+        {
+            "key": "e_1_2_7_37_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5194/acp-11-7781-2011"
+        },
+        {
+            "key": "e_1_2_7_38_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5194/acp-13-4073-2013"
+        },
+        {
+            "key": "e_1_2_7_39_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1029/2006JD007541"
+        },
+        {
+            "key": "e_1_2_7_40_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s00704-011-0462-4"
+        },
+        {
+            "key": "e_1_2_7_41_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1029/2010JD015107"
+        },
+        {
+            "key": "e_1_2_7_42_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1029/2009JD013612"
+        },
+        {
+            "key": "e_1_2_7_43_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/S0187-6236(13)71076-2"
+        },
+        {
+            "key": "e_1_2_7_44_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1088/1748-9326/4/1/015004"
+        },
+        {
+            "key": "e_1_2_7_45_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/02723646.2000.10642723"
+        },
+        {
+            "key": "e_1_2_7_46_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1175/1520-0493(1983)111<0046:SFSAID>2.0.CO;2"
+        },
+        {
+            "issue": "6",
+            "key": "e_1_2_7_47_1",
+            "doi-asserted-by": "crossref",
+            "first-page": "1577",
+            "DOI": "10.1175/1520-0442(1999)012<1577:TMDOMA>2.0.CO;2",
+            "article-title": "The midsummer drought over Mexico and Central America",
+            "volume": "12",
+            "author": "Magan\u00e3 V.",
+            "year": "1999",
+            "journal-title": "Journal of Climate"
+        },
+        {
+            "key": "e_1_2_7_48_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1175/1520-0442(1998)011<2713:ENOSOA>2.0.CO;2"
+        },
+        {
+            "key": "e_1_2_7_49_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/2017GL074478"
+        },
+        {
+            "key": "e_1_2_7_50_1",
+            "unstructured": "National Drought Mitigation Center(2016).U.S. Drought Monitor map archive accessed 21 August 2016. Retrieved from:http://droughtmonitor.unl.edu/MapsAndData/MapArchive.aspx"
+        },
+        {
+            "key": "e_1_2_7_51_1",
+            "unstructured": "NOAA National Centers for Environmental Information(2015). State of the climate: Drought for July 2015. accessed 2 April 2017. Retrieved from:http://www.ncdc.noaa.gov/sotc/drought/201507"
+        },
+        {
+            "key": "e_1_2_7_52_1",
+            "unstructured": "NOAA Weather Prediction Center(2016).Experimental G\u00e1lvez\u2010Davison Index (GDI) accessed 2 April 2017. Retrieved from:http://www.wpc.ncep.noaa.gov/international/gdi/"
+        },
+        {
+            "key": "e_1_2_7_53_1",
+            "unstructured": "Pasch R. J. &Penny A. B.(2016).Danny (AL052015) National Hurricane Center Tropical Cyclone Report 18 NOAA National Hurricane Center."
+        },
+        {
+            "key": "e_1_2_7_54_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1038/ngeo2624"
+        },
+        {
+            "key": "e_1_2_7_55_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1029/2004JD004748"
+        },
+        {
+            "key": "e_1_2_7_56_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1029/2000RG000095"
+        },
+        {
+            "key": "e_1_2_7_57_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1175/BAMS-D-12-00142.1"
+        },
+        {
+            "key": "e_1_2_7_58_1",
+            "unstructured": "Ramage C. S.(1995).Forecasters guide to tropical meteorology. Updated. Tech. Rept. AWS/TR\u201095/001 Air Weather Service Scott AFB IL 492."
+        },
+        {
+            "key": "e_1_2_7_59_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/01431168908903915"
+        },
+        {
+            "key": "e_1_2_7_60_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1029/2002JD002493"
+        },
+        {
+            "key": "e_1_2_7_61_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1175/1520-0493(1987)115<1606:GARSPP>2.0.CO;2"
+        },
+        {
+            "key": "e_1_2_7_62_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1175/1520-0442(1996)009<1043:QSOPR>2.0.CO;2"
+        },
+        {
+            "key": "e_1_2_7_63_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1073/pnas.101122798"
+        },
+        {
+            "key": "e_1_2_7_64_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1029/GM089p0103"
+        },
+        {
+            "key": "e_1_2_7_65_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.rse.2012.03.019"
+        },
+        {
+            "key": "e_1_2_7_66_1",
+            "unstructured": "Stewart S. R.(2016).Hurricane Danny (AL042015) National Hurricane Center Tropical Cyclone Report 18 NOAA National Hurricane Center."
+        },
+        {
+            "key": "e_1_2_7_67_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1029/2001JC001097"
+        },
+        {
+            "key": "e_1_2_7_68_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1029/2010JD015580"
+        },
+        {
+            "key": "e_1_2_7_69_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/S0022-1694(96)03128-9"
+        },
+        {
+            "key": "e_1_2_7_70_1",
+            "unstructured": "Thornton P. E. Thornton M. M. Mayer B. W. Wei Y. Devarakonda R. Vose R. S. &Cook R. B.(2017).Daymet: Daily surface weather data on a 1\u2010km grid for North America version 3 ORNL DAAC Oak Ridge TN."
+        },
+        {
+            "key": "e_1_2_7_71_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1029/2007JD008809"
+        },
+        {
+            "key": "e_1_2_7_72_1",
+            "unstructured": "U.S. Department of Agriculture (USDA)(2015).Historic drought in Puerto Rico affecting 2.7 million people. accessed 21 August 2016. Retrieved fromhttp://www.climatehubs.oce.usda.gov/content/historic\u2010drought\u2010puerto\u2010rico\u2010affecting\u20102\u20107\u2010million\u2010people"
+        },
+        {
+            "key": "e_1_2_7_73_1",
+            "unstructured": "U.S. Geological Survey (USGS)(2016).Hydrologic conditions of selected reservoirs in Puerto Rico accessed 21 August 2016. Retrieved fromhttp://pr.water.usgs.gov/drought/hydro_conditions_selected_sites.html"
+        },
+        {
+            "key": "e_1_2_7_74_1",
+            "unstructured": "USGS(2016).Water watch accessed 21 August 2016. Retrieved from:http://waterwatch.usgs.gov/"
+        },
+        {
+            "key": "e_1_2_7_75_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1175/EI-D-14-0023.1"
+        },
+        {
+            "key": "e_1_2_7_76_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1029/2004GL022295"
+        },
+        {
+            "key": "e_1_2_7_77_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1029/2007GL032297"
+        },
+        {
+            "key": "e_1_2_7_78_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s00382-010-0927-7"
+        },
+        {
+            "key": "e_1_2_7_79_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1175/1520-0477(1997)078<2539:GPAYMA>2.0.CO;2"
         }
     ],
     "container-title": [
-        "Journal of Gender Studies"
+        "Journal of Geophysical Research: Atmospheres"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/09589236.2021.2016382",
+            "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2F2017JD026911",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1002/2017JD026911",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -351,111 +529,69 @@
         "date-parts": [
             [
                 2023,
-                10,
+                9,
                 17
             ]
         ],
-        "date-time": "2023-10-17T08:17:45Z",
-        "timestamp": 1697530665000
+        "date-time": "2023-09-17T03:12:25Z",
+        "timestamp": 1694920345000
     },
-    "score": 17.253069,
+    "score": 14.257556,
     "resource": {
         "primary": {
-            "URL": "https://www.tandfonline.com/doi/full/10.1080/09589236.2021.2016382"
+            "URL": "https://agupubs.onlinelibrary.wiley.com/doi/10.1002/2017JD026911"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2021,
-                12,
-                26
+                2017,
+                10,
+                27
             ]
         ]
     },
-    "references-count": 44,
+    "references-count": 78,
     "journal-issue": {
-        "issue": "7",
+        "issue": "20",
         "published-print": {
             "date-parts": [
                 [
-                    2023,
+                    2017,
                     10,
-                    3
+                    27
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1080/09589236.2021.2016382"
+        "10.1002/2017JD026911"
     ],
-    "URL": "http://dx.doi.org/10.1080/09589236.2021.2016382",
+    "URL": "http://dx.doi.org/10.1002/2017jd026911",
+    "archive": [
+        "Portico"
+    ],
     "ISSN": [
-        "0958-9236",
-        "1465-3869"
+        "2169-897X",
+        "2169-8996"
     ],
     "issn-type": [
         {
-            "value": "0958-9236",
+            "value": "2169-897X",
             "type": "print"
         },
         {
-            "value": "1465-3869",
+            "value": "2169-8996",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2021,
-                12,
-                26
+                2017,
+                10,
+                27
             ]
         ]
-    },
-    "assertion": [
-        {
-            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
-            "order": 1,
-            "name": "peerreview_statement",
-            "label": "Peer Review Statement"
-        },
-        {
-            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=cjgs20",
-            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=cjgs20",
-            "order": 2,
-            "name": "aims_and_scope_url",
-            "label": "Aim & Scope"
-        },
-        {
-            "value": "2021-04-10",
-            "order": 0,
-            "name": "received",
-            "label": "Received",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2021-12-06",
-            "order": 1,
-            "name": "accepted",
-            "label": "Accepted",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2021-12-26",
-            "order": 2,
-            "name": "published",
-            "label": "Published",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        }
-    ]
+    }
 }

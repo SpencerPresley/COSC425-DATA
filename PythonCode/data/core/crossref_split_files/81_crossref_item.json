@@ -3,407 +3,548 @@
         "date-parts": [
             [
                 2024,
-                1,
-                4
+                9,
+                1
             ]
         ],
-        "date-time": "2024-01-04T02:23:52Z",
-        "timestamp": 1704335032124
+        "date-time": "2024-09-01T19:44:45Z",
+        "timestamp": 1725219885758
     },
-    "reference-count": 51,
-    "publisher": "Informa UK Limited",
-    "issue": "6",
+    "reference-count": 74,
+    "publisher": "Wiley",
+    "issue": "3",
+    "license": [
+        {
+            "start": {
+                "date-parts": [
+                    [
+                        2018,
+                        4,
+                        27
+                    ]
+                ],
+                "date-time": "2018-04-27T00:00:00Z",
+                "timestamp": 1524787200000
+            },
+            "content-version": "vor",
+            "delay-in-days": 0,
+            "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+        }
+    ],
     "content-domain": {
         "domain": [
-            "www.tandfonline.com"
+            "onlinelibrary.wiley.com"
         ],
         "crossmark-restriction": true
     },
     "short-container-title": [
-        "Business History"
+        "Can J Adm Sci"
     ],
     "published-print": {
         "date-parts": [
             [
-                2018,
-                8,
-                18
+                2019,
+                9
             ]
         ]
     },
-    "DOI": "10.1080/00076791.2017.1346612",
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>This study explores the factor structure of job performance and each performance dimension's relative importance in determining supervisors' overall job performance ratings. We found that the optimal factor structure of job performance includes five dimensions: task performance, organizational citizenship behaviour directed toward the organization and individuals (OCB\u2010O and OCB\u2010I, respectively), and counterproductive work behaviour directed toward the organization and individuals (CWB\u2010O and CWB\u2010I, respectively). The percent\u2010based relative weight (%RW) is the highest for task performance in determining job performance, followed by OCB and CWB. Interestingly, the %RW of non\u2010task performance dimensions directed toward the organization (OCB\u2010O and CWB\u2010O) is similar to the %RW of task performance but greater than the %RW of non\u2010task performance dimensions directed toward individuals (OCB\u2010I and CWB\u2010I). Copyright \u00a9 2018 ASAC. Published by John Wiley &amp; Sons, Ltd.</jats:p>",
+    "DOI": "10.1002/cjas.1495",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2017,
-                7,
-                17
+                2018,
+                4,
+                27
             ]
         ],
-        "date-time": "2017-07-17T07:45:40Z",
-        "timestamp": 1500277540000
+        "date-time": "2018-04-27T07:25:51Z",
+        "timestamp": 1524813951000
     },
-    "page": "859-883",
-    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
+    "page": "377-389",
+    "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 6,
+    "is-referenced-by-count": 11,
     "title": [
-        "A moving target: The geographic evolution of Silicon Valley, 1953\u20131990"
+        "Relative Importance of Major Job Performance Dimensions in Determining Supervisors' Overall Job Performance Ratings"
     ],
-    "prefix": "10.1080",
-    "volume": "60",
+    "prefix": "10.1002",
+    "volume": "36",
     "author": [
         {
-            "given": "Stephen B.",
-            "family": "Adams",
+            "given": "Jae Young",
+            "family": "Choi",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Department of Management and Marketing, Salisbury University, Salisbury, MD, USA"
+                    "name": "Drexel University"
                 }
             ]
         },
         {
-            "given": "Dustin",
-            "family": "Chambers",
+            "given": "Chao",
+            "family": "Miao",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Department of Economics and Finance, Salisbury University, Salisbury, MD, USA"
+                    "name": "Salisbury University"
                 }
             ]
         },
         {
-            "given": "Michael",
-            "family": "Schultz",
+            "given": "In\u2010Sue",
+            "family": "Oh",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "CDM Smith, Inc., Dallas, TX, USA"
+                    "name": "Temple University"
+                }
+            ]
+        },
+        {
+            "given": "Christopher M.",
+            "family": "Berry",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Indiana University"
+                }
+            ]
+        },
+        {
+            "given": "Kwanghyun",
+            "family": "Kim",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Korea University Business School"
                 }
             ]
         }
     ],
-    "member": "301",
+    "member": "311",
     "published-online": {
         "date-parts": [
             [
-                2017,
-                7,
-                17
+                2018,
+                4,
+                27
             ]
         ]
     },
     "reference": [
         {
-            "key": "CIT0001",
+            "key": "e_1_2_7_2_1",
+            "volume-title": "Performance management",
+            "author": "Aguinis H.",
+            "year": "2012"
+        },
+        {
+            "key": "e_1_2_7_3_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2307/41166326"
+            "DOI": "10.1037/0021-9010.91.1.193"
         },
         {
-            "key": "CIT0002",
+            "key": "e_1_2_7_4_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.respol.2010.12.002"
+            "DOI": "10.1037/0021-9010.85.3.349"
         },
         {
-            "key": "CIT0006",
+            "key": "e_1_2_7_5_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1017/S0007680517000630"
+            "DOI": "10.1037/a0026739"
         },
         {
-            "key": "CIT0007",
-            "unstructured": "Alpers, M. L. \u201cValley of Heart\u2019s Delight: Orchards to Hard Drives in theSan Jose Mercury News,\u201d Masters Theses. Paper 3743, 2010."
-        },
-        {
-            "key": "CIT0008",
+            "key": "e_1_2_7_6_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00343404.2011.633253"
+            "DOI": "10.1037/0021-9010.92.2.410"
         },
         {
-            "key": "CIT0010",
+            "key": "e_1_2_7_7_1",
+            "volume-title": "Exchange and power in social life",
+            "author": "Blau P. M.",
+            "year": "1964"
+        },
+        {
+            "key": "e_1_2_7_8_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1093/icc/10.4.835"
+            "DOI": "10.1007/BF01143148"
         },
         {
-            "key": "CIT0011",
+            "key": "e_1_2_7_9_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2307/3106374"
+            "DOI": "10.1037/0021-9010.80.1.168"
         },
         {
-            "key": "CIT0012",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/icc/10.4.945"
-        },
-        {
-            "key": "CIT0013",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.4324/9780203445402"
-        },
-        {
-            "key": "CIT0014",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/0883-9026(85)90008-4"
-        },
-        {
-            "key": "CIT0015",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/icc/6.2.203"
-        },
-        {
-            "key": "CIT0016",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1468-2257.2011.00576.x"
-        },
-        {
-            "key": "CIT0017",
-            "volume-title": "Metalworking Directory",
-            "author": "Dun &amp; Bradstreet",
-            "year": "1960"
-        },
-        {
-            "key": "CIT0018",
-            "volume-title": "Metalworking Directory",
-            "author": "Dun &amp; Bradstreet",
-            "year": "1970"
-        },
-        {
-            "key": "CIT0019",
-            "volume-title": "Metalworking Directory",
-            "author": "Dun &amp; Bradstreet",
+            "key": "e_1_2_7_10_1",
+            "first-page": "398",
+            "volume-title": "Handbook of cross\u2010cultural psychology",
+            "author": "Brislin R. W.",
             "year": "1980"
         },
         {
-            "key": "CIT0020",
-            "volume-title": "Metalworking Directory",
-            "author": "Dun &amp; Bradstreet",
-            "year": "1990"
-        },
-        {
-            "key": "CIT0021",
-            "volume-title": "Magic Lands: Western Cityscapes and American Culture after 1940",
-            "author": "Findlay J.",
-            "year": "1993"
-        },
-        {
-            "key": "CIT0022",
-            "volume-title": "Inventors and Their Inventions",
-            "author": "Flehr P. D.",
-            "year": "1990"
-        },
-        {
-            "key": "CIT0023",
-            "doi-asserted-by": "crossref",
-            "volume-title": "Fred Terman at Stanford: Building a Discipline, a University, and Silicon Valley",
-            "author": "Gillmor C. S.",
-            "year": "2004",
-            "DOI": "10.1515/9781503624535"
-        },
-        {
-            "key": "CIT0024",
-            "volume-title": "The New Alchemists: Silicon Valley and the Microelectronics Revolution",
-            "author": "Hanson D.",
-            "year": "1982"
-        },
-        {
-            "key": "CIT0025",
-            "volume-title": "Engineering the Future: A History of the San Jose State University College of Engineering",
-            "author": "Hasegawa S.",
-            "year": "1992"
-        },
-        {
-            "key": "CIT0026",
-            "volume-title": "Crabgrass Frontier: The Suburbanization of the United States",
-            "author": "Jackson K. T.",
-            "year": "1985"
-        },
-        {
-            "key": "CIT0027",
-            "doi-asserted-by": "crossref",
-            "first-page": "98",
-            "DOI": "10.1515/9781503618381-008",
-            "volume-title": "Understanding Silicon Valley: The Anatomy of an Entrepreneurial Region",
-            "author": "Kenney M.",
-            "year": "2000"
-        },
-        {
-            "key": "CIT0028",
-            "doi-asserted-by": "crossref",
-            "first-page": "218",
-            "DOI": "10.1515/9781503618381-013",
-            "volume-title": "Understanding Silicon Valley: The Anatomy of an Entrepreneurial Region",
-            "author": "Kenney M.",
-            "year": "2000"
-        },
-        {
-            "key": "CIT0029",
+            "key": "e_1_2_7_11_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1017/CBO9780511805950"
+            "DOI": "10.1037/0033-2909.114.3.542"
         },
         {
-            "key": "CIT0030",
-            "volume-title": "Making Silicon Valley: Innovation and the Growth of High Tech, 1930\u20131970",
-            "author": "L\u00e9cuyer C.",
-            "year": "2007"
-        },
-        {
-            "key": "CIT0031",
+            "key": "e_1_2_7_12_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/713693559"
+            "DOI": "10.1111/j.1744-6570.1990.tb01561.x"
         },
         {
-            "key": "CIT0033",
-            "volume-title": "The Big Score: The Billion Dollar Story of Silicon Valley",
-            "author": "Malone M.",
-            "year": "1985"
-        },
-        {
-            "key": "CIT0034",
-            "volume-title": "Silicon Valley, Women, and the California Dream: Gender, Class, and Opportunity in the Twentieth Century",
-            "author": "Matthews G.",
-            "year": "2003"
-        },
-        {
-            "key": "CIT0035",
-            "volume-title": "California: The Great Exception",
-            "author": "McWilliams C.",
-            "year": "1976"
-        },
-        {
-            "issue": "4",
-            "key": "CIT0036",
-            "first-page": "114",
-            "volume": "63",
-            "author": "Miller R.",
-            "year": "1985",
-            "journal-title": "Harvard Business Review"
-        },
-        {
-            "key": "CIT0037",
+            "key": "e_1_2_7_13_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1109/PROC.1976.10321"
+            "DOI": "10.1016/0376-7388(93)85245-R"
         },
         {
-            "key": "CIT0038",
+            "key": "e_1_2_7_14_1",
+            "volume-title": "Performance management: Concepts, skills, and exercises",
+            "author": "Cardy R. L.",
+            "year": "2011"
+        },
+        {
+            "key": "e_1_2_7_15_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1515/9781400866885"
+            "DOI": "10.1002/job.1909"
         },
         {
-            "key": "CIT0039",
-            "volume-title": "Geographic Information Analysis",
-            "author": "O\u2019Sullivan D.",
-            "year": "2003"
-        },
-        {
-            "issue": "3",
-            "key": "CIT0040",
-            "first-page": "86",
-            "volume": "62",
-            "author": "Olmstead A. L.",
-            "year": "1988",
-            "journal-title": "Agricultural History"
-        },
-        {
-            "key": "CIT0041",
+            "key": "e_1_2_7_16_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1007/978-1-349-14865-3"
+            "DOI": "10.1037/a0024004"
         },
         {
-            "key": "CIT0042",
-            "volume-title": "A History of Silicon Valley",
-            "author": "Rao A.",
-            "year": "2010"
+            "key": "e_1_2_7_17_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.hrmr.2016.09.006"
         },
         {
-            "key": "CIT0043",
-            "volume-title": "Silicon Valley Fever: Growth of High-Technology Culture",
-            "author": "Rogers E.",
+            "key": "e_1_2_7_18_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/1069397107302090"
+        },
+        {
+            "key": "e_1_2_7_19_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/S1053-4822(99)00037-6"
+        },
+        {
+            "key": "e_1_2_7_20_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/a0031757"
+        },
+        {
+            "key": "e_1_2_7_21_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/0021-9010.84.1.3"
+        },
+        {
+            "key": "e_1_2_7_22_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0149206305279602"
+        },
+        {
+            "key": "e_1_2_7_23_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/0021-9010.90.6.1241"
+        },
+        {
+            "key": "e_1_2_7_24_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5465/AMJ.2009.44636148"
+        },
+        {
+            "key": "e_1_2_7_25_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0022022100031002007"
+        },
+        {
+            "key": "e_1_2_7_26_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/h0025471"
+        },
+        {
+            "key": "e_1_2_7_27_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/hrm.20278"
+        },
+        {
+            "key": "e_1_2_7_28_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/1745691610393521"
+        },
+        {
+            "key": "e_1_2_7_29_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/a0037547"
+        },
+        {
+            "key": "e_1_2_7_30_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/2092623"
+        },
+        {
+            "key": "e_1_2_7_31_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/256352"
+        },
+        {
+            "key": "e_1_2_7_32_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/job.621"
+        },
+        {
+            "key": "e_1_2_7_33_1",
+            "volume-title": "Culture's consequences: International differences in work\u2010related values",
+            "author": "Hofstede G.",
             "year": "1984"
         },
         {
-            "key": "CIT0044",
+            "key": "e_1_2_7_34_1",
+            "volume-title": "Culture's consequences: Comparing values, behaviors, institutions and organizations across nations",
+            "author": "Hofstede G. H.",
+            "year": "2001"
+        },
+        {
+            "key": "e_1_2_7_35_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/03085148900000002"
+            "DOI": "10.1080/08959285.1998.9668028"
         },
         {
-            "key": "CIT0045",
-            "doi-asserted-by": "crossref",
-            "volume-title": "Regional Advantage",
-            "author": "Saxenian A.",
-            "year": "1996",
-            "DOI": "10.2307/j.ctvjnrsqh"
-        },
-        {
-            "key": "CIT0046",
-            "volume-title": "Regions and the World Economy: The Coming Shape of Global Production, Competition, and Political Order",
-            "author": "Scott A. J.",
-            "year": "1998"
-        },
-        {
-            "key": "CIT0047",
+            "key": "e_1_2_7_36_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1093/cje/24.4.483"
+            "DOI": "10.1007/BF00881438"
         },
         {
-            "key": "CIT0048",
+            "key": "e_1_2_7_37_1",
+            "volume-title": "Culture, leadership, and organizations: The GLOBE study of 62 societies",
+            "author": "House R. J.",
+            "year": "2004"
+        },
+        {
+            "key": "e_1_2_7_38_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1093/jeg/lbn052"
+            "DOI": "10.1037/a0013329"
         },
         {
-            "key": "CIT0049",
-            "volume-title": "The Capitalist Imperative",
-            "author": "Storper M.",
-            "year": "1989"
-        },
-        {
-            "key": "CIT0050",
+            "key": "e_1_2_7_39_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.11126/stanford/9780804789400.001.0001"
+            "DOI": "10.1207/S15327906MBR3501_1"
         },
         {
-            "key": "CIT0051",
-            "first-page": "15",
-            "volume-title": "Understanding Silicon Valley: The Anatomy of an Entrepreneurial Region",
-            "author": "Sturgeon T. J.",
-            "year": "2000"
-        },
-        {
-            "key": "CIT0052",
-            "first-page": "71",
-            "volume-title": "Understanding Silicon Valley: The Anatomy of an Entrepreneurial Region",
-            "author": "Suchman M. C.",
-            "year": "2000"
-        },
-        {
-            "key": "CIT0053",
-            "volume-title": "From the Valley of Heart\u2019s Delight to Silicon Valley: A Study of Stanford University\u2019s Role in the Transition",
-            "author": "Tajnai C.",
-            "year": "1996"
-        },
-        {
-            "key": "CIT0055",
+            "key": "e_1_2_7_40_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00343401003614258"
+            "DOI": "10.1037/0021-9010.86.5.984"
         },
         {
-            "key": "CIT0056",
+            "key": "e_1_2_7_41_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00343400802662658"
+            "DOI": "10.1177/1094428104266510"
         },
         {
-            "key": "CIT0057",
-            "volume-title": "Product List \u2013 Membership Roster",
-            "author": "WCEMA",
-            "year": "1953"
+            "key": "e_1_2_7_42_1",
+            "volume-title": "Principles and practice of structural equation modeling",
+            "author": "Kline R. B.",
+            "year": "2005"
+        },
+        {
+            "key": "e_1_2_7_43_1",
+            "first-page": "49",
+            "volume-title": "Performance measurement: Current perspectives and future measurement",
+            "author": "Lance C. E.",
+            "year": "2006"
+        },
+        {
+            "key": "e_1_2_7_44_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0149206307307635"
+        },
+        {
+            "key": "e_1_2_7_45_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/0021-9010.87.1.131"
+        },
+        {
+            "key": "e_1_2_7_46_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1348/096317907X182971"
+        },
+        {
+            "key": "e_1_2_7_47_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1207/S15328007SEM0902_1"
+        },
+        {
+            "key": "e_1_2_7_48_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5465/1556364"
+        },
+        {
+            "key": "e_1_2_7_49_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/256083"
+        },
+        {
+            "key": "e_1_2_7_50_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/0471264385.wei1203"
+        },
+        {
+            "key": "e_1_2_7_51_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/0021-9010.79.4.475"
+        },
+        {
+            "key": "e_1_2_7_52_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1207/s15327574ijt0502_4"
+        },
+        {
+            "key": "e_1_2_7_53_1",
+            "volume-title": "Understanding performance appraisal: Social, organizational, and goal\u2010based perspectives",
+            "author": "Murphy K. R.",
+            "year": "1995"
+        },
+        {
+            "key": "e_1_2_7_54_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/a0017221"
+        },
+        {
+            "key": "e_1_2_7_55_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/peps.12026"
+        },
+        {
+            "key": "e_1_2_7_56_1",
+            "volume-title": "OCB: The good soldier syndrome",
+            "author": "Organ D. W.",
+            "year": "1988"
+        },
+        {
+            "key": "e_1_2_7_57_1",
+            "first-page": "337",
+            "volume-title": "International review of industrial and organizational psychology",
+            "author": "Organ D. W.",
+            "year": "1999"
+        },
+        {
+            "key": "e_1_2_7_58_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/3152222"
+        },
+        {
+            "key": "e_1_2_7_59_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1207/S15327043HUP1601_3"
+        },
+        {
+            "key": "e_1_2_7_60_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/0021-9010.87.1.66"
+        },
+        {
+            "key": "e_1_2_7_61_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/S0749-5978(02)00036-5"
+        },
+        {
+            "key": "e_1_2_7_62_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.obhdp.2013.10.011"
+        },
+        {
+            "key": "e_1_2_7_63_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1146/annurev.psych.56.091103.070254"
+        },
+        {
+            "key": "e_1_2_7_64_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1207/s15327043hup1904_7"
+        },
+        {
+            "key": "e_1_2_7_65_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1744-6570.1971.tb00365.x"
+        },
+        {
+            "key": "e_1_2_7_66_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/a0019477"
+        },
+        {
+            "key": "e_1_2_7_67_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/256174"
+        },
+        {
+            "key": "e_1_2_7_68_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s10869-010-9204-3"
+        },
+        {
+            "key": "e_1_2_7_69_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s10869-014-9351-z"
+        },
+        {
+            "key": "e_1_2_7_70_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/a0017735"
+        },
+        {
+            "key": "e_1_2_7_71_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/S0148-2963(01)00217-X"
+        },
+        {
+            "key": "e_1_2_7_72_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/256600"
+        },
+        {
+            "key": "e_1_2_7_73_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/0021-9010.81.5.525"
+        },
+        {
+            "key": "e_1_2_7_74_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1108/13527601011086603"
+        },
+        {
+            "key": "e_1_2_7_75_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/014920639101700305"
         }
     ],
     "container-title": [
-        "Business History"
+        "Canadian Journal of Administrative Sciences / Revue Canadienne des Sciences de l'Administration"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/00076791.2017.1346612",
+            "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fcjas.1495",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/cjas.1495",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/cjas.1495",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/cjas.1495",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -412,91 +553,101 @@
     "deposited": {
         "date-parts": [
             [
-                2022,
-                7,
-                31
+                2023,
+                9,
+                9
             ]
         ],
-        "date-time": "2022-07-31T01:57:54Z",
-        "timestamp": 1659232674000
+        "date-time": "2023-09-09T22:11:48Z",
+        "timestamp": 1694297508000
     },
-    "score": 16.334589,
+    "score": 13.365341,
     "resource": {
         "primary": {
-            "URL": "https://www.tandfonline.com/doi/full/10.1080/00076791.2017.1346612"
+            "URL": "https://onlinelibrary.wiley.com/doi/10.1002/cjas.1495"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2017,
-                7,
-                17
+                2018,
+                4,
+                27
             ]
         ]
     },
-    "references-count": 51,
+    "references-count": 74,
     "journal-issue": {
-        "issue": "6",
-        "published-online": {
-            "date-parts": [
-                [
-                    2017,
-                    9,
-                    7
-                ]
-            ]
-        },
+        "issue": "3",
         "published-print": {
             "date-parts": [
                 [
-                    2018,
-                    8,
-                    18
+                    2019,
+                    9
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1080/00076791.2017.1346612"
+        "10.1002/cjas.1495"
     ],
-    "URL": "http://dx.doi.org/10.1080/00076791.2017.1346612",
+    "URL": "http://dx.doi.org/10.1002/cjas.1495",
+    "archive": [
+        "Portico"
+    ],
     "ISSN": [
-        "0007-6791",
-        "1743-7938"
+        "0825-0383",
+        "1936-4490"
     ],
     "issn-type": [
         {
-            "value": "0007-6791",
+            "value": "0825-0383",
             "type": "print"
         },
         {
-            "value": "1743-7938",
+            "value": "1936-4490",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2017,
-                7,
-                17
+                2018,
+                4,
+                27
             ]
         ]
     },
     "assertion": [
         {
-            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
-            "order": 1,
-            "name": "peerreview_statement",
-            "label": "Peer Review Statement"
+            "value": "2016-09-08",
+            "order": 0,
+            "name": "received",
+            "label": "Received",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
         },
         {
-            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=fbsh20",
-            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=fbsh20",
+            "value": "2018-01-14",
+            "order": 1,
+            "name": "accepted",
+            "label": "Accepted",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
+        },
+        {
+            "value": "2018-04-27",
             "order": 2,
-            "name": "aims_and_scope_url",
-            "label": "Aim & Scope"
+            "name": "published",
+            "label": "Published",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
         }
     ]
 }

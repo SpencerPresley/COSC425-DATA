@@ -3,27 +3,69 @@
         "date-parts": [
             [
                 2024,
-                4,
-                15
+                6,
+                11
             ]
         ],
-        "date-time": "2024-04-15T10:37:06Z",
-        "timestamp": 1713177426578
+        "date-time": "2024-06-11T07:48:35Z",
+        "timestamp": 1718092115252
     },
-    "reference-count": 76,
-    "publisher": "Informa UK Limited",
-    "issue": "6",
+    "reference-count": 71,
+    "publisher": "SAGE Publications",
+    "issue": "3",
+    "license": [
+        {
+            "start": {
+                "date-parts": [
+                    [
+                        2023,
+                        3,
+                        18
+                    ]
+                ],
+                "date-time": "2023-03-18T00:00:00Z",
+                "timestamp": 1679097600000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "http://journals.sagepub.com/page/policies/text-and-data-mining-license"
+        }
+    ],
     "funder": [
         {
-            "DOI": "10.13039/100010932",
-            "name": "Louisiana State University Shreveport",
+            "name": "Ohio University College of Business"
+        },
+        {
+            "DOI": "10.13039/100008294",
+            "name": "Louisiana State University",
             "doi-asserted-by": "publisher",
-            "award": [
-                "PG009145"
-            ],
             "id": [
                 {
-                    "id": "10.13039/100010932",
+                    "id": "10.13039/100008294",
+                    "id-type": "DOI",
+                    "asserted-by": "publisher"
+                }
+            ]
+        },
+        {
+            "DOI": "10.13039/100011190",
+            "name": "Salisbury University",
+            "doi-asserted-by": "publisher",
+            "id": [
+                {
+                    "id": "10.13039/100011190",
+                    "id-type": "DOI",
+                    "asserted-by": "publisher"
+                }
+            ]
+        },
+        {
+            "DOI": "10.13039/100008778",
+            "name": "Florida Atlantic University",
+            "doi-asserted-by": "publisher",
+            "id": [
+                {
+                    "id": "10.13039/100008778",
                     "id-type": "DOI",
                     "asserted-by": "publisher"
                 }
@@ -32,503 +74,480 @@
     ],
     "content-domain": {
         "domain": [
-            "www.tandfonline.com"
+            "journals.sagepub.com"
         ],
         "crossmark-restriction": true
     },
     "short-container-title": [
-        "Journal of Marketing Communications"
+        "Journal of Service Research"
     ],
     "published-print": {
         "date-parts": [
             [
                 2023,
-                8,
-                18
+                8
             ]
         ]
     },
-    "DOI": "10.1080/13527266.2022.2056230",
+    "abstract": "<jats:p> Recent disruptions, labor shortages, and fiscal pressures, especially in retail service environments, have necessitated and highlighted changes in the roles and responsibilities of frontline employees, often requiring them to enforce mask mandates and police customer deviant behavior (CDB). While extant work has investigated the impact of policing, or guardianship, for customers and firms, there has been limited examination regarding the policies themselves and the corresponding toll exacted upon frontline employees (FLEs) and their managers (FLMs). Thus, this phenomenon warranted an in-depth, multi-method investigation, including a full-scale qualitative exploration substantiated and extended via three experiments and a survey. The qualitative approach probes employees\u2019 feelings about and identifies categories of CDB in retail service settings as well as develops a novel typology of guardianship policies (policy type x approach style). The subsequent studies empirically test the CDB guardianship typology in the context of a particularly detrimental type of CDB\u2014shoplifting, while advancing understanding of firm-related (guardianship expectations), employee-related (trait anxiety) and job role-related (FLE vs FLM) contextual factors impacting perceptions of policy fairness and turnover intentions. The findings provide rich insights for practitioners and scholars by offering a novel guardianship typology and an extensive agenda for future research. </jats:p>",
+    "DOI": "10.1177/10946705231163881",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2022,
+                2023,
                 3,
-                23
+                18
             ]
         ],
-        "date-time": "2022-03-23T06:27:05Z",
-        "timestamp": 1648016825000
+        "date-time": "2023-03-18T07:30:10Z",
+        "timestamp": 1679124610000
     },
-    "page": "597-615",
-    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
+    "page": "422-440",
+    "update-policy": "http://dx.doi.org/10.1177/sage-journals-update-policy",
     "source": "Crossref",
-    "is-referenced-by-count": 1,
+    "is-referenced-by-count": 5,
     "title": [
-        "The effect of evidence in nonprofit donation requests: how does mindset play a role?"
+        "Not My Circus, Not my Monkeys? Frontline Employee Perceptions of Customer Deviant Behaviors and Service Firms\u2019 Guardianship Policies"
     ],
-    "prefix": "10.1080",
-    "volume": "29",
+    "prefix": "10.1177",
+    "volume": "26",
     "author": [
         {
-            "ORCID": "http://orcid.org/0000-0002-1212-7426",
+            "ORCID": "http://orcid.org/0000-0002-2441-6081",
             "authenticated-orcid": false,
-            "given": "Ahmet",
-            "family": "Koksal",
+            "given": "Patrick B.",
+            "family": "Fennell",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Department of Management and Marketing, College of Business, Louisiana State University in Shreveport, Shreveport, Louisiana, USA"
+                    "name": "Salisbury University, Salisbury, MD, USA"
                 }
             ]
         },
         {
-            "ORCID": "http://orcid.org/0000-0002-7642-3435",
+            "ORCID": "http://orcid.org/0000-0002-6098-5249",
             "authenticated-orcid": false,
-            "given": "Aaron",
-            "family": "Johnson",
+            "given": "Melanie P.",
+            "family": "Lorenz",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Department of Management and Marketing, Salisbury University, Franklin P. Perdue School of Business, Salisbury, Maryland, USA"
+                    "name": "Florida Atlantic University, Boca Raton, FL, USA"
                 }
             ]
         },
         {
-            "ORCID": "http://orcid.org/0000-0002-3356-2451",
+            "ORCID": "http://orcid.org/0000-0003-1933-2120",
             "authenticated-orcid": false,
-            "given": "Somak",
-            "family": "Banerjee",
+            "given": "Kristina K.",
+            "family": "Lindsey Hall",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Department of Marketing, College of Business and Economics, California State University, Los Angeles, California, USA"
+                    "name": "Louisiana State University, Baton Rouge, LA, USA"
                 }
             ]
         },
         {
-            "ORCID": "http://orcid.org/0000-0003-4690-8842",
-            "authenticated-orcid": false,
-            "given": "Sujay",
-            "family": "Dutta",
+            "given": "James M.",
+            "family": "Andzulis",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Department of Marketing and Supply Chain Management, Wayne State University, Mike Ilitch School of Business Detroit, Michigan, USA"
+                    "name": "Department of Sports Administration, Ohio University, Athens, OH, USA"
                 }
             ]
         }
     ],
-    "member": "301",
+    "member": "179",
     "published-online": {
         "date-parts": [
             [
-                2022,
+                2023,
                 3,
-                22
+                18
             ]
         ]
     },
     "reference": [
         {
-            "key": "cit0001",
+            "key": "bibr1-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1521/soco.2009.27.2.261"
+            "DOI": "10.1016/j.ijhm.2020.102503"
         },
         {
-            "key": "cit0002",
+            "key": "bibr2-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/01973530802659885"
+            "DOI": "10.1016/j.bushor.2007.09.002"
         },
         {
-            "key": "cit0003",
+            "key": "bibr3-10946705231163881",
+            "unstructured": "Bhattarai Abha (2020), \u201cRetail Workers are Being Pulled into the Latest Culture War: Getting Customers to Wear Masks.\u201d Washington Post, June 8."
+        },
+        {
+            "key": "bibr4-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/0749-5978(91)90020-T"
+            "DOI": "10.1016/S0022-4359(97)90003-8"
         },
         {
-            "key": "cit0004",
+            "key": "bibr5-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/08824090009388781"
+            "DOI": "10.1177/1094670518797479"
         },
         {
-            "key": "cit0005",
+            "key": "bibr6-10946705231163881",
+            "unstructured": "Colquitt Jason A., Greenberg Jerald, Zapata-Phelan Cindy P. (2005), \u201cWhat is Organizational Justice? A Historical Overview,\u201d in Handbook of Organizational Justice, Greenberg J., Colquitt J. A., eds. Lawrence Erlbaum Associates Publishers."
+        },
+        {
+            "key": "bibr7-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/08824099709388654"
+            "DOI": "10.1146/annurev-orgpsych-032414-111457"
         },
         {
-            "key": "cit0006",
+            "key": "bibr8-10946705231163881",
+            "unstructured": "Corbin Juliet, Strauss Anselm (2015), Basics of Qualitative Research: Techniques and Procedures for Developing Grounded Theory. Thousand Oaks, CA: Sage."
+        },
+        {
+            "key": "bibr9-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/nvsm.1499"
+            "DOI": "10.1108/EJM-01-2014-0061"
         },
         {
-            "key": "cit0007",
+            "key": "bibr10-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/02650487.2014.993513"
+            "DOI": "10.1016/j.jbusres.2020.02.017"
         },
         {
-            "key": "cit0008",
+            "key": "bibr11-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/009365094021005002"
+            "DOI": "10.1177/10946705211031302"
         },
         {
-            "key": "cit0009",
+            "key": "bibr12-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0096-3445.136.4.610"
+            "DOI": "10.1016/j.jbusres.2019.09.012"
         },
         {
-            "key": "cit0010",
+            "key": "bibr13-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00913367.1985.10672953"
+            "DOI": "10.1108/JSM-07-2019-0270"
         },
         {
-            "key": "cit0011",
+            "key": "bibr14-10946705231163881",
+            "unstructured": "Fullerton Ronald A., Punj Girish (1993), \u201cChoosing to Misbehave: A Structural Model of Aberrant Consumer Behavior,\u201d ACR North American Advances, 20, 570-574."
+        },
+        {
+            "key": "bibr15-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jcps.2012.10.010"
+            "DOI": "10.1177/1094428112452151"
         },
         {
-            "key": "cit0012",
+            "key": "bibr16-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1093/scan/nsr062"
+            "DOI": "10.1108/JSTP-04-2018-0081"
         },
         {
-            "key": "cit0013",
+            "key": "bibr17-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1509/jmr.13.0211"
+            "DOI": "10.1177/1094670513504463"
         },
         {
-            "key": "cit0014",
+            "key": "bibr18-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2501/S0021849910091336"
+            "DOI": "10.1108/09564231211226105"
         },
         {
-            "key": "cit0015",
+            "key": "bibr19-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2501/S0265048710201129"
+            "DOI": "10.1037/a0025102"
         },
         {
-            "key": "cit0016",
+            "key": "bibr20-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0146167217727732"
+            "DOI": "10.1016/j.ijresmar.2017.09.002"
         },
         {
-            "key": "cit0017",
+            "key": "bibr21-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00909880801922854"
+            "DOI": "10.1108/03090561311297418"
         },
         {
-            "key": "cit0018",
+            "key": "bibr22-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0278-6133.27.1.110"
+            "DOI": "10.1080/0267257X.2010.498149"
         },
         {
-            "key": "cit0019",
+            "key": "bibr23-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1086/510216"
+            "DOI": "10.1108/08876041311330762"
         },
         {
-            "key": "cit0020",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jesp.2008.03.012"
-        },
-        {
-            "key": "cit0021",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/08934210600918758"
-        },
-        {
-            "key": "cit0022",
-            "first-page": "65",
-            "volume": "27",
-            "author": "Fishbein M",
-            "year": "1979",
-            "journal-title": "Nebraska Symposium on Motivation"
-        },
-        {
-            "key": "cit0023",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jesp.2004.04.003"
-        },
-        {
-            "key": "cit0024",
-            "unstructured": "Freriksen, D. K. (2014). Creating trust through charity advertisement: focusing on charity successes or future goals, by using statistical or anecdotal evidence? (Master\u2019s thesis, University of Twente)."
-        },
-        {
-            "key": "cit0025",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00913367.1983.10672838"
-        },
-        {
-            "key": "cit0026",
-            "unstructured": "Giving, USA. (2020,June 16). \u201cGiving USA 2020: Charitable Giving Showed Solid Growth, Climbing to $449.64 Billion in 2019, One of the Highest Years for Giving on Record.\u201c Accessed 12 March 2021. https://givingusa.org/giving-usa-2020-charitable-giving-showed-solid-growth-climbing-to-449-64-billion-in-2019-one-of-the-highest-years-for-giving-on-record/"
-        },
-        {
-            "key": "cit0027",
-            "first-page": "287",
-            "volume-title": "The Psychology of Action: Linking Cognition and Motivation to Behavior",
-            "author": "Gollwitzer P. M",
-            "year": "1996"
-        },
-        {
-            "key": "cit0028",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1468-2885.2004.tb00317.x"
-        },
-        {
-            "key": "cit0029",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/713852118"
-        },
-        {
-            "key": "cit0030",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/01463371003773366"
-        },
-        {
-            "key": "cit0031",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1086/314311"
-        },
-        {
-            "key": "cit0032",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jesp.2014.05.002"
-        },
-        {
-            "key": "cit0033",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0146167210386238"
-        },
-        {
-            "key": "cit0034",
+            "key": "bibr24-10946705231163881",
             "volume-title": "Introduction to Mediation, Moderation, and Conditional Process Analysis: A Regression-based Approach",
-            "author": "Hayes A. F",
+            "author": "Hayes Andrew F.",
             "year": "2017"
         },
         {
-            "key": "cit0035",
+            "key": "bibr25-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10551-018-3870-x"
+            "DOI": "10.1177/1094670517712877"
         },
         {
-            "key": "cit0036",
+            "key": "bibr26-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1300/J054v09n01_11"
+            "DOI": "10.1177/1094670516685179"
         },
         {
-            "key": "cit0037",
-            "volume-title": "International Society for the Study of Argumentation",
-            "author": "Hoeken H.",
-            "year": "2003"
-        },
-        {
-            "key": "cit0038",
+            "key": "bibr27-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1086/209123"
+            "DOI": "10.1037/apl0000249"
         },
         {
-            "key": "cit0039",
+            "key": "bibr28-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/0163853X.2017.1312195"
+            "DOI": "10.1007/s10869-010-9158-5"
         },
         {
-            "key": "cit0040",
+            "key": "bibr29-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/03637750701716578"
+            "DOI": "10.1177/1096348020936331"
         },
         {
-            "key": "cit0041",
+            "key": "bibr30-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jairtraman.2018.12.002"
+            "DOI": "10.1108/JSM-12-2014-0402"
         },
         {
-            "key": "cit0042",
+            "key": "bibr31-10946705231163881",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Huang Yu-Shan \u201cSandy\u201d, Fang Xiang, Liu Ruping (2021), \u201cNecessary Evil: A Strategy to Manage Dysfunctional Customer Behavior,\u201d Journal of Services Marketing, 36, 741-753.",
+            "DOI": "10.1108/JSM-07-2020-0317"
+        },
+        {
+            "key": "bibr32-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jbusres.2019.01.022"
+            "DOI": "10.1007/s10869-009-9137-x"
         },
         {
-            "key": "cit0043",
+            "key": "bibr33-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.3390/su12219134"
+            "DOI": "10.1177/1094670519878882"
         },
         {
-            "key": "cit0044",
+            "key": "bibr34-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0093650215626980"
+            "DOI": "10.1177/1094670520975204"
         },
         {
-            "key": "cit0045",
-            "unstructured": "Koch, E. 2017. \u201cEffective Fundraising: Message Framing Techniques in Nonprofit Fundraising.\u201c The University of Texas at Austin. https://repositories.lib.utexas.edu/handle/2152/75270"
-        },
-        {
-            "key": "cit0046",
+            "key": "bibr35-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00909889809365508"
+            "DOI": "10.1177/1094670520958070"
         },
         {
-            "key": "cit0047",
+            "key": "bibr36-10946705231163881",
+            "unstructured": "Kavilanz Parija (2022), \u201cShoplifting is Surging Across America with Dangerous and Costly Consequences,\u201d CNN Business, from https://www.cnn.com/2022/01/07/business/retail-theft-shoplifting-robbery/index.html"
+        },
+        {
+            "key": "bibr37-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1093/hcr/hqy002"
+            "DOI": "10.1002/mar.21290"
         },
         {
-            "key": "cit0048",
+            "key": "bibr38-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2224/sbp.2016.44.5.785"
+            "DOI": "10.1007/s10551-017-3703-3"
         },
         {
-            "key": "cit0049",
+            "key": "bibr39-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1108/IntR-11-2013-0233"
+            "DOI": "10.1016/0147-1767(85)90062-8"
         },
         {
-            "key": "cit0050",
-            "first-page": "353",
-            "volume": "2",
-            "author": "Liberman N.",
-            "year": "2007",
-            "journal-title": "Social Psychology: Handbook of Basic Principles"
-        },
-        {
-            "key": "cit0051",
+            "key": "bibr40-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/08824090409359991"
+            "DOI": "10.1177/1094670519835309"
         },
         {
-            "key": "cit0052",
+            "key": "bibr41-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1108/IntR-06-2017-0240"
+            "DOI": "10.1108/IJCHM-07-2014-0360"
         },
         {
-            "key": "cit0053",
+            "key": "bibr42-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10410236.2017.1321162"
+            "DOI": "10.1111/psyp.12235"
         },
         {
-            "key": "cit0054",
+            "key": "bibr43-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.obhdp.2010.07.003"
+            "DOI": "10.1108/JOSM-02-2017-0026"
         },
         {
-            "key": "cit0055",
+            "key": "bibr44-10946705231163881",
+            "unstructured": "Nassauer Sarah (2015), \u201cWelcome Back, Wal-Mart Greeters,\u201d The Wall Street Journal, Retrieved September 10, 2021, from https://www.wsj.com/articles/wal-mart-ushers-greeters-back-to-the-front-1434651944"
+        },
+        {
+            "key": "bibr45-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/nvsm.185"
+            "DOI": "10.1177/1094670520933683"
         },
         {
-            "key": "cit0056",
+            "key": "bibr46-10946705231163881",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Northington William Magnus, Gillison Stephanie T., Beatty Sharon E., Vivek Shiri (2021), \u201cI Don\u2019t Want to Be a Rule Enforcer During the COVID-19 Pandemic: Frontline Employees\u2019 Plight,\u201d Journal of Retailing and Consumer Services, 102723, 1-7.",
+            "DOI": "10.1016/j.jretconser.2021.102723"
+        },
+        {
+            "key": "bibr47-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jbusres.2009.05.013"
+            "DOI": "10.1177/10946705211021915"
         },
         {
-            "key": "cit0057",
+            "key": "bibr48-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1037/1089-2680.2.2.175"
+            "DOI": "10.1016/j.jretconser.2014.01.004"
         },
         {
-            "key": "cit0058",
+            "key": "bibr49-10946705231163881",
+            "unstructured": "Peterson Hayley (2020), \u201cRetailers are Facing a $62 Billion Problem That has Nothing to do With the Pandemic,\u201d Business Insider, from https://www.businessinsider.com/retailers-facing-62-billion-problem-with-theft-2020-7"
+        },
+        {
+            "key": "bibr50-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1300/J054v15n01_05"
+            "DOI": "10.1108/IJRDM-12-2016-0240"
         },
         {
-            "key": "cit0059",
+            "key": "bibr51-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1023/A:1024933720131"
+            "DOI": "10.1108/IJRDM-02-2018-0029"
         },
         {
-            "key": "cit0060",
+            "key": "bibr52-10946705231163881",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Potdar Balkrushna, Garry Tony, Guthrie John, Gnoth Juergen (2020), \u201cYours Truly: The Role of Organizational Commitment in Shoplifting Prevention,\u201d International Journal of Retail and Distribution Management, 48 (1), 70-91.",
+            "DOI": "10.1108/IJRDM-04-2018-0073"
+        },
+        {
+            "key": "bibr53-10946705231163881",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Potdar Balkrushna, Garry Tony, McNeill Lisa, Gnoth Juergen, Pandey Rakesh, Mansi Mansi, Guthrie John (2020), \u201cRetail Employee Guardianship Behaviour: A Phenomenological Investigation,\u201d Journal of Retailing and Consumer Services, 54, 1-15.",
+            "DOI": "10.1016/j.jretconser.2019.102017"
+        },
+        {
+            "key": "bibr54-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.evalprogplan.2008.10.006"
+            "DOI": "10.1108/JSTP-06-2020-0124"
         },
         {
-            "key": "cit0061",
+            "key": "bibr55-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/nvsm.362"
+            "DOI": "10.1016/j.jhtm.2022.02.004"
         },
         {
-            "key": "cit0062",
+            "key": "bibr56-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/nvsm.297"
+            "DOI": "10.2753/MTP1069-6679140201"
         },
         {
-            "key": "cit0063",
+            "key": "bibr57-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.obhdp.2014.02.001"
+            "DOI": "10.1111/peps.12226"
         },
         {
-            "key": "cit0064",
+            "key": "bibr58-10946705231163881",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Rummelhagen Katja, Benkenstein Martin (2017), \u201cWhose Fault is it? An Empirical Study on the Impact of Responsibility Attribution for Customer Misbehavior,\u201d European Journal of Marketing, 51 (11/12), 1856-1875.",
+            "DOI": "10.1108/EJM-01-2016-0014"
+        },
+        {
+            "key": "bibr59-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00913367.2017.1396514"
+            "DOI": "10.1177/10946705211012472"
         },
         {
-            "key": "cit0065",
+            "key": "bibr60-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1509/jmr.13.0244"
+            "DOI": "10.1177/1094670520918669"
         },
         {
-            "key": "cit0066",
+            "key": "bibr61-10946705231163881",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Song Young Ho, Skarlicki Daniel P., Shao Ruodan, Park Jungkyu (2021), \u201cReducing Customer-directed Deviant Behavior: The Roles of Psychological Detachment and Supervisory Unfairness,\u201d Journal of Management, 47 (8), 2008-2036.",
+            "DOI": "10.1177/0149206320925877"
+        },
+        {
+            "key": "bibr62-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s11002-014-9324-z"
+            "DOI": "10.1177/1094670521999721"
         },
         {
-            "key": "cit0067",
+            "key": "bibr63-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1108/03090561111120000"
+            "DOI": "10.1108/08876041011072582"
         },
         {
-            "key": "cit0068",
+            "key": "bibr64-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.obhdp.2006.01.005"
+            "DOI": "10.1108/JSM-03-2019-0112"
         },
         {
-            "key": "cit0069",
+            "key": "bibr65-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.obhdp.2018.05.004"
+            "DOI": "10.1177/1094670519883949"
         },
         {
-            "key": "cit0070",
-            "first-page": "308",
-            "volume-title": "Advances in Consumer Research",
-            "volume": "40",
-            "author": "Townsend C.",
-            "year": "2012"
-        },
-        {
-            "key": "cit0071",
+            "key": "bibr66-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1037/a0018963"
+            "DOI": "10.1177/1938965513478682"
         },
         {
-            "key": "cit0072",
+            "key": "bibr67-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0033-295X.94.1.3"
+            "DOI": "10.1177/1094670520944606"
         },
         {
-            "key": "cit0073",
+            "key": "bibr68-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1509/jmkr.48.3.472"
+            "DOI": "10.1108/JOSM-11-2015-0364"
         },
         {
-            "key": "cit0074",
+            "key": "bibr69-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1086/666596"
+            "DOI": "10.1177/1094670515589956"
         },
         {
-            "key": "cit0075",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1464-0597.2012.00501.x"
+            "key": "bibr70-10946705231163881",
+            "first-page": "1",
+            "author": "Zahlquist Lena",
+            "year": "2022",
+            "journal-title": "Applied Psychology"
         },
         {
-            "key": "cit0076",
+            "key": "bibr71-10946705231163881",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10410236.2013.842528"
+            "DOI": "10.1177/0022242919888477"
         }
     ],
     "container-title": [
-        "Journal of Marketing Communications"
+        "Journal of Service Research"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/13527266.2022.2056230",
+            "URL": "http://journals.sagepub.com/doi/pdf/10.1177/10946705231163881",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "http://journals.sagepub.com/doi/full-xml/10.1177/10946705231163881",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "http://journals.sagepub.com/doi/pdf/10.1177/10946705231163881",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -538,111 +557,65 @@
         "date-parts": [
             [
                 2023,
-                8,
-                10
+                7,
+                1
             ]
         ],
-        "date-time": "2023-08-10T08:51:13Z",
-        "timestamp": 1691657473000
+        "date-time": "2023-07-01T11:35:52Z",
+        "timestamp": 1688211352000
     },
-    "score": 12.033428,
+    "score": 14.26631,
     "resource": {
         "primary": {
-            "URL": "https://www.tandfonline.com/doi/full/10.1080/13527266.2022.2056230"
+            "URL": "http://journals.sagepub.com/doi/10.1177/10946705231163881"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2022,
+                2023,
                 3,
-                22
+                18
             ]
         ]
     },
-    "references-count": 76,
+    "references-count": 71,
     "journal-issue": {
-        "issue": "6",
+        "issue": "3",
         "published-print": {
             "date-parts": [
                 [
                     2023,
-                    8,
-                    18
+                    8
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1080/13527266.2022.2056230"
+        "10.1177/10946705231163881"
     ],
-    "URL": "http://dx.doi.org/10.1080/13527266.2022.2056230",
+    "URL": "http://dx.doi.org/10.1177/10946705231163881",
     "ISSN": [
-        "1352-7266",
-        "1466-4445"
+        "1094-6705",
+        "1552-7379"
     ],
     "issn-type": [
         {
-            "value": "1352-7266",
+            "value": "1094-6705",
             "type": "print"
         },
         {
-            "value": "1466-4445",
+            "value": "1552-7379",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2022,
+                2023,
                 3,
-                22
+                18
             ]
         ]
-    },
-    "assertion": [
-        {
-            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
-            "order": 1,
-            "name": "peerreview_statement",
-            "label": "Peer Review Statement"
-        },
-        {
-            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=rjmc20",
-            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=rjmc20",
-            "order": 2,
-            "name": "aims_and_scope_url",
-            "label": "Aim & Scope"
-        },
-        {
-            "value": "2021-08-29",
-            "order": 0,
-            "name": "received",
-            "label": "Received",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2022-03-16",
-            "order": 2,
-            "name": "accepted",
-            "label": "Accepted",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2022-03-22",
-            "order": 3,
-            "name": "published",
-            "label": "Published",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        }
-    ]
+    }
 }

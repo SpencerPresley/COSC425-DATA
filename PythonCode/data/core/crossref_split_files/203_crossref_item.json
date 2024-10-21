@@ -2,23 +2,43 @@
     "indexed": {
         "date-parts": [
             [
-                2024,
-                3,
-                5
+                2023,
+                9,
+                7
             ]
         ],
-        "date-time": "2024-03-05T08:35:21Z",
-        "timestamp": 1709627721986
+        "date-time": "2023-09-07T20:40:43Z",
+        "timestamp": 1694119243717
     },
-    "reference-count": 3,
-    "publisher": "Scientific Societies",
-    "issue": "6",
+    "reference-count": 0,
+    "publisher": "Wiley",
+    "issue": "2",
+    "license": [
+        {
+            "start": {
+                "date-parts": [
+                    [
+                        2020,
+                        5,
+                        18
+                    ]
+                ],
+                "date-time": "2020-05-18T00:00:00Z",
+                "timestamp": 1589760000000
+            },
+            "content-version": "vor",
+            "delay-in-days": 0,
+            "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+        }
+    ],
     "content-domain": {
-        "domain": [],
-        "crossmark-restriction": false
+        "domain": [
+            "rai.onlinelibrary.wiley.com"
+        ],
+        "crossmark-restriction": true
     },
     "short-container-title": [
-        "Plant Disease"
+        "Royal Anthropological Inst"
     ],
     "published-print": {
         "date-parts": [
@@ -28,116 +48,69 @@
             ]
         ]
     },
-    "DOI": "10.1094/pdis-12-19-2614-pdn",
+    "DOI": "10.1111/1467-9655.13295",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
                 2020,
-                2,
-                17
+                5,
+                18
             ]
         ],
-        "date-time": "2020-02-17T03:14:12Z",
-        "timestamp": 1581909252000
+        "date-time": "2020-05-18T22:51:44Z",
+        "timestamp": 1589842304000
     },
-    "page": "1860-1860",
+    "page": "472-473",
+    "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 4,
+    "is-referenced-by-count": 0,
     "title": [
-        "First Report of <i>Didymella americana</i> on Lima Bean (<i>Phaseolus lunatus</i>) in Delaware and Maryland"
+        "Schulze, Holger. The sonic persona: an anthropology of sound. x, 255 pp., bibliogr. London: Bloomsbury, 2018. \u00a327.99 (paper)"
     ],
-    "prefix": "10.1094",
-    "volume": "104",
+    "prefix": "10.1111",
+    "volume": "26",
     "author": [
         {
-            "ORCID": "http://orcid.org/0000-0002-5482-8466",
-            "authenticated-orcid": false,
-            "given": "K. L.",
-            "family": "Everts",
+            "given": "G Douglas",
+            "family": "Barrett",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Department of Plant Science and Landscape Architecture, University of Maryland, College Park, Lower Eastern Shore Research and Education Center, Salisbury, MD 21801"
-                }
-            ]
-        },
-        {
-            "given": "T. L.",
-            "family": "Walter",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Plant Science and Landscape Architecture, University of Maryland, College Park, Lower Eastern Shore Research and Education Center, Salisbury, MD 21801"
-                }
-            ]
-        },
-        {
-            "given": "Y.",
-            "family": "Johnson",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Plant Science and Landscape Architecture, University of Maryland, College Park, Lower Eastern Shore Research and Education Center, Salisbury, MD 21801"
-                }
-            ]
-        },
-        {
-            "given": "A.",
-            "family": "Ash",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "University of Delaware, Newark, DE 19716"
-                }
-            ]
-        },
-        {
-            "given": "L.",
-            "family": "Thomas",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Salisbury University, Salisbury, MD 21801"
-                }
-            ]
-        },
-        {
-            "given": "D.",
-            "family": "Koval",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Delmar High School, Delmar, DE 19940"
+                    "name": "Salisbury University"
                 }
             ]
         }
     ],
-    "member": "1665",
-    "reference": [
-        {
-            "key": "b1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3114/sim.2010.65.01"
-        },
-        {
-            "key": "b2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.simyco.2017.06.002"
-        },
-        {
-            "key": "b3",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/07060661.2016.1195877"
-        }
-    ],
+    "member": "311",
+    "published-online": {
+        "date-parts": [
+            [
+                2020,
+                5,
+                18
+            ]
+        ]
+    },
     "container-title": [
-        "Plant Disease"
+        "Journal of the Royal Anthropological Institute"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://apsjournals.apsnet.org/doi/full/10.1094/PDIS-12-19-2614-PDN",
+            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/1467-9655.13295",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1111/1467-9655.13295",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/1467-9655.13295",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -146,31 +119,32 @@
     "deposited": {
         "date-parts": [
             [
-                2021,
-                12,
-                29
+                2023,
+                9,
+                6
             ]
         ],
-        "date-time": "2021-12-29T23:12:58Z",
-        "timestamp": 1640819578000
+        "date-time": "2023-09-06T11:42:44Z",
+        "timestamp": 1694000564000
     },
-    "score": 15.077859,
+    "score": 14.43329,
     "resource": {
         "primary": {
-            "URL": "https://apsjournals.apsnet.org/doi/10.1094/PDIS-12-19-2614-PDN"
+            "URL": "https://rai.onlinelibrary.wiley.com/doi/10.1111/1467-9655.13295"
         }
     },
     "issued": {
         "date-parts": [
             [
                 2020,
-                6
+                5,
+                18
             ]
         ]
     },
-    "references-count": 3,
+    "references-count": 0,
     "journal-issue": {
-        "issue": "6",
+        "issue": "2",
         "published-print": {
             "date-parts": [
                 [
@@ -181,20 +155,23 @@
         }
     },
     "alternative-id": [
-        "10.1094/PDIS-12-19-2614-PDN"
+        "10.1111/1467-9655.13295"
     ],
-    "URL": "http://dx.doi.org/10.1094/pdis-12-19-2614-pdn",
+    "URL": "http://dx.doi.org/10.1111/1467-9655.13295",
+    "archive": [
+        "Portico"
+    ],
     "ISSN": [
-        "0191-2917",
-        "1943-7692"
+        "1359-0987",
+        "1467-9655"
     ],
     "issn-type": [
         {
-            "value": "0191-2917",
+            "value": "1359-0987",
             "type": "print"
         },
         {
-            "value": "1943-7692",
+            "value": "1467-9655",
             "type": "electronic"
         }
     ],
@@ -202,8 +179,21 @@
         "date-parts": [
             [
                 2020,
-                6
+                5,
+                18
             ]
         ]
-    }
+    },
+    "assertion": [
+        {
+            "value": "2020-05-18",
+            "order": 2,
+            "name": "published",
+            "label": "Published",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
+        }
+    ]
 }

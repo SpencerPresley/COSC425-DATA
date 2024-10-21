@@ -3,371 +3,169 @@
         "date-parts": [
             [
                 2024,
-                9,
-                15
+                8,
+                6
             ]
         ],
-        "date-time": "2024-09-15T22:12:35Z",
-        "timestamp": 1726438355722
+        "date-time": "2024-08-06T08:12:57Z",
+        "timestamp": 1722931977146
     },
-    "reference-count": 49,
-    "publisher": "Wiley",
-    "issue": "4",
+    "reference-count": 4,
+    "publisher": "American Society for Microbiology",
+    "issue": "3",
     "license": [
         {
             "start": {
                 "date-parts": [
                     [
-                        2021,
-                        1,
-                        21
+                        2019,
+                        12,
+                        18
                     ]
                 ],
-                "date-time": "2021-01-21T00:00:00Z",
-                "timestamp": 1611187200000
+                "date-time": "2019-12-18T00:00:00Z",
+                "timestamp": 1576627200000
             },
             "content-version": "vor",
+            "delay-in-days": 351,
+            "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+        },
+        {
+            "start": {
+                "date-parts": [
+                    [
+                        2019,
+                        1,
+                        1
+                    ]
+                ],
+                "date-time": "2019-01-01T00:00:00Z",
+                "timestamp": 1546300800000
+            },
+            "content-version": "tdm",
             "delay-in-days": 0,
-            "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+            "URL": "https://journals.asm.org/non-commercial-tdm-license"
         }
     ],
     "content-domain": {
         "domain": [
-            "onlinelibrary.wiley.com"
+            "journals.asm.org"
         ],
         "crossmark-restriction": true
     },
     "short-container-title": [
-        "Regulation &amp; Governance"
+        "J Microbiol Biol Educ."
     ],
     "published-print": {
         "date-parts": [
             [
-                2022,
-                10
+                2019,
+                1
             ]
         ]
     },
-    "abstract": "<jats:title>Abstract</jats:title><jats:p>This paper examines the impact of regulation\u2010driven trade barriers on export entrepreneurship in a panel of 60 countries between 2006 and 2014. The paper finds robust evidence that unfavorable trade regulations significantly reduce export entry rate and export entry density (two critical measures of export entrepreneurship) by increasing the time and cost associated with documentary and customs compliance procedures. These findings support the hypothesis that less conducive business regulations are an important domestic supply constraint which impedes export entrepreneurship by increasing trade costs. In addition, the paper finds that the magnitude of the negative relationship between export entrepreneurship and regulation\u2010driven trade barriers is significantly more pronounced in countries with poor governance quality. Two measures of governance quality (i.e., political stability and rule of law) are shown to be relatively more significant in aiding favorable trade regulations that promote export entrepreneurship. Furthermore, a reduction in regulation\u2010driven trade barriers has a positive impact on net entry rate and survival rates of first\u2010, second\u2010 and third\u2010year exporters, and high\u2010quality governance institutions significantly increase the magnitude of this positive relationship.</jats:p>",
-    "DOI": "10.1111/rego.12384",
+    "abstract": "<jats:p>\n            The original\n            <jats:italic>Guidelines for Biosafety in Teaching Laboratories</jats:italic>\n            were developed in 2012 in response to an outbreak of Salmonella Typhimurium tracked by the Centers for Disease Control and Prevention (CDC) that originated from clinical and teaching microbiology laboratories. In the 7 years since the publication of the guidelines, there have been two subsequent CDC-reported\n            <jats:italic>Salmonella</jats:italic>\n            outbreaks originating from clinical and teaching microbiology laboratories. Use of and issues with the guidelines by ASM members have been tracked by various means since publication, and in 2018 it became apparent that an update of the guidelines was necessary. The Education Board of the American Society for Microbiology charged this task force with updating the guidelines based on the accumulated information. While the guidelines should look familiar, users will find that the originally separate BSL1 and BSL2 guidelines have been rolled into one document, to help eliminate redundancy and confusion. In addition, sections on risk assessment and service animals in the teaching laboratory have been added. These updated guidelines should help clarify many of the issues for which users expressed problems with the original guidelines.\n          </jats:p>",
+    "DOI": "10.1128/jmbe.v20i3.1975",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2021,
-                1,
+                2019,
+                12,
                 21
             ]
         ],
-        "date-time": "2021-01-21T16:48:27Z",
-        "timestamp": 1611247707000
+        "date-time": "2019-12-21T12:45:39Z",
+        "timestamp": 1576932339000
     },
-    "page": "1119-1140",
-    "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+    "update-policy": "http://dx.doi.org/10.1128/asmj-crossmark-policy-page",
     "source": "Crossref",
-    "is-referenced-by-count": 6,
+    "is-referenced-by-count": 19,
     "title": [
-        "The effect of <scp>regulation\u2010driven</scp> trade barriers and governance quality on export entrepreneurship"
+        "Guidelines for Biosafety in Teaching Laboratories Version 2.0: A Revised and Updated Manual for 2019"
     ],
-    "prefix": "10.1111",
-    "volume": "16",
+    "prefix": "10.1128",
+    "volume": "20",
     "author": [
         {
-            "ORCID": "http://orcid.org/0000-0002-9579-6229",
-            "authenticated-orcid": false,
-            "given": "Jonathan",
-            "family": "Munemo",
+            "given": "Jeffrey J.",
+            "family": "Byrd",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Department of Economics Salisbury University  Salisbury MD USA"
+                    "name": "Department of Biology, St. Mary\u2019s College of Maryland, St. Mary\u2019s City, MD 20686"
                 }
             ]
+        },
+        {
+            "given": "Elizabeth",
+            "family": "Emmert",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801"
+                }
+            ]
+        },
+        {
+            "given": "Robert",
+            "family": "Maxwell",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Biology, Georgia State University, Atlanta, GA 30303"
+                }
+            ]
+        },
+        {
+            "given": "Heather",
+            "family": "Townsend",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Biology, Community College of Rhode Island, Newport, RI 02840"
+                }
+            ]
+        },
+        {
+            "name": "the ASM Task Committee on the Revision of the 2012 Laboratory Biosafety Guidelines",
+            "sequence": "additional",
+            "affiliation": []
         }
     ],
-    "member": "311",
-    "published-online": {
-        "date-parts": [
-            [
-                2021,
-                1,
-                21
-            ]
-        ]
-    },
+    "member": "235",
     "reference": [
         {
-            "volume-title": "Why Nations Fail",
-            "year": "2012",
-            "author": "Acemoglu D",
-            "key": "e_1_2_8_2_1"
-        },
-        {
-            "key": "e_1_2_8_3_1",
+            "key": "e_1_3_2_2_2",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1162/003465302317411587"
+            "DOI": "10.1128/jmbe.v14i1.531"
         },
         {
-            "key": "e_1_2_8_4_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1108/IJEBR-10-2012-0121"
+            "key": "e_1_3_2_3_2",
+            "unstructured": "Centers for Disease Control and Prevention2012 Investigation update: human Salmonella typhimurium infections associated with exposure to clinical and teaching microbiology laboratories Centers for Disease Control and PreventionAtlanta GAhttps://www.cdc.gov/salmonella/2011/lab-exposure-1-17-2012.html"
         },
         {
-            "key": "e_1_2_8_5_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1467-9396.2009.00854.x"
+            "key": "e_1_3_2_4_2",
+            "unstructured": "Centers for Disease Control and Prevention2014 Human Salmonella typhimurium infections linked to exposure to clinical and teaching microbiology laboratories (final update) Centers for Disease Control and PreventionAtlanta GAhttps://www.cdc.gov/salmonella/typhimurium-labs-06-14/index.html"
         },
         {
-            "key": "e_1_2_8_6_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1086/261712"
-        },
-        {
-            "key": "e_1_2_8_7_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jbankfin.2006.05.009"
-        },
-        {
-            "key": "e_1_2_8_8_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jinteco.2016.11.001"
-        },
-        {
-            "key": "e_1_2_8_9_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s11127-007-9229-y"
-        },
-        {
-            "key": "e_1_2_8_10_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/sej.1148"
-        },
-        {
-            "key": "e_1_2_8_11_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1467-6435.2006.00336.x"
-        },
-        {
-            "key": "e_1_2_8_12_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1162/REST_a_00338"
-        },
-        {
-            "key": "e_1_2_8_13_1",
-            "doi-asserted-by": "crossref",
-            "unstructured": "DanakolS EstrinS ReynoldsP WeitzelU(2013)Foreign Direct investment and Domestic Entrepreneurship: Blessing or Curse? IZA Discussion Paper No. 7796 Institute of Labor Economics Bonn.",
-            "DOI": "10.2139/ssrn.2367671"
-        },
-        {
-            "key": "e_1_2_8_14_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/wbro/lkp005"
-        },
-        {
-            "key": "e_1_2_8_15_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1162/003355302753399436"
-        },
-        {
-            "key": "e_1_2_8_16_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1162/rest.2009.11498"
-        },
-        {
-            "key": "e_1_2_8_17_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0304-3932(02)00206-4"
-        },
-        {
-            "key": "e_1_2_8_18_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.worlddev.2006.05.001"
-        },
-        {
-            "key": "e_1_2_8_19_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s11127-011-9871-2"
-        },
-        {
-            "key": "e_1_2_8_20_1",
-            "doi-asserted-by": "crossref",
-            "unstructured": "FernandesA LedermanD Gutierrez\u2010RochaM(2013)Export Entrepreneurship and Trade Structure in Latin America during Good and Bad Times. Policy Research Working Paper Series 6413. World Bank Washington DC.",
-            "DOI": "10.1596/1813-9450-6413"
-        },
-        {
-            "key": "e_1_2_8_21_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jdeveco.2015.10.007"
-        },
-        {
-            "key": "e_1_2_8_22_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/1758-5899.12583"
-        },
-        {
-            "key": "e_1_2_8_23_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jdeveco.2007.11.003"
-        },
-        {
-            "key": "e_1_2_8_24_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.worlddev.2011.05.013"
-        },
-        {
-            "key": "e_1_2_8_25_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1257/aer.103.7.2935"
-        },
-        {
-            "key": "e_1_2_8_26_1",
-            "doi-asserted-by": "crossref",
-            "unstructured": "IrwinDA(2019)Does Trade Reform Promote Economic Growth? A Review of Recent Evidence. Working Paper 19\u20109. Peterson Institute for International Economics Washington DC.",
-            "DOI": "10.3386/w25927"
-        },
-        {
-            "key": "e_1_2_8_27_1",
-            "doi-asserted-by": "crossref",
-            "unstructured": "KaufmannD KraayA MastruzziM(2010)The Worldwide Governance Indicators: Methodology and Analytical Issues. Policy Research Working Paper Series 5430. World Bank Washington DC.",
-            "DOI": "10.1596/1813-9450-5430"
-        },
-        {
-            "key": "e_1_2_8_28_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1257/0022051042177685"
-        },
-        {
-            "key": "e_1_2_8_29_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jfineco.2005.09.006"
-        },
-        {
-            "key": "e_1_2_8_30_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.7208/chicago/9780226473109.003.0005"
-        },
-        {
-            "key": "e_1_2_8_31_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1467-937X.2007.00435.x"
-        },
-        {
-            "key": "e_1_2_8_32_1",
-            "doi-asserted-by": "crossref",
-            "unstructured": "LiY WilsonJ(2009a)Time as a Determinant of Comparative Advantage. Policy Research Working Paper 5128. World Bank Washington DC.",
-            "DOI": "10.1596/1813-9450-5128"
-        },
-        {
-            "key": "e_1_2_8_33_1",
-            "unstructured": "LiY WilsonJ(2009b)Trade Facilitation and Expanding the Benefits of Trade: Evidence from Firm Level Data. Working Paper 71. Asia\u2010Pacific Research and Training Network on Trade Bangkok."
-        },
-        {
-            "key": "e_1_2_8_34_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/restud/rds036"
-        },
-        {
-            "key": "e_1_2_8_35_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1017/CBO9780511808678"
-        },
-        {
-            "key": "e_1_2_8_36_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1162/qjec.122.2.569"
-        },
-        {
-            "key": "e_1_2_8_37_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s11127-008-9295-9"
-        },
-        {
-            "volume-title": "The Economics of Welfare",
-            "year": "1932",
-            "author": "Pigou A",
-            "key": "e_1_2_8_38_1"
-        },
-        {
-            "key": "e_1_2_8_39_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1468-0343.2007.00308.x"
-        },
-        {
-            "volume-title": "NBER Macroeconomics Annual",
-            "year": "2001",
-            "author": "Rodriguez F",
-            "key": "e_1_2_8_40_1"
-        },
-        {
-            "key": "e_1_2_8_41_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/2118402"
-        },
-        {
-            "key": "e_1_2_8_42_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/3003160"
-        },
-        {
-            "key": "e_1_2_8_43_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jinteco.2015.01.011"
-        },
-        {
-            "key": "e_1_2_8_44_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/wber/lhn007"
-        },
-        {
-            "key": "e_1_2_8_45_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1467-9701.2007.00872.x"
-        },
-        {
-            "key": "e_1_2_8_46_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1257/jel.38.3.595"
-        },
-        {
-            "key": "e_1_2_8_47_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1596/0-8213-5341-1"
-        },
-        {
-            "key": "e_1_2_8_48_1",
-            "unstructured": "World Bank Country and Lending Groups. (2018)https://datahelpdesk.worldbank.org/knowledgebase/articles/906519-world-bank-country-and-lending-groups"
-        },
-        {
-            "key": "e_1_2_8_49_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/wbro/lkq012"
-        },
-        {
-            "key": "e_1_2_8_50_1",
-            "doi-asserted-by": "crossref",
-            "unstructured": "YoshinoY(2008)Domestic Constraints Firm Characteristics and Geographical Diversification of Firm\u2010Level Manufacturing Exports in Africa. Policy Research Working Paper 4575. World Bank Washington DC.",
-            "DOI": "10.1596/1813-9450-4575"
+            "key": "e_1_3_2_5_2",
+            "unstructured": "Centers for Disease Control and Prevention2017 Human Salmonella typhimurium infections linked to exposure to clinical and teaching microbiology laboratories Centers for Disease Control and PreventionAtlanta GAhttps://www.cdc.gov/salmonella/typhimurium-07-17/index.html"
         }
     ],
     "container-title": [
-        "Regulation &amp; Governance"
+        "Journal of Microbiology &amp; Biology Education"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/rego.12384",
+            "URL": "https://journals.asm.org/doi/pdf/10.1128/jmbe.v20i3.1975",
             "content-type": "application/pdf",
             "content-version": "vor",
             "intended-application": "text-mining"
         },
         {
-            "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1111/rego.12384",
-            "content-type": "application/xml",
-            "content-version": "vor",
-            "intended-application": "text-mining"
-        },
-        {
-            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/rego.12384",
+            "URL": "https://journals.asm.org/doi/pdf/10.1128/jmbe.v20i3.1975",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -376,74 +174,69 @@
     "deposited": {
         "date-parts": [
             [
-                2023,
-                8,
-                21
+                2022,
+                3,
+                4
             ]
         ],
-        "date-time": "2023-08-21T06:22:27Z",
-        "timestamp": 1692598947000
+        "date-time": "2022-03-04T21:21:53Z",
+        "timestamp": 1646428913000
     },
-    "score": 15.825668,
+    "score": 13.208675,
     "resource": {
         "primary": {
-            "URL": "https://onlinelibrary.wiley.com/doi/10.1111/rego.12384"
+            "URL": "https://journals.asm.org/doi/10.1128/jmbe.v20i3.1975"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2021,
-                1,
-                21
+                2019,
+                1
             ]
         ]
     },
-    "references-count": 49,
+    "references-count": 4,
     "journal-issue": {
-        "issue": "4",
+        "issue": "3",
         "published-print": {
             "date-parts": [
                 [
-                    2022,
-                    10
+                    2019,
+                    1
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1111/rego.12384"
+        "10.1128/jmbe.v20i3.1975"
     ],
-    "URL": "http://dx.doi.org/10.1111/rego.12384",
-    "archive": [
-        "Portico"
-    ],
+    "URL": "http://dx.doi.org/10.1128/jmbe.v20i3.1975",
     "ISSN": [
-        "1748-5983",
-        "1748-5991"
+        "1935-7877",
+        "1935-7885"
     ],
     "issn-type": [
         {
             "type": "print",
-            "value": "1748-5983"
+            "value": "1935-7877"
         },
         {
             "type": "electronic",
-            "value": "1748-5991"
+            "value": "1935-7885"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2021,
-                1,
-                21
+                2019,
+                1
             ]
         ]
     },
     "assertion": [
         {
-            "value": "2020-07-02",
+            "value": "2019-10-01",
             "order": 0,
             "name": "received",
             "label": "Received",
@@ -453,7 +246,7 @@
             }
         },
         {
-            "value": "2021-01-05",
+            "value": "2019-10-28",
             "order": 1,
             "name": "accepted",
             "label": "Accepted",
@@ -463,7 +256,7 @@
             }
         },
         {
-            "value": "2021-01-21",
+            "value": "2019-12-18",
             "order": 2,
             "name": "published",
             "label": "Published",

@@ -3,377 +3,187 @@
         "date-parts": [
             [
                 2024,
-                5,
-                31
+                10,
+                4
             ]
         ],
-        "date-time": "2024-05-31T07:10:35Z",
-        "timestamp": 1717139435211
+        "date-time": "2024-10-04T13:10:20Z",
+        "timestamp": 1728047420305
     },
-    "reference-count": 51,
-    "publisher": "American Physiological Society",
-    "issue": "4",
-    "funder": [
+    "reference-count": 14,
+    "publisher": "SAGE Publications",
+    "issue": "8",
+    "license": [
         {
-            "name": "Salisbury University Foundation"
-        },
-        {
-            "name": "Henson School of Science and Technology"
+            "start": {
+                "date-parts": [
+                    [
+                        2017,
+                        4,
+                        19
+                    ]
+                ],
+                "date-time": "2017-04-19T00:00:00Z",
+                "timestamp": 1492560000000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://journals.sagepub.com/page/policies/text-and-data-mining-license"
         }
     ],
     "content-domain": {
-        "domain": [],
-        "crossmark-restriction": false
+        "domain": [
+            "journals.sagepub.com"
+        ],
+        "crossmark-restriction": true
     },
     "short-container-title": [
-        "American Journal of Physiology-Regulatory, Integrative and Comparative Physiology"
+        "Journal of Sports Economics"
     ],
     "published-print": {
         "date-parts": [
             [
-                2019,
-                4,
-                1
+                2018,
+                12
             ]
         ]
     },
-    "abstract": "<jats:p> Diabetic peripheral neuropathy (DPN) is estimated to affect 50% of diabetic patients. Although DPN is highly prevalent, molecular mechanisms remain unknown and treatment is limited to pain relief and glycemic control. We provide a novel model of acute DPN in zebrafish ( Danio rerio) larvae. Beginning 5 days postfertilization (dpf), zebrafish expressing nitroreductase in their pancreatic \u03b2-cells were treated with metronidazole (MTZ) for 48 h and checked for \u03b2-cell ablation 7 dpf. In experimental design, this was meant to serve as proof of concept that \u03b2-cell ablation and hyperglycemia are possible at this time point, but we were surprised to find changes in both sensory and motor nerve components. Compared with controls, neurod<jats:sup>+</jats:sup> sensory neurons were often observed outside the dorsal root ganglia in MTZ-treated fish. Fewer motor nerves were properly ensheathed by nkx2.2a<jats:sup>+</jats:sup> perineurial cells, and tight junctions were disrupted along the motor nerve in MTZ-treated fish compared with controls. Not surprisingly, the motor axons of the MTZ-treated group were defasciculated compared with the control group, myelination was attenuated, and there was a subtle difference in Schwann cell number between the MTZ-treated and control group. All structural changes occurred in the absence of behavioral changes in the larvae at this time point, suggesting that peripheral nerves are influenced by acute hyperglycemia before becoming symptomatic. Moving forward, this novel animal model of DPN will allow us to access the molecular mechanisms associated with the acute changes in the hyperglycemic peripheral nervous system, which may help direct therapeutic approaches. </jats:p>",
-    "DOI": "10.1152/ajpregu.00258.2018",
+    "abstract": "<jats:p> The National Basketball Association (NBA) playoffs are structured as an elimination tournament where reseeding does not occur after each round. This structure leads to situations where future competitors (the shadow effect) and previous effort (the spillover effect) affect current performance. Using data from the 2009-2014 NBA playoffs, results here find that, when a future opponent is known, a series favorite is significantly more likely to win a game when the future opponent is weaker than expected. Estimates also provide evidence that greater previous effort by teams increases the probability the series favorite wins a game. </jats:p>",
+    "DOI": "10.1177/1527002517704020",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2019,
-                2,
-                6
+                2017,
+                4,
+                19
             ]
         ],
-        "date-time": "2019-02-06T14:26:35Z",
-        "timestamp": 1549463195000
+        "date-time": "2017-04-19T11:17:46Z",
+        "timestamp": 1492600666000
     },
-    "page": "R395-R405",
+    "page": "1067-1092",
+    "update-policy": "http://dx.doi.org/10.1177/sage-journals-update-policy",
     "source": "Crossref",
-    "is-referenced-by-count": 4,
+    "is-referenced-by-count": 7,
     "title": [
-        "Acute effects of hyperglycemia on the peripheral nervous system in zebrafish (<i>Danio rerio</i>) following nitroreductase-mediated \u03b2-cell ablation"
+        "Shadow and Spillover Effects of Competition in NBA Playoffs"
     ],
-    "prefix": "10.1152",
-    "volume": "316",
+    "prefix": "10.1177",
+    "volume": "19",
     "author": [
         {
-            "given": "Amanda",
-            "family": "Rocker",
+            "given": "Brian",
+            "family": "Hill",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Department of Biological Sciences, Salisbury University, Salisbury, Maryland"
-                }
-            ]
-        },
-        {
-            "given": "Julia",
-            "family": "Howell",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Biological Sciences, Salisbury University, Salisbury, Maryland"
-                }
-            ]
-        },
-        {
-            "given": "Gabrielle",
-            "family": "Voithofer",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Biological Sciences, Salisbury University, Salisbury, Maryland"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0001-8714-9884",
-            "authenticated-orcid": false,
-            "given": "Jessica Kennett",
-            "family": "Clark",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Biological Sciences, Salisbury University, Salisbury, Maryland"
+                    "name": "Department of Economics and Finance, Salisbury University, Salisbury, MD, USA"
                 }
             ]
         }
     ],
-    "member": "24",
+    "member": "179",
+    "published-online": {
+        "date-parts": [
+            [
+                2017,
+                4,
+                19
+            ]
+        ]
+    },
     "reference": [
         {
-            "key": "B1",
+            "key": "bibr1-1527002517704020",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1097/00000542-200607000-00024"
+            "DOI": "10.2202/1559-0410.1304"
         },
         {
-            "key": "B2",
+            "key": "bibr2-1527002517704020",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1242/dev.071001"
+            "DOI": "10.1287/mnsc.2014.2014"
         },
         {
-            "key": "B3",
+            "key": "bibr3-1527002517704020",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1242/dmm.003772"
+            "DOI": "10.1177/1527002515590441"
         },
         {
-            "key": "B4",
+            "key": "bibr4-1527002517704020",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/cne.10214"
+            "DOI": "10.2307/2325486"
         },
         {
-            "key": "B5",
+            "key": "bibr5-1527002517704020",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.cmet.2012.04.018"
+            "DOI": "10.1111/j.1540-6261.1997.tb01129.x"
         },
         {
-            "key": "B6",
+            "key": "bibr6-1527002517704020",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF00305868"
+            "DOI": "10.1177/1527002512437744"
         },
         {
-            "key": "B7",
+            "key": "bibr7-1527002517704020",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1523/JNEUROSCI.4893-12.2013"
+            "DOI": "10.1080/00036840802600335"
         },
         {
-            "key": "B8",
+            "key": "bibr8-1527002517704020",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1073/pnas.0914191107"
+            "DOI": "10.1177/1527002510389869"
         },
         {
-            "key": "B9",
+            "key": "bibr9-1527002517704020",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.bbr.2014.08.033"
+            "DOI": "10.1177/1527002504266861"
         },
         {
-            "key": "B10",
+            "key": "bibr10-1527002517704020",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/dvdy.24158"
+            "DOI": "10.1177/1527002510363103"
         },
         {
-            "key": "B11",
+            "key": "bibr11-1527002517704020",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0140-6736(11)60679-X"
+            "DOI": "10.1086/261532"
         },
         {
-            "key": "B12",
+            "key": "bibr12-1527002517704020",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2337/db15-0153"
+            "DOI": "10.1111/j.1465-7287.2011.00298.x"
         },
         {
-            "key": "B13",
+            "key": "bibr13-1527002517704020",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/cne.24065"
+            "DOI": "10.1086/323930"
         },
         {
-            "key": "B14",
-            "first-page": "131",
-            "volume": "14",
-            "author": "El-Barrany WG",
-            "year": "2009",
-            "journal-title": "Neurosciences (Riyadh)"
-        },
-        {
-            "key": "B15",
+            "key": "bibr14-1527002517704020",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1152/physrev.00045.2011"
-        },
-        {
-            "key": "B16",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s004010050961"
-        },
-        {
-            "key": "B17",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s00592-007-0257-3"
-        },
-        {
-            "key": "B18",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2337/diacare.26.6.1790"
-        },
-        {
-            "key": "B19",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jns.2003.09.011"
-        },
-        {
-            "key": "B20",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1074/jbc.M404167200"
-        },
-        {
-            "key": "B21",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1038/nature12111"
-        },
-        {
-            "key": "B22",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3791/50232"
-        },
-        {
-            "key": "B23",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1155/2013/149452"
-        },
-        {
-            "key": "B24",
-            "first-page": "265",
-            "volume": "44",
-            "author": "Johnson PC",
-            "year": "1981",
-            "journal-title": "Lab Invest"
-        },
-        {
-            "key": "B25",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.ygcen.2010.10.010"
-        },
-        {
-            "key": "B26",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.coph.2017.08.007"
-        },
-        {
-            "key": "B27",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1365-2990.1988.tb00874.x"
-        },
-        {
-            "key": "B28",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1038/nn1803"
-        },
-        {
-            "key": "B29",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1101/cshperspect.a020511"
-        },
-        {
-            "key": "B30",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1038/nn2025"
-        },
-        {
-            "key": "B31",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1155/2014/870930"
-        },
-        {
-            "key": "B32",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10072-014-1848-8"
-        },
-        {
-            "key": "B33",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1523/JNEUROSCI.1906-14.2014"
-        },
-        {
-            "key": "B34",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1073/pnas.1525096113"
-        },
-        {
-            "key": "B35",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1523/JNEUROSCI.2079-08.2008"
-        },
-        {
-            "key": "B36",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1524-475X.2010.00613.x"
-        },
-        {
-            "key": "B37",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2337/db11-0588"
-        },
-        {
-            "key": "B38",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.cell.2008.04.037"
-        },
-        {
-            "key": "B39",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.mod.2006.11.005"
-        },
-        {
-            "key": "B40",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1073/pnas.89.6.2218"
-        },
-        {
-            "key": "B41",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1073/pnas.85.13.4879"
-        },
-        {
-            "key": "B42",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF00690832"
-        },
-        {
-            "key": "B43",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/dvdy.10488"
-        },
-        {
-            "key": "B44",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/wrr.12027"
-        },
-        {
-            "key": "B45",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF01252274"
-        },
-        {
-            "key": "B46",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1038/nmeth.2019"
-        },
-        {
-            "key": "B47",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2337/diacare.26.9.2604"
-        },
-        {
-            "key": "B48",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jdiacomp.2017.11.012"
-        },
-        {
-            "key": "B49",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.pediatrneurol.2017.11.017"
-        },
-        {
-            "key": "B50",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1006/dbio.2000.9860"
-        },
-        {
-            "key": "B51",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1242/dev.052696"
+            "DOI": "10.1086/261332"
         }
     ],
     "container-title": [
-        "American Journal of Physiology-Regulatory, Integrative and Comparative Physiology"
+        "Journal of Sports Economics"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://www.physiology.org/doi/pdf/10.1152/ajpregu.00258.2018",
+            "URL": "https://journals.sagepub.com/doi/pdf/10.1177/1527002517704020",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://journals.sagepub.com/doi/full-xml/10.1177/1527002517704020",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://journals.sagepub.com/doi/pdf/10.1177/1527002517704020",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -382,66 +192,65 @@
     "deposited": {
         "date-parts": [
             [
-                2019,
-                9,
-                8
+                2024,
+                10,
+                4
             ]
         ],
-        "date-time": "2019-09-08T13:44:39Z",
-        "timestamp": 1567950279000
+        "date-time": "2024-10-04T12:31:33Z",
+        "timestamp": 1728045093000
     },
-    "score": 17.440996,
+    "score": 15.603361,
     "resource": {
         "primary": {
-            "URL": "https://www.physiology.org/doi/10.1152/ajpregu.00258.2018"
+            "URL": "https://journals.sagepub.com/doi/10.1177/1527002517704020"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2019,
+                2017,
                 4,
-                1
+                19
             ]
         ]
     },
-    "references-count": 51,
+    "references-count": 14,
     "journal-issue": {
-        "issue": "4",
+        "issue": "8",
         "published-print": {
             "date-parts": [
                 [
-                    2019,
-                    4,
-                    1
+                    2018,
+                    12
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1152/ajpregu.00258.2018"
+        "10.1177/1527002517704020"
     ],
-    "URL": "http://dx.doi.org/10.1152/ajpregu.00258.2018",
+    "URL": "http://dx.doi.org/10.1177/1527002517704020",
     "ISSN": [
-        "0363-6119",
-        "1522-1490"
+        "1527-0025",
+        "1552-7794"
     ],
     "issn-type": [
         {
-            "value": "0363-6119",
-            "type": "print"
+            "type": "print",
+            "value": "1527-0025"
         },
         {
-            "value": "1522-1490",
-            "type": "electronic"
+            "type": "electronic",
+            "value": "1552-7794"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2019,
+                2017,
                 4,
-                1
+                19
             ]
         ]
     }

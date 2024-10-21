@@ -2,254 +2,584 @@
     "indexed": {
         "date-parts": [
             [
-                2024,
-                7,
-                19
+                2023,
+                11,
+                18
             ]
         ],
-        "date-time": "2024-07-19T00:06:23Z",
-        "timestamp": 1721347583331
+        "date-time": "2023-11-18T14:05:10Z",
+        "timestamp": 1700316310172
     },
-    "reference-count": 25,
-    "publisher": "Informa UK Limited",
-    "issue": "4",
+    "reference-count": 77,
+    "publisher": "Wiley",
+    "issue": "3",
+    "license": [
+        {
+            "start": {
+                "date-parts": [
+                    [
+                        2018,
+                        1,
+                        18
+                    ]
+                ],
+                "date-time": "2018-01-18T00:00:00Z",
+                "timestamp": 1516233600000
+            },
+            "content-version": "vor",
+            "delay-in-days": 0,
+            "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+        },
+        {
+            "start": {
+                "date-parts": [
+                    [
+                        2018,
+                        1,
+                        18
+                    ]
+                ],
+                "date-time": "2018-01-18T00:00:00Z",
+                "timestamp": 1516233600000
+            },
+            "content-version": "unspecified",
+            "delay-in-days": 0,
+            "URL": "http://www.springer.com/tdm"
+        }
+    ],
     "content-domain": {
         "domain": [
-            "www.tandfonline.com"
+            "link.springer.com"
         ],
-        "crossmark-restriction": true
+        "crossmark-restriction": false
     },
     "short-container-title": [
-        "Social Work Education"
+        "Population Ecology"
     ],
     "published-print": {
         "date-parts": [
             [
-                2017,
-                5,
-                19
+                2018,
+                7
             ]
         ]
     },
-    "DOI": "10.1080/02615479.2017.1297785",
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>Inbreeding and genetic drift can decrease genetic heterozygosity, and this low heterozygosity can depress fitness, resulting in heterozygosity\u2013fitness correlations (HFCs). HFCs are typically small in magnitude, a result often attributed to power of the analyses. Animal behaviors often affect fitness and are often heritable to some degree. We hypothesized that heterozygosity influences behavior, which, in turn, potentially influences fitness. Specifically, in red\u2010backed salamanders, <jats:italic>Plethodon cinereus</jats:italic>, which have limited dispersal and the potential for inbreeding, we tested whether heterozygosity, as estimated from six microsatellite loci, affected home range size, juvenile growth, and survival. We found that salamanders with higher heterozygosity had larger home ranges and grew faster, which is indicative of reproductive success. However, we found no effects of heterozygosity on survival. We conclude that, because activity in <jats:italic>P. cinereus</jats:italic> is tightly linked to food uptake and mass gain, heterozygosity influences growth via effects on foraging behavior. Future research should investigate how the relationship between heterozygosity, behavior, and fitness may be affected or mediated by endocrine or immune systems.</jats:p>",
+    "DOI": "10.1007/s10144-017-0604-3",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2017,
-                3,
-                13
+                2018,
+                1,
+                18
             ]
         ],
-        "date-time": "2017-03-13T03:47:08Z",
-        "timestamp": 1489376828000
+        "date-time": "2018-01-18T04:04:45Z",
+        "timestamp": 1516248285000
     },
-    "page": "403-413",
-    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
+    "page": "251-260",
+    "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 8,
+    "is-referenced-by-count": 4,
     "title": [
-        "Confronting carceral power through experiential learning in macro social work practice"
+        "Heterozygosity\u2013behavior and heterozygosity\u2013fitness correlations in a salamander with limited dispersal"
     ],
-    "prefix": "10.1080",
-    "volume": "36",
+    "prefix": "10.1002",
+    "volume": "60",
     "author": [
         {
-            "given": "Jennifer R.",
-            "family": "Jewell",
+            "given": "Eric B.",
+            "family": "Liebgold",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Department of Social Work, Salisbury University, Salisbury, MD, USA"
+                    "name": "Department of Biological Sciences Salisbury University Henson Science Hall 230E 21801 Salisbury MD USA"
                 }
             ]
         },
         {
-            "given": "Allessia P.",
-            "family": "Owens",
+            "given": "Christian F.",
+            "family": "Kramer",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Department of Social Work, Salisbury University, Salisbury, MD, USA"
+                    "name": "Department of Biological Sciences Salisbury University Henson Science Hall 230E 21801 Salisbury MD USA"
+                }
+            ]
+        },
+        {
+            "given": "Tamar C.",
+            "family": "Roomian",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Tufts University School of Dental Medicine 02111 Boston MA USA"
+                }
+            ]
+        },
+        {
+            "given": "Gina M.",
+            "family": "Dolezar",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Biological Sciences Salisbury University Henson Science Hall 230E 21801 Salisbury MD USA"
+                }
+            ]
+        },
+        {
+            "given": "Paul R.",
+            "family": "Cabe",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Biology Washington and Lee University 24450 Lexington VA USA"
                 }
             ]
         }
     ],
-    "member": "301",
+    "member": "311",
     "published-online": {
         "date-parts": [
             [
-                2017,
-                3,
-                12
+                2018,
+                1,
+                18
             ]
         ]
     },
     "reference": [
         {
-            "key": "CIT0001",
+            "key": "e_1_2_6_2_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1093/sw/43.6.512"
+            "DOI": "10.1086/321324"
         },
         {
-            "key": "CIT0003",
-            "volume-title": "Know your rights trainer manual",
-            "author": "American Civil Liberties Union [ACLU]"
-        },
-        {
-            "key": "CIT0004",
-            "first-page": "5",
-            "volume": "3",
-            "author": "Barlett H. M.",
-            "year": "1958",
-            "journal-title": "Social Work"
-        },
-        {
-            "key": "CIT0005",
+            "key": "e_1_2_6_3_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/1362480612442113"
+            "DOI": "10.1111/j.1420-9101.2009.01765.x"
         },
         {
-            "key": "CIT0006",
+            "key": "e_1_2_6_4_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00220612.1975.10671339"
+            "DOI": "10.1086/678398"
         },
         {
-            "key": "CIT0007",
-            "volume-title": "Racialization, crime, and criminal justice in Canada",
-            "author": "Chan W.",
-            "year": "2014"
-        },
-        {
-            "key": "CIT0008",
-            "volume-title": "2015 Annual statistics on social work education in the United States",
-            "author": "Council on Social Work Education",
-            "year": "2016"
-        },
-        {
-            "key": "CIT0011",
-            "volume-title": "Creating significant learning experiences: An integrated approach to designing college courses",
-            "author": "Fink L. D.",
-            "year": "2003"
-        },
-        {
-            "key": "CIT0012",
+            "key": "e_1_2_6_5_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10705422.2011.625537"
+            "DOI": "10.1007/s00265-008-0695-0"
         },
         {
-            "key": "CIT0014",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.4135/9781483326405"
-        },
-        {
-            "key": "CIT0015",
-            "first-page": "16",
-            "volume": "19",
-            "author": "Hartman A.",
-            "year": "1983",
-            "journal-title": "Journal of Social Work Education"
-        },
-        {
-            "key": "CIT0016",
-            "unstructured": "Jewell, J. (2008).The development of of community organizations by poor women in China and the United States(Unpublished doctoral dissertation). Louisville: University of Louisville."
-        },
-        {
-            "key": "CIT0017",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10705420903130471"
-        },
-        {
-            "key": "CIT0018",
+            "key": "e_1_2_6_6_1",
             "doi-asserted-by": "crossref",
-            "volume-title": "The adult learner: The definitive classic in adult education and human resource development",
-            "author": "Knowles M. S.",
-            "year": "2005",
-            "DOI": "10.4324/9780080481913"
-        },
-        {
-            "key": "CIT0019",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3844/jssp.2009.261.270"
-        },
-        {
-            "key": "CIT0020",
-            "doi-asserted-by": "crossref",
-            "first-page": "79",
-            "DOI": "10.18060/203",
-            "volume": "9",
-            "author": "Miller S. E.",
+            "first-page": "1",
+            "DOI": "10.1111/j.1461-0248.2008.01182.x",
+            "article-title": "Are there general mechanisms of animal home range behaviour? A review and prospects for future research",
+            "volume": "11",
+            "author": "B\u00f6rger L",
             "year": "2008",
-            "journal-title": "Advances in Social Work"
+            "journal-title": "Ecol Lett"
         },
         {
-            "key": "CIT0021",
+            "key": "e_1_2_6_7_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/104973150101100204"
+            "DOI": "10.1098/rspb.2014.1873"
         },
         {
-            "key": "CIT0022",
-            "first-page": "3",
-            "volume": "29",
-            "author": "Mizrahi T.",
-            "year": "2016",
-            "journal-title": "The ACOSA Update!"
-        },
-        {
-            "key": "CIT0023",
+            "key": "e_1_2_6_8_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.19030/tlc.v8i8"
+            "DOI": "10.1146/annurev.es.01.110170.001323"
         },
         {
-            "key": "CIT0025",
-            "volume-title": "The road not taken: A history of radical social work in the United States",
-            "author": "Reisch M.",
-            "year": "2002"
+            "key": "e_1_2_6_9_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s10144-011-0294-1"
         },
         {
-            "key": "CIT0026",
-            "first-page": "13",
-            "volume": "16",
-            "author": "Resnick L. B.",
-            "year": "1987",
-            "journal-title": "Educational Researcher"
+            "key": "e_1_2_6_10_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1038/sj.hdy.6800905"
         },
         {
-            "key": "CIT0027",
+            "key": "e_1_2_6_11_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/cobi.12175"
+        },
+        {
+            "key": "e_1_2_6_12_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1371/journal.pone.0105020"
+        },
+        {
+            "key": "e_1_2_6_13_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1365-294X.2009.04247.x"
+        },
+        {
+            "key": "e_1_2_6_14_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1365-294X.2009.04116.x"
+        },
+        {
+            "key": "e_1_2_6_15_1",
+            "first-page": "971",
+            "article-title": "Microsatellite measures of inbreeding, a meta\u2010analysis",
+            "volume": "57",
+            "author": "Coltman DW",
+            "year": "2003",
+            "journal-title": "Evolution"
+        },
+        {
+            "key": "e_1_2_6_16_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1558-5646.1999.tb04538.x"
+        },
+        {
+            "key": "e_1_2_6_17_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1046/j.1471-8286.2003.00373.x"
+        },
+        {
+            "key": "e_1_2_6_18_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.anbehav.2012.08.005"
+        },
+        {
+            "key": "e_1_2_6_19_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1046/j.1365-2540.1999.00553.x"
+        },
+        {
+            "key": "e_1_2_6_20_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/1566111"
+        },
+        {
+            "key": "e_1_2_6_21_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/evo.13104"
+        },
+        {
+            "key": "e_1_2_6_22_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1086/418864"
+        },
+        {
+            "key": "e_1_2_6_23_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s00265-010-0957-5"
+        },
+        {
+            "key": "e_1_2_6_24_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1558-5646.2010.01108.x"
+        },
+        {
+            "key": "e_1_2_6_25_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/1446771"
+        },
+        {
+            "key": "e_1_2_6_26_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.anbehav.2004.06.021"
+        },
+        {
+            "key": "e_1_2_6_27_1",
+            "first-page": "233",
+            "article-title": "The benefits of transparency: candling as a simple method for determining sex in red\u2010backed salamanders (Plethodon cinereus)",
+            "volume": "32",
+            "author": "Gillette JR",
+            "year": "2001",
+            "journal-title": "Herpetol Rev"
+        },
+        {
+            "key": "e_1_2_6_28_1",
             "doi-asserted-by": "crossref",
-            "first-page": "53",
-            "DOI": "10.1080/10437797.2000.10778989",
-            "volume": "36",
-            "author": "Rocha C. J.",
-            "year": "2000",
-            "journal-title": "Journal of Social Work Education"
+            "first-page": "1018",
+            "DOI": "10.1111/gcb.12702",
+            "article-title": "Please don't misuse the museum: \u2018declines\u2019 may be statistical",
+            "volume": "21",
+            "author": "Grant EHC",
+            "year": "2015",
+            "journal-title": "Glob Change Biol"
         },
         {
-            "key": "CIT0029",
-            "volume-title": "Strategies of community intervention: Macro practice",
-            "author": "Rothman J.",
-            "year": "1995"
-        },
-        {
-            "key": "CIT0032",
+            "key": "e_1_2_6_29_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1093/obo/9780195396607-0033"
+            "DOI": "10.1046/j.1365-294X.2002.01644.x"
         },
         {
-            "key": "CIT0033",
-            "volume-title": "Criminal justice social work in the United States: Adapting to new challenges",
-            "author": "Wilson M.",
-            "year": "2010"
+            "key": "e_1_2_6_30_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1365-294X.2011.05283.x"
+        },
+        {
+            "key": "e_1_2_6_31_1",
+            "volume-title": "Animal movement extension to ArcView",
+            "author": "Hooge PN",
+            "year": "1997"
+        },
+        {
+            "key": "e_1_2_6_32_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/1941211"
+        },
+        {
+            "key": "e_1_2_6_33_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1093/beheco/art122"
+        },
+        {
+            "key": "e_1_2_6_34_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1086/303280"
+        },
+        {
+            "key": "e_1_2_6_35_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1365-294X.2012.05741.x"
+        },
+        {
+            "key": "e_1_2_6_36_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1748-7692.2008.00260.x"
+        },
+        {
+            "key": "e_1_2_6_37_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1655/0018-0831(2006)62[265:LTOPCI]2.0.CO;2"
+        },
+        {
+            "key": "e_1_2_6_38_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1365-294X.2004.02394.x"
+        },
+        {
+            "key": "e_1_2_6_39_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1365-294X.2010.04946.x"
+        },
+        {
+            "key": "e_1_2_6_40_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s00265-008-0659-4"
+        },
+        {
+            "key": "e_1_2_6_41_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.anbehav.2011.07.041"
+        },
+        {
+            "key": "e_1_2_6_42_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1655/0018-0831(2007)63[51:JMAPIC]2.0.CO;2"
+        },
+        {
+            "key": "e_1_2_6_43_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1365-294X.2006.03076.x"
+        },
+        {
+            "key": "e_1_2_6_44_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/1563411"
+        },
+        {
+            "key": "e_1_2_6_45_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s00265-009-0726-5"
+        },
+        {
+            "key": "e_1_2_6_46_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1139/Z07-008"
+        },
+        {
+            "key": "e_1_2_6_47_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1163/156853990X00176"
+        },
+        {
+            "key": "e_1_2_6_48_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/BF00317613"
+        },
+        {
+            "key": "e_1_2_6_49_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/BF00166488"
+        },
+        {
+            "key": "e_1_2_6_50_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1073/pnas.97.7.3324"
+        },
+        {
+            "key": "e_1_2_6_51_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/mec.12707"
+        },
+        {
+            "key": "e_1_2_6_52_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s11692-015-9339-2"
+        },
+        {
+            "key": "e_1_2_6_53_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1558-5646.1997.tb01458.x"
+        },
+        {
+            "key": "e_1_2_6_54_1",
+            "first-page": "13",
+            "article-title": "Life history of the red\u2010backed salamander, Plethodon cinereus, in Northeastern Tennessee",
+            "volume": "33",
+            "author": "Nagel JW",
+            "year": "1977",
+            "journal-title": "Herpetologica"
+        },
+        {
+            "key": "e_1_2_6_55_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1034/j.1600-0587.2002.250313.x"
+        },
+        {
+            "key": "e_1_2_6_56_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1655/09-023.1"
+        },
+        {
+            "key": "e_1_2_6_57_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1461-0248.2005.00735.x"
+        },
+        {
+            "key": "e_1_2_6_58_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1093/oxfordjournals.jhered.a111573"
+        },
+        {
+            "key": "e_1_2_6_59_1",
+            "unstructured": "SAS Institute Inc(2004)SAS version 9.1Cary NC"
+        },
+        {
+            "key": "e_1_2_6_60_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/1441125"
+        },
+        {
+            "key": "e_1_2_6_61_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s00114-006-0205-z"
+        },
+        {
+            "key": "e_1_2_6_62_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/2265701"
+        },
+        {
+            "key": "e_1_2_6_63_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1098/rspb.2004.2805"
+        },
+        {
+            "key": "e_1_2_6_64_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1046/j.1420-9101.2002.00373.x"
+        },
+        {
+            "key": "e_1_2_6_65_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1038/sj.hdy.6800485"
+        },
+        {
+            "key": "e_1_2_6_66_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1046/j.1420-9101.2002.00389.x"
+        },
+        {
+            "key": "e_1_2_6_67_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1139/Z09-034"
+        },
+        {
+            "key": "e_1_2_6_68_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1086/688257"
+        },
+        {
+            "key": "e_1_2_6_69_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1046/j.1365-294X.2003.01925.x"
+        },
+        {
+            "key": "e_1_2_6_70_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s00265-005-0094-8"
+        },
+        {
+            "key": "e_1_2_6_71_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1365-294X.2008.03876.x"
+        },
+        {
+            "key": "e_1_2_6_72_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s10519-013-9639-1"
+        },
+        {
+            "key": "e_1_2_6_73_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1439-0310.2007.01449.x"
+        },
+        {
+            "key": "e_1_2_6_74_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1086/285537"
+        },
+        {
+            "key": "e_1_2_6_75_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1086/303168"
+        },
+        {
+            "key": "e_1_2_6_76_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/1938423"
+        },
+        {
+            "key": "e_1_2_6_77_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/evo.12527"
+        },
+        {
+            "key": "e_1_2_6_78_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1643/0045-8511(2004)004[0028:RAACOR]2.0.CO;2"
         }
     ],
     "container-title": [
-        "Social Work Education"
+        "Population Ecology"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/02615479.2017.1297785",
-            "content-type": "unspecified",
+            "URL": "http://link.springer.com/article/10.1007/s10144-017-0604-3/fulltext.html",
+            "content-type": "text/html",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "http://link.springer.com/content/pdf/10.1007/s10144-017-0604-3.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "http://link.springer.com/content/pdf/10.1007/s10144-017-0604-3.pdf",
+            "content-type": "application/pdf",
             "content-version": "vor",
             "intended-application": "similarity-checking"
         }
@@ -257,91 +587,69 @@
     "deposited": {
         "date-parts": [
             [
-                2019,
+                2023,
                 9,
-                19
+                15
             ]
         ],
-        "date-time": "2019-09-19T17:01:40Z",
-        "timestamp": 1568912500000
+        "date-time": "2023-09-15T16:43:29Z",
+        "timestamp": 1694796209000
     },
-    "score": 16.753056,
+    "score": 16.041872,
     "resource": {
         "primary": {
-            "URL": "https://www.tandfonline.com/doi/full/10.1080/02615479.2017.1297785"
+            "URL": "https://esj-journals.onlinelibrary.wiley.com/doi/10.1007/s10144-017-0604-3"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2017,
-                3,
-                12
+                2018,
+                1,
+                18
             ]
         ]
     },
-    "references-count": 25,
+    "references-count": 77,
     "journal-issue": {
-        "issue": "4",
-        "published-online": {
-            "date-parts": [
-                [
-                    2017,
-                    3,
-                    8
-                ]
-            ]
-        },
+        "issue": "3",
         "published-print": {
             "date-parts": [
                 [
-                    2017,
-                    5,
-                    19
+                    2018,
+                    7
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1080/02615479.2017.1297785"
+        "10.1007/s10144-017-0604-3"
     ],
-    "URL": "http://dx.doi.org/10.1080/02615479.2017.1297785",
+    "URL": "http://dx.doi.org/10.1007/s10144-017-0604-3",
+    "archive": [
+        "Portico"
+    ],
     "ISSN": [
-        "0261-5479",
-        "1470-1227"
+        "1438-3896",
+        "1438-390X"
     ],
     "issn-type": [
         {
-            "value": "0261-5479",
+            "value": "1438-3896",
             "type": "print"
         },
         {
-            "value": "1470-1227",
+            "value": "1438-390X",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2017,
-                3,
-                12
+                2018,
+                1,
+                18
             ]
         ]
-    },
-    "assertion": [
-        {
-            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
-            "order": 1,
-            "name": "peerreview_statement",
-            "label": "Peer Review Statement"
-        },
-        {
-            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=cswe20",
-            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=cswe20",
-            "order": 2,
-            "name": "aims_and_scope_url",
-            "label": "Aim & Scope"
-        }
-    ]
+    }
 }

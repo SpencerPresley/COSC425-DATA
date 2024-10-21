@@ -3,288 +3,354 @@
         "date-parts": [
             [
                 2024,
-                10,
-                5
+                8,
+                2
             ]
         ],
-        "date-time": "2024-10-05T04:22:53Z",
-        "timestamp": 1728102173781
+        "date-time": "2024-08-02T00:22:32Z",
+        "timestamp": 1722558152117
     },
-    "reference-count": 30,
-    "publisher": "SAGE Publications",
-    "issue": "3",
-    "license": [
-        {
-            "start": {
-                "date-parts": [
-                    [
-                        2019,
-                        2,
-                        13
-                    ]
-                ],
-                "date-time": "2019-02-13T00:00:00Z",
-                "timestamp": 1550016000000
-            },
-            "content-version": "tdm",
-            "delay-in-days": 0,
-            "URL": "https://journals.sagepub.com/page/policies/text-and-data-mining-license"
-        }
-    ],
+    "reference-count": 45,
+    "publisher": "Informa UK Limited",
+    "issue": "2",
     "content-domain": {
         "domain": [
-            "journals.sagepub.com"
+            "www.tandfonline.com"
         ],
         "crossmark-restriction": true
     },
     "short-container-title": [
-        "Journal of Marketing Education"
+        "The Journal of Economic Education"
     ],
     "published-print": {
         "date-parts": [
             [
-                2019,
-                12
+                2020,
+                4,
+                2
             ]
         ]
     },
-    "abstract": "<jats:p> Teaching with cases, especially at universities where cases are not a regular part of the curriculum, poses challenges for both faculty and students. The results in this research present an effective and manageable method to introduce the case analysis process and to facilitate written case analysis for both students and faculty. Experiment 1 compares the effectiveness of a semistructured one-page written case analysis over a traditional case analysis and finds the shorter assignment results in shorter grading time and better student grades. A two-case method introducing the case analysis process is tested in Experiment 2 and finds that a short lecture introducing the case analysis method and an initial small group practice case further improves student grades. Theoretical reasoning and directions for future research are discussed. </jats:p>",
-    "DOI": "10.1177/0273475319826621",
+    "DOI": "10.1080/00220485.2020.1731384",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2019,
+                2020,
                 2,
-                13
+                28
             ]
         ],
-        "date-time": "2019-02-13T14:33:07Z",
-        "timestamp": 1550068387000
+        "date-time": "2020-02-28T16:00:42Z",
+        "timestamp": 1582905642000
     },
-    "page": "215-229",
-    "update-policy": "http://dx.doi.org/10.1177/sage-journals-update-policy",
+    "page": "116-129",
+    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
     "source": "Crossref",
-    "is-referenced-by-count": 7,
+    "is-referenced-by-count": 8,
     "title": [
-        "How to Improve Written Case Analysis and Reduce Grading Time: The One-Page, Two-Case Method"
+        "Using the process approach to teach writing in economics"
     ],
-    "prefix": "10.1177",
-    "volume": "41",
+    "prefix": "10.1080",
+    "volume": "51",
     "author": [
         {
-            "given": "Kirsten A.",
-            "family": "Passyn",
+            "given": "Jill",
+            "family": "Caviglia-Harris",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Citadel Military College of South Carolina, Charleston, SC, USA"
-                }
-            ]
-        },
-        {
-            "given": "M. J.",
-            "family": "Billups",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Salisbury University, Salisbury, MD, USA"
+                    "name": "Economics and Finance Department and Environmental Studies Department, Salisbury University, Salisbury, MD, USA"
                 }
             ]
         }
     ],
-    "member": "179",
+    "member": "301",
     "published-online": {
         "date-parts": [
             [
-                2019,
+                2020,
                 2,
-                13
+                28
             ]
         ]
     },
     "reference": [
         {
-            "key": "bibr1-0273475319826621",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10528008.1993.11488425"
-        },
-        {
-            "key": "bibr2-0273475319826621",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3102/0034654314551063"
-        },
-        {
-            "key": "bibr3-0273475319826621",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/1052562905283346"
-        },
-        {
-            "key": "bibr4-0273475319826621",
-            "unstructured": "Austin R. D., Kelley R. L. (2012). Case analysis coach. Retrieved from https://cb.hbsp.harvard.edu/cbmp/product/4380-HTM-ENG"
-        },
-        {
-            "volume-title": "Paper presented at the Marketing Educators Association Conference",
-            "year": "2006",
-            "author": "Bacon D. R.",
-            "key": "bibr5-0273475319826621"
-        },
-        {
-            "volume-title": "Paper presented at the Marketing Educators Association Conference",
+            "key": "CIT0001",
+            "first-page": "523",
+            "volume-title": "Cross-talk in comp theory: A reader",
+            "author": "Bartholomae D.",
             "year": "2011",
-            "author": "Bacon D. R.",
-            "key": "bibr6-0273475319826621"
+            "edition": "3"
         },
         {
-            "key": "bibr7-0273475319826621",
-            "unstructured": "Case Method Teaching. (2018). Retrieved from https://cb.hbsp.harvard.edu/cbmp/pages/content/casemethodteaching"
+            "volume-title": "A more beautiful question: The power of inquiry to spark breakthrough ideas",
+            "year": "2014",
+            "author": "Berger W.",
+            "key": "CIT0002"
         },
         {
-            "volume-title": "Teaching and the case method",
-            "year": "1987",
-            "author": "Christensen D. R.",
-            "key": "bibr8-0273475319826621"
-        },
-        {
-            "key": "bibr9-0273475319826621",
+            "key": "CIT0003",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1365-2729.2010.00392.x"
+            "DOI": "10.1257/jel.48.1.3"
         },
         {
-            "volume": "25",
-            "journal-title": "Journal of Management",
-            "year": "2001",
-            "author": "Desiraju R.",
-            "key": "bibr10-0273475319826621"
-        },
-        {
-            "key": "bibr11-0273475319826621",
+            "key": "CIT0004",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0273475306288398"
+            "DOI": "10.1177/1077695813518778"
         },
         {
-            "key": "bibr12-0273475319826621",
+            "edition": "2",
+            "volume-title": "Under the grammar hammer: The 25 most important grammar mistakes and how to avoid them",
+            "year": "2014",
+            "author": "Cazort D.",
+            "key": "CIT0005"
+        },
+        {
+            "edition": "2018",
+            "volume-title": "The little book of research writing: The structural challenge of communicating knowledge\u2009+\u2009a method to meet it.",
+            "year": "2018",
+            "author": "Chaubey V.",
+            "key": "CIT0006"
+        },
+        {
+            "key": "CIT0007",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/027347538500700208"
+            "DOI": "10.2307/1182961"
         },
         {
-            "volume-title": "HBR guide to better business writing",
-            "year": "2013",
-            "author": "Garner B. A.",
-            "key": "bibr13-0273475319826621"
-        },
-        {
-            "key": "bibr14-0273475319826621",
+            "key": "CIT0008",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1109/IPCC.2006.320377"
+            "DOI": "10.2307/357695"
         },
         {
-            "key": "bibr15-0273475319826621",
+            "key": "CIT0009",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0273475300221004"
+            "DOI": "10.1080/00220485.1986.10845169"
         },
         {
-            "key": "bibr16-0273475319826621",
+            "key": "CIT0010",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0273475307302015"
+            "DOI": "10.1080/00220485.1993.10844796"
         },
         {
-            "key": "bibr17-0273475319826621",
+            "key": "CIT0011",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1207/s15430421tip4104_2"
+            "DOI": "10.1080/00220485.2010.510392"
         },
         {
-            "key": "bibr18-0273475319826621",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/002224379102800302"
+            "volume-title": "Resonate: Present visual stories that transform audiences",
+            "year": "2010",
+            "author": "Duarte N.",
+            "key": "CIT0012"
         },
         {
-            "key": "bibr19-0273475319826621",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/cjas.1239"
+            "volume-title": "HBR guide to persuasive presentations",
+            "year": "2012",
+            "author": "Duarte N.",
+            "key": "CIT0013"
         },
         {
-            "volume-title": "Managers, not MBAs: A hard look at the soft practice of managing and management development",
-            "year": "2004",
-            "author": "Mintzberg H.",
-            "key": "bibr20-0273475319826621"
-        },
-        {
-            "key": "bibr21-0273475319826621",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1108/14777280510700344"
-        },
-        {
-            "journal-title": "Case method in higher education: A case study",
-            "year": "1994",
-            "author": "Powell J. L.",
-            "key": "bibr22-0273475319826621"
-        },
-        {
-            "key": "bibr23-0273475319826621",
+            "key": "CIT0014",
             "doi-asserted-by": "crossref",
-            "first-page": "24",
-            "DOI": "10.4324/9780203029220-9",
-            "volume-title": "Learning to lead in higher education",
-            "author": "Ramsden P.",
-            "year": "2002"
+            "DOI": "10.1093/oso/9780195120165.001.0001",
+            "volume-title": "Writing without teachers",
+            "author": "Elbow P.",
+            "year": "1998",
+            "edition": "2"
         },
         {
-            "key": "bibr24-0273475319826621",
+            "key": "CIT0015",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/1052562910368940"
+            "DOI": "10.1080/00220485.1984.10845077"
         },
         {
-            "key": "bibr25-0273475319826621",
+            "key": "CIT0016",
             "doi-asserted-by": "publisher",
-            "DOI": "10.18870/hlrc.v4i4.222"
+            "DOI": "10.1017/CBO9781139524742.007"
         },
         {
-            "first-page": "145",
-            "volume-title": "Interaction in cooperative groups: The theoretical anatomy of group learning",
-            "year": "1992",
-            "author": "Slavin R. E.",
-            "key": "bibr26-0273475319826621"
-        },
-        {
-            "key": "bibr27-0273475319826621",
+            "key": "CIT0017",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0273475309344806"
+            "DOI": "10.1080/00220485.1985.10845118"
         },
         {
-            "key": "bibr28-0273475319826621",
+            "key": "CIT0018",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0273475310392542"
+            "DOI": "10.2307/819077"
         },
         {
-            "key": "bibr29-0273475319826621",
+            "key": "CIT0019",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/105256298100600303"
+            "DOI": "10.1093/elt/53.2.100"
         },
         {
-            "key": "bibr30-0273475319826621",
-            "unstructured": "Wu L., Law S. (2016). A practical approach to teach graduate students to write persuasively for business decision making (Atlantic Marketing Association Proceedings). Retrieved from https://digitalcommons.kennesaw.edu/ama_proceedings/2016/MKTGED-T09/7/"
+            "key": "CIT0020",
+            "first-page": "77",
+            "volume-title": "A guide to composition pedagogies",
+            "author": "George A.",
+            "year": "2014",
+            "edition": "2"
+        },
+        {
+            "key": "CIT0021",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/00220671.2010.488703"
+        },
+        {
+            "key": "CIT0022",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/376679"
+        },
+        {
+            "key": "CIT0023",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/00220485.1993.10844793"
+        },
+        {
+            "first-page": "79",
+            "volume-title": "Teaching economics to undergraduates: Alternatives to chalk and talk",
+            "year": "1998",
+            "author": "Hansen W. L.",
+            "key": "CIT0024"
+        },
+        {
+            "volume-title": "English for the rejected: Training literacy in the lower streams of the secondary school",
+            "year": "1964",
+            "author": "Holbrook D.",
+            "key": "CIT0025"
+        },
+        {
+            "issue": "2",
+            "key": "CIT0026",
+            "first-page": "78",
+            "volume": "18",
+            "author": "Horton J.",
+            "year": "2003",
+            "journal-title": "Journal of Private Enterprise"
+        },
+        {
+            "key": "CIT0027",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/1358684X.2017.1359493"
+        },
+        {
+            "volume-title": "36 children",
+            "year": "1967",
+            "author": "Kohl H.",
+            "key": "CIT0028"
+        },
+        {
+            "key": "CIT0029",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1257/jel.48.2.281"
+        },
+        {
+            "issue": "1",
+            "key": "CIT0030",
+            "first-page": "40",
+            "volume": "4",
+            "author": "Li L.",
+            "year": "2007",
+            "journal-title": "Journal of University Teaching & Learning Practice"
+        },
+        {
+            "issue": "2",
+            "key": "CIT0031",
+            "first-page": "481",
+            "volume": "21",
+            "author": "McCloskey D.",
+            "year": "1983",
+            "journal-title": "Journal of Economic Literature"
+        },
+        {
+            "key": "CIT0032",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1465-7295.1985.tb01761.x"
+        },
+        {
+            "key": "CIT0033",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3200/JECE.39.4.342-356"
+        },
+        {
+            "key": "CIT0034",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3200/JECE.39.3.287-296"
+        },
+        {
+            "key": "CIT0035",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1741-4369.2012.00674.x"
+        },
+        {
+            "key": "CIT0036",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5195/rt.2019.592"
+        },
+        {
+            "key": "CIT0037",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1093/elt/ccm002"
+        },
+        {
+            "key": "CIT0038",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/822261"
+        },
+        {
+            "key": "CIT0039",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/00220485.2017.1353459"
+        },
+        {
+            "key": "CIT0040",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/1183106"
+        },
+        {
+            "key": "CIT0041",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/00220489909596097"
+        },
+        {
+            "key": "CIT0042",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3200/JECE.36.1.43-58"
+        },
+        {
+            "key": "CIT0043",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/1469787405054237"
+        },
+        {
+            "issue": "3",
+            "key": "CIT0044",
+            "doi-asserted-by": "crossref",
+            "first-page": "343",
+            "DOI": "10.1080/02796015.2013.12087478",
+            "volume": "42",
+            "author": "Troia G. A.",
+            "year": "2013",
+            "journal-title": "School Psychology Review"
+        },
+        {
+            "volume-title": "Reforming college composition: Writing the wrongs",
+            "year": "2000",
+            "author": "Wallace R.",
+            "key": "CIT0045",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.5040/9798216984207"
         }
     ],
     "container-title": [
-        "Journal of Marketing Education"
+        "The Journal of Economic Education"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://journals.sagepub.com/doi/pdf/10.1177/0273475319826621",
-            "content-type": "application/pdf",
-            "content-version": "vor",
-            "intended-application": "text-mining"
-        },
-        {
-            "URL": "https://journals.sagepub.com/doi/full-xml/10.1177/0273475319826621",
-            "content-type": "application/xml",
-            "content-version": "vor",
-            "intended-application": "text-mining"
-        },
-        {
-            "URL": "https://journals.sagepub.com/doi/pdf/10.1177/0273475319826621",
+            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/00220485.2020.1731384",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -294,65 +360,91 @@
         "date-parts": [
             [
                 2024,
-                10,
-                4
+                8,
+                1
             ]
         ],
-        "date-time": "2024-10-04T19:37:00Z",
-        "timestamp": 1728070620000
+        "date-time": "2024-08-01T09:03:31Z",
+        "timestamp": 1722503011000
     },
-    "score": 15.268838,
+    "score": 15.310359,
     "resource": {
         "primary": {
-            "URL": "https://journals.sagepub.com/doi/10.1177/0273475319826621"
+            "URL": "https://www.tandfonline.com/doi/full/10.1080/00220485.2020.1731384"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2019,
+                2020,
                 2,
-                13
+                28
             ]
         ]
     },
-    "references-count": 30,
+    "references-count": 45,
     "journal-issue": {
-        "issue": "3",
+        "issue": "2",
         "published-print": {
             "date-parts": [
                 [
-                    2019,
-                    12
+                    2020,
+                    4,
+                    2
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1177/0273475319826621"
+        "10.1080/00220485.2020.1731384"
     ],
-    "URL": "http://dx.doi.org/10.1177/0273475319826621",
+    "URL": "http://dx.doi.org/10.1080/00220485.2020.1731384",
     "ISSN": [
-        "0273-4753",
-        "1552-6550"
+        "0022-0485",
+        "2152-4068"
     ],
     "issn-type": [
         {
             "type": "print",
-            "value": "0273-4753"
+            "value": "0022-0485"
         },
         {
             "type": "electronic",
-            "value": "1552-6550"
+            "value": "2152-4068"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2019,
+                2020,
                 2,
-                13
+                28
             ]
         ]
-    }
+    },
+    "assertion": [
+        {
+            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
+            "order": 1,
+            "name": "peerreview_statement",
+            "label": "Peer Review Statement"
+        },
+        {
+            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=vece20",
+            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=vece20",
+            "order": 2,
+            "name": "aims_and_scope_url",
+            "label": "Aim & Scope"
+        },
+        {
+            "value": "2020-02-28",
+            "order": 3,
+            "name": "published",
+            "label": "Published",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
+        }
+    ]
 }

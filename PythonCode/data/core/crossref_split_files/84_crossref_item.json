@@ -2,233 +2,356 @@
     "indexed": {
         "date-parts": [
             [
-                2022,
+                2024,
                 3,
-                29
+                27
             ]
         ],
-        "date-time": "2022-03-29T12:19:28Z",
-        "timestamp": 1648556368063
+        "date-time": "2024-03-27T05:20:39Z",
+        "timestamp": 1711516839815
     },
-    "reference-count": 16,
-    "publisher": "Entomological Society of Washington",
-    "issue": "4",
+    "reference-count": 30,
+    "publisher": "Informa UK Limited",
+    "issue": "11",
     "content-domain": {
-        "domain": [],
-        "crossmark-restriction": false
+        "domain": [
+            "www.tandfonline.com"
+        ],
+        "crossmark-restriction": true
     },
     "short-container-title": [
-        "Proceedings of the Entomological Society of Washington"
+        "Health Communication"
     ],
     "published-print": {
         "date-parts": [
             [
-                2020,
-                10,
-                23
+                2019,
+                9,
+                19
             ]
         ]
     },
-    "DOI": "10.4289/0013-8797.122.4.1022",
+    "DOI": "10.1080/10410236.2018.1489201",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2020,
-                10,
-                26
+                2018,
+                6,
+                20
             ]
         ],
-        "date-time": "2020-10-26T19:31:52Z",
-        "timestamp": 1603740712000
+        "date-time": "2018-06-20T20:47:34Z",
+        "timestamp": 1529527654000
     },
+    "page": "1350-1358",
+    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
     "source": "Crossref",
-    "is-referenced-by-count": 0,
+    "is-referenced-by-count": 6,
     "title": [
-        "Ants (Hymenoptera: Formicidae) Attracted to Baits in the E. A. Vaughn Wildlife Management Area, Worcester Co., Maryland"
+        "The Provider\u2019s Body in the Therapeutic Relationship: How Complementary and Alternative Medicine Providers Describe Their Work as Healers"
     ],
-    "prefix": "10.4289",
-    "volume": "122",
+    "prefix": "10.1080",
+    "volume": "34",
     "author": [
         {
-            "given": "Dana L.",
-            "family": "Price",
+            "given": "Vinita",
+            "family": "Agarwal",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Salisbury University, 1101 Camden Ave., Department of Biological Sciences, Salisbury Maryland, 21801, USA (e-mail: dlprice@salisbury.edu)"
-                }
-            ]
-        },
-        {
-            "given": "Emily",
-            "family": "Rowe",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Salisbury University, 1101 Camden Ave., Department of Biological Sciences, Salisbury Maryland, 21801, USA (e-mail: dlprice@salisbury.edu)"
-                }
-            ]
-        },
-        {
-            "given": "Hunter",
-            "family": "Mann",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Salisbury University, 1101 Camden Ave., Department of Biological Sciences, Salisbury Maryland, 21801, USA (e-mail: dlprice@salisbury.edu)"
+                    "name": "272 FH Department of Communication Arts, Fulton School of Liberal Arts, Salisbury University"
                 }
             ]
         }
     ],
-    "member": "2824",
+    "member": "301",
+    "published-online": {
+        "date-parts": [
+            [
+                2018,
+                6,
+                20
+            ]
+        ]
+    },
     "reference": [
         {
-            "key": "1",
-            "doi-asserted-by": "crossref",
-            "unstructured": "A. N. Anderson,  \"Journal of Biogeography.\"  24, \"Functional groups and patterns of organization in North American ant communities: a comparison with Australia.\" 433 (1997)",
-            "DOI": "10.1111/j.1365-2699.1997.00137.x"
+            "key": "CIT0001",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/1049732317723891"
         },
         {
-            "key": "2",
-            "unstructured": "B. T. Bestelmeyer, D. Agosti, L. E. Alonso, et al.  \"Ants: standard methods for measuring and monitoring biodiversity.\"  , \"Field techniques for the study of ground-dwelling ants\" 122 (2000)"
+            "key": "CIT0002",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/jan.13734"
         },
         {
-            "key": "3",
-            "doi-asserted-by": "crossref",
-            "unstructured": "G. Buczkowski  and G. Bennett  \"Insectes Sociaux.\"  54, \"Protein marking reveals predation on termites by the woodland ant, Aphaenogaster rudis.\" 219 (2007)",
-            "DOI": "10.1007/s00040-007-0933-x"
+            "key": "CIT0003",
+            "volume-title": "The Stanford encyclopedia of philosophy",
+            "author": "Bishop J.",
+            "year": "2016"
         },
         {
-            "key": "4",
-            "unstructured": "G. A. Coovert,  \"Bulletin of the Ohio Biological Survey.\"  15, \"The ants of Ohio (Hymenoptera: Formicidae).\" 1 (2005)"
+            "key": "CIT0004",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/978-94-015-8424-1"
         },
         {
-            "key": "5",
-            "unstructured": "A. M Ellison, N. J. Gotelli, E. J., Farnesworth, et al.  \"A field guide to the ants of New England.\"  , 398 (2012)"
+            "key": "CIT0005",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/0277-9536(90)90256-R"
         },
         {
-            "key": "6",
-            "doi-asserted-by": "crossref",
-            "unstructured": "J. H. Fellers,  \"Ecology.\"  68, \"Interference and exploitation in a guild of woodland ants.\" 1466 (1987)",
-            "DOI": "10.2307/1939230"
+            "key": "CIT0006",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1001/jama.286.15.1897"
         },
         {
-            "key": "7",
-            "doi-asserted-by": "crossref",
-            "unstructured": "B. L. Fisher  and S. P. Cover  \"Ants of North America: a guide to the genera.\"  , 216 (2007)",
-            "DOI": "10.1525/9780520934559"
+            "key": "CIT0007",
+            "first-page": "1",
+            "volume-title": "Collecting and interpreting qualitative materials",
+            "author": "Denzin N. K.",
+            "year": "2008",
+            "edition": "3"
         },
         {
-            "key": "8",
-            "doi-asserted-by": "crossref",
-            "unstructured": "J. P. Lessard, R. R. Dunn, N. J. Sanders,  \"Insectes Sociaux.\"  56, \"Temperature-mediated coexistence in temperate forest ant communities.\" 149 (2009)",
-            "DOI": "10.1007/s00040-009-0006-4"
+            "key": "CIT0008",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1207/S15327027HC1401_1"
         },
         {
-            "key": "9",
-            "doi-asserted-by": "crossref",
-            "unstructured": "D. Lubertazzi,  \"Psyche.\"  2012, \"The biology and natural history of Aphaenogaster rudis.\" 1 (2012)",
-            "DOI": "10.1155/2012/752815"
+            "key": "CIT0009",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/1049732305281944"
         },
         {
-            "key": "10",
-            "doi-asserted-by": "crossref",
-            "unstructured": "H. R. Mann, E. Rowe, J. Selfridge, et al.  \"Northeastern Naturalist.\"  25, \"Leaf Litter and arboreal ants (Hymenoptera: Formicidae) in a mid-Atlantic Forest.\" 341 (2018)",
-            "DOI": "10.1656/045.025.0217"
+            "key": "CIT0010",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.4324/9781315105277"
         },
         {
-            "key": "11",
-            "unstructured": "et al.  \"The Maryland guide to hunting and trapping, 2016\u20132017.\"  , 65 (2016a)"
+            "key": "CIT0011",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.14679566.2010.01291.x"
         },
         {
-            "key": "12",
-            "unstructured": "et al.  \"E.A. Vaughn WMA.\"  ,  (2016b)"
+            "key": "CIT0012",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/10410236.2014.976605"
         },
         {
-            "key": "13",
-            "doi-asserted-by": "crossref",
-            "unstructured": "C. E. Mitchell, M. G. Turner, S. M. Pearson,  \"Ecological Applications.\"  12, \"Effects of historical land use and forest patch size on myrmecochores and ant communities.\" 1364 (2002)",
-            "DOI": "10.1890/1051-0761(2002)012[1364:EOHLUA]2.0.CO;2"
+            "key": "CIT0013",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1207/S15327027HC1402_1"
         },
         {
-            "key": "14",
-            "doi-asserted-by": "crossref",
-            "unstructured": "J. H. Ness, D. F. Morin, I. Giladi,  \"Oikos.\"  12, \"Uncommon specialization in a mutualism between a temperate herbaceous plant guild and an ant: are Aphaenogaster ants keystone mutualists?\" 1793 (2009)",
-            "DOI": "10.1111/j.1600-0706.2009.17430.x"
+            "key": "CIT0014",
+            "volume-title": "The ethics of care",
+            "author": "Held V.",
+            "year": "2006"
         },
         {
-            "key": "15",
-            "doi-asserted-by": "crossref",
-            "unstructured": "E. C. Underwood  and B. L. Fisher  \"Biological Conservation.\"  132, \"The role of ants in conservation monitoring: If, when, and how.\" 166 (2006)",
-            "DOI": "10.1016/j.biocon.2006.03.022"
+            "key": "CIT0015",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/10410230802460234"
         },
         {
-            "key": "16",
-            "doi-asserted-by": "crossref",
-            "unstructured": "T. J. Zelikova, R. R. Dunn, N. J. Sanders,  \"Acta Oecologica.\"  34, \"Variation in seed dispersal along an elevational gradient in Great Smoky Mountains National Park.\" 155 (2008)",
-            "DOI": "10.1016/j.actao.2008.05.002"
+            "key": "CIT0016",
+            "volume-title": "Complementary and Alternative Medicine in the United States",
+            "author": "Institute of Medicine (IOM) (US) Committee on the Use of Complementary and Alternative Medicine by the American Public",
+            "year": "2005"
+        },
+        {
+            "key": "CIT0017",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1136/jech.2004.024562"
+        },
+        {
+            "key": "CIT0018",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/0147-1767(85)90062-8"
+        },
+        {
+            "key": "CIT0019",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.4135/9781446254530"
+        },
+        {
+            "key": "CIT0021",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/10410236.2015.1020261"
+        },
+        {
+            "key": "CIT0022",
+            "first-page": "36",
+            "volume-title": "The Routledge handbook of health communication",
+            "author": "Sharf B. F.",
+            "year": "2011",
+            "edition": "2"
+        },
+        {
+            "key": "CIT0023",
+            "first-page": "9",
+            "volume-title": "Handbook of health communication",
+            "author": "Sharf B. F.",
+            "year": "2003"
+        },
+        {
+            "key": "CIT0024",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1155/2015/145154"
+        },
+        {
+            "key": "CIT0025",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1001/jama.1997.03540320082047"
+        },
+        {
+            "key": "CIT0026",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/10410236.2012.684205"
+        },
+        {
+            "key": "CIT0027",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.ctcp.2014.09.004"
+        },
+        {
+            "key": "CIT0028",
+            "volume-title": "Moral boundaries: A political argument for an ethic of care",
+            "author": "Tronto J.",
+            "year": "1993"
+        },
+        {
+            "key": "CIT0029",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1097/00012272-199912000-00004"
+        },
+        {
+            "key": "CIT0030",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1046/j.1440-1800.2003.00178.x"
+        },
+        {
+            "key": "CIT0032",
+            "first-page": "89",
+            "volume": "32",
+            "author": "Zoller H. M.",
+            "year": "2008",
+            "journal-title": "Communication Yearbook"
         }
     ],
     "container-title": [
-        "Proceedings of the Entomological Society of Washington"
+        "Health Communication"
+    ],
+    "language": "en",
+    "link": [
+        {
+            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/10410236.2018.1489201",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+        }
     ],
     "deposited": {
         "date-parts": [
             [
-                2020,
-                10,
-                28
+                2019,
+                8,
+                27
             ]
         ],
-        "date-time": "2020-10-28T10:06:51Z",
-        "timestamp": 1603879611000
+        "date-time": "2019-08-27T11:25:34Z",
+        "timestamp": 1566905134000
     },
-    "score": 16.298967,
+    "score": 12.912554,
     "resource": {
         "primary": {
-            "URL": "https://bioone.org/journals/proceedings-of-the-entomological-society-of-washington/volume-122/issue-4/0013-8797.122.4.1022/Ants-Hymenoptera--Formicidae-Attracted-to-Baits-in-the-E/10.4289/0013-8797.122.4.1022.full"
+            "URL": "https://www.tandfonline.com/doi/full/10.1080/10410236.2018.1489201"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2020,
-                10,
-                23
+                2018,
+                6,
+                20
             ]
         ]
     },
-    "references-count": 16,
+    "references-count": 30,
     "journal-issue": {
-        "issue": "4",
+        "issue": "11",
         "published-online": {
             "date-parts": [
                 [
-                    2020,
-                    10,
-                    1
+                    2018,
+                    6,
+                    5
+                ]
+            ]
+        },
+        "published-print": {
+            "date-parts": [
+                [
+                    2019,
+                    9,
+                    19
                 ]
             ]
         }
     },
-    "URL": "http://dx.doi.org/10.4289/0013-8797.122.4.1022",
+    "alternative-id": [
+        "10.1080/10410236.2018.1489201"
+    ],
+    "URL": "http://dx.doi.org/10.1080/10410236.2018.1489201",
     "ISSN": [
-        "0013-8797"
+        "1041-0236",
+        "1532-7027"
     ],
     "issn-type": [
         {
-            "value": "0013-8797",
+            "value": "1041-0236",
             "type": "print"
+        },
+        {
+            "value": "1532-7027",
+            "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2020,
-                10,
-                23
+                2018,
+                6,
+                20
             ]
         ]
-    }
+    },
+    "assertion": [
+        {
+            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
+            "order": 1,
+            "name": "peerreview_statement",
+            "label": "Peer Review Statement"
+        },
+        {
+            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=hhth20",
+            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=hhth20",
+            "order": 2,
+            "name": "aims_and_scope_url",
+            "label": "Aim & Scope"
+        },
+        {
+            "value": "2018-06-20",
+            "order": 3,
+            "name": "published",
+            "label": "Published",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
+        }
+    ]
 }

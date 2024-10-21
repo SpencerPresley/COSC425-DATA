@@ -3,327 +3,290 @@
         "date-parts": [
             [
                 2022,
-                12,
-                30
+                4,
+                1
             ]
         ],
-        "date-time": "2022-12-30T06:52:47Z",
-        "timestamp": 1672383167774
+        "date-time": "2022-04-01T19:37:15Z",
+        "timestamp": 1648841835430
     },
-    "reference-count": 46,
-    "publisher": "Informa UK Limited",
-    "issue": "1",
+    "reference-count": 39,
+    "publisher": "IGI Global",
     "content-domain": {
-        "domain": [
-            "www.tandfonline.com"
-        ],
-        "crossmark-restriction": true
+        "domain": [],
+        "crossmark-restriction": false
     },
-    "short-container-title": [
-        "Management &amp; Organizational History"
-    ],
     "published-print": {
         "date-parts": [
             [
-                2021,
-                1,
-                2
+                2019
             ]
         ]
     },
-    "DOI": "10.1080/17449359.2021.1927759",
-    "type": "journal-article",
+    "abstract": "<jats:p>With China becoming an economic powerhouse, there has been increasing need for more studies on issues related to information systems localization in China and ways to solve them. Most information systems adoption literatures have been conducted in the context of Western society, especially in America, and due to differences in the cultural, social, and legal environment, these theories and findings out of these studies need to be tested in the context of Chinese culture. This chapter adopts the technology, organization, and environment framework to explain why a Chinese apparel manufacturing company failed in its first enterprise resource planning (ERP) project, and how it achieved success in the second project with government's assistance and what they have learned from their first experience with ERP. This study provides insight on the characteristics of Chinese companies and the unique challenges they have encountered in the informatization process. </jats:p>",
+    "DOI": "10.4018/978-1-5225-7214-5.ch008",
+    "type": "book-chapter",
     "created": {
         "date-parts": [
             [
-                2021,
-                5,
-                27
+                2018,
+                8,
+                8
             ]
         ],
-        "date-time": "2021-05-27T09:41:45Z",
-        "timestamp": 1622108505000
+        "date-time": "2018-08-08T16:23:50Z",
+        "timestamp": 1533745430000
     },
-    "page": "22-40",
-    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
+    "page": "162-178",
     "source": "Crossref",
-    "is-referenced-by-count": 1,
+    "is-referenced-by-count": 0,
     "title": [
-        "Entrepreneurial Processes and Industry Development:The Case of Baltimore\u2019s Canning Entrepreneurs"
+        "A Tale of Two Systems"
     ],
-    "prefix": "10.1080",
-    "volume": "16",
+    "prefix": "10.4018",
     "author": [
         {
-            "given": "Richard C.",
-            "family": "Hoffman",
+            "given": "Wendy",
+            "family": "Wang",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Professor Emeritus, Salisbury University, Salisbury, MD USA"
+                    "name": "Trident University International, USA"
+                }
+            ]
+        },
+        {
+            "given": "Yun",
+            "family": "Wu",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Salisbury University, USA"
                 }
             ]
         }
     ],
-    "member": "301",
-    "published-online": {
-        "date-parts": [
-            [
-                2021,
-                5,
-                27
-            ]
-        ]
-    },
+    "member": "2432",
     "reference": [
         {
-            "key": "cit0001",
+            "key": "978-1-5225-7214-5.ch008.-1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/17449359.2019.1683039"
+            "DOI": "10.4018/jeis.2007070105"
         },
         {
-            "key": "cit0002",
-            "first-page": "314",
-            "volume-title": "American History Now",
-            "author": "Beckert S.",
-            "year": "2011"
-        },
-        {
-            "key": "cit0003",
-            "volume-title": "Strategy and Structure: Chapters in the History of American Industrial Enterprise",
-            "author": "Chandler A. D.",
-            "year": "1962"
-        },
-        {
-            "key": "cit0004",
+            "key": "978-1-5225-7214-5.ch008.-2",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/tie.20315"
+            "DOI": "10.1016/j.im.2007.05.004"
         },
         {
-            "key": "cit0005",
-            "unstructured": "Clark, K. B. 1983. \u201cHow Industries Evolve: The Interaction of Design Hierarchies and Market Concept.\u201d Harvard Business School Division of Research Working Paper HBS  84\u201320."
-        },
-        {
-            "key": "cit0006",
+            "key": "978-1-5225-7214-5.ch008.-3",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/104225879101600102"
+            "DOI": "10.4018/jeis.2009070101"
         },
         {
-            "key": "cit0007",
+            "key": "978-1-5225-7214-5.ch008.-4",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1287/mnsc.32.11.1422"
+            "DOI": "10.2307/249403"
         },
         {
-            "key": "cit0008",
-            "volume-title": "Industries of Maryland: A Descriptive Review of the Manufacturing and Mercantile Industries of the City of Baltimore",
-            "author": "Edwards R.",
-            "year": "1882"
-        },
-        {
-            "key": "cit0009",
+            "key": "978-1-5225-7214-5.ch008.-5",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2307/3115922"
+            "DOI": "10.1080/10196780701296287"
         },
         {
-            "key": "cit0010",
+            "key": "978-1-5225-7214-5.ch008.-6",
+            "unstructured": "Campbell, R. R. (2013). Becoming a Techno-Industrial Power: Chinese Science and Technology Policy. Issues in Technology Innovation, 23, 1-15. Retrieved from https://www.brookings.edu/wpcontent/uploads/2016/06/29-science-technology-policy-china-campbell.pdf"
+        },
+        {
+            "key": "978-1-5225-7214-5.ch008.-7",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1017/eso.2016.41"
+            "DOI": "10.4018/jeis.2011070104"
         },
         {
-            "key": "cit0011",
-            "unstructured": "Gibson, C., ed. 1998. \u201cPopulation of the 100 Largest Cities and Other Urban Places in the United States: 1790 to 1990, Population Division Working Paper No. 27\u201d. Washington, D.C.: U.S. Bureau of the Census, https://www.census.gov/population/www/documentation/twps0027/twps0027.html"
-        },
-        {
-            "key": "cit0012",
+            "key": "978-1-5225-7214-5.ch008.-8",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0001839212467168"
+            "DOI": "10.1108/09574091211265350"
         },
         {
-            "key": "cit0013",
-            "first-page": "4",
-            "volume-title": "Baltimore Sun",
-            "author": "Henry F.",
-            "year": "1953"
+            "key": "978-1-5225-7214-5.ch008.-9",
+            "author": "H.Chan",
+            "year": "2016",
+            "journal-title": "China Internet and Software: All eyes on cloud and internet finance"
         },
         {
-            "key": "cit0014",
-            "unstructured": "\u201cThe Historical Development of Maryland\u2019s Canning Industry.\u201d 2019.\nUnpublished, Maryland Vertical File on the Canning Industry, Enoch Pratt Free Library\n. Accessed 6 November 2019"
-        },
-        {
-            "key": "cit0015",
+            "key": "978-1-5225-7214-5.ch008.-10",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/sej.1345"
+            "DOI": "10.1287/isre.3.1.60"
         },
         {
-            "key": "cit0016",
-            "volume-title": "The Monumental City: Its past History and Present Resources",
-            "author": "Howard G. W.",
-            "year": "1873"
+            "issue": "3",
+            "key": "978-1-5225-7214-5.ch008.-11",
+            "first-page": "68",
+            "article-title": "An Analysis of Interdepartmental Relations in Enterprise Resource Planning Implementation: A Social Capital Perspective.",
+            "volume": "11",
+            "author": "E.Ebru",
+            "year": "2015",
+            "journal-title": "International Journal of Enterprise Information Systems"
         },
         {
-            "key": "cit0017",
-            "volume-title": "The Vital Few: American Economic Progress and Its Protagonists",
-            "author": "Hughes J.",
-            "year": "1973"
-        },
-        {
-            "key": "cit0018",
-            "volume-title": "Canneries of the Eastern Shore",
-            "author": "Lee R.",
-            "year": "1986"
-        },
-        {
-            "key": "cit0019",
-            "volume-title": "History of the Canning Industry by Its Most Prominent Men",
-            "author": "Judge A. I.",
-            "year": "1914"
-        },
-        {
-            "key": "cit0020",
-            "volume-title": "Saving Our Harvest: The Story of the Mid-Atlantic Region\u2019s Canning and Freezing Industry. Baltimore",
-            "author": "Kee E.",
-            "year": "2006"
-        },
-        {
-            "key": "cit0021",
+            "key": "978-1-5225-7214-5.ch008.-12",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/msc.81"
+            "DOI": "10.1016/j.im.2015.06.009"
         },
         {
-            "key": "cit0022",
+            "key": "978-1-5225-7214-5.ch008.-13",
             "doi-asserted-by": "publisher",
-            "DOI": "10.5465/amr.1996.9602161568"
+            "DOI": "10.4018/jeis.2005100102"
         },
         {
-            "key": "cit0023",
+            "key": "978-1-5225-7214-5.ch008.-14",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1017/CBO9780511803963"
+            "DOI": "10.1016/j.chb.2016.10.022"
         },
         {
-            "key": "cit0024",
-            "first-page": "67",
-            "volume-title": "The Psychology of Entrepreneurship",
-            "author": "Markham G. D.",
-            "year": "2007"
-        },
-        {
-            "key": "cit0025",
-            "volume-title": "The Canning Clan: A Pageant of Pioneering Americans",
-            "author": "May E. C.",
-            "year": "1937"
-        },
-        {
-            "key": "cit0026",
-            "unstructured": "May, S. B. 1954. \u201cMakers of Modern America.\u201d This Week Magazine of the Baltimore Sun , February 14, no page no. Maryland Vertical File on the Canning Industry, Enoch Pratt Free Library, Baltimore, MD. Accessed 6 November 2019."
-        },
-        {
-            "key": "cit0027",
-            "volume-title": "Baltimore: Past and Present: With Biographical Sketches of Its Representative Men",
-            "author": "Mayer B.",
-            "year": "1871"
-        },
-        {
-            "key": "cit0028",
+            "key": "978-1-5225-7214-5.ch008.-15",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1287/mnsc.29.7.770"
+            "DOI": "10.1080/17517570903040196"
         },
         {
-            "key": "cit0029",
-            "volume-title": "Urban Dreams, Rural Commonwealth: The Rise of Plantation Society in the Chesapeake",
-            "author": "Musselwhite P.",
-            "year": "2019"
-        },
-        {
-            "key": "cit0030",
-            "volume-title": "The Oyster Packing Industry of Baltimore: Its History and Current Problems",
-            "author": "Nichol A. J.",
-            "year": "1937"
-        },
-        {
-            "key": "cit0031",
+            "key": "978-1-5225-7214-5.ch008.-16",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00076791.2012.687539"
+            "DOI": "10.1016/j.ijinfomgt.2017.03.002"
         },
         {
-            "key": "cit0032",
-            "volume-title": "The Populist Vision",
-            "author": "Postel C.",
-            "year": "2009"
-        },
-        {
-            "key": "cit0033",
+            "key": "978-1-5225-7214-5.ch008.-17",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1108/13552550810910997"
+            "DOI": "10.4018/jeis.2006070103"
         },
         {
-            "key": "cit0034",
+            "key": "978-1-5225-7214-5.ch008.-18",
             "doi-asserted-by": "publisher",
-            "DOI": "10.4324/9780203202050"
+            "DOI": "10.1016/j.im.2011.01.003"
         },
         {
-            "key": "cit0035",
-            "unstructured": "Sears, J. 2015. \u201cBaltimore\u2019s Packing and Canning Industry\u201d. Baltimore, MD: Self-published. Edward H. Nabb Research Center for Delmarva History and Culture, Salisbury University, Salisbury, Maryland . Accessed 15 October 2019"
-        },
-        {
-            "key": "cit0036",
-            "volume-title": "History of Baltimore, Maryland from Its Founding as a Town to the Current Year 1729-1898",
-            "author": "Shepherd H. E.",
-            "year": "1898"
-        },
-        {
-            "key": "cit0037",
+            "key": "978-1-5225-7214-5.ch008.-19",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/17449359.2017.1357234"
+            "DOI": "10.1016/j.ijinfomgt.2015.06.004"
         },
         {
-            "key": "cit0038",
+            "key": "978-1-5225-7214-5.ch008.-20",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2307/3116434"
+            "DOI": "10.4018/jeis.2013070104"
         },
         {
-            "key": "cit0039",
+            "key": "978-1-5225-7214-5.ch008.-21",
+            "first-page": "173",
+            "article-title": "The Enterprise System Experience \u2013 From Adoption to Success",
+            "author": "M. L.Markus",
+            "year": "2000",
+            "journal-title": "Framing the Domains of IT Research: Glimpsing the Future Through the Past"
+        },
+        {
+            "key": "978-1-5225-7214-5.ch008.-22",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/smj.4250080203"
+            "DOI": "10.4018/jeis.2007070102"
         },
         {
-            "key": "cit0040",
-            "unstructured": "U.S. Census Bureau. 1865. \u201cManufactures of the United States in 1860\u201d. Washington: Government Printing Office. https://www-census-gov.proxy-su.researchport.umd.edu/library/publications/1866/dec/1860d.html"
-        },
-        {
-            "key": "cit0041",
-            "unstructured": "U.S. Census Bureau. 1883. \u201c1880 Census: Report on the Manufactures of the United States, Vol. 2. Washington: Government Printing Office\u201d. https://www-census-gov.proxy-Su.researchport.umd.edu/library/publications/1883/dec/vol-02-manufactures.html"
-        },
-        {
-            "key": "cit0042",
-            "unstructured": "U.S. Census Bureau. 1893. \u201c1890 Census: Report on Manufacturing Industries in the United States, Vol. 6. Washington: Government Printing Office\u201d. https://www.census.gov/prod/www/decennial.html"
-        },
-        {
-            "key": "cit0043",
-            "unstructured": "U.S. Census Bureau. 1872. \u201cThe Statistics of the Wealth and Industry of the United States, 9th Census, Vol. III.\u201d Washington: Government Printing Office, 1872. https://www-census-gov.proxy-su.researchport.umd.edu/library/publications/1874/dec/1870d.html"
-        },
-        {
-            "key": "cit0044",
+            "key": "978-1-5225-7214-5.ch008.-23",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/sej.1346"
+            "DOI": "10.4018/jeis.2008010105"
         },
         {
-            "key": "cit0045",
-            "unstructured": "Webster, I. 2019. \u201c$1,000,000 in 1880 \u2192 2018 | Inflation Calculator.\u201d U.S. Official Inflation Data, Alioth Finance, Nivember 18. https://www.officialdata.org/1880-dollars-in-2018?amount=1000000"
+            "key": "978-1-5225-7214-5.ch008.-24",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.im.2014.03.006"
         },
         {
-            "key": "cit0046",
-            "volume-title": "Maryland, Is Resources, Industries, and Institutions",
-            "author": "Williams G. H.",
-            "year": "1893"
+            "key": "978-1-5225-7214-5.ch008.-25",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.im.2011.01.001"
+        },
+        {
+            "key": "978-1-5225-7214-5.ch008.-26",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.4018/ijeis.2014070103"
+        },
+        {
+            "key": "978-1-5225-7214-5.ch008.-27",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1108/JEIM-03-2014-0028"
+        },
+        {
+            "key": "978-1-5225-7214-5.ch008.-28",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/20721429"
+        },
+        {
+            "issue": "4",
+            "key": "978-1-5225-7214-5.ch008.-29",
+            "doi-asserted-by": "crossref",
+            "first-page": "73",
+            "DOI": "10.4018/ijeis.2014100105",
+            "article-title": "Evaluating the Internal and External Factors Toward ERP Success: Examples from Bruneian Businesses.",
+            "volume": "10",
+            "author": "A. H.Seyal",
+            "year": "2014",
+            "journal-title": "International Journal of Enterprise Information Systems"
+        },
+        {
+            "key": "978-1-5225-7214-5.ch008.-30",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.25300/MISQ/2015/39.1.03"
+        },
+        {
+            "key": "978-1-5225-7214-5.ch008.-31",
+            "author": "L. G.Tornatzky",
+            "year": "1990",
+            "journal-title": "The processes of technological innovation"
+        },
+        {
+            "key": "978-1-5225-7214-5.ch008.-32",
+            "unstructured": "Tse, E. (2016). The Rise of Entrepreneurship in China. Retrieved from https://www.forbes.com/sites/tseedward/2016/04/05/the-rise-of-entrepreneurship-in-china/#51f8b4403efc"
+        },
+        {
+            "key": "978-1-5225-7214-5.ch008.-33",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.4018/jeis.2008100103"
+        },
+        {
+            "key": "978-1-5225-7214-5.ch008.-34",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.im.2010.01.005"
+        },
+        {
+            "key": "978-1-5225-7214-5.ch008.-35",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/30036540"
+        },
+        {
+            "key": "978-1-5225-7214-5.ch008.-36",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1745-493x.2012.03287.x"
+        },
+        {
+            "key": "978-1-5225-7214-5.ch008.-37",
+            "author": "R.Yin",
+            "year": "1994",
+            "journal-title": "Case study research - design and methods"
+        },
+        {
+            "key": "978-1-5225-7214-5.ch008.-38",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.ijpe.2004.09.004"
+        },
+        {
+            "key": "978-1-5225-7214-5.ch008.-39",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.ijinfomgt.2009.09.007"
         }
     ],
     "container-title": [
-        "Management &amp; Organizational History"
+        "Advances in IT Standards and Standardization Research",
+        "Handbook of Research on the Evolution of IT and the Rise of E-Society"
     ],
-    "language": "en",
     "link": [
         {
-            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/17449359.2021.1927759",
+            "URL": "https://www.igi-global.com/viewtitle.aspx?TitleId=211615",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -332,92 +295,51 @@
     "deposited": {
         "date-parts": [
             [
-                2021,
-                10,
-                14
+                2020,
+                5,
+                18
             ]
         ],
-        "date-time": "2021-10-14T07:24:41Z",
-        "timestamp": 1634196281000
+        "date-time": "2020-05-18T20:57:59Z",
+        "timestamp": 1589835479000
     },
-    "score": 15.885607,
+    "score": 13.782701,
     "resource": {
         "primary": {
-            "URL": "https://www.tandfonline.com/doi/full/10.1080/17449359.2021.1927759"
+            "URL": "http://services.igi-global.com/resolvedoi/resolve.aspx?doi=10.4018/978-1-5225-7214-5.ch008"
         }
     },
+    "subtitle": [
+        "ERP in China \u2013 Failure and Success"
+    ],
     "issued": {
         "date-parts": [
             [
-                2021,
-                1,
-                2
+                2019
             ]
         ]
     },
-    "references-count": 46,
-    "journal-issue": {
-        "issue": "1",
-        "published-print": {
-            "date-parts": [
-                [
-                    2021,
-                    1,
-                    2
-                ]
-            ]
-        }
-    },
-    "alternative-id": [
-        "10.1080/17449359.2021.1927759"
-    ],
-    "URL": "http://dx.doi.org/10.1080/17449359.2021.1927759",
+    "references-count": 39,
+    "URL": "http://dx.doi.org/10.4018/978-1-5225-7214-5.ch008",
     "ISSN": [
-        "1744-9359",
-        "1744-9367"
+        "1935-3391",
+        "1935-3405"
     ],
     "issn-type": [
         {
-            "value": "1744-9359",
+            "value": "1935-3391",
             "type": "print"
         },
         {
-            "value": "1744-9367",
+            "value": "1935-3405",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2021,
-                1,
-                2
+                2019
             ]
         ]
-    },
-    "assertion": [
-        {
-            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
-            "order": 1,
-            "name": "peerreview_statement",
-            "label": "Peer Review Statement"
-        },
-        {
-            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=rmor20",
-            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=rmor20",
-            "order": 2,
-            "name": "aims_and_scope_url",
-            "label": "Aim & Scope"
-        },
-        {
-            "value": "2021-05-27",
-            "order": 3,
-            "name": "published",
-            "label": "Published",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        }
-    ]
+    }
 }

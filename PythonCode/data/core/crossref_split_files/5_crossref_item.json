@@ -3,371 +3,199 @@
         "date-parts": [
             [
                 2024,
-                6,
-                1
+                1,
+                3
             ]
         ],
-        "date-time": "2024-06-01T04:34:53Z",
-        "timestamp": 1717216493241
+        "date-time": "2024-01-03T00:51:12Z",
+        "timestamp": 1704243072382
     },
-    "reference-count": 26,
-    "publisher": "Informa UK Limited",
-    "issue": "2",
+    "reference-count": 0,
+    "publisher": "Wiley",
+    "issue": "S1",
+    "license": [
+        {
+            "start": {
+                "date-parts": [
+                    [
+                        2018,
+                        10,
+                        3
+                    ]
+                ],
+                "date-time": "2018-10-03T00:00:00Z",
+                "timestamp": 1538524800000
+            },
+            "content-version": "vor",
+            "delay-in-days": 550,
+            "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+        }
+    ],
     "content-domain": {
         "domain": [
-            "www.tandfonline.com"
+            "faseb.onlinelibrary.wiley.com"
         ],
         "crossmark-restriction": true
     },
     "short-container-title": [
-        "The Clearing House: A Journal of Educational Strategies, Issues and Ideas"
+        "The FASEB Journal"
     ],
     "published-print": {
         "date-parts": [
             [
-                2020,
-                3,
-                3
+                2017,
+                4
             ]
         ]
     },
-    "DOI": "10.1080/00098655.2020.1729082",
+    "abstract": "<jats:p>Ubiquitination is an essential, dynamic post\u2010translational modification that regulates a diverse set of cellular processes. Ligation of the small peptide ubiquitin (Ub) onto substrate proteins by E3 Ub ligases can change protein localization, activity or stability. The most common outcome for Ub\u2010tagged proteins is degradation via the 26S proteasome. Deubiquitinases (DUBs) reverse the effects of ubiquitination by removing Ub from tagged substrates. In animals, Ubiquitin\u2010specific protease (USP) 12 and USP46 are related DUBs that regulate key proteins in important growth and differentiation signaling pathways. USP12 and USP46 each form trimeric complexes with two WD\u2010repeat (WDR) proteins, WDR20 and WDR48. The WDR proteins activate the enzymatic abilities of the DUBs while potentially serving as substrate receptors. Numerous animal and fungal DUBs are bound and activated by specific WDR proteins. In <jats:italic>Arabidopsis</jats:italic>, Ub\u2010specific proteases 3 (AtUBP3) and 4 (AtUBP4) are related DUBs that have significant sequence similarities to animal USP12/46. Genetic studies have shown AtUBP3/4 are essential for proper pollen development and transmission. It is not yet known if WDR proteins bind and activate DUBs in plants. We have identified At2g37160 as a likely <jats:italic>Arabidopsis</jats:italic> WDR20 homolog based on amino acid sequence homology and the number and organization of WD motifs. We have shown At2g37160 (AtWDR20) interacts with both AtUBP3 and AtUBP4 in the yeast two\u2010hybrid system. Biochemical characterization using recombinant proteins shows AtWDR20 increases the DUB activity of AtUBP3 over nine\u2010fold. A yeast two\u2010hybrid screen of an <jats:italic>Arabidopsis</jats:italic> cDNA library using AtWDR20 as bait revealed interactions between AtWDR20 and two different E3 Ub ligases: Myb\u201030 Interacting E3 Ub ligase (MIEL1) and CHY Zinc\u2010finger and Ring Protein 1 (CHYR1). Interactions between a DUB\u2010associated WDR protein and E3 Ub ligases is intriguing, and implies AtWDR20 may function on both sides of the Ub cycle or is itself a target of ubiquitination. <jats:italic>In planta</jats:italic> and <jats:italic>in vitro</jats:italic> analyses will further characterize the interactions between AtWDR20, AtUBP3, and these E3 ligases.</jats:p>",
+    "DOI": "10.1096/fasebj.31.1_supplement.lb102",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2020,
-                2,
-                20
+                2023,
+                11,
+                26
             ]
         ],
-        "date-time": "2020-02-20T17:00:51Z",
-        "timestamp": 1582218051000
+        "date-time": "2023-11-26T17:36:45Z",
+        "timestamp": 1701020205000
     },
-    "page": "93-99",
-    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
+    "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 4,
+    "is-referenced-by-count": 0,
     "title": [
-        "Using Japanese Lesson Study to Merge Inservice Professional Development and Preservice Clinical Experiences"
+        "Identification of an <i>Arabidopsis</i> WD\u2010Repeat Protein that Activates the Deubiquitinase UBP3 and Interacts with Two E3 Ubiquitin Ligases"
     ],
-    "prefix": "10.1080",
-    "volume": "93",
+    "prefix": "10.1096",
+    "volume": "31",
     "author": [
         {
-            "given": "Randall E.",
-            "family": "Groth",
+            "given": "Andrew T",
+            "family": "Baskerville",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Salisbury University, Salisbury, Maryland, USA"
+                    "name": "Biology Salisbury University Salisbury MD"
                 }
             ]
         },
         {
-            "given": "Jennifer A.",
-            "family": "Bergner",
+            "given": "Janet",
+            "family": "Donahue",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Salisbury University, Salisbury, Maryland, USA"
+                    "name": "Virginia Polytechnic Institute and State University Blacksburg VA"
                 }
             ]
         },
         {
-            "given": "Starlin D.",
-            "family": "Weaver",
+            "given": "Glenda",
+            "family": "Gillaspy",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Salisbury University, Salisbury, Maryland, USA"
+                    "name": "Virginia Polytechnic Institute and State University Blacksburg VA"
                 }
             ]
         },
         {
-            "given": "Gail S.",
-            "family": "Welsh",
+            "given": "Les",
+            "family": "Erickson",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Salisbury University, Salisbury, Maryland, USA"
+                    "name": "Biology Salisbury University Salisbury MD"
                 }
             ]
         }
     ],
-    "member": "301",
+    "member": "311",
     "published-online": {
         "date-parts": [
             [
-                2020,
-                2,
-                20
+                2018,
+                10,
+                3
             ]
         ]
     },
-    "reference": [
-        {
-            "key": "CIT0001",
-            "volume-title": "Mathematical mindsets: Unleashing students\u2019 potential through creative math, inspiring messages and innovative teaching",
-            "author": "Boaler J.",
-            "year": "2016"
-        },
-        {
-            "key": "CIT0002",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/19415257.2013.866975"
-        },
-        {
-            "key": "CIT0003",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00220973.2011.596854"
-        },
-        {
-            "issue": "1",
-            "key": "CIT0004",
-            "first-page": "77",
-            "volume": "13",
-            "author": "Doig B.",
-            "year": "2011",
-            "journal-title": "Mathematics Teacher Education and Development"
-        },
-        {
-            "key": "CIT0005",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.5951/mathteacmiddscho.22.6.0344"
-        },
-        {
-            "key": "CIT0006",
-            "doi-asserted-by": "crossref",
-            "first-page": "372",
-            "DOI": "10.5951/jresematheduc.39.4.0372",
-            "volume": "39",
-            "author": "Hill H.C.",
-            "year": "2008",
-            "journal-title": "Journal for Research in Mathematics Education"
-        },
-        {
-            "key": "CIT0007",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s11858-016-0795-7"
-        },
-        {
-            "issue": "1",
-            "key": "CIT0008",
-            "first-page": "94",
-            "volume": "13",
-            "author": "Hunter J.",
-            "year": "2011",
-            "journal-title": "Mathematics Teacher Education and Development"
-        },
-        {
-            "key": "CIT0009",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.tate.2019.102986"
-        },
-        {
-            "key": "CIT0010",
-            "volume-title": "Lesson Study step by step: How teacher learning communities improve instruction",
-            "author": "Lewis C.",
-            "year": "2011"
-        },
-        {
-            "key": "CIT0011",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10857-009-9102-7"
-        },
-        {
-            "key": "CIT0012",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s11858-015-0753-9"
-        },
-        {
-            "issue": "3",
-            "key": "CIT0013",
-            "doi-asserted-by": "crossref",
-            "first-page": "583",
-            "DOI": "10.54870/1551-3440.1281",
-            "volume": "10",
-            "author": "Lewis J. M.",
-            "year": "2013",
-            "journal-title": "The Mathematics Enthusiast"
-        },
-        {
-            "key": "CIT0014",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/749838"
-        },
-        {
-            "key": "CIT0015",
-            "volume-title": "What it means to be a professional development school",
-            "author": "National Association for Professional Development Schools (NAPDS",
-            "year": "2008"
-        },
-        {
-            "issue": "1",
-            "key": "CIT0016",
-            "first-page": "77",
-            "volume": "32",
-            "author": "Rock T.",
-            "year": "2005",
-            "journal-title": "Teacher Education Quarterly"
-        },
-        {
-            "key": "CIT0017",
-            "first-page": "152",
-            "volume-title": "Mathematics teacher noticing: Seeing through teachers\u2019 eyes",
-            "author": "Santagata R.",
-            "year": "2011"
-        },
-        {
-            "key": "CIT0018",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3200/PSFL.50.1.35-40"
-        },
-        {
-            "key": "CIT0019",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.17763/haer.57.1.j463w79r56455411"
-        },
-        {
-            "key": "CIT0020",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1949-8594.2009.tb18292.x"
-        },
-        {
-            "key": "CIT0021",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10857-016-9352-0"
-        },
-        {
-            "key": "CIT0022",
-            "volume-title": "The teaching gap: Best ideas from the world\u2019s teachers for improving education in the classroom",
-            "author": "Stigler J. W.",
-            "year": "1999"
-        },
-        {
-            "key": "CIT0023",
-            "volume-title": "Proceedings of the 35th annual meeting of the North American Chapter of the International Group for the Psychology of Mathematics Education",
-            "author": "Stockero S.L.",
-            "year": "2013"
-        },
-        {
-            "key": "CIT0024",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.35608/ruraled.v26i2.512"
-        },
-        {
-            "issue": "6",
-            "key": "CIT0025",
-            "first-page": "36",
-            "volume": "59",
-            "author": "Watanabe T.",
-            "year": "2002",
-            "journal-title": "Educational Leadership"
-        },
-        {
-            "key": "CIT0026",
-            "first-page": "29",
-            "volume-title": "Lesson study: Professional learning for our time",
-            "author": "Xu H.",
-            "year": "2015"
-        }
-    ],
     "container-title": [
-        "The Clearing House: A Journal of Educational Strategies, Issues and Ideas"
+        "The FASEB Journal"
     ],
     "language": "en",
-    "link": [
-        {
-            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/00098655.2020.1729082",
-            "content-type": "unspecified",
-            "content-version": "vor",
-            "intended-application": "similarity-checking"
-        }
-    ],
     "deposited": {
         "date-parts": [
             [
-                2022,
-                10,
-                16
+                2024,
+                1,
+                2
             ]
         ],
-        "date-time": "2022-10-16T04:13:55Z",
-        "timestamp": 1665893635000
+        "date-time": "2024-01-02T13:11:19Z",
+        "timestamp": 1704201079000
     },
-    "score": 17.833368,
+    "score": 16.409466,
     "resource": {
         "primary": {
-            "URL": "https://www.tandfonline.com/doi/full/10.1080/00098655.2020.1729082"
+            "URL": "https://faseb.onlinelibrary.wiley.com/doi/10.1096/fasebj.31.1_supplement.lb102"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2020,
-                2,
-                20
+                2017,
+                4
             ]
         ]
     },
-    "references-count": 26,
+    "references-count": 0,
     "journal-issue": {
-        "issue": "2",
+        "issue": "S1",
         "published-print": {
             "date-parts": [
                 [
-                    2020,
-                    3,
-                    3
+                    2017,
+                    4
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1080/00098655.2020.1729082"
+        "10.1096/fasebj.31.1_supplement.lb102"
     ],
-    "URL": "http://dx.doi.org/10.1080/00098655.2020.1729082",
+    "URL": "http://dx.doi.org/10.1096/fasebj.31.1_supplement.lb102",
+    "archive": [
+        "Portico"
+    ],
     "ISSN": [
-        "0009-8655",
-        "1939-912X"
+        "0892-6638",
+        "1530-6860"
     ],
     "issn-type": [
         {
-            "value": "0009-8655",
+            "value": "0892-6638",
             "type": "print"
         },
         {
-            "value": "1939-912X",
+            "value": "1530-6860",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2020,
-                2,
-                20
+                2017,
+                4
             ]
         ]
     },
     "assertion": [
         {
-            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
-            "order": 1,
-            "name": "peerreview_statement",
-            "label": "Peer Review Statement"
-        },
-        {
-            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=vtch20",
-            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=vtch20",
+            "value": "2018-10-03",
             "order": 2,
-            "name": "aims_and_scope_url",
-            "label": "Aim & Scope"
-        },
-        {
-            "value": "2020-02-20",
-            "order": 3,
             "name": "published",
             "label": "Published",
             "group": {

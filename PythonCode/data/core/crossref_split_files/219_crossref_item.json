@@ -2,381 +2,481 @@
     "indexed": {
         "date-parts": [
             [
-                2023,
-                5,
-                19
+                2024,
+                9,
+                14
             ]
         ],
-        "date-time": "2023-05-19T05:31:23Z",
-        "timestamp": 1684474283578
+        "date-time": "2024-09-14T03:10:41Z",
+        "timestamp": 1726283441143
     },
-    "reference-count": 46,
-    "publisher": "Association for Computing Machinery (ACM)",
-    "issue": "3-4",
+    "reference-count": 62,
+    "publisher": "Wiley",
+    "issue": "5-6",
     "license": [
         {
             "start": {
                 "date-parts": [
                     [
-                        2018,
-                        8,
-                        1
+                        2020,
+                        2,
+                        20
                     ]
                 ],
-                "date-time": "2018-08-01T00:00:00Z",
-                "timestamp": 1533081600000
+                "date-time": "2020-02-20T00:00:00Z",
+                "timestamp": 1582156800000
             },
-            "content-version": "tdm",
+            "content-version": "vor",
             "delay-in-days": 0,
-            "URL": "http://www.springer.com/tdm"
+            "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+        }
+    ],
+    "funder": [
+        {
+            "DOI": "10.13039/100011190",
+            "name": "Franklin P. Perdue School of Business",
+            "doi-asserted-by": "publisher",
+            "id": [
+                {
+                    "id": "10.13039/100011190",
+                    "id-type": "DOI",
+                    "asserted-by": "publisher"
+                }
+            ]
         }
     ],
     "content-domain": {
         "domain": [
-            "link.springer.com"
+            "onlinelibrary.wiley.com"
         ],
-        "crossmark-restriction": false
+        "crossmark-restriction": true
     },
     "short-container-title": [
-        "Form. Asp. Comput."
+        "Business Fin &amp; Account"
     ],
     "published-print": {
         "date-parts": [
             [
-                2018,
-                8
+                2020,
+                5
             ]
         ]
     },
-    "abstract": "<jats:title>Abstract</jats:title>\n          <jats:p>\n            In this work, we present a formal language, CTML, to reason over probabilistic systems. CTML extends stochastic temporal logics in a way that it takes a real value as input and output a real value in the range of\n            <jats:inline-formula>\n              <jats:alternatives>\n                <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\">\n                  <mml:mrow>\n                    <mml:mo stretchy=\"false\">[</mml:mo>\n                    <mml:mn>0</mml:mn>\n                    <mml:mo>,</mml:mo>\n                    <mml:mi>\u221e</mml:mi>\n                    <mml:mo stretchy=\"false\">)</mml:mo>\n                  </mml:mrow>\n                </mml:math>\n              </jats:alternatives>\n            </jats:inline-formula>\n            , as opposed to 0/1 values as input and output, and it can\n            <jats:italic>nest</jats:italic>\n            real values. This allows CTML to express a rich set of queries towards the unification of model checking and performance evaluation. In fact, CTML covers PCTL. It can express a nontrivial subset of PLTL formulas that cannot be expressed by PCTL. The significance of this result is that the overall complexity of CTML is linear, as opposed to exponential as it is with PLTL, in the size of the operators for a given formula, and polynomial in the size of a given model. Moreover, CTML can express real-valued performance queries such as: \u201cif a system encounters a failure, what is the expected time to reach a recovery state?\u201d that cannot be expressed by a probabilistic model checking logic, because they are \u201cprobabilistic\u201d at most. Along with the specification language, we present a set of algorithms for the evaluation of the language and show proofs for their correctness. Additionally, we include an application example and show experimental results.\n          </jats:p>",
-    "DOI": "10.1007/s00165-018-0457-3",
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>We show that greater shareholder coordination, as proxied by the geographic proximity between institutional investors, is positively related to corporate innovation outcomes. This relationship is driven by coordination among dedicated and independent institutions who have strong monitoring incentives and is more pronounced among firms with lower blockholder ownership and greater information asymmetry where there is greater benefit to monitoring. We propose that shareholder coordination promotes corporate innovation through a reduction in managerial agency problems. Overall, our results are consistent with the notion that greater shareholder coordination enables diffuse shareholders to monitor managers more effectively and enhances corporate innovation.</jats:p>",
+    "DOI": "10.1111/jbfa.12433",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2018,
-                6,
-                18
+                2020,
+                1,
+                15
             ]
         ],
-        "date-time": "2018-06-18T11:21:10Z",
-        "timestamp": 1529320870000
+        "date-time": "2020-01-15T12:45:08Z",
+        "timestamp": 1579092308000
     },
-    "page": "443-462",
-    "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+    "page": "730-759",
+    "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 3,
+    "is-referenced-by-count": 22,
     "title": [
-        "Computation tree measurement language (CTML)"
+        "Shareholder coordination and corporate innovation"
     ],
-    "prefix": "10.1145",
-    "volume": "30",
+    "prefix": "10.1111",
+    "volume": "47",
     "author": [
         {
-            "ORCID": "http://orcid.org/0000-0002-3042-0634",
-            "authenticated-orcid": false,
-            "given": "Yaping",
-            "family": "Jing",
+            "given": "Ani Manakyan",
+            "family": "Mathers",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Department of Math and Computer Science, Salisbury University, Salisbury, MD, USA"
+                    "name": "Department of Economics and Finance, Perdue School of Business Salisbury University  Salisbury MD 21801 USA"
                 }
             ]
         },
         {
-            "given": "Andrew S.",
-            "family": "Miner",
+            "given": "Bin",
+            "family": "Wang",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Department of Computer Science, Iowa State University, Ames, IA, USA"
+                    "name": "Department of Finance, College of Business Administration Marquette University  Milwaukee WI 53210 USA"
+                }
+            ]
+        },
+        {
+            "given": "Xiaohong (Sara)",
+            "family": "Wang",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Accounting, Business Law and Finance, College of Business and Management \u00a0Northeastern Illinois University  Chicago IL 60625 USA"
                 }
             ]
         }
     ],
-    "member": "320",
+    "member": "311",
+    "published-online": {
+        "date-parts": [
+            [
+                2020,
+                2,
+                20
+            ]
+        ]
+    },
     "reference": [
         {
-            "key": "e_1_2_1_2_1_2",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Andova S Hermanns H Katoen J-P (2003) Discrete-time rewards model-checked. In: Larsen KG Niebert P (eds) Formal modelling and analysis of timed systems volume 2791 of Lecture notes in computer science. Springer pp 88\u2013104",
-            "DOI": "10.1007/978-3-540-40903-8_8"
-        },
-        {
-            "key": "e_1_2_1_2_2_2",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Aziz A Singhal V Balarin F (1995) It usually works: The temporal logic of stochastic systems. In: Proceedings of the 7th international conference on computer aided verification London UK. Springer pp 155\u2013165",
-            "DOI": "10.1007/3-540-60045-0_48"
-        },
-        {
-            "key": "e_1_2_1_2_3_2",
+            "key": "e_1_2_7_2_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1109/TSE.2007.36"
+            "DOI": "10.1111/0022-1082.00305"
         },
         {
-            "key": "e_1_2_1_2_4_2",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Bianco A de Alfaro L (1995) Model checking of probabilistic and nondeterministic systems. In: Proceedings of the 15th conference on foundations of software technology and theoretical computer science Berlin Heidelberg. Springer pp 499\u2013513",
-            "DOI": "10.1007/3-540-60692-0_70"
-        },
-        {
-            "key": "e_1_2_1_2_5_2",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Beaudry DM (1978) Performance-related reliability measures for computing systems. IEEE Trans Comput C-27(6):540\u2013547",
-            "DOI": "10.1109/TC.1978.1675145"
-        },
-        {
-            "key": "e_1_2_1_2_6_2",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Borgerson BR Freitas RF (1975) A reliability model for gracefully degrading and standby-sparing systems. IEEE Trans Comput C-24(5):517\u2013525",
-            "DOI": "10.1109/T-C.1975.224255"
-        },
-        {
-            "key": "e_1_2_1_2_7_2",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Baier C Haverkort BR Hermanns H Katoen J-P (2000) On the logical characterisation of performability properties. In: Proceedings of the 27th international colloquium on automata languages and programming London UK. Springer pp 780\u2013792",
-            "DOI": "10.1007/3-540-45022-X_65"
-        },
-        {
-            "key": "e_1_2_1_2_8_2",
+            "key": "e_1_2_7_3_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1109/TSE.2003.1205180"
+            "DOI": "10.1016/j.jcorpfin.2015.12.017"
         },
         {
-            "key": "e_1_2_1_2_9_2",
+            "key": "e_1_2_7_4_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.5555/2841997.2842006"
+            "DOI": "10.1016/j.jfineco.2010.10.018"
         },
         {
-            "key": "e_1_2_1_2_10_2",
-            "volume-title": "Introduction to stochastic processes",
-            "author": "\u00c7inlar E",
-            "year": "1975"
-        },
-        {
-            "key": "e_1_2_1_2_11_2",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Clark G Gilmore S Hillston J (1999) Specifying performance measures for PEPA. In: Proceedings of the 5th international AMAST workshop on formal methods for real-time and probabilistic systems London UK. Springer pp 211\u2013227",
-            "DOI": "10.1007/3-540-48778-6_13"
-        },
-        {
-            "key": "e_1_2_1_2_12_2",
-            "volume-title": "Model checking",
-            "author": "Clarke EM",
-            "year": "1999"
-        },
-        {
-            "key": "e_1_2_1_2_13_2",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Chung KL (1979) Elementary probability theory with stochastic processes. Undergraduate texts in mathematics 3rd edn. Springer Orlando",
-            "DOI": "10.1007/978-1-4684-9346-7"
-        },
-        {
-            "key": "e_1_2_1_2_14_2",
+            "key": "e_1_2_7_5_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.peva.2005.06.001"
+            "DOI": "10.1162/0033553053970214"
         },
         {
-            "key": "e_1_2_1_2_15_2",
-            "doi-asserted-by": "crossref",
-            "volume-title": "Measure theory",
-            "author": "Cohn DL",
-            "year": "1980",
-            "DOI": "10.1007/978-1-4899-0399-0"
-        },
-        {
-            "key": "e_1_2_1_2_16_2",
+            "key": "e_1_2_7_6_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1145/210332.210339"
+            "DOI": "10.1257/aer.103.1.277"
         },
         {
-            "key": "e_1_2_1_2_17_2",
-            "doi-asserted-by": "crossref",
-            "unstructured": "de Alfaro L (1997) Temporal logics for the specification of performance and reliability. In: Proceedings of the 14th annual symposium on theoretical aspects of computer science London UK. Springer pp 165\u2013176",
-            "DOI": "10.1007/BFb0023457"
-        },
-        {
-            "key": "e_1_2_1_2_18_2",
-            "doi-asserted-by": "crossref",
-            "unstructured": "de Alfaro L (1999) Computing minimum and maximum reachability times in probabilistic systems. In: Proceedings of the 10th international conference on concurrency theory London UK. Springer pp 66\u201381",
-            "DOI": "10.1007/3-540-48320-9_7"
-        },
-        {
-            "key": "e_1_2_1_2_19_2",
+            "key": "e_1_2_7_7_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.tcs.2005.07.033"
+            "DOI": "10.1016/S0165-1765(03)00032-6"
         },
         {
-            "key": "e_1_2_1_2_20_2",
+            "key": "e_1_2_7_8_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1109/TSE.2008.108"
+            "DOI": "10.1023/A:1007708612713"
         },
         {
-            "key": "e_1_2_1_2_21_2",
+            "key": "e_1_2_7_9_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF00289519"
+            "DOI": "10.1016/j.jfineco.2010.03.006"
         },
         {
-            "key": "e_1_2_1_2_22_2",
+            "key": "e_1_2_7_10_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1086/227944"
+        },
+        {
+            "key": "e_1_2_7_11_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jfineco.2016.12.005"
+        },
+        {
+            "key": "e_1_2_7_12_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1086/216031"
+        },
+        {
+            "key": "e_1_2_7_13_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jfineco.2018.06.012"
+        },
+        {
+            "key": "e_1_2_7_14_1",
+            "first-page": "305",
+            "article-title": "The influence of institutional investors on myopic R&D investment behavior",
+            "volume": "73",
+            "author": "Bushee B.",
+            "year": "1998",
+            "journal-title": "The Accounting Review"
+        },
+        {
+            "key": "e_1_2_7_15_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1506/J4GU-BHWH-8HME-LE0X"
+        },
+        {
+            "key": "e_1_2_7_16_1",
+            "unstructured": "CALSTRS(2010).CalSTRS to oppose Occidental Petroleum executive compensation advisory vote. Retrieved fromhttps://www.calstrs.com/news-release/calstrs-oppose-occidental-petroleum-executive-compensation-advisory-vote."
+        },
+        {
+            "key": "e_1_2_7_17_1",
+            "unstructured": "CALSTRS(2013).Relational investors LLC and CalSTRS comment on Timken Proxy Materials. Retrieved fromhttps://www.calstrs.com/news-release/relational-investors-llc-and-calstrs-comment-timken-proxy-materials."
+        },
+        {
+            "key": "e_1_2_7_18_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1017/S0022109018000029"
+        },
+        {
+            "key": "e_1_2_7_19_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jfineco.2006.09.005"
+        },
+        {
+            "key": "e_1_2_7_20_1",
+            "first-page": "127",
+            "article-title": "Agency costs, management stockholding, and research and development expenditures",
+            "volume": "5",
+            "author": "Cho S.",
+            "year": "1992",
+            "journal-title": "Seoul Journal of Economics"
+        },
+        {
+            "key": "e_1_2_7_21_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.respol.2011.01.004"
+        },
+        {
+            "key": "e_1_2_7_22_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/0022-1082.00181"
+        },
+        {
+            "key": "e_1_2_7_23_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1086/322088"
+        },
+        {
+            "key": "e_1_2_7_24_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1108/14601060010322301"
+        },
+        {
+            "key": "e_1_2_7_25_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1540-6261.2009.01508.x"
+        },
+        {
+            "key": "e_1_2_7_26_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jfineco.2013.02.020"
+        },
+        {
+            "key": "e_1_2_7_27_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/S0304-3932(96)01277-9"
+        },
+        {
+            "key": "e_1_2_7_28_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/S0304-405X(00)00058-1"
+        },
+        {
+            "key": "e_1_2_7_29_1",
             "doi-asserted-by": "crossref",
-            "unstructured": "Emerson EA (1990) Temporal and modal logic. In: Handbook of theoretical computer science. Elsevier pp 995\u20131072",
-            "DOI": "10.1016/B978-0-444-88074-1.50021-4"
+            "volume-title": "Supply Chain Engineering",
+            "author": "Goetschalckx M.",
+            "year": "2011",
+            "DOI": "10.1007/978-1-4419-6512-7"
         },
         {
-            "key": "e_1_2_1_2_23_2",
+            "key": "e_1_2_7_30_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1145/1530873.1530878"
+            "DOI": "10.1162/00335530360535162"
         },
         {
-            "key": "e_1_2_1_2_24_2",
-            "unstructured": "Grinstead CM Snell JL (2003) Introduction to probability. American Mathematical Society"
-        },
-        {
-            "key": "e_1_2_1_2_25_2",
-            "unstructured": "Haverkort BR Cloth L Hermanns H Katoen J-P (2002) Model checking performability properties. In: Proceedings of the 2002 international conference on dependable systems and networks Washington DC USA. IEEE Computer Society pp 103\u2013112"
-        },
-        {
-            "key": "e_1_2_1_2_26_2",
+            "key": "e_1_2_7_31_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF01211866"
+            "DOI": "10.2307/3003400"
         },
         {
-            "key": "e_1_2_1_2_27_2",
+            "key": "e_1_2_7_32_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1145/511399.511345"
+            "DOI": "10.1257/aer.102.7.3594"
         },
         {
-            "key": "e_1_2_1_2_28_2",
-            "unstructured": "Jing Yaping (2015) A formal language towards the unification of model checking and performance evaluation. PhD thesis Iowa State University Ames IA"
+            "key": "e_1_2_7_33_1",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Hall B. Jaffe A. &Trajtenberg M.(2001).The NBER patent citation data file: Lessons insights and methodological tools. NBER Working Paper Cambridge MA.",
+            "DOI": "10.3386/w8498"
         },
         {
-            "key": "e_1_2_1_2_29_2",
+            "key": "e_1_2_7_34_1",
+            "first-page": "16",
+            "article-title": "Market value and patent citations",
+            "volume": "36",
+            "author": "Hall B.",
+            "year": "2005",
+            "journal-title": "The RAND Journal of Economics"
+        },
+        {
+            "key": "e_1_2_7_35_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1145/1530873.1530882"
+            "DOI": "10.2307/3003639"
         },
         {
-            "key": "e_1_2_1_2_30_2",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Kwiatkowska M Norman G Parker D (2011) PRISM 4.0: verification of probabilistic real-time systems. In: Gopalakrishnan G Qadeer S (eds) Proceedings of 23rd international conference on computer aided verification volume 6806 of LNCS. Springer pp 585\u2013591",
-            "DOI": "10.1007/978-3-642-22110-1_47"
-        },
-        {
-            "key": "e_1_2_1_2_31_2",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Kwiatkowska M Norman G Parker D Sproston J (2003) Performance analysis of probabilistic timed automata using digital clocks. In: Proceedings of formal modeling and analysis of timed systems volume 2791 of LNCS. Springer pp 105\u2013120",
-            "DOI": "10.1007/978-3-540-40903-8_9"
-        },
-        {
-            "key": "e_1_2_1_2_32_2",
-            "volume-title": "Finite Markov Chains",
-            "author": "Kemeny JG",
-            "year": "1960"
-        },
-        {
-            "key": "e_1_2_1_2_33_2",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Kwiatkowska M (2007) Quantitative verification: models techniques and tools. In: Proceedings of the the 6th joint meeting of the European software engineering conference and the ACM SIGSOFT symposium on The foundations of software engineering New York NY USA ACM pp 449\u2013458",
-            "DOI": "10.1145/1295014.1295018"
-        },
-        {
-            "key": "e_1_2_1_2_34_2",
-            "first-page": "140",
-            "volume-title": "8th international conference on foundations of software science and computational structures",
-            "author": "Laroussinie F",
-            "year": "2005"
-        },
-        {
-            "key": "e_1_2_1_2_35_2",
-            "unstructured": "Liu Y Trivedi KS (2004) A general framework for network survivability quantification. In: Peter B Ralf L Michal P (eds) MMB. VDE Verlag pp 369\u2013378"
-        },
-        {
-            "key": "e_1_2_1_2_36_2",
-            "unstructured": "Muppala JK Ciardo G Trivedi KS (1993) Modeling using stochastic reward nets. In: Proceedings of the international workshop on modeling analysis and simulation on computer and telecommunication systems. Society for Computer Simulation pp 367\u2013372"
-        },
-        {
-            "key": "e_1_2_1_2_37_2",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Meyer JF (1980) On evaluating the performability of degradable computing systems. IEEE Trans Comput C-29(8):720\u2013731",
-            "DOI": "10.1109/TC.1980.1675654"
-        },
-        {
-            "key": "e_1_2_1_2_38_2",
+            "key": "e_1_2_7_36_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.peva.2003.07.005"
+            "DOI": "10.1016/j.jfineco.2013.04.001"
         },
         {
-            "key": "e_1_2_1_2_39_2",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Miner AS Jing Y (2010) A formal language toward the unification of model checking and performance evaluation. In: Analytical and stochastic modeling techniques and applications pp 130\u2013144",
-            "DOI": "10.1007/978-3-642-13568-2_10"
-        },
-        {
-            "key": "e_1_2_1_2_40_2",
+            "key": "e_1_2_7_37_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0166-5316(99)00010-3"
+            "DOI": "10.2307/3003320"
         },
         {
-            "key": "e_1_2_1_2_41_2",
+            "key": "e_1_2_7_38_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/0304-3975(81)90110-9"
+            "DOI": "10.1111/1467-937X.00083"
         },
         {
-            "key": "e_1_2_1_2_42_2",
+            "key": "e_1_2_7_39_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.5555/1197141"
+            "DOI": "10.1111/j.1540-6261.2005.00817.x"
         },
         {
-            "key": "e_1_2_1_2_43_2",
+            "key": "e_1_2_7_40_1",
             "doi-asserted-by": "crossref",
-            "unstructured": "Suto T Bradley JT Knottenbelt WJ (2007) Performance trees: Expressiveness and quantitative semantics. In: Proceedings of the fourth international conference on quantitative evaluation of systems Washington DC USA. IEEE Computer Society pp 41\u201350",
-            "DOI": "10.1109/QEST.2007.9"
+            "unstructured": "Huang J.(2014).Shareholder coordination corporate governance and firm value. Working Paper University of Illinois at Urbana\u2010Champaign.",
+            "DOI": "10.2139/ssrn.2380284"
         },
         {
-            "key": "e_1_2_1_2_44_2",
-            "unstructured": "Schnoebelen P (2002) The complexity of temporal logic model checking. In: Advances in modal logic pp 393\u2013436"
+            "key": "e_1_2_7_41_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/0304-405X(76)90026-X"
         },
         {
-            "key": "e_1_2_1_2_45_2",
+            "key": "e_1_2_7_42_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1540-6261.2008.01414.x"
+        },
+        {
+            "key": "e_1_2_7_43_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1162/003355397555163"
+        },
+        {
+            "key": "e_1_2_7_44_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/jbfa.12289"
+        },
+        {
+            "key": "e_1_2_7_45_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jcorpfin.2016.06.006"
+        },
+        {
+            "key": "e_1_2_7_46_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1086/231292"
+        },
+        {
+            "key": "e_1_2_7_47_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1540-6261.2011.01688.x"
+        },
+        {
+            "key": "e_1_2_7_48_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/0378-8733(88)90010-X"
+        },
+        {
+            "key": "e_1_2_7_49_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/fima.12142"
+        },
+        {
+            "key": "e_1_2_7_50_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1146/annurev.soc.27.1.415"
+        },
+        {
+            "key": "e_1_2_7_51_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/1536867X0400400206"
+        },
+        {
+            "key": "e_1_2_7_52_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/fire.12124"
+        },
+        {
+            "key": "e_1_2_7_53_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1468-5957.2007.02040.x"
+        },
+        {
+            "key": "e_1_2_7_54_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1057/palgrave.jibs.8490118"
+        },
+        {
+            "key": "e_1_2_7_55_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1093/rfs/hhn053"
+        },
+        {
+            "key": "e_1_2_7_56_1",
+            "first-page": "65",
+            "article-title": "Capital disadvantage: America's failing capital investment system",
+            "volume": "70",
+            "author": "Porter M.",
+            "year": "1992",
+            "journal-title": "Harvard Business Review"
+        },
+        {
+            "key": "e_1_2_7_57_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1017/S002210901400060X"
+        },
+        {
+            "key": "e_1_2_7_58_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1086/321301"
+        },
+        {
+            "key": "e_1_2_7_59_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1086/261524"
+        },
+        {
+            "key": "e_1_2_7_60_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/2937861"
+        },
+        {
+            "key": "e_1_2_7_61_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jfineco.2012.03.005"
+        },
+        {
+            "key": "e_1_2_7_62_1",
+            "unstructured": "Wooldridge J. M.(2009).Introductory econometrics: A modern approach 5thEdition.Boston MA United States:Cengage Learning."
+        },
+        {
+            "key": "e_1_2_7_63_1",
             "doi-asserted-by": "crossref",
-            "unstructured": "Stewart WJ (1994) Introduction to the numerical solution of Markov Chains. Princeton University Press",
-            "DOI": "10.1515/9780691223384"
-        },
-        {
-            "key": "e_1_2_1_2_46_2",
-            "doi-asserted-by": "crossref",
-            "first-page": "587",
-            "DOI": "10.1007/BFb0013869",
-            "volume-title": "Performance evaluation of computer and communication systems, joint tutorial papers of performance\u201993 and Sigmetrics\u201993",
-            "author": "Trivedi KS",
-            "year": "1993"
+            "unstructured": "Yang K. D.(2018).Entrenchment managerial shirking and investment. Working Paper University of Iowa.",
+            "DOI": "10.2139/ssrn.3239231"
         }
     ],
     "container-title": [
-        "Formal Aspects of Computing"
+        "Journal of Business Finance &amp; Accounting"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "http://link.springer.com/article/10.1007/s00165-018-0457-3/fulltext.html",
-            "content-type": "text/html",
-            "content-version": "vor",
-            "intended-application": "text-mining"
-        },
-        {
-            "URL": "http://link.springer.com/content/pdf/10.1007/s00165-018-0457-3.pdf",
+            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/jbfa.12433",
             "content-type": "application/pdf",
             "content-version": "vor",
             "intended-application": "text-mining"
         },
         {
-            "URL": "http://link.springer.com/content/pdf/10.1007/s00165-018-0457-3.pdf",
-            "content-type": "application/pdf",
+            "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1111/jbfa.12433",
+            "content-type": "application/xml",
             "content-version": "vor",
-            "intended-application": "similarity-checking"
+            "intended-application": "text-mining"
         },
         {
-            "URL": "https://dl.acm.org/doi/pdf/10.1007/s00165-018-0457-3",
+            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/jbfa.12433",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -385,95 +485,100 @@
     "deposited": {
         "date-parts": [
             [
-                2022,
-                1,
+                2023,
+                9,
                 6
             ]
         ],
-        "date-time": "2022-01-06T16:13:01Z",
-        "timestamp": 1641485581000
+        "date-time": "2023-09-06T14:38:55Z",
+        "timestamp": 1694011135000
     },
-    "score": 14.782635,
+    "score": 13.021313,
     "resource": {
         "primary": {
-            "URL": "https://dl.acm.org/doi/10.1007/s00165-018-0457-3"
+            "URL": "https://onlinelibrary.wiley.com/doi/10.1111/jbfa.12433"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2018,
-                8
+                2020,
+                2,
+                20
             ]
         ]
     },
-    "references-count": 46,
+    "references-count": 62,
     "journal-issue": {
-        "issue": "3-4",
+        "issue": "5-6",
         "published-print": {
             "date-parts": [
                 [
-                    2018,
-                    8
+                    2020,
+                    5
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1007/s00165-018-0457-3"
+        "10.1111/jbfa.12433"
     ],
-    "URL": "http://dx.doi.org/10.1007/s00165-018-0457-3",
+    "URL": "http://dx.doi.org/10.1111/jbfa.12433",
+    "archive": [
+        "Portico"
+    ],
     "ISSN": [
-        "0934-5043",
-        "1433-299X"
+        "0306-686X",
+        "1468-5957"
     ],
     "issn-type": [
         {
-            "value": "0934-5043",
+            "value": "0306-686X",
             "type": "print"
         },
         {
-            "value": "1433-299X",
+            "value": "1468-5957",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2018,
-                8
+                2020,
+                2,
+                20
             ]
         ]
     },
     "assertion": [
         {
-            "value": "7 February 2017",
-            "order": 1,
+            "value": "2018-07-05",
+            "order": 0,
             "name": "received",
             "label": "Received",
             "group": {
-                "name": "ArticleHistory",
-                "label": "Article History"
+                "name": "publication_history",
+                "label": "Publication History"
             }
         },
         {
-            "value": "31 May 2018",
-            "order": 2,
+            "value": "2019-12-19",
+            "order": 1,
             "name": "accepted",
             "label": "Accepted",
             "group": {
-                "name": "ArticleHistory",
-                "label": "Article History"
+                "name": "publication_history",
+                "label": "Publication History"
             }
         },
         {
-            "value": "18 June 2018",
-            "order": 3,
-            "name": "first_online",
-            "label": "First Online",
+            "value": "2020-02-20",
+            "order": 2,
+            "name": "published",
+            "label": "Published",
             "group": {
-                "name": "ArticleHistory",
-                "label": "Article History"
+                "name": "publication_history",
+                "label": "Publication History"
             }
         }
     ]

@@ -2,516 +2,436 @@
     "indexed": {
         "date-parts": [
             [
-                2024,
-                8,
-                28
+                2023,
+                12,
+                25
             ]
         ],
-        "date-time": "2024-08-28T09:18:52Z",
-        "timestamp": 1724836732282
+        "date-time": "2023-12-25T05:12:16Z",
+        "timestamp": 1703481136915
     },
-    "reference-count": 64,
-    "publisher": "The Royal Society",
-    "issue": "1922",
+    "reference-count": 23,
+    "publisher": "MDPI AG",
+    "issue": "1",
     "license": [
         {
             "start": {
                 "date-parts": [
                     [
-                        2020,
-                        3,
-                        4
+                        2023,
+                        12,
+                        23
                     ]
                 ],
-                "date-time": "2020-03-04T00:00:00Z",
-                "timestamp": 1583280000000
+                "date-time": "2023-12-23T00:00:00Z",
+                "timestamp": 1703289600000
             },
-            "content-version": "tdm",
+            "content-version": "vor",
             "delay-in-days": 0,
-            "URL": "https://royalsociety.org/journals/ethics-policies/data-sharing-mining/"
+            "URL": "https://creativecommons.org/licenses/by/4.0/"
         }
     ],
     "funder": [
         {
-            "name": "College of Natural Science, University of California Merced"
+            "name": "U.S. Army Corps of Engineers"
         },
         {
-            "name": "University of New Mexico Research Allocation Committee"
+            "name": "U.S. Geological Survey"
+        },
+        {
+            "name": "U.S. Fish and Wildlife Service"
+        },
+        {
+            "name": "Maryland Environmental Service"
         }
     ],
     "content-domain": {
-        "domain": [
-            "royalsocietypublishing.org"
-        ],
-        "crossmark-restriction": true
+        "domain": [],
+        "crossmark-restriction": false
     },
     "short-container-title": [
-        "Proc. R. Soc. B."
+        "Diversity"
     ],
-    "published-print": {
-        "date-parts": [
-            [
-                2020,
-                3,
-                11
-            ]
-        ]
-    },
-    "abstract": "<jats:p>\n            Intestinal microbiota perform many functions for their host, but among the most important is their role in metabolism, especially the conversion of recalcitrant biomass that the host is unable to digest into bioavailable compounds. Most studies have focused on the assistance gut microbiota provide in the metabolism of carbohydrates, however, their role in host amino acid metabolism is poorly understood. We conducted an experiment on\n            <jats:italic>Mus musculus</jats:italic>\n            using 16S rRNA gene sequencing and carbon isotope analysis of essential amino acids (AA\n            <jats:sub>ESS</jats:sub>\n            ) to quantify the community composition of gut microbiota and the contribution of carbohydrate carbon used by the gut microbiome to synthesize AA\n            <jats:sub>ESS</jats:sub>\n            that are assimilated by mice to build skeletal muscle tissue. The relative abundances of Firmicutes and Bacteroidetes inversely varied as a function of dietary macromolecular content, with Firmicutes dominating when mice were fed low-protein diets that contained the highest proportions of simple carbohydrates (sucrose). Mixing models estimated that the microbial contribution of AA\n            <jats:sub>ESS</jats:sub>\n            to mouse muscle varied from less than 5% (threonine, lysine, and phenylalanine) to approximately 60% (valine) across diet treatments, with the Firmicute-dominated microbiome associated with the greatest contribution. Our results show that intestinal microbes can provide a significant source of the AA\n            <jats:sub>ESS</jats:sub>\n            their host uses to synthesize structural tissues. The role that gut microbiota play in the amino acid metabolism of animals that consume protein-deficient diets is likely a significant but under-recognized aspect of foraging ecology and physiology.\n          </jats:p>",
-    "DOI": "10.1098/rspb.2019.2995",
+    "abstract": "<jats:p>While nest usurpation and subsequent incubation of eggs and even brooding of chicks from other species has been reported for Common Terns (Sterna hirundo), such behavior is considered rare. We report an observation of a Common Tern pair usurping the Least Tern (Sternula antillarum) nest and brooding the Least Tern chicks. While the Least Tern pair attempted to provide care for the chicks, the Common Terns displayed aggressive behavior and defended the nest. Though both species attempted to feed the chicks, no feeding events were observed due to harassment from the other species. Neither pair was observed nesting prior to or following this event, and all chicks are believed to have been lost to predation. We discuss the possible scenarios leading to the observed usurpation event, the possibility that usurpations are more common than previously believed, and the need for different monitoring methods to elucidate the causes of usurpations.</jats:p>",
+    "DOI": "10.3390/d16010010",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2020,
-                3,
-                4
+                2023,
+                12,
+                25
             ]
         ],
-        "date-time": "2020-03-04T08:25:16Z",
-        "timestamp": 1583310316000
+        "date-time": "2023-12-25T01:42:30Z",
+        "timestamp": 1703468550000
     },
-    "page": "20192995",
-    "update-policy": "http://dx.doi.org/10.1098/crossmark-policy",
+    "page": "10",
     "source": "Crossref",
-    "is-referenced-by-count": 35,
+    "is-referenced-by-count": 0,
     "title": [
-        "Isotopic and genetic methods reveal the role of the gut microbiome in mammalian host essential amino acid metabolism"
+        "Usurpation and Brooding of Least Tern (Sternula antillarum) Chicks by Common Terns (Sterna hirundo)"
     ],
-    "prefix": "10.1098",
-    "volume": "287",
+    "prefix": "10.3390",
+    "volume": "16",
     "author": [
         {
-            "ORCID": "http://orcid.org/0000-0002-4534-1242",
-            "authenticated-orcid": true,
-            "given": "Seth D.",
-            "family": "Newsome",
+            "ORCID": "http://orcid.org/0000-0002-9242-2432",
+            "authenticated-orcid": false,
+            "given": "Jeffery D.",
+            "family": "Sullivan",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Department of Biology, University of New Mexico, Albuquerque, NM 87131, USA"
+                    "name": "U.S. Geological Survey, Eastern Ecological Science Center, Laurel, MD 20708, USA"
                 }
             ]
         },
         {
-            "given": "Kelli L.",
-            "family": "Feeser",
+            "given": "Jonathan",
+            "family": "Irons",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Department of Biology, University of New Mexico, Albuquerque, NM 87131, USA"
-                }
-            ]
-        },
-        {
-            "given": "Christina J.",
-            "family": "Bradley",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Biological Sciences, Salisbury University, Salisbury MD, USA"
+                    "name": "Volunteer for the U.S. Geological Survey, Eastern Ecological Science Center, Laurel, MD 20708, USA"
                 },
                 {
-                    "name": "College of Natural Science, University of California Merced, Merced, CA, USA"
+                    "name": "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA"
                 }
             ]
         },
         {
-            "given": "Caitlin",
-            "family": "Wolf",
+            "given": "Anna",
+            "family": "Treadway",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Department of Biology, University of New Mexico, Albuquerque, NM 87131, USA"
-                }
-            ]
-        },
-        {
-            "given": "Cristina",
-            "family": "Takacs-Vesbach",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Biology, University of New Mexico, Albuquerque, NM 87131, USA"
-                }
-            ]
-        },
-        {
-            "given": "Marilyn L.",
-            "family": "Fogel",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "College of Natural Science, University of California Merced, Merced, CA, USA"
+                    "name": "Volunteer for the U.S. Geological Survey, Eastern Ecological Science Center, Laurel, MD 20708, USA"
                 },
                 {
-                    "name": "Department of Earth and Planetary Sciences and EDGE Institute, University of California Riverside, Riverside CA, USA"
+                    "name": "Department of Environmental Science and Studies, Washington College, Chestertown, MD 21620, USA"
+                }
+            ]
+        },
+        {
+            "given": "Ayla",
+            "family": "McDonough",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Contractor to the U.S. Geological Survey, Eastern Ecological Science Center, Laurel, ML 20708, USA"
+                },
+                {
+                    "name": "Akima Systems Engineering, Herndon, VA 20171, USA"
+                }
+            ]
+        },
+        {
+            "given": "Alyssa",
+            "family": "Lee",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Volunteer for the U.S. Geological Survey, Eastern Ecological Science Center, Laurel, MD 20708, USA"
+                },
+                {
+                    "name": "College of Agriculture and Natural Resources, University of Maryland, College Park, MD 20742, USA"
+                }
+            ]
+        },
+        {
+            "given": "Amy",
+            "family": "O\u2019Donnell",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "U.S. Fish and Wildlife Service, Chesapeake Bay Field Office, Annapolis, MD 21401, USA"
+                }
+            ]
+        },
+        {
+            "given": "Carl R.",
+            "family": "Callahan",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "U.S. Fish and Wildlife Service, Chesapeake Bay Field Office, Annapolis, MD 21401, USA"
+                }
+            ]
+        },
+        {
+            "given": "Peter C.",
+            "family": "McGowan",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "U.S. Fish and Wildlife Service, Chesapeake Bay Field Office, Annapolis, MD 21401, USA"
+                }
+            ]
+        },
+        {
+            "given": "Diann J.",
+            "family": "Prosser",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "U.S. Geological Survey, Eastern Ecological Science Center, Laurel, MD 20708, USA"
                 }
             ]
         }
     ],
-    "member": "175",
+    "member": "1968",
     "published-online": {
         "date-parts": [
             [
-                2020,
-                3,
-                4
+                2023,
+                12,
+                23
             ]
         ]
     },
     "reference": [
         {
-            "key": "e_1_3_4_2_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s004420051027"
+            "key": "ref_1",
+            "doi-asserted-by": "crossref",
+            "first-page": "98",
+            "DOI": "10.1111/j.1474-919X.2006.00487.x",
+            "article-title": "Effects of Egg Size, Parental Quality and Hatch-Date on Growth and Survival of Common Tern Sterna hirundo Chicks",
+            "volume": "148",
+            "author": "Arnold",
+            "year": "2006",
+            "journal-title": "Ibis"
         },
         {
-            "key": "e_1_3_4_3_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1515/9780691213316"
+            "key": "ref_2",
+            "doi-asserted-by": "crossref",
+            "first-page": "113",
+            "DOI": "10.1675/063.045.0114",
+            "article-title": "Roseate Terns (Sterna dougallii) Frequently Desert Viable Eggs without Incubating Them",
+            "volume": "45",
+            "author": "Nisbet",
+            "year": "2022",
+            "journal-title": "Waterbirds"
         },
         {
-            "key": "e_1_3_4_4_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1086/282907"
+            "key": "ref_3",
+            "first-page": "159",
+            "article-title": "Egg Fostering in Little Terns (Sternula albifrons) in Response to Nest Abandonment Following Depredation",
+            "volume": "10",
+            "author": "Power",
+            "year": "2015",
+            "journal-title": "Ir. Birds"
         },
         {
-            "key": "e_1_3_4_5_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1146/annurev.ecolsys.36.102003.152617"
+            "key": "ref_4",
+            "doi-asserted-by": "crossref",
+            "first-page": "661",
+            "DOI": "10.1139/z91-097",
+            "article-title": "Hatching Asynchrony, Chick Care, and Adoption in the Common Tern: Can Disadvantaged Chicks Win?",
+            "volume": "69",
+            "author": "Morris",
+            "year": "1991",
+            "journal-title": "Can. J. Zool."
         },
         {
-            "key": "e_1_3_4_6_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/ele.12329"
+            "key": "ref_5",
+            "doi-asserted-by": "crossref",
+            "first-page": "294",
+            "DOI": "10.1111/j.1439-0310.1994.tb01048.x",
+            "article-title": "Adoption Behaviour in Little and Common Terns (Aves; Sternidae): Chick Benefits and Parents\u2019 Fitness Costs",
+            "volume": "97",
+            "author": "Saino",
+            "year": "1994",
+            "journal-title": "Ethology"
         },
         {
-            "key": "e_1_3_4_7_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1146/annurev-micro-092412-155618"
+            "key": "ref_6",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Arnold, J.M., Oswald, S.A., Nisbet, I.C.T., Pyle, P., and Patten, M.A. (2023, December 15). Common Tern (Sterna hirundo). Available online: https://doi.org/10.2173/bow.comter.01.",
+            "DOI": "10.2173/bow.comter.01"
         },
         {
-            "key": "e_1_3_4_8_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1126/science.1155725"
+            "key": "ref_7",
+            "doi-asserted-by": "crossref",
+            "first-page": "363",
+            "DOI": "10.1006/anbe.1994.1049",
+            "article-title": "Infanticide in Skimmers and Terns: Side Effects of Territorial Attacks or Inter-Generational Conflict?",
+            "volume": "47",
+            "author": "Quinn",
+            "year": "1994",
+            "journal-title": "Anim. Behav."
         },
         {
-            "key": "e_1_3_4_9_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1126/science.1198719"
+            "key": "ref_8",
+            "doi-asserted-by": "crossref",
+            "first-page": "679",
+            "DOI": "10.1093/beheco/arr041",
+            "article-title": "Parental-Care Parasitism: How Do Unrelated Offspring Attain Acceptance by Foster Parents?",
+            "volume": "22",
+            "author": "Soler",
+            "year": "2011",
+            "journal-title": "Behav. Ecol."
         },
         {
-            "key": "e_1_3_4_10_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1038/38229"
+            "key": "ref_9",
+            "doi-asserted-by": "crossref",
+            "first-page": "385",
+            "DOI": "10.1675/063.036.0318",
+            "article-title": "Caspian Terns (Hydroprogne caspia) Fledge a Ring-Billed Gull (Larus delawarensis) Chick: Successful Waterbird Adoption across Taxonomic Families",
+            "volume": "36",
+            "author": "Oswald",
+            "year": "2013",
+            "journal-title": "Waterbirds"
         },
         {
-            "key": "e_1_3_4_11_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s00109-016-1492-2"
+            "key": "ref_10",
+            "first-page": "429",
+            "article-title": "An Observation of Human-Induced Adoption in Piping Plover",
+            "volume": "62",
+            "author": "Midura",
+            "year": "1991",
+            "journal-title": "J. Field Ornithol."
         },
         {
-            "key": "e_1_3_4_12_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.chom.2011.10.002"
+            "key": "ref_11",
+            "doi-asserted-by": "crossref",
+            "first-page": "139",
+            "DOI": "10.61350/sbj.23.139",
+            "article-title": "Roseate Terns Sterna dougallii Successfully Rearing a Young Sandwich Tern S. sandvicensis",
+            "volume": "23",
+            "author": "Cadiou",
+            "year": "2010",
+            "journal-title": "Seabird"
         },
         {
-            "key": "e_1_3_4_13_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.anaerobe.2005.05.001"
+            "key": "ref_12",
+            "doi-asserted-by": "crossref",
+            "first-page": "409",
+            "DOI": "10.1676/0043-5643(2002)114[0409:AOBWSC]2.0.CO;2",
+            "article-title": "Adoption of Black-Winged Stilt Chicks by Common Terns",
+            "volume": "114",
+            "author": "Paz",
+            "year": "2002",
+            "journal-title": "Wilson Bull."
         },
         {
-            "key": "e_1_3_4_14_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1099/13500872-141-2-371"
+            "key": "ref_13",
+            "doi-asserted-by": "crossref",
+            "first-page": "609",
+            "DOI": "10.1656/045.026.0313",
+            "article-title": "Eviction Notice: Observation of a Sterna hirundo (Common Tern) Usurping an Active Sternula antillarum (Least Tern) Nest",
+            "volume": "26",
+            "author": "Riggs",
+            "year": "2019",
+            "journal-title": "Northeast. Nat."
         },
         {
-            "key": "e_1_3_4_15_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1128/JB.178.3.871-880.1996"
+            "key": "ref_14",
+            "first-page": "147",
+            "article-title": "Suspected Nest Usurpation of a Spotted Sandpiper by a Common Tern",
+            "volume": "22",
+            "author": "Lake",
+            "year": "2004",
+            "journal-title": "Ont. Birds"
         },
         {
-            "key": "e_1_3_4_16_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1136/gut.2010.215665"
+            "key": "ref_15",
+            "doi-asserted-by": "crossref",
+            "first-page": "256",
+            "DOI": "10.3368/er.25.4.256",
+            "article-title": "Poplar Island Environmental Restoration Project: Challenges in Waterbird Restoration on an Island in Chesapeake Bay",
+            "volume": "25",
+            "author": "Erwin",
+            "year": "2007",
+            "journal-title": "Ecol. Restor."
         },
         {
-            "key": "e_1_3_4_17_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1038/ismej.2008.76"
+            "key": "ref_16",
+            "doi-asserted-by": "crossref",
+            "first-page": "art3",
+            "DOI": "10.5751/JFO-00136-930403",
+            "article-title": "An Evaluation of Transmitter Effects on Adult and Juvenile Common Terns Using Leg-Loop Harness Attachments",
+            "volume": "93",
+            "author": "Buck",
+            "year": "2022",
+            "journal-title": "J. Field Ornithol."
         },
         {
-            "key": "e_1_3_4_18_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3945/an.111.000737"
+            "key": "ref_17",
+            "doi-asserted-by": "crossref",
+            "first-page": "22",
+            "DOI": "10.1186/s40657-020-00208-7",
+            "article-title": "Assessing Nest Attentiveness of Common Terns via Video Cameras and Temperature Loggers",
+            "volume": "11",
+            "author": "Sullivan",
+            "year": "2020",
+            "journal-title": "Avian Res."
         },
         {
-            "key": "e_1_3_4_19_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1073/pnas.072346699"
+            "key": "ref_18",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Wails, C.N., Oswald, S.A., and Arnold, J.M. (2014). Are Morphometrics Sufficient for Estimating Age of Pre-Fledging Birds in the Field? A Test Using Common Terns (Sterna hirundo). PLoS ONE, 9.",
+            "DOI": "10.1371/journal.pone.0111987"
         },
         {
-            "key": "e_1_3_4_20_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1365-2435.2011.01866.x"
+            "key": "ref_19",
+            "doi-asserted-by": "crossref",
+            "first-page": "275",
+            "DOI": "10.1080/00063657.2013.768590",
+            "article-title": "First Confirmed Record of a Common Tern Sterna hirundo Breeding at One Year of Age",
+            "volume": "60",
+            "author": "Arnold",
+            "year": "2013",
+            "journal-title": "Bird Study"
         },
         {
-            "key": "e_1_3_4_21_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1146/annurev-animal-022513-114113"
+            "key": "ref_20",
+            "doi-asserted-by": "crossref",
+            "first-page": "117",
+            "DOI": "10.2307/1521090",
+            "article-title": "Influence of Age on the Breeding Biology of Common Terns",
+            "volume": "7",
+            "author": "Nisbet",
+            "year": "1984",
+            "journal-title": "Colon. Waterbirds"
         },
         {
-            "key": "e_1_3_4_22_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.7717/peerj.1218"
-        },
-        {
-            "key": "e_1_3_4_23_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/ee/nvv153"
-        },
-        {
-            "key": "e_1_3_4_24_2",
-            "first-page": "890",
-            "article-title": "Amino acid \u03b413C analysis shows flexibility in the routing of dietary protein and lipids to the tissue of an omnivore",
-            "volume": "54",
-            "author": "Newsome SD",
+            "key": "ref_21",
+            "first-page": "389",
+            "article-title": "The Hurdle of Recruitment: Influences of Arrival Date, Colony Experience and Sex in the Common Tern Sterna hirundo",
+            "volume": "90",
+            "author": "Becker",
             "year": "2014",
-            "journal-title": "Am. Zool."
+            "journal-title": "Ardea"
         },
         {
-            "key": "e_1_3_4_25_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.phrs.2013.01.003"
+            "key": "ref_22",
+            "doi-asserted-by": "crossref",
+            "first-page": "53",
+            "DOI": "10.34080/os.v30.21610",
+            "article-title": "Common Terns Sterna hirundo Incubating a Red-Necked Grebe Podiceps grisegena Egg",
+            "volume": "30",
+            "author": "Bern",
+            "year": "2020",
+            "journal-title": "Ornis Svec."
         },
         {
-            "key": "e_1_3_4_26_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1099/ijs.0.02873-0"
-        },
-        {
-            "key": "e_1_3_4_27_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1073/pnas.1219247110"
-        },
-        {
-            "key": "e_1_3_4_28_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/ajcn/70.6.1046"
-        },
-        {
-            "key": "e_1_3_4_29_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/jn/130.7.1857S"
-        },
-        {
-            "key": "e_1_3_4_30_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1079/BJN19960076"
-        },
-        {
-            "key": "e_1_3_4_31_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1079/BJN19960077"
-        },
-        {
-            "key": "e_1_3_4_32_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/jn/133.4.1127"
-        },
-        {
-            "key": "e_1_3_4_33_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jinsphys.2010.11.005"
-        },
-        {
-            "key": "e_1_3_4_34_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.cell.2017.09.016"
-        },
-        {
-            "key": "e_1_3_4_35_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1128/AEM.56.8.2572-2575.1990"
-        },
-        {
-            "key": "e_1_3_4_36_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10295-008-0393-y"
-        },
-        {
-            "key": "e_1_3_4_37_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1073/pnas.1000080107"
-        },
-        {
-            "key": "e_1_3_4_38_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1128/AEM.01043-13"
-        },
-        {
-            "key": "e_1_3_4_39_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1038/nmeth.f.303"
-        },
-        {
-            "key": "e_1_3_4_40_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1038/nmeth.3869"
-        },
-        {
-            "key": "e_1_3_4_41_2",
-            "unstructured": "Oksanen J et al. 2016 Vegan: community ecology package. R Package Version 2.3-5 http://CRAN.R-project.org/package=vegan."
-        },
-        {
-            "key": "e_1_3_4_42_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1890/08-1695.1"
-        },
-        {
-            "key": "e_1_3_4_43_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/jn/118.5.561"
-        },
-        {
-            "key": "e_1_3_4_44_2",
-            "first-page": "1249",
-            "article-title": "Intestinal mucosal amino acid catabolism",
-            "volume": "128",
-            "author": "Wu G",
-            "year": "1998",
-            "journal-title": "Rec. Adv. Nutr. Sci."
-        },
-        {
-            "key": "e_1_3_4_45_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/jn/106.9.1361"
-        },
-        {
-            "key": "e_1_3_4_46_2",
-            "volume-title": "Nutritional requirements for laboratory animals",
-            "author": "National Research Council",
-            "year": "1995",
-            "edition": "4"
-        },
-        {
-            "key": "e_1_3_4_47_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/jn/128.3.606"
-        },
-        {
-            "key": "e_1_3_4_48_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1139/z05-038"
-        },
-        {
-            "key": "e_1_3_4_49_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1574-6976.2010.00251.x"
-        },
-        {
-            "key": "e_1_3_4_50_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1073/pnas.0504978102"
-        },
-        {
-            "key": "e_1_3_4_51_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.neuroscience.2015.05.016"
-        },
-        {
-            "key": "e_1_3_4_52_2",
-            "volume-title": "Ecological stoichiometry",
-            "author": "Sterner RW",
-            "year": "2002"
-        },
-        {
-            "key": "e_1_3_4_53_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1038/nrmicro1978"
-        },
-        {
-            "key": "e_1_3_4_54_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1073/pnas.1005963107"
-        },
-        {
-            "key": "e_1_3_4_55_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3390/nu10060761"
-        },
-        {
-            "key": "e_1_3_4_56_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1136/gutjnl-2011-301012"
-        },
-        {
-            "key": "e_1_3_4_57_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1038/nature12820"
-        },
-        {
-            "key": "e_1_3_4_58_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.cmet.2016.10.021"
-        },
-        {
-            "key": "e_1_3_4_59_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1099/ijs.0.63472-0"
-        },
-        {
-            "key": "e_1_3_4_60_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/J.ENG.2017.01.012"
-        },
-        {
-            "key": "e_1_3_4_61_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/nar/gkv1070"
-        },
-        {
-            "key": "e_1_3_4_62_2",
-            "volume-title": "Principles of biochemistry",
-            "author": "Horton R",
-            "year": "2002"
-        },
-        {
-            "key": "e_1_3_4_63_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1073/pnas.47.5.623"
-        },
-        {
-            "key": "e_1_3_4_64_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.7185/geochempersp.8.2"
-        },
-        {
-            "key": "e_1_3_4_65_2",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/ece3.1103"
+            "key": "ref_23",
+            "first-page": "e57928",
+            "article-title": "A Video Surveillance System to Monitor Breeding Colonies of Common Terns (Sterna hirundo)",
+            "volume": "137",
+            "author": "Wall",
+            "year": "2018",
+            "journal-title": "J. Vis. Exp."
         }
     ],
     "container-title": [
-        "Proceedings of the Royal Society B: Biological Sciences"
+        "Diversity"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://royalsocietypublishing.org/doi/pdf/10.1098/rspb.2019.2995",
-            "content-type": "application/pdf",
-            "content-version": "vor",
-            "intended-application": "text-mining"
-        },
-        {
-            "URL": "https://royalsocietypublishing.org/doi/full-xml/10.1098/rspb.2019.2995",
-            "content-type": "application/xml",
-            "content-version": "vor",
-            "intended-application": "text-mining"
-        },
-        {
-            "URL": "https://royalsocietypublishing.org/doi/pdf/10.1098/rspb.2019.2995",
+            "URL": "https://www.mdpi.com/1424-2818/16/1/10/pdf",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -520,99 +440,61 @@
     "deposited": {
         "date-parts": [
             [
-                2021,
-                2,
-                17
+                2023,
+                12,
+                25
             ]
         ],
-        "date-time": "2021-02-17T18:41:14Z",
-        "timestamp": 1613587274000
+        "date-time": "2023-12-25T02:07:15Z",
+        "timestamp": 1703470035000
     },
-    "score": 10.968951,
+    "score": 8.594169,
     "resource": {
         "primary": {
-            "URL": "https://royalsocietypublishing.org/doi/10.1098/rspb.2019.2995"
+            "URL": "https://www.mdpi.com/1424-2818/16/1/10"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2020,
-                3,
-                4
+                2023,
+                12,
+                23
             ]
         ]
     },
-    "references-count": 64,
+    "references-count": 23,
     "journal-issue": {
-        "issue": "1922",
-        "published-print": {
+        "issue": "1",
+        "published-online": {
             "date-parts": [
                 [
-                    2020,
-                    3,
-                    11
+                    2024,
+                    1
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1098/rspb.2019.2995"
+        "d16010010"
     ],
-    "URL": "http://dx.doi.org/10.1098/rspb.2019.2995",
+    "URL": "http://dx.doi.org/10.3390/d16010010",
     "ISSN": [
-        "0962-8452",
-        "1471-2954"
+        "1424-2818"
     ],
     "issn-type": [
         {
-            "value": "0962-8452",
-            "type": "print"
-        },
-        {
-            "value": "1471-2954",
+            "value": "1424-2818",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2020,
-                3,
-                4
+                2023,
+                12,
+                23
             ]
         ]
-    },
-    "assertion": [
-        {
-            "value": "2019-12-24",
-            "order": 0,
-            "name": "received",
-            "label": "Received",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2020-02-04",
-            "order": 1,
-            "name": "accepted",
-            "label": "Accepted",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2020-03-04",
-            "order": 2,
-            "name": "published",
-            "label": "Published",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        }
-    ]
+    }
 }

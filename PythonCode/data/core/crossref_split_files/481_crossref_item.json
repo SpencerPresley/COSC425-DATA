@@ -3,96 +3,31 @@
         "date-parts": [
             [
                 2024,
-                5,
-                2
+                9,
+                23
             ]
         ],
-        "date-time": "2024-05-02T23:35:59Z",
-        "timestamp": 1714692959152
+        "date-time": "2024-09-23T04:18:53Z",
+        "timestamp": 1727065133207
     },
-    "reference-count": 85,
+    "reference-count": 104,
     "publisher": "Wiley",
-    "issue": "10",
     "license": [
         {
             "start": {
                 "date-parts": [
                     [
                         2024,
-                        2,
-                        1
+                        9,
+                        22
                     ]
                 ],
-                "date-time": "2024-02-01T00:00:00Z",
-                "timestamp": 1706745600000
-            },
-            "content-version": "am",
-            "delay-in-days": 353,
-            "URL": "http://onlinelibrary.wiley.com/termsAndConditions#am"
-        },
-        {
-            "start": {
-                "date-parts": [
-                    [
-                        2023,
-                        2,
-                        13
-                    ]
-                ],
-                "date-time": "2023-02-13T00:00:00Z",
-                "timestamp": 1676246400000
+                "date-time": "2024-09-22T00:00:00Z",
+                "timestamp": 1726963200000
             },
             "content-version": "vor",
             "delay-in-days": 0,
             "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
-        }
-    ],
-    "funder": [
-        {
-            "DOI": "10.13039/100009171",
-            "name": "Natural Resources Conservation Service",
-            "doi-asserted-by": "publisher",
-            "award": [
-                "NR193A750023C003"
-            ],
-            "id": [
-                {
-                    "id": "10.13039/100009171",
-                    "id-type": "DOI",
-                    "asserted-by": "publisher"
-                }
-            ]
-        },
-        {
-            "DOI": "10.13039/100000202",
-            "name": "U.S. Fish and Wildlife Service",
-            "doi-asserted-by": "publisher",
-            "award": [
-                "F15AC00965",
-                "F18AP00182"
-            ],
-            "id": [
-                {
-                    "id": "10.13039/100000202",
-                    "id-type": "DOI",
-                    "asserted-by": "publisher"
-                }
-            ]
-        },
-        {
-            "DOI": "10.13039/100005825",
-            "name": "National Institute of Food and Agriculture",
-            "doi-asserted-by": "publisher",
-            "award": [
-                "WVA00820"
-            ],
-            "id": [
-                {
-                    "id": "10.13039/100005825",
-                    "id-type": "DOI",
-                    "asserted-by": "publisher"
-                }
-            ]
         }
     ],
     "content-domain": {
@@ -102,334 +37,59 @@
         "crossmark-restriction": true
     },
     "short-container-title": [
-        "Global Change Biology"
+        "Corp Soc Responsibility Env"
     ],
-    "published-print": {
-        "date-parts": [
-            [
-                2023,
-                5
-            ]
-        ]
-    },
-    "abstract": "<jats:title>Abstract</jats:title><jats:p>Climate change and land\u2010use change are leading drivers of biodiversity decline, affecting demographic parameters that are important for population persistence. For example, scientists have speculated for decades that climate change may skew adult sex ratios in taxa that express temperature\u2010dependent sex determination (TSD), but limited evidence exists that this phenomenon is occurring in natural settings. For species that are vulnerable to anthropogenic land\u2010use practices, differential mortality among sexes may also skew sex ratios. We sampled the spotted turtle (<jats:italic>Clemmys guttata</jats:italic>), a freshwater species with TSD, across a large portion of its geographic range (Florida to Maine), to assess the environmental factors influencing adult sex ratios. We present evidence that suggests recent climate change has potentially skewed the adult sex ratio of spotted turtles, with samples following a pattern of increased proportions of females concomitant with warming trends, but only within the warmer areas sampled. At intermediate temperatures, there was no relationship with climate, while in the cooler areas we found the opposite pattern, with samples becoming more male biased with increasing temperatures. These patterns might be explained in part by variation in relative adaptive capacity via phenotypic plasticity in nest site selection. Our findings also suggest that spotted turtles have a context\u2010dependent and multi\u2010scale relationship with land use. We observed a negative relationship between male proportion and the amount of crop cover (within 300\u2009m) when wetlands were less spatially aggregated. However, when wetlands were aggregated, sex ratios remained consistent. This pattern may reflect sex\u2010specific patterns in movement that render males more vulnerable to mortality from agricultural machinery and other threats. Our findings highlight the complexity of species' responses to both climate change and land use, and emphasize the role that landscape structure can play in shaping wildlife population demographics.</jats:p>",
-    "DOI": "10.1111/gcb.16625",
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>Corporate social responsibility has received much attention regarding how it can benefit firms and why firms voluntarily address social issues. However, little is known about the problems to which firms choose to pay attention and what influences these decisions. We combine the attention\u2010based view of the firm and media agenda\u2010setting theories to propose that firms address the most prominent social issues as determined by the media. We analyze the frequency of 64 social issues in the CSR reports of 258 firms from 2006 to 2016 for a total sample of 86,208 issue\u2010firm\u2010year observations. We find that the salience of the problems in traditional media influences the social issues firms address in their CSR reports, and over time, the agenda\u2010setting effect of traditional media on firms has increased, solidifying traditional media's role as curators of social issues.</jats:p>",
+    "DOI": "10.1002/csr.2979",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2023,
-                2,
-                1
+                2024,
+                9,
+                23
             ]
         ],
-        "date-time": "2023-02-01T15:13:58Z",
-        "timestamp": 1675264438000
+        "date-time": "2024-09-23T03:57:21Z",
+        "timestamp": 1727063841000
     },
-    "page": "2643-2654",
     "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 8,
+    "is-referenced-by-count": 0,
     "title": [
-        "Is the future female for turtles? Climate change and wetland configuration predict sex ratios of a freshwater species"
+        "Of shepherds and sheep: Who sets the agenda for firms' <scp>attention to</scp> social issues?"
     ],
-    "prefix": "10.1111",
-    "volume": "29",
+    "prefix": "10.1002",
     "author": [
         {
-            "ORCID": "http://orcid.org/0000-0001-7846-6335",
+            "ORCID": "http://orcid.org/0000-0002-6406-0112",
             "authenticated-orcid": false,
-            "given": "H. Patrick",
-            "family": "Roberts",
+            "given": "Ronei",
+            "family": "Leonel",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Department of Environmental Conservation University of Massachusetts  Amherst Massachusetts USA"
+                    "name": "Department of Management, Franklin P. Perdue School of Business Salisbury University  Salisbury Maryland USA"
                 }
             ]
         },
         {
-            "given": "Lisabeth L.",
-            "family": "Willey",
+            "given": "Jae Hwan",
+            "family": "Lee",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Department of Environmental Studies Antioch University New England  Keene New Hampshire USA"
-                },
-                {
-                    "name": "American Turtle Observatory  New Salem Massachusetts USA"
+                    "name": "Department of Business Rollins College  Winter Park Florida USA"
                 }
             ]
         },
         {
-            "given": "Michael T.",
-            "family": "Jones",
+            "given": "Elise",
+            "family": "Perrault",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Natural Heritage and Endangered Species Program Massachusetts Division of Fisheries and Wildlife  Westborough Massachusetts USA"
-                }
-            ]
-        },
-        {
-            "given": "Thomas S. B.",
-            "family": "Akre",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Smithsonian Conservation Biology Institute  Front Royal Virginia USA"
-                }
-            ]
-        },
-        {
-            "given": "David I.",
-            "family": "King",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "U.S. Forest Service, Northern Research Station, Department of Environmental Conservation University of Massachusetts  Amherst Massachusetts USA"
-                }
-            ]
-        },
-        {
-            "given": "John",
-            "family": "Kleopfer",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Virginia Department of Wildlife Resources  Charles City Virginia USA"
-                }
-            ]
-        },
-        {
-            "given": "Donald J.",
-            "family": "Brown",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "U.S. Forest Service Pacific Northwest Research Station  Amboy Washington USA"
-                },
-                {
-                    "name": "School of Natural Resources West Virginia University  Morgantown West Virginia USA"
-                }
-            ]
-        },
-        {
-            "given": "Scott W.",
-            "family": "Buchanan",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Division of Fish and Wildlife Rhode Island Department of Environmental Management  West Kingston Rhode Island USA"
-                }
-            ]
-        },
-        {
-            "given": "Houston C.",
-            "family": "Chandler",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "The Orianne Society  Tiger Georgia USA"
-                },
-                {
-                    "name": "Department of Fish and Wildlife Conservation Virginia Tech  Blacksburg Virginia USA"
-                }
-            ]
-        },
-        {
-            "given": "Phillip",
-            "family": "deMaynadier",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Maine Department of Inland Fisheries and Wildlife  Augusta Maine USA"
-                }
-            ]
-        },
-        {
-            "given": "Melissa",
-            "family": "Winters",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "New Hampshire Fish and Game Department  Concord New Hampshire USA"
-                }
-            ]
-        },
-        {
-            "given": "Lori",
-            "family": "Erb",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "The Mid\u2010Atlantic Center for Herpetology and Conservation  Oley Pennsylvania USA"
-                }
-            ]
-        },
-        {
-            "given": "Katharine D.",
-            "family": "Gipe",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Pennsylvania Fish and Boat Commission  Bellefonte Pennsylvania USA"
-                }
-            ]
-        },
-        {
-            "given": "Glenn",
-            "family": "Johnson",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Biology Department State University of New York  Potsdam New York USA"
-                }
-            ]
-        },
-        {
-            "given": "Kathryn",
-            "family": "Lauer",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Environmental Studies Antioch University New England  Keene New Hampshire USA"
-                },
-                {
-                    "name": "American Turtle Observatory  New Salem Massachusetts USA"
-                }
-            ]
-        },
-        {
-            "given": "Eric B.",
-            "family": "Liebgold",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Biological Sciences Salisbury University  Salisbury Maryland USA"
-                }
-            ]
-        },
-        {
-            "given": "Jonathan D.",
-            "family": "Mays",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Fish and Wildlife Research Institute Florida Fish and Wildlife Conservation Commission  Gainesville Florida USA"
-                }
-            ]
-        },
-        {
-            "given": "Jessica R.",
-            "family": "Meck",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Natural Heritage and Endangered Species Program Massachusetts Division of Fisheries and Wildlife  Westborough Massachusetts USA"
-                },
-                {
-                    "name": "Smithsonian Conservation Biology Institute  Front Royal Virginia USA"
-                }
-            ]
-        },
-        {
-            "given": "Joshua",
-            "family": "Megyesy",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "New Hampshire Fish and Game Department  Concord New Hampshire USA"
-                }
-            ]
-        },
-        {
-            "given": "Joel L.",
-            "family": "Mota",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "U.S. Forest Service Pacific Northwest Research Station  Amboy Washington USA"
-                }
-            ]
-        },
-        {
-            "given": "Nathan H.",
-            "family": "Nazdrowicz",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Species Conservation and Research Program Delaware Division of Fish &amp; Wildlife  Delaware USA"
-                }
-            ]
-        },
-        {
-            "given": "Kevin J.",
-            "family": "Oxenrider",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "West Virginia Division of Natural Resources  Romney West Virginia USA"
-                }
-            ]
-        },
-        {
-            "given": "Molly",
-            "family": "Parren",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "American Turtle Observatory  New Salem Massachusetts USA"
-                }
-            ]
-        },
-        {
-            "given": "Tami S.",
-            "family": "Ransom",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Environmental Studies Department Salisbury University  Salisbury Maryland USA"
-                }
-            ]
-        },
-        {
-            "given": "Lindsay",
-            "family": "Rohrbaugh",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "District of Columbia Department of Energy &amp; Environment  Washington District of Columbia USA"
-                }
-            ]
-        },
-        {
-            "given": "Scott",
-            "family": "Smith",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Maryland Department of Natural Resources  Maryland Wye Mills USA"
-                }
-            ]
-        },
-        {
-            "given": "Derek",
-            "family": "Yorks",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Maine Department of Inland Fisheries and Wildlife  Augusta Maine USA"
-                }
-            ]
-        },
-        {
-            "given": "Brian",
-            "family": "Zarate",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "New Jersey Division of Fish and Wildlife  Lebanon New Jersey USA"
+                    "name": "Ameriprise Financial Inc  Minneapolis Minnesota USA"
                 }
             ]
         }
@@ -438,483 +98,549 @@
     "published-online": {
         "date-parts": [
             [
-                2023,
-                2,
-                13
+                2024,
+                9,
+                22
             ]
         ]
     },
     "reference": [
         {
-            "key": "e_1_2_10_2_1",
+            "key": "e_1_2_7_2_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.biocon.2004.10.006"
+            "DOI": "10.1177/0149206311436079"
         },
         {
-            "key": "e_1_2_10_3_1",
-            "unstructured": "Barton K.(2016).MuMIn: Multi\u2010model inference. R package version 1.15.1.http://CRAN.R\u2010project.org/package1/4MuMIn"
-        },
-        {
-            "key": "e_1_2_10_4_1",
-            "first-page": "1",
-            "article-title": "Nesting movements and the use of anthropogenic nesting sites by spotted turtles (Clemmys guttata) and Blanding's turtles (Emydoidea blandingii)",
-            "volume": "5",
-            "author": "Beaudry F.",
-            "year": "2010",
-            "journal-title": "Herpetological Conservation and Biology"
-        },
-        {
-            "key": "e_1_2_10_5_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/conl.12190"
-        },
-        {
-            "key": "e_1_2_10_6_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/cobi.13136"
-        },
-        {
-            "key": "e_1_2_10_7_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/ece3.1316"
-        },
-        {
-            "key": "e_1_2_10_8_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.32614/RJ-2017-066"
-        },
-        {
-            "key": "e_1_2_10_9_1",
-            "unstructured": "Buchanan S. W.(2017).The influence of altered habitat: Landscape ecology of freshwater turtles in Rhode Island. [Dissertation]. University of Rhode Island.https://digitalcommons.uri.edu/oa_diss/665"
-        },
-        {
-            "key": "e_1_2_10_10_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1558-5646.1982.tb05048.x"
-        },
-        {
-            "key": "e_1_2_10_11_1",
-            "volume-title": "Model selection and multimodel inference: A practical information theoretic approach",
-            "author": "Burnham K. P.",
-            "year": "2002"
-        },
-        {
-            "key": "e_1_2_10_12_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.22621/cfn.v132i3.1908"
-        },
-        {
-            "key": "e_1_2_10_13_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1242/jeb.236018"
-        },
-        {
-            "key": "e_1_2_10_14_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1643/h2021084"
-        },
-        {
-            "key": "e_1_2_10_15_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1656/058.018.0411"
-        },
-        {
-            "key": "e_1_2_10_16_1",
-            "first-page": "323",
-            "article-title": "A new trap design for catching small Emydid and Kinosternid turtles",
-            "volume": "48",
-            "author": "Chandler H. C.",
-            "year": "2017",
-            "journal-title": "Herpetological Review"
-        },
-        {
-            "key": "e_1_2_10_17_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.foreco.2009.07.025"
-        },
-        {
-            "key": "e_1_2_10_18_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.14358/PERS.78.7.715"
-        },
-        {
-            "key": "e_1_2_10_19_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1095\u20108312.2004.00250.x"
-        },
-        {
-            "key": "e_1_2_10_20_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1371/journal.pone.0098414"
-        },
-        {
-            "key": "e_1_2_10_21_1",
-            "first-page": "228",
-            "article-title": "Reproduction in Clemmys guttata",
-            "volume": "26",
-            "author": "Ernst C. H.",
-            "year": "1970",
-            "journal-title": "Herpetologica"
-        },
-        {
-            "key": "e_1_2_10_22_1",
-            "first-page": "27",
-            "article-title": "A new coding system for hard\u2010shelled turtles",
-            "volume": "35",
-            "author": "Ernst C. H.",
-            "year": "1974",
-            "journal-title": "Kentucky Academy of Science"
-        },
-        {
-            "key": "e_1_2_10_23_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.56021/9780801891212"
-        },
-        {
-            "key": "e_1_2_10_24_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1600-0706.2010.19095.x"
-        },
-        {
-            "key": "e_1_2_10_25_1",
-            "volume-title": "Temperature\u2010dependent sex determination in vertebrates",
-            "author": "Ewert M. A.",
-            "year": "2004"
-        },
-        {
-            "key": "e_1_2_10_26_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1017/S0952836904006120"
-        },
-        {
-            "key": "e_1_2_10_27_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.biocon.2011.01.001"
-        },
-        {
-            "key": "e_1_2_10_28_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1655/D-18-00054"
-        },
-        {
-            "key": "e_1_2_10_29_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1046/j.1523-1739.2002.01215.x"
-        },
-        {
-            "key": "e_1_2_10_30_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1523-1739.2005.000155.x"
-        },
-        {
-            "key": "e_1_2_10_31_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/aec.12298"
-        },
-        {
-            "key": "e_1_2_10_32_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1365-2486.2007.01320.x"
-        },
-        {
-            "key": "e_1_2_10_33_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1098/rspb.2016.2576"
-        },
-        {
-            "key": "e_1_2_10_34_1",
-            "unstructured": "Hijmans R. J.(2019).Raster: Geographic data analysis and modeling. R package version 3.0\u20107."
-        },
-        {
-            "key": "e_1_2_10_35_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1365-2486.2011.02623.x"
-        },
-        {
-            "key": "e_1_2_10_36_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1073/pnas.91.16.7487"
-        },
-        {
-            "key": "e_1_2_10_37_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/1939620"
-        },
-        {
-            "key": "e_1_2_10_38_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/ece3.4120"
-        },
-        {
-            "key": "e_1_2_10_39_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.cub.2017.11.057"
-        },
-        {
-            "key": "e_1_2_10_40_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3390/rs11242971"
-        },
-        {
-            "key": "e_1_2_10_41_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1046/j.1523-1739.2001.98574.x"
-        },
-        {
-            "key": "e_1_2_10_42_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1643/0045-8511(2006)6[281:SDILIT]2.0.CO;2"
-        },
-        {
-            "key": "e_1_2_10_43_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/1565305"
-        },
-        {
-            "key": "e_1_2_10_44_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1643/CH-04024R1"
-        },
-        {
-            "key": "e_1_2_10_45_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1655/05-26.1"
-        },
-        {
-            "key": "e_1_2_10_46_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1523-1739.2004.00019.x"
-        },
-        {
-            "key": "e_1_2_10_47_1",
-            "unstructured": "McGarigal K. Cushman S. A. &Ene E.(2012).FRAGSTATS v4: Spatial pattern analysis program for categorical and continuous maps. Computer software program produced by the authors at the University of Massachusetts Amherst.http://www.umass.edu/landeco/research/fragstats/fragstats.html"
-        },
-        {
-            "key": "e_1_2_10_48_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/1565960"
-        },
-        {
-            "key": "e_1_2_10_49_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1098/rspb.2013"
-        },
-        {
-            "key": "e_1_2_10_50_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s00265\u2010002\u20100570\u20103"
-        },
-        {
-            "key": "e_1_2_10_51_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1139/cjz\u20102015\u20100154"
-        },
-        {
-            "key": "e_1_2_10_52_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1023/B:LAND.0000030521.19856.cb"
-        },
-        {
-            "key": "e_1_2_10_53_1",
-            "volume-title": "Persistence of a vulnerable semi\u2010aquatic turtle in an intensively\u2010managed forest landscape",
-            "author": "O'Bryan C. J.",
+            "key": "e_1_2_7_3_1",
+            "volume-title": "Fixed effects regression methods for longitudinal data using SAS",
+            "author": "Allison P.",
             "year": "2014"
         },
         {
-            "key": "e_1_2_10_54_1",
+            "key": "e_1_2_7_4_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/ecs2.1228"
+            "DOI": "10.1002/smj.4250010204"
         },
         {
-            "key": "e_1_2_10_55_1",
+            "key": "e_1_2_7_5_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/gcb.14520"
+            "DOI": "10.1002/smj.3122"
         },
         {
-            "key": "e_1_2_10_56_1",
+            "key": "e_1_2_7_6_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10980-010-9459-0"
+            "DOI": "10.2307/20159562"
         },
         {
-            "key": "e_1_2_10_57_1",
+            "key": "e_1_2_7_7_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1644/BOS-121"
+            "DOI": "10.5465/amr.2014.0238"
         },
         {
-            "key": "e_1_2_10_58_1",
-            "unstructured": "PRISM Climate Group. (2021).\u00a0Oregon State University. Retrieved April 2021 fromhttps://prism.oregonstate.edu"
-        },
-        {
-            "key": "e_1_2_10_59_1",
-            "volume-title": "R: A language and environment for statistical computing",
-            "author": "R Development Core Team",
-            "year": "2020"
-        },
-        {
-            "key": "e_1_2_10_60_1",
+            "key": "e_1_2_7_8_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2980/17-1-3298"
+            "DOI": "10.5465/amp.2017.0080"
         },
         {
-            "key": "e_1_2_10_61_1",
+            "key": "e_1_2_7_9_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/acv.12034"
+            "DOI": "10.2307/2667019"
         },
         {
-            "key": "e_1_2_10_62_1",
+            "key": "e_1_2_7_10_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.biocon.2012.03.019"
+            "DOI": "10.1287/orsc.1120.0770"
         },
         {
-            "key": "e_1_2_10_63_1",
+            "key": "e_1_2_7_11_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1093/jhered/esv053"
+            "DOI": "10.1002/csr.2176"
         },
         {
-            "key": "e_1_2_10_64_1",
+            "key": "e_1_2_7_12_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10682-014-9710-2"
+            "DOI": "10.1007/s10551-013-1956-z"
         },
         {
-            "key": "e_1_2_10_65_1",
+            "key": "e_1_2_7_13_1",
+            "volume-title": "The KPMG survey of corporate responsibility reporting",
+            "author": "Blasco J.",
+            "year": "2017"
+        },
+        {
+            "key": "e_1_2_7_14_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/ddi.12243"
+            "DOI": "10.5465/amj.2008.32626039"
         },
         {
-            "key": "e_1_2_10_66_1",
+            "key": "e_1_2_7_15_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/ecy.1603"
+            "DOI": "10.1177/009365090017002003"
         },
         {
-            "key": "e_1_2_10_67_1",
+            "key": "e_1_2_7_16_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.gecco.2021.e01759"
+            "DOI": "10.5465/amr.2011.0179"
         },
         {
-            "key": "e_1_2_10_68_1",
+            "key": "e_1_2_7_17_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/jwmg.219"
+            "DOI": "10.1177/0001839217695089"
         },
         {
-            "key": "e_1_2_10_69_1",
+            "key": "e_1_2_7_18_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1890/09-1149.1"
+            "DOI": "10.1111/j.1468-2370.2009.00275.x"
         },
         {
-            "key": "e_1_2_10_70_1",
+            "key": "e_1_2_7_19_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/brv.12136"
+            "DOI": "10.4324/9780203868584"
         },
         {
-            "key": "e_1_2_10_71_1",
+            "key": "e_1_2_7_20_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/jwmg.658"
+            "DOI": "10.1002/sd.2262"
         },
         {
-            "key": "e_1_2_10_72_1",
+            "key": "e_1_2_7_21_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.cub.2020.04.088"
+            "DOI": "10.1002/smj.2586"
         },
         {
-            "key": "e_1_2_10_73_1",
+            "key": "e_1_2_7_22_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1469-1795.2006.00032.x"
+            "DOI": "10.1177/107769901108800108"
         },
         {
-            "key": "e_1_2_10_74_1",
+            "key": "e_1_2_7_23_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1523-1739.2004.00240.x"
+            "DOI": "10.1287/orsc.1060.0192"
         },
         {
-            "key": "e_1_2_10_75_1",
+            "key": "e_1_2_7_24_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.biocon.2012.03.012"
+            "DOI": "10.1177/0007650315613966"
         },
         {
-            "key": "e_1_2_10_76_1",
+            "key": "e_1_2_7_25_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.biocon.2018.09.025"
+            "DOI": "10.4324/9780203774441"
         },
         {
-            "key": "e_1_2_10_77_1",
+            "key": "e_1_2_7_26_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1890/08-1452.1"
+            "DOI": "10.1086/268764"
         },
         {
-            "key": "e_1_2_10_78_1",
+            "key": "e_1_2_7_27_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/jez.2198"
+            "DOI": "10.4324/9780203406878"
         },
         {
-            "key": "e_1_2_10_79_1",
+            "key": "e_1_2_7_28_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.biocon.2018.03.006"
+            "DOI": "10.1177/014920630002600602"
         },
         {
-            "key": "e_1_2_10_80_1",
+            "key": "e_1_2_7_29_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/gcb.12918"
+            "DOI": "10.5465/amr.2007.25275682"
         },
         {
-            "key": "e_1_2_10_81_1",
+            "key": "e_1_2_7_30_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2744/CCB-0670.1"
+            "DOI": "10.5465/amj.2011.60263082"
         },
         {
-            "key": "e_1_2_10_82_1",
+            "key": "e_1_2_7_31_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1038/s41598\u2010019\u201040597\u20104"
+            "DOI": "10.1177/0149206311418663"
         },
         {
-            "key": "e_1_2_10_83_1",
+            "key": "e_1_2_7_32_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1365\u20102486.2004.00817.x"
+            "DOI": "10.2307/2095101"
         },
         {
-            "key": "e_1_2_10_84_1",
+            "key": "e_1_2_7_33_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.biocon.2021.109437"
+            "DOI": "10.5465/amr.2016.0107"
         },
         {
-            "key": "e_1_2_10_85_1",
-            "first-page": "151",
-            "article-title": "Habitat selection and nest survivorship of the spotted turtle, Clemmys guttata: A preliminary report",
-            "volume": "32",
-            "author": "Wilson T. P.",
-            "year": "1997",
-            "journal-title": "Bulletin of the Chicago Herpetological Society"
-        },
-        {
-            "key": "e_1_2_10_86_1",
+            "key": "e_1_2_7_34_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.isprsjprs.2018.09.006"
+            "DOI": "10.1002/smj.4250040403"
+        },
+        {
+            "key": "e_1_2_7_35_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1467-6486.1989.tb00735.x"
+        },
+        {
+            "key": "e_1_2_7_36_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/smj.2458"
+        },
+        {
+            "key": "e_1_2_7_37_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/smj.536"
+        },
+        {
+            "key": "e_1_2_7_38_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1057/palgrave.crr.1540226"
+        },
+        {
+            "key": "e_1_2_7_39_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0001839213488773"
+        },
+        {
+            "key": "e_1_2_7_40_1",
+            "volume-title": "Multilevel statistical models",
+            "author": "Goldstein H.",
+            "year": "2011"
+        },
+        {
+            "key": "e_1_2_7_41_1",
+            "volume-title": "News use across social media platforms 2016",
+            "author": "Gottfried J.",
+            "year": "2016"
+        },
+        {
+            "key": "e_1_2_7_42_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0149206319864155"
+        },
+        {
+            "key": "e_1_2_7_43_1",
+            "unstructured": "Granka L.(2010).Measuring agenda setting with online search traffic: Influences of online and traditional media. Presented at the Annual Meeting of the American Political Science Association September 2\u20135http://ssrn.com/abstract1658172"
+        },
+        {
+            "key": "e_1_2_7_44_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5465/amr.2012.0341"
+        },
+        {
+            "key": "e_1_2_7_45_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/2667123"
+        },
+        {
+            "key": "e_1_2_7_46_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/smj.3212"
+        },
+        {
+            "key": "e_1_2_7_47_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1371/journal.pone.0135311"
+        },
+        {
+            "key": "e_1_2_7_48_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/csr.2202"
+        },
+        {
+            "key": "e_1_2_7_49_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/1461670X.2012.664430"
+        },
+        {
+            "key": "e_1_2_7_50_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/1097-0266(200101)22:2<125::AID-SMJ150>3.0.CO;2-H"
+        },
+        {
+            "key": "e_1_2_7_51_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/256350"
+        },
+        {
+            "key": "e_1_2_7_52_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/009365093020003002"
+        },
+        {
+            "key": "e_1_2_7_53_1",
+            "volume-title": "A guide to econometrics",
+            "author": "Kennedy P.",
+            "year": "2008"
+        },
+        {
+            "key": "e_1_2_7_54_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2189/asqu.53.3.395"
+        },
+        {
+            "key": "e_1_2_7_55_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1145/3178876.3186137"
+        },
+        {
+            "key": "e_1_2_7_56_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/joms.13010"
+        },
+        {
+            "key": "e_1_2_7_57_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/00273170902794214"
+        },
+        {
+            "key": "e_1_2_7_58_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5465/amr.2007.25275676"
+        },
+        {
+            "key": "e_1_2_7_59_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5465/amj.2010.51467631"
+        },
+        {
+            "key": "e_1_2_7_60_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/000765039203100103"
+        },
+        {
+            "key": "e_1_2_7_61_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/3556659"
+        },
+        {
+            "key": "e_1_2_7_62_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1093/ijpor/edh118"
+        },
+        {
+            "key": "e_1_2_7_63_1",
+            "volume-title": "Setting the agenda: The mass media and public opinion",
+            "author": "McCombs M.",
+            "year": "2004"
+        },
+        {
+            "key": "e_1_2_7_64_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/14616700500250438"
+        },
+        {
+            "key": "e_1_2_7_65_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1086/267990"
+        },
+        {
+            "key": "e_1_2_7_66_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1460-2466.1993.tb01262.x"
+        },
+        {
+            "key": "e_1_2_7_67_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/15205436.2014.964871"
+        },
+        {
+            "key": "e_1_2_7_68_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.12840/issn.2255-4165.2014.02.01.003"
+        },
+        {
+            "key": "e_1_2_7_69_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0001839213500032"
+        },
+        {
+            "key": "e_1_2_7_70_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/(SICI)1097-0266(200005)21:5<603::AID-SMJ101>3.0.CO;2-3"
+        },
+        {
+            "key": "e_1_2_7_71_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1083-6101.2009.01458.x"
+        },
+        {
+            "key": "e_1_2_7_72_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/107769901108800110"
+        },
+        {
+            "key": "e_1_2_7_73_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/259247"
+        },
+        {
+            "key": "e_1_2_7_74_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1108/IntR-07-2016-0228"
+        },
+        {
+            "key": "e_1_2_7_75_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/(SICI)1097-0266(199707)18:1 <187::AID-SMJ936>3.0.CO;2-K"
+        },
+        {
+            "key": "e_1_2_7_76_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/orsc.1100.0602"
+        },
+        {
+            "key": "e_1_2_7_77_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/smj.2702"
+        },
+        {
+            "key": "e_1_2_7_78_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/1086026615571939"
+        },
+        {
+            "key": "e_1_2_7_79_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0007650316648671"
+        },
+        {
+            "key": "e_1_2_7_80_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/030630701403900304"
+        },
+        {
+            "key": "e_1_2_7_81_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/orsc.1120.0759"
+        },
+        {
+            "key": "e_1_2_7_82_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/smj.2348"
+        },
+        {
+            "key": "e_1_2_7_83_1",
+            "volume-title": "Multilevel and longitudinal modeling using Stata",
+            "author": "Rabe\u2010Hesketh S.",
+            "year": "2008"
+        },
+        {
+            "key": "e_1_2_7_84_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/107769900908600104"
+        },
+        {
+            "key": "e_1_2_7_85_1",
+            "volume-title": "Hierarchical linear models: Applications and data analysis methods",
+            "author": "Raudenbush S.",
+            "year": "2002"
+        },
+        {
+            "key": "e_1_2_7_86_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/smj.796"
+        },
+        {
+            "key": "e_1_2_7_87_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/joms.12137"
+        },
+        {
+            "key": "e_1_2_7_88_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1541-0072.2011.00406.x"
+        },
+        {
+            "key": "e_1_2_7_89_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/joms.12244"
+        },
+        {
+            "key": "e_1_2_7_90_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0093650202029004004"
+        },
+        {
+            "key": "e_1_2_7_91_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s10551-007-9573-3"
+        },
+        {
+            "key": "e_1_2_7_92_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1093/ijpor/edq048"
+        },
+        {
+            "key": "e_1_2_7_93_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/1536867X1301300105"
+        },
+        {
+            "key": "e_1_2_7_94_1",
+            "volume-title": "Social media outpaces print newspapers in the US as a news source",
+            "author": "Shearer E.",
+            "year": "2018"
+        },
+        {
+            "key": "e_1_2_7_95_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/smj.2499"
+        },
+        {
+            "key": "e_1_2_7_96_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1093/ijpor/14.3.264"
+        },
+        {
+            "key": "e_1_2_7_97_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1371/journal.pone.0129179"
+        },
+        {
+            "key": "e_1_2_7_98_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0007650320928969"
+        },
+        {
+            "key": "e_1_2_7_99_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5465/amr.2011.0466"
+        },
+        {
+            "key": "e_1_2_7_100_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1541-1338.2007.00300.x"
+        },
+        {
+            "key": "e_1_2_7_101_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/107769900908600404"
+        },
+        {
+            "key": "e_1_2_7_102_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1467-8683.2012.00926.x"
+        },
+        {
+            "key": "e_1_2_7_103_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.inffus.2017.10.006"
+        },
+        {
+            "key": "e_1_2_7_104_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s10551-009-0248-0"
+        },
+        {
+            "key": "e_1_2_7_105_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jbusres.2011.10.021"
         }
     ],
     "container-title": [
-        "Global Change Biology"
+        "Corporate Social Responsibility and Environmental Management"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/gcb.16625",
-            "content-type": "application/pdf",
-            "content-version": "vor",
-            "intended-application": "text-mining"
-        },
-        {
-            "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1111/gcb.16625",
-            "content-type": "application/xml",
-            "content-version": "vor",
-            "intended-application": "text-mining"
-        },
-        {
-            "URL": "https://onlinelibrary.wiley.com/doi/am-pdf/10.1111/gcb.16625",
-            "content-type": "application/pdf",
-            "content-version": "am",
-            "intended-application": "syndication"
-        },
-        {
-            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/gcb.16625",
+            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/csr.2979",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -923,74 +649,63 @@
     "deposited": {
         "date-parts": [
             [
-                2023,
-                8,
-                22
+                2024,
+                9,
+                23
             ]
         ],
-        "date-time": "2023-08-22T04:06:27Z",
-        "timestamp": 1692677187000
+        "date-time": "2024-09-23T03:57:26Z",
+        "timestamp": 1727063846000
     },
-    "score": 8.5739765,
+    "score": 13.989142,
     "resource": {
         "primary": {
-            "URL": "https://onlinelibrary.wiley.com/doi/10.1111/gcb.16625"
+            "URL": "https://onlinelibrary.wiley.com/doi/10.1002/csr.2979"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2023,
-                2,
-                13
+                2024,
+                9,
+                22
             ]
         ]
     },
-    "references-count": 85,
-    "journal-issue": {
-        "issue": "10",
-        "published-print": {
-            "date-parts": [
-                [
-                    2023,
-                    5
-                ]
-            ]
-        }
-    },
+    "references-count": 104,
     "alternative-id": [
-        "10.1111/gcb.16625"
+        "10.1002/csr.2979"
     ],
-    "URL": "http://dx.doi.org/10.1111/gcb.16625",
+    "URL": "http://dx.doi.org/10.1002/csr.2979",
     "archive": [
         "Portico"
     ],
     "ISSN": [
-        "1354-1013",
-        "1365-2486"
+        "1535-3958",
+        "1535-3966"
     ],
     "issn-type": [
         {
-            "value": "1354-1013",
+            "value": "1535-3958",
             "type": "print"
         },
         {
-            "value": "1365-2486",
+            "value": "1535-3966",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2023,
-                2,
-                13
+                2024,
+                9,
+                22
             ]
         ]
     },
     "assertion": [
         {
-            "value": "2022-06-28",
+            "value": "2024-05-06",
             "order": 0,
             "name": "received",
             "label": "Received",
@@ -1000,8 +715,8 @@
             }
         },
         {
-            "value": "2022-12-15",
-            "order": 1,
+            "value": "2024-09-08",
+            "order": 2,
             "name": "accepted",
             "label": "Accepted",
             "group": {
@@ -1010,8 +725,8 @@
             }
         },
         {
-            "value": "2023-02-13",
-            "order": 2,
+            "value": "2024-09-22",
+            "order": 3,
             "name": "published",
             "label": "Published",
             "group": {

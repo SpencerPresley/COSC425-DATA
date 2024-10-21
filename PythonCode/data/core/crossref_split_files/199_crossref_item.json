@@ -2,185 +2,297 @@
     "indexed": {
         "date-parts": [
             [
-                2024,
-                6,
-                17
+                2023,
+                11,
+                30
             ]
         ],
-        "date-time": "2024-06-17T15:09:13Z",
-        "timestamp": 1718636953060
+        "date-time": "2023-11-30T16:11:30Z",
+        "timestamp": 1701360690253
     },
-    "reference-count": 12,
-    "publisher": "Wiley",
-    "issue": "3",
-    "license": [
-        {
-            "start": {
-                "date-parts": [
-                    [
-                        2017,
-                        3,
-                        17
-                    ]
-                ],
-                "date-time": "2017-03-17T00:00:00Z",
-                "timestamp": 1489708800000
-            },
-            "content-version": "vor",
-            "delay-in-days": 0,
-            "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
-        }
-    ],
+    "reference-count": 35,
+    "publisher": "Informa UK Limited",
+    "issue": "2",
     "content-domain": {
-        "domain": [],
-        "crossmark-restriction": false
+        "domain": [
+            "www.tandfonline.com"
+        ],
+        "crossmark-restriction": true
     },
     "short-container-title": [
-        "Agribusiness"
+        "Journal of Curriculum and Pedagogy"
     ],
     "published-print": {
         "date-parts": [
             [
-                2017,
-                6
+                2020,
+                5,
+                3
             ]
         ]
     },
-    "abstract": "<jats:title>Abstract</jats:title><jats:p>While the literature has discussed the impacts of specific regulations in the broader marketplace, nothing has been published that identifies the total number of federal regulatory restrictions imposed upon an entire agribusiness value chain. This letter uses a dataset generated via machine learning methods to count the total number of federal regulations imposed on the beer value chain. We show that 94,212 federal regulatory constraints influenced the beer value chained in 2012, with the majority of constraints being imposed at the brewery level. [EconLit citations: D04, I18, O12]</jats:p>",
-    "DOI": "10.1002/agr.21507",
+    "DOI": "10.1080/15505170.2020.1771484",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2017,
-                3,
-                17
+                2020,
+                7,
+                27
             ]
         ],
-        "date-time": "2017-03-17T05:47:04Z",
-        "timestamp": 1489729624000
+        "date-time": "2020-07-27T22:45:36Z",
+        "timestamp": 1595889936000
     },
-    "page": "466-471",
+    "page": "135-157",
+    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
     "source": "Crossref",
-    "is-referenced-by-count": 9,
+    "is-referenced-by-count": 2,
     "title": [
-        "Quantifying Federal Regulatory Burdens in the Beer Value Chain"
+        "Getting read as rad: Performances of \u201cnice white lady\u201d and tensions in teaching about white supremacy"
     ],
-    "prefix": "10.1002",
-    "volume": "33",
+    "prefix": "10.1080",
+    "volume": "17",
     "author": [
         {
-            "given": "Trey",
-            "family": "Malone",
+            "given": "Colleen H.",
+            "family": "Clements",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Department of Agricultural Economics Oklahoma State University  Stillwater OK USA"
+                    "name": "Department of Curriculum and Instruction, University of Minnesota, Minneapolis, Minnesota, USA"
                 }
             ]
         },
         {
-            "given": "Dustin",
-            "family": "Chambers",
+            "given": "Erin",
+            "family": "Stutelberg",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Perdue School of Business Salisbury University  Salisbury MD USA"
+                    "name": "Department of Secondary and Physical Education, Salisbury University, Salisbury, Maryland, USA"
                 }
             ]
         }
     ],
-    "member": "311",
+    "member": "301",
     "published-online": {
         "date-parts": [
             [
-                2017,
-                3,
-                17
+                2020,
+                7,
+                27
             ]
         ]
     },
     "reference": [
         {
-            "key": "e_1_2_6_2_1",
+            "key": "CIT0001",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/rego.12107"
+            "DOI": "10.1177/0263276404042133"
         },
         {
-            "key": "e_1_2_6_3_1",
-            "article-title": "Craft beverage modernization and tax reform act, November update",
-            "author": "Brewers Association",
-            "year": "2016",
-            "journal-title": "Current Issues"
-        },
-        {
-            "key": "e_1_2_6_4_1",
-            "unstructured": "Burgdorf J. (2016).Mandated exclusive territories and beer franchise laws: Evidence from scanner level data. Working Paper. Louisville KY: University of Louisville."
-        },
-        {
-            "key": "e_1_2_6_5_1",
-            "article-title": "How do federal regulations affect consumer prices? An analysis of the regressive effects of regulation",
-            "author": "Chambers D.",
-            "year": "2016",
-            "journal-title": "Mercatus Working Paper, George Mason University, Arlington, VA"
-        },
-        {
-            "key": "e_1_2_6_6_1",
-            "unstructured": "Code of Federal Regulations. (2017).Title 27 Chapter I Subchapter A Part 25 Subpart J \u00a725.141. Barrels and kegs \u2013 (a) General requirements. Online."
-        },
-        {
-            "key": "e_1_2_6_7_1",
+            "key": "CIT0002",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10887-013-9088-y"
+            "DOI": "10.1080/15505170.2005.10411532"
         },
         {
-            "key": "e_1_2_6_8_1",
+            "key": "CIT0003",
+            "volume-title": "Killing Me Softly: Color-blind Racism in American Schools",
+            "author": "Bonilla-Silva E.",
+            "year": "2019"
+        },
+        {
+            "key": "CIT0004",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s11151-016-9525-0"
+            "DOI": "10.2307/2657316"
         },
         {
-            "key": "e_1_2_6_9_1",
+            "key": "CIT0005",
+            "volume-title": "(Re)Narrating teacher identity: Telling truths and becoming teachers",
+            "author": "Clements C.",
+            "year": "2017"
+        },
+        {
+            "key": "CIT0006",
+            "volume-title": "White woman\u2019s work: Examining the intersectionality of cultural norms, teaching, and identity formation in urban schools",
+            "author": "Coffee A.",
+            "year": "2016"
+        },
+        {
+            "key": "CIT0007",
+            "volume-title": "Doing collective biography",
+            "author": "Davies B.",
+            "year": "2006"
+        },
+        {
+            "key": "CIT0008",
+            "volume-title": "White femininity: Race, gender & power",
+            "author": "Deliovsky K.",
+            "year": "2010"
+        },
+        {
+            "key": "CIT0009",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1017/jwe.2015.22"
+            "DOI": "10.4135/9781412985390"
         },
         {
-            "key": "e_1_2_6_10_1",
+            "key": "CIT0010",
+            "volume-title": "White fragility: Why it\u2019s so hard for white people to talk about racism",
+            "author": "DiAngelo R.",
+            "year": "2018"
+        },
+        {
+            "key": "CIT0011",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/etap.12162"
+            "DOI": "10.4324/9780203973431"
         },
         {
-            "key": "e_1_2_6_11_1",
+            "key": "CIT0012",
+            "volume-title": "Fortunes of feminism: From state-managed capitalism to neoliberal crisis",
+            "author": "Fraser N.",
+            "year": "2013"
+        },
+        {
+            "key": "CIT0013",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1108/JEPP-02-2016-0004"
+            "DOI": "10.1080/08164640802433498"
         },
         {
-            "key": "e_1_2_6_12_1",
-            "article-title": "Home brewing legalization and the craft brewing industry",
-            "author": "McCullough M.",
-            "year": "2015",
-            "journal-title": "Beeronomics Conference"
+            "key": "CIT0014",
+            "volume-title": "Female sexualization: A collective work of memory",
+            "author": "Haug F.",
+            "year": "1987"
         },
         {
-            "key": "e_1_2_6_13_1",
-            "article-title": "FDA rescinds regulation of brewer's spent grains",
-            "author": "Sexton J",
-            "year": "2014",
-            "journal-title": "The Coloradoan"
+            "key": "CIT0015",
+            "volume-title": "Memory-work as a method of social science research: A detailed rendering of memory-work method",
+            "author": "Haug F.",
+            "year": "1987"
+        },
+        {
+            "key": "CIT0016",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3102/0034654316629798"
+        },
+        {
+            "key": "CIT0017",
+            "volume-title": "Stamped from the beginning: The definitive history of racist ideas in America",
+            "author": "Kendi I. X.",
+            "year": "2017"
+        },
+        {
+            "key": "CIT0018",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.4324/9781315180359"
+        },
+        {
+            "key": "CIT0019",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.17763/haer.83.3.35054h14l8230574"
+        },
+        {
+            "key": "CIT0020",
+            "volume-title": "We want to do more than survive: Abolitionist teaching and the pursuit of educational freedom",
+            "author": "Love B. L.",
+            "year": "2019"
+        },
+        {
+            "key": "CIT0021",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/09518398.2016.1174899"
+        },
+        {
+            "key": "CIT0022",
+            "volume-title": "Space, place and gender",
+            "author": "Massey D.",
+            "year": "2013"
+        },
+        {
+            "issue": "2",
+            "key": "CIT0023",
+            "first-page": "53",
+            "volume": "40",
+            "author": "Matias C. E.",
+            "year": "2013",
+            "journal-title": "Teacher Education Quarterly"
+        },
+        {
+            "key": "CIT0024",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/10665684.2014.933692"
+        },
+        {
+            "key": "CIT0025",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/09540250120098861"
+        },
+        {
+            "key": "CIT0026",
+            "volume-title": "My grandmother\u2019s hands: Racialized trauma and the pathway to mending our hearts and bodies",
+            "author": "Menakem R.",
+            "year": "2017"
+        },
+        {
+            "key": "CIT0027",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/09575146.2016.1223022"
+        },
+        {
+            "key": "CIT0028",
+            "volume-title": "I\u2019m a Black feminist, and I think call-out culture is toxic",
+            "author": "Ross L.",
+            "year": "2019"
+        },
+        {
+            "key": "CIT0029",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.9783/9780812200928"
+        },
+        {
+            "key": "CIT0030",
+            "volume-title": "Performance theory",
+            "author": "Schechner R.",
+            "year": "1988"
+        },
+        {
+            "key": "CIT0031",
+            "volume-title": "Performance studies: An introduction",
+            "author": "Schechner R.",
+            "year": "2013"
+        },
+        {
+            "key": "CIT0032",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0042085916668957"
+        },
+        {
+            "key": "CIT0033",
+            "first-page": "559",
+            "volume-title": "Handbook of research in teacher education: Enduring issues in changing contexts",
+            "author": "Sleeter C. E.",
+            "year": "2008",
+            "edition": "3"
+        },
+        {
+            "key": "CIT0034",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/15505170.2017.1297745"
+        },
+        {
+            "key": "CIT0035",
+            "volume-title": "Learning to be white: Money, race, and god in America",
+            "author": "Thandeka",
+            "year": "2000"
         }
     ],
     "container-title": [
-        "Agribusiness"
+        "Journal of Curriculum and Pedagogy"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fagr.21507",
-            "content-type": "application/pdf",
-            "content-version": "vor",
-            "intended-application": "text-mining"
-        },
-        {
-            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/agr.21507",
+            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/15505170.2020.1771484",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -189,69 +301,122 @@
     "deposited": {
         "date-parts": [
             [
-                2023,
-                9,
-                17
+                2021,
+                5,
+                26
             ]
         ],
-        "date-time": "2023-09-17T08:32:37Z",
-        "timestamp": 1694939557000
+        "date-time": "2021-05-26T03:59:02Z",
+        "timestamp": 1622001542000
     },
-    "score": 15.110339,
+    "score": 14.660496,
     "resource": {
         "primary": {
-            "URL": "https://onlinelibrary.wiley.com/doi/10.1002/agr.21507"
+            "URL": "https://www.tandfonline.com/doi/full/10.1080/15505170.2020.1771484"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2017,
-                3,
-                17
+                2020,
+                5,
+                3
             ]
         ]
     },
-    "references-count": 12,
+    "references-count": 35,
     "journal-issue": {
-        "issue": "3",
+        "issue": "2",
         "published-print": {
             "date-parts": [
                 [
-                    2017,
-                    6
+                    2020,
+                    5,
+                    3
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1002/agr.21507"
+        "10.1080/15505170.2020.1771484"
     ],
-    "URL": "http://dx.doi.org/10.1002/agr.21507",
-    "archive": [
-        "Portico"
-    ],
+    "URL": "http://dx.doi.org/10.1080/15505170.2020.1771484",
     "ISSN": [
-        "0742-4477",
-        "1520-6297"
+        "1550-5170",
+        "2156-8154"
     ],
     "issn-type": [
         {
-            "value": "0742-4477",
+            "value": "1550-5170",
             "type": "print"
         },
         {
-            "value": "1520-6297",
+            "value": "2156-8154",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2017,
-                3,
-                17
+                2020,
+                5,
+                3
             ]
         ]
-    }
+    },
+    "assertion": [
+        {
+            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
+            "order": 1,
+            "name": "peerreview_statement",
+            "label": "Peer Review Statement"
+        },
+        {
+            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=ujcp20",
+            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=ujcp20",
+            "order": 2,
+            "name": "aims_and_scope_url",
+            "label": "Aim & Scope"
+        },
+        {
+            "value": "2019-08-08",
+            "order": 0,
+            "name": "received",
+            "label": "Received",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
+        },
+        {
+            "value": "2020-05-01",
+            "order": 1,
+            "name": "revised",
+            "label": "Revised",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
+        },
+        {
+            "value": "2020-05-05",
+            "order": 2,
+            "name": "accepted",
+            "label": "Accepted",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
+        },
+        {
+            "value": "2020-07-27",
+            "order": 3,
+            "name": "published",
+            "label": "Published",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
+        }
+    ]
 }

@@ -3,28 +3,28 @@
         "date-parts": [
             [
                 2024,
-                9,
-                19
+                8,
+                15
             ]
         ],
-        "date-time": "2024-09-19T15:58:17Z",
-        "timestamp": 1726761497728
+        "date-time": "2024-08-15T13:12:59Z",
+        "timestamp": 1723727579963
     },
-    "reference-count": 30,
+    "reference-count": 17,
     "publisher": "American Chemical Society (ACS)",
-    "issue": "7",
+    "issue": "4",
     "license": [
         {
             "start": {
                 "date-parts": [
                     [
-                        2019,
-                        6,
-                        4
+                        2020,
+                        1,
+                        9
                     ]
                 ],
-                "date-time": "2019-06-04T00:00:00Z",
-                "timestamp": 1559606400000
+                "date-time": "2020-01-09T00:00:00Z",
+                "timestamp": 1578528000000
             },
             "content-version": "stm-asf",
             "delay-in-days": 0,
@@ -34,13 +34,13 @@
             "start": {
                 "date-parts": [
                     [
-                        2019,
-                        6,
-                        4
+                        2020,
+                        1,
+                        9
                     ]
                 ],
-                "date-time": "2019-06-04T00:00:00Z",
-                "timestamp": 1559606400000
+                "date-time": "2020-01-09T00:00:00Z",
+                "timestamp": 1578528000000
             },
             "content-version": "stm-asf",
             "delay-in-days": 0,
@@ -50,17 +50,46 @@
             "start": {
                 "date-parts": [
                     [
-                        2019,
-                        6,
-                        4
+                        2020,
+                        1,
+                        9
                     ]
                 ],
-                "date-time": "2019-06-04T00:00:00Z",
-                "timestamp": 1559606400000
+                "date-time": "2020-01-09T00:00:00Z",
+                "timestamp": 1578528000000
             },
             "content-version": "stm-asf",
             "delay-in-days": 0,
             "URL": "https://doi.org/10.15223/policy-045"
+        }
+    ],
+    "funder": [
+        {
+            "DOI": "10.13039/100010064",
+            "name": "Salisbury University",
+            "doi-asserted-by": "publisher",
+            "id": [
+                {
+                    "id": "10.13039/100010064",
+                    "id-type": "DOI",
+                    "asserted-by": "publisher"
+                }
+            ]
+        },
+        {
+            "DOI": "10.13039/100000057",
+            "name": "National Institute of General Medical Sciences",
+            "doi-asserted-by": "publisher",
+            "award": [
+                "P01GM118303"
+            ],
+            "id": [
+                {
+                    "id": "10.13039/100000057",
+                    "id-type": "DOI",
+                    "asserted-by": "publisher"
+                }
+            ]
         }
     ],
     "content-domain": {
@@ -68,48 +97,166 @@
         "crossmark-restriction": false
     },
     "short-container-title": [
-        "J. Chem. Educ."
+        "J. Am. Chem. Soc."
     ],
     "published-print": {
         "date-parts": [
             [
-                2019,
-                7,
-                9
+                2020,
+                1,
+                29
             ]
         ]
     },
-    "DOI": "10.1021/acs.jchemed.9b00326",
+    "DOI": "10.1021/jacs.9b09863",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2019,
-                6,
-                4
+                2020,
+                1,
+                9
             ]
         ],
-        "date-time": "2019-06-04T19:26:45Z",
-        "timestamp": 1559676405000
+        "date-time": "2020-01-09T21:44:21Z",
+        "timestamp": 1578606261000
     },
-    "page": "1407-1411",
+    "page": "1657-1661",
     "source": "Crossref",
-    "is-referenced-by-count": 4,
+    "is-referenced-by-count": 11,
     "title": [
-        "Enthalpy and the Second Law of Thermodynamics"
+        "Characterization of an <scp>l</scp>-Ascorbate Catabolic Pathway with Unprecedented Enzymatic Transformations"
     ],
     "prefix": "10.1021",
-    "volume": "96",
+    "volume": "142",
     "author": [
         {
-            "ORCID": "http://orcid.org/0000-0003-0770-0213",
+            "ORCID": "http://orcid.org/0000-0003-1422-784X",
             "authenticated-orcid": true,
-            "given": "David",
-            "family": "Keifer",
+            "given": "Tyler M. M.",
+            "family": "Stack",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
+                    "name": "Carl R. Woese Institute for Genomic Biology, University of Illinois, Urbana, Illinois 61801, United States"
+                }
+            ]
+        },
+        {
+            "given": "Katelyn N.",
+            "family": "Morrison",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Drury University, Springfield, Missouri 65802, United States"
+                }
+            ]
+        },
+        {
+            "given": "Thomas M.",
+            "family": "Dettmer",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Drury University, Springfield, Missouri 65802, United States"
+                }
+            ]
+        },
+        {
+            "given": "Brendan",
+            "family": "Wille",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Biological Sciences, Salisbury University, Salisbury, Maryland 21801, United States"
+                }
+            ]
+        },
+        {
+            "given": "Chan",
+            "family": "Kim",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Biological Sciences, Salisbury University, Salisbury, Maryland 21801, United States"
+                }
+            ]
+        },
+        {
+            "given": "Ryan",
+            "family": "Joyce",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Biological Sciences, Salisbury University, Salisbury, Maryland 21801, United States"
+                }
+            ]
+        },
+        {
+            "given": "Madison",
+            "family": "Jermain",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Biological Sciences, Salisbury University, Salisbury, Maryland 21801, United States"
+                }
+            ]
+        },
+        {
+            "given": "Yadanar Than",
+            "family": "Naing",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Biological Sciences, Salisbury University, Salisbury, Maryland 21801, United States"
+                }
+            ]
+        },
+        {
+            "given": "Khadija",
+            "family": "Bhatti",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Biological Sciences, Salisbury University, Salisbury, Maryland 21801, United States"
+                }
+            ]
+        },
+        {
+            "given": "Brian San",
+            "family": "Francisco",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Carl R. Woese Institute for Genomic Biology, University of Illinois, Urbana, Illinois 61801, United States"
+                }
+            ]
+        },
+        {
+            "given": "Michael S.",
+            "family": "Carter",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Carl R. Woese Institute for Genomic Biology, University of Illinois, Urbana, Illinois 61801, United States"
+                },
+                {
+                    "name": "Department of Biological Sciences, Salisbury University, Salisbury, Maryland 21801, United States"
+                }
+            ]
+        },
+        {
+            "ORCID": "http://orcid.org/0000-0002-5625-1218",
+            "authenticated-orcid": true,
+            "given": "John A.",
+            "family": "Gerlt",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Carl R. Woese Institute for Genomic Biology, University of Illinois, Urbana, Illinois 61801, United States"
+                },
+                {
+                    "name": "Departments of Biochemistry and Chemistry, University of Illinois, Urbana, Illinois 61801, United States"
                 }
             ]
         }
@@ -118,9 +265,9 @@
     "published-online": {
         "date-parts": [
             [
-                2019,
-                6,
-                4
+                2020,
+                1,
+                9
             ]
         ]
     },
@@ -128,181 +275,96 @@
         {
             "key": "ref1/cit1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1021/ed100477x"
+            "DOI": "10.1080/07352680591002165"
         },
         {
             "key": "ref2/cit2",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1021/ed400453s"
+            "DOI": "10.1016/j.freeradbiomed.2018.03.033"
         },
         {
             "key": "ref3/cit3",
-            "volume-title": "Chemistry: A Molecular Approach",
-            "author": "Tro N. J.",
-            "year": "2017"
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1128/JB.184.1.302-306.2002"
         },
         {
             "key": "ref4/cit4",
-            "volume-title": "General Chemistry",
-            "author": "Hill J. W.",
-            "year": "2005"
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1128/JB.185.7.2243-2250.2003"
         },
         {
             "key": "ref5/cit5",
-            "volume-title": "Elementary Principles of Chemical Processes",
-            "author": "Felder R. M.",
-            "year": "2000"
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1073/pnas.1605546113"
         },
         {
             "key": "ref6/cit6",
-            "volume-title": "Introduction to Chemical Engineering Thermodynamics",
-            "author": "Smith J. M.",
-            "year": "2001"
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/tpj.13439"
+        },
+        {
+            "key": "ref7/cit7",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.bbapap.2015.04.015"
         },
         {
             "key": "ref8/cit8",
-            "volume-title": "Chemistry",
-            "author": "Zumdahl S. S.",
-            "year": "2003"
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1021/bi5004298"
         },
         {
             "key": "ref9/cit9",
-            "volume-title": "Chemistry: Matter and Its Changes",
-            "author": "Brady J. E.",
-            "year": "2004"
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1073/pnas.1323931111"
         },
         {
             "key": "ref10/cit10",
-            "volume-title": "Chemical Principles",
-            "author": "Zumdahl S. S.",
-            "year": "2005"
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1038/nature03172"
         },
         {
             "key": "ref11/cit11",
-            "volume-title": "Chemistry & Chemical Reactivity",
-            "author": "Kotz J. C.",
-            "year": "2012"
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1006/abio.1998.2700"
         },
         {
             "key": "ref12/cit12",
-            "volume-title": "General Chemistry",
-            "author": "Ebbing D. D.",
-            "year": "2013"
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1006/jmbi.1997.1070"
         },
         {
             "key": "ref13/cit13",
-            "volume-title": "Chemistry",
-            "author": "Flowers P.",
-            "year": "2015"
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1038/nchembio.1063"
         },
         {
             "key": "ref14/cit14",
-            "volume-title": "Chemical Principles: The Quest for Insight",
-            "author": "Atkins P.",
-            "year": "2016"
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1021/ja5009272"
         },
         {
             "key": "ref15/cit15",
-            "volume-title": "Physical Chemistry: A Molecular Approach",
-            "author": "McQuarrie D. A.",
-            "year": "1997"
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/0003-2697(76)90575-3"
         },
         {
             "key": "ref16/cit16",
-            "volume-title": "Physical Chemistry",
-            "author": "Atkins P.",
-            "year": "2010"
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/9780470015902.a0000637.pub2"
         },
         {
             "key": "ref17/cit17",
-            "volume-title": "Physical Chemistry",
-            "author": "Engel T.",
-            "year": "2010"
-        },
-        {
-            "key": "ref18/cit18",
-            "volume-title": "Chemistry",
-            "author": "Olmsted J.",
-            "year": "2006"
-        },
-        {
-            "key": "ref19/cit19",
-            "volume-title": "Chemistry",
-            "author": "Chang R.",
-            "year": "2007"
-        },
-        {
-            "key": "ref20/cit20",
-            "volume-title": "Chemistry: Principles, Patterns, and Applications",
-            "author": "Averill B.",
-            "year": "2007"
-        },
-        {
-            "key": "ref21/cit21",
-            "volume-title": "Chemistry",
-            "author": "Moore J. W.",
-            "year": "2008"
-        },
-        {
-            "key": "ref22/cit22",
-            "volume-title": "Chemistry",
-            "author": "Gilbert T. R.",
-            "year": "2018"
-        },
-        {
-            "key": "ref23/cit23",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1021/acs.jchemed.7b00653"
-        },
-        {
-            "key": "ref24/cit24",
-            "doi-asserted-by": "crossref",
-            "unstructured": "O\u2019Brien, J. C. Thermodynamic Considerations for Thermal Water Splitting Processes and High Temperature Electrolysis.  Proceedings of the 2008 International Mechanical Engineering Congress and Exposition; 2008.",
-            "DOI": "10.1115/IMECE2008-68880"
-        },
-        {
-            "key": "ref25/cit25",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.ijhydene.2010.05.128"
-        },
-        {
-            "key": "ref26/cit26",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1021/ed066p683"
-        },
-        {
-            "key": "ref27/cit27",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1021/ed079p339"
-        },
-        {
-            "key": "ref28/cit28",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1021/ed062p847"
-        },
-        {
-            "key": "ref29/cit29",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/09500690305032"
-        },
-        {
-            "key": "ref30/cit30",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1039/C2RP20135F"
-        },
-        {
-            "key": "ref31/cit31",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.pbiomolbio.2003.11.014"
+            "DOI": "10.1042/BJ20110939"
         }
     ],
     "container-title": [
-        "Journal of Chemical Education"
+        "Journal of the American Chemical Society"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://pubs.acs.org/doi/pdf/10.1021/acs.jchemed.9b00326",
+            "URL": "https://pubs.acs.org/doi/pdf/10.1021/jacs.9b09863",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -313,64 +375,73 @@
             [
                 2023,
                 4,
-                25
+                13
             ]
         ],
-        "date-time": "2023-04-25T08:12:38Z",
-        "timestamp": 1682410358000
+        "date-time": "2023-04-13T22:39:02Z",
+        "timestamp": 1681425542000
     },
-    "score": 15.597122,
+    "score": 16.293978,
     "resource": {
         "primary": {
-            "URL": "https://pubs.acs.org/doi/10.1021/acs.jchemed.9b00326"
+            "URL": "https://pubs.acs.org/doi/10.1021/jacs.9b09863"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2019,
-                6,
-                4
+                2020,
+                1,
+                9
             ]
         ]
     },
-    "references-count": 30,
+    "references-count": 17,
     "journal-issue": {
-        "issue": "7",
+        "issue": "4",
         "published-print": {
             "date-parts": [
                 [
-                    2019,
-                    7,
-                    9
+                    2020,
+                    1,
+                    29
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1021/acs.jchemed.9b00326"
+        "10.1021/jacs.9b09863"
     ],
-    "URL": "http://dx.doi.org/10.1021/acs.jchemed.9b00326",
+    "URL": "http://dx.doi.org/10.1021/jacs.9b09863",
+    "relation": {
+        "has-preprint": [
+            {
+                "id-type": "doi",
+                "id": "10.26434/chemrxiv.9808241.v1",
+                "asserted-by": "object"
+            }
+        ]
+    },
     "ISSN": [
-        "0021-9584",
-        "1938-1328"
+        "0002-7863",
+        "1520-5126"
     ],
     "issn-type": [
         {
-            "value": "0021-9584",
+            "value": "0002-7863",
             "type": "print"
         },
         {
-            "value": "1938-1328",
+            "value": "1520-5126",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2019,
-                6,
-                4
+                2020,
+                1,
+                9
             ]
         ]
     }

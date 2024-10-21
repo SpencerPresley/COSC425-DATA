@@ -2,139 +2,126 @@
     "indexed": {
         "date-parts": [
             [
-                2024,
-                8,
-                19
+                2022,
+                4,
+                3
             ]
         ],
-        "date-time": "2024-08-19T21:12:39Z",
-        "timestamp": 1724101959333
+        "date-time": "2022-04-03T19:41:57Z",
+        "timestamp": 1649014917543
     },
-    "reference-count": 7,
-    "publisher": "American Association of Physics Teachers (AAPT)",
-    "issue": "3",
+    "reference-count": 0,
+    "publisher": "Informa UK Limited",
+    "issue": "4",
+    "license": [
+        {
+            "start": {
+                "date-parts": [
+                    [
+                        2017,
+                        12,
+                        1
+                    ]
+                ],
+                "date-time": "2017-12-01T00:00:00Z",
+                "timestamp": 1512086400000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "http://doi.wiley.com/10.1002/tdm_license_1.1"
+        },
+        {
+            "start": {
+                "date-parts": [
+                    [
+                        2017,
+                        12,
+                        13
+                    ]
+                ],
+                "date-time": "2017-12-13T00:00:00Z",
+                "timestamp": 1513123200000
+            },
+            "content-version": "vor",
+            "delay-in-days": 12,
+            "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+        }
+    ],
     "content-domain": {
         "domain": [
-            "pubs.aip.org"
+            "www.tandfonline.com"
         ],
         "crossmark-restriction": true
     },
+    "short-container-title": [
+        "The Historian"
+    ],
     "published-print": {
         "date-parts": [
             [
-                2018,
-                3,
+                2017,
+                12,
                 1
             ]
         ]
     },
-    "abstract": "<jats:p>With the introduction of the Wireless Smart Cart by PASCO scientific in April 2016, we expect a paradigm shift in undergraduate physics laboratory instruction. We have evaluated the feasibility of using the smart cart by carrying out experiments that are usually performed using traditional PASCO equipment. The simplicity, convenience, and cost-saving achieved by replacing a plethora of traditional laboratory sensors, wires, and equipment clutter with the smart cart are reported here.</jats:p>",
-    "DOI": "10.1119/1.5025290",
+    "DOI": "10.1111/hisn.12740",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2018,
-                2,
-                16
+                2017,
+                12,
+                13
             ]
         ],
-        "date-time": "2018-02-16T16:53:16Z",
-        "timestamp": 1518799996000
+        "date-time": "2017-12-13T02:31:00Z",
+        "timestamp": 1513132260000
     },
-    "page": "152-154",
-    "update-policy": "http://dx.doi.org/10.1063/aip-crossmark-policy-page",
+    "page": "918-919",
+    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
     "source": "Crossref",
-    "is-referenced-by-count": 6,
+    "is-referenced-by-count": 0,
     "title": [
-        "The PASCO Wireless Smart Cart: A Game Changer in the Undergraduate Physics Laboratory"
+        "<i>The Halle Orphanage as Scientific Community: Observation, Eclecticism, and Pietism in the Early Enlightenment</i>. By Kelly Joan Whitmer. (Chicago, IL: University of Chicago Press, 2015. Pp. xii, 202. $40.00.)"
     ],
-    "prefix": "10.1119",
-    "volume": "56",
+    "prefix": "10.1080",
+    "volume": "79",
     "author": [
         {
-            "given": "Asif",
-            "family": "Shakur",
+            "given": "Richard",
+            "family": "Bowler",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Salisbury University , Salisbury, MD"
-                }
-            ]
-        },
-        {
-            "given": "Rainor",
-            "family": "Connor",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Salisbury University , Salisbury, MD"
+                    "name": "Salisbury University"
                 }
             ]
         }
     ],
-    "member": "3",
-    "reference": [
-        {
-            "key": "2023063000555221300_c1",
-            "unstructured": "PASCO Wireless Smart Cart, https://www.PASCO.com/prodCompare/smart-cart/index.cfm."
-        },
-        {
-            "key": "2023063000555221300_c2",
-            "unstructured": "\u201cPASCO Scientific\u2019s New Smart Cart Provides an All-In-One Wireless Solution to Make the Classroom Study of Forces and Motion Easy and Affordable,\u201d PACSO scientific, https://www.PASCO.com/about/news/press-releases/PASCO-introduces-the-smart-cart.cfm."
-        },
-        {
-            "key": "2023063000555221300_c3",
-            "unstructured": "Acrylonitrile butadiene styrene, Wikipedia, https://en.wikipedia.org/wiki/Acrylonitrile_butadiene_styrene."
-        },
-        {
-            "key": "2023063000555221300_c4",
-            "unstructured": "PASCO Wireless Smart Cart Manual, https://www.PASCO.com/file_downloads/Downloads_Manuals/Wireless-Smart-Cart-Manual-ME-1240-1.pdf."
-        },
-        {
-            "key": "2023063000555221300_c5",
-            "doi-asserted-by": "publisher",
-            "first-page": "564",
-            "DOI": "10.1119/1.4830076",
-            "article-title": "Angular momentum",
-            "volume": "51",
-            "year": "2013",
-            "journal-title": "Phys. Teach."
-        },
-        {
-            "key": "2023063000555221300_c6",
-            "doi-asserted-by": "publisher",
-            "first-page": "312",
-            "DOI": "10.1119/1.4872422",
-            "article-title": "Angular velocity and centripetal acceleration relationship",
-            "volume": "52",
-            "year": "2014",
-            "journal-title": "Phys. Teach."
-        },
-        {
-            "key": "2023063000555221300_c7",
-            "doi-asserted-by": "publisher",
-            "first-page": "180",
-            "DOI": "10.1119/1.4865529",
-            "article-title": "Rotational energy in a physical pendulum",
-            "volume": "52",
-            "year": "2014",
-            "journal-title": "Phys. Teach."
-        }
-    ],
+    "member": "301",
+    "published-online": {
+        "date-parts": [
+            [
+                2020,
+                1,
+                10
+            ]
+        ]
+    },
     "container-title": [
-        "The Physics Teacher"
+        "The Historian"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://pubs.aip.org/aapt/pte/article-pdf/56/3/152/9867654/152_1_online.pdf",
+            "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1111%2Fhisn.12740",
             "content-type": "application/pdf",
             "content-version": "vor",
-            "intended-application": "syndication"
+            "intended-application": "text-mining"
         },
         {
-            "URL": "https://pubs.aip.org/aapt/pte/article-pdf/56/3/152/9867654/152_1_online.pdf",
+            "URL": "https://www.tandfonline.com/doi/pdf/10.1111/hisn.12740",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -143,72 +130,112 @@
     "deposited": {
         "date-parts": [
             [
-                2023,
-                6,
-                30
+                2020,
+                1,
+                10
             ]
         ],
-        "date-time": "2023-06-30T00:55:59Z",
-        "timestamp": 1688086559000
+        "date-time": "2020-01-10T07:54:11Z",
+        "timestamp": 1578642851000
     },
-    "score": 17.31847,
+    "score": 14.472335,
     "resource": {
         "primary": {
-            "URL": "https://pubs.aip.org/pte/article/56/3/152/278198/The-PASCO-Wireless-Smart-Cart-A-Game-Changer-in"
+            "URL": "https://www.tandfonline.com/doi/full/10.1111/hisn.12740"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2018,
-                3,
+                2017,
+                12,
                 1
             ]
         ]
     },
-    "references-count": 7,
+    "references-count": 0,
     "journal-issue": {
-        "issue": "3",
+        "issue": "4",
         "published-print": {
             "date-parts": [
                 [
-                    2018,
-                    3,
+                    2017,
+                    12,
                     1
                 ]
             ]
         }
     },
-    "URL": "http://dx.doi.org/10.1119/1.5025290",
+    "alternative-id": [
+        "10.1111/hisn.12740"
+    ],
+    "URL": "http://dx.doi.org/10.1111/hisn.12740",
     "ISSN": [
-        "0031-921X",
-        "1943-4928"
+        "0018-2370",
+        "1540-6563"
     ],
     "issn-type": [
         {
-            "value": "0031-921X",
+            "value": "0018-2370",
             "type": "print"
         },
         {
-            "value": "1943-4928",
+            "value": "1540-6563",
             "type": "electronic"
         }
     ],
-    "published-other": {
-        "date-parts": [
-            [
-                2018,
-                3
-            ]
-        ]
-    },
     "published": {
         "date-parts": [
             [
-                2018,
-                3,
+                2017,
+                12,
                 1
             ]
         ]
-    }
+    },
+    "assertion": [
+        {
+            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
+            "order": 1,
+            "name": "peerreview_statement",
+            "label": "Peer Review Statement"
+        },
+        {
+            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=rhis20",
+            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=rhis20",
+            "order": 2,
+            "name": "aims_and_scope_url",
+            "label": "Aim & Scope"
+        },
+        {
+            "value": "2017-12-13",
+            "order": 0,
+            "name": "received",
+            "label": "Received",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
+        },
+        {
+            "value": "2017-12-13",
+            "order": 1,
+            "name": "revised",
+            "label": "Revised",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
+        },
+        {
+            "value": "2020-01-10",
+            "order": 3,
+            "name": "published",
+            "label": "Published",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
+        }
+    ]
 }

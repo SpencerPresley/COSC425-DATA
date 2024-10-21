@@ -2,185 +2,216 @@
     "indexed": {
         "date-parts": [
             [
-                2023,
-                12,
-                12
+                2022,
+                4,
+                4
             ]
         ],
-        "date-time": "2023-12-12T00:26:55Z",
-        "timestamp": 1702340815718
+        "date-time": "2022-04-04T06:07:20Z",
+        "timestamp": 1649052440701
     },
     "reference-count": 0,
-    "publisher": "Wiley",
-    "issue": "S1",
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "suppl_1",
     "license": [
         {
             "start": {
                 "date-parts": [
                     [
-                        2019,
-                        4,
-                        1
+                        2018,
+                        11,
+                        17
                     ]
                 ],
-                "date-time": "2019-04-01T00:00:00Z",
-                "timestamp": 1554076800000
+                "date-time": "2018-11-17T00:00:00Z",
+                "timestamp": 1542412800000
             },
             "content-version": "vor",
-            "delay-in-days": 0,
-            "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+            "delay-in-days": 16,
+            "URL": "https://academic.oup.com/journals/pages/open_access/funder_policies/chorus/standard_publication_model"
         }
     ],
     "content-domain": {
-        "domain": [
-            "faseb.onlinelibrary.wiley.com"
-        ],
-        "crossmark-restriction": true
+        "domain": [],
+        "crossmark-restriction": false
     },
-    "short-container-title": [
-        "The FASEB Journal"
-    ],
     "published-print": {
         "date-parts": [
             [
-                2019,
-                4
+                2018,
+                11,
+                1
             ]
         ]
     },
-    "abstract": "<jats:p>A naturally\u2010occurring element, inorganic arsenic is found around the world in soil. It can contaminate fresh groundwater, where it is at risk of being ingested. Currently, arsenic is considered to be dangerous with chronic exposure and ingestion at 10 ug/L as established by the World Health Organization and the U.S. Environmental Protection Agency. Chronic exposure to arsenic is associated with inflammation, but current studies have show that even at lower doses, there is a link to expression and secretion changes of cytokines within T lymphocytes, particularly with IL\u20102 for growth, pro\u2010inflammatory IFN\u2010\u03b3 and anti\u2010inflammatory IL\u20104. Shifts favoring pro\u2010 or anti\u2010inflammatory cytokines can lead to differentiation into TH1 or TH2 cells, which specialize in their immune response. In this study, we aim to investigate how the expression and secretion of these cytokines produced by activated T lymphocytes change as an in\u2010vitro model of an activated human regulatory immune system. Through our model, we will detect if chronic low level arsenic exposure has the potential to catalyze a change in T lymphocyte function, and therefore overall immune function.</jats:p><jats:p>Previous studies have utilized various conditions by which to activate and treat T lymphocytes. As a result, there is variation in how these cytokines are predicted to change. For this study, we obtained human T lymphocytes. They were treated over 24 hours with 10 ng/mL of phytohemagglutinin, a known immune activator, and different concentrations of arsenic to develop a dose response curve, from 20 nM to 500 nM. Viable concentration and cytolethality were determined with differential staining and counting. Cell concentration and cytolethality changes were examined with one\u2010way ANOVA and Bonferroni's Pairwise T\u2010test. At 50 nM there is a difference in the cytolethality of the cells in the groups treated with arsenic with or without PHA with p &lt; 0.05.</jats:p><jats:p>Future work will include ELISA assays will be performed on all treatment groups of the cell media collected for IL\u20102, IL\u20104, and IFN\u2010\u03b3, followed by gene expression analysis via PCR. Experiments at 50 nM will be repeated as well to verify differences in cytolethality that were identified. Additionally, differential time periods for treatments of arsenic and PHA will be used to more accurately model chronic exposure in the cells. These other time points will analyzed through ELISA and gene expression analyses to inform the model of long\u2010term change within the cells of the cytokine profiles.</jats:p><jats:p><jats:bold>Support or Funding Information</jats:bold></jats:p><jats:p>This research is supported by the Salisbury University Department of Biological Sciences, the Salisbury University Honors College, and the Salisbury University Henson School of Science Grant.</jats:p><jats:p>This abstract is from the Experimental Biology 2019 Meeting. There is no full text article associated with this abstract published in <jats:italic>The FASEB Journal</jats:italic>.</jats:p>",
-    "DOI": "10.1096/fasebj.2019.33.1_supplement.792.6",
+    "DOI": "10.1093/geroni/igy031.3598",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2021,
-                6,
-                22
+                2018,
+                11,
+                18
             ]
         ],
-        "date-time": "2021-06-22T00:22:00Z",
-        "timestamp": 1624321320000
+        "date-time": "2018-11-18T00:47:05Z",
+        "timestamp": 1542502025000
     },
-    "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+    "page": "971-971",
     "source": "Crossref",
     "is-referenced-by-count": 0,
     "title": [
-        "Eliciting Differentiation of Human T Lymphocytes into TH1 or TH2 cells with Inorganic Arsenic Exposure"
+        "NEURAL CORRELATES OF ASSOCIATIVE AND ITEM RECOGNITION IN AGING"
     ],
-    "prefix": "10.1096",
-    "volume": "33",
+    "prefix": "10.1093",
+    "volume": "2",
     "author": [
         {
-            "given": "Mollie Anne",
-            "family": "Jewell",
+            "given": "M",
+            "family": "Patterson",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Department of Biological Sciences Salisbury University Salisbury MD"
+                    "name": "Salisbury University"
                 }
             ]
         },
         {
-            "given": "Jennifer",
-            "family": "Nyland",
+            "given": "E",
+            "family": "Leaver",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Department of Biological Sciences Salisbury University Salisbury MD"
+                    "name": "Salisbury University"
+                }
+            ]
+        },
+        {
+            "given": "K",
+            "family": "Nibblett",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Salisbury University"
+                }
+            ]
+        },
+        {
+            "given": "S",
+            "family": "Rubenstein",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Salisbury University"
+                }
+            ]
+        },
+        {
+            "given": "S",
+            "family": "Kline",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Salisbury University"
                 }
             ]
         }
     ],
-    "member": "311",
+    "member": "286",
     "published-online": {
         "date-parts": [
             [
-                2019,
-                4
+                2018,
+                11,
+                16
             ]
         ]
     },
     "container-title": [
-        "The FASEB Journal"
+        "Innovation in Aging"
     ],
     "language": "en",
+    "link": [
+        {
+            "URL": "http://academic.oup.com/innovateage/article-pdf/2/suppl_1/971/26573954/igy031.3598.pdf",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+        }
+    ],
     "deposited": {
         "date-parts": [
             [
-                2023,
-                12,
-                11
+                2018,
+                11,
+                18
             ]
         ],
-        "date-time": "2023-12-11T10:39:16Z",
-        "timestamp": 1702291156000
+        "date-time": "2018-11-18T00:47:06Z",
+        "timestamp": 1542502026000
     },
-    "score": 16.863462,
+    "score": 17.611122,
     "resource": {
         "primary": {
-            "URL": "https://faseb.onlinelibrary.wiley.com/doi/10.1096/fasebj.2019.33.1_supplement.792.6"
+            "URL": "https://academic.oup.com/innovateage/article/2/suppl_1/971/5184047"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2019,
-                4
+                2018,
+                11,
+                1
             ]
         ]
     },
     "references-count": 0,
     "journal-issue": {
-        "issue": "S1",
+        "issue": "suppl_1",
+        "published-online": {
+            "date-parts": [
+                [
+                    2018,
+                    11,
+                    16
+                ]
+            ]
+        },
         "published-print": {
             "date-parts": [
                 [
-                    2019,
-                    4
+                    2018,
+                    11,
+                    1
                 ]
             ]
         }
     },
-    "alternative-id": [
-        "10.1096/fasebj.2019.33.1_supplement.792.6"
-    ],
-    "URL": "http://dx.doi.org/10.1096/fasebj.2019.33.1_supplement.792.6",
-    "archive": [
-        "Portico"
-    ],
+    "URL": "http://dx.doi.org/10.1093/geroni/igy031.3598",
     "ISSN": [
-        "0892-6638",
-        "1530-6860"
+        "2399-5300"
     ],
     "issn-type": [
         {
-            "value": "0892-6638",
-            "type": "print"
-        },
-        {
-            "value": "1530-6860",
+            "value": "2399-5300",
             "type": "electronic"
         }
     ],
-    "published": {
+    "published-other": {
         "date-parts": [
             [
-                2019,
-                4
+                2018,
+                11
             ]
         ]
     },
-    "assertion": [
-        {
-            "value": "2019-04-01",
-            "order": 2,
-            "name": "published",
-            "label": "Published",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        }
-    ]
+    "published": {
+        "date-parts": [
+            [
+                2018,
+                11,
+                1
+            ]
+        ]
+    }
 }

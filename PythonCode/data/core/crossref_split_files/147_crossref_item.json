@@ -3,577 +3,681 @@
         "date-parts": [
             [
                 2024,
-                9,
-                27
-            ]
-        ],
-        "date-time": "2024-09-27T04:27:00Z",
-        "timestamp": 1727411220441
-    },
-    "reference-count": 80,
-    "publisher": "Informa UK Limited",
-    "content-domain": {
-        "domain": [
-            "www.tandfonline.com"
-        ],
-        "crossmark-restriction": true
-    },
-    "short-container-title": [
-        "Dynamics of Asymmetric Conflict"
-    ],
-    "DOI": "10.1080/17467586.2024.2406763",
-    "type": "journal-article",
-    "created": {
-        "date-parts": [
-            [
-                2024,
-                9,
+                8,
                 26
             ]
         ],
-        "date-time": "2024-09-26T13:18:02Z",
-        "timestamp": 1727356682000
+        "date-time": "2024-08-26T06:35:26Z",
+        "timestamp": 1724654126509
     },
-    "page": "1-18",
-    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
-    "source": "Crossref",
-    "is-referenced-by-count": 0,
-    "title": [
-        "Rebel fragmentation in the time of peace negotiations: Sri Lanka\u2019s LTTE and the Karuna Group"
-    ],
-    "prefix": "10.1080",
-    "author": [
+    "reference-count": 53,
+    "publisher": "MDPI AG",
+    "issue": "11",
+    "license": [
         {
-            "given": "S. I.",
-            "family": "Keethaponcalan",
-            "sequence": "first",
-            "affiliation": [
+            "start": {
+                "date-parts": [
+                    [
+                        2019,
+                        11,
+                        13
+                    ]
+                ],
+                "date-time": "2019-11-13T00:00:00Z",
+                "timestamp": 1573603200000
+            },
+            "content-version": "vor",
+            "delay-in-days": 0,
+            "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+    ],
+    "funder": [
+        {
+            "DOI": "10.13039/501100001809",
+            "name": "National Natural Science Foundation of China",
+            "doi-asserted-by": "publisher",
+            "award": [
+                "31500530"
+            ],
+            "id": [
                 {
-                    "name": "Conflict Resolution Department, Salisbury University, Salisbury, MD, USA"
+                    "id": "10.13039/501100001809",
+                    "id-type": "DOI",
+                    "asserted-by": "publisher"
                 }
             ]
         }
     ],
-    "member": "301",
+    "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+    },
+    "short-container-title": [
+        "Forests"
+    ],
+    "abstract": "<jats:p>The black-winged subterranean termite, Odontotermes formosanus Shiraki, is a severe pest of plantations and forests in China. This termite cultures symbiotic Termitomyces in the fungal combs, which are challenged by antagonistic microbes such as Trichoderma fungi. In a previous study we showed that O. formosanus workers made significantly fewer tunnels in sand containing commercially formulated conidia of Trichoderma viride Pers. ex Fries compared with untreated sand. Herein, we hypothesize that fungi in the genus Trichoderma exert repellent effects on O. formosanus. Different choice tests were conducted to evaluate the tunneling and aggregation behaviors of O. formosanus workers reacting to sand/soil containing the unformulated conidia of seven Trichoderma fungi (Trichoderma longibrachiatum Rifai, Trichoderma koningii Oud., Trichoderma harzianum Rifai, Trichoderma hamatum (Bon.) Bain, Trichoderma atroviride Karsten, Trichoderma spirale Indira and Kamala, and T. viride). We also investigated the colony-initiation preference of paired O. formosanus adults to soil treated with Trichoderma conidia (T. koningii or T. longibrachiatum) versus untreated soil. Tunneling-choice tests showed that sand containing conidia of nearly all Trichoderma fungi tested (except T. harzianum) significantly decreased tunneling activity in O. formosanus workers compared with untreated sand. Aggregation-choice test showed that T. koningii, T. atroviride and T. spirale repelled O. formosanus workers, whereas T. longibrachiatum and T. hamatum attracted termites. There was no significant difference in proportions of paired adults that stayed and laid eggs in the soil blocks treated with conidia of Trichoderma fungi and untreated ones. Our study showed that Trichoderma fungi generally repelled tunneling in O. formosanus, but may exert varied effects on aggregation preference by workers.</jats:p>",
+    "DOI": "10.3390/f10111020",
+    "type": "journal-article",
+    "created": {
+        "date-parts": [
+            [
+                2019,
+                11,
+                14
+            ]
+        ],
+        "date-time": "2019-11-14T15:56:34Z",
+        "timestamp": 1573746994000
+    },
+    "page": "1020",
+    "source": "Crossref",
+    "is-referenced-by-count": 10,
+    "title": [
+        "The Effects of Trichoderma Fungi on the Tunneling, Aggregation, and Colony-Initiation Preferences of Black-Winged Subterranean Termites, Odontotermes formosanus (Blattodea: Termitidae)"
+    ],
+    "prefix": "10.3390",
+    "volume": "10",
+    "author": [
+        {
+            "given": "Hongpeng",
+            "family": "Xiong",
+            "sequence": "first",
+            "affiliation": [
+                {
+                    "name": "Guangdong Key Laboratory for Innovation Development and Utilization of Forest Plant Germplasm, College of Forestry and Landscape Architecture, South China Agricultural University, Guangzhou 510642, China"
+                }
+            ]
+        },
+        {
+            "given": "Jiacheng",
+            "family": "Cai",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Mathematics and Computer Science, Salisbury University, Salisbury, MD 21801, USA"
+                }
+            ]
+        },
+        {
+            "given": "Xuan",
+            "family": "Chen",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Biology, Salisbury University, Salisbury, MD 21801, USA"
+                }
+            ]
+        },
+        {
+            "given": "Shiping",
+            "family": "Liang",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Guangdong Key Laboratory for Innovation Development and Utilization of Forest Plant Germplasm, College of Forestry and Landscape Architecture, South China Agricultural University, Guangzhou 510642, China"
+                }
+            ]
+        },
+        {
+            "given": "Xiujun",
+            "family": "Wen",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Guangdong Key Laboratory for Innovation Development and Utilization of Forest Plant Germplasm, College of Forestry and Landscape Architecture, South China Agricultural University, Guangzhou 510642, China"
+                }
+            ]
+        },
+        {
+            "given": "Cai",
+            "family": "Wang",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Guangdong Key Laboratory for Innovation Development and Utilization of Forest Plant Germplasm, College of Forestry and Landscape Architecture, South China Agricultural University, Guangzhou 510642, China"
+                }
+            ]
+        }
+    ],
+    "member": "1968",
     "published-online": {
         "date-parts": [
             [
-                2024,
-                9,
-                26
+                2019,
+                11,
+                13
             ]
         ]
     },
     "reference": [
         {
-            "key": "e_1_3_3_2_1",
-            "volume-title": "Ceasefire agreements and peace processes: A comparative study",
-            "author": "Akebo M.",
-            "year": "2017",
-            "unstructured": "Akebo, M. (2017). Ceasefire agreements and peace processes: A comparative study. Routledge."
-        },
-        {
-            "key": "e_1_3_3_3_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1353/book41843"
-        },
-        {
-            "key": "e_1_3_3_4_1",
-            "volume-title": "Sri Lanka: A climate of fear in the east",
-            "author": "Amnesty International",
-            "year": "2006",
-            "unstructured": "Amnesty International. (2006). Sri Lanka: A climate of fear in the east."
-        },
-        {
-            "key": "e_1_3_3_5_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1017/S1537592712000667"
-        },
-        {
-            "key": "e_1_3_3_6_1",
-            "volume-title": "War and peace: Armed struggle and peace efforts of liberation tigers",
-            "author": "Balasingham A.",
-            "year": "2004",
-            "unstructured": "Balasingham, A. (2004). War and peace: Armed struggle and peace efforts of liberation tigers. Fairmax Publishing Ltd."
-        },
-        {
-            "key": "e_1_3_3_7_1",
+            "key": "ref_1",
             "doi-asserted-by": "crossref",
-            "DOI": "10.4324/9781315814780",
-            "volume-title": "The political economy of ethnic conflict in Sri Lanka: Economic liberalization, mobilizational resources, and ethnic collective action",
-            "author": "Biziouras N.",
-            "year": "2014",
-            "unstructured": "Biziouras, N. (2014). The political economy of ethnic conflict in Sri Lanka: Economic liberalization, mobilizational resources, and ethnic collective action. Routledge."
-        },
-        {
-            "key": "e_1_3_3_8_1",
-            "doi-asserted-by": "crossref",
-            "DOI": "10.22459/CV.02.2018",
-            "volume-title": "Cascades of violence: War, crime, and peacebuilding across South Asia",
-            "author": "Braithwaite J.",
-            "year": "2018",
-            "unstructured": "Braithwaite, J., & D\u2019Costa, B. (2018). Cascades of violence: War, crime, and peacebuilding across South Asia. The Australian National University."
-        },
-        {
-            "key": "e_1_3_3_9_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/14678802.2015.1071974"
-        },
-        {
-            "key": "e_1_3_3_10_1",
-            "volume-title": "Betrayal of Indian democracy",
-            "author": "Chande M. B.",
-            "year": "1999",
-            "unstructured": "Chande, M. B. (1999). Betrayal of Indian democracy. Atlantic Publishers."
-        },
-        {
-            "key": "e_1_3_3_11_1",
-            "volume-title": "Gota\u2019s war: The crushing of tamil tiger terrorism in Sri Lanka",
-            "author": "Chandraprema C. A.",
+            "first-page": "355",
+            "DOI": "10.1146/annurev-ento-120710-100634",
+            "article-title": "Managing social insects of urban importance",
+            "volume": "57",
+            "author": "Rust",
             "year": "2012",
-            "unstructured": "Chandraprema, C. A. (2012). Gota\u2019s war: The crushing of tamil tiger terrorism in Sri Lanka. Ranjan Wijeratne Foundation."
+            "journal-title": "Annu. Rev. Entomol."
         },
         {
-            "key": "e_1_3_3_12_1",
+            "key": "ref_2",
             "doi-asserted-by": "crossref",
-            "DOI": "10.5040/9798216024484",
-            "volume-title": "Terrorism, Inc. The financing of terrorism, insurgency, and irregular warfare",
-            "author": "Clarke C. P.",
+            "first-page": "219",
+            "DOI": "10.1007/s00040-015-0394-6",
+            "article-title": "Variation in subterranean termite susceptibility to fatal infections by local Metarhizium soil isolates",
+            "volume": "62",
+            "author": "Denier",
             "year": "2015",
-            "unstructured": "Clarke, C. P. (2015). Terrorism, Inc. The financing of terrorism, insurgency, and irregular warfare. Preager."
+            "journal-title": "Insects Soc."
         },
         {
-            "key": "e_1_3_3_13_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/ajps.12003"
+            "key": "ref_3",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Hussain, A., Li, Y.F., Cheng, Y., Liu, Y., Chen, C.C., and Wen, S.Y. (2013). Immune-related transcriptome of Coptotermes formosanus Shiraki workers: The defense mechanism. PLoS ONE, 8.",
+            "DOI": "10.1371/journal.pone.0069543"
         },
         {
-            "key": "e_1_3_3_14_1",
-            "volume-title": "Assignment Colombo",
-            "author": "Dixit J. N.",
-            "year": "1998",
-            "unstructured": "Dixit, J. N. (1998). Assignment Colombo. Konark Publishers."
-        },
-        {
-            "key": "e_1_3_3_15_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/jogss/ogz060"
-        },
-        {
-            "key": "e_1_3_3_16_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0022002711429696"
-        },
-        {
-            "key": "e_1_3_3_17_1",
-            "volume-title": "India\u2019s foreign policy in a changing world",
-            "author": "Dutt V. P.",
-            "year": "1999",
-            "unstructured": "Dutt, V. P. (1999). India\u2019s foreign policy in a changing world. Vikas Publishing House."
-        },
-        {
-            "key": "e_1_3_3_18_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0022002720958062"
-        },
-        {
-            "key": "e_1_3_3_19_1",
-            "volume-title": "Scramble for Africa: Darfur intervention and the USA",
-            "author": "Fake S.",
-            "year": "2009",
-            "unstructured": "Fake, S., & Funk, K. (2009). Scramble for Africa: Darfur intervention and the USA. Black Rose Books."
-        },
-        {
-            "key": "e_1_3_3_20_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0022002712439496"
-        },
-        {
-            "key": "e_1_3_3_21_1",
-            "volume-title": "The treaty: The gripping story of the negotiations that brought about Irish independence and led to the civil war",
-            "author": "Friemann G.",
-            "year": "2021",
-            "unstructured": "Friemann, G. (2021). The treaty: The gripping story of the negotiations that brought about Irish independence and led to the civil war. Merrion Press."
-        },
-        {
-            "key": "e_1_3_3_22_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.4135/9788132101406.n9"
-        },
-        {
-            "key": "e_1_3_3_23_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0022343318806940"
-        },
-        {
-            "key": "e_1_3_3_24_1",
-            "first-page": "74",
-            "volume-title": "The politics of conflict: A survey",
-            "author": "Ganguly R.",
+            "key": "ref_4",
+            "doi-asserted-by": "crossref",
+            "first-page": "1259",
+            "DOI": "10.1016/j.jinsphys.2011.05.016",
+            "article-title": "Subterranean termite prophylactic secretions and external antifungal defenses",
+            "volume": "57",
+            "author": "Hamilton",
             "year": "2011",
-            "unstructured": "Ganguly, R. (2011). Conflict in South Asia: Kashmir and Sri Lanka. In V. K. Fouskas (Ed.), The politics of conflict: A survey (pp. 74\u2013100). Routledge."
+            "journal-title": "J. Insect Physiol."
         },
         {
-            "key": "e_1_3_3_25_1",
-            "volume-title": "Sri Lanka: From war to peace",
-            "author": "Gokhale N. A.",
-            "year": "2009",
-            "unstructured": "Gokhale, N. A. (2009). Sri Lanka: From war to peace. Har-Anand Publications."
-        },
-        {
-            "key": "e_1_3_3_26_1",
-            "volume-title": "Negotiating with tigers (LTTE), 2002-2005: A view from the second row",
-            "author": "Gooneratne J.",
-            "year": "2007",
-            "unstructured": "Gooneratne, J. (2007). Negotiating with tigers (LTTE), 2002-2005: A view from the second row. Stamford Lake."
-        },
-        {
-            "key": "e_1_3_3_27_1",
-            "volume-title": "The assassination of Rajiv Gandhi",
-            "author": "Gopal N.",
-            "year": "2016",
-            "unstructured": "Gopal, N. (2016). The assassination of Rajiv Gandhi. Penguin."
-        },
-        {
-            "key": "e_1_3_3_28_1",
-            "volume-title": "Sri Lanka: The failure of the peace process",
-            "author": "International Crisis Group",
-            "year": "2006",
-            "unstructured": "International Crisis Group. (2006). Sri Lanka: The failure of the peace process."
-        },
-        {
-            "key": "e_1_3_3_29_1",
-            "volume-title": "When god stops fighting: How religious violence ends",
-            "author": "Juergensmeyer M.",
-            "year": "2022",
-            "unstructured": "Juergensmeyer, M. (2022). When god stops fighting: How religious violence ends. California University Press."
-        },
-        {
-            "key": "e_1_3_3_30_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1162/002081897550339"
-        },
-        {
-            "key": "e_1_3_3_31_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/2759183"
-        },
-        {
-            "key": "e_1_3_3_32_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/13698249.2021.1903774"
-        },
-        {
-            "key": "e_1_3_3_33_1",
-            "volume-title": "Development under stress, Sri Lankan Economy in transition",
-            "author": "Kelegama S.",
-            "year": "2006",
-            "unstructured": "Kelegama, S. (2006). Development under stress, Sri Lankan Economy in transition. Sage."
-        },
-        {
-            "key": "e_1_3_3_34_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/096701068701800415"
-        },
-        {
-            "key": "e_1_3_3_35_1",
+            "key": "ref_5",
             "doi-asserted-by": "crossref",
-            "DOI": "10.4135/9781483371597",
-            "volume-title": "Political handbook of the world 2015",
-            "author": "Lansford T.",
-            "year": "2015",
-            "unstructured": "Lansford, T. (2015). Political handbook of the world 2015. CO Press."
+            "first-page": "422",
+            "DOI": "10.3389/fmicb.2016.00422",
+            "article-title": "Lower termite associations with microbes: Synergy, protection, and interplay",
+            "volume": "7",
+            "author": "Peterson",
+            "year": "2016",
+            "journal-title": "Front. Microbiol."
         },
         {
-            "key": "e_1_3_3_36_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.4324/9781315436616-17"
+            "key": "ref_6",
+            "first-page": "1431",
+            "article-title": "The termite fecal nest: A framework for the opportunistic acquisition of beneficial soil Streptomyces (Actinomycetales: Streptomycetaceae)",
+            "volume": "47",
+            "author": "Chouvenc",
+            "year": "2018",
+            "journal-title": "Environ. Entomol."
         },
         {
-            "key": "e_1_3_3_37_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/1467-9558.00156"
-        },
-        {
-            "key": "e_1_3_3_38_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1017/9781316257814"
-        },
-        {
-            "key": "e_1_3_3_40_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/09546553.2017.1374254"
-        },
-        {
-            "key": "e_1_3_3_41_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/09700160802518536"
-        },
-        {
-            "key": "e_1_3_3_42_1",
-            "volume-title": "Making sense of the troubles: The story of the conflict in Northern Ireland",
-            "author": "McKittrick D.",
+            "key": "ref_7",
+            "first-page": "243",
+            "article-title": "Alarm, aggregation, and defense by Reticulitermes flavipes in response to a naturally occurring isolate of Metarhizium anisopliae",
+            "volume": "40",
+            "author": "Myles",
             "year": "2002",
-            "unstructured": "McKittrick, D., & McVea, D. (2002). Making sense of the troubles: The story of the conflict in Northern Ireland. New Amsterdam Books."
+            "journal-title": "Sociobiology"
         },
         {
-            "key": "e_1_3_3_43_1",
+            "key": "ref_8",
             "doi-asserted-by": "crossref",
-            "DOI": "10.5771/9780815729112",
-            "volume-title": "Choices, inside the making of India\u2019s foreign policy",
-            "author": "Menon S.",
-            "year": "2016",
-            "unstructured": "Menon, S. (2016). Choices, inside the making of India\u2019s foreign policy. Brookings Institute Press."
+            "unstructured": "Bulmer, M.S., Franco, B.A., and Fields, E.G. (2019). Subterranean termite social alarm and hygienic responses to fungal pathogens. Insects, 10.",
+            "DOI": "10.3390/insects10080240"
         },
         {
-            "key": "e_1_3_3_44_1",
-            "volume-title": "No war, No peace: The denial of minority rights and justice in Sri Lanka",
-            "author": "Minority Rights Group",
-            "year": "2011",
-            "unstructured": "Minority Rights Group. (2011). No war, No peace: The denial of minority rights and justice in Sri Lanka. Minority Rights Group International."
-        },
-        {
-            "key": "e_1_3_3_45_1",
-            "volume-title": "Sri Lanka: A dangerous interlude",
-            "author": "Mukarji A.",
+            "key": "ref_9",
+            "doi-asserted-by": "crossref",
+            "first-page": "367",
+            "DOI": "10.1080/09583150400016951",
+            "article-title": "Differential susceptibility of subterranean termite castes to entomopathogenic nematodes",
+            "volume": "15",
+            "author": "Mankowski",
             "year": "2005",
-            "unstructured": "Mukarji, A. (2005). Sri Lanka: A dangerous interlude. New Dawn Press."
+            "journal-title": "Biocontrol Sci. Technol."
         },
         {
-            "key": "e_1_3_3_46_1",
+            "key": "ref_10",
             "doi-asserted-by": "crossref",
-            "DOI": "10.4135/9788132113980",
-            "volume-title": "The Prabhakaran saga: The rise and Fall of an Eelam warrior",
-            "author": "Murari S.",
-            "year": "2012",
-            "unstructured": "Murari, S. (2012). The Prabhakaran saga: The rise and Fall of an Eelam warrior. Sage."
+            "first-page": "141",
+            "DOI": "10.1673/031.010.14101",
+            "article-title": "Influence of fungal odor on grooming behavior of the termite, Coptotermes formosanus",
+            "volume": "10",
+            "author": "Yanagawa",
+            "year": "2010",
+            "journal-title": "J. Insect Sci."
         },
         {
-            "key": "e_1_3_3_47_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/jogss/ogad003"
+            "key": "ref_11",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Yanagawa, A., Fujiwara-Tsujii, N., Akino, T., Yoshimura, T., Yanagawa, T., and Shimizu, S. (2012). Odor aversion and pathogen-removal efficiency in grooming behavior of the termite Coptotermes formosanus. PLoS ONE, 7.",
+            "DOI": "10.1371/journal.pone.0047412"
         },
         {
-            "key": "e_1_3_3_48_1",
-            "volume-title": "Rebel recruitment and information problem",
-            "author": "Obayashi K.",
+            "key": "ref_12",
+            "doi-asserted-by": "crossref",
+            "first-page": "14433",
+            "DOI": "10.1038/s41598-018-32721-7",
+            "article-title": "Termites shape their collective behavioural response based on stage of infection",
+            "volume": "8",
+            "author": "Davis",
             "year": "2018",
-            "unstructured": "Obayashi, K. (2018). Rebel recruitment and information problem. Routledge."
+            "journal-title": "Sci. Rep."
         },
         {
-            "key": "e_1_3_3_49_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/3330279"
-        },
-        {
-            "key": "e_1_3_3_50_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0022343310390256"
-        },
-        {
-            "key": "e_1_3_3_51_1",
-            "volume-title": "IRA: The bombs and the bullets, a history of deadly ingenuity",
-            "author": "Oppenheimer A. R.",
-            "year": "2009",
-            "unstructured": "Oppenheimer, A. R. (2009). IRA: The bombs and the bullets, a history of deadly ingenuity. Irish Academic Press."
-        },
-        {
-            "key": "e_1_3_3_52_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1162/isec.2009.33.3.79"
-        },
-        {
-            "key": "e_1_3_3_53_1",
+            "key": "ref_13",
             "doi-asserted-by": "crossref",
-            "DOI": "10.1093/acprof:oso/9780195699456.001.0001",
-            "volume-title": "Twilight of the tigers: Peace efforts and power struggles in Sri Lanka",
-            "author": "Peiris G. H.",
+            "unstructured": "Chouvenc, T., and Su, N.Y. (2012). When subterranean termites challenge the rules of fungal epizootics. PLoS ONE, 7.",
+            "DOI": "10.1371/journal.pone.0034484"
+        },
+        {
+            "key": "ref_14",
+            "doi-asserted-by": "crossref",
+            "first-page": "774",
+            "DOI": "10.1016/j.jinsphys.2009.04.015",
+            "article-title": "Relationship between virulence and repellency of entomopathogenic isolates of Metarhizium anisopliae and Beauveria bassiana to the termite Macrotermes michaelseni",
+            "volume": "55",
+            "author": "Mburu",
             "year": "2009",
-            "unstructured": "Peiris, G. H. (2009). Twilight of the tigers: Peace efforts and power struggles in Sri Lanka. Oxford University Press."
+            "journal-title": "J. Insect Physiol."
         },
         {
-            "key": "e_1_3_3_54_1",
-            "volume-title": "Japan\u2019s peacebuilding diplomacy in Asia: Seeking a more active political role",
-            "author": "Peng-Er L.",
-            "year": "2009",
-            "unstructured": "Peng-Er, L. (2009). Japan\u2019s peacebuilding diplomacy in Asia: Seeking a more active political role. Routledge."
-        },
-        {
-            "key": "e_1_3_3_55_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/isq/sqz076"
-        },
-        {
-            "key": "e_1_3_3_56_1",
-            "first-page": "106",
-            "volume-title": "Conflict and peace in Sri Lanka: Cause in the peace trap",
-            "author": "Philipson L.",
+            "key": "ref_15",
+            "doi-asserted-by": "crossref",
+            "first-page": "956",
+            "DOI": "10.1242/jeb.050419",
+            "article-title": "Comparison of volatile blends and gene sequences of two isolates of Metarhizium anisopliae of different virulence and repellency toward the termite Macrotermes michaelseni",
+            "volume": "214",
+            "author": "Mburu",
             "year": "2011",
-            "unstructured": "Philipson, L. (2011). Whose war? Whose peace? In J. Goodhand; J. Spencer, & B. Korf (Eds.), Conflict and peace in Sri Lanka: Cause in the peace trap (pp. 106\u2013118). Routledge."
+            "journal-title": "J. Exp. Biol."
         },
         {
-            "key": "e_1_3_3_57_1",
-            "article-title": "Can the Sri Lankan army be described as a counterinsurgency force?",
-            "author": "Pinney R.",
+            "key": "ref_16",
+            "doi-asserted-by": "crossref",
+            "first-page": "755",
+            "DOI": "10.1093/ee/37.3.755",
+            "article-title": "Interactions of Metarhizium anisoplae and tree-based mulches in repellence and mycoses against Coptotermes formosanus (Isoptera: Rhinotermitidae)",
+            "volume": "37",
+            "author": "Sun",
             "year": "2014",
-            "unstructured": "Pinney, R. (2014). Can the Sri Lankan army be described as a counterinsurgency force? Small Wars Journal, June 24. Retrieved July 22, 2024, from https://smallwarsjournal.com/jrnl/art/can-the-sri-lanka-army-be-described-as-a-counterinsurgency-force#:~:text=The%20\u2018Sri%20Lankan%20model\u2019%2C,supplanted%20by%20absolute%20military%20victory",
-            "journal-title": "Small Wars Journal"
+            "journal-title": "Environ. Entomol."
         },
         {
-            "key": "e_1_3_3_58_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1017/S0892679421000654"
-        },
-        {
-            "key": "e_1_3_3_59_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/2347797015626046"
-        },
-        {
-            "key": "e_1_3_3_60_1",
-            "volume-title": "Negotiating with evil: When to talk to terrorists",
-            "author": "Reiss M. B.",
-            "year": "2010",
-            "unstructured": "Reiss, M. B. (2010). Negotiating with evil: When to talk to terrorists. Open Road Media."
-        },
-        {
-            "key": "e_1_3_3_61_1",
-            "volume-title": "An institutional history of the Liberation Tigers of Tamil Eelam (LTTE)",
-            "author": "Richards J.",
-            "year": "2014",
-            "unstructured": "Richards, J. (2014). An institutional history of the Liberation Tigers of Tamil Eelam (LTTE). Graduate Institute of International and Development Studies."
-        },
-        {
-            "key": "e_1_3_3_62_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0022002719899443"
-        },
-        {
-            "key": "e_1_3_3_63_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1017/S0026749X00006193"
-        },
-        {
-            "key": "e_1_3_3_64_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0022343315617067"
-        },
-        {
-            "key": "e_1_3_3_65_1",
-            "volume-title": "To end a civil war, Norway\u2019s peace engagement in Sri Lanka",
-            "author": "Salter M.",
+            "key": "ref_17",
+            "doi-asserted-by": "crossref",
+            "first-page": "1118",
+            "DOI": "10.1007/s10886-015-0649-8",
+            "article-title": "Olfactory cues from pathogenic fungus affect the direction of motion of termites, Coptotermes formosanus",
+            "volume": "41",
+            "author": "Yanagawa",
             "year": "2015",
-            "unstructured": "Salter, M. (2015). To end a civil war, Norway\u2019s peace engagement in Sri Lanka. Hurst."
+            "journal-title": "J. Chem. Ecol."
         },
         {
-            "key": "e_1_3_3_66_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1162/ISEC_a_00179"
-        },
-        {
-            "key": "e_1_3_3_67_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/2058433"
-        },
-        {
-            "key": "e_1_3_3_68_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1468-2346.2007.00603.x"
-        },
-        {
-            "key": "e_1_3_3_69_1",
-            "volume-title": "Pawns of peace: Evaluation of Norwegian peace efforts in Sri Lanka, 1997-2009",
-            "author": "Sorbo G.",
-            "year": "2011",
-            "unstructured": "Sorbo, G., Goodhand, J., Klem, B., Nissen, E., & Selbervik, H. (2011). Pawns of peace: Evaluation of Norwegian peace efforts in Sri Lanka, 1997-2009. North American Aerospace Defense Command."
-        },
-        {
-            "key": "e_1_3_3_70_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1017/S0026749X00010489"
-        },
-        {
-            "key": "e_1_3_3_71_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.7591/9780801471032"
-        },
-        {
-            "key": "e_1_3_3_72_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1162/isec.22.2.5"
-        },
-        {
-            "key": "e_1_3_3_73_1",
-            "volume-title": "Inside an elusive mind: Prabhakaran. The profile of the world\u2019s most ruthless Guerrilla Leader",
-            "author": "Swamy N.",
-            "year": "2003",
-            "unstructured": "Swamy, N. (2003). Inside an elusive mind: Prabhakaran. The profile of the world\u2019s most ruthless Guerrilla Leader. Vijitha Yapa."
-        },
-        {
-            "key": "e_1_3_3_74_1",
+            "key": "ref_18",
             "doi-asserted-by": "crossref",
-            "DOI": "10.4135/9788132105558",
-            "volume-title": "The tiger vanquished: LTTE\u2019s story",
-            "author": "Swamy N.",
+            "first-page": "789",
+            "DOI": "10.3390/insects3030789",
+            "article-title": "Behavioral immunity in insects",
+            "volume": "3",
+            "year": "2012",
+            "journal-title": "Insects"
+        },
+        {
+            "key": "ref_19",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Shang, Y., Feng, P., and Wang, C. (2015). Fungi that infect insects: Altering host behavior and beyond. PLoS Pathog., 11.",
+            "DOI": "10.1371/journal.ppat.1005037"
+        },
+        {
+            "key": "ref_20",
+            "doi-asserted-by": "crossref",
+            "first-page": "105",
+            "DOI": "10.1146/annurev-ento-020117-043110",
+            "article-title": "Social immunity: Emergence and evolution of colony-level disease protection",
+            "volume": "63",
+            "author": "Cremer",
+            "year": "2018",
+            "journal-title": "Annu. Rev. Entomol."
+        },
+        {
+            "key": "ref_21",
+            "doi-asserted-by": "crossref",
+            "first-page": "1",
+            "DOI": "10.1016/j.cois.2018.03.004",
+            "article-title": "Social immunity: Why we should study its nature, evolution and functions across all social systems",
+            "volume": "28",
+            "author": "Meyel",
+            "year": "2018",
+            "journal-title": "Curr. Opin. Insect Sci."
+        },
+        {
+            "key": "ref_22",
+            "doi-asserted-by": "crossref",
+            "first-page": "31",
+            "DOI": "10.1016/j.enggeo.2009.12.001",
+            "article-title": "GPR detection of several common subsurface voids inside dikes and dams",
+            "volume": "111",
+            "author": "Xu",
             "year": "2010",
-            "unstructured": "Swamy, N. (2010). The tiger vanquished: LTTE\u2019s story. Sage."
+            "journal-title": "Eng. Geol."
         },
         {
-            "key": "e_1_3_3_75_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/13698249.2017.1393265"
+            "key": "ref_23",
+            "doi-asserted-by": "crossref",
+            "first-page": "862",
+            "DOI": "10.1603/EC10216",
+            "article-title": "Effect of wood hardness and secondary compounds on feeding preference of Odontotermes formosanus (Isoptera: Termitidae)",
+            "volume": "104",
+            "author": "Kasseney",
+            "year": "2011",
+            "journal-title": "J. Econ. Entomol."
         },
         {
-            "key": "e_1_3_3_76_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/aman.12099"
+            "key": "ref_24",
+            "doi-asserted-by": "crossref",
+            "first-page": "504",
+            "DOI": "10.1111/j.1574-6941.2011.01232.x",
+            "article-title": "Microbial community analysis in the termite gut and fungus comb of Odontotermes formosanus: The implication of Bacillus as mutualists",
+            "volume": "79",
+            "author": "Mathew",
+            "year": "2012",
+            "journal-title": "FEMS. Microbiol. Ecol."
         },
         {
-            "key": "e_1_3_3_78_1",
-            "volume-title": "Premadasa of Sri Lanka, a political biography",
-            "author": "Weerakoon B.",
-            "year": "1992",
-            "unstructured": "Weerakoon, B. (1992). Premadasa of Sri Lanka, a political biography. Vikas Publishing."
-        },
-        {
-            "key": "e_1_3_3_79_1",
-            "unstructured": "Weisman S. R. (1987 September 7. International report: Hope for economy stir in Sri Lanka. New York Times. Retrieved July 8 2022 from https://www.nytimes.com/1987/09/07/business/international-report-hopes-for-economy-stir-in-sri-lanka.html"
-        },
-        {
-            "key": "e_1_3_3_80_1",
-            "volume-title": "Sri Lankan tamil nationalism: Its origin and development in the nineteenth and Twentieth Centuries",
-            "author": "Wilson A. J.",
-            "year": "2000",
-            "unstructured": "Wilson, A. J. (2000). Sri Lankan tamil nationalism: Its origin and development in the nineteenth and Twentieth Centuries. UBC Press."
-        },
-        {
-            "key": "e_1_3_3_81_1",
-            "volume-title": "President Chandrika Bandaranaike Kumaratunga and her leadership of Sri Lanka",
-            "author": "Wilson G. H.",
-            "year": "2005",
-            "unstructured": "Wilson, G. H. (2005). President Chandrika Bandaranaike Kumaratunga and her leadership of Sri Lanka. Media Prime."
-        },
-        {
-            "key": "e_1_3_3_82_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1017/9781108525657"
-        },
-        {
-            "key": "e_1_3_3_83_1",
-            "first-page": "192",
-            "volume-title": "Economy, culture, and civil war in Sri Lanka",
-            "author": "Woost M. D.",
+            "key": "ref_25",
+            "first-page": "249",
+            "article-title": "Biocontrol mechanisms of Trichoderma strains",
+            "volume": "7",
+            "author": "Codon",
             "year": "2004",
-            "unstructured": "Woost, M. D., & Winslow, D. (2004). Epilogue, or prelude to peace? In B. Winslow & M. D. Woost (Eds.), Economy, culture, and civil war in Sri Lanka (pp. 192\u2013204). Indiana University Press."
+            "journal-title": "Intern. Microbiol."
+        },
+        {
+            "key": "ref_26",
+            "doi-asserted-by": "crossref",
+            "first-page": "3250",
+            "DOI": "10.1038/srep03250",
+            "article-title": "The fungus-growing termite Macrotermes natalensis harbors bacillaene-producing Bacillus sp. that inhibit potentially antagonistic fungi",
+            "volume": "3",
+            "author": "Um",
+            "year": "2013",
+            "journal-title": "Sci. Rep."
+        },
+        {
+            "key": "ref_27",
+            "first-page": "S1",
+            "article-title": "Chemical warfare: The battle between termite-associated actinobacteria and Trichoderma harzianum, a fungal pathogen",
+            "volume": "82",
+            "author": "Mevers",
+            "year": "2018",
+            "journal-title": "Planta. Med."
+        },
+        {
+            "key": "ref_28",
+            "doi-asserted-by": "crossref",
+            "first-page": "8819",
+            "DOI": "10.1038/s41598-019-45364-z",
+            "article-title": "Disease-free monoculture farming by fungus-growing termites",
+            "volume": "9",
+            "author": "Otani",
+            "year": "2019",
+            "journal-title": "Sci. Rep."
+        },
+        {
+            "key": "ref_29",
+            "doi-asserted-by": "crossref",
+            "first-page": "808",
+            "DOI": "10.1093/jee/toy021",
+            "article-title": "Does soil treated with conidial formulations of Trichoderma spp. attract or repel subterranean termites?",
+            "volume": "111",
+            "author": "Xiong",
+            "year": "2018",
+            "journal-title": "J. Econ. Entomol."
+        },
+        {
+            "key": "ref_30",
+            "unstructured": "Huang, F.S., Zhu, S.M., Ping, Z.M., He, X.S., Li, G.X., and Gao, D.R. (2000). Isoptera, Science Press."
+        },
+        {
+            "key": "ref_31",
+            "doi-asserted-by": "crossref",
+            "first-page": "799",
+            "DOI": "10.1007/s10529-006-9004-z",
+            "article-title": "New solid-state fermentation chamber for bulk production of aerial conidia of fungal biocontrol agents on rice",
+            "volume": "28",
+            "author": "Ye",
+            "year": "2006",
+            "journal-title": "Biotechnol. Lett."
+        },
+        {
+            "key": "ref_32",
+            "doi-asserted-by": "crossref",
+            "first-page": "21",
+            "DOI": "10.1016/j.biocontrol.2017.08.020",
+            "article-title": "Development of Trichoderma sp. Formulations in encapsulated granules (CG) and evaluation of conidia shelf-life",
+            "volume": "117",
+            "author": "Locatelli",
+            "year": "2018",
+            "journal-title": "Biol. Control."
+        },
+        {
+            "key": "ref_33",
+            "doi-asserted-by": "crossref",
+            "first-page": "629",
+            "DOI": "10.3390/insects3030629",
+            "article-title": "Laboratory study of the influence of substrate type and temperature on the exploratory tunneling by Formosan subterranean termite",
+            "volume": "3",
+            "author": "Gautam",
+            "year": "2012",
+            "journal-title": "Insects"
+        },
+        {
+            "key": "ref_34",
+            "doi-asserted-by": "crossref",
+            "first-page": "303",
+            "DOI": "10.1007/s10905-015-9505-5",
+            "article-title": "Behavioral response of Formosan subterranean termites (Isoptera: Rhinotermitidae) to soil with high clay content",
+            "volume": "28",
+            "author": "Wang",
+            "year": "2015",
+            "journal-title": "J. Insect Behav."
+        },
+        {
+            "key": "ref_35",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Aitchison, J. (1986). The Statistical Analysis of Compositional Data, Chapman & Hall.",
+            "DOI": "10.1007/978-94-009-4109-0"
+        },
+        {
+            "key": "ref_36",
+            "doi-asserted-by": "crossref",
+            "first-page": "117",
+            "DOI": "10.1016/S0377-8398(97)00047-9",
+            "article-title": "Logratio transformation of compositional data: A resolution of the constant sum constraint",
+            "volume": "34",
+            "author": "Kucera",
+            "year": "1998",
+            "journal-title": "Mar. Micropaleontol."
+        },
+        {
+            "key": "ref_37",
+            "doi-asserted-by": "crossref",
+            "first-page": "735",
+            "DOI": "10.1177/00131640021970871",
+            "article-title": "Type I error rate comparisons of post hoc procedures for I\u00d7J chi-square tables",
+            "volume": "60",
+            "author": "MacDonald",
+            "year": "2000",
+            "journal-title": "Educ. Psychol. Meas."
+        },
+        {
+            "key": "ref_38",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Wright, M.S., and Cornelius, M.L. (2012). Mortality and repellent effects of microbial pathogens on Coptotermes formosanus (Isoptera: Rhinotermitidae). BMC. Microbiol., 12.",
+            "DOI": "10.1186/1471-2180-12-291"
+        },
+        {
+            "key": "ref_39",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Bodawatta, K.H., Poulsen, M., and Bos, N. (2019). Foraging Macrotermes natalensis fungus-growing termites avoid a mycopathogen but not an entomopathogen. Insects, 10.",
+            "DOI": "10.3390/insects10070185"
+        },
+        {
+            "key": "ref_40",
+            "doi-asserted-by": "crossref",
+            "first-page": "43",
+            "DOI": "10.1038/nrmicro797",
+            "article-title": "Trichoderma species\u2014opportunistic, avirulent plant symbionts",
+            "volume": "2",
+            "author": "Harman",
+            "year": "2004",
+            "journal-title": "Nat. Rev. Microbiol."
+        },
+        {
+            "key": "ref_41",
+            "doi-asserted-by": "crossref",
+            "first-page": "1",
+            "DOI": "10.1016/j.soilbio.2007.07.002",
+            "article-title": "Trichoderma-plant-pathogen interactions",
+            "volume": "40",
+            "author": "Vinale",
+            "year": "2008",
+            "journal-title": "Soil. Biol. Biochem."
+        },
+        {
+            "key": "ref_42",
+            "doi-asserted-by": "crossref",
+            "first-page": "17",
+            "DOI": "10.1099/mic.0.052274-0",
+            "article-title": "Plant-beneficial effects of Trichoderma and of its genes",
+            "volume": "158",
+            "author": "Hermosa",
+            "year": "2012",
+            "journal-title": "Microbiology"
+        },
+        {
+            "key": "ref_43",
+            "doi-asserted-by": "crossref",
+            "first-page": "1",
+            "DOI": "10.1016/j.bej.2007.05.012",
+            "article-title": "Antagonistic fungi, Trichoderma spp.: Panoply of biological control",
+            "volume": "37",
+            "author": "Verma",
+            "year": "2007",
+            "journal-title": "Biochem. Eng. J."
+        },
+        {
+            "key": "ref_44",
+            "doi-asserted-by": "crossref",
+            "first-page": "R1139",
+            "DOI": "10.1016/j.cub.2018.08.063",
+            "article-title": "Protection against the lethal side effects of social immunity in ants",
+            "volume": "28",
+            "author": "Pull",
+            "year": "2018",
+            "journal-title": "Curr. Biol."
+        },
+        {
+            "key": "ref_45",
+            "doi-asserted-by": "crossref",
+            "first-page": "20191026",
+            "DOI": "10.1098/rspb.2019.1026",
+            "article-title": "Azteca ants maintain unique microbiomes across functionally distinct nest chambers",
+            "volume": "286",
+            "author": "Lucas",
+            "year": "2019",
+            "journal-title": "Proc. R. Soc. B"
+        },
+        {
+            "key": "ref_46",
+            "doi-asserted-by": "crossref",
+            "first-page": "2979",
+            "DOI": "10.1111/evo.12752",
+            "article-title": "Ants medicate to fight disease",
+            "volume": "69",
+            "author": "Bos",
+            "year": "2015",
+            "journal-title": "Evolution"
+        },
+        {
+            "key": "ref_47",
+            "doi-asserted-by": "crossref",
+            "first-page": "160628",
+            "DOI": "10.1098/rsos.160628",
+            "article-title": "Recognition of endophytic Trichoderma species by leaf-cutting ants and their potential in a Trojan-horse management strategy",
+            "volume": "4",
+            "author": "Rocha",
+            "year": "2017",
+            "journal-title": "R. Soc. Open Sci."
+        },
+        {
+            "key": "ref_48",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Pontieri, L., Vojvodic, S., Graham, R., Pedersen, J.S., and Linksvayer, T.A. (2014). Ant colonies prefer infected over uninfected nest sites. PLoS ONE, 9.",
+            "DOI": "10.1371/journal.pone.0111961"
+        },
+        {
+            "key": "ref_49",
+            "first-page": "71",
+            "article-title": "Ant queens (Hymenoptera: Formicidae) are attracted to fungal pathogens during the initial stage of colony founding",
+            "volume": "20",
+            "author": "Bruetsch",
+            "year": "2014",
+            "journal-title": "Myrmecol. News"
+        },
+        {
+            "key": "ref_50",
+            "doi-asserted-by": "crossref",
+            "first-page": "703",
+            "DOI": "10.1603/0013-8746(2007)100[703:FIFIAG]2.0.CO;2",
+            "article-title": "Fungi isolated from integument and guts of Coptotermes formosanus and their antagonistic effect on Gleophyllum trabeum",
+            "volume": "100",
+            "author": "Jayasimha",
+            "year": "2007",
+            "journal-title": "Ann. Entomol. Soc. Am."
+        },
+        {
+            "key": "ref_51",
+            "doi-asserted-by": "crossref",
+            "first-page": "506",
+            "DOI": "10.1603/0013-8746(2007)100[506:SOGOAB]2.0.CO;2",
+            "article-title": "Suppression of growth of a brown rot fungus, Gloeophyllum trabeum, by Formosan subterranean termites (Isoptera: Rhinotermitidae)",
+            "volume": "100",
+            "author": "Jayasimha",
+            "year": "2007",
+            "journal-title": "Ann. Entomol. Soc. Am."
+        },
+        {
+            "key": "ref_52",
+            "doi-asserted-by": "crossref",
+            "first-page": "289",
+            "DOI": "10.1080/00275514.1990.12025883",
+            "article-title": "Fungi associated with the subterranean termite Reticulitermes flavipes in Ontario",
+            "volume": "82",
+            "author": "Zoberi",
+            "year": "1990",
+            "journal-title": "Mycologia"
+        },
+        {
+            "key": "ref_53",
+            "doi-asserted-by": "crossref",
+            "first-page": "1315",
+            "DOI": "10.1093/ee/27.6.1315",
+            "article-title": "Feeding habits and gut fauna of Zootermopsis angusticollis (Isoptera: Termopsidae) in response to wood species and fungal associates",
+            "volume": "27",
+            "author": "Mankowski",
+            "year": "1998",
+            "journal-title": "Environ. Entomol."
         }
     ],
     "container-title": [
-        "Dynamics of Asymmetric Conflict"
+        "Forests"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/17467586.2024.2406763",
+            "URL": "https://www.mdpi.com/1999-4907/10/11/1020/pdf",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -583,99 +687,60 @@
         "date-parts": [
             [
                 2024,
-                9,
-                26
+                6,
+                22
             ]
         ],
-        "date-time": "2024-09-26T13:18:17Z",
-        "timestamp": 1727356697000
+        "date-time": "2024-06-22T04:53:44Z",
+        "timestamp": 1719032024000
     },
-    "score": 15.78922,
+    "score": 12.829004,
     "resource": {
         "primary": {
-            "URL": "https://www.tandfonline.com/doi/full/10.1080/17467586.2024.2406763"
+            "URL": "https://www.mdpi.com/1999-4907/10/11/1020"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2024,
-                9,
-                26
+                2019,
+                11,
+                13
             ]
         ]
     },
-    "references-count": 80,
+    "references-count": 53,
+    "journal-issue": {
+        "issue": "11",
+        "published-online": {
+            "date-parts": [
+                [
+                    2019,
+                    11
+                ]
+            ]
+        }
+    },
     "alternative-id": [
-        "10.1080/17467586.2024.2406763"
+        "f10111020"
     ],
-    "URL": "http://dx.doi.org/10.1080/17467586.2024.2406763",
+    "URL": "http://dx.doi.org/10.3390/f10111020",
     "ISSN": [
-        "1746-7586",
-        "1746-7594"
+        "1999-4907"
     ],
     "issn-type": [
         {
-            "value": "1746-7586",
-            "type": "print"
-        },
-        {
-            "value": "1746-7594",
+            "value": "1999-4907",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2024,
-                9,
-                26
+                2019,
+                11,
+                13
             ]
         ]
-    },
-    "assertion": [
-        {
-            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
-            "order": 1,
-            "name": "peerreview_statement",
-            "label": "Peer Review Statement"
-        },
-        {
-            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=rdac20",
-            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=rdac20",
-            "order": 2,
-            "name": "aims_and_scope_url",
-            "label": "Aim & Scope"
-        },
-        {
-            "value": "2024-04-03",
-            "order": 0,
-            "name": "received",
-            "label": "Received",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2024-09-11",
-            "order": 2,
-            "name": "accepted",
-            "label": "Accepted",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2024-09-26",
-            "order": 3,
-            "name": "published",
-            "label": "Published",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        }
-    ]
+    }
 }

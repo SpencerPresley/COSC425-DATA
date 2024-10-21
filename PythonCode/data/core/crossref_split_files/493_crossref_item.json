@@ -3,1038 +3,552 @@
         "date-parts": [
             [
                 2024,
-                8,
+                9,
                 23
             ]
         ],
-        "date-time": "2024-08-23T18:26:29Z",
-        "timestamp": 1724437589434
+        "date-time": "2024-09-23T12:40:26Z",
+        "timestamp": 1727095226233
     },
-    "reference-count": 105,
-    "publisher": "Wiley",
-    "issue": "6",
-    "license": [
-        {
-            "start": {
-                "date-parts": [
-                    [
-                        2021,
-                        6,
-                        21
-                    ]
-                ],
-                "date-time": "2021-06-21T00:00:00Z",
-                "timestamp": 1624233600000
-            },
-            "content-version": "am",
-            "delay-in-days": 20,
-            "URL": "http://creativecommons.org/licenses/by/4.0/"
-        },
-        {
-            "start": {
-                "date-parts": [
-                    [
-                        2021,
-                        6,
-                        21
-                    ]
-                ],
-                "date-time": "2021-06-21T00:00:00Z",
-                "timestamp": 1624233600000
-            },
-            "content-version": "vor",
-            "delay-in-days": 20,
-            "URL": "http://creativecommons.org/licenses/by/4.0/"
-        }
-    ],
-    "funder": [
-        {
-            "DOI": "10.13039/100000001",
-            "name": "National Science Foundation",
-            "doi-asserted-by": "publisher",
-            "award": [
-                "DBI\u20101639145"
-            ],
-            "id": [
-                {
-                    "id": "10.13039/100000001",
-                    "id-type": "DOI",
-                    "asserted-by": "publisher"
-                }
-            ]
-        }
-    ],
+    "reference-count": 65,
+    "publisher": "Association for Computing Machinery (ACM)",
     "content-domain": {
         "domain": [
-            "esajournals.onlinelibrary.wiley.com"
+            "dl.acm.org"
         ],
         "crossmark-restriction": true
     },
     "short-container-title": [
-        "Ecosphere"
+        "ACM Trans. Comput. Healthcare"
     ],
-    "published-print": {
-        "date-parts": [
-            [
-                2021,
-                6
-            ]
-        ]
-    },
-    "abstract": "<jats:title>Abstract</jats:title><jats:p>During the 21st century, human\u2013environment interactions will increasingly expose both systems to risks, but also yield opportunities for improvement as we gain insight into these complex, coupled systems. Human\u2013environment interactions operate over multiple spatial and temporal scales, requiring large data volumes of multi\u2010resolution information for analysis. Climate change, land\u2010use change, urbanization, and wildfires, for example, can affect regions differently depending on ecological and socioeconomic structures. The relative scarcity of data on both humans and natural systems at the relevant extent can be prohibitive when pursuing inquiries into these complex relationships. We explore the value of multitemporal, high\u2010density, and high\u2010resolution LiDAR, imaging spectroscopy, and digital camera data from the National Ecological Observatory Network\u2019s Airborne Observation Platform (NEON AOP) for Socio\u2010Environmental Systems (SES) research. In addition to providing an overview of NEON AOP datasets and outlining specific applications for addressing SES questions, we highlight current challenges and provide recommendations for the SES research community to improve and expand its use of this platform for SES research. The coordinated, nationwide AOP remote sensing data, collected annually over the next 30\u00a0yr, offer exciting opportunities for cross\u2010site analyses and comparison, upscaling metrics derived from LiDAR and hyperspectral datasets across larger spatial extents, and addressing questions across diverse scales. Integrating AOP data with other SES datasets will allow researchers to investigate complex systems and provide urgently needed policy recommendations for socio\u2010environmental challenges. We urge the SES research community to further explore questions and theories in social and economic disciplines that might leverage NEON AOP data.</jats:p>",
-    "DOI": "10.1002/ecs2.3640",
+    "abstract": "<jats:p>\n            Recognizing food types through sensor signals for unseen users remains remarkably challenging, despite extensive recent studies. The efficacy of prior machine learning techniques is dwarfed by giant variations of data collected from multiple participants, partly because users have varied chewing habits and wear sensor devices in various manners. This work treats the problem as an instance of the domain adaptation problem, where each user represents a domain. We develop the first multi-source domain adaptation (MSDA) method for food-typing recognition, which consists of three major components: stratified normalization, a multi-source domain adaptor, and adaptive ensemble learning. New techniques are developed for each component. Using a real-world dataset comprised of 15 participants, we demonstrate that our method achieves\n            <jats:inline-formula content-type=\"math/tex\">\n              <jats:tex-math notation=\"LaTeX\" version=\"MathJax\">\\(1.33\\times\\)</jats:tex-math>\n            </jats:inline-formula>\n            to\n            <jats:inline-formula content-type=\"math/tex\">\n              <jats:tex-math notation=\"LaTeX\" version=\"MathJax\">\\(2.13\\times\\)</jats:tex-math>\n            </jats:inline-formula>\n            improvement in accuracy compared with nine state-of-the-art MSDA baselines. Additionally, we perform an in-depth ablation study to examine the behavior of each component and confirm their efficacy.\n          </jats:p>",
+    "DOI": "10.1145/3696424",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2021,
-                6,
-                21
+                2024,
+                9,
+                23
             ]
         ],
-        "date-time": "2021-06-21T08:36:52Z",
-        "timestamp": 1624264612000
+        "date-time": "2024-09-23T12:14:47Z",
+        "timestamp": 1727093687000
     },
-    "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+    "update-policy": "http://dx.doi.org/10.1145/crossmark-policy",
     "source": "Crossref",
-    "is-referenced-by-count": 8,
+    "is-referenced-by-count": 0,
     "title": [
-        "Leveraging the NEON Airborne Observation Platform for socio\u2010environmental systems research"
+        "Towards Recognizing Food Types for Unseen Subjects"
     ],
-    "prefix": "10.1002",
-    "volume": "12",
+    "prefix": "10.1145",
     "author": [
         {
-            "ORCID": "http://orcid.org/0000-0002-7720-1754",
+            "ORCID": "http://orcid.org/0000-0001-5274-9169",
             "authenticated-orcid": false,
-            "given": "Elsa M.",
-            "family": "Ordway",
+            "given": "Jiexiong",
+            "family": "Guan",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Department of Organismic and Evolutionary Biology Harvard University 26 Oxford Street Cambridge Massachusetts 02138 USA"
+                    "name": "Computer Science Department, William &amp; Mary, USA"
                 }
             ]
         },
         {
-            "ORCID": "http://orcid.org/0000-0002-9697-9457",
+            "ORCID": "http://orcid.org/0009-0000-0831-0810",
             "authenticated-orcid": false,
-            "given": "Andrew J.",
-            "family": "Elmore",
+            "given": "Junjie",
+            "family": "Wang",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "National Socio\u2010Environmental Synthesis Center University of Maryland 1 Park Place Suite 300 Annapolis Maryland 21401 USA"
-                },
-                {
-                    "name": "Appalachian Laboratory University of Maryland Center for Environmental Science 301 Braddock Road Frostburg Maryland 21532 USA"
+                    "name": "Computer Science Department, William &amp; Mary, USA"
                 }
             ]
         },
         {
-            "given": "Sonja",
-            "family": "Kolstoe",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Economics and Finance Department of Environmental Studies Salisbury University 1101 Camden Avenue Salisbury Maryland 21801 USA"
-                },
-                {
-                    "name": "USDA Forest Service Pacific Northwest Research Station Portland Oregon 97205 USA"
-                }
-            ]
-        },
-        {
-            "given": "John E.",
-            "family": "Quinn",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Biology Furman University 3300 Poinsett Hwy Greenville South Carolina 29613 USA"
-                }
-            ]
-        },
-        {
-            "given": "Rachel",
-            "family": "Swanwick",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "National Socio\u2010Environmental Synthesis Center University of Maryland 1 Park Place Suite 300 Annapolis Maryland 21401 USA"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0003-2164-3809",
+            "ORCID": "http://orcid.org/0000-0002-2697-7042",
             "authenticated-orcid": false,
-            "given": "Megan",
-            "family": "Cattau",
+            "given": "Wei",
+            "family": "Niu",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Human Environment Systems Boise State University Boise Idaho 83712 USA"
+                    "name": "Computer Science Department, William &amp; Mary, USA"
                 }
             ]
         },
         {
-            "given": "Dylan",
-            "family": "Taillie",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Appalachian Laboratory University of Maryland Center for Environmental Science 301 Braddock Road Frostburg Maryland 21532 USA"
-                }
-            ]
-        },
-        {
-            "given": "Steven M.",
-            "family": "Guinn",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Appalachian Laboratory University of Maryland Center for Environmental Science 301 Braddock Road Frostburg Maryland 21532 USA"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0002-5633-4865",
+            "ORCID": "http://orcid.org/0000-0003-2431-6037",
             "authenticated-orcid": false,
-            "given": "K. Dana",
-            "family": "Chadwick",
+            "given": "Zhen",
+            "family": "Peng",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Department of Earth System Science Stanford University 367 Panama Street Stanford California 94305 USA"
+                    "name": "Computer Science Department, William &amp; Mary, USA"
                 }
             ]
         },
         {
-            "ORCID": "http://orcid.org/0000-0002-2295-3131",
+            "ORCID": "http://orcid.org/0000-0002-3967-9693",
             "authenticated-orcid": false,
-            "given": "Jeff W.",
-            "family": "Atkins",
+            "given": "Shuangquan",
+            "family": "Wang",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Department of Biology Virginia Commonwealth University 1000 W. Cary Street Richmond Virginia 23284 USA"
+                    "name": "Computer Science Department, Salisbury University, USA"
                 }
             ]
         },
         {
-            "ORCID": "http://orcid.org/0000-0003-0847-9100",
+            "ORCID": "http://orcid.org/0000-0001-9494-8748",
             "authenticated-orcid": false,
-            "given": "Rachael E.",
-            "family": "Blake",
+            "given": "Zhenming",
+            "family": "Liu",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "National Socio\u2010Environmental Synthesis Center University of Maryland 1 Park Place Suite 300 Annapolis Maryland 21401 USA"
+                    "name": "Computer Science Department, William &amp; Mary, USA"
                 }
             ]
         },
         {
-            "given": "Melissa",
-            "family": "Chapman",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Environmental Science, Policy, and Management University of California Berkeley 130 Hilgard Way Berkeley California 94720 USA"
-                }
-            ]
-        },
-        {
-            "given": "Kelly",
-            "family": "Cobourn",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Forest Resources and Environmental Conservation Virginia Tech 310 W Campus Drive Blacksburg Virginia 24061 USA"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0001-9973-4079",
+            "ORCID": "http://orcid.org/0000-0002-4425-9837",
             "authenticated-orcid": false,
-            "given": "Tristan",
-            "family": "Goulden",
+            "given": "Gang",
+            "family": "Zhou",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Battelle National Ecological Observatory Network (NEON) 1685 38th Street Boulder Colorado USA"
+                    "name": "Computer Science Department, William &amp; Mary, USA"
                 }
             ]
         },
         {
-            "ORCID": "http://orcid.org/0000-0003-3977-0507",
+            "ORCID": "http://orcid.org/0000-0002-4116-5237",
             "authenticated-orcid": false,
-            "given": "Matthew R.",
-            "family": "Helmus",
+            "given": "Bin",
+            "family": "Ren",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Integrative Ecology Lab Center for Biodiversity Department of Biology Temple University Philadelphia Pennsylvania 19122 USA"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0002-1928-1442",
-            "authenticated-orcid": false,
-            "given": "Kelly",
-            "family": "Hondula",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "National Socio\u2010Environmental Synthesis Center University of Maryland 1 Park Place Suite 300 Annapolis Maryland 21401 USA"
-                },
-                {
-                    "name": "Battelle National Ecological Observatory Network (NEON) 1685 38th Street Boulder Colorado USA"
-                }
-            ]
-        },
-        {
-            "given": "Carrie",
-            "family": "Hritz",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "National Socio\u2010Environmental Synthesis Center University of Maryland 1 Park Place Suite 300 Annapolis Maryland 21401 USA"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0002-5296-9062",
-            "authenticated-orcid": false,
-            "given": "Jennifer",
-            "family": "Jensen",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Geography Texas State University San Marcos Texas 78666 USA"
-                }
-            ]
-        },
-        {
-            "given": "Jason P.",
-            "family": "Julian",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Geography Texas State University San Marcos Texas 78666 USA"
-                }
-            ]
-        },
-        {
-            "given": "Yusuke",
-            "family": "Kuwayama",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "School of Public Policy University of Maryland Baltimore Maryland 21250 USA"
-                }
-            ]
-        },
-        {
-            "given": "Vijay",
-            "family": "Lulla",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Geography Indiana University\u2010Purdue University Indianapolis Indianapolis Indiana 46202 USA"
-                }
-            ]
-        },
-        {
-            "given": "Donal",
-            "family": "O\u2019Leary",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Battelle National Ecological Observatory Network (NEON) 1685 38th Street Boulder Colorado USA"
-                }
-            ]
-        },
-        {
-            "given": "Donald R.",
-            "family": "Nelson",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Anthropology University of Georgia 250 Baldwin Hall Athens Georgia 30606 USA"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0002-3899-9062",
-            "authenticated-orcid": false,
-            "given": "Jonathan P.",
-            "family": "Oc\u00f3n",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Geography University of California, Los Angeles 1255 Bunche Hall Los Angeles California 90095 USA"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0001-8135-9266",
-            "authenticated-orcid": false,
-            "given": "Stephanie",
-            "family": "Pau",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Geography Florida State University Tallahassee Florida 32306 USA"
-                }
-            ]
-        },
-        {
-            "given": "Guillermo E.",
-            "family": "Ponce\u2010Campos",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "School of Natural Resources and the Environment University of Arizona 1064 E Lowell St Tucson Arizona 85721 USA"
-                }
-            ]
-        },
-        {
-            "given": "Carlos",
-            "family": "Portillo\u2010Quintero",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Natural Resources Management Texas Tech University Lubbock Texas 79409 USA"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0002-6591-7237",
-            "authenticated-orcid": false,
-            "given": "Narcisa G.",
-            "family": "Pricope",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Earth and Ocean Sciences University of North Carolina Wilmington 601 S. College Road Wilmington North Carolina 28403 USA"
-                }
-            ]
-        },
-        {
-            "given": "Rosanna G.",
-            "family": "Rivero",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "College of Environment and Design University of Georgia 285 South Jackson Street Athens Georgia 30602 USA"
-                }
-            ]
-        },
-        {
-            "given": "Laura",
-            "family": "Schneider",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Geography Rutgers University LSH Livingston Campus Piscataway New Jersey 08854 USA"
-                }
-            ]
-        },
-        {
-            "given": "Meredith",
-            "family": "Steele",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "School of Plant and Environmental Sciences Virginia Tech 185 Ag Quad Ln Blacksburg Virginia 24061 USA"
-                }
-            ]
-        },
-        {
-            "given": "Mirela G.",
-            "family": "Tulbure",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Center for Geospatial Analytics Department of Forestry and Environmental Resources North Carolina State University Raleigh North Carolina 27695 USA"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0002-2550-5828",
-            "authenticated-orcid": false,
-            "given": "Matthew A.",
-            "family": "Williamson",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Human Environment Systems Boise State University Boise Idaho 83712 USA"
-                }
-            ]
-        },
-        {
-            "given": "Cyril",
-            "family": "Wilson",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Geography &amp; Anthropology University of Wisconsin\u2010Eau Claire 105 Garfield Avenue Eau Claire Wisconsin 54702 USA"
+                    "name": "Computer Science Department, William &amp; Mary, USA"
                 }
             ]
         }
     ],
-    "member": "311",
+    "member": "320",
     "published-online": {
         "date-parts": [
             [
-                2021,
-                6,
-                21
+                2024,
+                9,
+                23
             ]
         ]
     },
     "reference": [
         {
-            "key": "e_1_2_9_2_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/08941920.2012.671450"
-        },
-        {
-            "key": "e_1_2_9_3_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1073/pnas.1523397113"
-        },
-        {
-            "key": "e_1_2_9_4_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1073/pnas.1604863113"
-        },
-        {
-            "key": "e_1_2_9_5_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1126/science.aaj1987"
-        },
-        {
-            "key": "e_1_2_9_6_1",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Atkins J. W. et al.2019.Multidimensional Structural Characterization is Required to Detect and Differentiate Among Moderate Disturbance Agents.https://doi.org/10.20944/preprints201911.0082.v1",
-            "DOI": "10.20944/preprints201911.0082.v1"
-        },
-        {
-            "key": "e_1_2_9_7_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2105/AJPH.2017.304128"
-        },
-        {
-            "key": "e_1_2_9_8_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1073/pnas.1617394114"
-        },
-        {
-            "key": "e_1_2_9_9_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3201/eid0603.000301"
-        },
-        {
-            "key": "e_1_2_9_10_1",
-            "unstructured": "BLS [Bureau of Labor Statistics].2020.Local area unemployment statistics.https://www.bls.gov/lau/"
-        },
-        {
-            "key": "e_1_2_9_11_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s12108-997-1014-3"
-        },
-        {
-            "key": "e_1_2_9_12_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1257/pol.20180559"
-        },
-        {
-            "key": "e_1_2_9_13_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1109/CVPRW50498.2020.00113"
-        },
-        {
-            "key": "e_1_2_9_14_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1029/2018GL081108"
-        },
-        {
-            "key": "e_1_2_9_15_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1088/1748-9326/aa8f55"
-        },
-        {
-            "key": "e_1_2_9_16_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.ecoser.2018.04.009"
-        },
-        {
-            "key": "e_1_2_9_17_1",
-            "unstructured": "Budburst.2020.Budburst Data.https://accounts.budburst.org/data"
-        },
-        {
-            "key": "e_1_2_9_18_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/geb.13058"
-        },
-        {
-            "key": "e_1_2_9_19_1",
-            "unstructured": "CDC [Centers for Disease Control and Prevention].2020.Geo\u2010spatial data resources.https://www.cdc.gov/dhdsp/maps/gisx/resources/geo\u2010spatial\u2010data.html"
-        },
-        {
-            "key": "e_1_2_9_20_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/2041-210X.13463"
-        },
-        {
-            "key": "e_1_2_9_21_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3390/rs8020087"
-        },
-        {
-            "key": "e_1_2_9_22_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.5751/ES-01569-110114"
-        },
-        {
-            "key": "e_1_2_9_23_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1029/2020GL090864"
-        },
-        {
-            "key": "e_1_2_9_24_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.tree.2014.10.005"
-        },
-        {
-            "key": "e_1_2_9_25_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3189/2013JoG12J154"
-        },
-        {
-            "key": "e_1_2_9_26_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10745-005-5156-z"
-        },
-        {
-            "key": "e_1_2_9_27_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.rse.2009.03.010"
-        },
-        {
-            "key": "e_1_2_9_28_1",
-            "unstructured": "DHS [U.S. Department of Homeland Security].2020.Homeland Infrastructure Foundation Level Data (HIFLD) Open Data.https://hub.arcgis.com/datasets/a887fea190a84bd493eb6a3de0cbf99e"
-        },
-        {
-            "key": "e_1_2_9_29_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1257/jep.30.4.171"
-        },
-        {
-            "key": "e_1_2_9_30_1",
-            "unstructured": "eBird.2020.eBird.https://ebird.org/home"
-        },
-        {
-            "key": "e_1_2_9_31_1",
-            "unstructured": "EPA [U.S. Environmental Protection Agency].2020.Geospatial Resources at EPA.https://www.epa.gov/geospatial/epa\u2010geospatial\u2010data#EDG"
-        },
-        {
-            "key": "e_1_2_9_32_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jenvman.2018.05.045"
-        },
-        {
-            "key": "e_1_2_9_33_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/978-3-319-40658-9"
-        },
-        {
-            "key": "e_1_2_9_34_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1029/JD095iD04p03549"
-        },
-        {
-            "key": "e_1_2_9_35_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10661-018-6597-3"
-        },
-        {
-            "key": "e_1_2_9_36_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10661-013-3098-2"
-        },
-        {
-            "key": "e_1_2_9_37_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/joc.1276"
-        },
-        {
-            "key": "e_1_2_9_38_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3390/rs6086844"
-        },
-        {
-            "key": "e_1_2_9_39_1",
-            "unstructured": "iNaturalist.2020.iNaturalist.https://www.inaturalist.org/observations"
-        },
-        {
-            "key": "e_1_2_9_40_1",
-            "unstructured": "IPUMS.2020a.Harmonized data from U.S. national health surveys.https://healthsurveys.ipums.org/"
-        },
-        {
-            "key": "e_1_2_9_41_1",
-            "unstructured": "IPUMS.2020b.Current population survey data for social economic and health research.https://cps.ipums.org/cps/"
-        },
-        {
-            "key": "e_1_2_9_42_1",
-            "unstructured": "IPUMS.2020c.Survey data on scientists and engineers.https://highered.ipums.org/highered/"
-        },
-        {
-            "key": "e_1_2_9_43_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/01426390701231515"
-        },
-        {
-            "key": "e_1_2_9_44_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1038/s41893-019-0396-x"
-        },
-        {
-            "key": "e_1_2_9_45_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1126/science.aaf7894"
-        },
-        {
-            "key": "e_1_2_9_46_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1117/1.3361375"
-        },
-        {
-            "key": "e_1_2_9_47_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.rse.2013.07.041"
-        },
-        {
-            "key": "e_1_2_9_48_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1890/140124"
-        },
-        {
-            "key": "e_1_2_9_49_1",
-            "first-page": "220",
-            "article-title": "Upscale or downscale: applications of fine scale remotely sensed data to Chagas disease in Argentina and schistosomiasis in Kenya",
-            "volume": "46",
-            "author": "Kitron U.",
+            "key": "e_1_2_1_1_1",
+            "volume-title": "SENSORS",
+            "author": "Amft Oliver",
             "year": "2010",
-            "journal-title": "Geospatial Health"
+            "unstructured": "Oliver Amft. 2010. A wearable earpad sensor for chewing monitoring. In SENSORS, 2010 IEEE. IEEE, 222\u2013227."
         },
         {
-            "key": "e_1_2_9_50_1",
+            "key": "e_1_2_1_2_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1017/age.2018.9"
+            "DOI": "10.1007/11551201_4"
         },
         {
-            "key": "e_1_2_9_51_1",
+            "key": "e_1_2_1_3_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.5751/ES-09429-220244"
+            "DOI": "10.1109/MPRV.2009.32"
         },
         {
-            "key": "e_1_2_9_52_1",
+            "key": "e_1_2_1_4_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1046/j.1466-822x.2002.00303.x"
+            "DOI": "10.1145/3563948"
         },
         {
-            "key": "e_1_2_9_53_1",
+            "key": "e_1_2_1_5_1",
+            "volume-title": "A theory of learning from different domains. Machine learning 79, 1",
+            "author": "Ben-David Shai",
+            "year": "2010",
+            "unstructured": "Shai Ben-David, John Blitzer, Koby Crammer, Alex Kulesza, Fernando Pereira, and Jennifer Wortman Vaughan. 2010. A theory of learning from different domains. Machine learning 79, 1 (2010), 151\u2013175."
+        },
+        {
+            "key": "e_1_2_1_6_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/ecs2.2298"
+            "DOI": "10.1109/JSEN.2015.2469095"
         },
         {
-            "key": "e_1_2_9_54_1",
+            "key": "e_1_2_1_7_1",
+            "volume-title": "Marginalized denoising autoencoders for domain adaptation. arXiv preprint arXiv:1206.4683",
+            "author": "Chen Minmin",
+            "year": "2012",
+            "unstructured": "Minmin Chen, Zhixiang Xu, Kilian Weinberger, and Fei Sha. 2012. Marginalized denoising autoencoders for domain adaptation. arXiv preprint arXiv:1206.4683 (2012)."
+        },
+        {
+            "key": "e_1_2_1_8_1",
+            "volume-title": "Proceedings of the 2020 International Symposium on Wearable Computers. 27\u201331",
+            "author": "Chun Keum San",
+            "year": "2020",
+            "unstructured": "Keum San Chun, Sarnab Bhattacharya, Caroline Dolbear, Jordon Kashanchi, and Edison Thomaz. 2020. Intraoral temperature and inertial sensing in automated dietary assessment: a feasibility study. In Proceedings of the 2020 International Symposium on Wearable Computers. 27\u201331."
+        },
+        {
+            "key": "e_1_2_1_9_1",
+            "volume-title": "Multi-task learning with deep neural networks: A survey. arXiv preprint arXiv:2009.09796",
+            "author": "Crawshaw Michael",
+            "year": "2020",
+            "unstructured": "Michael Crawshaw. 2020. Multi-task learning with deep neural networks: A survey. arXiv preprint arXiv:2009.09796 (2020)."
+        },
+        {
+            "key": "e_1_2_1_10_1",
+            "doi-asserted-by": "crossref",
+            "unstructured": "J. Deng W. Dong R. Socher L.-J. Li K. Li and L. Fei-Fei. 2009. ImageNet: A Large-Scale Hierarchical Image Database. In CVPR09.",
+            "DOI": "10.1109/CVPR.2009.5206848"
+        },
+        {
+            "key": "e_1_2_1_11_1",
+            "volume-title": "Hadi Samer Jomaa, and Lars Schmidt-Thieme",
+            "author": "Elsayed Shereen",
+            "year": "2021",
+            "unstructured": "Shereen Elsayed, Daniela Thyssens, Ahmed Rashed, Hadi Samer Jomaa, and Lars Schmidt-Thieme. 2021. Do we really need deep learning models for time series forecasting? arXiv preprint arXiv:2101.02118 (2021)."
+        },
+        {
+            "key": "e_1_2_1_12_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2307/1941447"
+            "DOI": "10.1006/jcss.1997.1504"
         },
         {
-            "key": "e_1_2_9_55_1",
+            "key": "e_1_2_1_13_1",
+            "volume-title": "International conference on machine learning. PMLR, 1180\u20131189",
+            "author": "Ganin Yaroslav",
+            "year": "2015",
+            "unstructured": "Yaroslav Ganin and Victor Lempitsky. 2015. Unsupervised domain adaptation by backpropagation. In International conference on machine learning. PMLR, 1180\u20131189."
+        },
+        {
+            "key": "e_1_2_1_14_1",
+            "volume-title": "Domain-adversarial training of neural networks. The journal of machine learning research 17, 1",
+            "author": "Ganin Yaroslav",
+            "year": "2016",
+            "unstructured": "Yaroslav Ganin, Evgeniya Ustinova, Hana Ajakan, Pascal Germain, Hugo Larochelle, Fran\u00e7ois Laviolette, Mario Marchand, and Victor Lempitsky. 2016. Domain-adversarial training of neural networks. The journal of machine learning research 17, 1 (2016), 2096\u20132030."
+        },
+        {
+            "key": "e_1_2_1_15_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1126/science.1144004"
+            "DOI": "10.1109/CVPR.2016.265"
         },
         {
-            "key": "e_1_2_9_56_1",
-            "volume-title": "People and pixels: linking remote sensing and social science",
-            "author": "Liverman D.",
-            "year": "1998"
+            "key": "e_1_2_1_16_1",
+            "volume-title": "International conference on machine learning. PMLR, 222\u2013230",
+            "author": "Gong Boqing",
+            "year": "2013",
+            "unstructured": "Boqing Gong, Kristen Grauman, and Fei Sha. 2013. Connecting the dots with landmarks: Discriminatively learning domain-invariant features for unsupervised domain adaptation. In International conference on machine learning. PMLR, 222\u2013230."
         },
         {
-            "key": "e_1_2_9_57_1",
+            "key": "e_1_2_1_17_1",
+            "unstructured": "Arthur Gretton Dino Sejdinovic Heiko Strathmann Sivaraman Balakrishnan Massimiliano Pontil Kenji Fukumizu and Bharath K Sriperumbudur. 2012. Optimal kernel choice for large-scale two-sample tests. In Advances in neural information processing systems. Citeseer 1205\u20131213."
+        },
+        {
+            "key": "e_1_2_1_18_1",
+            "unstructured": "Gregory Griffin Alex Holub and Pietro Perona. 2007. Caltech-256 object category dataset. (2007)."
+        },
+        {
+            "key": "e_1_2_1_19_1",
+            "volume-title": "Multi-source domain adaptation with mixture of experts. arXiv preprint arXiv:1809.02256",
+            "author": "Guo Jiang",
+            "year": "2018",
+            "unstructured": "Jiang Guo, Darsh J Shah, and Regina Barzilay. 2018. Multi-source domain adaptation with mixture of experts. arXiv preprint arXiv:1809.02256 (2018)."
+        },
+        {
+            "key": "e_1_2_1_20_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1038/s41477-018-0205-y"
+            "DOI": "10.1371/journal.pone.0154486"
         },
         {
-            "key": "e_1_2_9_58_1",
+            "key": "e_1_2_1_21_1",
+            "volume-title": "Correcting sample selection bias by unlabeled data. Advances in neural information processing systems 19",
+            "author": "Huang Jiayuan",
+            "year": "2006",
+            "unstructured": "Jiayuan Huang, Arthur Gretton, Karsten Borgwardt, Bernhard Sch\u00f6lkopf, and Alex Smola. 2006. Correcting sample selection bias by unlabeled data. Advances in neural information processing systems 19 (2006), 601\u2013608."
+        },
+        {
+            "key": "e_1_2_1_22_1",
+            "volume-title": "IEEE INFOCOM 2018-IEEE Conference on Computer Communications. IEEE, 1439\u20131447",
+            "author": "Huang Qianyi",
+            "year": "2018",
+            "unstructured": "Qianyi Huang, Zhice Yang, and Qian Zhang. 2018. Smart-U: smart utensils know what you eat. In IEEE INFOCOM 2018-IEEE Conference on Computer Communications. IEEE, 1439\u20131447."
+        },
+        {
+            "key": "e_1_2_1_23_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.3390/rs10020199"
+            "DOI": "10.1145/3241539.3241548"
         },
         {
-            "key": "e_1_2_9_59_1",
+            "key": "e_1_2_1_24_1",
+            "volume-title": "Adam: A method for stochastic optimization. arXiv preprint arXiv:1412.6980",
+            "author": "Kingma Diederik P",
+            "year": "2014",
+            "unstructured": "Diederik P Kingma and Jimmy Ba. 2014. Adam: A method for stochastic optimization. arXiv preprint arXiv:1412.6980 (2014)."
+        },
+        {
+            "key": "e_1_2_1_25_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.landusepol.2017.04.040"
+            "DOI": "10.1145/3065386"
         },
         {
-            "key": "e_1_2_9_60_1",
+            "key": "e_1_2_1_26_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1257/app.20160484"
+            "DOI": "10.1109/ICCV.2017.591"
         },
         {
-            "key": "e_1_2_9_61_1",
+            "key": "e_1_2_1_27_1",
+            "volume-title": "Proceedings of the 32nd International Conference on Neural Information Processing Systems. 6799\u20136810",
+            "author": "Li Yitong",
+            "year": "2018",
+            "unstructured": "Yitong Li, Michael Murias, Samantha Major, Geraldine Dawson, and David E Carlson. 2018. Extracting relationships by multi-domain matching. In Proceedings of the 32nd International Conference on Neural Information Processing Systems. 6799\u20136810."
+        },
+        {
+            "key": "e_1_2_1_28_1",
+            "volume-title": "Demystifying neural style transfer. arXiv preprint arXiv:1701.01036",
+            "author": "Li Yanghao",
+            "year": "2017",
+            "unstructured": "Yanghao Li, Naiyan Wang, Jiaying Liu, and Xiaodi Hou. 2017. Demystifying neural style transfer. arXiv preprint arXiv:1701.01036 (2017)."
+        },
+        {
+            "key": "e_1_2_1_29_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.rse.2016.12.022"
+            "DOI": "10.1016/j.patcog.2018.03.005"
         },
         {
-            "key": "e_1_2_9_62_1",
+            "key": "e_1_2_1_30_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.foreco.2014.08.039"
+            "DOI": "10.1609/aaai.v34i03.5651"
         },
         {
-            "key": "e_1_2_9_63_1",
+            "key": "e_1_2_1_31_1",
+            "volume-title": "Proceedings of the 57th annual meeting of the association for computational linguistics. 1957\u20131968",
+            "author": "Liu Miaofeng",
+            "year": "2019",
+            "unstructured": "Miaofeng Liu, Yan Song, Hongbin Zou, and Tong Zhang. 2019. Reinforced training data selection for domain adaptation. In Proceedings of the 57th annual meeting of the association for computational linguistics. 1957\u20131968."
+        },
+        {
+            "key": "e_1_2_1_32_1",
+            "volume-title": "International conference on machine learning. PMLR, 97\u2013105",
+            "author": "Long Mingsheng",
+            "year": "2015",
+            "unstructured": "Mingsheng Long, Yue Cao, Jianmin Wang, and Michael Jordan. 2015. Learning transferable features with deep adaptation networks. In International conference on machine learning. PMLR, 97\u2013105."
+        },
+        {
+            "key": "e_1_2_1_33_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1146/annurev-phyto-081211-172938"
+            "DOI": "10.1145/1458082.1458099"
         },
         {
-            "key": "e_1_2_9_64_1",
+            "key": "e_1_2_1_34_1",
+            "unstructured": "Yishay Mansour Mehryar Mohri and Afshin Rostamizadeh. 2009. Domain adaptation with multiple sources. (2009)."
+        },
+        {
+            "key": "e_1_2_1_35_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1641/0006-3568(2001)051[1018:DAUB]2.0.CO;2"
+            "DOI": "10.1145/3341162.3345609"
         },
         {
-            "key": "e_1_2_9_65_1",
-            "unstructured": "NEON [National Ecological Observatory Network].2021.Site management and event reporting.https://data.neonscience.org/data\u2010products/DP1.10111.001"
-        },
-        {
-            "key": "e_1_2_9_66_1",
+            "key": "e_1_2_1_36_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.landurbplan.2017.08.008"
+            "DOI": "10.1145/2971648.2971677"
         },
         {
-            "key": "e_1_2_9_67_1",
-            "unstructured": "Nolte C.2020.Private\u2010Land Conservation Evidence System (PLACES).https://placeslab.org/data/"
-        },
-        {
-            "key": "e_1_2_9_68_1",
-            "volume-title": "Complexity theory for a sustainable future",
-            "author": "Norberg J.",
-            "year": "2008"
-        },
-        {
-            "key": "e_1_2_9_69_1",
+            "key": "e_1_2_1_37_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1073/pnas.1914420117"
+            "DOI": "10.1145/3559767"
         },
         {
-            "key": "e_1_2_9_70_1",
+            "key": "e_1_2_1_38_1",
+            "volume-title": "Domain adaptation via transfer component analysis",
+            "author": "Pan Sinno Jialin",
+            "year": "2010",
+            "unstructured": "Sinno Jialin Pan, Ivor W Tsang, James T Kwok, and Qiang Yang. 2010. Domain adaptation via transfer component analysis. IEEE transactions on neural networks 22, 2 (2010), 199\u2013210."
+        },
+        {
+            "key": "e_1_2_1_39_1",
+            "volume-title": "Proceedings of the IEEE/CVF International Conference on Computer Vision. 1406\u20131415",
+            "author": "Peng Xingchao",
+            "year": "2019",
+            "unstructured": "Xingchao Peng, Qinxun Bai, Xide Xia, Zijun Huang, Kate Saenko, and Bo Wang. 2019. Moment matching for multi-source domain adaptation. In Proceedings of the IEEE/CVF International Conference on Computer Vision. 1406\u20131415."
+        },
+        {
+            "key": "e_1_2_1_40_1",
+            "unstructured": "Slav Petrov and Ryan McDonald. 2012. Overview of the 2012 shared task on parsing the web. (2012)."
+        },
+        {
+            "key": "e_1_2_1_41_1",
+            "volume-title": "Gideon Maillette de Buy Wenniger, and Andy Way",
+            "author": "Poncelas Alberto",
+            "year": "2019",
+            "unstructured": "Alberto Poncelas, Gideon Maillette de Buy Wenniger, and Andy Way. 2019. Transductive data-selection algorithms for fine-tuning neural machine translation. arXiv preprint arXiv:1908.09532 (2019)."
+        },
+        {
+            "key": "e_1_2_1_42_1",
+            "volume-title": "Learning to learn without forgetting by maximizing transfer and minimizing interference. arXiv preprint arXiv:1810.11910",
+            "author": "Riemer Matthew",
+            "year": "2018",
+            "unstructured": "Matthew Riemer, Ignacio Cases, Robert Ajemian, Miao Liu, Irina Rish, Yuhai Tu, and Gerald Tesauro. 2018. Learning to learn without forgetting by maximizing transfer and minimizing interference. arXiv preprint arXiv:1810.11910 (2018)."
+        },
+        {
+            "key": "e_1_2_1_43_1",
+            "volume-title": "An overview of multi-task learning in deep neural networks. arXiv preprint arXiv:1706.05098",
+            "author": "Ruder Sebastian",
+            "year": "2017",
+            "unstructured": "Sebastian Ruder. 2017. An overview of multi-task learning in deep neural networks. arXiv preprint arXiv:1706.05098 (2017)."
+        },
+        {
+            "key": "e_1_2_1_44_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1126/science.1172133"
+            "DOI": "10.1007/978-3-642-15561-1_16"
         },
         {
-            "key": "e_1_2_9_71_1",
+            "key": "e_1_2_1_45_1",
+            "volume-title": "Multi-domain adversarial learning. arXiv preprint arXiv:1903.09239",
+            "author": "Schoenauer-Sebag Alice",
+            "year": "2019",
+            "unstructured": "Alice Schoenauer-Sebag, Louise Heinrich, Marc Schoenauer, Michele Sebag, Lani F Wu, and Steve J Altschuler. 2019. Multi-domain adversarial learning. arXiv preprint arXiv:1903.09239 (2019)."
+        },
+        {
+            "key": "e_1_2_1_46_1",
+            "volume-title": "An empirical analysis of domain adaptation algorithms for genomic sequence analysis. Advances in neural information processing systems 21",
+            "author": "Schweikert Gabriele",
+            "year": "2008",
+            "unstructured": "Gabriele Schweikert, Gunnar R\u00e4tsch, Christian Widmer, and Bernhard Sch\u00f6lkopf. 2008. An empirical analysis of domain adaptation algorithms for genomic sequence analysis. Advances in neural information processing systems 21 (2008)."
+        },
+        {
+            "key": "e_1_2_1_47_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/eap.1620"
+            "DOI": "10.1109/ACCESS.2020.2978260"
         },
         {
-            "key": "e_1_2_9_72_1",
+            "key": "e_1_2_1_48_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jenvman.2016.08.042"
+            "DOI": "10.1007/978-3-540-75225-7_5"
         },
         {
-            "key": "e_1_2_9_73_1",
+            "key": "e_1_2_1_49_1",
+            "unstructured": "Baochen Sun Jiashi Feng and Kate Saenko. 2016. Return of Frustratingly Easy Domain Adaptation. In AAAI."
+        },
+        {
+            "key": "e_1_2_1_50_1",
+            "volume-title": "Deep CORAL: Correlation Alignment for Deep Domain Adaptation. In ECCV 2016 Workshops.",
+            "author": "Sun Baochen",
+            "year": "2016",
+            "unstructured": "Baochen Sun and Kate Saenko. 2016. Deep CORAL: Correlation Alignment for Deep Domain Adaptation. In ECCV 2016 Workshops."
+        },
+        {
+            "key": "e_1_2_1_51_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.3390/rs11232783"
+            "DOI": "10.1016/j.inffus.2014.12.003"
         },
         {
-            "key": "e_1_2_9_74_1",
+            "key": "e_1_2_1_52_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1093/jel/eqp027"
+            "DOI": "10.1109/CVPR.2017.316"
         },
         {
-            "key": "e_1_2_9_75_1",
+            "key": "e_1_2_1_53_1",
+            "volume-title": "Deep domain confusion: Maximizing for domain invariance. arXiv preprint arXiv:1412.3474",
+            "author": "Tzeng Eric",
+            "year": "2014",
+            "unstructured": "Eric Tzeng, Judy Hoffman, Ning Zhang, Kate Saenko, and Trevor Darrell. 2014. Deep domain confusion: Maximizing for domain invariance. arXiv preprint arXiv:1412.3474 (2014)."
+        },
+        {
+            "key": "e_1_2_1_54_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/ecs2.2762"
+            "DOI": "10.1109/CVPR.2017.572"
         },
         {
-            "key": "e_1_2_9_76_1",
+            "key": "e_1_2_1_55_1",
+            "doi-asserted-by": "crossref",
+            "first-page": "100191",
+            "DOI": "10.1016/j.smhl.2021.100191",
+            "article-title": "Inferring food types through sensing and characterizing mastication dynamics",
+            "volume": "20",
+            "author": "Wang Shuangquan",
+            "year": "2021",
+            "unstructured": "Shuangquan Wang, Gang Zhou, Jiexiong Guan, Yongsen Ma, Zhenming Liu, Bin Ren, Hongyang Zhao, Amanda Watson, and Woosub Jung. 2021. Inferring food types through sensing and characterizing mastication dynamics. Smart Health 20 (2021), 100191.",
+            "journal-title": "Smart Health"
+        },
+        {
+            "key": "e_1_2_1_56_1",
+            "volume-title": "International Conference on Machine Learning. PMLR, 10214\u201310224",
+            "author": "Wen Junfeng",
+            "year": "2020",
+            "unstructured": "Junfeng Wen, Russell Greiner, and Dale Schuurmans. 2020. Domain aggregation networks for multi-source domain adaptation. In International Conference on Machine Learning. PMLR, 10214\u201310224."
+        },
+        {
+            "key": "e_1_2_1_57_1",
+            "volume-title": "Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining. 1768\u20131778",
+            "author": "Wilson Garrett",
+            "year": "2020",
+            "unstructured": "Garrett Wilson, Janardhan Rao Doppa, and Diane J Cook. 2020. Multi-source deep domain adaptation with weak supervision for time-series sensor data. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining. 1768\u20131778."
+        },
+        {
+            "key": "e_1_2_1_58_1",
+            "volume-title": "Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 3964\u20133973",
+            "author": "Xu Ruijia",
+            "year": "2018",
+            "unstructured": "Ruijia Xu, Ziliang Chen, Wangmeng Zuo, Junjie Yan, and Liang Lin. 2018. Deep cocktail network: Multi-source unsupervised domain adaptation with category shift. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 3964\u20133973."
+        },
+        {
+            "key": "e_1_2_1_59_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/conl.12250"
+            "DOI": "10.1109/ICDM.2019.00088"
         },
         {
-            "key": "e_1_2_9_77_1",
+            "key": "e_1_2_1_60_1",
+            "volume-title": "Joao P Costeira, and Geoffrey J Gordon.",
+            "author": "Zhao Han",
+            "year": "2018",
+            "unstructured": "Han Zhao, Shanghang Zhang, Guanhang Wu, Jos\u00e9 MF Moura, Joao P Costeira, and Geoffrey J Gordon. 2018. Adversarial multiple source domain adaptation. Advances in neural information processing systems 31 (2018), 8559\u20138570."
+        },
+        {
+            "key": "e_1_2_1_61_1",
+            "volume-title": "Multi-source domain adaptation in the deep learning era: A systematic survey. arXiv preprint arXiv:2002.12169",
+            "author": "Zhao Sicheng",
+            "year": "2020",
+            "unstructured": "Sicheng Zhao, Bo Li, Pengfei Xu, and Kurt Keutzer. 2020. Multi-source domain adaptation in the deep learning era: A systematic survey. arXiv preprint arXiv:2002.12169 (2020)."
+        },
+        {
+            "key": "e_1_2_1_62_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.5751/ES-09330-220224"
+            "DOI": "10.1609/aaai.v34i07.6997"
         },
         {
-            "key": "e_1_2_9_78_1",
+            "key": "e_1_2_1_63_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.3390/rs8100839"
+            "DOI": "10.1145/1620545.1620554"
         },
         {
-            "key": "e_1_2_9_79_1",
+            "key": "e_1_2_1_64_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1088/1748-9326/ab9e99"
+            "DOI": "10.1609/aaai.v33i01.33015989"
         },
         {
-            "key": "e_1_2_9_80_1",
+            "key": "e_1_2_1_65_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.3390/rs12091414"
-        },
-        {
-            "key": "e_1_2_9_81_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/03066150902820503"
-        },
-        {
-            "key": "e_1_2_9_82_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2495/FRIAR080031"
-        },
-        {
-            "key": "e_1_2_9_83_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/gere.12240"
-        },
-        {
-            "key": "e_1_2_9_84_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1088/1748-9326/aaba0f"
-        },
-        {
-            "key": "e_1_2_9_85_1",
-            "first-page": "1",
-            "volume-title": "Handbook of small satellites: technology, design, manufacture, applications, economics and regulation",
-            "author": "Tan S. Y.",
-            "year": "2020"
-        },
-        {
-            "key": "e_1_2_9_86_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jort.2020.100295"
-        },
-        {
-            "key": "e_1_2_9_87_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.cosust.2016.04.001"
-        },
-        {
-            "key": "e_1_2_9_88_1",
-            "unstructured": "USCB [US Census Bureau].2020a.American Community Survey Data.https://www.census.gov/programs\u2010surveys/acs/data.html"
-        },
-        {
-            "key": "e_1_2_9_89_1",
-            "unstructured": "USCB [US Census Bureau].2020b.Commuting Data.https://www.census.gov/topics/employment/commuting/data.html"
-        },
-        {
-            "key": "e_1_2_9_90_1",
-            "unstructured": "USCB [US Census Bureau].2020c.Decennial Census.https://www.census.gov/programs\u2010surveys/decennial\u2010census/data.html"
-        },
-        {
-            "key": "e_1_2_9_91_1",
-            "unstructured": "USCB [US Census Bureau].2020d.Poverty data tools.https://www.census.gov/topics/income\u2010poverty/poverty/data/data\u2010tools.html"
-        },
-        {
-            "key": "e_1_2_9_92_1",
-            "unstructured": "USDA NASS [U.S. Department of Agriculture National Agricultural Statistics Service].2020a.Data and Statistics.https://www.nass.usda.gov/Data_and_Statistics/"
-        },
-        {
-            "key": "e_1_2_9_93_1",
-            "unstructured": "USDA NASS [U.S. Department of Agriculture National Agricultural Statistics Service].2020b.Cropland Data Layer published crop\u2010specific data layer.http://nassgeodata.gmu.edu/CropScape/"
-        },
-        {
-            "key": "e_1_2_9_94_1",
-            "unstructured": "USDA\u2010USDI [U.S. Department of Agriculture and U.S. Department of Interior].2020.Landscape Fire and Resource Management Planning Tools Program (LANDFIRE).https://www.landfire.gov/notifications.php"
-        },
-        {
-            "key": "e_1_2_9_95_1",
-            "unstructured": "USGS [U.S. Geological Survey].2016.National Land Cover Database (NLCD).https://www.mrlc.gov/data?f%5B0%5D=category%3Aland%20cover"
-        },
-        {
-            "key": "e_1_2_9_96_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1641/0006-3568(2004)054[0523:UISTSE]2.0.CO;2"
-        },
-        {
-            "key": "e_1_2_9_97_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.gloenvcha.2013.09.004"
-        },
-        {
-            "key": "e_1_2_9_98_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1890/07-1280.1"
-        },
-        {
-            "key": "e_1_2_9_99_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.rse.2018.06.020"
-        },
-        {
-            "key": "e_1_2_9_100_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1126/science.aaf7150"
-        },
-        {
-            "key": "e_1_2_9_101_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/nph.16711"
-        },
-        {
-            "key": "e_1_2_9_102_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.rse.2014.11.001"
-        },
-        {
-            "key": "e_1_2_9_103_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.14358/PERS.69.9.1003"
-        },
-        {
-            "key": "e_1_2_9_104_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.ecolecon.2007.02.024"
-        },
-        {
-            "key": "e_1_2_9_105_1",
-            "first-page": "1",
-            "volume-title": "Political ecology: an integrative approach to geography and environment\u2010development studies",
-            "author": "Zimmerer K. S.",
-            "year": "2003"
-        },
-        {
-            "key": "e_1_2_9_106_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1029/2019WR025080"
+            "DOI": "10.1109/TNNLS.2020.2988928"
         }
     ],
     "container-title": [
-        "Ecosphere"
+        "ACM Transactions on Computing for Healthcare"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/ecs2.3640",
-            "content-type": "application/pdf",
-            "content-version": "vor",
-            "intended-application": "text-mining"
-        },
-        {
-            "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/ecs2.3640",
-            "content-type": "application/xml",
-            "content-version": "vor",
-            "intended-application": "text-mining"
-        },
-        {
-            "URL": "https://esajournals.onlinelibrary.wiley.com/doi/pdf/10.1002/ecs2.3640",
-            "content-type": "application/pdf",
-            "content-version": "vor",
-            "intended-application": "syndication"
-        },
-        {
-            "URL": "https://esajournals.onlinelibrary.wiley.com/doi/pdf/10.1002/ecs2.3640",
+            "URL": "https://dl.acm.org/doi/pdf/10.1145/3696424",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -1043,72 +557,55 @@
     "deposited": {
         "date-parts": [
             [
-                2023,
-                8,
-                28
+                2024,
+                9,
+                23
             ]
         ],
-        "date-time": "2023-08-28T05:47:17Z",
-        "timestamp": 1693201637000
+        "date-time": "2024-09-23T12:15:01Z",
+        "timestamp": 1727093701000
     },
-    "score": 4.332576,
+    "score": 9.215403,
     "resource": {
         "primary": {
-            "URL": "https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecs2.3640"
+            "URL": "https://dl.acm.org/doi/10.1145/3696424"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2021,
-                6
+                2024,
+                9,
+                23
             ]
         ]
     },
-    "references-count": 105,
-    "journal-issue": {
-        "issue": "6",
-        "published-print": {
-            "date-parts": [
-                [
-                    2021,
-                    6
-                ]
-            ]
-        }
-    },
+    "references-count": 65,
     "alternative-id": [
-        "10.1002/ecs2.3640"
+        "10.1145/3696424"
     ],
-    "URL": "http://dx.doi.org/10.1002/ecs2.3640",
-    "archive": [
-        "Portico"
-    ],
+    "URL": "http://dx.doi.org/10.1145/3696424",
     "ISSN": [
-        "2150-8925",
-        "2150-8925"
+        "2637-8051"
     ],
     "issn-type": [
         {
-            "value": "2150-8925",
-            "type": "print"
-        },
-        {
-            "value": "2150-8925",
+            "value": "2637-8051",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2021,
-                6
+                2024,
+                9,
+                23
             ]
         ]
     },
     "assertion": [
         {
-            "value": "2020-09-22",
+            "value": "2023-04-01",
             "order": 0,
             "name": "received",
             "label": "Received",
@@ -1118,8 +615,8 @@
             }
         },
         {
-            "value": "2021-03-12",
-            "order": 1,
+            "value": "2024-08-28",
+            "order": 2,
             "name": "accepted",
             "label": "Accepted",
             "group": {
@@ -1128,8 +625,8 @@
             }
         },
         {
-            "value": "2021-06-21",
-            "order": 2,
+            "value": "2024-09-23",
+            "order": 3,
             "name": "published",
             "label": "Published",
             "group": {

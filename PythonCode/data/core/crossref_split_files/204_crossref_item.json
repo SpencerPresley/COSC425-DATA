@@ -3,28 +3,28 @@
         "date-parts": [
             [
                 2023,
-                10,
-                3
+                9,
+                7
             ]
         ],
-        "date-time": "2023-10-03T11:16:07Z",
-        "timestamp": 1696331767957
+        "date-time": "2023-09-07T20:38:33Z",
+        "timestamp": 1694119113396
     },
-    "reference-count": 16,
+    "reference-count": 0,
     "publisher": "Wiley",
-    "issue": "4",
+    "issue": "2",
     "license": [
         {
             "start": {
                 "date-parts": [
                     [
-                        2021,
-                        1,
-                        20
+                        2020,
+                        3,
+                        15
                     ]
                 ],
-                "date-time": "2021-01-20T00:00:00Z",
-                "timestamp": 1611100800000
+                "date-time": "2020-03-15T00:00:00Z",
+                "timestamp": 1584230400000
             },
             "content-version": "vor",
             "delay-in-days": 0,
@@ -38,59 +38,46 @@
         "crossmark-restriction": true
     },
     "short-container-title": [
-        "Pacific Economic Review"
+        "Pres Stud Q"
     ],
     "published-print": {
         "date-parts": [
             [
-                2023,
-                10
+                2020,
+                6
             ]
         ]
     },
-    "abstract": "<jats:title>Abstract</jats:title><jats:p>This paper examines the disparate impact of US federal regulations on small businesses. Using a two\u2010sector dynamic general equilibrium model, we obtained two implications of higher regulation on small firms that have yet to be empirically tested in the published literature. First, as regulations increase, small firms\u2019 share of employment shrinks. Second, as regulations rise, small firms\u2019 share of total output falls. Using a panel of industry\u2010specific US regulatory restrictions, we found that a 10% increase in federal regulations was associated with an approximate 0.8% reduction in small firms\u2019 share of industry employment and a nearly 1.5% decline in small firms\u2019 share of industry output.</jats:p>",
-    "DOI": "10.1111/1468-0106.12353",
+    "DOI": "10.1111/psq.12649",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2021,
-                1,
-                21
+                2020,
+                3,
+                16
             ]
         ],
-        "date-time": "2021-01-21T02:34:17Z",
-        "timestamp": 1611196457000
+        "date-time": "2020-03-16T05:05:10Z",
+        "timestamp": 1584335110000
     },
-    "page": "503-518",
+    "page": "475-478",
     "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 5,
+    "is-referenced-by-count": 0,
     "title": [
-        "Employment and output effects of federal regulations on small business"
+        "Presidential Allies, Aspirants, and Antagonists: Senators Burton K. Wheeler and Birch Bayh Reconsidered"
     ],
     "prefix": "10.1111",
-    "volume": "28",
+    "volume": "50",
     "author": [
         {
-            "given": "Dustin",
-            "family": "Chambers",
+            "given": "Dean J.",
+            "family": "Kotlowski",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Department of Economics and Finance Salisbury University  Salisbury Maryland"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0001-9948-9691",
-            "authenticated-orcid": false,
-            "given": "Jang\u2010Ting",
-            "family": "Guo",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Economics University of California  Riverside California"
+                    "name": "Salisbury University"
                 }
             ]
         }
@@ -99,119 +86,37 @@
     "published-online": {
         "date-parts": [
             [
-                2021,
-                1,
-                20
+                2020,
+                3,
+                15
             ]
         ]
     },
-    "reference": [
-        {
-            "key": "e_1_2_6_2_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s11149-017-9343-9"
-        },
-        {
-            "key": "e_1_2_6_3_1",
-            "unstructured": "Chambers D. McLaughlin P. A. &Richards T.(2018).Regulation entrepreneurship and firm size(Mercatus Working Paper) Mercatus Center at George Mason University Arlington VA. April 2018."
-        },
-        {
-            "key": "e_1_2_6_4_1",
-            "volume-title": "The cost of Federal Regulation to the US economy, Manufacturing and Small Business",
-            "author": "Crain W. M.",
-            "year": "2014"
-        },
-        {
-            "key": "e_1_2_6_5_1",
-            "volume-title": "Job creation and destruction",
-            "author": "Davis S. J.",
-            "year": "1998"
-        },
-        {
-            "key": "e_1_2_6_6_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10887-013-9088-y"
-        },
-        {
-            "key": "e_1_2_6_7_1",
-            "volume-title": "Firm size, financial intermediation and business cycles",
-            "author": "Dhawan R.",
-            "year": "1996"
-        },
-        {
-            "key": "e_1_2_6_8_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/ei/39.4.651"
-        },
-        {
-            "key": "e_1_2_6_9_1",
-            "unstructured": "Dixon L. Gates S. M. Kapur K. Seabury S. A. &E.Talley(2006).The impact of regulation and litigation on small business entrepreneurship: An overview. Santa Monica CA: RAND Corporation 2006. Retrieved fromhttps://www.rand.org/pubs/working_papers/WR317.html."
-        },
-        {
-            "key": "e_1_2_6_10_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/smj.4250120203"
-        },
-        {
-            "key": "e_1_2_6_11_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/epolic/eix019"
-        },
-        {
-            "key": "e_1_2_6_12_1",
-            "doi-asserted-by": "crossref",
-            "unstructured": "Gutierrez G. &Philippon T.(2019).The failure of free entry(NBER Working Paper No. 26001). Cambridge MA: National Bureau of Economic Research (NBER). Retrieved fromhttp://www.nber.org/papers/w26001 June 2019.",
-            "DOI": "10.3386/w26001"
-        },
-        {
-            "key": "e_1_2_6_13_1",
-            "volume-title": "Criteria Used to Define a Small Business in Determining Thresholds for the Application of Federal Statutes",
-            "author": "Keefe R.",
-            "year": "2005"
-        },
-        {
-            "key": "e_1_2_6_14_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0266242613493454"
-        },
-        {
-            "key": "e_1_2_6_15_1",
-            "unstructured": "McLaughlin P. A. &Sherouse O.(2017).QuantGov \u2010 a policy analytics platform(Working Paper) December 20. Arlington VA: Mercatus Center at George Mason University. Retrieved fromhttp://docs.quantgov.org/quantgov_working_paper.pdf."
-        },
-        {
-            "key": "e_1_2_6_16_1",
-            "first-page": "758",
-            "article-title": "Industry structure with fluctuating demand",
-            "volume": "75",
-            "author": "Mills D.",
-            "year": "1985",
-            "journal-title": "American Economic Review"
-        },
-        {
-            "key": "e_1_2_6_17_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/1923946"
-        }
-    ],
     "container-title": [
-        "Pacific Economic Review"
+        "Presidential Studies Quarterly"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/1468-0106.12353",
+            "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1111%2Fpsq.12649",
             "content-type": "application/pdf",
             "content-version": "vor",
             "intended-application": "text-mining"
         },
         {
-            "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1111/1468-0106.12353",
+            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/psq.12649",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1111/psq.12649",
             "content-type": "application/xml",
             "content-version": "vor",
             "intended-application": "text-mining"
         },
         {
-            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/1468-0106.12353",
+            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/psq.12649",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -221,93 +126,73 @@
         "date-parts": [
             [
                 2023,
-                10,
-                2
+                9,
+                6
             ]
         ],
-        "date-time": "2023-10-02T06:33:24Z",
-        "timestamp": 1696228404000
+        "date-time": "2023-09-06T17:38:55Z",
+        "timestamp": 1694021935000
     },
-    "score": 15.065596,
+    "score": 14.43329,
     "resource": {
         "primary": {
-            "URL": "https://onlinelibrary.wiley.com/doi/10.1111/1468-0106.12353"
+            "URL": "https://onlinelibrary.wiley.com/doi/10.1111/psq.12649"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2021,
-                1,
-                20
+                2020,
+                3,
+                15
             ]
         ]
     },
-    "references-count": 16,
+    "references-count": 0,
     "journal-issue": {
-        "issue": "4",
+        "issue": "2",
         "published-print": {
             "date-parts": [
                 [
-                    2023,
-                    10
+                    2020,
+                    6
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1111/1468-0106.12353"
+        "10.1111/psq.12649"
     ],
-    "URL": "http://dx.doi.org/10.1111/1468-0106.12353",
+    "URL": "http://dx.doi.org/10.1111/psq.12649",
     "archive": [
         "Portico"
     ],
     "ISSN": [
-        "1361-374X",
-        "1468-0106"
+        "0360-4918",
+        "1741-5705"
     ],
     "issn-type": [
         {
-            "value": "1361-374X",
+            "value": "0360-4918",
             "type": "print"
         },
         {
-            "value": "1468-0106",
+            "value": "1741-5705",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2021,
-                1,
-                20
+                2020,
+                3,
+                15
             ]
         ]
     },
     "assertion": [
         {
-            "value": "2020-01-13",
-            "order": 0,
-            "name": "received",
-            "label": "Received",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2020-12-17",
-            "order": 1,
-            "name": "accepted",
-            "label": "Accepted",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2021-01-20",
+            "value": "2020-03-15",
             "order": 2,
             "name": "published",
             "label": "Published",

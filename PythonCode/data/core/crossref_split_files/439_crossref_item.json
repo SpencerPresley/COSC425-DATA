@@ -4,44 +4,44 @@
             [
                 2024,
                 8,
-                22
+                13
             ]
         ],
-        "date-time": "2024-08-22T00:14:55Z",
-        "timestamp": 1724285695780
+        "date-time": "2024-08-13T07:13:16Z",
+        "timestamp": 1723533196676
     },
-    "reference-count": 100,
-    "publisher": "Wiley",
-    "issue": "14",
+    "reference-count": 36,
+    "publisher": "MDPI AG",
+    "issue": "3",
     "license": [
         {
             "start": {
                 "date-parts": [
                     [
-                        2017,
-                        7,
-                        9
+                        2023,
+                        2,
+                        23
                     ]
                 ],
-                "date-time": "2017-07-09T00:00:00Z",
-                "timestamp": 1499558400000
+                "date-time": "2023-02-23T00:00:00Z",
+                "timestamp": 1677110400000
             },
             "content-version": "vor",
             "delay-in-days": 0,
-            "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+            "URL": "https://creativecommons.org/licenses/by/4.0/"
         }
     ],
     "funder": [
         {
-            "DOI": "10.13039/501100000038",
-            "name": "Natural Sciences and Engineering Research Council of Canada",
-            "doi-asserted-by": "publisher",
-            "id": [
-                {
-                    "id": "10.13039/501100000038",
-                    "id-type": "DOI",
-                    "asserted-by": "publisher"
-                }
+            "name": "National Key R&D Program of China",
+            "award": [
+                "2021YFD1000500"
+            ]
+        },
+        {
+            "name": "R&D Projects in Key Areas of Guangdong Province",
+            "award": [
+                "2020B020214001"
             ]
         }
     ],
@@ -50,631 +50,505 @@
         "crossmark-restriction": false
     },
     "short-container-title": [
-        "J of Comparative Neurology"
+        "Insects"
     ],
-    "published-print": {
-        "date-parts": [
-            [
-                2017,
-                10
-            ]
-        ]
-    },
-    "abstract": "<jats:title>Abstract</jats:title><jats:p>Zebrin II (ZII; a.k.a. aldolase C) is expressed heterogeneously in Purkinje cells (PCs) such that there are sagittal stripes of high expression (ZII+) interdigitated with stripes of little or no expression (ZII\u2212). The pigeon flocculus receives visual\u2010optokinetic information and is important for generating compensatory eye movements. It consists of 4 sagittal zones based on PC complex spike activity (CSA) in response to rotational optokinetic stimuli. There are two zones where CSA responds best to rotation about the vertical axis (VA), interdigitated with two zones where CSA responds best to rotation about an horizontal axis (HA). These optokinetic zones relate to the ZII stripes in folium IXcd of the flocculus, such that an optokinetic zone spans a ZII+/\u2212 pair: the HA zones span the P5+/\u2212 and P7+/\u2212 ZII stripe pairs, whereas the VA zones correspond to ZII stripe pairs P4+/\u2212 and P6+/\u2212. In the present study, we used fluorescent retrograde tracing to determine the olivary inputs to the ZII+ and ZII\u2212 stripes within the functional pairs. We found that separate but adjacent areas of the medial column of the inferior olive (mcIO) project to the ZII+ and ZII\u2212 stripes within each of the functional pairs. Thus, although a ZII+/\u2212 stripe pair represents a functional unit in the pigeon flocculus insofar as the CSA of all PCs in the stripe pair encodes similar sensory information, the olivary inputs to the ZII+ and ZII\u2212 stripes arise from different, although adjacent, regions of the mcIO.</jats:p>",
-    "DOI": "10.1002/cne.24270",
+    "abstract": "<jats:p>Our previous study discovered that two urban pest ants, red imported fire ants, Solenopsis invicta Buren (Formicidae: Myrmicinae), and ghost ants, Tapinoma melanocephalum (Fabricius) (Formicidae: Dolichoderinae), can pave viscose surfaces with particles to facilitate food search and transport. We hypothesize that this paving behavior can be applied to monitor S. invicta and T. melanocephalum. In the present study, 3998 adhesive tapes, each with a food source (sausage), were placed in 20 locations around Guangzhou, China (181\u2013224 tapes per location), and their efficiency to detect S. invicta and T. melanocephalum was compared with two traditional ant-monitoring methods, baiting and pitfall trapping. Overall, S. invicta was detected by 45.6% and 46.4% of baits and adhesive tapes, respectively. In each location, the percentage of adhesive tapes detecting S. invicta and T. melanocephalum was similar when compared to baits and pitfall traps. However, significantly more non-target ant species showed up on bait and pitfall traps. Seven non-target ant species\u2014Pheidole parva Mayr (Formicidae: Myrmicinae), Pheidole nodus Smith (Formicidae: Myrmicinae), Pheidole sinica Wu &amp; Wang (Formicidae: Myrmicinae), Pheidole yeensis Forel (Formicidae: Myrmicinae), Carebara affinis (Jerdon) (Formicidae: Myrmicinae), Camponotus nicobarensis Mayr (Formicidae: Formicinae), and Odontoponera transversa (Smith) (Formicidae: Ponerinae)\u2014also showed tape paving behavior, but they can be easily distinguished morphologically from S. invicta and T. melanocephalum. Our study showed that the paving behavior occurs in different subfamilies of ants (i.e., myrmicinae, dolichoderinae, formicinae, and ponerinae). In addition, paving behavior can potentially be used to develop more specific monitoring methods for S. invicta and T. melanocephalum in urban areas in southern China.</jats:p>",
+    "DOI": "10.3390/insects14030219",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2017,
-                6,
-                26
+                2023,
+                2,
+                23
             ]
         ],
-        "date-time": "2017-06-26T08:24:35Z",
-        "timestamp": 1498465475000
+        "date-time": "2023-02-23T08:25:56Z",
+        "timestamp": 1677140756000
     },
-    "page": "3158-3173",
+    "page": "219",
     "source": "Crossref",
-    "is-referenced-by-count": 8,
+    "is-referenced-by-count": 3,
     "title": [
-        "Inferior olivary projection to the zebrin II stripes in lobule IXcd of the pigeon flocculus: A retrograde tracing study"
+        "Paving Behavior in Ants and Its Potential Application in Monitoring Two Urban Pest Ants, Solenopsis invicta and Tapinoma melanocephalum"
     ],
-    "prefix": "10.1002",
-    "volume": "525",
+    "prefix": "10.3390",
+    "volume": "14",
     "author": [
         {
-            "ORCID": "http://orcid.org/0000-0003-0782-1146",
-            "authenticated-orcid": false,
-            "given": "Douglas R.",
-            "family": "Wylie",
+            "given": "Liming",
+            "family": "Shen",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Neuroscience and Mental Health Institute, University of Alberta Edmonton Alberta Canada T6G 2E9"
+                    "name": "College of Forestry and Landscape Architecture, South China Agricultural University, Guangzhou 510642, China"
                 }
             ]
         },
         {
-            "given": "Cristi\u00e1n",
-            "family": "Guti\u00e9rrez\u2010Ib\u00e1\u00f1ez",
+            "given": "Chao",
+            "family": "Wen",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Neuroscience and Mental Health Institute, University of Alberta Edmonton Alberta Canada T6G 2E9"
+                    "name": "School of Grassland Science, Beijing Forestry University, Beijing 100083, China"
                 }
             ]
         },
         {
-            "given": "Jeremy R.",
-            "family": "Corfield",
+            "given": "Xuan",
+            "family": "Chen",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Department of Biological Sciences Salisbury University Salisbury Maryland"
+                    "name": "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA"
                 }
             ]
         },
         {
-            "given": "Iulia",
-            "family": "Craciun",
+            "given": "Yan",
+            "family": "Hua",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Neuroscience and Mental Health Institute, University of Alberta Edmonton Alberta Canada T6G 2E9"
+                    "name": "Guangdong Provincial Key Laboratory of Silviculture, Protection and Utilization, Guangdong Academy of Forestry, Guangzhou 510520, China"
                 }
             ]
         },
         {
-            "given": "David J.",
-            "family": "Graham",
+            "given": "Chengju",
+            "family": "Du",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Neuroscience and Mental Health Institute, University of Alberta Edmonton Alberta Canada T6G 2E9"
+                    "name": "College of Forestry and Landscape Architecture, South China Agricultural University, Guangzhou 510642, China"
                 }
             ]
         },
         {
-            "given": "Peter L.",
-            "family": "Hurd",
+            "given": "Jiacheng",
+            "family": "Cai",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Neuroscience and Mental Health Institute, University of Alberta Edmonton Alberta Canada T6G 2E9"
+                    "name": "Department of Mathematical Sciences, Salisbury University, Salisbury, MD 21801, USA"
+                }
+            ]
+        },
+        {
+            "given": "Xiujun",
+            "family": "Wen",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "College of Forestry and Landscape Architecture, South China Agricultural University, Guangzhou 510642, China"
+                }
+            ]
+        },
+        {
+            "given": "Lei",
+            "family": "Wang",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "College of Plant Protection, South China Agricultural University, Guangzhou 510642, China"
+                }
+            ]
+        },
+        {
+            "ORCID": "http://orcid.org/0000-0001-6273-5158",
+            "authenticated-orcid": false,
+            "given": "Cai",
+            "family": "Wang",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "College of Forestry and Landscape Architecture, South China Agricultural University, Guangzhou 510642, China"
                 }
             ]
         }
     ],
-    "member": "311",
+    "member": "1968",
     "published-online": {
         "date-parts": [
             [
-                2017,
-                7,
-                9
+                2023,
+                2,
+                23
             ]
         ]
     },
     "reference": [
         {
-            "key": "e_1_2_7_2_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1242/dev.120.8.2081"
-        },
-        {
-            "key": "e_1_2_7_3_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/0891-0618(94)90009-4"
-        },
-        {
-            "key": "e_1_2_7_4_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF00239553"
-        },
-        {
-            "key": "e_1_2_7_5_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1038/nrn1646"
-        },
-        {
-            "key": "e_1_2_7_6_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1038/nrn2698"
-        },
-        {
-            "key": "e_1_2_7_7_1",
+            "key": "ref_1",
             "doi-asserted-by": "crossref",
-            "unstructured": "Arends J. J. A. &Voogd J.(1989). Topographic aspects of the olivocerebellar system in the pigeon. In P. Stata (Ed.) Experimental Brain Research Series 17: The olivocerebellar system in motor control(pp.52\u201357). Springer Verlag Berlin Heidelberg.",
-            "DOI": "10.1007/978-3-642-73920-0_6"
-        },
-        {
-            "key": "e_1_2_7_8_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1139/o00-071"
-        },
-        {
-            "key": "e_1_2_7_9_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/cne.901890404"
-        },
-        {
-            "key": "e_1_2_7_10_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/cne.902910405"
-        },
-        {
-            "key": "e_1_2_7_11_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s00221\u2010011\u20102589\u2010z"
-        },
-        {
-            "key": "e_1_2_7_12_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1038/nrn3886"
-        },
-        {
-            "key": "e_1_2_7_13_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/cne.903450103"
-        },
-        {
-            "key": "e_1_2_7_14_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/cne.901740307"
-        },
-        {
-            "key": "e_1_2_7_15_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1073/pnas.95.25.15032"
-        },
-        {
-            "key": "e_1_2_7_16_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1159/000445315"
-        },
-        {
-            "key": "e_1_2_7_17_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1159/000380810"
-        },
-        {
-            "key": "e_1_2_7_18_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/(SICI)1096-9861(20000327)419:1<87::AID-CNE5>3.0.CO;2-W"
-        },
-        {
-            "key": "e_1_2_7_19_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/cne.903490308"
-        },
-        {
-            "key": "e_1_2_7_20_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s12311\u2010011\u20100347\u20101"
-        },
-        {
-            "key": "e_1_2_7_21_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF00236430"
-        },
-        {
-            "key": "e_1_2_7_22_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1113/jphysiol.1966.sp007825"
-        },
-        {
-            "key": "e_1_2_7_23_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1201/9780429246593"
-        },
-        {
-            "key": "e_1_2_7_24_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/0006-8993(73)90203-5"
-        },
-        {
-            "key": "e_1_2_7_25_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0079\u20106123(05)51012\u20104"
-        },
-        {
-            "key": "e_1_2_7_26_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/cne.902690103"
-        },
-        {
-            "key": "e_1_2_7_27_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1523/JNEUROSCI.2434\u201006.2006"
-        },
-        {
-            "key": "e_1_2_7_28_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0079\u20106123(05)51013\u20106"
-        },
-        {
-            "key": "e_1_2_7_29_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1152/jn.1988.60.6.2091"
-        },
-        {
-            "key": "e_1_2_7_30_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1523/JNEUROSCI.0197\u201012.2012"
-        },
-        {
-            "key": "e_1_2_7_31_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/cne.902910107"
-        },
-        {
-            "key": "e_1_2_7_32_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/(SICI)1096-9861(19990614)408:4<580::AID-CNE11>3.0.CO;2-O"
-        },
-        {
-            "key": "e_1_2_7_33_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3389/fnsys.2014.00041"
-        },
-        {
-            "key": "e_1_2_7_34_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/0301\u20100082(91)90004\u2010K"
-        },
-        {
-            "key": "e_1_2_7_35_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF02736761"
-        },
-        {
-            "key": "e_1_2_7_36_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1146/annurev.neuro.20.1.61"
-        },
-        {
-            "key": "e_1_2_7_37_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jchemneu.2008.10.001"
-        },
-        {
-            "key": "e_1_2_7_38_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/0306\u20104522(94)90414\u20106"
-        },
-        {
-            "key": "e_1_2_7_39_1",
-            "volume-title": "A stereotaxic atlas of the brain of the pigeon, Columba livia",
-            "author": "Karten H. J.",
-            "year": "1967"
-        },
-        {
-            "key": "e_1_2_7_40_1",
-            "volume-title": "The comparative anatomy and histology of the cerebellum: From myxinoids through birds",
-            "author": "Larsell O.",
-            "year": "1967"
-        },
-        {
-            "key": "e_1_2_7_41_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0306-4522(97)00620-9"
-        },
-        {
-            "key": "e_1_2_7_42_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1073/pnas.89.11.5006"
-        },
-        {
-            "key": "e_1_2_7_43_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1460\u20109568.1989.tb00365.x"
-        },
-        {
-            "key": "e_1_2_7_44_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1152/jn.01275.2004"
-        },
-        {
-            "key": "e_1_2_7_45_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/cne.22328"
-        },
-        {
-            "key": "e_1_2_7_46_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s12311\u2010010\u20100208\u20103"
-        },
-        {
-            "key": "e_1_2_7_47_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s12311\u2010014\u20100618\u20108"
-        },
-        {
-            "key": "e_1_2_7_48_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0006-8993(03)02576-9"
-        },
-        {
-            "key": "e_1_2_7_49_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF00231768"
-        },
-        {
-            "key": "e_1_2_7_50_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF00236904"
-        },
-        {
-            "key": "e_1_2_7_51_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1523/JNEUROSCI.6117-09.2010"
-        },
-        {
-            "key": "e_1_2_7_52_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/(SICI)1096\u20109861(19990913)412:1\u2009<\u200995::AID\u2010CNE7\u2009>\u20093.0.CO;2\u2010Y"
-        },
-        {
-            "key": "e_1_2_7_53_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1017/S0952523810000532"
-        },
-        {
-            "key": "e_1_2_7_54_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/cne.22192"
-        },
-        {
-            "key": "e_1_2_7_55_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/cne.23626"
-        },
-        {
-            "key": "e_1_2_7_56_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/cne.21266"
-        },
-        {
-            "key": "e_1_2_7_57_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/cne.20523"
-        },
-        {
-            "key": "e_1_2_7_58_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.neuroscience.2008.08.062"
-        },
-        {
-            "key": "e_1_2_7_59_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1523/JNEUROSCI.5118\u201009.2010"
-        },
-        {
-            "key": "e_1_2_7_60_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1523/JNEUROSCI.2905\u201006.2006"
-        },
-        {
-            "key": "e_1_2_7_61_1",
-            "unstructured": "R Core Team (2015). R: A language and environment for statistical computing. R Foundation for Statistical Computing Vienna Austria.http://www.R-project.org/."
-        },
-        {
-            "key": "e_1_2_7_62_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/cne.10889"
-        },
-        {
-            "key": "e_1_2_7_63_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1460\u20109568.2008.06294.x"
-        },
-        {
-            "key": "e_1_2_7_64_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/cne.10144"
-        },
-        {
-            "key": "e_1_2_7_65_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0006-8993(03)02569-1"
-        },
-        {
-            "key": "e_1_2_7_66_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1046/j.1469\u20107580.2003.00216.x"
-        },
-        {
-            "key": "e_1_2_7_67_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1146/annurev.ne.07.030184.000305"
-        },
-        {
-            "key": "e_1_2_7_68_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s12311\u2010010\u20100226\u20101"
-        },
-        {
-            "key": "e_1_2_7_69_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/cne.21223"
-        },
-        {
-            "key": "e_1_2_7_70_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/cne.21219"
-        },
-        {
-            "key": "e_1_2_7_71_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1523/JNEUROSCI.1961\u201004.2004"
-        },
-        {
-            "key": "e_1_2_7_72_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1523/JNEUROSCI.1579\u201007.2007"
-        },
-        {
-            "key": "e_1_2_7_73_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.neuron.2016.10.022"
-        },
-        {
-            "key": "e_1_2_7_74_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/cne.23769"
-        },
-        {
-            "key": "e_1_2_7_75_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0079\u20106123(08)60963\u20102"
-        },
-        {
-            "key": "e_1_2_7_76_1",
+            "first-page": "683",
+            "DOI": "10.1067/mai.2000.105707",
+            "article-title": "Expanding habitat of the imported fire ant (Solenopsis invicta): A public health concern",
+            "volume": "105",
+            "author": "Kemp",
+            "year": "2000",
+            "journal-title": "J. Allergy Clin. Immunol."
+        },
+        {
+            "key": "ref_2",
+            "doi-asserted-by": "crossref",
+            "first-page": "89",
+            "DOI": "10.3897/neobiota.54.38584",
+            "article-title": "Prevalence and management of Solenopsis invicta in China",
+            "volume": "54",
+            "author": "Wang",
+            "year": "2020",
+            "journal-title": "NeoBiota"
+        },
+        {
+            "key": "ref_3",
+            "doi-asserted-by": "crossref",
+            "first-page": "961",
+            "DOI": "10.1653/024.095.0421",
+            "article-title": "Prevalence of Solenopsis invicta (Hymenoptera: Formicidae) venom allergic reactions in mainland China",
+            "volume": "95",
+            "author": "Xu",
+            "year": "2012",
+            "journal-title": "Fla. Entomol."
+        },
+        {
+            "key": "ref_4",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Wang, L., Lu, Y., Li, R., Zeng, L., Du, J., Huang, X., and Xu, Y. (2018). Mental health effects caused by red imported fire ant attacks (Solenopsis invicta). PLoS ONE, 13.",
+            "DOI": "10.1371/journal.pone.0199424"
+        },
+        {
+            "key": "ref_5",
+            "doi-asserted-by": "crossref",
+            "first-page": "3283",
+            "DOI": "10.1038/s41598-019-39756-4",
+            "article-title": "Food transport of red imported fire ants (Hymenoptera: Formicidae) on vertical surfaces",
+            "volume": "9",
+            "author": "Qin",
+            "year": "2019",
+            "journal-title": "Sci. Rep."
+        },
+        {
+            "key": "ref_6",
+            "doi-asserted-by": "crossref",
+            "first-page": "535",
+            "DOI": "10.1016/j.aspen.2017.03.011",
+            "article-title": "Laboratory and field evaluation of the repellency of six preservatives to red imported fire ants (Hymenoptera: Formicidae)",
+            "volume": "20",
+            "author": "Qin",
+            "year": "2017",
+            "journal-title": "J. Asia-Pac. Entomol."
+        },
+        {
+            "key": "ref_7",
+            "doi-asserted-by": "crossref",
+            "first-page": "324",
+            "DOI": "10.1111/aen.12297",
+            "article-title": "Evaluation of a lateral flow immunoassay for field identification of Solenopsis invicta (Hymenoptera: Formicidae) in Australia",
+            "volume": "58",
+            "author": "Valles",
+            "year": "2019",
+            "journal-title": "Austral. Entomol."
+        },
+        {
+            "key": "ref_8",
+            "doi-asserted-by": "crossref",
+            "first-page": "319",
+            "DOI": "10.1007/s13355-019-00622-4",
+            "article-title": "Rapid detection of the red fire ant Solenopsis invicta (Hymenoptera: Formicidae) by loop-mediated isothermal amplification",
+            "volume": "54",
+            "author": "Nakajima",
+            "year": "2019",
+            "journal-title": "Appl. Entomol. Zool."
+        },
+        {
+            "key": "ref_9",
+            "doi-asserted-by": "crossref",
+            "first-page": "1816",
+            "DOI": "10.1111/1744-7917.12891",
+            "article-title": "Red imported fire ants (Hymenoptera: Formicidae) cover inaccessible surfaces with particles to facilitate food search and transportation",
+            "volume": "28",
+            "author": "Wen",
+            "year": "2021",
+            "journal-title": "Insect Sci."
+        },
+        {
+            "key": "ref_10",
+            "doi-asserted-by": "crossref",
+            "first-page": "67",
+            "DOI": "10.1016/j.aspen.2008.12.003",
+            "article-title": "Tapinoma melanocephalum (Fabricius), a new exotic pest in Korea",
+            "volume": "12",
+            "author": "Choe",
+            "year": "2009",
+            "journal-title": "J. Asia-Pac. Entomol."
+        },
+        {
+            "key": "ref_11",
+            "first-page": "172",
+            "article-title": "Tapinoma melanocephalum (Hymenoptera: Formicidae), a new exotic ant in Mississippi",
+            "volume": "54",
+            "author": "MacGown",
+            "year": "2009",
+            "journal-title": "J. Miss. Acad. Sci."
+        },
+        {
+            "key": "ref_12",
+            "first-page": "2333",
+            "article-title": "Worldwide spread of the ghost ant, Tapinoma melanocephalum (Hymenoptera: Formicidae)",
+            "volume": "12",
+            "author": "Wetterer",
+            "year": "2009",
+            "journal-title": "Myrmecol. News"
+        },
+        {
+            "key": "ref_13",
+            "doi-asserted-by": "crossref",
+            "first-page": "409",
+            "DOI": "10.14411/eje.2016.053",
+            "article-title": "Identification of microsatellite markers for a worldwide distributed, highly invasive ant species Tapinoma melanocephalum (Hymenoptera: Formicidae)",
+            "volume": "113",
+            "author": "Zima",
+            "year": "2016",
+            "journal-title": "Eur. J. Entomol."
+        },
+        {
+            "key": "ref_14",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Zhou, A.M., Kuang, B., Gao, Y., and Liang, G.W. (2015). Density-dependent benefits in ant-hemipteran mutualism? The case of the ghost ant Tapinoma melanocephalum (Hymenoptera: Formicidae) and the invasive mealybug Phenacoccus solenopsis (Hemiptera: Pseudococcidae). PLoS ONE, 10.",
+            "DOI": "10.1371/journal.pone.0123885"
+        },
+        {
+            "key": "ref_15",
+            "doi-asserted-by": "crossref",
+            "first-page": "1474",
+            "DOI": "10.1653/024.097.0423",
+            "article-title": "Interactions between ghost ants and invasive mealybugs: The case of Tapinoma melanocephalum (Hymenoptera: Formicidae) and Phenacoccus solenopsis (Hemiptera: Pseudococcidae)",
+            "volume": "97",
+            "author": "Zhou",
+            "year": "2014",
+            "journal-title": "Fla. Entomol."
+        },
+        {
+            "key": "ref_16",
+            "doi-asserted-by": "crossref",
+            "first-page": "15691",
+            "DOI": "10.1038/srep15691",
+            "article-title": "The native ant, Tapinoma melanocephalum, improves the survival of an invasive mealybug, Phenacoccus solenopsis, by defending it from parasitoids",
+            "volume": "5",
+            "author": "Feng",
+            "year": "2015",
+            "journal-title": "Sci. Rep."
+        },
+        {
+            "key": "ref_17",
+            "doi-asserted-by": "crossref",
+            "first-page": "5427",
+            "DOI": "10.1002/ece3.4065",
+            "article-title": "Genetic diversity and colony structure of Tapinoma melanocephalum on the islands and mainland of South China",
+            "volume": "8",
+            "author": "Zheng",
+            "year": "2018",
+            "journal-title": "Ecol. Evol."
+        },
+        {
+            "key": "ref_18",
+            "doi-asserted-by": "crossref",
+            "first-page": "855",
+            "DOI": "10.1016/S1872-2032(07)60022-5",
+            "article-title": "Foraging behavior and recruitment of red imported fire ant Solenopsis invicta Buren in typical habitats of South China",
+            "volume": "27",
+            "author": "Xu",
+            "year": "2007",
+            "journal-title": "Acta Ecol. Sin."
+        },
+        {
+            "key": "ref_19",
+            "doi-asserted-by": "crossref",
+            "first-page": "20639",
+            "DOI": "10.1073/pnas.1115263108",
+            "article-title": "Intercontinental differences in resource use reveal the importance of mutualisms in fire ant invasions",
+            "volume": "108",
+            "author": "Wilder",
+            "year": "2011",
+            "journal-title": "Proc. Natl. Acad. Sci. USA"
+        },
+        {
+            "key": "ref_20",
+            "doi-asserted-by": "crossref",
+            "first-page": "133",
+            "DOI": "10.1007/s00265-020-02916-y",
+            "article-title": "Effective use of the McNemar test",
+            "volume": "74",
+            "author": "Ruxton",
+            "year": "2020",
+            "journal-title": "Behav. Ecol. Sociobiol."
+        },
+        {
+            "key": "ref_21",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Brassard, F., Leong, C.M., Chan, H.H., and Gu\u00e9nard, B. (2021). High diversity in urban areas: How comprehensive sampling reveals high ant species richness within one of the most urbanized regions of the world. Diversity, 13.",
+            "DOI": "10.3390/d13080358"
+        },
+        {
+            "key": "ref_22",
+            "doi-asserted-by": "crossref",
+            "first-page": "112",
+            "DOI": "10.1007/s11252-019-00893-3",
+            "article-title": "Ecological and socio-economic impacts of the red import fire ant, Solenopsis invicta (Hymenoptera: Formicidae), on urban agricultural ecosystems",
+            "volume": "23",
+            "author": "Chan",
+            "year": "2020",
+            "journal-title": "Urban Ecosyst."
+        },
+        {
+            "key": "ref_23",
+            "unstructured": "Beck, B.B. (1980). Animal Tool Behavior, Garland STPM Press."
+        },
+        {
+            "key": "ref_24",
+            "doi-asserted-by": "crossref",
+            "first-page": "499",
+            "DOI": "10.1111/1744-7917.12435",
+            "article-title": "How do groups of red imported fire ants (Hymenoptera: Formicidae) feed on a droplet of sugar water?",
+            "volume": "25",
+            "author": "Wang",
+            "year": "2018",
+            "journal-title": "Insect Sci."
+        },
+        {
+            "key": "ref_25",
+            "doi-asserted-by": "crossref",
+            "first-page": "2524",
+            "DOI": "10.1111/1365-2435.13671",
+            "article-title": "Ants adjust their tool use strategy in response to foraging risk",
+            "volume": "34",
+            "author": "Zhou",
+            "year": "2020",
+            "journal-title": "Funct. Ecol."
+        },
+        {
+            "key": "ref_26",
+            "doi-asserted-by": "crossref",
+            "first-page": "113592",
+            "DOI": "10.1016/j.ecoenv.2022.113592",
+            "article-title": "Surfactant affects the tool use behavior of foraging ants",
+            "volume": "238",
+            "author": "Zhou",
+            "year": "2022",
+            "journal-title": "Ecoto. Environ. Safe"
+        },
+        {
+            "key": "ref_27",
+            "doi-asserted-by": "crossref",
             "first-page": "207",
-            "volume-title": "The inferior olivary nucleus",
-            "author": "Voogd J.",
-            "year": "1980"
+            "DOI": "10.1016/j.anbehav.2016.11.005",
+            "article-title": "Tool selection during foraging in two species of funnel ants",
+            "volume": "123",
+            "author": "Bovet",
+            "year": "2017",
+            "journal-title": "Anim. Behav."
         },
         {
-            "key": "e_1_2_7_77_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S1364-6613(98)01210-8"
+            "key": "ref_28",
+            "first-page": "1444",
+            "article-title": "Which tools to use? Choice optimization in the tool-using ant, Aphaenogaster subterranea",
+            "volume": "29",
+            "year": "2018",
+            "journal-title": "Behav. Ecol."
         },
         {
-            "key": "e_1_2_7_78_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1523/JNEUROSCI.23-11-04645.2003"
+            "key": "ref_29",
+            "first-page": "512",
+            "article-title": "Comparison of foraging tool use in two species of myrmicine ants (Hymenoptera: Formicidae)",
+            "volume": "69",
+            "year": "2022",
+            "journal-title": "Insect Soc."
         },
         {
-            "key": "e_1_2_7_79_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1023/B:NEUR.0000029645.72074.2b"
+            "key": "ref_30",
+            "doi-asserted-by": "crossref",
+            "first-page": "439",
+            "DOI": "10.1007/s11284-009-0673-7",
+            "article-title": "Influence of seed size on feeding preferences and diet composition of three sympatric harvester ants in the central Monte Desert, Argentina",
+            "volume": "25",
+            "author": "Pirk",
+            "year": "2010",
+            "journal-title": "Ecol. Res."
         },
         {
-            "key": "e_1_2_7_80_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/cne.11022"
+            "key": "ref_31",
+            "doi-asserted-by": "crossref",
+            "first-page": "685",
+            "DOI": "10.1017/S0266467406003622",
+            "article-title": "Worker size and seed size selection in \u2018seed\u2019-collecting ant ensembles (Hymenoptera: Formicidae) in primary rain forests on Borneo",
+            "volume": "22",
+            "author": "Pfeiffer",
+            "year": "2006",
+            "journal-title": "J. Trop. Ecol."
         },
         {
-            "key": "e_1_2_7_81_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1038/nn1539"
+            "key": "ref_32",
+            "doi-asserted-by": "crossref",
+            "first-page": "421",
+            "DOI": "10.1007/s00040-010-0100-7",
+            "article-title": "Foraging behaviour of harvesting ants determines seed removal and dispersal",
+            "volume": "57",
+            "author": "Arnan",
+            "year": "2010",
+            "journal-title": "Insect Soc."
         },
         {
-            "key": "e_1_2_7_82_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1152/jn.00717.2010"
+            "key": "ref_33",
+            "doi-asserted-by": "crossref",
+            "first-page": "370",
+            "DOI": "10.18474/JES19-16",
+            "article-title": "Particle size preference of six ant species (Hymenoptera: Formicidae)",
+            "volume": "54",
+            "author": "Ipser",
+            "year": "2019",
+            "journal-title": "J. Entomol. Sci."
         },
         {
-            "key": "e_1_2_7_83_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s002210100845"
+            "key": "ref_34",
+            "doi-asserted-by": "crossref",
+            "first-page": "397",
+            "DOI": "10.1007/BF00328743",
+            "article-title": "Worker size and seed size selection by harvester ants in a neotropical forest",
+            "volume": "105",
+            "author": "Kaspari",
+            "year": "1996",
+            "journal-title": "Oecologia"
         },
         {
-            "key": "e_1_2_7_84_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/cne.10507"
+            "key": "ref_35",
+            "doi-asserted-by": "crossref",
+            "first-page": "1222",
+            "DOI": "10.1603/0022-0493-95.6.1222",
+            "article-title": "Preference of food particle size among several urban ant species",
+            "volume": "95",
+            "author": "Appel",
+            "year": "2002",
+            "journal-title": "J. Econ. Entomol."
         },
         {
-            "key": "e_1_2_7_85_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1017/S0952523806231109"
-        },
-        {
-            "key": "e_1_2_7_86_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF00235916"
-        },
-        {
-            "key": "e_1_2_7_87_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/(SICI)1096-9861(19990816)411:1<97::AID-CNE8>3.0.CO;2-O"
-        },
-        {
-            "key": "e_1_2_7_88_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/1096\u20109861(20010115)429:3\u2009<\u2009502::AID\u2010CNE10\u2009>\u20093.0.CO;2\u2010E"
-        },
-        {
-            "key": "e_1_2_7_89_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3389/fnbeh.2013.00004"
-        },
-        {
-            "key": "e_1_2_7_90_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1038/32648"
-        },
-        {
-            "key": "e_1_2_7_91_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/cne.10857"
-        },
-        {
-            "key": "e_1_2_7_92_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1152/jn.1993.70.6.2647"
-        },
-        {
-            "key": "e_1_2_7_93_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1152/jn.1999.81.1.256"
-        },
-        {
-            "key": "e_1_2_7_94_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.neuroscience.2011.04.014"
-        },
-        {
-            "key": "e_1_2_7_95_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1159/000452857"
-        },
-        {
-            "key": "e_1_2_7_96_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jchemneu.2013.07.005"
-        },
-        {
-            "key": "e_1_2_7_97_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1152/jn.1993.70.6.2632"
-        },
-        {
-            "key": "e_1_2_7_98_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/(SICI)1096-9861(19970811)384:4<517::AID-CNE3>3.0.CO;2-5"
-        },
-        {
-            "key": "e_1_2_7_99_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/cne.22810"
-        },
-        {
-            "key": "e_1_2_7_100_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0304-3940(99)00390-0"
-        },
-        {
-            "key": "e_1_2_7_101_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.7554/eLife.02536"
+            "key": "ref_36",
+            "first-page": "473",
+            "article-title": "Particle size and bait preference of the red imported fire ant, Solenopsis invicta (Hymenoptera: Formicidae)",
+            "volume": "58",
+            "author": "Neff",
+            "year": "2011",
+            "journal-title": "Sociobiology"
         }
     ],
     "container-title": [
-        "Journal of Comparative Neurology"
+        "Insects"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fcne.24270",
-            "content-type": "application/pdf",
-            "content-version": "vor",
-            "intended-application": "text-mining"
-        },
-        {
-            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/cne.24270",
+            "URL": "https://www.mdpi.com/2075-4450/14/3/219/pdf",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -684,67 +558,59 @@
         "date-parts": [
             [
                 2023,
-                10,
-                7
+                2,
+                23
             ]
         ],
-        "date-time": "2023-10-07T00:59:59Z",
-        "timestamp": 1696640399000
+        "date-time": "2023-02-23T09:36:42Z",
+        "timestamp": 1677145002000
     },
-    "score": 11.68222,
+    "score": 13.338471,
     "resource": {
         "primary": {
-            "URL": "https://onlinelibrary.wiley.com/doi/10.1002/cne.24270"
+            "URL": "https://www.mdpi.com/2075-4450/14/3/219"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2017,
-                7,
-                9
+                2023,
+                2,
+                23
             ]
         ]
     },
-    "references-count": 100,
+    "references-count": 36,
     "journal-issue": {
-        "issue": "14",
-        "published-print": {
+        "issue": "3",
+        "published-online": {
             "date-parts": [
                 [
-                    2017,
-                    10
+                    2023,
+                    3
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1002/cne.24270"
+        "insects14030219"
     ],
-    "URL": "http://dx.doi.org/10.1002/cne.24270",
-    "archive": [
-        "Portico"
-    ],
+    "URL": "http://dx.doi.org/10.3390/insects14030219",
     "ISSN": [
-        "0021-9967",
-        "1096-9861"
+        "2075-4450"
     ],
     "issn-type": [
         {
-            "value": "0021-9967",
-            "type": "print"
-        },
-        {
-            "value": "1096-9861",
+            "value": "2075-4450",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2017,
-                7,
-                9
+                2023,
+                2,
+                23
             ]
         ]
     }

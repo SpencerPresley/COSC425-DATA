@@ -2,29 +2,29 @@
     "indexed": {
         "date-parts": [
             [
-                2023,
-                12,
-                2
+                2024,
+                9,
+                15
             ]
         ],
-        "date-time": "2023-12-02T01:56:59Z",
-        "timestamp": 1701482219468
+        "date-time": "2024-09-15T05:51:38Z",
+        "timestamp": 1726379498927
     },
-    "reference-count": 77,
+    "reference-count": 43,
     "publisher": "Wiley",
-    "issue": "1",
+    "issue": "6",
     "license": [
         {
             "start": {
                 "date-parts": [
                     [
                         2020,
-                        1,
-                        28
+                        12,
+                        29
                     ]
                 ],
-                "date-time": "2020-01-28T00:00:00Z",
-                "timestamp": 1580169600000
+                "date-time": "2020-12-29T00:00:00Z",
+                "timestamp": 1609200000000
             },
             "content-version": "vor",
             "delay-in-days": 0,
@@ -33,64 +33,124 @@
     ],
     "content-domain": {
         "domain": [
-            "wildlife.onlinelibrary.wiley.com"
+            "onlinelibrary.wiley.com"
         ],
         "crossmark-restriction": true
     },
     "short-container-title": [
-        "Wildl. Soc. Bull."
+        "Insect Science"
     ],
     "published-print": {
         "date-parts": [
             [
-                2020,
-                3
+                2021,
+                12
             ]
         ]
     },
-    "abstract": "<jats:title>ABSTRACT</jats:title><jats:p>Knowledge of population dynamics is critical for species of conservation concern so wildlife researchers need to take advantage of biases in animals' behaviors that could help them monitor populations. This is particularly important for amphibians because many populations are declining and difficult to observe. Attraction of vertebrates to light is a well\u2010known navigational cue and some fisheries strategies utilize light sources to increase catch success. To optimize population monitoring of state\u2010endangered eastern tiger salamanders (<jats:italic>Ambystoma tigrinum</jats:italic>), we tested the utility of colored glow sticks (green, orange, pink, or yellow) as bait in traps in Maryland and Delaware, USA, during 2015\u20132016. We then measured intensities of the colored glow sticks and estimated photoreceptive quantum catches of each color according to the spectral sensitivities of eastern tiger salamanders. We found that eastern tiger salamanders' photoreceptors had greater quantum catches of photons from green and yellow glow sticks. However, traps baited with orange glow sticks were more than twice as likely to capture eastern tiger salamanders than were traps baited with green or yellow. There were no differences in the number of salamanders caught per successful trap among glow stick colors, perhaps due to attraction of salamanders to motion from previously captured salamanders. Our results indicate that biases other than perceived intensity of light sources may drive behavioral preferences. \u00a9 2020 The Wildlife Society.</jats:p>",
-    "DOI": "10.1002/wsb.1058",
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>Eusocial insects have evolved diverse particle\u2010use behaviors. A previous study reported that red imported fire ants, <jats:italic>Solenopsis invicta</jats:italic> Buren, deposited soil particles on substances treated with essential balm, a fire ant repellent. We hypothesized that <jats:italic>S. invicta</jats:italic> modifies inaccessible surfaces by covering them with soil particles to facilitate food search and transportation. Here, laboratory experiments were conducted to study the particle\u2010covering behavior of <jats:italic>S. invicta</jats:italic> in response to viscose surfaces or surfaces treated with essential balm or liquid paraffin in the presence of real food (sausage) or non\u2010food objects (acrylic plates). <jats:italic>S. invicta</jats:italic> workers deposited significantly more soil particles on these three types of treated surfaces than on untreated surfaces. In addition, significantly more particles were relocated on viscose and paraffin\u2010smeared surfaces in the presence of food than in the presence of non\u2010food objects. The particle\u2010covering behavior on viscose surfaces was also observed in the field. Interestingly, when no soil particles were available, ants searched and transported food on viscose surfaces only if the surfaces were artificially covered with sufficient quantities of soil particles but could not do so on viscose surfaces without soil particles or with insufficient quantities of soil particles. In addition, ants actively relocated particles to cover viscose surfaces if the transportation distance was within 200 mm, whereas significantly fewer particles were relocated at longer transportation distances (400 mm). Our study provides a novel example of particle use by fire ants during foraging.</jats:p>",
+    "DOI": "10.1111/1744-7917.12891",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
                 2020,
-                1,
+                11,
                 28
             ]
         ],
-        "date-time": "2020-01-28T12:40:25Z",
-        "timestamp": 1580215225000
+        "date-time": "2020-11-28T05:15:12Z",
+        "timestamp": 1606540512000
     },
-    "page": "68-76",
+    "page": "1816-1828",
     "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 2,
+    "is-referenced-by-count": 17,
     "title": [
-        "The Right Light: Tiger Salamander Capture Rates and Spectral Sensitivity"
+        "Red imported fire ants (Hymenoptera: Formicidae) cover inaccessible surfaces with particles to facilitate food search and transportation"
     ],
-    "prefix": "10.1002",
-    "volume": "44",
+    "prefix": "10.1111",
+    "volume": "28",
     "author": [
         {
-            "ORCID": "http://orcid.org/0000-0001-6828-3172",
+            "ORCID": "http://orcid.org/0000-0001-6273-5158",
             "authenticated-orcid": false,
-            "given": "Eric B.",
-            "family": "Liebgold",
+            "given": "Chao",
+            "family": "Wen",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Department of Biological Sciences Salisbury University  Salisbury MD 21801 USA"
+                    "name": "Guangdong Key Laboratory for Innovation Development and Utilization of Forest Plant Germplasm, College of Forestry and Landscape Architecture South China Agricultural University  Guangzhou 510642 China"
                 }
             ]
         },
         {
-            "given": "Karen L.",
-            "family": "Carleton",
+            "given": "Jian",
+            "family": "Chen",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Department of Biology University of Maryland  College Park MD 20742 USA"
+                    "name": "Biological Control of Pests Research Unit Agricultural Research Service, U.S. Department of Agriculture  Stoneville MS 38776 USA"
+                }
+            ]
+        },
+        {
+            "given": "Wen\u2010Quan",
+            "family": "Qin",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Guangdong Key Laboratory for Innovation Development and Utilization of Forest Plant Germplasm, College of Forestry and Landscape Architecture South China Agricultural University  Guangzhou 510642 China"
+                }
+            ]
+        },
+        {
+            "given": "Xuan",
+            "family": "Chen",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Biology Salisbury University  Salisbury MD 21801 USA"
+                }
+            ]
+        },
+        {
+            "given": "Jia\u2010Cheng",
+            "family": "Cai",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Mathematics and Computer Science Salisbury University  Salisbury MD 21801 USA"
+                }
+            ]
+        },
+        {
+            "given": "Jun\u2010Bao",
+            "family": "Wen",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Beijing Key Laboratory for Forest Pest Control, College of Forestry Beijing Forestry University  Beijing 100083 China"
+                }
+            ]
+        },
+        {
+            "given": "Xiu\u2010Jun",
+            "family": "Wen",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Guangdong Key Laboratory for Innovation Development and Utilization of Forest Plant Germplasm, College of Forestry and Landscape Architecture South China Agricultural University  Guangzhou 510642 China"
+                }
+            ]
+        },
+        {
+            "given": "Cai",
+            "family": "Wang",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Guangdong Key Laboratory for Innovation Development and Utilization of Forest Plant Germplasm, College of Forestry and Landscape Architecture South China Agricultural University  Guangzhou 510642 China"
                 }
             ]
         }
@@ -100,456 +160,267 @@
         "date-parts": [
             [
                 2020,
-                1,
-                28
+                12,
+                29
             ]
         ]
     },
     "reference": [
         {
-            "key": "e_1_2_8_2_1",
+            "key": "e_1_2_7_2_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0042-6989(97)00159-4"
+            "DOI": "10.1126/science.1198734"
         },
         {
-            "key": "e_1_2_8_3_1",
+            "key": "e_1_2_7_3_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1113/jphysiol.1984.sp015318"
+            "DOI": "10.1007/s13355-011-0028-z"
         },
         {
-            "key": "e_1_2_8_4_1",
+            "key": "e_1_2_7_4_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1656/058.011.0105"
+            "DOI": "10.1016/S0003-3472(89)80052-1"
         },
         {
-            "key": "e_1_2_8_5_1",
+            "key": "e_1_2_7_5_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.neuron.2011.08.031"
+            "DOI": "10.1021/jf8028072"
         },
         {
-            "key": "e_1_2_8_6_1",
+            "key": "e_1_2_7_6_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.cub.2006.06.016"
+            "DOI": "10.1007/s10905-011-9290-8"
         },
         {
-            "key": "e_1_2_8_7_1",
+            "key": "e_1_2_7_7_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S1462-9011(00)00048-4"
+            "DOI": "10.1007/BF00378823"
         },
         {
-            "key": "e_1_2_8_8_1",
+            "key": "e_1_2_7_8_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1371/journal.pone.0150169"
+            "DOI": "10.1080/08927014.2004.9522631"
         },
         {
-            "key": "e_1_2_8_9_1",
+            "key": "e_1_2_7_9_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1037/h0023254"
+            "DOI": "10.1007/s10336-016-1363-1"
         },
         {
-            "key": "e_1_2_8_10_1",
+            "key": "e_1_2_7_10_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1751-1097.2008.00310.x"
+            "DOI": "10.1111/j.1442-9993.2000.tb00071.x"
         },
         {
-            "key": "e_1_2_8_11_1",
+            "key": "e_1_2_7_11_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1890/06-0896"
+            "DOI": "10.1002/arch.21610"
         },
         {
-            "key": "e_1_2_8_12_1",
+            "key": "e_1_2_7_12_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1017/S002531540004162X"
+            "DOI": "10.1007/s001140100235"
         },
         {
-            "key": "e_1_2_8_13_1",
+            "key": "e_1_2_7_13_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1098/rspb.2014.3108"
+            "DOI": "10.1016/j.geoderma.2019.04.035"
         },
         {
-            "key": "e_1_2_8_14_1",
+            "key": "e_1_2_7_14_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/0042-6989(84)90323-7"
+            "DOI": "10.1111/ejss.12748"
         },
         {
-            "key": "e_1_2_8_15_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jembe.2018.05.002"
+            "key": "e_1_2_7_15_1",
+            "first-page": "1444",
+            "article-title": "Which tools to use? Choice optimization in the tool\u2010using ant, Aphaenogaster subterranea",
+            "volume": "29",
+            "author": "L\u0151rinczi G.",
+            "year": "2018",
+            "journal-title": "Behavioral Ecology"
         },
         {
-            "key": "e_1_2_8_16_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1242/jeb.037671"
-        },
-        {
-            "key": "e_1_2_8_17_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1365-294X.2012.05617.x"
-        },
-        {
-            "key": "e_1_2_8_18_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1098/rspb.2012.0633"
-        },
-        {
-            "key": "e_1_2_8_19_1",
-            "first-page": "61",
-            "volume-title": "Limnology of humic waters",
-            "author": "Eloranta P.",
-            "year": "1999"
-        },
-        {
-            "key": "e_1_2_8_20_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1242/jeb.160473"
-        },
-        {
-            "key": "e_1_2_8_21_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10641-018-0727-1"
-        },
-        {
-            "key": "e_1_2_8_22_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1098/rspb.2017.2322"
-        },
-        {
-            "key": "e_1_2_8_23_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s00359-005-0090-5"
-        },
-        {
-            "key": "e_1_2_8_24_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s00359-005-0024-2"
-        },
-        {
-            "key": "e_1_2_8_25_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1017/S0952523800174036"
-        },
-        {
-            "key": "e_1_2_8_26_1",
-            "first-page": "168",
-            "article-title": "Glow sticks as effective bait for capturing aquatic amphibians in funnel traps",
-            "volume": "38",
-            "author": "Grayson K. L.",
-            "year": "2007",
-            "journal-title": "Herpetological Review"
-        },
-        {
-            "key": "e_1_2_8_27_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/conphys/coy032"
-        },
-        {
-            "key": "e_1_2_8_28_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/1542540"
-        },
-        {
-            "key": "e_1_2_8_29_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/cne.23531"
-        },
-        {
-            "key": "e_1_2_8_30_1",
-            "volume-title": "Optical oceanography",
-            "author": "Jerlov N. G.",
-            "year": "1968"
-        },
-        {
-            "key": "e_1_2_8_31_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.cbpa.2008.04.600"
-        },
-        {
-            "key": "e_1_2_8_32_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1017/S1464793102005985"
-        },
-        {
-            "key": "e_1_2_8_33_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1098/rstb.2016.0065"
-        },
-        {
-            "key": "e_1_2_8_34_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/0304-3940(94)11242-B"
-        },
-        {
-            "key": "e_1_2_8_35_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.11606/issn.2316-9079.v16i1p3-11"
-        },
-        {
-            "key": "e_1_2_8_36_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s00359-013-0878-7"
-        },
-        {
-            "key": "e_1_2_8_37_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/1444271"
-        },
-        {
-            "key": "e_1_2_8_38_1",
-            "volume-title": "The ecology of vision",
-            "author": "Lythgoe J. N.",
-            "year": "1979"
-        },
-        {
-            "key": "e_1_2_8_39_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0896-6273(01)00482-2"
-        },
-        {
-            "key": "e_1_2_8_40_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0006-3495(99)76953-5"
-        },
-        {
-            "key": "e_1_2_8_41_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.fishres.2004.12.009"
-        },
-        {
-            "key": "e_1_2_8_42_1",
-            "first-page": "483",
-            "article-title": "Photoreceptors of the larval tiger salamander retina",
-            "volume": "127",
-            "author": "Mariani A. P.",
-            "year": "1986",
-            "journal-title": "Proceedings of the Royal Society of London B"
-        },
-        {
-            "key": "e_1_2_8_43_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3354/meps08822"
-        },
-        {
-            "key": "e_1_2_8_44_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1152/jn.1962.25.6.712"
-        },
-        {
-            "key": "e_1_2_8_45_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1577/1548-8675(1992)012<0684:ROJCAC>2.3.CO;2"
-        },
-        {
-            "key": "e_1_2_8_46_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/geb.12571"
-        },
-        {
-            "key": "e_1_2_8_47_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1098/rspb.2005.3156"
-        },
-        {
-            "key": "e_1_2_8_48_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.4319/lo.2002.47.2.0333"
-        },
-        {
-            "key": "e_1_2_8_49_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1017/S0952523898152136"
-        },
-        {
-            "key": "e_1_2_8_50_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1126/science.253.5022.892"
-        },
-        {
-            "key": "e_1_2_8_51_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1113/jphysiol.1991.sp018444"
-        },
-        {
-            "key": "e_1_2_8_52_1",
-            "volume-title": "Salamanders of the United States and Canada",
-            "author": "Petranka J. W.",
-            "year": "1998"
-        },
-        {
-            "key": "e_1_2_8_53_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1098/rstb.2006.1963"
-        },
-        {
-            "key": "e_1_2_8_54_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1098/rsbl.2009.1010"
-        },
-        {
-            "key": "e_1_2_8_55_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.5751/ES-02720-130247"
-        },
-        {
-            "key": "e_1_2_8_56_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3758/s13420-018-0314-5"
-        },
-        {
-            "key": "e_1_2_8_57_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1098/rspb.2001.1891"
-        },
-        {
-            "key": "e_1_2_8_58_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0042-6989(96)00149-6"
-        },
-        {
-            "key": "e_1_2_8_59_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/3802732"
-        },
-        {
-            "key": "e_1_2_8_60_1",
-            "first-page": "605",
-            "volume-title": "Amphibian declines: the conservation status of United States species",
-            "author": "Shaffer H. B.",
-            "year": "2005"
-        },
-        {
-            "key": "e_1_2_8_61_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1017/S0952523898156201"
-        },
-        {
-            "key": "e_1_2_8_62_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1146/annurev-neuro-071013-013931"
-        },
-        {
-            "key": "e_1_2_8_63_1",
-            "first-page": "190",
-            "article-title": "Effectiveness of aquatic funnel traps for sampling amphibian larvae",
-            "volume": "27",
-            "author": "Smith G. R.",
-            "year": "1996",
-            "journal-title": "Herpetological Review"
-        },
-        {
-            "key": "e_1_2_8_64_1",
-            "first-page": "20",
-            "article-title": "Tiger salamanders: a living litmus test",
-            "volume": "2009",
-            "author": "Smith S. A.",
-            "year": "2009",
-            "journal-title": "Development of Natural Resources\u2014Maryland"
-        },
-        {
-            "key": "e_1_2_8_65_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1364/AO.54.005392"
-        },
-        {
-            "key": "e_1_2_8_66_1",
-            "first-page": "65",
-            "article-title": "The life history and status of the eastern tiger salamander, Ambystoma tigrinum (Green) in Maryland",
-            "volume": "20",
-            "author": "Stine C. J.",
-            "year": "1984",
-            "journal-title": "Bulletin of the Maryland Herpetological Society"
-        },
-        {
-            "key": "e_1_2_8_67_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1126/science.1103538"
-        },
-        {
-            "key": "e_1_2_8_68_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1098/rsos.160142"
-        },
-        {
-            "key": "e_1_2_8_69_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10592-014-0629-5"
-        },
-        {
-            "key": "e_1_2_8_70_1",
+            "key": "e_1_2_7_16_1",
             "doi-asserted-by": "crossref",
-            "first-page": "e0190918",
-            "DOI": "10.1371/journal.pone.0190918",
-            "article-title": "Behavioural responses of krill and cod to artificial light in laboratory experiments",
-            "volume": "13",
-            "author": "Utne\u2010Palm A. C.",
-            "year": "2017",
-            "journal-title": "PLoS ONE"
+            "first-page": "1197",
+            "DOI": "10.13102/sociobiology.v59i4.499",
+            "article-title": "Correlation of the nest density and the number of workers in bait traps for fire ants (Solenopsis invicta) in southern China",
+            "volume": "59",
+            "author": "Lu Y.",
+            "year": "2014",
+            "journal-title": "Sociobiology"
         },
         {
-            "key": "e_1_2_8_71_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s00239-010-9426-z"
+            "key": "e_1_2_7_17_1",
+            "first-page": "790",
+            "article-title": "Quantitative relations between red imported fire ant workers captured by bait trap and pitfall trap",
+            "volume": "37",
+            "author": "Lu Y.",
+            "year": "2015",
+            "journal-title": "Journal of Environmental Entomology"
         },
         {
-            "key": "e_1_2_8_72_1",
+            "key": "e_1_2_7_18_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.aquaculture.2018.10.055"
+            "DOI": "10.1016/j.anbehav.2016.11.005"
         },
         {
-            "key": "e_1_2_8_73_1",
+            "key": "e_1_2_7_19_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1006/anbe.1996.0357"
+            "DOI": "10.13102/sociobiology.v62i4.736"
         },
         {
-            "key": "e_1_2_8_74_1",
+            "key": "e_1_2_7_20_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.anbehav.2004.05.011"
+            "DOI": "10.1007/s00040-013-0333-3"
         },
         {
-            "key": "e_1_2_8_75_1",
+            "key": "e_1_2_7_21_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF01237728"
+            "DOI": "10.1653/024.102.0224"
         },
         {
-            "key": "e_1_2_8_76_1",
+            "key": "e_1_2_7_22_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1038/s41467-017-00310-3"
+            "DOI": "10.1002/ece3.6968"
         },
         {
-            "key": "e_1_2_8_77_1",
+            "key": "e_1_2_7_23_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1146/annurev.genom.9.081307.164228"
+            "DOI": "10.2307/3493647"
         },
         {
-            "key": "e_1_2_8_78_1",
+            "key": "e_1_2_7_24_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1098/rstb.2016.0066"
+            "DOI": "10.1007/s13355-019-00622-4"
+        },
+        {
+            "key": "e_1_2_7_25_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1371/journal.pone.0057040"
+        },
+        {
+            "key": "e_1_2_7_26_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.7717/peerj.6349"
+        },
+        {
+            "key": "e_1_2_7_27_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1038/s41598-019-39756-4"
+        },
+        {
+            "key": "e_1_2_7_28_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.anbehav.2007.09.013"
+        },
+        {
+            "key": "e_1_2_7_29_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1365-2311.1983.tb00498.x"
+        },
+        {
+            "key": "e_1_2_7_30_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1603/0013-8746(2006)99[673:CPOTFA]2.0.CO;2"
+        },
+        {
+            "key": "e_1_2_7_31_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1654-1103.2010.01170.x"
+        },
+        {
+            "key": "e_1_2_7_32_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.7150/ijbs.5781"
+        },
+        {
+            "key": "e_1_2_7_33_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1371/journal.pone.0158920"
+        },
+        {
+            "key": "e_1_2_7_34_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s00216-016-9553-5"
+        },
+        {
+            "key": "e_1_2_7_35_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3390/insects11010037"
+        },
+        {
+            "key": "e_1_2_7_36_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1093/jee/tov384"
+        },
+        {
+            "key": "e_1_2_7_37_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/1744-7917.12435"
+        },
+        {
+            "key": "e_1_2_7_38_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1603/EC13068"
+        },
+        {
+            "key": "e_1_2_7_39_1",
+            "first-page": "299",
+            "volume-title": "Red imported fire ant Solenopsis invicta Buren. Biological Invasions and Its Management in China",
+            "author": "Wang L.",
+            "year": "2017"
+        },
+        {
+            "key": "e_1_2_7_40_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3897/neobiota.54.38584"
+        },
+        {
+            "key": "e_1_2_7_41_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1093/jee/tow130"
+        },
+        {
+            "key": "e_1_2_7_42_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/S1872-2032(07)60022-5"
+        },
+        {
+            "key": "e_1_2_7_43_1",
+            "first-page": "144",
+            "article-title": "Identification of red imported fire ant, Solenopsis invicta, to invade mainland China and infestation in Wuchuan, Guangdong",
+            "volume": "42",
+            "author": "Zeng L.",
+            "year": "2005",
+            "journal-title": "Chinese Bulletin of Entomology"
+        },
+        {
+            "key": "e_1_2_7_44_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/1365-2435.13671"
         }
     ],
     "container-title": [
-        "Wildlife Society Bulletin"
+        "Insect Science"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fwsb.1058",
+            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/1744-7917.12891",
             "content-type": "application/pdf",
             "content-version": "vor",
             "intended-application": "text-mining"
         },
         {
-            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/wsb.1058",
-            "content-type": "application/pdf",
-            "content-version": "vor",
-            "intended-application": "text-mining"
-        },
-        {
-            "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/wsb.1058",
+            "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1111/1744-7917.12891",
             "content-type": "application/xml",
             "content-version": "vor",
             "intended-application": "text-mining"
         },
         {
-            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/wsb.1058",
+            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/1744-7917.12891",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -559,68 +430,73 @@
         "date-parts": [
             [
                 2023,
-                9,
-                6
+                8,
+                27
             ]
         ],
-        "date-time": "2023-09-06T23:00:15Z",
-        "timestamp": 1694041215000
+        "date-time": "2023-08-27T15:04:33Z",
+        "timestamp": 1693148673000
     },
-    "score": 14.740692,
+    "score": 12.071225,
     "resource": {
         "primary": {
-            "URL": "https://wildlife.onlinelibrary.wiley.com/doi/10.1002/wsb.1058"
+            "URL": "https://onlinelibrary.wiley.com/doi/10.1111/1744-7917.12891"
         }
     },
     "issued": {
         "date-parts": [
             [
                 2020,
-                1,
-                28
+                12,
+                29
             ]
         ]
     },
-    "references-count": 77,
+    "references-count": 43,
     "journal-issue": {
-        "issue": "1",
+        "issue": "6",
         "published-print": {
             "date-parts": [
                 [
-                    2020,
-                    3
+                    2021,
+                    12
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1002/wsb.1058"
+        "10.1111/1744-7917.12891"
     ],
-    "URL": "http://dx.doi.org/10.1002/wsb.1058",
+    "URL": "http://dx.doi.org/10.1111/1744-7917.12891",
     "archive": [
         "Portico"
     ],
     "ISSN": [
-        "1938-5463"
+        "1672-9609",
+        "1744-7917"
     ],
     "issn-type": [
         {
-            "value": "1938-5463",
+            "value": "1672-9609",
             "type": "print"
+        },
+        {
+            "value": "1744-7917",
+            "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
                 2020,
-                1,
-                28
+                12,
+                29
             ]
         ]
     },
     "assertion": [
         {
-            "value": "2019-04-01",
+            "value": "2020-07-20",
             "order": 0,
             "name": "received",
             "label": "Received",
@@ -630,7 +506,7 @@
             }
         },
         {
-            "value": "2019-07-28",
+            "value": "2020-11-16",
             "order": 1,
             "name": "accepted",
             "label": "Accepted",
@@ -640,7 +516,7 @@
             }
         },
         {
-            "value": "2020-01-28",
+            "value": "2020-12-29",
             "order": 2,
             "name": "published",
             "label": "Published",

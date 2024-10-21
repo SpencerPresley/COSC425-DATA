@@ -3,534 +3,931 @@
         "date-parts": [
             [
                 2024,
-                7,
-                17
+                9,
+                1
             ]
         ],
-        "date-time": "2024-07-17T04:34:44Z",
-        "timestamp": 1721190884433
+        "date-time": "2024-09-01T20:25:30Z",
+        "timestamp": 1725222330710
     },
-    "reference-count": 77,
-    "publisher": "Informa UK Limited",
-    "issue": "2",
+    "reference-count": 73,
+    "publisher": "American Accounting Association",
+    "issue": "1",
     "content-domain": {
-        "domain": [
-            "www.tandfonline.com"
-        ],
-        "crossmark-restriction": true
+        "domain": [],
+        "crossmark-restriction": false
     },
-    "short-container-title": [
-        "The Journal of Experimental Education"
-    ],
     "published-print": {
         "date-parts": [
             [
-                2019,
-                4,
-                3
+                2020,
+                3,
+                1
             ]
         ]
     },
-    "DOI": "10.1080/00220973.2017.1409184",
+    "abstract": "<jats:title>ABSTRACT</jats:title>\n               <jats:p>There is often conflict between disclosures and actions in corporate operations. One area of interest relates to the joint influence of tax avoidance and Corporate Social Responsibility on economic outcomes. We evaluate investor perceptions when these corporate behaviors are in conflict, and our results indicate that tax avoidance negatively influences investment decisions. We find that although CSR in isolation has no direct effect, the negative influence of tax avoidance is tempered when it is present. We provide evidence that not only do a firm's policies related to CSR and tax avoidance result in diverse investment intentions, but also that it is the individual's unique beliefs on ethics and CSR that appear to be driving these differences. Our results suggest that espousing stakeholder values serves as a shield to protect the company from the negative consequences associated with tax avoidance, and that individual attitudes can shape perceptions relative to these behaviors.</jats:p>",
+    "DOI": "10.2308/jiar-18-050",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2018,
+                2020,
                 1,
-                3
+                15
             ]
         ],
-        "date-time": "2018-01-03T17:18:05Z",
-        "timestamp": 1514999885000
+        "date-time": "2020-01-15T20:49:41Z",
+        "timestamp": 1579121381000
     },
-    "page": "269-287",
-    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
+    "page": "57-72",
     "source": "Crossref",
-    "is-referenced-by-count": 18,
+    "is-referenced-by-count": 15,
     "title": [
-        "Examining the Role of Self-Regulated Learning Microanalysis in the Assessment of Learners\u2019 Regulation"
+        "Investors' Responses to Social Conflict between CSR and Corporate Tax Avoidance"
     ],
-    "prefix": "10.1080",
-    "volume": "87",
+    "prefix": "10.2308",
+    "volume": "19",
     "author": [
         {
-            "ORCID": "http://orcid.org/0000-0001-7694-9683",
+            "ORCID": "http://orcid.org/0000-0002-8405-9223",
             "authenticated-orcid": false,
-            "given": "D. Jake",
-            "family": "Follmer",
+            "given": "David J.",
+            "family": "Emerson",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "School of Education, Salisbury University, Salisbury, Maryland"
+                    "name": "Salisbury University"
                 }
             ]
         },
         {
-            "given": "Rayne A.",
-            "family": "Sperling",
+            "given": "Ling",
+            "family": "Yang",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Department of Educational Psychology, Counseling, and Special Education, Pennsylvania State University, University Park, Pennsylvania"
+                    "name": "New Jersey City University"
+                }
+            ]
+        },
+        {
+            "given": "Ruilian",
+            "family": "Xu",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Bank of East Asia"
                 }
             ]
         }
     ],
-    "member": "301",
+    "member": "1112",
     "published-online": {
         "date-parts": [
             [
-                2018,
+                2020,
                 1,
-                3
+                1
             ]
         ]
     },
     "reference": [
         {
-            "key": "cit0001",
-            "volume-title": "A taxonomy for learning, teaching, and assessing: A revision of Bl taxonomy of educational objectives",
-            "author": "Anderson L. W.",
-            "year": "2001"
+            "issue": "1",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Almer1",
+            "doi-asserted-by": "crossref",
+            "first-page": "61",
+            "DOI": "10.1007/s10551-007-9442-0",
+            "article-title": "Impact of post-restatement actions taken by a firm on non-professional investors' credibility perceptions",
+            "volume": "80",
+            "author": "Almer",
+            "year": "2008",
+            "journal-title": "Journal of Business Ethics"
         },
         {
-            "key": "cit0002",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/medu.12303"
+            "issue": "4",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Alniacik1",
+            "doi-asserted-by": "crossref",
+            "first-page": "234",
+            "DOI": "10.1002/csr.245",
+            "article-title": "How corporate social responsibility information influences stakeholders' intentions",
+            "volume": "18",
+            "author": "Alniacik",
+            "year": "2011",
+            "journal-title": "Corporate Social Responsibility and Environmental Management"
         },
         {
-            "key": "cit0003",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1207/s15326985ep4004_2"
+            "issue": "7",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Arya1",
+            "doi-asserted-by": "crossref",
+            "first-page": "1089",
+            "DOI": "10.1111/j.1467-6486.2009.00836.x",
+            "article-title": "Institutional reforms and investor reactions to CSR announcements: Evidence from an emerging economy",
+            "volume": "46",
+            "author": "Arya",
+            "year": "2009",
+            "journal-title": "Journal of Management Studies"
         },
         {
-            "key": "cit0004",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.lindif.2009.03.008"
-        },
-        {
-            "key": "cit0006",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1146/annurev-psych-113011-143823"
-        },
-        {
-            "key": "cit0007",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.learninstruc.2009.03.002"
-        },
-        {
-            "key": "cit0008",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3389/fpsyg.2012.00229"
-        },
-        {
-            "key": "cit0009",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00220970109600653"
-        },
-        {
-            "key": "cit0011",
-            "first-page": "346",
-            "volume-title": "Handbook of self-regulation of learning and performance",
-            "author": "Butler D. L.",
-            "year": "2011"
-        },
-        {
-            "key": "cit0012",
-            "volume-title": "Self-regulated learning (SRL) microanalysis for mathematical problem solving: A comparison of a SRL event measure, questionnaires, and a teacher rating scale",
-            "author": "Callan G. L.",
-            "year": "2014"
-        },
-        {
-            "key": "cit0014",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jsp.2006.05.002"
-        },
-        {
-            "key": "cit0015",
-            "first-page": "329",
-            "volume-title": "Handbook of self-regulation of learning and performance",
-            "author": "Cleary T. J.",
-            "year": "2011"
-        },
-        {
-            "key": "cit0016",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0734282913507653"
-        },
-        {
-            "key": "cit0017",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0734282915594739"
-        },
-        {
-            "key": "cit0018",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1155/2012/428639"
-        },
-        {
-            "key": "cit0020",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3109/0142159X.2011.577464"
-        },
-        {
-            "key": "cit0022",
-            "volume-title": "Metacognition and its relation to reading comprehension: A synthesis of the research",
-            "author": "Collins V. L.",
-            "year": "2005"
-        },
-        {
-            "key": "cit0023",
-            "first-page": "2",
-            "volume": "5",
-            "author": "DiBenedetto M. K.",
+            "issue": "1",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Atwood1",
+            "doi-asserted-by": "crossref",
+            "first-page": "111",
+            "DOI": "10.1016/j.jacceco.2009.11.001",
+            "article-title": "Book-tax conformity, earnings persistence and the association between earnings and future cash flows",
+            "volume": "50",
+            "author": "Atwood",
             "year": "2010",
-            "journal-title": "International Journal of Educational and Psychological Assessment"
-        },
-        {
-            "key": "cit0024",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.lindif.2013.04.004"
-        },
-        {
-            "key": "cit0025",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10648-012-9198-7"
-        },
-        {
-            "key": "cit0026",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.learninstruc.2012.06.001"
-        },
-        {
-            "key": "cit0028",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/bjep.12123"
-        },
-        {
-            "key": "cit0029",
-            "first-page": "313",
-            "volume-title": "Handbook of self-regulation of learning and performance",
-            "author": "Greene J. A.",
-            "year": "2011"
-        },
-        {
-            "key": "cit0030",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s11409-008-9021-5"
-        },
-        {
-            "key": "cit0031",
-            "first-page": "65",
-            "volume": "30",
-            "author": "Hadwin A. F.",
-            "year": "2011",
-            "journal-title": "Handbook of self-regulation of learning and performance"
+            "journal-title": "Journal of Accounting and Economics"
         },
         {
             "issue": "2",
-            "key": "cit0032",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Axjonow1",
             "doi-asserted-by": "crossref",
-            "first-page": "240",
-            "DOI": "10.1177/016146811111300204",
-            "volume": "113",
-            "author": "Hadwin A.",
-            "year": "2011",
-            "journal-title": "Teachers College Record"
+            "first-page": "429",
+            "DOI": "10.1007/s10551-016-3225-4",
+            "article-title": "The impact of corporate social responsibility disclosure on corporate reputation: A non-professional stakeholder perspective",
+            "volume": "151",
+            "author": "Axjonow",
+            "year": "2016",
+            "journal-title": "Journal of Business Ethics"
         },
         {
-            "key": "cit0033",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0022-0663.93.3.477"
+            "issue": "1",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Bae1",
+            "doi-asserted-by": "crossref",
+            "first-page": "68",
+            "DOI": "10.1080/01292986.2012.725174",
+            "article-title": "The influence of cultural aspects on public perception of the importance of CSR activity and purchase intention in Korea",
+            "volume": "23",
+            "author": "Bae",
+            "year": "2013",
+            "journal-title": "Asian Journal of Communication"
         },
         {
-            "key": "cit0034",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s11409-009-9042-8"
+            "issue": "6",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Baron1",
+            "doi-asserted-by": "crossref",
+            "first-page": "1173",
+            "DOI": "10.1037/0022-3514.51.6.1173",
+            "article-title": "The moderator-mediator variable distinction in social psychological research: Conceptual, strategic, and statistical considerations",
+            "volume": "51",
+            "author": "Baron",
+            "year": "1986",
+            "journal-title": "Journal of Personality and Social Psychology"
         },
         {
-            "key": "cit0035",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/1932202X0902000403"
+            "issue": "1",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Bhattacharya1",
+            "doi-asserted-by": "crossref",
+            "first-page": "9",
+            "DOI": "10.2307/41166284",
+            "article-title": "Doing better at doing good: When, why and how consumers respond to corporate social initiatives",
+            "volume": "47",
+            "author": "Bhattacharya",
+            "year": "2004",
+            "journal-title": "California Management Review"
         },
         {
-            "key": "cit0095",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1024//1010-0652.17.34.159"
+            "issue": "1",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Brink1",
+            "doi-asserted-by": "crossref",
+            "first-page": "104",
+            "DOI": "10.2308/apin-52240",
+            "article-title": "The effects of corporate social responsibility and wrongdoer rank",
+            "volume": "18",
+            "author": "Brink",
+            "year": "2018",
+            "journal-title": "Accounting and the Public Interest"
+        },
+        {
+            "issue": "1",
+            "key": "2024082917595018000_i1558-8025-19-1-57-BrownLiburd1",
+            "doi-asserted-by": "crossref",
+            "first-page": "75",
+            "DOI": "10.2308/ajpt-50813",
+            "article-title": "The role of corporate social responsibility (CSR) assurance in investors' judgments when managerial pay is explicitly tied to CSR performance",
+            "volume": "34",
+            "author": "Brown-Liburd",
+            "year": "2015",
+            "journal-title": "Auditing: A Journal of Practice & Theory"
+        },
+        {
+            "issue": "1",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Chahal1",
+            "first-page": "205",
+            "article-title": "Implications of corporate social responsibility on marketing performance: A conceptual framework",
+            "volume": "6",
+            "author": "Chahal",
+            "year": "2006",
+            "journal-title": "Journal of Service Research"
         },
         {
             "issue": "2",
-            "key": "cit0036",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Chari1",
             "doi-asserted-by": "crossref",
-            "first-page": "350",
-            "DOI": "10.1177/016146811111300205",
-            "volume": "113",
-            "author": "J\u00e4rvel\u00e4 S.",
+            "first-page": "664",
+            "DOI": "10.1016/j.jbusres.2015.08.034",
+            "article-title": "What drives emerging economy firm acquisitions in tax havens?",
+            "volume": "69",
+            "author": "Chari",
+            "year": "2016",
+            "journal-title": "Journal of Business Research"
+        },
+        {
+            "issue": "1",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Cheng1",
+            "doi-asserted-by": "crossref",
+            "first-page": "90",
+            "DOI": "10.1111/jifm.12015",
+            "article-title": "The international integrated reporting framework: Key issues and future research opportunities",
+            "volume": "25",
+            "author": "Cheng",
+            "year": "2014",
+            "journal-title": "Journal of International Financial Management & Accounting"
+        },
+        {
+            "issue": "1",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Cheng2",
+            "doi-asserted-by": "crossref",
+            "first-page": "131",
+            "DOI": "10.2308/ajpt-50738",
+            "article-title": "The impact of strategic relevance and assurance of sustainability indicators on investors' decisions",
+            "volume": "34",
+            "author": "Cheng",
+            "year": "2015",
+            "journal-title": "Auditing: A Journal of Practice & Theory"
+        },
+        {
+            "issue": "4",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Col1",
+            "doi-asserted-by": "crossref",
+            "first-page": "1033",
+            "DOI": "10.1007/s10551-016-3393-2",
+            "article-title": "Going to haven? Corporate social responsibility and tax avoidance",
+            "volume": "154",
+            "author": "Col",
+            "year": "2016",
+            "journal-title": "Journal of Business Ethics"
+        },
+        {
+            "issue": "4",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Culiberg1",
+            "doi-asserted-by": "crossref",
+            "first-page": "787",
+            "DOI": "10.1007/s10551-016-3237-0",
+            "article-title": "The evolution of whistleblowing studies: A critical review and research agenda",
+            "volume": "146",
+            "author": "Culiberg",
+            "year": "2017",
+            "journal-title": "Journal of Business Ethics"
+        },
+        {
+            "article-title": "The effect of tax expense management and CSR ratings on investor perceptions of firm value and CSR performance",
+            "year": "2017",
+            "author": "Davis",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Davis1"
+        },
+        {
+            "issue": "1",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Davis2",
+            "doi-asserted-by": "crossref",
+            "first-page": "47",
+            "DOI": "10.2308/accr-51224",
+            "article-title": "Do socially responsible firms pay more taxes?",
+            "volume": "91",
+            "author": "Davis",
+            "year": "2016",
+            "journal-title": "The Accounting Review"
+        },
+        {
+            "issue": "2",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Deegan1",
+            "doi-asserted-by": "crossref",
+            "first-page": "50",
+            "DOI": "10.1108/09513579610116358",
+            "article-title": "Do Australian companies report environmental news objectively? An analysis of environmental disclosures by firms successfully prosecuted by the Environmental Protection Authority",
+            "volume": "9",
+            "author": "Deegan",
+            "year": "1996",
+            "journal-title": "Accounting, Auditing & Accountability"
+        },
+        {
+            "issue": "3",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Dhaliwal1",
+            "doi-asserted-by": "crossref",
+            "first-page": "723",
+            "DOI": "10.2308/accr-10218",
+            "article-title": "Nonfinancial disclosure and analyst forecast accuracy: International evidence on corporate social responsibility disclosure",
+            "volume": "87",
+            "author": "Dhaliwal",
+            "year": "2012",
+            "journal-title": "The Accounting Review"
+        },
+        {
+            "issue": "1",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Dowling1",
+            "doi-asserted-by": "crossref",
+            "first-page": "173",
+            "DOI": "10.1007/s10551-013-1862-4",
+            "article-title": "The curious case of corporate tax avoidance: Is it socially irresponsible?",
+            "volume": "124",
+            "author": "Dowling",
+            "year": "2014",
+            "journal-title": "Journal of Business Ethics"
+        },
+        {
+            "issue": "4",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Elliott1",
+            "first-page": "80",
+            "article-title": "Costs and benefits of business information disclosure",
+            "volume": "8",
+            "author": "Elliott",
+            "year": "1994",
+            "journal-title": "Accounting Horizons"
+        },
+        {
+            "issue": "1",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Fung1",
+            "doi-asserted-by": "crossref",
+            "first-page": "152",
+            "DOI": "10.1057/jibs.2010.35",
+            "article-title": "Reported trade figure discrepancy, regulatory arbitrage, and round-tripping: Evidence from the China-Hong Kong trade data",
+            "volume": "42",
+            "author": "Fung",
             "year": "2011",
-            "journal-title": "Teachers College Record"
+            "journal-title": "Journal of International Business Studies"
         },
         {
-            "key": "cit0037",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10413200252907761"
-        },
-        {
-            "key": "cit0038",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.sbspro.2015.01.879"
-        },
-        {
-            "key": "cit0039",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/001440299105800309"
-        },
-        {
-            "key": "cit0040",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF01463939"
-        },
-        {
-            "key": "cit0041",
-            "volume-title": "Learning as a generative activity",
-            "author": "Mayer R. E.",
-            "year": "2015"
-        },
-        {
-            "key": "cit0042",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1348/000709905X90876"
-        },
-        {
-            "key": "cit0044",
-            "first-page": "7",
-            "volume": "74",
-            "author": "Nietfeld J. L.",
+            "issue": "1",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Godar1",
+            "doi-asserted-by": "crossref",
+            "first-page": "1",
+            "DOI": "10.1007/s10551-005-1176-2",
+            "article-title": "Evaluating the ethics of inversion",
+            "volume": "61",
+            "author": "Godar",
             "year": "2005",
-            "journal-title": "Journal of Experimental Education"
+            "journal-title": "Journal of Business Ethics"
         },
         {
-            "key": "cit0046",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/01638530709336895"
+            "article-title": "Offshore tax evasion. GAO-13-318",
+            "year": "2013",
+            "author": "Government Accountability Office (GAO)",
+            "key": "2024082917595018000_i1558-8025-19-1-57-GovernmentAccountabilityOfficeGAO1"
         },
         {
-            "key": "cit0048",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10648-006-9014-3"
+            "article-title": "Tax havens: International tax avoidance and evasion",
+            "year": "2015",
+            "author": "Gravelle",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Gravelle1"
         },
         {
-            "key": "cit0049",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s11409-016-9160-z"
+            "issue": "1",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Hasseldine1",
+            "doi-asserted-by": "crossref",
+            "first-page": "1",
+            "DOI": "10.1016/j.accfor.2012.05.001",
+            "article-title": "Corporate social responsibility and tax avoidance: A comment and reflection",
+            "volume": "37",
+            "author": "Hasseldine",
+            "year": "2013",
+            "journal-title": "Accounting Forum"
         },
         {
-            "key": "cit0050",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0022-0663.82.1.33"
+            "issue": "3",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Hodge1",
+            "doi-asserted-by": "crossref",
+            "first-page": "178",
+            "DOI": "10.1111/j.1835-2561.2009.00056.x",
+            "article-title": "Assurance of sustainability reports: Impact on report users' confidence and perceptions of information credibility",
+            "volume": "19",
+            "author": "Hodge",
+            "year": "2009",
+            "journal-title": "Australian Accounting Review"
         },
         {
-            "key": "cit0051",
-            "volume-title": "A manual for the use of the Motivated Strategies for Learning Questionnaire (MSLQ)",
-            "author": "Pintrich P. R.",
-            "year": "1991"
+            "key": "2024082917595018000_i1558-8025-19-1-57-Hofstede1",
+            "unstructured": "Hofstede, G.\n          \n          1980. Culture's Consequences. Thousand Oaks, CA: Sage Publications."
         },
         {
-            "key": "cit0052",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0013164493053003024"
+            "issue": "6",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Hoi1",
+            "doi-asserted-by": "crossref",
+            "first-page": "2025",
+            "DOI": "10.2308/accr-50544",
+            "article-title": "Is corporate social responsibility (CSR) associated with tax avoidance? Evidence from irresponsible CSR activities",
+            "volume": "88",
+            "author": "Hoi",
+            "year": "2013",
+            "journal-title": "The Accounting Review"
         },
         {
-            "key": "cit0053",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.chb.2014.09.010"
+            "issue": "3",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Holm1",
+            "doi-asserted-by": "crossref",
+            "first-page": "537",
+            "DOI": "10.1080/09638180802016627",
+            "article-title": "Experienced and novice investors: Does environmental information influence investment allocation decisions?",
+            "volume": "17",
+            "author": "Holm",
+            "year": "2008",
+            "journal-title": "European Accounting Review"
         },
         {
-            "key": "cit0054",
-            "volume-title": "Cognition, teaching, and assessment",
-            "author": "Pressley M.",
-            "year": "1995"
+            "key": "2024082917595018000_i1558-8025-19-1-57-Holme1",
+            "unstructured": "Holme, L., and P.Watts. \n          2006. Human Rights and Corporate Social Responsibility. Geneva, Switzerland: World Business Council for Sustainable Development."
         },
         {
-            "key": "cit0094",
-            "volume-title": "Models of self-regulated learning: A review. Scandinavian Journal of Educational Research",
-            "author": "Puustinen M.",
-            "year": "2001"
+            "issue": "1",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Holt1",
+            "doi-asserted-by": "crossref",
+            "first-page": "61",
+            "DOI": "10.1111/j.1099-1123.2008.00391.x",
+            "article-title": "The effects of internal audit report disclosure on investor confidence and investment decisions",
+            "volume": "13",
+            "author": "Holt",
+            "year": "2009",
+            "journal-title": "International Journal of Auditing"
         },
         {
-            "key": "cit0055",
-            "first-page": "251",
-            "volume-title": "Handbook of self-regulation of learning and performance",
-            "author": "Schmitz B.",
-            "year": "2011"
+            "issue": "1",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Hu1",
+            "doi-asserted-by": "crossref",
+            "first-page": "1",
+            "DOI": "10.1007/s10551-008-9789-x",
+            "article-title": "Collectivism, corporate social responsibility, and resource advantages in retailing",
+            "volume": "86",
+            "author": "Hu",
+            "year": "2009",
+            "journal-title": "Journal of Business Ethics"
         },
         {
-            "key": "cit0057",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s11409-008-9031-3"
+            "key": "2024082917595018000_i1558-8025-19-1-57-Huang1",
+            "doi-asserted-by": "crossref",
+            "first-page": "1",
+            "DOI": "10.1016/j.acclit.2015.03.001",
+            "article-title": "Corporate social responsibility research in accounting",
+            "volume": "34",
+            "author": "Huang",
+            "year": "2015",
+            "journal-title": "Journal of Accounting Literature"
         },
         {
-            "key": "cit0059",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/a0036653"
+            "issue": "4",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Huseynov1",
+            "doi-asserted-by": "crossref",
+            "first-page": "804",
+            "DOI": "10.1016/j.jcorpfin.2012.06.005",
+            "article-title": "Tax avoidance, tax management and corporate social responsibility",
+            "volume": "18",
+            "author": "Huseynov",
+            "year": "2012",
+            "journal-title": "Journal of Corporate Finance"
         },
         {
-            "key": "cit0093",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1006/ceps.1993.1034"
+            "issue": "3",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Kanagaretnam1",
+            "doi-asserted-by": "crossref",
+            "first-page": "879",
+            "DOI": "10.1007/s10551-016-3168-9",
+            "article-title": "Cross-country evidence on the role of independent media in constraining corporate tax aggressiveness",
+            "volume": "150",
+            "author": "Kanagaretnam",
+            "year": "2016",
+            "journal-title": "Journal of Business Ethics"
         },
         {
-            "key": "cit0060",
-            "first-page": "125",
-            "volume-title": "Self-regulated learning and academic achievement: Theory, research, and practice",
-            "author": "Schunk D. H.",
-            "year": "2001",
-            "edition": "2"
+            "issue": "12",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Kim1",
+            "doi-asserted-by": "crossref",
+            "first-page": "2581",
+            "DOI": "10.1016/j.jbusres.2012.05.015",
+            "article-title": "CSR and the national institutional context: The case of South Korea",
+            "volume": "66",
+            "author": "Kim",
+            "year": "2013",
+            "journal-title": "Journal of Business Research"
         },
         {
-            "key": "cit0061",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0022-0663.78.3.201"
+            "issue": "3",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Kim2",
+            "doi-asserted-by": "crossref",
+            "first-page": "639",
+            "DOI": "10.1016/j.jfineco.2010.07.007",
+            "article-title": "Corporate tax avoidance and stock price crash risk: Firm-level analysis",
+            "volume": "100",
+            "author": "Kim",
+            "year": "2011",
+            "journal-title": "Journal of Financial Economics"
         },
         {
-            "key": "cit0062",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00220671.1986.10885684"
+            "issue": "2",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Lamberti1",
+            "doi-asserted-by": "crossref",
+            "first-page": "153",
+            "DOI": "10.1007/s10551-008-9876-z",
+            "article-title": "CSR practices and corporate strategy: Evidence from a longitudinal case study",
+            "volume": "87",
+            "author": "Lamberti",
+            "year": "2009",
+            "journal-title": "Journal of Business Ethics"
         },
         {
-            "key": "cit0065",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1076/edre.10.2.117.27905"
+            "issue": "1",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Lanis1",
+            "doi-asserted-by": "crossref",
+            "first-page": "86",
+            "DOI": "10.1016/j.jaccpubpol.2011.10.006",
+            "article-title": "Corporate social responsibility and tax aggressiveness: An empirical analysis",
+            "volume": "31",
+            "author": "Lanis",
+            "year": "2012",
+            "journal-title": "Journal of Accounting and Public Policy"
         },
         {
-            "key": "cit0066",
-            "first-page": "129",
-            "volume": "28",
-            "author": "Thiede K. W.",
+            "issue": "1",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Lanis2",
+            "doi-asserted-by": "crossref",
+            "first-page": "75",
+            "DOI": "10.1108/09513571311285621",
+            "article-title": "Corporate social responsibility and tax aggressiveness: A test of legitimacy theory",
+            "volume": "26",
+            "author": "Lanis",
+            "year": "2013",
+            "journal-title": "Accounting, Auditing & Accountability Journal"
+        },
+        {
+            "issue": "2",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Lanis3",
+            "doi-asserted-by": "crossref",
+            "first-page": "439",
+            "DOI": "10.1007/s10551-014-2052-8",
+            "article-title": "Is corporate social responsibility performance associated with tax avoidance?",
+            "volume": "127",
+            "author": "Lanis",
+            "year": "2015",
+            "journal-title": "Journal of Business Ethics"
+        },
+        {
+            "issue": "2",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Lanis4",
+            "doi-asserted-by": "crossref",
+            "first-page": "228",
+            "DOI": "10.1177/0148558X16654834",
+            "article-title": "Outside directors, corporate social responsibility performance, and corporate tax aggressiveness: An empirical analysis",
+            "volume": "33",
+            "author": "Lanis",
+            "year": "2018",
+            "journal-title": "Journal of Accounting, Auditing & Finance"
+        },
+        {
+            "issue": "4",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Li1",
+            "doi-asserted-by": "crossref",
+            "first-page": "1043",
+            "DOI": "10.1111/acfi.12192",
+            "article-title": "Level of business insights in the MD&A and nonprofessional investors' judgments",
+            "volume": "57",
+            "author": "Li",
+            "year": "2017",
+            "journal-title": "Accounting & Finance"
+        },
+        {
+            "issue": "1",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Lin1",
+            "first-page": "1",
+            "article-title": "Corporate social and environmental disclosure in emerging securities markets",
+            "volume": "35",
+            "author": "Lin",
+            "year": "2009",
+            "journal-title": "North Carolina Journal of International Law and Commercial Regulation"
+        },
+        {
+            "issue": "7",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Lipe1",
+            "doi-asserted-by": "crossref",
+            "first-page": "625",
+            "DOI": "10.1016/S0361-3682(97)00065-2",
+            "article-title": "Individual investors' risk judgments and investment decisions: The impact of accounting and market data",
+            "volume": "23",
+            "author": "Lipe",
+            "year": "1998",
+            "journal-title": "Accounting, Organizations and Society"
+        },
+        {
+            "issue": "3",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Mackey1",
+            "doi-asserted-by": "crossref",
+            "first-page": "817",
+            "DOI": "10.5465/amr.2007.25275676",
+            "article-title": "Corporate social responsibility and firm performance: Investor preferences and corporate strategies",
+            "volume": "32",
+            "author": "Mackey",
+            "year": "2007",
+            "journal-title": "Academy of Management Review"
+        },
+        {
+            "issue": "1",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Maignan1",
+            "doi-asserted-by": "crossref",
+            "first-page": "3",
+            "DOI": "10.1177/0092070303258971",
+            "article-title": "Corporate social responsibility and marketing: An integrative framework",
+            "volume": "32",
+            "author": "Maignan",
+            "year": "2004",
+            "journal-title": "Journal of the Academy of Marketing Science"
+        },
+        {
+            "issue": "4",
+            "key": "2024082917595018000_i1558-8025-19-1-57-McGuire1",
+            "doi-asserted-by": "crossref",
+            "first-page": "854",
+            "DOI": "10.2307/256342",
+            "article-title": "Corporate social responsibility and firm financial performance",
+            "volume": "31",
+            "author": "McGuire",
+            "year": "1988",
+            "journal-title": "Academy of Management Journal"
+        },
+        {
+            "issue": "3",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Mercer1",
+            "doi-asserted-by": "crossref",
+            "first-page": "185",
+            "DOI": "10.2308/acch.2004.18.3.185",
+            "article-title": "How do investors assess the credibility of management disclosures?",
+            "volume": "18",
+            "author": "Mercer",
+            "year": "2004",
+            "journal-title": "Accounting Horizons"
+        },
+        {
+            "issue": "3",
+            "key": "2024082917595018000_i1558-8025-19-1-57-MesmerMagnus1",
+            "doi-asserted-by": "crossref",
+            "first-page": "277",
+            "DOI": "10.1007/s10551-005-0849-1",
+            "article-title": "Whistleblowing in organizations: An examination of correlates of whistleblowing intentions, actions, and retaliation",
+            "volume": "62",
+            "author": "Mesmer-Magnus",
+            "year": "2005",
+            "journal-title": "Journal of Business Ethics"
+        },
+        {
+            "issue": "4",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Mishra1",
+            "doi-asserted-by": "crossref",
+            "first-page": "571",
+            "DOI": "10.1007/s10551-010-0441-1",
+            "article-title": "Does corporate social responsibility influence firm performance of Indian companies?",
+            "volume": "95",
+            "author": "Mishra",
+            "year": "2010",
+            "journal-title": "Journal of Business Ethics"
+        },
+        {
+            "issue": "9",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Ng1",
+            "doi-asserted-by": "crossref",
+            "first-page": "2695",
+            "DOI": "10.1016/j.jbankfin.2006.10.029",
+            "article-title": "The trading behavior of institutions and individuals in Chinese equity markets",
+            "volume": "31",
+            "author": "Ng",
+            "year": "2007",
+            "journal-title": "Journal of Banking & Finance"
+        },
+        {
+            "issue": "3",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Pflugrath1",
+            "doi-asserted-by": "crossref",
+            "first-page": "239",
+            "DOI": "10.2308/ajpt-10047",
+            "article-title": "Impact of assurance and assurer's professional affiliation on financial analysts' assessment of credibility of corporate social responsibility information",
+            "volume": "30",
+            "author": "Pflugrath",
+            "year": "2011",
+            "journal-title": "Auditing: A Journal of Practice & Theory"
+        },
+        {
+            "issue": "1",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Pitre1",
+            "doi-asserted-by": "crossref",
+            "first-page": "91",
+            "DOI": "10.2308/bria-50039",
+            "article-title": "Effects of increased reporting frequency on nonprofessional investors' earnings predictions",
+            "volume": "24",
+            "author": "Pitre",
+            "year": "2012",
+            "journal-title": "Behavioral Research in Accounting"
+        },
+        {
+            "issue": "1",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Preuss1",
+            "doi-asserted-by": "crossref",
+            "first-page": "1",
+            "DOI": "10.1007/s10551-012-1456-6",
+            "article-title": "Responsibility in paradise? The adoption of CSR tools by companies domiciled in tax havens",
+            "volume": "110",
+            "author": "Preuss",
+            "year": "2012",
+            "journal-title": "Journal of Business Ethics"
+        },
+        {
+            "issue": "4",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Rego1",
+            "doi-asserted-by": "crossref",
+            "first-page": "805",
+            "DOI": "10.1506/VANN-B7UB-GMFA-9E6W",
+            "article-title": "Tax avoidance activities of U.S. multinational corporations",
+            "volume": "20",
+            "author": "Rego",
             "year": "2003",
-            "journal-title": "Journal of Educational Psychology"
+            "journal-title": "Contemporary Accounting Research"
         },
         {
-            "key": "cit0067",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s11409-011-9080-x"
+            "issue": "2",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Sen1",
+            "doi-asserted-by": "crossref",
+            "first-page": "158",
+            "DOI": "10.1177/0092070305284978",
+            "article-title": "The role of corporate social responsibility in strengthening multiple stakeholder relationships: A field experiment",
+            "volume": "34",
+            "author": "Sen",
+            "year": "2006",
+            "journal-title": "Journal of the Academy of Marketing Science"
         },
         {
-            "key": "cit0068",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s11409-006-6893-0"
+            "issue": "5",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Shafer1",
+            "doi-asserted-by": "crossref",
+            "first-page": "695",
+            "DOI": "10.1108/09513570810872978",
+            "article-title": "Social responsibility, Machiavellianism and tax avoidance: A study of Hong Kong tax professionals",
+            "volume": "21",
+            "author": "Shafer",
+            "year": "2008",
+            "journal-title": "Accounting, Auditing & Accountability Journal"
         },
         {
-            "key": "cit0069",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1348/000709903322275885"
+            "issue": "3",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Shen1",
+            "doi-asserted-by": "crossref",
+            "first-page": "271",
+            "DOI": "10.1111/ijau.12094",
+            "article-title": "The impact of corporate social responsibility assurance on investor decisions: Chinese evidence",
+            "volume": "21",
+            "author": "Shen",
+            "year": "2017",
+            "journal-title": "International Journal of Auditing"
         },
         {
-            "key": "cit0070",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3102/00346543042002203"
+            "issue": "3/4",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Sikka1",
+            "doi-asserted-by": "crossref",
+            "first-page": "153",
+            "DOI": "10.1016/j.accfor.2010.05.002",
+            "article-title": "Smoke and mirrors: Corporate social responsibility and tax avoidance",
+            "volume": "34",
+            "author": "Sikka",
+            "year": "2010",
+            "journal-title": "Accounting Forum"
         },
         {
-            "key": "cit0071",
-            "volume-title": "Achievement motivation and attribution theory",
-            "author": "Weiner B.",
-            "year": "1974"
+            "issue": "1",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Sikka2",
+            "doi-asserted-by": "crossref",
+            "first-page": "15",
+            "DOI": "10.1016/j.accfor.2012.09.002",
+            "article-title": "Smoke and mirrors: Corporate social responsibility and tax avoidance\u2014A reply to Hasseldine and Morris",
+            "volume": "37",
+            "author": "Sikka",
+            "year": "2013",
+            "journal-title": "Accounting Forum"
         },
         {
-            "key": "cit0073",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S1041-6080(96)90022-9"
-        },
-        {
-            "key": "cit0074",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.ijer.2005.08.012"
-        },
-        {
-            "key": "cit0075",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.4324/9780203839010.ch2"
-        },
-        {
-            "key": "cit0077",
-            "volume-title": "Annual Meeting of the American Educational Research Association",
-            "author": "Winne P. H.",
-            "year": "1997"
-        },
-        {
-            "key": "cit0078",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0361-476X(02)00006-1"
-        },
-        {
-            "key": "cit0079",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0361-476X(02)00041-3"
-        },
-        {
-            "key": "cit0080",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/B978-012109890-2/50045-7"
-        },
-        {
-            "key": "cit0081",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1207/s15326985ep2404_2"
-        },
-        {
-            "key": "cit0082",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00461520903433554"
-        },
-        {
-            "key": "cit0083",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1207/S15326985EP3804_1"
-        },
-        {
-            "key": "cit0084",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00220973.2012.699901"
-        },
-        {
-            "key": "cit0085",
-            "first-page": "298",
-            "volume-title": "Handbook of self-regulation of learning and performance",
-            "author": "Wolters C. A.",
-            "year": "2011"
-        },
-        {
-            "key": "cit0086",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0022-0663.81.3.329"
-        },
-        {
-            "key": "cit0087",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3102/0002831207312909"
-        },
-        {
-            "key": "cit0088",
+            "issue": "1",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Singhapakdi1",
+            "doi-asserted-by": "crossref",
             "first-page": "49",
-            "volume-title": "Handbook of self-regulation of learning and performance",
-            "author": "Zimmerman B. J.",
-            "year": "2011"
+            "DOI": "10.1007/BF02894611",
+            "article-title": "The perceived importance of ethics and social responsibility on organizational effectiveness: A survey of marketers",
+            "volume": "23",
+            "author": "Singhapakdi",
+            "year": "1995",
+            "journal-title": "Journal of the Academy of Marketing Science"
         },
         {
-            "key": "cit0092",
-            "first-page": "299",
-            "volume-title": "Handbook of Metacognition in Education",
-            "author": "Zimmerman B. J.",
-            "year": "2009"
+            "issue": "1",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Steurer1",
+            "doi-asserted-by": "crossref",
+            "first-page": "49",
+            "DOI": "10.1007/s11077-009-9084-4",
+            "article-title": "The role of governments in corporate social responsibility: Characterizing public policies on CSR in Europe",
+            "volume": "43",
+            "author": "Steurer",
+            "year": "2010",
+            "journal-title": "Policy Sciences"
+        },
+        {
+            "article-title": "The role of Caribbean tax havens and offshore financial centers in Chinese outward foreign direct investment",
+            "year": "2010",
+            "author": "Sutherland",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Sutherland1"
+        },
+        {
+            "issue": "3",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Taylor1",
+            "first-page": "716",
+            "article-title": "Employee views of corporate tax aggressiveness in china: The effects of guanxi and audit independence",
+            "volume": "13",
+            "author": "Taylor",
+            "year": "2015",
+            "journal-title": "eJournal of Tax Research"
+        },
+        {
+            "issue": "1",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Taylor2",
+            "doi-asserted-by": "crossref",
+            "first-page": "25",
+            "DOI": "10.2308/jiar-51019",
+            "article-title": "Multinationality, tax havens, intangible assets and transfer pricing aggressiveness: An empirical analysis",
+            "volume": "14",
+            "author": "Taylor",
+            "year": "2015",
+            "journal-title": "Journal of International Accounting Research"
+        },
+        {
+            "issue": "6",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Waldman1",
+            "doi-asserted-by": "crossref",
+            "first-page": "823",
+            "DOI": "10.1057/palgrave.jibs.8400230",
+            "article-title": "Cultural and leadership predictors of corporate social responsibility values of top management: A GLOBE study of 15 countries",
+            "volume": "37",
+            "author": "Waldman",
+            "year": "2006",
+            "journal-title": "Journal of International Business Studies"
+        },
+        {
+            "issue": "1",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Wang1",
+            "doi-asserted-by": "crossref",
+            "first-page": "127",
+            "DOI": "10.1007/s10551-010-0713-9",
+            "article-title": "Corporate social responsibility, investor behaviors and stock market returns: Evidence from a natural experiment in China",
+            "volume": "101",
+            "author": "Wang",
+            "year": "2011",
+            "journal-title": "Journal of Business Ethics"
+        },
+        {
+            "issue": "2",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Watson1",
+            "doi-asserted-by": "crossref",
+            "first-page": "1",
+            "DOI": "10.2308/atax-51022",
+            "article-title": "Corporate social responsibility, tax avoidance, and earnings performance",
+            "volume": "37",
+            "author": "Watson",
+            "year": "2015",
+            "journal-title": "The Journal of the American Taxation Association"
+        },
+        {
+            "article-title": "Corporate tax avoidance tops list of U.K. public's ethical concerns about business",
+            "year": "2015",
+            "author": "White",
+            "key": "2024082917595018000_i1558-8025-19-1-57-White1"
+        },
+        {
+            "issue": "2",
+            "key": "2024082917595018000_i1558-8025-19-1-57-Yin1",
+            "doi-asserted-by": "crossref",
+            "first-page": "301",
+            "DOI": "10.1007/s10551-012-1243-4",
+            "article-title": "Institutional dynamics and corporate social responsibility (CSR) in an emerging country context: Evidence from China",
+            "volume": "111",
+            "author": "Yin",
+            "year": "2012",
+            "journal-title": "Journal of Business Ethics"
         }
     ],
     "container-title": [
-        "The Journal of Experimental Education"
+        "Journal of International Accounting Research"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/00220973.2017.1409184",
+            "URL": "https://publications.aaahq.org/jiar/article-pdf/19/1/57/76438/jiar-18-050.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "syndication"
+        },
+        {
+            "URL": "https://publications.aaahq.org/jiar/article-pdf/19/1/57/76438/jiar-18-050.pdf",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -539,92 +936,73 @@
     "deposited": {
         "date-parts": [
             [
-                2022,
+                2024,
                 8,
-                11
+                29
             ]
         ],
-        "date-time": "2022-08-11T19:30:39Z",
-        "timestamp": 1660246239000
+        "date-time": "2024-08-29T21:54:21Z",
+        "timestamp": 1724968461000
     },
-    "score": 14.802696,
+    "score": 13.384252,
     "resource": {
         "primary": {
-            "URL": "https://www.tandfonline.com/doi/full/10.1080/00220973.2017.1409184"
+            "URL": "https://publications.aaahq.org/jiar/article/19/1/57/9854/Investors-Responses-to-Social-Conflict-between-CSR"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2018,
+                2020,
                 1,
-                3
+                1
             ]
         ]
     },
-    "references-count": 77,
+    "references-count": 73,
     "journal-issue": {
-        "issue": "2",
+        "issue": "1",
+        "published-online": {
+            "date-parts": [
+                [
+                    2020,
+                    1,
+                    1
+                ]
+            ]
+        },
         "published-print": {
             "date-parts": [
                 [
-                    2019,
-                    4,
-                    3
+                    2020,
+                    3,
+                    1
                 ]
             ]
         }
     },
-    "alternative-id": [
-        "10.1080/00220973.2017.1409184"
-    ],
-    "URL": "http://dx.doi.org/10.1080/00220973.2017.1409184",
+    "URL": "http://dx.doi.org/10.2308/jiar-18-050",
     "ISSN": [
-        "0022-0973",
-        "1940-0683"
+        "1542-6297",
+        "1558-8025"
     ],
     "issn-type": [
         {
-            "value": "0022-0973",
-            "type": "print"
+            "type": "print",
+            "value": "1542-6297"
         },
         {
-            "value": "1940-0683",
-            "type": "electronic"
+            "type": "electronic",
+            "value": "1558-8025"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2018,
+                2020,
                 1,
-                3
+                1
             ]
         ]
-    },
-    "assertion": [
-        {
-            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
-            "order": 1,
-            "name": "peerreview_statement",
-            "label": "Peer Review Statement"
-        },
-        {
-            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=vjxe20",
-            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=vjxe20",
-            "order": 2,
-            "name": "aims_and_scope_url",
-            "label": "Aim & Scope"
-        },
-        {
-            "value": "2018-01-03",
-            "order": 3,
-            "name": "published",
-            "label": "Published",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        }
-    ]
+    }
 }

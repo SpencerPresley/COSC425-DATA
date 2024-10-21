@@ -2,294 +2,414 @@
     "indexed": {
         "date-parts": [
             [
-                2023,
-                3,
-                1
+                2024,
+                7,
+                20
             ]
         ],
-        "date-time": "2023-03-01T03:10:59Z",
-        "timestamp": 1677640259464
+        "date-time": "2024-07-20T19:40:02Z",
+        "timestamp": 1721504402405
     },
-    "reference-count": 41,
-    "publisher": "Informa UK Limited",
-    "issue": "2",
+    "reference-count": 52,
+    "publisher": "Wiley",
+    "issue": "1-2",
+    "license": [
+        {
+            "start": {
+                "date-parts": [
+                    [
+                        2019,
+                        7,
+                        9
+                    ]
+                ],
+                "date-time": "2019-07-09T00:00:00Z",
+                "timestamp": 1562630400000
+            },
+            "content-version": "vor",
+            "delay-in-days": 130,
+            "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+        }
+    ],
     "content-domain": {
         "domain": [
-            "www.tandfonline.com"
+            "onlinelibrary.wiley.com"
         ],
         "crossmark-restriction": true
     },
     "short-container-title": [
-        "National Identities"
+        "World Englishes"
     ],
     "published-print": {
         "date-parts": [
             [
-                2023,
-                3,
-                15
+                2019,
+                3
             ]
         ]
     },
-    "DOI": "10.1080/14608944.2022.2079118",
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>Utilizing evidence from literary stylistics, and in keeping with the Kachruvian tradition, this paper makes the case for WE scholars to remain vigilant of the move away from the revolutionary heteroglossia and de\u2010Englishing strategies hallmarking literary creation and analyses of postcolonial writings from the margin \u2013 so apparent in Braj B. Kachru's works \u2013 to a current era of monoglossic inspired re\u2010Englishing strategies underpinning the post\u2010globalist enterprise of so\u2010called \u2018flat\u2010world\u2019 fiction in which under the guise of linguistic deterritorialization, center and periphery stratificational and spatialized arrangements emerge somewhat mitigated \u2013 even obfuscated. In the current post\u2010structuralist\u2010turn where contextual\u2010oriented rather than form\u2010focused analyses and the \u2018spatial turn\u2019 prevail, it is contested, Kachruvian\u2010spotlighted linguistic asymmetries<jats:italic>still</jats:italic>matter. Evidence is provided from emerging frameworks in the sociolinguistics of mobility, pedagogical linguistics, and political economy to demonstrate the intellectual staying power, and relevancy of Kachruvian frameworks for current sociolinguists.</jats:p>",
+    "DOI": "10.1111/weng.12370",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2022,
-                5,
-                31
+                2019,
+                7,
+                9
             ]
         ],
-        "date-time": "2022-05-31T05:46:52Z",
-        "timestamp": 1653976012000
+        "date-time": "2019-07-09T07:14:44Z",
+        "timestamp": 1562656484000
     },
-    "page": "119-136",
-    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
+    "page": "200-218",
+    "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 0,
+    "is-referenced-by-count": 1,
     "title": [
-        "Exploring the relationship between national identity and attitudes towards immigrants in the United States"
+        "Re\u2010Englishing \u2018flat\u2010world\u2019 fiction"
     ],
-    "prefix": "10.1080",
-    "volume": "25",
+    "prefix": "10.1111",
+    "volume": "38",
     "author": [
         {
-            "given": "Amanda",
-            "family": "Hill",
+            "given": "Anjali",
+            "family": "Pandey",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Social Work, Salisbury University, Salisbury, MD, USA"
+                    "name": "Department of English Salisbury University"
                 }
             ]
         }
     ],
-    "member": "301",
+    "member": "311",
     "published-online": {
         "date-parts": [
             [
-                2022,
-                5,
-                30
+                2019,
+                7,
+                9
             ]
         ]
     },
     "reference": [
         {
-            "key": "CIT0001",
+            "key": "e_1_2_14_2_1",
+            "volume-title": "The white tiger",
+            "author": "Adiga A.",
+            "year": "2008"
+        },
+        {
+            "key": "e_1_2_14_3_1",
+            "volume-title": "Brick lane",
+            "author": "Ali M.",
+            "year": "2003"
+        },
+        {
+            "key": "e_1_2_14_4_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2753/IJS0020-7659350401"
+            "DOI": "10.1093/acprof:oso/9780190625696.001.0001"
         },
         {
-            "key": "CIT0002",
+            "key": "e_1_2_14_5_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/1467-9256.00063"
+            "DOI": "10.21832/9781783090419"
         },
         {
-            "key": "CIT0004",
+            "key": "e_1_2_14_6_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/j.1839-4655.2007.tb00039.x"
+            "DOI": "10.1111/weng.12145"
         },
         {
-            "key": "CIT0005",
+            "key": "e_1_2_14_7_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1468-4446.2011.01362.x"
+            "DOI": "10.1111/j.1467-971X.2010.01674.x"
         },
         {
-            "key": "CIT0006",
-            "unstructured": "Council on American-Islamic Relations. (2013). Legislating fear: Islamophobia and its impact in the United States. http://www.cair.com/islamophobia/legislating-fear-2013-report.html"
+            "key": "e_1_2_14_8_1",
+            "volume-title": "Distinction: A social critique of the judgment of taste",
+            "author": "Bourdieu P.",
+            "year": "1984"
         },
         {
-            "key": "CIT0007",
-            "unstructured": "Critchley, S. (2007). Infinitely demanding: Ethics of commitment, politics of resistance. Verso."
-        },
-        {
-            "issue": "16",
-            "key": "CIT0008",
-            "first-page": "492",
-            "volume": "61",
-            "author": "Duignan P.",
-            "year": "1995",
-            "journal-title": "Vital Speeches of the Day"
-        },
-        {
-            "key": "CIT0009",
+            "key": "e_1_2_14_9_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1530-2415.2002.00028.x"
+            "DOI": "10.4324/9781315754512"
         },
         {
-            "key": "CIT0010",
+            "key": "e_1_2_14_10_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1093/sw/49.2.241"
+            "DOI": "10.1353/book.49259"
         },
         {
-            "key": "CIT0011",
+            "key": "e_1_2_14_11_1",
+            "volume-title": "Weird English",
+            "author": "Ch'ien E.",
+            "year": "2000"
+        },
+        {
+            "issue": "1",
+            "key": "e_1_2_14_12_1",
+            "doi-asserted-by": "crossref",
+            "first-page": "55",
+            "DOI": "10.58680/rte201729200",
+            "article-title": "Translanguaging, coloniality, and English classrooms: An exploration of two bicoastal urban classrooms",
+            "volume": "52",
+            "author": "Los Rios",
+            "year": "2017",
+            "journal-title": "Research in the Teaching of English"
+        },
+        {
+            "key": "e_1_2_14_13_1",
+            "volume-title": "Kafka: Toward a minor literature",
+            "author": "Deleuze G.",
+            "year": "1986"
+        },
+        {
+            "key": "e_1_2_14_14_1",
+            "volume-title": "Bilingual education in the 21st century: A global perspective",
+            "author": "Garc\u00eda O.",
+            "year": "2009"
+        },
+        {
+            "key": "e_1_2_14_15_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1146/annurev-soc-071913-043325"
+            "DOI": "10.4324/9781315695242"
         },
         {
-            "key": "CIT0012",
+            "key": "e_1_2_14_16_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.17265/2159-5313/2016.09.003"
+            "DOI": "10.1057/9781137385765"
         },
         {
-            "key": "CIT0013",
+            "key": "e_1_2_14_17_1",
+            "volume-title": "Bilingual community education and multilingualism: Beyond heritage languages in a global city",
+            "author": "Garc\u00eda O.",
+            "year": "2013"
+        },
+        {
+            "key": "e_1_2_14_18_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/03050629.2014.899219"
+            "DOI": "10.4324/9781315754512-6"
         },
         {
-            "key": "CIT0014",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1540-6237.2011.00775.x"
-        },
-        {
-            "key": "CIT0015",
-            "unstructured": "Hill, A. G. (2019). National Identity and Attitudes Towards Immigrants in the United States (Publication No. 22618656) [Doctoral dissertation]. Widener University. ProQuest Dissertations and Theses Global."
-        },
-        {
-            "key": "CIT0016",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2304/pfie.2010.8.5.488"
-        },
-        {
-            "key": "CIT0017",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/019791839603000301"
-        },
-        {
-            "key": "CIT0018",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/144078339703300302"
-        },
-        {
-            "key": "CIT0019",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.ssresearch.2013.07.012"
-        },
-        {
-            "key": "CIT0021",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.ijintrel.2010.04.001"
-        },
-        {
-            "key": "CIT0022",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1467-9248.2007.00680.x"
-        },
-        {
-            "key": "CIT0023",
-            "unstructured": "Merriam-Webster. (n.d.). America. In Merriam-Webster.com dictionary. Retrieved December 29, 2021, from https://www.merriam-webster.com/dictionary/America"
-        },
-        {
-            "key": "CIT0024",
-            "volume-title": "Americans in waiting: The lost story of immigration and citizenship in the United States",
-            "author": "Motomura H.",
-            "year": "2006"
-        },
-        {
-            "key": "CIT0025",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1530-2415.2011.01257.x"
-        },
-        {
-            "key": "CIT0501",
-            "unstructured": "National Opinion Research Center. (2021). About the GSS. Retrieved from https://gss.norc.org/About-The-GSS"
-        },
-        {
-            "key": "CIT0026",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1540-4560.2010.01671.x"
-        },
-        {
-            "key": "CIT0027",
-            "unstructured": "Pew Research Center. (2017). What it takes to truly be \u2018one of us\u2019: In U.S., Canada, Europe, Australia and Japan, publics say language matters more to national identity than birthplace. http://www.pewglobal.org/2017/02/01/what-it-takes-to-truly-be-one-of-us/"
-        },
-        {
-            "key": "CIT0028",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1525/9780520959156"
-        },
-        {
-            "key": "CIT0029",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/ssqu.12514"
-        },
-        {
-            "key": "CIT0030",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/ejsp.1892"
-        },
-        {
-            "key": "CIT0031",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/publius/pjy013"
-        },
-        {
-            "key": "CIT0032",
-            "volume-title": "Empowerment series: Essential research methods for social work",
-            "author": "Rubin A.",
-            "year": "2016",
-            "edition": "4"
-        },
-        {
-            "key": "CIT0033",
-            "volume-title": "The disuniting of America",
-            "author": "Schlesinger A.",
+            "key": "e_1_2_14_19_1",
+            "volume-title": "Interviews with writers of the post\u2010colonial world",
+            "author": "Jussawalla F.",
             "year": "1992"
         },
         {
-            "key": "CIT0034",
-            "unstructured": "Sobczak, M. J. (2007). Attitudes toward immigrants and immigration policy in the United States: A structural approach (dissertation)."
+            "key": "e_1_2_14_20_1",
+            "volume-title": "The Indianization of English: The English language in India",
+            "author": "Kachru B. B.",
+            "year": "1983"
         },
         {
-            "key": "CIT0035",
+            "key": "e_1_2_14_21_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1086/675301"
+            "DOI": "10.1017/S0267190500003032"
         },
         {
-            "key": "CIT0036",
-            "volume-title": "Reconfiguring citizenship and national identity in the North American literary imagination",
-            "author": "Tan K.",
-            "year": "2015"
+            "key": "e_1_2_14_22_1",
+            "first-page": "159",
+            "volume-title": "The alchemy of English: The spread, functions and models of non\u2010native Englishes",
+            "author": "Kachru B. B.",
+            "year": "1986"
         },
         {
-            "key": "CIT0037",
+            "key": "e_1_2_14_23_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1017/CBO9780511750717"
+            "DOI": "10.1017/S0266078400000973"
         },
         {
-            "key": "CIT0502",
-            "unstructured": "United Nations High Commissioner for Refugees. (2022). Refugees in America. USA for UNHCR. Retrieved from https://www.unrefugees.org/refugee-facts/usa/."
+            "key": "e_1_2_14_24_1",
+            "volume-title": "The alchemy of English: The spread, functions, and models of non\u2010native Englishes",
+            "author": "Kachru B. B.",
+            "year": "1990"
         },
         {
-            "key": "CIT0038",
-            "unstructured": "U.S. Census Bureau. (2017). Quickfacts: United States. https://www.census.gov/quickfacts/fact/table/US/PST045217."
+            "key": "e_1_2_14_25_1",
+            "first-page": "xiii",
+            "volume-title": "South Asian English: Structure, use and users",
+            "author": "Kachru B. B.",
+            "year": "1996"
         },
         {
-            "key": "CIT0039",
-            "volume-title": "Yearbook of immigration statistics: 2016",
-            "author": "U. S. Department of Homeland Security",
-            "year": "2018"
-        },
-        {
-            "key": "CIT0040",
+            "key": "e_1_2_14_26_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.3138/cras.42.3.004"
+            "DOI": "10.2307/3333196"
         },
         {
-            "key": "CIT0041",
+            "key": "e_1_2_14_27_1",
+            "volume-title": "Asian Englishes: Beyond the canon",
+            "author": "Kachru B. B.",
+            "year": "2005"
+        },
+        {
+            "key": "e_1_2_14_28_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1467-9221.2011.00843.x"
+            "DOI": "10.1111/j.1467-971X.1990.tb00683.x"
+        },
+        {
+            "key": "e_1_2_14_29_1",
+            "volume-title": "World Englishes and culture wars",
+            "author": "Kachru B. B.",
+            "year": "2017"
+        },
+        {
+            "key": "e_1_2_14_30_1",
+            "volume-title": "Unaccustomed earth",
+            "author": "Lahiri J.",
+            "year": "2008"
+        },
+        {
+            "key": "e_1_2_14_31_1",
+            "volume-title": "In other words",
+            "author": "Lahiri J.",
+            "year": "2016"
+        },
+        {
+            "key": "e_1_2_14_32_1",
+            "volume-title": "The production of space",
+            "author": "Lefebvre H.",
+            "year": "1991"
+        },
+        {
+            "key": "e_1_2_14_33_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1467-971X.2012.01771.x"
+        },
+        {
+            "key": "e_1_2_14_34_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1215/01903659-27-1-7"
+        },
+        {
+            "key": "e_1_2_14_35_1",
+            "volume-title": "The lives of others",
+            "author": "Mukherjee N.",
+            "year": "2014"
+        },
+        {
+            "issue": "1",
+            "key": "e_1_2_14_36_1",
+            "first-page": "38",
+            "article-title": "Mining multilingualism's materiality: Re\u2010representing linguistic diversity in presidential biography",
+            "volume": "2",
+            "author": "Pandey A.",
+            "year": "2014",
+            "journal-title": "Critical Studies in Multilingualism"
+        },
+        {
+            "key": "e_1_2_14_37_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1057/9781137340368"
+        },
+        {
+            "key": "e_1_2_14_38_1",
+            "volume-title": "Film, linguistic desire and language acquisition: Proficiency wars on the silver screen",
+            "author": "Pandey A.",
+            "year": "2019"
+        },
+        {
+            "key": "e_1_2_14_39_1",
+            "volume-title": "Cosmetic multilingualism in the age of cultural commerce",
+            "author": "Pandey A.",
+            "year": "2020"
+        },
+        {
+            "key": "e_1_2_14_40_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/weng.12041"
+        },
+        {
+            "key": "e_1_2_14_41_1",
+            "volume-title": "Markets of English: Linguistic capital and language policy in a globalizing world",
+            "author": "Park J. S.",
+            "year": "2012"
+        },
+        {
+            "key": "e_1_2_14_42_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/weng.12208"
+        },
+        {
+            "key": "e_1_2_14_43_1",
+            "doi-asserted-by": "crossref",
+            "volume-title": "Vox popular: The surprising life of language in the media",
+            "author": "Queen R.",
+            "year": "2015",
+            "DOI": "10.1002/9781394260232"
+        },
+        {
+            "key": "e_1_2_14_44_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1093/acprof:oso/9780199363391.001.0001"
+        },
+        {
+            "key": "e_1_2_14_45_1",
+            "first-page": "31",
+            "volume-title": "The world, the text and the critic",
+            "author": "Said E. W.",
+            "year": "1983"
+        },
+        {
+            "key": "e_1_2_14_46_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1017/S0022226715000390"
+        },
+        {
+            "key": "e_1_2_14_47_1",
+            "volume-title": "Thirdspace: Journeys to Los Angeles and other real\u2010and\u2010imagined places",
+            "author": "Soja E. W.",
+            "year": "1996"
+        },
+        {
+            "key": "e_1_2_14_48_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1093/acprof:oso/9780199363391.003.0010"
+        },
+        {
+            "key": "e_1_2_14_49_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/1367006912458393"
+        },
+        {
+            "key": "e_1_2_14_50_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/00167487.2013.12094359"
+        },
+        {
+            "key": "e_1_2_14_51_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1057/9781137265234"
+        },
+        {
+            "key": "e_1_2_14_52_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1017/S0266078411000630"
+        },
+        {
+            "key": "e_1_2_14_53_1",
+            "volume-title": "Beyond the mother tongue: The postmonolingual condition",
+            "author": "Yildiz Y.",
+            "year": "2012"
         }
     ],
     "container-title": [
-        "National Identities"
+        "World Englishes"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/14608944.2022.2079118",
+            "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1111%2Fweng.12370",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/weng.12370",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -298,86 +418,73 @@
     "deposited": {
         "date-parts": [
             [
-                2023,
-                3,
-                1
+                2024,
+                7,
+                20
             ]
         ],
-        "date-time": "2023-03-01T02:55:32Z",
-        "timestamp": 1677639332000
+        "date-time": "2024-07-20T19:25:24Z",
+        "timestamp": 1721503524000
     },
-    "score": 15.885723,
+    "score": 14.01076,
     "resource": {
         "primary": {
-            "URL": "https://www.tandfonline.com/doi/full/10.1080/14608944.2022.2079118"
+            "URL": "https://onlinelibrary.wiley.com/doi/10.1111/weng.12370"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2022,
-                5,
-                30
+                2019,
+                3
             ]
         ]
     },
-    "references-count": 41,
+    "references-count": 52,
     "journal-issue": {
-        "issue": "2",
+        "issue": "1-2",
         "published-print": {
             "date-parts": [
                 [
-                    2023,
-                    3,
-                    15
+                    2019,
+                    3
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1080/14608944.2022.2079118"
+        "10.1111/weng.12370"
     ],
-    "URL": "http://dx.doi.org/10.1080/14608944.2022.2079118",
+    "URL": "http://dx.doi.org/10.1111/weng.12370",
+    "archive": [
+        "Portico"
+    ],
     "ISSN": [
-        "1460-8944",
-        "1469-9907"
+        "0883-2919",
+        "1467-971X"
     ],
     "issn-type": [
         {
-            "value": "1460-8944",
+            "value": "0883-2919",
             "type": "print"
         },
         {
-            "value": "1469-9907",
+            "value": "1467-971X",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2022,
-                5,
-                30
+                2019,
+                3
             ]
         ]
     },
     "assertion": [
         {
-            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
-            "order": 1,
-            "name": "peerreview_statement",
-            "label": "Peer Review Statement"
-        },
-        {
-            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=cnid20",
-            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=cnid20",
+            "value": "2019-07-09",
             "order": 2,
-            "name": "aims_and_scope_url",
-            "label": "Aim & Scope"
-        },
-        {
-            "value": "2022-05-30",
-            "order": 3,
             "name": "published",
             "label": "Published",
             "group": {

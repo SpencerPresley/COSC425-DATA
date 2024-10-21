@@ -3,98 +3,144 @@
         "date-parts": [
             [
                 2024,
-                5,
-                9
+                2,
+                29
             ]
         ],
-        "date-time": "2024-05-09T13:11:57Z",
-        "timestamp": 1715260317621
+        "date-time": "2024-02-29T08:34:00Z",
+        "timestamp": 1709195640947
     },
-    "reference-count": 0,
-    "publisher": "Informa UK Limited",
-    "issue": "1",
+    "reference-count": 9,
+    "publisher": "Mary Ann Liebert Inc",
+    "issue": "3",
+    "license": [
+        {
+            "start": {
+                "date-parts": [
+                    [
+                        2020,
+                        9,
+                        1
+                    ]
+                ],
+                "date-time": "2020-09-01T00:00:00Z",
+                "timestamp": 1598918400000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://www.liebertpub.com/nv/resources-tools/text-and-data-mining-policy/121/"
+        }
+    ],
     "content-domain": {
-        "domain": [
-            "www.tandfonline.com"
-        ],
-        "crossmark-restriction": true
+        "domain": [],
+        "crossmark-restriction": false
     },
     "short-container-title": [
-        "New Political Science"
+        "Violence and Gender"
     ],
     "published-print": {
         "date-parts": [
             [
-                2024,
-                1,
-                2
+                2020,
+                9,
+                1
             ]
         ]
     },
-    "DOI": "10.1080/07393148.2024.2307145",
+    "DOI": "10.1089/vio.2019.0057",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2024,
-                2,
-                20
+                2020,
+                6,
+                16
             ]
         ],
-        "date-time": "2024-02-20T08:57:37Z",
-        "timestamp": 1708419457000
+        "date-time": "2020-06-16T14:47:17Z",
+        "timestamp": 1592318837000
     },
-    "page": "1-1",
-    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
+    "page": "137-139",
     "source": "Crossref",
-    "is-referenced-by-count": 0,
+    "is-referenced-by-count": 2,
     "title": [
-        "A Message from the 2023\u20132026 Co-Editors"
+        "Addressing the Overlap: Sexual Victimization and/or Perpetration Experience, and Participant Gender Predicting Rape Empathy"
     ],
-    "prefix": "10.1080",
-    "volume": "46",
+    "prefix": "10.1089",
+    "volume": "7",
     "author": [
         {
-            "given": "Sarah M.",
-            "family": "Surak",
+            "given": "Suzanne L.",
+            "family": "Osman",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Salisbury University, Salisbury, Maryland, USA"
-                },
-                {
-                    "name": "Virginia Tech, Blacksburg, Virginia, USA"
-                }
-            ]
-        },
-        {
-            "given": "Andrew-Joseph",
-            "family": "Scerri",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Virginia Tech, Blacksburg, Virginia, USA"
+                    "name": "Department of Psychology, Salisbury University, Salisbury, Maryland, USA."
                 }
             ]
         }
     ],
-    "member": "301",
-    "published-online": {
-        "date-parts": [
-            [
-                2024,
-                2,
-                20
-            ]
-        ]
-    },
+    "member": "278",
+    "reference": [
+        {
+            "key": "B1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s10935-009-0198-4"
+        },
+        {
+            "key": "B2",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/1079063211423944"
+        },
+        {
+            "key": "B4",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/0022-3514.43.2.372"
+        },
+        {
+            "key": "B5",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0306624X13496544"
+        },
+        {
+            "key": "B6",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1471-6402.2007.00385.x"
+        },
+        {
+            "key": "B7",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s11199-010-9919-7"
+        },
+        {
+            "key": "B8",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1089/vio.2016.0017"
+        },
+        {
+            "key": "B9",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1559-1816.2003.tb01907.x"
+        },
+        {
+            "key": "B10",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/1524838014566721"
+        }
+    ],
     "container-title": [
-        "New Political Science"
+        "Violence and Gender"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/07393148.2024.2307145",
+            "URL": "https://www.liebertpub.com/doi/full-xml/10.1089/vio.2019.0057",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://www.liebertpub.com/doi/pdf/10.1089/vio.2019.0057",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -103,92 +149,67 @@
     "deposited": {
         "date-parts": [
             [
-                2024,
-                5,
-                9
+                2020,
+                9,
+                16
             ]
         ],
-        "date-time": "2024-05-09T12:35:41Z",
-        "timestamp": 1715258141000
+        "date-time": "2020-09-16T14:43:10Z",
+        "timestamp": 1600267390000
     },
-    "score": 15.345533,
+    "score": 15.970482,
     "resource": {
         "primary": {
-            "URL": "https://www.tandfonline.com/doi/full/10.1080/07393148.2024.2307145"
+            "URL": "https://www.liebertpub.com/doi/10.1089/vio.2019.0057"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2024,
-                1,
-                2
+                2020,
+                9,
+                1
             ]
         ]
     },
-    "references-count": 0,
+    "references-count": 9,
     "journal-issue": {
-        "issue": "1",
+        "issue": "3",
         "published-print": {
             "date-parts": [
                 [
-                    2024,
-                    1,
-                    2
+                    2020,
+                    9,
+                    1
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1080/07393148.2024.2307145"
+        "10.1089/vio.2019.0057"
     ],
-    "URL": "http://dx.doi.org/10.1080/07393148.2024.2307145",
+    "URL": "http://dx.doi.org/10.1089/vio.2019.0057",
     "ISSN": [
-        "0739-3148",
-        "1469-9931"
+        "2326-7836",
+        "2326-7852"
     ],
     "issn-type": [
         {
-            "value": "0739-3148",
+            "value": "2326-7836",
             "type": "print"
         },
         {
-            "value": "1469-9931",
+            "value": "2326-7852",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2024,
-                1,
-                2
+                2020,
+                9,
+                1
             ]
         ]
-    },
-    "assertion": [
-        {
-            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
-            "order": 1,
-            "name": "peerreview_statement",
-            "label": "Peer Review Statement"
-        },
-        {
-            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=cnps20",
-            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=cnps20",
-            "order": 2,
-            "name": "aims_and_scope_url",
-            "label": "Aim & Scope"
-        },
-        {
-            "value": "2024-02-20",
-            "order": 2,
-            "name": "published",
-            "label": "Published",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        }
-    ]
+    }
 }

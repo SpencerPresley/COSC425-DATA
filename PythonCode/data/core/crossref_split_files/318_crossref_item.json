@@ -2,62 +2,62 @@
     "indexed": {
         "date-parts": [
             [
-                2023,
-                5,
-                8
+                2024,
+                8,
+                23
             ]
         ],
-        "date-time": "2023-05-08T08:14:31Z",
-        "timestamp": 1683533671464
+        "date-time": "2024-08-23T18:26:29Z",
+        "timestamp": 1724437589434
     },
-    "reference-count": 72,
-    "publisher": "Hindawi Limited",
+    "reference-count": 105,
+    "publisher": "Wiley",
     "issue": "6",
     "license": [
         {
             "start": {
                 "date-parts": [
                     [
-                        2022,
+                        2021,
                         6,
-                        19
+                        21
                     ]
                 ],
-                "date-time": "2022-06-19T00:00:00Z",
-                "timestamp": 1655596800000
+                "date-time": "2021-06-21T00:00:00Z",
+                "timestamp": 1624233600000
             },
-            "content-version": "vor",
-            "delay-in-days": 0,
-            "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+            "content-version": "am",
+            "delay-in-days": 20,
+            "URL": "http://creativecommons.org/licenses/by/4.0/"
         },
         {
             "start": {
                 "date-parts": [
                     [
-                        2022,
+                        2021,
                         6,
-                        19
+                        21
                     ]
                 ],
-                "date-time": "2022-06-19T00:00:00Z",
-                "timestamp": 1655596800000
+                "date-time": "2021-06-21T00:00:00Z",
+                "timestamp": 1624233600000
             },
-            "content-version": "tdm",
-            "delay-in-days": 0,
-            "URL": "http://doi.wiley.com/10.1002/tdm_license_1.1"
+            "content-version": "vor",
+            "delay-in-days": 20,
+            "URL": "http://creativecommons.org/licenses/by/4.0/"
         }
     ],
     "funder": [
         {
-            "DOI": "10.13039/100009303",
-            "name": "National Association of Social Workers Foundation",
+            "DOI": "10.13039/100000001",
+            "name": "National Science Foundation",
             "doi-asserted-by": "publisher",
             "award": [
-                "1R01HD078526"
+                "DBI\u20101639145"
             ],
             "id": [
                 {
-                    "id": "10.13039/100009303",
+                    "id": "10.13039/100000001",
                     "id-type": "DOI",
                     "asserted-by": "publisher"
                 }
@@ -66,488 +66,975 @@
     ],
     "content-domain": {
         "domain": [
-            "onlinelibrary.wiley.com"
+            "esajournals.onlinelibrary.wiley.com"
         ],
         "crossmark-restriction": true
     },
     "short-container-title": [
-        "Health Social Care Comm"
+        "Ecosphere"
     ],
     "published-print": {
         "date-parts": [
             [
-                2022,
-                11
+                2021,
+                6
             ]
         ]
     },
-    "DOI": "10.1111/hsc.13883",
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>During the 21st century, human\u2013environment interactions will increasingly expose both systems to risks, but also yield opportunities for improvement as we gain insight into these complex, coupled systems. Human\u2013environment interactions operate over multiple spatial and temporal scales, requiring large data volumes of multi\u2010resolution information for analysis. Climate change, land\u2010use change, urbanization, and wildfires, for example, can affect regions differently depending on ecological and socioeconomic structures. The relative scarcity of data on both humans and natural systems at the relevant extent can be prohibitive when pursuing inquiries into these complex relationships. We explore the value of multitemporal, high\u2010density, and high\u2010resolution LiDAR, imaging spectroscopy, and digital camera data from the National Ecological Observatory Network\u2019s Airborne Observation Platform (NEON AOP) for Socio\u2010Environmental Systems (SES) research. In addition to providing an overview of NEON AOP datasets and outlining specific applications for addressing SES questions, we highlight current challenges and provide recommendations for the SES research community to improve and expand its use of this platform for SES research. The coordinated, nationwide AOP remote sensing data, collected annually over the next 30\u00a0yr, offer exciting opportunities for cross\u2010site analyses and comparison, upscaling metrics derived from LiDAR and hyperspectral datasets across larger spatial extents, and addressing questions across diverse scales. Integrating AOP data with other SES datasets will allow researchers to investigate complex systems and provide urgently needed policy recommendations for socio\u2010environmental challenges. We urge the SES research community to further explore questions and theories in social and economic disciplines that might leverage NEON AOP data.</jats:p>",
+    "DOI": "10.1002/ecs2.3640",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2022,
+                2021,
                 6,
-                19
+                21
             ]
         ],
-        "date-time": "2022-06-19T13:59:02Z",
-        "timestamp": 1655647142000
+        "date-time": "2021-06-21T08:36:52Z",
+        "timestamp": 1624264612000
     },
     "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 1,
+    "is-referenced-by-count": 8,
     "title": [
-        "Access to health services among sexual minority people in the United States"
+        "Leveraging the NEON Airborne Observation Platform for socio\u2010environmental systems research"
     ],
-    "prefix": "10.1155",
-    "volume": "30",
+    "prefix": "10.1002",
+    "volume": "12",
     "author": [
         {
-            "given": "Daniel C.",
-            "family": "Green",
+            "ORCID": "http://orcid.org/0000-0002-7720-1754",
+            "authenticated-orcid": false,
+            "given": "Elsa M.",
+            "family": "Ordway",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "School of Social Work Salisbury University  Salisbury Maryland USA"
+                    "name": "Department of Organismic and Evolutionary Biology Harvard University 26 Oxford Street Cambridge Massachusetts 02138 USA"
                 }
             ]
         },
         {
-            "given": "Luis A.",
-            "family": "Parra",
+            "ORCID": "http://orcid.org/0000-0002-9697-9457",
+            "authenticated-orcid": false,
+            "given": "Andrew J.",
+            "family": "Elmore",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Brown School Washington University in St. Louis  St. Louis Missouri USA"
+                    "name": "National Socio\u2010Environmental Synthesis Center University of Maryland 1 Park Place Suite 300 Annapolis Maryland 21401 USA"
+                },
+                {
+                    "name": "Appalachian Laboratory University of Maryland Center for Environmental Science 301 Braddock Road Frostburg Maryland 21532 USA"
                 }
             ]
         },
         {
-            "given": "Jeremy T.",
-            "family": "Goldbach",
+            "given": "Sonja",
+            "family": "Kolstoe",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Brown School Washington University in St. Louis  St. Louis Missouri USA"
+                    "name": "Department of Economics and Finance Department of Environmental Studies Salisbury University 1101 Camden Avenue Salisbury Maryland 21801 USA"
+                },
+                {
+                    "name": "USDA Forest Service Pacific Northwest Research Station Portland Oregon 97205 USA"
+                }
+            ]
+        },
+        {
+            "given": "John E.",
+            "family": "Quinn",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Biology Furman University 3300 Poinsett Hwy Greenville South Carolina 29613 USA"
+                }
+            ]
+        },
+        {
+            "given": "Rachel",
+            "family": "Swanwick",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "National Socio\u2010Environmental Synthesis Center University of Maryland 1 Park Place Suite 300 Annapolis Maryland 21401 USA"
+                }
+            ]
+        },
+        {
+            "ORCID": "http://orcid.org/0000-0003-2164-3809",
+            "authenticated-orcid": false,
+            "given": "Megan",
+            "family": "Cattau",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Human Environment Systems Boise State University Boise Idaho 83712 USA"
+                }
+            ]
+        },
+        {
+            "given": "Dylan",
+            "family": "Taillie",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Appalachian Laboratory University of Maryland Center for Environmental Science 301 Braddock Road Frostburg Maryland 21532 USA"
+                }
+            ]
+        },
+        {
+            "given": "Steven M.",
+            "family": "Guinn",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Appalachian Laboratory University of Maryland Center for Environmental Science 301 Braddock Road Frostburg Maryland 21532 USA"
+                }
+            ]
+        },
+        {
+            "ORCID": "http://orcid.org/0000-0002-5633-4865",
+            "authenticated-orcid": false,
+            "given": "K. Dana",
+            "family": "Chadwick",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Earth System Science Stanford University 367 Panama Street Stanford California 94305 USA"
+                }
+            ]
+        },
+        {
+            "ORCID": "http://orcid.org/0000-0002-2295-3131",
+            "authenticated-orcid": false,
+            "given": "Jeff W.",
+            "family": "Atkins",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Biology Virginia Commonwealth University 1000 W. Cary Street Richmond Virginia 23284 USA"
+                }
+            ]
+        },
+        {
+            "ORCID": "http://orcid.org/0000-0003-0847-9100",
+            "authenticated-orcid": false,
+            "given": "Rachael E.",
+            "family": "Blake",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "National Socio\u2010Environmental Synthesis Center University of Maryland 1 Park Place Suite 300 Annapolis Maryland 21401 USA"
+                }
+            ]
+        },
+        {
+            "given": "Melissa",
+            "family": "Chapman",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Environmental Science, Policy, and Management University of California Berkeley 130 Hilgard Way Berkeley California 94720 USA"
+                }
+            ]
+        },
+        {
+            "given": "Kelly",
+            "family": "Cobourn",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Forest Resources and Environmental Conservation Virginia Tech 310 W Campus Drive Blacksburg Virginia 24061 USA"
+                }
+            ]
+        },
+        {
+            "ORCID": "http://orcid.org/0000-0001-9973-4079",
+            "authenticated-orcid": false,
+            "given": "Tristan",
+            "family": "Goulden",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Battelle National Ecological Observatory Network (NEON) 1685 38th Street Boulder Colorado USA"
+                }
+            ]
+        },
+        {
+            "ORCID": "http://orcid.org/0000-0003-3977-0507",
+            "authenticated-orcid": false,
+            "given": "Matthew R.",
+            "family": "Helmus",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Integrative Ecology Lab Center for Biodiversity Department of Biology Temple University Philadelphia Pennsylvania 19122 USA"
+                }
+            ]
+        },
+        {
+            "ORCID": "http://orcid.org/0000-0002-1928-1442",
+            "authenticated-orcid": false,
+            "given": "Kelly",
+            "family": "Hondula",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "National Socio\u2010Environmental Synthesis Center University of Maryland 1 Park Place Suite 300 Annapolis Maryland 21401 USA"
+                },
+                {
+                    "name": "Battelle National Ecological Observatory Network (NEON) 1685 38th Street Boulder Colorado USA"
+                }
+            ]
+        },
+        {
+            "given": "Carrie",
+            "family": "Hritz",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "National Socio\u2010Environmental Synthesis Center University of Maryland 1 Park Place Suite 300 Annapolis Maryland 21401 USA"
+                }
+            ]
+        },
+        {
+            "ORCID": "http://orcid.org/0000-0002-5296-9062",
+            "authenticated-orcid": false,
+            "given": "Jennifer",
+            "family": "Jensen",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Geography Texas State University San Marcos Texas 78666 USA"
+                }
+            ]
+        },
+        {
+            "given": "Jason P.",
+            "family": "Julian",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Geography Texas State University San Marcos Texas 78666 USA"
+                }
+            ]
+        },
+        {
+            "given": "Yusuke",
+            "family": "Kuwayama",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "School of Public Policy University of Maryland Baltimore Maryland 21250 USA"
+                }
+            ]
+        },
+        {
+            "given": "Vijay",
+            "family": "Lulla",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Geography Indiana University\u2010Purdue University Indianapolis Indianapolis Indiana 46202 USA"
+                }
+            ]
+        },
+        {
+            "given": "Donal",
+            "family": "O\u2019Leary",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Battelle National Ecological Observatory Network (NEON) 1685 38th Street Boulder Colorado USA"
+                }
+            ]
+        },
+        {
+            "given": "Donald R.",
+            "family": "Nelson",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Anthropology University of Georgia 250 Baldwin Hall Athens Georgia 30606 USA"
+                }
+            ]
+        },
+        {
+            "ORCID": "http://orcid.org/0000-0002-3899-9062",
+            "authenticated-orcid": false,
+            "given": "Jonathan P.",
+            "family": "Oc\u00f3n",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Geography University of California, Los Angeles 1255 Bunche Hall Los Angeles California 90095 USA"
+                }
+            ]
+        },
+        {
+            "ORCID": "http://orcid.org/0000-0001-8135-9266",
+            "authenticated-orcid": false,
+            "given": "Stephanie",
+            "family": "Pau",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Geography Florida State University Tallahassee Florida 32306 USA"
+                }
+            ]
+        },
+        {
+            "given": "Guillermo E.",
+            "family": "Ponce\u2010Campos",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "School of Natural Resources and the Environment University of Arizona 1064 E Lowell St Tucson Arizona 85721 USA"
+                }
+            ]
+        },
+        {
+            "given": "Carlos",
+            "family": "Portillo\u2010Quintero",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Natural Resources Management Texas Tech University Lubbock Texas 79409 USA"
+                }
+            ]
+        },
+        {
+            "ORCID": "http://orcid.org/0000-0002-6591-7237",
+            "authenticated-orcid": false,
+            "given": "Narcisa G.",
+            "family": "Pricope",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Earth and Ocean Sciences University of North Carolina Wilmington 601 S. College Road Wilmington North Carolina 28403 USA"
+                }
+            ]
+        },
+        {
+            "given": "Rosanna G.",
+            "family": "Rivero",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "College of Environment and Design University of Georgia 285 South Jackson Street Athens Georgia 30602 USA"
+                }
+            ]
+        },
+        {
+            "given": "Laura",
+            "family": "Schneider",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Geography Rutgers University LSH Livingston Campus Piscataway New Jersey 08854 USA"
+                }
+            ]
+        },
+        {
+            "given": "Meredith",
+            "family": "Steele",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "School of Plant and Environmental Sciences Virginia Tech 185 Ag Quad Ln Blacksburg Virginia 24061 USA"
+                }
+            ]
+        },
+        {
+            "given": "Mirela G.",
+            "family": "Tulbure",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Center for Geospatial Analytics Department of Forestry and Environmental Resources North Carolina State University Raleigh North Carolina 27695 USA"
+                }
+            ]
+        },
+        {
+            "ORCID": "http://orcid.org/0000-0002-2550-5828",
+            "authenticated-orcid": false,
+            "given": "Matthew A.",
+            "family": "Williamson",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Human Environment Systems Boise State University Boise Idaho 83712 USA"
+                }
+            ]
+        },
+        {
+            "given": "Cyril",
+            "family": "Wilson",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Geography &amp; Anthropology University of Wisconsin\u2010Eau Claire 105 Garfield Avenue Eau Claire Wisconsin 54702 USA"
                 }
             ]
         }
     ],
-    "member": "98",
+    "member": "311",
     "published-online": {
         "date-parts": [
             [
-                2022,
+                2021,
                 6,
-                19
+                21
             ]
         ]
     },
     "reference": [
         {
-            "issue": "2",
-            "key": "e_1_2_10_2_1",
-            "article-title": "Access to health services by lesbian, gay, bisexual, and transgender persons: Systematic literature review",
-            "volume": "16",
-            "author": "Albuquerque A.",
-            "year": "2016",
-            "journal-title": "BMC International Health and Human Rights"
-        },
-        {
-            "issue": "2",
-            "key": "e_1_2_10_3_1",
-            "first-page": "79",
-            "article-title": "Higher education as a predictor of employment: The world of work perspective",
-            "volume": "40",
-            "author": "Ali M.",
-            "year": "2018",
-            "journal-title": "Bulletin of Education and Research"
-        },
-        {
-            "key": "e_1_2_10_4_1",
+            "key": "e_1_2_9_2_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s11524\u2010016\u20100054\u20109"
+            "DOI": "10.1080/08941920.2012.671450"
         },
         {
-            "key": "e_1_2_10_5_1",
+            "key": "e_1_2_9_3_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/2150131917697439"
+            "DOI": "10.1073/pnas.1523397113"
         },
         {
-            "key": "e_1_2_10_6_1",
-            "unstructured": "Babitsch B. Gohl D. &vonLengerke T.(2012).Re\u2010revisiting Andersen's Behavioral Model of Health Services Use: A systematic review of studies from 1998\u20132011.https://doi.org/10.3205/psm000089"
-        },
-        {
-            "key": "e_1_2_10_7_1",
+            "key": "e_1_2_9_4_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.7759/cureus.500"
+            "DOI": "10.1073/pnas.1604863113"
         },
         {
-            "key": "e_1_2_10_8_1",
+            "key": "e_1_2_9_5_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.amepre.2013.11.010"
+            "DOI": "10.1126/science.aaj1987"
         },
         {
-            "key": "e_1_2_10_9_1",
+            "key": "e_1_2_9_6_1",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Atkins J. W. et al.2019.Multidimensional Structural Characterization is Required to Detect and Differentiate Among Moderate Disturbance Agents.https://doi.org/10.20944/preprints201911.0082.v1",
+            "DOI": "10.20944/preprints201911.0082.v1"
+        },
+        {
+            "key": "e_1_2_9_7_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.radi.2016.04.011"
+            "DOI": "10.2105/AJPH.2017.304128"
         },
         {
-            "key": "e_1_2_10_10_1",
+            "key": "e_1_2_9_8_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/15299716.2012.674860"
+            "DOI": "10.1073/pnas.1617394114"
         },
         {
-            "key": "e_1_2_10_11_1",
+            "key": "e_1_2_9_9_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2105/AJPH.2009.160804"
+            "DOI": "10.3201/eid0603.000301"
         },
         {
-            "key": "e_1_2_10_12_1",
-            "first-page": "102",
-            "volume-title": "Cambridge handbook of psychology, health and medicine",
-            "author": "Carmody T.",
-            "year": "2007"
+            "key": "e_1_2_9_10_1",
+            "unstructured": "BLS [Bureau of Labor Statistics].2020.Local area unemployment statistics.https://www.bls.gov/lau/"
         },
         {
-            "key": "e_1_2_10_13_1",
+            "key": "e_1_2_9_11_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00918369.2012.694766"
+            "DOI": "10.1007/s12108-997-1014-3"
         },
         {
-            "key": "e_1_2_10_14_1",
+            "key": "e_1_2_9_12_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2105/AJPH.2016.303049"
+            "DOI": "10.1257/pol.20180559"
         },
         {
-            "key": "e_1_2_10_15_1",
+            "key": "e_1_2_9_13_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1377/hlthaff.2011.0644"
+            "DOI": "10.1109/CVPRW50498.2020.00113"
         },
         {
-            "key": "e_1_2_10_16_1",
+            "key": "e_1_2_9_14_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1097/MLR.0b013e3181866443"
+            "DOI": "10.1029/2018GL081108"
         },
         {
-            "key": "e_1_2_10_17_1",
+            "key": "e_1_2_9_15_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1097/NND.0000000000000450"
+            "DOI": "10.1088/1748-9326/aa8f55"
         },
         {
-            "key": "e_1_2_10_18_1",
+            "key": "e_1_2_9_16_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1086/645090"
+            "DOI": "10.1016/j.ecoser.2018.04.009"
         },
         {
-            "key": "e_1_2_10_19_1",
+            "key": "e_1_2_9_17_1",
+            "unstructured": "Budburst.2020.Budburst Data.https://accounts.budburst.org/data"
+        },
+        {
+            "key": "e_1_2_9_18_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2105/AJPH.2012.301110"
+            "DOI": "10.1111/geb.13058"
         },
         {
-            "key": "e_1_2_10_20_1",
+            "key": "e_1_2_9_19_1",
+            "unstructured": "CDC [Centers for Disease Control and Prevention].2020.Geo\u2010spatial data resources.https://www.cdc.gov/dhdsp/maps/gisx/resources/geo\u2010spatial\u2010data.html"
+        },
+        {
+            "key": "e_1_2_9_20_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1093/geront/gns123"
+            "DOI": "10.1111/2041-210X.13463"
         },
         {
-            "key": "e_1_2_10_21_1",
+            "key": "e_1_2_9_21_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1089/lgbt.2014.0005"
+            "DOI": "10.3390/rs8020087"
         },
         {
-            "key": "e_1_2_10_22_1",
+            "key": "e_1_2_9_22_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10865\u2010013\u20109523\u20108"
+            "DOI": "10.5751/ES-01569-110114"
         },
         {
-            "key": "e_1_2_10_23_1",
+            "key": "e_1_2_9_23_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s13178\u2010019\u201000418\u20109"
+            "DOI": "10.1029/2020GL090864"
         },
         {
-            "key": "e_1_2_10_24_1",
+            "key": "e_1_2_9_24_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/1557988318774994"
+            "DOI": "10.1016/j.tree.2014.10.005"
         },
         {
-            "key": "e_1_2_10_25_1",
+            "key": "e_1_2_9_25_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/2325958219880569"
+            "DOI": "10.3189/2013JoG12J154"
         },
         {
-            "issue": "4",
-            "key": "e_1_2_10_26_1",
-            "first-page": "e1184",
-            "article-title": "Health care disparities among lesbian, gay, bisexual, and transgender youth: A literature review",
-            "volume": "9",
-            "author": "Hafeez H.",
-            "year": "2017",
-            "journal-title": "Cureus"
-        },
-        {
-            "key": "e_1_2_10_27_1",
+            "key": "e_1_2_9_26_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0020731415585986"
+            "DOI": "10.1007/s10745-005-5156-z"
         },
         {
-            "key": "e_1_2_10_28_1",
-            "volume-title": "Access to health services",
-            "author": "Healthy People",
-            "year": "2020"
-        },
-        {
-            "key": "e_1_2_10_29_1",
+            "key": "e_1_2_9_27_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2105/AJPH.2005.062661"
+            "DOI": "10.1016/j.rse.2009.03.010"
         },
         {
-            "key": "e_1_2_10_30_1",
-            "first-page": "101",
-            "volume-title": "Textbook of homosexuality and mental health",
-            "author": "Herek G.",
-            "year": "1996"
+            "key": "e_1_2_9_28_1",
+            "unstructured": "DHS [U.S. Department of Homeland Security].2020.Homeland Infrastructure Foundation Level Data (HIFLD) Open Data.https://hub.arcgis.com/datasets/a887fea190a84bd493eb6a3de0cbf99e"
         },
         {
-            "key": "e_1_2_10_31_1",
+            "key": "e_1_2_9_29_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00918369.2015.1083775"
+            "DOI": "10.1257/jep.30.4.171"
         },
         {
-            "key": "e_1_2_10_32_1",
-            "volume-title": "Committee on monitoring access to personal health care services. Access to health care in America",
-            "author": "Institute of Medicine",
-            "year": "1993"
+            "key": "e_1_2_9_30_1",
+            "unstructured": "eBird.2020.eBird.https://ebird.org/home"
         },
         {
-            "key": "e_1_2_10_33_1",
+            "key": "e_1_2_9_31_1",
+            "unstructured": "EPA [U.S. Environmental Protection Agency].2020.Geospatial Resources at EPA.https://www.epa.gov/geospatial/epa\u2010geospatial\u2010data#EDG"
+        },
+        {
+            "key": "e_1_2_9_32_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.pmedr.2019.100864"
+            "DOI": "10.1016/j.jenvman.2018.05.045"
         },
         {
-            "key": "e_1_2_10_34_1",
+            "key": "e_1_2_9_33_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1097/ACM.0000000000001601"
+            "DOI": "10.1007/978-3-319-40658-9"
         },
         {
-            "key": "e_1_2_10_35_1",
+            "key": "e_1_2_9_34_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0959353509342770"
+            "DOI": "10.1029/JD095iD04p03549"
         },
         {
-            "key": "e_1_2_10_36_1",
-            "unstructured": "Kaiser Family Foundation/Health Research & Educational Trust. (2016).Employer health benefits survey.http://www.kff.org/report\u2010section/ehbs\u20102016\u2010summary\u2010of\u2010findings/"
-        },
-        {
-            "key": "e_1_2_10_37_1",
+            "key": "e_1_2_9_35_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1377/hlthaff.2012.0825"
+            "DOI": "10.1007/s10661-018-6597-3"
         },
         {
-            "key": "e_1_2_10_38_1",
+            "key": "e_1_2_9_36_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s11524-006-9096-8"
+            "DOI": "10.1007/s10661-013-3098-2"
         },
         {
-            "key": "e_1_2_10_39_1",
+            "key": "e_1_2_9_37_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1093/geront/gnw172"
+            "DOI": "10.1002/joc.1276"
         },
         {
-            "key": "e_1_2_10_40_1",
-            "volume-title": "Generations\u2014A study of the life and health of LGB people in a changing society (methodology and technical notes, gallup quantitative survey)",
-            "author": "Krueger E. A.",
-            "year": "2020"
-        },
-        {
-            "key": "e_1_2_10_41_1",
+            "key": "e_1_2_9_38_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1097/01.mlr.0000220829.87073.f7"
+            "DOI": "10.3390/rs6086844"
         },
         {
-            "key": "e_1_2_10_42_1",
+            "key": "e_1_2_9_39_1",
+            "unstructured": "iNaturalist.2020.iNaturalist.https://www.inaturalist.org/observations"
+        },
+        {
+            "key": "e_1_2_9_40_1",
+            "unstructured": "IPUMS.2020a.Harmonized data from U.S. national health surveys.https://healthsurveys.ipums.org/"
+        },
+        {
+            "key": "e_1_2_9_41_1",
+            "unstructured": "IPUMS.2020b.Current population survey data for social economic and health research.https://cps.ipums.org/cps/"
+        },
+        {
+            "key": "e_1_2_9_42_1",
+            "unstructured": "IPUMS.2020c.Survey data on scientists and engineers.https://highered.ipums.org/highered/"
+        },
+        {
+            "key": "e_1_2_9_43_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/1745691613497965"
+            "DOI": "10.1080/01426390701231515"
         },
         {
-            "key": "e_1_2_10_43_1",
+            "key": "e_1_2_9_44_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1089/lgbt.2018.0153"
+            "DOI": "10.1038/s41893-019-0396-x"
         },
         {
-            "key": "e_1_2_10_44_1",
+            "key": "e_1_2_9_45_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/jrh.12063"
+            "DOI": "10.1126/science.aaf7894"
         },
         {
-            "key": "e_1_2_10_45_1",
+            "key": "e_1_2_9_46_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jadohealth.2017.05.032"
+            "DOI": "10.1117/1.3361375"
         },
         {
-            "key": "e_1_2_10_46_1",
+            "key": "e_1_2_9_47_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1089/lgbt.2016.0087"
+            "DOI": "10.1016/j.rse.2013.07.041"
         },
         {
-            "key": "e_1_2_10_47_1",
+            "key": "e_1_2_9_48_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1513/AnnalsATS.201402\u2010072PS"
+            "DOI": "10.1890/140124"
         },
         {
-            "key": "e_1_2_10_48_1",
+            "key": "e_1_2_9_49_1",
+            "first-page": "220",
+            "article-title": "Upscale or downscale: applications of fine scale remotely sensed data to Chagas disease in Argentina and schistosomiasis in Kenya",
+            "volume": "46",
+            "author": "Kitron U.",
+            "year": "2010",
+            "journal-title": "Geospatial Health"
+        },
+        {
+            "key": "e_1_2_9_50_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1089/lgbt.2015.0124"
+            "DOI": "10.1017/age.2018.9"
         },
         {
-            "key": "e_1_2_10_49_1",
+            "key": "e_1_2_9_51_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.socscimed.2018.05.020"
+            "DOI": "10.5751/ES-09429-220244"
         },
         {
-            "key": "e_1_2_10_50_1",
+            "key": "e_1_2_9_52_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1371/journal.pone.0180544"
+            "DOI": "10.1046/j.1466-822x.2002.00303.x"
         },
         {
-            "key": "e_1_2_10_51_1",
+            "key": "e_1_2_9_53_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1086/426800"
+            "DOI": "10.1002/ecs2.2298"
         },
         {
-            "key": "e_1_2_10_52_1",
+            "key": "e_1_2_9_54_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0033\u20102909.129.5.674"
+            "DOI": "10.2307/1941447"
         },
         {
-            "key": "e_1_2_10_53_1",
+            "key": "e_1_2_9_55_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1089/lgbt.2013.0007"
+            "DOI": "10.1126/science.1144004"
         },
         {
-            "key": "e_1_2_10_54_1",
-            "volume-title": "Insuring rural America: Health insurance challenges and opportunities",
-            "author": "Mueller K.",
-            "year": "2018"
+            "key": "e_1_2_9_56_1",
+            "volume-title": "People and pixels: linking remote sensing and social science",
+            "author": "Liverman D.",
+            "year": "1998"
         },
         {
-            "key": "e_1_2_10_55_1",
+            "key": "e_1_2_9_57_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1089/lgbt.2016.0115"
+            "DOI": "10.1038/s41477-018-0205-y"
         },
         {
-            "key": "e_1_2_10_56_1",
+            "key": "e_1_2_9_58_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2105/AJPH.2015.302762"
+            "DOI": "10.3390/rs10020199"
         },
         {
-            "key": "e_1_2_10_57_1",
+            "key": "e_1_2_9_59_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s11199\u2010013\u20100283\u2010"
+            "DOI": "10.1016/j.landusepol.2017.04.040"
         },
         {
-            "key": "e_1_2_10_58_1",
+            "key": "e_1_2_9_60_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/13557858.2018.1444149"
+            "DOI": "10.1257/app.20160484"
         },
         {
-            "key": "e_1_2_10_59_1",
+            "key": "e_1_2_9_61_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10900-019-00631-y"
+            "DOI": "10.1016/j.rse.2016.12.022"
         },
         {
-            "key": "e_1_2_10_60_1",
+            "key": "e_1_2_9_62_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1377/hlthaff.2009.1026"
+            "DOI": "10.1016/j.foreco.2014.08.039"
         },
         {
-            "key": "e_1_2_10_61_1",
+            "key": "e_1_2_9_63_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.3322/caac.21288"
+            "DOI": "10.1146/annurev-phyto-081211-172938"
         },
         {
-            "key": "e_1_2_10_62_1",
+            "key": "e_1_2_9_64_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.6064/2012/432892"
+            "DOI": "10.1641/0006-3568(2001)051[1018:DAUB]2.0.CO;2"
         },
         {
-            "key": "e_1_2_10_63_1",
+            "key": "e_1_2_9_65_1",
+            "unstructured": "NEON [National Ecological Observatory Network].2021.Site management and event reporting.https://data.neonscience.org/data\u2010products/DP1.10111.001"
+        },
+        {
+            "key": "e_1_2_9_66_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1370/afm.1567"
+            "DOI": "10.1016/j.landurbplan.2017.08.008"
         },
         {
-            "key": "e_1_2_10_64_1",
+            "key": "e_1_2_9_67_1",
+            "unstructured": "Nolte C.2020.Private\u2010Land Conservation Evidence System (PLACES).https://placeslab.org/data/"
+        },
+        {
+            "key": "e_1_2_9_68_1",
+            "volume-title": "Complexity theory for a sustainable future",
+            "author": "Norberg J.",
+            "year": "2008"
+        },
+        {
+            "key": "e_1_2_9_69_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1377/hlthaff.2015.0826"
+            "DOI": "10.1073/pnas.1914420117"
         },
         {
-            "key": "e_1_2_10_65_1",
-            "unstructured": "Taylor J.(2004).Fundamentals of community health centers. National Health Policy Forum. Paper 136.https://hsrc.himmelfarb.gwu.edu/sphhs_centers_nhpf/136"
-        },
-        {
-            "key": "e_1_2_10_66_1",
+            "key": "e_1_2_9_70_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s11524\u2010015\u20109961\u20104"
+            "DOI": "10.1126/science.1172133"
         },
         {
-            "key": "e_1_2_10_67_1",
-            "unstructured": "USDA. (2013).Rural\u2010urban commuting area codes.https://www.ers.usda.gov/data\u2010products/rural\u2010urban\u2010commuting\u2010area\u2010codes.aspx"
-        },
-        {
-            "key": "e_1_2_10_68_1",
+            "key": "e_1_2_9_71_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1370/afm.557"
+            "DOI": "10.1002/eap.1620"
         },
         {
-            "key": "e_1_2_10_69_1",
+            "key": "e_1_2_9_72_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.3390/ijerph16020281"
+            "DOI": "10.1016/j.jenvman.2016.08.042"
         },
         {
-            "key": "e_1_2_10_70_1",
+            "key": "e_1_2_9_73_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3390/rs11232783"
+        },
+        {
+            "key": "e_1_2_9_74_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1093/jel/eqp027"
+        },
+        {
+            "key": "e_1_2_9_75_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/ecs2.2762"
+        },
+        {
+            "key": "e_1_2_9_76_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/conl.12250"
+        },
+        {
+            "key": "e_1_2_9_77_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5751/ES-09330-220224"
+        },
+        {
+            "key": "e_1_2_9_78_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3390/rs8100839"
+        },
+        {
+            "key": "e_1_2_9_79_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1088/1748-9326/ab9e99"
+        },
+        {
+            "key": "e_1_2_9_80_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3390/rs12091414"
+        },
+        {
+            "key": "e_1_2_9_81_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/03066150902820503"
+        },
+        {
+            "key": "e_1_2_9_82_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2495/FRIAR080031"
+        },
+        {
+            "key": "e_1_2_9_83_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/gere.12240"
+        },
+        {
+            "key": "e_1_2_9_84_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1088/1748-9326/aaba0f"
+        },
+        {
+            "key": "e_1_2_9_85_1",
             "first-page": "1",
-            "article-title": "Sexual orientation and health among U.S. adults: National health interview survey, 2013",
-            "volume": "77",
-            "author": "Ward B. W.",
-            "year": "2014",
-            "journal-title": "National Health Statistics Reports"
+            "volume-title": "Handbook of small satellites: technology, design, manufacture, applications, economics and regulation",
+            "author": "Tan S. Y.",
+            "year": "2020"
         },
         {
-            "key": "e_1_2_10_71_1",
-            "volume-title": "Disparities in care 2014 report",
-            "author": "Washington Health Alliance",
-            "year": "2014"
-        },
-        {
-            "key": "e_1_2_10_72_1",
+            "key": "e_1_2_9_86_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/1475\u20106773.12711"
+            "DOI": "10.1016/j.jort.2020.100295"
         },
         {
-            "key": "e_1_2_10_73_1",
+            "key": "e_1_2_9_87_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1093/geroni/igy023.242"
+            "DOI": "10.1016/j.cosust.2016.04.001"
+        },
+        {
+            "key": "e_1_2_9_88_1",
+            "unstructured": "USCB [US Census Bureau].2020a.American Community Survey Data.https://www.census.gov/programs\u2010surveys/acs/data.html"
+        },
+        {
+            "key": "e_1_2_9_89_1",
+            "unstructured": "USCB [US Census Bureau].2020b.Commuting Data.https://www.census.gov/topics/employment/commuting/data.html"
+        },
+        {
+            "key": "e_1_2_9_90_1",
+            "unstructured": "USCB [US Census Bureau].2020c.Decennial Census.https://www.census.gov/programs\u2010surveys/decennial\u2010census/data.html"
+        },
+        {
+            "key": "e_1_2_9_91_1",
+            "unstructured": "USCB [US Census Bureau].2020d.Poverty data tools.https://www.census.gov/topics/income\u2010poverty/poverty/data/data\u2010tools.html"
+        },
+        {
+            "key": "e_1_2_9_92_1",
+            "unstructured": "USDA NASS [U.S. Department of Agriculture National Agricultural Statistics Service].2020a.Data and Statistics.https://www.nass.usda.gov/Data_and_Statistics/"
+        },
+        {
+            "key": "e_1_2_9_93_1",
+            "unstructured": "USDA NASS [U.S. Department of Agriculture National Agricultural Statistics Service].2020b.Cropland Data Layer published crop\u2010specific data layer.http://nassgeodata.gmu.edu/CropScape/"
+        },
+        {
+            "key": "e_1_2_9_94_1",
+            "unstructured": "USDA\u2010USDI [U.S. Department of Agriculture and U.S. Department of Interior].2020.Landscape Fire and Resource Management Planning Tools Program (LANDFIRE).https://www.landfire.gov/notifications.php"
+        },
+        {
+            "key": "e_1_2_9_95_1",
+            "unstructured": "USGS [U.S. Geological Survey].2016.National Land Cover Database (NLCD).https://www.mrlc.gov/data?f%5B0%5D=category%3Aland%20cover"
+        },
+        {
+            "key": "e_1_2_9_96_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1641/0006-3568(2004)054[0523:UISTSE]2.0.CO;2"
+        },
+        {
+            "key": "e_1_2_9_97_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.gloenvcha.2013.09.004"
+        },
+        {
+            "key": "e_1_2_9_98_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1890/07-1280.1"
+        },
+        {
+            "key": "e_1_2_9_99_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.rse.2018.06.020"
+        },
+        {
+            "key": "e_1_2_9_100_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1126/science.aaf7150"
+        },
+        {
+            "key": "e_1_2_9_101_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/nph.16711"
+        },
+        {
+            "key": "e_1_2_9_102_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.rse.2014.11.001"
+        },
+        {
+            "key": "e_1_2_9_103_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.14358/PERS.69.9.1003"
+        },
+        {
+            "key": "e_1_2_9_104_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.ecolecon.2007.02.024"
+        },
+        {
+            "key": "e_1_2_9_105_1",
+            "first-page": "1",
+            "volume-title": "Political ecology: an integrative approach to geography and environment\u2010development studies",
+            "author": "Zimmerer K. S.",
+            "year": "2003"
+        },
+        {
+            "key": "e_1_2_9_106_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1029/2019WR025080"
         }
     ],
     "container-title": [
-        "Health &amp; Social Care in the Community"
+        "Ecosphere"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/hsc.13883",
+            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/ecs2.3640",
             "content-type": "application/pdf",
             "content-version": "vor",
             "intended-application": "text-mining"
         },
         {
-            "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1111/hsc.13883",
+            "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/ecs2.3640",
             "content-type": "application/xml",
             "content-version": "vor",
             "intended-application": "text-mining"
         },
         {
-            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/hsc.13883",
+            "URL": "https://esajournals.onlinelibrary.wiley.com/doi/pdf/10.1002/ecs2.3640",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "syndication"
+        },
+        {
+            "URL": "https://esajournals.onlinelibrary.wiley.com/doi/pdf/10.1002/ecs2.3640",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -556,74 +1043,72 @@
     "deposited": {
         "date-parts": [
             [
-                2022,
-                12,
-                29
+                2023,
+                8,
+                28
             ]
         ],
-        "date-time": "2022-12-29T16:48:32Z",
-        "timestamp": 1672332512000
+        "date-time": "2023-08-28T05:47:17Z",
+        "timestamp": 1693201637000
     },
-    "score": 14.024516,
+    "score": 4.2863173,
     "resource": {
         "primary": {
-            "URL": "https://onlinelibrary.wiley.com/doi/10.1111/hsc.13883"
+            "URL": "https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecs2.3640"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2022,
-                6,
-                19
+                2021,
+                6
             ]
         ]
     },
-    "references-count": 72,
+    "references-count": 105,
     "journal-issue": {
         "issue": "6",
         "published-print": {
             "date-parts": [
                 [
-                    2022,
-                    11
+                    2021,
+                    6
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1111/hsc.13883"
+        "10.1002/ecs2.3640"
     ],
-    "URL": "http://dx.doi.org/10.1111/hsc.13883",
+    "URL": "http://dx.doi.org/10.1002/ecs2.3640",
     "archive": [
         "Portico"
     ],
     "ISSN": [
-        "0966-0410",
-        "1365-2524"
+        "2150-8925",
+        "2150-8925"
     ],
     "issn-type": [
         {
-            "value": "0966-0410",
+            "value": "2150-8925",
             "type": "print"
         },
         {
-            "value": "1365-2524",
+            "value": "2150-8925",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2022,
-                6,
-                19
+                2021,
+                6
             ]
         ]
     },
     "assertion": [
         {
-            "value": "2021-03-23",
+            "value": "2020-09-22",
             "order": 0,
             "name": "received",
             "label": "Received",
@@ -633,7 +1118,7 @@
             }
         },
         {
-            "value": "2022-05-28",
+            "value": "2021-03-12",
             "order": 1,
             "name": "accepted",
             "label": "Accepted",
@@ -643,7 +1128,7 @@
             }
         },
         {
-            "value": "2022-06-19",
+            "value": "2021-06-21",
             "order": 2,
             "name": "published",
             "label": "Published",

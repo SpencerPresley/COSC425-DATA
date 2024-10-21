@@ -2,187 +2,150 @@
     "indexed": {
         "date-parts": [
             [
-                2024,
-                3,
-                7
+                2023,
+                9,
+                9
             ]
         ],
-        "date-time": "2024-03-07T19:58:35Z",
-        "timestamp": 1709841515124
+        "date-time": "2023-09-09T07:16:44Z",
+        "timestamp": 1694243804942
     },
-    "reference-count": 10,
-    "publisher": "Informa UK Limited",
-    "issue": "2",
+    "reference-count": 5,
+    "publisher": "Wiley",
+    "issue": "1",
+    "license": [
+        {
+            "start": {
+                "date-parts": [
+                    [
+                        2017,
+                        10,
+                        3
+                    ]
+                ],
+                "date-time": "2017-10-03T00:00:00Z",
+                "timestamp": 1506988800000
+            },
+            "content-version": "vor",
+            "delay-in-days": 0,
+            "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+        }
+    ],
     "content-domain": {
-        "domain": [
-            "www.tandfonline.com"
-        ],
-        "crossmark-restriction": true
+        "domain": [],
+        "crossmark-restriction": false
     },
     "short-container-title": [
-        "Communications in Algebra"
+        "Journal of Sociolinguistics"
     ],
     "published-print": {
         "date-parts": [
             [
-                2020,
-                2,
-                1
+                2018,
+                2
             ]
         ]
     },
-    "DOI": "10.1080/00927872.2019.1663383",
+    "DOI": "10.1111/josl.12249",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2019,
-                9,
-                16
+                2017,
+                10,
+                3
             ]
         ],
-        "date-time": "2019-09-16T22:55:21Z",
-        "timestamp": 1568674521000
+        "date-time": "2017-10-03T09:26:38Z",
+        "timestamp": 1507022798000
     },
-    "page": "857-865",
-    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
+    "page": "118-122",
     "source": "Crossref",
-    "is-referenced-by-count": 4,
+    "is-referenced-by-count": 0,
     "title": [
-        "Galkin\u2019s lower bound conjecture holds for the Grassmannian"
+        "FionaCopland and AngelaCreese (with Frances Rock and Sara Shaw). Linguistic Ethnography: Collecting, Analyzing, and Presenting Data. London: Sage Publications. 2015. 280 pp. Pb (9781446257388) US$48.00."
     ],
-    "prefix": "10.1080",
-    "volume": "48",
+    "prefix": "10.1111",
+    "volume": "22",
     "author": [
         {
-            "given": "La\u2019Tier",
-            "family": "Evans",
+            "given": "Derya",
+            "family": "Kulavuz\u2010Onal",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Department of Mathematics and Computer Science, Salisbury University, Salisbury, MD, USA"
-                }
-            ]
-        },
-        {
-            "given": "Lisa",
-            "family": "Schneider",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Mathematics and Computer Science, Salisbury University, Salisbury, MD, USA"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0003-4149-8864",
-            "authenticated-orcid": false,
-            "given": "Ryan M.",
-            "family": "Shifler",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Mathematics and Computer Science, Salisbury University, Salisbury, MD, USA"
-                }
-            ]
-        },
-        {
-            "given": "Laura",
-            "family": "Short",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Mathematics and Computer Science, Salisbury University, Salisbury, MD, USA"
-                }
-            ]
-        },
-        {
-            "given": "Stephanie",
-            "family": "Warman",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Mathematics and Computer Science, Salisbury University, Salisbury, MD, USA"
+                    "name": "Salisbury University Maryland U.S.A"
                 }
             ]
         }
     ],
-    "member": "301",
+    "member": "311",
     "published-online": {
         "date-parts": [
             [
-                2019,
-                9,
-                16
+                2017,
+                10,
+                3
             ]
         ]
     },
     "reference": [
         {
-            "key": "CIT0001",
+            "key": "e_1_2_2_2_1",
+            "first-page": "1",
+            "article-title": "Potentials and limitations of discourse\u2010centered online ethnography",
+            "volume": "5",
+            "author": "Androutsopoulos Jannis",
+            "year": "2008",
+            "journal-title": "Language@Internet"
+        },
+        {
+            "key": "e_1_2_2_3_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1006/aima.1997.1627"
+            "DOI": "10.1111/j.1540-4781.2009.00986.x"
         },
         {
-            "key": "CIT0002",
+            "key": "e_1_2_2_4_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1155/S1073792899000215"
+            "DOI": "10.4135/9780857020277"
         },
         {
-            "key": "CIT0004",
+            "key": "e_1_2_2_5_1",
+            "volume-title": "Netnography: Doing Ethnographic Research Online",
+            "author": "Kozinets Robert V.",
+            "year": "2010"
+        },
+        {
+            "key": "e_1_2_2_6_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1023/A:1023908007545"
-        },
-        {
-            "key": "CIT0005",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10801-017-0737-7"
-        },
-        {
-            "key": "CIT0006",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.aim.2016.10.033"
-        },
-        {
-            "issue": "1",
-            "key": "CIT0009",
-            "doi-asserted-by": "crossref",
-            "first-page": "175",
-            "DOI": "10.4213/rm1705",
-            "volume": "61",
-            "author": "Galkin S. S.",
-            "year": "2006",
-            "journal-title": "Uspekhi Mat. Nauk."
-        },
-        {
-            "key": "CIT0010",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1215/00127094-3476593"
-        },
-        {
-            "key": "CIT0014",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF02101490"
-        },
-        {
-            "key": "CIT0016",
-            "volume-title": "Symmetric Functions and Hall Polynomials",
-            "author": "Macdonald I. G.",
-            "year": "1998"
-        },
-        {
-            "key": "CIT0017",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1215/dmj/1008015154"
+            "DOI": "10.1080/17457823.2013.792511"
         }
     ],
     "container-title": [
-        "Communications in Algebra"
+        "Journal of Sociolinguistics"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/00927872.2019.1663383",
+            "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1111%2Fjosl.12249",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/josl.12249",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1111/josl.12249",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/josl.12249",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -191,112 +154,69 @@
     "deposited": {
         "date-parts": [
             [
-                2020,
-                2,
-                26
+                2023,
+                9,
+                8
             ]
         ],
-        "date-time": "2020-02-26T01:26:11Z",
-        "timestamp": 1582680371000
+        "date-time": "2023-09-08T23:01:35Z",
+        "timestamp": 1694214095000
     },
-    "score": 17.2378,
+    "score": 14.161311,
     "resource": {
         "primary": {
-            "URL": "https://www.tandfonline.com/doi/full/10.1080/00927872.2019.1663383"
+            "URL": "https://onlinelibrary.wiley.com/doi/10.1111/josl.12249"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2019,
-                9,
-                16
+                2017,
+                10,
+                3
             ]
         ]
     },
-    "references-count": 10,
+    "references-count": 5,
     "journal-issue": {
-        "issue": "2",
+        "issue": "1",
         "published-print": {
             "date-parts": [
                 [
-                    2020,
-                    2,
-                    1
+                    2018,
+                    2
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1080/00927872.2019.1663383"
+        "10.1111/josl.12249"
     ],
-    "URL": "http://dx.doi.org/10.1080/00927872.2019.1663383",
+    "URL": "http://dx.doi.org/10.1111/josl.12249",
+    "archive": [
+        "Portico"
+    ],
     "ISSN": [
-        "0092-7872",
-        "1532-4125"
+        "1360-6441",
+        "1467-9841"
     ],
     "issn-type": [
         {
-            "value": "0092-7872",
+            "value": "1360-6441",
             "type": "print"
         },
         {
-            "value": "1532-4125",
+            "value": "1467-9841",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2019,
-                9,
-                16
+                2017,
+                10,
+                3
             ]
         ]
-    },
-    "assertion": [
-        {
-            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
-            "order": 1,
-            "name": "peerreview_statement",
-            "label": "Peer Review Statement"
-        },
-        {
-            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=lagb20",
-            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=lagb20",
-            "order": 2,
-            "name": "aims_and_scope_url",
-            "label": "Aim & Scope"
-        },
-        {
-            "value": "2019-05-07",
-            "order": 0,
-            "name": "received",
-            "label": "Received",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2019-08-13",
-            "order": 2,
-            "name": "accepted",
-            "label": "Accepted",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2019-09-16",
-            "order": 3,
-            "name": "published",
-            "label": "Published",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        }
-    ]
+    }
 }

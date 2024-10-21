@@ -2,144 +2,154 @@
     "indexed": {
         "date-parts": [
             [
-                2024,
-                9,
-                20
+                2022,
+                3,
+                29
             ]
         ],
-        "date-time": "2024-09-20T10:40:15Z",
-        "timestamp": 1726828815422
+        "date-time": "2022-03-29T15:42:07Z",
+        "timestamp": 1648568527791
     },
-    "reference-count": 0,
-    "publisher": "Ovid Technologies (Wolters Kluwer Health)",
-    "issue": "10S",
+    "reference-count": 9,
+    "publisher": "Mary Ann Liebert Inc",
+    "issue": "1",
+    "license": [
+        {
+            "start": {
+                "date-parts": [
+                    [
+                        2017,
+                        3,
+                        1
+                    ]
+                ],
+                "date-time": "2017-03-01T00:00:00Z",
+                "timestamp": 1488326400000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://www.liebertpub.com/nv/resources-tools/text-and-data-mining-policy/121/"
+        }
+    ],
     "content-domain": {
-        "domain": [
-            "lww.com",
-            "ovid.com"
-        ],
-        "crossmark-restriction": true
+        "domain": [],
+        "crossmark-restriction": false
     },
+    "short-container-title": [
+        "Violence and Gender"
+    ],
     "published-print": {
         "date-parts": [
             [
-                2024,
-                10
+                2017,
+                3
             ]
         ]
     },
-    "DOI": "10.1249/01.mss.0001060920.34828.c8",
+    "DOI": "10.1089/vio.2016.0017",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2024,
-                9,
-                16
+                2017,
+                2,
+                17
             ]
         ],
-        "date-time": "2024-09-16T16:04:30Z",
-        "timestamp": 1726502670000
+        "date-time": "2017-02-17T20:32:07Z",
+        "timestamp": 1487363527000
     },
-    "page": "950-950",
-    "update-policy": "http://dx.doi.org/10.1097/lww.0000000000001000",
+    "page": "25-26",
     "source": "Crossref",
-    "is-referenced-by-count": 0,
+    "is-referenced-by-count": 1,
     "title": [
-        "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+        "Sexual Perpetration History Predicting Men's Empathy with a Rapist"
     ],
-    "prefix": "10.1249",
-    "volume": "56",
+    "prefix": "10.1089",
+    "volume": "4",
     "author": [
         {
-            "given": "Sean",
-            "family": "Zupnik",
+            "given": "Suzanne L.",
+            "family": "Osman",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Salisbury University, Salisbury, MD."
+                    "name": "Department of Psychology, Salisbury University, Salisbury, Maryland."
                 }
             ]
         },
         {
-            "given": "Masoud",
-            "family": "Moghaddam",
+            "given": "Ruby L.",
+            "family": "Orth",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "UMES, Princess Anne, MD."
-                }
-            ]
-        },
-        {
-            "given": "Nicholas",
-            "family": "Rolnick",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)"
-                }
-            ]
-        },
-        {
-            "given": "Lisa",
-            "family": "Marquette",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Salisbury University, Salisbury, MD."
-                }
-            ]
-        },
-        {
-            "given": "Susannah",
-            "family": "Taylor",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Salisbury University, Salisbury, MD."
-                }
-            ]
-        },
-        {
-            "given": "Jessica",
-            "family": "Walters",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Salisbury University, Salisbury, MD."
-                }
-            ]
-        },
-        {
-            "given": "Brent",
-            "family": "Fedorko",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Salisbury University, Salisbury, MD."
-                }
-            ]
-        },
-        {
-            "given": "Tim",
-            "family": "Werner",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Salisbury University, Salisbury, MD."
+                    "name": "Department of Psychology, Salisbury University, Salisbury, Maryland."
                 }
             ]
         }
     ],
-    "member": "276",
+    "member": "278",
+    "reference": [
+        {
+            "key": "B1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/0022-3514.43.2.372"
+        },
+        {
+            "key": "B2",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1089/vio.2014.0022"
+        },
+        {
+            "key": "B3",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1353/csd.2006.0016"
+        },
+        {
+            "key": "B4",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1471-6402.2007.00385.x"
+        },
+        {
+            "key": "B5",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/0022-3514.32.6.1134"
+        },
+        {
+            "key": "B6",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/a0039544"
+        },
+        {
+            "key": "B7",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s11199-010-9919-7"
+        },
+        {
+            "key": "B8",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/088626099014003004"
+        },
+        {
+            "key": "B9",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1559-1816.2003.tb01907.x"
+        }
+    ],
     "container-title": [
-        "Medicine &amp; Science in Sports &amp; Exercise"
+        "Violence and Gender"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://journals.lww.com/10.1249/01.mss.0001060920.34828.c8",
+            "URL": "https://www.liebertpub.com/doi/full-xml/10.1089/vio.2016.0017",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://www.liebertpub.com/doi/pdf/10.1089/vio.2016.0017",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -148,62 +158,63 @@
     "deposited": {
         "date-parts": [
             [
-                2024,
-                9,
-                20
+                2018,
+                8,
+                30
             ]
         ],
-        "date-time": "2024-09-20T10:06:22Z",
-        "timestamp": 1726826782000
+        "date-time": "2018-08-30T04:41:10Z",
+        "timestamp": 1535604070000
     },
-    "score": 17.934322,
+    "score": 16.959951,
     "resource": {
         "primary": {
-            "URL": "https://journals.lww.com/10.1249/01.mss.0001060920.34828.c8"
+            "URL": "https://www.liebertpub.com/doi/10.1089/vio.2016.0017"
         }
     },
-    "subtitle": [
-        "2618"
-    ],
     "issued": {
         "date-parts": [
             [
-                2024,
-                10
+                2017,
+                3
             ]
         ]
     },
-    "references-count": 0,
+    "references-count": 9,
     "journal-issue": {
-        "issue": "10S",
+        "issue": "1",
         "published-print": {
             "date-parts": [
                 [
-                    2024
+                    2017,
+                    3
                 ]
             ]
         }
     },
-    "URL": "http://dx.doi.org/10.1249/01.mss.0001060920.34828.c8",
+    "alternative-id": [
+        "10.1089/vio.2016.0017"
+    ],
+    "URL": "http://dx.doi.org/10.1089/vio.2016.0017",
     "ISSN": [
-        "1530-0315",
-        "0195-9131"
+        "2326-7836",
+        "2326-7852"
     ],
     "issn-type": [
         {
-            "type": "electronic",
-            "value": "1530-0315"
+            "value": "2326-7836",
+            "type": "print"
         },
         {
-            "type": "print",
-            "value": "0195-9131"
+            "value": "2326-7852",
+            "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2024,
-                10
+                2017,
+                3
             ]
         ]
     }

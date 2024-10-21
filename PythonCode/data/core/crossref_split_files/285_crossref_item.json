@@ -2,205 +2,144 @@
     "indexed": {
         "date-parts": [
             [
-                2024,
-                5,
+                2022,
+                4,
                 1
             ]
         ],
-        "date-time": "2024-05-01T09:52:15Z",
-        "timestamp": 1714557135897
+        "date-time": "2022-04-01T23:32:41Z",
+        "timestamp": 1648855961837
     },
-    "reference-count": 20,
-    "publisher": "Informa UK Limited",
-    "issue": "3",
+    "reference-count": 11,
+    "publisher": "IGI Global",
     "content-domain": {
-        "domain": [
-            "www.tandfonline.com"
-        ],
-        "crossmark-restriction": true
+        "domain": [],
+        "crossmark-restriction": false
     },
-    "short-container-title": [
-        "Journal of Family Social Work"
-    ],
     "published-print": {
         "date-parts": [
             [
-                2018,
-                5,
-                27
+                2021
             ]
         ]
     },
-    "DOI": "10.1080/10522158.2017.1342468",
-    "type": "journal-article",
+    "abstract": "<jats:p>In early 2020, the coronavirus (COVID-19) pandemic ravaged countries across the world, causing them to essentially shut down. Communities had to retreat indoors and socially distance from one another. One aspect of life that drastically changed was schooling. It moved from traditional face-to-face spaces to online digital platforms. Students, faculty, and staff across all levels of schooling shifted to teaching and learning vis-a-vis online digital platforms. Those of us connected to the training of the next generation of teachers navigated through the uncertainty of the COVID-19 pandemic at the preschool to post-secondary levels as well. This chapter focuses on the authors' experiences as a Black university supervisor and as a Black field placement coordinator. </jats:p>",
+    "DOI": "10.4018/978-1-7998-7537-6.ch002",
+    "type": "book-chapter",
     "created": {
         "date-parts": [
             [
-                2017,
+                2021,
                 6,
-                29
+                15
             ]
         ],
-        "date-time": "2017-06-29T17:56:17Z",
-        "timestamp": 1498758977000
+        "date-time": "2021-06-15T14:13:53Z",
+        "timestamp": 1623766433000
     },
-    "page": "214-226",
-    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
+    "page": "22-38",
     "source": "Crossref",
-    "is-referenced-by-count": 6,
+    "is-referenced-by-count": 0,
     "title": [
-        "Supporting families through the application of a rural pediatric integrated care model"
+        "When Internships Go Virtual"
     ],
-    "prefix": "10.1080",
-    "volume": "21",
+    "prefix": "10.4018",
     "author": [
         {
-            "given": "Amy D.",
-            "family": "Habeger",
+            "given": "Shanetia P.",
+            "family": "Clark",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Primary Care - Division of Behavioral Health, Nemours/A.I. duPont Hospital for Children, Wilmington, Delaware, USA"
+                    "name": "Salisbury University, USA"
                 }
             ]
         },
         {
-            "given": "Victoria M.",
-            "family": "Venable",
+            "given": "Lynne G.",
+            "family": "Long",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Department of Social Work, Salisbury University, Salisbury, Maryland, USA"
+                    "name": "Bowie State University, USA"
                 }
             ]
         }
     ],
-    "member": "301",
-    "published-online": {
-        "date-parts": [
-            [
-                2017,
-                6,
-                29
-            ]
-        ]
-    },
+    "member": "2432",
     "reference": [
         {
-            "key": "CIT0001",
+            "key": "978-1-7998-7537-6.ch002.-1",
+            "author": "H. K.Bhabha",
+            "year": "1994",
+            "journal-title": "The location of culture"
+        },
+        {
+            "key": "978-1-7998-7537-6.ch002.-2",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1542/peds.2009-0048"
+            "DOI": "10.1016/j.tate.2011.05.003"
         },
         {
-            "key": "CIT0003",
-            "volume-title": "Beck Youth Inventories\u2013Second edition (BYI-II) for children and adolescents manual",
-            "author": "Beck J. S.",
-            "year": "2005"
+            "issue": "2",
+            "key": "978-1-7998-7537-6.ch002.-3",
+            "first-page": "14",
+            "article-title": "Co-teaching in professional development schools: The gradual release of responsibility. PDS Partners",
+            "volume": "15",
+            "author": "A.Mann",
+            "year": "2020",
+            "journal-title": "Bringing Research to Practice"
         },
         {
-            "key": "CIT0005",
+            "key": "978-1-7998-7537-6.ch002.-4",
+            "unstructured": "National, F. F. A. Organization. (2021, January 3). What is the FFA? FFA: Preparing members of leadership and career success. https://www.ffa.org/about-us/what-is-ffa/"
+        },
+        {
+            "key": "978-1-7998-7537-6.ch002.-5",
+            "unstructured": "Nelson, L., & Lind, D. (2015). The school to prison pipeline, explained. Justice Policy Institute. https://www.justicepolicy.org/news/8775"
+        },
+        {
+            "key": "978-1-7998-7537-6.ch002.-6",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1037/a0018076"
+            "DOI": "10.5032/jae.2016.03033"
         },
         {
-            "key": "CIT0006",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10880008-9142-7"
+            "key": "978-1-7998-7537-6.ch002.-7",
+            "first-page": "706",
+            "article-title": "The metaphors by which we teach: experience, metaphor, and culture in teacher education",
+            "author": "C.Rosaen",
+            "year": "2008",
+            "journal-title": "Handbook of research on teacher education: Enduring questions in changing contexts"
         },
         {
-            "key": "CIT0007",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/15332985.2013.775998"
+            "key": "978-1-7998-7537-6.ch002.-8",
+            "unstructured": "Salisbury University. (2020). Salisbury University\u2019s PDS & Partner Schools. Salisbury University. https://www.salisbury.edu/ academic-offices/ education/ regional-professional-development-schools/ pds-partner-schools.aspx"
         },
         {
-            "key": "CIT0008",
-            "volume": "10",
-            "author": "Collins S.",
+            "key": "978-1-7998-7537-6.ch002.-9",
+            "unstructured": "Salmon, K. (2020, April 28). COMAR 13A.12.01.14 waivers and special certification provisions permission to publish\u2014emergency regulations [Memorandum]. Maryland State Department of Education. http://marylandpublicschools.org/ stateboard/ Documents/ 2020/ 0428/ 13A.12.01.14 Waiversand Special Cert Provisions.pdf"
+        },
+        {
+            "issue": "1",
+            "key": "978-1-7998-7537-6.ch002.-10",
+            "first-page": "51",
+            "article-title": "Defining the job of university supervisor: A department-wide study of university supervisors\u2019 practices.",
+            "volume": "20",
+            "author": "S. C.Steadman",
             "year": "2011",
-            "journal-title": "NASW Practice Perspectives"
+            "journal-title": "Issues in Teacher Education"
         },
         {
-            "key": "CIT0009",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1542/peds.2005-2612"
-        },
-        {
-            "key": "CIT0010",
-            "volume-title": "Colocating health services: A way to improve coordination on children\u2019s health care? (Issue brief)",
-            "author": "Ginsburg S.",
-            "year": "2008"
-        },
-        {
-            "key": "CIT0012",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/11871-000"
-        },
-        {
-            "key": "CIT0013",
-            "volume-title": "The mental health of adolescents: A national profile, 2008",
-            "author": "Knopf D. K.",
-            "year": "2008"
-        },
-        {
-            "key": "CIT0014",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1046/j.1525-1497.2001.016009606.x"
-        },
-        {
-            "key": "CIT0015",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/jurban/jtg014"
-        },
-        {
-            "key": "CIT0016",
-            "volume-title": "PMHS quarterly report through Dec 2012",
-            "author": "Maryland Department of Health and Mental Hygiene",
-            "year": "2013"
-        },
-        {
-            "key": "CIT0018",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1097/00004583-200206000-00013"
-        },
-        {
-            "key": "CIT0019",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0022-006X.51.3.390"
-        },
-        {
-            "key": "CIT0020",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1300/J200v03n04_05"
-        },
-        {
-            "key": "CIT0021",
-            "volume-title": "Mental health crisis services for foster care youth. Gap analysis results [Technical report prepared for the Wicomico-Somerset Regional Core Service Agency]",
-            "author": "Schlehofer M. M.",
-            "year": "2013"
-        },
-        {
-            "key": "CIT0022",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1023/A:1010189710028"
-        },
-        {
-            "key": "CIT0023",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/a0028967"
-        },
-        {
-            "key": "CIT0024",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0009922806290608"
+            "key": "978-1-7998-7537-6.ch002.-11",
+            "unstructured": "U. S. Department of Education. (2020). Search for public schools. IES: National Center for Educational Statistics. https://nces.ed.gov/ ccd/schoolsearch/"
         }
     ],
     "container-title": [
-        "Journal of Family Social Work"
+        "Advances in Mobile and Distance Learning",
+        "The Black Experience and Navigating Higher Education Through a Virtual World"
     ],
-    "language": "en",
     "link": [
         {
-            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/10522158.2017.1342468",
+            "URL": "https://www.igi-global.com/viewtitle.aspx?TitleId=281468",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -209,91 +148,51 @@
     "deposited": {
         "date-parts": [
             [
-                2018,
-                6,
-                12
+                2021,
+                9,
+                23
             ]
         ],
-        "date-time": "2018-06-12T14:36:37Z",
-        "timestamp": 1528814197000
+        "date-time": "2021-09-23T23:34:54Z",
+        "timestamp": 1632440094000
     },
-    "score": 14.377629,
+    "score": 13.968742,
     "resource": {
         "primary": {
-            "URL": "https://www.tandfonline.com/doi/full/10.1080/10522158.2017.1342468"
+            "URL": "http://services.igi-global.com/resolvedoi/resolve.aspx?doi=10.4018/978-1-7998-7537-6.ch002"
         }
     },
+    "subtitle": [
+        "Unpacking Experiences of Black Supervisors"
+    ],
     "issued": {
         "date-parts": [
             [
-                2017,
-                6,
-                29
+                2021
             ]
         ]
     },
-    "references-count": 20,
-    "journal-issue": {
-        "issue": "3",
-        "published-online": {
-            "date-parts": [
-                [
-                    2018,
-                    2,
-                    7
-                ]
-            ]
-        },
-        "published-print": {
-            "date-parts": [
-                [
-                    2018,
-                    5,
-                    27
-                ]
-            ]
-        }
-    },
-    "alternative-id": [
-        "10.1080/10522158.2017.1342468"
-    ],
-    "URL": "http://dx.doi.org/10.1080/10522158.2017.1342468",
+    "references-count": 11,
+    "URL": "http://dx.doi.org/10.4018/978-1-7998-7537-6.ch002",
     "ISSN": [
-        "1052-2158",
-        "1540-4072"
+        "2327-1892",
+        "2327-1906"
     ],
     "issn-type": [
         {
-            "value": "1052-2158",
+            "value": "2327-1892",
             "type": "print"
         },
         {
-            "value": "1540-4072",
+            "value": "2327-1906",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2017,
-                6,
-                29
+                2021
             ]
         ]
-    },
-    "assertion": [
-        {
-            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
-            "order": 1,
-            "name": "peerreview_statement",
-            "label": "Peer Review Statement"
-        },
-        {
-            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=wfsw20",
-            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=wfsw20",
-            "order": 2,
-            "name": "aims_and_scope_url",
-            "label": "Aim & Scope"
-        }
-    ]
+    }
 }

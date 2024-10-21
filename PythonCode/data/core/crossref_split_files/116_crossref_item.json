@@ -2,902 +2,632 @@
     "indexed": {
         "date-parts": [
             [
-                2023,
-                2,
-                4
+                2024,
+                9,
+                10
             ]
         ],
-        "date-time": "2023-02-04T21:29:12Z",
-        "timestamp": 1675546152161
+        "date-time": "2024-09-10T07:50:31Z",
+        "timestamp": 1725954631454
     },
-    "reference-count": 63,
-    "publisher": "The Company of Biologists",
-    "license": [
-        {
-            "start": {
-                "date-parts": [
-                    [
-                        2020,
-                        1,
-                        1
-                    ]
-                ],
-                "date-time": "2020-01-01T00:00:00Z",
-                "timestamp": 1577836800000
-            },
-            "content-version": "am",
-            "delay-in-days": 0,
-            "URL": "http://www.biologists.com/user-licence-1-1/"
-        }
-    ],
-    "funder": [
-        {
-            "DOI": "10.13039/100005716",
-            "name": "National Science Foundation",
-            "doi-asserted-by": "publisher",
-            "award": [
-                "IOS 1120031"
-            ],
-            "id": [
-                {
-                    "id": "10.13039/100005716",
-                    "id-type": "DOI",
-                    "asserted-by": "publisher"
-                }
-            ]
-        },
-        {
-            "DOI": "10.13039/100010064",
-            "name": "Salisbury University",
-            "doi-asserted-by": "publisher",
-            "id": [
-                {
-                    "id": "10.13039/100010064",
-                    "id-type": "DOI",
-                    "asserted-by": "publisher"
-                }
-            ]
-        },
-        {
-            "DOI": "10.13039/100000014",
-            "name": "Smithsonian Institution",
-            "doi-asserted-by": "publisher",
-            "award": [
-                "#34493602"
-            ],
-            "id": [
-                {
-                    "id": "10.13039/100000014",
-                    "id-type": "DOI",
-                    "asserted-by": "publisher"
-                }
-            ]
-        }
-    ],
+    "reference-count": 102,
+    "publisher": "Informa UK Limited",
+    "issue": "3",
     "content-domain": {
-        "domain": [],
-        "crossmark-restriction": false
+        "domain": [
+            "www.tandfonline.com"
+        ],
+        "crossmark-restriction": true
     },
-    "abstract": "<jats:p>Noise is a common problem in animal communication. We know little, however, about how animals communicate in noise using multimodal signals. Multimodal signals are hypothesized to be favoured by evolution because they increase the efficacy of detection/discrimination in noisy environments. We tested the hypothesis that female t\u00fangara frogs\u2019 responses to attractive male advertisement calls are improved in noise when a visual signal component is added to the available choices. We tested this at two levels of decision complexity (two and three choices). In a two-choice test, the presence of noise did not reduce female preferences for attractive calls. The visual component of a calling male, associated with an unattractive call, also did not reduce preference for attractive calls in the absence of noise. In the presence of noise, however, females were more likely to choose an unattractive call coupled with the visual component. In three-choice tests, the presence of noise alone reduced female responses to attractive calls and this was not strongly affected by the presence or absence of visual components. The responses in these experiments fail to support the multimodal signal efficacy hypothesis. Instead, the data suggest that audio-visual perception and cognitive processing, related to mate choice decisions, are dependent on the complexity of the sensory scene.</jats:p>",
-    "DOI": "10.1242/jeb.233288",
+    "short-container-title": [
+        "International Journal of Logistics Research and Applications"
+    ],
+    "published-print": {
+        "date-parts": [
+            [
+                2020,
+                5,
+                3
+            ]
+        ]
+    },
+    "DOI": "10.1080/13675567.2019.1684462",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2020,
-                11,
-                13
+                2019,
+                10,
+                31
             ]
         ],
-        "date-time": "2020-11-13T20:45:20Z",
-        "timestamp": 1605300320000
+        "date-time": "2019-10-31T07:25:30Z",
+        "timestamp": 1572506730000
     },
+    "page": "270-290",
+    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
     "source": "Crossref",
-    "is-referenced-by-count": 2,
+    "is-referenced-by-count": 34,
     "title": [
-        "Complex sensory environments alter mate choice outcomes"
+        "Managing environmental uncertainty for improved firm financial performance: the moderating role of supply chain risk management practices on managerial decision making"
     ],
-    "prefix": "10.1242",
+    "prefix": "10.1080",
+    "volume": "23",
     "author": [
         {
-            "ORCID": "http://orcid.org/0000-0003-3173-5432",
+            "ORCID": "http://orcid.org/0000-0003-1603-4160",
             "authenticated-orcid": false,
-            "given": "Ryan C.",
-            "family": "Taylor",
+            "given": "Nitya P.",
+            "family": "Singh",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Department of Biology, Salisbury University, Salisbury, MD 21801 USA"
-                },
-                {
-                    "name": "Smithsonian Tropical Research Institute, Apartado 0843-03092 Balboa, Anc\u00f3n, Republic of Panama"
-                }
-            ]
-        },
-        {
-            "given": "Kyle O.",
-            "family": "Wilhite",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Biology, Salisbury University, Salisbury, MD 21801 USA"
-                },
-                {
-                    "name": "Department of Integrative Biology, University of Texas, Austin TX 78712 USA"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0002-8139-1589",
-            "authenticated-orcid": false,
-            "given": "Rosalind J.",
-            "family": "Ludovici",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Biology, Salisbury University, Salisbury, MD 21801 USA"
-                }
-            ]
-        },
-        {
-            "ORCID": "http://orcid.org/0000-0002-6101-1577",
-            "authenticated-orcid": false,
-            "given": "Kelsey M.",
-            "family": "Mitchell",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Biology, Salisbury University, Salisbury, MD 21801 USA"
-                }
-            ]
-        },
-        {
-            "given": "Wouter",
-            "family": "Halfwerk",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Ecological Science, VU University, Amsterdam 1081 HV, The Netherlands"
-                }
-            ]
-        },
-        {
-            "given": "Rachel A.",
-            "family": "Page",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Smithsonian Tropical Research Institute, Apartado 0843-03092 Balboa, Anc\u00f3n, Republic of Panama"
-                }
-            ]
-        },
-        {
-            "given": "Michael J.",
-            "family": "Ryan",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Integrative Biology, University of Texas, Austin TX 78712 USA"
-                },
-                {
-                    "name": "Smithsonian Tropical Research Institute, Apartado 0843-03092 Balboa, Anc\u00f3n, Republic of Panama"
-                }
-            ]
-        },
-        {
-            "given": "Kimberly L.",
-            "family": "Hunter",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Department of Biology, Salisbury University, Salisbury, MD 21801 USA"
+                    "name": "Department of Management and Marketing, Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA"
                 }
             ]
         }
     ],
-    "member": "237",
+    "member": "301",
     "published-online": {
         "date-parts": [
             [
-                2020,
-                1,
-                1
+                2019,
+                10,
+                31
             ]
         ]
     },
     "reference": [
         {
-            "key": "2021042623065360900_JEB233288C1",
+            "key": "CIT0001",
             "doi-asserted-by": "publisher",
-            "first-page": "2709",
-            "DOI": "10.1002/sim.738",
-            "article-title": "Exact inference for categorical data: recent advances and continuing controversies",
-            "volume": "20",
-            "author": "Agresti",
-            "year": "2001",
-            "journal-title": "Stat. Med."
+            "DOI": "10.1177/0972150913501606"
         },
         {
-            "key": "2021042623065360900_JEB233288C2",
+            "key": "CIT0002",
             "doi-asserted-by": "publisher",
-            "first-page": "839",
-            "DOI": "10.1016/j.cub.2005.03.046",
-            "article-title": "Audiovisual integration of speech falters under high attention demands",
-            "volume": "15",
-            "author": "Alsius",
-            "year": "2005",
-            "journal-title": "Curr. Biol."
+            "DOI": "10.1080/13675567.2018.1551483"
         },
         {
-            "key": "2021042623065360900_JEB233288C3",
+            "key": "CIT0003",
             "doi-asserted-by": "publisher",
-            "first-page": "6580",
-            "DOI": "10.1523/JNEUROSCI.0525-09.2009",
-            "article-title": "Multisensory integration in the superior colliculus requires synergy among corticocollicular inputs",
-            "volume": "29",
-            "author": "Alvarado",
-            "year": "2009",
-            "journal-title": "J. Neurosci."
+            "DOI": "10.1108/14637150610678069"
         },
         {
-            "key": "2021042623065360900_JEB233288C4",
+            "key": "CIT0004",
             "doi-asserted-by": "publisher",
-            "first-page": "99",
-            "DOI": "10.1111/j.0963-7214.2004.00283.x",
-            "article-title": "Intersensory redundancy guides the development of selective attention, perception, and cognition in infancy",
-            "volume": "13",
-            "author": "Bahrick",
-            "year": "2004",
-            "journal-title": "Curr. Dir. Psychol. Sci."
+            "DOI": "10.1080/00207543.2015.1070972"
         },
         {
-            "key": "2021042623065360900_JEB233288C5",
+            "key": "CIT0005",
             "doi-asserted-by": "publisher",
-            "first-page": "1781",
-            "DOI": "10.1016/j.anbehav.2007.10.032",
-            "article-title": "Finding a mate at a cocktail party: spatial release from masking improves acoustic mate recognition in grey treefrogs",
-            "volume": "75",
-            "author": "Bee",
-            "year": "2008",
-            "journal-title": "Anim. Behav."
+            "DOI": "10.1177/002224377701400320"
         },
         {
-            "key": "2021042623065360900_JEB233288C6",
+            "key": "CIT0006",
             "doi-asserted-by": "publisher",
-            "first-page": "301",
-            "DOI": "10.1016/j.conb.2011.12.014",
-            "article-title": "Sound source perception in anuran amphibians",
-            "volume": "22",
-            "author": "Bee",
-            "year": "2012",
-            "journal-title": "Curr. Opin. Neurobiol."
+            "DOI": "10.1007/BF02723327"
         },
         {
-            "key": "2021042623065360900_JEB233288C7",
+            "key": "CIT0007",
             "doi-asserted-by": "publisher",
-            "first-page": "235",
-            "DOI": "10.1037/0735-7036.122.3.235",
-            "article-title": "The cocktail party problem: What is it? How can it be solved? And why should animal behaviorists study it?",
-            "volume": "122",
-            "author": "Bee",
-            "year": "2008",
-            "journal-title": "J. Comp. Psychol."
+            "DOI": "10.1037/0022-3514.51.6.1173"
         },
         {
-            "key": "2021042623065360900_JEB233288C8",
+            "key": "CIT0008",
             "doi-asserted-by": "publisher",
-            "first-page": "1127",
-            "DOI": "10.1007/s00265-009-0795-5",
-            "article-title": "Female and male behavioral response to advertisement calls of graded complexity in t\u00fangara frogs, Physalaemus pustulosus",
-            "volume": "63",
-            "author": "Bernal",
-            "year": "2009",
-            "journal-title": "Behav. Ecol. Sociobiol."
+            "DOI": "10.1037/0033-2909.88.3.588"
         },
         {
-            "key": "2021042623065360900_JEB233288C9",
+            "key": "CIT0009",
             "doi-asserted-by": "publisher",
-            "first-page": "792",
-            "DOI": "10.1086/286209",
-            "article-title": "A taste for the beautiful: latent aesthetic mate preferences for white crests in two species of Australian grassfinches",
-            "volume": "152",
-            "author": "Burley",
-            "year": "1998",
-            "journal-title": "Am. Nat."
+            "DOI": "10.1287/mnsc.34.7.816"
         },
         {
-            "key": "2021042623065360900_JEB233288C10",
+            "key": "CIT0010",
             "doi-asserted-by": "publisher",
-            "first-page": "1012",
-            "DOI": "10.1016/j.cub.2010.03.069",
-            "article-title": "Vibrational signaling in the agonistic interactions of red-eyed treefrogs",
-            "volume": "20",
-            "author": "Caldwell",
-            "year": "2010",
-            "journal-title": "Curr. Biol."
+            "DOI": "10.1002/1097-0266(200101)22:1<1::AID-SMJ143>3.0.CO;2-T"
         },
         {
-            "key": "2021042623065360900_JEB233288C11",
+            "key": "CIT0011",
             "doi-asserted-by": "publisher",
-            "first-page": "575",
-            "DOI": "10.1017/S1464793103006158",
-            "article-title": "The use of multiple cues in mate choice",
-            "volume": "78",
-            "author": "Candolin",
-            "year": "2003",
-            "journal-title": "Biol. Rev. Camb. Philos. Soc."
+            "DOI": "10.1111/deci.12157"
         },
         {
-            "key": "2021042623065360900_JEB233288C12",
+            "key": "CIT0012",
             "doi-asserted-by": "publisher",
-            "first-page": "400",
-            "DOI": "10.1016/j.tree.2009.02.010",
-            "article-title": "Speed-accuracy tradeoffs in animal decision making",
-            "volume": "24",
-            "author": "Chittka",
-            "year": "2009",
-            "journal-title": "Trends Ecol. Evol."
+            "DOI": "10.1016/j.cie.2019.02.010"
         },
         {
-            "key": "2021042623065360900_JEB233288C13",
-            "doi-asserted-by": "publisher",
-            "first-page": "151",
-            "DOI": "10.1093/beheco/14.2.151",
-            "article-title": "The behavioral ecology of a cognitive constraint: limited attention",
-            "volume": "14",
-            "author": "Clark",
-            "year": "2003",
-            "journal-title": "Behav. Ecol."
+            "key": "CIT0013",
+            "first-page": "73",
+            "volume": "55",
+            "author": "Chopra S.",
+            "year": "2014",
+            "journal-title": "MIT Sloan Management Review"
         },
         {
-            "key": "2021042623065360900_JEB233288C14",
+            "key": "CIT0014",
             "doi-asserted-by": "publisher",
-            "first-page": "43",
-            "DOI": "10.1007/s00265-019-2654-3",
-            "article-title": "Environmental heterogeneity alters mate choice behavior for multimodal signals",
-            "volume": "73",
-            "author": "Cronin",
-            "year": "2019",
-            "journal-title": "Behav. Ecol. Sociobiol."
+            "DOI": "10.1177/002224377901600110"
         },
         {
-            "key": "2021042623065360900_JEB233288C15",
+            "key": "CIT0015",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/S0148-2963(96)00207-X"
+        },
+        {
+            "key": "CIT0016",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1540-5915.2007.00151.x"
+        },
+        {
+            "key": "CIT0017",
             "doi-asserted-by": "crossref",
-            "DOI": "10.1201/b12461",
-            "article-title": "Theoretical underpinnings of situation awareness: a critical review",
-            "volume-title": "Situation Awareness Analysis and Measurement",
-            "author": "Endsley",
-            "year": "2000"
-        },
-        {
-            "key": "2021042623065360900_JEB233288C16",
-            "doi-asserted-by": "crossref",
-            "first-page": "89",
-            "DOI": "10.1007/978-3-319-48690-1_4",
-            "article-title": "Mate searching animals as model systems for understanding perceptual grouping",
-            "volume-title": "Psychological Mechanisms in Animal Communication",
-            "author": "Farris",
-            "year": "2016"
-        },
-        {
-            "key": "2021042623065360900_JEB233288C17",
-            "doi-asserted-by": "publisher",
-            "first-page": "1977",
-            "DOI": "10.1242/jeb.096883",
-            "article-title": "Prior experience with conspecific signals enhances auditory midbrain responsiveness to conspecific vocalizations",
-            "volume": "217",
-            "author": "Gall",
-            "year": "2014",
-            "journal-title": "J. Exp. Biol."
-        },
-        {
-            "key": "2021042623065360900_JEB233288C18",
-            "doi-asserted-by": "publisher",
-            "first-page": "1277",
-            "DOI": "10.1126/science.aaf7934",
-            "article-title": "Bats perceptually weight prey cues across sensory systems when hunting in noise",
-            "volume": "353",
-            "author": "Gomes",
-            "year": "2016",
-            "journal-title": "Science"
-        },
-        {
-            "key": "2021042623065360900_JEB233288C19",
-            "doi-asserted-by": "publisher",
-            "first-page": "374",
-            "DOI": "10.1038/s41559-018-0751-8",
-            "article-title": "Adaptive changes in sexual signalling in response to urbanization",
-            "volume": "3",
-            "author": "Halfwerk",
-            "year": "2019",
-            "journal-title": "Nat. Ecol. Evol."
-        },
-        {
-            "key": "2021042623065360900_JEB233288C20",
-            "doi-asserted-by": "publisher",
-            "first-page": "3038",
-            "DOI": "10.1242/jeb.107482",
-            "article-title": "Risks of multimodal signaling: bat predators attend to dynamic motion in frog sexual displays",
-            "volume": "217",
-            "author": "Halfwerk",
-            "year": "2014",
-            "journal-title": "J. Exp. Biol."
-        },
-        {
-            "key": "2021042623065360900_JEB233288C21",
-            "doi-asserted-by": "publisher",
-            "first-page": "51",
-            "DOI": "10.1038/nature12654",
-            "article-title": "Cortical connectivity and sensory coding",
-            "volume": "503",
-            "author": "Harris",
-            "year": "2013",
-            "journal-title": "Nature"
-        },
-        {
-            "key": "2021042623065360900_JEB233288C22",
-            "doi-asserted-by": "publisher",
-            "first-page": "197",
-            "DOI": "10.1007/s00265-004-0865-7",
-            "article-title": "Complex signal function: developing a framework of testable hypotheses",
-            "volume": "57",
-            "author": "Hebets",
-            "year": "2005",
-            "journal-title": "Behav. Ecol. Sociobiol."
-        },
-        {
-            "key": "2021042623065360900_JEB233288C62",
-            "doi-asserted-by": "publisher",
-            "author": "Hebets",
-            "year": "2016",
-            "DOI": "10.1098/rspb.2015.2889"
-        },
-        {
-            "key": "2021042623065360900_JEB233288C23",
-            "doi-asserted-by": "publisher",
-            "first-page": "150",
-            "DOI": "10.3389/fnins.2014.00150",
-            "article-title": "The speed-accuracy tradeoff: history, physiology, methodology, and behavior",
-            "volume": "8",
-            "author": "Heitz",
-            "year": "2014",
-            "journal-title": "Front. Neurosci."
-        },
-        {
-            "key": "2021042623065360900_JEB233288C24",
-            "doi-asserted-by": "publisher",
-            "first-page": "111",
-            "DOI": "10.1007/s00265-019-2726-4",
-            "article-title": "Effects of information load on response times in frogs and bats: mate choice vs. prey choice",
-            "volume": "73",
-            "author": "Hemingway",
-            "year": "2019",
-            "journal-title": "Behav. Ecol. Sociobiol."
-        },
-        {
-            "key": "2021042623065360900_JEB233288C25",
-            "doi-asserted-by": "publisher",
-            "first-page": "1381",
-            "DOI": "10.1007/s00265-013-1590-x",
-            "article-title": "An introduction to multimodal communication",
-            "volume": "67",
-            "author": "Higham",
-            "year": "2013",
-            "journal-title": "Behav. Ecol. Sociobiol."
-        },
-        {
-            "key": "2021042623065360900_JEB233288C26",
-            "doi-asserted-by": "publisher",
-            "first-page": "641",
-            "DOI": "10.1098/rspb.2006.0038",
-            "article-title": "Integration of sensory and motor processing underlying social behaviour in t\u00fangara frogs",
-            "volume": "274",
-            "author": "Hoke",
+            "first-page": "1150",
+            "DOI": "10.1109/ICAL.2007.4338742",
+            "author": "Dan W.",
             "year": "2007",
-            "journal-title": "Proc. R. Soc. B"
+            "journal-title": "Proceedings of the IEEE International Conference on Automation and Logistics"
         },
         {
-            "key": "2021042623065360900_JEB233288C27",
+            "key": "CIT0018",
             "doi-asserted-by": "publisher",
-            "first-page": "466",
-            "DOI": "10.4161/cib.21304",
-            "article-title": "Robots in the service of animal behavior",
-            "volume": "5",
-            "author": "Klein",
-            "year": "2012",
-            "journal-title": "Commun. Integr. Biol."
+            "DOI": "10.1016/j.jbusres.2018.05.026"
         },
         {
-            "key": "2021042623065360900_JEB233288C28",
+            "key": "CIT0019",
             "doi-asserted-by": "publisher",
-            "first-page": "797",
-            "DOI": "10.1098/rspb.2007.1176",
-            "article-title": "Multimodal signals enhance decision making in foraging bumble-bees",
-            "volume": "275",
-            "author": "Kulahci",
-            "year": "2008",
-            "journal-title": "Proc. R. Soc. B"
+            "DOI": "10.1111/jscm.12085"
         },
         {
-            "key": "2021042623065360900_JEB233288C29",
+            "key": "CIT0020",
             "doi-asserted-by": "publisher",
-            "first-page": "75",
-            "DOI": "10.1016/j.tics.2004.12.004",
-            "article-title": "Distracted and confused?: selective attention under load",
-            "volume": "9",
-            "author": "Lavie",
-            "year": "2005",
-            "journal-title": "Trends Cogn. Sci."
+            "DOI": "10.1080/00207543.2019.1582820"
         },
         {
-            "key": "2021042623065360900_JEB233288C30",
+            "key": "CIT0021",
             "doi-asserted-by": "publisher",
-            "first-page": "964",
-            "DOI": "10.1126/science.aab2012",
-            "article-title": "Irrationality in mate choice revealed by t\u00fangara frogs",
-            "volume": "349",
-            "author": "Lea",
-            "year": "2015",
-            "journal-title": "Science"
+            "DOI": "10.1002/1097-0266(200010/11)21:10/11<1105::AID-SMJ133>3.0.CO;2-E"
         },
         {
-            "key": "2021042623065360900_JEB233288C31",
+            "key": "CIT0022",
             "doi-asserted-by": "publisher",
-            "first-page": "1940",
-            "DOI": "10.1109/JRPROC.1959.287207",
-            "article-title": "What the frog's eye tells the frog's brain",
-            "volume": "47",
-            "author": "Lettvin",
-            "year": "1959",
-            "journal-title": "Proc. IRE"
+            "DOI": "10.1016/j.jclepro.2015.08.031"
         },
         {
-            "key": "2021042623065360900_JEB233288C32",
+            "key": "CIT0023",
             "doi-asserted-by": "publisher",
-            "first-page": "447",
-            "DOI": "10.1016/S0926-6410(03)00160-5",
-            "article-title": "An irrelevant light enhances auditory detection in humans: a psychophysical analysis of multisensory integration in stimulus detection",
-            "volume": "17",
-            "author": "Lovelace",
-            "year": "2003",
-            "journal-title": "Cogn. Brain Res."
+            "DOI": "10.2307/1251852"
         },
         {
-            "key": "2021042623065360900_JEB233288C33",
+            "key": "CIT0024",
             "doi-asserted-by": "publisher",
-            "first-page": "746",
-            "DOI": "10.1038/264746a0",
-            "article-title": "Hearing lips and seeing voices",
-            "volume": "264",
-            "author": "McGurk",
-            "year": "1976",
-            "journal-title": "Nature"
+            "DOI": "10.1177/002224298304700206"
         },
         {
-            "key": "2021042623065360900_JEB233288C34",
+            "key": "CIT0025",
             "doi-asserted-by": "publisher",
-            "first-page": "325",
-            "DOI": "10.1016/j.anbehav.2016.08.003",
-            "article-title": "Multimodal shifts in noise: switching channels to communicate through rapid environmental change",
-            "volume": "124",
-            "author": "Partan",
-            "year": "2017",
-            "journal-title": "Anim. Behav."
+            "DOI": "10.1057/9781137035301_3"
         },
         {
-            "key": "2021042623065360900_JEB233288C35",
+            "key": "CIT0026",
             "doi-asserted-by": "publisher",
-            "first-page": "1272",
-            "DOI": "10.1126/science.283.5406.1272",
-            "article-title": "Communication goes multimodal",
-            "volume": "283",
-            "author": "Partan",
-            "year": "1999",
-            "journal-title": "Science"
+            "DOI": "10.1177/002224299405800201"
         },
         {
-            "key": "2021042623065360900_JEB233288C36",
+            "key": "CIT0028",
             "doi-asserted-by": "publisher",
-            "first-page": "2384",
-            "DOI": "10.1111/evo.12750",
-            "article-title": "Modality interactions alter the shape of acoustic mate preference functions in gray treefrogs",
-            "volume": "69",
-            "author": "Reichert",
-            "year": "2015",
-            "journal-title": "Evolution"
+            "DOI": "10.1509/jmkg.66.3.82.18504"
         },
         {
-            "key": "2021042623065360900_JEB233288C37",
+            "key": "CIT0029",
+            "volume-title": "Multivariate Data Analysis",
+            "author": "Hair J. F.",
+            "year": "2010",
+            "edition": "7"
+        },
+        {
+            "key": "CIT0030",
             "doi-asserted-by": "publisher",
-            "first-page": "1009",
-            "DOI": "10.1111/evo.13202",
-            "article-title": "Exploring the hidden landscape of female preferences for complex signals",
-            "volume": "71",
-            "author": "Reichert",
-            "year": "2017",
-            "journal-title": "Evolution"
+            "DOI": "10.1016/S1478-4092(03)00004-9"
         },
         {
-            "key": "2021042623065360900_JEB233288C38",
-            "volume-title": "Mate Choice: The Evolution of Sexual Decision Making from Microbes to Humans",
-            "author": "Rosenthal",
-            "year": "2017"
-        },
-        {
-            "key": "2021042623065360900_JEB233288C39",
+            "key": "CIT0031",
             "doi-asserted-by": "publisher",
-            "first-page": "921",
-            "DOI": "10.1006/anbe.1999.1242",
-            "article-title": "Receiver psychology and the evolution of multicomponent signals",
-            "volume": "58",
-            "author": "Rowe",
-            "year": "1999",
-            "journal-title": "Anim. Behav."
+            "DOI": "10.2307/41166404"
         },
         {
-            "key": "2021042623065360900_JEB233288C40",
-            "doi-asserted-by": "publisher",
-            "first-page": "520",
-            "DOI": "10.1038/383520a0",
-            "article-title": "Hidden colour aversions in domestic chicks triggered by pyrazine odours of insect warning displays",
-            "volume": "383",
-            "author": "Rowe",
-            "year": "1996",
-            "journal-title": "Nature"
-        },
-        {
-            "key": "2021042623065360900_JEB233288C41",
-            "doi-asserted-by": "publisher",
-            "first-page": "409",
-            "DOI": "10.1007/s00265-016-2061-y",
-            "article-title": "Does multimodality per se improve receiver performance? An explicit comparison of multimodal versus unimodal complex signals in a learned signal following task",
-            "volume": "70",
-            "author": "Rubi",
-            "year": "2016",
-            "journal-title": "Behav. Ecol. Sociobiol."
-        },
-        {
-            "key": "2021042623065360900_JEB233288C42",
-            "volume-title": "The T\u00fangara Frog: A Study in Sexual Selection and Communication",
-            "author": "Ryan",
-            "year": "1985"
-        },
-        {
-            "key": "2021042623065360900_JEB233288C43",
-            "doi-asserted-by": "publisher",
-            "first-page": "125",
-            "DOI": "10.1086/704103",
-            "article-title": "Nineteen years of consistently positive and strong female mate preferences despite individual variation",
-            "volume": "194",
-            "author": "Ryan",
-            "year": "2019",
-            "journal-title": "Am. Nat."
-        },
-        {
-            "key": "2021042623065360900_JEB233288C44",
-            "doi-asserted-by": "publisher",
-            "first-page": "2608",
-            "DOI": "10.1111/j.0014-3820.2003.tb01503.x",
-            "article-title": "Sexual selection in female perceptual space: how female t\u00fangara frogs perceive and respond to complex population variation in acoustic mating signals",
-            "volume": "57",
-            "author": "Ryan",
-            "year": "2003",
-            "journal-title": "Evolution"
-        },
-        {
-            "key": "2021042623065360900_JEB233288C45",
-            "doi-asserted-by": "publisher",
-            "first-page": "66",
-            "DOI": "10.1038/343066a0",
-            "article-title": "Sexual selection for sensory exploitation in the frog Physalaemus pustulosus",
-            "volume": "343",
-            "author": "Ryan",
-            "year": "1990",
-            "journal-title": "Nature"
-        },
-        {
-            "key": "2021042623065360900_JEB233288C46",
-            "doi-asserted-by": "publisher",
-            "first-page": "55",
-            "DOI": "10.1006/anbe.1998.0737",
-            "article-title": "The neuroethology of frequency preferences in the spring peeper",
-            "volume": "56",
-            "author": "Schwartz",
-            "year": "1998",
-            "journal-title": "Anim. Behav."
-        },
-        {
-            "key": "2021042623065360900_JEB233288C47",
-            "doi-asserted-by": "publisher",
-            "first-page": "308",
-            "DOI": "10.1038/385308a0",
-            "article-title": "Sound alters visual motion perception",
-            "volume": "385",
-            "author": "Sekuler",
-            "year": "1997",
-            "journal-title": "Nature"
-        },
-        {
-            "key": "2021042623065360900_JEB233288C48",
-            "doi-asserted-by": "publisher",
-            "first-page": "239",
-            "DOI": "10.1016/j.anbehav.2016.07.005",
-            "article-title": "Interactions between complex multisensory signal components result in unexpected mate choice responses",
-            "volume": "134",
-            "author": "Stange",
-            "year": "2017",
-            "journal-title": "Anim. Behav."
-        },
-        {
-            "key": "2021042623065360900_JEB233288C49",
-            "doi-asserted-by": "publisher",
-            "first-page": "281",
-            "DOI": "10.1016/j.anbehav.2014.07.027",
-            "article-title": "The anuran vocal sac: a tool for multimodal signalling",
-            "volume": "97",
-            "author": "Starnberger",
-            "year": "2014",
-            "journal-title": "Anim. Behav."
-        },
-        {
-            "key": "2021042623065360900_JEB233288C50",
-            "doi-asserted-by": "crossref",
-            "volume-title": "The New Handbook of Multisensory Processes",
-            "author": "Stein",
-            "year": "2012",
-            "DOI": "10.7551/mitpress/8466.001.0001"
-        },
-        {
-            "key": "2021042623065360900_JEB233288C51",
-            "doi-asserted-by": "publisher",
-            "first-page": "212",
-            "DOI": "10.1121/1.1907309",
-            "article-title": "Visual contribution to speech intelligibility in noise",
-            "volume": "26",
-            "author": "Sumby",
-            "year": "1954",
-            "journal-title": "J. Acoust. Soc. Am."
-        },
-        {
-            "key": "2021042623065360900_JEB233288C52",
-            "doi-asserted-by": "publisher",
-            "first-page": "eaax3957",
-            "DOI": "10.1126/sciadv.aax3957",
-            "article-title": "Inconsistent sexual signaling degrades optimal mating decisions in animals",
-            "volume": "6",
-            "author": "Tanner",
-            "year": "2020",
-            "journal-title": "Sci. Adv."
-        },
-        {
-            "key": "2021042623065360900_JEB233288C63",
-            "doi-asserted-by": "publisher",
-            "author": "Taylor",
-            "year": "2020",
-            "DOI": "10.5061/dryad.vdncjsxsk"
-        },
-        {
-            "key": "2021042623065360900_JEB233288C53",
-            "doi-asserted-by": "publisher",
-            "first-page": "333",
-            "DOI": "10.1093/cz/zoy089",
-            "article-title": "Behavioral and neural auditory thresholds in a frog",
-            "volume": "65",
-            "author": "Taylor",
-            "year": "2019",
-            "journal-title": "Curr. Zool."
-        },
-        {
-            "key": "2021042623065360900_JEB233288C54",
-            "doi-asserted-by": "publisher",
-            "first-page": "273",
-            "DOI": "10.1126/science.1237113",
-            "article-title": "Interactions of multisensory components perceptually rescue t\u00fangara frog mating signals",
-            "volume": "341",
-            "author": "Taylor",
+            "key": "CIT0032",
+            "volume-title": "Introduction to Mediation, Moderation, and Conditional Process Analysis: A Regression-Based Approach",
+            "author": "Hayes A. F.",
             "year": "2013",
-            "journal-title": "Science"
+            "edition": "2"
         },
         {
-            "key": "2021042623065360900_JEB233288C55",
+            "key": "CIT0033",
             "doi-asserted-by": "publisher",
-            "first-page": "1089",
-            "DOI": "10.1016/j.anbehav.2008.01.031",
-            "article-title": "Faux frogs: multimodal signalling and the value of robotics in animal behaviour",
-            "volume": "76",
-            "author": "Taylor",
-            "year": "2008",
-            "journal-title": "Anim. Behav."
+            "DOI": "10.1177/002224379002700103"
         },
         {
-            "key": "2021042623065360900_JEB233288C56",
+            "key": "CIT0034",
             "doi-asserted-by": "publisher",
-            "first-page": "815",
-            "DOI": "10.1242/jeb.043638",
-            "article-title": "Multimodal signal variation in space and time: how important is matching a signal with its signaler?",
-            "volume": "214",
-            "author": "Taylor",
+            "DOI": "10.1080/00207543.2015.1030467"
+        },
+        {
+            "key": "CIT0035",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.im.2018.09.003"
+        },
+        {
+            "key": "CIT0036",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0170840604040675"
+        },
+        {
+            "key": "CIT0037",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jom.2007.09.002"
+        },
+        {
+            "key": "CIT0038",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0092070399273001"
+        },
+        {
+            "key": "CIT0039",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/13675560310001627016"
+        },
+        {
+            "key": "CIT0040",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/orsc.1070.0340"
+        },
+        {
+            "key": "CIT0041",
+            "volume-title": "Methodology in the Social Sciences. Principles and Practice of Structural Equation Modeling.",
+            "author": "Kline R. B.",
             "year": "2011",
-            "journal-title": "J. Exp. Biol."
+            "edition": "3"
         },
         {
-            "key": "2021042623065360900_JEB233288C57",
+            "key": "CIT0042",
             "doi-asserted-by": "publisher",
-            "first-page": "1275",
-            "DOI": "10.1037/a0020580",
-            "article-title": "Preference reversal in multiattribute choice",
-            "volume": "117",
-            "author": "Tsetsos",
-            "year": "2010",
-            "journal-title": "Psychol. Rev."
+            "DOI": "10.1016/j.jom.2008.06.002"
         },
         {
-            "key": "2021042623065360900_JEB233288C58",
+            "key": "CIT0043",
             "doi-asserted-by": "publisher",
-            "first-page": "1695",
-            "DOI": "10.1007/s00265-010-0983-3",
-            "article-title": "Signal recognition by frogs in the presence of temporally fluctuating chorus-shaped noise",
-            "volume": "64",
-            "author": "V\u00e9lez",
-            "year": "2010",
-            "journal-title": "Behav. Ecol. Sociobiol."
+            "DOI": "10.1016/j.jom.2014.06.003"
         },
         {
-            "key": "2021042623065360900_JEB233288C59",
+            "key": "CIT0044",
             "doi-asserted-by": "publisher",
-            "first-page": "2167",
-            "DOI": "10.1073/pnas.0305697101",
-            "article-title": "A revised view of sensory cortical parcellation",
-            "volume": "101",
-            "author": "Wallace",
-            "year": "2004",
-            "journal-title": "Proc. Natl. Acad. Sci. USA"
+            "DOI": "10.1177/1536867X1301300407"
         },
         {
-            "key": "2021042623065360900_JEB233288C60",
-            "doi-asserted-by": "crossref",
-            "volume-title": "Noise Matters",
-            "author": "Wiley",
-            "year": "2015",
-            "DOI": "10.4159/9780674287044"
-        },
-        {
-            "key": "2021042623065360900_JEB233288C61",
+            "key": "CIT0045",
             "doi-asserted-by": "publisher",
-            "first-page": "6653",
-            "DOI": "10.1523/JNEUROSCI.0174-18.2018",
-            "article-title": "Behavioral evidence and neural correlates of perceptual grouping by motion in the barn owl",
-            "volume": "38",
-            "author": "Zahar",
-            "year": "2018",
-            "journal-title": "J. Neurosci."
+            "DOI": "10.1111/deci.12192"
+        },
+        {
+            "key": "CIT0046",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jbusres.2012.12.019"
+        },
+        {
+            "key": "CIT0047",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/01621459.1988.10478722"
+        },
+        {
+            "key": "CIT0048",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jbusres.2018.07.020"
+        },
+        {
+            "key": "CIT0049",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/0740817X.2013.876241"
+        },
+        {
+            "key": "CIT0050",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1057/jibs.2015.9"
+        },
+        {
+            "key": "CIT0051",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/mnsc.33.11.1404"
+        },
+        {
+            "key": "CIT0052",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jom.2011.06.007"
+        },
+        {
+            "key": "CIT0053",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1057/palgrave.jibs.8490270"
+        },
+        {
+            "key": "CIT0054",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5465/amr.1987.4306502"
+        },
+        {
+            "key": "CIT0055",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/isre.2.3.192"
+        },
+        {
+            "key": "CIT0056",
+            "first-page": "24",
+            "volume": "17",
+            "author": "Mukherji A.",
+            "year": "2017",
+            "journal-title": "Journal of Organizational Psychology"
+        },
+        {
+            "key": "CIT0057",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/00207540600847137"
+        },
+        {
+            "key": "CIT0058",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.ijpe.2015.10.018"
+        },
+        {
+            "key": "CIT0059",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/002224299005400407"
+        },
+        {
+            "key": "CIT0060",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.pursup.2012.01.001"
+        },
+        {
+            "key": "CIT0061",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/sej.1192"
+        },
+        {
+            "key": "CIT0062",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/978-3-030-03813-7_21"
+        },
+        {
+            "key": "CIT0063",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.pursup.2015.12.001"
+        },
+        {
+            "key": "CIT0064",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/13675567.2018.1534946"
+        },
+        {
+            "key": "CIT0065",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/25148783"
+        },
+        {
+            "key": "CIT0066",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1108/IJBM-06-2013-0057"
+        },
+        {
+            "key": "CIT0067",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/0021-9010.88.5.879"
+        },
+        {
+            "key": "CIT0068",
+            "first-page": "61",
+            "volume": "74",
+            "author": "Porter M. E.",
+            "year": "1996",
+            "journal-title": "Harvard Business Review"
+        },
+        {
+            "key": "CIT0069",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1108/14635771311299506"
+        },
+        {
+            "key": "CIT0070",
+            "first-page": "108",
+            "volume": "17",
+            "author": "R\u0103dulescu C. V.",
+            "year": "2016",
+            "journal-title": "Review of International Comparative Management"
+        },
+        {
+            "key": "CIT0071",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/00207543.2014.910620"
+        },
+        {
+            "issue": "4",
+            "key": "CIT0072",
+            "first-page": "1",
+            "volume": "32",
+            "author": "Riabacke A.",
+            "year": "2006",
+            "journal-title": "IAENG International Journal of Computer Science"
+        },
+        {
+            "key": "CIT0073",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/13675567.2015.1075476"
+        },
+        {
+            "key": "CIT0074",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/09537287.2014.950624"
+        },
+        {
+            "key": "CIT0075",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.pursup.2018.02.003"
+        },
+        {
+            "key": "CIT0076",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s11628-011-0112-z"
+        },
+        {
+            "key": "CIT0077",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/0267257X.1985.9963980"
+        },
+        {
+            "key": "CIT0078",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/00207543.2016.1249432"
+        },
+        {
+            "key": "CIT0079",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/00207543.2017.1355123"
+        },
+        {
+            "key": "CIT0080",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1108/10878570010348530"
+        },
+        {
+            "key": "CIT0081",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/2392880"
+        },
+        {
+            "key": "CIT0082",
+            "first-page": "30",
+            "volume": "29",
+            "author": "Shekarian M.",
+            "year": "2019",
+            "journal-title": "International Journal of Operations & Production Management"
+        },
+        {
+            "key": "CIT0083",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.im.2018.09.006"
+        },
+        {
+            "key": "CIT0084",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.ijresmar.2006.01.006"
+        },
+        {
+            "key": "CIT0085",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1108/IJOPM-03-2012-0112"
+        },
+        {
+            "key": "CIT0086",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.cie.2019.02.006"
+        },
+        {
+            "key": "CIT0087",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1108/BIJ-10-2018-0346"
+        },
+        {
+            "key": "CIT0088",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/002224299405800103"
+        },
+        {
+            "key": "CIT0089",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5465/amr.2007.23466005"
+        },
+        {
+            "key": "CIT0090",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/13675567.2017.1324834"
+        },
+        {
+            "key": "CIT0091",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jbusres.2018.10.038"
+        },
+        {
+            "key": "CIT0092",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1467-6486.2012.01080.x"
+        },
+        {
+            "key": "CIT0093",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/mnsc.1060.0515"
+        },
+        {
+            "key": "CIT0094",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1108/SCM-02-2017-0059"
+        },
+        {
+            "key": "CIT0095",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/00207543.2015.1037934"
+        },
+        {
+            "key": "CIT0096",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1093/icc/dtq040"
+        },
+        {
+            "key": "CIT0097",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1108/IJLM-02-2014-0034"
+        },
+        {
+            "key": "CIT0098",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1093/icc/12.3.577"
+        },
+        {
+            "key": "CIT0099",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jbusres.2016.08.009"
+        },
+        {
+            "key": "CIT0100",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jbusres.2018.06.005"
+        },
+        {
+            "key": "CIT0101",
+            "first-page": "1",
+            "volume": "7543",
+            "author": "Yoon J.",
+            "year": "2017",
+            "journal-title": "International Journal of Production Research"
+        },
+        {
+            "key": "CIT0102",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/257076"
+        },
+        {
+            "key": "CIT0103",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1108/IJLM-02-2015-0043"
         }
     ],
     "container-title": [
-        "Journal of Experimental Biology"
+        "International Journal of Logistics Research and Applications"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://syndication.highwire.org/content/doi/10.1242/jeb.233288",
-            "content-type": "unspecified",
-            "content-version": "vor",
-            "intended-application": "syndication"
-        },
-        {
-            "URL": "http://journals.biologists.com/jeb/article-pdf/doi/10.1242/jeb.233288/1815967/jeb233288.pdf",
-            "content-type": "application/pdf",
-            "content-version": "vor",
-            "intended-application": "syndication"
-        },
-        {
-            "URL": "http://journals.biologists.com/jeb/article-pdf/doi/10.1242/jeb.233288/2068147/jeb_233288v1.pdf",
-            "content-type": "application/pdf",
-            "content-version": "am",
-            "intended-application": "syndication"
-        },
-        {
-            "URL": "http://journals.biologists.com/jeb/article-pdf/doi/10.1242/jeb.233288/2068147/jeb_233288v1.pdf",
+            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/13675567.2019.1684462",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -906,52 +636,112 @@
     "deposited": {
         "date-parts": [
             [
-                2022,
-                11,
-                28
+                2024,
+                7,
+                26
             ]
         ],
-        "date-time": "2022-11-28T01:22:54Z",
-        "timestamp": 1669598574000
+        "date-time": "2024-07-26T00:47:48Z",
+        "timestamp": 1721954868000
     },
-    "score": 16.073793,
+    "score": 15.074321,
     "resource": {
         "primary": {
-            "URL": "https://journals.biologists.com/jeb/article/doi/10.1242/jeb.233288/267807/Complex-sensory-environments-alter-mate-choice"
+            "URL": "https://www.tandfonline.com/doi/full/10.1080/13675567.2019.1684462"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2020,
-                1,
-                1
+                2019,
+                10,
+                31
             ]
         ]
     },
-    "references-count": 63,
-    "URL": "http://dx.doi.org/10.1242/jeb.233288",
+    "references-count": 102,
+    "journal-issue": {
+        "issue": "3",
+        "published-print": {
+            "date-parts": [
+                [
+                    2020,
+                    5,
+                    3
+                ]
+            ]
+        }
+    },
+    "alternative-id": [
+        "10.1080/13675567.2019.1684462"
+    ],
+    "URL": "http://dx.doi.org/10.1080/13675567.2019.1684462",
     "ISSN": [
-        "1477-9145",
-        "0022-0949"
+        "1367-5567",
+        "1469-848X"
     ],
     "issn-type": [
         {
-            "value": "1477-9145",
-            "type": "electronic"
+            "value": "1367-5567",
+            "type": "print"
         },
         {
-            "value": "0022-0949",
-            "type": "print"
+            "value": "1469-848X",
+            "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2020,
-                1,
-                1
+                2019,
+                10,
+                31
             ]
         ]
-    }
+    },
+    "assertion": [
+        {
+            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
+            "order": 1,
+            "name": "peerreview_statement",
+            "label": "Peer Review Statement"
+        },
+        {
+            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=cjol20",
+            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=cjol20",
+            "order": 2,
+            "name": "aims_and_scope_url",
+            "label": "Aim & Scope"
+        },
+        {
+            "value": "2019-05-05",
+            "order": 0,
+            "name": "received",
+            "label": "Received",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
+        },
+        {
+            "value": "2019-10-17",
+            "order": 2,
+            "name": "accepted",
+            "label": "Accepted",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
+        },
+        {
+            "value": "2019-10-31",
+            "order": 3,
+            "name": "published",
+            "label": "Published",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
+        }
+    ]
 }

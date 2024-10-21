@@ -3,14 +3,17 @@ import json
 import sys
 import os
 from unidecode import unidecode
+
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from academic_metrics.strategies import StrategyFactory
 from academic_metrics.utils import WarningManager, Utilities, FileHandler
 from academic_metrics.enums import AttributeTypes
 
+
 def clean_unicode_escapes(text):
     clean_text = unidecode(text)
     return clean_text
+
 
 def get_crossref_ab_title(file_path: str, output_file_path: str, utils: Utilities):
     items = ijson.items(open(file_path, "r"), "item")
@@ -19,7 +22,7 @@ def get_crossref_ab_title(file_path: str, output_file_path: str, utils: Utilitie
         abstract = utils.get_attributes(item, [AttributeTypes.CROSSREF_ABSTRACT])[
             AttributeTypes.CROSSREF_ABSTRACT
         ][1]
-        #abstract = abstract[1]
+        # abstract = abstract[1]
         title_list = utils.get_attributes(item, [AttributeTypes.CROSSREF_TITLE])[
             AttributeTypes.CROSSREF_TITLE
         ][1]
@@ -31,7 +34,7 @@ def get_crossref_ab_title(file_path: str, output_file_path: str, utils: Utilitie
             paper_dict[title] = clean_unicode_escapes(abstract)
         else:
             print(title)
-    
+
     with open(output_file_path, "w") as file:
         json.dump(paper_dict, file, indent=4)
 

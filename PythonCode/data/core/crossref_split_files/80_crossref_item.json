@@ -3,101 +3,244 @@
         "date-parts": [
             [
                 2023,
-                5,
-                19
+                9,
+                12
             ]
         ],
-        "date-time": "2023-05-19T11:10:56Z",
-        "timestamp": 1684494656602
+        "date-time": "2023-09-12T12:15:45Z",
+        "timestamp": 1694520945994
     },
-    "reference-count": 5,
-    "publisher": "University of Illinois Press",
-    "issue": "1",
+    "reference-count": 15,
+    "publisher": "Wiley",
+    "issue": "2",
+    "license": [
+        {
+            "start": {
+                "date-parts": [
+                    [
+                        2018,
+                        12,
+                        10
+                    ]
+                ],
+                "date-time": "2018-12-10T00:00:00Z",
+                "timestamp": 1544400000000
+            },
+            "content-version": "vor",
+            "delay-in-days": 9,
+            "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+        }
+    ],
     "content-domain": {
-        "domain": [],
-        "crossmark-restriction": false
+        "domain": [
+            "onlinelibrary.wiley.com"
+        ],
+        "crossmark-restriction": true
     },
+    "short-container-title": [
+        "Conflict Resolution Qtrly"
+    ],
     "published-print": {
         "date-parts": [
             [
-                2021,
-                4,
-                1
+                2018,
+                12
             ]
         ]
     },
-    "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>This collection honors and critically engages with Tom Regan\u2019s groundbreaking case for the moral rights of animals. Two of Regan\u2019s arguments receive a great deal of attention in these articles: the lifeboat argument and the argument from marginal cases. This review article examines the role of the two arguments in these discussions of Regan and animal rights and argues that effective animal advocacy will require more critical attention to social context\u2014in particular, to how well the arguments\u2019 assumptions describe our world and to how the arguments are likely to be used to reinforce existing injustices.</jats:p>",
-    "DOI": "10.5406/janimalethics.11.1.0099",
+    "DOI": "10.1002/crq.21243",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2021,
-                3,
-                12
+                2018,
+                12,
+                10
             ]
         ],
-        "date-time": "2021-03-12T19:35:01Z",
-        "timestamp": 1615577701000
+        "date-time": "2018-12-10T19:09:55Z",
+        "timestamp": 1544468995000
     },
-    "page": "99-104",
+    "page": "95-97",
+    "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
     "source": "Crossref",
     "is-referenced-by-count": 0,
     "title": [
-        "After Regan: Animal Rights and Lifeboat Scenarios"
+        "Introduction to restorative justice colloquy"
     ],
-    "prefix": "10.5406",
-    "volume": "11",
+    "prefix": "10.1002",
+    "volume": "36",
     "author": [
         {
-            "given": "Grace",
-            "family": "Clement",
+            "ORCID": "http://orcid.org/0000-0002-7003-827X",
+            "authenticated-orcid": false,
+            "given": "Toran",
+            "family": "Hansen",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Salisbury University, Salisbury, Maryland"
+                    "name": "Conflict Analysis and Dispute Resolution Salisbury University  Camden Maryland"
                 }
             ]
         }
     ],
-    "member": "3673",
+    "member": "311",
+    "published-online": {
+        "date-parts": [
+            [
+                2018,
+                12,
+                10
+            ]
+        ]
+    },
     "reference": [
         {
-            "key": "2023051910535692600_c1",
+            "key": "e_1_2_2_2_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1017/CBO9780511804618"
+        },
+        {
+            "issue": "3",
+            "key": "e_1_2_2_3_1",
             "doi-asserted-by": "crossref",
-            "unstructured": "Frey, R. G. (1988). Moral standing, the value of lives, and speciesism. Between the Species, 4(3), 191\u2013201.",
-            "DOI": "10.15368/bts.1988v4n3.8"
+            "DOI": "10.1002/crq.21245",
+            "article-title": "\u2018Students can change a school\u2019: Understanding the role of youth leadership in building a school culture of peace",
+            "volume": "36",
+            "author": "Duckworth C.",
+            "journal-title": "Conflict Resolution Quarterly"
         },
         {
-            "key": "2023051910535692600_c2",
-            "unstructured": "Hooley, D. (2016). [Review of the book The moral rights of animals, by M. Engel Jr. and G. L Comstock]. Notre Dame Philosophical Reviews: An Electronic Journal.https://ndpr.nd.edu/news/the-moral-rights-of-animals/"
+            "issue": "3",
+            "key": "e_1_2_2_4_1",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1002/crq.21231",
+            "article-title": "A conceptual framework for preventing aggression in elementary schools",
+            "volume": "36",
+            "author": "Ellis A. R.",
+            "journal-title": "Conflict Resolution Quarterly"
         },
         {
-            "key": "2023051910535692600_c3",
-            "unstructured": "Regan, T. (1983). The case for animal rights. Berkeley, CA: University of California Press."
+            "key": "e_1_2_2_5_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/crq.21235"
         },
         {
-            "key": "2023051910535692600_c4",
-            "unstructured": "Regan, T. (2004). The case for animal rights. Berkeley, CA: University of California Press."
+            "issue": "3",
+            "key": "e_1_2_2_6_1",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1002/crq.21236",
+            "article-title": "New directions in whole school restorative justice implementation",
+            "volume": "36",
+            "author": "Gonz\u00e1lez T.",
+            "journal-title": "Conflict Resolution Quarterly"
         },
         {
-            "key": "2023051910535692600_c5",
-            "unstructured": "Taylor, S. (2017). Beasts of burden: Animal and disability liberation. New York, NY: The New Press."
+            "key": "e_1_2_2_7_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/crq.21234"
+        },
+        {
+            "issue": "2",
+            "key": "e_1_2_2_8_1",
+            "doi-asserted-by": "crossref",
+            "first-page": "163",
+            "DOI": "10.1002/crq.21232",
+            "article-title": "Reconciliation sentiment among former perpetrators of violence during the Colombian armed conflict",
+            "volume": "36",
+            "author": "L\u00f3pez W. L.",
+            "year": "2018",
+            "journal-title": "Conflict Resolution Quarterly"
+        },
+        {
+            "key": "e_1_2_2_9_1",
+            "first-page": "197",
+            "volume-title": "Restructuring restorative justice philosophy",
+            "author": "Morrison B.",
+            "year": "2013"
+        },
+        {
+            "issue": "3",
+            "key": "e_1_2_2_10_1",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1002/crq.21242",
+            "article-title": "The impact of restorative approaches on participant well\u2010being: An evaluation of student happiness and engagement",
+            "volume": "36",
+            "author": "Norris H.",
+            "journal-title": "Conflict Resolution Quarterly"
+        },
+        {
+            "key": "e_1_2_2_11_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/crq.21237"
+        },
+        {
+            "key": "e_1_2_2_12_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/crq.21238"
+        },
+        {
+            "issue": "3",
+            "key": "e_1_2_2_13_1",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1002/crq.21240",
+            "article-title": "Restorative practices in residence halls at Victoria University of Wellington, New Zealand",
+            "volume": "36",
+            "author": "Pointer L.",
+            "journal-title": "Conflict Resolution Quarterly"
+        },
+        {
+            "issue": "2",
+            "key": "e_1_2_2_14_1",
+            "first-page": "251",
+            "article-title": "Restorative justice in the twenty\u2010first century: A social movement full of opportunities and pitfalls",
+            "volume": "89",
+            "author": "Umbreit M.",
+            "year": "2005",
+            "journal-title": "Marquette Law Review"
+        },
+        {
+            "issue": "3",
+            "key": "e_1_2_2_15_1",
+            "doi-asserted-by": "crossref",
+            "DOI": "10.1002/crq.21233",
+            "article-title": "Integrating social justice\u2010based conflict resolution into higher education settings: Faculty, staff, and student professional development through mediation training",
+            "volume": "36",
+            "author": "Watson N. T.",
+            "journal-title": "Conflict Resolution Quarterly"
+        },
+        {
+            "key": "e_1_2_2_16_1",
+            "volume-title": "Changing Lenses",
+            "author": "Zehr H",
+            "year": "1990"
         }
     ],
     "container-title": [
-        "Journal of Animal Ethics"
+        "Conflict Resolution Quarterly"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://scholarlypublishingcollective.org/uip/jane/article-pdf/11/1/99/1905495/janimalethics.11.1.0099.pdf",
+            "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fcrq.21243",
             "content-type": "application/pdf",
             "content-version": "vor",
-            "intended-application": "syndication"
+            "intended-application": "text-mining"
         },
         {
-            "URL": "https://scholarlypublishingcollective.org/uip/jane/article-pdf/11/1/99/1905495/janimalethics.11.1.0099.pdf",
+            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/crq.21243",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/crq.21243",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/crq.21243",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -107,63 +250,78 @@
         "date-parts": [
             [
                 2023,
-                5,
-                19
+                9,
+                11
             ]
         ],
-        "date-time": "2023-05-19T10:54:26Z",
-        "timestamp": 1684493666000
+        "date-time": "2023-09-11T15:44:23Z",
+        "timestamp": 1694447063000
     },
-    "score": 16.393528,
+    "score": 13.417514,
     "resource": {
         "primary": {
-            "URL": "https://scholarlypublishingcollective.org/jane/article/11/1/99/284152/After-Regan-Animal-Rights-and-Lifeboat-Scenarios"
+            "URL": "https://onlinelibrary.wiley.com/doi/10.1002/crq.21243"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2021,
-                4,
-                1
+                2018,
+                12
             ]
         ]
     },
-    "references-count": 5,
+    "references-count": 15,
     "journal-issue": {
-        "issue": "1",
+        "issue": "2",
         "published-print": {
             "date-parts": [
                 [
-                    2021,
-                    4,
-                    1
+                    2018,
+                    12
                 ]
             ]
         }
     },
-    "URL": "http://dx.doi.org/10.5406/janimalethics.11.1.0099",
+    "alternative-id": [
+        "10.1002/crq.21243"
+    ],
+    "URL": "http://dx.doi.org/10.1002/crq.21243",
+    "archive": [
+        "Portico"
+    ],
     "ISSN": [
-        "2156-5414",
-        "2160-1267"
+        "1536-5581",
+        "1541-1508"
     ],
     "issn-type": [
         {
-            "value": "2156-5414",
+            "value": "1536-5581",
             "type": "print"
         },
         {
-            "value": "2160-1267",
+            "value": "1541-1508",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2021,
-                4,
-                1
+                2018,
+                12
             ]
         ]
-    }
+    },
+    "assertion": [
+        {
+            "value": "2018-12-10",
+            "order": 2,
+            "name": "published",
+            "label": "Published",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
+        }
+    ]
 }

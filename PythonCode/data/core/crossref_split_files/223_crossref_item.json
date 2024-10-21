@@ -3,511 +3,830 @@
         "date-parts": [
             [
                 2024,
-                3,
-                18
+                9,
+                4
             ]
         ],
-        "date-time": "2024-03-18T16:20:56Z",
-        "timestamp": 1710778856303
+        "date-time": "2024-09-04T00:39:18Z",
+        "timestamp": 1725410358846
     },
-    "reference-count": 67,
-    "publisher": "Informa UK Limited",
-    "issue": "2",
+    "reference-count": 129,
+    "publisher": "Wiley",
+    "issue": "6",
+    "license": [
+        {
+            "start": {
+                "date-parts": [
+                    [
+                        2020,
+                        2,
+                        28
+                    ]
+                ],
+                "date-time": "2020-02-28T00:00:00Z",
+                "timestamp": 1582848000000
+            },
+            "content-version": "vor",
+            "delay-in-days": 0,
+            "URL": "http://creativecommons.org/licenses/by/3.0/"
+        }
+    ],
     "content-domain": {
         "domain": [
-            "www.tandfonline.com"
+            "onlinelibrary.wiley.com"
         ],
         "crossmark-restriction": true
     },
     "short-container-title": [
-        "Contemporary Justice Review"
+        "Ecography"
     ],
     "published-print": {
         "date-parts": [
             [
-                2018,
-                4,
-                3
+                2020,
+                6
             ]
         ]
     },
-    "DOI": "10.1080/10282580.2018.1455508",
+    "abstract": "<jats:p>Concepts regarding effects of recurrent natural disturbances and subsequent responses of communities are central to ecology and conservation biology. Tropical cyclones constitute major disturbances producing direct effects (damage, mortality) in many coastal communities worldwide. Subsequent reassembly involves changes in composition and abundance for which the underlying mechanisms (deterministic and stochastic processes) are still not clear, especially for mobile organisms. We examined tropical cyclone\u2010induced changes in composition and reassembly of entire insect communities in 16 Louisiana coastal salt marshes before and after Hurricane Isaac in 2012 and 2013. We used the Shannon index and multivariate permutational ANOVA to study insect resistance and resilience, \u03b2 diversity partitioning to evaluate the importance of species replacement, and null models to disentangle the relative roles of different assembly processes over time after the tropical cyclone. The \u03b1 diversity and species composition, overall and for different trophic levels, decreased immediately after the tropical cyclone; nonetheless, both then increased rapidly and returned to pre\u2010cyclone states within one year. Changes in species abundance, rather than species replacement, was the primary driver, accounting for most temporal dissimilarity among insect communities. Stochastic processes, which drove community composition immediately after the tropical cyclone, decreased in importance over time. Our study indicates that rapid reformation of insect communities involved sequential landscape\u2010level dynamics. Cyclone\u2010resistant life cycle stages apparently survived in some, perhaps random locations within the overall salt marsh landscape. Subsequently, stochastic patterns of immigration of mobile life cycle stages resulted in rapid reformation of local communities. Post\u2010cyclone direct regeneration of salt marsh insect communities resulted from low resistance, coupled with high landscape\u2010level resilience via re\u2010immigration. Our study suggests that the extent of direct regeneration of local salt marsh insect communities might change with the size of larger marsh landscapes within which they are imbedded.</jats:p>",
+    "DOI": "10.1111/ecog.04932",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2018,
-                3,
-                30
+                2020,
+                2,
+                28
             ]
         ],
-        "date-time": "2018-03-30T13:23:44Z",
-        "timestamp": 1522416224000
+        "date-time": "2020-02-28T15:10:54Z",
+        "timestamp": 1582902654000
     },
-    "page": "185-207",
-    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
+    "page": "834-847",
+    "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 4,
+    "is-referenced-by-count": 11,
     "title": [
-        "Regenerative justice, beyond restoring"
+        "Effects of a tropical cyclone on salt marsh insect communities and post\u2010cyclone reassembly processes"
     ],
-    "prefix": "10.1080",
-    "volume": "21",
+    "prefix": "10.1111",
+    "volume": "43",
     "author": [
         {
-            "given": "Toran",
-            "family": "Hansen",
+            "ORCID": "http://orcid.org/0000-0002-9499-0054",
+            "authenticated-orcid": false,
+            "given": "Xuan",
+            "family": "Chen",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Conflict Analysis and Dispute Resolution, Salisbury University, Salisbury, MD, USA"
+                    "name": "Dept of Biology, Salisbury Univ. Salisbury MD USA"
                 }
             ]
         },
         {
-            "given": "Mark",
-            "family": "Umbreit",
+            "ORCID": "http://orcid.org/0000-0002-5857-175X",
+            "authenticated-orcid": false,
+            "given": "Benjamin J.",
+            "family": "Adams",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "School of Social Work, University of Minnesota, St. Paul, MN, USA"
+                    "name": "Urban Nature Research Center, Natural History Museum of Los Angeles County Los Angeles CA USA"
+                }
+            ]
+        },
+        {
+            "given": "William J.",
+            "family": "Platt",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Dept of Biological Sciences, Louisiana State Univ. Baton Rouge LA USA"
+                }
+            ]
+        },
+        {
+            "ORCID": "http://orcid.org/0000-0002-4836-7288",
+            "authenticated-orcid": false,
+            "given": "Linda M.",
+            "family": "Hooper\u2010B\u00f9i",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "College of the Coast and Environment, Louisiana State Univ. Baton Rouge LA USA"
                 }
             ]
         }
     ],
-    "member": "301",
+    "member": "311",
     "published-online": {
         "date-parts": [
             [
-                2018,
-                3,
-                30
+                2020,
+                2,
+                28
             ]
         ]
     },
     "reference": [
         {
-            "key": "CIT0001",
+            "key": "e_1_2_5_2_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10282580600827835"
+            "DOI": "10.1653/024.100.0236"
         },
         {
-            "key": "CIT0002",
-            "volume-title": "Counseling, treatment, and intervention methods with juvenile and adult offenders",
-            "author": "Alexander R.",
-            "year": "2000"
-        },
-        {
-            "key": "CIT0003",
+            "key": "e_1_2_5_3_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s11292-014-9200-0"
+            "DOI": "10.1890/02-0681"
         },
         {
-            "key": "CIT0004",
+            "key": "e_1_2_5_4_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0002-9432.72.3.372"
+            "DOI": "10.1890/12-2010.1"
         },
         {
-            "key": "CIT0005",
-            "first-page": "25",
-            "volume-title": "Reconstructing restorative justice philosophy",
-            "author": "Artinopoulou V.",
-            "year": "2013"
+            "journal-title": "PERMANOVA+ for primer: guide to software and statistical methods",
+            "year": "2008",
+            "author": "Anderson M. J.",
+            "key": "e_1_2_5_5_1"
         },
         {
-            "key": "CIT0006",
+            "key": "e_1_2_5_6_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/15325020903381683"
+            "DOI": "10.1111/j.1461-0248.2010.01552.x"
         },
         {
-            "key": "CIT0007",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/(ISSN)1541-1508"
-        },
-        {
-            "key": "CIT0008",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1017/CBO9780511804618"
-        },
-        {
-            "key": "CIT0009",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/1467-9760.00095"
-        },
-        {
-            "key": "CIT0010",
-            "first-page": "154",
-            "volume-title": "Multidimensional evidence-based practice",
-            "author": "Choi J. J.",
-            "year": "2009"
-        },
-        {
-            "key": "CIT0011",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10611-012-9382-1"
-        },
-        {
-            "key": "CIT0012",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/026975801001700302"
-        },
-        {
-            "key": "CIT0013",
-            "volume-title": "Existential therapies",
-            "author": "Cooper M.",
-            "year": "2003"
-        },
-        {
-            "key": "CIT0014",
-            "volume-title": "Meaning centered therapy workbook: Based on Viktor Frankl\u2019s logotherapy and existential analysis",
-            "author": "Dezelic M. S.",
-            "year": "2014"
-        },
-        {
-            "key": "CIT0015",
-            "volume-title": "The pursuit of meaning: Viktor Frankl, logotherapy, and life",
-            "author": "Fabry J. B.",
-            "year": "2013"
-        },
-        {
-            "key": "CIT0016",
-            "volume-title": "Man\u2019s search for ultimate meaning",
-            "author": "Frankl V. E.",
-            "year": "2000"
-        },
-        {
-            "key": "CIT0017",
-            "volume-title": "Man\u2019s search for meaning",
-            "author": "Frankl V. E.",
-            "year": "2006"
-        },
-        {
-            "key": "CIT0018",
-            "first-page": "311",
-            "volume-title": "Reconstructing restorative justice philosophy",
-            "author": "Gavrielides T.",
-            "year": "2013"
-        },
-        {
-            "key": "CIT0019",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0734016808325058"
-        },
-        {
-            "key": "CIT0020",
-            "first-page": "193",
-            "volume-title": "New directions in restorative justice: Issues, practice, evaluation",
-            "author": "Gustafson D.",
-            "year": "2005"
-        },
-        {
-            "key": "CIT0021",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10402659.2016.1166758"
-        },
-        {
-            "key": "CIT0022",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10964-013-9960-2"
-        },
-        {
-            "key": "CIT0023",
-            "volume-title": "Aristotle\u2019s first principles",
-            "author": "Irwin T.",
-            "year": "1998"
-        },
-        {
-            "key": "CIT0024",
-            "doi-asserted-by": "crossref",
-            "first-page": "47",
-            "DOI": "10.4324/9780203804841",
-            "volume-title": "Reconstructing restorative justice philosophy",
-            "author": "Johnstone G.",
-            "year": "2013"
-        },
-        {
-            "key": "CIT0025",
-            "first-page": "5",
-            "volume-title": "Handbook of restorative justice",
-            "author": "Johnstone G.",
-            "year": "2007"
-        },
-        {
-            "key": "CIT0026",
-            "first-page": "250",
-            "volume-title": "Social work treatment",
-            "author": "Krill D.",
-            "year": "1996",
-            "edition": "4"
-        },
-        {
-            "key": "CIT0027",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0032885505276969"
-        },
-        {
-            "key": "CIT0028",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/crq.21130"
-        },
-        {
-            "key": "CIT0029",
-            "volume-title": "Meaning in suffering: Comfort in crisis through logotherapy",
-            "author": "Lukas E.",
-            "year": "2014",
-            "edition": "2"
-        },
-        {
-            "key": "CIT0030",
-            "first-page": "67",
-            "volume-title": "Reconstructing restorative justice philosophy",
-            "author": "Maglione G.",
-            "year": "2013"
-        },
-        {
-            "key": "CIT0031",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF02736712"
-        },
-        {
-            "key": "CIT0032",
-            "volume-title": "The dynamics of conflict: A guide to engagement and intervention",
-            "author": "Mayer B.",
-            "year": "2012",
-            "edition": "2"
-        },
-        {
-            "key": "CIT0033",
-            "doi-asserted-by": "crossref",
-            "volume-title": "Building resilience to trauma: The trauma and community resiliency models",
-            "author": "Miller-Karas E.",
-            "year": "2015",
-            "DOI": "10.4324/9780203134115"
-        },
-        {
-            "key": "CIT0034",
-            "volume-title": "Evaluation of the adult victim-offender mediation programme, saskatoon community mediation services",
-            "author": "Nuffield J.",
-            "year": "1997"
-        },
-        {
-            "key": "CIT0035",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/104973150101100101"
-        },
-        {
-            "key": "CIT0036",
-            "first-page": "247",
-            "volume-title": "Reconstructing restorative justice philosophy",
-            "author": "Oudshoorn J.",
-            "year": "2013"
-        },
-        {
-            "issue": "6",
-            "key": "CIT0037",
-            "doi-asserted-by": "crossref",
-            "first-page": "654",
-            "DOI": "10.1002/jts.20460",
-            "volume": "22",
-            "author": "Owens G. P.",
-            "year": "2009",
-            "journal-title": "Journal of Traumatic Stress"
-        },
-        {
-            "key": "CIT0038",
-            "first-page": "59",
-            "volume-title": "Handbook of restorative justice",
-            "author": "Pranis K.",
-            "year": "2007"
-        },
-        {
-            "key": "CIT0039",
-            "volume-title": "Peacemaking circles: From crime to community",
-            "author": "Pranis K.",
-            "year": "2003"
-        },
-        {
-            "key": "CIT0040",
-            "volume-title": "Returning to the teachings: Exploring aboriginal justice",
-            "author": "Ross R.",
-            "year": "2006"
-        },
-        {
-            "key": "CIT0041",
-            "volume-title": "Emotions and violence: Shame and rage in destructive conflicts",
-            "author": "Scheff T. J.",
-            "year": "1991"
-        },
-        {
-            "key": "CIT0042",
-            "first-page": "179",
-            "volume-title": "Reconstructing restorative justice philosophy",
-            "author": "Schiff M.",
-            "year": "2013"
-        },
-        {
-            "key": "CIT0043",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/15325020600671949"
-        },
-        {
-            "key": "CIT0044",
-            "first-page": "179",
-            "volume-title": "Reconstructing restorative justice philosophy",
-            "author": "Sharpe S.",
-            "year": "2013"
-        },
-        {
-            "key": "CIT0045",
-            "volume-title": "Restorative justice: The evidence",
-            "author": "Sherman L.",
-            "year": "2007"
-        },
-        {
-            "key": "CIT0046",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s11292-015-9247-6"
-        },
-        {
-            "key": "CIT0047",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10940-014-9222-9"
-        },
-        {
-            "issue": "3",
-            "key": "CIT0048",
-            "first-page": "225",
-            "volume": "55",
-            "author": "Shrum H.",
+            "key": "e_1_2_5_7_1",
+            "first-page": "60",
+            "article-title": "Changes in patterns of understory leaf phenology and herbivory following hurricane damage",
+            "volume": "36",
+            "author": "Angulo\u2010Sandoval P.",
             "year": "2004",
-            "journal-title": "The Journal of Correctional Education"
+            "journal-title": "Biotropica"
         },
         {
-            "key": "CIT0049",
+            "key": "e_1_2_5_8_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/01933920701476664"
+            "DOI": "10.1111/j.1654-1103.2009.01082.x"
         },
         {
-            "key": "CIT0050",
+            "key": "e_1_2_5_9_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1176/appi.psychotherapy.2006.60.2.161"
+            "DOI": "10.1111/j.1466-8238.2009.00490.x"
         },
         {
-            "key": "CIT0051",
-            "volume-title": "Restorative justice conferencing (RJC). Using face-to-face meetings of offenders and victims: Effects on offender recidivism and victim satisfaction. A systematic review. Campbell Systematic Reviews, 10",
-            "author": "Strang H.",
-            "year": "2013"
-        },
-        {
-            "key": "CIT0052",
-            "volume-title": "Victim meets offender: The impact of restorative justice and mediation",
-            "author": "Umbreit M. S.",
-            "year": "1994"
-        },
-        {
-            "key": "CIT0053",
+            "key": "e_1_2_5_10_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/002087289904200209"
+            "DOI": "10.2737/SRS-GTR-9"
         },
         {
-            "key": "CIT0054",
-            "volume-title": "Mediating interpersonal conflict",
-            "author": "Umbreit M. S.",
-            "year": "2006"
-        },
-        {
-            "key": "CIT0055",
-            "volume-title": "Dancing with the energy of conflict and trauma: Letting go \u2013 Finding peace",
-            "author": "Umbreit M. S.",
-            "year": "2013"
-        },
-        {
-            "key": "CIT0056",
-            "volume-title": "Restorative justice dialogue: An essential guide for research and practice",
-            "author": "Umbreit M. S.",
-            "year": "2011"
-        },
-        {
-            "key": "CIT0057",
-            "volume-title": "Juvenile victim offender mediation in six Oregon counties",
-            "author": "Umbreit M.",
-            "year": "2001"
-        },
-        {
-            "key": "CIT0058",
+            "key": "e_1_2_5_11_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/(ISSN)1541-1508"
+            "DOI": "10.1046/j.1365-2745.2003.00754.x"
         },
         {
-            "key": "CIT0059",
+            "key": "e_1_2_5_12_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/2265828"
+        },
+        {
+            "key": "e_1_2_5_13_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1126/science.1180568"
+        },
+        {
+            "key": "e_1_2_5_14_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1654-1103.2006.tb02488.x"
+        },
+        {
+            "key": "e_1_2_5_15_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/ecy.2863"
+        },
+        {
+            "key": "e_1_2_5_16_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/1311359"
+        },
+        {
+            "key": "e_1_2_5_17_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/1937611"
+        },
+        {
+            "key": "e_1_2_5_18_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/0378-1127(94)90040-X"
+        },
+        {
+            "journal-title": "An annotated list of insects collected after Hurricane Isaac in the coastal salt marshes of the Mississippi Delta in Louisiana, 2012\u20132013",
+            "year": "2018",
+            "author": "Bui L. M.",
+            "key": "e_1_2_5_19_1"
+        },
+        {
+            "key": "e_1_2_5_20_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1466-8238.2007.00324.x"
+        },
+        {
+            "key": "e_1_2_5_21_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1466-8238.2011.00694.x"
+        },
+        {
+            "key": "e_1_2_5_22_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1890/ES15-00118.1"
+        },
+        {
+            "key": "e_1_2_5_23_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s00442-003-1311-7"
+        },
+        {
+            "key": "e_1_2_5_24_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1073/pnas.0704350104"
+        },
+        {
+            "key": "e_1_2_5_25_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1126/science.1187820"
+        },
+        {
+            "key": "e_1_2_5_26_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1890/ES10-00117.1"
+        },
+        {
+            "key": "e_1_2_5_27_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s10021-015-9908-3"
+        },
+        {
+            "key": "e_1_2_5_28_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5962/bhl.title.56234"
+        },
+        {
+            "key": "e_1_2_5_29_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1126/science.199.4335.1302"
+        },
+        {
+            "key": "e_1_2_5_30_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s003380050246"
+        },
+        {
+            "key": "e_1_2_5_31_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1086/283241"
+        },
+        {
+            "key": "e_1_2_5_32_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.7717/peerj.3360"
+        },
+        {
+            "key": "e_1_2_5_33_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s00442-015-3339-x"
+        },
+        {
+            "key": "e_1_2_5_34_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.2005.0906-7590.04205.x"
+        },
+        {
+            "key": "e_1_2_5_35_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1654-1103.2012.01482.x"
+        },
+        {
+            "key": "e_1_2_5_36_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1890/07-0271.1"
+        },
+        {
+            "key": "e_1_2_5_37_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1672/08-36.1"
+        },
+        {
+            "key": "e_1_2_5_38_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/BF00275587"
+        },
+        {
+            "key": "e_1_2_5_39_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1038/nature07234"
+        },
+        {
+            "journal-title": "Divine wind: the history and science of hurricanes",
+            "year": "2005",
+            "author": "Emanuel K.",
+            "key": "e_1_2_5_40_1",
             "doi-asserted-by": "crossref",
-            "first-page": "97",
-            "DOI": "10.4324/9781315648330-11",
-            "volume-title": "The mediation handbook: Research, theory, and practice",
-            "author": "Umbreit M.",
-            "year": "2017"
+            "DOI": "10.1093/oso/9780195149418.001.0001"
         },
         {
-            "key": "CIT0060",
-            "volume-title": "Facing violence: The path of restorative justice & dialogue",
-            "author": "Umbreit M. S.",
-            "year": "2003"
+            "key": "e_1_2_5_41_1",
+            "first-page": "96",
+            "article-title": "The dynamic environmental filter model: how do filtering effects change in assembling communities after disturbance?",
+            "author": "Fattorini M.",
+            "year": "2004",
+            "journal-title": "Assembly rules in restoration ecology \u2013 bridging the gap between theory and practice"
         },
         {
-            "issue": "2014",
-            "key": "CIT0061",
-            "first-page": "1",
-            "volume": "159",
-            "author": "Verde M. A. S.",
-            "year": "2014",
-            "journal-title": "Social and Behavioral Sciences"
-        },
-        {
-            "key": "CIT0062",
-            "first-page": "619",
-            "volume-title": "The human quest for meaning: Theories, research, and applications",
-            "author": "Wong P. T. P.",
-            "year": "2012"
-        },
-        {
-            "key": "CIT0063",
+            "key": "e_1_2_5_42_1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/jcop.2015.43.issue-4"
+            "DOI": "10.1111/gcb.13859"
         },
         {
-            "key": "CIT0064",
-            "volume-title": "Changing lenses",
-            "author": "Zehr H.",
-            "year": "1995"
+            "key": "e_1_2_5_43_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1890/06-2124.1"
         },
         {
-            "key": "CIT0065",
-            "volume-title": "The little book of restorative justice",
-            "author": "Zehr H.",
-            "year": "2002"
+            "key": "e_1_2_5_44_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1146/annurev-ecolsys-110411-160340"
         },
         {
-            "key": "CIT0066",
-            "first-page": "xvii",
-            "author": "Zehr H.",
-            "year": "2013",
-            "journal-title": "Reconstructing restorative justice philosophy"
+            "key": "e_1_2_5_45_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1461-0248.2005.00829.x"
         },
         {
-            "key": "CIT0067",
-            "first-page": "269",
-            "volume-title": "Reconstructing restorative justice philosophy",
-            "author": "Zellerer E.",
-            "year": "2013"
+            "key": "e_1_2_5_46_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1890/0012-9658(2000)081[2606:NMAOSC]2.0.CO;2"
+        },
+        {
+            "key": "e_1_2_5_47_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1098/rspb.2018.2908"
+        },
+        {
+            "key": "e_1_2_5_48_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/BF02798646"
+        },
+        {
+            "key": "e_1_2_5_49_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/1941148"
+        },
+        {
+            "key": "e_1_2_5_50_1",
+            "first-page": "211",
+            "article-title": "The effects of storms and cyclones on coral reefs: a review",
+            "volume": "12",
+            "author": "Harmelin\u2010Vivien M. L.",
+            "year": "1994",
+            "journal-title": "J. Coastal Res."
+        },
+        {
+            "key": "e_1_2_5_51_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s11284-007-0372-1"
+        },
+        {
+            "key": "e_1_2_5_52_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1073/pnas.0914582107"
+        },
+        {
+            "key": "e_1_2_5_53_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/1365-2745.13039"
+        },
+        {
+            "key": "e_1_2_5_54_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/ecs2.2231"
+        },
+        {
+            "key": "e_1_2_5_55_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1038/srep45691"
+        },
+        {
+            "key": "e_1_2_5_56_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1654-1103.2009.01136.x"
+        },
+        {
+            "key": "e_1_2_5_57_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1175/JCLI4187.1"
+        },
+        {
+            "key": "e_1_2_5_58_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1365-2745.2009.01595.x"
+        },
+        {
+            "key": "e_1_2_5_59_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1365-2656.2006.01158.x"
+        },
+        {
+            "key": "e_1_2_5_60_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1744-7429.2002.tb00573.x"
+        },
+        {
+            "key": "e_1_2_5_61_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1126/science.1208584"
+        },
+        {
+            "key": "e_1_2_5_62_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1461-0248.2011.01637.x"
+        },
+        {
+            "key": "e_1_2_5_63_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/geb.12207"
+        },
+        {
+            "key": "e_1_2_5_64_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/ece3.4984"
+        },
+        {
+            "key": "e_1_2_5_65_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1098/rspb.2015.0750"
+        },
+        {
+            "key": "e_1_2_5_66_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1461-0248.2004.00608.x"
+        },
+        {
+            "key": "e_1_2_5_67_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s11258-006-9247-8"
+        },
+        {
+            "key": "e_1_2_5_68_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/ele.12647"
+        },
+        {
+            "key": "e_1_2_5_69_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1890/0012-9615(1998)068[0487:PSAFDO]2.0.CO;2"
+        },
+        {
+            "key": "e_1_2_5_70_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1038/nclimate1389"
+        },
+        {
+            "key": "e_1_2_5_71_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s10021-010-9399-1"
+        },
+        {
+            "key": "e_1_2_5_72_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/ele.12073"
+        },
+        {
+            "key": "e_1_2_5_73_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1442-9993.2008.01894.x"
+        },
+        {
+            "key": "e_1_2_5_74_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1579/0044-7447-29.2.106"
+        },
+        {
+            "journal-title": "Measuring biological diversity",
+            "year": "2004",
+            "author": "Magurran A. E.",
+            "key": "e_1_2_5_75_1"
+        },
+        {
+            "key": "e_1_2_5_76_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/ecy.2052"
+        },
+        {
+            "key": "e_1_2_5_77_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s00442-017-4022-1"
+        },
+        {
+            "key": "e_1_2_5_78_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1660/062.122.0106"
+        },
+        {
+            "key": "e_1_2_5_79_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/jbi.12970"
+        },
+        {
+            "key": "e_1_2_5_80_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1461-0248.2009.01292.x"
+        },
+        {
+            "key": "e_1_2_5_81_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1038/s41598-018-33210-7"
+        },
+        {
+            "key": "e_1_2_5_82_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s12237-019-00593-3"
+        },
+        {
+            "key": "e_1_2_5_83_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1744-7429.1998.tb00075.x"
+        },
+        {
+            "key": "e_1_2_5_84_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.12705/636.19"
+        },
+        {
+            "key": "e_1_2_5_85_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.12705/636.23"
+        },
+        {
+            "key": "e_1_2_5_86_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1038/416084a"
+        },
+        {
+            "key": "e_1_2_5_87_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/1942425"
+        },
+        {
+            "key": "e_1_2_5_88_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1890/01-0552"
+        },
+        {
+            "key": "e_1_2_5_89_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/ecog.00731"
+        },
+        {
+            "key": "e_1_2_5_90_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1600-0706.2011.19451.x"
+        },
+        {
+            "key": "e_1_2_5_91_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.ecocom.2013.03.002"
+        },
+        {
+            "key": "e_1_2_5_92_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1890/0012-9615(2003)073[0087:CASOSD]2.0.CO;2"
+        },
+        {
+            "key": "e_1_2_5_93_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/geb.12222"
+        },
+        {
+            "key": "e_1_2_5_94_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1890/11-1042.1"
+        },
+        {
+            "key": "e_1_2_5_95_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1017/S0266467412000582"
+        },
+        {
+            "key": "e_1_2_5_96_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1365-2699.2006.01429.x"
+        },
+        {
+            "key": "e_1_2_5_97_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1023/A:1023262724696"
+        },
+        {
+            "key": "e_1_2_5_98_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1073/pnas.0510355103"
+        },
+        {
+            "key": "e_1_2_5_99_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1038/35084071"
+        },
+        {
+            "key": "e_1_2_5_100_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1146/annurev-ento-120710-100610"
+        },
+        {
+            "key": "e_1_2_5_101_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1046/j.1365-2311.1999.00186.x"
+        },
+        {
+            "key": "e_1_2_5_102_1",
+            "first-page": "11",
+            "article-title": "Post\u2010hurricane successional dynamics in abundance and diversity of canopy arthropods in a tropical rainforest",
+            "volume": "46",
+            "author": "Schowalter T. D.",
+            "year": "2017",
+            "journal-title": "Environ. Entomol."
+        },
+        {
+            "key": "e_1_2_5_103_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/1934856"
+        },
+        {
+            "key": "e_1_2_5_104_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1890/0012-9658(2007)88[37:AOIFDF]2.0.CO;2"
+        },
+        {
+            "key": "e_1_2_5_105_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1126/science.281.5377.695"
+        },
+        {
+            "key": "e_1_2_5_106_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/ecy.1523"
+        },
+        {
+            "key": "e_1_2_5_107_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/2388274"
+        },
+        {
+            "key": "e_1_2_5_108_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1017/S0266467400006544"
+        },
+        {
+            "key": "e_1_2_5_109_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1890/06-1242.1"
+        },
+        {
+            "key": "e_1_2_5_110_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s100219900047"
+        },
+        {
+            "key": "e_1_2_5_111_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1126/science.1129116"
+        },
+        {
+            "key": "e_1_2_5_112_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1745-5871.2011.00724.x"
+        },
+        {
+            "key": "e_1_2_5_113_1",
+            "first-page": "41",
+            "article-title": "Impacts of tropical cyclones on forests in the Wet Tropics of Australia",
+            "author": "Turton S. M.",
+            "year": "2008",
+            "journal-title": "Living in a dynamic tropical forest landscape"
+        },
+        {
+            "key": "e_1_2_5_114_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1126/science.290.5492.788"
+        },
+        {
+            "key": "e_1_2_5_115_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/S0378-1127(00)00538-7"
+        },
+        {
+            "key": "e_1_2_5_116_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1890/02-3140"
+        },
+        {
+            "key": "e_1_2_5_117_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1899/09-114.1"
+        },
+        {
+            "key": "e_1_2_5_118_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1017/S0266467418000056"
+        },
+        {
+            "key": "e_1_2_5_119_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/3565409"
+        },
+        {
+            "key": "e_1_2_5_120_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s00248-007-9322-2"
+        },
+        {
+            "journal-title": "Flora of the Southern and Mid\u2010Atlantic States",
+            "year": "2015",
+            "author": "Weakley A. S.",
+            "key": "e_1_2_5_121_1"
+        },
+        {
+            "key": "e_1_2_5_122_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1126/science.1116448"
+        },
+        {
+            "journal-title": "Change with time and the role of cyclones in tropical rain forest on Kolombangara, Solomon Islands",
+            "year": "1974",
+            "author": "Whitmore T. C.",
+            "key": "e_1_2_5_123_1"
+        },
+        {
+            "key": "e_1_2_5_124_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/2260763"
+        },
+        {
+            "key": "e_1_2_5_125_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/2388266"
+        },
+        {
+            "key": "e_1_2_5_126_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s10021-007-9054-7"
+        },
+        {
+            "key": "e_1_2_5_127_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/geb.12640"
+        },
+        {
+            "key": "e_1_2_5_128_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/btp.12443"
+        },
+        {
+            "key": "e_1_2_5_129_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s11676-015-0018-z"
+        },
+        {
+            "key": "e_1_2_5_130_1",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2307/2388295"
         }
     ],
     "container-title": [
-        "Contemporary Justice Review"
+        "Ecography"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/10282580.2018.1455508",
+            "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1111%2Fecog.04932",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/ecog.04932",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1111/ecog.04932",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/ecog.04932",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -516,91 +835,91 @@
     "deposited": {
         "date-parts": [
             [
-                2020,
-                10,
-                30
+                2024,
+                8,
+                1
             ]
         ],
-        "date-time": "2020-10-30T16:00:47Z",
-        "timestamp": 1604073647000
+        "date-time": "2024-08-01T08:58:56Z",
+        "timestamp": 1722502736000
     },
-    "score": 14.751463,
+    "score": 12.432603,
     "resource": {
         "primary": {
-            "URL": "https://www.tandfonline.com/doi/full/10.1080/10282580.2018.1455508"
+            "URL": "https://onlinelibrary.wiley.com/doi/10.1111/ecog.04932"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2018,
-                3,
-                30
+                2020,
+                2,
+                28
             ]
         ]
     },
-    "references-count": 67,
+    "references-count": 129,
     "journal-issue": {
-        "issue": "2",
-        "published-online": {
-            "date-parts": [
-                [
-                    2018,
-                    4,
-                    6
-                ]
-            ]
-        },
+        "issue": "6",
         "published-print": {
             "date-parts": [
                 [
-                    2018,
-                    4,
-                    3
+                    2020,
+                    6
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1080/10282580.2018.1455508"
+        "10.1111/ecog.04932"
     ],
-    "URL": "http://dx.doi.org/10.1080/10282580.2018.1455508",
+    "URL": "http://dx.doi.org/10.1111/ecog.04932",
+    "archive": [
+        "Portico"
+    ],
     "ISSN": [
-        "1028-2580",
-        "1477-2248"
+        "0906-7590",
+        "1600-0587"
     ],
     "issn-type": [
         {
-            "value": "1028-2580",
-            "type": "print"
+            "type": "print",
+            "value": "0906-7590"
         },
         {
-            "value": "1477-2248",
-            "type": "electronic"
+            "type": "electronic",
+            "value": "1600-0587"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2018,
-                3,
-                30
+                2020,
+                2,
+                28
             ]
         ]
     },
     "assertion": [
         {
-            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
+            "value": "2020-01-30",
             "order": 1,
-            "name": "peerreview_statement",
-            "label": "Peer Review Statement"
+            "name": "accepted",
+            "label": "Accepted",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
         },
         {
-            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=gcjr20",
-            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=gcjr20",
+            "value": "2020-02-28",
             "order": 2,
-            "name": "aims_and_scope_url",
-            "label": "Aim & Scope"
+            "name": "published",
+            "label": "Published",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
         }
     ]
 }

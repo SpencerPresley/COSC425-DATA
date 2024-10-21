@@ -9,23 +9,24 @@ from tqdm import tqdm  # Import tqdm for progress bar
 
 # Load data
 print("Loading data...")
-articles_df = pd.read_json('test_processed_article_stats_data.json')
+articles_df = pd.read_json("test_processed_article_stats_data.json")
 print("Data loaded.")
+
 
 class CollaborationNetworkApp(QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle('Collaboration Network')
+        self.setWindowTitle("Collaboration Network")
         self.setGeometry(100, 100, 800, 600)
-        
+
         # Create a graph
         self.graph = nx.Graph()
         self.edge_info = {}
-        
+
         print("Building graph...")
         # Build the graph and collect edge information
-        for article, details in articles_df['math']['article_citation_map'].items():
-            authors = details['faculty_members']
+        for article, details in articles_df["math"]["article_citation_map"].items():
+            authors = details["faculty_members"]
             for i in range(len(authors)):
                 for j in range(i + 1, len(authors)):
                     edge = tuple(sorted((authors[i], authors[j])))
@@ -33,15 +34,21 @@ class CollaborationNetworkApp(QtWidgets.QMainWindow):
                     if edge not in self.edge_info:
                         self.edge_info[edge] = []
                     self.edge_info[edge].append(article)
-        print("Graph built with", len(self.graph.nodes), "nodes and", len(self.graph.edges), "edges.")
-        
+        print(
+            "Graph built with",
+            len(self.graph.nodes),
+            "nodes and",
+            len(self.graph.edges),
+            "edges.",
+        )
+
         # Create a plot widget
         self.plot_widget = pg.PlotWidget()
         self.setCentralWidget(self.plot_widget)
-        
+
         # Draw the network
         self.draw_network()
-        
+
         # Connect mouse press event
         self.plot_widget.scene().sigMouseClicked.connect(self.on_mouse_click)
 
@@ -50,7 +57,7 @@ class CollaborationNetworkApp(QtWidgets.QMainWindow):
         pos = nx.spring_layout(self.graph, k=0.15, iterations=20)
         self.node_positions = pos
         print("Layout calculated.")
-        
+
         # Draw edges with progress bar
         print("Drawing edges...")
         total_edges = len(self.graph.edges())
@@ -61,23 +68,29 @@ class CollaborationNetworkApp(QtWidgets.QMainWindow):
                 tqdm.write(f"x0: {x0}, y0: {y0}")
                 x1, y1 = pos[edge[1]]
                 tqdm.write(f"x1: {x1}, y1: {y1}")
-                line = pg.PlotDataItem([x0, x1], [y0, y1], pen=pg.mkPen('gray', width=1))
+                line = pg.PlotDataItem(
+                    [x0, x1], [y0, y1], pen=pg.mkPen("gray", width=1)
+                )
                 tqdm.write(f"Line: {line}")
                 tqdm.write(f"Adding line to plot widget")
                 self.plot_widget.addItem(line)
                 tqdm.write(f"Line added to plot widget")
                 remaining_items = total_edges - idx
                 completion_percentage = (idx / total_edges) * 100
-                tqdm.write(f"Remaining items: {remaining_items}, Completion: {completion_percentage:.2f}%")
+                tqdm.write(
+                    f"Remaining items: {remaining_items}, Completion: {completion_percentage:.2f}%"
+                )
                 tqdm.write(f"now doing the next edge")
                 pbar.update(1)  # Update the progress bar
         print("Edges drawn.")
-        
+
         # Draw nodes
         print("Drawing nodes...")
         self.node_items = {}
         for node, (x, y) in pos.items():
-            node_item = pg.ScatterPlotItem([x], [y], size=10, brush=pg.mkBrush(255, 0, 0, 120))
+            node_item = pg.ScatterPlotItem(
+                [x], [y], size=10, brush=pg.mkBrush(255, 0, 0, 120)
+            )
             self.plot_widget.addItem(node_item)
             self.node_items[node] = node_item
         print("Nodes drawn.")
@@ -86,14 +99,16 @@ class CollaborationNetworkApp(QtWidgets.QMainWindow):
         pos = event.scenePos()
         mouse_point = self.plot_widget.plotItem.vb.mapSceneToView(pos)
         x, y = mouse_point.x(), mouse_point.y()
-        
+
         # Check if a node is clicked
         for node, node_item in self.node_items.items():
             node_pos = self.node_positions[node]
-            if np.linalg.norm(np.array([x, y]) - np.array(node_pos)) < 0.1:  # Simple proximity check
+            if (
+                np.linalg.norm(np.array([x, y]) - np.array(node_pos)) < 0.1
+            ):  # Simple proximity check
                 self.show_node_info(node)
                 return
-        
+
         # Check if an edge is clicked
         for edge in self.graph.edges():
             x0, y0 = self.node_positions[edge[0]]
@@ -118,11 +133,20 @@ class CollaborationNetworkApp(QtWidgets.QMainWindow):
         return dist < tol
 
     def show_node_info(self, node):
-        QtWidgets.QMessageBox.information(self, "Node Info", f"Node: {node}\nCollaborations: {self.graph.degree[node]}")
+        QtWidgets.QMessageBox.information(
+            self,
+            "Node Info",
+            f"Node: {node}\nCollaborations: {self.graph.degree[node]}",
+        )
 
     def show_edge_info(self, edge):
-        articles = ', '.join(self.edge_info[edge])
-        QtWidgets.QMessageBox.information(self, "Edge Info", f"Collaboration between {edge[0]} and {edge[1]}\nArticles: {articles}")
+        articles = ", ".join(self.edge_info[edge])
+        QtWidgets.QMessageBox.information(
+            self,
+            "Edge Info",
+            f"Collaboration between {edge[0]} and {edge[1]}\nArticles: {articles}",
+        )
+
 
 def main():
     app = QtWidgets.QApplication(sys.argv)
@@ -130,5 +154,6 @@ def main():
     main_window.show()
     sys.exit(app.exec_())
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

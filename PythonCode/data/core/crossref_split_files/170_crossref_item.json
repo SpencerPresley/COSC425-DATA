@@ -2,256 +2,187 @@
     "indexed": {
         "date-parts": [
             [
-                2024,
-                10,
-                4
+                2023,
+                12,
+                12
             ]
         ],
-        "date-time": "2024-10-04T13:10:20Z",
-        "timestamp": 1728047420305
+        "date-time": "2023-12-12T00:17:49Z",
+        "timestamp": 1702340269502
     },
-    "reference-count": 14,
-    "publisher": "SAGE Publications",
-    "issue": "8",
+    "reference-count": 0,
+    "publisher": "Wiley",
+    "issue": "S1",
     "license": [
         {
             "start": {
                 "date-parts": [
                     [
-                        2017,
+                        2020,
                         4,
                         19
                     ]
                 ],
-                "date-time": "2017-04-19T00:00:00Z",
-                "timestamp": 1492560000000
+                "date-time": "2020-04-19T00:00:00Z",
+                "timestamp": 1587254400000
             },
-            "content-version": "tdm",
-            "delay-in-days": 0,
-            "URL": "https://journals.sagepub.com/page/policies/text-and-data-mining-license"
+            "content-version": "vor",
+            "delay-in-days": 18,
+            "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
         }
     ],
     "content-domain": {
         "domain": [
-            "journals.sagepub.com"
+            "faseb.onlinelibrary.wiley.com"
         ],
         "crossmark-restriction": true
     },
     "short-container-title": [
-        "Journal of Sports Economics"
+        "The FASEB Journal"
     ],
     "published-print": {
         "date-parts": [
             [
-                2018,
-                12
+                2020,
+                4
             ]
         ]
     },
-    "abstract": "<jats:p> The National Basketball Association (NBA) playoffs are structured as an elimination tournament where reseeding does not occur after each round. This structure leads to situations where future competitors (the shadow effect) and previous effort (the spillover effect) affect current performance. Using data from the 2009-2014 NBA playoffs, results here find that, when a future opponent is known, a series favorite is significantly more likely to win a game when the future opponent is weaker than expected. Estimates also provide evidence that greater previous effort by teams increases the probability the series favorite wins a game. </jats:p>",
-    "DOI": "10.1177/1527002517704020",
+    "abstract": "<jats:sec><jats:label /><jats:p>One of the most common comorbidities associated with diabetes mellitus is diabetic peripheral neuropathy (DPN), which is the progressive degeneration of peripheral nerves. The manner in which DPN develops and the underlying mechanisms of peripheral nerve degeneration are currently unknown. Our lab has characterized a glucose\u2010induced model of DPN in zebrafish (<jats:italic>Danio rerio</jats:italic>) in which we observe defasciculation/degeneration of motor axons, decreased myelination, and a decrease in ensheathment by perineurial glia. Currently, we are interested in characterizing the molecular pathways involved in the degeneration we observe. To accomplish this, we are testing dexamethasone, a FDA\u2010characterized small molecule drug, in an effort to decrease the degree of nerve degeneration present after DPN onset. Beginning 5 days post fertilization (dpf) experimental larvae were immersed in 120 mM \n<jats:sc>d</jats:sc>\u2010glucose for 7 seven days to induce DPN. At 10 dpf, larvae were additionally incubated with 0.5% dimethyl sulfoxide (DMSO) and a 1:1000 dilution of dexamethasone. As a control, a group of larvae were exposed to the same conditions without the addition of the drug treatment. <jats:italic>Tg(nkx2.2a:meGFP)</jats:italic> fish were used to allow visualization of perineurial glia 12 dpf using EVOS fluorescent microscopy. The percentage of motor axons ensheathed by perineurial glia was measured and quantified using FIJI. An increase in motor axons ensheathed by perineurial glia was apparent, furthermore the number of perineurial cells surrounding the motor axons appeared to increase as well. This increase in perineurial glia is meaningful because these cells form the blood\u2010nerve\u2010barrier, have phagocytic capabilities, and have also been shown to provide guidance cues for axonal regrowth. Future work will focus on characterizing the pathways affected by dexamethasone to uncover the molecular mechanisms potentially responsible for facilitating nerve regeneration after DPN onset.</jats:p></jats:sec><jats:sec><jats:title>Support or Funding Information</jats:title><jats:p>Support was provided by the Henson School of Science and Technology at Salisbury University.</jats:p></jats:sec>",
+    "DOI": "10.1096/fasebj.2020.34.s1.09347",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2017,
+                2020,
                 4,
                 19
             ]
         ],
-        "date-time": "2017-04-19T11:17:46Z",
-        "timestamp": 1492600666000
+        "date-time": "2020-04-19T21:27:37Z",
+        "timestamp": 1587331657000
     },
-    "page": "1067-1092",
-    "update-policy": "http://dx.doi.org/10.1177/sage-journals-update-policy",
+    "page": "1-1",
+    "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 7,
+    "is-referenced-by-count": 0,
     "title": [
-        "Shadow and Spillover Effects of Competition in NBA Playoffs"
+        "Finding molecular targets to reverse nerve degeneration associated with diabetic peripheral neuropathy (DPN)"
     ],
-    "prefix": "10.1177",
-    "volume": "19",
+    "prefix": "10.1096",
+    "volume": "34",
     "author": [
         {
-            "given": "Brian",
-            "family": "Hill",
+            "given": "Gabrielle Elizabeth",
+            "family": "Voithofer",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Department of Economics and Finance, Salisbury University, Salisbury, MD, USA"
+                    "name": "Salisbury University"
+                }
+            ]
+        },
+        {
+            "given": "Jessica",
+            "family": "Clark",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Salisbury University"
                 }
             ]
         }
     ],
-    "member": "179",
+    "member": "311",
     "published-online": {
         "date-parts": [
             [
-                2017,
+                2020,
                 4,
                 19
             ]
         ]
     },
-    "reference": [
-        {
-            "key": "bibr1-1527002517704020",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2202/1559-0410.1304"
-        },
-        {
-            "key": "bibr2-1527002517704020",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1287/mnsc.2014.2014"
-        },
-        {
-            "key": "bibr3-1527002517704020",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/1527002515590441"
-        },
-        {
-            "key": "bibr4-1527002517704020",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/2325486"
-        },
-        {
-            "key": "bibr5-1527002517704020",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1540-6261.1997.tb01129.x"
-        },
-        {
-            "key": "bibr6-1527002517704020",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/1527002512437744"
-        },
-        {
-            "key": "bibr7-1527002517704020",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00036840802600335"
-        },
-        {
-            "key": "bibr8-1527002517704020",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/1527002510389869"
-        },
-        {
-            "key": "bibr9-1527002517704020",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/1527002504266861"
-        },
-        {
-            "key": "bibr10-1527002517704020",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/1527002510363103"
-        },
-        {
-            "key": "bibr11-1527002517704020",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1086/261532"
-        },
-        {
-            "key": "bibr12-1527002517704020",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1465-7287.2011.00298.x"
-        },
-        {
-            "key": "bibr13-1527002517704020",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1086/323930"
-        },
-        {
-            "key": "bibr14-1527002517704020",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1086/261332"
-        }
-    ],
     "container-title": [
-        "Journal of Sports Economics"
+        "The FASEB Journal"
     ],
     "language": "en",
-    "link": [
-        {
-            "URL": "https://journals.sagepub.com/doi/pdf/10.1177/1527002517704020",
-            "content-type": "application/pdf",
-            "content-version": "vor",
-            "intended-application": "text-mining"
-        },
-        {
-            "URL": "https://journals.sagepub.com/doi/full-xml/10.1177/1527002517704020",
-            "content-type": "application/xml",
-            "content-version": "vor",
-            "intended-application": "text-mining"
-        },
-        {
-            "URL": "https://journals.sagepub.com/doi/pdf/10.1177/1527002517704020",
-            "content-type": "unspecified",
-            "content-version": "vor",
-            "intended-application": "similarity-checking"
-        }
-    ],
     "deposited": {
         "date-parts": [
             [
-                2024,
-                10,
-                4
+                2023,
+                12,
+                11
             ]
         ],
-        "date-time": "2024-10-04T12:31:33Z",
-        "timestamp": 1728045093000
+        "date-time": "2023-12-11T11:53:38Z",
+        "timestamp": 1702295618000
     },
-    "score": 15.599971,
+    "score": 16.32563,
     "resource": {
         "primary": {
-            "URL": "https://journals.sagepub.com/doi/10.1177/1527002517704020"
+            "URL": "https://faseb.onlinelibrary.wiley.com/doi/10.1096/fasebj.2020.34.s1.09347"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2017,
-                4,
-                19
+                2020,
+                4
             ]
         ]
     },
-    "references-count": 14,
+    "references-count": 0,
     "journal-issue": {
-        "issue": "8",
+        "issue": "S1",
         "published-print": {
             "date-parts": [
                 [
-                    2018,
-                    12
+                    2020,
+                    4
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1177/1527002517704020"
+        "10.1096/fasebj.2020.34.s1.09347"
     ],
-    "URL": "http://dx.doi.org/10.1177/1527002517704020",
+    "URL": "http://dx.doi.org/10.1096/fasebj.2020.34.s1.09347",
+    "archive": [
+        "Portico"
+    ],
     "ISSN": [
-        "1527-0025",
-        "1552-7794"
+        "0892-6638",
+        "1530-6860"
     ],
     "issn-type": [
         {
-            "type": "print",
-            "value": "1527-0025"
+            "value": "0892-6638",
+            "type": "print"
         },
         {
-            "type": "electronic",
-            "value": "1552-7794"
+            "value": "1530-6860",
+            "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2017,
-                4,
-                19
+                2020,
+                4
             ]
         ]
-    }
+    },
+    "assertion": [
+        {
+            "value": "2020-04-19",
+            "order": 2,
+            "name": "published",
+            "label": "Published",
+            "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+            }
+        }
+    ]
 }

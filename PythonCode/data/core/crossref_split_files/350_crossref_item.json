@@ -2,33 +2,50 @@
     "indexed": {
         "date-parts": [
             [
-                2023,
-                12,
-                12
+                2024,
+                3,
+                8
             ]
         ],
-        "date-time": "2023-12-12T00:15:01Z",
-        "timestamp": 1702340101870
+        "date-time": "2024-03-08T00:20:14Z",
+        "timestamp": 1709857214648
     },
     "reference-count": 40,
     "publisher": "SAGE Publications",
-    "issue": "4",
+    "issue": "3",
     "license": [
         {
             "start": {
                 "date-parts": [
                     [
-                        2023,
+                        2022,
                         11,
-                        21
+                        27
                     ]
                 ],
-                "date-time": "2023-11-21T00:00:00Z",
-                "timestamp": 1700524800000
+                "date-time": "2022-11-27T00:00:00Z",
+                "timestamp": 1669507200000
             },
             "content-version": "tdm",
             "delay-in-days": 0,
-            "URL": "http://journals.sagepub.com/page/policies/text-and-data-mining-license"
+            "URL": "https://journals.sagepub.com/page/policies/text-and-data-mining-license"
+        }
+    ],
+    "funder": [
+        {
+            "DOI": "10.13039/501100002486",
+            "name": "Hankuk University of Foreign Studies",
+            "doi-asserted-by": "publisher",
+            "award": [
+                "Research Grant"
+            ],
+            "id": [
+                {
+                    "id": "10.13039/501100002486",
+                    "id-type": "DOI",
+                    "asserted-by": "publisher"
+                }
+            ]
         }
     ],
     "content-domain": {
@@ -38,49 +55,57 @@
         "crossmark-restriction": true
     },
     "short-container-title": [
-        "Journal of Literacy Research"
+        "Journal of General Management"
     ],
     "published-print": {
         "date-parts": [
             [
-                2023,
-                12
+                2024,
+                4
             ]
         ]
     },
-    "abstract": "<jats:p> Blending narrative portraiture and feminist methods, this study explored the lives of two rural women who are creative writers. The study asked (1) What are their critical purposes? and (2) How did gender and place intersect in their writing lives? The findings were that the women used creative writing to engage in praxis by creating and disseminating knowledge. Their writing critically interrogated and redefined conceptions of womanhood. Additional critical purposes were unique to women's intersectional identities and lived experiences. They ranged from interrogating societal perspectives of gender, sexuality, and race to interrogating rurality and sexual violence. The aesthetic texts they created articulated and advocated for intersubjective truths. Shifting the focus of critical literacy from pedagogy and reading to writing beyond educational spaces, the women drew upon critical literacy not as a means of being taught how to understand the power of texts, but to wield the power of texts themselves. </jats:p>",
-    "DOI": "10.1177/1086296x231215759",
+    "abstract": "<jats:p> This study examined how firms combine alliances and acquisitions in an exploration/exploitation framework. By conducting cluster analysis on a sample of 1270 acquisitions made by 836 firms, we first identified the patterns in alliance and acquisition activities undertaken by these firms. Five distinct patterns were identified: (I) low alliance\u2013low acquisition, (II) low alliance\u2013high acquisition, (III) high alliance\u2013low acquisition, (IV) high alliance\u2013high acquisition, and (V) medium alliance\u2013very high acquisition. Next, we analyzed the different ways in which the two modes were interlinked within these five patterns for exploration/exploitation. Patterns III and IV appeared to involve both exploration/exploitation and mutually reinforce exploration/exploitation. In contrast, in the remaining patterns, the two modes appeared to be more loosely coupled with each other, with a focus on exploitation. </jats:p>",
+    "DOI": "10.1177/03063070221129452",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2023,
+                2022,
                 11,
-                22
+                28
             ]
         ],
-        "date-time": "2023-11-22T07:21:10Z",
-        "timestamp": 1700637670000
+        "date-time": "2022-11-28T07:08:21Z",
+        "timestamp": 1669619301000
     },
-    "page": "361-382",
+    "page": "233-244",
     "update-policy": "http://dx.doi.org/10.1177/sage-journals-update-policy",
     "source": "Crossref",
     "is-referenced-by-count": 0,
     "title": [
-        "Rural Women, Creative Writing, and Resistance"
+        "Patterns of alliances and acquisitions: An exploratory study"
     ],
     "prefix": "10.1177",
-    "volume": "55",
+    "volume": "49",
     "author": [
         {
-            "ORCID": "http://orcid.org/0000-0003-2807-6851",
-            "authenticated-orcid": false,
-            "given": "Honor B.",
-            "family": "McElroy",
+            "given": "Byungchul",
+            "family": "Choi",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Seidel School of Education, Salisbury University, MD, USA"
+                    "name": "College of Business, Hankuk University of Foreign Studies, Seoul, Korea"
+                }
+            ]
+        },
+        {
+            "given": "KwangWook",
+            "family": "Gang",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA"
                 }
             ]
         }
@@ -89,276 +114,238 @@
     "published-online": {
         "date-parts": [
             [
-                2023,
+                2022,
                 11,
-                21
+                27
             ]
         ]
     },
     "reference": [
         {
-            "key": "bibr1-1086296X231215759",
+            "key": "bibr2-03063070221129452",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/jaal.1108"
+            "DOI": "10.1002/(SICI)1097-0266(199605)17:5<395::AID-SMJ826>3.0.CO;2-E"
         },
         {
-            "key": "bibr2-1086296X231215759",
-            "unstructured": "American Civil Liberties Union (2023). Women\u2019s rights. https://www.aclu.org/issues/womens-rights"
-        },
-        {
-            "issue": "4",
-            "key": "bibr3-1086296X231215759",
-            "first-page": "312",
-            "volume": "46",
-            "author": "Blackburn M. V.",
-            "year": "2002",
-            "journal-title": "Journal of Adolescent & Adult Literacy"
-        },
-        {
-            "key": "bibr4-1086296X231215759",
-            "first-page": "349",
-            "volume-title": "Theoretical models and processes of Reading",
-            "author": "Brooks M. D.",
-            "year": "2019",
-            "edition": "7"
-        },
-        {
-            "key": "bibr5-1086296X231215759",
+            "key": "bibr46-03063070221129452",
             "doi-asserted-by": "publisher",
-            "DOI": "10.46743/2160-3715/2017.2332"
+            "DOI": "10.1002/smj.157"
         },
         {
-            "key": "bibr6-1086296X231215759",
+            "key": "bibr3-03063070221129452",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/00420859211003933"
+            "DOI": "10.1002/(SICI)1097-0266(200003)21:3<295::AID-SMJ91>3.0.CO;2-O"
         },
         {
-            "key": "bibr7-1086296X231215759",
+            "key": "bibr4-03063070221129452",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/cccr.12172"
+            "DOI": "10.1016/0167-2681(93)90083-2"
         },
         {
-            "issue": "10",
-            "key": "bibr8-1086296X231215759",
-            "first-page": "1",
-            "volume": "28",
-            "author": "Corbett M.",
-            "year": "2013",
-            "journal-title": "Journal of Research in Rural Education"
-        },
-        {
-            "issue": "5",
-            "key": "bibr9-1086296X231215759",
-            "first-page": "1",
-            "volume": "32",
-            "author": "Corbett M.",
-            "year": "2017",
-            "journal-title": "Journal of Research in Rural Education"
-        },
-        {
-            "key": "bibr10-1086296X231215759",
+            "key": "bibr5-03063070221129452",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1215/9780822375371"
+            "DOI": "10.1057/palgrave.emr.1500017"
         },
         {
-            "key": "bibr11-1086296X231215759",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/1229039"
-        },
-        {
-            "key": "bibr12-1086296X231215759",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.4324/9781003064503-6"
-        },
-        {
-            "key": "bibr13-1086296X231215759",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/002205748316500103"
-        },
-        {
-            "key": "bibr14-1086296X231215759",
-            "first-page": "90",
-            "volume-title": "Reclaiming the rural: Essays on literacy, rhetoric, and pedagogy",
-            "author": "Greer J.",
+            "key": "bibr6-03063070221129452",
+            "volume-title": "Build, Borrow or Buy: Solving the Growth Dimemma",
+            "author": "Capron L",
             "year": "2012"
         },
         {
-            "key": "bibr15-1086296X231215759",
-            "first-page": "164",
-            "volume-title": "Genders, cultures, and literacies: understanding intersecting identities",
-            "author": "Guzzetti B. J."
-        },
-        {
-            "key": "bibr16-1086296X231215759",
+            "key": "bibr7-03063070221129452",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/rrq.377"
+            "DOI": "10.1287/orsc.10.2.144"
         },
         {
-            "key": "bibr17-1086296X231215759",
+            "key": "bibr9-03063070221129452",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/jaal.1191"
+            "DOI": "10.1002/(SICI)1097-0266(1998110)19:11<1007::AID-SMJ999>3.0.CO;2-8"
         },
         {
-            "key": "bibr18-1086296X231215759",
+            "key": "bibr11-03063070221129452",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2307/j.ctt1djmhkj"
+            "DOI": "10.1111/jems.12047"
         },
         {
-            "key": "bibr19-1086296X231215759",
-            "volume-title": "Yearning: Race, gender, and cultural politics",
-            "author": "hooks b.",
-            "year": "1990"
-        },
-        {
-            "key": "bibr20-1086296X231215759",
+            "key": "bibr12-03063070221129452",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/1086296X20966367"
+            "DOI": "10.1002/smj.207"
         },
         {
-            "key": "bibr21-1086296X231215759",
+            "key": "bibr13-03063070221129452",
             "doi-asserted-by": "publisher",
-            "DOI": "10.58680/ccc202131442"
+            "DOI": "10.1002/(SICI)1097-0266(199701)18:1<1::AID-SMJ862>3.0.CO;2-R"
         },
         {
-            "key": "bibr22-1086296X231215759",
-            "volume-title": "The art and science of portraiture",
-            "author": "Lawrence-Lightfoot S.",
-            "year": "1997"
-        },
-        {
-            "key": "bibr23-1086296X231215759",
-            "first-page": "349",
-            "volume-title": "Theoretical models and processes of Reading",
-            "author": "Luke A.",
-            "year": "2019",
-            "edition": "7"
-        },
-        {
-            "key": "bibr24-1086296X231215759",
-            "first-page": "1",
-            "volume-title": "Queer, trans, and intersectional theory in educational practice: Student, teacher, and community experiences",
-            "author": "Mayo C.",
-            "year": "2020"
-        },
-        {
-            "key": "bibr25-1086296X231215759",
+            "key": "bibr14-03063070221129452",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0042085919893734"
+            "DOI": "10.5465/amj.2005.16928417"
         },
         {
-            "key": "bibr26-1086296X231215759",
+            "key": "bibr15-03063070221129452",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/9781118323342.ch30"
+            "DOI": "10.1002/smj.834"
         },
         {
-            "key": "bibr27-1086296X231215759",
-            "volume-title": "Critical literacy and the aesthetic: Transforming the English classroom",
-            "author": "Misson R.",
-            "year": "2006"
-        },
-        {
-            "key": "bibr28-1086296X231215759",
-            "first-page": "291",
-            "volume-title": "Literacy research methodologies",
-            "author": "Montero M.",
-            "year": "2021",
-            "edition": "3"
-        },
-        {
-            "key": "bibr29-1086296X231215759",
+            "key": "bibr16-03063070221129452",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/JAAL.00129"
+            "DOI": "10.1002/smj.248"
         },
         {
-            "key": "bibr30-1086296X231215759",
-            "first-page": "30",
-            "volume-title": "Doing feminist research",
-            "author": "Oakley A.",
-            "year": "1981"
-        },
-        {
-            "key": "bibr31-1086296X231215759",
-            "volume-title": "Qualitative evaluation and research methods",
-            "author": "Patton M. Q.",
-            "year": "1990",
-            "edition": "2"
-        },
-        {
-            "key": "bibr32-1086296X231215759",
+            "key": "bibr17-03063070221129452",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/rrq.412"
+            "DOI": "10.1002/1097-0266(200010/11)21:10/11<1061::AID-SMJ116>3.0.CO;2-G"
         },
         {
-            "key": "bibr33-1086296X231215759",
-            "volume-title": "The coding manual for qualitative researchers",
-            "author": "Salda\u00f1a J.",
-            "year": "2016",
-            "edition": "3"
-        },
-        {
-            "key": "bibr34-1086296X231215759",
-            "volume-title": "Feminist methodologies for critical researchers: Bridging differences",
-            "author": "Sprague J.",
-            "year": "2016"
-        },
-        {
-            "issue": "18",
-            "key": "bibr35-1086296X231215759",
-            "first-page": "1",
-            "volume": "2",
-            "author": "Thwaites R.",
-            "year": "2017",
-            "journal-title": "Frontiers in Sociology"
-        },
-        {
-            "key": "bibr36-1086296X231215759",
+            "key": "bibr18-03063070221129452",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1353/clj.2019.0016"
+            "DOI": "10.2307/3069433"
         },
         {
-            "key": "bibr37-1086296X231215759",
+            "key": "bibr19-03063070221129452",
             "doi-asserted-by": "publisher",
-            "DOI": "10.4324/b23279-27"
+            "DOI": "10.1287/mnsc.37.1.19"
         },
         {
-            "key": "bibr38-1086296X231215759",
+            "key": "bibr20-03063070221129452",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/13613321003751601"
+            "DOI": "10.1287/orsc.9.3.255"
         },
         {
-            "key": "bibr39-1086296X231215759",
+            "key": "bibr21-03063070221129452",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1598/JAAL.51.4.5"
+            "DOI": "10.5465/amj.2006.22083085"
         },
         {
-            "issue": "4",
-            "key": "bibr40-1086296X231215759",
-            "first-page": "405",
-            "volume": "45",
-            "author": "Wissman K. K.",
-            "year": "2011",
-            "journal-title": "Research in the Teaching of English"
+            "key": "bibr22-03063070221129452",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5465/AMBPP.2020.12076abstract"
+        },
+        {
+            "key": "bibr23-03063070221129452",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.5465/amr.2007.23464011"
+        },
+        {
+            "key": "bibr25-03063070221129452",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1475-6765.1975.tb00521.x"
+        },
+        {
+            "key": "bibr26-03063070221129452",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/smj.2387"
+        },
+        {
+            "key": "bibr28-03063070221129452",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jbusres.2017.08.003"
+        },
+        {
+            "key": "bibr30-03063070221129452",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/orsc.1090.0422"
+        },
+        {
+            "key": "bibr31-03063070221129452",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/smj.376"
+        },
+        {
+            "key": "bibr32-03063070221129452",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/orsc.1080.0404"
+        },
+        {
+            "key": "bibr33-03063070221129452",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/smj.731"
+        },
+        {
+            "key": "bibr34-03063070221129452",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1540-6261.1991.tb03758.x"
+        },
+        {
+            "key": "bibr35-03063070221129452",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1467-6486.2010.00953.x"
+        },
+        {
+            "key": "bibr36-03063070221129452",
+            "first-page": "467",
+            "volume": "106",
+            "author": "Simon HA",
+            "year": "1962",
+            "journal-title": "Proceedings of the American Philosophical Society"
+        },
+        {
+            "key": "bibr37-03063070221129452",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/smj.2195"
+        },
+        {
+            "key": "bibr38-03063070221129452",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jebo.2003.07.001"
+        },
+        {
+            "key": "bibr39-03063070221129452",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/smj.493"
+        },
+        {
+            "key": "bibr40-03063070221129452",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/smj.638"
+        },
+        {
+            "key": "bibr41-03063070221129452",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1740-4762.2011.01003.x"
+        },
+        {
+            "key": "bibr42-03063070221129452",
+            "volume-title": "The Social Psychology of Organizing",
+            "author": "Weick KE",
+            "year": "1979"
+        },
+        {
+            "key": "bibr43-03063070221129452",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.respol.2010.10.006"
+        },
+        {
+            "key": "bibr44-03063070221129452",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/orsc.1100.0528"
+        },
+        {
+            "key": "bibr45-03063070221129452",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1287/orsc.1090.0474"
         }
     ],
     "container-title": [
-        "Journal of Literacy Research"
+        "Journal of General Management"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "http://journals.sagepub.com/doi/pdf/10.1177/1086296X231215759",
+            "URL": "http://journals.sagepub.com/doi/pdf/10.1177/03063070221129452",
             "content-type": "application/pdf",
             "content-version": "vor",
             "intended-application": "text-mining"
         },
         {
-            "URL": "http://journals.sagepub.com/doi/full-xml/10.1177/1086296X231215759",
+            "URL": "http://journals.sagepub.com/doi/full-xml/10.1177/03063070221129452",
             "content-type": "application/xml",
             "content-version": "vor",
             "intended-application": "text-mining"
         },
         {
-            "URL": "http://journals.sagepub.com/doi/pdf/10.1177/1086296X231215759",
+            "URL": "http://journals.sagepub.com/doi/pdf/10.1177/03063070221129452",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -367,65 +354,65 @@
     "deposited": {
         "date-parts": [
             [
-                2023,
-                12,
-                11
+                2024,
+                3,
+                7
             ]
         ],
-        "date-time": "2023-12-11T16:04:12Z",
-        "timestamp": 1702310652000
+        "date-time": "2024-03-07T05:46:40Z",
+        "timestamp": 1709790400000
     },
-    "score": 13.589309,
+    "score": 14.940611,
     "resource": {
         "primary": {
-            "URL": "http://journals.sagepub.com/doi/10.1177/1086296X231215759"
+            "URL": "http://journals.sagepub.com/doi/10.1177/03063070221129452"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2023,
+                2022,
                 11,
-                21
+                27
             ]
         ]
     },
     "references-count": 40,
     "journal-issue": {
-        "issue": "4",
+        "issue": "3",
         "published-print": {
             "date-parts": [
                 [
-                    2023,
-                    12
+                    2024,
+                    4
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1177/1086296X231215759"
+        "10.1177/03063070221129452"
     ],
-    "URL": "http://dx.doi.org/10.1177/1086296x231215759",
+    "URL": "http://dx.doi.org/10.1177/03063070221129452",
     "ISSN": [
-        "1086-296X",
-        "1554-8430"
+        "0306-3070",
+        "1759-6106"
     ],
     "issn-type": [
         {
-            "value": "1086-296X",
+            "value": "0306-3070",
             "type": "print"
         },
         {
-            "value": "1554-8430",
+            "value": "1759-6106",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2023,
+                2022,
                 11,
-                21
+                27
             ]
         ]
     }

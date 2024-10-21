@@ -20,8 +20,4 @@ from .core import (
 )
 from .enums import AttributeTypes
 
-from .data_collection import (
-    Crf_dict_cursor_async,
-    fetch_data_for_multiple_years
-)
-
+from .data_collection import Crf_dict_cursor_async, fetch_data_for_multiple_years

@@ -2,7 +2,12 @@ from langchain_community.document_loaders import FireCrawlLoader
 from dotenv import load_dotenv
 import os
 from langchain_openai import ChatOpenAI
-from langchain_core.prompts import ChatPromptTemplate, SystemMessagePromptTemplate, HumanMessagePromptTemplate, PromptTemplate
+from langchain_core.prompts import (
+    ChatPromptTemplate,
+    SystemMessagePromptTemplate,
+    HumanMessagePromptTemplate,
+    PromptTemplate,
+)
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import JsonOutputParser
 from pydantic import BaseModel, Field
@@ -19,26 +24,29 @@ from typing import Optional
 from pydantic import BaseModel, Field
 from typing import Dict, List
 
+
 class FacultyMember(BaseModel):
     name: str = Field(..., description="The name of the faculty member")
     position: str = Field(..., description="The position of the faculty member")
     department: str = Field(..., description="The department of the faculty member")
     email: str | None = Field(None, description="The email of the faculty member")
-    phone: str | None = Field(None, description="The phone number of the faculty member")
+    phone: str | None = Field(
+        None, description="The phone number of the faculty member"
+    )
+
 
 class AIResponseFormat(BaseModel):
-    faculty_members: List[FacultyMember] = Field(..., description="The list of faculty members")
-    
+    faculty_members: List[FacultyMember] = Field(
+        ..., description="The list of faculty members"
+    )
+
+
 load_dotenv()
 
 
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
-
-llm = ChatOpenAI(
-    model='gpt-4o-mini',
-    api_key=OPENAI_API_KEY
-)
+llm = ChatOpenAI(model="gpt-4o-mini", api_key=OPENAI_API_KEY)
 
 json_format = """
     {
@@ -92,52 +100,51 @@ human_prompt_template = PromptTemplate(
 )
 
 
-
 prompt = ChatPromptTemplate.from_messages(
     [
         SystemMessagePromptTemplate.from_template(system_prompt_template.template),
-        HumanMessagePromptTemplate.from_template(human_prompt_template.template)
+        HumanMessagePromptTemplate.from_template(human_prompt_template.template),
     ]
 )
 
+
 def spencers_loader_func():
-    FIRECRAWL_API_KEY = os.getenv('FIRECRAWL_API_KEY')
+    FIRECRAWL_API_KEY = os.getenv("FIRECRAWL_API_KEY")
     loader = FireCrawlLoader(
         api_key=FIRECRAWL_API_KEY,
-        url='https://www.salisbury.edu/faculty-and-staff/',
-        mode='scrape'
+        url="https://www.salisbury.edu/faculty-and-staff/",
+        mode="scrape",
     )
     docs = loader.load()
     context = ""
-    with open('firecrawl_test_results.md', 'w') as f:
+    with open("firecrawl_test_results.md", "w") as f:
         for doc in docs:
             f.write(f'# {doc.metadata.get("title", "Untitled")}\n\n')
-            f.write(f"## {doc.metadata.get('description', 'No description available')}\n\n")
+            f.write(
+                f"## {doc.metadata.get('description', 'No description available')}\n\n"
+            )
             f.write(f"{doc.page_content}\n\n")
     for doc in docs:
         context += f'# {doc.metadata.get("title", "Untitled")}\n\n'
-        context += f"## {doc.metadata.get('description', 'No description available')}\n\n"
+        context += (
+            f"## {doc.metadata.get('description', 'No description available')}\n\n"
+        )
         context += f"{doc.page_content}\n\n"
     return context
+
 
 parser = JsonOutputParser(pydantic_object=AIResponseFormat)
 
 chain = (
-    {
-        "context": lambda x: x["context"],
-        "json_format": lambda x: x["json_format"]
-    }
+    {"context": lambda x: x["context"], "json_format": lambda x: x["json_format"]}
     | prompt
     | llm
     | parser
 )
 
 context = spencers_loader_func()
-result = chain.invoke({
-    "context": context,
-    "json_format": json_format
-})
+result = chain.invoke({"context": context, "json_format": json_format})
 print(json.dumps(result, indent=4))
 
-with open('firecrawl_test_results.json', 'w') as f:
+with open("firecrawl_test_results.json", "w") as f:
     json.dump(result, f, indent=4)

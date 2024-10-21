@@ -3,345 +3,377 @@
         "date-parts": [
             [
                 2024,
-                10,
-                4
+                5,
+                31
             ]
         ],
-        "date-time": "2024-10-04T04:17:20Z",
-        "timestamp": 1728015440808
+        "date-time": "2024-05-31T07:10:35Z",
+        "timestamp": 1717139435211
     },
-    "reference-count": 39,
-    "publisher": "SAGE Publications",
+    "reference-count": 51,
+    "publisher": "American Physiological Society",
     "issue": "4",
-    "license": [
+    "funder": [
         {
-            "start": {
-                "date-parts": [
-                    [
-                        2020,
-                        4,
-                        1
-                    ]
-                ],
-                "date-time": "2020-04-01T00:00:00Z",
-                "timestamp": 1585699200000
-            },
-            "content-version": "tdm",
-            "delay-in-days": 0,
-            "URL": "https://journals.sagepub.com/page/policies/text-and-data-mining-license"
+            "name": "Salisbury University Foundation"
+        },
+        {
+            "name": "Henson School of Science and Technology"
         }
     ],
     "content-domain": {
-        "domain": [
-            "journals.sagepub.com"
-        ],
-        "crossmark-restriction": true
+        "domain": [],
+        "crossmark-restriction": false
     },
     "short-container-title": [
-        "Teachers College Record: The Voice of Scholarship in Education"
+        "American Journal of Physiology-Regulatory, Integrative and Comparative Physiology"
     ],
     "published-print": {
         "date-parts": [
             [
-                2020,
-                4
-            ]
-        ]
-    },
-    "abstract": "<jats:sec><jats:title>Background/Context</jats:title><jats:p> This paper is part of the special issue \u201cReimagining Research and Practice at the Crossroads of Philosophy, Teaching, and Teacher Education.\u201d We propose that there is a vital connection in teaching between curriculum and memories that should be fostered in our classrooms. Because memories are alive and bring meaning to our lives, they need to be handled with care. Unfortunately, however, much of teaching risks to simply embalm what is already dead. We examine how the living work of teachers might reposition curriculum as a body of dynamic memories: a constellation of struggles and belongings, failures and accomplishments. The role of the teacher, in this context, is as a handler of those memories. </jats:p></jats:sec><jats:sec><jats:title>Research Design</jats:title><jats:p> Our approach derives from sustained interaction as we have sought to bring our scholarly backgrounds in philosophy of education and English teacher education, respectively, into dynamic contact. The methodology of the inquiry is mixed in that it combines teacher narratives (our own) with critical conceptual analysis, collective memory work, and phenomenology. Drawing on a bibliography of texts organized collaboratively by the larger research group, our main authors of reference are Freire, Gramsci, Anzaldua, Style, and Britzman. We also feature several fine-grained narratives that illuminate what we mean by \u201chandlers of memory\u201d in the educational setting. </jats:p></jats:sec><jats:sec><jats:title>Conclusions/Recommendations</jats:title><jats:p> Our shared philosophizing in this paper is a response to the concern that classroom teaching contributes to the deadening of curriculum as a source of meaning and an avenue for students and teachers to learn about themselves. In response, we propose the image of teachers as handlers of memory who work to cultivate and keep memories alive and central to learning. We recommend that teachers explore collective memory work (Haug, 1999) and reflective teaching narratives (Furman, 2015) as ways to get a handle on their own powerful memories of teaching. </jats:p></jats:sec>",
-    "DOI": "10.1177/016146812012200404",
-    "type": "journal-article",
-    "created": {
-        "date-parts": [
-            [
-                2021,
-                11,
-                17
-            ]
-        ],
-        "date-time": "2021-11-17T08:57:10Z",
-        "timestamp": 1637139430000
-    },
-    "page": "1-24",
-    "update-policy": "http://dx.doi.org/10.1177/sage-journals-update-policy",
-    "source": "Crossref",
-    "is-referenced-by-count": 0,
-    "title": [
-        "Seeing through Serpent and Eagle Eyes: Teachers as Handlers of Memories"
-    ],
-    "prefix": "10.1177",
-    "volume": "122",
-    "author": [
-        {
-            "given": "Cristina",
-            "family": "Cammarano",
-            "sequence": "first",
-            "affiliation": [
-                {
-                    "name": "Salisbury University"
-                }
-            ]
-        },
-        {
-            "given": "Erin",
-            "family": "Stutelberg",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Salisbury University"
-                }
-            ]
-        }
-    ],
-    "member": "179",
-    "published-online": {
-        "date-parts": [
-            [
-                2020,
+                2019,
                 4,
                 1
             ]
         ]
     },
+    "abstract": "<jats:p> Diabetic peripheral neuropathy (DPN) is estimated to affect 50% of diabetic patients. Although DPN is highly prevalent, molecular mechanisms remain unknown and treatment is limited to pain relief and glycemic control. We provide a novel model of acute DPN in zebrafish ( Danio rerio) larvae. Beginning 5 days postfertilization (dpf), zebrafish expressing nitroreductase in their pancreatic \u03b2-cells were treated with metronidazole (MTZ) for 48 h and checked for \u03b2-cell ablation 7 dpf. In experimental design, this was meant to serve as proof of concept that \u03b2-cell ablation and hyperglycemia are possible at this time point, but we were surprised to find changes in both sensory and motor nerve components. Compared with controls, neurod<jats:sup>+</jats:sup> sensory neurons were often observed outside the dorsal root ganglia in MTZ-treated fish. Fewer motor nerves were properly ensheathed by nkx2.2a<jats:sup>+</jats:sup> perineurial cells, and tight junctions were disrupted along the motor nerve in MTZ-treated fish compared with controls. Not surprisingly, the motor axons of the MTZ-treated group were defasciculated compared with the control group, myelination was attenuated, and there was a subtle difference in Schwann cell number between the MTZ-treated and control group. All structural changes occurred in the absence of behavioral changes in the larvae at this time point, suggesting that peripheral nerves are influenced by acute hyperglycemia before becoming symptomatic. Moving forward, this novel animal model of DPN will allow us to access the molecular mechanisms associated with the acute changes in the hyperglycemic peripheral nervous system, which may help direct therapeutic approaches. </jats:p>",
+    "DOI": "10.1152/ajpregu.00258.2018",
+    "type": "journal-article",
+    "created": {
+        "date-parts": [
+            [
+                2019,
+                2,
+                6
+            ]
+        ],
+        "date-time": "2019-02-06T14:26:35Z",
+        "timestamp": 1549463195000
+    },
+    "page": "R395-R405",
+    "source": "Crossref",
+    "is-referenced-by-count": 4,
+    "title": [
+        "Acute effects of hyperglycemia on the peripheral nervous system in zebrafish (<i>Danio rerio</i>) following nitroreductase-mediated \u03b2-cell ablation"
+    ],
+    "prefix": "10.1152",
+    "volume": "316",
+    "author": [
+        {
+            "given": "Amanda",
+            "family": "Rocker",
+            "sequence": "first",
+            "affiliation": [
+                {
+                    "name": "Department of Biological Sciences, Salisbury University, Salisbury, Maryland"
+                }
+            ]
+        },
+        {
+            "given": "Julia",
+            "family": "Howell",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Biological Sciences, Salisbury University, Salisbury, Maryland"
+                }
+            ]
+        },
+        {
+            "given": "Gabrielle",
+            "family": "Voithofer",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Biological Sciences, Salisbury University, Salisbury, Maryland"
+                }
+            ]
+        },
+        {
+            "ORCID": "http://orcid.org/0000-0001-8714-9884",
+            "authenticated-orcid": false,
+            "given": "Jessica Kennett",
+            "family": "Clark",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Biological Sciences, Salisbury University, Salisbury, Maryland"
+                }
+            ]
+        }
+    ],
+    "member": "24",
     "reference": [
         {
-            "volume-title": "Borderlands/La frontera: The new mestiza",
-            "year": "1987",
-            "author": "Anzaldua G.",
-            "key": "bibr1-016146812012200404"
-        },
-        {
-            "volume-title": "Official knowledge: Democratic education in a conservative age",
-            "year": "2000",
-            "author": "Apple M.",
-            "key": "bibr2-016146812012200404"
-        },
-        {
-            "volume-title": "Can education change society",
-            "year": "2013",
-            "author": "Apple M.",
-            "key": "bibr3-016146812012200404"
-        },
-        {
-            "first-page": "349",
-            "volume-title": "The Oxford encyclopedia of Mesoamerican cultures",
-            "year": "2001",
-            "author": "Benson E. P.",
-            "key": "bibr4-016146812012200404"
-        },
-        {
-            "key": "bibr5-016146812012200404",
+            "key": "B1",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s11217-009-9164-0"
+            "DOI": "10.1097/00000542-200607000-00024"
         },
         {
-            "key": "bibr6-016146812012200404",
+            "key": "B2",
             "doi-asserted-by": "publisher",
-            "DOI": "10.17763/haer.56.4.mv28227614l44u66"
+            "DOI": "10.1242/dev.071001"
         },
         {
-            "volume-title": "Descriptive inquiry at Bank Street: Lessons learned",
-            "year": "2017",
-            "author": "Charles J.",
-            "key": "bibr7-016146812012200404"
-        },
-        {
-            "key": "bibr8-016146812012200404",
-            "unstructured": "Coffee A. C. (2016). Stories and bodies: Reading and writing white femininity (Doctoral dissertation). Available from ProQuest Dissertations and Theses database. (10155571)."
-        },
-        {
-            "volume-title": "White woman's work: Examining the intersectionality of cultural norms, teaching, and identity formation in urban schools",
-            "year": "2016",
-            "author": "Coffee A. C.",
-            "key": "bibr9-016146812012200404"
-        },
-        {
-            "key": "bibr10-016146812012200404",
-            "unstructured": "Cushing-Leubner J. (2017). Accompaniment for the climb: Becoming reparational language educators of Spanish as a \u2018heritage\u2019 language (Doctoral dissertation). Available from ProQuest Dissertations and Theses database. (10742684)."
-        },
-        {
-            "volume-title": "On touching: Jean-Luc Nancy",
-            "year": "2005",
-            "author": "Derrida J.",
-            "key": "bibr11-016146812012200404"
-        },
-        {
-            "first-page": "9",
-            "volume-title": "The third yearbook of the National Society for the Scientific Study of Education, Part I",
-            "year": "1904",
-            "author": "Dewey J.",
-            "key": "bibr12-016146812012200404"
-        },
-        {
-            "volume": "4",
-            "volume-title": "John Dewey: The middle works, 1899\u20131924",
-            "year": "2008",
-            "author": "Dewey J.",
-            "key": "bibr13-016146812012200404"
-        },
-        {
-            "key": "bibr14-016146812012200404",
-            "unstructured": "Dyke E. (2016). The fight for the right to teach: Mapping the terrain of the \u201cdiversity gap\u201d in teacher education (Doctoral dissertation). Available from ProQuest Dissertations and Theses database. (10153330)."
-        },
-        {
-            "key": "bibr15-016146812012200404",
+            "key": "B3",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/03626784.1978.11075558"
+            "DOI": "10.1242/dmm.003772"
         },
         {
-            "volume-title": "Pedagogy of the Oppressed",
-            "year": "2000",
-            "author": "Freire P.",
-            "key": "bibr16-016146812012200404"
-        },
-        {
-            "first-page": "139",
-            "volume-title": "Philosophy of education",
-            "year": "2015",
-            "author": "Furman C.",
-            "key": "bibr17-016146812012200404"
-        },
-        {
-            "volume-title": "Dumbing us down: The hidden curriculum of compulsory schooling",
-            "year": "2002",
-            "author": "Gatto J. T.",
-            "key": "bibr18-016146812012200404"
-        },
-        {
-            "volume-title": "The prison notebooks",
-            "year": "2011",
-            "author": "Gramsci A.",
-            "key": "bibr19-016146812012200404"
-        },
-        {
-            "volume-title": "Philosophy as a way of life: Spiritual exercises from Socrates to Foucault",
-            "year": "1995",
-            "author": "Hadot P.",
-            "key": "bibr20-016146812012200404"
-        },
-        {
-            "volume-title": "The call to teach",
-            "year": "1995",
-            "author": "Hansen D.",
-            "key": "bibr21-016146812012200404"
-        },
-        {
-            "volume-title": "The teacher and the world: A study of cosmopolitanism and education",
-            "year": "2011",
-            "author": "Hansen D.",
-            "key": "bibr22-016146812012200404"
-        },
-        {
-            "volume-title": "Female sexualization: A collective work of memory",
-            "year": "1987",
-            "author": "Haug F.",
-            "key": "bibr23-016146812012200404"
-        },
-        {
-            "key": "bibr24-016146812012200404",
-            "unstructured": "Haug F. (1999). Memory-work as a method of social science research: A detailed rendering of memory-work method. Available at http://www.friggahaug.inkrit.de/documents/memorywork-researchguidei7.pdf"
-        },
-        {
-            "volume-title": "Life in classrooms",
-            "year": "1990",
-            "author": "Jackson P. W.",
-            "key": "bibr25-016146812012200404"
-        },
-        {
-            "key": "bibr26-016146812012200404",
+            "key": "B4",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1515/9780804771160"
+            "DOI": "10.1002/cne.10214"
         },
         {
-            "key": "bibr27-016146812012200404",
+            "key": "B5",
             "doi-asserted-by": "publisher",
-            "DOI": "10.4324/9780203339985"
+            "DOI": "10.1016/j.cmet.2012.04.018"
         },
         {
-            "key": "bibr28-016146812012200404",
+            "key": "B6",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/edth.12139"
+            "DOI": "10.1007/BF00305868"
         },
         {
-            "volume-title": "Schoolteacher: A sociological study",
-            "year": "1975",
-            "author": "Lortie D.",
-            "key": "bibr29-016146812012200404"
-        },
-        {
-            "first-page": "138",
-            "volume-title": "The Oxford encyclopedia of Mesoamerican cultures",
-            "year": "2001",
-            "author": "Luckert K. W.",
-            "key": "bibr30-016146812012200404"
-        },
-        {
-            "key": "bibr31-016146812012200404",
+            "key": "B7",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/17449642.2014.998027"
+            "DOI": "10.1523/JNEUROSCI.4893-12.2013"
         },
         {
-            "volume-title": "For space",
-            "year": "2005",
-            "author": "Massey D.",
-            "key": "bibr32-016146812012200404"
-        },
-        {
-            "key": "bibr33-016146812012200404",
+            "key": "B8",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/09540250120098861"
+            "DOI": "10.1073/pnas.0914191107"
         },
         {
-            "key": "bibr34-016146812012200404",
+            "key": "B9",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1215/9780822393320-007"
+            "DOI": "10.1016/j.bbr.2014.08.033"
         },
         {
-            "key": "bibr35-016146812012200404",
+            "key": "B10",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1007/978-0-387-85744-2_3"
+            "DOI": "10.1002/dvdy.24158"
         },
         {
-            "volume-title": "Haunting legacies: Violent histories and transgenerational trauma",
-            "year": "2010",
-            "author": "Schwab G.",
-            "key": "bibr36-016146812012200404"
+            "key": "B11",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/S0140-6736(11)60679-X"
         },
         {
-            "key": "bibr37-016146812012200404",
-            "unstructured": "Stutelberg E. (2016). These are stories about our bodies: Collective memory work and the pedagogical imaginaries of our teacher bodies (Doctoral dissertation). Available from ProQuest Dissertations and Theses database. (10153283)."
+            "key": "B12",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2337/db15-0153"
         },
         {
-            "issue": "5",
-            "key": "bibr38-016146812012200404",
-            "doi-asserted-by": "crossref",
-            "first-page": "67",
-            "DOI": "10.58680/ej201425140",
-            "volume": "103",
-            "author": "Style E.",
-            "year": "2014",
-            "journal-title": "English Journal"
+            "key": "B13",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/cne.24065"
         },
         {
-            "volume-title": "Characteristics of public elementary and secondary school teachers in the United States: Results from the 2015\u201316 National Teacher and Principal Survey First Look (NCES 2017-072 rev)",
-            "year": "2018",
-            "author": "Taie S.",
-            "key": "bibr39-016146812012200404"
+            "key": "B14",
+            "first-page": "131",
+            "volume": "14",
+            "author": "El-Barrany WG",
+            "year": "2009",
+            "journal-title": "Neurosciences (Riyadh)"
+        },
+        {
+            "key": "B15",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1152/physrev.00045.2011"
+        },
+        {
+            "key": "B16",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s004010050961"
+        },
+        {
+            "key": "B17",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s00592-007-0257-3"
+        },
+        {
+            "key": "B18",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2337/diacare.26.6.1790"
+        },
+        {
+            "key": "B19",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jns.2003.09.011"
+        },
+        {
+            "key": "B20",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1074/jbc.M404167200"
+        },
+        {
+            "key": "B21",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1038/nature12111"
+        },
+        {
+            "key": "B22",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.3791/50232"
+        },
+        {
+            "key": "B23",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1155/2013/149452"
+        },
+        {
+            "key": "B24",
+            "first-page": "265",
+            "volume": "44",
+            "author": "Johnson PC",
+            "year": "1981",
+            "journal-title": "Lab Invest"
+        },
+        {
+            "key": "B25",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.ygcen.2010.10.010"
+        },
+        {
+            "key": "B26",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.coph.2017.08.007"
+        },
+        {
+            "key": "B27",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1365-2990.1988.tb00874.x"
+        },
+        {
+            "key": "B28",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1038/nn1803"
+        },
+        {
+            "key": "B29",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1101/cshperspect.a020511"
+        },
+        {
+            "key": "B30",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1038/nn2025"
+        },
+        {
+            "key": "B31",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1155/2014/870930"
+        },
+        {
+            "key": "B32",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s10072-014-1848-8"
+        },
+        {
+            "key": "B33",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1523/JNEUROSCI.1906-14.2014"
+        },
+        {
+            "key": "B34",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1073/pnas.1525096113"
+        },
+        {
+            "key": "B35",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1523/JNEUROSCI.2079-08.2008"
+        },
+        {
+            "key": "B36",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1524-475X.2010.00613.x"
+        },
+        {
+            "key": "B37",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2337/db11-0588"
+        },
+        {
+            "key": "B38",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.cell.2008.04.037"
+        },
+        {
+            "key": "B39",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.mod.2006.11.005"
+        },
+        {
+            "key": "B40",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1073/pnas.89.6.2218"
+        },
+        {
+            "key": "B41",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1073/pnas.85.13.4879"
+        },
+        {
+            "key": "B42",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/BF00690832"
+        },
+        {
+            "key": "B43",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/dvdy.10488"
+        },
+        {
+            "key": "B44",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/wrr.12027"
+        },
+        {
+            "key": "B45",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/BF01252274"
+        },
+        {
+            "key": "B46",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1038/nmeth.2019"
+        },
+        {
+            "key": "B47",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.2337/diacare.26.9.2604"
+        },
+        {
+            "key": "B48",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.jdiacomp.2017.11.012"
+        },
+        {
+            "key": "B49",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/j.pediatrneurol.2017.11.017"
+        },
+        {
+            "key": "B50",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1006/dbio.2000.9860"
+        },
+        {
+            "key": "B51",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1242/dev.052696"
         }
     ],
     "container-title": [
-        "Teachers College Record: The Voice of Scholarship in Education"
+        "American Journal of Physiology-Regulatory, Integrative and Comparative Physiology"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://journals.sagepub.com/doi/pdf/10.1177/016146812012200404",
-            "content-type": "application/pdf",
-            "content-version": "vor",
-            "intended-application": "text-mining"
-        },
-        {
-            "URL": "https://journals.sagepub.com/doi/pdf/10.1177/016146812012200404",
+            "URL": "https://www.physiology.org/doi/pdf/10.1152/ajpregu.00258.2018",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -350,63 +382,66 @@
     "deposited": {
         "date-parts": [
             [
-                2024,
-                10,
-                3
+                2019,
+                9,
+                8
             ]
         ],
-        "date-time": "2024-10-03T14:05:59Z",
-        "timestamp": 1727964359000
+        "date-time": "2019-09-08T13:44:39Z",
+        "timestamp": 1567950279000
     },
-    "score": 16.271313,
+    "score": 17.448725,
     "resource": {
         "primary": {
-            "URL": "https://journals.sagepub.com/doi/10.1177/016146812012200404"
+            "URL": "https://www.physiology.org/doi/10.1152/ajpregu.00258.2018"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2020,
-                4
+                2019,
+                4,
+                1
             ]
         ]
     },
-    "references-count": 39,
+    "references-count": 51,
     "journal-issue": {
         "issue": "4",
         "published-print": {
             "date-parts": [
                 [
-                    2020,
-                    4
+                    2019,
+                    4,
+                    1
                 ]
             ]
         }
     },
     "alternative-id": [
-        "10.1177/016146812012200404"
+        "10.1152/ajpregu.00258.2018"
     ],
-    "URL": "http://dx.doi.org/10.1177/016146812012200404",
+    "URL": "http://dx.doi.org/10.1152/ajpregu.00258.2018",
     "ISSN": [
-        "0161-4681",
-        "1467-9620"
+        "0363-6119",
+        "1522-1490"
     ],
     "issn-type": [
         {
-            "type": "print",
-            "value": "0161-4681"
+            "value": "0363-6119",
+            "type": "print"
         },
         {
-            "type": "electronic",
-            "value": "1467-9620"
+            "value": "1522-1490",
+            "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2020,
-                4
+                2019,
+                4,
+                1
             ]
         ]
     }

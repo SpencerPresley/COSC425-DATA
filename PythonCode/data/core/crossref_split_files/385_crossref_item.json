@@ -2,1022 +2,1432 @@
     "indexed": {
         "date-parts": [
             [
-                2023,
-                11,
-                15
+                2024,
+                9,
+                6
             ]
         ],
-        "date-time": "2023-11-15T00:24:43Z",
-        "timestamp": 1700007883819
+        "date-time": "2024-09-06T12:53:38Z",
+        "timestamp": 1725627218235
     },
-    "reference-count": 166,
-    "publisher": "Informa UK Limited",
-    "issue": "1",
+    "reference-count": 81,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "2",
+    "license": [
+        {
+            "start": {
+                "date-parts": [
+                    [
+                        2022,
+                        3,
+                        4
+                    ]
+                ],
+                "date-time": "2022-03-04T00:00:00Z",
+                "timestamp": 1646352000000
+            },
+            "content-version": "vor",
+            "delay-in-days": 0,
+            "URL": "https://academic.oup.com/journals/pages/open_access/funder_policies/chorus/standard_publication_model"
+        }
+    ],
     "funder": [
         {
-            "name": "key program of National Natural Science Foundation of China",
+            "DOI": "10.13039/100000001",
+            "name": "National Science Foundation",
+            "doi-asserted-by": "publisher",
             "award": [
-                "71832004"
+                "AST-1909022",
+                "AST-1616636"
+            ],
+            "id": [
+                {
+                    "id": "10.13039/100000001",
+                    "id-type": "DOI",
+                    "asserted-by": "publisher"
+                }
             ]
         },
         {
-            "name": "Ministry of Education of Humanities and Social Science",
-            "award": [
-                "20YJA630061"
+            "DOI": "10.13039/100000879",
+            "name": "Alfred P. Sloan Foundation",
+            "doi-asserted-by": "publisher",
+            "id": [
+                {
+                    "id": "10.13039/100000879",
+                    "id-type": "DOI",
+                    "asserted-by": "publisher"
+                }
+            ]
+        },
+        {
+            "DOI": "10.13039/100000015",
+            "name": "U.S. Department of Energy",
+            "doi-asserted-by": "publisher",
+            "id": [
+                {
+                    "id": "10.13039/100000015",
+                    "id-type": "DOI",
+                    "asserted-by": "publisher"
+                }
+            ]
+        },
+        {
+            "DOI": "10.13039/100006132",
+            "name": "Office of Science",
+            "doi-asserted-by": "publisher",
+            "id": [
+                {
+                    "id": "10.13039/100006132",
+                    "id-type": "DOI",
+                    "asserted-by": "publisher"
+                }
+            ]
+        },
+        {
+            "DOI": "10.13039/100007747",
+            "name": "University of Utah",
+            "doi-asserted-by": "publisher",
+            "id": [
+                {
+                    "id": "10.13039/100007747",
+                    "id-type": "DOI",
+                    "asserted-by": "publisher"
+                }
+            ]
+        },
+        {
+            "DOI": "10.13039/100008047",
+            "name": "Carnegie Mellon University",
+            "doi-asserted-by": "publisher",
+            "id": [
+                {
+                    "id": "10.13039/100008047",
+                    "id-type": "DOI",
+                    "asserted-by": "publisher"
+                }
+            ]
+        },
+        {
+            "DOI": "10.13039/100009207",
+            "name": "Harvard-Smithsonian Center for Astrophysics",
+            "doi-asserted-by": "publisher",
+            "id": [
+                {
+                    "id": "10.13039/100009207",
+                    "id-type": "DOI",
+                    "asserted-by": "publisher"
+                }
+            ]
+        },
+        {
+            "DOI": "10.13039/501100004721",
+            "name": "University of Tokyo",
+            "doi-asserted-by": "publisher",
+            "id": [
+                {
+                    "id": "10.13039/501100004721",
+                    "id-type": "DOI",
+                    "asserted-by": "publisher"
+                }
+            ]
+        },
+        {
+            "DOI": "10.13039/100006235",
+            "name": "Lawrence Berkeley National Laboratory",
+            "doi-asserted-by": "publisher",
+            "id": [
+                {
+                    "id": "10.13039/100006235",
+                    "id-type": "DOI",
+                    "asserted-by": "publisher"
+                }
+            ]
+        },
+        {
+            "DOI": "10.13039/100009611",
+            "name": "New Mexico State University",
+            "doi-asserted-by": "publisher",
+            "id": [
+                {
+                    "id": "10.13039/100009611",
+                    "id-type": "DOI",
+                    "asserted-by": "publisher"
+                }
+            ]
+        },
+        {
+            "DOI": "10.13039/100006732",
+            "name": "New York University",
+            "doi-asserted-by": "publisher",
+            "id": [
+                {
+                    "id": "10.13039/100006732",
+                    "id-type": "DOI",
+                    "asserted-by": "publisher"
+                }
+            ]
+        },
+        {
+            "DOI": "10.13039/100008109",
+            "name": "University of Notre Dame",
+            "doi-asserted-by": "publisher",
+            "id": [
+                {
+                    "id": "10.13039/100008109",
+                    "id-type": "DOI",
+                    "asserted-by": "publisher"
+                }
+            ]
+        },
+        {
+            "DOI": "10.13039/501100003545",
+            "name": "MCTI",
+            "doi-asserted-by": "publisher",
+            "id": [
+                {
+                    "id": "10.13039/501100003545",
+                    "id-type": "DOI",
+                    "asserted-by": "publisher"
+                }
+            ]
+        },
+        {
+            "DOI": "10.13039/100006928",
+            "name": "Ohio State University",
+            "doi-asserted-by": "publisher",
+            "id": [
+                {
+                    "id": "10.13039/100006928",
+                    "id-type": "DOI",
+                    "asserted-by": "publisher"
+                }
+            ]
+        },
+        {
+            "DOI": "10.13039/100008321",
+            "name": "Pennsylvania State University",
+            "doi-asserted-by": "publisher",
+            "id": [
+                {
+                    "id": "10.13039/100008321",
+                    "id-type": "DOI",
+                    "asserted-by": "publisher"
+                }
+            ]
+        },
+        {
+            "DOI": "10.13039/501100005739",
+            "name": "Universidad Nacional Aut\u00f3noma de M\u00e9xico",
+            "doi-asserted-by": "publisher",
+            "id": [
+                {
+                    "id": "10.13039/501100005739",
+                    "id-type": "DOI",
+                    "asserted-by": "publisher"
+                }
+            ]
+        },
+        {
+            "DOI": "10.13039/100007899",
+            "name": "University of Arizona",
+            "doi-asserted-by": "publisher",
+            "id": [
+                {
+                    "id": "10.13039/100007899",
+                    "id-type": "DOI",
+                    "asserted-by": "publisher"
+                }
+            ]
+        },
+        {
+            "DOI": "10.13039/100007493",
+            "name": "University of Colorado Boulder",
+            "doi-asserted-by": "publisher",
+            "id": [
+                {
+                    "id": "10.13039/100007493",
+                    "id-type": "DOI",
+                    "asserted-by": "publisher"
+                }
+            ]
+        },
+        {
+            "DOI": "10.13039/100009153",
+            "name": "University of Portsmouth",
+            "doi-asserted-by": "publisher",
+            "id": [
+                {
+                    "id": "10.13039/100009153",
+                    "id-type": "DOI",
+                    "asserted-by": "publisher"
+                }
+            ]
+        },
+        {
+            "DOI": "10.13039/100007747",
+            "name": "University of Utah",
+            "doi-asserted-by": "publisher",
+            "id": [
+                {
+                    "id": "10.13039/100007747",
+                    "id-type": "DOI",
+                    "asserted-by": "publisher"
+                }
+            ]
+        },
+        {
+            "DOI": "10.13039/100008457",
+            "name": "University of Virginia",
+            "doi-asserted-by": "publisher",
+            "id": [
+                {
+                    "id": "10.13039/100008457",
+                    "id-type": "DOI",
+                    "asserted-by": "publisher"
+                }
+            ]
+        },
+        {
+            "DOI": "10.13039/100007812",
+            "name": "University of Washington",
+            "doi-asserted-by": "publisher",
+            "id": [
+                {
+                    "id": "10.13039/100007812",
+                    "id-type": "DOI",
+                    "asserted-by": "publisher"
+                }
+            ]
+        },
+        {
+            "DOI": "10.13039/100006537",
+            "name": "Vanderbilt University",
+            "doi-asserted-by": "publisher",
+            "id": [
+                {
+                    "id": "10.13039/100006537",
+                    "id-type": "DOI",
+                    "asserted-by": "publisher"
+                }
+            ]
+        },
+        {
+            "DOI": "10.13039/100005326",
+            "name": "Yale University",
+            "doi-asserted-by": "publisher",
+            "id": [
+                {
+                    "id": "10.13039/100005326",
+                    "id-type": "DOI",
+                    "asserted-by": "publisher"
+                }
             ]
         }
     ],
     "content-domain": {
-        "domain": [
-            "www.tandfonline.com"
-        ],
-        "crossmark-restriction": true
+        "domain": [],
+        "crossmark-restriction": false
     },
-    "short-container-title": [
-        "The International Journal of Human Resource Management"
-    ],
     "published-print": {
         "date-parts": [
             [
-                2023,
-                1,
-                2
+                2022,
+                3,
+                24
             ]
         ]
     },
-    "DOI": "10.1080/09585192.2021.1958247",
+    "abstract": "<jats:title>ABSTRACT</jats:title><jats:p>We measure rotational broadening in spectra taken by the Apache Point Observatory Galactic Evolution Experiment (APOGEE) survey to characterize the relationship between stellar multiplicity and rotation. We create a sample of 2786 giants and 24\u2009496 dwarfs with stellar parameters and multiple radial velocities from the APOGEE pipeline, projected rotation speeds vsin\u2009i determined from our own pipeline, and distances, masses, and ages measured by Sanders\u00a0&amp; Das. We use the statistical distribution of the maximum shift in the radial velocities, \u0394RVmax, as a proxy for the close binary fraction to explore the interplay between stellar evolution, rotation, and multiplicity. Assuming that the minimum orbital period allowed is the critical period for Roche Lobe overflow and rotational synchronization, we calculate theoretical upper limits on expected vsin\u2009i and \u0394RVmax values. These expectations agree with the positive correlation between the maximum \u0394RVmax and vsin\u2009i values observed in our sample as a function of log(g). We find that the fast rotators in our sample have a high occurrence of short-period [log(P/d) \u2272 4] companions. We also find that old, rapidly rotating main-sequence stars have larger completeness-corrected close binary fractions than their younger peers. Furthermore, rapidly rotating stars with large \u0394RVmax consistently show differences of 1\u201310\u00a0Gyr between the predicted gyrochronological and measured isochronal ages. These results point towards a link between rapid rotation and close binarity through tidal interactions. We conclude that stellar rotation is strongly correlated with stellar multiplicity in the field, and caution should be taken in the application of gyrochronology relations to cool stars.</jats:p>",
+    "DOI": "10.1093/mnras/stac590",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2021,
-                12,
-                16
+                2022,
+                3,
+                3
             ]
         ],
-        "date-time": "2021-12-16T15:16:25Z",
-        "timestamp": 1639667785000
+        "date-time": "2022-03-03T04:12:24Z",
+        "timestamp": 1646280744000
     },
-    "page": "28-67",
-    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
+    "page": "2051-2061",
     "source": "Crossref",
-    "is-referenced-by-count": 0,
+    "is-referenced-by-count": 9,
     "title": [
-        "Predictors of employees\u2019 strike attitudes in multinational corporations in China: a multilevel relational model"
+        "Stellar multiplicity and stellar rotation: insights from APOGEE"
     ],
-    "prefix": "10.1080",
-    "volume": "34",
+    "prefix": "10.1093",
+    "volume": "512",
     "author": [
         {
-            "ORCID": "http://orcid.org/0000-0002-5612-5027",
+            "ORCID": "http://orcid.org/0000-0003-2116-2159",
             "authenticated-orcid": false,
-            "given": "Ying",
-            "family": "Chen",
+            "given": "Christine Mazzola",
+            "family": "Daher",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "College of Business, University of Rhode Island, Kingston, RI, USA"
+                    "name": "Department of Physics and Astronomy and Pittsburgh Particle Physics, Astrophysics and Cosmology Center (PITT PACC), University of Pittsburgh , 3941 O\u2018Hara Street, Pittsburgh, PA 15260, USA"
                 }
             ]
         },
         {
-            "ORCID": "http://orcid.org/0000-0002-3230-1540",
+            "given": "Carles",
+            "family": "Badenes",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Physics and Astronomy and Pittsburgh Particle Physics, Astrophysics and Cosmology Center (PITT PACC), University of Pittsburgh , 3941 O\u2018Hara Street, Pittsburgh, PA 15260, USA"
+                }
+            ]
+        },
+        {
+            "ORCID": "http://orcid.org/0000-0002-4818-7885",
             "authenticated-orcid": false,
-            "given": "Yun-Kyoung",
-            "family": "Kim",
+            "given": "Jamie",
+            "family": "Tayar",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA"
+                    "name": "Institute for Astronomy, University of Hawaii , Honolulu, HI 96822, USA"
                 }
             ]
         },
         {
-            "ORCID": "http://orcid.org/0000-0001-5117-0681",
+            "ORCID": "http://orcid.org/0000-0002-7549-7766",
             "authenticated-orcid": false,
-            "given": "Zhiqiang",
-            "family": "Liu",
+            "given": "Marc",
+            "family": "Pinsonneault",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "School of Management, Huazhong University of Science and Technology, Wuhan, China;"
+                    "name": "Department of Astronomy, The Ohio State University , Columbus, OH 43210, USA"
                 }
             ]
         },
         {
-            "given": "Guofeng",
-            "family": "Wang",
+            "ORCID": "http://orcid.org/0000-0003-2644-135X",
+            "authenticated-orcid": false,
+            "given": "Sergey E",
+            "family": "Koposov",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "School of Management and Economics, University of Electronic Science and Technology of China, Chengdu, China"
+                    "name": "Institute for Astronomy, University of Edinburgh , Royal Observatory, Blackford Hill, Edinburgh EH9 3HJ, UK"
+                },
+                {
+                    "name": "Institute of Astronomy, University of Cambridge , Madingley Road, Cambridge CB3 0HA, UK"
+                }
+            ]
+        },
+        {
+            "given": "Kaitlin",
+            "family": "Kratter",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Steward Observatory, University of Arizona , 933 North Cherry Avenue, Tucson, AZ 85721, USA"
+                }
+            ]
+        },
+        {
+            "ORCID": "http://orcid.org/0000-0002-0870-6388",
+            "authenticated-orcid": false,
+            "given": "Maxwell",
+            "family": "Moe",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Steward Observatory, University of Arizona , 933 North Cherry Avenue, Tucson, AZ 85721, USA"
+                }
+            ]
+        },
+        {
+            "ORCID": "http://orcid.org/0000-0001-5261-4336",
+            "authenticated-orcid": false,
+            "given": "Borja",
+            "family": "Anguiano",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Astronomy, University of Virginia , Charlottesville, VA 22904, USA"
+                }
+            ]
+        },
+        {
+            "given": "Diego",
+            "family": "Godoy-Rivera",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Astronomy, The Ohio State University , Columbus, OH 43210, USA"
+                }
+            ]
+        },
+        {
+            "given": "Steven",
+            "family": "Majewski",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Astronomy, University of Virginia , Charlottesville, VA 22904, USA"
+                }
+            ]
+        },
+        {
+            "given": "Joleen K",
+            "family": "Carlberg",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Space Telescope Science Institute , 3700 San Martin Drive, Baltimore, MD 21218, USA"
+                }
+            ]
+        },
+        {
+            "ORCID": "http://orcid.org/0000-0003-2496-1925",
+            "authenticated-orcid": false,
+            "given": "Matthew G",
+            "family": "Walker",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "McWilliams Center for Cosmology, Department of Physics, Carnegie Mellon University , 5000 Forbes Avenue, Pittsburgh, PA 15213, USA"
+                }
+            ]
+        },
+        {
+            "ORCID": "http://orcid.org/0000-0001-5501-7609",
+            "authenticated-orcid": false,
+            "given": "Rachel",
+            "family": "Buttry",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "McWilliams Center for Cosmology, Department of Physics, Carnegie Mellon University , 5000 Forbes Avenue, Pittsburgh, PA 15213, USA"
+                }
+            ]
+        },
+        {
+            "given": "Don",
+            "family": "Dixon",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Physics\u00a0& Astronomy, Vanderbilt University , Nashville, TN 37235, USA"
+                }
+            ]
+        },
+        {
+            "ORCID": "http://orcid.org/0000-0001-7351-6540",
+            "authenticated-orcid": false,
+            "given": "Javier",
+            "family": "Serna",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Instituto de Astronom\u00eda, Universidad Aut\u00f3noma de M\u00e9xico , Ensenada 22800, B.C., M\u00e9xico"
+                }
+            ]
+        },
+        {
+            "ORCID": "http://orcid.org/0000-0002-3481-9052",
+            "authenticated-orcid": false,
+            "given": "Keivan G",
+            "family": "Stassun",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Physics\u00a0& Astronomy, Vanderbilt University , Nashville, TN 37235, USA"
+                }
+            ]
+        },
+        {
+            "given": "Nathan",
+            "family": "De\u00a0Lee",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Physics, Geology, and Engineering Tech, Northern Kentucky University , Highland Heights, KY 41099, USA"
+                }
+            ]
+        },
+        {
+            "given": "Jes\u00fas",
+            "family": "Hern\u00e1ndez",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Instituto de Astronom\u00eda, Universidad Aut\u00f3noma de M\u00e9xico , Ensenada 22800, B.C., M\u00e9xico"
+                }
+            ]
+        },
+        {
+            "given": "Christian",
+            "family": "Nitschelm",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Centro de Astronom\u00eda (CITEVA), Universidad de Antofagasta , Avenida Angamos 601, Antofagasta 1270300, Chile"
+                }
+            ]
+        },
+        {
+            "ORCID": "http://orcid.org/0000-0003-1479-3059",
+            "authenticated-orcid": false,
+            "given": "Guy S",
+            "family": "Stringfellow",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Center for Astrophysics and Space Astronomy, Department of Astrophysical and Planetary Sciences, University of Colorado , Boulder, CO 80309, USA"
+                }
+            ]
+        },
+        {
+            "given": "Nicholas W",
+            "family": "Troup",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Physics, Salisbury University , Salisbury, MD 21801, USA"
                 }
             ]
         }
     ],
-    "member": "301",
+    "member": "286",
     "published-online": {
         "date-parts": [
             [
-                2021,
-                12,
-                16
+                2022,
+                3,
+                4
             ]
         ]
     },
     "reference": [
         {
-            "key": "CIT0001",
+            "key": "2023030412271842300_",
+            "doi-asserted-by": "crossref",
+            "first-page": "19",
+            "DOI": "10.3847/1538-4365/aa9e8a",
+            "volume": "235",
+            "author": "Abolfathi",
+            "year": "2018",
+            "journal-title": "ApJS"
+        },
+        {
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/0749-5978(91)90020-T"
+            "first-page": "1787",
+            "DOI": "10.1093/mnras/stv423",
+            "volume": "450",
+            "author": "Angus",
+            "year": "2015",
+            "journal-title": "MNRAS"
         },
         {
-            "key": "CIT0002",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/001979397402700204"
+            "first-page": "173",
+            "DOI": "10.3847/1538-3881/ab3c53",
+            "volume": "158",
+            "author": "Angus",
+            "year": "2019",
+            "journal-title": "AJ"
         },
         {
-            "key": "CIT0003",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0019793919885819"
+            "first-page": "90",
+            "DOI": "10.3847/1538-3881/ab91b2",
+            "volume": "160",
+            "author": "Angus",
+            "year": "2020",
+            "journal-title": "AJ"
         },
         {
-            "key": "CIT0004",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/001979399004300505"
+            "first-page": "L11",
+            "DOI": "10.1088/2041-8205/749/1/L11",
+            "volume": "749",
+            "author": "Badenes",
+            "year": "2012",
+            "journal-title": "ApJ"
         },
         {
-            "key": "CIT0005",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2307/256921"
+            "first-page": "147",
+            "DOI": "10.3847/1538-4357/aaa765",
+            "volume": "854",
+            "author": "Badenes",
+            "year": "2018",
+            "journal-title": "ApJ"
         },
         {
-            "key": "CIT0006",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10551-013-1674-6"
+            "first-page": "1167",
+            "DOI": "10.1086/519295",
+            "volume": "669",
+            "author": "Barnes",
+            "year": "2007",
+            "journal-title": "ApJ"
         },
         {
-            "key": "CIT0007",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00224545.1992.9713897"
-        },
-        {
-            "key": "CIT0008",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0033-2909.83.5.762"
-        },
-        {
-            "key": "CIT0009",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0022185614564379"
-        },
-        {
-            "key": "CIT0010",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1509/jmkr.44.2.175"
-        },
-        {
-            "key": "CIT0011",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2466/pr0.1984.55.1.215"
-        },
-        {
-            "key": "CIT0012",
-            "volume-title": "Exchange and power in social life",
-            "author": "Blau P. M.",
-            "year": "1964"
-        },
-        {
-            "issue": "1",
-            "key": "CIT0013",
-            "first-page": "92",
-            "volume": "1",
-            "author": "Blecher M.",
+            "first-page": "222",
+            "DOI": "10.1088/0004-637X/722/1/222",
+            "volume": "722",
+            "author": "Barnes",
             "year": "2010",
-            "journal-title": "Global Labour Journal"
+            "journal-title": "ApJ"
         },
         {
-            "key": "CIT0014",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/002218568702900205"
+            "first-page": "675",
+            "DOI": "10.1088/0004-637X/721/1/675",
+            "volume": "721",
+            "author": "Barnes",
+            "year": "2010",
+            "journal-title": "ApJ"
         },
         {
-            "key": "CIT0015",
-            "first-page": "389",
-            "volume-title": "Handbook of cross\u2013cultural psychology",
-            "volume": "1",
-            "author": "Brislin R. W.",
-            "year": "1980"
-        },
-        {
-            "key": "CIT0016",
-            "volume-title": "Manufacturing consent: Changes in the labor process under monopoly capitalism",
-            "author": "Burawoy M.",
-            "year": "1979"
-        },
-        {
-            "key": "CIT0017",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/14672715.2012.711978"
+            "first-page": "1922",
+            "DOI": "10.1093/mnras/staa1522",
+            "volume": "496",
+            "author": "Belokurov",
+            "year": "2020",
+            "journal-title": "MNRAS"
         },
         {
-            "key": "CIT0018",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1467-8543.2008.00675.x"
+            "first-page": "28",
+            "DOI": "10.3847/1538-3881/aa7567",
+            "volume": "154",
+            "author": "Blanton",
+            "year": "2017",
+            "journal-title": "AJ"
         },
         {
-            "key": "CIT0019",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1037/h0048255"
+            "first-page": "127",
+            "DOI": "10.1088/0004-637X/790/2/127",
+            "volume": "790",
+            "author": "Bovy",
+            "year": "2014",
+            "journal-title": "ApJ"
         },
         {
-            "key": "CIT0020",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/tie.20242"
+            "first-page": "102",
+            "DOI": "10.3847/0004-637X/823/2/102",
+            "volume": "823",
+            "author": "Choi",
+            "year": "2016",
+            "journal-title": "ApJ"
         },
         {
-            "key": "CIT0021",
+            "key": "2023030412271842300_",
+            "doi-asserted-by": "crossref",
+            "first-page": "e001",
+            "DOI": "10.1017/pasa.2016.52",
+            "volume": "34",
+            "author": "De\u00a0Marco",
+            "year": "2017",
+            "journal-title": "PASA"
+        },
+        {
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0920203X9500900402"
+            "first-page": "12",
+            "DOI": "10.3847/1538-3881/ab9080",
+            "volume": "160",
+            "author": "Dixon",
+            "year": "2020",
+            "journal-title": "AJ"
         },
         {
-            "key": "CIT0022",
-            "volume-title": "China\u2019s workers under assault: The exploitation of labor in a globalizing economy",
-            "author": "Chan A.",
-            "year": "2001"
-        },
-        {
-            "key": "CIT0023",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1468-2338.2008.00513.x"
+            "first-page": "8",
+            "DOI": "10.3847/0067-0049/222/1/8",
+            "volume": "222",
+            "author": "Dotter",
+            "year": "2016",
+            "journal-title": "ApJS"
         },
         {
-            "key": "CIT0024",
+            "key": "2023030412271842300_",
+            "first-page": "485",
+            "volume": "248",
+            "author": "Duquennoy",
+            "year": "1991",
+            "journal-title": "A&A"
+        },
+        {
+            "key": "2023030412271842300_",
+            "doi-asserted-by": "crossref",
+            "first-page": "241",
+            "DOI": "10.1080/03091927708242330",
+            "volume": "9",
+            "author": "Durney",
+            "year": "1978",
+            "journal-title": "Geophys. Astrophys. Fluid Dyn."
+        },
+        {
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/dech.12104"
+            "first-page": "368",
+            "DOI": "10.1086/160960",
+            "volume": "268",
+            "author": "Eggleton",
+            "year": "1983",
+            "journal-title": "ApJ"
         },
         {
-            "key": "CIT0025",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/1744-7941.12181"
+            "first-page": "5043",
+            "DOI": "10.1093/mnras/stx2758",
+            "volume": "473",
+            "author": "El-Badry",
+            "year": "2018",
+            "journal-title": "MNRAS"
         },
         {
-            "key": "CIT0026",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0022185615573009"
+            "first-page": "5822",
+            "DOI": "10.1093/mnras/stz2480",
+            "volume": "489",
+            "author": "El-Badry",
+            "year": "2019",
+            "journal-title": "MNRAS"
         },
         {
-            "key": "CIT0027",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0022185612457128"
+            "first-page": "159",
+            "DOI": "10.1088/0004-637X/780/2/159",
+            "volume": "780",
+            "author": "Epstein",
+            "year": "2014",
+            "journal-title": "ApJ"
         },
         {
-            "key": "CIT0028",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1017/S0305741013001409"
-        },
-        {
-            "key": "CIT0029",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1017/S0305741009000319"
-        },
-        {
-            "key": "CIT0030",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/2667476"
-        },
-        {
-            "key": "CIT0031",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0097700402250742"
-        },
-        {
-            "key": "CIT0032",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.postcomstud.2006.12.006"
-        },
-        {
-            "key": "CIT0033",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1017/S0305741009991093"
-        },
-        {
-            "key": "CIT0034",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/tie.20427"
-        },
-        {
-            "key": "CIT0035",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1740-8784.2009.00153.x"
-        },
-        {
-            "key": "CIT0036",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF02686311"
-        },
-        {
-            "key": "CIT0037",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10490-006-9029-9"
-        },
-        {
-            "key": "CIT0038",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0022022101032004003"
-        },
-        {
-            "key": "CIT0039",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1744-7941.2012.00050.x"
-        },
-        {
-            "key": "CIT0040",
-            "unstructured": "China Labour Bulletin. (2021).China Labour Bulletin strike map. https://maps.clb.org.hk/strikes/en"
-        },
-        {
-            "key": "CIT0041",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1108/ER-06-2015-0120"
-        },
-        {
-            "issue": "4",
-            "key": "CIT0042",
-            "first-page": "67",
-            "volume": "23",
-            "author": "Chung S.",
+            "first-page": "A36",
+            "DOI": "10.1051/0004-6361/201321302",
+            "volume": "556",
+            "author": "Gallet",
             "year": "2013",
-            "journal-title": "\uc0b0\uc5c5\uad00\uacc4\uc5f0\uad6c"
+            "journal-title": "A&A"
         },
         {
-            "key": "CIT0043",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/001872679204501205"
+            "first-page": "A98",
+            "DOI": "10.1051/0004-6361/201525660",
+            "volume": "577",
+            "author": "Gallet",
+            "year": "2015",
+            "journal-title": "A&A"
         },
         {
-            "key": "CIT0044",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0022185607085697"
+            "first-page": "144",
+            "DOI": "10.3847/0004-6256/151/6/144",
+            "volume": "151",
+            "author": "Garc\u00eda\u00a0P\u00e9rez",
+            "year": "2016",
+            "journal-title": "AJ"
         },
         {
-            "key": "CIT0045",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1057/9781137304483_7"
+            "first-page": "4440",
+            "DOI": "10.1093/mnras/sty1736",
+            "volume": "479",
+            "author": "Godoy-Rivera",
+            "year": "2018",
+            "journal-title": "MNRAS"
         },
         {
-            "key": "CIT0046",
+            "key": "2023030412271842300_",
+            "first-page": "46",
+            "volume-title": "ApJS",
+            "author": "Godoy-Rivera",
+            "year": "2021"
+        },
+        {
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10490-014-9386-8"
+            "first-page": "2332",
+            "DOI": "10.1086/500975",
+            "volume": "131",
+            "author": "Gunn",
+            "year": "2006",
+            "journal-title": "AJ"
         },
         {
-            "key": "CIT0047",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.17848/9780585298719"
+            "first-page": "148",
+            "DOI": "10.1088/0004-6256/150/5/148",
+            "volume": "150",
+            "author": "Holtzman",
+            "year": "2015",
+            "journal-title": "AJ"
         },
         {
-            "key": "CIT0048",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/hrm.21986"
+            "first-page": "125",
+            "DOI": "10.3847/1538-3881/aad4f9",
+            "volume": "156",
+            "author": "Holtzman",
+            "year": "2018",
+            "journal-title": "AJ"
         },
         {
-            "key": "CIT0049",
-            "doi-asserted-by": "crossref",
-            "first-page": "5",
-            "DOI": "10.1093/oso/9780199269136.003.0001",
-            "volume-title": "The employment relationship: Examining psychological and contextual perspectives",
-            "author": "Coyle-Shapiro J. A.",
-            "year": "2004"
-        },
-        {
-            "key": "CIT0050",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/13594320143000852"
+            "first-page": "75",
+            "DOI": "10.3847/1538-4357/835/1/75",
+            "volume": "835",
+            "author": "Janes",
+            "year": "2017",
+            "journal-title": "ApJ"
         },
         {
-            "key": "CIT0051",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.hrmr.2007.03.008"
+            "first-page": "200",
+            "DOI": "10.1093/mnras/stab114",
+            "volume": "503",
+            "author": "Jayasinghe",
+            "year": "2021",
+            "journal-title": "MNRAS"
         },
         {
-            "key": "CIT0052",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.5465/annals.2015.0099"
+            "first-page": "690",
+            "DOI": "10.1093/mnras/stz2983",
+            "volume": "491",
+            "author": "Jermyn",
+            "year": "2020",
+            "journal-title": "MNRAS"
         },
         {
-            "key": "CIT0053",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0149206305279602"
+            "first-page": "126",
+            "DOI": "10.3847/1538-3881/aad4f5",
+            "volume": "156",
+            "author": "J\u00f6nsson",
+            "year": "2018",
+            "journal-title": "AJ"
         },
         {
-            "key": "CIT0054",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0742-7301(01)20001-2"
+            "first-page": "120",
+            "DOI": "10.3847/1538-3881/aba592",
+            "volume": "160",
+            "author": "J\u00f6nsson",
+            "year": "2020",
+            "journal-title": "AJ"
         },
         {
-            "key": "CIT0055",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0021-9010.89.1.52"
+            "first-page": "A212",
+            "DOI": "10.1051/0004-6361/202039138",
+            "volume": "642",
+            "author": "Justesen",
+            "year": "2020",
+            "journal-title": "A&A"
         },
         {
-            "key": "CIT0056",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/0030-5073(75)90005-7"
+            "first-page": "1322",
+            "DOI": "10.1086/132120",
+            "volume": "99",
+            "author": "Kawaler",
+            "year": "1987",
+            "journal-title": "PASP"
         },
         {
-            "key": "CIT0057",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.4135/9781849200431.n29"
+            "first-page": "196",
+            "DOI": "10.3847/1538-3881/ab13b1",
+            "volume": "157",
+            "author": "Kounkel",
+            "year": "2019",
+            "journal-title": "AJ"
         },
         {
-            "key": "CIT0058",
+            "key": "2023030412271842300_",
+            "first-page": "184",
+            "volume-title": "AJ",
+            "author": "Kounkel",
+            "year": "2021"
+        },
+        {
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.2044-8325.1989.tb00474.x"
+            "first-page": "681",
+            "DOI": "10.1086/148330",
+            "volume": "142",
+            "author": "Kraft",
+            "year": "1965",
+            "journal-title": "ApJ"
         },
         {
-            "key": "CIT0059",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.7202/050585ar"
+            "first-page": "551",
+            "DOI": "10.1086/149359",
+            "volume": "150",
+            "author": "Kraft",
+            "year": "1967",
+            "journal-title": "ApJ"
         },
         {
-            "issue": "2",
-            "key": "CIT0060",
-            "doi-asserted-by": "crossref",
-            "first-page": "387",
-            "DOI": "10.2307/256554",
-            "volume": "31",
-            "author": "Davidson W. N.",
-            "year": "1988",
-            "journal-title": "Academy of Management Journal"
-        },
-        {
-            "key": "CIT0061",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/joop.12048"
+            "first-page": "47",
+            "DOI": "10.3847/1538-4357/ab2bf8",
+            "volume": "881",
+            "author": "Leiner",
+            "year": "2019",
+            "journal-title": "ApJ"
         },
         {
-            "key": "CIT0062",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2307/258314"
+            "first-page": "250",
+            "DOI": "10.3847/1538-3881/aa974d",
+            "volume": "154",
+            "author": "Lurie",
+            "year": "2017",
+            "journal-title": "AJ"
         },
         {
-            "key": "CIT0063",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1207/s15327841mpee1002_2"
+            "first-page": "94",
+            "DOI": "10.3847/1538-3881/aa784d",
+            "volume": "154",
+            "author": "Majewski",
+            "year": "2017",
+            "journal-title": "AJ"
         },
         {
-            "key": "CIT0064",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1086/375198"
+            "first-page": "1264",
+            "DOI": "10.1086/591785",
+            "volume": "687",
+            "author": "Mamajek",
+            "year": "2008",
+            "journal-title": "ApJ"
         },
         {
-            "key": "CIT0065",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0149206311415280"
+            "first-page": "143",
+            "DOI": "10.1088/0004-637X/751/2/143",
+            "volume": "751",
+            "author": "Maoz",
+            "year": "2012",
+            "journal-title": "ApJ"
         },
         {
-            "key": "CIT0066",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0021-9010.71.3.500"
+            "first-page": "L23",
+            "DOI": "10.1088/2041-8205/799/2/L23",
+            "volume": "799",
+            "author": "Matt",
+            "year": "2015",
+            "journal-title": "ApJ"
         },
         {
-            "key": "CIT0067",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0146167204264047"
-        },
-        {
-            "key": "CIT0068",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/bjir.12467"
-        },
-        {
-            "key": "CIT0069",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/001979391406700207"
-        },
-        {
-            "key": "CIT0070",
-            "volume-title": "Paper Presented at the Global Transformation of Work: Market Integration, China\u2019s Rise, and Labor Adaptation Conference",
-            "author": "Fang T.",
-            "year": "2016"
-        },
-        {
-            "key": "CIT0071",
-            "first-page": "269",
-            "volume": "4",
-            "author": "Fiorito J.",
-            "year": "1986",
-            "journal-title": "Research in Personnel and Human Resources Management"
-        },
-        {
-            "key": "CIT0072",
-            "volume-title": "Structures of social life: The four elementary forms of human relations: Communal sharing, authority ranking, equality matching, market pricing",
-            "author": "Fiske A. P.",
-            "year": "1991"
-        },
-        {
-            "key": "CIT0073",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/001979397603000104"
-        },
-        {
-            "key": "CIT0074",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.4000/chinaperspectives.8826"
-        },
-        {
-            "key": "CIT0075",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1086/696986"
-        },
-        {
-            "key": "CIT0076",
-            "unstructured": "Friedman, E. (2012, August 1).China in revolt[Web log post]. https://www.jacobinmag.com/2012/08/china-in-revolt/"
-        },
-        {
-            "key": "CIT0077",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1515/9781400837298"
-        },
-        {
-            "key": "CIT0078",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0021-9010.82.6.827"
-        },
-        {
-            "key": "CIT0079",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/258140"
-        },
-        {
-            "key": "CIT0080",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/2092623"
-        },
-        {
-            "key": "CIT0081",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/1048-9843(95)90036-5"
-        },
-        {
-            "key": "CIT0082",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/001979399104400404"
-        },
-        {
-            "key": "CIT0083",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s11747-014-0403-8"
-        },
-        {
-            "key": "CIT0084",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.emj.2018.01.002"
-        },
-        {
-            "key": "CIT0085",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/014920639802400504"
-        },
-        {
-            "key": "CIT0086",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1017/S030574100800115X"
-        },
-        {
-            "key": "CIT0087",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10301763.2019.1692440"
-        },
-        {
-            "key": "CIT0088",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/1082-989X.3.4.424"
-        },
-        {
-            "key": "CIT0089",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10705519909540118"
-        },
-        {
-            "key": "CIT0090",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/mgr0000040"
-        },
-        {
-            "key": "CIT0091",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1017/CBO9780511575570"
-        },
-        {
-            "key": "CIT0092",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1086/228588"
-        },
-        {
-            "key": "CIT0093",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0021-9010.92.1.269"
-        },
-        {
-            "key": "CIT0094",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0021-9010.67.2.219"
-        },
-        {
-            "key": "CIT0095",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1467-8543.2004.00329.x"
-        },
-        {
-            "key": "CIT0096",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/2522720"
-        },
-        {
-            "key": "CIT0097",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF02685174"
-        },
-        {
-            "key": "CIT0098",
-            "unstructured": "Ke, Z. (2013).Chinese workers\u2019 attitudes toward strike[Unpublished thesis]. Iowa State University."
-        },
-        {
-            "key": "CIT0099",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.4324/9780203213940"
-        },
-        {
-            "key": "CIT0100",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/001979391406700102"
-        },
-        {
-            "key": "CIT0101",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/109442810033001"
-        },
-        {
-            "key": "CIT0102",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1017/mor.2016.2"
-        },
-        {
-            "key": "CIT0103",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/1094428112469667"
-        },
-        {
-            "key": "CIT0104",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1525/9780520920040"
-        },
-        {
-            "key": "CIT0105",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/14661380022230741"
-        },
-        {
-            "key": "CIT0106",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1525/9780520940642"
-        },
-        {
-            "key": "CIT0107",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1017/S0021911815002132"
-        },
-        {
-            "key": "CIT0108",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1086/670802"
-        },
-        {
-            "key": "CIT0109",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1057/9781137483508"
-        },
-        {
-            "key": "CIT0110",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10490-011-9277-1"
-        },
-        {
-            "key": "CIT0111",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "crossref",
             "first-page": "1",
-            "DOI": "10.1163/22136746-00601001",
-            "volume": "6",
-            "author": "Li C.",
-            "year": "2009",
-            "journal-title": "China Rural Survey"
+            "DOI": "10.1051/eas:0829001",
+            "volume": "29",
+            "author": "Mazeh",
+            "year": "2008",
+            "journal-title": "EAS Publications Series"
         },
         {
-            "key": "CIT0112",
+            "key": "2023030412271842300_",
+            "doi-asserted-by": "crossref",
+            "first-page": "1607",
+            "DOI": "10.1093/mnras/staa2859",
+            "volume": "499",
+            "author": "Mazzola",
+            "year": "2020",
+            "journal-title": "MNRAS"
+        },
+        {
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0021-9010.92.2.475"
+            "first-page": "15",
+            "DOI": "10.3847/1538-4365/aa6fb6",
+            "volume": "230",
+            "author": "Moe",
+            "year": "2017",
+            "journal-title": "ApJS"
         },
         {
-            "key": "CIT0113",
-            "first-page": "47",
-            "volume": "15",
-            "author": "Liden R. C.",
-            "year": "1997",
-            "journal-title": "Research in Personnel and Human Resources Management"
-        },
-        {
-            "key": "CIT0114",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0019793918784516"
+            "first-page": "61",
+            "DOI": "10.3847/1538-4357/ab0d88",
+            "volume": "875",
+            "author": "Moe",
+            "year": "2019",
+            "journal-title": "ApJ"
         },
         {
-            "key": "CIT0115",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/wusa.12270"
+            "first-page": "114",
+            "DOI": "10.3847/0004-637X/823/2/114",
+            "volume": "823",
+            "author": "Ness",
+            "year": "2016",
+            "journal-title": "ApJ"
         },
         {
-            "key": "CIT0116",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/001979391006400102"
+            "first-page": "173",
+            "DOI": "10.1088/0004-6256/150/6/173",
+            "volume": "150",
+            "author": "Nidever",
+            "year": "2015",
+            "journal-title": "AJ"
         },
         {
-            "key": "CIT0117",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.7591/cornell/9780801450242.003.0008"
-        },
-        {
-            "key": "CIT0118",
-            "first-page": "277",
-            "volume-title": "China\u2019s changing workplace: Dynamism, diversity and disparity",
-            "author": "Liu M.",
-            "year": "2011"
-        },
-        {
-            "key": "CIT0119",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/14742837.2016.1259106"
-        },
-        {
-            "key": "CIT0120",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1142/6256"
-        },
-        {
-            "key": "CIT0121",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.7202/050004ar"
-        },
-        {
-            "key": "CIT0122",
-            "first-page": "8",
-            "volume-title": "Citizenship and Social class",
-            "author": "Marshall T. H.",
-            "year": "1949"
-        },
-        {
-            "key": "CIT0123",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/001979398603900204"
-        },
-        {
-            "key": "CIT0124",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/peps.12100"
-        },
-        {
-            "key": "CIT0125",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/job.93"
-        },
-        {
-            "issue": "1",
-            "key": "CIT0126",
-            "first-page": "125",
-            "volume": "1",
-            "author": "McAdam D.",
-            "year": "1988",
-            "journal-title": "International Social Movement Research"
-        },
-        {
-            "key": "CIT0127",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.7208/chicago/9780226555553.001.0001"
-        },
-        {
-            "key": "CIT0128",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/001979399304600308"
-        },
-        {
-            "key": "CIT0129",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.7202/050134ar"
-        },
-        {
-            "key": "CIT0130",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1086/517900"
-        },
-        {
-            "key": "CIT0131",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/job.736"
-        },
-        {
-            "key": "CIT0132",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/258256"
-        },
-        {
-            "key": "CIT0133",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF02685377"
-        },
-        {
-            "key": "CIT0134",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1017/S0147547905000025"
-        },
-        {
-            "key": "CIT0135",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0021-9010.88.5.879"
-        },
-        {
-            "key": "CIT0136",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.4324/9780203831045"
-        },
-        {
-            "key": "CIT0137",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/09585192.2016.1254099"
-        },
-        {
-            "key": "CIT0138",
-            "volume-title": "HLM7: Hierarchical linear and nonlinear modeling",
-            "author": "Raudenbush S. W.",
-            "year": "2011"
-        },
-        {
-            "key": "CIT0139",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF01384942"
-        },
-        {
-            "key": "CIT0140",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.4135/9781452231594"
-        },
-        {
-            "key": "CIT0141",
-            "volume-title": "Stone age economics",
-            "author": "Sahlins M.",
-            "year": "1974"
-        },
-        {
-            "key": "CIT0142",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0021-9010.69.3.428"
-        },
-        {
-            "key": "CIT0143",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/001979398203500309"
-        },
-        {
-            "issue": "1",
-            "key": "CIT0144",
-            "first-page": "69",
-            "volume": "18",
-            "author": "Selden M.",
-            "year": "1995",
-            "journal-title": "Review"
-        },
-        {
-            "key": "CIT0145",
-            "first-page": "91",
-            "volume-title": "Trends in organizational behavior",
-            "volume": "1",
-            "author": "Shore L. M.",
-            "year": "1994"
-        },
-        {
-            "key": "CIT0146",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0742-7301(04)23007-9"
-        },
-        {
-            "key": "CIT0147",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1468-232X.2011.00662.x"
-        },
-        {
-            "key": "CIT0148",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1468-232X.1975.tb00617.x"
-        },
-        {
-            "key": "CIT0149",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2747/1538-7216.48.4.413"
-        },
-        {
-            "key": "CIT0150",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/job.4030160603"
-        },
-        {
-            "key": "CIT0151",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0022185607082217"
-        },
-        {
-            "key": "CIT0152",
-            "volume-title": "Individualism and collectivism",
-            "author": "Triandis H. C.",
-            "year": "1995"
-        },
-        {
-            "key": "CIT0153",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/256928"
-        },
-        {
-            "key": "CIT0154",
-            "unstructured": "U.S. Department of State. (2020).2020 Investment Climate Statements: China.https://www.state.gov/reports/2020-investment-climate-statements/china/"
-        },
-        {
-            "key": "CIT0155",
-            "unstructured": "United Nations Conference on Trade and Development (UNCTAD). (2015).World investment report 2015: Reforming international investment governance.https://unctad.org/system/files/official-document/wir2015_en.pdf"
-        },
-        {
-            "key": "CIT0156",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/109442810031002"
-        },
-        {
-            "key": "CIT0157",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1108/01409171111136202"
-        },
-        {
-            "key": "CIT0158",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0022185616658496"
-        },
-        {
-            "key": "CIT0159",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0149206308331097"
-        },
-        {
-            "key": "CIT0160",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1740-8784.2006.00047.x"
-        },
-        {
-            "key": "CIT0161",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/hrm.21931"
-        },
-        {
-            "key": "CIT0162",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/sim.1572"
-        },
-        {
-            "key": "CIT0163",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0022185612473222"
-        },
-        {
-            "key": "CIT0164",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1108/JCHRM-07-2017-0014"
-        },
-        {
-            "issue": "3",
-            "key": "CIT0165",
-            "first-page": "371",
-            "volume": "2",
-            "author": "Zhang X.",
+            "first-page": "3",
+            "DOI": "10.1088/0067-0049/192/1/3",
+            "volume": "192",
+            "author": "Paxton",
             "year": "2011",
-            "journal-title": "World Review of Political Economy"
+            "journal-title": "ApJS"
         },
         {
-            "key": "CIT0166",
+            "key": "2023030412271842300_",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/1467-839X.00017"
+            "first-page": "4",
+            "DOI": "10.1088/0067-0049/208/1/4",
+            "volume": "208",
+            "author": "Paxton",
+            "year": "2013",
+            "journal-title": "ApJS"
+        },
+        {
+            "key": "2023030412271842300_",
+            "doi-asserted-by": "publisher",
+            "first-page": "15",
+            "DOI": "10.1088/0067-0049/220/1/15",
+            "volume": "220",
+            "author": "Paxton",
+            "year": "2015",
+            "journal-title": "ApJS"
+        },
+        {
+            "key": "2023030412271842300_",
+            "doi-asserted-by": "publisher",
+            "first-page": "424",
+            "DOI": "10.1086/167210",
+            "volume": "338",
+            "author": "Pinsonneault",
+            "year": "1989",
+            "journal-title": "ApJ"
+        },
+        {
+            "key": "2023030412271842300_",
+            "doi-asserted-by": "publisher",
+            "first-page": "32",
+            "DOI": "10.3847/1538-4365/aaebfd",
+            "volume": "239",
+            "author": "Pinsonneault",
+            "year": "2018",
+            "journal-title": "ApJS"
+        },
+        {
+            "key": "2023030412271842300_",
+            "doi-asserted-by": "publisher",
+            "first-page": "1410",
+            "DOI": "10.1093/mnras/stx3198",
+            "volume": "475",
+            "author": "Price-Jones",
+            "year": "2017",
+            "journal-title": "MNRAS"
+        },
+        {
+            "key": "2023030412271842300_",
+            "doi-asserted-by": "publisher",
+            "first-page": "5",
+            "DOI": "10.3847/1538-4357/aae264",
+            "volume": "867",
+            "author": "Price-Whelan",
+            "year": "2018",
+            "journal-title": "ApJ"
+        },
+        {
+            "key": "2023030412271842300_",
+            "doi-asserted-by": "publisher",
+            "first-page": "2",
+            "DOI": "10.3847/1538-4357/ab8acc",
+            "volume": "895",
+            "author": "Price-Whelan",
+            "year": "2020",
+            "journal-title": "ApJ"
+        },
+        {
+            "key": "2023030412271842300_",
+            "doi-asserted-by": "publisher",
+            "first-page": "1",
+            "DOI": "10.1088/0067-0049/190/1/1",
+            "volume": "190",
+            "author": "Raghavan",
+            "year": "2010",
+            "journal-title": "ApJS"
+        },
+        {
+            "key": "2023030412271842300_",
+            "doi-asserted-by": "publisher",
+            "first-page": "A65",
+            "DOI": "10.1051/0004-6361/201526216",
+            "volume": "583",
+            "author": "Reinhold",
+            "year": "2015",
+            "journal-title": "A&A"
+        },
+        {
+            "key": "2023030412271842300_",
+            "doi-asserted-by": "publisher",
+            "first-page": "A4",
+            "DOI": "10.1051/0004-6361/201321970",
+            "volume": "560",
+            "author": "Reinhold",
+            "year": "2013",
+            "journal-title": "A&A"
+        },
+        {
+            "key": "2023030412271842300_",
+            "doi-asserted-by": "publisher",
+            "first-page": "444",
+            "DOI": "10.1126/science.1223344",
+            "volume": "337",
+            "author": "Sana",
+            "year": "2012",
+            "journal-title": "Science"
+        },
+        {
+            "key": "2023030412271842300_",
+            "doi-asserted-by": "publisher",
+            "first-page": "4093",
+            "DOI": "10.1093/mnras/sty2490",
+            "volume": "481",
+            "author": "Sanders",
+            "year": "2018",
+            "journal-title": "MNRAS"
+        },
+        {
+            "key": "2023030412271842300_",
+            "doi-asserted-by": "publisher",
+            "first-page": "174",
+            "DOI": "10.3847/1538-4357/aaf97c",
+            "volume": "871",
+            "author": "Simonian",
+            "year": "2019",
+            "journal-title": "ApJ"
+        },
+        {
+            "key": "2023030412271842300_",
+            "doi-asserted-by": "publisher",
+            "first-page": "76",
+            "DOI": "10.3847/1538-4357/ab9a43",
+            "volume": "898",
+            "author": "Simonian",
+            "year": "2020",
+            "journal-title": "ApJ"
+        },
+        {
+            "key": "2023030412271842300_",
+            "doi-asserted-by": "publisher",
+            "first-page": "565",
+            "DOI": "10.1086/151310",
+            "volume": "171",
+            "author": "Skumanich",
+            "year": "1972",
+            "journal-title": "ApJ"
+        },
+        {
+            "key": "2023030412271842300_",
+            "doi-asserted-by": "publisher",
+            "first-page": "581",
+            "DOI": "10.1146/annurev-astro-081309-130806",
+            "volume": "48",
+            "author": "Soderblom",
+            "year": "2010",
+            "journal-title": "ARA&A"
+        },
+        {
+            "key": "2023030412271842300_",
+            "doi-asserted-by": "publisher",
+            "first-page": "337",
+            "DOI": "10.1086/165371",
+            "volume": "318",
+            "author": "Stauffer",
+            "year": "1987",
+            "journal-title": "ApJ"
+        },
+        {
+            "key": "2023030412271842300_",
+            "doi-asserted-by": "publisher",
+            "first-page": "82",
+            "DOI": "10.1088/0004-637X/807/1/82",
+            "volume": "807",
+            "author": "Tayar",
+            "year": "2015",
+            "journal-title": "ApJ"
+        },
+        {
+            "key": "2023030412271842300_",
+            "doi-asserted-by": "publisher",
+            "first-page": "67",
+            "DOI": "10.1088/0004-637X/776/2/67",
+            "volume": "776",
+            "author": "van\u00a0Saders",
+            "year": "2013",
+            "journal-title": "ApJ"
+        },
+        {
+            "key": "2023030412271842300_",
+            "doi-asserted-by": "publisher",
+            "first-page": "181",
+            "DOI": "10.1038/nature16168",
+            "volume": "529",
+            "author": "van\u00a0Saders",
+            "year": "2016",
+            "journal-title": "Nature"
+        },
+        {
+            "key": "2023030412271842300_",
+            "first-page": "709",
+            "volume": "296",
+            "author": "Verbunt",
+            "year": "1995",
+            "journal-title": "A&A"
+        },
+        {
+            "key": "2023030412271842300_",
+            "doi-asserted-by": "publisher",
+            "first-page": "960",
+            "DOI": "10.1086/158872",
+            "volume": "245",
+            "author": "Vogel",
+            "year": "1981",
+            "journal-title": "ApJ"
+        },
+        {
+            "key": "2023030412271842300_",
+            "doi-asserted-by": "publisher",
+            "first-page": "055001",
+            "DOI": "10.1088/1538-3873/ab0075",
+            "volume": "131",
+            "author": "Wilson",
+            "year": "2019",
+            "journal-title": "PASP"
+        },
+        {
+            "key": "2023030412271842300_",
+            "doi-asserted-by": "publisher",
+            "first-page": "360",
+            "DOI": "10.1086/164689",
+            "volume": "310",
+            "author": "Wolff",
+            "year": "1986",
+            "journal-title": "ApJ"
+        },
+        {
+            "key": "2023030412271842300_",
+            "doi-asserted-by": "crossref",
+            "first-page": "67",
+            "DOI": "10.1051/eas:0829002",
+            "volume": "29",
+            "author": "Zahn",
+            "year": "2008",
+            "journal-title": "EAS Publications Series"
+        },
+        {
+            "key": "2023030412271842300_",
+            "doi-asserted-by": "publisher",
+            "first-page": "81",
+            "DOI": "10.1088/0004-6256/146/4/81",
+            "volume": "146",
+            "author": "Zasowski",
+            "year": "2013",
+            "journal-title": "AJ"
+        },
+        {
+            "key": "2023030412271842300_",
+            "doi-asserted-by": "publisher",
+            "first-page": "198",
+            "DOI": "10.3847/1538-3881/aa8df9",
+            "volume": "154",
+            "author": "Zasowski",
+            "year": "2017",
+            "journal-title": "AJ"
         }
     ],
     "container-title": [
-        "The International Journal of Human Resource Management"
+        "Monthly Notices of the Royal Astronomical Society"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/09585192.2021.1958247",
+            "URL": "https://academic.oup.com/mnras/advance-article-pdf/doi/10.1093/mnras/stac590/42736102/stac590.pdf",
+            "content-type": "application/pdf",
+            "content-version": "am",
+            "intended-application": "syndication"
+        },
+        {
+            "URL": "https://academic.oup.com/mnras/article-pdf/512/2/2051/43026715/stac590.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "syndication"
+        },
+        {
+            "URL": "https://academic.oup.com/mnras/article-pdf/512/2/2051/43026715/stac590.pdf",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -1028,120 +1438,70 @@
             [
                 2023,
                 11,
-                14
+                18
             ]
         ],
-        "date-time": "2023-11-14T09:43:59Z",
-        "timestamp": 1699955039000
+        "date-time": "2023-11-18T09:38:21Z",
+        "timestamp": 1700300301000
     },
-    "score": 13.058553,
+    "score": 6.4209943,
     "resource": {
         "primary": {
-            "URL": "https://www.tandfonline.com/doi/full/10.1080/09585192.2021.1958247"
+            "URL": "https://academic.oup.com/mnras/article/512/2/2051/6542451"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2021,
-                12,
-                16
+                2022,
+                3,
+                4
             ]
         ]
     },
-    "references-count": 166,
+    "references-count": 81,
     "journal-issue": {
-        "issue": "1",
+        "issue": "2",
         "published-print": {
             "date-parts": [
                 [
-                    2023,
-                    1,
-                    2
+                    2022,
+                    3,
+                    24
                 ]
             ]
         }
     },
-    "alternative-id": [
-        "10.1080/09585192.2021.1958247"
-    ],
-    "URL": "http://dx.doi.org/10.1080/09585192.2021.1958247",
+    "URL": "http://dx.doi.org/10.1093/mnras/stac590",
     "ISSN": [
-        "0958-5192",
-        "1466-4399"
+        "0035-8711",
+        "1365-2966"
     ],
     "issn-type": [
         {
-            "value": "0958-5192",
+            "value": "0035-8711",
             "type": "print"
         },
         {
-            "value": "1466-4399",
+            "value": "1365-2966",
             "type": "electronic"
         }
     ],
-    "published": {
+    "published-other": {
         "date-parts": [
             [
-                2021,
-                12,
-                16
+                2022,
+                5
             ]
         ]
     },
-    "assertion": [
-        {
-            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
-            "order": 1,
-            "name": "peerreview_statement",
-            "label": "Peer Review Statement"
-        },
-        {
-            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=rijh20",
-            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=rijh20",
-            "order": 2,
-            "name": "aims_and_scope_url",
-            "label": "Aim & Scope"
-        },
-        {
-            "value": "2019-03-29",
-            "order": 0,
-            "name": "received",
-            "label": "Received",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2021-07-13",
-            "order": 1,
-            "name": "revised",
-            "label": "Revised",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2021-07-14",
-            "order": 2,
-            "name": "accepted",
-            "label": "Accepted",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2021-12-16",
-            "order": 3,
-            "name": "published",
-            "label": "Published",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        }
-    ]
+    "published": {
+        "date-parts": [
+            [
+                2022,
+                3,
+                4
+            ]
+        ]
+    }
 }

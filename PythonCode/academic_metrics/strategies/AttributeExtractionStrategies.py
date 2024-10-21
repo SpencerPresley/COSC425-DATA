@@ -17,7 +17,7 @@ class AttributeExtractionStrategy(ABC):
 
     This class provides a framework for extracting various attributes from academic publication data.
     It defines common methods and properties that all specific extraction strategies should implement or utilize.
-    
+
     It implements the Strategy pattern, allowing for flexible implementation of different extraction methods for different types of attributes or data sources. See more on the Strategy pattern here: https://en.wikipedia.org/wiki/Strategy_pattern
 
     Attributes:
@@ -57,6 +57,7 @@ class AttributeExtractionStrategy(ABC):
         common tasks such as HTML parsing, author information processing, and error logging, while defining
         an interface for implementing specific extraction logic in subclasses.
     """
+
     def __init__(
         self,
         warning_manager: WarningManager,
@@ -147,7 +148,7 @@ class AttributeExtractionStrategy(ABC):
 
         Summary:
             Extracts institution-specific content from the entry text.
-            
+
         This is used by various subclasses who are designed to extract attributes from WoS data, this is NOT compatible with Crossref data.
         """
         c1_content = []
@@ -168,7 +169,7 @@ class AttributeExtractionStrategy(ABC):
 
         This method parses HTML content, specifically looking for JATS XML tags,
         and organizes the content into a dictionary format.
-        
+
         It is aimed to be used with Crossref data, not WoS data. It is intented to clean the abstract field of Crossref data from having JATS XML tags, then recombines the abstract into a single string and inserts it into the dictionary under the key "Abstract".
 
         Args:
@@ -260,7 +261,7 @@ class AttributeExtractionStrategy(ABC):
 
         This method takes a string of authors separated by semicolons and
         returns a list of individual author names.
-        
+
         This is implemented in the base class as it used by more than a single subclass. It is designed to be used with WoS data, not Crossref data. It is NOT compatible with Crossref data.
 
         Args:
@@ -286,7 +287,7 @@ class AttributeExtractionStrategy(ABC):
 
         This method searches for department information within the 'C1' field
         of the entry text, specifically looking for Salisbury University affiliations.
-        
+
         It is designed to be used with WoS data, not Crossref data. It is NOT compatible with Crossref data.
 
         Args:
@@ -326,11 +327,11 @@ class AttributeExtractionStrategy(ABC):
 
         This method extracts the affiliation information for an author
         from the Crossref author data structure.
-        
+
         It is designed to be used with Crossref data, not WoS data. It is NOT compatible with WoS data.
 
         This is implemented in the base class as it is used by more than a single subclass such as CrossrefAuthorExtractionStrategy and CrossrefDepartmentExtractionStrategy.
-        
+
         Args:
             author_item (dict): A dictionary containing author information from Crossref.
 
@@ -461,7 +462,7 @@ class AttributeExtractionStrategy(ABC):
             Creates and logs a standardized warning message for attribute extraction issues.
         """
         log_message = f"Failed to extract {attribute_class_name}. Error ID: {self.generate_error_id()}"
-        
+
         # * Commented out code is potential for more detailed logging.
         # if type(entry_id) == str:
         #     for line in entry_id.splitlines():
@@ -538,7 +539,7 @@ class AttributeExtractionStrategy(ABC):
 
         Summary:
             Organizes author information into a structured dictionary format.
-        """  
+        """
         for author_item in author_items:
             sequence: str = author_item.get("sequence", "")
             author_given_name: str = author_item.get("given", "")
@@ -637,6 +638,7 @@ class AuthorExtractionStrategy(AttributeExtractionStrategy):
         Provides a specialized strategy for extracting Salisbury University affiliated authors
         from Web of Science publication data.
     """
+
     def __init__(self, warning_manager: WarningManager):
         """
         Initializes the AuthorExtractionStrategy.
@@ -745,6 +747,7 @@ class WosCategoryExtractionStrategy(AttributeExtractionStrategy):
         Provides a specialized strategy for extracting department names
         from Web of Science publication data, focusing on Salisbury University affiliations.
     """
+
     def __init__(self, warning_manager: WarningManager):
         """
         Initializes the DepartmentExtractionStrategy.
@@ -844,6 +847,7 @@ class TitleExtractionStrategy(AttributeExtractionStrategy):
         Provides a specialized strategy for extracting and cleaning publication titles
         from Web of Science data entries.
     """
+
     def __init__(self, warning_manager: WarningManager):
         """
         Initializes the TitleExtractionStrategy.
@@ -935,6 +939,7 @@ class AbstractExtractionStrategy(AttributeExtractionStrategy):
         Provides a specialized strategy for extracting publication abstracts
         from Web of Science data entries.
     """
+
     def __init__(self, warning_manager: WarningManager):
         """
         Initializes the AbstractExtractionStrategy.
@@ -1014,6 +1019,7 @@ class EndRecordExtractionStrategy(AttributeExtractionStrategy):
         Provides a specialized strategy for extracting the end record marker
         from Web of Science data entries, which is crucial for parsing multi-record files.
     """
+
     def __init__(self, warning_manager: WarningManager):
         """
         Initializes the EndRecordExtractionStrategy.
@@ -1096,6 +1102,7 @@ class CrossrefTitleExtractionStrategy(AttributeExtractionStrategy):
         Provides a specialized strategy for extracting and cleaning publication titles
         from Crossref data entries, handling potential HTML content and multiple titles.
     """
+
     def __init__(self, warning_manager: WarningManager):
         """
         Initializes the CrossrefTitleExtractionStrategy.
@@ -1203,6 +1210,7 @@ class CrossrefAbstractExtractionStrategy(AttributeExtractionStrategy):
         Provides a specialized strategy for extracting and cleaning publication abstracts
         from Crossref data entries, handling potential HTML content.
     """
+
     def __init__(self, warning_manager: WarningManager):
         """
         Initializes the CrossrefAbstractExtractionStrategy.
@@ -1307,6 +1315,7 @@ class CrossrefAuthorExtractionStrategy(AttributeExtractionStrategy):
         Provides a specialized strategy for extracting and organizing author information
         from Crossref data entries, handling potential incomplete author data.
     """
+
     def __init__(self, warning_manager: WarningManager):
         """
         Initializes the CrossrefAuthorExtractionStrategy.
@@ -1416,6 +1425,7 @@ class CrossrefDepartmentExtractionStrategy(AttributeExtractionStrategy):
         Provides a specialized strategy for extracting and organizing department affiliations
         for authors from Crossref data entries.
     """
+
     def __init__(self, warning_manager: WarningManager):
         """
         Initializes the CrossrefDepartmentExtractionStrategy.
@@ -1513,6 +1523,7 @@ class CrossrefCategoriesExtractionStrategy(AttributeExtractionStrategy):
         Provides a specialized strategy for extracting publication categories
         from Crossref data entries.
     """
+
     def __init__(self, warning_manager: WarningManager):
         """
         Initializes the CrossrefCategoriesExtractionStrategy.
@@ -1579,6 +1590,7 @@ class CrossrefCitationCountExtractionStrategy(AttributeExtractionStrategy):
         Provides a specialized strategy for extracting publication citation counts
         from Crossref data entries.
     """
+
     def __init__(self, warning_manager: WarningManager):
         """
         Initializes the CrossrefCitationCountExtractionStrategy.
@@ -1623,3 +1635,109 @@ class CrossrefCitationCountExtractionStrategy(AttributeExtractionStrategy):
         """
         citation_count = crossref_json.get("is-referenced-by-count", 0)
         return (True, citation_count)
+
+
+@StrategyFactory.register_strategy(AttributeTypes.CROSSREF_LICENSE_URL)
+class CrossrefLicenseURLExtractionStrategy(AttributeExtractionStrategy):
+    def extract_attribute(self, entry_text: dict) -> tuple[bool, str]:
+        license_info = entry_text.get("license", [])
+        if license_info and isinstance(license_info, list):
+            url = license_info[0].get("URL")
+            if url:
+                return (True, url)
+        self.log_extraction_warning(
+            attribute_class_name=self.__class__.__name__,
+            warning_message="Attribute: 'Crossref_License_URL' was not found in the entry",
+            entry_id=entry_text,
+        )
+        return (False, None)
+
+
+@StrategyFactory.register_strategy(AttributeTypes.CROSSREF_PUBLISHED_PRINT)
+class CrossrefPublishedPrintExtractionStrategy(AttributeExtractionStrategy):
+    def extract_attribute(self, entry_text: dict) -> tuple[bool, str]:
+        published_print = entry_text.get("published-print", {}).get("date-parts", [[]])[
+            0
+        ]
+        if published_print:
+            date_str = "-".join(map(str, published_print))
+            return (True, date_str)
+        self.log_extraction_warning(
+            attribute_class_name=self.__class__.__name__,
+            warning_message="Attribute: 'Crossref_Published_Print' was not found in the entry",
+            entry_id=entry_text,
+        )
+        return (False, None)
+
+
+@StrategyFactory.register_strategy(AttributeTypes.CROSSREF_CREATED_DATE)
+class CrossrefCreatedDateExtractionStrategy(AttributeExtractionStrategy):
+    def extract_attribute(self, entry_text: dict) -> tuple[bool, str]:
+        created = entry_text.get("created", {}).get("date-time")
+        if created:
+            return (True, created)
+        self.log_extraction_warning(
+            attribute_class_name=self.__class__.__name__,
+            warning_message="Attribute: 'Crossref_Created_Date' was not found in the entry",
+            entry_id=entry_text,
+        )
+        return (False, None)
+
+
+@StrategyFactory.register_strategy(AttributeTypes.CROSSREF_PUBLISHED_ONLINE)
+class CrossrefPublishedOnlineExtractionStrategy(AttributeExtractionStrategy):
+    def extract_attribute(self, entry_text: dict) -> tuple[bool, str]:
+        published_online = entry_text.get("published-online", {}).get(
+            "date-parts", [[]]
+        )[0]
+        if published_online:
+            date_str = "-".join(map(str, published_online))
+            return (True, date_str)
+        self.log_extraction_warning(
+            attribute_class_name=self.__class__.__name__,
+            warning_message="Attribute: 'Crossref_Published_Online' was not found in the entry",
+            entry_id=entry_text,
+        )
+        return (False, None)
+
+
+@StrategyFactory.register_strategy(AttributeTypes.CROSSREF_JOURNAL)
+class CrossrefJournalExtractionStrategy(AttributeExtractionStrategy):
+    def extract_attribute(self, entry_text: dict) -> tuple[bool, str]:
+        journal = entry_text.get("container-title", [])
+        if journal and isinstance(journal, list):
+            return (True, journal[0])
+        self.log_extraction_warning(
+            attribute_class_name=self.__class__.__name__,
+            warning_message="Attribute: 'Crossref_Journal' was not found in the entry",
+            entry_id=entry_text,
+        )
+        return (False, None)
+
+
+@StrategyFactory.register_strategy(AttributeTypes.CROSSREF_URL)
+class CrossrefURLExtractionStrategy(AttributeExtractionStrategy):
+    def extract_attribute(self, entry_text: dict) -> tuple[bool, str]:
+        url = entry_text.get("URL")
+        if url:
+            return (True, url)
+        self.log_extraction_warning(
+            attribute_class_name=self.__class__.__name__,
+            warning_message="Attribute: 'Crossref_URL' was not found in the entry",
+            entry_id=entry_text,
+        )
+        return (False, None)
+
+
+@StrategyFactory.register_strategy(AttributeTypes.CROSSREF_DOI)
+class CrossrefDOIExtractionStrategy(AttributeExtractionStrategy):
+    def extract_attribute(self, entry_text: dict) -> tuple[bool, str]:
+        doi = entry_text.get("DOI")
+        if doi:
+            return (True, doi)
+        self.log_extraction_warning(
+            attribute_class_name=self.__class__.__name__,
+            warning_message="Attribute: 'Crossref_DOI' was not found in the entry",
+            entry_id=entry_text,
+        )
+        return (False, None)

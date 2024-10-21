@@ -2,420 +2,231 @@
     "indexed": {
         "date-parts": [
             [
-                2024,
-                9,
-                3
+                2023,
+                12,
+                14
             ]
         ],
-        "date-time": "2024-09-03T05:13:57Z",
-        "timestamp": 1725340437691
+        "date-time": "2023-12-14T06:09:47Z",
+        "timestamp": 1702534187240
     },
-    "reference-count": 44,
-    "publisher": "SAGE Publications",
-    "issue": "13",
-    "license": [
-        {
-            "start": {
-                "date-parts": [
-                    [
-                        2017,
-                        8,
-                        26
-                    ]
-                ],
-                "date-time": "2017-08-26T00:00:00Z",
-                "timestamp": 1503705600000
-            },
-            "content-version": "tdm",
-            "delay-in-days": 0,
-            "URL": "http://journals.sagepub.com/page/policies/text-and-data-mining-license"
-        }
-    ],
+    "reference-count": 15,
+    "publisher": "Lepidopterists' Society",
+    "issue": "2",
     "content-domain": {
-        "domain": [
-            "journals.sagepub.com"
-        ],
-        "crossmark-restriction": true
+        "domain": [],
+        "crossmark-restriction": false
     },
     "short-container-title": [
-        "Qual Health Res"
+        "The Journal of the Lepidopterists' Society"
     ],
     "published-print": {
         "date-parts": [
             [
-                2017,
-                11
+                2019,
+                12,
+                13
             ]
         ]
     },
-    "abstract": "<jats:p> This textual examination extends understandings of how complementary and alternative medicine (CAM) providers constitute preventive care in their discourse by identifying the frame of breaking boundaries referencing relational, structural, and philosophical orientations in their practice with their clients. Analysis of semistructured, in-depth interviews with CAM providers ( n = 17) reveals that the frame of breaking boundaries was comprised of three themes: finding one\u2019s own strength; I don\u2019t prescribe, so I\u2019m exploring; and ground yourself, and have an escape route. The themes describe preventive care by identifying how CAM providers negotiate their relational positionality in connecting with clients, structural positionality within the field of health care, and philosophical positionality within the ontological understandings that guide how health is defined and conceptualized. The study contributes toward enhancing diverse understandings of constituting preventive care in practice and suggests pragmatic implications for addressing biomedical provider communication with their patients seeking CAM care alongside conventional treatments. </jats:p>",
-    "DOI": "10.1177/1049732317723891",
+    "DOI": "10.18473/lepi.73i2.a3",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2017,
-                8,
-                26
+                2019,
+                12,
+                13
             ]
         ],
-        "date-time": "2017-08-26T09:58:47Z",
-        "timestamp": 1503741527000
+        "date-time": "2019-12-13T11:27:49Z",
+        "timestamp": 1576236469000
     },
-    "page": "2019-2029",
-    "update-policy": "http://dx.doi.org/10.1177/sage-journals-update-policy",
+    "page": "87",
     "source": "Crossref",
-    "is-referenced-by-count": 7,
+    "is-referenced-by-count": 6,
     "title": [
-        "Breaking Boundaries: Complementary and Alternative Medicine Provider Framing of Preventive Care"
+        "Pupation Sites and Conservation of Frosted Elfins (Lycaenidae) in maryland, USA"
     ],
-    "prefix": "10.1177",
-    "volume": "27",
+    "prefix": "10.18473",
+    "volume": "73",
     "author": [
         {
-            "given": "Vinita",
-            "family": "Agarwal",
+            "given": "Jennifer A.",
+            "family": "Selfridge",
             "sequence": "first",
+            "affiliation": []
+        },
+        {
+            "given": "Karsin",
+            "family": "Bachran",
+            "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Salisbury University, Salisbury, Maryland, USA"
+                    "name": "Salisbury University, Biological Sciences Department, 1101 Camden Avenue, Salisbury, MD 21801. USA. kbachran1@gulls.salisbury.edu."
+                }
+            ]
+        },
+        {
+            "given": "Dave",
+            "family": "McElveen",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Tall Timbers Research Station, 13093 Henry Beadel Drive, Tallahassee, FL 32312. USA. d.mcelveen@comcast.net"
+                }
+            ]
+        },
+        {
+            "given": "Robert K.",
+            "family": "Robbins",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Entomology, Smithsonian Institution, NHB Stop 105, PO Box 37012, Washington, DC 20013-7012. USA. ROBBINSR@si.edu"
+                }
+            ]
+        },
+        {
+            "given": "Tami",
+            "family": "Ransom",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Salisbury University, Environmental Studies Department, 1101 Camden Avenue, Salisbury, MD 21801. USA. TSRANSOM@salisbury.edu"
                 }
             ]
         }
     ],
-    "member": "179",
-    "published-online": {
-        "date-parts": [
-            [
-                2017,
-                8,
-                26
-            ]
-        ]
-    },
+    "member": "7734",
     "reference": [
         {
-            "key": "bibr2-1049732317723891",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1155/2016/2067095"
+            "key": "1",
+            "doi-asserted-by": "crossref",
+            "unstructured": "G. Albanese, P.D. Vickery, P.R. Sievert,  \"Biol. Conserv.\"  136, \"Habitat characteristics of adult frosted elfins (Callophrys irus) in sandplain communities of southeastern Massachusetts, USA.\" 53 (2007)",
+            "DOI": "10.1016/j.biocon.2006.10.055"
         },
         {
-            "key": "bibr3-1049732317723891",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.19082/2719"
+            "key": "2",
+            "unstructured": "et al.  \"Management plan and final environmental impact statement for the Albany Pine Bush Preserve.\"  , 147pp (2010)"
         },
         {
-            "key": "bibr4-1049732317723891",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/cncr.22820"
+            "key": "3",
+            "unstructured": "J.A. Frye  and S. Tangren  \"News Lepid. Soc.\"  55, \"Dual host plant use by Callophrys irus (Godart) (Lycaenidae) larvae at a single site on the Maryland Coastal Plain.\" 156 (2013)"
         },
         {
-            "key": "bibr5-1049732317723891",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1089/107555303765551642"
+            "key": "4",
+            "doi-asserted-by": "crossref",
+            "unstructured": "J.A. Frye  and R.K. Robbins  \"J. Insect Conserv.\"  19, \"Is the globally rare frosted elfin butterfly (Lycaenidae) two genetically distinct host plant races in Maryland? DNA evidence from cast larval skins provides an answer.\" 607 (2015)",
+            "DOI": "10.1007/s10841-015-9783-4"
         },
         {
-            "key": "bibr6-1049732317723891",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/0021-9681(84)90044-4"
+            "key": "5",
+            "unstructured": "M.T. Grigore  and E.J. Tramer  \"Nat. Areas J.\"  16, \"The short-term effect of fire on Lupinus perennis (L.).\" 41 (1996)"
         },
         {
-            "key": "bibr8-1049732317723891",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3122/jabfm.2007.06.070119"
+            "key": "6",
+            "unstructured": "J.R. Kwilosz  and R.L. Knutson  \"Natural Areas Journal.\"  19, \"Prescribed fire management of Karner blue butterfly habitat at Indiana Dunes National Lakeshore.\" 98 (1999)"
         },
         {
-            "key": "bibr9-1049732317723891",
-            "unstructured": "Bondurant S., Anastasi J. K., Berman B., Buhrmaster M., Burrow G. N., Chang M. Sox H. (2005). Complementary and alternative medicine in the United States. Washington, DC: National Academies Press."
+            "key": "7",
+            "unstructured": "et al.  \"List of Rare, Threatened and Endangered Animals of Maryland.\"  , 23pp (2016)"
         },
         {
-            "key": "bibr10-1049732317723891",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s00520-016-3200-8"
+            "key": "8",
+            "unstructured": "D. Mcelveen  and V.D. Craig  \"News Lepid. Soc.\"  59, \"A successful search for Callophrys irus pupae.\" 176 (2017)"
         },
         {
-            "key": "bibr11-1049732317723891",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0027-9684(15)31514-5"
+            "key": "9",
+            "unstructured": "et al.  \"An online encyclopedia of life [web application]. Version 4.6.\"  ,  (2018)"
         },
         {
-            "key": "bibr12-1049732317723891",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.amepre.2015.07.037"
+            "key": "10",
+            "unstructured": "D.F. Schweitzer, M.C. Minno, D.L. Wagner,  \"Rare, Declining and Poorly Known Butterflies and Moths (Lepidoptera) of Forests and Woodlands in the Eastern United States.\"  , 517pp (2011)"
         },
         {
-            "key": "bibr13-1049732317723891",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/BF02879908"
+            "key": "11",
+            "unstructured": "D.F. Schweitzer,  \"Ohio Lepid.\"  14, \"Comments regarding Erynnis persius and Incisalia irus.\" 21 (1992)"
         },
         {
-            "key": "bibr14-1049732317723891",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1682/JRRD.2010.12.0243"
+            "key": "12",
+            "doi-asserted-by": "crossref",
+            "unstructured": "A.B. Swengel  and S.R. Swengel  \"Biodiv. Conserv.\"  10, \"Effects of prairie and barrens management on butterfly faunal composition.\" 1757 (2001)",
+            "DOI": "10.1023/A:1012051510584"
         },
         {
-            "key": "bibr15-1049732317723891",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1468\u20132885.2007.00297.x"
+            "key": "13",
+            "unstructured": "M.D. Thom,  \"The Ecology and Conservation of Callophrys irus Godart: the Role of Fire and Microhabitat.\"  ,  (2013)"
         },
         {
-            "key": "bibr16-1049732317723891",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1207/S15327027HC1603_1"
+            "key": "14",
+            "unstructured": "U.S. Fish  and Wildlife Service  \"Species status assessment report for the frosted elfin (Callophrys irus), Version 1.2. March 2018.\"  ,  (2018)"
         },
         {
-            "key": "bibr17-1049732317723891",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1460-2466.1993.tb01304.x"
-        },
-        {
-            "key": "bibr18-1049732317723891",
-            "first-page": "30",
-            "volume": "21",
-            "author": "Faith J.",
-            "year": "2015",
-            "journal-title": "Alternative Therapies in Health and Medicine"
-        },
-        {
-            "key": "bibr19-1049732317723891",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.5888/pcd13.150501"
-        },
-        {
-            "key": "bibr20-1049732317723891",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1089/acm.2012.0533"
-        },
-        {
-            "key": "bibr21-1049732317723891",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1146/annurev.so.18.080192.002105"
-        },
-        {
-            "key": "bibr22-1049732317723891",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10410230903242234"
-        },
-        {
-            "key": "bibr23-1049732317723891",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10410236.2014.976605"
-        },
-        {
-            "key": "bibr24-1049732317723891",
-            "volume-title": "Frame analysis: An essay on the organization of experience",
-            "author": "Goffman E.",
-            "year": "1974"
-        },
-        {
-            "key": "bibr26-1049732317723891",
-            "first-page": "205",
-            "volume": "11",
-            "author": "Hallahan K.",
-            "year": "1999",
-            "journal-title": "Journal of Public Health Research"
-        },
-        {
-            "key": "bibr27-1049732317723891",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10410230802460234"
-        },
-        {
-            "key": "bibr28-1049732317723891",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10410236.2015.1047145"
-        },
-        {
-            "key": "bibr29-1049732317723891",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1558/cam.v12i1.25993"
-        },
-        {
-            "key": "bibr30-1049732317723891",
-            "first-page": "62",
-            "volume": "10",
-            "author": "Hollenberg D.",
-            "year": "2008",
-            "journal-title": "World Health and Population"
-        },
-        {
-            "key": "bibr31-1049732317723891",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s11764-0160530-y"
-        },
-        {
-            "key": "bibr32-1049732317723891",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0027-9684(15)30634-9"
-        },
-        {
-            "key": "bibr34-1049732317723891",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10810730500461067"
-        },
-        {
-            "key": "bibr35-1049732317723891",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/1049909108322292"
-        },
-        {
-            "key": "bibr36-1049732317723891",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3747/co.22.2129"
-        },
-        {
-            "key": "bibr37-1049732317723891",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.17925/OHR.2012.08.2.81"
-        },
-        {
-            "key": "bibr38-1049732317723891",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.7453/gahmj.2015.101"
-        },
-        {
-            "key": "bibr39-1049732317723891",
-            "first-page": "56",
-            "volume": "8",
-            "author": "Oh B.",
-            "year": "2010",
-            "journal-title": "Journal of Cancer Integrative Medicine"
-        },
-        {
-            "key": "bibr40-1049732317723891",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10810730701615198"
-        },
-        {
-            "key": "bibr41-1049732317723891",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/1049732315582009"
-        },
-        {
-            "key": "bibr42-1049732317723891",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1526-4637.2008.00477.x"
-        },
-        {
-            "key": "bibr43-1049732317723891",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1089/acm.2004.10.651"
-        },
-        {
-            "key": "bibr44-1049732317723891",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.0021-9916.2007.00326.x"
-        },
-        {
-            "key": "bibr45-1049732317723891",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1097/00001888-200304000-00005"
-        },
-        {
-            "key": "bibr46-1049732317723891",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.pec.2010.08.029"
-        },
-        {
-            "key": "bibr48-1049732317723891",
-            "first-page": "796",
-            "volume": "49",
-            "author": "Stewart M.",
-            "year": "2000",
-            "journal-title": "The Journal of Family Practice"
-        },
-        {
-            "key": "bibr49-1049732317723891",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1212/WNL.0000000000000250"
+            "key": "15",
+            "doi-asserted-by": "crossref",
+            "unstructured": "D.L. Wagner, M.W. Nelson, D.F. Schweitzer,  \"For. Ecol. Manage.\"  185, \"Shrub-land Lepidoptera of southern New England and southeastern New York: Ecology, conservation, and management.\" 95 (2003)",
+            "DOI": "10.1016/S0378-1127(03)00249-4"
         }
     ],
     "container-title": [
-        "Qualitative Health Research"
-    ],
-    "language": "en",
-    "link": [
-        {
-            "URL": "http://journals.sagepub.com/doi/pdf/10.1177/1049732317723891",
-            "content-type": "application/pdf",
-            "content-version": "vor",
-            "intended-application": "text-mining"
-        },
-        {
-            "URL": "http://journals.sagepub.com/doi/full-xml/10.1177/1049732317723891",
-            "content-type": "application/xml",
-            "content-version": "vor",
-            "intended-application": "text-mining"
-        },
-        {
-            "URL": "http://journals.sagepub.com/doi/pdf/10.1177/1049732317723891",
-            "content-type": "unspecified",
-            "content-version": "vor",
-            "intended-application": "similarity-checking"
-        }
+        "The Journal of the Lepidopterists' Society"
     ],
     "deposited": {
         "date-parts": [
             [
-                2021,
-                1,
-                14
+                2019,
+                12,
+                13
             ]
         ],
-        "date-time": "2021-01-14T23:40:45Z",
-        "timestamp": 1610667645000
+        "date-time": "2019-12-13T11:27:59Z",
+        "timestamp": 1576236479000
     },
-    "score": 16.064001,
+    "score": 14.750754,
     "resource": {
         "primary": {
-            "URL": "http://journals.sagepub.com/doi/10.1177/1049732317723891"
+            "URL": "https://bioone.org/journals/the-journal-of-the-lepidopterists-society/volume-73/issue-2/lepi.73i2.a3/Pupation-Sites-and-Conservation-of-Frosted-Elfins-Lycaenidae-in-maryland/10.18473/lepi.73i2.a3.full"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2017,
-                8,
-                26
+                2019,
+                12,
+                13
             ]
         ]
     },
-    "references-count": 44,
+    "references-count": 15,
     "journal-issue": {
-        "issue": "13",
-        "published-print": {
+        "issue": "2",
+        "published-online": {
             "date-parts": [
                 [
-                    2017,
-                    11
+                    2019,
+                    12,
+                    1
                 ]
             ]
         }
     },
-    "alternative-id": [
-        "10.1177/1049732317723891"
-    ],
-    "URL": "http://dx.doi.org/10.1177/1049732317723891",
+    "URL": "http://dx.doi.org/10.18473/lepi.73i2.a3",
     "ISSN": [
-        "1049-7323",
-        "1552-7557"
+        "0024-0966"
     ],
     "issn-type": [
         {
-            "value": "1049-7323",
+            "value": "0024-0966",
             "type": "print"
-        },
-        {
-            "value": "1552-7557",
-            "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2017,
-                8,
-                26
+                2019,
+                12,
+                13
             ]
         ]
     }

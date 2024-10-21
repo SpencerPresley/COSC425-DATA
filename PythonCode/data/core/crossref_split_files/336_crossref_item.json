@@ -2,536 +2,326 @@
     "indexed": {
         "date-parts": [
             [
-                2024,
-                8,
-                14
+                2023,
+                1,
+                9
             ]
         ],
-        "date-time": "2024-08-14T00:51:09Z",
-        "timestamp": 1723596669411
+        "date-time": "2023-01-09T06:10:00Z",
+        "timestamp": 1673244600701
     },
-    "reference-count": 74,
-    "publisher": "Wiley",
-    "issue": "2",
-    "license": [
+    "reference-count": 43,
+    "publisher": "IGI Global",
+    "isbn-type": [
         {
-            "start": {
-                "date-parts": [
-                    [
-                        2022,
-                        10,
-                        9
-                    ]
-                ],
-                "date-time": "2022-10-09T00:00:00Z",
-                "timestamp": 1665273600000
-            },
-            "content-version": "vor",
-            "delay-in-days": 0,
-            "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+            "value": "9781799838203",
+            "type": "print"
+        },
+        {
+            "value": "9781799838210",
+            "type": "electronic"
         }
     ],
     "content-domain": {
-        "domain": [
-            "onlinelibrary.wiley.com"
-        ],
-        "crossmark-restriction": true
+        "domain": [],
+        "crossmark-restriction": false
     },
-    "short-container-title": [
-        "J Corp Accounting Finance"
-    ],
     "published-print": {
         "date-parts": [
             [
-                2023,
-                4
+                2022
             ]
         ]
     },
-    "abstract": "<jats:title>Abstract</jats:title><jats:p>We study the effect of stakeholder orientation on corporate tax avoidance. Using the staggered passage of constituency statutes across U.S. states between 1983 and 2006, we show that greater stakeholder orientation results in increased tax avoidance. We further find greater tax avoidance among firms with limited financial resources and that employees benefit from the change. Our results are consistent with stakeholder salience theory that resource\u2010constrained managers prioritize the claims of salient stakeholders, such as employees, at the expense of secondary stakeholders, such as the government.</jats:p>",
-    "DOI": "10.1002/jcaf.22594",
-    "type": "journal-article",
+    "abstract": "<jats:p>The professional development needs of teachers have changed dramatically over the last 25 years. When constructed to reflect best practices evidenced in the research literature, micro-credentials and other 21st century innovations provide accessible, meaningful, professional learning experiences for educators. This chapter discusses two cases that affected personal transformation and pedagogical change for in-service teachers by an institution of higher education (IHE). A preliminary analysis of these alternative experiences established that when teacher professional development is founded on the context-sensitive integration of social and cultural competencies, meaningful, empowering, and enduring learning can take place.</jats:p>",
+    "DOI": "10.4018/978-1-7998-3820-3.ch017",
+    "type": "book-chapter",
     "created": {
         "date-parts": [
             [
-                2022,
-                10,
-                9
+                2021,
+                9,
+                13
             ]
         ],
-        "date-time": "2022-10-09T17:32:56Z",
-        "timestamp": 1665336776000
+        "date-time": "2021-09-13T11:57:37Z",
+        "timestamp": 1631534257000
     },
-    "page": "37-56",
-    "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+    "page": "335-355",
     "source": "Crossref",
-    "is-referenced-by-count": 2,
+    "is-referenced-by-count": 0,
     "title": [
-        "The impact of stakeholder orientation on tax avoidance: Evidence from a natural experiment"
+        "Innovations in Teacher Professional Development"
     ],
-    "prefix": "10.1002",
-    "volume": "34",
+    "prefix": "10.4018",
     "author": [
         {
-            "given": "Gary",
-            "family": "Chen",
+            "given": "Althea J.",
+            "family": "Pennerman",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Driehaus College of Business DePaul University  Chicago Illinois USA"
+                    "name": "Salisbury University, USA"
                 }
             ]
         },
         {
-            "given": "Ani Manakyan",
-            "family": "Mathers",
+            "given": "M. Cathrene",
+            "family": "Connery",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Perdue School of Business Salisbury University  Salisbury Maryland USA"
-                }
-            ]
-        },
-        {
-            "given": "Bin",
-            "family": "Wang",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "College of Business Administration Marquette University  Milwaukee Wisconsin USA"
-                }
-            ]
-        },
-        {
-            "given": "Xiaohong (Sara)",
-            "family": "Wang",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "College of Business and Technology Northeastern Illinois University  Chicago Illinois USA"
+                    "name": "Salisbury University, USA"
                 }
             ]
         }
     ],
-    "member": "311",
-    "published-online": {
-        "date-parts": [
-            [
-                2022,
-                10,
-                9
-            ]
-        ]
-    },
+    "member": "2432",
     "reference": [
         {
-            "key": "e_1_2_10_2_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/256973"
+            "key": "978-1-7998-3820-3.ch017.-1",
+            "unstructured": "Aspen Institute. (2019). From a nation at risk to a nation at hope: Recommendations from the national commission on social, emotional, & academic development. Author. http://nationathope.org/wp-content/uploads/2018_aspen_final-report_full_webversion.pdf"
         },
         {
-            "key": "e_1_2_10_3_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jacceco.2011.04.001"
+            "issue": "3",
+            "key": "978-1-7998-3820-3.ch017.-2",
+            "first-page": "199",
+            "article-title": "Micro-credentialing and the individualized professional development approach to learning for teachers.",
+            "volume": "29",
+            "author": "D.Bartz",
+            "year": "2019",
+            "journal-title": "National Form Teacher Education Journal"
         },
         {
-            "key": "e_1_2_10_4_1",
-            "first-page": "1973",
-            "article-title": "The state of state antitakeover law",
-            "volume": "95",
-            "author": "Barzuza M.",
+            "key": "978-1-7998-3820-3.ch017.-3",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0031721716677260"
+        },
+        {
+            "key": "978-1-7998-3820-3.ch017.-4",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1016/B978-0-08-044894-7.00654-0"
+        },
+        {
+            "key": "978-1-7998-3820-3.ch017.-5",
+            "unstructured": "Buckle, J. (2020). Social-emotional learning (SEL): Everything you need to know. Collaborative for Academic, Social, and Emotional Learning (CASEL)."
+        },
+        {
+            "key": "978-1-7998-3820-3.ch017.-6",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/a0027180"
+        },
+        {
+            "key": "978-1-7998-3820-3.ch017.-7",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.19173/irrodl.v21i1.4529"
+        },
+        {
+            "key": "978-1-7998-3820-3.ch017.-8",
+            "unstructured": "Collaborative for Academic, Social, and Emotional Learning (CASEL). (2021). CASEL Framework. Author. https://casel.org/sel-framework/"
+        },
+        {
+            "key": "978-1-7998-3820-3.ch017.-9",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.36510/learnland.v9i1.745"
+        },
+        {
+            "key": "978-1-7998-3820-3.ch017.-10",
+            "unstructured": "Council of Chief State School Officers. (2013, April). Interstate Teacher Assessment and Support Consortium: InTASC Model Core Teaching Standards and Learning Progressions for Teachers 1.0: A Resource for Ongoing Teacher Development. Author. https://ccsso.org/sites/default/files/201712/2013_INTASC_Learning_Progressions_for_Teachers.pdf"
+        },
+        {
+            "key": "978-1-7998-3820-3.ch017.-11",
+            "doi-asserted-by": "crossref",
+            "author": "L.Darling-Hammond",
+            "year": "2017",
+            "journal-title": "Effective teacher professional development",
+            "DOI": "10.54300/122.311"
+        },
+        {
+            "key": "978-1-7998-3820-3.ch017.-12",
+            "first-page": "150",
+            "article-title": "Integrating social-emotional learning and culturally responsive teaching in teacher education preparation programs: The Massachusetts experience so far.",
+            "author": "D.Donahue-Keegan",
+            "year": "2019",
+            "journal-title": "Teacher Education Quarterly"
+        },
+        {
+            "key": "978-1-7998-3820-3.ch017.-13",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1111/j.1467-8624.2010.01564.x"
+        },
+        {
+            "issue": "1",
+            "key": "978-1-7998-3820-3.ch017.-14",
+            "first-page": "36",
+            "article-title": "Social emotional learning in elementary school: Preparation for success.",
+            "volume": "83",
+            "author": "L.Dusenbury",
+            "year": "2017",
+            "journal-title": "Education Digest"
+        },
+        {
+            "key": "978-1-7998-3820-3.ch017.-15",
+            "first-page": "703",
+            "article-title": "Exploring the use of micro-credentialing and digital badges in learning environments to encourage motivation to learn and achieve",
+            "author": "R.Elliott",
+            "year": "2014",
+            "journal-title": "Rhetoric and reality: Critical perspectives on educational technology"
+        },
+        {
+            "key": "978-1-7998-3820-3.ch017.-16",
+            "unstructured": "Fong, J., Janzow, P., & Peck, K. (2016). Demographic shifts in educational demand and the rise of alternative credentials. University Professional and Continuing Education Association & Pearson."
+        },
+        {
+            "key": "978-1-7998-3820-3.ch017.-17",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1007/s10648-014-9253-7"
+        },
+        {
+            "key": "978-1-7998-3820-3.ch017.-18",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0022487102053002003"
+        },
+        {
+            "key": "978-1-7998-3820-3.ch017.-19",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Hamilton, L., & Doss, C. J. (2020). Supports for social and emotional learning in American schools and classrooms: Findings from the American Teacher Panel. The Rand Corporation. https://www.rand.org/pubs/research_reports/RRA397-1.html",
+            "DOI": "10.7249/RRA397-1"
+        },
+        {
+            "key": "978-1-7998-3820-3.ch017.-20",
+            "author": "R.Howe",
+            "year": "2019",
+            "journal-title": "Becoming a multicultural educator: Developing awareness, gaining skills, and taking action"
+        },
+        {
+            "key": "978-1-7998-3820-3.ch017.-21",
+            "unstructured": "Huang, Y., et al. (2019). Pathways to professions microcredential in social emotional learning (SEL). Coppin State University. Funding provided by the U.S. Department of Education under the Teacher Quality Partnership Grant Program (#U336S160014)."
+        },
+        {
+            "key": "978-1-7998-3820-3.ch017.-22",
+            "author": "G.Ladson-Billings",
             "year": "2009",
-            "journal-title": "Virginia Law Review"
+            "journal-title": "The dreamkeepers: Successful teachers of African-American children"
         },
         {
-            "key": "e_1_2_10_5_1",
-            "unstructured": "Bergin T.(2012).Special Report: How Starbucks avoids taxes. Reuters (October 15). Available at:http://www.reuters.com/article/us\u2010britain\u2010starbucks\u2010tax\u2010idUSBRE89E0EX20121015"
+            "key": "978-1-7998-3820-3.ch017.-23",
+            "first-page": "295",
+            "article-title": "Creating developmental moments: Teaching and learning as creative activities",
+            "author": "C.Lobman",
+            "year": "2018",
+            "journal-title": "Vygotsky and creativity: A cultural-historical approach to play, meaning making, and the arts"
         },
         {
-            "key": "e_1_2_10_6_1",
+            "key": "978-1-7998-3820-3.ch017.-24",
+            "unstructured": "Losen, D., Hodson, C., Keith, M., Morrison, K., & Belway, S. (2015). Are we closing the school Discipline gap? UCLA/The Center for Civil Rights Remedies. https://civilrightsproject.ucla.edu/resources/projects/center-for-civil-rights-remedies/school-to-prison-folder/federal-reports/are-we-closing-the-school-discipline-gap/AreWeClosingTheSchoolDisciplineGap_FINAL221.pdf"
+        },
+        {
+            "key": "978-1-7998-3820-3.ch017.-25",
+            "unstructured": "Maryland Advisory Committee on United States Commission on Civil Rights. (2019). Disparities in school discipline in Maryland. United States Commission on Civil Rights. https://www.usccr.gov/pubs/2020/01-14-MD-SAC-School-Discipline-Report.pdf"
+        },
+        {
+            "key": "978-1-7998-3820-3.ch017.-26",
+            "unstructured": "Maryland State Department of Education. (2017). Maryland public schools suspensions by school and major offense category in-school and out-of-school suspensions and expulsions 2016-2017 (MSDE-DCRAA 10/17). http://marylandpublicschools.org/about/Documents/DCAA/SSP/20162017Student/2017SuspensionsbySchoolCOMBINED.pdf"
+        },
+        {
+            "key": "978-1-7998-3820-3.ch017.-27",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1540-6261.2010.01556.x"
+            "DOI": "10.1037/0003-066X.58.6-7.449"
         },
         {
-            "key": "e_1_2_10_7_1",
+            "key": "978-1-7998-3820-3.ch017.-28",
+            "unstructured": "National Center for Educational Statistics. (2021a). District directory information. Author. https://nces.ed.gov/ccd/districtsearch/district_detail.asp?ID2=2400690"
+        },
+        {
+            "key": "978-1-7998-3820-3.ch017.-29",
+            "unstructured": "National Center for Educational Statistics. (2021b). Education demographic and geographic estimates. Author. https://nces.ed.gov/Programs/Edge/ACSDashboard/2400690"
+        },
+        {
+            "key": "978-1-7998-3820-3.ch017.-30",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jcorpfin.2006.02.001"
+            "DOI": "10.1207/s15430421tip4204_8"
         },
         {
-            "key": "e_1_2_10_8_1",
+            "issue": "1",
+            "key": "978-1-7998-3820-3.ch017.-31",
+            "first-page": "199",
+            "article-title": "Microcredentialing of English learner teaching skills: An exploratory study of digital badges as an assessment tool.",
+            "volume": "20",
+            "author": "K.Purmensky",
+            "year": "2020",
+            "journal-title": "Contemporary Issues in Technology & Teacher Education"
+        },
+        {
+            "key": "978-1-7998-3820-3.ch017.-32",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2307/257850"
+            "DOI": "10.3102/0002831214523821"
         },
         {
-            "key": "e_1_2_10_9_1",
+            "key": "978-1-7998-3820-3.ch017.-33",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jfineco.2016.09.009"
+            "DOI": "10.1007/s10935-008-0153-9"
         },
         {
-            "key": "e_1_2_10_10_1",
+            "key": "978-1-7998-3820-3.ch017.-34",
+            "unstructured": "San Francisco Unified School District. (2018). Restorative practices whole-school implementation guide. Author. https://www.sfusd.edu/services"
+        },
+        {
+            "key": "978-1-7998-3820-3.ch017.-35",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jfineco.2009.02.003"
+            "DOI": "10.1353/foc.2017.0007"
         },
         {
-            "key": "e_1_2_10_11_1",
-            "unstructured": "CSRWire. (2015).Reputation Institute announces top global companies for public perception of corporate social responsibility. Available at:https://www.csrwire.com/press_releases/38286\u2010Reputation\u2010Institute\u2010Announces\u2010Top\u2010Global\u2010Companies\u2010for\u2010Public\u2010Perception\u2010of\u2010Corporate\u2010Social\u2010Responsibility"
-        },
-        {
-            "key": "e_1_2_10_12_1",
-            "unstructured": "DailyCSR. (2015).Microsoft's CSR reports for 2015 is among the first ones to incorporate \u2018UN Guiding Principles Reporting Framework\u2019. Available at:https://www.dailycsr.com/Microsoft\u2010s\u2010CSR\u2010Reports\u2010For\u20102015\u2010Is\u2010Among\u2010The\u2010First\u2010Ones\u2010To\u2010Incorporate\u2010UN\u2010Guiding\u2010Principles\u2010Reporting\u2010Framework_a410.html"
-        },
-        {
-            "key": "e_1_2_10_13_1",
+            "key": "978-1-7998-3820-3.ch017.-36",
             "doi-asserted-by": "publisher",
-            "DOI": "10.2308/accr-51224"
+            "DOI": "10.1037/spq0000099"
         },
         {
-            "key": "e_1_2_10_14_1",
-            "unstructured": "Day M.(2015).How Microsoft moves profits offshore to cut its tax bill. The Seattle Times (December 12). Available at:https://www.seattletimes.com/business/microsoft/how\u2010microsoft\u2010parks\u2010profits\u2010offshore\u2010to\u2010pare\u2010its\u2010tax\u2010bill/"
+            "key": "978-1-7998-3820-3.ch017.-37",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Schwartz, H., Hamilton, L., Faxon-Mills, S., Gomez, C., Huguet, A., Jaycox, L., Leschitz, J., Tuma, A., Tosh, K., Whitaker, A., & Warbel, S. (2020). Early lessons from schools and out-of-school time programs implementing social and emotional learning. Rand Cooperation. https://www.wallacefoundation.org/knowledge-center/Documents/Early-Lessons-Schools-OST-Programs-SEL.pdf",
+            "DOI": "10.7249/RRA379-1"
         },
         {
-            "key": "e_1_2_10_15_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jfineco.2013.04.014"
+            "key": "978-1-7998-3820-3.ch017.-38",
+            "unstructured": "Steinberg, S. (2020, May 7). Parents can help children use the stress of coronavirus shutdowns as an opportunity for growth, experts say. New York Times. https://www.nytimes.com/2020/05/07/well/family/coronavirus-children-stress-interventionparents.html?searchResultPosition=2"
         },
         {
-            "key": "e_1_2_10_16_1",
-            "first-page": "7",
-            "article-title": "A better way to tax U.S. businesses",
-            "volume": "90",
-            "author": "Desai M. A.",
-            "year": "2012",
-            "journal-title": "Harvard Business Review"
+            "issue": "1",
+            "key": "978-1-7998-3820-3.ch017.-39",
+            "first-page": "28",
+            "article-title": "Transforming professional development to professional learning.",
+            "volume": "43",
+            "author": "C.Stewart",
+            "year": "2014",
+            "journal-title": "Journal of Adult Education"
         },
         {
-            "key": "e_1_2_10_17_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jfineco.2005.02.002"
+            "key": "978-1-7998-3820-3.ch017.-40",
+            "author": "E.Stringer",
+            "year": "2014",
+            "journal-title": "Action research"
         },
         {
-            "key": "e_1_2_10_18_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/978-3-540-77276-7_3"
+            "key": "978-1-7998-3820-3.ch017.-41",
+            "unstructured": "TeachingWorks. (2013). Core ideas. University of Michigan. https://www.teachingworks.org/work-of-teaching/core-ideas"
         },
         {
-            "key": "e_1_2_10_19_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2308/accr.2008.83.1.61"
+            "key": "978-1-7998-3820-3.ch017.-42",
+            "unstructured": "US Census. (2019). Quick Facts: City, State. Author. https://www.census.gov/quickfacts/fact/table/salisburycitymaryland/PST045219"
         },
         {
-            "key": "e_1_2_10_20_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2308/accr.2010.85.4.1163"
-        },
-        {
-            "key": "e_1_2_10_21_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jfineco.2013.01.004"
-        },
-        {
-            "key": "e_1_2_10_22_1",
-            "unstructured": "Economist. (2005).The importance of corporate responsibility."
-        },
-        {
-            "key": "e_1_2_10_23_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2308/accr-51282"
-        },
-        {
-            "key": "e_1_2_10_24_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1017/S0022109000002519"
-        },
-        {
-            "key": "e_1_2_10_25_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jfineco.2017.04.010"
-        },
-        {
-            "key": "e_1_2_10_26_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jfineco.2015.12.003"
-        },
-        {
-            "key": "e_1_2_10_27_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1287/mnsc.2015.2229"
-        },
-        {
-            "key": "e_1_2_10_28_1",
-            "unstructured": "Forbes. (2013).The Companies with the best CSR reputations. Available at:https://www.forbes.com/sites/jacquelynsmith/2013/10/02/the\u2010companies\u2010with\u2010the\u2010best\u2010csr\u2010reputations\u20102/#25757c3934ff"
-        },
-        {
-            "key": "e_1_2_10_29_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/0045-3609.00066"
-        },
-        {
-            "key": "e_1_2_10_30_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2308/accr.2009.84.2.467"
-        },
-        {
-            "key": "e_1_2_10_31_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1057/palgrave.crr.1540226"
-        },
-        {
-            "key": "e_1_2_10_32_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1017/S0022109020000605"
-        },
-        {
-            "key": "e_1_2_10_33_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1023/B:BUSI.0000039399.90587.34"
-        },
-        {
-            "key": "e_1_2_10_34_1",
-            "first-page": "73",
-            "article-title": "Institutional investing when shareholders are not supreme",
-            "volume": "5",
-            "author": "Geczy C.",
-            "year": "2015",
-            "journal-title": "Harvard Business Law Review"
-        },
-        {
-            "key": "e_1_2_10_35_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.5465/amr.2005.18378878"
-        },
-        {
-            "key": "e_1_2_10_36_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/smj.750"
-        },
-        {
-            "key": "e_1_2_10_37_1",
-            "unstructured": "Government Accountability Office (GAO). (2016).Report to the Ranking Member Committee on the Budget US Senate. GAO\u201016\u2010363. Available at:http://www.gao.gov/assets/680/675844.pdf"
-        },
-        {
-            "key": "e_1_2_10_38_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2308/accr-50678"
-        },
-        {
-            "key": "e_1_2_10_39_1",
-            "unstructured": "Gravelle J.(2015).Tax Havens: International tax avoidance and evasion.Congressional Research Service.https://sgp.fas.org/crs/misc/R40623.pdf"
-        },
-        {
-            "key": "e_1_2_10_40_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2308/accr.2005.80.1.137"
-        },
-        {
-            "key": "e_1_2_10_41_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jacceco.2010.09.002"
-        },
-        {
-            "key": "e_1_2_10_42_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jfineco.2014.03.004"
-        },
-        {
-            "key": "e_1_2_10_43_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2308/accr-50544"
-        },
-        {
-            "key": "e_1_2_10_44_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2308/accr-10209"
-        },
-        {
-            "key": "e_1_2_10_45_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jfineco.2010.07.007"
-        },
-        {
-            "key": "e_1_2_10_46_1",
-            "first-page": "611",
-            "article-title": "Tax aggressiveness, corporate social responsibility, and ownership structure",
-            "volume": "14",
-            "author": "Landry S.",
-            "year": "2013",
-            "journal-title": "Journal of Accounting, Ethics and Public Policy"
-        },
-        {
-            "key": "e_1_2_10_47_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jaccpubpol.2011.10.006"
-        },
-        {
-            "key": "e_1_2_10_48_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1108/09513571311285621"
-        },
-        {
-            "key": "e_1_2_10_49_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s10551-014-2052-8"
-        },
-        {
-            "key": "e_1_2_10_50_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0148558X16654834"
-        },
-        {
-            "key": "e_1_2_10_51_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jcorpfin.2019.01.003"
-        },
-        {
-            "key": "e_1_2_10_52_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/256976"
-        },
-        {
-            "key": "e_1_2_10_53_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2308/accr.2010.85.5.1693"
-        },
-        {
-            "key": "e_1_2_10_54_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/joar.12003"
-        },
-        {
-            "key": "e_1_2_10_55_1",
-            "unstructured": "Lys T. Naughton J. &Wang C.(2013).Pinpointing the value in CSR: The unexpected link between CSR spending and financial performance. Kellogg Insight (March 4). Available at:http://insight.kellogg.northwestern.edu/article/pinpointing_the_value_in_csr"
-        },
-        {
-            "key": "e_1_2_10_56_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jacceco.2015.03.001"
-        },
-        {
-            "key": "e_1_2_10_57_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1540-6261.2011.01688.x"
-        },
-        {
-            "key": "e_1_2_10_58_1",
-            "first-page": "175",
-            "article-title": "The relation between financial and tax reporting measures of income",
-            "volume": "55",
-            "author": "Manzon G.",
-            "year": "2002",
-            "journal-title": "Tax Law Review"
-        },
-        {
-            "key": "e_1_2_10_59_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2308/JATA\u201019\u2010021"
-        },
-        {
-            "key": "e_1_2_10_60_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2308/accr-50718"
-        },
-        {
-            "key": "e_1_2_10_61_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/259247"
-        },
-        {
-            "key": "e_1_2_10_62_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/2491481"
-        },
-        {
-            "key": "e_1_2_10_63_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1911-3846.2000.tb00912.x"
-        },
-        {
-            "key": "e_1_2_10_64_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/0304-405X(84)90023-0"
-        },
-        {
-            "key": "e_1_2_10_65_1",
-            "first-page": "14",
-            "article-title": "Beyond shareholders: Interpreting corporate constituency statutes",
-            "volume": "61",
-            "author": "Orts E. W.",
-            "year": "1992",
-            "journal-title": "George Washington Law Review"
-        },
-        {
-            "key": "e_1_2_10_66_1",
-            "first-page": "78",
-            "article-title": "Strategy and society: The link between competitive advantage and corporate social responsibility",
-            "volume": "84",
-            "author": "Porter M. E.",
-            "year": "2006",
-            "journal-title": "Harvard Business Review"
-        },
-        {
-            "key": "e_1_2_10_67_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/B978-0-44-453594-8.00007-0"
-        },
-        {
-            "key": "e_1_2_10_68_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2308/accr.2010.85.3.1035"
-        },
-        {
-            "key": "e_1_2_10_69_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.accfor.2010.05.002"
-        },
-        {
-            "key": "e_1_2_10_70_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/revfin/hhm007"
-        },
-        {
-            "key": "e_1_2_10_71_1",
-            "unstructured": "Wall Street Journal. (2007).Wal\u2010Mart cuts taxes by paying rent to itself. Available at:http://www.wsj.com/articles/SB117027500505994065"
-        },
-        {
-            "key": "e_1_2_10_72_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2308/atax-51022"
-        },
-        {
-            "key": "e_1_2_10_73_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/aler/4.1.88"
-        },
-        {
-            "key": "e_1_2_10_74_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2308/accr.2009.84.3.969"
-        },
-        {
-            "key": "e_1_2_10_75_1",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.jbankfin.2009.10.006"
+            "key": "978-1-7998-3820-3.ch017.-43",
+            "unstructured": "Yoder, N. (2014). Teaching the whole child instructional practices that support social-emotional learning in three teacher evaluation frameworks. American Institutes for Research Center on Great Teachers and Leaders. https://gtlcenter.org/sites/default/files/TeachingtheWholeChild.pdf"
         }
     ],
     "container-title": [
-        "Journal of Corporate Accounting &amp; Finance"
+        "Advances in Higher Education and Professional Development",
+        "Handbook of Research on Credential Innovations for Inclusive Pathways to Professions"
     ],
-    "language": "en",
     "link": [
         {
-            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/jcaf.22594",
-            "content-type": "application/pdf",
-            "content-version": "vor",
-            "intended-application": "text-mining"
-        },
-        {
-            "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/jcaf.22594",
-            "content-type": "application/xml",
-            "content-version": "vor",
-            "intended-application": "text-mining"
-        },
-        {
-            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/jcaf.22594",
+            "URL": "https://www.igi-global.com/viewtitle.aspx?TitleId=288584",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -541,100 +331,54 @@
         "date-parts": [
             [
                 2023,
-                8,
-                22
+                1,
+                9
             ]
         ],
-        "date-time": "2023-08-22T10:46:59Z",
-        "timestamp": 1692701219000
+        "date-time": "2023-01-09T02:23:13Z",
+        "timestamp": 1673230993000
     },
-    "score": 13.766562,
+    "score": 16.125809,
     "resource": {
         "primary": {
-            "URL": "https://onlinelibrary.wiley.com/doi/10.1002/jcaf.22594"
+            "URL": "http://services.igi-global.com/resolvedoi/resolve.aspx?doi=10.4018/978-1-7998-3820-3.ch017"
         }
     },
+    "subtitle": [
+        "Integrating Social and Cultural Competencies for Inclusive Excellence"
+    ],
     "issued": {
         "date-parts": [
             [
-                2022,
-                10,
-                9
+                2022
             ]
         ]
     },
-    "references-count": 74,
-    "journal-issue": {
-        "issue": "2",
-        "published-print": {
-            "date-parts": [
-                [
-                    2023,
-                    4
-                ]
-            ]
-        }
-    },
-    "alternative-id": [
-        "10.1002/jcaf.22594"
+    "ISBN": [
+        "9781799838203",
+        "9781799838210"
     ],
-    "URL": "http://dx.doi.org/10.1002/jcaf.22594",
-    "archive": [
-        "Portico"
-    ],
+    "references-count": 43,
+    "URL": "http://dx.doi.org/10.4018/978-1-7998-3820-3.ch017",
     "ISSN": [
-        "1044-8136",
-        "1097-0053"
+        "2327-6983",
+        "2327-6991"
     ],
     "issn-type": [
         {
-            "value": "1044-8136",
+            "value": "2327-6983",
             "type": "print"
         },
         {
-            "value": "1097-0053",
+            "value": "2327-6991",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2022,
-                10,
-                9
+                2022
             ]
         ]
-    },
-    "assertion": [
-        {
-            "value": "2022-08-14",
-            "order": 0,
-            "name": "received",
-            "label": "Received",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2022-09-07",
-            "order": 1,
-            "name": "accepted",
-            "label": "Accepted",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2022-10-09",
-            "order": 2,
-            "name": "published",
-            "label": "Published",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        }
-    ]
+    }
 }

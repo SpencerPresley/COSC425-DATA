@@ -3,383 +3,368 @@
         "date-parts": [
             [
                 2024,
-                6,
-                28
+                3,
+                1
             ]
         ],
-        "date-time": "2024-06-28T06:38:46Z",
-        "timestamp": 1719556726950
+        "date-time": "2024-03-01T00:35:10Z",
+        "timestamp": 1709253310913
     },
-    "reference-count": 54,
-    "publisher": "American Society of Civil Engineers (ASCE)",
-    "issue": "3",
+    "reference-count": 49,
+    "publisher": "SAGE Publications",
+    "license": [
+        {
+            "start": {
+                "date-parts": [
+                    [
+                        2024,
+                        2,
+                        29
+                    ]
+                ],
+                "date-time": "2024-02-29T00:00:00Z",
+                "timestamp": 1709164800000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://journals.sagepub.com/page/policies/text-and-data-mining-license"
+        }
+    ],
     "content-domain": {
         "domain": [
-            "ascelibrary.org"
+            "journals.sagepub.com"
         ],
         "crossmark-restriction": true
     },
     "short-container-title": [
-        "J. Manage. Eng."
+        "Violence Against Women"
     ],
-    "published-print": {
-        "date-parts": [
-            [
-                2021,
-                5
-            ]
-        ]
-    },
-    "DOI": "10.1061/(asce)me.1943-5479.0000895",
+    "abstract": "<jats:p> Rape experience is common and victim empathy may help address it (e.g., prevention, victim support). We examined rape victim empathy based on type of rape experience (none, incapacitated, forcible, combined). Undergraduate women ( n\u2009=\u2009658) completed the Rape Victim Empathy-During Subscale and Sexual Experiences Survey-Short Form Victimization. Rape experience was associated with greater empathy, especially for those with any forcible experience. Perhaps due to weaker memory of their own rape event, incapacitated victims may be relatively less able than forcible victims to understand another victim's perspective during a rape. Researchers should consider examining incapacitated and forcible rape as distinct experiences. </jats:p>",
+    "DOI": "10.1177/10778012241234897",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2021,
+                2024,
                 2,
-                4
+                29
             ]
         ],
-        "date-time": "2021-02-04T03:50:49Z",
-        "timestamp": 1612410649000
+        "date-time": "2024-02-29T08:06:37Z",
+        "timestamp": 1709193997000
     },
-    "update-policy": "http://dx.doi.org/10.1061/do.news.20190416.0001",
+    "update-policy": "http://dx.doi.org/10.1177/sage-journals-update-policy",
     "source": "Crossref",
-    "is-referenced-by-count": 6,
+    "is-referenced-by-count": 0,
     "title": [
-        "Collaborative Partnering for Airport Construction Projects: State-of-Practice"
+        "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy"
     ],
-    "prefix": "10.1061",
-    "volume": "37",
+    "prefix": "10.1177",
     "author": [
         {
-            "given": "Sinem",
-            "family": "Mollaoglu",
+            "ORCID": "http://orcid.org/0000-0003-1843-0482",
+            "authenticated-orcid": false,
+            "given": "Suzanne L.",
+            "family": "Osman",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Professor, School of Planning, Design and Construction, Construction Management Program, Michigan State Univ., 552 W. Circle Dr., East Lansing, MI 48824."
+                    "name": "Department of Psychology, Salisbury University, Salisbury, MD, USA"
                 }
             ]
         },
         {
-            "ORCID": "http://orcid.org/0000-0001-9624-9078",
-            "authenticated-orcid": true,
-            "given": "Anthony E.",
-            "family": "Sparkling",
+            "given": "Tieryn R.",
+            "family": "Gingerich",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "Assistant Professor, School of Construction Management Technology, Purdue Univ., 401 N. Grant St., West Lafayette, IN 47907 (corresponding author). ORCID: ."
-                }
-            ]
-        },
-        {
-            "given": "Angelo",
-            "family": "Garcia",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Postdoctoral Researcher, School of Planning, Design and Construction, Construction Management Program, Michigan State Univ., 552 W. Circle Dr., East Lansing, MI 48824."
-                }
-            ]
-        },
-        {
-            "given": "Brian D.",
-            "family": "Polkinghorn",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Professor, Bosserman Center for Conflict Resolution, Salisbury Univ., 1100 Camden Ave., Salisbury, MD 21801."
+                    "name": "Department of Psychology, Salisbury University, Salisbury, MD, USA"
                 }
             ]
         }
     ],
-    "member": "30",
+    "member": "179",
+    "published-online": {
+        "date-parts": [
+            [
+                2024,
+                2,
+                29
+            ]
+        ]
+    },
     "reference": [
         {
-            "key": "e_1_3_4_2_1",
+            "key": "bibr1-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0969-7012(00)00012-5"
+            "DOI": "10.1111/j.1471-6402.2004.00149.x"
         },
         {
-            "key": "e_1_3_4_3_1",
+            "key": "bibr2-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1061/(ASCE)LA.1943-4170.0000380"
+            "DOI": "10.1891/0886-6708.2.4.255"
         },
         {
-            "key": "e_1_3_4_4_1",
+            "key": "bibr3-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1061/(ASCE)LA.1943-4170.0000327"
+            "DOI": "10.7551/mitpress/9780262012973.003.0002"
         },
         {
-            "key": "e_1_3_4_5_1",
+            "key": "bibr4-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1061/(ASCE)ME.1943-5479.0000661"
+            "DOI": "10.1177/1077801209335491"
         },
         {
-            "key": "e_1_3_4_6_1",
-            "first-page": "207",
-            "volume-title": "Partnering in the construction industry\u2014Acode of practice for strategic collaborative working",
-            "author": "Bennett J.",
-            "year": "2006"
+            "key": "bibr5-10778012241234897",
+            "volume-title": "Report on the AAU campus climate survey on sexual assault and sexual misconduct",
+            "author": "Cantor D.",
+            "year": "2015"
         },
         {
-            "key": "e_1_3_4_7_1",
+            "key": "bibr6-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1061/(ASCE)CO.1943-7862.0001704"
+            "DOI": "10.1016/j.jadohealth.2015.02.018"
         },
         {
-            "key": "e_1_3_4_8_1",
+            "key": "bibr7-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/014461900370852"
+            "DOI": "10.1177/0022022116673910"
         },
         {
-            "key": "e_1_3_4_9_1",
-            "volume-title": "The cost of interpersonal conflict in construction",
-            "author": "Brockman J. L.",
-            "year": "2012"
-        },
-        {
-            "key": "e_1_3_4_10_1",
+            "key": "bibr8-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1061/(ASCE)CO.1943-7862.0000805"
+            "DOI": "10.3389/fpsyg.2013.00004"
         },
         {
-            "key": "e_1_3_4_11_1",
+            "key": "bibr9-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/8756972818820213"
+            "DOI": "10.1177/0886260512455515"
         },
         {
-            "key": "e_1_3_4_12_1",
+            "key": "bibr10-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.ijproman.2016.08.006"
+            "DOI": "10.1177/1754073914558466"
         },
         {
-            "key": "e_1_3_4_13_1",
+            "key": "bibr11-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/1534484310384957"
+            "DOI": "10.1037/0022-3514.44.1.113"
         },
         {
-            "key": "e_1_3_4_14_1",
-            "volume-title": "Partnering: Meeting the challenges of the future, partnering task force interim report",
-            "author": "CII (Construction Industry Institute)",
-            "year": "1989"
-        },
-        {
-            "key": "e_1_3_4_15_1",
-            "unstructured": "CII (Construction Industry Institute). 1996. \u201cCII best practices\u2014Partnering.\u201d Accessed January 2 2016. https://www.construction-institute.org/Store/CII/Publication_Pages/bp.cfm."
-        },
-        {
-            "key": "e_1_3_4_16_1",
+            "key": "bibr12-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.4324/9780203774441"
+            "DOI": "10.1037/0022-3514.43.2.372"
         },
         {
-            "key": "e_1_3_4_17_1",
+            "issue": "10",
+            "key": "bibr13-10778012241234897",
+            "first-page": "210",
+            "volume": "51",
+            "author": "DePresca J.",
+            "year": "2003",
+            "journal-title": "Law and Order"
+        },
+        {
+            "key": "bibr14-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/01446190903286564"
+            "DOI": "10.1111/j.1559-1816.1998.tb01715.x"
         },
         {
-            "key": "e_1_3_4_18_1",
-            "unstructured": "Dyer S. 2014. \u201cThe ROI of partnering your project.\u201d Partnering Magazine June 1 2014."
-        },
-        {
-            "key": "e_1_3_4_19_1",
+            "key": "bibr15-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0018726700533006"
+            "DOI": "10.1017/S1352465804001481"
         },
         {
-            "key": "e_1_3_4_20_1",
+            "key": "bibr16-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1108/09699980810916979"
+            "DOI": "10.1177/088626001016011002"
         },
         {
-            "key": "e_1_3_4_21_1",
-            "unstructured": "FAA (Federal Aviation Administration). 2019. \u201cFAA runway safety group: Regions and regional offices.\u201d Accessed July 1 2019. https://www.faa.gov/airports/runway_safety/regions/."
-        },
-        {
-            "key": "e_1_3_4_22_1",
+            "key": "bibr17-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1061/(ASCE)LA.1943-4170.0000364"
+            "DOI": "10.1891/0886-6708.VV-D-15-00110"
         },
         {
-            "key": "e_1_3_4_23_1",
+            "key": "bibr18-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1061/(ASCE)LA.1943-4170.0000320"
+            "DOI": "10.1037/e667182007-001"
         },
         {
-            "key": "e_1_3_4_24_1",
-            "volume-title": "AASHTO partnering handbook",
-            "author": "Gransberg D. D.",
-            "year": "2018",
-            "edition": "2"
-        },
-        {
-            "key": "e_1_3_4_25_1",
+            "key": "bibr19-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1061/(ASCE)0733-9364(1999)125:3(161)"
+            "DOI": "10.1111/j.1471-6402.2007.00385.x"
         },
         {
-            "key": "e_1_3_4_26_1",
+            "key": "bibr20-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.3141/2504-09"
+            "DOI": "10.1080/13691058.2014.989265"
         },
         {
-            "key": "e_1_3_4_27_1",
+            "key": "bibr21-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1061/(ASCE)ME.1943-5479.0000163"
+            "DOI": "10.1037/0022-3514.32.6.1134"
         },
         {
-            "key": "e_1_3_4_28_1",
+            "key": "bibr22-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1061/(ASCE)ME.1943-5479.0000136"
+            "DOI": "10.1080/07448480903540515"
         },
         {
-            "key": "e_1_3_4_29_1",
+            "key": "bibr23-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1061/(ASCE)LA.1943-4170.0000251"
+            "DOI": "10.1891/0886-6708.24.4.439"
         },
         {
-            "key": "e_1_3_4_30_1",
+            "key": "bibr24-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1061/(ASCE)LA.1943-4170.0000266"
+            "DOI": "10.1002/jts.21807"
         },
         {
-            "key": "e_1_3_4_31_1",
+            "key": "bibr25-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1061/(ASCE)ME.1943-5479.0000084"
+            "DOI": "10.1891/0886-6708.21.6.761"
         },
         {
-            "key": "e_1_3_4_32_1",
+            "key": "bibr26-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.egypro.2016.09.132"
+            "DOI": "10.1007/s11896-010-9075-6"
         },
         {
-            "key": "e_1_3_4_34_1",
-            "unstructured": "IPI (International Partnering Institute). 2017. \u201cIPI partnering toolbox.\u201d Accessed August 22 2020. https://partneringinstitute.org/partnering-toolbox/."
-        },
-        {
-            "key": "e_1_3_4_35_1",
-            "unstructured": "IPI (International Partnering Institute). 2018. \u201cSacramento international airport \u2018big build\u2019-terminal B.\u201d Accessed July 1 2019. https://partneringinstitute.org/sacramento-international-airport-big-build-terminal-b-2/."
-        },
-        {
-            "key": "e_1_3_4_36_1",
+            "key": "bibr27-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0263-7863(03)00031-0"
+            "DOI": "10.1177/0886260520922345"
         },
         {
-            "key": "e_1_3_4_37_1",
+            "key": "bibr28-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1061/(ASCE)0733-9364(2005)131:10(1076)"
+            "DOI": "10.1007/s11199-010-9910-3"
         },
         {
-            "key": "e_1_3_4_38_1",
+            "key": "bibr29-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/01446193.2011.648947"
+            "DOI": "10.1515/IJDHD.2007.6.4.397"
         },
         {
-            "key": "e_1_3_4_39_1",
-            "unstructured": "Mehany M. H. M. G. M. Gad and B. Esmaeili. 2017. \u201cDispute prevention and resolution methods used on public highway projects employing different project delivery methods.\u201d In Proc. Transportation Research Board 96th Annual Meeting. Washington DC: National Academies of Science Engineering and Medicine."
-        },
-        {
-            "key": "e_1_3_4_40_1",
+            "key": "bibr30-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.17226/25386"
+            "DOI": "10.1108/JFP-01-2021-0001"
         },
         {
-            "key": "e_1_3_4_41_1",
+            "key": "bibr31-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1002/pmj.21469"
+            "DOI": "10.1177/0886260503251070"
         },
         {
-            "key": "e_1_3_4_42_1",
+            "key": "bibr32-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1016/S0263-7863(01)00025-4"
+            "DOI": "10.1521/jscp.2014.33.8.732"
         },
         {
-            "key": "e_1_3_4_44_1",
+            "key": "bibr33-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1061/(ASCE)LA.1943-4170.0000272"
+            "DOI": "10.1177/1077801215610864"
         },
         {
-            "key": "e_1_3_4_45_1",
-            "unstructured": "Pinto-Nunez M. and D. D. Gransberg. 2017. \u201cInstitutionalizing the principles of partnering.\u201d In Proc. Transportation Research Board 93rd Annual Meeting. Washington DC: National Academies of Science Engineering and Medicine."
-        },
-        {
-            "key": "e_1_3_4_46_1",
+            "key": "bibr34-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1037/0021-9010.88.5.879"
+            "DOI": "10.1089/vio.2019.0057"
         },
         {
-            "key": "e_1_3_4_47_1",
+            "key": "bibr35-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1061/(ASCE)LA.1943-4170.0000367"
+            "DOI": "10.1037/vio0000187"
         },
         {
-            "key": "e_1_3_4_48_1",
+            "key": "bibr36-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1061/(ASCE)0742-597X(2004)20:4(147)"
+            "DOI": "10.1177/088626099014003004"
         },
         {
-            "key": "e_1_3_4_49_1",
+            "key": "bibr37-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1061/(ASCE)0742-597X(2004)20:4(178)"
+            "DOI": "10.2196/jmir.3426"
         },
         {
-            "key": "e_1_3_4_50_1",
-            "volume-title": "Essentials of behavioral: Methods and data analysis",
-            "author": "Rosenthal R.",
-            "year": "2008",
-            "edition": "3"
-        },
-        {
-            "key": "e_1_3_4_51_1",
-            "volume-title": "In-depth case study of a partnered project delivery",
-            "author": "Sohani S.",
-            "year": "2016"
-        },
-        {
-            "key": "e_1_3_4_52_1",
+            "key": "bibr38-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1061/(ASCE)ME.1943-5479.0000481"
+            "DOI": "10.1080/21674086.1959.11926141"
         },
         {
-            "key": "e_1_3_4_53_1",
+            "key": "bibr39-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1061/(ASCE)0733-9364(2006)132:3(217)"
+            "DOI": "10.1111/j.1559-1816.2003.tb01907.x"
         },
         {
-            "key": "e_1_3_4_54_1",
-            "volume-title": "Alternative dispute resolution series pamphlet 4",
-            "author": "USACE",
-            "year": "2010"
-        },
-        {
-            "key": "e_1_3_4_55_1",
+            "key": "bibr40-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1061/(ASCE)CO.1943-7862.0001478"
+            "DOI": "10.1371/journal.pone.0257557"
         },
         {
-            "key": "e_1_3_4_56_1",
-            "first-page": "1",
-            "volume-title": "Handbook on implementation science",
-            "author": "Weiner B. J.",
-            "year": "2009"
-        },
-        {
-            "key": "e_1_3_4_57_1",
+            "key": "bibr41-10778012241234897",
             "doi-asserted-by": "publisher",
-            "DOI": "10.1080/0144619042000287714"
+            "DOI": "10.1177/0886260508319366"
+        },
+        {
+            "key": "bibr42-10778012241234897",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1080/10826080902961468"
+        },
+        {
+            "key": "bibr43-10778012241234897",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.15288/jsa.2003.64.756"
+        },
+        {
+            "key": "bibr44-10778012241234897",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1037/trm0000118"
+        },
+        {
+            "key": "bibr45-10778012241234897",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0886260515576968"
+        },
+        {
+            "key": "bibr46-10778012241234897",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1093/scan/nsu160"
+        },
+        {
+            "key": "bibr47-10778012241234897",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/pchj.311"
+        },
+        {
+            "key": "bibr48-10778012241234897",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1177/0886260509354887"
+        },
+        {
+            "key": "bibr49-10778012241234897",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/da.20719"
         }
     ],
     "container-title": [
-        "Journal of Management in Engineering"
+        "Violence Against Women"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://ascelibrary.org/doi/pdf/10.1061/%28ASCE%29ME.1943-5479.0000895",
+            "URL": "http://journals.sagepub.com/doi/pdf/10.1177/10778012241234897",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "http://journals.sagepub.com/doi/full-xml/10.1177/10778012241234897",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "http://journals.sagepub.com/doi/pdf/10.1177/10778012241234897",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -388,96 +373,55 @@
     "deposited": {
         "date-parts": [
             [
-                2022,
-                6,
-                10
+                2024,
+                2,
+                29
             ]
         ],
-        "date-time": "2022-06-10T13:58:44Z",
-        "timestamp": 1654869524000
+        "date-time": "2024-02-29T08:06:41Z",
+        "timestamp": 1709194001000
     },
-    "score": 10.820145,
+    "score": 16.868652,
     "resource": {
         "primary": {
-            "URL": "https://ascelibrary.org/doi/10.1061/%28ASCE%29ME.1943-5479.0000895"
+            "URL": "http://journals.sagepub.com/doi/10.1177/10778012241234897"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2021,
-                5
+                2024,
+                2,
+                29
             ]
         ]
     },
-    "references-count": 54,
-    "journal-issue": {
-        "issue": "3",
-        "published-print": {
-            "date-parts": [
-                [
-                    2021,
-                    5
-                ]
-            ]
-        }
-    },
+    "references-count": 49,
     "alternative-id": [
-        "10.1061/(ASCE)ME.1943-5479.0000895"
+        "10.1177/10778012241234897"
     ],
-    "URL": "http://dx.doi.org/10.1061/(asce)me.1943-5479.0000895",
+    "URL": "http://dx.doi.org/10.1177/10778012241234897",
     "ISSN": [
-        "0742-597X",
-        "1943-5479"
+        "1077-8012",
+        "1552-8448"
     ],
     "issn-type": [
         {
-            "value": "0742-597X",
+            "value": "1077-8012",
             "type": "print"
         },
         {
-            "value": "1943-5479",
+            "value": "1552-8448",
             "type": "electronic"
         }
     ],
     "published": {
         "date-parts": [
             [
-                2021,
-                5
+                2024,
+                2,
+                29
             ]
         ]
-    },
-    "assertion": [
-        {
-            "value": "2020-01-22",
-            "order": 0,
-            "name": "received",
-            "label": "Received",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2020-11-03",
-            "order": 1,
-            "name": "accepted",
-            "label": "Accepted",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        },
-        {
-            "value": "2021-02-03",
-            "order": 2,
-            "name": "published",
-            "label": "Published",
-            "group": {
-                "name": "publication_history",
-                "label": "Publication History"
-            }
-        }
-    ]
+    }
 }

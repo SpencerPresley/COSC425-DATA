@@ -3,587 +3,159 @@
         "date-parts": [
             [
                 2024,
-                8,
-                19
+                9,
+                27
             ]
         ],
-        "date-time": "2024-08-19T03:04:34Z",
-        "timestamp": 1724036674545
+        "date-time": "2024-09-27T04:30:41Z",
+        "timestamp": 1727411441949
     },
-    "reference-count": 78,
-    "publisher": "Informa UK Limited",
-    "issue": "3",
+    "publisher-location": "New York, NY, USA",
+    "reference-count": 10,
+    "publisher": "ACM",
     "content-domain": {
         "domain": [
-            "www.tandfonline.com"
+            "dl.acm.org"
         ],
         "crossmark-restriction": true
     },
-    "short-container-title": [
-        "Peabody Journal of Education"
-    ],
     "published-print": {
         "date-parts": [
             [
-                2021,
-                5,
-                27
+                2023,
+                6,
+                21
             ]
         ]
     },
-    "DOI": "10.1080/0161956x.2021.1942703",
-    "type": "journal-article",
+    "DOI": "10.1145/3580252.3589414",
+    "type": "proceedings-article",
     "created": {
         "date-parts": [
             [
-                2021,
-                7,
-                14
+                2024,
+                1,
+                22
             ]
         ],
-        "date-time": "2021-07-14T19:13:05Z",
-        "timestamp": 1626289985000
+        "date-time": "2024-01-22T16:26:12Z",
+        "timestamp": 1705940772000
     },
-    "page": "235-246",
-    "update-policy": "http://dx.doi.org/10.1080/tandf_crossmark_01",
+    "page": "179-180",
+    "update-policy": "http://dx.doi.org/10.1145/crossmark-policy",
     "source": "Crossref",
-    "is-referenced-by-count": 29,
+    "is-referenced-by-count": 1,
     "title": [
-        "A Systematic Review of the Last Decade of Civic Education Research in the United States"
+        "Poster: Foot-Floor Friction Based Walking Surface Detection for Fall Prevention Using Wearable Motion Sensors"
     ],
-    "prefix": "10.1080",
-    "volume": "96",
+    "prefix": "10.1145",
     "author": [
         {
-            "given": "Jason C.",
-            "family": "Fitzgerald",
+            "ORCID": "http://orcid.org/0000-0002-3967-9693",
+            "authenticated-orcid": false,
+            "given": "Shuangquan",
+            "family": "Wang",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Monmouth University"
+                    "name": "Salisbury University, Salisbury, MD, USA"
                 }
             ]
         },
         {
-            "ORCID": "http://orcid.org/0000-0001-9848-934X",
+            "ORCID": "http://orcid.org/0000-0002-4425-9837",
             "authenticated-orcid": false,
-            "given": "Alison K.",
-            "family": "Cohen",
+            "given": "Gang",
+            "family": "Zhou",
             "sequence": "additional",
             "affiliation": [
                 {
-                    "name": "University of California San Francisco"
-                },
-                {
-                    "name": "CIRCLE, Tufts University"
-                }
-            ]
-        },
-        {
-            "given": "Elena",
-            "family": "Maker Castro",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "University of California Los Angeles"
-                }
-            ]
-        },
-        {
-            "given": "Alexander",
-            "family": "Pope",
-            "sequence": "additional",
-            "affiliation": [
-                {
-                    "name": "Salisbury University"
+                    "name": "William &amp; Mary, Williamsburg, VA, USA"
                 }
             ]
         }
     ],
-    "member": "301",
+    "member": "320",
     "published-online": {
         "date-parts": [
             [
-                2021,
-                7,
-                14
+                2024,
+                1,
+                22
             ]
         ]
     },
     "reference": [
         {
-            "key": "cit0001",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/1090198118769357"
+            "key": "e_1_3_2_1_1_1",
+            "unstructured": "2022. https://www.ehs.washington.edu/about/latest-news/walk-safely-wet-icy-and-slippery-surfaces."
         },
         {
-            "key": "cit0002",
-            "volume-title": "Cosmopolitanism: Ethics in a world of strangers",
-            "author": "Appiah K. A.",
-            "year": "2006"
-        },
-        {
-            "key": "cit0003",
-            "volume-title": "Cultural politics and education",
-            "author": "Apple M. W.",
-            "year": "1996"
-        },
-        {
-            "key": "cit0004",
-            "volume-title": "Education still under siege",
-            "author": "Aronowitz S.",
-            "year": "1993",
-            "edition": "2"
-        },
-        {
-            "key": "cit0005",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1207/S1532480XADS0703_6"
-        },
-        {
-            "key": "cit0006",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.4324/9781351040266-20"
-        },
-        {
-            "key": "cit0007",
-            "volume-title": "Multicultural education: Issues and perspectives",
-            "author": "Banks J. A.",
-            "year": "2010",
-            "edition": "7"
-        },
-        {
-            "key": "cit0008",
-            "unstructured": "Bass, J. (2012).Engaging students in politics. ASCD Express. http://www.ascd.org/ascd-express/vol7/723-bass.aspx"
-        },
-        {
-            "issue": "1",
-            "key": "cit0009",
+            "key": "e_1_3_2_1_2_1",
             "doi-asserted-by": "crossref",
-            "first-page": "81",
-            "DOI": "10.5296/jet.v2i1.6479",
-            "volume": "2",
-            "author": "Berson M. J.",
-            "year": "2014",
-            "journal-title": "Journal of Education and Training Studies"
+            "unstructured": "B. Hu et al. 2021. Applying deep neural networks and inertial measurement unit in recognizing irregular walking differences in the real world. Applied Ergonomics (2021).",
+            "DOI": "10.1016/j.apergo.2021.103414"
         },
         {
-            "key": "cit0010",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00933104.2016.1203853"
+            "key": "e_1_3_2_1_3_1",
+            "unstructured": "I. H. Witten et al. 2016. Data Mining Fourth Edition: Practical Machine Learning Tools and Techniques. Morgan Kaufmann Publishers Inc."
         },
         {
-            "key": "cit0011",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/15512169.2015.1090905"
-        },
-        {
-            "key": "cit0012",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/15210960.2014.952300"
-        },
-        {
-            "key": "cit0013",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3102/0002831216670510"
-        },
-        {
-            "issue": "3",
-            "key": "cit0014",
-            "first-page": "45",
-            "volume": "15",
-            "author": "Buch K.",
-            "year": "2011",
-            "journal-title": "Journal of Higher Education Outreach and Engagement"
-        },
-        {
-            "key": "cit0015",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3102/0091732X16686948"
-        },
-        {
-            "issue": "1",
-            "key": "cit0016",
-            "first-page": "1",
-            "volume": "16",
-            "author": "Chandler P. T.",
-            "year": "2011",
-            "journal-title": "Current Issues in Middle Level Education"
-        },
-        {
-            "key": "cit0017",
-            "first-page": "181",
-            "author": "Chant R. H.",
-            "year": "2009",
-            "journal-title": "Teacher Education Quarterly"
-        },
-        {
-            "key": "cit0018",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1016/j.childyouth.2013.09.005"
-        },
-        {
-            "issue": "4",
-            "key": "cit0019",
-            "first-page": "58",
-            "volume": "12",
-            "author": "Chenneville T.",
-            "year": "2012",
-            "journal-title": "Journal of Scholarship of Teaching and Learning"
-        },
-        {
-            "key": "cit0020",
-            "volume-title": "The Clearing House",
-            "author": "Cohen A. K.",
-            "year": "2021"
-        },
-        {
-            "key": "cit0021",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1386/ctl.13.3.351_1"
-        },
-        {
-            "issue": "2",
-            "key": "cit0022",
-            "first-page": "37",
-            "volume": "4",
-            "author": "Dabach D. B.",
-            "year": "2014",
-            "journal-title": "Journal of International Social Studies"
-        },
-        {
-            "key": "cit0023",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/15512169.2015.1063434"
-        },
-        {
-            "key": "cit0024",
-            "first-page": "32",
-            "author": "Diaz A.",
-            "year": "2010",
-            "journal-title": "Michigan Journal of Community Service Learning"
-        },
-        {
-            "key": "cit0025",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1467-8624.2011.01650.x"
-        },
-        {
-            "key": "cit0026",
-            "volume-title": "Reconfiguring citizenship: Social exclusion and diversity within inclusive citizenship practice",
-            "author": "Dominelli L.",
-            "year": "2016"
-        },
-        {
-            "key": "cit0027",
-            "first-page": "1",
-            "author": "Duffy J.",
-            "year": "2011",
-            "journal-title": "Advances in Engineering Education"
-        },
-        {
-            "key": "cit0028",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00139157.2016.1208995"
-        },
-        {
-            "key": "cit0029",
-            "unstructured": "ECS. (2014).High school graduation requirement or credit toward graduation: Service-learning/community service. http://ecs.force.com/mbdata/mbquest3RTE?Rep=SL1301"
-        },
-        {
-            "key": "cit0030",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/15512169.2014.947419"
-        },
-        {
-            "key": "cit0031",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/13540602.2013.827364"
-        },
-        {
-            "key": "cit0032",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1353/foc.0.0043"
-        },
-        {
-            "key": "cit0033",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/15582159.2014.905397"
-        },
-        {
-            "key": "cit0034",
-            "author": "Garcia A.",
-            "year": "2019",
-            "journal-title": "American Educational Research Journal"
-        },
-        {
-            "key": "cit0035",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/1131600"
-        },
-        {
-            "key": "cit0036",
-            "volume-title": "Black youth rising: Activism and radical healing in urban America",
-            "author": "Ginwright S. A.",
-            "year": "2010"
-        },
-        {
-            "key": "cit0037",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/09540253.2015.1123227"
-        },
-        {
-            "key": "cit0038",
-            "author": "Gustafson E.",
-            "year": "2019",
-            "journal-title": "Youth & Society"
-        },
-        {
-            "issue": "2",
-            "key": "cit0039",
-            "volume": "17",
-            "author": "Hawkins L. B.",
-            "year": "2016",
-            "journal-title": "Journal of the National Collegiate Honors Council"
-        },
-        {
-            "key": "cit0040",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00220485.2016.1213678"
-        },
-        {
-            "issue": "6",
-            "key": "cit0041",
-            "first-page": "293",
-            "volume": "78",
-            "author": "Hess D.",
-            "year": "2014",
-            "journal-title": "Social Education"
-        },
-        {
-            "key": "cit0042",
-            "first-page": "169",
-            "author": "Hester J. A.",
-            "year": "2017",
-            "journal-title": "Journal of the National Collegiate Honors Council"
-        },
-        {
-            "key": "cit0043",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0042085915574524"
-        },
-        {
-            "key": "cit0044",
-            "first-page": "14",
-            "author": "Hurtado S.",
-            "year": "2012",
-            "journal-title": "Liberal Education"
-        },
-        {
-            "key": "cit0045",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/15210960903445905"
-        },
-        {
-            "key": "cit0046",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/00933104.2014.1001106"
-        },
-        {
-            "issue": "1",
-            "key": "cit0047",
-            "first-page": "34",
-            "volume": "72",
-            "author": "Kahne J.",
-            "year": "2008",
-            "journal-title": "Social Education"
-        },
-        {
-            "key": "cit0048",
-            "author": "Kennedy H.",
-            "year": "2019",
-            "journal-title": "Journal of Adolescent Research"
-        },
-        {
-            "key": "cit0049",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.18574/nyu/9781479861316.001.0001"
-        },
-        {
-            "key": "cit0050",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/j.1750-8606.2012.00243.x"
-        },
-        {
-            "key": "cit0051",
+            "key": "e_1_3_2_1_4_1",
             "doi-asserted-by": "crossref",
-            "volume-title": "Liberty: Thriving and civic engagement among America\u2019s youth",
-            "author": "Lerner R. M.",
-            "year": "2004",
-            "DOI": "10.4135/9781452233581"
+            "unstructured": "P. C. Dixon et al. 2019. Machine learning algorithms can classify outdoor terrain types during running using accelerometry data. Gait & Posture (2019).",
+            "DOI": "10.1016/j.gaitpost.2019.09.005"
         },
         {
-            "key": "cit0052",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.4159/harvard.9780674065291"
-        },
-        {
-            "issue": "5",
-            "key": "cit0053",
+            "key": "e_1_3_2_1_5_1",
             "doi-asserted-by": "crossref",
-            "first-page": "1",
-            "DOI": "10.1177/016146811912100503",
-            "volume": "121",
-            "author": "Levy B. L.",
-            "year": "2019",
-            "journal-title": "Teachers College Record"
+            "unstructured": "S. Wang et al. 2018. Eating detection and chews counting through sensing mastication muscle contraction. Smart Health (2018).",
+            "DOI": "10.1016/j.smhl.2018.07.004"
         },
         {
-            "key": "cit0054",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1037/cdp0000429"
-        },
-        {
-            "key": "cit0055",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1111/curi.12000"
-        },
-        {
-            "key": "cit0056",
+            "key": "e_1_3_2_1_6_1",
             "doi-asserted-by": "crossref",
-            "unstructured": "McAvoy, P. & McAvoy, G. (2021). Can debate and deliberation reduce partisan divisions? Evidence from a study of high school students.Peabody Journal of Education. https://doi.org/10.1080/0161956X.2021.1942706",
-            "DOI": "10.1080/0161956X.2021.1942706"
+            "unstructured": "S. Wang et al. 2021. Inferring food types through sensing and characterizing mastication dynamics. Smart Health (2021).",
+            "DOI": "10.1016/j.smhl.2021.100191"
         },
         {
-            "key": "cit0057",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.7591/9780801471353"
+            "key": "e_1_3_2_1_7_1",
+            "doi-asserted-by": "crossref",
+            "unstructured": "V. Losing and M. Hasenjger. 2022. A Multi-Modal Gait Database of Natural Everyday-Walk in an Urban Environment. Scientific Data (2022).",
+            "DOI": "10.1038/s41597-022-01580-3"
         },
         {
-            "key": "cit0058",
-            "volume-title": "The college, career, and civic life (C3) framework for social studies state standards: Guidance for enhancing the rigor of K-12 civics, economics, geography, and history",
-            "author": "NCSS",
-            "year": "2013"
+            "key": "e_1_3_2_1_8_1",
+            "doi-asserted-by": "crossref",
+            "unstructured": "Y. Luo et al. 2020. A database of human gait performance on irregular and uneven surfaces collected by wearable sensors. Scientific Data (2020).",
+            "DOI": "10.1038/s41597-020-0563-y"
         },
         {
-            "key": "cit0059",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1386/ctl.9.3.241_1"
+            "key": "e_1_3_2_1_9_1",
+            "unstructured": "H. R. Ng et al. 2023. Machine Learning Approach for Automated Detection of Irregular Walking Surfaces for Walkability Assessment with Wearable Sensor. Sensors (2023)."
         },
         {
-            "issue": "5",
-            "key": "cit0060",
-            "first-page": "265",
-            "volume": "75",
-            "author": "Pope A.",
-            "year": "2011",
-            "journal-title": "Social Education"
-        },
-        {
-            "key": "cit0061",
-            "first-page": "60",
-            "author": "Richard D.",
-            "year": "2017",
-            "journal-title": "Michigan Journal of Community Service Learning"
-        },
-        {
-            "key": "cit0062",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1007/s11256-009-0146-x"
-        },
-        {
-            "key": "cit0063",
-            "volume-title": "Teaching and learning in the age of Trump: Increasing stress and hostility in America\u2019s high schools",
-            "author": "Rogers J.",
-            "year": "2017"
-        },
-        {
-            "issue": "1",
-            "key": "cit0064",
-            "first-page": "2",
-            "volume": "2",
-            "author": "Ryter D.",
-            "year": "2012",
-            "journal-title": "Journal of International Social Studies"
-        },
-        {
-            "key": "cit0065",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1207/S1532480XADS0604_11"
-        },
-        {
-            "key": "cit0066",
-            "volume-title": "Schooling for critical consciousness: Engaging black and latinx youth in analyzing, navigating, and challenging racial injustice",
-            "author": "Seider S.",
-            "year": "2020"
-        },
-        {
-            "key": "cit0067",
-            "unstructured": "Shapiro, S. & Brown, C. (2018).The state of civics education. Center for American Progress. https://www.americanprogress.org/issues/education-k-12/reports/2018/02/21/446857/state-civics-education/"
-        },
-        {
-            "key": "cit0068",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.18546/IJDEGL.9.1.05"
-        },
-        {
-            "key": "cit0069",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/10888690801997036"
-        },
-        {
-            "key": "cit0070",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1080/15427609.2015.1010350"
-        },
-        {
-            "key": "cit0071",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1177/0731121414556473"
-        },
-        {
-            "key": "cit0072",
-            "unstructured": "The Center for Information and Research on Civic Learning and Engagement. (2012).New CIRCLE fact sheet describes state laws, standards, and requirements for k-12 civics. http://www.civicyouth.org/new-circle-fact-sheet-describes-state-laws-standards-and-requirements-for-k-12-civics/"
-        },
-        {
-            "key": "cit0073",
-            "volume-title": "A crucible moment: College learning and democracy\u2019s future",
-            "author": "The National Task Force on Civic Learning and Democratic Engagement",
-            "year": "2012"
-        },
-        {
-            "key": "cit0074",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/cd.310"
-        },
-        {
-            "key": "cit0075",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1002/jcop.20178"
-        },
-        {
-            "key": "cit0076",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.3102/00028312041002237"
-        },
-        {
-            "key": "cit0077",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.2307/j.ctv16f6dbw"
-        },
-        {
-            "key": "cit0078",
-            "doi-asserted-by": "publisher",
-            "DOI": "10.1093/acprof:oso/9780195183177.001.0001"
+            "key": "e_1_3_2_1_10_1",
+            "doi-asserted-by": "crossref",
+            "unstructured": "A. Sher et al. 2022. Towards personalized environment-aware outdoor gait analysis using a smartphone. Expert Systems (2022).",
+            "DOI": "10.1111/exsy.13130"
         }
     ],
+    "event": {
+        "name": "CHASE '23: 8th ACM/IEEE International Conference on Connected Health: Applications, Systems and Engineering Technologies",
+        "sponsor": [
+            "SIGBED ACM Special Interest Group on Embedded Systems",
+            "IEEE Computer Society"
+        ],
+        "location": "Orlando FL USA",
+        "acronym": "CHASE '23"
+    },
     "container-title": [
-        "Peabody Journal of Education"
+        "Proceedings of the 8th ACM/IEEE International Conference on Connected Health: Applications, Systems and Engineering Technologies"
     ],
-    "language": "en",
     "link": [
         {
-            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/0161956X.2021.1942703",
+            "URL": "https://dl.acm.org/doi/pdf/10.1145/3580252.3589414",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -592,85 +164,47 @@
     "deposited": {
         "date-parts": [
             [
-                2023,
-                1,
-                4
+                2024,
+                9,
+                26
             ]
         ],
-        "date-time": "2023-01-04T06:47:07Z",
-        "timestamp": 1672814827000
+        "date-time": "2024-09-26T17:28:15Z",
+        "timestamp": 1727371695000
     },
-    "score": 12.620003,
+    "score": 15.495212,
     "resource": {
         "primary": {
-            "URL": "https://www.tandfonline.com/doi/full/10.1080/0161956X.2021.1942703"
+            "URL": "https://dl.acm.org/doi/10.1145/3580252.3589414"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2021,
-                5,
-                27
+                2023,
+                6,
+                21
             ]
         ]
     },
-    "references-count": 78,
-    "journal-issue": {
-        "issue": "3",
-        "published-print": {
-            "date-parts": [
-                [
-                    2021,
-                    5,
-                    27
-                ]
-            ]
-        }
-    },
+    "references-count": 10,
     "alternative-id": [
-        "10.1080/0161956X.2021.1942703"
+        "10.1145/3580252.3589414",
+        "10.1145/3580252"
     ],
-    "URL": "http://dx.doi.org/10.1080/0161956x.2021.1942703",
-    "ISSN": [
-        "0161-956X",
-        "1532-7930"
-    ],
-    "issn-type": [
-        {
-            "value": "0161-956X",
-            "type": "print"
-        },
-        {
-            "value": "1532-7930",
-            "type": "electronic"
-        }
-    ],
+    "URL": "http://dx.doi.org/10.1145/3580252.3589414",
     "published": {
         "date-parts": [
             [
-                2021,
-                5,
-                27
+                2023,
+                6,
+                21
             ]
         ]
     },
     "assertion": [
         {
-            "value": "The publishing and review policy for this title is described in its Aims & Scope.",
-            "order": 1,
-            "name": "peerreview_statement",
-            "label": "Peer Review Statement"
-        },
-        {
-            "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=hpje20",
-            "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=hpje20",
-            "order": 2,
-            "name": "aims_and_scope_url",
-            "label": "Aim & Scope"
-        },
-        {
-            "value": "2021-07-14",
+            "value": "2024-01-22",
             "order": 3,
             "name": "published",
             "label": "Published",

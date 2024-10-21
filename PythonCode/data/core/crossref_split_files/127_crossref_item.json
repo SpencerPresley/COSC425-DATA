@@ -4,31 +4,31 @@
             [
                 2022,
                 4,
-                1
+                5
             ]
         ],
-        "date-time": "2022-04-01T18:27:05Z",
-        "timestamp": 1648837625782
+        "date-time": "2022-04-05T13:55:41Z",
+        "timestamp": 1649166941512
     },
     "reference-count": 0,
     "publisher": "Oxford University Press (OUP)",
-    "issue": "Supplement_1",
+    "issue": "2",
     "license": [
         {
             "start": {
                 "date-parts": [
                     [
-                        2021,
-                        12,
-                        17
+                        2019,
+                        3,
+                        21
                     ]
                 ],
-                "date-time": "2021-12-17T00:00:00Z",
-                "timestamp": 1639699200000
+                "date-time": "2019-03-21T00:00:00Z",
+                "timestamp": 1553126400000
             },
             "content-version": "vor",
-            "delay-in-days": 16,
-            "URL": "http://creativecommons.org/licenses/by/4.0/"
+            "delay-in-days": 79,
+            "URL": "https://academic.oup.com/journals/pages/open_access/funder_policies/chorus/standard_publication_model"
         }
     ],
     "content-domain": {
@@ -38,42 +38,41 @@
     "published-print": {
         "date-parts": [
             [
-                2021,
-                12,
-                17
+                2019,
+                6,
+                1
             ]
         ]
     },
-    "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>Over 6 million Americans and 50 million persons worldwide are estimated to have Alzheimer\u2019s disease (AD) as it remains the major cause of dementia in the older adult population. Both healthcare professionals and family caregivers struggle with the complexities of caring for individuals with this progressive neurological disease. To address the ongoing knowledge and care gap regarding Alzheimer\u2019s disease among both healthcare professionals and family caregivers, a comprehensive massive open online course (MOOC) was developed and made available via the edX platform. MOOCs are open access and interactive courses offered via the web; they have emerged as a popular, self-paced mode of distance learning. Launched in 2020, the MOOC titled, Alzheimer\u2019s Disease &amp; Dementia Care, consists of five modules reviewing symptoms, diagnosis, medications, communication and care tips, as well as a module outlining special considerations when the person with AD is hospitalized. While this educational strategy targets healthcare professionals (such as nurses, physical therapists and related practitioners), it is also designed for lay caregivers or anyone who wants to learn more the disease. The course utilizes a variety of teaching modalities and is free. To date over 7000 persons have enrolled from over 140 countries. MOOCs remain an innovative and engaging educational strategy to reach a global audience. More importantly, they can serve as an another outlet to enhance both the competence and confidence of both healthcare professionals and family caregivers by sharing best practices in caring for those with Alzheimer\u2019s disease and related dementias.</jats:p>",
-    "DOI": "10.1093/geroni/igab046.2797",
+    "DOI": "10.1093/melus/mlz008",
     "type": "journal-article",
     "created": {
         "date-parts": [
             [
-                2021,
-                12,
-                17
+                2019,
+                3,
+                21
             ]
         ],
-        "date-time": "2021-12-17T15:07:26Z",
-        "timestamp": 1639753646000
+        "date-time": "2019-03-21T15:57:21Z",
+        "timestamp": 1553183841000
     },
-    "page": "754-754",
+    "page": "192-194",
     "source": "Crossref",
     "is-referenced-by-count": 0,
     "title": [
-        "A Massive Open Online Course to Educate Healthcare Professionals &amp; Caregivers About Alzheimer\u2019s Disease"
+        "The Illustrated Slave: Empathy, Graphic Narrative, and the Visual Culture of the Transatlantic Abolition Movement, 1800-1852. Martha J. Cutter"
     ],
     "prefix": "10.1093",
-    "volume": "5",
+    "volume": "44",
     "author": [
         {
-            "given": "Mary",
-            "family": "DiBartolo",
+            "given": "Aston",
+            "family": "Gonzalez",
             "sequence": "first",
             "affiliation": [
                 {
-                    "name": "Salisbury University, Salisbury, Maryland, United States"
+                    "name": "Salisbury University"
                 }
             ]
         }
@@ -82,25 +81,19 @@
     "published-online": {
         "date-parts": [
             [
-                2021,
-                12,
-                17
+                2019,
+                3,
+                21
             ]
         ]
     },
     "container-title": [
-        "Innovation in Aging"
+        "MELUS"
     ],
     "language": "en",
     "link": [
         {
-            "URL": "https://academic.oup.com/innovateage/article-pdf/5/Supplement_1/754/43188077/igab046.2797.pdf",
-            "content-type": "application/pdf",
-            "content-version": "vor",
-            "intended-application": "syndication"
-        },
-        {
-            "URL": "https://academic.oup.com/innovateage/article-pdf/5/Supplement_1/754/43188077/igab046.2797.pdf",
+            "URL": "http://academic.oup.com/melus/article-pdf/44/2/192/28758645/mlz008.pdf",
             "content-type": "unspecified",
             "content-version": "vor",
             "intended-application": "similarity-checking"
@@ -109,67 +102,75 @@
     "deposited": {
         "date-parts": [
             [
-                2022,
-                3,
-                31
+                2019,
+                6,
+                5
             ]
         ],
-        "date-time": "2022-03-31T17:38:52Z",
-        "timestamp": 1648748332000
+        "date-time": "2019-06-05T23:55:51Z",
+        "timestamp": 1559778951000
     },
-    "score": 15.984351,
+    "score": 14.465688,
     "resource": {
         "primary": {
-            "URL": "https://academic.oup.com/innovateage/article/5/Supplement_1/754/6467618"
+            "URL": "https://academic.oup.com/melus/article/44/2/192/5418440"
         }
     },
     "issued": {
         "date-parts": [
             [
-                2021,
-                12,
-                1
+                2019
             ]
         ]
     },
     "references-count": 0,
     "journal-issue": {
-        "issue": "Supplement_1",
+        "issue": "2",
+        "published-online": {
+            "date-parts": [
+                [
+                    2019,
+                    3,
+                    21
+                ]
+            ]
+        },
         "published-print": {
             "date-parts": [
                 [
-                    2021,
-                    12,
-                    17
+                    2019,
+                    6,
+                    1
                 ]
             ]
         }
     },
-    "URL": "http://dx.doi.org/10.1093/geroni/igab046.2797",
+    "URL": "http://dx.doi.org/10.1093/melus/mlz008",
     "ISSN": [
-        "2399-5300"
+        "0163-755X",
+        "1946-3170"
     ],
     "issn-type": [
         {
-            "value": "2399-5300",
+            "value": "0163-755X",
+            "type": "print"
+        },
+        {
+            "value": "1946-3170",
             "type": "electronic"
         }
     ],
     "published-other": {
         "date-parts": [
             [
-                2021,
-                12,
-                1
+                2019
             ]
         ]
     },
     "published": {
         "date-parts": [
             [
-                2021,
-                12,
-                1
+                2019
             ]
         ]
     }
