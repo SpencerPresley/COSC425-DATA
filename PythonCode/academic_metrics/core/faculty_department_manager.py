@@ -83,6 +83,16 @@ class FacultyDepartmentManager:
             info.tc_count = len(info.tc_list)
         return categories_dict
 
+    def update_doi_list(self, categories, doi):
+        for category in categories:
+            if category in self.category_processor.category_counts:
+                category_info = self.category_processor.category_counts[category]
+                category_info.doi_list.add(doi)
+            else:
+                warnings.warn(
+                    f"Warning: Category {category} not found in category_counts. Continuing to next."
+                )
+
     def get_total_article_count(self):
         total_article_count = 0
         for category, category_info in self.category_processor.category_counts.items():

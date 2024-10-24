@@ -176,7 +176,7 @@ class FacultyStats:
         # If no matching variation is found, return the unrefined name as a fallback
         return unrefined_name
 
-    def to_dict(self) -> dict:
+    def to_dict(self, exclude_keys: List[str] = None) -> dict:
         """
         Converts the FacultyStats instance to a dictionary suitable for JSON serialization.
 
@@ -188,8 +188,10 @@ class FacultyStats:
         data_dict = asdict(self)
 
         # Exclude 'files' from the dictionary
-        if "files" in data_dict:
-            del data_dict["files"]
+        if exclude_keys is not None:
+            for key in exclude_keys:
+                if key in data_dict:
+                    del data_dict[key]
 
         # Convert sets to lists for JSON serialization
         for key, value in data_dict.items():
@@ -235,7 +237,7 @@ class ArticleStats:
 
     article_citation_map: dict[str, ArticleDetails] = field(default_factory=dict)
 
-    def to_dict(self) -> dict:
+    def to_dict(self, exclude_keys: List[str] = None) -> dict:
         """
         Converts the ArticleStats instance to a dictionary suitable for JSON serialization.
 
@@ -247,8 +249,69 @@ class ArticleStats:
         data_dict = asdict(self)
 
         # Exclude 'files' from the dictionary
-        if "files" in data_dict:
-            del data_dict["files"]
+        if exclude_keys is not None:
+            for key in exclude_keys:
+                if key in data_dict:
+                    del data_dict[key]
+
+        # Convert sets to lists for JSON serialization
+        for key, value in data_dict.items():
+            if isinstance(value, set):
+                data_dict[key] = list(value)
+        return data_dict
+
+@dataclass
+class CrossrefArticleDetails:
+    """
+    A dataclass representing details about an individual article.
+
+    Attributes:
+        tc_count (int): Total citation count for the article.
+        faculty_members (list[str]): List of faculty members associated with the article.
+        faculty_affiliations (dict[str, list[str]]): Mapping of faculty members to their affiliations.
+    """
+    title: str = field(default="")
+    tc_count: int = 0
+    faculty_members: list[str] = field(default_factory=list)
+    faculty_affiliations: dict[str, list[str]] = field(default_factory=dict)
+    abstract: str = field(default="")
+    license_url: str = field(default="")
+    date_published_print: str = field(default="")
+    date_published_online: str = field(default="")
+    journal: str = field(default="")
+    download_url: str = field(default="")
+    doi: str = field(default="")
+    
+@dataclass
+class CrossrefArticleStats:
+    """
+    A dataclass representing statistics for all articles.
+
+    Attributes:
+        article_citation_map (dict[str, CrossrefArticleDetails]): A mapping of article dois to their detailed information.
+
+    Methods:
+        to_dict: Converts the dataclass instance to a dictionary suitable for JSON serialization.
+    """
+
+    article_citation_map: dict[str, CrossrefArticleDetails] = field(default_factory=dict)
+
+    def to_dict(self, exclude_keys: List[str] = None) -> dict:
+        """
+        Converts the ArticleStats instance to a dictionary suitable for JSON serialization.
+
+        Returns:
+            dict: A dictionary representation of the ArticleStats instance.
+        """
+
+        # Utilize asdict utility from dataclasses, then change sets to lists
+        data_dict = asdict(self)
+
+        # Exclude 'files' from the dictionary
+        if exclude_keys is not None:
+            for key in exclude_keys:
+                if key in data_dict:
+                    del data_dict[key]
 
         # Convert sets to lists for JSON serialization
         for key, value in data_dict.items():

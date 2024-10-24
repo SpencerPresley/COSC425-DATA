@@ -6,4 +6,6 @@ from .generate_aux_stats import (
     GenerateAuxStats,
     ArticleDetails,
     ArticleStats,
+    CrossrefArticleStats,
+    CrossrefArticleDetails,
 )

@@ -48,11 +48,12 @@ class CategoryInfo:
     tc_count: int = 0
     tc_list: List[int] = field(default_factory=list)
     citation_average: int = 0
-
+    doi_list: Set[str] = field(default_factory=set)
+    
     # this holds the file names associated with articles
     # article_set: Set[str] = field(default_factory=set)
 
-    def to_dict(self) -> dict:
+    def to_dict(self, exclude_keys: List[str] = None) -> dict:
         """
         Converts the CategoryInfo instance to a dictionary suitable for JSON serialization.
 
@@ -77,8 +78,10 @@ class CategoryInfo:
         data_dict = asdict(self)
 
         # Exclude 'files' from the dictionary
-        if "files" in data_dict:
-            del data_dict["files"]
+        if exclude_keys is not None:
+            for key in exclude_keys:
+                if key in data_dict:
+                    del data_dict[key]
 
         # Convert sets to lists for JSON serialization
         for key, value in data_dict.items():

@@ -200,6 +200,18 @@ class WosClassification:
                 output_dir_path, "test_processed_article_stats_obj_data.json"
             )
         )
+        
+        self.serialize_and_save_crossref_article_stats(
+            output_path=os.path.join(
+                output_dir_path, "test_processed_crossref_article_stats_data.json"
+            )
+        )
+        
+        self.serialize_and_save_crossref_article_stats_obj(
+            output_path=os.path.join(
+                output_dir_path, "test_processed_crossref_article_stats_obj_data.json"
+            )
+        )
 
         # AbstractCategoryMap(
         #     utilities_obj=self.utils,
@@ -355,7 +367,9 @@ class WosClassification:
 
         # Prepare category data for serialization using to_dict method from CategoryInfo class from My_Data_Classes.py
         categories_serializable = {
-            category: self.convert_sets_to_lists(category_info.to_dict())
+            category: self.convert_sets_to_lists(
+                category_info.to_dict(exclude_keys=["files", "faculty", "departments", "titles"])
+            )
             for category, category_info in self.get_category_counts().items()
         }
 
@@ -467,6 +481,49 @@ class WosClassification:
             "Data Serialization",
             f"Article Stat Data serialized and saved to {output_path}",
         )
+        
+    def serialize_and_save_crossref_article_stats(self, *, output_path):
+        crossref_article_stats_serializable = {
+            category: self.convert_sets_to_lists(article_stats.to_dict())
+            for category, article_stats in self.category_processor.crossref_article_stats.items()
+        }
+        
+        # Read and update existing data if extending
+        if self.extend:
+            with open(output_path, "r") as json_file:
+                existing_data = json.load(json_file)
+            existing_data.update(article_stats_serializable)
+            article_stats_serializable = existing_data
+
+        # Serialize to JSON and save to a file
+        with open(output_path, "w") as json_file:
+            json.dump(crossref_article_stats_serializable, json_file, indent=4)
+
+        self.warning_manager.log_warning(
+            "Data Serialization",
+            f"Crossref Article Stat Data serialized and saved to {output_path}",
+        )
+          
+    def serialize_and_save_crossref_article_stats_obj(self, *, output_path):
+        article_stats_serializable = self.category_processor.crossref_article_stats_obj.to_dict()
+        article_stats_to_save = article_stats_serializable["article_citation_map"]
+
+        self.generate_short_uuid_as_url(article_stats_to_save)
+
+        if self.extend:
+            with open(output_path, "r") as json_file:
+                existing_data = json.load(json_file)
+            existing_data.update(article_stats_to_save)
+            article_stats_to_save = existing_data
+
+        with open(output_path, "w") as json_file:
+            json.dump(article_stats_to_save, json_file, indent=4)
+
+        self.warning_manager.log_warning(
+            "Data Serialization",
+            f"Crossref Article Stat Data serialized and saved to {output_path}",
+        )
+                
 
     def convert_sets_to_lists(self, data_dict):
         """

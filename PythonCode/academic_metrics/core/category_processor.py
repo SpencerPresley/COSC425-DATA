@@ -5,6 +5,8 @@ from academic_metrics.data_models import (
     FacultyInfo,
     ArticleStats,
     ArticleDetails,
+    CrossrefArticleStats,
+    CrossrefArticleDetails,
 )
 from academic_metrics.enums import AttributeTypes
 import uuid
@@ -25,7 +27,9 @@ class CategoryProcessor:
         # influential stats dictionaries
         self.faculty_stats: dict[str, FacultyStats] = {}
         self.article_stats: dict[str, ArticleStats] = {}
+        self.crossref_article_stats: dict[str, CrossrefArticleStats] = {}
         self.article_stats_obj = ArticleStats()
+        self.crossref_article_stats_obj = CrossrefArticleStats()
 
     def category_finder(self, file_path, crossref_bool):
         if crossref_bool:
@@ -251,15 +255,15 @@ class CategoryProcessor:
         )
 
         if crossref_bool:
+            self.update_doi_list(categories=categories, doi=doi)
             # update article stats for the category
-            self.update_article_stats(
-                article_stats=self.article_stats,
+            self.update_crossref_article_stats(
+                article_stats=self.crossref_article_stats,
                 categories=categories,
                 title=title,
                 tc_count=tc_count,
                 faculty_affiliations=faculty_affiliations,
                 faculty_members=faculty_members,
-                crossref_bool=crossref_bool,
                 abstract=abstract,
                 license_url=license_url,
                 date_published_print=date_published_print,
@@ -269,7 +273,7 @@ class CategoryProcessor:
                 doi=doi,
             )
 
-            self.update_article_stats_obj(
+            self.update_crossref_article_stats_obj(
                 title=title,
                 tc_count=tc_count,
                 faculty_affiliations=faculty_affiliations,
@@ -418,7 +422,60 @@ class CategoryProcessor:
             for article in article_stats[category].article_citation_map.values():
                 article.faculty_members = list(set(article.faculty_members))
 
-    def update_article_stats_obj(
+    @staticmethod
+    def update_crossref_article_stats(
+        *,
+        article_stats: dict[str, CrossrefArticleStats],
+        categories: list[str],
+        title: str,
+        tc_count: int,
+        faculty_affiliations: dict[str, list[str]],
+        faculty_members: list[str],
+        abstract: str = None,
+        license_url: str = None,
+        date_published_print: str = None,
+        date_published_online: str = None,
+        journal: str = None,
+        download_url: str = None,
+        doi: str = None,
+    ):
+        for category in categories:
+            if category not in article_stats:
+                article_stats[category] = CrossrefArticleStats()
+            
+            if doi not in article_stats[category].article_citation_map:
+                article_stats[category].article_citation_map[doi] = CrossrefArticleDetails()
+
+            article_details = article_stats[category].article_citation_map[doi]
+            article_details.title = title
+            article_details.tc_count = tc_count
+            if abstract is not None:
+                article_details.abstract = abstract
+            if license_url is not None:
+                article_details.license_url = license_url
+            if date_published_print is not None:
+                article_details.date_published_print = date_published_print
+            if date_published_online is not None:
+                article_details.date_published_online = date_published_online
+            if journal is not None:
+                article_details.journal = journal
+            if download_url is not None:
+                article_details.download_url = download_url
+            if doi is not None:
+                article_details.doi = doi
+
+            for faculty_member in faculty_members:
+                if faculty_member not in article_details.faculty_members:
+                    article_details.faculty_members.append(faculty_member)
+                affiliations = faculty_affiliations.get(faculty_member, [])
+                article_details.faculty_affiliations[faculty_member] = affiliations
+
+        # Remove duplicates from faculty_members
+        for category in article_stats:
+            for article in article_stats[category].article_citation_map.values():
+                article.faculty_members = list(set(article.faculty_members))
+        
+    def update_crossref_article_stats_obj(
         self,
         *,
         title: str,
@@ -440,7 +497,8 @@ class CategoryProcessor:
             titles = title
 
         for title in titles:
-            self.article_stats_obj.article_citation_map[title] = ArticleDetails(
+            self.crossref_article_stats_obj.article_citation_map[doi] = CrossrefArticleDetails(
+                title=title,
                 tc_count=tc_count,
                 faculty_members=faculty_members,
                 faculty_affiliations=faculty_affiliations,
@@ -461,6 +519,10 @@ class CategoryProcessor:
         if title is not None:
             # print(f"UPDATE TITLE SET\nCATS:{categories}\nTITLE:{title}")
             self.faculty_department_manager.update_title_set(categories, title)
+
+    def update_doi_list(self, categories, doi):
+        if doi is not None:
+            self.faculty_department_manager.update_doi_list(categories, doi)
 
     def update_article_set(self):
         self.faculty_department_manager.update_article_counts(self.category_counts)
