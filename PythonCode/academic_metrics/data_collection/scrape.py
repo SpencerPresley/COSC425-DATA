@@ -47,7 +47,10 @@ def AI_get_missing_abstracts(url_dict: dict[str, str]):
     client = OpenAI(api_key=api_key)
     output_dict = {}
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3',
+        'Accept-Language': 'en-US,en;q=0.9',
+        'Accept-Encoding': 'gzip, deflate, br',
+        'Cookie': 'sessionid=your_session_id; other_cookie=other_value',  # Update with actual cookies
     }
 
     for doi, url in url_dict.items():
@@ -55,7 +58,7 @@ def AI_get_missing_abstracts(url_dict: dict[str, str]):
             response = requests.get(url, headers=headers)
             response.raise_for_status()  # Raise an exception for HTTP errors
 
-            scrape_data = response.content.decode("utf-8")
+            scrape_data = response.content[:16384]
 
             completion = client.chat.completions.create(
                 model="gpt-4o-mini",

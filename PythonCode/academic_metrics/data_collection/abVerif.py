@@ -11,8 +11,9 @@ query_dict = {
     elem["DOI"]: elem["URL"] for elem in data if elem.get("abstract", "NA") == "NA"
 }
 
+
 data = scrape.AI_get_missing_abstracts(query_dict)
 
 
-with open("missingAbstracts.json", "w") as f:
+with open('missingAbstractsTest.json', 'w') as f:
     json.dump(data, fp=f, indent=4)
