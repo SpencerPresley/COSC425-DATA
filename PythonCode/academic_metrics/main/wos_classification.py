@@ -22,7 +22,25 @@ from academic_metrics.data_models import (
 from urllib.parse import quote
 import shortuuid
 
+# test
+from academic_metrics.AI import AbstractClassifier
+from academic_metrics.utils.taxonomy_util import Taxonomy
+from academic_metrics.ChainBuilder import ChainManager
+from academic_metrics.ai_prompts import (
+    METHOD_JSON_FORMAT, 
+    SENTENCE_ANALYSIS_JSON_EXAMPLE, 
+    SUMMARY_JSON_STRUCTURE, 
+    TAXONOMY_EXAMPLE, 
+    CLASSIFICATION_SYSTEM_MESSAGE, 
+    HUMAN_MESSAGE_PROMPT, 
+    THEME_RECOGNITION_JSON_FORMAT, 
+    THEME_RECOGNITION_SYSTEM_MESSAGE,
+)
+
 print("Imports successful")
+continue_bool: bool = input("Continue? (y/n): ")
+if continue_bool == "n":
+    sys.exit()
 
 import json
 import re

@@ -9,3 +9,7 @@ from .generate_aux_stats import (
     CrossrefArticleStats,
     CrossrefArticleDetails,
 )
+from .ai_pydantic_models import (
+    ClassificationOutput,
+    ThemeAnalysis,
+)
