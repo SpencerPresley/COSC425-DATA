@@ -1,52 +1,31 @@
 from pydantic import BaseModel, Field
-from typing import List, Optional, Dict, Any
+from typing import Optional, List
 
+class Article(BaseModel):
+    id: Optional[str]
+    title: str
+    abstract: Optional[str]
+    authors: List[str]
+    published_date: str
 
-class Category(BaseModel):
-    url: str = Field(..., description="URL of the category")
-    faculty_count: int = Field(
-        ..., description="Number of faculty members in the category"
-    )
-    department_count: int = Field(
-        ..., description="Number of departments in the category"
-    )
-    article_count: int = Field(..., description="Number of articles in the category")
-    faculty: List[str] = Field(
-        ..., description="List of faculty members in the category"
-    )
-    departments: List[str] = Field(
-        ..., description="List of departments in the category"
-    )
-    titles: List[str] = Field(..., description="List of article titles in the category")
-    tc_count: int = Field(..., description="Total number of citations in the category")
-    citation_average: int = Field(
-        ..., description="Average number of citations in the category"
-    )
+class CrossrefArticleDetails(BaseModel):
+    """
+    A dataclass representing details about an individual article.
 
-
-class CategoryName(BaseModel):
-    name: str = Field(..., description="Name of the category")
-    data: Category = Field(..., description="Category data")
-
-
-class CategoryOut(BaseModel):
-    name: str = Field(..., description="Name of the category")
-    url: str = Field(..., description="URL of the category")
-    faculty_count: int = Field(
-        ..., description="Number of faculty members in the category"
-    )
-    department_count: int = Field(
-        ..., description="Number of departments in the category"
-    )
-    article_count: int = Field(..., description="Number of articles in the category")
-    faculty: List[str] = Field(
-        ..., description="List of faculty members in the category"
-    )
-    departments: List[str] = Field(
-        ..., description="List of departments in the category"
-    )
-    titles: List[str] = Field(..., description="List of article titles in the category")
-    tc_count: int = Field(..., description="Total number of citations in the category")
-    citation_average: int = Field(
-        ..., description="Average number of citations in the category"
-    )
+    Attributes:
+        tc_count (int): Total citation count for the article.
+        faculty_members (list[str]): List of faculty members associated with the article.
+        faculty_affiliations (dict[str, list[str]]): Mapping of faculty members to their affiliations.
+    """
+    title: str = Field(default="")
+    tc_count: int = 0
+    faculty_members: list[str] = Field(default_factory=list)
+    faculty_affiliations: dict[str, list[str]] = Field(default_factory=dict)
+    abstract: str = Field(default="")
+    license_url: str = Field(default="")
+    date_published_print: str = Field(default="")
+    date_published_online: str = Field(default="")
+    journal: str = Field(default="")
+    download_url: str = Field(default="")
+    doi: str = Field(default="")
+    

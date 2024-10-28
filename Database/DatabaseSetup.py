@@ -1,48 +1,71 @@
-import datetime  # This will be needed later
 import os
 import json
 from dotenv import load_dotenv
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
-from models import CategoryName, Category, CategoryOut
-from pprint import pprint
+from pymongo.collection import Collection
+from typing import List, Dict, Any
+import atexit
 
-load_dotenv()
-mongodb_url = os.getenv("MONGODB_URL")
+class DatabaseWrapper:
+    def __init__(self, db_name: str, collection_name: str):
+        load_dotenv()
+        self.mongo_url = os.getenv("MONGODB_URL")
+        self.client = MongoClient(self.mongo_url, server_api=ServerApi("1"))
+        self.db = self.client[db_name]
+        self.collection: Collection = self.db[collection_name]
+        self._test_connection()
+        atexit.register(self.close_connection)
 
-
-class DatabaseSetup:
-    def __init__(self, mongo_url: str):
-        client = MongoClient(mongodb_url, server_api=ServerApi("1"))
-        # Send a ping to confirm a successful connection
+    def _test_connection(self):
         try:
-            client.admin.command("ping")
+            self.client.admin.command("ping")
             print("Pinged your deployment. You successfully connected to MongoDB!")
         except Exception as e:
-            print(e)
+            print(f"Connection error: {e}")
 
-    def dump_category_data(self, category_data: list[dict]):
-        client = MongoClient(mongodb_url, server_api=ServerApi("1"))
-        db = client["Site_Data"]
-        collection = db["Categories"]
-        collection.insert_many(category_data)
-        print("Data inserted successfully")
-        client.close
+    def insert_data(self, data: List[Dict[str, Any]]):
+        try:
+            self.collection.insert_many(data)
+            print("Data inserted successfully")
+        except Exception as e:
+            print(f"Insert error: {e}")
 
-    def update_category_data(self):
-        pass
+    def update_data(self, query: Dict[str, Any], update: Dict[str, Any]):
+        try:
+            self.collection.update_many(query, {"$set": update})
+            print("Data updated successfully")
+        except Exception as e:
+            print(f"Update error: {e}")
 
+    def find_data(self, query: Dict[str, Any]) -> List[Dict[str, Any]]:
+        try:
+            return list(self.collection.find(query))
+        except Exception as e:
+            print(f"Find error: {e}")
+            return []
+    
+    def show_all(self):
+        self.collection.find_all()
+        
+    def insert_articles(self, article_data: Dict[str, Any]):
+
+        article_data = []
+        for key, value in article_data.items():
+            value["_id"] = key
+            article_data.append(value)
+
+        self.insert_data(article_data)
+
+    def close_connection(self):
+        self.client.close()
+        print("Connection closed")
 
 if __name__ == "__main__":
-    with open("processed_category_data.json", "r") as file:
-        data = json.load(file)
+    with open("article_data.json", "r") as file:
+            data = json.load(file)
 
-    db_setup = DatabaseSetup(mongodb_url)
+    database = DatabaseWrapper()
 
-    category_data = []
-    for key, value in data.items():
-        value["name"] = key
-        db_output = CategoryOut(**value)
-        category_data.append(db_output.dict())
+    database.insert_articles(data)
 
-    db_setup.dump_category_data(category_data)
