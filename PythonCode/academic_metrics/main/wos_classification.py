@@ -593,7 +593,7 @@ if __name__ == "__main__":
         strategy_factory=strategy_factory,
         warning_manager=warning_manager,
         crossref_run=True,
-        make_files=False,
+        make_files=True,
         extend=False,
     )
     print("Processing complete.")

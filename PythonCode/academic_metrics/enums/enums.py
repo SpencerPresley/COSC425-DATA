@@ -21,3 +21,4 @@ class AttributeTypes(Enum):
     CROSSREF_JOURNAL = "crossref-journal"
     CROSSREF_URL = "crossref-url"
     CROSSREF_DOI = "crossref-doi"
+    CROSSREF_THEMES = "crossref-themes"

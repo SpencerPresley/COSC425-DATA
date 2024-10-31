@@ -281,6 +281,7 @@ class CrossrefArticleDetails:
     journal: str = field(default="")
     download_url: str = field(default="")
     doi: str = field(default="")
+    themes: list[str] = field(default_factory=list)
     
 @dataclass
 class CrossrefArticleStats:

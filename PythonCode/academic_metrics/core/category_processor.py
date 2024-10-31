@@ -33,7 +33,11 @@ class CategoryProcessor:
 
     def category_finder(self, file_path, crossref_bool):
         if crossref_bool:
-            self.run_category_generation_engine(file_path)
+            with open(file_path, "r") as f:
+                crossref_item = json.load(f)
+            self.update_category_stats(
+                file_path=file_path, data=crossref_item, crossref_bool=True
+            )
         else:
             file_content = None
             with open(file_path, "r") as current_file:
@@ -74,6 +78,7 @@ class CategoryProcessor:
                     AttributeTypes.CROSSREF_JOURNAL,
                     AttributeTypes.CROSSREF_URL,
                     AttributeTypes.CROSSREF_DOI,
+                    AttributeTypes.CROSSREF_THEMES,
                 ],
             )
 
@@ -137,6 +142,11 @@ class CategoryProcessor:
                 if attribute_results[AttributeTypes.CROSSREF_DOI][0]
                 else None
             )
+            themes = (
+                attribute_results[AttributeTypes.CROSSREF_THEMES][1]
+                if attribute_results[AttributeTypes.CROSSREF_THEMES][0]
+                else None
+            )
             return (
                 categories,
                 faculty_members,
@@ -150,6 +160,7 @@ class CategoryProcessor:
                 journal,
                 download_url,
                 doi,
+                themes,
             )
 
         else:
@@ -203,6 +214,7 @@ class CategoryProcessor:
                 journal,
                 download_url,
                 doi,
+                themes,
             ) = self.call_get_attributes(
                 data=data, crossref_bool=crossref_bool, lines=lines
             )
@@ -252,7 +264,7 @@ class CategoryProcessor:
             tc_count=tc_count,
             title=title,
             crossref_bool=crossref_bool,
-        )
+            )
 
         if crossref_bool:
             self.update_doi_list(categories=categories, doi=doi)
@@ -285,6 +297,7 @@ class CategoryProcessor:
                 journal=journal,
                 download_url=download_url,
                 doi=doi,
+                themes=themes,
             )
 
         else:
@@ -489,6 +502,7 @@ class CategoryProcessor:
         journal: str = None,
         download_url: str = None,
         doi: str = None,
+        themes: list[str] = None,
     ):
         titles = []
         if isinstance(title, str):
@@ -513,6 +527,7 @@ class CategoryProcessor:
                 journal=journal if journal is not None else "",
                 download_url=download_url if download_url is not None else "",
                 doi=doi if doi is not None else "",
+                themes=themes if themes is not None else [],
             )
 
     def update_title_set(self, categories, title):

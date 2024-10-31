@@ -1741,3 +1741,9 @@ class CrossrefDOIExtractionStrategy(AttributeExtractionStrategy):
             entry_id=entry_text,
         )
         return (False, None)
+
+@StrategyFactory.register_strategy(AttributeTypes.CROSSREF_THEMES)
+class CrossrefThemesExtractionStrategy(AttributeExtractionStrategy):
+    def extract_attribute(self, entry_text: dict) -> tuple[bool, list[str]]:
+        themes = entry_text.get("themes", [])
+        return (True, themes)
