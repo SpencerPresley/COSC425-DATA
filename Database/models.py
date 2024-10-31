@@ -17,6 +17,7 @@ class CrossrefArticleDetails(BaseModel):
         faculty_members (list[str]): List of faculty members associated with the article.
         faculty_affiliations (dict[str, list[str]]): Mapping of faculty members to their affiliations.
     """
+    _id: str = Field(default="")
     title: str = Field(default="")
     tc_count: int = 0
     faculty_members: list[str] = Field(default_factory=list)
