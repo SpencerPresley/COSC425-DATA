@@ -24,6 +24,6 @@ dependencies = [
 ]
 
 [tool.setuptools.packages.find]
-where = ["PythonCode"]
+where = ["src"]
 include = ["academic_metrics*"]
 namespaces = false
