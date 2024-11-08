@@ -2,7 +2,14 @@ repos:
 -   repo: https://github.com/psf/black
     rev: 23.12.1
     hooks:
+    -   id: black
+        stages: [pre-commit]
+        args: [--fast]
+        types: [python]
+        files: '^.*\.py$'
     -   id: black-jupyter
         stages: [pre-commit]
         args: [--fast]
+        types: [jupyter]
+        files: '^.*\.ipynb$'
         additional_dependencies: ['black[jupyter]']
