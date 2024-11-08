@@ -21,6 +21,9 @@ dependencies = [
     "Requests",
     "striprtf",
     "datasketch",
+    "black",
+    "black[jupyter]",
+    "pre-commit"
 ]
 
 [tool.setuptools.packages.find]
