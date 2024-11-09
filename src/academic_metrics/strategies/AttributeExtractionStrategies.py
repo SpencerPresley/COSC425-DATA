@@ -1482,9 +1482,9 @@ class CrossrefDepartmentExtractionStrategy(AttributeExtractionStrategy):
         department_affiliations: dict[str, str] = {}
         first_author = sequence_dict.get("first", "")
         if first_author:
-            department_affiliations[
-                first_author.get("author_name", "Unknown")
-            ] = first_author.get("affiliations", [])
+            department_affiliations[first_author.get("author_name", "Unknown")] = (
+                first_author.get("affiliations", [])
+            )
 
         additional_authors = sequence_dict.get("additional", [])
         if additional_authors:

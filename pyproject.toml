@@ -25,6 +25,7 @@ dependencies = [
     "black[jupyter]",
     "pre-commit",
     "shortuuid",
+    "python-dotenv",
 ]
 
 [tool.setuptools.packages.find]

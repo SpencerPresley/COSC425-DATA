@@ -84,9 +84,9 @@ class ChainWrapper:
         self.chain: Runnable = chain
         self.parser: Optional[Union[PydanticOutputParser, JsonOutputParser]] = parser
         self.return_type: Optional[Literal["pydantic_model", "json"]] = return_type
-        self.preprocessor: Optional[
-            Callable[[Dict[str, Any]], Dict[str, Any]]
-        ] = preprocessor
+        self.preprocessor: Optional[Callable[[Dict[str, Any]], Dict[str, Any]]] = (
+            preprocessor
+        )
         self.postprocessor: Optional[Callable[[Any], Any]] = postprocessor
 
     def __str__(self) -> str:
@@ -217,20 +217,20 @@ class ChainManager:
         self.llm_model_type: str = self._get_llm_model_type(llm_model=llm_model)
         self.llm_kwargs: Dict[str, Any] = llm_kwargs or {}
         self.llm_temperature: float = llm_temperature
-        self.llm: Union[
-            ChatOpenAI, ChatAnthropic, ChatGoogleGenerativeAI
-        ] = self._initialize_llm(
-            api_key=self.api_key,
-            llm_model_type=self.llm_model_type,
-            llm_model=self.llm_model,
-            llm_temperature=self.llm_temperature,
-            **self.llm_kwargs,
+        self.llm: Union[ChatOpenAI, ChatAnthropic, ChatGoogleGenerativeAI] = (
+            self._initialize_llm(
+                api_key=self.api_key,
+                llm_model_type=self.llm_model_type,
+                llm_model=self.llm_model,
+                llm_temperature=self.llm_temperature,
+                **self.llm_kwargs,
+            )
         )
         self.chain_composer: ChainComposer = ChainComposer()
         self.global_variables: Dict[str, Any] = {}
-        self.preprocessor: Optional[
-            Callable[[Dict[str, Any]], Dict[str, Any]]
-        ] = preprocessor
+        self.preprocessor: Optional[Callable[[Dict[str, Any]], Dict[str, Any]]] = (
+            preprocessor
+        )
         self.postprocessor: Optional[Callable[[Any], Any]] = postprocessor
         self.temp_return_type: Optional[Literal["pydantic_model", "json"]] = None
 

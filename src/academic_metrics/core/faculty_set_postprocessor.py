@@ -48,9 +48,9 @@ class FacultyPostprocessor:
         self.minhash_util = MinHashUtility(
             num_hashes=100
         )  # Initialize MinHashUtility with 100 hash functions
-        self.name_variations: dict[
-            str, NameVariation
-        ] = {}  # Dictionary to store NameVariation objects for each normalized name
+        self.name_variations: dict[str, NameVariation] = (
+            {}
+        )  # Dictionary to store NameVariation objects for each normalized name
 
     def get_temp_dict(self) -> dict:
         """
