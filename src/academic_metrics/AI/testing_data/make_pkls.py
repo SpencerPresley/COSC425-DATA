@@ -107,9 +107,11 @@ if __name__ == "__main__":
     set_log_to_console(True)
     logger.info("Set LOG_TO_CONSOLE True")
     logger.info("Getting directories")
-    method_extraction_directory, sentence_analysis_directory, summary_directory = (
-        get_directories()
-    )
+    (
+        method_extraction_directory,
+        sentence_analysis_directory,
+        summary_directory,
+    ) = get_directories()
     logger.info(
         f"Got directories: {method_extraction_directory}, {sentence_analysis_directory}, {summary_directory}"
     )

@@ -91,9 +91,9 @@ class ChainWrapper:
     ):
         self.chain: Runnable = chain
         self.parser: Optional[Union[PydanticOutputParser, JsonOutputParser]] = parser
-        self.preprocessor: Optional[Callable[[Dict[str, Any]], Dict[str, Any]]] = (
-            preprocessor
-        )
+        self.preprocessor: Optional[
+            Callable[[Dict[str, Any]], Dict[str, Any]]
+        ] = preprocessor
         self.postprocessor: Optional[Callable[[Any], Any]] = postprocessor
 
     def __str__(self) -> str:
@@ -159,7 +159,6 @@ class ChainComposer:
         data_dict: Dict[str, Any],
         data_dict_update_function: Optional[Callable[[Dict[str, Any]], None]] = None,
     ) -> Dict[str, Any]:
-
         if not data_dict:
             warnings.warn(
                 "No variables provided for the chain. Please ensure you have provided the necessary variables. If you have variable placeholders and do not pass them in it will result in an error."
@@ -201,14 +200,14 @@ class ChainManager:
         logger.info(f"Initializing LLM: {self.llm_model}")
         self.llm_kwargs: Dict[str, Any] = llm_kwargs or {}
         self.llm_temperature: float = llm_temperature
-        self.llm: Union[ChatOpenAI, ChatAnthropic, ChatGoogleGenerativeAI] = (
-            self._initialize_llm(
-                api_key=self.api_key,
-                llm_model_type=self.llm_model_type,
-                llm_model=self.llm_model,
-                llm_temperature=self.llm_temperature,
-                **self.llm_kwargs,
-            )
+        self.llm: Union[
+            ChatOpenAI, ChatAnthropic, ChatGoogleGenerativeAI
+        ] = self._initialize_llm(
+            api_key=self.api_key,
+            llm_model_type=self.llm_model_type,
+            llm_model=self.llm_model,
+            llm_temperature=self.llm_temperature,
+            **self.llm_kwargs,
         )
         logger.info(f"Initialized LLM: {self.llm}")
 
@@ -223,9 +222,9 @@ class ChainManager:
         self.chain_variables_update_overwrite_warning_counter: int = 0
 
         logger.info(f"Initializing Preprocessor {preprocessor}")
-        self.preprocessor: Optional[Callable[[Dict[str, Any]], Dict[str, Any]]] = (
-            preprocessor
-        )
+        self.preprocessor: Optional[
+            Callable[[Dict[str, Any]], Dict[str, Any]]
+        ] = preprocessor
         logger.info(f"Initialized Preprocessor: {self.preprocessor}")
 
         logger.info(f"Initializing Postprocessor {postprocessor}")

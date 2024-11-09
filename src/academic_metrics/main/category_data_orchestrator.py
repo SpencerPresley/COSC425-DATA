@@ -5,12 +5,12 @@ import os
 # print("sys.path:", sys.path)
 # print("Current working directory:", os.getcwd())
 # print("Contents of current directory:", os.listdir())
-    
+
 from academic_metrics.mapping import AbstractCategoryMap
 from academic_metrics.strategies import StrategyFactory
 from academic_metrics.utils import (
-    WarningManager, 
-    Utilities, 
+    WarningManager,
+    Utilities,
 )
 from academic_metrics.utils.taxonomy_util import Taxonomy
 from academic_metrics.core import (
@@ -28,6 +28,7 @@ import shortuuid
 
 import json
 import re
+
 
 class CategoryDataOrchestrator:
     """
@@ -109,10 +110,10 @@ class CategoryDataOrchestrator:
 
         # post-processor object
         self.faculty_postprocessor = FacultyPostprocessor()
-        
+
     def run_orchestrator(self):
         self.category_processor.process_data_list(self.data)
-        
+
         # category counts dict to pass to refine faculty sets
         category_counts: dict[str, CategoryInfo] = self.get_category_counts()
 
@@ -120,16 +121,16 @@ class CategoryDataOrchestrator:
         self.refine_faculty_sets(
             faculty_postprocessor=self.faculty_postprocessor,
             faculty_department_manager=self.faculty_department_manager,
-            category_dict=category_counts
+            category_dict=category_counts,
         )
         self.refine_faculty_stats(
             faculty_stats=self.category_processor.faculty_stats,
             name_variations=self.faculty_postprocessor.name_variations,
             category_dict=category_counts,
         )
-        
+
         self._save_all_results()
-        
+
     def _save_all_results(self):
         # Serialize the processed data and save it
         self.serialize_and_save_data(
@@ -142,7 +143,7 @@ class CategoryDataOrchestrator:
                 self.output_dir_path, "test_processed_faculty_stats_data.json"
             )
         )
-        
+
         self.serialize_and_save_article_stats(
             output_path=os.path.join(
                 self.output_dir_path, "test_processed_article_stats_data.json"
@@ -277,12 +278,7 @@ class CategoryDataOrchestrator:
         categories_serializable = {
             category: self.convert_sets_to_lists(
                 category_info.to_dict(
-                    exclude_keys=[
-                        "files",
-                        "faculty",
-                        "departments",
-                        "titles"
-                    ]
+                    exclude_keys=["files", "faculty", "departments", "titles"]
                 )
             )
             for category, category_info in self.get_category_counts().items()
@@ -303,28 +299,28 @@ class CategoryDataOrchestrator:
             json.dump(categories_serializable, json_file, indent=4)
 
         print(f"Data serialized and saved to {output_path}")
-        
+
     def serialize_and_save_faculty_stats(self, *, output_path):
         faculty_stats_serializable = {
             category: self.convert_sets_to_lists(faculty_stats.to_dict())
             for category, faculty_stats in self.category_processor.faculty_stats.items()
         }
-        
+
         if self.extend:
             with open(output_path, "r") as json_file:
                 existing_data = json.load(json_file)
             existing_data.update(faculty_stats_serializable)
             faculty_stats_serializable = existing_data
-            
+
         with open(output_path, "w") as json_file:
             json.dump(faculty_stats_serializable, json_file, indent=4)
-        
+
     def serialize_and_save_article_stats(self, *, output_path):
         article_stats_serializable = {
             category: self.convert_sets_to_lists(article_stats.to_dict())
             for category, article_stats in self.category_processor.article_stats.items()
         }
-        
+
         # Read and update existing data if extending
         if self.extend:
             with open(output_path, "r") as json_file:
@@ -340,7 +336,7 @@ class CategoryDataOrchestrator:
             "Data Serialization",
             f"Crossref Article Stat Data serialized and saved to {output_path}",
         )
-          
+
     def serialize_and_save_article_stats_obj(self, *, output_path):
         article_stats_serializable = self.category_processor.article_stats_obj.to_dict()
         article_stats_to_save = article_stats_serializable["article_citation_map"]
@@ -360,7 +356,7 @@ class CategoryDataOrchestrator:
             "Data Serialization",
             f"Crossref Article Stat Data serialized and saved to {output_path}",
         )
-                
+
     def convert_sets_to_lists(self, data_dict):
         """
         Recursively converts sets to lists in a dictionary.
@@ -385,6 +381,7 @@ class CategoryDataOrchestrator:
             elif isinstance(value, dict):
                 data_dict[key] = self.convert_sets_to_lists(value)
         return data_dict
+
 
 if __name__ == "__main__":
     raise NotImplementedError(

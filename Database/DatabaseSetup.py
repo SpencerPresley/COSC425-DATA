@@ -15,8 +15,9 @@ Needed additions:
     - ability to query statistics for both and ability to add remove and check for elements 
 """
 
+
 class DatabaseWrapper:
-    def __init__(self,*, db_name: str, collection_name: str):
+    def __init__(self, *, db_name: str, collection_name: str):
         load_dotenv()
         self.mongo_url = os.getenv("MONGODB_URL")
         self.client = MongoClient(self.mongo_url, server_api=ServerApi("1"))
@@ -59,7 +60,7 @@ class DatabaseWrapper:
         except Exception as e:
             print(f"Find error: {e}")
             return []
-    
+
     def show_all(self):
         self.collection.find_all()
 
@@ -67,12 +68,12 @@ class DatabaseWrapper:
         self.client.close()
         print("Connection closed")
 
+
 class ArticleDatabase(DatabaseWrapper):
     def __init__(self, db_name: str, collection_name: str):
         super().__init__(db_name, collection_name)
 
     def insert_articles(self, article_data: Dict[str, Any]):
-
         article_data = []
         for key, value in article_data.items():
             value["_id"] = key
@@ -84,11 +85,11 @@ class ArticleDatabase(DatabaseWrapper):
         article["_id"] = identifier
         self.insert_item(article)
 
+
 if __name__ == "__main__":
     with open("article_data.json", "r") as file:
-            data = json.load(file)
+        data = json.load(file)
 
-    database = ArticleDatabase(db_name='Site_Data', collection_name='article_data')
+    database = ArticleDatabase(db_name="Site_Data", collection_name="article_data")
 
     database.insert_articles(data)
-

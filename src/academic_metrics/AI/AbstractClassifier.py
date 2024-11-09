@@ -357,9 +357,7 @@ class AbstractClassifier:
         return self
 
     def get_classification_results_by_doi(
-        self,
-        doi: str,
-        return_type: type[dict] | type[tuple] = dict
+        self, doi: str, return_type: type[dict] | type[tuple] = dict
     ) -> Union[Tuple[str, ...], Dict[str, Any]]:
         """Retrieves all categories and themes for a specific abstract via a DOI lookup.
 
@@ -383,10 +381,10 @@ class AbstractClassifier:
             >>> # Get results as dictionary
             >>> results = classifier.get_classification_results_by_doi("10.1234/example")
             >>> print(results["top_categories"])
-            
+
             >>> # Get results as tuple
             >>> top_cats, mid_cats, low_cats, themes = classifier.get_classification_results_by_doi(
-            ...     "10.1234/example", 
+            ...     "10.1234/example",
             ...     return_type=tuple
             ... )
         """
@@ -771,7 +769,7 @@ class AbstractClassifier:
         with open(output_path, "w") as f:
             json.dump(self.classification_results, f, indent=4)
         return self
-    
+
     def get_classification_results_dict(self) -> Dict[str, Dict[str, Any]]:
         """Retrieves processed classification results for all processed abstracts.
 
@@ -858,6 +856,7 @@ class AbstractClassifier:
         with open(output_path, "w") as f:
             json.dump(self.raw_theme_outputs, f, indent=4)
         return self
+
 
 if __name__ == "__main__":
     from academic_metrics.AI.testing_data.abstracts import doi_to_abstract_dict

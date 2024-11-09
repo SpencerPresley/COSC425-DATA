@@ -4,12 +4,9 @@ repos:
     hooks:
     -   id: black
         stages: [pre-commit]
-        args: [--fast, "."]
         types: [python]
-        files: '^.*\.py$'
+        language_version: python3
     -   id: black-jupyter
         stages: [pre-commit]
-        args: [--fast, "."]
         types: [jupyter]
-        files: '^.*\.ipynb$'
         additional_dependencies: ['black[jupyter]']

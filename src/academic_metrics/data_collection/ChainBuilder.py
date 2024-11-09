@@ -1,4 +1,5 @@
 import logging
+
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
@@ -28,6 +29,7 @@ from langchain_anthropic import ChatAnthropic
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.output_parsers import PydanticOutputParser, JsonOutputParser
 
+
 class ChainBuilder:
     def __init__(
         self,
@@ -43,10 +45,10 @@ class ChainBuilder:
 
     def __str__(self) -> str:
         return f"ChainBuilder(chat_prompt={type(self.chat_prompt).__name__}, llm={self.llm}, parser={self.parser})"
-    
+
     def __repr__(self) -> str:
         return self.__str__()
-    
+
     def _build_chain(self) -> Runnable:
         # Build the chain
         chain: Runnable = RunnablePassthrough() | self.chat_prompt | self.llm
@@ -57,14 +59,14 @@ class ChainBuilder:
                 for field_name, field in pydantic_model.model_fields.items():
                     if field.default is not None:
                         logger.info(f"    Default: {field.default}")
-                
+
                 logger.info("\nModel Schema:")
                 logger.info(pydantic_model.model_json_schema())
 
             chain: Runnable = chain | self.parser
 
         return chain
-    
+
     def get_chain(self) -> Runnable:
         return self.chain
 
@@ -82,18 +84,26 @@ class ChainWrapper:
         self.chain: Runnable = chain
         self.parser: Optional[Union[PydanticOutputParser, JsonOutputParser]] = parser
         self.return_type: Optional[Literal["pydantic_model", "json"]] = return_type
-        self.preprocessor: Optional[Callable[[Dict[str, Any]], Dict[str, Any]]] = preprocessor
+        self.preprocessor: Optional[
+            Callable[[Dict[str, Any]], Dict[str, Any]]
+        ] = preprocessor
         self.postprocessor: Optional[Callable[[Any], Any]] = postprocessor
-        
+
     def __str__(self) -> str:
-        return (f"ChainWrapper(chain={self.chain}, parser={self.parser}, "
-                f"return_type={self.return_type})")
+        return (
+            f"ChainWrapper(chain={self.chain}, parser={self.parser}, "
+            f"return_type={self.return_type})"
+        )
 
     def __repr__(self) -> str:
         return self.__str__()
-    
+
     def run_chain(
-        self, *, input_data: Dict[str, Any] = None, is_last_chain: bool = False, return_type: Optional[Literal["pydantic_model", "json"]] = None
+        self,
+        *,
+        input_data: Dict[str, Any] = None,
+        is_last_chain: bool = False,
+        return_type: Optional[Literal["pydantic_model", "json"]] = None,
     ) -> Any:
         if input_data is None:
             input_data: Dict[str, Any] = {}
@@ -102,7 +112,9 @@ class ChainWrapper:
             input_data = self.preprocessor(input_data)
 
         # Invoke the chain with input_data
-        output: Optional[Union[BaseModel, Dict[str, Any], str]] = self.chain.invoke(input_data)
+        output: Optional[Union[BaseModel, Dict[str, Any], str]] = self.chain.invoke(
+            input_data
+        )
 
         if self.postprocessor:
             output = self.postprocessor(output)
@@ -123,7 +135,9 @@ class ChainWrapper:
             elif self.return_type == "pydantic_model":
                 pass  # Output is already a Pydantic model
             else:
-                raise ValueError(f"Unsupported return_type: {self.return_type}. Supported types: 'json', 'pydantic_model'.")
+                raise ValueError(
+                    f"Unsupported return_type: {self.return_type}. Supported types: 'json', 'pydantic_model'."
+                )
 
         return output
 
@@ -133,26 +147,36 @@ class ChainWrapper:
     def get_return_type(self) -> Union[str, None]:
         return self.return_type
 
+
 class ChainComposer:
     def __init__(self):
         self.chain_sequence: List[Tuple[ChainWrapper, Optional[str]]] = []
 
     def __str__(self) -> str:
         chain_info = ", ".join(
-            [f"{idx}: {wrapper}" for idx, (wrapper, _) in enumerate(self.chain_sequence)]
+            [
+                f"{idx}: {wrapper}"
+                for idx, (wrapper, _) in enumerate(self.chain_sequence)
+            ]
         )
         return f"ChainComposer(chains=[{chain_info}])"
 
     def __repr__(self) -> str:
         return self.__str__()
-    
+
     def add_chain(
-        self, *, chain_wrapper: ChainWrapper, output_passthrough_key_name: Optional[str] = None
+        self,
+        *,
+        chain_wrapper: ChainWrapper,
+        output_passthrough_key_name: Optional[str] = None,
     ):
         self.chain_sequence.append((chain_wrapper, output_passthrough_key_name))
 
     def run(
-        self, *, variables: Dict[str, Any], return_type: Optional[Literal["pydantic_model", "json"]] = None
+        self,
+        *,
+        variables: Dict[str, Any],
+        return_type: Optional[Literal["pydantic_model", "json"]] = None,
     ) -> str:
         data: Dict[str, Any] = variables.copy()
 
@@ -177,6 +201,7 @@ class ChainComposer:
         data: Union[BaseModel, Dict[str, Any], str] = data["_last_output"]
         return json.dumps(data, indent=4)
 
+
 class ChainManager:
     def __init__(
         self,
@@ -192,7 +217,9 @@ class ChainManager:
         self.llm_model_type: str = self._get_llm_model_type(llm_model=llm_model)
         self.llm_kwargs: Dict[str, Any] = llm_kwargs or {}
         self.llm_temperature: float = llm_temperature
-        self.llm: Union[ChatOpenAI, ChatAnthropic, ChatGoogleGenerativeAI] = self._initialize_llm(
+        self.llm: Union[
+            ChatOpenAI, ChatAnthropic, ChatGoogleGenerativeAI
+        ] = self._initialize_llm(
             api_key=self.api_key,
             llm_model_type=self.llm_model_type,
             llm_model=self.llm_model,
@@ -201,13 +228,17 @@ class ChainManager:
         )
         self.chain_composer: ChainComposer = ChainComposer()
         self.global_variables: Dict[str, Any] = {}
-        self.preprocessor: Optional[Callable[[Dict[str, Any]], Dict[str, Any]]] = preprocessor
+        self.preprocessor: Optional[
+            Callable[[Dict[str, Any]], Dict[str, Any]]
+        ] = preprocessor
         self.postprocessor: Optional[Callable[[Any], Any]] = postprocessor
         self.temp_return_type: Optional[Literal["pydantic_model", "json"]] = None
 
     def __str__(self) -> str:
-        return (f"ChainManager(llm={self.llm}, chain_composer={self.chain_composer}, "
-                f"global_variables={self.global_variables})")
+        return (
+            f"ChainManager(llm={self.llm}, chain_composer={self.chain_composer}, "
+            f"global_variables={self.global_variables})"
+        )
 
     def __repr__(self) -> str:
         return self.__str__()
@@ -234,27 +265,39 @@ class ChainManager:
         **llm_kwargs: Dict[str, Any],
     ) -> Union[ChatOpenAI, ChatAnthropic, ChatGoogleGenerativeAI]:
         if llm_model_type == "openai":
-            return self._create_openai_llm(api_key, llm_model, llm_temperature, **llm_kwargs)
+            return self._create_openai_llm(
+                api_key, llm_model, llm_temperature, **llm_kwargs
+            )
         elif llm_model_type == "anthropic":
-            return self._create_anthropic_llm(api_key, llm_model, llm_temperature, **llm_kwargs)
+            return self._create_anthropic_llm(
+                api_key, llm_model, llm_temperature, **llm_kwargs
+            )
         elif llm_model_type == "google":
-            return self._create_google_llm(api_key, llm_model, llm_temperature, **llm_kwargs)
+            return self._create_google_llm(
+                api_key, llm_model, llm_temperature, **llm_kwargs
+            )
         else:
             raise ValueError(
                 f"Unsupported LLM model type: {llm_model_type}. Supported types: openai, anthropic, google."
             )
 
-    def _create_openai_llm(self, api_key: str, llm_model: str, llm_temperature: float, **llm_kwargs) -> ChatOpenAI:
+    def _create_openai_llm(
+        self, api_key: str, llm_model: str, llm_temperature: float, **llm_kwargs
+    ) -> ChatOpenAI:
         return ChatOpenAI(
             model=llm_model, api_key=api_key, temperature=llm_temperature, **llm_kwargs
         )
 
-    def _create_anthropic_llm(self, api_key: str, llm_model: str, llm_temperature: float, **llm_kwargs) -> ChatAnthropic:
+    def _create_anthropic_llm(
+        self, api_key: str, llm_model: str, llm_temperature: float, **llm_kwargs
+    ) -> ChatAnthropic:
         return ChatAnthropic(
             model=llm_model, api_key=api_key, temperature=llm_temperature, **llm_kwargs
         )
 
-    def _create_google_llm(self, api_key: str, llm_model: str, llm_temperature: float, **llm_kwargs) -> ChatGoogleGenerativeAI:
+    def _create_google_llm(
+        self, api_key: str, llm_model: str, llm_temperature: float, **llm_kwargs
+    ) -> ChatGoogleGenerativeAI:
         return ChatGoogleGenerativeAI(
             model=llm_model, api_key=api_key, temperature=llm_temperature, **llm_kwargs
         )
@@ -263,7 +306,9 @@ class ChainManager:
         self, parser_type: str, pydantic_output_model: Optional[BaseModel] = None
     ) -> Union[PydanticOutputParser, JsonOutputParser]:
         if parser_type == "pydantic":
-            return self._create_pydantic_parser(pydantic_output_model=pydantic_output_model)
+            return self._create_pydantic_parser(
+                pydantic_output_model=pydantic_output_model
+            )
         elif parser_type == "json":
             return self._create_json_parser(pydantic_output_model=pydantic_output_model)
         else:
@@ -273,7 +318,9 @@ class ChainManager:
         self, *, pydantic_output_model: BaseModel
     ) -> PydanticOutputParser:
         if not pydantic_output_model:
-            raise ValueError("pydantic_output_model must be provided for 'pydantic' parser_type.")
+            raise ValueError(
+                "pydantic_output_model must be provided for 'pydantic' parser_type."
+            )
         return PydanticOutputParser(pydantic_object=pydantic_output_model)
 
     def _create_json_parser(
@@ -290,7 +337,10 @@ class ChainManager:
         return_type,
         pydantic_output_model,
     ) -> None:
-        if len(self.chain_composer.chain_sequence) > 0 and not output_passthrough_key_name:
+        if (
+            len(self.chain_composer.chain_sequence) > 0
+            and not output_passthrough_key_name
+        ):
             if not ignore_output_passthrough_key_name_error:
                 raise ValueError(
                     "output_passthrough_key_name not provided and ignore_output_passthrough_key_name_error is False. output_passthrough_key_name is required to identify the output of the chain layer in order to pass the output to the next chain layer. If you do not specify output_passthrough_key_name, the output of the chain layer will not be assigned to a variable and thus will not be available to the next chain layer. If you do not need the output of the chain layer to be passed to the next chain layer, you can set ignore_output_passthrough_key_name_error to True."
@@ -309,13 +359,15 @@ class ChainManager:
                 raise ValueError(
                     "return_type must be specified when parser_type is specified. return_type can be 'pydantic_model' or 'json'."
                 )
-            if parser_type == 'pydantic':
+            if parser_type == "pydantic":
                 if not pydantic_output_model:
                     raise ValueError(
                         "pydantic_output_model must be specified when parser_type is 'pydantic'."
                     )
-            if parser_type == 'json' and return_type != 'json':
-                raise ValueError("When parser_type is 'json', return_type must be 'json'.")
+            if parser_type == "json" and return_type != "json":
+                raise ValueError(
+                    "When parser_type is 'json', return_type must be 'json'."
+                )
         else:
             if return_type:
                 raise ValueError(
@@ -325,16 +377,18 @@ class ChainManager:
                 warnings.warn(
                     "pydantic_output_model is provided but parser_type is None. The pydantic_output_model will not be used."
                 )
-    
-    def _format_chain_sequence(self, chain_sequence: List[Tuple[ChainWrapper, Optional[str]]]) -> None:
+
+    def _format_chain_sequence(
+        self, chain_sequence: List[Tuple[ChainWrapper, Optional[str]]]
+    ) -> None:
         for index, (chain_wrapper, output_name) in enumerate(chain_sequence):
-            print(f'Chain {index + 1}:')
-            print(f'\tOutput Name: {output_name}')
-            print(f'\tParser Type: {chain_wrapper.get_parser_type()}')
-            print(f'\tReturn Type: {chain_wrapper.get_return_type()}')
+            print(f"Chain {index + 1}:")
+            print(f"\tOutput Name: {output_name}")
+            print(f"\tParser Type: {chain_wrapper.get_parser_type()}")
+            print(f"\tReturn Type: {chain_wrapper.get_return_type()}")
             print(f"\tPreprocessor: {chain_wrapper.preprocessor}")
             print(f"\tPostprocessor: {chain_wrapper.postprocessor}")
-            
+
     def add_chain_layer(
         self,
         *,
@@ -348,18 +402,22 @@ class ChainManager:
         return_type: Optional[Literal["pydantic_model", "json"]] = None,
         pydantic_output_model: Optional[BaseModel] = None,
     ) -> None:
-        logger.info(f'Adding chain layer with output_passthrough_key_name: {output_passthrough_key_name}')
-        logger.info(f'ignore_output_passthrough_key_name_error: {ignore_output_passthrough_key_name_error}')
-        logger.info(f'parser_type: {parser_type}')
-        logger.info(f'return_type: {return_type}')
-        logger.info(f'pydantic_output_model: {pydantic_output_model}')
-        logger.info(f'preprocessor: {preprocessor}')
-        logger.info(f'postprocessor: {postprocessor}')
-        logger.info('--------------------------------')
-        logger.info(f'system_prompt: {system_prompt}')
-        logger.info(f'human_prompt: {human_prompt}')
-        logger.info('--------------------------------')
-        
+        logger.info(
+            f"Adding chain layer with output_passthrough_key_name: {output_passthrough_key_name}"
+        )
+        logger.info(
+            f"ignore_output_passthrough_key_name_error: {ignore_output_passthrough_key_name_error}"
+        )
+        logger.info(f"parser_type: {parser_type}")
+        logger.info(f"return_type: {return_type}")
+        logger.info(f"pydantic_output_model: {pydantic_output_model}")
+        logger.info(f"preprocessor: {preprocessor}")
+        logger.info(f"postprocessor: {postprocessor}")
+        logger.info("--------------------------------")
+        logger.info(f"system_prompt: {system_prompt}")
+        logger.info(f"human_prompt: {human_prompt}")
+        logger.info("--------------------------------")
+
         self._run_chain_validation_checks(
             output_passthrough_key_name=output_passthrough_key_name,
             ignore_output_passthrough_key_name_error=ignore_output_passthrough_key_name_error,
@@ -367,7 +425,7 @@ class ChainManager:
             return_type=return_type,
             pydantic_output_model=pydantic_output_model,
         )
-        
+
         self.temp_return_type = return_type
 
         parser = None
@@ -403,14 +461,17 @@ class ChainManager:
         )
 
         # Add the chain to the composer
-        self.chain_composer.add_chain(chain_wrapper=chain_wrapper, output_passthrough_key_name=output_passthrough_key_name)
+        self.chain_composer.add_chain(
+            chain_wrapper=chain_wrapper,
+            output_passthrough_key_name=output_passthrough_key_name,
+        )
 
     def set_global_variables(self, variables: Dict[str, Any]) -> None:
         self.global_variables.update(variables)
-    
+
     def get_chain_sequence(self) -> List[Tuple[ChainWrapper, Optional[str]]]:
         return self.chain_composer.chain_sequence
-    
+
     def print_chain_sequence(self) -> None:
         chain_sequence = self.chain_composer.chain_sequence
         self._format_chain_sequence(chain_sequence)
@@ -427,10 +488,17 @@ class ChainManager:
                 "Another reason to set ignore_output_passthrough_key_name_error to True is if you have a multi-layer chain and this is your last chain layer. "
                 "Check your prompt strings for your placeholder variables, these names should match the keys in prompt_variables_dict passed into the ChainManager.run() method."
             )
-        
+
         if self.temp_return_type is None:
-            raise ValueError("temp_return_type is not set. Ensure you have added at least one chain layer.")
-        
+            raise ValueError(
+                "temp_return_type is not set. Ensure you have added at least one chain layer."
+            )
+
         # Merge global variables with prompt variables
-        variables: Dict[str, Any] = {**self.global_variables, **(prompt_variables_dict or {})}
-        return self.chain_composer.run(variables=variables, return_type=self.temp_return_type)
+        variables: Dict[str, Any] = {
+            **self.global_variables,
+            **(prompt_variables_dict or {}),
+        }
+        return self.chain_composer.run(
+            variables=variables, return_type=self.temp_return_type
+        )

@@ -25,15 +25,17 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Suppress logging for certain libraries
-logging.getLogger('selenium').setLevel(logging.WARNING)
-logging.getLogger('aiohttp').setLevel(logging.WARNING)
-logging.getLogger('openai').setLevel(logging.WARNING)
-logging.getLogger('ChainBuilder').setLevel(logging.WARNING)
+logging.getLogger("selenium").setLevel(logging.WARNING)
+logging.getLogger("aiohttp").setLevel(logging.WARNING)
+logging.getLogger("openai").setLevel(logging.WARNING)
+logging.getLogger("ChainBuilder").setLevel(logging.WARNING)
+
 
 # create the cleaner output model
 class CleanerOutput(BaseModel):
     abstract: str
     extra_context: Dict[str, Any]
+
 
 def setup_chain(output_list):
     # instanciate the chain manager
@@ -79,19 +81,15 @@ def setup_chain(output_list):
         system_prompt=system_prompt,
         human_prompt=human_prompt,
         ignore_output_passthrough_key_name_error=True,
-        parser_type='pydantic',
-        return_type='json',
-        pydantic_output_model=CleanerOutput
+        parser_type="pydantic",
+        return_type="json",
+        pydantic_output_model=CleanerOutput,
     )
 
-    
-    prompt_variables = {
-        "output_list": str(output_list),
-        "json_structure": json_schema
-    }
+    prompt_variables = {"output_list": str(output_list), "json_structure": json_schema}
 
     results = chain_manager.run(prompt_variables_dict=prompt_variables)
-    
+
     results_dict = json.loads(results)
 
     return results_dict
@@ -125,12 +123,16 @@ def get_abstract(url):
             logger.debug(f"Fetching URL: {url}")
             # Set up the WebDriver in headless mode
             options = Options()
-            options.add_argument('--headless') # headless will prevent the browser instance from displaying
-            options.add_argument('--disable-gpu')  # Disable GPU acceleration
-            options.add_argument('--no-sandbox')  # Bypass OS security model, required for running as root
-            options.add_argument('--disable-dev-shm-usage') 
+            options.add_argument(
+                "--headless"
+            )  # headless will prevent the browser instance from displaying
+            options.add_argument("--disable-gpu")  # Disable GPU acceleration
+            options.add_argument(
+                "--no-sandbox"
+            )  # Bypass OS security model, required for running as root
+            options.add_argument("--disable-dev-shm-usage")
             # Set up the WebDriver (for Firefox, replace with the path to your downloaded GeckoDriver)
-            service = Service('/home/usboot/Downloads/geckodriver')
+            service = Service("/home/usboot/Downloads/geckodriver")
             driver = webdriver.Firefox(service=service, options=options)
 
             driver.get(url)
@@ -139,29 +141,29 @@ def get_abstract(url):
             logger.debug(f"Fetched page content for URL: {url}")
 
             # Parse the HTML content using BeautifulSoup
-            soup = BeautifulSoup(page_content, 'html.parser')
+            soup = BeautifulSoup(page_content, "html.parser")
 
             # Attempt to find the abstract in common locations
             output_list = []
 
             # 1. <meta> tags
             try:
-                meta_names = ['citation_abstract', 'description', 'og:description']
+                meta_names = ["citation_abstract", "description", "og:description"]
                 text = ""
                 for name in meta_names:
-                    meta_tag = soup.find('meta', attrs={'name': name})
-                    if meta_tag and 'content' in meta_tag.attrs:
-                        output_list.append(meta_tag['content'])
-                        text += meta_tag['content']
+                    meta_tag = soup.find("meta", attrs={"name": name})
+                    if meta_tag and "content" in meta_tag.attrs:
+                        output_list.append(meta_tag["content"])
+                        text += meta_tag["content"]
                 logger.info(f"Finished processing meta tags")
             except Exception as e:
                 logger.error(f"Error processing meta tags: {e}")
 
             # 2. <p> tags
             try:
-                p_tags = soup.find_all('p')
+                p_tags = soup.find_all("p")
                 for p in p_tags:
-                    if 'abstract' in p.get_text().lower():
+                    if "abstract" in p.get_text().lower():
                         output_list.append(p.get_text())
                 logger.info(f"Finished processing paragraph tags")
             except Exception as e:
@@ -169,9 +171,9 @@ def get_abstract(url):
 
             # 3. <div> tags with specific classes or IDs
             try:
-                div_classes = ['abstract', 'article-abstract', 'summary']
+                div_classes = ["abstract", "article-abstract", "summary"]
                 for class_name in div_classes:
-                    div_tags = soup.find_all('div', class_=class_name)
+                    div_tags = soup.find_all("div", class_=class_name)
                     for div_tag in div_tags:
                         output_list.append(div_tag.get_text())
                 logger.info(f"Finished processing div tags")
@@ -180,7 +182,7 @@ def get_abstract(url):
 
             # 4. <article> tags
             try:
-                article_tags = soup.find_all('article')
+                article_tags = soup.find_all("article")
                 for article_tag in article_tags:
                     output_list.append(article_tag.get_text())
                 logger.info(f"Finished processing article tags")
@@ -189,7 +191,7 @@ def get_abstract(url):
 
             # 5. <span> tags
             try:
-                span_tags = soup.find_all('span')
+                span_tags = soup.find_all("span")
                 for span_tag in span_tags:
                     output_list.append(span_tag.get_text())
                 logger.info(f"Finished processing span tags")
@@ -202,13 +204,17 @@ def get_abstract(url):
                 for item in output_list:
                     total_tokens += len(item)
                 token_end = 100000 - total_tokens
-                logger.info(f"Total tokens calculated: {total_tokens}, tokens remaining: {token_end}")
+                logger.info(
+                    f"Total tokens calculated: {total_tokens}, tokens remaining: {token_end}"
+                )
             except Exception as e:
                 logger.error(f"Error calculating total tokens: {e}")
             # Add the next 80000 tokens after the text we have collected
-            output_list.append(page_content[total_tokens:total_tokens+token_end])
-            
-            logger.debug(f"Added first 100,000 characters of page content for URL: {url}")
+            output_list.append(page_content[total_tokens : total_tokens + token_end])
+
+            logger.debug(
+                f"Added first 100,000 characters of page content for URL: {url}"
+            )
             Abstract = setup_chain(output_list)
             logger.debug(f"Successfully processed abstract for DOI {url}")
 
@@ -219,10 +225,11 @@ def get_abstract(url):
             return None
     return None
 
+
 # Example usage
 if __name__ == "__main__":
     # test the get abstract function on a single doi link
-    data = get_abstract('http://dx.doi.org/10.3197/096327117x14913285800742')
+    data = get_abstract("http://dx.doi.org/10.3197/096327117x14913285800742")
 
     # print the data
     print(data)

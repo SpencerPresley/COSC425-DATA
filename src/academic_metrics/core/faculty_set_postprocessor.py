@@ -48,9 +48,9 @@ class FacultyPostprocessor:
         self.minhash_util = MinHashUtility(
             num_hashes=100
         )  # Initialize MinHashUtility with 100 hash functions
-        self.name_variations: dict[str, NameVariation] = (
-            {}
-        )  # Dictionary to store NameVariation objects for each normalized name
+        self.name_variations: dict[
+            str, NameVariation
+        ] = {}  # Dictionary to store NameVariation objects for each normalized name
 
     def get_temp_dict(self) -> dict:
         """
@@ -187,9 +187,11 @@ class FacultyPostprocessor:
         # most_frequent_variation is a dictionary that maps each normalized name to its most frequent variation
         # name_signatures is a dictionary that maps each name to its MinHash signature
         # to_remove is a set of names to be removed from the faculty set
-        most_frequent_variation, name_signatures, to_remove = (
-            self.get_duplicate_utilities(faculty_set, faculty_sets)
-        )
+        (
+            most_frequent_variation,
+            name_signatures,
+            to_remove,
+        ) = self.get_duplicate_utilities(faculty_set, faculty_sets)
 
         # Step 3: Compare each name against all others in the set for near duplicates
         for n1 in faculty_set:

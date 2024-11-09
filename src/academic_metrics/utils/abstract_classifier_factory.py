@@ -9,12 +9,9 @@ if TYPE_CHECKING:
 
 from academic_metrics.AI.AbstractClassifier import AbstractClassifier
 
+
 class ClassifierFactory:
-    def __init__(
-        self,
-        taxonomy: Taxonomy,
-        ai_api_key: str
-    ):
+    def __init__(self, taxonomy: Taxonomy, ai_api_key: str):
         self.taxonomy = taxonomy
         self.ai_api_key = ai_api_key
 
@@ -25,5 +22,5 @@ class ClassifierFactory:
         return AbstractClassifier(
             taxonomy=self.taxonomy,
             doi_to_abstract_dict=doi_abstract_dict,
-            api_key=self.ai_api_key
+            api_key=self.ai_api_key,
         )

@@ -15,6 +15,7 @@ if TYPE_CHECKING:
     from academic_metrics.utils import WarningManager
     from academic_metrics.core import FacultyDepartmentManager
 
+
 class CategoryProcessor:
     def __init__(
         self,
@@ -24,7 +25,9 @@ class CategoryProcessor:
     ):
         self.utils: Utilities = utils
         self.warning_manager: WarningManager = warning_manager
-        self.faculty_department_manager: FacultyDepartmentManager = faculty_department_manager
+        self.faculty_department_manager: FacultyDepartmentManager = (
+            faculty_department_manager
+        )
         self.category_counts: dict[str, CategoryInfo] = {}
 
         # influential stats dictionaries
@@ -88,9 +91,9 @@ class CategoryProcessor:
         )
         license_url = (
             attribute_results[AttributeTypes.CROSSREF_LICENSE_URL][1]
-                if attribute_results[AttributeTypes.CROSSREF_LICENSE_URL][0]
-                else None
-            )
+            if attribute_results[AttributeTypes.CROSSREF_LICENSE_URL][0]
+            else None
+        )
         date_published_print = (
             attribute_results[AttributeTypes.CROSSREF_PUBLISHED_PRINT][1]
             if attribute_results[AttributeTypes.CROSSREF_PUBLISHED_PRINT][0]
@@ -139,7 +142,7 @@ class CategoryProcessor:
 
     def update_category_stats(self, data):
         # get attributes from the file
-        ( 
+        (
             categories,
             faculty_members,
             faculty_affiliations,
@@ -191,10 +194,10 @@ class CategoryProcessor:
             faculty_affiliations=faculty_affiliations,
             tc_count=tc_count,
             title=title,
-            )
+        )
 
         self.update_doi_list(categories=categories, doi=doi)
-        
+
         # update article stats for the category
         self.update_article_stats(
             article_stats=self.article_stats,
@@ -242,7 +245,6 @@ class CategoryProcessor:
 
         # loop through categories
         for category in categories:
-
             # ensure there's a FacultyStats object for the category and that the category exists
             if category not in faculty_stats:
                 faculty_stats[category] = FacultyStats()
@@ -294,9 +296,11 @@ class CategoryProcessor:
         for category in categories:
             if category not in article_stats:
                 article_stats[category] = CrossrefArticleStats()
-            
+
             if doi not in article_stats[category].article_citation_map:
-                article_stats[category].article_citation_map[doi] = CrossrefArticleDetails()
+                article_stats[category].article_citation_map[
+                    doi
+                ] = CrossrefArticleDetails()
 
             article_details = article_stats[category].article_citation_map[doi]
             article_details.title = title
@@ -326,7 +330,7 @@ class CategoryProcessor:
         for category in article_stats:
             for article in article_stats[category].article_citation_map.values():
                 article.faculty_members = list(set(article.faculty_members))
-        
+
     def update_article_stats_obj(
         self,
         *,
@@ -407,23 +411,27 @@ class CategoryProcessor:
         return clean_faculty_members
 
     def initialize_categories(self, categories):
-        print(f"\n\n\nDEBUG: Categories received in initialize_categories: {categories}\n\n\n")  # Debug
+        print(
+            f"\n\n\nDEBUG: Categories received in initialize_categories: {categories}\n\n\n"
+        )  # Debug
         input("Press Enter to continue...")
 
         top_level_categories = categories.get("top", [])
         mid_level_categories = categories.get("mid", [])
         low_level_categories = categories.get("low", [])
-        
-        print(f"\n\nDEBUG: Extracted category lists:\nTop: {top_level_categories}\nMid: {mid_level_categories}\nLow: {low_level_categories}\n\n")  # Debug
+
+        print(
+            f"\n\nDEBUG: Extracted category lists:\nTop: {top_level_categories}\nMid: {mid_level_categories}\nLow: {low_level_categories}\n\n"
+        )  # Debug
         input("Press Enter to continue...")
-        
+
         all_categories = []
         for category in top_level_categories:
             all_categories.append(category)
             if category not in self.category_counts:
                 # Intialize a new CategoryInfo dataclass instance for the given category
                 self.category_counts[category] = CategoryInfo()
-                
+
         for category in mid_level_categories:
             all_categories.append(category)
             if category not in self.category_counts:
@@ -433,7 +441,7 @@ class CategoryProcessor:
             all_categories.append(category)
             if category not in self.category_counts:
                 self.category_counts[category] = CategoryInfo()
-                
+
         return all_categories
 
     def get_faculty_stats(self):

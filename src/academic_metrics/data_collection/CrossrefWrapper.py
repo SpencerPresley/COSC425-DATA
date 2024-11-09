@@ -8,7 +8,8 @@ import aiohttp
 from tqdm.asyncio import tqdm
 from academic_metrics.data_collection.scraper import get_abstract
 
-class CrossrefWrapper():
+
+class CrossrefWrapper:
     """
     A wrapper class for interacting with the Crossref API to fetch and process publication data.
 
@@ -23,12 +24,16 @@ class CrossrefWrapper():
         years (list): List of years to fetch data for.
         data (dict): Data fetched from the Crossref API.
     """
-    def __init__(self, *, 
+
+    def __init__(
+        self,
+        *,
         base_url: str = "https://api.crossref.org/works",
         affiliation: str = "Salisbury%20University",
-        from_year: int = 2017, 
-        to_year: int = 2024, 
-        logger=None):
+        from_year: int = 2017,
+        to_year: int = 2024,
+        logger=None,
+    ):
         """
         Initializes the CrossrefWrapper with the given parameters.
 
@@ -49,9 +54,8 @@ class CrossrefWrapper():
         self.to_year = to_year
         self.base_url = base_url
         self.affiliation = affiliation
-        
 
-        self.years = [year for year in range(from_year, to_year+1)]
+        self.years = [year for year in range(from_year, to_year + 1)]
 
         # Use the provided logger or create a new one
         if logger is None:
@@ -63,7 +67,6 @@ class CrossrefWrapper():
             self.logger = logging.getLogger(__name__)
         else:
             self.logger = logger
-
 
         self.data = None
 
@@ -98,14 +101,15 @@ class CrossrefWrapper():
                         data = await response.json()
                         return data
                     else:
-                        self.logger.error(f"Unexpected status {response.status} for URL: {url}")
+                        self.logger.error(
+                            f"Unexpected status {response.status} for URL: {url}"
+                        )
                         return None
             except aiohttp.ClientError as e:
                 self.logger.error(f"Network error: {e}")
                 return None
         self.logger.warning(f"Exceeded max retries for URL: {url}")
         return None
-
 
     def build_request_url(
         self,
@@ -157,7 +161,9 @@ class CrossrefWrapper():
         """
         filtered_data = []
         for item in data.get("items", []):
-            if item["published"]["date-parts"][0][0] >= int(from_date.split("-")[0]) and item["published"]["date-parts"][0][0] <= int(to_date.split("-")[0]):
+            if item["published"]["date-parts"][0][0] >= int(
+                from_date.split("-")[0]
+            ) and item["published"]["date-parts"][0][0] <= int(to_date.split("-")[0]):
                 count = 0
                 for author in item.get("author", []):
                     for affil in author.get("affiliation", []):
@@ -219,7 +225,9 @@ class CrossrefWrapper():
             )
             self.logger.debug(f"Request URL: {req_url}")
 
-            data = await self.fetch_data(session, req_url, headers, retries, retry_delay)
+            data = await self.fetch_data(
+                session, req_url, headers, retries, retry_delay
+            )
             if data is None:
                 return (None, None)
 
@@ -253,7 +261,9 @@ class CrossrefWrapper():
                     sort_ord,
                     cursor,
                 )
-                data = await self.fetch_data(session, req_url, headers, retries, retry_delay)
+                data = await self.fetch_data(
+                    session, req_url, headers, retries, retry_delay
+                )
                 if data is None:
                     break
 
@@ -297,10 +307,12 @@ class CrossrefWrapper():
             end_time = time.time()
 
             # log the time it took
-            self.logger.info(f"All data fetched. This took {end_time - start_time} seconds")
+            self.logger.info(
+                f"All data fetched. This took {end_time - start_time} seconds"
+            )
 
             return final_result
-        
+
     def run_afetch_yrange(self):
         """
         Runs the asynchronous data fetch for multiple years.
@@ -310,13 +322,13 @@ class CrossrefWrapper():
         """
         # run the async function chain
         result_list = asyncio.run(self.fetch_data_for_multiple_years())
-        
+
         # log the num items returned
         self.logger.info(f"Number of items: {len(result_list)}")
-        
+
         self.result = result_list
         return result_list
-    
+
     def serialize_to_json(self, output_file):
         """
         Serializes the fetched data to a JSON file.
@@ -326,7 +338,7 @@ class CrossrefWrapper():
         """
         with open(output_file, "w") as file:
             json.dump(self.result, fp=file, indent=4)
-    
+
     def final_data_process(self):
         """
         Processes the final data, filling in missing abstracts.
@@ -336,23 +348,23 @@ class CrossrefWrapper():
         """
         # fill missing abstracts
         for item in self.result:
-            if 'abstract' not in item:
+            if "abstract" not in item:
                 try:
-                    data = get_abstract(item.get('URL'))
-                    item['abstract'] = data['abstract']
+                    data = get_abstract(item.get("URL"))
+                    item["abstract"] = data["abstract"]
                     num_processed += 1
                 except Exception as e:
                     continue
+
     def run_all_process(self):
         """
         Run all data fetching and processing
         """
-        self.run_afetch_yrange() # run async data fetch
+        self.run_afetch_yrange()  # run async data fetch
         self.final_data_process()
         self.serialize_to_json("postProcess.json")
 
-if __name__ == "__main__":
-    wrap = CrossrefWrapper() # create the wrapper
-    wrap.run_all_process()
 
-    
+if __name__ == "__main__":
+    wrap = CrossrefWrapper()  # create the wrapper
+    wrap.run_all_process()

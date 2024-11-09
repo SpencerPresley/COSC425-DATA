@@ -7,6 +7,7 @@ from typing import TYPE_CHECKING, List
 if TYPE_CHECKING:
     from academic_metrics.enums import AttributeTypes
 
+
 class Utilities:
     """
     A class containing various utility methods for processing and analyzing academic data.
@@ -23,8 +24,9 @@ class Utilities:
         make_files(self, *, path_to_file: str, split_files_dir_path: str):
             Splits a document into individual entries and creates a separate file for each entry in the specified output directory.
     """
+
     CROSSREF_FILE_NAME_SUFFIX = "_crossref_item.json"
-    
+
     def __init__(self, *, strategy_factory, warning_manager):
         """
         Initializes the Utilities class with the provided strategy factory and warning manager.
@@ -58,9 +60,7 @@ class Utilities:
             extraction_strategy = self.strategy_factory.get_strategy(
                 attribute, self.warning_manager
             )
-            attribute_results[attribute] = extraction_strategy.extract_attribute(
-                data
-            )
+            attribute_results[attribute] = extraction_strategy.extract_attribute(data)
         return attribute_results
 
     def crossref_file_splitter(self, *, path_to_file, split_files_dir_path):
@@ -112,6 +112,5 @@ class Utilities:
         Then returns the file_paths dictionary to make referencing any specific document later easier
         """
         return self.crossref_file_splitter(
-            path_to_file=path_to_file, 
-            split_files_dir_path=split_files_dir_path
+            path_to_file=path_to_file, split_files_dir_path=split_files_dir_path
         )
