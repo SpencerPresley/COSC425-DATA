@@ -411,19 +411,9 @@ class CategoryProcessor:
         return clean_faculty_members
 
     def initialize_categories(self, categories):
-        print(
-            f"\n\n\nDEBUG: Categories received in initialize_categories: {categories}\n\n\n"
-        )  # Debug
-        input("Press Enter to continue...")
-
         top_level_categories = categories.get("top", [])
         mid_level_categories = categories.get("mid", [])
         low_level_categories = categories.get("low", [])
-
-        print(
-            f"\n\nDEBUG: Extracted category lists:\nTop: {top_level_categories}\nMid: {mid_level_categories}\nLow: {low_level_categories}\n\n"
-        )  # Debug
-        input("Press Enter to continue...")
 
         all_categories = []
         for category in top_level_categories:
