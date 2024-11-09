@@ -10,6 +10,7 @@ from academic_metrics.utils import (
     Utilities,
     APIKeyValidator,
 )
+
 from academic_metrics.strategies import StrategyFactory
 from academic_metrics.constants import (
     INPUT_FILES_DIR_PATH,

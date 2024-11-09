@@ -3,10 +3,6 @@ repos:
     rev: 23.12.1
     hooks:
     -   id: black
-        stages: [pre-commit]
+        stages: [pre-commit, post-rewrite]
         types: [python]
         language_version: python3
-    -   id: black-jupyter
-        stages: [pre-commit]
-        types: [jupyter]
-        additional_dependencies: ['black[jupyter]']
