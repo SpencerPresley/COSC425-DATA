@@ -10,6 +10,13 @@ authors = [
     { name = "Spencer Presley", email = "spencerpresley96@gmail.com" },
     { name = "Cole Barbes", email = "cbarbes1@gulls.salisbury.edu" },
 ]
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
 dependencies = [
     "beautifulsoup4",
     "fuzzywuzzy",
@@ -27,6 +34,10 @@ dependencies = [
     "shortuuid",
     "python-dotenv",
 ]
+
+[project.urls]
+"Homepage" = "https://github.com/SpencerPresley/COSC425-DATA"
+"Bug Tracker" = "https://github.com/SpencerPresley/COSC425-DATA/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]

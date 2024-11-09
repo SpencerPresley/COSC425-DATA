@@ -38,7 +38,7 @@ class AbstractCategoryMap:
         utilities_obj: Utilities,
         warning_manager: WarningManager,
         dir_path: str,
-        crossref_bool: bool
+        crossref_bool: bool,
     ):
         """
         Initializes the AbstractCategoryMap instance.
