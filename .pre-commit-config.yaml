@@ -1,8 +1,0 @@
-repos:
--   repo: https://github.com/psf/black
-    rev: 23.12.1
-    hooks:
-    -   id: black
-        stages: [pre-commit, post-rewrite]
-        types: [python]
-        language_version: python3

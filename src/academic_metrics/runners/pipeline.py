@@ -21,7 +21,7 @@ from academic_metrics.core import ClassificationWrapper
 
 
 class PipelineRunner:
-    def __init__(self, ai_api_key: str):
+    def __init__(self,   ai_api_key: str):
         self.ai_api_key = ai_api_key
         self.taxonomy = self._create_taxonomy()
         self.warning_manager = self._create_warning_manager()
