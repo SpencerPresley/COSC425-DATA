@@ -10,17 +10,13 @@ Currently the data is outputted in JSON format. There exists a script for conver
 
 A more thorough offline file formatting will be implemented in the future.  
 
-## How to run
+## How to install
 
-1. Clone the repository:  
-    - HTTPS: `git clone https://github.com/SpencerPresley/COSC425-DATA.git`
-    - SSH: `git clone git@github.com:SpencerPresley/COSC425-DATA.git`
-2. Navigate into the project root directory `cd COSC425-DATA` and run the setup script `python setup_environment.py`:  
-    - This will install the academic_metrics package in editable mode and configure the pre-commit in `.git/hooks`
-    - The git hook will format the code on commit using black
-    - The package being in editable mode allows you to make changes to the code and test them without having to reinstall the package, unless you know what you are doing you shouldn't make changes, but the package will still run as it should when it comes to running it.  
-3. Create a `.env` file in the root directory and add your OpenAI API key: `OPENAI_API_KEY=<your_openai_api_key>`  
-4. Create a script `run_pipeline.py` in the root directory and add the following:  
+### For non-development
+
+1. Install the package `pip install academic-metrics`
+2. Create a `.env` file in the root directory and add your OpenAI API key: `OPENAI_API_KEY=<your_openai_api_key>`  
+3. Create a script `run_pipeline.py` in the root directory and add the following:  
 
     ```python
     from academic_metrics.runners.pipeline import PipelineRunner
@@ -29,7 +25,13 @@ A more thorough offline file formatting will be implemented in the future.
     runner.run_pipeline()
     ```  
 
-5. Run the script: `python run_pipeline.py`  
+### For development
+1. Clone the repository:  
+    - HTTPS: `git clone https://github.com/SpencerPresley/COSC425-DATA.git`
+    - SSH: `git clone git@github.com:SpencerPresley/COSC425-DATA.git`
+2. Navigate into the project root directory `cd COSC425-DATA` and run the setup script `python setup_environment.py`:  
+    - This will install the academic_metrics package in editable mode and configure the pre-commit in `.git/hooks`
+    - The git hook will format the code on commit using black
 
 ## Note
 
