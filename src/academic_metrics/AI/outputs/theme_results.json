@@ -1,0 +1,56 @@
+{
+    "10.1177/1059601117728145": {
+        "themes": [
+            "Influence of Expertise and Social Status",
+            "Team Dynamics",
+            "Perceived Expertise",
+            "Intrgroup Conflict"
+        ],
+        "individual_themes_analysis": [
+            {
+                "theme": "Influence of Expertise and Social Status",
+                "reasoning": "The research investigates how team members' actual expertise and social status affect their influence on team processes, highlighting their roles in determining member dynamics.",
+                "confidence_score": 0.95,
+                "supporting_passages": [
+                    "we examine the effects of team members' actual expertise and social status on the degree of influence they exert over team processes via perceived expertise.",
+                    "both actual expertise and social status had direct and indirect effects on member influence through perceived expertise."
+                ],
+                "abstract_summary_alignment": "This theme aligns with the abstract summary which emphasizes the impact of actual expertise and social status on team influence.",
+                "methodologies_justification": "The methodologies provide a framework for gathering and analyzing data but do not detract from the overarching theme of expertise and social status influence."
+            },
+            {
+                "theme": "Team Dynamics",
+                "reasoning": "The study focuses on the interactions and relationships among team members, particularly how influence is exerted based on various factors like expertise and social status.",
+                "confidence_score": 0.9,
+                "supporting_passages": [
+                    "we also explore the conditions under which teams rely on perceived expertise versus social status in determining influence relationships in teams.",
+                    "members who are being perceived as experts are more influential when task conflict is high or when relationship conflict is low."
+                ],
+                "abstract_summary_alignment": "The summary discusses the dynamics of influence in teams, thus aligning well with this theme.",
+                "methodologies_justification": "The methodologies support the exploration of team dynamics through data analysis but do not define the central theme of the research."
+            },
+            {
+                "theme": "Perceived Expertise",
+                "reasoning": "The concept of perceived expertise is central in understanding how team members influence each other, particularly how it shifts over the course of a project.",
+                "confidence_score": 0.85,
+                "supporting_passages": [
+                    "perceived expertise at the early stage of team projects is driven by social status, whereas perceived expertise at the later stage of a team project is mainly driven by actual expertise."
+                ],
+                "abstract_summary_alignment": "The summary highlights the transition of perceived expertise from being influenced by social status to actual expertise, which is a key finding of the research.",
+                "methodologies_justification": "While methodologies inform the data collection and analysis, they do not encompass the theme of perceived expertise itself."
+            },
+            {
+                "theme": "Intrgroup Conflict",
+                "reasoning": "The research introduces a contingency model that connects expertise and social status to intragroup conflicts, indicating how conflict types influence dynamics.",
+                "confidence_score": 0.8,
+                "supporting_passages": [
+                    "we present a contingency model in which the salience of expertise and social status depends on the types of intragroup conflicts."
+                ],
+                "abstract_summary_alignment": "The abstract summary implies that the findings can inform understanding of conflict dynamics in teams, supporting this theme.",
+                "methodologies_justification": "The methodologies provide context for analyzing intragroup conflicts but do not limit the theme's relevance."
+            }
+        ],
+        "reflection": "In identifying the themes present in the abstract, I focused on the primary concepts explored, such as the influence of expertise and social status on team dynamics. The analysis of each sentence helped in understanding the context and significance of these themes within the research framework. Additionally, the summary served as a useful tool in ensuring that all identified themes were well-supported by the abstract content.",
+        "challenges": "No challenges faced"
+    }
+}

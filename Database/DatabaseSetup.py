@@ -15,8 +15,9 @@ Needed additions:
     - ability to query statistics for both and ability to add remove and check for elements 
 """
 
+
 class DatabaseWrapper:
-    def __init__(self,*, db_name: str, collection_name: str):
+    def __init__(self, *, db_name: str, collection_name: str):
         load_dotenv()
         self.mongo_url = os.getenv("MONGODB_URL")
         self.client = MongoClient(self.mongo_url, server_api=ServerApi("1"))
@@ -59,7 +60,7 @@ class DatabaseWrapper:
         except Exception as e:
             print(f"Find error: {e}")
             return []
-    
+
     def show_all(self):
         self.collection.find_all()
     
@@ -73,6 +74,7 @@ class DatabaseWrapper:
     def close_connection(self):
         self.client.close()
         print("Connection closed")
+
 
 class ArticleDatabase(DatabaseWrapper):
     def __init__(self, db_name: str, collection_name: str):
@@ -105,7 +107,7 @@ class CategoryDatabase(DatabaseWrapper):
 
 if __name__ == "__main__":
     with open("article_data.json", "r") as file:
-            data = json.load(file)
+        data = json.load(file)
 
     database = ArticleDatabase(db_name='Site_Data', collection_name='article_data')
 

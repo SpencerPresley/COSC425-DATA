@@ -1,12 +1,14 @@
 from pydantic import BaseModel, Field
 from typing import Optional, List
 
+
 class Article(BaseModel):
     id: Optional[str]
     title: str
     abstract: Optional[str]
     authors: List[str]
     published_date: str
+
 
 class CrossrefArticleDetails(BaseModel):
     """
@@ -17,6 +19,7 @@ class CrossrefArticleDetails(BaseModel):
         faculty_members (list[str]): List of faculty members associated with the article.
         faculty_affiliations (dict[str, list[str]]): Mapping of faculty members to their affiliations.
     """
+
     _id: str = Field(default="")
     title: str = Field(default="")
     tc_count: int = 0
@@ -29,4 +32,3 @@ class CrossrefArticleDetails(BaseModel):
     journal: str = Field(default="")
     download_url: str = Field(default="")
     doi: str = Field(default="")
-    

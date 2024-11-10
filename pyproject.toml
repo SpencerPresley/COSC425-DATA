@@ -4,26 +4,91 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "academic_metrics"
-version = "0.1.0"
+version = "0.1.1-alpha"
 description = "A tool to extract and format academic data from Web of Science and Crossref"
 authors = [
     { name = "Spencer Presley", email = "spencerpresley96@gmail.com" },
     { name = "Cole Barbes", email = "cbarbes1@gulls.salisbury.edu" },
 ]
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
 dependencies = [
+    "aiohappyeyeballs",
+    "aiohttp",
+    "aiosignal",
+    "asttokens",
+    "attrs",
     "beautifulsoup4",
+    "black",
+    "certifi",
+    "cfgv",
+    "charset-normalizer",
+    "click",
+    "datasketch",
+    "decorator",
+    "distlib",
+    "et_xmlfile",
+    "executing",
+    "filelock",
+    "frozenlist",
     "fuzzywuzzy",
+    "identify",
+    "idna",
     "ijson",
+    "ipython",
+    "jedi",
+    "matplotlib-inline",
+    "multidict",
+    "mypy-extensions",
+    "nodeenv",
     "numpy",
     "openpyxl",
+    "packaging",
     "pandas",
+    "parso",
+    "pathspec",
+    "pexpect",
+    "platformdirs",
+    "pre_commit",
+    "prompt_toolkit",
+    "propcache",
     "psutil",
-    "Requests",
+    "ptyprocess",
+    "pure_eval",
+    "Pygments",
+    "python-dateutil",
+    "python-dotenv",
+    "pytz",
+    "pyYAML",
+    "requests",
+    "scipy",
+    "setuptools",
+    "shortuuid",
+    "six",
+    "soupsieve",
+    "stack-data",
     "striprtf",
-    "datasketch",
+    "tokenize_rt",
+    "tqdm",
+    "traitlets",
+    "tzdata",
+    "urllib3",
+    "virtualenv",
+    "wcwidth",
+    "wheel",
+    "yarl",
 ]
 
+[project.urls]
+"Homepage" = "https://github.com/SpencerPresley/COSC425-DATA"
+"Bug Tracker" = "https://github.com/SpencerPresley/COSC425-DATA/issues"
+
 [tool.setuptools.packages.find]
-where = ["PythonCode"]
+where = ["src"]
 include = ["academic_metrics*"]
 namespaces = false
