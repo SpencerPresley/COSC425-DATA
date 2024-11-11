@@ -63,6 +63,13 @@ class DatabaseWrapper:
 
     def show_all(self):
         self.collection.find_all()
+    
+    def delete_all(self):
+        try:
+            self.collection.delete_many({})
+            print("All documents deleted successfully")
+        except Exception as e:
+            print(f"Delete all error: {e}")
 
     def close_connection(self):
         self.client.close()
@@ -71,25 +78,47 @@ class DatabaseWrapper:
 
 class ArticleDatabase(DatabaseWrapper):
     def __init__(self, db_name: str, collection_name: str):
-        super().__init__(db_name, collection_name)
+        super().__init__(db_name=db_name, collection_name=collection_name)
 
     def insert_articles(self, article_data: Dict[str, Any]):
-        article_data = []
+        data = []
         for key, value in article_data.items():
-            value["_id"] = key
-            article_data.append(value)
+            value["_id"] = value['url']
+            data.append(value)
 
-        self.insert_data(article_data)
+        self.insert_data(data)
 
     def insert_article(self, identifier: str, article: Dict[str, Any]):
         article["_id"] = identifier
         self.insert_item(article)
+
+class CategoryDatabase(DatabaseWrapper):
+    def __init__(self, db_name: str, collection_name: str):
+        super().__init__(db_name=db_name, collection_name=collection_name)
+
+    def insert_categories(self, category_data: Dict[str, Any]):
+        data = []
+        for key, value in category_data.items():
+            value["name"] = key
+            data.append(value)
+
+        self.insert_data(data)
 
 
 if __name__ == "__main__":
     with open("article_data.json", "r") as file:
         data = json.load(file)
 
-    database = ArticleDatabase(db_name="Site_Data", collection_name="article_data")
+    database = ArticleDatabase(db_name='Site_Data', collection_name='article_data')
+
+    database.delete_all()
 
     database.insert_articles(data)
+
+    # with open("category_data.json", "r") as f:
+    #     cat_data = json.load(fp=f)
+
+    # cat_database = CategoryDatabase(db_name="Site_Data", collection_name='category_data')
+
+    # cat_database.insert_categories(cat_data)
+
