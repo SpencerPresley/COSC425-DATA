@@ -314,11 +314,20 @@ class CategoryDataOrchestrator:
         print(f"Data serialized and saved to {output_path}")
 
     def serialize_and_save_faculty_stats(self, *, output_path):
+        # Get all faculty stats as dicts
         data = {
             category: faculty_stats.to_dict()
             for category, faculty_stats in self.category_processor.faculty_stats.items()
         }
-        self._write_to_json(data, output_path)
+
+        # Flatten into a single list of faculty info dicts
+        flattened_data = [
+            faculty_info
+            for category_dict in data.values()
+            for faculty_info in category_dict.values()
+        ]
+
+        self._write_to_json(flattened_data, output_path)
 
     def serialize_and_save_article_stats(self, *, output_path):
         # Step 1: Clean the data
@@ -343,13 +352,14 @@ class CategoryDataOrchestrator:
         article_stats_to_save = article_stats_serializable["article_citation_map"]
         self.generate_short_uuid_as_url(article_stats_to_save)
 
-        # Step 2: Flatten (not needed for this one as it's already flat)
+        # Step 2: Flatten
+        flattened_data = list(article_stats_to_save.values())
 
         # Step 3: Write to file
-        self._write_to_json(article_stats_to_save, output_path)
+        self._write_to_json(flattened_data, output_path)
         self.warning_manager.log_warning(
             "Data Serialization",
-            f"Crossref Article Stat Data serialized and saved to {output_path}",
+            f"Crossref Article Stat Object Data serialized and saved to {output_path}",
         )
 
     def serialize_and_save_global_faculty_stats(self, *, output_path):

@@ -37,6 +37,7 @@ class CategoryInfo:
         providing a structured way to store and manipulate category-related data.
     """
 
+    _id: str = ""
     url: str = ""
     category_name: str = ""
     faculty_count: int = 0

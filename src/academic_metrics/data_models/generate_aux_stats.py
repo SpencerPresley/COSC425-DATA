@@ -98,6 +98,7 @@ class GlobalFacultyStats:
     A dataclass representing all of a faculty member's articles across all categories.
     """
 
+    _id: str = field(default="")
     name: str = field(default="")
     total_citations: int = 0
     article_count: int = 0
@@ -106,6 +107,7 @@ class GlobalFacultyStats:
     dois: set[str] = field(default_factory=set)
     titles: set[str] = field(default_factory=set)
     categories: set[str] = field(default_factory=set)
+    category_ids: set[str] = field(default_factory=set)
     top_level_categories: set[str] = field(default_factory=set)
     mid_level_categories: set[str] = field(default_factory=set)
     low_level_categories: set[str] = field(default_factory=set)
@@ -121,6 +123,7 @@ class GlobalFacultyStats:
                 self.__dict__[key] = list(value)
 
         return {
+            "_id": self._id,
             "name": self.name,
             "total_citations": self.total_citations,
             "article_count": self.article_count,
@@ -129,6 +132,7 @@ class GlobalFacultyStats:
             "dois": list(self.dois),
             "titles": list(self.titles),
             "categories": list(self.categories),
+            "category_ids": list(self.category_ids),
             "top_level_categories": list(self.top_level_categories),
             "mid_level_categories": list(self.mid_level_categories),
             "low_level_categories": list(self.low_level_categories),
@@ -151,6 +155,10 @@ class FacultyInfo:
         doi_citation_map (dict[str, int]): Detailed citation information for each article.
     """
 
+    _id: str = field(default="")
+    name: str = field(default="")
+    category: str = field(default="")
+    category_id: str = field(default="")
     total_citations: int = 0
     article_count: int = 0
     average_citations: int = 0
@@ -235,6 +243,10 @@ class FacultyStats:
         faculty_dict = {}
         for faculty_name, info in self.faculty_stats.items():
             faculty_dict[faculty_name] = {
+                "_id": info._id,
+                "name": info.name,
+                "category": info.category,
+                "category_id": info.category_id,
                 "total_citations": info.total_citations,
                 "article_count": info.article_count,
                 "average_citations": info.average_citations,
@@ -318,6 +330,7 @@ class CrossrefArticleDetails:
         faculty_affiliations (dict[str, list[str]]): Mapping of faculty members to their affiliations.
     """
 
+    _id: str = field(default="")
     title: str = field(default="")
     tc_count: int = 0
     faculty_members: set[str] = field(default_factory=set)
@@ -331,6 +344,7 @@ class CrossrefArticleDetails:
     doi: str = field(default="")
     themes: set[str] = field(default_factory=set)
     categories: set[str] = field(default_factory=set)
+    category_ids: set[str] = field(default_factory=set)
     top_level_categories: set[str] = field(default_factory=set)
     mid_level_categories: set[str] = field(default_factory=set)
     low_level_categories: set[str] = field(default_factory=set)

@@ -63,7 +63,7 @@ class DatabaseWrapper:
 
     def show_all(self):
         self.collection.find_all()
-    
+
     def delete_all(self):
         try:
             self.collection.delete_many({})
@@ -83,7 +83,7 @@ class ArticleDatabase(DatabaseWrapper):
     def insert_articles(self, article_data: Dict[str, Any]):
         data = []
         for key, value in article_data.items():
-            value["_id"] = value['url']
+            value["_id"] = value["url"]
             data.append(value)
 
         self.insert_data(data)
@@ -91,6 +91,7 @@ class ArticleDatabase(DatabaseWrapper):
     def insert_article(self, identifier: str, article: Dict[str, Any]):
         article["_id"] = identifier
         self.insert_item(article)
+
 
 class CategoryDatabase(DatabaseWrapper):
     def __init__(self, db_name: str, collection_name: str):
@@ -109,7 +110,7 @@ if __name__ == "__main__":
     with open("article_data.json", "r") as file:
         data = json.load(file)
 
-    database = ArticleDatabase(db_name='Site_Data', collection_name='article_data')
+    database = ArticleDatabase(db_name="Site_Data", collection_name="article_data")
 
     database.delete_all()
 
@@ -121,4 +122,3 @@ if __name__ == "__main__":
     # cat_database = CategoryDatabase(db_name="Site_Data", collection_name='category_data')
 
     # cat_database.insert_categories(cat_data)
-

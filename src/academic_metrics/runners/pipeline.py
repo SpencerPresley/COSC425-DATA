@@ -37,7 +37,7 @@ class PipelineRunner:
         data = self._load_files()
 
         # Run classification on all data
-        data = self.classification_wrapper.run_classification(data)
+        # data = self.classification_wrapper.run_classification(data)
 
         # Process classified data and generate category statistics
         self._create_orchestrator(data=data, extend=extend).run_orchestrator()

@@ -1,4 +1,5 @@
 from __future__ import annotations
+import shortuuid
 
 from typing import TYPE_CHECKING, List
 from academic_metrics.data_models import (
@@ -200,6 +201,10 @@ class CategoryProcessor:
                 themes=themes,
             )
 
+        self.update_id_for_category_data(
+            category_data=self.category_data, categories=all_categories
+        )
+
         # construct influential stats
         # On the entry take the faculty members we got and then += their total citations
         # += their article count
@@ -293,6 +298,7 @@ class CategoryProcessor:
                 )
 
             glb_fac_stat = global_faculty_stats[faculty_member]
+            glb_fac_stat._id = "-".join(faculty_member.lower().split())
             glb_fac_stat.total_citations += tc_count
             glb_fac_stat.article_count += 1
             glb_fac_stat.average_citations = (
@@ -308,6 +314,14 @@ class CategoryProcessor:
                 glb_fac_stat.categories.update(categories)
             else:
                 glb_fac_stat.categories.add(categories)
+
+            if isinstance(categories, list):
+                glb_fac_stat.category_ids.update(
+                    shortuuid.uuid(category) for category in categories
+                )
+            else:
+                glb_fac_stat.category_ids.add(shortuuid.uuid(categories))
+
             if isinstance(top_level_categories, list):
                 glb_fac_stat.top_level_categories.update(top_level_categories)
             else:
@@ -371,6 +385,15 @@ class CategoryProcessor:
                     category_faculty_stats[faculty_member] = FacultyInfo()
 
                 member_info = category_faculty_stats[faculty_member]
+                id_name_category = (
+                    faculty_member.lower().replace(" ", "-")
+                    + "_"
+                    + shortuuid.uuid(category)
+                )
+                member_info._id = id_name_category
+                member_info.name = faculty_member
+                member_info.category = category
+                member_info.category_id = shortuuid.uuid(category)
 
                 # update members total citations and article count for the category
                 if faculty_affiliations.get(faculty_member, None) is not None:
@@ -492,6 +515,7 @@ class CategoryProcessor:
 
         for title in titles:
             self.article_stats_obj.article_citation_map[doi] = CrossrefArticleDetails(
+                _id=doi,
                 title=title,
                 tc_count=tc_count,
                 faculty_members=faculty_members,
@@ -518,6 +542,11 @@ class CategoryProcessor:
                     low_level_categories if low_level_categories is not None else []
                 ),
                 categories=categories if categories is not None else [],
+                category_ids=(
+                    [shortuuid.uuid(category) for category in categories]
+                    if categories is not None
+                    else []
+                ),
             )
 
     def update_title_set(self, categories, title):
@@ -619,3 +648,8 @@ class CategoryProcessor:
         for category in categories:
             if category in category_data:
                 category_data[category].themes.update(themes)
+
+    @staticmethod
+    def update_id_for_category_data(category_data, categories):
+        for category in categories:
+            category_data[category]._id = shortuuid.uuid(category)
