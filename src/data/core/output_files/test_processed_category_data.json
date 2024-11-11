@@ -1,101 +1,206 @@
-{
-    "Business": {
+[
+    {
         "url": "business",
+        "category_name": "Business",
         "faculty_count": 3,
         "department_count": 2,
         "article_count": 1,
         "tc_count": 1,
-        "citation_average": 1,
+        "citation_average": 1.0,
         "doi_list": [
             "10.1080/09537325.2021.1991572"
+        ],
+        "themes": [
+            "Foreign Ownership and R&D Investment Relationship",
+            "Impact of Deregulation on Innovation Investment",
+            "Firm Heterogeneity in Innovation Strategies"
         ]
     },
-    "Social sciences": {
+    {
         "url": "social-sciences",
+        "category_name": "Social sciences",
         "faculty_count": 3,
         "department_count": 2,
         "article_count": 1,
         "tc_count": 1,
-        "citation_average": 1,
+        "citation_average": 1.0,
         "doi_list": [
             "10.1080/09537325.2021.1991572"
+        ],
+        "themes": [
+            "Foreign Ownership and R&D Investment Relationship",
+            "Impact of Deregulation on Innovation Investment",
+            "Firm Heterogeneity in Innovation Strategies"
         ]
     },
-    "Business administration and management": {
+    {
         "url": "business-administration-and-management",
+        "category_name": "Business administration and management",
         "faculty_count": 3,
         "department_count": 2,
         "article_count": 1,
         "tc_count": 1,
-        "citation_average": 1,
+        "citation_average": 1.0,
         "doi_list": [
             "10.1080/09537325.2021.1991572"
+        ],
+        "themes": [
+            "Foreign Ownership and R&D Investment Relationship",
+            "Impact of Deregulation on Innovation Investment",
+            "Firm Heterogeneity in Innovation Strategies"
         ]
     },
-    "Economics": {
+    {
         "url": "economics",
+        "category_name": "Economics",
         "faculty_count": 3,
         "department_count": 2,
         "article_count": 1,
         "tc_count": 1,
-        "citation_average": 1,
+        "citation_average": 1.0,
         "doi_list": [
             "10.1080/09537325.2021.1991572"
+        ],
+        "themes": [
+            "Foreign Ownership and R&D Investment Relationship",
+            "Impact of Deregulation on Innovation Investment",
+            "Firm Heterogeneity in Innovation Strategies"
         ]
     },
-    "Public policy analysis": {
+    {
         "url": "public-policy-analysis",
+        "category_name": "Public policy analysis",
         "faculty_count": 3,
         "department_count": 2,
         "article_count": 1,
         "tc_count": 1,
-        "citation_average": 1,
+        "citation_average": 1.0,
         "doi_list": [
             "10.1080/09537325.2021.1991572"
+        ],
+        "themes": [
+            "Foreign Ownership and R&D Investment Relationship",
+            "Impact of Deregulation on Innovation Investment",
+            "Firm Heterogeneity in Innovation Strategies"
         ]
     },
-    "Business management and administration": {
+    {
+        "url": "sociology-demography-and-population-studies",
+        "category_name": "Sociology, demography, and population studies",
+        "faculty_count": 3,
+        "department_count": 2,
+        "article_count": 1,
+        "tc_count": 1,
+        "citation_average": 1.0,
+        "doi_list": [
+            "10.1080/09537325.2021.1991572"
+        ],
+        "themes": [
+            "Foreign Ownership and R&D Investment Relationship",
+            "Impact of Deregulation on Innovation Investment",
+            "Firm Heterogeneity in Innovation Strategies"
+        ]
+    },
+    {
         "url": "business-management-and-administration",
+        "category_name": "Business management and administration",
         "faculty_count": 3,
         "department_count": 2,
         "article_count": 1,
         "tc_count": 1,
-        "citation_average": 1,
+        "citation_average": 1.0,
         "doi_list": [
             "10.1080/09537325.2021.1991572"
+        ],
+        "themes": [
+            "Foreign Ownership and R&D Investment Relationship",
+            "Impact of Deregulation on Innovation Investment",
+            "Firm Heterogeneity in Innovation Strategies"
         ]
     },
-    "Applied economics": {
+    {
+        "url": "business-administration-and-management-nec",
+        "category_name": "Business administration and management nec",
+        "faculty_count": 3,
+        "department_count": 2,
+        "article_count": 1,
+        "tc_count": 1,
+        "citation_average": 1.0,
+        "doi_list": [
+            "10.1080/09537325.2021.1991572"
+        ],
+        "themes": [
+            "Foreign Ownership and R&D Investment Relationship",
+            "Impact of Deregulation on Innovation Investment",
+            "Firm Heterogeneity in Innovation Strategies"
+        ]
+    },
+    {
         "url": "applied-economics",
+        "category_name": "Applied economics",
         "faculty_count": 3,
         "department_count": 2,
         "article_count": 1,
         "tc_count": 1,
-        "citation_average": 1,
+        "citation_average": 1.0,
         "doi_list": [
             "10.1080/09537325.2021.1991572"
+        ],
+        "themes": [
+            "Foreign Ownership and R&D Investment Relationship",
+            "Impact of Deregulation on Innovation Investment",
+            "Firm Heterogeneity in Innovation Strategies"
         ]
     },
-    "Econometrics and quantitative economics": {
+    {
         "url": "econometrics-and-quantitative-economics",
+        "category_name": "Econometrics and quantitative economics",
         "faculty_count": 3,
         "department_count": 2,
         "article_count": 1,
         "tc_count": 1,
-        "citation_average": 1,
+        "citation_average": 1.0,
         "doi_list": [
             "10.1080/09537325.2021.1991572"
+        ],
+        "themes": [
+            "Foreign Ownership and R&D Investment Relationship",
+            "Impact of Deregulation on Innovation Investment",
+            "Firm Heterogeneity in Innovation Strategies"
         ]
     },
-    "Public policy analysis, general": {
+    {
         "url": "public-policy-analysis-general",
+        "category_name": "Public policy analysis, general",
         "faculty_count": 3,
         "department_count": 2,
         "article_count": 1,
         "tc_count": 1,
-        "citation_average": 1,
+        "citation_average": 1.0,
         "doi_list": [
             "10.1080/09537325.2021.1991572"
+        ],
+        "themes": [
+            "Foreign Ownership and R&D Investment Relationship",
+            "Impact of Deregulation on Innovation Investment",
+            "Firm Heterogeneity in Innovation Strategies"
+        ]
+    },
+    {
+        "url": "sociology-general",
+        "category_name": "Sociology, general",
+        "faculty_count": 3,
+        "department_count": 2,
+        "article_count": 1,
+        "tc_count": 1,
+        "citation_average": 1.0,
+        "doi_list": [
+            "10.1080/09537325.2021.1991572"
+        ],
+        "themes": [
+            "Foreign Ownership and R&D Investment Relationship",
+            "Impact of Deregulation on Innovation Investment",
+            "Firm Heterogeneity in Innovation Strategies"
         ]
     }
-}
+]

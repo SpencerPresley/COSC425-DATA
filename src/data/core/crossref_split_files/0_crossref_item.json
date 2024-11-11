@@ -571,18 +571,23 @@
             }
         }
     ],
-    "categories": [
-        "Business",
-        "Business administration and management",
-        "Business management and administration",
-        "Business administration and management nec",
-        "Social sciences",
-        "Economics",
-        "Applied economics",
-        "Development economics and international development",
-        "Public policy analysis",
-        "Public policy analysis, general"
-    ],
+    "categories": {
+        "top": [
+            "Business",
+            "Social sciences",
+            "Economics"
+        ],
+        "mid": [
+            "Business administration and management",
+            "Business management and administration",
+            "Applied economics",
+            "Public policy analysis"
+        ],
+        "low": [
+            "Business administration and management nec",
+            "Public policy analysis, general"
+        ]
+    },
     "themes": [
         "Impact of Deregulation on Innovation Investment",
         "Foreign Ownership and R&D Investment Relationship",

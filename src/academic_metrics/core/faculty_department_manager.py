@@ -8,13 +8,13 @@ class FacultyDepartmentManager:
 
     def update_faculty_set(self, categories, faculty_members):
         for category in categories:
-            if category in self.category_processor.category_counts:
-                category_info = self.category_processor.category_counts[category]
+            if category in self.category_processor.category_data:
+                category_info = self.category_processor.category_data[category]
                 for faculty_member in faculty_members:
                     category_info.faculty.add(faculty_member)
             else:
                 warnings.warn(
-                    f"Warning: Category {category} not found in category_counts. Continuing to next."
+                    f"Warning: Category {category} not found in category_data. Continuing to next."
                 )
 
     def update_departments(self, categories, department_info):
@@ -24,26 +24,27 @@ class FacultyDepartmentManager:
         else:
             department_members = department_info
             for category in categories:
-                if category in self.category_processor.category_counts:
-                    category_info = self.category_processor.category_counts[category]
+                if category in self.category_processor.category_data:
+                    category_info = self.category_processor.category_data[category]
                     if isinstance(department_members, list):
-                        for department_member in department_members:
-                            category_info.departments.add(department_member)
+                        category_info.departments.update(department_members)
                     elif isinstance(department_members, str):
                         category_info.departments.add(department_members)
+                    elif isinstance(department_members, set):
+                        category_info.departments.update(department_members)
                     else:
                         warnings.warn(
                             f"Unexpected department_members type: {type(department_members)}"
                         )
                 else:
                     warnings.warn(
-                        f"WARNING: Category {category} not found in category_counts. Continuing to next category."
+                        f"WARNING: Category {category} not found in category_data. Continuing to next category."
                     )
 
     def update_title_set(self, categories, title):
         for category in categories:
-            if category in self.category_processor.category_counts:
-                category_info = self.category_processor.category_counts[category]
+            if category in self.category_processor.category_data:
+                category_info = self.category_processor.category_data[category]
                 if isinstance(title, list):
                     for t in title:
                         if t in category_info.titles:
@@ -55,11 +56,11 @@ class FacultyDepartmentManager:
                     category_info.titles.add(title)
 
     def update_faculty_count(self):
-        for category, category_info in self.category_processor.category_counts.items():
+        for category, category_info in self.category_processor.category_data.items():
             category_info.faculty_count = len(category_info.faculty)
 
     def update_department_count(self):
-        for category, category_info in self.category_processor.category_counts.items():
+        for category, category_info in self.category_processor.category_data.items():
             category_info.department_count = len(category_info.departments)
 
     def update_article_counts(self, categories_dict):
@@ -75,16 +76,16 @@ class FacultyDepartmentManager:
 
     def update_doi_list(self, categories, doi):
         for category in categories:
-            if category in self.category_processor.category_counts:
-                category_info = self.category_processor.category_counts[category]
+            if category in self.category_processor.category_data:
+                category_info = self.category_processor.category_data[category]
                 category_info.doi_list.add(doi)
             else:
                 warnings.warn(
-                    f"Warning: Category {category} not found in category_counts. Continuing to next."
+                    f"Warning: Category {category} not found in category_data. Continuing to next."
                 )
 
     def get_total_article_count(self):
         total_article_count = 0
-        for category, category_info in self.category_processor.category_counts.items():
+        for category, category_info in self.category_processor.category_data.items():
             total_article_count += category_info.article_count
         return total_article_count

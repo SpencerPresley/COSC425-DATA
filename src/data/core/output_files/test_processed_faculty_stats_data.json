@@ -1,334 +1,637 @@
 {
     "Business": {
-        "faculty_stats": {
-            "Minseok Park": {
-                "total_citations": 1,
-                "article_count": 1,
-                "average_citations": 1,
-                "department_affiliations": "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA",
-                "citation_map": {
-                    "article_citation_map": {
-                        "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms": 1
-                    }
-                }
-            },
-            "KwangWook Gang": {
-                "total_citations": 1,
-                "article_count": 1,
-                "average_citations": 1,
-                "department_affiliations": "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA",
-                "citation_map": {
-                    "article_citation_map": {
-                        "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms": 1
-                    }
-                }
-            },
-            "Byungchul Choi": {
-                "total_citations": 1,
-                "article_count": 1,
-                "average_citations": 1,
-                "department_affiliations": "College of Business, Hankuk University of Foreign Studies, Seoul, Korea",
-                "citation_map": {
-                    "article_citation_map": {
-                        "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms": 1
-                    }
-                }
+        "Byungchul Choi": {
+            "total_citations": 1,
+            "article_count": 1,
+            "average_citations": 1.0,
+            "department_affiliations": [
+                "College of Business, Hankuk University of Foreign Studies, Seoul, Korea"
+            ],
+            "dois": [
+                "10.1080/09537325.2021.1991572"
+            ],
+            "titles": [
+                "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            ],
+            "citation_map": {
+                "10.1080/09537325.2021.1991572": 1
+            }
+        },
+        "KwangWook Gang": {
+            "total_citations": 1,
+            "article_count": 1,
+            "average_citations": 1.0,
+            "department_affiliations": [
+                "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA"
+            ],
+            "dois": [
+                "10.1080/09537325.2021.1991572"
+            ],
+            "titles": [
+                "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            ],
+            "citation_map": {
+                "10.1080/09537325.2021.1991572": 1
+            }
+        },
+        "Minseok Park": {
+            "total_citations": 1,
+            "article_count": 1,
+            "average_citations": 1.0,
+            "department_affiliations": [
+                "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA"
+            ],
+            "dois": [
+                "10.1080/09537325.2021.1991572"
+            ],
+            "titles": [
+                "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            ],
+            "citation_map": {
+                "10.1080/09537325.2021.1991572": 1
             }
         }
     },
     "Social sciences": {
-        "faculty_stats": {
-            "Minseok Park": {
-                "total_citations": 1,
-                "article_count": 1,
-                "average_citations": 1,
-                "department_affiliations": "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA",
-                "citation_map": {
-                    "article_citation_map": {
-                        "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms": 1
-                    }
-                }
-            },
-            "KwangWook Gang": {
-                "total_citations": 1,
-                "article_count": 1,
-                "average_citations": 1,
-                "department_affiliations": "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA",
-                "citation_map": {
-                    "article_citation_map": {
-                        "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms": 1
-                    }
-                }
-            },
-            "Byungchul Choi": {
-                "total_citations": 1,
-                "article_count": 1,
-                "average_citations": 1,
-                "department_affiliations": "College of Business, Hankuk University of Foreign Studies, Seoul, Korea",
-                "citation_map": {
-                    "article_citation_map": {
-                        "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms": 1
-                    }
-                }
+        "Byungchul Choi": {
+            "total_citations": 1,
+            "article_count": 1,
+            "average_citations": 1.0,
+            "department_affiliations": [
+                "College of Business, Hankuk University of Foreign Studies, Seoul, Korea"
+            ],
+            "dois": [
+                "10.1080/09537325.2021.1991572"
+            ],
+            "titles": [
+                "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            ],
+            "citation_map": {
+                "10.1080/09537325.2021.1991572": 1
+            }
+        },
+        "KwangWook Gang": {
+            "total_citations": 1,
+            "article_count": 1,
+            "average_citations": 1.0,
+            "department_affiliations": [
+                "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA"
+            ],
+            "dois": [
+                "10.1080/09537325.2021.1991572"
+            ],
+            "titles": [
+                "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            ],
+            "citation_map": {
+                "10.1080/09537325.2021.1991572": 1
+            }
+        },
+        "Minseok Park": {
+            "total_citations": 1,
+            "article_count": 1,
+            "average_citations": 1.0,
+            "department_affiliations": [
+                "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA"
+            ],
+            "dois": [
+                "10.1080/09537325.2021.1991572"
+            ],
+            "titles": [
+                "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            ],
+            "citation_map": {
+                "10.1080/09537325.2021.1991572": 1
             }
         }
     },
     "Business administration and management": {
-        "faculty_stats": {
-            "Minseok Park": {
-                "total_citations": 1,
-                "article_count": 1,
-                "average_citations": 1,
-                "department_affiliations": "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA",
-                "citation_map": {
-                    "article_citation_map": {
-                        "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms": 1
-                    }
-                }
-            },
-            "KwangWook Gang": {
-                "total_citations": 1,
-                "article_count": 1,
-                "average_citations": 1,
-                "department_affiliations": "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA",
-                "citation_map": {
-                    "article_citation_map": {
-                        "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms": 1
-                    }
-                }
-            },
-            "Byungchul Choi": {
-                "total_citations": 1,
-                "article_count": 1,
-                "average_citations": 1,
-                "department_affiliations": "College of Business, Hankuk University of Foreign Studies, Seoul, Korea",
-                "citation_map": {
-                    "article_citation_map": {
-                        "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms": 1
-                    }
-                }
+        "Byungchul Choi": {
+            "total_citations": 1,
+            "article_count": 1,
+            "average_citations": 1.0,
+            "department_affiliations": [
+                "College of Business, Hankuk University of Foreign Studies, Seoul, Korea"
+            ],
+            "dois": [
+                "10.1080/09537325.2021.1991572"
+            ],
+            "titles": [
+                "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            ],
+            "citation_map": {
+                "10.1080/09537325.2021.1991572": 1
+            }
+        },
+        "KwangWook Gang": {
+            "total_citations": 1,
+            "article_count": 1,
+            "average_citations": 1.0,
+            "department_affiliations": [
+                "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA"
+            ],
+            "dois": [
+                "10.1080/09537325.2021.1991572"
+            ],
+            "titles": [
+                "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            ],
+            "citation_map": {
+                "10.1080/09537325.2021.1991572": 1
+            }
+        },
+        "Minseok Park": {
+            "total_citations": 1,
+            "article_count": 1,
+            "average_citations": 1.0,
+            "department_affiliations": [
+                "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA"
+            ],
+            "dois": [
+                "10.1080/09537325.2021.1991572"
+            ],
+            "titles": [
+                "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            ],
+            "citation_map": {
+                "10.1080/09537325.2021.1991572": 1
             }
         }
     },
     "Economics": {
-        "faculty_stats": {
-            "Minseok Park": {
-                "total_citations": 1,
-                "article_count": 1,
-                "average_citations": 1,
-                "department_affiliations": "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA",
-                "citation_map": {
-                    "article_citation_map": {
-                        "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms": 1
-                    }
-                }
-            },
-            "KwangWook Gang": {
-                "total_citations": 1,
-                "article_count": 1,
-                "average_citations": 1,
-                "department_affiliations": "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA",
-                "citation_map": {
-                    "article_citation_map": {
-                        "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms": 1
-                    }
-                }
-            },
-            "Byungchul Choi": {
-                "total_citations": 1,
-                "article_count": 1,
-                "average_citations": 1,
-                "department_affiliations": "College of Business, Hankuk University of Foreign Studies, Seoul, Korea",
-                "citation_map": {
-                    "article_citation_map": {
-                        "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms": 1
-                    }
-                }
+        "Byungchul Choi": {
+            "total_citations": 1,
+            "article_count": 1,
+            "average_citations": 1.0,
+            "department_affiliations": [
+                "College of Business, Hankuk University of Foreign Studies, Seoul, Korea"
+            ],
+            "dois": [
+                "10.1080/09537325.2021.1991572"
+            ],
+            "titles": [
+                "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            ],
+            "citation_map": {
+                "10.1080/09537325.2021.1991572": 1
+            }
+        },
+        "KwangWook Gang": {
+            "total_citations": 1,
+            "article_count": 1,
+            "average_citations": 1.0,
+            "department_affiliations": [
+                "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA"
+            ],
+            "dois": [
+                "10.1080/09537325.2021.1991572"
+            ],
+            "titles": [
+                "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            ],
+            "citation_map": {
+                "10.1080/09537325.2021.1991572": 1
+            }
+        },
+        "Minseok Park": {
+            "total_citations": 1,
+            "article_count": 1,
+            "average_citations": 1.0,
+            "department_affiliations": [
+                "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA"
+            ],
+            "dois": [
+                "10.1080/09537325.2021.1991572"
+            ],
+            "titles": [
+                "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            ],
+            "citation_map": {
+                "10.1080/09537325.2021.1991572": 1
             }
         }
     },
     "Public policy analysis": {
-        "faculty_stats": {
-            "Minseok Park": {
-                "total_citations": 1,
-                "article_count": 1,
-                "average_citations": 1,
-                "department_affiliations": "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA",
-                "citation_map": {
-                    "article_citation_map": {
-                        "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms": 1
-                    }
-                }
-            },
-            "KwangWook Gang": {
-                "total_citations": 1,
-                "article_count": 1,
-                "average_citations": 1,
-                "department_affiliations": "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA",
-                "citation_map": {
-                    "article_citation_map": {
-                        "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms": 1
-                    }
-                }
-            },
-            "Byungchul Choi": {
-                "total_citations": 1,
-                "article_count": 1,
-                "average_citations": 1,
-                "department_affiliations": "College of Business, Hankuk University of Foreign Studies, Seoul, Korea",
-                "citation_map": {
-                    "article_citation_map": {
-                        "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms": 1
-                    }
-                }
+        "Byungchul Choi": {
+            "total_citations": 1,
+            "article_count": 1,
+            "average_citations": 1.0,
+            "department_affiliations": [
+                "College of Business, Hankuk University of Foreign Studies, Seoul, Korea"
+            ],
+            "dois": [
+                "10.1080/09537325.2021.1991572"
+            ],
+            "titles": [
+                "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            ],
+            "citation_map": {
+                "10.1080/09537325.2021.1991572": 1
+            }
+        },
+        "KwangWook Gang": {
+            "total_citations": 1,
+            "article_count": 1,
+            "average_citations": 1.0,
+            "department_affiliations": [
+                "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA"
+            ],
+            "dois": [
+                "10.1080/09537325.2021.1991572"
+            ],
+            "titles": [
+                "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            ],
+            "citation_map": {
+                "10.1080/09537325.2021.1991572": 1
+            }
+        },
+        "Minseok Park": {
+            "total_citations": 1,
+            "article_count": 1,
+            "average_citations": 1.0,
+            "department_affiliations": [
+                "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA"
+            ],
+            "dois": [
+                "10.1080/09537325.2021.1991572"
+            ],
+            "titles": [
+                "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            ],
+            "citation_map": {
+                "10.1080/09537325.2021.1991572": 1
+            }
+        }
+    },
+    "Sociology, demography, and population studies": {
+        "Byungchul Choi": {
+            "total_citations": 1,
+            "article_count": 1,
+            "average_citations": 1.0,
+            "department_affiliations": [
+                "College of Business, Hankuk University of Foreign Studies, Seoul, Korea"
+            ],
+            "dois": [
+                "10.1080/09537325.2021.1991572"
+            ],
+            "titles": [
+                "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            ],
+            "citation_map": {
+                "10.1080/09537325.2021.1991572": 1
+            }
+        },
+        "KwangWook Gang": {
+            "total_citations": 1,
+            "article_count": 1,
+            "average_citations": 1.0,
+            "department_affiliations": [
+                "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA"
+            ],
+            "dois": [
+                "10.1080/09537325.2021.1991572"
+            ],
+            "titles": [
+                "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            ],
+            "citation_map": {
+                "10.1080/09537325.2021.1991572": 1
+            }
+        },
+        "Minseok Park": {
+            "total_citations": 1,
+            "article_count": 1,
+            "average_citations": 1.0,
+            "department_affiliations": [
+                "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA"
+            ],
+            "dois": [
+                "10.1080/09537325.2021.1991572"
+            ],
+            "titles": [
+                "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            ],
+            "citation_map": {
+                "10.1080/09537325.2021.1991572": 1
             }
         }
     },
     "Business management and administration": {
-        "faculty_stats": {
-            "Minseok Park": {
-                "total_citations": 1,
-                "article_count": 1,
-                "average_citations": 1,
-                "department_affiliations": "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA",
-                "citation_map": {
-                    "article_citation_map": {
-                        "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms": 1
-                    }
-                }
-            },
-            "KwangWook Gang": {
-                "total_citations": 1,
-                "article_count": 1,
-                "average_citations": 1,
-                "department_affiliations": "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA",
-                "citation_map": {
-                    "article_citation_map": {
-                        "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms": 1
-                    }
-                }
-            },
-            "Byungchul Choi": {
-                "total_citations": 1,
-                "article_count": 1,
-                "average_citations": 1,
-                "department_affiliations": "College of Business, Hankuk University of Foreign Studies, Seoul, Korea",
-                "citation_map": {
-                    "article_citation_map": {
-                        "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms": 1
-                    }
-                }
+        "Byungchul Choi": {
+            "total_citations": 1,
+            "article_count": 1,
+            "average_citations": 1.0,
+            "department_affiliations": [
+                "College of Business, Hankuk University of Foreign Studies, Seoul, Korea"
+            ],
+            "dois": [
+                "10.1080/09537325.2021.1991572"
+            ],
+            "titles": [
+                "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            ],
+            "citation_map": {
+                "10.1080/09537325.2021.1991572": 1
+            }
+        },
+        "KwangWook Gang": {
+            "total_citations": 1,
+            "article_count": 1,
+            "average_citations": 1.0,
+            "department_affiliations": [
+                "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA"
+            ],
+            "dois": [
+                "10.1080/09537325.2021.1991572"
+            ],
+            "titles": [
+                "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            ],
+            "citation_map": {
+                "10.1080/09537325.2021.1991572": 1
+            }
+        },
+        "Minseok Park": {
+            "total_citations": 1,
+            "article_count": 1,
+            "average_citations": 1.0,
+            "department_affiliations": [
+                "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA"
+            ],
+            "dois": [
+                "10.1080/09537325.2021.1991572"
+            ],
+            "titles": [
+                "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            ],
+            "citation_map": {
+                "10.1080/09537325.2021.1991572": 1
+            }
+        }
+    },
+    "Business administration and management nec": {
+        "Byungchul Choi": {
+            "total_citations": 1,
+            "article_count": 1,
+            "average_citations": 1.0,
+            "department_affiliations": [
+                "College of Business, Hankuk University of Foreign Studies, Seoul, Korea"
+            ],
+            "dois": [
+                "10.1080/09537325.2021.1991572"
+            ],
+            "titles": [
+                "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            ],
+            "citation_map": {
+                "10.1080/09537325.2021.1991572": 1
+            }
+        },
+        "KwangWook Gang": {
+            "total_citations": 1,
+            "article_count": 1,
+            "average_citations": 1.0,
+            "department_affiliations": [
+                "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA"
+            ],
+            "dois": [
+                "10.1080/09537325.2021.1991572"
+            ],
+            "titles": [
+                "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            ],
+            "citation_map": {
+                "10.1080/09537325.2021.1991572": 1
+            }
+        },
+        "Minseok Park": {
+            "total_citations": 1,
+            "article_count": 1,
+            "average_citations": 1.0,
+            "department_affiliations": [
+                "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA"
+            ],
+            "dois": [
+                "10.1080/09537325.2021.1991572"
+            ],
+            "titles": [
+                "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            ],
+            "citation_map": {
+                "10.1080/09537325.2021.1991572": 1
             }
         }
     },
     "Applied economics": {
-        "faculty_stats": {
-            "Minseok Park": {
-                "total_citations": 1,
-                "article_count": 1,
-                "average_citations": 1,
-                "department_affiliations": "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA",
-                "citation_map": {
-                    "article_citation_map": {
-                        "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms": 1
-                    }
-                }
-            },
-            "KwangWook Gang": {
-                "total_citations": 1,
-                "article_count": 1,
-                "average_citations": 1,
-                "department_affiliations": "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA",
-                "citation_map": {
-                    "article_citation_map": {
-                        "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms": 1
-                    }
-                }
-            },
-            "Byungchul Choi": {
-                "total_citations": 1,
-                "article_count": 1,
-                "average_citations": 1,
-                "department_affiliations": "College of Business, Hankuk University of Foreign Studies, Seoul, Korea",
-                "citation_map": {
-                    "article_citation_map": {
-                        "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms": 1
-                    }
-                }
+        "Byungchul Choi": {
+            "total_citations": 1,
+            "article_count": 1,
+            "average_citations": 1.0,
+            "department_affiliations": [
+                "College of Business, Hankuk University of Foreign Studies, Seoul, Korea"
+            ],
+            "dois": [
+                "10.1080/09537325.2021.1991572"
+            ],
+            "titles": [
+                "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            ],
+            "citation_map": {
+                "10.1080/09537325.2021.1991572": 1
+            }
+        },
+        "KwangWook Gang": {
+            "total_citations": 1,
+            "article_count": 1,
+            "average_citations": 1.0,
+            "department_affiliations": [
+                "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA"
+            ],
+            "dois": [
+                "10.1080/09537325.2021.1991572"
+            ],
+            "titles": [
+                "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            ],
+            "citation_map": {
+                "10.1080/09537325.2021.1991572": 1
+            }
+        },
+        "Minseok Park": {
+            "total_citations": 1,
+            "article_count": 1,
+            "average_citations": 1.0,
+            "department_affiliations": [
+                "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA"
+            ],
+            "dois": [
+                "10.1080/09537325.2021.1991572"
+            ],
+            "titles": [
+                "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            ],
+            "citation_map": {
+                "10.1080/09537325.2021.1991572": 1
             }
         }
     },
     "Econometrics and quantitative economics": {
-        "faculty_stats": {
-            "Minseok Park": {
-                "total_citations": 1,
-                "article_count": 1,
-                "average_citations": 1,
-                "department_affiliations": "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA",
-                "citation_map": {
-                    "article_citation_map": {
-                        "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms": 1
-                    }
-                }
-            },
-            "KwangWook Gang": {
-                "total_citations": 1,
-                "article_count": 1,
-                "average_citations": 1,
-                "department_affiliations": "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA",
-                "citation_map": {
-                    "article_citation_map": {
-                        "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms": 1
-                    }
-                }
-            },
-            "Byungchul Choi": {
-                "total_citations": 1,
-                "article_count": 1,
-                "average_citations": 1,
-                "department_affiliations": "College of Business, Hankuk University of Foreign Studies, Seoul, Korea",
-                "citation_map": {
-                    "article_citation_map": {
-                        "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms": 1
-                    }
-                }
+        "Byungchul Choi": {
+            "total_citations": 1,
+            "article_count": 1,
+            "average_citations": 1.0,
+            "department_affiliations": [
+                "College of Business, Hankuk University of Foreign Studies, Seoul, Korea"
+            ],
+            "dois": [
+                "10.1080/09537325.2021.1991572"
+            ],
+            "titles": [
+                "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            ],
+            "citation_map": {
+                "10.1080/09537325.2021.1991572": 1
+            }
+        },
+        "KwangWook Gang": {
+            "total_citations": 1,
+            "article_count": 1,
+            "average_citations": 1.0,
+            "department_affiliations": [
+                "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA"
+            ],
+            "dois": [
+                "10.1080/09537325.2021.1991572"
+            ],
+            "titles": [
+                "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            ],
+            "citation_map": {
+                "10.1080/09537325.2021.1991572": 1
+            }
+        },
+        "Minseok Park": {
+            "total_citations": 1,
+            "article_count": 1,
+            "average_citations": 1.0,
+            "department_affiliations": [
+                "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA"
+            ],
+            "dois": [
+                "10.1080/09537325.2021.1991572"
+            ],
+            "titles": [
+                "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            ],
+            "citation_map": {
+                "10.1080/09537325.2021.1991572": 1
             }
         }
     },
     "Public policy analysis, general": {
-        "faculty_stats": {
-            "Minseok Park": {
-                "total_citations": 1,
-                "article_count": 1,
-                "average_citations": 1,
-                "department_affiliations": "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA",
-                "citation_map": {
-                    "article_citation_map": {
-                        "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms": 1
-                    }
-                }
-            },
-            "KwangWook Gang": {
-                "total_citations": 1,
-                "article_count": 1,
-                "average_citations": 1,
-                "department_affiliations": "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA",
-                "citation_map": {
-                    "article_citation_map": {
-                        "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms": 1
-                    }
-                }
-            },
-            "Byungchul Choi": {
-                "total_citations": 1,
-                "article_count": 1,
-                "average_citations": 1,
-                "department_affiliations": "College of Business, Hankuk University of Foreign Studies, Seoul, Korea",
-                "citation_map": {
-                    "article_citation_map": {
-                        "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms": 1
-                    }
-                }
+        "Byungchul Choi": {
+            "total_citations": 1,
+            "article_count": 1,
+            "average_citations": 1.0,
+            "department_affiliations": [
+                "College of Business, Hankuk University of Foreign Studies, Seoul, Korea"
+            ],
+            "dois": [
+                "10.1080/09537325.2021.1991572"
+            ],
+            "titles": [
+                "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            ],
+            "citation_map": {
+                "10.1080/09537325.2021.1991572": 1
+            }
+        },
+        "KwangWook Gang": {
+            "total_citations": 1,
+            "article_count": 1,
+            "average_citations": 1.0,
+            "department_affiliations": [
+                "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA"
+            ],
+            "dois": [
+                "10.1080/09537325.2021.1991572"
+            ],
+            "titles": [
+                "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            ],
+            "citation_map": {
+                "10.1080/09537325.2021.1991572": 1
+            }
+        },
+        "Minseok Park": {
+            "total_citations": 1,
+            "article_count": 1,
+            "average_citations": 1.0,
+            "department_affiliations": [
+                "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA"
+            ],
+            "dois": [
+                "10.1080/09537325.2021.1991572"
+            ],
+            "titles": [
+                "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            ],
+            "citation_map": {
+                "10.1080/09537325.2021.1991572": 1
+            }
+        }
+    },
+    "Sociology, general": {
+        "Byungchul Choi": {
+            "total_citations": 1,
+            "article_count": 1,
+            "average_citations": 1.0,
+            "department_affiliations": [
+                "College of Business, Hankuk University of Foreign Studies, Seoul, Korea"
+            ],
+            "dois": [
+                "10.1080/09537325.2021.1991572"
+            ],
+            "titles": [
+                "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            ],
+            "citation_map": {
+                "10.1080/09537325.2021.1991572": 1
+            }
+        },
+        "KwangWook Gang": {
+            "total_citations": 1,
+            "article_count": 1,
+            "average_citations": 1.0,
+            "department_affiliations": [
+                "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA"
+            ],
+            "dois": [
+                "10.1080/09537325.2021.1991572"
+            ],
+            "titles": [
+                "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            ],
+            "citation_map": {
+                "10.1080/09537325.2021.1991572": 1
+            }
+        },
+        "Minseok Park": {
+            "total_citations": 1,
+            "article_count": 1,
+            "average_citations": 1.0,
+            "department_affiliations": [
+                "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA"
+            ],
+            "dois": [
+                "10.1080/09537325.2021.1991572"
+            ],
+            "titles": [
+                "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            ],
+            "citation_map": {
+                "10.1080/09537325.2021.1991572": 1
             }
         }
     }

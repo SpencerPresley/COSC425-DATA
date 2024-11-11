@@ -115,18 +115,18 @@ class CategoryDataOrchestrator:
         self.category_processor.process_data_list(self.data)
 
         # category counts dict to pass to refine faculty sets
-        category_counts: dict[str, CategoryInfo] = self.get_category_counts()
+        category_data: dict[str, CategoryInfo] = self._get_category_data()
 
         # Refine faculty sets to remove near duplicates and update counts
         self.refine_faculty_sets(
             faculty_postprocessor=self.faculty_postprocessor,
             faculty_department_manager=self.faculty_department_manager,
-            category_dict=category_counts,
+            category_dict=category_data,
         )
         self.refine_faculty_stats(
             faculty_stats=self.category_processor.faculty_stats,
             name_variations=self.faculty_postprocessor.name_variations,
-            category_dict=category_counts,
+            category_dict=category_data,
         )
 
         self._save_all_results()
@@ -155,8 +155,13 @@ class CategoryDataOrchestrator:
                 self.output_dir_path, "test_processed_article_stats_obj_data.json"
             )
         )
+        self.serialize_and_save_global_faculty_stats(
+            output_path=os.path.join(
+                self.output_dir_path, "test_processed_global_faculty_stats_data.json"
+            )
+        )
 
-    def get_category_counts(self):
+    def _get_category_data(self):
         """
         Returns the current state of category counts dictionary.
 
@@ -164,12 +169,12 @@ class CategoryDataOrchestrator:
             dict: A dictionary containing category counts.
 
         Design:
-            Simply returns the category_counts attribute from the category_processor.
+            Simply returns the category_data attribute from the category_processor.
 
         Summary:
             Provides access to the current state of category counts.
         """
-        return self.category_processor.category_counts
+        return self.category_processor.category_data
 
     @staticmethod
     def refine_faculty_sets(
@@ -241,7 +246,7 @@ class CategoryDataOrchestrator:
         Summary:
             Enhances category data with URL-friendly names for web applications.
         """
-        tempDict = self.get_category_counts()
+        tempDict = self._get_category_data()
         # This pattern now matches characters not allowed in a URL
         pattern = re.compile(r"[^A-Za-z0-9-]+")
         for category, values in tempDict.items():
@@ -257,105 +262,103 @@ class CategoryDataOrchestrator:
         for title, article_details in article_stats_to_save.items():
             article_details["url"] = shortuuid.uuid(title)
 
-    def serialize_and_save_data(self, *, output_path):
-        """
-        Serializes category data to JSON and saves it to a file.
-
-        Args:
-            output_path (str): Path to save the serialized data.
-
-        Design:
-            Prepares category data for serialization.
-            Handles extending existing data if required.
-            Serializes and saves data to a JSON file.
-
-        Summary:
-            Saves processed category data in a JSON format for further use or analysis.
-        """
-        self.addUrl()
-
-        # Prepare category data for serialization using to_dict method from CategoryInfo class from My_Data_Classes.py
-        categories_serializable = {
+    def _clean_category_data(self, category_data):
+        """Prepare category data by converting sets and removing unwanted keys"""
+        cleaned_data = {
             category: self.convert_sets_to_lists(
                 category_info.to_dict(
                     exclude_keys=["files", "faculty", "departments", "titles"]
                 )
             )
-            for category, category_info in self.get_category_counts().items()
+            for category, category_info in category_data.items()
         }
 
-        for category, category_info in categories_serializable.items():
+        # Remove tc_list from each category
+        for category_info in cleaned_data.values():
             del category_info["tc_list"]
 
-        # Read existing data if extending
+        return cleaned_data
+
+    def _flatten_to_list(self, data_dict):
+        """Convert dictionary of categories to flat list"""
+        return list(data_dict.values())
+
+    def _write_to_json(self, data, output_path):
+        """Write data to JSON file, handling extend mode"""
+        print(data)
+        print(output_path)
         if self.extend:
             with open(output_path, "r") as json_file:
                 existing_data = json.load(json_file)
-            existing_data.update(categories_serializable)
-            categories_serializable = existing_data
+            if isinstance(data, list):
+                existing_data.extend(data)
+            else:
+                existing_data.update(data)
+            data = existing_data
 
-        # Serialize to JSON and save to a file
         with open(output_path, "w") as json_file:
-            json.dump(categories_serializable, json_file, indent=4)
+            json.dump(data, json_file, indent=4)
 
+    def serialize_and_save_data(self, *, output_path):
+        """Serialize and save category data"""
+        self.addUrl()
+
+        # Step 1: Clean the data
+        cleaned_data = self._clean_category_data(self._get_category_data())
+
+        # Step 2: Flatten to list
+        flattened_data = self._flatten_to_list(cleaned_data)
+
+        # Step 3: Write to file
+        self._write_to_json(flattened_data, output_path)
         print(f"Data serialized and saved to {output_path}")
 
     def serialize_and_save_faculty_stats(self, *, output_path):
-        faculty_stats_serializable = {
-            category: self.convert_sets_to_lists(faculty_stats.to_dict())
+        data = {
+            category: faculty_stats.to_dict()
             for category, faculty_stats in self.category_processor.faculty_stats.items()
         }
-
-        if self.extend:
-            with open(output_path, "r") as json_file:
-                existing_data = json.load(json_file)
-            existing_data.update(faculty_stats_serializable)
-            faculty_stats_serializable = existing_data
-
-        with open(output_path, "w") as json_file:
-            json.dump(faculty_stats_serializable, json_file, indent=4)
+        self._write_to_json(data, output_path)
 
     def serialize_and_save_article_stats(self, *, output_path):
-        article_stats_serializable = {
+        # Step 1: Clean the data
+        cleaned_data = {
             category: self.convert_sets_to_lists(article_stats.to_dict())
             for category, article_stats in self.category_processor.article_stats.items()
         }
 
-        # Read and update existing data if extending
-        if self.extend:
-            with open(output_path, "r") as json_file:
-                existing_data = json.load(json_file)
-            existing_data.update(article_stats_serializable)
-            article_stats_serializable = existing_data
+        # Step 2: Flatten to list
+        flattened_data = self._flatten_to_list(cleaned_data)
 
-        # Serialize to JSON and save to a file
-        with open(output_path, "w") as json_file:
-            json.dump(article_stats_serializable, json_file, indent=4)
-
+        # Step 3: Write to file
+        self._write_to_json(flattened_data, output_path)
         self.warning_manager.log_warning(
             "Data Serialization",
             f"Crossref Article Stat Data serialized and saved to {output_path}",
         )
 
     def serialize_and_save_article_stats_obj(self, *, output_path):
+        # Step 1: Clean the data
         article_stats_serializable = self.category_processor.article_stats_obj.to_dict()
         article_stats_to_save = article_stats_serializable["article_citation_map"]
-
         self.generate_short_uuid_as_url(article_stats_to_save)
 
-        if self.extend:
-            with open(output_path, "r") as json_file:
-                existing_data = json.load(json_file)
-            existing_data.update(article_stats_to_save)
-            article_stats_to_save = existing_data
+        # Step 2: Flatten (not needed for this one as it's already flat)
 
-        with open(output_path, "w") as json_file:
-            json.dump(article_stats_to_save, json_file, indent=4)
-
+        # Step 3: Write to file
+        self._write_to_json(article_stats_to_save, output_path)
         self.warning_manager.log_warning(
             "Data Serialization",
             f"Crossref Article Stat Data serialized and saved to {output_path}",
         )
+
+    def serialize_and_save_global_faculty_stats(self, *, output_path):
+        data = list(self.category_processor.global_faculty_stats.values())
+
+        data = [item.to_dict() for item in data]
+
+        # Step 2: Write to file
+        self._write_to_json(data, output_path)
 
     def convert_sets_to_lists(self, data_dict):
         """
@@ -375,9 +378,12 @@ class CategoryDataOrchestrator:
         Summary:
             Ensures all set objects in the dictionary are converted to lists for JSON serialization.
         """
+        print(data_dict)
         for key, value in data_dict.items():
             if isinstance(value, set):
                 data_dict[key] = list(value)
+            elif isinstance(value, list):
+                continue
             elif isinstance(value, dict):
                 data_dict[key] = self.convert_sets_to_lists(value)
         return data_dict

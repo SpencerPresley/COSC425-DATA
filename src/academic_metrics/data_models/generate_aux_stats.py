@@ -93,6 +93,52 @@ class FacultyArticleStats:
 
 
 @dataclass
+class GlobalFacultyStats:
+    """
+    A dataclass representing all of a faculty member's articles across all categories.
+    """
+
+    name: str = field(default="")
+    total_citations: int = 0
+    article_count: int = 0
+    average_citations: int = 0
+    department_affiliations: set[str] = field(default_factory=set)
+    dois: set[str] = field(default_factory=set)
+    titles: set[str] = field(default_factory=set)
+    categories: set[str] = field(default_factory=set)
+    top_level_categories: set[str] = field(default_factory=set)
+    mid_level_categories: set[str] = field(default_factory=set)
+    low_level_categories: set[str] = field(default_factory=set)
+    themes: set[str] = field(default_factory=set)
+    citation_map: dict[str, int] = field(default_factory=dict)
+    journals: set[str] = field(default_factory=set)
+
+    def to_dict(self):
+        """Convert the dataclass to a dictionary, converting sets to lists for JSON serialization."""
+        # Convert sets to lists for JSON serialization
+        for key, value in self.__dict__.items():
+            if isinstance(value, set):
+                self.__dict__[key] = list(value)
+
+        return {
+            "name": self.name,
+            "total_citations": self.total_citations,
+            "article_count": self.article_count,
+            "average_citations": self.average_citations,
+            "department_affiliations": list(self.department_affiliations),
+            "dois": list(self.dois),
+            "titles": list(self.titles),
+            "categories": list(self.categories),
+            "top_level_categories": list(self.top_level_categories),
+            "mid_level_categories": list(self.mid_level_categories),
+            "low_level_categories": list(self.low_level_categories),
+            "themes": list(self.themes),
+            "citation_map": self.citation_map,
+            "journals": list(self.journals),
+        }
+
+
+@dataclass
 class FacultyInfo:
     """
     A dataclass representing detailed information about a faculty member.
@@ -102,14 +148,16 @@ class FacultyInfo:
         article_count (int): Number of articles authored by the faculty member.
         average_citations (int): Average number of citations per article.
         department_affiliations (list[str]): List of departments the faculty is affiliated with.
-        citation_map (FacultyArticleStats): Detailed citation information for each article.
+        doi_citation_map (dict[str, int]): Detailed citation information for each article.
     """
 
     total_citations: int = 0
     article_count: int = 0
     average_citations: int = 0
-    department_affiliations: list[str] = field(default_factory=list)
-    citation_map: FacultyArticleStats = field(default_factory=FacultyArticleStats)
+    titles: set[str] = field(default_factory=set)
+    dois: set[str] = field(default_factory=set)
+    department_affiliations: set[str] = field(default_factory=set)
+    doi_citation_map: dict[str, int] = field(default_factory=dict)
 
 
 @dataclass
@@ -176,28 +224,26 @@ class FacultyStats:
         # If no matching variation is found, return the unrefined name as a fallback
         return unrefined_name
 
-    def to_dict(self, exclude_keys: List[str] = None) -> dict:
+    def to_dict(self) -> dict[str, dict]:
         """
-        Converts the FacultyStats instance to a dictionary suitable for JSON serialization.
+        Converts FacultyStats to a dictionary suitable for JSON serialization.
+        Automatically converts sets to lists.
 
         Returns:
-            dict: A dictionary representation of the FacultyStats instance.
+            dict[str, dict]: Dictionary of faculty info with faculty names as keys
         """
-
-        # Utilize asdict utility from dataclasses, then change sets to lists
-        data_dict = asdict(self)
-
-        # Exclude 'files' from the dictionary
-        if exclude_keys is not None:
-            for key in exclude_keys:
-                if key in data_dict:
-                    del data_dict[key]
-
-        # Convert sets to lists for JSON serialization
-        for key, value in data_dict.items():
-            if isinstance(value, Set):
-                data_dict[key] = list(value)
-        return data_dict
+        faculty_dict = {}
+        for faculty_name, info in self.faculty_stats.items():
+            faculty_dict[faculty_name] = {
+                "total_citations": info.total_citations,
+                "article_count": info.article_count,
+                "average_citations": info.average_citations,
+                "department_affiliations": list(info.department_affiliations),
+                "dois": list(info.dois),
+                "titles": list(info.titles),
+                "citation_map": info.doi_citation_map,
+            }
+        return faculty_dict
 
 
 @dataclass
@@ -212,7 +258,7 @@ class ArticleDetails:
     """
 
     tc_count: int = 0
-    faculty_members: list[str] = field(default_factory=list)
+    faculty_members: set[str] = field(default_factory=set)
     faculty_affiliations: dict[str, list[str]] = field(default_factory=dict)
     abstract: str = field(default="")
     license_url: str = field(default="")
@@ -264,7 +310,7 @@ class ArticleStats:
 @dataclass
 class CrossrefArticleDetails:
     """
-    A dataclass representing details about an individual article.
+    A datalass representing details about an individual article.
 
     Attributes:
         tc_count (int): Total citation count for the article.
@@ -274,7 +320,7 @@ class CrossrefArticleDetails:
 
     title: str = field(default="")
     tc_count: int = 0
-    faculty_members: list[str] = field(default_factory=list)
+    faculty_members: set[str] = field(default_factory=set)
     faculty_affiliations: dict[str, list[str]] = field(default_factory=dict)
     abstract: str = field(default="")
     license_url: str = field(default="")
@@ -283,7 +329,11 @@ class CrossrefArticleDetails:
     journal: str = field(default="")
     download_url: str = field(default="")
     doi: str = field(default="")
-    themes: list[str] = field(default_factory=list)
+    themes: set[str] = field(default_factory=set)
+    categories: set[str] = field(default_factory=set)
+    top_level_categories: set[str] = field(default_factory=set)
+    mid_level_categories: set[str] = field(default_factory=set)
+    low_level_categories: set[str] = field(default_factory=set)
 
 
 @dataclass

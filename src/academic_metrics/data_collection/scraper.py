@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 from openai import OpenAI
 from selenium.webdriver.firefox.options import Options
 from academic_metrics.ChainBuilder import ChainManager
-from typing import Any, Dict, Optional
+from typing import Any, Dict
 
 # Load environment variables
 load_dotenv()

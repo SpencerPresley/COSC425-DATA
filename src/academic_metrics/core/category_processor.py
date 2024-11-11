@@ -1,9 +1,10 @@
 from __future__ import annotations
 
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, List
 from academic_metrics.data_models import (
     CategoryInfo,
     FacultyStats,
+    GlobalFacultyStats,
     FacultyInfo,
     CrossrefArticleStats,
     CrossrefArticleDetails,
@@ -28,10 +29,11 @@ class CategoryProcessor:
         self.faculty_department_manager: FacultyDepartmentManager = (
             faculty_department_manager
         )
-        self.category_counts: dict[str, CategoryInfo] = {}
+        self.category_data: dict[str, CategoryInfo] = {}
 
         # influential stats dictionaries
         self.faculty_stats: dict[str, FacultyStats] = {}
+        self.global_faculty_stats: dict[str, GlobalFacultyStats] = {}
         self.article_stats: dict[str, CrossrefArticleStats] = {}
         self.article_stats_obj = CrossrefArticleStats()
 
@@ -158,28 +160,45 @@ class CategoryProcessor:
             themes,
         ) = self.call_get_attributes(data=data)
 
-        categories = self.initialize_categories(categories)
+        (
+            top_level_categories,
+            mid_level_categories,
+            low_level_categories,
+            all_categories,
+        ) = self.initialize_categories(categories)
         faculty_members = self.clean_faculty_members(faculty_members)
         faculty_affiliations = self.clean_faculty_affiliations(faculty_affiliations)
 
-        department_affiliations_list: list[str] = []
+        all_affiliations: set[str] = set()
         for faculty_member, department_affiliation in faculty_affiliations.items():
-            department_affiliations_list.append(department_affiliation)
+            if isinstance(department_affiliation, set):
+                all_affiliations.update(department_affiliation)
+            elif isinstance(department_affiliation, list):
+                all_affiliations.update(department_affiliation)
+            elif isinstance(department_affiliation, str):
+                all_affiliations.add(department_affiliation)
 
         # update the category counts dict with the new data
-        self.update_faculty_set(categories, faculty_members)
-        self.update_department_set(categories, department_affiliations_list)
-        self.update_title_set(categories, title)
+        self.update_faculty_set(all_categories, faculty_members)
+        self.update_department_set(all_categories, all_affiliations)
+        self.update_title_set(all_categories, title)
         self.update_article_set()
 
         # citation updates related
         self.update_tc_list(
-            category_counts=self.category_counts,
-            categories=categories,
+            category_data=self.category_data,
+            categories=all_categories,
             tc_count=tc_count,
         )
-        self.update_tc_count(self.category_counts, categories)
-        self.set_citation_average(self.category_counts, categories)
+        self.update_tc_count(self.category_data, all_categories)
+        self.set_citation_average(self.category_data, all_categories)
+
+        if themes is not None:
+            self.update_themes_set(
+                category_data=self.category_data,
+                categories=all_categories,
+                themes=themes,
+            )
 
         # construct influential stats
         # On the entry take the faculty members we got and then += their total citations
@@ -189,19 +208,35 @@ class CategoryProcessor:
         # that way i can match what's in the existing data
         self.update_faculty_members_stats(
             faculty_stats=self.faculty_stats,
-            categories=categories,
+            categories=all_categories,
             faculty_members=faculty_members,
             faculty_affiliations=faculty_affiliations,
             tc_count=tc_count,
             title=title,
+            doi=doi,
         )
 
-        self.update_doi_list(categories=categories, doi=doi)
+        self.update_global_faculty_stats(
+            global_faculty_stats=self.global_faculty_stats,
+            categories=all_categories,
+            top_level_categories=top_level_categories,
+            mid_level_categories=mid_level_categories,
+            low_level_categories=low_level_categories,
+            faculty_members=faculty_members,
+            faculty_affiliations=faculty_affiliations,
+            tc_count=tc_count,
+            title=title,
+            doi=doi,
+            journal=journal,
+            themes=themes,
+        )
+
+        self.update_doi_list(categories=all_categories, doi=doi)
 
         # update article stats for the category
         self.update_article_stats(
             article_stats=self.article_stats,
-            categories=categories,
+            categories=all_categories,
             title=title,
             tc_count=tc_count,
             faculty_affiliations=faculty_affiliations,
@@ -228,7 +263,87 @@ class CategoryProcessor:
             download_url=download_url,
             doi=doi,
             themes=themes,
+            top_level_categories=top_level_categories,
+            mid_level_categories=mid_level_categories,
+            low_level_categories=low_level_categories,
+            categories=all_categories,
         )
+
+    def update_global_faculty_stats(
+        self,
+        global_faculty_stats,
+        categories,
+        top_level_categories,
+        mid_level_categories,
+        low_level_categories,
+        faculty_members,
+        faculty_affiliations,
+        tc_count,
+        title,
+        doi,
+        journal,
+        themes,
+    ):
+        faculty_members = set(faculty_members)
+
+        for faculty_member in faculty_members:
+            if faculty_member not in global_faculty_stats:
+                global_faculty_stats[faculty_member] = GlobalFacultyStats(
+                    name=faculty_member,
+                )
+
+            glb_fac_stat = global_faculty_stats[faculty_member]
+            glb_fac_stat.total_citations += tc_count
+            glb_fac_stat.article_count += 1
+            glb_fac_stat.average_citations = (
+                glb_fac_stat.total_citations / glb_fac_stat.article_count
+            )
+            glb_fac_stat.dois.add(doi)
+
+            if isinstance(title, list):
+                glb_fac_stat.titles.update(title)
+            else:
+                glb_fac_stat.titles.add(title)
+            if isinstance(categories, list):
+                glb_fac_stat.categories.update(categories)
+            else:
+                glb_fac_stat.categories.add(categories)
+            if isinstance(top_level_categories, list):
+                glb_fac_stat.top_level_categories.update(top_level_categories)
+            else:
+                glb_fac_stat.top_level_categories.add(top_level_categories)
+            if isinstance(mid_level_categories, list):
+                glb_fac_stat.mid_level_categories.update(mid_level_categories)
+            else:
+                glb_fac_stat.mid_level_categories.add(mid_level_categories)
+            if isinstance(low_level_categories, list):
+                glb_fac_stat.low_level_categories.update(low_level_categories)
+            else:
+                glb_fac_stat.low_level_categories.add(low_level_categories)
+            if isinstance(journal, list):
+                glb_fac_stat.journals.update(journal)
+            else:
+                glb_fac_stat.journals.add(journal)
+            if isinstance(themes, list):
+                glb_fac_stat.themes.update(themes)
+            else:
+                glb_fac_stat.themes.add(themes)
+
+            if faculty_member in faculty_affiliations:
+                if isinstance(faculty_affiliations[faculty_member], set):
+                    glb_fac_stat.department_affiliations.update(
+                        faculty_affiliations[faculty_member]
+                    )
+                elif isinstance(faculty_affiliations[faculty_member], list):
+                    glb_fac_stat.department_affiliations.update(
+                        faculty_affiliations[faculty_member]
+                    )
+                elif isinstance(faculty_affiliations[faculty_member], str):
+                    glb_fac_stat.department_affiliations.add(
+                        faculty_affiliations[faculty_member]
+                    )
+
+            glb_fac_stat.citation_map[doi] = tc_count
 
     @staticmethod
     def update_faculty_members_stats(
@@ -239,6 +354,7 @@ class CategoryProcessor:
         faculty_affiliations: dict[str, list[str]],
         tc_count: int,
         title: str,
+        doi: str,
     ):
         # Convert list to set to remove duplicates to avoid double counting
         faculty_members = set(faculty_members)
@@ -258,23 +374,40 @@ class CategoryProcessor:
 
                 # update members total citations and article count for the category
                 if faculty_affiliations.get(faculty_member, None) is not None:
-                    member_info.department_affiliations = faculty_affiliations[
-                        faculty_member
-                    ]
+                    if isinstance(faculty_affiliations[faculty_member], set):
+                        member_info.department_affiliations.update(
+                            faculty_affiliations[faculty_member]
+                        )
+                    elif isinstance(faculty_affiliations[faculty_member], list):
+                        member_info.department_affiliations.update(
+                            faculty_affiliations[faculty_member]
+                        )
+                    elif isinstance(faculty_affiliations[faculty_member], str):
+                        member_info.department_affiliations.add(
+                            faculty_affiliations[faculty_member]
+                        )
+
                 member_info.total_citations += tc_count
                 member_info.article_count += 1
 
                 if member_info.article_count > 0:
                     member_info.average_citations = (
-                        member_info.total_citations // member_info.article_count
+                        member_info.total_citations / member_info.article_count
                     )
 
-                # update the members article citation map for the category
                 if isinstance(title, list):
-                    for t in title:
-                        member_info.citation_map.article_citation_map[t] = tc_count
-                elif isinstance(title, str):
-                    member_info.citation_map.article_citation_map[title] = tc_count
+                    member_info.titles.update(title)
+                else:
+                    member_info.titles.add(title)
+
+                member_info.dois.add(doi)
+
+                # update the members article citation map for the category
+                if isinstance(doi, list):
+                    for d in doi:
+                        member_info.doi_citation_map[d] = tc_count
+                elif isinstance(doi, str):
+                    member_info.doi_citation_map[doi] = tc_count
 
     @staticmethod
     def update_article_stats(
@@ -321,10 +454,10 @@ class CategoryProcessor:
                 article_details.doi = doi
 
             for faculty_member in faculty_members:
-                if faculty_member not in article_details.faculty_members:
-                    article_details.faculty_members.append(faculty_member)
-                affiliations = faculty_affiliations.get(faculty_member, [])
-                article_details.faculty_affiliations[faculty_member] = affiliations
+                article_details.faculty_members.add(faculty_member)
+            article_details.faculty_affiliations = (
+                faculty_affiliations if faculty_affiliations is not None else {}
+            )
 
         # Remove duplicates from faculty_members
         for category in article_stats:
@@ -346,6 +479,10 @@ class CategoryProcessor:
         download_url: str = None,
         doi: str = None,
         themes: list[str] = None,
+        top_level_categories: list[str] = None,
+        mid_level_categories: list[str] = None,
+        low_level_categories: list[str] = None,
+        categories: list[str] = None,
     ):
         titles = []
         if isinstance(title, str):
@@ -371,6 +508,16 @@ class CategoryProcessor:
                 download_url=download_url if download_url is not None else "",
                 doi=doi if doi is not None else "",
                 themes=themes if themes is not None else [],
+                top_level_categories=(
+                    top_level_categories if top_level_categories is not None else []
+                ),
+                mid_level_categories=(
+                    mid_level_categories if mid_level_categories is not None else []
+                ),
+                low_level_categories=(
+                    low_level_categories if low_level_categories is not None else []
+                ),
+                categories=categories if categories is not None else [],
             )
 
     def update_title_set(self, categories, title):
@@ -383,7 +530,7 @@ class CategoryProcessor:
             self.faculty_department_manager.update_doi_list(categories, doi)
 
     def update_article_set(self):
-        self.faculty_department_manager.update_article_counts(self.category_counts)
+        self.faculty_department_manager.update_article_counts(self.category_data)
 
     def update_department_set(self, categories, department_members):
         if department_members is not None:
@@ -398,9 +545,7 @@ class CategoryProcessor:
         # print(f"\n\nIN CLEAN DEPARTMENT\n\n{faculty_affiliations}")
         department_affiliations: dict[str, str] = {}
         for faculty_member, affiliations in faculty_affiliations.items():
-            for affiliation in affiliations:
-                if affiliation != "":
-                    department_affiliations[faculty_member] = affiliation
+            department_affiliations[faculty_member] = affiliations
         return department_affiliations
 
     def clean_faculty_members(self, faculty_members):
@@ -411,28 +556,25 @@ class CategoryProcessor:
         return clean_faculty_members
 
     def initialize_categories(self, categories):
-        top_level_categories = categories.get("top", [])
-        mid_level_categories = categories.get("mid", [])
-        low_level_categories = categories.get("low", [])
-
-        all_categories = []
-        for category in top_level_categories:
-            all_categories.append(category)
-            if category not in self.category_counts:
-                # Intialize a new CategoryInfo dataclass instance for the given category
-                self.category_counts[category] = CategoryInfo()
-
-        for category in mid_level_categories:
-            all_categories.append(category)
-            if category not in self.category_counts:
-                self.category_counts[category] = CategoryInfo()
-
-        for category in low_level_categories:
-            all_categories.append(category)
-            if category not in self.category_counts:
-                self.category_counts[category] = CategoryInfo()
-
-        return all_categories
+        top_level_categories = []
+        mid_level_categories = []
+        low_level_categories = []
+        for category_level in ["top", "mid", "low"]:
+            for category in categories.get(category_level, []):
+                if category not in self.category_data:
+                    self.category_data[category] = CategoryInfo(category_name=category)
+                if category_level == "top":
+                    top_level_categories.append(category)
+                elif category_level == "mid":
+                    mid_level_categories.append(category)
+                elif category_level == "low":
+                    low_level_categories.append(category)
+        return (
+            top_level_categories,
+            mid_level_categories,
+            low_level_categories,
+            list(self.category_data.keys()),
+        )
 
     def get_faculty_stats(self):
         return self.faculty_stats
@@ -440,20 +582,20 @@ class CategoryProcessor:
     @staticmethod
     def update_tc_list(
         *,
-        category_counts: dict[str, CategoryInfo],
+        category_data: dict[str, CategoryInfo],
         categories: list[str],
         tc_count: int,
     ):
         for category in categories:
-            category_counts[category].tc_list.append(tc_count)
+            category_data[category].tc_list.append(tc_count)
 
     @staticmethod
-    def update_tc_count(category_counts, categories):
+    def update_tc_count(category_data, categories):
         for category in categories:
             sum = 0
-            for tc in category_counts[category].tc_list:
+            for tc in category_data[category].tc_list:
                 sum += tc
-            category_counts[category].tc_count = sum
+            category_data[category].tc_count = sum
 
     @staticmethod
     def get_tc_count(lines):
@@ -465,10 +607,15 @@ class CategoryProcessor:
         return tc_count
 
     @staticmethod
-    def set_citation_average(category_counts, categories):
+    def set_citation_average(category_data, categories):
         for category in categories:
             citation_avg = (
-                category_counts[category].tc_count
-                // category_counts[category].article_count
+                category_data[category].tc_count / category_data[category].article_count
             )
-            category_counts[category].citation_average = citation_avg
+            category_data[category].citation_average = citation_avg
+
+    @staticmethod
+    def update_themes_set(category_data, categories, themes):
+        for category in categories:
+            if category in category_data:
+                category_data[category].themes.update(themes)

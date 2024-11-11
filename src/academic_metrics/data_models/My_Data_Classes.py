@@ -38,6 +38,7 @@ class CategoryInfo:
     """
 
     url: str = ""
+    category_name: str = ""
     faculty_count: int = 0
     department_count: int = 0
     article_count: int = 0
@@ -49,6 +50,7 @@ class CategoryInfo:
     tc_list: List[int] = field(default_factory=list)
     citation_average: int = 0
     doi_list: Set[str] = field(default_factory=set)
+    themes: Set[str] = field(default_factory=set)
 
     # this holds the file names associated with articles
     # article_set: Set[str] = field(default_factory=set)

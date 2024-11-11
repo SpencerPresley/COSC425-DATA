@@ -1754,5 +1754,5 @@ class CrossrefDOIExtractionStrategy(AttributeExtractionStrategy):
 @StrategyFactory.register_strategy(AttributeTypes.CROSSREF_THEMES)
 class CrossrefThemesExtractionStrategy(AttributeExtractionStrategy):
     def extract_attribute(self, entry_text: dict) -> tuple[bool, list[str]]:
-        themes = entry_text.get("categories", {}).get("themes", [])
+        themes = entry_text.get("themes", [])
         return (True, themes)

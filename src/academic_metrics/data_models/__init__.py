@@ -8,4 +8,5 @@ from .generate_aux_stats import (
     ArticleStats,
     CrossrefArticleStats,
     CrossrefArticleDetails,
+    GlobalFacultyStats,
 )
