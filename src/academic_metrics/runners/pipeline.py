@@ -10,7 +10,7 @@ from academic_metrics.utils import (
     Utilities,
     APIKeyValidator,
 )
-
+from academic_metrics.factories import DataClassFactory
 from academic_metrics.strategies import StrategyFactory
 from academic_metrics.constants import (
     INPUT_FILES_DIR_PATH,
@@ -28,6 +28,7 @@ class PipelineRunner:
         self.strategy_factory = self._create_strategy_factory()
         self.utilities = self._create_utilities_instance()
         self.classification_wrapper = self._create_classification_wrapper()
+        self.dataclass_factory = self._create_dataclass_factory()
 
     def run_pipeline(self, make_files: bool = False, extend: bool = False):
         if make_files:
@@ -75,6 +76,7 @@ class PipelineRunner:
             warning_manager=self.warning_manager,
             strategy_factory=self.strategy_factory,
             utilities=self.utilities,
+            dataclass_factory=self.dataclass_factory,
             extend=extend,
         )
 
@@ -130,6 +132,9 @@ class PipelineRunner:
                 )
 
         return data_list
+
+    def _create_dataclass_factory(self) -> DataClassFactory:
+        return DataClassFactory()
 
 
 if __name__ == "__main__":

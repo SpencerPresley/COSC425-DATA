@@ -27,7 +27,8 @@ class DataClassFactory:
 
         def decorator(data_class: Type):
             # Apply the @dataclass decorator if not already applied
-            data_class = dataclass(data_class)
+            # if not hasattr(data_class, '__dataclass_fields__'):
+            #     data_class = dataclass(data_class)
             # Register the dataclass using the enum value as the key
             cls._registry[dataclass_type.value] = data_class
             return data_class
@@ -58,9 +59,18 @@ class DataClassFactory:
             )
         """
         data_class = cls._registry.get(dataclass_type.value)
+
         if not data_class:
             raise ValueError(f"No dataclass registered for type: {dataclass_type}")
-        return data_class(**init_params)
+
+        # First create instance with no params to ensure proper initialization
+        instance = data_class()
+
+        # Then set any provided parameters
+        if init_params:
+            instance.set_params(init_params)
+
+        return instance
 
     @classmethod
     def is_registered(cls, dataclass_type: DataClassTypes) -> bool:

@@ -1,20 +1,10 @@
-import sys
+from __future__ import annotations
+
+import json
 import os
+from typing import TYPE_CHECKING
 
-# print("Python version:", sys.version)
-# print("sys.path:", sys.path)
-# print("Current working directory:", os.getcwd())
-# print("Contents of current directory:", os.listdir())
-
-from academic_metrics.mapping import AbstractCategoryMap
-from academic_metrics.strategies import StrategyFactory
-from academic_metrics.utils import (
-    WarningManager,
-    Utilities,
-)
-from academic_metrics.utils.taxonomy_util import Taxonomy
 from academic_metrics.core import (
-    FacultyDepartmentManager,
     FacultyPostprocessor,
     NameVariation,
     CategoryProcessor,
@@ -23,11 +13,14 @@ from academic_metrics.data_models import (
     CategoryInfo,
     FacultyStats,
 )
-from urllib.parse import quote
-import shortuuid
 
-import json
-import re
+if TYPE_CHECKING:
+    from academic_metrics.factories import (
+        DataClassFactory,
+        StrategyFactory,
+        WarningManager,
+        Utilities,
+    )
 
 
 class CategoryDataOrchestrator:
@@ -57,6 +50,7 @@ class CategoryDataOrchestrator:
         data: list[dict],
         output_dir_path: str,
         strategy_factory: StrategyFactory,
+        dataclass_factory: DataClassFactory,
         warning_manager: WarningManager,
         utilities: Utilities,
         extend: bool = False,
@@ -91,21 +85,14 @@ class CategoryDataOrchestrator:
 
         self.strategy_factory = strategy_factory
         self.warning_manager = warning_manager
+        self.dataclass_factory = dataclass_factory
         self.utils = utilities
 
         # Initialize the CategoryProcessor and FacultyDepartmentManager with dependencies
         self.category_processor = CategoryProcessor(
-            self.utils, None, self.warning_manager
-        )
-
-        # Intialize FacultyDepartmentManager
-        self.faculty_department_manager = FacultyDepartmentManager(
-            self.category_processor
-        )
-
-        # Link CategoryProcessor and FacultyDepartmentManager
-        self.category_processor.faculty_department_manager = (
-            self.faculty_department_manager
+            utils=self.utils,
+            dataclass_factory=self.dataclass_factory,
+            warning_manager=self.warning_manager,
         )
 
         # post-processor object
@@ -120,7 +107,6 @@ class CategoryDataOrchestrator:
         # Refine faculty sets to remove near duplicates and update counts
         self.refine_faculty_sets(
             faculty_postprocessor=self.faculty_postprocessor,
-            faculty_department_manager=self.faculty_department_manager,
             category_dict=category_data,
         )
         self.refine_faculty_stats(
@@ -179,7 +165,6 @@ class CategoryDataOrchestrator:
     @staticmethod
     def refine_faculty_sets(
         faculty_postprocessor: FacultyPostprocessor,
-        faculty_department_manager: FacultyDepartmentManager,
         category_dict: dict[str, CategoryInfo],
     ):
         """
@@ -197,9 +182,17 @@ class CategoryDataOrchestrator:
         Summary:
             Improves the quality of faculty data by removing duplicates and updating related counts.
         """
+        # Remove near duplicates
         faculty_postprocessor.remove_near_duplicates(category_dict=category_dict)
-        faculty_department_manager.update_faculty_count()
-        faculty_department_manager.update_department_count()
+
+        # Update counts for each category
+        for category, info in category_dict.items():
+            info.set_params(
+                {
+                    "faculty_count": len(info.faculty),
+                    "department_count": len(info.departments),
+                }
+            )
 
     def refine_faculty_stats(
         self,
@@ -235,48 +228,14 @@ class CategoryDataOrchestrator:
                     name_variations=name_variations,
                 )
 
-    def addUrl(self):
-        """
-        Adds URL-friendly versions of category names to the category data.
-
-        Design:
-            Converts category names to URL-friendly format.
-            Updates the category information with the URL-friendly version.
-
-        Summary:
-            Enhances category data with URL-friendly names for web applications.
-        """
-        tempDict = self._get_category_data()
-        # This pattern now matches characters not allowed in a URL
-        pattern = re.compile(r"[^A-Za-z0-9-]+")
-        for category, values in tempDict.items():
-            # Replace matched characters with a hyphen
-            url = pattern.sub("-", category.lower())
-            # Remove potential multiple hyphens with a single one
-            url = re.sub("-+", "-", url)
-            # Remove leading or trailing hyphens
-            url = url.strip("-")
-            values.url = url
-
-    def generate_short_uuid_as_url(self, article_stats_to_save):
-        for title, article_details in article_stats_to_save.items():
-            article_details["url"] = shortuuid.uuid(title)
-
     def _clean_category_data(self, category_data):
-        """Prepare category data by converting sets and removing unwanted keys"""
+        """Prepare category data by removing unwanted keys"""
         cleaned_data = {
-            category: self.convert_sets_to_lists(
-                category_info.to_dict(
-                    exclude_keys=["files", "faculty", "departments", "titles"]
-                )
+            category: category_info.to_dict(
+                exclude_keys=["files", "faculty", "departments", "titles"]
             )
             for category, category_info in category_data.items()
         }
-
-        # Remove tc_list from each category
-        for category_info in cleaned_data.values():
-            del category_info["tc_list"]
-
         return cleaned_data
 
     def _flatten_to_list(self, data_dict):
@@ -285,8 +244,6 @@ class CategoryDataOrchestrator:
 
     def _write_to_json(self, data, output_path):
         """Write data to JSON file, handling extend mode"""
-        print(data)
-        print(output_path)
         if self.extend:
             with open(output_path, "r") as json_file:
                 existing_data = json.load(json_file)
@@ -301,8 +258,6 @@ class CategoryDataOrchestrator:
 
     def serialize_and_save_data(self, *, output_path):
         """Serialize and save category data"""
-        self.addUrl()
-
         # Step 1: Clean the data
         cleaned_data = self._clean_category_data(self._get_category_data())
 
@@ -311,56 +266,50 @@ class CategoryDataOrchestrator:
 
         # Step 3: Write to file
         self._write_to_json(flattened_data, output_path)
-        print(f"Data serialized and saved to {output_path}")
 
     def serialize_and_save_faculty_stats(self, *, output_path):
+        """Serialize and save faculty stats"""
+
         # Get all faculty stats as dicts
-        data = {
-            category: faculty_stats.to_dict()
-            for category, faculty_stats in self.category_processor.faculty_stats.items()
-        }
+        data = {}
+        for category, faculty_stats in self.category_processor.faculty_stats.items():
+            data[category] = faculty_stats.to_dict()
 
         # Flatten into a single list of faculty info dicts
-        flattened_data = [
-            faculty_info
-            for category_dict in data.values()
-            for faculty_info in category_dict.values()
-        ]
+        flattened_data = []
+        for category_dict in data.values():
+            if category_dict:  # Only process non-empty dicts
+                flattened_data.extend(category_dict.values())
 
         self._write_to_json(flattened_data, output_path)
 
     def serialize_and_save_article_stats(self, *, output_path):
-        # Step 1: Clean the data
         cleaned_data = {
-            category: self.convert_sets_to_lists(article_stats.to_dict())
+            category: article_stats.to_dict()
             for category, article_stats in self.category_processor.article_stats.items()
         }
 
-        # Step 2: Flatten to list
         flattened_data = self._flatten_to_list(cleaned_data)
-
-        # Step 3: Write to file
         self._write_to_json(flattened_data, output_path)
-        self.warning_manager.log_warning(
-            "Data Serialization",
-            f"Crossref Article Stat Data serialized and saved to {output_path}",
-        )
 
     def serialize_and_save_article_stats_obj(self, *, output_path):
-        # Step 1: Clean the data
-        article_stats_serializable = self.category_processor.article_stats_obj.to_dict()
-        article_stats_to_save = article_stats_serializable["article_citation_map"]
-        self.generate_short_uuid_as_url(article_stats_to_save)
+        """Serialize and save article stats object"""
+        # Get the article stats dictionary directly
+        article_stats_serializable = (
+            self.category_processor.article_stats_obj.article_citation_map
+        )
 
-        # Step 2: Flatten
+        # Convert each CrossrefArticleDetails object to a dict
+        article_stats_to_save = {
+            doi: details.to_dict()
+            for doi, details in article_stats_serializable.items()
+        }
+
+        # Flatten to list of article details
         flattened_data = list(article_stats_to_save.values())
 
-        # Step 3: Write to file
+        # Write to file
         self._write_to_json(flattened_data, output_path)
-        self.warning_manager.log_warning(
-            "Data Serialization",
-            f"Crossref Article Stat Object Data serialized and saved to {output_path}",
-        )
 
     def serialize_and_save_global_faculty_stats(self, *, output_path):
         data = list(self.category_processor.global_faculty_stats.values())
@@ -369,34 +318,6 @@ class CategoryDataOrchestrator:
 
         # Step 2: Write to file
         self._write_to_json(data, output_path)
-
-    def convert_sets_to_lists(self, data_dict):
-        """
-        Recursively converts sets to lists in a dictionary.
-
-        Args:
-            data_dict (dict): The dictionary to process.
-
-        Returns:
-            dict: The processed dictionary with sets converted to lists.
-
-        Design:
-            Recursively traverses the dictionary.
-            Converts set objects to list objects.
-            Handles nested dictionaries.
-
-        Summary:
-            Ensures all set objects in the dictionary are converted to lists for JSON serialization.
-        """
-        print(data_dict)
-        for key, value in data_dict.items():
-            if isinstance(value, set):
-                data_dict[key] = list(value)
-            elif isinstance(value, list):
-                continue
-            elif isinstance(value, dict):
-                data_dict[key] = self.convert_sets_to_lists(value)
-        return data_dict
 
 
 if __name__ == "__main__":

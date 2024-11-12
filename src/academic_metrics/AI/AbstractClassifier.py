@@ -1,43 +1,48 @@
-import os
+from __future__ import annotations
+
 import json
 import logging
+import os
 from collections import defaultdict
-from typing import List, Dict, Any, cast, Union, Tuple
+from typing import Any, Dict, List, Tuple, TYPE_CHECKING, Union, cast
+
 from dotenv import load_dotenv
-from academic_metrics.utils.taxonomy_util import Taxonomy
+
 from academic_metrics.ChainBuilder import ChainManager
 from academic_metrics.ai_data_models import (
-    ClassificationOutput,
-    ThemeAnalysis,
-    MethodExtractionOutput,
     AbstractSentenceAnalysis,
     AbstractSummary,
-)
-
-from academic_metrics.ai_prompts.method_prompts import (
-    METHOD_EXTRACTION_SYSTEM_MESSAGE,
-    METHOD_JSON_FORMAT,
-    METHOD_EXTRACTION_CORRECT_EXAMPLE_JSON,
-    METHOD_EXTRACTION_INCORRECT_EXAMPLE_JSON,
-)
-from academic_metrics.ai_prompts.sentence_analysis_prompts import (
-    ABSTRACT_SENTENCE_ANALYSIS_SYSTEM_MESSAGE,
-    SENTENCE_ANALYSIS_JSON_EXAMPLE,
+    ClassificationOutput,
+    MethodExtractionOutput,
+    ThemeAnalysis,
 )
 from academic_metrics.ai_prompts.abstract_summary_prompts import (
     ABSTRACT_SUMMARY_SYSTEM_MESSAGE,
     SUMMARY_JSON_STRUCTURE,
 )
-from academic_metrics.ai_prompts.theme_prompts import (
-    THEME_RECOGNITION_SYSTEM_MESSAGE,
-    THEME_RECOGNITION_JSON_FORMAT,
-)
 from academic_metrics.ai_prompts.classification_prompts import (
+    CLASSIFICATION_JSON_FORMAT,
     CLASSIFICATION_SYSTEM_MESSAGE,
     TAXONOMY_EXAMPLE,
-    CLASSIFICATION_JSON_FORMAT,
 )
 from academic_metrics.ai_prompts.human_prompt import HUMAN_MESSAGE_PROMPT
+from academic_metrics.ai_prompts.method_prompts import (
+    METHOD_EXTRACTION_CORRECT_EXAMPLE_JSON,
+    METHOD_EXTRACTION_INCORRECT_EXAMPLE_JSON,
+    METHOD_EXTRACTION_SYSTEM_MESSAGE,
+    METHOD_JSON_FORMAT,
+)
+from academic_metrics.ai_prompts.sentence_analysis_prompts import (
+    ABSTRACT_SENTENCE_ANALYSIS_SYSTEM_MESSAGE,
+    SENTENCE_ANALYSIS_JSON_EXAMPLE,
+)
+from academic_metrics.ai_prompts.theme_prompts import (
+    THEME_RECOGNITION_JSON_FORMAT,
+    THEME_RECOGNITION_SYSTEM_MESSAGE,
+)
+
+if TYPE_CHECKING:
+    from academic_metrics.utils.taxonomy_util import Taxonomy
 
 
 class AbstractClassifier:
@@ -431,7 +436,7 @@ class AbstractClassifier:
             "top_categories": top_categories,
             "mid_categories": mid_categories,
             "low_categories": low_categories,
-            "themes": themes,
+            "themes": abstract_result.get("themes", []),
         }
 
         return result if return_type == dict else tuple(result.values())

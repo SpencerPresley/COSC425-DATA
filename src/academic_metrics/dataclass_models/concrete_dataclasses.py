@@ -1,13 +1,12 @@
-from dataclasses import field
+from dataclasses import field, dataclass
 from typing import Set, List, Dict, Any
 
-from academic_metrics.dataclass_models.abstract_base_dataclass import (
-    AbstractBaseDataClass,
-)
+from .abstract_base_dataclass import AbstractBaseDataClass
 from academic_metrics.factories import DataClassFactory
 from academic_metrics.enums import DataClassTypes
 
 
+@dataclass
 @DataClassFactory.register_dataclass(DataClassTypes.CATEGORY_INFO)
 class CategoryInfo(AbstractBaseDataClass):
     """
@@ -46,12 +45,12 @@ class CategoryInfo(AbstractBaseDataClass):
     departments: Set[str] = field(default_factory=set)
     titles: Set[str] = field(default_factory=set)
     tc_count: int = 0
-    tc_list: List[int] = field(default_factory=list)
     citation_average: int = 0
     doi_list: Set[str] = field(default_factory=set)
     themes: Set[str] = field(default_factory=set)
 
 
+@dataclass
 @DataClassFactory.register_dataclass(DataClassTypes.GLOBAL_FACULTY_STATS)
 class GlobalFacultyStats(AbstractBaseDataClass):
     """
@@ -85,7 +84,7 @@ class GlobalFacultyStats(AbstractBaseDataClass):
     dois: Set[str] = field(default_factory=set)
     titles: Set[str] = field(default_factory=set)
     categories: Set[str] = field(default_factory=set)
-    category_ids: Set[str] = field(default_factory=set)
+    category_urls: Set[str] = field(default_factory=set)
     top_level_categories: Set[str] = field(default_factory=set)
     mid_level_categories: Set[str] = field(default_factory=set)
     low_level_categories: Set[str] = field(default_factory=set)
@@ -94,6 +93,7 @@ class GlobalFacultyStats(AbstractBaseDataClass):
     journals: Set[str] = field(default_factory=set)
 
 
+@dataclass
 @DataClassFactory.register_dataclass(DataClassTypes.FACULTY_INFO)
 class FacultyInfo(AbstractBaseDataClass):
     """
@@ -116,7 +116,7 @@ class FacultyInfo(AbstractBaseDataClass):
     _id: str = field(default="")
     name: str = field(default="")
     category: str = field(default="")
-    category_id: str = field(default="")
+    category_url: str = field(default="")
     total_citations: int = 0
     article_count: int = 0
     average_citations: int = 0
@@ -126,6 +126,7 @@ class FacultyInfo(AbstractBaseDataClass):
     doi_citation_map: Dict[str, int] = field(default_factory=dict)
 
 
+@dataclass
 @DataClassFactory.register_dataclass(DataClassTypes.FACULTY_STATS)
 class FacultyStats(AbstractBaseDataClass):
     """
@@ -219,6 +220,7 @@ class FacultyStats(AbstractBaseDataClass):
                 self.faculty_stats[name] = info
 
 
+@dataclass
 @DataClassFactory.register_dataclass(DataClassTypes.ARTICLE_DETAILS)
 class ArticleDetails(AbstractBaseDataClass):
     """
@@ -249,6 +251,7 @@ class ArticleDetails(AbstractBaseDataClass):
     doi: str = field(default="")
 
 
+@dataclass
 @DataClassFactory.register_dataclass(DataClassTypes.ARTICLE_STATS)
 class ArticleStats(AbstractBaseDataClass):
     """
@@ -311,6 +314,7 @@ class ArticleStats(AbstractBaseDataClass):
                 self.article_citation_map[title] = details
 
 
+@dataclass
 @DataClassFactory.register_dataclass(DataClassTypes.CROSSREF_ARTICLE_DETAILS)
 class CrossrefArticleDetails(AbstractBaseDataClass):
     """
@@ -351,12 +355,14 @@ class CrossrefArticleDetails(AbstractBaseDataClass):
     doi: str = field(default="")
     themes: Set[str] = field(default_factory=set)
     categories: Set[str] = field(default_factory=set)
-    category_ids: Set[str] = field(default_factory=set)
+    category_urls: Set[str] = field(default_factory=set)
     top_level_categories: Set[str] = field(default_factory=set)
     mid_level_categories: Set[str] = field(default_factory=set)
     low_level_categories: Set[str] = field(default_factory=set)
+    url: str = field(default="")
 
 
+@dataclass
 @DataClassFactory.register_dataclass(DataClassTypes.CROSSREF_ARTICLE_STATS)
 class CrossrefArticleStats(AbstractBaseDataClass):
     """
@@ -383,7 +389,7 @@ class CrossrefArticleStats(AbstractBaseDataClass):
         default_factory=dict
     )
 
-    def set_params(self, params: Dict[str, Any]) -> None:
+    def set_params(self, params: Dict[str, Any], debug: bool = False) -> None:
         """
         Override set_params to handle the nested CrossrefArticleDetails dictionary.
 
@@ -400,6 +406,12 @@ class CrossrefArticleStats(AbstractBaseDataClass):
             ...     }
             ... })
         """
+        if debug:
+            print(f"set_params called with params: {params}")
+            print(
+                f"Current article_citation_map type: {type(self.article_citation_map)}"
+            )
+            print(f"Current article_citation_map value: {self.article_citation_map}")
         # Case 1: If params contains a full article_citation_map
         if "article_citation_map" in params:
             article_data = params["article_citation_map"]
@@ -410,7 +422,7 @@ class CrossrefArticleStats(AbstractBaseDataClass):
         # Update article details for each DOI
         for doi, details in article_data.items():
             # Create CrossrefArticleDetails if it doesn't exist
-            if doi not in self.article_citation_map:
+            if doi not in self.article_citation_map.keys():
                 self.article_citation_map[doi] = DataClassFactory.get_dataclass(
                     DataClassTypes.CROSSREF_ARTICLE_DETAILS
                 )

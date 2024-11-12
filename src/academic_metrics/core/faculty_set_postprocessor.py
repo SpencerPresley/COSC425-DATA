@@ -1,7 +1,7 @@
 import copy
 import random
 from dataclasses import dataclass, field
-from typing import Optional, Any
+from typing import Optional, Any, cast
 
 
 class FacultyPostprocessor:
@@ -164,7 +164,7 @@ class FacultyPostprocessor:
 
     def duplicate_postprocessor(
         self,
-        faculty_set: set[str],
+        faculty_set: set[str] | list[str],
         faculty_sets: list[set[str]],
         similarity_threshold: float = 0.5,
     ) -> set[str]:
@@ -187,6 +187,9 @@ class FacultyPostprocessor:
         # most_frequent_variation is a dictionary that maps each normalized name to its most frequent variation
         # name_signatures is a dictionary that maps each name to its MinHash signature
         # to_remove is a set of names to be removed from the faculty set
+        if not isinstance(faculty_set, set):
+            faculty_set = set(faculty_set)
+
         (
             most_frequent_variation,
             name_signatures,
