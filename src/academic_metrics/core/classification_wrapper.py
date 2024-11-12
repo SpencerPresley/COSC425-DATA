@@ -279,7 +279,7 @@ class ClassificationWrapper:
         data["categories"]["top"] = categories.get("top_categories", [])
         data["categories"]["mid"] = categories.get("mid_categories", [])
         data["categories"]["low"] = categories.get("low_categories", [])
-        data["categories"]["themes"] = categories.get("themes", [])
+        data["themes"] = categories.get("themes", [])
 
     def _extract_categories(
         self, doi: str, classifier: AbstractClassifier

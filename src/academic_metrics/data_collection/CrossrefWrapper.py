@@ -327,7 +327,6 @@ class CrossrefWrapper:
         self.logger.info(f"Number of items: {len(result_list)}")
 
         self.result = result_list
-        return result_list
 
     def serialize_to_json(self, output_file):
         """
@@ -356,15 +355,18 @@ class CrossrefWrapper:
                 except Exception as e:
                     continue
 
+    def get_data(self):
+        return self.result
+
     def run_all_process(self):
         """
         Run all data fetching and processing
         """
         self.run_afetch_yrange()  # run async data fetch
         self.final_data_process()
-        self.serialize_to_json("postProcess.json")
+        return self
 
 
 if __name__ == "__main__":
     wrap = CrossrefWrapper()  # create the wrapper
-    wrap.run_all_process()
+    data = wrap.run_all_process().get_data()

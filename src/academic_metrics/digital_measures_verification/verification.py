@@ -31,6 +31,13 @@ def query_crossref(
 
     # Properly encode the title, author, and journal for a URL
     encoded_title = quote(title)
+    """
+    if title is = This is a Paper
+
+    turns into 
+
+    This%20is%20a%20paper
+    """
 
     # Construct the query URL with additional parameters
     url = f"https://api.crossref.org/works?query.title={encoded_title}"
