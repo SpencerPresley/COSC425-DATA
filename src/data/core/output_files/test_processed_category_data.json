@@ -1,7 +1,7 @@
 [
     {
-        "_id": "Zy8EgUtVQCCZY4rmenyzUt",
-        "url": "business",
+        "_id": "Business",
+        "url": "Business",
         "category_name": "Business",
         "faculty_count": 3,
         "department_count": 2,
@@ -12,14 +12,15 @@
             "10.1080/09537325.2021.1991572"
         ],
         "themes": [
-            "Foreign Ownership and R&D Investment Relationship",
-            "Impact of Deregulation on Innovation Investment",
-            "Firm Heterogeneity in Innovation Strategies"
+            "Firm heterogeneity",
+            "Foreign equity ownership",
+            "Innovation investment",
+            "Moderating effects of firm characteristics"
         ]
     },
     {
-        "_id": "K5qJ668vbY4YDmZ26FitvA",
-        "url": "social-sciences",
+        "_id": "Social%20sciences",
+        "url": "Social%20sciences",
         "category_name": "Social sciences",
         "faculty_count": 3,
         "department_count": 2,
@@ -30,32 +31,15 @@
             "10.1080/09537325.2021.1991572"
         ],
         "themes": [
-            "Foreign Ownership and R&D Investment Relationship",
-            "Impact of Deregulation on Innovation Investment",
-            "Firm Heterogeneity in Innovation Strategies"
+            "Firm heterogeneity",
+            "Foreign equity ownership",
+            "Innovation investment",
+            "Moderating effects of firm characteristics"
         ]
     },
     {
-        "_id": "JWaR6ykEixP4R5v8pdji3w",
-        "url": "economics",
-        "category_name": "Economics",
-        "faculty_count": 3,
-        "department_count": 2,
-        "article_count": 1,
-        "tc_count": 1,
-        "citation_average": 1.0,
-        "doi_list": [
-            "10.1080/09537325.2021.1991572"
-        ],
-        "themes": [
-            "Foreign Ownership and R&D Investment Relationship",
-            "Impact of Deregulation on Innovation Investment",
-            "Firm Heterogeneity in Innovation Strategies"
-        ]
-    },
-    {
-        "_id": "JKeMjGMriWTBhnMkSGBrgk",
-        "url": "business-administration-and-management",
+        "_id": "Business%20administration%20and%20management",
+        "url": "Business%20administration%20and%20management",
         "category_name": "Business administration and management",
         "faculty_count": 3,
         "department_count": 2,
@@ -66,15 +50,16 @@
             "10.1080/09537325.2021.1991572"
         ],
         "themes": [
-            "Foreign Ownership and R&D Investment Relationship",
-            "Impact of Deregulation on Innovation Investment",
-            "Firm Heterogeneity in Innovation Strategies"
+            "Firm heterogeneity",
+            "Foreign equity ownership",
+            "Innovation investment",
+            "Moderating effects of firm characteristics"
         ]
     },
     {
-        "_id": "CQ3GeWzei6HabCuzuKX7Cj",
-        "url": "business-management-and-administration",
-        "category_name": "Business management and administration",
+        "_id": "Economics",
+        "url": "Economics",
+        "category_name": "Economics",
         "faculty_count": 3,
         "department_count": 2,
         "article_count": 1,
@@ -84,32 +69,15 @@
             "10.1080/09537325.2021.1991572"
         ],
         "themes": [
-            "Foreign Ownership and R&D Investment Relationship",
-            "Impact of Deregulation on Innovation Investment",
-            "Firm Heterogeneity in Innovation Strategies"
+            "Firm heterogeneity",
+            "Foreign equity ownership",
+            "Innovation investment",
+            "Moderating effects of firm characteristics"
         ]
     },
     {
-        "_id": "nPe5Z52QKh2Vm9LD38NV7N",
-        "url": "applied-economics",
-        "category_name": "Applied economics",
-        "faculty_count": 3,
-        "department_count": 2,
-        "article_count": 1,
-        "tc_count": 1,
-        "citation_average": 1.0,
-        "doi_list": [
-            "10.1080/09537325.2021.1991572"
-        ],
-        "themes": [
-            "Foreign Ownership and R&D Investment Relationship",
-            "Impact of Deregulation on Innovation Investment",
-            "Firm Heterogeneity in Innovation Strategies"
-        ]
-    },
-    {
-        "_id": "CckxzcbBNuZRZ2FJ3563xA",
-        "url": "public-policy-analysis",
+        "_id": "Public%20policy%20analysis",
+        "url": "Public%20policy%20analysis",
         "category_name": "Public policy analysis",
         "faculty_count": 3,
         "department_count": 2,
@@ -120,14 +88,34 @@
             "10.1080/09537325.2021.1991572"
         ],
         "themes": [
-            "Foreign Ownership and R&D Investment Relationship",
-            "Impact of Deregulation on Innovation Investment",
-            "Firm Heterogeneity in Innovation Strategies"
+            "Firm heterogeneity",
+            "Foreign equity ownership",
+            "Innovation investment",
+            "Moderating effects of firm characteristics"
         ]
     },
     {
-        "_id": "EUzpVWjAQUFCxiSYH3U9a5",
-        "url": "business-administration-and-management-nec",
+        "_id": "Business%20management%20and%20administration",
+        "url": "Business%20management%20and%20administration",
+        "category_name": "Business management and administration",
+        "faculty_count": 3,
+        "department_count": 2,
+        "article_count": 1,
+        "tc_count": 1,
+        "citation_average": 1.0,
+        "doi_list": [
+            "10.1080/09537325.2021.1991572"
+        ],
+        "themes": [
+            "Firm heterogeneity",
+            "Foreign equity ownership",
+            "Innovation investment",
+            "Moderating effects of firm characteristics"
+        ]
+    },
+    {
+        "_id": "Business%20administration%20and%20management%20nec",
+        "url": "Business%20administration%20and%20management%20nec",
         "category_name": "Business administration and management nec",
         "faculty_count": 3,
         "department_count": 2,
@@ -138,14 +126,53 @@
             "10.1080/09537325.2021.1991572"
         ],
         "themes": [
-            "Foreign Ownership and R&D Investment Relationship",
-            "Impact of Deregulation on Innovation Investment",
-            "Firm Heterogeneity in Innovation Strategies"
+            "Firm heterogeneity",
+            "Foreign equity ownership",
+            "Innovation investment",
+            "Moderating effects of firm characteristics"
         ]
     },
     {
-        "_id": "UASvxqwtv8fswVBTRMHU9N",
-        "url": "public-policy-analysis-general",
+        "_id": "Applied%20economics",
+        "url": "Applied%20economics",
+        "category_name": "Applied economics",
+        "faculty_count": 3,
+        "department_count": 2,
+        "article_count": 1,
+        "tc_count": 1,
+        "citation_average": 1.0,
+        "doi_list": [
+            "10.1080/09537325.2021.1991572"
+        ],
+        "themes": [
+            "Firm heterogeneity",
+            "Foreign equity ownership",
+            "Innovation investment",
+            "Moderating effects of firm characteristics"
+        ]
+    },
+    {
+        "_id": "Econometrics%20and%20quantitative%20economics",
+        "url": "Econometrics%20and%20quantitative%20economics",
+        "category_name": "Econometrics and quantitative economics",
+        "faculty_count": 3,
+        "department_count": 2,
+        "article_count": 1,
+        "tc_count": 1,
+        "citation_average": 1.0,
+        "doi_list": [
+            "10.1080/09537325.2021.1991572"
+        ],
+        "themes": [
+            "Firm heterogeneity",
+            "Foreign equity ownership",
+            "Innovation investment",
+            "Moderating effects of firm characteristics"
+        ]
+    },
+    {
+        "_id": "Public%20policy%20analysis%2C%20general",
+        "url": "Public%20policy%20analysis%2C%20general",
         "category_name": "Public policy analysis, general",
         "faculty_count": 3,
         "department_count": 2,
@@ -156,9 +183,10 @@
             "10.1080/09537325.2021.1991572"
         ],
         "themes": [
-            "Foreign Ownership and R&D Investment Relationship",
-            "Impact of Deregulation on Innovation Investment",
-            "Firm Heterogeneity in Innovation Strategies"
+            "Firm heterogeneity",
+            "Foreign equity ownership",
+            "Innovation investment",
+            "Moderating effects of firm characteristics"
         ]
     }
 ]
