@@ -2,7 +2,10 @@ import os
 import json
 from typing import Callable, Dict
 
-from academic_metrics.main import CategoryDataOrchestrator
+from academic_metrics.orchestrators import (
+    CategoryDataOrchestrator,
+    ClassificationOrchestrator,
+)
 from academic_metrics.utils import (
     ClassifierFactory,
     WarningManager,
@@ -10,14 +13,13 @@ from academic_metrics.utils import (
     Utilities,
     APIKeyValidator,
 )
-
+from academic_metrics.factories import DataClassFactory
 from academic_metrics.strategies import StrategyFactory
 from academic_metrics.constants import (
     INPUT_FILES_DIR_PATH,
     SPLIT_FILES_DIR_PATH,
     OUTPUT_FILES_DIR_PATH,
 )
-from academic_metrics.core import ClassificationWrapper
 
 
 class PipelineRunner:
@@ -27,7 +29,8 @@ class PipelineRunner:
         self.warning_manager = self._create_warning_manager()
         self.strategy_factory = self._create_strategy_factory()
         self.utilities = self._create_utilities_instance()
-        self.classification_wrapper = self._create_classification_wrapper()
+        self.classification_orchestrator = self._create_classification_orchestrator()
+        self.dataclass_factory = self._create_dataclass_factory()
 
     def run_pipeline(self, make_files: bool = False, extend: bool = False):
         if make_files:
@@ -38,7 +41,7 @@ class PipelineRunner:
 
         # Run classification on all data
         # comment out to run without AI for testing
-        data = self.classification_wrapper.run_classification(data)
+        data = self.classification_orchestrator.run_classification(data)
 
         # Process classified data and generate category statistics
         self._create_orchestrator(data=data, extend=extend).run_orchestrator()
@@ -60,8 +63,8 @@ class PipelineRunner:
             strategy_factory=self.strategy_factory, warning_manager=self.warning_manager
         )
 
-    def _create_classification_wrapper(self) -> ClassificationWrapper:
-        return ClassificationWrapper(
+    def _create_classification_orchestrator(self) -> ClassificationOrchestrator:
+        return ClassificationOrchestrator(
             abstract_classifier_factory=self._get_acf_func(),
             utilities=self.utilities,
         )
@@ -75,6 +78,7 @@ class PipelineRunner:
             warning_manager=self.warning_manager,
             strategy_factory=self.strategy_factory,
             utilities=self.utilities,
+            dataclass_factory=self.dataclass_factory,
             extend=extend,
         )
 
@@ -130,6 +134,9 @@ class PipelineRunner:
                 )
 
         return data_list
+
+    def _create_dataclass_factory(self) -> DataClassFactory:
+        return DataClassFactory()
 
 
 if __name__ == "__main__":

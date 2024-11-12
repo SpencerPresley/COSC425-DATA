@@ -1,74 +1,10 @@
 [
     {
-        "_id": "minseok-park",
-        "name": "Minseok Park",
-        "total_citations": 1,
-        "article_count": 1,
-        "average_citations": 1.0,
-        "department_affiliations": [
-            "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA"
-        ],
-        "dois": [
-            "10.1080/09537325.2021.1991572"
-        ],
-        "titles": [
-            "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
-        ],
-        "categories": [
-            "Public policy analysis",
-            "Business administration and management",
-            "Applied economics",
-            "Business administration and management nec",
-            "Business management and administration",
-            "Public policy analysis, general",
-            "Business",
-            "Social sciences",
-            "Economics"
-        ],
-        "category_ids": [
-            "nPe5Z52QKh2Vm9LD38NV7N",
-            "UASvxqwtv8fswVBTRMHU9N",
-            "JKeMjGMriWTBhnMkSGBrgk",
-            "JWaR6ykEixP4R5v8pdji3w",
-            "CckxzcbBNuZRZ2FJ3563xA",
-            "CQ3GeWzei6HabCuzuKX7Cj",
-            "EUzpVWjAQUFCxiSYH3U9a5",
-            "K5qJ668vbY4YDmZ26FitvA",
-            "Zy8EgUtVQCCZY4rmenyzUt"
-        ],
-        "top_level_categories": [
-            "Economics",
-            "Business",
-            "Social sciences"
-        ],
-        "mid_level_categories": [
-            "Applied economics",
-            "Business management and administration",
-            "Public policy analysis",
-            "Business administration and management"
-        ],
-        "low_level_categories": [
-            "Public policy analysis, general",
-            "Business administration and management nec"
-        ],
-        "themes": [
-            "Impact of Deregulation on Innovation Investment",
-            "Firm Heterogeneity in Innovation Strategies",
-            "Foreign Ownership and R&D Investment Relationship"
-        ],
-        "citation_map": {
-            "10.1080/09537325.2021.1991572": 1
-        },
-        "journals": [
-            "Technology Analysis &amp; Strategic Management"
-        ]
-    },
-    {
         "_id": "kwangwook-gang",
         "name": "KwangWook Gang",
         "total_citations": 1,
         "article_count": 1,
-        "average_citations": 1.0,
+        "average_citations": 0,
         "department_affiliations": [
             "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA"
         ],
@@ -79,46 +15,49 @@
             "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
         ],
         "categories": [
+            "Social sciences",
+            "Applied economics",
             "Public policy analysis",
             "Business administration and management",
-            "Applied economics",
-            "Business administration and management nec",
+            "Economics",
             "Business management and administration",
+            "Economics, general",
             "Public policy analysis, general",
-            "Business",
-            "Social sciences",
-            "Economics"
+            "Business administration and management nec",
+            "Business"
         ],
-        "category_ids": [
-            "nPe5Z52QKh2Vm9LD38NV7N",
-            "UASvxqwtv8fswVBTRMHU9N",
-            "JKeMjGMriWTBhnMkSGBrgk",
-            "JWaR6ykEixP4R5v8pdji3w",
-            "CckxzcbBNuZRZ2FJ3563xA",
-            "CQ3GeWzei6HabCuzuKX7Cj",
-            "EUzpVWjAQUFCxiSYH3U9a5",
-            "K5qJ668vbY4YDmZ26FitvA",
-            "Zy8EgUtVQCCZY4rmenyzUt"
+        "category_urls": [
+            "Economics%2C%20general",
+            "Social%20sciences",
+            "Business%20administration%20and%20management",
+            "Business%20management%20and%20administration",
+            "Public%20policy%20analysis%2C%20general",
+            "Economics",
+            "Applied%20economics",
+            "Business",
+            "Public%20policy%20analysis",
+            "Business%20administration%20and%20management%20nec"
         ],
         "top_level_categories": [
-            "Economics",
-            "Business",
-            "Social sciences"
+            "Social sciences",
+            "Business"
         ],
         "mid_level_categories": [
-            "Applied economics",
-            "Business management and administration",
-            "Public policy analysis",
-            "Business administration and management"
+            "Business administration and management",
+            "Economics",
+            "Public policy analysis"
         ],
         "low_level_categories": [
+            "Applied economics",
             "Public policy analysis, general",
+            "Business management and administration",
+            "Economics, general",
             "Business administration and management nec"
         ],
         "themes": [
-            "Impact of Deregulation on Innovation Investment",
-            "Firm Heterogeneity in Innovation Strategies",
-            "Foreign Ownership and R&D Investment Relationship"
+            "Impact of deregulation on innovation",
+            "Foreign equity ownership and investment dynamics",
+            "Firm characteristics and innovation investment"
         ],
         "citation_map": {
             "10.1080/09537325.2021.1991572": 1
@@ -132,7 +71,7 @@
         "name": "Byungchul Choi",
         "total_citations": 1,
         "article_count": 1,
-        "average_citations": 1.0,
+        "average_citations": 0,
         "department_affiliations": [
             "College of Business, Hankuk University of Foreign Studies, Seoul, Korea"
         ],
@@ -143,46 +82,116 @@
             "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
         ],
         "categories": [
+            "Social sciences",
+            "Applied economics",
             "Public policy analysis",
             "Business administration and management",
-            "Applied economics",
-            "Business administration and management nec",
+            "Economics",
             "Business management and administration",
+            "Economics, general",
             "Public policy analysis, general",
-            "Business",
-            "Social sciences",
-            "Economics"
+            "Business administration and management nec",
+            "Business"
         ],
-        "category_ids": [
-            "nPe5Z52QKh2Vm9LD38NV7N",
-            "UASvxqwtv8fswVBTRMHU9N",
-            "JKeMjGMriWTBhnMkSGBrgk",
-            "JWaR6ykEixP4R5v8pdji3w",
-            "CckxzcbBNuZRZ2FJ3563xA",
-            "CQ3GeWzei6HabCuzuKX7Cj",
-            "EUzpVWjAQUFCxiSYH3U9a5",
-            "K5qJ668vbY4YDmZ26FitvA",
-            "Zy8EgUtVQCCZY4rmenyzUt"
+        "category_urls": [
+            "Economics%2C%20general",
+            "Social%20sciences",
+            "Business%20administration%20and%20management",
+            "Business%20management%20and%20administration",
+            "Public%20policy%20analysis%2C%20general",
+            "Economics",
+            "Applied%20economics",
+            "Business",
+            "Public%20policy%20analysis",
+            "Business%20administration%20and%20management%20nec"
         ],
         "top_level_categories": [
-            "Economics",
-            "Business",
-            "Social sciences"
+            "Social sciences",
+            "Business"
         ],
         "mid_level_categories": [
-            "Applied economics",
-            "Business management and administration",
-            "Public policy analysis",
-            "Business administration and management"
+            "Business administration and management",
+            "Economics",
+            "Public policy analysis"
         ],
         "low_level_categories": [
+            "Applied economics",
             "Public policy analysis, general",
+            "Business management and administration",
+            "Economics, general",
             "Business administration and management nec"
         ],
         "themes": [
-            "Impact of Deregulation on Innovation Investment",
-            "Firm Heterogeneity in Innovation Strategies",
-            "Foreign Ownership and R&D Investment Relationship"
+            "Impact of deregulation on innovation",
+            "Foreign equity ownership and investment dynamics",
+            "Firm characteristics and innovation investment"
+        ],
+        "citation_map": {
+            "10.1080/09537325.2021.1991572": 1
+        },
+        "journals": [
+            "Technology Analysis &amp; Strategic Management"
+        ]
+    },
+    {
+        "_id": "minseok-park",
+        "name": "Minseok Park",
+        "total_citations": 1,
+        "article_count": 1,
+        "average_citations": 0,
+        "department_affiliations": [
+            "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA"
+        ],
+        "dois": [
+            "10.1080/09537325.2021.1991572"
+        ],
+        "titles": [
+            "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+        ],
+        "categories": [
+            "Social sciences",
+            "Applied economics",
+            "Public policy analysis",
+            "Business administration and management",
+            "Economics",
+            "Business management and administration",
+            "Economics, general",
+            "Public policy analysis, general",
+            "Business administration and management nec",
+            "Business"
+        ],
+        "category_urls": [
+            "Economics%2C%20general",
+            "Social%20sciences",
+            "Business%20administration%20and%20management",
+            "Business%20management%20and%20administration",
+            "Public%20policy%20analysis%2C%20general",
+            "Economics",
+            "Applied%20economics",
+            "Business",
+            "Public%20policy%20analysis",
+            "Business%20administration%20and%20management%20nec"
+        ],
+        "top_level_categories": [
+            "Social sciences",
+            "Business"
+        ],
+        "mid_level_categories": [
+            "Business administration and management",
+            "Economics",
+            "Public policy analysis"
+        ],
+        "low_level_categories": [
+            "Applied economics",
+            "Public policy analysis, general",
+            "Business management and administration",
+            "Economics, general",
+            "Business administration and management nec"
+        ],
+        "themes": [
+            "Impact of deregulation on innovation",
+            "Foreign equity ownership and investment dynamics",
+            "Firm characteristics and innovation investment"
         ],
         "citation_map": {
             "10.1080/09537325.2021.1991572": 1
