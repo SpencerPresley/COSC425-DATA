@@ -9,7 +9,8 @@ from academic_metrics.core import (
     NameVariation,
     CategoryProcessor,
 )
-from academic_metrics.data_models import (
+
+from academic_metrics.dataclass_models import (
     CategoryInfo,
     FacultyStats,
 )

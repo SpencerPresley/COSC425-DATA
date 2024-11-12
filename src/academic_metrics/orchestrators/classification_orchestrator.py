@@ -3,7 +3,7 @@ from __future__ import annotations
 from typing import TYPE_CHECKING, List, Dict, Callable, Tuple
 
 from academic_metrics.enums import AttributeTypes
-from academic_metrics.AI.AbstractClassifier import AbstractClassifier
+from academic_metrics.AI import AbstractClassifier
 
 if TYPE_CHECKING:
     from academic_metrics.utils import Utilities
@@ -34,7 +34,7 @@ The order of the elements in the tuple is:
 ClassificationResultsTuple = Tuple[List[str], List[str], List[str], List[str]]
 
 
-class ClassificationWrapper:
+class ClassificationOrchestrator:
     """Manages the classification process for research abstracts.
 
     This class orchestrates the process of extracting DOIs and abstracts from a list of dictionaries containing crossref data,

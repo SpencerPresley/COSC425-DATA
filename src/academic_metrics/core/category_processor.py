@@ -223,7 +223,7 @@ class CategoryProcessor:
 
             for faculty_member in kwargs["faculty_members"]:
                 faculty_data = {
-                    "_id": self._generate_url(f"{faculty_member} {category}"),
+                    "_id": self._generate_normal_id(strings=[faculty_member, category]),
                     "name": faculty_member,
                     "category": category,
                     "category_url": self._generate_url(category),
@@ -251,7 +251,7 @@ class CategoryProcessor:
             global_stats = self.global_faculty_stats[faculty_member]
             global_stats.set_params(
                 {
-                    "_id": self._generate_url(faculty_member),
+                    "_id": self._generate_normal_id(strings=[faculty_member]),
                     "total_citations": global_stats.total_citations
                     + kwargs["tc_count"],
                     "article_count": global_stats.article_count + 1,
@@ -389,3 +389,10 @@ class CategoryProcessor:
     @staticmethod
     def _generate_url(string: str):
         return quote(string)
+
+    @staticmethod
+    def _generate_normal_id(strings: list[str]):
+        normal_id = ""
+        for string in strings:
+            normal_id += f'{string.lower().replace(" ", "-")}_'
+        return normal_id.rstrip("_")

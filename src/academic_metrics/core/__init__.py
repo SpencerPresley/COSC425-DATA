@@ -4,5 +4,3 @@ from .faculty_set_postprocessor import (
     MinHashUtility,
     NameVariation,
 )
-from .faculty_department_manager import FacultyDepartmentManager
-from .classification_wrapper import ClassificationWrapper
