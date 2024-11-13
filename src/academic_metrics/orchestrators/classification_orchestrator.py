@@ -425,7 +425,7 @@ class ClassificationOrchestrator:
         Returns:
             str: Normalized abstract.
         """
-        converter = LatexNodes2Text()
+        converter = LatexNodes2Text(math_mode="text")
         unicode_abstract = converter.latex_to_text(abstract)
         ascii_abstract = unidecode(unicode_abstract)
         return ascii_abstract
