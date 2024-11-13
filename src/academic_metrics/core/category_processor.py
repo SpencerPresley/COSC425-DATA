@@ -2,6 +2,8 @@ from __future__ import annotations
 from urllib.parse import quote
 
 from typing import TYPE_CHECKING, List, Any
+import logging
+import os
 
 if TYPE_CHECKING:
     from academic_metrics.dataclass_models import (
@@ -24,6 +26,21 @@ class CategoryProcessor:
         dataclass_factory: DataClassFactory,
         warning_manager: WarningManager,
     ):
+        # Set up logger
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        log_file_path = os.path.join(current_dir, "category_processor.log")
+        self.logger = logging.getLogger(__name__)
+        self.logger.handlers = []
+        self.logger.setLevel(logging.DEBUG)
+
+        if not self.logger.handlers:
+            handler = logging.FileHandler(log_file_path)
+            formatter = logging.Formatter(
+                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            )
+            handler.setFormatter(formatter)
+            self.logger.addHandler(handler)
+
         self.utils: Utilities = utils
         self.warning_manager: WarningManager = warning_manager
         self.dataclass_factory: DataClassFactory = dataclass_factory

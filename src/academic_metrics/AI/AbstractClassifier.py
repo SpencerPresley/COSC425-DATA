@@ -4,12 +4,12 @@ import json
 import logging
 import os
 from collections import defaultdict
-from typing import Any, Dict, List, Tuple, TYPE_CHECKING, Union, cast
+from typing import Any, Dict, List, Tuple, TYPE_CHECKING, Union, cast, Optional
 
 from dotenv import load_dotenv
 
 from academic_metrics.ChainBuilder import ChainManager
-from academic_metrics.ai_data_models import (
+from academic_metrics.ai_data_models.ai_pydantic_models import (
     AbstractSentenceAnalysis,
     AbstractSummary,
     ClassificationOutput,
@@ -155,9 +155,24 @@ class AbstractClassifier:
         doi_to_abstract_dict: Dict[str, str],
         api_key: str,
     ):
+
+        # Set up logger
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        log_file_path = os.path.join(current_dir, "abstract_classifier.log")
         self.logger = logging.getLogger(__name__)
         self.logger.setLevel(logging.DEBUG)
-        self.logger.addHandler(logging.StreamHandler())
+        self.logger.handlers = []
+
+        # Add handler if none exists
+        if not self.logger.handlers:
+            handler = logging.FileHandler(log_file_path)
+            handler.setLevel(logging.DEBUG)
+            formatter = logging.Formatter(
+                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            )
+            handler.setFormatter(formatter)
+            self.logger.addHandler(handler)
+
         self.logger.info("Initializing AbstractClassifier")
         self.logger.info("Performing setup")
 

@@ -2,10 +2,13 @@ from __future__ import annotations
 
 import os
 import json
-from typing import TYPE_CHECKING, List
+from typing import TYPE_CHECKING, List, Optional
+import logging
 
 if TYPE_CHECKING:
     from academic_metrics.enums import AttributeTypes
+    from academic_metrics.strategies import StrategyFactory
+    from academic_metrics.utils import WarningManager
 
 
 class Utilities:
@@ -27,7 +30,12 @@ class Utilities:
 
     CROSSREF_FILE_NAME_SUFFIX = "_crossref_item.json"
 
-    def __init__(self, *, strategy_factory, warning_manager):
+    def __init__(
+        self,
+        *,
+        strategy_factory: StrategyFactory,
+        warning_manager: WarningManager,
+    ):
         """
         Initializes the Utilities class with the provided strategy factory and warning manager.
 
@@ -35,6 +43,24 @@ class Utilities:
             strategy_factory (StrategyFactory): An instance of the StrategyFactory class.
             warning_manager (WarningManager): An instance of the WarningManager class.
         """
+        # Set up logger
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        log_file_path = os.path.join(current_dir, "utilities.log")
+        self.logger = logging.getLogger(__name__)
+        self.logger.setLevel(logging.DEBUG)
+
+        self.logger.handlers = []
+
+        # Add handler if none exists
+        if not self.logger.handlers:
+            handler = logging.FileHandler(log_file_path)
+            handler.setLevel(logging.DEBUG)
+            formatter = logging.Formatter(
+                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            )
+            handler.setFormatter(formatter)
+            self.logger.addHandler(handler)
+
         self.strategy_factory = strategy_factory
         self.warning_manager = warning_manager
 

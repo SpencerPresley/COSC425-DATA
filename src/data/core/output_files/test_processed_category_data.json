@@ -1,182 +1,268 @@
 [
     {
-        "_id": "Business",
-        "url": "Business",
-        "category_name": "Business",
-        "faculty_count": 3,
-        "department_count": 2,
-        "article_count": 1,
-        "tc_count": 1,
-        "citation_average": 1.0,
+        "_id": "Health%20sciences",
+        "url": "Health%20sciences",
+        "category_name": "Health sciences",
+        "faculty_count": 9,
+        "department_count": 3,
+        "article_count": 2,
+        "tc_count": 0,
+        "citation_average": 0.0,
         "doi_list": [
-            "10.1080/09537325.2021.1991572"
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
         ],
         "themes": [
-            "Impact of deregulation on innovation",
-            "Foreign equity ownership and investment dynamics",
-            "Firm characteristics and innovation investment"
+            "Arterial stiffness and cardiovascular health",
+            "Effects of blood flow restriction exercises",
+            "Comparison of autoregulated and non-autoregulated training methods"
         ]
     },
     {
-        "_id": "Social%20sciences",
-        "url": "Social%20sciences",
-        "category_name": "Social sciences",
-        "faculty_count": 3,
-        "department_count": 2,
-        "article_count": 1,
-        "tc_count": 1,
-        "citation_average": 1.0,
+        "_id": "Biological%20and%20biomedical%20sciences",
+        "url": "Biological%20and%20biomedical%20sciences",
+        "category_name": "Biological and biomedical sciences",
+        "faculty_count": 9,
+        "department_count": 3,
+        "article_count": 2,
+        "tc_count": 0,
+        "citation_average": 0.0,
         "doi_list": [
-            "10.1080/09537325.2021.1991572"
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
         ],
         "themes": [
-            "Impact of deregulation on innovation",
-            "Foreign equity ownership and investment dynamics",
-            "Firm characteristics and innovation investment"
+            "Arterial stiffness and cardiovascular health",
+            "Effects of blood flow restriction exercises",
+            "Comparison of autoregulated and non-autoregulated training methods"
         ]
     },
     {
-        "_id": "Business%20administration%20and%20management",
-        "url": "Business%20administration%20and%20management",
-        "category_name": "Business administration and management",
-        "faculty_count": 3,
-        "department_count": 2,
-        "article_count": 1,
-        "tc_count": 1,
-        "citation_average": 1.0,
+        "_id": "Health%20sciences%2C%20other",
+        "url": "Health%20sciences%2C%20other",
+        "category_name": "Health sciences, other",
+        "faculty_count": 9,
+        "department_count": 3,
+        "article_count": 2,
+        "tc_count": 0,
+        "citation_average": 0.0,
         "doi_list": [
-            "10.1080/09537325.2021.1991572"
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
         ],
         "themes": [
-            "Impact of deregulation on innovation",
-            "Foreign equity ownership and investment dynamics",
-            "Firm characteristics and innovation investment"
+            "Arterial stiffness and cardiovascular health",
+            "Effects of blood flow restriction exercises",
+            "Comparison of autoregulated and non-autoregulated training methods"
         ]
     },
     {
-        "_id": "Economics",
-        "url": "Economics",
-        "category_name": "Economics",
-        "faculty_count": 3,
-        "department_count": 2,
-        "article_count": 1,
-        "tc_count": 1,
-        "citation_average": 1.0,
+        "_id": "Public%20health",
+        "url": "Public%20health",
+        "category_name": "Public health",
+        "faculty_count": 9,
+        "department_count": 3,
+        "article_count": 2,
+        "tc_count": 0,
+        "citation_average": 0.0,
         "doi_list": [
-            "10.1080/09537325.2021.1991572"
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
         ],
         "themes": [
-            "Impact of deregulation on innovation",
-            "Foreign equity ownership and investment dynamics",
-            "Firm characteristics and innovation investment"
+            "Arterial stiffness and cardiovascular health",
+            "Effects of blood flow restriction exercises",
+            "Comparison of autoregulated and non-autoregulated training methods"
         ]
     },
     {
-        "_id": "Public%20policy%20analysis",
-        "url": "Public%20policy%20analysis",
-        "category_name": "Public policy analysis",
-        "faculty_count": 3,
-        "department_count": 2,
-        "article_count": 1,
-        "tc_count": 1,
-        "citation_average": 1.0,
+        "_id": "Physiology%2C%20oncology%20and%20cancer%20biology",
+        "url": "Physiology%2C%20oncology%20and%20cancer%20biology",
+        "category_name": "Physiology, oncology and cancer biology",
+        "faculty_count": 9,
+        "department_count": 3,
+        "article_count": 2,
+        "tc_count": 0,
+        "citation_average": 0.0,
         "doi_list": [
-            "10.1080/09537325.2021.1991572"
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
         ],
         "themes": [
-            "Impact of deregulation on innovation",
-            "Foreign equity ownership and investment dynamics",
-            "Firm characteristics and innovation investment"
+            "Arterial stiffness and cardiovascular health",
+            "Effects of blood flow restriction exercises",
+            "Comparison of autoregulated and non-autoregulated training methods"
         ]
     },
     {
-        "_id": "Business%20management%20and%20administration",
-        "url": "Business%20management%20and%20administration",
-        "category_name": "Business management and administration",
-        "faculty_count": 3,
-        "department_count": 2,
-        "article_count": 1,
-        "tc_count": 1,
-        "citation_average": 1.0,
+        "_id": "Biological%20and%20biomedical%20sciences%2C%20other",
+        "url": "Biological%20and%20biomedical%20sciences%2C%20other",
+        "category_name": "Biological and biomedical sciences, other",
+        "faculty_count": 9,
+        "department_count": 3,
+        "article_count": 2,
+        "tc_count": 0,
+        "citation_average": 0.0,
         "doi_list": [
-            "10.1080/09537325.2021.1991572"
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
         ],
         "themes": [
-            "Impact of deregulation on innovation",
-            "Foreign equity ownership and investment dynamics",
-            "Firm characteristics and innovation investment"
+            "Arterial stiffness and cardiovascular health",
+            "Effects of blood flow restriction exercises",
+            "Comparison of autoregulated and non-autoregulated training methods"
         ]
     },
     {
-        "_id": "Business%20administration%20and%20management%20nec",
-        "url": "Business%20administration%20and%20management%20nec",
-        "category_name": "Business administration and management nec",
-        "faculty_count": 3,
-        "department_count": 2,
-        "article_count": 1,
-        "tc_count": 1,
-        "citation_average": 1.0,
+        "_id": "Exercise%20science%20and%20kinesiology",
+        "url": "Exercise%20science%20and%20kinesiology",
+        "category_name": "Exercise science and kinesiology",
+        "faculty_count": 9,
+        "department_count": 3,
+        "article_count": 2,
+        "tc_count": 0,
+        "citation_average": 0.0,
         "doi_list": [
-            "10.1080/09537325.2021.1991572"
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
         ],
         "themes": [
-            "Impact of deregulation on innovation",
-            "Foreign equity ownership and investment dynamics",
-            "Firm characteristics and innovation investment"
+            "Arterial stiffness and cardiovascular health",
+            "Effects of blood flow restriction exercises",
+            "Comparison of autoregulated and non-autoregulated training methods"
         ]
     },
     {
-        "_id": "Applied%20economics",
-        "url": "Applied%20economics",
-        "category_name": "Applied economics",
-        "faculty_count": 3,
-        "department_count": 2,
-        "article_count": 1,
-        "tc_count": 1,
-        "citation_average": 1.0,
+        "_id": "Health%20sciences%2C%20general",
+        "url": "Health%20sciences%2C%20general",
+        "category_name": "Health sciences, general",
+        "faculty_count": 9,
+        "department_count": 3,
+        "article_count": 2,
+        "tc_count": 0,
+        "citation_average": 0.0,
         "doi_list": [
-            "10.1080/09537325.2021.1991572"
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
         ],
         "themes": [
-            "Impact of deregulation on innovation",
-            "Foreign equity ownership and investment dynamics",
-            "Firm characteristics and innovation investment"
+            "Arterial stiffness and cardiovascular health",
+            "Effects of blood flow restriction exercises",
+            "Comparison of autoregulated and non-autoregulated training methods"
         ]
     },
     {
-        "_id": "Economics%2C%20general",
-        "url": "Economics%2C%20general",
-        "category_name": "Economics, general",
-        "faculty_count": 3,
-        "department_count": 2,
-        "article_count": 1,
-        "tc_count": 1,
-        "citation_average": 1.0,
+        "_id": "Public%20health%2C%20general",
+        "url": "Public%20health%2C%20general",
+        "category_name": "Public health, general",
+        "faculty_count": 9,
+        "department_count": 3,
+        "article_count": 2,
+        "tc_count": 0,
+        "citation_average": 0.0,
         "doi_list": [
-            "10.1080/09537325.2021.1991572"
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
         ],
         "themes": [
-            "Impact of deregulation on innovation",
-            "Foreign equity ownership and investment dynamics",
-            "Firm characteristics and innovation investment"
+            "Arterial stiffness and cardiovascular health",
+            "Effects of blood flow restriction exercises",
+            "Comparison of autoregulated and non-autoregulated training methods"
         ]
     },
     {
-        "_id": "Public%20policy%20analysis%2C%20general",
-        "url": "Public%20policy%20analysis%2C%20general",
-        "category_name": "Public policy analysis, general",
-        "faculty_count": 3,
-        "department_count": 2,
-        "article_count": 1,
-        "tc_count": 1,
-        "citation_average": 1.0,
+        "_id": "Health%20services%20research",
+        "url": "Health%20services%20research",
+        "category_name": "Health services research",
+        "faculty_count": 9,
+        "department_count": 3,
+        "article_count": 2,
+        "tc_count": 0,
+        "citation_average": 0.0,
         "doi_list": [
-            "10.1080/09537325.2021.1991572"
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
         ],
         "themes": [
-            "Impact of deregulation on innovation",
-            "Foreign equity ownership and investment dynamics",
-            "Firm characteristics and innovation investment"
+            "Arterial stiffness and cardiovascular health",
+            "Effects of blood flow restriction exercises",
+            "Comparison of autoregulated and non-autoregulated training methods"
+        ]
+    },
+    {
+        "_id": "Exercise%20physiology%20and%20kinesiology",
+        "url": "Exercise%20physiology%20and%20kinesiology",
+        "category_name": "Exercise physiology and kinesiology",
+        "faculty_count": 9,
+        "department_count": 3,
+        "article_count": 2,
+        "tc_count": 0,
+        "citation_average": 0.0,
+        "doi_list": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "themes": [
+            "Arterial stiffness and cardiovascular health",
+            "Effects of blood flow restriction exercises",
+            "Comparison of autoregulated and non-autoregulated training methods"
+        ]
+    },
+    {
+        "_id": "Physiology%2C%20general",
+        "url": "Physiology%2C%20general",
+        "category_name": "Physiology, general",
+        "faculty_count": 9,
+        "department_count": 3,
+        "article_count": 2,
+        "tc_count": 0,
+        "citation_average": 0.0,
+        "doi_list": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "themes": [
+            "Arterial stiffness and cardiovascular health",
+            "Effects of blood flow restriction exercises",
+            "Comparison of autoregulated and non-autoregulated training methods"
+        ]
+    },
+    {
+        "_id": "Biomedical%20sciences%2C%20general",
+        "url": "Biomedical%20sciences%2C%20general",
+        "category_name": "Biomedical sciences, general",
+        "faculty_count": 9,
+        "department_count": 3,
+        "article_count": 2,
+        "tc_count": 0,
+        "citation_average": 0.0,
+        "doi_list": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "themes": [
+            "Arterial stiffness and cardiovascular health",
+            "Effects of blood flow restriction exercises",
+            "Comparison of autoregulated and non-autoregulated training methods"
+        ]
+    },
+    {
+        "_id": "Biological%20and%20biomedical%20sciences%20nec",
+        "url": "Biological%20and%20biomedical%20sciences%20nec",
+        "category_name": "Biological and biomedical sciences nec",
+        "faculty_count": 9,
+        "department_count": 3,
+        "article_count": 2,
+        "tc_count": 0,
+        "citation_average": 0.0,
+        "doi_list": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "themes": [
+            "Arterial stiffness and cardiovascular health",
+            "Effects of blood flow restriction exercises",
+            "Comparison of autoregulated and non-autoregulated training methods"
         ]
     }
 ]

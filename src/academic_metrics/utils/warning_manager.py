@@ -1,4 +1,6 @@
 import warnings
+import logging
+import os
 
 
 class CustomWarning(Warning):
@@ -84,6 +86,22 @@ class WarningManager:
         Summary:
             This method initializes the WarningManager class.
         """
+        # Set up logger
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        log_file_path = os.path.join(current_dir, "warning_manager.log")
+        self.logger = logging.getLogger(__name__)
+        self.logger.setLevel(logging.DEBUG)
+
+        # Add handler if none exists
+        if not self.logger.handlers:
+            handler = logging.FileHandler(log_file_path)
+            handler.setLevel(logging.DEBUG)
+            formatter = logging.Formatter(
+                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            )
+            handler.setFormatter(formatter)
+            self.logger.addHandler(handler)
+
         self.warning_count = 0
         self.warnings = []
 

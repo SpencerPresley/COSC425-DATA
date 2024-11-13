@@ -6,6 +6,7 @@ from . import orchestrators
 from . import enums
 from . import digital_measures_verification
 from . import data_collection
+from . import ai_data_models
 
 # Expose commonly used classes/functions at the package level
 from .utils import Utilities, FileHandler, WarningManager, configure_logger
@@ -27,3 +28,4 @@ from .core import (
 from .enums import AttributeTypes
 
 from .data_collection.CrossrefWrapper import CrossrefWrapper
+from .data_collection.scraper import Scraper

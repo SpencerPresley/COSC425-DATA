@@ -1,6 +1,8 @@
 import json
 from academic_metrics.other.in_memory_taxonomy import TAXONOMY_AS_STRING
-from typing import Dict, List
+from typing import Dict, List, Optional
+import logging
+import os
 
 # Alias for the taxonomy dictionary structure to be used for type hinting the taxonomy dictionary
 TaxonomyDict = Dict[str, Dict[str, List[str]]]
@@ -8,9 +10,29 @@ TaxonomyDict = Dict[str, Dict[str, List[str]]]
 
 class Taxonomy:
     def __init__(self) -> None:
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        log_file_path = os.path.join(current_dir, "taxonomy_util.log")
+        # Set up logger
+        self.logger = logging.getLogger(__name__)
+        self.logger.setLevel(logging.DEBUG)
+
+        self.logger.handlers = []
+
+        # Add handler if none exists
+        if not self.logger.handlers:
+            handler = logging.FileHandler(log_file_path)
+            handler.setLevel(logging.DEBUG)
+            formatter = logging.Formatter(
+                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            )
+            handler.setFormatter(formatter)
+            self.logger.addHandler(handler)
+
+        self.logger.info("Initializing Taxonomy")
         self.taxonomy: TaxonomyDict = self._load_taxonomy_from_string(
             TAXONOMY_AS_STRING
         )
+        self.logger.info("Taxonomy initialized successfully")
 
     def __str__(self) -> str:
         return json.dumps(self.taxonomy, indent=4)
