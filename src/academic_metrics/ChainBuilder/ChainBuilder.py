@@ -24,7 +24,11 @@ from langchain.schema.runnable import Runnable, RunnablePassthrough
 from langchain_openai import ChatOpenAI
 from langchain_anthropic import ChatAnthropic
 from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain_core.output_parsers import PydanticOutputParser, JsonOutputParser
+from langchain_core.output_parsers import (
+    PydanticOutputParser,
+    JsonOutputParser,
+    StrOutputParser,
+)
 
 # Type that represents "Required first time, optional after"
 FirstCallRequired = TypeVar("FirsCallRequired", bound=Dict[str, Any])
@@ -36,7 +40,9 @@ class ChainBuilder:
         *,
         chat_prompt: ChatPromptTemplate,
         llm: Union[ChatOpenAI, ChatAnthropic, ChatGoogleGenerativeAI],
-        parser: Optional[Union[PydanticOutputParser, JsonOutputParser]] = None,
+        parser: Optional[
+            Union[PydanticOutputParser, JsonOutputParser, StrOutputParser]
+        ] = None,
         logger: Optional[logging.Logger] = None,
     ):
         # Set up logger
@@ -94,7 +100,9 @@ class ChainWrapper:
         self,
         *,
         chain: Runnable,
-        parser: Optional[Union[PydanticOutputParser, JsonOutputParser]] = None,
+        parser: Optional[
+            Union[PydanticOutputParser, JsonOutputParser, StrOutputParser]
+        ] = None,
         preprocessor: Optional[Callable[[Dict[str, Any]], Dict[str, Any]]] = None,
         postprocessor: Optional[Callable[[Any], Any]] = None,
         logger: Optional[logging.Logger] = None,
@@ -112,7 +120,9 @@ class ChainWrapper:
             handler.setFormatter(formatter)
             self.logger.addHandler(handler)
 
-        self.parser: Optional[Union[PydanticOutputParser, JsonOutputParser]] = parser
+        self.parser: Optional[
+            Union[PydanticOutputParser, JsonOutputParser, StrOutputParser]
+        ] = parser
         self.preprocessor: Optional[Callable[[Dict[str, Any]], Dict[str, Any]]] = (
             preprocessor
         )
@@ -369,6 +379,10 @@ class ChainManager:
             )
             self.logger.debug(f"Created JSON parser: {parser}")
             return parser
+        elif parser_type == "str":
+            parser = self._create_str_parser()
+            self.logger.debug(f"Created Str parser: {parser}")
+            return parser
         else:
             raise ValueError(f"Invalid parser_type: {parser_type}")
 
@@ -384,7 +398,23 @@ class ChainManager:
     def _create_json_parser(
         self, *, pydantic_output_model: Optional[BaseModel]
     ) -> JsonOutputParser:
-        return JsonOutputParser(pydantic_object=pydantic_output_model)
+        json_parser = None
+        if not pydantic_output_model:
+            warnings.warn(
+                "It is highly recommended to provide a pydantic_output_model when parser_type is 'json'. "
+                "This will ensure that the output of the chain layer is properly typed and can be used in downstream chain layers."
+            )
+            self.logger.debug("Creating JSON parser without pydantic_output_model. ")
+            json_parser = JsonOutputParser()
+        else:
+            self.logger.debug(
+                f"Creating JSON parser with pydantic_output_model: {pydantic_output_model}"
+            )
+            json_parser = JsonOutputParser(pydantic_object=pydantic_output_model)
+        return json_parser
+
+    def _create_str_parser(self) -> StrOutputParser:
+        return StrOutputParser()
 
     def _run_chain_validation_checks(
         self,
@@ -408,14 +438,23 @@ class ChainManager:
                 )
 
         if parser_type is not None:
-            if parser_type not in ["pydantic", "json"]:
+            if parser_type not in ["pydantic", "json", "str"]:
                 raise ValueError(
-                    f"Unsupported parser type: {parser_type}. Supported types: 'pydantic', 'json'."
+                    f"Unsupported parser type: {parser_type}. Supported types:\n"
+                    f"\t'{PydanticOutputParser.__name__}'\n"
+                    f"\t'{JsonOutputParser.__name__}'\n"
+                    f"\t'{StrOutputParser.__name__}'"
                 )
             if parser_type == "pydantic":
                 if not pydantic_output_model:
                     raise ValueError(
                         "pydantic_output_model must be specified when parser_type is 'pydantic'."
+                    )
+            elif parser_type == "json":
+                if not pydantic_output_model:
+                    warnings.warn(
+                        "It is highly recommended to provide a pydantic_output_model when parser_type is 'json'. "
+                        "This will ensure that the output of the chain layer is properly typed and can be used in downstream chain layers."
                     )
         else:
             if pydantic_output_model:
@@ -472,7 +511,7 @@ class ChainManager:
         ignore_output_passthrough_key_name_error: bool = False,
         preprocessor: Optional[Callable[[Dict[str, Any]], Dict[str, Any]]] = None,
         postprocessor: Optional[Callable[[Any], Any]] = None,
-        parser_type: Optional[Literal["pydantic", "json"]] = None,
+        parser_type: Optional[Literal["pydantic", "json", "str"]] = None,
         pydantic_output_model: Optional[BaseModel] = None,
     ) -> None:
         self.logger.info(
