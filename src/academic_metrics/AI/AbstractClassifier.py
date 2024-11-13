@@ -891,7 +891,7 @@ class AbstractClassifier:
 
 
 if __name__ == "__main__":
-    # from academic_metrics.AI.testing_data.abstracts import doi_to_abstract_dict
+    from academic_metrics.AI.testing_data.abstracts import doi_to_abstract_dict
     from academic_metrics.utils.taxonomy_util import Taxonomy
     from dotenv import load_dotenv
     import os
@@ -902,37 +902,6 @@ if __name__ == "__main__":
     openai_api_key = os.getenv("OPENAI_API_KEY")
 
     taxonomy: Taxonomy = Taxonomy()
-
-    raw_abstract = r"""
-        In this study, we explore the properties of the Schrödinger equation in quantum mechanics. The time-independent Schrödinger equation is given by:
-
-        \[
-        -\frac{\hbar^2}{2m} \nabla^2 \psi(\mathbf{r}) + V(\mathbf{r}) \psi(\mathbf{r}) = E \psi(\mathbf{r})
-        \]
-
-        where \(\hbar\) is the reduced Planck's constant, \(m\) is the mass of the particle, \(V(\mathbf{r})\) is the potential energy, and \(E\) is the energy eigenvalue. We apply the method of separation of variables to solve the equation in spherical coordinates, leading to the radial equation:
-
-        \[
-        \frac{d}{dr}\left(r^2 \frac{dR(r)}{dr}\right) + \left[2m\left(E - V(r)\right)r^2 - l(l+1)\hbar^2\right]R(r) = 0
-        \]
-
-        where \(R(r)\) is the radial part of the wave function and \(l\) is the angular momentum quantum number. The solutions to this equation provide insights into the quantization of energy levels in a hydrogen atom. Furthermore, we discuss the implications of these solutions in the context of quantum tunneling, where the probability of a particle passing through a potential barrier is given by:
-
-        \[
-        T = \exp\left(-\frac{2}{\hbar} \int_{x_1}^{x_2} \sqrt{2m(V(x) - E)} \, dx\right)
-        \]
-
-        where \(x_1\) and \(x_2\) are the classical turning points. Our results demonstrate the critical role of quantum mechanics in understanding atomic and subatomic processes.
-        """
-
-    print(f"Raw abstract:\n{raw_abstract}\n\n")
-    converter = LatexNodes2Text(math_mode="text")
-    unicode_abstract = converter.latex_to_text(raw_abstract)
-    print(f"Unicode abstract:\n{unicode_abstract}\n\n")
-    ascii_abstract = unidecode(unicode_abstract)
-    print(f"ASCII abstract:\n{ascii_abstract}\n\n")
-
-    doi_to_abstract_dict = {"10.1234/latex.2023.001": ascii_abstract}
 
     abstract_classifier = AbstractClassifier(
         taxonomy=taxonomy,
