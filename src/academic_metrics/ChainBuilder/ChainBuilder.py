@@ -1,10 +1,5 @@
 import logging
-
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
-
-import json
-import logging
+import os
 import warnings
 from typing import (
     Any,
@@ -29,7 +24,11 @@ from langchain.schema.runnable import Runnable, RunnablePassthrough
 from langchain_openai import ChatOpenAI
 from langchain_anthropic import ChatAnthropic
 from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain_core.output_parsers import PydanticOutputParser, JsonOutputParser
+from langchain_core.output_parsers import (
+    PydanticOutputParser,
+    JsonOutputParser,
+    StrOutputParser,
+)
 
 # Type that represents "Required first time, optional after"
 FirstCallRequired = TypeVar("FirsCallRequired", bound=Dict[str, Any])
@@ -41,8 +40,24 @@ class ChainBuilder:
         *,
         chat_prompt: ChatPromptTemplate,
         llm: Union[ChatOpenAI, ChatAnthropic, ChatGoogleGenerativeAI],
-        parser: Optional[Union[PydanticOutputParser, JsonOutputParser]] = None,
+        parser: Optional[
+            Union[PydanticOutputParser, JsonOutputParser, StrOutputParser]
+        ] = None,
+        logger: Optional[logging.Logger] = None,
     ):
+        # Set up logger
+        self.logger = logger or logging.getLogger(__name__)
+        self.logger.setLevel(logging.INFO)
+
+        # Add handler if none exists
+        if not self.logger.handlers:
+            handler = logging.StreamHandler()
+            formatter = logging.Formatter(
+                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            )
+            handler.setFormatter(formatter)
+            self.logger.addHandler(handler)
+
         self.chat_prompt = chat_prompt
         self.parser = parser
         self.llm = llm
@@ -61,16 +76,16 @@ class ChainBuilder:
         if self.parser:
             if isinstance(self.parser, PydanticOutputParser):
                 pydantic_model = self.parser.pydantic_object
-                logger.info("Required fields in Pydantic model:")
+                self.logger.info("Required fields in Pydantic model:")
                 for field_name, field in pydantic_model.model_fields.items():
-                    logger.info(
+                    self.logger.info(
                         f"  {field_name}: {'required' if field.is_required else 'optional'}"
                     )
                     if field.default is not None:
-                        logger.info(f"    Default: {field.default}")
+                        self.logger.info(f"    Default: {field.default}")
 
-                logger.info("\nModel Schema:")
-                logger.info(pydantic_model.model_json_schema())
+                self.logger.info("\nModel Schema:")
+                self.logger.info(pydantic_model.model_json_schema())
 
             chain: Runnable = chain | self.parser
 
@@ -85,15 +100,35 @@ class ChainWrapper:
         self,
         *,
         chain: Runnable,
-        parser: Optional[Union[PydanticOutputParser, JsonOutputParser]] = None,
+        parser: Optional[
+            Union[PydanticOutputParser, JsonOutputParser, StrOutputParser]
+        ] = None,
         preprocessor: Optional[Callable[[Dict[str, Any]], Dict[str, Any]]] = None,
         postprocessor: Optional[Callable[[Any], Any]] = None,
+        logger: Optional[logging.Logger] = None,
     ):
-        self.chain: Runnable = chain
-        self.parser: Optional[Union[PydanticOutputParser, JsonOutputParser]] = parser
+        # Set up logger
+        self.logger = logger or logging.getLogger(__name__)
+        self.logger.setLevel(logging.INFO)
+
+        # Add handler if none exists
+        if not self.logger.handlers:
+            handler = logging.StreamHandler()
+            formatter = logging.Formatter(
+                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            )
+            handler.setFormatter(formatter)
+            self.logger.addHandler(handler)
+
+        self.parser: Optional[
+            Union[PydanticOutputParser, JsonOutputParser, StrOutputParser]
+        ] = parser
         self.preprocessor: Optional[Callable[[Dict[str, Any]], Dict[str, Any]]] = (
             preprocessor
         )
+
+        self.chain: Runnable = chain
+
         self.postprocessor: Optional[Callable[[Any], Any]] = postprocessor
 
     def __str__(self) -> str:
@@ -130,7 +165,20 @@ class ChainWrapper:
 
 
 class ChainComposer:
-    def __init__(self):
+    def __init__(self, logger: Optional[logging.Logger] = None):
+        # Set up logger
+        self.logger = logger or logging.getLogger(__name__)
+        self.logger.setLevel(logging.INFO)
+
+        # Add handler if none exists
+        if not self.logger.handlers:
+            handler = logging.StreamHandler()
+            formatter = logging.Formatter(
+                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            )
+            handler.setFormatter(formatter)
+            self.logger.addHandler(handler)
+
         self.chain_sequence: List[Tuple[ChainWrapper, Optional[str]]] = []
 
     def __str__(self) -> str:
@@ -193,11 +241,28 @@ class ChainManager:
         postprocessor: Optional[Callable[[Any], Any]] = None,
         **llm_kwargs: Dict[str, Any],
     ):
+        # Setup logger
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        log_file_path = os.path.join(current_dir, "chain_builder.log")
+        self.logger = logging.getLogger(__name__)
+        self.logger.handlers = []
+
+        # Add handler if none exists
+        if not self.logger.handlers:
+            handler = logging.FileHandler(log_file_path)
+            handler.setLevel(logging.DEBUG)
+            formatter = logging.Formatter(
+                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            )
+            handler.setFormatter(formatter)
+            self.logger.addHandler(handler)
+            self.logger.propagate = False
+
         self.api_key: str = api_key
         self.llm_model: str = llm_model
         self.llm_model_type: str = self._get_llm_model_type(llm_model=llm_model)
 
-        logger.info(f"Initializing LLM: {self.llm_model}")
+        self.logger.info(f"Initializing LLM: {self.llm_model}")
         self.llm_kwargs: Dict[str, Any] = llm_kwargs or {}
         self.llm_temperature: float = llm_temperature
         self.llm: Union[ChatOpenAI, ChatAnthropic, ChatGoogleGenerativeAI] = (
@@ -209,27 +274,27 @@ class ChainManager:
                 **self.llm_kwargs,
             )
         )
-        logger.info(f"Initialized LLM: {self.llm}")
+        self.logger.info(f"Initialized LLM: {self.llm}")
 
-        logger.info(f"Initializing ChainComposer")
-        self.chain_composer: ChainComposer = ChainComposer()
-        logger.info(f"Initialized ChainComposer: {self.chain_composer}")
+        self.logger.info(f"Initializing ChainComposer")
+        self.chain_composer: ChainComposer = ChainComposer(logger=self.logger)
+        self.logger.info(f"Initialized ChainComposer: {self.chain_composer}")
 
-        logger.info(f"Initializing Chain Variables")
+        self.logger.info(f"Initializing Chain Variables")
         self.chain_variables: Dict[str, Any] = {}
-        logger.info(f"Initialized Chain Variables: {self.chain_variables}")
+        self.logger.info(f"Initialized Chain Variables: {self.chain_variables}")
 
         self.chain_variables_update_overwrite_warning_counter: int = 0
 
-        logger.info(f"Initializing Preprocessor {preprocessor}")
+        self.logger.info(f"Initializing Preprocessor {preprocessor}")
         self.preprocessor: Optional[Callable[[Dict[str, Any]], Dict[str, Any]]] = (
             preprocessor
         )
-        logger.info(f"Initialized Preprocessor: {self.preprocessor}")
+        self.logger.info(f"Initialized Preprocessor: {self.preprocessor}")
 
-        logger.info(f"Initializing Postprocessor {postprocessor}")
+        self.logger.info(f"Initializing Postprocessor {postprocessor}")
         self.postprocessor: Optional[Callable[[Any], Any]] = postprocessor
-        logger.info(f"Initialized Postprocessor: {self.postprocessor}")
+        self.logger.info(f"Initialized Postprocessor: {self.postprocessor}")
 
     def __str__(self) -> str:
         return (
@@ -306,13 +371,17 @@ class ChainManager:
             parser = self._create_pydantic_parser(
                 pydantic_output_model=pydantic_output_model
             )
-            logger.debug(f"Created Pydantic parser: {parser}")
+            self.logger.debug(f"Created Pydantic parser: {parser}")
             return parser
         elif parser_type == "json":
             parser = self._create_json_parser(
                 pydantic_output_model=pydantic_output_model
             )
-            logger.debug(f"Created JSON parser: {parser}")
+            self.logger.debug(f"Created JSON parser: {parser}")
+            return parser
+        elif parser_type == "str":
+            parser = self._create_str_parser()
+            self.logger.debug(f"Created Str parser: {parser}")
             return parser
         else:
             raise ValueError(f"Invalid parser_type: {parser_type}")
@@ -329,7 +398,23 @@ class ChainManager:
     def _create_json_parser(
         self, *, pydantic_output_model: Optional[BaseModel]
     ) -> JsonOutputParser:
-        return JsonOutputParser(pydantic_object=pydantic_output_model)
+        json_parser = None
+        if not pydantic_output_model:
+            warnings.warn(
+                "It is highly recommended to provide a pydantic_output_model when parser_type is 'json'. "
+                "This will ensure that the output of the chain layer is properly typed and can be used in downstream chain layers."
+            )
+            self.logger.debug("Creating JSON parser without pydantic_output_model. ")
+            json_parser = JsonOutputParser()
+        else:
+            self.logger.debug(
+                f"Creating JSON parser with pydantic_output_model: {pydantic_output_model}"
+            )
+            json_parser = JsonOutputParser(pydantic_object=pydantic_output_model)
+        return json_parser
+
+    def _create_str_parser(self) -> StrOutputParser:
+        return StrOutputParser()
 
     def _run_chain_validation_checks(
         self,
@@ -353,14 +438,23 @@ class ChainManager:
                 )
 
         if parser_type is not None:
-            if parser_type not in ["pydantic", "json"]:
+            if parser_type not in ["pydantic", "json", "str"]:
                 raise ValueError(
-                    f"Unsupported parser type: {parser_type}. Supported types: 'pydantic', 'json'."
+                    f"Unsupported parser type: {parser_type}. Supported types:\n"
+                    f"\t'{PydanticOutputParser.__name__}'\n"
+                    f"\t'{JsonOutputParser.__name__}'\n"
+                    f"\t'{StrOutputParser.__name__}'"
                 )
             if parser_type == "pydantic":
                 if not pydantic_output_model:
                     raise ValueError(
                         "pydantic_output_model must be specified when parser_type is 'pydantic'."
+                    )
+            elif parser_type == "json":
+                if not pydantic_output_model:
+                    warnings.warn(
+                        "It is highly recommended to provide a pydantic_output_model when parser_type is 'json'. "
+                        "This will ensure that the output of the chain layer is properly typed and can be used in downstream chain layers."
                     )
         else:
             if pydantic_output_model:
@@ -417,23 +511,23 @@ class ChainManager:
         ignore_output_passthrough_key_name_error: bool = False,
         preprocessor: Optional[Callable[[Dict[str, Any]], Dict[str, Any]]] = None,
         postprocessor: Optional[Callable[[Any], Any]] = None,
-        parser_type: Optional[Literal["pydantic", "json"]] = None,
+        parser_type: Optional[Literal["pydantic", "json", "str"]] = None,
         pydantic_output_model: Optional[BaseModel] = None,
     ) -> None:
-        logger.info(
+        self.logger.info(
             f"Adding chain layer with output_passthrough_key_name: {output_passthrough_key_name}"
         )
-        logger.info(
+        self.logger.info(
             f"ignore_output_passthrough_key_name_error: {ignore_output_passthrough_key_name_error}"
         )
-        logger.info(f"parser_type: {parser_type}")
-        logger.info(f"pydantic_output_model: {pydantic_output_model}")
-        logger.info(f"preprocessor: {preprocessor}")
-        logger.info(f"postprocessor: {postprocessor}")
-        logger.info("--------------------------------")
-        logger.info(f"system_prompt: {system_prompt}")
-        logger.info(f"human_prompt: {human_prompt}")
-        logger.info("--------------------------------")
+        self.logger.info(f"parser_type: {parser_type}")
+        self.logger.info(f"pydantic_output_model: {pydantic_output_model}")
+        self.logger.info(f"preprocessor: {preprocessor}")
+        self.logger.info(f"postprocessor: {postprocessor}")
+        self.logger.info("--------------------------------")
+        self.logger.info(f"system_prompt: {system_prompt}")
+        self.logger.info(f"human_prompt: {human_prompt}")
+        self.logger.info("--------------------------------")
 
         self._run_chain_validation_checks(
             output_passthrough_key_name=output_passthrough_key_name,
@@ -461,7 +555,10 @@ class ChainManager:
         )
         # Build the chain using ChainBuilder
         chain_builder = ChainBuilder(
-            chat_prompt=chat_prompt_template, llm=self.llm, parser=parser
+            chat_prompt=chat_prompt_template,
+            llm=self.llm,
+            parser=parser,
+            logger=self.logger,
         )
         chain = chain_builder.get_chain()
 
@@ -471,6 +568,7 @@ class ChainManager:
             parser=parser,
             preprocessor=preprocessor or self.preprocessor,
             postprocessor=postprocessor or self.postprocessor,
+            logger=self.logger,
         )
 
         # Add the chain to the composer

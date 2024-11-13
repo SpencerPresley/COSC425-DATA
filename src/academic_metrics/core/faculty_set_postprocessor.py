@@ -1,7 +1,9 @@
 import copy
 import random
 from dataclasses import dataclass, field
-from typing import Optional, Any, cast
+from typing import Any
+import logging
+import os
 
 
 class FacultyPostprocessor:
@@ -42,6 +44,21 @@ class FacultyPostprocessor:
     """
 
     def __init__(self):
+        # Set up logger
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        log_file_path = os.path.join(current_dir, "faculty_set_postprocessor.log")
+        self.logger = logging.getLogger(__name__)
+        self.logger.handlers = []
+        self.logger.setLevel(logging.DEBUG)
+
+        if not self.logger.handlers:
+            handler = logging.FileHandler(log_file_path)
+            formatter = logging.Formatter(
+                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            )
+            handler.setFormatter(formatter)
+            self.logger.addHandler(handler)
+
         self.temp_dict = {}
         self.faculty_occurence_dict = {}
         self.processed_sets_list = []  # List to store processed faculty sets

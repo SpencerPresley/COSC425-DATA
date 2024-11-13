@@ -1,12 +1,15 @@
+from __future__ import annotations
 import time
-import requests
 import json
 import os
 import logging
 import asyncio
 import aiohttp
 from tqdm.asyncio import tqdm
-from academic_metrics.data_collection.scraper import get_abstract
+from typing import Optional, TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from .scraper import Scraper
 
 
 class CrossrefWrapper:
@@ -28,11 +31,11 @@ class CrossrefWrapper:
     def __init__(
         self,
         *,
+        scraper: Scraper,
         base_url: str = "https://api.crossref.org/works",
         affiliation: str = "Salisbury%20University",
         from_year: int = 2017,
         to_year: int = 2024,
-        logger=None,
     ):
         """
         Initializes the CrossrefWrapper with the given parameters.
@@ -44,6 +47,23 @@ class CrossrefWrapper:
             to_year (int): The ending year for the publication search.
             logger (logging.Logger, optional): Logger for logging messages. Defaults to None.
         """
+        # Set up logger
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        log_file_path = os.path.join(current_dir, "crossref_wrapper.log")
+        self.logger = logging.getLogger(__name__)
+        self.logger.handlers = []
+        self.logger.setLevel(logging.DEBUG)
+
+        if not self.logger.handlers:
+            handler = logging.FileHandler(log_file_path)
+            formatter = logging.Formatter(
+                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            )
+            handler.setFormatter(formatter)
+            self.logger.addHandler(handler)
+
+        self.scraper = scraper
+
         # Maximum number of concurrent requests allowed
         self.MAX_CONCURRENT_REQUESTS = 2  # Limit to 2 concurrent tasks at a time
 
@@ -57,16 +77,8 @@ class CrossrefWrapper:
 
         self.years = [year for year in range(from_year, to_year + 1)]
 
-        # Use the provided logger or create a new one
-        if logger is None:
-            logging.basicConfig(
-                level=logging.INFO,
-                format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-                handlers=[logging.FileHandler("app.log")],
-            )
-            self.logger = logging.getLogger(__name__)
-        else:
-            self.logger = logger
+        # Prevent logger from being affected by parent loggers
+        self.logger.propagate = False
 
         self.data = None
 
@@ -327,6 +339,7 @@ class CrossrefWrapper:
         self.logger.info(f"Number of items: {len(result_list)}")
 
         self.result = result_list
+        return self
 
     def serialize_to_json(self, output_file):
         """
@@ -341,30 +354,73 @@ class CrossrefWrapper:
     def final_data_process(self):
         """
         Processes the final data, filling in missing abstracts.
-
-        This function iterates over the fetched data and attempts to fill in missing abstracts
-        by fetching them from the URLs using the get_abstract function.
         """
         # fill missing abstracts
-        for item in self.result:
+        num_processed = 0
+
+        self.logger.info("Starting final_data_process")  # Debug log
+
+        if not self.result:  # Check if result exists
+            self.logger.error("No result data found")
+            return self
+
+        missing_abstracts = [item for item in self.result if "abstract" not in item]
+        total_missing = len(missing_abstracts)
+        self.logger.info(f"Total missing abstracts: {total_missing}")
+
+        if total_missing == 0:
+            self.logger.info("No missing abstracts found")
+            return self
+
+        for item in missing_abstracts:
             if "abstract" not in item:
                 try:
-                    data = get_abstract(item.get("URL"))
-                    item["abstract"] = data["abstract"]
-                    num_processed += 1
+                    self.logger.info("-" * 80)
+                    self.logger.info(f"Processing URL: {item.get('URL')}")
+
+                    abstract = self.scraper.get_abstract(item.get("URL"))
+                    self.logger.info("-" * 80)
+
+                    if abstract:  # Check if data was returned
+                        item["abstract"] = abstract
+                        print(f"\n\nAbstract:\n{item['abstract']}\n\n")
+                        num_processed += 1
+                        self.logger.info(
+                            f"\n\nProcessed {num_processed}/{total_missing}\n\n"
+                        )
+                    else:
+                        self.logger.warning(
+                            f"No data returned for URL: {item.get('URL')}"
+                        )
                 except Exception as e:
+                    self.logger.error(
+                        f"Error processing URL {item.get('URL')}: {str(e)}"
+                    )
                     continue
 
-    def get_data(self):
+        self.logger.info(
+            f"Final data processing complete. Processed {num_processed} abstracts"
+        )
+        self.scraper.save_raw_results()
+        return self
+
+    def get_result_list(self):
+        """
+        Get the result list
+        """
         return self.result
 
-    def run_all_process(self):
+    def run_all_process(self, save_offline: bool = False):
         """
         Run all data fetching and processing
         """
-        self.run_afetch_yrange()  # run async data fetch
-        self.final_data_process()
-        return self
+        if save_offline:
+            return (
+                self.run_afetch_yrange()
+                .final_data_process()
+                .serialize_to_json("postProcess.json")
+            )
+        return self.run_afetch_yrange().final_data_process().get_result_list()
 
 
 if __name__ == "__main__":

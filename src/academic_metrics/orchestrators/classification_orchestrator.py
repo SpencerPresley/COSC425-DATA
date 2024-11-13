@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 from typing import TYPE_CHECKING, List, Dict, Callable, Tuple
+import logging
+import os
 
 from academic_metrics.enums import AttributeTypes
 from academic_metrics.AI import AbstractClassifier
@@ -135,6 +137,21 @@ class ClassificationOrchestrator:
         abstract_classifier_factory: Callable[[Dict[str, str]], AbstractClassifier],
         utilities: Utilities,
     ):
+        # Set up logger
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        log_file_path = os.path.join(current_dir, "classification_orchestrator.log")
+        self.logger = logging.getLogger(__name__)
+        self.logger.setLevel(logging.DEBUG)
+
+        if not self.logger.handlers:
+            handler = logging.FileHandler(log_file_path)
+            handler.setLevel(logging.DEBUG)
+            formatter = logging.Formatter(
+                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            )
+            handler.setFormatter(formatter)
+            self.logger.addHandler(handler)
+
         self.abstract_classifier_factory = abstract_classifier_factory
         self.utilities = utilities
 

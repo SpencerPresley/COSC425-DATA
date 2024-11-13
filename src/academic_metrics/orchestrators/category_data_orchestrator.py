@@ -2,13 +2,9 @@ from __future__ import annotations
 
 import json
 import os
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, Optional
+import logging
 
-from academic_metrics.core import (
-    FacultyPostprocessor,
-    NameVariation,
-    CategoryProcessor,
-)
 
 from academic_metrics.dataclass_models import (
     CategoryInfo,
@@ -21,6 +17,11 @@ if TYPE_CHECKING:
         StrategyFactory,
         WarningManager,
         Utilities,
+    )
+    from academic_metrics.core import (
+        FacultyPostprocessor,
+        NameVariation,
+        CategoryProcessor,
     )
 
 
@@ -50,6 +51,8 @@ class CategoryDataOrchestrator:
         *,
         data: list[dict],
         output_dir_path: str,
+        category_processor: CategoryProcessor,
+        faculty_postprocessor: FacultyPostprocessor,
         strategy_factory: StrategyFactory,
         dataclass_factory: DataClassFactory,
         warning_manager: WarningManager,
@@ -80,6 +83,24 @@ class CategoryDataOrchestrator:
         Summary:
             Prepares and executes the complete workflow for processing academic publication data.
         """
+        # Set up logger
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        log_file_path = os.path.join(current_dir, "category_data_orchestrator.log")
+
+        self.logger = logging.getLogger(__name__)
+        self.logger.handlers = []
+        self.logger.setLevel(logging.DEBUG)
+
+        # Add handler if none exists
+        if not self.logger.handlers:
+            handler = logging.FileHandler(log_file_path)
+            self.logger.setLevel(logging.DEBUG)
+            formatter = logging.Formatter(
+                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            )
+            handler.setFormatter(formatter)
+            self.logger.addHandler(handler)
+
         self.data = data
         self.output_dir_path = output_dir_path
         self.extend = extend
@@ -90,14 +111,10 @@ class CategoryDataOrchestrator:
         self.utils = utilities
 
         # Initialize the CategoryProcessor and FacultyDepartmentManager with dependencies
-        self.category_processor = CategoryProcessor(
-            utils=self.utils,
-            dataclass_factory=self.dataclass_factory,
-            warning_manager=self.warning_manager,
-        )
+        self.category_processor = category_processor
 
         # post-processor object
-        self.faculty_postprocessor = FacultyPostprocessor()
+        self.faculty_postprocessor = faculty_postprocessor
 
     def run_orchestrator(self):
         self.category_processor.process_data_list(self.data)

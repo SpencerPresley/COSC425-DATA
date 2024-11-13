@@ -56,6 +56,7 @@ ABSTRACT_SUMMARY_SYSTEM_MESSAGE = """
     IMPORTANT: Your summary should focus on the main idea of the research while not being concerned with the specific methods used to conduct the research. If you are concerned with the specific methods used to conduct the research, you are doing it wrong. If you summary contains mentions of the methodologies used, you are doing it wrong.
     IMPORTANT: Ensure that your feedback is specific to the methodologies assistant and abstract sentence level analysis assistant. Do not provide feedback for the sake of providing feedback, provide feedback that will actually help the assistants improve their analysis of the abstract.
     IMPORTANT: Do not include the markdown json code block notation in your response. Simply return the JSON object. The markdown json code block notation is: ```json\n<your json here>\n```, do not include the ```json\n``` in your response.
+    IMPORTANT: If within the values to the keys in the json, you use any other notation such as **Latex** ensure you properly escape. If you do not then the JSON will not be able to be parsed, which is a **critical failure**.
     IMPORTANT: You must return the output in the specified JSON format. If you do not return the output in the specified JSON format, you have failed.
     """
 

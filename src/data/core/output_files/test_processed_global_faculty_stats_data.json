@@ -1,203 +1,683 @@
 [
     {
-        "_id": "kwangwook-gang",
-        "name": "KwangWook Gang",
-        "total_citations": 1,
+        "_id": "campbell-ruffhead",
+        "name": "Campbell Ruffhead",
+        "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "department_affiliations": [
-            "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA"
+            "Salisbury University, Salisbury, MD."
         ],
         "dois": [
-            "10.1080/09537325.2021.1991572"
+            "10.1249/01.mss.0001052868.70990.0c"
         ],
         "titles": [
-            "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
         ],
         "categories": [
-            "Social sciences",
-            "Applied economics",
-            "Public policy analysis",
-            "Business administration and management",
-            "Economics",
-            "Business management and administration",
-            "Economics, general",
-            "Public policy analysis, general",
-            "Business administration and management nec",
-            "Business"
+            "Biological and biomedical sciences nec",
+            "Health sciences, general",
+            "Physiology, general",
+            "Biological and biomedical sciences, other",
+            "Physiology, oncology and cancer biology",
+            "Exercise physiology and kinesiology",
+            "Health sciences",
+            "Public health, general",
+            "Exercise science and kinesiology",
+            "Biomedical sciences, general",
+            "Health sciences, other",
+            "Biological and biomedical sciences",
+            "Health services research",
+            "Public health"
         ],
         "category_urls": [
-            "Economics%2C%20general",
-            "Social%20sciences",
-            "Business%20administration%20and%20management",
-            "Business%20management%20and%20administration",
-            "Public%20policy%20analysis%2C%20general",
-            "Economics",
-            "Applied%20economics",
-            "Business",
-            "Public%20policy%20analysis",
-            "Business%20administration%20and%20management%20nec"
+            "Biological%20and%20biomedical%20sciences",
+            "Health%20sciences%2C%20general",
+            "Public%20health",
+            "Physiology%2C%20general",
+            "Health%20sciences",
+            "Physiology%2C%20oncology%20and%20cancer%20biology",
+            "Biomedical%20sciences%2C%20general",
+            "Exercise%20science%20and%20kinesiology",
+            "Exercise%20physiology%20and%20kinesiology",
+            "Biological%20and%20biomedical%20sciences%20nec",
+            "Public%20health%2C%20general",
+            "Health%20services%20research",
+            "Health%20sciences%2C%20other",
+            "Biological%20and%20biomedical%20sciences%2C%20other"
         ],
         "top_level_categories": [
-            "Social sciences",
-            "Business"
+            "Biological and biomedical sciences",
+            "Health sciences"
         ],
         "mid_level_categories": [
-            "Business administration and management",
-            "Economics",
-            "Public policy analysis"
+            "Health sciences, other",
+            "Biological and biomedical sciences, other",
+            "Physiology, oncology and cancer biology",
+            "Public health"
         ],
         "low_level_categories": [
-            "Applied economics",
-            "Public policy analysis, general",
-            "Business management and administration",
-            "Economics, general",
-            "Business administration and management nec"
+            "Biological and biomedical sciences nec",
+            "Health sciences, general",
+            "Physiology, general",
+            "Health services research",
+            "Exercise physiology and kinesiology",
+            "Exercise science and kinesiology",
+            "Biomedical sciences, general",
+            "Public health, general"
         ],
         "themes": [
-            "Impact of deregulation on innovation",
-            "Foreign equity ownership and investment dynamics",
-            "Firm characteristics and innovation investment"
+            "Arterial stiffness and cardiovascular health",
+            "Effects of blood flow restriction exercises",
+            "Comparison of autoregulated and non-autoregulated training methods"
         ],
         "citation_map": {
-            "10.1080/09537325.2021.1991572": 1
+            "10.1249/01.mss.0001052868.70990.0c": 0
         },
         "journals": [
-            "Technology Analysis &amp; Strategic Management"
+            "Medicine &amp; Science in Sports &amp; Exercise"
         ]
     },
     {
-        "_id": "byungchul-choi",
-        "name": "Byungchul Choi",
-        "total_citations": 1,
-        "article_count": 1,
+        "_id": "nicholas-rolnick",
+        "name": "Nicholas Rolnick",
+        "total_citations": 0,
+        "article_count": 2,
         "average_citations": 0,
         "department_affiliations": [
-            "College of Business, Hankuk University of Foreign Studies, Seoul, Korea"
+            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)"
         ],
         "dois": [
-            "10.1080/09537325.2021.1991572"
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
         ],
         "titles": [
-            "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
         ],
         "categories": [
-            "Social sciences",
-            "Applied economics",
-            "Public policy analysis",
-            "Business administration and management",
-            "Economics",
-            "Business management and administration",
-            "Economics, general",
-            "Public policy analysis, general",
-            "Business administration and management nec",
-            "Business"
+            "Biological and biomedical sciences nec",
+            "Health sciences, general",
+            "Physiology, general",
+            "Biological and biomedical sciences, other",
+            "Exercise science and kinesiology",
+            "Physiology, oncology and cancer biology",
+            "Health sciences, other",
+            "Exercise physiology and kinesiology",
+            "Health sciences",
+            "Public health, general",
+            "Biomedical sciences, general",
+            "Biological and biomedical sciences",
+            "Health services research",
+            "Public health"
         ],
         "category_urls": [
-            "Economics%2C%20general",
-            "Social%20sciences",
-            "Business%20administration%20and%20management",
-            "Business%20management%20and%20administration",
-            "Public%20policy%20analysis%2C%20general",
-            "Economics",
-            "Applied%20economics",
-            "Business",
-            "Public%20policy%20analysis",
-            "Business%20administration%20and%20management%20nec"
+            "Health%20sciences%2C%20general",
+            "Public%20health",
+            "Physiology%2C%20general",
+            "Health%20sciences",
+            "Physiology%2C%20oncology%20and%20cancer%20biology",
+            "Biomedical%20sciences%2C%20general",
+            "Exercise%20science%20and%20kinesiology",
+            "Exercise%20physiology%20and%20kinesiology",
+            "Biological%20and%20biomedical%20sciences%20nec",
+            "Biological%20and%20biomedical%20sciences",
+            "Public%20health%2C%20general",
+            "Health%20services%20research",
+            "Health%20sciences%2C%20other",
+            "Biological%20and%20biomedical%20sciences%2C%20other"
         ],
         "top_level_categories": [
-            "Social sciences",
-            "Business"
+            "Biological and biomedical sciences",
+            "Health sciences"
         ],
         "mid_level_categories": [
-            "Business administration and management",
-            "Economics",
-            "Public policy analysis"
+            "Health sciences, other",
+            "Biological and biomedical sciences, other",
+            "Physiology, oncology and cancer biology",
+            "Public health"
         ],
         "low_level_categories": [
-            "Applied economics",
-            "Public policy analysis, general",
-            "Business management and administration",
-            "Economics, general",
-            "Business administration and management nec"
+            "Biological and biomedical sciences nec",
+            "Health sciences, general",
+            "Physiology, general",
+            "Health services research",
+            "Exercise physiology and kinesiology",
+            "Exercise science and kinesiology",
+            "Biomedical sciences, general",
+            "Public health, general"
         ],
         "themes": [
-            "Impact of deregulation on innovation",
-            "Foreign equity ownership and investment dynamics",
-            "Firm characteristics and innovation investment"
+            "Arterial stiffness and cardiovascular health",
+            "Effects of blood flow restriction exercises",
+            "Comparison of autoregulated and non-autoregulated training methods"
         ],
         "citation_map": {
-            "10.1080/09537325.2021.1991572": 1
+            "10.1249/01.mss.0001060920.34828.c8": 0
         },
         "journals": [
-            "Technology Analysis &amp; Strategic Management"
+            "Medicine &amp; Science in Sports &amp; Exercise"
         ]
     },
     {
-        "_id": "minseok-park",
-        "name": "Minseok Park",
-        "total_citations": 1,
+        "_id": "susannah-taylor",
+        "name": "Susannah Taylor",
+        "total_citations": 0,
+        "article_count": 2,
+        "average_citations": 0,
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "categories": [
+            "Biological and biomedical sciences nec",
+            "Health sciences, general",
+            "Physiology, general",
+            "Biological and biomedical sciences, other",
+            "Exercise science and kinesiology",
+            "Physiology, oncology and cancer biology",
+            "Health sciences, other",
+            "Exercise physiology and kinesiology",
+            "Health sciences",
+            "Public health, general",
+            "Biomedical sciences, general",
+            "Biological and biomedical sciences",
+            "Health services research",
+            "Public health"
+        ],
+        "category_urls": [
+            "Health%20sciences%2C%20general",
+            "Public%20health",
+            "Physiology%2C%20general",
+            "Health%20sciences",
+            "Physiology%2C%20oncology%20and%20cancer%20biology",
+            "Biomedical%20sciences%2C%20general",
+            "Exercise%20science%20and%20kinesiology",
+            "Exercise%20physiology%20and%20kinesiology",
+            "Biological%20and%20biomedical%20sciences%20nec",
+            "Biological%20and%20biomedical%20sciences",
+            "Public%20health%2C%20general",
+            "Health%20services%20research",
+            "Health%20sciences%2C%20other",
+            "Biological%20and%20biomedical%20sciences%2C%20other"
+        ],
+        "top_level_categories": [
+            "Biological and biomedical sciences",
+            "Health sciences"
+        ],
+        "mid_level_categories": [
+            "Health sciences, other",
+            "Biological and biomedical sciences, other",
+            "Physiology, oncology and cancer biology",
+            "Public health"
+        ],
+        "low_level_categories": [
+            "Biological and biomedical sciences nec",
+            "Health sciences, general",
+            "Physiology, general",
+            "Health services research",
+            "Exercise physiology and kinesiology",
+            "Exercise science and kinesiology",
+            "Biomedical sciences, general",
+            "Public health, general"
+        ],
+        "themes": [
+            "Arterial stiffness and cardiovascular health",
+            "Effects of blood flow restriction exercises",
+            "Comparison of autoregulated and non-autoregulated training methods"
+        ],
+        "citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        },
+        "journals": [
+            "Medicine &amp; Science in Sports &amp; Exercise"
+        ]
+    },
+    {
+        "_id": "lisa-marquette",
+        "name": "Lisa Marquette",
+        "total_citations": 0,
+        "article_count": 2,
+        "average_citations": 0,
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "categories": [
+            "Biological and biomedical sciences nec",
+            "Health sciences, general",
+            "Physiology, general",
+            "Biological and biomedical sciences, other",
+            "Exercise science and kinesiology",
+            "Physiology, oncology and cancer biology",
+            "Health sciences, other",
+            "Exercise physiology and kinesiology",
+            "Health sciences",
+            "Public health, general",
+            "Biomedical sciences, general",
+            "Biological and biomedical sciences",
+            "Health services research",
+            "Public health"
+        ],
+        "category_urls": [
+            "Health%20sciences%2C%20general",
+            "Public%20health",
+            "Physiology%2C%20general",
+            "Health%20sciences",
+            "Physiology%2C%20oncology%20and%20cancer%20biology",
+            "Biomedical%20sciences%2C%20general",
+            "Exercise%20science%20and%20kinesiology",
+            "Exercise%20physiology%20and%20kinesiology",
+            "Biological%20and%20biomedical%20sciences%20nec",
+            "Biological%20and%20biomedical%20sciences",
+            "Public%20health%2C%20general",
+            "Health%20services%20research",
+            "Health%20sciences%2C%20other",
+            "Biological%20and%20biomedical%20sciences%2C%20other"
+        ],
+        "top_level_categories": [
+            "Biological and biomedical sciences",
+            "Health sciences"
+        ],
+        "mid_level_categories": [
+            "Health sciences, other",
+            "Biological and biomedical sciences, other",
+            "Physiology, oncology and cancer biology",
+            "Public health"
+        ],
+        "low_level_categories": [
+            "Biological and biomedical sciences nec",
+            "Health sciences, general",
+            "Physiology, general",
+            "Health services research",
+            "Exercise physiology and kinesiology",
+            "Exercise science and kinesiology",
+            "Biomedical sciences, general",
+            "Public health, general"
+        ],
+        "themes": [
+            "Arterial stiffness and cardiovascular health",
+            "Effects of blood flow restriction exercises",
+            "Comparison of autoregulated and non-autoregulated training methods"
+        ],
+        "citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        },
+        "journals": [
+            "Medicine &amp; Science in Sports &amp; Exercise"
+        ]
+    },
+    {
+        "_id": "brent-fedorko",
+        "name": "Brent Fedorko",
+        "total_citations": 0,
+        "article_count": 2,
+        "average_citations": 0,
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "categories": [
+            "Biological and biomedical sciences nec",
+            "Health sciences, general",
+            "Physiology, general",
+            "Biological and biomedical sciences, other",
+            "Exercise science and kinesiology",
+            "Physiology, oncology and cancer biology",
+            "Health sciences, other",
+            "Exercise physiology and kinesiology",
+            "Health sciences",
+            "Public health, general",
+            "Biomedical sciences, general",
+            "Biological and biomedical sciences",
+            "Health services research",
+            "Public health"
+        ],
+        "category_urls": [
+            "Health%20sciences%2C%20general",
+            "Public%20health",
+            "Physiology%2C%20general",
+            "Health%20sciences",
+            "Physiology%2C%20oncology%20and%20cancer%20biology",
+            "Biomedical%20sciences%2C%20general",
+            "Exercise%20science%20and%20kinesiology",
+            "Exercise%20physiology%20and%20kinesiology",
+            "Biological%20and%20biomedical%20sciences%20nec",
+            "Biological%20and%20biomedical%20sciences",
+            "Public%20health%2C%20general",
+            "Health%20services%20research",
+            "Health%20sciences%2C%20other",
+            "Biological%20and%20biomedical%20sciences%2C%20other"
+        ],
+        "top_level_categories": [
+            "Biological and biomedical sciences",
+            "Health sciences"
+        ],
+        "mid_level_categories": [
+            "Health sciences, other",
+            "Biological and biomedical sciences, other",
+            "Physiology, oncology and cancer biology",
+            "Public health"
+        ],
+        "low_level_categories": [
+            "Biological and biomedical sciences nec",
+            "Health sciences, general",
+            "Physiology, general",
+            "Health services research",
+            "Exercise physiology and kinesiology",
+            "Exercise science and kinesiology",
+            "Biomedical sciences, general",
+            "Public health, general"
+        ],
+        "themes": [
+            "Arterial stiffness and cardiovascular health",
+            "Effects of blood flow restriction exercises",
+            "Comparison of autoregulated and non-autoregulated training methods"
+        ],
+        "citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        },
+        "journals": [
+            "Medicine &amp; Science in Sports &amp; Exercise"
+        ]
+    },
+    {
+        "_id": "jessica-walters",
+        "name": "Jessica Walters",
+        "total_citations": 0,
+        "article_count": 2,
+        "average_citations": 0,
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "categories": [
+            "Biological and biomedical sciences nec",
+            "Health sciences, general",
+            "Physiology, general",
+            "Biological and biomedical sciences, other",
+            "Exercise science and kinesiology",
+            "Physiology, oncology and cancer biology",
+            "Health sciences, other",
+            "Exercise physiology and kinesiology",
+            "Health sciences",
+            "Public health, general",
+            "Biomedical sciences, general",
+            "Biological and biomedical sciences",
+            "Health services research",
+            "Public health"
+        ],
+        "category_urls": [
+            "Health%20sciences%2C%20general",
+            "Public%20health",
+            "Physiology%2C%20general",
+            "Health%20sciences",
+            "Physiology%2C%20oncology%20and%20cancer%20biology",
+            "Biomedical%20sciences%2C%20general",
+            "Exercise%20science%20and%20kinesiology",
+            "Exercise%20physiology%20and%20kinesiology",
+            "Biological%20and%20biomedical%20sciences%20nec",
+            "Biological%20and%20biomedical%20sciences",
+            "Public%20health%2C%20general",
+            "Health%20services%20research",
+            "Health%20sciences%2C%20other",
+            "Biological%20and%20biomedical%20sciences%2C%20other"
+        ],
+        "top_level_categories": [
+            "Biological and biomedical sciences",
+            "Health sciences"
+        ],
+        "mid_level_categories": [
+            "Health sciences, other",
+            "Biological and biomedical sciences, other",
+            "Physiology, oncology and cancer biology",
+            "Public health"
+        ],
+        "low_level_categories": [
+            "Biological and biomedical sciences nec",
+            "Health sciences, general",
+            "Physiology, general",
+            "Health services research",
+            "Exercise physiology and kinesiology",
+            "Exercise science and kinesiology",
+            "Biomedical sciences, general",
+            "Public health, general"
+        ],
+        "themes": [
+            "Arterial stiffness and cardiovascular health",
+            "Effects of blood flow restriction exercises",
+            "Comparison of autoregulated and non-autoregulated training methods"
+        ],
+        "citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        },
+        "journals": [
+            "Medicine &amp; Science in Sports &amp; Exercise"
+        ]
+    },
+    {
+        "_id": "tim-werner",
+        "name": "Tim Werner",
+        "total_citations": 0,
+        "article_count": 2,
+        "average_citations": 0,
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "categories": [
+            "Biological and biomedical sciences nec",
+            "Health sciences, general",
+            "Physiology, general",
+            "Biological and biomedical sciences, other",
+            "Exercise science and kinesiology",
+            "Physiology, oncology and cancer biology",
+            "Health sciences, other",
+            "Exercise physiology and kinesiology",
+            "Health sciences",
+            "Public health, general",
+            "Biomedical sciences, general",
+            "Biological and biomedical sciences",
+            "Health services research",
+            "Public health"
+        ],
+        "category_urls": [
+            "Health%20sciences%2C%20general",
+            "Public%20health",
+            "Physiology%2C%20general",
+            "Health%20sciences",
+            "Physiology%2C%20oncology%20and%20cancer%20biology",
+            "Biomedical%20sciences%2C%20general",
+            "Exercise%20science%20and%20kinesiology",
+            "Exercise%20physiology%20and%20kinesiology",
+            "Biological%20and%20biomedical%20sciences%20nec",
+            "Biological%20and%20biomedical%20sciences",
+            "Public%20health%2C%20general",
+            "Health%20services%20research",
+            "Health%20sciences%2C%20other",
+            "Biological%20and%20biomedical%20sciences%2C%20other"
+        ],
+        "top_level_categories": [
+            "Biological and biomedical sciences",
+            "Health sciences"
+        ],
+        "mid_level_categories": [
+            "Health sciences, other",
+            "Biological and biomedical sciences, other",
+            "Physiology, oncology and cancer biology",
+            "Public health"
+        ],
+        "low_level_categories": [
+            "Biological and biomedical sciences nec",
+            "Health sciences, general",
+            "Physiology, general",
+            "Health services research",
+            "Exercise physiology and kinesiology",
+            "Exercise science and kinesiology",
+            "Biomedical sciences, general",
+            "Public health, general"
+        ],
+        "themes": [
+            "Arterial stiffness and cardiovascular health",
+            "Effects of blood flow restriction exercises",
+            "Comparison of autoregulated and non-autoregulated training methods"
+        ],
+        "citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        },
+        "journals": [
+            "Medicine &amp; Science in Sports &amp; Exercise"
+        ]
+    },
+    {
+        "_id": "sean-zupnik",
+        "name": "Sean Zupnik",
+        "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "department_affiliations": [
-            "Franklin P. Perdue School of Business, Salisbury University, Salisbury, MD, USA"
+            "Salisbury University, Salisbury, MD."
         ],
         "dois": [
-            "10.1080/09537325.2021.1991572"
+            "10.1249/01.mss.0001060920.34828.c8"
         ],
         "titles": [
-            "Changes in foreign ownership and innovation investment: the case of Korean corporate governance reforms"
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
         ],
         "categories": [
-            "Social sciences",
-            "Applied economics",
-            "Public policy analysis",
-            "Business administration and management",
-            "Economics",
-            "Business management and administration",
-            "Economics, general",
-            "Public policy analysis, general",
-            "Business administration and management nec",
-            "Business"
+            "Biological and biomedical sciences nec",
+            "Health sciences, general",
+            "Physiology, general",
+            "Biological and biomedical sciences, other",
+            "Physiology, oncology and cancer biology",
+            "Exercise physiology and kinesiology",
+            "Health sciences",
+            "Public health, general",
+            "Exercise science and kinesiology",
+            "Biomedical sciences, general",
+            "Health sciences, other",
+            "Biological and biomedical sciences",
+            "Health services research",
+            "Public health"
         ],
         "category_urls": [
-            "Economics%2C%20general",
-            "Social%20sciences",
-            "Business%20administration%20and%20management",
-            "Business%20management%20and%20administration",
-            "Public%20policy%20analysis%2C%20general",
-            "Economics",
-            "Applied%20economics",
-            "Business",
-            "Public%20policy%20analysis",
-            "Business%20administration%20and%20management%20nec"
+            "Biological%20and%20biomedical%20sciences",
+            "Health%20sciences%2C%20general",
+            "Public%20health",
+            "Physiology%2C%20general",
+            "Health%20sciences",
+            "Physiology%2C%20oncology%20and%20cancer%20biology",
+            "Biomedical%20sciences%2C%20general",
+            "Exercise%20science%20and%20kinesiology",
+            "Exercise%20physiology%20and%20kinesiology",
+            "Biological%20and%20biomedical%20sciences%20nec",
+            "Public%20health%2C%20general",
+            "Health%20services%20research",
+            "Health%20sciences%2C%20other",
+            "Biological%20and%20biomedical%20sciences%2C%20other"
         ],
-        "top_level_categories": [
-            "Social sciences",
-            "Business"
-        ],
-        "mid_level_categories": [
-            "Business administration and management",
-            "Economics",
-            "Public policy analysis"
-        ],
-        "low_level_categories": [
-            "Applied economics",
-            "Public policy analysis, general",
-            "Business management and administration",
-            "Economics, general",
-            "Business administration and management nec"
-        ],
-        "themes": [
-            "Impact of deregulation on innovation",
-            "Foreign equity ownership and investment dynamics",
-            "Firm characteristics and innovation investment"
-        ],
+        "top_level_categories": [],
+        "mid_level_categories": [],
+        "low_level_categories": [],
+        "themes": [],
         "citation_map": {
-            "10.1080/09537325.2021.1991572": 1
+            "10.1249/01.mss.0001060920.34828.c8": 0
         },
         "journals": [
-            "Technology Analysis &amp; Strategic Management"
+            "Medicine &amp; Science in Sports &amp; Exercise"
+        ]
+    },
+    {
+        "_id": "masoud-moghaddam",
+        "name": "Masoud Moghaddam",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "department_affiliations": [
+            "UMES, Princess Anne, MD."
+        ],
+        "dois": [
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+        ],
+        "categories": [
+            "Biological and biomedical sciences nec",
+            "Health sciences, general",
+            "Physiology, general",
+            "Biological and biomedical sciences, other",
+            "Physiology, oncology and cancer biology",
+            "Exercise physiology and kinesiology",
+            "Health sciences",
+            "Public health, general",
+            "Exercise science and kinesiology",
+            "Biomedical sciences, general",
+            "Health sciences, other",
+            "Biological and biomedical sciences",
+            "Health services research",
+            "Public health"
+        ],
+        "category_urls": [
+            "Biological%20and%20biomedical%20sciences",
+            "Health%20sciences%2C%20general",
+            "Public%20health",
+            "Physiology%2C%20general",
+            "Health%20sciences",
+            "Physiology%2C%20oncology%20and%20cancer%20biology",
+            "Biomedical%20sciences%2C%20general",
+            "Exercise%20science%20and%20kinesiology",
+            "Exercise%20physiology%20and%20kinesiology",
+            "Biological%20and%20biomedical%20sciences%20nec",
+            "Public%20health%2C%20general",
+            "Health%20services%20research",
+            "Health%20sciences%2C%20other",
+            "Biological%20and%20biomedical%20sciences%2C%20other"
+        ],
+        "top_level_categories": [],
+        "mid_level_categories": [],
+        "low_level_categories": [],
+        "themes": [],
+        "citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        },
+        "journals": [
+            "Medicine &amp; Science in Sports &amp; Exercise"
         ]
     }
 ]
