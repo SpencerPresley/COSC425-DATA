@@ -82,7 +82,6 @@ def setup_chain(output_list):
         human_prompt=human_prompt,
         ignore_output_passthrough_key_name_error=True,
         parser_type="pydantic",
-        return_type="json",
         pydantic_output_model=CleanerOutput,
     )
 
@@ -229,7 +228,7 @@ def get_abstract(url):
 # Example usage
 if __name__ == "__main__":
     # test the get abstract function on a single doi link
-    data = get_abstract("http://dx.doi.org/10.3197/096327117x14913285800742")
+    data = get_abstract("http://dx.doi.org/10.1080/09537325.2021.1991572")
 
     # print the data
     print(data)
