@@ -1,24 +1,25 @@
 {
-    "10.1177/1059601117728145": {
-        "Social sciences": {
-            "Sociology, demography, and population studies": [
-                "Sociology, general"
-            ],
-            "Area, ethnic, cultural, gender, and group studies": [
-                "Area, ethnic, cultural, gender, and group studies nec"
+    "10.1234/latex.2023.001": {
+        "Physical sciences": {
+            "Physics": [
+                "Atomic/ molecular physics",
+                "Theoretical and mathematical physics"
             ]
         },
-        "Psychology": {
-            "Research and experimental psychology": [
-                "Social psychology",
-                "Experimental psychology"
+        "Mathematics and statistics": {
+            "Applied mathematics": [
+                "Computational and applied mathematics",
+                "Applied mathematics nec"
+            ],
+            "Mathematics": [
+                "Mathematics, general"
             ]
         },
         "themes": [
-            "Influence of Expertise and Social Status",
-            "Team Dynamics",
-            "Perceived Expertise",
-            "Intrgroup Conflict"
+            "Properties of the Schrodinger equation",
+            "Quantization of energy levels",
+            "Quantum tunneling",
+            "Implications of quantum mechanics in atomic and subatomic processes"
         ]
     }
 }

@@ -25,6 +25,7 @@ class CategoryProcessor:
         utils: Utilities,
         dataclass_factory: DataClassFactory,
         warning_manager: WarningManager,
+        log_to_console: bool = True,
     ):
         # Set up logger
         current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -40,6 +41,10 @@ class CategoryProcessor:
             )
             handler.setFormatter(formatter)
             self.logger.addHandler(handler)
+            console_handler = logging.StreamHandler() if log_to_console else None
+            if console_handler:
+                console_handler.setFormatter(formatter)
+                self.logger.addHandler(console_handler)
 
         self.utils: Utilities = utils
         self.warning_manager: WarningManager = warning_manager

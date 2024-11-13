@@ -4,6 +4,9 @@ from typing import TYPE_CHECKING, List, Dict, Callable, Tuple
 import logging
 import os
 
+from pylatexenc.latex2text import LatexNodes2Text
+from unidecode import unidecode
+
 from academic_metrics.enums import AttributeTypes
 from academic_metrics.AI import AbstractClassifier
 
@@ -262,7 +265,8 @@ class ClassificationOrchestrator:
         """
         for item in data:
             doi, abstract = self._retrieve_doi_abstract(item)
-            doi_abstract_dict = self._make_doi_abstract_dict(doi, abstract)
+            normalized_abstract = self._normalize_abstract(abstract)
+            doi_abstract_dict = self._make_doi_abstract_dict(doi, normalized_abstract)
 
             if not doi_abstract_dict:
                 self._update_classified_instance_variables(
@@ -411,3 +415,17 @@ class ClassificationOrchestrator:
                 "Call run_classification() on your data before attempting to retrieve unclassified attributes. "
                 "Data should be a list of loaded crossref JSON objects."
             )
+
+    def _normalize_abstract(self, abstract: str) -> str:
+        """Normalizes an abstract by removing LaTeX and converting any resulting unicode to ASCII.
+
+        Args:
+            abstract: Research abstract text.
+
+        Returns:
+            str: Normalized abstract.
+        """
+        converter = LatexNodes2Text()
+        unicode_abstract = converter.latex_to_text(abstract)
+        ascii_abstract = unidecode(unicode_abstract)
+        return ascii_abstract

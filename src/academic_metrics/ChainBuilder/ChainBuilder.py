@@ -13,7 +13,8 @@ from typing import (
     Literal,
     Callable,
 )
-from pydantic import BaseModel
+from pydantic import BaseModel, ValidationError
+import json
 from langchain.prompts import (
     SystemMessagePromptTemplate,
     HumanMessagePromptTemplate,
@@ -32,6 +33,9 @@ from langchain_core.output_parsers import (
 
 # Type that represents "Required first time, optional after"
 FirstCallRequired = TypeVar("FirsCallRequired", bound=Dict[str, Any])
+ParserUnion = Union[PydanticOutputParser, JsonOutputParser, StrOutputParser]
+ParserType = TypeVar("ParserType", bound=ParserUnion)
+FallbackParserType = TypeVar("FallbackParserType", bound=ParserUnion)
 
 
 class ChainBuilder:
@@ -40,59 +44,86 @@ class ChainBuilder:
         *,
         chat_prompt: ChatPromptTemplate,
         llm: Union[ChatOpenAI, ChatAnthropic, ChatGoogleGenerativeAI],
-        parser: Optional[
-            Union[PydanticOutputParser, JsonOutputParser, StrOutputParser]
-        ] = None,
+        parser: Optional[ParserType] = None,
+        fallback_parser: Optional[FallbackParserType] = None,
         logger: Optional[logging.Logger] = None,
+        log_to_console: bool = True,
+        log_file_path: str = "chain_builder.log",
     ):
         # Set up logger
         self.logger = logger or logging.getLogger(__name__)
         self.logger.setLevel(logging.INFO)
 
+        self.logger.handlers = []
+
+        self.log_file_path = log_file_path or os.path.join(
+            os.path.dirname(os.path.abspath(__file__)), "chain_builder.log"
+        )
+
         # Add handler if none exists
         if not self.logger.handlers:
-            handler = logging.StreamHandler()
+            handler = logging.FileHandler(self.log_file_path)
             formatter = logging.Formatter(
                 "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
             )
+            console_handler = logging.StreamHandler() if log_to_console else None
+            if console_handler:
+                console_handler.setFormatter(formatter)
+                self.logger.addHandler(console_handler)
             handler.setFormatter(formatter)
             self.logger.addHandler(handler)
 
         self.chat_prompt = chat_prompt
-        self.parser = parser
+        self.parser: Optional[ParserType] = parser
+        self.fallback_parser: Optional[FallbackParserType] = fallback_parser
         self.llm = llm
         self.chain = self._build_chain()
+        self.fallback_chain = self._build_fallback_chain()
 
     def __str__(self) -> str:
-        return f"ChainBuilder(chat_prompt={type(self.chat_prompt).__name__}, llm={self.llm}, parser={self.parser})"
+        return f"ChainBuilder(chat_prompt={type(self.chat_prompt).__name__}, llm={self.llm.__class__.__name__}, parser={type(self.parser).__name__ if self.parser else 'None'})"
 
     def __repr__(self) -> str:
         return self.__str__()
+
+    def _run_pydantic_parser_logging(self) -> None:
+        if isinstance(self.parser, PydanticOutputParser):
+            pydantic_model = self.parser.pydantic_object
+            self.logger.info("Required fields in Pydantic model:")
+            for field_name, field in pydantic_model.model_fields.items():
+                self.logger.info(
+                    f"  {field_name}: {'required' if field.is_required else 'optional'}"
+                )
+                if field.default is not None:
+                    self.logger.info(f"    Default: {field.default}")
+
+            self.logger.info("\nModel Schema:")
+            self.logger.info(pydantic_model.model_json_schema())
 
     def _build_chain(self) -> Runnable:
         # Build the chain
         chain: Runnable = RunnablePassthrough() | self.chat_prompt | self.llm
 
         if self.parser:
-            if isinstance(self.parser, PydanticOutputParser):
-                pydantic_model = self.parser.pydantic_object
-                self.logger.info("Required fields in Pydantic model:")
-                for field_name, field in pydantic_model.model_fields.items():
-                    self.logger.info(
-                        f"  {field_name}: {'required' if field.is_required else 'optional'}"
-                    )
-                    if field.default is not None:
-                        self.logger.info(f"    Default: {field.default}")
-
-                self.logger.info("\nModel Schema:")
-                self.logger.info(pydantic_model.model_json_schema())
-
+            self._run_pydantic_parser_logging()
             chain: Runnable = chain | self.parser
 
         return chain
 
+    def _build_fallback_chain(self) -> Runnable:
+        fallback_chain: Runnable = RunnablePassthrough() | self.chat_prompt | self.llm
+
+        if self.fallback_parser:
+            self._run_pydantic_parser_logging()
+            fallback_chain: Runnable = fallback_chain | self.fallback_parser
+
+        return fallback_chain
+
     def get_chain(self) -> Runnable:
         return self.chain
+
+    def get_fallback_chain(self) -> Runnable:
+        return self.fallback_chain
 
 
 class ChainWrapper:
@@ -100,9 +131,9 @@ class ChainWrapper:
         self,
         *,
         chain: Runnable,
-        parser: Optional[
-            Union[PydanticOutputParser, JsonOutputParser, StrOutputParser]
-        ] = None,
+        fallback_chain: Runnable,
+        parser: Optional[ParserType] = None,
+        fallback_parser: Optional[FallbackParserType] = None,
         preprocessor: Optional[Callable[[Dict[str, Any]], Dict[str, Any]]] = None,
         postprocessor: Optional[Callable[[Any], Any]] = None,
         logger: Optional[logging.Logger] = None,
@@ -120,19 +151,18 @@ class ChainWrapper:
             handler.setFormatter(formatter)
             self.logger.addHandler(handler)
 
-        self.parser: Optional[
-            Union[PydanticOutputParser, JsonOutputParser, StrOutputParser]
-        ] = parser
+        self.parser: Optional[ParserType] = parser
+        self.fallback_parser: Optional[FallbackParserType] = fallback_parser
         self.preprocessor: Optional[Callable[[Dict[str, Any]], Dict[str, Any]]] = (
             preprocessor
         )
 
         self.chain: Runnable = chain
-
+        self.fallback_chain: Runnable = fallback_chain
         self.postprocessor: Optional[Callable[[Any], Any]] = postprocessor
 
     def __str__(self) -> str:
-        return f"ChainWrapper(chain={self.chain}, parser={self.parser}"
+        return f"ChainWrapper(chain={self.chain}, parser={type(self.parser).__name__ if self.parser else 'None'}, fallback_parser={type(self.fallback_parser).__name__ if self.fallback_parser else 'None'})"
 
     def __repr__(self) -> str:
         return self.__str__()
@@ -147,8 +177,44 @@ class ChainWrapper:
 
         if self.preprocessor:
             input_data = self.preprocessor(input_data)
+        output = None
 
-        output = self.chain.invoke(input_data)
+        try:
+            # Attempt to invoke the primary chain
+            output = self.chain.invoke(input_data)
+        except (
+            json.JSONDecodeError,
+            ValidationError,
+            ValueError,
+            TypeError,
+        ) as main_chain_exception:
+            self.logger.info(f"Error in main chain: {main_chain_exception}")
+            self.logger.info(f"Attempting to execute fallback chain")
+            if self.fallback_chain and not is_last_chain:
+                self.logger.info(f"Fallback chain provided, executing fallback chain")
+                try:
+                    # Attempt to invoke the fallback chain
+                    output = self.fallback_chain.invoke(input_data)
+                except (
+                    json.JSONDecodeError,
+                    ValidationError,
+                    ValueError,
+                    TypeError,
+                ) as fallback_exception:
+                    if isinstance(fallback_exception, json.JSONDecodeError):
+                        self.logger.debug(
+                            f"Error in fallback chain: {fallback_exception.errors()}"
+                        )
+                        self.logger.debug(
+                            f"A json decode error occurred in the main chain. Executing fallback chain. If you didn't provide a fallback chain it will not be ran, since it was a json decode error you should check how you're telling the LLM to output the json and make sure it matches your pydantic model. Additionally, LLMs will sometimes output invalid characters to json such as Latex code, leading to invalide escape sequences or characters. If this is the case you should try StrOutputParser() if it isn't your last chain layer. If it is your last chain layer, try simplifying your pydantic model and enhancing your prompt to avoid this issue. If you are using a LLM such as 'gpt-4o-mini' or 'claude-3.5-haiku' you may see better results with a larger model such as 'gpt-4o' or 'claude-3.5-sonnet'."
+                        )
+                        raise fallback_exception
+            else:
+                if isinstance(main_chain_exception, json.JSONDecodeError):
+                    self.logger.debug(
+                        f"A json decode error occurred in the main chain. Executing fallback chain. If you didn't provide a fallback chain it will not be ran, since it was a json decode error you should check how you're telling the LLM to output the json and make sure it matches your pydantic model. Additionally, LLMs will sometimes output invalid characters to json such as Latex code, leading to invalide escape sequences or characters. If this is the case you should try StrOutputParser() if it isn't your last chain layer. If it is your last chain layer, try simplifying your pydantic model and enhancing your prompt to avoid this issue. If you are using a LLM such as 'gpt-4o-mini' or 'claude-3.5-haiku' you may see better results with a larger model such as 'gpt-4o' or 'claude-3.5-sonnet'."
+                    )
+                    raise main_chain_exception
 
         # Only need to handle intermediate chain Pydantic outputs
         # Rest are handled by JsonOutputParser or PydanticOutputParser
@@ -162,6 +228,9 @@ class ChainWrapper:
 
     def get_parser_type(self) -> Union[str, None]:
         return type(self.parser).__name__ if self.parser else None
+
+    def get_fallback_parser_type(self) -> Union[str, None]:
+        return type(self.fallback_parser).__name__ if self.fallback_parser else None
 
 
 class ChainComposer:
@@ -239,12 +308,14 @@ class ChainManager:
         llm_temperature: float = 0.7,
         preprocessor: Optional[Callable[[Dict[str, Any]], Dict[str, Any]]] = None,
         postprocessor: Optional[Callable[[Any], Any]] = None,
+        log_to_console: bool = False,
         **llm_kwargs: Dict[str, Any],
     ):
         # Setup logger
         current_dir = os.path.dirname(os.path.abspath(__file__))
         log_file_path = os.path.join(current_dir, "chain_builder.log")
         self.logger = logging.getLogger(__name__)
+        self.logger.setLevel(logging.DEBUG)
         self.logger.handlers = []
 
         # Add handler if none exists
@@ -257,6 +328,10 @@ class ChainManager:
             handler.setFormatter(formatter)
             self.logger.addHandler(handler)
             self.logger.propagate = False
+            console_handler = logging.StreamHandler() if log_to_console else None
+            if console_handler:
+                console_handler.setFormatter(formatter)
+                self.logger.addHandler(console_handler)
 
         self.api_key: str = api_key
         self.llm_model: str = llm_model
@@ -366,21 +441,21 @@ class ChainManager:
 
     def _initialize_parser(
         self, parser_type: str, pydantic_output_model: Optional[BaseModel] = None
-    ) -> Union[PydanticOutputParser, JsonOutputParser]:
+    ) -> ParserType:
         if parser_type == "pydantic":
-            parser = self._create_pydantic_parser(
+            parser: PydanticOutputParser = self._create_pydantic_parser(
                 pydantic_output_model=pydantic_output_model
             )
             self.logger.debug(f"Created Pydantic parser: {parser}")
             return parser
         elif parser_type == "json":
-            parser = self._create_json_parser(
+            parser: JsonOutputParser = self._create_json_parser(
                 pydantic_output_model=pydantic_output_model
             )
             self.logger.debug(f"Created JSON parser: {parser}")
             return parser
         elif parser_type == "str":
-            parser = self._create_str_parser()
+            parser: StrOutputParser = self._create_str_parser()
             self.logger.debug(f"Created Str parser: {parser}")
             return parser
         else:
@@ -398,7 +473,7 @@ class ChainManager:
     def _create_json_parser(
         self, *, pydantic_output_model: Optional[BaseModel]
     ) -> JsonOutputParser:
-        json_parser = None
+        json_parser: Optional[JsonOutputParser] = None
         if not pydantic_output_model:
             warnings.warn(
                 "It is highly recommended to provide a pydantic_output_model when parser_type is 'json'. "
@@ -423,6 +498,8 @@ class ChainManager:
         ignore_output_passthrough_key_name_error,
         parser_type,
         pydantic_output_model,
+        fallback_parser_type,
+        fallback_pydantic_output_model,
     ) -> None:
         if (
             len(self.chain_composer.chain_sequence) > 0
@@ -435,6 +512,20 @@ class ChainManager:
             else:
                 warnings.warn(
                     "output_passthrough_key_name not provided when adding a chain layer after another. Output of the chain layer will not be assigned to a variable."
+                )
+
+        if parser_type is None and fallback_parser_type is not None:
+            raise ValueError(
+                "parser_type is None when fallback_parser_type is not None. This is not allowed."
+            )
+
+        if (parser_type is not None and pydantic_output_model is not None) and (
+            fallback_parser_type is not None
+            and fallback_pydantic_output_model is not None
+        ):
+            if pydantic_output_model == fallback_pydantic_output_model:
+                raise ValueError(
+                    "pydantic_output_model and fallback_pydantic_output_model are the same. This is not allowed."
                 )
 
         if parser_type is not None:
@@ -462,6 +553,33 @@ class ChainManager:
                     "pydantic_output_model is provided but parser_type is None. The pydantic_output_model will not be used."
                 )
 
+        if fallback_parser_type is not None:
+            if parser_type is not None and fallback_parser_type == parser_type:
+                raise ValueError(
+                    "parser_type and fallback_parser_type are the same. This is not allowed."
+                )
+
+            if fallback_parser_type not in ["pydantic", "json", "str"]:
+                raise ValueError(
+                    f"Unsupported fallback_parser_type: {fallback_parser_type}"
+                )
+            if fallback_parser_type == "pydantic":
+                if not fallback_pydantic_output_model:
+                    raise ValueError(
+                        "fallback_pydantic_output_model must be specified when fallback_parser_type is 'pydantic'."
+                    )
+            elif fallback_parser_type == "json":
+                if not fallback_pydantic_output_model:
+                    warnings.warn(
+                        "It is highly recommended to provide a fallback_pydantic_output_model when fallback_parser_type is 'json'. "
+                        "This will ensure that the output of the fallback chain layer is properly typed and can be used in downstream chain layers."
+                    )
+        else:
+            if fallback_pydantic_output_model:
+                warnings.warn(
+                    "fallback_pydantic_output_model is provided but fallback_parser_type is None. The fallback_pydantic_output_model will not be used."
+                )
+
     def _format_chain_sequence(
         self, chain_sequence: List[Tuple[ChainWrapper, Optional[str]]]
     ) -> None:
@@ -469,6 +587,7 @@ class ChainManager:
             print(f"Chain {index + 1}:")
             print(f"\tOutput Name: {output_name}")
             print(f"\tParser Type: {chain_wrapper.get_parser_type()}")
+            print(f"\tFallback Parser Type: {chain_wrapper.get_fallback_parser_type()}")
             print(f"\tPreprocessor: {chain_wrapper.preprocessor}")
             print(f"\tPostprocessor: {chain_wrapper.postprocessor}")
 
@@ -512,7 +631,9 @@ class ChainManager:
         preprocessor: Optional[Callable[[Dict[str, Any]], Dict[str, Any]]] = None,
         postprocessor: Optional[Callable[[Any], Any]] = None,
         parser_type: Optional[Literal["pydantic", "json", "str"]] = None,
+        fallback_parser_type: Optional[Literal["pydantic", "json", "str"]] = None,
         pydantic_output_model: Optional[BaseModel] = None,
+        fallback_pydantic_output_model: Optional[BaseModel] = None,
     ) -> None:
         self.logger.info(
             f"Adding chain layer with output_passthrough_key_name: {output_passthrough_key_name}"
@@ -534,12 +655,20 @@ class ChainManager:
             ignore_output_passthrough_key_name_error=ignore_output_passthrough_key_name_error,
             parser_type=parser_type,
             pydantic_output_model=pydantic_output_model,
+            fallback_parser_type=fallback_parser_type,
+            fallback_pydantic_output_model=fallback_pydantic_output_model,
         )
 
         parser = None
+        fallback_parser = None
         if parser_type:
             parser = self._initialize_parser(
                 parser_type=parser_type, pydantic_output_model=pydantic_output_model
+            )
+        if fallback_parser_type:
+            fallback_parser = self._initialize_parser(
+                parser_type=fallback_parser_type,
+                pydantic_output_model=fallback_pydantic_output_model,
             )
         # Create prompt templates without specifying input_variables
         system_prompt_template = PromptTemplate(template=system_prompt)
@@ -558,14 +687,18 @@ class ChainManager:
             chat_prompt=chat_prompt_template,
             llm=self.llm,
             parser=parser,
+            fallback_parser=fallback_parser,
             logger=self.logger,
         )
         chain = chain_builder.get_chain()
+        fallback_chain = chain_builder.get_fallback_chain()
 
         # Wrap the chain
         chain_wrapper = ChainWrapper(
             chain=chain,
+            fallback_chain=fallback_chain,
             parser=parser,
+            fallback_parser=fallback_parser,
             preprocessor=preprocessor or self.preprocessor,
             postprocessor=postprocessor or self.postprocessor,
             logger=self.logger,
