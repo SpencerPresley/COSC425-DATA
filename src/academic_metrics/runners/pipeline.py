@@ -47,7 +47,6 @@ class PipelineRunner:
     def __init__(
         self,
         ai_api_key: str,
-        crossref_base_url: str,
         crossref_affiliation: str,
         data_from_year: int,
         data_to_year: int,
@@ -74,7 +73,6 @@ class PipelineRunner:
         self.ai_api_key = ai_api_key
         self.scraper = self._create_scraper()
         self.crossref_wrapper = self._create_crossref_wrapper(
-            base_url=crossref_base_url,
             affiliation=crossref_affiliation,
             from_year=data_from_year,
             to_year=data_to_year,
@@ -239,7 +237,6 @@ if __name__ == "__main__":
     ai_api_key = os.getenv("OPENAI_API_KEY")
     pipeline_runner = PipelineRunner(
         ai_api_key=ai_api_key,
-        crossref_base_url="https://api.crossref.org/works",
         crossref_affiliation="Salisbury%20University",
         data_from_year=2024,
         data_to_year=2024,

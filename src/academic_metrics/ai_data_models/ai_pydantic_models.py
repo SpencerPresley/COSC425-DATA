@@ -8,7 +8,6 @@ class Feedback(BaseModel):
 
 
 class Classification(BaseModel):
-    abstract: str
     categories: List[str]
     reasoning: str
     confidence_score: float

@@ -112,6 +112,9 @@ class ClassificationOrchestrator:
             _validate_classification_ran() -> None:
                 Validates if classification has been run.
 
+            _normalize_abstract() -> str:
+                Normalizes an abstract by removing LaTeX and converting any resulting unicode to ASCII.
+
     Example:
         >>> # Create wrapper instance
         >>> wrapper = ClassificationWrapper(

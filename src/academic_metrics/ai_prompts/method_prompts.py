@@ -58,6 +58,7 @@ METHOD_EXTRACTION_SYSTEM_MESSAGE = """
     
     IMPORTANT: Do not include the markdown json code block notation in your response. Simply return the JSON object.
     The markdown json code block notation is: ```json\n<your json here>\n```, do not include the ```json\n``` in your response.
+    IMPORTANT: If within the values to the keys in the json, you use any other notation such as **Latex** ensure you properly escape them. If you do not then the JSON will not be able to be parsed, which is a **critical failure**.
     IMPORTANT: You must return the output in the specified JSON format. If you do not return the output in the specified JSON format, you have failed.
 """
 

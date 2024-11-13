@@ -63,6 +63,7 @@ IMPORTANT: Your output should always be a JSON object following the provided str
 IMPORTANT: Do not include the markdown json code block notation in your response. Simply return the JSON object.
 IMPORTANT: Your focus is on identifying the main themes present in the abstract, not the specific methods used to conduct the research. You may use keywords as a guide but do not only focus on the keywords.
 IMPORTANT: You should first try to identify any current themes the abstract aligns with, once you have done this you should then reason if those do not cover all the themes you've identified. If there are any themes that it does not cover you should add them to the list of themes in your ouput.
+IMPORTANT: If within the values to the keys in the json, you use any other notation such as **Latex** ensure you properly escape. If you do not then the JSON will not be able to be parsed, which is a **critical failure**.
 IMPORTANT: YOU MUST FOLLOW THE OUTPUT JSON STRUCTURE PROVIDED EXACTLY, DO NOT CHANGE ANY KEYS OR MAKE UP YOUR OWN KEYS. YOU MUST FILL IN ALL THE VALUES FOR EACH KEY EVEN IF SOME ARE EMPTY STRINGS.
 """
 

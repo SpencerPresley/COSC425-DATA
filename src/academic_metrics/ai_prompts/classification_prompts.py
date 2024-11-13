@@ -79,6 +79,7 @@ For example, here is a full block item from the taxonomy:
 
 IMPORTANT: Do not classify based on the specific methods used to conduct the research, the use of methods is only relevant if it is the main focus of the research or if it helps obtain more contextual understanding of the abstract. The classifications should be representative of the core theme behind the research, as in what the research is doing but not how it is doing it.
 IMPORTANT: Your output should always be a JSON object following the provided structure, if you do not follow the provided structure and/ or do not provide a JSON object, you have failed.
+IMPORTANT: If within the values to the keys in the json, you use any other notation such as **Latex** ensure you properly escape. If you do not then the JSON will not be able to be parsed, which is a **critical failure**.
 IMPORTANT: Do not include the markdown json code block notation in your response. Simply return the JSON object.
 """
 
@@ -119,7 +120,6 @@ CLASSIFICATION_JSON_FORMAT = """
         {
             "classifications": [
                 {
-                    "abstract": "<abstract>",
                     "categories": [
                         "<first category you decided to classify the abstract into>",
                         "<second category you decided to classify the abstract into>"
