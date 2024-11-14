@@ -10,7 +10,8 @@ from openai import OpenAI
 from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.firefox.options import Options
 from academic_metrics.ChainBuilder import ChainManager
-from typing import Any, Dict, Optional
+from typing import Any, Dict
+from academic_metrics.constants import LOG_DIR_PATH
 
 # # Load environment variables
 # load_dotenv()
@@ -67,14 +68,13 @@ class Scraper:
         #         handler.setFormatter(formatter)
         #         self.logger.addHandler(handler)
 
-        current_dir = os.path.dirname(os.path.abspath(__file__))
-        log_file_path = os.path.join(current_dir, "scraper.log")
+        self.log_file_path = os.path.join(LOG_DIR_PATH, "scraper.log")
 
         self.logger = logging.getLogger(__name__)
         self.logger.handlers = []
         self.logger.setLevel(logging.DEBUG)
 
-        console_handler = logging.FileHandler(log_file_path)
+        console_handler = logging.FileHandler(self.log_file_path)
         formatter = logging.Formatter(
             "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
         )
@@ -157,6 +157,18 @@ class Scraper:
         }
         """
 
+        json_example_missing_abstract = """
+        {
+            "abstract": "",
+            "extra_context": {
+                "keywords": ["keyword1", "keyword2", "keyword3"],
+                "authors": ["author1", "author2", "author3"],
+                "date": "2024-01-01",
+                ...
+            }
+        }
+        """
+
         # create the system prompt
         system_prompt = """
         You are an expert at cleaning text from a website. You will be provided some text and you are to clean it into markdown format and do the following:
@@ -167,16 +179,22 @@ class Scraper:
         You are to format your results in the following json structure:
         {json_structure}
 
-        If you find an abstract you are to put in the abstract section, if you don't find one put an empty string.
+        If you find an abstract you are to put in the abstract section, **if you don't find one put an empty string**.
+        
+        Here is an example of what to do if you don't find an abstract:
+        {json_example_missing_abstract}
 
-        For extra_context you are to put a key value pair of anything else you find. If you do not find anything else then you are to still make 1 key value pair indicating so. DO NOT BE LAZY.
+        For extra_context you are to put a key value pair of anything else you find. **If you do not find anything else then you are to still make 1 key value pair indicating so**. DO NOT BE LAZY.
+        
+        You should always find at least 1 extra context key value pair.
 
         In extra_context be congnizant of what type of element you're putting in there, for example if you find keywords, do you not just provide a string but rather a list of strings that are the keywords. Be mindful of these types of things at all times, do not limit it to this example.
 
         IMPORTANT: You are to always output your response in the json format provided, if you do not output your response in the format provided you have failed.
         IMPORTANT: DO NOT WRAP YOUR JSON IN ```json\njson content\n``` JUST RETURN THE JSON
-        IMPORTANT: The abstract and has_abstract fields ARE REQUIRED AND MUST ALWAYS BE PROVIDED, if you cannot find an abstract STILL PUT AN EMPTY STRING IN THERE.
+        IMPORTANT: The abstract field is required and must always be provided, if you cannot find an abstract STILL PUT AN EMPTY STRING IN THERE.
         IMPORTANT: extra_context IS NOT AN OPTIONAL FIELD YOUR ARE ALWAYS TO PROVIDE AT LEAST ONE KEY VALUE PAIR WITHIN IT. 
+        IMPORTANT: ENSURE THAT THE JSON YOU PROVIDE IS VALID JSON. BEFORE RETURNING REVIEW THE JSON YOU HAVE CONSTRUCTED AND FIX ANY ERRORS IF THERE ARE ANY.
         """
         # setup ability to pass the list into the prompt
         human_prompt = """
@@ -196,6 +214,7 @@ class Scraper:
         prompt_variables = {
             "output_list": str(output_list),
             "json_structure": json_schema,
+            "json_example_missing_abstract": json_example_missing_abstract,
         }
 
         results = chain_manager.run(prompt_variables_dict=prompt_variables)[
@@ -365,6 +384,8 @@ class Scraper:
                 results = self.setup_chain(output_list)
                 self.raw_results.append(results)
                 abstract = results["abstract"]
+                if abstract == "":
+                    abstract = None
                 extra_context = results["extra_context"]
                 print(f"\n\nAbstract:\n{abstract}\n\n")
                 print(f"\n\nExtra context:\n{extra_context}\n\n")

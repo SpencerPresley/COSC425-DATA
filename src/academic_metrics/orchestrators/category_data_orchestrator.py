@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import json
 import os
-from typing import TYPE_CHECKING, Optional
+from typing import TYPE_CHECKING, Union, Dict, List
 import logging
 
 
@@ -10,6 +10,8 @@ from academic_metrics.dataclass_models import (
     CategoryInfo,
     FacultyStats,
 )
+
+from academic_metrics.constants import LOG_DIR_PATH
 
 if TYPE_CHECKING:
     from academic_metrics.factories import (
@@ -84,8 +86,9 @@ class CategoryDataOrchestrator:
             Prepares and executes the complete workflow for processing academic publication data.
         """
         # Set up logger
-        current_dir = os.path.dirname(os.path.abspath(__file__))
-        log_file_path = os.path.join(current_dir, "category_data_orchestrator.log")
+        self.log_file_path = os.path.join(
+            LOG_DIR_PATH, "category_data_orchestrator.log"
+        )
 
         self.logger = logging.getLogger(__name__)
         self.logger.handlers = []
@@ -93,7 +96,7 @@ class CategoryDataOrchestrator:
 
         # Add handler if none exists
         if not self.logger.handlers:
-            handler = logging.FileHandler(log_file_path)
+            handler = logging.FileHandler(self.log_file_path)
             self.logger.setLevel(logging.DEBUG)
             formatter = logging.Formatter(
                 "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
@@ -120,14 +123,16 @@ class CategoryDataOrchestrator:
         self.category_processor.process_data_list(self.data)
 
         # category counts dict to pass to refine faculty sets
-        category_data: dict[str, CategoryInfo] = self._get_category_data()
+        category_data: dict[str, CategoryInfo] = (
+            self.category_processor.get_category_data()
+        )
 
         # Refine faculty sets to remove near duplicates and update counts
-        self.refine_faculty_sets(
+        self._refine_faculty_sets(
             faculty_postprocessor=self.faculty_postprocessor,
             category_dict=category_data,
         )
-        self.refine_faculty_stats(
+        self._refine_faculty_stats(
             faculty_stats=self.category_processor.faculty_stats,
             name_variations=self.faculty_postprocessor.name_variations,
             category_dict=category_data,
@@ -137,51 +142,43 @@ class CategoryDataOrchestrator:
 
     def _save_all_results(self):
         # Serialize the processed data and save it
-        self.serialize_and_save_data(
+        self._serialize_and_save_category_data(
             output_path=os.path.join(
                 self.output_dir_path, "test_processed_category_data.json"
-            )
+            ),
+            category_data=self.category_processor.get_category_data(),
         )
-        self.serialize_and_save_faculty_stats(
+
+        self._serialize_and_save_faculty_stats(
             output_path=os.path.join(
                 self.output_dir_path, "test_processed_faculty_stats_data.json"
-            )
+            ),
+            faculty_stats=self.category_processor.get_faculty_stats(),
         )
 
-        self.serialize_and_save_article_stats(
+        self._serialize_and_save_category_article_stats(
             output_path=os.path.join(
                 self.output_dir_path, "test_processed_article_stats_data.json"
-            )
+            ),
+            article_stats=self.category_processor.get_category_article_stats(),
         )
 
-        self.serialize_and_save_article_stats_obj(
+        self._serialize_and_save_articles(
             output_path=os.path.join(
                 self.output_dir_path, "test_processed_article_stats_obj_data.json"
-            )
+            ),
+            articles=self.category_processor.get_articles(),
         )
-        self.serialize_and_save_global_faculty_stats(
+
+        self._serialize_and_save_global_faculty_stats(
             output_path=os.path.join(
                 self.output_dir_path, "test_processed_global_faculty_stats_data.json"
-            )
+            ),
+            global_faculty_stats=self.category_processor.get_global_faculty_stats(),
         )
 
-    def _get_category_data(self):
-        """
-        Returns the current state of category counts dictionary.
-
-        Returns:
-            dict: A dictionary containing category counts.
-
-        Design:
-            Simply returns the category_data attribute from the category_processor.
-
-        Summary:
-            Provides access to the current state of category counts.
-        """
-        return self.category_processor.category_data
-
     @staticmethod
-    def refine_faculty_sets(
+    def _refine_faculty_sets(
         faculty_postprocessor: FacultyPostprocessor,
         category_dict: dict[str, CategoryInfo],
     ):
@@ -212,7 +209,7 @@ class CategoryDataOrchestrator:
                 }
             )
 
-    def refine_faculty_stats(
+    def _refine_faculty_stats(
         self,
         *,
         faculty_stats: dict[str, FacultyStats],
@@ -248,17 +245,150 @@ class CategoryDataOrchestrator:
 
     def _clean_category_data(self, category_data):
         """Prepare category data by removing unwanted keys"""
+        # True: Exclude value(s) for key
+        # False: Include value(s) for key
+        exclude_keys_map = {
+            "files": True,
+            "faculty": False,
+            "departments": False,
+            "titles": False,
+        }
+
         cleaned_data = {
             category: category_info.to_dict(
-                exclude_keys=["files", "faculty", "departments", "titles"]
+                # exclude keys is a list of strings matching keys in the dataclass to exclude
+                # from the final dict when executing .to_dict()
+                # We grab the key out and put that string in the list if it's value is True
+                exclude_keys=[
+                    key
+                    for key, should_exclude in exclude_keys_map.items()
+                    if should_exclude
+                ]
             )
             for category, category_info in category_data.items()
         }
         return cleaned_data
 
-    def _flatten_to_list(self, data_dict):
-        """Convert dictionary of categories to flat list"""
-        return list(data_dict.values())
+    def _serialize_and_save_category_data(self, *, output_path, category_data):
+        """Serialize and save category data"""
+        # Step 1: Clean the data
+        cleaned_data = self._clean_category_data(category_data)
+
+        # Step 2: Convert to list of category info dicts
+        flattened_data: List[Dict] = list(cleaned_data.values())
+
+        # Step 3: Write to file
+        self._write_to_json(flattened_data, output_path)
+
+    def _serialize_and_save_faculty_stats(self, *, output_path, faculty_stats):
+        """Serialize and save faculty stats"""
+        # First .values() gets rid of the category level
+        # Second .values() gets rid of the faculty_stats level
+        # Third .values() gets rid of the faculty name level
+        # We don't lose any data or need to insert it as we do so throughout the processing
+        # By not only making them keys but also inserting them into the FacultyInfo objects
+        # Define exclude keys map to parse into a list of keys to exclude from final dict
+        exclude_keys_map = {
+            "article_count": True,
+            "average_citations": True,
+            "doi_citation_map": True,
+        }
+
+        # List[FacultyInfo.to_dict()]
+        flattened_data: List[Dict] = []
+
+        # First level: Categories
+        for category_stats in faculty_stats.values():
+            # Second level: faculty_stats dict
+            faculty_dict = category_stats.to_dict(
+                # exclude keys is a list of strings matching keys in the dataclass to exclude
+                # from the final dict when executing .to_dict()
+                # We grab the key out and put that string in the list if it's value is True
+                # True means exclude the value for that key
+                exclude_keys=[
+                    key
+                    for key, should_exclude in exclude_keys_map.items()
+                    if should_exclude
+                ]
+            )
+            if "faculty_stats" in faculty_dict:  # Second level: faculty_stats dict
+                # Third level: FacultyInfo obj
+                for faculty_info_obj in faculty_dict["faculty_stats"].values():
+                    # Convert FacultyInfo obj to dict and append to flattened_data
+                    flattened_data.append(faculty_info_obj)
+        self._write_to_json(flattened_data, output_path)
+
+    def _serialize_and_save_global_faculty_stats(
+        self, *, output_path, global_faculty_stats
+    ):
+        # Step 0: Define exclude keys map to parse into a list of keys to exclude from final dict
+        exclude_keys_map = {
+            "article_count": True,
+            "average_citations": True,
+            "citation_map": True,
+        }
+
+        # Step 1: Flatten and convert to list of dicts
+        data: List[Dict] = [
+            item.to_dict(
+                exclude_keys=[
+                    key
+                    for key, should_exclude in exclude_keys_map.items()
+                    if should_exclude
+                ]
+            )
+            for item in global_faculty_stats.values()
+        ]
+
+        # Step 2: Write to file
+        self._write_to_json(data, output_path)
+
+    def _serialize_and_save_category_article_stats(self, *, output_path, article_stats):
+        """Serialize and save category article stats"""
+        flattened_data = []
+
+        for category, stats in article_stats.items():
+            stats_dict = stats.to_dict()
+            if "article_citation_map" in stats_dict:
+                for article in stats_dict["article_citation_map"].values():
+                    flattened_data.append({**article})
+
+        self._write_to_json(flattened_data, output_path)
+
+    def _serialize_and_save_articles(self, *, output_path, articles):
+        """Serialize and save the list of article objects from CategoryProcessor"""
+        # Convert each CrossrefArticleDetails object to a dict
+        article_dicts: List[Dict] = [article.to_dict() for article in articles]
+
+        # Write to file
+        self._write_to_json(article_dicts, output_path)
+
+    def _flatten_to_list(self, data: Union[Dict, List]) -> List[Dict]:
+        """Recursively flattens nested dictionaries/lists into a flat list of dictionaries.
+
+        Args:
+            data: Nested structure of dictionaries and lists
+
+        Returns:
+            List[Dict]: Flattened list of dictionaries
+
+        Example:
+            Input: {"cat1": {"article_map": {"doi1": {...}, "doi2": {...}}}}
+            Output: [{...}, {...}]  # List of article dictionaries
+        """
+        flattened = []
+
+        if isinstance(data, dict):
+            for value in data.values():
+                flattened.extend(self._flatten_to_list(value))
+        elif isinstance(data, list):
+            for item in data:
+                flattened.extend(self._flatten_to_list(item))
+        else:  # Base case: found a non-dict, non-list value
+            if isinstance(data, dict):  # If it's a dictionary, add it
+                flattened.append(data)
+
+        return flattened
 
     def _write_to_json(self, data, output_path):
         """Write data to JSON file, handling extend mode"""
@@ -273,69 +403,6 @@ class CategoryDataOrchestrator:
 
         with open(output_path, "w") as json_file:
             json.dump(data, json_file, indent=4)
-
-    def serialize_and_save_data(self, *, output_path):
-        """Serialize and save category data"""
-        # Step 1: Clean the data
-        cleaned_data = self._clean_category_data(self._get_category_data())
-
-        # Step 2: Flatten to list
-        flattened_data = self._flatten_to_list(cleaned_data)
-
-        # Step 3: Write to file
-        self._write_to_json(flattened_data, output_path)
-
-    def serialize_and_save_faculty_stats(self, *, output_path):
-        """Serialize and save faculty stats"""
-
-        # Get all faculty stats as dicts
-        data = {}
-        for category, faculty_stats in self.category_processor.faculty_stats.items():
-            data[category] = faculty_stats.to_dict()
-
-        # Flatten into a single list of faculty info dicts
-        flattened_data = []
-        for category_dict in data.values():
-            if category_dict:  # Only process non-empty dicts
-                flattened_data.extend(category_dict.values())
-
-        self._write_to_json(flattened_data, output_path)
-
-    def serialize_and_save_article_stats(self, *, output_path):
-        cleaned_data = {
-            category: article_stats.to_dict()
-            for category, article_stats in self.category_processor.article_stats.items()
-        }
-
-        flattened_data = self._flatten_to_list(cleaned_data)
-        self._write_to_json(flattened_data, output_path)
-
-    def serialize_and_save_article_stats_obj(self, *, output_path):
-        """Serialize and save article stats object"""
-        # Get the article stats dictionary directly
-        article_stats_serializable = (
-            self.category_processor.article_stats_obj.article_citation_map
-        )
-
-        # Convert each CrossrefArticleDetails object to a dict
-        article_stats_to_save = {
-            doi: details.to_dict()
-            for doi, details in article_stats_serializable.items()
-        }
-
-        # Flatten to list of article details
-        flattened_data = list(article_stats_to_save.values())
-
-        # Write to file
-        self._write_to_json(flattened_data, output_path)
-
-    def serialize_and_save_global_faculty_stats(self, *, output_path):
-        data = list(self.category_processor.global_faculty_stats.values())
-
-        data = [item.to_dict() for item in data]
-
-        # Step 2: Write to file
-        self._write_to_json(data, output_path)
 
 
 if __name__ == "__main__":

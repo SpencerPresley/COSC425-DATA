@@ -1,3 +1,5 @@
+import logging
+import os
 from typing import Dict, Optional, TYPE_CHECKING
 from dataclasses import dataclass
 
@@ -6,6 +8,8 @@ if TYPE_CHECKING:
     from langchain_anthropic import ChatAnthropic
     from langchain_google_genai import ChatGoogleGenerativeAI
     from langchain.schema.runnable import Runnable
+
+from academic_metrics.constants import LOG_DIR_PATH
 
 
 @dataclass
@@ -30,6 +34,19 @@ class APIKeyValidator:
         # Dict to track api keys which have been validated already
         # Key = api_key, Value = bool (True if valid, False if not)
         self._validated_already: Dict[str, bool] = {}
+        self.log_file_path = os.path.join(LOG_DIR_PATH, "api_key_validator.log")
+        self.logger = logging.getLogger(__name__)
+        self.logger.setLevel(logging.DEBUG)
+        self.logger.handlers = []
+
+        if not self.logger.handlers:
+            handler = logging.FileHandler(self.log_file_path)
+            handler.setLevel(logging.DEBUG)
+            formatter = logging.Formatter(
+                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            )
+            handler.setFormatter(formatter)
+            self.logger.addHandler(handler)
 
     def _validate(self, api_key: str, model: Optional[str] = None) -> None:
         """Run validation tests for each service."""

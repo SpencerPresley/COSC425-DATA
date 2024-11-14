@@ -11,6 +11,8 @@ from typing import Optional, TYPE_CHECKING
 if TYPE_CHECKING:
     from .scraper import Scraper
 
+from academic_metrics.constants import LOG_DIR_PATH
+
 
 class CrossrefWrapper:
     """
@@ -48,14 +50,13 @@ class CrossrefWrapper:
             logger (logging.Logger, optional): Logger for logging messages. Defaults to None.
         """
         # Set up logger
-        current_dir = os.path.dirname(os.path.abspath(__file__))
-        log_file_path = os.path.join(current_dir, "crossref_wrapper.log")
+        self.log_file_path = os.path.join(LOG_DIR_PATH, "crossref_wrapper.log")
         self.logger = logging.getLogger(__name__)
         self.logger.handlers = []
         self.logger.setLevel(logging.DEBUG)
 
         if not self.logger.handlers:
-            handler = logging.FileHandler(log_file_path)
+            handler = logging.FileHandler(self.log_file_path)
             formatter = logging.Formatter(
                 "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
             )
@@ -338,7 +339,7 @@ class CrossrefWrapper:
         # log the num items returned
         self.logger.info(f"Number of items: {len(result_list)}")
 
-        self.result = result_list
+        self.result = result_list[:5]
         return self
 
     def serialize_to_json(self, output_file):
@@ -357,6 +358,7 @@ class CrossrefWrapper:
         """
         # fill missing abstracts
         num_processed = 0
+        items_removed = 0
 
         self.logger.info("Starting final_data_process")  # Debug log
 
@@ -366,7 +368,7 @@ class CrossrefWrapper:
 
         missing_abstracts = [item for item in self.result if "abstract" not in item]
         total_missing = len(missing_abstracts)
-        self.logger.info(f"Total missing abstracts: {total_missing}")
+        self.logger.info(f"\n\nTotal missing abstracts: {total_missing}\n\n")
 
         if total_missing == 0:
             self.logger.info("No missing abstracts found")
@@ -379,6 +381,9 @@ class CrossrefWrapper:
                     self.logger.info(f"Processing URL: {item.get('URL')}")
 
                     abstract = self.scraper.get_abstract(item.get("URL"))
+                    self.logger.info(
+                        f"\n\nRETURN FROM SCRAPER get_abstract: {abstract}\n\n"
+                    )
                     self.logger.info("-" * 80)
 
                     if abstract:  # Check if data was returned
@@ -389,6 +394,10 @@ class CrossrefWrapper:
                             f"\n\nProcessed {num_processed}/{total_missing}\n\n"
                         )
                     else:
+                        # If abstract is not found item cannot be classified thus cannot be processed
+                        # So remove it from the result list
+                        self.result.remove(item)
+                        items_removed += 1
                         self.logger.warning(
                             f"No data returned for URL: {item.get('URL')}"
                         )
@@ -398,6 +407,7 @@ class CrossrefWrapper:
                     )
                     continue
 
+        self.logger.info(f"\n\nItems removed: {items_removed}\n\n")
         self.logger.info(
             f"Final data processing complete. Processed {num_processed} abstracts"
         )

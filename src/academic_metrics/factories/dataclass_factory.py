@@ -1,6 +1,7 @@
 from typing import Type, Dict
 from dataclasses import dataclass
 from academic_metrics.enums import DataClassTypes
+from academic_metrics.constants import LOG_DIR_PATH
 
 import logging
 import os
@@ -16,20 +17,22 @@ class DataClassFactory:
 
     def __init__(self):
         # Set up logger
-        current_dir = os.path.dirname(os.path.abspath(__file__))
-        log_file_path = os.path.join(current_dir, "dataclass_factory.log")
+        self.log_file_path = os.path.join(LOG_DIR_PATH, "dataclass_factory.log")
 
         self.logger = logging.getLogger(__name__)
         self.logger.handlers = []
         self.logger.setLevel(logging.DEBUG)
 
         if not self.logger.handlers:
-            handler = logging.FileHandler(log_file_path)
+            handler = logging.FileHandler(self.log_file_path)
             formatter = logging.Formatter(
                 "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
             )
             handler.setFormatter(formatter)
             self.logger.addHandler(handler)
+            console_handler = logging.StreamHandler()
+            console_handler.setFormatter(formatter)
+            self.logger.addHandler(console_handler)
 
     @classmethod
     def register_dataclass(cls, dataclass_type: DataClassTypes):

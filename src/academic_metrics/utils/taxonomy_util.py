@@ -1,8 +1,10 @@
 import json
-from academic_metrics.other.in_memory_taxonomy import TAXONOMY_AS_STRING
-from typing import Dict, List, Optional
+from typing import Dict, List
 import logging
 import os
+from academic_metrics.constants import LOG_DIR_PATH
+from academic_metrics.other.in_memory_taxonomy import TAXONOMY_AS_STRING
+
 
 # Alias for the taxonomy dictionary structure to be used for type hinting the taxonomy dictionary
 TaxonomyDict = Dict[str, Dict[str, List[str]]]
@@ -10,8 +12,7 @@ TaxonomyDict = Dict[str, Dict[str, List[str]]]
 
 class Taxonomy:
     def __init__(self) -> None:
-        current_dir = os.path.dirname(os.path.abspath(__file__))
-        log_file_path = os.path.join(current_dir, "taxonomy_util.log")
+        self.log_file_path = os.path.join(LOG_DIR_PATH, "taxonomy_util.log")
         # Set up logger
         self.logger = logging.getLogger(__name__)
         self.logger.setLevel(logging.DEBUG)
@@ -20,7 +21,7 @@ class Taxonomy:
 
         # Add handler if none exists
         if not self.logger.handlers:
-            handler = logging.FileHandler(log_file_path)
+            handler = logging.FileHandler(self.log_file_path)
             handler.setLevel(logging.DEBUG)
             formatter = logging.Formatter(
                 "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
@@ -49,6 +50,31 @@ class Taxonomy:
 
     def get_low_categories(self, top_category: str, mid_category: str) -> List[str]:
         return self.taxonomy[top_category][mid_category]
+
+    def get_top_cat_for_mid_cat(self, mid_cat: str) -> str:
+        top_cat = ""
+        found = False
+        while not found:
+            for top_cat, mid_cats in self.taxonomy.items():
+                if mid_cat in mid_cats:
+                    found = True
+                    break
+            if found:
+                break
+        return top_cat
+
+    def get_mid_cat_for_low_cat(self, low_cat: str) -> str:
+        mid_cat = ""
+        found = False
+        while not found:
+            for top_cat, mid_cats in self.taxonomy.items():
+                for mid_cat, low_cats in mid_cats.items():
+                    if low_cat in low_cats:
+                        found = True
+                        break
+            if found:
+                break
+        return mid_cat
 
     def get_taxonomy(self) -> TaxonomyDict:
         return self.taxonomy

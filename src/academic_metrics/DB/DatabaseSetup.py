@@ -8,10 +8,7 @@ from pymongo.collection import Collection
 from typing import List, Dict, Any
 import atexit
 
-# Setup logging
-logging.basicConfig(
-    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
-)
+from academic_metrics.constants import LOG_DIR_PATH
 
 
 class DatabaseWrapper:
@@ -23,6 +20,20 @@ class DatabaseWrapper:
         """
         Initialize the DatabaseWrapper with database name, collection name, and MongoDB URL.
         """
+        self.log_file_path = os.path.join(LOG_DIR_PATH, "database_wrapper.log")
+        self.logger = logging.getLogger(__name__)
+        self.logger.handlers = []
+        self.logger.setLevel(logging.DEBUG)
+        file_handler = logging.FileHandler(self.log_file_path)
+        formatter = logging.Formatter(
+            "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+        )
+        file_handler.setFormatter(formatter)
+        self.logger.addHandler(file_handler)
+        console_handler = logging.StreamHandler()
+        console_handler.setFormatter(formatter)
+        self.logger.addHandler(console_handler)
+
         self.mongo_url = mongo_url
         self.client = MongoClient(self.mongo_url, server_api=ServerApi("1"))
         self.db = self.client[db_name]
@@ -36,11 +47,11 @@ class DatabaseWrapper:
         """
         try:
             self.client.admin.command("ping")
-            logging.info(
+            self.logger.info(
                 "Pinged your deployment. You successfully connected to MongoDB!"
             )
         except Exception as e:
-            logging.error(f"Connection error: {e}")
+            self.logger.error(f"Connection error: {e}")
 
     def clear_collection(self):
         confirm = input(
@@ -48,16 +59,16 @@ class DatabaseWrapper:
         )
         if confirm.lower() == "yes":
             self.collection.delete_many({})
-            logging.info(f"Cleared the entire collection")
+            self.logger.info(f"Cleared the entire collection")
         else:
-            logging.info("Canceled the clear!")
+            self.logger.info("Canceled the clear!")
 
     def close_connection(self):
         """
         Close the connection to the MongoDB server.
         """
         self.client.close()
-        logging.info("Connection closed")
+        self.logger.info("Connection closed")
 
 
 class ArticleDatabase(DatabaseWrapper):
@@ -87,10 +98,10 @@ class ArticleDatabase(DatabaseWrapper):
                 self.collection.update_one(
                     {"_id": article["_id"]}, {"$set": existing_article}
                 )
-                logging.info(f"Updated existing article: {article['title']}")
+                self.logger.info(f"Updated existing article: {article['title']}")
             else:
                 self.collection.insert_one(article)
-                logging.info(f"Inserted new article: {article['title']}")
+                self.logger.info(f"Inserted new article: {article['title']}")
 
     def update_article(self, existing_data: Dict[str, Any], new_data: Dict[str, Any]):
         """
@@ -133,10 +144,10 @@ class CategoryDatabase(DatabaseWrapper):
                 self.collection.update_one(
                     {"_id": item["_id"]}, {"$set": existing_category}
                 )
-                logging.info(f"Updated existing category: {item['category_name']}")
+                self.logger.info(f"Updated existing category: {item['category_name']}")
             else:
                 self.collection.insert_one(item)
-                logging.info(f"Inserted new category: {item['category_name']}")
+                self.logger.info(f"Inserted new category: {item['category_name']}")
 
     def update_category(self, existing_data: Dict[str, Any], new_data: Dict[str, Any]):
         """
@@ -189,14 +200,14 @@ class FacultyDatabase(DatabaseWrapper):
                     self.collection.update_one(
                         {"name": faculty_name}, {"$set": existing_faculty}
                     )
-                    logging.info(f"Updated existing faculty: {faculty_name}")
+                    self.logger.info(f"Updated existing faculty: {faculty_name}")
                 else:
                     # Insert new faculty data
                     faculty_info["name"] = (
                         faculty_name  # Ensure the name field is present
                     )
                     self.collection.insert_one(faculty_info)
-                    logging.info(f"Inserted new faculty: {faculty_name}")
+                    self.logger.info(f"Inserted new faculty: {faculty_name}")
 
     def update_faculty(self, existing_data: Dict[str, Any], new_data: Dict[str, Any]):
         """

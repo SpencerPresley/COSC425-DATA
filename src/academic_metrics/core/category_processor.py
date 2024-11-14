@@ -11,12 +11,15 @@ if TYPE_CHECKING:
         FacultyStats,
         GlobalFacultyStats,
         CrossrefArticleStats,
+        CrossrefArticleDetails,
     )
     from academic_metrics.utils import Utilities
     from academic_metrics.utils import WarningManager
     from academic_metrics.factories import DataClassFactory
+    from academic_metrics.utils.taxonomy_util import Taxonomy
 
 from academic_metrics.enums import AttributeTypes, DataClassTypes
+from academic_metrics.constants import LOG_DIR_PATH
 
 
 class CategoryProcessor:
@@ -25,17 +28,17 @@ class CategoryProcessor:
         utils: Utilities,
         dataclass_factory: DataClassFactory,
         warning_manager: WarningManager,
+        taxonomy_util: Taxonomy,
         log_to_console: bool = True,
     ):
         # Set up logger
-        current_dir = os.path.dirname(os.path.abspath(__file__))
-        log_file_path = os.path.join(current_dir, "category_processor.log")
+        self.log_file_path = os.path.join(LOG_DIR_PATH, "category_processor.log")
         self.logger = logging.getLogger(__name__)
         self.logger.handlers = []
         self.logger.setLevel(logging.DEBUG)
 
         if not self.logger.handlers:
-            handler = logging.FileHandler(log_file_path)
+            handler = logging.FileHandler(self.log_file_path)
             formatter = logging.Formatter(
                 "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
             )
@@ -49,25 +52,60 @@ class CategoryProcessor:
         self.utils: Utilities = utils
         self.warning_manager: WarningManager = warning_manager
         self.dataclass_factory: DataClassFactory = dataclass_factory
+        self.taxonomy_util: Taxonomy = taxonomy_util
         self.category_data: dict[str, CategoryInfo] = {}
 
         # influential stats dictionaries
         self.faculty_stats: dict[str, FacultyStats] = {}
         self.global_faculty_stats: dict[str, GlobalFacultyStats] = {}
-        self.article_stats: dict[str, CrossrefArticleStats] = {}
-        self.article_stats_obj = self.dataclass_factory.get_dataclass(
-            DataClassTypes.CROSSREF_ARTICLE_STATS
-        )
+
+        # Seperately tracks article stats for each category the article is in
+        # This gives the article stats for each article under a given category
+        self.category_article_stats: dict[str, CrossrefArticleStats] = {}
+
+        # This creates a CrossrefArticleDetails object for each article
+        # This gives an object per article so that we can have ground truth articles
+        # This is what allows for category stats to just have a list of DOIs as those can
+        # be used to look up the article details object for that doi from this list of CrossrefArticleDetails
+        # objects.
+        self.articles: List[CrossrefArticleDetails] = []
 
     def process_data_list(self, data: list[dict]) -> None:
         for item in data:
             # Get base attributes
             raw_attributes = self.call_get_attributes(data=item)
+            print(f"\n\nRAW ATTRIBUTES:\n{raw_attributes}\n\n")
 
             # Get category information
             category_levels = self.initialize_categories(
                 raw_attributes.get("categories", [])
             )
+
+            # Fetch out seperate category levels
+            top_categories = category_levels.get("top_level_categories", [])
+            mid_categories = category_levels.get("mid_level_categories", [])
+            low_categories = category_levels.get("low_level_categories", [])
+            all_categories = category_levels.get("all_categories", [])
+
+            # Create URL maps for each category level
+            top_level_url_map = {}
+            mid_level_url_map = {}
+            low_level_url_map = {}
+
+            for category in all_categories:
+                if category in low_categories:
+                    mid_cat = self.taxonomy_util.get_mid_cat_for_low_cat(category)
+                    top_cat = self.taxonomy_util.get_top_cat_for_mid_cat(mid_cat)
+                    low_level_url_map[category] = self._generate_url(
+                        f"{top_cat}/{mid_cat}/{category}"
+                    )
+                elif category in mid_categories:
+                    top_cat = self.taxonomy_util.get_top_cat_for_mid_cat(category)
+                    mid_level_url_map[category] = self._generate_url(
+                        f"{top_cat}/{category}"
+                    )
+                else:
+                    top_level_url_map[category] = self._generate_url(category)
 
             # Clean special fields
             faculty_members = self.clean_faculty_members(
@@ -102,13 +140,18 @@ class CategoryProcessor:
                 "top_level_categories": category_levels.get("top_level_categories", []),
                 "mid_level_categories": category_levels.get("mid_level_categories", []),
                 "low_level_categories": category_levels.get("low_level_categories", []),
+                "url_maps": {
+                    "top": top_level_url_map,
+                    "mid": mid_level_url_map,
+                    "low": low_level_url_map,
+                },
             }
 
             self.update_category_stats(**kwargs)
             self.update_faculty_stats(**kwargs)
             self.update_global_faculty_stats(**kwargs)
-            self.update_article_stats(**kwargs)
-            self.update_article_stats_obj(**kwargs)
+            self.update_category_article_stats(**kwargs)
+            self.create_article_object(**kwargs)
 
     def call_get_attributes(self, *, data):
         attribute_results = self.utils.get_attributes(
@@ -213,11 +256,16 @@ class CategoryProcessor:
 
     def update_category_stats(self, **kwargs):
         for category in kwargs["all_categories"]:
+            url = (
+                kwargs["url_maps"]["low"].get(category, "")
+                or kwargs["url_maps"]["mid"].get(category, "")
+                or kwargs["url_maps"]["top"].get(category, "")
+            )
             category_info = self.category_data[category]
             category_info.set_params(
                 {
-                    "_id": self._generate_url(category),
-                    "url": self._generate_url(category),
+                    "_id": url,
+                    "url": url,
                     "faculty": kwargs["faculty_members"],
                     "departments": kwargs["all_affiliations"],
                     "titles": kwargs["title"],
@@ -243,12 +291,18 @@ class CategoryProcessor:
                     DataClassTypes.FACULTY_STATS,
                 )
 
+            url = (
+                kwargs["url_maps"]["low"].get(category, "")
+                or kwargs["url_maps"]["mid"].get(category, "")
+                or kwargs["url_maps"]["top"].get(category, "")
+            )
+
             for faculty_member in kwargs["faculty_members"]:
                 faculty_data = {
                     "_id": self._generate_normal_id(strings=[faculty_member, category]),
                     "name": faculty_member,
                     "category": category,
-                    "category_url": self._generate_url(category),
+                    "category_url": url,
                     "department_affiliations": kwargs["faculty_affiliations"].get(
                         faculty_member, []
                     ),
@@ -270,6 +324,28 @@ class CategoryProcessor:
                     )
                 )
 
+            # Get all URLs from maps
+            # This logic even confused me so here's a not of why they get everything
+            # This is global faculty stats, so the goal is after processing all papers
+            # We can see the faculty members stats across papers without having to sum up all the individual records provided by the standard faculty stats which only look an individual category stat totals
+
+            top_cat_urls = [
+                kwargs["url_maps"]["top"].get(cat)
+                for cat in kwargs["top_level_categories"]
+                if kwargs["url_maps"]["top"].get(cat)
+            ]
+            mid_cat_urls = [
+                kwargs["url_maps"]["mid"].get(cat)
+                for cat in kwargs["mid_level_categories"]
+                if kwargs["url_maps"]["mid"].get(cat)
+            ]
+            low_cat_urls = [
+                kwargs["url_maps"]["low"].get(cat)
+                for cat in kwargs["low_level_categories"]
+                if kwargs["url_maps"]["low"].get(cat)
+            ]
+            all_cat_urls = top_cat_urls + mid_cat_urls + low_cat_urls
+
             global_stats = self.global_faculty_stats[faculty_member]
             global_stats.set_params(
                 {
@@ -283,26 +359,35 @@ class CategoryProcessor:
                     "dois": kwargs["doi"],
                     "titles": kwargs["title"],
                     "categories": kwargs["all_categories"],
-                    "category_urls": [
-                        self._generate_url(category)
-                        for category in kwargs["all_categories"]
-                    ],
+                    "category_urls": all_cat_urls,
                     "top_level_categories": kwargs["top_level_categories"],
                     "mid_level_categories": kwargs["mid_level_categories"],
                     "low_level_categories": kwargs["low_level_categories"],
+                    "top_category_urls": top_cat_urls,
+                    "mid_category_urls": mid_cat_urls,
+                    "low_category_urls": low_cat_urls,
                     "themes": kwargs["themes"],
                     "journals": kwargs["journal"],
                     "citation_map": {kwargs["doi"]: kwargs["tc_count"]},
                 }
             )
 
-    def update_article_stats(self, **kwargs):
+    def update_category_article_stats(self, **kwargs):
         for category in kwargs["all_categories"]:
-            if category not in self.article_stats:
-                self.article_stats[category] = self.dataclass_factory.get_dataclass(
-                    DataClassTypes.CROSSREF_ARTICLE_STATS
+            if category not in self.category_article_stats:
+                self.category_article_stats[category] = (
+                    self.dataclass_factory.get_dataclass(
+                        DataClassTypes.CROSSREF_ARTICLE_STATS
+                    )
                 )
 
+            url = (
+                kwargs["url_maps"]["low"].get(category)
+                or kwargs["url_maps"]["mid"].get(category)
+                or kwargs["url_maps"]["top"].get(category)
+            )
+
+            # Base article data
             article_data = {
                 "_id": kwargs["doi"],
                 "title": kwargs["title"],
@@ -317,45 +402,117 @@ class CategoryProcessor:
                 "download_url": kwargs["download_url"],
                 "doi": kwargs["doi"],
                 "themes": kwargs["themes"],
-                "categories": kwargs["all_categories"],
-                "category_urls": [
-                    self._generate_url(category)
-                    for category in kwargs["all_categories"]
-                ],
-                "top_level_categories": kwargs["top_level_categories"],
-                "mid_level_categories": kwargs["mid_level_categories"],
-                "low_level_categories": kwargs["low_level_categories"],
+                "categories": category,
+                "category_urls": url,
                 "url": self._generate_url(kwargs["doi"]),
             }
 
-            self.article_stats[category].set_params({kwargs["doi"]: article_data})
+            # Add category and URL to appropriate level
+            if category in kwargs["low_level_categories"]:
+                article_data["low_level_categories"] = category
+                article_data["low_category_urls"] = url
+            elif category in kwargs["mid_level_categories"]:
+                article_data["mid_level_categories"] = category
+                article_data["mid_category_urls"] = url
+            else:
+                article_data["top_level_categories"] = category
+                article_data["top_category_urls"] = url
 
-    def update_article_stats_obj(self, **kwargs):
-        article_data = {
-            "_id": kwargs["doi"],
-            "title": kwargs["title"],
-            "tc_count": kwargs["tc_count"],
-            "faculty_members": kwargs["faculty_members"],
-            "faculty_affiliations": kwargs["faculty_affiliations"],
-            "abstract": kwargs["abstract"],
-            "license_url": kwargs["license_url"],
-            "date_published_print": kwargs["date_published_print"],
-            "date_published_online": kwargs["date_published_online"],
-            "journal": kwargs["journal"],
-            "download_url": kwargs["download_url"],
-            "doi": kwargs["doi"],
-            "themes": kwargs["themes"],
-            "categories": kwargs["all_categories"],
-            "category_urls": [
-                self._generate_url(cat) for cat in kwargs["all_categories"]
-            ],
-            "top_level_categories": kwargs["top_level_categories"],
-            "mid_level_categories": kwargs["mid_level_categories"],
-            "low_level_categories": kwargs["low_level_categories"],
-            "url": self._generate_url(kwargs["doi"]),
-        }
+            self.category_article_stats[category].set_params(
+                {kwargs["doi"]: article_data}
+            )
 
-        self.article_stats_obj.set_params({kwargs["doi"]: article_data})
+    def create_article_object(self, **kwargs):
+        # Create the article
+        article = self.dataclass_factory.get_dataclass(
+            DataClassTypes.CROSSREF_ARTICLE_DETAILS
+        )
+
+        # Generate URLs for all categories
+        # Initialize empty lists for top, mid, low category URLs
+        # We don't need lists for the categories themselves as they're already in **kwargs
+        top_cat_urls = []
+        mid_cat_urls = []
+        low_cat_urls = []
+
+        # Parse through the categories and check if the level of the current category
+        # This is to:
+        # 1. Track top, mid, low category names
+        # 2. Generate the URLs for each top, mid, low category
+        # This allows for displaying what categories the articles what classified under
+        # and under which level, as well as directly link to those pages on the frontend
+        for category in kwargs["all_categories"]:
+            if category in kwargs["low_level_categories"]:
+                # Get the mid category for the low category
+                mid_cat = self.taxonomy_util.get_mid_cat_for_low_cat(category)
+                # Get the top category for the mid category
+                top_cat = self.taxonomy_util.get_top_cat_for_mid_cat(mid_cat)
+                # Generate the URL for the low category
+                # If the low category is software development
+                # and the mid category is software engineering
+                # and the top category is computer science
+                # the URL will be Computer%20science/software%20engineering/software%20development
+                low_cat_urls.append(
+                    self._generate_url(f"{top_cat}/{mid_cat}/{category}")
+                )
+            elif category in kwargs["mid_level_categories"]:
+                # Get the top category for the mid category
+                top_cat = self.taxonomy_util.get_top_cat_for_mid_cat(category)
+                # Generate the URL for the mid category
+                # If the mid category is software engineering
+                # and the top category is computer science
+                # the URL will be Computer%20science/software%20engineering
+                mid_cat_urls.append(self._generate_url(f"{top_cat}/{category}"))
+            else:
+                # Generate the URL for the top category
+                # If the top category is computer science
+                # the URL will be Computer%20science
+                top_cat_urls.append(self._generate_url(category))
+
+        # Combine all the URLs to get a compendium of all the URLs
+        # This doesn't have a defined use yet, but it seems like it has the potential
+        # to be a valuable piece of data for something so tracking it now so I don't
+        # have to add it later and rerun all the articles ran up to that point
+        # in the event we end up wanting/needing it for something
+        all_cat_urls = top_cat_urls + mid_cat_urls + low_cat_urls
+
+        # Direct field updates for CrossrefArticleDetails
+        # .set_params() is used to update the dataclass fields for this article object
+        article.set_params(
+            {
+                # Set _id to the doi to allow for easy lookup from the categories
+                # As mentioned before each category has a list of dois
+                # So through the use of that list we can look up in the DB each one of these article objects
+                "_id": kwargs["doi"],
+                "title": kwargs["title"],
+                "tc_count": kwargs["tc_count"],
+                "faculty_members": kwargs["faculty_members"],
+                "faculty_affiliations": kwargs["faculty_affiliations"],
+                "abstract": kwargs["abstract"],
+                "license_url": kwargs["license_url"],
+                "date_published_print": kwargs["date_published_print"],
+                "date_published_online": kwargs["date_published_online"],
+                "journal": kwargs["journal"],
+                "download_url": kwargs["download_url"],
+                "doi": kwargs["doi"],
+                "themes": kwargs["themes"],
+                "categories": kwargs["all_categories"],
+                "category_urls": all_cat_urls,
+                # Pull out and add lists for the category levels
+                "top_level_categories": kwargs["top_level_categories"],
+                "mid_level_categories": kwargs["mid_level_categories"],
+                "low_level_categories": kwargs["low_level_categories"],
+                # Add in the URLs fetched and created at the top of this method
+                "top_category_urls": top_cat_urls,
+                "mid_category_urls": mid_cat_urls,
+                "low_category_urls": low_cat_urls,
+                # Actual page URL for this article is quote(doi)
+                "url": self._generate_url(kwargs["doi"]),
+            }
+        )
+
+        # Append the created article object to the articles list
+        self.articles.append(article)
 
     def clean_faculty_affiliations(self, faculty_affiliations):
         department_affiliations: dict[str, str] = {}
@@ -393,8 +550,23 @@ class CategoryProcessor:
             "all_categories": list(self.category_data.keys()),
         }
 
+    # Set of public Getter methods to access the data
+    def get_category_data(self):
+        return self.category_data
+
+    def get_category_article_stats(self):
+        return self.category_article_stats
+
+    def get_articles(self):
+        return self.articles
+
     def get_faculty_stats(self):
         return self.faculty_stats
+
+    def get_global_faculty_stats(self):
+        return self.global_faculty_stats
+
+    # End of public Getter methods
 
     @staticmethod
     def _collect_all_affiliations(faculty_affiliations):

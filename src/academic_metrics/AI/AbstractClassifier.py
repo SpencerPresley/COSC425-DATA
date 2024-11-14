@@ -1,10 +1,11 @@
 from __future__ import annotations
 
+import traceback
 import json
 import logging
 import os
 from collections import defaultdict
-from typing import Any, Dict, List, Tuple, TYPE_CHECKING, Union, cast, Optional
+from typing import Any, Dict, List, Tuple, TYPE_CHECKING, Union, cast
 
 from dotenv import load_dotenv
 
@@ -40,6 +41,7 @@ from academic_metrics.ai_prompts.theme_prompts import (
     THEME_RECOGNITION_JSON_FORMAT,
     THEME_RECOGNITION_SYSTEM_MESSAGE,
 )
+from academic_metrics.constants import LOG_DIR_PATH
 
 if TYPE_CHECKING:
     from academic_metrics.utils.taxonomy_util import Taxonomy
@@ -158,8 +160,7 @@ class AbstractClassifier:
     ):
 
         # Set up logger
-        current_dir = os.path.dirname(os.path.abspath(__file__))
-        log_file_path = os.path.join(current_dir, "abstract_classifier.log")
+        log_file_path = os.path.join(LOG_DIR_PATH, "abstract_classifier.log")
         self.logger = logging.getLogger(__name__)
         self.logger.setLevel(logging.DEBUG)
         self.logger.handlers = []
@@ -265,13 +266,21 @@ class AbstractClassifier:
             >>> classifier._run_initial_api_key_validation(None)  # raises TypeError
         """
         if not api_key:
-            raise TypeError("API key is required")
+            raise ValueError(
+                "API key is required"
+                f"Received type: {type(api_key)}, "
+                f"Value: {'<empty>' if not api_key else 'Value present but may not be a string'}"
+                f"Error: {str(e)}"
+            ) from e
 
         try:
             api_key = cast(str, str(api_key))
         except Exception as e:
-            raise TypeError(
-                "API key must be a string or be convertible to a string"
+            raise ValueError(
+                f"API key must be a string or be convertible to a string. "
+                f"Received type: {type(api_key)}, "
+                f"Value: {'<empty>' if not api_key else '<redacted>'}, "
+                f"Error: {str(e)}"
             ) from e
 
     def _initialize_chain_manager(self) -> ChainManager:
@@ -476,7 +485,7 @@ class AbstractClassifier:
         level: str = "top",
         parent_category=None,
         current_dict=None,  # parameter to track current position in defaultdict
-    ) -> Dict[str, Any]:
+    ) -> None:
         """Recursively classifies an abstract through the taxonomy hierarchy.
 
         Processes an abstract through the classification chain, starting at the top level
@@ -493,13 +502,6 @@ class AbstractClassifier:
                 - Other chain-specific variables (formats, examples, etc.), see classify() method.
             level: Current taxonomy level being processed ("top", "mid", or "low")
             parent_category: The parent category from the previous level (None for top level)
-
-        Returns:
-            Dict[str, Any]: Nested dictionary of classification results where:
-                - Keys are category names
-                - Values are either:
-                    - Nested dictionaries (for top/mid categories)
-                    - List of strings (for low categories)
         """
         self.logger.info(f"Classifying abstract at {level} level")
 
@@ -579,11 +581,15 @@ class AbstractClassifier:
                         current_dict=next_dict,
                     )
 
-            return result
-
         except Exception as e:
-            self.logger.error(f"Error during classification: {e}")
-            return {}
+            self.logger.error(
+                f"Error during classification at {level} level:\n"
+                f"DOI: {doi}\n"
+                f"Current category: {category if 'category' in locals() else 'N/A'}\n"
+                f"Parent category: {parent_category}\n"
+                f"Exception: {str(e)}\n"
+                f"Traceback: {traceback.format_exc()}"
+            )
 
     def extract_classified_categories(
         self, classification_output: ClassificationOutput

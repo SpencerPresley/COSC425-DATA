@@ -26,6 +26,7 @@ from academic_metrics.constants import (
     INPUT_FILES_DIR_PATH,
     SPLIT_FILES_DIR_PATH,
     OUTPUT_FILES_DIR_PATH,
+    LOG_DIR_PATH,
 )
 
 
@@ -52,21 +53,28 @@ class PipelineRunner:
         data_to_year: int,
     ):
         # Set up pipeline-wide logger
-        current_dir = os.path.dirname(os.path.abspath(__file__))
-        log_file_path = os.path.join(current_dir, "pipeline.log")
+        self.log_file_path = os.path.join(LOG_DIR_PATH, "pipeline.log")
         self.logger = logging.getLogger(__name__)
         self.logger.setLevel(logging.DEBUG)
 
         self.logger.handlers = []
         if not self.logger.handlers:
             # Create file handler
-            handler = logging.FileHandler(log_file_path)
+            handler = logging.FileHandler(self.log_file_path)
             handler.setLevel(logging.ERROR)
             formatter = logging.Formatter(
                 "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
             )
             handler.setFormatter(formatter)
             self.logger.addHandler(handler)
+
+            console_handler = logging.StreamHandler()
+            console_handler.setLevel(logging.DEBUG)
+            console_formatter = logging.Formatter(
+                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            )
+            console_handler.setFormatter(console_formatter)
+            self.logger.addHandler(console_handler)
 
         self.logger.info("Initializing PipelineRunner")
 
@@ -103,9 +111,14 @@ class PipelineRunner:
             # save_to_db = True
             data = self.crossref_wrapper.run_all_process()
 
-        data = data[:2]
+        self.logger.info(f"\n\nDATA: {data}\n\n")
+        self.logger.info("=" * 80)
+        data = data[:3]
+        self.logger.info(f"\n\nSLICED DATA:\n{data}\n\n")
+        self.logger.info("=" * 80)
         # Run classification on all data
         # comment out to run without AI for testing
+        self.logger.info(f"\n\nRUNNING CLASSIFICATION\n\n")
         data = self.classification_orchestrator.run_classification(data)
 
         # Process classified data and generate category statistics
@@ -221,6 +234,7 @@ class PipelineRunner:
             utils=self.utilities,
             dataclass_factory=self.dataclass_factory,
             warning_manager=self.warning_manager,
+            taxonomy_util=self.taxonomy,
         )
 
     def _create_faculty_postprocessor(self) -> FacultyPostprocessor:

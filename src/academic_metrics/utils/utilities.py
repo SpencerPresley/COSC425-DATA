@@ -5,6 +5,8 @@ import json
 from typing import TYPE_CHECKING, List, Optional
 import logging
 
+from academic_metrics.constants import LOG_DIR_PATH
+
 if TYPE_CHECKING:
     from academic_metrics.enums import AttributeTypes
     from academic_metrics.strategies import StrategyFactory
@@ -44,8 +46,7 @@ class Utilities:
             warning_manager (WarningManager): An instance of the WarningManager class.
         """
         # Set up logger
-        current_dir = os.path.dirname(os.path.abspath(__file__))
-        log_file_path = os.path.join(current_dir, "utilities.log")
+        self.log_file_path = os.path.join(LOG_DIR_PATH, "utilities.log")
         self.logger = logging.getLogger(__name__)
         self.logger.setLevel(logging.DEBUG)
 
@@ -53,7 +54,7 @@ class Utilities:
 
         # Add handler if none exists
         if not self.logger.handlers:
-            handler = logging.FileHandler(log_file_path)
+            handler = logging.FileHandler(self.log_file_path)
             handler.setLevel(logging.DEBUG)
             formatter = logging.Formatter(
                 "%(asctime)s - %(name)s - %(levelname)s - %(message)s"

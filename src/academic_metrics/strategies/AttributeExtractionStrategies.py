@@ -1,5 +1,6 @@
+import os
+import logging
 import re
-import warnings
 from html import unescape
 from bs4 import BeautifulSoup
 import json
@@ -9,6 +10,7 @@ import uuid
 from academic_metrics.utils import configure_logger, WarningManager
 from .strategy_factory import StrategyFactory
 from academic_metrics.enums import AttributeTypes
+from academic_metrics.constants import LOG_DIR_PATH
 
 
 class AttributeExtractionStrategy(ABC):
@@ -91,10 +93,21 @@ class AttributeExtractionStrategy(ABC):
             It ensures that each strategy has access to logging, warning management, and file storage
             for handling edge cases and errors in the extraction process.
         """
-        self.logger = configure_logger(
-            name=self.__class__.__name__,
-            log_file_name="attribute_extraction_strategies.log",
+        self.log_file_path = os.path.join(
+            LOG_DIR_PATH, "attribute_extraction_strategies.log"
         )
+        self.logger = logging.getLogger(__name__)
+        self.logger.setLevel(logging.DEBUG)
+        self.logger.handlers = []
+        if not self.logger.handlers:
+            handler = logging.FileHandler(self.log_file_path)
+            handler.setLevel(logging.DEBUG)
+            formatter = logging.Formatter(
+                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            )
+            handler.setFormatter(formatter)
+            self.logger.addHandler(handler)
+
         self.abstract_pattern = re.compile(r"AB\s(.+?)(?=\nC1)", re.DOTALL)
         self.missing_abstracts_file = missing_abstracts_file
         self.warning_manager = warning_manager
@@ -659,6 +672,17 @@ class AuthorExtractionStrategy(AttributeExtractionStrategy):
             Prepares the strategy instance for author extraction from WoS data.
         """
         super().__init__(warning_manager=warning_manager)
+        self.log_file_path = LOG_DIR_PATH / "author_extraction_strategy.log"
+        self.logger = logging.getLogger(__name__)
+        self.logger.setLevel(logging.DEBUG)
+        self.logger.handlers = []
+        if not self.logger.handlers:
+            handler = logging.FileHandler(self.log_file_path)
+            formatter = logging.Formatter(
+                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            )
+            handler.setFormatter(formatter)
+            self.logger.addHandler(handler)
         self.author_pattern: re.Pattern = re.compile(r"AF\s(.+?)(?=\nTI)", re.DOTALL)
 
     def extract_attribute(self, entry_text: str) -> tuple[bool, list[str]]:
@@ -706,6 +730,17 @@ class AuthorExtractionStrategy(AttributeExtractionStrategy):
 class DepartmentExtractionStrategy(AttributeExtractionStrategy):
     def __init__(self, warning_manager: WarningManager):
         super().__init__(warning_manager=warning_manager)
+        self.log_file_path = LOG_DIR_PATH / "department_extraction_strategy.log"
+        self.logger = logging.getLogger(__name__)
+        self.logger.setLevel(logging.DEBUG)
+        self.logger.handlers = []
+        if not self.logger.handlers:
+            handler = logging.FileHandler(self.log_file_path)
+            formatter = logging.Formatter(
+                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            )
+            handler.setFormatter(formatter)
+            self.logger.addHandler(handler)
         self.dept_pattern: re.Pattern = re.compile(r"Dept (.*?)(,|$)")
         self.dept_pattern_alt: re.Pattern = re.compile(r"Dept, (.*?) ,")
 
@@ -768,6 +803,17 @@ class WosCategoryExtractionStrategy(AttributeExtractionStrategy):
             Prepares the strategy instance for department extraction from WoS data.
         """
         super().__init__(warning_manager=warning_manager)
+        self.log_file_path = LOG_DIR_PATH / "wos_category_extraction_strategy.log"
+        self.logger = logging.getLogger(__name__)
+        self.logger.setLevel(logging.DEBUG)
+        self.logger.handlers = []
+        if not self.logger.handlers:
+            handler = logging.FileHandler(self.log_file_path)
+            formatter = logging.Formatter(
+                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            )
+            handler.setFormatter(formatter)
+            self.logger.addHandler(handler)
         self.wc_pattern: re.Pattern = re.compile(r"WC\s+(.+?)(?=\nWE)", re.DOTALL)
 
     def extract_attribute(self, entry_text: str) -> tuple[bool, list[str]]:
@@ -868,6 +914,16 @@ class TitleExtractionStrategy(AttributeExtractionStrategy):
             Prepares the strategy instance for title extraction from WoS data.
         """
         super().__init__(warning_manager=warning_manager)
+        self.log_file_path = LOG_DIR_PATH / "title_extraction_strategy.log"
+        self.logger = logging.getLogger(__name__)
+        self.logger.setLevel(logging.DEBUG)
+        self.logger.handlers = []
+        if not self.logger.handlers:
+            handler = logging.FileHandler(self.log_file_path)
+            formatter = logging.Formatter(
+                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            )
+            self.logger.addHandler(handler)
         self.title_pattern: re.Pattern = re.compile(r"TI\s(.+?)(?=\nSO)", re.DOTALL)
 
     def extract_attribute(self, entry_text: str) -> tuple[bool, str]:
@@ -960,6 +1016,16 @@ class AbstractExtractionStrategy(AttributeExtractionStrategy):
             Prepares the strategy instance for abstract extraction from WoS data.
         """
         super().__init__(warning_manager=warning_manager)
+        self.log_file_path = LOG_DIR_PATH / "abstract_extraction_strategy.log"
+        self.logger = logging.getLogger(__name__)
+        self.logger.setLevel(logging.DEBUG)
+        self.logger.handlers = []
+        if not self.logger.handlers:
+            handler = logging.FileHandler(self.log_file_path)
+            formatter = logging.Formatter(
+                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            )
+            self.logger.addHandler(handler)
         self.abstract_pattern: re.Pattern = re.compile(r"AB\s(.+?)(?=\nC1)", re.DOTALL)
 
     def extract_attribute(self, entry_text: str) -> tuple[bool, str]:
@@ -1040,6 +1106,16 @@ class EndRecordExtractionStrategy(AttributeExtractionStrategy):
             Prepares the strategy instance for end record extraction from WoS data.
         """
         super().__init__(warning_manager=warning_manager)
+        self.log_file_path = LOG_DIR_PATH / "end_record_extraction_strategy.log"
+        self.logger = logging.getLogger(__name__)
+        self.logger.setLevel(logging.DEBUG)
+        self.logger.handlers = []
+        if not self.logger.handlers:
+            handler = logging.FileHandler(self.log_file_path)
+            formatter = logging.Formatter(
+                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            )
+            self.logger.addHandler(handler)
         self.end_record_pattern = re.compile(r"DA \d{4}-\d{2}-\d{2}\nER\n?", re.DOTALL)
 
     def extract_attribute(self, entry_text: str) -> tuple[bool, str]:
@@ -1123,6 +1199,16 @@ class CrossrefTitleExtractionStrategy(AttributeExtractionStrategy):
             Prepares the strategy instance for title extraction from Crossref data.
         """
         super().__init__(warning_manager=warning_manager)
+        self.log_file_path = LOG_DIR_PATH / "crossref_title_extraction_strategy.log"
+        self.logger = logging.getLogger(__name__)
+        self.logger.setLevel(logging.DEBUG)
+        self.logger.handlers = []
+        if not self.logger.handlers:
+            handler = logging.FileHandler(self.log_file_path)
+            formatter = logging.Formatter(
+                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            )
+            self.logger.addHandler(handler)
         self.title_key: str = "title"
 
     def clean_title(self, title: str) -> str:
@@ -1231,6 +1317,16 @@ class CrossrefAbstractExtractionStrategy(AttributeExtractionStrategy):
             Prepares the strategy instance for abstract extraction from Crossref data.
         """
         super().__init__(warning_manager=warning_manager)
+        self.log_file_path = LOG_DIR_PATH / "crossref_abstract_extraction_strategy.log"
+        self.logger = logging.getLogger(__name__)
+        self.logger.setLevel(logging.DEBUG)
+        self.logger.handlers = []
+        if not self.logger.handlers:
+            handler = logging.FileHandler(self.log_file_path)
+            formatter = logging.Formatter(
+                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            )
+            self.logger.addHandler(handler)
         self.abstract_key: str = "abstract"
 
     def clean_abstract(self, abstract: str) -> str:
@@ -1336,6 +1432,16 @@ class CrossrefAuthorExtractionStrategy(AttributeExtractionStrategy):
             Prepares the strategy instance for author extraction from Crossref data.
         """
         super().__init__(warning_manager=warning_manager)
+        self.log_file_path = LOG_DIR_PATH / "crossref_author_extraction_strategy.log"
+        self.logger = logging.getLogger(__name__)
+        self.logger.setLevel(logging.DEBUG)
+        self.logger.handlers = []
+        if not self.logger.handlers:
+            handler = logging.FileHandler(self.log_file_path)
+            formatter = logging.Formatter(
+                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            )
+            self.logger.addHandler(handler)
         self.unknown_authors: dict = self.create_unknown_authors_dict()
         self.missing_authors_file: str = "unknown_authors.json"
 
@@ -1445,6 +1551,18 @@ class CrossrefDepartmentExtractionStrategy(AttributeExtractionStrategy):
             Prepares the strategy instance for department extraction from Crossref data.
         """
         super().__init__(warning_manager=warning_manager)
+        self.log_file_path = (
+            LOG_DIR_PATH / "crossref_department_extraction_strategy.log"
+        )
+        self.logger = logging.getLogger(__name__)
+        self.logger.setLevel(logging.DEBUG)
+        self.logger.handlers = []
+        if not self.logger.handlers:
+            handler = logging.FileHandler(self.log_file_path)
+            formatter = logging.Formatter(
+                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            )
+            self.logger.addHandler(handler)
 
     def extract_attribute(self, crossref_json: dict) -> tuple[bool, list[str]]:
         """
@@ -1543,6 +1661,18 @@ class CrossrefCategoriesExtractionStrategy(AttributeExtractionStrategy):
             Prepares the strategy instance for category extraction from Crossref data.
         """
         super().__init__(warning_manager=warning_manager)
+        self.log_file_path = (
+            LOG_DIR_PATH / "crossref_categories_extraction_strategy.log"
+        )
+        self.logger = logging.getLogger(__name__)
+        self.logger.setLevel(logging.DEBUG)
+        self.logger.handlers = []
+        if not self.logger.handlers:
+            handler = logging.FileHandler(self.log_file_path)
+            formatter = logging.Formatter(
+                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            )
+            self.logger.addHandler(handler)
 
     def extract_attribute(self, crossref_json: dict) -> tuple[bool, list[str]]:
         """
@@ -1618,6 +1748,18 @@ class CrossrefCitationCountExtractionStrategy(AttributeExtractionStrategy):
             Prepares the strategy instance for citation count extraction from Crossref data.
         """
         super().__init__(warning_manager=warning_manager)
+        self.log_file_path = (
+            LOG_DIR_PATH / "crossref_citation_count_extraction_strategy.log"
+        )
+        self.logger = logging.getLogger(__name__)
+        self.logger.setLevel(logging.DEBUG)
+        self.logger.handlers = []
+        if not self.logger.handlers:
+            handler = logging.FileHandler(self.log_file_path)
+            formatter = logging.Formatter(
+                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            )
+            self.logger.addHandler(handler)
 
     def extract_attribute(self, crossref_json: dict) -> tuple[bool, int]:
         """
@@ -1647,6 +1789,21 @@ class CrossrefCitationCountExtractionStrategy(AttributeExtractionStrategy):
 
 @StrategyFactory.register_strategy(AttributeTypes.CROSSREF_LICENSE_URL)
 class CrossrefLicenseURLExtractionStrategy(AttributeExtractionStrategy):
+    def __init__(self, warning_manager: WarningManager):
+        super().__init__(warning_manager=warning_manager)
+        self.log_file_path = (
+            LOG_DIR_PATH / "crossref_license_url_extraction_strategy.log"
+        )
+        self.logger = logging.getLogger(__name__)
+        self.logger.setLevel(logging.DEBUG)
+        self.logger.handlers = []
+        if not self.logger.handlers:
+            handler = logging.FileHandler(self.log_file_path)
+            formatter = logging.Formatter(
+                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            )
+            self.logger.addHandler(handler)
+
     def extract_attribute(self, entry_text: dict) -> tuple[bool, str]:
         license_info = entry_text.get("license", [])
         if license_info and isinstance(license_info, list):
@@ -1663,6 +1820,21 @@ class CrossrefLicenseURLExtractionStrategy(AttributeExtractionStrategy):
 
 @StrategyFactory.register_strategy(AttributeTypes.CROSSREF_PUBLISHED_PRINT)
 class CrossrefPublishedPrintExtractionStrategy(AttributeExtractionStrategy):
+    def __init__(self, warning_manager: WarningManager):
+        super().__init__(warning_manager=warning_manager)
+        self.log_file_path = (
+            LOG_DIR_PATH / "crossref_published_print_extraction_strategy.log"
+        )
+        self.logger = logging.getLogger(__name__)
+        self.logger.setLevel(logging.DEBUG)
+        self.logger.handlers = []
+        if not self.logger.handlers:
+            handler = logging.FileHandler(self.log_file_path)
+            formatter = logging.Formatter(
+                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            )
+            self.logger.addHandler(handler)
+
     def extract_attribute(self, entry_text: dict) -> tuple[bool, str]:
         published_print = entry_text.get("published-print", {}).get("date-parts", [[]])[
             0
@@ -1680,6 +1852,21 @@ class CrossrefPublishedPrintExtractionStrategy(AttributeExtractionStrategy):
 
 @StrategyFactory.register_strategy(AttributeTypes.CROSSREF_CREATED_DATE)
 class CrossrefCreatedDateExtractionStrategy(AttributeExtractionStrategy):
+    def __init__(self, warning_manager: WarningManager):
+        super().__init__(warning_manager=warning_manager)
+        self.log_file_path = (
+            LOG_DIR_PATH / "crossref_created_date_extraction_strategy.log"
+        )
+        self.logger = logging.getLogger(__name__)
+        self.logger.setLevel(logging.DEBUG)
+        self.logger.handlers = []
+        if not self.logger.handlers:
+            handler = logging.FileHandler(self.log_file_path)
+            formatter = logging.Formatter(
+                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            )
+            self.logger.addHandler(handler)
+
     def extract_attribute(self, entry_text: dict) -> tuple[bool, str]:
         created = entry_text.get("created", {}).get("date-time")
         if created:
@@ -1694,6 +1881,21 @@ class CrossrefCreatedDateExtractionStrategy(AttributeExtractionStrategy):
 
 @StrategyFactory.register_strategy(AttributeTypes.CROSSREF_PUBLISHED_ONLINE)
 class CrossrefPublishedOnlineExtractionStrategy(AttributeExtractionStrategy):
+    def __init__(self, warning_manager: WarningManager):
+        super().__init__(warning_manager=warning_manager)
+        self.log_file_path = (
+            LOG_DIR_PATH / "crossref_published_online_extraction_strategy.log"
+        )
+        self.logger = logging.getLogger(__name__)
+        self.logger.setLevel(logging.DEBUG)
+        self.logger.handlers = []
+        if not self.logger.handlers:
+            handler = logging.FileHandler(self.log_file_path)
+            formatter = logging.Formatter(
+                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            )
+            self.logger.addHandler(handler)
+
     def extract_attribute(self, entry_text: dict) -> tuple[bool, str]:
         published_online = entry_text.get("published-online", {}).get(
             "date-parts", [[]]
@@ -1711,6 +1913,19 @@ class CrossrefPublishedOnlineExtractionStrategy(AttributeExtractionStrategy):
 
 @StrategyFactory.register_strategy(AttributeTypes.CROSSREF_JOURNAL)
 class CrossrefJournalExtractionStrategy(AttributeExtractionStrategy):
+    def __init__(self, warning_manager: WarningManager):
+        super().__init__(warning_manager=warning_manager)
+        self.log_file_path = LOG_DIR_PATH / "crossref_journal_extraction_strategy.log"
+        self.logger = logging.getLogger(__name__)
+        self.logger.setLevel(logging.DEBUG)
+        self.logger.handlers = []
+        if not self.logger.handlers:
+            handler = logging.FileHandler(self.log_file_path)
+            formatter = logging.Formatter(
+                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            )
+            self.logger.addHandler(handler)
+
     def extract_attribute(self, entry_text: dict) -> tuple[bool, str]:
         journal = entry_text.get("container-title", [])
         if journal and isinstance(journal, list):
@@ -1725,6 +1940,19 @@ class CrossrefJournalExtractionStrategy(AttributeExtractionStrategy):
 
 @StrategyFactory.register_strategy(AttributeTypes.CROSSREF_URL)
 class CrossrefURLExtractionStrategy(AttributeExtractionStrategy):
+    def __init__(self, warning_manager: WarningManager):
+        super().__init__(warning_manager=warning_manager)
+        self.log_file_path = LOG_DIR_PATH / "crossref_url_extraction_strategy.log"
+        self.logger = logging.getLogger(__name__)
+        self.logger.setLevel(logging.DEBUG)
+        self.logger.handlers = []
+        if not self.logger.handlers:
+            handler = logging.FileHandler(self.log_file_path)
+            formatter = logging.Formatter(
+                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            )
+            self.logger.addHandler(handler)
+
     def extract_attribute(self, entry_text: dict) -> tuple[bool, str]:
         url = entry_text.get("URL")
         if url:
@@ -1739,6 +1967,19 @@ class CrossrefURLExtractionStrategy(AttributeExtractionStrategy):
 
 @StrategyFactory.register_strategy(AttributeTypes.CROSSREF_DOI)
 class CrossrefDOIExtractionStrategy(AttributeExtractionStrategy):
+    def __init__(self, warning_manager: WarningManager):
+        super().__init__(warning_manager=warning_manager)
+        self.log_file_path = LOG_DIR_PATH / "crossref_doi_extraction_strategy.log"
+        self.logger = logging.getLogger(__name__)
+        self.logger.setLevel(logging.DEBUG)
+        self.logger.handlers = []
+        if not self.logger.handlers:
+            handler = logging.FileHandler(self.log_file_path)
+            formatter = logging.Formatter(
+                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            )
+            self.logger.addHandler(handler)
+
     def extract_attribute(self, entry_text: dict) -> tuple[bool, str]:
         doi = entry_text.get("DOI")
         if doi:
@@ -1753,6 +1994,19 @@ class CrossrefDOIExtractionStrategy(AttributeExtractionStrategy):
 
 @StrategyFactory.register_strategy(AttributeTypes.CROSSREF_THEMES)
 class CrossrefThemesExtractionStrategy(AttributeExtractionStrategy):
+    def __init__(self, warning_manager: WarningManager):
+        super().__init__(warning_manager=warning_manager)
+        self.log_file_path = LOG_DIR_PATH / "crossref_themes_extraction_strategy.log"
+        self.logger = logging.getLogger(__name__)
+        self.logger.setLevel(logging.DEBUG)
+        self.logger.handlers = []
+        if not self.logger.handlers:
+            handler = logging.FileHandler(self.log_file_path)
+            formatter = logging.Formatter(
+                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            )
+            self.logger.addHandler(handler)
+
     def extract_attribute(self, entry_text: dict) -> tuple[bool, list[str]]:
         themes = entry_text.get("themes", [])
         return (True, themes)

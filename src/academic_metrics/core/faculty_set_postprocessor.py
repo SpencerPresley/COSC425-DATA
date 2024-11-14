@@ -4,6 +4,7 @@ from dataclasses import dataclass, field
 from typing import Any
 import logging
 import os
+from academic_metrics.constants import LOG_DIR_PATH
 
 
 class FacultyPostprocessor:
@@ -45,14 +46,13 @@ class FacultyPostprocessor:
 
     def __init__(self):
         # Set up logger
-        current_dir = os.path.dirname(os.path.abspath(__file__))
-        log_file_path = os.path.join(current_dir, "faculty_set_postprocessor.log")
+        self.log_file_path = os.path.join(LOG_DIR_PATH, "faculty_set_postprocessor.log")
         self.logger = logging.getLogger(__name__)
         self.logger.handlers = []
         self.logger.setLevel(logging.DEBUG)
 
         if not self.logger.handlers:
-            handler = logging.FileHandler(log_file_path)
+            handler = logging.FileHandler(self.log_file_path)
             formatter = logging.Formatter(
                 "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
             )

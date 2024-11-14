@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import logging
 import os
 import warnings
@@ -13,6 +15,7 @@ from typing import (
     Literal,
     Callable,
 )
+from pathlib import Path
 from pydantic import BaseModel, ValidationError
 import json
 from langchain.prompts import (
@@ -31,6 +34,9 @@ from langchain_core.output_parsers import (
     StrOutputParser,
 )
 
+# ! THIS NEEDS TO BE REMOVED WHEN THIS IS MADE A STANDALONE PACKAGE
+from academic_metrics.constants import LOG_DIR_PATH
+
 # Type that represents "Required first time, optional after"
 FirstCallRequired = TypeVar("FirsCallRequired", bound=Dict[str, Any])
 ParserUnion = Union[PydanticOutputParser, JsonOutputParser, StrOutputParser]
@@ -47,18 +53,16 @@ class ChainBuilder:
         parser: Optional[ParserType] = None,
         fallback_parser: Optional[FallbackParserType] = None,
         logger: Optional[logging.Logger] = None,
-        log_to_console: bool = True,
-        log_file_path: str = "chain_builder.log",
+        log_to_console: bool = False,
     ):
+        # Convert string path to Path, respecting the input path
+        self.log_file_path = LOG_DIR_PATH / "chain_builder.log"
+
         # Set up logger
         self.logger = logger or logging.getLogger(__name__)
         self.logger.setLevel(logging.INFO)
 
         self.logger.handlers = []
-
-        self.log_file_path = log_file_path or os.path.join(
-            os.path.dirname(os.path.abspath(__file__)), "chain_builder.log"
-        )
 
         # Add handler if none exists
         if not self.logger.handlers:
@@ -66,12 +70,13 @@ class ChainBuilder:
             formatter = logging.Formatter(
                 "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
             )
+            handler.setFormatter(formatter)
+            self.logger.addHandler(handler)
+
             console_handler = logging.StreamHandler() if log_to_console else None
             if console_handler:
                 console_handler.setFormatter(formatter)
                 self.logger.addHandler(console_handler)
-            handler.setFormatter(formatter)
-            self.logger.addHandler(handler)
 
         self.chat_prompt = chat_prompt
         self.parser: Optional[ParserType] = parser

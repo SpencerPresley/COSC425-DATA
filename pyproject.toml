@@ -92,6 +92,7 @@ dependencies = [
     "wcwidth",
     "wheel",
     "yarl",
+    "pymongo",
 ]
 
 [project.urls]
