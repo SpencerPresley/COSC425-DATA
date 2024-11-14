@@ -1,268 +1,995 @@
 [
     {
-        "_id": "Health%20sciences",
-        "url": "Health%20sciences",
-        "category_name": "Health sciences",
-        "faculty_count": 9,
-        "department_count": 3,
-        "article_count": 2,
-        "tc_count": 0,
-        "citation_average": 0.0,
-        "doi_list": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "themes": [
-            "Arterial stiffness and cardiovascular health",
-            "Effects of blood flow restriction exercises",
-            "Comparison of autoregulated and non-autoregulated training methods"
-        ]
-    },
-    {
         "_id": "Biological%20and%20biomedical%20sciences",
         "url": "Biological%20and%20biomedical%20sciences",
         "category_name": "Biological and biomedical sciences",
-        "faculty_count": 9,
-        "department_count": 3,
-        "article_count": 2,
+        "faculty_count": 12,
+        "department_count": 7,
+        "article_count": 3,
+        "faculty": [
+            "Brent Fedorko",
+            "Karsin M. Bachran",
+            "S Maykrantz",
+            "M Diriker",
+            "Tami. S. Ransom",
+            "Jessica Walters",
+            "Campbell Ruffhead",
+            "Susannah Taylor",
+            "Lisa Marquette",
+            "Nicholas Rolnick",
+            "Eric B. Liebgold",
+            "Tim Werner"
+        ],
+        "departments": [
+            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801.",
+            "Board of Directors, Tidal Health System , Salisbury,",
+            "School of Health Sciences, Salisbury University , Salisbury,",
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801.",
+            "Salisbury University, Salisbury, MD.",
+            "Perdue School of Business, Salisbury University , Salisbury,"
+        ],
+        "titles": [
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness",
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)",
+            "An Innovative Public Health Solution with European Features for an American Problem"
+        ],
         "tc_count": 0,
         "citation_average": 0.0,
         "doi_list": [
             "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1656/045.031.s1222",
+            "10.1093/eurpub/ckae144.1261"
         ],
         "themes": [
-            "Arterial stiffness and cardiovascular health",
-            "Effects of blood flow restriction exercises",
-            "Comparison of autoregulated and non-autoregulated training methods"
+            "Healthcare Funding Equity",
+            "Comparison of exercise methodologies",
+            "Public Health Disparities",
+            "Arterial stiffness",
+            "Effects of predation on turtle behavior",
+            "Ecological implications of injuries in wildlife",
+            "Blood flow restriction exercise",
+            "Population Health Management",
+            "International Collaboration in Public Health",
+            "Impact of nonlethal injuries on movement patterns",
+            "Impact of exercise on health"
         ]
     },
     {
-        "_id": "Health%20sciences%2C%20other",
-        "url": "Health%20sciences%2C%20other",
-        "category_name": "Health sciences, other",
-        "faculty_count": 9,
-        "department_count": 3,
-        "article_count": 2,
+        "_id": "Health%20sciences",
+        "url": "Health%20sciences",
+        "category_name": "Health sciences",
+        "faculty_count": 12,
+        "department_count": 7,
+        "article_count": 3,
+        "faculty": [
+            "Brent Fedorko",
+            "Karsin M. Bachran",
+            "S Maykrantz",
+            "M Diriker",
+            "Tami. S. Ransom",
+            "Jessica Walters",
+            "Campbell Ruffhead",
+            "Susannah Taylor",
+            "Lisa Marquette",
+            "Nicholas Rolnick",
+            "Eric B. Liebgold",
+            "Tim Werner"
+        ],
+        "departments": [
+            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801.",
+            "Board of Directors, Tidal Health System , Salisbury,",
+            "School of Health Sciences, Salisbury University , Salisbury,",
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801.",
+            "Salisbury University, Salisbury, MD.",
+            "Perdue School of Business, Salisbury University , Salisbury,"
+        ],
+        "titles": [
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness",
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)",
+            "An Innovative Public Health Solution with European Features for an American Problem"
+        ],
         "tc_count": 0,
         "citation_average": 0.0,
         "doi_list": [
             "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1656/045.031.s1222",
+            "10.1093/eurpub/ckae144.1261"
         ],
         "themes": [
-            "Arterial stiffness and cardiovascular health",
-            "Effects of blood flow restriction exercises",
-            "Comparison of autoregulated and non-autoregulated training methods"
-        ]
-    },
-    {
-        "_id": "Public%20health",
-        "url": "Public%20health",
-        "category_name": "Public health",
-        "faculty_count": 9,
-        "department_count": 3,
-        "article_count": 2,
-        "tc_count": 0,
-        "citation_average": 0.0,
-        "doi_list": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "themes": [
-            "Arterial stiffness and cardiovascular health",
-            "Effects of blood flow restriction exercises",
-            "Comparison of autoregulated and non-autoregulated training methods"
+            "Healthcare Funding Equity",
+            "Comparison of exercise methodologies",
+            "Public Health Disparities",
+            "Arterial stiffness",
+            "Effects of predation on turtle behavior",
+            "Ecological implications of injuries in wildlife",
+            "Blood flow restriction exercise",
+            "Population Health Management",
+            "International Collaboration in Public Health",
+            "Impact of nonlethal injuries on movement patterns",
+            "Impact of exercise on health"
         ]
     },
     {
         "_id": "Physiology%2C%20oncology%20and%20cancer%20biology",
         "url": "Physiology%2C%20oncology%20and%20cancer%20biology",
         "category_name": "Physiology, oncology and cancer biology",
-        "faculty_count": 9,
-        "department_count": 3,
-        "article_count": 2,
+        "faculty_count": 12,
+        "department_count": 7,
+        "article_count": 3,
+        "faculty": [
+            "Brent Fedorko",
+            "Karsin M. Bachran",
+            "S Maykrantz",
+            "M Diriker",
+            "Tami. S. Ransom",
+            "Jessica Walters",
+            "Campbell Ruffhead",
+            "Susannah Taylor",
+            "Lisa Marquette",
+            "Nicholas Rolnick",
+            "Eric B. Liebgold",
+            "Tim Werner"
+        ],
+        "departments": [
+            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801.",
+            "Board of Directors, Tidal Health System , Salisbury,",
+            "School of Health Sciences, Salisbury University , Salisbury,",
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801.",
+            "Salisbury University, Salisbury, MD.",
+            "Perdue School of Business, Salisbury University , Salisbury,"
+        ],
+        "titles": [
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness",
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)",
+            "An Innovative Public Health Solution with European Features for an American Problem"
+        ],
         "tc_count": 0,
         "citation_average": 0.0,
         "doi_list": [
             "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1656/045.031.s1222",
+            "10.1093/eurpub/ckae144.1261"
         ],
         "themes": [
-            "Arterial stiffness and cardiovascular health",
-            "Effects of blood flow restriction exercises",
-            "Comparison of autoregulated and non-autoregulated training methods"
+            "Healthcare Funding Equity",
+            "Comparison of exercise methodologies",
+            "Public Health Disparities",
+            "Arterial stiffness",
+            "Effects of predation on turtle behavior",
+            "Ecological implications of injuries in wildlife",
+            "Blood flow restriction exercise",
+            "Population Health Management",
+            "International Collaboration in Public Health",
+            "Impact of nonlethal injuries on movement patterns",
+            "Impact of exercise on health"
         ]
     },
     {
         "_id": "Biological%20and%20biomedical%20sciences%2C%20other",
         "url": "Biological%20and%20biomedical%20sciences%2C%20other",
         "category_name": "Biological and biomedical sciences, other",
-        "faculty_count": 9,
-        "department_count": 3,
-        "article_count": 2,
+        "faculty_count": 12,
+        "department_count": 7,
+        "article_count": 3,
+        "faculty": [
+            "Brent Fedorko",
+            "Karsin M. Bachran",
+            "S Maykrantz",
+            "M Diriker",
+            "Tami. S. Ransom",
+            "Jessica Walters",
+            "Campbell Ruffhead",
+            "Susannah Taylor",
+            "Lisa Marquette",
+            "Nicholas Rolnick",
+            "Eric B. Liebgold",
+            "Tim Werner"
+        ],
+        "departments": [
+            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801.",
+            "Board of Directors, Tidal Health System , Salisbury,",
+            "School of Health Sciences, Salisbury University , Salisbury,",
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801.",
+            "Salisbury University, Salisbury, MD.",
+            "Perdue School of Business, Salisbury University , Salisbury,"
+        ],
+        "titles": [
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness",
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)",
+            "An Innovative Public Health Solution with European Features for an American Problem"
+        ],
         "tc_count": 0,
         "citation_average": 0.0,
         "doi_list": [
             "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1656/045.031.s1222",
+            "10.1093/eurpub/ckae144.1261"
         ],
         "themes": [
-            "Arterial stiffness and cardiovascular health",
-            "Effects of blood flow restriction exercises",
-            "Comparison of autoregulated and non-autoregulated training methods"
+            "Healthcare Funding Equity",
+            "Comparison of exercise methodologies",
+            "Public Health Disparities",
+            "Arterial stiffness",
+            "Effects of predation on turtle behavior",
+            "Ecological implications of injuries in wildlife",
+            "Blood flow restriction exercise",
+            "Population Health Management",
+            "International Collaboration in Public Health",
+            "Impact of nonlethal injuries on movement patterns",
+            "Impact of exercise on health"
         ]
     },
     {
-        "_id": "Exercise%20science%20and%20kinesiology",
-        "url": "Exercise%20science%20and%20kinesiology",
-        "category_name": "Exercise science and kinesiology",
-        "faculty_count": 9,
-        "department_count": 3,
-        "article_count": 2,
+        "_id": "Health%20sciences%2C%20other",
+        "url": "Health%20sciences%2C%20other",
+        "category_name": "Health sciences, other",
+        "faculty_count": 12,
+        "department_count": 7,
+        "article_count": 3,
+        "faculty": [
+            "Brent Fedorko",
+            "Karsin M. Bachran",
+            "S Maykrantz",
+            "M Diriker",
+            "Tami. S. Ransom",
+            "Jessica Walters",
+            "Campbell Ruffhead",
+            "Susannah Taylor",
+            "Lisa Marquette",
+            "Nicholas Rolnick",
+            "Eric B. Liebgold",
+            "Tim Werner"
+        ],
+        "departments": [
+            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801.",
+            "Board of Directors, Tidal Health System , Salisbury,",
+            "School of Health Sciences, Salisbury University , Salisbury,",
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801.",
+            "Salisbury University, Salisbury, MD.",
+            "Perdue School of Business, Salisbury University , Salisbury,"
+        ],
+        "titles": [
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness",
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)",
+            "An Innovative Public Health Solution with European Features for an American Problem"
+        ],
         "tc_count": 0,
         "citation_average": 0.0,
         "doi_list": [
             "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1656/045.031.s1222",
+            "10.1093/eurpub/ckae144.1261"
         ],
         "themes": [
-            "Arterial stiffness and cardiovascular health",
-            "Effects of blood flow restriction exercises",
-            "Comparison of autoregulated and non-autoregulated training methods"
-        ]
-    },
-    {
-        "_id": "Health%20sciences%2C%20general",
-        "url": "Health%20sciences%2C%20general",
-        "category_name": "Health sciences, general",
-        "faculty_count": 9,
-        "department_count": 3,
-        "article_count": 2,
-        "tc_count": 0,
-        "citation_average": 0.0,
-        "doi_list": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "themes": [
-            "Arterial stiffness and cardiovascular health",
-            "Effects of blood flow restriction exercises",
-            "Comparison of autoregulated and non-autoregulated training methods"
-        ]
-    },
-    {
-        "_id": "Public%20health%2C%20general",
-        "url": "Public%20health%2C%20general",
-        "category_name": "Public health, general",
-        "faculty_count": 9,
-        "department_count": 3,
-        "article_count": 2,
-        "tc_count": 0,
-        "citation_average": 0.0,
-        "doi_list": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "themes": [
-            "Arterial stiffness and cardiovascular health",
-            "Effects of blood flow restriction exercises",
-            "Comparison of autoregulated and non-autoregulated training methods"
-        ]
-    },
-    {
-        "_id": "Health%20services%20research",
-        "url": "Health%20services%20research",
-        "category_name": "Health services research",
-        "faculty_count": 9,
-        "department_count": 3,
-        "article_count": 2,
-        "tc_count": 0,
-        "citation_average": 0.0,
-        "doi_list": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "themes": [
-            "Arterial stiffness and cardiovascular health",
-            "Effects of blood flow restriction exercises",
-            "Comparison of autoregulated and non-autoregulated training methods"
+            "Healthcare Funding Equity",
+            "Comparison of exercise methodologies",
+            "Public Health Disparities",
+            "Arterial stiffness",
+            "Effects of predation on turtle behavior",
+            "Ecological implications of injuries in wildlife",
+            "Blood flow restriction exercise",
+            "Population Health Management",
+            "International Collaboration in Public Health",
+            "Impact of nonlethal injuries on movement patterns",
+            "Impact of exercise on health"
         ]
     },
     {
         "_id": "Exercise%20physiology%20and%20kinesiology",
         "url": "Exercise%20physiology%20and%20kinesiology",
         "category_name": "Exercise physiology and kinesiology",
-        "faculty_count": 9,
-        "department_count": 3,
-        "article_count": 2,
+        "faculty_count": 12,
+        "department_count": 7,
+        "article_count": 3,
+        "faculty": [
+            "Brent Fedorko",
+            "Karsin M. Bachran",
+            "S Maykrantz",
+            "M Diriker",
+            "Tami. S. Ransom",
+            "Jessica Walters",
+            "Campbell Ruffhead",
+            "Susannah Taylor",
+            "Lisa Marquette",
+            "Nicholas Rolnick",
+            "Eric B. Liebgold",
+            "Tim Werner"
+        ],
+        "departments": [
+            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801.",
+            "Board of Directors, Tidal Health System , Salisbury,",
+            "School of Health Sciences, Salisbury University , Salisbury,",
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801.",
+            "Salisbury University, Salisbury, MD.",
+            "Perdue School of Business, Salisbury University , Salisbury,"
+        ],
+        "titles": [
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness",
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)",
+            "An Innovative Public Health Solution with European Features for an American Problem"
+        ],
         "tc_count": 0,
         "citation_average": 0.0,
         "doi_list": [
             "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1656/045.031.s1222",
+            "10.1093/eurpub/ckae144.1261"
         ],
         "themes": [
-            "Arterial stiffness and cardiovascular health",
-            "Effects of blood flow restriction exercises",
-            "Comparison of autoregulated and non-autoregulated training methods"
+            "Healthcare Funding Equity",
+            "Comparison of exercise methodologies",
+            "Public Health Disparities",
+            "Arterial stiffness",
+            "Effects of predation on turtle behavior",
+            "Ecological implications of injuries in wildlife",
+            "Blood flow restriction exercise",
+            "Population Health Management",
+            "International Collaboration in Public Health",
+            "Impact of nonlethal injuries on movement patterns",
+            "Impact of exercise on health"
         ]
     },
     {
         "_id": "Physiology%2C%20general",
         "url": "Physiology%2C%20general",
         "category_name": "Physiology, general",
-        "faculty_count": 9,
-        "department_count": 3,
-        "article_count": 2,
+        "faculty_count": 12,
+        "department_count": 7,
+        "article_count": 3,
+        "faculty": [
+            "Brent Fedorko",
+            "Karsin M. Bachran",
+            "S Maykrantz",
+            "M Diriker",
+            "Tami. S. Ransom",
+            "Jessica Walters",
+            "Campbell Ruffhead",
+            "Susannah Taylor",
+            "Lisa Marquette",
+            "Nicholas Rolnick",
+            "Eric B. Liebgold",
+            "Tim Werner"
+        ],
+        "departments": [
+            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801.",
+            "Board of Directors, Tidal Health System , Salisbury,",
+            "School of Health Sciences, Salisbury University , Salisbury,",
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801.",
+            "Salisbury University, Salisbury, MD.",
+            "Perdue School of Business, Salisbury University , Salisbury,"
+        ],
+        "titles": [
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness",
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)",
+            "An Innovative Public Health Solution with European Features for an American Problem"
+        ],
         "tc_count": 0,
         "citation_average": 0.0,
         "doi_list": [
             "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1656/045.031.s1222",
+            "10.1093/eurpub/ckae144.1261"
         ],
         "themes": [
-            "Arterial stiffness and cardiovascular health",
-            "Effects of blood flow restriction exercises",
-            "Comparison of autoregulated and non-autoregulated training methods"
+            "Healthcare Funding Equity",
+            "Comparison of exercise methodologies",
+            "Public Health Disparities",
+            "Arterial stiffness",
+            "Effects of predation on turtle behavior",
+            "Ecological implications of injuries in wildlife",
+            "Blood flow restriction exercise",
+            "Population Health Management",
+            "International Collaboration in Public Health",
+            "Impact of nonlethal injuries on movement patterns",
+            "Impact of exercise on health"
         ]
     },
     {
         "_id": "Biomedical%20sciences%2C%20general",
         "url": "Biomedical%20sciences%2C%20general",
         "category_name": "Biomedical sciences, general",
-        "faculty_count": 9,
-        "department_count": 3,
-        "article_count": 2,
+        "faculty_count": 12,
+        "department_count": 7,
+        "article_count": 3,
+        "faculty": [
+            "Brent Fedorko",
+            "Karsin M. Bachran",
+            "S Maykrantz",
+            "M Diriker",
+            "Tami. S. Ransom",
+            "Jessica Walters",
+            "Campbell Ruffhead",
+            "Susannah Taylor",
+            "Lisa Marquette",
+            "Nicholas Rolnick",
+            "Eric B. Liebgold",
+            "Tim Werner"
+        ],
+        "departments": [
+            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801.",
+            "Board of Directors, Tidal Health System , Salisbury,",
+            "School of Health Sciences, Salisbury University , Salisbury,",
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801.",
+            "Salisbury University, Salisbury, MD.",
+            "Perdue School of Business, Salisbury University , Salisbury,"
+        ],
+        "titles": [
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness",
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)",
+            "An Innovative Public Health Solution with European Features for an American Problem"
+        ],
         "tc_count": 0,
         "citation_average": 0.0,
         "doi_list": [
             "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1656/045.031.s1222",
+            "10.1093/eurpub/ckae144.1261"
         ],
         "themes": [
-            "Arterial stiffness and cardiovascular health",
-            "Effects of blood flow restriction exercises",
-            "Comparison of autoregulated and non-autoregulated training methods"
+            "Healthcare Funding Equity",
+            "Comparison of exercise methodologies",
+            "Public Health Disparities",
+            "Arterial stiffness",
+            "Effects of predation on turtle behavior",
+            "Ecological implications of injuries in wildlife",
+            "Blood flow restriction exercise",
+            "Population Health Management",
+            "International Collaboration in Public Health",
+            "Impact of nonlethal injuries on movement patterns",
+            "Impact of exercise on health"
         ]
     },
     {
-        "_id": "Biological%20and%20biomedical%20sciences%20nec",
-        "url": "Biological%20and%20biomedical%20sciences%20nec",
-        "category_name": "Biological and biomedical sciences nec",
-        "faculty_count": 9,
-        "department_count": 3,
-        "article_count": 2,
+        "_id": "Exercise%20science%20and%20kinesiology",
+        "url": "Exercise%20science%20and%20kinesiology",
+        "category_name": "Exercise science and kinesiology",
+        "faculty_count": 12,
+        "department_count": 7,
+        "article_count": 3,
+        "faculty": [
+            "Brent Fedorko",
+            "Karsin M. Bachran",
+            "S Maykrantz",
+            "M Diriker",
+            "Tami. S. Ransom",
+            "Jessica Walters",
+            "Campbell Ruffhead",
+            "Susannah Taylor",
+            "Lisa Marquette",
+            "Nicholas Rolnick",
+            "Eric B. Liebgold",
+            "Tim Werner"
+        ],
+        "departments": [
+            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801.",
+            "Board of Directors, Tidal Health System , Salisbury,",
+            "School of Health Sciences, Salisbury University , Salisbury,",
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801.",
+            "Salisbury University, Salisbury, MD.",
+            "Perdue School of Business, Salisbury University , Salisbury,"
+        ],
+        "titles": [
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness",
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)",
+            "An Innovative Public Health Solution with European Features for an American Problem"
+        ],
         "tc_count": 0,
         "citation_average": 0.0,
         "doi_list": [
             "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1656/045.031.s1222",
+            "10.1093/eurpub/ckae144.1261"
         ],
         "themes": [
-            "Arterial stiffness and cardiovascular health",
-            "Effects of blood flow restriction exercises",
-            "Comparison of autoregulated and non-autoregulated training methods"
+            "Healthcare Funding Equity",
+            "Comparison of exercise methodologies",
+            "Public Health Disparities",
+            "Arterial stiffness",
+            "Effects of predation on turtle behavior",
+            "Ecological implications of injuries in wildlife",
+            "Blood flow restriction exercise",
+            "Population Health Management",
+            "International Collaboration in Public Health",
+            "Impact of nonlethal injuries on movement patterns",
+            "Impact of exercise on health"
+        ]
+    },
+    {
+        "_id": "Health%20sciences%2C%20general",
+        "url": "Health%20sciences%2C%20general",
+        "category_name": "Health sciences, general",
+        "faculty_count": 12,
+        "department_count": 7,
+        "article_count": 3,
+        "faculty": [
+            "Brent Fedorko",
+            "Karsin M. Bachran",
+            "S Maykrantz",
+            "M Diriker",
+            "Tami. S. Ransom",
+            "Jessica Walters",
+            "Campbell Ruffhead",
+            "Susannah Taylor",
+            "Lisa Marquette",
+            "Nicholas Rolnick",
+            "Eric B. Liebgold",
+            "Tim Werner"
+        ],
+        "departments": [
+            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801.",
+            "Board of Directors, Tidal Health System , Salisbury,",
+            "School of Health Sciences, Salisbury University , Salisbury,",
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801.",
+            "Salisbury University, Salisbury, MD.",
+            "Perdue School of Business, Salisbury University , Salisbury,"
+        ],
+        "titles": [
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness",
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)",
+            "An Innovative Public Health Solution with European Features for an American Problem"
+        ],
+        "tc_count": 0,
+        "citation_average": 0.0,
+        "doi_list": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1656/045.031.s1222",
+            "10.1093/eurpub/ckae144.1261"
+        ],
+        "themes": [
+            "Healthcare Funding Equity",
+            "Comparison of exercise methodologies",
+            "Public Health Disparities",
+            "Arterial stiffness",
+            "Effects of predation on turtle behavior",
+            "Ecological implications of injuries in wildlife",
+            "Blood flow restriction exercise",
+            "Population Health Management",
+            "International Collaboration in Public Health",
+            "Impact of nonlethal injuries on movement patterns",
+            "Impact of exercise on health"
+        ]
+    },
+    {
+        "_id": "Ecology%2C%20evolutionary%20biology%2C%20and%20epidemiology",
+        "url": "Ecology%2C%20evolutionary%20biology%2C%20and%20epidemiology",
+        "category_name": "Ecology, evolutionary biology, and epidemiology",
+        "faculty_count": 5,
+        "department_count": 5,
+        "article_count": 2,
+        "faculty": [
+            "Karsin M. Bachran",
+            "S Maykrantz",
+            "M Diriker",
+            "Tami. S. Ransom",
+            "Eric B. Liebgold"
+        ],
+        "departments": [
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801.",
+            "Board of Directors, Tidal Health System , Salisbury,",
+            "School of Health Sciences, Salisbury University , Salisbury,",
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801.",
+            "Perdue School of Business, Salisbury University , Salisbury,"
+        ],
+        "titles": [
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)",
+            "An Innovative Public Health Solution with European Features for an American Problem"
+        ],
+        "tc_count": 0,
+        "citation_average": 0.0,
+        "doi_list": [
+            "10.1093/eurpub/ckae144.1261",
+            "10.1656/045.031.s1222"
+        ],
+        "themes": [
+            "Healthcare Funding Equity",
+            "Public Health Disparities",
+            "Effects of predation on turtle behavior",
+            "Ecological implications of injuries in wildlife",
+            "Population Health Management",
+            "International Collaboration in Public Health",
+            "Impact of nonlethal injuries on movement patterns"
+        ]
+    },
+    {
+        "_id": "Ecology",
+        "url": "Ecology",
+        "category_name": "Ecology",
+        "faculty_count": 5,
+        "department_count": 5,
+        "article_count": 2,
+        "faculty": [
+            "Karsin M. Bachran",
+            "S Maykrantz",
+            "M Diriker",
+            "Tami. S. Ransom",
+            "Eric B. Liebgold"
+        ],
+        "departments": [
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801.",
+            "Board of Directors, Tidal Health System , Salisbury,",
+            "School of Health Sciences, Salisbury University , Salisbury,",
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801.",
+            "Perdue School of Business, Salisbury University , Salisbury,"
+        ],
+        "titles": [
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)",
+            "An Innovative Public Health Solution with European Features for an American Problem"
+        ],
+        "tc_count": 0,
+        "citation_average": 0.0,
+        "doi_list": [
+            "10.1093/eurpub/ckae144.1261",
+            "10.1656/045.031.s1222"
+        ],
+        "themes": [
+            "Healthcare Funding Equity",
+            "Public Health Disparities",
+            "Effects of predation on turtle behavior",
+            "Ecological implications of injuries in wildlife",
+            "Population Health Management",
+            "International Collaboration in Public Health",
+            "Impact of nonlethal injuries on movement patterns"
+        ]
+    },
+    {
+        "_id": "Ecology%20and%20evolutionary%20biology",
+        "url": "Ecology%20and%20evolutionary%20biology",
+        "category_name": "Ecology and evolutionary biology",
+        "faculty_count": 5,
+        "department_count": 5,
+        "article_count": 2,
+        "faculty": [
+            "Karsin M. Bachran",
+            "S Maykrantz",
+            "M Diriker",
+            "Tami. S. Ransom",
+            "Eric B. Liebgold"
+        ],
+        "departments": [
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801.",
+            "Board of Directors, Tidal Health System , Salisbury,",
+            "School of Health Sciences, Salisbury University , Salisbury,",
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801.",
+            "Perdue School of Business, Salisbury University , Salisbury,"
+        ],
+        "titles": [
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)",
+            "An Innovative Public Health Solution with European Features for an American Problem"
+        ],
+        "tc_count": 0,
+        "citation_average": 0.0,
+        "doi_list": [
+            "10.1093/eurpub/ckae144.1261",
+            "10.1656/045.031.s1222"
+        ],
+        "themes": [
+            "Healthcare Funding Equity",
+            "Public Health Disparities",
+            "Effects of predation on turtle behavior",
+            "Ecological implications of injuries in wildlife",
+            "Population Health Management",
+            "International Collaboration in Public Health",
+            "Impact of nonlethal injuries on movement patterns"
+        ]
+    },
+    {
+        "_id": "Social%20sciences",
+        "url": "Social%20sciences",
+        "category_name": "Social sciences",
+        "faculty_count": 2,
+        "department_count": 3,
+        "article_count": 1,
+        "faculty": [
+            "S Maykrantz",
+            "M Diriker"
+        ],
+        "departments": [
+            "Board of Directors, Tidal Health System , Salisbury,",
+            "School of Health Sciences, Salisbury University , Salisbury,",
+            "Perdue School of Business, Salisbury University , Salisbury,"
+        ],
+        "titles": [
+            "An Innovative Public Health Solution with European Features for an American Problem"
+        ],
+        "tc_count": 0,
+        "citation_average": 0.0,
+        "doi_list": [
+            "10.1093/eurpub/ckae144.1261"
+        ],
+        "themes": [
+            "Healthcare Funding Equity",
+            "International Collaboration in Public Health",
+            "Public Health Disparities",
+            "Population Health Management"
+        ]
+    },
+    {
+        "_id": "Health%20sciences/Public%20health",
+        "url": "Health%20sciences/Public%20health",
+        "category_name": "Public health",
+        "faculty_count": 2,
+        "department_count": 3,
+        "article_count": 1,
+        "faculty": [
+            "S Maykrantz",
+            "M Diriker"
+        ],
+        "departments": [
+            "Board of Directors, Tidal Health System , Salisbury,",
+            "School of Health Sciences, Salisbury University , Salisbury,",
+            "Perdue School of Business, Salisbury University , Salisbury,"
+        ],
+        "titles": [
+            "An Innovative Public Health Solution with European Features for an American Problem"
+        ],
+        "tc_count": 0,
+        "citation_average": 0.0,
+        "doi_list": [
+            "10.1093/eurpub/ckae144.1261"
+        ],
+        "themes": [
+            "Healthcare Funding Equity",
+            "International Collaboration in Public Health",
+            "Public Health Disparities",
+            "Population Health Management"
+        ]
+    },
+    {
+        "_id": "Social%20sciences/Public%20policy%20analysis",
+        "url": "Social%20sciences/Public%20policy%20analysis",
+        "category_name": "Public policy analysis",
+        "faculty_count": 2,
+        "department_count": 3,
+        "article_count": 1,
+        "faculty": [
+            "S Maykrantz",
+            "M Diriker"
+        ],
+        "departments": [
+            "Board of Directors, Tidal Health System , Salisbury,",
+            "School of Health Sciences, Salisbury University , Salisbury,",
+            "Perdue School of Business, Salisbury University , Salisbury,"
+        ],
+        "titles": [
+            "An Innovative Public Health Solution with European Features for an American Problem"
+        ],
+        "tc_count": 0,
+        "citation_average": 0.0,
+        "doi_list": [
+            "10.1093/eurpub/ckae144.1261"
+        ],
+        "themes": [
+            "Healthcare Funding Equity",
+            "International Collaboration in Public Health",
+            "Public Health Disparities",
+            "Population Health Management"
+        ]
+    },
+    {
+        "_id": "Social%20sciences/Sociology%2C%20demography%2C%20and%20population%20studies",
+        "url": "Social%20sciences/Sociology%2C%20demography%2C%20and%20population%20studies",
+        "category_name": "Sociology, demography, and population studies",
+        "faculty_count": 2,
+        "department_count": 3,
+        "article_count": 1,
+        "faculty": [
+            "S Maykrantz",
+            "M Diriker"
+        ],
+        "departments": [
+            "Board of Directors, Tidal Health System , Salisbury,",
+            "School of Health Sciences, Salisbury University , Salisbury,",
+            "Perdue School of Business, Salisbury University , Salisbury,"
+        ],
+        "titles": [
+            "An Innovative Public Health Solution with European Features for an American Problem"
+        ],
+        "tc_count": 0,
+        "citation_average": 0.0,
+        "doi_list": [
+            "10.1093/eurpub/ckae144.1261"
+        ],
+        "themes": [
+            "Healthcare Funding Equity",
+            "International Collaboration in Public Health",
+            "Public Health Disparities",
+            "Population Health Management"
+        ]
+    },
+    {
+        "_id": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Public%20health%2C%20general",
+        "url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Public%20health%2C%20general",
+        "category_name": "Public health, general",
+        "faculty_count": 2,
+        "department_count": 3,
+        "article_count": 1,
+        "faculty": [
+            "S Maykrantz",
+            "M Diriker"
+        ],
+        "departments": [
+            "Board of Directors, Tidal Health System , Salisbury,",
+            "School of Health Sciences, Salisbury University , Salisbury,",
+            "Perdue School of Business, Salisbury University , Salisbury,"
+        ],
+        "titles": [
+            "An Innovative Public Health Solution with European Features for an American Problem"
+        ],
+        "tc_count": 0,
+        "citation_average": 0.0,
+        "doi_list": [
+            "10.1093/eurpub/ckae144.1261"
+        ],
+        "themes": [
+            "Healthcare Funding Equity",
+            "International Collaboration in Public Health",
+            "Public Health Disparities",
+            "Population Health Management"
+        ]
+    },
+    {
+        "_id": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20services%20research",
+        "url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20services%20research",
+        "category_name": "Health services research",
+        "faculty_count": 2,
+        "department_count": 3,
+        "article_count": 1,
+        "faculty": [
+            "S Maykrantz",
+            "M Diriker"
+        ],
+        "departments": [
+            "Board of Directors, Tidal Health System , Salisbury,",
+            "School of Health Sciences, Salisbury University , Salisbury,",
+            "Perdue School of Business, Salisbury University , Salisbury,"
+        ],
+        "titles": [
+            "An Innovative Public Health Solution with European Features for an American Problem"
+        ],
+        "tc_count": 0,
+        "citation_average": 0.0,
+        "doi_list": [
+            "10.1093/eurpub/ckae144.1261"
+        ],
+        "themes": [
+            "Healthcare Funding Equity",
+            "International Collaboration in Public Health",
+            "Public Health Disparities",
+            "Population Health Management"
+        ]
+    },
+    {
+        "_id": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20policy%20analysis",
+        "url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20policy%20analysis",
+        "category_name": "Health policy analysis",
+        "faculty_count": 2,
+        "department_count": 3,
+        "article_count": 1,
+        "faculty": [
+            "S Maykrantz",
+            "M Diriker"
+        ],
+        "departments": [
+            "Board of Directors, Tidal Health System , Salisbury,",
+            "School of Health Sciences, Salisbury University , Salisbury,",
+            "Perdue School of Business, Salisbury University , Salisbury,"
+        ],
+        "titles": [
+            "An Innovative Public Health Solution with European Features for an American Problem"
+        ],
+        "tc_count": 0,
+        "citation_average": 0.0,
+        "doi_list": [
+            "10.1093/eurpub/ckae144.1261"
+        ],
+        "themes": [
+            "Healthcare Funding Equity",
+            "International Collaboration in Public Health",
+            "Public Health Disparities",
+            "Population Health Management"
+        ]
+    },
+    {
+        "_id": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Public%20policy%20analysis%2C%20general",
+        "url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Public%20policy%20analysis%2C%20general",
+        "category_name": "Public policy analysis, general",
+        "faculty_count": 2,
+        "department_count": 3,
+        "article_count": 1,
+        "faculty": [
+            "S Maykrantz",
+            "M Diriker"
+        ],
+        "departments": [
+            "Board of Directors, Tidal Health System , Salisbury,",
+            "School of Health Sciences, Salisbury University , Salisbury,",
+            "Perdue School of Business, Salisbury University , Salisbury,"
+        ],
+        "titles": [
+            "An Innovative Public Health Solution with European Features for an American Problem"
+        ],
+        "tc_count": 0,
+        "citation_average": 0.0,
+        "doi_list": [
+            "10.1093/eurpub/ckae144.1261"
+        ],
+        "themes": [
+            "Healthcare Funding Equity",
+            "International Collaboration in Public Health",
+            "Public Health Disparities",
+            "Population Health Management"
+        ]
+    },
+    {
+        "_id": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Sociology%2C%20general",
+        "url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Sociology%2C%20general",
+        "category_name": "Sociology, general",
+        "faculty_count": 2,
+        "department_count": 3,
+        "article_count": 1,
+        "faculty": [
+            "S Maykrantz",
+            "M Diriker"
+        ],
+        "departments": [
+            "Board of Directors, Tidal Health System , Salisbury,",
+            "School of Health Sciences, Salisbury University , Salisbury,",
+            "Perdue School of Business, Salisbury University , Salisbury,"
+        ],
+        "titles": [
+            "An Innovative Public Health Solution with European Features for an American Problem"
+        ],
+        "tc_count": 0,
+        "citation_average": 0.0,
+        "doi_list": [
+            "10.1093/eurpub/ckae144.1261"
+        ],
+        "themes": [
+            "Healthcare Funding Equity",
+            "International Collaboration in Public Health",
+            "Public Health Disparities",
+            "Population Health Management"
+        ]
+    },
+    {
+        "_id": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Sociology%2C%20demography%2C%20and%20population%20studies%20nec",
+        "url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Sociology%2C%20demography%2C%20and%20population%20studies%20nec",
+        "category_name": "Sociology, demography, and population studies nec",
+        "faculty_count": 2,
+        "department_count": 3,
+        "article_count": 1,
+        "faculty": [
+            "S Maykrantz",
+            "M Diriker"
+        ],
+        "departments": [
+            "Board of Directors, Tidal Health System , Salisbury,",
+            "School of Health Sciences, Salisbury University , Salisbury,",
+            "Perdue School of Business, Salisbury University , Salisbury,"
+        ],
+        "titles": [
+            "An Innovative Public Health Solution with European Features for an American Problem"
+        ],
+        "tc_count": 0,
+        "citation_average": 0.0,
+        "doi_list": [
+            "10.1093/eurpub/ckae144.1261"
+        ],
+        "themes": [
+            "Healthcare Funding Equity",
+            "International Collaboration in Public Health",
+            "Public Health Disparities",
+            "Population Health Management"
         ]
     }
 ]

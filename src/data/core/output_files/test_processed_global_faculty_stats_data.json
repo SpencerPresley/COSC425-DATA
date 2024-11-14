@@ -3,8 +3,6 @@
         "_id": "campbell-ruffhead",
         "name": "Campbell Ruffhead",
         "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
         "department_affiliations": [
             "Salisbury University, Salisbury, MD."
         ],
@@ -15,36 +13,16 @@
             "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
         ],
         "categories": [
-            "Biological and biomedical sciences nec",
             "Health sciences, general",
-            "Physiology, general",
-            "Biological and biomedical sciences, other",
-            "Physiology, oncology and cancer biology",
             "Exercise physiology and kinesiology",
             "Health sciences",
-            "Public health, general",
-            "Exercise science and kinesiology",
+            "Physiology, general",
             "Biomedical sciences, general",
-            "Health sciences, other",
             "Biological and biomedical sciences",
-            "Health services research",
-            "Public health"
-        ],
-        "category_urls": [
-            "Biological%20and%20biomedical%20sciences",
-            "Health%20sciences%2C%20general",
-            "Public%20health",
-            "Physiology%2C%20general",
-            "Health%20sciences",
-            "Physiology%2C%20oncology%20and%20cancer%20biology",
-            "Biomedical%20sciences%2C%20general",
-            "Exercise%20science%20and%20kinesiology",
-            "Exercise%20physiology%20and%20kinesiology",
-            "Biological%20and%20biomedical%20sciences%20nec",
-            "Public%20health%2C%20general",
-            "Health%20services%20research",
-            "Health%20sciences%2C%20other",
-            "Biological%20and%20biomedical%20sciences%2C%20other"
+            "Health sciences, other",
+            "Physiology, oncology and cancer biology",
+            "Exercise science and kinesiology",
+            "Biological and biomedical sciences, other"
         ],
         "top_level_categories": [
             "Biological and biomedical sciences",
@@ -52,28 +30,50 @@
         ],
         "mid_level_categories": [
             "Health sciences, other",
-            "Biological and biomedical sciences, other",
             "Physiology, oncology and cancer biology",
-            "Public health"
+            "Biological and biomedical sciences, other"
         ],
         "low_level_categories": [
-            "Biological and biomedical sciences nec",
             "Health sciences, general",
-            "Physiology, general",
-            "Health services research",
             "Exercise physiology and kinesiology",
-            "Exercise science and kinesiology",
+            "Physiology, general",
             "Biomedical sciences, general",
-            "Public health, general"
+            "Exercise science and kinesiology"
+        ],
+        "category_urls": [
+            "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other",
+            "Biological%20and%20biomedical%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
+            "Health%20sciences/Health%20sciences%2C%20other",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general",
+            "Health%20sciences",
+            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology"
+        ],
+        "top_category_urls": [
+            "Biological%20and%20biomedical%20sciences",
+            "Health%20sciences"
+        ],
+        "mid_category_urls": [
+            "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other",
+            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
+            "Health%20sciences/Health%20sciences%2C%20other"
+        ],
+        "low_category_urls": [
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general"
         ],
         "themes": [
-            "Arterial stiffness and cardiovascular health",
-            "Effects of blood flow restriction exercises",
-            "Comparison of autoregulated and non-autoregulated training methods"
+            "Comparison of exercise methodologies",
+            "Blood flow restriction exercise",
+            "Impact of exercise on health",
+            "Arterial stiffness"
         ],
-        "citation_map": {
-            "10.1249/01.mss.0001052868.70990.0c": 0
-        },
         "journals": [
             "Medicine &amp; Science in Sports &amp; Exercise"
         ]
@@ -82,50 +82,26 @@
         "_id": "nicholas-rolnick",
         "name": "Nicholas Rolnick",
         "total_citations": 0,
-        "article_count": 2,
-        "average_citations": 0,
         "department_affiliations": [
             "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)"
         ],
         "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1249/01.mss.0001052868.70990.0c"
         ],
         "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
             "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
         ],
         "categories": [
-            "Biological and biomedical sciences nec",
             "Health sciences, general",
-            "Physiology, general",
-            "Biological and biomedical sciences, other",
-            "Exercise science and kinesiology",
-            "Physiology, oncology and cancer biology",
-            "Health sciences, other",
             "Exercise physiology and kinesiology",
             "Health sciences",
-            "Public health, general",
+            "Physiology, general",
             "Biomedical sciences, general",
             "Biological and biomedical sciences",
-            "Health services research",
-            "Public health"
-        ],
-        "category_urls": [
-            "Health%20sciences%2C%20general",
-            "Public%20health",
-            "Physiology%2C%20general",
-            "Health%20sciences",
-            "Physiology%2C%20oncology%20and%20cancer%20biology",
-            "Biomedical%20sciences%2C%20general",
-            "Exercise%20science%20and%20kinesiology",
-            "Exercise%20physiology%20and%20kinesiology",
-            "Biological%20and%20biomedical%20sciences%20nec",
-            "Biological%20and%20biomedical%20sciences",
-            "Public%20health%2C%20general",
-            "Health%20services%20research",
-            "Health%20sciences%2C%20other",
-            "Biological%20and%20biomedical%20sciences%2C%20other"
+            "Health sciences, other",
+            "Physiology, oncology and cancer biology",
+            "Exercise science and kinesiology",
+            "Biological and biomedical sciences, other"
         ],
         "top_level_categories": [
             "Biological and biomedical sciences",
@@ -133,28 +109,50 @@
         ],
         "mid_level_categories": [
             "Health sciences, other",
-            "Biological and biomedical sciences, other",
             "Physiology, oncology and cancer biology",
-            "Public health"
+            "Biological and biomedical sciences, other"
         ],
         "low_level_categories": [
-            "Biological and biomedical sciences nec",
             "Health sciences, general",
-            "Physiology, general",
-            "Health services research",
             "Exercise physiology and kinesiology",
-            "Exercise science and kinesiology",
+            "Physiology, general",
             "Biomedical sciences, general",
-            "Public health, general"
+            "Exercise science and kinesiology"
+        ],
+        "category_urls": [
+            "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other",
+            "Biological%20and%20biomedical%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
+            "Health%20sciences/Health%20sciences%2C%20other",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general",
+            "Health%20sciences",
+            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology"
+        ],
+        "top_category_urls": [
+            "Biological%20and%20biomedical%20sciences",
+            "Health%20sciences"
+        ],
+        "mid_category_urls": [
+            "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other",
+            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
+            "Health%20sciences/Health%20sciences%2C%20other"
+        ],
+        "low_category_urls": [
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general"
         ],
         "themes": [
-            "Arterial stiffness and cardiovascular health",
-            "Effects of blood flow restriction exercises",
-            "Comparison of autoregulated and non-autoregulated training methods"
+            "Comparison of exercise methodologies",
+            "Blood flow restriction exercise",
+            "Impact of exercise on health",
+            "Arterial stiffness"
         ],
-        "citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        },
         "journals": [
             "Medicine &amp; Science in Sports &amp; Exercise"
         ]
@@ -163,50 +161,26 @@
         "_id": "susannah-taylor",
         "name": "Susannah Taylor",
         "total_citations": 0,
-        "article_count": 2,
-        "average_citations": 0,
         "department_affiliations": [
             "Salisbury University, Salisbury, MD."
         ],
         "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1249/01.mss.0001052868.70990.0c"
         ],
         "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
             "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
         ],
         "categories": [
-            "Biological and biomedical sciences nec",
             "Health sciences, general",
-            "Physiology, general",
-            "Biological and biomedical sciences, other",
-            "Exercise science and kinesiology",
-            "Physiology, oncology and cancer biology",
-            "Health sciences, other",
             "Exercise physiology and kinesiology",
             "Health sciences",
-            "Public health, general",
+            "Physiology, general",
             "Biomedical sciences, general",
             "Biological and biomedical sciences",
-            "Health services research",
-            "Public health"
-        ],
-        "category_urls": [
-            "Health%20sciences%2C%20general",
-            "Public%20health",
-            "Physiology%2C%20general",
-            "Health%20sciences",
-            "Physiology%2C%20oncology%20and%20cancer%20biology",
-            "Biomedical%20sciences%2C%20general",
-            "Exercise%20science%20and%20kinesiology",
-            "Exercise%20physiology%20and%20kinesiology",
-            "Biological%20and%20biomedical%20sciences%20nec",
-            "Biological%20and%20biomedical%20sciences",
-            "Public%20health%2C%20general",
-            "Health%20services%20research",
-            "Health%20sciences%2C%20other",
-            "Biological%20and%20biomedical%20sciences%2C%20other"
+            "Health sciences, other",
+            "Physiology, oncology and cancer biology",
+            "Exercise science and kinesiology",
+            "Biological and biomedical sciences, other"
         ],
         "top_level_categories": [
             "Biological and biomedical sciences",
@@ -214,28 +188,50 @@
         ],
         "mid_level_categories": [
             "Health sciences, other",
-            "Biological and biomedical sciences, other",
             "Physiology, oncology and cancer biology",
-            "Public health"
+            "Biological and biomedical sciences, other"
         ],
         "low_level_categories": [
-            "Biological and biomedical sciences nec",
             "Health sciences, general",
-            "Physiology, general",
-            "Health services research",
             "Exercise physiology and kinesiology",
-            "Exercise science and kinesiology",
+            "Physiology, general",
             "Biomedical sciences, general",
-            "Public health, general"
+            "Exercise science and kinesiology"
+        ],
+        "category_urls": [
+            "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other",
+            "Biological%20and%20biomedical%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
+            "Health%20sciences/Health%20sciences%2C%20other",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general",
+            "Health%20sciences",
+            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology"
+        ],
+        "top_category_urls": [
+            "Biological%20and%20biomedical%20sciences",
+            "Health%20sciences"
+        ],
+        "mid_category_urls": [
+            "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other",
+            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
+            "Health%20sciences/Health%20sciences%2C%20other"
+        ],
+        "low_category_urls": [
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general"
         ],
         "themes": [
-            "Arterial stiffness and cardiovascular health",
-            "Effects of blood flow restriction exercises",
-            "Comparison of autoregulated and non-autoregulated training methods"
+            "Comparison of exercise methodologies",
+            "Blood flow restriction exercise",
+            "Impact of exercise on health",
+            "Arterial stiffness"
         ],
-        "citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        },
         "journals": [
             "Medicine &amp; Science in Sports &amp; Exercise"
         ]
@@ -244,50 +240,26 @@
         "_id": "lisa-marquette",
         "name": "Lisa Marquette",
         "total_citations": 0,
-        "article_count": 2,
-        "average_citations": 0,
         "department_affiliations": [
             "Salisbury University, Salisbury, MD."
         ],
         "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1249/01.mss.0001052868.70990.0c"
         ],
         "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
             "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
         ],
         "categories": [
-            "Biological and biomedical sciences nec",
             "Health sciences, general",
-            "Physiology, general",
-            "Biological and biomedical sciences, other",
-            "Exercise science and kinesiology",
-            "Physiology, oncology and cancer biology",
-            "Health sciences, other",
             "Exercise physiology and kinesiology",
             "Health sciences",
-            "Public health, general",
+            "Physiology, general",
             "Biomedical sciences, general",
             "Biological and biomedical sciences",
-            "Health services research",
-            "Public health"
-        ],
-        "category_urls": [
-            "Health%20sciences%2C%20general",
-            "Public%20health",
-            "Physiology%2C%20general",
-            "Health%20sciences",
-            "Physiology%2C%20oncology%20and%20cancer%20biology",
-            "Biomedical%20sciences%2C%20general",
-            "Exercise%20science%20and%20kinesiology",
-            "Exercise%20physiology%20and%20kinesiology",
-            "Biological%20and%20biomedical%20sciences%20nec",
-            "Biological%20and%20biomedical%20sciences",
-            "Public%20health%2C%20general",
-            "Health%20services%20research",
-            "Health%20sciences%2C%20other",
-            "Biological%20and%20biomedical%20sciences%2C%20other"
+            "Health sciences, other",
+            "Physiology, oncology and cancer biology",
+            "Exercise science and kinesiology",
+            "Biological and biomedical sciences, other"
         ],
         "top_level_categories": [
             "Biological and biomedical sciences",
@@ -295,28 +267,50 @@
         ],
         "mid_level_categories": [
             "Health sciences, other",
-            "Biological and biomedical sciences, other",
             "Physiology, oncology and cancer biology",
-            "Public health"
+            "Biological and biomedical sciences, other"
         ],
         "low_level_categories": [
-            "Biological and biomedical sciences nec",
             "Health sciences, general",
-            "Physiology, general",
-            "Health services research",
             "Exercise physiology and kinesiology",
-            "Exercise science and kinesiology",
+            "Physiology, general",
             "Biomedical sciences, general",
-            "Public health, general"
+            "Exercise science and kinesiology"
+        ],
+        "category_urls": [
+            "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other",
+            "Biological%20and%20biomedical%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
+            "Health%20sciences/Health%20sciences%2C%20other",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general",
+            "Health%20sciences",
+            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology"
+        ],
+        "top_category_urls": [
+            "Biological%20and%20biomedical%20sciences",
+            "Health%20sciences"
+        ],
+        "mid_category_urls": [
+            "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other",
+            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
+            "Health%20sciences/Health%20sciences%2C%20other"
+        ],
+        "low_category_urls": [
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general"
         ],
         "themes": [
-            "Arterial stiffness and cardiovascular health",
-            "Effects of blood flow restriction exercises",
-            "Comparison of autoregulated and non-autoregulated training methods"
+            "Comparison of exercise methodologies",
+            "Blood flow restriction exercise",
+            "Impact of exercise on health",
+            "Arterial stiffness"
         ],
-        "citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        },
         "journals": [
             "Medicine &amp; Science in Sports &amp; Exercise"
         ]
@@ -325,50 +319,26 @@
         "_id": "brent-fedorko",
         "name": "Brent Fedorko",
         "total_citations": 0,
-        "article_count": 2,
-        "average_citations": 0,
         "department_affiliations": [
             "Salisbury University, Salisbury, MD."
         ],
         "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1249/01.mss.0001052868.70990.0c"
         ],
         "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
             "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
         ],
         "categories": [
-            "Biological and biomedical sciences nec",
             "Health sciences, general",
-            "Physiology, general",
-            "Biological and biomedical sciences, other",
-            "Exercise science and kinesiology",
-            "Physiology, oncology and cancer biology",
-            "Health sciences, other",
             "Exercise physiology and kinesiology",
             "Health sciences",
-            "Public health, general",
+            "Physiology, general",
             "Biomedical sciences, general",
             "Biological and biomedical sciences",
-            "Health services research",
-            "Public health"
-        ],
-        "category_urls": [
-            "Health%20sciences%2C%20general",
-            "Public%20health",
-            "Physiology%2C%20general",
-            "Health%20sciences",
-            "Physiology%2C%20oncology%20and%20cancer%20biology",
-            "Biomedical%20sciences%2C%20general",
-            "Exercise%20science%20and%20kinesiology",
-            "Exercise%20physiology%20and%20kinesiology",
-            "Biological%20and%20biomedical%20sciences%20nec",
-            "Biological%20and%20biomedical%20sciences",
-            "Public%20health%2C%20general",
-            "Health%20services%20research",
-            "Health%20sciences%2C%20other",
-            "Biological%20and%20biomedical%20sciences%2C%20other"
+            "Health sciences, other",
+            "Physiology, oncology and cancer biology",
+            "Exercise science and kinesiology",
+            "Biological and biomedical sciences, other"
         ],
         "top_level_categories": [
             "Biological and biomedical sciences",
@@ -376,28 +346,50 @@
         ],
         "mid_level_categories": [
             "Health sciences, other",
-            "Biological and biomedical sciences, other",
             "Physiology, oncology and cancer biology",
-            "Public health"
+            "Biological and biomedical sciences, other"
         ],
         "low_level_categories": [
-            "Biological and biomedical sciences nec",
             "Health sciences, general",
-            "Physiology, general",
-            "Health services research",
             "Exercise physiology and kinesiology",
-            "Exercise science and kinesiology",
+            "Physiology, general",
             "Biomedical sciences, general",
-            "Public health, general"
+            "Exercise science and kinesiology"
+        ],
+        "category_urls": [
+            "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other",
+            "Biological%20and%20biomedical%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
+            "Health%20sciences/Health%20sciences%2C%20other",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general",
+            "Health%20sciences",
+            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology"
+        ],
+        "top_category_urls": [
+            "Biological%20and%20biomedical%20sciences",
+            "Health%20sciences"
+        ],
+        "mid_category_urls": [
+            "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other",
+            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
+            "Health%20sciences/Health%20sciences%2C%20other"
+        ],
+        "low_category_urls": [
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general"
         ],
         "themes": [
-            "Arterial stiffness and cardiovascular health",
-            "Effects of blood flow restriction exercises",
-            "Comparison of autoregulated and non-autoregulated training methods"
+            "Comparison of exercise methodologies",
+            "Blood flow restriction exercise",
+            "Impact of exercise on health",
+            "Arterial stiffness"
         ],
-        "citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        },
         "journals": [
             "Medicine &amp; Science in Sports &amp; Exercise"
         ]
@@ -406,50 +398,26 @@
         "_id": "jessica-walters",
         "name": "Jessica Walters",
         "total_citations": 0,
-        "article_count": 2,
-        "average_citations": 0,
         "department_affiliations": [
             "Salisbury University, Salisbury, MD."
         ],
         "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1249/01.mss.0001052868.70990.0c"
         ],
         "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
             "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
         ],
         "categories": [
-            "Biological and biomedical sciences nec",
             "Health sciences, general",
-            "Physiology, general",
-            "Biological and biomedical sciences, other",
-            "Exercise science and kinesiology",
-            "Physiology, oncology and cancer biology",
-            "Health sciences, other",
             "Exercise physiology and kinesiology",
             "Health sciences",
-            "Public health, general",
+            "Physiology, general",
             "Biomedical sciences, general",
             "Biological and biomedical sciences",
-            "Health services research",
-            "Public health"
-        ],
-        "category_urls": [
-            "Health%20sciences%2C%20general",
-            "Public%20health",
-            "Physiology%2C%20general",
-            "Health%20sciences",
-            "Physiology%2C%20oncology%20and%20cancer%20biology",
-            "Biomedical%20sciences%2C%20general",
-            "Exercise%20science%20and%20kinesiology",
-            "Exercise%20physiology%20and%20kinesiology",
-            "Biological%20and%20biomedical%20sciences%20nec",
-            "Biological%20and%20biomedical%20sciences",
-            "Public%20health%2C%20general",
-            "Health%20services%20research",
-            "Health%20sciences%2C%20other",
-            "Biological%20and%20biomedical%20sciences%2C%20other"
+            "Health sciences, other",
+            "Physiology, oncology and cancer biology",
+            "Exercise science and kinesiology",
+            "Biological and biomedical sciences, other"
         ],
         "top_level_categories": [
             "Biological and biomedical sciences",
@@ -457,28 +425,50 @@
         ],
         "mid_level_categories": [
             "Health sciences, other",
-            "Biological and biomedical sciences, other",
             "Physiology, oncology and cancer biology",
-            "Public health"
+            "Biological and biomedical sciences, other"
         ],
         "low_level_categories": [
-            "Biological and biomedical sciences nec",
             "Health sciences, general",
-            "Physiology, general",
-            "Health services research",
             "Exercise physiology and kinesiology",
-            "Exercise science and kinesiology",
+            "Physiology, general",
             "Biomedical sciences, general",
-            "Public health, general"
+            "Exercise science and kinesiology"
+        ],
+        "category_urls": [
+            "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other",
+            "Biological%20and%20biomedical%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
+            "Health%20sciences/Health%20sciences%2C%20other",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general",
+            "Health%20sciences",
+            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology"
+        ],
+        "top_category_urls": [
+            "Biological%20and%20biomedical%20sciences",
+            "Health%20sciences"
+        ],
+        "mid_category_urls": [
+            "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other",
+            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
+            "Health%20sciences/Health%20sciences%2C%20other"
+        ],
+        "low_category_urls": [
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general"
         ],
         "themes": [
-            "Arterial stiffness and cardiovascular health",
-            "Effects of blood flow restriction exercises",
-            "Comparison of autoregulated and non-autoregulated training methods"
+            "Comparison of exercise methodologies",
+            "Blood flow restriction exercise",
+            "Impact of exercise on health",
+            "Arterial stiffness"
         ],
-        "citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        },
         "journals": [
             "Medicine &amp; Science in Sports &amp; Exercise"
         ]
@@ -487,50 +477,26 @@
         "_id": "tim-werner",
         "name": "Tim Werner",
         "total_citations": 0,
-        "article_count": 2,
-        "average_citations": 0,
         "department_affiliations": [
             "Salisbury University, Salisbury, MD."
         ],
         "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1249/01.mss.0001052868.70990.0c"
         ],
         "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
             "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
         ],
         "categories": [
-            "Biological and biomedical sciences nec",
             "Health sciences, general",
-            "Physiology, general",
-            "Biological and biomedical sciences, other",
-            "Exercise science and kinesiology",
-            "Physiology, oncology and cancer biology",
-            "Health sciences, other",
             "Exercise physiology and kinesiology",
             "Health sciences",
-            "Public health, general",
+            "Physiology, general",
             "Biomedical sciences, general",
             "Biological and biomedical sciences",
-            "Health services research",
-            "Public health"
-        ],
-        "category_urls": [
-            "Health%20sciences%2C%20general",
-            "Public%20health",
-            "Physiology%2C%20general",
-            "Health%20sciences",
-            "Physiology%2C%20oncology%20and%20cancer%20biology",
-            "Biomedical%20sciences%2C%20general",
-            "Exercise%20science%20and%20kinesiology",
-            "Exercise%20physiology%20and%20kinesiology",
-            "Biological%20and%20biomedical%20sciences%20nec",
-            "Biological%20and%20biomedical%20sciences",
-            "Public%20health%2C%20general",
-            "Health%20services%20research",
-            "Health%20sciences%2C%20other",
-            "Biological%20and%20biomedical%20sciences%2C%20other"
+            "Health sciences, other",
+            "Physiology, oncology and cancer biology",
+            "Exercise science and kinesiology",
+            "Biological and biomedical sciences, other"
         ],
         "top_level_categories": [
             "Biological and biomedical sciences",
@@ -538,146 +504,432 @@
         ],
         "mid_level_categories": [
             "Health sciences, other",
-            "Biological and biomedical sciences, other",
             "Physiology, oncology and cancer biology",
+            "Biological and biomedical sciences, other"
+        ],
+        "low_level_categories": [
+            "Health sciences, general",
+            "Exercise physiology and kinesiology",
+            "Physiology, general",
+            "Biomedical sciences, general",
+            "Exercise science and kinesiology"
+        ],
+        "category_urls": [
+            "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other",
+            "Biological%20and%20biomedical%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
+            "Health%20sciences/Health%20sciences%2C%20other",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general",
+            "Health%20sciences",
+            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology"
+        ],
+        "top_category_urls": [
+            "Biological%20and%20biomedical%20sciences",
+            "Health%20sciences"
+        ],
+        "mid_category_urls": [
+            "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other",
+            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
+            "Health%20sciences/Health%20sciences%2C%20other"
+        ],
+        "low_category_urls": [
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general"
+        ],
+        "themes": [
+            "Comparison of exercise methodologies",
+            "Blood flow restriction exercise",
+            "Impact of exercise on health",
+            "Arterial stiffness"
+        ],
+        "journals": [
+            "Medicine &amp; Science in Sports &amp; Exercise"
+        ]
+    },
+    {
+        "_id": "karsin-m.-bachran",
+        "name": "Karsin M. Bachran",
+        "total_citations": 0,
+        "department_affiliations": [
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
+        ],
+        "dois": [
+            "10.1656/045.031.s1222"
+        ],
+        "titles": [
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+        ],
+        "categories": [
+            "Health sciences, general",
+            "Ecology, evolutionary biology, and epidemiology",
+            "Exercise physiology and kinesiology",
+            "Health sciences",
+            "Physiology, general",
+            "Biomedical sciences, general",
+            "Ecology",
+            "Biological and biomedical sciences",
+            "Ecology and evolutionary biology",
+            "Health sciences, other",
+            "Physiology, oncology and cancer biology",
+            "Exercise science and kinesiology",
+            "Biological and biomedical sciences, other"
+        ],
+        "top_level_categories": [
+            "Biological and biomedical sciences"
+        ],
+        "mid_level_categories": [
+            "Ecology, evolutionary biology, and epidemiology"
+        ],
+        "low_level_categories": [
+            "Ecology",
+            "Ecology and evolutionary biology"
+        ],
+        "category_urls": [
+            "Biological%20and%20biomedical%20sciences/Ecology%2C%20evolutionary%20biology%2C%20and%20epidemiology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology%20and%20evolutionary%20biology",
+            "Biological%20and%20biomedical%20sciences"
+        ],
+        "top_category_urls": [
+            "Biological%20and%20biomedical%20sciences"
+        ],
+        "mid_category_urls": [
+            "Biological%20and%20biomedical%20sciences/Ecology%2C%20evolutionary%20biology%2C%20and%20epidemiology"
+        ],
+        "low_category_urls": [
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology%20and%20evolutionary%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology"
+        ],
+        "themes": [
+            "Effects of predation on turtle behavior",
+            "Ecological implications of injuries in wildlife",
+            "Impact of nonlethal injuries on movement patterns"
+        ],
+        "journals": [
+            "Northeastern Naturalist"
+        ]
+    },
+    {
+        "_id": "tami.-s.-ransom",
+        "name": "Tami. S. Ransom",
+        "total_citations": 0,
+        "department_affiliations": [
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801."
+        ],
+        "dois": [
+            "10.1656/045.031.s1222"
+        ],
+        "titles": [
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+        ],
+        "categories": [
+            "Health sciences, general",
+            "Ecology, evolutionary biology, and epidemiology",
+            "Exercise physiology and kinesiology",
+            "Health sciences",
+            "Physiology, general",
+            "Biomedical sciences, general",
+            "Ecology",
+            "Biological and biomedical sciences",
+            "Ecology and evolutionary biology",
+            "Health sciences, other",
+            "Physiology, oncology and cancer biology",
+            "Exercise science and kinesiology",
+            "Biological and biomedical sciences, other"
+        ],
+        "top_level_categories": [
+            "Biological and biomedical sciences"
+        ],
+        "mid_level_categories": [
+            "Ecology, evolutionary biology, and epidemiology"
+        ],
+        "low_level_categories": [
+            "Ecology",
+            "Ecology and evolutionary biology"
+        ],
+        "category_urls": [
+            "Biological%20and%20biomedical%20sciences/Ecology%2C%20evolutionary%20biology%2C%20and%20epidemiology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology%20and%20evolutionary%20biology",
+            "Biological%20and%20biomedical%20sciences"
+        ],
+        "top_category_urls": [
+            "Biological%20and%20biomedical%20sciences"
+        ],
+        "mid_category_urls": [
+            "Biological%20and%20biomedical%20sciences/Ecology%2C%20evolutionary%20biology%2C%20and%20epidemiology"
+        ],
+        "low_category_urls": [
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology%20and%20evolutionary%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology"
+        ],
+        "themes": [
+            "Effects of predation on turtle behavior",
+            "Ecological implications of injuries in wildlife",
+            "Impact of nonlethal injuries on movement patterns"
+        ],
+        "journals": [
+            "Northeastern Naturalist"
+        ]
+    },
+    {
+        "_id": "eric-b.-liebgold",
+        "name": "Eric B. Liebgold",
+        "total_citations": 0,
+        "department_affiliations": [
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
+        ],
+        "dois": [
+            "10.1656/045.031.s1222"
+        ],
+        "titles": [
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+        ],
+        "categories": [
+            "Health sciences, general",
+            "Ecology, evolutionary biology, and epidemiology",
+            "Exercise physiology and kinesiology",
+            "Health sciences",
+            "Physiology, general",
+            "Biomedical sciences, general",
+            "Ecology",
+            "Biological and biomedical sciences",
+            "Ecology and evolutionary biology",
+            "Health sciences, other",
+            "Physiology, oncology and cancer biology",
+            "Exercise science and kinesiology",
+            "Biological and biomedical sciences, other"
+        ],
+        "top_level_categories": [
+            "Biological and biomedical sciences"
+        ],
+        "mid_level_categories": [
+            "Ecology, evolutionary biology, and epidemiology"
+        ],
+        "low_level_categories": [
+            "Ecology",
+            "Ecology and evolutionary biology"
+        ],
+        "category_urls": [
+            "Biological%20and%20biomedical%20sciences/Ecology%2C%20evolutionary%20biology%2C%20and%20epidemiology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology%20and%20evolutionary%20biology",
+            "Biological%20and%20biomedical%20sciences"
+        ],
+        "top_category_urls": [
+            "Biological%20and%20biomedical%20sciences"
+        ],
+        "mid_category_urls": [
+            "Biological%20and%20biomedical%20sciences/Ecology%2C%20evolutionary%20biology%2C%20and%20epidemiology"
+        ],
+        "low_category_urls": [
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology%20and%20evolutionary%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology"
+        ],
+        "themes": [
+            "Effects of predation on turtle behavior",
+            "Ecological implications of injuries in wildlife",
+            "Impact of nonlethal injuries on movement patterns"
+        ],
+        "journals": [
+            "Northeastern Naturalist"
+        ]
+    },
+    {
+        "_id": "s-maykrantz",
+        "name": "S Maykrantz",
+        "total_citations": 0,
+        "department_affiliations": [
+            "School of Health Sciences, Salisbury University , Salisbury,"
+        ],
+        "dois": [
+            "10.1093/eurpub/ckae144.1261"
+        ],
+        "titles": [
+            "An Innovative Public Health Solution with European Features for an American Problem"
+        ],
+        "categories": [
+            "Ecology, evolutionary biology, and epidemiology",
+            "Public health, general",
+            "Health sciences",
+            "Biomedical sciences, general",
+            "Sociology, demography, and population studies nec",
+            "Ecology and evolutionary biology",
+            "Biological and biomedical sciences, other",
+            "Sociology, demography, and population studies",
+            "Public policy analysis, general",
+            "Health policy analysis",
+            "Health sciences, general",
+            "Public policy analysis",
+            "Sociology, general",
+            "Health services research",
+            "Social sciences",
+            "Health sciences, other",
+            "Exercise physiology and kinesiology",
+            "Physiology, general",
+            "Ecology",
+            "Exercise science and kinesiology",
+            "Biological and biomedical sciences",
+            "Physiology, oncology and cancer biology",
+            "Public health"
+        ],
+        "top_level_categories": [
+            "Social sciences",
+            "Health sciences"
+        ],
+        "mid_level_categories": [
+            "Sociology, demography, and population studies",
+            "Public policy analysis",
             "Public health"
         ],
         "low_level_categories": [
-            "Biological and biomedical sciences nec",
-            "Health sciences, general",
-            "Physiology, general",
+            "Public policy analysis, general",
+            "Public health, general",
+            "Sociology, general",
             "Health services research",
-            "Exercise physiology and kinesiology",
-            "Exercise science and kinesiology",
-            "Biomedical sciences, general",
-            "Public health, general"
+            "Sociology, demography, and population studies nec",
+            "Health policy analysis"
+        ],
+        "category_urls": [
+            "Social%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20policy%20analysis",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20services%20research",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Public%20health%2C%20general",
+            "Social%20sciences/Public%20policy%20analysis",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Sociology%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Public%20policy%20analysis%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Sociology%2C%20demography%2C%20and%20population%20studies%20nec",
+            "Health%20sciences/Public%20health",
+            "Health%20sciences",
+            "Social%20sciences/Sociology%2C%20demography%2C%20and%20population%20studies"
+        ],
+        "top_category_urls": [
+            "Social%20sciences",
+            "Health%20sciences"
+        ],
+        "mid_category_urls": [
+            "Social%20sciences/Public%20policy%20analysis",
+            "Health%20sciences/Public%20health",
+            "Social%20sciences/Sociology%2C%20demography%2C%20and%20population%20studies"
+        ],
+        "low_category_urls": [
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20policy%20analysis",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20services%20research",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Public%20health%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Sociology%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Public%20policy%20analysis%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Sociology%2C%20demography%2C%20and%20population%20studies%20nec"
         ],
         "themes": [
-            "Arterial stiffness and cardiovascular health",
-            "Effects of blood flow restriction exercises",
-            "Comparison of autoregulated and non-autoregulated training methods"
+            "Healthcare Funding Equity",
+            "International Collaboration in Public Health",
+            "Public Health Disparities",
+            "Population Health Management"
         ],
-        "citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        },
         "journals": [
-            "Medicine &amp; Science in Sports &amp; Exercise"
+            "European Journal of Public Health"
         ]
     },
     {
-        "_id": "sean-zupnik",
-        "name": "Sean Zupnik",
+        "_id": "m-diriker",
+        "name": "M Diriker",
         "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
         "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
+            "Board of Directors, Tidal Health System , Salisbury,",
+            "Perdue School of Business, Salisbury University , Salisbury,"
         ],
         "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1093/eurpub/ckae144.1261"
         ],
         "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+            "An Innovative Public Health Solution with European Features for an American Problem"
         ],
         "categories": [
-            "Biological and biomedical sciences nec",
-            "Health sciences, general",
-            "Physiology, general",
-            "Biological and biomedical sciences, other",
-            "Physiology, oncology and cancer biology",
-            "Exercise physiology and kinesiology",
-            "Health sciences",
+            "Ecology, evolutionary biology, and epidemiology",
             "Public health, general",
-            "Exercise science and kinesiology",
+            "Health sciences",
             "Biomedical sciences, general",
-            "Health sciences, other",
-            "Biological and biomedical sciences",
+            "Sociology, demography, and population studies nec",
+            "Ecology and evolutionary biology",
+            "Biological and biomedical sciences, other",
+            "Sociology, demography, and population studies",
+            "Public policy analysis, general",
+            "Health policy analysis",
+            "Health sciences, general",
+            "Public policy analysis",
+            "Sociology, general",
             "Health services research",
+            "Social sciences",
+            "Health sciences, other",
+            "Exercise physiology and kinesiology",
+            "Physiology, general",
+            "Ecology",
+            "Exercise science and kinesiology",
+            "Biological and biomedical sciences",
+            "Physiology, oncology and cancer biology",
             "Public health"
         ],
-        "category_urls": [
-            "Biological%20and%20biomedical%20sciences",
-            "Health%20sciences%2C%20general",
-            "Public%20health",
-            "Physiology%2C%20general",
-            "Health%20sciences",
-            "Physiology%2C%20oncology%20and%20cancer%20biology",
-            "Biomedical%20sciences%2C%20general",
-            "Exercise%20science%20and%20kinesiology",
-            "Exercise%20physiology%20and%20kinesiology",
-            "Biological%20and%20biomedical%20sciences%20nec",
-            "Public%20health%2C%20general",
-            "Health%20services%20research",
-            "Health%20sciences%2C%20other",
-            "Biological%20and%20biomedical%20sciences%2C%20other"
+        "top_level_categories": [
+            "Social sciences",
+            "Health sciences"
         ],
-        "top_level_categories": [],
-        "mid_level_categories": [],
-        "low_level_categories": [],
-        "themes": [],
-        "citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        },
-        "journals": [
-            "Medicine &amp; Science in Sports &amp; Exercise"
-        ]
-    },
-    {
-        "_id": "masoud-moghaddam",
-        "name": "Masoud Moghaddam",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "department_affiliations": [
-            "UMES, Princess Anne, MD."
-        ],
-        "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
-        ],
-        "categories": [
-            "Biological and biomedical sciences nec",
-            "Health sciences, general",
-            "Physiology, general",
-            "Biological and biomedical sciences, other",
-            "Physiology, oncology and cancer biology",
-            "Exercise physiology and kinesiology",
-            "Health sciences",
-            "Public health, general",
-            "Exercise science and kinesiology",
-            "Biomedical sciences, general",
-            "Health sciences, other",
-            "Biological and biomedical sciences",
-            "Health services research",
+        "mid_level_categories": [
+            "Sociology, demography, and population studies",
+            "Public policy analysis",
             "Public health"
         ],
-        "category_urls": [
-            "Biological%20and%20biomedical%20sciences",
-            "Health%20sciences%2C%20general",
-            "Public%20health",
-            "Physiology%2C%20general",
-            "Health%20sciences",
-            "Physiology%2C%20oncology%20and%20cancer%20biology",
-            "Biomedical%20sciences%2C%20general",
-            "Exercise%20science%20and%20kinesiology",
-            "Exercise%20physiology%20and%20kinesiology",
-            "Biological%20and%20biomedical%20sciences%20nec",
-            "Public%20health%2C%20general",
-            "Health%20services%20research",
-            "Health%20sciences%2C%20other",
-            "Biological%20and%20biomedical%20sciences%2C%20other"
+        "low_level_categories": [
+            "Public policy analysis, general",
+            "Public health, general",
+            "Sociology, general",
+            "Health services research",
+            "Sociology, demography, and population studies nec",
+            "Health policy analysis"
         ],
-        "top_level_categories": [],
-        "mid_level_categories": [],
-        "low_level_categories": [],
-        "themes": [],
-        "citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        },
+        "category_urls": [
+            "Social%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20policy%20analysis",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20services%20research",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Public%20health%2C%20general",
+            "Social%20sciences/Public%20policy%20analysis",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Sociology%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Public%20policy%20analysis%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Sociology%2C%20demography%2C%20and%20population%20studies%20nec",
+            "Health%20sciences/Public%20health",
+            "Health%20sciences",
+            "Social%20sciences/Sociology%2C%20demography%2C%20and%20population%20studies"
+        ],
+        "top_category_urls": [
+            "Social%20sciences",
+            "Health%20sciences"
+        ],
+        "mid_category_urls": [
+            "Social%20sciences/Public%20policy%20analysis",
+            "Health%20sciences/Public%20health",
+            "Social%20sciences/Sociology%2C%20demography%2C%20and%20population%20studies"
+        ],
+        "low_category_urls": [
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20policy%20analysis",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20services%20research",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Public%20health%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Sociology%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Public%20policy%20analysis%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Sociology%2C%20demography%2C%20and%20population%20studies%20nec"
+        ],
+        "themes": [
+            "Healthcare Funding Equity",
+            "International Collaboration in Public Health",
+            "Public Health Disparities",
+            "Population Health Management"
+        ],
         "journals": [
-            "Medicine &amp; Science in Sports &amp; Exercise"
+            "European Journal of Public Health"
         ]
     }
 ]
