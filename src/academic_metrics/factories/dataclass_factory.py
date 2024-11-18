@@ -1,10 +1,10 @@
-from typing import Type, Dict
-from dataclasses import dataclass
-from academic_metrics.enums import DataClassTypes
-from academic_metrics.constants import LOG_DIR_PATH
-
 import logging
 import os
+from dataclasses import dataclass
+from typing import Dict, Type
+
+from academic_metrics.constants import LOG_DIR_PATH
+from academic_metrics.enums import DataClassTypes
 
 
 class DataClassFactory:

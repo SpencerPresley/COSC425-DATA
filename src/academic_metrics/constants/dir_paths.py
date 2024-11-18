@@ -1,5 +1,5 @@
 from pathlib import Path
-from typing import cast, Optional
+from typing import Optional, cast
 
 
 def find_project_root(marker: str = "COSC425-DATA") -> Path:

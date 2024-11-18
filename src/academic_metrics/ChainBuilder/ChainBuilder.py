@@ -1,38 +1,39 @@
 from __future__ import annotations
 
+import json
 import logging
 import os
 import warnings
+from pathlib import Path
 from typing import (
     Any,
-    cast,
+    Callable,
     Dict,
     List,
+    Literal,
     Optional,
     Tuple,
     TypeVar,
     Union,
-    Literal,
-    Callable,
+    cast,
 )
-from pathlib import Path
-from pydantic import BaseModel, ValidationError
-import json
+
 from langchain.prompts import (
-    SystemMessagePromptTemplate,
-    HumanMessagePromptTemplate,
     ChatPromptTemplate,
+    HumanMessagePromptTemplate,
     PromptTemplate,
+    SystemMessagePromptTemplate,
 )
 from langchain.schema.runnable import Runnable, RunnablePassthrough
-from langchain_openai import ChatOpenAI
 from langchain_anthropic import ChatAnthropic
-from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.output_parsers import (
-    PydanticOutputParser,
     JsonOutputParser,
+    PydanticOutputParser,
     StrOutputParser,
 )
+from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_openai import ChatOpenAI
+from pydantic import BaseModel, ValidationError
 
 # ! THIS NEEDS TO BE REMOVED WHEN THIS IS MADE A STANDALONE PACKAGE
 from academic_metrics.constants import LOG_DIR_PATH
@@ -354,9 +355,9 @@ class ChainWrapper:
             TypeError,
         ) as main_chain_exception:
             self.logger.info(f"Error in main chain: {main_chain_exception}")
-            self.logger.info(f"Attempting to execute fallback chain")
+            self.logger.info("Attempting to execute fallback chain")
             if self.fallback_chain and not is_last_chain:
-                self.logger.info(f"Fallback chain provided, executing fallback chain")
+                self.logger.info("Fallback chain provided, executing fallback chain")
                 try:
                     # Attempt to invoke the fallback chain
                     output: Any = self.fallback_chain.invoke(input_data)
@@ -371,13 +372,13 @@ class ChainWrapper:
                             f"Error in fallback chain: {fallback_exception.errors()}"
                         )
                         self.logger.debug(
-                            f"A json decode error occurred in the main chain. Executing fallback chain. If you didn't provide a fallback chain it will not be ran, since it was a json decode error you should check how you're telling the LLM to output the json and make sure it matches your pydantic model. Additionally, LLMs will sometimes output invalid characters to json such as Latex code, leading to invalide escape sequences or characters. If this is the case you should try StrOutputParser() if it isn't your last chain layer. If it is your last chain layer, try simplifying your pydantic model and enhancing your prompt to avoid this issue. If you are using a LLM such as 'gpt-4o-mini' or 'claude-3.5-haiku' you may see better results with a larger model such as 'gpt-4o' or 'claude-3.5-sonnet'."
+                            "A json decode error occurred in the main chain. Executing fallback chain. If you didn't provide a fallback chain it will not be ran, since it was a json decode error you should check how you're telling the LLM to output the json and make sure it matches your pydantic model. Additionally, LLMs will sometimes output invalid characters to json such as Latex code, leading to invalide escape sequences or characters. If this is the case you should try StrOutputParser() if it isn't your last chain layer. If it is your last chain layer, try simplifying your pydantic model and enhancing your prompt to avoid this issue. If you are using a LLM such as 'gpt-4o-mini' or 'claude-3.5-haiku' you may see better results with a larger model such as 'gpt-4o' or 'claude-3.5-sonnet'."
                         )
                         raise fallback_exception
             else:
                 if isinstance(main_chain_exception, json.JSONDecodeError):
                     self.logger.debug(
-                        f"A json decode error occurred in the main chain. Executing fallback chain. If you didn't provide a fallback chain it will not be ran, since it was a json decode error you should check how you're telling the LLM to output the json and make sure it matches your pydantic model. Additionally, LLMs will sometimes output invalid characters to json such as Latex code, leading to invalide escape sequences or characters. If this is the case you should try StrOutputParser() if it isn't your last chain layer. If it is your last chain layer, try simplifying your pydantic model and enhancing your prompt to avoid this issue. If you are using a LLM such as 'gpt-4o-mini' or 'claude-3.5-haiku' you may see better results with a larger model such as 'gpt-4o' or 'claude-3.5-sonnet'."
+                        "A json decode error occurred in the main chain. Executing fallback chain. If you didn't provide a fallback chain it will not be ran, since it was a json decode error you should check how you're telling the LLM to output the json and make sure it matches your pydantic model. Additionally, LLMs will sometimes output invalid characters to json such as Latex code, leading to invalide escape sequences or characters. If this is the case you should try StrOutputParser() if it isn't your last chain layer. If it is your last chain layer, try simplifying your pydantic model and enhancing your prompt to avoid this issue. If you are using a LLM such as 'gpt-4o-mini' or 'claude-3.5-haiku' you may see better results with a larger model such as 'gpt-4o' or 'claude-3.5-sonnet'."
                     )
                     raise main_chain_exception
 
@@ -669,11 +670,11 @@ class ChainManager:
         )
         self.logger.info(f"Initialized LLM: {self.llm}")
 
-        self.logger.info(f"Initializing ChainComposer")
+        self.logger.info("Initializing ChainComposer")
         self.chain_composer: ChainComposer = ChainComposer(logger=self.logger)
         self.logger.info(f"Initialized ChainComposer: {self.chain_composer}")
 
-        self.logger.info(f"Initializing Chain Variables")
+        self.logger.info("Initializing Chain Variables")
         self.chain_variables: Dict[str, Any] = {}
         self.logger.info(f"Initialized Chain Variables: {self.chain_variables}")
 

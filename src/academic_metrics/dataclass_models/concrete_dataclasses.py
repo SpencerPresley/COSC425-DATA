@@ -1,9 +1,10 @@
-from dataclasses import field, dataclass
-from typing import Set, List, Dict, Any
+from dataclasses import dataclass, field
+from typing import Any, Dict, List, Set
+
+from academic_metrics.enums import DataClassTypes
+from academic_metrics.factories import DataClassFactory
 
 from .abstract_base_dataclass import AbstractBaseDataClass
-from academic_metrics.factories import DataClassFactory
-from academic_metrics.enums import DataClassTypes
 
 
 @dataclass

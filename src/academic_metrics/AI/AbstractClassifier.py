@@ -1,15 +1,12 @@
 from __future__ import annotations
 
-import traceback
 import json
 import logging
 import os
+import traceback
 from collections import defaultdict
-from typing import Any, Dict, List, Tuple, TYPE_CHECKING, Union, cast, Optional, Self
+from typing import TYPE_CHECKING, Any, Dict, List, Optional, Self, Tuple, Union, cast
 
-from dotenv import load_dotenv
-
-from academic_metrics.ChainBuilder import ChainManager
 from academic_metrics.ai_data_models.ai_pydantic_models import (
     AbstractSentenceAnalysis,
     AbstractSummary,
@@ -41,6 +38,7 @@ from academic_metrics.ai_prompts.theme_prompts import (
     THEME_RECOGNITION_JSON_FORMAT,
     THEME_RECOGNITION_SYSTEM_MESSAGE,
 )
+from academic_metrics.ChainBuilder import ChainManager
 from academic_metrics.constants import LOG_DIR_PATH
 
 if TYPE_CHECKING:

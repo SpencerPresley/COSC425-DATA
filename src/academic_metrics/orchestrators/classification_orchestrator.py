@@ -1,19 +1,18 @@
 from __future__ import annotations
 
-from typing import TYPE_CHECKING, List, Dict, Callable, Tuple
 import logging
 import os
+from typing import TYPE_CHECKING, Callable, Dict, List, Tuple
 
 from pylatexenc.latex2text import LatexNodes2Text
 from unidecode import unidecode
 
-from academic_metrics.enums import AttributeTypes
 from academic_metrics.AI import AbstractClassifier
 from academic_metrics.constants import LOG_DIR_PATH
+from academic_metrics.enums import AttributeTypes
 
 if TYPE_CHECKING:
     from academic_metrics.utils import Utilities
-    from academic_metrics.utils.taxonomy_util import Taxonomy
 
 """
 If you want to get a dictionary back from AbstractClassifier.get_classification_results_by_doi() method

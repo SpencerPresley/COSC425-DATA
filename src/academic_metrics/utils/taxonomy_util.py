@@ -1,10 +1,10 @@
 import json
-from typing import Dict, List
 import logging
 import os
+from typing import Dict, List
+
 from academic_metrics.constants import LOG_DIR_PATH
 from academic_metrics.other.in_memory_taxonomy import TAXONOMY_AS_STRING
-
 
 # Alias for the taxonomy dictionary structure to be used for type hinting the taxonomy dictionary
 TaxonomyDict = Dict[str, Dict[str, List[str]]]

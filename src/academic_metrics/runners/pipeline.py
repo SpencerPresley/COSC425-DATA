@@ -1,36 +1,31 @@
-import os
 import json
-from typing import Callable, Dict, TypedDict, List, Any
 import logging
-
+import os
+from typing import Any, Callable, Dict, List, TypedDict
 from urllib.parse import quote, unquote
 
-from academic_metrics.core import (
-    CategoryProcessor,
-    FacultyPostprocessor,
+from academic_metrics.constants import (
+    INPUT_FILES_DIR_PATH,
+    LOG_DIR_PATH,
+    OUTPUT_FILES_DIR_PATH,
+    SPLIT_FILES_DIR_PATH,
 )
+from academic_metrics.core import CategoryProcessor, FacultyPostprocessor
+from academic_metrics.data_collection import CrossrefWrapper, Scraper
+from academic_metrics.DB import DatabaseWrapper
+from academic_metrics.enums import AttributeTypes
+from academic_metrics.factories import DataClassFactory
 from academic_metrics.orchestrators import (
     CategoryDataOrchestrator,
     ClassificationOrchestrator,
 )
-from academic_metrics.data_collection import CrossrefWrapper, Scraper
+from academic_metrics.strategies import StrategyFactory
 from academic_metrics.utils import (
+    APIKeyValidator,
     ClassifierFactory,
-    WarningManager,
     Taxonomy,
     Utilities,
-    APIKeyValidator,
-)
-from academic_metrics.enums import AttributeTypes
-from academic_metrics.factories import DataClassFactory
-from academic_metrics.strategies import StrategyFactory
-from academic_metrics.DB import DatabaseWrapper
-
-from academic_metrics.constants import (
-    INPUT_FILES_DIR_PATH,
-    SPLIT_FILES_DIR_PATH,
-    OUTPUT_FILES_DIR_PATH,
-    LOG_DIR_PATH,
+    WarningManager,
 )
 
 
@@ -246,7 +241,7 @@ class PipelineRunner:
         self.logger.info("=" * 80)
         # Run classification on all data
         # comment out to run without AI for testing
-        self.logger.info(f"\n\nRUNNING CLASSIFICATION\n\n")
+        self.logger.info("\n\nRUNNING CLASSIFICATION\n\n")
         data = self.classification_orchestrator.run_classification(data)
 
         # Process classified data and generate category statistics

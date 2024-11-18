@@ -1,34 +1,29 @@
 from __future__ import annotations
 
 import json
-import os
-from typing import TYPE_CHECKING, Union, Dict, List
 import logging
-
-
-from academic_metrics.dataclass_models import (
-    CategoryInfo,
-    FacultyStats,
-)
+import os
+from typing import TYPE_CHECKING, Dict, List, Union
 
 from academic_metrics.constants import LOG_DIR_PATH
+from academic_metrics.dataclass_models import CategoryInfo, FacultyStats
 
 if TYPE_CHECKING:
+    from academic_metrics.core import (
+        CategoryProcessor,
+        FacultyPostprocessor,
+        NameVariation,
+    )
+    from academic_metrics.dataclass_models import (
+        CrossrefArticleDetails,
+        CrossrefArticleStats,
+        FacultyInfo,
+    )
     from academic_metrics.factories import (
         DataClassFactory,
         StrategyFactory,
-        WarningManager,
         Utilities,
-    )
-    from academic_metrics.core import (
-        FacultyPostprocessor,
-        NameVariation,
-        CategoryProcessor,
-    )
-    from academic_metrics.dataclass_models import (
-        FacultyInfo,
-        CrossrefArticleStats,
-        CrossrefArticleDetails,
+        WarningManager,
     )
 
 

@@ -1,9 +1,9 @@
 from __future__ import annotations
-from urllib.parse import quote
 
-from typing import TYPE_CHECKING, List, Any, Dict, Tuple, Set
 import logging
 import os
+from typing import TYPE_CHECKING, Any, Dict, List, Set, Tuple
+from urllib.parse import quote
 
 if TYPE_CHECKING:
     from academic_metrics.dataclass_models import (
@@ -18,8 +18,8 @@ if TYPE_CHECKING:
     from academic_metrics.factories import DataClassFactory
     from academic_metrics.utils.taxonomy_util import Taxonomy
 
-from academic_metrics.enums import AttributeTypes, DataClassTypes
 from academic_metrics.constants import LOG_DIR_PATH
+from academic_metrics.enums import AttributeTypes, DataClassTypes
 
 
 class CategoryProcessor:

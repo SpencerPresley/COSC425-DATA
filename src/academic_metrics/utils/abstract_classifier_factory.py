@@ -1,9 +1,9 @@
 # abstract_classifier_factory.py
 from __future__ import annotations
 
-from typing import Dict, TYPE_CHECKING
 import logging
 import os
+from typing import TYPE_CHECKING, Dict
 
 if TYPE_CHECKING:
     from academic_metrics.utils.taxonomy_util import Taxonomy

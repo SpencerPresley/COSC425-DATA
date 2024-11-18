@@ -1,12 +1,9 @@
 import logging
 import os
-from typing import Dict, Optional, TYPE_CHECKING
 from dataclasses import dataclass
+from typing import TYPE_CHECKING, Dict, Optional
 
 if TYPE_CHECKING:
-    from langchain_openai import ChatOpenAI
-    from langchain_anthropic import ChatAnthropic
-    from langchain_google_genai import ChatGoogleGenerativeAI
     from langchain.schema.runnable import Runnable
 
 from academic_metrics.constants import LOG_DIR_PATH
@@ -53,8 +50,8 @@ class APIKeyValidator:
         from langchain.prompts import (
             ChatPromptTemplate,
             HumanMessagePromptTemplate,
-            SystemMessagePromptTemplate,
             PromptTemplate,
+            SystemMessagePromptTemplate,
         )
 
         results: ValidationResult = ValidationResult()

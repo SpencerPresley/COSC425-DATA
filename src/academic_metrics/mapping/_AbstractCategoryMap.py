@@ -1,8 +1,8 @@
-import os
 import json
-from typing import Tuple
+import os
+
 from academic_metrics.enums import AttributeTypes
-from academic_metrics.utils import WarningManager, Utilities
+from academic_metrics.utils import Utilities, WarningManager
 
 
 class AbstractCategoryMap:

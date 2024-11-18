@@ -2,9 +2,9 @@ import logging
 import os
 from typing import TYPE_CHECKING
 
+from academic_metrics.constants import LOG_DIR_PATH
 from academic_metrics.enums import AttributeTypes
 from academic_metrics.utils import WarningManager
-from academic_metrics.constants import LOG_DIR_PATH
 
 if TYPE_CHECKING:
     from academic_metrics.strategies import AttributeExtractionStrategy

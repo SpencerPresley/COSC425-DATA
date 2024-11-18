@@ -1,12 +1,13 @@
 from __future__ import annotations
-import time
-import json
-import os
-import logging
+
 import asyncio
+import json
+import logging
+import os
+import time
+from typing import TYPE_CHECKING
+
 import aiohttp
-from tqdm.asyncio import tqdm
-from typing import Optional, TYPE_CHECKING
 
 if TYPE_CHECKING:
     from .scraper import Scraper
@@ -110,7 +111,7 @@ class CrossrefWrapper:
                         num_iter += 1
                         continue
                     elif response.status == 200:
-                        logging.info(f"Getting data from response...")
+                        logging.info("Getting data from response...")
                         data = await response.json()
                         return data
                     else:
@@ -246,11 +247,11 @@ class CrossrefWrapper:
 
             data = data.get("message", {})
             if data == {}:
-                logging.debug(f"No data to process")
+                logging.debug("No data to process")
                 return (None, None)
             total_docs = data.get("total-results", 0)
             if total_docs == 0:
-                logging.debug(f"No docs to process")
+                logging.debug("No docs to process")
                 return (None, None)
             self.logger.info(f"Processing API Pages from {from_date} to {to_date}")
 

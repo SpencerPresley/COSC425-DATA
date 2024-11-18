@@ -1,16 +1,18 @@
-import os
-import logging
 import json
-from pydantic import BaseModel
+import logging
+import os
+from typing import Any, Dict
+
 from bs4 import BeautifulSoup
-from selenium import webdriver
-from selenium.webdriver.firefox.service import Service
 from dotenv import load_dotenv
 from openai import OpenAI
-from webdriver_manager.firefox import GeckoDriverManager
+from pydantic import BaseModel
+from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.firefox.service import Service
+from webdriver_manager.firefox import GeckoDriverManager
+
 from academic_metrics.ChainBuilder import ChainManager
-from typing import Any, Dict
 from academic_metrics.constants import LOG_DIR_PATH
 
 # # Load environment variables
@@ -264,7 +266,7 @@ class Scraper:
                 # service = Service(GeckoDriverManager().install())
                 # driver = webdriver.Firefox(service=service, options=options)
 
-                self.logger.debug(f"Setting up driver")
+                self.logger.debug("Setting up driver")
                 try:
                     driver = webdriver.Firefox(
                         service=self.service, options=self.options
@@ -273,7 +275,7 @@ class Scraper:
                     self.logger.error(f"Error setting up driver: {e}")
                     return None
 
-                self.logger.debug(f"Getting page content")
+                self.logger.debug("Getting page content")
                 try:
                     driver.get(url)
                     page_content = driver.page_source
@@ -283,7 +285,7 @@ class Scraper:
 
                 self.logger.debug(f"Page content preview:\n\n{page_content[:50]}\n\n")
 
-                self.logger.debug(f"Quitting driver")
+                self.logger.debug("Quitting driver")
                 try:
                     driver.quit()
                 except Exception as e:
@@ -319,7 +321,7 @@ class Scraper:
                         if meta_tag and "content" in meta_tag.attrs:
                             output_list.append(meta_tag["content"])
                             text += meta_tag["content"]
-                    self.logger.info(f"Finished processing meta tags")
+                    self.logger.info("Finished processing meta tags")
                 except Exception as e:
                     self.logger.error(f"Error processing meta tags: {e}")
 
@@ -329,7 +331,7 @@ class Scraper:
                     for p in p_tags:
                         if "abstract" in p.get_text().lower():
                             output_list.append(p.get_text())
-                    self.logger.info(f"Finished processing paragraph tags")
+                    self.logger.info("Finished processing paragraph tags")
                 except Exception as e:
                     self.logger.error(f"Error processing paragraph tags: {e}")
 
@@ -340,7 +342,7 @@ class Scraper:
                         div_tags = soup.find_all("div", class_=class_name)
                         for div_tag in div_tags:
                             output_list.append(div_tag.get_text())
-                    self.logger.info(f"Finished processing div tags")
+                    self.logger.info("Finished processing div tags")
                 except Exception as e:
                     self.logger.error(f"Error processing div tags: {e}")
 
@@ -349,7 +351,7 @@ class Scraper:
                     article_tags = soup.find_all("article")
                     for article_tag in article_tags:
                         output_list.append(article_tag.get_text())
-                    self.logger.info(f"Finished processing article tags")
+                    self.logger.info("Finished processing article tags")
                 except Exception as e:
                     self.logger.error(f"Error processing article tags: {e}")
 
@@ -358,7 +360,7 @@ class Scraper:
                     span_tags = soup.find_all("span")
                     for span_tag in span_tags:
                         output_list.append(span_tag.get_text())
-                    self.logger.info(f"Finished processing span tags")
+                    self.logger.info("Finished processing span tags")
                 except Exception as e:
                     self.logger.error(f"Error processing span tags: {e}")
 

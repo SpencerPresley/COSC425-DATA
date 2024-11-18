@@ -1,12 +1,13 @@
-import os
+import atexit
 import json
 import logging
+import os
+from typing import Any, Dict, List
+
 from dotenv import load_dotenv
+from pymongo.collection import Collection
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
-from pymongo.collection import Collection
-from typing import List, Dict, Any
-import atexit
 
 # Setup logging
 logging.basicConfig(
@@ -206,7 +207,7 @@ class DatabaseWrapper:
         self.category_collection.delete_many({})
         self.article_collection.delete_many({})
         self.faculty_collection.delete_many({})
-        logging.info(f"Cleared the entire collection")
+        logging.info("Cleared the entire collection")
 
     def close_connection(self):
         """

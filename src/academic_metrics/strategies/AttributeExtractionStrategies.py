@@ -1,17 +1,19 @@
-import os
-import logging
-import re
-from html import unescape
-from bs4 import BeautifulSoup
 import json
-from abc import ABC, abstractmethod
+import logging
+import os
+import re
 import uuid
-from typing import Any, List, Dict
+from abc import ABC, abstractmethod
+from html import unescape
+from typing import Any, Dict, List
 
-from academic_metrics.utils import configure_logger, WarningManager
-from .strategy_factory import StrategyFactory
-from academic_metrics.enums import AttributeTypes
+from bs4 import BeautifulSoup
+
 from academic_metrics.constants import LOG_DIR_PATH
+from academic_metrics.enums import AttributeTypes
+from academic_metrics.utils import WarningManager
+
+from .strategy_factory import StrategyFactory
 
 
 class AttributeExtractionStrategy(ABC):

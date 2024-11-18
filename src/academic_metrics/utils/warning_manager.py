@@ -1,6 +1,6 @@
-import warnings
 import logging
 import os
+import warnings
 from typing import List
 
 
@@ -150,7 +150,7 @@ class WarningManager:
             )
             if user_input.isdigit() and 1 <= int(user_input) <= len(self.warnings):
                 warning: CustomWarning = self.warnings[int(user_input) - 1]
-                print(f"\nFull Warning Details:")
+                print("\nFull Warning Details:")
                 print(f"Category: {warning.category}")
                 print(f"Message: {warning.message}")
                 print(f"Entry ID: {warning.entry_id}")

@@ -2,19 +2,20 @@
 This script compares publication titles from Digital Measures (DM) and Web of Science (WoS) datasets. It loads titles from both sources, compares them using exact and fuzzy matching, and provides statistics on the overlap and differences between the two datasets. The script also includes utility functions for data processing and visualization.
 """
 
-import os
-import json
 import glob
+import json
+import os
 import re
-from datasketch import MinHash, MinHashLSH
-from typing import Set, Dict, List, Any, Tuple
+import time
+from typing import Any, Dict, List, Set, Tuple
+from urllib.parse import quote
+
 import requests
+from datasketch import MinHash, MinHashLSH
+from tqdm import tqdm
+
 from academic_metrics.strategies import StrategyFactory
 from academic_metrics.utils import WarningManager
-import time
-from tqdm import tqdm
-import sys
-from urllib.parse import quote
 
 
 def query_crossref(
@@ -340,9 +341,9 @@ def do_dm_verification(crossref: bool = False, second_run: bool = False) -> None
         None
     """
     if crossref:
-        print(f"Analysis for Crossref API\n\n")
+        print("Analysis for Crossref API\n\n")
     else:
-        print(f"\n\nAnalysis for Web of Science Export\n\n")
+        print("\n\nAnalysis for Web of Science Export\n\n")
 
     reformatted_files_dir: str = os.path.join(
         os.path.dirname(__file__), "reformattedFiles"

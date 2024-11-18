@@ -1,6 +1,6 @@
-from dataclasses import dataclass, asdict, fields
-from typing import Any, Dict, Set, List
 from abc import ABC
+from dataclasses import asdict, dataclass, fields
+from typing import Any, Dict, List, Set
 
 
 @dataclass
