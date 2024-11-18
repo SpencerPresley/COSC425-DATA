@@ -20,8 +20,11 @@ from academic_metrics.utils import (
     Utilities,
     APIKeyValidator,
 )
+from academic_metrics.enums import AttributeTypes
 from academic_metrics.factories import DataClassFactory
 from academic_metrics.strategies import StrategyFactory
+from academic_metrics.DB import DatabaseWrapper
+
 from academic_metrics.constants import (
     INPUT_FILES_DIR_PATH,
     SPLIT_FILES_DIR_PATH,
@@ -51,6 +54,9 @@ class PipelineRunner:
         crossref_affiliation: str,
         data_from_year: int,
         data_to_year: int,
+        mongodb_url: str,
+        db_name: str = "Site_Data",
+        debug: bool = False,
     ):
         # Set up pipeline-wide logger
         self.log_file_path = os.path.join(LOG_DIR_PATH, "pipeline.log")
@@ -79,6 +85,9 @@ class PipelineRunner:
         self.logger.info("Initializing PipelineRunner")
 
         self.ai_api_key = ai_api_key
+        self.db_name = db_name
+        self.mongodb_url = mongodb_url
+        self.db = self._create_db()
         self.scraper = self._create_scraper()
         self.crossref_wrapper = self._create_crossref_wrapper(
             affiliation=crossref_affiliation,
@@ -93,12 +102,18 @@ class PipelineRunner:
         self.dataclass_factory = self._create_dataclass_factory()
         self.category_processor = self._create_category_processor()
         self.faculty_postprocessor = self._create_faculty_postprocessor()
-
+        self.debug = debug
         self.logger.info("PipelineRunner initialized successfully")
 
     def run_pipeline(
         self, save_offline_kwargs: SaveOfflineKwargs = SAVE_OFFLINE_KWARGS
     ):
+        # Get the existing DOIs from the database
+        # so that we don't process duplicates
+        existing_dois = self.db.get_dois()
+        self.logger.info(f"Found {len(existing_dois)} existing DOIs in database")
+
+        # Get data from crossref for the school and date range
         data: List[Dict[str, Any]] = []
         if save_offline_kwargs["offline"]:
             if save_offline_kwargs["run_crossref_before_file_load"]:
@@ -111,10 +126,36 @@ class PipelineRunner:
             # save_to_db = True
             data = self.crossref_wrapper.run_all_process()
 
+        # Filter out articles whose DOIs are already in the db or those that are not found
+        already_existing_count = 0
+        filtered_data = []
+        for article in data:
+            # Get the DOI out of the article item
+            attribute_results = self.utilities.get_attributes(
+                article, [AttributeTypes.CROSSREF_DOI]
+            )
+            # Unpack the DOI from the dict returned by get_attributes
+            doi = attribute_results[AttributeTypes.CROSSREF_DOI]
+            # Only keep articles that have a DOI and aren't already in the database
+            if doi[0] and doi[1] not in existing_dois:
+                filtered_data.append(article)
+            else:
+                already_existing_count += 1
+
+        self.logger.info(f"Filtered out {already_existing_count} articles")
+
+        data = filtered_data
+
         self.logger.info(f"\n\nDATA: {data}\n\n")
         self.logger.info("=" * 80)
-        data = data[:3]
-        self.logger.info(f"\n\nSLICED DATA:\n{data}\n\n")
+        if self.debug:
+            print(f"There are {len(data)} articles to process.")
+            response = input("Would you like to slice the data? (y/n)")
+            if response == "y":
+                res = input("How many articles would you like to process?")
+                data = data[: int(res)]
+                self.logger.info(f"\n\nSLICED DATA:\n{data}\n\n")
+
         self.logger.info("=" * 80)
         # Run classification on all data
         # comment out to run without AI for testing
@@ -122,9 +163,35 @@ class PipelineRunner:
         data = self.classification_orchestrator.run_classification(data)
 
         # Process classified data and generate category statistics
-        self._create_orchestrator(
+        category_orchestrator = self._create_orchestrator(
             data=data, extend=save_offline_kwargs["extend"]
-        ).run_orchestrator()
+        )
+        category_orchestrator.run_orchestrator()
+
+        # Get all the processed data from CategoryDataOrchestrator
+        self.logger.info("Getting final data...")
+
+        category_data = category_orchestrator.get_final_category_data()
+        # faculty_data = self.category_orchestrator.get_final_faculty_data()
+        article_data = category_orchestrator.get_final_article_data()
+        global_faculty_data = category_orchestrator.get_final_global_faculty_data()
+
+        self.logger.info("Attempting to save data to database...")
+        try:
+            self.db.run_all_process(
+                category_data=category_data,
+                article_data=article_data,
+                faculty_data=global_faculty_data,
+            )
+            self.logger.info(
+                f"""Successfully saved to database!
+                Categories: {len(category_data)}
+                Articles: {len(article_data)}
+                Faculty: {len(global_faculty_data)}
+                """
+            )
+        except Exception as e:
+            self.logger.error(f"Error saving to database: {e}")
 
     def _create_taxonomy(self) -> Taxonomy:
         return Taxonomy()
@@ -243,16 +310,22 @@ class PipelineRunner:
     def _create_scraper(self) -> Scraper:
         return Scraper(api_key=self.ai_api_key)
 
+    def _create_db(self) -> DatabaseWrapper:
+        return DatabaseWrapper(db_name=self.db_name, mongo_url=self.mongodb_url)
+
 
 if __name__ == "__main__":
     from dotenv import load_dotenv
 
     load_dotenv()
     ai_api_key = os.getenv("OPENAI_API_KEY")
+    mongodb_url = os.getenv("MONGODB_URL")
     pipeline_runner = PipelineRunner(
         ai_api_key=ai_api_key,
         crossref_affiliation="Salisbury%20University",
         data_from_year=2024,
         data_to_year=2024,
+        mongodb_url=mongodb_url,
+        debug=True,
     )
     pipeline_runner.run_pipeline()

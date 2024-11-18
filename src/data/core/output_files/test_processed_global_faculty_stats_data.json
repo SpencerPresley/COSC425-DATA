@@ -1,935 +1,564 @@
 [
     {
-        "_id": "campbell-ruffhead",
-        "name": "Campbell Ruffhead",
+        "_id": "suzanne-l.-osman",
+        "name": "Suzanne L. Osman",
         "total_citations": 0,
         "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
+            "Department of Psychology, Salisbury University, Salisbury, MD, USA"
         ],
         "dois": [
-            "10.1249/01.mss.0001052868.70990.0c"
+            "10.1177/10778012241234897"
         ],
         "titles": [
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+            "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy"
         ],
         "categories": [
-            "Health sciences, general",
-            "Exercise physiology and kinesiology",
-            "Health sciences",
-            "Physiology, general",
-            "Biomedical sciences, general",
-            "Biological and biomedical sciences",
-            "Health sciences, other",
-            "Physiology, oncology and cancer biology",
-            "Exercise science and kinesiology",
-            "Biological and biomedical sciences, other"
-        ],
-        "top_level_categories": [
-            "Biological and biomedical sciences",
-            "Health sciences"
-        ],
-        "mid_level_categories": [
-            "Health sciences, other",
-            "Physiology, oncology and cancer biology",
-            "Biological and biomedical sciences, other"
-        ],
-        "low_level_categories": [
-            "Health sciences, general",
-            "Exercise physiology and kinesiology",
-            "Physiology, general",
-            "Biomedical sciences, general",
-            "Exercise science and kinesiology"
-        ],
-        "category_urls": [
-            "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other",
-            "Biological%20and%20biomedical%20sciences",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
-            "Health%20sciences/Health%20sciences%2C%20other",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general",
-            "Health%20sciences",
-            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology"
-        ],
-        "top_category_urls": [
-            "Biological%20and%20biomedical%20sciences",
-            "Health%20sciences"
-        ],
-        "mid_category_urls": [
-            "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other",
-            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
-            "Health%20sciences/Health%20sciences%2C%20other"
-        ],
-        "low_category_urls": [
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general"
-        ],
-        "themes": [
-            "Comparison of exercise methodologies",
-            "Blood flow restriction exercise",
-            "Impact of exercise on health",
-            "Arterial stiffness"
-        ],
-        "journals": [
-            "Medicine &amp; Science in Sports &amp; Exercise"
-        ]
-    },
-    {
-        "_id": "nicholas-rolnick",
-        "name": "Nicholas Rolnick",
-        "total_citations": 0,
-        "department_affiliations": [
-            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c"
-        ],
-        "titles": [
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "categories": [
-            "Health sciences, general",
-            "Exercise physiology and kinesiology",
-            "Health sciences",
-            "Physiology, general",
-            "Biomedical sciences, general",
-            "Biological and biomedical sciences",
-            "Health sciences, other",
-            "Physiology, oncology and cancer biology",
-            "Exercise science and kinesiology",
-            "Biological and biomedical sciences, other"
-        ],
-        "top_level_categories": [
-            "Biological and biomedical sciences",
-            "Health sciences"
-        ],
-        "mid_level_categories": [
-            "Health sciences, other",
-            "Physiology, oncology and cancer biology",
-            "Biological and biomedical sciences, other"
-        ],
-        "low_level_categories": [
-            "Health sciences, general",
-            "Exercise physiology and kinesiology",
-            "Physiology, general",
-            "Biomedical sciences, general",
-            "Exercise science and kinesiology"
-        ],
-        "category_urls": [
-            "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other",
-            "Biological%20and%20biomedical%20sciences",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
-            "Health%20sciences/Health%20sciences%2C%20other",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general",
-            "Health%20sciences",
-            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology"
-        ],
-        "top_category_urls": [
-            "Biological%20and%20biomedical%20sciences",
-            "Health%20sciences"
-        ],
-        "mid_category_urls": [
-            "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other",
-            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
-            "Health%20sciences/Health%20sciences%2C%20other"
-        ],
-        "low_category_urls": [
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general"
-        ],
-        "themes": [
-            "Comparison of exercise methodologies",
-            "Blood flow restriction exercise",
-            "Impact of exercise on health",
-            "Arterial stiffness"
-        ],
-        "journals": [
-            "Medicine &amp; Science in Sports &amp; Exercise"
-        ]
-    },
-    {
-        "_id": "susannah-taylor",
-        "name": "Susannah Taylor",
-        "total_citations": 0,
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c"
-        ],
-        "titles": [
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "categories": [
-            "Health sciences, general",
-            "Exercise physiology and kinesiology",
-            "Health sciences",
-            "Physiology, general",
-            "Biomedical sciences, general",
-            "Biological and biomedical sciences",
-            "Health sciences, other",
-            "Physiology, oncology and cancer biology",
-            "Exercise science and kinesiology",
-            "Biological and biomedical sciences, other"
-        ],
-        "top_level_categories": [
-            "Biological and biomedical sciences",
-            "Health sciences"
-        ],
-        "mid_level_categories": [
-            "Health sciences, other",
-            "Physiology, oncology and cancer biology",
-            "Biological and biomedical sciences, other"
-        ],
-        "low_level_categories": [
-            "Health sciences, general",
-            "Exercise physiology and kinesiology",
-            "Physiology, general",
-            "Biomedical sciences, general",
-            "Exercise science and kinesiology"
-        ],
-        "category_urls": [
-            "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other",
-            "Biological%20and%20biomedical%20sciences",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
-            "Health%20sciences/Health%20sciences%2C%20other",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general",
-            "Health%20sciences",
-            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology"
-        ],
-        "top_category_urls": [
-            "Biological%20and%20biomedical%20sciences",
-            "Health%20sciences"
-        ],
-        "mid_category_urls": [
-            "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other",
-            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
-            "Health%20sciences/Health%20sciences%2C%20other"
-        ],
-        "low_category_urls": [
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general"
-        ],
-        "themes": [
-            "Comparison of exercise methodologies",
-            "Blood flow restriction exercise",
-            "Impact of exercise on health",
-            "Arterial stiffness"
-        ],
-        "journals": [
-            "Medicine &amp; Science in Sports &amp; Exercise"
-        ]
-    },
-    {
-        "_id": "lisa-marquette",
-        "name": "Lisa Marquette",
-        "total_citations": 0,
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c"
-        ],
-        "titles": [
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "categories": [
-            "Health sciences, general",
-            "Exercise physiology and kinesiology",
-            "Health sciences",
-            "Physiology, general",
-            "Biomedical sciences, general",
-            "Biological and biomedical sciences",
-            "Health sciences, other",
-            "Physiology, oncology and cancer biology",
-            "Exercise science and kinesiology",
-            "Biological and biomedical sciences, other"
-        ],
-        "top_level_categories": [
-            "Biological and biomedical sciences",
-            "Health sciences"
-        ],
-        "mid_level_categories": [
-            "Health sciences, other",
-            "Physiology, oncology and cancer biology",
-            "Biological and biomedical sciences, other"
-        ],
-        "low_level_categories": [
-            "Health sciences, general",
-            "Exercise physiology and kinesiology",
-            "Physiology, general",
-            "Biomedical sciences, general",
-            "Exercise science and kinesiology"
-        ],
-        "category_urls": [
-            "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other",
-            "Biological%20and%20biomedical%20sciences",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
-            "Health%20sciences/Health%20sciences%2C%20other",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general",
-            "Health%20sciences",
-            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology"
-        ],
-        "top_category_urls": [
-            "Biological%20and%20biomedical%20sciences",
-            "Health%20sciences"
-        ],
-        "mid_category_urls": [
-            "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other",
-            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
-            "Health%20sciences/Health%20sciences%2C%20other"
-        ],
-        "low_category_urls": [
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general"
-        ],
-        "themes": [
-            "Comparison of exercise methodologies",
-            "Blood flow restriction exercise",
-            "Impact of exercise on health",
-            "Arterial stiffness"
-        ],
-        "journals": [
-            "Medicine &amp; Science in Sports &amp; Exercise"
-        ]
-    },
-    {
-        "_id": "brent-fedorko",
-        "name": "Brent Fedorko",
-        "total_citations": 0,
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c"
-        ],
-        "titles": [
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "categories": [
-            "Health sciences, general",
-            "Exercise physiology and kinesiology",
-            "Health sciences",
-            "Physiology, general",
-            "Biomedical sciences, general",
-            "Biological and biomedical sciences",
-            "Health sciences, other",
-            "Physiology, oncology and cancer biology",
-            "Exercise science and kinesiology",
-            "Biological and biomedical sciences, other"
-        ],
-        "top_level_categories": [
-            "Biological and biomedical sciences",
-            "Health sciences"
-        ],
-        "mid_level_categories": [
-            "Health sciences, other",
-            "Physiology, oncology and cancer biology",
-            "Biological and biomedical sciences, other"
-        ],
-        "low_level_categories": [
-            "Health sciences, general",
-            "Exercise physiology and kinesiology",
-            "Physiology, general",
-            "Biomedical sciences, general",
-            "Exercise science and kinesiology"
-        ],
-        "category_urls": [
-            "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other",
-            "Biological%20and%20biomedical%20sciences",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
-            "Health%20sciences/Health%20sciences%2C%20other",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general",
-            "Health%20sciences",
-            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology"
-        ],
-        "top_category_urls": [
-            "Biological%20and%20biomedical%20sciences",
-            "Health%20sciences"
-        ],
-        "mid_category_urls": [
-            "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other",
-            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
-            "Health%20sciences/Health%20sciences%2C%20other"
-        ],
-        "low_category_urls": [
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general"
-        ],
-        "themes": [
-            "Comparison of exercise methodologies",
-            "Blood flow restriction exercise",
-            "Impact of exercise on health",
-            "Arterial stiffness"
-        ],
-        "journals": [
-            "Medicine &amp; Science in Sports &amp; Exercise"
-        ]
-    },
-    {
-        "_id": "jessica-walters",
-        "name": "Jessica Walters",
-        "total_citations": 0,
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c"
-        ],
-        "titles": [
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "categories": [
-            "Health sciences, general",
-            "Exercise physiology and kinesiology",
-            "Health sciences",
-            "Physiology, general",
-            "Biomedical sciences, general",
-            "Biological and biomedical sciences",
-            "Health sciences, other",
-            "Physiology, oncology and cancer biology",
-            "Exercise science and kinesiology",
-            "Biological and biomedical sciences, other"
-        ],
-        "top_level_categories": [
-            "Biological and biomedical sciences",
-            "Health sciences"
-        ],
-        "mid_level_categories": [
-            "Health sciences, other",
-            "Physiology, oncology and cancer biology",
-            "Biological and biomedical sciences, other"
-        ],
-        "low_level_categories": [
-            "Health sciences, general",
-            "Exercise physiology and kinesiology",
-            "Physiology, general",
-            "Biomedical sciences, general",
-            "Exercise science and kinesiology"
-        ],
-        "category_urls": [
-            "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other",
-            "Biological%20and%20biomedical%20sciences",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
-            "Health%20sciences/Health%20sciences%2C%20other",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general",
-            "Health%20sciences",
-            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology"
-        ],
-        "top_category_urls": [
-            "Biological%20and%20biomedical%20sciences",
-            "Health%20sciences"
-        ],
-        "mid_category_urls": [
-            "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other",
-            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
-            "Health%20sciences/Health%20sciences%2C%20other"
-        ],
-        "low_category_urls": [
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general"
-        ],
-        "themes": [
-            "Comparison of exercise methodologies",
-            "Blood flow restriction exercise",
-            "Impact of exercise on health",
-            "Arterial stiffness"
-        ],
-        "journals": [
-            "Medicine &amp; Science in Sports &amp; Exercise"
-        ]
-    },
-    {
-        "_id": "tim-werner",
-        "name": "Tim Werner",
-        "total_citations": 0,
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c"
-        ],
-        "titles": [
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "categories": [
-            "Health sciences, general",
-            "Exercise physiology and kinesiology",
-            "Health sciences",
-            "Physiology, general",
-            "Biomedical sciences, general",
-            "Biological and biomedical sciences",
-            "Health sciences, other",
-            "Physiology, oncology and cancer biology",
-            "Exercise science and kinesiology",
-            "Biological and biomedical sciences, other"
-        ],
-        "top_level_categories": [
-            "Biological and biomedical sciences",
-            "Health sciences"
-        ],
-        "mid_level_categories": [
-            "Health sciences, other",
-            "Physiology, oncology and cancer biology",
-            "Biological and biomedical sciences, other"
-        ],
-        "low_level_categories": [
-            "Health sciences, general",
-            "Exercise physiology and kinesiology",
-            "Physiology, general",
-            "Biomedical sciences, general",
-            "Exercise science and kinesiology"
-        ],
-        "category_urls": [
-            "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other",
-            "Biological%20and%20biomedical%20sciences",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
-            "Health%20sciences/Health%20sciences%2C%20other",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general",
-            "Health%20sciences",
-            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology"
-        ],
-        "top_category_urls": [
-            "Biological%20and%20biomedical%20sciences",
-            "Health%20sciences"
-        ],
-        "mid_category_urls": [
-            "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other",
-            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
-            "Health%20sciences/Health%20sciences%2C%20other"
-        ],
-        "low_category_urls": [
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general"
-        ],
-        "themes": [
-            "Comparison of exercise methodologies",
-            "Blood flow restriction exercise",
-            "Impact of exercise on health",
-            "Arterial stiffness"
-        ],
-        "journals": [
-            "Medicine &amp; Science in Sports &amp; Exercise"
-        ]
-    },
-    {
-        "_id": "karsin-m.-bachran",
-        "name": "Karsin M. Bachran",
-        "total_citations": 0,
-        "department_affiliations": [
-            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
-        ],
-        "dois": [
-            "10.1656/045.031.s1222"
-        ],
-        "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
-        ],
-        "categories": [
-            "Health sciences, general",
-            "Ecology, evolutionary biology, and epidemiology",
-            "Exercise physiology and kinesiology",
-            "Health sciences",
-            "Physiology, general",
-            "Biomedical sciences, general",
-            "Ecology",
-            "Biological and biomedical sciences",
-            "Ecology and evolutionary biology",
-            "Health sciences, other",
-            "Physiology, oncology and cancer biology",
-            "Exercise science and kinesiology",
-            "Biological and biomedical sciences, other"
-        ],
-        "top_level_categories": [
-            "Biological and biomedical sciences"
-        ],
-        "mid_level_categories": [
-            "Ecology, evolutionary biology, and epidemiology"
-        ],
-        "low_level_categories": [
-            "Ecology",
-            "Ecology and evolutionary biology"
-        ],
-        "category_urls": [
-            "Biological%20and%20biomedical%20sciences/Ecology%2C%20evolutionary%20biology%2C%20and%20epidemiology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology%20and%20evolutionary%20biology",
-            "Biological%20and%20biomedical%20sciences"
-        ],
-        "top_category_urls": [
-            "Biological%20and%20biomedical%20sciences"
-        ],
-        "mid_category_urls": [
-            "Biological%20and%20biomedical%20sciences/Ecology%2C%20evolutionary%20biology%2C%20and%20epidemiology"
-        ],
-        "low_category_urls": [
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology%20and%20evolutionary%20biology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology"
-        ],
-        "themes": [
-            "Effects of predation on turtle behavior",
-            "Ecological implications of injuries in wildlife",
-            "Impact of nonlethal injuries on movement patterns"
-        ],
-        "journals": [
-            "Northeastern Naturalist"
-        ]
-    },
-    {
-        "_id": "tami.-s.-ransom",
-        "name": "Tami. S. Ransom",
-        "total_citations": 0,
-        "department_affiliations": [
-            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801."
-        ],
-        "dois": [
-            "10.1656/045.031.s1222"
-        ],
-        "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
-        ],
-        "categories": [
-            "Health sciences, general",
-            "Ecology, evolutionary biology, and epidemiology",
-            "Exercise physiology and kinesiology",
-            "Health sciences",
-            "Physiology, general",
-            "Biomedical sciences, general",
-            "Ecology",
-            "Biological and biomedical sciences",
-            "Ecology and evolutionary biology",
-            "Health sciences, other",
-            "Physiology, oncology and cancer biology",
-            "Exercise science and kinesiology",
-            "Biological and biomedical sciences, other"
-        ],
-        "top_level_categories": [
-            "Biological and biomedical sciences"
-        ],
-        "mid_level_categories": [
-            "Ecology, evolutionary biology, and epidemiology"
-        ],
-        "low_level_categories": [
-            "Ecology",
-            "Ecology and evolutionary biology"
-        ],
-        "category_urls": [
-            "Biological%20and%20biomedical%20sciences/Ecology%2C%20evolutionary%20biology%2C%20and%20epidemiology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology%20and%20evolutionary%20biology",
-            "Biological%20and%20biomedical%20sciences"
-        ],
-        "top_category_urls": [
-            "Biological%20and%20biomedical%20sciences"
-        ],
-        "mid_category_urls": [
-            "Biological%20and%20biomedical%20sciences/Ecology%2C%20evolutionary%20biology%2C%20and%20epidemiology"
-        ],
-        "low_category_urls": [
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology%20and%20evolutionary%20biology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology"
-        ],
-        "themes": [
-            "Effects of predation on turtle behavior",
-            "Ecological implications of injuries in wildlife",
-            "Impact of nonlethal injuries on movement patterns"
-        ],
-        "journals": [
-            "Northeastern Naturalist"
-        ]
-    },
-    {
-        "_id": "eric-b.-liebgold",
-        "name": "Eric B. Liebgold",
-        "total_citations": 0,
-        "department_affiliations": [
-            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
-        ],
-        "dois": [
-            "10.1656/045.031.s1222"
-        ],
-        "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
-        ],
-        "categories": [
-            "Health sciences, general",
-            "Ecology, evolutionary biology, and epidemiology",
-            "Exercise physiology and kinesiology",
-            "Health sciences",
-            "Physiology, general",
-            "Biomedical sciences, general",
-            "Ecology",
-            "Biological and biomedical sciences",
-            "Ecology and evolutionary biology",
-            "Health sciences, other",
-            "Physiology, oncology and cancer biology",
-            "Exercise science and kinesiology",
-            "Biological and biomedical sciences, other"
-        ],
-        "top_level_categories": [
-            "Biological and biomedical sciences"
-        ],
-        "mid_level_categories": [
-            "Ecology, evolutionary biology, and epidemiology"
-        ],
-        "low_level_categories": [
-            "Ecology",
-            "Ecology and evolutionary biology"
-        ],
-        "category_urls": [
-            "Biological%20and%20biomedical%20sciences/Ecology%2C%20evolutionary%20biology%2C%20and%20epidemiology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology%20and%20evolutionary%20biology",
-            "Biological%20and%20biomedical%20sciences"
-        ],
-        "top_category_urls": [
-            "Biological%20and%20biomedical%20sciences"
-        ],
-        "mid_category_urls": [
-            "Biological%20and%20biomedical%20sciences/Ecology%2C%20evolutionary%20biology%2C%20and%20epidemiology"
-        ],
-        "low_category_urls": [
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology%20and%20evolutionary%20biology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology"
-        ],
-        "themes": [
-            "Effects of predation on turtle behavior",
-            "Ecological implications of injuries in wildlife",
-            "Impact of nonlethal injuries on movement patterns"
-        ],
-        "journals": [
-            "Northeastern Naturalist"
-        ]
-    },
-    {
-        "_id": "s-maykrantz",
-        "name": "S Maykrantz",
-        "total_citations": 0,
-        "department_affiliations": [
-            "School of Health Sciences, Salisbury University , Salisbury,"
-        ],
-        "dois": [
-            "10.1093/eurpub/ckae144.1261"
-        ],
-        "titles": [
-            "An Innovative Public Health Solution with European Features for an American Problem"
-        ],
-        "categories": [
-            "Ecology, evolutionary biology, and epidemiology",
-            "Public health, general",
-            "Health sciences",
-            "Biomedical sciences, general",
-            "Sociology, demography, and population studies nec",
-            "Ecology and evolutionary biology",
-            "Biological and biomedical sciences, other",
-            "Sociology, demography, and population studies",
-            "Public policy analysis, general",
-            "Health policy analysis",
-            "Health sciences, general",
-            "Public policy analysis",
-            "Sociology, general",
-            "Health services research",
+            "Social psychology",
+            "Area, ethnic, cultural, gender, and group studies nec",
+            "Counseling psychology",
             "Social sciences",
-            "Health sciences, other",
-            "Exercise physiology and kinesiology",
-            "Physiology, general",
-            "Ecology",
-            "Exercise science and kinesiology",
-            "Biological and biomedical sciences",
-            "Physiology, oncology and cancer biology",
-            "Public health"
+            "Psychology",
+            "Area, ethnic, cultural, gender, and group studies",
+            "Sociology, demography, and population studies",
+            "Counseling and applied psychology nec",
+            "Sociology, general",
+            "Research and experimental psychology",
+            "Counseling and applied psychology",
+            "Sociology, demography, and population studies nec"
         ],
         "top_level_categories": [
-            "Social sciences",
-            "Health sciences"
+            "Psychology",
+            "Social sciences"
         ],
         "mid_level_categories": [
-            "Sociology, demography, and population studies",
-            "Public policy analysis",
-            "Public health"
+            "Research and experimental psychology",
+            "Counseling and applied psychology",
+            "Area, ethnic, cultural, gender, and group studies",
+            "Sociology, demography, and population studies"
         ],
         "low_level_categories": [
-            "Public policy analysis, general",
-            "Public health, general",
+            "Social psychology",
+            "Area, ethnic, cultural, gender, and group studies nec",
+            "Counseling psychology",
+            "Counseling and applied psychology nec",
             "Sociology, general",
-            "Health services research",
-            "Sociology, demography, and population studies nec",
-            "Health policy analysis"
+            "Sociology, demography, and population studies nec"
         ],
         "category_urls": [
-            "Social%20sciences",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20policy%20analysis",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20services%20research",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Public%20health%2C%20general",
-            "Social%20sciences/Public%20policy%20analysis",
             "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Sociology%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Public%20policy%20analysis%2C%20general",
+            "Social%20sciences/Area%2C%20ethnic%2C%20cultural%2C%20gender%2C%20and%20group%20studies",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Social%20psychology",
+            "Social%20sciences/Sociology%2C%20demography%2C%20and%20population%20studies",
+            "Social%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Area%2C%20ethnic%2C%20cultural%2C%20gender%2C%20and%20group%20studies%20nec",
+            "Psychology",
+            "Psychology/Counseling%20and%20applied%20psychology",
+            "Psychology/Research%20and%20experimental%20psychology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Counseling%20and%20applied%20psychology%20nec",
             "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Sociology%2C%20demography%2C%20and%20population%20studies%20nec",
-            "Health%20sciences/Public%20health",
-            "Health%20sciences",
-            "Social%20sciences/Sociology%2C%20demography%2C%20and%20population%20studies"
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Counseling%20psychology"
         ],
         "top_category_urls": [
-            "Social%20sciences",
-            "Health%20sciences"
+            "Psychology",
+            "Social%20sciences"
         ],
         "mid_category_urls": [
-            "Social%20sciences/Public%20policy%20analysis",
-            "Health%20sciences/Public%20health",
-            "Social%20sciences/Sociology%2C%20demography%2C%20and%20population%20studies"
+            "Social%20sciences/Sociology%2C%20demography%2C%20and%20population%20studies",
+            "Psychology/Counseling%20and%20applied%20psychology",
+            "Psychology/Research%20and%20experimental%20psychology",
+            "Social%20sciences/Area%2C%20ethnic%2C%20cultural%2C%20gender%2C%20and%20group%20studies"
         ],
         "low_category_urls": [
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20policy%20analysis",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20services%20research",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Public%20health%2C%20general",
             "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Sociology%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Public%20policy%20analysis%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Sociology%2C%20demography%2C%20and%20population%20studies%20nec"
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Social%20psychology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Area%2C%20ethnic%2C%20cultural%2C%20gender%2C%20and%20group%20studies%20nec",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Counseling%20and%20applied%20psychology%20nec",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Sociology%2C%20demography%2C%20and%20population%20studies%20nec",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Counseling%20psychology"
         ],
         "themes": [
-            "Healthcare Funding Equity",
-            "International Collaboration in Public Health",
-            "Public Health Disparities",
-            "Population Health Management"
+            "Victim Empathy",
+            "Prevention and Support Strategies",
+            "Rape Experience",
+            "Distinctions in Rape Types"
         ],
         "journals": [
-            "European Journal of Public Health"
+            "Violence Against Women"
         ]
     },
     {
-        "_id": "m-diriker",
-        "name": "M Diriker",
+        "_id": "tieryn-r.-gingerich",
+        "name": "Tieryn R. Gingerich",
         "total_citations": 0,
         "department_affiliations": [
-            "Board of Directors, Tidal Health System , Salisbury,",
-            "Perdue School of Business, Salisbury University , Salisbury,"
+            "Department of Psychology, Salisbury University, Salisbury, MD, USA"
         ],
         "dois": [
-            "10.1093/eurpub/ckae144.1261"
+            "10.1177/10778012241234897"
         ],
         "titles": [
-            "An Innovative Public Health Solution with European Features for an American Problem"
+            "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy"
         ],
         "categories": [
-            "Ecology, evolutionary biology, and epidemiology",
-            "Public health, general",
-            "Health sciences",
-            "Biomedical sciences, general",
-            "Sociology, demography, and population studies nec",
-            "Ecology and evolutionary biology",
-            "Biological and biomedical sciences, other",
-            "Sociology, demography, and population studies",
-            "Public policy analysis, general",
-            "Health policy analysis",
-            "Health sciences, general",
-            "Public policy analysis",
-            "Sociology, general",
-            "Health services research",
+            "Social psychology",
+            "Area, ethnic, cultural, gender, and group studies nec",
+            "Counseling psychology",
             "Social sciences",
-            "Health sciences, other",
-            "Exercise physiology and kinesiology",
-            "Physiology, general",
-            "Ecology",
-            "Exercise science and kinesiology",
-            "Biological and biomedical sciences",
-            "Physiology, oncology and cancer biology",
-            "Public health"
+            "Psychology",
+            "Area, ethnic, cultural, gender, and group studies",
+            "Sociology, demography, and population studies",
+            "Counseling and applied psychology nec",
+            "Sociology, general",
+            "Research and experimental psychology",
+            "Counseling and applied psychology",
+            "Sociology, demography, and population studies nec"
         ],
         "top_level_categories": [
-            "Social sciences",
-            "Health sciences"
+            "Psychology",
+            "Social sciences"
         ],
         "mid_level_categories": [
-            "Sociology, demography, and population studies",
-            "Public policy analysis",
-            "Public health"
+            "Research and experimental psychology",
+            "Counseling and applied psychology",
+            "Area, ethnic, cultural, gender, and group studies",
+            "Sociology, demography, and population studies"
         ],
         "low_level_categories": [
-            "Public policy analysis, general",
-            "Public health, general",
+            "Social psychology",
+            "Area, ethnic, cultural, gender, and group studies nec",
+            "Counseling psychology",
+            "Counseling and applied psychology nec",
             "Sociology, general",
-            "Health services research",
-            "Sociology, demography, and population studies nec",
-            "Health policy analysis"
+            "Sociology, demography, and population studies nec"
         ],
         "category_urls": [
-            "Social%20sciences",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20policy%20analysis",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20services%20research",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Public%20health%2C%20general",
-            "Social%20sciences/Public%20policy%20analysis",
             "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Sociology%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Public%20policy%20analysis%2C%20general",
+            "Social%20sciences/Area%2C%20ethnic%2C%20cultural%2C%20gender%2C%20and%20group%20studies",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Social%20psychology",
+            "Social%20sciences/Sociology%2C%20demography%2C%20and%20population%20studies",
+            "Social%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Area%2C%20ethnic%2C%20cultural%2C%20gender%2C%20and%20group%20studies%20nec",
+            "Psychology",
+            "Psychology/Counseling%20and%20applied%20psychology",
+            "Psychology/Research%20and%20experimental%20psychology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Counseling%20and%20applied%20psychology%20nec",
             "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Sociology%2C%20demography%2C%20and%20population%20studies%20nec",
-            "Health%20sciences/Public%20health",
-            "Health%20sciences",
-            "Social%20sciences/Sociology%2C%20demography%2C%20and%20population%20studies"
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Counseling%20psychology"
         ],
         "top_category_urls": [
-            "Social%20sciences",
-            "Health%20sciences"
+            "Psychology",
+            "Social%20sciences"
         ],
         "mid_category_urls": [
-            "Social%20sciences/Public%20policy%20analysis",
-            "Health%20sciences/Public%20health",
-            "Social%20sciences/Sociology%2C%20demography%2C%20and%20population%20studies"
+            "Social%20sciences/Sociology%2C%20demography%2C%20and%20population%20studies",
+            "Psychology/Counseling%20and%20applied%20psychology",
+            "Psychology/Research%20and%20experimental%20psychology",
+            "Social%20sciences/Area%2C%20ethnic%2C%20cultural%2C%20gender%2C%20and%20group%20studies"
         ],
         "low_category_urls": [
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20policy%20analysis",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20services%20research",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Public%20health%2C%20general",
             "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Sociology%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Public%20policy%20analysis%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Sociology%2C%20demography%2C%20and%20population%20studies%20nec"
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Social%20psychology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Area%2C%20ethnic%2C%20cultural%2C%20gender%2C%20and%20group%20studies%20nec",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Counseling%20and%20applied%20psychology%20nec",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Sociology%2C%20demography%2C%20and%20population%20studies%20nec",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Counseling%20psychology"
         ],
         "themes": [
-            "Healthcare Funding Equity",
-            "International Collaboration in Public Health",
-            "Public Health Disparities",
-            "Population Health Management"
+            "Victim Empathy",
+            "Prevention and Support Strategies",
+            "Rape Experience",
+            "Distinctions in Rape Types"
         ],
         "journals": [
-            "European Journal of Public Health"
+            "Violence Against Women"
+        ]
+    },
+    {
+        "_id": "kyoung-rae-jung",
+        "name": "Kyoung-Rae Jung",
+        "total_citations": 0,
+        "department_affiliations": [
+            "Department of Psychology, Salisbury University, Salisbury, Maryland, USA"
+        ],
+        "dois": [
+            "10.1080/10911359.2024.2302976"
+        ],
+        "titles": [
+            "Korean fathers\u2019 immigration experience"
+        ],
+        "categories": [
+            "Social psychology",
+            "Ethnic studies",
+            "Developmental and child psychology",
+            "Area, ethnic, cultural, gender, and group studies nec",
+            "Counseling psychology",
+            "Social sciences",
+            "Psychology",
+            "Area, ethnic, cultural, gender, and group studies",
+            "Sociology, demography, and population studies",
+            "Counseling and applied psychology nec",
+            "Sociology, general",
+            "Research and experimental psychology",
+            "Counseling and applied psychology",
+            "Sociology, demography, and population studies nec"
+        ],
+        "top_level_categories": [
+            "Psychology",
+            "Social sciences"
+        ],
+        "mid_level_categories": [
+            "Research and experimental psychology",
+            "Counseling and applied psychology",
+            "Area, ethnic, cultural, gender, and group studies",
+            "Sociology, demography, and population studies"
+        ],
+        "low_level_categories": [
+            "Social psychology",
+            "Ethnic studies",
+            "Developmental and child psychology",
+            "Counseling psychology",
+            "Counseling and applied psychology nec",
+            "Sociology, general",
+            "Sociology, demography, and population studies nec"
+        ],
+        "category_urls": [
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Sociology%2C%20general",
+            "Social%20sciences/Area%2C%20ethnic%2C%20cultural%2C%20gender%2C%20and%20group%20studies",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Social%20psychology",
+            "Social%20sciences/Sociology%2C%20demography%2C%20and%20population%20studies",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Developmental%20and%20child%20psychology",
+            "Social%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ethnic%20studies",
+            "Psychology",
+            "Psychology/Counseling%20and%20applied%20psychology",
+            "Psychology/Research%20and%20experimental%20psychology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Counseling%20and%20applied%20psychology%20nec",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Sociology%2C%20demography%2C%20and%20population%20studies%20nec",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Counseling%20psychology"
+        ],
+        "top_category_urls": [
+            "Psychology",
+            "Social%20sciences"
+        ],
+        "mid_category_urls": [
+            "Social%20sciences/Sociology%2C%20demography%2C%20and%20population%20studies",
+            "Psychology/Counseling%20and%20applied%20psychology",
+            "Social%20sciences/Area%2C%20ethnic%2C%20cultural%2C%20gender%2C%20and%20group%20studies",
+            "Psychology/Research%20and%20experimental%20psychology"
+        ],
+        "low_category_urls": [
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Sociology%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Social%20psychology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Developmental%20and%20child%20psychology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ethnic%20studies",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Counseling%20and%20applied%20psychology%20nec",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Sociology%2C%20demography%2C%20and%20population%20studies%20nec",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Counseling%20psychology"
+        ],
+        "themes": [
+            "Parenting Challenges",
+            "Cultural Identity",
+            "Social Isolation",
+            "Intergenerational Relationships",
+            "Well-being and Fulfillment"
+        ],
+        "journals": [
+            "Journal of Human Behavior in the Social Environment"
+        ]
+    },
+    {
+        "_id": "sook-hyun-kim",
+        "name": "Sook-Hyun Kim",
+        "total_citations": 0,
+        "department_affiliations": [
+            "School of Social Work, Salisbury University, Salisbury, Maryland, USA"
+        ],
+        "dois": [
+            "10.1080/10911359.2024.2302976"
+        ],
+        "titles": [
+            "Korean fathers\u2019 immigration experience"
+        ],
+        "categories": [
+            "Social psychology",
+            "Ethnic studies",
+            "Developmental and child psychology",
+            "Area, ethnic, cultural, gender, and group studies nec",
+            "Counseling psychology",
+            "Social sciences",
+            "Psychology",
+            "Area, ethnic, cultural, gender, and group studies",
+            "Sociology, demography, and population studies",
+            "Counseling and applied psychology nec",
+            "Sociology, general",
+            "Research and experimental psychology",
+            "Counseling and applied psychology",
+            "Sociology, demography, and population studies nec"
+        ],
+        "top_level_categories": [
+            "Psychology",
+            "Social sciences"
+        ],
+        "mid_level_categories": [
+            "Research and experimental psychology",
+            "Counseling and applied psychology",
+            "Area, ethnic, cultural, gender, and group studies",
+            "Sociology, demography, and population studies"
+        ],
+        "low_level_categories": [
+            "Social psychology",
+            "Ethnic studies",
+            "Developmental and child psychology",
+            "Counseling psychology",
+            "Counseling and applied psychology nec",
+            "Sociology, general",
+            "Sociology, demography, and population studies nec"
+        ],
+        "category_urls": [
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Sociology%2C%20general",
+            "Social%20sciences/Area%2C%20ethnic%2C%20cultural%2C%20gender%2C%20and%20group%20studies",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Social%20psychology",
+            "Social%20sciences/Sociology%2C%20demography%2C%20and%20population%20studies",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Developmental%20and%20child%20psychology",
+            "Social%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ethnic%20studies",
+            "Psychology",
+            "Psychology/Counseling%20and%20applied%20psychology",
+            "Psychology/Research%20and%20experimental%20psychology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Counseling%20and%20applied%20psychology%20nec",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Sociology%2C%20demography%2C%20and%20population%20studies%20nec",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Counseling%20psychology"
+        ],
+        "top_category_urls": [
+            "Psychology",
+            "Social%20sciences"
+        ],
+        "mid_category_urls": [
+            "Social%20sciences/Sociology%2C%20demography%2C%20and%20population%20studies",
+            "Psychology/Counseling%20and%20applied%20psychology",
+            "Social%20sciences/Area%2C%20ethnic%2C%20cultural%2C%20gender%2C%20and%20group%20studies",
+            "Psychology/Research%20and%20experimental%20psychology"
+        ],
+        "low_category_urls": [
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Sociology%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Social%20psychology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Developmental%20and%20child%20psychology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ethnic%20studies",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Counseling%20and%20applied%20psychology%20nec",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Sociology%2C%20demography%2C%20and%20population%20studies%20nec",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Counseling%20psychology"
+        ],
+        "themes": [
+            "Parenting Challenges",
+            "Cultural Identity",
+            "Social Isolation",
+            "Intergenerational Relationships",
+            "Well-being and Fulfillment"
+        ],
+        "journals": [
+            "Journal of Human Behavior in the Social Environment"
+        ]
+    },
+    {
+        "_id": "david-z.-keifer",
+        "name": "David Z. Keifer",
+        "total_citations": 0,
+        "department_affiliations": [
+            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
+        ],
+        "dois": [
+            "10.1021/acs.jchemed.4c00708"
+        ],
+        "titles": [
+            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
+        ],
+        "categories": [
+            "Teacher education, science and engineering",
+            "Ethnic studies",
+            "Education research",
+            "Social sciences",
+            "Psychology",
+            "Sociology, demography, and population studies",
+            "Chemistry",
+            "Sociology, demography, and population studies nec",
+            "Analytical chemistry",
+            "Curriculum and instruction",
+            "Counseling psychology",
+            "Research and experimental psychology",
+            "Teacher education",
+            "Educational/ instructional technology and media design",
+            "Developmental and child psychology",
+            "Physical sciences",
+            "Sociology, general",
+            "Counseling and applied psychology",
+            "Education",
+            "STEM educational methods",
+            "Social psychology",
+            "Area, ethnic, cultural, gender, and group studies nec",
+            "Physical chemistry",
+            "Counseling and applied psychology nec",
+            "Theoretical chemistry",
+            "Area, ethnic, cultural, gender, and group studies"
+        ],
+        "top_level_categories": [
+            "Physical sciences",
+            "Education"
+        ],
+        "mid_level_categories": [
+            "Chemistry",
+            "Education research",
+            "Teacher education"
+        ],
+        "low_level_categories": [
+            "Curriculum and instruction",
+            "Teacher education, science and engineering",
+            "STEM educational methods",
+            "Educational/ instructional technology and media design",
+            "Physical chemistry",
+            "Theoretical chemistry",
+            "Analytical chemistry"
+        ],
+        "category_urls": [
+            "Education",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Theoretical%20chemistry",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Teacher%20education%2C%20science%20and%20engineering",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/STEM%20educational%20methods",
+            "Physical%20sciences/Chemistry",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Analytical%20chemistry",
+            "Physical%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Curriculum%20and%20instruction",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Educational/%20instructional%20technology%20and%20media%20design",
+            "Education/Teacher%20education",
+            "Education/Education%20research",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physical%20chemistry"
+        ],
+        "top_category_urls": [
+            "Education",
+            "Physical%20sciences"
+        ],
+        "mid_category_urls": [
+            "Physical%20sciences/Chemistry",
+            "Education/Teacher%20education",
+            "Education/Education%20research"
+        ],
+        "low_category_urls": [
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Theoretical%20chemistry",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Teacher%20education%2C%20science%20and%20engineering",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Educational/%20instructional%20technology%20and%20media%20design",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/STEM%20educational%20methods",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Curriculum%20and%20instruction",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Analytical%20chemistry",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physical%20chemistry"
+        ],
+        "themes": [
+            "Physical Chemistry Concepts",
+            "Application of Theoretical Frameworks",
+            "Educational Experimentation",
+            "Mass Spectrometry Analysis"
+        ],
+        "journals": [
+            "Journal of Chemical Education"
+        ]
+    },
+    {
+        "_id": "jose-i.-juncosa",
+        "name": "Jose I. Juncosa",
+        "total_citations": 0,
+        "department_affiliations": [
+            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
+        ],
+        "dois": [
+            "10.1021/acs.jchemed.4c00708"
+        ],
+        "titles": [
+            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
+        ],
+        "categories": [
+            "Teacher education, science and engineering",
+            "Ethnic studies",
+            "Education research",
+            "Social sciences",
+            "Psychology",
+            "Sociology, demography, and population studies",
+            "Chemistry",
+            "Sociology, demography, and population studies nec",
+            "Analytical chemistry",
+            "Curriculum and instruction",
+            "Counseling psychology",
+            "Research and experimental psychology",
+            "Teacher education",
+            "Educational/ instructional technology and media design",
+            "Developmental and child psychology",
+            "Physical sciences",
+            "Sociology, general",
+            "Counseling and applied psychology",
+            "Education",
+            "STEM educational methods",
+            "Social psychology",
+            "Area, ethnic, cultural, gender, and group studies nec",
+            "Physical chemistry",
+            "Counseling and applied psychology nec",
+            "Theoretical chemistry",
+            "Area, ethnic, cultural, gender, and group studies"
+        ],
+        "top_level_categories": [
+            "Physical sciences",
+            "Education"
+        ],
+        "mid_level_categories": [
+            "Chemistry",
+            "Education research",
+            "Teacher education"
+        ],
+        "low_level_categories": [
+            "Curriculum and instruction",
+            "Teacher education, science and engineering",
+            "STEM educational methods",
+            "Educational/ instructional technology and media design",
+            "Physical chemistry",
+            "Theoretical chemistry",
+            "Analytical chemistry"
+        ],
+        "category_urls": [
+            "Education",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Theoretical%20chemistry",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Teacher%20education%2C%20science%20and%20engineering",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/STEM%20educational%20methods",
+            "Physical%20sciences/Chemistry",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Analytical%20chemistry",
+            "Physical%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Curriculum%20and%20instruction",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Educational/%20instructional%20technology%20and%20media%20design",
+            "Education/Teacher%20education",
+            "Education/Education%20research",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physical%20chemistry"
+        ],
+        "top_category_urls": [
+            "Education",
+            "Physical%20sciences"
+        ],
+        "mid_category_urls": [
+            "Physical%20sciences/Chemistry",
+            "Education/Teacher%20education",
+            "Education/Education%20research"
+        ],
+        "low_category_urls": [
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Theoretical%20chemistry",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Teacher%20education%2C%20science%20and%20engineering",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Educational/%20instructional%20technology%20and%20media%20design",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/STEM%20educational%20methods",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Curriculum%20and%20instruction",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Analytical%20chemistry",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physical%20chemistry"
+        ],
+        "themes": [
+            "Physical Chemistry Concepts",
+            "Application of Theoretical Frameworks",
+            "Educational Experimentation",
+            "Mass Spectrometry Analysis"
+        ],
+        "journals": [
+            "Journal of Chemical Education"
         ]
     }
 ]

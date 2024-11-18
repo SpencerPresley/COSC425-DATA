@@ -339,7 +339,7 @@ class CrossrefWrapper:
         # log the num items returned
         self.logger.info(f"Number of items: {len(result_list)}")
 
-        self.result = result_list[:5]
+        self.result = result_list
         return self
 
     def serialize_to_json(self, output_file):

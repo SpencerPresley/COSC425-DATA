@@ -119,6 +119,12 @@ class CategoryDataOrchestrator:
         # post-processor object
         self.faculty_postprocessor = faculty_postprocessor
 
+        self.final_category_data = []
+        self.final_faculty_data = []
+        self.final_article_stats_data = []
+        self.final_article_data = []
+        self.final_global_faculty_data = []
+
     def run_orchestrator(self):
         self.category_processor.process_data_list(self.data)
 
@@ -139,6 +145,31 @@ class CategoryDataOrchestrator:
         )
 
         self._save_all_results()
+
+    def get_final_category_data(self):
+        if not hasattr(self, "final_category_data"):
+            raise ValueError("Final category data not yet generated")
+        return self.final_category_data
+
+    def get_final_faculty_data(self):
+        if not hasattr(self, "final_faculty_data"):
+            raise ValueError("Final faculty data not yet generated")
+        return self.final_faculty_data
+
+    def get_final_global_faculty_data(self):
+        if not hasattr(self, "final_global_faculty_data"):
+            raise ValueError("Final global faculty data not yet generated")
+        return self.final_global_faculty_data
+
+    def get_final_article_stats_data(self):
+        if not hasattr(self, "final_article_stats_data"):
+            raise ValueError("Final article stats data not yet generated")
+        return self.final_article_stats_data
+
+    def get_final_article_data(self):
+        if not hasattr(self, "final_article_data"):
+            raise ValueError("Final article data not yet generated")
+        return self.final_article_data
 
     def _save_all_results(self):
         # Serialize the processed data and save it
@@ -276,7 +307,7 @@ class CategoryDataOrchestrator:
 
         # Step 2: Convert to list of category info dicts
         flattened_data: List[Dict] = list(cleaned_data.values())
-
+        self.final_category_data = flattened_data
         # Step 3: Write to file
         self._write_to_json(flattened_data, output_path)
 
@@ -316,6 +347,7 @@ class CategoryDataOrchestrator:
                 for faculty_info_obj in faculty_dict["faculty_stats"].values():
                     # Convert FacultyInfo obj to dict and append to flattened_data
                     flattened_data.append(faculty_info_obj)
+        self.final_faculty_data = flattened_data
         self._write_to_json(flattened_data, output_path)
 
     def _serialize_and_save_global_faculty_stats(
@@ -339,7 +371,7 @@ class CategoryDataOrchestrator:
             )
             for item in global_faculty_stats.values()
         ]
-
+        self.final_global_faculty_data = data
         # Step 2: Write to file
         self._write_to_json(data, output_path)
 
@@ -353,13 +385,14 @@ class CategoryDataOrchestrator:
                 for article in stats_dict["article_citation_map"].values():
                     flattened_data.append({**article})
 
+        self.final_article_stats_data = flattened_data
         self._write_to_json(flattened_data, output_path)
 
     def _serialize_and_save_articles(self, *, output_path, articles):
         """Serialize and save the list of article objects from CategoryProcessor"""
         # Convert each CrossrefArticleDetails object to a dict
         article_dicts: List[Dict] = [article.to_dict() for article in articles]
-
+        self.final_article_data = article_dicts
         # Write to file
         self._write_to_json(article_dicts, output_path)
 
