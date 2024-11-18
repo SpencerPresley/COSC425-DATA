@@ -23,8 +23,11 @@ from .dataclass_models.concrete_dataclasses import (
     GlobalFacultyStats,
 )
 from .enums import AttributeTypes
-from .factories import DataClassFactory
-from .strategies import StrategyFactory
+from .factories import (
+    DataClassFactory,
+    ClassifierFactory,
+    StrategyFactory,
+)
 
 # Expose commonly used classes/functions at the package level
 from .utils import Taxonomy, Utilities, WarningManager, configure_logger
