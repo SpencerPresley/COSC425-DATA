@@ -274,8 +274,7 @@ class AbstractClassifier:
                 "API key is required"
                 f"Received type: {type(api_key)}, "
                 f"Value: {'<empty>' if not api_key else 'Value present but may not be a string'}"
-                f"Error: {str(e)}"
-            ) from e
+            )
 
         try:
             api_key: str = cast(str, str(api_key))
