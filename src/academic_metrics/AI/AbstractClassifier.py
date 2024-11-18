@@ -436,7 +436,6 @@ class AbstractClassifier:
         top_categories: List[str] = []
         mid_categories: List[str] = []
         low_categories: List[str] = []
-        themes: List[str] = []
 
         abstract_result: Dict[str, Any] = self.classification_results.get(doi, {})
 
@@ -479,7 +478,7 @@ class AbstractClassifier:
             "themes": abstract_result.get("themes", []),
         }
 
-        return result if return_type == dict else tuple(result.values())
+        return result if return_type is dict else tuple(result.values())
 
     def classify_abstract(
         self,
