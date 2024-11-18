@@ -917,27 +917,28 @@ class AbstractClassifier:
 
 
 if __name__ == "__main__":
-    from academic_metrics.AI.testing_data.abstracts import doi_to_abstract_dict
-    from academic_metrics.utils.taxonomy_util import Taxonomy
-    from dotenv import load_dotenv
-    import os
-    from pylatexenc.latex2text import LatexNodes2Text
-    from unidecode import unidecode
+    # # from academic_metrics.AI.testing_data.abstracts import doi_to_abstract_dict
+    # from academic_metrics.utils.taxonomy_util import Taxonomy
+    # from dotenv import load_dotenv
+    # import os
+    # from pylatexenc.latex2text import LatexNodes2Text
+    # from unidecode import unidecode
 
-    load_dotenv()
-    openai_api_key = os.getenv("OPENAI_API_KEY")
+    # load_dotenv()
+    # openai_api_key = os.getenv("OPENAI_API_KEY")
 
-    taxonomy: Taxonomy = Taxonomy()
+    # taxonomy: Taxonomy = Taxonomy()
 
-    abstract_classifier = AbstractClassifier(
-        taxonomy=taxonomy,
-        doi_to_abstract_dict=doi_to_abstract_dict,
-        api_key=openai_api_key,
-    )
-    abstract_classifier.classify().save_classification_results(
-        "outputs/classification_results.json"
-    ).save_raw_theme_results(
-        "outputs/theme_results.json"
-    ).save_raw_classification_results(
-        "outputs/raw_classification_outputs.json"
-    )
+    # abstract_classifier = AbstractClassifier(
+    #     taxonomy=taxonomy,
+    #     doi_to_abstract_dict=doi_to_abstract_dict,
+    #     api_key=openai_api_key,
+    # )
+    # abstract_classifier.classify().save_classification_results(
+    #     "outputs/classification_results.json"
+    # ).save_raw_theme_results(
+    #     "outputs/theme_results.json"
+    # ).save_raw_classification_results(
+    #     "outputs/raw_classification_outputs.json"
+    # )
+    pass
