@@ -1,2 +1,1 @@
 from .AttributeExtractionStrategies import AttributeExtractionStrategy
-from .strategy_factory import StrategyFactory

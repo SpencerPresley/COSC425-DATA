@@ -9,7 +9,8 @@ from academic_metrics.constants import LOG_DIR_PATH
 
 if TYPE_CHECKING:
     from academic_metrics.enums import AttributeTypes
-    from academic_metrics.strategies import AttributeExtractionStrategy, StrategyFactory
+    from academic_metrics.strategies import AttributeExtractionStrategy
+    from academic_metrics.factories import StrategyFactory
     from academic_metrics.utils import WarningManager
 
 

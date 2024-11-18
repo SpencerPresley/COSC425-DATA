@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import json
 import logging
 import os
@@ -13,7 +15,7 @@ from academic_metrics.constants import LOG_DIR_PATH
 from academic_metrics.enums import AttributeTypes
 from academic_metrics.utils import WarningManager
 
-from .strategy_factory import StrategyFactory
+from academic_metrics.factories import StrategyFactory
 
 
 class AttributeExtractionStrategy(ABC):

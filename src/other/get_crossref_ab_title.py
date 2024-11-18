@@ -5,7 +5,7 @@ import os
 from unidecode import unidecode
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from academic_metrics.strategies import StrategyFactory
+from academic_metrics.factories import StrategyFactory
 from academic_metrics.utils import WarningManager, Utilities, FileHandler
 from academic_metrics.enums import AttributeTypes
 

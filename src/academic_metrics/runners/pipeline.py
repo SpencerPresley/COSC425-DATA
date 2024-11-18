@@ -14,15 +14,17 @@ from academic_metrics.core import CategoryProcessor, FacultyPostprocessor
 from academic_metrics.data_collection import CrossrefWrapper, Scraper
 from academic_metrics.DB import DatabaseWrapper
 from academic_metrics.enums import AttributeTypes
-from academic_metrics.factories import DataClassFactory
+from academic_metrics.factories import (
+    DataClassFactory,
+    ClassifierFactory,
+    StrategyFactory,
+)
 from academic_metrics.orchestrators import (
     CategoryDataOrchestrator,
     ClassificationOrchestrator,
 )
-from academic_metrics.strategies import StrategyFactory
 from academic_metrics.utils import (
     APIKeyValidator,
-    ClassifierFactory,
     Taxonomy,
     Utilities,
     WarningManager,

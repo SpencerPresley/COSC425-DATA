@@ -14,7 +14,7 @@ import requests
 from datasketch import MinHash, MinHashLSH
 from tqdm import tqdm
 
-from academic_metrics.strategies import StrategyFactory
+from academic_metrics.factories import StrategyFactory
 from academic_metrics.utils import WarningManager
 
 
