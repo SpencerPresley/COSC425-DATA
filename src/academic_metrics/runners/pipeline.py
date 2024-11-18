@@ -1,8 +1,9 @@
 import os
 import json
-import sys
-from typing import Callable, Dict, TypedDict, List, Any, Optional
+from typing import Callable, Dict, TypedDict, List, Any
 import logging
+
+from urllib.parse import quote, unquote
 
 from academic_metrics.core import (
     CategoryProcessor,
@@ -90,7 +91,7 @@ class PipelineRunner:
         self.db = self._create_db()
         self.scraper = self._create_scraper()
         self.crossref_wrapper = self._create_crossref_wrapper(
-            affiliation=crossref_affiliation,
+            affiliation=self._encode_affiliation(crossref_affiliation),
             from_year=data_from_year,
             to_year=data_to_year,
         )
@@ -313,6 +314,28 @@ class PipelineRunner:
     def _create_db(self) -> DatabaseWrapper:
         return DatabaseWrapper(db_name=self.db_name, mongo_url=self.mongodb_url)
 
+    @staticmethod
+    def _encode_affiliation(affiliation: str) -> str:
+        """
+        URL encodes an affiliation string if it's not already encoded.
+
+        Checks if the string is already properly URL-encoded by:
+        1. Decoding it with unquote()
+        2. Re-encoding it with quote()
+        3. Comparing to original - if they match, it was already encoded
+
+        Args:
+            affiliation: String to encode (e.g. "Salisbury University" or "Salisbury%20University")
+
+        Returns:
+            URL-encoded string (e.g. "Salisbury%20University")
+        """
+        return (
+            affiliation
+            if quote(unquote(affiliation)) == affiliation
+            else quote(affiliation)
+        )
+
 
 if __name__ == "__main__":
     from dotenv import load_dotenv
@@ -322,7 +345,7 @@ if __name__ == "__main__":
     mongodb_url = os.getenv("MONGODB_URL")
     pipeline_runner = PipelineRunner(
         ai_api_key=ai_api_key,
-        crossref_affiliation="Salisbury%20University",
+        crossref_affiliation="Salisbury University",
         data_from_year=2024,
         data_to_year=2024,
         mongodb_url=mongodb_url,
