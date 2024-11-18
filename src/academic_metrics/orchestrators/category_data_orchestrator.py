@@ -354,9 +354,9 @@ class CategoryDataOrchestrator:
         categories: List[str] = list(category_dict.keys())
         for category in categories:
             # assigns faculty_stats dict from FacultyStats dataclass to category_faculty_stats
-            category_faculty_stats: Dict[str, FacultyInfo] = faculty_stats[
-                category
-            ].faculty_stats
+            # category_faculty_stats: Dict[str, FacultyInfo] = faculty_stats[
+            #     category
+            # ].faculty_stats
 
             faculty_members: List[str] = list(
                 faculty_stats[category].faculty_stats.keys()
