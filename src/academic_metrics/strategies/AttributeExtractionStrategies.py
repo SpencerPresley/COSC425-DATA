@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 import json
 from abc import ABC, abstractmethod
 import uuid
+from typing import Any, List, Dict
 
 from academic_metrics.utils import configure_logger, WarningManager
 from .strategy_factory import StrategyFactory
@@ -93,10 +94,10 @@ class AttributeExtractionStrategy(ABC):
             It ensures that each strategy has access to logging, warning management, and file storage
             for handling edge cases and errors in the extraction process.
         """
-        self.log_file_path = os.path.join(
+        self.log_file_path: str = os.path.join(
             LOG_DIR_PATH, "attribute_extraction_strategies.log"
         )
-        self.logger = logging.getLogger(__name__)
+        self.logger: logging.Logger = logging.getLogger(__name__)
         self.logger.setLevel(logging.DEBUG)
         self.logger.handlers = []
         if not self.logger.handlers:
@@ -108,15 +109,15 @@ class AttributeExtractionStrategy(ABC):
             handler.setFormatter(formatter)
             self.logger.addHandler(handler)
 
-        self.abstract_pattern = re.compile(r"AB\s(.+?)(?=\nC1)", re.DOTALL)
-        self.missing_abstracts_file = missing_abstracts_file
-        self.warning_manager = warning_manager
-        self.unknown_authors_dict = self.create_unknown_authors_dict()
-        self.unknown_authors_file = "crossref_unknown_authors.json"
+        self.abstract_pattern: re.Pattern = re.compile(r"AB\s(.+?)(?=\nC1)", re.DOTALL)
+        self.missing_abstracts_file: str = missing_abstracts_file
+        self.warning_manager: WarningManager = warning_manager
+        self.unknown_authors_dict: dict = self.create_unknown_authors_dict()
+        self.unknown_authors_file: str = "crossref_unknown_authors.json"
         self.crossref_author_key: str = "author"
 
     @abstractmethod
-    def extract_attribute(self, entry_text):
+    def extract_attribute(self, entry_text: str) -> Any:
         """
         Abstract method to extract a specific attribute from the entry text.
 
@@ -164,13 +165,13 @@ class AttributeExtractionStrategy(ABC):
 
         This is used by various subclasses who are designed to extract attributes from WoS data, this is NOT compatible with Crossref data.
         """
-        c1_content = []
-        entry_lines = entry_text.splitlines()
+        c1_content: List[str] = []
+        entry_lines: List[str] = entry_text.splitlines()
         for line in entry_lines:
             if "Salisbury Univ" in line:
                 # Extract everything inside the brackets
-                start = line.find("[")
-                end = line.find("]")
+                start: int = line.find("[")
+                end: int = line.find("]")
                 if start != -1 and end != -1:
                     c1_content.append(line[start + 1 : end])
                 break
@@ -200,7 +201,7 @@ class AttributeExtractionStrategy(ABC):
         """
         sections: list[BeautifulSoup] = soup.find_all("jats:sec")
 
-        result: dict = {}
+        result: Dict[str, str] = {}
         if sections:
             for section in sections:
                 title_tag: BeautifulSoup = section.find("jats:title")

@@ -145,16 +145,16 @@ class ClassificationOrchestrator:
         utilities: Utilities,
     ):
         # Set up logger
-        self.log_file_path = os.path.join(
+        self.log_file_path: str = os.path.join(
             LOG_DIR_PATH, "classification_orchestrator.log"
         )
-        self.logger = logging.getLogger(__name__)
+        self.logger: logging.Logger = logging.getLogger(__name__)
         self.logger.setLevel(logging.DEBUG)
 
         if not self.logger.handlers:
-            handler = logging.FileHandler(self.log_file_path)
+            handler: logging.FileHandler = logging.FileHandler(self.log_file_path)
             handler.setLevel(logging.DEBUG)
-            formatter = logging.Formatter(
+            formatter: logging.Formatter = logging.Formatter(
                 "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
             )
             handler.setFormatter(formatter)
@@ -165,14 +165,18 @@ class ClassificationOrchestrator:
 
         # flag to check if classification has been run to provide a method for which to prevent retrieval
         # of unclassified attributes before classification has been ran
-        self._classification_ran = False
+        self._classification_ran: bool = False
 
-        self.unclassified_item_count = 0
-        self.unclassified_dois = []
-        self.unclassified_abstracts = []
-        self.unclassified_doi_abstract_dict = {}
-        self.unclassified_items = []
-        self.unclassified_details_dict = {"dois": [], "abstracts": [], "items": []}
+        self.unclassified_item_count: int = 0
+        self.unclassified_dois: List[str] = []
+        self.unclassified_abstracts: List[str] = []
+        self.unclassified_doi_abstract_dict: Dict[str, str] = {}
+        self.unclassified_items: List[Dict] = []
+        self.unclassified_details_dict: Dict = {
+            "dois": [],
+            "abstracts": [],
+            "items": [],
+        }
 
     def run_classification(self, data: List[Dict]):
         """Processes and classifies a list of research metadata dictionaries.
@@ -259,7 +263,7 @@ class ClassificationOrchestrator:
         self._validate_classification_ran(self._has_ran_classification())
         return self.unclassified_details_dict
 
-    def _classification_orchestrator(self, data: List[Dict]):
+    def _classification_orchestrator(self, data: List[Dict]) -> List[Dict]:
         """Core classification logic for processing research metadata.
 
         Args:
@@ -270,8 +274,10 @@ class ClassificationOrchestrator:
         """
         for item in data:
             doi, abstract = self._retrieve_doi_abstract(item)
-            normalized_abstract = self._normalize_abstract(abstract)
-            doi_abstract_dict = self._make_doi_abstract_dict(doi, normalized_abstract)
+            normalized_abstract: str = self._normalize_abstract(abstract)
+            doi_abstract_dict: Dict[str, str] = self._make_doi_abstract_dict(
+                doi, normalized_abstract
+            )
 
             if not doi_abstract_dict:
                 self._update_classified_instance_variables(
@@ -279,7 +285,7 @@ class ClassificationOrchestrator:
                 )
                 continue
 
-            classifier = self.abstract_classifier_factory(
+            classifier: AbstractClassifier = self.abstract_classifier_factory(
                 doi_abstract_dict=doi_abstract_dict,
             )
             classifier.classify()
@@ -347,15 +353,15 @@ class ClassificationOrchestrator:
         Returns:
             Tuple[str, str]: DOI and abstract pair.
         """
-        result = self.utilities.get_attributes(
+        result: Dict[AttributeTypes, Tuple[bool, str]] = self.utilities.get_attributes(
             item, [AttributeTypes.CROSSREF_DOI, AttributeTypes.CROSSREF_ABSTRACT]
         )
-        doi = (
+        doi: str = (
             result[AttributeTypes.CROSSREF_DOI][1]
             if result[AttributeTypes.CROSSREF_DOI][0]
             else None
         )
-        abstract = (
+        abstract: str = (
             result[AttributeTypes.CROSSREF_ABSTRACT][1]
             if result[AttributeTypes.CROSSREF_ABSTRACT][0]
             else None
@@ -399,7 +405,7 @@ class ClassificationOrchestrator:
 
     def _set_classification_ran_true(self) -> None:
         """Sets the classification ran flag to true."""
-        self._classification_ran = True
+        self._classification_ran: bool = True
 
     def _has_ran_classification(self) -> bool:
         """Checks if classification has been run."""
@@ -430,7 +436,7 @@ class ClassificationOrchestrator:
         Returns:
             str: Normalized abstract.
         """
-        converter = LatexNodes2Text(math_mode="text")
-        unicode_abstract = converter.latex_to_text(abstract)
-        ascii_abstract = unidecode(unicode_abstract)
+        converter: LatexNodes2Text = LatexNodes2Text(math_mode="text")
+        unicode_abstract: str = converter.latex_to_text(abstract)
+        ascii_abstract: str = unidecode(unicode_abstract)
         return ascii_abstract

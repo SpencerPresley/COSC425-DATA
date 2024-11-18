@@ -1,8 +1,13 @@
 import logging
 import os
+from typing import TYPE_CHECKING
+
 from academic_metrics.enums import AttributeTypes
 from academic_metrics.utils import WarningManager
 from academic_metrics.constants import LOG_DIR_PATH
+
+if TYPE_CHECKING:
+    from academic_metrics.strategies import AttributeExtractionStrategy
 
 
 class StrategyFactory:
@@ -32,13 +37,13 @@ class StrategyFactory:
 
     def __init__(self):
         # Set up logger
-        self.log_file_path = os.path.join(LOG_DIR_PATH, "strategy_factory.log")
-        self.logger = logging.getLogger(__name__)
+        self.log_file_path: str = os.path.join(LOG_DIR_PATH, "strategy_factory.log")
+        self.logger: logging.Logger = logging.getLogger(__name__)
         self.logger.setLevel(logging.INFO)
 
         if not self.logger.handlers:
-            handler = logging.FileHandler(self.log_file_path)
-            formatter = logging.Formatter(
+            handler: logging.FileHandler = logging.FileHandler(self.log_file_path)
+            formatter: logging.Formatter = logging.Formatter(
                 "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
             )
             handler.setFormatter(formatter)
@@ -89,7 +94,9 @@ class StrategyFactory:
         Raises:
             ValueError: If no strategy is found for the specified attribute type.
         """
-        strategy_class = cls._strategies.get(attribute_type)
+        strategy_class: AttributeExtractionStrategy = cls._strategies.get(
+            attribute_type
+        )
         if not strategy_class:
             raise ValueError(f"No strategy found for attribute type: {attribute_type}")
         return strategy_class(warning_manager)

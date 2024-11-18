@@ -2,14 +2,14 @@ from __future__ import annotations
 
 import os
 import json
-from typing import TYPE_CHECKING, List, Optional
+from typing import TYPE_CHECKING, List, Dict, Any, Tuple
 import logging
 
 from academic_metrics.constants import LOG_DIR_PATH
 
 if TYPE_CHECKING:
     from academic_metrics.enums import AttributeTypes
-    from academic_metrics.strategies import StrategyFactory
+    from academic_metrics.strategies import StrategyFactory, AttributeExtractionStrategy
     from academic_metrics.utils import WarningManager
 
 
@@ -30,7 +30,7 @@ class Utilities:
             Splits a document into individual entries and creates a separate file for each entry in the specified output directory.
     """
 
-    CROSSREF_FILE_NAME_SUFFIX = "_crossref_item.json"
+    CROSSREF_FILE_NAME_SUFFIX: str = "_crossref_item.json"
 
     def __init__(
         self,
@@ -46,26 +46,28 @@ class Utilities:
             warning_manager (WarningManager): An instance of the WarningManager class.
         """
         # Set up logger
-        self.log_file_path = os.path.join(LOG_DIR_PATH, "utilities.log")
-        self.logger = logging.getLogger(__name__)
+        self.log_file_path: str = os.path.join(LOG_DIR_PATH, "utilities.log")
+        self.logger: logging.Logger = logging.getLogger(__name__)
         self.logger.setLevel(logging.DEBUG)
 
         self.logger.handlers = []
 
         # Add handler if none exists
         if not self.logger.handlers:
-            handler = logging.FileHandler(self.log_file_path)
+            handler: logging.FileHandler = logging.FileHandler(self.log_file_path)
             handler.setLevel(logging.DEBUG)
-            formatter = logging.Formatter(
+            formatter: logging.Formatter = logging.Formatter(
                 "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
             )
             handler.setFormatter(formatter)
             self.logger.addHandler(handler)
 
-        self.strategy_factory = strategy_factory
-        self.warning_manager = warning_manager
+        self.strategy_factory: StrategyFactory = strategy_factory
+        self.warning_manager: WarningManager = warning_manager
 
-    def get_attributes(self, data, attributes: List[AttributeTypes]):
+    def get_attributes(
+        self, data: Dict[str, Any], attributes: List[AttributeTypes]
+    ) -> dict:
         """
         Extracts specified attributes from the article entry and returns them in a dictionary.
         It also warns about missing or invalid attributes.
@@ -82,15 +84,17 @@ class Utilities:
         Raises:
             ValueError: If an attribute not defined in `self.attribute_patterns` is requested.
         """
-        attribute_results = {}
+        attribute_results: Dict[AttributeTypes, Tuple[bool, Any]] = {}
         for attribute in attributes:
-            extraction_strategy = self.strategy_factory.get_strategy(
-                attribute, self.warning_manager
+            extraction_strategy: AttributeExtractionStrategy = (
+                self.strategy_factory.get_strategy(attribute, self.warning_manager)
             )
             attribute_results[attribute] = extraction_strategy.extract_attribute(data)
         return attribute_results
 
-    def crossref_file_splitter(self, *, path_to_file, split_files_dir_path):
+    def crossref_file_splitter(
+        self, *, path_to_file: str, split_files_dir_path: str
+    ) -> List[str]:
         """
         Splits a crossref file into individual entries and creates a separate file for each entry in the specified output directory.
 
@@ -102,11 +106,11 @@ class Utilities:
             list: A list of file names.
         """
         with open(path_to_file, "r") as f:
-            data = json.load(f)
+            data: List[Dict[str, Any]] = json.load(f)
 
         for i, item in enumerate(data):
-            file_name = f"{i}{self.CROSSREF_FILE_NAME_SUFFIX}"
-            path = os.path.join(split_files_dir_path, file_name)
+            file_name: str = f"{i}{self.CROSSREF_FILE_NAME_SUFFIX}"
+            path: str = os.path.join(split_files_dir_path, file_name)
 
             if not os.path.exists(split_files_dir_path):
                 os.makedirs(split_files_dir_path, exist_ok=True)
@@ -114,7 +118,7 @@ class Utilities:
             with open(path, "w") as f:
                 json.dump(item, f, indent=4)
 
-        files = os.listdir(split_files_dir_path)
+        files: List[str] = os.listdir(split_files_dir_path)
         return files
 
     def make_files(

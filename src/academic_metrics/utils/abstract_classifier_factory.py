@@ -1,13 +1,12 @@
 # abstract_classifier_factory.py
 from __future__ import annotations
 
-from typing import TYPE_CHECKING, Optional
+from typing import Dict, TYPE_CHECKING
 import logging
 import os
 
 if TYPE_CHECKING:
     from academic_metrics.utils.taxonomy_util import Taxonomy
-    from typing import Dict
 
 from academic_metrics.AI.AbstractClassifier import AbstractClassifier
 from academic_metrics.constants import LOG_DIR_PATH
@@ -19,11 +18,11 @@ class ClassifierFactory:
         taxonomy: Taxonomy,
         ai_api_key: str,
     ):
-        self.log_file_path = os.path.join(
+        self.log_file_path: str = os.path.join(
             LOG_DIR_PATH, "abstract_classifier_factory.log"
         )
         # Set up logger
-        self.logger = logging.getLogger(__name__)
+        self.logger: logging.Logger = logging.getLogger(__name__)
         self.logger.setLevel(logging.DEBUG)
 
         if self.logger.handlers:
@@ -31,9 +30,9 @@ class ClassifierFactory:
 
         # Add handler if none exists
         if not self.logger.handlers:
-            handler = logging.FileHandler(self.log_file_path)
+            handler: logging.FileHandler = logging.FileHandler(self.log_file_path)
             handler.setLevel(logging.DEBUG)
-            formatter = logging.Formatter(
+            formatter: logging.Formatter = logging.Formatter(
                 "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
             )
             handler.setFormatter(formatter)
@@ -41,8 +40,8 @@ class ClassifierFactory:
 
         self.logger.info("Initializing ClassifierFactory")
 
-        self.taxonomy = taxonomy
-        self.ai_api_key = ai_api_key
+        self.taxonomy: Taxonomy = taxonomy
+        self.ai_api_key: str = ai_api_key
 
         self.logger.info("ClassifierFactory initialized successfully")
 
@@ -51,7 +50,7 @@ class ClassifierFactory:
         doi_abstract_dict: Dict[str, str],
     ) -> AbstractClassifier:
         self.logger.info("Creating AbstractClassifier")
-        classifier = AbstractClassifier(
+        classifier: AbstractClassifier = AbstractClassifier(
             taxonomy=self.taxonomy,
             doi_to_abstract_dict=doi_abstract_dict,
             api_key=self.ai_api_key,

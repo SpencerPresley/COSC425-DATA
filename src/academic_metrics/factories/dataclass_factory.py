@@ -8,14 +8,30 @@ import os
 
 
 class DataClassFactory:
-    """
-    A factory class for creating, getting, and managing dataclass instances.
-    Provides centralized creation and registration of dataclasses.
+    """Factory for creating and managing dataclass instances.
+
+    This class provides centralized creation, registration, and management of dataclasses
+    used throughout the application. It maintains a registry of dataclass types and
+    handles their instantiation with proper initialization.
+
+    Attributes:
+        _registry (Dict[str, Type[dataclass]]): Internal registry mapping dataclass types to their classes.
+        logger (logging.Logger): Logger instance for this class.
+        log_file_path (str): Path to the log file.
+
+    Public Methods:
+        register_dataclass: Decorator to register a dataclass with the factory.
+        get_dataclass: Creates a new instance of a registered dataclass.
+        is_registered: Checks if a dataclass type is registered.
     """
 
     _registry: Dict[str, Type[dataclass]] = {}
 
     def __init__(self):
+        """Initialize the DataClassFactory with logging configuration.
+
+        Sets up both file and console handlers for logging factory operations.
+        """
         # Set up logger
         self.log_file_path = os.path.join(LOG_DIR_PATH, "dataclass_factory.log")
 

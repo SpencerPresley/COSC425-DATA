@@ -5,7 +5,7 @@ import json
 import logging
 import os
 from collections import defaultdict
-from typing import Any, Dict, List, Tuple, TYPE_CHECKING, Union, cast
+from typing import Any, Dict, List, Tuple, TYPE_CHECKING, Union, cast, Optional, Self
 
 from dotenv import load_dotenv
 
@@ -153,27 +153,29 @@ class AbstractClassifier:
 
     def __init__(
         self,
-        taxonomy,
+        taxonomy: Taxonomy,
         doi_to_abstract_dict: Dict[str, str],
         api_key: str,
         log_to_console: bool = True,
-    ):
+    ) -> None:
 
         # Set up logger
-        log_file_path = os.path.join(LOG_DIR_PATH, "abstract_classifier.log")
-        self.logger = logging.getLogger(__name__)
+        log_file_path: str = os.path.join(LOG_DIR_PATH, "abstract_classifier.log")
+        self.logger: logging.Logger = logging.getLogger(__name__)
         self.logger.setLevel(logging.DEBUG)
         self.logger.handlers = []
-        self.log_to_console = log_to_console
+        self.log_to_console: bool = log_to_console
 
         # Add handler if none exists
         if not self.logger.handlers:
-            handler = logging.FileHandler(log_file_path)
+            handler: logging.FileHandler = logging.FileHandler(log_file_path)
             handler.setLevel(logging.DEBUG)
-            formatter = logging.Formatter(
+            formatter: logging.Formatter = logging.Formatter(
                 "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
             )
-            console_handler = logging.StreamHandler() if self.log_to_console else None
+            console_handler: Optional[logging.StreamHandler] = (
+                logging.StreamHandler() if self.log_to_console else None
+            )
             if console_handler:
                 console_handler.setFormatter(formatter)
                 self.logger.addHandler(console_handler)
@@ -197,7 +199,7 @@ class AbstractClassifier:
         self.logger.info("DOI to abstract dictionary set")
 
         self.logger.info("Initialized taxonomy and abstracts")
-        self.classification_results = {
+        self.classification_results: Dict[str, Dict[str, Any]] = {
             doi: defaultdict(  # Top categories
                 lambda: defaultdict(list)  # Mid categories with lists of low categories
             )
@@ -208,7 +210,7 @@ class AbstractClassifier:
         self.logger.info(
             "Initializing raw outputs list used to store raw outputs from chain layers"
         )
-        self.raw_classification_outputs = []
+        self.raw_classification_outputs: List[Dict[str, Any]] = []
         self.logger.info("Initialized raw classification outputs list")
 
         self.logger.info(
@@ -221,7 +223,9 @@ class AbstractClassifier:
         self.logger.info(
             "Initializing and adding layers to pre-classification chain manager"
         )
-        self.pre_classification_chain_manager = self._initialize_chain_manager()
+        self.pre_classification_chain_manager: ChainManager = (
+            self._initialize_chain_manager()
+        )
         self._add_method_extraction_layer(
             self.pre_classification_chain_manager
         )._add_sentence_analysis_layer(
@@ -237,14 +241,16 @@ class AbstractClassifier:
         self.logger.info(
             "Initializing and adding layers to classification chain manager"
         )
-        self.classification_chain_manager = self._initialize_chain_manager()
+        self.classification_chain_manager: ChainManager = (
+            self._initialize_chain_manager()
+        )
         self._add_classification_layer(self.classification_chain_manager)
         self.logger.info("Classification chain manager initialized and layers added")
 
         self.logger.info(
             "Initializing and adding layers to theme recognition chain manager"
         )
-        self.theme_chain_manager = self._initialize_chain_manager()
+        self.theme_chain_manager: ChainManager = self._initialize_chain_manager()
         self._add_theme_recognition_layer(self.theme_chain_manager)
         self.logger.info("Theme recognition chain manager initialized and layers added")
 
@@ -274,7 +280,7 @@ class AbstractClassifier:
             ) from e
 
         try:
-            api_key = cast(str, str(api_key))
+            api_key: str = cast(str, str(api_key))
         except Exception as e:
             raise ValueError(
                 f"API key must be a string or be convertible to a string. "
@@ -300,7 +306,7 @@ class AbstractClassifier:
             log_to_console=self.log_to_console,
         )
 
-    def _add_method_extraction_layer(self, chain_manager: ChainManager):
+    def _add_method_extraction_layer(self, chain_manager: ChainManager) -> Self:
         """
         Adds the method extraction layer to the chain manager
 
@@ -320,7 +326,7 @@ class AbstractClassifier:
         )
         return self
 
-    def _add_sentence_analysis_layer(self, chain_manager: ChainManager):
+    def _add_sentence_analysis_layer(self, chain_manager: ChainManager) -> Self:
         """
         Adds the sentence analysis layer to the chain manager
 
@@ -340,7 +346,7 @@ class AbstractClassifier:
         )
         return self
 
-    def _add_summary_layer(self, chain_manager: ChainManager):
+    def _add_summary_layer(self, chain_manager: ChainManager) -> Self:
         """
         Adds the summary layer to the chain manager
 
@@ -360,7 +366,7 @@ class AbstractClassifier:
         )
         return self
 
-    def _add_classification_layer(self, chain_manager: ChainManager):
+    def _add_classification_layer(self, chain_manager: ChainManager) -> Self:
         """
         Adds the classification layer to the chain manager
 
@@ -379,7 +385,7 @@ class AbstractClassifier:
         )
         return self
 
-    def _add_theme_recognition_layer(self, chain_manager: ChainManager):
+    def _add_theme_recognition_layer(self, chain_manager: ChainManager) -> Self:
         """Adds the theme recognition layer to the chain manager
 
         Returns:
@@ -429,14 +435,14 @@ class AbstractClassifier:
             ...     return_type=tuple
             ... )
         """
-        top_categories = []
-        mid_categories = []
-        low_categories = []
-        themes = []
+        top_categories: List[str] = []
+        mid_categories: List[str] = []
+        low_categories: List[str] = []
+        themes: List[str] = []
 
-        abstract_result = self.classification_results.get(doi, {})
+        abstract_result: Dict[str, Any] = self.classification_results.get(doi, {})
 
-        def extract_categories(result, level):
+        def extract_categories(result: Dict[str, Any], level: str) -> None:
             """Recursively extracts categories from nested classification results."""
             for key, value in result.items():
                 if isinstance(value, dict):
@@ -466,9 +472,9 @@ class AbstractClassifier:
         extract_categories(abstract_result, "top")
 
         # Remove any duplicates while preserving order
-        low_categories = list(dict.fromkeys(low_categories))
+        low_categories: List[str] = list(dict.fromkeys(low_categories))
 
-        result = {
+        result: Dict[str, Any] = {
             "top_categories": top_categories,
             "mid_categories": mid_categories,
             "low_categories": low_categories,
@@ -483,8 +489,10 @@ class AbstractClassifier:
         doi: str,
         prompt_variables: Dict[str, Any],
         level: str = "top",
-        parent_category=None,
-        current_dict=None,  # parameter to track current position in defaultdict
+        parent_category: Optional[str] = None,
+        current_dict: Optional[
+            Dict[str, Any]
+        ] = None,  # parameter to track current position in defaultdict
     ) -> None:
         """Recursively classifies an abstract through the taxonomy hierarchy.
 
@@ -510,9 +518,11 @@ class AbstractClassifier:
             current_dict = self.classification_results[doi]
 
         try:
-            classification_output = self.classification_chain_manager.run(
-                prompt_variables_dict=prompt_variables
-            ).get("classification_output", {})
+            classification_output: Dict[str, Any] = (
+                self.classification_chain_manager.run(
+                    prompt_variables_dict=prompt_variables
+                ).get("classification_output", {})
+            )
             self.logger.debug(f"Raw classification output: {classification_output}")
 
             # Use **kwargs to unpack the dictionary into keyword arguments for the Pydantic model.
@@ -520,43 +530,47 @@ class AbstractClassifier:
             # even if there are more keys present in the output which are not part of the pydantic model.
             # This is critical as the outputs here will have all prompt variables from the ones passed to run()
             # as well as the output of the chain layer.
-            classification_output = ClassificationOutput(**classification_output)
+            classification_output: ClassificationOutput = ClassificationOutput(
+                **classification_output
+            )
             self.raw_classification_outputs.append(classification_output.model_dump())
 
             # Extract out just the classified categories from the classification output.
             # When the level is top and mid these extracted categories will be used to recursively classify child categories
             # When the level is low these extracted categories will be used to update the current mid category's list of low categories
-            classified_categories = self.extract_classified_categories(
+            classified_categories: List[str] = self.extract_classified_categories(
                 classification_output
             )
             self.logger.info(
                 f"Classified categories at {level} level: {classified_categories}"
             )
 
-            result = {}
+            result: Dict[str, Any] = {}
 
             for category in classified_categories:
                 if level == "top":
                     # Get the mid categories for the current top category
-                    subcategories = self.taxonomy.get_mid_categories(category)
+                    subcategories: List[str] = self.taxonomy.get_mid_categories(
+                        category
+                    )
 
                     # Set the next level to mid so the recursive call will classify the mid categories extracted above
-                    next_level = "mid"
+                    next_level: str = "mid"
 
                     # Move to this category's dictionary in the defaultdict
-                    next_dict = current_dict[category]
+                    next_dict: Dict[str, Any] = current_dict[category]
 
                 elif level == "mid":
                     # Get the low categories for the current mid category
-                    subcategories = self.taxonomy.get_low_categories(
+                    subcategories: List[str] = self.taxonomy.get_low_categories(
                         parent_category, category
                     )
 
                     # Set the next level to low so the recursive call will classify the low categories extracted above
-                    next_level = "low"
+                    next_level: str = "low"
 
                     # Move to this category's dictionary in the defaultdict
-                    next_dict = current_dict[category]
+                    next_dict: Dict[str, Any] = current_dict[category]
 
                 elif level == "low":
                     # current_dict is already the list for this mid category, so just append the classified low category
@@ -613,7 +627,7 @@ class AbstractClassifier:
             List[str]: Flattened list of all classified category names
         """
         self.logger.info("Extracting classified categories")
-        categories = [
+        categories: List[str] = [
             cat
             for classification in classification_output.classifications
             for cat in classification.categories
@@ -621,7 +635,7 @@ class AbstractClassifier:
         self.logger.info("Extracted classified categories")
         return categories
 
-    def classify(self) -> "AbstractClassifier":
+    def classify(self) -> Self:
         """Orchestrates the complete classification pipeline for all abstracts.
 
         Processes each abstract through a three-stage pipeline:
@@ -662,7 +676,7 @@ class AbstractClassifier:
             - self.raw_theme_outputs
         """
         # Track total abstracts for progress logging
-        n_abstracts = len(self.doi_to_abstract_dict.keys())
+        n_abstracts: int = len(self.doi_to_abstract_dict.keys())
 
         # Process each abstract through the complete pipeline
         for i, (doi, abstract) in enumerate(self.doi_to_abstract_dict.items()):
@@ -678,7 +692,7 @@ class AbstractClassifier:
             #######################
 
             # Initialize initial prompt variables used in the system and human prompts for the pre-classification chain layers
-            initial_prompt_variables = {
+            initial_prompt_variables: Dict[str, Any] = {
                 "abstract": abstract,
                 "METHOD_JSON_FORMAT": METHOD_JSON_FORMAT,
                 "METHOD_EXTRACTION_CORRECT_EXAMPLE_JSON": METHOD_EXTRACTION_CORRECT_EXAMPLE_JSON,
@@ -695,16 +709,20 @@ class AbstractClassifier:
             # Call this (pre_classification_chain_manager) ChainManager instance's get_chain_variables() method to get the current
             # chain variables which includes all initial_prompt_variables and the outputs of the
             # The new items inserted have a key which matches the layers output_passthrough_key_name value.
-            prompt_variables = (
+            prompt_variables: Dict[str, Any] = (
                 self.pre_classification_chain_manager.get_chain_variables()
             )
-            method_extraction_output = prompt_variables.get("method_json_output", {})
+            method_extraction_output: Dict[str, Any] = prompt_variables.get(
+                "method_json_output", {}
+            )
             self.logger.debug(f"Method extraction output: {method_extraction_output}")
-            sentence_analysis_output = prompt_variables.get(
+            sentence_analysis_output: Dict[str, Any] = prompt_variables.get(
                 "sentence_analysis_output", {}
             )
             self.logger.debug(f"Sentence analysis output: {sentence_analysis_output}")
-            summary_output = prompt_variables.get("abstract_summary_output", {})
+            summary_output: Dict[str, Any] = prompt_variables.get(
+                "abstract_summary_output", {}
+            )
             self.logger.debug(f"Summary output: {summary_output}")
 
             ######################
@@ -739,7 +757,9 @@ class AbstractClassifier:
             #   so now this abstract has been classified into all relevant categories and subcategories within the taxonomy.
             #   Given this, we can now process the themes for this abstract.
             #   Like before fetch this ChainManager (classification_chain_manager this time) instance's chain variables and update them:
-            prompt_variables = self.classification_chain_manager.get_chain_variables()
+            prompt_variables: Dict[str, Any] = (
+                self.classification_chain_manager.get_chain_variables()
+            )
 
             # Add in the theme recognition specific variables
             # The only one not already present in prompt_variables which is present as a placeholder
@@ -756,7 +776,7 @@ class AbstractClassifier:
             #   We don't need to pull out prompt_variables again as we can just extract the themes directly out the theme_results
             #   Remember, before we had to pull out the prompt_variables as we needed all variables to propagate through to the
             #   future chains which weren't the same ChainManager instance.
-            theme_results = self.theme_chain_manager.run(
+            theme_results: Dict[str, Any] = self.theme_chain_manager.run(
                 prompt_variables_dict=prompt_variables
             ).get("theme_output", {})
 
@@ -783,7 +803,7 @@ class AbstractClassifier:
     def _make_dirs_helper(self, output_path: str) -> None:
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
 
-    def save_classification_results(self, output_path: str) -> "AbstractClassifier":
+    def save_classification_results(self, output_path: str) -> Self:
         """Saves processed classification results to a JSON file.
 
         Args:
@@ -845,7 +865,7 @@ class AbstractClassifier:
         self.logger.info("Getting raw theme results")
         return self.raw_theme_outputs
 
-    def save_raw_classification_results(self, output_path: str) -> "AbstractClassifier":
+    def save_raw_classification_results(self, output_path: str) -> Self:
         """Saves raw classification outputs to a JSON file.
 
         Args:
@@ -870,7 +890,7 @@ class AbstractClassifier:
             json.dump(self.raw_classification_outputs, f, indent=4)
         return self
 
-    def save_raw_theme_results(self, output_path: str) -> "AbstractClassifier":
+    def save_raw_theme_results(self, output_path: str) -> Self:
         """Saves raw theme analysis results to a JSON file.
 
         Args:

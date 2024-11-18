@@ -12,18 +12,18 @@ TaxonomyDict = Dict[str, Dict[str, List[str]]]
 
 class Taxonomy:
     def __init__(self) -> None:
-        self.log_file_path = os.path.join(LOG_DIR_PATH, "taxonomy_util.log")
+        self.log_file_path: str = os.path.join(LOG_DIR_PATH, "taxonomy_util.log")
         # Set up logger
-        self.logger = logging.getLogger(__name__)
+        self.logger: logging.Logger = logging.getLogger(__name__)
         self.logger.setLevel(logging.DEBUG)
 
         self.logger.handlers = []
 
         # Add handler if none exists
         if not self.logger.handlers:
-            handler = logging.FileHandler(self.log_file_path)
+            handler: logging.FileHandler = logging.FileHandler(self.log_file_path)
             handler.setLevel(logging.DEBUG)
-            formatter = logging.Formatter(
+            formatter: logging.Formatter = logging.Formatter(
                 "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
             )
             handler.setFormatter(formatter)
@@ -52,25 +52,25 @@ class Taxonomy:
         return self.taxonomy[top_category][mid_category]
 
     def get_top_cat_for_mid_cat(self, mid_cat: str) -> str:
-        top_cat = ""
-        found = False
+        top_cat: str = ""
+        found: bool = False
         while not found:
             for top_cat, mid_cats in self.taxonomy.items():
                 if mid_cat in mid_cats:
-                    found = True
+                    found: bool = True
                     break
             if found:
                 break
         return top_cat
 
     def get_mid_cat_for_low_cat(self, low_cat: str) -> str:
-        mid_cat = ""
-        found = False
+        mid_cat: str = ""
+        found: bool = False
         while not found:
             for top_cat, mid_cats in self.taxonomy.items():
                 for mid_cat, low_cats in mid_cats.items():
                     if low_cat in low_cats:
-                        found = True
+                        found: bool = True
                         break
             if found:
                 break

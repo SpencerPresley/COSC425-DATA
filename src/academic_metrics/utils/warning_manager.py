@@ -1,6 +1,7 @@
 import warnings
 import logging
 import os
+from typing import List
 
 
 class CustomWarning(Warning):
@@ -36,9 +37,9 @@ class CustomWarning(Warning):
         Summary:
             This method initializes the CustomWarning class with the provided category, message, and entry ID.
         """
-        self.category = category
-        self.message = message
-        self.entry_id = entry_id
+        self.category: str = category
+        self.message: str = message
+        self.entry_id: str = entry_id
         super().__init__(self.message)
 
 
@@ -87,23 +88,23 @@ class WarningManager:
             This method initializes the WarningManager class.
         """
         # Set up logger
-        current_dir = os.path.dirname(os.path.abspath(__file__))
-        log_file_path = os.path.join(current_dir, "warning_manager.log")
-        self.logger = logging.getLogger(__name__)
+        current_dir: str = os.path.dirname(os.path.abspath(__file__))
+        log_file_path: str = os.path.join(current_dir, "warning_manager.log")
+        self.logger: logging.Logger = logging.getLogger(__name__)
         self.logger.setLevel(logging.DEBUG)
 
         # Add handler if none exists
         if not self.logger.handlers:
-            handler = logging.FileHandler(log_file_path)
+            handler: logging.FileHandler = logging.FileHandler(log_file_path)
             handler.setLevel(logging.DEBUG)
-            formatter = logging.Formatter(
+            formatter: logging.Formatter = logging.Formatter(
                 "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
             )
             handler.setFormatter(formatter)
             self.logger.addHandler(handler)
 
-        self.warning_count = 0
-        self.warnings = []
+        self.warning_count: int = 0
+        self.warnings: List[CustomWarning] = []
 
     def log_warning(
         self, category: str, warning_message: str, entry_id: str = None
@@ -144,11 +145,11 @@ class WarningManager:
             for i, warning in enumerate(self.warnings, 1):
                 print(f"{i}. {warning.category}: {warning.message[:50]}...")
 
-            user_input = input(
+            user_input: str = input(
                 "\nEnter a number to see full warning details, or press Enter to continue: "
             )
             if user_input.isdigit() and 1 <= int(user_input) <= len(self.warnings):
-                warning = self.warnings[int(user_input) - 1]
+                warning: CustomWarning = self.warnings[int(user_input) - 1]
                 print(f"\nFull Warning Details:")
                 print(f"Category: {warning.category}")
                 print(f"Message: {warning.message}")

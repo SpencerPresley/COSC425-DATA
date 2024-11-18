@@ -34,15 +34,15 @@ class APIKeyValidator:
         # Dict to track api keys which have been validated already
         # Key = api_key, Value = bool (True if valid, False if not)
         self._validated_already: Dict[str, bool] = {}
-        self.log_file_path = os.path.join(LOG_DIR_PATH, "api_key_validator.log")
-        self.logger = logging.getLogger(__name__)
+        self.log_file_path: str = os.path.join(LOG_DIR_PATH, "api_key_validator.log")
+        self.logger: logging.Logger = logging.getLogger(__name__)
         self.logger.setLevel(logging.DEBUG)
         self.logger.handlers = []
 
         if not self.logger.handlers:
-            handler = logging.FileHandler(self.log_file_path)
+            handler: logging.FileHandler = logging.FileHandler(self.log_file_path)
             handler.setLevel(logging.DEBUG)
-            formatter = logging.Formatter(
+            formatter: logging.Formatter = logging.Formatter(
                 "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
             )
             handler.setFormatter(formatter)
@@ -57,11 +57,11 @@ class APIKeyValidator:
             PromptTemplate,
         )
 
-        results = ValidationResult()
-        system_prompt_template = PromptTemplate(template="test")
-        human_prompt_template = PromptTemplate(template="test")
+        results: ValidationResult = ValidationResult()
+        system_prompt_template: PromptTemplate = PromptTemplate(template="test")
+        human_prompt_template: PromptTemplate = PromptTemplate(template="test")
 
-        prompt = ChatPromptTemplate.from_messages(
+        prompt: ChatPromptTemplate = ChatPromptTemplate.from_messages(
             [
                 SystemMessagePromptTemplate.from_template(
                     system_prompt_template.template
@@ -76,9 +76,9 @@ class APIKeyValidator:
         try:
             from langchain_openai import ChatOpenAI
 
-            llm = ChatOpenAI(api_key=api_key, model=model or "gpt-4o-mini")
+            llm: ChatOpenAI = ChatOpenAI(api_key=api_key, model=model or "gpt-4o-mini")
 
-            chain = prompt | llm
+            chain: Runnable = prompt | llm
             chain.invoke({})
             results.openai = True
 
@@ -89,8 +89,10 @@ class APIKeyValidator:
         try:
             from langchain_anthropic import ChatAnthropic
 
-            llm = ChatAnthropic(api_key=api_key, model=model or "claude-3.5-haiku")
-            chain = prompt | llm
+            llm: ChatAnthropic = ChatAnthropic(
+                api_key=api_key, model=model or "claude-3.5-haiku"
+            )
+            chain: Runnable = prompt | llm
             chain.invoke({})
             results.anthropic = True
         except Exception:
@@ -100,10 +102,10 @@ class APIKeyValidator:
         try:
             from langchain_google_genai import ChatGoogleGenerativeAI
 
-            llm = ChatGoogleGenerativeAI(
+            llm: ChatGoogleGenerativeAI = ChatGoogleGenerativeAI(
                 api_key=api_key, model=model or "gemini-1.5-pro"
             )
-            chain = prompt | llm
+            chain: Runnable = prompt | llm
             chain.invoke({})
             results.google = True
         except Exception:
@@ -152,7 +154,7 @@ class APIKeyValidator:
         """Print formatted validation results for a given API key."""
         from academic_metrics.utils.unicode_chars_dict import unicode_chars_dict
 
-        results = self.get_results_for_api_key(api_key)
+        results: Dict[str, bool] = self.get_results_for_api_key(api_key)
         print(f"API Key: {api_key}")
         for service, valid in results.items():
             status = (

@@ -1,4 +1,4 @@
-TAXONOMY_AS_STRING = """
+TAXONOMY_AS_STRING: str = """
 {
     "Agricultural sciences and natural resources ": {
         "Agricultural, animal, plant, and veterinary sciences": [
