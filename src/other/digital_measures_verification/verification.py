@@ -16,6 +16,7 @@ from tqdm import tqdm
 
 from academic_metrics.factories import StrategyFactory
 from academic_metrics.utils import WarningManager
+from academic_metrics.orchestrators import CategoryDataOrchestrator
 
 
 def query_crossref(
@@ -528,7 +529,7 @@ def do_dm_verification(crossref: bool = False, second_run: bool = False) -> None
                     input_dir_path = os.path.expanduser(input_dir_path)
                     output_dir_path = os.path.expanduser(output_dir_path)
                     # Instantiate the orchestrator class
-                    wos_classifiction = WosClassification(
+                    category_data_orchestrator = CategoryDataOrchestrator(
                         input_dir_path=input_dir_path,
                         output_dir_path=output_dir_path,
                         strategy_factory=strategy_factory,
