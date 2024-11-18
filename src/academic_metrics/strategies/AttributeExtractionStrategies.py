@@ -715,8 +715,6 @@ class AuthorExtractionStrategy(AttributeExtractionStrategy):
         # Use the get_salisbury_authors method to extract authors affiliated with Salisbury University
         salisbury_authors: list[str] = self.split_salisbury_authors(author_c1_content)
 
-        result: tuple[bool, list[str]] = ()
-
         if salisbury_authors:
             return (True, salisbury_authors)
         else:

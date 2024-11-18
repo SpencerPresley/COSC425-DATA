@@ -17,7 +17,6 @@ if TYPE_CHECKING:
     from academic_metrics.dataclass_models import (
         CrossrefArticleDetails,
         CrossrefArticleStats,
-        FacultyInfo,
     )
     from academic_metrics.factories import (
         DataClassFactory,
