@@ -11,7 +11,7 @@ from . import constants
 from . import DB
 
 # Expose commonly used classes/functions at the package level
-from .utils import Utilities, FileHandler, WarningManager, configure_logger
+from .utils import Utilities, WarningManager, configure_logger, Taxonomy
 from .strategies import StrategyFactory
 from .factories import DataClassFactory
 from .dataclass_models.concrete_dataclasses import (
