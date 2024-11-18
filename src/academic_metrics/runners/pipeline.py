@@ -268,17 +268,25 @@ class PipelineRunner:
 
         self.logger.info("Attempting to save data to database...")
         try:
-            self.db.run_all_process(
-                category_data=category_data,
-                article_data=article_data,
-                faculty_data=global_faculty_data,
-            )
+            self.db.insert_categories(category_data)
             self.logger.info(
-                f"""Successfully saved to database!
-                Categories: {len(category_data)}
-                Articles: {len(article_data)}
-                Faculty: {len(global_faculty_data)}
-                """
+                f"""Successfully inserted {len(category_data)} categories into database"""
+            )
+        except Exception as e:
+            self.logger.error(f"Error saving to database: {e}")
+
+        try:
+            self.db.insert_articles(article_data)
+            self.logger.info(
+                f"""Successfully inserted {len(article_data)} articles into database"""
+            )
+        except Exception as e:
+            self.logger.error(f"Error saving to database: {e}")
+
+        try:
+            self.db.insert_faculty(global_faculty_data)
+            self.logger.info(
+                f"""Successfully inserted {len(global_faculty_data)} faculty into database"""
             )
         except Exception as e:
             self.logger.error(f"Error saving to database: {e}")
