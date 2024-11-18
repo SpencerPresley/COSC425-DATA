@@ -291,6 +291,40 @@ class PipelineRunner:
         except Exception as e:
             self.logger.error(f"Error saving to database: {e}")
 
+    def test_run(self):
+        with open("test_processed_category_data.json", "r") as file:
+            category_data: List[Dict[str, Any]] = json.load(file)
+
+        try:
+            self.db.insert_categories(category_data)
+            self.logger.info(
+                f"""Successfully inserted {len(category_data)} categories into database"""
+            )
+        except Exception as e:
+            self.logger.error(f"Error saving to database: {e}")
+
+        with open("test_processed_article_stats_obj_data.json", "r") as file:
+            article_data: List[Dict[str, Any]] = json.load(file)
+
+        try:
+            self.db.insert_articles(article_data)
+            self.logger.info(
+                f"""Successfully inserted {len(article_data)} articles into database"""
+            )
+        except Exception as e:
+            self.logger.error(f"Error saving to database: {e}")
+
+        with open("test_processed_global_faculty_stats_data.json", "r") as file:
+            global_faculty_data: List[Dict[str, Any]] = json.load(file)
+
+        try:
+            self.db.insert_faculty(global_faculty_data)
+            self.logger.info(
+                f"""Successfully inserted {len(global_faculty_data)} faculty into database"""
+            )
+        except Exception as e:
+            self.logger.error(f"Error saving to database: {e}")
+
     def _create_taxonomy(self) -> Taxonomy:
         """Create a new Taxonomy instance for publication classification.
 
