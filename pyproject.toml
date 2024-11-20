@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "academic_metrics"
-version = "0.3.0-alpha"
+version = "0.4.0-alpha"
 description = "A tool to extract and format academic data from Web of Science and Crossref"
 authors = [
     { name = "Spencer Presley", email = "spencerpresley96@gmail.com" },
@@ -18,7 +18,6 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 dependencies = [
-    "academic_metrics==0.3.0a0",
     "aiohttp==3.10.8",
     "beautifulsoup4==4.12.3",
     "langchain==0.3.7",
