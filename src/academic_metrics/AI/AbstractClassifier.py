@@ -155,6 +155,7 @@ class AbstractClassifier:
         doi_to_abstract_dict: Dict[str, str],
         api_key: str,
         log_to_console: bool = True,
+        extra_context: dict | "None" = "None",
     ) -> None:
 
         # Set up logger
@@ -195,6 +196,10 @@ class AbstractClassifier:
         self.logger.info("Setting DOI to abstract dictionary")
         self.doi_to_abstract_dict = doi_to_abstract_dict
         self.logger.info("DOI to abstract dictionary set")
+
+        self.logger.info("Setting extra context")
+        self.extra_context = extra_context
+        self.logger.info("Extra context set")
 
         self.logger.info("Initialized taxonomy and abstracts")
         self.classification_results: Dict[str, Dict[str, Any]] = {
@@ -248,7 +253,7 @@ class AbstractClassifier:
         self.logger.info(
             "Initializing and adding layers to theme recognition chain manager"
         )
-        self.theme_chain_manager: ChainManager = self._initialize_chain_manager()
+        self.theme_chain_manager: ChainManager = self._initialize_theme_chain_manager()
         self._add_theme_recognition_layer(self.theme_chain_manager)
         self.logger.info("Theme recognition chain manager initialized and layers added")
 
@@ -297,9 +302,17 @@ class AbstractClassifier:
         """
         # TODO: Make these configurable
         return ChainManager(
-            llm_model="gpt-4o-mini",
+            llm_model="gpt-4o",
             api_key=self.api_key,
-            llm_temperature=0.7,
+            llm_temperature=0.0,
+            log_to_console=self.log_to_console,
+        )
+
+    def _initialize_theme_chain_manager(self) -> ChainManager:
+        return ChainManager(
+            llm_model="gpt-4o",
+            api_key=self.api_key,
+            llm_temperature=0.9,
             log_to_console=self.log_to_console,
         )
 
@@ -695,6 +708,7 @@ class AbstractClassifier:
                 "METHOD_EXTRACTION_INCORRECT_EXAMPLE_JSON": METHOD_EXTRACTION_INCORRECT_EXAMPLE_JSON,
                 "SENTENCE_ANALYSIS_JSON_EXAMPLE": SENTENCE_ANALYSIS_JSON_EXAMPLE,
                 "SUMMARY_JSON_STRUCTURE": SUMMARY_JSON_STRUCTURE,
+                "extra_context": self.extra_context,
             }
 
             # Execute pre-classification chain (method extraction -> sentence analysis -> summarization)

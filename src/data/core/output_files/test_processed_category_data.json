@@ -1,1018 +1,616 @@
 [
     {
+        "_id": "Health%20sciences",
+        "url": "Health%20sciences",
+        "category_name": "Health sciences",
+        "faculty_count": 12,
+        "department_count": 5,
+        "article_count": 3,
+        "faculty": [
+            "Brent Fedorko",
+            "Tami. S. Ransom",
+            "Sean Zupnik",
+            "Tim Werner",
+            "Jessica Walters",
+            "Karsin M. Bachran",
+            "Lisa Marquette",
+            "Eric B. Liebgold",
+            "Susannah Taylor",
+            "Campbell Ruffhead",
+            "Masoud Moghaddam",
+            "Nicholas Rolnick"
+        ],
+        "departments": [
+            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)",
+            "UMES, Princess Anne, MD.",
+            "Salisbury University, Salisbury, MD.",
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801.",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
+        ],
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "tc_count": 0,
+        "citation_average": 0.0,
+        "doi_list": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1656/045.031.s1222",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "themes": [
+            "Differences Between Autoregulated and Non-autoregulated BFR",
+            "Impact of BFR Exercise on Arterial Stiffness",
+            "Effects of Blood Flow Restriction Techniques",
+            "Ecological Implications of Nonlethal Injuries",
+            "Subjective Exercise Experience",
+            "Exercise Adherence",
+            "Impact of Predation on Movement",
+            "Emerging Trends in Exercise Physiology",
+            "Turtle Behavioral Ecology"
+        ]
+    },
+    {
+        "_id": "Biological%20and%20biomedical%20sciences",
+        "url": "Biological%20and%20biomedical%20sciences",
+        "category_name": "Biological and biomedical sciences",
+        "faculty_count": 12,
+        "department_count": 5,
+        "article_count": 3,
+        "faculty": [
+            "Brent Fedorko",
+            "Tami. S. Ransom",
+            "Sean Zupnik",
+            "Tim Werner",
+            "Jessica Walters",
+            "Karsin M. Bachran",
+            "Lisa Marquette",
+            "Eric B. Liebgold",
+            "Susannah Taylor",
+            "Campbell Ruffhead",
+            "Masoud Moghaddam",
+            "Nicholas Rolnick"
+        ],
+        "departments": [
+            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)",
+            "UMES, Princess Anne, MD.",
+            "Salisbury University, Salisbury, MD.",
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801.",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
+        ],
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "tc_count": 0,
+        "citation_average": 0.0,
+        "doi_list": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1656/045.031.s1222",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "themes": [
+            "Differences Between Autoregulated and Non-autoregulated BFR",
+            "Impact of BFR Exercise on Arterial Stiffness",
+            "Effects of Blood Flow Restriction Techniques",
+            "Ecological Implications of Nonlethal Injuries",
+            "Subjective Exercise Experience",
+            "Exercise Adherence",
+            "Impact of Predation on Movement",
+            "Emerging Trends in Exercise Physiology",
+            "Turtle Behavioral Ecology"
+        ]
+    },
+    {
+        "_id": "Health%20sciences%2C%20other",
+        "url": "Health%20sciences%2C%20other",
+        "category_name": "Health sciences, other",
+        "faculty_count": 12,
+        "department_count": 5,
+        "article_count": 3,
+        "faculty": [
+            "Brent Fedorko",
+            "Tami. S. Ransom",
+            "Sean Zupnik",
+            "Tim Werner",
+            "Jessica Walters",
+            "Karsin M. Bachran",
+            "Lisa Marquette",
+            "Eric B. Liebgold",
+            "Susannah Taylor",
+            "Campbell Ruffhead",
+            "Masoud Moghaddam",
+            "Nicholas Rolnick"
+        ],
+        "departments": [
+            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)",
+            "UMES, Princess Anne, MD.",
+            "Salisbury University, Salisbury, MD.",
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801.",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
+        ],
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "tc_count": 0,
+        "citation_average": 0.0,
+        "doi_list": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1656/045.031.s1222",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "themes": [
+            "Differences Between Autoregulated and Non-autoregulated BFR",
+            "Impact of BFR Exercise on Arterial Stiffness",
+            "Effects of Blood Flow Restriction Techniques",
+            "Ecological Implications of Nonlethal Injuries",
+            "Subjective Exercise Experience",
+            "Exercise Adherence",
+            "Impact of Predation on Movement",
+            "Emerging Trends in Exercise Physiology",
+            "Turtle Behavioral Ecology"
+        ]
+    },
+    {
+        "_id": "Physiology%2C%20oncology%20and%20cancer%20biology",
+        "url": "Physiology%2C%20oncology%20and%20cancer%20biology",
+        "category_name": "Physiology, oncology and cancer biology",
+        "faculty_count": 12,
+        "department_count": 5,
+        "article_count": 3,
+        "faculty": [
+            "Brent Fedorko",
+            "Tami. S. Ransom",
+            "Sean Zupnik",
+            "Tim Werner",
+            "Jessica Walters",
+            "Karsin M. Bachran",
+            "Lisa Marquette",
+            "Eric B. Liebgold",
+            "Susannah Taylor",
+            "Campbell Ruffhead",
+            "Masoud Moghaddam",
+            "Nicholas Rolnick"
+        ],
+        "departments": [
+            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)",
+            "UMES, Princess Anne, MD.",
+            "Salisbury University, Salisbury, MD.",
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801.",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
+        ],
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "tc_count": 0,
+        "citation_average": 0.0,
+        "doi_list": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1656/045.031.s1222",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "themes": [
+            "Differences Between Autoregulated and Non-autoregulated BFR",
+            "Impact of BFR Exercise on Arterial Stiffness",
+            "Effects of Blood Flow Restriction Techniques",
+            "Ecological Implications of Nonlethal Injuries",
+            "Subjective Exercise Experience",
+            "Exercise Adherence",
+            "Impact of Predation on Movement",
+            "Emerging Trends in Exercise Physiology",
+            "Turtle Behavioral Ecology"
+        ]
+    },
+    {
+        "_id": "Exercise%20science%20and%20kinesiology",
+        "url": "Exercise%20science%20and%20kinesiology",
+        "category_name": "Exercise science and kinesiology",
+        "faculty_count": 12,
+        "department_count": 5,
+        "article_count": 3,
+        "faculty": [
+            "Brent Fedorko",
+            "Tami. S. Ransom",
+            "Sean Zupnik",
+            "Tim Werner",
+            "Jessica Walters",
+            "Karsin M. Bachran",
+            "Lisa Marquette",
+            "Eric B. Liebgold",
+            "Susannah Taylor",
+            "Campbell Ruffhead",
+            "Masoud Moghaddam",
+            "Nicholas Rolnick"
+        ],
+        "departments": [
+            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)",
+            "UMES, Princess Anne, MD.",
+            "Salisbury University, Salisbury, MD.",
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801.",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
+        ],
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "tc_count": 0,
+        "citation_average": 0.0,
+        "doi_list": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1656/045.031.s1222",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "themes": [
+            "Differences Between Autoregulated and Non-autoregulated BFR",
+            "Impact of BFR Exercise on Arterial Stiffness",
+            "Effects of Blood Flow Restriction Techniques",
+            "Ecological Implications of Nonlethal Injuries",
+            "Subjective Exercise Experience",
+            "Exercise Adherence",
+            "Impact of Predation on Movement",
+            "Emerging Trends in Exercise Physiology",
+            "Turtle Behavioral Ecology"
+        ]
+    },
+    {
+        "_id": "Health%20sciences%2C%20general",
+        "url": "Health%20sciences%2C%20general",
+        "category_name": "Health sciences, general",
+        "faculty_count": 12,
+        "department_count": 5,
+        "article_count": 3,
+        "faculty": [
+            "Brent Fedorko",
+            "Tami. S. Ransom",
+            "Sean Zupnik",
+            "Tim Werner",
+            "Jessica Walters",
+            "Karsin M. Bachran",
+            "Lisa Marquette",
+            "Eric B. Liebgold",
+            "Susannah Taylor",
+            "Campbell Ruffhead",
+            "Masoud Moghaddam",
+            "Nicholas Rolnick"
+        ],
+        "departments": [
+            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)",
+            "UMES, Princess Anne, MD.",
+            "Salisbury University, Salisbury, MD.",
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801.",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
+        ],
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "tc_count": 0,
+        "citation_average": 0.0,
+        "doi_list": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1656/045.031.s1222",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "themes": [
+            "Differences Between Autoregulated and Non-autoregulated BFR",
+            "Impact of BFR Exercise on Arterial Stiffness",
+            "Effects of Blood Flow Restriction Techniques",
+            "Ecological Implications of Nonlethal Injuries",
+            "Subjective Exercise Experience",
+            "Exercise Adherence",
+            "Impact of Predation on Movement",
+            "Emerging Trends in Exercise Physiology",
+            "Turtle Behavioral Ecology"
+        ]
+    },
+    {
+        "_id": "Exercise%20physiology%20and%20kinesiology",
+        "url": "Exercise%20physiology%20and%20kinesiology",
+        "category_name": "Exercise physiology and kinesiology",
+        "faculty_count": 12,
+        "department_count": 5,
+        "article_count": 3,
+        "faculty": [
+            "Brent Fedorko",
+            "Tami. S. Ransom",
+            "Sean Zupnik",
+            "Tim Werner",
+            "Jessica Walters",
+            "Karsin M. Bachran",
+            "Lisa Marquette",
+            "Eric B. Liebgold",
+            "Susannah Taylor",
+            "Campbell Ruffhead",
+            "Masoud Moghaddam",
+            "Nicholas Rolnick"
+        ],
+        "departments": [
+            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)",
+            "UMES, Princess Anne, MD.",
+            "Salisbury University, Salisbury, MD.",
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801.",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
+        ],
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "tc_count": 0,
+        "citation_average": 0.0,
+        "doi_list": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1656/045.031.s1222",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "themes": [
+            "Differences Between Autoregulated and Non-autoregulated BFR",
+            "Impact of BFR Exercise on Arterial Stiffness",
+            "Effects of Blood Flow Restriction Techniques",
+            "Ecological Implications of Nonlethal Injuries",
+            "Subjective Exercise Experience",
+            "Exercise Adherence",
+            "Impact of Predation on Movement",
+            "Emerging Trends in Exercise Physiology",
+            "Turtle Behavioral Ecology"
+        ]
+    },
+    {
+        "_id": "Physiology%2C%20general",
+        "url": "Physiology%2C%20general",
+        "category_name": "Physiology, general",
+        "faculty_count": 12,
+        "department_count": 5,
+        "article_count": 3,
+        "faculty": [
+            "Brent Fedorko",
+            "Tami. S. Ransom",
+            "Sean Zupnik",
+            "Tim Werner",
+            "Jessica Walters",
+            "Karsin M. Bachran",
+            "Lisa Marquette",
+            "Eric B. Liebgold",
+            "Susannah Taylor",
+            "Campbell Ruffhead",
+            "Masoud Moghaddam",
+            "Nicholas Rolnick"
+        ],
+        "departments": [
+            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)",
+            "UMES, Princess Anne, MD.",
+            "Salisbury University, Salisbury, MD.",
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801.",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
+        ],
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "tc_count": 0,
+        "citation_average": 0.0,
+        "doi_list": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1656/045.031.s1222",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "themes": [
+            "Differences Between Autoregulated and Non-autoregulated BFR",
+            "Impact of BFR Exercise on Arterial Stiffness",
+            "Effects of Blood Flow Restriction Techniques",
+            "Ecological Implications of Nonlethal Injuries",
+            "Subjective Exercise Experience",
+            "Exercise Adherence",
+            "Impact of Predation on Movement",
+            "Emerging Trends in Exercise Physiology",
+            "Turtle Behavioral Ecology"
+        ]
+    },
+    {
         "_id": "Psychology",
         "url": "Psychology",
         "category_name": "Psychology",
-        "faculty_count": 6,
-        "department_count": 4,
-        "article_count": 3,
+        "faculty_count": 11,
+        "department_count": 5,
+        "article_count": 2,
         "faculty": [
-            "Sook-Hyun Kim",
-            "Jose I. Juncosa",
-            "Suzanne L. Osman",
-            "David Z. Keifer",
-            "Kyoung-Rae Jung",
-            "Tieryn R. Gingerich"
+            "Brent Fedorko",
+            "Tami. S. Ransom",
+            "Sean Zupnik",
+            "Tim Werner",
+            "Jessica Walters",
+            "Karsin M. Bachran",
+            "Lisa Marquette",
+            "Eric B. Liebgold",
+            "Susannah Taylor",
+            "Masoud Moghaddam",
+            "Nicholas Rolnick"
         ],
         "departments": [
-            "Department of Psychology, Salisbury University, Salisbury, MD, USA",
-            "Department of Psychology, Salisbury University, Salisbury, Maryland, USA",
-            "School of Social Work, Salisbury University, Salisbury, Maryland, USA",
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
+            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)",
+            "UMES, Princess Anne, MD.",
+            "Salisbury University, Salisbury, MD.",
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801.",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
         ],
         "titles": [
-            "Korean fathers\u2019 immigration experience",
-            "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy",
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
         ],
         "tc_count": 0,
         "citation_average": 0.0,
         "doi_list": [
-            "10.1177/10778012241234897",
-            "10.1080/10911359.2024.2302976",
-            "10.1021/acs.jchemed.4c00708"
+            "10.1656/045.031.s1222",
+            "10.1249/01.mss.0001060920.34828.c8"
         ],
         "themes": [
-            "Parenting Challenges",
-            "Cultural Identity",
-            "Application of Theoretical Frameworks",
-            "Educational Experimentation",
-            "Social Isolation",
-            "Distinctions in Rape Types",
-            "Rape Experience",
-            "Mass Spectrometry Analysis",
-            "Intergenerational Relationships",
-            "Physical Chemistry Concepts",
-            "Well-being and Fulfillment",
-            "Victim Empathy",
-            "Prevention and Support Strategies"
-        ]
-    },
-    {
-        "_id": "Social%20sciences",
-        "url": "Social%20sciences",
-        "category_name": "Social sciences",
-        "faculty_count": 6,
-        "department_count": 4,
-        "article_count": 3,
-        "faculty": [
-            "Sook-Hyun Kim",
-            "Jose I. Juncosa",
-            "Suzanne L. Osman",
-            "David Z. Keifer",
-            "Kyoung-Rae Jung",
-            "Tieryn R. Gingerich"
-        ],
-        "departments": [
-            "Department of Psychology, Salisbury University, Salisbury, MD, USA",
-            "Department of Psychology, Salisbury University, Salisbury, Maryland, USA",
-            "School of Social Work, Salisbury University, Salisbury, Maryland, USA",
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "titles": [
-            "Korean fathers\u2019 immigration experience",
-            "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy",
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "tc_count": 0,
-        "citation_average": 0.0,
-        "doi_list": [
-            "10.1177/10778012241234897",
-            "10.1080/10911359.2024.2302976",
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "themes": [
-            "Parenting Challenges",
-            "Cultural Identity",
-            "Application of Theoretical Frameworks",
-            "Educational Experimentation",
-            "Social Isolation",
-            "Distinctions in Rape Types",
-            "Rape Experience",
-            "Mass Spectrometry Analysis",
-            "Intergenerational Relationships",
-            "Physical Chemistry Concepts",
-            "Well-being and Fulfillment",
-            "Victim Empathy",
-            "Prevention and Support Strategies"
-        ]
-    },
-    {
-        "_id": "Counseling%20and%20applied%20psychology",
-        "url": "Counseling%20and%20applied%20psychology",
-        "category_name": "Counseling and applied psychology",
-        "faculty_count": 6,
-        "department_count": 4,
-        "article_count": 3,
-        "faculty": [
-            "Sook-Hyun Kim",
-            "Jose I. Juncosa",
-            "Suzanne L. Osman",
-            "David Z. Keifer",
-            "Kyoung-Rae Jung",
-            "Tieryn R. Gingerich"
-        ],
-        "departments": [
-            "Department of Psychology, Salisbury University, Salisbury, MD, USA",
-            "Department of Psychology, Salisbury University, Salisbury, Maryland, USA",
-            "School of Social Work, Salisbury University, Salisbury, Maryland, USA",
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "titles": [
-            "Korean fathers\u2019 immigration experience",
-            "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy",
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "tc_count": 0,
-        "citation_average": 0.0,
-        "doi_list": [
-            "10.1177/10778012241234897",
-            "10.1080/10911359.2024.2302976",
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "themes": [
-            "Parenting Challenges",
-            "Cultural Identity",
-            "Application of Theoretical Frameworks",
-            "Educational Experimentation",
-            "Social Isolation",
-            "Distinctions in Rape Types",
-            "Rape Experience",
-            "Mass Spectrometry Analysis",
-            "Intergenerational Relationships",
-            "Physical Chemistry Concepts",
-            "Well-being and Fulfillment",
-            "Victim Empathy",
-            "Prevention and Support Strategies"
+            "Effects of Blood Flow Restriction Techniques",
+            "Ecological Implications of Nonlethal Injuries",
+            "Exercise Adherence",
+            "Subjective Exercise Experience",
+            "Impact of Predation on Movement",
+            "Turtle Behavioral Ecology"
         ]
     },
     {
         "_id": "Research%20and%20experimental%20psychology",
         "url": "Research%20and%20experimental%20psychology",
         "category_name": "Research and experimental psychology",
-        "faculty_count": 6,
-        "department_count": 4,
-        "article_count": 3,
-        "faculty": [
-            "Sook-Hyun Kim",
-            "Jose I. Juncosa",
-            "Suzanne L. Osman",
-            "David Z. Keifer",
-            "Kyoung-Rae Jung",
-            "Tieryn R. Gingerich"
-        ],
-        "departments": [
-            "Department of Psychology, Salisbury University, Salisbury, MD, USA",
-            "Department of Psychology, Salisbury University, Salisbury, Maryland, USA",
-            "School of Social Work, Salisbury University, Salisbury, Maryland, USA",
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "titles": [
-            "Korean fathers\u2019 immigration experience",
-            "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy",
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "tc_count": 0,
-        "citation_average": 0.0,
-        "doi_list": [
-            "10.1177/10778012241234897",
-            "10.1080/10911359.2024.2302976",
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "themes": [
-            "Parenting Challenges",
-            "Cultural Identity",
-            "Application of Theoretical Frameworks",
-            "Educational Experimentation",
-            "Social Isolation",
-            "Distinctions in Rape Types",
-            "Rape Experience",
-            "Mass Spectrometry Analysis",
-            "Intergenerational Relationships",
-            "Physical Chemistry Concepts",
-            "Well-being and Fulfillment",
-            "Victim Empathy",
-            "Prevention and Support Strategies"
-        ]
-    },
-    {
-        "_id": "Area%2C%20ethnic%2C%20cultural%2C%20gender%2C%20and%20group%20studies",
-        "url": "Area%2C%20ethnic%2C%20cultural%2C%20gender%2C%20and%20group%20studies",
-        "category_name": "Area, ethnic, cultural, gender, and group studies",
-        "faculty_count": 6,
-        "department_count": 4,
-        "article_count": 3,
-        "faculty": [
-            "Sook-Hyun Kim",
-            "Jose I. Juncosa",
-            "Suzanne L. Osman",
-            "David Z. Keifer",
-            "Kyoung-Rae Jung",
-            "Tieryn R. Gingerich"
-        ],
-        "departments": [
-            "Department of Psychology, Salisbury University, Salisbury, MD, USA",
-            "Department of Psychology, Salisbury University, Salisbury, Maryland, USA",
-            "School of Social Work, Salisbury University, Salisbury, Maryland, USA",
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "titles": [
-            "Korean fathers\u2019 immigration experience",
-            "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy",
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "tc_count": 0,
-        "citation_average": 0.0,
-        "doi_list": [
-            "10.1177/10778012241234897",
-            "10.1080/10911359.2024.2302976",
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "themes": [
-            "Parenting Challenges",
-            "Cultural Identity",
-            "Application of Theoretical Frameworks",
-            "Educational Experimentation",
-            "Social Isolation",
-            "Distinctions in Rape Types",
-            "Rape Experience",
-            "Mass Spectrometry Analysis",
-            "Intergenerational Relationships",
-            "Physical Chemistry Concepts",
-            "Well-being and Fulfillment",
-            "Victim Empathy",
-            "Prevention and Support Strategies"
-        ]
-    },
-    {
-        "_id": "Sociology%2C%20demography%2C%20and%20population%20studies",
-        "url": "Sociology%2C%20demography%2C%20and%20population%20studies",
-        "category_name": "Sociology, demography, and population studies",
-        "faculty_count": 6,
-        "department_count": 4,
-        "article_count": 3,
-        "faculty": [
-            "Sook-Hyun Kim",
-            "Jose I. Juncosa",
-            "Suzanne L. Osman",
-            "David Z. Keifer",
-            "Kyoung-Rae Jung",
-            "Tieryn R. Gingerich"
-        ],
-        "departments": [
-            "Department of Psychology, Salisbury University, Salisbury, MD, USA",
-            "Department of Psychology, Salisbury University, Salisbury, Maryland, USA",
-            "School of Social Work, Salisbury University, Salisbury, Maryland, USA",
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "titles": [
-            "Korean fathers\u2019 immigration experience",
-            "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy",
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "tc_count": 0,
-        "citation_average": 0.0,
-        "doi_list": [
-            "10.1177/10778012241234897",
-            "10.1080/10911359.2024.2302976",
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "themes": [
-            "Parenting Challenges",
-            "Cultural Identity",
-            "Application of Theoretical Frameworks",
-            "Educational Experimentation",
-            "Social Isolation",
-            "Distinctions in Rape Types",
-            "Rape Experience",
-            "Mass Spectrometry Analysis",
-            "Intergenerational Relationships",
-            "Physical Chemistry Concepts",
-            "Well-being and Fulfillment",
-            "Victim Empathy",
-            "Prevention and Support Strategies"
-        ]
-    },
-    {
-        "_id": "Counseling%20psychology",
-        "url": "Counseling%20psychology",
-        "category_name": "Counseling psychology",
-        "faculty_count": 6,
-        "department_count": 4,
-        "article_count": 3,
-        "faculty": [
-            "Sook-Hyun Kim",
-            "Jose I. Juncosa",
-            "Suzanne L. Osman",
-            "David Z. Keifer",
-            "Kyoung-Rae Jung",
-            "Tieryn R. Gingerich"
-        ],
-        "departments": [
-            "Department of Psychology, Salisbury University, Salisbury, MD, USA",
-            "Department of Psychology, Salisbury University, Salisbury, Maryland, USA",
-            "School of Social Work, Salisbury University, Salisbury, Maryland, USA",
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "titles": [
-            "Korean fathers\u2019 immigration experience",
-            "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy",
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "tc_count": 0,
-        "citation_average": 0.0,
-        "doi_list": [
-            "10.1177/10778012241234897",
-            "10.1080/10911359.2024.2302976",
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "themes": [
-            "Parenting Challenges",
-            "Cultural Identity",
-            "Application of Theoretical Frameworks",
-            "Educational Experimentation",
-            "Social Isolation",
-            "Distinctions in Rape Types",
-            "Rape Experience",
-            "Mass Spectrometry Analysis",
-            "Intergenerational Relationships",
-            "Physical Chemistry Concepts",
-            "Well-being and Fulfillment",
-            "Victim Empathy",
-            "Prevention and Support Strategies"
-        ]
-    },
-    {
-        "_id": "Counseling%20and%20applied%20psychology%20nec",
-        "url": "Counseling%20and%20applied%20psychology%20nec",
-        "category_name": "Counseling and applied psychology nec",
-        "faculty_count": 6,
-        "department_count": 4,
-        "article_count": 3,
-        "faculty": [
-            "Sook-Hyun Kim",
-            "Jose I. Juncosa",
-            "Suzanne L. Osman",
-            "David Z. Keifer",
-            "Kyoung-Rae Jung",
-            "Tieryn R. Gingerich"
-        ],
-        "departments": [
-            "Department of Psychology, Salisbury University, Salisbury, MD, USA",
-            "Department of Psychology, Salisbury University, Salisbury, Maryland, USA",
-            "School of Social Work, Salisbury University, Salisbury, Maryland, USA",
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "titles": [
-            "Korean fathers\u2019 immigration experience",
-            "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy",
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "tc_count": 0,
-        "citation_average": 0.0,
-        "doi_list": [
-            "10.1177/10778012241234897",
-            "10.1080/10911359.2024.2302976",
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "themes": [
-            "Parenting Challenges",
-            "Cultural Identity",
-            "Application of Theoretical Frameworks",
-            "Educational Experimentation",
-            "Social Isolation",
-            "Distinctions in Rape Types",
-            "Rape Experience",
-            "Mass Spectrometry Analysis",
-            "Intergenerational Relationships",
-            "Physical Chemistry Concepts",
-            "Well-being and Fulfillment",
-            "Victim Empathy",
-            "Prevention and Support Strategies"
-        ]
-    },
-    {
-        "_id": "Social%20psychology",
-        "url": "Social%20psychology",
-        "category_name": "Social psychology",
-        "faculty_count": 6,
-        "department_count": 4,
-        "article_count": 3,
-        "faculty": [
-            "Sook-Hyun Kim",
-            "Jose I. Juncosa",
-            "Suzanne L. Osman",
-            "David Z. Keifer",
-            "Kyoung-Rae Jung",
-            "Tieryn R. Gingerich"
-        ],
-        "departments": [
-            "Department of Psychology, Salisbury University, Salisbury, MD, USA",
-            "Department of Psychology, Salisbury University, Salisbury, Maryland, USA",
-            "School of Social Work, Salisbury University, Salisbury, Maryland, USA",
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "titles": [
-            "Korean fathers\u2019 immigration experience",
-            "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy",
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "tc_count": 0,
-        "citation_average": 0.0,
-        "doi_list": [
-            "10.1177/10778012241234897",
-            "10.1080/10911359.2024.2302976",
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "themes": [
-            "Parenting Challenges",
-            "Cultural Identity",
-            "Application of Theoretical Frameworks",
-            "Educational Experimentation",
-            "Social Isolation",
-            "Distinctions in Rape Types",
-            "Rape Experience",
-            "Mass Spectrometry Analysis",
-            "Intergenerational Relationships",
-            "Physical Chemistry Concepts",
-            "Well-being and Fulfillment",
-            "Victim Empathy",
-            "Prevention and Support Strategies"
-        ]
-    },
-    {
-        "_id": "Area%2C%20ethnic%2C%20cultural%2C%20gender%2C%20and%20group%20studies%20nec",
-        "url": "Area%2C%20ethnic%2C%20cultural%2C%20gender%2C%20and%20group%20studies%20nec",
-        "category_name": "Area, ethnic, cultural, gender, and group studies nec",
-        "faculty_count": 6,
-        "department_count": 4,
-        "article_count": 3,
-        "faculty": [
-            "Sook-Hyun Kim",
-            "Jose I. Juncosa",
-            "Suzanne L. Osman",
-            "David Z. Keifer",
-            "Kyoung-Rae Jung",
-            "Tieryn R. Gingerich"
-        ],
-        "departments": [
-            "Department of Psychology, Salisbury University, Salisbury, MD, USA",
-            "Department of Psychology, Salisbury University, Salisbury, Maryland, USA",
-            "School of Social Work, Salisbury University, Salisbury, Maryland, USA",
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "titles": [
-            "Korean fathers\u2019 immigration experience",
-            "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy",
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "tc_count": 0,
-        "citation_average": 0.0,
-        "doi_list": [
-            "10.1177/10778012241234897",
-            "10.1080/10911359.2024.2302976",
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "themes": [
-            "Parenting Challenges",
-            "Cultural Identity",
-            "Application of Theoretical Frameworks",
-            "Educational Experimentation",
-            "Social Isolation",
-            "Distinctions in Rape Types",
-            "Rape Experience",
-            "Mass Spectrometry Analysis",
-            "Intergenerational Relationships",
-            "Physical Chemistry Concepts",
-            "Well-being and Fulfillment",
-            "Victim Empathy",
-            "Prevention and Support Strategies"
-        ]
-    },
-    {
-        "_id": "Sociology%2C%20general",
-        "url": "Sociology%2C%20general",
-        "category_name": "Sociology, general",
-        "faculty_count": 6,
-        "department_count": 4,
-        "article_count": 3,
-        "faculty": [
-            "Sook-Hyun Kim",
-            "Jose I. Juncosa",
-            "Suzanne L. Osman",
-            "David Z. Keifer",
-            "Kyoung-Rae Jung",
-            "Tieryn R. Gingerich"
-        ],
-        "departments": [
-            "Department of Psychology, Salisbury University, Salisbury, MD, USA",
-            "Department of Psychology, Salisbury University, Salisbury, Maryland, USA",
-            "School of Social Work, Salisbury University, Salisbury, Maryland, USA",
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "titles": [
-            "Korean fathers\u2019 immigration experience",
-            "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy",
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "tc_count": 0,
-        "citation_average": 0.0,
-        "doi_list": [
-            "10.1177/10778012241234897",
-            "10.1080/10911359.2024.2302976",
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "themes": [
-            "Parenting Challenges",
-            "Cultural Identity",
-            "Application of Theoretical Frameworks",
-            "Educational Experimentation",
-            "Social Isolation",
-            "Distinctions in Rape Types",
-            "Rape Experience",
-            "Mass Spectrometry Analysis",
-            "Intergenerational Relationships",
-            "Physical Chemistry Concepts",
-            "Well-being and Fulfillment",
-            "Victim Empathy",
-            "Prevention and Support Strategies"
-        ]
-    },
-    {
-        "_id": "Sociology%2C%20demography%2C%20and%20population%20studies%20nec",
-        "url": "Sociology%2C%20demography%2C%20and%20population%20studies%20nec",
-        "category_name": "Sociology, demography, and population studies nec",
-        "faculty_count": 6,
-        "department_count": 4,
-        "article_count": 3,
-        "faculty": [
-            "Sook-Hyun Kim",
-            "Jose I. Juncosa",
-            "Suzanne L. Osman",
-            "David Z. Keifer",
-            "Kyoung-Rae Jung",
-            "Tieryn R. Gingerich"
-        ],
-        "departments": [
-            "Department of Psychology, Salisbury University, Salisbury, MD, USA",
-            "Department of Psychology, Salisbury University, Salisbury, Maryland, USA",
-            "School of Social Work, Salisbury University, Salisbury, Maryland, USA",
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "titles": [
-            "Korean fathers\u2019 immigration experience",
-            "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy",
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "tc_count": 0,
-        "citation_average": 0.0,
-        "doi_list": [
-            "10.1177/10778012241234897",
-            "10.1080/10911359.2024.2302976",
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "themes": [
-            "Parenting Challenges",
-            "Cultural Identity",
-            "Application of Theoretical Frameworks",
-            "Educational Experimentation",
-            "Social Isolation",
-            "Distinctions in Rape Types",
-            "Rape Experience",
-            "Mass Spectrometry Analysis",
-            "Intergenerational Relationships",
-            "Physical Chemistry Concepts",
-            "Well-being and Fulfillment",
-            "Victim Empathy",
-            "Prevention and Support Strategies"
-        ]
-    },
-    {
-        "_id": "Ethnic%20studies",
-        "url": "Ethnic%20studies",
-        "category_name": "Ethnic studies",
-        "faculty_count": 4,
-        "department_count": 3,
+        "faculty_count": 11,
+        "department_count": 5,
         "article_count": 2,
         "faculty": [
-            "David Z. Keifer",
-            "Jose I. Juncosa",
-            "Kyoung-Rae Jung",
-            "Sook-Hyun Kim"
+            "Brent Fedorko",
+            "Tami. S. Ransom",
+            "Sean Zupnik",
+            "Tim Werner",
+            "Jessica Walters",
+            "Karsin M. Bachran",
+            "Lisa Marquette",
+            "Eric B. Liebgold",
+            "Susannah Taylor",
+            "Masoud Moghaddam",
+            "Nicholas Rolnick"
         ],
         "departments": [
-            "Department of Psychology, Salisbury University, Salisbury, Maryland, USA",
-            "School of Social Work, Salisbury University, Salisbury, Maryland, USA",
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
+            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)",
+            "UMES, Princess Anne, MD.",
+            "Salisbury University, Salisbury, MD.",
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801.",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
         ],
         "titles": [
-            "Korean fathers\u2019 immigration experience",
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
         ],
         "tc_count": 0,
         "citation_average": 0.0,
         "doi_list": [
-            "10.1080/10911359.2024.2302976",
-            "10.1021/acs.jchemed.4c00708"
+            "10.1656/045.031.s1222",
+            "10.1249/01.mss.0001060920.34828.c8"
         ],
         "themes": [
-            "Parenting Challenges",
-            "Cultural Identity",
-            "Application of Theoretical Frameworks",
-            "Educational Experimentation",
-            "Social Isolation",
-            "Mass Spectrometry Analysis",
-            "Intergenerational Relationships",
-            "Physical Chemistry Concepts",
-            "Well-being and Fulfillment"
+            "Effects of Blood Flow Restriction Techniques",
+            "Ecological Implications of Nonlethal Injuries",
+            "Exercise Adherence",
+            "Subjective Exercise Experience",
+            "Impact of Predation on Movement",
+            "Turtle Behavioral Ecology"
         ]
     },
     {
-        "_id": "Developmental%20and%20child%20psychology",
-        "url": "Developmental%20and%20child%20psychology",
-        "category_name": "Developmental and child psychology",
-        "faculty_count": 4,
-        "department_count": 3,
+        "_id": "Experimental%20psychology",
+        "url": "Experimental%20psychology",
+        "category_name": "Experimental psychology",
+        "faculty_count": 11,
+        "department_count": 5,
         "article_count": 2,
         "faculty": [
-            "David Z. Keifer",
-            "Jose I. Juncosa",
-            "Kyoung-Rae Jung",
-            "Sook-Hyun Kim"
+            "Brent Fedorko",
+            "Tami. S. Ransom",
+            "Sean Zupnik",
+            "Tim Werner",
+            "Jessica Walters",
+            "Karsin M. Bachran",
+            "Lisa Marquette",
+            "Eric B. Liebgold",
+            "Susannah Taylor",
+            "Masoud Moghaddam",
+            "Nicholas Rolnick"
         ],
         "departments": [
-            "Department of Psychology, Salisbury University, Salisbury, Maryland, USA",
-            "School of Social Work, Salisbury University, Salisbury, Maryland, USA",
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
+            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)",
+            "UMES, Princess Anne, MD.",
+            "Salisbury University, Salisbury, MD.",
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801.",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
         ],
         "titles": [
-            "Korean fathers\u2019 immigration experience",
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
         ],
         "tc_count": 0,
         "citation_average": 0.0,
         "doi_list": [
-            "10.1080/10911359.2024.2302976",
-            "10.1021/acs.jchemed.4c00708"
+            "10.1656/045.031.s1222",
+            "10.1249/01.mss.0001060920.34828.c8"
         ],
         "themes": [
-            "Parenting Challenges",
-            "Cultural Identity",
-            "Application of Theoretical Frameworks",
-            "Educational Experimentation",
-            "Social Isolation",
-            "Mass Spectrometry Analysis",
-            "Intergenerational Relationships",
-            "Physical Chemistry Concepts",
-            "Well-being and Fulfillment"
+            "Effects of Blood Flow Restriction Techniques",
+            "Ecological Implications of Nonlethal Injuries",
+            "Exercise Adherence",
+            "Subjective Exercise Experience",
+            "Impact of Predation on Movement",
+            "Turtle Behavioral Ecology"
         ]
     },
     {
-        "_id": "Physical%20sciences",
-        "url": "Physical%20sciences",
-        "category_name": "Physical sciences",
-        "faculty_count": 2,
-        "department_count": 1,
+        "_id": "Biological%20and%20biomedical%20sciences/Ecology%2C%20evolutionary%20biology%2C%20and%20epidemiology",
+        "url": "Biological%20and%20biomedical%20sciences/Ecology%2C%20evolutionary%20biology%2C%20and%20epidemiology",
+        "category_name": "Ecology, evolutionary biology, and epidemiology",
+        "faculty_count": 3,
+        "department_count": 2,
         "article_count": 1,
         "faculty": [
-            "Jose I. Juncosa",
-            "David Z. Keifer"
+            "Karsin M. Bachran",
+            "Tami. S. Ransom",
+            "Eric B. Liebgold"
         ],
         "departments": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801.",
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801."
         ],
         "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
         ],
         "tc_count": 0,
         "citation_average": 0.0,
         "doi_list": [
-            "10.1021/acs.jchemed.4c00708"
+            "10.1656/045.031.s1222"
         ],
         "themes": [
-            "Physical Chemistry Concepts",
-            "Application of Theoretical Frameworks",
-            "Educational Experimentation",
-            "Mass Spectrometry Analysis"
+            "Ecological Implications of Nonlethal Injuries",
+            "Turtle Behavioral Ecology",
+            "Impact of Predation on Movement"
         ]
     },
     {
-        "_id": "Education",
-        "url": "Education",
-        "category_name": "Education",
-        "faculty_count": 2,
-        "department_count": 1,
+        "_id": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology",
+        "url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology",
+        "category_name": "Ecology",
+        "faculty_count": 3,
+        "department_count": 2,
         "article_count": 1,
         "faculty": [
-            "Jose I. Juncosa",
-            "David Z. Keifer"
+            "Karsin M. Bachran",
+            "Tami. S. Ransom",
+            "Eric B. Liebgold"
         ],
         "departments": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801.",
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801."
         ],
         "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
         ],
         "tc_count": 0,
         "citation_average": 0.0,
         "doi_list": [
-            "10.1021/acs.jchemed.4c00708"
+            "10.1656/045.031.s1222"
         ],
         "themes": [
-            "Physical Chemistry Concepts",
-            "Application of Theoretical Frameworks",
-            "Educational Experimentation",
-            "Mass Spectrometry Analysis"
-        ]
-    },
-    {
-        "_id": "Physical%20sciences/Chemistry",
-        "url": "Physical%20sciences/Chemistry",
-        "category_name": "Chemistry",
-        "faculty_count": 2,
-        "department_count": 1,
-        "article_count": 1,
-        "faculty": [
-            "Jose I. Juncosa",
-            "David Z. Keifer"
-        ],
-        "departments": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "tc_count": 0,
-        "citation_average": 0.0,
-        "doi_list": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "themes": [
-            "Physical Chemistry Concepts",
-            "Application of Theoretical Frameworks",
-            "Educational Experimentation",
-            "Mass Spectrometry Analysis"
-        ]
-    },
-    {
-        "_id": "Education/Education%20research",
-        "url": "Education/Education%20research",
-        "category_name": "Education research",
-        "faculty_count": 2,
-        "department_count": 1,
-        "article_count": 1,
-        "faculty": [
-            "Jose I. Juncosa",
-            "David Z. Keifer"
-        ],
-        "departments": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "tc_count": 0,
-        "citation_average": 0.0,
-        "doi_list": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "themes": [
-            "Physical Chemistry Concepts",
-            "Application of Theoretical Frameworks",
-            "Educational Experimentation",
-            "Mass Spectrometry Analysis"
-        ]
-    },
-    {
-        "_id": "Education/Teacher%20education",
-        "url": "Education/Teacher%20education",
-        "category_name": "Teacher education",
-        "faculty_count": 2,
-        "department_count": 1,
-        "article_count": 1,
-        "faculty": [
-            "Jose I. Juncosa",
-            "David Z. Keifer"
-        ],
-        "departments": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "tc_count": 0,
-        "citation_average": 0.0,
-        "doi_list": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "themes": [
-            "Physical Chemistry Concepts",
-            "Application of Theoretical Frameworks",
-            "Educational Experimentation",
-            "Mass Spectrometry Analysis"
-        ]
-    },
-    {
-        "_id": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physical%20chemistry",
-        "url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physical%20chemistry",
-        "category_name": "Physical chemistry",
-        "faculty_count": 2,
-        "department_count": 1,
-        "article_count": 1,
-        "faculty": [
-            "Jose I. Juncosa",
-            "David Z. Keifer"
-        ],
-        "departments": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "tc_count": 0,
-        "citation_average": 0.0,
-        "doi_list": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "themes": [
-            "Physical Chemistry Concepts",
-            "Application of Theoretical Frameworks",
-            "Educational Experimentation",
-            "Mass Spectrometry Analysis"
-        ]
-    },
-    {
-        "_id": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Theoretical%20chemistry",
-        "url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Theoretical%20chemistry",
-        "category_name": "Theoretical chemistry",
-        "faculty_count": 2,
-        "department_count": 1,
-        "article_count": 1,
-        "faculty": [
-            "Jose I. Juncosa",
-            "David Z. Keifer"
-        ],
-        "departments": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "tc_count": 0,
-        "citation_average": 0.0,
-        "doi_list": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "themes": [
-            "Physical Chemistry Concepts",
-            "Application of Theoretical Frameworks",
-            "Educational Experimentation",
-            "Mass Spectrometry Analysis"
-        ]
-    },
-    {
-        "_id": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Analytical%20chemistry",
-        "url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Analytical%20chemistry",
-        "category_name": "Analytical chemistry",
-        "faculty_count": 2,
-        "department_count": 1,
-        "article_count": 1,
-        "faculty": [
-            "Jose I. Juncosa",
-            "David Z. Keifer"
-        ],
-        "departments": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "tc_count": 0,
-        "citation_average": 0.0,
-        "doi_list": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "themes": [
-            "Physical Chemistry Concepts",
-            "Application of Theoretical Frameworks",
-            "Educational Experimentation",
-            "Mass Spectrometry Analysis"
-        ]
-    },
-    {
-        "_id": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Curriculum%20and%20instruction",
-        "url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Curriculum%20and%20instruction",
-        "category_name": "Curriculum and instruction",
-        "faculty_count": 2,
-        "department_count": 1,
-        "article_count": 1,
-        "faculty": [
-            "Jose I. Juncosa",
-            "David Z. Keifer"
-        ],
-        "departments": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "tc_count": 0,
-        "citation_average": 0.0,
-        "doi_list": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "themes": [
-            "Physical Chemistry Concepts",
-            "Application of Theoretical Frameworks",
-            "Educational Experimentation",
-            "Mass Spectrometry Analysis"
-        ]
-    },
-    {
-        "_id": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Educational/%20instructional%20technology%20and%20media%20design",
-        "url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Educational/%20instructional%20technology%20and%20media%20design",
-        "category_name": "Educational/ instructional technology and media design",
-        "faculty_count": 2,
-        "department_count": 1,
-        "article_count": 1,
-        "faculty": [
-            "Jose I. Juncosa",
-            "David Z. Keifer"
-        ],
-        "departments": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "tc_count": 0,
-        "citation_average": 0.0,
-        "doi_list": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "themes": [
-            "Physical Chemistry Concepts",
-            "Application of Theoretical Frameworks",
-            "Educational Experimentation",
-            "Mass Spectrometry Analysis"
-        ]
-    },
-    {
-        "_id": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/STEM%20educational%20methods",
-        "url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/STEM%20educational%20methods",
-        "category_name": "STEM educational methods",
-        "faculty_count": 2,
-        "department_count": 1,
-        "article_count": 1,
-        "faculty": [
-            "Jose I. Juncosa",
-            "David Z. Keifer"
-        ],
-        "departments": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "tc_count": 0,
-        "citation_average": 0.0,
-        "doi_list": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "themes": [
-            "Physical Chemistry Concepts",
-            "Application of Theoretical Frameworks",
-            "Educational Experimentation",
-            "Mass Spectrometry Analysis"
-        ]
-    },
-    {
-        "_id": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Teacher%20education%2C%20science%20and%20engineering",
-        "url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Teacher%20education%2C%20science%20and%20engineering",
-        "category_name": "Teacher education, science and engineering",
-        "faculty_count": 2,
-        "department_count": 1,
-        "article_count": 1,
-        "faculty": [
-            "Jose I. Juncosa",
-            "David Z. Keifer"
-        ],
-        "departments": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "tc_count": 0,
-        "citation_average": 0.0,
-        "doi_list": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "themes": [
-            "Physical Chemistry Concepts",
-            "Application of Theoretical Frameworks",
-            "Educational Experimentation",
-            "Mass Spectrometry Analysis"
+            "Ecological Implications of Nonlethal Injuries",
+            "Turtle Behavioral Ecology",
+            "Impact of Predation on Movement"
         ]
     }
 ]

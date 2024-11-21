@@ -147,8 +147,8 @@ class Scraper:
     def setup_chain(self, output_list):
         # instanciate the chain manager
         chain_manager = ChainManager(
-            "gpt-4o-mini",
-            self.api_key,
+            llm_model="gpt-4o",
+            api_key=self.api_key,
         )
 
         # create a general schema for the model to output text in
@@ -285,11 +285,11 @@ class Scraper:
 
                 self.logger.debug(f"Page content preview:\n\n{page_content[:50]}\n\n")
 
-                self.logger.debug("Quitting driver")
-                try:
-                    driver.quit()
-                except Exception as e:
-                    self.logger.error(f"Error quitting driver: {e}")
+                # self.logger.debug("Quitting driver")
+                # try:
+                #     driver.quit()
+                # except Exception as e:
+                #     self.logger.error(f"Error quitting driver: {e}")
 
                 self.logger.debug(f"Fetched page content for URL: {url}")
 
@@ -387,7 +387,10 @@ class Scraper:
                 self.raw_results.append(results)
                 abstract = results["abstract"]
                 if abstract == "":
-                    abstract = None
+                    # If no abstract is found, return None and extra context
+                    # Don't return extra context as sometimes an abstract is not found
+                    # as the url is to a book or some non-academic research article item
+                    return None, None
                 extra_context = results["extra_context"]
                 print(f"\n\nAbstract:\n{abstract}\n\n")
                 print(f"\n\nExtra context:\n{extra_context}\n\n")
@@ -396,12 +399,20 @@ class Scraper:
                     f"Successfully processed abstract for DOI {url}\n{abstract}\n\n"
                 )
 
-                # If no abstract is found, return None
-                return abstract
+                # Abstract and extra context found
+                return abstract, extra_context
             except Exception as e:
                 self.logger.error(f"Error fetching {url}: {e}")
-                return None
-        return None
+                return None, None
+
+            finally:
+                if driver:
+                    self.logger.debug("Quitting driver")
+                    try:
+                        driver.quit()
+                    except Exception as e:
+                        self.logger.error(f"Error quitting driver: {e}")
+        return None, None
 
     def save_raw_results(self):
         with open("raw_results.json", "w") as f:

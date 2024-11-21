@@ -271,27 +271,55 @@ class ClassificationOrchestrator:
         Returns:
             List[Dict]: Modified data with classifications injected.
         """
-        for item in data:
-            doi, abstract = self._retrieve_doi_abstract(item)
-            normalized_abstract: str = self._normalize_abstract(abstract)
-            doi_abstract_dict: Dict[str, str] = self._make_doi_abstract_dict(
-                doi, normalized_abstract
-            )
+        i = 0
 
-            if not doi_abstract_dict:
-                self._update_classified_instance_variables(
-                    item=item, doi=doi, abstract=abstract
+        # This must be a `while` loop because the list `data` is modified during iteration.
+        # Specifically, items may be removed (via `pop`) when an error occurs. A `for` loop
+        # uses an iterator tied to the list's initial state and does not account for changes
+        # to the list structure. Modifying the list while using a `for` loop would cause
+        # skipped items, incorrect indexing, or runtime errors.
+        #
+        # With a `while` loop, we have full control over the index (`i`). If an item is
+        # removed, the remaining items shift, and the loop naturally rechecks the current
+        # index without skipping. This ensures every item is processed exactly once, and
+        # the logic remains robust despite the dynamic list modifications.
+        #
+        # Do not attempt to use a `for` loop here—it will not handle these modifications safely.
+        while i < len(data):
+            item = data[i]
+
+            try:
+                doi, abstract, extra_context = self._get_classification_dependencies(
+                    item
                 )
-                continue
+                normalized_abstract: str = self._normalize_abstract(abstract)
+                doi_abstract_dict: Dict[str, str] = self._make_doi_abstract_dict(
+                    doi, normalized_abstract
+                )
 
-            classifier: AbstractClassifier = self.abstract_classifier_factory(
-                doi_abstract_dict=doi_abstract_dict,
-            )
-            classifier.classify()
+                if not doi_abstract_dict:
+                    self._update_classified_instance_variables(
+                        item=item, doi=doi, abstract=abstract
+                    )
+                    i += 1
+                    continue
 
-            self._inject_categories(
-                data=item, categories=self._extract_categories(doi, classifier)
-            )
+                classifier: AbstractClassifier = self.abstract_classifier_factory(
+                    doi_abstract_dict=doi_abstract_dict, extra_context=extra_context
+                )
+
+                classifier.classify()
+
+                self._inject_categories(
+                    data=item, categories=self._extract_categories(doi, classifier)
+                )
+
+                i += 1
+
+            except Exception as e:
+                self.logger.error(f"Error processing item {i}: {e}")
+                self.logger.error(f"Popping the item at index {i} from data")
+                data.pop(i)
 
         return data
 
@@ -337,23 +365,28 @@ class ClassificationOrchestrator:
             abstract: Research abstract text.
 
         Returns:
-            Dict[str, str]: Dictionary mapping DOI to abstract.
+            Dict[str, str]: Dictionary mapping DOI to abstract and extra context.
         """
         if doi and abstract:
             return {doi: abstract}
         return {}
 
-    def _retrieve_doi_abstract(self, item: Dict) -> Tuple[str, str]:
-        """Extracts DOI and abstract from a research metadata dictionary.
+    def _get_classification_dependencies(self, item: Dict) -> Tuple[str, str, dict]:
+        """Extracts DOI, abstract, and extra context from a research metadata dictionary.
 
         Args:
             item: Research metadata dictionary.
 
         Returns:
-            Tuple[str, str]: DOI and abstract pair.
+            Tuple[str, str, dict]: DOI, abstract, and extra context pair.
         """
         result: Dict[AttributeTypes, Tuple[bool, str]] = self.utilities.get_attributes(
-            item, [AttributeTypes.CROSSREF_DOI, AttributeTypes.CROSSREF_ABSTRACT]
+            item,
+            [
+                AttributeTypes.CROSSREF_DOI,
+                AttributeTypes.CROSSREF_ABSTRACT,
+                AttributeTypes.CROSSREF_EXTRA_CONTEXT,
+            ],
         )
         doi: str = (
             result[AttributeTypes.CROSSREF_DOI][1]
@@ -365,7 +398,12 @@ class ClassificationOrchestrator:
             if result[AttributeTypes.CROSSREF_ABSTRACT][0]
             else None
         )
-        return doi, abstract
+        extra_context: dict = (
+            result[AttributeTypes.CROSSREF_EXTRA_CONTEXT][1]
+            if result[AttributeTypes.CROSSREF_EXTRA_CONTEXT][0]
+            else None
+        )
+        return doi, abstract, extra_context
 
     def _update_classified_instance_variables(
         self, item: Dict, doi: str, abstract: str
@@ -376,6 +414,7 @@ class ClassificationOrchestrator:
             item: Research metadata dictionary.
             doi: DOI identifier.
             abstract: Research abstract text.
+            extra_context: Extra context dictionary.
         """
         self.unclassified_item_count += 1
         (

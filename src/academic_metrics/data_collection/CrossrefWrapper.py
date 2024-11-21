@@ -367,51 +367,69 @@ class CrossrefWrapper:
             self.logger.error("No result data found")
             return self
 
-        missing_abstracts = [item for item in self.result if "abstract" not in item]
-        total_missing = len(missing_abstracts)
-        self.logger.info(f"\n\nTotal missing abstracts: {total_missing}\n\n")
+        # missing_abstracts = [item for item in self.result if "abstract" not in item]
+        # total_missing = len(missing_abstracts)
+        # self.logger.info(f"\n\nTotal missing abstracts: {total_missing}\n\n")
 
-        if total_missing == 0:
-            self.logger.info("No missing abstracts found")
-            return self
+        # if total_missing == 0:
+        #     self.logger.info("No missing abstracts found")
+        #     return self
 
-        for item in missing_abstracts:
-            if "abstract" not in item:
-                try:
-                    self.logger.info("-" * 80)
-                    self.logger.info(f"Processing URL: {item.get('URL')}")
+        # for item in missing_abstracts:
+        #     if "abstract" not in item:
+        self.result = self.result[:3]
+        i = 0
+        while i < len(self.result):
+            item = self.result[i]
+            try:
+                self.logger.info("-" * 80)
+                self.logger.info(f"Processing URL: {item.get('URL')}")
 
-                    abstract = self.scraper.get_abstract(item.get("URL"))
-                    self.logger.info(
-                        f"\n\nRETURN FROM SCRAPER get_abstract: {abstract}\n\n"
-                    )
-                    self.logger.info("-" * 80)
+                abstract, extra_context = self.scraper.get_abstract(item.get("URL"))
 
-                    if abstract:  # Check if data was returned
-                        item["abstract"] = abstract
-                        print(f"\n\nAbstract:\n{item['abstract']}\n\n")
-                        num_processed += 1
-                        self.logger.info(
-                            f"\n\nProcessed {num_processed}/{total_missing}\n\n"
-                        )
-                    else:
-                        # If abstract is not found item cannot be classified thus cannot be processed
-                        # So remove it from the result list
-                        self.result.remove(item)
-                        items_removed += 1
-                        self.logger.warning(
-                            f"No data returned for URL: {item.get('URL')}"
-                        )
-                except Exception as e:
-                    self.logger.error(
-                        f"Error processing URL {item.get('URL')}: {str(e)}"
-                    )
+                if not abstract or not extra_context:
+                    self.logger.warning(f"No data returned for URL: {item.get('URL')}")
+                    # Remove the item, but don't increment i
+                    # We don't increment i as the items in the list will shift left 1 so we want to keep
+                    # the same index to check the next item
+                    self.result.pop(i)
+                    items_removed += 1
                     continue
+
+                self.logger.info(
+                    f"\n\nRETURN FROM SCRAPER get_abstract: {abstract}\n\n"
+                )
+                self.logger.info("-" * 80)
+
+                if "abstract" not in item:
+                    item["abstract"] = abstract
+                    print(f"\n\nAbstract:\n{item['abstract']}\n\n")
+
+                self.logger.info(
+                    f"\n\nProcessed {num_processed}/{len(self.result)}\n\n"
+                )
+                item["extra_context"] = extra_context
+
+                num_processed += 1
+                self.logger.info(
+                    f"\n\n\nPROCESSED **{i}/{len(self.result)}** ITEMS\n\n\n"
+                )
+                i += 1
+
+            except Exception as e:
+                self.logger.error(
+                    f"Error processing URL {item.get('URL')}: {str(e)}"
+                    "Popping item from result list and continuing"
+                )
+                self.result.pop(i)
+                items_removed += 1
+                continue
 
         self.logger.info(f"\n\nItems removed: {items_removed}\n\n")
         self.logger.info(
             f"Final data processing complete. Processed {num_processed} abstracts"
         )
+
         self.scraper.save_raw_results()
         return self
 

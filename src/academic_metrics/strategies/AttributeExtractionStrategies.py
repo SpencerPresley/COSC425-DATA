@@ -1343,3 +1343,32 @@ class CrossrefThemesExtractionStrategy(AttributeExtractionStrategy):
     def extract_attribute(self, entry_text: dict) -> tuple[bool, list[str]]:
         themes = entry_text.get("themes", [])
         return (True, themes)
+
+
+@StrategyFactory.register_strategy(AttributeTypes.CROSSREF_EXTRA_CONTEXT)
+class CrossrefExtraContextExtractionStrategy(AttributeExtractionStrategy):
+    def __init__(self, warning_manager: WarningManager):
+        super().__init__(warning_manager=warning_manager)
+        self.log_file_path = (
+            LOG_DIR_PATH / "crossref_extra_context_extraction_strategy.log"
+        )
+        self.logger = logging.getLogger(__name__)
+        self.logger.setLevel(logging.DEBUG)
+        self.logger.handlers = []
+        if not self.logger.handlers:
+            handler = logging.FileHandler(self.log_file_path)
+            formatter = logging.Formatter(
+                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            )
+            self.logger.addHandler(handler)
+
+    def extract_attribute(self, entry_text: dict) -> tuple[bool, str]:
+        extra_context = entry_text.get("extra_context", None)
+        if extra_context is not None:
+            return (True, extra_context)
+        self.log_extraction_warning(
+            attribute_class_name=self.__class__.__name__,
+            warning_message="Attribute: 'Crossref_Extra_Context' was not found in the entry",
+            entry_id=entry_text,
+        )
+        return (False, None)

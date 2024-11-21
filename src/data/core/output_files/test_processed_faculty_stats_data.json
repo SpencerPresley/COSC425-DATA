@@ -1,2186 +1,2933 @@
 [
     {
-        "_id": "suzanne-l.-osman_psychology",
-        "name": "Suzanne L. Osman",
+        "_id": "campbell-ruffhead_health-sciences",
+        "name": "Campbell Ruffhead",
+        "category": "Health sciences",
+        "category_url": "Health%20sciences",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001052868.70990.0c": 0
+        }
+    },
+    {
+        "_id": "nicholas-rolnick_health-sciences",
+        "name": "Nicholas Rolnick",
+        "category": "Health sciences",
+        "category_url": "Health%20sciences",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)"
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "susannah-taylor_health-sciences",
+        "name": "Susannah Taylor",
+        "category": "Health sciences",
+        "category_url": "Health%20sciences",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "lisa-marquette_health-sciences",
+        "name": "Lisa Marquette",
+        "category": "Health sciences",
+        "category_url": "Health%20sciences",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "brent-fedorko_health-sciences",
+        "name": "Brent Fedorko",
+        "category": "Health sciences",
+        "category_url": "Health%20sciences",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "jessica-walters_health-sciences",
+        "name": "Jessica Walters",
+        "category": "Health sciences",
+        "category_url": "Health%20sciences",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "tim-werner_health-sciences",
+        "name": "Tim Werner",
+        "category": "Health sciences",
+        "category_url": "Health%20sciences",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "sean-zupnik_health-sciences",
+        "name": "Sean Zupnik",
+        "category": "Health sciences",
+        "category_url": "Health%20sciences",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "masoud-moghaddam_health-sciences",
+        "name": "Masoud Moghaddam",
+        "category": "Health sciences",
+        "category_url": "Health%20sciences",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "UMES, Princess Anne, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "karsin-m.-bachran_health-sciences",
+        "name": "Karsin M. Bachran",
+        "category": "Health sciences",
+        "category_url": "Health%20sciences",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+        ],
+        "dois": [
+            "10.1656/045.031.s1222"
+        ],
+        "department_affiliations": [
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
+        ],
+        "doi_citation_map": {
+            "10.1656/045.031.s1222": 0
+        }
+    },
+    {
+        "_id": "tami.-s.-ransom_health-sciences",
+        "name": "Tami. S. Ransom",
+        "category": "Health sciences",
+        "category_url": "Health%20sciences",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+        ],
+        "dois": [
+            "10.1656/045.031.s1222"
+        ],
+        "department_affiliations": [
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801."
+        ],
+        "doi_citation_map": {
+            "10.1656/045.031.s1222": 0
+        }
+    },
+    {
+        "_id": "eric-b.-liebgold_health-sciences",
+        "name": "Eric B. Liebgold",
+        "category": "Health sciences",
+        "category_url": "Health%20sciences",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+        ],
+        "dois": [
+            "10.1656/045.031.s1222"
+        ],
+        "department_affiliations": [
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
+        ],
+        "doi_citation_map": {
+            "10.1656/045.031.s1222": 0
+        }
+    },
+    {
+        "_id": "campbell-ruffhead_biological-and-biomedical-sciences",
+        "name": "Campbell Ruffhead",
+        "category": "Biological and biomedical sciences",
+        "category_url": "Biological%20and%20biomedical%20sciences",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001052868.70990.0c": 0
+        }
+    },
+    {
+        "_id": "nicholas-rolnick_biological-and-biomedical-sciences",
+        "name": "Nicholas Rolnick",
+        "category": "Biological and biomedical sciences",
+        "category_url": "Biological%20and%20biomedical%20sciences",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)"
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "susannah-taylor_biological-and-biomedical-sciences",
+        "name": "Susannah Taylor",
+        "category": "Biological and biomedical sciences",
+        "category_url": "Biological%20and%20biomedical%20sciences",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "lisa-marquette_biological-and-biomedical-sciences",
+        "name": "Lisa Marquette",
+        "category": "Biological and biomedical sciences",
+        "category_url": "Biological%20and%20biomedical%20sciences",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "brent-fedorko_biological-and-biomedical-sciences",
+        "name": "Brent Fedorko",
+        "category": "Biological and biomedical sciences",
+        "category_url": "Biological%20and%20biomedical%20sciences",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "jessica-walters_biological-and-biomedical-sciences",
+        "name": "Jessica Walters",
+        "category": "Biological and biomedical sciences",
+        "category_url": "Biological%20and%20biomedical%20sciences",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "tim-werner_biological-and-biomedical-sciences",
+        "name": "Tim Werner",
+        "category": "Biological and biomedical sciences",
+        "category_url": "Biological%20and%20biomedical%20sciences",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "sean-zupnik_biological-and-biomedical-sciences",
+        "name": "Sean Zupnik",
+        "category": "Biological and biomedical sciences",
+        "category_url": "Biological%20and%20biomedical%20sciences",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "masoud-moghaddam_biological-and-biomedical-sciences",
+        "name": "Masoud Moghaddam",
+        "category": "Biological and biomedical sciences",
+        "category_url": "Biological%20and%20biomedical%20sciences",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "UMES, Princess Anne, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "karsin-m.-bachran_biological-and-biomedical-sciences",
+        "name": "Karsin M. Bachran",
+        "category": "Biological and biomedical sciences",
+        "category_url": "Biological%20and%20biomedical%20sciences",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+        ],
+        "dois": [
+            "10.1656/045.031.s1222"
+        ],
+        "department_affiliations": [
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
+        ],
+        "doi_citation_map": {
+            "10.1656/045.031.s1222": 0
+        }
+    },
+    {
+        "_id": "tami.-s.-ransom_biological-and-biomedical-sciences",
+        "name": "Tami. S. Ransom",
+        "category": "Biological and biomedical sciences",
+        "category_url": "Biological%20and%20biomedical%20sciences",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+        ],
+        "dois": [
+            "10.1656/045.031.s1222"
+        ],
+        "department_affiliations": [
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801."
+        ],
+        "doi_citation_map": {
+            "10.1656/045.031.s1222": 0
+        }
+    },
+    {
+        "_id": "eric-b.-liebgold_biological-and-biomedical-sciences",
+        "name": "Eric B. Liebgold",
+        "category": "Biological and biomedical sciences",
+        "category_url": "Biological%20and%20biomedical%20sciences",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+        ],
+        "dois": [
+            "10.1656/045.031.s1222"
+        ],
+        "department_affiliations": [
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
+        ],
+        "doi_citation_map": {
+            "10.1656/045.031.s1222": 0
+        }
+    },
+    {
+        "_id": "campbell-ruffhead_health-sciences,-other",
+        "name": "Campbell Ruffhead",
+        "category": "Health sciences, other",
+        "category_url": "Health%20sciences/Health%20sciences%2C%20other",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001052868.70990.0c": 0
+        }
+    },
+    {
+        "_id": "nicholas-rolnick_health-sciences,-other",
+        "name": "Nicholas Rolnick",
+        "category": "Health sciences, other",
+        "category_url": "Health%20sciences/Health%20sciences%2C%20other",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)"
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "susannah-taylor_health-sciences,-other",
+        "name": "Susannah Taylor",
+        "category": "Health sciences, other",
+        "category_url": "Health%20sciences/Health%20sciences%2C%20other",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "lisa-marquette_health-sciences,-other",
+        "name": "Lisa Marquette",
+        "category": "Health sciences, other",
+        "category_url": "Health%20sciences/Health%20sciences%2C%20other",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "brent-fedorko_health-sciences,-other",
+        "name": "Brent Fedorko",
+        "category": "Health sciences, other",
+        "category_url": "Health%20sciences/Health%20sciences%2C%20other",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "jessica-walters_health-sciences,-other",
+        "name": "Jessica Walters",
+        "category": "Health sciences, other",
+        "category_url": "Health%20sciences/Health%20sciences%2C%20other",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "tim-werner_health-sciences,-other",
+        "name": "Tim Werner",
+        "category": "Health sciences, other",
+        "category_url": "Health%20sciences/Health%20sciences%2C%20other",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "sean-zupnik_health-sciences,-other",
+        "name": "Sean Zupnik",
+        "category": "Health sciences, other",
+        "category_url": "Health%20sciences/Health%20sciences%2C%20other",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "masoud-moghaddam_health-sciences,-other",
+        "name": "Masoud Moghaddam",
+        "category": "Health sciences, other",
+        "category_url": "Health%20sciences/Health%20sciences%2C%20other",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "UMES, Princess Anne, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "karsin-m.-bachran_health-sciences,-other",
+        "name": "Karsin M. Bachran",
+        "category": "Health sciences, other",
+        "category_url": "Health%20sciences%2C%20other",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+        ],
+        "dois": [
+            "10.1656/045.031.s1222"
+        ],
+        "department_affiliations": [
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
+        ],
+        "doi_citation_map": {
+            "10.1656/045.031.s1222": 0
+        }
+    },
+    {
+        "_id": "tami.-s.-ransom_health-sciences,-other",
+        "name": "Tami. S. Ransom",
+        "category": "Health sciences, other",
+        "category_url": "Health%20sciences%2C%20other",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+        ],
+        "dois": [
+            "10.1656/045.031.s1222"
+        ],
+        "department_affiliations": [
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801."
+        ],
+        "doi_citation_map": {
+            "10.1656/045.031.s1222": 0
+        }
+    },
+    {
+        "_id": "eric-b.-liebgold_health-sciences,-other",
+        "name": "Eric B. Liebgold",
+        "category": "Health sciences, other",
+        "category_url": "Health%20sciences%2C%20other",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+        ],
+        "dois": [
+            "10.1656/045.031.s1222"
+        ],
+        "department_affiliations": [
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
+        ],
+        "doi_citation_map": {
+            "10.1656/045.031.s1222": 0
+        }
+    },
+    {
+        "_id": "campbell-ruffhead_physiology,-oncology-and-cancer-biology",
+        "name": "Campbell Ruffhead",
+        "category": "Physiology, oncology and cancer biology",
+        "category_url": "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001052868.70990.0c": 0
+        }
+    },
+    {
+        "_id": "nicholas-rolnick_physiology,-oncology-and-cancer-biology",
+        "name": "Nicholas Rolnick",
+        "category": "Physiology, oncology and cancer biology",
+        "category_url": "Physiology%2C%20oncology%20and%20cancer%20biology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)"
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "susannah-taylor_physiology,-oncology-and-cancer-biology",
+        "name": "Susannah Taylor",
+        "category": "Physiology, oncology and cancer biology",
+        "category_url": "Physiology%2C%20oncology%20and%20cancer%20biology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "lisa-marquette_physiology,-oncology-and-cancer-biology",
+        "name": "Lisa Marquette",
+        "category": "Physiology, oncology and cancer biology",
+        "category_url": "Physiology%2C%20oncology%20and%20cancer%20biology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "brent-fedorko_physiology,-oncology-and-cancer-biology",
+        "name": "Brent Fedorko",
+        "category": "Physiology, oncology and cancer biology",
+        "category_url": "Physiology%2C%20oncology%20and%20cancer%20biology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "jessica-walters_physiology,-oncology-and-cancer-biology",
+        "name": "Jessica Walters",
+        "category": "Physiology, oncology and cancer biology",
+        "category_url": "Physiology%2C%20oncology%20and%20cancer%20biology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "tim-werner_physiology,-oncology-and-cancer-biology",
+        "name": "Tim Werner",
+        "category": "Physiology, oncology and cancer biology",
+        "category_url": "Physiology%2C%20oncology%20and%20cancer%20biology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "sean-zupnik_physiology,-oncology-and-cancer-biology",
+        "name": "Sean Zupnik",
+        "category": "Physiology, oncology and cancer biology",
+        "category_url": "Physiology%2C%20oncology%20and%20cancer%20biology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "masoud-moghaddam_physiology,-oncology-and-cancer-biology",
+        "name": "Masoud Moghaddam",
+        "category": "Physiology, oncology and cancer biology",
+        "category_url": "Physiology%2C%20oncology%20and%20cancer%20biology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "UMES, Princess Anne, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "karsin-m.-bachran_physiology,-oncology-and-cancer-biology",
+        "name": "Karsin M. Bachran",
+        "category": "Physiology, oncology and cancer biology",
+        "category_url": "Physiology%2C%20oncology%20and%20cancer%20biology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+        ],
+        "dois": [
+            "10.1656/045.031.s1222"
+        ],
+        "department_affiliations": [
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
+        ],
+        "doi_citation_map": {
+            "10.1656/045.031.s1222": 0
+        }
+    },
+    {
+        "_id": "tami.-s.-ransom_physiology,-oncology-and-cancer-biology",
+        "name": "Tami. S. Ransom",
+        "category": "Physiology, oncology and cancer biology",
+        "category_url": "Physiology%2C%20oncology%20and%20cancer%20biology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+        ],
+        "dois": [
+            "10.1656/045.031.s1222"
+        ],
+        "department_affiliations": [
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801."
+        ],
+        "doi_citation_map": {
+            "10.1656/045.031.s1222": 0
+        }
+    },
+    {
+        "_id": "eric-b.-liebgold_physiology,-oncology-and-cancer-biology",
+        "name": "Eric B. Liebgold",
+        "category": "Physiology, oncology and cancer biology",
+        "category_url": "Physiology%2C%20oncology%20and%20cancer%20biology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+        ],
+        "dois": [
+            "10.1656/045.031.s1222"
+        ],
+        "department_affiliations": [
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
+        ],
+        "doi_citation_map": {
+            "10.1656/045.031.s1222": 0
+        }
+    },
+    {
+        "_id": "campbell-ruffhead_exercise-science-and-kinesiology",
+        "name": "Campbell Ruffhead",
+        "category": "Exercise science and kinesiology",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001052868.70990.0c": 0
+        }
+    },
+    {
+        "_id": "nicholas-rolnick_exercise-science-and-kinesiology",
+        "name": "Nicholas Rolnick",
+        "category": "Exercise science and kinesiology",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)"
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "susannah-taylor_exercise-science-and-kinesiology",
+        "name": "Susannah Taylor",
+        "category": "Exercise science and kinesiology",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "lisa-marquette_exercise-science-and-kinesiology",
+        "name": "Lisa Marquette",
+        "category": "Exercise science and kinesiology",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "brent-fedorko_exercise-science-and-kinesiology",
+        "name": "Brent Fedorko",
+        "category": "Exercise science and kinesiology",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "jessica-walters_exercise-science-and-kinesiology",
+        "name": "Jessica Walters",
+        "category": "Exercise science and kinesiology",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "tim-werner_exercise-science-and-kinesiology",
+        "name": "Tim Werner",
+        "category": "Exercise science and kinesiology",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "sean-zupnik_exercise-science-and-kinesiology",
+        "name": "Sean Zupnik",
+        "category": "Exercise science and kinesiology",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "masoud-moghaddam_exercise-science-and-kinesiology",
+        "name": "Masoud Moghaddam",
+        "category": "Exercise science and kinesiology",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "UMES, Princess Anne, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "karsin-m.-bachran_exercise-science-and-kinesiology",
+        "name": "Karsin M. Bachran",
+        "category": "Exercise science and kinesiology",
+        "category_url": "Exercise%20science%20and%20kinesiology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+        ],
+        "dois": [
+            "10.1656/045.031.s1222"
+        ],
+        "department_affiliations": [
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
+        ],
+        "doi_citation_map": {
+            "10.1656/045.031.s1222": 0
+        }
+    },
+    {
+        "_id": "tami.-s.-ransom_exercise-science-and-kinesiology",
+        "name": "Tami. S. Ransom",
+        "category": "Exercise science and kinesiology",
+        "category_url": "Exercise%20science%20and%20kinesiology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+        ],
+        "dois": [
+            "10.1656/045.031.s1222"
+        ],
+        "department_affiliations": [
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801."
+        ],
+        "doi_citation_map": {
+            "10.1656/045.031.s1222": 0
+        }
+    },
+    {
+        "_id": "eric-b.-liebgold_exercise-science-and-kinesiology",
+        "name": "Eric B. Liebgold",
+        "category": "Exercise science and kinesiology",
+        "category_url": "Exercise%20science%20and%20kinesiology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+        ],
+        "dois": [
+            "10.1656/045.031.s1222"
+        ],
+        "department_affiliations": [
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
+        ],
+        "doi_citation_map": {
+            "10.1656/045.031.s1222": 0
+        }
+    },
+    {
+        "_id": "campbell-ruffhead_health-sciences,-general",
+        "name": "Campbell Ruffhead",
+        "category": "Health sciences, general",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001052868.70990.0c": 0
+        }
+    },
+    {
+        "_id": "nicholas-rolnick_health-sciences,-general",
+        "name": "Nicholas Rolnick",
+        "category": "Health sciences, general",
+        "category_url": "Health%20sciences%2C%20general",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)"
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "susannah-taylor_health-sciences,-general",
+        "name": "Susannah Taylor",
+        "category": "Health sciences, general",
+        "category_url": "Health%20sciences%2C%20general",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "lisa-marquette_health-sciences,-general",
+        "name": "Lisa Marquette",
+        "category": "Health sciences, general",
+        "category_url": "Health%20sciences%2C%20general",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "brent-fedorko_health-sciences,-general",
+        "name": "Brent Fedorko",
+        "category": "Health sciences, general",
+        "category_url": "Health%20sciences%2C%20general",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "jessica-walters_health-sciences,-general",
+        "name": "Jessica Walters",
+        "category": "Health sciences, general",
+        "category_url": "Health%20sciences%2C%20general",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "tim-werner_health-sciences,-general",
+        "name": "Tim Werner",
+        "category": "Health sciences, general",
+        "category_url": "Health%20sciences%2C%20general",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "sean-zupnik_health-sciences,-general",
+        "name": "Sean Zupnik",
+        "category": "Health sciences, general",
+        "category_url": "Health%20sciences%2C%20general",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "masoud-moghaddam_health-sciences,-general",
+        "name": "Masoud Moghaddam",
+        "category": "Health sciences, general",
+        "category_url": "Health%20sciences%2C%20general",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "UMES, Princess Anne, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "karsin-m.-bachran_health-sciences,-general",
+        "name": "Karsin M. Bachran",
+        "category": "Health sciences, general",
+        "category_url": "Health%20sciences%2C%20general",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+        ],
+        "dois": [
+            "10.1656/045.031.s1222"
+        ],
+        "department_affiliations": [
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
+        ],
+        "doi_citation_map": {
+            "10.1656/045.031.s1222": 0
+        }
+    },
+    {
+        "_id": "tami.-s.-ransom_health-sciences,-general",
+        "name": "Tami. S. Ransom",
+        "category": "Health sciences, general",
+        "category_url": "Health%20sciences%2C%20general",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+        ],
+        "dois": [
+            "10.1656/045.031.s1222"
+        ],
+        "department_affiliations": [
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801."
+        ],
+        "doi_citation_map": {
+            "10.1656/045.031.s1222": 0
+        }
+    },
+    {
+        "_id": "eric-b.-liebgold_health-sciences,-general",
+        "name": "Eric B. Liebgold",
+        "category": "Health sciences, general",
+        "category_url": "Health%20sciences%2C%20general",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+        ],
+        "dois": [
+            "10.1656/045.031.s1222"
+        ],
+        "department_affiliations": [
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
+        ],
+        "doi_citation_map": {
+            "10.1656/045.031.s1222": 0
+        }
+    },
+    {
+        "_id": "campbell-ruffhead_exercise-physiology-and-kinesiology",
+        "name": "Campbell Ruffhead",
+        "category": "Exercise physiology and kinesiology",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001052868.70990.0c": 0
+        }
+    },
+    {
+        "_id": "nicholas-rolnick_exercise-physiology-and-kinesiology",
+        "name": "Nicholas Rolnick",
+        "category": "Exercise physiology and kinesiology",
+        "category_url": "Exercise%20physiology%20and%20kinesiology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)"
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "susannah-taylor_exercise-physiology-and-kinesiology",
+        "name": "Susannah Taylor",
+        "category": "Exercise physiology and kinesiology",
+        "category_url": "Exercise%20physiology%20and%20kinesiology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "lisa-marquette_exercise-physiology-and-kinesiology",
+        "name": "Lisa Marquette",
+        "category": "Exercise physiology and kinesiology",
+        "category_url": "Exercise%20physiology%20and%20kinesiology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "brent-fedorko_exercise-physiology-and-kinesiology",
+        "name": "Brent Fedorko",
+        "category": "Exercise physiology and kinesiology",
+        "category_url": "Exercise%20physiology%20and%20kinesiology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "jessica-walters_exercise-physiology-and-kinesiology",
+        "name": "Jessica Walters",
+        "category": "Exercise physiology and kinesiology",
+        "category_url": "Exercise%20physiology%20and%20kinesiology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "tim-werner_exercise-physiology-and-kinesiology",
+        "name": "Tim Werner",
+        "category": "Exercise physiology and kinesiology",
+        "category_url": "Exercise%20physiology%20and%20kinesiology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "sean-zupnik_exercise-physiology-and-kinesiology",
+        "name": "Sean Zupnik",
+        "category": "Exercise physiology and kinesiology",
+        "category_url": "Exercise%20physiology%20and%20kinesiology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "masoud-moghaddam_exercise-physiology-and-kinesiology",
+        "name": "Masoud Moghaddam",
+        "category": "Exercise physiology and kinesiology",
+        "category_url": "Exercise%20physiology%20and%20kinesiology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "UMES, Princess Anne, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "karsin-m.-bachran_exercise-physiology-and-kinesiology",
+        "name": "Karsin M. Bachran",
+        "category": "Exercise physiology and kinesiology",
+        "category_url": "Exercise%20physiology%20and%20kinesiology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+        ],
+        "dois": [
+            "10.1656/045.031.s1222"
+        ],
+        "department_affiliations": [
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
+        ],
+        "doi_citation_map": {
+            "10.1656/045.031.s1222": 0
+        }
+    },
+    {
+        "_id": "tami.-s.-ransom_exercise-physiology-and-kinesiology",
+        "name": "Tami. S. Ransom",
+        "category": "Exercise physiology and kinesiology",
+        "category_url": "Exercise%20physiology%20and%20kinesiology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+        ],
+        "dois": [
+            "10.1656/045.031.s1222"
+        ],
+        "department_affiliations": [
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801."
+        ],
+        "doi_citation_map": {
+            "10.1656/045.031.s1222": 0
+        }
+    },
+    {
+        "_id": "eric-b.-liebgold_exercise-physiology-and-kinesiology",
+        "name": "Eric B. Liebgold",
+        "category": "Exercise physiology and kinesiology",
+        "category_url": "Exercise%20physiology%20and%20kinesiology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+        ],
+        "dois": [
+            "10.1656/045.031.s1222"
+        ],
+        "department_affiliations": [
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
+        ],
+        "doi_citation_map": {
+            "10.1656/045.031.s1222": 0
+        }
+    },
+    {
+        "_id": "campbell-ruffhead_physiology,-general",
+        "name": "Campbell Ruffhead",
+        "category": "Physiology, general",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001052868.70990.0c": 0
+        }
+    },
+    {
+        "_id": "nicholas-rolnick_physiology,-general",
+        "name": "Nicholas Rolnick",
+        "category": "Physiology, general",
+        "category_url": "Physiology%2C%20general",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)"
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "susannah-taylor_physiology,-general",
+        "name": "Susannah Taylor",
+        "category": "Physiology, general",
+        "category_url": "Physiology%2C%20general",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "lisa-marquette_physiology,-general",
+        "name": "Lisa Marquette",
+        "category": "Physiology, general",
+        "category_url": "Physiology%2C%20general",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "brent-fedorko_physiology,-general",
+        "name": "Brent Fedorko",
+        "category": "Physiology, general",
+        "category_url": "Physiology%2C%20general",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "jessica-walters_physiology,-general",
+        "name": "Jessica Walters",
+        "category": "Physiology, general",
+        "category_url": "Physiology%2C%20general",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "tim-werner_physiology,-general",
+        "name": "Tim Werner",
+        "category": "Physiology, general",
+        "category_url": "Physiology%2C%20general",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
+            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001052868.70990.0c",
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "sean-zupnik_physiology,-general",
+        "name": "Sean Zupnik",
+        "category": "Physiology, general",
+        "category_url": "Physiology%2C%20general",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "masoud-moghaddam_physiology,-general",
+        "name": "Masoud Moghaddam",
+        "category": "Physiology, general",
+        "category_url": "Physiology%2C%20general",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "UMES, Princess Anne, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "karsin-m.-bachran_physiology,-general",
+        "name": "Karsin M. Bachran",
+        "category": "Physiology, general",
+        "category_url": "Physiology%2C%20general",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+        ],
+        "dois": [
+            "10.1656/045.031.s1222"
+        ],
+        "department_affiliations": [
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
+        ],
+        "doi_citation_map": {
+            "10.1656/045.031.s1222": 0
+        }
+    },
+    {
+        "_id": "tami.-s.-ransom_physiology,-general",
+        "name": "Tami. S. Ransom",
+        "category": "Physiology, general",
+        "category_url": "Physiology%2C%20general",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+        ],
+        "dois": [
+            "10.1656/045.031.s1222"
+        ],
+        "department_affiliations": [
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801."
+        ],
+        "doi_citation_map": {
+            "10.1656/045.031.s1222": 0
+        }
+    },
+    {
+        "_id": "eric-b.-liebgold_physiology,-general",
+        "name": "Eric B. Liebgold",
+        "category": "Physiology, general",
+        "category_url": "Physiology%2C%20general",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+        ],
+        "dois": [
+            "10.1656/045.031.s1222"
+        ],
+        "department_affiliations": [
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
+        ],
+        "doi_citation_map": {
+            "10.1656/045.031.s1222": 0
+        }
+    },
+    {
+        "_id": "sean-zupnik_psychology",
+        "name": "Sean Zupnik",
         "category": "Psychology",
         "category_url": "Psychology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy"
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
         ],
         "dois": [
-            "10.1177/10778012241234897"
+            "10.1249/01.mss.0001060920.34828.c8"
         ],
         "department_affiliations": [
-            "Department of Psychology, Salisbury University, Salisbury, MD, USA"
+            "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1177/10778012241234897": 0
+            "10.1249/01.mss.0001060920.34828.c8": 0
         }
     },
     {
-        "_id": "tieryn-r.-gingerich_psychology",
-        "name": "Tieryn R. Gingerich",
+        "_id": "masoud-moghaddam_psychology",
+        "name": "Masoud Moghaddam",
         "category": "Psychology",
         "category_url": "Psychology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy"
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
         ],
         "dois": [
-            "10.1177/10778012241234897"
+            "10.1249/01.mss.0001060920.34828.c8"
         ],
         "department_affiliations": [
-            "Department of Psychology, Salisbury University, Salisbury, MD, USA"
+            "UMES, Princess Anne, MD."
         ],
         "doi_citation_map": {
-            "10.1177/10778012241234897": 0
+            "10.1249/01.mss.0001060920.34828.c8": 0
         }
     },
     {
-        "_id": "kyoung-rae-jung_psychology",
-        "name": "Kyoung-Rae Jung",
+        "_id": "nicholas-rolnick_psychology",
+        "name": "Nicholas Rolnick",
         "category": "Psychology",
         "category_url": "Psychology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Korean fathers\u2019 immigration experience"
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
         ],
         "dois": [
-            "10.1080/10911359.2024.2302976"
+            "10.1249/01.mss.0001060920.34828.c8"
         ],
         "department_affiliations": [
-            "Department of Psychology, Salisbury University, Salisbury, Maryland, USA"
+            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)"
         ],
         "doi_citation_map": {
-            "10.1080/10911359.2024.2302976": 0
+            "10.1249/01.mss.0001060920.34828.c8": 0
         }
     },
     {
-        "_id": "sook-hyun-kim_psychology",
-        "name": "Sook-Hyun Kim",
+        "_id": "lisa-marquette_psychology",
+        "name": "Lisa Marquette",
         "category": "Psychology",
         "category_url": "Psychology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Korean fathers\u2019 immigration experience"
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
         ],
         "dois": [
-            "10.1080/10911359.2024.2302976"
+            "10.1249/01.mss.0001060920.34828.c8"
         ],
         "department_affiliations": [
-            "School of Social Work, Salisbury University, Salisbury, Maryland, USA"
+            "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1080/10911359.2024.2302976": 0
+            "10.1249/01.mss.0001060920.34828.c8": 0
         }
     },
     {
-        "_id": "david-z.-keifer_psychology",
-        "name": "David Z. Keifer",
+        "_id": "susannah-taylor_psychology",
+        "name": "Susannah Taylor",
         "category": "Psychology",
         "category_url": "Psychology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
         ],
         "dois": [
-            "10.1021/acs.jchemed.4c00708"
+            "10.1249/01.mss.0001060920.34828.c8"
         ],
         "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
+            "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
+            "10.1249/01.mss.0001060920.34828.c8": 0
         }
     },
     {
-        "_id": "jose-i.-juncosa_psychology",
-        "name": "Jose I. Juncosa",
+        "_id": "jessica-walters_psychology",
+        "name": "Jessica Walters",
         "category": "Psychology",
         "category_url": "Psychology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
         ],
         "dois": [
-            "10.1021/acs.jchemed.4c00708"
+            "10.1249/01.mss.0001060920.34828.c8"
         ],
         "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
+            "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
+            "10.1249/01.mss.0001060920.34828.c8": 0
         }
     },
     {
-        "_id": "suzanne-l.-osman_social-sciences",
-        "name": "Suzanne L. Osman",
-        "category": "Social sciences",
-        "category_url": "Social%20sciences",
+        "_id": "brent-fedorko_psychology",
+        "name": "Brent Fedorko",
+        "category": "Psychology",
+        "category_url": "Psychology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy"
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
         ],
         "dois": [
-            "10.1177/10778012241234897"
+            "10.1249/01.mss.0001060920.34828.c8"
         ],
         "department_affiliations": [
-            "Department of Psychology, Salisbury University, Salisbury, MD, USA"
+            "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1177/10778012241234897": 0
+            "10.1249/01.mss.0001060920.34828.c8": 0
         }
     },
     {
-        "_id": "tieryn-r.-gingerich_social-sciences",
-        "name": "Tieryn R. Gingerich",
-        "category": "Social sciences",
-        "category_url": "Social%20sciences",
+        "_id": "tim-werner_psychology",
+        "name": "Tim Werner",
+        "category": "Psychology",
+        "category_url": "Psychology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy"
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
         ],
         "dois": [
-            "10.1177/10778012241234897"
+            "10.1249/01.mss.0001060920.34828.c8"
         ],
         "department_affiliations": [
-            "Department of Psychology, Salisbury University, Salisbury, MD, USA"
+            "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1177/10778012241234897": 0
+            "10.1249/01.mss.0001060920.34828.c8": 0
         }
     },
     {
-        "_id": "kyoung-rae-jung_social-sciences",
-        "name": "Kyoung-Rae Jung",
-        "category": "Social sciences",
-        "category_url": "Social%20sciences",
+        "_id": "karsin-m.-bachran_psychology",
+        "name": "Karsin M. Bachran",
+        "category": "Psychology",
+        "category_url": "Psychology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Korean fathers\u2019 immigration experience"
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
         ],
         "dois": [
-            "10.1080/10911359.2024.2302976"
+            "10.1656/045.031.s1222"
         ],
         "department_affiliations": [
-            "Department of Psychology, Salisbury University, Salisbury, Maryland, USA"
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
         ],
         "doi_citation_map": {
-            "10.1080/10911359.2024.2302976": 0
+            "10.1656/045.031.s1222": 0
         }
     },
     {
-        "_id": "sook-hyun-kim_social-sciences",
-        "name": "Sook-Hyun Kim",
-        "category": "Social sciences",
-        "category_url": "Social%20sciences",
+        "_id": "tami.-s.-ransom_psychology",
+        "name": "Tami. S. Ransom",
+        "category": "Psychology",
+        "category_url": "Psychology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Korean fathers\u2019 immigration experience"
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
         ],
         "dois": [
-            "10.1080/10911359.2024.2302976"
+            "10.1656/045.031.s1222"
         ],
         "department_affiliations": [
-            "School of Social Work, Salisbury University, Salisbury, Maryland, USA"
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801."
         ],
         "doi_citation_map": {
-            "10.1080/10911359.2024.2302976": 0
+            "10.1656/045.031.s1222": 0
         }
     },
     {
-        "_id": "david-z.-keifer_social-sciences",
-        "name": "David Z. Keifer",
-        "category": "Social sciences",
-        "category_url": "Social%20sciences",
+        "_id": "eric-b.-liebgold_psychology",
+        "name": "Eric B. Liebgold",
+        "category": "Psychology",
+        "category_url": "Psychology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
         ],
         "dois": [
-            "10.1021/acs.jchemed.4c00708"
+            "10.1656/045.031.s1222"
         ],
         "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
         ],
         "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
+            "10.1656/045.031.s1222": 0
         }
     },
     {
-        "_id": "jose-i.-juncosa_social-sciences",
-        "name": "Jose I. Juncosa",
-        "category": "Social sciences",
-        "category_url": "Social%20sciences",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "suzanne-l.-osman_counseling-and-applied-psychology",
-        "name": "Suzanne L. Osman",
-        "category": "Counseling and applied psychology",
-        "category_url": "Psychology/Counseling%20and%20applied%20psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy"
-        ],
-        "dois": [
-            "10.1177/10778012241234897"
-        ],
-        "department_affiliations": [
-            "Department of Psychology, Salisbury University, Salisbury, MD, USA"
-        ],
-        "doi_citation_map": {
-            "10.1177/10778012241234897": 0
-        }
-    },
-    {
-        "_id": "tieryn-r.-gingerich_counseling-and-applied-psychology",
-        "name": "Tieryn R. Gingerich",
-        "category": "Counseling and applied psychology",
-        "category_url": "Psychology/Counseling%20and%20applied%20psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy"
-        ],
-        "dois": [
-            "10.1177/10778012241234897"
-        ],
-        "department_affiliations": [
-            "Department of Psychology, Salisbury University, Salisbury, MD, USA"
-        ],
-        "doi_citation_map": {
-            "10.1177/10778012241234897": 0
-        }
-    },
-    {
-        "_id": "kyoung-rae-jung_counseling-and-applied-psychology",
-        "name": "Kyoung-Rae Jung",
-        "category": "Counseling and applied psychology",
-        "category_url": "Psychology/Counseling%20and%20applied%20psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Korean fathers\u2019 immigration experience"
-        ],
-        "dois": [
-            "10.1080/10911359.2024.2302976"
-        ],
-        "department_affiliations": [
-            "Department of Psychology, Salisbury University, Salisbury, Maryland, USA"
-        ],
-        "doi_citation_map": {
-            "10.1080/10911359.2024.2302976": 0
-        }
-    },
-    {
-        "_id": "sook-hyun-kim_counseling-and-applied-psychology",
-        "name": "Sook-Hyun Kim",
-        "category": "Counseling and applied psychology",
-        "category_url": "Psychology/Counseling%20and%20applied%20psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Korean fathers\u2019 immigration experience"
-        ],
-        "dois": [
-            "10.1080/10911359.2024.2302976"
-        ],
-        "department_affiliations": [
-            "School of Social Work, Salisbury University, Salisbury, Maryland, USA"
-        ],
-        "doi_citation_map": {
-            "10.1080/10911359.2024.2302976": 0
-        }
-    },
-    {
-        "_id": "david-z.-keifer_counseling-and-applied-psychology",
-        "name": "David Z. Keifer",
-        "category": "Counseling and applied psychology",
-        "category_url": "Counseling%20and%20applied%20psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "jose-i.-juncosa_counseling-and-applied-psychology",
-        "name": "Jose I. Juncosa",
-        "category": "Counseling and applied psychology",
-        "category_url": "Counseling%20and%20applied%20psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "suzanne-l.-osman_research-and-experimental-psychology",
-        "name": "Suzanne L. Osman",
+        "_id": "sean-zupnik_research-and-experimental-psychology",
+        "name": "Sean Zupnik",
         "category": "Research and experimental psychology",
         "category_url": "Psychology/Research%20and%20experimental%20psychology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy"
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
         ],
         "dois": [
-            "10.1177/10778012241234897"
+            "10.1249/01.mss.0001060920.34828.c8"
         ],
         "department_affiliations": [
-            "Department of Psychology, Salisbury University, Salisbury, MD, USA"
+            "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1177/10778012241234897": 0
+            "10.1249/01.mss.0001060920.34828.c8": 0
         }
     },
     {
-        "_id": "tieryn-r.-gingerich_research-and-experimental-psychology",
-        "name": "Tieryn R. Gingerich",
+        "_id": "masoud-moghaddam_research-and-experimental-psychology",
+        "name": "Masoud Moghaddam",
         "category": "Research and experimental psychology",
         "category_url": "Psychology/Research%20and%20experimental%20psychology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy"
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
         ],
         "dois": [
-            "10.1177/10778012241234897"
+            "10.1249/01.mss.0001060920.34828.c8"
         ],
         "department_affiliations": [
-            "Department of Psychology, Salisbury University, Salisbury, MD, USA"
+            "UMES, Princess Anne, MD."
         ],
         "doi_citation_map": {
-            "10.1177/10778012241234897": 0
+            "10.1249/01.mss.0001060920.34828.c8": 0
         }
     },
     {
-        "_id": "kyoung-rae-jung_research-and-experimental-psychology",
-        "name": "Kyoung-Rae Jung",
+        "_id": "nicholas-rolnick_research-and-experimental-psychology",
+        "name": "Nicholas Rolnick",
         "category": "Research and experimental psychology",
         "category_url": "Psychology/Research%20and%20experimental%20psychology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Korean fathers\u2019 immigration experience"
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
         ],
         "dois": [
-            "10.1080/10911359.2024.2302976"
+            "10.1249/01.mss.0001060920.34828.c8"
         ],
         "department_affiliations": [
-            "Department of Psychology, Salisbury University, Salisbury, Maryland, USA"
+            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)"
         ],
         "doi_citation_map": {
-            "10.1080/10911359.2024.2302976": 0
+            "10.1249/01.mss.0001060920.34828.c8": 0
         }
     },
     {
-        "_id": "sook-hyun-kim_research-and-experimental-psychology",
-        "name": "Sook-Hyun Kim",
+        "_id": "lisa-marquette_research-and-experimental-psychology",
+        "name": "Lisa Marquette",
         "category": "Research and experimental psychology",
         "category_url": "Psychology/Research%20and%20experimental%20psychology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Korean fathers\u2019 immigration experience"
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
         ],
         "dois": [
-            "10.1080/10911359.2024.2302976"
+            "10.1249/01.mss.0001060920.34828.c8"
         ],
         "department_affiliations": [
-            "School of Social Work, Salisbury University, Salisbury, Maryland, USA"
+            "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1080/10911359.2024.2302976": 0
+            "10.1249/01.mss.0001060920.34828.c8": 0
         }
     },
     {
-        "_id": "david-z.-keifer_research-and-experimental-psychology",
-        "name": "David Z. Keifer",
+        "_id": "susannah-taylor_research-and-experimental-psychology",
+        "name": "Susannah Taylor",
+        "category": "Research and experimental psychology",
+        "category_url": "Psychology/Research%20and%20experimental%20psychology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "jessica-walters_research-and-experimental-psychology",
+        "name": "Jessica Walters",
+        "category": "Research and experimental psychology",
+        "category_url": "Psychology/Research%20and%20experimental%20psychology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "brent-fedorko_research-and-experimental-psychology",
+        "name": "Brent Fedorko",
+        "category": "Research and experimental psychology",
+        "category_url": "Psychology/Research%20and%20experimental%20psychology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "tim-werner_research-and-experimental-psychology",
+        "name": "Tim Werner",
+        "category": "Research and experimental psychology",
+        "category_url": "Psychology/Research%20and%20experimental%20psychology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+        ],
+        "dois": [
+            "10.1249/01.mss.0001060920.34828.c8"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0001060920.34828.c8": 0
+        }
+    },
+    {
+        "_id": "karsin-m.-bachran_research-and-experimental-psychology",
+        "name": "Karsin M. Bachran",
         "category": "Research and experimental psychology",
         "category_url": "Research%20and%20experimental%20psychology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
         ],
         "dois": [
-            "10.1021/acs.jchemed.4c00708"
+            "10.1656/045.031.s1222"
         ],
         "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
         ],
         "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
+            "10.1656/045.031.s1222": 0
         }
     },
     {
-        "_id": "jose-i.-juncosa_research-and-experimental-psychology",
-        "name": "Jose I. Juncosa",
+        "_id": "tami.-s.-ransom_research-and-experimental-psychology",
+        "name": "Tami. S. Ransom",
         "category": "Research and experimental psychology",
         "category_url": "Research%20and%20experimental%20psychology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
         ],
         "dois": [
-            "10.1021/acs.jchemed.4c00708"
+            "10.1656/045.031.s1222"
         ],
         "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801."
         ],
         "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
+            "10.1656/045.031.s1222": 0
         }
     },
     {
-        "_id": "suzanne-l.-osman_area,-ethnic,-cultural,-gender,-and-group-studies",
-        "name": "Suzanne L. Osman",
-        "category": "Area, ethnic, cultural, gender, and group studies",
-        "category_url": "Social%20sciences/Area%2C%20ethnic%2C%20cultural%2C%20gender%2C%20and%20group%20studies",
+        "_id": "eric-b.-liebgold_research-and-experimental-psychology",
+        "name": "Eric B. Liebgold",
+        "category": "Research and experimental psychology",
+        "category_url": "Research%20and%20experimental%20psychology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy"
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
         ],
         "dois": [
-            "10.1177/10778012241234897"
+            "10.1656/045.031.s1222"
         ],
         "department_affiliations": [
-            "Department of Psychology, Salisbury University, Salisbury, MD, USA"
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
         ],
         "doi_citation_map": {
-            "10.1177/10778012241234897": 0
+            "10.1656/045.031.s1222": 0
         }
     },
     {
-        "_id": "tieryn-r.-gingerich_area,-ethnic,-cultural,-gender,-and-group-studies",
-        "name": "Tieryn R. Gingerich",
-        "category": "Area, ethnic, cultural, gender, and group studies",
-        "category_url": "Social%20sciences/Area%2C%20ethnic%2C%20cultural%2C%20gender%2C%20and%20group%20studies",
+        "_id": "sean-zupnik_experimental-psychology",
+        "name": "Sean Zupnik",
+        "category": "Experimental psychology",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Experimental%20psychology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy"
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
         ],
         "dois": [
-            "10.1177/10778012241234897"
+            "10.1249/01.mss.0001060920.34828.c8"
         ],
         "department_affiliations": [
-            "Department of Psychology, Salisbury University, Salisbury, MD, USA"
+            "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1177/10778012241234897": 0
+            "10.1249/01.mss.0001060920.34828.c8": 0
         }
     },
     {
-        "_id": "kyoung-rae-jung_area,-ethnic,-cultural,-gender,-and-group-studies",
-        "name": "Kyoung-Rae Jung",
-        "category": "Area, ethnic, cultural, gender, and group studies",
-        "category_url": "Social%20sciences/Area%2C%20ethnic%2C%20cultural%2C%20gender%2C%20and%20group%20studies",
+        "_id": "masoud-moghaddam_experimental-psychology",
+        "name": "Masoud Moghaddam",
+        "category": "Experimental psychology",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Experimental%20psychology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Korean fathers\u2019 immigration experience"
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
         ],
         "dois": [
-            "10.1080/10911359.2024.2302976"
+            "10.1249/01.mss.0001060920.34828.c8"
         ],
         "department_affiliations": [
-            "Department of Psychology, Salisbury University, Salisbury, Maryland, USA"
+            "UMES, Princess Anne, MD."
         ],
         "doi_citation_map": {
-            "10.1080/10911359.2024.2302976": 0
+            "10.1249/01.mss.0001060920.34828.c8": 0
         }
     },
     {
-        "_id": "sook-hyun-kim_area,-ethnic,-cultural,-gender,-and-group-studies",
-        "name": "Sook-Hyun Kim",
-        "category": "Area, ethnic, cultural, gender, and group studies",
-        "category_url": "Social%20sciences/Area%2C%20ethnic%2C%20cultural%2C%20gender%2C%20and%20group%20studies",
+        "_id": "nicholas-rolnick_experimental-psychology",
+        "name": "Nicholas Rolnick",
+        "category": "Experimental psychology",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Experimental%20psychology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Korean fathers\u2019 immigration experience"
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
         ],
         "dois": [
-            "10.1080/10911359.2024.2302976"
+            "10.1249/01.mss.0001060920.34828.c8"
         ],
         "department_affiliations": [
-            "School of Social Work, Salisbury University, Salisbury, Maryland, USA"
+            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)"
         ],
         "doi_citation_map": {
-            "10.1080/10911359.2024.2302976": 0
+            "10.1249/01.mss.0001060920.34828.c8": 0
         }
     },
     {
-        "_id": "david-z.-keifer_area,-ethnic,-cultural,-gender,-and-group-studies",
-        "name": "David Z. Keifer",
-        "category": "Area, ethnic, cultural, gender, and group studies",
-        "category_url": "Area%2C%20ethnic%2C%20cultural%2C%20gender%2C%20and%20group%20studies",
+        "_id": "lisa-marquette_experimental-psychology",
+        "name": "Lisa Marquette",
+        "category": "Experimental psychology",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Experimental%20psychology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
         ],
         "dois": [
-            "10.1021/acs.jchemed.4c00708"
+            "10.1249/01.mss.0001060920.34828.c8"
         ],
         "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
+            "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
+            "10.1249/01.mss.0001060920.34828.c8": 0
         }
     },
     {
-        "_id": "jose-i.-juncosa_area,-ethnic,-cultural,-gender,-and-group-studies",
-        "name": "Jose I. Juncosa",
-        "category": "Area, ethnic, cultural, gender, and group studies",
-        "category_url": "Area%2C%20ethnic%2C%20cultural%2C%20gender%2C%20and%20group%20studies",
+        "_id": "susannah-taylor_experimental-psychology",
+        "name": "Susannah Taylor",
+        "category": "Experimental psychology",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Experimental%20psychology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
         ],
         "dois": [
-            "10.1021/acs.jchemed.4c00708"
+            "10.1249/01.mss.0001060920.34828.c8"
         ],
         "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
+            "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
+            "10.1249/01.mss.0001060920.34828.c8": 0
         }
     },
     {
-        "_id": "suzanne-l.-osman_sociology,-demography,-and-population-studies",
-        "name": "Suzanne L. Osman",
-        "category": "Sociology, demography, and population studies",
-        "category_url": "Social%20sciences/Sociology%2C%20demography%2C%20and%20population%20studies",
+        "_id": "jessica-walters_experimental-psychology",
+        "name": "Jessica Walters",
+        "category": "Experimental psychology",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Experimental%20psychology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy"
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
         ],
         "dois": [
-            "10.1177/10778012241234897"
+            "10.1249/01.mss.0001060920.34828.c8"
         ],
         "department_affiliations": [
-            "Department of Psychology, Salisbury University, Salisbury, MD, USA"
+            "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1177/10778012241234897": 0
+            "10.1249/01.mss.0001060920.34828.c8": 0
         }
     },
     {
-        "_id": "tieryn-r.-gingerich_sociology,-demography,-and-population-studies",
-        "name": "Tieryn R. Gingerich",
-        "category": "Sociology, demography, and population studies",
-        "category_url": "Social%20sciences/Sociology%2C%20demography%2C%20and%20population%20studies",
+        "_id": "brent-fedorko_experimental-psychology",
+        "name": "Brent Fedorko",
+        "category": "Experimental psychology",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Experimental%20psychology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy"
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
         ],
         "dois": [
-            "10.1177/10778012241234897"
+            "10.1249/01.mss.0001060920.34828.c8"
         ],
         "department_affiliations": [
-            "Department of Psychology, Salisbury University, Salisbury, MD, USA"
+            "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1177/10778012241234897": 0
+            "10.1249/01.mss.0001060920.34828.c8": 0
         }
     },
     {
-        "_id": "kyoung-rae-jung_sociology,-demography,-and-population-studies",
-        "name": "Kyoung-Rae Jung",
-        "category": "Sociology, demography, and population studies",
-        "category_url": "Social%20sciences/Sociology%2C%20demography%2C%20and%20population%20studies",
+        "_id": "tim-werner_experimental-psychology",
+        "name": "Tim Werner",
+        "category": "Experimental psychology",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Experimental%20psychology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Korean fathers\u2019 immigration experience"
+            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
         ],
         "dois": [
-            "10.1080/10911359.2024.2302976"
+            "10.1249/01.mss.0001060920.34828.c8"
         ],
         "department_affiliations": [
-            "Department of Psychology, Salisbury University, Salisbury, Maryland, USA"
+            "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1080/10911359.2024.2302976": 0
+            "10.1249/01.mss.0001060920.34828.c8": 0
         }
     },
     {
-        "_id": "sook-hyun-kim_sociology,-demography,-and-population-studies",
-        "name": "Sook-Hyun Kim",
-        "category": "Sociology, demography, and population studies",
-        "category_url": "Social%20sciences/Sociology%2C%20demography%2C%20and%20population%20studies",
+        "_id": "karsin-m.-bachran_experimental-psychology",
+        "name": "Karsin M. Bachran",
+        "category": "Experimental psychology",
+        "category_url": "Experimental%20psychology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Korean fathers\u2019 immigration experience"
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
         ],
         "dois": [
-            "10.1080/10911359.2024.2302976"
+            "10.1656/045.031.s1222"
         ],
         "department_affiliations": [
-            "School of Social Work, Salisbury University, Salisbury, Maryland, USA"
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
         ],
         "doi_citation_map": {
-            "10.1080/10911359.2024.2302976": 0
+            "10.1656/045.031.s1222": 0
         }
     },
     {
-        "_id": "david-z.-keifer_sociology,-demography,-and-population-studies",
-        "name": "David Z. Keifer",
-        "category": "Sociology, demography, and population studies",
-        "category_url": "Sociology%2C%20demography%2C%20and%20population%20studies",
+        "_id": "tami.-s.-ransom_experimental-psychology",
+        "name": "Tami. S. Ransom",
+        "category": "Experimental psychology",
+        "category_url": "Experimental%20psychology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
         ],
         "dois": [
-            "10.1021/acs.jchemed.4c00708"
+            "10.1656/045.031.s1222"
         ],
         "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801."
         ],
         "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
+            "10.1656/045.031.s1222": 0
         }
     },
     {
-        "_id": "jose-i.-juncosa_sociology,-demography,-and-population-studies",
-        "name": "Jose I. Juncosa",
-        "category": "Sociology, demography, and population studies",
-        "category_url": "Sociology%2C%20demography%2C%20and%20population%20studies",
+        "_id": "eric-b.-liebgold_experimental-psychology",
+        "name": "Eric B. Liebgold",
+        "category": "Experimental psychology",
+        "category_url": "Experimental%20psychology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
         ],
         "dois": [
-            "10.1021/acs.jchemed.4c00708"
+            "10.1656/045.031.s1222"
         ],
         "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
         ],
         "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
+            "10.1656/045.031.s1222": 0
         }
     },
     {
-        "_id": "suzanne-l.-osman_counseling-psychology",
-        "name": "Suzanne L. Osman",
-        "category": "Counseling psychology",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Counseling%20psychology",
+        "_id": "karsin-m.-bachran_ecology,-evolutionary-biology,-and-epidemiology",
+        "name": "Karsin M. Bachran",
+        "category": "Ecology, evolutionary biology, and epidemiology",
+        "category_url": "Biological%20and%20biomedical%20sciences/Ecology%2C%20evolutionary%20biology%2C%20and%20epidemiology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy"
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
         ],
         "dois": [
-            "10.1177/10778012241234897"
+            "10.1656/045.031.s1222"
         ],
         "department_affiliations": [
-            "Department of Psychology, Salisbury University, Salisbury, MD, USA"
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
         ],
         "doi_citation_map": {
-            "10.1177/10778012241234897": 0
+            "10.1656/045.031.s1222": 0
         }
     },
     {
-        "_id": "tieryn-r.-gingerich_counseling-psychology",
-        "name": "Tieryn R. Gingerich",
-        "category": "Counseling psychology",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Counseling%20psychology",
+        "_id": "tami.-s.-ransom_ecology,-evolutionary-biology,-and-epidemiology",
+        "name": "Tami. S. Ransom",
+        "category": "Ecology, evolutionary biology, and epidemiology",
+        "category_url": "Biological%20and%20biomedical%20sciences/Ecology%2C%20evolutionary%20biology%2C%20and%20epidemiology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy"
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
         ],
         "dois": [
-            "10.1177/10778012241234897"
+            "10.1656/045.031.s1222"
         ],
         "department_affiliations": [
-            "Department of Psychology, Salisbury University, Salisbury, MD, USA"
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801."
         ],
         "doi_citation_map": {
-            "10.1177/10778012241234897": 0
+            "10.1656/045.031.s1222": 0
         }
     },
     {
-        "_id": "kyoung-rae-jung_counseling-psychology",
-        "name": "Kyoung-Rae Jung",
-        "category": "Counseling psychology",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Counseling%20psychology",
+        "_id": "eric-b.-liebgold_ecology,-evolutionary-biology,-and-epidemiology",
+        "name": "Eric B. Liebgold",
+        "category": "Ecology, evolutionary biology, and epidemiology",
+        "category_url": "Biological%20and%20biomedical%20sciences/Ecology%2C%20evolutionary%20biology%2C%20and%20epidemiology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Korean fathers\u2019 immigration experience"
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
         ],
         "dois": [
-            "10.1080/10911359.2024.2302976"
+            "10.1656/045.031.s1222"
         ],
         "department_affiliations": [
-            "Department of Psychology, Salisbury University, Salisbury, Maryland, USA"
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
         ],
         "doi_citation_map": {
-            "10.1080/10911359.2024.2302976": 0
+            "10.1656/045.031.s1222": 0
         }
     },
     {
-        "_id": "sook-hyun-kim_counseling-psychology",
-        "name": "Sook-Hyun Kim",
-        "category": "Counseling psychology",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Counseling%20psychology",
+        "_id": "karsin-m.-bachran_ecology",
+        "name": "Karsin M. Bachran",
+        "category": "Ecology",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Korean fathers\u2019 immigration experience"
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
         ],
         "dois": [
-            "10.1080/10911359.2024.2302976"
+            "10.1656/045.031.s1222"
         ],
         "department_affiliations": [
-            "School of Social Work, Salisbury University, Salisbury, Maryland, USA"
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
         ],
         "doi_citation_map": {
-            "10.1080/10911359.2024.2302976": 0
+            "10.1656/045.031.s1222": 0
         }
     },
     {
-        "_id": "david-z.-keifer_counseling-psychology",
-        "name": "David Z. Keifer",
-        "category": "Counseling psychology",
-        "category_url": "Counseling%20psychology",
+        "_id": "tami.-s.-ransom_ecology",
+        "name": "Tami. S. Ransom",
+        "category": "Ecology",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
         ],
         "dois": [
-            "10.1021/acs.jchemed.4c00708"
+            "10.1656/045.031.s1222"
         ],
         "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
+            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801."
         ],
         "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
+            "10.1656/045.031.s1222": 0
         }
     },
     {
-        "_id": "jose-i.-juncosa_counseling-psychology",
-        "name": "Jose I. Juncosa",
-        "category": "Counseling psychology",
-        "category_url": "Counseling%20psychology",
+        "_id": "eric-b.-liebgold_ecology",
+        "name": "Eric B. Liebgold",
+        "category": "Ecology",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
+            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
         ],
         "dois": [
-            "10.1021/acs.jchemed.4c00708"
+            "10.1656/045.031.s1222"
         ],
         "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
         ],
         "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "suzanne-l.-osman_counseling-and-applied-psychology-nec",
-        "name": "Suzanne L. Osman",
-        "category": "Counseling and applied psychology nec",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Counseling%20and%20applied%20psychology%20nec",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy"
-        ],
-        "dois": [
-            "10.1177/10778012241234897"
-        ],
-        "department_affiliations": [
-            "Department of Psychology, Salisbury University, Salisbury, MD, USA"
-        ],
-        "doi_citation_map": {
-            "10.1177/10778012241234897": 0
-        }
-    },
-    {
-        "_id": "tieryn-r.-gingerich_counseling-and-applied-psychology-nec",
-        "name": "Tieryn R. Gingerich",
-        "category": "Counseling and applied psychology nec",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Counseling%20and%20applied%20psychology%20nec",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy"
-        ],
-        "dois": [
-            "10.1177/10778012241234897"
-        ],
-        "department_affiliations": [
-            "Department of Psychology, Salisbury University, Salisbury, MD, USA"
-        ],
-        "doi_citation_map": {
-            "10.1177/10778012241234897": 0
-        }
-    },
-    {
-        "_id": "kyoung-rae-jung_counseling-and-applied-psychology-nec",
-        "name": "Kyoung-Rae Jung",
-        "category": "Counseling and applied psychology nec",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Counseling%20and%20applied%20psychology%20nec",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Korean fathers\u2019 immigration experience"
-        ],
-        "dois": [
-            "10.1080/10911359.2024.2302976"
-        ],
-        "department_affiliations": [
-            "Department of Psychology, Salisbury University, Salisbury, Maryland, USA"
-        ],
-        "doi_citation_map": {
-            "10.1080/10911359.2024.2302976": 0
-        }
-    },
-    {
-        "_id": "sook-hyun-kim_counseling-and-applied-psychology-nec",
-        "name": "Sook-Hyun Kim",
-        "category": "Counseling and applied psychology nec",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Counseling%20and%20applied%20psychology%20nec",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Korean fathers\u2019 immigration experience"
-        ],
-        "dois": [
-            "10.1080/10911359.2024.2302976"
-        ],
-        "department_affiliations": [
-            "School of Social Work, Salisbury University, Salisbury, Maryland, USA"
-        ],
-        "doi_citation_map": {
-            "10.1080/10911359.2024.2302976": 0
-        }
-    },
-    {
-        "_id": "david-z.-keifer_counseling-and-applied-psychology-nec",
-        "name": "David Z. Keifer",
-        "category": "Counseling and applied psychology nec",
-        "category_url": "Counseling%20and%20applied%20psychology%20nec",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "jose-i.-juncosa_counseling-and-applied-psychology-nec",
-        "name": "Jose I. Juncosa",
-        "category": "Counseling and applied psychology nec",
-        "category_url": "Counseling%20and%20applied%20psychology%20nec",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "suzanne-l.-osman_social-psychology",
-        "name": "Suzanne L. Osman",
-        "category": "Social psychology",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Social%20psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy"
-        ],
-        "dois": [
-            "10.1177/10778012241234897"
-        ],
-        "department_affiliations": [
-            "Department of Psychology, Salisbury University, Salisbury, MD, USA"
-        ],
-        "doi_citation_map": {
-            "10.1177/10778012241234897": 0
-        }
-    },
-    {
-        "_id": "tieryn-r.-gingerich_social-psychology",
-        "name": "Tieryn R. Gingerich",
-        "category": "Social psychology",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Social%20psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy"
-        ],
-        "dois": [
-            "10.1177/10778012241234897"
-        ],
-        "department_affiliations": [
-            "Department of Psychology, Salisbury University, Salisbury, MD, USA"
-        ],
-        "doi_citation_map": {
-            "10.1177/10778012241234897": 0
-        }
-    },
-    {
-        "_id": "kyoung-rae-jung_social-psychology",
-        "name": "Kyoung-Rae Jung",
-        "category": "Social psychology",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Social%20psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Korean fathers\u2019 immigration experience"
-        ],
-        "dois": [
-            "10.1080/10911359.2024.2302976"
-        ],
-        "department_affiliations": [
-            "Department of Psychology, Salisbury University, Salisbury, Maryland, USA"
-        ],
-        "doi_citation_map": {
-            "10.1080/10911359.2024.2302976": 0
-        }
-    },
-    {
-        "_id": "sook-hyun-kim_social-psychology",
-        "name": "Sook-Hyun Kim",
-        "category": "Social psychology",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Social%20psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Korean fathers\u2019 immigration experience"
-        ],
-        "dois": [
-            "10.1080/10911359.2024.2302976"
-        ],
-        "department_affiliations": [
-            "School of Social Work, Salisbury University, Salisbury, Maryland, USA"
-        ],
-        "doi_citation_map": {
-            "10.1080/10911359.2024.2302976": 0
-        }
-    },
-    {
-        "_id": "david-z.-keifer_social-psychology",
-        "name": "David Z. Keifer",
-        "category": "Social psychology",
-        "category_url": "Social%20psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "jose-i.-juncosa_social-psychology",
-        "name": "Jose I. Juncosa",
-        "category": "Social psychology",
-        "category_url": "Social%20psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "suzanne-l.-osman_area,-ethnic,-cultural,-gender,-and-group-studies-nec",
-        "name": "Suzanne L. Osman",
-        "category": "Area, ethnic, cultural, gender, and group studies nec",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Area%2C%20ethnic%2C%20cultural%2C%20gender%2C%20and%20group%20studies%20nec",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy"
-        ],
-        "dois": [
-            "10.1177/10778012241234897"
-        ],
-        "department_affiliations": [
-            "Department of Psychology, Salisbury University, Salisbury, MD, USA"
-        ],
-        "doi_citation_map": {
-            "10.1177/10778012241234897": 0
-        }
-    },
-    {
-        "_id": "tieryn-r.-gingerich_area,-ethnic,-cultural,-gender,-and-group-studies-nec",
-        "name": "Tieryn R. Gingerich",
-        "category": "Area, ethnic, cultural, gender, and group studies nec",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Area%2C%20ethnic%2C%20cultural%2C%20gender%2C%20and%20group%20studies%20nec",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy"
-        ],
-        "dois": [
-            "10.1177/10778012241234897"
-        ],
-        "department_affiliations": [
-            "Department of Psychology, Salisbury University, Salisbury, MD, USA"
-        ],
-        "doi_citation_map": {
-            "10.1177/10778012241234897": 0
-        }
-    },
-    {
-        "_id": "kyoung-rae-jung_area,-ethnic,-cultural,-gender,-and-group-studies-nec",
-        "name": "Kyoung-Rae Jung",
-        "category": "Area, ethnic, cultural, gender, and group studies nec",
-        "category_url": "Area%2C%20ethnic%2C%20cultural%2C%20gender%2C%20and%20group%20studies%20nec",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Korean fathers\u2019 immigration experience"
-        ],
-        "dois": [
-            "10.1080/10911359.2024.2302976"
-        ],
-        "department_affiliations": [
-            "Department of Psychology, Salisbury University, Salisbury, Maryland, USA"
-        ],
-        "doi_citation_map": {
-            "10.1080/10911359.2024.2302976": 0
-        }
-    },
-    {
-        "_id": "sook-hyun-kim_area,-ethnic,-cultural,-gender,-and-group-studies-nec",
-        "name": "Sook-Hyun Kim",
-        "category": "Area, ethnic, cultural, gender, and group studies nec",
-        "category_url": "Area%2C%20ethnic%2C%20cultural%2C%20gender%2C%20and%20group%20studies%20nec",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Korean fathers\u2019 immigration experience"
-        ],
-        "dois": [
-            "10.1080/10911359.2024.2302976"
-        ],
-        "department_affiliations": [
-            "School of Social Work, Salisbury University, Salisbury, Maryland, USA"
-        ],
-        "doi_citation_map": {
-            "10.1080/10911359.2024.2302976": 0
-        }
-    },
-    {
-        "_id": "david-z.-keifer_area,-ethnic,-cultural,-gender,-and-group-studies-nec",
-        "name": "David Z. Keifer",
-        "category": "Area, ethnic, cultural, gender, and group studies nec",
-        "category_url": "Area%2C%20ethnic%2C%20cultural%2C%20gender%2C%20and%20group%20studies%20nec",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "jose-i.-juncosa_area,-ethnic,-cultural,-gender,-and-group-studies-nec",
-        "name": "Jose I. Juncosa",
-        "category": "Area, ethnic, cultural, gender, and group studies nec",
-        "category_url": "Area%2C%20ethnic%2C%20cultural%2C%20gender%2C%20and%20group%20studies%20nec",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "suzanne-l.-osman_sociology,-general",
-        "name": "Suzanne L. Osman",
-        "category": "Sociology, general",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Sociology%2C%20general",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy"
-        ],
-        "dois": [
-            "10.1177/10778012241234897"
-        ],
-        "department_affiliations": [
-            "Department of Psychology, Salisbury University, Salisbury, MD, USA"
-        ],
-        "doi_citation_map": {
-            "10.1177/10778012241234897": 0
-        }
-    },
-    {
-        "_id": "tieryn-r.-gingerich_sociology,-general",
-        "name": "Tieryn R. Gingerich",
-        "category": "Sociology, general",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Sociology%2C%20general",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy"
-        ],
-        "dois": [
-            "10.1177/10778012241234897"
-        ],
-        "department_affiliations": [
-            "Department of Psychology, Salisbury University, Salisbury, MD, USA"
-        ],
-        "doi_citation_map": {
-            "10.1177/10778012241234897": 0
-        }
-    },
-    {
-        "_id": "kyoung-rae-jung_sociology,-general",
-        "name": "Kyoung-Rae Jung",
-        "category": "Sociology, general",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Sociology%2C%20general",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Korean fathers\u2019 immigration experience"
-        ],
-        "dois": [
-            "10.1080/10911359.2024.2302976"
-        ],
-        "department_affiliations": [
-            "Department of Psychology, Salisbury University, Salisbury, Maryland, USA"
-        ],
-        "doi_citation_map": {
-            "10.1080/10911359.2024.2302976": 0
-        }
-    },
-    {
-        "_id": "sook-hyun-kim_sociology,-general",
-        "name": "Sook-Hyun Kim",
-        "category": "Sociology, general",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Sociology%2C%20general",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Korean fathers\u2019 immigration experience"
-        ],
-        "dois": [
-            "10.1080/10911359.2024.2302976"
-        ],
-        "department_affiliations": [
-            "School of Social Work, Salisbury University, Salisbury, Maryland, USA"
-        ],
-        "doi_citation_map": {
-            "10.1080/10911359.2024.2302976": 0
-        }
-    },
-    {
-        "_id": "david-z.-keifer_sociology,-general",
-        "name": "David Z. Keifer",
-        "category": "Sociology, general",
-        "category_url": "Sociology%2C%20general",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "jose-i.-juncosa_sociology,-general",
-        "name": "Jose I. Juncosa",
-        "category": "Sociology, general",
-        "category_url": "Sociology%2C%20general",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "suzanne-l.-osman_sociology,-demography,-and-population-studies-nec",
-        "name": "Suzanne L. Osman",
-        "category": "Sociology, demography, and population studies nec",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Sociology%2C%20demography%2C%20and%20population%20studies%20nec",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy"
-        ],
-        "dois": [
-            "10.1177/10778012241234897"
-        ],
-        "department_affiliations": [
-            "Department of Psychology, Salisbury University, Salisbury, MD, USA"
-        ],
-        "doi_citation_map": {
-            "10.1177/10778012241234897": 0
-        }
-    },
-    {
-        "_id": "tieryn-r.-gingerich_sociology,-demography,-and-population-studies-nec",
-        "name": "Tieryn R. Gingerich",
-        "category": "Sociology, demography, and population studies nec",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Sociology%2C%20demography%2C%20and%20population%20studies%20nec",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Incapacitated and/or Forcible Rape Experience Predicting College Women's Rape Victim Empathy"
-        ],
-        "dois": [
-            "10.1177/10778012241234897"
-        ],
-        "department_affiliations": [
-            "Department of Psychology, Salisbury University, Salisbury, MD, USA"
-        ],
-        "doi_citation_map": {
-            "10.1177/10778012241234897": 0
-        }
-    },
-    {
-        "_id": "kyoung-rae-jung_sociology,-demography,-and-population-studies-nec",
-        "name": "Kyoung-Rae Jung",
-        "category": "Sociology, demography, and population studies nec",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Sociology%2C%20demography%2C%20and%20population%20studies%20nec",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Korean fathers\u2019 immigration experience"
-        ],
-        "dois": [
-            "10.1080/10911359.2024.2302976"
-        ],
-        "department_affiliations": [
-            "Department of Psychology, Salisbury University, Salisbury, Maryland, USA"
-        ],
-        "doi_citation_map": {
-            "10.1080/10911359.2024.2302976": 0
-        }
-    },
-    {
-        "_id": "sook-hyun-kim_sociology,-demography,-and-population-studies-nec",
-        "name": "Sook-Hyun Kim",
-        "category": "Sociology, demography, and population studies nec",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Sociology%2C%20demography%2C%20and%20population%20studies%20nec",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Korean fathers\u2019 immigration experience"
-        ],
-        "dois": [
-            "10.1080/10911359.2024.2302976"
-        ],
-        "department_affiliations": [
-            "School of Social Work, Salisbury University, Salisbury, Maryland, USA"
-        ],
-        "doi_citation_map": {
-            "10.1080/10911359.2024.2302976": 0
-        }
-    },
-    {
-        "_id": "david-z.-keifer_sociology,-demography,-and-population-studies-nec",
-        "name": "David Z. Keifer",
-        "category": "Sociology, demography, and population studies nec",
-        "category_url": "Sociology%2C%20demography%2C%20and%20population%20studies%20nec",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "jose-i.-juncosa_sociology,-demography,-and-population-studies-nec",
-        "name": "Jose I. Juncosa",
-        "category": "Sociology, demography, and population studies nec",
-        "category_url": "Sociology%2C%20demography%2C%20and%20population%20studies%20nec",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "kyoung-rae-jung_ethnic-studies",
-        "name": "Kyoung-Rae Jung",
-        "category": "Ethnic studies",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ethnic%20studies",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Korean fathers\u2019 immigration experience"
-        ],
-        "dois": [
-            "10.1080/10911359.2024.2302976"
-        ],
-        "department_affiliations": [
-            "Department of Psychology, Salisbury University, Salisbury, Maryland, USA"
-        ],
-        "doi_citation_map": {
-            "10.1080/10911359.2024.2302976": 0
-        }
-    },
-    {
-        "_id": "sook-hyun-kim_ethnic-studies",
-        "name": "Sook-Hyun Kim",
-        "category": "Ethnic studies",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ethnic%20studies",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Korean fathers\u2019 immigration experience"
-        ],
-        "dois": [
-            "10.1080/10911359.2024.2302976"
-        ],
-        "department_affiliations": [
-            "School of Social Work, Salisbury University, Salisbury, Maryland, USA"
-        ],
-        "doi_citation_map": {
-            "10.1080/10911359.2024.2302976": 0
-        }
-    },
-    {
-        "_id": "david-z.-keifer_ethnic-studies",
-        "name": "David Z. Keifer",
-        "category": "Ethnic studies",
-        "category_url": "Ethnic%20studies",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "jose-i.-juncosa_ethnic-studies",
-        "name": "Jose I. Juncosa",
-        "category": "Ethnic studies",
-        "category_url": "Ethnic%20studies",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "kyoung-rae-jung_developmental-and-child-psychology",
-        "name": "Kyoung-Rae Jung",
-        "category": "Developmental and child psychology",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Developmental%20and%20child%20psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Korean fathers\u2019 immigration experience"
-        ],
-        "dois": [
-            "10.1080/10911359.2024.2302976"
-        ],
-        "department_affiliations": [
-            "Department of Psychology, Salisbury University, Salisbury, Maryland, USA"
-        ],
-        "doi_citation_map": {
-            "10.1080/10911359.2024.2302976": 0
-        }
-    },
-    {
-        "_id": "sook-hyun-kim_developmental-and-child-psychology",
-        "name": "Sook-Hyun Kim",
-        "category": "Developmental and child psychology",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Developmental%20and%20child%20psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Korean fathers\u2019 immigration experience"
-        ],
-        "dois": [
-            "10.1080/10911359.2024.2302976"
-        ],
-        "department_affiliations": [
-            "School of Social Work, Salisbury University, Salisbury, Maryland, USA"
-        ],
-        "doi_citation_map": {
-            "10.1080/10911359.2024.2302976": 0
-        }
-    },
-    {
-        "_id": "david-z.-keifer_developmental-and-child-psychology",
-        "name": "David Z. Keifer",
-        "category": "Developmental and child psychology",
-        "category_url": "Developmental%20and%20child%20psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "jose-i.-juncosa_developmental-and-child-psychology",
-        "name": "Jose I. Juncosa",
-        "category": "Developmental and child psychology",
-        "category_url": "Developmental%20and%20child%20psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "david-z.-keifer_physical-sciences",
-        "name": "David Z. Keifer",
-        "category": "Physical sciences",
-        "category_url": "Physical%20sciences",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "jose-i.-juncosa_physical-sciences",
-        "name": "Jose I. Juncosa",
-        "category": "Physical sciences",
-        "category_url": "Physical%20sciences",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "david-z.-keifer_education",
-        "name": "David Z. Keifer",
-        "category": "Education",
-        "category_url": "Education",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "jose-i.-juncosa_education",
-        "name": "Jose I. Juncosa",
-        "category": "Education",
-        "category_url": "Education",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "david-z.-keifer_chemistry",
-        "name": "David Z. Keifer",
-        "category": "Chemistry",
-        "category_url": "Physical%20sciences/Chemistry",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "jose-i.-juncosa_chemistry",
-        "name": "Jose I. Juncosa",
-        "category": "Chemistry",
-        "category_url": "Physical%20sciences/Chemistry",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "david-z.-keifer_education-research",
-        "name": "David Z. Keifer",
-        "category": "Education research",
-        "category_url": "Education/Education%20research",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "jose-i.-juncosa_education-research",
-        "name": "Jose I. Juncosa",
-        "category": "Education research",
-        "category_url": "Education/Education%20research",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "david-z.-keifer_teacher-education",
-        "name": "David Z. Keifer",
-        "category": "Teacher education",
-        "category_url": "Education/Teacher%20education",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "jose-i.-juncosa_teacher-education",
-        "name": "Jose I. Juncosa",
-        "category": "Teacher education",
-        "category_url": "Education/Teacher%20education",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "david-z.-keifer_physical-chemistry",
-        "name": "David Z. Keifer",
-        "category": "Physical chemistry",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physical%20chemistry",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "jose-i.-juncosa_physical-chemistry",
-        "name": "Jose I. Juncosa",
-        "category": "Physical chemistry",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physical%20chemistry",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "david-z.-keifer_theoretical-chemistry",
-        "name": "David Z. Keifer",
-        "category": "Theoretical chemistry",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Theoretical%20chemistry",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "jose-i.-juncosa_theoretical-chemistry",
-        "name": "Jose I. Juncosa",
-        "category": "Theoretical chemistry",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Theoretical%20chemistry",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "david-z.-keifer_analytical-chemistry",
-        "name": "David Z. Keifer",
-        "category": "Analytical chemistry",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Analytical%20chemistry",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "jose-i.-juncosa_analytical-chemistry",
-        "name": "Jose I. Juncosa",
-        "category": "Analytical chemistry",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Analytical%20chemistry",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "david-z.-keifer_curriculum-and-instruction",
-        "name": "David Z. Keifer",
-        "category": "Curriculum and instruction",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Curriculum%20and%20instruction",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "jose-i.-juncosa_curriculum-and-instruction",
-        "name": "Jose I. Juncosa",
-        "category": "Curriculum and instruction",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Curriculum%20and%20instruction",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "david-z.-keifer_educational/-instructional-technology-and-media-design",
-        "name": "David Z. Keifer",
-        "category": "Educational/ instructional technology and media design",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Educational/%20instructional%20technology%20and%20media%20design",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "jose-i.-juncosa_educational/-instructional-technology-and-media-design",
-        "name": "Jose I. Juncosa",
-        "category": "Educational/ instructional technology and media design",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Educational/%20instructional%20technology%20and%20media%20design",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "david-z.-keifer_stem-educational-methods",
-        "name": "David Z. Keifer",
-        "category": "STEM educational methods",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/STEM%20educational%20methods",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "jose-i.-juncosa_stem-educational-methods",
-        "name": "Jose I. Juncosa",
-        "category": "STEM educational methods",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/STEM%20educational%20methods",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "david-z.-keifer_teacher-education,-science-and-engineering",
-        "name": "David Z. Keifer",
-        "category": "Teacher education, science and engineering",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Teacher%20education%2C%20science%20and%20engineering",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
-        }
-    },
-    {
-        "_id": "jose-i.-juncosa_teacher-education,-science-and-engineering",
-        "name": "Jose I. Juncosa",
-        "category": "Teacher education, science and engineering",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Teacher%20education%2C%20science%20and%20engineering",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "A Mass Spectrometry Experiment on the Degrees of Freedom Effect"
-        ],
-        "dois": [
-            "10.1021/acs.jchemed.4c00708"
-        ],
-        "department_affiliations": [
-            "Department of Chemistry, Salisbury University, Salisbury, Maryland 21801, United States"
-        ],
-        "doi_citation_map": {
-            "10.1021/acs.jchemed.4c00708": 0
+            "10.1656/045.031.s1222": 0
         }
     }
 ]

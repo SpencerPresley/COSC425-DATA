@@ -48,12 +48,14 @@ class ClassifierFactory:
     def abstract_classifier_factory(
         self,
         doi_abstract_dict: Dict[str, str],
+        extra_context: dict | "None" = "None",
     ) -> AbstractClassifier:
         self.logger.info("Creating AbstractClassifier")
         classifier: AbstractClassifier = AbstractClassifier(
             taxonomy=self.taxonomy,
             doi_to_abstract_dict=doi_abstract_dict,
             api_key=self.ai_api_key,
+            extra_context=extra_context,
         )
         self.logger.info("AbstractClassifier created successfully")
         return classifier

@@ -219,12 +219,20 @@ class PipelineRunner:
                 article, [AttributeTypes.CROSSREF_DOI]
             )
             # Unpack the DOI from the dict returned by get_attributes
-            doi: str = attribute_results[AttributeTypes.CROSSREF_DOI]
+            doi = (
+                attribute_results[AttributeTypes.CROSSREF_DOI][1]
+                if attribute_results[AttributeTypes.CROSSREF_DOI][0]
+                else None
+            )
             # Only keep articles that have a DOI and aren't already in the database
-            if doi and doi not in existing_dois:
-                filtered_data.append(article)
+            if doi is not None:
+                if doi not in existing_dois:
+                    filtered_data.append(article)
+                else:
+                    already_existing_count += 1
             else:
-                already_existing_count += 1
+                self.logger.warning(f"Article with no DOI: {article}")
+                continue
 
         self.logger.info(f"Filtered out {already_existing_count} articles")
 
