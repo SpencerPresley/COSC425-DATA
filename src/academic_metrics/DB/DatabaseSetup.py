@@ -205,50 +205,114 @@ class DatabaseWrapper:
                 self.faculty_collection.insert_one(item)
                 self.logger.info(f"Inserted new faculty: {item['_id']}")
 
-    def update_faculty(self, existing_data, new_data):
-        if not set(existing_data.get("dois", [])).intersection(
-            set(new_data.get("dois", []))
-        ):
-            existing_data["total_citations"] += new_data["total_citations"]
-            existing_data["department_affiliations"].append(
-                new_data["department_affiliations"]
-            )
-            existing_data["dois"].append(new_data["dois"])
-            existing_data["titles"] = set(existing_data["titles"]).update(
-                new_data["titles"]
-            )
-            existing_data["categories"] = set(existing_data["categories"]).update(
-                new_data["categories"]
-            )
-            existing_data["top_level_categories"] = set(
-                existing_data["top_level_categories"]
-            ).update(new_data["top_level_categories"])
-            existing_data["mid_level_categories"] = set(
-                existing_data["mid_level_categories"]
-            ).update(new_data["mid_level_categories"])
-            existing_data["low_level_categories"] = set(
-                existing_data["low_level_categories"]
-            ).update(new_data["low_level_categories"])
-            existing_data["category_urls"] = set(existing_data["category_urls"]).update(
-                new_data["category_urls"]
-            )
-            existing_data["top_category_urls"] = set(
-                existing_data["top_category_urls"]
-            ).update(new_data["top_category_urls"])
-            existing_data["mid_category_urls"] = set(
-                existing_data["mid_category_urls"]
-            ).update(new_data["mid_category_urls"])
-            existing_data["low_category_urls"] = set(
-                existing_data["low_category_urls"]
-            ).update(new_data["low_category_urls"])
-            existing_data["themes"] = set(existing_data["themes"]).update(
-                new_data["themes"]
-            )
-            existing_data["journals"] = set(existing_data["journals"]).update(
-                new_data["journals"]
+    def update_faculty(
+        self, existing_data: dict[str, Any], new_data: dict[str, Any]
+    ) -> dict[str, Any]:
+        """Update existing faculty data with new data, handling None values and logging state."""
+        # Get DOI lists with None protection
+        existing_dois = existing_data.get("dois", []) or []
+        new_dois = new_data.get("dois", []) or []
+        self.logger.debug(f"DOIs - Existing: {existing_dois}, New: {new_dois}")
+
+        # Only update if there's no intersection between DOI lists
+        if not set(existing_dois).intersection(set(new_dois)):
+            self.logger.info(
+                f"No DOI intersection found for faculty {existing_data.get('_id')} - updating data"
             )
 
-        self.logger.info(f"Updated faculty data for: {existing_data['_id']}")
+            # Update numeric values
+            existing_data["total_citations"] = existing_data.get(
+                "total_citations", 0
+            ) + new_data.get("total_citations", 0)
+
+            # Update lists using set operations with None protection
+            existing_data["dois"] = list(set(existing_dois).union(new_dois))
+
+            # Handle department affiliations as list
+            existing_affiliations = (
+                existing_data.get("department_affiliations", []) or []
+            )
+            new_affiliations = new_data.get("department_affiliations", []) or []
+            existing_data["department_affiliations"] = list(
+                set(existing_affiliations).union(new_affiliations)
+            )
+
+            # Update all set-based fields with None protection
+            existing_data["titles"] = list(
+                set(existing_data.get("titles", []) or []).union(
+                    new_data.get("titles", []) or []
+                )
+            )
+
+            existing_data["categories"] = list(
+                set(existing_data.get("categories", []) or []).union(
+                    new_data.get("categories", []) or []
+                )
+            )
+
+            existing_data["top_level_categories"] = list(
+                set(existing_data.get("top_level_categories", []) or []).union(
+                    new_data.get("top_level_categories", []) or []
+                )
+            )
+
+            existing_data["mid_level_categories"] = list(
+                set(existing_data.get("mid_level_categories", []) or []).union(
+                    new_data.get("mid_level_categories", []) or []
+                )
+            )
+
+            existing_data["low_level_categories"] = list(
+                set(existing_data.get("low_level_categories", []) or []).union(
+                    new_data.get("low_level_categories", []) or []
+                )
+            )
+
+            existing_data["category_urls"] = list(
+                set(existing_data.get("category_urls", []) or []).union(
+                    new_data.get("category_urls", []) or []
+                )
+            )
+
+            existing_data["top_category_urls"] = list(
+                set(existing_data.get("top_category_urls", []) or []).union(
+                    new_data.get("top_category_urls", []) or []
+                )
+            )
+
+            existing_data["mid_category_urls"] = list(
+                set(existing_data.get("mid_category_urls", []) or []).union(
+                    new_data.get("mid_category_urls", []) or []
+                )
+            )
+
+            existing_data["low_category_urls"] = list(
+                set(existing_data.get("low_category_urls", []) or []).union(
+                    new_data.get("low_category_urls", []) or []
+                )
+            )
+
+            existing_data["themes"] = list(
+                set(existing_data.get("themes", []) or []).union(
+                    new_data.get("themes", []) or []
+                )
+            )
+
+            existing_data["journals"] = list(
+                set(existing_data.get("journals", []) or []).union(
+                    new_data.get("journals", []) or []
+                )
+            )
+
+            self.logger.debug(
+                f"Updated counts - Citations: {existing_data['total_citations']}, "
+                f"DOIs: {len(existing_data['dois'])}"
+            )
+        else:
+            self.logger.info(
+                f"DOI intersection found for faculty {existing_data.get('_id')} - skipping update"
+            )
+
         return existing_data
 
     def process(self, data, collection):
