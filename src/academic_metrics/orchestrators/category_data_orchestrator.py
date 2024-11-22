@@ -5,7 +5,10 @@ import logging
 import os
 from typing import TYPE_CHECKING, Dict, List, Union
 
-from academic_metrics.constants import LOG_DIR_PATH
+from academic_metrics.configs import (
+    configure_logging,
+    DEBUG,
+)
 from academic_metrics.dataclass_models import CategoryInfo, FacultyStats
 
 if TYPE_CHECKING:
@@ -109,23 +112,29 @@ class CategoryDataOrchestrator:
             TypeError: If any of the processor or factory arguments are of incorrect type.
         """
         # Set up logger
-        self.log_file_path: str = os.path.join(
-            LOG_DIR_PATH, "category_data_orchestrator.log"
+        # self.log_file_path: str = os.path.join(
+        #     LOG_DIR_PATH, "category_data_orchestrator.log"
+        # )
+
+        # self.logger: logging.Logger = logging.getLogger(__name__)
+        # self.logger.handlers = []
+        # self.logger.setLevel(logging.DEBUG)
+
+        # # Add handler if none exists
+        # if not self.logger.handlers:
+        #     handler = logging.FileHandler(self.log_file_path)
+        #     self.logger.setLevel(logging.DEBUG)
+        #     formatter = logging.Formatter(
+        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+        #     )
+        #     handler.setFormatter(formatter)
+        #     self.logger.addHandler(handler)
+
+        self.logger = configure_logging(
+            module_name=__name__,
+            log_file_name="category_data_orchestrator",
+            log_level=DEBUG,
         )
-
-        self.logger: logging.Logger = logging.getLogger(__name__)
-        self.logger.handlers = []
-        self.logger.setLevel(logging.DEBUG)
-
-        # Add handler if none exists
-        if not self.logger.handlers:
-            handler = logging.FileHandler(self.log_file_path)
-            self.logger.setLevel(logging.DEBUG)
-            formatter = logging.Formatter(
-                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-            )
-            handler.setFormatter(formatter)
-            self.logger.addHandler(handler)
 
         self.data: List[Dict] = data
         self.output_dir_path: str = output_dir_path
@@ -597,7 +606,80 @@ class CategoryDataOrchestrator:
 
 
 if __name__ == "__main__":
-    raise NotImplementedError(
-        "DEPRECATION NOTICE: Running CategoryDataOrchestrator directly is no longer supported. "
-        "Please use the PipelineRunner class from academic_metrics/runners/pipeline.py as that is the new entry point. "
+    # raise NotImplementedError(
+    #     "DEPRECATION NOTICE: Running CategoryDataOrchestrator directly is no longer supported. "
+    #     "Please use the PipelineRunner class from academic_metrics/runners/pipeline.py as that is the new entry point. "
+    # )
+
+    import tempfile
+
+    # Create a test CategoryInfo object
+    test_category = CategoryInfo(
+        _id="Psychology",
+        url="Psychology",
+        category_name="Psychology",
+        faculty_count=6,
+        department_count=4,
+        article_count=3,
+        faculty={"Sook-Hyun Kim", "Jose I. Juncosa", "Suzanne L. Osman"},
+        departments={
+            "Department of Psychology, Salisbury University, Salisbury, MD, USA"
+        },
+        titles={"Korean fathers' immigration experience"},
+        tc_count=0,
+        citation_average=0.0,
+        doi_list={"10.1177/10778012241234897"},
+        themes={"Parenting Challenges", "Cultural Identity"},
     )
+
+    # Create the input dictionary format
+    category_data = {"Psychology": test_category}
+
+    # Create a minimal orchestrator instance
+    with tempfile.TemporaryDirectory() as temp_dir:
+        orchestrator = CategoryDataOrchestrator(
+            data=[],
+            output_dir_path=temp_dir,
+            category_processor=None,
+            faculty_postprocessor=None,
+            strategy_factory=None,
+            dataclass_factory=None,
+            warning_manager=None,
+            utilities=None,
+        )
+
+        # Test the serialization
+        output_path = os.path.join(temp_dir, "test_categories.json")
+        print("\nTesting category serialization:")
+        print(f"Input category data: {category_data}")
+
+        orchestrator._serialize_and_save_category_data(
+            output_path=output_path, category_data=category_data
+        )
+
+        print("\nAfter serialization:")
+        print(
+            f"Has final_category_data: {hasattr(orchestrator, 'final_category_data')}"
+        )
+        if hasattr(orchestrator, "final_category_data"):
+            print(
+                f"Length of final_category_data: {len(orchestrator.final_category_data)}"
+            )
+            print(f"Content: {orchestrator.final_category_data}")
+
+        # Test retrieval
+        try:
+            retrieved_data = orchestrator.get_final_category_data()
+            print("\nSuccessfully retrieved data:")
+            print(f"Length: {len(retrieved_data)}")
+            print(f"Content: {retrieved_data}")
+
+            # Also check the JSON file
+            print("\nJSON file content:")
+            with open(output_path, "r") as f:
+                json_content = json.load(f)
+                print(f"JSON length: {len(json_content)}")
+                print(f"JSON content: {json_content}")
+
+        except ValueError as e:
+            print(f"\nError retrieving data: {e}")

@@ -29,6 +29,7 @@ from academic_metrics.utils import (
     Utilities,
     WarningManager,
 )
+from academic_metrics.configs import configure_logging, DEBUG
 
 
 class SaveOfflineKwargs(TypedDict):
@@ -169,7 +170,9 @@ class PipelineRunner:
         self.logger.info("PipelineRunner initialized successfully")
 
     def run_pipeline(
-        self, save_offline_kwargs: SaveOfflineKwargs = SAVE_OFFLINE_KWARGS
+        self,
+        save_offline_kwargs: SaveOfflineKwargs = SAVE_OFFLINE_KWARGS,
+        test_filtering: bool | None = False,
     ):
         """Execute the main data processing pipeline.
 
@@ -237,6 +240,13 @@ class PipelineRunner:
         self.logger.info(f"Filtered out {already_existing_count} articles")
 
         data: List[Dict[str, Any]] = filtered_data
+        if test_filtering:
+            print(f"\n\nFiltered out {already_existing_count} articles\n\n")
+            print(
+                f"\n\nFILTERED DATA VAR CONTENTS:\n{json.dumps(filtered_data, indent=4)}\n\n"
+            )
+            print(f"\n\nDATA VAR CONTENTS:\n{data}\n\n")
+            return
 
         self.logger.info(f"\n\nDATA: {data}\n\n")
         self.logger.info("=" * 80)
@@ -506,7 +516,7 @@ class PipelineRunner:
         """
         if "scraper" not in kwargs:
             kwargs["scraper"] = self.scraper if self.scraper else self._create_scraper()
-        return CrossrefWrapper(**kwargs)
+        return CrossrefWrapper(run_scraper=False, **kwargs)
 
     def _create_category_processor(self) -> CategoryProcessor:
         """Create a new CategoryProcessor for processing publication categories.
@@ -569,16 +579,49 @@ class PipelineRunner:
 
 
 if __name__ == "__main__":
+    import argparse
     from dotenv import load_dotenv
 
     load_dotenv()
     ai_api_key = os.getenv("OPENAI_API_KEY")
-    mongodb_url = os.getenv("MONGODB_URL")
-    pipeline_runner = PipelineRunner(
-        ai_api_key=ai_api_key,
-        crossref_affiliation="Salisbury University",
-        data_from_year=2017,
-        data_to_year=2024,
-        mongodb_url=mongodb_url,
+
+    # Create argument parser
+    parser = argparse.ArgumentParser(description="Run the academic metrics pipeline")
+    parser.add_argument(
+        "--test-run", action="store_true", help="Run in test mode using local MongoDB"
     )
-    pipeline_runner.run_pipeline()
+
+    args = parser.parse_args()
+
+    # Configure logging
+    logger = configure_logging(__name__, log_level=logging.DEBUG)
+
+    if args.test_run:
+        # Load local mongodb url
+        logger.info("Running in test mode using local MongoDB...")
+        mongodb_url = os.getenv("LOCAL_MONGODB_URL")
+        pipeline = PipelineRunner(
+            ai_api_key=ai_api_key,
+            crossref_affiliation="Salisbury University",
+            data_from_year=2024,
+            data_to_year=2024,
+            mongodb_url=mongodb_url,
+        )
+
+        # Execute test run
+        pipeline.test_run()
+
+    else:
+        # Normal pipeline execution
+        logger.info(f"Running in production mode using Live MongoDB URL")
+        mongodb_url = os.getenv("MONGODB_URL")
+        pipeline_runner = PipelineRunner(
+            ai_api_key=ai_api_key,
+            crossref_affiliation="Salisbury University",
+            data_from_year=2024,
+            data_to_year=2024,
+            mongodb_url=mongodb_url,
+        )
+
+        # Execute pipeline
+        pipeline_runner.run_pipeline(test_filtering=True)

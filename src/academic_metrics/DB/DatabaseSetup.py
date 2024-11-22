@@ -9,10 +9,15 @@ from pymongo.collection import Collection
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 
-# Setup logging
-logging.basicConfig(
-    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+from academic_metrics.configs import (
+    configure_logging,
+    DEBUG,
 )
+
+# Setup logging
+# logging.basicConfig(
+#     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+# )
 
 
 class DatabaseWrapper:
@@ -24,6 +29,14 @@ class DatabaseWrapper:
         """
         Initialize the DatabaseWrapper with database name, collection name, and MongoDB URL.
         """
+        # self.logger = logging.getLogger(__name__)
+
+        self.logger = configure_logging(
+            module_name=__name__,
+            log_file_name="database_setup",
+            log_level=DEBUG,
+        )
+
         if not mongo_url:
             print("Url error")
             return
@@ -42,18 +55,18 @@ class DatabaseWrapper:
         """
         try:
             self.client.admin.command("ping")
-            logging.info(
+            self.logger.info(
                 "Pinged your deployment. You successfully connected to MongoDB!"
             )
         except Exception as e:
-            logging.error(f"Connection error: {e}")
+            self.logger.error(f"Connection error: {e}")
 
     def get_dois(self):
         articles = self.article_collection.find({})
         doi_list = []
         for article in articles:
             doi_list.append(article["_id"])
-        logging.info(f"Retrieved DOIs: {doi_list}")
+        self.logger.info(f"Retrieved DOIs: {doi_list}")
         return doi_list
 
     def get_all_data(self):
@@ -61,7 +74,7 @@ class DatabaseWrapper:
         categories = self.category_collection_collection.find({})
         faculty = self.faculty_collection.find({})
 
-        logging.info("Retrieved all data from collections.")
+        self.logger.info("Retrieved all data from collections.")
         return [articles, categories, faculty]
 
     def insert_categories(self, category_data: List[Dict[str, Any]]):
@@ -69,6 +82,8 @@ class DatabaseWrapper:
         Insert multiple categories into the collection.
         If a category already exists, add the numbers and extend the lists.
         """
+        if not category_data:
+            self.logger.error("Category data is empty or None")
         for item in category_data:
             existing_data = self.category_collection.find_one({"_id": item["_id"]})
             if existing_data:
@@ -76,43 +91,89 @@ class DatabaseWrapper:
                 self.category_collection.update_one(
                     {"_id": item["_id"]}, {"$set": new_item}
                 )
-                logging.info(f"Updated category: {item['_id']}")
+                self.logger.info(f"Updated category: {item['_id']}")
             else:
                 self.category_collection.insert_one(item)
-                logging.info(f"Inserted new category: {item['_id']}")
+                self.logger.info(f"Inserted new category: {item['_id']}")
 
-    def update_category(self, existing_data, new_data):
-        if not set(existing_data.get("doi_list", [])).intersection(
-            set(new_data.get("doi_list", []))
-        ):
-            scaled_averages = (
-                len(existing_data.get("doi_list", []))
-                * existing_data["citation_average"]
-                + len(new_data.get("doi_list", [])) * new_data["citation_average"]
+    def update_category(
+        self, existing_data: dict[str, Any], new_data: dict[str, Any]
+    ) -> dict[str, Any]:
+        """Update existing category data with new data, handling None values and logging state."""
+        # ! THESE HAVE TO BE UNION NOT UPDATE
+        # ! ALSO USING .GET() SO IT DOESN'T THROW AN ERROR IF THE KEY DOESN'T EXIST
+        # ! NOW DOING LIST(SET()) TO CONVERT TO LIST
+        # Get DOI lists with None protection
+        existing_dois = existing_data.get("doi_list", []) or []
+        new_dois = new_data.get("doi_list", []) or []
+        self.logger.debug(f"DOIs - Existing: {existing_dois}, New: {new_dois}")
+
+        # Only update if there's no intersection between DOI lists
+        if not set(existing_dois).intersection(set(new_dois)):
+            self.logger.info(
+                f"No DOI intersection found for category {existing_data.get('_id')} - updating data"
             )
-            new_average = scaled_averages / (
-                len(existing_data.get("doi_list", []))
-                + len(new_data.get("doi_list", []))
-            )
+
+            # Calculate new citation average
+            scaled_averages = len(existing_dois) * existing_data.get(
+                "citation_average", 0
+            ) + len(new_dois) * new_data.get("citation_average", 0)
+            new_average = scaled_averages / (len(existing_dois) + len(new_dois))
             existing_data["citation_average"] = new_average
-            existing_data["faculty_count"] += new_data["faculty_count"]
-            existing_data["department_count"] += new_data["department_count"]
-            existing_data["article_count"] += new_data["article_count"]
-            existing_data["tc_count"] += new_data["tc_count"]
-            existing_data["doi_list"].extend(new_data["doi_list"])
-            existing_data["themes"] = set(existing_data["themes"]).update(
-                new_data["themes"]
+            self.logger.debug(f"Updated citation average to: {new_average}")
+
+            # Update numeric counts
+            existing_data["faculty_count"] = existing_data.get(
+                "faculty_count", 0
+            ) + new_data.get("faculty_count", 0)
+            existing_data["department_count"] = existing_data.get(
+                "department_count", 0
+            ) + new_data.get("department_count", 0)
+            existing_data["article_count"] = existing_data.get(
+                "article_count", 0
+            ) + new_data.get("article_count", 0)
+            existing_data["tc_count"] = existing_data.get("tc_count", 0) + new_data.get(
+                "tc_count", 0
             )
-            existing_data["faculty"] = set(existing_data["faculty"]).update(
-                new_data["faculty"]
+
+            # Update lists using set operations with None protection
+            existing_data["doi_list"] = list(set(existing_dois).union(new_dois))
+
+            existing_data["themes"] = list(
+                set(existing_data.get("themes", []) or []).union(
+                    new_data.get("themes", []) or []
+                )
             )
-            existing_data["departments"] = set(existing_data["departments"]).update(
-                new_data["departments"]
+
+            existing_data["faculty"] = list(
+                set(existing_data.get("faculty", []) or []).union(
+                    new_data.get("faculty", []) or []
+                )
             )
-            existing_data["titles"] = set(existing_data["titles"]).update(
-                new_data["titles"]
+
+            existing_data["departments"] = list(
+                set(existing_data.get("departments", []) or []).union(
+                    new_data.get("departments", []) or []
+                )
             )
-        logging.info(f"Updated category data for: {existing_data['_id']}")
+
+            existing_data["titles"] = list(
+                set(existing_data.get("titles", []) or []).union(
+                    new_data.get("titles", []) or []
+                )
+            )
+
+            self.logger.debug(
+                f"Updated counts - Faculty: {existing_data['faculty_count']}, "
+                f"Departments: {existing_data['department_count']}, "
+                f"Articles: {existing_data['article_count']}, "
+                f"TC: {existing_data['tc_count']}"
+            )
+        else:
+            self.logger.info(
+                f"DOI intersection found for category {existing_data.get('_id')} - skipping update"
+            )
+
         return existing_data
 
     def insert_articles(self, article_data: List[Dict[str, Any]]):
@@ -123,9 +184,9 @@ class DatabaseWrapper:
         for item in article_data:
             try:
                 self.article_collection.insert_one(item)
-                logging.info(f"Inserted new articles: {item['_id']}")
+                self.logger.info(f"Inserted new articles: {item['_id']}")
             except Exception as e:
-                logging.info(f"Duplicate content not adding {e}")
+                self.logger.info(f"Duplicate content not adding {e}")
 
     def insert_faculty(self, faculty_data: List[Dict[str, Any]]):
         """
@@ -139,10 +200,10 @@ class DatabaseWrapper:
                 self.faculty_collection.update_one(
                     {"_id": item["_id"]}, {"$set": new_item}
                 )
-                logging.info(f"Updated faculty: {item['_id']}")
+                self.logger.info(f"Updated faculty: {item['_id']}")
             else:
                 self.faculty_collection.insert_one(item)
-                logging.info(f"Inserted new faculty: {item['_id']}")
+                self.logger.info(f"Inserted new faculty: {item['_id']}")
 
     def update_faculty(self, existing_data, new_data):
         if not set(existing_data.get("dois", [])).intersection(
@@ -187,7 +248,7 @@ class DatabaseWrapper:
                 new_data["journals"]
             )
 
-        logging.info(f"Updated faculty data for: {existing_data['_id']}")
+        self.logger.info(f"Updated faculty data for: {existing_data['_id']}")
         return existing_data
 
     def process(self, data, collection):
@@ -207,14 +268,14 @@ class DatabaseWrapper:
         self.category_collection.delete_many({})
         self.article_collection.delete_many({})
         self.faculty_collection.delete_many({})
-        logging.info("Cleared the entire collection")
+        self.logger.info("Cleared the entire collection")
 
     def close_connection(self):
         """
         Close the connection to the MongoDB server.
         """
         self.client.close()
-        logging.info("Connection closed")
+        self.logger.info("Connection closed")
 
 
 if __name__ == "__main__":

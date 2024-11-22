@@ -13,7 +13,10 @@ from selenium.webdriver.firefox.service import Service
 from webdriver_manager.firefox import GeckoDriverManager
 
 from academic_metrics.ChainBuilder import ChainManager
-from academic_metrics.constants import LOG_DIR_PATH
+from academic_metrics.configs import (
+    configure_logging,
+    DEBUG,
+)
 
 # # Load environment variables
 # load_dotenv()
@@ -70,18 +73,24 @@ class Scraper:
         #         handler.setFormatter(formatter)
         #         self.logger.addHandler(handler)
 
-        self.log_file_path = os.path.join(LOG_DIR_PATH, "scraper.log")
+        # self.log_file_path = os.path.join(LOG_DIR_PATH, "scraper.log")
 
-        self.logger = logging.getLogger(__name__)
-        self.logger.handlers = []
-        self.logger.setLevel(logging.DEBUG)
+        # self.logger = logging.getLogger(__name__)
+        # self.logger.handlers = []
+        # self.logger.setLevel(logging.DEBUG)
 
-        console_handler = logging.FileHandler(self.log_file_path)
-        formatter = logging.Formatter(
-            "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+        # console_handler = logging.FileHandler(self.log_file_path)
+        # formatter = logging.Formatter(
+        #     "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+        # )
+        # console_handler.setFormatter(formatter)
+        # self.logger.addHandler(console_handler)
+
+        self.logger = configure_logging(
+            module_name=__name__,
+            log_file_name="scraper",
+            log_level=DEBUG,
         )
-        console_handler.setFormatter(formatter)
-        self.logger.addHandler(console_handler)
 
         self.logger.info("Initializing Scraper")
 
@@ -96,6 +105,11 @@ class Scraper:
         self.logger.info("Scraper initialized successfully")
 
         self.raw_results = []
+
+        self.page_load_timeout = 30  # seconds
+        self.script_timeout = 30  # seconds
+        self.max_retries = 3
+        self.retry_delay = 1  # seconds
 
     @staticmethod
     def configure_logging(log_file: str = "scraper.log") -> logging.Logger:
@@ -253,174 +267,189 @@ class Scraper:
             data = get_abstract('http://dx.doi.org/10.3197/096327117x14913285800742')
             print(data)
         """
+        driver = None
+        retry_count: int = 0
         if url:
-            try:
-                self.logger.debug(f"Fetching URL: {url}")
-                # Set up the WebDriver in headless mode
-                # options = Options()
-                # options.add_argument(
-                #     "--headless"
-                # )  # headless will prevent the browser instance from displaying
-                # options.add_argument("--disable-gpu")  # Disable GPU acceleration
-                # options.add_argument(
-                #     "--no-sandbox"
-                # )  # Bypass OS security model, required for running as root
-                # options.add_argument("--disable-dev-shm-usage")
-                # # Set up the WebDriver (for Firefox, replace with the path to your downloaded GeckoDriver)
-                # # service = Service("/home/usboot/Downloads/geckodriver")
-                # service = Service(GeckoDriverManager().install())
-                # driver = webdriver.Firefox(service=service, options=options)
-
-                self.logger.debug("Setting up driver")
+            while retry_count < self.max_retries:
                 try:
-                    driver = webdriver.Firefox(
-                        service=self.service, options=self.options
-                    )
-                except Exception as e:
-                    self.logger.error(f"Error setting up driver: {e}")
-                    return None
+                    self.logger.debug(f"Fetching URL: {url}")
+                    # Set up the WebDriver in headless mode
+                    # options = Options()
+                    # options.add_argument(
+                    #     "--headless"
+                    # )  # headless will prevent the browser instance from displaying
+                    # options.add_argument("--disable-gpu")  # Disable GPU acceleration
+                    # options.add_argument(
+                    #     "--no-sandbox"
+                    # )  # Bypass OS security model, required for running as root
+                    # options.add_argument("--disable-dev-shm-usage")
+                    # # Set up the WebDriver (for Firefox, replace with the path to your downloaded GeckoDriver)
+                    # # service = Service("/home/usboot/Downloads/geckodriver")
+                    # service = Service(GeckoDriverManager().install())
+                    # driver = webdriver.Firefox(service=service, options=options)
 
-                self.logger.debug("Getting page content")
-                try:
-                    driver.get(url)
-                    page_content = driver.page_source
-                except Exception as e:
-                    self.logger.error(f"Error getting page content: {e}")
-                    return None
-
-                self.logger.debug(f"Page content preview:\n\n{page_content[:50]}\n\n")
-
-                # self.logger.debug("Quitting driver")
-                # try:
-                #     driver.quit()
-                # except Exception as e:
-                #     self.logger.error(f"Error quitting driver: {e}")
-
-                self.logger.debug(f"Fetched page content for URL: {url}")
-
-                # Parse the HTML content using BeautifulSoup
-                try:
-                    self.logger.debug("Initializing BeautifulSoup parser")
-                    soup = BeautifulSoup(page_content, "html.parser")
-                    self.logger.debug(
-                        f"Page parsed. Found {len(soup.find_all())} total elements"
-                    )
-
-                    # Debug the structure
-                    self.logger.debug(f"Found {len(soup.find_all('meta'))} meta tags")
-                    self.logger.debug(f"Found {len(soup.find_all('p'))} paragraph tags")
-                    self.logger.debug(f"Found {len(soup.find_all('div'))} div tags")
-                except Exception as e:
-                    self.logger.error(f"Error parsing HTML content: {e}")
-                    return None
-
-                # Attempt to find the abstract in common locations
-                output_list = []
-
-                # 1. <meta> tags
-                try:
-                    meta_names = ["citation_abstract", "description", "og:description"]
-                    text = ""
-                    for name in meta_names:
-                        meta_tag = soup.find("meta", attrs={"name": name})
-                        if meta_tag and "content" in meta_tag.attrs:
-                            output_list.append(meta_tag["content"])
-                            text += meta_tag["content"]
-                    self.logger.info("Finished processing meta tags")
-                except Exception as e:
-                    self.logger.error(f"Error processing meta tags: {e}")
-
-                # 2. <p> tags
-                try:
-                    p_tags = soup.find_all("p")
-                    for p in p_tags:
-                        if "abstract" in p.get_text().lower():
-                            output_list.append(p.get_text())
-                    self.logger.info("Finished processing paragraph tags")
-                except Exception as e:
-                    self.logger.error(f"Error processing paragraph tags: {e}")
-
-                # 3. <div> tags with specific classes or IDs
-                try:
-                    div_classes = ["abstract", "article-abstract", "summary"]
-                    for class_name in div_classes:
-                        div_tags = soup.find_all("div", class_=class_name)
-                        for div_tag in div_tags:
-                            output_list.append(div_tag.get_text())
-                    self.logger.info("Finished processing div tags")
-                except Exception as e:
-                    self.logger.error(f"Error processing div tags: {e}")
-
-                # 4. <article> tags
-                try:
-                    article_tags = soup.find_all("article")
-                    for article_tag in article_tags:
-                        output_list.append(article_tag.get_text())
-                    self.logger.info("Finished processing article tags")
-                except Exception as e:
-                    self.logger.error(f"Error processing article tags: {e}")
-
-                # 5. <span> tags
-                try:
-                    span_tags = soup.find_all("span")
-                    for span_tag in span_tags:
-                        output_list.append(span_tag.get_text())
-                    self.logger.info("Finished processing span tags")
-                except Exception as e:
-                    self.logger.error(f"Error processing span tags: {e}")
-
-                # get the number of tokens scraped so far
-                try:
-                    total_tokens = 0
-                    for item in output_list:
-                        total_tokens += len(item)
-                    token_end = 100000 - total_tokens
-                    self.logger.info(
-                        f"Total tokens calculated: {total_tokens}, tokens remaining: {token_end}"
-                    )
-                except Exception as e:
-                    self.logger.error(f"Error calculating total tokens: {e}")
-
-                # Add the next 80000 tokens after the text we have collected
-                # ! Removed to save on OpenAI API input tokens
-                # output_list.append(
-                #     page_content[total_tokens : total_tokens + token_end]
-                # )
-
-                # ! Remove the log message for the above task
-                # self.logger.debug(
-                #     f"Added first 100,000 characters of page content for URL: {url}"
-                # )
-                results = self.setup_chain(output_list)
-                self.raw_results.append(results)
-                abstract = results["abstract"]
-                if abstract == "":
-                    # If no abstract is found, return None and extra context
-                    # Don't return extra context as sometimes an abstract is not found
-                    # as the url is to a book or some non-academic research article item
-                    return None, None
-                extra_context = results["extra_context"]
-                print(f"\n\nAbstract:\n{abstract}\n\n")
-                print(f"\n\nExtra context:\n{extra_context}\n\n")
-                self.logger.debug(f"\n\nAbstract:\n{abstract}\n\n")
-                self.logger.debug(
-                    f"Successfully processed abstract for DOI {url}\n{abstract}\n\n"
-                )
-
-                # Abstract and extra context found
-                return abstract, extra_context
-
-            except Exception as e:
-                self.logger.error(f"Error fetching {url}: {e}")
-                return None, None
-
-            finally:
-                if driver:
-                    self.logger.debug("Quitting driver")
+                    self.logger.debug("Setting up driver")
                     try:
-                        driver.quit()
+                        driver = webdriver.Firefox(
+                            service=self.service, options=self.options
+                        )
+                        driver.set_page_load_timeout(self.page_load_timeout)
+                        driver.set_script_timeout(self.script_timeout)
                     except Exception as e:
-                        self.logger.error(f"Error quitting driver: {e}")
+                        self.logger.error(f"Error setting up driver: {e}")
+                        return None
+
+                    self.logger.debug("Getting page content")
+                    try:
+                        driver.get(url)
+                        page_content = driver.page_source
+                    except Exception as e:
+                        self.logger.error(f"Error getting page content: {e}")
+                        return None
+
+                    self.logger.debug(
+                        f"Page content preview:\n\n{page_content[:50]}\n\n"
+                    )
+
+                    # self.logger.debug("Quitting driver")
+                    # try:
+                    #     driver.quit()
+                    # except Exception as e:
+                    #     self.logger.error(f"Error quitting driver: {e}")
+
+                    self.logger.debug(f"Fetched page content for URL: {url}")
+
+                    # Parse the HTML content using BeautifulSoup
+                    try:
+                        self.logger.debug("Initializing BeautifulSoup parser")
+                        soup = BeautifulSoup(page_content, "html.parser")
+                        self.logger.debug(
+                            f"Page parsed. Found {len(soup.find_all())} total elements"
+                        )
+
+                        # Debug the structure
+                        self.logger.debug(
+                            f"Found {len(soup.find_all('meta'))} meta tags"
+                        )
+                        self.logger.debug(
+                            f"Found {len(soup.find_all('p'))} paragraph tags"
+                        )
+                        self.logger.debug(f"Found {len(soup.find_all('div'))} div tags")
+                    except Exception as e:
+                        self.logger.error(f"Error parsing HTML content: {e}")
+                        return None
+
+                    # Attempt to find the abstract in common locations
+                    output_list = []
+
+                    # 1. <meta> tags
+                    try:
+                        meta_names = [
+                            "citation_abstract",
+                            "description",
+                            "og:description",
+                        ]
+                        text = ""
+                        for name in meta_names:
+                            meta_tag = soup.find("meta", attrs={"name": name})
+                            if meta_tag and "content" in meta_tag.attrs:
+                                output_list.append(meta_tag["content"])
+                                text += meta_tag["content"]
+                        self.logger.info("Finished processing meta tags")
+                    except Exception as e:
+                        self.logger.error(f"Error processing meta tags: {e}")
+
+                    # 2. <p> tags
+                    try:
+                        p_tags = soup.find_all("p")
+                        for p in p_tags:
+                            if "abstract" in p.get_text().lower():
+                                output_list.append(p.get_text())
+                        self.logger.info("Finished processing paragraph tags")
+                    except Exception as e:
+                        self.logger.error(f"Error processing paragraph tags: {e}")
+
+                    # 3. <div> tags with specific classes or IDs
+                    try:
+                        div_classes = ["abstract", "article-abstract", "summary"]
+                        for class_name in div_classes:
+                            div_tags = soup.find_all("div", class_=class_name)
+                            for div_tag in div_tags:
+                                output_list.append(div_tag.get_text())
+                        self.logger.info("Finished processing div tags")
+                    except Exception as e:
+                        self.logger.error(f"Error processing div tags: {e}")
+
+                    # 4. <article> tags
+                    try:
+                        article_tags = soup.find_all("article")
+                        for article_tag in article_tags:
+                            output_list.append(article_tag.get_text())
+                        self.logger.info("Finished processing article tags")
+                    except Exception as e:
+                        self.logger.error(f"Error processing article tags: {e}")
+
+                    # 5. <span> tags
+                    try:
+                        span_tags = soup.find_all("span")
+                        for span_tag in span_tags:
+                            output_list.append(span_tag.get_text())
+                        self.logger.info("Finished processing span tags")
+                    except Exception as e:
+                        self.logger.error(f"Error processing span tags: {e}")
+
+                    # get the number of tokens scraped so far
+                    try:
+                        total_tokens = 0
+                        for item in output_list:
+                            total_tokens += len(item)
+                        token_end = 100000 - total_tokens
+                        self.logger.info(
+                            f"Total tokens calculated: {total_tokens}, tokens remaining: {token_end}"
+                        )
+                    except Exception as e:
+                        self.logger.error(f"Error calculating total tokens: {e}")
+
+                    # Add the next 80000 tokens after the text we have collected
+                    # ! Removed to save on OpenAI API input tokens
+                    # output_list.append(
+                    #     page_content[total_tokens : total_tokens + token_end]
+                    # )
+
+                    # ! Remove the log message for the above task
+                    # self.logger.debug(
+                    #     f"Added first 100,000 characters of page content for URL: {url}"
+                    # )
+                    results = self.setup_chain(output_list)
+                    self.raw_results.append(results)
+                    abstract = results["abstract"]
+                    if abstract == "":
+                        # If no abstract is found, return None and extra context
+                        # Don't return extra context as sometimes an abstract is not found
+                        # as the url is to a book or some non-academic research article item
+                        return None, None
+                    extra_context = results["extra_context"]
+                    print(f"\n\nAbstract:\n{abstract}\n\n")
+                    print(f"\n\nExtra context:\n{extra_context}\n\n")
+                    self.logger.debug(f"\n\nAbstract:\n{abstract}\n\n")
+                    self.logger.debug(
+                        f"Successfully processed abstract for DOI {url}\n{abstract}\n\n"
+                    )
+
+                    # Abstract and extra context found
+                    return abstract, extra_context
+
+                except Exception as e:
+                    self.logger.error(f"Error fetching {url}: {e}")
+                    return None, None
+
+                finally:
+                    if driver:
+                        self.logger.debug("Quitting driver")
+                        try:
+                            driver.quit()
+                        except Exception as e:
+                            self.logger.error(f"Error quitting driver: {e}")
         return None, None
 
     def save_raw_results(self):

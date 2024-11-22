@@ -4,7 +4,10 @@ import random
 from dataclasses import dataclass, field
 from typing import Any
 
-from academic_metrics.constants import LOG_DIR_PATH
+from academic_metrics.configs import (
+    configure_logging,
+    DEBUG,
+)
 
 
 class FacultyPostprocessor:
@@ -46,18 +49,24 @@ class FacultyPostprocessor:
 
     def __init__(self):
         # Set up logger
-        self.log_file_path = os.path.join(LOG_DIR_PATH, "faculty_set_postprocessor.log")
-        self.logger = logging.getLogger(__name__)
-        self.logger.handlers = []
-        self.logger.setLevel(logging.DEBUG)
+        # self.log_file_path = os.path.join(LOG_DIR_PATH, "faculty_set_postprocessor.log")
+        # self.logger = logging.getLogger(__name__)
+        # self.logger.handlers = []
+        # self.logger.setLevel(logging.DEBUG)
 
-        if not self.logger.handlers:
-            handler = logging.FileHandler(self.log_file_path)
-            formatter = logging.Formatter(
-                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-            )
-            handler.setFormatter(formatter)
-            self.logger.addHandler(handler)
+        # if not self.logger.handlers:
+        #     handler = logging.FileHandler(self.log_file_path)
+        #     formatter = logging.Formatter(
+        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+        #     )
+        #     handler.setFormatter(formatter)
+        #     self.logger.addHandler(handler)
+
+        self.logger = configure_logging(
+            module_name=__name__,
+            log_file_name="faculty_set_postprocessor",
+            log_level=DEBUG,
+        )
 
         self.temp_dict = {}
         self.faculty_occurence_dict = {}

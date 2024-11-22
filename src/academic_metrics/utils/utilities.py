@@ -5,7 +5,7 @@ import logging
 import os
 from typing import TYPE_CHECKING, Any, Dict, List, Tuple
 
-from academic_metrics.constants import LOG_DIR_PATH
+from academic_metrics.configs import configure_logging, DEBUG
 
 if TYPE_CHECKING:
     from academic_metrics.enums import AttributeTypes
@@ -47,21 +47,26 @@ class Utilities:
             warning_manager (WarningManager): An instance of the WarningManager class.
         """
         # Set up logger
-        self.log_file_path: str = os.path.join(LOG_DIR_PATH, "utilities.log")
-        self.logger: logging.Logger = logging.getLogger(__name__)
-        self.logger.setLevel(logging.DEBUG)
+        # self.log_file_path: str = os.path.join(LOG_DIR_PATH, "utilities.log")
+        # self.logger: logging.Logger = logging.getLogger(__name__)
+        # self.logger.setLevel(logging.DEBUG)
 
-        self.logger.handlers = []
+        # self.logger.handlers = []
 
-        # Add handler if none exists
-        if not self.logger.handlers:
-            handler: logging.FileHandler = logging.FileHandler(self.log_file_path)
-            handler.setLevel(logging.DEBUG)
-            formatter: logging.Formatter = logging.Formatter(
-                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-            )
-            handler.setFormatter(formatter)
-            self.logger.addHandler(handler)
+        # # Add handler if none exists
+        # if not self.logger.handlers:
+        #     handler: logging.FileHandler = logging.FileHandler(self.log_file_path)
+        #     handler.setLevel(logging.DEBUG)
+        #     formatter: logging.Formatter = logging.Formatter(
+        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+        #     )
+        #     handler.setFormatter(formatter)
+        #     self.logger.addHandler(handler)
+        self.logger = configure_logging(
+            module_name=__name__,
+            log_file_name="utilities",
+            log_level=DEBUG,
+        )
 
         self.strategy_factory: StrategyFactory = strategy_factory
         self.warning_manager: WarningManager = warning_manager

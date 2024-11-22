@@ -3,6 +3,8 @@ import os
 import warnings
 from typing import List
 
+from academic_metrics.configs import configure_logging, DEBUG
+
 
 class CustomWarning(Warning):
     """
@@ -88,20 +90,25 @@ class WarningManager:
             This method initializes the WarningManager class.
         """
         # Set up logger
-        current_dir: str = os.path.dirname(os.path.abspath(__file__))
-        log_file_path: str = os.path.join(current_dir, "warning_manager.log")
-        self.logger: logging.Logger = logging.getLogger(__name__)
-        self.logger.setLevel(logging.DEBUG)
+        # current_dir: str = os.path.dirname(os.path.abspath(__file__))
+        # log_file_path: str = os.path.join(current_dir, "warning_manager.log")
+        # self.logger: logging.Logger = logging.getLogger(__name__)
+        # self.logger.setLevel(logging.DEBUG)
 
-        # Add handler if none exists
-        if not self.logger.handlers:
-            handler: logging.FileHandler = logging.FileHandler(log_file_path)
-            handler.setLevel(logging.DEBUG)
-            formatter: logging.Formatter = logging.Formatter(
-                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-            )
-            handler.setFormatter(formatter)
-            self.logger.addHandler(handler)
+        # # Add handler if none exists
+        # if not self.logger.handlers:
+        #     handler: logging.FileHandler = logging.FileHandler(log_file_path)
+        #     handler.setLevel(logging.DEBUG)
+        #     formatter: logging.Formatter = logging.Formatter(
+        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+        #     )
+        #     handler.setFormatter(formatter)
+        #     self.logger.addHandler(handler)
+        self.logger = configure_logging(
+            module_name=__name__,
+            log_file_name="warning_manager",
+            log_level=DEBUG,
+        )
 
         self.warning_count: int = 0
         self.warnings: List[CustomWarning] = []

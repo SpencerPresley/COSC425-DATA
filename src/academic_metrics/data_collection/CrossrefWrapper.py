@@ -5,14 +5,17 @@ import json
 import logging
 import os
 import time
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, Self, Any, Union, List, Dict
 
 import aiohttp
 
+from academic_metrics.configs import (
+    configure_logging,
+    DEBUG,
+)
+
 if TYPE_CHECKING:
     from .scraper import Scraper
-
-from academic_metrics.constants import LOG_DIR_PATH
 
 
 class CrossrefWrapper:
@@ -35,12 +38,13 @@ class CrossrefWrapper:
         self,
         *,
         scraper: Scraper,
-        base_url: str = "https://api.crossref.org/works",
-        affiliation: str = "Salisbury%20University",
-        from_year: int = 2017,
-        to_year: int = 2024,
+        base_url: str | None = "https://api.crossref.org/works",
+        affiliation: str | None = "Salisbury%20University",
+        from_year: int | None = 2017,
+        to_year: int | None = 2024,
         test_run: bool | None = False,
-    ):
+        run_scraper: bool | None = True,
+    ) -> Self:
         """
         Initializes the CrossrefWrapper with the given parameters.
 
@@ -52,20 +56,27 @@ class CrossrefWrapper:
             logger (logging.Logger, optional): Logger for logging messages. Defaults to None.
         """
         # Set up logger
-        self.log_file_path = os.path.join(LOG_DIR_PATH, "crossref_wrapper.log")
-        self.logger = logging.getLogger(__name__)
-        self.logger.handlers = []
-        self.logger.setLevel(logging.DEBUG)
+        # self.log_file_path = os.path.join(LOG_DIR_PATH, "crossref_wrapper.log")
+        # self.logger = logging.getLogger(__name__)
+        # self.logger.handlers = []
+        # self.logger.setLevel(logging.DEBUG)
 
-        if not self.logger.handlers:
-            handler = logging.FileHandler(self.log_file_path)
-            formatter = logging.Formatter(
-                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-            )
-            handler.setFormatter(formatter)
-            self.logger.addHandler(handler)
+        # if not self.logger.handlers:
+        #     handler = logging.FileHandler(self.log_file_path)
+        #     formatter = logging.Formatter(
+        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+        #     )
+        #     handler.setFormatter(formatter)
+        #     self.logger.addHandler(handler)
+
+        self.logger = configure_logging(
+            module_name=__name__,
+            log_file_name="crossref_wrapper",
+            log_level=DEBUG,
+        )
 
         self.scraper = scraper
+        self.run_scraper = run_scraper
 
         # Maximum number of concurrent requests allowed
         self.MAX_CONCURRENT_REQUESTS = 2  # Limit to 2 concurrent tasks at a time
@@ -86,7 +97,14 @@ class CrossrefWrapper:
 
         self.data = None
 
-    async def fetch_data(self, session, url, headers, retries, retry_delay):
+    async def fetch_data(
+        self,
+        session: aiohttp.ClientSession,
+        url: str,
+        headers: dict[str, Any],
+        retries: int,
+        retry_delay: int,
+    ) -> dict[str, Any] | None:
         """
         Fetches data from the given URL using aiohttp.
 
@@ -129,16 +147,16 @@ class CrossrefWrapper:
 
     def build_request_url(
         self,
-        base_url,
-        affiliation,
-        from_date,
-        to_date,
-        n_element,
-        sort_type,
-        sort_ord,
-        cursor,
-        has_abstract=False,
-    ):
+        base_url: str,
+        affiliation: str,
+        from_date: str,
+        to_date: str,
+        n_element: str,
+        sort_type: str,
+        sort_ord: str,
+        cursor: str,
+        has_abstract: bool | None = False,
+    ) -> str:
         """
         Builds the request URL for the Crossref API.
 
@@ -162,7 +180,13 @@ class CrossrefWrapper:
 
         return f"{base_url}?query.affiliation={affiliation}&filter=from-pub-date:{from_date},until-pub-date:{to_date}{ab_state}&sort={sort_type}&order={sort_ord}&rows={n_element}&cursor={cursor}"
 
-    def process_items(self, data, from_date, to_date, affiliation="salisbury univ"):
+    def process_items(
+        self,
+        data: dict[str, Any],
+        from_date: str,
+        to_date: str,
+        affiliation: str | None = "salisbury univ",
+    ) -> list[dict[str, Any]]:
         """
         Processes the items fetched from the Crossref API, filtering by date and affiliation.
 
@@ -201,7 +225,7 @@ class CrossrefWrapper:
         cursor: str = "*",
         retries: int = 5,
         retry_delay: int = 3,
-    ):
+    ) -> tuple[list[dict[str, Any]], str | None]:
         """
         Collects data for a range of years asynchronously.
 
@@ -291,7 +315,7 @@ class CrossrefWrapper:
         self.logger.info("Processing Complete")
         return (item_list, cursor)
 
-    async def fetch_data_for_multiple_years(self):
+    async def fetch_data_for_multiple_years(self) -> list[dict[str, Any]]:
         """
         Fetches data for multiple years asynchronously.
 
@@ -329,7 +353,7 @@ class CrossrefWrapper:
 
             return final_result
 
-    def run_afetch_yrange(self):
+    def run_afetch_yrange(self) -> Self:
         """
         Runs the asynchronous data fetch for multiple years.
 
@@ -345,7 +369,7 @@ class CrossrefWrapper:
         self.result = result_list
         return self
 
-    def serialize_to_json(self, output_file):
+    def serialize_to_json(self, output_file: str) -> None:
         """
         Serializes the fetched data to a JSON file.
 
@@ -355,7 +379,7 @@ class CrossrefWrapper:
         with open(output_file, "w") as file:
             json.dump(self.result, fp=file, indent=4)
 
-    def final_data_process(self):
+    def final_data_process(self) -> Self:
         """
         Processes the final data, filling in missing abstracts.
         """
@@ -437,13 +461,15 @@ class CrossrefWrapper:
         self.scraper.save_raw_results()
         return self
 
-    def get_result_list(self):
+    def get_result_list(self) -> list[dict[str, Any]]:
         """
         Get the result list
         """
         return self.result
 
-    def run_all_process(self, save_offline: bool = False):
+    def run_all_process(
+        self, save_offline: bool = False
+    ) -> Union[None, List[Dict[str, Any]]]:
         """
         Run all data fetching and processing
         """
@@ -453,7 +479,10 @@ class CrossrefWrapper:
                 .final_data_process()
                 .serialize_to_json("postProcess.json")
             )
-        return self.run_afetch_yrange().final_data_process().get_result_list()
+        elif not self.run_scraper:
+            return self.run_afetch_yrange().get_result_list()
+        else:
+            return self.run_afetch_yrange().final_data_process().get_result_list()
 
 
 if __name__ == "__main__":

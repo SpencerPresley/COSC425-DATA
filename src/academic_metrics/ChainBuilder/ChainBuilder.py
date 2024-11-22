@@ -36,7 +36,15 @@ from langchain_openai import ChatOpenAI
 from pydantic import BaseModel, ValidationError
 
 # ! THIS NEEDS TO BE REMOVED WHEN THIS IS MADE A STANDALONE PACKAGE
-from academic_metrics.constants import LOG_DIR_PATH
+from academic_metrics.configs import (
+    configure_logging,
+    LOG_TO_CONSOLE,
+    DEBUG,
+    INFO,
+    WARNING,
+    ERROR,
+    CRITICAL,
+)
 
 # Type that represents "Required first time, optional after"
 FirstCallRequired = TypeVar("FirsCallRequired", bound=Dict[str, Any])
@@ -81,8 +89,8 @@ class ChainBuilder:
         llm: Union[ChatOpenAI, ChatAnthropic, ChatGoogleGenerativeAI],
         parser: Optional[ParserType] = None,
         fallback_parser: Optional[FallbackParserType] = None,
-        logger: Optional[logging.Logger] = None,
-        log_to_console: bool = False,
+        logger: logging.Logger | None = None,
+        log_to_console: bool | None = LOG_TO_CONSOLE,
     ) -> None:
         """Initialize a ChainBuilder instance.
 
@@ -94,32 +102,38 @@ class ChainBuilder:
                 Defaults to None.
             logger (Optional[logging.Logger], optional): Custom logger instance.
                 Defaults to None.
-            log_to_console (bool, optional): Whether to log to console. Defaults to False.
+            log_to_console (bool, optional): Whether to log to console. Defaults to LOG_TO_CONSOLE.
         """
         # Convert string path to Path, respecting the input path
-        self.log_file_path: Path = LOG_DIR_PATH / "chain_builder.log"
+        # self.log_file_path: Path = LOG_DIR_PATH / "chain_builder.log"
 
-        # Set up logger
-        self.logger: logging.Logger = logger or logging.getLogger(__name__)
-        self.logger.setLevel(logging.INFO)
+        # # Set up logger
+        # self.logger: logging.Logger = logger or logging.getLogger(__name__)
+        # self.logger.setLevel(logging.INFO)
 
-        self.logger.handlers = []
+        # self.logger.handlers = []
 
-        # Add handler if none exists
-        if not self.logger.handlers:
-            handler: logging.FileHandler = logging.FileHandler(self.log_file_path)
-            formatter: logging.Formatter = logging.Formatter(
-                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-            )
-            handler.setFormatter(formatter)
-            self.logger.addHandler(handler)
+        # # Add handler if none exists
+        # if not self.logger.handlers:
+        #     handler: logging.FileHandler = logging.FileHandler(self.log_file_path)
+        #     formatter: logging.Formatter = logging.Formatter(
+        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+        #     )
+        #     handler.setFormatter(formatter)
+        #     self.logger.addHandler(handler)
 
-            console_handler: Optional[logging.StreamHandler] = (
-                logging.StreamHandler() if log_to_console else None
-            )
-            if console_handler:
-                console_handler.setFormatter(formatter)
-                self.logger.addHandler(console_handler)
+        #     console_handler: Optional[logging.StreamHandler] = (
+        #         logging.StreamHandler() if log_to_console else None
+        #     )
+        #     if console_handler:
+        #         console_handler.setFormatter(formatter)
+        #         self.logger.addHandler(console_handler)
+
+        self.logger = logger or configure_logging(
+            module_name=__name__,
+            log_file_name="chain_builder",
+            log_level=DEBUG,
+        )
 
         self.chat_prompt: ChatPromptTemplate = chat_prompt
         self.parser: Optional[ParserType] = parser

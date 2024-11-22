@@ -39,7 +39,11 @@ from academic_metrics.ai_prompts.theme_prompts import (
     THEME_RECOGNITION_SYSTEM_MESSAGE,
 )
 from academic_metrics.ChainBuilder import ChainManager
-from academic_metrics.constants import LOG_DIR_PATH
+from academic_metrics.configs import (
+    configure_logging,
+    DEBUG,
+    LOG_TO_CONSOLE,
+)
 
 if TYPE_CHECKING:
     from academic_metrics.utils.taxonomy_util import Taxonomy
@@ -154,7 +158,7 @@ class AbstractClassifier:
         taxonomy: Taxonomy,
         doi_to_abstract_dict: Dict[str, str],
         api_key: str,
-        log_to_console: bool = True,
+        log_to_console: bool | None = LOG_TO_CONSOLE,
         extra_context: dict | "None" = "None",
         pre_classification_model: str | None = "gpt-4o-mini",
         classification_model: str | None = "gpt-4o-mini",
@@ -162,27 +166,32 @@ class AbstractClassifier:
     ) -> None:
 
         # Set up logger
-        log_file_path: str = os.path.join(LOG_DIR_PATH, "abstract_classifier.log")
-        self.logger: logging.Logger = logging.getLogger(__name__)
-        self.logger.setLevel(logging.DEBUG)
-        self.logger.handlers = []
-        self.log_to_console: bool = log_to_console
+        # log_file_path: str = os.path.join(LOG_DIR_PATH, "abstract_classifier.log")
+        # self.logger: logging.Logger = logging.getLogger(__name__)
+        # self.logger.setLevel(logging.DEBUG)
+        # self.logger.handlers = []
+        # self.log_to_console: bool = log_to_console
 
-        # Add handler if none exists
-        if not self.logger.handlers:
-            handler: logging.FileHandler = logging.FileHandler(log_file_path)
-            handler.setLevel(logging.DEBUG)
-            formatter: logging.Formatter = logging.Formatter(
-                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-            )
-            console_handler: Optional[logging.StreamHandler] = (
-                logging.StreamHandler() if self.log_to_console else None
-            )
-            if console_handler:
-                console_handler.setFormatter(formatter)
-                self.logger.addHandler(console_handler)
-            handler.setFormatter(formatter)
-            self.logger.addHandler(handler)
+        # # Add handler if none exists
+        # if not self.logger.handlers:
+        #     handler: logging.FileHandler = logging.FileHandler(log_file_path)
+        #     handler.setLevel(logging.DEBUG)
+        #     formatter: logging.Formatter = logging.Formatter(
+        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+        #     )
+        #     console_handler: Optional[logging.StreamHandler] = (
+        #         logging.StreamHandler() if self.log_to_console else None
+        #     )
+        #     if console_handler:
+        #         console_handler.setFormatter(formatter)
+        #         self.logger.addHandler(console_handler)
+        #     handler.setFormatter(formatter)
+        #     self.logger.addHandler(handler)
+        self.logger = configure_logging(
+            module_name=__name__,
+            log_file_name="abstract_classifier",
+            log_level=DEBUG,
+        )
 
         self.logger.info("Initializing AbstractClassifier")
         self.logger.info("Performing setup")

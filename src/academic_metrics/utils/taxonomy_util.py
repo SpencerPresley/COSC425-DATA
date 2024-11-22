@@ -3,7 +3,7 @@ import logging
 import os
 from typing import Dict, List
 
-from academic_metrics.constants import LOG_DIR_PATH
+from academic_metrics.configs import configure_logging, DEBUG
 from academic_metrics.other.in_memory_taxonomy import TAXONOMY_AS_STRING
 
 # Alias for the taxonomy dictionary structure to be used for type hinting the taxonomy dictionary
@@ -12,22 +12,27 @@ TaxonomyDict = Dict[str, Dict[str, List[str]]]
 
 class Taxonomy:
     def __init__(self) -> None:
-        self.log_file_path: str = os.path.join(LOG_DIR_PATH, "taxonomy_util.log")
-        # Set up logger
-        self.logger: logging.Logger = logging.getLogger(__name__)
-        self.logger.setLevel(logging.DEBUG)
+        # self.log_file_path: str = os.path.join(LOG_DIR_PATH, "taxonomy_util.log")
+        # # Set up logger
+        # self.logger: logging.Logger = logging.getLogger(__name__)
+        # self.logger.setLevel(logging.DEBUG)
 
-        self.logger.handlers = []
+        # self.logger.handlers = []
 
-        # Add handler if none exists
-        if not self.logger.handlers:
-            handler: logging.FileHandler = logging.FileHandler(self.log_file_path)
-            handler.setLevel(logging.DEBUG)
-            formatter: logging.Formatter = logging.Formatter(
-                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-            )
-            handler.setFormatter(formatter)
-            self.logger.addHandler(handler)
+        # # Add handler if none exists
+        # if not self.logger.handlers:
+        #     handler: logging.FileHandler = logging.FileHandler(self.log_file_path)
+        #     handler.setLevel(logging.DEBUG)
+        #     formatter: logging.Formatter = logging.Formatter(
+        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+        #     )
+        #     handler.setFormatter(formatter)
+        #     self.logger.addHandler(handler)
+        self.logger = configure_logging(
+            module_name=__name__,
+            log_file_name="taxonomy_util",
+            log_level=DEBUG,
+        )
 
         self.logger.info("Initializing Taxonomy")
         self.taxonomy: TaxonomyDict = self._load_taxonomy_from_string(

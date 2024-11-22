@@ -3,7 +3,10 @@ import os
 from dataclasses import dataclass
 from typing import Dict, Type
 
-from academic_metrics.constants import LOG_DIR_PATH
+from academic_metrics.configs import (
+    configure_logging,
+    DEBUG,
+)
 from academic_metrics.enums import DataClassTypes
 
 
@@ -33,22 +36,28 @@ class DataClassFactory:
         Sets up both file and console handlers for logging factory operations.
         """
         # Set up logger
-        self.log_file_path = os.path.join(LOG_DIR_PATH, "dataclass_factory.log")
+        # self.log_file_path = os.path.join(LOG_DIR_PATH, "dataclass_factory.log")
 
-        self.logger = logging.getLogger(__name__)
-        self.logger.handlers = []
-        self.logger.setLevel(logging.DEBUG)
+        # self.logger = logging.getLogger(__name__)
+        # self.logger.handlers = []
+        # self.logger.setLevel(logging.DEBUG)
 
-        if not self.logger.handlers:
-            handler = logging.FileHandler(self.log_file_path)
-            formatter = logging.Formatter(
-                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-            )
-            handler.setFormatter(formatter)
-            self.logger.addHandler(handler)
-            console_handler = logging.StreamHandler()
-            console_handler.setFormatter(formatter)
-            self.logger.addHandler(console_handler)
+        # if not self.logger.handlers:
+        #     handler = logging.FileHandler(self.log_file_path)
+        #     formatter = logging.Formatter(
+        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+        #     )
+        #     handler.setFormatter(formatter)
+        #     self.logger.addHandler(handler)
+        #     console_handler = logging.StreamHandler()
+        #     console_handler.setFormatter(formatter)
+        #     self.logger.addHandler(console_handler)
+
+        self.logger = configure_logging(
+            module_name=__name__,
+            log_file_name="dataclass_factory",
+            log_level=DEBUG,
+        )
 
     @classmethod
     def register_dataclass(cls, dataclass_type: DataClassTypes):

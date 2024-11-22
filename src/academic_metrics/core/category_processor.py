@@ -5,6 +5,13 @@ import os
 from typing import TYPE_CHECKING, Any, Dict, List, Set, Tuple
 from urllib.parse import quote
 
+from academic_metrics.configs import (
+    configure_logging,
+    LOG_TO_CONSOLE,
+    DEBUG,
+)
+from academic_metrics.enums import AttributeTypes, DataClassTypes
+
 if TYPE_CHECKING:
     from academic_metrics.dataclass_models import (
         CategoryInfo,
@@ -17,9 +24,6 @@ if TYPE_CHECKING:
     from academic_metrics.utils import WarningManager
     from academic_metrics.factories import DataClassFactory
     from academic_metrics.utils.taxonomy_util import Taxonomy
-
-from academic_metrics.constants import LOG_DIR_PATH
-from academic_metrics.enums import AttributeTypes, DataClassTypes
 
 
 class CategoryProcessor:
@@ -71,7 +75,7 @@ class CategoryProcessor:
         dataclass_factory: DataClassFactory,
         warning_manager: WarningManager,
         taxonomy_util: Taxonomy,
-        log_to_console: bool = True,
+        log_to_console: bool | None = LOG_TO_CONSOLE,
     ) -> None:
         """Initialize the CategoryProcessor with required dependencies.
 
@@ -91,24 +95,30 @@ class CategoryProcessor:
             IOError: If log file cannot be created or accessed.
         """
         # Set up logger
-        self.log_file_path: str = os.path.join(LOG_DIR_PATH, "category_processor.log")
-        self.logger: logging.Logger = logging.getLogger(__name__)
-        self.logger.handlers = []
-        self.logger.setLevel(logging.DEBUG)
+        # self.log_file_path: str = os.path.join(LOG_DIR_PATH, "category_processor.log")
+        # self.logger: logging.Logger = logging.getLogger(__name__)
+        # self.logger.handlers = []
+        # self.logger.setLevel(logging.DEBUG)
 
-        if not self.logger.handlers:
-            handler: logging.FileHandler = logging.FileHandler(self.log_file_path)
-            formatter: logging.Formatter = logging.Formatter(
-                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-            )
-            handler.setFormatter(formatter)
-            self.logger.addHandler(handler)
-            console_handler: logging.StreamHandler | None = (
-                logging.StreamHandler() if log_to_console else None
-            )
-            if console_handler:
-                console_handler.setFormatter(formatter)
-                self.logger.addHandler(console_handler)
+        # if not self.logger.handlers:
+        #     handler: logging.FileHandler = logging.FileHandler(self.log_file_path)
+        #     formatter: logging.Formatter = logging.Formatter(
+        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+        #     )
+        #     handler.setFormatter(formatter)
+        #     self.logger.addHandler(handler)
+        #     console_handler: logging.StreamHandler | None = (
+        #         logging.StreamHandler() if log_to_console else None
+        #     )
+        #     if console_handler:
+        #         console_handler.setFormatter(formatter)
+        #         self.logger.addHandler(console_handler)
+
+        self.logger = configure_logging(
+            module_name=__name__,
+            log_file_name="category_processor",
+            log_level=DEBUG,
+        )
 
         self.utils: Utilities = utils
         self.warning_manager: WarningManager = warning_manager

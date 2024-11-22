@@ -6,7 +6,10 @@ from typing import TYPE_CHECKING, Dict, Optional
 if TYPE_CHECKING:
     from langchain.schema.runnable import Runnable
 
-from academic_metrics.constants import LOG_DIR_PATH
+from academic_metrics.configs import (
+    configure_logging,
+    DEBUG,
+)
 
 
 @dataclass
@@ -31,19 +34,24 @@ class APIKeyValidator:
         # Dict to track api keys which have been validated already
         # Key = api_key, Value = bool (True if valid, False if not)
         self._validated_already: Dict[str, bool] = {}
-        self.log_file_path: str = os.path.join(LOG_DIR_PATH, "api_key_validator.log")
-        self.logger: logging.Logger = logging.getLogger(__name__)
-        self.logger.setLevel(logging.DEBUG)
-        self.logger.handlers = []
+        # self.log_file_path: str = os.path.join(LOG_DIR_PATH, "api_key_validator.log")
+        # self.logger: logging.Logger = logging.getLogger(__name__)
+        # self.logger.setLevel(logging.DEBUG)
+        # self.logger.handlers = []
 
-        if not self.logger.handlers:
-            handler: logging.FileHandler = logging.FileHandler(self.log_file_path)
-            handler.setLevel(logging.DEBUG)
-            formatter: logging.Formatter = logging.Formatter(
-                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-            )
-            handler.setFormatter(formatter)
-            self.logger.addHandler(handler)
+        # if not self.logger.handlers:
+        #     handler: logging.FileHandler = logging.FileHandler(self.log_file_path)
+        #     handler.setLevel(logging.DEBUG)
+        #     formatter: logging.Formatter = logging.Formatter(
+        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+        #     )
+        #     handler.setFormatter(formatter)
+        #     self.logger.addHandler(handler)
+        self.logger = configure_logging(
+            module_name=__name__,
+            log_file_name="api_key_validator",
+            log_level=DEBUG,
+        )
 
     def _validate(self, api_key: str, model: Optional[str] = None) -> None:
         """Run validation tests for each service."""

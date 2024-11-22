@@ -29,4 +29,4 @@ from .factories import (
 )
 
 # Expose commonly used classes/functions at the package level
-from .utils import Taxonomy, Utilities, WarningManager, configure_logger
+from .utils import Taxonomy, Utilities, WarningManager
