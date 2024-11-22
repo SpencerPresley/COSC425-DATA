@@ -1,661 +1,1368 @@
 [
     {
-        "_id": "colin-johnson",
-        "name": "Colin Johnson",
+        "_id": "callista-brown",
+        "name": "Callista Brown",
         "total_citations": 0,
         "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
+            "Salisbury University Salisbury MD"
         ],
         "dois": [
-            "10.1249/01.mss.0000983480.29368.36"
+            "10.1096/fasebj.31.1_supplement.770.10"
         ],
         "titles": [
-            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness"
+            "High\u2010Throughput, Fluorescent Analysis of Reactive Oxygen Species in C. elegans after Knockdown of mrck\u20101"
         ],
         "categories": [
-            "Exercise science and kinesiology",
-            "Biological and biomedical sciences, other",
+            "Biochemistry, biophysics, and molecular biology",
+            "Medical clinical science",
+            "Molecular biology",
+            "Cell/ cellular biology and anatomy",
             "Biological and biomedical sciences",
-            "Exercise physiology and kinesiology",
-            "Physiology, oncology and cancer biology",
-            "Physiology, general",
-            "Biomedical sciences, general",
+            "Neurobiology and anatomy",
             "Health sciences, general",
+            "Biochemistry",
+            "Cell/ cellular and molecular biology",
+            "Developmental biology and embryology",
+            "Public health",
+            "Neuroscience",
+            "Neurobiology and neurosciences",
+            "Health sciences",
+            "Rehabilitation and therapeutic sciences",
             "Health sciences, other",
-            "Health sciences"
+            "Environmental health",
+            "Biochemistry and molecular biology",
+            "Public health, general"
         ],
         "top_level_categories": [
             "Biological and biomedical sciences",
             "Health sciences"
         ],
         "mid_level_categories": [
-            "Biological and biomedical sciences, other",
             "Health sciences, other",
-            "Physiology, oncology and cancer biology"
+            "Biochemistry, biophysics, and molecular biology",
+            "Neurobiology and neurosciences",
+            "Cell/ cellular biology and anatomy",
+            "Public health"
         ],
         "low_level_categories": [
-            "Exercise science and kinesiology",
-            "Biomedical sciences, general",
-            "Exercise physiology and kinesiology",
-            "Physiology, general",
-            "Health sciences, general"
+            "Rehabilitation and therapeutic sciences",
+            "Health sciences, general",
+            "Biochemistry",
+            "Environmental health",
+            "Cell/ cellular and molecular biology",
+            "Developmental biology and embryology",
+            "Medical clinical science",
+            "Biochemistry and molecular biology",
+            "Molecular biology",
+            "Public health, general",
+            "Neuroscience",
+            "Neurobiology and anatomy"
         ],
         "category_urls": [
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
-            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Public%20health%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Neurobiology%20and%20anatomy",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Molecular%20biology",
+            "Health%20sciences",
+            "Biological%20and%20biomedical%20sciences/Neurobiology%20and%20neurosciences",
+            "Health%20sciences/Health%20sciences%2C%20other",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biochemistry",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Developmental%20biology%20and%20embryology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Rehabilitation%20and%20therapeutic%20sciences",
             "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Medical%20clinical%20science",
+            "Biological%20and%20biomedical%20sciences/Biochemistry%2C%20biophysics%2C%20and%20molecular%20biology",
+            "Biological%20and%20biomedical%20sciences/Cell/%20cellular%20biology%20and%20anatomy",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Environmental%20health",
+            "Biological%20and%20biomedical%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Cell/%20cellular%20and%20molecular%20biology",
+            "Health%20sciences/Public%20health",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biochemistry%20and%20molecular%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Neuroscience"
+        ],
+        "top_category_urls": [
+            "Health%20sciences",
+            "Biological%20and%20biomedical%20sciences"
+        ],
+        "mid_category_urls": [
+            "Health%20sciences/Health%20sciences%2C%20other",
+            "Biological%20and%20biomedical%20sciences/Neurobiology%20and%20neurosciences",
+            "Biological%20and%20biomedical%20sciences/Biochemistry%2C%20biophysics%2C%20and%20molecular%20biology",
+            "Health%20sciences/Public%20health",
+            "Biological%20and%20biomedical%20sciences/Cell/%20cellular%20biology%20and%20anatomy"
+        ],
+        "low_category_urls": [
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Neuroscience",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Rehabilitation%20and%20therapeutic%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biochemistry",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Developmental%20biology%20and%20embryology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Public%20health%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biochemistry%20and%20molecular%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Neurobiology%20and%20anatomy",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Molecular%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Medical%20clinical%20science",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Cell/%20cellular%20and%20molecular%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Environmental%20health"
+        ],
+        "themes": [
+            "Oxidative stress and reactive oxygen species (ROS)",
+            "Model organisms in biomedical research",
+            "Role of MRCK-1 in cellular processes",
+            "Cellular defense mechanisms",
+            "Neurodegenerative diseases"
+        ],
+        "journals": [
+            "The FASEB Journal"
+        ]
+    },
+    {
+        "_id": "ruth-heying",
+        "name": "Ruth Heying",
+        "total_citations": 0,
+        "department_affiliations": [
+            "Salisbury University Salisbury MD"
+        ],
+        "dois": [
+            "10.1096/fasebj.31.1_supplement.770.10"
+        ],
+        "titles": [
+            "High\u2010Throughput, Fluorescent Analysis of Reactive Oxygen Species in C. elegans after Knockdown of mrck\u20101"
+        ],
+        "categories": [
+            "Biochemistry, biophysics, and molecular biology",
+            "Medical clinical science",
+            "Molecular biology",
+            "Cell/ cellular biology and anatomy",
+            "Biological and biomedical sciences",
+            "Neurobiology and anatomy",
+            "Health sciences, general",
+            "Biochemistry",
+            "Cell/ cellular and molecular biology",
+            "Developmental biology and embryology",
+            "Public health",
+            "Neuroscience",
+            "Neurobiology and neurosciences",
+            "Health sciences",
+            "Rehabilitation and therapeutic sciences",
+            "Health sciences, other",
+            "Environmental health",
+            "Biochemistry and molecular biology",
+            "Public health, general"
+        ],
+        "top_level_categories": [
+            "Biological and biomedical sciences",
+            "Health sciences"
+        ],
+        "mid_level_categories": [
+            "Health sciences, other",
+            "Biochemistry, biophysics, and molecular biology",
+            "Neurobiology and neurosciences",
+            "Cell/ cellular biology and anatomy",
+            "Public health"
+        ],
+        "low_level_categories": [
+            "Rehabilitation and therapeutic sciences",
+            "Health sciences, general",
+            "Biochemistry",
+            "Environmental health",
+            "Cell/ cellular and molecular biology",
+            "Developmental biology and embryology",
+            "Medical clinical science",
+            "Biochemistry and molecular biology",
+            "Molecular biology",
+            "Public health, general",
+            "Neuroscience",
+            "Neurobiology and anatomy"
+        ],
+        "category_urls": [
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Public%20health%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Neurobiology%20and%20anatomy",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Molecular%20biology",
+            "Health%20sciences",
+            "Biological%20and%20biomedical%20sciences/Neurobiology%20and%20neurosciences",
+            "Health%20sciences/Health%20sciences%2C%20other",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biochemistry",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Developmental%20biology%20and%20embryology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Rehabilitation%20and%20therapeutic%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Medical%20clinical%20science",
+            "Biological%20and%20biomedical%20sciences/Biochemistry%2C%20biophysics%2C%20and%20molecular%20biology",
+            "Biological%20and%20biomedical%20sciences/Cell/%20cellular%20biology%20and%20anatomy",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Environmental%20health",
+            "Biological%20and%20biomedical%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Cell/%20cellular%20and%20molecular%20biology",
+            "Health%20sciences/Public%20health",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biochemistry%20and%20molecular%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Neuroscience"
+        ],
+        "top_category_urls": [
+            "Health%20sciences",
+            "Biological%20and%20biomedical%20sciences"
+        ],
+        "mid_category_urls": [
+            "Health%20sciences/Health%20sciences%2C%20other",
+            "Biological%20and%20biomedical%20sciences/Neurobiology%20and%20neurosciences",
+            "Biological%20and%20biomedical%20sciences/Biochemistry%2C%20biophysics%2C%20and%20molecular%20biology",
+            "Health%20sciences/Public%20health",
+            "Biological%20and%20biomedical%20sciences/Cell/%20cellular%20biology%20and%20anatomy"
+        ],
+        "low_category_urls": [
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Neuroscience",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Rehabilitation%20and%20therapeutic%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biochemistry",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Developmental%20biology%20and%20embryology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Public%20health%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biochemistry%20and%20molecular%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Neurobiology%20and%20anatomy",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Molecular%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Medical%20clinical%20science",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Cell/%20cellular%20and%20molecular%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Environmental%20health"
+        ],
+        "themes": [
+            "Oxidative stress and reactive oxygen species (ROS)",
+            "Model organisms in biomedical research",
+            "Role of MRCK-1 in cellular processes",
+            "Cellular defense mechanisms",
+            "Neurodegenerative diseases"
+        ],
+        "journals": [
+            "The FASEB Journal"
+        ]
+    },
+    {
+        "_id": "matthew-russo",
+        "name": "Matthew Russo",
+        "total_citations": 0,
+        "department_affiliations": [
+            "Salisbury University Salisbury MD"
+        ],
+        "dois": [
+            "10.1096/fasebj.31.1_supplement.770.10"
+        ],
+        "titles": [
+            "High\u2010Throughput, Fluorescent Analysis of Reactive Oxygen Species in C. elegans after Knockdown of mrck\u20101"
+        ],
+        "categories": [
+            "Biochemistry, biophysics, and molecular biology",
+            "Medical clinical science",
+            "Molecular biology",
+            "Cell/ cellular biology and anatomy",
+            "Biological and biomedical sciences",
+            "Neurobiology and anatomy",
+            "Health sciences, general",
+            "Biochemistry",
+            "Cell/ cellular and molecular biology",
+            "Developmental biology and embryology",
+            "Public health",
+            "Neuroscience",
+            "Neurobiology and neurosciences",
+            "Health sciences",
+            "Rehabilitation and therapeutic sciences",
+            "Health sciences, other",
+            "Environmental health",
+            "Biochemistry and molecular biology",
+            "Public health, general"
+        ],
+        "top_level_categories": [
+            "Biological and biomedical sciences",
+            "Health sciences"
+        ],
+        "mid_level_categories": [
+            "Health sciences, other",
+            "Biochemistry, biophysics, and molecular biology",
+            "Neurobiology and neurosciences",
+            "Cell/ cellular biology and anatomy",
+            "Public health"
+        ],
+        "low_level_categories": [
+            "Rehabilitation and therapeutic sciences",
+            "Health sciences, general",
+            "Biochemistry",
+            "Environmental health",
+            "Cell/ cellular and molecular biology",
+            "Developmental biology and embryology",
+            "Medical clinical science",
+            "Biochemistry and molecular biology",
+            "Molecular biology",
+            "Public health, general",
+            "Neuroscience",
+            "Neurobiology and anatomy"
+        ],
+        "category_urls": [
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Public%20health%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Neurobiology%20and%20anatomy",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Molecular%20biology",
+            "Health%20sciences",
+            "Biological%20and%20biomedical%20sciences/Neurobiology%20and%20neurosciences",
+            "Health%20sciences/Health%20sciences%2C%20other",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biochemistry",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Developmental%20biology%20and%20embryology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Rehabilitation%20and%20therapeutic%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Medical%20clinical%20science",
+            "Biological%20and%20biomedical%20sciences/Biochemistry%2C%20biophysics%2C%20and%20molecular%20biology",
+            "Biological%20and%20biomedical%20sciences/Cell/%20cellular%20biology%20and%20anatomy",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Environmental%20health",
+            "Biological%20and%20biomedical%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Cell/%20cellular%20and%20molecular%20biology",
+            "Health%20sciences/Public%20health",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biochemistry%20and%20molecular%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Neuroscience"
+        ],
+        "top_category_urls": [
+            "Health%20sciences",
+            "Biological%20and%20biomedical%20sciences"
+        ],
+        "mid_category_urls": [
+            "Health%20sciences/Health%20sciences%2C%20other",
+            "Biological%20and%20biomedical%20sciences/Neurobiology%20and%20neurosciences",
+            "Biological%20and%20biomedical%20sciences/Biochemistry%2C%20biophysics%2C%20and%20molecular%20biology",
+            "Health%20sciences/Public%20health",
+            "Biological%20and%20biomedical%20sciences/Cell/%20cellular%20biology%20and%20anatomy"
+        ],
+        "low_category_urls": [
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Neuroscience",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Rehabilitation%20and%20therapeutic%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biochemistry",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Developmental%20biology%20and%20embryology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Public%20health%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biochemistry%20and%20molecular%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Neurobiology%20and%20anatomy",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Molecular%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Medical%20clinical%20science",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Cell/%20cellular%20and%20molecular%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Environmental%20health"
+        ],
+        "themes": [
+            "Oxidative stress and reactive oxygen species (ROS)",
+            "Model organisms in biomedical research",
+            "Role of MRCK-1 in cellular processes",
+            "Cellular defense mechanisms",
+            "Neurodegenerative diseases"
+        ],
+        "journals": [
+            "The FASEB Journal"
+        ]
+    },
+    {
+        "_id": "stephen-rigoulot",
+        "name": "Stephen Rigoulot",
+        "total_citations": 0,
+        "department_affiliations": [
+            "Virginia Tech Blacksburg VA"
+        ],
+        "dois": [
+            "10.1096/fasebj.31.1_supplement.770.10"
+        ],
+        "titles": [
+            "High\u2010Throughput, Fluorescent Analysis of Reactive Oxygen Species in C. elegans after Knockdown of mrck\u20101"
+        ],
+        "categories": [
+            "Biochemistry, biophysics, and molecular biology",
+            "Medical clinical science",
+            "Molecular biology",
+            "Cell/ cellular biology and anatomy",
+            "Biological and biomedical sciences",
+            "Neurobiology and anatomy",
+            "Health sciences, general",
+            "Biochemistry",
+            "Cell/ cellular and molecular biology",
+            "Developmental biology and embryology",
+            "Public health",
+            "Neuroscience",
+            "Neurobiology and neurosciences",
+            "Health sciences",
+            "Rehabilitation and therapeutic sciences",
+            "Health sciences, other",
+            "Environmental health",
+            "Biochemistry and molecular biology",
+            "Public health, general"
+        ],
+        "top_level_categories": [
+            "Biological and biomedical sciences",
+            "Health sciences"
+        ],
+        "mid_level_categories": [
+            "Health sciences, other",
+            "Biochemistry, biophysics, and molecular biology",
+            "Neurobiology and neurosciences",
+            "Cell/ cellular biology and anatomy",
+            "Public health"
+        ],
+        "low_level_categories": [
+            "Rehabilitation and therapeutic sciences",
+            "Health sciences, general",
+            "Biochemistry",
+            "Environmental health",
+            "Cell/ cellular and molecular biology",
+            "Developmental biology and embryology",
+            "Medical clinical science",
+            "Biochemistry and molecular biology",
+            "Molecular biology",
+            "Public health, general",
+            "Neuroscience",
+            "Neurobiology and anatomy"
+        ],
+        "category_urls": [
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Public%20health%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Neurobiology%20and%20anatomy",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Molecular%20biology",
+            "Health%20sciences",
+            "Biological%20and%20biomedical%20sciences/Neurobiology%20and%20neurosciences",
+            "Health%20sciences/Health%20sciences%2C%20other",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biochemistry",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Developmental%20biology%20and%20embryology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Rehabilitation%20and%20therapeutic%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Medical%20clinical%20science",
+            "Biological%20and%20biomedical%20sciences/Biochemistry%2C%20biophysics%2C%20and%20molecular%20biology",
+            "Biological%20and%20biomedical%20sciences/Cell/%20cellular%20biology%20and%20anatomy",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Environmental%20health",
+            "Biological%20and%20biomedical%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Cell/%20cellular%20and%20molecular%20biology",
+            "Health%20sciences/Public%20health",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biochemistry%20and%20molecular%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Neuroscience"
+        ],
+        "top_category_urls": [
+            "Health%20sciences",
+            "Biological%20and%20biomedical%20sciences"
+        ],
+        "mid_category_urls": [
+            "Health%20sciences/Health%20sciences%2C%20other",
+            "Biological%20and%20biomedical%20sciences/Neurobiology%20and%20neurosciences",
+            "Biological%20and%20biomedical%20sciences/Biochemistry%2C%20biophysics%2C%20and%20molecular%20biology",
+            "Health%20sciences/Public%20health",
+            "Biological%20and%20biomedical%20sciences/Cell/%20cellular%20biology%20and%20anatomy"
+        ],
+        "low_category_urls": [
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Neuroscience",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Rehabilitation%20and%20therapeutic%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biochemistry",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Developmental%20biology%20and%20embryology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Public%20health%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biochemistry%20and%20molecular%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Neurobiology%20and%20anatomy",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Molecular%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Medical%20clinical%20science",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Cell/%20cellular%20and%20molecular%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Environmental%20health"
+        ],
+        "themes": [
+            "Oxidative stress and reactive oxygen species (ROS)",
+            "Model organisms in biomedical research",
+            "Role of MRCK-1 in cellular processes",
+            "Cellular defense mechanisms",
+            "Neurodegenerative diseases"
+        ],
+        "journals": [
+            "The FASEB Journal"
+        ]
+    },
+    {
+        "_id": "patti-erickson",
+        "name": "Patti Erickson",
+        "total_citations": 0,
+        "department_affiliations": [
+            "Salisbury University Salisbury MD"
+        ],
+        "dois": [
+            "10.1096/fasebj.31.1_supplement.770.10"
+        ],
+        "titles": [
+            "High\u2010Throughput, Fluorescent Analysis of Reactive Oxygen Species in C. elegans after Knockdown of mrck\u20101"
+        ],
+        "categories": [
+            "Biochemistry, biophysics, and molecular biology",
+            "Medical clinical science",
+            "Molecular biology",
+            "Cell/ cellular biology and anatomy",
+            "Biological and biomedical sciences",
+            "Neurobiology and anatomy",
+            "Health sciences, general",
+            "Biochemistry",
+            "Cell/ cellular and molecular biology",
+            "Developmental biology and embryology",
+            "Public health",
+            "Neuroscience",
+            "Neurobiology and neurosciences",
+            "Health sciences",
+            "Rehabilitation and therapeutic sciences",
+            "Health sciences, other",
+            "Environmental health",
+            "Biochemistry and molecular biology",
+            "Public health, general"
+        ],
+        "top_level_categories": [
+            "Biological and biomedical sciences",
+            "Health sciences"
+        ],
+        "mid_level_categories": [
+            "Health sciences, other",
+            "Biochemistry, biophysics, and molecular biology",
+            "Neurobiology and neurosciences",
+            "Cell/ cellular biology and anatomy",
+            "Public health"
+        ],
+        "low_level_categories": [
+            "Rehabilitation and therapeutic sciences",
+            "Health sciences, general",
+            "Biochemistry",
+            "Environmental health",
+            "Cell/ cellular and molecular biology",
+            "Developmental biology and embryology",
+            "Medical clinical science",
+            "Biochemistry and molecular biology",
+            "Molecular biology",
+            "Public health, general",
+            "Neuroscience",
+            "Neurobiology and anatomy"
+        ],
+        "category_urls": [
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Public%20health%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Neurobiology%20and%20anatomy",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Molecular%20biology",
+            "Health%20sciences",
+            "Biological%20and%20biomedical%20sciences/Neurobiology%20and%20neurosciences",
+            "Health%20sciences/Health%20sciences%2C%20other",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biochemistry",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Developmental%20biology%20and%20embryology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Rehabilitation%20and%20therapeutic%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Medical%20clinical%20science",
+            "Biological%20and%20biomedical%20sciences/Biochemistry%2C%20biophysics%2C%20and%20molecular%20biology",
+            "Biological%20and%20biomedical%20sciences/Cell/%20cellular%20biology%20and%20anatomy",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Environmental%20health",
+            "Biological%20and%20biomedical%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Cell/%20cellular%20and%20molecular%20biology",
+            "Health%20sciences/Public%20health",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biochemistry%20and%20molecular%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Neuroscience"
+        ],
+        "top_category_urls": [
+            "Health%20sciences",
+            "Biological%20and%20biomedical%20sciences"
+        ],
+        "mid_category_urls": [
+            "Health%20sciences/Health%20sciences%2C%20other",
+            "Biological%20and%20biomedical%20sciences/Neurobiology%20and%20neurosciences",
+            "Biological%20and%20biomedical%20sciences/Biochemistry%2C%20biophysics%2C%20and%20molecular%20biology",
+            "Health%20sciences/Public%20health",
+            "Biological%20and%20biomedical%20sciences/Cell/%20cellular%20biology%20and%20anatomy"
+        ],
+        "low_category_urls": [
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Neuroscience",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Rehabilitation%20and%20therapeutic%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biochemistry",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Developmental%20biology%20and%20embryology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Public%20health%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biochemistry%20and%20molecular%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Neurobiology%20and%20anatomy",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Molecular%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Medical%20clinical%20science",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Cell/%20cellular%20and%20molecular%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Environmental%20health"
+        ],
+        "themes": [
+            "Oxidative stress and reactive oxygen species (ROS)",
+            "Model organisms in biomedical research",
+            "Role of MRCK-1 in cellular processes",
+            "Cellular defense mechanisms",
+            "Neurodegenerative diseases"
+        ],
+        "journals": [
+            "The FASEB Journal"
+        ]
+    },
+    {
+        "_id": "lauren-nicole-delong",
+        "name": "Lauren Nicole DeLong",
+        "total_citations": 0,
+        "department_affiliations": [
+            "Department of Biological Sciences Salisbury University Salisbury MD"
+        ],
+        "dois": [
+            "10.1096/fasebj.31.1_supplement.943.4"
+        ],
+        "titles": [
+            "Isolation, Identification, and Characterization of Local Wild Yeasts for Use In Fermentation"
+        ],
+        "categories": [
+            "Biochemistry, biophysics, and molecular biology",
+            "Medical clinical science",
+            "Molecular biology",
+            "Cell/ cellular biology and anatomy",
+            "Plant physiology and biology nec",
+            "Biological and biomedical sciences",
+            "Neurobiology and anatomy",
+            "Agricultural sciences and natural resources",
+            "Biological and biomedical sciences, other",
+            "Plant pathology and phytopathology",
+            "Health sciences, general",
+            "Biochemistry",
+            "Cell/ cellular and molecular biology",
+            "Developmental biology and embryology",
+            "Botany and plant biology",
+            "Public health",
+            "Neuroscience",
+            "Zoology and animal biology",
+            "Biological and biomedical sciences nec",
+            "Neurobiology and neurosciences",
+            "Biomedical sciences, general",
+            "Agricultural, animal, plant, and veterinary sciences",
+            "Biology/ biological sciences, general",
+            "Health sciences",
+            "Rehabilitation and therapeutic sciences",
+            "Microbiology, general",
+            "Health sciences, other",
+            "Environmental health",
+            "Biochemistry and molecular biology",
+            "Microbiology and immunology",
+            "Public health, general",
+            "Agricultural, animal, plant, and veterinary sciences nec",
+            "Food science and technology"
+        ],
+        "top_level_categories": [
+            "Biological and biomedical sciences",
+            "Agricultural sciences and natural resources"
+        ],
+        "mid_level_categories": [
+            "Microbiology and immunology",
+            "Biological and biomedical sciences, other",
+            "Agricultural, animal, plant, and veterinary sciences",
+            "Biochemistry, biophysics, and molecular biology"
+        ],
+        "low_level_categories": [
+            "Plant pathology and phytopathology",
+            "Microbiology, general",
+            "Zoology and animal biology",
+            "Biochemistry",
+            "Biological and biomedical sciences nec",
+            "Biomedical sciences, general",
+            "Microbiology and immunology",
+            "Biochemistry and molecular biology",
+            "Botany and plant biology",
+            "Molecular biology",
+            "Biology/ biological sciences, general",
+            "Plant physiology and biology nec",
+            "Agricultural, animal, plant, and veterinary sciences nec",
+            "Food science and technology"
+        ],
+        "category_urls": [
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Microbiology%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Microbiology%20and%20immunology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Food%20science%20and%20technology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Plant%20physiology%20and%20biology%20nec",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Molecular%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biochemistry",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Plant%20pathology%20and%20phytopathology",
+            "Biological%20and%20biomedical%20sciences/Biochemistry%2C%20biophysics%2C%20and%20molecular%20biology",
+            "Agricultural%20sciences%20and%20natural%20resources",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biological%20and%20biomedical%20sciences%20nec",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Botany%20and%20plant%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general",
+            "Biological%20and%20biomedical%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biochemistry%20and%20molecular%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Zoology%20and%20animal%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Agricultural%2C%20animal%2C%20plant%2C%20and%20veterinary%20sciences%20nec",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biology/%20biological%20sciences%2C%20general",
             "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other",
-            "Health%20sciences/Health%20sciences%2C%20other",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general",
-            "Health%20sciences",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
-            "Biological%20and%20biomedical%20sciences"
+            "Agricultural%20sciences%20and%20natural%20resources/Agricultural%2C%20animal%2C%20plant%2C%20and%20veterinary%20sciences"
         ],
         "top_category_urls": [
-            "Health%20sciences",
-            "Biological%20and%20biomedical%20sciences"
+            "Biological%20and%20biomedical%20sciences",
+            "Agricultural%20sciences%20and%20natural%20resources"
         ],
         "mid_category_urls": [
-            "Health%20sciences/Health%20sciences%2C%20other",
-            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
-            "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other"
-        ],
-        "low_category_urls": [
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology"
-        ],
-        "themes": [
-            "Arterial Stiffness",
-            "High Functional Resistance Training",
-            "Exercise and Cardiovascular Health",
-            "Vascular Function"
-        ],
-        "journals": [
-            "Medicine &amp; Science in Sports &amp; Exercise"
-        ]
-    },
-    {
-        "_id": "brent-fedorko",
-        "name": "Brent Fedorko",
-        "total_citations": 0,
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "dois": [
-            "10.1249/01.mss.0000983480.29368.36",
-            "10.1249/01.mss.0000980200.41641.da"
-        ],
-        "titles": [
-            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
-            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
-        ],
-        "categories": [
-            "Exercise science and kinesiology",
-            "Biological and biomedical sciences, other",
-            "Biological and biomedical sciences",
-            "Exercise physiology and kinesiology",
-            "Physiology, oncology and cancer biology",
-            "Physiology, general",
-            "Biomedical sciences, general",
-            "Health sciences, general",
-            "Health sciences, other",
-            "Health sciences"
-        ],
-        "top_level_categories": [
-            "Biological and biomedical sciences",
-            "Health sciences"
-        ],
-        "mid_level_categories": [
-            "Biological and biomedical sciences, other",
-            "Health sciences, other",
-            "Physiology, oncology and cancer biology"
-        ],
-        "low_level_categories": [
-            "Exercise science and kinesiology",
-            "Biomedical sciences, general",
-            "Exercise physiology and kinesiology",
-            "Physiology, general",
-            "Health sciences, general"
-        ],
-        "category_urls": [
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
-            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
             "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other",
-            "Health%20sciences/Health%20sciences%2C%20other",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general",
-            "Health%20sciences",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
-            "Biological%20and%20biomedical%20sciences"
-        ],
-        "top_category_urls": [
-            "Health%20sciences",
-            "Biological%20and%20biomedical%20sciences"
-        ],
-        "mid_category_urls": [
-            "Health%20sciences/Health%20sciences%2C%20other",
-            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
-            "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other"
+            "Agricultural%20sciences%20and%20natural%20resources/Agricultural%2C%20animal%2C%20plant%2C%20and%20veterinary%20sciences",
+            "Biological%20and%20biomedical%20sciences/Biochemistry%2C%20biophysics%2C%20and%20molecular%20biology"
         ],
         "low_category_urls": [
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biological%20and%20biomedical%20sciences%20nec",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Zoology%20and%20animal%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biochemistry",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Microbiology%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Microbiology%20and%20immunology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Food%20science%20and%20technology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Agricultural%2C%20animal%2C%20plant%2C%20and%20veterinary%20sciences%20nec",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Plant%20physiology%20and%20biology%20nec",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biology/%20biological%20sciences%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Molecular%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Botany%20and%20plant%20biology",
             "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology"
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Plant%20pathology%20and%20phytopathology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biochemistry%20and%20molecular%20biology"
         ],
         "themes": [
-            "Exercise Physiology",
-            "Arterial Stiffness",
-            "Acute Effects of Exercise",
-            "Health Implications of Exercise",
-            "Blood Flow Restriction Exercise",
-            "Vascular Function",
-            "Exercise and Cardiovascular Health",
-            "High Functional Resistance Training",
-            "Comparison of Exercise Modalities"
+            "Impact of local ingredients on craft brewing",
+            "Commercial applications of unique yeast strains",
+            "Innovation in brewing practices",
+            "Wild yeast isolation and characterization",
+            "Fermentation science and microbial diversity"
         ],
         "journals": [
-            "Medicine &amp; Science in Sports &amp; Exercise"
+            "The FASEB Journal"
         ]
     },
     {
-        "_id": "masoud-moghaddam",
-        "name": "Masoud Moghaddam",
+        "_id": "brenna-noone",
+        "name": "Brenna Noone",
         "total_citations": 0,
         "department_affiliations": [
-            "University of Maryland Eastern Shore, Princess Anne, MD. (Sponsor: Tim Werner, FACSM)"
+            "Department of Biological Sciences Salisbury University Salisbury MD"
         ],
         "dois": [
-            "10.1249/01.mss.0000983480.29368.36",
-            "10.1249/01.mss.0000980200.41641.da"
+            "10.1096/fasebj.31.1_supplement.943.4"
         ],
         "titles": [
-            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
-            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+            "Isolation, Identification, and Characterization of Local Wild Yeasts for Use In Fermentation"
         ],
         "categories": [
-            "Exercise science and kinesiology",
-            "Biological and biomedical sciences, other",
+            "Biochemistry, biophysics, and molecular biology",
+            "Medical clinical science",
+            "Molecular biology",
+            "Cell/ cellular biology and anatomy",
+            "Plant physiology and biology nec",
             "Biological and biomedical sciences",
-            "Exercise physiology and kinesiology",
-            "Physiology, oncology and cancer biology",
-            "Physiology, general",
-            "Biomedical sciences, general",
+            "Neurobiology and anatomy",
+            "Agricultural sciences and natural resources",
+            "Biological and biomedical sciences, other",
+            "Plant pathology and phytopathology",
             "Health sciences, general",
+            "Biochemistry",
+            "Cell/ cellular and molecular biology",
+            "Developmental biology and embryology",
+            "Botany and plant biology",
+            "Public health",
+            "Neuroscience",
+            "Zoology and animal biology",
+            "Biological and biomedical sciences nec",
+            "Neurobiology and neurosciences",
+            "Biomedical sciences, general",
+            "Agricultural, animal, plant, and veterinary sciences",
+            "Biology/ biological sciences, general",
+            "Health sciences",
+            "Rehabilitation and therapeutic sciences",
+            "Microbiology, general",
             "Health sciences, other",
-            "Health sciences"
+            "Environmental health",
+            "Biochemistry and molecular biology",
+            "Microbiology and immunology",
+            "Public health, general",
+            "Agricultural, animal, plant, and veterinary sciences nec",
+            "Food science and technology"
         ],
         "top_level_categories": [
             "Biological and biomedical sciences",
-            "Health sciences"
+            "Agricultural sciences and natural resources"
         ],
         "mid_level_categories": [
+            "Microbiology and immunology",
             "Biological and biomedical sciences, other",
-            "Health sciences, other",
-            "Physiology, oncology and cancer biology"
+            "Agricultural, animal, plant, and veterinary sciences",
+            "Biochemistry, biophysics, and molecular biology"
         ],
         "low_level_categories": [
-            "Exercise science and kinesiology",
+            "Plant pathology and phytopathology",
+            "Microbiology, general",
+            "Zoology and animal biology",
+            "Biochemistry",
+            "Biological and biomedical sciences nec",
             "Biomedical sciences, general",
-            "Exercise physiology and kinesiology",
-            "Physiology, general",
-            "Health sciences, general"
+            "Microbiology and immunology",
+            "Biochemistry and molecular biology",
+            "Botany and plant biology",
+            "Molecular biology",
+            "Biology/ biological sciences, general",
+            "Plant physiology and biology nec",
+            "Agricultural, animal, plant, and veterinary sciences nec",
+            "Food science and technology"
         ],
         "category_urls": [
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
-            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Microbiology%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Microbiology%20and%20immunology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Food%20science%20and%20technology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Plant%20physiology%20and%20biology%20nec",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Molecular%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biochemistry",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Plant%20pathology%20and%20phytopathology",
+            "Biological%20and%20biomedical%20sciences/Biochemistry%2C%20biophysics%2C%20and%20molecular%20biology",
+            "Agricultural%20sciences%20and%20natural%20resources",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biological%20and%20biomedical%20sciences%20nec",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Botany%20and%20plant%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general",
+            "Biological%20and%20biomedical%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biochemistry%20and%20molecular%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Zoology%20and%20animal%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Agricultural%2C%20animal%2C%20plant%2C%20and%20veterinary%20sciences%20nec",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biology/%20biological%20sciences%2C%20general",
             "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other",
-            "Health%20sciences/Health%20sciences%2C%20other",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general",
-            "Health%20sciences",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
-            "Biological%20and%20biomedical%20sciences"
+            "Agricultural%20sciences%20and%20natural%20resources/Agricultural%2C%20animal%2C%20plant%2C%20and%20veterinary%20sciences"
         ],
         "top_category_urls": [
-            "Health%20sciences",
-            "Biological%20and%20biomedical%20sciences"
+            "Biological%20and%20biomedical%20sciences",
+            "Agricultural%20sciences%20and%20natural%20resources"
         ],
         "mid_category_urls": [
-            "Health%20sciences/Health%20sciences%2C%20other",
-            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
-            "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other"
-        ],
-        "low_category_urls": [
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology"
-        ],
-        "themes": [
-            "Exercise Physiology",
-            "Arterial Stiffness",
-            "Acute Effects of Exercise",
-            "Health Implications of Exercise",
-            "Blood Flow Restriction Exercise",
-            "Vascular Function",
-            "Exercise and Cardiovascular Health",
-            "High Functional Resistance Training",
-            "Comparison of Exercise Modalities"
-        ],
-        "journals": [
-            "Medicine &amp; Science in Sports &amp; Exercise"
-        ]
-    },
-    {
-        "_id": "jessica-walter",
-        "name": "Jessica Walter",
-        "total_citations": 0,
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "dois": [
-            "10.1249/01.mss.0000983480.29368.36",
-            "10.1249/01.mss.0000980200.41641.da"
-        ],
-        "titles": [
-            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
-            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
-        ],
-        "categories": [
-            "Exercise science and kinesiology",
-            "Biological and biomedical sciences, other",
-            "Biological and biomedical sciences",
-            "Exercise physiology and kinesiology",
-            "Physiology, oncology and cancer biology",
-            "Physiology, general",
-            "Biomedical sciences, general",
-            "Health sciences, general",
-            "Health sciences, other",
-            "Health sciences"
-        ],
-        "top_level_categories": [
-            "Biological and biomedical sciences",
-            "Health sciences"
-        ],
-        "mid_level_categories": [
-            "Biological and biomedical sciences, other",
-            "Health sciences, other",
-            "Physiology, oncology and cancer biology"
-        ],
-        "low_level_categories": [
-            "Exercise science and kinesiology",
-            "Biomedical sciences, general",
-            "Exercise physiology and kinesiology",
-            "Physiology, general",
-            "Health sciences, general"
-        ],
-        "category_urls": [
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
-            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
             "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other",
-            "Health%20sciences/Health%20sciences%2C%20other",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general",
-            "Health%20sciences",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
-            "Biological%20and%20biomedical%20sciences"
-        ],
-        "top_category_urls": [
-            "Health%20sciences",
-            "Biological%20and%20biomedical%20sciences"
-        ],
-        "mid_category_urls": [
-            "Health%20sciences/Health%20sciences%2C%20other",
-            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
-            "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other"
+            "Agricultural%20sciences%20and%20natural%20resources/Agricultural%2C%20animal%2C%20plant%2C%20and%20veterinary%20sciences",
+            "Biological%20and%20biomedical%20sciences/Biochemistry%2C%20biophysics%2C%20and%20molecular%20biology"
         ],
         "low_category_urls": [
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biological%20and%20biomedical%20sciences%20nec",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Zoology%20and%20animal%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biochemistry",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Microbiology%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Microbiology%20and%20immunology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Food%20science%20and%20technology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Agricultural%2C%20animal%2C%20plant%2C%20and%20veterinary%20sciences%20nec",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Plant%20physiology%20and%20biology%20nec",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biology/%20biological%20sciences%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Molecular%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Botany%20and%20plant%20biology",
             "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology"
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Plant%20pathology%20and%20phytopathology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biochemistry%20and%20molecular%20biology"
         ],
         "themes": [
-            "Exercise Physiology",
-            "Arterial Stiffness",
-            "Acute Effects of Exercise",
-            "Health Implications of Exercise",
-            "Blood Flow Restriction Exercise",
-            "Vascular Function",
-            "Exercise and Cardiovascular Health",
-            "High Functional Resistance Training",
-            "Comparison of Exercise Modalities"
+            "Impact of local ingredients on craft brewing",
+            "Commercial applications of unique yeast strains",
+            "Innovation in brewing practices",
+            "Wild yeast isolation and characterization",
+            "Fermentation science and microbial diversity"
         ],
         "journals": [
-            "Medicine &amp; Science in Sports &amp; Exercise"
+            "The FASEB Journal"
         ]
     },
     {
-        "_id": "lisa-marquette",
-        "name": "Lisa Marquette",
+        "_id": "les-erickson",
+        "name": "Les Erickson",
         "total_citations": 0,
         "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
+            "Department of Biological Sciences Salisbury University Salisbury MD"
         ],
         "dois": [
-            "10.1249/01.mss.0000983480.29368.36",
-            "10.1249/01.mss.0000980200.41641.da"
+            "10.1096/fasebj.31.1_supplement.943.4"
         ],
         "titles": [
-            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
-            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+            "Isolation, Identification, and Characterization of Local Wild Yeasts for Use In Fermentation"
         ],
         "categories": [
-            "Exercise science and kinesiology",
-            "Biological and biomedical sciences, other",
+            "Biochemistry, biophysics, and molecular biology",
+            "Medical clinical science",
+            "Molecular biology",
+            "Cell/ cellular biology and anatomy",
+            "Plant physiology and biology nec",
             "Biological and biomedical sciences",
-            "Exercise physiology and kinesiology",
-            "Physiology, oncology and cancer biology",
-            "Physiology, general",
-            "Biomedical sciences, general",
+            "Neurobiology and anatomy",
+            "Agricultural sciences and natural resources",
+            "Biological and biomedical sciences, other",
+            "Plant pathology and phytopathology",
             "Health sciences, general",
+            "Biochemistry",
+            "Cell/ cellular and molecular biology",
+            "Developmental biology and embryology",
+            "Botany and plant biology",
+            "Public health",
+            "Neuroscience",
+            "Zoology and animal biology",
+            "Biological and biomedical sciences nec",
+            "Neurobiology and neurosciences",
+            "Biomedical sciences, general",
+            "Agricultural, animal, plant, and veterinary sciences",
+            "Biology/ biological sciences, general",
+            "Health sciences",
+            "Rehabilitation and therapeutic sciences",
+            "Microbiology, general",
             "Health sciences, other",
-            "Health sciences"
+            "Environmental health",
+            "Biochemistry and molecular biology",
+            "Microbiology and immunology",
+            "Public health, general",
+            "Agricultural, animal, plant, and veterinary sciences nec",
+            "Food science and technology"
         ],
         "top_level_categories": [
             "Biological and biomedical sciences",
-            "Health sciences"
+            "Agricultural sciences and natural resources"
         ],
         "mid_level_categories": [
+            "Microbiology and immunology",
             "Biological and biomedical sciences, other",
-            "Health sciences, other",
-            "Physiology, oncology and cancer biology"
+            "Agricultural, animal, plant, and veterinary sciences",
+            "Biochemistry, biophysics, and molecular biology"
         ],
         "low_level_categories": [
-            "Exercise science and kinesiology",
+            "Plant pathology and phytopathology",
+            "Microbiology, general",
+            "Zoology and animal biology",
+            "Biochemistry",
+            "Biological and biomedical sciences nec",
             "Biomedical sciences, general",
-            "Exercise physiology and kinesiology",
-            "Physiology, general",
-            "Health sciences, general"
+            "Microbiology and immunology",
+            "Biochemistry and molecular biology",
+            "Botany and plant biology",
+            "Molecular biology",
+            "Biology/ biological sciences, general",
+            "Plant physiology and biology nec",
+            "Agricultural, animal, plant, and veterinary sciences nec",
+            "Food science and technology"
         ],
         "category_urls": [
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
-            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Microbiology%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Microbiology%20and%20immunology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Food%20science%20and%20technology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Plant%20physiology%20and%20biology%20nec",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Molecular%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biochemistry",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Plant%20pathology%20and%20phytopathology",
+            "Biological%20and%20biomedical%20sciences/Biochemistry%2C%20biophysics%2C%20and%20molecular%20biology",
+            "Agricultural%20sciences%20and%20natural%20resources",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biological%20and%20biomedical%20sciences%20nec",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Botany%20and%20plant%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general",
+            "Biological%20and%20biomedical%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biochemistry%20and%20molecular%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Zoology%20and%20animal%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Agricultural%2C%20animal%2C%20plant%2C%20and%20veterinary%20sciences%20nec",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biology/%20biological%20sciences%2C%20general",
             "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other",
-            "Health%20sciences/Health%20sciences%2C%20other",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general",
-            "Health%20sciences",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
-            "Biological%20and%20biomedical%20sciences"
+            "Agricultural%20sciences%20and%20natural%20resources/Agricultural%2C%20animal%2C%20plant%2C%20and%20veterinary%20sciences"
         ],
         "top_category_urls": [
-            "Health%20sciences",
-            "Biological%20and%20biomedical%20sciences"
+            "Biological%20and%20biomedical%20sciences",
+            "Agricultural%20sciences%20and%20natural%20resources"
         ],
         "mid_category_urls": [
-            "Health%20sciences/Health%20sciences%2C%20other",
-            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
-            "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other"
-        ],
-        "low_category_urls": [
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology"
-        ],
-        "themes": [
-            "Exercise Physiology",
-            "Arterial Stiffness",
-            "Acute Effects of Exercise",
-            "Health Implications of Exercise",
-            "Blood Flow Restriction Exercise",
-            "Vascular Function",
-            "Exercise and Cardiovascular Health",
-            "High Functional Resistance Training",
-            "Comparison of Exercise Modalities"
-        ],
-        "journals": [
-            "Medicine &amp; Science in Sports &amp; Exercise"
-        ]
-    },
-    {
-        "_id": "tim-werner",
-        "name": "Tim Werner",
-        "total_citations": 0,
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "dois": [
-            "10.1249/01.mss.0000983480.29368.36",
-            "10.1249/01.mss.0000980200.41641.da"
-        ],
-        "titles": [
-            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
-            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
-        ],
-        "categories": [
-            "Exercise science and kinesiology",
-            "Biological and biomedical sciences, other",
-            "Biological and biomedical sciences",
-            "Exercise physiology and kinesiology",
-            "Physiology, oncology and cancer biology",
-            "Physiology, general",
-            "Biomedical sciences, general",
-            "Health sciences, general",
-            "Health sciences, other",
-            "Health sciences"
-        ],
-        "top_level_categories": [
-            "Biological and biomedical sciences",
-            "Health sciences"
-        ],
-        "mid_level_categories": [
-            "Biological and biomedical sciences, other",
-            "Health sciences, other",
-            "Physiology, oncology and cancer biology"
-        ],
-        "low_level_categories": [
-            "Exercise science and kinesiology",
-            "Biomedical sciences, general",
-            "Exercise physiology and kinesiology",
-            "Physiology, general",
-            "Health sciences, general"
-        ],
-        "category_urls": [
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
-            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
             "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other",
-            "Health%20sciences/Health%20sciences%2C%20other",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general",
-            "Health%20sciences",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
-            "Biological%20and%20biomedical%20sciences"
-        ],
-        "top_category_urls": [
-            "Health%20sciences",
-            "Biological%20and%20biomedical%20sciences"
-        ],
-        "mid_category_urls": [
-            "Health%20sciences/Health%20sciences%2C%20other",
-            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
-            "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other"
+            "Agricultural%20sciences%20and%20natural%20resources/Agricultural%2C%20animal%2C%20plant%2C%20and%20veterinary%20sciences",
+            "Biological%20and%20biomedical%20sciences/Biochemistry%2C%20biophysics%2C%20and%20molecular%20biology"
         ],
         "low_category_urls": [
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biological%20and%20biomedical%20sciences%20nec",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Zoology%20and%20animal%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biochemistry",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Microbiology%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Microbiology%20and%20immunology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Food%20science%20and%20technology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Agricultural%2C%20animal%2C%20plant%2C%20and%20veterinary%20sciences%20nec",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Plant%20physiology%20and%20biology%20nec",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biology/%20biological%20sciences%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Molecular%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Botany%20and%20plant%20biology",
             "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology"
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Plant%20pathology%20and%20phytopathology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biochemistry%20and%20molecular%20biology"
         ],
         "themes": [
-            "Exercise Physiology",
-            "Arterial Stiffness",
-            "Acute Effects of Exercise",
-            "Health Implications of Exercise",
-            "Blood Flow Restriction Exercise",
-            "Vascular Function",
-            "Exercise and Cardiovascular Health",
-            "High Functional Resistance Training",
-            "Comparison of Exercise Modalities"
+            "Impact of local ingredients on craft brewing",
+            "Commercial applications of unique yeast strains",
+            "Innovation in brewing practices",
+            "Wild yeast isolation and characterization",
+            "Fermentation science and microbial diversity"
         ],
         "journals": [
-            "Medicine &amp; Science in Sports &amp; Exercise"
+            "The FASEB Journal"
         ]
     },
     {
-        "_id": "nicholas-rolnick",
-        "name": "Nicholas Rolnick",
-        "total_citations": 0,
+        "_id": "joshua-r.-biddle",
+        "name": "Joshua R. Biddle",
+        "total_citations": 4,
         "department_affiliations": [
-            "Lehman College, New York, NY."
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA"
         ],
         "dois": [
-            "10.1249/01.mss.0000980200.41641.da"
+            "10.1655/herpetologica-d-16-00047.1"
         ],
         "titles": [
-            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
         ],
         "categories": [
-            "Exercise science and kinesiology",
-            "Biological and biomedical sciences, other",
+            "Geosciences, atmospheric, and ocean sciences",
+            "Biochemistry, biophysics, and molecular biology",
+            "Medical clinical science",
+            "Geology",
+            "Ecology, evolutionary biology, and epidemiology",
+            "Cell/ cellular biology and anatomy",
+            "Molecular biology",
+            "Plant physiology and biology nec",
+            "Ocean/ marine sciences and atmospheric science",
             "Biological and biomedical sciences",
-            "Exercise physiology and kinesiology",
-            "Physiology, oncology and cancer biology",
-            "Physiology, general",
-            "Biomedical sciences, general",
+            "Neurobiology and anatomy",
+            "Agricultural sciences and natural resources",
+            "Biological and biomedical sciences, other",
+            "Plant pathology and phytopathology",
+            "Ecology",
             "Health sciences, general",
+            "Biochemistry",
+            "Cell/ cellular and molecular biology",
+            "Developmental biology and embryology",
+            "Botany and plant biology",
+            "Public health",
+            "Geology/ earth science, general",
+            "Neuroscience",
+            "Ecology and evolutionary biology",
+            "Geological and earth sciences nec",
+            "Zoology and animal biology",
+            "Marine sciences",
+            "Biological and biomedical sciences nec",
+            "Neurobiology and neurosciences",
+            "Biomedical sciences, general",
+            "Agricultural, animal, plant, and veterinary sciences",
+            "Biology/ biological sciences, general",
+            "Health sciences",
+            "Geological and earth sciences",
+            "Rehabilitation and therapeutic sciences",
+            "Microbiology, general",
             "Health sciences, other",
-            "Health sciences"
+            "Marine biology and biological oceanography",
+            "Environmental health",
+            "Biochemistry and molecular biology",
+            "Microbiology and immunology",
+            "Public health, general",
+            "Agricultural, animal, plant, and veterinary sciences nec",
+            "Food science and technology"
         ],
         "top_level_categories": [
             "Biological and biomedical sciences",
-            "Health sciences"
+            "Geosciences, atmospheric, and ocean sciences"
         ],
         "mid_level_categories": [
-            "Health sciences, other",
-            "Physiology, oncology and cancer biology"
+            "Ecology, evolutionary biology, and epidemiology",
+            "Cell/ cellular biology and anatomy",
+            "Ocean/ marine sciences and atmospheric science",
+            "Geological and earth sciences"
         ],
         "low_level_categories": [
-            "Exercise science and kinesiology",
-            "Health sciences, general",
-            "Physiology, general",
-            "Exercise physiology and kinesiology"
+            "Geological and earth sciences nec",
+            "Ecology",
+            "Marine biology and biological oceanography",
+            "Marine sciences",
+            "Cell/ cellular and molecular biology",
+            "Developmental biology and embryology",
+            "Geology",
+            "Geology/ earth science, general",
+            "Ecology and evolutionary biology"
         ],
         "category_urls": [
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
-            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
-            "Health%20sciences/Health%20sciences%2C%20other",
-            "Health%20sciences",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
-            "Biological%20and%20biomedical%20sciences"
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Marine%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Marine%20biology%20and%20biological%20oceanography",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Developmental%20biology%20and%20embryology",
+            "Biological%20and%20biomedical%20sciences/Cell/%20cellular%20biology%20and%20anatomy",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology%20and%20evolutionary%20biology",
+            "Geosciences%2C%20atmospheric%2C%20and%20ocean%20sciences/Geological%20and%20earth%20sciences",
+            "Biological%20and%20biomedical%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Cell/%20cellular%20and%20molecular%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology",
+            "Geosciences%2C%20atmospheric%2C%20and%20ocean%20sciences/Ocean/%20marine%20sciences%20and%20atmospheric%20science",
+            "Biological%20and%20biomedical%20sciences/Ecology%2C%20evolutionary%20biology%2C%20and%20epidemiology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Geology/%20earth%20science%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Geological%20and%20earth%20sciences%20nec",
+            "Geosciences%2C%20atmospheric%2C%20and%20ocean%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Geology"
         ],
         "top_category_urls": [
-            "Health%20sciences",
+            "Geosciences%2C%20atmospheric%2C%20and%20ocean%20sciences",
             "Biological%20and%20biomedical%20sciences"
         ],
         "mid_category_urls": [
-            "Health%20sciences/Health%20sciences%2C%20other",
-            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology"
+            "Geosciences%2C%20atmospheric%2C%20and%20ocean%20sciences/Geological%20and%20earth%20sciences",
+            "Biological%20and%20biomedical%20sciences/Cell/%20cellular%20biology%20and%20anatomy",
+            "Geosciences%2C%20atmospheric%2C%20and%20ocean%20sciences/Ocean/%20marine%20sciences%20and%20atmospheric%20science",
+            "Biological%20and%20biomedical%20sciences/Ecology%2C%20evolutionary%20biology%2C%20and%20epidemiology"
         ],
         "low_category_urls": [
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology"
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Marine%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Marine%20biology%20and%20biological%20oceanography",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Developmental%20biology%20and%20embryology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology%20and%20evolutionary%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Cell/%20cellular%20and%20molecular%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Geological%20and%20earth%20sciences%20nec",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Geology/%20earth%20science%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Geology"
         ],
         "themes": [
-            "Exercise Physiology",
-            "Arterial Stiffness",
-            "Acute Effects of Exercise",
-            "Health Implications of Exercise",
-            "Blood Flow Restriction Exercise",
-            "Comparison of Exercise Modalities"
+            "growth dynamics",
+            "habitat quality",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "body size"
         ],
         "journals": [
-            "Medicine &amp; Science in Sports &amp; Exercise"
+            "Herpetologica"
         ]
     },
     {
-        "_id": "nicholas-licameli",
-        "name": "Nicholas Licameli",
-        "total_citations": 0,
+        "_id": "alexa-h.-grant",
+        "name": "Alexa H. Grant",
+        "total_citations": 4,
         "department_affiliations": [
-            "Strength Together Inc., Rutherford, NJ."
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA"
         ],
         "dois": [
-            "10.1249/01.mss.0000980200.41641.da"
+            "10.1655/herpetologica-d-16-00047.1"
         ],
         "titles": [
-            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
         ],
         "categories": [
-            "Exercise science and kinesiology",
-            "Biological and biomedical sciences, other",
+            "Geosciences, atmospheric, and ocean sciences",
+            "Biochemistry, biophysics, and molecular biology",
+            "Medical clinical science",
+            "Geology",
+            "Ecology, evolutionary biology, and epidemiology",
+            "Cell/ cellular biology and anatomy",
+            "Molecular biology",
+            "Plant physiology and biology nec",
+            "Ocean/ marine sciences and atmospheric science",
             "Biological and biomedical sciences",
-            "Exercise physiology and kinesiology",
-            "Physiology, oncology and cancer biology",
-            "Physiology, general",
-            "Biomedical sciences, general",
+            "Neurobiology and anatomy",
+            "Agricultural sciences and natural resources",
+            "Biological and biomedical sciences, other",
+            "Plant pathology and phytopathology",
+            "Ecology",
             "Health sciences, general",
+            "Biochemistry",
+            "Cell/ cellular and molecular biology",
+            "Developmental biology and embryology",
+            "Botany and plant biology",
+            "Public health",
+            "Geology/ earth science, general",
+            "Neuroscience",
+            "Ecology and evolutionary biology",
+            "Geological and earth sciences nec",
+            "Zoology and animal biology",
+            "Marine sciences",
+            "Biological and biomedical sciences nec",
+            "Neurobiology and neurosciences",
+            "Biomedical sciences, general",
+            "Agricultural, animal, plant, and veterinary sciences",
+            "Biology/ biological sciences, general",
+            "Health sciences",
+            "Geological and earth sciences",
+            "Rehabilitation and therapeutic sciences",
+            "Microbiology, general",
             "Health sciences, other",
-            "Health sciences"
+            "Marine biology and biological oceanography",
+            "Environmental health",
+            "Biochemistry and molecular biology",
+            "Microbiology and immunology",
+            "Public health, general",
+            "Agricultural, animal, plant, and veterinary sciences nec",
+            "Food science and technology"
         ],
         "top_level_categories": [
             "Biological and biomedical sciences",
-            "Health sciences"
+            "Geosciences, atmospheric, and ocean sciences"
         ],
         "mid_level_categories": [
-            "Health sciences, other",
-            "Physiology, oncology and cancer biology"
+            "Ecology, evolutionary biology, and epidemiology",
+            "Cell/ cellular biology and anatomy",
+            "Ocean/ marine sciences and atmospheric science",
+            "Geological and earth sciences"
         ],
         "low_level_categories": [
-            "Exercise science and kinesiology",
-            "Health sciences, general",
-            "Physiology, general",
-            "Exercise physiology and kinesiology"
+            "Geological and earth sciences nec",
+            "Ecology",
+            "Marine biology and biological oceanography",
+            "Marine sciences",
+            "Cell/ cellular and molecular biology",
+            "Developmental biology and embryology",
+            "Geology",
+            "Geology/ earth science, general",
+            "Ecology and evolutionary biology"
         ],
         "category_urls": [
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
-            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
-            "Health%20sciences/Health%20sciences%2C%20other",
-            "Health%20sciences",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
-            "Biological%20and%20biomedical%20sciences"
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Marine%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Marine%20biology%20and%20biological%20oceanography",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Developmental%20biology%20and%20embryology",
+            "Biological%20and%20biomedical%20sciences/Cell/%20cellular%20biology%20and%20anatomy",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology%20and%20evolutionary%20biology",
+            "Geosciences%2C%20atmospheric%2C%20and%20ocean%20sciences/Geological%20and%20earth%20sciences",
+            "Biological%20and%20biomedical%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Cell/%20cellular%20and%20molecular%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology",
+            "Geosciences%2C%20atmospheric%2C%20and%20ocean%20sciences/Ocean/%20marine%20sciences%20and%20atmospheric%20science",
+            "Biological%20and%20biomedical%20sciences/Ecology%2C%20evolutionary%20biology%2C%20and%20epidemiology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Geology/%20earth%20science%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Geological%20and%20earth%20sciences%20nec",
+            "Geosciences%2C%20atmospheric%2C%20and%20ocean%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Geology"
         ],
         "top_category_urls": [
-            "Health%20sciences",
+            "Geosciences%2C%20atmospheric%2C%20and%20ocean%20sciences",
             "Biological%20and%20biomedical%20sciences"
         ],
         "mid_category_urls": [
-            "Health%20sciences/Health%20sciences%2C%20other",
-            "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology"
+            "Geosciences%2C%20atmospheric%2C%20and%20ocean%20sciences/Geological%20and%20earth%20sciences",
+            "Biological%20and%20biomedical%20sciences/Cell/%20cellular%20biology%20and%20anatomy",
+            "Geosciences%2C%20atmospheric%2C%20and%20ocean%20sciences/Ocean/%20marine%20sciences%20and%20atmospheric%20science",
+            "Biological%20and%20biomedical%20sciences/Ecology%2C%20evolutionary%20biology%2C%20and%20epidemiology"
         ],
         "low_category_urls": [
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
-            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology"
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Marine%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Marine%20biology%20and%20biological%20oceanography",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Developmental%20biology%20and%20embryology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology%20and%20evolutionary%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Cell/%20cellular%20and%20molecular%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Geological%20and%20earth%20sciences%20nec",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Geology/%20earth%20science%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Geology"
         ],
         "themes": [
-            "Exercise Physiology",
-            "Arterial Stiffness",
-            "Acute Effects of Exercise",
-            "Health Implications of Exercise",
-            "Blood Flow Restriction Exercise",
-            "Comparison of Exercise Modalities"
+            "growth dynamics",
+            "habitat quality",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "body size"
         ],
         "journals": [
-            "Medicine &amp; Science in Sports &amp; Exercise"
+            "Herpetologica"
+        ]
+    },
+    {
+        "_id": "eric-b.-liebgold",
+        "name": "Eric B. Liebgold",
+        "total_citations": 4,
+        "department_affiliations": [
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA"
+        ],
+        "dois": [
+            "10.1655/herpetologica-d-16-00047.1"
+        ],
+        "titles": [
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
+        ],
+        "categories": [
+            "Geosciences, atmospheric, and ocean sciences",
+            "Biochemistry, biophysics, and molecular biology",
+            "Medical clinical science",
+            "Geology",
+            "Ecology, evolutionary biology, and epidemiology",
+            "Cell/ cellular biology and anatomy",
+            "Molecular biology",
+            "Plant physiology and biology nec",
+            "Ocean/ marine sciences and atmospheric science",
+            "Biological and biomedical sciences",
+            "Neurobiology and anatomy",
+            "Agricultural sciences and natural resources",
+            "Biological and biomedical sciences, other",
+            "Plant pathology and phytopathology",
+            "Ecology",
+            "Health sciences, general",
+            "Biochemistry",
+            "Cell/ cellular and molecular biology",
+            "Developmental biology and embryology",
+            "Botany and plant biology",
+            "Public health",
+            "Geology/ earth science, general",
+            "Neuroscience",
+            "Ecology and evolutionary biology",
+            "Geological and earth sciences nec",
+            "Zoology and animal biology",
+            "Marine sciences",
+            "Biological and biomedical sciences nec",
+            "Neurobiology and neurosciences",
+            "Biomedical sciences, general",
+            "Agricultural, animal, plant, and veterinary sciences",
+            "Biology/ biological sciences, general",
+            "Health sciences",
+            "Geological and earth sciences",
+            "Rehabilitation and therapeutic sciences",
+            "Microbiology, general",
+            "Health sciences, other",
+            "Marine biology and biological oceanography",
+            "Environmental health",
+            "Biochemistry and molecular biology",
+            "Microbiology and immunology",
+            "Public health, general",
+            "Agricultural, animal, plant, and veterinary sciences nec",
+            "Food science and technology"
+        ],
+        "top_level_categories": [
+            "Biological and biomedical sciences",
+            "Geosciences, atmospheric, and ocean sciences"
+        ],
+        "mid_level_categories": [
+            "Ecology, evolutionary biology, and epidemiology",
+            "Cell/ cellular biology and anatomy",
+            "Ocean/ marine sciences and atmospheric science",
+            "Geological and earth sciences"
+        ],
+        "low_level_categories": [
+            "Geological and earth sciences nec",
+            "Ecology",
+            "Marine biology and biological oceanography",
+            "Marine sciences",
+            "Cell/ cellular and molecular biology",
+            "Developmental biology and embryology",
+            "Geology",
+            "Geology/ earth science, general",
+            "Ecology and evolutionary biology"
+        ],
+        "category_urls": [
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Marine%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Marine%20biology%20and%20biological%20oceanography",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Developmental%20biology%20and%20embryology",
+            "Biological%20and%20biomedical%20sciences/Cell/%20cellular%20biology%20and%20anatomy",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology%20and%20evolutionary%20biology",
+            "Geosciences%2C%20atmospheric%2C%20and%20ocean%20sciences/Geological%20and%20earth%20sciences",
+            "Biological%20and%20biomedical%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Cell/%20cellular%20and%20molecular%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology",
+            "Geosciences%2C%20atmospheric%2C%20and%20ocean%20sciences/Ocean/%20marine%20sciences%20and%20atmospheric%20science",
+            "Biological%20and%20biomedical%20sciences/Ecology%2C%20evolutionary%20biology%2C%20and%20epidemiology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Geology/%20earth%20science%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Geological%20and%20earth%20sciences%20nec",
+            "Geosciences%2C%20atmospheric%2C%20and%20ocean%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Geology"
+        ],
+        "top_category_urls": [
+            "Geosciences%2C%20atmospheric%2C%20and%20ocean%20sciences",
+            "Biological%20and%20biomedical%20sciences"
+        ],
+        "mid_category_urls": [
+            "Geosciences%2C%20atmospheric%2C%20and%20ocean%20sciences/Geological%20and%20earth%20sciences",
+            "Biological%20and%20biomedical%20sciences/Cell/%20cellular%20biology%20and%20anatomy",
+            "Geosciences%2C%20atmospheric%2C%20and%20ocean%20sciences/Ocean/%20marine%20sciences%20and%20atmospheric%20science",
+            "Biological%20and%20biomedical%20sciences/Ecology%2C%20evolutionary%20biology%2C%20and%20epidemiology"
+        ],
+        "low_category_urls": [
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Marine%20sciences",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Marine%20biology%20and%20biological%20oceanography",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Developmental%20biology%20and%20embryology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology%20and%20evolutionary%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Cell/%20cellular%20and%20molecular%20biology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Geological%20and%20earth%20sciences%20nec",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Geology/%20earth%20science%2C%20general",
+            "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Geology"
+        ],
+        "themes": [
+            "growth dynamics",
+            "habitat quality",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "body size"
+        ],
+        "journals": [
+            "Herpetologica"
         ]
     }
 ]

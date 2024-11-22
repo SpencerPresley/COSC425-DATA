@@ -1,452 +1,2083 @@
 [
     {
-        "_id": "Health%20sciences",
-        "url": "Health%20sciences",
-        "category_name": "Health sciences",
-        "faculty_count": 8,
-        "department_count": 4,
-        "article_count": 2,
-        "faculty": [
-            "Tim Werner",
-            "Colin Johnson",
-            "Lisa Marquette",
-            "Nicholas Rolnick",
-            "Masoud Moghaddam",
-            "Nicholas Licameli",
-            "Brent Fedorko",
-            "Jessica Walter"
-        ],
-        "departments": [
-            "Salisbury University, Salisbury, MD.",
-            "University of Maryland Eastern Shore, Princess Anne, MD. (Sponsor: Tim Werner, FACSM)",
-            "Lehman College, New York, NY.",
-            "Strength Together Inc., Rutherford, NJ."
-        ],
-        "titles": [
-            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
-            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
-        ],
-        "tc_count": 0,
-        "citation_average": 0.0,
-        "doi_list": [
-            "10.1249/01.mss.0000983480.29368.36",
-            "10.1249/01.mss.0000980200.41641.da"
-        ],
-        "themes": [
-            "Exercise Physiology",
-            "Arterial Stiffness",
-            "Acute Effects of Exercise",
-            "Health Implications of Exercise",
-            "Blood Flow Restriction Exercise",
-            "Vascular Function",
-            "Exercise and Cardiovascular Health",
-            "High Functional Resistance Training",
-            "Comparison of Exercise Modalities"
-        ]
-    },
-    {
         "_id": "Biological%20and%20biomedical%20sciences",
         "url": "Biological%20and%20biomedical%20sciences",
         "category_name": "Biological and biomedical sciences",
-        "faculty_count": 8,
+        "faculty_count": 11,
         "department_count": 4,
-        "article_count": 2,
+        "article_count": 3,
         "faculty": [
-            "Tim Werner",
-            "Colin Johnson",
-            "Lisa Marquette",
-            "Nicholas Rolnick",
-            "Masoud Moghaddam",
-            "Nicholas Licameli",
-            "Brent Fedorko",
-            "Jessica Walter"
+            "Callista Brown",
+            "Ruth Heying",
+            "Les Erickson",
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Brenna Noone",
+            "Patti Erickson",
+            "Stephen Rigoulot",
+            "Lauren Nicole DeLong",
+            "Matthew Russo",
+            "Joshua R. Biddle"
         ],
         "departments": [
-            "Salisbury University, Salisbury, MD.",
-            "University of Maryland Eastern Shore, Princess Anne, MD. (Sponsor: Tim Werner, FACSM)",
-            "Lehman College, New York, NY.",
-            "Strength Together Inc., Rutherford, NJ."
+            "Department of Biological Sciences Salisbury University Salisbury MD",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA",
+            "Virginia Tech Blacksburg VA",
+            "Salisbury University Salisbury MD"
         ],
         "titles": [
-            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
-            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+            "High\u2010Throughput, Fluorescent Analysis of Reactive Oxygen Species in C. elegans after Knockdown of mrck\u20101",
+            "Isolation, Identification, and Characterization of Local Wild Yeasts for Use In Fermentation",
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
         ],
-        "tc_count": 0,
-        "citation_average": 0.0,
+        "tc_count": 4,
+        "citation_average": 1.3333333333333333,
         "doi_list": [
-            "10.1249/01.mss.0000983480.29368.36",
-            "10.1249/01.mss.0000980200.41641.da"
+            "10.1096/fasebj.31.1_supplement.943.4",
+            "10.1655/herpetologica-d-16-00047.1",
+            "10.1096/fasebj.31.1_supplement.770.10"
         ],
         "themes": [
-            "Exercise Physiology",
-            "Arterial Stiffness",
-            "Acute Effects of Exercise",
-            "Health Implications of Exercise",
-            "Blood Flow Restriction Exercise",
-            "Vascular Function",
-            "Exercise and Cardiovascular Health",
-            "High Functional Resistance Training",
-            "Comparison of Exercise Modalities"
+            "habitat quality",
+            "Impact of local ingredients on craft brewing",
+            "growth dynamics",
+            "Oxidative stress and reactive oxygen species (ROS)",
+            "Commercial applications of unique yeast strains",
+            "Model organisms in biomedical research",
+            "Innovation in brewing practices",
+            "Wild yeast isolation and characterization",
+            "Neurodegenerative diseases",
+            "Role of MRCK-1 in cellular processes",
+            "Cellular defense mechanisms",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "Fermentation science and microbial diversity",
+            "body size"
         ]
     },
     {
-        "_id": "Health%20sciences/Health%20sciences%2C%20other",
-        "url": "Health%20sciences/Health%20sciences%2C%20other",
+        "_id": "Health%20sciences",
+        "url": "Health%20sciences",
+        "category_name": "Health sciences",
+        "faculty_count": 11,
+        "department_count": 4,
+        "article_count": 3,
+        "faculty": [
+            "Callista Brown",
+            "Ruth Heying",
+            "Les Erickson",
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Brenna Noone",
+            "Patti Erickson",
+            "Stephen Rigoulot",
+            "Lauren Nicole DeLong",
+            "Matthew Russo",
+            "Joshua R. Biddle"
+        ],
+        "departments": [
+            "Department of Biological Sciences Salisbury University Salisbury MD",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA",
+            "Virginia Tech Blacksburg VA",
+            "Salisbury University Salisbury MD"
+        ],
+        "titles": [
+            "High\u2010Throughput, Fluorescent Analysis of Reactive Oxygen Species in C. elegans after Knockdown of mrck\u20101",
+            "Isolation, Identification, and Characterization of Local Wild Yeasts for Use In Fermentation",
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
+        ],
+        "tc_count": 4,
+        "citation_average": 1.3333333333333333,
+        "doi_list": [
+            "10.1096/fasebj.31.1_supplement.943.4",
+            "10.1655/herpetologica-d-16-00047.1",
+            "10.1096/fasebj.31.1_supplement.770.10"
+        ],
+        "themes": [
+            "habitat quality",
+            "Impact of local ingredients on craft brewing",
+            "growth dynamics",
+            "Oxidative stress and reactive oxygen species (ROS)",
+            "Commercial applications of unique yeast strains",
+            "Model organisms in biomedical research",
+            "Innovation in brewing practices",
+            "Wild yeast isolation and characterization",
+            "Neurodegenerative diseases",
+            "Role of MRCK-1 in cellular processes",
+            "Cellular defense mechanisms",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "Fermentation science and microbial diversity",
+            "body size"
+        ]
+    },
+    {
+        "_id": "Biochemistry%2C%20biophysics%2C%20and%20molecular%20biology",
+        "url": "Biochemistry%2C%20biophysics%2C%20and%20molecular%20biology",
+        "category_name": "Biochemistry, biophysics, and molecular biology",
+        "faculty_count": 11,
+        "department_count": 4,
+        "article_count": 3,
+        "faculty": [
+            "Callista Brown",
+            "Ruth Heying",
+            "Les Erickson",
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Brenna Noone",
+            "Patti Erickson",
+            "Stephen Rigoulot",
+            "Lauren Nicole DeLong",
+            "Matthew Russo",
+            "Joshua R. Biddle"
+        ],
+        "departments": [
+            "Department of Biological Sciences Salisbury University Salisbury MD",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA",
+            "Virginia Tech Blacksburg VA",
+            "Salisbury University Salisbury MD"
+        ],
+        "titles": [
+            "High\u2010Throughput, Fluorescent Analysis of Reactive Oxygen Species in C. elegans after Knockdown of mrck\u20101",
+            "Isolation, Identification, and Characterization of Local Wild Yeasts for Use In Fermentation",
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
+        ],
+        "tc_count": 4,
+        "citation_average": 1.3333333333333333,
+        "doi_list": [
+            "10.1096/fasebj.31.1_supplement.943.4",
+            "10.1655/herpetologica-d-16-00047.1",
+            "10.1096/fasebj.31.1_supplement.770.10"
+        ],
+        "themes": [
+            "habitat quality",
+            "Impact of local ingredients on craft brewing",
+            "growth dynamics",
+            "Oxidative stress and reactive oxygen species (ROS)",
+            "Commercial applications of unique yeast strains",
+            "Model organisms in biomedical research",
+            "Innovation in brewing practices",
+            "Wild yeast isolation and characterization",
+            "Neurodegenerative diseases",
+            "Role of MRCK-1 in cellular processes",
+            "Cellular defense mechanisms",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "Fermentation science and microbial diversity",
+            "body size"
+        ]
+    },
+    {
+        "_id": "Biological%20and%20biomedical%20sciences/Cell/%20cellular%20biology%20and%20anatomy",
+        "url": "Biological%20and%20biomedical%20sciences/Cell/%20cellular%20biology%20and%20anatomy",
+        "category_name": "Cell/ cellular biology and anatomy",
+        "faculty_count": 11,
+        "department_count": 4,
+        "article_count": 3,
+        "faculty": [
+            "Callista Brown",
+            "Ruth Heying",
+            "Les Erickson",
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Brenna Noone",
+            "Patti Erickson",
+            "Stephen Rigoulot",
+            "Lauren Nicole DeLong",
+            "Matthew Russo",
+            "Joshua R. Biddle"
+        ],
+        "departments": [
+            "Department of Biological Sciences Salisbury University Salisbury MD",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA",
+            "Virginia Tech Blacksburg VA",
+            "Salisbury University Salisbury MD"
+        ],
+        "titles": [
+            "High\u2010Throughput, Fluorescent Analysis of Reactive Oxygen Species in C. elegans after Knockdown of mrck\u20101",
+            "Isolation, Identification, and Characterization of Local Wild Yeasts for Use In Fermentation",
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
+        ],
+        "tc_count": 4,
+        "citation_average": 1.3333333333333333,
+        "doi_list": [
+            "10.1096/fasebj.31.1_supplement.943.4",
+            "10.1655/herpetologica-d-16-00047.1",
+            "10.1096/fasebj.31.1_supplement.770.10"
+        ],
+        "themes": [
+            "habitat quality",
+            "Impact of local ingredients on craft brewing",
+            "growth dynamics",
+            "Oxidative stress and reactive oxygen species (ROS)",
+            "Commercial applications of unique yeast strains",
+            "Model organisms in biomedical research",
+            "Innovation in brewing practices",
+            "Wild yeast isolation and characterization",
+            "Neurodegenerative diseases",
+            "Role of MRCK-1 in cellular processes",
+            "Cellular defense mechanisms",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "Fermentation science and microbial diversity",
+            "body size"
+        ]
+    },
+    {
+        "_id": "Neurobiology%20and%20neurosciences",
+        "url": "Neurobiology%20and%20neurosciences",
+        "category_name": "Neurobiology and neurosciences",
+        "faculty_count": 11,
+        "department_count": 4,
+        "article_count": 3,
+        "faculty": [
+            "Callista Brown",
+            "Ruth Heying",
+            "Les Erickson",
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Brenna Noone",
+            "Patti Erickson",
+            "Stephen Rigoulot",
+            "Lauren Nicole DeLong",
+            "Matthew Russo",
+            "Joshua R. Biddle"
+        ],
+        "departments": [
+            "Department of Biological Sciences Salisbury University Salisbury MD",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA",
+            "Virginia Tech Blacksburg VA",
+            "Salisbury University Salisbury MD"
+        ],
+        "titles": [
+            "High\u2010Throughput, Fluorescent Analysis of Reactive Oxygen Species in C. elegans after Knockdown of mrck\u20101",
+            "Isolation, Identification, and Characterization of Local Wild Yeasts for Use In Fermentation",
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
+        ],
+        "tc_count": 4,
+        "citation_average": 1.3333333333333333,
+        "doi_list": [
+            "10.1096/fasebj.31.1_supplement.943.4",
+            "10.1655/herpetologica-d-16-00047.1",
+            "10.1096/fasebj.31.1_supplement.770.10"
+        ],
+        "themes": [
+            "habitat quality",
+            "Impact of local ingredients on craft brewing",
+            "growth dynamics",
+            "Oxidative stress and reactive oxygen species (ROS)",
+            "Commercial applications of unique yeast strains",
+            "Model organisms in biomedical research",
+            "Innovation in brewing practices",
+            "Wild yeast isolation and characterization",
+            "Neurodegenerative diseases",
+            "Role of MRCK-1 in cellular processes",
+            "Cellular defense mechanisms",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "Fermentation science and microbial diversity",
+            "body size"
+        ]
+    },
+    {
+        "_id": "Health%20sciences%2C%20other",
+        "url": "Health%20sciences%2C%20other",
         "category_name": "Health sciences, other",
-        "faculty_count": 8,
+        "faculty_count": 11,
         "department_count": 4,
-        "article_count": 2,
+        "article_count": 3,
         "faculty": [
-            "Tim Werner",
-            "Colin Johnson",
-            "Lisa Marquette",
-            "Nicholas Rolnick",
-            "Masoud Moghaddam",
-            "Nicholas Licameli",
-            "Brent Fedorko",
-            "Jessica Walter"
+            "Callista Brown",
+            "Ruth Heying",
+            "Les Erickson",
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Brenna Noone",
+            "Patti Erickson",
+            "Stephen Rigoulot",
+            "Lauren Nicole DeLong",
+            "Matthew Russo",
+            "Joshua R. Biddle"
         ],
         "departments": [
-            "Salisbury University, Salisbury, MD.",
-            "University of Maryland Eastern Shore, Princess Anne, MD. (Sponsor: Tim Werner, FACSM)",
-            "Lehman College, New York, NY.",
-            "Strength Together Inc., Rutherford, NJ."
+            "Department of Biological Sciences Salisbury University Salisbury MD",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA",
+            "Virginia Tech Blacksburg VA",
+            "Salisbury University Salisbury MD"
         ],
         "titles": [
-            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
-            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+            "High\u2010Throughput, Fluorescent Analysis of Reactive Oxygen Species in C. elegans after Knockdown of mrck\u20101",
+            "Isolation, Identification, and Characterization of Local Wild Yeasts for Use In Fermentation",
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
         ],
-        "tc_count": 0,
-        "citation_average": 0.0,
+        "tc_count": 4,
+        "citation_average": 1.3333333333333333,
         "doi_list": [
-            "10.1249/01.mss.0000983480.29368.36",
-            "10.1249/01.mss.0000980200.41641.da"
+            "10.1096/fasebj.31.1_supplement.943.4",
+            "10.1655/herpetologica-d-16-00047.1",
+            "10.1096/fasebj.31.1_supplement.770.10"
         ],
         "themes": [
-            "Exercise Physiology",
-            "Arterial Stiffness",
-            "Acute Effects of Exercise",
-            "Health Implications of Exercise",
-            "Blood Flow Restriction Exercise",
-            "Vascular Function",
-            "Exercise and Cardiovascular Health",
-            "High Functional Resistance Training",
-            "Comparison of Exercise Modalities"
+            "habitat quality",
+            "Impact of local ingredients on craft brewing",
+            "growth dynamics",
+            "Oxidative stress and reactive oxygen species (ROS)",
+            "Commercial applications of unique yeast strains",
+            "Model organisms in biomedical research",
+            "Innovation in brewing practices",
+            "Wild yeast isolation and characterization",
+            "Neurodegenerative diseases",
+            "Role of MRCK-1 in cellular processes",
+            "Cellular defense mechanisms",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "Fermentation science and microbial diversity",
+            "body size"
         ]
     },
     {
-        "_id": "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
-        "url": "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
-        "category_name": "Physiology, oncology and cancer biology",
-        "faculty_count": 8,
+        "_id": "Public%20health",
+        "url": "Public%20health",
+        "category_name": "Public health",
+        "faculty_count": 11,
         "department_count": 4,
-        "article_count": 2,
+        "article_count": 3,
         "faculty": [
-            "Tim Werner",
-            "Colin Johnson",
-            "Lisa Marquette",
-            "Nicholas Rolnick",
-            "Masoud Moghaddam",
-            "Nicholas Licameli",
-            "Brent Fedorko",
-            "Jessica Walter"
+            "Callista Brown",
+            "Ruth Heying",
+            "Les Erickson",
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Brenna Noone",
+            "Patti Erickson",
+            "Stephen Rigoulot",
+            "Lauren Nicole DeLong",
+            "Matthew Russo",
+            "Joshua R. Biddle"
         ],
         "departments": [
-            "Salisbury University, Salisbury, MD.",
-            "University of Maryland Eastern Shore, Princess Anne, MD. (Sponsor: Tim Werner, FACSM)",
-            "Lehman College, New York, NY.",
-            "Strength Together Inc., Rutherford, NJ."
+            "Department of Biological Sciences Salisbury University Salisbury MD",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA",
+            "Virginia Tech Blacksburg VA",
+            "Salisbury University Salisbury MD"
         ],
         "titles": [
-            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
-            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+            "High\u2010Throughput, Fluorescent Analysis of Reactive Oxygen Species in C. elegans after Knockdown of mrck\u20101",
+            "Isolation, Identification, and Characterization of Local Wild Yeasts for Use In Fermentation",
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
         ],
-        "tc_count": 0,
-        "citation_average": 0.0,
+        "tc_count": 4,
+        "citation_average": 1.3333333333333333,
         "doi_list": [
-            "10.1249/01.mss.0000983480.29368.36",
-            "10.1249/01.mss.0000980200.41641.da"
+            "10.1096/fasebj.31.1_supplement.943.4",
+            "10.1655/herpetologica-d-16-00047.1",
+            "10.1096/fasebj.31.1_supplement.770.10"
         ],
         "themes": [
-            "Exercise Physiology",
-            "Arterial Stiffness",
-            "Acute Effects of Exercise",
-            "Health Implications of Exercise",
-            "Blood Flow Restriction Exercise",
-            "Vascular Function",
-            "Exercise and Cardiovascular Health",
-            "High Functional Resistance Training",
-            "Comparison of Exercise Modalities"
+            "habitat quality",
+            "Impact of local ingredients on craft brewing",
+            "growth dynamics",
+            "Oxidative stress and reactive oxygen species (ROS)",
+            "Commercial applications of unique yeast strains",
+            "Model organisms in biomedical research",
+            "Innovation in brewing practices",
+            "Wild yeast isolation and characterization",
+            "Neurodegenerative diseases",
+            "Role of MRCK-1 in cellular processes",
+            "Cellular defense mechanisms",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "Fermentation science and microbial diversity",
+            "body size"
+        ]
+    },
+    {
+        "_id": "Biochemistry",
+        "url": "Biochemistry",
+        "category_name": "Biochemistry",
+        "faculty_count": 11,
+        "department_count": 4,
+        "article_count": 3,
+        "faculty": [
+            "Callista Brown",
+            "Ruth Heying",
+            "Les Erickson",
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Brenna Noone",
+            "Patti Erickson",
+            "Stephen Rigoulot",
+            "Lauren Nicole DeLong",
+            "Matthew Russo",
+            "Joshua R. Biddle"
+        ],
+        "departments": [
+            "Department of Biological Sciences Salisbury University Salisbury MD",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA",
+            "Virginia Tech Blacksburg VA",
+            "Salisbury University Salisbury MD"
+        ],
+        "titles": [
+            "High\u2010Throughput, Fluorescent Analysis of Reactive Oxygen Species in C. elegans after Knockdown of mrck\u20101",
+            "Isolation, Identification, and Characterization of Local Wild Yeasts for Use In Fermentation",
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
+        ],
+        "tc_count": 4,
+        "citation_average": 1.3333333333333333,
+        "doi_list": [
+            "10.1096/fasebj.31.1_supplement.943.4",
+            "10.1655/herpetologica-d-16-00047.1",
+            "10.1096/fasebj.31.1_supplement.770.10"
+        ],
+        "themes": [
+            "habitat quality",
+            "Impact of local ingredients on craft brewing",
+            "growth dynamics",
+            "Oxidative stress and reactive oxygen species (ROS)",
+            "Commercial applications of unique yeast strains",
+            "Model organisms in biomedical research",
+            "Innovation in brewing practices",
+            "Wild yeast isolation and characterization",
+            "Neurodegenerative diseases",
+            "Role of MRCK-1 in cellular processes",
+            "Cellular defense mechanisms",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "Fermentation science and microbial diversity",
+            "body size"
+        ]
+    },
+    {
+        "_id": "Biochemistry%20and%20molecular%20biology",
+        "url": "Biochemistry%20and%20molecular%20biology",
+        "category_name": "Biochemistry and molecular biology",
+        "faculty_count": 11,
+        "department_count": 4,
+        "article_count": 3,
+        "faculty": [
+            "Callista Brown",
+            "Ruth Heying",
+            "Les Erickson",
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Brenna Noone",
+            "Patti Erickson",
+            "Stephen Rigoulot",
+            "Lauren Nicole DeLong",
+            "Matthew Russo",
+            "Joshua R. Biddle"
+        ],
+        "departments": [
+            "Department of Biological Sciences Salisbury University Salisbury MD",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA",
+            "Virginia Tech Blacksburg VA",
+            "Salisbury University Salisbury MD"
+        ],
+        "titles": [
+            "High\u2010Throughput, Fluorescent Analysis of Reactive Oxygen Species in C. elegans after Knockdown of mrck\u20101",
+            "Isolation, Identification, and Characterization of Local Wild Yeasts for Use In Fermentation",
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
+        ],
+        "tc_count": 4,
+        "citation_average": 1.3333333333333333,
+        "doi_list": [
+            "10.1096/fasebj.31.1_supplement.943.4",
+            "10.1655/herpetologica-d-16-00047.1",
+            "10.1096/fasebj.31.1_supplement.770.10"
+        ],
+        "themes": [
+            "habitat quality",
+            "Impact of local ingredients on craft brewing",
+            "growth dynamics",
+            "Oxidative stress and reactive oxygen species (ROS)",
+            "Commercial applications of unique yeast strains",
+            "Model organisms in biomedical research",
+            "Innovation in brewing practices",
+            "Wild yeast isolation and characterization",
+            "Neurodegenerative diseases",
+            "Role of MRCK-1 in cellular processes",
+            "Cellular defense mechanisms",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "Fermentation science and microbial diversity",
+            "body size"
+        ]
+    },
+    {
+        "_id": "Molecular%20biology",
+        "url": "Molecular%20biology",
+        "category_name": "Molecular biology",
+        "faculty_count": 11,
+        "department_count": 4,
+        "article_count": 3,
+        "faculty": [
+            "Callista Brown",
+            "Ruth Heying",
+            "Les Erickson",
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Brenna Noone",
+            "Patti Erickson",
+            "Stephen Rigoulot",
+            "Lauren Nicole DeLong",
+            "Matthew Russo",
+            "Joshua R. Biddle"
+        ],
+        "departments": [
+            "Department of Biological Sciences Salisbury University Salisbury MD",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA",
+            "Virginia Tech Blacksburg VA",
+            "Salisbury University Salisbury MD"
+        ],
+        "titles": [
+            "High\u2010Throughput, Fluorescent Analysis of Reactive Oxygen Species in C. elegans after Knockdown of mrck\u20101",
+            "Isolation, Identification, and Characterization of Local Wild Yeasts for Use In Fermentation",
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
+        ],
+        "tc_count": 4,
+        "citation_average": 1.3333333333333333,
+        "doi_list": [
+            "10.1096/fasebj.31.1_supplement.943.4",
+            "10.1655/herpetologica-d-16-00047.1",
+            "10.1096/fasebj.31.1_supplement.770.10"
+        ],
+        "themes": [
+            "habitat quality",
+            "Impact of local ingredients on craft brewing",
+            "growth dynamics",
+            "Oxidative stress and reactive oxygen species (ROS)",
+            "Commercial applications of unique yeast strains",
+            "Model organisms in biomedical research",
+            "Innovation in brewing practices",
+            "Wild yeast isolation and characterization",
+            "Neurodegenerative diseases",
+            "Role of MRCK-1 in cellular processes",
+            "Cellular defense mechanisms",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "Fermentation science and microbial diversity",
+            "body size"
+        ]
+    },
+    {
+        "_id": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Cell/%20cellular%20and%20molecular%20biology",
+        "url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Cell/%20cellular%20and%20molecular%20biology",
+        "category_name": "Cell/ cellular and molecular biology",
+        "faculty_count": 11,
+        "department_count": 4,
+        "article_count": 3,
+        "faculty": [
+            "Callista Brown",
+            "Ruth Heying",
+            "Les Erickson",
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Brenna Noone",
+            "Patti Erickson",
+            "Stephen Rigoulot",
+            "Lauren Nicole DeLong",
+            "Matthew Russo",
+            "Joshua R. Biddle"
+        ],
+        "departments": [
+            "Department of Biological Sciences Salisbury University Salisbury MD",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA",
+            "Virginia Tech Blacksburg VA",
+            "Salisbury University Salisbury MD"
+        ],
+        "titles": [
+            "High\u2010Throughput, Fluorescent Analysis of Reactive Oxygen Species in C. elegans after Knockdown of mrck\u20101",
+            "Isolation, Identification, and Characterization of Local Wild Yeasts for Use In Fermentation",
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
+        ],
+        "tc_count": 4,
+        "citation_average": 1.3333333333333333,
+        "doi_list": [
+            "10.1096/fasebj.31.1_supplement.943.4",
+            "10.1655/herpetologica-d-16-00047.1",
+            "10.1096/fasebj.31.1_supplement.770.10"
+        ],
+        "themes": [
+            "habitat quality",
+            "Impact of local ingredients on craft brewing",
+            "growth dynamics",
+            "Oxidative stress and reactive oxygen species (ROS)",
+            "Commercial applications of unique yeast strains",
+            "Model organisms in biomedical research",
+            "Innovation in brewing practices",
+            "Wild yeast isolation and characterization",
+            "Neurodegenerative diseases",
+            "Role of MRCK-1 in cellular processes",
+            "Cellular defense mechanisms",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "Fermentation science and microbial diversity",
+            "body size"
+        ]
+    },
+    {
+        "_id": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Developmental%20biology%20and%20embryology",
+        "url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Developmental%20biology%20and%20embryology",
+        "category_name": "Developmental biology and embryology",
+        "faculty_count": 11,
+        "department_count": 4,
+        "article_count": 3,
+        "faculty": [
+            "Callista Brown",
+            "Ruth Heying",
+            "Les Erickson",
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Brenna Noone",
+            "Patti Erickson",
+            "Stephen Rigoulot",
+            "Lauren Nicole DeLong",
+            "Matthew Russo",
+            "Joshua R. Biddle"
+        ],
+        "departments": [
+            "Department of Biological Sciences Salisbury University Salisbury MD",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA",
+            "Virginia Tech Blacksburg VA",
+            "Salisbury University Salisbury MD"
+        ],
+        "titles": [
+            "High\u2010Throughput, Fluorescent Analysis of Reactive Oxygen Species in C. elegans after Knockdown of mrck\u20101",
+            "Isolation, Identification, and Characterization of Local Wild Yeasts for Use In Fermentation",
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
+        ],
+        "tc_count": 4,
+        "citation_average": 1.3333333333333333,
+        "doi_list": [
+            "10.1096/fasebj.31.1_supplement.943.4",
+            "10.1655/herpetologica-d-16-00047.1",
+            "10.1096/fasebj.31.1_supplement.770.10"
+        ],
+        "themes": [
+            "habitat quality",
+            "Impact of local ingredients on craft brewing",
+            "growth dynamics",
+            "Oxidative stress and reactive oxygen species (ROS)",
+            "Commercial applications of unique yeast strains",
+            "Model organisms in biomedical research",
+            "Innovation in brewing practices",
+            "Wild yeast isolation and characterization",
+            "Neurodegenerative diseases",
+            "Role of MRCK-1 in cellular processes",
+            "Cellular defense mechanisms",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "Fermentation science and microbial diversity",
+            "body size"
+        ]
+    },
+    {
+        "_id": "Neurobiology%20and%20anatomy",
+        "url": "Neurobiology%20and%20anatomy",
+        "category_name": "Neurobiology and anatomy",
+        "faculty_count": 11,
+        "department_count": 4,
+        "article_count": 3,
+        "faculty": [
+            "Callista Brown",
+            "Ruth Heying",
+            "Les Erickson",
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Brenna Noone",
+            "Patti Erickson",
+            "Stephen Rigoulot",
+            "Lauren Nicole DeLong",
+            "Matthew Russo",
+            "Joshua R. Biddle"
+        ],
+        "departments": [
+            "Department of Biological Sciences Salisbury University Salisbury MD",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA",
+            "Virginia Tech Blacksburg VA",
+            "Salisbury University Salisbury MD"
+        ],
+        "titles": [
+            "High\u2010Throughput, Fluorescent Analysis of Reactive Oxygen Species in C. elegans after Knockdown of mrck\u20101",
+            "Isolation, Identification, and Characterization of Local Wild Yeasts for Use In Fermentation",
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
+        ],
+        "tc_count": 4,
+        "citation_average": 1.3333333333333333,
+        "doi_list": [
+            "10.1096/fasebj.31.1_supplement.943.4",
+            "10.1655/herpetologica-d-16-00047.1",
+            "10.1096/fasebj.31.1_supplement.770.10"
+        ],
+        "themes": [
+            "habitat quality",
+            "Impact of local ingredients on craft brewing",
+            "growth dynamics",
+            "Oxidative stress and reactive oxygen species (ROS)",
+            "Commercial applications of unique yeast strains",
+            "Model organisms in biomedical research",
+            "Innovation in brewing practices",
+            "Wild yeast isolation and characterization",
+            "Neurodegenerative diseases",
+            "Role of MRCK-1 in cellular processes",
+            "Cellular defense mechanisms",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "Fermentation science and microbial diversity",
+            "body size"
+        ]
+    },
+    {
+        "_id": "Neuroscience",
+        "url": "Neuroscience",
+        "category_name": "Neuroscience",
+        "faculty_count": 11,
+        "department_count": 4,
+        "article_count": 3,
+        "faculty": [
+            "Callista Brown",
+            "Ruth Heying",
+            "Les Erickson",
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Brenna Noone",
+            "Patti Erickson",
+            "Stephen Rigoulot",
+            "Lauren Nicole DeLong",
+            "Matthew Russo",
+            "Joshua R. Biddle"
+        ],
+        "departments": [
+            "Department of Biological Sciences Salisbury University Salisbury MD",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA",
+            "Virginia Tech Blacksburg VA",
+            "Salisbury University Salisbury MD"
+        ],
+        "titles": [
+            "High\u2010Throughput, Fluorescent Analysis of Reactive Oxygen Species in C. elegans after Knockdown of mrck\u20101",
+            "Isolation, Identification, and Characterization of Local Wild Yeasts for Use In Fermentation",
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
+        ],
+        "tc_count": 4,
+        "citation_average": 1.3333333333333333,
+        "doi_list": [
+            "10.1096/fasebj.31.1_supplement.943.4",
+            "10.1655/herpetologica-d-16-00047.1",
+            "10.1096/fasebj.31.1_supplement.770.10"
+        ],
+        "themes": [
+            "habitat quality",
+            "Impact of local ingredients on craft brewing",
+            "growth dynamics",
+            "Oxidative stress and reactive oxygen species (ROS)",
+            "Commercial applications of unique yeast strains",
+            "Model organisms in biomedical research",
+            "Innovation in brewing practices",
+            "Wild yeast isolation and characterization",
+            "Neurodegenerative diseases",
+            "Role of MRCK-1 in cellular processes",
+            "Cellular defense mechanisms",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "Fermentation science and microbial diversity",
+            "body size"
+        ]
+    },
+    {
+        "_id": "Health%20sciences%2C%20general",
+        "url": "Health%20sciences%2C%20general",
+        "category_name": "Health sciences, general",
+        "faculty_count": 11,
+        "department_count": 4,
+        "article_count": 3,
+        "faculty": [
+            "Callista Brown",
+            "Ruth Heying",
+            "Les Erickson",
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Brenna Noone",
+            "Patti Erickson",
+            "Stephen Rigoulot",
+            "Lauren Nicole DeLong",
+            "Matthew Russo",
+            "Joshua R. Biddle"
+        ],
+        "departments": [
+            "Department of Biological Sciences Salisbury University Salisbury MD",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA",
+            "Virginia Tech Blacksburg VA",
+            "Salisbury University Salisbury MD"
+        ],
+        "titles": [
+            "High\u2010Throughput, Fluorescent Analysis of Reactive Oxygen Species in C. elegans after Knockdown of mrck\u20101",
+            "Isolation, Identification, and Characterization of Local Wild Yeasts for Use In Fermentation",
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
+        ],
+        "tc_count": 4,
+        "citation_average": 1.3333333333333333,
+        "doi_list": [
+            "10.1096/fasebj.31.1_supplement.943.4",
+            "10.1655/herpetologica-d-16-00047.1",
+            "10.1096/fasebj.31.1_supplement.770.10"
+        ],
+        "themes": [
+            "habitat quality",
+            "Impact of local ingredients on craft brewing",
+            "growth dynamics",
+            "Oxidative stress and reactive oxygen species (ROS)",
+            "Commercial applications of unique yeast strains",
+            "Model organisms in biomedical research",
+            "Innovation in brewing practices",
+            "Wild yeast isolation and characterization",
+            "Neurodegenerative diseases",
+            "Role of MRCK-1 in cellular processes",
+            "Cellular defense mechanisms",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "Fermentation science and microbial diversity",
+            "body size"
+        ]
+    },
+    {
+        "_id": "Medical%20clinical%20science",
+        "url": "Medical%20clinical%20science",
+        "category_name": "Medical clinical science",
+        "faculty_count": 11,
+        "department_count": 4,
+        "article_count": 3,
+        "faculty": [
+            "Callista Brown",
+            "Ruth Heying",
+            "Les Erickson",
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Brenna Noone",
+            "Patti Erickson",
+            "Stephen Rigoulot",
+            "Lauren Nicole DeLong",
+            "Matthew Russo",
+            "Joshua R. Biddle"
+        ],
+        "departments": [
+            "Department of Biological Sciences Salisbury University Salisbury MD",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA",
+            "Virginia Tech Blacksburg VA",
+            "Salisbury University Salisbury MD"
+        ],
+        "titles": [
+            "High\u2010Throughput, Fluorescent Analysis of Reactive Oxygen Species in C. elegans after Knockdown of mrck\u20101",
+            "Isolation, Identification, and Characterization of Local Wild Yeasts for Use In Fermentation",
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
+        ],
+        "tc_count": 4,
+        "citation_average": 1.3333333333333333,
+        "doi_list": [
+            "10.1096/fasebj.31.1_supplement.943.4",
+            "10.1655/herpetologica-d-16-00047.1",
+            "10.1096/fasebj.31.1_supplement.770.10"
+        ],
+        "themes": [
+            "habitat quality",
+            "Impact of local ingredients on craft brewing",
+            "growth dynamics",
+            "Oxidative stress and reactive oxygen species (ROS)",
+            "Commercial applications of unique yeast strains",
+            "Model organisms in biomedical research",
+            "Innovation in brewing practices",
+            "Wild yeast isolation and characterization",
+            "Neurodegenerative diseases",
+            "Role of MRCK-1 in cellular processes",
+            "Cellular defense mechanisms",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "Fermentation science and microbial diversity",
+            "body size"
+        ]
+    },
+    {
+        "_id": "Rehabilitation%20and%20therapeutic%20sciences",
+        "url": "Rehabilitation%20and%20therapeutic%20sciences",
+        "category_name": "Rehabilitation and therapeutic sciences",
+        "faculty_count": 11,
+        "department_count": 4,
+        "article_count": 3,
+        "faculty": [
+            "Callista Brown",
+            "Ruth Heying",
+            "Les Erickson",
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Brenna Noone",
+            "Patti Erickson",
+            "Stephen Rigoulot",
+            "Lauren Nicole DeLong",
+            "Matthew Russo",
+            "Joshua R. Biddle"
+        ],
+        "departments": [
+            "Department of Biological Sciences Salisbury University Salisbury MD",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA",
+            "Virginia Tech Blacksburg VA",
+            "Salisbury University Salisbury MD"
+        ],
+        "titles": [
+            "High\u2010Throughput, Fluorescent Analysis of Reactive Oxygen Species in C. elegans after Knockdown of mrck\u20101",
+            "Isolation, Identification, and Characterization of Local Wild Yeasts for Use In Fermentation",
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
+        ],
+        "tc_count": 4,
+        "citation_average": 1.3333333333333333,
+        "doi_list": [
+            "10.1096/fasebj.31.1_supplement.943.4",
+            "10.1655/herpetologica-d-16-00047.1",
+            "10.1096/fasebj.31.1_supplement.770.10"
+        ],
+        "themes": [
+            "habitat quality",
+            "Impact of local ingredients on craft brewing",
+            "growth dynamics",
+            "Oxidative stress and reactive oxygen species (ROS)",
+            "Commercial applications of unique yeast strains",
+            "Model organisms in biomedical research",
+            "Innovation in brewing practices",
+            "Wild yeast isolation and characterization",
+            "Neurodegenerative diseases",
+            "Role of MRCK-1 in cellular processes",
+            "Cellular defense mechanisms",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "Fermentation science and microbial diversity",
+            "body size"
+        ]
+    },
+    {
+        "_id": "Public%20health%2C%20general",
+        "url": "Public%20health%2C%20general",
+        "category_name": "Public health, general",
+        "faculty_count": 11,
+        "department_count": 4,
+        "article_count": 3,
+        "faculty": [
+            "Callista Brown",
+            "Ruth Heying",
+            "Les Erickson",
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Brenna Noone",
+            "Patti Erickson",
+            "Stephen Rigoulot",
+            "Lauren Nicole DeLong",
+            "Matthew Russo",
+            "Joshua R. Biddle"
+        ],
+        "departments": [
+            "Department of Biological Sciences Salisbury University Salisbury MD",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA",
+            "Virginia Tech Blacksburg VA",
+            "Salisbury University Salisbury MD"
+        ],
+        "titles": [
+            "High\u2010Throughput, Fluorescent Analysis of Reactive Oxygen Species in C. elegans after Knockdown of mrck\u20101",
+            "Isolation, Identification, and Characterization of Local Wild Yeasts for Use In Fermentation",
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
+        ],
+        "tc_count": 4,
+        "citation_average": 1.3333333333333333,
+        "doi_list": [
+            "10.1096/fasebj.31.1_supplement.943.4",
+            "10.1655/herpetologica-d-16-00047.1",
+            "10.1096/fasebj.31.1_supplement.770.10"
+        ],
+        "themes": [
+            "habitat quality",
+            "Impact of local ingredients on craft brewing",
+            "growth dynamics",
+            "Oxidative stress and reactive oxygen species (ROS)",
+            "Commercial applications of unique yeast strains",
+            "Model organisms in biomedical research",
+            "Innovation in brewing practices",
+            "Wild yeast isolation and characterization",
+            "Neurodegenerative diseases",
+            "Role of MRCK-1 in cellular processes",
+            "Cellular defense mechanisms",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "Fermentation science and microbial diversity",
+            "body size"
+        ]
+    },
+    {
+        "_id": "Environmental%20health",
+        "url": "Environmental%20health",
+        "category_name": "Environmental health",
+        "faculty_count": 11,
+        "department_count": 4,
+        "article_count": 3,
+        "faculty": [
+            "Callista Brown",
+            "Ruth Heying",
+            "Les Erickson",
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Brenna Noone",
+            "Patti Erickson",
+            "Stephen Rigoulot",
+            "Lauren Nicole DeLong",
+            "Matthew Russo",
+            "Joshua R. Biddle"
+        ],
+        "departments": [
+            "Department of Biological Sciences Salisbury University Salisbury MD",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA",
+            "Virginia Tech Blacksburg VA",
+            "Salisbury University Salisbury MD"
+        ],
+        "titles": [
+            "High\u2010Throughput, Fluorescent Analysis of Reactive Oxygen Species in C. elegans after Knockdown of mrck\u20101",
+            "Isolation, Identification, and Characterization of Local Wild Yeasts for Use In Fermentation",
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
+        ],
+        "tc_count": 4,
+        "citation_average": 1.3333333333333333,
+        "doi_list": [
+            "10.1096/fasebj.31.1_supplement.943.4",
+            "10.1655/herpetologica-d-16-00047.1",
+            "10.1096/fasebj.31.1_supplement.770.10"
+        ],
+        "themes": [
+            "habitat quality",
+            "Impact of local ingredients on craft brewing",
+            "growth dynamics",
+            "Oxidative stress and reactive oxygen species (ROS)",
+            "Commercial applications of unique yeast strains",
+            "Model organisms in biomedical research",
+            "Innovation in brewing practices",
+            "Wild yeast isolation and characterization",
+            "Neurodegenerative diseases",
+            "Role of MRCK-1 in cellular processes",
+            "Cellular defense mechanisms",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "Fermentation science and microbial diversity",
+            "body size"
+        ]
+    },
+    {
+        "_id": "Agricultural%20sciences%20and%20natural%20resources",
+        "url": "Agricultural%20sciences%20and%20natural%20resources",
+        "category_name": "Agricultural sciences and natural resources",
+        "faculty_count": 6,
+        "department_count": 2,
+        "article_count": 2,
+        "faculty": [
+            "Les Erickson",
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Brenna Noone",
+            "Lauren Nicole DeLong",
+            "Joshua R. Biddle"
+        ],
+        "departments": [
+            "Department of Biological Sciences Salisbury University Salisbury MD",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA"
+        ],
+        "titles": [
+            "Isolation, Identification, and Characterization of Local Wild Yeasts for Use In Fermentation",
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
+        ],
+        "tc_count": 4,
+        "citation_average": 2.0,
+        "doi_list": [
+            "10.1096/fasebj.31.1_supplement.943.4",
+            "10.1655/herpetologica-d-16-00047.1"
+        ],
+        "themes": [
+            "habitat quality",
+            "growth dynamics",
+            "Impact of local ingredients on craft brewing",
+            "Commercial applications of unique yeast strains",
+            "Innovation in brewing practices",
+            "Wild yeast isolation and characterization",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "Fermentation science and microbial diversity",
+            "body size"
+        ]
+    },
+    {
+        "_id": "Microbiology%20and%20immunology",
+        "url": "Microbiology%20and%20immunology",
+        "category_name": "Microbiology and immunology",
+        "faculty_count": 6,
+        "department_count": 2,
+        "article_count": 2,
+        "faculty": [
+            "Les Erickson",
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Brenna Noone",
+            "Lauren Nicole DeLong",
+            "Joshua R. Biddle"
+        ],
+        "departments": [
+            "Department of Biological Sciences Salisbury University Salisbury MD",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA"
+        ],
+        "titles": [
+            "Isolation, Identification, and Characterization of Local Wild Yeasts for Use In Fermentation",
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
+        ],
+        "tc_count": 4,
+        "citation_average": 2.0,
+        "doi_list": [
+            "10.1096/fasebj.31.1_supplement.943.4",
+            "10.1655/herpetologica-d-16-00047.1"
+        ],
+        "themes": [
+            "habitat quality",
+            "growth dynamics",
+            "Impact of local ingredients on craft brewing",
+            "Commercial applications of unique yeast strains",
+            "Innovation in brewing practices",
+            "Wild yeast isolation and characterization",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "Fermentation science and microbial diversity",
+            "body size"
         ]
     },
     {
         "_id": "Biological%20and%20biomedical%20sciences%2C%20other",
         "url": "Biological%20and%20biomedical%20sciences%2C%20other",
         "category_name": "Biological and biomedical sciences, other",
-        "faculty_count": 8,
-        "department_count": 4,
+        "faculty_count": 6,
+        "department_count": 2,
         "article_count": 2,
         "faculty": [
-            "Tim Werner",
-            "Colin Johnson",
-            "Lisa Marquette",
-            "Nicholas Rolnick",
-            "Masoud Moghaddam",
-            "Nicholas Licameli",
-            "Brent Fedorko",
-            "Jessica Walter"
+            "Les Erickson",
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Brenna Noone",
+            "Lauren Nicole DeLong",
+            "Joshua R. Biddle"
         ],
         "departments": [
-            "Salisbury University, Salisbury, MD.",
-            "University of Maryland Eastern Shore, Princess Anne, MD. (Sponsor: Tim Werner, FACSM)",
-            "Lehman College, New York, NY.",
-            "Strength Together Inc., Rutherford, NJ."
+            "Department of Biological Sciences Salisbury University Salisbury MD",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA"
         ],
         "titles": [
-            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
-            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+            "Isolation, Identification, and Characterization of Local Wild Yeasts for Use In Fermentation",
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
         ],
-        "tc_count": 0,
-        "citation_average": 0.0,
+        "tc_count": 4,
+        "citation_average": 2.0,
         "doi_list": [
-            "10.1249/01.mss.0000983480.29368.36",
-            "10.1249/01.mss.0000980200.41641.da"
+            "10.1096/fasebj.31.1_supplement.943.4",
+            "10.1655/herpetologica-d-16-00047.1"
         ],
         "themes": [
-            "Exercise Physiology",
-            "Arterial Stiffness",
-            "Acute Effects of Exercise",
-            "Health Implications of Exercise",
-            "Blood Flow Restriction Exercise",
-            "Vascular Function",
-            "Exercise and Cardiovascular Health",
-            "High Functional Resistance Training",
-            "Comparison of Exercise Modalities"
+            "habitat quality",
+            "growth dynamics",
+            "Impact of local ingredients on craft brewing",
+            "Commercial applications of unique yeast strains",
+            "Innovation in brewing practices",
+            "Wild yeast isolation and characterization",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "Fermentation science and microbial diversity",
+            "body size"
         ]
     },
     {
-        "_id": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
-        "url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
-        "category_name": "Exercise science and kinesiology",
-        "faculty_count": 8,
-        "department_count": 4,
+        "_id": "Agricultural%2C%20animal%2C%20plant%2C%20and%20veterinary%20sciences",
+        "url": "Agricultural%2C%20animal%2C%20plant%2C%20and%20veterinary%20sciences",
+        "category_name": "Agricultural, animal, plant, and veterinary sciences",
+        "faculty_count": 6,
+        "department_count": 2,
         "article_count": 2,
         "faculty": [
-            "Tim Werner",
-            "Colin Johnson",
-            "Lisa Marquette",
-            "Nicholas Rolnick",
-            "Masoud Moghaddam",
-            "Nicholas Licameli",
-            "Brent Fedorko",
-            "Jessica Walter"
+            "Les Erickson",
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Brenna Noone",
+            "Lauren Nicole DeLong",
+            "Joshua R. Biddle"
         ],
         "departments": [
-            "Salisbury University, Salisbury, MD.",
-            "University of Maryland Eastern Shore, Princess Anne, MD. (Sponsor: Tim Werner, FACSM)",
-            "Lehman College, New York, NY.",
-            "Strength Together Inc., Rutherford, NJ."
+            "Department of Biological Sciences Salisbury University Salisbury MD",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA"
         ],
         "titles": [
-            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
-            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+            "Isolation, Identification, and Characterization of Local Wild Yeasts for Use In Fermentation",
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
         ],
-        "tc_count": 0,
-        "citation_average": 0.0,
+        "tc_count": 4,
+        "citation_average": 2.0,
         "doi_list": [
-            "10.1249/01.mss.0000983480.29368.36",
-            "10.1249/01.mss.0000980200.41641.da"
+            "10.1096/fasebj.31.1_supplement.943.4",
+            "10.1655/herpetologica-d-16-00047.1"
         ],
         "themes": [
-            "Exercise Physiology",
-            "Arterial Stiffness",
-            "Acute Effects of Exercise",
-            "Health Implications of Exercise",
-            "Blood Flow Restriction Exercise",
-            "Vascular Function",
-            "Exercise and Cardiovascular Health",
-            "High Functional Resistance Training",
-            "Comparison of Exercise Modalities"
+            "habitat quality",
+            "growth dynamics",
+            "Impact of local ingredients on craft brewing",
+            "Commercial applications of unique yeast strains",
+            "Innovation in brewing practices",
+            "Wild yeast isolation and characterization",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "Fermentation science and microbial diversity",
+            "body size"
         ]
     },
     {
-        "_id": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
-        "url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
-        "category_name": "Health sciences, general",
-        "faculty_count": 8,
-        "department_count": 4,
+        "_id": "Microbiology%2C%20general",
+        "url": "Microbiology%2C%20general",
+        "category_name": "Microbiology, general",
+        "faculty_count": 6,
+        "department_count": 2,
         "article_count": 2,
         "faculty": [
-            "Tim Werner",
-            "Colin Johnson",
-            "Lisa Marquette",
-            "Nicholas Rolnick",
-            "Masoud Moghaddam",
-            "Nicholas Licameli",
-            "Brent Fedorko",
-            "Jessica Walter"
+            "Les Erickson",
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Brenna Noone",
+            "Lauren Nicole DeLong",
+            "Joshua R. Biddle"
         ],
         "departments": [
-            "Salisbury University, Salisbury, MD.",
-            "University of Maryland Eastern Shore, Princess Anne, MD. (Sponsor: Tim Werner, FACSM)",
-            "Lehman College, New York, NY.",
-            "Strength Together Inc., Rutherford, NJ."
+            "Department of Biological Sciences Salisbury University Salisbury MD",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA"
         ],
         "titles": [
-            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
-            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+            "Isolation, Identification, and Characterization of Local Wild Yeasts for Use In Fermentation",
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
         ],
-        "tc_count": 0,
-        "citation_average": 0.0,
+        "tc_count": 4,
+        "citation_average": 2.0,
         "doi_list": [
-            "10.1249/01.mss.0000983480.29368.36",
-            "10.1249/01.mss.0000980200.41641.da"
+            "10.1096/fasebj.31.1_supplement.943.4",
+            "10.1655/herpetologica-d-16-00047.1"
         ],
         "themes": [
-            "Exercise Physiology",
-            "Arterial Stiffness",
-            "Acute Effects of Exercise",
-            "Health Implications of Exercise",
-            "Blood Flow Restriction Exercise",
-            "Vascular Function",
-            "Exercise and Cardiovascular Health",
-            "High Functional Resistance Training",
-            "Comparison of Exercise Modalities"
+            "habitat quality",
+            "growth dynamics",
+            "Impact of local ingredients on craft brewing",
+            "Commercial applications of unique yeast strains",
+            "Innovation in brewing practices",
+            "Wild yeast isolation and characterization",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "Fermentation science and microbial diversity",
+            "body size"
         ]
     },
     {
-        "_id": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
-        "url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
-        "category_name": "Exercise physiology and kinesiology",
-        "faculty_count": 8,
-        "department_count": 4,
+        "_id": "Biology/%20biological%20sciences%2C%20general",
+        "url": "Biology/%20biological%20sciences%2C%20general",
+        "category_name": "Biology/ biological sciences, general",
+        "faculty_count": 6,
+        "department_count": 2,
         "article_count": 2,
         "faculty": [
-            "Tim Werner",
-            "Colin Johnson",
-            "Lisa Marquette",
-            "Nicholas Rolnick",
-            "Masoud Moghaddam",
-            "Nicholas Licameli",
-            "Brent Fedorko",
-            "Jessica Walter"
+            "Les Erickson",
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Brenna Noone",
+            "Lauren Nicole DeLong",
+            "Joshua R. Biddle"
         ],
         "departments": [
-            "Salisbury University, Salisbury, MD.",
-            "University of Maryland Eastern Shore, Princess Anne, MD. (Sponsor: Tim Werner, FACSM)",
-            "Lehman College, New York, NY.",
-            "Strength Together Inc., Rutherford, NJ."
+            "Department of Biological Sciences Salisbury University Salisbury MD",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA"
         ],
         "titles": [
-            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
-            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+            "Isolation, Identification, and Characterization of Local Wild Yeasts for Use In Fermentation",
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
         ],
-        "tc_count": 0,
-        "citation_average": 0.0,
+        "tc_count": 4,
+        "citation_average": 2.0,
         "doi_list": [
-            "10.1249/01.mss.0000983480.29368.36",
-            "10.1249/01.mss.0000980200.41641.da"
+            "10.1096/fasebj.31.1_supplement.943.4",
+            "10.1655/herpetologica-d-16-00047.1"
         ],
         "themes": [
-            "Exercise Physiology",
-            "Arterial Stiffness",
-            "Acute Effects of Exercise",
-            "Health Implications of Exercise",
-            "Blood Flow Restriction Exercise",
-            "Vascular Function",
-            "Exercise and Cardiovascular Health",
-            "High Functional Resistance Training",
-            "Comparison of Exercise Modalities"
-        ]
-    },
-    {
-        "_id": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
-        "url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
-        "category_name": "Physiology, general",
-        "faculty_count": 8,
-        "department_count": 4,
-        "article_count": 2,
-        "faculty": [
-            "Tim Werner",
-            "Colin Johnson",
-            "Lisa Marquette",
-            "Nicholas Rolnick",
-            "Masoud Moghaddam",
-            "Nicholas Licameli",
-            "Brent Fedorko",
-            "Jessica Walter"
-        ],
-        "departments": [
-            "Salisbury University, Salisbury, MD.",
-            "University of Maryland Eastern Shore, Princess Anne, MD. (Sponsor: Tim Werner, FACSM)",
-            "Lehman College, New York, NY.",
-            "Strength Together Inc., Rutherford, NJ."
-        ],
-        "titles": [
-            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
-            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
-        ],
-        "tc_count": 0,
-        "citation_average": 0.0,
-        "doi_list": [
-            "10.1249/01.mss.0000983480.29368.36",
-            "10.1249/01.mss.0000980200.41641.da"
-        ],
-        "themes": [
-            "Exercise Physiology",
-            "Arterial Stiffness",
-            "Acute Effects of Exercise",
-            "Health Implications of Exercise",
-            "Blood Flow Restriction Exercise",
-            "Vascular Function",
-            "Exercise and Cardiovascular Health",
-            "High Functional Resistance Training",
-            "Comparison of Exercise Modalities"
+            "habitat quality",
+            "growth dynamics",
+            "Impact of local ingredients on craft brewing",
+            "Commercial applications of unique yeast strains",
+            "Innovation in brewing practices",
+            "Wild yeast isolation and characterization",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "Fermentation science and microbial diversity",
+            "body size"
         ]
     },
     {
         "_id": "Biomedical%20sciences%2C%20general",
         "url": "Biomedical%20sciences%2C%20general",
         "category_name": "Biomedical sciences, general",
-        "faculty_count": 8,
-        "department_count": 4,
+        "faculty_count": 6,
+        "department_count": 2,
         "article_count": 2,
         "faculty": [
-            "Tim Werner",
-            "Colin Johnson",
-            "Lisa Marquette",
-            "Nicholas Rolnick",
-            "Masoud Moghaddam",
-            "Nicholas Licameli",
-            "Brent Fedorko",
-            "Jessica Walter"
+            "Les Erickson",
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Brenna Noone",
+            "Lauren Nicole DeLong",
+            "Joshua R. Biddle"
         ],
         "departments": [
-            "Salisbury University, Salisbury, MD.",
-            "University of Maryland Eastern Shore, Princess Anne, MD. (Sponsor: Tim Werner, FACSM)",
-            "Lehman College, New York, NY.",
-            "Strength Together Inc., Rutherford, NJ."
+            "Department of Biological Sciences Salisbury University Salisbury MD",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA"
         ],
         "titles": [
-            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
-            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+            "Isolation, Identification, and Characterization of Local Wild Yeasts for Use In Fermentation",
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
         ],
-        "tc_count": 0,
-        "citation_average": 0.0,
+        "tc_count": 4,
+        "citation_average": 2.0,
         "doi_list": [
-            "10.1249/01.mss.0000983480.29368.36",
-            "10.1249/01.mss.0000980200.41641.da"
+            "10.1096/fasebj.31.1_supplement.943.4",
+            "10.1655/herpetologica-d-16-00047.1"
         ],
         "themes": [
-            "Exercise Physiology",
-            "Arterial Stiffness",
-            "Acute Effects of Exercise",
-            "Health Implications of Exercise",
-            "Blood Flow Restriction Exercise",
-            "Vascular Function",
-            "Exercise and Cardiovascular Health",
-            "High Functional Resistance Training",
-            "Comparison of Exercise Modalities"
+            "habitat quality",
+            "growth dynamics",
+            "Impact of local ingredients on craft brewing",
+            "Commercial applications of unique yeast strains",
+            "Innovation in brewing practices",
+            "Wild yeast isolation and characterization",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "Fermentation science and microbial diversity",
+            "body size"
+        ]
+    },
+    {
+        "_id": "Botany%20and%20plant%20biology",
+        "url": "Botany%20and%20plant%20biology",
+        "category_name": "Botany and plant biology",
+        "faculty_count": 6,
+        "department_count": 2,
+        "article_count": 2,
+        "faculty": [
+            "Les Erickson",
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Brenna Noone",
+            "Lauren Nicole DeLong",
+            "Joshua R. Biddle"
+        ],
+        "departments": [
+            "Department of Biological Sciences Salisbury University Salisbury MD",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA"
+        ],
+        "titles": [
+            "Isolation, Identification, and Characterization of Local Wild Yeasts for Use In Fermentation",
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
+        ],
+        "tc_count": 4,
+        "citation_average": 2.0,
+        "doi_list": [
+            "10.1096/fasebj.31.1_supplement.943.4",
+            "10.1655/herpetologica-d-16-00047.1"
+        ],
+        "themes": [
+            "habitat quality",
+            "growth dynamics",
+            "Impact of local ingredients on craft brewing",
+            "Commercial applications of unique yeast strains",
+            "Innovation in brewing practices",
+            "Wild yeast isolation and characterization",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "Fermentation science and microbial diversity",
+            "body size"
+        ]
+    },
+    {
+        "_id": "Plant%20pathology%20and%20phytopathology",
+        "url": "Plant%20pathology%20and%20phytopathology",
+        "category_name": "Plant pathology and phytopathology",
+        "faculty_count": 6,
+        "department_count": 2,
+        "article_count": 2,
+        "faculty": [
+            "Les Erickson",
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Brenna Noone",
+            "Lauren Nicole DeLong",
+            "Joshua R. Biddle"
+        ],
+        "departments": [
+            "Department of Biological Sciences Salisbury University Salisbury MD",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA"
+        ],
+        "titles": [
+            "Isolation, Identification, and Characterization of Local Wild Yeasts for Use In Fermentation",
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
+        ],
+        "tc_count": 4,
+        "citation_average": 2.0,
+        "doi_list": [
+            "10.1096/fasebj.31.1_supplement.943.4",
+            "10.1655/herpetologica-d-16-00047.1"
+        ],
+        "themes": [
+            "habitat quality",
+            "growth dynamics",
+            "Impact of local ingredients on craft brewing",
+            "Commercial applications of unique yeast strains",
+            "Innovation in brewing practices",
+            "Wild yeast isolation and characterization",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "Fermentation science and microbial diversity",
+            "body size"
+        ]
+    },
+    {
+        "_id": "Plant%20physiology%20and%20biology%20nec",
+        "url": "Plant%20physiology%20and%20biology%20nec",
+        "category_name": "Plant physiology and biology nec",
+        "faculty_count": 6,
+        "department_count": 2,
+        "article_count": 2,
+        "faculty": [
+            "Les Erickson",
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Brenna Noone",
+            "Lauren Nicole DeLong",
+            "Joshua R. Biddle"
+        ],
+        "departments": [
+            "Department of Biological Sciences Salisbury University Salisbury MD",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA"
+        ],
+        "titles": [
+            "Isolation, Identification, and Characterization of Local Wild Yeasts for Use In Fermentation",
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
+        ],
+        "tc_count": 4,
+        "citation_average": 2.0,
+        "doi_list": [
+            "10.1096/fasebj.31.1_supplement.943.4",
+            "10.1655/herpetologica-d-16-00047.1"
+        ],
+        "themes": [
+            "habitat quality",
+            "growth dynamics",
+            "Impact of local ingredients on craft brewing",
+            "Commercial applications of unique yeast strains",
+            "Innovation in brewing practices",
+            "Wild yeast isolation and characterization",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "Fermentation science and microbial diversity",
+            "body size"
+        ]
+    },
+    {
+        "_id": "Zoology%20and%20animal%20biology",
+        "url": "Zoology%20and%20animal%20biology",
+        "category_name": "Zoology and animal biology",
+        "faculty_count": 6,
+        "department_count": 2,
+        "article_count": 2,
+        "faculty": [
+            "Les Erickson",
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Brenna Noone",
+            "Lauren Nicole DeLong",
+            "Joshua R. Biddle"
+        ],
+        "departments": [
+            "Department of Biological Sciences Salisbury University Salisbury MD",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA"
+        ],
+        "titles": [
+            "Isolation, Identification, and Characterization of Local Wild Yeasts for Use In Fermentation",
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
+        ],
+        "tc_count": 4,
+        "citation_average": 2.0,
+        "doi_list": [
+            "10.1096/fasebj.31.1_supplement.943.4",
+            "10.1655/herpetologica-d-16-00047.1"
+        ],
+        "themes": [
+            "habitat quality",
+            "growth dynamics",
+            "Impact of local ingredients on craft brewing",
+            "Commercial applications of unique yeast strains",
+            "Innovation in brewing practices",
+            "Wild yeast isolation and characterization",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "Fermentation science and microbial diversity",
+            "body size"
+        ]
+    },
+    {
+        "_id": "Biological%20and%20biomedical%20sciences%20nec",
+        "url": "Biological%20and%20biomedical%20sciences%20nec",
+        "category_name": "Biological and biomedical sciences nec",
+        "faculty_count": 6,
+        "department_count": 2,
+        "article_count": 2,
+        "faculty": [
+            "Les Erickson",
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Brenna Noone",
+            "Lauren Nicole DeLong",
+            "Joshua R. Biddle"
+        ],
+        "departments": [
+            "Department of Biological Sciences Salisbury University Salisbury MD",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA"
+        ],
+        "titles": [
+            "Isolation, Identification, and Characterization of Local Wild Yeasts for Use In Fermentation",
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
+        ],
+        "tc_count": 4,
+        "citation_average": 2.0,
+        "doi_list": [
+            "10.1096/fasebj.31.1_supplement.943.4",
+            "10.1655/herpetologica-d-16-00047.1"
+        ],
+        "themes": [
+            "habitat quality",
+            "growth dynamics",
+            "Impact of local ingredients on craft brewing",
+            "Commercial applications of unique yeast strains",
+            "Innovation in brewing practices",
+            "Wild yeast isolation and characterization",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "Fermentation science and microbial diversity",
+            "body size"
+        ]
+    },
+    {
+        "_id": "Food%20science%20and%20technology",
+        "url": "Food%20science%20and%20technology",
+        "category_name": "Food science and technology",
+        "faculty_count": 6,
+        "department_count": 2,
+        "article_count": 2,
+        "faculty": [
+            "Les Erickson",
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Brenna Noone",
+            "Lauren Nicole DeLong",
+            "Joshua R. Biddle"
+        ],
+        "departments": [
+            "Department of Biological Sciences Salisbury University Salisbury MD",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA"
+        ],
+        "titles": [
+            "Isolation, Identification, and Characterization of Local Wild Yeasts for Use In Fermentation",
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
+        ],
+        "tc_count": 4,
+        "citation_average": 2.0,
+        "doi_list": [
+            "10.1096/fasebj.31.1_supplement.943.4",
+            "10.1655/herpetologica-d-16-00047.1"
+        ],
+        "themes": [
+            "habitat quality",
+            "growth dynamics",
+            "Impact of local ingredients on craft brewing",
+            "Commercial applications of unique yeast strains",
+            "Innovation in brewing practices",
+            "Wild yeast isolation and characterization",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "Fermentation science and microbial diversity",
+            "body size"
+        ]
+    },
+    {
+        "_id": "Agricultural%2C%20animal%2C%20plant%2C%20and%20veterinary%20sciences%20nec",
+        "url": "Agricultural%2C%20animal%2C%20plant%2C%20and%20veterinary%20sciences%20nec",
+        "category_name": "Agricultural, animal, plant, and veterinary sciences nec",
+        "faculty_count": 6,
+        "department_count": 2,
+        "article_count": 2,
+        "faculty": [
+            "Les Erickson",
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Brenna Noone",
+            "Lauren Nicole DeLong",
+            "Joshua R. Biddle"
+        ],
+        "departments": [
+            "Department of Biological Sciences Salisbury University Salisbury MD",
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA"
+        ],
+        "titles": [
+            "Isolation, Identification, and Characterization of Local Wild Yeasts for Use In Fermentation",
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
+        ],
+        "tc_count": 4,
+        "citation_average": 2.0,
+        "doi_list": [
+            "10.1096/fasebj.31.1_supplement.943.4",
+            "10.1655/herpetologica-d-16-00047.1"
+        ],
+        "themes": [
+            "habitat quality",
+            "growth dynamics",
+            "Impact of local ingredients on craft brewing",
+            "Commercial applications of unique yeast strains",
+            "Innovation in brewing practices",
+            "Wild yeast isolation and characterization",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "Fermentation science and microbial diversity",
+            "body size"
+        ]
+    },
+    {
+        "_id": "Geosciences%2C%20atmospheric%2C%20and%20ocean%20sciences",
+        "url": "Geosciences%2C%20atmospheric%2C%20and%20ocean%20sciences",
+        "category_name": "Geosciences, atmospheric, and ocean sciences",
+        "faculty_count": 3,
+        "department_count": 1,
+        "article_count": 1,
+        "faculty": [
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Joshua R. Biddle"
+        ],
+        "departments": [
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA"
+        ],
+        "titles": [
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
+        ],
+        "tc_count": 4,
+        "citation_average": 4.0,
+        "doi_list": [
+            "10.1655/herpetologica-d-16-00047.1"
+        ],
+        "themes": [
+            "growth dynamics",
+            "habitat quality",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "body size"
+        ]
+    },
+    {
+        "_id": "Biological%20and%20biomedical%20sciences/Ecology%2C%20evolutionary%20biology%2C%20and%20epidemiology",
+        "url": "Biological%20and%20biomedical%20sciences/Ecology%2C%20evolutionary%20biology%2C%20and%20epidemiology",
+        "category_name": "Ecology, evolutionary biology, and epidemiology",
+        "faculty_count": 3,
+        "department_count": 1,
+        "article_count": 1,
+        "faculty": [
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Joshua R. Biddle"
+        ],
+        "departments": [
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA"
+        ],
+        "titles": [
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
+        ],
+        "tc_count": 4,
+        "citation_average": 4.0,
+        "doi_list": [
+            "10.1655/herpetologica-d-16-00047.1"
+        ],
+        "themes": [
+            "growth dynamics",
+            "habitat quality",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "body size"
+        ]
+    },
+    {
+        "_id": "Geosciences%2C%20atmospheric%2C%20and%20ocean%20sciences/Geological%20and%20earth%20sciences",
+        "url": "Geosciences%2C%20atmospheric%2C%20and%20ocean%20sciences/Geological%20and%20earth%20sciences",
+        "category_name": "Geological and earth sciences",
+        "faculty_count": 3,
+        "department_count": 1,
+        "article_count": 1,
+        "faculty": [
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Joshua R. Biddle"
+        ],
+        "departments": [
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA"
+        ],
+        "titles": [
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
+        ],
+        "tc_count": 4,
+        "citation_average": 4.0,
+        "doi_list": [
+            "10.1655/herpetologica-d-16-00047.1"
+        ],
+        "themes": [
+            "growth dynamics",
+            "habitat quality",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "body size"
+        ]
+    },
+    {
+        "_id": "Geosciences%2C%20atmospheric%2C%20and%20ocean%20sciences/Ocean/%20marine%20sciences%20and%20atmospheric%20science",
+        "url": "Geosciences%2C%20atmospheric%2C%20and%20ocean%20sciences/Ocean/%20marine%20sciences%20and%20atmospheric%20science",
+        "category_name": "Ocean/ marine sciences and atmospheric science",
+        "faculty_count": 3,
+        "department_count": 1,
+        "article_count": 1,
+        "faculty": [
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Joshua R. Biddle"
+        ],
+        "departments": [
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA"
+        ],
+        "titles": [
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
+        ],
+        "tc_count": 4,
+        "citation_average": 4.0,
+        "doi_list": [
+            "10.1655/herpetologica-d-16-00047.1"
+        ],
+        "themes": [
+            "growth dynamics",
+            "habitat quality",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "body size"
+        ]
+    },
+    {
+        "_id": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology",
+        "url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology",
+        "category_name": "Ecology",
+        "faculty_count": 3,
+        "department_count": 1,
+        "article_count": 1,
+        "faculty": [
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Joshua R. Biddle"
+        ],
+        "departments": [
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA"
+        ],
+        "titles": [
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
+        ],
+        "tc_count": 4,
+        "citation_average": 4.0,
+        "doi_list": [
+            "10.1655/herpetologica-d-16-00047.1"
+        ],
+        "themes": [
+            "growth dynamics",
+            "habitat quality",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "body size"
+        ]
+    },
+    {
+        "_id": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology%20and%20evolutionary%20biology",
+        "url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology%20and%20evolutionary%20biology",
+        "category_name": "Ecology and evolutionary biology",
+        "faculty_count": 3,
+        "department_count": 1,
+        "article_count": 1,
+        "faculty": [
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Joshua R. Biddle"
+        ],
+        "departments": [
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA"
+        ],
+        "titles": [
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
+        ],
+        "tc_count": 4,
+        "citation_average": 4.0,
+        "doi_list": [
+            "10.1655/herpetologica-d-16-00047.1"
+        ],
+        "themes": [
+            "growth dynamics",
+            "habitat quality",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "body size"
+        ]
+    },
+    {
+        "_id": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Geology/%20earth%20science%2C%20general",
+        "url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Geology/%20earth%20science%2C%20general",
+        "category_name": "Geology/ earth science, general",
+        "faculty_count": 3,
+        "department_count": 1,
+        "article_count": 1,
+        "faculty": [
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Joshua R. Biddle"
+        ],
+        "departments": [
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA"
+        ],
+        "titles": [
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
+        ],
+        "tc_count": 4,
+        "citation_average": 4.0,
+        "doi_list": [
+            "10.1655/herpetologica-d-16-00047.1"
+        ],
+        "themes": [
+            "growth dynamics",
+            "habitat quality",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "body size"
+        ]
+    },
+    {
+        "_id": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Geology",
+        "url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Geology",
+        "category_name": "Geology",
+        "faculty_count": 3,
+        "department_count": 1,
+        "article_count": 1,
+        "faculty": [
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Joshua R. Biddle"
+        ],
+        "departments": [
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA"
+        ],
+        "titles": [
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
+        ],
+        "tc_count": 4,
+        "citation_average": 4.0,
+        "doi_list": [
+            "10.1655/herpetologica-d-16-00047.1"
+        ],
+        "themes": [
+            "growth dynamics",
+            "habitat quality",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "body size"
+        ]
+    },
+    {
+        "_id": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Geological%20and%20earth%20sciences%20nec",
+        "url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Geological%20and%20earth%20sciences%20nec",
+        "category_name": "Geological and earth sciences nec",
+        "faculty_count": 3,
+        "department_count": 1,
+        "article_count": 1,
+        "faculty": [
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Joshua R. Biddle"
+        ],
+        "departments": [
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA"
+        ],
+        "titles": [
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
+        ],
+        "tc_count": 4,
+        "citation_average": 4.0,
+        "doi_list": [
+            "10.1655/herpetologica-d-16-00047.1"
+        ],
+        "themes": [
+            "growth dynamics",
+            "habitat quality",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "body size"
+        ]
+    },
+    {
+        "_id": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Marine%20biology%20and%20biological%20oceanography",
+        "url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Marine%20biology%20and%20biological%20oceanography",
+        "category_name": "Marine biology and biological oceanography",
+        "faculty_count": 3,
+        "department_count": 1,
+        "article_count": 1,
+        "faculty": [
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Joshua R. Biddle"
+        ],
+        "departments": [
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA"
+        ],
+        "titles": [
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
+        ],
+        "tc_count": 4,
+        "citation_average": 4.0,
+        "doi_list": [
+            "10.1655/herpetologica-d-16-00047.1"
+        ],
+        "themes": [
+            "growth dynamics",
+            "habitat quality",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "body size"
+        ]
+    },
+    {
+        "_id": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Marine%20sciences",
+        "url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Marine%20sciences",
+        "category_name": "Marine sciences",
+        "faculty_count": 3,
+        "department_count": 1,
+        "article_count": 1,
+        "faculty": [
+            "Alexa H. Grant",
+            "Eric B. Liebgold",
+            "Joshua R. Biddle"
+        ],
+        "departments": [
+            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801, USA"
+        ],
+        "titles": [
+            "Factors Affecting the Growth of Eastern Red-backed Salamanders,Plethodon cinereus"
+        ],
+        "tc_count": 4,
+        "citation_average": 4.0,
+        "doi_list": [
+            "10.1655/herpetologica-d-16-00047.1"
+        ],
+        "themes": [
+            "growth dynamics",
+            "habitat quality",
+            "seasonal and annual variation",
+            "environmental fluctuations",
+            "ecological significance",
+            "population dynamics",
+            "body size"
         ]
     }
 ]

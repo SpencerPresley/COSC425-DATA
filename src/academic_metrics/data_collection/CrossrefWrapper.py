@@ -39,6 +39,7 @@ class CrossrefWrapper:
         affiliation: str = "Salisbury%20University",
         from_year: int = 2017,
         to_year: int = 2024,
+        test_run: bool | None = False,
     ):
         """
         Initializes the CrossrefWrapper with the given parameters.
@@ -76,6 +77,7 @@ class CrossrefWrapper:
         self.to_year = to_year
         self.base_url = base_url
         self.affiliation = affiliation
+        self.test_run = test_run
 
         self.years = [year for year in range(from_year, to_year + 1)]
 
@@ -377,7 +379,9 @@ class CrossrefWrapper:
 
         # for item in missing_abstracts:
         #     if "abstract" not in item:
-        self.result = self.result[:3]
+
+        if self.test_run:
+            self.result = self.result[:3]
         i = 0
         while i < len(self.result):
             item = self.result[i]
