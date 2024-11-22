@@ -827,7 +827,9 @@ class CategoryProcessor:
             "top_level_categories": top_level_categories,
             "mid_level_categories": mid_level_categories,
             "low_level_categories": low_level_categories,
-            "all_categories": list(self.category_data.keys()),
+            "all_categories": top_level_categories
+            + mid_level_categories
+            + low_level_categories,
         }
 
     # Set of public Getter methods to access the data
