@@ -397,7 +397,7 @@ class CrossrefWrapper:
                     continue
 
                 self.logger.info(
-                    f"\n\nRETURN FROM SCRAPER get_abstract: {abstract}\n\n"
+                    f"\n\nRETURN FROM SCRAPER get_abstract:\nABSTRACT:\n{abstract}\nEXTRA CONTEXT:\n{extra_context}\n\n"
                 )
                 self.logger.info("-" * 80)
 

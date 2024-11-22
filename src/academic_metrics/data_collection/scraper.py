@@ -39,7 +39,7 @@ from academic_metrics.constants import LOG_DIR_PATH
 
 # create the cleaner output model
 class CleanerOutput(BaseModel):
-    abstract: str
+    page_content: str
     extra_context: Dict[str, Any]
 
 
@@ -146,22 +146,23 @@ class Scraper:
 
     def setup_chain(self, output_list):
         # instanciate the chain manager
+        # google_api_key = os.getenv("GOOGLE_API_KEY")
         chain_manager = ChainManager(
-            llm_model="gpt-4o",
+            llm_model="gpt-4o-mini",
             api_key=self.api_key,
         )
 
         # create a general schema for the model to output text in
         json_schema = """
         {
-            "abstract": <this is where you should place the abstract, or "" if one is not found>,
+            "page_content": <this is where you should place all text found on the page or "" if one is not found>,
             "extra_context": <this is a dictionary of key value pairs of extra content you find, always make the key indicative of what the extra content in the value is>
         }
         """
 
         json_example_missing_abstract = """
         {
-            "abstract": "",
+            "page_content": "",
             "extra_context": {
                 "keywords": ["keyword1", "keyword2", "keyword3"],
                 "authors": ["author1", "author2", "author3"],
@@ -173,17 +174,17 @@ class Scraper:
 
         # create the system prompt
         system_prompt = """
-        You are an expert at cleaning text from a website. You will be provided some text and you are to clean it into markdown format and do the following:
+        You are an expert at parsing HTML and extracting text off the page and formatting it in a structured way. You will be provided HTML and you are to do the following:
 
-        1) Identify if there is an abstract
-        2) Pull out any extra content other than the abstract
-
+        1) Find all text on the page and format it into markdown.
+        2) Find any extra context available on the page such as keywords, authors, date, journal, etc.
+        
         You are to format your results in the following json structure:
         {json_structure}
 
-        If you find an abstract you are to put in the abstract section, **if you don't find one put an empty string**.
+        If you find page content you are to put in the page_content section, **if you don't find any page content put an empty string**.
         
-        Here is an example of what to do if you don't find an abstract:
+        Here is an example of what to do if you don't find any page content:
         {json_example_missing_abstract}
 
         For extra_context you are to put a key value pair of anything else you find. **If you do not find anything else then you are to still make 1 key value pair indicating so**. DO NOT BE LAZY.
@@ -194,10 +195,11 @@ class Scraper:
 
         IMPORTANT: You are to always output your response in the json format provided, if you do not output your response in the format provided you have failed.
         IMPORTANT: DO NOT WRAP YOUR JSON IN ```json\njson content\n``` JUST RETURN THE JSON
-        IMPORTANT: The abstract field is required and must always be provided, if you cannot find an abstract STILL PUT AN EMPTY STRING IN THERE.
+        IMPORTANT: The page_content field is required and must always be provided, if you cannot find any page content STILL PUT AN EMPTY STRING IN THERE.
         IMPORTANT: extra_context IS NOT AN OPTIONAL FIELD YOUR ARE ALWAYS TO PROVIDE AT LEAST ONE KEY VALUE PAIR WITHIN IT. 
         IMPORTANT: ENSURE THAT THE JSON YOU PROVIDE IS VALID JSON. BEFORE RETURNING REVIEW THE JSON YOU HAVE CONSTRUCTED AND FIX ANY ERRORS IF THERE ARE ANY.
         """
+
         # setup ability to pass the list into the prompt
         human_prompt = """
         Output list:
@@ -223,7 +225,10 @@ class Scraper:
             "raw_output"
         ]
 
-        return {"abstract": results.abstract, "extra_context": results.extra_context}
+        return {
+            "abstract": results.page_content,
+            "extra_context": results.extra_context,
+        }
 
     def get_abstract(self, url):
         """
@@ -375,14 +380,17 @@ class Scraper:
                     )
                 except Exception as e:
                     self.logger.error(f"Error calculating total tokens: {e}")
-                # Add the next 80000 tokens after the text we have collected
-                output_list.append(
-                    page_content[total_tokens : total_tokens + token_end]
-                )
 
-                self.logger.debug(
-                    f"Added first 100,000 characters of page content for URL: {url}"
-                )
+                # Add the next 80000 tokens after the text we have collected
+                # ! Removed to save on OpenAI API input tokens
+                # output_list.append(
+                #     page_content[total_tokens : total_tokens + token_end]
+                # )
+
+                # ! Remove the log message for the above task
+                # self.logger.debug(
+                #     f"Added first 100,000 characters of page content for URL: {url}"
+                # )
                 results = self.setup_chain(output_list)
                 self.raw_results.append(results)
                 abstract = results["abstract"]
@@ -401,6 +409,7 @@ class Scraper:
 
                 # Abstract and extra context found
                 return abstract, extra_context
+
             except Exception as e:
                 self.logger.error(f"Error fetching {url}: {e}")
                 return None, None

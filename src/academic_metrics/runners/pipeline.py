@@ -100,8 +100,8 @@ class PipelineRunner:
         data_from_year: int,
         data_to_year: int,
         mongodb_url: str,
-        db_name: str = "Site_Data",
-        debug: bool = False,
+        db_name: str | None = "Site_Data",
+        debug: bool | None = False,
     ):
         """Initialize the PipelineRunner with necessary configurations and dependencies.
 
@@ -577,9 +577,8 @@ if __name__ == "__main__":
     pipeline_runner = PipelineRunner(
         ai_api_key=ai_api_key,
         crossref_affiliation="Salisbury University",
-        data_from_year=2024,
+        data_from_year=2017,
         data_to_year=2024,
         mongodb_url=mongodb_url,
-        debug=True,
     )
     pipeline_runner.run_pipeline()

@@ -156,6 +156,9 @@ class AbstractClassifier:
         api_key: str,
         log_to_console: bool = True,
         extra_context: dict | "None" = "None",
+        pre_classification_model: str | None = "gpt-4o-mini",
+        classification_model: str | None = "gpt-4o-mini",
+        theme_model: str | None = "gpt-4o-mini",
     ) -> None:
 
         # Set up logger
@@ -201,6 +204,12 @@ class AbstractClassifier:
         self.extra_context = extra_context
         self.logger.info("Extra context set")
 
+        self.logger.info("Setting models")
+        self._pre_classification_model = pre_classification_model
+        self._classification_model = classification_model
+        self._theme_model = theme_model
+        self.logger.info("Models set")
+
         self.logger.info("Initialized taxonomy and abstracts")
         self.classification_results: Dict[str, Dict[str, Any]] = {
             doi: defaultdict(  # Top categories
@@ -227,7 +236,7 @@ class AbstractClassifier:
             "Initializing and adding layers to pre-classification chain manager"
         )
         self.pre_classification_chain_manager: ChainManager = (
-            self._initialize_chain_manager()
+            self._initialize_pre_classification_chain_manager()
         )
         self._add_method_extraction_layer(
             self.pre_classification_chain_manager
@@ -245,7 +254,7 @@ class AbstractClassifier:
             "Initializing and adding layers to classification chain manager"
         )
         self.classification_chain_manager: ChainManager = (
-            self._initialize_chain_manager()
+            self._initialize_classification_chain_manager()
         )
         self._add_classification_layer(self.classification_chain_manager)
         self.logger.info("Classification chain manager initialized and layers added")
@@ -291,7 +300,15 @@ class AbstractClassifier:
                 f"Error: {str(e)}"
             ) from e
 
-    def _initialize_chain_manager(self) -> ChainManager:
+    def _initialize_pre_classification_chain_manager(self) -> ChainManager:
+        return ChainManager(
+            llm_model=self._pre_classification_model,
+            api_key=self.api_key,
+            llm_temperature=0.0,
+            log_to_console=self.log_to_console,
+        )
+
+    def _initialize_classification_chain_manager(self) -> ChainManager:
         """Initializes a new ChainManager instance with default settings.
 
         Creates a new ChainManager configured with specific LLM model settings
@@ -302,7 +319,7 @@ class AbstractClassifier:
         """
         # TODO: Make these configurable
         return ChainManager(
-            llm_model="gpt-4o",
+            llm_model=self._classification_model,
             api_key=self.api_key,
             llm_temperature=0.0,
             log_to_console=self.log_to_console,
@@ -310,7 +327,7 @@ class AbstractClassifier:
 
     def _initialize_theme_chain_manager(self) -> ChainManager:
         return ChainManager(
-            llm_model="gpt-4o",
+            llm_model=self._theme_model,
             api_key=self.api_key,
             llm_temperature=0.9,
             log_to_console=self.log_to_console,
@@ -412,6 +429,9 @@ class AbstractClassifier:
             output_passthrough_key_name="theme_output",
         )
         return self
+
+    def _get_classification_results_by_doi(self, doi: str) -> Dict[str, Any]:
+        return self.classification_results.get(doi, {})
 
     def get_classification_results_by_doi(
         self, doi: str, return_type: type[dict] | type[tuple] = dict
@@ -774,9 +794,11 @@ class AbstractClassifier:
             # Add in the theme recognition specific variables
             # The only one not already present in prompt_variables which is present as a placeholder
             # in the theme_recognition_system_prompt is THEME_RECOGNITION_JSON_FORMAT, so we add that in.
+            # Then update the categories key with the categories from the classification results.
             prompt_variables.update(
                 {
                     "THEME_RECOGNITION_JSON_FORMAT": THEME_RECOGNITION_JSON_FORMAT,
+                    "categories": self._get_classification_results_by_doi(doi),
                 }
             )
 

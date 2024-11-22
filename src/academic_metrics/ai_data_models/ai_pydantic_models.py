@@ -10,8 +10,6 @@ class Feedback(BaseModel):
 
 class Classification(BaseModel):
     categories: List[str]
-    reasoning: str
-    confidence_score: float
 
 
 class MethodDetail(BaseModel):
@@ -22,7 +20,6 @@ class MethodDetail(BaseModel):
 
 class MethodExtractionOutput(BaseModel):
     methods: List[str]
-    method_details: dict[str, MethodDetail]
 
 
 class SentenceDetails(BaseModel):
@@ -40,14 +37,10 @@ class AbstractSentenceAnalysis(BaseModel):
 
 class AbstractSummary(BaseModel):
     summary: str
-    reasoning: str
-    feedback: List[Feedback]
 
 
 class ClassificationOutput(BaseModel):
     classifications: List[Classification]
-    reflection: str
-    feedback: List[Feedback]
 
 
 class IndividualThemeAnalysis(BaseModel):
@@ -79,15 +72,4 @@ class IndividualThemeAnalysis(BaseModel):
 class ThemeAnalysis(BaseModel):
     themes: List[str] = (
         Field(..., description="List of all themes identified in the abstract"),
-    )
-    individual_themes_analysis: List[IndividualThemeAnalysis] = (
-        Field(..., description="Detailed analysis for each identified theme"),
-    )
-    reflection: str = Field(
-        ...,
-        description="Detailed reflection on your process of identifying the themes present in the abstract",
-    )
-    challenges: str = Field(
-        ...,
-        description="Detailed explanation of the challenges you faced in identifying the themes present in the abstract and what could be done to help you in the future. If you did not face any challenges, simply provide 'No challenges faced'",
     )

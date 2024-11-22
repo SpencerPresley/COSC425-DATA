@@ -1,92 +1,23 @@
 [
     {
-        "_id": "campbell-ruffhead_health-sciences",
-        "name": "Campbell Ruffhead",
+        "_id": "colin-johnson_health-sciences",
+        "name": "Colin Johnson",
         "category": "Health sciences",
         "category_url": "Health%20sciences",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness"
         ],
         "dois": [
-            "10.1249/01.mss.0001052868.70990.0c"
+            "10.1249/01.mss.0000983480.29368.36"
         ],
         "department_affiliations": [
             "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1249/01.mss.0001052868.70990.0c": 0
-        }
-    },
-    {
-        "_id": "nicholas-rolnick_health-sciences",
-        "name": "Nicholas Rolnick",
-        "category": "Health sciences",
-        "category_url": "Health%20sciences",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)"
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "susannah-taylor_health-sciences",
-        "name": "Susannah Taylor",
-        "category": "Health sciences",
-        "category_url": "Health%20sciences",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "lisa-marquette_health-sciences",
-        "name": "Lisa Marquette",
-        "category": "Health sciences",
-        "category_url": "Health%20sciences",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
+            "10.1249/01.mss.0000983480.29368.36": 0
         }
     },
     {
@@ -98,85 +29,18 @@
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
             "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "jessica-walters_health-sciences",
-        "name": "Jessica Walters",
-        "category": "Health sciences",
-        "category_url": "Health%20sciences",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "tim-werner_health-sciences",
-        "name": "Tim Werner",
-        "category": "Health sciences",
-        "category_url": "Health%20sciences",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "sean-zupnik_health-sciences",
-        "name": "Sean Zupnik",
-        "category": "Health sciences",
-        "category_url": "Health%20sciences",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
@@ -188,169 +52,150 @@
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
-            "UMES, Princess Anne, MD."
+            "University of Maryland Eastern Shore, Princess Anne, MD. (Sponsor: Tim Werner, FACSM)"
         ],
         "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
-        "_id": "karsin-m.-bachran_health-sciences",
-        "name": "Karsin M. Bachran",
+        "_id": "jessica-walter_health-sciences",
+        "name": "Jessica Walter",
         "category": "Health sciences",
         "category_url": "Health%20sciences",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1656/045.031.s1222"
-        ],
-        "department_affiliations": [
-            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
-        ],
-        "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
-        }
-    },
-    {
-        "_id": "tami.-s.-ransom_health-sciences",
-        "name": "Tami. S. Ransom",
-        "category": "Health sciences",
-        "category_url": "Health%20sciences",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
-        ],
-        "dois": [
-            "10.1656/045.031.s1222"
-        ],
-        "department_affiliations": [
-            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801."
-        ],
-        "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
-        }
-    },
-    {
-        "_id": "eric-b.-liebgold_health-sciences",
-        "name": "Eric B. Liebgold",
-        "category": "Health sciences",
-        "category_url": "Health%20sciences",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
-        ],
-        "dois": [
-            "10.1656/045.031.s1222"
-        ],
-        "department_affiliations": [
-            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
-        ],
-        "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
-        }
-    },
-    {
-        "_id": "campbell-ruffhead_biological-and-biomedical-sciences",
-        "name": "Campbell Ruffhead",
-        "category": "Biological and biomedical sciences",
-        "category_url": "Biological%20and%20biomedical%20sciences",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
             "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1249/01.mss.0001052868.70990.0c": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
-        "_id": "nicholas-rolnick_biological-and-biomedical-sciences",
-        "name": "Nicholas Rolnick",
-        "category": "Biological and biomedical sciences",
-        "category_url": "Biological%20and%20biomedical%20sciences",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)"
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "susannah-taylor_biological-and-biomedical-sciences",
-        "name": "Susannah Taylor",
-        "category": "Biological and biomedical sciences",
-        "category_url": "Biological%20and%20biomedical%20sciences",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "lisa-marquette_biological-and-biomedical-sciences",
+        "_id": "lisa-marquette_health-sciences",
         "name": "Lisa Marquette",
+        "category": "Health sciences",
+        "category_url": "Health%20sciences",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0000980200.41641.da": 0
+        }
+    },
+    {
+        "_id": "tim-werner_health-sciences",
+        "name": "Tim Werner",
+        "category": "Health sciences",
+        "category_url": "Health%20sciences",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0000980200.41641.da": 0
+        }
+    },
+    {
+        "_id": "nicholas-rolnick_health-sciences",
+        "name": "Nicholas Rolnick",
+        "category": "Health sciences",
+        "category_url": "Health%20sciences",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0000980200.41641.da"
+        ],
+        "department_affiliations": [
+            "Lehman College, New York, NY."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0000980200.41641.da": 0
+        }
+    },
+    {
+        "_id": "nicholas-licameli_health-sciences",
+        "name": "Nicholas Licameli",
+        "category": "Health sciences",
+        "category_url": "Health%20sciences",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0000980200.41641.da"
+        ],
+        "department_affiliations": [
+            "Strength Together Inc., Rutherford, NJ."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0000980200.41641.da": 0
+        }
+    },
+    {
+        "_id": "colin-johnson_biological-and-biomedical-sciences",
+        "name": "Colin Johnson",
         "category": "Biological and biomedical sciences",
         "category_url": "Biological%20and%20biomedical%20sciences",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness"
         ],
         "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1249/01.mss.0000983480.29368.36"
         ],
         "department_affiliations": [
             "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
+            "10.1249/01.mss.0000983480.29368.36": 0
         }
     },
     {
@@ -362,85 +207,18 @@
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
             "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "jessica-walters_biological-and-biomedical-sciences",
-        "name": "Jessica Walters",
-        "category": "Biological and biomedical sciences",
-        "category_url": "Biological%20and%20biomedical%20sciences",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "tim-werner_biological-and-biomedical-sciences",
-        "name": "Tim Werner",
-        "category": "Biological and biomedical sciences",
-        "category_url": "Biological%20and%20biomedical%20sciences",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "sean-zupnik_biological-and-biomedical-sciences",
-        "name": "Sean Zupnik",
-        "category": "Biological and biomedical sciences",
-        "category_url": "Biological%20and%20biomedical%20sciences",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
@@ -452,169 +230,150 @@
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
-            "UMES, Princess Anne, MD."
+            "University of Maryland Eastern Shore, Princess Anne, MD. (Sponsor: Tim Werner, FACSM)"
         ],
         "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
-        "_id": "karsin-m.-bachran_biological-and-biomedical-sciences",
-        "name": "Karsin M. Bachran",
+        "_id": "jessica-walter_biological-and-biomedical-sciences",
+        "name": "Jessica Walter",
         "category": "Biological and biomedical sciences",
         "category_url": "Biological%20and%20biomedical%20sciences",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1656/045.031.s1222"
-        ],
-        "department_affiliations": [
-            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
-        ],
-        "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
-        }
-    },
-    {
-        "_id": "tami.-s.-ransom_biological-and-biomedical-sciences",
-        "name": "Tami. S. Ransom",
-        "category": "Biological and biomedical sciences",
-        "category_url": "Biological%20and%20biomedical%20sciences",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
-        ],
-        "dois": [
-            "10.1656/045.031.s1222"
-        ],
-        "department_affiliations": [
-            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801."
-        ],
-        "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
-        }
-    },
-    {
-        "_id": "eric-b.-liebgold_biological-and-biomedical-sciences",
-        "name": "Eric B. Liebgold",
-        "category": "Biological and biomedical sciences",
-        "category_url": "Biological%20and%20biomedical%20sciences",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
-        ],
-        "dois": [
-            "10.1656/045.031.s1222"
-        ],
-        "department_affiliations": [
-            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
-        ],
-        "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
-        }
-    },
-    {
-        "_id": "campbell-ruffhead_health-sciences,-other",
-        "name": "Campbell Ruffhead",
-        "category": "Health sciences, other",
-        "category_url": "Health%20sciences/Health%20sciences%2C%20other",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
             "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1249/01.mss.0001052868.70990.0c": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
-        "_id": "nicholas-rolnick_health-sciences,-other",
-        "name": "Nicholas Rolnick",
-        "category": "Health sciences, other",
-        "category_url": "Health%20sciences/Health%20sciences%2C%20other",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)"
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "susannah-taylor_health-sciences,-other",
-        "name": "Susannah Taylor",
-        "category": "Health sciences, other",
-        "category_url": "Health%20sciences/Health%20sciences%2C%20other",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "lisa-marquette_health-sciences,-other",
+        "_id": "lisa-marquette_biological-and-biomedical-sciences",
         "name": "Lisa Marquette",
+        "category": "Biological and biomedical sciences",
+        "category_url": "Biological%20and%20biomedical%20sciences",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0000980200.41641.da": 0
+        }
+    },
+    {
+        "_id": "tim-werner_biological-and-biomedical-sciences",
+        "name": "Tim Werner",
+        "category": "Biological and biomedical sciences",
+        "category_url": "Biological%20and%20biomedical%20sciences",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0000980200.41641.da": 0
+        }
+    },
+    {
+        "_id": "nicholas-rolnick_biological-and-biomedical-sciences",
+        "name": "Nicholas Rolnick",
+        "category": "Biological and biomedical sciences",
+        "category_url": "Biological%20and%20biomedical%20sciences",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0000980200.41641.da"
+        ],
+        "department_affiliations": [
+            "Lehman College, New York, NY."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0000980200.41641.da": 0
+        }
+    },
+    {
+        "_id": "nicholas-licameli_biological-and-biomedical-sciences",
+        "name": "Nicholas Licameli",
+        "category": "Biological and biomedical sciences",
+        "category_url": "Biological%20and%20biomedical%20sciences",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0000980200.41641.da"
+        ],
+        "department_affiliations": [
+            "Strength Together Inc., Rutherford, NJ."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0000980200.41641.da": 0
+        }
+    },
+    {
+        "_id": "colin-johnson_health-sciences,-other",
+        "name": "Colin Johnson",
         "category": "Health sciences, other",
         "category_url": "Health%20sciences/Health%20sciences%2C%20other",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness"
         ],
         "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1249/01.mss.0000983480.29368.36"
         ],
         "department_affiliations": [
             "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
+            "10.1249/01.mss.0000983480.29368.36": 0
         }
     },
     {
@@ -626,85 +385,18 @@
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
             "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "jessica-walters_health-sciences,-other",
-        "name": "Jessica Walters",
-        "category": "Health sciences, other",
-        "category_url": "Health%20sciences/Health%20sciences%2C%20other",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "tim-werner_health-sciences,-other",
-        "name": "Tim Werner",
-        "category": "Health sciences, other",
-        "category_url": "Health%20sciences/Health%20sciences%2C%20other",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "sean-zupnik_health-sciences,-other",
-        "name": "Sean Zupnik",
-        "category": "Health sciences, other",
-        "category_url": "Health%20sciences/Health%20sciences%2C%20other",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
@@ -716,433 +408,506 @@
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
-            "UMES, Princess Anne, MD."
+            "University of Maryland Eastern Shore, Princess Anne, MD. (Sponsor: Tim Werner, FACSM)"
         ],
         "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
-        "_id": "karsin-m.-bachran_health-sciences,-other",
-        "name": "Karsin M. Bachran",
+        "_id": "jessica-walter_health-sciences,-other",
+        "name": "Jessica Walter",
         "category": "Health sciences, other",
-        "category_url": "Health%20sciences%2C%20other",
+        "category_url": "Health%20sciences/Health%20sciences%2C%20other",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1656/045.031.s1222"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
-            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
+            "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
-        "_id": "tami.-s.-ransom_health-sciences,-other",
-        "name": "Tami. S. Ransom",
+        "_id": "lisa-marquette_health-sciences,-other",
+        "name": "Lisa Marquette",
         "category": "Health sciences, other",
-        "category_url": "Health%20sciences%2C%20other",
+        "category_url": "Health%20sciences/Health%20sciences%2C%20other",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1656/045.031.s1222"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
-            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801."
+            "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
-        "_id": "eric-b.-liebgold_health-sciences,-other",
-        "name": "Eric B. Liebgold",
+        "_id": "tim-werner_health-sciences,-other",
+        "name": "Tim Werner",
         "category": "Health sciences, other",
-        "category_url": "Health%20sciences%2C%20other",
+        "category_url": "Health%20sciences/Health%20sciences%2C%20other",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1656/045.031.s1222"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
-            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
+            "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
-        "_id": "campbell-ruffhead_physiology,-oncology-and-cancer-biology",
-        "name": "Campbell Ruffhead",
+        "_id": "nicholas-rolnick_health-sciences,-other",
+        "name": "Nicholas Rolnick",
+        "category": "Health sciences, other",
+        "category_url": "Health%20sciences/Health%20sciences%2C%20other",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0000980200.41641.da"
+        ],
+        "department_affiliations": [
+            "Lehman College, New York, NY."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0000980200.41641.da": 0
+        }
+    },
+    {
+        "_id": "nicholas-licameli_health-sciences,-other",
+        "name": "Nicholas Licameli",
+        "category": "Health sciences, other",
+        "category_url": "Health%20sciences/Health%20sciences%2C%20other",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0000980200.41641.da"
+        ],
+        "department_affiliations": [
+            "Strength Together Inc., Rutherford, NJ."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0000980200.41641.da": 0
+        }
+    },
+    {
+        "_id": "colin-johnson_physiology,-oncology-and-cancer-biology",
+        "name": "Colin Johnson",
         "category": "Physiology, oncology and cancer biology",
         "category_url": "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness"
         ],
         "dois": [
-            "10.1249/01.mss.0001052868.70990.0c"
+            "10.1249/01.mss.0000983480.29368.36"
         ],
         "department_affiliations": [
             "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1249/01.mss.0001052868.70990.0c": 0
-        }
-    },
-    {
-        "_id": "nicholas-rolnick_physiology,-oncology-and-cancer-biology",
-        "name": "Nicholas Rolnick",
-        "category": "Physiology, oncology and cancer biology",
-        "category_url": "Physiology%2C%20oncology%20and%20cancer%20biology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)"
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "susannah-taylor_physiology,-oncology-and-cancer-biology",
-        "name": "Susannah Taylor",
-        "category": "Physiology, oncology and cancer biology",
-        "category_url": "Physiology%2C%20oncology%20and%20cancer%20biology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "lisa-marquette_physiology,-oncology-and-cancer-biology",
-        "name": "Lisa Marquette",
-        "category": "Physiology, oncology and cancer biology",
-        "category_url": "Physiology%2C%20oncology%20and%20cancer%20biology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
+            "10.1249/01.mss.0000983480.29368.36": 0
         }
     },
     {
         "_id": "brent-fedorko_physiology,-oncology-and-cancer-biology",
         "name": "Brent Fedorko",
         "category": "Physiology, oncology and cancer biology",
-        "category_url": "Physiology%2C%20oncology%20and%20cancer%20biology",
+        "category_url": "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
             "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "jessica-walters_physiology,-oncology-and-cancer-biology",
-        "name": "Jessica Walters",
-        "category": "Physiology, oncology and cancer biology",
-        "category_url": "Physiology%2C%20oncology%20and%20cancer%20biology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "tim-werner_physiology,-oncology-and-cancer-biology",
-        "name": "Tim Werner",
-        "category": "Physiology, oncology and cancer biology",
-        "category_url": "Physiology%2C%20oncology%20and%20cancer%20biology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "sean-zupnik_physiology,-oncology-and-cancer-biology",
-        "name": "Sean Zupnik",
-        "category": "Physiology, oncology and cancer biology",
-        "category_url": "Physiology%2C%20oncology%20and%20cancer%20biology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
         "_id": "masoud-moghaddam_physiology,-oncology-and-cancer-biology",
         "name": "Masoud Moghaddam",
         "category": "Physiology, oncology and cancer biology",
-        "category_url": "Physiology%2C%20oncology%20and%20cancer%20biology",
+        "category_url": "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
-            "UMES, Princess Anne, MD."
+            "University of Maryland Eastern Shore, Princess Anne, MD. (Sponsor: Tim Werner, FACSM)"
         ],
         "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
-        "_id": "karsin-m.-bachran_physiology,-oncology-and-cancer-biology",
-        "name": "Karsin M. Bachran",
+        "_id": "jessica-walter_physiology,-oncology-and-cancer-biology",
+        "name": "Jessica Walter",
         "category": "Physiology, oncology and cancer biology",
-        "category_url": "Physiology%2C%20oncology%20and%20cancer%20biology",
+        "category_url": "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1656/045.031.s1222"
-        ],
-        "department_affiliations": [
-            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
-        ],
-        "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
-        }
-    },
-    {
-        "_id": "tami.-s.-ransom_physiology,-oncology-and-cancer-biology",
-        "name": "Tami. S. Ransom",
-        "category": "Physiology, oncology and cancer biology",
-        "category_url": "Physiology%2C%20oncology%20and%20cancer%20biology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
-        ],
-        "dois": [
-            "10.1656/045.031.s1222"
-        ],
-        "department_affiliations": [
-            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801."
-        ],
-        "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
-        }
-    },
-    {
-        "_id": "eric-b.-liebgold_physiology,-oncology-and-cancer-biology",
-        "name": "Eric B. Liebgold",
-        "category": "Physiology, oncology and cancer biology",
-        "category_url": "Physiology%2C%20oncology%20and%20cancer%20biology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
-        ],
-        "dois": [
-            "10.1656/045.031.s1222"
-        ],
-        "department_affiliations": [
-            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
-        ],
-        "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
-        }
-    },
-    {
-        "_id": "campbell-ruffhead_exercise-science-and-kinesiology",
-        "name": "Campbell Ruffhead",
-        "category": "Exercise science and kinesiology",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
             "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1249/01.mss.0001052868.70990.0c": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
-        "_id": "nicholas-rolnick_exercise-science-and-kinesiology",
-        "name": "Nicholas Rolnick",
-        "category": "Exercise science and kinesiology",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)"
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "susannah-taylor_exercise-science-and-kinesiology",
-        "name": "Susannah Taylor",
-        "category": "Exercise science and kinesiology",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "lisa-marquette_exercise-science-and-kinesiology",
+        "_id": "lisa-marquette_physiology,-oncology-and-cancer-biology",
         "name": "Lisa Marquette",
+        "category": "Physiology, oncology and cancer biology",
+        "category_url": "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0000980200.41641.da": 0
+        }
+    },
+    {
+        "_id": "tim-werner_physiology,-oncology-and-cancer-biology",
+        "name": "Tim Werner",
+        "category": "Physiology, oncology and cancer biology",
+        "category_url": "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0000980200.41641.da": 0
+        }
+    },
+    {
+        "_id": "nicholas-rolnick_physiology,-oncology-and-cancer-biology",
+        "name": "Nicholas Rolnick",
+        "category": "Physiology, oncology and cancer biology",
+        "category_url": "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0000980200.41641.da"
+        ],
+        "department_affiliations": [
+            "Lehman College, New York, NY."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0000980200.41641.da": 0
+        }
+    },
+    {
+        "_id": "nicholas-licameli_physiology,-oncology-and-cancer-biology",
+        "name": "Nicholas Licameli",
+        "category": "Physiology, oncology and cancer biology",
+        "category_url": "Biological%20and%20biomedical%20sciences/Physiology%2C%20oncology%20and%20cancer%20biology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0000980200.41641.da"
+        ],
+        "department_affiliations": [
+            "Strength Together Inc., Rutherford, NJ."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0000980200.41641.da": 0
+        }
+    },
+    {
+        "_id": "colin-johnson_biological-and-biomedical-sciences,-other",
+        "name": "Colin Johnson",
+        "category": "Biological and biomedical sciences, other",
+        "category_url": "Biological%20and%20biomedical%20sciences/Biological%20and%20biomedical%20sciences%2C%20other",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0000983480.29368.36"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0000983480.29368.36": 0
+        }
+    },
+    {
+        "_id": "brent-fedorko_biological-and-biomedical-sciences,-other",
+        "name": "Brent Fedorko",
+        "category": "Biological and biomedical sciences, other",
+        "category_url": "Biological%20and%20biomedical%20sciences%2C%20other",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0000980200.41641.da": 0
+        }
+    },
+    {
+        "_id": "masoud-moghaddam_biological-and-biomedical-sciences,-other",
+        "name": "Masoud Moghaddam",
+        "category": "Biological and biomedical sciences, other",
+        "category_url": "Biological%20and%20biomedical%20sciences%2C%20other",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
+        ],
+        "department_affiliations": [
+            "University of Maryland Eastern Shore, Princess Anne, MD. (Sponsor: Tim Werner, FACSM)"
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0000980200.41641.da": 0
+        }
+    },
+    {
+        "_id": "jessica-walter_biological-and-biomedical-sciences,-other",
+        "name": "Jessica Walter",
+        "category": "Biological and biomedical sciences, other",
+        "category_url": "Biological%20and%20biomedical%20sciences%2C%20other",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0000980200.41641.da": 0
+        }
+    },
+    {
+        "_id": "lisa-marquette_biological-and-biomedical-sciences,-other",
+        "name": "Lisa Marquette",
+        "category": "Biological and biomedical sciences, other",
+        "category_url": "Biological%20and%20biomedical%20sciences%2C%20other",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0000980200.41641.da": 0
+        }
+    },
+    {
+        "_id": "tim-werner_biological-and-biomedical-sciences,-other",
+        "name": "Tim Werner",
+        "category": "Biological and biomedical sciences, other",
+        "category_url": "Biological%20and%20biomedical%20sciences%2C%20other",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
+        ],
+        "department_affiliations": [
+            "Salisbury University, Salisbury, MD."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0000980200.41641.da": 0
+        }
+    },
+    {
+        "_id": "nicholas-rolnick_biological-and-biomedical-sciences,-other",
+        "name": "Nicholas Rolnick",
+        "category": "Biological and biomedical sciences, other",
+        "category_url": "Biological%20and%20biomedical%20sciences%2C%20other",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0000980200.41641.da"
+        ],
+        "department_affiliations": [
+            "Lehman College, New York, NY."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0000980200.41641.da": 0
+        }
+    },
+    {
+        "_id": "nicholas-licameli_biological-and-biomedical-sciences,-other",
+        "name": "Nicholas Licameli",
+        "category": "Biological and biomedical sciences, other",
+        "category_url": "Biological%20and%20biomedical%20sciences%2C%20other",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0000980200.41641.da"
+        ],
+        "department_affiliations": [
+            "Strength Together Inc., Rutherford, NJ."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0000980200.41641.da": 0
+        }
+    },
+    {
+        "_id": "colin-johnson_exercise-science-and-kinesiology",
+        "name": "Colin Johnson",
         "category": "Exercise science and kinesiology",
         "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness"
         ],
         "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1249/01.mss.0000983480.29368.36"
         ],
         "department_affiliations": [
             "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
+            "10.1249/01.mss.0000983480.29368.36": 0
         }
     },
     {
@@ -1154,85 +919,18 @@
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
             "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "jessica-walters_exercise-science-and-kinesiology",
-        "name": "Jessica Walters",
-        "category": "Exercise science and kinesiology",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "tim-werner_exercise-science-and-kinesiology",
-        "name": "Tim Werner",
-        "category": "Exercise science and kinesiology",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "sean-zupnik_exercise-science-and-kinesiology",
-        "name": "Sean Zupnik",
-        "category": "Exercise science and kinesiology",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
@@ -1244,1690 +942,841 @@
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
-            "UMES, Princess Anne, MD."
+            "University of Maryland Eastern Shore, Princess Anne, MD. (Sponsor: Tim Werner, FACSM)"
         ],
         "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
-        "_id": "karsin-m.-bachran_exercise-science-and-kinesiology",
-        "name": "Karsin M. Bachran",
+        "_id": "jessica-walter_exercise-science-and-kinesiology",
+        "name": "Jessica Walter",
         "category": "Exercise science and kinesiology",
-        "category_url": "Exercise%20science%20and%20kinesiology",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1656/045.031.s1222"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
-            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
+            "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
-        "_id": "tami.-s.-ransom_exercise-science-and-kinesiology",
-        "name": "Tami. S. Ransom",
+        "_id": "lisa-marquette_exercise-science-and-kinesiology",
+        "name": "Lisa Marquette",
         "category": "Exercise science and kinesiology",
-        "category_url": "Exercise%20science%20and%20kinesiology",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1656/045.031.s1222"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
-            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801."
+            "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
-        "_id": "eric-b.-liebgold_exercise-science-and-kinesiology",
-        "name": "Eric B. Liebgold",
+        "_id": "tim-werner_exercise-science-and-kinesiology",
+        "name": "Tim Werner",
         "category": "Exercise science and kinesiology",
-        "category_url": "Exercise%20science%20and%20kinesiology",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1656/045.031.s1222"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
-            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
+            "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
-        "_id": "campbell-ruffhead_health-sciences,-general",
-        "name": "Campbell Ruffhead",
+        "_id": "nicholas-rolnick_exercise-science-and-kinesiology",
+        "name": "Nicholas Rolnick",
+        "category": "Exercise science and kinesiology",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0000980200.41641.da"
+        ],
+        "department_affiliations": [
+            "Lehman College, New York, NY."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0000980200.41641.da": 0
+        }
+    },
+    {
+        "_id": "nicholas-licameli_exercise-science-and-kinesiology",
+        "name": "Nicholas Licameli",
+        "category": "Exercise science and kinesiology",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20science%20and%20kinesiology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0000980200.41641.da"
+        ],
+        "department_affiliations": [
+            "Strength Together Inc., Rutherford, NJ."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0000980200.41641.da": 0
+        }
+    },
+    {
+        "_id": "colin-johnson_health-sciences,-general",
+        "name": "Colin Johnson",
         "category": "Health sciences, general",
         "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness"
         ],
         "dois": [
-            "10.1249/01.mss.0001052868.70990.0c"
+            "10.1249/01.mss.0000983480.29368.36"
         ],
         "department_affiliations": [
             "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1249/01.mss.0001052868.70990.0c": 0
-        }
-    },
-    {
-        "_id": "nicholas-rolnick_health-sciences,-general",
-        "name": "Nicholas Rolnick",
-        "category": "Health sciences, general",
-        "category_url": "Health%20sciences%2C%20general",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)"
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "susannah-taylor_health-sciences,-general",
-        "name": "Susannah Taylor",
-        "category": "Health sciences, general",
-        "category_url": "Health%20sciences%2C%20general",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "lisa-marquette_health-sciences,-general",
-        "name": "Lisa Marquette",
-        "category": "Health sciences, general",
-        "category_url": "Health%20sciences%2C%20general",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
+            "10.1249/01.mss.0000983480.29368.36": 0
         }
     },
     {
         "_id": "brent-fedorko_health-sciences,-general",
         "name": "Brent Fedorko",
         "category": "Health sciences, general",
-        "category_url": "Health%20sciences%2C%20general",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
             "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "jessica-walters_health-sciences,-general",
-        "name": "Jessica Walters",
-        "category": "Health sciences, general",
-        "category_url": "Health%20sciences%2C%20general",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "tim-werner_health-sciences,-general",
-        "name": "Tim Werner",
-        "category": "Health sciences, general",
-        "category_url": "Health%20sciences%2C%20general",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "sean-zupnik_health-sciences,-general",
-        "name": "Sean Zupnik",
-        "category": "Health sciences, general",
-        "category_url": "Health%20sciences%2C%20general",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
         "_id": "masoud-moghaddam_health-sciences,-general",
         "name": "Masoud Moghaddam",
         "category": "Health sciences, general",
-        "category_url": "Health%20sciences%2C%20general",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
-            "UMES, Princess Anne, MD."
+            "University of Maryland Eastern Shore, Princess Anne, MD. (Sponsor: Tim Werner, FACSM)"
         ],
         "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
-        "_id": "karsin-m.-bachran_health-sciences,-general",
-        "name": "Karsin M. Bachran",
+        "_id": "jessica-walter_health-sciences,-general",
+        "name": "Jessica Walter",
         "category": "Health sciences, general",
-        "category_url": "Health%20sciences%2C%20general",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1656/045.031.s1222"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
-            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
+            "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
-        "_id": "tami.-s.-ransom_health-sciences,-general",
-        "name": "Tami. S. Ransom",
+        "_id": "lisa-marquette_health-sciences,-general",
+        "name": "Lisa Marquette",
         "category": "Health sciences, general",
-        "category_url": "Health%20sciences%2C%20general",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1656/045.031.s1222"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
-            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801."
+            "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
-        "_id": "eric-b.-liebgold_health-sciences,-general",
-        "name": "Eric B. Liebgold",
+        "_id": "tim-werner_health-sciences,-general",
+        "name": "Tim Werner",
         "category": "Health sciences, general",
-        "category_url": "Health%20sciences%2C%20general",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1656/045.031.s1222"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
-            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
+            "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
-        "_id": "campbell-ruffhead_exercise-physiology-and-kinesiology",
-        "name": "Campbell Ruffhead",
+        "_id": "nicholas-rolnick_health-sciences,-general",
+        "name": "Nicholas Rolnick",
+        "category": "Health sciences, general",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0000980200.41641.da"
+        ],
+        "department_affiliations": [
+            "Lehman College, New York, NY."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0000980200.41641.da": 0
+        }
+    },
+    {
+        "_id": "nicholas-licameli_health-sciences,-general",
+        "name": "Nicholas Licameli",
+        "category": "Health sciences, general",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Health%20sciences%2C%20general",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0000980200.41641.da"
+        ],
+        "department_affiliations": [
+            "Strength Together Inc., Rutherford, NJ."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0000980200.41641.da": 0
+        }
+    },
+    {
+        "_id": "colin-johnson_exercise-physiology-and-kinesiology",
+        "name": "Colin Johnson",
         "category": "Exercise physiology and kinesiology",
         "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness"
         ],
         "dois": [
-            "10.1249/01.mss.0001052868.70990.0c"
+            "10.1249/01.mss.0000983480.29368.36"
         ],
         "department_affiliations": [
             "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1249/01.mss.0001052868.70990.0c": 0
-        }
-    },
-    {
-        "_id": "nicholas-rolnick_exercise-physiology-and-kinesiology",
-        "name": "Nicholas Rolnick",
-        "category": "Exercise physiology and kinesiology",
-        "category_url": "Exercise%20physiology%20and%20kinesiology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)"
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "susannah-taylor_exercise-physiology-and-kinesiology",
-        "name": "Susannah Taylor",
-        "category": "Exercise physiology and kinesiology",
-        "category_url": "Exercise%20physiology%20and%20kinesiology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "lisa-marquette_exercise-physiology-and-kinesiology",
-        "name": "Lisa Marquette",
-        "category": "Exercise physiology and kinesiology",
-        "category_url": "Exercise%20physiology%20and%20kinesiology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
+            "10.1249/01.mss.0000983480.29368.36": 0
         }
     },
     {
         "_id": "brent-fedorko_exercise-physiology-and-kinesiology",
         "name": "Brent Fedorko",
         "category": "Exercise physiology and kinesiology",
-        "category_url": "Exercise%20physiology%20and%20kinesiology",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
             "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "jessica-walters_exercise-physiology-and-kinesiology",
-        "name": "Jessica Walters",
-        "category": "Exercise physiology and kinesiology",
-        "category_url": "Exercise%20physiology%20and%20kinesiology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "tim-werner_exercise-physiology-and-kinesiology",
-        "name": "Tim Werner",
-        "category": "Exercise physiology and kinesiology",
-        "category_url": "Exercise%20physiology%20and%20kinesiology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "sean-zupnik_exercise-physiology-and-kinesiology",
-        "name": "Sean Zupnik",
-        "category": "Exercise physiology and kinesiology",
-        "category_url": "Exercise%20physiology%20and%20kinesiology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
         "_id": "masoud-moghaddam_exercise-physiology-and-kinesiology",
         "name": "Masoud Moghaddam",
         "category": "Exercise physiology and kinesiology",
-        "category_url": "Exercise%20physiology%20and%20kinesiology",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
-            "UMES, Princess Anne, MD."
+            "University of Maryland Eastern Shore, Princess Anne, MD. (Sponsor: Tim Werner, FACSM)"
         ],
         "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
-        "_id": "karsin-m.-bachran_exercise-physiology-and-kinesiology",
-        "name": "Karsin M. Bachran",
+        "_id": "jessica-walter_exercise-physiology-and-kinesiology",
+        "name": "Jessica Walter",
         "category": "Exercise physiology and kinesiology",
-        "category_url": "Exercise%20physiology%20and%20kinesiology",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1656/045.031.s1222"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
-            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
+            "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
-        "_id": "tami.-s.-ransom_exercise-physiology-and-kinesiology",
-        "name": "Tami. S. Ransom",
+        "_id": "lisa-marquette_exercise-physiology-and-kinesiology",
+        "name": "Lisa Marquette",
         "category": "Exercise physiology and kinesiology",
-        "category_url": "Exercise%20physiology%20and%20kinesiology",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1656/045.031.s1222"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
-            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801."
+            "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
-        "_id": "eric-b.-liebgold_exercise-physiology-and-kinesiology",
-        "name": "Eric B. Liebgold",
+        "_id": "tim-werner_exercise-physiology-and-kinesiology",
+        "name": "Tim Werner",
         "category": "Exercise physiology and kinesiology",
-        "category_url": "Exercise%20physiology%20and%20kinesiology",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1656/045.031.s1222"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
-            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
+            "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
-        "_id": "campbell-ruffhead_physiology,-general",
-        "name": "Campbell Ruffhead",
+        "_id": "nicholas-rolnick_exercise-physiology-and-kinesiology",
+        "name": "Nicholas Rolnick",
+        "category": "Exercise physiology and kinesiology",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0000980200.41641.da"
+        ],
+        "department_affiliations": [
+            "Lehman College, New York, NY."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0000980200.41641.da": 0
+        }
+    },
+    {
+        "_id": "nicholas-licameli_exercise-physiology-and-kinesiology",
+        "name": "Nicholas Licameli",
+        "category": "Exercise physiology and kinesiology",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Exercise%20physiology%20and%20kinesiology",
+        "total_citations": 0,
+        "article_count": 1,
+        "average_citations": 0,
+        "titles": [
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
+        ],
+        "dois": [
+            "10.1249/01.mss.0000980200.41641.da"
+        ],
+        "department_affiliations": [
+            "Strength Together Inc., Rutherford, NJ."
+        ],
+        "doi_citation_map": {
+            "10.1249/01.mss.0000980200.41641.da": 0
+        }
+    },
+    {
+        "_id": "colin-johnson_physiology,-general",
+        "name": "Colin Johnson",
         "category": "Physiology, general",
         "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness"
         ],
         "dois": [
-            "10.1249/01.mss.0001052868.70990.0c"
+            "10.1249/01.mss.0000983480.29368.36"
         ],
         "department_affiliations": [
             "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1249/01.mss.0001052868.70990.0c": 0
-        }
-    },
-    {
-        "_id": "nicholas-rolnick_physiology,-general",
-        "name": "Nicholas Rolnick",
-        "category": "Physiology, general",
-        "category_url": "Physiology%2C%20general",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)"
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "susannah-taylor_physiology,-general",
-        "name": "Susannah Taylor",
-        "category": "Physiology, general",
-        "category_url": "Physiology%2C%20general",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "lisa-marquette_physiology,-general",
-        "name": "Lisa Marquette",
-        "category": "Physiology, general",
-        "category_url": "Physiology%2C%20general",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
+            "10.1249/01.mss.0000983480.29368.36": 0
         }
     },
     {
         "_id": "brent-fedorko_physiology,-general",
         "name": "Brent Fedorko",
         "category": "Physiology, general",
-        "category_url": "Physiology%2C%20general",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
             "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "jessica-walters_physiology,-general",
-        "name": "Jessica Walters",
-        "category": "Physiology, general",
-        "category_url": "Physiology%2C%20general",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "tim-werner_physiology,-general",
-        "name": "Tim Werner",
-        "category": "Physiology, general",
-        "category_url": "Physiology%2C%20general",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments",
-            "Effects Of Acute Blood Flow Restrictive Bicep Curl Exercise On Arterial Stiffness"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001052868.70990.0c",
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "sean-zupnik_physiology,-general",
-        "name": "Sean Zupnik",
-        "category": "Physiology, general",
-        "category_url": "Physiology%2C%20general",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
         "_id": "masoud-moghaddam_physiology,-general",
         "name": "Masoud Moghaddam",
         "category": "Physiology, general",
-        "category_url": "Physiology%2C%20general",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
-            "UMES, Princess Anne, MD."
+            "University of Maryland Eastern Shore, Princess Anne, MD. (Sponsor: Tim Werner, FACSM)"
         ],
         "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
-        "_id": "karsin-m.-bachran_physiology,-general",
-        "name": "Karsin M. Bachran",
+        "_id": "jessica-walter_physiology,-general",
+        "name": "Jessica Walter",
         "category": "Physiology, general",
-        "category_url": "Physiology%2C%20general",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1656/045.031.s1222"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
-            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
+            "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
-        "_id": "tami.-s.-ransom_physiology,-general",
-        "name": "Tami. S. Ransom",
+        "_id": "lisa-marquette_physiology,-general",
+        "name": "Lisa Marquette",
         "category": "Physiology, general",
-        "category_url": "Physiology%2C%20general",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1656/045.031.s1222"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
-            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801."
+            "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
-        "_id": "eric-b.-liebgold_physiology,-general",
-        "name": "Eric B. Liebgold",
+        "_id": "tim-werner_physiology,-general",
+        "name": "Tim Werner",
         "category": "Physiology, general",
-        "category_url": "Physiology%2C%20general",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1656/045.031.s1222"
-        ],
-        "department_affiliations": [
-            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
-        ],
-        "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
-        }
-    },
-    {
-        "_id": "sean-zupnik_psychology",
-        "name": "Sean Zupnik",
-        "category": "Psychology",
-        "category_url": "Psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
             "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
-        "_id": "masoud-moghaddam_psychology",
-        "name": "Masoud Moghaddam",
-        "category": "Psychology",
-        "category_url": "Psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "UMES, Princess Anne, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "nicholas-rolnick_psychology",
+        "_id": "nicholas-rolnick_physiology,-general",
         "name": "Nicholas Rolnick",
-        "category": "Psychology",
-        "category_url": "Psychology",
+        "category": "Physiology, general",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
-            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)"
+            "Lehman College, New York, NY."
         ],
         "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
-        "_id": "lisa-marquette_psychology",
-        "name": "Lisa Marquette",
-        "category": "Psychology",
-        "category_url": "Psychology",
+        "_id": "nicholas-licameli_physiology,-general",
+        "name": "Nicholas Licameli",
+        "category": "Physiology, general",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Physiology%2C%20general",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
+            "Strength Together Inc., Rutherford, NJ."
         ],
         "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
-        "_id": "susannah-taylor_psychology",
-        "name": "Susannah Taylor",
-        "category": "Psychology",
-        "category_url": "Psychology",
+        "_id": "colin-johnson_biomedical-sciences,-general",
+        "name": "Colin Johnson",
+        "category": "Biomedical sciences, general",
+        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Biomedical%20sciences%2C%20general",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness"
         ],
         "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "jessica-walters_psychology",
-        "name": "Jessica Walters",
-        "category": "Psychology",
-        "category_url": "Psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1249/01.mss.0000983480.29368.36"
         ],
         "department_affiliations": [
             "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
+            "10.1249/01.mss.0000983480.29368.36": 0
         }
     },
     {
-        "_id": "brent-fedorko_psychology",
+        "_id": "brent-fedorko_biomedical-sciences,-general",
         "name": "Brent Fedorko",
-        "category": "Psychology",
-        "category_url": "Psychology",
+        "category": "Biomedical sciences, general",
+        "category_url": "Biomedical%20sciences%2C%20general",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
             "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
-        "_id": "tim-werner_psychology",
-        "name": "Tim Werner",
-        "category": "Psychology",
-        "category_url": "Psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "karsin-m.-bachran_psychology",
-        "name": "Karsin M. Bachran",
-        "category": "Psychology",
-        "category_url": "Psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
-        ],
-        "dois": [
-            "10.1656/045.031.s1222"
-        ],
-        "department_affiliations": [
-            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
-        ],
-        "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
-        }
-    },
-    {
-        "_id": "tami.-s.-ransom_psychology",
-        "name": "Tami. S. Ransom",
-        "category": "Psychology",
-        "category_url": "Psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
-        ],
-        "dois": [
-            "10.1656/045.031.s1222"
-        ],
-        "department_affiliations": [
-            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801."
-        ],
-        "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
-        }
-    },
-    {
-        "_id": "eric-b.-liebgold_psychology",
-        "name": "Eric B. Liebgold",
-        "category": "Psychology",
-        "category_url": "Psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
-        ],
-        "dois": [
-            "10.1656/045.031.s1222"
-        ],
-        "department_affiliations": [
-            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
-        ],
-        "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
-        }
-    },
-    {
-        "_id": "sean-zupnik_research-and-experimental-psychology",
-        "name": "Sean Zupnik",
-        "category": "Research and experimental psychology",
-        "category_url": "Psychology/Research%20and%20experimental%20psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "masoud-moghaddam_research-and-experimental-psychology",
+        "_id": "masoud-moghaddam_biomedical-sciences,-general",
         "name": "Masoud Moghaddam",
-        "category": "Research and experimental psychology",
-        "category_url": "Psychology/Research%20and%20experimental%20psychology",
+        "category": "Biomedical sciences, general",
+        "category_url": "Biomedical%20sciences%2C%20general",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
-            "UMES, Princess Anne, MD."
+            "University of Maryland Eastern Shore, Princess Anne, MD. (Sponsor: Tim Werner, FACSM)"
         ],
         "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
-        "_id": "nicholas-rolnick_research-and-experimental-psychology",
-        "name": "Nicholas Rolnick",
-        "category": "Research and experimental psychology",
-        "category_url": "Psychology/Research%20and%20experimental%20psychology",
+        "_id": "jessica-walter_biomedical-sciences,-general",
+        "name": "Jessica Walter",
+        "category": "Biomedical sciences, general",
+        "category_url": "Biomedical%20sciences%2C%20general",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
-            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)"
+            "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
-        "_id": "lisa-marquette_research-and-experimental-psychology",
+        "_id": "lisa-marquette_biomedical-sciences,-general",
         "name": "Lisa Marquette",
-        "category": "Research and experimental psychology",
-        "category_url": "Psychology/Research%20and%20experimental%20psychology",
+        "category": "Biomedical sciences, general",
+        "category_url": "Biomedical%20sciences%2C%20general",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
             "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
-        "_id": "susannah-taylor_research-and-experimental-psychology",
-        "name": "Susannah Taylor",
-        "category": "Research and experimental psychology",
-        "category_url": "Psychology/Research%20and%20experimental%20psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "jessica-walters_research-and-experimental-psychology",
-        "name": "Jessica Walters",
-        "category": "Research and experimental psychology",
-        "category_url": "Psychology/Research%20and%20experimental%20psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "brent-fedorko_research-and-experimental-psychology",
-        "name": "Brent Fedorko",
-        "category": "Research and experimental psychology",
-        "category_url": "Psychology/Research%20and%20experimental%20psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "tim-werner_research-and-experimental-psychology",
+        "_id": "tim-werner_biomedical-sciences,-general",
         "name": "Tim Werner",
-        "category": "Research and experimental psychology",
-        "category_url": "Psychology/Research%20and%20experimental%20psychology",
+        "category": "Biomedical sciences, general",
+        "category_url": "Biomedical%20sciences%2C%20general",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+            "Effects Of An 11-week High Functional Resistance Training Program On Indices Of Arterial Stiffness",
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1249/01.mss.0000983480.29368.36",
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
             "Salisbury University, Salisbury, MD."
         ],
         "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
-        "_id": "karsin-m.-bachran_research-and-experimental-psychology",
-        "name": "Karsin M. Bachran",
-        "category": "Research and experimental psychology",
-        "category_url": "Research%20and%20experimental%20psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
-        ],
-        "dois": [
-            "10.1656/045.031.s1222"
-        ],
-        "department_affiliations": [
-            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
-        ],
-        "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
-        }
-    },
-    {
-        "_id": "tami.-s.-ransom_research-and-experimental-psychology",
-        "name": "Tami. S. Ransom",
-        "category": "Research and experimental psychology",
-        "category_url": "Research%20and%20experimental%20psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
-        ],
-        "dois": [
-            "10.1656/045.031.s1222"
-        ],
-        "department_affiliations": [
-            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801."
-        ],
-        "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
-        }
-    },
-    {
-        "_id": "eric-b.-liebgold_research-and-experimental-psychology",
-        "name": "Eric B. Liebgold",
-        "category": "Research and experimental psychology",
-        "category_url": "Research%20and%20experimental%20psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
-        ],
-        "dois": [
-            "10.1656/045.031.s1222"
-        ],
-        "department_affiliations": [
-            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
-        ],
-        "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
-        }
-    },
-    {
-        "_id": "sean-zupnik_experimental-psychology",
-        "name": "Sean Zupnik",
-        "category": "Experimental psychology",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Experimental%20psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "masoud-moghaddam_experimental-psychology",
-        "name": "Masoud Moghaddam",
-        "category": "Experimental psychology",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Experimental%20psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "UMES, Princess Anne, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "nicholas-rolnick_experimental-psychology",
+        "_id": "nicholas-rolnick_biomedical-sciences,-general",
         "name": "Nicholas Rolnick",
-        "category": "Experimental psychology",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Experimental%20psychology",
+        "category": "Biomedical sciences, general",
+        "category_url": "Biomedical%20sciences%2C%20general",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
-            "Lehman College, New York, NY. (Sponsor: Tim Werner, FACSM)"
+            "Lehman College, New York, NY."
         ],
         "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     },
     {
-        "_id": "lisa-marquette_experimental-psychology",
-        "name": "Lisa Marquette",
-        "category": "Experimental psychology",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Experimental%20psychology",
+        "_id": "nicholas-licameli_biomedical-sciences,-general",
+        "name": "Nicholas Licameli",
+        "category": "Biomedical sciences, general",
+        "category_url": "Biomedical%20sciences%2C%20general",
         "total_citations": 0,
         "article_count": 1,
         "average_citations": 0,
         "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
+            "Acute Effects Of Autoregulated And Non-autoregulated Blood Flow Restrictive Exercise On Arterial Stiffness"
         ],
         "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
+            "10.1249/01.mss.0000980200.41641.da"
         ],
         "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
+            "Strength Together Inc., Rutherford, NJ."
         ],
         "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "susannah-taylor_experimental-psychology",
-        "name": "Susannah Taylor",
-        "category": "Experimental psychology",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Experimental%20psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "jessica-walters_experimental-psychology",
-        "name": "Jessica Walters",
-        "category": "Experimental psychology",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Experimental%20psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "brent-fedorko_experimental-psychology",
-        "name": "Brent Fedorko",
-        "category": "Experimental psychology",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Experimental%20psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "tim-werner_experimental-psychology",
-        "name": "Tim Werner",
-        "category": "Experimental psychology",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Experimental%20psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Effects Of Upper And Lower Body Blood Flow Restriction Training On Subjective Assessments"
-        ],
-        "dois": [
-            "10.1249/01.mss.0001060920.34828.c8"
-        ],
-        "department_affiliations": [
-            "Salisbury University, Salisbury, MD."
-        ],
-        "doi_citation_map": {
-            "10.1249/01.mss.0001060920.34828.c8": 0
-        }
-    },
-    {
-        "_id": "karsin-m.-bachran_experimental-psychology",
-        "name": "Karsin M. Bachran",
-        "category": "Experimental psychology",
-        "category_url": "Experimental%20psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
-        ],
-        "dois": [
-            "10.1656/045.031.s1222"
-        ],
-        "department_affiliations": [
-            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
-        ],
-        "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
-        }
-    },
-    {
-        "_id": "tami.-s.-ransom_experimental-psychology",
-        "name": "Tami. S. Ransom",
-        "category": "Experimental psychology",
-        "category_url": "Experimental%20psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
-        ],
-        "dois": [
-            "10.1656/045.031.s1222"
-        ],
-        "department_affiliations": [
-            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801."
-        ],
-        "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
-        }
-    },
-    {
-        "_id": "eric-b.-liebgold_experimental-psychology",
-        "name": "Eric B. Liebgold",
-        "category": "Experimental psychology",
-        "category_url": "Experimental%20psychology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
-        ],
-        "dois": [
-            "10.1656/045.031.s1222"
-        ],
-        "department_affiliations": [
-            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
-        ],
-        "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
-        }
-    },
-    {
-        "_id": "karsin-m.-bachran_ecology,-evolutionary-biology,-and-epidemiology",
-        "name": "Karsin M. Bachran",
-        "category": "Ecology, evolutionary biology, and epidemiology",
-        "category_url": "Biological%20and%20biomedical%20sciences/Ecology%2C%20evolutionary%20biology%2C%20and%20epidemiology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
-        ],
-        "dois": [
-            "10.1656/045.031.s1222"
-        ],
-        "department_affiliations": [
-            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
-        ],
-        "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
-        }
-    },
-    {
-        "_id": "tami.-s.-ransom_ecology,-evolutionary-biology,-and-epidemiology",
-        "name": "Tami. S. Ransom",
-        "category": "Ecology, evolutionary biology, and epidemiology",
-        "category_url": "Biological%20and%20biomedical%20sciences/Ecology%2C%20evolutionary%20biology%2C%20and%20epidemiology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
-        ],
-        "dois": [
-            "10.1656/045.031.s1222"
-        ],
-        "department_affiliations": [
-            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801."
-        ],
-        "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
-        }
-    },
-    {
-        "_id": "eric-b.-liebgold_ecology,-evolutionary-biology,-and-epidemiology",
-        "name": "Eric B. Liebgold",
-        "category": "Ecology, evolutionary biology, and epidemiology",
-        "category_url": "Biological%20and%20biomedical%20sciences/Ecology%2C%20evolutionary%20biology%2C%20and%20epidemiology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
-        ],
-        "dois": [
-            "10.1656/045.031.s1222"
-        ],
-        "department_affiliations": [
-            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
-        ],
-        "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
-        }
-    },
-    {
-        "_id": "karsin-m.-bachran_ecology",
-        "name": "Karsin M. Bachran",
-        "category": "Ecology",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
-        ],
-        "dois": [
-            "10.1656/045.031.s1222"
-        ],
-        "department_affiliations": [
-            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
-        ],
-        "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
-        }
-    },
-    {
-        "_id": "tami.-s.-ransom_ecology",
-        "name": "Tami. S. Ransom",
-        "category": "Ecology",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
-        ],
-        "dois": [
-            "10.1656/045.031.s1222"
-        ],
-        "department_affiliations": [
-            "Environ-mental Studies Department, Salisbury University, Salisbury, MD 21801."
-        ],
-        "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
-        }
-    },
-    {
-        "_id": "eric-b.-liebgold_ecology",
-        "name": "Eric B. Liebgold",
-        "category": "Ecology",
-        "category_url": "Other%20non-science%20and%20engineering/Non-science%20and%20engineering%2C%20other/Ecology",
-        "total_citations": 0,
-        "article_count": 1,
-        "average_citations": 0,
-        "titles": [
-            "Evaluating the Relationship between Injuries and Home-Range Size in the Endangered Spotted Turtle (Clemmys guttata)"
-        ],
-        "dois": [
-            "10.1656/045.031.s1222"
-        ],
-        "department_affiliations": [
-            "Department of Biological Sciences, Salisbury University, Salisbury, MD 21801."
-        ],
-        "doi_citation_map": {
-            "10.1656/045.031.s1222": 0
+            "10.1249/01.mss.0000980200.41641.da": 0
         }
     }
 ]
