@@ -57,7 +57,7 @@ class ClassifierFactory:
     def abstract_classifier_factory(
         self,
         doi_abstract_dict: Dict[str, str],
-        extra_context: dict | "None" = "None",
+        extra_context: dict | None = None,
     ) -> AbstractClassifier:
         self.logger.info("Creating AbstractClassifier")
         classifier: AbstractClassifier = AbstractClassifier(

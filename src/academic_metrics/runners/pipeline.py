@@ -209,11 +209,13 @@ class PipelineRunner:
                 self._make_files()
             data: List[Dict[str, Any]] = self._load_files()
         else:
-            # Set this to true once database is integrated
-            # save_to_db = True
-            data: List[Dict[str, Any]] = self.crossref_wrapper.run_all_process()
-
-        # Filter out articles whose DOIs are already in the db or those that are not found
+            # Fetch raw data from Crossref api for the year range
+            # and get out the result list containing the raw data.
+            data: List[Dict[str, Any]] = (
+                self.crossref_wrapper.run_afetch_yrange().get_result_list()
+            )
+        # Then filter out articles whose DOIs are already
+        # in the db or those that are not found.
         already_existing_count: int = 0
         filtered_data: List[Dict[str, Any]] = []
         for article in data:
@@ -238,8 +240,20 @@ class PipelineRunner:
                 continue
 
         self.logger.info(f"Filtered out {already_existing_count} articles")
-
+        # Then set data to filtered data so we don't
+        # keep the raw data floating in memory.
         data: List[Dict[str, Any]] = filtered_data
+
+        # Now run final processing to have `Scraper` fetch missing abstracts.
+        # Reset the result list in `CrossrefWrapper` so it doesn't
+        # run on the original raw data, and instead runs on the filtered data.
+        self.crossref_wrapper.result = data
+
+        # Run the final processing to fetch missing abstracts
+        # and get out the final data.
+        # Again, we don't want to keep the raw data floating in memory,
+        # so we reassign `data` to the the result list returned by `.get_result_list()`.
+        data = self.crossref_wrapper.final_data_process().get_result_list()
         if test_filtering:
             print(f"\n\nFiltered out {already_existing_count} articles\n\n")
             print(
@@ -516,7 +530,7 @@ class PipelineRunner:
         """
         if "scraper" not in kwargs:
             kwargs["scraper"] = self.scraper if self.scraper else self._create_scraper()
-        return CrossrefWrapper(run_scraper=False, **kwargs)
+        return CrossrefWrapper(**kwargs)
 
     def _create_category_processor(self) -> CategoryProcessor:
         """Create a new CategoryProcessor for processing publication categories.
@@ -615,13 +629,15 @@ if __name__ == "__main__":
         # Normal pipeline execution
         logger.info(f"Running in production mode using Live MongoDB URL")
         mongodb_url = os.getenv("MONGODB_URL")
-        pipeline_runner = PipelineRunner(
-            ai_api_key=ai_api_key,
-            crossref_affiliation="Salisbury University",
-            data_from_year=2024,
-            data_to_year=2024,
-            mongodb_url=mongodb_url,
-        )
+        years: List[int] = [2022, 2021, 2020, 2019, 2018, 2017]
+        for year in years:
+            pipeline_runner = PipelineRunner(
+                ai_api_key=ai_api_key,
+                crossref_affiliation="Salisbury University",
+                data_from_year=year,
+                data_to_year=year,
+                mongodb_url=mongodb_url,
+            )
 
-        # Execute pipeline
-        pipeline_runner.run_pipeline(test_filtering=True)
+            # Execute pipeline
+            pipeline_runner.run_pipeline()

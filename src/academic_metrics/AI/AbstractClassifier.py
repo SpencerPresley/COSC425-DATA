@@ -192,7 +192,7 @@ class AbstractClassifier:
             log_file_name="abstract_classifier",
             log_level=DEBUG,
         )
-
+        self.log_to_console = log_to_console
         self.logger.info("Initializing AbstractClassifier")
         self.logger.info("Performing setup")
 
@@ -526,11 +526,11 @@ class AbstractClassifier:
         abstract: str,
         doi: str,
         prompt_variables: Dict[str, Any],
-        level: str = "top",
-        parent_category: Optional[str] = None,
-        current_dict: Optional[
-            Dict[str, Any]
-        ] = None,  # parameter to track current position in defaultdict
+        level: str | None = "top",
+        parent_category: str | None = None,
+        current_dict: (
+            Dict[str, Any] | None
+        ) = None,  # parameter to track current position in defaultdict
     ) -> None:
         """Recursively classifies an abstract through the taxonomy hierarchy.
 
@@ -839,7 +839,7 @@ class AbstractClassifier:
                     f"DOI not found in classification results: {doi}, class results: {self.classification_results}"
                 )
 
-            return self
+        return self
 
     def _make_dirs_helper(self, output_path: str) -> None:
         os.makedirs(os.path.dirname(output_path), exist_ok=True)

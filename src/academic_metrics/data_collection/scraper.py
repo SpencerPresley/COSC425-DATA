@@ -1,5 +1,6 @@
 import json
 import logging
+import time
 import os
 from typing import Any, Dict
 
@@ -109,45 +110,8 @@ class Scraper:
         self.page_load_timeout = 30  # seconds
         self.script_timeout = 30  # seconds
         self.max_retries = 3
-        self.retry_delay = 1  # seconds
-
-    @staticmethod
-    def configure_logging(log_file: str = "scraper.log") -> logging.Logger:
-        """
-        Configure logging for the scraper and related libraries.
-        This is optional and should only be used when running the scraper standalone.
-
-        Args:
-            log_file: Path to the log file
-
-        Returns:
-            logging.Logger: Configured logger instance
-        """
-        # Configure root logger
-        logging.basicConfig(
-            level=logging.DEBUG,
-            format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-            handlers=[logging.FileHandler(log_file)],
-        )
-
-        # Get scraper logger
-        logger = logging.getLogger(__name__)
-
-        # Configure levels for external libraries
-        logging_levels = {
-            "selenium": logging.WARNING,
-            "aiohttp": logging.WARNING,
-            "openai": logging.WARNING,
-            "ChainBuilder": logging.DEBUG,
-            "webdriver_manager": logging.WARNING,
-            "CrossrefWrapper": logging.DEBUG,
-        }
-
-        # Set levels for each library
-        for lib, level in logging_levels.items():
-            logging.getLogger(lib).setLevel(level)
-
-        return logger
+        self.base_retry_delay = 5  # seconds
+        self.max_delay = 125  # seconds
 
     def _setup_selenium_options(self):
         """Set up Selenium Firefox options."""
@@ -161,9 +125,27 @@ class Scraper:
     def setup_chain(self, output_list):
         # instanciate the chain manager
         # google_api_key = os.getenv("GOOGLE_API_KEY")
+        import time
+        import threading
+
+        start_time = time.time()
+        stop_timer = threading.Event()
+
+        def print_elapsed_time():
+            while not stop_timer.is_set():
+                elapsed = time.time() - start_time
+                self.logger.info(f"Waiting for LLM response... {elapsed:.1f}s elapsed")
+                time.sleep(5)
+
+        llm_kwargs = {
+            "request_timeout": 300.0,  # 5 minutes
+            "max_retries": 3,
+        }
+
         chain_manager = ChainManager(
             llm_model="gpt-4o-mini",
             api_key=self.api_key,
+            llm_kwargs=llm_kwargs,
         )
 
         # create a general schema for the model to output text in
@@ -220,31 +202,46 @@ class Scraper:
         {output_list}
         """
 
-        # add the chain
-        chain_manager.add_chain_layer(
-            system_prompt=system_prompt,
-            human_prompt=human_prompt,
-            output_passthrough_key_name="raw_output",
-            parser_type="pydantic",
-            pydantic_output_model=CleanerOutput,
-        )
+        self.logger.info("Starting LLM processing...")
 
-        prompt_variables = {
-            "output_list": str(output_list),
-            "json_structure": json_schema,
-            "json_example_missing_abstract": json_example_missing_abstract,
-        }
+        timer_thread = threading.Thread(target=print_elapsed_time)
+        timer_thread.start()
 
-        results = chain_manager.run(prompt_variables_dict=prompt_variables)[
-            "raw_output"
-        ]
+        try:
+            # add the chain
+            chain_manager.add_chain_layer(
+                system_prompt=system_prompt,
+                human_prompt=human_prompt,
+                output_passthrough_key_name="raw_output",
+                parser_type="pydantic",
+                pydantic_output_model=CleanerOutput,
+            )
 
-        return {
-            "abstract": results.page_content,
-            "extra_context": results.extra_context,
-        }
+            prompt_variables = {
+                "output_list": str(output_list),
+                "json_structure": json_schema,
+                "json_example_missing_abstract": json_example_missing_abstract,
+            }
 
-    def get_abstract(self, url):
+            results = chain_manager.run(prompt_variables_dict=prompt_variables)[
+                "raw_output"
+            ]
+
+            return {
+                "abstract": results.page_content,
+                "extra_context": results.extra_context,
+            }
+        except Exception as e:
+            self.logger.error(f"LLM processing failed: {str(e)}")
+            return None
+
+        finally:
+            stop_timer.set()
+            timer_thread.join()
+            elapsed_time = time.time() - start_time
+            self.logger.info(f"LLM processing completed in {elapsed_time:.2f} seconds")
+
+    def get_abstract(self, url, return_raw_output: bool | None = False):
         """
         Fetches and processes the abstract from a given URL.
 
@@ -305,7 +302,23 @@ class Scraper:
                         page_content = driver.page_source
                     except Exception as e:
                         self.logger.error(f"Error getting page content: {e}")
-                        return None
+                        retry_count += 1
+                        if retry_count >= self.max_retries:
+                            self.logger.error(
+                                f"Max retries ({self.max_retries}) reached for URL: {url}"
+                            )
+                            return None
+
+                        # Calculate exponential delay: 5s, 25s, 125s
+                        # 5^2 = 25, 5^3 = 125
+                        current_delay = min(
+                            self.max_delay, self.base_retry_delay ** (retry_count + 1)
+                        )
+                        self.logger.info(
+                            f"Retrying in {current_delay} seconds... Attempt {retry_count + 1} of {self.max_retries}"
+                        )
+                        time.sleep(current_delay)
+                        continue
 
                     self.logger.debug(
                         f"Page content preview:\n\n{page_content[:50]}\n\n"
@@ -410,6 +423,20 @@ class Scraper:
                     except Exception as e:
                         self.logger.error(f"Error calculating total tokens: {e}")
 
+                    if return_raw_output:
+                        total_words = sum(len(item.split()) for item in output_list)
+                        estimated_tokens = total_words * 0.75
+                        total_characters = sum(len(item) for item in output_list)
+                        self.logger.info(f"Total words: {total_words}")
+                        self.logger.info(f"Total characters: {total_characters}")
+                        self.logger.info(f"Estimated tokens: {estimated_tokens}")
+                        return (
+                            output_list,
+                            total_words,
+                            estimated_tokens,
+                            total_characters,
+                        )
+
                     # Add the next 80000 tokens after the text we have collected
                     # ! Removed to save on OpenAI API input tokens
                     # output_list.append(
@@ -421,6 +448,10 @@ class Scraper:
                     #     f"Added first 100,000 characters of page content for URL: {url}"
                     # )
                     results = self.setup_chain(output_list)
+
+                    if results is None:
+                        return None, None
+
                     self.raw_results.append(results)
                     abstract = results["abstract"]
                     if abstract == "":
@@ -429,8 +460,6 @@ class Scraper:
                         # as the url is to a book or some non-academic research article item
                         return None, None
                     extra_context = results["extra_context"]
-                    print(f"\n\nAbstract:\n{abstract}\n\n")
-                    print(f"\n\nExtra context:\n{extra_context}\n\n")
                     self.logger.debug(f"\n\nAbstract:\n{abstract}\n\n")
                     self.logger.debug(
                         f"Successfully processed abstract for DOI {url}\n{abstract}\n\n"
@@ -460,20 +489,28 @@ class Scraper:
 # Example usage
 if __name__ == "__main__":
     # Set up logging
-    logging.basicConfig(level=logging.DEBUG)
-    logger = logging.getLogger("scraper_demo")
+    # logging.basicConfig(level=logging.DEBUG)
+    # logger = logging.getLogger("scraper_demo")
 
-    # Load environment variables
+    # # Load environment variables
+    # load_dotenv()
+    # api_key = os.getenv("OPENAI_API_KEY")
+
+    # # Initialize scraper
+    # scraper = Scraper(api_key=api_key, logger=logger)
+
+    # # Test URL
+    # test_url = "http://dx.doi.org/10.3197/096327117x14913285800742"
+    # result = scraper.get_abstract(test_url)
+
+    # if result:
+    #     print("Abstract:", result.get("abstract"))
+    #     print("Extra context:", result.get("extra_context"))
     load_dotenv()
     api_key = os.getenv("OPENAI_API_KEY")
-
-    # Initialize scraper
-    scraper = Scraper(api_key=api_key, logger=logger)
-
-    # Test URL
-    test_url = "http://dx.doi.org/10.3197/096327117x14913285800742"
-    result = scraper.get_abstract(test_url)
-
-    if result:
-        print("Abstract:", result.get("abstract"))
-        print("Extra context:", result.get("extra_context"))
+    scraper = Scraper(api_key=api_key)
+    abstract, extra_context = scraper.get_abstract(
+        "http://dx.doi.org/10.1111/hequ.12450"
+    )
+    print(abstract)
+    print(extra_context)

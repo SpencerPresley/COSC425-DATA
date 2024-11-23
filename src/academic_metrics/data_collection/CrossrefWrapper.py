@@ -415,7 +415,7 @@ class CrossrefWrapper:
 
                 abstract, extra_context = self.scraper.get_abstract(item.get("URL"))
 
-                if not abstract or not extra_context:
+                if abstract is None or extra_context is None:
                     self.logger.warning(f"No data returned for URL: {item.get('URL')}")
                     # Remove the item, but don't increment i
                     # We don't increment i as the items in the list will shift left 1 so we want to keep
@@ -431,7 +431,6 @@ class CrossrefWrapper:
 
                 if "abstract" not in item:
                     item["abstract"] = abstract
-                    print(f"\n\nAbstract:\n{item['abstract']}\n\n")
 
                 self.logger.info(
                     f"\n\nProcessed {num_processed}/{len(self.result)}\n\n"
@@ -457,7 +456,6 @@ class CrossrefWrapper:
         self.logger.info(
             f"Final data processing complete. Processed {num_processed} abstracts"
         )
-
         self.scraper.save_raw_results()
         return self
 
@@ -486,5 +484,5 @@ class CrossrefWrapper:
 
 
 if __name__ == "__main__":
-    wrap = CrossrefWrapper()  # create the wrapper
+    wrap = CrossrefWrapper()
     data = wrap.run_all_process().get_data()

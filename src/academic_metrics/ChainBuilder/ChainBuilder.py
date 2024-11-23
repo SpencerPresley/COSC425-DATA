@@ -280,17 +280,22 @@ class ChainWrapper:
             None
         """
         # Set up logger
-        self.logger: logging.Logger = logger or logging.getLogger(__name__)
-        self.logger.setLevel(logging.INFO)
+        # self.logger: logging.Logger = logger or logging.getLogger(__name__)
+        # self.logger.setLevel(logging.INFO)
 
-        # Add handler if none exists
-        if not self.logger.handlers:
-            handler: logging.StreamHandler = logging.StreamHandler()
-            formatter: logging.Formatter = logging.Formatter(
-                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-            )
-            handler.setFormatter(formatter)
-            self.logger.addHandler(handler)
+        # # Add handler if none exists
+        # if not self.logger.handlers:
+        #     handler: logging.StreamHandler = logging.StreamHandler()
+        #     formatter: logging.Formatter = logging.Formatter(
+        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+        #     )
+        #     handler.setFormatter(formatter)
+        #     self.logger.addHandler(handler)
+        self.logger = logger or configure_logging(
+            module_name=__name__,
+            log_file_name="chain_wrapper",
+            log_level=DEBUG,
+        )
 
         self.parser: Optional[ParserType] = parser
         self.fallback_parser: Optional[FallbackParserType] = fallback_parser
@@ -461,17 +466,22 @@ class ChainComposer:
             chain_sequence (List[Tuple[ChainWrapper, Optional[str]]]): A list to store the chain sequence.
         """
         # Set up logger
-        self.logger: logging.Logger = logger or logging.getLogger(__name__)
-        self.logger.setLevel(logging.INFO)
+        # self.logger: logging.Logger = logger or logging.getLogger(__name__)
+        # self.logger.setLevel(logging.INFO)
 
-        # Add handler if none exists
-        if not self.logger.handlers:
-            handler: logging.StreamHandler = logging.StreamHandler()
-            formatter: logging.Formatter = logging.Formatter(
-                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-            )
-            handler.setFormatter(formatter)
-            self.logger.addHandler(handler)
+        # # Add handler if none exists
+        # if not self.logger.handlers:
+        #     handler: logging.StreamHandler = logging.StreamHandler()
+        #     formatter: logging.Formatter = logging.Formatter(
+        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+        #     )
+        #     handler.setFormatter(formatter)
+        #     self.logger.addHandler(handler)
+        self.logger = logger or configure_logging(
+            module_name=__name__,
+            log_file_name="chain_composer",
+            log_level=DEBUG,
+        )
 
         self.chain_sequence: List[Tuple[ChainWrapper, Optional[str]]] = []
 
@@ -625,7 +635,8 @@ class ChainManager:
         preprocessor: Optional[Callable[[Dict[str, Any]], Dict[str, Any]]] = None,
         postprocessor: Optional[Callable[[Any], Any]] = None,
         log_to_console: bool = False,
-        **llm_kwargs: Dict[str, Any],
+        verbose: bool | None = False,
+        llm_kwargs: Dict[str, Any] | None = None,
     ) -> None:
         """
         Initializes the ChainBuilder class.
@@ -643,35 +654,46 @@ class ChainManager:
             None
         """
         # Setup logger
-        current_dir: Path = Path(os.path.dirname(os.path.abspath(__file__)))
-        log_file_path: Path = current_dir / "chain_builder.log"
-        self.logger: logging.Logger = logging.getLogger(__name__)
-        self.logger.setLevel(logging.DEBUG)
-        self.logger.handlers = []
+        # current_dir: Path = Path(os.path.dirname(os.path.abspath(__file__)))
+        # log_file_path: Path = current_dir / "chain_builder.log"
+        # self.logger: logging.Logger = logging.getLogger(__name__)
+        # self.logger.setLevel(logging.DEBUG)
+        # self.logger.handlers = []
 
-        # Add handler if none exists
-        if not self.logger.handlers:
-            handler: logging.FileHandler = logging.FileHandler(log_file_path)
-            handler.setLevel(logging.DEBUG)
-            formatter: logging.Formatter = logging.Formatter(
-                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-            )
-            handler.setFormatter(formatter)
-            self.logger.addHandler(handler)
-            self.logger.propagate = False
-            console_handler: Optional[logging.StreamHandler] = (
-                logging.StreamHandler() if log_to_console else None
-            )
-            if console_handler:
-                console_handler.setFormatter(formatter)
-                self.logger.addHandler(console_handler)
+        # # Add handler if none exists
+        # if not self.logger.handlers:
+        #     handler: logging.FileHandler = logging.FileHandler(log_file_path)
+        #     handler.setLevel(logging.DEBUG)
+        #     formatter: logging.Formatter = logging.Formatter(
+        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+        #     )
+        #     handler.setFormatter(formatter)
+        #     self.logger.addHandler(handler)
+        #     self.logger.propagate = False
+        #     console_handler: Optional[logging.StreamHandler] = (
+        #         logging.StreamHandler() if log_to_console else None
+        #     )
+        #     if console_handler:
+        #         console_handler.setFormatter(formatter)
+        #         self.logger.addHandler(console_handler)
+        self.log_to_console: bool = log_to_console
 
+        self.logger = configure_logging(
+            module_name=__name__,
+            log_file_name="chain_builder",
+            log_level=DEBUG,
+        )
+
+        self.llm_kwargs: Dict[str, Any] = llm_kwargs if llm_kwargs is not None else {}
         self.api_key: str = api_key
         self.llm_model: str = llm_model
         self.llm_model_type: str = self._get_llm_model_type(llm_model=llm_model)
 
         self.logger.info(f"Initializing LLM: {self.llm_model}")
-        self.llm_kwargs: Dict[str, Any] = llm_kwargs or {}
+
+        if verbose:
+            self.llm_kwargs["verbose"] = True
+
         self.llm_temperature: float = llm_temperature
         self.llm: Union[ChatOpenAI, ChatAnthropic, ChatGoogleGenerativeAI] = (
             self._initialize_llm(
@@ -679,7 +701,7 @@ class ChainManager:
                 llm_model_type=self.llm_model_type,
                 llm_model=self.llm_model,
                 llm_temperature=self.llm_temperature,
-                **self.llm_kwargs,
+                llm_kwargs=self.llm_kwargs,
             )
         )
         self.logger.info(f"Initialized LLM: {self.llm}")
@@ -761,7 +783,7 @@ class ChainManager:
         llm_model_type: str,
         llm_model: str,
         llm_temperature: float,
-        **llm_kwargs: Dict[str, Any],
+        llm_kwargs: Dict[str, Any],
     ) -> Union[ChatOpenAI, ChatAnthropic, ChatGoogleGenerativeAI]:
         """
         Initializes a language model based on the specified type.
@@ -781,7 +803,7 @@ class ChainManager:
         """
         if llm_model_type == "openai":
             return self._create_openai_llm(
-                api_key, llm_model, llm_temperature, **llm_kwargs
+                api_key, llm_model, llm_temperature, llm_kwargs
             )
         elif llm_model_type == "anthropic":
             return self._create_anthropic_llm(
@@ -797,7 +819,11 @@ class ChainManager:
             )
 
     def _create_openai_llm(
-        self, api_key: str, llm_model: str, llm_temperature: float, **llm_kwargs
+        self,
+        api_key: str,
+        llm_model: str,
+        llm_temperature: float,
+        llm_kwargs: Dict[str, Any],
     ) -> ChatOpenAI:
         """
         Creates an instance of the ChatOpenAI language model.
@@ -811,8 +837,15 @@ class ChainManager:
         Returns:
             ChatOpenAI: An instance of the ChatOpenAI language model configured with the specified parameters.
         """
+        request_timeout: float | None = llm_kwargs.get("request_timeout", None)
+        max_retries: int = llm_kwargs.get("max_retries", 3)
+
         return ChatOpenAI(
-            model=llm_model, api_key=api_key, temperature=llm_temperature, **llm_kwargs
+            model=llm_model,
+            api_key=api_key,
+            temperature=llm_temperature,
+            request_timeout=request_timeout,
+            max_retries=max_retries,
         )
 
     def _create_anthropic_llm(

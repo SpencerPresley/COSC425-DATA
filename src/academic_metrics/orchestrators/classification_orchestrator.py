@@ -186,7 +186,7 @@ class ClassificationOrchestrator:
             "items": [],
         }
 
-    def run_classification(self, data: List[Dict]):
+    def run_classification(self, data: List[Dict]) -> List[Dict]:
         """Processes and classifies a list of research metadata dictionaries.
 
         Args:
@@ -305,7 +305,6 @@ class ClassificationOrchestrator:
                 doi_abstract_dict: Dict[str, str] = self._make_doi_abstract_dict(
                     doi, normalized_abstract
                 )
-
                 if not doi_abstract_dict:
                     self._update_classified_instance_variables(
                         item=item, doi=doi, abstract=abstract
