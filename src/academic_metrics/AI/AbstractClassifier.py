@@ -159,7 +159,7 @@ class AbstractClassifier:
         doi_to_abstract_dict: Dict[str, str],
         api_key: str,
         log_to_console: bool | None = LOG_TO_CONSOLE,
-        extra_context: dict | "None" = "None",
+        extra_context: Dict[str, Any] | None = None,
         pre_classification_model: str | None = "gpt-4o-mini",
         classification_model: str | None = "gpt-4o-mini",
         theme_model: str | None = "gpt-4o-mini",
@@ -604,7 +604,7 @@ class AbstractClassifier:
                     for category in classified_categories
                     if not self.is_valid_category(category, level)
                 ]
-                if retry_count >= self.max_retries:
+                if retry_count >= self.max_classification_retries:
                     raise ValueError(
                         f"Failed to get valid category after {self.max_classification_retries} retries. Invalid categories at {level} level. "
                         f"Invalid categories: {invalid_categories}"

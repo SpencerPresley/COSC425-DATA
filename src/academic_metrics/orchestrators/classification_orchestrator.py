@@ -186,7 +186,13 @@ class ClassificationOrchestrator:
             "items": [],
         }
 
-    def run_classification(self, data: List[Dict]) -> List[Dict]:
+    def run_classification(
+        self,
+        data: List[Dict],
+        pre_classification_model: str | None = None,
+        classification_model: str | None = None,
+        theme_model: str | None = None,
+    ) -> List[Dict]:
         """Processes and classifies a list of research metadata dictionaries.
 
         Args:
@@ -195,7 +201,12 @@ class ClassificationOrchestrator:
         Returns:
             List[Dict]: Modified data with classifications injected.
         """
-        classified_data = self._classification_orchestrator(data)
+        classified_data = self._classification_orchestrator(
+            data,
+            pre_classification_model=pre_classification_model,
+            classification_model=classification_model,
+            theme_model=theme_model,
+        )
         self._set_classification_ran_true()
         return classified_data
 
@@ -271,7 +282,13 @@ class ClassificationOrchestrator:
         self._validate_classification_ran(self._has_ran_classification())
         return self.unclassified_details_dict
 
-    def _classification_orchestrator(self, data: List[Dict]) -> List[Dict]:
+    def _classification_orchestrator(
+        self,
+        data: List[Dict],
+        pre_classification_model: str | None = None,
+        classification_model: str | None = None,
+        theme_model: str | None = None,
+    ) -> List[Dict]:
         """Core classification logic for processing research metadata.
 
         Args:
@@ -313,7 +330,11 @@ class ClassificationOrchestrator:
                     continue
 
                 classifier: AbstractClassifier = self.abstract_classifier_factory(
-                    doi_abstract_dict=doi_abstract_dict, extra_context=extra_context
+                    doi_abstract_dict=doi_abstract_dict,
+                    extra_context=extra_context,
+                    pre_classification_model=pre_classification_model,
+                    classification_model=classification_model,
+                    theme_model=theme_model,
                 )
 
                 classifier.classify()

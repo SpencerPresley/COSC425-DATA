@@ -1,6 +1,7 @@
 import json
 import logging
 import os
+from collections import defaultdict
 from typing import Any, Callable, Dict, List, TypedDict
 from urllib.parse import quote, unquote
 
@@ -105,6 +106,9 @@ class PipelineRunner:
         mongodb_url: str,
         db_name: str | None = "Site_Data",
         debug: bool | None = False,
+        pre_classification_model: str | None = None,
+        classification_model: str | None = None,
+        theme_model: str | None = None,
     ):
         """Initialize the PipelineRunner with necessary configurations and dependencies.
 
@@ -171,6 +175,9 @@ class PipelineRunner:
             self._create_faculty_postprocessor()
         )
         self.debug: bool = debug
+        self.pre_classification_model: str | None = pre_classification_model
+        self.classification_model: str | None = classification_model
+        self.theme_model: str | None = theme_model
         self.logger.info("PipelineRunner initialized successfully")
 
     def run_pipeline(
@@ -265,6 +272,13 @@ class PipelineRunner:
         # Again, we don't want to keep the raw data floating in memory,
         # so we reassign `data` to the the result list returned by `.get_result_list()`.
         data = self.crossref_wrapper.final_data_process().get_result_list()
+
+        if len(data) == 0:
+            self.logger.info(
+                "None of the remaining articles have abstracts or none could be retrieved"
+            )
+            return
+
         if test_filtering:
             print(f"\n\nFiltered out {already_existing_count} articles\n\n")
             print(
@@ -275,6 +289,7 @@ class PipelineRunner:
 
         self.logger.info(f"\n\nDATA: {data}\n\n")
         self.logger.info("=" * 80)
+
         if self.debug:
             print(f"There are {len(data)} articles to process.")
             response: str = input("Would you like to slice the data? (y/n)")
@@ -287,7 +302,12 @@ class PipelineRunner:
         # Run classification on all data
         # comment out to run without AI for testing
         self.logger.info("\n\nRUNNING CLASSIFICATION\n\n")
-        data = self.classification_orchestrator.run_classification(data)
+        data = self.classification_orchestrator.run_classification(
+            data,
+            pre_classification_model=self.pre_classification_model,
+            classification_model=self.classification_model,
+            theme_model=self.theme_model,
+        )
 
         with open("classified_data.json", "w") as file:
             json.dump(data, file, indent=4)
@@ -619,11 +639,53 @@ if __name__ == "__main__":
     parser.add_argument(
         "--test-run", action="store_true", help="Run in test mode using local MongoDB"
     )
+    parser.add_argument(
+        "--pre-classification-model",
+        action="store_true",
+        help="Valid pre-classification-model's are 'gpt-4o-mini' or 'gpt-4o'",
+    )
+    parser.add_argument(
+        "--classification-model",
+        action="store_true",
+        help="Valid classification-model's are 'gpt-4o-mini' or 'gpt-4o'",
+    )
+    parser.add_argument(
+        "--theme-model",
+        action="store_true",
+        help="Valid theme-model's are 'gpt-4o-mini' or 'gpt-4o'",
+    )
 
     args = parser.parse_args()
 
     # Configure logging
     logger = configure_logging(__name__, log_level=logging.DEBUG)
+
+    pre_classification_model = args.pre_classification_model
+    classification_model = args.classification_model
+    theme_model = args.theme_model
+
+    if pre_classification_model is not None and pre_classification_model not in [
+        "gpt-4o-mini",
+        "gpt-4o",
+    ]:
+        raise ValueError(
+            f"Invalid pre-classification-model: {pre_classification_model}"
+        )
+    else:
+        logger.info(f"Using pre-classification-model: {pre_classification_model}")
+
+    if classification_model is not None and classification_model not in [
+        "gpt-4o-mini",
+        "gpt-4o",
+    ]:
+        raise ValueError(f"Invalid classification-model: {classification_model}")
+    else:
+        logger.info(f"Using classification-model: {classification_model}")
+
+    if theme_model is not None and theme_model not in ["gpt-4o-mini", "gpt-4o"]:
+        raise ValueError(f"Invalid theme-model: {theme_model}")
+    else:
+        logger.info(f"Using theme-model: {theme_model}")
 
     if args.test_run:
         # Load local mongodb url
@@ -644,47 +706,30 @@ if __name__ == "__main__":
         # Normal pipeline execution
         logger.info(f"Running in production mode using Live MongoDB URL")
         mongodb_url = os.getenv("MONGODB_URL")
-        # years: List[int] = [2022, 2021, 2020, 2019, 2018, 2017]
-        # for year in years:
-        #     pipeline_runner = PipelineRunner(
-        #         ai_api_key=ai_api_key,
-        #         crossref_affiliation="Salisbury University",
-        #         data_from_year=year,
-        #         data_to_year=year,
-        #         mongodb_url=mongodb_url,
-        #     )
+        years = ["2021", "2020", "2019", "2018", "2017"]
+        months = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
 
-        #     # Execute pipeline
-        #     pipeline_runner.run_pipeline()
-        years = [2021, 2020, 2019, 2018, 2017]
-        months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-
-        years_processed = []
-        months_processed = []
+        processed_dict = defaultdict(list)
 
         for year in years:
             for month in months:
                 pipeline_runner = PipelineRunner(
                     ai_api_key=ai_api_key,
                     crossref_affiliation="Salisbury University",
-                    data_from_month=month,
-                    data_to_month=month,
-                    data_from_year=year,
-                    data_to_year=year,
+                    data_from_month=int(month),
+                    data_to_month=int(month),
+                    data_from_year=int(year),
+                    data_to_year=int(year),
                     mongodb_url=mongodb_url,
+                    pre_classification_model=pre_classification_model,
+                    classification_model=classification_model,
+                    theme_model=theme_model,
                 )
                 pipeline_runner.run_pipeline()
-                years_processed.append(year)
-                months_processed.append(month)
+                processed_dict[year].append(month)
                 logger.info(f"Processed year: {year}, month: {month}")
 
-    logger.info(f"Years processed: {years_processed}")
-    logger.info(f"Months processed: {months_processed}")
-
-    processed_dict = {
-        "years": years_processed,
-        "months": months_processed,
-    }
+    logger.info(f"Processed data: {json.dumps(processed_dict, indent=4)}")
 
     with open("processed_data.json", "w") as file:
         json.dump(processed_dict, file, indent=4)

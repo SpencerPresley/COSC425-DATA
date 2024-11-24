@@ -58,6 +58,9 @@ class ClassifierFactory:
         self,
         doi_abstract_dict: Dict[str, str],
         extra_context: dict | None = None,
+        pre_classification_model: str | None = None,
+        classification_model: str | None = None,
+        theme_model: str | None = None,
     ) -> AbstractClassifier:
         self.logger.info("Creating AbstractClassifier")
         classifier: AbstractClassifier = AbstractClassifier(
@@ -65,6 +68,9 @@ class ClassifierFactory:
             doi_to_abstract_dict=doi_abstract_dict,
             api_key=self.ai_api_key,
             extra_context=extra_context,
+            pre_classification_model=pre_classification_model,
+            classification_model=classification_model,
+            theme_model=theme_model,
         )
         self.logger.info("AbstractClassifier created successfully")
         return classifier
