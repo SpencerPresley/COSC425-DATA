@@ -98,6 +98,8 @@ class PipelineRunner:
         self,
         ai_api_key: str,
         crossref_affiliation: str,
+        data_from_month: int,
+        data_to_month: int,
         data_from_year: int,
         data_to_year: int,
         mongodb_url: str,
@@ -151,6 +153,8 @@ class PipelineRunner:
         self.scraper: Scraper = self._create_scraper()
         self.crossref_wrapper: CrossrefWrapper = self._create_crossref_wrapper(
             affiliation=self._encode_affiliation(crossref_affiliation),
+            from_month=data_from_month,
+            to_month=data_to_month,
             from_year=data_from_year,
             to_year=data_to_year,
         )
@@ -173,6 +177,7 @@ class PipelineRunner:
         self,
         save_offline_kwargs: SaveOfflineKwargs = SAVE_OFFLINE_KWARGS,
         test_filtering: bool | None = False,
+        save_to_db: bool | None = True,
     ):
         """Execute the main data processing pipeline.
 
@@ -239,7 +244,13 @@ class PipelineRunner:
                 self.logger.warning(f"Article with no DOI: {article}")
                 continue
 
-        self.logger.info(f"Filtered out {already_existing_count} articles")
+        self.logger.info(f"Filtered out {already_existing_count}/{len(data)} articles")
+        self.logger.info(f"Articles to process: {len(filtered_data)}")
+
+        if len(filtered_data) == 0:
+            self.logger.info("No articles to process")
+            return
+
         # Then set data to filtered data so we don't
         # keep the raw data floating in memory.
         data: List[Dict[str, Any]] = filtered_data
@@ -278,6 +289,9 @@ class PipelineRunner:
         self.logger.info("\n\nRUNNING CLASSIFICATION\n\n")
         data = self.classification_orchestrator.run_classification(data)
 
+        with open("classified_data.json", "w") as file:
+            json.dump(data, file, indent=4)
+
         # Process classified data and generate category statistics
         category_orchestrator: CategoryDataOrchestrator = self._create_orchestrator(
             data=data, extend=save_offline_kwargs["extend"]
@@ -298,30 +312,31 @@ class PipelineRunner:
             category_orchestrator.get_final_global_faculty_data()
         )
 
-        self.logger.info("Attempting to save data to database...")
-        try:
-            self.db.insert_categories(category_data)
-            self.logger.info(
-                f"""Successfully inserted {len(category_data)} categories into database"""
-            )
-        except Exception as e:
-            self.logger.error(f"Error saving to database: {e}")
+        if save_to_db:
+            self.logger.info("Attempting to save data to database...")
+            try:
+                self.db.insert_categories(category_data)
+                self.logger.info(
+                    f"""Successfully inserted {len(category_data)} categories into database"""
+                )
+            except Exception as e:
+                self.logger.error(f"Error saving to database: {e}")
 
-        try:
-            self.db.insert_articles(article_data)
-            self.logger.info(
-                f"""Successfully inserted {len(article_data)} articles into database"""
-            )
-        except Exception as e:
-            self.logger.error(f"Error saving to database: {e}")
+            try:
+                self.db.insert_articles(article_data)
+                self.logger.info(
+                    f"""Successfully inserted {len(article_data)} articles into database"""
+                )
+            except Exception as e:
+                self.logger.error(f"Error saving to database: {e}")
 
-        try:
-            self.db.insert_faculty(global_faculty_data)
-            self.logger.info(
-                f"""Successfully inserted {len(global_faculty_data)} faculty into database"""
-            )
-        except Exception as e:
-            self.logger.error(f"Error saving to database: {e}")
+            try:
+                self.db.insert_faculty(global_faculty_data)
+                self.logger.info(
+                    f"""Successfully inserted {len(global_faculty_data)} faculty into database"""
+                )
+            except Exception as e:
+                self.logger.error(f"Error saving to database: {e}")
 
     def test_run(self):
         with open("test_processed_category_data.json", "r") as file:
@@ -629,15 +644,47 @@ if __name__ == "__main__":
         # Normal pipeline execution
         logger.info(f"Running in production mode using Live MongoDB URL")
         mongodb_url = os.getenv("MONGODB_URL")
-        years: List[int] = [2022, 2021, 2020, 2019, 2018, 2017]
-        for year in years:
-            pipeline_runner = PipelineRunner(
-                ai_api_key=ai_api_key,
-                crossref_affiliation="Salisbury University",
-                data_from_year=year,
-                data_to_year=year,
-                mongodb_url=mongodb_url,
-            )
+        # years: List[int] = [2022, 2021, 2020, 2019, 2018, 2017]
+        # for year in years:
+        #     pipeline_runner = PipelineRunner(
+        #         ai_api_key=ai_api_key,
+        #         crossref_affiliation="Salisbury University",
+        #         data_from_year=year,
+        #         data_to_year=year,
+        #         mongodb_url=mongodb_url,
+        #     )
 
-            # Execute pipeline
-            pipeline_runner.run_pipeline()
+        #     # Execute pipeline
+        #     pipeline_runner.run_pipeline()
+        years = [2021, 2020, 2019, 2018, 2017]
+        months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+
+        years_processed = []
+        months_processed = []
+
+        for year in years:
+            for month in months:
+                pipeline_runner = PipelineRunner(
+                    ai_api_key=ai_api_key,
+                    crossref_affiliation="Salisbury University",
+                    data_from_month=month,
+                    data_to_month=month,
+                    data_from_year=year,
+                    data_to_year=year,
+                    mongodb_url=mongodb_url,
+                )
+                pipeline_runner.run_pipeline()
+                years_processed.append(year)
+                months_processed.append(month)
+                logger.info(f"Processed year: {year}, month: {month}")
+
+    logger.info(f"Years processed: {years_processed}")
+    logger.info(f"Months processed: {months_processed}")
+
+    processed_dict = {
+        "years": years_processed,
+        "months": months_processed,
+    }
+
+    with open("processed_data.json", "w") as file:
+        json.dump(processed_dict, file, indent=4)

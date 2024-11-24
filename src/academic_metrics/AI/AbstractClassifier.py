@@ -163,6 +163,7 @@ class AbstractClassifier:
         pre_classification_model: str | None = "gpt-4o-mini",
         classification_model: str | None = "gpt-4o-mini",
         theme_model: str | None = "gpt-4o-mini",
+        max_classification_retries: int | None = 3,
     ) -> None:
 
         # Set up logger
@@ -196,6 +197,8 @@ class AbstractClassifier:
         self.logger.info("Initializing AbstractClassifier")
         self.logger.info("Performing setup")
 
+        self.banned_categories: List[str] = []
+
         self.logger.info("Setting API key")
         self._run_initial_api_key_validation(api_key)
         self.api_key = api_key
@@ -218,6 +221,12 @@ class AbstractClassifier:
         self._classification_model = classification_model
         self._theme_model = theme_model
         self.logger.info("Models set")
+
+        self.logger.info("Setting max classification retries")
+        self.max_classification_retries = max_classification_retries
+        self.logger.info(
+            f"Max classification retries set to: {self.max_classification_retries}"
+        )
 
         self.logger.info("Initialized taxonomy and abstracts")
         self.classification_results: Dict[str, Dict[str, Any]] = {
@@ -583,6 +592,61 @@ class AbstractClassifier:
                 f"Classified categories at {level} level: {classified_categories}"
             )
 
+            # Validate categories before proceeding
+            retry_count: int = 0
+            while not all(
+                self.is_valid_category(category, level)
+                for category in classified_categories
+            ):
+                # Find the invalid categories
+                invalid_categories: List[str] = [
+                    category
+                    for category in classified_categories
+                    if not self.is_valid_category(category, level)
+                ]
+                if retry_count >= self.max_retries:
+                    raise ValueError(
+                        f"Failed to get valid category after {self.max_classification_retries} retries. Invalid categories at {level} level. "
+                        f"Invalid categories: {invalid_categories}"
+                    )
+                self.logger.warning(
+                    f"Invalid categories at {level} level, retry {retry_count + 1} "
+                    f"Invalid categories: {invalid_categories}"
+                )
+
+                # Only set banned words on the final retry.
+                # This is done as words may be split into multiple tokens
+                # leading to pieces of words being banned rather than the entire word.
+                # This could lead to conflict with actual valid categories, and lead
+                # the LLM to not classify into categories that it would otherwise.
+                # This is done as a last resort to try and elicit valid categories.
+                if retry_count == self.max_classification_retries - 1:
+                    self.logger.warning("Final retry - attempting with token banning")
+                    self.banned_categories.extend(invalid_categories)
+                    self.classification_chain_manager.set_words_to_ban(
+                        self.banned_categories
+                    )
+
+                # Increment retry count
+                retry_count += 1
+
+                # Retry classification at this level
+                classification_output = self.classification_chain_manager.run(
+                    prompt_variables_dict=prompt_variables
+                ).get("classification_output", {})
+
+                # Update the classification output with the new output
+                classification_output = ClassificationOutput(**classification_output)
+
+                # Update the classified categories with the new output
+                classified_categories = self.extract_classified_categories(
+                    classification_output
+                )
+
+            self.logger.info(
+                f"Classified categories at {level} level: {classified_categories}"
+            )
+
             result: Dict[str, Any] = {}
 
             for category in classified_categories:
@@ -611,7 +675,7 @@ class AbstractClassifier:
                     next_dict: Dict[str, Any] = current_dict[category]
 
                 elif level == "low":
-                    # current_dict is already the list for this mid category, so just append the classified low category
+                    # Append the low category to the parent (mid) category's list
                     current_dict.append(category)
                     continue
 
@@ -642,6 +706,7 @@ class AbstractClassifier:
                 f"Exception: {str(e)}\n"
                 f"Traceback: {traceback.format_exc()}"
             )
+            raise
 
     def extract_classified_categories(
         self, classification_output: ClassificationOutput
@@ -672,6 +737,18 @@ class AbstractClassifier:
         ]
         self.logger.info("Extracted classified categories")
         return categories
+
+    def is_valid_category(self, category: str, level: str) -> bool:
+        """Validates if a category exists in the taxonomy at the specified level.
+
+        Args:
+            category: The category name to validate
+            level: The taxonomy level ("top", "mid", or "low")
+
+        Returns:
+            bool: True if the category exists at the specified level, False otherwise
+        """
+        return self.taxonomy.is_valid_category(category, level)
 
     def classify(self) -> Self:
         """Orchestrates the complete classification pipeline for all abstracts.
@@ -957,7 +1034,7 @@ class AbstractClassifier:
         return self
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":  #
     # # from academic_metrics.AI.testing_data.abstracts import doi_to_abstract_dict
     # from academic_metrics.utils.taxonomy_util import Taxonomy
     # from dotenv import load_dotenv

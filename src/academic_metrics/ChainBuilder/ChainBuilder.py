@@ -35,6 +35,8 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_openai import ChatOpenAI
 from pydantic import BaseModel, ValidationError
 
+import tiktoken
+
 # ! THIS NEEDS TO BE REMOVED WHEN THIS IS MADE A STANDALONE PACKAGE
 from academic_metrics.configs import (
     configure_logging,
@@ -637,6 +639,7 @@ class ChainManager:
         log_to_console: bool = False,
         verbose: bool | None = False,
         llm_kwargs: Dict[str, Any] | None = None,
+        words_to_ban: List[str] | None = None,
     ) -> None:
         """
         Initializes the ChainBuilder class.
@@ -688,6 +691,14 @@ class ChainManager:
         self.api_key: str = api_key
         self.llm_model: str = llm_model
         self.llm_model_type: str = self._get_llm_model_type(llm_model=llm_model)
+        self.words_to_ban: List[str] | None = words_to_ban
+        self.logit_bias_dict: Dict[int, int] | None = None
+
+        if self.words_to_ban is not None:
+            self._validate_words_to_ban(words_to_ban=self.words_to_ban)
+            self.logit_bias_dict: Dict[int, int] = self._get_logit_bias_dict(
+                llm_model=self.llm_model
+            )
 
         self.logger.info(f"Initializing LLM: {self.llm_model}")
 
@@ -702,6 +713,7 @@ class ChainManager:
                 llm_model=self.llm_model,
                 llm_temperature=self.llm_temperature,
                 llm_kwargs=self.llm_kwargs,
+                logit_bias_dict=self.logit_bias_dict,
             )
         )
         self.logger.info(f"Initialized LLM: {self.llm}")
@@ -752,6 +764,58 @@ class ChainManager:
         """
         return self.__str__()
 
+    def _validate_words_to_ban(self, words_to_ban: List[str]) -> None:
+        """
+        Validate the words to ban list.
+
+        Args:
+            words_to_ban (List[str]): The list of words to ban.
+        """
+        if not isinstance(words_to_ban, list):
+            raise ValueError("words_to_ban must be a list of strings")
+
+        if not all(isinstance(word, str) for word in words_to_ban):
+            raise ValueError("words_to_ban must be a list of strings")
+
+        self.logger.info(f"Words to ban: {words_to_ban}")
+
+        if self.llm_model_type != "openai":
+            raise ValueError(
+                "words_to_ban is currently only supported for OpenAI models"
+            )
+
+        if self.llm_model not in ["gpt-4o", "gpt-4o-mini"]:
+            raise ValueError(
+                "words_to_ban is currently only supported for gpt-4o and gpt-4o-mini"
+            )
+
+    def _get_logit_bias_dict(self, llm_model: str) -> Dict[int, int]:
+        """
+        Get the logit bias dictionary for the words to ban.
+        """
+        self.logger.info(
+            f"Getting logit bias dict for words to ban: {self.words_to_ban}"
+        )
+
+        # Get the tokenizer for gpt-4o and gpt-4o-mini
+        tokenizer = tiktoken.get_encoding("o200k_base")
+
+        logit_bias: Dict[int, int] = {}
+
+        for word in self.words_to_ban:
+            token_ids: List[int] = tokenizer.encode(word)
+
+            if len(token_ids) > 1:
+                self.logger.warning(
+                    f"Word to ban '{word}' has multiple tokens: {token_ids}, all tokens will be banned"
+                )
+
+            # Apply -100 bias to each token
+            for token_id in token_ids:
+                logit_bias[token_id] = -100
+
+        return logit_bias
+
     def _get_llm_model_type(self, *, llm_model: str) -> str:
         """
         Determine the type of LLM (Large Language Model) based on the provided model name.
@@ -779,11 +843,12 @@ class ChainManager:
     def _initialize_llm(
         self,
         *,
-        api_key: str,
-        llm_model_type: str,
-        llm_model: str,
-        llm_temperature: float,
-        llm_kwargs: Dict[str, Any],
+        api_key: str | None = None,
+        llm_model_type: str | None = None,
+        llm_model: str | None = None,
+        llm_temperature: float | None = None,
+        llm_kwargs: Dict[str, Any] | None = None,
+        logit_bias_dict: Dict[int, int] | None = None,
     ) -> Union[ChatOpenAI, ChatAnthropic, ChatGoogleGenerativeAI]:
         """
         Initializes a language model based on the specified type.
@@ -801,9 +866,24 @@ class ChainManager:
         Raises:
             ValueError: If the specified `llm_model_type` is not supported.
         """
+        if api_key is None:
+            api_key = self.api_key
+
+        if llm_model_type is None:
+            llm_model_type = self.llm_model_type
+
+        if llm_model is None:
+            llm_model = self.llm_model
+
+        if llm_temperature is None:
+            llm_temperature = self.llm_temperature
+
+        if llm_kwargs is None:
+            llm_kwargs = self.llm_kwargs
+
         if llm_model_type == "openai":
             return self._create_openai_llm(
-                api_key, llm_model, llm_temperature, llm_kwargs
+                api_key, llm_model, llm_temperature, llm_kwargs, logit_bias_dict
             )
         elif llm_model_type == "anthropic":
             return self._create_anthropic_llm(
@@ -818,12 +898,26 @@ class ChainManager:
                 f"Unsupported LLM model type: {llm_model_type}. Supported types: openai, anthropic, google."
             )
 
+    def _recreate_llm(self) -> None:
+        """
+        Recreates the LLM with the current parameters.
+        """
+        self.llm = self._initialize_llm(
+            api_key=self.api_key,
+            llm_model_type=self.llm_model_type,
+            llm_model=self.llm_model,
+            llm_temperature=self.llm_temperature,
+            llm_kwargs=self.llm_kwargs,
+            logit_bias_dict=self.logit_bias_dict,
+        )
+
     def _create_openai_llm(
         self,
         api_key: str,
         llm_model: str,
         llm_temperature: float,
         llm_kwargs: Dict[str, Any],
+        logit_bias_dict: Dict[int, int] | None = None,
     ) -> ChatOpenAI:
         """
         Creates an instance of the ChatOpenAI language model.
@@ -846,6 +940,7 @@ class ChainManager:
             temperature=llm_temperature,
             request_timeout=request_timeout,
             max_retries=max_retries,
+            logit_bias=logit_bias_dict,
         )
 
     def _create_anthropic_llm(
@@ -1396,6 +1491,17 @@ class ChainManager:
         for key, value in self.chain_variables.items():
             print(f"{key}: {value}")
         print(f"{'-' * 10}\n")
+
+    def set_words_to_ban(self, words_to_ban: List[str]) -> None:
+        """Updates the list of words to ban and recreates the OpenAI LLM with new logit bias.
+
+        Args:
+            words_to_ban: List of words to ban from LLM output
+        """
+        self.words_to_ban = words_to_ban
+        self._validate_words_to_ban(words_to_ban)
+        self.logit_bias_dict = self._get_logit_bias_dict(llm_model=self.llm_model)
+        self._recreate_llm()
 
     def run(
         self,

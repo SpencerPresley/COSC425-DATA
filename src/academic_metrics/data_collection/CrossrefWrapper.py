@@ -42,6 +42,8 @@ class CrossrefWrapper:
         affiliation: str | None = "Salisbury%20University",
         from_year: int | None = 2017,
         to_year: int | None = 2024,
+        from_month: int | None = 1,
+        to_month: int | None = 12,
         test_run: bool | None = False,
         run_scraper: bool | None = True,
     ) -> Self:
@@ -84,8 +86,19 @@ class CrossrefWrapper:
         # Semaphore to control the rate of concurrent requests
         self.semaphore = asyncio.Semaphore(self.MAX_CONCURRENT_REQUESTS)
 
+        if not isinstance(from_year, int):
+            raise ValueError("from_year must be an integer")
+        if not isinstance(to_year, int):
+            raise ValueError("to_year must be an integer")
+        if not isinstance(from_month, int):
+            raise ValueError("from_month must be an integer")
+        if not isinstance(to_month, int):
+            raise ValueError("to_month must be an integer")
+
         self.from_year = from_year
         self.to_year = to_year
+        self.from_month = from_month
+        self.to_month = to_month
         self.base_url = base_url
         self.affiliation = affiliation
         self.test_run = test_run
@@ -200,17 +213,48 @@ class CrossrefWrapper:
             list: The filtered list of items.
         """
         filtered_data = []
+        i = 0
+        items = data.get("items", None)
+        if items is None:
+            raise ValueError("No items found in data")
+
         for item in data.get("items", []):
-            if item["published"]["date-parts"][0][0] >= int(
-                from_date.split("-")[0]
-            ) and item["published"]["date-parts"][0][0] <= int(to_date.split("-")[0]):
-                count = 0
-                for author in item.get("author", []):
-                    for affil in author.get("affiliation", []):
-                        if affiliation in affil.get("name", "").lower():
-                            count += 1
-                if count > 0:
-                    filtered_data.append(item)
+            # Get published date information
+            item_published = item.get("published", None)
+            item_date_parts = None
+            if item_published is not None:
+                item_date_parts = item_published.get("date-parts", None)
+
+            # Skip if no date parts or invalid structure
+            if not item_date_parts or not item_date_parts[0]:
+                continue
+
+            # Get year and month, defaulting to None if not available
+            pub_year = item_date_parts[0][0] if len(item_date_parts[0]) > 0 else None
+            pub_month = item_date_parts[0][1] if len(item_date_parts[0]) > 1 else None
+
+            from_year = int(from_date.split("-")[0])
+            from_month = int(from_date.split("-")[1])
+            to_year = int(to_date.split("-")[0])
+            to_month = int(to_date.split("-")[1])
+
+            # Skip if year is missing or outside range
+            if pub_year is None or pub_year < from_year or pub_year > to_year:
+                continue
+
+            # If same year as bounds, check months
+            if pub_year == from_year and (pub_month is None or pub_month < from_month):
+                continue
+            if pub_year == to_year and (pub_month is None or pub_month > to_month):
+                continue
+
+            count = 0
+            for author in item.get("author", []):
+                for affil in author.get("affiliation", []):
+                    if affiliation in affil.get("name", "").lower():
+                        count += 1
+            if count > 0:
+                filtered_data.append(item)
 
         return filtered_data
 
@@ -315,6 +359,25 @@ class CrossrefWrapper:
         self.logger.info("Processing Complete")
         return (item_list, cursor)
 
+    def _get_last_day_of_month(self, year: int, month: int) -> int:
+        """
+        Returns the last day of the given month in the given year.
+        Handles leap years for February.
+        """
+        # Handle February for leap years
+        if month == 2:
+            if year % 4 == 0 and (year % 100 != 0 or year % 400 == 0):
+                return 29
+            return 28
+
+        # Handle months with 30 days
+        # Months with 30 days: April (4), June (6), September (9), November (11)
+        if month in [4, 6, 9, 11]:
+            return 30
+
+        # All other months have 31 days
+        return 31
+
     async def fetch_data_for_multiple_years(self) -> list[dict[str, Any]]:
         """
         Fetches data for multiple years asynchronously.
@@ -325,12 +388,21 @@ class CrossrefWrapper:
         # creat the async session and send the tasks to each thread
         async with aiohttp.ClientSession() as session:
             # create the list of tasks to complete
-            tasks = [
-                self.acollect_yrange(
-                    session, from_date=f"{year}-01-01", to_date=f"{year}-12-31"
+            tasks = []
+            for year in self.years:
+                # Format dates with leading zeros for months
+                from_date = f"{year}-{self.from_month:02d}-01"
+
+                # Format to_date to have the correct last day of the month
+                last_day = self._get_last_day_of_month(year, self.to_month)
+                to_date = f"{year}-{self.to_month:02d}-{last_day}"
+
+                task = self.acollect_yrange(
+                    session=session,
+                    from_date=from_date,
+                    to_date=to_date,
                 )
-                for year in self.years
-            ]
+                tasks.append(task)
 
             # get the start time
             start_time = time.time()
