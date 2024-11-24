@@ -22,9 +22,7 @@ class ColorFormatter(logging.Formatter):
         """Format the log record with colors"""
         # Color only for console output (StreamHandler)
         for handler in logging.getLogger(record.name).handlers:
-            if isinstance(handler, logging.StreamHandler) and not isinstance(
-                handler, logging.FileHandler
-            ):
+            if type(handler) is logging.StreamHandler:
                 levelname = record.levelname
                 if levelname in self.COLOR_MAP:
                     record.levelname = f"{self.COLOR_MAP[levelname]}{levelname}{self.COLOR_MAP['RESET']}"
@@ -202,19 +200,28 @@ def configure_logging(
     logger = logging.getLogger(module_name)
     logger.setLevel(log_level)
 
-    formatter = ColorFormatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+    # Prevent the logger from propagating to the root logger.
+    # This should avoid duplicate log messages in the console.
+    logger.propagate = False
+
+    console_formatter = ColorFormatter(
+        "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    )
+    file_formatter = logging.Formatter(
+        "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    )
 
     log_file_path = LOG_DIR_PATH / f"{log_file_name}.log"
     os.makedirs(os.path.dirname(log_file_path), exist_ok=True)
     file_handler = logging.FileHandler(log_file_path)
     file_handler.setLevel(log_level)
-    file_handler.setFormatter(formatter)
+    file_handler.setFormatter(file_formatter)
     logger.addHandler(file_handler)
 
     if LOG_TO_CONSOLE:
         console_handler = logging.StreamHandler()
         console_handler.setLevel(log_level)
-        console_handler.setFormatter(formatter)
+        console_handler.setFormatter(console_formatter)
         logger.addHandler(console_handler)
         _config_logger.info(f"Added console handler for {module_name}")
 

@@ -641,17 +641,20 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--pre-classification-model",
-        action="store_true",
+        type=str,
+        choices=["gpt-4o-mini", "gpt-4o"],
         help="Valid pre-classification-model's are 'gpt-4o-mini' or 'gpt-4o'",
     )
     parser.add_argument(
         "--classification-model",
-        action="store_true",
+        type=str,
+        choices=["gpt-4o-mini", "gpt-4o"],
         help="Valid classification-model's are 'gpt-4o-mini' or 'gpt-4o'",
     )
     parser.add_argument(
         "--theme-model",
-        action="store_true",
+        type=str,
+        choices=["gpt-4o-mini", "gpt-4o"],
         help="Valid theme-model's are 'gpt-4o-mini' or 'gpt-4o'",
     )
 
@@ -663,29 +666,6 @@ if __name__ == "__main__":
     pre_classification_model = args.pre_classification_model
     classification_model = args.classification_model
     theme_model = args.theme_model
-
-    if pre_classification_model is not None and pre_classification_model not in [
-        "gpt-4o-mini",
-        "gpt-4o",
-    ]:
-        raise ValueError(
-            f"Invalid pre-classification-model: {pre_classification_model}"
-        )
-    else:
-        logger.info(f"Using pre-classification-model: {pre_classification_model}")
-
-    if classification_model is not None and classification_model not in [
-        "gpt-4o-mini",
-        "gpt-4o",
-    ]:
-        raise ValueError(f"Invalid classification-model: {classification_model}")
-    else:
-        logger.info(f"Using classification-model: {classification_model}")
-
-    if theme_model is not None and theme_model not in ["gpt-4o-mini", "gpt-4o"]:
-        raise ValueError(f"Invalid theme-model: {theme_model}")
-    else:
-        logger.info(f"Using theme-model: {theme_model}")
 
     if args.test_run:
         # Load local mongodb url
