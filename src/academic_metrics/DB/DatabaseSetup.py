@@ -29,8 +29,6 @@ class DatabaseWrapper:
         """
         Initialize the DatabaseWrapper with database name, collection name, and MongoDB URL.
         """
-        # self.logger = logging.getLogger(__name__)
-
         self.logger = configure_logging(
             module_name=__name__,
             log_file_name="database_setup",

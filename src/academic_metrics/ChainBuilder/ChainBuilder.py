@@ -281,18 +281,6 @@ class ChainWrapper:
         Returns:
             None
         """
-        # Set up logger
-        # self.logger: logging.Logger = logger or logging.getLogger(__name__)
-        # self.logger.setLevel(logging.INFO)
-
-        # # Add handler if none exists
-        # if not self.logger.handlers:
-        #     handler: logging.StreamHandler = logging.StreamHandler()
-        #     formatter: logging.Formatter = logging.Formatter(
-        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-        #     )
-        #     handler.setFormatter(formatter)
-        #     self.logger.addHandler(handler)
         self.logger = logger or configure_logging(
             module_name=__name__,
             log_file_name="chain_wrapper",
@@ -467,18 +455,6 @@ class ChainComposer:
             logger (logging.Logger): The logger instance used for logging.
             chain_sequence (List[Tuple[ChainWrapper, Optional[str]]]): A list to store the chain sequence.
         """
-        # Set up logger
-        # self.logger: logging.Logger = logger or logging.getLogger(__name__)
-        # self.logger.setLevel(logging.INFO)
-
-        # # Add handler if none exists
-        # if not self.logger.handlers:
-        #     handler: logging.StreamHandler = logging.StreamHandler()
-        #     formatter: logging.Formatter = logging.Formatter(
-        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-        #     )
-        #     handler.setFormatter(formatter)
-        #     self.logger.addHandler(handler)
         self.logger = logger or configure_logging(
             module_name=__name__,
             log_file_name="chain_composer",
@@ -656,29 +632,6 @@ class ChainManager:
         Returns:
             None
         """
-        # Setup logger
-        # current_dir: Path = Path(os.path.dirname(os.path.abspath(__file__)))
-        # log_file_path: Path = current_dir / "chain_builder.log"
-        # self.logger: logging.Logger = logging.getLogger(__name__)
-        # self.logger.setLevel(logging.DEBUG)
-        # self.logger.handlers = []
-
-        # # Add handler if none exists
-        # if not self.logger.handlers:
-        #     handler: logging.FileHandler = logging.FileHandler(log_file_path)
-        #     handler.setLevel(logging.DEBUG)
-        #     formatter: logging.Formatter = logging.Formatter(
-        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-        #     )
-        #     handler.setFormatter(formatter)
-        #     self.logger.addHandler(handler)
-        #     self.logger.propagate = False
-        #     console_handler: Optional[logging.StreamHandler] = (
-        #         logging.StreamHandler() if log_to_console else None
-        #     )
-        #     if console_handler:
-        #         console_handler.setFormatter(formatter)
-        #         self.logger.addHandler(console_handler)
         self.log_to_console: bool = log_to_console
 
         self.logger = configure_logging(

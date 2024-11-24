@@ -146,22 +146,6 @@ class ClassificationOrchestrator:
         abstract_classifier_factory: Callable[[Dict[str, str]], AbstractClassifier],
         utilities: Utilities,
     ):
-        # Set up logger
-        # self.log_file_path: str = os.path.join(
-        #     LOG_DIR_PATH, "classification_orchestrator.log"
-        # )
-        # self.logger: logging.Logger = logging.getLogger(__name__)
-        # self.logger.setLevel(logging.DEBUG)
-
-        # if not self.logger.handlers:
-        #     handler: logging.FileHandler = logging.FileHandler(self.log_file_path)
-        #     handler.setLevel(logging.DEBUG)
-        #     formatter: logging.Formatter = logging.Formatter(
-        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-        #     )
-        #     handler.setFormatter(formatter)
-        #     self.logger.addHandler(handler)
-
         self.logger = configure_logging(
             module_name=__name__,
             log_file_name="classification_orchestrator",

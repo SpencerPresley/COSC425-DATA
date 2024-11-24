@@ -124,37 +124,25 @@ class PipelineRunner:
         Raises:
             Exception: If logger setup fails or required dependencies cannot be initialized.
         """
-        # Set up pipeline-wide logger
-        self.log_file_path: str = os.path.join(LOG_DIR_PATH, "pipeline.log")
-        self.logger: logging.Logger = logging.getLogger(__name__)
-        self.logger.setLevel(logging.DEBUG)
 
-        self.logger.handlers = []
-        if not self.logger.handlers:
-            # Create file handler
-            handler: logging.FileHandler = logging.FileHandler(self.log_file_path)
-            handler.setLevel(logging.ERROR)
-            formatter: logging.Formatter = logging.Formatter(
-                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-            )
-            handler.setFormatter(formatter)
-            self.logger.addHandler(handler)
+        self.logger: logging.Logger = configure_logging(__name__, "pipeline", DEBUG)
+        self.logger.info("Initializing PipelineRunner...")
+        self.logger.info("PipelineRunner logger initialized successfully")
 
-            console_handler: logging.StreamHandler = logging.StreamHandler()
-            console_handler.setLevel(logging.DEBUG)
-            console_formatter: logging.Formatter = logging.Formatter(
-                "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-            )
-            console_handler.setFormatter(console_formatter)
-            self.logger.addHandler(console_handler)
-
-        self.logger.info("Initializing PipelineRunner")
-
+        self.logger.info("Initializing PipelineRunner dependencies...")
         self.ai_api_key: str = ai_api_key
         self.db_name: str = db_name
         self.mongodb_url: str = mongodb_url
+
+        self.logger.info("Creating DatabaseWrapper instance...")
         self.db: DatabaseWrapper = self._create_db()
+        self.logger.info("DatabaseWrapper instance created successfully")
+
+        self.logger.info("Creating Scraper instance...")
         self.scraper: Scraper = self._create_scraper()
+        self.logger.info("Scraper instance created successfully")
+
+        self.logger.info("Creating CrossrefWrapper instance...")
         self.crossref_wrapper: CrossrefWrapper = self._create_crossref_wrapper(
             affiliation=self._encode_affiliation(crossref_affiliation),
             from_month=data_from_month,
@@ -162,22 +150,60 @@ class PipelineRunner:
             from_year=data_from_year,
             to_year=data_to_year,
         )
+        self.logger.info("CrossrefWrapper instance created successfully")
+
+        self.logger.info("Creating Taxonomy instance...")
         self.taxonomy: Taxonomy = self._create_taxonomy()
+        self.logger.info("Taxonomy instance created successfully")
+
+        self.logger.info("Creating WarningManager instance...")
         self.warning_manager: WarningManager = self._create_warning_manager()
+        self.logger.info("WarningManager instance created successfully")
+
+        self.logger.info("Creating StrategyFactory instance...")
         self.strategy_factory: StrategyFactory = self._create_strategy_factory()
+        self.logger.info("StrategyFactory instance created successfully")
+
+        self.logger.info("Creating Utilities instance...")
         self.utilities: Utilities = self._create_utilities_instance()
+        self.logger.info("Utilities instance created successfully")
+
+        self.logger.info("Creating ClassificationOrchestrator instance...")
         self.classification_orchestrator: ClassificationOrchestrator = (
             self._create_classification_orchestrator()
         )
+        self.logger.info("ClassificationOrchestrator instance created successfully")
+
+        self.logger.info("Creating DataClassFactory instance...")
         self.dataclass_factory: DataClassFactory = self._create_dataclass_factory()
+        self.logger.info("DataClassFactory instance created successfully")
+
+        self.logger.info("Creating CategoryProcessor instance...")
         self.category_processor: CategoryProcessor = self._create_category_processor()
+        self.logger.info("CategoryProcessor instance created successfully")
+
+        self.logger.info("Creating FacultyPostprocessor instance...")
         self.faculty_postprocessor: FacultyPostprocessor = (
             self._create_faculty_postprocessor()
         )
+        self.logger.info("FacultyPostprocessor instance created successfully")
+
+        self.logger.info("Setting debug mode...")
         self.debug: bool = debug
+        self.logger.info("Debug mode set successfully")
+
+        self.logger.info("Setting pre-classification-model...")
         self.pre_classification_model: str | None = pre_classification_model
+        self.logger.info("Pre-classification-model set successfully")
+
+        self.logger.info("Setting classification-model...")
         self.classification_model: str | None = classification_model
+        self.logger.info("Classification-model set successfully")
+
+        self.logger.info("Setting theme-model...")
         self.theme_model: str | None = theme_model
+        self.logger.info("Theme-model set successfully")
+
         self.logger.info("PipelineRunner initialized successfully")
 
     def run_pipeline(
@@ -207,12 +233,16 @@ class PipelineRunner:
         Raises:
             Exception: If there are errors in data processing or database operations.
         """
+        self.logger.info("Running pipeline...")
+
         # Get the existing DOIs from the database
         # so that we don't process duplicates
+        self.logger.info("Getting existing DOIs from database...")
         existing_dois: List[str] = self.db.get_dois()
         self.logger.info(f"Found {len(existing_dois)} existing DOIs in database")
 
         # Get data from crossref for the school and date range
+        self.logger.info("Getting data from Crossref...")
         data: List[Dict[str, Any]] = []
         if save_offline_kwargs["offline"]:
             if save_offline_kwargs["run_crossref_before_file_load"]:
@@ -226,6 +256,9 @@ class PipelineRunner:
             data: List[Dict[str, Any]] = (
                 self.crossref_wrapper.run_afetch_yrange().get_result_list()
             )
+        self.logger.info(
+            "Filtering out articles whose DOIs are already in the db or those that are not found..."
+        )
         # Then filter out articles whose DOIs are already
         # in the db or those that are not found.
         already_existing_count: int = 0
@@ -253,6 +286,7 @@ class PipelineRunner:
 
         self.logger.info(f"Filtered out {already_existing_count}/{len(data)} articles")
         self.logger.info(f"Articles to process: {len(filtered_data)}")
+        self.logger.info("Initial filtering complete")
 
         if len(filtered_data) == 0:
             self.logger.info("No articles to process")
@@ -265,13 +299,17 @@ class PipelineRunner:
         # Now run final processing to have `Scraper` fetch missing abstracts.
         # Reset the result list in `CrossrefWrapper` so it doesn't
         # run on the original raw data, and instead runs on the filtered data.
+        self.logger.info("Resetting CrossrefWrapper result list...")
         self.crossref_wrapper.result = data
+        self.logger.info("CrossrefWrapper result list reset successfully")
 
         # Run the final processing to fetch missing abstracts
         # and get out the final data.
         # Again, we don't want to keep the raw data floating in memory,
         # so we reassign `data` to the the result list returned by `.get_result_list()`.
+        self.logger.info("Running final processing to fetch missing abstracts...")
         data = self.crossref_wrapper.final_data_process().get_result_list()
+        self.logger.info("Final processing complete")
 
         if len(data) == 0:
             self.logger.info(
@@ -288,7 +326,6 @@ class PipelineRunner:
             return
 
         self.logger.info(f"\n\nDATA: {data}\n\n")
-        self.logger.info("=" * 80)
 
         if self.debug:
             print(f"There are {len(data)} articles to process.")
@@ -298,39 +335,51 @@ class PipelineRunner:
                 data = data[: int(res)]
                 self.logger.info(f"\n\nSLICED DATA:\n{data}\n\n")
 
-        self.logger.info("=" * 80)
         # Run classification on all data
         # comment out to run without AI for testing
-        self.logger.info("\n\nRUNNING CLASSIFICATION\n\n")
+        self.logger.info("Running classification...")
         data = self.classification_orchestrator.run_classification(
             data,
             pre_classification_model=self.pre_classification_model,
             classification_model=self.classification_model,
             theme_model=self.theme_model,
         )
+        self.logger.info("Classification complete")
 
         with open("classified_data.json", "w") as file:
             json.dump(data, file, indent=4)
 
         # Process classified data and generate category statistics
+        self.logger.info(
+            "Processing classified data and generating category statistics..."
+        )
         category_orchestrator: CategoryDataOrchestrator = self._create_orchestrator(
             data=data, extend=save_offline_kwargs["extend"]
         )
         category_orchestrator.run_orchestrator()
+        self.logger.info("Category statistics processing complete")
 
         # Get all the processed data from CategoryDataOrchestrator
         self.logger.info("Getting final data...")
 
+        self.logger.info("Getting final category data...")
         category_data: List[Dict[str, Any]] = (
             category_orchestrator.get_final_category_data()
         )
+        self.logger.info("Final category data retrieved successfully")
+
+        self.logger.info("Getting final faculty data...")
         # faculty_data = self.category_orchestrator.get_final_faculty_data()
         article_data: List[Dict[str, Any]] = (
             category_orchestrator.get_final_article_data()
         )
+        self.logger.info("Final article data retrieved successfully")
+
+        self.logger.info("Getting final global faculty data...")
         global_faculty_data: List[Dict[str, Any]] = (
             category_orchestrator.get_final_global_faculty_data()
         )
+        self.logger.info("Final global faculty data retrieved successfully")
 
         if save_to_db:
             self.logger.info("Attempting to save data to database...")
@@ -543,6 +592,7 @@ class PipelineRunner:
                 self.warning_manager.log_warning(
                     "File Loading", f"Error loading file: {file_path}. Error: {e}"
                 )
+                raise e
 
         return data_list
 
@@ -661,7 +711,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # Configure logging
-    logger = configure_logging(__name__, log_level=logging.DEBUG)
+    logger = configure_logging(__name__, "main", log_level=logging.DEBUG)
 
     pre_classification_model = args.pre_classification_model
     classification_model = args.classification_model

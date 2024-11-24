@@ -95,26 +95,6 @@ class CategoryProcessor:
             ValueError: If required dependencies are not properly initialized.
             IOError: If log file cannot be created or accessed.
         """
-        # Set up logger
-        # self.log_file_path: str = os.path.join(LOG_DIR_PATH, "category_processor.log")
-        # self.logger: logging.Logger = logging.getLogger(__name__)
-        # self.logger.handlers = []
-        # self.logger.setLevel(logging.DEBUG)
-
-        # if not self.logger.handlers:
-        #     handler: logging.FileHandler = logging.FileHandler(self.log_file_path)
-        #     formatter: logging.Formatter = logging.Formatter(
-        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-        #     )
-        #     handler.setFormatter(formatter)
-        #     self.logger.addHandler(handler)
-        #     console_handler: logging.StreamHandler | None = (
-        #         logging.StreamHandler() if log_to_console else None
-        #     )
-        #     if console_handler:
-        #         console_handler.setFormatter(formatter)
-        #         self.logger.addHandler(console_handler)
-
         self.logger = configure_logging(
             module_name=__name__,
             log_file_name="category_processor",

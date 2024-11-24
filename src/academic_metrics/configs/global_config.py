@@ -152,6 +152,13 @@ def configure_logging(
         log_file_name (str): The name of the log file to use for the module.
             - This should be a valid file name with no file extension.
             - It should only be the file name desired for that module, not the full path.
+        log_level (int): The log level to use for the module.
+            - This should be a valid python logging log level.
+        force (bool): Whether to force the creation of a new logger instance.
+            - If a logger instance for the module already exists and `force` is False,
+              the existing instance will be returned.
+            - If a logger instance for the module already exists and `force` is True,
+              a new instance will be created.
 
     Returns:
         logging.Logger: The configured logger for the module.

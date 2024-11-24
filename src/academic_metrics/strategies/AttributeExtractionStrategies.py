@@ -97,21 +97,6 @@ class AttributeExtractionStrategy(ABC):
             It ensures that each strategy has access to logging, warning management, and file storage
             for handling edge cases and errors in the extraction process.
         """
-        # self.log_file_path: str = os.path.join(
-        #     LOG_DIR_PATH, "attribute_extraction_strategies.log"
-        # )
-        # self.logger: logging.Logger = logging.getLogger(__name__)
-        # self.logger.setLevel(logging.DEBUG)
-        # self.logger.handlers = []
-        # if not self.logger.handlers:
-        #     handler = logging.FileHandler(self.log_file_path)
-        #     handler.setLevel(logging.DEBUG)
-        #     formatter = logging.Formatter(
-        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-        #     )
-        #     handler.setFormatter(formatter)
-        #     self.logger.addHandler(handler)
-
         self.logger = configure_logging(
             module_name=__name__,
             log_file_name="attribute_extraction_strategies",
@@ -541,16 +526,6 @@ class CrossrefTitleExtractionStrategy(AttributeExtractionStrategy):
             Prepares the strategy instance for title extraction from Crossref data.
         """
         super().__init__(warning_manager=warning_manager)
-        # self.log_file_path = LOG_DIR_PATH / "crossref_title_extraction_strategy.log"
-        # self.logger = logging.getLogger(__name__)
-        # self.logger.setLevel(logging.DEBUG)
-        # self.logger.handlers = []
-        # if not self.logger.handlers:
-        #     handler = logging.FileHandler(self.log_file_path)
-        #     formatter = logging.Formatter(
-        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-        #     )
-        #     self.logger.addHandler(handler)
         self.logger = configure_logging(
             module_name=__name__,
             log_file_name="crossref_title_extraction_strategy",
@@ -664,16 +639,6 @@ class CrossrefAbstractExtractionStrategy(AttributeExtractionStrategy):
             Prepares the strategy instance for abstract extraction from Crossref data.
         """
         super().__init__(warning_manager=warning_manager)
-        # self.log_file_path = LOG_DIR_PATH / "crossref_abstract_extraction_strategy.log"
-        # self.logger = logging.getLogger(__name__)
-        # self.logger.setLevel(logging.DEBUG)
-        # self.logger.handlers = []
-        # if not self.logger.handlers:
-        #     handler = logging.FileHandler(self.log_file_path)
-        #     formatter = logging.Formatter(
-        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-        #     )
-        #     self.logger.addHandler(handler)
         self.logger = configure_logging(
             module_name=__name__,
             log_file_name="crossref_abstract_extraction_strategy",
@@ -784,16 +749,6 @@ class CrossrefAuthorExtractionStrategy(AttributeExtractionStrategy):
             Prepares the strategy instance for author extraction from Crossref data.
         """
         super().__init__(warning_manager=warning_manager)
-        # self.log_file_path = LOG_DIR_PATH / "crossref_author_extraction_strategy.log"
-        # self.logger = logging.getLogger(__name__)
-        # self.logger.setLevel(logging.DEBUG)
-        # self.logger.handlers = []
-        # if not self.logger.handlers:
-        #     handler = logging.FileHandler(self.log_file_path)
-        #     formatter = logging.Formatter(
-        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-        #     )
-        #     self.logger.addHandler(handler)
         self.logger = configure_logging(
             module_name=__name__,
             log_file_name="crossref_author_extraction_strategy",
@@ -908,18 +863,6 @@ class CrossrefDepartmentExtractionStrategy(AttributeExtractionStrategy):
             Prepares the strategy instance for department extraction from Crossref data.
         """
         super().__init__(warning_manager=warning_manager)
-        # self.log_file_path = (
-        #     LOG_DIR_PATH / "crossref_department_extraction_strategy.log"
-        # )
-        # self.logger = logging.getLogger(__name__)
-        # self.logger.setLevel(logging.DEBUG)
-        # self.logger.handlers = []
-        # if not self.logger.handlers:
-        #     handler = logging.FileHandler(self.log_file_path)
-        #     formatter = logging.Formatter(
-        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-        #     )
-        #     self.logger.addHandler(handler)
         self.logger = configure_logging(
             module_name=__name__,
             log_file_name="crossref_department_extraction_strategy",
@@ -1023,18 +966,6 @@ class CrossrefCategoriesExtractionStrategy(AttributeExtractionStrategy):
             Prepares the strategy instance for category extraction from Crossref data.
         """
         super().__init__(warning_manager=warning_manager)
-        # self.log_file_path = (
-        #     LOG_DIR_PATH / "crossref_categories_extraction_strategy.log"
-        # )
-        # self.logger = logging.getLogger(__name__)
-        # self.logger.setLevel(logging.DEBUG)
-        # self.logger.handlers = []
-        # if not self.logger.handlers:
-        #     handler = logging.FileHandler(self.log_file_path)
-        #     formatter = logging.Formatter(
-        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-        #     )
-        #     self.logger.addHandler(handler)
         self.logger = configure_logging(
             module_name=__name__,
             log_file_name="crossref_categories_extraction_strategy",
@@ -1115,18 +1046,6 @@ class CrossrefCitationCountExtractionStrategy(AttributeExtractionStrategy):
             Prepares the strategy instance for citation count extraction from Crossref data.
         """
         super().__init__(warning_manager=warning_manager)
-        # self.log_file_path = (
-        #     LOG_DIR_PATH / "crossref_citation_count_extraction_strategy.log"
-        # )
-        # self.logger = logging.getLogger(__name__)
-        # self.logger.setLevel(logging.DEBUG)
-        # self.logger.handlers = []
-        # if not self.logger.handlers:
-        #     handler = logging.FileHandler(self.log_file_path)
-        #     formatter = logging.Formatter(
-        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-        #     )
-        #     self.logger.addHandler(handler)
         self.logger = configure_logging(
             module_name=__name__,
             log_file_name="crossref_citation_count_extraction_strategy",
@@ -1163,18 +1082,6 @@ class CrossrefCitationCountExtractionStrategy(AttributeExtractionStrategy):
 class CrossrefLicenseURLExtractionStrategy(AttributeExtractionStrategy):
     def __init__(self, warning_manager: WarningManager):
         super().__init__(warning_manager=warning_manager)
-        # self.log_file_path = (
-        #     LOG_DIR_PATH / "crossref_license_url_extraction_strategy.log"
-        # )
-        # self.logger = logging.getLogger(__name__)
-        # self.logger.setLevel(logging.DEBUG)
-        # self.logger.handlers = []
-        # if not self.logger.handlers:
-        #     handler = logging.FileHandler(self.log_file_path)
-        #     formatter = logging.Formatter(
-        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-        #     )
-        #     self.logger.addHandler(handler)
         self.logger = configure_logging(
             module_name=__name__,
             log_file_name="crossref_license_url_extraction_strategy",
@@ -1199,18 +1106,6 @@ class CrossrefLicenseURLExtractionStrategy(AttributeExtractionStrategy):
 class CrossrefPublishedPrintExtractionStrategy(AttributeExtractionStrategy):
     def __init__(self, warning_manager: WarningManager):
         super().__init__(warning_manager=warning_manager)
-        # self.log_file_path = (
-        #     LOG_DIR_PATH / "crossref_published_print_extraction_strategy.log"
-        # )
-        # self.logger = logging.getLogger(__name__)
-        # self.logger.setLevel(logging.DEBUG)
-        # self.logger.handlers = []
-        # if not self.logger.handlers:
-        #     handler = logging.FileHandler(self.log_file_path)
-        #     formatter = logging.Formatter(
-        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-        #     )
-        #     self.logger.addHandler(handler)
         self.logger = configure_logging(
             module_name=__name__,
             log_file_name="crossref_published_print_extraction_strategy",
@@ -1236,18 +1131,6 @@ class CrossrefPublishedPrintExtractionStrategy(AttributeExtractionStrategy):
 class CrossrefCreatedDateExtractionStrategy(AttributeExtractionStrategy):
     def __init__(self, warning_manager: WarningManager):
         super().__init__(warning_manager=warning_manager)
-        # self.log_file_path = (
-        #     LOG_DIR_PATH / "crossref_created_date_extraction_strategy.log"
-        # )
-        # self.logger = logging.getLogger(__name__)
-        # self.logger.setLevel(logging.DEBUG)
-        # self.logger.handlers = []
-        # if not self.logger.handlers:
-        #     handler = logging.FileHandler(self.log_file_path)
-        #     formatter = logging.Formatter(
-        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-        #     )
-        #     self.logger.addHandler(handler)
         self.logger = configure_logging(
             module_name=__name__,
             log_file_name="crossref_created_date_extraction_strategy",
@@ -1270,18 +1153,6 @@ class CrossrefCreatedDateExtractionStrategy(AttributeExtractionStrategy):
 class CrossrefPublishedOnlineExtractionStrategy(AttributeExtractionStrategy):
     def __init__(self, warning_manager: WarningManager):
         super().__init__(warning_manager=warning_manager)
-        # self.log_file_path = (
-        #     LOG_DIR_PATH / "crossref_published_online_extraction_strategy.log"
-        # )
-        # self.logger = logging.getLogger(__name__)
-        # self.logger.setLevel(logging.DEBUG)
-        # self.logger.handlers = []
-        # if not self.logger.handlers:
-        #     handler = logging.FileHandler(self.log_file_path)
-        #     formatter = logging.Formatter(
-        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-        #     )
-        #     self.logger.addHandler(handler)
         self.logger = configure_logging(
             module_name=__name__,
             log_file_name="crossref_published_online_extraction_strategy",
@@ -1307,16 +1178,6 @@ class CrossrefPublishedOnlineExtractionStrategy(AttributeExtractionStrategy):
 class CrossrefJournalExtractionStrategy(AttributeExtractionStrategy):
     def __init__(self, warning_manager: WarningManager):
         super().__init__(warning_manager=warning_manager)
-        # self.log_file_path = LOG_DIR_PATH / "crossref_journal_extraction_strategy.log"
-        # self.logger = logging.getLogger(__name__)
-        # self.logger.setLevel(logging.DEBUG)
-        # self.logger.handlers = []
-        # if not self.logger.handlers:
-        #     handler = logging.FileHandler(self.log_file_path)
-        #     formatter = logging.Formatter(
-        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-        #     )
-        #     self.logger.addHandler(handler)
         self.logger = configure_logging(
             module_name=__name__,
             log_file_name="crossref_journal_extraction_strategy",
@@ -1339,16 +1200,6 @@ class CrossrefJournalExtractionStrategy(AttributeExtractionStrategy):
 class CrossrefURLExtractionStrategy(AttributeExtractionStrategy):
     def __init__(self, warning_manager: WarningManager):
         super().__init__(warning_manager=warning_manager)
-        # self.log_file_path = LOG_DIR_PATH / "crossref_url_extraction_strategy.log"
-        # self.logger = logging.getLogger(__name__)
-        # self.logger.setLevel(logging.DEBUG)
-        # self.logger.handlers = []
-        # if not self.logger.handlers:
-        #     handler = logging.FileHandler(self.log_file_path)
-        #     formatter = logging.Formatter(
-        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-        #     )
-        #     self.logger.addHandler(handler)
         self.logger = configure_logging(
             module_name=__name__,
             log_file_name="crossref_url_extraction_strategy",
@@ -1371,16 +1222,6 @@ class CrossrefURLExtractionStrategy(AttributeExtractionStrategy):
 class CrossrefDOIExtractionStrategy(AttributeExtractionStrategy):
     def __init__(self, warning_manager: WarningManager):
         super().__init__(warning_manager=warning_manager)
-        # self.log_file_path = LOG_DIR_PATH / "crossref_doi_extraction_strategy.log"
-        # self.logger = logging.getLogger(__name__)
-        # self.logger.setLevel(logging.DEBUG)
-        # self.logger.handlers = []
-        # if not self.logger.handlers:
-        #     handler = logging.FileHandler(self.log_file_path)
-        #     formatter = logging.Formatter(
-        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-        #     )
-        #     self.logger.addHandler(handler)
         self.logger = configure_logging(
             module_name=__name__,
             log_file_name="crossref_doi_extraction_strategy",
@@ -1403,16 +1244,6 @@ class CrossrefDOIExtractionStrategy(AttributeExtractionStrategy):
 class CrossrefThemesExtractionStrategy(AttributeExtractionStrategy):
     def __init__(self, warning_manager: WarningManager):
         super().__init__(warning_manager=warning_manager)
-        # self.log_file_path = LOG_DIR_PATH / "crossref_themes_extraction_strategy.log"
-        # self.logger = logging.getLogger(__name__)
-        # self.logger.setLevel(logging.DEBUG)
-        # self.logger.handlers = []
-        # if not self.logger.handlers:
-        #     handler = logging.FileHandler(self.log_file_path)
-        #     formatter = logging.Formatter(
-        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-        #     )
-        #     self.logger.addHandler(handler)
         self.logger = configure_logging(
             module_name=__name__,
             log_file_name="crossref_themes_extraction_strategy",
@@ -1428,18 +1259,6 @@ class CrossrefThemesExtractionStrategy(AttributeExtractionStrategy):
 class CrossrefExtraContextExtractionStrategy(AttributeExtractionStrategy):
     def __init__(self, warning_manager: WarningManager):
         super().__init__(warning_manager=warning_manager)
-        # self.log_file_path = (
-        #     LOG_DIR_PATH / "crossref_extra_context_extraction_strategy.log"
-        # )
-        # self.logger = logging.getLogger(__name__)
-        # self.logger.setLevel(logging.DEBUG)
-        # self.logger.handlers = []
-        # if not self.logger.handlers:
-        #     handler = logging.FileHandler(self.log_file_path)
-        #     formatter = logging.Formatter(
-        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-        #     )
-        #     self.logger.addHandler(handler)
         self.logger = configure_logging(
             module_name=__name__,
             log_file_name="crossref_extra_context_extraction_strategy",

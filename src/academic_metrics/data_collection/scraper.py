@@ -59,34 +59,6 @@ class Scraper:
             api_key: OpenAI API key
             logger: Optional logger instance
         """
-        # self.logger = None
-        # # Set up logger
-        # if not logger:
-        #     self.logger = self.configure_logging(log_file)
-        # else:
-        #     self.logger = logger
-        #     self.logger.setLevel(logging.INFO)
-
-        #     # Add handler if none exists
-        #     if not self.logger.handlers:
-        #         handler = logging.StreamHandler()
-        #         formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-        #         handler.setFormatter(formatter)
-        #         self.logger.addHandler(handler)
-
-        # self.log_file_path = os.path.join(LOG_DIR_PATH, "scraper.log")
-
-        # self.logger = logging.getLogger(__name__)
-        # self.logger.handlers = []
-        # self.logger.setLevel(logging.DEBUG)
-
-        # console_handler = logging.FileHandler(self.log_file_path)
-        # formatter = logging.Formatter(
-        #     "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-        # )
-        # console_handler.setFormatter(formatter)
-        # self.logger.addHandler(console_handler)
-
         self.logger = configure_logging(
             module_name=__name__,
             log_file_name="scraper",

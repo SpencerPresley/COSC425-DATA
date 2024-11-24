@@ -48,20 +48,6 @@ class FacultyPostprocessor:
     """
 
     def __init__(self):
-        # Set up logger
-        # self.log_file_path = os.path.join(LOG_DIR_PATH, "faculty_set_postprocessor.log")
-        # self.logger = logging.getLogger(__name__)
-        # self.logger.handlers = []
-        # self.logger.setLevel(logging.DEBUG)
-
-        # if not self.logger.handlers:
-        #     handler = logging.FileHandler(self.log_file_path)
-        #     formatter = logging.Formatter(
-        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-        #     )
-        #     handler.setFormatter(formatter)
-        #     self.logger.addHandler(handler)
-
         self.logger = configure_logging(
             module_name=__name__,
             log_file_name="faculty_set_postprocessor",

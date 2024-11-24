@@ -166,28 +166,6 @@ class AbstractClassifier:
         max_classification_retries: int | None = 3,
     ) -> None:
 
-        # Set up logger
-        # log_file_path: str = os.path.join(LOG_DIR_PATH, "abstract_classifier.log")
-        # self.logger: logging.Logger = logging.getLogger(__name__)
-        # self.logger.setLevel(logging.DEBUG)
-        # self.logger.handlers = []
-        # self.log_to_console: bool = log_to_console
-
-        # # Add handler if none exists
-        # if not self.logger.handlers:
-        #     handler: logging.FileHandler = logging.FileHandler(log_file_path)
-        #     handler.setLevel(logging.DEBUG)
-        #     formatter: logging.Formatter = logging.Formatter(
-        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-        #     )
-        #     console_handler: Optional[logging.StreamHandler] = (
-        #         logging.StreamHandler() if self.log_to_console else None
-        #     )
-        #     if console_handler:
-        #         console_handler.setFormatter(formatter)
-        #         self.logger.addHandler(console_handler)
-        #     handler.setFormatter(formatter)
-        #     self.logger.addHandler(handler)
         self.logger = configure_logging(
             module_name=__name__,
             log_file_name="abstract_classifier",

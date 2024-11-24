@@ -111,25 +111,6 @@ class CategoryDataOrchestrator:
             ValueError: If output directory path doesn't exist or isn't writable.
             TypeError: If any of the processor or factory arguments are of incorrect type.
         """
-        # Set up logger
-        # self.log_file_path: str = os.path.join(
-        #     LOG_DIR_PATH, "category_data_orchestrator.log"
-        # )
-
-        # self.logger: logging.Logger = logging.getLogger(__name__)
-        # self.logger.handlers = []
-        # self.logger.setLevel(logging.DEBUG)
-
-        # # Add handler if none exists
-        # if not self.logger.handlers:
-        #     handler = logging.FileHandler(self.log_file_path)
-        #     self.logger.setLevel(logging.DEBUG)
-        #     formatter = logging.Formatter(
-        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-        #     )
-        #     handler.setFormatter(formatter)
-        #     self.logger.addHandler(handler)
-
         self.logger = configure_logging(
             module_name=__name__,
             log_file_name="category_data_orchestrator",
@@ -766,11 +747,6 @@ class CategoryDataOrchestrator:
 
 
 if __name__ == "__main__":
-    # raise NotImplementedError(
-    #     "DEPRECATION NOTICE: Running CategoryDataOrchestrator directly is no longer supported. "
-    #     "Please use the PipelineRunner class from academic_metrics/runners/pipeline.py as that is the new entry point. "
-    # )
-
     import tempfile
 
     # Create a test CategoryInfo object
