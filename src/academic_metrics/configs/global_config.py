@@ -7,7 +7,15 @@ from academic_metrics.constants import LOG_DIR_PATH
 
 
 class ColorFormatter(logging.Formatter):
-    """Custom formatter that adds colors to log levels"""
+    """Custom formatter that adds colors to log levels
+
+    Attributes:
+        COLOR_MAP (Dict[str, str]): A dictionary mapping log levels to their corresponding colors.
+
+    Methods:
+        Public Methods:
+            format: Format the log record with colors.
+    """
 
     COLOR_MAP: Dict[str, str] = {
         "DEBUG": "\033[36m",  # Cyan
@@ -19,7 +27,14 @@ class ColorFormatter(logging.Formatter):
     }
 
     def format(self, record: logging.LogRecord) -> str:
-        """Format the log record with colors"""
+        """Format the log record with colors
+
+        Args:
+            record (logging.LogRecord): The log record to format.
+
+        Returns:
+            str: The formatted log record with colors.
+        """
         # Color only for console output (StreamHandler)
         for handler in logging.getLogger(record.name).handlers:
             if type(handler) is logging.StreamHandler:
@@ -98,11 +113,8 @@ def set_log_to_console(value: bool) -> None:
     Args:
         value (bool): The new boolean True/False value for LOG_TO_CONSOLE.
 
-    Warnings:
+    Warning:
         If the value is not a boolean, a warning is issued and the current value remains unchanged.
-
-    Returns:
-        None
     """
     global LOG_TO_CONSOLE
     if not isinstance(cast(Any, value), bool):
@@ -148,20 +160,24 @@ def configure_logging(
 
     Args:
         module_name (str): The name of the module to configure logging for.
-            - This should be passed in as the `__name__` variable of the module.
+        - This should be passed in as the `__name__` variable of the module.
+
         log_file_name (str): The name of the log file to use for the module.
-            - This should be a valid file name with no file extension.
-            - It should only be the file name desired for that module, not the full path.
+        - This should be a valid file name with no file extension.
+
+        - It should only be the file name desired for that module, not the full path.
+
         log_level (int): The log level to use for the module.
-            - This should be a valid python logging log level.
+        - This should be a valid python logging log level.
+
         force (bool): Whether to force the creation of a new logger instance.
-            - If a logger instance for the module already exists and `force` is False,
-              the existing instance will be returned.
-            - If a logger instance for the module already exists and `force` is True,
-              a new instance will be created.
+        - If a logger instance for the module already exists and `force` is False, the existing instance will be returned.
+
+        - If a logger instance for the module already exists and `force` is True, a new instance will be created.
 
     Returns:
         logging.Logger: The configured logger for the module.
+
     """
     if module_name in _configured_loggers and not force:
         _config_logger.debug(

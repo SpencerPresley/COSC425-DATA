@@ -14,8 +14,7 @@ class AbstractBaseDataClass(ABC):
     """
 
     def to_dict(self, exclude_keys: List[str] | None = None) -> dict:
-        """
-        Converts the dataclass to a dictionary, handling Set conversion for JSON serialization.
+        """Convert the dataclass to a dictionary, handling Set conversion for JSON serialization.
 
         Returns:
             dict: A dictionary representation of the dataclass.
@@ -42,10 +41,10 @@ class AbstractBaseDataClass(ABC):
         Updates the dataclass fields, merging sets and handling nested updates.
 
         It handles:
-        - Converting lists to sets for fields annotated as Set
-        - Merging sets instead of overwriting
-        - Ignoring keys that don't match attributes
-        - Handling nested dataclass updates
+        1. Converting lists to sets for fields annotated as Set
+        2. Merging sets instead of overwriting
+        3. Ignoring keys that don't match attributes
+        4. Handling nested dataclass updates
 
         Args:
             params (Dict[str, Any]): A dictionary of parameters to update the dataclass fields.

@@ -56,26 +56,27 @@ class CategoryDataOrchestrator:
         logger (logging.Logger): Logger instance for this class.
         log_file_path (str): Path to the log file.
 
-    Public Methods:
-        run_orchestrator: Executes the main data processing workflow.
-        get_final_category_data: Returns processed category data.
-        get_final_faculty_data: Returns processed faculty data.
-        get_final_global_faculty_data: Returns processed global faculty data.
-        get_final_article_stats_data: Returns processed article statistics.
-        get_final_article_data: Returns processed article details.
+    Methods:
+        Public Methods:
+            run_orchestrator: Executes the main data processing workflow.
+            get_final_category_data: Returns processed category data.
+            get_final_faculty_data: Returns processed faculty data.
+            get_final_global_faculty_data: Returns processed global faculty data.
+            get_final_article_stats_data: Returns processed article statistics.
+            get_final_article_data: Returns processed article details.
 
-    Private Methods:
-        _save_all_results: Saves all processed data to files.
-        _refine_faculty_sets: Refines faculty sets by removing duplicates.
-        _refine_faculty_stats: Refines faculty statistics based on name variations.
-        _clean_category_data: Prepares category data by removing unwanted keys.
-        _serialize_and_save_category_data: Serializes and saves category data.
-        _serialize_and_save_faculty_stats: Serializes and saves faculty statistics.
-        _serialize_and_save_global_faculty_stats: Serializes and saves global faculty statistics.
-        _serialize_and_save_category_article_stats: Serializes and saves article statistics.
-        _serialize_and_save_articles: Serializes and saves article details.
-        _flatten_to_list: Flattens nested data structures into a list.
-        _write_to_json: Writes data to JSON file.
+        Private Methods:
+            _save_all_results: Saves all processed data to files.
+            _refine_faculty_sets: Refines faculty sets by removing duplicates.
+            _refine_faculty_stats: Refines faculty statistics based on name variations.
+            _clean_category_data: Prepares category data by removing unwanted keys.
+            _serialize_and_save_category_data: Serializes and saves category data.
+            _serialize_and_save_faculty_stats: Serializes and saves faculty statistics.
+            _serialize_and_save_global_faculty_stats: Serializes and saves global faculty statistics.
+            _serialize_and_save_category_article_stats: Serializes and saves article statistics.
+            _serialize_and_save_articles: Serializes and saves article details.
+            _flatten_to_list: Flattens nested data structures into a list.
+            _write_to_json: Writes data to JSON file.
     """
 
     def __init__(
@@ -108,8 +109,11 @@ class CategoryDataOrchestrator:
             extend (bool, optional): Whether to extend existing data files. Defaults to False.
 
         Raises:
-            ValueError: If output directory path doesn't exist or isn't writable.
-            TypeError: If any of the processor or factory arguments are of incorrect type.
+            ValueError:
+            - If output directory path doesn't exist or isn't writable.
+
+            TypeError:
+            - If any of the processor or factory arguments are of incorrect type.
         """
         self.logger = configure_logging(
             module_name=__name__,

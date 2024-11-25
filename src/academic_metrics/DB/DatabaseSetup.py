@@ -14,20 +14,39 @@ from academic_metrics.configs import (
     DEBUG,
 )
 
-# Setup logging
-# logging.basicConfig(
-#     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
-# )
-
 
 class DatabaseWrapper:
-    """
-    A wrapper class for MongoDB operations.
+    """A wrapper class for MongoDB operations.
+
+    Attributes:
+        logger (logging.Logger): Logger for logging messages.
+        client (MongoClient): MongoDB client.
+        db (Database): MongoDB database.
+        article_collection (Collection): MongoDB collection for article data.
+        category_collection (Collection): MongoDB collection for category data.
+        faculty_collection (Collection): MongoDB collection for faculty data.
+
+    Methods:
+        _test_connection: Test the connection to the MongoDB server.
+        get_dois: Get all DOIs from the article collection.
+        get_all_data: Get all data from the article, category, and faculty collections.
+        insert_categories: Insert multiple categories into the collection.
+        update_category: Update an existing category.
+        insert_articles: Insert multiple articles into the collection.
+        insert_faculty: Insert multiple faculty entries into the collection.
+        update_faculty: Update an existing faculty member.
+        process: Process data and insert it into the appropriate collection.
+        run_all_process: Run the process method for all collections.
+        clear_collection: Clear the entire collection.
+        close_connection: Close the connection to the MongoDB server.
     """
 
     def __init__(self, *, db_name: str, mongo_url: str):
-        """
-        Initialize the DatabaseWrapper with database name, collection name, and MongoDB URL.
+        """Initialize the DatabaseWrapper with database name, collection name, and MongoDB URL.
+
+        Args:
+            db_name (str): Name of the database.
+            mongo_url (str): MongoDB URL.
         """
         self.logger = configure_logging(
             module_name=__name__,
@@ -48,9 +67,7 @@ class DatabaseWrapper:
         atexit.register(self.close_connection)
 
     def _test_connection(self):
-        """
-        Test the connection to the MongoDB server.
-        """
+        """Test the connection to the MongoDB server."""
         try:
             self.client.admin.command("ping")
             self.logger.info(
@@ -59,7 +76,12 @@ class DatabaseWrapper:
         except Exception as e:
             self.logger.error(f"Connection error: {e}")
 
-    def get_dois(self):
+    def get_dois(self) -> List[str]:
+        """Get all DOIs from the article collection.
+
+        Returns:
+            doi_list (List[str]): List of DOIs.
+        """
         articles = self.article_collection.find({})
         doi_list = []
         for article in articles:
@@ -67,7 +89,12 @@ class DatabaseWrapper:
         self.logger.info(f"Retrieved DOIs: {doi_list}")
         return doi_list
 
-    def get_all_data(self):
+    def get_all_data(self) -> List[List[Dict[str, Any]]]:
+        """Get all data from the article, category, and faculty collections.
+
+        Returns:
+            List[List[Dict[str, Any]]]: List of lists containing article, category, and faculty data.
+        """
         articles = self.article_collection.find({})
         categories = self.category_collection_collection.find({})
         faculty = self.faculty_collection.find({})
@@ -76,9 +103,12 @@ class DatabaseWrapper:
         return [articles, categories, faculty]
 
     def insert_categories(self, category_data: List[Dict[str, Any]]):
-        """
-        Insert multiple categories into the collection.
+        """Insert multiple categories into the collection.
+
         If a category already exists, add the numbers and extend the lists.
+
+        Args:
+            category_data (List[Dict[str, Any]]): List of category data.
         """
         if not category_data:
             self.logger.error("Category data is empty or None")
@@ -95,9 +125,17 @@ class DatabaseWrapper:
                 self.logger.info(f"Inserted new category: {item['_id']}")
 
     def update_category(
-        self, existing_data: dict[str, Any], new_data: dict[str, Any]
-    ) -> dict[str, Any]:
-        """Update existing category data with new data, handling None values and logging state."""
+        self, existing_data: Dict[str, Any], new_data: Dict[str, Any]
+    ) -> Dict[str, Any]:
+        """Update existing category data with new data, handling None values and logging state.
+
+        Args:
+            existing_data (dict[str, Any]): Existing category data.
+            new_data (dict[str, Any]): New category data.
+
+        Returns:
+            existing_data (Dict[str, Any]): Updated category data.
+        """
         # ! THESE HAVE TO BE UNION NOT UPDATE
         # ! ALSO USING .GET() SO IT DOESN'T THROW AN ERROR IF THE KEY DOESN'T EXIST
         # ! NOW DOING LIST(SET()) TO CONVERT TO LIST
@@ -175,9 +213,12 @@ class DatabaseWrapper:
         return existing_data
 
     def insert_articles(self, article_data: List[Dict[str, Any]]):
-        """
-        Insert multiple articles into the collection.
+        """Insert multiple articles into the collection.
+
         If an article already exists, merge the new data with the existing data.
+
+        Args:
+            article_data (List[Dict[str, Any]]): List of article data.
         """
         for item in article_data:
             try:
@@ -187,9 +228,12 @@ class DatabaseWrapper:
                 self.logger.info(f"Duplicate content not adding {e}")
 
     def insert_faculty(self, faculty_data: List[Dict[str, Any]]):
-        """
-        Insert multiple faculty entries into the collection.
+        """Insert multiple faculty entries into the collection.
+
         If a faculty member already exists, update the data accordingly.
+
+        Args:
+            faculty_data (List[Dict[str, Any]]): List of faculty data.
         """
         for item in faculty_data:
             existing_data = self.faculty_collection.find_one({"_id": item["_id"]})
@@ -204,9 +248,17 @@ class DatabaseWrapper:
                 self.logger.info(f"Inserted new faculty: {item['_id']}")
 
     def update_faculty(
-        self, existing_data: dict[str, Any], new_data: dict[str, Any]
-    ) -> dict[str, Any]:
-        """Update existing faculty data with new data, handling None values and logging state."""
+        self, existing_data: Dict[str, Any], new_data: Dict[str, Any]
+    ) -> Dict[str, Any]:
+        """Update existing faculty data with new data, handling None values and logging state.
+
+        Args:
+            existing_data (Dict[str, Any]): Existing faculty data.
+            new_data (Dict[str, Any]): New faculty data.
+
+        Returns:
+            existing_data (Dict[str, Any]): Updated faculty data.
+        """
         # Get DOI lists with None protection
         existing_dois = existing_data.get("dois", []) or []
         new_dois = new_data.get("dois", []) or []
@@ -313,7 +365,13 @@ class DatabaseWrapper:
 
         return existing_data
 
-    def process(self, data, collection):
+    def process(self, data: List[Dict[str, Any]], collection: str):
+        """Process data and insert it into the appropriate collection.
+
+        Args:
+            data (List[Dict[str, Any]]): Data to be inserted.
+            collection (str): Name of the collection to insert the data into.
+        """
         if collection == "article_data":
             self.insert_articles(data)
         elif collection == "category_data":
@@ -321,21 +379,32 @@ class DatabaseWrapper:
         elif collection == "faculty_data":
             self.insert_faculty(data)
 
-    def run_all_process(self, category_data, article_data, faculty_data):
+    def run_all_process(
+        self,
+        category_data: List[Dict[str, Any]],
+        article_data: List[Dict[str, Any]],
+        faculty_data: List[Dict[str, Any]],
+    ):
+        """Process all data and insert it into the appropriate collections.
+
+        Args:
+            category_data (List[Dict[str, Any]]): Category data.
+            article_data (List[Dict[str, Any]]): Article data.
+            faculty_data (List[Dict[str, Any]]): Faculty data.
+        """
         self.process(category_data, "category_data")
         self.process(article_data, "article_data")
         self.process(faculty_data, "faculty_data")
 
     def clear_collection(self):
+        """Clear the entire collection."""
         self.category_collection.delete_many({})
         self.article_collection.delete_many({})
         self.faculty_collection.delete_many({})
         self.logger.info("Cleared the entire collection")
 
     def close_connection(self):
-        """
-        Close the connection to the MongoDB server.
-        """
+        """Close the connection to the MongoDB server."""
         self.client.close()
         self.logger.info("Connection closed")
 

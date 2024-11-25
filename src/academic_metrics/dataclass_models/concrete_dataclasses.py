@@ -149,8 +149,8 @@ class FacultyStats(AbstractBaseDataClass):
         Refines faculty statistics by updating faculty names based on variations.
 
         Args:
-            faculty_name_unrefined: Original faculty name
-            name_variations: Dictionary of name variations
+            faculty_name_unrefined (str): Original faculty name
+            name_variations (Dict[str, Any]): Dictionary of name variations
         """
         refined_name = self.get_refined_faculty_name(
             faculty_name_unrefined, name_variations
@@ -167,11 +167,11 @@ class FacultyStats(AbstractBaseDataClass):
         Gets the refined name for a faculty member.
 
         Args:
-            unrefined_name: Original faculty name
-            name_variations: Dictionary of name variations
+            unrefined_name (str): Original faculty name
+            name_variations (Dict[str, Any]): Dictionary of name variations
 
         Returns:
-            Refined faculty name
+            str: Refined faculty name
         """
         for normalized_name, name_variation in name_variations.items():
             if unrefined_name in name_variation.variations:
@@ -183,8 +183,8 @@ class FacultyStats(AbstractBaseDataClass):
         Override set_params to handle the nested FacultyInfo dictionary.
 
         Args:
-            params: Dictionary that can include either a full faculty_stats dictionary
-                   or direct updates to individual faculty members.
+            params (Dict[str, Any]):
+            - Dictionary that can include either a full faculty_stats dictionary or direct updates to individual faculty members.
 
         Examples:
             Case 1 - Full faculty_stats dictionary:
@@ -284,7 +284,7 @@ class ArticleStats(AbstractBaseDataClass):
         Override set_params to handle the nested ArticleDetails dictionary.
 
         Args:
-            params: Dictionary containing article data
+            params (Dict[str, Any]): Dictionary containing article data
 
         Examples:
             >>> article_stats = DataClassFactory.get_dataclass(DataClassTypes.ARTICLE_STATS)
@@ -401,7 +401,7 @@ class CrossrefArticleStats(AbstractBaseDataClass):
         Override set_params to handle the nested CrossrefArticleDetails dictionary.
 
         Args:
-            params: Dictionary containing article data
+            params (Dict[str, Any]): Dictionary containing article data
 
         Examples:
             >>> stats = DataClassFactory.get_dataclass(DataClassTypes.CROSSREF_ARTICLE_STATS)

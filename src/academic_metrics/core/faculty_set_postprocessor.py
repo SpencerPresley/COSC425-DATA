@@ -1,13 +1,18 @@
+from __future__ import annotations
+
 import logging
 import os
 import random
 from dataclasses import dataclass, field
-from typing import Any
+from typing import Any, Dict, TYPE_CHECKING, List, Set, Tuple
 
 from academic_metrics.configs import (
     configure_logging,
     DEBUG,
 )
+
+if TYPE_CHECKING:
+    from academic_metrics.dataclass_models import CategoryInfo
 
 
 class FacultyPostprocessor:
@@ -40,33 +45,29 @@ class FacultyPostprocessor:
         generate_signatures(faculty_set): Generates MinHash signatures for each name in a faculty set.
         get_most_frequent_name_variation(faculty_sets_list): Maps each normalized name to its most frequent spelling variation.
         standardize_names_across_sets(faculty_sets_list): Standardizes names in faculty sets based on the most frequent name variation.
-
-    Usage:
-        postprocessor = FacultyPostprocessor()
-        category_dict = { ... }  # dictionary with CategoryInfo objects
-        updated_dict = postprocessor.remove_near_duplicates(category_dict=category_dict)
     """
 
     def __init__(self):
-        self.logger = configure_logging(
+        self.logger: logging.Logger = configure_logging(
             module_name=__name__,
             log_file_name="faculty_set_postprocessor",
             log_level=DEBUG,
         )
 
-        self.temp_dict = {}
-        self.faculty_occurence_dict = {}
-        self.processed_sets_list = []  # List to store processed faculty sets
-        self.minhash_util = MinHashUtility(
+        self.temp_dict: Dict[str, Any] = {}
+        self.faculty_occurence_dict: Dict[str, Any] = {}
+        self.processed_sets_list: List[Set[str]] = (
+            []
+        )  # List to store processed faculty sets
+        self.minhash_util: MinHashUtility = MinHashUtility(
             num_hashes=100
         )  # Initialize MinHashUtility with 100 hash functions
-        self.name_variations: dict[str, NameVariation] = (
+        self.name_variations: Dict[str, NameVariation] = (
             {}
         )  # Dictionary to store NameVariation objects for each normalized name
 
-    def get_temp_dict(self) -> dict:
-        """
-        Returns the temporary dictionary containing faculty names and their occurrences.
+    def get_temp_dict(self) -> Dict[str, Any]:
+        """Returns the temporary dictionary containing faculty names and their occurrences.
 
         Returns:
             dict: The temporary dictionary containing faculty names and their occurrences.
@@ -74,7 +75,7 @@ class FacultyPostprocessor:
         return self.temp_dict
 
     @staticmethod
-    def extract_faculty_sets(category_dict: dict) -> list[set]:
+    def extract_faculty_sets(category_dict: Dict[str, CategoryInfo]) -> List[Set[str]]:
         """
         Extracts the faculty attribute from each CategoryInfo object in the provided dictionary.
 
@@ -87,14 +88,14 @@ class FacultyPostprocessor:
         Returns:
             list[set]: A list containing the faculty set from each CategoryInfo object.
         """
-        list_of_faculty_sets: list[set] = [
+        list_of_faculty_sets: List[Set[str]] = [
             category_info.faculty for category_info in category_dict.values()
         ]
         return list_of_faculty_sets
 
     def remove_near_duplicates(
-        self, *, category_dict: dict[str, Any]
-    ) -> dict[str, Any]:
+        self, *, category_dict: Dict[str, CategoryInfo]
+    ) -> Dict[str, CategoryInfo]:
         """
         Processes each CategoryInfo object to remove near-duplicate faculty names and standardize them across categories.
 
@@ -111,16 +112,18 @@ class FacultyPostprocessor:
             dict: The updated dictionary with cleaned and standardized faculty names across all CategoryInfo objects.
         """
 
-        faculty_sets_list: list[set] = self.extract_faculty_sets(
+        faculty_sets_list: List[Set[str]] = self.extract_faculty_sets(
             category_dict=category_dict
         )  # Step 1
         self.remove_update_faculty(category_dict, faculty_sets_list)  # Step 2
-        standardized_sets: list[set] = self.standardize_faculty(category_dict)  # Step 3
+        standardized_sets: List[Set[str]] = self.standardize_faculty(
+            category_dict
+        )  # Step 3
         self.standardized_data_update(category_dict, standardized_sets)  # Step 4
         return category_dict
 
     def standardized_data_update(
-        self, category_dict: dict[str, Any], standardized_sets: list[set]
+        self, category_dict: Dict[str, CategoryInfo], standardized_sets: List[Set[str]]
     ) -> None:
         """
         Updates the CategoryInfo objects in the dictionary with standardized faculty sets.
@@ -136,7 +139,9 @@ class FacultyPostprocessor:
         ):
             category_info.faculty = standardized_set
 
-    def standardize_faculty(self, category_dict: dict[str, Any]) -> list[set]:
+    def standardize_faculty(
+        self, category_dict: Dict[str, CategoryInfo]
+    ) -> List[Set[str]]:
         """
         Standardizes faculty names across all categories based on the most frequent spelling variations.
 
@@ -148,16 +153,16 @@ class FacultyPostprocessor:
 
         This method extracts updated faculty sets after duplicate removal and standardizes names across all sets based on the most frequent global variation.
         """
-        updated_faculty_sets: list[set] = self.extract_faculty_sets(
+        updated_faculty_sets: List[Set[str]] = self.extract_faculty_sets(
             category_dict=category_dict
         )
-        standardized_sets: list[set] = self.standardize_names_across_sets(
+        standardized_sets: List[Set[str]] = self.standardize_names_across_sets(
             updated_faculty_sets
         )
         return standardized_sets
 
     def remove_update_faculty(
-        self, category_dict: dict[str, Any], faculty_sets_list: list[set]
+        self, category_dict: Dict[str, CategoryInfo], faculty_sets_list: List[Set[str]]
     ) -> None:
         """
         Removes near-duplicate faculty names within each faculty set based on MinHash similarity.
@@ -169,17 +174,17 @@ class FacultyPostprocessor:
         This method iterates over each category and processes the faculty set to remove near-duplicates, updating the faculty attribute of each CategoryInfo object.
         """
         for _, category_info in category_dict.items():
-            final_set: set = self.duplicate_postprocessor(
+            final_set: Set[str] = self.duplicate_postprocessor(
                 category_info.faculty, faculty_sets_list
             )
             category_info.faculty = final_set
 
     def duplicate_postprocessor(
         self,
-        faculty_set: set[str] | list[str],
-        faculty_sets: list[set[str]],
+        faculty_set: Set[str] | List[str],
+        faculty_sets: List[Set[str]],
         similarity_threshold: float = 0.5,
-    ) -> set[str]:
+    ) -> Set[str]:
         """
         Processes a set of faculty names to remove near-duplicate names based on MinHash similarity and most frequent variations.
         This method first generates the necessary utilities for comparison and removal.
@@ -188,8 +193,8 @@ class FacultyPostprocessor:
         Finally, the refined faculty set is returned, excluding any names deemed to be duplicates.
 
         Args:
-            faculty_set (set[str]): A set of faculty names to be processed.
-            faculty_sets (list[set[str]]): A list of sets of faculty names, where each set contains the faculty names from a different category.
+            faculty_set (Set[str]): A set of faculty names to be processed.
+            faculty_sets (List[Set[str]]): A list of sets of faculty names, where each set contains the faculty names from a different category.
             similarity_threshold (float): The threshold for considering names as duplicates based on MinHash similarity.
 
         Returns:
@@ -222,15 +227,15 @@ class FacultyPostprocessor:
                     n2,
                 )
 
-        refined_fac_set: set[str] = faculty_set - to_remove
+        refined_fac_set: Set[str] = faculty_set - to_remove
         return refined_fac_set
 
     def process_name_pair(
         self,
         similarity_threshold: float,
-        most_frequent_variation: dict[str, str],
-        name_signatures: dict[str, list[int]],
-        to_remove: set[str],
+        most_frequent_variation: Dict[str, str],
+        name_signatures: Dict[str, List[int]],
+        to_remove: Set[str],
         n1: str,
         n2: str,
     ) -> None:
@@ -242,13 +247,13 @@ class FacultyPostprocessor:
 
         Args:
             n1, n2 (str): Names to compare.
-            name_signatures (dict): Dictionary of MinHash signatures.
-            most_frequent_variation (dict): Dictionary mapping normalized names to their most frequent variations.
-            to_remove (set): Set of names to be removed.
+            name_signatures (Dict[str, List[int]]): Dictionary of MinHash signatures.
+            most_frequent_variation (Dict[str, str]): Dictionary mapping normalized names to their most frequent variations.
+            to_remove (Set[str]): Set of names to be removed.
             similarity_threshold (float): Threshold for considering names as duplicates.
         """
-        signature1: list[int] = name_signatures[n1]
-        signature2: list[int] = name_signatures[n2]
+        signature1: List[int] = name_signatures[n1]
+        signature2: List[int] = name_signatures[n2]
         similarity: float = self.minhash_util.compare_signatures(signature1, signature2)
 
         # Early exit if the similarity is below the threshold
@@ -267,7 +272,7 @@ class FacultyPostprocessor:
 
     def name_to_remove(
         self,
-        most_frequent_variation: dict[str, str],
+        most_frequent_variation: Dict[str, str],
         n1: str,
         n2: str,
         n1_normalized: str,
@@ -280,7 +285,7 @@ class FacultyPostprocessor:
         If neither or both names match their most frequent variations, the lexicographically greater name is chosen for removal.
 
         Args:
-            most_frequent_variation (dict[str, str]): Dictionary mapping normalized names to their most frequent variations.
+            most_frequent_variation (Dict[str, str]): Dictionary mapping normalized names to their most frequent variations.
             n1, n2 (str): Original names to compare.
             n1_normalized, n2_normalized (str): Normalized forms of the names.
 
@@ -302,15 +307,24 @@ class FacultyPostprocessor:
 
     def get_duplicate_utilities(
         self, faculty_set: set[str], faculty_sets: list[set[str]]
-    ) -> tuple[dict[str, str], dict[str, list[int]], set[str]]:
-        most_frequent_variation: dict[str, str] = self.get_most_frequent_name_variation(
+    ) -> tuple[Dict[str, str], Dict[str, List[int]], Set[str]]:
+        """Generates utilities needed for duplicate removal.
+
+        Args:
+            faculty_set (set[str]): A set of faculty names for which to generate MinHash signatures.
+            faculty_sets (list[set[str]]): A list of sets of faculty names, where each set contains the faculty names from a different category.
+
+        Returns:
+            tuple[Dict[str, str], Dict[str, List[int]], Set[str]]: A tuple containing the most frequent name variation dictionary, the name signatures dictionary, and the set of names to be removed.
+        """
+        most_frequent_variation: Dict[str, str] = self.get_most_frequent_name_variation(
             faculty_sets
         )
-        name_signatures: dict[str, list[int]] = self.generate_signatures(faculty_set)
-        to_remove: set[str] = set()
+        name_signatures: Dict[str, List[int]] = self.generate_signatures(faculty_set)
+        to_remove: Set[str] = set()
         return most_frequent_variation, name_signatures, to_remove
 
-    def generate_signatures(self, faculty_set: set[str]) -> dict[str, list[int]]:
+    def generate_signatures(self, faculty_set: Set[str]) -> Dict[str, List[int]]:
         """
         Generates MinHash signatures for each name in the given faculty set.
 
@@ -324,14 +338,14 @@ class FacultyPostprocessor:
             dict[str, list[int]]: A dictionary mapping each name in the faculty set to its corresponding MinHash signature.
         """
         # Dictionary comprehension to generate a MinHash signature for each name
-        name_signatures: dict[str, list[int]] = {
+        name_signatures: Dict[str, List[int]] = {
             name: self.minhash_util.compute_signature(self.minhash_util.tokenize(name))
             for name in faculty_set
         }
 
         return name_signatures
 
-    def get_most_frequent_name_variation(self, faculty_sets_list) -> dict:
+    def get_most_frequent_name_variation(self, faculty_sets_list) -> Dict[str, str]:
         """
         Creates a dictionary that maps each unique normalized name to the most commonly occurring spelling variation of that name across all provided faculty sets. A 'normalized name' is derived by converting the original name to lowercase and removing all spaces, which helps in identifying different spellings of the same name as equivalent. The 'most frequent variation' refers to the spelling of the name that appears most often in the data, maintaining the original case and spaces.
 
@@ -339,17 +353,17 @@ class FacultyPostprocessor:
             faculty_sets_list (list of sets): A list where each set contains faculty names from a specific category. Each set is a collection of names that may include various spelling variations.
 
         Returns:
-            most_frequent_variation (dict): A dictionary with normalized names as keys and their most frequent original spelling variations as values.
+            most_frequent_variation (Dict[str, str]): A dictionary with normalized names as keys and their most frequent original spelling variations as values.
         """
         # Dictionary to store NameVariation objects for each normalized name
-        name_variations: dict[str, NameVariation] = self.name_variations
+        name_variations: Dict[str, NameVariation] = self.name_variations
 
         # Iterate over each set of faculty names
         for faculty_set in faculty_sets_list:
             # Process each name in the set
             for name in faculty_set:
                 # Normalize the name by converting to lowercase and removing spaces
-                normalized_name = name.lower().replace(" ", "")
+                normalized_name: str = name.lower().replace(" ", "")
                 # If the normalized name is not already in the dictionary, add it with a new NameVariation object
                 if normalized_name not in name_variations:
                     name_variations[normalized_name] = NameVariation(normalized_name)
@@ -357,27 +371,39 @@ class FacultyPostprocessor:
                 name_variations[normalized_name].add_variation(name)
 
         # Create a dictionary to store the most frequent variation for each normalized name
-        most_frequent_variation = {
+        most_frequent_variation: Dict[str, str] = {
             normalized_name: variation.most_frequent_variation()
             for normalized_name, variation in name_variations.items()
         }
 
         return most_frequent_variation
 
-    def standardize_names_across_sets(self, faculty_sets_list):
+    def standardize_names_across_sets(
+        self, faculty_sets_list: List[Set[str]]
+    ) -> List[Set[str]]:
+        """Standardizes names across all sets by mapping each name to its most frequent variation across all sets.
+
+        Args:
+            faculty_sets_list (List[Set[str]]): A list of sets of faculty names, where each set contains the faculty names from a different category.
+
+        Returns:
+            List[Set[str]]: A list of sets containing the standardized faculty names across all categories.
+        """
         # First, generate the most frequent name variation mapping across all sets
-        most_frequent_variation = self.get_most_frequent_name_variation(
+        most_frequent_variation: Dict[str, str] = self.get_most_frequent_name_variation(
             faculty_sets_list
         )
 
         # Then, iterate through each set and standardize names based on the global mapping
-        standardized_sets = []
+        standardized_sets: List[Set[str]] = []
         for faculty_set in faculty_sets_list:
-            standardized_set = set()
+            standardized_set: Set[str] = set()
             for name in faculty_set:
-                normalized_name = name.lower().replace(" ", "")
+                normalized_name: str = name.lower().replace(" ", "")
                 # Replace the name with its most frequent variation, if available
-                standardized_name = most_frequent_variation.get(normalized_name, name)
+                standardized_name: str = most_frequent_variation.get(
+                    normalized_name, name
+                )
                 standardized_set.add(standardized_name)
             standardized_sets.append(standardized_set)
 
@@ -419,12 +445,20 @@ class MinHashUtility:
     More on MinHash: https://en.wikipedia.org/wiki/MinHash
     """
 
-    def __init__(self, num_hashes):
-        self.num_hashes = num_hashes  # Number of hash functions to use for MinHash
-        self.large_prime = 999983  # large prime number used for hashing
-        self.hash_fns = self.generate_hash_functions()  # List of hash functions
+    def __init__(self, num_hashes: int):
+        """
+        Initialize the MinHashUtility with the specified number of hash functions.
 
-    def tokenize(self, string: str, n: int = 3) -> set:
+        Args:
+            num_hashes (int): The number of hash functions to use for MinHash calculations.
+        """
+        self.num_hashes: int = num_hashes  # Number of hash functions to use for MinHash
+        self.large_prime: int = 999983  # large prime number used for hashing
+        self.hash_fns: List[callable] = (
+            self.generate_hash_functions()
+        )  # List of hash functions
+
+    def tokenize(self, string: str, n: int = 3) -> Set[str]:
         """
         Tokenize the given string into n-grams to facilitate the identification of similar strings.
 
@@ -459,7 +493,7 @@ class MinHashUtility:
 
         return n_grams
 
-    def generate_coeeficients(self) -> list:
+    def generate_coeeficients(self) -> List[Tuple[int, int]]:
         """
         Generate a list of tuples, each containing a pair of coefficients (a, b) used for hash functions.
 
@@ -486,7 +520,7 @@ class MinHashUtility:
 
         return coefficients
 
-    def generate_hash_functions(self) -> list:
+    def generate_hash_functions(self) -> List[callable]:
         """
         Generate a list of linear hash functions for use in MinHash calculations.
 
@@ -530,7 +564,7 @@ class MinHashUtility:
 
         return hash_fns
 
-    def compute_signature(self, tokens: set[int]) -> list[int]:
+    def compute_signature(self, tokens: Set[int]) -> List[int]:
         """
         Compute MinHash signature for a set of tokens.
         A MinHash signature consists of the minimum hash value produced by each hash function across all tokens,
@@ -560,7 +594,7 @@ class MinHashUtility:
 
         return signature
 
-    def compare_signatures(self, signature1: list[int], signature2: list[int]) -> float:
+    def compare_signatures(self, signature1: List[int], signature2: List[int]) -> float:
         """
         Compare two MinHash signatures and return their similarity.
         The similarity is calculated as the fraction of hash values that are identical in the two signatures,
@@ -611,7 +645,7 @@ class NameVariation:
     normalized_name: str
 
     # Default factory for variations ensures it starts as an empty dict.
-    variations: dict[str, int] = field(default_factory=dict)
+    variations: Dict[str, int] = field(default_factory=dict)
 
     def add_variation(self, variation: str) -> None:
         """

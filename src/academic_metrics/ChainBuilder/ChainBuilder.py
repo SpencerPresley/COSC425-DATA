@@ -16,6 +16,7 @@ from typing import (
     TypeVar,
     Union,
     cast,
+    TypeAlias,
 )
 
 from langchain.prompts import (
@@ -48,11 +49,43 @@ from academic_metrics.configs import (
     CRITICAL,
 )
 
-# Type that represents "Required first time, optional after"
 FirstCallRequired = TypeVar("FirsCallRequired", bound=Dict[str, Any])
+"""TypeVar representing a dictionary that is required on first call but optional after.
+
+Type Structure:
+    TypeVar bound to Dict[str, Any]
+
+Usage:
+    Used to enforce that a dictionary parameter must be provided on first call
+    but can be optional on subsequent calls.
+"""
+
 ParserUnion = Union[PydanticOutputParser, JsonOutputParser, StrOutputParser]
+"""Union type representing valid parser types.
+
+Type Structure:
+    Union[PydanticOutputParser, JsonOutputParser, StrOutputParser]
+"""
+
 ParserType = TypeVar("ParserType", bound=ParserUnion)
+"""TypeVar representing the main parser type.
+
+Type Structure:
+    TypeVar bound to Union[PydanticOutputParser, JsonOutputParser, StrOutputParser]
+
+Usage:
+    Used to enforce type consistency for the primary parser in chain operations.
+"""
+
 FallbackParserType = TypeVar("FallbackParserType", bound=ParserUnion)
+"""TypeVar representing the fallback parser type.
+
+Type Structure:
+    TypeVar bound to Union[PydanticOutputParser, JsonOutputParser, StrOutputParser]
+
+Usage:
+    Used to enforce type consistency for the fallback parser in chain operations.
+"""
 
 
 class ChainBuilder:
@@ -72,13 +105,11 @@ class ChainBuilder:
         chain (Runnable): Primary chain instance.
         fallback_chain (Runnable): Fallback chain instance.
 
-    Public Methods:
+    Methods:
         get_chain(): Returns the primary chain instance.
         get_fallback_chain(): Returns the fallback chain instance.
         __str__(): Returns a string representation of the ChainBuilder.
         __repr__(): Returns a string representation of the ChainBuilder.
-
-    Private Methods:
         _run_pydantic_parser_logging(): Logs Pydantic parser configuration.
         _build_chain(): Constructs the primary chain.
         _build_fallback_chain(): Constructs the fallback chain.
@@ -89,8 +120,8 @@ class ChainBuilder:
         *,
         chat_prompt: ChatPromptTemplate,
         llm: Union[ChatOpenAI, ChatAnthropic, ChatGoogleGenerativeAI],
-        parser: Optional[ParserType] = None,
-        fallback_parser: Optional[FallbackParserType] = None,
+        parser: ParserType | None = None,
+        fallback_parser: FallbackParserType | None = None,
         logger: logging.Logger | None = None,
         log_to_console: bool | None = LOG_TO_CONSOLE,
     ) -> None:
@@ -99,38 +130,11 @@ class ChainBuilder:
         Args:
             chat_prompt (ChatPromptTemplate): Template for structuring chat interactions.
             llm (Union[ChatOpenAI, ChatAnthropic, ChatGoogleGenerativeAI]): Language model to use.
-            parser (Optional[ParserType], optional): Primary output parser. Defaults to None.
-            fallback_parser (Optional[FallbackParserType], optional): Fallback output parser.
-                Defaults to None.
-            logger (Optional[logging.Logger], optional): Custom logger instance.
-                Defaults to None.
-            log_to_console (bool, optional): Whether to log to console. Defaults to LOG_TO_CONSOLE.
+            parser (ParserType | None): Primary output parser. Defaults to None.
+            fallback_parser (FallbackParserType | None): Fallback output parser. Defaults to None.
+            logger (logging.Logger | None): Custom logger instance. Defaults to None.
+            log_to_console (bool | None): Whether to log to console. Defaults to LOG_TO_CONSOLE.
         """
-        # Convert string path to Path, respecting the input path
-        # self.log_file_path: Path = LOG_DIR_PATH / "chain_builder.log"
-
-        # # Set up logger
-        # self.logger: logging.Logger = logger or logging.getLogger(__name__)
-        # self.logger.setLevel(logging.INFO)
-
-        # self.logger.handlers = []
-
-        # # Add handler if none exists
-        # if not self.logger.handlers:
-        #     handler: logging.FileHandler = logging.FileHandler(self.log_file_path)
-        #     formatter: logging.Formatter = logging.Formatter(
-        #         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-        #     )
-        #     handler.setFormatter(formatter)
-        #     self.logger.addHandler(handler)
-
-        #     console_handler: Optional[logging.StreamHandler] = (
-        #         logging.StreamHandler() if log_to_console else None
-        #     )
-        #     if console_handler:
-        #         console_handler.setFormatter(formatter)
-        #         self.logger.addHandler(console_handler)
-
         self.logger = logger or configure_logging(
             module_name=__name__,
             log_file_name="chain_builder",
@@ -255,6 +259,32 @@ class ChainBuilder:
 
 
 class ChainWrapper:
+    """
+    A wrapper class for managing and executing chains with optional fallback chains.
+
+    This class is designed to handle the execution of primary chains and, if necessary,
+    fallback chains in case of errors or unexpected outputs. It supports preprocessing
+    and postprocessing of input and output data, as well as logging for debugging and
+    monitoring purposes.
+
+    Attributes:
+        chain (Runnable): The primary chain to be executed.
+        fallback_chain (Runnable): The fallback chain to be executed if the primary chain fails.
+        parser (Optional[ParserType]): The parser to be used for processing the output of the primary chain. Defaults to None.
+        fallback_parser (Optional[FallbackParserType]): The parser to be used for processing the output of the fallback chain. Defaults to None.
+        preprocessor (Optional[Callable[[Dict[str, Any]], Dict[str, Any]]]): A function to preprocess input data before passing it to the chain. Defaults to None.
+        postprocessor (Optional[Callable[[Any], Any]]): A function to postprocess the output data from the chain. Defaults to None.
+        logger (Optional[logging.Logger]): A logger instance for logging information and debugging. Defaults to None.
+
+    Methods:
+        __init__(chain, fallback_chain, parser=None, fallback_parser=None, preprocessor=None, postprocessor=None, logger=None): Initializes the ChainWrapper instance with the provided parameters.
+        __str__(): Returns a string representation of the ChainWrapper object, including the chain, parser type, and fallback parser type.
+        __repr__(): Returns a string representation of the ChainWrapper object for debugging purposes.
+        run_chain(input_data=None, is_last_chain=False): Executes the primary chain with the provided input data. If an error occurs, attempts to execute the fallback chain. Supports preprocessing and postprocessing.
+        get_parser_type(): Returns the type of the parser as a string if the parser exists, otherwise returns None.
+        get_fallback_parser_type(): Returns the type of the fallback parser as a string if it exists, otherwise returns None.
+    """
+
     def __init__(
         self,
         *,
@@ -266,8 +296,7 @@ class ChainWrapper:
         postprocessor: Optional[Callable[[Any], Any]] = None,
         logger: Optional[logging.Logger] = None,
     ) -> None:
-        """
-        Initialize the ChainBuilder.
+        """Initialize the ChainBuilder.
 
         Args:
             chain (Runnable): The primary chain to be executed.
@@ -342,8 +371,9 @@ class ChainWrapper:
             TypeError: If a type error occurs in both the main and fallback chains.
 
         Notes:
-            - If the output is a Pydantic model and this is not the last chain, the model is converted to a dictionary.
-            - If a postprocessor is defined, it processes the output before returning.
+        - If the output is a Pydantic model and this is not the last chain, the model is converted to a dictionary.
+
+        - If a postprocessor is defined, it processes the output before returning.
         """
         if cast(Any, input_data) is None:
             raise ValueError(
@@ -415,14 +445,15 @@ class ChainWrapper:
         Returns the type name of the fallback parser if it exists, otherwise returns None.
 
         Returns:
-            Union[str, None]: The type name of the fallback parser as a string if it exists,
-                              otherwise None.
+            Union[str, None]:
+            - The type name of the fallback parser as a string if it exists, otherwise None.
         """
         return type(self.fallback_parser).__name__ if self.fallback_parser else None
 
 
 class ChainComposer:
-    """
+    """Manages a sequence of chain operations.
+
     ChainComposer is a class that manages a sequence of chain operations, allowing for the addition of chains and running them in sequence with provided data.
 
 
@@ -440,16 +471,17 @@ class ChainComposer:
             Adds a chain to the chain sequence.
 
         run(data_dict: Dict[str, Any], data_dict_update_function: Optional[Callable[[Dict[str, Any]], None]] = None) -> Dict[str, Any]:
-            Runs the chain sequence with the provided data dictionary and optional update function.
+        - Runs the chain sequence with the provided data dictionary and optional update function.
     """
 
     def __init__(self, logger: Optional[logging.Logger] = None) -> None:
-        """
-        Initializes the ChainBuilder instance.
+        """Initializes the ChainBuilder instance.
 
         Args:
-            logger (Optional[logging.Logger]): A logger instance to be used for logging.
-                                               If not provided, a default logger will be created.
+            logger (Optional[logging.Logger]):
+            - A logger instance to be used for logging.
+
+            - If not provided, a default logger will be created.
 
         Attributes:
             logger (logging.Logger): The logger instance used for logging.
@@ -464,8 +496,7 @@ class ChainComposer:
         self.chain_sequence: List[Tuple[ChainWrapper, Optional[str]]] = []
 
     def __str__(self) -> str:
-        """
-        Returns a string representation of the ChainComposer object.
+        """Returns a string representation of the ChainComposer object.
 
         The string representation includes the index and the wrapper of each
         element in the chain_sequence.
@@ -482,8 +513,7 @@ class ChainComposer:
         return f"ChainComposer(chains=[{chain_info}])"
 
     def __repr__(self) -> str:
-        """
-        Returns a string representation of the object for debugging purposes.
+        """Returns a string representation of the object for debugging purposes.
 
         This method calls the __str__() method to provide a human-readable
         representation of the object.
@@ -499,8 +529,7 @@ class ChainComposer:
         chain_wrapper: ChainWrapper,
         output_passthrough_key_name: Optional[str] = None,
     ) -> None:
-        """
-        Adds a chain to the chain sequence.
+        """Adds a chain to the chain sequence.
 
         Args:
             chain_wrapper (ChainWrapper): The chain wrapper to be added.
@@ -517,8 +546,7 @@ class ChainComposer:
         data_dict: Dict[str, Any],
         data_dict_update_function: Optional[Callable[[Dict[str, Any]], None]] = None,
     ) -> Dict[str, Any]:
-        """
-        Executes a sequence of chains, updating the provided data dictionary with the results of each chain.
+        """Executes a sequence of chains, updating the provided data dictionary with the results of each chain.
 
         Args:
             data_dict (Dict[str, Any]): The initial data dictionary containing input variables for the chains.
@@ -560,7 +588,8 @@ class ChainComposer:
 
 
 class ChainManager:
-    """
+    """Class responsible for managing and orchestrating a sequence of chain layers,
+
     ChainManager is a class responsible for managing and orchestrating a sequence of chain layers,
     each of which can process input data and produce output data. It supports various types of
     language models (LLMs) and parsers, and allows for pre-processing and post-processing of data.
@@ -580,29 +609,29 @@ class ChainManager:
         logger (logging.Logger): Logger for logging information and debugging.
 
     Methods:
-        __str__() -> str: Returns a string representation of the ChainManager instance.
-        __repr__() -> str: Returns a string representation of the ChainManager instance.
-        _get_llm_model_type(llm_model: str) -> str: Determines the type of the LLM model based on its name.
-        _initialize_llm(api_key: str, llm_model_type: str, llm_model: str, llm_temperature: float, **llm_kwargs) -> Union[ChatOpenAI, ChatAnthropic, ChatGoogleGenerativeAI]: Initializes the LLM instance based on the model type.
-        _create_openai_llm(api_key: str, llm_model: str, llm_temperature: float, **llm_kwargs) -> ChatOpenAI: Creates an OpenAI LLM instance.
-        _create_anthropic_llm(api_key: str, llm_model: str, llm_temperature: float, **llm_kwargs) -> ChatAnthropic: Creates an Anthropic LLM instance.
-        _create_google_llm(api_key: str, llm_model: str, llm_temperature: float, **llm_kwargs) -> ChatGoogleGenerativeAI: Creates a Google Generative AI LLM instance.
-        _initialize_parser(parser_type: str, pydantic_output_model: Optional[BaseModel] = None) -> ParserType: Initializes a parser based on the specified type.
-        _create_pydantic_parser(pydantic_output_model: BaseModel) -> PydanticOutputParser: Creates a Pydantic parser.
-        _create_json_parser(pydantic_output_model: Optional[BaseModel]) -> JsonOutputParser: Creates a JSON parser.
-        _create_str_parser() -> StrOutputParser: Creates a string parser.
-        _run_chain_validation_checks(output_passthrough_key_name: Optional[str], ignore_output_passthrough_key_name_error: bool, parser_type: Optional[Literal["pydantic", "json", "str"]], pydantic_output_model: Optional[BaseModel], fallback_parser_type: Optional[Literal["pydantic", "json", "str"]], fallback_pydantic_output_model: Optional[BaseModel]) -> None: Runs validation checks for the chain configuration.
-        _format_chain_sequence(chain_sequence: List[Tuple[ChainWrapper, Optional[str]]]) -> None: Formats and prints the chain sequence.
-        _run_validation_checks(prompt_variables_dict: Union[FirstCallRequired, None]) -> None: Runs validation checks for the prompt variables.
-        add_chain_layer(system_prompt: str, human_prompt: str, output_passthrough_key_name: Optional[str] = None, ignore_output_passthrough_key_name_error: bool = False, preprocessor: Optional[Callable[[Dict[str, Any]], Dict[str, Any]]] = None, postprocessor: Optional[Callable[[Any], Any]] = None, parser_type: Optional[Literal["pydantic", "json", "str"]] = None, fallback_parser_type: Optional[Literal["pydantic", "json", "str"]] = None, pydantic_output_model: Optional[BaseModel] = None, fallback_pydantic_output_model: Optional[BaseModel] = None) -> None: Adds a chain layer to the chain composer.
-        _format_overwrite_warning(overwrites: Dict[str, Dict[str, Any]]) -> str: Formats a warning message for variable overwrites.
-        _check_first_time_overwrites(prompt_variables_dict: Dict[str, Any]) -> None: Checks for first-time overwrites of global variables and issues warnings.
-        _update_chain_variables(prompt_variables_dict: Dict[str, Any]) -> None: Updates global variables with new values, warning on first-time overwrites.
-        get_chain_sequence() -> List[Tuple[ChainWrapper, Optional[str]]]: Returns the current chain sequence.
-        print_chain_sequence() -> None: Prints the current chain sequence.
-        get_chain_variables() -> Dict[str, Any]: Returns the current chain variables.
-        print_chain_variables() -> None: Prints the current chain variables.
-        run(prompt_variables_dict: Union[FirstCallRequired, None] = None) -> str: Runs the chain composer with the provided prompt variables.
+        __str__(): Returns a string representation of the ChainManager instance.
+        __repr__(): Returns a string representation of the ChainManager instance.
+        _get_llm_model_type(llm_model: str): Determines the type of the LLM model based on its name.
+        _initialize_llm(api_key: str, llm_model_type: str, llm_model: str, llm_temperature: float, llm_kwargs: Dict[str, Any]): Initializes the LLM instance based on the model type.
+        _create_openai_llm(api_key: str, llm_model: str, llm_temperature: float, llm_kwargs: Dict[str, Any]): Creates an OpenAI LLM instance.
+        _create_anthropic_llm(api_key: str, llm_model: str, llm_temperature: float, llm_kwargs: Dict[str, Any]): Creates an Anthropic LLM instance.
+        _create_google_llm(api_key: str, llm_model: str, llm_temperature: float, llm_kwargs: Dict[str, Any]): Creates a Google Generative AI LLM instance.
+        _initialize_parser(parser_type: str, pydantic_output_model: Optional[BaseModel] = None): Initializes a parser based on the specified type.
+        _create_pydantic_parser(pydantic_output_model: BaseModel): Creates a Pydantic parser.
+        _create_json_parser(pydantic_output_model: Optional[BaseModel]): Creates a JSON parser.
+        _create_str_parser(): Creates a string parser.
+        _run_chain_validation_checks(output_passthrough_key_name: Optional[str], ignore_output_passthrough_key_name_error: bool, parser_type: Optional[Literal["pydantic", "json", "str"]], pydantic_output_model: Optional[BaseModel], fallback_parser_type: Optional[Literal["pydantic", "json", "str"]], fallback_pydantic_output_model: Optional[BaseModel]): Runs validation checks for the chain configuration.
+        _format_chain_sequence(chain_sequence: List[Tuple[ChainWrapper, Optional[str]]]): Formats and prints the chain sequence.
+        _run_validation_checks(prompt_variables_dict: Union[FirstCallRequired, None]): Runs validation checks for the prompt variables.
+        add_chain_layer(system_prompt: str, human_prompt: str, output_passthrough_key_name: Optional[str] = None, ignore_output_passthrough_key_name_error: bool = False, preprocessor: Optional[Callable[[Dict[str, Any]], Dict[str, Any]]] = None, postprocessor: Optional[Callable[[Any], Any]] = None, parser_type: Optional[Literal["pydantic", "json", "str"]] = None, fallback_parser_type: Optional[Literal["pydantic", "json", "str"]] = None, pydantic_output_model: Optional[BaseModel] = None, fallback_pydantic_output_model: Optional[BaseModel] = None): Adds a chain layer to the chain composer.
+        _format_overwrite_warning(overwrites: Dict[str, Dict[str, Any]]): Formats a warning message for variable overwrites.
+        _check_first_time_overwrites(prompt_variables_dict: Dict[str, Any]): Checks for first-time overwrites of global variables and issues warnings.
+        _update_chain_variables(prompt_variables_dict: Dict[str, Any]): Updates global variables with new values, warning on first-time overwrites.
+        get_chain_sequence(): Returns the current chain sequence.
+        print_chain_sequence(): Prints the current chain sequence.
+        get_chain_variables(): Returns the current chain variables.
+        print_chain_variables(): Prints the current chain variables.
+        run(prompt_variables_dict: Union[FirstCallRequired, None] = None): Runs the chain composer with the provided prompt variables.
     """
 
     def __init__(
@@ -617,8 +646,7 @@ class ChainManager:
         llm_kwargs: Dict[str, Any] | None = None,
         words_to_ban: List[str] | None = None,
     ) -> None:
-        """
-        Initializes the ChainBuilder class.
+        """Initializes the ChainBuilder class.
 
         Args:
             llm_model (str): The name of the language model to be used.
@@ -627,7 +655,8 @@ class ChainManager:
             preprocessor (Optional[Callable[[Dict[str, Any]], Dict[str, Any]]], optional): A function to preprocess input data. Defaults to None.
             postprocessor (Optional[Callable[[Any], Any]], optional): A function to postprocess output data. Defaults to None.
             log_to_console (bool, optional): Flag to enable logging to console. Defaults to False.
-            **llm_kwargs (Dict[str, Any]): Additional keyword arguments for the language model.
+            llm_kwargs (Dict[str, Any]): Additional keyword arguments for the language model.
+            words_to_ban (List[str]): A list of words to ban from the language model's output.
 
         Returns:
             None
@@ -811,7 +840,8 @@ class ChainManager:
             llm_model_type (str): The type of the language model (e.g., "openai", "anthropic", "google").
             llm_model (str): The specific model to use within the chosen type.
             llm_temperature (float): The temperature setting for the language model, affecting randomness.
-            **llm_kwargs (Dict[str, Any]): Additional keyword arguments specific to the language model.
+            llm_kwargs (Dict[str, Any]): Additional keyword arguments specific to the language model.
+            logit_bias_dict (Dict[int, int]): A dictionary mapping token IDs to logit bias values.
 
         Returns:
             Union[ChatOpenAI, ChatAnthropic, ChatGoogleGenerativeAI]: An instance of the initialized language model.
@@ -852,9 +882,7 @@ class ChainManager:
             )
 
     def _recreate_llm(self) -> None:
-        """
-        Recreates the LLM with the current parameters.
-        """
+        """Recreates the LLM with the current parameters."""
         self.llm = self._initialize_llm(
             api_key=self.api_key,
             llm_model_type=self.llm_model_type,
@@ -879,7 +907,8 @@ class ChainManager:
             api_key (str): The API key for authenticating with the OpenAI service.
             llm_model (str): The identifier of the language model to use.
             llm_temperature (float): The temperature setting for the language model, which controls the randomness of the output.
-            **llm_kwargs: Additional keyword arguments to pass to the ChatOpenAI constructor.
+            llm_kwargs (Dict[str, Any]): Additional keyword arguments to pass to the ChatOpenAI constructor.
+            logit_bias_dict (Dict[int, int]): A dictionary mapping token IDs to logit bias values.
 
         Returns:
             ChatOpenAI: An instance of the ChatOpenAI language model configured with the specified parameters.
@@ -906,7 +935,7 @@ class ChainManager:
             api_key (str): The API key for authenticating with the Anthropic service.
             llm_model (str): The identifier of the language model to use.
             llm_temperature (float): The temperature setting for the language model, controlling the randomness of the output.
-            **llm_kwargs: Additional keyword arguments to pass to the ChatAnthropic constructor.
+            llm_kwargs (Dict[str, Any]): Additional keyword arguments to pass to the ChatAnthropic constructor.
 
         Returns:
             ChatAnthropic: An instance of the ChatAnthropic language model.
@@ -925,7 +954,7 @@ class ChainManager:
             api_key (str): The API key for authenticating with the Google LLM service.
             llm_model (str): The model identifier for the Google LLM.
             llm_temperature (float): The temperature setting for the LLM, which controls the randomness of the output.
-            **llm_kwargs: Additional keyword arguments to pass to the ChatGoogleGenerativeAI constructor.
+            llm_kwargs (Dict[str, Any]): Additional keyword arguments to pass to the ChatGoogleGenerativeAI constructor.
 
         Returns:
             ChatGoogleGenerativeAI: An instance of the ChatGoogleGenerativeAI class configured with the provided parameters.
@@ -942,11 +971,14 @@ class ChainManager:
 
         Args:
             parser_type (str):
-                The type of parser to initialize.
-                Must be one of "pydantic", "json", or "str".
+            - The type of parser to initialize.
+
+            - Must be one of "pydantic", "json", or "str".
+
             pydantic_output_model (Optional[BaseModel]):
-                The Pydantic model to use for the parser,
-                required if parser_type is "pydantic".
+            - The Pydantic model to use for the parser.
+
+            - Required if parser_type is "pydantic".
 
         Returns:
             ParserType: An instance of the specified parser type.
@@ -1059,17 +1091,23 @@ class ChainManager:
 
         Raises:
             ValueError: If validation fails for:
-                - Missing output key name when required
-                - Invalid parser type combinations
-                - Missing required models
-                - Duplicate parser types
-                - Same models used for main and fallback
+            - Missing output key name when required
 
-        Warns:
+            - Invalid parser type combinations
+
+            - Missing required models
+
+            - Duplicate parser types
+
+            - Same models used for main and fallback
+
+        Warnings:
             UserWarning: For non-critical issues like:
-                - Missing output key name when ignored
-                - Missing recommended Pydantic models
-                - Unused provided models
+            - Missing output key name when ignored
+
+            - Missing recommended Pydantic models
+
+            - Unused provided models
         """
         if (
             len(self.chain_composer.chain_sequence) > 0
@@ -1157,8 +1195,8 @@ class ChainManager:
         Formats and prints the details of each chain in the given chain sequence.
 
         Args:
-            chain_sequence (List[Tuple[ChainWrapper, Optional[str]]]): A list of tuples where each tuple contains a
-            ChainWrapper object and an optional output name.
+            chain_sequence (List[Tuple[ChainWrapper, Optional[str]]]):
+            - A list of tuples where each tuple contains a ChainWrapper object and an optional output name.
 
         Returns:
             None
@@ -1187,9 +1225,10 @@ class ChainManager:
 
         Raises:
             ValueError:
-                If `prompt_variables_dict` is None on the first call to `run()`.
+            - If `prompt_variables_dict` is None on the first call to `run()`.
+
             TypeError:
-                If `prompt_variables_dict` is not a dictionary when provided.
+            - If `prompt_variables_dict` is not a dictionary when provided.
 
         Notes:
             - The `prompt_variables_dict` should contain keys that match the variable names used in the chain layers.
@@ -1340,9 +1379,8 @@ class ChainManager:
         """Formats a warning message for overwritten values.
 
         Args:
-            overwrites (Dict[str, Dict[str, Any]]): A dictionary where the key is the name of the
-            overwritten item, and the value is another dictionary with 'old' and 'new' keys
-            representing the old and new values respectively.
+            overwrites (Dict[str, Dict[str, Any]]):
+            - A dictionary where the key is the name of the overwritten item, and the value is another dictionary with 'old' and 'new' keys representing the old and new values respectively.
 
         Returns:
             str: A formatted string that lists each overwritten item with its old and new values.
@@ -1364,8 +1402,7 @@ class ChainManager:
 
         Args:
             prompt_variables_dict (Dict[str, Any]):
-                A dictionary containing the new values for the
-                chain variables that may overwrite existing ones.
+            - A dictionary containing the new values for the chain variables that may overwrite existing ones.
 
         Returns:
             None
@@ -1391,9 +1428,10 @@ class ChainManager:
         """Update global variables with new values, warning on first-time overwrites.
 
         Args:
-            prompt_variables_dict (Dict[str, Any]): A dictionary containing the new values for the global variables.
+            prompt_variables_dict (Dict[str, Any]):
+            - A dictionary containing the new values for the global variables.
         """
-        """Update global variables with new values, warning on first-time overwrites."""
+        # Update global variables with new values, warning on first-time overwrites.
         self._check_first_time_overwrites(prompt_variables_dict)
         self.chain_variables.update(prompt_variables_dict)
 
@@ -1401,8 +1439,8 @@ class ChainManager:
         """Retrieves the chain sequence from the chain composer.
 
         Returns:
-            List[Tuple[ChainWrapper, Optional[str]]]: A list of tuples where each tuple contains a ChainWrapper object
-            and an optional string.
+            List[Tuple[ChainWrapper, Optional[str]]]:
+            - A list of tuples where each tuple contains a ChainWrapper object and the output key name if output_passthrough_key_name was provided to add_chain_layer.
         """
         return self.chain_composer.chain_sequence
 
@@ -1468,8 +1506,7 @@ class ChainManager:
 
         Args:
             prompt_variables_dict (Union[FirstCallRequired, None], optional):
-                A dictionary containing prompt variables. If provided, it will be used
-                to update the chain variables. Defaults to None.
+            - A dictionary containing prompt variables. If provided, it will be used to update the chain variables. Defaults to None.
 
         Returns:
             str: The result of running the chain composer.

@@ -47,27 +47,28 @@ class CategoryProcessor:
         logger (logging.Logger): Logger instance for this class.
         log_file_path (str): Path to the log file.
 
-    Public Methods:
-        process_data_list: Process a list of publication data items.
-        get_category_data: Get processed category data.
-        get_category_article_stats: Get article statistics by category.
-        get_articles: Get list of processed articles.
-        get_faculty_stats: Get faculty statistics by category.
-        get_global_faculty_stats: Get global faculty statistics.
+    Methods:
+        Public Methods:
+            process_data_list: Process a list of publication data items.
+            get_category_data: Get processed category data.
+            get_category_article_stats: Get article statistics by category.
+            get_articles: Get list of processed articles.
+            get_faculty_stats: Get faculty statistics by category.
+            get_global_faculty_stats: Get global faculty statistics.
 
-    Private Methods:
-        call_get_attributes: Extract attributes from raw data.
-        update_category_stats: Update statistics for a category.
-        update_faculty_stats: Update faculty statistics.
-        update_global_faculty_stats: Update global faculty statistics.
-        update_category_article_stats: Update article statistics by category.
-        create_article_object: Create a new article object.
-        clean_faculty_affiliations: Clean faculty affiliation data.
-        clean_faculty_members: Clean faculty member data.
-        initialize_categories: Initialize category data structures.
-        _collect_all_affiliations: Collect all faculty affiliations.
-        _generate_url: Generate URL from string.
-        _generate_normal_id: Generate normalized ID from strings.
+        Private Methods:
+            call_get_attributes: Extract attributes from raw data.
+            update_category_stats: Update statistics for a category.
+            update_faculty_stats: Update faculty statistics.
+            update_global_faculty_stats: Update global faculty statistics.
+            update_category_article_stats: Update article statistics by category.
+            create_article_object: Create a new article object.
+            clean_faculty_affiliations: Clean faculty affiliation data.
+            clean_faculty_members: Clean faculty member data.
+            initialize_categories: Initialize category data structures.
+            _collect_all_affiliations: Collect all faculty affiliations.
+            _generate_url: Generate URL from string.
+            _generate_normal_id: Generate normalized ID from strings.
     """
 
     def __init__(
@@ -656,13 +657,13 @@ class CategoryProcessor:
 
         Args:
             **kwargs: Keyword arguments containing article data:
-                title (str): Article title
-                doi (str): Digital Object Identifier
-                tc_count (int): Citation count
-                faculty_members (List[str]): List of faculty authors
-                all_affiliations (Set[str]): Set of department affiliations
-                themes (List[str]): List of article themes
-                all_categories (List[str]): List of all categories
+                - title (str): Article title
+                - doi (str): Digital Object Identifier
+                - tc_count (int): Citation count
+                - faculty_members (List[str]): List of faculty authors
+                - all_affiliations (Set[str]): Set of department affiliations
+                - themes (List[str]): List of article themes
+                - all_categories (List[str]): List of all categories
                 url_maps (Dict[str, Dict[str, str]]): Category URL mappings
 
         Raises:
@@ -733,13 +734,13 @@ class CategoryProcessor:
 
         Args:
             **kwargs: Keyword arguments containing faculty and article data:
-                faculty_members (List[str]): List of faculty authors
-                faculty_affiliations (Dict[str, List[str]]): Faculty department mappings
-                title (str): Article title
-                doi (str): Digital Object Identifier
-                tc_count (int): Citation count
-                all_categories (List[str]): List of all categories
-                url_maps (Dict[str, Dict[str, str]]): Category URL mappings
+                - faculty_members (List[str]): List of faculty authors
+                - faculty_affiliations (Dict[str, List[str]]): Faculty department mappings
+                - title (str): Article title
+                - doi (str): Digital Object Identifier
+                - tc_count (int): Citation count
+                - all_categories (List[str]): List of all categories
+                - url_maps (Dict[str, Dict[str, str]]): Category URL mappings
 
         Raises:
             KeyError: If required kwargs are missing.
@@ -808,18 +809,18 @@ class CategoryProcessor:
 
         Args:
             **kwargs: Keyword arguments containing faculty and article data:
-                faculty_members (List[str]): List of faculty authors
-                faculty_affiliations (Dict[str, List[str]]): Faculty department mappings
-                title (str): Article title
-                doi (str): Digital Object Identifier
-                tc_count (int): Citation count
-                all_categories (List[str]): List of all categories
-                top_level_categories (List[str]): Top-level categories
-                mid_level_categories (List[str]): Mid-level categories
-                low_level_categories (List[str]): Low-level categories
-                url_maps (Dict[str, Dict[str, str]]): Category URL mappings
-                themes (List[str]): Article themes
-                journal (str): Journal name
+                - faculty_members (List[str]): List of faculty authors
+                - faculty_affiliations (Dict[str, List[str]]): Faculty department mappings
+                - title (str): Article title
+                - doi (str): Digital Object Identifier
+                - tc_count (int): Citation count
+                - all_categories (List[str]): List of all categories
+                - top_level_categories (List[str]): Top-level categories
+                - mid_level_categories (List[str]): Mid-level categories
+                - low_level_categories (List[str]): Low-level categories
+                - url_maps (Dict[str, Dict[str, str]]): Category URL mappings
+                - themes (List[str]): Article themes
+                - journal (str): Journal name
 
         Raises:
             KeyError: If required kwargs are missing.
@@ -914,28 +915,26 @@ class CategoryProcessor:
     def update_category_article_stats(self, **kwargs) -> None:
         """Update article statistics for each category.
 
-        Creates or updates article statistics including titles, citations, faculty members,
-        affiliations, abstracts, licenses, publication dates, and URLs. Organizes articles
-        by their category levels (top, mid, low).
+        Creates or updates article statistics including titles, citations, faculty members,  affiliations, abstracts, licenses, publication dates, and URLs. Organizes articles by their category levels (top, mid, low).
 
         Args:
             **kwargs: Keyword arguments containing article data:
-                title (str): Article title
-                doi (str): Digital Object Identifier
-                tc_count (int): Citation count
-                faculty_members (List[str]): List of faculty authors
-                faculty_affiliations (Dict[str, List[str]]): Faculty department mappings
-                abstract (str): Article abstract
-                license_url (str): License URL
-                date_published_print (str): Print publication date
-                date_published_online (str): Online publication date
-                journal (str): Journal name
-                download_url (str): Download URL
-                themes (List[str]): Article themes
-                all_categories (List[str]): List of all categories
-                low_level_categories (List[str]): Low-level categories
-                mid_level_categories (List[str]): Mid-level categories
-                url_maps (Dict[str, Dict[str, str]]): Category URL mappings
+                - title (str): Article title
+                - doi (str): Digital Object Identifier
+                - tc_count (int): Citation count
+                - faculty_members (List[str]): List of faculty authors
+                - faculty_affiliations (Dict[str, List[str]]): Faculty department mappings
+                - abstract (str): Article abstract
+                - license_url (str): License URL
+                - date_published_print (str): Print publication date
+                - date_published_online (str): Online publication date
+                - journal (str): Journal name
+                - download_url (str): Download URL
+                - themes (List[str]): Article themes
+                - all_categories (List[str]): List of all categories
+                - low_level_categories (List[str]): Low-level categories
+                - mid_level_categories (List[str]): Mid-level categories
+                - url_maps (Dict[str, Dict[str, str]]): Category URL mappings
 
         Raises:
             KeyError: If required kwargs are missing.
@@ -1022,22 +1021,22 @@ class CategoryProcessor:
 
         Args:
             **kwargs: Keyword arguments containing article data:
-                doi (str): Digital Object Identifier
-                title (str): Article title
-                tc_count (int): Citation count
-                faculty_members (List[str]): Faculty authors
-                faculty_affiliations (Dict[str, List[str]]): Faculty affiliations
-                abstract (str): Article abstract
-                license_url (str): License URL
-                date_published_print (str): Print publication date
-                date_published_online (str): Online publication date
-                journal (str): Journal name
-                download_url (str): Download URL
-                themes (List[str]): Article themes
-                all_categories (List[str]): All categories
-                top_level_categories (List[str]): Top-level categories
-                mid_level_categories (List[str]): Mid-level categories
-                low_level_categories (List[str]): Low-level categories
+                - doi (str): Digital Object Identifier
+                - title (str): Article title
+                - tc_count (int): Citation count
+                - faculty_members (List[str]): Faculty authors
+                - faculty_affiliations (Dict[str, List[str]]): Faculty affiliations
+                - abstract (str): Article abstract
+                - license_url (str): License URL
+                - date_published_print (str): Print publication date
+                - date_published_online (str): Online publication date
+                - journal (str): Journal name
+                - download_url (str): Download URL
+                - themes (List[str]): Article themes
+                - all_categories (List[str]): All categories
+                - top_level_categories (List[str]): Top-level categories
+                - mid_level_categories (List[str]): Mid-level categories
+                - low_level_categories (List[str]): Low-level categories
 
         Raises:
             KeyError: If required kwargs are missing.

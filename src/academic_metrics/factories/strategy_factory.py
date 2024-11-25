@@ -25,22 +25,21 @@ class StrategyFactory:
         _strategies (dict): A class-level dictionary that maps attribute types to their corresponding strategy classes.
 
     Methods:
-        - register_strategy(*attribute_types): Registers a strategy class for one or more attribute types.
-        - get_strategy(attribute_type, warning_manager): Retrieves the strategy class for a given attribute type and initializes it with a warning manager.
+        register_strategy(*attribute_types): Registers a strategy class for one or more attribute types.
+        get_strategy(attribute_type, warning_manager): Retrieves the strategy class for a given attribute type and initializes it with a warning manager.
 
     Usage:
-        add a strategy to the factory:
-        StrategyFactory.register_strategy(AttributeTypes.TITLE)(TitleExtractionStrategy)
-
-        add the enum to enums.py
-
-        get a strategy from the factory:
-        get_attributes() in utilities.py will then use this factory to get the strategy for a given attribute type.
+    - Add a strategy to the factory:
+    - StrategyFactory.register_strategy(AttributeTypes.TITLE)(TitleExtractionStrategy)
+    - Add the enum to enums.py
+    - get a strategy from the factory:
+    - get_attributes() in utilities.py will then use this factory to get the strategy for a given attribute type.
     """
 
     _strategies = {}
 
     def __init__(self):
+        """Initializes the StrategyFactory."""
         self.logger = configure_logging(
             module_name=__name__,
             log_file_name="strategy_factory",
@@ -83,14 +82,19 @@ class StrategyFactory:
         dictionary. If a strategy class is found, it is instantiated with the provided warning manager and returned.
 
         Args:
-            attribute_type (AttributeTypes): The attribute type for which to retrieve the strategy class.
-            warning_manager (WarningManager): An instance of WarningManager to be passed to the strategy class.
+            attribute_type (AttributeTypes):
+            - The attribute type for which to retrieve the strategy class.
+
+            warning_manager (WarningManager):
+            - An instance of WarningManager to be passed to the strategy class.
 
         Returns:
-            object: An instance of the strategy class associated with the specified attribute type.
+            strategy (AttributeExtractionStrategy):
+            - An instance of the strategy class associated with the specified attribute type.
 
         Raises:
-            ValueError: If no strategy is found for the specified attribute type.
+            ValueError:
+            - If no strategy is found for the specified attribute type.
         """
         strategy_class: AttributeExtractionStrategy = cls._strategies.get(
             attribute_type

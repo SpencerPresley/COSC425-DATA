@@ -2,6 +2,32 @@ from enum import Enum
 
 
 class AttributeTypes(Enum):
+    """Enum for the different types of attributes.
+
+    Attributes:
+        AUTHOR (str): Author.
+        TITLE (str): Title.
+        ABSTRACT (str): Abstract.
+        END_RECORD (str): End record.
+        WC_PATTERN (str): Word count pattern.
+        DEPARTMENT (str): Department.
+        CROSSREF_TITLE (str): Crossref title.
+        CROSSREF_ABSTRACT (str): Crossref abstract.
+        CROSSREF_AUTHORS (str): Crossref authors.
+        CROSSREF_DEPARTMENTS (str): Crossref departments.
+        CROSSREF_CATEGORIES (str): Crossref categories.
+        CROSSREF_URL (str): Crossref URL.
+        CROSSREF_CITATION_COUNT (str): Crossref citation count.
+        CROSSREF_LICENSE_URL (str): Crossref license URL.
+        CROSSREF_PUBLISHED_PRINT (str): Crossref published print.
+        CROSSREF_CREATED_DATE (str): Crossref created date.
+        CROSSREF_PUBLISHED_ONLINE (str): Crossref published online.
+        CROSSREF_JOURNAL (str): Crossref journal.
+        CROSSREF_DOI (str): Crossref DOI.
+        CROSSREF_THEMES (str): Crossref themes.
+        CROSSREF_EXTRA_CONTEXT (str): Crossref extra context.
+    """
+
     AUTHOR = "author"
     TITLE = "title"
     ABSTRACT = "abstract"

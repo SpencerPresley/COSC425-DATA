@@ -22,7 +22,7 @@ class DataClassFactory:
         logger (logging.Logger): Logger instance for this class.
         log_file_path (str): Path to the log file.
 
-    Public Methods:
+    Methods:
         register_dataclass: Decorator to register a dataclass with the factory.
         get_dataclass: Creates a new instance of a registered dataclass.
         is_registered: Checks if a dataclass type is registered.
@@ -48,14 +48,17 @@ class DataClassFactory:
 
         Args:
             dataclass_type (DataClassTypes): The type of dataclass to register.
-
-        Example:
-            @DataClassFactory.register_dataclass(DataClassTypes.CATEGORY_INFO)
-            class CategoryInfo:
-                ...
         """
 
         def decorator(data_class: Type):
+            """Decorator to register a dataclass with the factory.
+
+            Args:
+                data_class (Type): The dataclass to register.
+
+            Returns:
+                data_class (Type): The dataclass to register.
+            """
             # Apply the @dataclass decorator if not already applied
             # if not hasattr(data_class, '__dataclass_fields__'):
             #     data_class = dataclass(data_class)
@@ -74,19 +77,13 @@ class DataClassFactory:
 
         Args:
             dataclass_type (DataClassTypes): The enum type of the dataclass to create
-            **init_params: Parameters to initialize the dataclass
+            init_params (dict): Parameters to initialize the dataclass
 
         Returns:
-            An instance of the requested dataclass
+            instance (Type[dataclass]): An instance of the requested dataclass
 
         Raises:
             ValueError: If no dataclass is registered for the given type
-
-        Example:
-            category_info = DataClassFactory.get_dataclass(
-                DataClassTypes.CATEGORY_INFO,
-                category_name="Computer Science"
-            )
         """
         data_class = cls._registry.get(dataclass_type.value)
 

@@ -32,6 +32,17 @@ class CrossrefWrapper:
         semaphore (asyncio.Semaphore): Semaphore to control the rate of concurrent requests.
         years (list): List of years to fetch data for.
         data (dict): Data fetched from the Crossref API.
+
+    Methods:
+        fetch_data(session: aiohttp.ClientSession, url: str, headers: dict[str, Any], retries: int, retry_delay: int) -> dict[str, Any] | None: Fetches data from the given URL using aiohttp.
+        build_request_url(base_url: str, affiliation: str, from_date: str, to_date: str, n_element: str, sort_type: str, sort_ord: str, cursor: str, has_abstract: bool | None = False) -> str: Builds the request URL for the Crossref API.
+        process_items(data: dict[str, Any], from_date: str, to_date: str, affiliation: str | None = "salisbury univ") -> list[dict[str, Any]]: Processes the items fetched from the Crossref API, filtering by date and affiliation.
+        _get_last_day_of_month(year: int, month: int) -> int: Returns the last day of the given month in the given year.
+        fetch_data_for_multiple_years() -> list[dict[str, Any]]: Fetches data for multiple years asynchronously.
+        serialize_to_json(output_file: str) -> None: Serializes the fetched data to a JSON file.
+        final_data_process() -> Self: Processes the final data, filling in missing abstracts.
+        get_result_list() -> list[dict[str, Any]]: Get the result list
+        run_all_process(save_offline: bool = False) -> Union[None, List[Dict[str, Any]]]: Run all data fetching and processing
     """
 
     def __init__(
@@ -346,9 +357,14 @@ class CrossrefWrapper:
         return (item_list, cursor)
 
     def _get_last_day_of_month(self, year: int, month: int) -> int:
-        """
-        Returns the last day of the given month in the given year.
-        Handles leap years for February.
+        """Returns the last day of the given month in the given year. Handles leap years for February.
+
+        Args:
+            year (int): The year to check.
+            month (int): The month to check.
+
+        Returns:
+            int: The last day of the given month in the given year.
         """
         # Handle February for leap years
         if month == 2:
@@ -365,11 +381,10 @@ class CrossrefWrapper:
         return 31
 
     async def fetch_data_for_multiple_years(self) -> list[dict[str, Any]]:
-        """
-        Fetches data for multiple years asynchronously.
+        """Fetches data for multiple years asynchronously.
 
         Returns:
-            list: The list of items fetched from the Crossref API.
+            final_result (list[dict[str, Any]]): The list of items fetched from the Crossref API.
         """
         # creat the async session and send the tasks to each thread
         async with aiohttp.ClientSession() as session:
@@ -412,11 +427,10 @@ class CrossrefWrapper:
             return final_result
 
     def run_afetch_yrange(self) -> Self:
-        """
-        Runs the asynchronous data fetch for multiple years.
+        """Runs the asynchronous data fetch for multiple years.
 
         Returns:
-            list: The list of items fetched from the Crossref API.
+            self: The instance of the class for method chaining.
         """
         # run the async function chain
         result_list = asyncio.run(self.fetch_data_for_multiple_years())
@@ -438,8 +452,10 @@ class CrossrefWrapper:
             json.dump(self.result, fp=file, indent=4)
 
     def final_data_process(self) -> Self:
-        """
-        Processes the final data, filling in missing abstracts.
+        """Processes the final data, filling in missing abstracts.
+
+        Returns:
+            self: The instance of the class for method chaining.
         """
         # fill missing abstracts
         num_processed = 0
@@ -450,17 +466,6 @@ class CrossrefWrapper:
         if not self.result:  # Check if result exists
             self.logger.error("No result data found")
             return self
-
-        # missing_abstracts = [item for item in self.result if "abstract" not in item]
-        # total_missing = len(missing_abstracts)
-        # self.logger.info(f"\n\nTotal missing abstracts: {total_missing}\n\n")
-
-        # if total_missing == 0:
-        #     self.logger.info("No missing abstracts found")
-        #     return self
-
-        # for item in missing_abstracts:
-        #     if "abstract" not in item:
 
         if self.test_run:
             self.result = self.result[:3]
@@ -518,16 +523,23 @@ class CrossrefWrapper:
         return self
 
     def get_result_list(self) -> list[dict[str, Any]]:
-        """
-        Get the result list
+        """Get the result list
+
+        Returns:
+            self.result (list[dict[str, Any]]): The result list
         """
         return self.result
 
     def run_all_process(
         self, save_offline: bool = False
     ) -> Union[None, List[Dict[str, Any]]]:
-        """
-        Run all data fetching and processing
+        """Run all data fetching and processing
+
+        Args:
+            save_offline (bool): Whether to save the offline data.
+
+        Returns:
+            Union[None, List[Dict[str, Any]]]: The result list or None
         """
         if save_offline:
             return (

@@ -2,7 +2,7 @@ import json
 import logging
 import time
 import os
-from typing import Any, Dict
+from typing import Any, Dict, List
 
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
@@ -19,45 +19,45 @@ from academic_metrics.configs import (
     DEBUG,
 )
 
-# # Load environment variables
-# load_dotenv()
-# api_key = os.getenv("OPENAI_API_KEY")
-# client = OpenAI(api_key=api_key)
-
-# # Configure logging
-# logging.basicConfig(
-#     level=logging.DEBUG,
-#     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-#     handlers=[logging.FileHandler("scraper.log")],
-# )
-# logger = logging.getLogger(__name__)
-
-# # Suppress logging for certain libraries
-# logging.getLogger("selenium").setLevel(logging.WARNING)
-# logging.getLogger("aiohttp").setLevel(logging.WARNING)
-# logging.getLogger("openai").setLevel(logging.WARNING)
-# logging.getLogger("ChainBuilder").setLevel(logging.DEBUG)
-# logging.getLogger("webdriver_manager").setLevel(logging.WARNING)
-# logging.getLogger("CrossrefWrapper").setLevel(logging.DEBUG)
-
 
 # create the cleaner output model
 class CleanerOutput(BaseModel):
+    """Pydantic model for the cleaner output.
+
+    Attributes:
+        page_content (str): The page content.
+        extra_context (Dict[str, Any]): The extra context.
+    """
+
     page_content: str
     extra_context: Dict[str, Any]
 
 
 class Scraper:
+    """Scraper class for fetching and processing abstracts from URLs.
+
+    Attributes:
+        api_key (str): The OpenAI API key.
+        client (OpenAI): The OpenAI client.
+        options (Options): The Selenium options.
+        service (Service): The Selenium service.
+        raw_results (list[dict[str, Any]]): The raw results.
+
+    Methods:
+        _setup_selenium_options(): Set up Selenium Firefox options.
+        setup_chain(output_list: list[str]) -> dict[str, Any] | None: Set up and run the chain.
+        get_abstract(url: str, return_raw_output: bool | None = False) -> tuple[str | None, dict[str, Any] | None]: Fetch and process the abstract from a given URL.
+        save_raw_results(): Save the raw results to a JSON file.
+    """
+
     def __init__(
         self,
         api_key: str,
     ):
-        """
-        Initialize the Scraper with API key and logger.
+        """Initialize the Scraper with API key and logger.
 
         Args:
-            api_key: OpenAI API key
-            logger: Optional logger instance
+            api_key (str): The OpenAI API key.
         """
         self.logger = configure_logging(
             module_name=__name__,
@@ -86,15 +86,27 @@ class Scraper:
         self.max_delay = 125  # seconds
 
     def _setup_selenium_options(self):
-        """Set up Selenium Firefox options."""
-        options = Options()
+        """Set up Selenium Firefox options.
+
+        Returns:
+            options (Options): The Selenium options.
+        """
+        options: Options = Options()
         options.add_argument("--headless")
         options.add_argument("--disable-gpu")
         options.add_argument("--no-sandbox")
         options.add_argument("--disable-dev-shm-usage")
         return options
 
-    def setup_chain(self, output_list):
+    def setup_chain(self, output_list: List[str]) -> Dict[str, Any] | None:
+        """Set up and run the chain.
+
+        Args:
+            output_list (List[str]): The output list.
+
+        Returns:
+            Dict[str, Any] | None: The result of the chain.
+        """
         # instanciate the chain manager
         # google_api_key = os.getenv("GOOGLE_API_KEY")
         import time
@@ -226,15 +238,9 @@ class Scraper:
             url (str): The URL of the web page to fetch the abstract from.
 
         Returns:
-            Optional[dict]: A dictionary containing the processed abstract and additional context,
-                            or None if no abstract is found or an error occurs.
-
-        Raises:
-            Exception: Logs any exceptions that occur during the fetching and processing of the URL.
-
-        Example:
-            data = get_abstract('http://dx.doi.org/10.3197/096327117x14913285800742')
-            print(data)
+            (abstract: str | None, extra_context: dict[str, Any] | None):
+            - The processed abstract and additional context,
+            - or None if no abstract is found or an error occurs.
         """
         driver = None
         retry_count: int = 0
@@ -242,20 +248,6 @@ class Scraper:
             while retry_count < self.max_retries:
                 try:
                     self.logger.debug(f"Fetching URL: {url}")
-                    # Set up the WebDriver in headless mode
-                    # options = Options()
-                    # options.add_argument(
-                    #     "--headless"
-                    # )  # headless will prevent the browser instance from displaying
-                    # options.add_argument("--disable-gpu")  # Disable GPU acceleration
-                    # options.add_argument(
-                    #     "--no-sandbox"
-                    # )  # Bypass OS security model, required for running as root
-                    # options.add_argument("--disable-dev-shm-usage")
-                    # # Set up the WebDriver (for Firefox, replace with the path to your downloaded GeckoDriver)
-                    # # service = Service("/home/usboot/Downloads/geckodriver")
-                    # service = Service(GeckoDriverManager().install())
-                    # driver = webdriver.Firefox(service=service, options=options)
 
                     self.logger.debug("Setting up driver")
                     try:
@@ -409,16 +401,6 @@ class Scraper:
                             total_characters,
                         )
 
-                    # Add the next 80000 tokens after the text we have collected
-                    # ! Removed to save on OpenAI API input tokens
-                    # output_list.append(
-                    #     page_content[total_tokens : total_tokens + token_end]
-                    # )
-
-                    # ! Remove the log message for the above task
-                    # self.logger.debug(
-                    #     f"Added first 100,000 characters of page content for URL: {url}"
-                    # )
                     results = self.setup_chain(output_list)
 
                     if results is None:
@@ -454,30 +436,13 @@ class Scraper:
         return None, None
 
     def save_raw_results(self):
+        """Save the raw results to a JSON file."""
         with open("raw_results.json", "w") as f:
             json.dump(self.raw_results, f)
 
 
 # Example usage
 if __name__ == "__main__":
-    # Set up logging
-    # logging.basicConfig(level=logging.DEBUG)
-    # logger = logging.getLogger("scraper_demo")
-
-    # # Load environment variables
-    # load_dotenv()
-    # api_key = os.getenv("OPENAI_API_KEY")
-
-    # # Initialize scraper
-    # scraper = Scraper(api_key=api_key, logger=logger)
-
-    # # Test URL
-    # test_url = "http://dx.doi.org/10.3197/096327117x14913285800742"
-    # result = scraper.get_abstract(test_url)
-
-    # if result:
-    #     print("Abstract:", result.get("abstract"))
-    #     print("Extra context:", result.get("extra_context"))
     load_dotenv()
     api_key = os.getenv("OPENAI_API_KEY")
     scraper = Scraper(api_key=api_key)

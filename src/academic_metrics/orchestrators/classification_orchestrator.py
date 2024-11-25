@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import logging
 import os
-from typing import TYPE_CHECKING, Callable, Dict, List, Tuple
+from typing import TYPE_CHECKING, Callable, Dict, List, Tuple, TypeAlias
 
 from pylatexenc.latex2text import LatexNodes2Text
 from unidecode import unidecode
@@ -17,29 +17,21 @@ from academic_metrics.enums import AttributeTypes
 if TYPE_CHECKING:
     from academic_metrics.utils import Utilities
 
-"""
-If you want to get a dictionary back from AbstractClassifier.get_classification_results_by_doi() method
-you can use this type.
+ClassificationResultsDict: TypeAlias = Dict[str, List[str]]
+"""Type alias for a dictionary mapping DOIs to lists of classification results.
 
-The key, value pairs in the dictionary are:
-    1. "top_categories": List[str] of top categories
-    2. "mid_categories": List[str] of mid categories
-    3. "low_categories": List[str] of low categories
-    4. "themes": List[str] of themes
+This type alias is used to represent the return type of the 
+:func:`AbstractClassifier.get_classification_results_by_doi` method.
 """
-ClassificationResultsDict = Dict[str, List[str]]
 
-"""
-If you want to get a tuple back from AbstractClassifier.get_classification_results_by_doi() method
-you can use this type.
+ClassificationResultsTuple: TypeAlias = Tuple[
+    List[str], List[str], List[str], List[str]
+]
+"""Type alias for a tuple containing lists of classification results.
 
-The order of the elements in the tuple is:
-    1. List[str] of top categories
-    2. List[str] of mid categories
-    3. List[str] of low categories
-    4. List[str] of themes
+This type alias is used to represent the return type of the 
+:func:`AbstractClassifier.get_classification_results_by_doi` method.
 """
-ClassificationResultsTuple = Tuple[List[str], List[str], List[str], List[str]]
 
 
 class ClassificationOrchestrator:
@@ -65,58 +57,26 @@ class ClassificationOrchestrator:
             - items: List of unclassified metadata items
 
     Methods:
-        Public:
-            run_classification() -> List[Dict]:
-                Processes and classifies a list of research metadata dictionaries.
+        Public Methods:
+            run_classification() -> List[Dict]: Processes and classifies a list of research metadata dictionaries.
+            get_unclassified_item_count() -> int: Returns the number of unclassified items.
+            get_unclassified_dois() -> List[str]: Returns the DOIs of unclassified items.
+            get_unclassified_abstracts() -> List[str]: Returns the abstracts of unclassified items.
+            get_unclassified_doi_abstract_dict() -> Dict[str, str]: Returns the DOI to abstract mapping dictionary for unclassified items.
+            get_unclassified_items() -> List[Dict]: Returns the unclassified items.
+            get_unclassified_details_dict() -> Dict: Returns the details of unclassified items.
 
-            get_unclassified_item_count() -> int:
-                Returns the number of unclassified items.
-
-            get_unclassified_dois() -> List[str]:
-                Returns the DOIs of unclassified items.
-
-            get_unclassified_abstracts() -> List[str]:
-                Returns the abstracts of unclassified items.
-
-            get_unclassified_doi_abstract_dict() -> Dict[str, str]:
-                Returns the DOI to abstract mapping dictionary for unclassified items.
-
-            get_unclassified_items() -> List[Dict]:
-                Returns the unclassified items.
-
-            get_unclassified_details_dict() -> Dict:
-                Returns the details of unclassified items.
-
-        Private:
-            _classification_orchestrator() -> List[Dict]:
-                Core classification logic for processing research metadata.
-
-            _inject_categories() -> None:
-                Adds classification results to a research metadata dictionary.
-
-            _extract_categories() -> ClassificationResultsDict | ClassificationResultsTuple:
-                Gets classification results for a specific DOI.
-
-            _make_doi_abstract_dict() -> Dict[str, str]:
-                Creates a DOI to abstract mapping dictionary.
-
-            _retrieve_doi_abstract() -> Tuple[str, str]:
-                Extracts DOI and abstract from a research metadata dictionary.
-
-            _update_classified_instance_variables() -> None:
-                Updates tracking variables for unclassified items.
-
-            _set_classification_ran_true() -> None:
-                Sets the classification ran flag to true.
-
-            _has_ran_classification() -> bool:
-                Checks if classification has been run.
-
-            _validate_classification_ran() -> None:
-                Validates if classification has been run.
-
-            _normalize_abstract() -> str:
-                Normalizes an abstract by removing LaTeX and converting any resulting unicode to ASCII.
+        Private Methods:
+            _classification_orchestrator() -> List[Dict]: Core classification logic for processing research metadata.
+            _inject_categories() -> None: Adds classification results to a research metadata dictionary.
+            _extract_categories() -> ClassificationResultsDict | ClassificationResultsTuple: Gets classification results for a specific DOI.
+            _make_doi_abstract_dict() -> Dict[str, str]: Creates a DOI to abstract mapping dictionary.
+            _retrieve_doi_abstract() -> Tuple[str, str]: Extracts DOI and abstract from a research metadata dictionary.
+            _update_classified_instance_variables() -> None: Updates tracking variables for unclassified items.
+            _set_classification_ran_true() -> None: Sets the classification ran flag to true.
+            _has_ran_classification() -> bool: Checks if classification has been run.
+            _validate_classification_ran() -> None: Validates if classification has been run.
+            _normalize_abstract() -> str: Normalizes an abstract by removing LaTeX and converting any resulting unicode to ASCII.
 
     Example:
         >>> # Create wrapper instance
@@ -146,6 +106,12 @@ class ClassificationOrchestrator:
         abstract_classifier_factory: Callable[[Dict[str, str]], AbstractClassifier],
         utilities: Utilities,
     ):
+        """Initialize the ClassificationOrchestrator.
+
+        Args:
+            abstract_classifier_factory: Factory function that creates AbstractClassifier instances.
+            utilities: Utilities instance for attribute extraction.
+        """
         self.logger = configure_logging(
             module_name=__name__,
             log_file_name="classification_orchestrator",
@@ -459,7 +425,10 @@ class ClassificationOrchestrator:
         self._classification_ran: bool = True
 
     def _has_ran_classification(self) -> bool:
-        """Checks if classification has been run."""
+        """Checks if classification has been run.
+
+        Returns
+        """
         return self._classification_ran
 
     def _validate_classification_ran(self, classification_ran: bool) -> None:
