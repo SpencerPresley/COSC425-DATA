@@ -42,7 +42,6 @@ Color Formatter
    :show-inheritance:
    :private-members:
    :special-members:
-   :noindex:
 
 Functions
 -----------
