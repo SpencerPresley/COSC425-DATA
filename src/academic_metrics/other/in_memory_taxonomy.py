@@ -12,7 +12,7 @@ TAXONOMY_AS_STRING: str = """
         ],
         "Natural resources and conservation": [
             "Environmental science",
-            "Environmental/ natural resources management and policy",
+            "Environmental natural resources management and policy",
             "Forestry",
             "Natural resources conservation and research",
             "Natural resources and conservation nec"
@@ -32,10 +32,10 @@ TAXONOMY_AS_STRING: str = """
             "Computational biology",
             "Bioinformatics, biostatistics, and computational biology nec"
         ],
-        "Cell/ cellular biology and anatomy": [
-            "Cell/ cellular and molecular biology",
+        "Cell cellular biology and anatomy": [
+            "Cell cellular and molecular biology",
             "Developmental biology and embryology",
-            "Cell/ cellular biology and anatomy nec"
+            "Cell cellular biology and anatomy nec"
         ],
         "Ecology, evolutionary biology, and epidemiology": [
             "Ecology",
@@ -48,7 +48,7 @@ TAXONOMY_AS_STRING: str = """
         "Genetics and genomics": [
             "Genetics, general",
             "Genome sciences and genomics",
-            "Human/ medical genetics",
+            "Human medical genetics",
             "Molecular genetics",
             "Genetics nec"
         ],
@@ -78,7 +78,7 @@ TAXONOMY_AS_STRING: str = """
             "Physiology, oncology and cancer biology nec"
         ],
         "Biological and biomedical sciences, other": [
-            "Biology/ biological sciences, general",
+            "Biology biological sciences, general",
             "Biomedical sciences, general",
             "Botany and plant biology",
             "Entomology",
@@ -97,7 +97,7 @@ TAXONOMY_AS_STRING: str = """
             "Computer and information sciences, general",
             "Computer systems networking and telecommunications",
             "Informatics and information technology ",
-            "Information science/ studies",
+            "Information science studies",
             "Computer and information sciences nec"
         ]
     },
@@ -114,7 +114,7 @@ TAXONOMY_AS_STRING: str = """
         ],
         "Civil, environmental, and transportation engineering": [
             "Civil engineering",
-            "Environmental/ environmental health engineering",
+            "Environmental environmental health engineering",
             "Geotechnical and geoenvironmental engineering",
             "Structural engineering",
             "Transportation and highway engineering",
@@ -157,12 +157,12 @@ TAXONOMY_AS_STRING: str = """
         "Geological and earth sciences": [
             "Geochemistry",
             "Geology",
-            "Geology/ earth science, general",
+            "Geology earth science, general",
             "Geophysics and seismology",
             "Hydrology and water resources science",
             "Geological and earth sciences nec"
         ],
-        "Ocean/ marine sciences and atmospheric science": [
+        "Ocean marine sciences and atmospheric science": [
             "Atmospheric sciences and meteorology, general",
             "Climatology, atmospheric chemistry and physics",
             "Marine biology and biological oceanography",
@@ -185,7 +185,7 @@ TAXONOMY_AS_STRING: str = """
         "Public health": [
             "Environmental health",
             "Health services research",
-            "Health/ medical physics",
+            "Health medical physics",
             "Public health education and promotion",
             "Public health, general",
             "Public health nec"
@@ -194,7 +194,7 @@ TAXONOMY_AS_STRING: str = """
             "Communication disorders sciences",
             "Exercise science and kinesiology",
             "Health sciences, general",
-            "Marriage and family therapy/ counseling",
+            "Marriage and family therapy counseling",
             "Medical clinical science",
             "Medical, biomedical, and health informatics",
             "Mental health, counseling, and therapy services and sciences",
@@ -220,20 +220,20 @@ TAXONOMY_AS_STRING: str = """
             "Statistics nec"
         ]
     },
-    "Multidisciplinary/ interdisciplinary sciences": {
+    "Multidisciplinary interdisciplinary sciences": {
         "Interdisciplinary computer sciences": [
             "Computer science and engineering",
             "Electrical engineering and computer science",
             "Interdisciplinary computer sciences nec"
         ],
-        "Multidisciplinary/ interdisciplinary sciences, other": [
+        "Multidisciplinary interdisciplinary sciences, other": [
             "Behavioral and cognitive sciences",
             "Computational science and engineering",
             "Data science and data analytics",
-            "History/ philosophy of science, technology and society",
-            "Nanoscience/ nanoscale science",
+            "History philosophy of science, technology and society",
+            "Nanoscience nanoscale science",
             "Nutrition sciences",
-            "Multidisciplinary/ interdisciplinary sciences nec"
+            "Multidisciplinary interdisciplinary sciences nec"
         ]
     },
     "Physical sciences": {
@@ -259,11 +259,11 @@ TAXONOMY_AS_STRING: str = """
         ],
         "Physics": [
             "Applied physics",
-            "Atomic/ molecular physics",
+            "Atomic molecular physics",
             "Condensed matter and materials physics",
             "Elementary particle physics",
             "Nuclear physics",
-            "Optics/ optical sciences",
+            "Optics optical sciences",
             "Physics and astronomy",
             "Physics, general",
             "Plasma and high-temperature physics",
@@ -316,7 +316,7 @@ TAXONOMY_AS_STRING: str = """
             "Development economics and international development",
             "Econometrics and quantitative economics",
             "Economics, general",
-            "Environmental/ natural resource economics",
+            "Environmental natural resource economics",
             "Economics nec"
         ],
         "Political science and government": [
@@ -369,7 +369,7 @@ TAXONOMY_AS_STRING: str = """
         "Education research": [
             "Curriculum and instruction",
             "Educational assessment, evaluation, and research methods",
-            "Educational/ instructional technology and media design",
+            "Educational instructional technology and media design",
             "Higher education evaluation and research",
             "Student counseling and personnel services",
             "Education research nec"
@@ -401,7 +401,7 @@ TAXONOMY_AS_STRING: str = """
         ],
         "Foreign languages, literatures, and linguistics": [
             "Comparative literature",
-            "Hispanic/ Latin American languages, literatures, and linguistics",
+            "Hispanic Latin American languages, literatures, and linguistics",
             "Romance languages, literatures, and linguistics",
             "Spanish language and literature",
             "Foreign languages, literatures, and linguistics nec"
@@ -415,11 +415,11 @@ TAXONOMY_AS_STRING: str = """
         ],
         "Philosophy and religious studies": [
             "Philosophy",
-            "Religion/ religious studies",
+            "Religion religious studies",
             "Philosophy and religious studies nec"
         ],
         "Humanities, other": [
-            "Bible/ biblical studies",
+            "Bible biblical studies",
             "Humanities and humanistic studies",
             "Theological and ministerial studies"
         ]
@@ -435,7 +435,7 @@ TAXONOMY_AS_STRING: str = """
         "Visual arts, media studies, and design": [
             "Art history, criticism and conservation",
             "Film, cinema, and media studies",
-            "Visual arts, media studies/ design, and arts management nec"
+            "Visual arts, media studies design, and arts management nec"
         ]
     },
     "Other non-science and engineering": {
@@ -443,12 +443,12 @@ TAXONOMY_AS_STRING: str = """
             "Applied communication, advertising, and public relations",
             "Communication and media studies",
             "Communication, general",
-            "Mass communication/ media studies",
+            "Mass communication media studies",
             "Communications and journalism nec"
         ],
-        "Multidisciplinary/ interdisciplinary studies": [
+        "Multidisciplinary interdisciplinary studies": [
             "Classical and ancient studies",
-            "Multidisciplinary/ interdisciplinary studies nec"
+            "Multidisciplinary interdisciplinary studies nec"
         ],
         "Public administration and social services": [
             "Public administration",
@@ -456,7 +456,7 @@ TAXONOMY_AS_STRING: str = """
         ],
         "Non-science and engineering, other": [
             "Architecture and architectural studies ",
-            "City/ urban, community, and regional planning",
+            "City urban, community, and regional planning",
             "Family, consumer sciences and human sciences",
             "Homeland security and protective services",
             "Law, legal studies and research",

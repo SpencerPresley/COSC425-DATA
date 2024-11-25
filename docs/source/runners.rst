@@ -7,7 +7,7 @@ Submodules
 runners.pipeline module
 -----------------------
 
-.. automodule:: runners.pipeline
+.. automodule:: academic_metrics.runners.pipeline
    :members:
    :no-index:
    :undoc-members:
@@ -17,7 +17,7 @@ runners.pipeline module
 Module contents
 ---------------
 
-.. automodule:: runners
+.. automodule:: academic_metrics.runners
    :members:
    :undoc-members:
    :show-inheritance:

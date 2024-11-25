@@ -7,7 +7,7 @@ Submodules
 utils.api\_key\_validator module
 --------------------------------
 
-.. automodule:: utils.api_key_validator
+.. automodule:: academic_metrics.utils.api_key_validator
    :members:
    :no-index:
    :undoc-members:
@@ -16,7 +16,7 @@ utils.api\_key\_validator module
 utils.taxonomy\_util module
 ---------------------------
 
-.. automodule:: utils.taxonomy_util
+.. automodule:: academic_metrics.utils.taxonomy_util
    :members:
    :no-index:
    :undoc-members:
@@ -25,7 +25,7 @@ utils.taxonomy\_util module
 utils.unicode\_chars\_dict module
 ---------------------------------
 
-.. automodule:: utils.unicode_chars_dict
+.. automodule:: academic_metrics.utils.unicode_chars_dict
    :members:
    :no-index:
    :undoc-members:
@@ -34,7 +34,7 @@ utils.unicode\_chars\_dict module
 utils.utilities module
 ----------------------
 
-.. automodule:: utils.utilities
+.. automodule:: academic_metrics.utils.utilities
    :members:
    :no-index:
    :undoc-members:
@@ -43,7 +43,7 @@ utils.utilities module
 utils.warning\_manager module
 -----------------------------
 
-.. automodule:: utils.warning_manager
+.. automodule:: academic_metrics.utils.warning_manager
    :members:
    :no-index:
    :undoc-members:
@@ -52,7 +52,7 @@ utils.warning\_manager module
 Module contents
 ---------------
 
-.. automodule:: utils
+.. automodule:: academic_metrics.utils
    :members:
    :undoc-members:
    :show-inheritance:

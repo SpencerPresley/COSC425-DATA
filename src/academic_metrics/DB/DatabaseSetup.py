@@ -2,7 +2,7 @@ import atexit
 import json
 import logging
 import os
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Tuple, TypeAlias
 
 from dotenv import load_dotenv
 from pymongo.collection import Collection
@@ -13,6 +13,27 @@ from academic_metrics.configs import (
     configure_logging,
     DEBUG,
 )
+
+CollectionData: TypeAlias = List[Dict[str, Any]]
+"""Type alias representing a collection of documents from MongoDB.
+
+Each document is represented as a dictionary with string keys and arbitrary values.
+
+Type:
+    List[Dict[str, Any]]: A list of dictionaries where each dictionary represents a MongoDB document.
+"""
+
+DatabaseSnapshot: TypeAlias = Tuple[CollectionData, CollectionData, CollectionData]
+"""Type alias representing a snapshot of all collections in the database.
+
+Contains data from articles, categories, and faculty collections in that order.
+
+Type:
+    Tuple[CollectionData, CollectionData, CollectionData]: A tuple containing:
+        - article_data (CollectionData): Documents from the articles collection
+        - category_data (CollectionData): Documents from the categories collection
+        - faculty_data (CollectionData): Documents from the faculty collection
+"""
 
 
 class DatabaseWrapper:
@@ -89,18 +110,23 @@ class DatabaseWrapper:
         self.logger.info(f"Retrieved DOIs: {doi_list}")
         return doi_list
 
-    def get_all_data(self) -> List[List[Dict[str, Any]]]:
+    def get_all_data(self) -> DatabaseSnapshot:
         """Get all data from the article, category, and faculty collections.
 
         Returns:
-            List[List[Dict[str, Any]]]: List of lists containing article, category, and faculty data.
+            Tuple[CollectionData, CollectionData, CollectionData]: A tuple containing:
+            - articles (CollectionData): Documents from the articles collection
+
+            - categories (CollectionData): Documents from the categories collection
+
+            - faculty (CollectionData): Documents from the faculty collection
         """
-        articles = self.article_collection.find({})
-        categories = self.category_collection_collection.find({})
-        faculty = self.faculty_collection.find({})
+        articles: CollectionData = list(self.article_collection.find({}))
+        categories: CollectionData = list(self.category_collection.find({}))
+        faculty: CollectionData = list(self.faculty_collection.find({}))
 
         self.logger.info("Retrieved all data from collections.")
-        return [articles, categories, faculty]
+        return (articles, categories, faculty)
 
     def insert_categories(self, category_data: List[Dict[str, Any]]):
         """Insert multiple categories into the collection.

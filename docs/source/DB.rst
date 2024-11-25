@@ -7,7 +7,7 @@ Submodules
 DB.DatabaseSetup module
 -----------------------
 
-.. automodule:: DB.DatabaseSetup
+.. automodule:: academic_metrics.DB.DatabaseSetup
    :members:
    :no-index:
    :undoc-members:
@@ -17,7 +17,7 @@ DB.DatabaseSetup module
 Module contents
 ---------------
 
-.. automodule:: DB
+.. automodule:: academic_metrics.DB
    :members:
    :undoc-members:
    :show-inheritance:

@@ -1,6 +1,5 @@
 import json
 import logging
-import os
 from typing import Dict, List, Literal, TypeAlias
 
 from academic_metrics.configs import configure_logging, DEBUG
@@ -115,21 +114,23 @@ class Taxonomy:
             _load_taxonomy_from_string(taxonomy_str, logger): Load taxonomy from JSON.
 
     Examples:
-        >>> # Create a taxonomy instance
-        >>> taxonomy = Taxonomy()
-        >>>
-        >>> # Get categories at different levels
-        >>> top_cats = taxonomy.get_top_categories()
-        >>> mid_cats = taxonomy.get_mid_categories(top_cats[0])
-        >>> low_cats = taxonomy.get_low_categories(top_cats[0], mid_cats[0])
-        >>>
-        >>> # Validate categories
-        >>> taxonomy.is_valid_category(top_cats[0], "top")
-        True
-        >>>
-        >>> # Find parent categories
-        >>> parent_top = taxonomy.get_top_cat_for_mid_cat(mid_cats[0])
-        >>> parent_mid = taxonomy.get_mid_cat_for_low_cat(low_cats[0])
+        .. code-block:: python
+
+            # Create a taxonomy instance
+            taxonomy = Taxonomy()
+
+            # Get categories at different levels
+            top_cats = taxonomy.get_top_categories()
+            mid_cats = taxonomy.get_mid_categories(top_cats[0])
+            low_cats = taxonomy.get_low_categories(top_cats[0], mid_cats[0])
+
+            # Validate categories
+            taxonomy.is_valid_category(top_cats[0], "top")
+            True
+
+            # Find parent categories
+            parent_top = taxonomy.get_top_cat_for_mid_cat(mid_cats[0])
+            parent_mid = taxonomy.get_mid_cat_for_low_cat(low_cats[0])
     """
 
     def __init__(self) -> None:
@@ -145,22 +146,24 @@ class Taxonomy:
         - Low level: Specific categories under each mid category
 
         Examples:
-            >>> # Create a new taxonomy instance
-            >>> taxonomy = Taxonomy()
-            >>> isinstance(taxonomy._taxonomy, dict)
-            True
+            .. code-block:: python
 
-            >>> # Verify initialization of category lists
-            >>> all(isinstance(cats, list) for cats in [
-            ...     taxonomy._all_top_categories,
-            ...     taxonomy._all_mid_categories,
-            ...     taxonomy._all_low_categories
-            ... ])
-            True
+                # Create a new taxonomy instance
+                taxonomy = Taxonomy()
+                isinstance(taxonomy._taxonomy, dict)
+                True
 
-            >>> # Check that valid levels are properly set
-            >>> taxonomy._valid_levels == ["top", "mid", "low"]
-            True
+                # Verify initialization of category lists
+                all(isinstance(cats, list) for cats in [
+                    taxonomy._all_top_categories,
+                    taxonomy._all_mid_categories,
+                    taxonomy._all_low_categories
+                ])
+                True
+
+                # Check that valid levels are properly set
+                taxonomy._valid_levels == ["top", "mid", "low"]
+                True
         """
         self.logger = configure_logging(
             module_name=__name__,
@@ -189,13 +192,15 @@ class Taxonomy:
             str: A JSON-formatted string representation of the taxonomy.
 
         Examples:
-            >>> taxonomy = Taxonomy()
-            >>> taxonomy_str = str(taxonomy)
-            >>> isinstance(taxonomy_str, str)
-            True
-            >>> # Verify it's valid JSON
-            >>> json.loads(taxonomy_str) == taxonomy._taxonomy
-            True
+            .. code-block:: python
+
+                taxonomy = Taxonomy()
+                taxonomy_str = str(taxonomy)
+                isinstance(taxonomy_str, str)
+                True
+                # Verify it's valid JSON
+                json.loads(taxonomy_str) == taxonomy._taxonomy
+                True
         """
         self.logger.info("Converting taxonomy to string")
         taxonomy_str: str = json.dumps(self._taxonomy, indent=4)
@@ -213,16 +218,18 @@ class Taxonomy:
             List[str]: A list of all top-level categories in the taxonomy.
 
         Examples:
-            >>> taxonomy = Taxonomy()
-            >>> top_cats = taxonomy._set_all_top_categories()
-            >>> isinstance(top_cats, list)
-            True
-            >>> # Verify all elements are strings
-            >>> all(isinstance(cat, str) for cat in top_cats)
-            True
-            >>> # Verify it matches direct access to top categories
-            >>> top_cats == taxonomy.get_top_categories()
-            True
+            .. code-block:: python
+
+                taxonomy = Taxonomy()
+                top_cats = taxonomy._set_all_top_categories()
+                isinstance(top_cats, list)
+                True
+                # Verify all elements are strings
+                all(isinstance(cat, str) for cat in top_cats)
+                True
+                # Verify it matches direct access to top categories
+                top_cats == taxonomy.get_top_categories()
+                True
         """
         return self.get_top_categories()
 
@@ -237,17 +244,19 @@ class Taxonomy:
             List[str]: A list of all mid-level categories in the taxonomy.
 
         Examples:
-            >>> taxonomy = Taxonomy()
-            >>> mid_cats = taxonomy._set_all_mid_categories()
-            >>> isinstance(mid_cats, list)
-            True
-            >>> # Verify all elements are strings
-            >>> all(isinstance(cat, str) for cat in mid_cats)
-            True
-            >>> # Verify each mid category belongs to some top category
-            >>> any(mid_cats[0] in taxonomy.get_mid_categories(top_cat)
-            ...     for top_cat in taxonomy.get_top_categories())
-            True
+            .. code-block:: python
+
+                taxonomy = Taxonomy()
+                mid_cats = taxonomy._set_all_mid_categories()
+                isinstance(mid_cats, list)
+                True
+                # Verify all elements are strings
+                all(isinstance(cat, str) for cat in mid_cats)
+                True
+                # Verify each mid category belongs to some top category
+                any(mid_cats[0] in taxonomy.get_mid_categories(top_cat)
+                    for top_cat in taxonomy.get_top_categories())
+                True
         """
         top_cats: List[str] = self.get_top_categories()
         mid_cats: List[str] = []
@@ -266,18 +275,20 @@ class Taxonomy:
             List[str]: A list of all low-level categories in the taxonomy.
 
         Examples:
-            >>> taxonomy = Taxonomy()
-            >>> low_cats = taxonomy._set_all_low_categories()
-            >>> isinstance(low_cats, list)
-            True
-            >>> # Verify all elements are strings
-            >>> all(isinstance(cat, str) for cat in low_cats)
-            True
-            >>> # Verify first low category exists in taxonomy structure
-            >>> top_cat = taxonomy.get_top_categories()[0]
-            >>> mid_cat = taxonomy.get_mid_categories(top_cat)[0]
-            >>> low_cats[0] in taxonomy.get_low_categories(top_cat, mid_cat)
-            True
+            .. code-block:: python
+
+                taxonomy = Taxonomy()
+                low_cats = taxonomy._set_all_low_categories()
+                isinstance(low_cats, list)
+                True
+                # Verify all elements are strings
+                all(isinstance(cat, str) for cat in low_cats)
+                True
+                # Verify first low category exists in taxonomy structure
+                top_cat = taxonomy.get_top_categories()[0]
+                mid_cat = taxonomy.get_mid_categories(top_cat)[0]
+                low_cats[0] in taxonomy.get_low_categories(top_cat, mid_cat)
+                True
         """
         top_cats: List[str] = self.get_top_categories()
         low_cats: List[str] = []
@@ -293,16 +304,18 @@ class Taxonomy:
             List[str]: A list of all top-level category names.
 
         Examples:
-            >>> taxonomy = Taxonomy()
-            >>> top_cats = taxonomy.get_top_categories()
-            >>> isinstance(top_cats, list)
-            True
-            >>> # Verify all elements are strings
-            >>> all(isinstance(cat, str) for cat in top_cats)
-            True
-            >>> # Verify returned list matches taxonomy keys
-            >>> top_cats == list(taxonomy._taxonomy.keys())
-            True
+            .. code-block:: python
+
+                taxonomy = Taxonomy()
+                top_cats = taxonomy.get_top_categories()
+                isinstance(top_cats, list)
+                True
+                # Verify all elements are strings
+                all(isinstance(cat, str) for cat in top_cats)
+                True
+                # Verify returned list matches taxonomy keys
+                top_cats == list(taxonomy._taxonomy.keys())
+                True
         """
         return list(self._taxonomy.keys())
 
@@ -319,20 +332,21 @@ class Taxonomy:
             KeyError: If the top_category doesn't exist in the taxonomy.
 
         Examples:
-            >>> taxonomy = Taxonomy()
-            >>> top_cat = taxonomy.get_top_categories()[0]
-            >>> mid_cats = taxonomy.get_mid_categories(top_cat)
-            >>> isinstance(mid_cats, list)
-            True
-            >>> # Verify all elements are strings
-            >>> all(isinstance(cat, str) for cat in mid_cats)
-            True
-            >>> # Verify error handling
-            >>> try:
-            ...     taxonomy.get_mid_categories("nonexistent_category")
-            ... except KeyError:
-            ...     True
-            True
+            .. code-block:: python
+
+                taxonomy = Taxonomy()
+                top_cat = taxonomy.get_top_categories()[0]
+                mid_cats = taxonomy.get_mid_categories(top_cat)
+                isinstance(mid_cats, list)
+                True
+                # Verify all elements are strings
+                all(isinstance(cat, str) for cat in mid_cats)
+                True
+                # Verify error handling
+                try:
+                    taxonomy.get_mid_categories("nonexistent_category")
+                except KeyError:
+                    True
         """
         return list(self._taxonomy[top_category].keys())
 
@@ -350,26 +364,30 @@ class Taxonomy:
             KeyError: If either the top_category or mid_category doesn't exist in the taxonomy.
 
         Examples:
-            >>> taxonomy = Taxonomy()
-            >>> top_cat = taxonomy.get_top_categories()[0]
-            >>> mid_cat = taxonomy.get_mid_categories(top_cat)[0]
-            >>> low_cats = taxonomy.get_low_categories(top_cat, mid_cat)
-            >>> isinstance(low_cats, list)
-            True
-            >>> # Verify all elements are strings
-            >>> all(isinstance(cat, str) for cat in low_cats)
-            True
-            >>> # Verify error handling for invalid categories
-            >>> try:
-            ...     taxonomy.get_low_categories("nonexistent", "category")
-            ... except KeyError:
-            ...     True
-            True
+            .. code-block:: python
+
+                taxonomy = Taxonomy()
+                top_cat = taxonomy.get_top_categories()[0]
+                mid_cat = taxonomy.get_mid_categories(top_cat)[0]
+                low_cats = taxonomy.get_low_categories(top_cat, mid_cat)
+                isinstance(low_cats, list)
+                True
+                # Verify all elements are strings
+                all(isinstance(cat, str) for cat in low_cats)
+                True
+                # Verify error handling for invalid categories
+                try:
+                    taxonomy.get_low_categories("nonexistent", "category")
+                except KeyError:
+                    True
         """
         return self._taxonomy[top_category][mid_category]
 
     def get_top_cat_for_mid_cat(self, mid_cat: str) -> str:
         """Finds the top-level category that contains a given mid-level category.
+
+        This method searches through the taxonomy structure to find which top-level category
+        contains the given mid-level category name.
 
         Args:
             mid_cat (str): The mid-level category to find the parent for.
@@ -380,47 +398,43 @@ class Taxonomy:
         Raises:
             ValueError: If the mid_cat is not found in any top-level category.
 
-        Examples:
-            >>> taxonomy = Taxonomy()
-            >>> # Get a known mid category and its top category
-            >>> top_cat = taxonomy.get_top_categories()[0]
-            >>> mid_cat = taxonomy.get_mid_categories(top_cat)[0]
-            >>> # Verify we can find the top category
-            >>> found_top = taxonomy.get_top_cat_for_mid_cat(mid_cat)
-            >>> found_top == top_cat
-            True
-            >>> # Verify error handling for invalid mid category
-            >>> try:
-            ...     taxonomy.get_top_cat_for_mid_cat("nonexistent_category")
-            ... except ValueError:
-            ...     True
-            True
+        Example:
+            .. code-block:: python
+                from academic_metrics.utils import Taxonomy
+
+                taxonomy = Taxonomy()
+                # Get a known mid category and its top category
+                top_cat = taxonomy.get_top_categories()[0]
+                mid_cat = taxonomy.get_mid_categories(top_cat)[0]
+
+                # Verify we can find the top category
+                found_top = taxonomy.get_top_cat_for_mid_cat(mid_cat)
+                assert found_top == top_cat
+
+                # Verify error handling for invalid mid category
+                try:
+                    taxonomy.get_top_cat_for_mid_cat("nonexistent_category")
+                except ValueError:
+                    pass  # Expected behavior
         """
         self.logger.info(f"Getting top category for mid category: {mid_cat}")
 
-        top_cat: str = ""
-        found: bool = False
+        for top_cat, mid_cats in self._taxonomy.items():
+            self.logger.info(f"Checking mid category: {mid_cat} in {mid_cats}")
+            if mid_cat in mid_cats:
+                self.logger.info(f"Mid category: {mid_cat} found in {mid_cats}")
+                self.logger.info(
+                    f"Found top category: {top_cat} for mid category: {mid_cat}"
+                )
+                return top_cat
 
-        while not found:
-            self.logger.info(
-                f"Iterating through top_cat, mid_cat key value pairs in taxonomy"
-            )
-            for top_cat, mid_cats in self._taxonomy.items():
-                self.logger.info(f"Checking mid category: {mid_cat} in {mid_cats}")
-                if mid_cat in mid_cats:
-                    self.logger.info(f"Mid category: {mid_cat} found in {mid_cats}")
-                    found: bool = True
-                    break
-            self.logger.info(
-                f"Completed iteration through top_cat, mid_cat key value pairs in taxonomy"
-            )
-            if found:
-                break
-        self.logger.info(f"Found top category: {top_cat} for mid category: {mid_cat}")
-        return top_cat
+        raise ValueError(f"Mid category '{mid_cat}' not found in taxonomy")
 
     def get_mid_cat_for_low_cat(self, low_cat: str) -> str:
         """Finds the mid-level category that contains a given low-level category.
+
+        This method searches through the taxonomy structure to find which mid-level category
+        contains the given low-level category name.
 
         Args:
             low_cat (str): The low-level category to find the parent for.
@@ -432,44 +446,40 @@ class Taxonomy:
             ValueError: If the low_cat is not found in any mid-level category.
 
         Examples:
-            >>> taxonomy = Taxonomy()
-            >>> # Get a known low category and its parent categories
-            >>> top_cat = taxonomy.get_top_categories()[0]
-            >>> mid_cat = taxonomy.get_mid_categories(top_cat)[0]
-            >>> low_cat = taxonomy.get_low_categories(top_cat, mid_cat)[0]
-            >>> # Verify we can find the mid category
-            >>> found_mid = taxonomy.get_mid_cat_for_low_cat(low_cat)
-            >>> found_mid == mid_cat
-            True
-            >>> # Verify error handling for invalid low category
-            >>> try:
-            ...     taxonomy.get_mid_cat_for_low_cat("nonexistent_category")
-            ... except ValueError:
-            ...     True
-            True
+            .. code-block:: python
+
+                from academic_metrics.utils import Taxonomy
+
+                taxonomy = Taxonomy()
+                # Get a known low category and its parent categories
+                top_cat = taxonomy.get_top_categories()[0]
+                mid_cat = taxonomy.get_mid_categories(top_cat)[0]
+                low_cat = taxonomy.get_low_categories(top_cat, mid_cat)[0]
+
+                # Verify we can find the mid category
+                found_mid = taxonomy.get_mid_cat_for_low_cat(low_cat)
+                assert found_mid == mid_cat
+
+                # Verify error handling for invalid low category
+                try:
+                    taxonomy.get_mid_cat_for_low_cat("nonexistent_category")
+                except ValueError:
+                    pass  # Expected behavior
         """
         self.logger.info(f"Getting mid category for low category: {low_cat}")
 
-        mid_cat: str = ""
-        found: bool = False
-        while not found:
-            self.logger.info(
-                f"Iterating through top_cat, mid_cat, low_cat key value pairs in taxonomy"
-            )
-            for top_cat, mid_cats in self._taxonomy.items():
-                for mid_cat, low_cats in mid_cats.items():
-                    self.logger.info(f"Checking low category: {low_cat} in {low_cats}")
-                    if low_cat in low_cats:
-                        self.logger.info(f"Low category: {low_cat} found in {low_cats}")
-                        found: bool = True
-                        break
-            self.logger.info(
-                f"Completed iteration through top_cat, mid_cat, low_cat key value pairs in taxonomy"
-            )
-            if found:
-                break
-        self.logger.info(f"Found mid category: {mid_cat} for low category: {low_cat}")
-        return mid_cat
+        for _, mid_cats in self._taxonomy.items():
+            for mid_cat, low_cats in mid_cats.items():
+                self.logger.info(f"Checking low category: {low_cat} in {low_cats}")
+                if low_cat in low_cats:
+                    self.logger.info(f"Low category: {low_cat} found in {low_cats}")
+                    self.logger.info(
+                        f"Found mid category: {mid_cat} for low category: {low_cat}"
+                    )
+                    return mid_cat
+
+        # If we complete the loop without finding a match
+        raise ValueError(f"Low category '{low_cat}' not found in taxonomy")
 
     def is_valid_category(self, category: str, level: TaxonomyLevel) -> bool:
         """Validates whether a category exists in the taxonomy at the specified level.
@@ -486,34 +496,35 @@ class Taxonomy:
             ValueError: If the provided taxonomy level is invalid.
 
         Examples:
-            >>> taxonomy = Taxonomy()
-            >>> # Get known categories at each level
-            >>> top_cat = taxonomy.get_top_categories()[0]
-            >>> mid_cat = taxonomy.get_mid_categories(top_cat)[0]
-            >>> low_cat = taxonomy.get_low_categories(top_cat, mid_cat)[0]
+            .. code-block:: python
 
-            >>> # Test valid categories at each level
-            >>> taxonomy.is_valid_category(top_cat, "top")
-            True
-            >>> taxonomy.is_valid_category(mid_cat, "mid")
-            True
-            >>> taxonomy.is_valid_category(low_cat, "low")
-            True
+                taxonomy = Taxonomy()
+                # Get known categories at each level
+                top_cat = taxonomy.get_top_categories()[0]
+                mid_cat = taxonomy.get_mid_categories(top_cat)[0]
+                low_cat = taxonomy.get_low_categories(top_cat, mid_cat)[0]
 
-            >>> # Test invalid categories
-            >>> taxonomy.is_valid_category("nonexistent_category", "top")
-            False
+                # Test valid categories at each level
+                taxonomy.is_valid_category(top_cat, "top")
+                True
+                taxonomy.is_valid_category(mid_cat, "mid")
+                True
+                taxonomy.is_valid_category(low_cat, "low")
+                True
 
-            >>> # Test category at wrong level
-            >>> taxonomy.is_valid_category(top_cat, "low")
-            False
+                # Test invalid categories
+                taxonomy.is_valid_category("nonexistent_category", "top")
+                False
 
-            >>> # Test invalid level
-            >>> try:
-            ...     taxonomy.is_valid_category(top_cat, "invalid_level")  # type: ignore
-            ... except ValueError:
-            ...     True
-            True
+                # Test category at wrong level
+                taxonomy.is_valid_category(top_cat, "low")
+                False
+
+                # Test invalid level
+                try:
+                    taxonomy.is_valid_category(top_cat, "invalid_level")  # type: ignore
+                except ValueError:
+                    True
         """
         if level not in self._valid_levels:
             raise ValueError(
@@ -541,17 +552,19 @@ class Taxonomy:
                 }
 
         Examples:
-            >>> taxonomy = Taxonomy()
-            >>> tax_dict = taxonomy.get_taxonomy()
-            >>> isinstance(tax_dict, dict)
-            True
-            >>> # Verify structure
-            >>> top_cat = list(tax_dict.keys())[0]
-            >>> isinstance(tax_dict[top_cat], dict)
-            True
-            >>> mid_cat = list(tax_dict[top_cat].keys())[0]
-            >>> isinstance(tax_dict[top_cat][mid_cat], list)
-            True
+            .. code-block:: python
+
+                taxonomy = Taxonomy()
+                tax_dict = taxonomy.get_taxonomy()
+                isinstance(tax_dict, dict)
+                True
+                # Verify structure
+                top_cat = list(tax_dict.keys())[0]
+                isinstance(tax_dict[top_cat], dict)
+                True
+                mid_cat = list(tax_dict[top_cat].keys())[0]
+                isinstance(tax_dict[top_cat][mid_cat], list)
+                True
         """
         return self._taxonomy
 
@@ -573,20 +586,21 @@ class Taxonomy:
             json.JSONDecodeError: If the taxonomy string is not valid JSON.
 
         Examples:
-            >>> # Create a simple valid taxonomy string
-            >>> tax_str = '{"top": {"mid": ["low1", "low2"]}}'
-            >>> taxonomy = Taxonomy._load_taxonomy_from_string(tax_str)
-            >>> isinstance(taxonomy, dict)
-            True
-            >>> # Verify structure
-            >>> list(taxonomy.keys()) == ["top"]
-            True
-            >>> # Test invalid JSON
-            >>> try:
-            ...     Taxonomy._load_taxonomy_from_string("{invalid json}")
-            ... except json.JSONDecodeError:
-            ...     True
-            True
+            .. code-block:: python
+
+                # Create a simple valid taxonomy string
+                tax_str = '{"top": {"mid": ["low1", "low2"]}}'
+                taxonomy = Taxonomy._load_taxonomy_from_string(tax_str)
+                isinstance(taxonomy, dict)
+                True
+                # Verify structure
+                list(taxonomy.keys()) == ["top"]
+                True
+                # Test invalid JSON
+                try:
+                    Taxonomy._load_taxonomy_from_string("{invalid json}")
+                except json.JSONDecodeError:
+                    True
         """
         if logger is not None:
             logger.info("Loading taxonomy from string")

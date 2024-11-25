@@ -7,7 +7,7 @@ Submodules
 other.in\_memory\_taxonomy module
 ---------------------------------
 
-.. automodule:: other.in_memory_taxonomy
+.. automodule:: academic_metrics.other.in_memory_taxonomy
    :members:
    :no-index:
    :undoc-members:
@@ -16,7 +16,7 @@ other.in\_memory\_taxonomy module
 Module contents
 ---------------
 
-.. automodule:: other
+.. automodule:: academic_metrics.other
    :members:
    :undoc-members:
    :show-inheritance:

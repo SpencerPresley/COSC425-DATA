@@ -5,9 +5,9 @@ Submodules
 ----------
 
 AI.AbstractClassifier module
-----------------------------
+----------------------------------------------
 
-.. automodule:: AI.AbstractClassifier
+.. automodule:: academic_metrics.AI.AbstractClassifier
    :members:
    :no-index:
    :undoc-members:
@@ -16,7 +16,7 @@ AI.AbstractClassifier module
 Module contents
 ---------------
 
-.. automodule:: AI
+.. automodule:: academic_metrics.AI
    :members:
    :undoc-members:
    :show-inheritance:
