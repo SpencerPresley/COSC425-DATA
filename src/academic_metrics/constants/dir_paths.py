@@ -2,7 +2,7 @@ from pathlib import Path
 from typing import Optional, cast
 
 
-def find_project_root(marker: str = "COSC425-DATA") -> Path:
+def locate_academic_metrics_root(marker: str = "COSC425-DATA") -> Path:
     """Find the repository root directory."""
     current = Path(__file__).resolve()
     while current.parent != current:
@@ -15,10 +15,10 @@ def find_project_root(marker: str = "COSC425-DATA") -> Path:
     )
 
 
-def find_src_root(repo_root: Path = None) -> Path:
+def locate_src_root(repo_root: Path = None) -> Path:
     """Find the source code root directory (PythonCode)."""
     if cast(Optional[Path], repo_root) is None:
-        repo_root = find_project_root()
+        repo_root = locate_academic_metrics_root()
     src_dir = repo_root / "src"
     if not src_dir.exists():
         raise FileNotFoundError(
@@ -28,8 +28,8 @@ def find_src_root(repo_root: Path = None) -> Path:
     return src_dir
 
 
-_PROJECT_ROOT = find_project_root()
-_SRC_ROOT = find_src_root()
+_PROJECT_ROOT = locate_academic_metrics_root()
+_SRC_ROOT = locate_src_root()
 _ACADEMIC_METRICS_ROOT = _PROJECT_ROOT / "academic_metrics"
 _DATA_ROOT = _SRC_ROOT / "data"
 _DATA_CORE_ROOT = _DATA_ROOT / "core"
