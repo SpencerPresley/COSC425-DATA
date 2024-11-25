@@ -3,7 +3,7 @@ from typing import Dict, Any, cast
 import warnings
 import os
 
-from academic_metrics.constants import LOG_DIR_PATH
+from academic_metrics.constants import LOG_DIR_PATH, EXECUTE
 
 
 class ColorFormatter(logging.Formatter):
@@ -85,23 +85,25 @@ VALID_LOG_LEVELS = {DEBUG, INFO, WARNING, ERROR, CRITICAL}
 # any calls to configure_logging() or set_log_to_console()
 _config_logger = logging.getLogger(__name__)
 _config_logger.setLevel(LOG_LEVEL)
-_config_log_file_path = LOG_DIR_PATH / "config.log"
-_file_handler = logging.FileHandler(_config_log_file_path)
-_file_handler.setLevel(LOG_LEVEL)
-_config_file_formatter = logging.Formatter(
-    "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-)
-_config_color_formatter = ColorFormatter(
-    "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-)
-_file_handler.setFormatter(_config_file_formatter)
-_config_logger.addHandler(_file_handler)
 
-if LOG_TO_CONSOLE:
-    _console_handler = logging.StreamHandler()
-    _console_handler.setLevel(LOG_LEVEL)
-    _console_handler.setFormatter(_config_color_formatter)
-    _config_logger.addHandler(_console_handler)
+if EXECUTE:
+    _config_log_file_path = LOG_DIR_PATH / "config.log"
+    _file_handler = logging.FileHandler(_config_log_file_path)
+    _file_handler.setLevel(LOG_LEVEL)
+    _config_file_formatter = logging.Formatter(
+        "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    )
+    _config_color_formatter = ColorFormatter(
+        "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    )
+    _file_handler.setFormatter(_config_file_formatter)
+    _config_logger.addHandler(_file_handler)
+
+    if LOG_TO_CONSOLE:
+        _console_handler = logging.StreamHandler()
+        _console_handler.setLevel(LOG_LEVEL)
+        _console_handler.setFormatter(_config_color_formatter)
+        _config_logger.addHandler(_console_handler)
 
 
 def set_log_to_console(value: bool) -> None:
