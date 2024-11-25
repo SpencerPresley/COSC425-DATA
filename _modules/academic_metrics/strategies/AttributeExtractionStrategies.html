@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>academic_metrics.strategies.AttributeExtractionStrategies &#8212; Academic Metrics 0.1.0-beta documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/basic_mod.css?v=9b2032db" />
+    <script src="../../../_static/documentation_options.js?v=c903bf51"></script>
+    <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <script src="../../../_static/js/petite-vue.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+  </head><body data-dark_mode_code_blocks="true">
+
+<div id="top_nav">
+    
+
+    <nav>
+        
+            
+        
+
+        <p id="toggle_sidebar">
+            <a href="#" title="Toggle sidebar">|||</a>
+        </p>
+        <h1><a href="../../../index.html" title="Go to homepage">Academic Metrics 0.1.0-beta documentation</a></h1>
+
+        <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
+    <template v-if="mode == 'light'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_light"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M67.48,18.073c1.913,-1.912 1.913,-5.018 0,-6.931c-1.912,-1.912 -5.018,-1.912 -6.931,0l-6.798,6.799c-1.912,1.912 -1.912,5.018 0,6.931c1.913,1.912 5.018,1.912 6.931,-0l6.798,-6.799Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.728,61.108c1.912,-1.913 1.912,-5.018 -0,-6.931c-1.913,-1.913 -5.019,-1.913 -6.931,-0l-6.799,6.798c-1.912,1.913 -1.912,5.019 0,6.931c1.913,1.913 5.019,1.913 6.931,0l6.799,-6.798Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.682,54.177c-1.913,-1.913 -5.018,-1.913 -6.931,-0c-1.912,1.913 -1.912,5.018 0,6.931l6.798,6.798c1.913,1.913 5.019,1.913 6.931,0c1.913,-1.912 1.913,-5.018 0,-6.931l-6.798,-6.798Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M4.901,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,-0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M18.929,11.142c-1.912,-1.912 -5.018,-1.912 -6.931,0c-1.912,1.913 -1.912,5.019 0,6.931l6.799,6.799c1.912,1.912 5.018,1.912 6.931,-0c1.912,-1.913 1.912,-5.019 -0,-6.931l-6.799,-6.799Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.108,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c-0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c-0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'dark'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_dark"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.901,2.196 -4.901,4.901c0,2.705 2.197,4.901 4.901,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.662,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.989,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.732,61.103c1.91,-1.91 1.91,-5.011 0,-6.921l-0.009,-0.01c-1.91,-1.91 -5.012,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.909,1.91 5.011,1.91 6.92,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.672,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.52,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l-0,-0.01c-0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.901,2.196 -4.901,4.901c0,2.704 2.197,4.9 4.901,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.73,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 -0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.098,34.623c-2.699,0 -4.891,2.192 -4.891,4.892l-0,0.019c-0,2.699 2.192,4.891 4.891,4.891c2.7,0 4.892,-2.192 4.892,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.892,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'darkest'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_darkest"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><path d="M39.315,23.791c8.684,-0 15.734,7.05 15.734,15.733c0,8.684 -7.05,15.734 -15.734,15.734c-8.683,0 -15.733,-7.05 -15.733,-15.734c-0,-8.683 7.05,-15.733 15.733,-15.733Zm0,4.737c6.069,0 10.997,4.927 10.997,10.996c-0,6.069 -4.928,10.996 -10.997,10.996c-6.068,0 -10.996,-4.927 -10.996,-10.996c0,-6.069 4.928,-10.996 10.996,-10.996Z" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.216,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.9,2.196 -4.9,4.901c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.666,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.99,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.737,61.103c1.909,-1.91 1.909,-5.011 -0,-6.921l-0.01,-0.01c-1.91,-1.91 -5.011,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.91,1.91 5.011,1.91 6.921,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.676,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.524,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l0,-0.01c0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.216,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901c-0,2.704 2.196,4.9 4.9,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.734,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.103,34.623c-2.7,0 -4.892,2.192 -4.892,4.892l-0,0.019c-0,2.699 2.192,4.891 4.892,4.891c2.699,0 4.891,-2.192 4.891,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.891,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+</a>
+
+<script>
+(function() {
+    const LOCAL_STORAGE_KEY = 'piccoloThemeMode'
+
+    var initialMode = localStorage.getItem(LOCAL_STORAGE_KEY)
+
+    if (initialMode) {
+        // Make sure the value in local storage is valid
+        if (['light', 'dark', 'darkest'].indexOf(initialMode) == -1) {
+            initialMode = 'light'
+            localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+        }
+    } else {
+        // Check if the client prefers dark mode
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            initialMode = 'dark'
+        } else {
+            initialMode = 'light'
+        }
+        localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+    }
+
+    document.documentElement.dataset.mode = initialMode
+
+    PetiteVue.createApp({
+        'mode': initialMode,
+        handleClick() {
+            let currentMode = this.mode
+
+            if (currentMode == 'light') {
+                this.mode = 'dark'
+            } else if (currentMode == 'dark') {
+                this.mode = 'darkest'
+            } else if (currentMode == 'darkest') {
+                this.mode = 'light'
+            }
+
+            document.documentElement.dataset.mode = this.mode
+            localStorage.setItem(LOCAL_STORAGE_KEY, this.mode)
+
+            console.log(this.mode)
+        }
+    }).mount('#mode_toggle')
+})()
+</script>
+            <p class="mobile_search_link">
+                <a href="../../../search.html" title="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 64" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path d="M14.873 40.009c-2.315-3.943-3.642-8.532-3.642-13.429C11.231 11.91 23.141 0 37.811 0s26.58 11.91 26.58 26.58-11.91 26.58-26.58 26.58a26.44 26.44 0 0 1-14.277-4.161L9.739 62.794a3.12 3.12 0 0 1-4.413 0L.913 58.382c-1.217-1.218-1.217-3.196 0-4.413l13.96-13.96zM37.811 8.054c10.225 0 18.526 8.301 18.526 18.526s-8.301 18.526-18.526 18.526-18.526-8.301-18.526-18.526S27.586 8.054 37.811 8.054z" fill="#fff" />
+                    </svg>
+                </a>
+            </p>
+        
+
+        <div class="searchbox_wrapper">
+            
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../abstract_classifier.html">Abstract Classifier Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../category_processor.html">Category Processor Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../faculty_set_postprocessor.html">Faculty Set Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../config.html">Global Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../chain_builder.html">Chain Builder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ai_prompts.html">ai_prompts package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../data_collection.html">data_collection package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../dataclass_models.html">dataclass_models package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../DB.html">DB package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../enums.html">enums package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../factories.html">factories package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../orchestrators.html">orchestrators package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../other.html">other package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../runners.html">runners package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../strategies.html">strategies package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../utils.html">utils package</a></li>
+</ul>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for academic_metrics.strategies.AttributeExtractionStrategies</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">annotations</span>
+
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">uuid</span>
+<span class="kn">from</span> <span class="nn">abc</span> <span class="kn">import</span> <span class="n">ABC</span><span class="p">,</span> <span class="n">abstractmethod</span>
+<span class="kn">from</span> <span class="nn">html</span> <span class="kn">import</span> <span class="n">unescape</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Any</span><span class="p">,</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">List</span>
+
+<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+
+<span class="kn">from</span> <span class="nn">academic_metrics.configs</span> <span class="kn">import</span> <span class="p">(</span>
+    <span class="n">configure_logging</span><span class="p">,</span>
+    <span class="n">DEBUG</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="kn">from</span> <span class="nn">academic_metrics.enums</span> <span class="kn">import</span> <span class="n">AttributeTypes</span>
+<span class="kn">from</span> <span class="nn">academic_metrics.utils</span> <span class="kn">import</span> <span class="n">WarningManager</span>
+
+<span class="kn">from</span> <span class="nn">academic_metrics.factories</span> <span class="kn">import</span> <span class="n">StrategyFactory</span>
+
+
+<div class="viewcode-block" id="AttributeExtractionStrategy">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy">[docs]</a>
+<span class="k">class</span> <span class="nc">AttributeExtractionStrategy</span><span class="p">(</span><span class="n">ABC</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Abstract base class for attribute extraction strategies.</span>
+
+<span class="sd">    This class provides a framework for extracting various attributes from academic publication data.</span>
+<span class="sd">    It defines common methods and properties that all specific extraction strategies should implement or utilize.</span>
+
+<span class="sd">    It implements the Strategy pattern, allowing for flexible implementation of different extraction methods for different types of attributes or data sources. See more on the Strategy pattern here: https://en.wikipedia.org/wiki/Strategy_pattern</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">        logger (logging.Logger): Logger for recording extraction-related events.</span>
+<span class="sd">        abstract_pattern (re.Pattern): Regular expression pattern for extracting abstracts.</span>
+<span class="sd">        missing_abstracts_file (str): File path for storing information about missing abstracts.</span>
+<span class="sd">        warning_manager (WarningManager): Manages and logs warnings during extraction.</span>
+<span class="sd">        unknown_authors_dict (dict): Stores information about unidentified authors.</span>
+<span class="sd">        unknown_authors_file (str): File path for storing information about unknown authors.</span>
+<span class="sd">        crossref_author_key (str): Key used to access author information in Crossref data.</span>
+
+<span class="sd">    Methods:</span>
+<span class="sd">        extract_attribute: Abstract method to be implemented by subclasses for specific attribute extraction.</span>
+<span class="sd">        html_to_markdown: Converts HTML content to Markdown format.</span>
+<span class="sd">        get_crossref_author_affils: Retrieves author affiliations from Crossref data.</span>
+<span class="sd">        get_author_obj: Extracts author information from Crossref JSON data.</span>
+<span class="sd">        set_author_sequence_dict: Organizes author information into a structured dictionary.</span>
+<span class="sd">        write_missing_authors_file: Writes information about unknown authors to a file.</span>
+<span class="sd">        create_author_sequence_dict: Creates a template dictionary for author sequence information.</span>
+<span class="sd">        create_unknown_authors_dict: Creates a template dictionary for unknown authors.</span>
+<span class="sd">        log_extraction_warning: Logs warnings encountered during attribute extraction.</span>
+<span class="sd">        generate_error_id: Generates a unique identifier for error tracking.</span>
+<span class="sd">        get_authors_as_list: Converts the author sequence dictionary to a list of author names.</span>
+
+<span class="sd">    Design:</span>
+<span class="sd">        This class is designed as an abstract base class, providing a common interface and shared functionality</span>
+<span class="sd">        for various attribute extraction strategies. It uses the Strategy pattern, allowing for flexible</span>
+<span class="sd">        implementation of different extraction methods for different types of attributes or data sources.</span>
+
+<span class="sd">    Summary:</span>
+<span class="sd">        The AttributeExtractionStrategy class serves as a foundation for creating specific attribute extraction</span>
+<span class="sd">        strategies in an academic publication data processing system. It provides utility methods for handling</span>
+<span class="sd">        common tasks such as HTML parsing, author information processing, and error logging, while defining</span>
+<span class="sd">        an interface for implementing specific extraction logic in subclasses.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">warning_manager</span><span class="p">:</span> <span class="n">WarningManager</span><span class="p">,</span>
+        <span class="n">missing_abstracts_file</span><span class="o">=</span><span class="s2">&quot;missing_abstracts.txt&quot;</span><span class="p">,</span>
+    <span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Initializes the AttributeExtractionStrategy with necessary components and configurations.</span>
+
+<span class="sd">        This constructor sets up the basic infrastructure needed for attribute extraction,</span>
+<span class="sd">        including logging, file paths for storing missing data, and utilities for managing</span>
+<span class="sd">        warnings and unknown author information.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            warning_manager (WarningManager): An instance of WarningManager for handling and logging warnings</span>
+<span class="sd">                                              encountered during the extraction process.</span>
+<span class="sd">            missing_abstracts_file (str, optional): The file path where information about missing abstracts</span>
+<span class="sd">                                                    will be stored. Defaults to &quot;missing_abstracts.txt&quot;.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            None</span>
+
+<span class="sd">        Design:</span>
+<span class="sd">            The constructor initializes various attributes of the class, setting up the logger,</span>
+<span class="sd">            compiling regular expressions, and preparing data structures for handling unknown</span>
+<span class="sd">            authors and missing abstracts. It&#39;s designed to provide a consistent starting point</span>
+<span class="sd">            for all subclasses of AttributeExtractionStrategy.</span>
+
+<span class="sd">        Summary:</span>
+<span class="sd">            This method prepares an instance of AttributeExtractionStrategy (or its subclass)</span>
+<span class="sd">            for operation by setting up necessary tools and configurations for attribute extraction.</span>
+<span class="sd">            It ensures that each strategy has access to logging, warning management, and file storage</span>
+<span class="sd">            for handling edge cases and errors in the extraction process.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span> <span class="o">=</span> <span class="n">configure_logging</span><span class="p">(</span>
+            <span class="n">module_name</span><span class="o">=</span><span class="vm">__name__</span><span class="p">,</span>
+            <span class="n">log_file_name</span><span class="o">=</span><span class="s2">&quot;attribute_extraction_strategies&quot;</span><span class="p">,</span>
+            <span class="n">log_level</span><span class="o">=</span><span class="n">DEBUG</span><span class="p">,</span>
+        <span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">abstract_pattern</span><span class="p">:</span> <span class="n">re</span><span class="o">.</span><span class="n">Pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;AB\s(.+?)(?=\nC1)&quot;</span><span class="p">,</span> <span class="n">re</span><span class="o">.</span><span class="n">DOTALL</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">missing_abstracts_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">missing_abstracts_file</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">warning_manager</span><span class="p">:</span> <span class="n">WarningManager</span> <span class="o">=</span> <span class="n">warning_manager</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">unknown_authors_dict</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_unknown_authors_dict</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">unknown_authors_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;crossref_unknown_authors.json&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">crossref_author_key</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;author&quot;</span>
+
+<div class="viewcode-block" id="AttributeExtractionStrategy.extract_attribute">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.extract_attribute">[docs]</a>
+    <span class="nd">@abstractmethod</span>
+    <span class="k">def</span> <span class="nf">extract_attribute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">entry_text</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Abstract method to extract a specific attribute from the entry text.</span>
+
+<span class="sd">        This method should be implemented by subclasses to define the specific</span>
+<span class="sd">        extraction logic for each attribute type.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            entry_text: The text or data from which to extract the attribute.</span>
+<span class="sd">            entry_text applies to both WoS and Crossref data.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            The extracted attribute value.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            NotImplementedError: If the method is not implemented in a subclass.</span>
+
+<span class="sd">        Design:</span>
+<span class="sd">            This abstract method enforces a common interface for all attribute</span>
+<span class="sd">            extraction strategies, allowing for polymorphic use of different</span>
+<span class="sd">            strategies.</span>
+
+<span class="sd">        Summary:</span>
+<span class="sd">            Defines the contract for attribute extraction methods in subclasses.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;This method must be implemented in a subclass&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="AttributeExtractionStrategy.html_to_markdown">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.html_to_markdown">[docs]</a>
+    <span class="k">def</span> <span class="nf">html_to_markdown</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">html_content</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Converts HTML content to Markdown format.</span>
+
+<span class="sd">        This method takes HTML content, particularly JATS XML, and converts it</span>
+<span class="sd">        to a simplified Markdown format.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            html_content (str): The HTML content to be converted.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            str: The converted content in Markdown format.</span>
+
+<span class="sd">        Design:</span>
+<span class="sd">            Uses BeautifulSoup for parsing HTML and custom logic to generate Markdown.</span>
+<span class="sd">            Handles both sectioned and non-sectioned content.</span>
+
+<span class="sd">        Summary:</span>
+<span class="sd">            Transforms complex HTML/XML content into more readable Markdown format.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># Use BeautifulSoup to parse the HTML content</span>
+        <span class="n">soup</span><span class="p">:</span> <span class="n">BeautifulSoup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">html_content</span><span class="p">,</span> <span class="s2">&quot;lxml&quot;</span><span class="p">)</span>
+
+        <span class="n">markdown_content</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+
+        <span class="c1"># Check if there are any &lt;jats:sec&gt; sections</span>
+        <span class="n">sections</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">BeautifulSoup</span><span class="p">]</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">([</span><span class="s2">&quot;jats:sec&quot;</span><span class="p">,</span> <span class="s2">&quot;section&quot;</span><span class="p">])</span>
+        <span class="k">if</span> <span class="n">sections</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">section</span> <span class="ow">in</span> <span class="n">sections</span><span class="p">:</span>
+                <span class="n">title</span> <span class="o">=</span> <span class="n">section</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;jats:title&quot;</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">title</span><span class="p">:</span>
+                    <span class="n">string</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;## </span><span class="si">{</span><span class="n">title</span><span class="o">.</span><span class="n">get_text</span><span class="p">(</span><span class="n">strip</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="si">}</span><span class="s2">:&quot;</span>
+                    <span class="k">if</span> <span class="n">title</span><span class="o">.</span><span class="n">get_text</span><span class="p">(</span><span class="n">strip</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;:&quot;</span><span class="p">):</span>
+                        <span class="n">string</span> <span class="o">=</span> <span class="n">string</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+                    <span class="n">markdown_content</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>
+
+                <span class="n">paragraphs</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">BeautifulSoup</span><span class="p">]</span> <span class="o">=</span> <span class="n">section</span><span class="o">.</span><span class="n">find_all</span><span class="p">([</span><span class="s2">&quot;jats:p&quot;</span><span class="p">,</span> <span class="s2">&quot;p&quot;</span><span class="p">])</span>
+                <span class="k">for</span> <span class="n">paragraph</span> <span class="ow">in</span> <span class="n">paragraphs</span><span class="p">:</span>
+                    <span class="n">markdown_content</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">paragraph</span><span class="o">.</span><span class="n">get_text</span><span class="p">(</span><span class="n">strip</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="c1"># If no sections, combine all paragraphs</span>
+            <span class="n">paragraphs</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">BeautifulSoup</span><span class="p">]</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">([</span><span class="s2">&quot;jats:p&quot;</span><span class="p">,</span> <span class="s2">&quot;p&quot;</span><span class="p">])</span>
+            <span class="k">for</span> <span class="n">paragraph</span> <span class="ow">in</span> <span class="n">paragraphs</span><span class="p">:</span>
+                <span class="n">markdown_content</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">paragraph</span><span class="o">.</span><span class="n">get_text</span><span class="p">(</span><span class="n">strip</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">markdown_content</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="AttributeExtractionStrategy.get_crossref_author_affils">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.get_crossref_author_affils">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_crossref_author_affils</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">author_item</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Retrieves author affiliations from Crossref data.</span>
+
+<span class="sd">        This method extracts the affiliation information for an author</span>
+<span class="sd">        from the Crossref author data structure.</span>
+
+<span class="sd">        It is designed to be used with Crossref data, not WoS data. It is NOT compatible with WoS data.</span>
+
+<span class="sd">        This is implemented in the base class as it is used by more than a single subclass such as CrossrefAuthorExtractionStrategy and CrossrefDepartmentExtractionStrategy.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            author_item (dict): A dictionary containing author information from Crossref.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            list[str]: A list of affiliation names for the author.</span>
+
+<span class="sd">        Design:</span>
+<span class="sd">            Directly accesses the &#39;affiliation&#39; key in the author dictionary.</span>
+<span class="sd">            Extracts the &#39;name&#39; field from each affiliation entry.</span>
+
+<span class="sd">        Summary:</span>
+<span class="sd">            Extracts and returns a list of affiliation names for a given author.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">raw_affils</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="n">author_item</span><span class="p">[</span><span class="s2">&quot;affiliation&quot;</span><span class="p">]</span>
+        <span class="n">affils</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">affil</span> <span class="ow">in</span> <span class="n">raw_affils</span><span class="p">:</span>
+            <span class="n">affils</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">affil</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">])</span>
+        <span class="k">return</span> <span class="n">affils</span></div>
+
+
+<div class="viewcode-block" id="AttributeExtractionStrategy.get_author_obj">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.get_author_obj">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_author_obj</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">crossref_json</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">dict</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Extracts the author object from Crossref JSON data.</span>
+
+<span class="sd">        This method retrieves the author information from the Crossref JSON structure.</span>
+<span class="sd">        It is designed to be used with Crossref data, not WoS data.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            crossref_json (dict): The Crossref JSON data containing author information.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            list[dict]: A list of dictionaries, each containing information about an author.</span>
+
+<span class="sd">        Design:</span>
+<span class="sd">            Uses the class attribute &#39;crossref_author_key&#39; to access author information.</span>
+
+<span class="sd">        Summary:</span>
+<span class="sd">            Extracts and returns the author object from Crossref JSON data.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">authors</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">dict</span><span class="p">]</span> <span class="o">=</span> <span class="n">crossref_json</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">crossref_author_key</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">authors</span></div>
+
+
+    <span class="k">def</span> <span class="nf">write_missing_authors_file</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">unknown_authors</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Writes information about unknown authors to a file.</span>
+
+<span class="sd">        This method saves the information about authors that couldn&#39;t be properly</span>
+<span class="sd">        processed to a JSON file for later analysis.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            unknown_authors (dict): A dictionary containing information about unknown authors.</span>
+<span class="sd">            unknown_authors_file (str): The file path where the information will be saved.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            None</span>
+
+<span class="sd">        Design:</span>
+<span class="sd">            Uses JSON format to store the unknown authors information.</span>
+
+<span class="sd">        Summary:</span>
+<span class="sd">            Saves information about unknown or problematic authors to a file.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">missing_authors_file</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">unknown_authors_file</span><span class="p">:</span>
+            <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">unknown_authors</span><span class="p">,</span> <span class="n">unknown_authors_file</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+
+<div class="viewcode-block" id="AttributeExtractionStrategy.create_author_sequence_dict">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.create_author_sequence_dict">[docs]</a>
+    <span class="k">def</span> <span class="nf">create_author_sequence_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Creates a template dictionary for author sequence information.</span>
+
+<span class="sd">        This method initializes a dictionary structure to store information</span>
+<span class="sd">        about the first author and additional authors.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            dict: A dictionary with keys for &#39;first&#39; author and &#39;additional&#39; authors.</span>
+
+<span class="sd">        Design:</span>
+<span class="sd">            Provides a consistent structure for storing author information.</span>
+
+<span class="sd">        Summary:</span>
+<span class="sd">            Creates and returns a template dictionary for organizing author information.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;first&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;author_name&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;affiliations&quot;</span><span class="p">:</span> <span class="p">[]},</span> <span class="s2">&quot;additional&quot;</span><span class="p">:</span> <span class="p">[]}</span></div>
+
+
+<div class="viewcode-block" id="AttributeExtractionStrategy.create_unknown_authors_dict">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.create_unknown_authors_dict">[docs]</a>
+    <span class="k">def</span> <span class="nf">create_unknown_authors_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Creates a template dictionary for unknown authors.</span>
+
+<span class="sd">        This method initializes a dictionary to store information about</span>
+<span class="sd">        authors that couldn&#39;t be properly processed.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            dict: A dictionary with a key for &#39;unknown_authors&#39;.</span>
+
+<span class="sd">        Design:</span>
+<span class="sd">            Provides a consistent structure for storing information about problematic authors.</span>
+
+<span class="sd">        Summary:</span>
+<span class="sd">            Creates and returns a template dictionary for tracking unknown authors.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;unknown_authors&quot;</span><span class="p">:</span> <span class="p">[]}</span></div>
+
+
+<div class="viewcode-block" id="AttributeExtractionStrategy.log_extraction_warning">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.log_extraction_warning">[docs]</a>
+    <span class="k">def</span> <span class="nf">log_extraction_warning</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">attribute_class_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">warning_message</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">entry_id</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">line_prefix</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Logs warnings encountered during attribute extraction.</span>
+
+<span class="sd">        This method creates a standardized log message for extraction warnings</span>
+<span class="sd">        and can optionally include specific entry information.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            attribute_class_name (str): The name of the attribute class where the warning occurred.</span>
+<span class="sd">            warning_message (str): The specific warning message.</span>
+<span class="sd">            entry_id (str, optional): An identifier for the entry causing the warning.</span>
+<span class="sd">            line_prefix (str, optional): A prefix to identify specific lines in the entry.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            None</span>
+
+<span class="sd">        Design:</span>
+<span class="sd">            Generates a unique error ID for each warning.</span>
+<span class="sd">            Commented-out code shows potential for more detailed logging.</span>
+
+<span class="sd">        Summary:</span>
+<span class="sd">            Creates and logs a standardized warning message for attribute extraction issues.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">log_message</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Failed to extract </span><span class="si">{</span><span class="n">attribute_class_name</span><span class="si">}</span><span class="s2">. Error ID: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">generate_error_id</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="n">log_message</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">warning_manager</span><span class="o">.</span><span class="n">log_warning</span><span class="p">(</span><span class="n">attribute_class_name</span><span class="p">,</span> <span class="n">log_message</span><span class="p">,</span> <span class="n">entry_id</span><span class="p">)</span></div>
+
+
+        <span class="c1"># * Commented out code is potential for more detailed logging.</span>
+        <span class="c1"># if type(entry_id) == str:</span>
+        <span class="c1">#     for line in entry_id.splitlines():</span>
+        <span class="c1">#         if line.startswith(line_prefix):</span>
+        <span class="c1">#             log_message += f&quot; - Line: {line}&quot;</span>
+        <span class="c1"># else:</span>
+        <span class="c1">#     log_message += f&quot; - Entry ID: {entry_id[:25]}&quot;</span>
+        <span class="c1"># log_message += f&quot; - {warning_message}&quot;</span>
+        <span class="c1"># self.logger.warning(log_message)</span>
+        <span class="c1"># self.warning_manager.log_warning(attribute_class_name, log_message, entry_id)</span>
+
+<div class="viewcode-block" id="AttributeExtractionStrategy.generate_error_id">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.generate_error_id">[docs]</a>
+    <span class="k">def</span> <span class="nf">generate_error_id</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Generates a unique identifier for error tracking.</span>
+
+<span class="sd">        This method creates a UUID to uniquely identify each error or warning instance.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            str: A unique UUID string.</span>
+
+<span class="sd">        Design:</span>
+<span class="sd">            Uses Python&#39;s uuid module to generate a version 4 UUID.</span>
+
+<span class="sd">        Summary:</span>
+<span class="sd">            Generates and returns a unique identifier string for error tracking purposes.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">())</span></div>
+
+
+<div class="viewcode-block" id="AttributeExtractionStrategy.write_missing_authors_file">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.write_missing_authors_file">[docs]</a>
+    <span class="k">def</span> <span class="nf">write_missing_authors_file</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">unknown_authors</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span> <span class="n">unknown_authors_file</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Converts the author sequence dictionary to a list of author names.</span>
+
+<span class="sd">        This method extracts author names from the structured author sequence dictionary</span>
+<span class="sd">        and returns them as a simple list.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            author_sequence_dict (dict): A dictionary containing structured author information.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            list[str]: A list of author names in the order they appear in the publication.</span>
+
+<span class="sd">        Design:</span>
+<span class="sd">            Handles both the first author and additional authors from the dictionary.</span>
+
+<span class="sd">        Summary:</span>
+<span class="sd">            Extracts and returns a list of author names from the structured author dictionary.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">unknown_authors_file</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">unknown_authors_file</span><span class="p">:</span>
+            <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">unknown_authors</span><span class="p">,</span> <span class="n">unknown_authors_file</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="AttributeExtractionStrategy.set_author_sequence_dict">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.set_author_sequence_dict">[docs]</a>
+    <span class="k">def</span> <span class="nf">set_author_sequence_dict</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">author_items</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">dict</span><span class="p">],</span> <span class="n">author_sequence_dict</span><span class="p">:</span> <span class="nb">dict</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Organizes author information into a structured dictionary.</span>
+
+<span class="sd">        This method processes a list of author items and organizes them into a dictionary</span>
+<span class="sd">        based on their sequence (first author or additional authors).</span>
+<span class="sd">        It is designed to work with Crossref data, not WoS data.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            author_items (list[dict]): A list of dictionaries containing author information.</span>
+<span class="sd">            author_sequence_dict (dict): A dictionary to store the organized author information.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            None</span>
+
+<span class="sd">        Design:</span>
+<span class="sd">            Processes each author item, extracting name and affiliation information.</span>
+<span class="sd">            Handles cases for first author and additional authors separately.</span>
+<span class="sd">            Logs warnings for missing or incomplete author information.</span>
+
+<span class="sd">        Summary:</span>
+<span class="sd">            Organizes author information into a structured dictionary format.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">for</span> <span class="n">author_item</span> <span class="ow">in</span> <span class="n">author_items</span><span class="p">:</span>
+            <span class="n">sequence</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">author_item</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;sequence&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+            <span class="n">author_given_name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">author_item</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;given&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+            <span class="n">author_family_name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">author_item</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;family&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+            <span class="n">author_name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+            <span class="k">if</span> <span class="n">author_given_name</span> <span class="ow">and</span> <span class="n">author_family_name</span><span class="p">:</span>
+                <span class="n">author_name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">author_given_name</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">author_family_name</span><span class="si">}</span><span class="s2">&quot;</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">log_extraction_warning</span><span class="p">(</span>
+                    <span class="n">attribute_class_name</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span>
+                    <span class="n">warning_message</span><span class="o">=</span><span class="s2">&quot;Attribute: &#39;Crossref_Author&#39; was not found in the entry&quot;</span><span class="p">,</span>
+                    <span class="n">entry_id</span><span class="o">=</span><span class="n">author_item</span><span class="p">,</span>
+                <span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">unknown_authors_dict</span><span class="p">[</span><span class="s2">&quot;unknown_authors&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">author_item</span><span class="p">)</span>
+                <span class="k">continue</span>
+
+            <span class="n">author_affiliations</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_crossref_author_affils</span><span class="p">(</span>
+                <span class="n">author_item</span>
+            <span class="p">)</span>
+
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">sequence</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">log_extraction_warning</span><span class="p">(</span>
+                    <span class="n">attribute_class_name</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span>
+                    <span class="n">warning_message</span><span class="o">=</span><span class="s2">&quot;Attribute: &#39;Crossref_Author&#39; was not found in the entry&quot;</span><span class="p">,</span>
+                    <span class="n">entry_id</span><span class="o">=</span><span class="n">author_item</span><span class="p">,</span>
+                <span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">unknown_authors_dict</span><span class="p">[</span><span class="s2">&quot;unknown_authors&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+                    <span class="sa">f</span><span class="s2">&quot;Error ID: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">generate_error_id</span><span class="p">()</span><span class="si">}</span><span class="s2"> - </span><span class="si">{</span><span class="n">author_item</span><span class="si">}</span><span class="s2">&quot;</span>
+                <span class="p">)</span>
+                <span class="k">continue</span>
+
+            <span class="k">if</span> <span class="n">sequence</span> <span class="o">==</span> <span class="s2">&quot;first&quot;</span><span class="p">:</span>
+                <span class="n">author_sequence_dict</span><span class="p">[</span><span class="n">sequence</span><span class="p">][</span><span class="s2">&quot;author_name&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">author_name</span>
+                <span class="k">for</span> <span class="n">affiliation</span> <span class="ow">in</span> <span class="n">author_affiliations</span><span class="p">:</span>
+                    <span class="n">author_sequence_dict</span><span class="p">[</span><span class="n">sequence</span><span class="p">][</span><span class="s2">&quot;affiliations&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">affiliation</span><span class="p">)</span>
+
+            <span class="k">elif</span> <span class="n">sequence</span> <span class="o">==</span> <span class="s2">&quot;additional&quot;</span><span class="p">:</span>
+                <span class="n">additional_author_dict</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="p">{}</span>
+                <span class="n">additional_author_dict</span><span class="p">[</span><span class="s2">&quot;author_name&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">author_name</span>
+                <span class="n">additional_author_dict</span><span class="p">[</span><span class="s2">&quot;affiliations&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+                <span class="k">for</span> <span class="n">affiliation</span> <span class="ow">in</span> <span class="n">author_affiliations</span><span class="p">:</span>
+                    <span class="n">additional_author_dict</span><span class="p">[</span><span class="s2">&quot;affiliations&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">affiliation</span><span class="p">)</span>
+                <span class="n">author_sequence_dict</span><span class="p">[</span><span class="s2">&quot;additional&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">additional_author_dict</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">write_missing_authors_file</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">unknown_authors_dict</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">unknown_authors_file</span>
+        <span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="AttributeExtractionStrategy.get_authors_as_list">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.get_authors_as_list">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_authors_as_list</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">author_sequence_dict</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Converts the author sequence dictionary to a list of author names.</span>
+
+<span class="sd">        This method extracts author names from the structured author sequence dictionary</span>
+<span class="sd">        and returns them as a simple list.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            author_sequence_dict (dict): A dictionary containing structured author information.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            list[str]: A list of author names in the order they appear in the publication.</span>
+
+<span class="sd">        Design:</span>
+<span class="sd">            Handles both the first author and additional authors from the dictionary.</span>
+
+<span class="sd">        Summary:</span>
+<span class="sd">            Extracts and returns a list of author names from the structured author dictionary.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">authors</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">authors</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">author_sequence_dict</span><span class="p">[</span><span class="s2">&quot;first&quot;</span><span class="p">][</span><span class="s2">&quot;author_name&quot;</span><span class="p">])</span>
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">author_sequence_dict</span><span class="p">[</span><span class="s2">&quot;additional&quot;</span><span class="p">]:</span>
+            <span class="n">authors</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="s2">&quot;author_name&quot;</span><span class="p">])</span>
+        <span class="k">return</span> <span class="n">authors</span></div>
+</div>
+
+
+
+<div class="viewcode-block" id="CrossrefTitleExtractionStrategy">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefTitleExtractionStrategy">[docs]</a>
+<span class="nd">@StrategyFactory</span><span class="o">.</span><span class="n">register_strategy</span><span class="p">(</span><span class="n">AttributeTypes</span><span class="o">.</span><span class="n">CROSSREF_TITLE</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">CrossrefTitleExtractionStrategy</span><span class="p">(</span><span class="n">AttributeExtractionStrategy</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    A strategy for extracting title information from Crossref data.</span>
+
+<span class="sd">    This class implements the AttributeExtractionStrategy for title extraction</span>
+<span class="sd">    specifically from Crossref JSON data. It focuses on extracting and cleaning</span>
+<span class="sd">    the title(s) of a publication.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">        title_key (str): The key used to access title information in the Crossref JSON.</span>
+
+<span class="sd">    Methods:</span>
+<span class="sd">        clean_title: Removes HTML tags from a title string.</span>
+<span class="sd">        extract_attribute: Extracts and cleans the title(s) from the Crossref entry.</span>
+
+<span class="sd">    Design:</span>
+<span class="sd">        Utilizes BeautifulSoup for HTML tag removal and handles potential multiple titles.</span>
+<span class="sd">        Implements the Strategy pattern for title extraction from Crossref data.</span>
+
+<span class="sd">    Summary:</span>
+<span class="sd">        Provides a specialized strategy for extracting and cleaning publication titles</span>
+<span class="sd">        from Crossref data entries, handling potential HTML content and multiple titles.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">warning_manager</span><span class="p">:</span> <span class="n">WarningManager</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Initializes the CrossrefTitleExtractionStrategy.</span>
+
+<span class="sd">        This constructor sets up the strategy with a warning manager and defines</span>
+<span class="sd">        the key for accessing title information in Crossref data.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            warning_manager (WarningManager): An instance of WarningManager for handling extraction warnings.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            None</span>
+
+<span class="sd">        Design:</span>
+<span class="sd">            Calls the superclass constructor and sets up the title key for Crossref data.</span>
+
+<span class="sd">        Summary:</span>
+<span class="sd">            Prepares the strategy instance for title extraction from Crossref data.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">warning_manager</span><span class="o">=</span><span class="n">warning_manager</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span> <span class="o">=</span> <span class="n">configure_logging</span><span class="p">(</span>
+            <span class="n">module_name</span><span class="o">=</span><span class="vm">__name__</span><span class="p">,</span>
+            <span class="n">log_file_name</span><span class="o">=</span><span class="s2">&quot;crossref_title_extraction_strategy&quot;</span><span class="p">,</span>
+            <span class="n">log_level</span><span class="o">=</span><span class="n">DEBUG</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">title_key</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;title&quot;</span>
+
+<div class="viewcode-block" id="CrossrefTitleExtractionStrategy.clean_title">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefTitleExtractionStrategy.clean_title">[docs]</a>
+    <span class="k">def</span> <span class="nf">clean_title</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">title</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Removes HTML tags from a title string using BeautifulSoup.</span>
+
+<span class="sd">        This method uses BeautifulSoup to parse and remove any HTML tags</span>
+<span class="sd">        present in the title string.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            title (str): The title string potentially containing HTML tags.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            str: The cleaned title string with HTML tags removed.</span>
+
+<span class="sd">        Design:</span>
+<span class="sd">            Uses BeautifulSoup with &#39;html.parser&#39; to safely remove HTML tags.</span>
+
+<span class="sd">        Summary:</span>
+<span class="sd">            Cleans a title string by removing any HTML tags it may contain.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">soup</span><span class="p">:</span> <span class="n">BeautifulSoup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="s2">&quot;html.parser&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">soup</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span></div>
+
+
+<div class="viewcode-block" id="CrossrefTitleExtractionStrategy.extract_attribute">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefTitleExtractionStrategy.extract_attribute">[docs]</a>
+    <span class="k">def</span> <span class="nf">extract_attribute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">entry_text</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">bool</span><span class="p">,</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Extracts and cleans the title(s) from the Crossref entry.</span>
+
+<span class="sd">        This method retrieves the title(s) from the Crossref JSON data,</span>
+<span class="sd">        handles potential multiple titles, and cleans each title by removing HTML tags.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            entry_text (dict): The Crossref JSON data containing the publication information.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            tuple[bool, list[str]]: A tuple containing:</span>
+<span class="sd">                - A boolean indicating success (True) or failure (False) of the extraction.</span>
+<span class="sd">                - A list of cleaned title strings, or None if no titles were found.</span>
+
+<span class="sd">        Design:</span>
+<span class="sd">            Retrieves titles using the predefined title_key.</span>
+<span class="sd">            Handles cases where a single title or multiple titles may be present.</span>
+<span class="sd">            Cleans each title using the clean_title method.</span>
+<span class="sd">            Logs a warning if no titles are found.</span>
+
+<span class="sd">        Summary:</span>
+<span class="sd">            Extracts, cleans, and returns the publication title(s) from Crossref JSON data.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">titles</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="n">entry_text</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">title_key</span><span class="p">,</span> <span class="p">[])</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">titles</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+            <span class="n">titles</span> <span class="o">=</span> <span class="p">[</span><span class="n">titles</span><span class="p">]</span>
+        <span class="n">cleaned_titles</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">clean_title</span><span class="p">(</span><span class="n">title</span><span class="p">)</span> <span class="k">for</span> <span class="n">title</span> <span class="ow">in</span> <span class="n">titles</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">cleaned_titles</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">cleaned_titles</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">log_extraction_warning</span><span class="p">(</span>
+                <span class="n">attribute_class_name</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span>
+                <span class="n">warning_message</span><span class="o">=</span><span class="s2">&quot;Attribute: &#39;Crossref_Title&#39; was not found in the entry&quot;</span><span class="p">,</span>
+                <span class="n">entry_id</span><span class="o">=</span><span class="n">entry_text</span><span class="p">,</span>
+            <span class="p">)</span>
+            <span class="k">return</span> <span class="p">(</span><span class="kc">False</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span></div>
+</div>
+
+
+
+<div class="viewcode-block" id="CrossrefAbstractExtractionStrategy">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefAbstractExtractionStrategy">[docs]</a>
+<span class="nd">@StrategyFactory</span><span class="o">.</span><span class="n">register_strategy</span><span class="p">(</span><span class="n">AttributeTypes</span><span class="o">.</span><span class="n">CROSSREF_ABSTRACT</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">CrossrefAbstractExtractionStrategy</span><span class="p">(</span><span class="n">AttributeExtractionStrategy</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    A strategy for extracting abstract information from Crossref data.</span>
+
+<span class="sd">    This class implements the AttributeExtractionStrategy for abstract extraction</span>
+<span class="sd">    specifically from Crossref JSON data. It focuses on extracting and cleaning</span>
+<span class="sd">    the abstract of a publication.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">        abstract_key (str): The key used to access abstract information in the Crossref JSON.</span>
+
+<span class="sd">    Methods:</span>
+<span class="sd">        clean_abstract: Converts HTML content in the abstract to Markdown format.</span>
+<span class="sd">        extract_attribute: Extracts and cleans the abstract from the Crossref entry.</span>
+
+<span class="sd">    Design:</span>
+<span class="sd">        Utilizes the html_to_markdown method for cleaning HTML content in abstracts.</span>
+<span class="sd">        Implements the Strategy pattern for abstract extraction from Crossref data.</span>
+
+<span class="sd">    Summary:</span>
+<span class="sd">        Provides a specialized strategy for extracting and cleaning publication abstracts</span>
+<span class="sd">        from Crossref data entries, handling potential HTML content.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">warning_manager</span><span class="p">:</span> <span class="n">WarningManager</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Initializes the CrossrefAbstractExtractionStrategy.</span>
+
+<span class="sd">        This constructor sets up the strategy with a warning manager and defines</span>
+<span class="sd">        the key for accessing abstract information in Crossref data.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            warning_manager (WarningManager): An instance of WarningManager for handling extraction warnings.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            None</span>
+
+<span class="sd">        Design:</span>
+<span class="sd">            Calls the superclass constructor and sets up the abstract key for Crossref data.</span>
+
+<span class="sd">        Summary:</span>
+<span class="sd">            Prepares the strategy instance for abstract extraction from Crossref data.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">warning_manager</span><span class="o">=</span><span class="n">warning_manager</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span> <span class="o">=</span> <span class="n">configure_logging</span><span class="p">(</span>
+            <span class="n">module_name</span><span class="o">=</span><span class="vm">__name__</span><span class="p">,</span>
+            <span class="n">log_file_name</span><span class="o">=</span><span class="s2">&quot;crossref_abstract_extraction_strategy&quot;</span><span class="p">,</span>
+            <span class="n">log_level</span><span class="o">=</span><span class="n">DEBUG</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">abstract_key</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;abstract&quot;</span>
+
+<div class="viewcode-block" id="CrossrefAbstractExtractionStrategy.clean_abstract">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefAbstractExtractionStrategy.clean_abstract">[docs]</a>
+    <span class="k">def</span> <span class="nf">clean_abstract</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">abstract</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Cleans the abstract by converting HTML content to Markdown format.</span>
+
+<span class="sd">        This method uses the html_to_markdown method to convert any HTML content</span>
+<span class="sd">        in the abstract to a more readable Markdown format.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            abstract (str): The abstract string potentially containing HTML content.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            str: The cleaned abstract string in Markdown format.</span>
+
+<span class="sd">        Design:</span>
+<span class="sd">            Utilizes the html_to_markdown method inherited from the parent class.</span>
+
+<span class="sd">        Summary:</span>
+<span class="sd">            Converts HTML content in the abstract to Markdown for improved readability.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">html_to_markdown</span><span class="p">(</span><span class="n">abstract</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CrossrefAbstractExtractionStrategy.extract_attribute">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefAbstractExtractionStrategy.extract_attribute">[docs]</a>
+    <span class="k">def</span> <span class="nf">extract_attribute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">entry_text</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">bool</span><span class="p">,</span> <span class="nb">str</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Extracts and cleans the abstract from the Crossref entry.</span>
+
+<span class="sd">        This method retrieves the abstract from the Crossref JSON data,</span>
+<span class="sd">        cleans it by converting HTML to Markdown, and returns the result.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            entry_text (dict): The Crossref JSON data containing the publication information.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            tuple[bool, str]: A tuple containing:</span>
+<span class="sd">                - A boolean indicating success (True) or failure (False) of the extraction.</span>
+<span class="sd">                - The cleaned abstract string, or None if no abstract was found.</span>
+
+<span class="sd">        Design:</span>
+<span class="sd">            Retrieves the abstract using the predefined abstract_key.</span>
+<span class="sd">            Cleans the abstract using the clean_abstract method.</span>
+<span class="sd">            Logs a warning if no abstract is found.</span>
+
+<span class="sd">        Summary:</span>
+<span class="sd">            Extracts, cleans, and returns the publication abstract from Crossref JSON data.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">abstract</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">entry_text</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">abstract_key</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">abstract</span><span class="p">:</span>
+            <span class="n">abstract</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">clean_abstract</span><span class="p">(</span><span class="n">abstract</span><span class="p">)</span>
+            <span class="k">return</span> <span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">abstract</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">log_extraction_warning</span><span class="p">(</span>
+                <span class="n">attribute_class_name</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span>
+                <span class="n">warning_message</span><span class="o">=</span><span class="s2">&quot;Attribute: &#39;Crossref_Abstract&#39; was not found in the entry&quot;</span><span class="p">,</span>
+                <span class="n">entry_id</span><span class="o">=</span><span class="n">entry_text</span><span class="p">,</span>
+            <span class="p">)</span>
+            <span class="k">return</span> <span class="p">(</span><span class="kc">False</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span></div>
+</div>
+
+
+
+<div class="viewcode-block" id="CrossrefAuthorExtractionStrategy">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefAuthorExtractionStrategy">[docs]</a>
+<span class="nd">@StrategyFactory</span><span class="o">.</span><span class="n">register_strategy</span><span class="p">(</span><span class="n">AttributeTypes</span><span class="o">.</span><span class="n">CROSSREF_AUTHORS</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">CrossrefAuthorExtractionStrategy</span><span class="p">(</span><span class="n">AttributeExtractionStrategy</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    A strategy for extracting author information from Crossref data.</span>
+
+<span class="sd">    This class implements the AttributeExtractionStrategy for author extraction</span>
+<span class="sd">    specifically from Crossref JSON data. It focuses on extracting and organizing</span>
+<span class="sd">    author names and handling cases where author information might be incomplete.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">        unknown_authors (dict): A dictionary to store information about authors with incomplete data.</span>
+<span class="sd">        missing_authors_file (str): The file path to store information about unknown authors.</span>
+
+<span class="sd">    Methods:</span>
+<span class="sd">        get_author_name: Constructs a full author name from given and family name components.</span>
+<span class="sd">        extract_attribute: Extracts and organizes author information from the Crossref entry.</span>
+
+<span class="sd">    Design:</span>
+<span class="sd">        Utilizes helper methods to process individual author items and organize them.</span>
+<span class="sd">        Implements the Strategy pattern for author extraction from Crossref data.</span>
+
+<span class="sd">    Summary:</span>
+<span class="sd">        Provides a specialized strategy for extracting and organizing author information</span>
+<span class="sd">        from Crossref data entries, handling potential incomplete author data.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">warning_manager</span><span class="p">:</span> <span class="n">WarningManager</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Initializes the CrossrefAuthorExtractionStrategy.</span>
+
+<span class="sd">        This constructor sets up the strategy with a warning manager and initializes</span>
+<span class="sd">        structures for handling unknown authors.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            warning_manager (WarningManager): An instance of WarningManager for handling extraction warnings.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            None</span>
+
+<span class="sd">        Design:</span>
+<span class="sd">            Calls the superclass constructor and sets up data structures for unknown authors.</span>
+
+<span class="sd">        Summary:</span>
+<span class="sd">            Prepares the strategy instance for author extraction from Crossref data.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">warning_manager</span><span class="o">=</span><span class="n">warning_manager</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span> <span class="o">=</span> <span class="n">configure_logging</span><span class="p">(</span>
+            <span class="n">module_name</span><span class="o">=</span><span class="vm">__name__</span><span class="p">,</span>
+            <span class="n">log_file_name</span><span class="o">=</span><span class="s2">&quot;crossref_author_extraction_strategy&quot;</span><span class="p">,</span>
+            <span class="n">log_level</span><span class="o">=</span><span class="n">DEBUG</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">unknown_authors</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_unknown_authors_dict</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">missing_authors_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;unknown_authors.json&quot;</span>
+
+<div class="viewcode-block" id="CrossrefAuthorExtractionStrategy.get_author_name">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefAuthorExtractionStrategy.get_author_name">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_author_name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">author_item</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Constructs a full author name from given and family name components.</span>
+
+<span class="sd">        This method attempts to create a full author name from the given and family</span>
+<span class="sd">        name fields in the author item. If either component is missing, it logs a warning.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            author_item (dict): A dictionary containing author information from Crossref.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            str: The full author name if both components are present, None otherwise.</span>
+
+<span class="sd">        Design:</span>
+<span class="sd">            Extracts given and family names from the author item.</span>
+<span class="sd">            Logs a warning if either component is missing.</span>
+
+<span class="sd">        Summary:</span>
+<span class="sd">            Constructs and returns a full author name, or None if information is incomplete.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">given_name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">author_item</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;given&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+        <span class="n">family_name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">author_item</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;family&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">given_name</span> <span class="ow">and</span> <span class="n">family_name</span><span class="p">:</span>
+            <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">given_name</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">family_name</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">log_extraction_warning</span><span class="p">(</span>
+                <span class="n">attribute_class_name</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span>
+                <span class="n">warning_message</span><span class="o">=</span><span class="s2">&quot;Attribute: &#39;Crossref_Author&#39; was not found in the entry&quot;</span><span class="p">,</span>
+                <span class="n">entry_id</span><span class="o">=</span><span class="n">author_item</span><span class="p">,</span>
+            <span class="p">)</span>
+            <span class="k">return</span> <span class="kc">None</span></div>
+
+
+<div class="viewcode-block" id="CrossrefAuthorExtractionStrategy.extract_attribute">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefAuthorExtractionStrategy.extract_attribute">[docs]</a>
+    <span class="k">def</span> <span class="nf">extract_attribute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">crossref_json</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">bool</span><span class="p">,</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Extracts and organizes author information from the Crossref entry.</span>
+
+<span class="sd">        This method processes the Crossref JSON data to extract author information,</span>
+<span class="sd">        organizes it into a structured format, and returns a list of author names.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            crossref_json (dict): The Crossref JSON data containing the publication information.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            tuple[bool, list[str]]: A tuple containing:</span>
+<span class="sd">                - A boolean indicating success (True) or failure (False) of the extraction.</span>
+<span class="sd">                - A list of author names extracted from the Crossref data.</span>
+
+<span class="sd">        Design:</span>
+<span class="sd">            Uses helper methods to extract author objects and organize them into a sequence.</span>
+<span class="sd">            Converts the organized author data into a simple list of names.</span>
+
+<span class="sd">        Summary:</span>
+<span class="sd">            Extracts, organizes, and returns a list of author names from Crossref JSON data.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">author_items</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">dict</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_author_obj</span><span class="p">(</span><span class="n">crossref_json</span><span class="o">=</span><span class="n">crossref_json</span><span class="p">)</span>
+        <span class="n">author_sequence_dict</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_author_sequence_dict</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">set_author_sequence_dict</span><span class="p">(</span>
+            <span class="n">author_items</span><span class="o">=</span><span class="n">author_items</span><span class="p">,</span>
+            <span class="n">author_sequence_dict</span><span class="o">=</span><span class="n">author_sequence_dict</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="p">(</span>
+            <span class="kc">True</span><span class="p">,</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">get_authors_as_list</span><span class="p">(</span><span class="n">author_sequence_dict</span><span class="o">=</span><span class="n">author_sequence_dict</span><span class="p">),</span>
+        <span class="p">)</span></div>
+</div>
+
+
+
+<div class="viewcode-block" id="CrossrefDepartmentExtractionStrategy">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefDepartmentExtractionStrategy">[docs]</a>
+<span class="nd">@StrategyFactory</span><span class="o">.</span><span class="n">register_strategy</span><span class="p">(</span><span class="n">AttributeTypes</span><span class="o">.</span><span class="n">CROSSREF_DEPARTMENTS</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">CrossrefDepartmentExtractionStrategy</span><span class="p">(</span><span class="n">AttributeExtractionStrategy</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    A strategy for extracting department information from Crossref data.</span>
+
+<span class="sd">    This class implements the AttributeExtractionStrategy for department extraction</span>
+<span class="sd">    specifically from Crossref JSON data. It focuses on extracting and organizing</span>
+<span class="sd">    department affiliations for each author in a publication.</span>
+
+<span class="sd">    Methods:</span>
+<span class="sd">        extract_attribute: Extracts and organizes department affiliations from the Crossref entry.</span>
+
+<span class="sd">    Design:</span>
+<span class="sd">        Utilizes helper methods to process author information and extract department affiliations.</span>
+<span class="sd">        Implements the Strategy pattern for department extraction from Crossref data.</span>
+
+<span class="sd">    Summary:</span>
+<span class="sd">        Provides a specialized strategy for extracting and organizing department affiliations</span>
+<span class="sd">        for authors from Crossref data entries.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">warning_manager</span><span class="p">:</span> <span class="n">WarningManager</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Initializes the CrossrefDepartmentExtractionStrategy.</span>
+
+<span class="sd">        This constructor sets up the strategy with a warning manager.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            warning_manager (WarningManager): An instance of WarningManager for handling extraction warnings.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            None</span>
+
+<span class="sd">        Design:</span>
+<span class="sd">            Calls the superclass constructor to set up the warning manager.</span>
+
+<span class="sd">        Summary:</span>
+<span class="sd">            Prepares the strategy instance for department extraction from Crossref data.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">warning_manager</span><span class="o">=</span><span class="n">warning_manager</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span> <span class="o">=</span> <span class="n">configure_logging</span><span class="p">(</span>
+            <span class="n">module_name</span><span class="o">=</span><span class="vm">__name__</span><span class="p">,</span>
+            <span class="n">log_file_name</span><span class="o">=</span><span class="s2">&quot;crossref_department_extraction_strategy&quot;</span><span class="p">,</span>
+            <span class="n">log_level</span><span class="o">=</span><span class="n">DEBUG</span><span class="p">,</span>
+        <span class="p">)</span>
+
+<div class="viewcode-block" id="CrossrefDepartmentExtractionStrategy.extract_attribute">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefDepartmentExtractionStrategy.extract_attribute">[docs]</a>
+    <span class="k">def</span> <span class="nf">extract_attribute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">crossref_json</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">bool</span><span class="p">,</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Extracts and organizes department affiliations from the Crossref entry.</span>
+
+<span class="sd">        This method processes the Crossref JSON data to extract department affiliations</span>
+<span class="sd">        for each author, organizing them into a dictionary structure.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            crossref_json (dict): The Crossref JSON data containing the publication information.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            tuple[bool, dict[str, list[str]]]: A tuple containing:</span>
+<span class="sd">                - A boolean indicating success (True) or failure (False) of the extraction.</span>
+<span class="sd">                - A dictionary where keys are author names and values are lists of their affiliations.</span>
+
+<span class="sd">        Design:</span>
+<span class="sd">            Uses helper methods to extract author objects and organize them into a sequence.</span>
+<span class="sd">            Processes both the first author and additional authors separately.</span>
+<span class="sd">            Creates a dictionary mapping author names to their department affiliations.</span>
+<span class="sd">            Logs a warning if no department affiliations are found.</span>
+
+<span class="sd">        Summary:</span>
+<span class="sd">            Extracts and returns a dictionary of author names mapped to their department affiliations</span>
+<span class="sd">            from Crossref JSON data.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">author_items</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">dict</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_author_obj</span><span class="p">(</span><span class="n">crossref_json</span><span class="o">=</span><span class="n">crossref_json</span><span class="p">)</span>
+        <span class="n">sequence_dict</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_author_sequence_dict</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">set_author_sequence_dict</span><span class="p">(</span>
+            <span class="n">author_items</span><span class="o">=</span><span class="n">author_items</span><span class="p">,</span>
+            <span class="n">author_sequence_dict</span><span class="o">=</span><span class="n">sequence_dict</span><span class="p">,</span>
+        <span class="p">)</span>
+
+        <span class="c1"># keys are authors, values are their affiliation</span>
+        <span class="n">department_affiliations</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="n">first_author</span> <span class="o">=</span> <span class="n">sequence_dict</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;first&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">first_author</span><span class="p">:</span>
+            <span class="n">department_affiliations</span><span class="p">[</span><span class="n">first_author</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;author_name&quot;</span><span class="p">,</span> <span class="s2">&quot;Unknown&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="p">(</span>
+                <span class="n">first_author</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;affiliations&quot;</span><span class="p">,</span> <span class="p">[])</span>
+            <span class="p">)</span>
+
+        <span class="n">additional_authors</span> <span class="o">=</span> <span class="n">sequence_dict</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;additional&quot;</span><span class="p">,</span> <span class="p">[])</span>
+        <span class="k">if</span> <span class="n">additional_authors</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">author</span> <span class="ow">in</span> <span class="n">additional_authors</span><span class="p">:</span>
+                <span class="n">department_affiliations</span><span class="p">[</span><span class="n">author</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;author_name&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">author</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+                    <span class="s2">&quot;affiliations&quot;</span><span class="p">,</span> <span class="p">[]</span>
+                <span class="p">)</span>
+        <span class="k">if</span> <span class="n">department_affiliations</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">department_affiliations</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">log_extraction_warning</span><span class="p">(</span>
+                <span class="n">attribute_class_name</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span>
+                <span class="n">warning_message</span><span class="o">=</span><span class="s2">&quot;Attribute: &#39;Crossref_Department&#39; was not found in the entry&quot;</span><span class="p">,</span>
+                <span class="n">entry_id</span><span class="o">=</span><span class="n">crossref_json</span><span class="p">,</span>
+            <span class="p">)</span>
+            <span class="k">return</span> <span class="p">(</span><span class="kc">False</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span></div>
+</div>
+
+
+
+<div class="viewcode-block" id="CrossrefCategoriesExtractionStrategy">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefCategoriesExtractionStrategy">[docs]</a>
+<span class="nd">@StrategyFactory</span><span class="o">.</span><span class="n">register_strategy</span><span class="p">(</span><span class="n">AttributeTypes</span><span class="o">.</span><span class="n">CROSSREF_CATEGORIES</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">CrossrefCategoriesExtractionStrategy</span><span class="p">(</span><span class="n">AttributeExtractionStrategy</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    A strategy for extracting category information from Crossref data.</span>
+
+<span class="sd">    This class implements the AttributeExtractionStrategy for category extraction</span>
+<span class="sd">    specifically from Crossref JSON data. It focuses on retrieving the categories</span>
+<span class="sd">    associated with a publication.</span>
+
+<span class="sd">    Methods:</span>
+<span class="sd">        extract_attribute: Extracts the categories from the Crossref entry.</span>
+
+<span class="sd">    Design:</span>
+<span class="sd">        Implements the Strategy pattern for category extraction from Crossref data.</span>
+<span class="sd">        Uses a simple dictionary lookup to retrieve category information.</span>
+
+<span class="sd">    Summary:</span>
+<span class="sd">        Provides a specialized strategy for extracting publication categories</span>
+<span class="sd">        from Crossref data entries.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">warning_manager</span><span class="p">:</span> <span class="n">WarningManager</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Initializes the CrossrefCategoriesExtractionStrategy.</span>
+
+<span class="sd">        This constructor sets up the strategy with a warning manager.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            warning_manager (WarningManager): An instance of WarningManager for handling extraction warnings.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            None</span>
+
+<span class="sd">        Design:</span>
+<span class="sd">            Calls the superclass constructor to set up the warning manager.</span>
+
+<span class="sd">        Summary:</span>
+<span class="sd">            Prepares the strategy instance for category extraction from Crossref data.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">warning_manager</span><span class="o">=</span><span class="n">warning_manager</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span> <span class="o">=</span> <span class="n">configure_logging</span><span class="p">(</span>
+            <span class="n">module_name</span><span class="o">=</span><span class="vm">__name__</span><span class="p">,</span>
+            <span class="n">log_file_name</span><span class="o">=</span><span class="s2">&quot;crossref_categories_extraction_strategy&quot;</span><span class="p">,</span>
+            <span class="n">log_level</span><span class="o">=</span><span class="n">DEBUG</span><span class="p">,</span>
+        <span class="p">)</span>
+
+<div class="viewcode-block" id="CrossrefCategoriesExtractionStrategy.extract_attribute">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefCategoriesExtractionStrategy.extract_attribute">[docs]</a>
+    <span class="k">def</span> <span class="nf">extract_attribute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">crossref_json</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">bool</span><span class="p">,</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Extracts the categories from the Crossref entry.</span>
+
+<span class="sd">        This method retrieves the categories associated with a publication</span>
+<span class="sd">        from the Crossref JSON data.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            crossref_json (dict): The Crossref JSON data containing the publication information.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            tuple[bool, list[str]]: A tuple containing:</span>
+<span class="sd">                - A boolean indicating success (True) if categories are found, False otherwise.</span>
+<span class="sd">                - A list of category strings, or None if no categories are found.</span>
+
+<span class="sd">        Design:</span>
+<span class="sd">            Uses a simple dictionary get method to retrieve the categories.</span>
+<span class="sd">            Returns True only if categories are present.</span>
+
+<span class="sd">        Summary:</span>
+<span class="sd">            Extracts and returns the categories associated with a publication from Crossref JSON data.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">top_level_categories</span> <span class="o">=</span> <span class="n">crossref_json</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;categories&quot;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;top&quot;</span><span class="p">,</span> <span class="p">[])</span>
+        <span class="n">mid_level_categories</span> <span class="o">=</span> <span class="n">crossref_json</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;categories&quot;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;mid&quot;</span><span class="p">,</span> <span class="p">[])</span>
+        <span class="n">low_level_categories</span> <span class="o">=</span> <span class="n">crossref_json</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;categories&quot;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;low&quot;</span><span class="p">,</span> <span class="p">[])</span>
+        <span class="n">categories</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;top&quot;</span><span class="p">:</span> <span class="n">top_level_categories</span><span class="p">,</span>
+            <span class="s2">&quot;mid&quot;</span><span class="p">:</span> <span class="n">mid_level_categories</span><span class="p">,</span>
+            <span class="s2">&quot;low&quot;</span><span class="p">:</span> <span class="n">low_level_categories</span><span class="p">,</span>
+        <span class="p">}</span>
+
+        <span class="k">return</span> <span class="p">(</span><span class="kc">True</span> <span class="k">if</span> <span class="n">categories</span> <span class="k">else</span> <span class="kc">False</span><span class="p">,</span> <span class="n">categories</span><span class="p">)</span></div>
+</div>
+
+
+
+<div class="viewcode-block" id="CrossrefCitationCountExtractionStrategy">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefCitationCountExtractionStrategy">[docs]</a>
+<span class="nd">@StrategyFactory</span><span class="o">.</span><span class="n">register_strategy</span><span class="p">(</span><span class="n">AttributeTypes</span><span class="o">.</span><span class="n">CROSSREF_CITATION_COUNT</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">CrossrefCitationCountExtractionStrategy</span><span class="p">(</span><span class="n">AttributeExtractionStrategy</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    A strategy for extracting citation count information from Crossref data.</span>
+
+<span class="sd">    This class implements the AttributeExtractionStrategy for citation count extraction</span>
+<span class="sd">    specifically from Crossref JSON data. It focuses on retrieving the number of times</span>
+<span class="sd">    a publication has been cited.</span>
+
+<span class="sd">    Methods:</span>
+<span class="sd">        extract_attribute: Extracts the citation count from the Crossref entry.</span>
+
+<span class="sd">    Design:</span>
+<span class="sd">        Implements the Strategy pattern for citation count extraction from Crossref data.</span>
+<span class="sd">        Uses a simple dictionary lookup to retrieve citation count information.</span>
+
+<span class="sd">    Summary:</span>
+<span class="sd">        Provides a specialized strategy for extracting publication citation counts</span>
+<span class="sd">        from Crossref data entries.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">warning_manager</span><span class="p">:</span> <span class="n">WarningManager</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Initializes the CrossrefCitationCountExtractionStrategy.</span>
+
+<span class="sd">        This constructor sets up the strategy with a warning manager.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            warning_manager (WarningManager): An instance of WarningManager for handling extraction warnings.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            None</span>
+
+<span class="sd">        Design:</span>
+<span class="sd">            Calls the superclass constructor to set up the warning manager.</span>
+
+<span class="sd">        Summary:</span>
+<span class="sd">            Prepares the strategy instance for citation count extraction from Crossref data.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">warning_manager</span><span class="o">=</span><span class="n">warning_manager</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span> <span class="o">=</span> <span class="n">configure_logging</span><span class="p">(</span>
+            <span class="n">module_name</span><span class="o">=</span><span class="vm">__name__</span><span class="p">,</span>
+            <span class="n">log_file_name</span><span class="o">=</span><span class="s2">&quot;crossref_citation_count_extraction_strategy&quot;</span><span class="p">,</span>
+            <span class="n">log_level</span><span class="o">=</span><span class="n">DEBUG</span><span class="p">,</span>
+        <span class="p">)</span>
+
+<div class="viewcode-block" id="CrossrefCitationCountExtractionStrategy.extract_attribute">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefCitationCountExtractionStrategy.extract_attribute">[docs]</a>
+    <span class="k">def</span> <span class="nf">extract_attribute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">crossref_json</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">bool</span><span class="p">,</span> <span class="nb">int</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Extracts the citation count from the Crossref entry.</span>
+
+<span class="sd">        This method retrieves the number of times a publication has been cited</span>
+<span class="sd">        from the Crossref JSON data.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            crossref_json (dict): The Crossref JSON data containing the publication information.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            tuple[bool, int]: A tuple containing:</span>
+<span class="sd">                - A boolean always set to True (as the method always returns a count, even if it&#39;s 0).</span>
+<span class="sd">                - An integer representing the citation count.</span>
+
+<span class="sd">        Design:</span>
+<span class="sd">            Uses a dictionary get method to retrieve the citation count, defaulting to 0 if not found.</span>
+<span class="sd">            Always returns True as the first element of the tuple, as a count is always available.</span>
+
+<span class="sd">        Summary:</span>
+<span class="sd">            Extracts and returns the citation count for a publication from Crossref JSON data.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">citation_count</span> <span class="o">=</span> <span class="n">crossref_json</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;is-referenced-by-count&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="k">return</span> <span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">citation_count</span><span class="p">)</span></div>
+</div>
+
+
+
+<div class="viewcode-block" id="CrossrefLicenseURLExtractionStrategy">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefLicenseURLExtractionStrategy">[docs]</a>
+<span class="nd">@StrategyFactory</span><span class="o">.</span><span class="n">register_strategy</span><span class="p">(</span><span class="n">AttributeTypes</span><span class="o">.</span><span class="n">CROSSREF_LICENSE_URL</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">CrossrefLicenseURLExtractionStrategy</span><span class="p">(</span><span class="n">AttributeExtractionStrategy</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">warning_manager</span><span class="p">:</span> <span class="n">WarningManager</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">warning_manager</span><span class="o">=</span><span class="n">warning_manager</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span> <span class="o">=</span> <span class="n">configure_logging</span><span class="p">(</span>
+            <span class="n">module_name</span><span class="o">=</span><span class="vm">__name__</span><span class="p">,</span>
+            <span class="n">log_file_name</span><span class="o">=</span><span class="s2">&quot;crossref_license_url_extraction_strategy&quot;</span><span class="p">,</span>
+            <span class="n">log_level</span><span class="o">=</span><span class="n">DEBUG</span><span class="p">,</span>
+        <span class="p">)</span>
+
+<div class="viewcode-block" id="CrossrefLicenseURLExtractionStrategy.extract_attribute">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefLicenseURLExtractionStrategy.extract_attribute">[docs]</a>
+    <span class="k">def</span> <span class="nf">extract_attribute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">entry_text</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">bool</span><span class="p">,</span> <span class="nb">str</span><span class="p">]:</span>
+        <span class="n">license_info</span> <span class="o">=</span> <span class="n">entry_text</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;license&quot;</span><span class="p">,</span> <span class="p">[])</span>
+        <span class="k">if</span> <span class="n">license_info</span> <span class="ow">and</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">license_info</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+            <span class="n">url</span> <span class="o">=</span> <span class="n">license_info</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;URL&quot;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">url</span><span class="p">:</span>
+                <span class="k">return</span> <span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">url</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">log_extraction_warning</span><span class="p">(</span>
+            <span class="n">attribute_class_name</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span>
+            <span class="n">warning_message</span><span class="o">=</span><span class="s2">&quot;Attribute: &#39;Crossref_License_URL&#39; was not found in the entry&quot;</span><span class="p">,</span>
+            <span class="n">entry_id</span><span class="o">=</span><span class="n">entry_text</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="p">(</span><span class="kc">False</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span></div>
+</div>
+
+
+
+<div class="viewcode-block" id="CrossrefPublishedPrintExtractionStrategy">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefPublishedPrintExtractionStrategy">[docs]</a>
+<span class="nd">@StrategyFactory</span><span class="o">.</span><span class="n">register_strategy</span><span class="p">(</span><span class="n">AttributeTypes</span><span class="o">.</span><span class="n">CROSSREF_PUBLISHED_PRINT</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">CrossrefPublishedPrintExtractionStrategy</span><span class="p">(</span><span class="n">AttributeExtractionStrategy</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">warning_manager</span><span class="p">:</span> <span class="n">WarningManager</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">warning_manager</span><span class="o">=</span><span class="n">warning_manager</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span> <span class="o">=</span> <span class="n">configure_logging</span><span class="p">(</span>
+            <span class="n">module_name</span><span class="o">=</span><span class="vm">__name__</span><span class="p">,</span>
+            <span class="n">log_file_name</span><span class="o">=</span><span class="s2">&quot;crossref_published_print_extraction_strategy&quot;</span><span class="p">,</span>
+            <span class="n">log_level</span><span class="o">=</span><span class="n">DEBUG</span><span class="p">,</span>
+        <span class="p">)</span>
+
+<div class="viewcode-block" id="CrossrefPublishedPrintExtractionStrategy.extract_attribute">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefPublishedPrintExtractionStrategy.extract_attribute">[docs]</a>
+    <span class="k">def</span> <span class="nf">extract_attribute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">entry_text</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">bool</span><span class="p">,</span> <span class="nb">str</span><span class="p">]:</span>
+        <span class="n">published_print</span> <span class="o">=</span> <span class="n">entry_text</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;published-print&quot;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;date-parts&quot;</span><span class="p">,</span> <span class="p">[[]])[</span>
+            <span class="mi">0</span>
+        <span class="p">]</span>
+        <span class="k">if</span> <span class="n">published_print</span><span class="p">:</span>
+            <span class="n">date_str</span> <span class="o">=</span> <span class="s2">&quot;-&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">published_print</span><span class="p">))</span>
+            <span class="k">return</span> <span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">date_str</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">log_extraction_warning</span><span class="p">(</span>
+            <span class="n">attribute_class_name</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span>
+            <span class="n">warning_message</span><span class="o">=</span><span class="s2">&quot;Attribute: &#39;Crossref_Published_Print&#39; was not found in the entry&quot;</span><span class="p">,</span>
+            <span class="n">entry_id</span><span class="o">=</span><span class="n">entry_text</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="p">(</span><span class="kc">False</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span></div>
+</div>
+
+
+
+<div class="viewcode-block" id="CrossrefCreatedDateExtractionStrategy">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefCreatedDateExtractionStrategy">[docs]</a>
+<span class="nd">@StrategyFactory</span><span class="o">.</span><span class="n">register_strategy</span><span class="p">(</span><span class="n">AttributeTypes</span><span class="o">.</span><span class="n">CROSSREF_CREATED_DATE</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">CrossrefCreatedDateExtractionStrategy</span><span class="p">(</span><span class="n">AttributeExtractionStrategy</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">warning_manager</span><span class="p">:</span> <span class="n">WarningManager</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">warning_manager</span><span class="o">=</span><span class="n">warning_manager</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span> <span class="o">=</span> <span class="n">configure_logging</span><span class="p">(</span>
+            <span class="n">module_name</span><span class="o">=</span><span class="vm">__name__</span><span class="p">,</span>
+            <span class="n">log_file_name</span><span class="o">=</span><span class="s2">&quot;crossref_created_date_extraction_strategy&quot;</span><span class="p">,</span>
+            <span class="n">log_level</span><span class="o">=</span><span class="n">DEBUG</span><span class="p">,</span>
+        <span class="p">)</span>
+
+<div class="viewcode-block" id="CrossrefCreatedDateExtractionStrategy.extract_attribute">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefCreatedDateExtractionStrategy.extract_attribute">[docs]</a>
+    <span class="k">def</span> <span class="nf">extract_attribute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">entry_text</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">bool</span><span class="p">,</span> <span class="nb">str</span><span class="p">]:</span>
+        <span class="n">created</span> <span class="o">=</span> <span class="n">entry_text</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;created&quot;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;date-time&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">created</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">created</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">log_extraction_warning</span><span class="p">(</span>
+            <span class="n">attribute_class_name</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span>
+            <span class="n">warning_message</span><span class="o">=</span><span class="s2">&quot;Attribute: &#39;Crossref_Created_Date&#39; was not found in the entry&quot;</span><span class="p">,</span>
+            <span class="n">entry_id</span><span class="o">=</span><span class="n">entry_text</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="p">(</span><span class="kc">False</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span></div>
+</div>
+
+
+
+<div class="viewcode-block" id="CrossrefPublishedOnlineExtractionStrategy">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefPublishedOnlineExtractionStrategy">[docs]</a>
+<span class="nd">@StrategyFactory</span><span class="o">.</span><span class="n">register_strategy</span><span class="p">(</span><span class="n">AttributeTypes</span><span class="o">.</span><span class="n">CROSSREF_PUBLISHED_ONLINE</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">CrossrefPublishedOnlineExtractionStrategy</span><span class="p">(</span><span class="n">AttributeExtractionStrategy</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">warning_manager</span><span class="p">:</span> <span class="n">WarningManager</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">warning_manager</span><span class="o">=</span><span class="n">warning_manager</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span> <span class="o">=</span> <span class="n">configure_logging</span><span class="p">(</span>
+            <span class="n">module_name</span><span class="o">=</span><span class="vm">__name__</span><span class="p">,</span>
+            <span class="n">log_file_name</span><span class="o">=</span><span class="s2">&quot;crossref_published_online_extraction_strategy&quot;</span><span class="p">,</span>
+            <span class="n">log_level</span><span class="o">=</span><span class="n">DEBUG</span><span class="p">,</span>
+        <span class="p">)</span>
+
+<div class="viewcode-block" id="CrossrefPublishedOnlineExtractionStrategy.extract_attribute">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefPublishedOnlineExtractionStrategy.extract_attribute">[docs]</a>
+    <span class="k">def</span> <span class="nf">extract_attribute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">entry_text</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">bool</span><span class="p">,</span> <span class="nb">str</span><span class="p">]:</span>
+        <span class="n">published_online</span> <span class="o">=</span> <span class="n">entry_text</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;published-online&quot;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+            <span class="s2">&quot;date-parts&quot;</span><span class="p">,</span> <span class="p">[[]]</span>
+        <span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">published_online</span><span class="p">:</span>
+            <span class="n">date_str</span> <span class="o">=</span> <span class="s2">&quot;-&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">published_online</span><span class="p">))</span>
+            <span class="k">return</span> <span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">date_str</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">log_extraction_warning</span><span class="p">(</span>
+            <span class="n">attribute_class_name</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span>
+            <span class="n">warning_message</span><span class="o">=</span><span class="s2">&quot;Attribute: &#39;Crossref_Published_Online&#39; was not found in the entry&quot;</span><span class="p">,</span>
+            <span class="n">entry_id</span><span class="o">=</span><span class="n">entry_text</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="p">(</span><span class="kc">False</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span></div>
+</div>
+
+
+
+<div class="viewcode-block" id="CrossrefJournalExtractionStrategy">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefJournalExtractionStrategy">[docs]</a>
+<span class="nd">@StrategyFactory</span><span class="o">.</span><span class="n">register_strategy</span><span class="p">(</span><span class="n">AttributeTypes</span><span class="o">.</span><span class="n">CROSSREF_JOURNAL</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">CrossrefJournalExtractionStrategy</span><span class="p">(</span><span class="n">AttributeExtractionStrategy</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">warning_manager</span><span class="p">:</span> <span class="n">WarningManager</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">warning_manager</span><span class="o">=</span><span class="n">warning_manager</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span> <span class="o">=</span> <span class="n">configure_logging</span><span class="p">(</span>
+            <span class="n">module_name</span><span class="o">=</span><span class="vm">__name__</span><span class="p">,</span>
+            <span class="n">log_file_name</span><span class="o">=</span><span class="s2">&quot;crossref_journal_extraction_strategy&quot;</span><span class="p">,</span>
+            <span class="n">log_level</span><span class="o">=</span><span class="n">DEBUG</span><span class="p">,</span>
+        <span class="p">)</span>
+
+<div class="viewcode-block" id="CrossrefJournalExtractionStrategy.extract_attribute">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefJournalExtractionStrategy.extract_attribute">[docs]</a>
+    <span class="k">def</span> <span class="nf">extract_attribute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">entry_text</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">bool</span><span class="p">,</span> <span class="nb">str</span><span class="p">]:</span>
+        <span class="n">journal</span> <span class="o">=</span> <span class="n">entry_text</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;container-title&quot;</span><span class="p">,</span> <span class="p">[])</span>
+        <span class="k">if</span> <span class="n">journal</span> <span class="ow">and</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">journal</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+            <span class="k">return</span> <span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">journal</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">log_extraction_warning</span><span class="p">(</span>
+            <span class="n">attribute_class_name</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span>
+            <span class="n">warning_message</span><span class="o">=</span><span class="s2">&quot;Attribute: &#39;Crossref_Journal&#39; was not found in the entry&quot;</span><span class="p">,</span>
+            <span class="n">entry_id</span><span class="o">=</span><span class="n">entry_text</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="p">(</span><span class="kc">False</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span></div>
+</div>
+
+
+
+<div class="viewcode-block" id="CrossrefURLExtractionStrategy">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefURLExtractionStrategy">[docs]</a>
+<span class="nd">@StrategyFactory</span><span class="o">.</span><span class="n">register_strategy</span><span class="p">(</span><span class="n">AttributeTypes</span><span class="o">.</span><span class="n">CROSSREF_URL</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">CrossrefURLExtractionStrategy</span><span class="p">(</span><span class="n">AttributeExtractionStrategy</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">warning_manager</span><span class="p">:</span> <span class="n">WarningManager</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">warning_manager</span><span class="o">=</span><span class="n">warning_manager</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span> <span class="o">=</span> <span class="n">configure_logging</span><span class="p">(</span>
+            <span class="n">module_name</span><span class="o">=</span><span class="vm">__name__</span><span class="p">,</span>
+            <span class="n">log_file_name</span><span class="o">=</span><span class="s2">&quot;crossref_url_extraction_strategy&quot;</span><span class="p">,</span>
+            <span class="n">log_level</span><span class="o">=</span><span class="n">DEBUG</span><span class="p">,</span>
+        <span class="p">)</span>
+
+<div class="viewcode-block" id="CrossrefURLExtractionStrategy.extract_attribute">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefURLExtractionStrategy.extract_attribute">[docs]</a>
+    <span class="k">def</span> <span class="nf">extract_attribute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">entry_text</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">bool</span><span class="p">,</span> <span class="nb">str</span><span class="p">]:</span>
+        <span class="n">url</span> <span class="o">=</span> <span class="n">entry_text</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;URL&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">url</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">url</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">log_extraction_warning</span><span class="p">(</span>
+            <span class="n">attribute_class_name</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span>
+            <span class="n">warning_message</span><span class="o">=</span><span class="s2">&quot;Attribute: &#39;Crossref_URL&#39; was not found in the entry&quot;</span><span class="p">,</span>
+            <span class="n">entry_id</span><span class="o">=</span><span class="n">entry_text</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="p">(</span><span class="kc">False</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span></div>
+</div>
+
+
+
+<div class="viewcode-block" id="CrossrefDOIExtractionStrategy">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefDOIExtractionStrategy">[docs]</a>
+<span class="nd">@StrategyFactory</span><span class="o">.</span><span class="n">register_strategy</span><span class="p">(</span><span class="n">AttributeTypes</span><span class="o">.</span><span class="n">CROSSREF_DOI</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">CrossrefDOIExtractionStrategy</span><span class="p">(</span><span class="n">AttributeExtractionStrategy</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">warning_manager</span><span class="p">:</span> <span class="n">WarningManager</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">warning_manager</span><span class="o">=</span><span class="n">warning_manager</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span> <span class="o">=</span> <span class="n">configure_logging</span><span class="p">(</span>
+            <span class="n">module_name</span><span class="o">=</span><span class="vm">__name__</span><span class="p">,</span>
+            <span class="n">log_file_name</span><span class="o">=</span><span class="s2">&quot;crossref_doi_extraction_strategy&quot;</span><span class="p">,</span>
+            <span class="n">log_level</span><span class="o">=</span><span class="n">DEBUG</span><span class="p">,</span>
+        <span class="p">)</span>
+
+<div class="viewcode-block" id="CrossrefDOIExtractionStrategy.extract_attribute">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefDOIExtractionStrategy.extract_attribute">[docs]</a>
+    <span class="k">def</span> <span class="nf">extract_attribute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">entry_text</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">bool</span><span class="p">,</span> <span class="nb">str</span><span class="p">]:</span>
+        <span class="n">doi</span> <span class="o">=</span> <span class="n">entry_text</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;DOI&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">doi</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">doi</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">log_extraction_warning</span><span class="p">(</span>
+            <span class="n">attribute_class_name</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span>
+            <span class="n">warning_message</span><span class="o">=</span><span class="s2">&quot;Attribute: &#39;Crossref_DOI&#39; was not found in the entry&quot;</span><span class="p">,</span>
+            <span class="n">entry_id</span><span class="o">=</span><span class="n">entry_text</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="p">(</span><span class="kc">False</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span></div>
+</div>
+
+
+
+<div class="viewcode-block" id="CrossrefThemesExtractionStrategy">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefThemesExtractionStrategy">[docs]</a>
+<span class="nd">@StrategyFactory</span><span class="o">.</span><span class="n">register_strategy</span><span class="p">(</span><span class="n">AttributeTypes</span><span class="o">.</span><span class="n">CROSSREF_THEMES</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">CrossrefThemesExtractionStrategy</span><span class="p">(</span><span class="n">AttributeExtractionStrategy</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">warning_manager</span><span class="p">:</span> <span class="n">WarningManager</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">warning_manager</span><span class="o">=</span><span class="n">warning_manager</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span> <span class="o">=</span> <span class="n">configure_logging</span><span class="p">(</span>
+            <span class="n">module_name</span><span class="o">=</span><span class="vm">__name__</span><span class="p">,</span>
+            <span class="n">log_file_name</span><span class="o">=</span><span class="s2">&quot;crossref_themes_extraction_strategy&quot;</span><span class="p">,</span>
+            <span class="n">log_level</span><span class="o">=</span><span class="n">DEBUG</span><span class="p">,</span>
+        <span class="p">)</span>
+
+<div class="viewcode-block" id="CrossrefThemesExtractionStrategy.extract_attribute">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefThemesExtractionStrategy.extract_attribute">[docs]</a>
+    <span class="k">def</span> <span class="nf">extract_attribute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">entry_text</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">bool</span><span class="p">,</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]]:</span>
+        <span class="n">themes</span> <span class="o">=</span> <span class="n">entry_text</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;themes&quot;</span><span class="p">,</span> <span class="p">[])</span>
+        <span class="k">return</span> <span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">themes</span><span class="p">)</span></div>
+</div>
+
+
+
+<div class="viewcode-block" id="CrossrefExtraContextExtractionStrategy">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefExtraContextExtractionStrategy">[docs]</a>
+<span class="nd">@StrategyFactory</span><span class="o">.</span><span class="n">register_strategy</span><span class="p">(</span><span class="n">AttributeTypes</span><span class="o">.</span><span class="n">CROSSREF_EXTRA_CONTEXT</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">CrossrefExtraContextExtractionStrategy</span><span class="p">(</span><span class="n">AttributeExtractionStrategy</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">warning_manager</span><span class="p">:</span> <span class="n">WarningManager</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">warning_manager</span><span class="o">=</span><span class="n">warning_manager</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span> <span class="o">=</span> <span class="n">configure_logging</span><span class="p">(</span>
+            <span class="n">module_name</span><span class="o">=</span><span class="vm">__name__</span><span class="p">,</span>
+            <span class="n">log_file_name</span><span class="o">=</span><span class="s2">&quot;crossref_extra_context_extraction_strategy&quot;</span><span class="p">,</span>
+            <span class="n">log_level</span><span class="o">=</span><span class="n">DEBUG</span><span class="p">,</span>
+        <span class="p">)</span>
+
+<div class="viewcode-block" id="CrossrefExtraContextExtractionStrategy.extract_attribute">
+<a class="viewcode-back" href="../../../strategies.html#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefExtraContextExtractionStrategy.extract_attribute">[docs]</a>
+    <span class="k">def</span> <span class="nf">extract_attribute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">entry_text</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">bool</span><span class="p">,</span> <span class="nb">str</span><span class="p">]:</span>
+        <span class="n">extra_context</span> <span class="o">=</span> <span class="n">entry_text</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;extra_context&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">extra_context</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">extra_context</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">log_extraction_warning</span><span class="p">(</span>
+            <span class="n">attribute_class_name</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span>
+            <span class="n">warning_message</span><span class="o">=</span><span class="s2">&quot;Attribute: &#39;Crossref_Extra_Context&#39; was not found in the entry&quot;</span><span class="p">,</span>
+            <span class="n">entry_id</span><span class="o">=</span><span class="n">entry_text</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="p">(</span><span class="kc">False</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span></div>
+</div>
+
+</pre></div>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="clearer"></div>
+    </div>
+    <div class="button_nav_wrapper">
+        <div class="button_nav">
+            <div class="left">
+                
+            </div>
+
+            <div class="right">
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Spencer Presley, Cole Barbes.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    </div>
+
+<p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>
+  </body>
+</html>

@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>academic_metrics.utils.taxonomy_util &#8212; Academic Metrics 0.1.0-beta documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/basic_mod.css?v=9b2032db" />
+    <script src="../../../_static/documentation_options.js?v=c903bf51"></script>
+    <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <script src="../../../_static/js/petite-vue.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+  </head><body data-dark_mode_code_blocks="true">
+
+<div id="top_nav">
+    
+
+    <nav>
+        
+            
+        
+
+        <p id="toggle_sidebar">
+            <a href="#" title="Toggle sidebar">|||</a>
+        </p>
+        <h1><a href="../../../index.html" title="Go to homepage">Academic Metrics 0.1.0-beta documentation</a></h1>
+
+        <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
+    <template v-if="mode == 'light'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_light"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M67.48,18.073c1.913,-1.912 1.913,-5.018 0,-6.931c-1.912,-1.912 -5.018,-1.912 -6.931,0l-6.798,6.799c-1.912,1.912 -1.912,5.018 0,6.931c1.913,1.912 5.018,1.912 6.931,-0l6.798,-6.799Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.728,61.108c1.912,-1.913 1.912,-5.018 -0,-6.931c-1.913,-1.913 -5.019,-1.913 -6.931,-0l-6.799,6.798c-1.912,1.913 -1.912,5.019 0,6.931c1.913,1.913 5.019,1.913 6.931,0l6.799,-6.798Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.682,54.177c-1.913,-1.913 -5.018,-1.913 -6.931,-0c-1.912,1.913 -1.912,5.018 0,6.931l6.798,6.798c1.913,1.913 5.019,1.913 6.931,0c1.913,-1.912 1.913,-5.018 0,-6.931l-6.798,-6.798Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M4.901,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,-0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M18.929,11.142c-1.912,-1.912 -5.018,-1.912 -6.931,0c-1.912,1.913 -1.912,5.019 0,6.931l6.799,6.799c1.912,1.912 5.018,1.912 6.931,-0c1.912,-1.913 1.912,-5.019 -0,-6.931l-6.799,-6.799Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.108,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c-0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c-0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'dark'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_dark"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.901,2.196 -4.901,4.901c0,2.705 2.197,4.901 4.901,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.662,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.989,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.732,61.103c1.91,-1.91 1.91,-5.011 0,-6.921l-0.009,-0.01c-1.91,-1.91 -5.012,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.909,1.91 5.011,1.91 6.92,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.672,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.52,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l-0,-0.01c-0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.901,2.196 -4.901,4.901c0,2.704 2.197,4.9 4.901,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.73,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 -0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.098,34.623c-2.699,0 -4.891,2.192 -4.891,4.892l-0,0.019c-0,2.699 2.192,4.891 4.891,4.891c2.7,0 4.892,-2.192 4.892,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.892,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'darkest'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_darkest"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><path d="M39.315,23.791c8.684,-0 15.734,7.05 15.734,15.733c0,8.684 -7.05,15.734 -15.734,15.734c-8.683,0 -15.733,-7.05 -15.733,-15.734c-0,-8.683 7.05,-15.733 15.733,-15.733Zm0,4.737c6.069,0 10.997,4.927 10.997,10.996c-0,6.069 -4.928,10.996 -10.997,10.996c-6.068,0 -10.996,-4.927 -10.996,-10.996c0,-6.069 4.928,-10.996 10.996,-10.996Z" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.216,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.9,2.196 -4.9,4.901c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.666,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.99,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.737,61.103c1.909,-1.91 1.909,-5.011 -0,-6.921l-0.01,-0.01c-1.91,-1.91 -5.011,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.91,1.91 5.011,1.91 6.921,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.676,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.524,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l0,-0.01c0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.216,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901c-0,2.704 2.196,4.9 4.9,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.734,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.103,34.623c-2.7,0 -4.892,2.192 -4.892,4.892l-0,0.019c-0,2.699 2.192,4.891 4.892,4.891c2.699,0 4.891,-2.192 4.891,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.891,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+</a>
+
+<script>
+(function() {
+    const LOCAL_STORAGE_KEY = 'piccoloThemeMode'
+
+    var initialMode = localStorage.getItem(LOCAL_STORAGE_KEY)
+
+    if (initialMode) {
+        // Make sure the value in local storage is valid
+        if (['light', 'dark', 'darkest'].indexOf(initialMode) == -1) {
+            initialMode = 'light'
+            localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+        }
+    } else {
+        // Check if the client prefers dark mode
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            initialMode = 'dark'
+        } else {
+            initialMode = 'light'
+        }
+        localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+    }
+
+    document.documentElement.dataset.mode = initialMode
+
+    PetiteVue.createApp({
+        'mode': initialMode,
+        handleClick() {
+            let currentMode = this.mode
+
+            if (currentMode == 'light') {
+                this.mode = 'dark'
+            } else if (currentMode == 'dark') {
+                this.mode = 'darkest'
+            } else if (currentMode == 'darkest') {
+                this.mode = 'light'
+            }
+
+            document.documentElement.dataset.mode = this.mode
+            localStorage.setItem(LOCAL_STORAGE_KEY, this.mode)
+
+            console.log(this.mode)
+        }
+    }).mount('#mode_toggle')
+})()
+</script>
+            <p class="mobile_search_link">
+                <a href="../../../search.html" title="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 64" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path d="M14.873 40.009c-2.315-3.943-3.642-8.532-3.642-13.429C11.231 11.91 23.141 0 37.811 0s26.58 11.91 26.58 26.58-11.91 26.58-26.58 26.58a26.44 26.44 0 0 1-14.277-4.161L9.739 62.794a3.12 3.12 0 0 1-4.413 0L.913 58.382c-1.217-1.218-1.217-3.196 0-4.413l13.96-13.96zM37.811 8.054c10.225 0 18.526 8.301 18.526 18.526s-8.301 18.526-18.526 18.526-18.526-8.301-18.526-18.526S27.586 8.054 37.811 8.054z" fill="#fff" />
+                    </svg>
+                </a>
+            </p>
+        
+
+        <div class="searchbox_wrapper">
+            
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../abstract_classifier.html">Abstract Classifier Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../category_processor.html">Category Processor Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../faculty_set_postprocessor.html">Faculty Set Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../config.html">Global Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../chain_builder.html">Chain Builder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ai_prompts.html">ai_prompts package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../data_collection.html">data_collection package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../dataclass_models.html">dataclass_models package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../DB.html">DB package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../enums.html">enums package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../factories.html">factories package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../orchestrators.html">orchestrators package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../other.html">other package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../runners.html">runners package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../strategies.html">strategies package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../utils.html">utils package</a></li>
+</ul>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for academic_metrics.utils.taxonomy_util</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">List</span><span class="p">,</span> <span class="n">Literal</span><span class="p">,</span> <span class="n">TypeAlias</span>
+
+<span class="kn">from</span> <span class="nn">academic_metrics.configs</span> <span class="kn">import</span> <span class="n">configure_logging</span><span class="p">,</span> <span class="n">DEBUG</span>
+<span class="kn">from</span> <span class="nn">academic_metrics.other.in_memory_taxonomy</span> <span class="kn">import</span> <span class="n">TAXONOMY_AS_STRING</span>
+
+<span class="c1"># Type Aliases</span>
+<span class="n">TaxonomyDict</span><span class="p">:</span> <span class="n">TypeAlias</span> <span class="o">=</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]]</span>
+<span class="sd">&quot;&quot;&quot;Type alias representing the taxonomy dictionary structure.</span>
+
+<span class="sd">This type represents a three-level nested dictionary structure where:</span>
+<span class="sd">    - The outer dictionary maps top-level category names to mid-level dictionaries</span>
+<span class="sd">    - The mid-level dictionaries map mid-level category names to lists of low-level categories</span>
+<span class="sd">    - The innermost lists contain strings representing low-level category names</span>
+
+<span class="sd">Type Structure:</span>
+<span class="sd">    Dict[str, Dict[str, List[str]]] where:</span>
+<span class="sd">        - First str: Top-level category name</span>
+<span class="sd">        - Second str: Mid-level category name</span>
+<span class="sd">        - List[str]: List of low-level category names</span>
+
+<span class="sd">Example Structure:</span>
+<span class="sd">    .. code-block:: python</span>
+
+<span class="sd">        {</span>
+<span class="sd">            &quot;Computer Science&quot;: {                     # Top-level category</span>
+<span class="sd">                &quot;Artificial Intelligence&quot;: [          # Mid-level category</span>
+<span class="sd">                    &quot;Machine Learning&quot;,              # Low-level category</span>
+<span class="sd">                    &quot;Natural Language Processing&quot;,   # Low-level category</span>
+<span class="sd">                    &quot;Computer Vision&quot;                # Low-level category</span>
+<span class="sd">                ],</span>
+<span class="sd">                &quot;Software Engineering&quot;: [</span>
+<span class="sd">                    &quot;Software Design&quot;,</span>
+<span class="sd">                    &quot;Software Testing&quot;,</span>
+<span class="sd">                    &quot;DevOps&quot;</span>
+<span class="sd">                ]</span>
+<span class="sd">            }</span>
+<span class="sd">        }</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="n">TaxonomyLevel</span><span class="p">:</span> <span class="n">TypeAlias</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span><span class="s2">&quot;top&quot;</span><span class="p">,</span> <span class="s2">&quot;mid&quot;</span><span class="p">,</span> <span class="s2">&quot;low&quot;</span><span class="p">]</span>
+<span class="sd">&quot;&quot;&quot;Type alias representing valid taxonomy levels.</span>
+
+<span class="sd">This type represents the three possible levels in the taxonomy hierarchy using string literals.</span>
+
+<span class="sd">Type Structure:</span>
+<span class="sd">    Literal[&quot;top&quot;, &quot;mid&quot;, &quot;low&quot;] where:</span>
+<span class="sd">        - &quot;top&quot;: Represents the highest level categories (e.g., &quot;Computer Science&quot;)</span>
+<span class="sd">        - &quot;mid&quot;: Represents middle-level categories (e.g., &quot;Artificial Intelligence&quot;)</span>
+<span class="sd">        - &quot;low&quot;: Represents the most specific categories (e.g., &quot;Machine Learning&quot;)</span>
+
+<span class="sd">Usage:</span>
+<span class="sd">    .. code-block:: python</span>
+
+<span class="sd">        def example_function(level: TaxonomyLevel) -&gt; None:</span>
+<span class="sd">            match level:</span>
+<span class="sd">                case &quot;top&quot;:</span>
+<span class="sd">                    # Handle top-level category</span>
+<span class="sd">                    pass</span>
+<span class="sd">                case &quot;mid&quot;:</span>
+<span class="sd">                    # Handle mid-level category</span>
+<span class="sd">                    pass</span>
+<span class="sd">                case &quot;low&quot;:</span>
+<span class="sd">                    # Handle low-level category</span>
+<span class="sd">                    pass</span>
+
+<span class="sd">Note:</span>
+<span class="sd">    The type system will ensure that only these three string literals can be used</span>
+<span class="sd">    where a TaxonomyLevel is expected. Any other string will result in a type error.</span>
+
+<span class="sd">Example:</span>
+<span class="sd">    .. code-block:: python</span>
+
+<span class="sd">        # Valid usage</span>
+<span class="sd">        level: TaxonomyLevel = &quot;top&quot;      # OK</span>
+<span class="sd">        level: TaxonomyLevel = &quot;mid&quot;      # OK</span>
+<span class="sd">        level: TaxonomyLevel = &quot;low&quot;      # OK</span>
+<span class="sd">        </span>
+<span class="sd">        # Invalid usage (would cause type error)</span>
+<span class="sd">        # level: TaxonomyLevel = &quot;other&quot;  # Type error!</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+
+<div class="viewcode-block" id="Taxonomy">
+<a class="viewcode-back" href="../../../utils.html#academic_metrics.utils.taxonomy_util.Taxonomy">[docs]</a>
+<span class="k">class</span> <span class="nc">Taxonomy</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;A class for managing and querying a three-level taxonomy structure.</span>
+
+<span class="sd">    This class provides functionality to work with a hierarchical taxonomy that has three levels:</span>
+<span class="sd">    top, mid, and low. It allows for querying categories at each level, validating categories,</span>
+<span class="sd">    and finding relationships between categories at different levels.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">        _taxonomy (TaxonomyDict): The complete taxonomy structure as a nested dictionary.</span>
+<span class="sd">        _valid_levels (List[TaxonomyLevel]): List of valid taxonomy levels [&quot;top&quot;, &quot;mid&quot;, &quot;low&quot;].</span>
+<span class="sd">        _all_top_categories (List[str]): Cached list of all top-level categories.</span>
+<span class="sd">        _all_mid_categories (List[str]): Cached list of all mid-level categories.</span>
+<span class="sd">        _all_low_categories (List[str]): Cached list of all low-level categories.</span>
+<span class="sd">        logger (logging.Logger): Logger instance for this class.</span>
+
+<span class="sd">    Methods:</span>
+<span class="sd">        Public Methods:</span>
+<span class="sd">            get_top_categories(): Get all top-level categories.</span>
+<span class="sd">            get_mid_categories(top_category): Get mid-level categories for a top category.</span>
+<span class="sd">            get_low_categories(top_category, mid_category): Get low-level categories.</span>
+<span class="sd">            get_top_cat_for_mid_cat(mid_cat): Find parent top category of a mid category.</span>
+<span class="sd">            get_mid_cat_for_low_cat(low_cat): Find parent mid category of a low category.</span>
+<span class="sd">            is_valid_category(category, level): Check if a category exists at a level.</span>
+<span class="sd">            get_taxonomy(): Get the complete taxonomy dictionary.</span>
+
+<span class="sd">        Private Methods:</span>
+<span class="sd">            _set_all_top_categories(): Initialize list of top categories.</span>
+<span class="sd">            _set_all_mid_categories(): Initialize list of mid categories.</span>
+<span class="sd">            _set_all_low_categories(): Initialize list of low categories.</span>
+<span class="sd">            _load_taxonomy_from_string(taxonomy_str, logger): Load taxonomy from JSON.</span>
+
+<span class="sd">    Examples:</span>
+<span class="sd">        &gt;&gt;&gt; # Create a taxonomy instance</span>
+<span class="sd">        &gt;&gt;&gt; taxonomy = Taxonomy()</span>
+<span class="sd">        &gt;&gt;&gt;</span>
+<span class="sd">        &gt;&gt;&gt; # Get categories at different levels</span>
+<span class="sd">        &gt;&gt;&gt; top_cats = taxonomy.get_top_categories()</span>
+<span class="sd">        &gt;&gt;&gt; mid_cats = taxonomy.get_mid_categories(top_cats[0])</span>
+<span class="sd">        &gt;&gt;&gt; low_cats = taxonomy.get_low_categories(top_cats[0], mid_cats[0])</span>
+<span class="sd">        &gt;&gt;&gt;</span>
+<span class="sd">        &gt;&gt;&gt; # Validate categories</span>
+<span class="sd">        &gt;&gt;&gt; taxonomy.is_valid_category(top_cats[0], &quot;top&quot;)</span>
+<span class="sd">        True</span>
+<span class="sd">        &gt;&gt;&gt;</span>
+<span class="sd">        &gt;&gt;&gt; # Find parent categories</span>
+<span class="sd">        &gt;&gt;&gt; parent_top = taxonomy.get_top_cat_for_mid_cat(mid_cats[0])</span>
+<span class="sd">        &gt;&gt;&gt; parent_mid = taxonomy.get_mid_cat_for_low_cat(low_cats[0])</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Initializes a new Taxonomy instance.</span>
+
+<span class="sd">        This constructor initializes the taxonomy by loading the taxonomy data from a predefined</span>
+<span class="sd">        string constant (TAXONOMY_AS_STRING). It sets up logging and initializes internal lists</span>
+<span class="sd">        of categories at all levels (top, mid, and low).</span>
+
+<span class="sd">        The taxonomy follows a three-level hierarchical structure:</span>
+<span class="sd">        - Top level: Broad categories</span>
+<span class="sd">        - Mid level: Sub-categories under each top category</span>
+<span class="sd">        - Low level: Specific categories under each mid category</span>
+
+<span class="sd">        Examples:</span>
+<span class="sd">            &gt;&gt;&gt; # Create a new taxonomy instance</span>
+<span class="sd">            &gt;&gt;&gt; taxonomy = Taxonomy()</span>
+<span class="sd">            &gt;&gt;&gt; isinstance(taxonomy._taxonomy, dict)</span>
+<span class="sd">            True</span>
+
+<span class="sd">            &gt;&gt;&gt; # Verify initialization of category lists</span>
+<span class="sd">            &gt;&gt;&gt; all(isinstance(cats, list) for cats in [</span>
+<span class="sd">            ...     taxonomy._all_top_categories,</span>
+<span class="sd">            ...     taxonomy._all_mid_categories,</span>
+<span class="sd">            ...     taxonomy._all_low_categories</span>
+<span class="sd">            ... ])</span>
+<span class="sd">            True</span>
+
+<span class="sd">            &gt;&gt;&gt; # Check that valid levels are properly set</span>
+<span class="sd">            &gt;&gt;&gt; taxonomy._valid_levels == [&quot;top&quot;, &quot;mid&quot;, &quot;low&quot;]</span>
+<span class="sd">            True</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span> <span class="o">=</span> <span class="n">configure_logging</span><span class="p">(</span>
+            <span class="n">module_name</span><span class="o">=</span><span class="vm">__name__</span><span class="p">,</span>
+            <span class="n">log_file_name</span><span class="o">=</span><span class="s2">&quot;taxonomy_util&quot;</span><span class="p">,</span>
+            <span class="n">log_level</span><span class="o">=</span><span class="n">DEBUG</span><span class="p">,</span>
+        <span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Initializing Taxonomy&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_taxonomy</span><span class="p">:</span> <span class="n">TaxonomyDict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_load_taxonomy_from_string</span><span class="p">(</span>
+            <span class="n">TAXONOMY_AS_STRING</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">logger</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Taxonomy initialized successfully&quot;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_valid_levels</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">TaxonomyLevel</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;top&quot;</span><span class="p">,</span> <span class="s2">&quot;mid&quot;</span><span class="p">,</span> <span class="s2">&quot;low&quot;</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_all_top_categories</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_set_all_top_categories</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_all_mid_categories</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_set_all_mid_categories</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_all_low_categories</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_set_all_low_categories</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Returns a string representation of the taxonomy.</span>
+
+<span class="sd">        Converts the taxonomy dictionary into a formatted JSON string with proper indentation.</span>
+<span class="sd">        This method is useful for debugging and displaying the taxonomy structure.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            str: A JSON-formatted string representation of the taxonomy.</span>
+
+<span class="sd">        Examples:</span>
+<span class="sd">            &gt;&gt;&gt; taxonomy = Taxonomy()</span>
+<span class="sd">            &gt;&gt;&gt; taxonomy_str = str(taxonomy)</span>
+<span class="sd">            &gt;&gt;&gt; isinstance(taxonomy_str, str)</span>
+<span class="sd">            True</span>
+<span class="sd">            &gt;&gt;&gt; # Verify it&#39;s valid JSON</span>
+<span class="sd">            &gt;&gt;&gt; json.loads(taxonomy_str) == taxonomy._taxonomy</span>
+<span class="sd">            True</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Converting taxonomy to string&quot;</span><span class="p">)</span>
+        <span class="n">taxonomy_str</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_taxonomy</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Taxonomy string converted successfully&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">taxonomy_str</span>
+
+<div class="viewcode-block" id="Taxonomy._set_all_top_categories">
+<a class="viewcode-back" href="../../../utils.html#academic_metrics.utils.taxonomy_util.Taxonomy._set_all_top_categories">[docs]</a>
+    <span class="k">def</span> <span class="nf">_set_all_top_categories</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Sets and returns all top-level categories from the taxonomy.</span>
+
+<span class="sd">        This private method initializes the list of all top-level categories</span>
+<span class="sd">        by calling get_top_categories(). It&#39;s used during taxonomy initialization</span>
+<span class="sd">        to cache the top-level categories for faster access.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            List[str]: A list of all top-level categories in the taxonomy.</span>
+
+<span class="sd">        Examples:</span>
+<span class="sd">            &gt;&gt;&gt; taxonomy = Taxonomy()</span>
+<span class="sd">            &gt;&gt;&gt; top_cats = taxonomy._set_all_top_categories()</span>
+<span class="sd">            &gt;&gt;&gt; isinstance(top_cats, list)</span>
+<span class="sd">            True</span>
+<span class="sd">            &gt;&gt;&gt; # Verify all elements are strings</span>
+<span class="sd">            &gt;&gt;&gt; all(isinstance(cat, str) for cat in top_cats)</span>
+<span class="sd">            True</span>
+<span class="sd">            &gt;&gt;&gt; # Verify it matches direct access to top categories</span>
+<span class="sd">            &gt;&gt;&gt; top_cats == taxonomy.get_top_categories()</span>
+<span class="sd">            True</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_top_categories</span><span class="p">()</span></div>
+
+
+<div class="viewcode-block" id="Taxonomy._set_all_mid_categories">
+<a class="viewcode-back" href="../../../utils.html#academic_metrics.utils.taxonomy_util.Taxonomy._set_all_mid_categories">[docs]</a>
+    <span class="k">def</span> <span class="nf">_set_all_mid_categories</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Sets and returns all mid-level categories from the taxonomy.</span>
+
+<span class="sd">        This private method collects all mid-level categories across all top-level categories</span>
+<span class="sd">        by iterating through the taxonomy structure. It&#39;s used during taxonomy initialization</span>
+<span class="sd">        to cache the mid-level categories for faster access.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            List[str]: A list of all mid-level categories in the taxonomy.</span>
+
+<span class="sd">        Examples:</span>
+<span class="sd">            &gt;&gt;&gt; taxonomy = Taxonomy()</span>
+<span class="sd">            &gt;&gt;&gt; mid_cats = taxonomy._set_all_mid_categories()</span>
+<span class="sd">            &gt;&gt;&gt; isinstance(mid_cats, list)</span>
+<span class="sd">            True</span>
+<span class="sd">            &gt;&gt;&gt; # Verify all elements are strings</span>
+<span class="sd">            &gt;&gt;&gt; all(isinstance(cat, str) for cat in mid_cats)</span>
+<span class="sd">            True</span>
+<span class="sd">            &gt;&gt;&gt; # Verify each mid category belongs to some top category</span>
+<span class="sd">            &gt;&gt;&gt; any(mid_cats[0] in taxonomy.get_mid_categories(top_cat)</span>
+<span class="sd">            ...     for top_cat in taxonomy.get_top_categories())</span>
+<span class="sd">            True</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">top_cats</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_top_categories</span><span class="p">()</span>
+        <span class="n">mid_cats</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">top_cat</span> <span class="ow">in</span> <span class="n">top_cats</span><span class="p">:</span>
+            <span class="n">mid_cats</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_mid_categories</span><span class="p">(</span><span class="n">top_cat</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">mid_cats</span></div>
+
+
+<div class="viewcode-block" id="Taxonomy._set_all_low_categories">
+<a class="viewcode-back" href="../../../utils.html#academic_metrics.utils.taxonomy_util.Taxonomy._set_all_low_categories">[docs]</a>
+    <span class="k">def</span> <span class="nf">_set_all_low_categories</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Sets and returns all low-level categories from the taxonomy.</span>
+
+<span class="sd">        This private method collects all low-level categories by iterating through</span>
+<span class="sd">        all top and mid-level categories in the taxonomy structure. It&#39;s used during</span>
+<span class="sd">        taxonomy initialization to cache the low-level categories for faster access.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            List[str]: A list of all low-level categories in the taxonomy.</span>
+
+<span class="sd">        Examples:</span>
+<span class="sd">            &gt;&gt;&gt; taxonomy = Taxonomy()</span>
+<span class="sd">            &gt;&gt;&gt; low_cats = taxonomy._set_all_low_categories()</span>
+<span class="sd">            &gt;&gt;&gt; isinstance(low_cats, list)</span>
+<span class="sd">            True</span>
+<span class="sd">            &gt;&gt;&gt; # Verify all elements are strings</span>
+<span class="sd">            &gt;&gt;&gt; all(isinstance(cat, str) for cat in low_cats)</span>
+<span class="sd">            True</span>
+<span class="sd">            &gt;&gt;&gt; # Verify first low category exists in taxonomy structure</span>
+<span class="sd">            &gt;&gt;&gt; top_cat = taxonomy.get_top_categories()[0]</span>
+<span class="sd">            &gt;&gt;&gt; mid_cat = taxonomy.get_mid_categories(top_cat)[0]</span>
+<span class="sd">            &gt;&gt;&gt; low_cats[0] in taxonomy.get_low_categories(top_cat, mid_cat)</span>
+<span class="sd">            True</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">top_cats</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_top_categories</span><span class="p">()</span>
+        <span class="n">low_cats</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">top_cat</span> <span class="ow">in</span> <span class="n">top_cats</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">mid_cat</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_mid_categories</span><span class="p">(</span><span class="n">top_cat</span><span class="p">):</span>
+                <span class="n">low_cats</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_low_categories</span><span class="p">(</span><span class="n">top_cat</span><span class="p">,</span> <span class="n">mid_cat</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">low_cats</span></div>
+
+
+<div class="viewcode-block" id="Taxonomy.get_top_categories">
+<a class="viewcode-back" href="../../../utils.html#academic_metrics.utils.taxonomy_util.Taxonomy.get_top_categories">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_top_categories</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Retrieves all top-level categories from the taxonomy.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            List[str]: A list of all top-level category names.</span>
+
+<span class="sd">        Examples:</span>
+<span class="sd">            &gt;&gt;&gt; taxonomy = Taxonomy()</span>
+<span class="sd">            &gt;&gt;&gt; top_cats = taxonomy.get_top_categories()</span>
+<span class="sd">            &gt;&gt;&gt; isinstance(top_cats, list)</span>
+<span class="sd">            True</span>
+<span class="sd">            &gt;&gt;&gt; # Verify all elements are strings</span>
+<span class="sd">            &gt;&gt;&gt; all(isinstance(cat, str) for cat in top_cats)</span>
+<span class="sd">            True</span>
+<span class="sd">            &gt;&gt;&gt; # Verify returned list matches taxonomy keys</span>
+<span class="sd">            &gt;&gt;&gt; top_cats == list(taxonomy._taxonomy.keys())</span>
+<span class="sd">            True</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_taxonomy</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span></div>
+
+
+<div class="viewcode-block" id="Taxonomy.get_mid_categories">
+<a class="viewcode-back" href="../../../utils.html#academic_metrics.utils.taxonomy_util.Taxonomy.get_mid_categories">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_mid_categories</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">top_category</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Retrieves all mid-level categories for a given top-level category.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            top_category (str): The top-level category name to get mid-level categories for.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            List[str]: A list of all mid-level category names under the specified top category.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            KeyError: If the top_category doesn&#39;t exist in the taxonomy.</span>
+
+<span class="sd">        Examples:</span>
+<span class="sd">            &gt;&gt;&gt; taxonomy = Taxonomy()</span>
+<span class="sd">            &gt;&gt;&gt; top_cat = taxonomy.get_top_categories()[0]</span>
+<span class="sd">            &gt;&gt;&gt; mid_cats = taxonomy.get_mid_categories(top_cat)</span>
+<span class="sd">            &gt;&gt;&gt; isinstance(mid_cats, list)</span>
+<span class="sd">            True</span>
+<span class="sd">            &gt;&gt;&gt; # Verify all elements are strings</span>
+<span class="sd">            &gt;&gt;&gt; all(isinstance(cat, str) for cat in mid_cats)</span>
+<span class="sd">            True</span>
+<span class="sd">            &gt;&gt;&gt; # Verify error handling</span>
+<span class="sd">            &gt;&gt;&gt; try:</span>
+<span class="sd">            ...     taxonomy.get_mid_categories(&quot;nonexistent_category&quot;)</span>
+<span class="sd">            ... except KeyError:</span>
+<span class="sd">            ...     True</span>
+<span class="sd">            True</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_taxonomy</span><span class="p">[</span><span class="n">top_category</span><span class="p">]</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span></div>
+
+
+<div class="viewcode-block" id="Taxonomy.get_low_categories">
+<a class="viewcode-back" href="../../../utils.html#academic_metrics.utils.taxonomy_util.Taxonomy.get_low_categories">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_low_categories</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">top_category</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">mid_category</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Retrieves all low-level categories for given top and mid-level categories.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            top_category (str): The top-level category name.</span>
+<span class="sd">            mid_category (str): The mid-level category name under the top category.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            List[str]: A list of all low-level category names under the specified categories.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            KeyError: If either the top_category or mid_category doesn&#39;t exist in the taxonomy.</span>
+
+<span class="sd">        Examples:</span>
+<span class="sd">            &gt;&gt;&gt; taxonomy = Taxonomy()</span>
+<span class="sd">            &gt;&gt;&gt; top_cat = taxonomy.get_top_categories()[0]</span>
+<span class="sd">            &gt;&gt;&gt; mid_cat = taxonomy.get_mid_categories(top_cat)[0]</span>
+<span class="sd">            &gt;&gt;&gt; low_cats = taxonomy.get_low_categories(top_cat, mid_cat)</span>
+<span class="sd">            &gt;&gt;&gt; isinstance(low_cats, list)</span>
+<span class="sd">            True</span>
+<span class="sd">            &gt;&gt;&gt; # Verify all elements are strings</span>
+<span class="sd">            &gt;&gt;&gt; all(isinstance(cat, str) for cat in low_cats)</span>
+<span class="sd">            True</span>
+<span class="sd">            &gt;&gt;&gt; # Verify error handling for invalid categories</span>
+<span class="sd">            &gt;&gt;&gt; try:</span>
+<span class="sd">            ...     taxonomy.get_low_categories(&quot;nonexistent&quot;, &quot;category&quot;)</span>
+<span class="sd">            ... except KeyError:</span>
+<span class="sd">            ...     True</span>
+<span class="sd">            True</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_taxonomy</span><span class="p">[</span><span class="n">top_category</span><span class="p">][</span><span class="n">mid_category</span><span class="p">]</span></div>
+
+
+<div class="viewcode-block" id="Taxonomy.get_top_cat_for_mid_cat">
+<a class="viewcode-back" href="../../../utils.html#academic_metrics.utils.taxonomy_util.Taxonomy.get_top_cat_for_mid_cat">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_top_cat_for_mid_cat</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mid_cat</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Finds the top-level category that contains a given mid-level category.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            mid_cat (str): The mid-level category to find the parent for.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            str: The name of the top-level category containing the mid-level category.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            ValueError: If the mid_cat is not found in any top-level category.</span>
+
+<span class="sd">        Examples:</span>
+<span class="sd">            &gt;&gt;&gt; taxonomy = Taxonomy()</span>
+<span class="sd">            &gt;&gt;&gt; # Get a known mid category and its top category</span>
+<span class="sd">            &gt;&gt;&gt; top_cat = taxonomy.get_top_categories()[0]</span>
+<span class="sd">            &gt;&gt;&gt; mid_cat = taxonomy.get_mid_categories(top_cat)[0]</span>
+<span class="sd">            &gt;&gt;&gt; # Verify we can find the top category</span>
+<span class="sd">            &gt;&gt;&gt; found_top = taxonomy.get_top_cat_for_mid_cat(mid_cat)</span>
+<span class="sd">            &gt;&gt;&gt; found_top == top_cat</span>
+<span class="sd">            True</span>
+<span class="sd">            &gt;&gt;&gt; # Verify error handling for invalid mid category</span>
+<span class="sd">            &gt;&gt;&gt; try:</span>
+<span class="sd">            ...     taxonomy.get_top_cat_for_mid_cat(&quot;nonexistent_category&quot;)</span>
+<span class="sd">            ... except ValueError:</span>
+<span class="sd">            ...     True</span>
+<span class="sd">            True</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Getting top category for mid category: </span><span class="si">{</span><span class="n">mid_cat</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="n">top_cat</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+        <span class="n">found</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
+
+        <span class="k">while</span> <span class="ow">not</span> <span class="n">found</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                <span class="sa">f</span><span class="s2">&quot;Iterating through top_cat, mid_cat key value pairs in taxonomy&quot;</span>
+            <span class="p">)</span>
+            <span class="k">for</span> <span class="n">top_cat</span><span class="p">,</span> <span class="n">mid_cats</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_taxonomy</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Checking mid category: </span><span class="si">{</span><span class="n">mid_cat</span><span class="si">}</span><span class="s2"> in </span><span class="si">{</span><span class="n">mid_cats</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">mid_cat</span> <span class="ow">in</span> <span class="n">mid_cats</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Mid category: </span><span class="si">{</span><span class="n">mid_cat</span><span class="si">}</span><span class="s2"> found in </span><span class="si">{</span><span class="n">mid_cats</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                    <span class="n">found</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span>
+                    <span class="k">break</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                <span class="sa">f</span><span class="s2">&quot;Completed iteration through top_cat, mid_cat key value pairs in taxonomy&quot;</span>
+            <span class="p">)</span>
+            <span class="k">if</span> <span class="n">found</span><span class="p">:</span>
+                <span class="k">break</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Found top category: </span><span class="si">{</span><span class="n">top_cat</span><span class="si">}</span><span class="s2"> for mid category: </span><span class="si">{</span><span class="n">mid_cat</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">top_cat</span></div>
+
+
+<div class="viewcode-block" id="Taxonomy.get_mid_cat_for_low_cat">
+<a class="viewcode-back" href="../../../utils.html#academic_metrics.utils.taxonomy_util.Taxonomy.get_mid_cat_for_low_cat">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_mid_cat_for_low_cat</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">low_cat</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Finds the mid-level category that contains a given low-level category.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            low_cat (str): The low-level category to find the parent for.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            str: The name of the mid-level category containing the low-level category.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            ValueError: If the low_cat is not found in any mid-level category.</span>
+
+<span class="sd">        Examples:</span>
+<span class="sd">            &gt;&gt;&gt; taxonomy = Taxonomy()</span>
+<span class="sd">            &gt;&gt;&gt; # Get a known low category and its parent categories</span>
+<span class="sd">            &gt;&gt;&gt; top_cat = taxonomy.get_top_categories()[0]</span>
+<span class="sd">            &gt;&gt;&gt; mid_cat = taxonomy.get_mid_categories(top_cat)[0]</span>
+<span class="sd">            &gt;&gt;&gt; low_cat = taxonomy.get_low_categories(top_cat, mid_cat)[0]</span>
+<span class="sd">            &gt;&gt;&gt; # Verify we can find the mid category</span>
+<span class="sd">            &gt;&gt;&gt; found_mid = taxonomy.get_mid_cat_for_low_cat(low_cat)</span>
+<span class="sd">            &gt;&gt;&gt; found_mid == mid_cat</span>
+<span class="sd">            True</span>
+<span class="sd">            &gt;&gt;&gt; # Verify error handling for invalid low category</span>
+<span class="sd">            &gt;&gt;&gt; try:</span>
+<span class="sd">            ...     taxonomy.get_mid_cat_for_low_cat(&quot;nonexistent_category&quot;)</span>
+<span class="sd">            ... except ValueError:</span>
+<span class="sd">            ...     True</span>
+<span class="sd">            True</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Getting mid category for low category: </span><span class="si">{</span><span class="n">low_cat</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="n">mid_cat</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+        <span class="n">found</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="k">while</span> <span class="ow">not</span> <span class="n">found</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                <span class="sa">f</span><span class="s2">&quot;Iterating through top_cat, mid_cat, low_cat key value pairs in taxonomy&quot;</span>
+            <span class="p">)</span>
+            <span class="k">for</span> <span class="n">top_cat</span><span class="p">,</span> <span class="n">mid_cats</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_taxonomy</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="k">for</span> <span class="n">mid_cat</span><span class="p">,</span> <span class="n">low_cats</span> <span class="ow">in</span> <span class="n">mid_cats</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Checking low category: </span><span class="si">{</span><span class="n">low_cat</span><span class="si">}</span><span class="s2"> in </span><span class="si">{</span><span class="n">low_cats</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                    <span class="k">if</span> <span class="n">low_cat</span> <span class="ow">in</span> <span class="n">low_cats</span><span class="p">:</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Low category: </span><span class="si">{</span><span class="n">low_cat</span><span class="si">}</span><span class="s2"> found in </span><span class="si">{</span><span class="n">low_cats</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                        <span class="n">found</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span>
+                        <span class="k">break</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                <span class="sa">f</span><span class="s2">&quot;Completed iteration through top_cat, mid_cat, low_cat key value pairs in taxonomy&quot;</span>
+            <span class="p">)</span>
+            <span class="k">if</span> <span class="n">found</span><span class="p">:</span>
+                <span class="k">break</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Found mid category: </span><span class="si">{</span><span class="n">mid_cat</span><span class="si">}</span><span class="s2"> for low category: </span><span class="si">{</span><span class="n">low_cat</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">mid_cat</span></div>
+
+
+<div class="viewcode-block" id="Taxonomy.is_valid_category">
+<a class="viewcode-back" href="../../../utils.html#academic_metrics.utils.taxonomy_util.Taxonomy.is_valid_category">[docs]</a>
+    <span class="k">def</span> <span class="nf">is_valid_category</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">category</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">level</span><span class="p">:</span> <span class="n">TaxonomyLevel</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Validates whether a category exists in the taxonomy at the specified level.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            category (str): The name of the category to validate.</span>
+<span class="sd">            level (TaxonomyLevel): The taxonomy level to validate against.</span>
+<span class="sd">                TaxonomyLevel is a type alias for the taxonomy levels; it can be one of the following: &quot;top&quot;, &quot;mid&quot;, or &quot;low&quot;.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            bool: True if the category exists at the specified level; otherwise, False.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            ValueError: If the provided taxonomy level is invalid.</span>
+
+<span class="sd">        Examples:</span>
+<span class="sd">            &gt;&gt;&gt; taxonomy = Taxonomy()</span>
+<span class="sd">            &gt;&gt;&gt; # Get known categories at each level</span>
+<span class="sd">            &gt;&gt;&gt; top_cat = taxonomy.get_top_categories()[0]</span>
+<span class="sd">            &gt;&gt;&gt; mid_cat = taxonomy.get_mid_categories(top_cat)[0]</span>
+<span class="sd">            &gt;&gt;&gt; low_cat = taxonomy.get_low_categories(top_cat, mid_cat)[0]</span>
+
+<span class="sd">            &gt;&gt;&gt; # Test valid categories at each level</span>
+<span class="sd">            &gt;&gt;&gt; taxonomy.is_valid_category(top_cat, &quot;top&quot;)</span>
+<span class="sd">            True</span>
+<span class="sd">            &gt;&gt;&gt; taxonomy.is_valid_category(mid_cat, &quot;mid&quot;)</span>
+<span class="sd">            True</span>
+<span class="sd">            &gt;&gt;&gt; taxonomy.is_valid_category(low_cat, &quot;low&quot;)</span>
+<span class="sd">            True</span>
+
+<span class="sd">            &gt;&gt;&gt; # Test invalid categories</span>
+<span class="sd">            &gt;&gt;&gt; taxonomy.is_valid_category(&quot;nonexistent_category&quot;, &quot;top&quot;)</span>
+<span class="sd">            False</span>
+
+<span class="sd">            &gt;&gt;&gt; # Test category at wrong level</span>
+<span class="sd">            &gt;&gt;&gt; taxonomy.is_valid_category(top_cat, &quot;low&quot;)</span>
+<span class="sd">            False</span>
+
+<span class="sd">            &gt;&gt;&gt; # Test invalid level</span>
+<span class="sd">            &gt;&gt;&gt; try:</span>
+<span class="sd">            ...     taxonomy.is_valid_category(top_cat, &quot;invalid_level&quot;)  # type: ignore</span>
+<span class="sd">            ... except ValueError:</span>
+<span class="sd">            ...     True</span>
+<span class="sd">            True</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">level</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_valid_levels</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="sa">f</span><span class="s2">&quot;Invalid taxonomy level: </span><span class="si">{</span><span class="n">level</span><span class="si">}</span><span class="s2">. Must be one of: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">_valid_levels</span><span class="si">}</span><span class="s2">&quot;</span>
+            <span class="p">)</span>
+
+        <span class="n">attribute_name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;_all_</span><span class="si">{</span><span class="n">level</span><span class="si">}</span><span class="s2">_categories&quot;</span>
+        <span class="k">return</span> <span class="n">category</span> <span class="ow">in</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attribute_name</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="Taxonomy.get_taxonomy">
+<a class="viewcode-back" href="../../../utils.html#academic_metrics.utils.taxonomy_util.Taxonomy.get_taxonomy">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_taxonomy</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">TaxonomyDict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Returns the complete taxonomy dictionary.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            TaxonomyDict: The complete taxonomy structure as a dictionary.</span>
+
+<span class="sd">        Note:</span>
+<span class="sd">            The structure follows the format:</span>
+
+<span class="sd">            .. code-block:: python</span>
+
+<span class="sd">                {</span>
+<span class="sd">                    &quot;top_category&quot;: {</span>
+<span class="sd">                        &quot;mid_category&quot;: [&quot;low_category1&quot;, &quot;low_category2&quot;, ...]</span>
+<span class="sd">                    }</span>
+<span class="sd">                }</span>
+
+<span class="sd">        Examples:</span>
+<span class="sd">            &gt;&gt;&gt; taxonomy = Taxonomy()</span>
+<span class="sd">            &gt;&gt;&gt; tax_dict = taxonomy.get_taxonomy()</span>
+<span class="sd">            &gt;&gt;&gt; isinstance(tax_dict, dict)</span>
+<span class="sd">            True</span>
+<span class="sd">            &gt;&gt;&gt; # Verify structure</span>
+<span class="sd">            &gt;&gt;&gt; top_cat = list(tax_dict.keys())[0]</span>
+<span class="sd">            &gt;&gt;&gt; isinstance(tax_dict[top_cat], dict)</span>
+<span class="sd">            True</span>
+<span class="sd">            &gt;&gt;&gt; mid_cat = list(tax_dict[top_cat].keys())[0]</span>
+<span class="sd">            &gt;&gt;&gt; isinstance(tax_dict[top_cat][mid_cat], list)</span>
+<span class="sd">            True</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_taxonomy</span></div>
+
+
+<div class="viewcode-block" id="Taxonomy._load_taxonomy_from_string">
+<a class="viewcode-back" href="../../../utils.html#academic_metrics.utils.taxonomy_util.Taxonomy._load_taxonomy_from_string">[docs]</a>
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">_load_taxonomy_from_string</span><span class="p">(</span>
+        <span class="n">taxonomy_str</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">logger</span><span class="p">:</span> <span class="n">logging</span><span class="o">.</span><span class="n">Logger</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">TaxonomyDict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Loads and parses a taxonomy from a JSON string.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            taxonomy_str (str): JSON string containing the taxonomy structure.</span>
+<span class="sd">            logger (logging.Logger | None, optional): Logger instance for logging operations.</span>
+<span class="sd">                Defaults to None.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            TaxonomyDict: The parsed taxonomy dictionary.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            json.JSONDecodeError: If the taxonomy string is not valid JSON.</span>
+
+<span class="sd">        Examples:</span>
+<span class="sd">            &gt;&gt;&gt; # Create a simple valid taxonomy string</span>
+<span class="sd">            &gt;&gt;&gt; tax_str = &#39;{&quot;top&quot;: {&quot;mid&quot;: [&quot;low1&quot;, &quot;low2&quot;]}}&#39;</span>
+<span class="sd">            &gt;&gt;&gt; taxonomy = Taxonomy._load_taxonomy_from_string(tax_str)</span>
+<span class="sd">            &gt;&gt;&gt; isinstance(taxonomy, dict)</span>
+<span class="sd">            True</span>
+<span class="sd">            &gt;&gt;&gt; # Verify structure</span>
+<span class="sd">            &gt;&gt;&gt; list(taxonomy.keys()) == [&quot;top&quot;]</span>
+<span class="sd">            True</span>
+<span class="sd">            &gt;&gt;&gt; # Test invalid JSON</span>
+<span class="sd">            &gt;&gt;&gt; try:</span>
+<span class="sd">            ...     Taxonomy._load_taxonomy_from_string(&quot;{invalid json}&quot;)</span>
+<span class="sd">            ... except json.JSONDecodeError:</span>
+<span class="sd">            ...     True</span>
+<span class="sd">            True</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">logger</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Loading taxonomy from string&quot;</span><span class="p">)</span>
+
+        <span class="n">taxonomy</span><span class="p">:</span> <span class="n">TaxonomyDict</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">taxonomy_str</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">logger</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Taxonomy loaded successfully&quot;</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">taxonomy</span></div>
+</div>
+
+
+
+<div class="viewcode-block" id="demo_taxonomy">
+<a class="viewcode-back" href="../../../utils.html#academic_metrics.utils.taxonomy_util.demo_taxonomy">[docs]</a>
+<span class="k">def</span> <span class="nf">demo_taxonomy</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Demonstrates the basic functionality of the Taxonomy class.&quot;&quot;&quot;</span>
+    <span class="n">taxonomy</span><span class="p">:</span> <span class="n">Taxonomy</span> <span class="o">=</span> <span class="n">Taxonomy</span><span class="p">()</span>
+    <span class="n">top_categories</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="n">taxonomy</span><span class="o">.</span><span class="n">get_top_categories</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">top_categories</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">top_category</span> <span class="ow">in</span> <span class="n">top_categories</span><span class="p">:</span>
+        <span class="n">mid_categories</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="n">taxonomy</span><span class="o">.</span><span class="n">get_mid_categories</span><span class="p">(</span><span class="n">top_category</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;top category: </span><span class="se">\n</span><span class="si">{</span><span class="n">top_category</span><span class="si">}</span><span class="s2">, </span><span class="se">\n</span><span class="s2">mid categories: </span><span class="se">\n</span><span class="si">{</span><span class="n">mid_categories</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">mid_category</span> <span class="ow">in</span> <span class="n">mid_categories</span><span class="p">:</span>
+            <span class="n">low_categories</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="n">taxonomy</span><span class="o">.</span><span class="n">get_low_categories</span><span class="p">(</span>
+                <span class="n">top_category</span><span class="p">,</span> <span class="n">mid_category</span>
+            <span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span>
+                <span class="sa">f</span><span class="s2">&quot;mid category: </span><span class="se">\n</span><span class="si">{</span><span class="n">mid_category</span><span class="si">}</span><span class="s2">, </span><span class="se">\n</span><span class="s2">low categories: </span><span class="se">\n</span><span class="si">{</span><span class="n">low_categories</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span>
+            <span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span></div>
+
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="kn">import</span> <span class="nn">unittest</span>
+    <span class="kn">import</span> <span class="nn">argparse</span>
+
+    <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">&quot;Taxonomy utility&quot;</span><span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--demo&quot;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s2">&quot;store_true&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Run the demo&quot;</span><span class="p">)</span>
+
+    <span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">()</span>
+
+    <span class="k">class</span> <span class="nc">TestTaxonomy</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+        <span class="k">def</span> <span class="nf">setUp</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">taxonomy</span> <span class="o">=</span> <span class="n">Taxonomy</span><span class="p">()</span>
+
+        <span class="k">def</span> <span class="nf">test_get_top_categories</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="n">top_cats</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">taxonomy</span><span class="o">.</span><span class="n">get_top_categories</span><span class="p">()</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">assertIsInstance</span><span class="p">(</span><span class="n">top_cats</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="nb">all</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">cat</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="k">for</span> <span class="n">cat</span> <span class="ow">in</span> <span class="n">top_cats</span><span class="p">))</span>
+
+        <span class="k">def</span> <span class="nf">test_get_mid_categories</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="n">top_cats</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">taxonomy</span><span class="o">.</span><span class="n">get_top_categories</span><span class="p">()</span>
+            <span class="k">for</span> <span class="n">top_cat</span> <span class="ow">in</span> <span class="n">top_cats</span><span class="p">:</span>
+                <span class="n">mid_cats</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">taxonomy</span><span class="o">.</span><span class="n">get_mid_categories</span><span class="p">(</span><span class="n">top_cat</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">assertIsInstance</span><span class="p">(</span><span class="n">mid_cats</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="nb">all</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">cat</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="k">for</span> <span class="n">cat</span> <span class="ow">in</span> <span class="n">mid_cats</span><span class="p">))</span>
+
+        <span class="k">def</span> <span class="nf">test_get_low_categories</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="n">top_cats</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">taxonomy</span><span class="o">.</span><span class="n">get_top_categories</span><span class="p">()</span>
+            <span class="k">for</span> <span class="n">top_cat</span> <span class="ow">in</span> <span class="n">top_cats</span><span class="p">:</span>
+                <span class="n">mid_cats</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">taxonomy</span><span class="o">.</span><span class="n">get_mid_categories</span><span class="p">(</span><span class="n">top_cat</span><span class="p">)</span>
+                <span class="k">for</span> <span class="n">mid_cat</span> <span class="ow">in</span> <span class="n">mid_cats</span><span class="p">:</span>
+                    <span class="n">low_cats</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">taxonomy</span><span class="o">.</span><span class="n">get_low_categories</span><span class="p">(</span><span class="n">top_cat</span><span class="p">,</span> <span class="n">mid_cat</span><span class="p">)</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">assertIsInstance</span><span class="p">(</span><span class="n">low_cats</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="nb">all</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">cat</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="k">for</span> <span class="n">cat</span> <span class="ow">in</span> <span class="n">low_cats</span><span class="p">))</span>
+
+        <span class="k">def</span> <span class="nf">test_is_valid_category</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="c1"># Test invalid level</span>
+            <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">assertRaises</span><span class="p">(</span><span class="ne">ValueError</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">taxonomy</span><span class="o">.</span><span class="n">is_valid_category</span><span class="p">(</span><span class="s2">&quot;test&quot;</span><span class="p">,</span> <span class="s2">&quot;invalid_level&quot;</span><span class="p">)</span>
+
+            <span class="c1"># Test valid categories</span>
+            <span class="n">top_cat</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">taxonomy</span><span class="o">.</span><span class="n">get_top_categories</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">taxonomy</span><span class="o">.</span><span class="n">is_valid_category</span><span class="p">(</span><span class="n">top_cat</span><span class="p">,</span> <span class="s2">&quot;top&quot;</span><span class="p">))</span>
+
+            <span class="n">mid_cat</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">taxonomy</span><span class="o">.</span><span class="n">get_mid_categories</span><span class="p">(</span><span class="n">top_cat</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">taxonomy</span><span class="o">.</span><span class="n">is_valid_category</span><span class="p">(</span><span class="n">mid_cat</span><span class="p">,</span> <span class="s2">&quot;mid&quot;</span><span class="p">))</span>
+
+            <span class="n">low_cat</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">taxonomy</span><span class="o">.</span><span class="n">get_low_categories</span><span class="p">(</span><span class="n">top_cat</span><span class="p">,</span> <span class="n">mid_cat</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">taxonomy</span><span class="o">.</span><span class="n">is_valid_category</span><span class="p">(</span><span class="n">low_cat</span><span class="p">,</span> <span class="s2">&quot;low&quot;</span><span class="p">))</span>
+
+            <span class="c1"># Test invalid category</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">assertFalse</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">taxonomy</span><span class="o">.</span><span class="n">is_valid_category</span><span class="p">(</span><span class="s2">&quot;nonexistent_category&quot;</span><span class="p">,</span> <span class="s2">&quot;top&quot;</span><span class="p">)</span>
+            <span class="p">)</span>
+
+        <span class="k">def</span> <span class="nf">test_get_top_cat_for_mid_cat</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="n">top_cat</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">taxonomy</span><span class="o">.</span><span class="n">get_top_categories</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="n">mid_cat</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">taxonomy</span><span class="o">.</span><span class="n">get_mid_categories</span><span class="p">(</span><span class="n">top_cat</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="n">found_top_cat</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">taxonomy</span><span class="o">.</span><span class="n">get_top_cat_for_mid_cat</span><span class="p">(</span><span class="n">mid_cat</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">found_top_cat</span><span class="p">,</span> <span class="n">top_cat</span><span class="p">)</span>
+
+        <span class="k">def</span> <span class="nf">test_get_mid_cat_for_low_cat</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="n">top_cat</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">taxonomy</span><span class="o">.</span><span class="n">get_top_categories</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="n">mid_cat</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">taxonomy</span><span class="o">.</span><span class="n">get_mid_categories</span><span class="p">(</span><span class="n">top_cat</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="n">low_cat</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">taxonomy</span><span class="o">.</span><span class="n">get_low_categories</span><span class="p">(</span><span class="n">top_cat</span><span class="p">,</span> <span class="n">mid_cat</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="n">found_mid_cat</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">taxonomy</span><span class="o">.</span><span class="n">get_mid_cat_for_low_cat</span><span class="p">(</span><span class="n">low_cat</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">found_mid_cat</span><span class="p">,</span> <span class="n">mid_cat</span><span class="p">)</span>
+
+    <span class="c1"># Run the tests</span>
+    <span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">(</span><span class="n">argv</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;&quot;</span><span class="p">],</span> <span class="n">exit</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">demo</span><span class="p">:</span>
+        <span class="n">demo_taxonomy</span><span class="p">()</span>
+</pre></div>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="clearer"></div>
+    </div>
+    <div class="button_nav_wrapper">
+        <div class="button_nav">
+            <div class="left">
+                
+            </div>
+
+            <div class="right">
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Spencer Presley, Cole Barbes.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    </div>
+
+<p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>
+  </body>
+</html>

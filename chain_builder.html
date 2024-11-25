@@ -1,0 +1,1881 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Chain Builder &#8212; Academic Metrics 0.1.0-beta documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+    <link rel="stylesheet" type="text/css" href="_static/basic_mod.css?v=9b2032db" />
+    <script src="_static/documentation_options.js?v=c903bf51"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <script src="_static/js/petite-vue.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ai_prompts package" href="ai_prompts.html" />
+    <link rel="prev" title="Global Configuration" href="config.html" /> 
+  </head><body data-dark_mode_code_blocks="true">
+
+<div id="top_nav">
+    
+
+    <nav>
+        
+            
+        
+
+        <p id="toggle_sidebar">
+            <a href="#" title="Toggle sidebar">|||</a>
+        </p>
+        <h1><a href="index.html" title="Go to homepage">Academic Metrics 0.1.0-beta documentation</a></h1>
+
+        <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
+    <template v-if="mode == 'light'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_light"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M67.48,18.073c1.913,-1.912 1.913,-5.018 0,-6.931c-1.912,-1.912 -5.018,-1.912 -6.931,0l-6.798,6.799c-1.912,1.912 -1.912,5.018 0,6.931c1.913,1.912 5.018,1.912 6.931,-0l6.798,-6.799Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.728,61.108c1.912,-1.913 1.912,-5.018 -0,-6.931c-1.913,-1.913 -5.019,-1.913 -6.931,-0l-6.799,6.798c-1.912,1.913 -1.912,5.019 0,6.931c1.913,1.913 5.019,1.913 6.931,0l6.799,-6.798Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.682,54.177c-1.913,-1.913 -5.018,-1.913 -6.931,-0c-1.912,1.913 -1.912,5.018 0,6.931l6.798,6.798c1.913,1.913 5.019,1.913 6.931,0c1.913,-1.912 1.913,-5.018 0,-6.931l-6.798,-6.798Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M4.901,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,-0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M18.929,11.142c-1.912,-1.912 -5.018,-1.912 -6.931,0c-1.912,1.913 -1.912,5.019 0,6.931l6.799,6.799c1.912,1.912 5.018,1.912 6.931,-0c1.912,-1.913 1.912,-5.019 -0,-6.931l-6.799,-6.799Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.108,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c-0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c-0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'dark'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_dark"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.901,2.196 -4.901,4.901c0,2.705 2.197,4.901 4.901,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.662,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.989,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.732,61.103c1.91,-1.91 1.91,-5.011 0,-6.921l-0.009,-0.01c-1.91,-1.91 -5.012,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.909,1.91 5.011,1.91 6.92,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.672,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.52,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l-0,-0.01c-0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.901,2.196 -4.901,4.901c0,2.704 2.197,4.9 4.901,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.73,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 -0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.098,34.623c-2.699,0 -4.891,2.192 -4.891,4.892l-0,0.019c-0,2.699 2.192,4.891 4.891,4.891c2.7,0 4.892,-2.192 4.892,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.892,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'darkest'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_darkest"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><path d="M39.315,23.791c8.684,-0 15.734,7.05 15.734,15.733c0,8.684 -7.05,15.734 -15.734,15.734c-8.683,0 -15.733,-7.05 -15.733,-15.734c-0,-8.683 7.05,-15.733 15.733,-15.733Zm0,4.737c6.069,0 10.997,4.927 10.997,10.996c-0,6.069 -4.928,10.996 -10.997,10.996c-6.068,0 -10.996,-4.927 -10.996,-10.996c0,-6.069 4.928,-10.996 10.996,-10.996Z" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.216,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.9,2.196 -4.9,4.901c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.666,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.99,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.737,61.103c1.909,-1.91 1.909,-5.011 -0,-6.921l-0.01,-0.01c-1.91,-1.91 -5.011,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.91,1.91 5.011,1.91 6.921,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.676,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.524,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l0,-0.01c0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.216,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901c-0,2.704 2.196,4.9 4.9,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.734,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.103,34.623c-2.7,0 -4.892,2.192 -4.892,4.892l-0,0.019c-0,2.699 2.192,4.891 4.892,4.891c2.699,0 4.891,-2.192 4.891,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.891,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+</a>
+
+<script>
+(function() {
+    const LOCAL_STORAGE_KEY = 'piccoloThemeMode'
+
+    var initialMode = localStorage.getItem(LOCAL_STORAGE_KEY)
+
+    if (initialMode) {
+        // Make sure the value in local storage is valid
+        if (['light', 'dark', 'darkest'].indexOf(initialMode) == -1) {
+            initialMode = 'light'
+            localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+        }
+    } else {
+        // Check if the client prefers dark mode
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            initialMode = 'dark'
+        } else {
+            initialMode = 'light'
+        }
+        localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+    }
+
+    document.documentElement.dataset.mode = initialMode
+
+    PetiteVue.createApp({
+        'mode': initialMode,
+        handleClick() {
+            let currentMode = this.mode
+
+            if (currentMode == 'light') {
+                this.mode = 'dark'
+            } else if (currentMode == 'dark') {
+                this.mode = 'darkest'
+            } else if (currentMode == 'darkest') {
+                this.mode = 'light'
+            }
+
+            document.documentElement.dataset.mode = this.mode
+            localStorage.setItem(LOCAL_STORAGE_KEY, this.mode)
+
+            console.log(this.mode)
+        }
+    }).mount('#mode_toggle')
+})()
+</script>
+            <p class="mobile_search_link">
+                <a href="search.html" title="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 64" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path d="M14.873 40.009c-2.315-3.943-3.642-8.532-3.642-13.429C11.231 11.91 23.141 0 37.811 0s26.58 11.91 26.58 26.58-11.91 26.58-26.58 26.58a26.44 26.44 0 0 1-14.277-4.161L9.739 62.794a3.12 3.12 0 0 1-4.413 0L.913 58.382c-1.217-1.218-1.217-3.196 0-4.413l13.96-13.96zM37.811 8.054c10.225 0 18.526 8.301 18.526 18.526s-8.301 18.526-18.526 18.526-18.526-8.301-18.526-18.526S27.586 8.054 37.811 8.054z" fill="#fff" />
+                    </svg>
+                </a>
+            </p>
+        
+
+        <div class="searchbox_wrapper">
+            
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="abstract_classifier.html">Abstract Classifier Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="category_processor.html">Category Processor Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faculty_set_postprocessor.html">Faculty Set Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config.html">Global Configuration</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Chain Builder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ai_prompts.html">ai_prompts package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection.html">data_collection package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dataclass_models.html">dataclass_models package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DB.html">DB package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enums.html">enums package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="factories.html">factories package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="orchestrators.html">orchestrators package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="other.html">other package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="runners.html">runners package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="strategies.html">strategies package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="utils.html">utils package</a></li>
+</ul>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="chain-builder">
+<h1>Chain Builder<a class="headerlink" href="#chain-builder" title="Link to this heading">¶</a></h1>
+<section id="module-academic_metrics.ChainBuilder.ChainBuilder">
+<span id="overview"></span><h2>Overview<a class="headerlink" href="#module-academic_metrics.ChainBuilder.ChainBuilder" title="Link to this heading">¶</a></h2>
+</section>
+<section id="type-definitions">
+<h2>Type Definitions<a class="headerlink" href="#type-definitions" title="Link to this heading">¶</a></h2>
+<dl class="py data">
+<dt class="sig sig-object py" id="academic_metrics.ChainBuilder.ChainBuilder.FirstCallRequired">
+<span class="sig-prename descclassname"><span class="pre">academic_metrics.ChainBuilder.ChainBuilder.</span></span><span class="sig-name descname"><span class="pre">FirstCallRequired</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">TypeVar</span></em><a class="headerlink" href="#academic_metrics.ChainBuilder.ChainBuilder.FirstCallRequired" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="academic_metrics.ChainBuilder.ChainBuilder.ParserUnion">
+<span class="sig-prename descclassname"><span class="pre">academic_metrics.ChainBuilder.ChainBuilder.</span></span><span class="sig-name descname"><span class="pre">ParserUnion</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Union</span></em><a class="headerlink" href="#academic_metrics.ChainBuilder.ChainBuilder.ParserUnion" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="academic_metrics.ChainBuilder.ChainBuilder.ParserType">
+<span class="sig-prename descclassname"><span class="pre">academic_metrics.ChainBuilder.ChainBuilder.</span></span><span class="sig-name descname"><span class="pre">ParserType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">TypeVar</span></em><a class="headerlink" href="#academic_metrics.ChainBuilder.ChainBuilder.ParserType" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="academic_metrics.ChainBuilder.ChainBuilder.FallbackParserType">
+<span class="sig-prename descclassname"><span class="pre">academic_metrics.ChainBuilder.ChainBuilder.</span></span><span class="sig-name descname"><span class="pre">FallbackParserType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">TypeVar</span></em><a class="headerlink" href="#academic_metrics.ChainBuilder.ChainBuilder.FallbackParserType" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
+<section id="id1">
+<h3>Chain Builder<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">academic_metrics.ChainBuilder.ChainBuilder.</span></span><span class="sig-name descname"><span class="pre">ChainBuilder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chat_prompt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">llm</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parser</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fallback_parser</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logger</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_to_console</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainBuilder"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A builder class for constructing and configuring LangChain chains with logging and parsing capabilities.</p>
+<p>This class provides functionality to construct LangChain chains with customizable prompts,
+language models, and output parsers. It includes support for logging, fallback chains,
+and various parser types.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">log_file_path</span></span></dt>
+<dd><p>Path to the log file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Path</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">logger</span></span></dt>
+<dd><p>Logger instance for the chain builder.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>logging.Logger</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">chat_prompt</span></span></dt>
+<dd><p>Template for chat prompts.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ChatPromptTemplate</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">parser</span></span></dt>
+<dd><p>Primary output parser.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Optional[ParserType]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">fallback_parser</span></span></dt>
+<dd><p>Fallback output parser.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Optional[FallbackParserType]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">llm</span></span></dt>
+<dd><p>Language model instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Union[ChatOpenAI, ChatAnthropic, ChatGoogleGenerativeAI]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">chain</span></span></dt>
+<dd><p>Primary chain instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Runnable</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">fallback_chain</span></span></dt>
+<dd><p>Fallback chain instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Runnable</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_chain</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainBuilder.get_chain"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Returns the primary chain instance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_fallback_chain</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainBuilder.get_fallback_chain"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Returns the fallback chain instance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__str__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainBuilder.__str__"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Returns a string representation of the ChainBuilder.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainBuilder.__repr__"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Returns a string representation of the ChainBuilder.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_run_pydantic_parser_logging</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainBuilder._run_pydantic_parser_logging"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Logs Pydantic parser configuration.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_build_chain</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainBuilder._build_chain"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Constructs the primary chain.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_build_fallback_chain</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainBuilder._build_fallback_chain"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Constructs the fallback chain.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chat_prompt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">llm</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parser</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fallback_parser</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logger</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_to_console</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainBuilder.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Initialize a ChainBuilder instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>chat_prompt</strong> (<em>ChatPromptTemplate</em>) – Template for structuring chat interactions.</p></li>
+<li><p><strong>llm</strong> (<em>Union</em><em>[</em><em>ChatOpenAI</em><em>, </em><em>ChatAnthropic</em><em>, </em><em>ChatGoogleGenerativeAI</em><em>]</em>) – Language model to use.</p></li>
+<li><p><strong>parser</strong> (<em>ParserType</em><em> | </em><em>None</em>) – Primary output parser. Defaults to None.</p></li>
+<li><p><strong>fallback_parser</strong> (<em>FallbackParserType</em><em> | </em><em>None</em>) – Fallback output parser. Defaults to None.</p></li>
+<li><p><strong>logger</strong> (<em>logging.Logger</em><em> | </em><em>None</em>) – Custom logger instance. Defaults to None.</p></li>
+<li><p><strong>log_to_console</strong> (<em>bool</em><em> | </em><em>None</em>) – Whether to log to console. Defaults to LOG_TO_CONSOLE.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__str__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainBuilder.__str__"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Returns a string representation of the ChainBuilder object.</p>
+<p>The string includes the class names of the chat_prompt, llm, and parser attributes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A string representation of the ChainBuilder object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainBuilder.__repr__"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Returns a string representation of the object for debugging purposes.</p>
+<p>This method calls the __str__() method to provide a human-readable
+representation of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A string representation of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_run_pydantic_parser_logging</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainBuilder._run_pydantic_parser_logging"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Logs the required fields and their default values (if any) for a Pydantic model
+if the parser is an instance of PydanticOutputParser. Additionally, logs the
+JSON schema of the Pydantic model.</p>
+<p>This method performs the following steps:
+1. Checks if the parser is an instance of PydanticOutputParser.
+2. Retrieves the Pydantic model from the parser.
+3. Logs each field’s name and whether it is required or optional.
+4. Logs the default value of each field if it is not None.
+5. Logs the JSON schema of the Pydantic model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_build_chain</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainBuilder._build_chain"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Builds and returns a chain of Runnable objects.</p>
+<p>The chain is constructed by combining a RunnablePassthrough object with
+the chat_prompt and llm attributes. If a parser is provided, it is added
+to the chain and pydantic parser logging is executed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The constructed chain of Runnable objects.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Runnable</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_build_fallback_chain</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainBuilder._build_fallback_chain"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Builds the fallback chain for the Runnable.</p>
+<p>This method constructs a fallback chain by combining a RunnablePassthrough
+instance with the chat prompt and language model (llm). If a fallback parser
+is provided, it adds the parser to the chain and logs the parser usage.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The constructed fallback chain.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Runnable</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_chain</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainBuilder.get_chain"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Retrieves the current chain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The current chain instance.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Runnable</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_fallback_chain</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainBuilder.get_fallback_chain"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Retrieve the fallback chain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The fallback chain instance.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Runnable</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'academic_metrics.ChainBuilder.ChainBuilder',</span> <span class="pre">'__doc__':</span> <span class="pre">'A</span> <span class="pre">builder</span> <span class="pre">class</span> <span class="pre">for</span> <span class="pre">constructing</span> <span class="pre">and</span> <span class="pre">configuring</span> <span class="pre">LangChain</span> <span class="pre">chains</span> <span class="pre">with</span> <span class="pre">logging</span> <span class="pre">and</span> <span class="pre">parsing</span> <span class="pre">capabilities.\n\n</span>&#160;&#160;&#160; <span class="pre">This</span> <span class="pre">class</span> <span class="pre">provides</span> <span class="pre">functionality</span> <span class="pre">to</span> <span class="pre">construct</span> <span class="pre">LangChain</span> <span class="pre">chains</span> <span class="pre">with</span> <span class="pre">customizable</span> <span class="pre">prompts,\n</span>&#160;&#160;&#160; <span class="pre">language</span> <span class="pre">models,</span> <span class="pre">and</span> <span class="pre">output</span> <span class="pre">parsers.</span> <span class="pre">It</span> <span class="pre">includes</span> <span class="pre">support</span> <span class="pre">for</span> <span class="pre">logging,</span> <span class="pre">fallback</span> <span class="pre">chains,\n</span>&#160;&#160;&#160; <span class="pre">and</span> <span class="pre">various</span> <span class="pre">parser</span> <span class="pre">types.\n\n</span>&#160;&#160;&#160; <span class="pre">Attributes:\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">log_file_path</span> <span class="pre">(Path):</span> <span class="pre">Path</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">log</span> <span class="pre">file.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">logger</span> <span class="pre">(logging.Logger):</span> <span class="pre">Logger</span> <span class="pre">instance</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">chain</span> <span class="pre">builder.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">chat_prompt</span> <span class="pre">(ChatPromptTemplate):</span> <span class="pre">Template</span> <span class="pre">for</span> <span class="pre">chat</span> <span class="pre">prompts.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">parser</span> <span class="pre">(Optional[ParserType]):</span> <span class="pre">Primary</span> <span class="pre">output</span> <span class="pre">parser.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">fallback_parser</span> <span class="pre">(Optional[FallbackParserType]):</span> <span class="pre">Fallback</span> <span class="pre">output</span> <span class="pre">parser.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">llm</span> <span class="pre">(Union[ChatOpenAI,</span> <span class="pre">ChatAnthropic,</span> <span class="pre">ChatGoogleGenerativeAI]):</span> <span class="pre">Language</span> <span class="pre">model</span> <span class="pre">instance.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">chain</span> <span class="pre">(Runnable):</span> <span class="pre">Primary</span> <span class="pre">chain</span> <span class="pre">instance.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">fallback_chain</span> <span class="pre">(Runnable):</span> <span class="pre">Fallback</span> <span class="pre">chain</span> <span class="pre">instance.\n\n</span>&#160;&#160;&#160; <span class="pre">Methods:\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">get_chain():</span> <span class="pre">Returns</span> <span class="pre">the</span> <span class="pre">primary</span> <span class="pre">chain</span> <span class="pre">instance.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">get_fallback_chain():</span> <span class="pre">Returns</span> <span class="pre">the</span> <span class="pre">fallback</span> <span class="pre">chain</span> <span class="pre">instance.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">__str__():</span> <span class="pre">Returns</span> <span class="pre">a</span> <span class="pre">string</span> <span class="pre">representation</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">ChainBuilder.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">__repr__():</span> <span class="pre">Returns</span> <span class="pre">a</span> <span class="pre">string</span> <span class="pre">representation</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">ChainBuilder.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">_run_pydantic_parser_logging():</span> <span class="pre">Logs</span> <span class="pre">Pydantic</span> <span class="pre">parser</span> <span class="pre">configuration.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">_build_chain():</span> <span class="pre">Constructs</span> <span class="pre">the</span> <span class="pre">primary</span> <span class="pre">chain.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">_build_fallback_chain():</span> <span class="pre">Constructs</span> <span class="pre">the</span> <span class="pre">fallback</span> <span class="pre">chain.\n</span>&#160;&#160;&#160; <span class="pre">',</span> <span class="pre">'__init__':</span> <span class="pre">&lt;function</span> <span class="pre">ChainBuilder.__init__&gt;,</span> <span class="pre">'__str__':</span> <span class="pre">&lt;function</span> <span class="pre">ChainBuilder.__str__&gt;,</span> <span class="pre">'__repr__':</span> <span class="pre">&lt;function</span> <span class="pre">ChainBuilder.__repr__&gt;,</span> <span class="pre">'_run_pydantic_parser_logging':</span> <span class="pre">&lt;function</span> <span class="pre">ChainBuilder._run_pydantic_parser_logging&gt;,</span> <span class="pre">'_build_chain':</span> <span class="pre">&lt;function</span> <span class="pre">ChainBuilder._build_chain&gt;,</span> <span class="pre">'_build_fallback_chain':</span> <span class="pre">&lt;function</span> <span class="pre">ChainBuilder._build_fallback_chain&gt;,</span> <span class="pre">'get_chain':</span> <span class="pre">&lt;function</span> <span class="pre">ChainBuilder.get_chain&gt;,</span> <span class="pre">'get_fallback_chain':</span> <span class="pre">&lt;function</span> <span class="pre">ChainBuilder.get_fallback_chain&gt;,</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'ChainBuilder'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'ChainBuilder'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__annotations__':</span> <span class="pre">{'chat_prompt':</span> <span class="pre">'ChatPromptTemplate',</span> <span class="pre">'parser':</span> <span class="pre">'Optional[ParserType]',</span> <span class="pre">'fallback_parser':</span> <span class="pre">'Optional[FallbackParserType]',</span> <span class="pre">'llm':</span> <span class="pre">'Union[ChatOpenAI,</span> <span class="pre">ChatAnthropic,</span> <span class="pre">ChatGoogleGenerativeAI]',</span> <span class="pre">'chain':</span> <span class="pre">'Runnable',</span> <span class="pre">'fallback_chain':</span> <span class="pre">'Runnable'}})</span></em></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'academic_metrics.ChainBuilder.ChainBuilder'</span></em></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__weakref__</span></span></dt>
+<dd><p>list of weak references to the object</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="chain-composer">
+<h3>Chain Composer<a class="headerlink" href="#chain-composer" title="Link to this heading">¶</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">academic_metrics.ChainBuilder.ChainBuilder.</span></span><span class="sig-name descname"><span class="pre">ChainComposer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">logger</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainComposer"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Manages a sequence of chain operations.</p>
+<p>ChainComposer is a class that manages a sequence of chain operations, allowing for the addition of chains and running them in sequence with provided data.</p>
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__init__(logger</span></span></dt>
+<dd><p>Optional[logging.Logger] = None) -&gt; None:
+Initializes the ChainComposer instance with an optional logger.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__str__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainComposer.__str__"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Returns a string representation of the ChainComposer instance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainComposer.__repr__"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Returns a string representation of the ChainComposer instance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">add_chain(chain_wrapper</span></span></dt>
+<dd><p>ChainWrapper, output_passthrough_key_name: Optional[str] = None) -&gt; None:
+Adds a chain to the chain sequence.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">run(data_dict</span></span></dt>
+<dd><p>Dict[str, Any], data_dict_update_function: Optional[Callable[[Dict[str, Any]], None]] = None) -&gt; Dict[str, Any]:</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">-</span> <span class="pre">Runs</span> <span class="pre">the</span> <span class="pre">chain</span> <span class="pre">sequence</span> <span class="pre">with</span> <span class="pre">the</span> <span class="pre">provided</span> <span class="pre">data</span> <span class="pre">dictionary</span> <span class="pre">and</span> <span class="pre">optional</span> <span class="pre">update</span> <span class="pre">function.</span></span></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">logger</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainComposer.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Initializes the ChainBuilder instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>logger</strong> (<em>Optional</em><em>[</em><em>logging.Logger</em><em>]</em>)</p></li>
+<li><p><strong>logging.</strong> (<em>- A logger instance to be used for</em>)</p></li>
+<li><p><strong>provided</strong> (<em>- If not</em>)</p></li>
+<li><p><strong>created.</strong> (<em>a default logger will be</em>)</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">logger</span></span></dt>
+<dd><p>The logger instance used for logging.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>logging.Logger</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">chain_sequence</span></span></dt>
+<dd><p>A list to store the chain sequence.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[Tuple[<a class="reference internal" href="academic_metrics.ChainBuilder.html#academic_metrics.ChainBuilder.ChainBuilder.ChainWrapper" title="academic_metrics.ChainBuilder.ChainBuilder.ChainWrapper">ChainWrapper</a>, Optional[str]]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__str__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainComposer.__str__"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Returns a string representation of the ChainComposer object.</p>
+<p>The string representation includes the index and the wrapper of each
+element in the chain_sequence.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A string representation of the ChainComposer object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainComposer.__repr__"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Returns a string representation of the object for debugging purposes.</p>
+<p>This method calls the __str__() method to provide a human-readable
+representation of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A string representation of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">add_chain</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chain_wrapper</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_passthrough_key_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainComposer.add_chain"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Adds a chain to the chain sequence.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>chain_wrapper</strong> (<a class="reference internal" href="academic_metrics.ChainBuilder.html#academic_metrics.ChainBuilder.ChainBuilder.ChainWrapper" title="academic_metrics.ChainBuilder.ChainBuilder.ChainWrapper"><em>ChainWrapper</em></a>) – The chain wrapper to be added.</p></li>
+<li><p><strong>output_passthrough_key_name</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – The key name for output passthrough. Defaults to None.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_dict_update_function</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainComposer.run"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Executes a sequence of chains, updating the provided data dictionary with the results of each chain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data_dict</strong> (<em>Dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em>) – The initial data dictionary containing input variables for the chains.</p></li>
+<li><p><strong>data_dict_update_function</strong> (<em>Optional</em><em>[</em><em>Callable</em><em>[</em><em>[</em><em>Dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em><em>]</em><em>, </em><em>None</em><em>]</em><em>]</em>) – An optional function to update the data dictionary after each chain execution.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The updated data dictionary after all chains have been executed.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dict[str, Any]</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>UserWarning</strong> – If the provided data dictionary is empty.</p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<ul class="simple">
+<li><p>The method iterates over a sequence of chains (<cite>self.chain_sequence</cite>), executing each chain and updating the <cite>data_dict</cite> with the output.</p></li>
+<li><p>If an <cite>output_name</cite> is provided for a chain, the output is stored in <cite>data_dict</cite> under that name; otherwise, it is stored under the key <cite>_last_output</cite>.</p></li>
+<li><p>If <cite>data_dict_update_function</cite> is provided, it is called with the updated <cite>data_dict</cite> after each chain execution.</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'academic_metrics.ChainBuilder.ChainBuilder',</span> <span class="pre">'__doc__':</span> <span class="pre">'Manages</span> <span class="pre">a</span> <span class="pre">sequence</span> <span class="pre">of</span> <span class="pre">chain</span> <span class="pre">operations.\n\n</span>&#160;&#160;&#160; <span class="pre">ChainComposer</span> <span class="pre">is</span> <span class="pre">a</span> <span class="pre">class</span> <span class="pre">that</span> <span class="pre">manages</span> <span class="pre">a</span> <span class="pre">sequence</span> <span class="pre">of</span> <span class="pre">chain</span> <span class="pre">operations,</span> <span class="pre">allowing</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">addition</span> <span class="pre">of</span> <span class="pre">chains</span> <span class="pre">and</span> <span class="pre">running</span> <span class="pre">them</span> <span class="pre">in</span> <span class="pre">sequence</span> <span class="pre">with</span> <span class="pre">provided</span> <span class="pre">data.\n\n\n</span>&#160;&#160;&#160; <span class="pre">Methods:\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">__init__(logger:</span> <span class="pre">Optional[logging.Logger]</span> <span class="pre">=</span> <span class="pre">None)</span> <span class="pre">-&gt;</span> <span class="pre">None:\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Initializes</span> <span class="pre">the</span> <span class="pre">ChainComposer</span> <span class="pre">instance</span> <span class="pre">with</span> <span class="pre">an</span> <span class="pre">optional</span> <span class="pre">logger.\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">__str__()</span> <span class="pre">-&gt;</span> <span class="pre">str:\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Returns</span> <span class="pre">a</span> <span class="pre">string</span> <span class="pre">representation</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">ChainComposer</span> <span class="pre">instance.\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">__repr__()</span> <span class="pre">-&gt;</span> <span class="pre">str:\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Returns</span> <span class="pre">a</span> <span class="pre">string</span> <span class="pre">representation</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">ChainComposer</span> <span class="pre">instance.\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">add_chain(chain_wrapper:</span> <span class="pre">ChainWrapper,</span> <span class="pre">output_passthrough_key_name:</span> <span class="pre">Optional[str]</span> <span class="pre">=</span> <span class="pre">None)</span> <span class="pre">-&gt;</span> <span class="pre">None:\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Adds</span> <span class="pre">a</span> <span class="pre">chain</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">chain</span> <span class="pre">sequence.\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">run(data_dict:</span> <span class="pre">Dict[str,</span> <span class="pre">Any],</span> <span class="pre">data_dict_update_function:</span> <span class="pre">Optional[Callable[[Dict[str,</span> <span class="pre">Any]],</span> <span class="pre">None]]</span> <span class="pre">=</span> <span class="pre">None)</span> <span class="pre">-&gt;</span> <span class="pre">Dict[str,</span> <span class="pre">Any]:\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">-</span> <span class="pre">Runs</span> <span class="pre">the</span> <span class="pre">chain</span> <span class="pre">sequence</span> <span class="pre">with</span> <span class="pre">the</span> <span class="pre">provided</span> <span class="pre">data</span> <span class="pre">dictionary</span> <span class="pre">and</span> <span class="pre">optional</span> <span class="pre">update</span> <span class="pre">function.\n</span>&#160;&#160;&#160; <span class="pre">',</span> <span class="pre">'__init__':</span> <span class="pre">&lt;function</span> <span class="pre">ChainComposer.__init__&gt;,</span> <span class="pre">'__str__':</span> <span class="pre">&lt;function</span> <span class="pre">ChainComposer.__str__&gt;,</span> <span class="pre">'__repr__':</span> <span class="pre">&lt;function</span> <span class="pre">ChainComposer.__repr__&gt;,</span> <span class="pre">'add_chain':</span> <span class="pre">&lt;function</span> <span class="pre">ChainComposer.add_chain&gt;,</span> <span class="pre">'run':</span> <span class="pre">&lt;function</span> <span class="pre">ChainComposer.run&gt;,</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'ChainComposer'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'ChainComposer'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__annotations__':</span> <span class="pre">{'chain_sequence':</span> <span class="pre">'List[Tuple[ChainWrapper,</span> <span class="pre">Optional[str]]]'}})</span></em></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'academic_metrics.ChainBuilder.ChainBuilder'</span></em></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__weakref__</span></span></dt>
+<dd><p>list of weak references to the object</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="chain-wrapper">
+<h3>Chain Wrapper<a class="headerlink" href="#chain-wrapper" title="Link to this heading">¶</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">academic_metrics.ChainBuilder.ChainBuilder.</span></span><span class="sig-name descname"><span class="pre">ChainWrapper</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chain</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fallback_chain</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parser</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fallback_parser</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">preprocessor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">postprocessor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logger</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainWrapper"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A wrapper class for managing and executing chains with optional fallback chains.</p>
+<p>This class is designed to handle the execution of primary chains and, if necessary,
+fallback chains in case of errors or unexpected outputs. It supports preprocessing
+and postprocessing of input and output data, as well as logging for debugging and
+monitoring purposes.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">chain</span></span></dt>
+<dd><p>The primary chain to be executed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Runnable</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">fallback_chain</span></span></dt>
+<dd><p>The fallback chain to be executed if the primary chain fails.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Runnable</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">parser</span></span></dt>
+<dd><p>The parser to be used for processing the output of the primary chain. Defaults to None.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Optional[ParserType]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">fallback_parser</span></span></dt>
+<dd><p>The parser to be used for processing the output of the fallback chain. Defaults to None.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Optional[FallbackParserType]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">preprocessor</span></span></dt>
+<dd><p>A function to preprocess input data before passing it to the chain. Defaults to None.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Optional[Callable[[Dict[str, Any]], Dict[str, Any]]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">postprocessor</span></span></dt>
+<dd><p>A function to postprocess the output data from the chain. Defaults to None.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Optional[Callable[[Any], Any]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">logger</span></span></dt>
+<dd><p>A logger instance for logging information and debugging. Defaults to None.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Optional[logging.Logger]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chain</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fallback_chain</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parser</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fallback_parser</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">preprocessor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">postprocessor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logger</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainWrapper.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Initializes the ChainWrapper instance with the provided parameters.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__str__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainWrapper.__str__"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Returns a string representation of the ChainWrapper object, including the chain, parser type, and fallback parser type.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainWrapper.__repr__"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Returns a string representation of the ChainWrapper object for debugging purposes.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">run_chain</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_last_chain</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainWrapper.run_chain"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Executes the primary chain with the provided input data. If an error occurs, attempts to execute the fallback chain. Supports preprocessing and postprocessing.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_parser_type</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainWrapper.get_parser_type"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Returns the type of the parser as a string if the parser exists, otherwise returns None.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_fallback_parser_type</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainWrapper.get_fallback_parser_type"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Returns the type of the fallback parser as a string if it exists, otherwise returns None.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chain</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fallback_chain</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parser</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fallback_parser</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">preprocessor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">postprocessor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logger</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainWrapper.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Initialize the ChainBuilder.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>chain</strong> (<em>Runnable</em>) – The primary chain to be executed.</p></li>
+<li><p><strong>fallback_chain</strong> (<em>Runnable</em>) – The fallback chain to be executed if the primary chain fails.</p></li>
+<li><p><strong>parser</strong> (<em>Optional</em><em>[</em><em>ParserType</em><em>]</em><em>, </em><em>optional</em>) – The parser to be used for the primary chain. Defaults to None.</p></li>
+<li><p><strong>fallback_parser</strong> (<em>Optional</em><em>[</em><em>FallbackParserType</em><em>]</em><em>, </em><em>optional</em>) – The parser to be used for the fallback chain. Defaults to None.</p></li>
+<li><p><strong>preprocessor</strong> (<em>Optional</em><em>[</em><em>Callable</em><em>[</em><em>[</em><em>Dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em><em>]</em><em>, </em><em>Dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em><em>]</em><em>]</em><em>, </em><em>optional</em>) – A function to preprocess input data before passing it to the chain. Defaults to None.</p></li>
+<li><p><strong>postprocessor</strong> (<em>Optional</em><em>[</em><em>Callable</em><em>[</em><em>[</em><em>Any</em><em>]</em><em>, </em><em>Any</em><em>]</em><em>]</em><em>, </em><em>optional</em>) – A function to postprocess the output data from the chain. Defaults to None.</p></li>
+<li><p><strong>logger</strong> (<em>Optional</em><em>[</em><em>logging.Logger</em><em>]</em><em>, </em><em>optional</em>) – A logger instance for logging information. Defaults to None.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__str__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainWrapper.__str__"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Returns a string representation of the ChainWrapper object.</p>
+<p>The string includes the chain, the type of the parser, and the type of the fallback parser.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A string representation of the ChainWrapper object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainWrapper.__repr__"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Returns a string representation of the object for debugging purposes.</p>
+<p>This method calls the __str__() method to provide a user-friendly string
+representation of the object. It is intended to be used for debugging
+and development, rather than for end-user display.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A string representation of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">run_chain</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_last_chain</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainWrapper.run_chain"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Executes the primary chain with the provided input data. If an error occurs in the primary chain,
+and a fallback chain is provided, it attempts to execute the fallback chain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_data</strong> (<em>Dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em><em>, </em><em>optional</em>) – The input data required to run the chain. Defaults to None.</p></li>
+<li><p><strong>is_last_chain</strong> (<em>bool</em><em>, </em><em>optional</em>) – Indicates if this is the last chain in the sequence. Defaults to False.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The output from the chain execution, potentially processed by a postprocessor.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Any</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>ValueError</strong> – If no input data is provided.</p></li>
+<li><p><strong>json.JSONDecodeError</strong> – If a JSON decode error occurs in both the main and fallback chains.</p></li>
+<li><p><strong>ValidationError</strong> – If a validation error occurs in both the main and fallback chains.</p></li>
+<li><p><strong>TypeError</strong> – If a type error occurs in both the main and fallback chains.</p></li>
+</ul>
+</dd>
+</dl>
+<p>Notes:
+- If the output is a Pydantic model and this is not the last chain, the model is converted to a dictionary.</p>
+<ul class="simple">
+<li><p>If a postprocessor is defined, it processes the output before returning.</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_parser_type</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainWrapper.get_parser_type"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Returns the type of the parser as a string if the parser exists, otherwise returns None.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The type of the parser as a string, or None if the parser does not exist.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Union[str, None]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_fallback_parser_type</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainWrapper.get_fallback_parser_type"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Returns the type name of the fallback parser if it exists, otherwise returns None.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><ul class="simple">
+<li><p>The type name of the fallback parser as a string if it exists, otherwise None.</p></li>
+</ul>
+</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Union[str, None]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'academic_metrics.ChainBuilder.ChainBuilder',</span> <span class="pre">'__doc__':</span> <span class="pre">'\n</span>&#160;&#160;&#160; <span class="pre">A</span> <span class="pre">wrapper</span> <span class="pre">class</span> <span class="pre">for</span> <span class="pre">managing</span> <span class="pre">and</span> <span class="pre">executing</span> <span class="pre">chains</span> <span class="pre">with</span> <span class="pre">optional</span> <span class="pre">fallback</span> <span class="pre">chains.\n\n</span>&#160;&#160;&#160; <span class="pre">This</span> <span class="pre">class</span> <span class="pre">is</span> <span class="pre">designed</span> <span class="pre">to</span> <span class="pre">handle</span> <span class="pre">the</span> <span class="pre">execution</span> <span class="pre">of</span> <span class="pre">primary</span> <span class="pre">chains</span> <span class="pre">and,</span> <span class="pre">if</span> <span class="pre">necessary,\n</span>&#160;&#160;&#160; <span class="pre">fallback</span> <span class="pre">chains</span> <span class="pre">in</span> <span class="pre">case</span> <span class="pre">of</span> <span class="pre">errors</span> <span class="pre">or</span> <span class="pre">unexpected</span> <span class="pre">outputs.</span> <span class="pre">It</span> <span class="pre">supports</span> <span class="pre">preprocessing\n</span>&#160;&#160;&#160; <span class="pre">and</span> <span class="pre">postprocessing</span> <span class="pre">of</span> <span class="pre">input</span> <span class="pre">and</span> <span class="pre">output</span> <span class="pre">data,</span> <span class="pre">as</span> <span class="pre">well</span> <span class="pre">as</span> <span class="pre">logging</span> <span class="pre">for</span> <span class="pre">debugging</span> <span class="pre">and\n</span>&#160;&#160;&#160; <span class="pre">monitoring</span> <span class="pre">purposes.\n\n</span>&#160;&#160;&#160; <span class="pre">Attributes:\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">chain</span> <span class="pre">(Runnable):</span> <span class="pre">The</span> <span class="pre">primary</span> <span class="pre">chain</span> <span class="pre">to</span> <span class="pre">be</span> <span class="pre">executed.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">fallback_chain</span> <span class="pre">(Runnable):</span> <span class="pre">The</span> <span class="pre">fallback</span> <span class="pre">chain</span> <span class="pre">to</span> <span class="pre">be</span> <span class="pre">executed</span> <span class="pre">if</span> <span class="pre">the</span> <span class="pre">primary</span> <span class="pre">chain</span> <span class="pre">fails.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">parser</span> <span class="pre">(Optional[ParserType]):</span> <span class="pre">The</span> <span class="pre">parser</span> <span class="pre">to</span> <span class="pre">be</span> <span class="pre">used</span> <span class="pre">for</span> <span class="pre">processing</span> <span class="pre">the</span> <span class="pre">output</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">primary</span> <span class="pre">chain.</span> <span class="pre">Defaults</span> <span class="pre">to</span> <span class="pre">None.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">fallback_parser</span> <span class="pre">(Optional[FallbackParserType]):</span> <span class="pre">The</span> <span class="pre">parser</span> <span class="pre">to</span> <span class="pre">be</span> <span class="pre">used</span> <span class="pre">for</span> <span class="pre">processing</span> <span class="pre">the</span> <span class="pre">output</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">fallback</span> <span class="pre">chain.</span> <span class="pre">Defaults</span> <span class="pre">to</span> <span class="pre">None.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">preprocessor</span> <span class="pre">(Optional[Callable[[Dict[str,</span> <span class="pre">Any]],</span> <span class="pre">Dict[str,</span> <span class="pre">Any]]]):</span> <span class="pre">A</span> <span class="pre">function</span> <span class="pre">to</span> <span class="pre">preprocess</span> <span class="pre">input</span> <span class="pre">data</span> <span class="pre">before</span> <span class="pre">passing</span> <span class="pre">it</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">chain.</span> <span class="pre">Defaults</span> <span class="pre">to</span> <span class="pre">None.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">postprocessor</span> <span class="pre">(Optional[Callable[[Any],</span> <span class="pre">Any]]):</span> <span class="pre">A</span> <span class="pre">function</span> <span class="pre">to</span> <span class="pre">postprocess</span> <span class="pre">the</span> <span class="pre">output</span> <span class="pre">data</span> <span class="pre">from</span> <span class="pre">the</span> <span class="pre">chain.</span> <span class="pre">Defaults</span> <span class="pre">to</span> <span class="pre">None.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">logger</span> <span class="pre">(Optional[logging.Logger]):</span> <span class="pre">A</span> <span class="pre">logger</span> <span class="pre">instance</span> <span class="pre">for</span> <span class="pre">logging</span> <span class="pre">information</span> <span class="pre">and</span> <span class="pre">debugging.</span> <span class="pre">Defaults</span> <span class="pre">to</span> <span class="pre">None.\n\n</span>&#160;&#160;&#160; <span class="pre">Methods:\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">__init__(chain,</span> <span class="pre">fallback_chain,</span> <span class="pre">parser=None,</span> <span class="pre">fallback_parser=None,</span> <span class="pre">preprocessor=None,</span> <span class="pre">postprocessor=None,</span> <span class="pre">logger=None):</span> <span class="pre">Initializes</span> <span class="pre">the</span> <span class="pre">ChainWrapper</span> <span class="pre">instance</span> <span class="pre">with</span> <span class="pre">the</span> <span class="pre">provided</span> <span class="pre">parameters.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">__str__():</span> <span class="pre">Returns</span> <span class="pre">a</span> <span class="pre">string</span> <span class="pre">representation</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">ChainWrapper</span> <span class="pre">object,</span> <span class="pre">including</span> <span class="pre">the</span> <span class="pre">chain,</span> <span class="pre">parser</span> <span class="pre">type,</span> <span class="pre">and</span> <span class="pre">fallback</span> <span class="pre">parser</span> <span class="pre">type.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">__repr__():</span> <span class="pre">Returns</span> <span class="pre">a</span> <span class="pre">string</span> <span class="pre">representation</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">ChainWrapper</span> <span class="pre">object</span> <span class="pre">for</span> <span class="pre">debugging</span> <span class="pre">purposes.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">run_chain(input_data=None,</span> <span class="pre">is_last_chain=False):</span> <span class="pre">Executes</span> <span class="pre">the</span> <span class="pre">primary</span> <span class="pre">chain</span> <span class="pre">with</span> <span class="pre">the</span> <span class="pre">provided</span> <span class="pre">input</span> <span class="pre">data.</span> <span class="pre">If</span> <span class="pre">an</span> <span class="pre">error</span> <span class="pre">occurs,</span> <span class="pre">attempts</span> <span class="pre">to</span> <span class="pre">execute</span> <span class="pre">the</span> <span class="pre">fallback</span> <span class="pre">chain.</span> <span class="pre">Supports</span> <span class="pre">preprocessing</span> <span class="pre">and</span> <span class="pre">postprocessing.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">get_parser_type():</span> <span class="pre">Returns</span> <span class="pre">the</span> <span class="pre">type</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">parser</span> <span class="pre">as</span> <span class="pre">a</span> <span class="pre">string</span> <span class="pre">if</span> <span class="pre">the</span> <span class="pre">parser</span> <span class="pre">exists,</span> <span class="pre">otherwise</span> <span class="pre">returns</span> <span class="pre">None.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">get_fallback_parser_type():</span> <span class="pre">Returns</span> <span class="pre">the</span> <span class="pre">type</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">fallback</span> <span class="pre">parser</span> <span class="pre">as</span> <span class="pre">a</span> <span class="pre">string</span> <span class="pre">if</span> <span class="pre">it</span> <span class="pre">exists,</span> <span class="pre">otherwise</span> <span class="pre">returns</span> <span class="pre">None.\n</span>&#160;&#160;&#160; <span class="pre">',</span> <span class="pre">'__init__':</span> <span class="pre">&lt;function</span> <span class="pre">ChainWrapper.__init__&gt;,</span> <span class="pre">'__str__':</span> <span class="pre">&lt;function</span> <span class="pre">ChainWrapper.__str__&gt;,</span> <span class="pre">'__repr__':</span> <span class="pre">&lt;function</span> <span class="pre">ChainWrapper.__repr__&gt;,</span> <span class="pre">'run_chain':</span> <span class="pre">&lt;function</span> <span class="pre">ChainWrapper.run_chain&gt;,</span> <span class="pre">'get_parser_type':</span> <span class="pre">&lt;function</span> <span class="pre">ChainWrapper.get_parser_type&gt;,</span> <span class="pre">'get_fallback_parser_type':</span> <span class="pre">&lt;function</span> <span class="pre">ChainWrapper.get_fallback_parser_type&gt;,</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'ChainWrapper'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'ChainWrapper'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__annotations__':</span> <span class="pre">{'parser':</span> <span class="pre">'Optional[ParserType]',</span> <span class="pre">'fallback_parser':</span> <span class="pre">'Optional[FallbackParserType]',</span> <span class="pre">'preprocessor':</span> <span class="pre">'Optional[Callable[[Dict[str,</span> <span class="pre">Any]],</span> <span class="pre">Dict[str,</span> <span class="pre">Any]]]',</span> <span class="pre">'chain':</span> <span class="pre">'Runnable',</span> <span class="pre">'fallback_chain':</span> <span class="pre">'Runnable',</span> <span class="pre">'postprocessor':</span> <span class="pre">'Optional[Callable[[Any],</span> <span class="pre">Any]]'}})</span></em></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'academic_metrics.ChainBuilder.ChainBuilder'</span></em></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__weakref__</span></span></dt>
+<dd><p>list of weak references to the object</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="chain-manager">
+<h3>Chain Manager<a class="headerlink" href="#chain-manager" title="Link to this heading">¶</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">academic_metrics.ChainBuilder.ChainBuilder.</span></span><span class="sig-name descname"><span class="pre">ChainManager</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">llm_model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">api_key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">llm_temperature</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.7</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">preprocessor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">postprocessor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_to_console</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">llm_kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">words_to_ban</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainManager"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class responsible for managing and orchestrating a sequence of chain layers,</p>
+<p>ChainManager is a class responsible for managing and orchestrating a sequence of chain layers,
+each of which can process input data and produce output data. It supports various types of
+language models (LLMs) and parsers, and allows for pre-processing and post-processing of data.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">api_key</span></span></dt>
+<dd><p>The API key for accessing the LLM service.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">llm_model</span></span></dt>
+<dd><p>The name of the LLM model to use.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">llm_model_type</span></span></dt>
+<dd><p>The type of the LLM model (e.g., “openai”, “anthropic”, “google”).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">llm_temperature</span></span></dt>
+<dd><p>The temperature setting for the LLM model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">llm_kwargs</span></span></dt>
+<dd><p>Additional keyword arguments for the LLM model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dict[str, Any]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">llm</span></span></dt>
+<dd><p>The initialized LLM instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Union[ChatOpenAI, ChatAnthropic, ChatGoogleGenerativeAI]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">chain_composer</span></span></dt>
+<dd><p>The composer for managing the sequence of chain layers.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="academic_metrics.ChainBuilder.html#academic_metrics.ChainBuilder.ChainBuilder.ChainComposer" title="academic_metrics.ChainBuilder.ChainBuilder.ChainComposer">ChainComposer</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">chain_variables</span></span></dt>
+<dd><p>A dictionary of variables used in the chain layers.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dict[str, Any]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">chain_variables_update_overwrite_warning_counter</span></span></dt>
+<dd><p>Counter for tracking variable overwrite warnings.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">preprocessor</span></span></dt>
+<dd><p>Optional preprocessor function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Optional[Callable[[Dict[str, Any]], Dict[str, Any]]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">postprocessor</span></span></dt>
+<dd><p>Optional postprocessor function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Optional[Callable[[Any], Any]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">logger</span></span></dt>
+<dd><p>Logger for logging information and debugging.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>logging.Logger</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__str__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainManager.__str__"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Returns a string representation of the ChainManager instance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainManager.__repr__"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Returns a string representation of the ChainManager instance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_get_llm_model_type(llm_model</span></span></dt>
+<dd><p>str): Determines the type of the LLM model based on its name.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_initialize_llm(api_key</span></span></dt>
+<dd><p>str, llm_model_type: str, llm_model: str, llm_temperature: float, llm_kwargs: Dict[str, Any]): Initializes the LLM instance based on the model type.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_create_openai_llm(api_key</span></span></dt>
+<dd><p>str, llm_model: str, llm_temperature: float, llm_kwargs: Dict[str, Any]): Creates an OpenAI LLM instance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_create_anthropic_llm(api_key</span></span></dt>
+<dd><p>str, llm_model: str, llm_temperature: float, llm_kwargs: Dict[str, Any]): Creates an Anthropic LLM instance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_create_google_llm(api_key</span></span></dt>
+<dd><p>str, llm_model: str, llm_temperature: float, llm_kwargs: Dict[str, Any]): Creates a Google Generative AI LLM instance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_initialize_parser(parser_type</span></span></dt>
+<dd><p>str, pydantic_output_model: Optional[BaseModel] = None): Initializes a parser based on the specified type.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_create_pydantic_parser(pydantic_output_model</span></span></dt>
+<dd><p>BaseModel): Creates a Pydantic parser.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_create_json_parser(pydantic_output_model</span></span></dt>
+<dd><p>Optional[BaseModel]): Creates a JSON parser.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_create_str_parser</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainManager._create_str_parser"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Creates a string parser.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_run_chain_validation_checks(output_passthrough_key_name</span></span></dt>
+<dd><p>Optional[str], ignore_output_passthrough_key_name_error: bool, parser_type: Optional[Literal[“pydantic”, “json”, “str”]], pydantic_output_model: Optional[BaseModel], fallback_parser_type: Optional[Literal[“pydantic”, “json”, “str”]], fallback_pydantic_output_model: Optional[BaseModel]): Runs validation checks for the chain configuration.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_format_chain_sequence(chain_sequence</span></span></dt>
+<dd><p>List[Tuple[ChainWrapper, Optional[str]]]): Formats and prints the chain sequence.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_run_validation_checks(prompt_variables_dict</span></span></dt>
+<dd><p>Union[FirstCallRequired, None]): Runs validation checks for the prompt variables.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">add_chain_layer(system_prompt</span></span></dt>
+<dd><p>str, human_prompt: str, output_passthrough_key_name: Optional[str] = None, ignore_output_passthrough_key_name_error: bool = False, preprocessor: Optional[Callable[[Dict[str, Any]], Dict[str, Any]]] = None, postprocessor: Optional[Callable[[Any], Any]] = None, parser_type: Optional[Literal[“pydantic”, “json”, “str”]] = None, fallback_parser_type: Optional[Literal[“pydantic”, “json”, “str”]] = None, pydantic_output_model: Optional[BaseModel] = None, fallback_pydantic_output_model: Optional[BaseModel] = None): Adds a chain layer to the chain composer.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_format_overwrite_warning(overwrites</span></span></dt>
+<dd><p>Dict[str, Dict[str, Any]]): Formats a warning message for variable overwrites.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_check_first_time_overwrites(prompt_variables_dict</span></span></dt>
+<dd><p>Dict[str, Any]): Checks for first-time overwrites of global variables and issues warnings.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_update_chain_variables(prompt_variables_dict</span></span></dt>
+<dd><p>Dict[str, Any]): Updates global variables with new values, warning on first-time overwrites.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_chain_sequence</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainManager.get_chain_sequence"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Returns the current chain sequence.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">print_chain_sequence</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainManager.print_chain_sequence"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Prints the current chain sequence.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_chain_variables</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainManager.get_chain_variables"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Returns the current chain variables.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">print_chain_variables</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainManager.print_chain_variables"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Prints the current chain variables.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">run(prompt_variables_dict</span></span></dt>
+<dd><p>Union[FirstCallRequired, None] = None): Runs the chain composer with the provided prompt variables.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">llm_model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">api_key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">llm_temperature</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.7</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">preprocessor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">postprocessor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_to_console</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">llm_kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">words_to_ban</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainManager.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Initializes the ChainBuilder class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>llm_model</strong> (<em>str</em>) – The name of the language model to be used.</p></li>
+<li><p><strong>api_key</strong> (<em>str</em>) – The API key for accessing the language model.</p></li>
+<li><p><strong>llm_temperature</strong> (<em>float</em><em>, </em><em>optional</em>) – The temperature setting for the language model. Defaults to 0.7.</p></li>
+<li><p><strong>preprocessor</strong> (<em>Optional</em><em>[</em><em>Callable</em><em>[</em><em>[</em><em>Dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em><em>]</em><em>, </em><em>Dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em><em>]</em><em>]</em><em>, </em><em>optional</em>) – A function to preprocess input data. Defaults to None.</p></li>
+<li><p><strong>postprocessor</strong> (<em>Optional</em><em>[</em><em>Callable</em><em>[</em><em>[</em><em>Any</em><em>]</em><em>, </em><em>Any</em><em>]</em><em>]</em><em>, </em><em>optional</em>) – A function to postprocess output data. Defaults to None.</p></li>
+<li><p><strong>log_to_console</strong> (<em>bool</em><em>, </em><em>optional</em>) – Flag to enable logging to console. Defaults to False.</p></li>
+<li><p><strong>llm_kwargs</strong> (<em>Dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em>) – Additional keyword arguments for the language model.</p></li>
+<li><p><strong>words_to_ban</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – A list of words to ban from the language model’s output.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__str__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainManager.__str__"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Returns a string representation of the ChainManager object.</p>
+<p>The string includes the values of the ‘llm’, ‘chain_composer’, and ‘global_variables’ attributes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A string representation of the ChainManager object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__repr__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainManager.__repr__"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Returns a string representation of the object for debugging purposes.</p>
+<p>This method calls the __str__() method to provide a user-friendly string
+representation of the object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A string representation of the object.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_validate_words_to_ban</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">words_to_ban</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainManager._validate_words_to_ban"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Validate the words to ban list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>words_to_ban</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – The list of words to ban.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_get_logit_bias_dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">llm_model</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainManager._get_logit_bias_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Get the logit bias dictionary for the words to ban.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>]</span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_get_llm_model_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">llm_model</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainManager._get_llm_model_type"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Determine the type of LLM (Large Language Model) based on the provided model name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>llm_model</strong> (<em>str</em>) – The name of the LLM model.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The type of the LLM model. Possible values are “openai”, “anthropic”, and “google”.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If the provided LLM model name does not match any of the supported types.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_initialize_llm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">api_key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">llm_model_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">llm_model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">llm_temperature</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">llm_kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logit_bias_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainManager._initialize_llm"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Initializes a language model based on the specified type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>api_key</strong> (<em>str</em>) – The API key for accessing the language model service.</p></li>
+<li><p><strong>llm_model_type</strong> (<em>str</em>) – The type of the language model (e.g., “openai”, “anthropic”, “google”).</p></li>
+<li><p><strong>llm_model</strong> (<em>str</em>) – The specific model to use within the chosen type.</p></li>
+<li><p><strong>llm_temperature</strong> (<em>float</em>) – The temperature setting for the language model, affecting randomness.</p></li>
+<li><p><strong>llm_kwargs</strong> (<em>Dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em>) – Additional keyword arguments specific to the language model.</p></li>
+<li><p><strong>logit_bias_dict</strong> (<em>Dict</em><em>[</em><em>int</em><em>, </em><em>int</em><em>]</em>) – A dictionary mapping token IDs to logit bias values.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>An instance of the initialized language model.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Union[ChatOpenAI, ChatAnthropic, ChatGoogleGenerativeAI]</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If the specified <cite>llm_model_type</cite> is not supported.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_recreate_llm</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainManager._recreate_llm"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Recreates the LLM with the current parameters.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_create_openai_llm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">api_key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">llm_model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">llm_temperature</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">llm_kwargs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logit_bias_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainManager._create_openai_llm"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Creates an instance of the ChatOpenAI language model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>api_key</strong> (<em>str</em>) – The API key for authenticating with the OpenAI service.</p></li>
+<li><p><strong>llm_model</strong> (<em>str</em>) – The identifier of the language model to use.</p></li>
+<li><p><strong>llm_temperature</strong> (<em>float</em>) – The temperature setting for the language model, which controls the randomness of the output.</p></li>
+<li><p><strong>llm_kwargs</strong> (<em>Dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em>) – Additional keyword arguments to pass to the ChatOpenAI constructor.</p></li>
+<li><p><strong>logit_bias_dict</strong> (<em>Dict</em><em>[</em><em>int</em><em>, </em><em>int</em><em>]</em>) – A dictionary mapping token IDs to logit bias values.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>An instance of the ChatOpenAI language model configured with the specified parameters.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ChatOpenAI</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_create_anthropic_llm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">api_key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">llm_model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">llm_temperature</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">llm_kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainManager._create_anthropic_llm"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Creates an instance of the ChatAnthropic language model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>api_key</strong> (<em>str</em>) – The API key for authenticating with the Anthropic service.</p></li>
+<li><p><strong>llm_model</strong> (<em>str</em>) – The identifier of the language model to use.</p></li>
+<li><p><strong>llm_temperature</strong> (<em>float</em>) – The temperature setting for the language model, controlling the randomness of the output.</p></li>
+<li><p><strong>llm_kwargs</strong> (<em>Dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em>) – Additional keyword arguments to pass to the ChatAnthropic constructor.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>An instance of the ChatAnthropic language model.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ChatAnthropic</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_create_google_llm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">api_key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">llm_model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">llm_temperature</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">llm_kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainManager._create_google_llm"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Creates an instance of ChatGoogleGenerativeAI with the specified parameters.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>api_key</strong> (<em>str</em>) – The API key for authenticating with the Google LLM service.</p></li>
+<li><p><strong>llm_model</strong> (<em>str</em>) – The model identifier for the Google LLM.</p></li>
+<li><p><strong>llm_temperature</strong> (<em>float</em>) – The temperature setting for the LLM, which controls the randomness of the output.</p></li>
+<li><p><strong>llm_kwargs</strong> (<em>Dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em>) – Additional keyword arguments to pass to the ChatGoogleGenerativeAI constructor.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>An instance of the ChatGoogleGenerativeAI class configured with the provided parameters.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ChatGoogleGenerativeAI</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_initialize_parser</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parser_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pydantic_output_model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainManager._initialize_parser"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Initializes and returns a parser based on the specified parser type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>parser_type</strong> (<em>str</em>)</p></li>
+<li><p><strong>initialize.</strong> (<em>- The type</em><em> of </em><em>parser to</em>)</p></li>
+<li><p><strong>&quot;pydantic&quot;</strong> (<em>- Must be one of</em>)</p></li>
+<li><p><strong>&quot;json&quot;</strong></p></li>
+<li><p><strong>&quot;str&quot;.</strong> (<em>or</em>)</p></li>
+<li><p><strong>pydantic_output_model</strong> (<em>Optional</em><em>[</em><em>BaseModel</em><em>]</em>)</p></li>
+<li><p><strong>parser.</strong> (<em>- The Pydantic model to use for the</em>)</p></li>
+<li><p><strong>&quot;pydantic&quot;.</strong> (<em>- Required if parser_type is</em>)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>An instance of the specified parser type.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ParserType</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If an invalid parser_type is provided.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_create_pydantic_parser</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pydantic_output_model</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainManager._create_pydantic_parser"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Creates a Pydantic output parser.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>pydantic_output_model</strong> (<em>Optional</em><em>[</em><em>BaseModel</em><em>]</em>) – The Pydantic model to be used for parsing output.
+Must be provided for ‘pydantic’ parser_type.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>An instance of PydanticOutputParser initialized with the provided Pydantic model.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>PydanticOutputParser</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If pydantic_output_model is not provided.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_create_json_parser</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pydantic_output_model</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainManager._create_json_parser"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Creates a JSON parser for the chain layer output.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>pydantic_output_model</strong> (<em>Optional</em><em>[</em><em>BaseModel</em><em>]</em>) – An optional Pydantic model to enforce typing on the JSON output.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>An instance of JsonOutputParser. If pydantic_output_model is provided, the parser will enforce the model’s schema on the output.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>JsonOutputParser</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>UserWarning</strong> – If pydantic_output_model is not provided, a warning is issued recommending its use for proper typing of the output.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_create_str_parser</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainManager._create_str_parser"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Creates an instance of StrOutputParser.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>An instance of the StrOutputParser class.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>StrOutputParser</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_run_chain_validation_checks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_passthrough_key_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore_output_passthrough_key_name_error</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parser_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pydantic_output_model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fallback_parser_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fallback_pydantic_output_model</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainManager._run_chain_validation_checks"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Validates chain configuration parameters before execution.</p>
+<p>Performs validation checks on chain configuration parameters to ensure proper setup
+and compatibility between different components.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>output_passthrough_key_name</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</span>) – Optional key name for passing chain output to next layer.</p></li>
+<li><p><strong>ignore_output_passthrough_key_name_error</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></span>) – Whether to ignore missing output key name.</p></li>
+<li><p><strong>parser_type</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code>[<code class="docutils literal notranslate"><span class="pre">'pydantic'</span></code>, <code class="docutils literal notranslate"><span class="pre">'json'</span></code>, <code class="docutils literal notranslate"><span class="pre">'str'</span></code>]]</span>) – Type of parser to use (“pydantic”, “json”, or “str”).</p></li>
+<li><p><strong>pydantic_output_model</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code>]</span>) – Pydantic model for output validation.</p></li>
+<li><p><strong>fallback_parser_type</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code>[<code class="docutils literal notranslate"><span class="pre">'pydantic'</span></code>, <code class="docutils literal notranslate"><span class="pre">'json'</span></code>, <code class="docutils literal notranslate"><span class="pre">'str'</span></code>]]</span>) – Type of fallback parser.</p></li>
+<li><p><strong>fallback_pydantic_output_model</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code>]</span>) – Pydantic model for fallback parser.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>ValueError</strong> – If validation fails for:</p></li>
+<li><p><strong>- Missing output key name when required</strong> – </p></li>
+<li><p><strong>- Invalid parser type combinations</strong> – </p></li>
+<li><p><strong>- Missing required models</strong> – </p></li>
+<li><p><strong>- Duplicate parser types</strong> – </p></li>
+<li><p><strong>- Same models used for main and fallback</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>UserWarning: For non-critical issues like:
+- Missing output key name when ignored</p>
+<ul class="simple">
+<li><p>Missing recommended Pydantic models</p></li>
+<li><p>Unused provided models</p></li>
+</ul>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_format_chain_sequence</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chain_sequence</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainManager._format_chain_sequence"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Formats and prints the details of each chain in the given chain sequence.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>chain_sequence</strong> (<em>List</em><em>[</em><em>Tuple</em><em>[</em><a class="reference internal" href="academic_metrics.ChainBuilder.html#academic_metrics.ChainBuilder.ChainBuilder.ChainWrapper" title="academic_metrics.ChainBuilder.ChainBuilder.ChainWrapper"><em>ChainWrapper</em></a><em>, </em><em>Optional</em><em>[</em><em>str</em><em>]</em><em>]</em><em>]</em>)</p></li>
+<li><p><strong>name.</strong> (<em>- A list</em><em> of </em><em>tuples where each tuple contains a ChainWrapper object and an optional output</em>)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_run_validation_checks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prompt_variables_dict</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainManager._run_validation_checks"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Validates the input parameters for the chain execution.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>prompt_variables_dict</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">FirsCallRequired</span></code>, bound= <code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>])]</span>) – Union[FirstCallRequired, None]
+A dictionary containing the variables to be passed to the chain layers.
+- On the first call to <cite>run()</cite>, this parameter must be provided.
+- On subsequent calls, it can be omitted if there are no new variables to pass.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>ValueError</strong> – </p></li>
+<li><p><strong>- If prompt_variables_dict is None on the first call to run</strong><strong>(</strong><strong>)</strong><strong>.</strong> – </p></li>
+<li><p><strong>TypeError</strong> – </p></li>
+<li><p><strong>- If prompt_variables_dict is not a dictionary when provided.</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<ul class="simple">
+<li><p>The <cite>prompt_variables_dict</cite> should contain keys that match the variable names used in the chain layers.</p></li>
+<li><p>The <cite>output_passthrough_key_name</cite> parameter in the <cite>add_chain_layer</cite> method is used to identify the output of the chain layer and assign it to a variable.</p></li>
+<li><p>If <cite>output_passthrough_key_name</cite> is not specified, the output of the chain layer will not be assigned to a variable and will not be available to the next chain layer.</p></li>
+<li><p>The <cite>ignore_output_passthrough_key_name_error</cite> parameter can be set to True if the output of the chain layer is not needed for the next chain layer, such as when running a chain layer solely for its side effects or if it is the last chain layer in a multi-layer chain.</p></li>
+<li><p>Ensure that the placeholder variable names in your prompt strings match the keys in <cite>prompt_variables_dict</cite> passed into the <cite>ChainManager.run()</cite> method.</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">add_chain_layer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">system_prompt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">human_prompt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_passthrough_key_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore_output_passthrough_key_name_error</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">preprocessor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">postprocessor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parser_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fallback_parser_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pydantic_output_model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fallback_pydantic_output_model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainManager.add_chain_layer"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Adds a chain layer to the chain composer.</p>
+<p>This method configures and adds a new chain layer to the chain composer,
+allowing for the processing of input data through specified prompts and parsers.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>system_prompt</strong> (<em>str</em>) – The system prompt template for the chain layer.</p></li>
+<li><p><strong>human_prompt</strong> (<em>str</em>) – The human prompt template for the chain layer.</p></li>
+<li><p><strong>output_passthrough_key_name</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – Key name for passing chain output to the next layer.</p></li>
+<li><p><strong>ignore_output_passthrough_key_name_error</strong> (<em>bool</em>) – Flag to ignore missing output key name errors.</p></li>
+<li><p><strong>preprocessor</strong> (<em>Optional</em><em>[</em><em>Callable</em><em>[</em><em>[</em><em>Dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em><em>]</em><em>, </em><em>Dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em><em>]</em><em>]</em>) – Function to preprocess input data.</p></li>
+<li><p><strong>postprocessor</strong> (<em>Optional</em><em>[</em><em>Callable</em><em>[</em><em>[</em><em>Any</em><em>]</em><em>, </em><em>Any</em><em>]</em><em>]</em>) – Function to postprocess output data.</p></li>
+<li><p><strong>parser_type</strong> (<em>Optional</em><em>[</em><em>Literal</em><em>[</em><em>&quot;pydantic&quot;</em><em>, </em><em>&quot;json&quot;</em><em>, </em><em>&quot;str&quot;</em><em>]</em><em>]</em>) – Type of parser to use.</p></li>
+<li><p><strong>fallback_parser_type</strong> (<em>Optional</em><em>[</em><em>Literal</em><em>[</em><em>&quot;pydantic&quot;</em><em>, </em><em>&quot;json&quot;</em><em>, </em><em>&quot;str&quot;</em><em>]</em><em>]</em>) – Type of fallback parser.</p></li>
+<li><p><strong>pydantic_output_model</strong> (<em>Optional</em><em>[</em><em>BaseModel</em><em>]</em>) – Pydantic model for output validation.</p></li>
+<li><p><strong>fallback_pydantic_output_model</strong> (<em>Optional</em><em>[</em><em>BaseModel</em><em>]</em>) – Pydantic model for fallback parser.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_format_overwrite_warning</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">overwrites</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainManager._format_overwrite_warning"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Formats a warning message for overwritten values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>overwrites</strong> (<em>Dict</em><em>[</em><em>str</em><em>, </em><em>Dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em><em>]</em>)</p></li>
+<li><p><strong>item</strong> (<em>- A dictionary where the key is the name</em><em> of </em><em>the overwritten</em>)</p></li>
+<li><p><strong>respectively.</strong> (<em>and the value is another dictionary with 'old' and 'new' keys representing the old and new values</em>)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A formatted string that lists each overwritten item with its old and new values.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_check_first_time_overwrites</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prompt_variables_dict</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainManager._check_first_time_overwrites"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Checks and warns if any global chain variables are being overwritten for the first time.</p>
+<p>This method compares the keys in the provided <cite>prompt_variables_dict</cite> with the existing
+<cite>chain_variables</cite>. If any keys match, it indicates that an overwrite is occurring. A warning
+is issued the first time this happens, detailing the old and new values of the overwritten
+variables. Subsequent overwrites will not trigger warnings.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>prompt_variables_dict</strong> (<em>Dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em>)</p></li>
+<li><p><strong>ones.</strong> (<em>- A dictionary containing the new values for the chain variables that may overwrite existing</em>)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_update_chain_variables</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prompt_variables_dict</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainManager._update_chain_variables"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Update global variables with new values, warning on first-time overwrites.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>prompt_variables_dict</strong> (<em>Dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em>)</p></li>
+<li><p><strong>variables.</strong> (<em>- A dictionary containing the new values for the global</em>)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_chain_sequence</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainManager.get_chain_sequence"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Retrieves the chain sequence from the chain composer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><ul class="simple">
+<li><p>A list of tuples where each tuple contains a ChainWrapper object and the output key name if output_passthrough_key_name was provided to add_chain_layer.</p></li>
+</ul>
+</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>List[Tuple[<a class="reference internal" href="academic_metrics.ChainBuilder.html#academic_metrics.ChainBuilder.ChainBuilder.ChainWrapper" title="academic_metrics.ChainBuilder.ChainBuilder.ChainWrapper">ChainWrapper</a>, Optional[str]]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'academic_metrics.ChainBuilder.ChainBuilder',</span> <span class="pre">'__doc__':</span> <span class="pre">'Class</span> <span class="pre">responsible</span> <span class="pre">for</span> <span class="pre">managing</span> <span class="pre">and</span> <span class="pre">orchestrating</span> <span class="pre">a</span> <span class="pre">sequence</span> <span class="pre">of</span> <span class="pre">chain</span> <span class="pre">layers,\n\n</span>&#160;&#160;&#160; <span class="pre">ChainManager</span> <span class="pre">is</span> <span class="pre">a</span> <span class="pre">class</span> <span class="pre">responsible</span> <span class="pre">for</span> <span class="pre">managing</span> <span class="pre">and</span> <span class="pre">orchestrating</span> <span class="pre">a</span> <span class="pre">sequence</span> <span class="pre">of</span> <span class="pre">chain</span> <span class="pre">layers,\n</span>&#160;&#160;&#160; <span class="pre">each</span> <span class="pre">of</span> <span class="pre">which</span> <span class="pre">can</span> <span class="pre">process</span> <span class="pre">input</span> <span class="pre">data</span> <span class="pre">and</span> <span class="pre">produce</span> <span class="pre">output</span> <span class="pre">data.</span> <span class="pre">It</span> <span class="pre">supports</span> <span class="pre">various</span> <span class="pre">types</span> <span class="pre">of\n</span>&#160;&#160;&#160; <span class="pre">language</span> <span class="pre">models</span> <span class="pre">(LLMs)</span> <span class="pre">and</span> <span class="pre">parsers,</span> <span class="pre">and</span> <span class="pre">allows</span> <span class="pre">for</span> <span class="pre">pre-processing</span> <span class="pre">and</span> <span class="pre">post-processing</span> <span class="pre">of</span> <span class="pre">data.\n\n</span>&#160;&#160;&#160; <span class="pre">Attributes:\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">api_key</span> <span class="pre">(str):</span> <span class="pre">The</span> <span class="pre">API</span> <span class="pre">key</span> <span class="pre">for</span> <span class="pre">accessing</span> <span class="pre">the</span> <span class="pre">LLM</span> <span class="pre">service.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">llm_model</span> <span class="pre">(str):</span> <span class="pre">The</span> <span class="pre">name</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">LLM</span> <span class="pre">model</span> <span class="pre">to</span> <span class="pre">use.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">llm_model_type</span> <span class="pre">(str):</span> <span class="pre">The</span> <span class="pre">type</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">LLM</span> <span class="pre">model</span> <span class="pre">(e.g.,</span> <span class="pre">&quot;openai&quot;,</span> <span class="pre">&quot;anthropic&quot;,</span> <span class="pre">&quot;google&quot;).\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">llm_temperature</span> <span class="pre">(float):</span> <span class="pre">The</span> <span class="pre">temperature</span> <span class="pre">setting</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">LLM</span> <span class="pre">model.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">llm_kwargs</span> <span class="pre">(Dict[str,</span> <span class="pre">Any]):</span> <span class="pre">Additional</span> <span class="pre">keyword</span> <span class="pre">arguments</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">LLM</span> <span class="pre">model.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">llm</span> <span class="pre">(Union[ChatOpenAI,</span> <span class="pre">ChatAnthropic,</span> <span class="pre">ChatGoogleGenerativeAI]):</span> <span class="pre">The</span> <span class="pre">initialized</span> <span class="pre">LLM</span> <span class="pre">instance.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">chain_composer</span> <span class="pre">(ChainComposer):</span> <span class="pre">The</span> <span class="pre">composer</span> <span class="pre">for</span> <span class="pre">managing</span> <span class="pre">the</span> <span class="pre">sequence</span> <span class="pre">of</span> <span class="pre">chain</span> <span class="pre">layers.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">chain_variables</span> <span class="pre">(Dict[str,</span> <span class="pre">Any]):</span> <span class="pre">A</span> <span class="pre">dictionary</span> <span class="pre">of</span> <span class="pre">variables</span> <span class="pre">used</span> <span class="pre">in</span> <span class="pre">the</span> <span class="pre">chain</span> <span class="pre">layers.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">chain_variables_update_overwrite_warning_counter</span> <span class="pre">(int):</span> <span class="pre">Counter</span> <span class="pre">for</span> <span class="pre">tracking</span> <span class="pre">variable</span> <span class="pre">overwrite</span> <span class="pre">warnings.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">preprocessor</span> <span class="pre">(Optional[Callable[[Dict[str,</span> <span class="pre">Any]],</span> <span class="pre">Dict[str,</span> <span class="pre">Any]]]):</span> <span class="pre">Optional</span> <span class="pre">preprocessor</span> <span class="pre">function.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">postprocessor</span> <span class="pre">(Optional[Callable[[Any],</span> <span class="pre">Any]]):</span> <span class="pre">Optional</span> <span class="pre">postprocessor</span> <span class="pre">function.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">logger</span> <span class="pre">(logging.Logger):</span> <span class="pre">Logger</span> <span class="pre">for</span> <span class="pre">logging</span> <span class="pre">information</span> <span class="pre">and</span> <span class="pre">debugging.\n\n</span>&#160;&#160;&#160; <span class="pre">Methods:\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">__str__():</span> <span class="pre">Returns</span> <span class="pre">a</span> <span class="pre">string</span> <span class="pre">representation</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">ChainManager</span> <span class="pre">instance.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">__repr__():</span> <span class="pre">Returns</span> <span class="pre">a</span> <span class="pre">string</span> <span class="pre">representation</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">ChainManager</span> <span class="pre">instance.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">_get_llm_model_type(llm_model:</span> <span class="pre">str):</span> <span class="pre">Determines</span> <span class="pre">the</span> <span class="pre">type</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">LLM</span> <span class="pre">model</span> <span class="pre">based</span> <span class="pre">on</span> <span class="pre">its</span> <span class="pre">name.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">_initialize_llm(api_key:</span> <span class="pre">str,</span> <span class="pre">llm_model_type:</span> <span class="pre">str,</span> <span class="pre">llm_model:</span> <span class="pre">str,</span> <span class="pre">llm_temperature:</span> <span class="pre">float,</span> <span class="pre">llm_kwargs:</span> <span class="pre">Dict[str,</span> <span class="pre">Any]):</span> <span class="pre">Initializes</span> <span class="pre">the</span> <span class="pre">LLM</span> <span class="pre">instance</span> <span class="pre">based</span> <span class="pre">on</span> <span class="pre">the</span> <span class="pre">model</span> <span class="pre">type.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">_create_openai_llm(api_key:</span> <span class="pre">str,</span> <span class="pre">llm_model:</span> <span class="pre">str,</span> <span class="pre">llm_temperature:</span> <span class="pre">float,</span> <span class="pre">llm_kwargs:</span> <span class="pre">Dict[str,</span> <span class="pre">Any]):</span> <span class="pre">Creates</span> <span class="pre">an</span> <span class="pre">OpenAI</span> <span class="pre">LLM</span> <span class="pre">instance.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">_create_anthropic_llm(api_key:</span> <span class="pre">str,</span> <span class="pre">llm_model:</span> <span class="pre">str,</span> <span class="pre">llm_temperature:</span> <span class="pre">float,</span> <span class="pre">llm_kwargs:</span> <span class="pre">Dict[str,</span> <span class="pre">Any]):</span> <span class="pre">Creates</span> <span class="pre">an</span> <span class="pre">Anthropic</span> <span class="pre">LLM</span> <span class="pre">instance.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">_create_google_llm(api_key:</span> <span class="pre">str,</span> <span class="pre">llm_model:</span> <span class="pre">str,</span> <span class="pre">llm_temperature:</span> <span class="pre">float,</span> <span class="pre">llm_kwargs:</span> <span class="pre">Dict[str,</span> <span class="pre">Any]):</span> <span class="pre">Creates</span> <span class="pre">a</span> <span class="pre">Google</span> <span class="pre">Generative</span> <span class="pre">AI</span> <span class="pre">LLM</span> <span class="pre">instance.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">_initialize_parser(parser_type:</span> <span class="pre">str,</span> <span class="pre">pydantic_output_model:</span> <span class="pre">Optional[BaseModel]</span> <span class="pre">=</span> <span class="pre">None):</span> <span class="pre">Initializes</span> <span class="pre">a</span> <span class="pre">parser</span> <span class="pre">based</span> <span class="pre">on</span> <span class="pre">the</span> <span class="pre">specified</span> <span class="pre">type.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">_create_pydantic_parser(pydantic_output_model:</span> <span class="pre">BaseModel):</span> <span class="pre">Creates</span> <span class="pre">a</span> <span class="pre">Pydantic</span> <span class="pre">parser.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">_create_json_parser(pydantic_output_model:</span> <span class="pre">Optional[BaseModel]):</span> <span class="pre">Creates</span> <span class="pre">a</span> <span class="pre">JSON</span> <span class="pre">parser.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">_create_str_parser():</span> <span class="pre">Creates</span> <span class="pre">a</span> <span class="pre">string</span> <span class="pre">parser.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">_run_chain_validation_checks(output_passthrough_key_name:</span> <span class="pre">Optional[str],</span> <span class="pre">ignore_output_passthrough_key_name_error:</span> <span class="pre">bool,</span> <span class="pre">parser_type:</span> <span class="pre">Optional[Literal[&quot;pydantic&quot;,</span> <span class="pre">&quot;json&quot;,</span> <span class="pre">&quot;str&quot;]],</span> <span class="pre">pydantic_output_model:</span> <span class="pre">Optional[BaseModel],</span> <span class="pre">fallback_parser_type:</span> <span class="pre">Optional[Literal[&quot;pydantic&quot;,</span> <span class="pre">&quot;json&quot;,</span> <span class="pre">&quot;str&quot;]],</span> <span class="pre">fallback_pydantic_output_model:</span> <span class="pre">Optional[BaseModel]):</span> <span class="pre">Runs</span> <span class="pre">validation</span> <span class="pre">checks</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">chain</span> <span class="pre">configuration.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">_format_chain_sequence(chain_sequence:</span> <span class="pre">List[Tuple[ChainWrapper,</span> <span class="pre">Optional[str]]]):</span> <span class="pre">Formats</span> <span class="pre">and</span> <span class="pre">prints</span> <span class="pre">the</span> <span class="pre">chain</span> <span class="pre">sequence.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">_run_validation_checks(prompt_variables_dict:</span> <span class="pre">Union[FirstCallRequired,</span> <span class="pre">None]):</span> <span class="pre">Runs</span> <span class="pre">validation</span> <span class="pre">checks</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">prompt</span> <span class="pre">variables.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">add_chain_layer(system_prompt:</span> <span class="pre">str,</span> <span class="pre">human_prompt:</span> <span class="pre">str,</span> <span class="pre">output_passthrough_key_name:</span> <span class="pre">Optional[str]</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">ignore_output_passthrough_key_name_error:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False,</span> <span class="pre">preprocessor:</span> <span class="pre">Optional[Callable[[Dict[str,</span> <span class="pre">Any]],</span> <span class="pre">Dict[str,</span> <span class="pre">Any]]]</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">postprocessor:</span> <span class="pre">Optional[Callable[[Any],</span> <span class="pre">Any]]</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">parser_type:</span> <span class="pre">Optional[Literal[&quot;pydantic&quot;,</span> <span class="pre">&quot;json&quot;,</span> <span class="pre">&quot;str&quot;]]</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">fallback_parser_type:</span> <span class="pre">Optional[Literal[&quot;pydantic&quot;,</span> <span class="pre">&quot;json&quot;,</span> <span class="pre">&quot;str&quot;]]</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">pydantic_output_model:</span> <span class="pre">Optional[BaseModel]</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">fallback_pydantic_output_model:</span> <span class="pre">Optional[BaseModel]</span> <span class="pre">=</span> <span class="pre">None):</span> <span class="pre">Adds</span> <span class="pre">a</span> <span class="pre">chain</span> <span class="pre">layer</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">chain</span> <span class="pre">composer.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">_format_overwrite_warning(overwrites:</span> <span class="pre">Dict[str,</span> <span class="pre">Dict[str,</span> <span class="pre">Any]]):</span> <span class="pre">Formats</span> <span class="pre">a</span> <span class="pre">warning</span> <span class="pre">message</span> <span class="pre">for</span> <span class="pre">variable</span> <span class="pre">overwrites.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">_check_first_time_overwrites(prompt_variables_dict:</span> <span class="pre">Dict[str,</span> <span class="pre">Any]):</span> <span class="pre">Checks</span> <span class="pre">for</span> <span class="pre">first-time</span> <span class="pre">overwrites</span> <span class="pre">of</span> <span class="pre">global</span> <span class="pre">variables</span> <span class="pre">and</span> <span class="pre">issues</span> <span class="pre">warnings.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">_update_chain_variables(prompt_variables_dict:</span> <span class="pre">Dict[str,</span> <span class="pre">Any]):</span> <span class="pre">Updates</span> <span class="pre">global</span> <span class="pre">variables</span> <span class="pre">with</span> <span class="pre">new</span> <span class="pre">values,</span> <span class="pre">warning</span> <span class="pre">on</span> <span class="pre">first-time</span> <span class="pre">overwrites.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">get_chain_sequence():</span> <span class="pre">Returns</span> <span class="pre">the</span> <span class="pre">current</span> <span class="pre">chain</span> <span class="pre">sequence.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">print_chain_sequence():</span> <span class="pre">Prints</span> <span class="pre">the</span> <span class="pre">current</span> <span class="pre">chain</span> <span class="pre">sequence.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">get_chain_variables():</span> <span class="pre">Returns</span> <span class="pre">the</span> <span class="pre">current</span> <span class="pre">chain</span> <span class="pre">variables.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">print_chain_variables():</span> <span class="pre">Prints</span> <span class="pre">the</span> <span class="pre">current</span> <span class="pre">chain</span> <span class="pre">variables.\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">run(prompt_variables_dict:</span> <span class="pre">Union[FirstCallRequired,</span> <span class="pre">None]</span> <span class="pre">=</span> <span class="pre">None):</span> <span class="pre">Runs</span> <span class="pre">the</span> <span class="pre">chain</span> <span class="pre">composer</span> <span class="pre">with</span> <span class="pre">the</span> <span class="pre">provided</span> <span class="pre">prompt</span> <span class="pre">variables.\n</span>&#160;&#160;&#160; <span class="pre">',</span> <span class="pre">'__init__':</span> <span class="pre">&lt;function</span> <span class="pre">ChainManager.__init__&gt;,</span> <span class="pre">'__str__':</span> <span class="pre">&lt;function</span> <span class="pre">ChainManager.__str__&gt;,</span> <span class="pre">'__repr__':</span> <span class="pre">&lt;function</span> <span class="pre">ChainManager.__repr__&gt;,</span> <span class="pre">'_validate_words_to_ban':</span> <span class="pre">&lt;function</span> <span class="pre">ChainManager._validate_words_to_ban&gt;,</span> <span class="pre">'_get_logit_bias_dict':</span> <span class="pre">&lt;function</span> <span class="pre">ChainManager._get_logit_bias_dict&gt;,</span> <span class="pre">'_get_llm_model_type':</span> <span class="pre">&lt;function</span> <span class="pre">ChainManager._get_llm_model_type&gt;,</span> <span class="pre">'_initialize_llm':</span> <span class="pre">&lt;function</span> <span class="pre">ChainManager._initialize_llm&gt;,</span> <span class="pre">'_recreate_llm':</span> <span class="pre">&lt;function</span> <span class="pre">ChainManager._recreate_llm&gt;,</span> <span class="pre">'_create_openai_llm':</span> <span class="pre">&lt;function</span> <span class="pre">ChainManager._create_openai_llm&gt;,</span> <span class="pre">'_create_anthropic_llm':</span> <span class="pre">&lt;function</span> <span class="pre">ChainManager._create_anthropic_llm&gt;,</span> <span class="pre">'_create_google_llm':</span> <span class="pre">&lt;function</span> <span class="pre">ChainManager._create_google_llm&gt;,</span> <span class="pre">'_initialize_parser':</span> <span class="pre">&lt;function</span> <span class="pre">ChainManager._initialize_parser&gt;,</span> <span class="pre">'_create_pydantic_parser':</span> <span class="pre">&lt;function</span> <span class="pre">ChainManager._create_pydantic_parser&gt;,</span> <span class="pre">'_create_json_parser':</span> <span class="pre">&lt;function</span> <span class="pre">ChainManager._create_json_parser&gt;,</span> <span class="pre">'_create_str_parser':</span> <span class="pre">&lt;function</span> <span class="pre">ChainManager._create_str_parser&gt;,</span> <span class="pre">'_run_chain_validation_checks':</span> <span class="pre">&lt;function</span> <span class="pre">ChainManager._run_chain_validation_checks&gt;,</span> <span class="pre">'_format_chain_sequence':</span> <span class="pre">&lt;function</span> <span class="pre">ChainManager._format_chain_sequence&gt;,</span> <span class="pre">'_run_validation_checks':</span> <span class="pre">&lt;function</span> <span class="pre">ChainManager._run_validation_checks&gt;,</span> <span class="pre">'add_chain_layer':</span> <span class="pre">&lt;function</span> <span class="pre">ChainManager.add_chain_layer&gt;,</span> <span class="pre">'_format_overwrite_warning':</span> <span class="pre">&lt;function</span> <span class="pre">ChainManager._format_overwrite_warning&gt;,</span> <span class="pre">'_check_first_time_overwrites':</span> <span class="pre">&lt;function</span> <span class="pre">ChainManager._check_first_time_overwrites&gt;,</span> <span class="pre">'_update_chain_variables':</span> <span class="pre">&lt;function</span> <span class="pre">ChainManager._update_chain_variables&gt;,</span> <span class="pre">'get_chain_sequence':</span> <span class="pre">&lt;function</span> <span class="pre">ChainManager.get_chain_sequence&gt;,</span> <span class="pre">'print_chain_sequence':</span> <span class="pre">&lt;function</span> <span class="pre">ChainManager.print_chain_sequence&gt;,</span> <span class="pre">'get_chain_variables':</span> <span class="pre">&lt;function</span> <span class="pre">ChainManager.get_chain_variables&gt;,</span> <span class="pre">'print_chain_variables':</span> <span class="pre">&lt;function</span> <span class="pre">ChainManager.print_chain_variables&gt;,</span> <span class="pre">'set_words_to_ban':</span> <span class="pre">&lt;function</span> <span class="pre">ChainManager.set_words_to_ban&gt;,</span> <span class="pre">'run':</span> <span class="pre">&lt;function</span> <span class="pre">ChainManager.run&gt;,</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'ChainManager'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'ChainManager'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__annotations__':</span> <span class="pre">{'log_to_console':</span> <span class="pre">'bool',</span> <span class="pre">'llm_kwargs':</span> <span class="pre">'Dict[str,</span> <span class="pre">Any]',</span> <span class="pre">'api_key':</span> <span class="pre">'str',</span> <span class="pre">'llm_model':</span> <span class="pre">'str',</span> <span class="pre">'llm_model_type':</span> <span class="pre">'str',</span> <span class="pre">'words_to_ban':</span> <span class="pre">'List[str]</span> <span class="pre">|</span> <span class="pre">None',</span> <span class="pre">'logit_bias_dict':</span> <span class="pre">'Dict[int,</span> <span class="pre">int]',</span> <span class="pre">'llm_temperature':</span> <span class="pre">'float',</span> <span class="pre">'llm':</span> <span class="pre">'Union[ChatOpenAI,</span> <span class="pre">ChatAnthropic,</span> <span class="pre">ChatGoogleGenerativeAI]',</span> <span class="pre">'chain_composer':</span> <span class="pre">'ChainComposer',</span> <span class="pre">'chain_variables':</span> <span class="pre">'Dict[str,</span> <span class="pre">Any]',</span> <span class="pre">'chain_variables_update_overwrite_warning_counter':</span> <span class="pre">'int',</span> <span class="pre">'preprocessor':</span> <span class="pre">'Optional[Callable[[Dict[str,</span> <span class="pre">Any]],</span> <span class="pre">Dict[str,</span> <span class="pre">Any]]]',</span> <span class="pre">'postprocessor':</span> <span class="pre">'Optional[Callable[[Any],</span> <span class="pre">Any]]'}})</span></em></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'academic_metrics.ChainBuilder.ChainBuilder'</span></em></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__weakref__</span></span></dt>
+<dd><p>list of weak references to the object</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">print_chain_sequence</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainManager.print_chain_sequence"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Prints the chain sequence by formatting it.</p>
+<p>This method retrieves the chain sequence from the chain composer and
+formats it using the _format_chain_sequence method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_chain_variables</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainManager.get_chain_variables"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Retrieve the chain variables.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A dictionary containing the chain variables.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict[str, Any]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">print_chain_variables</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainManager.print_chain_variables"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Prints the chain variables in a formatted manner.</p>
+<p>This method prints the chain variables stored in the <cite>chain_variables</cite>
+attribute of the class. The output is formatted with a header and
+footer consisting of dashes, and each key-value pair is printed on
+a new line.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">set_words_to_ban</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">words_to_ban</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainManager.set_words_to_ban"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Updates the list of words to ban and recreates the OpenAI LLM with new logit bias.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>words_to_ban</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</span>) – List of words to ban from LLM output</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prompt_variables_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/ChainBuilder/ChainBuilder.html#ChainManager.run"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Executes the chain builder process.</p>
+<p>This method performs validation checks, updates chain variables if provided,
+and runs the chain composer with the current chain variables.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>prompt_variables_dict</strong> (<em>Union</em><em>[</em><em>FirstCallRequired</em><em>, </em><em>None</em><em>]</em><em>, </em><em>optional</em>)</p></li>
+<li><p><strong>provided</strong> (<em>- A dictionary containing prompt variables. If</em>)</p></li>
+<li><p><strong>None.</strong> (<em>it will be used to update the chain variables. Defaults to</em>)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The result of running the chain composer.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+        <div id="show_right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&lt;</span><span>Page contents</span></a></p>
+        </div>
+
+        <div id="right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
+            <div class="page_toc">
+                <ul>
+<li><a class="reference internal" href="#">Chain Builder</a><ul>
+<li><a class="reference internal" href="#module-academic_metrics.ChainBuilder.ChainBuilder">Overview</a></li>
+<li><a class="reference internal" href="#type-definitions">Type Definitions</a><ul>
+<li><a class="reference internal" href="#academic_metrics.ChainBuilder.ChainBuilder.FirstCallRequired"><code class="docutils literal notranslate"><span class="pre">FirstCallRequired</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.ChainBuilder.ChainBuilder.ParserUnion"><code class="docutils literal notranslate"><span class="pre">ParserUnion</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.ChainBuilder.ChainBuilder.ParserType"><code class="docutils literal notranslate"><span class="pre">ParserType</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.ChainBuilder.ChainBuilder.FallbackParserType"><code class="docutils literal notranslate"><span class="pre">FallbackParserType</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#classes">Classes</a><ul>
+<li><a class="reference internal" href="#id1">Chain Builder</a></li>
+<li><a class="reference internal" href="#chain-composer">Chain Composer</a></li>
+<li><a class="reference internal" href="#chain-wrapper">Chain Wrapper</a></li>
+<li><a class="reference internal" href="#chain-manager">Chain Manager</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+    
+
+      <div class="clearer"></div>
+    </div>
+    <div class="button_nav_wrapper">
+        <div class="button_nav">
+            <div class="left">
+                
+                <a href="config.html">
+                    <span class="icon">&lt;</span><span>Global Configuration</span></a>
+                
+            </div>
+
+            <div class="right">
+                
+                    <a href="ai_prompts.html"><span>ai_prompts package</span><span class="icon">&gt;</span></a>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Spencer Presley, Cole Barbes.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    </div>
+
+<p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>
+  </body>
+</html>

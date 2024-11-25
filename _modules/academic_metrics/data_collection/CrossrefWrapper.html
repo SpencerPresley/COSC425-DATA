@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>academic_metrics.data_collection.CrossrefWrapper &#8212; Academic Metrics 0.1.0-beta documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/basic_mod.css?v=9b2032db" />
+    <script src="../../../_static/documentation_options.js?v=c903bf51"></script>
+    <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <script src="../../../_static/js/petite-vue.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+  </head><body data-dark_mode_code_blocks="true">
+
+<div id="top_nav">
+    
+
+    <nav>
+        
+            
+        
+
+        <p id="toggle_sidebar">
+            <a href="#" title="Toggle sidebar">|||</a>
+        </p>
+        <h1><a href="../../../index.html" title="Go to homepage">Academic Metrics 0.1.0-beta documentation</a></h1>
+
+        <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
+    <template v-if="mode == 'light'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_light"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M67.48,18.073c1.913,-1.912 1.913,-5.018 0,-6.931c-1.912,-1.912 -5.018,-1.912 -6.931,0l-6.798,6.799c-1.912,1.912 -1.912,5.018 0,6.931c1.913,1.912 5.018,1.912 6.931,-0l6.798,-6.799Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.728,61.108c1.912,-1.913 1.912,-5.018 -0,-6.931c-1.913,-1.913 -5.019,-1.913 -6.931,-0l-6.799,6.798c-1.912,1.913 -1.912,5.019 0,6.931c1.913,1.913 5.019,1.913 6.931,0l6.799,-6.798Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.682,54.177c-1.913,-1.913 -5.018,-1.913 -6.931,-0c-1.912,1.913 -1.912,5.018 0,6.931l6.798,6.798c1.913,1.913 5.019,1.913 6.931,0c1.913,-1.912 1.913,-5.018 0,-6.931l-6.798,-6.798Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M4.901,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,-0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M18.929,11.142c-1.912,-1.912 -5.018,-1.912 -6.931,0c-1.912,1.913 -1.912,5.019 0,6.931l6.799,6.799c1.912,1.912 5.018,1.912 6.931,-0c1.912,-1.913 1.912,-5.019 -0,-6.931l-6.799,-6.799Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.108,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c-0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c-0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'dark'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_dark"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.901,2.196 -4.901,4.901c0,2.705 2.197,4.901 4.901,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.662,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.989,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.732,61.103c1.91,-1.91 1.91,-5.011 0,-6.921l-0.009,-0.01c-1.91,-1.91 -5.012,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.909,1.91 5.011,1.91 6.92,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.672,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.52,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l-0,-0.01c-0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.901,2.196 -4.901,4.901c0,2.704 2.197,4.9 4.901,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.73,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 -0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.098,34.623c-2.699,0 -4.891,2.192 -4.891,4.892l-0,0.019c-0,2.699 2.192,4.891 4.891,4.891c2.7,0 4.892,-2.192 4.892,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.892,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'darkest'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_darkest"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><path d="M39.315,23.791c8.684,-0 15.734,7.05 15.734,15.733c0,8.684 -7.05,15.734 -15.734,15.734c-8.683,0 -15.733,-7.05 -15.733,-15.734c-0,-8.683 7.05,-15.733 15.733,-15.733Zm0,4.737c6.069,0 10.997,4.927 10.997,10.996c-0,6.069 -4.928,10.996 -10.997,10.996c-6.068,0 -10.996,-4.927 -10.996,-10.996c0,-6.069 4.928,-10.996 10.996,-10.996Z" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.216,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.9,2.196 -4.9,4.901c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.666,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.99,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.737,61.103c1.909,-1.91 1.909,-5.011 -0,-6.921l-0.01,-0.01c-1.91,-1.91 -5.011,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.91,1.91 5.011,1.91 6.921,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.676,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.524,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l0,-0.01c0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.216,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901c-0,2.704 2.196,4.9 4.9,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.734,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.103,34.623c-2.7,0 -4.892,2.192 -4.892,4.892l-0,0.019c-0,2.699 2.192,4.891 4.892,4.891c2.699,0 4.891,-2.192 4.891,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.891,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+</a>
+
+<script>
+(function() {
+    const LOCAL_STORAGE_KEY = 'piccoloThemeMode'
+
+    var initialMode = localStorage.getItem(LOCAL_STORAGE_KEY)
+
+    if (initialMode) {
+        // Make sure the value in local storage is valid
+        if (['light', 'dark', 'darkest'].indexOf(initialMode) == -1) {
+            initialMode = 'light'
+            localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+        }
+    } else {
+        // Check if the client prefers dark mode
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            initialMode = 'dark'
+        } else {
+            initialMode = 'light'
+        }
+        localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+    }
+
+    document.documentElement.dataset.mode = initialMode
+
+    PetiteVue.createApp({
+        'mode': initialMode,
+        handleClick() {
+            let currentMode = this.mode
+
+            if (currentMode == 'light') {
+                this.mode = 'dark'
+            } else if (currentMode == 'dark') {
+                this.mode = 'darkest'
+            } else if (currentMode == 'darkest') {
+                this.mode = 'light'
+            }
+
+            document.documentElement.dataset.mode = this.mode
+            localStorage.setItem(LOCAL_STORAGE_KEY, this.mode)
+
+            console.log(this.mode)
+        }
+    }).mount('#mode_toggle')
+})()
+</script>
+            <p class="mobile_search_link">
+                <a href="../../../search.html" title="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 64" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path d="M14.873 40.009c-2.315-3.943-3.642-8.532-3.642-13.429C11.231 11.91 23.141 0 37.811 0s26.58 11.91 26.58 26.58-11.91 26.58-26.58 26.58a26.44 26.44 0 0 1-14.277-4.161L9.739 62.794a3.12 3.12 0 0 1-4.413 0L.913 58.382c-1.217-1.218-1.217-3.196 0-4.413l13.96-13.96zM37.811 8.054c10.225 0 18.526 8.301 18.526 18.526s-8.301 18.526-18.526 18.526-18.526-8.301-18.526-18.526S27.586 8.054 37.811 8.054z" fill="#fff" />
+                    </svg>
+                </a>
+            </p>
+        
+
+        <div class="searchbox_wrapper">
+            
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../abstract_classifier.html">Abstract Classifier Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../category_processor.html">Category Processor Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../faculty_set_postprocessor.html">Faculty Set Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../config.html">Global Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../chain_builder.html">Chain Builder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ai_prompts.html">ai_prompts package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../data_collection.html">data_collection package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../dataclass_models.html">dataclass_models package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../DB.html">DB package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../enums.html">enums package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../factories.html">factories package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../orchestrators.html">orchestrators package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../other.html">other package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../runners.html">runners package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../strategies.html">strategies package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../utils.html">utils package</a></li>
+</ul>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for academic_metrics.data_collection.CrossrefWrapper</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">annotations</span>
+
+<span class="kn">import</span> <span class="nn">asyncio</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">TYPE_CHECKING</span><span class="p">,</span> <span class="n">Self</span><span class="p">,</span> <span class="n">Any</span><span class="p">,</span> <span class="n">Union</span><span class="p">,</span> <span class="n">List</span><span class="p">,</span> <span class="n">Dict</span>
+
+<span class="kn">import</span> <span class="nn">aiohttp</span>
+
+<span class="kn">from</span> <span class="nn">academic_metrics.configs</span> <span class="kn">import</span> <span class="p">(</span>
+    <span class="n">configure_logging</span><span class="p">,</span>
+    <span class="n">DEBUG</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="k">if</span> <span class="n">TYPE_CHECKING</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">.scraper</span> <span class="kn">import</span> <span class="n">Scraper</span>
+
+
+<div class="viewcode-block" id="CrossrefWrapper">
+<a class="viewcode-back" href="../../../data_collection.html#academic_metrics.data_collection.CrossrefWrapper.CrossrefWrapper">[docs]</a>
+<span class="k">class</span> <span class="nc">CrossrefWrapper</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    A wrapper class for interacting with the Crossref API to fetch and process publication data.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">        base_url (str): The base URL for the Crossref API.</span>
+<span class="sd">        affiliation (str): The affiliation to filter publications by.</span>
+<span class="sd">        from_year (int): The starting year for the publication search.</span>
+<span class="sd">        to_year (int): The ending year for the publication search.</span>
+<span class="sd">        logger (logging.Logger): Logger for logging messages.</span>
+<span class="sd">        MAX_CONCURRENT_REQUESTS (int): Maximum number of concurrent requests allowed.</span>
+<span class="sd">        semaphore (asyncio.Semaphore): Semaphore to control the rate of concurrent requests.</span>
+<span class="sd">        years (list): List of years to fetch data for.</span>
+<span class="sd">        data (dict): Data fetched from the Crossref API.</span>
+
+<span class="sd">    Methods:</span>
+<span class="sd">        fetch_data(session: aiohttp.ClientSession, url: str, headers: dict[str, Any], retries: int, retry_delay: int) -&gt; dict[str, Any] | None: Fetches data from the given URL using aiohttp.</span>
+<span class="sd">        build_request_url(base_url: str, affiliation: str, from_date: str, to_date: str, n_element: str, sort_type: str, sort_ord: str, cursor: str, has_abstract: bool | None = False) -&gt; str: Builds the request URL for the Crossref API.</span>
+<span class="sd">        process_items(data: dict[str, Any], from_date: str, to_date: str, affiliation: str | None = &quot;salisbury univ&quot;) -&gt; list[dict[str, Any]]: Processes the items fetched from the Crossref API, filtering by date and affiliation.</span>
+<span class="sd">        _get_last_day_of_month(year: int, month: int) -&gt; int: Returns the last day of the given month in the given year.</span>
+<span class="sd">        fetch_data_for_multiple_years() -&gt; list[dict[str, Any]]: Fetches data for multiple years asynchronously.</span>
+<span class="sd">        serialize_to_json(output_file: str) -&gt; None: Serializes the fetched data to a JSON file.</span>
+<span class="sd">        final_data_process() -&gt; Self: Processes the final data, filling in missing abstracts.</span>
+<span class="sd">        get_result_list() -&gt; list[dict[str, Any]]: Get the result list</span>
+<span class="sd">        run_all_process(save_offline: bool = False) -&gt; Union[None, List[Dict[str, Any]]]: Run all data fetching and processing</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="o">*</span><span class="p">,</span>
+        <span class="n">scraper</span><span class="p">:</span> <span class="n">Scraper</span><span class="p">,</span>
+        <span class="n">base_url</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="s2">&quot;https://api.crossref.org/works&quot;</span><span class="p">,</span>
+        <span class="n">affiliation</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="s2">&quot;Salisbury%20University&quot;</span><span class="p">,</span>
+        <span class="n">from_year</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="mi">2017</span><span class="p">,</span>
+        <span class="n">to_year</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="mi">2024</span><span class="p">,</span>
+        <span class="n">from_month</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="n">to_month</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="mi">12</span><span class="p">,</span>
+        <span class="n">test_run</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+        <span class="n">run_scraper</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Self</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Initializes the CrossrefWrapper with the given parameters.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            base_url (str): The base URL for the Crossref API.</span>
+<span class="sd">            affiliation (str): The affiliation to filter publications by.</span>
+<span class="sd">            from_year (int): The starting year for the publication search.</span>
+<span class="sd">            to_year (int): The ending year for the publication search.</span>
+<span class="sd">            logger (logging.Logger, optional): Logger for logging messages. Defaults to None.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span> <span class="o">=</span> <span class="n">configure_logging</span><span class="p">(</span>
+            <span class="n">module_name</span><span class="o">=</span><span class="vm">__name__</span><span class="p">,</span>
+            <span class="n">log_file_name</span><span class="o">=</span><span class="s2">&quot;crossref_wrapper&quot;</span><span class="p">,</span>
+            <span class="n">log_level</span><span class="o">=</span><span class="n">DEBUG</span><span class="p">,</span>
+        <span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">scraper</span> <span class="o">=</span> <span class="n">scraper</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">run_scraper</span> <span class="o">=</span> <span class="n">run_scraper</span>
+
+        <span class="c1"># Maximum number of concurrent requests allowed</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">MAX_CONCURRENT_REQUESTS</span> <span class="o">=</span> <span class="mi">2</span>  <span class="c1"># Limit to 2 concurrent tasks at a time</span>
+
+        <span class="c1"># Semaphore to control the rate of concurrent requests</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">semaphore</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">Semaphore</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">MAX_CONCURRENT_REQUESTS</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">from_year</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;from_year must be an integer&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">to_year</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;to_year must be an integer&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">from_month</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;from_month must be an integer&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">to_month</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;to_month must be an integer&quot;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">from_year</span> <span class="o">=</span> <span class="n">from_year</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">to_year</span> <span class="o">=</span> <span class="n">to_year</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">from_month</span> <span class="o">=</span> <span class="n">from_month</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">to_month</span> <span class="o">=</span> <span class="n">to_month</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">base_url</span> <span class="o">=</span> <span class="n">base_url</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">affiliation</span> <span class="o">=</span> <span class="n">affiliation</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">test_run</span> <span class="o">=</span> <span class="n">test_run</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">years</span> <span class="o">=</span> <span class="p">[</span><span class="n">year</span> <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">from_year</span><span class="p">,</span> <span class="n">to_year</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)]</span>
+
+        <span class="c1"># Prevent logger from being affected by parent loggers</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">propagate</span> <span class="o">=</span> <span class="kc">False</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="kc">None</span>
+
+<div class="viewcode-block" id="CrossrefWrapper.fetch_data">
+<a class="viewcode-back" href="../../../data_collection.html#academic_metrics.data_collection.CrossrefWrapper.CrossrefWrapper.fetch_data">[docs]</a>
+    <span class="k">async</span> <span class="k">def</span> <span class="nf">fetch_data</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">session</span><span class="p">:</span> <span class="n">aiohttp</span><span class="o">.</span><span class="n">ClientSession</span><span class="p">,</span>
+        <span class="n">url</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">headers</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span>
+        <span class="n">retries</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+        <span class="n">retry_delay</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Fetches data from the given URL using aiohttp.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            session (aiohttp.ClientSession): The aiohttp session to use for the request.</span>
+<span class="sd">            url (str): The URL to fetch data from.</span>
+<span class="sd">            headers (dict): Headers to include in the request.</span>
+<span class="sd">            retries (int): Number of retries in case of failure.</span>
+<span class="sd">            retry_delay (int): Delay between retries in seconds.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            dict: The JSON data fetched from the URL, or None if an error occurs.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">num_iter</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">while</span> <span class="n">num_iter</span> <span class="o">&lt;</span> <span class="n">retries</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="k">async</span> <span class="k">with</span> <span class="n">session</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span> <span class="k">as</span> <span class="n">response</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status</span> <span class="o">==</span> <span class="mi">429</span><span class="p">:</span>
+                        <span class="n">retry_after</span> <span class="o">=</span> <span class="n">retry_delay</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span>
+                            <span class="sa">f</span><span class="s2">&quot;Hit request limit, retrying in </span><span class="si">{</span><span class="n">retry_after</span><span class="si">}</span><span class="s2"> seconds...&quot;</span>
+                        <span class="p">)</span>
+                        <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">retry_after</span><span class="p">)</span>
+                        <span class="n">num_iter</span> <span class="o">+=</span> <span class="mi">1</span>
+                        <span class="k">continue</span>
+                    <span class="k">elif</span> <span class="n">response</span><span class="o">.</span><span class="n">status</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+                        <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Getting data from response...&quot;</span><span class="p">)</span>
+                        <span class="n">data</span> <span class="o">=</span> <span class="k">await</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+                        <span class="k">return</span> <span class="n">data</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span>
+                            <span class="sa">f</span><span class="s2">&quot;Unexpected status </span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">status</span><span class="si">}</span><span class="s2"> for URL: </span><span class="si">{</span><span class="n">url</span><span class="si">}</span><span class="s2">&quot;</span>
+                        <span class="p">)</span>
+                        <span class="k">return</span> <span class="kc">None</span>
+            <span class="k">except</span> <span class="n">aiohttp</span><span class="o">.</span><span class="n">ClientError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Network error: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="k">return</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Exceeded max retries for URL: </span><span class="si">{</span><span class="n">url</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span></div>
+
+
+<div class="viewcode-block" id="CrossrefWrapper.build_request_url">
+<a class="viewcode-back" href="../../../data_collection.html#academic_metrics.data_collection.CrossrefWrapper.CrossrefWrapper.build_request_url">[docs]</a>
+    <span class="k">def</span> <span class="nf">build_request_url</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">base_url</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">affiliation</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">from_date</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">to_date</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">n_element</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">sort_type</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">sort_ord</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">cursor</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">has_abstract</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Builds the request URL for the Crossref API.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            base_url (str): The base URL for the Crossref API.</span>
+<span class="sd">            affiliation (str): The affiliation to filter publications by.</span>
+<span class="sd">            from_date (str): The starting date for the publication search.</span>
+<span class="sd">            to_date (str): The ending date for the publication search.</span>
+<span class="sd">            n_element (str): Number of elements to fetch per request.</span>
+<span class="sd">            sort_type (str): The type of sorting to apply.</span>
+<span class="sd">            sort_ord (str): The order of sorting (asc or desc).</span>
+<span class="sd">            cursor (str): The cursor for pagination.</span>
+<span class="sd">            has_abstract (bool, optional): Whether to filter for publications with abstracts. Defaults to False.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            str: The constructed request URL.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">ab_state</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">has_abstract</span><span class="p">:</span>
+            <span class="n">ab_state</span> <span class="o">=</span> <span class="s2">&quot;,has-abstract:1&quot;</span>
+
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">base_url</span><span class="si">}</span><span class="s2">?query.affiliation=</span><span class="si">{</span><span class="n">affiliation</span><span class="si">}</span><span class="s2">&amp;filter=from-pub-date:</span><span class="si">{</span><span class="n">from_date</span><span class="si">}</span><span class="s2">,until-pub-date:</span><span class="si">{</span><span class="n">to_date</span><span class="si">}{</span><span class="n">ab_state</span><span class="si">}</span><span class="s2">&amp;sort=</span><span class="si">{</span><span class="n">sort_type</span><span class="si">}</span><span class="s2">&amp;order=</span><span class="si">{</span><span class="n">sort_ord</span><span class="si">}</span><span class="s2">&amp;rows=</span><span class="si">{</span><span class="n">n_element</span><span class="si">}</span><span class="s2">&amp;cursor=</span><span class="si">{</span><span class="n">cursor</span><span class="si">}</span><span class="s2">&quot;</span></div>
+
+
+<div class="viewcode-block" id="CrossrefWrapper.process_items">
+<a class="viewcode-back" href="../../../data_collection.html#academic_metrics.data_collection.CrossrefWrapper.CrossrefWrapper.process_items">[docs]</a>
+    <span class="k">def</span> <span class="nf">process_items</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">data</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span>
+        <span class="n">from_date</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">to_date</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">affiliation</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="s2">&quot;salisbury univ&quot;</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Processes the items fetched from the Crossref API, filtering by date and affiliation.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            data (dict): The data fetched from the Crossref API.</span>
+<span class="sd">            from_date (str): The starting date for the publication search.</span>
+<span class="sd">            to_date (str): The ending date for the publication search.</span>
+<span class="sd">            affiliation (str, optional): The affiliation to filter publications by. Defaults to &quot;salisbury univ&quot;.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            list: The filtered list of items.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">filtered_data</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">items</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;items&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">items</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;No items found in data&quot;</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;items&quot;</span><span class="p">,</span> <span class="p">[]):</span>
+            <span class="c1"># Get published date information</span>
+            <span class="n">item_published</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;published&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+            <span class="n">item_date_parts</span> <span class="o">=</span> <span class="kc">None</span>
+            <span class="k">if</span> <span class="n">item_published</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">item_date_parts</span> <span class="o">=</span> <span class="n">item_published</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;date-parts&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+
+            <span class="c1"># Skip if no date parts or invalid structure</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">item_date_parts</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">item_date_parts</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
+                <span class="k">continue</span>
+
+            <span class="c1"># Get year and month, defaulting to None if not available</span>
+            <span class="n">pub_year</span> <span class="o">=</span> <span class="n">item_date_parts</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">item_date_parts</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="kc">None</span>
+            <span class="n">pub_month</span> <span class="o">=</span> <span class="n">item_date_parts</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">item_date_parts</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="k">else</span> <span class="kc">None</span>
+
+            <span class="n">from_year</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">from_date</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
+            <span class="n">from_month</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">from_date</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">)[</span><span class="mi">1</span><span class="p">])</span>
+            <span class="n">to_year</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">to_date</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
+            <span class="n">to_month</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">to_date</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">)[</span><span class="mi">1</span><span class="p">])</span>
+
+            <span class="c1"># Skip if year is missing or outside range</span>
+            <span class="k">if</span> <span class="n">pub_year</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">pub_year</span> <span class="o">&lt;</span> <span class="n">from_year</span> <span class="ow">or</span> <span class="n">pub_year</span> <span class="o">&gt;</span> <span class="n">to_year</span><span class="p">:</span>
+                <span class="k">continue</span>
+
+            <span class="c1"># If same year as bounds, check months</span>
+            <span class="k">if</span> <span class="n">pub_year</span> <span class="o">==</span> <span class="n">from_year</span> <span class="ow">and</span> <span class="p">(</span><span class="n">pub_month</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">pub_month</span> <span class="o">&lt;</span> <span class="n">from_month</span><span class="p">):</span>
+                <span class="k">continue</span>
+            <span class="k">if</span> <span class="n">pub_year</span> <span class="o">==</span> <span class="n">to_year</span> <span class="ow">and</span> <span class="p">(</span><span class="n">pub_month</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">pub_month</span> <span class="o">&gt;</span> <span class="n">to_month</span><span class="p">):</span>
+                <span class="k">continue</span>
+
+            <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="k">for</span> <span class="n">author</span> <span class="ow">in</span> <span class="n">item</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;author&quot;</span><span class="p">,</span> <span class="p">[]):</span>
+                <span class="k">for</span> <span class="n">affil</span> <span class="ow">in</span> <span class="n">author</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;affiliation&quot;</span><span class="p">,</span> <span class="p">[]):</span>
+                    <span class="k">if</span> <span class="n">affiliation</span> <span class="ow">in</span> <span class="n">affil</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;name&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
+                        <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="k">if</span> <span class="n">count</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">filtered_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">filtered_data</span></div>
+
+
+<div class="viewcode-block" id="CrossrefWrapper.acollect_yrange">
+<a class="viewcode-back" href="../../../data_collection.html#academic_metrics.data_collection.CrossrefWrapper.CrossrefWrapper.acollect_yrange">[docs]</a>
+    <span class="k">async</span> <span class="k">def</span> <span class="nf">acollect_yrange</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">session</span><span class="p">:</span> <span class="n">aiohttp</span><span class="o">.</span><span class="n">ClientSession</span><span class="p">,</span>
+        <span class="n">from_date</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;2018-01-01&quot;</span><span class="p">,</span>
+        <span class="n">to_date</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;2024-10-09&quot;</span><span class="p">,</span>
+        <span class="n">n_element</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;1000&quot;</span><span class="p">,</span>
+        <span class="n">sort_type</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;relevance&quot;</span><span class="p">,</span>
+        <span class="n">sort_ord</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;desc&quot;</span><span class="p">,</span>
+        <span class="n">cursor</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;*&quot;</span><span class="p">,</span>
+        <span class="n">retries</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span>
+        <span class="n">retry_delay</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]],</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Collects data for a range of years asynchronously.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            session (aiohttp.ClientSession): The aiohttp session to use for the request.</span>
+<span class="sd">            from_date (str): The starting date for the publication search.</span>
+<span class="sd">            to_date (str): The ending date for the publication search.</span>
+<span class="sd">            n_element (str): Number of elements to fetch per request.</span>
+<span class="sd">            sort_type (str): The type of sorting to apply.</span>
+<span class="sd">            sort_ord (str): The order of sorting (asc or desc).</span>
+<span class="sd">            cursor (str): The cursor for pagination.</span>
+<span class="sd">            retries (int): Number of retries in case of failure.</span>
+<span class="sd">            retry_delay (int): Delay between retries in seconds.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            tuple: A tuple containing the list of items and the next cursor.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Starting Crf_dict_cursor_async function&quot;</span><span class="p">)</span>
+        <span class="n">item_list</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">processed_papers</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;Content-Type&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;User-Agent&quot;</span><span class="p">:</span> <span class="s2">&quot;Rommel Center&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;mailto&quot;</span><span class="p">:</span> <span class="s2">&quot;cbarbes1@gulls.salisbury.edu&quot;</span><span class="p">,</span>
+        <span class="p">}</span>
+
+        <span class="k">async</span> <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">semaphore</span><span class="p">:</span>
+            <span class="n">req_url</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">build_request_url</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">affiliation</span><span class="p">,</span>
+                <span class="n">from_date</span><span class="p">,</span>
+                <span class="n">to_date</span><span class="p">,</span>
+                <span class="n">n_element</span><span class="p">,</span>
+                <span class="n">sort_type</span><span class="p">,</span>
+                <span class="n">sort_ord</span><span class="p">,</span>
+                <span class="n">cursor</span><span class="p">,</span>
+            <span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Request URL: </span><span class="si">{</span><span class="n">req_url</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+            <span class="n">data</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">fetch_data</span><span class="p">(</span>
+                <span class="n">session</span><span class="p">,</span> <span class="n">req_url</span><span class="p">,</span> <span class="n">headers</span><span class="p">,</span> <span class="n">retries</span><span class="p">,</span> <span class="n">retry_delay</span>
+            <span class="p">)</span>
+            <span class="k">if</span> <span class="n">data</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="k">return</span> <span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+
+            <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;message&quot;</span><span class="p">,</span> <span class="p">{})</span>
+            <span class="k">if</span> <span class="n">data</span> <span class="o">==</span> <span class="p">{}:</span>
+                <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;No data to process&quot;</span><span class="p">)</span>
+                <span class="k">return</span> <span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+            <span class="n">total_docs</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;total-results&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">total_docs</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;No docs to process&quot;</span><span class="p">)</span>
+                <span class="k">return</span> <span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Processing API Pages from </span><span class="si">{</span><span class="n">from_date</span><span class="si">}</span><span class="s2"> to </span><span class="si">{</span><span class="n">to_date</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+            <span class="k">while</span> <span class="n">processed_papers</span> <span class="o">&lt;</span> <span class="n">total_docs</span><span class="p">:</span>
+                <span class="n">filtered_data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">process_items</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">from_date</span><span class="p">,</span> <span class="n">to_date</span><span class="p">)</span>
+
+                <span class="n">item_list</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">filtered_data</span><span class="p">)</span>
+                <span class="n">processed_papers</span> <span class="o">+=</span> <span class="nb">len</span><span class="p">(</span><span class="n">filtered_data</span><span class="p">)</span>
+
+                <span class="n">cursor</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;next-cursor&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">cursor</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="k">break</span>
+
+                <span class="n">req_url</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">build_request_url</span><span class="p">(</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">affiliation</span><span class="p">,</span>
+                    <span class="n">from_date</span><span class="p">,</span>
+                    <span class="n">to_date</span><span class="p">,</span>
+                    <span class="n">n_element</span><span class="p">,</span>
+                    <span class="n">sort_type</span><span class="p">,</span>
+                    <span class="n">sort_ord</span><span class="p">,</span>
+                    <span class="n">cursor</span><span class="p">,</span>
+                <span class="p">)</span>
+                <span class="n">data</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">fetch_data</span><span class="p">(</span>
+                    <span class="n">session</span><span class="p">,</span> <span class="n">req_url</span><span class="p">,</span> <span class="n">headers</span><span class="p">,</span> <span class="n">retries</span><span class="p">,</span> <span class="n">retry_delay</span>
+                <span class="p">)</span>
+                <span class="k">if</span> <span class="n">data</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="k">break</span>
+
+                <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;message&quot;</span><span class="p">,</span> <span class="p">{})</span>
+                <span class="k">if</span> <span class="n">filtered_data</span> <span class="o">==</span> <span class="p">[]:</span>
+                    <span class="k">break</span>
+                <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Processing Complete&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">item_list</span><span class="p">,</span> <span class="n">cursor</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CrossrefWrapper._get_last_day_of_month">
+<a class="viewcode-back" href="../../../data_collection.html#academic_metrics.data_collection.CrossrefWrapper.CrossrefWrapper._get_last_day_of_month">[docs]</a>
+    <span class="k">def</span> <span class="nf">_get_last_day_of_month</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">year</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">month</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Returns the last day of the given month in the given year. Handles leap years for February.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            year (int): The year to check.</span>
+<span class="sd">            month (int): The month to check.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            int: The last day of the given month in the given year.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># Handle February for leap years</span>
+        <span class="k">if</span> <span class="n">month</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">year</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="p">(</span><span class="n">year</span> <span class="o">%</span> <span class="mi">100</span> <span class="o">!=</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">year</span> <span class="o">%</span> <span class="mi">400</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
+                <span class="k">return</span> <span class="mi">29</span>
+            <span class="k">return</span> <span class="mi">28</span>
+
+        <span class="c1"># Handle months with 30 days</span>
+        <span class="c1"># Months with 30 days: April (4), June (6), September (9), November (11)</span>
+        <span class="k">if</span> <span class="n">month</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">11</span><span class="p">]:</span>
+            <span class="k">return</span> <span class="mi">30</span>
+
+        <span class="c1"># All other months have 31 days</span>
+        <span class="k">return</span> <span class="mi">31</span></div>
+
+
+<div class="viewcode-block" id="CrossrefWrapper.fetch_data_for_multiple_years">
+<a class="viewcode-back" href="../../../data_collection.html#academic_metrics.data_collection.CrossrefWrapper.CrossrefWrapper.fetch_data_for_multiple_years">[docs]</a>
+    <span class="k">async</span> <span class="k">def</span> <span class="nf">fetch_data_for_multiple_years</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Fetches data for multiple years asynchronously.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            final_result (list[dict[str, Any]]): The list of items fetched from the Crossref API.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># creat the async session and send the tasks to each thread</span>
+        <span class="k">async</span> <span class="k">with</span> <span class="n">aiohttp</span><span class="o">.</span><span class="n">ClientSession</span><span class="p">()</span> <span class="k">as</span> <span class="n">session</span><span class="p">:</span>
+            <span class="c1"># create the list of tasks to complete</span>
+            <span class="n">tasks</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">years</span><span class="p">:</span>
+                <span class="c1"># Format dates with leading zeros for months</span>
+                <span class="n">from_date</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="s2">-</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">from_month</span><span class="si">:</span><span class="s2">02d</span><span class="si">}</span><span class="s2">-01&quot;</span>
+
+                <span class="c1"># Format to_date to have the correct last day of the month</span>
+                <span class="n">last_day</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_last_day_of_month</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">to_month</span><span class="p">)</span>
+                <span class="n">to_date</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="s2">-</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">to_month</span><span class="si">:</span><span class="s2">02d</span><span class="si">}</span><span class="s2">-</span><span class="si">{</span><span class="n">last_day</span><span class="si">}</span><span class="s2">&quot;</span>
+
+                <span class="n">task</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">acollect_yrange</span><span class="p">(</span>
+                    <span class="n">session</span><span class="o">=</span><span class="n">session</span><span class="p">,</span>
+                    <span class="n">from_date</span><span class="o">=</span><span class="n">from_date</span><span class="p">,</span>
+                    <span class="n">to_date</span><span class="o">=</span><span class="n">to_date</span><span class="p">,</span>
+                <span class="p">)</span>
+                <span class="n">tasks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">task</span><span class="p">)</span>
+
+            <span class="c1"># get the start time</span>
+            <span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+            <span class="c1"># await for the execution of each thread to finish</span>
+            <span class="n">results</span> <span class="o">=</span> <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">gather</span><span class="p">(</span><span class="o">*</span><span class="n">tasks</span><span class="p">)</span>
+
+            <span class="n">final_result</span> <span class="o">=</span> <span class="p">[]</span>
+
+            <span class="c1"># create the result list</span>
+            <span class="k">for</span> <span class="n">result</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">result</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="n">final_result</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+
+            <span class="n">end_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+
+            <span class="c1"># log the time it took</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                <span class="sa">f</span><span class="s2">&quot;All data fetched. This took </span><span class="si">{</span><span class="n">end_time</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">start_time</span><span class="si">}</span><span class="s2"> seconds&quot;</span>
+            <span class="p">)</span>
+
+            <span class="k">return</span> <span class="n">final_result</span></div>
+
+
+<div class="viewcode-block" id="CrossrefWrapper.run_afetch_yrange">
+<a class="viewcode-back" href="../../../data_collection.html#academic_metrics.data_collection.CrossrefWrapper.CrossrefWrapper.run_afetch_yrange">[docs]</a>
+    <span class="k">def</span> <span class="nf">run_afetch_yrange</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Self</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Runs the asynchronous data fetch for multiple years.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            self: The instance of the class for method chaining.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># run the async function chain</span>
+        <span class="n">result_list</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">fetch_data_for_multiple_years</span><span class="p">())</span>
+
+        <span class="c1"># log the num items returned</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Number of items: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">result_list</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">result</span> <span class="o">=</span> <span class="n">result_list</span>
+        <span class="k">return</span> <span class="bp">self</span></div>
+
+
+<div class="viewcode-block" id="CrossrefWrapper.serialize_to_json">
+<a class="viewcode-back" href="../../../data_collection.html#academic_metrics.data_collection.CrossrefWrapper.CrossrefWrapper.serialize_to_json">[docs]</a>
+    <span class="k">def</span> <span class="nf">serialize_to_json</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">output_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Serializes the fetched data to a JSON file.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            output_file (str): The path to the output JSON file.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">output_file</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+            <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="p">,</span> <span class="n">fp</span><span class="o">=</span><span class="n">file</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CrossrefWrapper.final_data_process">
+<a class="viewcode-back" href="../../../data_collection.html#academic_metrics.data_collection.CrossrefWrapper.CrossrefWrapper.final_data_process">[docs]</a>
+    <span class="k">def</span> <span class="nf">final_data_process</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Self</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Processes the final data, filling in missing abstracts.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            self: The instance of the class for method chaining.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># fill missing abstracts</span>
+        <span class="n">num_processed</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">items_removed</span> <span class="o">=</span> <span class="mi">0</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Starting final_data_process&quot;</span><span class="p">)</span>  <span class="c1"># Debug log</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="p">:</span>  <span class="c1"># Check if result exists</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">&quot;No result data found&quot;</span><span class="p">)</span>
+            <span class="k">return</span> <span class="bp">self</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">test_run</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span>
+        <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="p">):</span>
+            <span class="n">item</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;-&quot;</span> <span class="o">*</span> <span class="mi">80</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Processing URL: </span><span class="si">{</span><span class="n">item</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;URL&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+                <span class="n">abstract</span><span class="p">,</span> <span class="n">extra_context</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">scraper</span><span class="o">.</span><span class="n">get_abstract</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;URL&quot;</span><span class="p">))</span>
+
+                <span class="k">if</span> <span class="n">abstract</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">extra_context</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;No data returned for URL: </span><span class="si">{</span><span class="n">item</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;URL&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                    <span class="c1"># Remove the item, but don&#39;t increment i</span>
+                    <span class="c1"># We don&#39;t increment i as the items in the list will shift left 1 so we want to keep</span>
+                    <span class="c1"># the same index to check the next item</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+                    <span class="n">items_removed</span> <span class="o">+=</span> <span class="mi">1</span>
+                    <span class="k">continue</span>
+
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                    <span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">RETURN FROM SCRAPER get_abstract:</span><span class="se">\n</span><span class="s2">ABSTRACT:</span><span class="se">\n</span><span class="si">{</span><span class="n">abstract</span><span class="si">}</span><span class="se">\n</span><span class="s2">EXTRA CONTEXT:</span><span class="se">\n</span><span class="si">{</span><span class="n">extra_context</span><span class="si">}</span><span class="se">\n\n</span><span class="s2">&quot;</span>
+                <span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;-&quot;</span> <span class="o">*</span> <span class="mi">80</span><span class="p">)</span>
+
+                <span class="k">if</span> <span class="s2">&quot;abstract&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">item</span><span class="p">:</span>
+                    <span class="n">item</span><span class="p">[</span><span class="s2">&quot;abstract&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">abstract</span>
+
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                    <span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">Processed </span><span class="si">{</span><span class="n">num_processed</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="p">)</span><span class="si">}</span><span class="se">\n\n</span><span class="s2">&quot;</span>
+                <span class="p">)</span>
+                <span class="n">item</span><span class="p">[</span><span class="s2">&quot;extra_context&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">extra_context</span>
+
+                <span class="n">num_processed</span> <span class="o">+=</span> <span class="mi">1</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                    <span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n\n\n</span><span class="s2">PROCESSED **</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="p">)</span><span class="si">}</span><span class="s2">** ITEMS</span><span class="se">\n\n\n</span><span class="s2">&quot;</span>
+                <span class="p">)</span>
+                <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+
+            <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span>
+                    <span class="sa">f</span><span class="s2">&quot;Error processing URL </span><span class="si">{</span><span class="n">item</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;URL&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span>
+                    <span class="s2">&quot;Popping item from result list and continuing&quot;</span>
+                <span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">result</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+                <span class="n">items_removed</span> <span class="o">+=</span> <span class="mi">1</span>
+                <span class="k">continue</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">Items removed: </span><span class="si">{</span><span class="n">items_removed</span><span class="si">}</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+            <span class="sa">f</span><span class="s2">&quot;Final data processing complete. Processed </span><span class="si">{</span><span class="n">num_processed</span><span class="si">}</span><span class="s2"> abstracts&quot;</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">scraper</span><span class="o">.</span><span class="n">save_raw_results</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span></div>
+
+
+<div class="viewcode-block" id="CrossrefWrapper.get_result_list">
+<a class="viewcode-back" href="../../../data_collection.html#academic_metrics.data_collection.CrossrefWrapper.CrossrefWrapper.get_result_list">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_result_list</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get the result list</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            self.result (list[dict[str, Any]]): The result list</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">result</span></div>
+
+
+<div class="viewcode-block" id="CrossrefWrapper.run_all_process">
+<a class="viewcode-back" href="../../../data_collection.html#academic_metrics.data_collection.CrossrefWrapper.CrossrefWrapper.run_all_process">[docs]</a>
+    <span class="k">def</span> <span class="nf">run_all_process</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">save_offline</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Run all data fetching and processing</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            save_offline (bool): Whether to save the offline data.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Union[None, List[Dict[str, Any]]]: The result list or None</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">save_offline</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">run_afetch_yrange</span><span class="p">()</span>
+                <span class="o">.</span><span class="n">final_data_process</span><span class="p">()</span>
+                <span class="o">.</span><span class="n">serialize_to_json</span><span class="p">(</span><span class="s2">&quot;postProcess.json&quot;</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="k">elif</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">run_scraper</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">run_afetch_yrange</span><span class="p">()</span><span class="o">.</span><span class="n">get_result_list</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">run_afetch_yrange</span><span class="p">()</span><span class="o">.</span><span class="n">final_data_process</span><span class="p">()</span><span class="o">.</span><span class="n">get_result_list</span><span class="p">()</span></div>
+</div>
+
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">wrap</span> <span class="o">=</span> <span class="n">CrossrefWrapper</span><span class="p">()</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">wrap</span><span class="o">.</span><span class="n">run_all_process</span><span class="p">()</span><span class="o">.</span><span class="n">get_data</span><span class="p">()</span>
+</pre></div>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="clearer"></div>
+    </div>
+    <div class="button_nav_wrapper">
+        <div class="button_nav">
+            <div class="left">
+                
+            </div>
+
+            <div class="right">
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Spencer Presley, Cole Barbes.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    </div>
+
+<p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>
+  </body>
+</html>

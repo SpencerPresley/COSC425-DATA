@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>academic_metrics.orchestrators.category_data_orchestrator &#8212; Academic Metrics 0.1.0-beta documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/basic_mod.css?v=9b2032db" />
+    <script src="../../../_static/documentation_options.js?v=c903bf51"></script>
+    <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <script src="../../../_static/js/petite-vue.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+  </head><body data-dark_mode_code_blocks="true">
+
+<div id="top_nav">
+    
+
+    <nav>
+        
+            
+        
+
+        <p id="toggle_sidebar">
+            <a href="#" title="Toggle sidebar">|||</a>
+        </p>
+        <h1><a href="../../../index.html" title="Go to homepage">Academic Metrics 0.1.0-beta documentation</a></h1>
+
+        <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
+    <template v-if="mode == 'light'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_light"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M67.48,18.073c1.913,-1.912 1.913,-5.018 0,-6.931c-1.912,-1.912 -5.018,-1.912 -6.931,0l-6.798,6.799c-1.912,1.912 -1.912,5.018 0,6.931c1.913,1.912 5.018,1.912 6.931,-0l6.798,-6.799Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.728,61.108c1.912,-1.913 1.912,-5.018 -0,-6.931c-1.913,-1.913 -5.019,-1.913 -6.931,-0l-6.799,6.798c-1.912,1.913 -1.912,5.019 0,6.931c1.913,1.913 5.019,1.913 6.931,0l6.799,-6.798Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.682,54.177c-1.913,-1.913 -5.018,-1.913 -6.931,-0c-1.912,1.913 -1.912,5.018 0,6.931l6.798,6.798c1.913,1.913 5.019,1.913 6.931,0c1.913,-1.912 1.913,-5.018 0,-6.931l-6.798,-6.798Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M4.901,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,-0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M18.929,11.142c-1.912,-1.912 -5.018,-1.912 -6.931,0c-1.912,1.913 -1.912,5.019 0,6.931l6.799,6.799c1.912,1.912 5.018,1.912 6.931,-0c1.912,-1.913 1.912,-5.019 -0,-6.931l-6.799,-6.799Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.108,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c-0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c-0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'dark'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_dark"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.901,2.196 -4.901,4.901c0,2.705 2.197,4.901 4.901,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.662,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.989,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.732,61.103c1.91,-1.91 1.91,-5.011 0,-6.921l-0.009,-0.01c-1.91,-1.91 -5.012,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.909,1.91 5.011,1.91 6.92,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.672,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.52,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l-0,-0.01c-0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.901,2.196 -4.901,4.901c0,2.704 2.197,4.9 4.901,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.73,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 -0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.098,34.623c-2.699,0 -4.891,2.192 -4.891,4.892l-0,0.019c-0,2.699 2.192,4.891 4.891,4.891c2.7,0 4.892,-2.192 4.892,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.892,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'darkest'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_darkest"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><path d="M39.315,23.791c8.684,-0 15.734,7.05 15.734,15.733c0,8.684 -7.05,15.734 -15.734,15.734c-8.683,0 -15.733,-7.05 -15.733,-15.734c-0,-8.683 7.05,-15.733 15.733,-15.733Zm0,4.737c6.069,0 10.997,4.927 10.997,10.996c-0,6.069 -4.928,10.996 -10.997,10.996c-6.068,0 -10.996,-4.927 -10.996,-10.996c0,-6.069 4.928,-10.996 10.996,-10.996Z" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.216,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.9,2.196 -4.9,4.901c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.666,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.99,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.737,61.103c1.909,-1.91 1.909,-5.011 -0,-6.921l-0.01,-0.01c-1.91,-1.91 -5.011,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.91,1.91 5.011,1.91 6.921,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.676,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.524,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l0,-0.01c0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.216,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901c-0,2.704 2.196,4.9 4.9,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.734,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.103,34.623c-2.7,0 -4.892,2.192 -4.892,4.892l-0,0.019c-0,2.699 2.192,4.891 4.892,4.891c2.699,0 4.891,-2.192 4.891,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.891,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+</a>
+
+<script>
+(function() {
+    const LOCAL_STORAGE_KEY = 'piccoloThemeMode'
+
+    var initialMode = localStorage.getItem(LOCAL_STORAGE_KEY)
+
+    if (initialMode) {
+        // Make sure the value in local storage is valid
+        if (['light', 'dark', 'darkest'].indexOf(initialMode) == -1) {
+            initialMode = 'light'
+            localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+        }
+    } else {
+        // Check if the client prefers dark mode
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            initialMode = 'dark'
+        } else {
+            initialMode = 'light'
+        }
+        localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+    }
+
+    document.documentElement.dataset.mode = initialMode
+
+    PetiteVue.createApp({
+        'mode': initialMode,
+        handleClick() {
+            let currentMode = this.mode
+
+            if (currentMode == 'light') {
+                this.mode = 'dark'
+            } else if (currentMode == 'dark') {
+                this.mode = 'darkest'
+            } else if (currentMode == 'darkest') {
+                this.mode = 'light'
+            }
+
+            document.documentElement.dataset.mode = this.mode
+            localStorage.setItem(LOCAL_STORAGE_KEY, this.mode)
+
+            console.log(this.mode)
+        }
+    }).mount('#mode_toggle')
+})()
+</script>
+            <p class="mobile_search_link">
+                <a href="../../../search.html" title="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 64" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path d="M14.873 40.009c-2.315-3.943-3.642-8.532-3.642-13.429C11.231 11.91 23.141 0 37.811 0s26.58 11.91 26.58 26.58-11.91 26.58-26.58 26.58a26.44 26.44 0 0 1-14.277-4.161L9.739 62.794a3.12 3.12 0 0 1-4.413 0L.913 58.382c-1.217-1.218-1.217-3.196 0-4.413l13.96-13.96zM37.811 8.054c10.225 0 18.526 8.301 18.526 18.526s-8.301 18.526-18.526 18.526-18.526-8.301-18.526-18.526S27.586 8.054 37.811 8.054z" fill="#fff" />
+                    </svg>
+                </a>
+            </p>
+        
+
+        <div class="searchbox_wrapper">
+            
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../abstract_classifier.html">Abstract Classifier Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../category_processor.html">Category Processor Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../faculty_set_postprocessor.html">Faculty Set Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../config.html">Global Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../chain_builder.html">Chain Builder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ai_prompts.html">ai_prompts package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../data_collection.html">data_collection package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../dataclass_models.html">dataclass_models package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../DB.html">DB package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../enums.html">enums package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../factories.html">factories package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../orchestrators.html">orchestrators package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../other.html">other package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../runners.html">runners package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../strategies.html">strategies package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../utils.html">utils package</a></li>
+</ul>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for academic_metrics.orchestrators.category_data_orchestrator</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">annotations</span>
+
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">TYPE_CHECKING</span><span class="p">,</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">List</span><span class="p">,</span> <span class="n">Union</span>
+
+<span class="kn">from</span> <span class="nn">academic_metrics.configs</span> <span class="kn">import</span> <span class="p">(</span>
+    <span class="n">configure_logging</span><span class="p">,</span>
+    <span class="n">DEBUG</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="kn">from</span> <span class="nn">academic_metrics.dataclass_models</span> <span class="kn">import</span> <span class="n">CategoryInfo</span><span class="p">,</span> <span class="n">FacultyStats</span>
+
+<span class="k">if</span> <span class="n">TYPE_CHECKING</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">academic_metrics.core</span> <span class="kn">import</span> <span class="p">(</span>
+        <span class="n">CategoryProcessor</span><span class="p">,</span>
+        <span class="n">FacultyPostprocessor</span><span class="p">,</span>
+        <span class="n">NameVariation</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="kn">from</span> <span class="nn">academic_metrics.dataclass_models</span> <span class="kn">import</span> <span class="p">(</span>
+        <span class="n">CrossrefArticleDetails</span><span class="p">,</span>
+        <span class="n">CrossrefArticleStats</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="kn">from</span> <span class="nn">academic_metrics.factories</span> <span class="kn">import</span> <span class="p">(</span>
+        <span class="n">DataClassFactory</span><span class="p">,</span>
+        <span class="n">StrategyFactory</span><span class="p">,</span>
+        <span class="n">Utilities</span><span class="p">,</span>
+        <span class="n">WarningManager</span><span class="p">,</span>
+    <span class="p">)</span>
+
+
+<div class="viewcode-block" id="CategoryDataOrchestrator">
+<a class="viewcode-back" href="../../../orchestrators.html#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator">[docs]</a>
+<span class="k">class</span> <span class="nc">CategoryDataOrchestrator</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Orchestrates the processing and organization of academic publication data.</span>
+
+<span class="sd">    This class manages the workflow of processing classified publication data through various stages:</span>
+<span class="sd">    1. Processing raw data through CategoryProcessor</span>
+<span class="sd">    2. Managing faculty/department relationships</span>
+<span class="sd">    3. Generating statistical outputs</span>
+<span class="sd">    4. Serializing results to JSON files</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">        data (List[Dict]): Raw classified publication data to process.</span>
+<span class="sd">        output_dir_path (str): Directory path for output files.</span>
+<span class="sd">        extend (bool): Whether to extend existing data files.</span>
+<span class="sd">        strategy_factory (StrategyFactory): Factory for creating processing strategies.</span>
+<span class="sd">        warning_manager (WarningManager): System for handling and logging warnings.</span>
+<span class="sd">        dataclass_factory (DataClassFactory): Factory for creating data model instances.</span>
+<span class="sd">        utils (Utilities): General utility functions.</span>
+<span class="sd">        category_processor (CategoryProcessor): Processor for category-related operations.</span>
+<span class="sd">        faculty_postprocessor (FacultyPostprocessor): Processor for faculty data refinement.</span>
+<span class="sd">        final_category_data (List[Dict]): Processed category statistics.</span>
+<span class="sd">        final_faculty_data (List[Dict]): Processed faculty statistics.</span>
+<span class="sd">        final_article_stats_data (List[Dict]): Processed article statistics.</span>
+<span class="sd">        final_article_data (List[Dict]): Processed article details.</span>
+<span class="sd">        final_global_faculty_data (List[Dict]): Processed global faculty statistics.</span>
+<span class="sd">        logger (logging.Logger): Logger instance for this class.</span>
+<span class="sd">        log_file_path (str): Path to the log file.</span>
+
+<span class="sd">    Methods:</span>
+<span class="sd">        Public Methods:</span>
+<span class="sd">            run_orchestrator: Executes the main data processing workflow.</span>
+<span class="sd">            get_final_category_data: Returns processed category data.</span>
+<span class="sd">            get_final_faculty_data: Returns processed faculty data.</span>
+<span class="sd">            get_final_global_faculty_data: Returns processed global faculty data.</span>
+<span class="sd">            get_final_article_stats_data: Returns processed article statistics.</span>
+<span class="sd">            get_final_article_data: Returns processed article details.</span>
+
+<span class="sd">        Private Methods:</span>
+<span class="sd">            _save_all_results: Saves all processed data to files.</span>
+<span class="sd">            _refine_faculty_sets: Refines faculty sets by removing duplicates.</span>
+<span class="sd">            _refine_faculty_stats: Refines faculty statistics based on name variations.</span>
+<span class="sd">            _clean_category_data: Prepares category data by removing unwanted keys.</span>
+<span class="sd">            _serialize_and_save_category_data: Serializes and saves category data.</span>
+<span class="sd">            _serialize_and_save_faculty_stats: Serializes and saves faculty statistics.</span>
+<span class="sd">            _serialize_and_save_global_faculty_stats: Serializes and saves global faculty statistics.</span>
+<span class="sd">            _serialize_and_save_category_article_stats: Serializes and saves article statistics.</span>
+<span class="sd">            _serialize_and_save_articles: Serializes and saves article details.</span>
+<span class="sd">            _flatten_to_list: Flattens nested data structures into a list.</span>
+<span class="sd">            _write_to_json: Writes data to JSON file.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="o">*</span><span class="p">,</span>
+        <span class="n">data</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">dict</span><span class="p">],</span>
+        <span class="n">output_dir_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">category_processor</span><span class="p">:</span> <span class="n">CategoryProcessor</span><span class="p">,</span>
+        <span class="n">faculty_postprocessor</span><span class="p">:</span> <span class="n">FacultyPostprocessor</span><span class="p">,</span>
+        <span class="n">strategy_factory</span><span class="p">:</span> <span class="n">StrategyFactory</span><span class="p">,</span>
+        <span class="n">dataclass_factory</span><span class="p">:</span> <span class="n">DataClassFactory</span><span class="p">,</span>
+        <span class="n">warning_manager</span><span class="p">:</span> <span class="n">WarningManager</span><span class="p">,</span>
+        <span class="n">utilities</span><span class="p">:</span> <span class="n">Utilities</span><span class="p">,</span>
+        <span class="n">extend</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Initialize the CategoryDataOrchestrator with required components and settings.</span>
+
+<span class="sd">        Sets up logging configuration with both file and console handlers and</span>
+<span class="sd">        initializes internal data structures for storing processed results.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            data (list[dict]): Raw classified publication data to process.</span>
+<span class="sd">            output_dir_path (str): Directory path where output files will be saved.</span>
+<span class="sd">            category_processor (CategoryProcessor): Processor for handling category-related operations.</span>
+<span class="sd">            faculty_postprocessor (FacultyPostprocessor): Processor for faculty data refinement.</span>
+<span class="sd">            strategy_factory (StrategyFactory): Factory for creating processing strategies.</span>
+<span class="sd">            dataclass_factory (DataClassFactory): Factory for creating data model instances.</span>
+<span class="sd">            warning_manager (WarningManager): System for handling and logging warnings.</span>
+<span class="sd">            utilities (Utilities): General utility functions.</span>
+<span class="sd">            extend (bool, optional): Whether to extend existing data files. Defaults to False.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            ValueError:</span>
+<span class="sd">            - If output directory path doesn&#39;t exist or isn&#39;t writable.</span>
+
+<span class="sd">            TypeError:</span>
+<span class="sd">            - If any of the processor or factory arguments are of incorrect type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span> <span class="o">=</span> <span class="n">configure_logging</span><span class="p">(</span>
+            <span class="n">module_name</span><span class="o">=</span><span class="vm">__name__</span><span class="p">,</span>
+            <span class="n">log_file_name</span><span class="o">=</span><span class="s2">&quot;category_data_orchestrator&quot;</span><span class="p">,</span>
+            <span class="n">log_level</span><span class="o">=</span><span class="n">DEBUG</span><span class="p">,</span>
+        <span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Initializing CategoryDataOrchestrator...&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Data: </span><span class="si">{</span><span class="n">data</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Output directory path: </span><span class="si">{</span><span class="n">output_dir_path</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Extend: </span><span class="si">{</span><span class="n">extend</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">output_dir_path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">output_dir_path</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">extend</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="n">extend</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Assigning strategy factory...&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">strategy_factory</span> <span class="o">=</span> <span class="n">strategy_factory</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Strategy factory assigned.&quot;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Assigning warning manager...&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">warning_manager</span><span class="p">:</span> <span class="n">WarningManager</span> <span class="o">=</span> <span class="n">warning_manager</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Warning manager assigned.&quot;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Assigning dataclass factory...&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dataclass_factory</span><span class="p">:</span> <span class="n">DataClassFactory</span> <span class="o">=</span> <span class="n">dataclass_factory</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Dataclass factory assigned.&quot;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Assigning utilities...&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">utils</span><span class="p">:</span> <span class="n">Utilities</span> <span class="o">=</span> <span class="n">utilities</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Utilities assigned.&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Initialize the CategoryProcessor and FacultyDepartmentManager with dependencies</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Assigning category processor...&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">category_processor</span><span class="p">:</span> <span class="n">CategoryProcessor</span> <span class="o">=</span> <span class="n">category_processor</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Category processor assigned.&quot;</span><span class="p">)</span>
+
+        <span class="c1"># post-processor object</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Assigning faculty postprocessor...&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">faculty_postprocessor</span><span class="p">:</span> <span class="n">FacultyPostprocessor</span> <span class="o">=</span> <span class="n">faculty_postprocessor</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Faculty postprocessor assigned.&quot;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Initializing final data structures...&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">final_category_data</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">final_faculty_data</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">final_article_stats_data</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">final_article_data</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">final_global_faculty_data</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Final data structures initialized.&quot;</span><span class="p">)</span>
+
+<div class="viewcode-block" id="CategoryDataOrchestrator.run_orchestrator">
+<a class="viewcode-back" href="../../../orchestrators.html#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.run_orchestrator">[docs]</a>
+    <span class="k">def</span> <span class="nf">run_orchestrator</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Execute the main data processing workflow.</span>
+
+<span class="sd">        Processes the raw publication data through several stages:</span>
+<span class="sd">        1. Processes data through CategoryProcessor</span>
+<span class="sd">        2. Gets category data for faculty set refinement</span>
+<span class="sd">        3. Refines faculty sets to remove duplicates</span>
+<span class="sd">        4. Refines faculty statistics with name variations</span>
+<span class="sd">        5. Saves all processed results to files</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            ValueError: If category data processing fails.</span>
+<span class="sd">            IOError: If saving results to files fails.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Processing data through category processor...&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">category_processor</span><span class="o">.</span><span class="n">process_data_list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Data processed through category processor.&quot;</span><span class="p">)</span>
+
+        <span class="c1"># category counts dict to pass to refine faculty sets</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Getting category data...&quot;</span><span class="p">)</span>
+        <span class="n">category_data</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">CategoryInfo</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">category_processor</span><span class="o">.</span><span class="n">get_category_data</span><span class="p">()</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Category data retrieved.&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Refine faculty sets to remove near duplicates and update counts</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+            <span class="s2">&quot;Refining faculty sets to remove near duplicates and update counts...&quot;</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_refine_faculty_sets</span><span class="p">(</span>
+            <span class="n">faculty_postprocessor</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">faculty_postprocessor</span><span class="p">,</span>
+            <span class="n">category_dict</span><span class="o">=</span><span class="n">category_data</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Faculty sets refined.&quot;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Refining faculty statistics with name variations...&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_refine_faculty_stats</span><span class="p">(</span>
+            <span class="n">faculty_stats</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">category_processor</span><span class="o">.</span><span class="n">faculty_stats</span><span class="p">,</span>
+            <span class="n">name_variations</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">faculty_postprocessor</span><span class="o">.</span><span class="n">name_variations</span><span class="p">,</span>
+            <span class="n">category_dict</span><span class="o">=</span><span class="n">category_data</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Faculty statistics refined.&quot;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Saving all processed results to files...&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_save_all_results</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;All processed results saved to files.&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CategoryDataOrchestrator.get_final_category_data">
+<a class="viewcode-back" href="../../../orchestrators.html#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.get_final_category_data">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_final_category_data</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Retrieve the processed category data.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            List[Dict]: List of processed category data dictionaries.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            ValueError: If final category data hasn&#39;t been generated yet.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Getting final category data...&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s2">&quot;final_category_data&quot;</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">&quot;Final category data not yet generated&quot;</span><span class="p">)</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Final category data not yet generated&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Final category data retrieved.&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">final_category_data</span></div>
+
+
+<div class="viewcode-block" id="CategoryDataOrchestrator.get_final_faculty_data">
+<a class="viewcode-back" href="../../../orchestrators.html#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.get_final_faculty_data">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_final_faculty_data</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Retrieve the processed faculty data.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            List[Dict]: List of processed faculty data dictionaries.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            ValueError: If final faculty data hasn&#39;t been generated yet.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Getting final faculty data...&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s2">&quot;final_faculty_data&quot;</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">&quot;Final faculty data not yet generated&quot;</span><span class="p">)</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Final faculty data not yet generated&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Final faculty data retrieved.&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">final_faculty_data</span></div>
+
+
+<div class="viewcode-block" id="CategoryDataOrchestrator.get_final_global_faculty_data">
+<a class="viewcode-back" href="../../../orchestrators.html#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.get_final_global_faculty_data">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_final_global_faculty_data</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Retrieve the processed global faculty data.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            List[Dict]: List of processed global faculty data dictionaries.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            ValueError: If final global faculty data hasn&#39;t been generated yet.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Getting final global faculty data...&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s2">&quot;final_global_faculty_data&quot;</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">&quot;Final global faculty data not yet generated&quot;</span><span class="p">)</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Final global faculty data not yet generated&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Final global faculty data retrieved.&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">final_global_faculty_data</span></div>
+
+
+<div class="viewcode-block" id="CategoryDataOrchestrator.get_final_article_stats_data">
+<a class="viewcode-back" href="../../../orchestrators.html#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.get_final_article_stats_data">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_final_article_stats_data</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Retrieve the processed article statistics data.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            List[Dict]: List of processed article statistics dictionaries.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            ValueError: If final article statistics data hasn&#39;t been generated yet.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Getting final article stats data...&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s2">&quot;final_article_stats_data&quot;</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">&quot;Final article stats data not yet generated&quot;</span><span class="p">)</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Final article stats data not yet generated&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Final article stats data retrieved.&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">final_article_stats_data</span></div>
+
+
+<div class="viewcode-block" id="CategoryDataOrchestrator.get_final_article_data">
+<a class="viewcode-back" href="../../../orchestrators.html#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.get_final_article_data">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_final_article_data</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Retrieve the processed article data.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            List[Dict]: List of processed article data dictionaries.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            ValueError: If final article data hasn&#39;t been generated yet.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Getting final article data...&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s2">&quot;final_article_data&quot;</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">&quot;Final article data not yet generated&quot;</span><span class="p">)</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Final article data not yet generated&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Final article data retrieved.&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">final_article_data</span></div>
+
+
+<div class="viewcode-block" id="CategoryDataOrchestrator._save_all_results">
+<a class="viewcode-back" href="../../../orchestrators.html#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._save_all_results">[docs]</a>
+    <span class="k">def</span> <span class="nf">_save_all_results</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Save all processed data to their respective JSON files.</span>
+
+<span class="sd">        Serializes and saves:</span>
+<span class="sd">        1. Category data</span>
+<span class="sd">        2. Faculty statistics</span>
+<span class="sd">        3. Article statistics</span>
+<span class="sd">        4. Article details</span>
+<span class="sd">        5. Global faculty statistics</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            IOError: If any file operations fail.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Serializing and saving category data...&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Serialize the processed data and save it</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Serializing and saving category data...&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_serialize_and_save_category_data</span><span class="p">(</span>
+            <span class="n">output_path</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">output_dir_path</span><span class="p">,</span> <span class="s2">&quot;test_processed_category_data.json&quot;</span>
+            <span class="p">),</span>
+            <span class="n">category_data</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">category_processor</span><span class="o">.</span><span class="n">get_category_data</span><span class="p">(),</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Category data serialized and saved.&quot;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Serializing and saving faculty stats...&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_serialize_and_save_faculty_stats</span><span class="p">(</span>
+            <span class="n">output_path</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">output_dir_path</span><span class="p">,</span> <span class="s2">&quot;test_processed_faculty_stats_data.json&quot;</span>
+            <span class="p">),</span>
+            <span class="n">faculty_stats</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">category_processor</span><span class="o">.</span><span class="n">get_faculty_stats</span><span class="p">(),</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Faculty stats serialized and saved.&quot;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Serializing and saving article stats...&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_serialize_and_save_category_article_stats</span><span class="p">(</span>
+            <span class="n">output_path</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">output_dir_path</span><span class="p">,</span> <span class="s2">&quot;test_processed_article_stats_data.json&quot;</span>
+            <span class="p">),</span>
+            <span class="n">article_stats</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">category_processor</span><span class="o">.</span><span class="n">get_category_article_stats</span><span class="p">(),</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Article stats serialized and saved.&quot;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Serializing and saving articles...&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_serialize_and_save_articles</span><span class="p">(</span>
+            <span class="n">output_path</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">output_dir_path</span><span class="p">,</span> <span class="s2">&quot;test_processed_article_stats_obj_data.json&quot;</span>
+            <span class="p">),</span>
+            <span class="n">articles</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">category_processor</span><span class="o">.</span><span class="n">get_articles</span><span class="p">(),</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Articles serialized and saved.&quot;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Serializing and saving global faculty stats...&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_serialize_and_save_global_faculty_stats</span><span class="p">(</span>
+            <span class="n">output_path</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">output_dir_path</span><span class="p">,</span> <span class="s2">&quot;test_processed_global_faculty_stats_data.json&quot;</span>
+            <span class="p">),</span>
+            <span class="n">global_faculty_stats</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">category_processor</span><span class="o">.</span><span class="n">get_global_faculty_stats</span><span class="p">(),</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Global faculty stats serialized and saved.&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CategoryDataOrchestrator._refine_faculty_sets">
+<a class="viewcode-back" href="../../../orchestrators.html#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._refine_faculty_sets">[docs]</a>
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">_refine_faculty_sets</span><span class="p">(</span>
+        <span class="n">faculty_postprocessor</span><span class="p">:</span> <span class="n">FacultyPostprocessor</span><span class="p">,</span>
+        <span class="n">category_dict</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">CategoryInfo</span><span class="p">],</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Refines faculty sets by removing near duplicates and updating counts.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            faculty_postprocessor (FacultyPostprocessor): Postprocessor for faculty data.</span>
+<span class="sd">            faculty_department_manager (FacultyDepartmentManager): Manager for faculty and department data.</span>
+<span class="sd">            category_dict (dict[str, CategoryInfo]): Dictionary of categories and their information.</span>
+
+<span class="sd">        Design:</span>
+<span class="sd">            Uses FacultyPostprocessor to remove near-duplicate faculty entries.</span>
+<span class="sd">            Updates faculty and department counts after refinement.</span>
+
+<span class="sd">        Summary:</span>
+<span class="sd">            Improves the quality of faculty data by removing duplicates and updating related counts.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># Remove near duplicates</span>
+        <span class="n">faculty_postprocessor</span><span class="o">.</span><span class="n">remove_near_duplicates</span><span class="p">(</span><span class="n">category_dict</span><span class="o">=</span><span class="n">category_dict</span><span class="p">)</span>
+
+        <span class="c1"># Update counts for each category</span>
+        <span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">info</span> <span class="ow">in</span> <span class="n">category_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="n">info</span><span class="o">.</span><span class="n">set_params</span><span class="p">(</span>
+                <span class="p">{</span>
+                    <span class="s2">&quot;faculty_count&quot;</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">info</span><span class="o">.</span><span class="n">faculty</span><span class="p">),</span>
+                    <span class="s2">&quot;department_count&quot;</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">info</span><span class="o">.</span><span class="n">departments</span><span class="p">),</span>
+                <span class="p">}</span>
+            <span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CategoryDataOrchestrator._refine_faculty_stats">
+<a class="viewcode-back" href="../../../orchestrators.html#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._refine_faculty_stats">[docs]</a>
+    <span class="k">def</span> <span class="nf">_refine_faculty_stats</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="o">*</span><span class="p">,</span>
+        <span class="n">faculty_stats</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">FacultyStats</span><span class="p">],</span>
+        <span class="n">name_variations</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">NameVariation</span><span class="p">],</span>
+        <span class="n">category_dict</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">CategoryInfo</span><span class="p">],</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Refines faculty statistics based on name variations.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            faculty_stats (dict[str, FacultyStats]): Dictionary of faculty statistics.</span>
+<span class="sd">            name_variations (dict[str, NameVariation]): Dictionary of name variations.</span>
+<span class="sd">            category_dict (dict[str, CategoryInfo]): Dictionary of categories and their information.</span>
+
+<span class="sd">        Design:</span>
+<span class="sd">            Iterates through categories and faculty members.</span>
+<span class="sd">            Applies refinement to faculty statistics based on name variations.</span>
+
+<span class="sd">        Summary:</span>
+<span class="sd">            Improves the accuracy of faculty statistics by accounting for name variations.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Refining faculty statistics with name variations...&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Grabbing category_dict keys...&quot;</span><span class="p">)</span>
+        <span class="n">categories</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">category_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Grabbed category_dict keys: </span><span class="si">{</span><span class="n">categories</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Iterating through categories...&quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">category</span> <span class="ow">in</span> <span class="n">categories</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Processing category: </span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="c1"># assigns faculty_stats dict from FacultyStats dataclass to category_faculty_stats</span>
+            <span class="c1"># category_faculty_stats: Dict[str, FacultyInfo] = faculty_stats[</span>
+            <span class="c1">#     category</span>
+            <span class="c1"># ].faculty_stats</span>
+
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Grabbing faculty members...&quot;</span><span class="p">)</span>
+            <span class="n">faculty_members</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span>
+                <span class="n">faculty_stats</span><span class="p">[</span><span class="n">category</span><span class="p">]</span><span class="o">.</span><span class="n">faculty_stats</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+            <span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Grabbed faculty members: </span><span class="si">{</span><span class="n">faculty_members</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Refining faculty stats...&quot;</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">faculty_member</span> <span class="ow">in</span> <span class="n">faculty_members</span><span class="p">:</span>
+                <span class="n">faculty_stats</span><span class="p">[</span><span class="n">category</span><span class="p">]</span><span class="o">.</span><span class="n">refine_faculty_stats</span><span class="p">(</span>
+                    <span class="n">faculty_name_unrefined</span><span class="o">=</span><span class="n">faculty_member</span><span class="p">,</span>
+                    <span class="n">name_variations</span><span class="o">=</span><span class="n">name_variations</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Faculty stats refined.&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CategoryDataOrchestrator._clean_category_data">
+<a class="viewcode-back" href="../../../orchestrators.html#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._clean_category_data">[docs]</a>
+    <span class="k">def</span> <span class="nf">_clean_category_data</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">category_data</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">CategoryInfo</span><span class="p">]</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Dict</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Prepare category data by removing unwanted keys.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            category_data (Dict[str, CategoryInfo]): Raw category data to clean.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Dict[str, Dict]: Cleaned category data with specified keys removed.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Cleaning category data...&quot;</span><span class="p">)</span>
+        <span class="c1"># True: Exclude value(s) for key</span>
+        <span class="c1"># False: Include value(s) for key</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Defining exclude keys map...&quot;</span><span class="p">)</span>
+        <span class="n">exclude_keys_map</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;files&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+            <span class="s2">&quot;faculty&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+            <span class="s2">&quot;departments&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+            <span class="s2">&quot;titles&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Exclude keys map: </span><span class="si">{</span><span class="n">exclude_keys_map</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Iterating through categories...&quot;</span><span class="p">)</span>
+        <span class="n">cleaned_data</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Dict</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="n">category</span><span class="p">:</span> <span class="n">category_info</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(</span>
+                <span class="c1"># exclude keys is a list of strings matching keys in the dataclass to exclude</span>
+                <span class="c1"># from the final dict when executing .to_dict()</span>
+                <span class="c1"># We grab the key out and put that string in the list if it&#39;s value is True</span>
+                <span class="n">exclude_keys</span><span class="o">=</span><span class="p">[</span>
+                    <span class="n">key</span>
+                    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">should_exclude</span> <span class="ow">in</span> <span class="n">exclude_keys_map</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+                    <span class="k">if</span> <span class="n">should_exclude</span>
+                <span class="p">]</span>
+            <span class="p">)</span>
+            <span class="k">for</span> <span class="n">category</span><span class="p">,</span> <span class="n">category_info</span> <span class="ow">in</span> <span class="n">category_data</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+        <span class="p">}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Category data cleaned.&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">cleaned_data</span></div>
+
+
+<div class="viewcode-block" id="CategoryDataOrchestrator._serialize_and_save_category_data">
+<a class="viewcode-back" href="../../../orchestrators.html#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._serialize_and_save_category_data">[docs]</a>
+    <span class="k">def</span> <span class="nf">_serialize_and_save_category_data</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">output_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">category_data</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Dict</span><span class="p">]</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Serialize and save category data to JSON file.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            output_path (str): Path where the JSON file will be saved.</span>
+<span class="sd">            category_data (Dict[str, Dict]): Category data to serialize.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            IOError: If file writing fails.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Cleaning category data...&quot;</span><span class="p">)</span>
+        <span class="c1"># Step 1: Clean the data</span>
+        <span class="n">cleaned_data</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Dict</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_clean_category_data</span><span class="p">(</span><span class="n">category_data</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Category data cleaned.&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Step 2: Convert to list of category info dicts</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Converting to list of category info dicts...&quot;</span><span class="p">)</span>
+        <span class="n">flattened_data</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">cleaned_data</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Flattened data: </span><span class="si">{</span><span class="n">flattened_data</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Assigning flattened data to final_category_data...&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">final_category_data</span> <span class="o">=</span> <span class="n">flattened_data</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Final category data assigned.&quot;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Writing to file...&quot;</span><span class="p">)</span>
+        <span class="c1"># Step 3: Write to file</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_write_to_json</span><span class="p">(</span><span class="n">flattened_data</span><span class="p">,</span> <span class="n">output_path</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CategoryDataOrchestrator._serialize_and_save_faculty_stats">
+<a class="viewcode-back" href="../../../orchestrators.html#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._serialize_and_save_faculty_stats">[docs]</a>
+    <span class="k">def</span> <span class="nf">_serialize_and_save_faculty_stats</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">output_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">faculty_stats</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">FacultyStats</span><span class="p">]</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Serialize and save faculty statistics to JSON file.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            output_path (str): Path where the JSON file will be saved.</span>
+<span class="sd">            faculty_stats (Dict[str, FacultyStats]): Faculty statistics to serialize.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            IOError: If file writing fails.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Serializing and saving faculty stats...&quot;</span><span class="p">)</span>
+
+        <span class="c1"># First .values() gets rid of the category level</span>
+        <span class="c1"># Second .values() gets rid of the faculty_stats level</span>
+        <span class="c1"># Third .values() gets rid of the faculty name level</span>
+        <span class="c1"># We don&#39;t lose any data or need to insert it as we do so throughout the processing</span>
+        <span class="c1"># By not only making them keys but also inserting them into the FacultyInfo objects</span>
+        <span class="c1"># Define exclude keys map to parse into a list of keys to exclude from final dict</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Defining exclude keys map...&quot;</span><span class="p">)</span>
+        <span class="n">exclude_keys_map</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;article_count&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+            <span class="s2">&quot;average_citations&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+            <span class="s2">&quot;doi_citation_map&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Exclude keys map: </span><span class="si">{</span><span class="n">exclude_keys_map</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Flattening faculty stats...&quot;</span><span class="p">)</span>
+        <span class="c1"># List[FacultyInfo.to_dict()]</span>
+        <span class="n">flattened_data</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+
+        <span class="c1"># First level: Categories</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Iterating through faculty stats...&quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">category_stats</span> <span class="ow">in</span> <span class="n">faculty_stats</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Processing category stats: </span><span class="si">{</span><span class="n">category_stats</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+            <span class="c1"># Second level: faculty_stats dict</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Converting to dict...&quot;</span><span class="p">)</span>
+            <span class="n">faculty_dict</span> <span class="o">=</span> <span class="n">category_stats</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(</span>
+                <span class="c1"># exclude keys is a list of strings matching keys in the dataclass to exclude</span>
+                <span class="c1"># from the final dict when executing .to_dict()</span>
+                <span class="c1"># We grab the key out and put that string in the list if it&#39;s value is True</span>
+                <span class="c1"># True means exclude the value for that key</span>
+                <span class="n">exclude_keys</span><span class="o">=</span><span class="p">[</span>
+                    <span class="n">key</span>
+                    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">should_exclude</span> <span class="ow">in</span> <span class="n">exclude_keys_map</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+                    <span class="k">if</span> <span class="n">should_exclude</span>
+                <span class="p">]</span>
+            <span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Faculty dict converted to dict.&quot;</span><span class="p">)</span>
+
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Checking if faculty_stats is in faculty_dict...&quot;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="s2">&quot;faculty_stats&quot;</span> <span class="ow">in</span> <span class="n">faculty_dict</span><span class="p">:</span>  <span class="c1"># Second level: faculty_stats dict</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Faculty stats found in faculty dict.&quot;</span><span class="p">)</span>
+
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Iterating through faculty stats...&quot;</span><span class="p">)</span>
+                <span class="k">for</span> <span class="n">faculty_info_obj</span> <span class="ow">in</span> <span class="n">faculty_dict</span><span class="p">[</span><span class="s2">&quot;faculty_stats&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Processing faculty info obj: </span><span class="si">{</span><span class="n">faculty_info_obj</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                    <span class="c1"># Convert FacultyInfo obj to dict and append to flattened_data</span>
+                    <span class="n">flattened_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">faculty_info_obj</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Flattened data appended.&quot;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Assigning flattened data to final_faculty_data...&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">final_faculty_data</span> <span class="o">=</span> <span class="n">flattened_data</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Final faculty data assigned.&quot;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Writing to file...&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_write_to_json</span><span class="p">(</span><span class="n">flattened_data</span><span class="p">,</span> <span class="n">output_path</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CategoryDataOrchestrator._serialize_and_save_global_faculty_stats">
+<a class="viewcode-back" href="../../../orchestrators.html#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._serialize_and_save_global_faculty_stats">[docs]</a>
+    <span class="k">def</span> <span class="nf">_serialize_and_save_global_faculty_stats</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">output_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">global_faculty_stats</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">FacultyStats</span><span class="p">]</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Serialize and save global faculty statistics to JSON file.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            output_path (str): Path where the JSON file will be saved.</span>
+<span class="sd">            global_faculty_stats (Dict[str, FacultyStats]): Global faculty statistics to serialize.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            IOError: If file writing fails.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Serializing and saving global faculty stats...&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Step 0: Define exclude keys map to parse into a list of keys to exclude from final dict</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Defining exclude keys map...&quot;</span><span class="p">)</span>
+        <span class="n">exclude_keys_map</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;article_count&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+            <span class="s2">&quot;average_citations&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+            <span class="s2">&quot;citation_map&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Exclude keys map: </span><span class="si">{</span><span class="n">exclude_keys_map</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Step 1: Flatten and convert to list of dicts</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Flattening and converting to list of dicts...&quot;</span><span class="p">)</span>
+        <span class="n">data</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="n">item</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(</span>
+                <span class="n">exclude_keys</span><span class="o">=</span><span class="p">[</span>
+                    <span class="n">key</span>
+                    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">should_exclude</span> <span class="ow">in</span> <span class="n">exclude_keys_map</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+                    <span class="k">if</span> <span class="n">should_exclude</span>
+                <span class="p">]</span>
+            <span class="p">)</span>
+            <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">global_faculty_stats</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>
+        <span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Flattened and converted to list of dicts.&quot;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Assigning flattened data to final_global_faculty_data...&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">final_global_faculty_data</span> <span class="o">=</span> <span class="n">data</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Final global faculty data assigned.&quot;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Writing to file...&quot;</span><span class="p">)</span>
+        <span class="c1"># Step 2: Write to file</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_write_to_json</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">output_path</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CategoryDataOrchestrator._serialize_and_save_category_article_stats">
+<a class="viewcode-back" href="../../../orchestrators.html#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._serialize_and_save_category_article_stats">[docs]</a>
+    <span class="k">def</span> <span class="nf">_serialize_and_save_category_article_stats</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">output_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">article_stats</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">CrossrefArticleStats</span><span class="p">]</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Serialize and save article statistics to JSON file.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            output_path (str): Path where the JSON file will be saved.</span>
+<span class="sd">            article_stats (Dict[str, CrossrefArticleStats]): Article statistics to serialize.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            IOError: If file writing fails.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Serializing and saving article stats...&quot;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Flattening article stats...&quot;</span><span class="p">)</span>
+        <span class="n">flattened_data</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Iterating through article stats...&quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">category</span><span class="p">,</span> <span class="n">stats</span> <span class="ow">in</span> <span class="n">article_stats</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Processing article stats: </span><span class="si">{</span><span class="n">stats</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="n">stats_dict</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Checking if article_citation_map is in stats_dict...&quot;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="s2">&quot;article_citation_map&quot;</span> <span class="ow">in</span> <span class="n">stats_dict</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Article citation map found in stats dict.&quot;</span><span class="p">)</span>
+
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Iterating through article citation map...&quot;</span><span class="p">)</span>
+                <span class="k">for</span> <span class="n">article</span> <span class="ow">in</span> <span class="n">stats_dict</span><span class="p">[</span><span class="s2">&quot;article_citation_map&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Processing article: </span><span class="si">{</span><span class="n">article</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                    <span class="n">flattened_data</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="o">**</span><span class="n">article</span><span class="p">})</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Flattened data appended.&quot;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Assigning flattened data to final_article_stats_data...&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">final_article_stats_data</span> <span class="o">=</span> <span class="n">flattened_data</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Final article stats data assigned.&quot;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Writing to file...&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_write_to_json</span><span class="p">(</span><span class="n">flattened_data</span><span class="p">,</span> <span class="n">output_path</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CategoryDataOrchestrator._serialize_and_save_articles">
+<a class="viewcode-back" href="../../../orchestrators.html#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._serialize_and_save_articles">[docs]</a>
+    <span class="k">def</span> <span class="nf">_serialize_and_save_articles</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">output_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">articles</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">CrossrefArticleDetails</span><span class="p">]</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Serialize and save article details to JSON file.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            output_path (str): Path where the JSON file will be saved.</span>
+<span class="sd">            articles (List[CrossrefArticleDetails]): Article details to serialize.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            IOError: If file writing fails.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Serializing and saving articles...&quot;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Converting to list of dicts...&quot;</span><span class="p">)</span>
+        <span class="c1"># Convert each CrossrefArticleDetails object to a dict</span>
+        <span class="n">article_dicts</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">article</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span> <span class="k">for</span> <span class="n">article</span> <span class="ow">in</span> <span class="n">articles</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Converted to list of dicts.&quot;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Assigning to final_article_data...&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">final_article_data</span> <span class="o">=</span> <span class="n">article_dicts</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Final article data assigned.&quot;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Writing to file...&quot;</span><span class="p">)</span>
+        <span class="c1"># Write to file</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_write_to_json</span><span class="p">(</span><span class="n">article_dicts</span><span class="p">,</span> <span class="n">output_path</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CategoryDataOrchestrator._flatten_to_list">
+<a class="viewcode-back" href="../../../orchestrators.html#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._flatten_to_list">[docs]</a>
+    <span class="k">def</span> <span class="nf">_flatten_to_list</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">Dict</span><span class="p">,</span> <span class="n">List</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Recursively flatten nested dictionaries/lists into a flat list.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            data (Union[Dict, List]): Nested structure of dictionaries and lists.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            List[Dict]: Flattened list of dictionaries.</span>
+
+<span class="sd">        Example:</span>
+<span class="sd">            Input: {&quot;cat1&quot;: {&quot;article_map&quot;: {&quot;doi1&quot;: {...}, &quot;doi2&quot;: {...}}}}</span>
+<span class="sd">            Output: [{...}, {...}]  # List of article dictionaries</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Flattening...&quot;</span><span class="p">)</span>
+        <span class="n">flattened</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Checking if data is a dict...&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Data is a dict. Iterating through values...&quot;</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+                <span class="n">flattened</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_flatten_to_list</span><span class="p">(</span><span class="n">value</span><span class="p">))</span>
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Data is a list. Iterating through items...&quot;</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+                <span class="n">flattened</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_flatten_to_list</span><span class="p">(</span><span class="n">item</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span>  <span class="c1"># Base case: found a non-dict, non-list value</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Data is a non-dict, non-list value. Appending...&quot;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>  <span class="c1"># If it&#39;s a dictionary, add it</span>
+                <span class="n">flattened</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Flattened.&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">flattened</span></div>
+
+
+<div class="viewcode-block" id="CategoryDataOrchestrator._write_to_json">
+<a class="viewcode-back" href="../../../orchestrators.html#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._write_to_json">[docs]</a>
+    <span class="k">def</span> <span class="nf">_write_to_json</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">],</span> <span class="n">Dict</span><span class="p">],</span> <span class="n">output_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Write data to JSON file, handling extend mode.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            data (Union[List[Dict], Dict]): Data to write to file.</span>
+<span class="sd">            output_path (str): Path where the JSON file will be saved.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            IOError: If file operations fail.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Checking if extending...&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">extend</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Extending...&quot;</span><span class="p">)</span>
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">output_path</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">json_file</span><span class="p">:</span>
+                <span class="n">existing_data</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">],</span> <span class="n">Dict</span><span class="p">]</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">json_file</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Existing data loaded.&quot;</span><span class="p">)</span>
+
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Checking if data is a list...&quot;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Data is a list. Extending...&quot;</span><span class="p">)</span>
+                <span class="n">existing_data</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Data is not a list. Updating...&quot;</span><span class="p">)</span>
+                <span class="n">existing_data</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Data updated.&quot;</span><span class="p">)</span>
+            <span class="n">data</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">],</span> <span class="n">Dict</span><span class="p">]</span> <span class="o">=</span> <span class="n">existing_data</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Dumping data to file...&quot;</span><span class="p">)</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">output_path</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">json_file</span><span class="p">:</span>
+            <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">json_file</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span></div>
+</div>
+
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="kn">import</span> <span class="nn">tempfile</span>
+
+    <span class="c1"># Create a test CategoryInfo object</span>
+    <span class="n">test_category</span> <span class="o">=</span> <span class="n">CategoryInfo</span><span class="p">(</span>
+        <span class="n">_id</span><span class="o">=</span><span class="s2">&quot;Psychology&quot;</span><span class="p">,</span>
+        <span class="n">url</span><span class="o">=</span><span class="s2">&quot;Psychology&quot;</span><span class="p">,</span>
+        <span class="n">category_name</span><span class="o">=</span><span class="s2">&quot;Psychology&quot;</span><span class="p">,</span>
+        <span class="n">faculty_count</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span>
+        <span class="n">department_count</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
+        <span class="n">article_count</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+        <span class="n">faculty</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;Sook-Hyun Kim&quot;</span><span class="p">,</span> <span class="s2">&quot;Jose I. Juncosa&quot;</span><span class="p">,</span> <span class="s2">&quot;Suzanne L. Osman&quot;</span><span class="p">},</span>
+        <span class="n">departments</span><span class="o">=</span><span class="p">{</span>
+            <span class="s2">&quot;Department of Psychology, Salisbury University, Salisbury, MD, USA&quot;</span>
+        <span class="p">},</span>
+        <span class="n">titles</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;Korean fathers&#39; immigration experience&quot;</span><span class="p">},</span>
+        <span class="n">tc_count</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+        <span class="n">citation_average</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span>
+        <span class="n">doi_list</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;10.1177/10778012241234897&quot;</span><span class="p">},</span>
+        <span class="n">themes</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;Parenting Challenges&quot;</span><span class="p">,</span> <span class="s2">&quot;Cultural Identity&quot;</span><span class="p">},</span>
+    <span class="p">)</span>
+
+    <span class="c1"># Create the input dictionary format</span>
+    <span class="n">category_data</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Psychology&quot;</span><span class="p">:</span> <span class="n">test_category</span><span class="p">}</span>
+
+    <span class="c1"># Create a minimal orchestrator instance</span>
+    <span class="k">with</span> <span class="n">tempfile</span><span class="o">.</span><span class="n">TemporaryDirectory</span><span class="p">()</span> <span class="k">as</span> <span class="n">temp_dir</span><span class="p">:</span>
+        <span class="n">orchestrator</span> <span class="o">=</span> <span class="n">CategoryDataOrchestrator</span><span class="p">(</span>
+            <span class="n">data</span><span class="o">=</span><span class="p">[],</span>
+            <span class="n">output_dir_path</span><span class="o">=</span><span class="n">temp_dir</span><span class="p">,</span>
+            <span class="n">category_processor</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+            <span class="n">faculty_postprocessor</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+            <span class="n">strategy_factory</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+            <span class="n">dataclass_factory</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+            <span class="n">warning_manager</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+            <span class="n">utilities</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+        <span class="p">)</span>
+
+        <span class="c1"># Test the serialization</span>
+        <span class="n">output_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">temp_dir</span><span class="p">,</span> <span class="s2">&quot;test_categories.json&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Testing category serialization:&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Input category data: </span><span class="si">{</span><span class="n">category_data</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="n">orchestrator</span><span class="o">.</span><span class="n">_serialize_and_save_category_data</span><span class="p">(</span>
+            <span class="n">output_path</span><span class="o">=</span><span class="n">output_path</span><span class="p">,</span> <span class="n">category_data</span><span class="o">=</span><span class="n">category_data</span>
+        <span class="p">)</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">After serialization:&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span>
+            <span class="sa">f</span><span class="s2">&quot;Has final_category_data: </span><span class="si">{</span><span class="nb">hasattr</span><span class="p">(</span><span class="n">orchestrator</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;final_category_data&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="p">)</span>
+        <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">orchestrator</span><span class="p">,</span> <span class="s2">&quot;final_category_data&quot;</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span>
+                <span class="sa">f</span><span class="s2">&quot;Length of final_category_data: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">orchestrator</span><span class="o">.</span><span class="n">final_category_data</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span>
+            <span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Content: </span><span class="si">{</span><span class="n">orchestrator</span><span class="o">.</span><span class="n">final_category_data</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Test retrieval</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">retrieved_data</span> <span class="o">=</span> <span class="n">orchestrator</span><span class="o">.</span><span class="n">get_final_category_data</span><span class="p">()</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Successfully retrieved data:&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Length: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">retrieved_data</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Content: </span><span class="si">{</span><span class="n">retrieved_data</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+            <span class="c1"># Also check the JSON file</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">JSON file content:&quot;</span><span class="p">)</span>
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">output_path</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+                <span class="n">json_content</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;JSON length: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">json_content</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;JSON content: </span><span class="si">{</span><span class="n">json_content</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Error retrieving data: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="clearer"></div>
+    </div>
+    <div class="button_nav_wrapper">
+        <div class="button_nav">
+            <div class="left">
+                
+            </div>
+
+            <div class="right">
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Spencer Presley, Cole Barbes.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    </div>
+
+<p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>
+  </body>
+</html>

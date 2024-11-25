@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>academic_metrics.DB.DatabaseSetup &#8212; Academic Metrics 0.1.0-beta documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/basic_mod.css?v=9b2032db" />
+    <script src="../../../_static/documentation_options.js?v=c903bf51"></script>
+    <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <script src="../../../_static/js/petite-vue.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+  </head><body data-dark_mode_code_blocks="true">
+
+<div id="top_nav">
+    
+
+    <nav>
+        
+            
+        
+
+        <p id="toggle_sidebar">
+            <a href="#" title="Toggle sidebar">|||</a>
+        </p>
+        <h1><a href="../../../index.html" title="Go to homepage">Academic Metrics 0.1.0-beta documentation</a></h1>
+
+        <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
+    <template v-if="mode == 'light'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_light"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M67.48,18.073c1.913,-1.912 1.913,-5.018 0,-6.931c-1.912,-1.912 -5.018,-1.912 -6.931,0l-6.798,6.799c-1.912,1.912 -1.912,5.018 0,6.931c1.913,1.912 5.018,1.912 6.931,-0l6.798,-6.799Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.728,61.108c1.912,-1.913 1.912,-5.018 -0,-6.931c-1.913,-1.913 -5.019,-1.913 -6.931,-0l-6.799,6.798c-1.912,1.913 -1.912,5.019 0,6.931c1.913,1.913 5.019,1.913 6.931,0l6.799,-6.798Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.682,54.177c-1.913,-1.913 -5.018,-1.913 -6.931,-0c-1.912,1.913 -1.912,5.018 0,6.931l6.798,6.798c1.913,1.913 5.019,1.913 6.931,0c1.913,-1.912 1.913,-5.018 0,-6.931l-6.798,-6.798Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M4.901,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,-0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M18.929,11.142c-1.912,-1.912 -5.018,-1.912 -6.931,0c-1.912,1.913 -1.912,5.019 0,6.931l6.799,6.799c1.912,1.912 5.018,1.912 6.931,-0c1.912,-1.913 1.912,-5.019 -0,-6.931l-6.799,-6.799Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.108,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c-0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c-0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'dark'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_dark"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.901,2.196 -4.901,4.901c0,2.705 2.197,4.901 4.901,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.662,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.989,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.732,61.103c1.91,-1.91 1.91,-5.011 0,-6.921l-0.009,-0.01c-1.91,-1.91 -5.012,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.909,1.91 5.011,1.91 6.92,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.672,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.52,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l-0,-0.01c-0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.901,2.196 -4.901,4.901c0,2.704 2.197,4.9 4.901,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.73,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 -0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.098,34.623c-2.699,0 -4.891,2.192 -4.891,4.892l-0,0.019c-0,2.699 2.192,4.891 4.891,4.891c2.7,0 4.892,-2.192 4.892,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.892,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'darkest'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_darkest"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><path d="M39.315,23.791c8.684,-0 15.734,7.05 15.734,15.733c0,8.684 -7.05,15.734 -15.734,15.734c-8.683,0 -15.733,-7.05 -15.733,-15.734c-0,-8.683 7.05,-15.733 15.733,-15.733Zm0,4.737c6.069,0 10.997,4.927 10.997,10.996c-0,6.069 -4.928,10.996 -10.997,10.996c-6.068,0 -10.996,-4.927 -10.996,-10.996c0,-6.069 4.928,-10.996 10.996,-10.996Z" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.216,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.9,2.196 -4.9,4.901c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.666,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.99,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.737,61.103c1.909,-1.91 1.909,-5.011 -0,-6.921l-0.01,-0.01c-1.91,-1.91 -5.011,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.91,1.91 5.011,1.91 6.921,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.676,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.524,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l0,-0.01c0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.216,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901c-0,2.704 2.196,4.9 4.9,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.734,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.103,34.623c-2.7,0 -4.892,2.192 -4.892,4.892l-0,0.019c-0,2.699 2.192,4.891 4.892,4.891c2.699,0 4.891,-2.192 4.891,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.891,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+</a>
+
+<script>
+(function() {
+    const LOCAL_STORAGE_KEY = 'piccoloThemeMode'
+
+    var initialMode = localStorage.getItem(LOCAL_STORAGE_KEY)
+
+    if (initialMode) {
+        // Make sure the value in local storage is valid
+        if (['light', 'dark', 'darkest'].indexOf(initialMode) == -1) {
+            initialMode = 'light'
+            localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+        }
+    } else {
+        // Check if the client prefers dark mode
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            initialMode = 'dark'
+        } else {
+            initialMode = 'light'
+        }
+        localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+    }
+
+    document.documentElement.dataset.mode = initialMode
+
+    PetiteVue.createApp({
+        'mode': initialMode,
+        handleClick() {
+            let currentMode = this.mode
+
+            if (currentMode == 'light') {
+                this.mode = 'dark'
+            } else if (currentMode == 'dark') {
+                this.mode = 'darkest'
+            } else if (currentMode == 'darkest') {
+                this.mode = 'light'
+            }
+
+            document.documentElement.dataset.mode = this.mode
+            localStorage.setItem(LOCAL_STORAGE_KEY, this.mode)
+
+            console.log(this.mode)
+        }
+    }).mount('#mode_toggle')
+})()
+</script>
+            <p class="mobile_search_link">
+                <a href="../../../search.html" title="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 64" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path d="M14.873 40.009c-2.315-3.943-3.642-8.532-3.642-13.429C11.231 11.91 23.141 0 37.811 0s26.58 11.91 26.58 26.58-11.91 26.58-26.58 26.58a26.44 26.44 0 0 1-14.277-4.161L9.739 62.794a3.12 3.12 0 0 1-4.413 0L.913 58.382c-1.217-1.218-1.217-3.196 0-4.413l13.96-13.96zM37.811 8.054c10.225 0 18.526 8.301 18.526 18.526s-8.301 18.526-18.526 18.526-18.526-8.301-18.526-18.526S27.586 8.054 37.811 8.054z" fill="#fff" />
+                    </svg>
+                </a>
+            </p>
+        
+
+        <div class="searchbox_wrapper">
+            
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../abstract_classifier.html">Abstract Classifier Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../category_processor.html">Category Processor Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../faculty_set_postprocessor.html">Faculty Set Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../config.html">Global Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../chain_builder.html">Chain Builder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ai_prompts.html">ai_prompts package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../data_collection.html">data_collection package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../dataclass_models.html">dataclass_models package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../DB.html">DB package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../enums.html">enums package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../factories.html">factories package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../orchestrators.html">orchestrators package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../other.html">other package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../runners.html">runners package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../strategies.html">strategies package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../utils.html">utils package</a></li>
+</ul>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for academic_metrics.DB.DatabaseSetup</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">atexit</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Any</span><span class="p">,</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">List</span>
+
+<span class="kn">from</span> <span class="nn">dotenv</span> <span class="kn">import</span> <span class="n">load_dotenv</span>
+<span class="kn">from</span> <span class="nn">pymongo.collection</span> <span class="kn">import</span> <span class="n">Collection</span>
+<span class="kn">from</span> <span class="nn">pymongo.mongo_client</span> <span class="kn">import</span> <span class="n">MongoClient</span>
+<span class="kn">from</span> <span class="nn">pymongo.server_api</span> <span class="kn">import</span> <span class="n">ServerApi</span>
+
+<span class="kn">from</span> <span class="nn">academic_metrics.configs</span> <span class="kn">import</span> <span class="p">(</span>
+    <span class="n">configure_logging</span><span class="p">,</span>
+    <span class="n">DEBUG</span><span class="p">,</span>
+<span class="p">)</span>
+
+
+<div class="viewcode-block" id="DatabaseWrapper">
+<a class="viewcode-back" href="../../../academic_metrics.DB.html#academic_metrics.DB.DatabaseSetup.DatabaseWrapper">[docs]</a>
+<span class="k">class</span> <span class="nc">DatabaseWrapper</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;A wrapper class for MongoDB operations.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">        logger (logging.Logger): Logger for logging messages.</span>
+<span class="sd">        client (MongoClient): MongoDB client.</span>
+<span class="sd">        db (Database): MongoDB database.</span>
+<span class="sd">        article_collection (Collection): MongoDB collection for article data.</span>
+<span class="sd">        category_collection (Collection): MongoDB collection for category data.</span>
+<span class="sd">        faculty_collection (Collection): MongoDB collection for faculty data.</span>
+
+<span class="sd">    Methods:</span>
+<span class="sd">        _test_connection: Test the connection to the MongoDB server.</span>
+<span class="sd">        get_dois: Get all DOIs from the article collection.</span>
+<span class="sd">        get_all_data: Get all data from the article, category, and faculty collections.</span>
+<span class="sd">        insert_categories: Insert multiple categories into the collection.</span>
+<span class="sd">        update_category: Update an existing category.</span>
+<span class="sd">        insert_articles: Insert multiple articles into the collection.</span>
+<span class="sd">        insert_faculty: Insert multiple faculty entries into the collection.</span>
+<span class="sd">        update_faculty: Update an existing faculty member.</span>
+<span class="sd">        process: Process data and insert it into the appropriate collection.</span>
+<span class="sd">        run_all_process: Run the process method for all collections.</span>
+<span class="sd">        clear_collection: Clear the entire collection.</span>
+<span class="sd">        close_connection: Close the connection to the MongoDB server.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="DatabaseWrapper.__init__">
+<a class="viewcode-back" href="../../../DB.html#academic_metrics.DB.DatabaseSetup.DatabaseWrapper.__init__">[docs]</a>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">db_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">mongo_url</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Initialize the DatabaseWrapper with database name, collection name, and MongoDB URL.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            db_name (str): Name of the database.</span>
+<span class="sd">            mongo_url (str): MongoDB URL.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span> <span class="o">=</span> <span class="n">configure_logging</span><span class="p">(</span>
+            <span class="n">module_name</span><span class="o">=</span><span class="vm">__name__</span><span class="p">,</span>
+            <span class="n">log_file_name</span><span class="o">=</span><span class="s2">&quot;database_setup&quot;</span><span class="p">,</span>
+            <span class="n">log_level</span><span class="o">=</span><span class="n">DEBUG</span><span class="p">,</span>
+        <span class="p">)</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">mongo_url</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Url error&quot;</span><span class="p">)</span>
+            <span class="k">return</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">mongo_url</span> <span class="o">=</span> <span class="n">mongo_url</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">client</span> <span class="o">=</span> <span class="n">MongoClient</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">mongo_url</span><span class="p">,</span> <span class="n">server_api</span><span class="o">=</span><span class="n">ServerApi</span><span class="p">(</span><span class="s2">&quot;1&quot;</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">db</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="p">[</span><span class="n">db_name</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">article_collection</span><span class="p">:</span> <span class="n">Collection</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">db</span><span class="p">[</span><span class="s2">&quot;article_data&quot;</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">category_collection</span><span class="p">:</span> <span class="n">Collection</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">db</span><span class="p">[</span><span class="s2">&quot;category_data&quot;</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">faculty_collection</span><span class="p">:</span> <span class="n">Collection</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">db</span><span class="p">[</span><span class="s2">&quot;faculty_data&quot;</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_test_connection</span><span class="p">()</span>
+        <span class="n">atexit</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">close_connection</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="DatabaseWrapper._test_connection">
+<a class="viewcode-back" href="../../../academic_metrics.DB.html#academic_metrics.DB.DatabaseSetup.DatabaseWrapper._test_connection">[docs]</a>
+    <span class="k">def</span> <span class="nf">_test_connection</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Test the connection to the MongoDB server.&quot;&quot;&quot;</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">admin</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="s2">&quot;ping&quot;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                <span class="s2">&quot;Pinged your deployment. You successfully connected to MongoDB!&quot;</span>
+            <span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Connection error: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="DatabaseWrapper.get_dois">
+<a class="viewcode-back" href="../../../academic_metrics.DB.html#academic_metrics.DB.DatabaseSetup.DatabaseWrapper.get_dois">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_dois</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get all DOIs from the article collection.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            doi_list (List[str]): List of DOIs.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">articles</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">article_collection</span><span class="o">.</span><span class="n">find</span><span class="p">({})</span>
+        <span class="n">doi_list</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">article</span> <span class="ow">in</span> <span class="n">articles</span><span class="p">:</span>
+            <span class="n">doi_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">article</span><span class="p">[</span><span class="s2">&quot;_id&quot;</span><span class="p">])</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Retrieved DOIs: </span><span class="si">{</span><span class="n">doi_list</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">doi_list</span></div>
+
+
+<div class="viewcode-block" id="DatabaseWrapper.get_all_data">
+<a class="viewcode-back" href="../../../academic_metrics.DB.html#academic_metrics.DB.DatabaseSetup.DatabaseWrapper.get_all_data">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_all_data</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get all data from the article, category, and faculty collections.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            List[List[Dict[str, Any]]]: List of lists containing article, category, and faculty data.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">articles</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">article_collection</span><span class="o">.</span><span class="n">find</span><span class="p">({})</span>
+        <span class="n">categories</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">category_collection_collection</span><span class="o">.</span><span class="n">find</span><span class="p">({})</span>
+        <span class="n">faculty</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">faculty_collection</span><span class="o">.</span><span class="n">find</span><span class="p">({})</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Retrieved all data from collections.&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">articles</span><span class="p">,</span> <span class="n">categories</span><span class="p">,</span> <span class="n">faculty</span><span class="p">]</span></div>
+
+
+<div class="viewcode-block" id="DatabaseWrapper.insert_categories">
+<a class="viewcode-back" href="../../../academic_metrics.DB.html#academic_metrics.DB.DatabaseSetup.DatabaseWrapper.insert_categories">[docs]</a>
+    <span class="k">def</span> <span class="nf">insert_categories</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">category_data</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Insert multiple categories into the collection.</span>
+
+<span class="sd">        If a category already exists, add the numbers and extend the lists.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            category_data (List[Dict[str, Any]]): List of category data.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">category_data</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">&quot;Category data is empty or None&quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">category_data</span><span class="p">:</span>
+            <span class="n">existing_data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">category_collection</span><span class="o">.</span><span class="n">find_one</span><span class="p">({</span><span class="s2">&quot;_id&quot;</span><span class="p">:</span> <span class="n">item</span><span class="p">[</span><span class="s2">&quot;_id&quot;</span><span class="p">]})</span>
+            <span class="k">if</span> <span class="n">existing_data</span><span class="p">:</span>
+                <span class="n">new_item</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">update_category</span><span class="p">(</span><span class="n">existing_data</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">category_collection</span><span class="o">.</span><span class="n">update_one</span><span class="p">(</span>
+                    <span class="p">{</span><span class="s2">&quot;_id&quot;</span><span class="p">:</span> <span class="n">item</span><span class="p">[</span><span class="s2">&quot;_id&quot;</span><span class="p">]},</span> <span class="p">{</span><span class="s2">&quot;$set&quot;</span><span class="p">:</span> <span class="n">new_item</span><span class="p">}</span>
+                <span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Updated category: </span><span class="si">{</span><span class="n">item</span><span class="p">[</span><span class="s1">&#39;_id&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">category_collection</span><span class="o">.</span><span class="n">insert_one</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Inserted new category: </span><span class="si">{</span><span class="n">item</span><span class="p">[</span><span class="s1">&#39;_id&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="DatabaseWrapper.update_category">
+<a class="viewcode-back" href="../../../academic_metrics.DB.html#academic_metrics.DB.DatabaseSetup.DatabaseWrapper.update_category">[docs]</a>
+    <span class="k">def</span> <span class="nf">update_category</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">existing_data</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span> <span class="n">new_data</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Update existing category data with new data, handling None values and logging state.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            existing_data (dict[str, Any]): Existing category data.</span>
+<span class="sd">            new_data (dict[str, Any]): New category data.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            existing_data (Dict[str, Any]): Updated category data.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># ! THESE HAVE TO BE UNION NOT UPDATE</span>
+        <span class="c1"># ! ALSO USING .GET() SO IT DOESN&#39;T THROW AN ERROR IF THE KEY DOESN&#39;T EXIST</span>
+        <span class="c1"># ! NOW DOING LIST(SET()) TO CONVERT TO LIST</span>
+        <span class="c1"># Get DOI lists with None protection</span>
+        <span class="n">existing_dois</span> <span class="o">=</span> <span class="n">existing_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;doi_list&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="ow">or</span> <span class="p">[]</span>
+        <span class="n">new_dois</span> <span class="o">=</span> <span class="n">new_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;doi_list&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="ow">or</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;DOIs - Existing: </span><span class="si">{</span><span class="n">existing_dois</span><span class="si">}</span><span class="s2">, New: </span><span class="si">{</span><span class="n">new_dois</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Only update if there&#39;s no intersection between DOI lists</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">set</span><span class="p">(</span><span class="n">existing_dois</span><span class="p">)</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">new_dois</span><span class="p">)):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                <span class="sa">f</span><span class="s2">&quot;No DOI intersection found for category </span><span class="si">{</span><span class="n">existing_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_id&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2"> - updating data&quot;</span>
+            <span class="p">)</span>
+
+            <span class="c1"># Calculate new citation average</span>
+            <span class="n">scaled_averages</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">existing_dois</span><span class="p">)</span> <span class="o">*</span> <span class="n">existing_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+                <span class="s2">&quot;citation_average&quot;</span><span class="p">,</span> <span class="mi">0</span>
+            <span class="p">)</span> <span class="o">+</span> <span class="nb">len</span><span class="p">(</span><span class="n">new_dois</span><span class="p">)</span> <span class="o">*</span> <span class="n">new_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;citation_average&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+            <span class="n">new_average</span> <span class="o">=</span> <span class="n">scaled_averages</span> <span class="o">/</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">existing_dois</span><span class="p">)</span> <span class="o">+</span> <span class="nb">len</span><span class="p">(</span><span class="n">new_dois</span><span class="p">))</span>
+            <span class="n">existing_data</span><span class="p">[</span><span class="s2">&quot;citation_average&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">new_average</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Updated citation average to: </span><span class="si">{</span><span class="n">new_average</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+            <span class="c1"># Update numeric counts</span>
+            <span class="n">existing_data</span><span class="p">[</span><span class="s2">&quot;faculty_count&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">existing_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+                <span class="s2">&quot;faculty_count&quot;</span><span class="p">,</span> <span class="mi">0</span>
+            <span class="p">)</span> <span class="o">+</span> <span class="n">new_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;faculty_count&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+            <span class="n">existing_data</span><span class="p">[</span><span class="s2">&quot;department_count&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">existing_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+                <span class="s2">&quot;department_count&quot;</span><span class="p">,</span> <span class="mi">0</span>
+            <span class="p">)</span> <span class="o">+</span> <span class="n">new_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;department_count&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+            <span class="n">existing_data</span><span class="p">[</span><span class="s2">&quot;article_count&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">existing_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+                <span class="s2">&quot;article_count&quot;</span><span class="p">,</span> <span class="mi">0</span>
+            <span class="p">)</span> <span class="o">+</span> <span class="n">new_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;article_count&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+            <span class="n">existing_data</span><span class="p">[</span><span class="s2">&quot;tc_count&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">existing_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;tc_count&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="n">new_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+                <span class="s2">&quot;tc_count&quot;</span><span class="p">,</span> <span class="mi">0</span>
+            <span class="p">)</span>
+
+            <span class="c1"># Update lists using set operations with None protection</span>
+            <span class="n">existing_data</span><span class="p">[</span><span class="s2">&quot;doi_list&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">existing_dois</span><span class="p">)</span><span class="o">.</span><span class="n">union</span><span class="p">(</span><span class="n">new_dois</span><span class="p">))</span>
+
+            <span class="n">existing_data</span><span class="p">[</span><span class="s2">&quot;themes&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span>
+                <span class="nb">set</span><span class="p">(</span><span class="n">existing_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;themes&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="ow">or</span> <span class="p">[])</span><span class="o">.</span><span class="n">union</span><span class="p">(</span>
+                    <span class="n">new_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;themes&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="ow">or</span> <span class="p">[]</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+
+            <span class="n">existing_data</span><span class="p">[</span><span class="s2">&quot;faculty&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span>
+                <span class="nb">set</span><span class="p">(</span><span class="n">existing_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;faculty&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="ow">or</span> <span class="p">[])</span><span class="o">.</span><span class="n">union</span><span class="p">(</span>
+                    <span class="n">new_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;faculty&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="ow">or</span> <span class="p">[]</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+
+            <span class="n">existing_data</span><span class="p">[</span><span class="s2">&quot;departments&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span>
+                <span class="nb">set</span><span class="p">(</span><span class="n">existing_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;departments&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="ow">or</span> <span class="p">[])</span><span class="o">.</span><span class="n">union</span><span class="p">(</span>
+                    <span class="n">new_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;departments&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="ow">or</span> <span class="p">[]</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+
+            <span class="n">existing_data</span><span class="p">[</span><span class="s2">&quot;titles&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span>
+                <span class="nb">set</span><span class="p">(</span><span class="n">existing_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;titles&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="ow">or</span> <span class="p">[])</span><span class="o">.</span><span class="n">union</span><span class="p">(</span>
+                    <span class="n">new_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;titles&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="ow">or</span> <span class="p">[]</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span>
+                <span class="sa">f</span><span class="s2">&quot;Updated counts - Faculty: </span><span class="si">{</span><span class="n">existing_data</span><span class="p">[</span><span class="s1">&#39;faculty_count&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">, &quot;</span>
+                <span class="sa">f</span><span class="s2">&quot;Departments: </span><span class="si">{</span><span class="n">existing_data</span><span class="p">[</span><span class="s1">&#39;department_count&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">, &quot;</span>
+                <span class="sa">f</span><span class="s2">&quot;Articles: </span><span class="si">{</span><span class="n">existing_data</span><span class="p">[</span><span class="s1">&#39;article_count&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">, &quot;</span>
+                <span class="sa">f</span><span class="s2">&quot;TC: </span><span class="si">{</span><span class="n">existing_data</span><span class="p">[</span><span class="s1">&#39;tc_count&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span>
+            <span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                <span class="sa">f</span><span class="s2">&quot;DOI intersection found for category </span><span class="si">{</span><span class="n">existing_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_id&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2"> - skipping update&quot;</span>
+            <span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">existing_data</span></div>
+
+
+<div class="viewcode-block" id="DatabaseWrapper.insert_articles">
+<a class="viewcode-back" href="../../../academic_metrics.DB.html#academic_metrics.DB.DatabaseSetup.DatabaseWrapper.insert_articles">[docs]</a>
+    <span class="k">def</span> <span class="nf">insert_articles</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">article_data</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Insert multiple articles into the collection.</span>
+
+<span class="sd">        If an article already exists, merge the new data with the existing data.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            article_data (List[Dict[str, Any]]): List of article data.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">article_data</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">article_collection</span><span class="o">.</span><span class="n">insert_one</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Inserted new articles: </span><span class="si">{</span><span class="n">item</span><span class="p">[</span><span class="s1">&#39;_id&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Duplicate content not adding </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="DatabaseWrapper.insert_faculty">
+<a class="viewcode-back" href="../../../academic_metrics.DB.html#academic_metrics.DB.DatabaseSetup.DatabaseWrapper.insert_faculty">[docs]</a>
+    <span class="k">def</span> <span class="nf">insert_faculty</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">faculty_data</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Insert multiple faculty entries into the collection.</span>
+
+<span class="sd">        If a faculty member already exists, update the data accordingly.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            faculty_data (List[Dict[str, Any]]): List of faculty data.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">faculty_data</span><span class="p">:</span>
+            <span class="n">existing_data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">faculty_collection</span><span class="o">.</span><span class="n">find_one</span><span class="p">({</span><span class="s2">&quot;_id&quot;</span><span class="p">:</span> <span class="n">item</span><span class="p">[</span><span class="s2">&quot;_id&quot;</span><span class="p">]})</span>
+            <span class="k">if</span> <span class="n">existing_data</span><span class="p">:</span>
+                <span class="n">new_item</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">update_faculty</span><span class="p">(</span><span class="n">existing_data</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">faculty_collection</span><span class="o">.</span><span class="n">update_one</span><span class="p">(</span>
+                    <span class="p">{</span><span class="s2">&quot;_id&quot;</span><span class="p">:</span> <span class="n">item</span><span class="p">[</span><span class="s2">&quot;_id&quot;</span><span class="p">]},</span> <span class="p">{</span><span class="s2">&quot;$set&quot;</span><span class="p">:</span> <span class="n">new_item</span><span class="p">}</span>
+                <span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Updated faculty: </span><span class="si">{</span><span class="n">item</span><span class="p">[</span><span class="s1">&#39;_id&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">faculty_collection</span><span class="o">.</span><span class="n">insert_one</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Inserted new faculty: </span><span class="si">{</span><span class="n">item</span><span class="p">[</span><span class="s1">&#39;_id&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="DatabaseWrapper.update_faculty">
+<a class="viewcode-back" href="../../../academic_metrics.DB.html#academic_metrics.DB.DatabaseSetup.DatabaseWrapper.update_faculty">[docs]</a>
+    <span class="k">def</span> <span class="nf">update_faculty</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">existing_data</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span> <span class="n">new_data</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Update existing faculty data with new data, handling None values and logging state.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            existing_data (Dict[str, Any]): Existing faculty data.</span>
+<span class="sd">            new_data (Dict[str, Any]): New faculty data.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            existing_data (Dict[str, Any]): Updated faculty data.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># Get DOI lists with None protection</span>
+        <span class="n">existing_dois</span> <span class="o">=</span> <span class="n">existing_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;dois&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="ow">or</span> <span class="p">[]</span>
+        <span class="n">new_dois</span> <span class="o">=</span> <span class="n">new_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;dois&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="ow">or</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;DOIs - Existing: </span><span class="si">{</span><span class="n">existing_dois</span><span class="si">}</span><span class="s2">, New: </span><span class="si">{</span><span class="n">new_dois</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Only update if there&#39;s no intersection between DOI lists</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">set</span><span class="p">(</span><span class="n">existing_dois</span><span class="p">)</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">new_dois</span><span class="p">)):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                <span class="sa">f</span><span class="s2">&quot;No DOI intersection found for faculty </span><span class="si">{</span><span class="n">existing_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_id&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2"> - updating data&quot;</span>
+            <span class="p">)</span>
+
+            <span class="c1"># Update numeric values</span>
+            <span class="n">existing_data</span><span class="p">[</span><span class="s2">&quot;total_citations&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">existing_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+                <span class="s2">&quot;total_citations&quot;</span><span class="p">,</span> <span class="mi">0</span>
+            <span class="p">)</span> <span class="o">+</span> <span class="n">new_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;total_citations&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+            <span class="c1"># Update lists using set operations with None protection</span>
+            <span class="n">existing_data</span><span class="p">[</span><span class="s2">&quot;dois&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">existing_dois</span><span class="p">)</span><span class="o">.</span><span class="n">union</span><span class="p">(</span><span class="n">new_dois</span><span class="p">))</span>
+
+            <span class="c1"># Handle department affiliations as list</span>
+            <span class="n">existing_affiliations</span> <span class="o">=</span> <span class="p">(</span>
+                <span class="n">existing_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;department_affiliations&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="ow">or</span> <span class="p">[]</span>
+            <span class="p">)</span>
+            <span class="n">new_affiliations</span> <span class="o">=</span> <span class="n">new_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;department_affiliations&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="ow">or</span> <span class="p">[]</span>
+            <span class="n">existing_data</span><span class="p">[</span><span class="s2">&quot;department_affiliations&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span>
+                <span class="nb">set</span><span class="p">(</span><span class="n">existing_affiliations</span><span class="p">)</span><span class="o">.</span><span class="n">union</span><span class="p">(</span><span class="n">new_affiliations</span><span class="p">)</span>
+            <span class="p">)</span>
+
+            <span class="c1"># Update all set-based fields with None protection</span>
+            <span class="n">existing_data</span><span class="p">[</span><span class="s2">&quot;titles&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span>
+                <span class="nb">set</span><span class="p">(</span><span class="n">existing_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;titles&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="ow">or</span> <span class="p">[])</span><span class="o">.</span><span class="n">union</span><span class="p">(</span>
+                    <span class="n">new_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;titles&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="ow">or</span> <span class="p">[]</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+
+            <span class="n">existing_data</span><span class="p">[</span><span class="s2">&quot;categories&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span>
+                <span class="nb">set</span><span class="p">(</span><span class="n">existing_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;categories&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="ow">or</span> <span class="p">[])</span><span class="o">.</span><span class="n">union</span><span class="p">(</span>
+                    <span class="n">new_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;categories&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="ow">or</span> <span class="p">[]</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+
+            <span class="n">existing_data</span><span class="p">[</span><span class="s2">&quot;top_level_categories&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span>
+                <span class="nb">set</span><span class="p">(</span><span class="n">existing_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;top_level_categories&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="ow">or</span> <span class="p">[])</span><span class="o">.</span><span class="n">union</span><span class="p">(</span>
+                    <span class="n">new_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;top_level_categories&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="ow">or</span> <span class="p">[]</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+
+            <span class="n">existing_data</span><span class="p">[</span><span class="s2">&quot;mid_level_categories&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span>
+                <span class="nb">set</span><span class="p">(</span><span class="n">existing_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;mid_level_categories&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="ow">or</span> <span class="p">[])</span><span class="o">.</span><span class="n">union</span><span class="p">(</span>
+                    <span class="n">new_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;mid_level_categories&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="ow">or</span> <span class="p">[]</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+
+            <span class="n">existing_data</span><span class="p">[</span><span class="s2">&quot;low_level_categories&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span>
+                <span class="nb">set</span><span class="p">(</span><span class="n">existing_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;low_level_categories&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="ow">or</span> <span class="p">[])</span><span class="o">.</span><span class="n">union</span><span class="p">(</span>
+                    <span class="n">new_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;low_level_categories&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="ow">or</span> <span class="p">[]</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+
+            <span class="n">existing_data</span><span class="p">[</span><span class="s2">&quot;category_urls&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span>
+                <span class="nb">set</span><span class="p">(</span><span class="n">existing_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;category_urls&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="ow">or</span> <span class="p">[])</span><span class="o">.</span><span class="n">union</span><span class="p">(</span>
+                    <span class="n">new_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;category_urls&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="ow">or</span> <span class="p">[]</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+
+            <span class="n">existing_data</span><span class="p">[</span><span class="s2">&quot;top_category_urls&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span>
+                <span class="nb">set</span><span class="p">(</span><span class="n">existing_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;top_category_urls&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="ow">or</span> <span class="p">[])</span><span class="o">.</span><span class="n">union</span><span class="p">(</span>
+                    <span class="n">new_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;top_category_urls&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="ow">or</span> <span class="p">[]</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+
+            <span class="n">existing_data</span><span class="p">[</span><span class="s2">&quot;mid_category_urls&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span>
+                <span class="nb">set</span><span class="p">(</span><span class="n">existing_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;mid_category_urls&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="ow">or</span> <span class="p">[])</span><span class="o">.</span><span class="n">union</span><span class="p">(</span>
+                    <span class="n">new_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;mid_category_urls&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="ow">or</span> <span class="p">[]</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+
+            <span class="n">existing_data</span><span class="p">[</span><span class="s2">&quot;low_category_urls&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span>
+                <span class="nb">set</span><span class="p">(</span><span class="n">existing_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;low_category_urls&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="ow">or</span> <span class="p">[])</span><span class="o">.</span><span class="n">union</span><span class="p">(</span>
+                    <span class="n">new_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;low_category_urls&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="ow">or</span> <span class="p">[]</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+
+            <span class="n">existing_data</span><span class="p">[</span><span class="s2">&quot;themes&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span>
+                <span class="nb">set</span><span class="p">(</span><span class="n">existing_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;themes&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="ow">or</span> <span class="p">[])</span><span class="o">.</span><span class="n">union</span><span class="p">(</span>
+                    <span class="n">new_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;themes&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="ow">or</span> <span class="p">[]</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+
+            <span class="n">existing_data</span><span class="p">[</span><span class="s2">&quot;journals&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span>
+                <span class="nb">set</span><span class="p">(</span><span class="n">existing_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;journals&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="ow">or</span> <span class="p">[])</span><span class="o">.</span><span class="n">union</span><span class="p">(</span>
+                    <span class="n">new_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;journals&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="ow">or</span> <span class="p">[]</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span>
+                <span class="sa">f</span><span class="s2">&quot;Updated counts - Citations: </span><span class="si">{</span><span class="n">existing_data</span><span class="p">[</span><span class="s1">&#39;total_citations&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">, &quot;</span>
+                <span class="sa">f</span><span class="s2">&quot;DOIs: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">existing_data</span><span class="p">[</span><span class="s1">&#39;dois&#39;</span><span class="p">])</span><span class="si">}</span><span class="s2">&quot;</span>
+            <span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                <span class="sa">f</span><span class="s2">&quot;DOI intersection found for faculty </span><span class="si">{</span><span class="n">existing_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_id&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2"> - skipping update&quot;</span>
+            <span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">existing_data</span></div>
+
+
+<div class="viewcode-block" id="DatabaseWrapper.process">
+<a class="viewcode-back" href="../../../academic_metrics.DB.html#academic_metrics.DB.DatabaseSetup.DatabaseWrapper.process">[docs]</a>
+    <span class="k">def</span> <span class="nf">process</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]],</span> <span class="n">collection</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Process data and insert it into the appropriate collection.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            data (List[Dict[str, Any]]): Data to be inserted.</span>
+<span class="sd">            collection (str): Name of the collection to insert the data into.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">collection</span> <span class="o">==</span> <span class="s2">&quot;article_data&quot;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">insert_articles</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">collection</span> <span class="o">==</span> <span class="s2">&quot;category_data&quot;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">insert_categories</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">collection</span> <span class="o">==</span> <span class="s2">&quot;faculty_data&quot;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">insert_faculty</span><span class="p">(</span><span class="n">data</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="DatabaseWrapper.run_all_process">
+<a class="viewcode-back" href="../../../academic_metrics.DB.html#academic_metrics.DB.DatabaseSetup.DatabaseWrapper.run_all_process">[docs]</a>
+    <span class="k">def</span> <span class="nf">run_all_process</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">category_data</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]],</span>
+        <span class="n">article_data</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]],</span>
+        <span class="n">faculty_data</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]],</span>
+    <span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Process all data and insert it into the appropriate collections.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            category_data (List[Dict[str, Any]]): Category data.</span>
+<span class="sd">            article_data (List[Dict[str, Any]]): Article data.</span>
+<span class="sd">            faculty_data (List[Dict[str, Any]]): Faculty data.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">process</span><span class="p">(</span><span class="n">category_data</span><span class="p">,</span> <span class="s2">&quot;category_data&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">process</span><span class="p">(</span><span class="n">article_data</span><span class="p">,</span> <span class="s2">&quot;article_data&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">process</span><span class="p">(</span><span class="n">faculty_data</span><span class="p">,</span> <span class="s2">&quot;faculty_data&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="DatabaseWrapper.clear_collection">
+<a class="viewcode-back" href="../../../academic_metrics.DB.html#academic_metrics.DB.DatabaseSetup.DatabaseWrapper.clear_collection">[docs]</a>
+    <span class="k">def</span> <span class="nf">clear_collection</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Clear the entire collection.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">category_collection</span><span class="o">.</span><span class="n">delete_many</span><span class="p">({})</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">article_collection</span><span class="o">.</span><span class="n">delete_many</span><span class="p">({})</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">faculty_collection</span><span class="o">.</span><span class="n">delete_many</span><span class="p">({})</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Cleared the entire collection&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="DatabaseWrapper.close_connection">
+<a class="viewcode-back" href="../../../academic_metrics.DB.html#academic_metrics.DB.DatabaseSetup.DatabaseWrapper.close_connection">[docs]</a>
+    <span class="k">def</span> <span class="nf">close_connection</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Close the connection to the MongoDB server.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Connection closed&quot;</span><span class="p">)</span></div>
+</div>
+
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="c1"># Load environment variables</span>
+    <span class="n">load_dotenv</span><span class="p">()</span>
+    <span class="n">mongo_url</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&quot;MONGODB_URL&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Handle article data</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span>
+        <span class="s2">&quot;../../data/core/output_files/test_processed_article_stats_obj_data.json&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span>
+    <span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">article_data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+
+    <span class="c1"># Handle category data</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span>
+        <span class="s2">&quot;../../data/core/output_files/test_processed_category_data.json&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span>
+    <span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">category_data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+
+    <span class="c1"># Handle faculty data</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span>
+        <span class="s2">&quot;../../data/core/output_files/test_processed_global_faculty_stats_data.json&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;r&quot;</span><span class="p">,</span>
+    <span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">faculty_data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+
+    <span class="n">database</span> <span class="o">=</span> <span class="n">DatabaseWrapper</span><span class="p">(</span><span class="n">db_name</span><span class="o">=</span><span class="s2">&quot;Site_Data&quot;</span><span class="p">,</span> <span class="n">mongo_url</span><span class="o">=</span><span class="n">mongo_url</span><span class="p">)</span>
+    <span class="n">database</span><span class="o">.</span><span class="n">clear_collection</span><span class="p">()</span>
+
+    <span class="n">database</span><span class="o">.</span><span class="n">process</span><span class="p">(</span><span class="n">article_data</span><span class="p">,</span> <span class="s2">&quot;article_data&quot;</span><span class="p">)</span>
+    <span class="n">database</span><span class="o">.</span><span class="n">process</span><span class="p">(</span><span class="n">category_data</span><span class="p">,</span> <span class="s2">&quot;category_data&quot;</span><span class="p">)</span>
+    <span class="n">database</span><span class="o">.</span><span class="n">process</span><span class="p">(</span><span class="n">faculty_data</span><span class="p">,</span> <span class="s2">&quot;faculty_data&quot;</span><span class="p">)</span>
+</pre></div>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="clearer"></div>
+    </div>
+    <div class="button_nav_wrapper">
+        <div class="button_nav">
+            <div class="left">
+                
+            </div>
+
+            <div class="right">
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Spencer Presley, Cole Barbes.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    </div>
+
+<p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>
+  </body>
+</html>

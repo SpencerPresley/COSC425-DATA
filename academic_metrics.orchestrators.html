@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>academic_metrics.orchestrators package &#8212; Academic Metrics 0.1.0-beta documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+    <link rel="stylesheet" type="text/css" href="_static/basic_mod.css?v=9b2032db" />
+    <script src="_static/documentation_options.js?v=c903bf51"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <script src="_static/js/petite-vue.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head><body data-dark_mode_code_blocks="true">
+
+<div id="top_nav">
+    
+
+    <nav>
+        
+            
+        
+
+        <p id="toggle_sidebar">
+            <a href="#" title="Toggle sidebar">|||</a>
+        </p>
+        <h1><a href="index.html" title="Go to homepage">Academic Metrics 0.1.0-beta documentation</a></h1>
+
+        <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
+    <template v-if="mode == 'light'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_light"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M67.48,18.073c1.913,-1.912 1.913,-5.018 0,-6.931c-1.912,-1.912 -5.018,-1.912 -6.931,0l-6.798,6.799c-1.912,1.912 -1.912,5.018 0,6.931c1.913,1.912 5.018,1.912 6.931,-0l6.798,-6.799Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.728,61.108c1.912,-1.913 1.912,-5.018 -0,-6.931c-1.913,-1.913 -5.019,-1.913 -6.931,-0l-6.799,6.798c-1.912,1.913 -1.912,5.019 0,6.931c1.913,1.913 5.019,1.913 6.931,0l6.799,-6.798Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.682,54.177c-1.913,-1.913 -5.018,-1.913 -6.931,-0c-1.912,1.913 -1.912,5.018 0,6.931l6.798,6.798c1.913,1.913 5.019,1.913 6.931,0c1.913,-1.912 1.913,-5.018 0,-6.931l-6.798,-6.798Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M4.901,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,-0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M18.929,11.142c-1.912,-1.912 -5.018,-1.912 -6.931,0c-1.912,1.913 -1.912,5.019 0,6.931l6.799,6.799c1.912,1.912 5.018,1.912 6.931,-0c1.912,-1.913 1.912,-5.019 -0,-6.931l-6.799,-6.799Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.108,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c-0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c-0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'dark'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_dark"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.901,2.196 -4.901,4.901c0,2.705 2.197,4.901 4.901,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.662,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.989,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.732,61.103c1.91,-1.91 1.91,-5.011 0,-6.921l-0.009,-0.01c-1.91,-1.91 -5.012,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.909,1.91 5.011,1.91 6.92,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.672,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.52,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l-0,-0.01c-0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.901,2.196 -4.901,4.901c0,2.704 2.197,4.9 4.901,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.73,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 -0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.098,34.623c-2.699,0 -4.891,2.192 -4.891,4.892l-0,0.019c-0,2.699 2.192,4.891 4.891,4.891c2.7,0 4.892,-2.192 4.892,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.892,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'darkest'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_darkest"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><path d="M39.315,23.791c8.684,-0 15.734,7.05 15.734,15.733c0,8.684 -7.05,15.734 -15.734,15.734c-8.683,0 -15.733,-7.05 -15.733,-15.734c-0,-8.683 7.05,-15.733 15.733,-15.733Zm0,4.737c6.069,0 10.997,4.927 10.997,10.996c-0,6.069 -4.928,10.996 -10.997,10.996c-6.068,0 -10.996,-4.927 -10.996,-10.996c0,-6.069 4.928,-10.996 10.996,-10.996Z" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.216,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.9,2.196 -4.9,4.901c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.666,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.99,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.737,61.103c1.909,-1.91 1.909,-5.011 -0,-6.921l-0.01,-0.01c-1.91,-1.91 -5.011,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.91,1.91 5.011,1.91 6.921,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.676,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.524,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l0,-0.01c0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.216,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901c-0,2.704 2.196,4.9 4.9,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.734,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.103,34.623c-2.7,0 -4.892,2.192 -4.892,4.892l-0,0.019c-0,2.699 2.192,4.891 4.892,4.891c2.699,0 4.891,-2.192 4.891,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.891,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+</a>
+
+<script>
+(function() {
+    const LOCAL_STORAGE_KEY = 'piccoloThemeMode'
+
+    var initialMode = localStorage.getItem(LOCAL_STORAGE_KEY)
+
+    if (initialMode) {
+        // Make sure the value in local storage is valid
+        if (['light', 'dark', 'darkest'].indexOf(initialMode) == -1) {
+            initialMode = 'light'
+            localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+        }
+    } else {
+        // Check if the client prefers dark mode
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            initialMode = 'dark'
+        } else {
+            initialMode = 'light'
+        }
+        localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+    }
+
+    document.documentElement.dataset.mode = initialMode
+
+    PetiteVue.createApp({
+        'mode': initialMode,
+        handleClick() {
+            let currentMode = this.mode
+
+            if (currentMode == 'light') {
+                this.mode = 'dark'
+            } else if (currentMode == 'dark') {
+                this.mode = 'darkest'
+            } else if (currentMode == 'darkest') {
+                this.mode = 'light'
+            }
+
+            document.documentElement.dataset.mode = this.mode
+            localStorage.setItem(LOCAL_STORAGE_KEY, this.mode)
+
+            console.log(this.mode)
+        }
+    }).mount('#mode_toggle')
+})()
+</script>
+            <p class="mobile_search_link">
+                <a href="search.html" title="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 64" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path d="M14.873 40.009c-2.315-3.943-3.642-8.532-3.642-13.429C11.231 11.91 23.141 0 37.811 0s26.58 11.91 26.58 26.58-11.91 26.58-26.58 26.58a26.44 26.44 0 0 1-14.277-4.161L9.739 62.794a3.12 3.12 0 0 1-4.413 0L.913 58.382c-1.217-1.218-1.217-3.196 0-4.413l13.96-13.96zM37.811 8.054c10.225 0 18.526 8.301 18.526 18.526s-8.301 18.526-18.526 18.526-18.526-8.301-18.526-18.526S27.586 8.054 37.811 8.054z" fill="#fff" />
+                    </svg>
+                </a>
+            </p>
+        
+
+        <div class="searchbox_wrapper">
+            
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="abstract_classifier.html">Abstract Classifier Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="category_processor.html">Category Processor Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faculty_set_postprocessor.html">Faculty Set Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config.html">Global Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chain_builder.html">Chain Builder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ai_prompts.html">ai_prompts package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection.html">data_collection package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dataclass_models.html">dataclass_models package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DB.html">DB package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enums.html">enums package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="factories.html">factories package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="orchestrators.html">orchestrators package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="other.html">other package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="runners.html">runners package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="strategies.html">strategies package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="utils.html">utils package</a></li>
+</ul>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="academic-metrics-orchestrators-package">
+<h1>academic_metrics.orchestrators package<a class="headerlink" href="#academic-metrics-orchestrators-package" title="Link to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
+</section>
+<section id="module-academic_metrics.orchestrators.category_data_orchestrator">
+<span id="academic-metrics-orchestrators-category-data-orchestrator-module"></span><h2>academic_metrics.orchestrators.category_data_orchestrator module<a class="headerlink" href="#module-academic_metrics.orchestrators.category_data_orchestrator" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">academic_metrics.orchestrators.category_data_orchestrator.</span></span><span class="sig-name descname"><span class="pre">CategoryDataOrchestrator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">category_processor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">faculty_postprocessor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strategy_factory</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataclass_factory</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">warning_manager</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">utilities</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extend</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/orchestrators/category_data_orchestrator.html#CategoryDataOrchestrator"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Orchestrates the processing and organization of academic publication data.</p>
+<p>This class manages the workflow of processing classified publication data through various stages:
+1. Processing raw data through CategoryProcessor
+2. Managing faculty/department relationships
+3. Generating statistical outputs
+4. Serializing results to JSON files</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.data">
+<span class="sig-name descname"><span class="pre">data</span></span><a class="headerlink" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.data" title="Link to this definition">¶</a></dt>
+<dd><p>Raw classified publication data to process.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[Dict]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.output_dir_path">
+<span class="sig-name descname"><span class="pre">output_dir_path</span></span><a class="headerlink" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.output_dir_path" title="Link to this definition">¶</a></dt>
+<dd><p>Directory path for output files.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.extend">
+<span class="sig-name descname"><span class="pre">extend</span></span><a class="headerlink" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.extend" title="Link to this definition">¶</a></dt>
+<dd><p>Whether to extend existing data files.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.strategy_factory">
+<span class="sig-name descname"><span class="pre">strategy_factory</span></span><a class="headerlink" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.strategy_factory" title="Link to this definition">¶</a></dt>
+<dd><p>Factory for creating processing strategies.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="academic_metrics.factories.html#academic_metrics.factories.strategy_factory.StrategyFactory" title="academic_metrics.factories.strategy_factory.StrategyFactory">StrategyFactory</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.warning_manager">
+<span class="sig-name descname"><span class="pre">warning_manager</span></span><a class="headerlink" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.warning_manager" title="Link to this definition">¶</a></dt>
+<dd><p>System for handling and logging warnings.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="academic_metrics.utils.html#academic_metrics.utils.warning_manager.WarningManager" title="academic_metrics.utils.warning_manager.WarningManager">WarningManager</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.dataclass_factory">
+<span class="sig-name descname"><span class="pre">dataclass_factory</span></span><a class="headerlink" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.dataclass_factory" title="Link to this definition">¶</a></dt>
+<dd><p>Factory for creating data model instances.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="academic_metrics.factories.html#academic_metrics.factories.dataclass_factory.DataClassFactory" title="academic_metrics.factories.dataclass_factory.DataClassFactory">DataClassFactory</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.utils">
+<span class="sig-name descname"><span class="pre">utils</span></span><a class="headerlink" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.utils" title="Link to this definition">¶</a></dt>
+<dd><p>General utility functions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="academic_metrics.utils.html#academic_metrics.utils.utilities.Utilities" title="academic_metrics.utils.utilities.Utilities">Utilities</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.category_processor">
+<span class="sig-name descname"><span class="pre">category_processor</span></span><a class="headerlink" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.category_processor" title="Link to this definition">¶</a></dt>
+<dd><p>Processor for category-related operations.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="category_processor.html#academic_metrics.core.category_processor.CategoryProcessor" title="academic_metrics.core.category_processor.CategoryProcessor">CategoryProcessor</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.faculty_postprocessor">
+<span class="sig-name descname"><span class="pre">faculty_postprocessor</span></span><a class="headerlink" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.faculty_postprocessor" title="Link to this definition">¶</a></dt>
+<dd><p>Processor for faculty data refinement.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="academic_metrics.core.html#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor" title="academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor">FacultyPostprocessor</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.final_category_data">
+<span class="sig-name descname"><span class="pre">final_category_data</span></span><a class="headerlink" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.final_category_data" title="Link to this definition">¶</a></dt>
+<dd><p>Processed category statistics.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[Dict]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.final_faculty_data">
+<span class="sig-name descname"><span class="pre">final_faculty_data</span></span><a class="headerlink" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.final_faculty_data" title="Link to this definition">¶</a></dt>
+<dd><p>Processed faculty statistics.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[Dict]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.final_article_stats_data">
+<span class="sig-name descname"><span class="pre">final_article_stats_data</span></span><a class="headerlink" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.final_article_stats_data" title="Link to this definition">¶</a></dt>
+<dd><p>Processed article statistics.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[Dict]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.final_article_data">
+<span class="sig-name descname"><span class="pre">final_article_data</span></span><a class="headerlink" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.final_article_data" title="Link to this definition">¶</a></dt>
+<dd><p>Processed article details.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[Dict]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.final_global_faculty_data">
+<span class="sig-name descname"><span class="pre">final_global_faculty_data</span></span><a class="headerlink" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.final_global_faculty_data" title="Link to this definition">¶</a></dt>
+<dd><p>Processed global faculty statistics.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[Dict]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.logger">
+<span class="sig-name descname"><span class="pre">logger</span></span><a class="headerlink" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.logger" title="Link to this definition">¶</a></dt>
+<dd><p>Logger instance for this class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>logging.Logger</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.log_file_path">
+<span class="sig-name descname"><span class="pre">log_file_path</span></span><a class="headerlink" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.log_file_path" title="Link to this definition">¶</a></dt>
+<dd><p>Path to the log file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">Public</span> <span class="pre">Methods</span></span></dt>
+<dd><p>run_orchestrator: Executes the main data processing workflow.
+get_final_category_data: Returns processed category data.
+get_final_faculty_data: Returns processed faculty data.
+get_final_global_faculty_data: Returns processed global faculty data.
+get_final_article_stats_data: Returns processed article statistics.
+get_final_article_data: Returns processed article details.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">Private</span> <span class="pre">Methods</span></span></dt>
+<dd><p>_save_all_results: Saves all processed data to files.
+_refine_faculty_sets: Refines faculty sets by removing duplicates.
+_refine_faculty_stats: Refines faculty statistics based on name variations.
+_clean_category_data: Prepares category data by removing unwanted keys.
+_serialize_and_save_category_data: Serializes and saves category data.
+_serialize_and_save_faculty_stats: Serializes and saves faculty statistics.
+_serialize_and_save_global_faculty_stats: Serializes and saves global faculty statistics.
+_serialize_and_save_category_article_stats: Serializes and saves article statistics.
+_serialize_and_save_articles: Serializes and saves article details.
+_flatten_to_list: Flattens nested data structures into a list.
+_write_to_json: Writes data to JSON file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.run_orchestrator">
+<span class="sig-name descname"><span class="pre">run_orchestrator</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/orchestrators/category_data_orchestrator.html#CategoryDataOrchestrator.run_orchestrator"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.run_orchestrator" title="Link to this definition">¶</a></dt>
+<dd><p>Execute the main data processing workflow.</p>
+<p>Processes the raw publication data through several stages:
+1. Processes data through CategoryProcessor
+2. Gets category data for faculty set refinement
+3. Refines faculty sets to remove duplicates
+4. Refines faculty statistics with name variations
+5. Saves all processed results to files</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ValueError</strong> – If category data processing fails.</p></li>
+<li><p><strong>IOError</strong> – If saving results to files fails.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.get_final_category_data">
+<span class="sig-name descname"><span class="pre">get_final_category_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/orchestrators/category_data_orchestrator.html#CategoryDataOrchestrator.get_final_category_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.get_final_category_data" title="Link to this definition">¶</a></dt>
+<dd><p>Retrieve the processed category data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List of processed category data dictionaries.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>List[Dict]</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ValueError</strong> – If final category data hasn’t been generated yet.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.get_final_faculty_data">
+<span class="sig-name descname"><span class="pre">get_final_faculty_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/orchestrators/category_data_orchestrator.html#CategoryDataOrchestrator.get_final_faculty_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.get_final_faculty_data" title="Link to this definition">¶</a></dt>
+<dd><p>Retrieve the processed faculty data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List of processed faculty data dictionaries.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>List[Dict]</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ValueError</strong> – If final faculty data hasn’t been generated yet.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.get_final_global_faculty_data">
+<span class="sig-name descname"><span class="pre">get_final_global_faculty_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/orchestrators/category_data_orchestrator.html#CategoryDataOrchestrator.get_final_global_faculty_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.get_final_global_faculty_data" title="Link to this definition">¶</a></dt>
+<dd><p>Retrieve the processed global faculty data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List of processed global faculty data dictionaries.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>List[Dict]</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ValueError</strong> – If final global faculty data hasn’t been generated yet.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.get_final_article_stats_data">
+<span class="sig-name descname"><span class="pre">get_final_article_stats_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/orchestrators/category_data_orchestrator.html#CategoryDataOrchestrator.get_final_article_stats_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.get_final_article_stats_data" title="Link to this definition">¶</a></dt>
+<dd><p>Retrieve the processed article statistics data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List of processed article statistics dictionaries.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>List[Dict]</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ValueError</strong> – If final article statistics data hasn’t been generated yet.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.get_final_article_data">
+<span class="sig-name descname"><span class="pre">get_final_article_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/orchestrators/category_data_orchestrator.html#CategoryDataOrchestrator.get_final_article_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.get_final_article_data" title="Link to this definition">¶</a></dt>
+<dd><p>Retrieve the processed article data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List of processed article data dictionaries.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>List[Dict]</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ValueError</strong> – If final article data hasn’t been generated yet.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._save_all_results">
+<span class="sig-name descname"><span class="pre">_save_all_results</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/orchestrators/category_data_orchestrator.html#CategoryDataOrchestrator._save_all_results"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._save_all_results" title="Link to this definition">¶</a></dt>
+<dd><p>Save all processed data to their respective JSON files.</p>
+<p>Serializes and saves:
+1. Category data
+2. Faculty statistics
+3. Article statistics
+4. Article details
+5. Global faculty statistics</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>IOError</strong> – If any file operations fail.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._refine_faculty_sets">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">_refine_faculty_sets</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faculty_postprocessor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">category_dict</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/orchestrators/category_data_orchestrator.html#CategoryDataOrchestrator._refine_faculty_sets"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._refine_faculty_sets" title="Link to this definition">¶</a></dt>
+<dd><p>Refines faculty sets by removing near duplicates and updating counts.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>faculty_postprocessor</strong> (<a class="reference internal" href="academic_metrics.core.html#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor" title="academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor"><em>FacultyPostprocessor</em></a>) – Postprocessor for faculty data.</p></li>
+<li><p><strong>faculty_department_manager</strong> (<em>FacultyDepartmentManager</em>) – Manager for faculty and department data.</p></li>
+<li><p><strong>category_dict</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><a class="reference internal" href="academic_metrics.dataclass_models.html#academic_metrics.dataclass_models.concrete_dataclasses.CategoryInfo" title="academic_metrics.dataclass_models.concrete_dataclasses.CategoryInfo"><em>CategoryInfo</em></a><em>]</em>) – Dictionary of categories and their information.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Design:</dt><dd><p>Uses FacultyPostprocessor to remove near-duplicate faculty entries.
+Updates faculty and department counts after refinement.</p>
+</dd>
+<dt>Summary:</dt><dd><p>Improves the quality of faculty data by removing duplicates and updating related counts.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._refine_faculty_stats">
+<span class="sig-name descname"><span class="pre">_refine_faculty_stats</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">faculty_stats</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name_variations</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">category_dict</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/orchestrators/category_data_orchestrator.html#CategoryDataOrchestrator._refine_faculty_stats"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._refine_faculty_stats" title="Link to this definition">¶</a></dt>
+<dd><p>Refines faculty statistics based on name variations.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>faculty_stats</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><a class="reference internal" href="academic_metrics.dataclass_models.html#academic_metrics.dataclass_models.concrete_dataclasses.FacultyStats" title="academic_metrics.dataclass_models.concrete_dataclasses.FacultyStats"><em>FacultyStats</em></a><em>]</em>) – Dictionary of faculty statistics.</p></li>
+<li><p><strong>name_variations</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><a class="reference internal" href="academic_metrics.core.html#academic_metrics.core.faculty_set_postprocessor.NameVariation" title="academic_metrics.core.faculty_set_postprocessor.NameVariation"><em>NameVariation</em></a><em>]</em>) – Dictionary of name variations.</p></li>
+<li><p><strong>category_dict</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><a class="reference internal" href="academic_metrics.dataclass_models.html#academic_metrics.dataclass_models.concrete_dataclasses.CategoryInfo" title="academic_metrics.dataclass_models.concrete_dataclasses.CategoryInfo"><em>CategoryInfo</em></a><em>]</em>) – Dictionary of categories and their information.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Design:</dt><dd><p>Iterates through categories and faculty members.
+Applies refinement to faculty statistics based on name variations.</p>
+</dd>
+<dt>Summary:</dt><dd><p>Improves the accuracy of faculty statistics by accounting for name variations.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._clean_category_data">
+<span class="sig-name descname"><span class="pre">_clean_category_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">category_data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/orchestrators/category_data_orchestrator.html#CategoryDataOrchestrator._clean_category_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._clean_category_data" title="Link to this definition">¶</a></dt>
+<dd><p>Prepare category data by removing unwanted keys.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>category_data</strong> (<em>Dict</em><em>[</em><em>str</em><em>, </em><a class="reference internal" href="academic_metrics.dataclass_models.html#academic_metrics.dataclass_models.concrete_dataclasses.CategoryInfo" title="academic_metrics.dataclass_models.concrete_dataclasses.CategoryInfo"><em>CategoryInfo</em></a><em>]</em>) – Raw category data to clean.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Cleaned category data with specified keys removed.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dict[str, Dict]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._serialize_and_save_category_data">
+<span class="sig-name descname"><span class="pre">_serialize_and_save_category_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">category_data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/orchestrators/category_data_orchestrator.html#CategoryDataOrchestrator._serialize_and_save_category_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._serialize_and_save_category_data" title="Link to this definition">¶</a></dt>
+<dd><p>Serialize and save category data to JSON file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>output_path</strong> (<em>str</em>) – Path where the JSON file will be saved.</p></li>
+<li><p><strong>category_data</strong> (<em>Dict</em><em>[</em><em>str</em><em>, </em><em>Dict</em><em>]</em>) – Category data to serialize.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>IOError</strong> – If file writing fails.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._serialize_and_save_faculty_stats">
+<span class="sig-name descname"><span class="pre">_serialize_and_save_faculty_stats</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">faculty_stats</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/orchestrators/category_data_orchestrator.html#CategoryDataOrchestrator._serialize_and_save_faculty_stats"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._serialize_and_save_faculty_stats" title="Link to this definition">¶</a></dt>
+<dd><p>Serialize and save faculty statistics to JSON file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>output_path</strong> (<em>str</em>) – Path where the JSON file will be saved.</p></li>
+<li><p><strong>faculty_stats</strong> (<em>Dict</em><em>[</em><em>str</em><em>, </em><a class="reference internal" href="academic_metrics.dataclass_models.html#academic_metrics.dataclass_models.concrete_dataclasses.FacultyStats" title="academic_metrics.dataclass_models.concrete_dataclasses.FacultyStats"><em>FacultyStats</em></a><em>]</em>) – Faculty statistics to serialize.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>IOError</strong> – If file writing fails.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._serialize_and_save_global_faculty_stats">
+<span class="sig-name descname"><span class="pre">_serialize_and_save_global_faculty_stats</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">global_faculty_stats</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/orchestrators/category_data_orchestrator.html#CategoryDataOrchestrator._serialize_and_save_global_faculty_stats"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._serialize_and_save_global_faculty_stats" title="Link to this definition">¶</a></dt>
+<dd><p>Serialize and save global faculty statistics to JSON file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>output_path</strong> (<em>str</em>) – Path where the JSON file will be saved.</p></li>
+<li><p><strong>global_faculty_stats</strong> (<em>Dict</em><em>[</em><em>str</em><em>, </em><a class="reference internal" href="academic_metrics.dataclass_models.html#academic_metrics.dataclass_models.concrete_dataclasses.FacultyStats" title="academic_metrics.dataclass_models.concrete_dataclasses.FacultyStats"><em>FacultyStats</em></a><em>]</em>) – Global faculty statistics to serialize.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>IOError</strong> – If file writing fails.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._serialize_and_save_category_article_stats">
+<span class="sig-name descname"><span class="pre">_serialize_and_save_category_article_stats</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">article_stats</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/orchestrators/category_data_orchestrator.html#CategoryDataOrchestrator._serialize_and_save_category_article_stats"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._serialize_and_save_category_article_stats" title="Link to this definition">¶</a></dt>
+<dd><p>Serialize and save article statistics to JSON file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>output_path</strong> (<em>str</em>) – Path where the JSON file will be saved.</p></li>
+<li><p><strong>article_stats</strong> (<em>Dict</em><em>[</em><em>str</em><em>, </em><a class="reference internal" href="academic_metrics.dataclass_models.html#academic_metrics.dataclass_models.concrete_dataclasses.CrossrefArticleStats" title="academic_metrics.dataclass_models.concrete_dataclasses.CrossrefArticleStats"><em>CrossrefArticleStats</em></a><em>]</em>) – Article statistics to serialize.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>IOError</strong> – If file writing fails.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._serialize_and_save_articles">
+<span class="sig-name descname"><span class="pre">_serialize_and_save_articles</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">articles</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/orchestrators/category_data_orchestrator.html#CategoryDataOrchestrator._serialize_and_save_articles"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._serialize_and_save_articles" title="Link to this definition">¶</a></dt>
+<dd><p>Serialize and save article details to JSON file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>output_path</strong> (<em>str</em>) – Path where the JSON file will be saved.</p></li>
+<li><p><strong>articles</strong> (<em>List</em><em>[</em><a class="reference internal" href="academic_metrics.dataclass_models.html#academic_metrics.dataclass_models.concrete_dataclasses.CrossrefArticleDetails" title="academic_metrics.dataclass_models.concrete_dataclasses.CrossrefArticleDetails"><em>CrossrefArticleDetails</em></a><em>]</em>) – Article details to serialize.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>IOError</strong> – If file writing fails.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._flatten_to_list">
+<span class="sig-name descname"><span class="pre">_flatten_to_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/orchestrators/category_data_orchestrator.html#CategoryDataOrchestrator._flatten_to_list"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._flatten_to_list" title="Link to this definition">¶</a></dt>
+<dd><p>Recursively flatten nested dictionaries/lists into a flat list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>data</strong> (<em>Union</em><em>[</em><em>Dict</em><em>, </em><em>List</em><em>]</em>) – Nested structure of dictionaries and lists.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Flattened list of dictionaries.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[Dict]</p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<p>Input: {“cat1”: {“article_map”: {“doi1”: {…}, “doi2”: {…}}}}
+Output: [{…}, {…}]  # List of article dictionaries</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._write_to_json">
+<span class="sig-name descname"><span class="pre">_write_to_json</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/orchestrators/category_data_orchestrator.html#CategoryDataOrchestrator._write_to_json"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._write_to_json" title="Link to this definition">¶</a></dt>
+<dd><p>Write data to JSON file, handling extend mode.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>Union</em><em>[</em><em>List</em><em>[</em><em>Dict</em><em>]</em><em>, </em><em>Dict</em><em>]</em>) – Data to write to file.</p></li>
+<li><p><strong>output_path</strong> (<em>str</em>) – Path where the JSON file will be saved.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>IOError</strong> – If file operations fail.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-academic_metrics.orchestrators.classification_orchestrator">
+<span id="academic-metrics-orchestrators-classification-orchestrator-module"></span><h2>academic_metrics.orchestrators.classification_orchestrator module<a class="headerlink" href="#module-academic_metrics.orchestrators.classification_orchestrator" title="Link to this heading">¶</a></h2>
+<dl class="py data">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.classification_orchestrator.ClassificationResultsDict">
+<span class="sig-prename descclassname"><span class="pre">academic_metrics.orchestrators.classification_orchestrator.</span></span><span class="sig-name descname"><span class="pre">ClassificationResultsDict</span></span><a class="headerlink" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationResultsDict" title="Link to this definition">¶</a></dt>
+<dd><p>Type alias for a dictionary mapping DOIs to lists of classification results.</p>
+<p>This type alias is used to represent the return type of the
+<code class="xref py py-func docutils literal notranslate"><span class="pre">AbstractClassifier.get_classification_results_by_doi()</span></code> method.</p>
+<p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]]</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.classification_orchestrator.ClassificationResultsTuple">
+<span class="sig-prename descclassname"><span class="pre">academic_metrics.orchestrators.classification_orchestrator.</span></span><span class="sig-name descname"><span class="pre">ClassificationResultsTuple</span></span><a class="headerlink" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationResultsTuple" title="Link to this definition">¶</a></dt>
+<dd><p>Type alias for a tuple containing lists of classification results.</p>
+<p>This type alias is used to represent the return type of the
+<code class="xref py py-func docutils literal notranslate"><span class="pre">AbstractClassifier.get_classification_results_by_doi()</span></code> method.</p>
+<p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>], <code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>], <code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>], <code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]]</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">academic_metrics.orchestrators.classification_orchestrator.</span></span><span class="sig-name descname"><span class="pre">ClassificationOrchestrator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">abstract_classifier_factory</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">utilities</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/orchestrators/classification_orchestrator.html#ClassificationOrchestrator"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Manages the classification process for research abstracts.</p>
+<p>This class orchestrates the process of extracting DOIs and abstracts from a list of dictionaries containing crossref data,
+classifying them using the AbstractClassifier class, and injecting the results back into the original data.
+It also tracks unclassified items for monitoring and debugging purposes.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.abstract_classifier_factory">
+<span class="sig-name descname"><span class="pre">abstract_classifier_factory</span></span><a class="headerlink" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.abstract_classifier_factory" title="Link to this definition">¶</a></dt>
+<dd><p>Factory function that creates AbstractClassifier instances.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.taxonomy">
+<span class="sig-name descname"><span class="pre">taxonomy</span></span><a class="headerlink" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.taxonomy" title="Link to this definition">¶</a></dt>
+<dd><p>Taxonomy instance containing the classification hierarchy. Not used directly, but required by the AbstractClassifier. and thus is passed in to the factory function.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.utilities">
+<span class="sig-name descname"><span class="pre">utilities</span></span><a class="headerlink" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.utilities" title="Link to this definition">¶</a></dt>
+<dd><p>Utilities instance for attribute extraction.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.ai_api_key">
+<span class="sig-name descname"><span class="pre">ai_api_key</span></span><a class="headerlink" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.ai_api_key" title="Link to this definition">¶</a></dt>
+<dd><p>API key for AI service access.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.unclassified_item_count">
+<span class="sig-name descname"><span class="pre">unclassified_item_count</span></span><a class="headerlink" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.unclassified_item_count" title="Link to this definition">¶</a></dt>
+<dd><p>Number of items that couldn’t be classified.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.unclassified_dois">
+<span class="sig-name descname"><span class="pre">unclassified_dois</span></span><a class="headerlink" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.unclassified_dois" title="Link to this definition">¶</a></dt>
+<dd><p>List of DOIs that couldn’t be classified.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.unclassified_abstracts">
+<span class="sig-name descname"><span class="pre">unclassified_abstracts</span></span><a class="headerlink" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.unclassified_abstracts" title="Link to this definition">¶</a></dt>
+<dd><p>List of abstracts that couldn’t be classified.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.unclassified_doi_abstract_dict">
+<span class="sig-name descname"><span class="pre">unclassified_doi_abstract_dict</span></span><a class="headerlink" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.unclassified_doi_abstract_dict" title="Link to this definition">¶</a></dt>
+<dd><p>Dictionary mapping unclassified DOIs to abstracts.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.unclassified_items">
+<span class="sig-name descname"><span class="pre">unclassified_items</span></span><a class="headerlink" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.unclassified_items" title="Link to this definition">¶</a></dt>
+<dd><p>List of complete metadata items that couldn’t be classified.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.unclassified_details">
+<span class="sig-name descname"><span class="pre">unclassified_details</span></span><a class="headerlink" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.unclassified_details" title="Link to this definition">¶</a></dt>
+<dd><p>Dictionary containing organized unclassified data:
+- dois: List of unclassified DOIs
+- abstracts: List of unclassified abstracts
+- items: List of unclassified metadata items</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">Public</span> <span class="pre">Methods</span></span></dt>
+<dd><p>run_classification() -&gt; List[Dict]: Processes and classifies a list of research metadata dictionaries.
+get_unclassified_item_count() -&gt; int: Returns the number of unclassified items.
+get_unclassified_dois() -&gt; List[str]: Returns the DOIs of unclassified items.
+get_unclassified_abstracts() -&gt; List[str]: Returns the abstracts of unclassified items.
+get_unclassified_doi_abstract_dict() -&gt; Dict[str, str]: Returns the DOI to abstract mapping dictionary for unclassified items.
+get_unclassified_items() -&gt; List[Dict]: Returns the unclassified items.
+get_unclassified_details_dict() -&gt; Dict: Returns the details of unclassified items.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">Private</span> <span class="pre">Methods</span></span></dt>
+<dd><p>_classification_orchestrator() -&gt; List[Dict]: Core classification logic for processing research metadata.
+_inject_categories() -&gt; None: Adds classification results to a research metadata dictionary.
+_extract_categories() -&gt; ClassificationResultsDict | ClassificationResultsTuple: Gets classification results for a specific DOI.
+_make_doi_abstract_dict() -&gt; Dict[str, str]: Creates a DOI to abstract mapping dictionary.
+_retrieve_doi_abstract() -&gt; Tuple[str, str]: Extracts DOI and abstract from a research metadata dictionary.
+_update_classified_instance_variables() -&gt; None: Updates tracking variables for unclassified items.
+_set_classification_ran_true() -&gt; None: Sets the classification ran flag to true.
+_has_ran_classification() -&gt; bool: Checks if classification has been run.
+_validate_classification_ran() -&gt; None: Validates if classification has been run.
+_normalize_abstract() -&gt; str: Normalizes an abstract by removing LaTeX and converting any resulting unicode to ASCII.</p>
+</dd></dl>
+
+<p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Create wrapper instance</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">wrapper</span> <span class="o">=</span> <span class="n">ClassificationWrapper</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">abstract_classifier_factory</span><span class="o">=</span><span class="n">create_classifier</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">taxonomy</span><span class="o">=</span><span class="n">taxonomy</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">utilities</span><span class="o">=</span><span class="n">utilities</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">ai_api_key</span><span class="o">=</span><span class="s2">&quot;your-api-key&quot;</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Process research metadata</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span>
+<span class="gp">... </span>    <span class="p">{</span><span class="s2">&quot;DOI&quot;</span><span class="p">:</span> <span class="s2">&quot;10.1234/example&quot;</span><span class="p">,</span> <span class="s2">&quot;abstract&quot;</span><span class="p">:</span> <span class="s2">&quot;Research text...&quot;</span><span class="p">},</span>
+<span class="gp">... </span>    <span class="p">{</span><span class="s2">&quot;DOI&quot;</span><span class="p">:</span> <span class="s2">&quot;10.5678/sample&quot;</span><span class="p">,</span> <span class="s2">&quot;abstract&quot;</span><span class="p">:</span> <span class="s2">&quot;More research...&quot;</span><span class="p">}</span>
+<span class="gp">... </span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classified_data</span> <span class="o">=</span> <span class="n">wrapper</span><span class="o">.</span><span class="n">run_classification</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Access classification results</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">classified_data</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s2">&quot;categories&quot;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Check unclassified items</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Failed to classify </span><span class="si">{</span><span class="n">wrapper</span><span class="o">.</span><span class="n">unclassified_item_count</span><span class="si">}</span><span class="s2"> items&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.run_classification">
+<span class="sig-name descname"><span class="pre">run_classification</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pre_classification_model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">classification_model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">theme_model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/orchestrators/classification_orchestrator.html#ClassificationOrchestrator.run_classification"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.run_classification" title="Link to this definition">¶</a></dt>
+<dd><p>Processes and classifies a list of research metadata dictionaries.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>data</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>]</span>) – List of dictionaries containing research metadata.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Modified data with classifications injected.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[Dict]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.get_unclassified_item_count">
+<span class="sig-name descname"><span class="pre">get_unclassified_item_count</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/orchestrators/classification_orchestrator.html#ClassificationOrchestrator.get_unclassified_item_count"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.get_unclassified_item_count" title="Link to this definition">¶</a></dt>
+<dd><p>Gets the number of unclassified items.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Number of unclassified items.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>RuntimeError</strong> – If classification has not been run yet.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.get_unclassified_dois">
+<span class="sig-name descname"><span class="pre">get_unclassified_dois</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/orchestrators/classification_orchestrator.html#ClassificationOrchestrator.get_unclassified_dois"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.get_unclassified_dois" title="Link to this definition">¶</a></dt>
+<dd><p>Gets the DOIs of unclassified items.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List of unclassified DOIs.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>List[str]</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>RuntimeError</strong> – If classification has not been run yet.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.get_unclassified_abstracts">
+<span class="sig-name descname"><span class="pre">get_unclassified_abstracts</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/orchestrators/classification_orchestrator.html#ClassificationOrchestrator.get_unclassified_abstracts"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.get_unclassified_abstracts" title="Link to this definition">¶</a></dt>
+<dd><p>Gets the abstracts of unclassified items.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List of unclassified abstracts.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>List[str]</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>RuntimeError</strong> – If classification has not been run yet.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.get_unclassified_doi_abstract_dict">
+<span class="sig-name descname"><span class="pre">get_unclassified_doi_abstract_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/orchestrators/classification_orchestrator.html#ClassificationOrchestrator.get_unclassified_doi_abstract_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.get_unclassified_doi_abstract_dict" title="Link to this definition">¶</a></dt>
+<dd><p>Gets the DOI to abstract mapping dictionary for unclassified items.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dictionary mapping unclassified DOIs to abstracts.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict[str, str]</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>RuntimeError</strong> – If classification has not been run yet.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.get_unclassified_items">
+<span class="sig-name descname"><span class="pre">get_unclassified_items</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/orchestrators/classification_orchestrator.html#ClassificationOrchestrator.get_unclassified_items"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.get_unclassified_items" title="Link to this definition">¶</a></dt>
+<dd><p>Gets the unclassified items.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List of unclassified items.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>List[Dict]</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>RuntimeError</strong> – If classification has not been run yet.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.get_unclassified_details_dict">
+<span class="sig-name descname"><span class="pre">get_unclassified_details_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/orchestrators/classification_orchestrator.html#ClassificationOrchestrator.get_unclassified_details_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.get_unclassified_details_dict" title="Link to this definition">¶</a></dt>
+<dd><p>Gets the details of unclassified items.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Details of unclassified items.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>RuntimeError</strong> – If classification has not been run yet.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._classification_orchestrator">
+<span class="sig-name descname"><span class="pre">_classification_orchestrator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pre_classification_model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">classification_model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">theme_model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/orchestrators/classification_orchestrator.html#ClassificationOrchestrator._classification_orchestrator"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._classification_orchestrator" title="Link to this definition">¶</a></dt>
+<dd><p>Core classification logic for processing research metadata.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>data</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>]</span>) – List of dictionaries containing research metadata.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Modified data with classifications injected.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[Dict]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._inject_categories">
+<span class="sig-name descname"><span class="pre">_inject_categories</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">categories</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/orchestrators/classification_orchestrator.html#ClassificationOrchestrator._inject_categories"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._inject_categories" title="Link to this definition">¶</a></dt>
+<dd><p>Adds classification results to a research metadata dictionary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code></span>) – Research metadata dictionary.</p></li>
+<li><p><strong>categories</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]], <code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>], <code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>], <code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>], <code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]]]</span>) – Classification results including categories and themes.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._extract_categories">
+<span class="sig-name descname"><span class="pre">_extract_categories</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">doi</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">classifier</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/orchestrators/classification_orchestrator.html#ClassificationOrchestrator._extract_categories"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._extract_categories" title="Link to this definition">¶</a></dt>
+<dd><p>Gets classification results for a specific DOI.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>item</strong> – Research metadata dictionary.</p></li>
+<li><p><strong>doi</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – DOI identifier.</p></li>
+<li><p><strong>classifier</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="academic_metrics.AI.html#academic_metrics.AI.AbstractClassifier.AbstractClassifier" title="academic_metrics.AI.AbstractClassifier.AbstractClassifier"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbstractClassifier</span></code></a></span>) – Classifier instance that performed classification.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dictionary of classification results.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ClassificationResults</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._make_doi_abstract_dict">
+<span class="sig-name descname"><span class="pre">_make_doi_abstract_dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">doi</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">abstract</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/orchestrators/classification_orchestrator.html#ClassificationOrchestrator._make_doi_abstract_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._make_doi_abstract_dict" title="Link to this definition">¶</a></dt>
+<dd><p>Creates a DOI to abstract mapping dictionary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>doi</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – DOI identifier.</p></li>
+<li><p><strong>abstract</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – Research abstract text.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dictionary mapping DOI to abstract and extra context.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dict[str, str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._get_classification_dependencies">
+<span class="sig-name descname"><span class="pre">_get_classification_dependencies</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">item</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/orchestrators/classification_orchestrator.html#ClassificationOrchestrator._get_classification_dependencies"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._get_classification_dependencies" title="Link to this definition">¶</a></dt>
+<dd><p>Extracts DOI, abstract, and extra context from a research metadata dictionary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>item</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code></span>) – Research metadata dictionary.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>DOI, abstract, and extra context pair.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Tuple[str, str, dict]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._update_classified_instance_variables">
+<span class="sig-name descname"><span class="pre">_update_classified_instance_variables</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">item</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">doi</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">abstract</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/orchestrators/classification_orchestrator.html#ClassificationOrchestrator._update_classified_instance_variables"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._update_classified_instance_variables" title="Link to this definition">¶</a></dt>
+<dd><p>Updates tracking variables for unclassified items.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>item</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code></span>) – Research metadata dictionary.</p></li>
+<li><p><strong>doi</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – DOI identifier.</p></li>
+<li><p><strong>abstract</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – Research abstract text.</p></li>
+<li><p><strong>extra_context</strong> – Extra context dictionary.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._set_classification_ran_true">
+<span class="sig-name descname"><span class="pre">_set_classification_ran_true</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/orchestrators/classification_orchestrator.html#ClassificationOrchestrator._set_classification_ran_true"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._set_classification_ran_true" title="Link to this definition">¶</a></dt>
+<dd><p>Sets the classification ran flag to true.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._has_ran_classification">
+<span class="sig-name descname"><span class="pre">_has_ran_classification</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/orchestrators/classification_orchestrator.html#ClassificationOrchestrator._has_ran_classification"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._has_ran_classification" title="Link to this definition">¶</a></dt>
+<dd><p>Checks if classification has been run.</p>
+<p>Returns</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._validate_classification_ran">
+<span class="sig-name descname"><span class="pre">_validate_classification_ran</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">classification_ran</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/orchestrators/classification_orchestrator.html#ClassificationOrchestrator._validate_classification_ran"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._validate_classification_ran" title="Link to this definition">¶</a></dt>
+<dd><p>Validates if classification has been run.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>classification_ran</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></span>) – Boolean indicating if classification has been run.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>RuntimeError</strong> – If classification has not been run yet.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._normalize_abstract">
+<span class="sig-name descname"><span class="pre">_normalize_abstract</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">abstract</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/orchestrators/classification_orchestrator.html#ClassificationOrchestrator._normalize_abstract"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._normalize_abstract" title="Link to this definition">¶</a></dt>
+<dd><p>Normalizes an abstract by removing LaTeX and converting any resulting unicode to ASCII.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>abstract</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – Research abstract text.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Normalized abstract.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-academic_metrics.orchestrators">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-academic_metrics.orchestrators" title="Link to this heading">¶</a></h2>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+        <div id="show_right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&lt;</span><span>Page contents</span></a></p>
+        </div>
+
+        <div id="right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
+            <div class="page_toc">
+                <ul>
+<li><a class="reference internal" href="#">academic_metrics.orchestrators package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-academic_metrics.orchestrators.category_data_orchestrator">academic_metrics.orchestrators.category_data_orchestrator module</a><ul>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator"><code class="docutils literal notranslate"><span class="pre">CategoryDataOrchestrator</span></code></a><ul>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.data"><code class="docutils literal notranslate"><span class="pre">CategoryDataOrchestrator.data</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.output_dir_path"><code class="docutils literal notranslate"><span class="pre">CategoryDataOrchestrator.output_dir_path</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.extend"><code class="docutils literal notranslate"><span class="pre">CategoryDataOrchestrator.extend</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.strategy_factory"><code class="docutils literal notranslate"><span class="pre">CategoryDataOrchestrator.strategy_factory</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.warning_manager"><code class="docutils literal notranslate"><span class="pre">CategoryDataOrchestrator.warning_manager</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.dataclass_factory"><code class="docutils literal notranslate"><span class="pre">CategoryDataOrchestrator.dataclass_factory</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.utils"><code class="docutils literal notranslate"><span class="pre">CategoryDataOrchestrator.utils</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.category_processor"><code class="docutils literal notranslate"><span class="pre">CategoryDataOrchestrator.category_processor</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.faculty_postprocessor"><code class="docutils literal notranslate"><span class="pre">CategoryDataOrchestrator.faculty_postprocessor</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.final_category_data"><code class="docutils literal notranslate"><span class="pre">CategoryDataOrchestrator.final_category_data</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.final_faculty_data"><code class="docutils literal notranslate"><span class="pre">CategoryDataOrchestrator.final_faculty_data</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.final_article_stats_data"><code class="docutils literal notranslate"><span class="pre">CategoryDataOrchestrator.final_article_stats_data</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.final_article_data"><code class="docutils literal notranslate"><span class="pre">CategoryDataOrchestrator.final_article_data</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.final_global_faculty_data"><code class="docutils literal notranslate"><span class="pre">CategoryDataOrchestrator.final_global_faculty_data</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.logger"><code class="docutils literal notranslate"><span class="pre">CategoryDataOrchestrator.logger</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.log_file_path"><code class="docutils literal notranslate"><span class="pre">CategoryDataOrchestrator.log_file_path</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.run_orchestrator"><code class="docutils literal notranslate"><span class="pre">CategoryDataOrchestrator.run_orchestrator()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.get_final_category_data"><code class="docutils literal notranslate"><span class="pre">CategoryDataOrchestrator.get_final_category_data()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.get_final_faculty_data"><code class="docutils literal notranslate"><span class="pre">CategoryDataOrchestrator.get_final_faculty_data()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.get_final_global_faculty_data"><code class="docutils literal notranslate"><span class="pre">CategoryDataOrchestrator.get_final_global_faculty_data()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.get_final_article_stats_data"><code class="docutils literal notranslate"><span class="pre">CategoryDataOrchestrator.get_final_article_stats_data()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.get_final_article_data"><code class="docutils literal notranslate"><span class="pre">CategoryDataOrchestrator.get_final_article_data()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._save_all_results"><code class="docutils literal notranslate"><span class="pre">CategoryDataOrchestrator._save_all_results()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._refine_faculty_sets"><code class="docutils literal notranslate"><span class="pre">CategoryDataOrchestrator._refine_faculty_sets()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._refine_faculty_stats"><code class="docutils literal notranslate"><span class="pre">CategoryDataOrchestrator._refine_faculty_stats()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._clean_category_data"><code class="docutils literal notranslate"><span class="pre">CategoryDataOrchestrator._clean_category_data()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._serialize_and_save_category_data"><code class="docutils literal notranslate"><span class="pre">CategoryDataOrchestrator._serialize_and_save_category_data()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._serialize_and_save_faculty_stats"><code class="docutils literal notranslate"><span class="pre">CategoryDataOrchestrator._serialize_and_save_faculty_stats()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._serialize_and_save_global_faculty_stats"><code class="docutils literal notranslate"><span class="pre">CategoryDataOrchestrator._serialize_and_save_global_faculty_stats()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._serialize_and_save_category_article_stats"><code class="docutils literal notranslate"><span class="pre">CategoryDataOrchestrator._serialize_and_save_category_article_stats()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._serialize_and_save_articles"><code class="docutils literal notranslate"><span class="pre">CategoryDataOrchestrator._serialize_and_save_articles()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._flatten_to_list"><code class="docutils literal notranslate"><span class="pre">CategoryDataOrchestrator._flatten_to_list()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._write_to_json"><code class="docutils literal notranslate"><span class="pre">CategoryDataOrchestrator._write_to_json()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-academic_metrics.orchestrators.classification_orchestrator">academic_metrics.orchestrators.classification_orchestrator module</a><ul>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationResultsDict"><code class="docutils literal notranslate"><span class="pre">ClassificationResultsDict</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationResultsTuple"><code class="docutils literal notranslate"><span class="pre">ClassificationResultsTuple</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator"><code class="docutils literal notranslate"><span class="pre">ClassificationOrchestrator</span></code></a><ul>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.abstract_classifier_factory"><code class="docutils literal notranslate"><span class="pre">ClassificationOrchestrator.abstract_classifier_factory</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.taxonomy"><code class="docutils literal notranslate"><span class="pre">ClassificationOrchestrator.taxonomy</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.utilities"><code class="docutils literal notranslate"><span class="pre">ClassificationOrchestrator.utilities</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.ai_api_key"><code class="docutils literal notranslate"><span class="pre">ClassificationOrchestrator.ai_api_key</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.unclassified_item_count"><code class="docutils literal notranslate"><span class="pre">ClassificationOrchestrator.unclassified_item_count</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.unclassified_dois"><code class="docutils literal notranslate"><span class="pre">ClassificationOrchestrator.unclassified_dois</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.unclassified_abstracts"><code class="docutils literal notranslate"><span class="pre">ClassificationOrchestrator.unclassified_abstracts</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.unclassified_doi_abstract_dict"><code class="docutils literal notranslate"><span class="pre">ClassificationOrchestrator.unclassified_doi_abstract_dict</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.unclassified_items"><code class="docutils literal notranslate"><span class="pre">ClassificationOrchestrator.unclassified_items</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.unclassified_details"><code class="docutils literal notranslate"><span class="pre">ClassificationOrchestrator.unclassified_details</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.run_classification"><code class="docutils literal notranslate"><span class="pre">ClassificationOrchestrator.run_classification()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.get_unclassified_item_count"><code class="docutils literal notranslate"><span class="pre">ClassificationOrchestrator.get_unclassified_item_count()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.get_unclassified_dois"><code class="docutils literal notranslate"><span class="pre">ClassificationOrchestrator.get_unclassified_dois()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.get_unclassified_abstracts"><code class="docutils literal notranslate"><span class="pre">ClassificationOrchestrator.get_unclassified_abstracts()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.get_unclassified_doi_abstract_dict"><code class="docutils literal notranslate"><span class="pre">ClassificationOrchestrator.get_unclassified_doi_abstract_dict()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.get_unclassified_items"><code class="docutils literal notranslate"><span class="pre">ClassificationOrchestrator.get_unclassified_items()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.get_unclassified_details_dict"><code class="docutils literal notranslate"><span class="pre">ClassificationOrchestrator.get_unclassified_details_dict()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._classification_orchestrator"><code class="docutils literal notranslate"><span class="pre">ClassificationOrchestrator._classification_orchestrator()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._inject_categories"><code class="docutils literal notranslate"><span class="pre">ClassificationOrchestrator._inject_categories()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._extract_categories"><code class="docutils literal notranslate"><span class="pre">ClassificationOrchestrator._extract_categories()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._make_doi_abstract_dict"><code class="docutils literal notranslate"><span class="pre">ClassificationOrchestrator._make_doi_abstract_dict()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._get_classification_dependencies"><code class="docutils literal notranslate"><span class="pre">ClassificationOrchestrator._get_classification_dependencies()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._update_classified_instance_variables"><code class="docutils literal notranslate"><span class="pre">ClassificationOrchestrator._update_classified_instance_variables()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._set_classification_ran_true"><code class="docutils literal notranslate"><span class="pre">ClassificationOrchestrator._set_classification_ran_true()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._has_ran_classification"><code class="docutils literal notranslate"><span class="pre">ClassificationOrchestrator._has_ran_classification()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._validate_classification_ran"><code class="docutils literal notranslate"><span class="pre">ClassificationOrchestrator._validate_classification_ran()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._normalize_abstract"><code class="docutils literal notranslate"><span class="pre">ClassificationOrchestrator._normalize_abstract()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-academic_metrics.orchestrators">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+    
+
+      <div class="clearer"></div>
+    </div>
+    <div class="button_nav_wrapper">
+        <div class="button_nav">
+            <div class="left">
+                
+            </div>
+
+            <div class="right">
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Spencer Presley, Cole Barbes.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    </div>
+
+<p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>
+  </body>
+</html>

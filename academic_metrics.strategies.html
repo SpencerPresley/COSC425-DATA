@@ -1,0 +1,1606 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>academic_metrics.strategies package &#8212; Academic Metrics 0.1.0-beta documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+    <link rel="stylesheet" type="text/css" href="_static/basic_mod.css?v=9b2032db" />
+    <script src="_static/documentation_options.js?v=c903bf51"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <script src="_static/js/petite-vue.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head><body data-dark_mode_code_blocks="true">
+
+<div id="top_nav">
+    
+
+    <nav>
+        
+            
+        
+
+        <p id="toggle_sidebar">
+            <a href="#" title="Toggle sidebar">|||</a>
+        </p>
+        <h1><a href="index.html" title="Go to homepage">Academic Metrics 0.1.0-beta documentation</a></h1>
+
+        <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
+    <template v-if="mode == 'light'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_light"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M67.48,18.073c1.913,-1.912 1.913,-5.018 0,-6.931c-1.912,-1.912 -5.018,-1.912 -6.931,0l-6.798,6.799c-1.912,1.912 -1.912,5.018 0,6.931c1.913,1.912 5.018,1.912 6.931,-0l6.798,-6.799Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.728,61.108c1.912,-1.913 1.912,-5.018 -0,-6.931c-1.913,-1.913 -5.019,-1.913 -6.931,-0l-6.799,6.798c-1.912,1.913 -1.912,5.019 0,6.931c1.913,1.913 5.019,1.913 6.931,0l6.799,-6.798Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.682,54.177c-1.913,-1.913 -5.018,-1.913 -6.931,-0c-1.912,1.913 -1.912,5.018 0,6.931l6.798,6.798c1.913,1.913 5.019,1.913 6.931,0c1.913,-1.912 1.913,-5.018 0,-6.931l-6.798,-6.798Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M4.901,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,-0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M18.929,11.142c-1.912,-1.912 -5.018,-1.912 -6.931,0c-1.912,1.913 -1.912,5.019 0,6.931l6.799,6.799c1.912,1.912 5.018,1.912 6.931,-0c1.912,-1.913 1.912,-5.019 -0,-6.931l-6.799,-6.799Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.108,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c-0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c-0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'dark'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_dark"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.901,2.196 -4.901,4.901c0,2.705 2.197,4.901 4.901,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.662,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.989,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.732,61.103c1.91,-1.91 1.91,-5.011 0,-6.921l-0.009,-0.01c-1.91,-1.91 -5.012,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.909,1.91 5.011,1.91 6.92,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.672,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.52,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l-0,-0.01c-0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.901,2.196 -4.901,4.901c0,2.704 2.197,4.9 4.901,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.73,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 -0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.098,34.623c-2.699,0 -4.891,2.192 -4.891,4.892l-0,0.019c-0,2.699 2.192,4.891 4.891,4.891c2.7,0 4.892,-2.192 4.892,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.892,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'darkest'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_darkest"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><path d="M39.315,23.791c8.684,-0 15.734,7.05 15.734,15.733c0,8.684 -7.05,15.734 -15.734,15.734c-8.683,0 -15.733,-7.05 -15.733,-15.734c-0,-8.683 7.05,-15.733 15.733,-15.733Zm0,4.737c6.069,0 10.997,4.927 10.997,10.996c-0,6.069 -4.928,10.996 -10.997,10.996c-6.068,0 -10.996,-4.927 -10.996,-10.996c0,-6.069 4.928,-10.996 10.996,-10.996Z" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.216,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.9,2.196 -4.9,4.901c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.666,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.99,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.737,61.103c1.909,-1.91 1.909,-5.011 -0,-6.921l-0.01,-0.01c-1.91,-1.91 -5.011,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.91,1.91 5.011,1.91 6.921,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.676,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.524,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l0,-0.01c0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.216,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901c-0,2.704 2.196,4.9 4.9,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.734,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.103,34.623c-2.7,0 -4.892,2.192 -4.892,4.892l-0,0.019c-0,2.699 2.192,4.891 4.892,4.891c2.699,0 4.891,-2.192 4.891,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.891,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+</a>
+
+<script>
+(function() {
+    const LOCAL_STORAGE_KEY = 'piccoloThemeMode'
+
+    var initialMode = localStorage.getItem(LOCAL_STORAGE_KEY)
+
+    if (initialMode) {
+        // Make sure the value in local storage is valid
+        if (['light', 'dark', 'darkest'].indexOf(initialMode) == -1) {
+            initialMode = 'light'
+            localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+        }
+    } else {
+        // Check if the client prefers dark mode
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            initialMode = 'dark'
+        } else {
+            initialMode = 'light'
+        }
+        localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+    }
+
+    document.documentElement.dataset.mode = initialMode
+
+    PetiteVue.createApp({
+        'mode': initialMode,
+        handleClick() {
+            let currentMode = this.mode
+
+            if (currentMode == 'light') {
+                this.mode = 'dark'
+            } else if (currentMode == 'dark') {
+                this.mode = 'darkest'
+            } else if (currentMode == 'darkest') {
+                this.mode = 'light'
+            }
+
+            document.documentElement.dataset.mode = this.mode
+            localStorage.setItem(LOCAL_STORAGE_KEY, this.mode)
+
+            console.log(this.mode)
+        }
+    }).mount('#mode_toggle')
+})()
+</script>
+            <p class="mobile_search_link">
+                <a href="search.html" title="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 64" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path d="M14.873 40.009c-2.315-3.943-3.642-8.532-3.642-13.429C11.231 11.91 23.141 0 37.811 0s26.58 11.91 26.58 26.58-11.91 26.58-26.58 26.58a26.44 26.44 0 0 1-14.277-4.161L9.739 62.794a3.12 3.12 0 0 1-4.413 0L.913 58.382c-1.217-1.218-1.217-3.196 0-4.413l13.96-13.96zM37.811 8.054c10.225 0 18.526 8.301 18.526 18.526s-8.301 18.526-18.526 18.526-18.526-8.301-18.526-18.526S27.586 8.054 37.811 8.054z" fill="#fff" />
+                    </svg>
+                </a>
+            </p>
+        
+
+        <div class="searchbox_wrapper">
+            
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="abstract_classifier.html">Abstract Classifier Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="category_processor.html">Category Processor Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faculty_set_postprocessor.html">Faculty Set Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config.html">Global Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chain_builder.html">Chain Builder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ai_prompts.html">ai_prompts package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection.html">data_collection package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dataclass_models.html">dataclass_models package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DB.html">DB package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enums.html">enums package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="factories.html">factories package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="orchestrators.html">orchestrators package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="other.html">other package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="runners.html">runners package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="strategies.html">strategies package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="utils.html">utils package</a></li>
+</ul>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="academic-metrics-strategies-package">
+<h1>academic_metrics.strategies package<a class="headerlink" href="#academic-metrics-strategies-package" title="Link to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
+</section>
+<section id="module-academic_metrics.strategies.AttributeExtractionStrategies">
+<span id="academic-metrics-strategies-attributeextractionstrategies-module"></span><h2>academic_metrics.strategies.AttributeExtractionStrategies module<a class="headerlink" href="#module-academic_metrics.strategies.AttributeExtractionStrategies" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">academic_metrics.strategies.AttributeExtractionStrategies.</span></span><span class="sig-name descname"><span class="pre">AttributeExtractionStrategy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">warning_manager</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">missing_abstracts_file</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'missing_abstracts.txt'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#AttributeExtractionStrategy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></p>
+<p>Abstract base class for attribute extraction strategies.</p>
+<p>This class provides a framework for extracting various attributes from academic publication data.
+It defines common methods and properties that all specific extraction strategies should implement or utilize.</p>
+<p>It implements the Strategy pattern, allowing for flexible implementation of different extraction methods for different types of attributes or data sources. See more on the Strategy pattern here: <a class="reference external" href="https://en.wikipedia.org/wiki/Strategy_pattern">https://en.wikipedia.org/wiki/Strategy_pattern</a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.logger">
+<span class="sig-name descname"><span class="pre">logger</span></span><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.logger" title="Link to this definition">¶</a></dt>
+<dd><p>Logger for recording extraction-related events.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>logging.Logger</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.abstract_pattern">
+<span class="sig-name descname"><span class="pre">abstract_pattern</span></span><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.abstract_pattern" title="Link to this definition">¶</a></dt>
+<dd><p>Regular expression pattern for extracting abstracts.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>re.Pattern</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.missing_abstracts_file">
+<span class="sig-name descname"><span class="pre">missing_abstracts_file</span></span><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.missing_abstracts_file" title="Link to this definition">¶</a></dt>
+<dd><p>File path for storing information about missing abstracts.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.warning_manager">
+<span class="sig-name descname"><span class="pre">warning_manager</span></span><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.warning_manager" title="Link to this definition">¶</a></dt>
+<dd><p>Manages and logs warnings during extraction.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="academic_metrics.utils.html#academic_metrics.utils.warning_manager.WarningManager" title="academic_metrics.utils.warning_manager.WarningManager">WarningManager</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.unknown_authors_dict">
+<span class="sig-name descname"><span class="pre">unknown_authors_dict</span></span><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.unknown_authors_dict" title="Link to this definition">¶</a></dt>
+<dd><p>Stores information about unidentified authors.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.unknown_authors_file">
+<span class="sig-name descname"><span class="pre">unknown_authors_file</span></span><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.unknown_authors_file" title="Link to this definition">¶</a></dt>
+<dd><p>File path for storing information about unknown authors.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.crossref_author_key">
+<span class="sig-name descname"><span class="pre">crossref_author_key</span></span><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.crossref_author_key" title="Link to this definition">¶</a></dt>
+<dd><p>Key used to access author information in Crossref data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.extract_attribute">
+<span class="sig-name descname"><span class="pre">extract_attribute</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#AttributeExtractionStrategy.extract_attribute"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.extract_attribute" title="Link to this definition">¶</a></dt>
+<dd><p>Abstract method to be implemented by subclasses for specific attribute extraction.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.html_to_markdown">
+<span class="sig-name descname"><span class="pre">html_to_markdown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#AttributeExtractionStrategy.html_to_markdown"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.html_to_markdown" title="Link to this definition">¶</a></dt>
+<dd><p>Converts HTML content to Markdown format.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.get_crossref_author_affils">
+<span class="sig-name descname"><span class="pre">get_crossref_author_affils</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#AttributeExtractionStrategy.get_crossref_author_affils"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.get_crossref_author_affils" title="Link to this definition">¶</a></dt>
+<dd><p>Retrieves author affiliations from Crossref data.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.get_author_obj">
+<span class="sig-name descname"><span class="pre">get_author_obj</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#AttributeExtractionStrategy.get_author_obj"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.get_author_obj" title="Link to this definition">¶</a></dt>
+<dd><p>Extracts author information from Crossref JSON data.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.set_author_sequence_dict">
+<span class="sig-name descname"><span class="pre">set_author_sequence_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#AttributeExtractionStrategy.set_author_sequence_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.set_author_sequence_dict" title="Link to this definition">¶</a></dt>
+<dd><p>Organizes author information into a structured dictionary.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.write_missing_authors_file">
+<span class="sig-name descname"><span class="pre">write_missing_authors_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#AttributeExtractionStrategy.write_missing_authors_file"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.write_missing_authors_file" title="Link to this definition">¶</a></dt>
+<dd><p>Writes information about unknown authors to a file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.create_author_sequence_dict">
+<span class="sig-name descname"><span class="pre">create_author_sequence_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#AttributeExtractionStrategy.create_author_sequence_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.create_author_sequence_dict" title="Link to this definition">¶</a></dt>
+<dd><p>Creates a template dictionary for author sequence information.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.create_unknown_authors_dict">
+<span class="sig-name descname"><span class="pre">create_unknown_authors_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#AttributeExtractionStrategy.create_unknown_authors_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.create_unknown_authors_dict" title="Link to this definition">¶</a></dt>
+<dd><p>Creates a template dictionary for unknown authors.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.log_extraction_warning">
+<span class="sig-name descname"><span class="pre">log_extraction_warning</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#AttributeExtractionStrategy.log_extraction_warning"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.log_extraction_warning" title="Link to this definition">¶</a></dt>
+<dd><p>Logs warnings encountered during attribute extraction.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.generate_error_id">
+<span class="sig-name descname"><span class="pre">generate_error_id</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#AttributeExtractionStrategy.generate_error_id"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.generate_error_id" title="Link to this definition">¶</a></dt>
+<dd><p>Generates a unique identifier for error tracking.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.get_authors_as_list">
+<span class="sig-name descname"><span class="pre">get_authors_as_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#AttributeExtractionStrategy.get_authors_as_list"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.get_authors_as_list" title="Link to this definition">¶</a></dt>
+<dd><p>Converts the author sequence dictionary to a list of author names.</p>
+</dd></dl>
+
+<dl class="simple">
+<dt>Design:</dt><dd><p>This class is designed as an abstract base class, providing a common interface and shared functionality
+for various attribute extraction strategies. It uses the Strategy pattern, allowing for flexible
+implementation of different extraction methods for different types of attributes or data sources.</p>
+</dd>
+<dt>Summary:</dt><dd><p>The AttributeExtractionStrategy class serves as a foundation for creating specific attribute extraction
+strategies in an academic publication data processing system. It provides utility methods for handling
+common tasks such as HTML parsing, author information processing, and error logging, while defining
+an interface for implementing specific extraction logic in subclasses.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="id0">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">extract_attribute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entry_text</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#AttributeExtractionStrategy.extract_attribute"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id0" title="Link to this definition">¶</a></dt>
+<dd><p>Abstract method to extract a specific attribute from the entry text.</p>
+<p>This method should be implemented by subclasses to define the specific
+extraction logic for each attribute type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>entry_text</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – The text or data from which to extract the attribute.</p></li>
+<li><p><strong>data.</strong> (<em>entry_text applies to both WoS and Crossref</em>)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code></span></p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The extracted attribute value.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>NotImplementedError</strong> – If the method is not implemented in a subclass.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Design:</dt><dd><p>This abstract method enforces a common interface for all attribute
+extraction strategies, allowing for polymorphic use of different
+strategies.</p>
+</dd>
+<dt>Summary:</dt><dd><p>Defines the contract for attribute extraction methods in subclasses.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id1">
+<span class="sig-name descname"><span class="pre">html_to_markdown</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">html_content</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#AttributeExtractionStrategy.html_to_markdown"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id1" title="Link to this definition">¶</a></dt>
+<dd><p>Converts HTML content to Markdown format.</p>
+<p>This method takes HTML content, particularly JATS XML, and converts it
+to a simplified Markdown format.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>html_content</strong> (<em>str</em>) – The HTML content to be converted.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The converted content in Markdown format.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Design:</dt><dd><p>Uses BeautifulSoup for parsing HTML and custom logic to generate Markdown.
+Handles both sectioned and non-sectioned content.</p>
+</dd>
+<dt>Summary:</dt><dd><p>Transforms complex HTML/XML content into more readable Markdown format.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id2">
+<span class="sig-name descname"><span class="pre">get_crossref_author_affils</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">author_item</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#AttributeExtractionStrategy.get_crossref_author_affils"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id2" title="Link to this definition">¶</a></dt>
+<dd><p>Retrieves author affiliations from Crossref data.</p>
+<p>This method extracts the affiliation information for an author
+from the Crossref author data structure.</p>
+<p>It is designed to be used with Crossref data, not WoS data. It is NOT compatible with WoS data.</p>
+<p>This is implemented in the base class as it is used by more than a single subclass such as CrossrefAuthorExtractionStrategy and CrossrefDepartmentExtractionStrategy.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>author_item</strong> (<em>dict</em>) – A dictionary containing author information from Crossref.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of affiliation names for the author.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[str]</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Design:</dt><dd><p>Directly accesses the ‘affiliation’ key in the author dictionary.
+Extracts the ‘name’ field from each affiliation entry.</p>
+</dd>
+<dt>Summary:</dt><dd><p>Extracts and returns a list of affiliation names for a given author.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id3">
+<span class="sig-name descname"><span class="pre">get_author_obj</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">crossref_json</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#AttributeExtractionStrategy.get_author_obj"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id3" title="Link to this definition">¶</a></dt>
+<dd><p>Extracts the author object from Crossref JSON data.</p>
+<p>This method retrieves the author information from the Crossref JSON structure.
+It is designed to be used with Crossref data, not WoS data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>crossref_json</strong> (<em>dict</em>) – The Crossref JSON data containing author information.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of dictionaries, each containing information about an author.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[dict]</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Design:</dt><dd><p>Uses the class attribute ‘crossref_author_key’ to access author information.</p>
+</dd>
+<dt>Summary:</dt><dd><p>Extracts and returns the author object from Crossref JSON data.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id4">
+<span class="sig-name descname"><span class="pre">create_author_sequence_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#AttributeExtractionStrategy.create_author_sequence_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id4" title="Link to this definition">¶</a></dt>
+<dd><p>Creates a template dictionary for author sequence information.</p>
+<p>This method initializes a dictionary structure to store information
+about the first author and additional authors.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A dictionary with keys for ‘first’ author and ‘additional’ authors.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>dict</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Design:</dt><dd><p>Provides a consistent structure for storing author information.</p>
+</dd>
+<dt>Summary:</dt><dd><p>Creates and returns a template dictionary for organizing author information.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id5">
+<span class="sig-name descname"><span class="pre">create_unknown_authors_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#AttributeExtractionStrategy.create_unknown_authors_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id5" title="Link to this definition">¶</a></dt>
+<dd><p>Creates a template dictionary for unknown authors.</p>
+<p>This method initializes a dictionary to store information about
+authors that couldn’t be properly processed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A dictionary with a key for ‘unknown_authors’.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>dict</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Design:</dt><dd><p>Provides a consistent structure for storing information about problematic authors.</p>
+</dd>
+<dt>Summary:</dt><dd><p>Creates and returns a template dictionary for tracking unknown authors.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id6">
+<span class="sig-name descname"><span class="pre">log_extraction_warning</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">attribute_class_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">warning_message</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entry_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line_prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#AttributeExtractionStrategy.log_extraction_warning"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id6" title="Link to this definition">¶</a></dt>
+<dd><p>Logs warnings encountered during attribute extraction.</p>
+<p>This method creates a standardized log message for extraction warnings
+and can optionally include specific entry information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>attribute_class_name</strong> (<em>str</em>) – The name of the attribute class where the warning occurred.</p></li>
+<li><p><strong>warning_message</strong> (<em>str</em>) – The specific warning message.</p></li>
+<li><p><strong>entry_id</strong> (<em>str</em><em>, </em><em>optional</em>) – An identifier for the entry causing the warning.</p></li>
+<li><p><strong>line_prefix</strong> (<em>str</em><em>, </em><em>optional</em>) – A prefix to identify specific lines in the entry.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Design:</dt><dd><p>Generates a unique error ID for each warning.
+Commented-out code shows potential for more detailed logging.</p>
+</dd>
+<dt>Summary:</dt><dd><p>Creates and logs a standardized warning message for attribute extraction issues.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id7">
+<span class="sig-name descname"><span class="pre">generate_error_id</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#AttributeExtractionStrategy.generate_error_id"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id7" title="Link to this definition">¶</a></dt>
+<dd><p>Generates a unique identifier for error tracking.</p>
+<p>This method creates a UUID to uniquely identify each error or warning instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A unique UUID string.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Design:</dt><dd><p>Uses Python’s uuid module to generate a version 4 UUID.</p>
+</dd>
+<dt>Summary:</dt><dd><p>Generates and returns a unique identifier string for error tracking purposes.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id8">
+<span class="sig-name descname"><span class="pre">write_missing_authors_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">unknown_authors</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unknown_authors_file</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#AttributeExtractionStrategy.write_missing_authors_file"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id8" title="Link to this definition">¶</a></dt>
+<dd><p>Converts the author sequence dictionary to a list of author names.</p>
+<p>This method extracts author names from the structured author sequence dictionary
+and returns them as a simple list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>author_sequence_dict</strong> (<em>dict</em>) – A dictionary containing structured author information.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of author names in the order they appear in the publication.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[str]</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Design:</dt><dd><p>Handles both the first author and additional authors from the dictionary.</p>
+</dd>
+<dt>Summary:</dt><dd><p>Extracts and returns a list of author names from the structured author dictionary.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id9">
+<span class="sig-name descname"><span class="pre">set_author_sequence_dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">author_items</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">author_sequence_dict</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#AttributeExtractionStrategy.set_author_sequence_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id9" title="Link to this definition">¶</a></dt>
+<dd><p>Organizes author information into a structured dictionary.</p>
+<p>This method processes a list of author items and organizes them into a dictionary
+based on their sequence (first author or additional authors).
+It is designed to work with Crossref data, not WoS data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>author_items</strong> (<em>list</em><em>[</em><em>dict</em><em>]</em>) – A list of dictionaries containing author information.</p></li>
+<li><p><strong>author_sequence_dict</strong> (<em>dict</em>) – A dictionary to store the organized author information.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Design:</dt><dd><p>Processes each author item, extracting name and affiliation information.
+Handles cases for first author and additional authors separately.
+Logs warnings for missing or incomplete author information.</p>
+</dd>
+<dt>Summary:</dt><dd><p>Organizes author information into a structured dictionary format.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id10">
+<span class="sig-name descname"><span class="pre">get_authors_as_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">author_sequence_dict</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#AttributeExtractionStrategy.get_authors_as_list"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id10" title="Link to this definition">¶</a></dt>
+<dd><p>Converts the author sequence dictionary to a list of author names.</p>
+<p>This method extracts author names from the structured author sequence dictionary
+and returns them as a simple list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>author_sequence_dict</strong> (<em>dict</em>) – A dictionary containing structured author information.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of author names in the order they appear in the publication.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[str]</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Design:</dt><dd><p>Handles both the first author and additional authors from the dictionary.</p>
+</dd>
+<dt>Summary:</dt><dd><p>Extracts and returns a list of author names from the structured author dictionary.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.CrossrefTitleExtractionStrategy">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">academic_metrics.strategies.AttributeExtractionStrategies.</span></span><span class="sig-name descname"><span class="pre">CrossrefTitleExtractionStrategy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">warning_manager</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefTitleExtractionStrategy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefTitleExtractionStrategy" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy" title="academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy"><code class="xref py py-class docutils literal notranslate"><span class="pre">AttributeExtractionStrategy</span></code></a></p>
+<p>A strategy for extracting title information from Crossref data.</p>
+<p>This class implements the AttributeExtractionStrategy for title extraction
+specifically from Crossref JSON data. It focuses on extracting and cleaning
+the title(s) of a publication.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.CrossrefTitleExtractionStrategy.title_key">
+<span class="sig-name descname"><span class="pre">title_key</span></span><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefTitleExtractionStrategy.title_key" title="Link to this definition">¶</a></dt>
+<dd><p>The key used to access title information in the Crossref JSON.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.CrossrefTitleExtractionStrategy.clean_title">
+<span class="sig-name descname"><span class="pre">clean_title</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefTitleExtractionStrategy.clean_title"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefTitleExtractionStrategy.clean_title" title="Link to this definition">¶</a></dt>
+<dd><p>Removes HTML tags from a title string.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.CrossrefTitleExtractionStrategy.extract_attribute">
+<span class="sig-name descname"><span class="pre">extract_attribute</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefTitleExtractionStrategy.extract_attribute"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefTitleExtractionStrategy.extract_attribute" title="Link to this definition">¶</a></dt>
+<dd><p>Extracts and cleans the title(s) from the Crossref entry.</p>
+</dd></dl>
+
+<dl class="simple">
+<dt>Design:</dt><dd><p>Utilizes BeautifulSoup for HTML tag removal and handles potential multiple titles.
+Implements the Strategy pattern for title extraction from Crossref data.</p>
+</dd>
+<dt>Summary:</dt><dd><p>Provides a specialized strategy for extracting and cleaning publication titles
+from Crossref data entries, handling potential HTML content and multiple titles.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="id11">
+<span class="sig-name descname"><span class="pre">clean_title</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">title</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefTitleExtractionStrategy.clean_title"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id11" title="Link to this definition">¶</a></dt>
+<dd><p>Removes HTML tags from a title string using BeautifulSoup.</p>
+<p>This method uses BeautifulSoup to parse and remove any HTML tags
+present in the title string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>title</strong> (<em>str</em>) – The title string potentially containing HTML tags.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The cleaned title string with HTML tags removed.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Design:</dt><dd><p>Uses BeautifulSoup with ‘html.parser’ to safely remove HTML tags.</p>
+</dd>
+<dt>Summary:</dt><dd><p>Cleans a title string by removing any HTML tags it may contain.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id12">
+<span class="sig-name descname"><span class="pre">extract_attribute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entry_text</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefTitleExtractionStrategy.extract_attribute"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id12" title="Link to this definition">¶</a></dt>
+<dd><p>Extracts and cleans the title(s) from the Crossref entry.</p>
+<p>This method retrieves the title(s) from the Crossref JSON data,
+handles potential multiple titles, and cleans each title by removing HTML tags.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>entry_text</strong> (<em>dict</em>) – The Crossref JSON data containing the publication information.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>A tuple containing:</dt><dd><ul class="simple">
+<li><p>A boolean indicating success (True) or failure (False) of the extraction.</p></li>
+<li><p>A list of cleaned title strings, or None if no titles were found.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[bool, list[str]]</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Design:</dt><dd><p>Retrieves titles using the predefined title_key.
+Handles cases where a single title or multiple titles may be present.
+Cleans each title using the clean_title method.
+Logs a warning if no titles are found.</p>
+</dd>
+<dt>Summary:</dt><dd><p>Extracts, cleans, and returns the publication title(s) from Crossref JSON data.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.CrossrefAbstractExtractionStrategy">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">academic_metrics.strategies.AttributeExtractionStrategies.</span></span><span class="sig-name descname"><span class="pre">CrossrefAbstractExtractionStrategy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">warning_manager</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefAbstractExtractionStrategy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefAbstractExtractionStrategy" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy" title="academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy"><code class="xref py py-class docutils literal notranslate"><span class="pre">AttributeExtractionStrategy</span></code></a></p>
+<p>A strategy for extracting abstract information from Crossref data.</p>
+<p>This class implements the AttributeExtractionStrategy for abstract extraction
+specifically from Crossref JSON data. It focuses on extracting and cleaning
+the abstract of a publication.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.CrossrefAbstractExtractionStrategy.abstract_key">
+<span class="sig-name descname"><span class="pre">abstract_key</span></span><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefAbstractExtractionStrategy.abstract_key" title="Link to this definition">¶</a></dt>
+<dd><p>The key used to access abstract information in the Crossref JSON.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.CrossrefAbstractExtractionStrategy.clean_abstract">
+<span class="sig-name descname"><span class="pre">clean_abstract</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefAbstractExtractionStrategy.clean_abstract"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefAbstractExtractionStrategy.clean_abstract" title="Link to this definition">¶</a></dt>
+<dd><p>Converts HTML content in the abstract to Markdown format.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.CrossrefAbstractExtractionStrategy.extract_attribute">
+<span class="sig-name descname"><span class="pre">extract_attribute</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefAbstractExtractionStrategy.extract_attribute"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefAbstractExtractionStrategy.extract_attribute" title="Link to this definition">¶</a></dt>
+<dd><p>Extracts and cleans the abstract from the Crossref entry.</p>
+</dd></dl>
+
+<dl class="simple">
+<dt>Design:</dt><dd><p>Utilizes the html_to_markdown method for cleaning HTML content in abstracts.
+Implements the Strategy pattern for abstract extraction from Crossref data.</p>
+</dd>
+<dt>Summary:</dt><dd><p>Provides a specialized strategy for extracting and cleaning publication abstracts
+from Crossref data entries, handling potential HTML content.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="id13">
+<span class="sig-name descname"><span class="pre">clean_abstract</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">abstract</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefAbstractExtractionStrategy.clean_abstract"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id13" title="Link to this definition">¶</a></dt>
+<dd><p>Cleans the abstract by converting HTML content to Markdown format.</p>
+<p>This method uses the html_to_markdown method to convert any HTML content
+in the abstract to a more readable Markdown format.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>abstract</strong> (<em>str</em>) – The abstract string potentially containing HTML content.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The cleaned abstract string in Markdown format.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Design:</dt><dd><p>Utilizes the html_to_markdown method inherited from the parent class.</p>
+</dd>
+<dt>Summary:</dt><dd><p>Converts HTML content in the abstract to Markdown for improved readability.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id14">
+<span class="sig-name descname"><span class="pre">extract_attribute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entry_text</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefAbstractExtractionStrategy.extract_attribute"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id14" title="Link to this definition">¶</a></dt>
+<dd><p>Extracts and cleans the abstract from the Crossref entry.</p>
+<p>This method retrieves the abstract from the Crossref JSON data,
+cleans it by converting HTML to Markdown, and returns the result.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>entry_text</strong> (<em>dict</em>) – The Crossref JSON data containing the publication information.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>A tuple containing:</dt><dd><ul class="simple">
+<li><p>A boolean indicating success (True) or failure (False) of the extraction.</p></li>
+<li><p>The cleaned abstract string, or None if no abstract was found.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[bool, str]</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Design:</dt><dd><p>Retrieves the abstract using the predefined abstract_key.
+Cleans the abstract using the clean_abstract method.
+Logs a warning if no abstract is found.</p>
+</dd>
+<dt>Summary:</dt><dd><p>Extracts, cleans, and returns the publication abstract from Crossref JSON data.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.CrossrefAuthorExtractionStrategy">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">academic_metrics.strategies.AttributeExtractionStrategies.</span></span><span class="sig-name descname"><span class="pre">CrossrefAuthorExtractionStrategy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">warning_manager</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefAuthorExtractionStrategy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefAuthorExtractionStrategy" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy" title="academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy"><code class="xref py py-class docutils literal notranslate"><span class="pre">AttributeExtractionStrategy</span></code></a></p>
+<p>A strategy for extracting author information from Crossref data.</p>
+<p>This class implements the AttributeExtractionStrategy for author extraction
+specifically from Crossref JSON data. It focuses on extracting and organizing
+author names and handling cases where author information might be incomplete.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.CrossrefAuthorExtractionStrategy.unknown_authors">
+<span class="sig-name descname"><span class="pre">unknown_authors</span></span><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefAuthorExtractionStrategy.unknown_authors" title="Link to this definition">¶</a></dt>
+<dd><p>A dictionary to store information about authors with incomplete data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.CrossrefAuthorExtractionStrategy.missing_authors_file">
+<span class="sig-name descname"><span class="pre">missing_authors_file</span></span><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefAuthorExtractionStrategy.missing_authors_file" title="Link to this definition">¶</a></dt>
+<dd><p>The file path to store information about unknown authors.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.CrossrefAuthorExtractionStrategy.get_author_name">
+<span class="sig-name descname"><span class="pre">get_author_name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefAuthorExtractionStrategy.get_author_name"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefAuthorExtractionStrategy.get_author_name" title="Link to this definition">¶</a></dt>
+<dd><p>Constructs a full author name from given and family name components.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.CrossrefAuthorExtractionStrategy.extract_attribute">
+<span class="sig-name descname"><span class="pre">extract_attribute</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefAuthorExtractionStrategy.extract_attribute"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefAuthorExtractionStrategy.extract_attribute" title="Link to this definition">¶</a></dt>
+<dd><p>Extracts and organizes author information from the Crossref entry.</p>
+</dd></dl>
+
+<dl class="simple">
+<dt>Design:</dt><dd><p>Utilizes helper methods to process individual author items and organize them.
+Implements the Strategy pattern for author extraction from Crossref data.</p>
+</dd>
+<dt>Summary:</dt><dd><p>Provides a specialized strategy for extracting and organizing author information
+from Crossref data entries, handling potential incomplete author data.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="id15">
+<span class="sig-name descname"><span class="pre">get_author_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">author_item</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefAuthorExtractionStrategy.get_author_name"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id15" title="Link to this definition">¶</a></dt>
+<dd><p>Constructs a full author name from given and family name components.</p>
+<p>This method attempts to create a full author name from the given and family
+name fields in the author item. If either component is missing, it logs a warning.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>author_item</strong> (<em>dict</em>) – A dictionary containing author information from Crossref.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The full author name if both components are present, None otherwise.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Design:</dt><dd><p>Extracts given and family names from the author item.
+Logs a warning if either component is missing.</p>
+</dd>
+<dt>Summary:</dt><dd><p>Constructs and returns a full author name, or None if information is incomplete.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id16">
+<span class="sig-name descname"><span class="pre">extract_attribute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">crossref_json</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefAuthorExtractionStrategy.extract_attribute"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id16" title="Link to this definition">¶</a></dt>
+<dd><p>Extracts and organizes author information from the Crossref entry.</p>
+<p>This method processes the Crossref JSON data to extract author information,
+organizes it into a structured format, and returns a list of author names.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>crossref_json</strong> (<em>dict</em>) – The Crossref JSON data containing the publication information.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>A tuple containing:</dt><dd><ul class="simple">
+<li><p>A boolean indicating success (True) or failure (False) of the extraction.</p></li>
+<li><p>A list of author names extracted from the Crossref data.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[bool, list[str]]</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Design:</dt><dd><p>Uses helper methods to extract author objects and organize them into a sequence.
+Converts the organized author data into a simple list of names.</p>
+</dd>
+<dt>Summary:</dt><dd><p>Extracts, organizes, and returns a list of author names from Crossref JSON data.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.CrossrefDepartmentExtractionStrategy">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">academic_metrics.strategies.AttributeExtractionStrategies.</span></span><span class="sig-name descname"><span class="pre">CrossrefDepartmentExtractionStrategy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">warning_manager</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefDepartmentExtractionStrategy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefDepartmentExtractionStrategy" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy" title="academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy"><code class="xref py py-class docutils literal notranslate"><span class="pre">AttributeExtractionStrategy</span></code></a></p>
+<p>A strategy for extracting department information from Crossref data.</p>
+<p>This class implements the AttributeExtractionStrategy for department extraction
+specifically from Crossref JSON data. It focuses on extracting and organizing
+department affiliations for each author in a publication.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.CrossrefDepartmentExtractionStrategy.extract_attribute">
+<span class="sig-name descname"><span class="pre">extract_attribute</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefDepartmentExtractionStrategy.extract_attribute"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefDepartmentExtractionStrategy.extract_attribute" title="Link to this definition">¶</a></dt>
+<dd><p>Extracts and organizes department affiliations from the Crossref entry.</p>
+</dd></dl>
+
+<dl class="simple">
+<dt>Design:</dt><dd><p>Utilizes helper methods to process author information and extract department affiliations.
+Implements the Strategy pattern for department extraction from Crossref data.</p>
+</dd>
+<dt>Summary:</dt><dd><p>Provides a specialized strategy for extracting and organizing department affiliations
+for authors from Crossref data entries.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="id17">
+<span class="sig-name descname"><span class="pre">extract_attribute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">crossref_json</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefDepartmentExtractionStrategy.extract_attribute"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id17" title="Link to this definition">¶</a></dt>
+<dd><p>Extracts and organizes department affiliations from the Crossref entry.</p>
+<p>This method processes the Crossref JSON data to extract department affiliations
+for each author, organizing them into a dictionary structure.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>crossref_json</strong> (<em>dict</em>) – The Crossref JSON data containing the publication information.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>A tuple containing:</dt><dd><ul class="simple">
+<li><p>A boolean indicating success (True) or failure (False) of the extraction.</p></li>
+<li><p>A dictionary where keys are author names and values are lists of their affiliations.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[bool, dict[str, list[str]]]</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Design:</dt><dd><p>Uses helper methods to extract author objects and organize them into a sequence.
+Processes both the first author and additional authors separately.
+Creates a dictionary mapping author names to their department affiliations.
+Logs a warning if no department affiliations are found.</p>
+</dd>
+<dt>Summary:</dt><dd><p>Extracts and returns a dictionary of author names mapped to their department affiliations
+from Crossref JSON data.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.CrossrefCategoriesExtractionStrategy">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">academic_metrics.strategies.AttributeExtractionStrategies.</span></span><span class="sig-name descname"><span class="pre">CrossrefCategoriesExtractionStrategy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">warning_manager</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefCategoriesExtractionStrategy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefCategoriesExtractionStrategy" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy" title="academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy"><code class="xref py py-class docutils literal notranslate"><span class="pre">AttributeExtractionStrategy</span></code></a></p>
+<p>A strategy for extracting category information from Crossref data.</p>
+<p>This class implements the AttributeExtractionStrategy for category extraction
+specifically from Crossref JSON data. It focuses on retrieving the categories
+associated with a publication.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.CrossrefCategoriesExtractionStrategy.extract_attribute">
+<span class="sig-name descname"><span class="pre">extract_attribute</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefCategoriesExtractionStrategy.extract_attribute"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefCategoriesExtractionStrategy.extract_attribute" title="Link to this definition">¶</a></dt>
+<dd><p>Extracts the categories from the Crossref entry.</p>
+</dd></dl>
+
+<dl class="simple">
+<dt>Design:</dt><dd><p>Implements the Strategy pattern for category extraction from Crossref data.
+Uses a simple dictionary lookup to retrieve category information.</p>
+</dd>
+<dt>Summary:</dt><dd><p>Provides a specialized strategy for extracting publication categories
+from Crossref data entries.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="id18">
+<span class="sig-name descname"><span class="pre">extract_attribute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">crossref_json</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefCategoriesExtractionStrategy.extract_attribute"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id18" title="Link to this definition">¶</a></dt>
+<dd><p>Extracts the categories from the Crossref entry.</p>
+<p>This method retrieves the categories associated with a publication
+from the Crossref JSON data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>crossref_json</strong> (<em>dict</em>) – The Crossref JSON data containing the publication information.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>A tuple containing:</dt><dd><ul class="simple">
+<li><p>A boolean indicating success (True) if categories are found, False otherwise.</p></li>
+<li><p>A list of category strings, or None if no categories are found.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[bool, list[str]]</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Design:</dt><dd><p>Uses a simple dictionary get method to retrieve the categories.
+Returns True only if categories are present.</p>
+</dd>
+<dt>Summary:</dt><dd><p>Extracts and returns the categories associated with a publication from Crossref JSON data.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.CrossrefCitationCountExtractionStrategy">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">academic_metrics.strategies.AttributeExtractionStrategies.</span></span><span class="sig-name descname"><span class="pre">CrossrefCitationCountExtractionStrategy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">warning_manager</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefCitationCountExtractionStrategy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefCitationCountExtractionStrategy" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy" title="academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy"><code class="xref py py-class docutils literal notranslate"><span class="pre">AttributeExtractionStrategy</span></code></a></p>
+<p>A strategy for extracting citation count information from Crossref data.</p>
+<p>This class implements the AttributeExtractionStrategy for citation count extraction
+specifically from Crossref JSON data. It focuses on retrieving the number of times
+a publication has been cited.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.CrossrefCitationCountExtractionStrategy.extract_attribute">
+<span class="sig-name descname"><span class="pre">extract_attribute</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefCitationCountExtractionStrategy.extract_attribute"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefCitationCountExtractionStrategy.extract_attribute" title="Link to this definition">¶</a></dt>
+<dd><p>Extracts the citation count from the Crossref entry.</p>
+</dd></dl>
+
+<dl class="simple">
+<dt>Design:</dt><dd><p>Implements the Strategy pattern for citation count extraction from Crossref data.
+Uses a simple dictionary lookup to retrieve citation count information.</p>
+</dd>
+<dt>Summary:</dt><dd><p>Provides a specialized strategy for extracting publication citation counts
+from Crossref data entries.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="id19">
+<span class="sig-name descname"><span class="pre">extract_attribute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">crossref_json</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefCitationCountExtractionStrategy.extract_attribute"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id19" title="Link to this definition">¶</a></dt>
+<dd><p>Extracts the citation count from the Crossref entry.</p>
+<p>This method retrieves the number of times a publication has been cited
+from the Crossref JSON data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>crossref_json</strong> (<em>dict</em>) – The Crossref JSON data containing the publication information.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>A tuple containing:</dt><dd><ul class="simple">
+<li><p>A boolean always set to True (as the method always returns a count, even if it’s 0).</p></li>
+<li><p>An integer representing the citation count.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[bool, int]</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Design:</dt><dd><p>Uses a dictionary get method to retrieve the citation count, defaulting to 0 if not found.
+Always returns True as the first element of the tuple, as a count is always available.</p>
+</dd>
+<dt>Summary:</dt><dd><p>Extracts and returns the citation count for a publication from Crossref JSON data.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.CrossrefLicenseURLExtractionStrategy">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">academic_metrics.strategies.AttributeExtractionStrategies.</span></span><span class="sig-name descname"><span class="pre">CrossrefLicenseURLExtractionStrategy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">warning_manager</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefLicenseURLExtractionStrategy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefLicenseURLExtractionStrategy" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy" title="academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy"><code class="xref py py-class docutils literal notranslate"><span class="pre">AttributeExtractionStrategy</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.CrossrefLicenseURLExtractionStrategy.extract_attribute">
+<span class="sig-name descname"><span class="pre">extract_attribute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entry_text</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefLicenseURLExtractionStrategy.extract_attribute"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefLicenseURLExtractionStrategy.extract_attribute" title="Link to this definition">¶</a></dt>
+<dd><p>Abstract method to extract a specific attribute from the entry text.</p>
+<p>This method should be implemented by subclasses to define the specific
+extraction logic for each attribute type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>entry_text</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></span>) – The text or data from which to extract the attribute.</p></li>
+<li><p><strong>data.</strong> (<em>entry_text applies to both WoS and Crossref</em>)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</span></p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The extracted attribute value.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>NotImplementedError</strong> – If the method is not implemented in a subclass.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Design:</dt><dd><p>This abstract method enforces a common interface for all attribute
+extraction strategies, allowing for polymorphic use of different
+strategies.</p>
+</dd>
+<dt>Summary:</dt><dd><p>Defines the contract for attribute extraction methods in subclasses.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.CrossrefPublishedPrintExtractionStrategy">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">academic_metrics.strategies.AttributeExtractionStrategies.</span></span><span class="sig-name descname"><span class="pre">CrossrefPublishedPrintExtractionStrategy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">warning_manager</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefPublishedPrintExtractionStrategy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefPublishedPrintExtractionStrategy" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy" title="academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy"><code class="xref py py-class docutils literal notranslate"><span class="pre">AttributeExtractionStrategy</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.CrossrefPublishedPrintExtractionStrategy.extract_attribute">
+<span class="sig-name descname"><span class="pre">extract_attribute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entry_text</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefPublishedPrintExtractionStrategy.extract_attribute"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefPublishedPrintExtractionStrategy.extract_attribute" title="Link to this definition">¶</a></dt>
+<dd><p>Abstract method to extract a specific attribute from the entry text.</p>
+<p>This method should be implemented by subclasses to define the specific
+extraction logic for each attribute type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>entry_text</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></span>) – The text or data from which to extract the attribute.</p></li>
+<li><p><strong>data.</strong> (<em>entry_text applies to both WoS and Crossref</em>)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</span></p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The extracted attribute value.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>NotImplementedError</strong> – If the method is not implemented in a subclass.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Design:</dt><dd><p>This abstract method enforces a common interface for all attribute
+extraction strategies, allowing for polymorphic use of different
+strategies.</p>
+</dd>
+<dt>Summary:</dt><dd><p>Defines the contract for attribute extraction methods in subclasses.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.CrossrefCreatedDateExtractionStrategy">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">academic_metrics.strategies.AttributeExtractionStrategies.</span></span><span class="sig-name descname"><span class="pre">CrossrefCreatedDateExtractionStrategy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">warning_manager</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefCreatedDateExtractionStrategy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefCreatedDateExtractionStrategy" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy" title="academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy"><code class="xref py py-class docutils literal notranslate"><span class="pre">AttributeExtractionStrategy</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.CrossrefCreatedDateExtractionStrategy.extract_attribute">
+<span class="sig-name descname"><span class="pre">extract_attribute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entry_text</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefCreatedDateExtractionStrategy.extract_attribute"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefCreatedDateExtractionStrategy.extract_attribute" title="Link to this definition">¶</a></dt>
+<dd><p>Abstract method to extract a specific attribute from the entry text.</p>
+<p>This method should be implemented by subclasses to define the specific
+extraction logic for each attribute type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>entry_text</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></span>) – The text or data from which to extract the attribute.</p></li>
+<li><p><strong>data.</strong> (<em>entry_text applies to both WoS and Crossref</em>)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</span></p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The extracted attribute value.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>NotImplementedError</strong> – If the method is not implemented in a subclass.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Design:</dt><dd><p>This abstract method enforces a common interface for all attribute
+extraction strategies, allowing for polymorphic use of different
+strategies.</p>
+</dd>
+<dt>Summary:</dt><dd><p>Defines the contract for attribute extraction methods in subclasses.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.CrossrefPublishedOnlineExtractionStrategy">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">academic_metrics.strategies.AttributeExtractionStrategies.</span></span><span class="sig-name descname"><span class="pre">CrossrefPublishedOnlineExtractionStrategy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">warning_manager</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefPublishedOnlineExtractionStrategy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefPublishedOnlineExtractionStrategy" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy" title="academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy"><code class="xref py py-class docutils literal notranslate"><span class="pre">AttributeExtractionStrategy</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.CrossrefPublishedOnlineExtractionStrategy.extract_attribute">
+<span class="sig-name descname"><span class="pre">extract_attribute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entry_text</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefPublishedOnlineExtractionStrategy.extract_attribute"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefPublishedOnlineExtractionStrategy.extract_attribute" title="Link to this definition">¶</a></dt>
+<dd><p>Abstract method to extract a specific attribute from the entry text.</p>
+<p>This method should be implemented by subclasses to define the specific
+extraction logic for each attribute type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>entry_text</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></span>) – The text or data from which to extract the attribute.</p></li>
+<li><p><strong>data.</strong> (<em>entry_text applies to both WoS and Crossref</em>)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</span></p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The extracted attribute value.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>NotImplementedError</strong> – If the method is not implemented in a subclass.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Design:</dt><dd><p>This abstract method enforces a common interface for all attribute
+extraction strategies, allowing for polymorphic use of different
+strategies.</p>
+</dd>
+<dt>Summary:</dt><dd><p>Defines the contract for attribute extraction methods in subclasses.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.CrossrefJournalExtractionStrategy">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">academic_metrics.strategies.AttributeExtractionStrategies.</span></span><span class="sig-name descname"><span class="pre">CrossrefJournalExtractionStrategy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">warning_manager</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefJournalExtractionStrategy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefJournalExtractionStrategy" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy" title="academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy"><code class="xref py py-class docutils literal notranslate"><span class="pre">AttributeExtractionStrategy</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.CrossrefJournalExtractionStrategy.extract_attribute">
+<span class="sig-name descname"><span class="pre">extract_attribute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entry_text</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefJournalExtractionStrategy.extract_attribute"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefJournalExtractionStrategy.extract_attribute" title="Link to this definition">¶</a></dt>
+<dd><p>Abstract method to extract a specific attribute from the entry text.</p>
+<p>This method should be implemented by subclasses to define the specific
+extraction logic for each attribute type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>entry_text</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></span>) – The text or data from which to extract the attribute.</p></li>
+<li><p><strong>data.</strong> (<em>entry_text applies to both WoS and Crossref</em>)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</span></p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The extracted attribute value.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>NotImplementedError</strong> – If the method is not implemented in a subclass.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Design:</dt><dd><p>This abstract method enforces a common interface for all attribute
+extraction strategies, allowing for polymorphic use of different
+strategies.</p>
+</dd>
+<dt>Summary:</dt><dd><p>Defines the contract for attribute extraction methods in subclasses.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.CrossrefURLExtractionStrategy">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">academic_metrics.strategies.AttributeExtractionStrategies.</span></span><span class="sig-name descname"><span class="pre">CrossrefURLExtractionStrategy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">warning_manager</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefURLExtractionStrategy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefURLExtractionStrategy" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy" title="academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy"><code class="xref py py-class docutils literal notranslate"><span class="pre">AttributeExtractionStrategy</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.CrossrefURLExtractionStrategy.extract_attribute">
+<span class="sig-name descname"><span class="pre">extract_attribute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entry_text</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefURLExtractionStrategy.extract_attribute"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefURLExtractionStrategy.extract_attribute" title="Link to this definition">¶</a></dt>
+<dd><p>Abstract method to extract a specific attribute from the entry text.</p>
+<p>This method should be implemented by subclasses to define the specific
+extraction logic for each attribute type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>entry_text</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></span>) – The text or data from which to extract the attribute.</p></li>
+<li><p><strong>data.</strong> (<em>entry_text applies to both WoS and Crossref</em>)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</span></p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The extracted attribute value.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>NotImplementedError</strong> – If the method is not implemented in a subclass.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Design:</dt><dd><p>This abstract method enforces a common interface for all attribute
+extraction strategies, allowing for polymorphic use of different
+strategies.</p>
+</dd>
+<dt>Summary:</dt><dd><p>Defines the contract for attribute extraction methods in subclasses.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.CrossrefDOIExtractionStrategy">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">academic_metrics.strategies.AttributeExtractionStrategies.</span></span><span class="sig-name descname"><span class="pre">CrossrefDOIExtractionStrategy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">warning_manager</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefDOIExtractionStrategy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefDOIExtractionStrategy" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy" title="academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy"><code class="xref py py-class docutils literal notranslate"><span class="pre">AttributeExtractionStrategy</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.CrossrefDOIExtractionStrategy.extract_attribute">
+<span class="sig-name descname"><span class="pre">extract_attribute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entry_text</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefDOIExtractionStrategy.extract_attribute"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefDOIExtractionStrategy.extract_attribute" title="Link to this definition">¶</a></dt>
+<dd><p>Abstract method to extract a specific attribute from the entry text.</p>
+<p>This method should be implemented by subclasses to define the specific
+extraction logic for each attribute type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>entry_text</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></span>) – The text or data from which to extract the attribute.</p></li>
+<li><p><strong>data.</strong> (<em>entry_text applies to both WoS and Crossref</em>)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</span></p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The extracted attribute value.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>NotImplementedError</strong> – If the method is not implemented in a subclass.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Design:</dt><dd><p>This abstract method enforces a common interface for all attribute
+extraction strategies, allowing for polymorphic use of different
+strategies.</p>
+</dd>
+<dt>Summary:</dt><dd><p>Defines the contract for attribute extraction methods in subclasses.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.CrossrefThemesExtractionStrategy">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">academic_metrics.strategies.AttributeExtractionStrategies.</span></span><span class="sig-name descname"><span class="pre">CrossrefThemesExtractionStrategy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">warning_manager</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefThemesExtractionStrategy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefThemesExtractionStrategy" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy" title="academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy"><code class="xref py py-class docutils literal notranslate"><span class="pre">AttributeExtractionStrategy</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.CrossrefThemesExtractionStrategy.extract_attribute">
+<span class="sig-name descname"><span class="pre">extract_attribute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entry_text</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefThemesExtractionStrategy.extract_attribute"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefThemesExtractionStrategy.extract_attribute" title="Link to this definition">¶</a></dt>
+<dd><p>Abstract method to extract a specific attribute from the entry text.</p>
+<p>This method should be implemented by subclasses to define the specific
+extraction logic for each attribute type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>entry_text</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></span>) – The text or data from which to extract the attribute.</p></li>
+<li><p><strong>data.</strong> (<em>entry_text applies to both WoS and Crossref</em>)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]]</span></p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The extracted attribute value.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>NotImplementedError</strong> – If the method is not implemented in a subclass.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Design:</dt><dd><p>This abstract method enforces a common interface for all attribute
+extraction strategies, allowing for polymorphic use of different
+strategies.</p>
+</dd>
+<dt>Summary:</dt><dd><p>Defines the contract for attribute extraction methods in subclasses.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.CrossrefExtraContextExtractionStrategy">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">academic_metrics.strategies.AttributeExtractionStrategies.</span></span><span class="sig-name descname"><span class="pre">CrossrefExtraContextExtractionStrategy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">warning_manager</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefExtraContextExtractionStrategy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefExtraContextExtractionStrategy" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy" title="academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy"><code class="xref py py-class docutils literal notranslate"><span class="pre">AttributeExtractionStrategy</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.strategies.AttributeExtractionStrategies.CrossrefExtraContextExtractionStrategy.extract_attribute">
+<span class="sig-name descname"><span class="pre">extract_attribute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entry_text</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/strategies/AttributeExtractionStrategies.html#CrossrefExtraContextExtractionStrategy.extract_attribute"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefExtraContextExtractionStrategy.extract_attribute" title="Link to this definition">¶</a></dt>
+<dd><p>Abstract method to extract a specific attribute from the entry text.</p>
+<p>This method should be implemented by subclasses to define the specific
+extraction logic for each attribute type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>entry_text</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></span>) – The text or data from which to extract the attribute.</p></li>
+<li><p><strong>data.</strong> (<em>entry_text applies to both WoS and Crossref</em>)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</span></p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The extracted attribute value.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>NotImplementedError</strong> – If the method is not implemented in a subclass.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Design:</dt><dd><p>This abstract method enforces a common interface for all attribute
+extraction strategies, allowing for polymorphic use of different
+strategies.</p>
+</dd>
+<dt>Summary:</dt><dd><p>Defines the contract for attribute extraction methods in subclasses.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-academic_metrics.strategies">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-academic_metrics.strategies" title="Link to this heading">¶</a></h2>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+        <div id="show_right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&lt;</span><span>Page contents</span></a></p>
+        </div>
+
+        <div id="right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
+            <div class="page_toc">
+                <ul>
+<li><a class="reference internal" href="#">academic_metrics.strategies package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-academic_metrics.strategies.AttributeExtractionStrategies">academic_metrics.strategies.AttributeExtractionStrategies module</a><ul>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy"><code class="docutils literal notranslate"><span class="pre">AttributeExtractionStrategy</span></code></a><ul>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.logger"><code class="docutils literal notranslate"><span class="pre">AttributeExtractionStrategy.logger</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.abstract_pattern"><code class="docutils literal notranslate"><span class="pre">AttributeExtractionStrategy.abstract_pattern</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.missing_abstracts_file"><code class="docutils literal notranslate"><span class="pre">AttributeExtractionStrategy.missing_abstracts_file</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.warning_manager"><code class="docutils literal notranslate"><span class="pre">AttributeExtractionStrategy.warning_manager</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.unknown_authors_dict"><code class="docutils literal notranslate"><span class="pre">AttributeExtractionStrategy.unknown_authors_dict</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.unknown_authors_file"><code class="docutils literal notranslate"><span class="pre">AttributeExtractionStrategy.unknown_authors_file</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.crossref_author_key"><code class="docutils literal notranslate"><span class="pre">AttributeExtractionStrategy.crossref_author_key</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.extract_attribute"><code class="docutils literal notranslate"><span class="pre">AttributeExtractionStrategy.extract_attribute()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.html_to_markdown"><code class="docutils literal notranslate"><span class="pre">AttributeExtractionStrategy.html_to_markdown()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.get_crossref_author_affils"><code class="docutils literal notranslate"><span class="pre">AttributeExtractionStrategy.get_crossref_author_affils()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.get_author_obj"><code class="docutils literal notranslate"><span class="pre">AttributeExtractionStrategy.get_author_obj()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.set_author_sequence_dict"><code class="docutils literal notranslate"><span class="pre">AttributeExtractionStrategy.set_author_sequence_dict()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.write_missing_authors_file"><code class="docutils literal notranslate"><span class="pre">AttributeExtractionStrategy.write_missing_authors_file()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.create_author_sequence_dict"><code class="docutils literal notranslate"><span class="pre">AttributeExtractionStrategy.create_author_sequence_dict()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.create_unknown_authors_dict"><code class="docutils literal notranslate"><span class="pre">AttributeExtractionStrategy.create_unknown_authors_dict()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.log_extraction_warning"><code class="docutils literal notranslate"><span class="pre">AttributeExtractionStrategy.log_extraction_warning()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.generate_error_id"><code class="docutils literal notranslate"><span class="pre">AttributeExtractionStrategy.generate_error_id()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.AttributeExtractionStrategy.get_authors_as_list"><code class="docutils literal notranslate"><span class="pre">AttributeExtractionStrategy.get_authors_as_list()</span></code></a></li>
+<li><a class="reference internal" href="#id0"><code class="docutils literal notranslate"><span class="pre">AttributeExtractionStrategy.extract_attribute()</span></code></a></li>
+<li><a class="reference internal" href="#id1"><code class="docutils literal notranslate"><span class="pre">AttributeExtractionStrategy.html_to_markdown()</span></code></a></li>
+<li><a class="reference internal" href="#id2"><code class="docutils literal notranslate"><span class="pre">AttributeExtractionStrategy.get_crossref_author_affils()</span></code></a></li>
+<li><a class="reference internal" href="#id3"><code class="docutils literal notranslate"><span class="pre">AttributeExtractionStrategy.get_author_obj()</span></code></a></li>
+<li><a class="reference internal" href="#id4"><code class="docutils literal notranslate"><span class="pre">AttributeExtractionStrategy.create_author_sequence_dict()</span></code></a></li>
+<li><a class="reference internal" href="#id5"><code class="docutils literal notranslate"><span class="pre">AttributeExtractionStrategy.create_unknown_authors_dict()</span></code></a></li>
+<li><a class="reference internal" href="#id6"><code class="docutils literal notranslate"><span class="pre">AttributeExtractionStrategy.log_extraction_warning()</span></code></a></li>
+<li><a class="reference internal" href="#id7"><code class="docutils literal notranslate"><span class="pre">AttributeExtractionStrategy.generate_error_id()</span></code></a></li>
+<li><a class="reference internal" href="#id8"><code class="docutils literal notranslate"><span class="pre">AttributeExtractionStrategy.write_missing_authors_file()</span></code></a></li>
+<li><a class="reference internal" href="#id9"><code class="docutils literal notranslate"><span class="pre">AttributeExtractionStrategy.set_author_sequence_dict()</span></code></a></li>
+<li><a class="reference internal" href="#id10"><code class="docutils literal notranslate"><span class="pre">AttributeExtractionStrategy.get_authors_as_list()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefTitleExtractionStrategy"><code class="docutils literal notranslate"><span class="pre">CrossrefTitleExtractionStrategy</span></code></a><ul>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefTitleExtractionStrategy.title_key"><code class="docutils literal notranslate"><span class="pre">CrossrefTitleExtractionStrategy.title_key</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefTitleExtractionStrategy.clean_title"><code class="docutils literal notranslate"><span class="pre">CrossrefTitleExtractionStrategy.clean_title()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefTitleExtractionStrategy.extract_attribute"><code class="docutils literal notranslate"><span class="pre">CrossrefTitleExtractionStrategy.extract_attribute()</span></code></a></li>
+<li><a class="reference internal" href="#id11"><code class="docutils literal notranslate"><span class="pre">CrossrefTitleExtractionStrategy.clean_title()</span></code></a></li>
+<li><a class="reference internal" href="#id12"><code class="docutils literal notranslate"><span class="pre">CrossrefTitleExtractionStrategy.extract_attribute()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefAbstractExtractionStrategy"><code class="docutils literal notranslate"><span class="pre">CrossrefAbstractExtractionStrategy</span></code></a><ul>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefAbstractExtractionStrategy.abstract_key"><code class="docutils literal notranslate"><span class="pre">CrossrefAbstractExtractionStrategy.abstract_key</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefAbstractExtractionStrategy.clean_abstract"><code class="docutils literal notranslate"><span class="pre">CrossrefAbstractExtractionStrategy.clean_abstract()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefAbstractExtractionStrategy.extract_attribute"><code class="docutils literal notranslate"><span class="pre">CrossrefAbstractExtractionStrategy.extract_attribute()</span></code></a></li>
+<li><a class="reference internal" href="#id13"><code class="docutils literal notranslate"><span class="pre">CrossrefAbstractExtractionStrategy.clean_abstract()</span></code></a></li>
+<li><a class="reference internal" href="#id14"><code class="docutils literal notranslate"><span class="pre">CrossrefAbstractExtractionStrategy.extract_attribute()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefAuthorExtractionStrategy"><code class="docutils literal notranslate"><span class="pre">CrossrefAuthorExtractionStrategy</span></code></a><ul>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefAuthorExtractionStrategy.unknown_authors"><code class="docutils literal notranslate"><span class="pre">CrossrefAuthorExtractionStrategy.unknown_authors</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefAuthorExtractionStrategy.missing_authors_file"><code class="docutils literal notranslate"><span class="pre">CrossrefAuthorExtractionStrategy.missing_authors_file</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefAuthorExtractionStrategy.get_author_name"><code class="docutils literal notranslate"><span class="pre">CrossrefAuthorExtractionStrategy.get_author_name()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefAuthorExtractionStrategy.extract_attribute"><code class="docutils literal notranslate"><span class="pre">CrossrefAuthorExtractionStrategy.extract_attribute()</span></code></a></li>
+<li><a class="reference internal" href="#id15"><code class="docutils literal notranslate"><span class="pre">CrossrefAuthorExtractionStrategy.get_author_name()</span></code></a></li>
+<li><a class="reference internal" href="#id16"><code class="docutils literal notranslate"><span class="pre">CrossrefAuthorExtractionStrategy.extract_attribute()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefDepartmentExtractionStrategy"><code class="docutils literal notranslate"><span class="pre">CrossrefDepartmentExtractionStrategy</span></code></a><ul>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefDepartmentExtractionStrategy.extract_attribute"><code class="docutils literal notranslate"><span class="pre">CrossrefDepartmentExtractionStrategy.extract_attribute()</span></code></a></li>
+<li><a class="reference internal" href="#id17"><code class="docutils literal notranslate"><span class="pre">CrossrefDepartmentExtractionStrategy.extract_attribute()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefCategoriesExtractionStrategy"><code class="docutils literal notranslate"><span class="pre">CrossrefCategoriesExtractionStrategy</span></code></a><ul>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefCategoriesExtractionStrategy.extract_attribute"><code class="docutils literal notranslate"><span class="pre">CrossrefCategoriesExtractionStrategy.extract_attribute()</span></code></a></li>
+<li><a class="reference internal" href="#id18"><code class="docutils literal notranslate"><span class="pre">CrossrefCategoriesExtractionStrategy.extract_attribute()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefCitationCountExtractionStrategy"><code class="docutils literal notranslate"><span class="pre">CrossrefCitationCountExtractionStrategy</span></code></a><ul>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefCitationCountExtractionStrategy.extract_attribute"><code class="docutils literal notranslate"><span class="pre">CrossrefCitationCountExtractionStrategy.extract_attribute()</span></code></a></li>
+<li><a class="reference internal" href="#id19"><code class="docutils literal notranslate"><span class="pre">CrossrefCitationCountExtractionStrategy.extract_attribute()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefLicenseURLExtractionStrategy"><code class="docutils literal notranslate"><span class="pre">CrossrefLicenseURLExtractionStrategy</span></code></a><ul>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefLicenseURLExtractionStrategy.extract_attribute"><code class="docutils literal notranslate"><span class="pre">CrossrefLicenseURLExtractionStrategy.extract_attribute()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefPublishedPrintExtractionStrategy"><code class="docutils literal notranslate"><span class="pre">CrossrefPublishedPrintExtractionStrategy</span></code></a><ul>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefPublishedPrintExtractionStrategy.extract_attribute"><code class="docutils literal notranslate"><span class="pre">CrossrefPublishedPrintExtractionStrategy.extract_attribute()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefCreatedDateExtractionStrategy"><code class="docutils literal notranslate"><span class="pre">CrossrefCreatedDateExtractionStrategy</span></code></a><ul>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefCreatedDateExtractionStrategy.extract_attribute"><code class="docutils literal notranslate"><span class="pre">CrossrefCreatedDateExtractionStrategy.extract_attribute()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefPublishedOnlineExtractionStrategy"><code class="docutils literal notranslate"><span class="pre">CrossrefPublishedOnlineExtractionStrategy</span></code></a><ul>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefPublishedOnlineExtractionStrategy.extract_attribute"><code class="docutils literal notranslate"><span class="pre">CrossrefPublishedOnlineExtractionStrategy.extract_attribute()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefJournalExtractionStrategy"><code class="docutils literal notranslate"><span class="pre">CrossrefJournalExtractionStrategy</span></code></a><ul>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefJournalExtractionStrategy.extract_attribute"><code class="docutils literal notranslate"><span class="pre">CrossrefJournalExtractionStrategy.extract_attribute()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefURLExtractionStrategy"><code class="docutils literal notranslate"><span class="pre">CrossrefURLExtractionStrategy</span></code></a><ul>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefURLExtractionStrategy.extract_attribute"><code class="docutils literal notranslate"><span class="pre">CrossrefURLExtractionStrategy.extract_attribute()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefDOIExtractionStrategy"><code class="docutils literal notranslate"><span class="pre">CrossrefDOIExtractionStrategy</span></code></a><ul>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefDOIExtractionStrategy.extract_attribute"><code class="docutils literal notranslate"><span class="pre">CrossrefDOIExtractionStrategy.extract_attribute()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefThemesExtractionStrategy"><code class="docutils literal notranslate"><span class="pre">CrossrefThemesExtractionStrategy</span></code></a><ul>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefThemesExtractionStrategy.extract_attribute"><code class="docutils literal notranslate"><span class="pre">CrossrefThemesExtractionStrategy.extract_attribute()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefExtraContextExtractionStrategy"><code class="docutils literal notranslate"><span class="pre">CrossrefExtraContextExtractionStrategy</span></code></a><ul>
+<li><a class="reference internal" href="#academic_metrics.strategies.AttributeExtractionStrategies.CrossrefExtraContextExtractionStrategy.extract_attribute"><code class="docutils literal notranslate"><span class="pre">CrossrefExtraContextExtractionStrategy.extract_attribute()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-academic_metrics.strategies">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+    
+
+      <div class="clearer"></div>
+    </div>
+    <div class="button_nav_wrapper">
+        <div class="button_nav">
+            <div class="left">
+                
+            </div>
+
+            <div class="right">
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Spencer Presley, Cole Barbes.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    </div>
+
+<p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>
+  </body>
+</html>

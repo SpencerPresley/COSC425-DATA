@@ -1,0 +1,35 @@
+academic\_metrics package
+=========================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   academic_metrics.AI
+   academic_metrics.ChainBuilder
+   academic_metrics.DB
+   academic_metrics.ai_data_models
+   academic_metrics.ai_prompts
+   academic_metrics.configs
+   academic_metrics.constants
+   academic_metrics.core
+   academic_metrics.data_collection
+   academic_metrics.dataclass_models
+   academic_metrics.enums
+   academic_metrics.factories
+   academic_metrics.mapping
+   academic_metrics.orchestrators
+   academic_metrics.other
+   academic_metrics.runners
+   academic_metrics.strategies
+   academic_metrics.utils
+
+Module contents
+---------------
+
+.. automodule:: academic_metrics
+   :members:
+   :undoc-members:
+   :show-inheritance:

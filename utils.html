@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>utils package &#8212; Academic Metrics 0.1.0-beta documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+    <link rel="stylesheet" type="text/css" href="_static/basic_mod.css?v=9b2032db" />
+    <script src="_static/documentation_options.js?v=c903bf51"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <script src="_static/js/petite-vue.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="strategies package" href="strategies.html" /> 
+  </head><body data-dark_mode_code_blocks="true">
+
+<div id="top_nav">
+    
+
+    <nav>
+        
+            
+        
+
+        <p id="toggle_sidebar">
+            <a href="#" title="Toggle sidebar">|||</a>
+        </p>
+        <h1><a href="index.html" title="Go to homepage">Academic Metrics 0.1.0-beta documentation</a></h1>
+
+        <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
+    <template v-if="mode == 'light'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_light"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M67.48,18.073c1.913,-1.912 1.913,-5.018 0,-6.931c-1.912,-1.912 -5.018,-1.912 -6.931,0l-6.798,6.799c-1.912,1.912 -1.912,5.018 0,6.931c1.913,1.912 5.018,1.912 6.931,-0l6.798,-6.799Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.728,61.108c1.912,-1.913 1.912,-5.018 -0,-6.931c-1.913,-1.913 -5.019,-1.913 -6.931,-0l-6.799,6.798c-1.912,1.913 -1.912,5.019 0,6.931c1.913,1.913 5.019,1.913 6.931,0l6.799,-6.798Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.682,54.177c-1.913,-1.913 -5.018,-1.913 -6.931,-0c-1.912,1.913 -1.912,5.018 0,6.931l6.798,6.798c1.913,1.913 5.019,1.913 6.931,0c1.913,-1.912 1.913,-5.018 0,-6.931l-6.798,-6.798Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M4.901,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,-0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M18.929,11.142c-1.912,-1.912 -5.018,-1.912 -6.931,0c-1.912,1.913 -1.912,5.019 0,6.931l6.799,6.799c1.912,1.912 5.018,1.912 6.931,-0c1.912,-1.913 1.912,-5.019 -0,-6.931l-6.799,-6.799Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.108,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c-0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c-0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'dark'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_dark"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.901,2.196 -4.901,4.901c0,2.705 2.197,4.901 4.901,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.662,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.989,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.732,61.103c1.91,-1.91 1.91,-5.011 0,-6.921l-0.009,-0.01c-1.91,-1.91 -5.012,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.909,1.91 5.011,1.91 6.92,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.672,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.52,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l-0,-0.01c-0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.901,2.196 -4.901,4.901c0,2.704 2.197,4.9 4.901,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.73,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 -0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.098,34.623c-2.699,0 -4.891,2.192 -4.891,4.892l-0,0.019c-0,2.699 2.192,4.891 4.891,4.891c2.7,0 4.892,-2.192 4.892,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.892,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'darkest'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_darkest"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><path d="M39.315,23.791c8.684,-0 15.734,7.05 15.734,15.733c0,8.684 -7.05,15.734 -15.734,15.734c-8.683,0 -15.733,-7.05 -15.733,-15.734c-0,-8.683 7.05,-15.733 15.733,-15.733Zm0,4.737c6.069,0 10.997,4.927 10.997,10.996c-0,6.069 -4.928,10.996 -10.997,10.996c-6.068,0 -10.996,-4.927 -10.996,-10.996c0,-6.069 4.928,-10.996 10.996,-10.996Z" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.216,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.9,2.196 -4.9,4.901c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.666,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.99,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.737,61.103c1.909,-1.91 1.909,-5.011 -0,-6.921l-0.01,-0.01c-1.91,-1.91 -5.011,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.91,1.91 5.011,1.91 6.921,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.676,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.524,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l0,-0.01c0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.216,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901c-0,2.704 2.196,4.9 4.9,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.734,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.103,34.623c-2.7,0 -4.892,2.192 -4.892,4.892l-0,0.019c-0,2.699 2.192,4.891 4.892,4.891c2.699,0 4.891,-2.192 4.891,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.891,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+</a>
+
+<script>
+(function() {
+    const LOCAL_STORAGE_KEY = 'piccoloThemeMode'
+
+    var initialMode = localStorage.getItem(LOCAL_STORAGE_KEY)
+
+    if (initialMode) {
+        // Make sure the value in local storage is valid
+        if (['light', 'dark', 'darkest'].indexOf(initialMode) == -1) {
+            initialMode = 'light'
+            localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+        }
+    } else {
+        // Check if the client prefers dark mode
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            initialMode = 'dark'
+        } else {
+            initialMode = 'light'
+        }
+        localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+    }
+
+    document.documentElement.dataset.mode = initialMode
+
+    PetiteVue.createApp({
+        'mode': initialMode,
+        handleClick() {
+            let currentMode = this.mode
+
+            if (currentMode == 'light') {
+                this.mode = 'dark'
+            } else if (currentMode == 'dark') {
+                this.mode = 'darkest'
+            } else if (currentMode == 'darkest') {
+                this.mode = 'light'
+            }
+
+            document.documentElement.dataset.mode = this.mode
+            localStorage.setItem(LOCAL_STORAGE_KEY, this.mode)
+
+            console.log(this.mode)
+        }
+    }).mount('#mode_toggle')
+})()
+</script>
+            <p class="mobile_search_link">
+                <a href="search.html" title="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 64" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path d="M14.873 40.009c-2.315-3.943-3.642-8.532-3.642-13.429C11.231 11.91 23.141 0 37.811 0s26.58 11.91 26.58 26.58-11.91 26.58-26.58 26.58a26.44 26.44 0 0 1-14.277-4.161L9.739 62.794a3.12 3.12 0 0 1-4.413 0L.913 58.382c-1.217-1.218-1.217-3.196 0-4.413l13.96-13.96zM37.811 8.054c10.225 0 18.526 8.301 18.526 18.526s-8.301 18.526-18.526 18.526-18.526-8.301-18.526-18.526S27.586 8.054 37.811 8.054z" fill="#fff" />
+                    </svg>
+                </a>
+            </p>
+        
+
+        <div class="searchbox_wrapper">
+            
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="abstract_classifier.html">Abstract Classifier Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="category_processor.html">Category Processor Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faculty_set_postprocessor.html">Faculty Set Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config.html">Global Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chain_builder.html">Chain Builder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ai_prompts.html">ai_prompts package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection.html">data_collection package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dataclass_models.html">dataclass_models package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DB.html">DB package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enums.html">enums package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="factories.html">factories package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="orchestrators.html">orchestrators package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="other.html">other package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="runners.html">runners package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="strategies.html">strategies package</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">utils package</a></li>
+</ul>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="utils-package">
+<h1>utils package<a class="headerlink" href="#utils-package" title="Link to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
+</section>
+<section id="utils-api-key-validator-module">
+<h2>utils.api_key_validator module<a class="headerlink" href="#utils-api-key-validator-module" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">academic_metrics.utils.api_key_validator.</span></span><span class="sig-name descname"><span class="pre">ValidationResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">openai</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">anthropic</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">google</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/utils/api_key_validator.html#ValidationResult"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">openai</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">anthropic</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">google</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">academic_metrics.utils.api_key_validator.</span></span><span class="sig-name descname"><span class="pre">APIKeyValidator</span></span><a class="reference internal" href="_modules/academic_metrics/utils/api_key_validator.html#APIKeyValidator"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Validator for LLM API keys across different services.</p>
+<p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">validator</span> <span class="o">=</span> <span class="n">APIKeyValidator</span><span class="p">(</span><span class="n">api_key</span><span class="o">=</span><span class="s2">&quot;sk-...&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">if</span> <span class="n">validator</span><span class="o">.</span><span class="n">is_valid</span><span class="p">():</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Key is valid!&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">validator</span><span class="o">.</span><span class="n">print_results</span><span class="p">()</span>  <span class="c1"># See which services work</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_validate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">api_key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/utils/api_key_validator.html#APIKeyValidator._validate"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Run validation tests for each service.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_check_attr</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/utils/api_key_validator.html#APIKeyValidator._check_attr"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Check if the API key is valid for any service.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">is_valid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">api_key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/utils/api_key_validator.html#APIKeyValidator.is_valid"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Check if the API key is valid for any service. Validates if not already done.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_results_for_api_key</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">api_key</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/utils/api_key_validator.html#APIKeyValidator.get_results_for_api_key"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Get detailed validation results. Validates if not already done.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>]</span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_full_results</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/utils/api_key_validator.html#APIKeyValidator.get_full_results"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Get detailed validation results for all keys.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>]]</span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">print_results_for_api_key</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">api_key</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/utils/api_key_validator.html#APIKeyValidator.print_results_for_api_key"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Print formatted validation results for a given API key.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">print_full_results</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/utils/api_key_validator.html#APIKeyValidator.print_full_results"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Print formatted validation results for all keys.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="utils-taxonomy-util-module">
+<h2>utils.taxonomy_util module<a class="headerlink" href="#utils-taxonomy-util-module" title="Link to this heading">¶</a></h2>
+<dl class="py data">
+<dt class="sig sig-object py">
+<span class="sig-prename descclassname"><span class="pre">academic_metrics.utils.taxonomy_util.</span></span><span class="sig-name descname"><span class="pre">TaxonomyDict</span></span></dt>
+<dd><p>Type alias representing the taxonomy dictionary structure.</p>
+<dl>
+<dt>This type represents a three-level nested dictionary structure where:</dt><dd><ul class="simple">
+<li><p>The outer dictionary maps top-level category names to mid-level dictionaries</p></li>
+<li><p>The mid-level dictionaries map mid-level category names to lists of low-level categories</p></li>
+<li><p>The innermost lists contain strings representing low-level category names</p></li>
+</ul>
+</dd>
+<dt>Type Structure:</dt><dd><dl class="simple">
+<dt>Dict[str, Dict[str, List[str]]] where:</dt><dd><ul class="simple">
+<li><p>First str: Top-level category name</p></li>
+<li><p>Second str: Mid-level category name</p></li>
+<li><p>List[str]: List of low-level category names</p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+<dt>Example Structure:</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;Computer Science&quot;</span><span class="p">:</span> <span class="p">{</span>                     <span class="c1"># Top-level category</span>
+        <span class="s2">&quot;Artificial Intelligence&quot;</span><span class="p">:</span> <span class="p">[</span>          <span class="c1"># Mid-level category</span>
+            <span class="s2">&quot;Machine Learning&quot;</span><span class="p">,</span>              <span class="c1"># Low-level category</span>
+            <span class="s2">&quot;Natural Language Processing&quot;</span><span class="p">,</span>   <span class="c1"># Low-level category</span>
+            <span class="s2">&quot;Computer Vision&quot;</span>                <span class="c1"># Low-level category</span>
+        <span class="p">],</span>
+        <span class="s2">&quot;Software Engineering&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;Software Design&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Software Testing&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;DevOps&quot;</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]]]</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py">
+<span class="sig-prename descclassname"><span class="pre">academic_metrics.utils.taxonomy_util.</span></span><span class="sig-name descname"><span class="pre">TaxonomyLevel</span></span></dt>
+<dd><p>Type alias representing valid taxonomy levels.</p>
+<p>This type represents the three possible levels in the taxonomy hierarchy using string literals.</p>
+<dl>
+<dt>Type Structure:</dt><dd><dl class="simple">
+<dt>Literal[“top”, “mid”, “low”] where:</dt><dd><ul class="simple">
+<li><p>“top”: Represents the highest level categories (e.g., “Computer Science”)</p></li>
+<li><p>“mid”: Represents middle-level categories (e.g., “Artificial Intelligence”)</p></li>
+<li><p>“low”: Represents the most specific categories (e.g., “Machine Learning”)</p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+<dt>Usage:</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">example_function</span><span class="p">(</span><span class="n">level</span><span class="p">:</span> <span class="n">TaxonomyLevel</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="k">match</span> <span class="n">level</span><span class="p">:</span>
+        <span class="k">case</span> <span class="s2">&quot;top&quot;</span><span class="p">:</span>
+            <span class="c1"># Handle top-level category</span>
+            <span class="k">pass</span>
+        <span class="k">case</span> <span class="s2">&quot;mid&quot;</span><span class="p">:</span>
+            <span class="c1"># Handle mid-level category</span>
+            <span class="k">pass</span>
+        <span class="k">case</span> <span class="s2">&quot;low&quot;</span><span class="p">:</span>
+            <span class="c1"># Handle low-level category</span>
+            <span class="k">pass</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The type system will ensure that only these three string literals can be used
+where a TaxonomyLevel is expected. Any other string will result in a type error.</p>
+</div>
+<p class="rubric">Example</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Valid usage</span>
+<span class="n">level</span><span class="p">:</span> <span class="n">TaxonomyLevel</span> <span class="o">=</span> <span class="s2">&quot;top&quot;</span>      <span class="c1"># OK</span>
+<span class="n">level</span><span class="p">:</span> <span class="n">TaxonomyLevel</span> <span class="o">=</span> <span class="s2">&quot;mid&quot;</span>      <span class="c1"># OK</span>
+<span class="n">level</span><span class="p">:</span> <span class="n">TaxonomyLevel</span> <span class="o">=</span> <span class="s2">&quot;low&quot;</span>      <span class="c1"># OK</span>
+
+<span class="c1"># Invalid usage (would cause type error)</span>
+<span class="c1"># level: TaxonomyLevel = &quot;other&quot;  # Type error!</span>
+</pre></div>
+</div>
+<p>alias of <code class="xref py py-obj docutils literal notranslate"><span class="pre">Literal</span></code>[‘top’, ‘mid’, ‘low’]</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">academic_metrics.utils.taxonomy_util.</span></span><span class="sig-name descname"><span class="pre">Taxonomy</span></span><a class="reference internal" href="_modules/academic_metrics/utils/taxonomy_util.html#Taxonomy"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A class for managing and querying a three-level taxonomy structure.</p>
+<p>This class provides functionality to work with a hierarchical taxonomy that has three levels:
+top, mid, and low. It allows for querying categories at each level, validating categories,
+and finding relationships between categories at different levels.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_taxonomy</span></span></dt>
+<dd><p>The complete taxonomy structure as a nested dictionary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>TaxonomyDict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_valid_levels</span></span></dt>
+<dd><p>List of valid taxonomy levels [“top”, “mid”, “low”].</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[TaxonomyLevel]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_all_top_categories</span></span></dt>
+<dd><p>Cached list of all top-level categories.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_all_mid_categories</span></span></dt>
+<dd><p>Cached list of all mid-level categories.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_all_low_categories</span></span></dt>
+<dd><p>Cached list of all low-level categories.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">logger</span></span></dt>
+<dd><p>Logger instance for this class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>logging.Logger</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">Public</span> <span class="pre">Methods</span></span></dt>
+<dd><p>get_top_categories(): Get all top-level categories.
+get_mid_categories(top_category): Get mid-level categories for a top category.
+get_low_categories(top_category, mid_category): Get low-level categories.
+get_top_cat_for_mid_cat(mid_cat): Find parent top category of a mid category.
+get_mid_cat_for_low_cat(low_cat): Find parent mid category of a low category.
+is_valid_category(category, level): Check if a category exists at a level.
+get_taxonomy(): Get the complete taxonomy dictionary.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">Private</span> <span class="pre">Methods</span></span></dt>
+<dd><p>_set_all_top_categories(): Initialize list of top categories.
+_set_all_mid_categories(): Initialize list of mid categories.
+_set_all_low_categories(): Initialize list of low categories.
+_load_taxonomy_from_string(taxonomy_str, logger): Load taxonomy from JSON.</p>
+</dd></dl>
+
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Create a taxonomy instance</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span> <span class="o">=</span> <span class="n">Taxonomy</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Get categories at different levels</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">top_cats</span> <span class="o">=</span> <span class="n">taxonomy</span><span class="o">.</span><span class="n">get_top_categories</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mid_cats</span> <span class="o">=</span> <span class="n">taxonomy</span><span class="o">.</span><span class="n">get_mid_categories</span><span class="p">(</span><span class="n">top_cats</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">low_cats</span> <span class="o">=</span> <span class="n">taxonomy</span><span class="o">.</span><span class="n">get_low_categories</span><span class="p">(</span><span class="n">top_cats</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">mid_cats</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Validate categories</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span><span class="o">.</span><span class="n">is_valid_category</span><span class="p">(</span><span class="n">top_cats</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">&quot;top&quot;</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Find parent categories</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">parent_top</span> <span class="o">=</span> <span class="n">taxonomy</span><span class="o">.</span><span class="n">get_top_cat_for_mid_cat</span><span class="p">(</span><span class="n">mid_cats</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">parent_mid</span> <span class="o">=</span> <span class="n">taxonomy</span><span class="o">.</span><span class="n">get_mid_cat_for_low_cat</span><span class="p">(</span><span class="n">low_cats</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_set_all_top_categories</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/utils/taxonomy_util.html#Taxonomy._set_all_top_categories"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Sets and returns all top-level categories from the taxonomy.</p>
+<p>This private method initializes the list of all top-level categories
+by calling get_top_categories(). It’s used during taxonomy initialization
+to cache the top-level categories for faster access.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A list of all top-level categories in the taxonomy.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>List[str]</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span> <span class="o">=</span> <span class="n">Taxonomy</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">top_cats</span> <span class="o">=</span> <span class="n">taxonomy</span><span class="o">.</span><span class="n">_set_all_top_categories</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">top_cats</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Verify all elements are strings</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">all</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">cat</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="k">for</span> <span class="n">cat</span> <span class="ow">in</span> <span class="n">top_cats</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Verify it matches direct access to top categories</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">top_cats</span> <span class="o">==</span> <span class="n">taxonomy</span><span class="o">.</span><span class="n">get_top_categories</span><span class="p">()</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_set_all_mid_categories</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/utils/taxonomy_util.html#Taxonomy._set_all_mid_categories"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Sets and returns all mid-level categories from the taxonomy.</p>
+<p>This private method collects all mid-level categories across all top-level categories
+by iterating through the taxonomy structure. It’s used during taxonomy initialization
+to cache the mid-level categories for faster access.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A list of all mid-level categories in the taxonomy.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>List[str]</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span> <span class="o">=</span> <span class="n">Taxonomy</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mid_cats</span> <span class="o">=</span> <span class="n">taxonomy</span><span class="o">.</span><span class="n">_set_all_mid_categories</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">mid_cats</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Verify all elements are strings</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">all</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">cat</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="k">for</span> <span class="n">cat</span> <span class="ow">in</span> <span class="n">mid_cats</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Verify each mid category belongs to some top category</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">any</span><span class="p">(</span><span class="n">mid_cats</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">in</span> <span class="n">taxonomy</span><span class="o">.</span><span class="n">get_mid_categories</span><span class="p">(</span><span class="n">top_cat</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="k">for</span> <span class="n">top_cat</span> <span class="ow">in</span> <span class="n">taxonomy</span><span class="o">.</span><span class="n">get_top_categories</span><span class="p">())</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">_set_all_low_categories</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/utils/taxonomy_util.html#Taxonomy._set_all_low_categories"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Sets and returns all low-level categories from the taxonomy.</p>
+<p>This private method collects all low-level categories by iterating through
+all top and mid-level categories in the taxonomy structure. It’s used during
+taxonomy initialization to cache the low-level categories for faster access.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A list of all low-level categories in the taxonomy.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>List[str]</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span> <span class="o">=</span> <span class="n">Taxonomy</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">low_cats</span> <span class="o">=</span> <span class="n">taxonomy</span><span class="o">.</span><span class="n">_set_all_low_categories</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">low_cats</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Verify all elements are strings</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">all</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">cat</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="k">for</span> <span class="n">cat</span> <span class="ow">in</span> <span class="n">low_cats</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Verify first low category exists in taxonomy structure</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">top_cat</span> <span class="o">=</span> <span class="n">taxonomy</span><span class="o">.</span><span class="n">get_top_categories</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mid_cat</span> <span class="o">=</span> <span class="n">taxonomy</span><span class="o">.</span><span class="n">get_mid_categories</span><span class="p">(</span><span class="n">top_cat</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">low_cats</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">in</span> <span class="n">taxonomy</span><span class="o">.</span><span class="n">get_low_categories</span><span class="p">(</span><span class="n">top_cat</span><span class="p">,</span> <span class="n">mid_cat</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_top_categories</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/utils/taxonomy_util.html#Taxonomy.get_top_categories"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Retrieves all top-level categories from the taxonomy.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A list of all top-level category names.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>List[str]</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span> <span class="o">=</span> <span class="n">Taxonomy</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">top_cats</span> <span class="o">=</span> <span class="n">taxonomy</span><span class="o">.</span><span class="n">get_top_categories</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">top_cats</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Verify all elements are strings</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">all</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">cat</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="k">for</span> <span class="n">cat</span> <span class="ow">in</span> <span class="n">top_cats</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Verify returned list matches taxonomy keys</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">top_cats</span> <span class="o">==</span> <span class="nb">list</span><span class="p">(</span><span class="n">taxonomy</span><span class="o">.</span><span class="n">_taxonomy</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_mid_categories</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">top_category</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/utils/taxonomy_util.html#Taxonomy.get_mid_categories"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Retrieves all mid-level categories for a given top-level category.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>top_category</strong> (<em>str</em>) – The top-level category name to get mid-level categories for.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of all mid-level category names under the specified top category.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[str]</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>KeyError</strong> – If the top_category doesn’t exist in the taxonomy.</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span> <span class="o">=</span> <span class="n">Taxonomy</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">top_cat</span> <span class="o">=</span> <span class="n">taxonomy</span><span class="o">.</span><span class="n">get_top_categories</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mid_cats</span> <span class="o">=</span> <span class="n">taxonomy</span><span class="o">.</span><span class="n">get_mid_categories</span><span class="p">(</span><span class="n">top_cat</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">mid_cats</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Verify all elements are strings</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">all</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">cat</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="k">for</span> <span class="n">cat</span> <span class="ow">in</span> <span class="n">mid_cats</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Verify error handling</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">try</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">taxonomy</span><span class="o">.</span><span class="n">get_mid_categories</span><span class="p">(</span><span class="s2">&quot;nonexistent_category&quot;</span><span class="p">)</span>
+<span class="gp">... </span><span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="kc">True</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_low_categories</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">top_category</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mid_category</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/utils/taxonomy_util.html#Taxonomy.get_low_categories"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Retrieves all low-level categories for given top and mid-level categories.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>top_category</strong> (<em>str</em>) – The top-level category name.</p></li>
+<li><p><strong>mid_category</strong> (<em>str</em>) – The mid-level category name under the top category.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of all low-level category names under the specified categories.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[str]</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>KeyError</strong> – If either the top_category or mid_category doesn’t exist in the taxonomy.</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span> <span class="o">=</span> <span class="n">Taxonomy</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">top_cat</span> <span class="o">=</span> <span class="n">taxonomy</span><span class="o">.</span><span class="n">get_top_categories</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mid_cat</span> <span class="o">=</span> <span class="n">taxonomy</span><span class="o">.</span><span class="n">get_mid_categories</span><span class="p">(</span><span class="n">top_cat</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">low_cats</span> <span class="o">=</span> <span class="n">taxonomy</span><span class="o">.</span><span class="n">get_low_categories</span><span class="p">(</span><span class="n">top_cat</span><span class="p">,</span> <span class="n">mid_cat</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">low_cats</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Verify all elements are strings</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">all</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">cat</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="k">for</span> <span class="n">cat</span> <span class="ow">in</span> <span class="n">low_cats</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Verify error handling for invalid categories</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">try</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">taxonomy</span><span class="o">.</span><span class="n">get_low_categories</span><span class="p">(</span><span class="s2">&quot;nonexistent&quot;</span><span class="p">,</span> <span class="s2">&quot;category&quot;</span><span class="p">)</span>
+<span class="gp">... </span><span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="kc">True</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_top_cat_for_mid_cat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mid_cat</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/utils/taxonomy_util.html#Taxonomy.get_top_cat_for_mid_cat"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Finds the top-level category that contains a given mid-level category.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>mid_cat</strong> (<em>str</em>) – The mid-level category to find the parent for.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The name of the top-level category containing the mid-level category.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If the mid_cat is not found in any top-level category.</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span> <span class="o">=</span> <span class="n">Taxonomy</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Get a known mid category and its top category</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">top_cat</span> <span class="o">=</span> <span class="n">taxonomy</span><span class="o">.</span><span class="n">get_top_categories</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mid_cat</span> <span class="o">=</span> <span class="n">taxonomy</span><span class="o">.</span><span class="n">get_mid_categories</span><span class="p">(</span><span class="n">top_cat</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Verify we can find the top category</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">found_top</span> <span class="o">=</span> <span class="n">taxonomy</span><span class="o">.</span><span class="n">get_top_cat_for_mid_cat</span><span class="p">(</span><span class="n">mid_cat</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">found_top</span> <span class="o">==</span> <span class="n">top_cat</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Verify error handling for invalid mid category</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">try</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">taxonomy</span><span class="o">.</span><span class="n">get_top_cat_for_mid_cat</span><span class="p">(</span><span class="s2">&quot;nonexistent_category&quot;</span><span class="p">)</span>
+<span class="gp">... </span><span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="kc">True</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_mid_cat_for_low_cat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">low_cat</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/utils/taxonomy_util.html#Taxonomy.get_mid_cat_for_low_cat"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Finds the mid-level category that contains a given low-level category.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>low_cat</strong> (<em>str</em>) – The low-level category to find the parent for.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The name of the mid-level category containing the low-level category.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If the low_cat is not found in any mid-level category.</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span> <span class="o">=</span> <span class="n">Taxonomy</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Get a known low category and its parent categories</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">top_cat</span> <span class="o">=</span> <span class="n">taxonomy</span><span class="o">.</span><span class="n">get_top_categories</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mid_cat</span> <span class="o">=</span> <span class="n">taxonomy</span><span class="o">.</span><span class="n">get_mid_categories</span><span class="p">(</span><span class="n">top_cat</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">low_cat</span> <span class="o">=</span> <span class="n">taxonomy</span><span class="o">.</span><span class="n">get_low_categories</span><span class="p">(</span><span class="n">top_cat</span><span class="p">,</span> <span class="n">mid_cat</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Verify we can find the mid category</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">found_mid</span> <span class="o">=</span> <span class="n">taxonomy</span><span class="o">.</span><span class="n">get_mid_cat_for_low_cat</span><span class="p">(</span><span class="n">low_cat</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">found_mid</span> <span class="o">==</span> <span class="n">mid_cat</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Verify error handling for invalid low category</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">try</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">taxonomy</span><span class="o">.</span><span class="n">get_mid_cat_for_low_cat</span><span class="p">(</span><span class="s2">&quot;nonexistent_category&quot;</span><span class="p">)</span>
+<span class="gp">... </span><span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="kc">True</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">is_valid_category</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">category</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">level</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/utils/taxonomy_util.html#Taxonomy.is_valid_category"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Validates whether a category exists in the taxonomy at the specified level.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>category</strong> (<em>str</em>) – The name of the category to validate.</p></li>
+<li><p><strong>level</strong> (<em>TaxonomyLevel</em>) – The taxonomy level to validate against.
+TaxonomyLevel is a type alias for the taxonomy levels; it can be one of the following: “top”, “mid”, or “low”.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if the category exists at the specified level; otherwise, False.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If the provided taxonomy level is invalid.</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span> <span class="o">=</span> <span class="n">Taxonomy</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Get known categories at each level</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">top_cat</span> <span class="o">=</span> <span class="n">taxonomy</span><span class="o">.</span><span class="n">get_top_categories</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mid_cat</span> <span class="o">=</span> <span class="n">taxonomy</span><span class="o">.</span><span class="n">get_mid_categories</span><span class="p">(</span><span class="n">top_cat</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">low_cat</span> <span class="o">=</span> <span class="n">taxonomy</span><span class="o">.</span><span class="n">get_low_categories</span><span class="p">(</span><span class="n">top_cat</span><span class="p">,</span> <span class="n">mid_cat</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Test valid categories at each level</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span><span class="o">.</span><span class="n">is_valid_category</span><span class="p">(</span><span class="n">top_cat</span><span class="p">,</span> <span class="s2">&quot;top&quot;</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span><span class="o">.</span><span class="n">is_valid_category</span><span class="p">(</span><span class="n">mid_cat</span><span class="p">,</span> <span class="s2">&quot;mid&quot;</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span><span class="o">.</span><span class="n">is_valid_category</span><span class="p">(</span><span class="n">low_cat</span><span class="p">,</span> <span class="s2">&quot;low&quot;</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Test invalid categories</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span><span class="o">.</span><span class="n">is_valid_category</span><span class="p">(</span><span class="s2">&quot;nonexistent_category&quot;</span><span class="p">,</span> <span class="s2">&quot;top&quot;</span><span class="p">)</span>
+<span class="go">False</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Test category at wrong level</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span><span class="o">.</span><span class="n">is_valid_category</span><span class="p">(</span><span class="n">top_cat</span><span class="p">,</span> <span class="s2">&quot;low&quot;</span><span class="p">)</span>
+<span class="go">False</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Test invalid level</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">try</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">taxonomy</span><span class="o">.</span><span class="n">is_valid_category</span><span class="p">(</span><span class="n">top_cat</span><span class="p">,</span> <span class="s2">&quot;invalid_level&quot;</span><span class="p">)</span>  <span class="c1"># type: ignore</span>
+<span class="gp">... </span><span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="kc">True</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_taxonomy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/utils/taxonomy_util.html#Taxonomy.get_taxonomy"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Returns the complete taxonomy dictionary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The complete taxonomy structure as a dictionary.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>TaxonomyDict</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The structure follows the format:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;top_category&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;mid_category&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;low_category1&quot;</span><span class="p">,</span> <span class="s2">&quot;low_category2&quot;</span><span class="p">,</span> <span class="o">...</span><span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span> <span class="o">=</span> <span class="n">Taxonomy</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">tax_dict</span> <span class="o">=</span> <span class="n">taxonomy</span><span class="o">.</span><span class="n">get_taxonomy</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">tax_dict</span><span class="p">,</span> <span class="nb">dict</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Verify structure</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">top_cat</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">tax_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">())[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">tax_dict</span><span class="p">[</span><span class="n">top_cat</span><span class="p">],</span> <span class="nb">dict</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mid_cat</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">tax_dict</span><span class="p">[</span><span class="n">top_cat</span><span class="p">]</span><span class="o">.</span><span class="n">keys</span><span class="p">())[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">tax_dict</span><span class="p">[</span><span class="n">top_cat</span><span class="p">][</span><span class="n">mid_cat</span><span class="p">],</span> <span class="nb">list</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">_load_taxonomy_from_string</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">taxonomy_str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logger</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/utils/taxonomy_util.html#Taxonomy._load_taxonomy_from_string"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Loads and parses a taxonomy from a JSON string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>taxonomy_str</strong> (<em>str</em>) – JSON string containing the taxonomy structure.</p></li>
+<li><p><strong>logger</strong> (<em>logging.Logger</em><em> | </em><em>None</em><em>, </em><em>optional</em>) – Logger instance for logging operations.
+Defaults to None.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The parsed taxonomy dictionary.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>TaxonomyDict</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>json.JSONDecodeError</strong> – If the taxonomy string is not valid JSON.</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Create a simple valid taxonomy string</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">tax_str</span> <span class="o">=</span> <span class="s1">&#39;{&quot;top&quot;: {&quot;mid&quot;: [&quot;low1&quot;, &quot;low2&quot;]}}&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span> <span class="o">=</span> <span class="n">Taxonomy</span><span class="o">.</span><span class="n">_load_taxonomy_from_string</span><span class="p">(</span><span class="n">tax_str</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">taxonomy</span><span class="p">,</span> <span class="nb">dict</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Verify structure</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="n">taxonomy</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span> <span class="o">==</span> <span class="p">[</span><span class="s2">&quot;top&quot;</span><span class="p">]</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Test invalid JSON</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">try</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">Taxonomy</span><span class="o">.</span><span class="n">_load_taxonomy_from_string</span><span class="p">(</span><span class="s2">&quot;{invalid json}&quot;</span><span class="p">)</span>
+<span class="gp">... </span><span class="k">except</span> <span class="n">json</span><span class="o">.</span><span class="n">JSONDecodeError</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="kc">True</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py">
+<span class="sig-prename descclassname"><span class="pre">academic_metrics.utils.taxonomy_util.</span></span><span class="sig-name descname"><span class="pre">demo_taxonomy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/utils/taxonomy_util.html#demo_taxonomy"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Demonstrates the basic functionality of the Taxonomy class.</p>
+</dd></dl>
+
+</section>
+<section id="utils-unicode-chars-dict-module">
+<h2>utils.unicode_chars_dict module<a class="headerlink" href="#utils-unicode-chars-dict-module" title="Link to this heading">¶</a></h2>
+</section>
+<section id="utils-utilities-module">
+<h2>utils.utilities module<a class="headerlink" href="#utils-utilities-module" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">academic_metrics.utils.utilities.</span></span><span class="sig-name descname"><span class="pre">Utilities</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strategy_factory</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">warning_manager</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/utils/utilities.html#Utilities"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A class containing various utility methods for processing and analyzing academic data.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">strategy_factory</span></span></dt>
+<dd><p>An instance of the StrategyFactory class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="academic_metrics.factories.html#academic_metrics.factories.strategy_factory.StrategyFactory" title="academic_metrics.factories.strategy_factory.StrategyFactory">StrategyFactory</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">warning_manager</span></span></dt>
+<dd><p>An instance of the WarningManager class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="academic_metrics.utils.html#academic_metrics.utils.warning_manager.WarningManager" title="academic_metrics.utils.warning_manager.WarningManager">WarningManager</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_attributes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attributes</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/utils/utilities.html#Utilities.get_attributes"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Extracts specified attributes from the data and returns them in a dictionary.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">crossref_file_splitter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_to_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split_files_dir_path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/utils/utilities.html#Utilities.crossref_file_splitter"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Splits a crossref file into individual entries and creates a separate file for each entry in the specified output directory.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">make_files(self,</span> <span class="pre">*,</span> <span class="pre">path_to_file</span></span></dt>
+<dd><p>str, split_files_dir_path: str):
+Splits a document into individual entries and creates a separate file for each entry in the specified output directory.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">CROSSREF_FILE_NAME_SUFFIX</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'_crossref_item.json'</span></em></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">strategy_factory</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="academic_metrics.factories.html#academic_metrics.factories.strategy_factory.StrategyFactory" title="academic_metrics.factories.strategy_factory.StrategyFactory"><code class="xref py py-class docutils literal notranslate"><span class="pre">StrategyFactory</span></code></a></em></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">warning_manager</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="academic_metrics.utils.html#academic_metrics.utils.warning_manager.WarningManager" title="academic_metrics.utils.warning_manager.WarningManager"><code class="xref py py-class docutils literal notranslate"><span class="pre">WarningManager</span></code></a></em></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">get_attributes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attributes</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/utils/utilities.html#Utilities.get_attributes"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Extracts specified attributes from the article entry and returns them in a dictionary.
+It also warns about missing or invalid attributes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>entry_text</strong> (<em>str</em>) – The text of the article entry.</p></li>
+<li><p><strong>attributes</strong> (<em>list</em><em> of </em><em>str</em>) – A list of attribute names to extract from the entry, e.g., [“title”, “author”].</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>A dictionary where keys are attribute names and values are tuples.</dt><dd><p>Each tuple contains a boolean indicating success or failure of extraction,
+and the extracted attribute value or None.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If an attribute not defined in <cite>self.attribute_patterns</cite> is requested.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">crossref_file_splitter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_to_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split_files_dir_path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/utils/utilities.html#Utilities.crossref_file_splitter"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Splits a crossref file into individual entries and creates a separate file for each entry in the specified output directory.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>path_to_file</strong> (<em>str</em>) – The path to the full json file containing all crossref objects to be split</p></li>
+<li><p><strong>split_files_dir_path</strong> (<em>str</em>) – The path to the directory where the individual crossref object files should be saved.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of file names.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">make_files</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_to_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">split_files_dir_path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/utils/utilities.html#Utilities.make_files"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Splits a document into individual entries and creates a separate file for each entry in the specified output directory.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>path_to_file</strong> (<em>str</em>) – The path to the full text file containing all metadata for the entries.</p></li>
+<li><p><strong>output_dir</strong> (<em>str</em>) – The path to the directory where the individual entry files should be saved.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A dictionary where each key is the number of the entry (starting from 1) and each value is the path to the corresponding file.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>file_paths</p>
+</dd>
+</dl>
+<p>This method first splits the document into individual entries using the <cite>splitter</cite> method.
+It then iterates over each entry, extracts the necessary attributes to form a filename,
+ensures the output directory exists, and writes each entry’s content to a new file in the output directory.
+Then returns the file_paths dictionary to make referencing any specific document later easier</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="utils-warning-manager-module">
+<h2>utils.warning_manager module<a class="headerlink" href="#utils-warning-manager-module" title="Link to this heading">¶</a></h2>
+<dl class="py exception">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">academic_metrics.utils.warning_manager.</span></span><span class="sig-name descname"><span class="pre">CustomWarning</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">category</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entry_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/utils/warning_manager.html#CustomWarning"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Warning</span></code></p>
+<p>Custom warning class to store warning details.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>Warning</strong> (<em>str</em>) – _description_</p>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">category</span></span></dt>
+<dd><p>The category of the warning.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">message</span></span></dt>
+<dd><p>The message of the warning.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">entry_id</span></span></dt>
+<dd><p>The entry ID of the warning. Defaults to None.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str, optional</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">__init__(self,</span> <span class="pre">category</span></span></dt>
+<dd><p>str, message: str, entry_id: str = None):
+Initializes the CustomWarning class with the provided category, message, and entry ID.</p>
+</dd></dl>
+
+<dl class="simple">
+<dt>Summary:</dt><dd><p>This class is a custom warning class that is used to store warning details.
+It is used to store warning details in a structured way.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">academic_metrics.utils.warning_manager.</span></span><span class="sig-name descname"><span class="pre">WarningManager</span></span><a class="reference internal" href="_modules/academic_metrics/utils/warning_manager.html#WarningManager"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class to manage warnings.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">warning_count</span></span></dt>
+<dd><p>The number of warnings.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">warnings</span></span></dt>
+<dd><p>A list of warnings.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">log_warning(self,</span> <span class="pre">category</span></span></dt>
+<dd><p>str, warning_message: str, entry_id: str = None) -&gt; CustomWarning:
+Logs a warning with the provided category, message, and entry ID.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>category</strong> (<em>str</em>) – The category of the warning.</p></li>
+<li><p><strong>warning_message</strong> (<em>str</em>) – The message of the warning.</p></li>
+<li><p><strong>entry_id</strong> (<em>str</em><em>, </em><em>optional</em>) – The entry ID of the warning. Defaults to None.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The warning that was logged.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="academic_metrics.utils.html#academic_metrics.utils.warning_manager.CustomWarning" title="academic_metrics.utils.warning_manager.CustomWarning">CustomWarning</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">display_warning_summary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/utils/warning_manager.html#WarningManager.display_warning_summary"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Displays the summary of the warnings.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="simple">
+<dt>Summary:</dt><dd><p>This class is used to manage warnings.
+It is used to store warnings in a list and display the summary of the warnings.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">log_warning</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">category</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">warning_message</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entry_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/utils/warning_manager.html#WarningManager.log_warning"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Logs a warning with the provided category, message, and entry ID.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>category</strong> (<em>str</em>) – The category of the warning.</p></li>
+<li><p><strong>warning_message</strong> (<em>str</em>) – The message of the warning.</p></li>
+<li><p><strong>entry_id</strong> (<em>str</em><em>, </em><em>optional</em>) – The entry ID of the warning. Defaults to None.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The warning that was logged.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="academic_metrics.utils.html#academic_metrics.utils.warning_manager.CustomWarning" title="academic_metrics.utils.warning_manager.CustomWarning">CustomWarning</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">display_warning_summary</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/utils/warning_manager.html#WarningManager.display_warning_summary"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>Displays the summary of the warnings.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Summary:</dt><dd><p>This method displays the summary of the warnings.
+It displays the category, message, and entry ID of the warning.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-academic_metrics.utils">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-academic_metrics.utils" title="Link to this heading">¶</a></h2>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+        <div id="show_right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&lt;</span><span>Page contents</span></a></p>
+        </div>
+
+        <div id="right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
+            <div class="page_toc">
+                <ul>
+<li><a class="reference internal" href="#">utils package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#utils-api-key-validator-module">utils.api_key_validator module</a></li>
+<li><a class="reference internal" href="#utils-taxonomy-util-module">utils.taxonomy_util module</a></li>
+<li><a class="reference internal" href="#utils-unicode-chars-dict-module">utils.unicode_chars_dict module</a></li>
+<li><a class="reference internal" href="#utils-utilities-module">utils.utilities module</a></li>
+<li><a class="reference internal" href="#utils-warning-manager-module">utils.warning_manager module</a></li>
+<li><a class="reference internal" href="#module-academic_metrics.utils">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+    
+
+      <div class="clearer"></div>
+    </div>
+    <div class="button_nav_wrapper">
+        <div class="button_nav">
+            <div class="left">
+                
+                <a href="strategies.html">
+                    <span class="icon">&lt;</span><span>strategies package</span></a>
+                
+            </div>
+
+            <div class="right">
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Spencer Presley, Cole Barbes.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    </div>
+
+<p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>
+  </body>
+</html>

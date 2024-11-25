@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>academic_metrics.runners package &#8212; Academic Metrics 0.1.0-beta documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+    <link rel="stylesheet" type="text/css" href="_static/basic_mod.css?v=9b2032db" />
+    <script src="_static/documentation_options.js?v=c903bf51"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <script src="_static/js/petite-vue.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head><body data-dark_mode_code_blocks="true">
+
+<div id="top_nav">
+    
+
+    <nav>
+        
+            
+        
+
+        <p id="toggle_sidebar">
+            <a href="#" title="Toggle sidebar">|||</a>
+        </p>
+        <h1><a href="index.html" title="Go to homepage">Academic Metrics 0.1.0-beta documentation</a></h1>
+
+        <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
+    <template v-if="mode == 'light'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_light"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M67.48,18.073c1.913,-1.912 1.913,-5.018 0,-6.931c-1.912,-1.912 -5.018,-1.912 -6.931,0l-6.798,6.799c-1.912,1.912 -1.912,5.018 0,6.931c1.913,1.912 5.018,1.912 6.931,-0l6.798,-6.799Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.728,61.108c1.912,-1.913 1.912,-5.018 -0,-6.931c-1.913,-1.913 -5.019,-1.913 -6.931,-0l-6.799,6.798c-1.912,1.913 -1.912,5.019 0,6.931c1.913,1.913 5.019,1.913 6.931,0l6.799,-6.798Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.682,54.177c-1.913,-1.913 -5.018,-1.913 -6.931,-0c-1.912,1.913 -1.912,5.018 0,6.931l6.798,6.798c1.913,1.913 5.019,1.913 6.931,0c1.913,-1.912 1.913,-5.018 0,-6.931l-6.798,-6.798Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M4.901,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,-0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M18.929,11.142c-1.912,-1.912 -5.018,-1.912 -6.931,0c-1.912,1.913 -1.912,5.019 0,6.931l6.799,6.799c1.912,1.912 5.018,1.912 6.931,-0c1.912,-1.913 1.912,-5.019 -0,-6.931l-6.799,-6.799Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.108,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c-0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c-0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'dark'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_dark"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.901,2.196 -4.901,4.901c0,2.705 2.197,4.901 4.901,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.662,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.989,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.732,61.103c1.91,-1.91 1.91,-5.011 0,-6.921l-0.009,-0.01c-1.91,-1.91 -5.012,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.909,1.91 5.011,1.91 6.92,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.672,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.52,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l-0,-0.01c-0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.901,2.196 -4.901,4.901c0,2.704 2.197,4.9 4.901,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.73,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 -0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.098,34.623c-2.699,0 -4.891,2.192 -4.891,4.892l-0,0.019c-0,2.699 2.192,4.891 4.891,4.891c2.7,0 4.892,-2.192 4.892,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.892,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'darkest'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_darkest"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><path d="M39.315,23.791c8.684,-0 15.734,7.05 15.734,15.733c0,8.684 -7.05,15.734 -15.734,15.734c-8.683,0 -15.733,-7.05 -15.733,-15.734c-0,-8.683 7.05,-15.733 15.733,-15.733Zm0,4.737c6.069,0 10.997,4.927 10.997,10.996c-0,6.069 -4.928,10.996 -10.997,10.996c-6.068,0 -10.996,-4.927 -10.996,-10.996c0,-6.069 4.928,-10.996 10.996,-10.996Z" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.216,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.9,2.196 -4.9,4.901c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.666,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.99,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.737,61.103c1.909,-1.91 1.909,-5.011 -0,-6.921l-0.01,-0.01c-1.91,-1.91 -5.011,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.91,1.91 5.011,1.91 6.921,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.676,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.524,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l0,-0.01c0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.216,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901c-0,2.704 2.196,4.9 4.9,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.734,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.103,34.623c-2.7,0 -4.892,2.192 -4.892,4.892l-0,0.019c-0,2.699 2.192,4.891 4.892,4.891c2.699,0 4.891,-2.192 4.891,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.891,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+</a>
+
+<script>
+(function() {
+    const LOCAL_STORAGE_KEY = 'piccoloThemeMode'
+
+    var initialMode = localStorage.getItem(LOCAL_STORAGE_KEY)
+
+    if (initialMode) {
+        // Make sure the value in local storage is valid
+        if (['light', 'dark', 'darkest'].indexOf(initialMode) == -1) {
+            initialMode = 'light'
+            localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+        }
+    } else {
+        // Check if the client prefers dark mode
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            initialMode = 'dark'
+        } else {
+            initialMode = 'light'
+        }
+        localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+    }
+
+    document.documentElement.dataset.mode = initialMode
+
+    PetiteVue.createApp({
+        'mode': initialMode,
+        handleClick() {
+            let currentMode = this.mode
+
+            if (currentMode == 'light') {
+                this.mode = 'dark'
+            } else if (currentMode == 'dark') {
+                this.mode = 'darkest'
+            } else if (currentMode == 'darkest') {
+                this.mode = 'light'
+            }
+
+            document.documentElement.dataset.mode = this.mode
+            localStorage.setItem(LOCAL_STORAGE_KEY, this.mode)
+
+            console.log(this.mode)
+        }
+    }).mount('#mode_toggle')
+})()
+</script>
+            <p class="mobile_search_link">
+                <a href="search.html" title="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 64" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path d="M14.873 40.009c-2.315-3.943-3.642-8.532-3.642-13.429C11.231 11.91 23.141 0 37.811 0s26.58 11.91 26.58 26.58-11.91 26.58-26.58 26.58a26.44 26.44 0 0 1-14.277-4.161L9.739 62.794a3.12 3.12 0 0 1-4.413 0L.913 58.382c-1.217-1.218-1.217-3.196 0-4.413l13.96-13.96zM37.811 8.054c10.225 0 18.526 8.301 18.526 18.526s-8.301 18.526-18.526 18.526-18.526-8.301-18.526-18.526S27.586 8.054 37.811 8.054z" fill="#fff" />
+                    </svg>
+                </a>
+            </p>
+        
+
+        <div class="searchbox_wrapper">
+            
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="abstract_classifier.html">Abstract Classifier Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="category_processor.html">Category Processor Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faculty_set_postprocessor.html">Faculty Set Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config.html">Global Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chain_builder.html">Chain Builder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ai_prompts.html">ai_prompts package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection.html">data_collection package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dataclass_models.html">dataclass_models package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DB.html">DB package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enums.html">enums package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="factories.html">factories package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="orchestrators.html">orchestrators package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="other.html">other package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="runners.html">runners package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="strategies.html">strategies package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="utils.html">utils package</a></li>
+</ul>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="academic-metrics-runners-package">
+<h1>academic_metrics.runners package<a class="headerlink" href="#academic-metrics-runners-package" title="Link to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
+</section>
+<section id="module-academic_metrics.runners.pipeline">
+<span id="academic-metrics-runners-pipeline-module"></span><h2>academic_metrics.runners.pipeline module<a class="headerlink" href="#module-academic_metrics.runners.pipeline" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.SaveOfflineKwargs">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">academic_metrics.runners.pipeline.</span></span><span class="sig-name descname"><span class="pre">SaveOfflineKwargs</span></span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#SaveOfflineKwargs"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.runners.pipeline.SaveOfflineKwargs" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TypedDict</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.SaveOfflineKwargs.offline">
+<span class="sig-name descname"><span class="pre">offline</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></em><a class="headerlink" href="#academic_metrics.runners.pipeline.SaveOfflineKwargs.offline" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.SaveOfflineKwargs.run_crossref_before_file_load">
+<span class="sig-name descname"><span class="pre">run_crossref_before_file_load</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></em><a class="headerlink" href="#academic_metrics.runners.pipeline.SaveOfflineKwargs.run_crossref_before_file_load" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.SaveOfflineKwargs.make_files">
+<span class="sig-name descname"><span class="pre">make_files</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></em><a class="headerlink" href="#academic_metrics.runners.pipeline.SaveOfflineKwargs.make_files" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.SaveOfflineKwargs.extend">
+<span class="sig-name descname"><span class="pre">extend</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></em><a class="headerlink" href="#academic_metrics.runners.pipeline.SaveOfflineKwargs.extend" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.PipelineRunner">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">academic_metrics.runners.pipeline.</span></span><span class="sig-name descname"><span class="pre">PipelineRunner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ai_api_key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">crossref_affiliation</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_from_month</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_to_month</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_from_year</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_to_year</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mongodb_url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Site_Data'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">debug</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pre_classification_model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">classification_model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">theme_model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.runners.pipeline.PipelineRunner" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Orchestrates the academic metrics data processing pipeline.</p>
+<p>This class manages the end-to-end process of collecting, processing, and storing
+academic publication data. It handles data collection from Crossref, classification
+of publications, generation of statistics, and storage in MongoDB.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.PipelineRunner.SAVE_OFFLINE_KWARGS">
+<span class="sig-name descname"><span class="pre">SAVE_OFFLINE_KWARGS</span></span><a class="headerlink" href="#academic_metrics.runners.pipeline.PipelineRunner.SAVE_OFFLINE_KWARGS" title="Link to this definition">¶</a></dt>
+<dd><p>Default configuration for offline processing.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#academic_metrics.runners.pipeline.SaveOfflineKwargs" title="academic_metrics.runners.pipeline.SaveOfflineKwargs">SaveOfflineKwargs</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.PipelineRunner.logger">
+<span class="sig-name descname"><span class="pre">logger</span></span><a class="headerlink" href="#academic_metrics.runners.pipeline.PipelineRunner.logger" title="Link to this definition">¶</a></dt>
+<dd><p>Pipeline-wide logger instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>logging.Logger</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.PipelineRunner.ai_api_key">
+<span class="sig-name descname"><span class="pre">ai_api_key</span></span><a class="headerlink" href="#academic_metrics.runners.pipeline.PipelineRunner.ai_api_key" title="Link to this definition">¶</a></dt>
+<dd><p>API key for AI services.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.PipelineRunner.db_name">
+<span class="sig-name descname"><span class="pre">db_name</span></span><a class="headerlink" href="#academic_metrics.runners.pipeline.PipelineRunner.db_name" title="Link to this definition">¶</a></dt>
+<dd><p>Name of the MongoDB database.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.PipelineRunner.mongodb_url">
+<span class="sig-name descname"><span class="pre">mongodb_url</span></span><a class="headerlink" href="#academic_metrics.runners.pipeline.PipelineRunner.mongodb_url" title="Link to this definition">¶</a></dt>
+<dd><p>URL for MongoDB connection.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.PipelineRunner.db">
+<span class="sig-name descname"><span class="pre">db</span></span><a class="headerlink" href="#academic_metrics.runners.pipeline.PipelineRunner.db" title="Link to this definition">¶</a></dt>
+<dd><p>Database interface instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="academic_metrics.DB.html#academic_metrics.DB.DatabaseSetup.DatabaseWrapper" title="academic_metrics.DB.DatabaseSetup.DatabaseWrapper">DatabaseWrapper</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.PipelineRunner.scraper">
+<span class="sig-name descname"><span class="pre">scraper</span></span><a class="headerlink" href="#academic_metrics.runners.pipeline.PipelineRunner.scraper" title="Link to this definition">¶</a></dt>
+<dd><p>Web scraping utility instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="academic_metrics.data_collection.html#academic_metrics.data_collection.scraper.Scraper" title="academic_metrics.data_collection.scraper.Scraper">Scraper</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.PipelineRunner.crossref_wrapper">
+<span class="sig-name descname"><span class="pre">crossref_wrapper</span></span><a class="headerlink" href="#academic_metrics.runners.pipeline.PipelineRunner.crossref_wrapper" title="Link to this definition">¶</a></dt>
+<dd><p>Crossref API interface instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="academic_metrics.data_collection.html#academic_metrics.data_collection.CrossrefWrapper.CrossrefWrapper" title="academic_metrics.data_collection.CrossrefWrapper.CrossrefWrapper">CrossrefWrapper</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.PipelineRunner.taxonomy">
+<span class="sig-name descname"><span class="pre">taxonomy</span></span><a class="headerlink" href="#academic_metrics.runners.pipeline.PipelineRunner.taxonomy" title="Link to this definition">¶</a></dt>
+<dd><p>Publication taxonomy utility.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="academic_metrics.utils.html#academic_metrics.utils.taxonomy_util.Taxonomy" title="academic_metrics.utils.taxonomy_util.Taxonomy">Taxonomy</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.PipelineRunner.warning_manager">
+<span class="sig-name descname"><span class="pre">warning_manager</span></span><a class="headerlink" href="#academic_metrics.runners.pipeline.PipelineRunner.warning_manager" title="Link to this definition">¶</a></dt>
+<dd><p>Warning logging utility.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="academic_metrics.utils.html#academic_metrics.utils.warning_manager.WarningManager" title="academic_metrics.utils.warning_manager.WarningManager">WarningManager</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.PipelineRunner.strategy_factory">
+<span class="sig-name descname"><span class="pre">strategy_factory</span></span><a class="headerlink" href="#academic_metrics.runners.pipeline.PipelineRunner.strategy_factory" title="Link to this definition">¶</a></dt>
+<dd><p>Strategy pattern factory.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="academic_metrics.factories.html#academic_metrics.factories.strategy_factory.StrategyFactory" title="academic_metrics.factories.strategy_factory.StrategyFactory">StrategyFactory</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.PipelineRunner.utilities">
+<span class="sig-name descname"><span class="pre">utilities</span></span><a class="headerlink" href="#academic_metrics.runners.pipeline.PipelineRunner.utilities" title="Link to this definition">¶</a></dt>
+<dd><p>General utility functions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="academic_metrics.utils.html#academic_metrics.utils.utilities.Utilities" title="academic_metrics.utils.utilities.Utilities">Utilities</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.PipelineRunner.classification_orchestrator">
+<span class="sig-name descname"><span class="pre">classification_orchestrator</span></span><a class="headerlink" href="#academic_metrics.runners.pipeline.PipelineRunner.classification_orchestrator" title="Link to this definition">¶</a></dt>
+<dd><p>Publication classifier.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="academic_metrics.orchestrators.html#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator" title="academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator">ClassificationOrchestrator</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.PipelineRunner.dataclass_factory">
+<span class="sig-name descname"><span class="pre">dataclass_factory</span></span><a class="headerlink" href="#academic_metrics.runners.pipeline.PipelineRunner.dataclass_factory" title="Link to this definition">¶</a></dt>
+<dd><p>Data class creation utility.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="academic_metrics.factories.html#academic_metrics.factories.dataclass_factory.DataClassFactory" title="academic_metrics.factories.dataclass_factory.DataClassFactory">DataClassFactory</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.PipelineRunner.category_processor">
+<span class="sig-name descname"><span class="pre">category_processor</span></span><a class="headerlink" href="#academic_metrics.runners.pipeline.PipelineRunner.category_processor" title="Link to this definition">¶</a></dt>
+<dd><p>Category statistics processor.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="category_processor.html#academic_metrics.core.category_processor.CategoryProcessor" title="academic_metrics.core.category_processor.CategoryProcessor">CategoryProcessor</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.PipelineRunner.faculty_postprocessor">
+<span class="sig-name descname"><span class="pre">faculty_postprocessor</span></span><a class="headerlink" href="#academic_metrics.runners.pipeline.PipelineRunner.faculty_postprocessor" title="Link to this definition">¶</a></dt>
+<dd><p>Faculty data processor.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="academic_metrics.core.html#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor" title="academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor">FacultyPostprocessor</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.PipelineRunner.debug">
+<span class="sig-name descname"><span class="pre">debug</span></span><a class="headerlink" href="#academic_metrics.runners.pipeline.PipelineRunner.debug" title="Link to this definition">¶</a></dt>
+<dd><p>Debug mode flag.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.PipelineRunner.run_pipeline">
+<span class="sig-name descname"><span class="pre">run_pipeline</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner.run_pipeline"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.runners.pipeline.PipelineRunner.run_pipeline" title="Link to this definition">¶</a></dt>
+<dd><p>Executes the main data processing pipeline.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.PipelineRunner._create_taxonomy">
+<span class="sig-name descname"><span class="pre">_create_taxonomy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner._create_taxonomy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.runners.pipeline.PipelineRunner._create_taxonomy" title="Link to this definition">¶</a></dt>
+<dd><p>Creates a new Taxonomy instance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.PipelineRunner._create_classifier_factory">
+<span class="sig-name descname"><span class="pre">_create_classifier_factory</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner._create_classifier_factory"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.runners.pipeline.PipelineRunner._create_classifier_factory" title="Link to this definition">¶</a></dt>
+<dd><p>Creates a new ClassifierFactory instance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.PipelineRunner._create_warning_manager">
+<span class="sig-name descname"><span class="pre">_create_warning_manager</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner._create_warning_manager"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.runners.pipeline.PipelineRunner._create_warning_manager" title="Link to this definition">¶</a></dt>
+<dd><p>Creates a new WarningManager instance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.PipelineRunner._create_strategy_factory">
+<span class="sig-name descname"><span class="pre">_create_strategy_factory</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner._create_strategy_factory"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.runners.pipeline.PipelineRunner._create_strategy_factory" title="Link to this definition">¶</a></dt>
+<dd><p>Creates a new StrategyFactory instance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.PipelineRunner._create_utilities_instance">
+<span class="sig-name descname"><span class="pre">_create_utilities_instance</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner._create_utilities_instance"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.runners.pipeline.PipelineRunner._create_utilities_instance" title="Link to this definition">¶</a></dt>
+<dd><p>Creates a new Utilities instance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.PipelineRunner._create_classification_orchestrator">
+<span class="sig-name descname"><span class="pre">_create_classification_orchestrator</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner._create_classification_orchestrator"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.runners.pipeline.PipelineRunner._create_classification_orchestrator" title="Link to this definition">¶</a></dt>
+<dd><p>Creates a new ClassificationOrchestrator.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.PipelineRunner._create_orchestrator">
+<span class="sig-name descname"><span class="pre">_create_orchestrator</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner._create_orchestrator"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.runners.pipeline.PipelineRunner._create_orchestrator" title="Link to this definition">¶</a></dt>
+<dd><p>Creates a new CategoryDataOrchestrator.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.PipelineRunner._get_acf_func">
+<span class="sig-name descname"><span class="pre">_get_acf_func</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner._get_acf_func"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.runners.pipeline.PipelineRunner._get_acf_func" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the abstract classifier factory function.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.PipelineRunner._validate_api_key">
+<span class="sig-name descname"><span class="pre">_validate_api_key</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner._validate_api_key"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.runners.pipeline.PipelineRunner._validate_api_key" title="Link to this definition">¶</a></dt>
+<dd><p>Validates the provided API key.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.PipelineRunner._make_files">
+<span class="sig-name descname"><span class="pre">_make_files</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner._make_files"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.runners.pipeline.PipelineRunner._make_files" title="Link to this definition">¶</a></dt>
+<dd><p>Creates split files from input files.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.PipelineRunner._load_files">
+<span class="sig-name descname"><span class="pre">_load_files</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner._load_files"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.runners.pipeline.PipelineRunner._load_files" title="Link to this definition">¶</a></dt>
+<dd><p>Loads and returns data from split files.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.PipelineRunner._create_dataclass_factory">
+<span class="sig-name descname"><span class="pre">_create_dataclass_factory</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner._create_dataclass_factory"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.runners.pipeline.PipelineRunner._create_dataclass_factory" title="Link to this definition">¶</a></dt>
+<dd><p>Creates a new DataClassFactory instance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.PipelineRunner._create_crossref_wrapper">
+<span class="sig-name descname"><span class="pre">_create_crossref_wrapper</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner._create_crossref_wrapper"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.runners.pipeline.PipelineRunner._create_crossref_wrapper" title="Link to this definition">¶</a></dt>
+<dd><p>Creates a new CrossrefWrapper instance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.PipelineRunner._create_category_processor">
+<span class="sig-name descname"><span class="pre">_create_category_processor</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner._create_category_processor"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.runners.pipeline.PipelineRunner._create_category_processor" title="Link to this definition">¶</a></dt>
+<dd><p>Creates a new CategoryProcessor instance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.PipelineRunner._create_faculty_postprocessor">
+<span class="sig-name descname"><span class="pre">_create_faculty_postprocessor</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner._create_faculty_postprocessor"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.runners.pipeline.PipelineRunner._create_faculty_postprocessor" title="Link to this definition">¶</a></dt>
+<dd><p>Creates a new FacultyPostprocessor instance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.PipelineRunner._create_scraper">
+<span class="sig-name descname"><span class="pre">_create_scraper</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner._create_scraper"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.runners.pipeline.PipelineRunner._create_scraper" title="Link to this definition">¶</a></dt>
+<dd><p>Creates a new Scraper instance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.PipelineRunner._create_db">
+<span class="sig-name descname"><span class="pre">_create_db</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner._create_db"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.runners.pipeline.PipelineRunner._create_db" title="Link to this definition">¶</a></dt>
+<dd><p>Creates a new DatabaseWrapper instance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.PipelineRunner._encode_affiliation">
+<span class="sig-name descname"><span class="pre">_encode_affiliation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner._encode_affiliation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.runners.pipeline.PipelineRunner._encode_affiliation" title="Link to this definition">¶</a></dt>
+<dd><p>URL encodes an affiliation string.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id0">
+<span class="sig-name descname"><span class="pre">SAVE_OFFLINE_KWARGS</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#academic_metrics.runners.pipeline.SaveOfflineKwargs" title="academic_metrics.runners.pipeline.SaveOfflineKwargs"><code class="xref py py-class docutils literal notranslate"><span class="pre">SaveOfflineKwargs</span></code></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'extend':</span> <span class="pre">False,</span> <span class="pre">'make_files':</span> <span class="pre">False,</span> <span class="pre">'offline':</span> <span class="pre">False,</span> <span class="pre">'run_crossref_before_file_load':</span> <span class="pre">False}</span></em><a class="headerlink" href="#id0" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id1">
+<span class="sig-name descname"><span class="pre">run_pipeline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">save_offline_kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{'extend':</span> <span class="pre">False,</span> <span class="pre">'make_files':</span> <span class="pre">False,</span> <span class="pre">'offline':</span> <span class="pre">False,</span> <span class="pre">'run_crossref_before_file_load':</span> <span class="pre">False}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_filtering</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">save_to_db</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner.run_pipeline"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id1" title="Link to this definition">¶</a></dt>
+<dd><p>Execute the main data processing pipeline.</p>
+<p>This method orchestrates the entire pipeline process:
+1. Retrieves existing DOIs from database
+2. Collects new publication data from Crossref
+3. Filters out duplicate articles
+4. Runs AI classification on publications
+5. Processes and generates category statistics
+6. Saves processed data to MongoDB</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>save_offline_kwargs</strong> (<a class="reference internal" href="#academic_metrics.runners.pipeline.SaveOfflineKwargs" title="academic_metrics.runners.pipeline.SaveOfflineKwargs"><em>SaveOfflineKwargs</em></a><em>, </em><em>optional</em>) – Configuration for offline processing.
+Defaults to SAVE_OFFLINE_KWARGS.
+- offline: Whether to run in offline mode
+- run_crossref_before_file_load: Run Crossref before loading files
+- make_files: Generate new split files
+- extend: Extend existing data</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>Exception</strong> – If there are errors in data processing or database operations.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.runners.pipeline.PipelineRunner.test_run">
+<span class="sig-name descname"><span class="pre">test_run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner.test_run"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.runners.pipeline.PipelineRunner.test_run" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id2">
+<span class="sig-name descname"><span class="pre">_create_taxonomy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner._create_taxonomy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id2" title="Link to this definition">¶</a></dt>
+<dd><p>Create a new Taxonomy instance for publication classification.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A new instance of the Taxonomy utility class.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="academic_metrics.utils.html#academic_metrics.utils.taxonomy_util.Taxonomy" title="academic_metrics.utils.taxonomy_util.Taxonomy">Taxonomy</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id3">
+<span class="sig-name descname"><span class="pre">_create_classifier_factory</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner._create_classifier_factory"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id3" title="Link to this definition">¶</a></dt>
+<dd><p>Create a new ClassifierFactory for generating publication classifiers.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A factory instance configured with taxonomy and AI API key.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="academic_metrics.factories.html#academic_metrics.factories.abstract_classifier_factory.ClassifierFactory" title="academic_metrics.factories.abstract_classifier_factory.ClassifierFactory">ClassifierFactory</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id4">
+<span class="sig-name descname"><span class="pre">_create_warning_manager</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner._create_warning_manager"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id4" title="Link to this definition">¶</a></dt>
+<dd><p>Create a new WarningManager for handling pipeline warnings.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A new instance of the warning management utility.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="academic_metrics.utils.html#academic_metrics.utils.warning_manager.WarningManager" title="academic_metrics.utils.warning_manager.WarningManager">WarningManager</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id5">
+<span class="sig-name descname"><span class="pre">_create_strategy_factory</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner._create_strategy_factory"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id5" title="Link to this definition">¶</a></dt>
+<dd><p>Create a new StrategyFactory for generating processing strategies.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A new instance of the strategy factory.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="academic_metrics.factories.html#academic_metrics.factories.strategy_factory.StrategyFactory" title="academic_metrics.factories.strategy_factory.StrategyFactory">StrategyFactory</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id6">
+<span class="sig-name descname"><span class="pre">_create_utilities_instance</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner._create_utilities_instance"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id6" title="Link to this definition">¶</a></dt>
+<dd><p>Create a new Utilities instance with required dependencies.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A utility instance configured with strategy factory and warning manager.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="academic_metrics.utils.html#academic_metrics.utils.utilities.Utilities" title="academic_metrics.utils.utilities.Utilities">Utilities</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id7">
+<span class="sig-name descname"><span class="pre">_create_classification_orchestrator</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner._create_classification_orchestrator"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id7" title="Link to this definition">¶</a></dt>
+<dd><p>Create a new ClassificationOrchestrator for managing publication classification.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>An orchestrator instance configured with classifier factory and utilities.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="academic_metrics.orchestrators.html#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator" title="academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator">ClassificationOrchestrator</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id8">
+<span class="sig-name descname"><span class="pre">_create_orchestrator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extend</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner._create_orchestrator"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id8" title="Link to this definition">¶</a></dt>
+<dd><p>Create a new CategoryDataOrchestrator for managing category data processing.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>List</em><em>[</em><em>Dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em><em>]</em>) – List of publication data to process.</p></li>
+<li><p><strong>extend</strong> (<em>bool</em>) – Whether to extend existing data.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>An orchestrator instance configured with all necessary processors and utilities.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="academic_metrics.orchestrators.html#academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator" title="academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator">CategoryDataOrchestrator</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id9">
+<span class="sig-name descname"><span class="pre">_get_acf_func</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner._get_acf_func"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id9" title="Link to this definition">¶</a></dt>
+<dd><p>Get the abstract classifier factory function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>A function that creates an AbstractClassifier</dt><dd><p>given a dictionary of DOIs and abstracts.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Callable[[Dict[str, str]], <a class="reference internal" href="academic_metrics.factories.html#academic_metrics.factories.abstract_classifier_factory.ClassifierFactory" title="academic_metrics.factories.abstract_classifier_factory.ClassifierFactory">ClassifierFactory</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id10">
+<span class="sig-name descname"><span class="pre">_validate_api_key</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">validator</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">api_key</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner._validate_api_key"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id10" title="Link to this definition">¶</a></dt>
+<dd><p>Validate the provided API key.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>validator</strong> (<a class="reference internal" href="academic_metrics.utils.html#academic_metrics.utils.api_key_validator.APIKeyValidator" title="academic_metrics.utils.api_key_validator.APIKeyValidator"><em>APIKeyValidator</em></a>) – Validator instance to check the API key.</p></li>
+<li><p><strong>api_key</strong> (<em>str</em>) – API key to validate.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If the API key is invalid.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id11">
+<span class="sig-name descname"><span class="pre">_make_files</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner._make_files"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id11" title="Link to this definition">¶</a></dt>
+<dd><p>Create split files from input files for offline processing.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>Exception</strong> – If input directory contains no files to process.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id12">
+<span class="sig-name descname"><span class="pre">_load_files</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner._load_files"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id12" title="Link to this definition">¶</a></dt>
+<dd><p>Load all split files into a list of dictionaries.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List of loaded data from split files.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>List[Dict[str, Any]]</p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Warnings are logged for any files that fail to load.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id13">
+<span class="sig-name descname"><span class="pre">_create_dataclass_factory</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner._create_dataclass_factory"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id13" title="Link to this definition">¶</a></dt>
+<dd><p>Create a new DataClassFactory for generating data classes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A new instance of the data class factory.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="academic_metrics.factories.html#academic_metrics.factories.dataclass_factory.DataClassFactory" title="academic_metrics.factories.dataclass_factory.DataClassFactory">DataClassFactory</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id14">
+<span class="sig-name descname"><span class="pre">_create_crossref_wrapper</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner._create_crossref_wrapper"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id14" title="Link to this definition">¶</a></dt>
+<dd><p>Create a new CrossrefWrapper for interacting with the Crossref API.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>**kwargs</strong> – Keyword arguments for CrossrefWrapper configuration.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A configured CrossrefWrapper instance.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="academic_metrics.data_collection.html#academic_metrics.data_collection.CrossrefWrapper.CrossrefWrapper" title="academic_metrics.data_collection.CrossrefWrapper.CrossrefWrapper">CrossrefWrapper</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id15">
+<span class="sig-name descname"><span class="pre">_create_category_processor</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner._create_category_processor"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id15" title="Link to this definition">¶</a></dt>
+<dd><p>Create a new CategoryProcessor for processing publication categories.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A processor instance configured with utilities and factories.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="category_processor.html#academic_metrics.core.category_processor.CategoryProcessor" title="academic_metrics.core.category_processor.CategoryProcessor">CategoryProcessor</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id16">
+<span class="sig-name descname"><span class="pre">_create_faculty_postprocessor</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner._create_faculty_postprocessor"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id16" title="Link to this definition">¶</a></dt>
+<dd><p>Create a new FacultyPostprocessor for processing faculty data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A new instance of the faculty post-processor.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="academic_metrics.core.html#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor" title="academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor">FacultyPostprocessor</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id17">
+<span class="sig-name descname"><span class="pre">_create_scraper</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner._create_scraper"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id17" title="Link to this definition">¶</a></dt>
+<dd><p>Create a new Scraper instance for web scraping.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A scraper instance configured with the AI API key.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="academic_metrics.data_collection.html#academic_metrics.data_collection.scraper.Scraper" title="academic_metrics.data_collection.scraper.Scraper">Scraper</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id18">
+<span class="sig-name descname"><span class="pre">_create_db</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner._create_db"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id18" title="Link to this definition">¶</a></dt>
+<dd><p>Create a new DatabaseWrapper for database operations.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A database wrapper configured with connection details.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="academic_metrics.DB.html#academic_metrics.DB.DatabaseSetup.DatabaseWrapper" title="academic_metrics.DB.DatabaseSetup.DatabaseWrapper">DatabaseWrapper</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id19">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">_encode_affiliation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">affiliation</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/runners/pipeline.html#PipelineRunner._encode_affiliation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id19" title="Link to this definition">¶</a></dt>
+<dd><p>URL encode an affiliation string if it’s not already encoded.</p>
+<p>Checks if the string is already properly URL-encoded by:
+1. Decoding it with unquote()
+2. Re-encoding it with quote()
+3. Comparing to original - if they match, it was already encoded</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>affiliation</strong> (<em>str</em>) – Institution name to encode (e.g. “Salisbury University”
+or “Salisbury%20University”)</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>URL-encoded string (e.g. “Salisbury%20University”)</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-academic_metrics.runners">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-academic_metrics.runners" title="Link to this heading">¶</a></h2>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+        <div id="show_right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&lt;</span><span>Page contents</span></a></p>
+        </div>
+
+        <div id="right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
+            <div class="page_toc">
+                <ul>
+<li><a class="reference internal" href="#">academic_metrics.runners package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-academic_metrics.runners.pipeline">academic_metrics.runners.pipeline module</a><ul>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.SaveOfflineKwargs"><code class="docutils literal notranslate"><span class="pre">SaveOfflineKwargs</span></code></a><ul>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.SaveOfflineKwargs.offline"><code class="docutils literal notranslate"><span class="pre">SaveOfflineKwargs.offline</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.SaveOfflineKwargs.run_crossref_before_file_load"><code class="docutils literal notranslate"><span class="pre">SaveOfflineKwargs.run_crossref_before_file_load</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.SaveOfflineKwargs.make_files"><code class="docutils literal notranslate"><span class="pre">SaveOfflineKwargs.make_files</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.SaveOfflineKwargs.extend"><code class="docutils literal notranslate"><span class="pre">SaveOfflineKwargs.extend</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.PipelineRunner"><code class="docutils literal notranslate"><span class="pre">PipelineRunner</span></code></a><ul>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.PipelineRunner.SAVE_OFFLINE_KWARGS"><code class="docutils literal notranslate"><span class="pre">PipelineRunner.SAVE_OFFLINE_KWARGS</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.PipelineRunner.logger"><code class="docutils literal notranslate"><span class="pre">PipelineRunner.logger</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.PipelineRunner.ai_api_key"><code class="docutils literal notranslate"><span class="pre">PipelineRunner.ai_api_key</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.PipelineRunner.db_name"><code class="docutils literal notranslate"><span class="pre">PipelineRunner.db_name</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.PipelineRunner.mongodb_url"><code class="docutils literal notranslate"><span class="pre">PipelineRunner.mongodb_url</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.PipelineRunner.db"><code class="docutils literal notranslate"><span class="pre">PipelineRunner.db</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.PipelineRunner.scraper"><code class="docutils literal notranslate"><span class="pre">PipelineRunner.scraper</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.PipelineRunner.crossref_wrapper"><code class="docutils literal notranslate"><span class="pre">PipelineRunner.crossref_wrapper</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.PipelineRunner.taxonomy"><code class="docutils literal notranslate"><span class="pre">PipelineRunner.taxonomy</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.PipelineRunner.warning_manager"><code class="docutils literal notranslate"><span class="pre">PipelineRunner.warning_manager</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.PipelineRunner.strategy_factory"><code class="docutils literal notranslate"><span class="pre">PipelineRunner.strategy_factory</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.PipelineRunner.utilities"><code class="docutils literal notranslate"><span class="pre">PipelineRunner.utilities</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.PipelineRunner.classification_orchestrator"><code class="docutils literal notranslate"><span class="pre">PipelineRunner.classification_orchestrator</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.PipelineRunner.dataclass_factory"><code class="docutils literal notranslate"><span class="pre">PipelineRunner.dataclass_factory</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.PipelineRunner.category_processor"><code class="docutils literal notranslate"><span class="pre">PipelineRunner.category_processor</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.PipelineRunner.faculty_postprocessor"><code class="docutils literal notranslate"><span class="pre">PipelineRunner.faculty_postprocessor</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.PipelineRunner.debug"><code class="docutils literal notranslate"><span class="pre">PipelineRunner.debug</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.PipelineRunner.run_pipeline"><code class="docutils literal notranslate"><span class="pre">PipelineRunner.run_pipeline()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.PipelineRunner._create_taxonomy"><code class="docutils literal notranslate"><span class="pre">PipelineRunner._create_taxonomy()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.PipelineRunner._create_classifier_factory"><code class="docutils literal notranslate"><span class="pre">PipelineRunner._create_classifier_factory()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.PipelineRunner._create_warning_manager"><code class="docutils literal notranslate"><span class="pre">PipelineRunner._create_warning_manager()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.PipelineRunner._create_strategy_factory"><code class="docutils literal notranslate"><span class="pre">PipelineRunner._create_strategy_factory()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.PipelineRunner._create_utilities_instance"><code class="docutils literal notranslate"><span class="pre">PipelineRunner._create_utilities_instance()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.PipelineRunner._create_classification_orchestrator"><code class="docutils literal notranslate"><span class="pre">PipelineRunner._create_classification_orchestrator()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.PipelineRunner._create_orchestrator"><code class="docutils literal notranslate"><span class="pre">PipelineRunner._create_orchestrator()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.PipelineRunner._get_acf_func"><code class="docutils literal notranslate"><span class="pre">PipelineRunner._get_acf_func()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.PipelineRunner._validate_api_key"><code class="docutils literal notranslate"><span class="pre">PipelineRunner._validate_api_key()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.PipelineRunner._make_files"><code class="docutils literal notranslate"><span class="pre">PipelineRunner._make_files()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.PipelineRunner._load_files"><code class="docutils literal notranslate"><span class="pre">PipelineRunner._load_files()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.PipelineRunner._create_dataclass_factory"><code class="docutils literal notranslate"><span class="pre">PipelineRunner._create_dataclass_factory()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.PipelineRunner._create_crossref_wrapper"><code class="docutils literal notranslate"><span class="pre">PipelineRunner._create_crossref_wrapper()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.PipelineRunner._create_category_processor"><code class="docutils literal notranslate"><span class="pre">PipelineRunner._create_category_processor()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.PipelineRunner._create_faculty_postprocessor"><code class="docutils literal notranslate"><span class="pre">PipelineRunner._create_faculty_postprocessor()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.PipelineRunner._create_scraper"><code class="docutils literal notranslate"><span class="pre">PipelineRunner._create_scraper()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.PipelineRunner._create_db"><code class="docutils literal notranslate"><span class="pre">PipelineRunner._create_db()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.PipelineRunner._encode_affiliation"><code class="docutils literal notranslate"><span class="pre">PipelineRunner._encode_affiliation()</span></code></a></li>
+<li><a class="reference internal" href="#id0"><code class="docutils literal notranslate"><span class="pre">PipelineRunner.SAVE_OFFLINE_KWARGS</span></code></a></li>
+<li><a class="reference internal" href="#id1"><code class="docutils literal notranslate"><span class="pre">PipelineRunner.run_pipeline()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.runners.pipeline.PipelineRunner.test_run"><code class="docutils literal notranslate"><span class="pre">PipelineRunner.test_run()</span></code></a></li>
+<li><a class="reference internal" href="#id2"><code class="docutils literal notranslate"><span class="pre">PipelineRunner._create_taxonomy()</span></code></a></li>
+<li><a class="reference internal" href="#id3"><code class="docutils literal notranslate"><span class="pre">PipelineRunner._create_classifier_factory()</span></code></a></li>
+<li><a class="reference internal" href="#id4"><code class="docutils literal notranslate"><span class="pre">PipelineRunner._create_warning_manager()</span></code></a></li>
+<li><a class="reference internal" href="#id5"><code class="docutils literal notranslate"><span class="pre">PipelineRunner._create_strategy_factory()</span></code></a></li>
+<li><a class="reference internal" href="#id6"><code class="docutils literal notranslate"><span class="pre">PipelineRunner._create_utilities_instance()</span></code></a></li>
+<li><a class="reference internal" href="#id7"><code class="docutils literal notranslate"><span class="pre">PipelineRunner._create_classification_orchestrator()</span></code></a></li>
+<li><a class="reference internal" href="#id8"><code class="docutils literal notranslate"><span class="pre">PipelineRunner._create_orchestrator()</span></code></a></li>
+<li><a class="reference internal" href="#id9"><code class="docutils literal notranslate"><span class="pre">PipelineRunner._get_acf_func()</span></code></a></li>
+<li><a class="reference internal" href="#id10"><code class="docutils literal notranslate"><span class="pre">PipelineRunner._validate_api_key()</span></code></a></li>
+<li><a class="reference internal" href="#id11"><code class="docutils literal notranslate"><span class="pre">PipelineRunner._make_files()</span></code></a></li>
+<li><a class="reference internal" href="#id12"><code class="docutils literal notranslate"><span class="pre">PipelineRunner._load_files()</span></code></a></li>
+<li><a class="reference internal" href="#id13"><code class="docutils literal notranslate"><span class="pre">PipelineRunner._create_dataclass_factory()</span></code></a></li>
+<li><a class="reference internal" href="#id14"><code class="docutils literal notranslate"><span class="pre">PipelineRunner._create_crossref_wrapper()</span></code></a></li>
+<li><a class="reference internal" href="#id15"><code class="docutils literal notranslate"><span class="pre">PipelineRunner._create_category_processor()</span></code></a></li>
+<li><a class="reference internal" href="#id16"><code class="docutils literal notranslate"><span class="pre">PipelineRunner._create_faculty_postprocessor()</span></code></a></li>
+<li><a class="reference internal" href="#id17"><code class="docutils literal notranslate"><span class="pre">PipelineRunner._create_scraper()</span></code></a></li>
+<li><a class="reference internal" href="#id18"><code class="docutils literal notranslate"><span class="pre">PipelineRunner._create_db()</span></code></a></li>
+<li><a class="reference internal" href="#id19"><code class="docutils literal notranslate"><span class="pre">PipelineRunner._encode_affiliation()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-academic_metrics.runners">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+    
+
+      <div class="clearer"></div>
+    </div>
+    <div class="button_nav_wrapper">
+        <div class="button_nav">
+            <div class="left">
+                
+            </div>
+
+            <div class="right">
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Spencer Presley, Cole Barbes.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    </div>
+
+<p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>
+  </body>
+</html>

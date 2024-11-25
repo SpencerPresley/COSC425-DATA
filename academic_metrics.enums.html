@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>academic_metrics.enums package &#8212; Academic Metrics 0.1.0-beta documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+    <link rel="stylesheet" type="text/css" href="_static/basic_mod.css?v=9b2032db" />
+    <script src="_static/documentation_options.js?v=c903bf51"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <script src="_static/js/petite-vue.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head><body data-dark_mode_code_blocks="true">
+
+<div id="top_nav">
+    
+
+    <nav>
+        
+            
+        
+
+        <p id="toggle_sidebar">
+            <a href="#" title="Toggle sidebar">|||</a>
+        </p>
+        <h1><a href="index.html" title="Go to homepage">Academic Metrics 0.1.0-beta documentation</a></h1>
+
+        <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
+    <template v-if="mode == 'light'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_light"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M67.48,18.073c1.913,-1.912 1.913,-5.018 0,-6.931c-1.912,-1.912 -5.018,-1.912 -6.931,0l-6.798,6.799c-1.912,1.912 -1.912,5.018 0,6.931c1.913,1.912 5.018,1.912 6.931,-0l6.798,-6.799Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.728,61.108c1.912,-1.913 1.912,-5.018 -0,-6.931c-1.913,-1.913 -5.019,-1.913 -6.931,-0l-6.799,6.798c-1.912,1.913 -1.912,5.019 0,6.931c1.913,1.913 5.019,1.913 6.931,0l6.799,-6.798Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.682,54.177c-1.913,-1.913 -5.018,-1.913 -6.931,-0c-1.912,1.913 -1.912,5.018 0,6.931l6.798,6.798c1.913,1.913 5.019,1.913 6.931,0c1.913,-1.912 1.913,-5.018 0,-6.931l-6.798,-6.798Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M4.901,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,-0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M18.929,11.142c-1.912,-1.912 -5.018,-1.912 -6.931,0c-1.912,1.913 -1.912,5.019 0,6.931l6.799,6.799c1.912,1.912 5.018,1.912 6.931,-0c1.912,-1.913 1.912,-5.019 -0,-6.931l-6.799,-6.799Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.108,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c-0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c-0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'dark'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_dark"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.901,2.196 -4.901,4.901c0,2.705 2.197,4.901 4.901,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.662,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.989,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.732,61.103c1.91,-1.91 1.91,-5.011 0,-6.921l-0.009,-0.01c-1.91,-1.91 -5.012,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.909,1.91 5.011,1.91 6.92,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.672,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.52,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l-0,-0.01c-0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.901,2.196 -4.901,4.901c0,2.704 2.197,4.9 4.901,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.73,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 -0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.098,34.623c-2.699,0 -4.891,2.192 -4.891,4.892l-0,0.019c-0,2.699 2.192,4.891 4.891,4.891c2.7,0 4.892,-2.192 4.892,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.892,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'darkest'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_darkest"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><path d="M39.315,23.791c8.684,-0 15.734,7.05 15.734,15.733c0,8.684 -7.05,15.734 -15.734,15.734c-8.683,0 -15.733,-7.05 -15.733,-15.734c-0,-8.683 7.05,-15.733 15.733,-15.733Zm0,4.737c6.069,0 10.997,4.927 10.997,10.996c-0,6.069 -4.928,10.996 -10.997,10.996c-6.068,0 -10.996,-4.927 -10.996,-10.996c0,-6.069 4.928,-10.996 10.996,-10.996Z" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.216,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.9,2.196 -4.9,4.901c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.666,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.99,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.737,61.103c1.909,-1.91 1.909,-5.011 -0,-6.921l-0.01,-0.01c-1.91,-1.91 -5.011,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.91,1.91 5.011,1.91 6.921,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.676,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.524,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l0,-0.01c0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.216,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901c-0,2.704 2.196,4.9 4.9,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.734,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.103,34.623c-2.7,0 -4.892,2.192 -4.892,4.892l-0,0.019c-0,2.699 2.192,4.891 4.892,4.891c2.699,0 4.891,-2.192 4.891,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.891,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+</a>
+
+<script>
+(function() {
+    const LOCAL_STORAGE_KEY = 'piccoloThemeMode'
+
+    var initialMode = localStorage.getItem(LOCAL_STORAGE_KEY)
+
+    if (initialMode) {
+        // Make sure the value in local storage is valid
+        if (['light', 'dark', 'darkest'].indexOf(initialMode) == -1) {
+            initialMode = 'light'
+            localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+        }
+    } else {
+        // Check if the client prefers dark mode
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            initialMode = 'dark'
+        } else {
+            initialMode = 'light'
+        }
+        localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+    }
+
+    document.documentElement.dataset.mode = initialMode
+
+    PetiteVue.createApp({
+        'mode': initialMode,
+        handleClick() {
+            let currentMode = this.mode
+
+            if (currentMode == 'light') {
+                this.mode = 'dark'
+            } else if (currentMode == 'dark') {
+                this.mode = 'darkest'
+            } else if (currentMode == 'darkest') {
+                this.mode = 'light'
+            }
+
+            document.documentElement.dataset.mode = this.mode
+            localStorage.setItem(LOCAL_STORAGE_KEY, this.mode)
+
+            console.log(this.mode)
+        }
+    }).mount('#mode_toggle')
+})()
+</script>
+            <p class="mobile_search_link">
+                <a href="search.html" title="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 64" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path d="M14.873 40.009c-2.315-3.943-3.642-8.532-3.642-13.429C11.231 11.91 23.141 0 37.811 0s26.58 11.91 26.58 26.58-11.91 26.58-26.58 26.58a26.44 26.44 0 0 1-14.277-4.161L9.739 62.794a3.12 3.12 0 0 1-4.413 0L.913 58.382c-1.217-1.218-1.217-3.196 0-4.413l13.96-13.96zM37.811 8.054c10.225 0 18.526 8.301 18.526 18.526s-8.301 18.526-18.526 18.526-18.526-8.301-18.526-18.526S27.586 8.054 37.811 8.054z" fill="#fff" />
+                    </svg>
+                </a>
+            </p>
+        
+
+        <div class="searchbox_wrapper">
+            
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="abstract_classifier.html">Abstract Classifier Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="category_processor.html">Category Processor Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faculty_set_postprocessor.html">Faculty Set Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config.html">Global Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chain_builder.html">Chain Builder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ai_prompts.html">ai_prompts package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection.html">data_collection package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dataclass_models.html">dataclass_models package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DB.html">DB package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enums.html">enums package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="factories.html">factories package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="orchestrators.html">orchestrators package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="other.html">other package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="runners.html">runners package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="strategies.html">strategies package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="utils.html">utils package</a></li>
+</ul>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="academic-metrics-enums-package">
+<h1>academic_metrics.enums package<a class="headerlink" href="#academic-metrics-enums-package" title="Link to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
+</section>
+<section id="module-academic_metrics.enums.dataclass_enums">
+<span id="academic-metrics-enums-dataclass-enums-module"></span><h2>academic_metrics.enums.dataclass_enums module<a class="headerlink" href="#module-academic_metrics.enums.dataclass_enums" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="academic_metrics.enums.dataclass_enums.DataClassTypes">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">academic_metrics.enums.dataclass_enums.</span></span><span class="sig-name descname"><span class="pre">DataClassTypes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">names=&lt;not</span> <span class="pre">given&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">*values</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">module=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qualname=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start=1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boundary=None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/enums/dataclass_enums.html#DataClassTypes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.enums.dataclass_enums.DataClassTypes" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>Enum for the different types of data classes.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.enums.dataclass_enums.DataClassTypes.CATEGORY_INFO">
+<span class="sig-name descname"><span class="pre">CATEGORY_INFO</span></span><a class="headerlink" href="#academic_metrics.enums.dataclass_enums.DataClassTypes.CATEGORY_INFO" title="Link to this definition">¶</a></dt>
+<dd><p>Category information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.enums.dataclass_enums.DataClassTypes.GLOBAL_FACULTY_STATS">
+<span class="sig-name descname"><span class="pre">GLOBAL_FACULTY_STATS</span></span><a class="headerlink" href="#academic_metrics.enums.dataclass_enums.DataClassTypes.GLOBAL_FACULTY_STATS" title="Link to this definition">¶</a></dt>
+<dd><p>Global faculty statistics.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.enums.dataclass_enums.DataClassTypes.FACULTY_INFO">
+<span class="sig-name descname"><span class="pre">FACULTY_INFO</span></span><a class="headerlink" href="#academic_metrics.enums.dataclass_enums.DataClassTypes.FACULTY_INFO" title="Link to this definition">¶</a></dt>
+<dd><p>Faculty information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.enums.dataclass_enums.DataClassTypes.FACULTY_STATS">
+<span class="sig-name descname"><span class="pre">FACULTY_STATS</span></span><a class="headerlink" href="#academic_metrics.enums.dataclass_enums.DataClassTypes.FACULTY_STATS" title="Link to this definition">¶</a></dt>
+<dd><p>Faculty statistics.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.enums.dataclass_enums.DataClassTypes.ARTICLE_DETAILS">
+<span class="sig-name descname"><span class="pre">ARTICLE_DETAILS</span></span><a class="headerlink" href="#academic_metrics.enums.dataclass_enums.DataClassTypes.ARTICLE_DETAILS" title="Link to this definition">¶</a></dt>
+<dd><p>Article details.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.enums.dataclass_enums.DataClassTypes.ARTICLE_STATS">
+<span class="sig-name descname"><span class="pre">ARTICLE_STATS</span></span><a class="headerlink" href="#academic_metrics.enums.dataclass_enums.DataClassTypes.ARTICLE_STATS" title="Link to this definition">¶</a></dt>
+<dd><p>Article statistics.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.enums.dataclass_enums.DataClassTypes.CROSSREF_ARTICLE_DETAILS">
+<span class="sig-name descname"><span class="pre">CROSSREF_ARTICLE_DETAILS</span></span><a class="headerlink" href="#academic_metrics.enums.dataclass_enums.DataClassTypes.CROSSREF_ARTICLE_DETAILS" title="Link to this definition">¶</a></dt>
+<dd><p>Crossref article details.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.enums.dataclass_enums.DataClassTypes.CROSSREF_ARTICLE_STATS">
+<span class="sig-name descname"><span class="pre">CROSSREF_ARTICLE_STATS</span></span><a class="headerlink" href="#academic_metrics.enums.dataclass_enums.DataClassTypes.CROSSREF_ARTICLE_STATS" title="Link to this definition">¶</a></dt>
+<dd><p>Crossref article statistics.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id0">
+<span class="sig-name descname"><span class="pre">CATEGORY_INFO</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'category_info'</span></em><a class="headerlink" href="#id0" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id1">
+<span class="sig-name descname"><span class="pre">GLOBAL_FACULTY_STATS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'global_faculty_stats'</span></em><a class="headerlink" href="#id1" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id2">
+<span class="sig-name descname"><span class="pre">FACULTY_INFO</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'faculty_info'</span></em><a class="headerlink" href="#id2" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id3">
+<span class="sig-name descname"><span class="pre">FACULTY_STATS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'faculty_stats'</span></em><a class="headerlink" href="#id3" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id4">
+<span class="sig-name descname"><span class="pre">ARTICLE_DETAILS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'article_details'</span></em><a class="headerlink" href="#id4" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id5">
+<span class="sig-name descname"><span class="pre">ARTICLE_STATS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'article_stats'</span></em><a class="headerlink" href="#id5" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id6">
+<span class="sig-name descname"><span class="pre">CROSSREF_ARTICLE_DETAILS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'crossref_article_details'</span></em><a class="headerlink" href="#id6" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id7">
+<span class="sig-name descname"><span class="pre">CROSSREF_ARTICLE_STATS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'crossref_article_stats'</span></em><a class="headerlink" href="#id7" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-academic_metrics.enums.enums">
+<span id="academic-metrics-enums-enums-module"></span><h2>academic_metrics.enums.enums module<a class="headerlink" href="#module-academic_metrics.enums.enums" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="academic_metrics.enums.enums.AttributeTypes">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">academic_metrics.enums.enums.</span></span><span class="sig-name descname"><span class="pre">AttributeTypes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">names=&lt;not</span> <span class="pre">given&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">*values</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">module=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qualname=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start=1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boundary=None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/enums/enums.html#AttributeTypes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.enums.enums.AttributeTypes" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>Enum for the different types of attributes.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.enums.enums.AttributeTypes.AUTHOR">
+<span class="sig-name descname"><span class="pre">AUTHOR</span></span><a class="headerlink" href="#academic_metrics.enums.enums.AttributeTypes.AUTHOR" title="Link to this definition">¶</a></dt>
+<dd><p>Author.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.enums.enums.AttributeTypes.TITLE">
+<span class="sig-name descname"><span class="pre">TITLE</span></span><a class="headerlink" href="#academic_metrics.enums.enums.AttributeTypes.TITLE" title="Link to this definition">¶</a></dt>
+<dd><p>Title.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.enums.enums.AttributeTypes.ABSTRACT">
+<span class="sig-name descname"><span class="pre">ABSTRACT</span></span><a class="headerlink" href="#academic_metrics.enums.enums.AttributeTypes.ABSTRACT" title="Link to this definition">¶</a></dt>
+<dd><p>Abstract.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.enums.enums.AttributeTypes.END_RECORD">
+<span class="sig-name descname"><span class="pre">END_RECORD</span></span><a class="headerlink" href="#academic_metrics.enums.enums.AttributeTypes.END_RECORD" title="Link to this definition">¶</a></dt>
+<dd><p>End record.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.enums.enums.AttributeTypes.WC_PATTERN">
+<span class="sig-name descname"><span class="pre">WC_PATTERN</span></span><a class="headerlink" href="#academic_metrics.enums.enums.AttributeTypes.WC_PATTERN" title="Link to this definition">¶</a></dt>
+<dd><p>Word count pattern.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.enums.enums.AttributeTypes.DEPARTMENT">
+<span class="sig-name descname"><span class="pre">DEPARTMENT</span></span><a class="headerlink" href="#academic_metrics.enums.enums.AttributeTypes.DEPARTMENT" title="Link to this definition">¶</a></dt>
+<dd><p>Department.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.enums.enums.AttributeTypes.CROSSREF_TITLE">
+<span class="sig-name descname"><span class="pre">CROSSREF_TITLE</span></span><a class="headerlink" href="#academic_metrics.enums.enums.AttributeTypes.CROSSREF_TITLE" title="Link to this definition">¶</a></dt>
+<dd><p>Crossref title.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.enums.enums.AttributeTypes.CROSSREF_ABSTRACT">
+<span class="sig-name descname"><span class="pre">CROSSREF_ABSTRACT</span></span><a class="headerlink" href="#academic_metrics.enums.enums.AttributeTypes.CROSSREF_ABSTRACT" title="Link to this definition">¶</a></dt>
+<dd><p>Crossref abstract.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.enums.enums.AttributeTypes.CROSSREF_AUTHORS">
+<span class="sig-name descname"><span class="pre">CROSSREF_AUTHORS</span></span><a class="headerlink" href="#academic_metrics.enums.enums.AttributeTypes.CROSSREF_AUTHORS" title="Link to this definition">¶</a></dt>
+<dd><p>Crossref authors.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.enums.enums.AttributeTypes.CROSSREF_DEPARTMENTS">
+<span class="sig-name descname"><span class="pre">CROSSREF_DEPARTMENTS</span></span><a class="headerlink" href="#academic_metrics.enums.enums.AttributeTypes.CROSSREF_DEPARTMENTS" title="Link to this definition">¶</a></dt>
+<dd><p>Crossref departments.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.enums.enums.AttributeTypes.CROSSREF_CATEGORIES">
+<span class="sig-name descname"><span class="pre">CROSSREF_CATEGORIES</span></span><a class="headerlink" href="#academic_metrics.enums.enums.AttributeTypes.CROSSREF_CATEGORIES" title="Link to this definition">¶</a></dt>
+<dd><p>Crossref categories.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.enums.enums.AttributeTypes.CROSSREF_URL">
+<span class="sig-name descname"><span class="pre">CROSSREF_URL</span></span><a class="headerlink" href="#academic_metrics.enums.enums.AttributeTypes.CROSSREF_URL" title="Link to this definition">¶</a></dt>
+<dd><p>Crossref URL.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.enums.enums.AttributeTypes.CROSSREF_CITATION_COUNT">
+<span class="sig-name descname"><span class="pre">CROSSREF_CITATION_COUNT</span></span><a class="headerlink" href="#academic_metrics.enums.enums.AttributeTypes.CROSSREF_CITATION_COUNT" title="Link to this definition">¶</a></dt>
+<dd><p>Crossref citation count.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.enums.enums.AttributeTypes.CROSSREF_LICENSE_URL">
+<span class="sig-name descname"><span class="pre">CROSSREF_LICENSE_URL</span></span><a class="headerlink" href="#academic_metrics.enums.enums.AttributeTypes.CROSSREF_LICENSE_URL" title="Link to this definition">¶</a></dt>
+<dd><p>Crossref license URL.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.enums.enums.AttributeTypes.CROSSREF_PUBLISHED_PRINT">
+<span class="sig-name descname"><span class="pre">CROSSREF_PUBLISHED_PRINT</span></span><a class="headerlink" href="#academic_metrics.enums.enums.AttributeTypes.CROSSREF_PUBLISHED_PRINT" title="Link to this definition">¶</a></dt>
+<dd><p>Crossref published print.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.enums.enums.AttributeTypes.CROSSREF_CREATED_DATE">
+<span class="sig-name descname"><span class="pre">CROSSREF_CREATED_DATE</span></span><a class="headerlink" href="#academic_metrics.enums.enums.AttributeTypes.CROSSREF_CREATED_DATE" title="Link to this definition">¶</a></dt>
+<dd><p>Crossref created date.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.enums.enums.AttributeTypes.CROSSREF_PUBLISHED_ONLINE">
+<span class="sig-name descname"><span class="pre">CROSSREF_PUBLISHED_ONLINE</span></span><a class="headerlink" href="#academic_metrics.enums.enums.AttributeTypes.CROSSREF_PUBLISHED_ONLINE" title="Link to this definition">¶</a></dt>
+<dd><p>Crossref published online.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.enums.enums.AttributeTypes.CROSSREF_JOURNAL">
+<span class="sig-name descname"><span class="pre">CROSSREF_JOURNAL</span></span><a class="headerlink" href="#academic_metrics.enums.enums.AttributeTypes.CROSSREF_JOURNAL" title="Link to this definition">¶</a></dt>
+<dd><p>Crossref journal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.enums.enums.AttributeTypes.CROSSREF_DOI">
+<span class="sig-name descname"><span class="pre">CROSSREF_DOI</span></span><a class="headerlink" href="#academic_metrics.enums.enums.AttributeTypes.CROSSREF_DOI" title="Link to this definition">¶</a></dt>
+<dd><p>Crossref DOI.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.enums.enums.AttributeTypes.CROSSREF_THEMES">
+<span class="sig-name descname"><span class="pre">CROSSREF_THEMES</span></span><a class="headerlink" href="#academic_metrics.enums.enums.AttributeTypes.CROSSREF_THEMES" title="Link to this definition">¶</a></dt>
+<dd><p>Crossref themes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.enums.enums.AttributeTypes.CROSSREF_EXTRA_CONTEXT">
+<span class="sig-name descname"><span class="pre">CROSSREF_EXTRA_CONTEXT</span></span><a class="headerlink" href="#academic_metrics.enums.enums.AttributeTypes.CROSSREF_EXTRA_CONTEXT" title="Link to this definition">¶</a></dt>
+<dd><p>Crossref extra context.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id8">
+<span class="sig-name descname"><span class="pre">AUTHOR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'author'</span></em><a class="headerlink" href="#id8" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id9">
+<span class="sig-name descname"><span class="pre">TITLE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'title'</span></em><a class="headerlink" href="#id9" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id10">
+<span class="sig-name descname"><span class="pre">ABSTRACT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abstract'</span></em><a class="headerlink" href="#id10" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id11">
+<span class="sig-name descname"><span class="pre">END_RECORD</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'end_record'</span></em><a class="headerlink" href="#id11" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id12">
+<span class="sig-name descname"><span class="pre">WC_PATTERN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'wc_pattern'</span></em><a class="headerlink" href="#id12" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id13">
+<span class="sig-name descname"><span class="pre">DEPARTMENT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'department'</span></em><a class="headerlink" href="#id13" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id14">
+<span class="sig-name descname"><span class="pre">CROSSREF_TITLE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'crossref-title'</span></em><a class="headerlink" href="#id14" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id15">
+<span class="sig-name descname"><span class="pre">CROSSREF_ABSTRACT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'crossref-abstract'</span></em><a class="headerlink" href="#id15" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id16">
+<span class="sig-name descname"><span class="pre">CROSSREF_AUTHORS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'crossref-authors'</span></em><a class="headerlink" href="#id16" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id17">
+<span class="sig-name descname"><span class="pre">CROSSREF_DEPARTMENTS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'crossref-departments'</span></em><a class="headerlink" href="#id17" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id18">
+<span class="sig-name descname"><span class="pre">CROSSREF_CATEGORIES</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'crossref-categories'</span></em><a class="headerlink" href="#id18" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id19">
+<span class="sig-name descname"><span class="pre">CROSSREF_CITATION_COUNT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'crossref-citation-count'</span></em><a class="headerlink" href="#id19" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id20">
+<span class="sig-name descname"><span class="pre">CROSSREF_LICENSE_URL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'crossref-license-url'</span></em><a class="headerlink" href="#id20" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id21">
+<span class="sig-name descname"><span class="pre">CROSSREF_PUBLISHED_PRINT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'crossref-published-print'</span></em><a class="headerlink" href="#id21" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id22">
+<span class="sig-name descname"><span class="pre">CROSSREF_CREATED_DATE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'crossref-created-date'</span></em><a class="headerlink" href="#id22" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id23">
+<span class="sig-name descname"><span class="pre">CROSSREF_PUBLISHED_ONLINE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'crossref-published-online'</span></em><a class="headerlink" href="#id23" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id24">
+<span class="sig-name descname"><span class="pre">CROSSREF_JOURNAL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'crossref-journal'</span></em><a class="headerlink" href="#id24" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id25">
+<span class="sig-name descname"><span class="pre">CROSSREF_URL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'crossref-url'</span></em><a class="headerlink" href="#id25" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id26">
+<span class="sig-name descname"><span class="pre">CROSSREF_DOI</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'crossref-doi'</span></em><a class="headerlink" href="#id26" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id27">
+<span class="sig-name descname"><span class="pre">CROSSREF_THEMES</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'crossref-themes'</span></em><a class="headerlink" href="#id27" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id28">
+<span class="sig-name descname"><span class="pre">CROSSREF_EXTRA_CONTEXT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'crossref-extra-context'</span></em><a class="headerlink" href="#id28" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-academic_metrics.enums">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-academic_metrics.enums" title="Link to this heading">¶</a></h2>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+        <div id="show_right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&lt;</span><span>Page contents</span></a></p>
+        </div>
+
+        <div id="right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
+            <div class="page_toc">
+                <ul>
+<li><a class="reference internal" href="#">academic_metrics.enums package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-academic_metrics.enums.dataclass_enums">academic_metrics.enums.dataclass_enums module</a><ul>
+<li><a class="reference internal" href="#academic_metrics.enums.dataclass_enums.DataClassTypes"><code class="docutils literal notranslate"><span class="pre">DataClassTypes</span></code></a><ul>
+<li><a class="reference internal" href="#academic_metrics.enums.dataclass_enums.DataClassTypes.CATEGORY_INFO"><code class="docutils literal notranslate"><span class="pre">DataClassTypes.CATEGORY_INFO</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.enums.dataclass_enums.DataClassTypes.GLOBAL_FACULTY_STATS"><code class="docutils literal notranslate"><span class="pre">DataClassTypes.GLOBAL_FACULTY_STATS</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.enums.dataclass_enums.DataClassTypes.FACULTY_INFO"><code class="docutils literal notranslate"><span class="pre">DataClassTypes.FACULTY_INFO</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.enums.dataclass_enums.DataClassTypes.FACULTY_STATS"><code class="docutils literal notranslate"><span class="pre">DataClassTypes.FACULTY_STATS</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.enums.dataclass_enums.DataClassTypes.ARTICLE_DETAILS"><code class="docutils literal notranslate"><span class="pre">DataClassTypes.ARTICLE_DETAILS</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.enums.dataclass_enums.DataClassTypes.ARTICLE_STATS"><code class="docutils literal notranslate"><span class="pre">DataClassTypes.ARTICLE_STATS</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.enums.dataclass_enums.DataClassTypes.CROSSREF_ARTICLE_DETAILS"><code class="docutils literal notranslate"><span class="pre">DataClassTypes.CROSSREF_ARTICLE_DETAILS</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.enums.dataclass_enums.DataClassTypes.CROSSREF_ARTICLE_STATS"><code class="docutils literal notranslate"><span class="pre">DataClassTypes.CROSSREF_ARTICLE_STATS</span></code></a></li>
+<li><a class="reference internal" href="#id0"><code class="docutils literal notranslate"><span class="pre">DataClassTypes.CATEGORY_INFO</span></code></a></li>
+<li><a class="reference internal" href="#id1"><code class="docutils literal notranslate"><span class="pre">DataClassTypes.GLOBAL_FACULTY_STATS</span></code></a></li>
+<li><a class="reference internal" href="#id2"><code class="docutils literal notranslate"><span class="pre">DataClassTypes.FACULTY_INFO</span></code></a></li>
+<li><a class="reference internal" href="#id3"><code class="docutils literal notranslate"><span class="pre">DataClassTypes.FACULTY_STATS</span></code></a></li>
+<li><a class="reference internal" href="#id4"><code class="docutils literal notranslate"><span class="pre">DataClassTypes.ARTICLE_DETAILS</span></code></a></li>
+<li><a class="reference internal" href="#id5"><code class="docutils literal notranslate"><span class="pre">DataClassTypes.ARTICLE_STATS</span></code></a></li>
+<li><a class="reference internal" href="#id6"><code class="docutils literal notranslate"><span class="pre">DataClassTypes.CROSSREF_ARTICLE_DETAILS</span></code></a></li>
+<li><a class="reference internal" href="#id7"><code class="docutils literal notranslate"><span class="pre">DataClassTypes.CROSSREF_ARTICLE_STATS</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-academic_metrics.enums.enums">academic_metrics.enums.enums module</a><ul>
+<li><a class="reference internal" href="#academic_metrics.enums.enums.AttributeTypes"><code class="docutils literal notranslate"><span class="pre">AttributeTypes</span></code></a><ul>
+<li><a class="reference internal" href="#academic_metrics.enums.enums.AttributeTypes.AUTHOR"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.AUTHOR</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.enums.enums.AttributeTypes.TITLE"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.TITLE</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.enums.enums.AttributeTypes.ABSTRACT"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.ABSTRACT</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.enums.enums.AttributeTypes.END_RECORD"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.END_RECORD</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.enums.enums.AttributeTypes.WC_PATTERN"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.WC_PATTERN</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.enums.enums.AttributeTypes.DEPARTMENT"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.DEPARTMENT</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.enums.enums.AttributeTypes.CROSSREF_TITLE"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.CROSSREF_TITLE</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.enums.enums.AttributeTypes.CROSSREF_ABSTRACT"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.CROSSREF_ABSTRACT</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.enums.enums.AttributeTypes.CROSSREF_AUTHORS"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.CROSSREF_AUTHORS</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.enums.enums.AttributeTypes.CROSSREF_DEPARTMENTS"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.CROSSREF_DEPARTMENTS</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.enums.enums.AttributeTypes.CROSSREF_CATEGORIES"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.CROSSREF_CATEGORIES</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.enums.enums.AttributeTypes.CROSSREF_URL"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.CROSSREF_URL</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.enums.enums.AttributeTypes.CROSSREF_CITATION_COUNT"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.CROSSREF_CITATION_COUNT</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.enums.enums.AttributeTypes.CROSSREF_LICENSE_URL"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.CROSSREF_LICENSE_URL</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.enums.enums.AttributeTypes.CROSSREF_PUBLISHED_PRINT"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.CROSSREF_PUBLISHED_PRINT</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.enums.enums.AttributeTypes.CROSSREF_CREATED_DATE"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.CROSSREF_CREATED_DATE</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.enums.enums.AttributeTypes.CROSSREF_PUBLISHED_ONLINE"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.CROSSREF_PUBLISHED_ONLINE</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.enums.enums.AttributeTypes.CROSSREF_JOURNAL"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.CROSSREF_JOURNAL</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.enums.enums.AttributeTypes.CROSSREF_DOI"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.CROSSREF_DOI</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.enums.enums.AttributeTypes.CROSSREF_THEMES"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.CROSSREF_THEMES</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.enums.enums.AttributeTypes.CROSSREF_EXTRA_CONTEXT"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.CROSSREF_EXTRA_CONTEXT</span></code></a></li>
+<li><a class="reference internal" href="#id8"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.AUTHOR</span></code></a></li>
+<li><a class="reference internal" href="#id9"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.TITLE</span></code></a></li>
+<li><a class="reference internal" href="#id10"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.ABSTRACT</span></code></a></li>
+<li><a class="reference internal" href="#id11"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.END_RECORD</span></code></a></li>
+<li><a class="reference internal" href="#id12"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.WC_PATTERN</span></code></a></li>
+<li><a class="reference internal" href="#id13"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.DEPARTMENT</span></code></a></li>
+<li><a class="reference internal" href="#id14"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.CROSSREF_TITLE</span></code></a></li>
+<li><a class="reference internal" href="#id15"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.CROSSREF_ABSTRACT</span></code></a></li>
+<li><a class="reference internal" href="#id16"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.CROSSREF_AUTHORS</span></code></a></li>
+<li><a class="reference internal" href="#id17"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.CROSSREF_DEPARTMENTS</span></code></a></li>
+<li><a class="reference internal" href="#id18"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.CROSSREF_CATEGORIES</span></code></a></li>
+<li><a class="reference internal" href="#id19"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.CROSSREF_CITATION_COUNT</span></code></a></li>
+<li><a class="reference internal" href="#id20"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.CROSSREF_LICENSE_URL</span></code></a></li>
+<li><a class="reference internal" href="#id21"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.CROSSREF_PUBLISHED_PRINT</span></code></a></li>
+<li><a class="reference internal" href="#id22"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.CROSSREF_CREATED_DATE</span></code></a></li>
+<li><a class="reference internal" href="#id23"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.CROSSREF_PUBLISHED_ONLINE</span></code></a></li>
+<li><a class="reference internal" href="#id24"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.CROSSREF_JOURNAL</span></code></a></li>
+<li><a class="reference internal" href="#id25"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.CROSSREF_URL</span></code></a></li>
+<li><a class="reference internal" href="#id26"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.CROSSREF_DOI</span></code></a></li>
+<li><a class="reference internal" href="#id27"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.CROSSREF_THEMES</span></code></a></li>
+<li><a class="reference internal" href="#id28"><code class="docutils literal notranslate"><span class="pre">AttributeTypes.CROSSREF_EXTRA_CONTEXT</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-academic_metrics.enums">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+    
+
+      <div class="clearer"></div>
+    </div>
+    <div class="button_nav_wrapper">
+        <div class="button_nav">
+            <div class="left">
+                
+            </div>
+
+            <div class="right">
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Spencer Presley, Cole Barbes.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    </div>
+
+<p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>
+  </body>
+</html>

@@ -1,0 +1,1801 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Abstract Classifier Module &#8212; Academic Metrics 0.1.0-beta documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+    <link rel="stylesheet" type="text/css" href="_static/basic_mod.css?v=9b2032db" />
+    <script src="_static/documentation_options.js?v=c903bf51"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <script src="_static/js/petite-vue.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Category Processor Module" href="category_processor.html" />
+    <link rel="prev" title="Welcome to Academic Metrics’s documentation!" href="index.html" /> 
+  </head><body data-dark_mode_code_blocks="true">
+
+<div id="top_nav">
+    
+
+    <nav>
+        
+            
+        
+
+        <p id="toggle_sidebar">
+            <a href="#" title="Toggle sidebar">|||</a>
+        </p>
+        <h1><a href="index.html" title="Go to homepage">Academic Metrics 0.1.0-beta documentation</a></h1>
+
+        <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
+    <template v-if="mode == 'light'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_light"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M67.48,18.073c1.913,-1.912 1.913,-5.018 0,-6.931c-1.912,-1.912 -5.018,-1.912 -6.931,0l-6.798,6.799c-1.912,1.912 -1.912,5.018 0,6.931c1.913,1.912 5.018,1.912 6.931,-0l6.798,-6.799Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.728,61.108c1.912,-1.913 1.912,-5.018 -0,-6.931c-1.913,-1.913 -5.019,-1.913 -6.931,-0l-6.799,6.798c-1.912,1.913 -1.912,5.019 0,6.931c1.913,1.913 5.019,1.913 6.931,0l6.799,-6.798Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.682,54.177c-1.913,-1.913 -5.018,-1.913 -6.931,-0c-1.912,1.913 -1.912,5.018 0,6.931l6.798,6.798c1.913,1.913 5.019,1.913 6.931,0c1.913,-1.912 1.913,-5.018 0,-6.931l-6.798,-6.798Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M4.901,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,-0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M18.929,11.142c-1.912,-1.912 -5.018,-1.912 -6.931,0c-1.912,1.913 -1.912,5.019 0,6.931l6.799,6.799c1.912,1.912 5.018,1.912 6.931,-0c1.912,-1.913 1.912,-5.019 -0,-6.931l-6.799,-6.799Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.108,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c-0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c-0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'dark'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_dark"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.901,2.196 -4.901,4.901c0,2.705 2.197,4.901 4.901,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.662,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.989,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.732,61.103c1.91,-1.91 1.91,-5.011 0,-6.921l-0.009,-0.01c-1.91,-1.91 -5.012,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.909,1.91 5.011,1.91 6.92,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.672,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.52,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l-0,-0.01c-0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.901,2.196 -4.901,4.901c0,2.704 2.197,4.9 4.901,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.73,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 -0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.098,34.623c-2.699,0 -4.891,2.192 -4.891,4.892l-0,0.019c-0,2.699 2.192,4.891 4.891,4.891c2.7,0 4.892,-2.192 4.892,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.892,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'darkest'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_darkest"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><path d="M39.315,23.791c8.684,-0 15.734,7.05 15.734,15.733c0,8.684 -7.05,15.734 -15.734,15.734c-8.683,0 -15.733,-7.05 -15.733,-15.734c-0,-8.683 7.05,-15.733 15.733,-15.733Zm0,4.737c6.069,0 10.997,4.927 10.997,10.996c-0,6.069 -4.928,10.996 -10.997,10.996c-6.068,0 -10.996,-4.927 -10.996,-10.996c0,-6.069 4.928,-10.996 10.996,-10.996Z" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.216,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.9,2.196 -4.9,4.901c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.666,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.99,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.737,61.103c1.909,-1.91 1.909,-5.011 -0,-6.921l-0.01,-0.01c-1.91,-1.91 -5.011,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.91,1.91 5.011,1.91 6.921,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.676,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.524,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l0,-0.01c0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.216,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901c-0,2.704 2.196,4.9 4.9,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.734,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.103,34.623c-2.7,0 -4.892,2.192 -4.892,4.892l-0,0.019c-0,2.699 2.192,4.891 4.892,4.891c2.699,0 4.891,-2.192 4.891,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.891,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+</a>
+
+<script>
+(function() {
+    const LOCAL_STORAGE_KEY = 'piccoloThemeMode'
+
+    var initialMode = localStorage.getItem(LOCAL_STORAGE_KEY)
+
+    if (initialMode) {
+        // Make sure the value in local storage is valid
+        if (['light', 'dark', 'darkest'].indexOf(initialMode) == -1) {
+            initialMode = 'light'
+            localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+        }
+    } else {
+        // Check if the client prefers dark mode
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            initialMode = 'dark'
+        } else {
+            initialMode = 'light'
+        }
+        localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+    }
+
+    document.documentElement.dataset.mode = initialMode
+
+    PetiteVue.createApp({
+        'mode': initialMode,
+        handleClick() {
+            let currentMode = this.mode
+
+            if (currentMode == 'light') {
+                this.mode = 'dark'
+            } else if (currentMode == 'dark') {
+                this.mode = 'darkest'
+            } else if (currentMode == 'darkest') {
+                this.mode = 'light'
+            }
+
+            document.documentElement.dataset.mode = this.mode
+            localStorage.setItem(LOCAL_STORAGE_KEY, this.mode)
+
+            console.log(this.mode)
+        }
+    }).mount('#mode_toggle')
+})()
+</script>
+            <p class="mobile_search_link">
+                <a href="search.html" title="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 64" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path d="M14.873 40.009c-2.315-3.943-3.642-8.532-3.642-13.429C11.231 11.91 23.141 0 37.811 0s26.58 11.91 26.58 26.58-11.91 26.58-26.58 26.58a26.44 26.44 0 0 1-14.277-4.161L9.739 62.794a3.12 3.12 0 0 1-4.413 0L.913 58.382c-1.217-1.218-1.217-3.196 0-4.413l13.96-13.96zM37.811 8.054c10.225 0 18.526 8.301 18.526 18.526s-8.301 18.526-18.526 18.526-18.526-8.301-18.526-18.526S27.586 8.054 37.811 8.054z" fill="#fff" />
+                    </svg>
+                </a>
+            </p>
+        
+
+        <div class="searchbox_wrapper">
+            
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Abstract Classifier Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="category_processor.html">Category Processor Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faculty_set_postprocessor.html">Faculty Set Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config.html">Global Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chain_builder.html">Chain Builder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ai_prompts.html">ai_prompts package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection.html">data_collection package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dataclass_models.html">dataclass_models package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DB.html">DB package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enums.html">enums package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="factories.html">factories package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="orchestrators.html">orchestrators package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="other.html">other package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="runners.html">runners package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="strategies.html">strategies package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="utils.html">utils package</a></li>
+</ul>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="module-academic_metrics.AI.AbstractClassifier">
+<span id="abstract-classifier-module"></span><h1>Abstract Classifier Module<a class="headerlink" href="#module-academic_metrics.AI.AbstractClassifier" title="Link to this heading">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="academic_metrics.AI.AbstractClassifier.AbstractClassifier">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">academic_metrics.AI.AbstractClassifier.</span></span><span class="sig-name descname"><span class="pre">AbstractClassifier</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">taxonomy</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">doi_to_abstract_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">api_key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_to_console</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_context</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pre_classification_model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'gpt-4o-mini'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">classification_model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'gpt-4o-mini'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">theme_model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'gpt-4o-mini'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_classification_retries</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/AI/AbstractClassifier.html#AbstractClassifier"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A class for processing research paper abstracts through AI-powered
+analysis and classification.</p>
+<p>This class manages a complete pipeline for analyzing academic paper abstracts, including:
+- Method extraction from abstracts
+- Sentence-by-sentence analysis
+- Abstract summarization
+- Hierarchical taxonomy classification
+- Theme recognition and analysis</p>
+<p>The pipeline uses three separate chain managers for different stages of processing:
+1. Pre-classification: Method extraction, sentence analysis, and summarization
+2. Classification: Hierarchical taxonomy classification
+3. Theme Recognition: Theme identification and analysis</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.AI.AbstractClassifier.AbstractClassifier.Public">
+<span class="sig-name descname"><span class="pre">Public</span></span><a class="headerlink" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier.Public" title="Link to this definition">¶</a></dt>
+<dd><p>classification_results (Dict[str, Dict]): Processed results by DOI, containing categories and themes
+raw_classification_outputs (List[Dict]): Raw outputs from the classification chain
+raw_theme_outputs (Dict[str, Dict]): Raw theme analysis results by DOI</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.AI.AbstractClassifier.AbstractClassifier.Private">
+<span class="sig-name descname"><span class="pre">Private</span></span><a class="headerlink" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier.Private" title="Link to this definition">¶</a></dt>
+<dd><p>_taxonomy (Taxonomy): Taxonomy instance containing the classification hierarchy
+_pre_classification_model (str): Model name for pre-classification tasks
+_classification_model (str): Model name for classification tasks
+_theme_model (str): Model name for theme recognition tasks
+logger (logging.Logger): Logger instance for this class
+banned_categories (List[str]): Categories to exclude from classification
+api_key (str): API key for LLM access
+doi_to_abstract_dict (Dict[str, str]): Mapping of DOIs to abstract texts
+extra_context (Dict[str, Any]): Additional context for classification
+max_classification_retries (int): Maximum retries for failed classifications</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">Public</span> <span class="pre">Methods</span></span></dt>
+<dd><p>classify(): Process all abstracts through the complete pipeline
+get_classification_results_by_doi(doi, return_type): Get results for a specific DOI
+get_raw_classification_outputs(): Get all raw classification outputs
+get_raw_theme_results(): Get all raw theme analysis results
+save_classification_results(output_path): Save processed results to JSON
+save_raw_classification_results(output_path): Save raw classification outputs
+save_raw_theme_results(output_path): Save raw theme results</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">Private</span> <span class="pre">Methods</span></span></dt>
+<dd><p>_run_initial_api_key_validation(api_key): Validate API key format
+_initialize_chain_manager(): Create new chain manager instance
+_add_*_layer(): Add specific processing layers to chain managers
+classify_abstract(abstract, doi, …): Process single abstract
+extract_classified_categories(output): Extract categories from output</p>
+</dd></dl>
+
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Initialize with required components</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span> <span class="o">=</span> <span class="n">Taxonomy</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">abstracts</span> <span class="o">=</span> <span class="p">{</span>
+<span class="gp">... </span>    <span class="s2">&quot;10.1234/example&quot;</span><span class="p">:</span> <span class="s2">&quot;This is a sample abstract...&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="s2">&quot;10.5678/sample&quot;</span><span class="p">:</span> <span class="s2">&quot;Another research abstract...&quot;</span>
+<span class="gp">... </span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">api_key</span> <span class="o">=</span> <span class="s2">&quot;your-api-key&quot;</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Create classifier instance</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span> <span class="o">=</span> <span class="n">AbstractClassifier</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">taxonomy</span><span class="o">=</span><span class="n">taxonomy</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">doi_to_abstract_dict</span><span class="o">=</span><span class="n">abstracts</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">api_key</span><span class="o">=</span><span class="n">api_key</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Run classification pipeline</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span><span class="o">.</span><span class="n">classify</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Access results</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">results</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">get_classification_results_by_doi</span><span class="p">(</span><span class="s2">&quot;10.1234/example&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">results</span><span class="p">[</span><span class="s2">&quot;top_categories&quot;</span><span class="p">])</span>  <span class="c1"># View top-level categories</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Save results</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span><span class="o">.</span><span class="n">save_classification_results</span><span class="p">(</span><span class="s2">&quot;results/classifications.json&quot;</span><span class="p">)</span>\
+<span class="gp">... </span>    <span class="o">.</span><span class="n">save_raw_theme_results</span><span class="p">(</span><span class="s2">&quot;results/themes.json&quot;</span><span class="p">)</span>\
+<span class="gp">... </span>    <span class="o">.</span><span class="n">save_raw_classification_results</span><span class="p">(</span><span class="s2">&quot;results/raw_outputs.json&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.AI.AbstractClassifier.AbstractClassifier.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">taxonomy</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">doi_to_abstract_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">api_key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_to_console</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_context</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pre_classification_model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'gpt-4o-mini'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">classification_model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'gpt-4o-mini'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">theme_model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'gpt-4o-mini'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_classification_retries</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/AI/AbstractClassifier.html#AbstractClassifier.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier.__init__" title="Link to this definition">¶</a></dt>
+<dd><p>Initializes a new AbstractClassifier instance.</p>
+<p>Sets up the complete classification pipeline including chain managers for pre-classification,
+classification, and theme recognition. Initializes data structures for storing results and
+configures logging.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>taxonomy</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="academic_metrics.utils.html#academic_metrics.utils.taxonomy_util.Taxonomy" title="academic_metrics.utils.taxonomy_util.Taxonomy"><code class="xref py py-class docutils literal notranslate"><span class="pre">Taxonomy</span></code></a></span>) – Taxonomy instance containing the hierarchical category structure.</p></li>
+<li><p><strong>doi_to_abstract_dict</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</span>) – Dictionary mapping DOIs to their abstract texts.</p></li>
+<li><p><strong>api_key</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – API key for accessing the language model service.</p></li>
+<li><p><strong>log_to_console</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code> | <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span>) – Whether to output logs to console.
+Defaults to LOG_TO_CONSOLE config value.</p></li>
+<li><p><strong>extra_context</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]</span>) – Additional context for classification.
+Defaults to None.</p></li>
+<li><p><strong>pre_classification_model</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code> | <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span>) – Model name for pre-classification tasks.
+Defaults to “gpt-4o-mini”.</p></li>
+<li><p><strong>classification_model</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code> | <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span>) – Model name for classification tasks.
+Defaults to “gpt-4o-mini”.</p></li>
+<li><p><strong>theme_model</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code> | <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span>) – Model name for theme recognition tasks.
+Defaults to “gpt-4o-mini”.</p></li>
+<li><p><strong>max_classification_retries</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code> | <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span>) – Maximum attempts for failed classifications.
+Defaults to 3.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>ValueError</strong> – If api_key is empty or invalid.</p></li>
+<li><p><strong>TypeError</strong> – If api_key cannot be converted to string.</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The initialization process:</p>
+<ol class="arabic simple">
+<li><p>Sets up logging and configuration</p></li>
+<li><p>Validates API key</p></li>
+<li><p>Initializes data structures for results</p></li>
+<li><p>Creates and configures three chain managers:
+- Pre-classification (method extraction, sentence analysis, summarization)
+- Classification (taxonomy-based classification)
+- Theme recognition</p></li>
+</ol>
+</div>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Basic initialization with required parameters</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span> <span class="o">=</span> <span class="n">Taxonomy</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">abstracts</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;10.1234/example&quot;</span><span class="p">:</span> <span class="s2">&quot;Sample abstract text&quot;</span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span> <span class="o">=</span> <span class="n">AbstractClassifier</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">taxonomy</span><span class="o">=</span><span class="n">taxonomy</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">doi_to_abstract_dict</span><span class="o">=</span><span class="n">abstracts</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">api_key</span><span class="o">=</span><span class="s2">&quot;valid-api-key&quot;</span>
+<span class="gp">... </span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Advanced initialization with custom settings</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span> <span class="o">=</span> <span class="n">AbstractClassifier</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">taxonomy</span><span class="o">=</span><span class="n">taxonomy</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">doi_to_abstract_dict</span><span class="o">=</span><span class="n">abstracts</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">api_key</span><span class="o">=</span><span class="s2">&quot;valid-api-key&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">log_to_console</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">extra_context</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;field&quot;</span><span class="p">:</span> <span class="s2">&quot;computer_science&quot;</span><span class="p">},</span>
+<span class="gp">... </span>    <span class="n">pre_classification_model</span><span class="o">=</span><span class="s2">&quot;gpt-4&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">max_classification_retries</span><span class="o">=</span><span class="mi">5</span>
+<span class="gp">... </span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.AI.AbstractClassifier.AbstractClassifier._run_initial_api_key_validation">
+<span class="sig-name descname"><span class="pre">_run_initial_api_key_validation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">api_key</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/AI/AbstractClassifier.html#AbstractClassifier._run_initial_api_key_validation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier._run_initial_api_key_validation" title="Link to this definition">¶</a></dt>
+<dd><p>Validates the API key format and presence during initialization.</p>
+<p>This private method performs initial validation of the API key to ensure it exists
+and can be converted to a string type. It’s called during class initialization
+before any API operations are attempted.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>api_key</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – The API key to validate. Should be a non-empty string or
+a value that can be converted to a string.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>ValueError</strong> – If any of these conditions are met:</p></li>
+<li><p><strong>- The API key is empty</strong><strong> or </strong><strong>None.</strong> – </p></li>
+<li><p><strong>- The API key cannot be converted to a string.</strong> – </p></li>
+<li><p><strong>- The API key conversion fails for any reason.</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This method redacts API key values in error messages for security.</p>
+</div>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Valid API key</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span><span class="o">.</span><span class="n">_run_initial_api_key_validation</span><span class="p">(</span><span class="s2">&quot;sk-valid-key-123&quot;</span><span class="p">)</span>  <span class="c1"># passes</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Empty API key</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">try</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">classifier</span><span class="o">.</span><span class="n">_run_initial_api_key_validation</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+<span class="gp">... </span><span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="s2">&quot;API key is required&quot;</span> <span class="ow">in</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># None value</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">try</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">classifier</span><span class="o">.</span><span class="n">_run_initial_api_key_validation</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>  <span class="c1"># type: ignore</span>
+<span class="gp">... </span><span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="s2">&quot;API key is required&quot;</span> <span class="ow">in</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Non-string value that can be converted</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span><span class="o">.</span><span class="n">_run_initial_api_key_validation</span><span class="p">(</span><span class="mi">123</span><span class="p">)</span>  <span class="c1"># passes, converts to &quot;123&quot;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.AI.AbstractClassifier.AbstractClassifier._initialize_pre_classification_chain_manager">
+<span class="sig-name descname"><span class="pre">_initialize_pre_classification_chain_manager</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/AI/AbstractClassifier.html#AbstractClassifier._initialize_pre_classification_chain_manager"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier._initialize_pre_classification_chain_manager" title="Link to this definition">¶</a></dt>
+<dd><p>Initializes a new ChainManager instance for pre-classification
+tasks.</p>
+<p>Creates and configures a ChainManager specifically for the pre-classification stage
+of the pipeline, which includes method extraction, sentence analysis, and abstract
+summarization.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>A new ChainManager instance configured with:</dt><dd><ul class="simple">
+<li><p>Model: self._pre_classification_model</p></li>
+<li><p>Temperature: 0.0 (deterministic outputs)</p></li>
+<li><p>Console logging: Based on self.log_to_console setting</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="academic_metrics.ChainBuilder.html#academic_metrics.ChainBuilder.ChainBuilder.ChainManager" title="academic_metrics.ChainBuilder.ChainBuilder.ChainManager">ChainManager</a></p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This ChainManager is used for the initial analysis stages:
+1. Method extraction from abstracts
+2. Sentence-by-sentence analysis
+3. Abstract summarization</p>
+</div>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span> <span class="o">=</span> <span class="n">Taxonomy</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">abstracts</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;10.1234/example&quot;</span><span class="p">:</span> <span class="s2">&quot;Sample abstract&quot;</span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span> <span class="o">=</span> <span class="n">AbstractClassifier</span><span class="p">(</span><span class="n">taxonomy</span><span class="p">,</span> <span class="n">abstracts</span><span class="p">,</span> <span class="s2">&quot;api-key&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_manager</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">_initialize_pre_classification_chain_manager</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">chain_manager</span><span class="p">,</span> <span class="n">ChainManager</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Verify configuration</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_manager</span><span class="o">.</span><span class="n">llm_model</span> <span class="o">==</span> <span class="n">classifier</span><span class="o">.</span><span class="n">_pre_classification_model</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_manager</span><span class="o">.</span><span class="n">llm_temperature</span> <span class="o">==</span> <span class="mf">0.0</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.AI.AbstractClassifier.AbstractClassifier._initialize_classification_chain_manager">
+<span class="sig-name descname"><span class="pre">_initialize_classification_chain_manager</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/AI/AbstractClassifier.html#AbstractClassifier._initialize_classification_chain_manager"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier._initialize_classification_chain_manager" title="Link to this definition">¶</a></dt>
+<dd><p>Initializes a new ChainManager instance for taxonomy classification
+tasks.</p>
+<p>Creates and configures a ChainManager specifically for the classification stage
+of the pipeline, which handles the hierarchical taxonomy classification of abstracts
+at all levels (top, mid, and low).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>A new ChainManager instance configured with:</dt><dd><ul class="simple">
+<li><p>Model: self._classification_model</p></li>
+<li><p>Temperature: 0.0 (deterministic outputs)</p></li>
+<li><p>Console logging: Based on self.log_to_console setting</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="academic_metrics.ChainBuilder.html#academic_metrics.ChainBuilder.ChainBuilder.ChainManager" title="academic_metrics.ChainBuilder.ChainBuilder.ChainManager">ChainManager</a></p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This ChainManager is used for the main classification process:
+1. Top-level category classification
+2. Mid-level category classification within each top category
+3. Low-level category classification within each mid category</p>
+<p>The temperature is set to 0.0 to ensure consistent classification results.</p>
+</div>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span> <span class="o">=</span> <span class="n">Taxonomy</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">abstracts</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;10.1234/example&quot;</span><span class="p">:</span> <span class="s2">&quot;Sample abstract&quot;</span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span> <span class="o">=</span> <span class="n">AbstractClassifier</span><span class="p">(</span><span class="n">taxonomy</span><span class="p">,</span> <span class="n">abstracts</span><span class="p">,</span> <span class="s2">&quot;api-key&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_manager</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">_initialize_classification_chain_manager</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">chain_manager</span><span class="p">,</span> <span class="n">ChainManager</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Verify configuration</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_manager</span><span class="o">.</span><span class="n">llm_model</span> <span class="o">==</span> <span class="n">classifier</span><span class="o">.</span><span class="n">_classification_model</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_manager</span><span class="o">.</span><span class="n">llm_temperature</span> <span class="o">==</span> <span class="mf">0.0</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.AI.AbstractClassifier.AbstractClassifier._initialize_theme_chain_manager">
+<span class="sig-name descname"><span class="pre">_initialize_theme_chain_manager</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/AI/AbstractClassifier.html#AbstractClassifier._initialize_theme_chain_manager"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier._initialize_theme_chain_manager" title="Link to this definition">¶</a></dt>
+<dd><p>Initializes a new ChainManager instance for theme recognition tasks.</p>
+<p>Creates and configures a ChainManager specifically for the theme recognition stage
+of the pipeline, which identifies key themes and concepts from classified abstracts.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>A new ChainManager instance configured with:</dt><dd><ul class="simple">
+<li><p>Model: self._theme_model</p></li>
+<li><p>Temperature: 0.9 (creative theme generation)</p></li>
+<li><p>Console logging: Based on self.log_to_console setting</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="academic_metrics.ChainBuilder.html#academic_metrics.ChainBuilder.ChainBuilder.ChainManager" title="academic_metrics.ChainBuilder.ChainBuilder.ChainManager">ChainManager</a></p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This ChainManager uses a higher temperature (0.9) compared to other chain managers
+because theme recognition benefits from more creative and varied outputs. The higher
+temperature allows the model to:
+1. Identify novel connections between concepts
+2. Generate diverse theme descriptions
+3. Capture nuanced relationships in the abstract</p>
+</div>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span> <span class="o">=</span> <span class="n">Taxonomy</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">abstracts</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;10.1234/example&quot;</span><span class="p">:</span> <span class="s2">&quot;Sample abstract&quot;</span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span> <span class="o">=</span> <span class="n">AbstractClassifier</span><span class="p">(</span><span class="n">taxonomy</span><span class="p">,</span> <span class="n">abstracts</span><span class="p">,</span> <span class="s2">&quot;api-key&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_manager</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">_initialize_theme_chain_manager</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">chain_manager</span><span class="p">,</span> <span class="n">ChainManager</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Verify configuration</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_manager</span><span class="o">.</span><span class="n">llm_model</span> <span class="o">==</span> <span class="n">classifier</span><span class="o">.</span><span class="n">_theme_model</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_manager</span><span class="o">.</span><span class="n">llm_temperature</span> <span class="o">==</span> <span class="mf">0.9</span>  <span class="c1"># Higher temperature for creativity</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.AI.AbstractClassifier.AbstractClassifier._add_method_extraction_layer">
+<span class="sig-name descname"><span class="pre">_add_method_extraction_layer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chain_manager</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/AI/AbstractClassifier.html#AbstractClassifier._add_method_extraction_layer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier._add_method_extraction_layer" title="Link to this definition">¶</a></dt>
+<dd><p>Adds the method extraction processing layer to the chain manager.</p>
+<p>This layer analyzes abstracts to identify and extract research methods, techniques,
+and approaches used in the paper.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>chain_manager</strong> (<a class="reference internal" href="academic_metrics.ChainBuilder.html#academic_metrics.ChainBuilder.ChainBuilder.ChainManager" title="academic_metrics.ChainBuilder.ChainBuilder.ChainManager"><em>ChainManager</em></a>) – The chain manager to add the layer to.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Returns self for method chaining.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Self</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Configuration details:
+- System prompt: METHOD_EXTRACTION_SYSTEM_MESSAGE
+- Human prompt: HUMAN_MESSAGE_PROMPT
+- Primary parser: JSON with MethodExtractionOutput Pydantic model
+- Fallback parser: String output if JSON parsing fails
+- Output key: “method_json_output”
+- No preprocessor or postprocessor
+- No output key error ignoring</p>
+</div>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span> <span class="o">=</span> <span class="n">Taxonomy</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">abstracts</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;10.1234/example&quot;</span><span class="p">:</span> <span class="s2">&quot;Sample abstract&quot;</span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span> <span class="o">=</span> <span class="n">AbstractClassifier</span><span class="p">(</span><span class="n">taxonomy</span><span class="p">,</span> <span class="n">abstracts</span><span class="p">,</span> <span class="s2">&quot;api-key&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_manager</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">_initialize_pre_classification_chain_manager</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Add the layer and verify chain manager configuration</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">_add_method_extraction_layer</span><span class="p">(</span><span class="n">chain_manager</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">AbstractClassifier</span><span class="p">)</span>  <span class="c1"># Verify method chaining</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Get the added chain wrapper from the sequence</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_sequence</span> <span class="o">=</span> <span class="n">chain_manager</span><span class="o">.</span><span class="n">get_chain_sequence</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_wrapper</span><span class="p">,</span> <span class="n">output_key</span> <span class="o">=</span> <span class="n">chain_sequence</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># Get latest added wrapper</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Verify configuration</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">output_key</span> <span class="o">==</span> <span class="s2">&quot;method_json_output&quot;</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">chain_wrapper</span><span class="o">.</span><span class="n">parser</span><span class="p">,</span> <span class="n">JSONParser</span><span class="p">)</span>  <span class="c1"># type: ignore</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_wrapper</span><span class="o">.</span><span class="n">fallback_parser</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>  <span class="c1"># Has fallback parser</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_wrapper</span><span class="o">.</span><span class="n">preprocessor</span> <span class="ow">is</span> <span class="kc">None</span>  <span class="c1"># No preprocessor</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_wrapper</span><span class="o">.</span><span class="n">postprocessor</span> <span class="ow">is</span> <span class="kc">None</span>  <span class="c1"># No postprocessor</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.AI.AbstractClassifier.AbstractClassifier._add_sentence_analysis_layer">
+<span class="sig-name descname"><span class="pre">_add_sentence_analysis_layer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chain_manager</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/AI/AbstractClassifier.html#AbstractClassifier._add_sentence_analysis_layer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier._add_sentence_analysis_layer" title="Link to this definition">¶</a></dt>
+<dd><p>Adds the sentence-by-sentence analysis layer to the chain manager.</p>
+<p>This layer performs detailed analysis of each sentence in the abstract,
+identifying key components like objectives, methods, results, and conclusions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>chain_manager</strong> (<a class="reference internal" href="academic_metrics.ChainBuilder.html#academic_metrics.ChainBuilder.ChainBuilder.ChainManager" title="academic_metrics.ChainBuilder.ChainBuilder.ChainManager"><em>ChainManager</em></a>) – The chain manager to add the layer to.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Returns self for method chaining.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Self</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Configuration details:
+- System prompt: ABSTRACT_SENTENCE_ANALYSIS_SYSTEM_MESSAGE
+- Human prompt: HUMAN_MESSAGE_PROMPT
+- Primary parser: JSON with AbstractSentenceAnalysis Pydantic model
+- Fallback parser: String output if JSON parsing fails
+- Output key: “sentence_analysis_output”
+- No preprocessor or postprocessor
+- No output key error ignoring</p>
+</div>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span> <span class="o">=</span> <span class="n">Taxonomy</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">abstracts</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;10.1234/example&quot;</span><span class="p">:</span> <span class="s2">&quot;Sample abstract&quot;</span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span> <span class="o">=</span> <span class="n">AbstractClassifier</span><span class="p">(</span><span class="n">taxonomy</span><span class="p">,</span> <span class="n">abstracts</span><span class="p">,</span> <span class="s2">&quot;api-key&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_manager</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">_initialize_pre_classification_chain_manager</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Add the layer and verify chain manager configuration</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">_add_sentence_analysis_layer</span><span class="p">(</span><span class="n">chain_manager</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">AbstractClassifier</span><span class="p">)</span>  <span class="c1"># Verify method chaining</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Get the added chain wrapper from the sequence</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_sequence</span> <span class="o">=</span> <span class="n">chain_manager</span><span class="o">.</span><span class="n">get_chain_sequence</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_wrapper</span><span class="p">,</span> <span class="n">output_key</span> <span class="o">=</span> <span class="n">chain_sequence</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># Get latest added wrapper</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Verify configuration</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">output_key</span> <span class="o">==</span> <span class="s2">&quot;sentence_analysis_output&quot;</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">chain_wrapper</span><span class="o">.</span><span class="n">parser</span><span class="p">,</span> <span class="n">JSONParser</span><span class="p">)</span>  <span class="c1"># type: ignore</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_wrapper</span><span class="o">.</span><span class="n">fallback_parser</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>  <span class="c1"># Has fallback parser</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_wrapper</span><span class="o">.</span><span class="n">preprocessor</span> <span class="ow">is</span> <span class="kc">None</span>  <span class="c1"># No preprocessor</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_wrapper</span><span class="o">.</span><span class="n">postprocessor</span> <span class="ow">is</span> <span class="kc">None</span>  <span class="c1"># No postprocessor</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.AI.AbstractClassifier.AbstractClassifier._add_summary_layer">
+<span class="sig-name descname"><span class="pre">_add_summary_layer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chain_manager</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/AI/AbstractClassifier.html#AbstractClassifier._add_summary_layer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier._add_summary_layer" title="Link to this definition">¶</a></dt>
+<dd><p>Adds the abstract summarization layer to the chain manager.</p>
+<p>This layer generates a concise summary of the abstract, capturing the main
+points and key findings in a structured format.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>chain_manager</strong> (<a class="reference internal" href="academic_metrics.ChainBuilder.html#academic_metrics.ChainBuilder.ChainBuilder.ChainManager" title="academic_metrics.ChainBuilder.ChainBuilder.ChainManager"><em>ChainManager</em></a>) – The chain manager to add the layer to.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Returns self for method chaining.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Self</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Configuration details:
+- System prompt: ABSTRACT_SUMMARY_SYSTEM_MESSAGE
+- Human prompt: HUMAN_MESSAGE_PROMPT
+- Primary parser: JSON with AbstractSummary Pydantic model
+- Fallback parser: String output if JSON parsing fails
+- Output key: “abstract_summary_output”
+- No preprocessor or postprocessor
+- No output key error ignoring</p>
+</div>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span> <span class="o">=</span> <span class="n">Taxonomy</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">abstracts</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;10.1234/example&quot;</span><span class="p">:</span> <span class="s2">&quot;Sample abstract&quot;</span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span> <span class="o">=</span> <span class="n">AbstractClassifier</span><span class="p">(</span><span class="n">taxonomy</span><span class="p">,</span> <span class="n">abstracts</span><span class="p">,</span> <span class="s2">&quot;api-key&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_manager</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">_initialize_pre_classification_chain_manager</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Add the layer and verify chain manager configuration</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">_add_summary_layer</span><span class="p">(</span><span class="n">chain_manager</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">AbstractClassifier</span><span class="p">)</span>  <span class="c1"># Verify method chaining</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Get the added chain wrapper from the sequence</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_sequence</span> <span class="o">=</span> <span class="n">chain_manager</span><span class="o">.</span><span class="n">get_chain_sequence</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_wrapper</span><span class="p">,</span> <span class="n">output_key</span> <span class="o">=</span> <span class="n">chain_sequence</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># Get latest added wrapper</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Verify configuration</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">output_key</span> <span class="o">==</span> <span class="s2">&quot;abstract_summary_output&quot;</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">chain_wrapper</span><span class="o">.</span><span class="n">parser</span><span class="p">,</span> <span class="n">JSONParser</span><span class="p">)</span>  <span class="c1"># type: ignore</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_wrapper</span><span class="o">.</span><span class="n">fallback_parser</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>  <span class="c1"># Has fallback parser</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_wrapper</span><span class="o">.</span><span class="n">preprocessor</span> <span class="ow">is</span> <span class="kc">None</span>  <span class="c1"># No preprocessor</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_wrapper</span><span class="o">.</span><span class="n">postprocessor</span> <span class="ow">is</span> <span class="kc">None</span>  <span class="c1"># No postprocessor</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.AI.AbstractClassifier.AbstractClassifier._add_classification_layer">
+<span class="sig-name descname"><span class="pre">_add_classification_layer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chain_manager</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/AI/AbstractClassifier.html#AbstractClassifier._add_classification_layer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier._add_classification_layer" title="Link to this definition">¶</a></dt>
+<dd><p>Adds the taxonomy classification layer to the chain manager.</p>
+<p>This layer performs hierarchical classification of abstracts according to the
+taxonomy structure, categorizing content at top, mid, and low levels.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>chain_manager</strong> (<a class="reference internal" href="academic_metrics.ChainBuilder.html#academic_metrics.ChainBuilder.ChainBuilder.ChainManager" title="academic_metrics.ChainBuilder.ChainBuilder.ChainManager"><em>ChainManager</em></a>) – The chain manager to add the layer to.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Returns self for method chaining.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Self</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Configuration details:
+- System prompt: CLASSIFICATION_SYSTEM_MESSAGE
+- Human prompt: HUMAN_MESSAGE_PROMPT
+- Primary parser: JSON with ClassificationOutput Pydantic model
+- No fallback parser (classification must succeed)
+- Output key: “classification_output”
+- No preprocessor or postprocessor
+- No output key error ignoring</p>
+</div>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span> <span class="o">=</span> <span class="n">Taxonomy</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">abstracts</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;10.1234/example&quot;</span><span class="p">:</span> <span class="s2">&quot;Sample abstract&quot;</span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span> <span class="o">=</span> <span class="n">AbstractClassifier</span><span class="p">(</span><span class="n">taxonomy</span><span class="p">,</span> <span class="n">abstracts</span><span class="p">,</span> <span class="s2">&quot;api-key&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_manager</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">_initialize_classification_chain_manager</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Add the layer and verify chain manager configuration</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">_add_classification_layer</span><span class="p">(</span><span class="n">chain_manager</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">AbstractClassifier</span><span class="p">)</span>  <span class="c1"># Verify method chaining</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Get the added chain wrapper from the sequence</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_sequence</span> <span class="o">=</span> <span class="n">chain_manager</span><span class="o">.</span><span class="n">get_chain_sequence</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_wrapper</span><span class="p">,</span> <span class="n">output_key</span> <span class="o">=</span> <span class="n">chain_sequence</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># Get latest added wrapper</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Verify configuration</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">output_key</span> <span class="o">==</span> <span class="s2">&quot;classification_output&quot;</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">chain_wrapper</span><span class="o">.</span><span class="n">parser</span><span class="p">,</span> <span class="n">JSONParser</span><span class="p">)</span>  <span class="c1"># type: ignore</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_wrapper</span><span class="o">.</span><span class="n">fallback_parser</span> <span class="ow">is</span> <span class="kc">None</span>  <span class="c1"># No fallback parser</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_wrapper</span><span class="o">.</span><span class="n">preprocessor</span> <span class="ow">is</span> <span class="kc">None</span>  <span class="c1"># No preprocessor</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_wrapper</span><span class="o">.</span><span class="n">postprocessor</span> <span class="ow">is</span> <span class="kc">None</span>  <span class="c1"># No postprocessor</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.AI.AbstractClassifier.AbstractClassifier._add_theme_recognition_layer">
+<span class="sig-name descname"><span class="pre">_add_theme_recognition_layer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chain_manager</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/AI/AbstractClassifier.html#AbstractClassifier._add_theme_recognition_layer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier._add_theme_recognition_layer" title="Link to this definition">¶</a></dt>
+<dd><p>Adds the theme recognition layer to the chain manager.</p>
+<p>This layer identifies and extracts key themes, concepts, and patterns from
+the abstract, providing a higher-level thematic analysis.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>chain_manager</strong> (<a class="reference internal" href="academic_metrics.ChainBuilder.html#academic_metrics.ChainBuilder.ChainBuilder.ChainManager" title="academic_metrics.ChainBuilder.ChainBuilder.ChainManager"><em>ChainManager</em></a>) – The chain manager to add the layer to.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Returns self for method chaining.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Self</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Configuration details:
+- System prompt: THEME_RECOGNITION_SYSTEM_MESSAGE
+- Human prompt: HUMAN_MESSAGE_PROMPT
+- Primary parser: JSON with ThemeAnalysis Pydantic model
+- No fallback parser
+- Output key: “theme_output”
+- No preprocessor or postprocessor
+- No output key error ignoring
+- Uses higher temperature setting for creative theme generation</p>
+</div>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span> <span class="o">=</span> <span class="n">Taxonomy</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">abstracts</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;10.1234/example&quot;</span><span class="p">:</span> <span class="s2">&quot;Sample abstract&quot;</span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span> <span class="o">=</span> <span class="n">AbstractClassifier</span><span class="p">(</span><span class="n">taxonomy</span><span class="p">,</span> <span class="n">abstracts</span><span class="p">,</span> <span class="s2">&quot;api-key&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_manager</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">_initialize_theme_chain_manager</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Add the layer and verify chain manager configuration</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">_add_theme_recognition_layer</span><span class="p">(</span><span class="n">chain_manager</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">AbstractClassifier</span><span class="p">)</span>  <span class="c1"># Verify method chaining</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Get the added chain wrapper from the sequence</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_sequence</span> <span class="o">=</span> <span class="n">chain_manager</span><span class="o">.</span><span class="n">get_chain_sequence</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_wrapper</span><span class="p">,</span> <span class="n">output_key</span> <span class="o">=</span> <span class="n">chain_sequence</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># Get latest added wrapper</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Verify configuration</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">output_key</span> <span class="o">==</span> <span class="s2">&quot;theme_output&quot;</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">chain_wrapper</span><span class="o">.</span><span class="n">parser</span><span class="p">,</span> <span class="n">JSONParser</span><span class="p">)</span>  <span class="c1"># type: ignore</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_wrapper</span><span class="o">.</span><span class="n">fallback_parser</span> <span class="ow">is</span> <span class="kc">None</span>  <span class="c1"># No fallback parser</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_wrapper</span><span class="o">.</span><span class="n">preprocessor</span> <span class="ow">is</span> <span class="kc">None</span>  <span class="c1"># No preprocessor</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain_wrapper</span><span class="o">.</span><span class="n">postprocessor</span> <span class="ow">is</span> <span class="kc">None</span>  <span class="c1"># No postprocessor</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.AI.AbstractClassifier.AbstractClassifier._get_classification_results_by_doi">
+<span class="sig-name descname"><span class="pre">_get_classification_results_by_doi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">doi</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/AI/AbstractClassifier.html#AbstractClassifier._get_classification_results_by_doi"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier._get_classification_results_by_doi" title="Link to this definition">¶</a></dt>
+<dd><p>Retrieves the raw classification results for a specific DOI.</p>
+<p>This private method provides direct access to the classification results dictionary
+for a given DOI, without theme processing. It’s used internally during the
+classification pipeline, particularly before theme recognition processing.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>doi</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – The DOI identifier for the abstract to retrieve results for.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><p>The raw classification results dictionary containing:</p>
+<ul class="simple">
+<li><p>Top-level categories as keys</p></li>
+<li><p>Nested dictionaries of mid-level categories</p></li>
+<li><p>Lists of low-level categories</p></li>
+</ul>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dict[str, Any]</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This method differs from the public get_classification_results_by_doi in that:</p>
+<ol class="arabic simple">
+<li><p>It returns the raw defaultdict structure</p></li>
+<li><p>Does not include theme information</p></li>
+<li><p>Does not support different return types</p></li>
+<li><p>Used internally during classification pipeline</p></li>
+<li><p>Does not include themes (unlike the public get_classification_results_by_doi)</p></li>
+</ol>
+</div>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span> <span class="o">=</span> <span class="n">Taxonomy</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">abstracts</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;10.1234/example&quot;</span><span class="p">:</span> <span class="s2">&quot;Sample abstract&quot;</span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span> <span class="o">=</span> <span class="n">AbstractClassifier</span><span class="p">(</span><span class="n">taxonomy</span><span class="p">,</span> <span class="n">abstracts</span><span class="p">,</span> <span class="s2">&quot;api-key&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># After classification</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">results</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">_get_classification_results_by_doi</span><span class="p">(</span><span class="s2">&quot;10.1234/example&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">results</span><span class="p">,</span> <span class="nb">dict</span><span class="p">)</span>  <span class="c1"># Verify return type</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Verify structure (no themes key)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s2">&quot;themes&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">results</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Verify defaultdict behavior</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">results</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">results</span><span class="o">.</span><span class="n">keys</span><span class="p">())[</span><span class="mi">0</span><span class="p">]),</span> <span class="n">defaultdict</span><span class="p">)</span>  <span class="c1"># type: ignore</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.AI.AbstractClassifier.AbstractClassifier.get_classification_results_by_doi">
+<span class="sig-name descname"><span class="pre">get_classification_results_by_doi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">doi</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_type=&lt;class</span> <span class="pre">'dict'&gt;</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/AI/AbstractClassifier.html#AbstractClassifier.get_classification_results_by_doi"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier.get_classification_results_by_doi" title="Link to this definition">¶</a></dt>
+<dd><p>Retrieves all categories and themes for a specific abstract via a
+DOI lookup.</p>
+<p>This method provides access to the complete classification results for an abstract,
+including all taxonomy levels (top, mid, low) and identified themes. Results can be
+returned either as a dictionary or as a tuple of lists.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>doi</strong> (<em>str</em>) – The DOI identifier for the abstract to retrieve results for.</p></li>
+<li><p><strong>return_type</strong> (<em>type</em><em>[</em><em>dict</em><em>] </em><em>| </em><em>type</em><em>[</em><em>tuple</em><em>]</em>) – The desired return type class.
+Use dict for dictionary return or tuple for tuple return.
+Defaults to dict.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><p>The classification results in the requested format:</p>
+<blockquote>
+<div><dl class="simple">
+<dt>If return_type is dict:</dt><dd><p>Dictionary with keys:
+- top_categories (List[str]): Top-level taxonomy categories
+- mid_categories (List[str]): Mid-level taxonomy categories
+- low_categories (List[str]): Low-level taxonomy categories
+- themes (List[str]): Identified themes for the abstract</p>
+</dd>
+<dt>If return_type is tuple:</dt><dd><p>Tuple of (top_categories, mid_categories, low_categories, themes)
+where each element is a List[str]</p>
+</dd>
+</dl>
+</div></blockquote>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Union[Tuple[str, …], Dict[str, Any]]</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>Categories at each level are returned in order of classification</p></li>
+<li><p>Low-level categories are deduplicated while preserving order</p></li>
+<li><p>Returns empty lists for categories/themes if DOI not found</p></li>
+<li><p>Theme list will be empty if theme recognition hasn’t been run</p></li>
+</ul>
+</div>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span> <span class="o">=</span> <span class="n">Taxonomy</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">abstracts</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;10.1234/example&quot;</span><span class="p">:</span> <span class="s2">&quot;Sample abstract&quot;</span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span> <span class="o">=</span> <span class="n">AbstractClassifier</span><span class="p">(</span><span class="n">taxonomy</span><span class="p">,</span> <span class="n">abstracts</span><span class="p">,</span> <span class="s2">&quot;api-key&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span><span class="o">.</span><span class="n">classify</span><span class="p">()</span>  <span class="c1"># Run classification first</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Get results as dictionary</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">results</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">get_classification_results_by_doi</span><span class="p">(</span><span class="s2">&quot;10.1234/example&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">results</span><span class="p">,</span> <span class="nb">dict</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">all</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">results</span><span class="p">[</span><span class="n">k</span><span class="p">],</span> <span class="nb">list</span><span class="p">)</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">results</span><span class="p">)</span>  <span class="c1"># All values are lists</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">sorted</span><span class="p">(</span><span class="n">results</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span> <span class="o">==</span> <span class="p">[</span>
+<span class="gp">... </span>    <span class="s2">&quot;low_categories&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="s2">&quot;mid_categories&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="s2">&quot;themes&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="s2">&quot;top_categories&quot;</span>
+<span class="gp">... </span><span class="p">]</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Get results as tuple</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">top</span><span class="p">,</span> <span class="n">mid</span><span class="p">,</span> <span class="n">low</span><span class="p">,</span> <span class="n">themes</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">get_classification_results_by_doi</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="s2">&quot;10.1234/example&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">return_type</span><span class="o">=</span><span class="nb">tuple</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">all</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">(</span><span class="n">top</span><span class="p">,</span> <span class="n">mid</span><span class="p">,</span> <span class="n">low</span><span class="p">,</span> <span class="n">themes</span><span class="p">))</span>  <span class="c1"># All elements are lists</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Handle non-existent DOI</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">results</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">get_classification_results_by_doi</span><span class="p">(</span><span class="s2">&quot;invalid-doi&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">all</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">results</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>  <span class="c1"># All lists are empty</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.AI.AbstractClassifier.AbstractClassifier.classify_abstract">
+<span class="sig-name descname"><span class="pre">classify_abstract</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">abstract</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">doi</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prompt_variables</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'top'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parent_category</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/AI/AbstractClassifier.html#AbstractClassifier.classify_abstract"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier.classify_abstract" title="Link to this definition">¶</a></dt>
+<dd><p>Recursively classifies an abstract through the taxonomy hierarchy.</p>
+<p>This method implements a depth-first traversal of the taxonomy tree, classifying
+the abstract at each level and recursively processing subcategories. It maintains
+state using a nested defaultdict structure that mirrors the taxonomy hierarchy.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>abstract</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – The text of the abstract to classify.</p></li>
+<li><p><strong>doi</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – The DOI identifier for the abstract.</p></li>
+<li><p><strong>prompt_variables</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</span>) – <p>Variables required for classification.
+Required from pre-classification:</p>
+<ul>
+<li><p><cite>method_json_output</cite>: Method extraction results.</p></li>
+<li><p><cite>sentence_analysis_output</cite>: Sentence analysis results.</p></li>
+<li><p><cite>abstract_summary_output</cite>: Abstract summary.</p></li>
+</ul>
+<p>Required for classification:</p>
+<ul>
+<li><p><cite>abstract</cite>: The abstract text.</p></li>
+<li><p><cite>categories</cite>: Available categories for current level.</p></li>
+<li><p><cite>CLASSIFICATION_JSON_FORMAT</cite>: Format specification.</p></li>
+<li><p><cite>TAXONOMY_EXAMPLE</cite>: Example classifications.</p></li>
+</ul>
+</p></li>
+<li><p><strong>level</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code> | <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span>) – Current taxonomy level (“top”, “mid”, or “low”). Defaults to “top”.</p></li>
+<li><p><strong>parent_category</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code> | <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span>) – The parent category from previous level. Defaults to <cite>None</cite>.</p></li>
+<li><p><strong>current_dict</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]</span>) – Current position in classification results. Defaults to <cite>None</cite>.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Classification Process</strong>:</p>
+<ol class="arabic">
+<li><p>Pre-classification Requirements:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Must run method extraction.</p></li>
+<li><p>Must run sentence analysis.</p></li>
+<li><p>Must run abstract summarization.</p></li>
+<li><p>Results must be in <cite>prompt_variables</cite>.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Classification Flow:</p>
+<blockquote>
+<div><p><strong>Top Level</strong>:</p>
+<ul>
+<li><p>Classifies into top categories.</p></li>
+<li><p>For each classified category:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Gets its mid-level subcategories.</p></li>
+<li><p>Recursively classifies into those subcategories.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p><strong>Mid Level</strong>:</p>
+<ul>
+<li><p>Classifies into mid categories under parent.</p></li>
+<li><p>For each classified category:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Gets its low-level subcategories.</p></li>
+<li><p>Recursively classifies into those subcategories.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p><strong>Low Level</strong>:</p>
+<ul class="simple">
+<li><p>Classifies into low categories.</p></li>
+<li><p>Appends results to parent mid category’s list.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Validation and Retry Logic:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Validates all classified categories against taxonomy.</p></li>
+<li><p>Retries classification up to <cite>max_classification_retries</cite> times.</p></li>
+<li><p>On final retry, bans invalid categories to force valid results.</p></li>
+<li><p>Raises error if validation still fails after max retries.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ValueError</strong> – If classification fails validation after max retries.</p></li>
+<li><p><strong>Exception</strong> – If any other error occurs during classification.</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span> <span class="o">=</span> <span class="n">Taxonomy</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">abstracts</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;10.1234/example&quot;</span><span class="p">:</span> <span class="s2">&quot;Sample abstract&quot;</span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span> <span class="o">=</span> <span class="n">AbstractClassifier</span><span class="p">(</span><span class="n">taxonomy</span><span class="p">,</span> <span class="n">abstracts</span><span class="p">,</span> <span class="s2">&quot;api-key&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># First run pre-classification to get required outputs</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">initial_vars</span> <span class="o">=</span> <span class="p">{</span>
+<span class="gp">... </span>    <span class="s2">&quot;abstract&quot;</span><span class="p">:</span> <span class="n">abstracts</span><span class="p">[</span><span class="s2">&quot;10.1234/example&quot;</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="s2">&quot;METHOD_JSON_FORMAT&quot;</span><span class="p">:</span> <span class="n">METHOD_JSON_FORMAT</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="s2">&quot;METHOD_EXTRACTION_CORRECT_EXAMPLE_JSON&quot;</span><span class="p">:</span> <span class="n">METHOD_EXTRACTION_CORRECT_EXAMPLE_JSON</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="s2">&quot;METHOD_EXTRACTION_INCORRECT_EXAMPLE_JSON&quot;</span><span class="p">:</span> <span class="n">METHOD_EXTRACTION_INCORRECT_EXAMPLE_JSON</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="s2">&quot;SENTENCE_ANALYSIS_JSON_EXAMPLE&quot;</span><span class="p">:</span> <span class="n">SENTENCE_ANALYSIS_JSON_EXAMPLE</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="s2">&quot;SUMMARY_JSON_STRUCTURE&quot;</span><span class="p">:</span> <span class="n">SUMMARY_JSON_STRUCTURE</span><span class="p">,</span>
+<span class="gp">... </span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span><span class="o">.</span><span class="n">pre_classification_chain_manager</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">initial_vars</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Get updated variables including pre-classification outputs</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">variables</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">pre_classification_chain_manager</span><span class="o">.</span><span class="n">get_chain_variables</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Add classification-specific variables</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">variables</span><span class="o">.</span><span class="n">update</span><span class="p">({</span>
+<span class="gp">... </span>    <span class="s2">&quot;categories&quot;</span><span class="p">:</span> <span class="n">classifier</span><span class="o">.</span><span class="n">taxonomy</span><span class="o">.</span><span class="n">get_top_categories</span><span class="p">(),</span>
+<span class="gp">... </span>    <span class="s2">&quot;CLASSIFICATION_JSON_FORMAT&quot;</span><span class="p">:</span> <span class="n">CLASSIFICATION_JSON_FORMAT</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="s2">&quot;TAXONOMY_EXAMPLE&quot;</span><span class="p">:</span> <span class="n">TAXONOMY_EXAMPLE</span><span class="p">,</span>
+<span class="gp">... </span><span class="p">})</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Now we can run classification</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span><span class="o">.</span><span class="n">classify_abstract</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">abstract</span><span class="o">=</span><span class="n">abstracts</span><span class="p">[</span><span class="s2">&quot;10.1234/example&quot;</span><span class="p">],</span>
+<span class="gp">... </span>    <span class="n">doi</span><span class="o">=</span><span class="s2">&quot;10.1234/example&quot;</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">prompt_variables</span><span class="o">=</span><span class="n">variables</span>
+<span class="gp">... </span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.AI.AbstractClassifier.AbstractClassifier.extract_classified_categories">
+<span class="sig-name descname"><span class="pre">extract_classified_categories</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">classification_output</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/AI/AbstractClassifier.html#AbstractClassifier.extract_classified_categories"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier.extract_classified_categories" title="Link to this definition">¶</a></dt>
+<dd><p>Extracts category names from a classification output object.</p>
+<p>Flattens the nested structure of ClassificationOutput into a simple list of
+category names. Handles multiple classifications within the output object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>classification_output</strong> (<a class="reference internal" href="academic_metrics.ai_data_models.html#academic_metrics.ai_data_models.ai_pydantic_models.ClassificationOutput" title="academic_metrics.ai_data_models.ai_pydantic_models.ClassificationOutput"><em>ClassificationOutput</em></a>) – <p>Pydantic model containing classification results.
+The model follows this structure:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;classifications&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;categories&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;category1&quot;</span><span class="p">,</span> <span class="s2">&quot;category2&quot;</span><span class="p">],</span>
+            <span class="s2">&quot;confidence&quot;</span><span class="p">:</span> <span class="mf">0.95</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;categories&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;category3&quot;</span><span class="p">],</span>
+            <span class="s2">&quot;confidence&quot;</span><span class="p">:</span> <span class="mf">0.85</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Flattened list of all classified category names.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[str]</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>Extracts categories from all classification entries</p></li>
+<li><p>Maintains the order of categories as they appear</p></li>
+<li><p>Ignores confidence scores in the output</p></li>
+<li><p>Does not deduplicate categories</p></li>
+</ul>
+</div>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">academic_metrics.ai_data_models.ai_pydantic_models</span> <span class="kn">import</span> <span class="n">ClassificationOutput</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Create a sample classification output</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">output</span> <span class="o">=</span> <span class="n">ClassificationOutput</span><span class="p">(</span><span class="n">classifications</span><span class="o">=</span><span class="p">[</span>
+<span class="gp">... </span>    <span class="p">{</span><span class="s2">&quot;categories&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;AI&quot;</span><span class="p">,</span> <span class="s2">&quot;Machine Learning&quot;</span><span class="p">],</span> <span class="s2">&quot;confidence&quot;</span><span class="p">:</span> <span class="mf">0.9</span><span class="p">},</span>
+<span class="gp">... </span>    <span class="p">{</span><span class="s2">&quot;categories&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Deep Learning&quot;</span><span class="p">],</span> <span class="s2">&quot;confidence&quot;</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">}</span>
+<span class="gp">... </span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span> <span class="o">=</span> <span class="n">Taxonomy</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span> <span class="o">=</span> <span class="n">AbstractClassifier</span><span class="p">(</span><span class="n">taxonomy</span><span class="p">,</span> <span class="p">{},</span> <span class="s2">&quot;api-key&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">categories</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">extract_classified_categories</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Verify results</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">categories</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">all</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">cat</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="k">for</span> <span class="n">cat</span> <span class="ow">in</span> <span class="n">categories</span><span class="p">)</span>  <span class="c1"># All elements are strings</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">categories</span> <span class="o">==</span> <span class="p">[</span><span class="s2">&quot;AI&quot;</span><span class="p">,</span> <span class="s2">&quot;Machine Learning&quot;</span><span class="p">,</span> <span class="s2">&quot;Deep Learning&quot;</span><span class="p">]</span>  <span class="c1"># Order preserved</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.AI.AbstractClassifier.AbstractClassifier.is_valid_category">
+<span class="sig-name descname"><span class="pre">is_valid_category</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">category</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">level</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/AI/AbstractClassifier.html#AbstractClassifier.is_valid_category"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier.is_valid_category" title="Link to this definition">¶</a></dt>
+<dd><p>Validates if a category exists in the taxonomy at the specified
+level.</p>
+<p>This method delegates category validation to the taxonomy instance, checking
+whether a given category exists at the specified taxonomy level.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>category</strong> (<em>str</em>) – The category name to validate.</p></li>
+<li><p><strong>level</strong> (<em>str</em>) – The taxonomy level to check against.
+Must be one of: “top”, “mid”, or “low”.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if the category exists at the specified level, False otherwise.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This method is used during classification to:
+1. Validate classified categories before processing
+2. Trigger retry logic if invalid categories are found
+3. Support the category banning mechanism on final retries</p>
+</div>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">academic_metrics.utils.taxonomy_util</span> <span class="kn">import</span> <span class="n">Taxonomy</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span> <span class="o">=</span> <span class="n">Taxonomy</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">abstracts</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;10.1234/example&quot;</span><span class="p">:</span> <span class="s2">&quot;Sample abstract&quot;</span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span> <span class="o">=</span> <span class="n">AbstractClassifier</span><span class="p">(</span><span class="n">taxonomy</span><span class="p">,</span> <span class="n">abstracts</span><span class="p">,</span> <span class="s2">&quot;api-key&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Get a known valid category</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">top_cat</span> <span class="o">=</span> <span class="n">taxonomy</span><span class="o">.</span><span class="n">get_top_categories</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span><span class="o">.</span><span class="n">is_valid_category</span><span class="p">(</span><span class="n">top_cat</span><span class="p">,</span> <span class="s2">&quot;top&quot;</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Test invalid category</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span><span class="o">.</span><span class="n">is_valid_category</span><span class="p">(</span><span class="s2">&quot;nonexistent_category&quot;</span><span class="p">,</span> <span class="s2">&quot;top&quot;</span><span class="p">)</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Test category at wrong level</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span><span class="o">.</span><span class="n">is_valid_category</span><span class="p">(</span><span class="n">top_cat</span><span class="p">,</span> <span class="s2">&quot;low&quot;</span><span class="p">)</span>
+<span class="go">False</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.AI.AbstractClassifier.AbstractClassifier.classify">
+<span class="sig-name descname"><span class="pre">classify</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/AI/AbstractClassifier.html#AbstractClassifier.classify"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier.classify" title="Link to this definition">¶</a></dt>
+<dd><p>Orchestrates the complete classification pipeline for all abstracts.</p>
+<p>This method manages the end-to-end processing of all abstracts present in the doi_to_abstract_dict dictionary that this AbstractClassifier instance was initialized with through.</p>
+<p>It does so through three stages:</p>
+<ol class="arabic simple">
+<li><dl class="simple">
+<dt>Pre-classification:</dt><dd><ul class="simple">
+<li><p>Method extraction: Identifies research methods and techniques</p></li>
+<li><p>Sentence analysis: Analyzes abstract structure and components</p></li>
+<li><p>Summarization: Generates structured abstract summary</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Classification:</dt><dd><ul class="simple">
+<li><p>Uses enriched data from pre-classification</p></li>
+<li><p>Recursively classifies through taxonomy levels</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Theme Recognition:</dt><dd><ul class="simple">
+<li><p>Identifies key themes and concepts</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ol>
+<p>It coordinates the flow of data between stages and maintains the state of results.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Returns self for method chaining.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Self</p>
+</dd>
+</dl>
+<dl>
+<dt>Pipeline Stages:</dt><dd><ol class="arabic simple">
+<li><p>Pre-classification:
+- Method extraction: Identifies research methods and techniques
+- Sentence analysis: Analyzes abstract structure and components
+- Summarization: Generates structured abstract summary</p></li>
+<li><p>Classification:
+- Uses enriched data from pre-classification
+- Recursively classifies through taxonomy levels
+- Validates and retries invalid classifications</p></li>
+<li><p>Theme Recognition:
+- Processes classified abstracts
+- Identifies key themes and concepts
+- Uses higher temperature for creative analysis</p></li>
+</ol>
+</dd>
+<dt>State Updates:</dt><dd><ul>
+<li><dl>
+<dt>classification_results: Nested defaultdict structure with:</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;doi1&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;top_category1&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;mid_category1&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;low1&quot;</span><span class="p">,</span> <span class="s2">&quot;low2&quot;</span><span class="p">],</span>
+            <span class="s2">&quot;mid_category2&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;low3&quot;</span><span class="p">,</span> <span class="s2">&quot;low4&quot;</span><span class="p">]</span>
+        <span class="p">},</span>
+        <span class="s2">&quot;themes&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;theme1&quot;</span><span class="p">,</span> <span class="s2">&quot;theme2&quot;</span><span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+<li><p>raw_classification_outputs: List of raw outputs from classification</p></li>
+<li><p>raw_theme_outputs: Dictionary mapping DOIs to theme analysis results</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>Processes abstracts sequentially</p></li>
+<li><p>Requires initialized chain managers</p></li>
+<li><p>Updates multiple result stores</p></li>
+<li><p>Maintains logging throughout process</p></li>
+<li><p>Chains data between processing stages</p></li>
+</ul>
+</div>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">academic_metrics.utils.taxonomy_util</span> <span class="kn">import</span> <span class="n">Taxonomy</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Initialize with required components</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span> <span class="o">=</span> <span class="n">Taxonomy</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">abstracts</span> <span class="o">=</span> <span class="p">{</span>
+<span class="gp">... </span>    <span class="s2">&quot;10.1234/example&quot;</span><span class="p">:</span> <span class="s2">&quot;This paper presents a novel approach...&quot;</span>
+<span class="gp">... </span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span> <span class="o">=</span> <span class="n">AbstractClassifier</span><span class="p">(</span>
+<span class="gp">... </span>    <span class="n">taxonomy</span><span class="o">=</span><span class="n">taxonomy</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">doi_to_abstract_dict</span><span class="o">=</span><span class="n">abstracts</span><span class="p">,</span>
+<span class="gp">... </span>    <span class="n">api_key</span><span class="o">=</span><span class="s2">&quot;valid-api-key&quot;</span>
+<span class="gp">... </span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Run complete pipeline</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">classify</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">AbstractClassifier</span><span class="p">)</span>  <span class="c1"># Verify method chaining</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Verify results structure</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">doi</span> <span class="o">=</span> <span class="s2">&quot;10.1234/example&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">results</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">classification_results</span><span class="p">[</span><span class="n">doi</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">results</span><span class="p">,</span> <span class="n">defaultdict</span><span class="p">)</span>  <span class="c1"># Nested defaultdict</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s2">&quot;themes&quot;</span> <span class="ow">in</span> <span class="n">results</span>  <span class="c1"># Theme results added</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Verify raw outputs</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">classifier</span><span class="o">.</span><span class="n">raw_classification_outputs</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span>  <span class="c1"># Has classification outputs</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">doi</span> <span class="ow">in</span> <span class="n">classifier</span><span class="o">.</span><span class="n">raw_theme_outputs</span>  <span class="c1"># Has theme results</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.AI.AbstractClassifier.AbstractClassifier._make_dirs_helper">
+<span class="sig-name descname"><span class="pre">_make_dirs_helper</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output_path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/AI/AbstractClassifier.html#AbstractClassifier._make_dirs_helper"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier._make_dirs_helper" title="Link to this definition">¶</a></dt>
+<dd><p>Creates necessary directories for an output file path.</p>
+<p>This private helper method ensures that all directories in the path exist,
+creating them if necessary. Used by save methods before writing files.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>output_path</strong> (<em>str</em>) – The full path where a file will be saved.
+Can be either absolute or relative path.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>Creates directories recursively</p></li>
+<li><p>Uses exist_ok=True to handle existing directories</p></li>
+<li><p>Creates parent directories only (not the file itself)</p></li>
+</ul>
+</div>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span> <span class="o">=</span> <span class="n">Taxonomy</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span> <span class="o">=</span> <span class="n">AbstractClassifier</span><span class="p">(</span><span class="n">taxonomy</span><span class="p">,</span> <span class="p">{},</span> <span class="s2">&quot;api-key&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Create nested directory structure</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span><span class="o">.</span><span class="n">_make_dirs_helper</span><span class="p">(</span><span class="s2">&quot;outputs/results/data.json&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">os</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s2">&quot;outputs/results&quot;</span><span class="p">)</span>  <span class="c1"># Directories were created</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Handle existing directories</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span><span class="o">.</span><span class="n">_make_dirs_helper</span><span class="p">(</span><span class="s2">&quot;outputs/results/data.json&quot;</span><span class="p">)</span>  <span class="c1"># No error</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.AI.AbstractClassifier.AbstractClassifier.save_classification_results">
+<span class="sig-name descname"><span class="pre">save_classification_results</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output_path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/AI/AbstractClassifier.html#AbstractClassifier.save_classification_results"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier.save_classification_results" title="Link to this definition">¶</a></dt>
+<dd><p>Saves processed classification results to a JSON file.</p>
+<p>Writes the complete classification results dictionary to a JSON file,
+creating any necessary directories in the process. The output includes
+all categories and themes for all processed abstracts.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>output_path</strong> (<em>str</em>) – Path where the JSON file should be saved.
+Can be absolute or relative path.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Returns self for method chaining.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Self</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<dl>
+<dt>Output Format:</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;doi1&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;top_category1&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;mid_category1&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;low1&quot;</span><span class="p">,</span> <span class="s2">&quot;low2&quot;</span><span class="p">],</span>
+            <span class="s2">&quot;mid_category2&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;low3&quot;</span><span class="p">,</span> <span class="s2">&quot;low4&quot;</span><span class="p">]</span>
+        <span class="p">},</span>
+        <span class="s2">&quot;themes&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;theme1&quot;</span><span class="p">,</span> <span class="s2">&quot;theme2&quot;</span><span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</div>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">academic_metrics.utils.taxonomy_util</span> <span class="kn">import</span> <span class="n">Taxonomy</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Basic usage</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span> <span class="o">=</span> <span class="n">Taxonomy</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span> <span class="o">=</span> <span class="n">AbstractClassifier</span><span class="p">(</span><span class="n">taxonomy</span><span class="p">,</span> <span class="p">{},</span> <span class="s2">&quot;api-key&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span><span class="o">.</span><span class="n">save_classification_results</span><span class="p">(</span><span class="s2">&quot;results/data.json&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">os</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s2">&quot;results/data.json&quot;</span><span class="p">)</span>  <span class="c1"># File was created</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Method chaining</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span><span class="o">.</span><span class="n">classify</span><span class="p">()</span>\
+<span class="gp">... </span>    <span class="o">.</span><span class="n">save_classification_results</span><span class="p">(</span><span class="s2">&quot;results/data1.json&quot;</span><span class="p">)</span>\
+<span class="gp">... </span>    <span class="o">.</span><span class="n">save_classification_results</span><span class="p">(</span><span class="s2">&quot;results/data2.json&quot;</span><span class="p">)</span>  <span class="c1"># Chain multiple saves</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Verify file contents</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">json</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;results/data.json&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">saved_data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">saved_data</span> <span class="o">==</span> <span class="n">classifier</span><span class="o">.</span><span class="n">classification_results</span>  <span class="c1"># Data matches</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.AI.AbstractClassifier.AbstractClassifier.get_classification_results_dict">
+<span class="sig-name descname"><span class="pre">get_classification_results_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/AI/AbstractClassifier.html#AbstractClassifier.get_classification_results_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier.get_classification_results_dict" title="Link to this definition">¶</a></dt>
+<dd><p>Retrieves processed classification results for all processed
+abstracts.</p>
+<p>Provides direct access to the complete classification results dictionary,
+containing all categories and themes for every processed abstract.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><dl>
+<dt>A dictionary where:</dt><dd><ul>
+<li><p>Keys are DOI strings</p></li>
+<li><dl>
+<dt>Values are nested dictionaries containing:</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;top_category1&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;mid_category1&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;low1&quot;</span><span class="p">,</span> <span class="s2">&quot;low2&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;mid_category2&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;low3&quot;</span><span class="p">,</span> <span class="s2">&quot;low4&quot;</span><span class="p">]</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;themes&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;theme1&quot;</span><span class="p">,</span> <span class="s2">&quot;theme2&quot;</span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict[str, Dict[str, Any]]</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>Returns the raw defaultdict structure</p></li>
+<li><p>Includes theme information if theme recognition was run</p></li>
+<li><p>Structure matches the save_classification_results output format</p></li>
+</ul>
+</div>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span> <span class="o">=</span> <span class="n">Taxonomy</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">abstracts</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;10.1234/example&quot;</span><span class="p">:</span> <span class="s2">&quot;Sample abstract&quot;</span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span> <span class="o">=</span> <span class="n">AbstractClassifier</span><span class="p">(</span><span class="n">taxonomy</span><span class="p">,</span> <span class="n">abstracts</span><span class="p">,</span> <span class="s2">&quot;api-key&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span><span class="o">.</span><span class="n">classify</span><span class="p">()</span>  <span class="c1"># Process abstracts first</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Get results</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">results</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">get_classification_results_dict</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">results</span><span class="p">,</span> <span class="nb">dict</span><span class="p">)</span>  <span class="c1"># Verify return type</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Verify structure for a DOI</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">doi_results</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="s2">&quot;10.1234/example&quot;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">doi_results</span><span class="p">,</span> <span class="n">defaultdict</span><span class="p">)</span>  <span class="c1"># Nested defaultdict</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s2">&quot;themes&quot;</span> <span class="ow">in</span> <span class="n">doi_results</span>  <span class="c1"># Has themes</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.AI.AbstractClassifier.AbstractClassifier.get_raw_classification_outputs">
+<span class="sig-name descname"><span class="pre">get_raw_classification_outputs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/AI/AbstractClassifier.html#AbstractClassifier.get_raw_classification_outputs"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier.get_raw_classification_outputs" title="Link to this definition">¶</a></dt>
+<dd><p>Retrieves raw classification outputs from all processed abstracts.</p>
+<p>Provides access to the complete, unprocessed outputs from the classification
+chain, including all prompt variables and intermediate results.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><p>List of raw classification outputs, where each output
+contains:</p>
+<ul class="simple">
+<li><p><cite>”classifications”</cite>: List of classifications with categories and confidence scores.</p></li>
+<li><p><cite>”abstract”</cite>: The original abstract text.</p></li>
+<li><p><cite>”method_json_output”</cite>: Output from method extraction.</p></li>
+<li><p><cite>”sentence_analysis_output”</cite>: Output from sentence analysis.</p></li>
+<li><p><cite>”abstract_summary_output”</cite>: Output from abstract summarization.</p></li>
+<li><p>Other chain variables and outputs.</p></li>
+</ul>
+</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>List[Dict[str, Any]]</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>Contains all chain variables and outputs.</p></li>
+<li><p>Includes pre-classification results.</p></li>
+<li><p>Useful for debugging and analysis.</p></li>
+<li><p>May contain large amounts of data.</p></li>
+</ul>
+</div>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span> <span class="o">=</span> <span class="n">Taxonomy</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">abstracts</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;10.1234/example&quot;</span><span class="p">:</span> <span class="s2">&quot;Sample abstract&quot;</span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span> <span class="o">=</span> <span class="n">AbstractClassifier</span><span class="p">(</span><span class="n">taxonomy</span><span class="p">,</span> <span class="n">abstracts</span><span class="p">,</span> <span class="s2">&quot;api-key&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span><span class="o">.</span><span class="n">classify</span><span class="p">()</span>  <span class="c1"># Process abstracts first</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Get raw outputs</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">outputs</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">get_raw_classification_outputs</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">outputs</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>  <span class="c1"># Verify return type</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Verify structure of first output</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">first_output</span> <span class="o">=</span> <span class="n">outputs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s2">&quot;classifications&quot;</span> <span class="ow">in</span> <span class="n">first_output</span>  <span class="c1"># Has classifications</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">first_output</span><span class="p">[</span><span class="s2">&quot;classifications&quot;</span><span class="p">],</span> <span class="nb">list</span><span class="p">)</span>  <span class="c1"># List of classifications</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.AI.AbstractClassifier.AbstractClassifier.get_raw_theme_results">
+<span class="sig-name descname"><span class="pre">get_raw_theme_results</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/AI/AbstractClassifier.html#AbstractClassifier.get_raw_theme_results"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier.get_raw_theme_results" title="Link to this definition">¶</a></dt>
+<dd><p>Retrieves raw theme analysis results for all processed abstracts.</p>
+<p>Provides access to the complete, unprocessed outputs from the theme recognition
+chain for each abstract.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><dl>
+<dt>Dictionary where:</dt><dd><ul>
+<li><p>Keys are DOI strings</p></li>
+<li><dl>
+<dt>Values are raw theme analysis results with structure:</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;themes&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;theme1&quot;</span><span class="p">,</span> <span class="s2">&quot;theme2&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;confidence_scores&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;theme1&quot;</span><span class="p">:</span> <span class="mf">0.95</span><span class="p">,</span>
+        <span class="s2">&quot;theme2&quot;</span><span class="p">:</span> <span class="mf">0.85</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;analysis&quot;</span><span class="p">:</span> <span class="s2">&quot;Theme analysis text...&quot;</span><span class="p">,</span>
+    <span class="c1"># Other theme recognition outputs</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict[str, Dict[str, Any]]</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>Contains complete theme recognition outputs</p></li>
+<li><p>Includes confidence scores and analysis text</p></li>
+<li><p>Available after theme recognition stage</p></li>
+<li><p>Empty dictionaries for unprocessed DOIs</p></li>
+</ul>
+</div>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span> <span class="o">=</span> <span class="n">Taxonomy</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">abstracts</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;10.1234/example&quot;</span><span class="p">:</span> <span class="s2">&quot;Sample abstract&quot;</span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span> <span class="o">=</span> <span class="n">AbstractClassifier</span><span class="p">(</span><span class="n">taxonomy</span><span class="p">,</span> <span class="n">abstracts</span><span class="p">,</span> <span class="s2">&quot;api-key&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span><span class="o">.</span><span class="n">classify</span><span class="p">()</span>  <span class="c1"># Process abstracts first</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Get theme results</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">themes</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">get_raw_theme_results</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">themes</span><span class="p">,</span> <span class="nb">dict</span><span class="p">)</span>  <span class="c1"># Verify return type</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Verify structure for a DOI</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">doi_themes</span> <span class="o">=</span> <span class="n">themes</span><span class="p">[</span><span class="s2">&quot;10.1234/example&quot;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s2">&quot;themes&quot;</span> <span class="ow">in</span> <span class="n">doi_themes</span>  <span class="c1"># Has themes list</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">doi_themes</span><span class="p">[</span><span class="s2">&quot;themes&quot;</span><span class="p">],</span> <span class="nb">list</span><span class="p">)</span>  <span class="c1"># Themes are in a list</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.AI.AbstractClassifier.AbstractClassifier.save_raw_classification_results">
+<span class="sig-name descname"><span class="pre">save_raw_classification_results</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output_path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/AI/AbstractClassifier.html#AbstractClassifier.save_raw_classification_results"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier.save_raw_classification_results" title="Link to this definition">¶</a></dt>
+<dd><p>Saves raw classification outputs to a JSON file.</p>
+<p>Writes the complete, unprocessed outputs from the classification chain to a JSON file,
+creating any necessary directories in the process. Includes all prompt variables and
+intermediate results.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>output_path</strong> (<em>str</em>) – Path where the JSON file should be saved.
+Can be absolute or relative path.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Returns self for method chaining.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Self</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<dl>
+<dt>Output Format:</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;classifications&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;categories&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;category1&quot;</span><span class="p">,</span> <span class="s2">&quot;category2&quot;</span><span class="p">],</span>
+                <span class="s2">&quot;confidence&quot;</span><span class="p">:</span> <span class="mf">0.95</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="s2">&quot;abstract&quot;</span><span class="p">:</span> <span class="s2">&quot;original abstract text&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;method_json_output&quot;</span><span class="p">:</span> <span class="p">{</span><span class="o">...</span><span class="p">},</span>
+        <span class="s2">&quot;sentence_analysis_output&quot;</span><span class="p">:</span> <span class="p">{</span><span class="o">...</span><span class="p">},</span>
+        <span class="s2">&quot;abstract_summary_output&quot;</span><span class="p">:</span> <span class="p">{</span><span class="o">...</span><span class="p">},</span>
+        <span class="c1"># Other chain variables and outputs</span>
+    <span class="p">},</span>
+    <span class="c1"># Additional classification outputs...</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</div>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">academic_metrics.utils.taxonomy_util</span> <span class="kn">import</span> <span class="n">Taxonomy</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Basic usage</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span> <span class="o">=</span> <span class="n">Taxonomy</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">abstracts</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;10.1234/example&quot;</span><span class="p">:</span> <span class="s2">&quot;Sample abstract&quot;</span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span> <span class="o">=</span> <span class="n">AbstractClassifier</span><span class="p">(</span><span class="n">taxonomy</span><span class="p">,</span> <span class="n">abstracts</span><span class="p">,</span> <span class="s2">&quot;api-key&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span><span class="o">.</span><span class="n">classify</span><span class="p">()</span>  <span class="c1"># Process abstracts first</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span><span class="o">.</span><span class="n">save_raw_classification_results</span><span class="p">(</span><span class="s2">&quot;debug/raw_outputs.json&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">os</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s2">&quot;debug/raw_outputs.json&quot;</span><span class="p">)</span>  <span class="c1"># File was created</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Method chaining</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span><span class="o">.</span><span class="n">classify</span><span class="p">()</span>\
+<span class="gp">... </span>    <span class="o">.</span><span class="n">save_raw_classification_results</span><span class="p">(</span><span class="s2">&quot;debug/raw1.json&quot;</span><span class="p">)</span>\
+<span class="gp">... </span>    <span class="o">.</span><span class="n">save_raw_classification_results</span><span class="p">(</span><span class="s2">&quot;debug/raw2.json&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Verify file contents</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">json</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;debug/raw_outputs.json&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">saved_data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">saved_data</span> <span class="o">==</span> <span class="n">classifier</span><span class="o">.</span><span class="n">raw_classification_outputs</span>  <span class="c1"># Data matches</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.AI.AbstractClassifier.AbstractClassifier.save_raw_theme_results">
+<span class="sig-name descname"><span class="pre">save_raw_theme_results</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output_path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/AI/AbstractClassifier.html#AbstractClassifier.save_raw_theme_results"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier.save_raw_theme_results" title="Link to this definition">¶</a></dt>
+<dd><p>Saves raw theme analysis results to a JSON file.</p>
+<p>Writes the complete, unprocessed outputs from the theme recognition chain to a JSON file,
+creating any necessary directories in the process. Includes theme analysis results for
+each processed abstract.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>output_path</strong> (<em>str</em>) – Path where the JSON file should be saved.
+Can be absolute or relative path.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Returns self for method chaining.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Self</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<dl>
+<dt>Output Format:</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;10.1234/example&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;themes&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;theme1&quot;</span><span class="p">,</span> <span class="s2">&quot;theme2&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;confidence_scores&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;theme1&quot;</span><span class="p">:</span> <span class="mf">0.95</span><span class="p">,</span>
+            <span class="s2">&quot;theme2&quot;</span><span class="p">:</span> <span class="mf">0.85</span>
+        <span class="p">},</span>
+        <span class="s2">&quot;analysis&quot;</span><span class="p">:</span> <span class="s2">&quot;Theme analysis text...&quot;</span><span class="p">,</span>
+        <span class="c1"># Other theme recognition outputs</span>
+    <span class="p">},</span>
+    <span class="c1"># Additional DOIs and their theme results...</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</div>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">academic_metrics.utils.taxonomy_util</span> <span class="kn">import</span> <span class="n">Taxonomy</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Basic usage</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">taxonomy</span> <span class="o">=</span> <span class="n">Taxonomy</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">abstracts</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;10.1234/example&quot;</span><span class="p">:</span> <span class="s2">&quot;Sample abstract&quot;</span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span> <span class="o">=</span> <span class="n">AbstractClassifier</span><span class="p">(</span><span class="n">taxonomy</span><span class="p">,</span> <span class="n">abstracts</span><span class="p">,</span> <span class="s2">&quot;api-key&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span><span class="o">.</span><span class="n">classify</span><span class="p">()</span>  <span class="c1"># Process abstracts first</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span><span class="o">.</span><span class="n">save_raw_theme_results</span><span class="p">(</span><span class="s2">&quot;debug/raw_themes.json&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">os</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s2">&quot;debug/raw_themes.json&quot;</span><span class="p">)</span>  <span class="c1"># File was created</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Method chaining</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">classifier</span><span class="o">.</span><span class="n">classify</span><span class="p">()</span>\
+<span class="gp">... </span>    <span class="o">.</span><span class="n">save_raw_theme_results</span><span class="p">(</span><span class="s2">&quot;debug/themes1.json&quot;</span><span class="p">)</span>\
+<span class="gp">... </span>    <span class="o">.</span><span class="n">save_raw_theme_results</span><span class="p">(</span><span class="s2">&quot;debug/themes2.json&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Verify file contents</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">json</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;debug/raw_themes.json&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">saved_data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">saved_data</span> <span class="o">==</span> <span class="n">classifier</span><span class="o">.</span><span class="n">raw_theme_outputs</span>  <span class="c1"># Data matches</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+        <div id="show_right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&lt;</span><span>Page contents</span></a></p>
+        </div>
+
+        <div id="right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
+            <div class="page_toc">
+                <ul>
+<li><a class="reference internal" href="#">Abstract Classifier Module</a><ul>
+<li><a class="reference internal" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier"><code class="docutils literal notranslate"><span class="pre">AbstractClassifier</span></code></a><ul>
+<li><a class="reference internal" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier.Public"><code class="docutils literal notranslate"><span class="pre">AbstractClassifier.Public</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier.Private"><code class="docutils literal notranslate"><span class="pre">AbstractClassifier.Private</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier.__init__"><code class="docutils literal notranslate"><span class="pre">AbstractClassifier.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier._run_initial_api_key_validation"><code class="docutils literal notranslate"><span class="pre">AbstractClassifier._run_initial_api_key_validation()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier._initialize_pre_classification_chain_manager"><code class="docutils literal notranslate"><span class="pre">AbstractClassifier._initialize_pre_classification_chain_manager()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier._initialize_classification_chain_manager"><code class="docutils literal notranslate"><span class="pre">AbstractClassifier._initialize_classification_chain_manager()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier._initialize_theme_chain_manager"><code class="docutils literal notranslate"><span class="pre">AbstractClassifier._initialize_theme_chain_manager()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier._add_method_extraction_layer"><code class="docutils literal notranslate"><span class="pre">AbstractClassifier._add_method_extraction_layer()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier._add_sentence_analysis_layer"><code class="docutils literal notranslate"><span class="pre">AbstractClassifier._add_sentence_analysis_layer()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier._add_summary_layer"><code class="docutils literal notranslate"><span class="pre">AbstractClassifier._add_summary_layer()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier._add_classification_layer"><code class="docutils literal notranslate"><span class="pre">AbstractClassifier._add_classification_layer()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier._add_theme_recognition_layer"><code class="docutils literal notranslate"><span class="pre">AbstractClassifier._add_theme_recognition_layer()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier._get_classification_results_by_doi"><code class="docutils literal notranslate"><span class="pre">AbstractClassifier._get_classification_results_by_doi()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier.get_classification_results_by_doi"><code class="docutils literal notranslate"><span class="pre">AbstractClassifier.get_classification_results_by_doi()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier.classify_abstract"><code class="docutils literal notranslate"><span class="pre">AbstractClassifier.classify_abstract()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier.extract_classified_categories"><code class="docutils literal notranslate"><span class="pre">AbstractClassifier.extract_classified_categories()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier.is_valid_category"><code class="docutils literal notranslate"><span class="pre">AbstractClassifier.is_valid_category()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier.classify"><code class="docutils literal notranslate"><span class="pre">AbstractClassifier.classify()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier._make_dirs_helper"><code class="docutils literal notranslate"><span class="pre">AbstractClassifier._make_dirs_helper()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier.save_classification_results"><code class="docutils literal notranslate"><span class="pre">AbstractClassifier.save_classification_results()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier.get_classification_results_dict"><code class="docutils literal notranslate"><span class="pre">AbstractClassifier.get_classification_results_dict()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier.get_raw_classification_outputs"><code class="docutils literal notranslate"><span class="pre">AbstractClassifier.get_raw_classification_outputs()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier.get_raw_theme_results"><code class="docutils literal notranslate"><span class="pre">AbstractClassifier.get_raw_theme_results()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier.save_raw_classification_results"><code class="docutils literal notranslate"><span class="pre">AbstractClassifier.save_raw_classification_results()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.AI.AbstractClassifier.AbstractClassifier.save_raw_theme_results"><code class="docutils literal notranslate"><span class="pre">AbstractClassifier.save_raw_theme_results()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+    
+
+      <div class="clearer"></div>
+    </div>
+    <div class="button_nav_wrapper">
+        <div class="button_nav">
+            <div class="left">
+                
+                <a href="index.html">
+                    <span class="icon">&lt;</span><span>Welcome to Academic Metrics’s documentation!</span></a>
+                
+            </div>
+
+            <div class="right">
+                
+                    <a href="category_processor.html"><span>Category Processor Module</span><span class="icon">&gt;</span></a>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Spencer Presley, Cole Barbes.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    </div>
+
+<p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>
+  </body>
+</html>

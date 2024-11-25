@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Category Processor Module &#8212; Academic Metrics 0.1.0-beta documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+    <link rel="stylesheet" type="text/css" href="_static/basic_mod.css?v=9b2032db" />
+    <script src="_static/documentation_options.js?v=c903bf51"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <script src="_static/js/petite-vue.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Faculty Set Processing" href="faculty_set_postprocessor.html" />
+    <link rel="prev" title="Abstract Classifier Module" href="abstract_classifier.html" /> 
+  </head><body data-dark_mode_code_blocks="true">
+
+<div id="top_nav">
+    
+
+    <nav>
+        
+            
+        
+
+        <p id="toggle_sidebar">
+            <a href="#" title="Toggle sidebar">|||</a>
+        </p>
+        <h1><a href="index.html" title="Go to homepage">Academic Metrics 0.1.0-beta documentation</a></h1>
+
+        <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
+    <template v-if="mode == 'light'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_light"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M67.48,18.073c1.913,-1.912 1.913,-5.018 0,-6.931c-1.912,-1.912 -5.018,-1.912 -6.931,0l-6.798,6.799c-1.912,1.912 -1.912,5.018 0,6.931c1.913,1.912 5.018,1.912 6.931,-0l6.798,-6.799Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.728,61.108c1.912,-1.913 1.912,-5.018 -0,-6.931c-1.913,-1.913 -5.019,-1.913 -6.931,-0l-6.799,6.798c-1.912,1.913 -1.912,5.019 0,6.931c1.913,1.913 5.019,1.913 6.931,0l6.799,-6.798Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.682,54.177c-1.913,-1.913 -5.018,-1.913 -6.931,-0c-1.912,1.913 -1.912,5.018 0,6.931l6.798,6.798c1.913,1.913 5.019,1.913 6.931,0c1.913,-1.912 1.913,-5.018 0,-6.931l-6.798,-6.798Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M4.901,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,-0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M18.929,11.142c-1.912,-1.912 -5.018,-1.912 -6.931,0c-1.912,1.913 -1.912,5.019 0,6.931l6.799,6.799c1.912,1.912 5.018,1.912 6.931,-0c1.912,-1.913 1.912,-5.019 -0,-6.931l-6.799,-6.799Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.108,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c-0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c-0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'dark'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_dark"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.901,2.196 -4.901,4.901c0,2.705 2.197,4.901 4.901,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.662,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.989,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.732,61.103c1.91,-1.91 1.91,-5.011 0,-6.921l-0.009,-0.01c-1.91,-1.91 -5.012,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.909,1.91 5.011,1.91 6.92,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.672,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.52,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l-0,-0.01c-0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.901,2.196 -4.901,4.901c0,2.704 2.197,4.9 4.901,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.73,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 -0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.098,34.623c-2.699,0 -4.891,2.192 -4.891,4.892l-0,0.019c-0,2.699 2.192,4.891 4.891,4.891c2.7,0 4.892,-2.192 4.892,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.892,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'darkest'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_darkest"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><path d="M39.315,23.791c8.684,-0 15.734,7.05 15.734,15.733c0,8.684 -7.05,15.734 -15.734,15.734c-8.683,0 -15.733,-7.05 -15.733,-15.734c-0,-8.683 7.05,-15.733 15.733,-15.733Zm0,4.737c6.069,0 10.997,4.927 10.997,10.996c-0,6.069 -4.928,10.996 -10.997,10.996c-6.068,0 -10.996,-4.927 -10.996,-10.996c0,-6.069 4.928,-10.996 10.996,-10.996Z" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.216,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.9,2.196 -4.9,4.901c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.666,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.99,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.737,61.103c1.909,-1.91 1.909,-5.011 -0,-6.921l-0.01,-0.01c-1.91,-1.91 -5.011,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.91,1.91 5.011,1.91 6.921,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.676,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.524,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l0,-0.01c0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.216,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901c-0,2.704 2.196,4.9 4.9,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.734,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.103,34.623c-2.7,0 -4.892,2.192 -4.892,4.892l-0,0.019c-0,2.699 2.192,4.891 4.892,4.891c2.699,0 4.891,-2.192 4.891,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.891,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+</a>
+
+<script>
+(function() {
+    const LOCAL_STORAGE_KEY = 'piccoloThemeMode'
+
+    var initialMode = localStorage.getItem(LOCAL_STORAGE_KEY)
+
+    if (initialMode) {
+        // Make sure the value in local storage is valid
+        if (['light', 'dark', 'darkest'].indexOf(initialMode) == -1) {
+            initialMode = 'light'
+            localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+        }
+    } else {
+        // Check if the client prefers dark mode
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            initialMode = 'dark'
+        } else {
+            initialMode = 'light'
+        }
+        localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+    }
+
+    document.documentElement.dataset.mode = initialMode
+
+    PetiteVue.createApp({
+        'mode': initialMode,
+        handleClick() {
+            let currentMode = this.mode
+
+            if (currentMode == 'light') {
+                this.mode = 'dark'
+            } else if (currentMode == 'dark') {
+                this.mode = 'darkest'
+            } else if (currentMode == 'darkest') {
+                this.mode = 'light'
+            }
+
+            document.documentElement.dataset.mode = this.mode
+            localStorage.setItem(LOCAL_STORAGE_KEY, this.mode)
+
+            console.log(this.mode)
+        }
+    }).mount('#mode_toggle')
+})()
+</script>
+            <p class="mobile_search_link">
+                <a href="search.html" title="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 64" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path d="M14.873 40.009c-2.315-3.943-3.642-8.532-3.642-13.429C11.231 11.91 23.141 0 37.811 0s26.58 11.91 26.58 26.58-11.91 26.58-26.58 26.58a26.44 26.44 0 0 1-14.277-4.161L9.739 62.794a3.12 3.12 0 0 1-4.413 0L.913 58.382c-1.217-1.218-1.217-3.196 0-4.413l13.96-13.96zM37.811 8.054c10.225 0 18.526 8.301 18.526 18.526s-8.301 18.526-18.526 18.526-18.526-8.301-18.526-18.526S27.586 8.054 37.811 8.054z" fill="#fff" />
+                    </svg>
+                </a>
+            </p>
+        
+
+        <div class="searchbox_wrapper">
+            
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="abstract_classifier.html">Abstract Classifier Module</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Category Processor Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faculty_set_postprocessor.html">Faculty Set Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config.html">Global Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chain_builder.html">Chain Builder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ai_prompts.html">ai_prompts package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection.html">data_collection package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dataclass_models.html">dataclass_models package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DB.html">DB package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enums.html">enums package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="factories.html">factories package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="orchestrators.html">orchestrators package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="other.html">other package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="runners.html">runners package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="strategies.html">strategies package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="utils.html">utils package</a></li>
+</ul>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="module-academic_metrics.core.category_processor">
+<span id="category-processor-module"></span><h1>Category Processor Module<a class="headerlink" href="#module-academic_metrics.core.category_processor" title="Link to this heading">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">academic_metrics.core.category_processor.</span></span><span class="sig-name descname"><span class="pre">CategoryProcessor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">utils</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataclass_factory</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">warning_manager</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">taxonomy_util</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_to_console</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Processes and organizes academic publication data by categories.</p>
+<p>This class handles the processing of classified publication data, organizing it into
+categories and generating various statistics. It manages faculty affiliations,
+article details, and category relationships.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.utils">
+<span class="sig-name descname"><span class="pre">utils</span></span><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.utils" title="Link to this definition">¶</a></dt>
+<dd><p>Utility functions for data processing.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="academic_metrics.utils.html#academic_metrics.utils.utilities.Utilities" title="academic_metrics.utils.utilities.Utilities">Utilities</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.warning_manager">
+<span class="sig-name descname"><span class="pre">warning_manager</span></span><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.warning_manager" title="Link to this definition">¶</a></dt>
+<dd><p>System for handling and logging warnings.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="academic_metrics.utils.html#academic_metrics.utils.warning_manager.WarningManager" title="academic_metrics.utils.warning_manager.WarningManager">WarningManager</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.dataclass_factory">
+<span class="sig-name descname"><span class="pre">dataclass_factory</span></span><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.dataclass_factory" title="Link to this definition">¶</a></dt>
+<dd><p>Factory for creating data model instances.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="academic_metrics.factories.html#academic_metrics.factories.dataclass_factory.DataClassFactory" title="academic_metrics.factories.dataclass_factory.DataClassFactory">DataClassFactory</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.taxonomy_util">
+<span class="sig-name descname"><span class="pre">taxonomy_util</span></span><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.taxonomy_util" title="Link to this definition">¶</a></dt>
+<dd><p>Utility for managing publication taxonomy.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="academic_metrics.utils.html#academic_metrics.utils.taxonomy_util.Taxonomy" title="academic_metrics.utils.taxonomy_util.Taxonomy">Taxonomy</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.category_data">
+<span class="sig-name descname"><span class="pre">category_data</span></span><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.category_data" title="Link to this definition">¶</a></dt>
+<dd><p>Mapping of categories to their information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dict[str, <a class="reference internal" href="academic_metrics.dataclass_models.html#academic_metrics.dataclass_models.concrete_dataclasses.CategoryInfo" title="academic_metrics.dataclass_models.concrete_dataclasses.CategoryInfo">CategoryInfo</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.faculty_stats">
+<span class="sig-name descname"><span class="pre">faculty_stats</span></span><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.faculty_stats" title="Link to this definition">¶</a></dt>
+<dd><p>Faculty statistics by category.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dict[str, <a class="reference internal" href="academic_metrics.dataclass_models.html#academic_metrics.dataclass_models.concrete_dataclasses.FacultyStats" title="academic_metrics.dataclass_models.concrete_dataclasses.FacultyStats">FacultyStats</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.global_faculty_stats">
+<span class="sig-name descname"><span class="pre">global_faculty_stats</span></span><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.global_faculty_stats" title="Link to this definition">¶</a></dt>
+<dd><p>Global faculty statistics.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dict[str, <a class="reference internal" href="academic_metrics.dataclass_models.html#academic_metrics.dataclass_models.concrete_dataclasses.GlobalFacultyStats" title="academic_metrics.dataclass_models.concrete_dataclasses.GlobalFacultyStats">GlobalFacultyStats</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.category_article_stats">
+<span class="sig-name descname"><span class="pre">category_article_stats</span></span><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.category_article_stats" title="Link to this definition">¶</a></dt>
+<dd><p>Article statistics by category.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dict[str, <a class="reference internal" href="academic_metrics.dataclass_models.html#academic_metrics.dataclass_models.concrete_dataclasses.CrossrefArticleStats" title="academic_metrics.dataclass_models.concrete_dataclasses.CrossrefArticleStats">CrossrefArticleStats</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.articles">
+<span class="sig-name descname"><span class="pre">articles</span></span><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.articles" title="Link to this definition">¶</a></dt>
+<dd><p>List of processed article details.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[<a class="reference internal" href="academic_metrics.dataclass_models.html#academic_metrics.dataclass_models.concrete_dataclasses.CrossrefArticleDetails" title="academic_metrics.dataclass_models.concrete_dataclasses.CrossrefArticleDetails">CrossrefArticleDetails</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.logger">
+<span class="sig-name descname"><span class="pre">logger</span></span><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.logger" title="Link to this definition">¶</a></dt>
+<dd><p>Logger instance for this class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>logging.Logger</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.log_file_path">
+<span class="sig-name descname"><span class="pre">log_file_path</span></span><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.log_file_path" title="Link to this definition">¶</a></dt>
+<dd><p>Path to the log file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">Public</span> <span class="pre">Methods</span></span></dt>
+<dd><p>process_data_list: Process a list of publication data items.
+get_category_data: Get processed category data.
+get_category_article_stats: Get article statistics by category.
+get_articles: Get list of processed articles.
+get_faculty_stats: Get faculty statistics by category.
+get_global_faculty_stats: Get global faculty statistics.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">Private</span> <span class="pre">Methods</span></span></dt>
+<dd><p>call_get_attributes: Extract attributes from raw data.
+update_category_stats: Update statistics for a category.
+update_faculty_stats: Update faculty statistics.
+update_global_faculty_stats: Update global faculty statistics.
+update_category_article_stats: Update article statistics by category.
+create_article_object: Create a new article object.
+clean_faculty_affiliations: Clean faculty affiliation data.
+clean_faculty_members: Clean faculty member data.
+initialize_categories: Initialize category data structures.
+_collect_all_affiliations: Collect all faculty affiliations.
+_generate_url: Generate URL from string.
+_generate_normal_id: Generate normalized ID from strings.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">utils</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataclass_factory</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">warning_manager</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">taxonomy_util</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_to_console</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.__init__" title="Link to this definition">¶</a></dt>
+<dd><p>Initialize the CategoryProcessor with required dependencies.</p>
+<p>Sets up logging configuration and initializes all required components for
+processing publication data, including utilities, factories, and data structures
+for storing category, faculty, and article information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>utils</strong> (<a class="reference internal" href="academic_metrics.utils.html#academic_metrics.utils.utilities.Utilities" title="academic_metrics.utils.utilities.Utilities"><em>Utilities</em></a>) – Utility functions for data processing.</p></li>
+<li><p><strong>dataclass_factory</strong> (<a class="reference internal" href="academic_metrics.factories.html#academic_metrics.factories.dataclass_factory.DataClassFactory" title="academic_metrics.factories.dataclass_factory.DataClassFactory"><em>DataClassFactory</em></a>) – Factory for creating data model instances.</p></li>
+<li><p><strong>warning_manager</strong> (<a class="reference internal" href="academic_metrics.utils.html#academic_metrics.utils.warning_manager.WarningManager" title="academic_metrics.utils.warning_manager.WarningManager"><em>WarningManager</em></a>) – System for handling and logging warnings.</p></li>
+<li><p><strong>taxonomy_util</strong> (<a class="reference internal" href="academic_metrics.utils.html#academic_metrics.utils.taxonomy_util.Taxonomy" title="academic_metrics.utils.taxonomy_util.Taxonomy"><em>Taxonomy</em></a>) – Utility for managing publication taxonomy.</p></li>
+<li><p><strong>log_to_console</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to log output to console. Defaults to True.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>ValueError</strong> – If required dependencies are not properly initialized.</p></li>
+<li><p><strong>IOError</strong> – If log file cannot be created or accessed.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.process_data_list">
+<span class="sig-name descname"><span class="pre">process_data_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor.process_data_list"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.process_data_list" title="Link to this definition">¶</a></dt>
+<dd><p>Process a list of publication data items.</p>
+<p>Takes raw publication data and processes each item through several stages:
+1. Extracts base attributes
+2. Initializes category information
+3. Generates URL maps for categories
+4. Cleans faculty and affiliation data
+5. Updates various statistics (category, faculty, article)
+6. Creates article objects</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>data</strong> (<em>List</em><em>[</em><em>Dict</em><em>]</em>) – List of raw publication data dictionaries to process.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>ValueError</strong> – If required attributes are missing from data.</p></li>
+<li><p><strong>Exception</strong> – If category information cannot be initialized.</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor._test_category_processor">
+<span class="sig-name descname"><span class="pre">_test_category_processor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">raw_attributes</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor._test_category_processor"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor._test_category_processor" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.call_get_attributes">
+<span class="sig-name descname"><span class="pre">call_get_attributes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor.call_get_attributes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.call_get_attributes" title="Link to this definition">¶</a></dt>
+<dd><p>Extract and process attributes from raw publication data.</p>
+<p>Extracts various attributes including categories, authors, departments, titles,
+citations, abstracts, licenses, publication dates, journal info, URLs, DOIs,
+and themes from the raw data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>data</strong> (<em>Dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em>) – Raw publication data dictionary.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>Dictionary containing extracted and processed attributes:</dt><dd><ul class="simple">
+<li><p>categories: List of publication categories</p></li>
+<li><p>faculty_members: List of faculty authors</p></li>
+<li><p>faculty_affiliations: Dictionary mapping faculty to their departments</p></li>
+<li><p>title: Publication title</p></li>
+<li><p>tc_count: Citation count</p></li>
+<li><p>abstract: Publication abstract</p></li>
+<li><p>license_url: License URL</p></li>
+<li><p>date_published_print: Print publication date</p></li>
+<li><p>date_published_online: Online publication date</p></li>
+<li><p>journal: Journal name</p></li>
+<li><p>download_url: Download URL</p></li>
+<li><p>doi: Digital Object Identifier</p></li>
+<li><p>themes: List of publication themes</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dict[str, Any]</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>Exception</strong> – If no category is found in the data.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.update_category_stats">
+<span class="sig-name descname"><span class="pre">update_category_stats</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor.update_category_stats"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.update_category_stats" title="Link to this definition">¶</a></dt>
+<dd><p>Update statistics for each category based on processed article data.</p>
+<p>Updates category information including faculty members, departments, titles,
+citation counts, DOIs, and themes. Also calculates derived statistics like
+faculty count, department count, article count, and citation averages.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>**kwargs</strong> – Keyword arguments containing article data:
+- title (str): Article title
+- doi (str): Digital Object Identifier
+- tc_count (int): Citation count
+- faculty_members (List[str]): List of faculty authors
+- all_affiliations (Set[str]): Set of department affiliations
+- themes (List[str]): List of article themes
+- all_categories (List[str]): List of all categories
+url_maps (Dict[str, Dict[str, str]]): Category URL mappings</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>KeyError</strong> – If required kwargs are missing.</p></li>
+<li><p><strong>ValueError</strong> – If category information cannot be updated.</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.update_faculty_stats">
+<span class="sig-name descname"><span class="pre">update_faculty_stats</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor.update_faculty_stats"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.update_faculty_stats" title="Link to this definition">¶</a></dt>
+<dd><p>Update faculty statistics for each category.</p>
+<p>Updates faculty member information including department affiliations,
+publication titles, DOIs, citation counts, and article counts. Creates
+or updates faculty statistics entries for each category.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>**kwargs</strong> – Keyword arguments containing faculty and article data:
+- faculty_members (List[str]): List of faculty authors
+- faculty_affiliations (Dict[str, List[str]]): Faculty department mappings
+- title (str): Article title
+- doi (str): Digital Object Identifier
+- tc_count (int): Citation count
+- all_categories (List[str]): List of all categories
+- url_maps (Dict[str, Dict[str, str]]): Category URL mappings</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>KeyError</strong> – If required kwargs are missing.</p></li>
+<li><p><strong>ValueError</strong> – If faculty statistics cannot be updated.</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.update_global_faculty_stats">
+<span class="sig-name descname"><span class="pre">update_global_faculty_stats</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor.update_global_faculty_stats"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.update_global_faculty_stats" title="Link to this definition">¶</a></dt>
+<dd><p>Update global statistics for each faculty member.</p>
+<p>Creates or updates global faculty statistics including total citations,
+article counts, department affiliations, DOIs, titles, categories,
+and category URLs across all publication categories.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>**kwargs</strong> – Keyword arguments containing faculty and article data:
+- faculty_members (List[str]): List of faculty authors
+- faculty_affiliations (Dict[str, List[str]]): Faculty department mappings
+- title (str): Article title
+- doi (str): Digital Object Identifier
+- tc_count (int): Citation count
+- all_categories (List[str]): List of all categories
+- top_level_categories (List[str]): Top-level categories
+- mid_level_categories (List[str]): Mid-level categories
+- low_level_categories (List[str]): Low-level categories
+- url_maps (Dict[str, Dict[str, str]]): Category URL mappings
+- themes (List[str]): Article themes
+- journal (str): Journal name</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>KeyError</strong> – If required kwargs are missing.</p></li>
+<li><p><strong>ValueError</strong> – If global faculty statistics cannot be updated.</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.update_category_article_stats">
+<span class="sig-name descname"><span class="pre">update_category_article_stats</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor.update_category_article_stats"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.update_category_article_stats" title="Link to this definition">¶</a></dt>
+<dd><p>Update article statistics for each category.</p>
+<p>Creates or updates article statistics including titles, citations, faculty members,  affiliations, abstracts, licenses, publication dates, and URLs. Organizes articles by their category levels (top, mid, low).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>**kwargs</strong> – Keyword arguments containing article data:
+- title (str): Article title
+- doi (str): Digital Object Identifier
+- tc_count (int): Citation count
+- faculty_members (List[str]): List of faculty authors
+- faculty_affiliations (Dict[str, List[str]]): Faculty department mappings
+- abstract (str): Article abstract
+- license_url (str): License URL
+- date_published_print (str): Print publication date
+- date_published_online (str): Online publication date
+- journal (str): Journal name
+- download_url (str): Download URL
+- themes (List[str]): Article themes
+- all_categories (List[str]): List of all categories
+- low_level_categories (List[str]): Low-level categories
+- mid_level_categories (List[str]): Mid-level categories
+- url_maps (Dict[str, Dict[str, str]]): Category URL mappings</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>KeyError</strong> – If required kwargs are missing.</p></li>
+<li><p><strong>ValueError</strong> – If article statistics cannot be updated.</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.create_article_object">
+<span class="sig-name descname"><span class="pre">create_article_object</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor.create_article_object"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.create_article_object" title="Link to this definition">¶</a></dt>
+<dd><p>Create a new article object with complete metadata.</p>
+<p>Creates a CrossrefArticleDetails object containing all article information,
+including category relationships, URLs, and metadata. Handles URL generation
+for different category levels and maintains category hierarchies.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>**kwargs</strong> – Keyword arguments containing article data:
+- doi (str): Digital Object Identifier
+- title (str): Article title
+- tc_count (int): Citation count
+- faculty_members (List[str]): Faculty authors
+- faculty_affiliations (Dict[str, List[str]]): Faculty affiliations
+- abstract (str): Article abstract
+- license_url (str): License URL
+- date_published_print (str): Print publication date
+- date_published_online (str): Online publication date
+- journal (str): Journal name
+- download_url (str): Download URL
+- themes (List[str]): Article themes
+- all_categories (List[str]): All categories
+- top_level_categories (List[str]): Top-level categories
+- mid_level_categories (List[str]): Mid-level categories
+- low_level_categories (List[str]): Low-level categories</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>KeyError</strong> – If required kwargs are missing.</p></li>
+<li><p><strong>ValueError</strong> – If article object cannot be created.</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.clean_faculty_affiliations">
+<span class="sig-name descname"><span class="pre">clean_faculty_affiliations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faculty_affiliations</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor.clean_faculty_affiliations"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.clean_faculty_affiliations" title="Link to this definition">¶</a></dt>
+<dd><p>Clean and format faculty affiliation data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>faculty_affiliations</strong> (<em>Dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em>) – Raw faculty affiliation mappings.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Cleaned faculty affiliation mappings.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dict[str, Any]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.clean_faculty_members">
+<span class="sig-name descname"><span class="pre">clean_faculty_members</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faculty_members</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor.clean_faculty_members"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.clean_faculty_members" title="Link to this definition">¶</a></dt>
+<dd><p>Clean and filter faculty member names.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>faculty_members</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – Raw list of faculty member names.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Cleaned list of faculty member names, excluding empty strings.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.initialize_categories">
+<span class="sig-name descname"><span class="pre">initialize_categories</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">categories</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor.initialize_categories"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.initialize_categories" title="Link to this definition">¶</a></dt>
+<dd><p>Initialize category data structures for all category levels.</p>
+<p>Creates CategoryInfo instances for each category and organizes them by level.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>categories</strong> (<em>Dict</em><em>[</em><em>str</em><em>, </em><em>List</em><em>[</em><em>str</em><em>]</em><em>]</em>) – Categories organized by level (top, mid, low).</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>Organized category data including:</dt><dd><ul class="simple">
+<li><p>top_level_categories: List of top-level categories</p></li>
+<li><p>mid_level_categories: List of mid-level categories</p></li>
+<li><p>low_level_categories: List of low-level categories</p></li>
+<li><p>all_categories: List of all categories</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dict[str, List[str]]</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If category initialization fails.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.get_category_data">
+<span class="sig-name descname"><span class="pre">get_category_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor.get_category_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.get_category_data" title="Link to this definition">¶</a></dt>
+<dd><p>Get the processed category data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Mapping of categories to their information.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict[str, <a class="reference internal" href="academic_metrics.dataclass_models.html#academic_metrics.dataclass_models.concrete_dataclasses.CategoryInfo" title="academic_metrics.dataclass_models.concrete_dataclasses.CategoryInfo">CategoryInfo</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.get_category_article_stats">
+<span class="sig-name descname"><span class="pre">get_category_article_stats</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor.get_category_article_stats"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.get_category_article_stats" title="Link to this definition">¶</a></dt>
+<dd><p>Get article statistics organized by category.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Mapping of categories to their article statistics.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict[str, <a class="reference internal" href="academic_metrics.dataclass_models.html#academic_metrics.dataclass_models.concrete_dataclasses.CrossrefArticleStats" title="academic_metrics.dataclass_models.concrete_dataclasses.CrossrefArticleStats">CrossrefArticleStats</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.get_articles">
+<span class="sig-name descname"><span class="pre">get_articles</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor.get_articles"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.get_articles" title="Link to this definition">¶</a></dt>
+<dd><p>Get the list of processed articles.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List of all processed article details.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>List[<a class="reference internal" href="academic_metrics.dataclass_models.html#academic_metrics.dataclass_models.concrete_dataclasses.CrossrefArticleDetails" title="academic_metrics.dataclass_models.concrete_dataclasses.CrossrefArticleDetails">CrossrefArticleDetails</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.get_faculty_stats">
+<span class="sig-name descname"><span class="pre">get_faculty_stats</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor.get_faculty_stats"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.get_faculty_stats" title="Link to this definition">¶</a></dt>
+<dd><p>Get faculty statistics organized by category.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Mapping of categories to their faculty statistics.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict[str, <a class="reference internal" href="academic_metrics.dataclass_models.html#academic_metrics.dataclass_models.concrete_dataclasses.FacultyStats" title="academic_metrics.dataclass_models.concrete_dataclasses.FacultyStats">FacultyStats</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.get_global_faculty_stats">
+<span class="sig-name descname"><span class="pre">get_global_faculty_stats</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor.get_global_faculty_stats"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.get_global_faculty_stats" title="Link to this definition">¶</a></dt>
+<dd><p>Get global statistics for all faculty members.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Mapping of faculty members to their global statistics.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict[str, <a class="reference internal" href="academic_metrics.dataclass_models.html#academic_metrics.dataclass_models.concrete_dataclasses.GlobalFacultyStats" title="academic_metrics.dataclass_models.concrete_dataclasses.GlobalFacultyStats">GlobalFacultyStats</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor._collect_all_affiliations">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">_collect_all_affiliations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faculty_affiliations</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logger</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor._collect_all_affiliations"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor._collect_all_affiliations" title="Link to this definition">¶</a></dt>
+<dd><p>Collect all unique department affiliations.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>faculty_affiliations</strong> (<em>Dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em>) – Faculty to department mappings.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Set of unique department affiliations.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Set[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor._generate_url">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">_generate_url</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logger</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor._generate_url"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor._generate_url" title="Link to this definition">¶</a></dt>
+<dd><p>Generate a URL-safe string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>string</strong> (<em>str</em>) – Input string to encode.</p></li>
+<li><p><strong>logger</strong> (<em>logging.Logger</em><em> | </em><em>None</em>) – Logger instance to use for logging.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>URL-encoded string.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor._generate_normal_id">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">_generate_normal_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">strings</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logger</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor._generate_normal_id"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor._generate_normal_id" title="Link to this definition">¶</a></dt>
+<dd><p>Generate a normalized ID from a list of strings.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>strings</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – List of strings to combine into an ID.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Normalized ID string (lowercase, hyphen-separated).</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+        <div id="show_right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&lt;</span><span>Page contents</span></a></p>
+        </div>
+
+        <div id="right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
+            <div class="page_toc">
+                <ul>
+<li><a class="reference internal" href="#">Category Processor Module</a><ul>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor</span></code></a><ul>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.utils"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.utils</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.warning_manager"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.warning_manager</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.dataclass_factory"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.dataclass_factory</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.taxonomy_util"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.taxonomy_util</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.category_data"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.category_data</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.faculty_stats"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.faculty_stats</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.global_faculty_stats"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.global_faculty_stats</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.category_article_stats"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.category_article_stats</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.articles"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.articles</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.logger"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.logger</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.log_file_path"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.log_file_path</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.__init__"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.process_data_list"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.process_data_list()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor._test_category_processor"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor._test_category_processor()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.call_get_attributes"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.call_get_attributes()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.update_category_stats"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.update_category_stats()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.update_faculty_stats"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.update_faculty_stats()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.update_global_faculty_stats"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.update_global_faculty_stats()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.update_category_article_stats"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.update_category_article_stats()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.create_article_object"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.create_article_object()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.clean_faculty_affiliations"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.clean_faculty_affiliations()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.clean_faculty_members"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.clean_faculty_members()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.initialize_categories"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.initialize_categories()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.get_category_data"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.get_category_data()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.get_category_article_stats"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.get_category_article_stats()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.get_articles"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.get_articles()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.get_faculty_stats"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.get_faculty_stats()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.get_global_faculty_stats"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.get_global_faculty_stats()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor._collect_all_affiliations"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor._collect_all_affiliations()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor._generate_url"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor._generate_url()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor._generate_normal_id"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor._generate_normal_id()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+    
+
+      <div class="clearer"></div>
+    </div>
+    <div class="button_nav_wrapper">
+        <div class="button_nav">
+            <div class="left">
+                
+                <a href="abstract_classifier.html">
+                    <span class="icon">&lt;</span><span>Abstract Classifier Module</span></a>
+                
+            </div>
+
+            <div class="right">
+                
+                    <a href="faculty_set_postprocessor.html"><span>Faculty Set Processing</span><span class="icon">&gt;</span></a>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Spencer Presley, Cole Barbes.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    </div>
+
+<p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>
+  </body>
+</html>

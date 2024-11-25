@@ -1,0 +1,1581 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>academic_metrics.core package &#8212; Academic Metrics 0.1.0-beta documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+    <link rel="stylesheet" type="text/css" href="_static/basic_mod.css?v=9b2032db" />
+    <script src="_static/documentation_options.js?v=c903bf51"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <script src="_static/js/petite-vue.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head><body data-dark_mode_code_blocks="true">
+
+<div id="top_nav">
+    
+
+    <nav>
+        
+            
+        
+
+        <p id="toggle_sidebar">
+            <a href="#" title="Toggle sidebar">|||</a>
+        </p>
+        <h1><a href="index.html" title="Go to homepage">Academic Metrics 0.1.0-beta documentation</a></h1>
+
+        <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
+    <template v-if="mode == 'light'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_light"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M67.48,18.073c1.913,-1.912 1.913,-5.018 0,-6.931c-1.912,-1.912 -5.018,-1.912 -6.931,0l-6.798,6.799c-1.912,1.912 -1.912,5.018 0,6.931c1.913,1.912 5.018,1.912 6.931,-0l6.798,-6.799Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.728,61.108c1.912,-1.913 1.912,-5.018 -0,-6.931c-1.913,-1.913 -5.019,-1.913 -6.931,-0l-6.799,6.798c-1.912,1.913 -1.912,5.019 0,6.931c1.913,1.913 5.019,1.913 6.931,0l6.799,-6.798Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.682,54.177c-1.913,-1.913 -5.018,-1.913 -6.931,-0c-1.912,1.913 -1.912,5.018 0,6.931l6.798,6.798c1.913,1.913 5.019,1.913 6.931,0c1.913,-1.912 1.913,-5.018 0,-6.931l-6.798,-6.798Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M4.901,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,-0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M18.929,11.142c-1.912,-1.912 -5.018,-1.912 -6.931,0c-1.912,1.913 -1.912,5.019 0,6.931l6.799,6.799c1.912,1.912 5.018,1.912 6.931,-0c1.912,-1.913 1.912,-5.019 -0,-6.931l-6.799,-6.799Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.108,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c-0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c-0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'dark'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_dark"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.901,2.196 -4.901,4.901c0,2.705 2.197,4.901 4.901,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.662,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.989,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.732,61.103c1.91,-1.91 1.91,-5.011 0,-6.921l-0.009,-0.01c-1.91,-1.91 -5.012,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.909,1.91 5.011,1.91 6.92,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.672,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.52,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l-0,-0.01c-0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.901,2.196 -4.901,4.901c0,2.704 2.197,4.9 4.901,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.73,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 -0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.098,34.623c-2.699,0 -4.891,2.192 -4.891,4.892l-0,0.019c-0,2.699 2.192,4.891 4.891,4.891c2.7,0 4.892,-2.192 4.892,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.892,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'darkest'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_darkest"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><path d="M39.315,23.791c8.684,-0 15.734,7.05 15.734,15.733c0,8.684 -7.05,15.734 -15.734,15.734c-8.683,0 -15.733,-7.05 -15.733,-15.734c-0,-8.683 7.05,-15.733 15.733,-15.733Zm0,4.737c6.069,0 10.997,4.927 10.997,10.996c-0,6.069 -4.928,10.996 -10.997,10.996c-6.068,0 -10.996,-4.927 -10.996,-10.996c0,-6.069 4.928,-10.996 10.996,-10.996Z" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.216,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.9,2.196 -4.9,4.901c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.666,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.99,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.737,61.103c1.909,-1.91 1.909,-5.011 -0,-6.921l-0.01,-0.01c-1.91,-1.91 -5.011,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.91,1.91 5.011,1.91 6.921,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.676,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.524,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l0,-0.01c0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.216,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901c-0,2.704 2.196,4.9 4.9,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.734,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.103,34.623c-2.7,0 -4.892,2.192 -4.892,4.892l-0,0.019c-0,2.699 2.192,4.891 4.892,4.891c2.699,0 4.891,-2.192 4.891,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.891,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+</a>
+
+<script>
+(function() {
+    const LOCAL_STORAGE_KEY = 'piccoloThemeMode'
+
+    var initialMode = localStorage.getItem(LOCAL_STORAGE_KEY)
+
+    if (initialMode) {
+        // Make sure the value in local storage is valid
+        if (['light', 'dark', 'darkest'].indexOf(initialMode) == -1) {
+            initialMode = 'light'
+            localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+        }
+    } else {
+        // Check if the client prefers dark mode
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            initialMode = 'dark'
+        } else {
+            initialMode = 'light'
+        }
+        localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+    }
+
+    document.documentElement.dataset.mode = initialMode
+
+    PetiteVue.createApp({
+        'mode': initialMode,
+        handleClick() {
+            let currentMode = this.mode
+
+            if (currentMode == 'light') {
+                this.mode = 'dark'
+            } else if (currentMode == 'dark') {
+                this.mode = 'darkest'
+            } else if (currentMode == 'darkest') {
+                this.mode = 'light'
+            }
+
+            document.documentElement.dataset.mode = this.mode
+            localStorage.setItem(LOCAL_STORAGE_KEY, this.mode)
+
+            console.log(this.mode)
+        }
+    }).mount('#mode_toggle')
+})()
+</script>
+            <p class="mobile_search_link">
+                <a href="search.html" title="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 64" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path d="M14.873 40.009c-2.315-3.943-3.642-8.532-3.642-13.429C11.231 11.91 23.141 0 37.811 0s26.58 11.91 26.58 26.58-11.91 26.58-26.58 26.58a26.44 26.44 0 0 1-14.277-4.161L9.739 62.794a3.12 3.12 0 0 1-4.413 0L.913 58.382c-1.217-1.218-1.217-3.196 0-4.413l13.96-13.96zM37.811 8.054c10.225 0 18.526 8.301 18.526 18.526s-8.301 18.526-18.526 18.526-18.526-8.301-18.526-18.526S27.586 8.054 37.811 8.054z" fill="#fff" />
+                    </svg>
+                </a>
+            </p>
+        
+
+        <div class="searchbox_wrapper">
+            
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="abstract_classifier.html">Abstract Classifier Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="category_processor.html">Category Processor Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faculty_set_postprocessor.html">Faculty Set Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config.html">Global Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chain_builder.html">Chain Builder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ai_prompts.html">ai_prompts package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection.html">data_collection package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dataclass_models.html">dataclass_models package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DB.html">DB package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enums.html">enums package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="factories.html">factories package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="orchestrators.html">orchestrators package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="other.html">other package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="runners.html">runners package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="strategies.html">strategies package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="utils.html">utils package</a></li>
+</ul>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="academic-metrics-core-package">
+<h1>academic_metrics.core package<a class="headerlink" href="#academic-metrics-core-package" title="Link to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
+</section>
+<section id="module-academic_metrics.core.category_processor">
+<span id="academic-metrics-core-category-processor-module"></span><h2>academic_metrics.core.category_processor module<a class="headerlink" href="#module-academic_metrics.core.category_processor" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">academic_metrics.core.category_processor.</span></span><span class="sig-name descname"><span class="pre">CategoryProcessor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">utils</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataclass_factory</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">warning_manager</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">taxonomy_util</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_to_console</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Processes and organizes academic publication data by categories.</p>
+<p>This class handles the processing of classified publication data, organizing it into
+categories and generating various statistics. It manages faculty affiliations,
+article details, and category relationships.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.utils">
+<span class="sig-name descname"><span class="pre">utils</span></span><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.utils" title="Link to this definition">¶</a></dt>
+<dd><p>Utility functions for data processing.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="academic_metrics.utils.html#academic_metrics.utils.utilities.Utilities" title="academic_metrics.utils.utilities.Utilities">Utilities</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.warning_manager">
+<span class="sig-name descname"><span class="pre">warning_manager</span></span><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.warning_manager" title="Link to this definition">¶</a></dt>
+<dd><p>System for handling and logging warnings.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="academic_metrics.utils.html#academic_metrics.utils.warning_manager.WarningManager" title="academic_metrics.utils.warning_manager.WarningManager">WarningManager</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.dataclass_factory">
+<span class="sig-name descname"><span class="pre">dataclass_factory</span></span><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.dataclass_factory" title="Link to this definition">¶</a></dt>
+<dd><p>Factory for creating data model instances.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="academic_metrics.factories.html#academic_metrics.factories.dataclass_factory.DataClassFactory" title="academic_metrics.factories.dataclass_factory.DataClassFactory">DataClassFactory</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.taxonomy_util">
+<span class="sig-name descname"><span class="pre">taxonomy_util</span></span><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.taxonomy_util" title="Link to this definition">¶</a></dt>
+<dd><p>Utility for managing publication taxonomy.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="academic_metrics.utils.html#academic_metrics.utils.taxonomy_util.Taxonomy" title="academic_metrics.utils.taxonomy_util.Taxonomy">Taxonomy</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.category_data">
+<span class="sig-name descname"><span class="pre">category_data</span></span><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.category_data" title="Link to this definition">¶</a></dt>
+<dd><p>Mapping of categories to their information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dict[str, <a class="reference internal" href="academic_metrics.dataclass_models.html#academic_metrics.dataclass_models.concrete_dataclasses.CategoryInfo" title="academic_metrics.dataclass_models.concrete_dataclasses.CategoryInfo">CategoryInfo</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.faculty_stats">
+<span class="sig-name descname"><span class="pre">faculty_stats</span></span><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.faculty_stats" title="Link to this definition">¶</a></dt>
+<dd><p>Faculty statistics by category.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dict[str, <a class="reference internal" href="academic_metrics.dataclass_models.html#academic_metrics.dataclass_models.concrete_dataclasses.FacultyStats" title="academic_metrics.dataclass_models.concrete_dataclasses.FacultyStats">FacultyStats</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.global_faculty_stats">
+<span class="sig-name descname"><span class="pre">global_faculty_stats</span></span><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.global_faculty_stats" title="Link to this definition">¶</a></dt>
+<dd><p>Global faculty statistics.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dict[str, <a class="reference internal" href="academic_metrics.dataclass_models.html#academic_metrics.dataclass_models.concrete_dataclasses.GlobalFacultyStats" title="academic_metrics.dataclass_models.concrete_dataclasses.GlobalFacultyStats">GlobalFacultyStats</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.category_article_stats">
+<span class="sig-name descname"><span class="pre">category_article_stats</span></span><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.category_article_stats" title="Link to this definition">¶</a></dt>
+<dd><p>Article statistics by category.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dict[str, <a class="reference internal" href="academic_metrics.dataclass_models.html#academic_metrics.dataclass_models.concrete_dataclasses.CrossrefArticleStats" title="academic_metrics.dataclass_models.concrete_dataclasses.CrossrefArticleStats">CrossrefArticleStats</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.articles">
+<span class="sig-name descname"><span class="pre">articles</span></span><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.articles" title="Link to this definition">¶</a></dt>
+<dd><p>List of processed article details.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[<a class="reference internal" href="academic_metrics.dataclass_models.html#academic_metrics.dataclass_models.concrete_dataclasses.CrossrefArticleDetails" title="academic_metrics.dataclass_models.concrete_dataclasses.CrossrefArticleDetails">CrossrefArticleDetails</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.logger">
+<span class="sig-name descname"><span class="pre">logger</span></span><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.logger" title="Link to this definition">¶</a></dt>
+<dd><p>Logger instance for this class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>logging.Logger</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.log_file_path">
+<span class="sig-name descname"><span class="pre">log_file_path</span></span><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.log_file_path" title="Link to this definition">¶</a></dt>
+<dd><p>Path to the log file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">Public</span> <span class="pre">Methods</span></span></dt>
+<dd><p>process_data_list: Process a list of publication data items.
+get_category_data: Get processed category data.
+get_category_article_stats: Get article statistics by category.
+get_articles: Get list of processed articles.
+get_faculty_stats: Get faculty statistics by category.
+get_global_faculty_stats: Get global faculty statistics.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">Private</span> <span class="pre">Methods</span></span></dt>
+<dd><p>call_get_attributes: Extract attributes from raw data.
+update_category_stats: Update statistics for a category.
+update_faculty_stats: Update faculty statistics.
+update_global_faculty_stats: Update global faculty statistics.
+update_category_article_stats: Update article statistics by category.
+create_article_object: Create a new article object.
+clean_faculty_affiliations: Clean faculty affiliation data.
+clean_faculty_members: Clean faculty member data.
+initialize_categories: Initialize category data structures.
+_collect_all_affiliations: Collect all faculty affiliations.
+_generate_url: Generate URL from string.
+_generate_normal_id: Generate normalized ID from strings.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.process_data_list">
+<span class="sig-name descname"><span class="pre">process_data_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor.process_data_list"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.process_data_list" title="Link to this definition">¶</a></dt>
+<dd><p>Process a list of publication data items.</p>
+<p>Takes raw publication data and processes each item through several stages:
+1. Extracts base attributes
+2. Initializes category information
+3. Generates URL maps for categories
+4. Cleans faculty and affiliation data
+5. Updates various statistics (category, faculty, article)
+6. Creates article objects</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>data</strong> (<em>List</em><em>[</em><em>Dict</em><em>]</em>) – List of raw publication data dictionaries to process.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>ValueError</strong> – If required attributes are missing from data.</p></li>
+<li><p><strong>Exception</strong> – If category information cannot be initialized.</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.call_get_attributes">
+<span class="sig-name descname"><span class="pre">call_get_attributes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor.call_get_attributes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.call_get_attributes" title="Link to this definition">¶</a></dt>
+<dd><p>Extract and process attributes from raw publication data.</p>
+<p>Extracts various attributes including categories, authors, departments, titles,
+citations, abstracts, licenses, publication dates, journal info, URLs, DOIs,
+and themes from the raw data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>data</strong> (<em>Dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em>) – Raw publication data dictionary.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>Dictionary containing extracted and processed attributes:</dt><dd><ul class="simple">
+<li><p>categories: List of publication categories</p></li>
+<li><p>faculty_members: List of faculty authors</p></li>
+<li><p>faculty_affiliations: Dictionary mapping faculty to their departments</p></li>
+<li><p>title: Publication title</p></li>
+<li><p>tc_count: Citation count</p></li>
+<li><p>abstract: Publication abstract</p></li>
+<li><p>license_url: License URL</p></li>
+<li><p>date_published_print: Print publication date</p></li>
+<li><p>date_published_online: Online publication date</p></li>
+<li><p>journal: Journal name</p></li>
+<li><p>download_url: Download URL</p></li>
+<li><p>doi: Digital Object Identifier</p></li>
+<li><p>themes: List of publication themes</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dict[str, Any]</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>Exception</strong> – If no category is found in the data.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.update_category_stats">
+<span class="sig-name descname"><span class="pre">update_category_stats</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor.update_category_stats"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.update_category_stats" title="Link to this definition">¶</a></dt>
+<dd><p>Update statistics for each category based on processed article data.</p>
+<p>Updates category information including faculty members, departments, titles,
+citation counts, DOIs, and themes. Also calculates derived statistics like
+faculty count, department count, article count, and citation averages.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>**kwargs</strong> – Keyword arguments containing article data:
+- title (str): Article title
+- doi (str): Digital Object Identifier
+- tc_count (int): Citation count
+- faculty_members (List[str]): List of faculty authors
+- all_affiliations (Set[str]): Set of department affiliations
+- themes (List[str]): List of article themes
+- all_categories (List[str]): List of all categories
+url_maps (Dict[str, Dict[str, str]]): Category URL mappings</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>KeyError</strong> – If required kwargs are missing.</p></li>
+<li><p><strong>ValueError</strong> – If category information cannot be updated.</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.update_faculty_stats">
+<span class="sig-name descname"><span class="pre">update_faculty_stats</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor.update_faculty_stats"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.update_faculty_stats" title="Link to this definition">¶</a></dt>
+<dd><p>Update faculty statistics for each category.</p>
+<p>Updates faculty member information including department affiliations,
+publication titles, DOIs, citation counts, and article counts. Creates
+or updates faculty statistics entries for each category.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>**kwargs</strong> – Keyword arguments containing faculty and article data:
+- faculty_members (List[str]): List of faculty authors
+- faculty_affiliations (Dict[str, List[str]]): Faculty department mappings
+- title (str): Article title
+- doi (str): Digital Object Identifier
+- tc_count (int): Citation count
+- all_categories (List[str]): List of all categories
+- url_maps (Dict[str, Dict[str, str]]): Category URL mappings</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>KeyError</strong> – If required kwargs are missing.</p></li>
+<li><p><strong>ValueError</strong> – If faculty statistics cannot be updated.</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.update_global_faculty_stats">
+<span class="sig-name descname"><span class="pre">update_global_faculty_stats</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor.update_global_faculty_stats"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.update_global_faculty_stats" title="Link to this definition">¶</a></dt>
+<dd><p>Update global statistics for each faculty member.</p>
+<p>Creates or updates global faculty statistics including total citations,
+article counts, department affiliations, DOIs, titles, categories,
+and category URLs across all publication categories.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>**kwargs</strong> – Keyword arguments containing faculty and article data:
+- faculty_members (List[str]): List of faculty authors
+- faculty_affiliations (Dict[str, List[str]]): Faculty department mappings
+- title (str): Article title
+- doi (str): Digital Object Identifier
+- tc_count (int): Citation count
+- all_categories (List[str]): List of all categories
+- top_level_categories (List[str]): Top-level categories
+- mid_level_categories (List[str]): Mid-level categories
+- low_level_categories (List[str]): Low-level categories
+- url_maps (Dict[str, Dict[str, str]]): Category URL mappings
+- themes (List[str]): Article themes
+- journal (str): Journal name</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>KeyError</strong> – If required kwargs are missing.</p></li>
+<li><p><strong>ValueError</strong> – If global faculty statistics cannot be updated.</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.update_category_article_stats">
+<span class="sig-name descname"><span class="pre">update_category_article_stats</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor.update_category_article_stats"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.update_category_article_stats" title="Link to this definition">¶</a></dt>
+<dd><p>Update article statistics for each category.</p>
+<p>Creates or updates article statistics including titles, citations, faculty members,  affiliations, abstracts, licenses, publication dates, and URLs. Organizes articles by their category levels (top, mid, low).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>**kwargs</strong> – Keyword arguments containing article data:
+- title (str): Article title
+- doi (str): Digital Object Identifier
+- tc_count (int): Citation count
+- faculty_members (List[str]): List of faculty authors
+- faculty_affiliations (Dict[str, List[str]]): Faculty department mappings
+- abstract (str): Article abstract
+- license_url (str): License URL
+- date_published_print (str): Print publication date
+- date_published_online (str): Online publication date
+- journal (str): Journal name
+- download_url (str): Download URL
+- themes (List[str]): Article themes
+- all_categories (List[str]): List of all categories
+- low_level_categories (List[str]): Low-level categories
+- mid_level_categories (List[str]): Mid-level categories
+- url_maps (Dict[str, Dict[str, str]]): Category URL mappings</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>KeyError</strong> – If required kwargs are missing.</p></li>
+<li><p><strong>ValueError</strong> – If article statistics cannot be updated.</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.create_article_object">
+<span class="sig-name descname"><span class="pre">create_article_object</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor.create_article_object"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.create_article_object" title="Link to this definition">¶</a></dt>
+<dd><p>Create a new article object with complete metadata.</p>
+<p>Creates a CrossrefArticleDetails object containing all article information,
+including category relationships, URLs, and metadata. Handles URL generation
+for different category levels and maintains category hierarchies.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>**kwargs</strong> – Keyword arguments containing article data:
+- doi (str): Digital Object Identifier
+- title (str): Article title
+- tc_count (int): Citation count
+- faculty_members (List[str]): Faculty authors
+- faculty_affiliations (Dict[str, List[str]]): Faculty affiliations
+- abstract (str): Article abstract
+- license_url (str): License URL
+- date_published_print (str): Print publication date
+- date_published_online (str): Online publication date
+- journal (str): Journal name
+- download_url (str): Download URL
+- themes (List[str]): Article themes
+- all_categories (List[str]): All categories
+- top_level_categories (List[str]): Top-level categories
+- mid_level_categories (List[str]): Mid-level categories
+- low_level_categories (List[str]): Low-level categories</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>KeyError</strong> – If required kwargs are missing.</p></li>
+<li><p><strong>ValueError</strong> – If article object cannot be created.</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.clean_faculty_affiliations">
+<span class="sig-name descname"><span class="pre">clean_faculty_affiliations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faculty_affiliations</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor.clean_faculty_affiliations"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.clean_faculty_affiliations" title="Link to this definition">¶</a></dt>
+<dd><p>Clean and format faculty affiliation data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>faculty_affiliations</strong> (<em>Dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em>) – Raw faculty affiliation mappings.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Cleaned faculty affiliation mappings.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dict[str, Any]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.clean_faculty_members">
+<span class="sig-name descname"><span class="pre">clean_faculty_members</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faculty_members</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor.clean_faculty_members"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.clean_faculty_members" title="Link to this definition">¶</a></dt>
+<dd><p>Clean and filter faculty member names.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>faculty_members</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – Raw list of faculty member names.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Cleaned list of faculty member names, excluding empty strings.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.initialize_categories">
+<span class="sig-name descname"><span class="pre">initialize_categories</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">categories</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor.initialize_categories"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.initialize_categories" title="Link to this definition">¶</a></dt>
+<dd><p>Initialize category data structures for all category levels.</p>
+<p>Creates CategoryInfo instances for each category and organizes them by level.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>categories</strong> (<em>Dict</em><em>[</em><em>str</em><em>, </em><em>List</em><em>[</em><em>str</em><em>]</em><em>]</em>) – Categories organized by level (top, mid, low).</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>Organized category data including:</dt><dd><ul class="simple">
+<li><p>top_level_categories: List of top-level categories</p></li>
+<li><p>mid_level_categories: List of mid-level categories</p></li>
+<li><p>low_level_categories: List of low-level categories</p></li>
+<li><p>all_categories: List of all categories</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dict[str, List[str]]</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If category initialization fails.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.get_category_data">
+<span class="sig-name descname"><span class="pre">get_category_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor.get_category_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.get_category_data" title="Link to this definition">¶</a></dt>
+<dd><p>Get the processed category data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Mapping of categories to their information.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict[str, <a class="reference internal" href="academic_metrics.dataclass_models.html#academic_metrics.dataclass_models.concrete_dataclasses.CategoryInfo" title="academic_metrics.dataclass_models.concrete_dataclasses.CategoryInfo">CategoryInfo</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.get_category_article_stats">
+<span class="sig-name descname"><span class="pre">get_category_article_stats</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor.get_category_article_stats"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.get_category_article_stats" title="Link to this definition">¶</a></dt>
+<dd><p>Get article statistics organized by category.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Mapping of categories to their article statistics.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict[str, <a class="reference internal" href="academic_metrics.dataclass_models.html#academic_metrics.dataclass_models.concrete_dataclasses.CrossrefArticleStats" title="academic_metrics.dataclass_models.concrete_dataclasses.CrossrefArticleStats">CrossrefArticleStats</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.get_articles">
+<span class="sig-name descname"><span class="pre">get_articles</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor.get_articles"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.get_articles" title="Link to this definition">¶</a></dt>
+<dd><p>Get the list of processed articles.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List of all processed article details.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>List[<a class="reference internal" href="academic_metrics.dataclass_models.html#academic_metrics.dataclass_models.concrete_dataclasses.CrossrefArticleDetails" title="academic_metrics.dataclass_models.concrete_dataclasses.CrossrefArticleDetails">CrossrefArticleDetails</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.get_faculty_stats">
+<span class="sig-name descname"><span class="pre">get_faculty_stats</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor.get_faculty_stats"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.get_faculty_stats" title="Link to this definition">¶</a></dt>
+<dd><p>Get faculty statistics organized by category.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Mapping of categories to their faculty statistics.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict[str, <a class="reference internal" href="academic_metrics.dataclass_models.html#academic_metrics.dataclass_models.concrete_dataclasses.FacultyStats" title="academic_metrics.dataclass_models.concrete_dataclasses.FacultyStats">FacultyStats</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor.get_global_faculty_stats">
+<span class="sig-name descname"><span class="pre">get_global_faculty_stats</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor.get_global_faculty_stats"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor.get_global_faculty_stats" title="Link to this definition">¶</a></dt>
+<dd><p>Get global statistics for all faculty members.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Mapping of faculty members to their global statistics.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict[str, <a class="reference internal" href="academic_metrics.dataclass_models.html#academic_metrics.dataclass_models.concrete_dataclasses.GlobalFacultyStats" title="academic_metrics.dataclass_models.concrete_dataclasses.GlobalFacultyStats">GlobalFacultyStats</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor._collect_all_affiliations">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">_collect_all_affiliations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faculty_affiliations</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logger</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor._collect_all_affiliations"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor._collect_all_affiliations" title="Link to this definition">¶</a></dt>
+<dd><p>Collect all unique department affiliations.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>faculty_affiliations</strong> (<em>Dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em>) – Faculty to department mappings.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Set of unique department affiliations.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Set[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor._generate_url">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">_generate_url</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logger</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor._generate_url"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor._generate_url" title="Link to this definition">¶</a></dt>
+<dd><p>Generate a URL-safe string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>string</strong> (<em>str</em>) – Input string to encode.</p></li>
+<li><p><strong>logger</strong> (<em>logging.Logger</em><em> | </em><em>None</em>) – Logger instance to use for logging.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>URL-encoded string.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.category_processor.CategoryProcessor._generate_normal_id">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">_generate_normal_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">strings</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logger</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/category_processor.html#CategoryProcessor._generate_normal_id"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.category_processor.CategoryProcessor._generate_normal_id" title="Link to this definition">¶</a></dt>
+<dd><p>Generate a normalized ID from a list of strings.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>strings</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – List of strings to combine into an ID.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Normalized ID string (lowercase, hyphen-separated).</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-academic_metrics.core.faculty_set_postprocessor">
+<span id="academic-metrics-core-faculty-set-postprocessor-module"></span><h2>academic_metrics.core.faculty_set_postprocessor module<a class="headerlink" href="#module-academic_metrics.core.faculty_set_postprocessor" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">academic_metrics.core.faculty_set_postprocessor.</span></span><span class="sig-name descname"><span class="pre">FacultyPostprocessor</span></span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#FacultyPostprocessor"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A class responsible for processing and standardizing faculty data across different categories.</p>
+<p>This class provides methods to extract faculty sets from category data, remove near-duplicate names,
+and standardize faculty names to ensure consistency across categories. It utilizes MinHash for estimating
+the similarity between names to effectively identify and remove duplicates. Additionally, it maintains
+a dictionary of name variations to track the most frequent spelling variations of each name.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.temp_dict">
+<span class="sig-name descname"><span class="pre">temp_dict</span></span><a class="headerlink" href="#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.temp_dict" title="Link to this definition">¶</a></dt>
+<dd><p>Temporary storage for faculty names and their occurrences.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.faculty_occurence_dict">
+<span class="sig-name descname"><span class="pre">faculty_occurence_dict</span></span><a class="headerlink" href="#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.faculty_occurence_dict" title="Link to this definition">¶</a></dt>
+<dd><p>Tracks occurrences of faculty names across categories.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.processed_sets_list">
+<span class="sig-name descname"><span class="pre">processed_sets_list</span></span><a class="headerlink" href="#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.processed_sets_list" title="Link to this definition">¶</a></dt>
+<dd><p>Stores processed faculty sets after deduplication and standardization.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.minhash_util">
+<span class="sig-name descname"><span class="pre">minhash_util</span></span><a class="headerlink" href="#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.minhash_util" title="Link to this definition">¶</a></dt>
+<dd><p>Utility for generating MinHash signatures and comparing them.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#academic_metrics.core.faculty_set_postprocessor.MinHashUtility" title="academic_metrics.core.faculty_set_postprocessor.MinHashUtility">MinHashUtility</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.name_variations">
+<span class="sig-name descname"><span class="pre">name_variations</span></span><a class="headerlink" href="#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.name_variations" title="Link to this definition">¶</a></dt>
+<dd><p>Stores NameVariation objects for each normalized faculty name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.get_temp_dict">
+<span class="sig-name descname"><span class="pre">get_temp_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#FacultyPostprocessor.get_temp_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.get_temp_dict" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the temporary dictionary containing faculty names and their occurrences.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.extract_faculty_sets">
+<span class="sig-name descname"><span class="pre">extract_faculty_sets</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">category_dict</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#FacultyPostprocessor.extract_faculty_sets"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.extract_faculty_sets" title="Link to this definition">¶</a></dt>
+<dd><p>Extracts faculty sets from each CategoryInfo object in the provided dictionary.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.remove_near_duplicates">
+<span class="sig-name descname"><span class="pre">remove_near_duplicates</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">category_dict</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#FacultyPostprocessor.remove_near_duplicates"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.remove_near_duplicates" title="Link to this definition">¶</a></dt>
+<dd><p>Processes each CategoryInfo object to remove near-duplicate faculty names and standardize them.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.standardized_data_update">
+<span class="sig-name descname"><span class="pre">standardized_data_update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">category_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">standardized_sets</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#FacultyPostprocessor.standardized_data_update"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.standardized_data_update" title="Link to this definition">¶</a></dt>
+<dd><p>Updates CategoryInfo objects with standardized faculty sets.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.standardize_faculty">
+<span class="sig-name descname"><span class="pre">standardize_faculty</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">category_dict</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#FacultyPostprocessor.standardize_faculty"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.standardize_faculty" title="Link to this definition">¶</a></dt>
+<dd><p>Standardizes faculty names across all categories based on the most frequent spelling variations.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.remove_update_faculty">
+<span class="sig-name descname"><span class="pre">remove_update_faculty</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">category_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">faculty_sets_list</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#FacultyPostprocessor.remove_update_faculty"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.remove_update_faculty" title="Link to this definition">¶</a></dt>
+<dd><p>Removes near-duplicate faculty names within each faculty set.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.duplicate_postprocessor">
+<span class="sig-name descname"><span class="pre">duplicate_postprocessor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faculty_set</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">faculty_sets</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">similarity_threshold</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#FacultyPostprocessor.duplicate_postprocessor"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.duplicate_postprocessor" title="Link to this definition">¶</a></dt>
+<dd><p>Processes a set of faculty names to remove near-duplicates.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.process_name_pair">
+<span class="sig-name descname"><span class="pre">process_name_pair</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">similarity_threshold</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">most_frequent_variation</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name_signatures</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">to_remove</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n2</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#FacultyPostprocessor.process_name_pair"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.process_name_pair" title="Link to this definition">¶</a></dt>
+<dd><p>Compares two names and determines which to keep.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.name_to_remove">
+<span class="sig-name descname"><span class="pre">name_to_remove</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">most_frequent_variation</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n1_normalized</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n2_normalized</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#FacultyPostprocessor.name_to_remove"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.name_to_remove" title="Link to this definition">¶</a></dt>
+<dd><p>Determines which of two names to remove based on their variations.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.get_duplicate_utilities">
+<span class="sig-name descname"><span class="pre">get_duplicate_utilities</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faculty_set</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">faculty_sets</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#FacultyPostprocessor.get_duplicate_utilities"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.get_duplicate_utilities" title="Link to this definition">¶</a></dt>
+<dd><p>Generates utilities needed for duplicate removal.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.generate_signatures">
+<span class="sig-name descname"><span class="pre">generate_signatures</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faculty_set</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#FacultyPostprocessor.generate_signatures"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.generate_signatures" title="Link to this definition">¶</a></dt>
+<dd><p>Generates MinHash signatures for each name in a faculty set.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.get_most_frequent_name_variation">
+<span class="sig-name descname"><span class="pre">get_most_frequent_name_variation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faculty_sets_list</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#FacultyPostprocessor.get_most_frequent_name_variation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.get_most_frequent_name_variation" title="Link to this definition">¶</a></dt>
+<dd><p>Maps each normalized name to its most frequent spelling variation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.standardize_names_across_sets">
+<span class="sig-name descname"><span class="pre">standardize_names_across_sets</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faculty_sets_list</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#FacultyPostprocessor.standardize_names_across_sets"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.standardize_names_across_sets" title="Link to this definition">¶</a></dt>
+<dd><p>Standardizes names in faculty sets based on the most frequent name variation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id0">
+<span class="sig-name descname"><span class="pre">get_temp_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#FacultyPostprocessor.get_temp_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id0" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the temporary dictionary containing faculty names and their occurrences.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The temporary dictionary containing faculty names and their occurrences.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id1">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">extract_faculty_sets</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">category_dict</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#FacultyPostprocessor.extract_faculty_sets"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id1" title="Link to this definition">¶</a></dt>
+<dd><p>Extracts the faculty attribute from each CategoryInfo object in the provided dictionary.</p>
+<p>This method iterates over a dictionary of CategoryInfo objects and collects the ‘faculty’ set from each object.
+These faculty sets are typically used for further processing, such as deduplication or analysis.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>category_dict</strong> (<em>dict</em>) – A dictionary where the keys are category identifiers and the values are CategoryInfo objects.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list containing the faculty set from each CategoryInfo object.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[set]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id2">
+<span class="sig-name descname"><span class="pre">remove_near_duplicates</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">category_dict</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#FacultyPostprocessor.remove_near_duplicates"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id2" title="Link to this definition">¶</a></dt>
+<dd><p>Processes each CategoryInfo object to remove near-duplicate faculty names and standardize them across categories.</p>
+<p>This method orchestrates several steps to enhance the integrity and consistency of faculty data:
+1. Extract faculty sets.
+2. Remove near-duplicate names within each faculty set.
+3. Standardize faculty names across all categories.
+4. Update the category data with cleaned and standardized faculty sets.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>category_dict</strong> (<em>dict</em>) – A dictionary where the keys are category identifiers and the values are CategoryInfo objects.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The updated dictionary with cleaned and standardized faculty names across all CategoryInfo objects.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id3">
+<span class="sig-name descname"><span class="pre">standardized_data_update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">category_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">standardized_sets</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#FacultyPostprocessor.standardized_data_update"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id3" title="Link to this definition">¶</a></dt>
+<dd><p>Updates the CategoryInfo objects in the dictionary with standardized faculty sets.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>category_dict</strong> (<em>dict</em>) – A dictionary where the keys are category identifiers and the values are CategoryInfo objects.</p></li>
+<li><p><strong>standardized_sets</strong> (<em>list</em><em>[</em><em>set</em><em>]</em>) – A list of sets containing standardized faculty names.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+<p>This method iterates over the category dictionary and updates each CategoryInfo object with the corresponding standardized faculty set.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id4">
+<span class="sig-name descname"><span class="pre">standardize_faculty</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">category_dict</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#FacultyPostprocessor.standardize_faculty"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id4" title="Link to this definition">¶</a></dt>
+<dd><p>Standardizes faculty names across all categories based on the most frequent spelling variations.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>category_dict</strong> (<em>dict</em>) – A dictionary where the keys are category identifiers and the values are CategoryInfo objects.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of sets containing the standardized faculty names across all categories.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[set]</p>
+</dd>
+</dl>
+<p>This method extracts updated faculty sets after duplicate removal and standardizes names across all sets based on the most frequent global variation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id5">
+<span class="sig-name descname"><span class="pre">remove_update_faculty</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">category_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">faculty_sets_list</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#FacultyPostprocessor.remove_update_faculty"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id5" title="Link to this definition">¶</a></dt>
+<dd><p>Removes near-duplicate faculty names within each faculty set based on MinHash similarity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>category_dict</strong> (<em>dict</em>) – A dictionary where the keys are category identifiers and the values are CategoryInfo objects.</p></li>
+<li><p><strong>faculty_sets_list</strong> (<em>list</em><em>[</em><em>set</em><em>]</em>) – A list containing the faculty set from each CategoryInfo object.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+<p>This method iterates over each category and processes the faculty set to remove near-duplicates, updating the faculty attribute of each CategoryInfo object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id6">
+<span class="sig-name descname"><span class="pre">duplicate_postprocessor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faculty_set</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">faculty_sets</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">similarity_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#FacultyPostprocessor.duplicate_postprocessor"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id6" title="Link to this definition">¶</a></dt>
+<dd><p>Processes a set of faculty names to remove near-duplicate names based on MinHash similarity and most frequent variations.
+This method first generates the necessary utilities for comparison and removal.
+It then compares each name against all others in the set for near duplicates.
+If a name is deemed to be a duplicate based on MinHash similarity and the most frequent variation, it is added to the set of names to be removed.
+Finally, the refined faculty set is returned, excluding any names deemed to be duplicates.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>faculty_set</strong> (<em>Set</em><em>[</em><em>str</em><em>]</em>) – A set of faculty names to be processed.</p></li>
+<li><p><strong>faculty_sets</strong> (<em>List</em><em>[</em><em>Set</em><em>[</em><em>str</em><em>]</em><em>]</em>) – A list of sets of faculty names, where each set contains the faculty names from a different category.</p></li>
+<li><p><strong>similarity_threshold</strong> (<em>float</em>) – The threshold for considering names as duplicates based on MinHash similarity.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The refined faculty set, excluding any names deemed to be duplicates.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>set[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id7">
+<span class="sig-name descname"><span class="pre">process_name_pair</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">similarity_threshold</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">most_frequent_variation</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name_signatures</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">to_remove</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n2</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#FacultyPostprocessor.process_name_pair"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id7" title="Link to this definition">¶</a></dt>
+<dd><p>Compares two names and determines which one to keep based on MinHash similarity and most frequent variation.
+This method first compares the MinHash signatures of the two names to determine their similarity.
+If the similarity exceeds the specified threshold, it then determines which name to remove based on the most frequent variation.
+The name not chosen as the most frequent variation is added to the set of names to be removed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>n1</strong> (<em>str</em>) – Names to compare.</p></li>
+<li><p><strong>n2</strong> (<em>str</em>) – Names to compare.</p></li>
+<li><p><strong>name_signatures</strong> (<em>Dict</em><em>[</em><em>str</em><em>, </em><em>List</em><em>[</em><em>int</em><em>]</em><em>]</em>) – Dictionary of MinHash signatures.</p></li>
+<li><p><strong>most_frequent_variation</strong> (<em>Dict</em><em>[</em><em>str</em><em>, </em><em>str</em><em>]</em>) – Dictionary mapping normalized names to their most frequent variations.</p></li>
+<li><p><strong>to_remove</strong> (<em>Set</em><em>[</em><em>str</em><em>]</em>) – Set of names to be removed.</p></li>
+<li><p><strong>similarity_threshold</strong> (<em>float</em>) – Threshold for considering names as duplicates.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id8">
+<span class="sig-name descname"><span class="pre">name_to_remove</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">most_frequent_variation</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n1_normalized</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n2_normalized</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#FacultyPostprocessor.name_to_remove"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id8" title="Link to this definition">¶</a></dt>
+<dd><p>Determines which of the two names to remove based on their normalized forms and the most frequent variations.
+This method checks if the normalized form of each name matches the most frequent variation.
+If one name matches its most frequent variation and the other does not, the non-matching name is chosen for removal.
+If neither or both names match their most frequent variations, the lexicographically greater name is chosen for removal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>most_frequent_variation</strong> (<em>Dict</em><em>[</em><em>str</em><em>, </em><em>str</em><em>]</em>) – Dictionary mapping normalized names to their most frequent variations.</p></li>
+<li><p><strong>n1</strong> (<em>str</em>) – Original names to compare.</p></li>
+<li><p><strong>n2</strong> (<em>str</em>) – Original names to compare.</p></li>
+<li><p><strong>n1_normalized</strong> (<em>str</em>) – Normalized forms of the names.</p></li>
+<li><p><strong>n2_normalized</strong> (<em>str</em>) – Normalized forms of the names.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The name to be removed.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id9">
+<span class="sig-name descname"><span class="pre">get_duplicate_utilities</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faculty_set</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">faculty_sets</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#FacultyPostprocessor.get_duplicate_utilities"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id9" title="Link to this definition">¶</a></dt>
+<dd><p>Generates utilities needed for duplicate removal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>faculty_set</strong> (<em>set</em><em>[</em><em>str</em><em>]</em>) – A set of faculty names for which to generate MinHash signatures.</p></li>
+<li><p><strong>faculty_sets</strong> (<em>list</em><em>[</em><em>set</em><em>[</em><em>str</em><em>]</em><em>]</em>) – A list of sets of faculty names, where each set contains the faculty names from a different category.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A tuple containing the most frequent name variation dictionary, the name signatures dictionary, and the set of names to be removed.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[Dict[str, str], Dict[str, List[int]], Set[str]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id10">
+<span class="sig-name descname"><span class="pre">generate_signatures</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faculty_set</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#FacultyPostprocessor.generate_signatures"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id10" title="Link to this definition">¶</a></dt>
+<dd><p>Generates MinHash signatures for each name in the given faculty set.</p>
+<p>This method tokenizes each name into n-grams, computes a MinHash signature for these n-grams, and stores the result.
+A MinHash signature is a compact representation of the set of n-grams and is used to estimate the similarity between sets of names.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>faculty_set</strong> (<em>set</em><em>[</em><em>str</em><em>]</em>) – A set of faculty names for which to generate MinHash signatures.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A dictionary mapping each name in the faculty set to its corresponding MinHash signature.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict[str, list[int]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id11">
+<span class="sig-name descname"><span class="pre">get_most_frequent_name_variation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faculty_sets_list</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#FacultyPostprocessor.get_most_frequent_name_variation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id11" title="Link to this definition">¶</a></dt>
+<dd><p>Creates a dictionary that maps each unique normalized name to the most commonly occurring spelling variation of that name across all provided faculty sets. A ‘normalized name’ is derived by converting the original name to lowercase and removing all spaces, which helps in identifying different spellings of the same name as equivalent. The ‘most frequent variation’ refers to the spelling of the name that appears most often in the data, maintaining the original case and spaces.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>faculty_sets_list</strong> (<em>list</em><em> of </em><em>sets</em>) – A list where each set contains faculty names from a specific category. Each set is a collection of names that may include various spelling variations.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A dictionary with normalized names as keys and their most frequent original spelling variations as values.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>most_frequent_variation (Dict[str, str])</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id12">
+<span class="sig-name descname"><span class="pre">standardize_names_across_sets</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faculty_sets_list</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#FacultyPostprocessor.standardize_names_across_sets"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id12" title="Link to this definition">¶</a></dt>
+<dd><p>Standardizes names across all sets by mapping each name to its most frequent variation across all sets.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>faculty_sets_list</strong> (<em>List</em><em>[</em><em>Set</em><em>[</em><em>str</em><em>]</em><em>]</em>) – A list of sets of faculty names, where each set contains the faculty names from a different category.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of sets containing the standardized faculty names across all categories.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[Set[str]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="academic_metrics.core.faculty_set_postprocessor.MinHashUtility">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">academic_metrics.core.faculty_set_postprocessor.</span></span><span class="sig-name descname"><span class="pre">MinHashUtility</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_hashes</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#MinHashUtility"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.faculty_set_postprocessor.MinHashUtility" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A utility class for performing MinHash calculations to estimate the similarity between sets of data.</p>
+<p>This class provides methods for generating hash functions, tokenizing strings into n-grams, computing MinHash signatures,
+and comparing these signatures to estimate the similarity between sets. The MinHash technique is particularly useful
+in applications where exact matches are not necessary, but approximate matches are sufficient, such as duplicate
+detection, document similarity, and clustering.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.core.faculty_set_postprocessor.MinHashUtility.num_hashes">
+<span class="sig-name descname"><span class="pre">num_hashes</span></span><a class="headerlink" href="#academic_metrics.core.faculty_set_postprocessor.MinHashUtility.num_hashes" title="Link to this definition">¶</a></dt>
+<dd><p>The number of hash functions to use in MinHash calculations, affecting the accuracy and
+performance of the similarity estimation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.core.faculty_set_postprocessor.MinHashUtility.large_prime">
+<span class="sig-name descname"><span class="pre">large_prime</span></span><a class="headerlink" href="#academic_metrics.core.faculty_set_postprocessor.MinHashUtility.large_prime" title="Link to this definition">¶</a></dt>
+<dd><p>A large prime number used as the modulus in hash functions to minimize collisions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.core.faculty_set_postprocessor.MinHashUtility.hash_fns">
+<span class="sig-name descname"><span class="pre">hash_fns</span></span><a class="headerlink" href="#academic_metrics.core.faculty_set_postprocessor.MinHashUtility.hash_fns" title="Link to this definition">¶</a></dt>
+<dd><p>A list of pre-generated hash functions used for computing MinHash signatures.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[callable]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.faculty_set_postprocessor.MinHashUtility.tokenize">
+<span class="sig-name descname"><span class="pre">tokenize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#MinHashUtility.tokenize"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.faculty_set_postprocessor.MinHashUtility.tokenize" title="Link to this definition">¶</a></dt>
+<dd><p>Tokenizes a string into n-grams.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.faculty_set_postprocessor.MinHashUtility.generate_coefficients">
+<span class="sig-name descname"><span class="pre">generate_coefficients</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#academic_metrics.core.faculty_set_postprocessor.MinHashUtility.generate_coefficients" title="Link to this definition">¶</a></dt>
+<dd><p>Generates random coefficients for hash functions.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.faculty_set_postprocessor.MinHashUtility.generate_hash_functions">
+<span class="sig-name descname"><span class="pre">generate_hash_functions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#MinHashUtility.generate_hash_functions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.faculty_set_postprocessor.MinHashUtility.generate_hash_functions" title="Link to this definition">¶</a></dt>
+<dd><p>Creates a list of hash functions based on generated coefficients.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.faculty_set_postprocessor.MinHashUtility.compute_signature">
+<span class="sig-name descname"><span class="pre">compute_signature</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tokens</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#MinHashUtility.compute_signature"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.faculty_set_postprocessor.MinHashUtility.compute_signature" title="Link to this definition">¶</a></dt>
+<dd><p>Computes the MinHash signature for a set of tokens.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.faculty_set_postprocessor.MinHashUtility.compare_signatures">
+<span class="sig-name descname"><span class="pre">compare_signatures</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signature1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">signature2</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#MinHashUtility.compare_signatures"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.faculty_set_postprocessor.MinHashUtility.compare_signatures" title="Link to this definition">¶</a></dt>
+<dd><p>Compares two MinHash signatures and returns their estimated similarity.</p>
+</dd></dl>
+
+<p>The class utilizes linear hash functions of the form h(x) = (a * x + b) % large_prime, where ‘a’ and ‘b’ are randomly
+generated coefficients. This approach helps in reducing the likelihood of hash collisions and ensures a uniform
+distribution of hash values.</p>
+<dl class="simple">
+<dt>Example usage:</dt><dd><p>minhash_util = MinHashUtility(num_hashes=200)
+tokens = minhash_util.tokenize(“example string”, n=3)
+signature = minhash_util.compute_signature(tokens)
+# Further operations such as comparing signatures can be performed.</p>
+</dd>
+</dl>
+<p>More on MinHash: <a class="reference external" href="https://en.wikipedia.org/wiki/MinHash">https://en.wikipedia.org/wiki/MinHash</a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="id13">
+<span class="sig-name descname"><span class="pre">tokenize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#MinHashUtility.tokenize"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id13" title="Link to this definition">¶</a></dt>
+<dd><p>Tokenize the given string into n-grams to facilitate the identification of similar strings.</p>
+<p>N-grams are contiguous sequences of ‘n’ characters extracted from a string. This method is useful in various
+applications such as text similarity, search, and indexing where the exact match is not necessary, but approximate
+matches are useful.</p>
+<p>More on n-grams: <a class="reference external" href="https://en.wikipedia.org/wiki/N-gram">https://en.wikipedia.org/wiki/N-gram</a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>string</strong> (<em>str</em>) – The string to be tokenized.</p></li>
+<li><p><strong>n</strong> (<em>int</em>) – The length of each n-gram. Default is 3.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A set containing unique n-grams derived from the input string.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>set</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If ‘n’ is greater than the length of the string or less than 1.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.faculty_set_postprocessor.MinHashUtility.generate_coeeficients">
+<span class="sig-name descname"><span class="pre">generate_coeeficients</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#MinHashUtility.generate_coeeficients"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.faculty_set_postprocessor.MinHashUtility.generate_coeeficients" title="Link to this definition">¶</a></dt>
+<dd><p>Generate a list of tuples, each containing a pair of coefficients (a, b) used for hash functions.</p>
+<p>Each tuple consists of:
+- a (int): A randomly chosen multiplier coefficient.
+- b (int): A randomly chosen additive coefficient.</p>
+<p>These coefficients are used in the linear hash functions for MinHash calculations.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A list of tuples, where each tuple contains two integers (a, b).</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>list[tuple[int, int]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id14">
+<span class="sig-name descname"><span class="pre">generate_hash_functions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#MinHashUtility.generate_hash_functions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id14" title="Link to this definition">¶</a></dt>
+<dd><p>Generate a list of linear hash functions for use in MinHash calculations.</p>
+<p>Each hash function is defined by a unique pair of coefficients (a, b) and is created using a factory function.
+These hash functions are used to compute hash values for elements in a set, which are essential for estimating
+the similarity between sets using the MinHash technique.</p>
+<p>The hash functions are of the form: h(x) = (a * x + b) % large_prime, where ‘large_prime’ is a large prime number
+used to reduce collisions in hash values.</p>
+<p>Overview of hash functions: <a class="reference external" href="https://en.wikipedia.org/wiki/Hash_function">https://en.wikipedia.org/wiki/Hash_function</a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A list of lambda functions, each representing a linear hash function.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id15">
+<span class="sig-name descname"><span class="pre">compute_signature</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tokens</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#MinHashUtility.compute_signature"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id15" title="Link to this definition">¶</a></dt>
+<dd><p>Compute MinHash signature for a set of tokens.
+A MinHash signature consists of the minimum hash value produced by each hash function across all tokens,
+which is used to estimate the similarity between sets of data.</p>
+<p>Detailed explanation of MinHash and its computation: <a class="reference external" href="https://en.wikipedia.org/wiki/MinHash">https://en.wikipedia.org/wiki/MinHash</a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>tokens</strong> (<em>set</em><em>[</em><em>int</em><em>]</em>) – A set of hashed tokens for which to compute the MinHash signature.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of minimum hash values, representing the MinHash signature.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[int]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id16">
+<span class="sig-name descname"><span class="pre">compare_signatures</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signature1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">signature2</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#MinHashUtility.compare_signatures"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id16" title="Link to this definition">¶</a></dt>
+<dd><p>Compare two MinHash signatures and return their similarity.
+The similarity is calculated as the fraction of hash values that are identical in the two signatures,
+which estimates the Jaccard similarity of the original sets from which these signatures were derived.</p>
+<p>This method is based on the principle that the more similar the sets are, the more hash values they will share,
+thus providing a proxy for the Jaccard index of the sets.</p>
+<p>More on estimating similarity with MinHash: <a class="reference external" href="https://en.wikipedia.org/wiki/Jaccard_index#MinHash">https://en.wikipedia.org/wiki/Jaccard_index#MinHash</a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>signature1</strong> (<em>list</em><em>[</em><em>int</em><em>]</em>) – The MinHash signature of the first set, represented as a list of integers.</p></li>
+<li><p><strong>signature2</strong> (<em>list</em><em>[</em><em>int</em><em>]</em>) – The MinHash signature of the second set, represented as a list of integers.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The estimated similarity between the two sets, based on their MinHash signatures.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>AssertionError</strong> – If the two signatures do not have the same length.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="academic_metrics.core.faculty_set_postprocessor.NameVariation">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">academic_metrics.core.faculty_set_postprocessor.</span></span><span class="sig-name descname"><span class="pre">NameVariation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">normalized_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variations=&lt;factory&gt;</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#NameVariation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.faculty_set_postprocessor.NameVariation" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A data class for tracking different spelling variations of a normalized name and determining the most frequent variation.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.core.faculty_set_postprocessor.NameVariation.normalized_name">
+<span class="sig-name descname"><span class="pre">normalized_name</span></span><a class="headerlink" href="#academic_metrics.core.faculty_set_postprocessor.NameVariation.normalized_name" title="Link to this definition">¶</a></dt>
+<dd><p>The base form of the name, typically normalized to lower case and stripped of spaces.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="academic_metrics.core.faculty_set_postprocessor.NameVariation.variations">
+<span class="sig-name descname"><span class="pre">variations</span></span><a class="headerlink" href="#academic_metrics.core.faculty_set_postprocessor.NameVariation.variations" title="Link to this definition">¶</a></dt>
+<dd><p>A dictionary where keys are variations of the name and values are the counts of how often each variation occurs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict[str, int]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">add_variation(variation</span></span></dt>
+<dd><p>str): Adds a variation of the name to the dictionary or increments its count if it already exists.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.faculty_set_postprocessor.NameVariation.most_frequent_variation">
+<span class="sig-name descname"><span class="pre">most_frequent_variation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#NameVariation.most_frequent_variation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.faculty_set_postprocessor.NameVariation.most_frequent_variation" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the variation of the name that occurs most frequently.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id17">
+<span class="sig-name descname"><span class="pre">normalized_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#id17" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id18">
+<span class="sig-name descname"><span class="pre">variations</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code><span class="pre">]</span></em><a class="headerlink" href="#id18" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="academic_metrics.core.faculty_set_postprocessor.NameVariation.add_variation">
+<span class="sig-name descname"><span class="pre">add_variation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">variation</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#NameVariation.add_variation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#academic_metrics.core.faculty_set_postprocessor.NameVariation.add_variation" title="Link to this definition">¶</a></dt>
+<dd><p>Adds a variation of the name to the dictionary or increments its count if it already exists.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>variation</strong> (<em>str</em>) – A specific spelling variation of the name.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
+</dd>
+</dl>
+<p>This method modifies the variations dictionary by either adding a new key with a count of 1 or incrementing the count of an existing key.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="id19">
+<span class="sig-name descname"><span class="pre">most_frequent_variation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/academic_metrics/core/faculty_set_postprocessor.html#NameVariation.most_frequent_variation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#id19" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the variation of the name that occurs most frequently.</p>
+<p>This method finds the key with the highest value in the variations dictionary, which represents the most common spelling variation.
+If the variations dictionary is empty, it raises a ValueError indicating that no variations have been added.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The most frequent variation of the name.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ValueError</strong> – If no variations are found in the dictionary, detailing the normalized name associated with the error.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-academic_metrics.core">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-academic_metrics.core" title="Link to this heading">¶</a></h2>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+        <div id="show_right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&lt;</span><span>Page contents</span></a></p>
+        </div>
+
+        <div id="right_sidebar">
+            <p><a class="toggle_right_sidebar" href="#"><span class="icon">&gt;</span><span>Page contents:</span></a></p>
+            <div class="page_toc">
+                <ul>
+<li><a class="reference internal" href="#">academic_metrics.core package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-academic_metrics.core.category_processor">academic_metrics.core.category_processor module</a><ul>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor</span></code></a><ul>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.utils"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.utils</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.warning_manager"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.warning_manager</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.dataclass_factory"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.dataclass_factory</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.taxonomy_util"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.taxonomy_util</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.category_data"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.category_data</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.faculty_stats"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.faculty_stats</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.global_faculty_stats"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.global_faculty_stats</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.category_article_stats"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.category_article_stats</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.articles"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.articles</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.logger"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.logger</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.log_file_path"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.log_file_path</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.process_data_list"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.process_data_list()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.call_get_attributes"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.call_get_attributes()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.update_category_stats"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.update_category_stats()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.update_faculty_stats"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.update_faculty_stats()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.update_global_faculty_stats"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.update_global_faculty_stats()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.update_category_article_stats"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.update_category_article_stats()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.create_article_object"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.create_article_object()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.clean_faculty_affiliations"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.clean_faculty_affiliations()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.clean_faculty_members"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.clean_faculty_members()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.initialize_categories"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.initialize_categories()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.get_category_data"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.get_category_data()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.get_category_article_stats"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.get_category_article_stats()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.get_articles"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.get_articles()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.get_faculty_stats"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.get_faculty_stats()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor.get_global_faculty_stats"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor.get_global_faculty_stats()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor._collect_all_affiliations"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor._collect_all_affiliations()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor._generate_url"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor._generate_url()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.category_processor.CategoryProcessor._generate_normal_id"><code class="docutils literal notranslate"><span class="pre">CategoryProcessor._generate_normal_id()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-academic_metrics.core.faculty_set_postprocessor">academic_metrics.core.faculty_set_postprocessor module</a><ul>
+<li><a class="reference internal" href="#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor"><code class="docutils literal notranslate"><span class="pre">FacultyPostprocessor</span></code></a><ul>
+<li><a class="reference internal" href="#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.temp_dict"><code class="docutils literal notranslate"><span class="pre">FacultyPostprocessor.temp_dict</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.faculty_occurence_dict"><code class="docutils literal notranslate"><span class="pre">FacultyPostprocessor.faculty_occurence_dict</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.processed_sets_list"><code class="docutils literal notranslate"><span class="pre">FacultyPostprocessor.processed_sets_list</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.minhash_util"><code class="docutils literal notranslate"><span class="pre">FacultyPostprocessor.minhash_util</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.name_variations"><code class="docutils literal notranslate"><span class="pre">FacultyPostprocessor.name_variations</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.get_temp_dict"><code class="docutils literal notranslate"><span class="pre">FacultyPostprocessor.get_temp_dict()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.extract_faculty_sets"><code class="docutils literal notranslate"><span class="pre">FacultyPostprocessor.extract_faculty_sets()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.remove_near_duplicates"><code class="docutils literal notranslate"><span class="pre">FacultyPostprocessor.remove_near_duplicates()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.standardized_data_update"><code class="docutils literal notranslate"><span class="pre">FacultyPostprocessor.standardized_data_update()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.standardize_faculty"><code class="docutils literal notranslate"><span class="pre">FacultyPostprocessor.standardize_faculty()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.remove_update_faculty"><code class="docutils literal notranslate"><span class="pre">FacultyPostprocessor.remove_update_faculty()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.duplicate_postprocessor"><code class="docutils literal notranslate"><span class="pre">FacultyPostprocessor.duplicate_postprocessor()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.process_name_pair"><code class="docutils literal notranslate"><span class="pre">FacultyPostprocessor.process_name_pair()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.name_to_remove"><code class="docutils literal notranslate"><span class="pre">FacultyPostprocessor.name_to_remove()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.get_duplicate_utilities"><code class="docutils literal notranslate"><span class="pre">FacultyPostprocessor.get_duplicate_utilities()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.generate_signatures"><code class="docutils literal notranslate"><span class="pre">FacultyPostprocessor.generate_signatures()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.get_most_frequent_name_variation"><code class="docutils literal notranslate"><span class="pre">FacultyPostprocessor.get_most_frequent_name_variation()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.faculty_set_postprocessor.FacultyPostprocessor.standardize_names_across_sets"><code class="docutils literal notranslate"><span class="pre">FacultyPostprocessor.standardize_names_across_sets()</span></code></a></li>
+<li><a class="reference internal" href="#id0"><code class="docutils literal notranslate"><span class="pre">FacultyPostprocessor.get_temp_dict()</span></code></a></li>
+<li><a class="reference internal" href="#id1"><code class="docutils literal notranslate"><span class="pre">FacultyPostprocessor.extract_faculty_sets()</span></code></a></li>
+<li><a class="reference internal" href="#id2"><code class="docutils literal notranslate"><span class="pre">FacultyPostprocessor.remove_near_duplicates()</span></code></a></li>
+<li><a class="reference internal" href="#id3"><code class="docutils literal notranslate"><span class="pre">FacultyPostprocessor.standardized_data_update()</span></code></a></li>
+<li><a class="reference internal" href="#id4"><code class="docutils literal notranslate"><span class="pre">FacultyPostprocessor.standardize_faculty()</span></code></a></li>
+<li><a class="reference internal" href="#id5"><code class="docutils literal notranslate"><span class="pre">FacultyPostprocessor.remove_update_faculty()</span></code></a></li>
+<li><a class="reference internal" href="#id6"><code class="docutils literal notranslate"><span class="pre">FacultyPostprocessor.duplicate_postprocessor()</span></code></a></li>
+<li><a class="reference internal" href="#id7"><code class="docutils literal notranslate"><span class="pre">FacultyPostprocessor.process_name_pair()</span></code></a></li>
+<li><a class="reference internal" href="#id8"><code class="docutils literal notranslate"><span class="pre">FacultyPostprocessor.name_to_remove()</span></code></a></li>
+<li><a class="reference internal" href="#id9"><code class="docutils literal notranslate"><span class="pre">FacultyPostprocessor.get_duplicate_utilities()</span></code></a></li>
+<li><a class="reference internal" href="#id10"><code class="docutils literal notranslate"><span class="pre">FacultyPostprocessor.generate_signatures()</span></code></a></li>
+<li><a class="reference internal" href="#id11"><code class="docutils literal notranslate"><span class="pre">FacultyPostprocessor.get_most_frequent_name_variation()</span></code></a></li>
+<li><a class="reference internal" href="#id12"><code class="docutils literal notranslate"><span class="pre">FacultyPostprocessor.standardize_names_across_sets()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#academic_metrics.core.faculty_set_postprocessor.MinHashUtility"><code class="docutils literal notranslate"><span class="pre">MinHashUtility</span></code></a><ul>
+<li><a class="reference internal" href="#academic_metrics.core.faculty_set_postprocessor.MinHashUtility.num_hashes"><code class="docutils literal notranslate"><span class="pre">MinHashUtility.num_hashes</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.faculty_set_postprocessor.MinHashUtility.large_prime"><code class="docutils literal notranslate"><span class="pre">MinHashUtility.large_prime</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.faculty_set_postprocessor.MinHashUtility.hash_fns"><code class="docutils literal notranslate"><span class="pre">MinHashUtility.hash_fns</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.faculty_set_postprocessor.MinHashUtility.tokenize"><code class="docutils literal notranslate"><span class="pre">MinHashUtility.tokenize()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.faculty_set_postprocessor.MinHashUtility.generate_coefficients"><code class="docutils literal notranslate"><span class="pre">MinHashUtility.generate_coefficients()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.faculty_set_postprocessor.MinHashUtility.generate_hash_functions"><code class="docutils literal notranslate"><span class="pre">MinHashUtility.generate_hash_functions()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.faculty_set_postprocessor.MinHashUtility.compute_signature"><code class="docutils literal notranslate"><span class="pre">MinHashUtility.compute_signature()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.faculty_set_postprocessor.MinHashUtility.compare_signatures"><code class="docutils literal notranslate"><span class="pre">MinHashUtility.compare_signatures()</span></code></a></li>
+<li><a class="reference internal" href="#id13"><code class="docutils literal notranslate"><span class="pre">MinHashUtility.tokenize()</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.faculty_set_postprocessor.MinHashUtility.generate_coeeficients"><code class="docutils literal notranslate"><span class="pre">MinHashUtility.generate_coeeficients()</span></code></a></li>
+<li><a class="reference internal" href="#id14"><code class="docutils literal notranslate"><span class="pre">MinHashUtility.generate_hash_functions()</span></code></a></li>
+<li><a class="reference internal" href="#id15"><code class="docutils literal notranslate"><span class="pre">MinHashUtility.compute_signature()</span></code></a></li>
+<li><a class="reference internal" href="#id16"><code class="docutils literal notranslate"><span class="pre">MinHashUtility.compare_signatures()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#academic_metrics.core.faculty_set_postprocessor.NameVariation"><code class="docutils literal notranslate"><span class="pre">NameVariation</span></code></a><ul>
+<li><a class="reference internal" href="#academic_metrics.core.faculty_set_postprocessor.NameVariation.normalized_name"><code class="docutils literal notranslate"><span class="pre">NameVariation.normalized_name</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.faculty_set_postprocessor.NameVariation.variations"><code class="docutils literal notranslate"><span class="pre">NameVariation.variations</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.faculty_set_postprocessor.NameVariation.most_frequent_variation"><code class="docutils literal notranslate"><span class="pre">NameVariation.most_frequent_variation()</span></code></a></li>
+<li><a class="reference internal" href="#id17"><code class="docutils literal notranslate"><span class="pre">NameVariation.normalized_name</span></code></a></li>
+<li><a class="reference internal" href="#id18"><code class="docutils literal notranslate"><span class="pre">NameVariation.variations</span></code></a></li>
+<li><a class="reference internal" href="#academic_metrics.core.faculty_set_postprocessor.NameVariation.add_variation"><code class="docutils literal notranslate"><span class="pre">NameVariation.add_variation()</span></code></a></li>
+<li><a class="reference internal" href="#id19"><code class="docutils literal notranslate"><span class="pre">NameVariation.most_frequent_variation()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-academic_metrics.core">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+    
+
+      <div class="clearer"></div>
+    </div>
+    <div class="button_nav_wrapper">
+        <div class="button_nav">
+            <div class="left">
+                
+            </div>
+
+            <div class="right">
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Spencer Presley, Cole Barbes.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    </div>
+
+<p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>
+  </body>
+</html>

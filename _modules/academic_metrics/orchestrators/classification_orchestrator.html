@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>academic_metrics.orchestrators.classification_orchestrator &#8212; Academic Metrics 0.1.0-beta documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/basic_mod.css?v=9b2032db" />
+    <script src="../../../_static/documentation_options.js?v=c903bf51"></script>
+    <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <script src="../../../_static/js/petite-vue.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+  </head><body data-dark_mode_code_blocks="true">
+
+<div id="top_nav">
+    
+
+    <nav>
+        
+            
+        
+
+        <p id="toggle_sidebar">
+            <a href="#" title="Toggle sidebar">|||</a>
+        </p>
+        <h1><a href="../../../index.html" title="Go to homepage">Academic Metrics 0.1.0-beta documentation</a></h1>
+
+        <a id="mode_toggle" href="#" @click.prevent="handleClick" :title="mode">
+    <template v-if="mode == 'light'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_light"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M67.48,18.073c1.913,-1.912 1.913,-5.018 0,-6.931c-1.912,-1.912 -5.018,-1.912 -6.931,0l-6.798,6.799c-1.912,1.912 -1.912,5.018 0,6.931c1.913,1.912 5.018,1.912 6.931,-0l6.798,-6.799Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.728,61.108c1.912,-1.913 1.912,-5.018 -0,-6.931c-1.913,-1.913 -5.019,-1.913 -6.931,-0l-6.799,6.798c-1.912,1.913 -1.912,5.019 0,6.931c1.913,1.913 5.019,1.913 6.931,0l6.799,-6.798Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.682,54.177c-1.913,-1.913 -5.018,-1.913 -6.931,-0c-1.912,1.913 -1.912,5.018 0,6.931l6.798,6.798c1.913,1.913 5.019,1.913 6.931,0c1.913,-1.912 1.913,-5.018 0,-6.931l-6.798,-6.798Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M4.901,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901l-0,9.614c-0,2.705 2.196,4.901 4.9,4.901c2.705,-0 4.901,-2.196 4.901,-4.901l0,-9.614Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M18.929,11.142c-1.912,-1.912 -5.018,-1.912 -6.931,0c-1.912,1.913 -1.912,5.019 0,6.931l6.799,6.799c1.912,1.912 5.018,1.912 6.931,-0c1.912,-1.913 1.912,-5.019 -0,-6.931l-6.799,-6.799Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.108,34.623c-2.705,0 -4.901,2.196 -4.901,4.901c-0,2.705 2.196,4.901 4.901,4.901l9.614,0c2.705,0 4.901,-2.196 4.901,-4.901c-0,-2.705 -2.196,-4.901 -4.901,-4.901l-9.614,0Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'dark'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_dark"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><circle cx="39.311" cy="39.524" r="15.734" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.212,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.901,2.196 -4.901,4.901c0,2.705 2.197,4.901 4.901,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.662,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.989,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.732,61.103c1.91,-1.91 1.91,-5.011 0,-6.921l-0.009,-0.01c-1.91,-1.91 -5.012,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.909,1.91 5.011,1.91 6.92,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.672,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.52,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l-0,-0.01c-0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.212,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.901,2.196 -4.901,4.901c0,2.704 2.197,4.9 4.901,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.73,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 -0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.098,34.623c-2.699,0 -4.891,2.192 -4.891,4.892l-0,0.019c-0,2.699 2.192,4.891 4.891,4.891c2.7,0 4.892,-2.192 4.892,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.892,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+
+    <template v-if="mode == 'darkest'">
+        <svg width="100%" height="100%" viewBox="0 0 79 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g id="mode_darkest"><rect id="Bounds" x="0" y="-0" width="78.623" height="79.049" style="fill:none;"/><path d="M39.315,23.791c8.684,-0 15.734,7.05 15.734,15.733c0,8.684 -7.05,15.734 -15.734,15.734c-8.683,0 -15.733,-7.05 -15.733,-15.734c-0,-8.683 7.05,-15.733 15.733,-15.733Zm0,4.737c6.069,0 10.997,4.927 10.997,10.996c-0,6.069 -4.928,10.996 -10.997,10.996c-6.068,0 -10.996,-4.927 -10.996,-10.996c0,-6.069 4.928,-10.996 10.996,-10.996Z" style="fill:#fff;"/><g id="beams"><g id="beam"><path id="beam1" serif:id="beam" d="M44.216,14.515c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,0 -4.9,2.196 -4.9,4.901c-0,2.705 2.196,4.901 4.9,4.901c2.705,0 4.901,-2.196 4.901,-4.901Z" style="fill:#fff;"/></g><g id="beam2" serif:id="beam"><path id="beam3" serif:id="beam" d="M60.666,24.892c1.902,-1.902 1.902,-4.99 0,-6.892l-0.04,-0.039c-1.901,-1.902 -4.989,-1.902 -6.891,-0c-1.901,1.901 -1.901,4.989 0,6.891l0.04,0.04c1.902,1.901 4.99,1.901 6.891,-0Z" style="fill:#fff;"/></g><g id="beam4" serif:id="beam"><path id="beam5" serif:id="beam" d="M25.737,61.103c1.909,-1.91 1.909,-5.011 -0,-6.921l-0.01,-0.01c-1.91,-1.91 -5.011,-1.91 -6.921,-0c-1.91,1.91 -1.91,5.011 -0,6.921l0.01,0.01c1.91,1.91 5.011,1.91 6.921,-0Z" style="fill:#fff;"/></g><g id="beam6" serif:id="beam"><path id="beam7" serif:id="beam" d="M60.676,54.167c-1.907,-1.907 -5.004,-1.907 -6.911,0l-0.02,0.02c-1.907,1.907 -1.907,5.004 0,6.911c1.907,1.907 5.004,1.907 6.911,-0l0.02,-0.02c1.907,-1.907 1.907,-5.004 0,-6.911Z" style="fill:#fff;"/></g><g id="beam8" serif:id="beam"><path id="beam9" serif:id="beam" d="M14.524,34.623c-2.702,0 -4.896,2.194 -4.896,4.896l0,0.01c0,2.702 2.194,4.896 4.896,4.896c2.702,0 4.896,-2.194 4.896,-4.896l0,-0.01c0,-2.702 -2.194,-4.896 -4.896,-4.896Z" style="fill:#fff;"/></g><g id="beam10" serif:id="beam"><path id="beam11" serif:id="beam" d="M44.216,64.534c0,-2.705 -2.196,-4.901 -4.901,-4.901c-2.704,-0 -4.9,2.196 -4.9,4.901c-0,2.704 2.196,4.9 4.9,4.9c2.705,0 4.901,-2.196 4.901,-4.9Z" style="fill:#fff;"/></g><g id="beam12" serif:id="beam"><path id="beam13" serif:id="beam" d="M25.734,17.943c-1.911,-1.911 -5.015,-1.911 -6.926,0l-0.005,0.005c-1.911,1.911 -1.911,5.015 0,6.926c1.911,1.911 5.015,1.911 6.926,0l0.005,-0.005c1.911,-1.911 1.911,-5.014 0,-6.926Z" style="fill:#fff;"/></g><g id="beam14" serif:id="beam"><path id="beam15" serif:id="beam" d="M64.103,34.623c-2.7,0 -4.892,2.192 -4.892,4.892l-0,0.019c-0,2.699 2.192,4.891 4.892,4.891c2.699,0 4.891,-2.192 4.891,-4.891l0,-0.019c0,-2.7 -2.192,-4.892 -4.891,-4.892Z" style="fill:#fff;"/></g></g></g></svg>
+    </template>
+</a>
+
+<script>
+(function() {
+    const LOCAL_STORAGE_KEY = 'piccoloThemeMode'
+
+    var initialMode = localStorage.getItem(LOCAL_STORAGE_KEY)
+
+    if (initialMode) {
+        // Make sure the value in local storage is valid
+        if (['light', 'dark', 'darkest'].indexOf(initialMode) == -1) {
+            initialMode = 'light'
+            localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+        }
+    } else {
+        // Check if the client prefers dark mode
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            initialMode = 'dark'
+        } else {
+            initialMode = 'light'
+        }
+        localStorage.setItem(LOCAL_STORAGE_KEY, initialMode)
+    }
+
+    document.documentElement.dataset.mode = initialMode
+
+    PetiteVue.createApp({
+        'mode': initialMode,
+        handleClick() {
+            let currentMode = this.mode
+
+            if (currentMode == 'light') {
+                this.mode = 'dark'
+            } else if (currentMode == 'dark') {
+                this.mode = 'darkest'
+            } else if (currentMode == 'darkest') {
+                this.mode = 'light'
+            }
+
+            document.documentElement.dataset.mode = this.mode
+            localStorage.setItem(LOCAL_STORAGE_KEY, this.mode)
+
+            console.log(this.mode)
+        }
+    }).mount('#mode_toggle')
+})()
+</script>
+            <p class="mobile_search_link">
+                <a href="../../../search.html" title="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 64" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+                        <path d="M14.873 40.009c-2.315-3.943-3.642-8.532-3.642-13.429C11.231 11.91 23.141 0 37.811 0s26.58 11.91 26.58 26.58-11.91 26.58-26.58 26.58a26.44 26.44 0 0 1-14.277-4.161L9.739 62.794a3.12 3.12 0 0 1-4.413 0L.913 58.382c-1.217-1.218-1.217-3.196 0-4.413l13.96-13.96zM37.811 8.054c10.225 0 18.526 8.301 18.526 18.526s-8.301 18.526-18.526 18.526-18.526-8.301-18.526-18.526S27.586 8.054 37.811 8.054z" fill="#fff" />
+                    </svg>
+                </a>
+            </p>
+        
+
+        <div class="searchbox_wrapper">
+            
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+    </nav>
+</div>
+
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../abstract_classifier.html">Abstract Classifier Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../category_processor.html">Category Processor Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../faculty_set_postprocessor.html">Faculty Set Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../config.html">Global Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../chain_builder.html">Chain Builder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ai_prompts.html">ai_prompts package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../data_collection.html">data_collection package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../dataclass_models.html">dataclass_models package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../DB.html">DB package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../enums.html">enums package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../factories.html">factories package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../orchestrators.html">orchestrators package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../other.html">other package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../runners.html">runners package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../strategies.html">strategies package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../utils.html">utils package</a></li>
+</ul>
+
+        </div>
+      </div>
+
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for academic_metrics.orchestrators.classification_orchestrator</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">annotations</span>
+
+<span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">TYPE_CHECKING</span><span class="p">,</span> <span class="n">Callable</span><span class="p">,</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">List</span><span class="p">,</span> <span class="n">Tuple</span><span class="p">,</span> <span class="n">TypeAlias</span>
+
+<span class="kn">from</span> <span class="nn">pylatexenc.latex2text</span> <span class="kn">import</span> <span class="n">LatexNodes2Text</span>
+<span class="kn">from</span> <span class="nn">unidecode</span> <span class="kn">import</span> <span class="n">unidecode</span>
+
+<span class="kn">from</span> <span class="nn">academic_metrics.AI</span> <span class="kn">import</span> <span class="n">AbstractClassifier</span>
+<span class="kn">from</span> <span class="nn">academic_metrics.configs</span> <span class="kn">import</span> <span class="p">(</span>
+    <span class="n">configure_logging</span><span class="p">,</span>
+    <span class="n">DEBUG</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="kn">from</span> <span class="nn">academic_metrics.enums</span> <span class="kn">import</span> <span class="n">AttributeTypes</span>
+
+<span class="k">if</span> <span class="n">TYPE_CHECKING</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">academic_metrics.utils</span> <span class="kn">import</span> <span class="n">Utilities</span>
+
+<span class="n">ClassificationResultsDict</span><span class="p">:</span> <span class="n">TypeAlias</span> <span class="o">=</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span>
+<span class="sd">&quot;&quot;&quot;Type alias for a dictionary mapping DOIs to lists of classification results.</span>
+
+<span class="sd">This type alias is used to represent the return type of the </span>
+<span class="sd">:func:`AbstractClassifier.get_classification_results_by_doi` method.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="n">ClassificationResultsTuple</span><span class="p">:</span> <span class="n">TypeAlias</span> <span class="o">=</span> <span class="n">Tuple</span><span class="p">[</span>
+    <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>
+<span class="p">]</span>
+<span class="sd">&quot;&quot;&quot;Type alias for a tuple containing lists of classification results.</span>
+
+<span class="sd">This type alias is used to represent the return type of the </span>
+<span class="sd">:func:`AbstractClassifier.get_classification_results_by_doi` method.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+
+<div class="viewcode-block" id="ClassificationOrchestrator">
+<a class="viewcode-back" href="../../../orchestrators.html#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator">[docs]</a>
+<span class="k">class</span> <span class="nc">ClassificationOrchestrator</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Manages the classification process for research abstracts.</span>
+
+<span class="sd">    This class orchestrates the process of extracting DOIs and abstracts from a list of dictionaries containing crossref data,</span>
+<span class="sd">    classifying them using the AbstractClassifier class, and injecting the results back into the original data.</span>
+<span class="sd">    It also tracks unclassified items for monitoring and debugging purposes.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">        abstract_classifier_factory: Factory function that creates AbstractClassifier instances.</span>
+<span class="sd">        taxonomy: Taxonomy instance containing the classification hierarchy. Not used directly, but required by the AbstractClassifier. and thus is passed in to the factory function.</span>
+<span class="sd">        utilities: Utilities instance for attribute extraction.</span>
+<span class="sd">        ai_api_key: API key for AI service access.</span>
+<span class="sd">        unclassified_item_count: Number of items that couldn&#39;t be classified.</span>
+<span class="sd">        unclassified_dois: List of DOIs that couldn&#39;t be classified.</span>
+<span class="sd">        unclassified_abstracts: List of abstracts that couldn&#39;t be classified.</span>
+<span class="sd">        unclassified_doi_abstract_dict: Dictionary mapping unclassified DOIs to abstracts.</span>
+<span class="sd">        unclassified_items: List of complete metadata items that couldn&#39;t be classified.</span>
+<span class="sd">        unclassified_details: Dictionary containing organized unclassified data:</span>
+<span class="sd">            - dois: List of unclassified DOIs</span>
+<span class="sd">            - abstracts: List of unclassified abstracts</span>
+<span class="sd">            - items: List of unclassified metadata items</span>
+
+<span class="sd">    Methods:</span>
+<span class="sd">        Public Methods:</span>
+<span class="sd">            run_classification() -&gt; List[Dict]: Processes and classifies a list of research metadata dictionaries.</span>
+<span class="sd">            get_unclassified_item_count() -&gt; int: Returns the number of unclassified items.</span>
+<span class="sd">            get_unclassified_dois() -&gt; List[str]: Returns the DOIs of unclassified items.</span>
+<span class="sd">            get_unclassified_abstracts() -&gt; List[str]: Returns the abstracts of unclassified items.</span>
+<span class="sd">            get_unclassified_doi_abstract_dict() -&gt; Dict[str, str]: Returns the DOI to abstract mapping dictionary for unclassified items.</span>
+<span class="sd">            get_unclassified_items() -&gt; List[Dict]: Returns the unclassified items.</span>
+<span class="sd">            get_unclassified_details_dict() -&gt; Dict: Returns the details of unclassified items.</span>
+
+<span class="sd">        Private Methods:</span>
+<span class="sd">            _classification_orchestrator() -&gt; List[Dict]: Core classification logic for processing research metadata.</span>
+<span class="sd">            _inject_categories() -&gt; None: Adds classification results to a research metadata dictionary.</span>
+<span class="sd">            _extract_categories() -&gt; ClassificationResultsDict | ClassificationResultsTuple: Gets classification results for a specific DOI.</span>
+<span class="sd">            _make_doi_abstract_dict() -&gt; Dict[str, str]: Creates a DOI to abstract mapping dictionary.</span>
+<span class="sd">            _retrieve_doi_abstract() -&gt; Tuple[str, str]: Extracts DOI and abstract from a research metadata dictionary.</span>
+<span class="sd">            _update_classified_instance_variables() -&gt; None: Updates tracking variables for unclassified items.</span>
+<span class="sd">            _set_classification_ran_true() -&gt; None: Sets the classification ran flag to true.</span>
+<span class="sd">            _has_ran_classification() -&gt; bool: Checks if classification has been run.</span>
+<span class="sd">            _validate_classification_ran() -&gt; None: Validates if classification has been run.</span>
+<span class="sd">            _normalize_abstract() -&gt; str: Normalizes an abstract by removing LaTeX and converting any resulting unicode to ASCII.</span>
+
+<span class="sd">    Example:</span>
+<span class="sd">        &gt;&gt;&gt; # Create wrapper instance</span>
+<span class="sd">        &gt;&gt;&gt; wrapper = ClassificationWrapper(</span>
+<span class="sd">        ...     abstract_classifier_factory=create_classifier,</span>
+<span class="sd">        ...     taxonomy=taxonomy,</span>
+<span class="sd">        ...     utilities=utilities,</span>
+<span class="sd">        ...     ai_api_key=&quot;your-api-key&quot;</span>
+<span class="sd">        ... )</span>
+<span class="sd">        &gt;&gt;&gt;</span>
+<span class="sd">        &gt;&gt;&gt; # Process research metadata</span>
+<span class="sd">        &gt;&gt;&gt; data = [</span>
+<span class="sd">        ...     {&quot;DOI&quot;: &quot;10.1234/example&quot;, &quot;abstract&quot;: &quot;Research text...&quot;},</span>
+<span class="sd">        ...     {&quot;DOI&quot;: &quot;10.5678/sample&quot;, &quot;abstract&quot;: &quot;More research...&quot;}</span>
+<span class="sd">        ... ]</span>
+<span class="sd">        &gt;&gt;&gt; classified_data = wrapper.run_classification(data)</span>
+<span class="sd">        &gt;&gt;&gt;</span>
+<span class="sd">        &gt;&gt;&gt; # Access classification results</span>
+<span class="sd">        &gt;&gt;&gt; print(classified_data[0][&quot;categories&quot;])</span>
+<span class="sd">        &gt;&gt;&gt;</span>
+<span class="sd">        &gt;&gt;&gt; # Check unclassified items</span>
+<span class="sd">        &gt;&gt;&gt; print(f&quot;Failed to classify {wrapper.unclassified_item_count} items&quot;)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">abstract_classifier_factory</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]],</span> <span class="n">AbstractClassifier</span><span class="p">],</span>
+        <span class="n">utilities</span><span class="p">:</span> <span class="n">Utilities</span><span class="p">,</span>
+    <span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Initialize the ClassificationOrchestrator.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            abstract_classifier_factory: Factory function that creates AbstractClassifier instances.</span>
+<span class="sd">            utilities: Utilities instance for attribute extraction.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span> <span class="o">=</span> <span class="n">configure_logging</span><span class="p">(</span>
+            <span class="n">module_name</span><span class="o">=</span><span class="vm">__name__</span><span class="p">,</span>
+            <span class="n">log_file_name</span><span class="o">=</span><span class="s2">&quot;classification_orchestrator&quot;</span><span class="p">,</span>
+            <span class="n">log_level</span><span class="o">=</span><span class="n">DEBUG</span><span class="p">,</span>
+        <span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">abstract_classifier_factory</span> <span class="o">=</span> <span class="n">abstract_classifier_factory</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">utilities</span> <span class="o">=</span> <span class="n">utilities</span>
+
+        <span class="c1"># flag to check if classification has been run to provide a method for which to prevent retrieval</span>
+        <span class="c1"># of unclassified attributes before classification has been ran</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_classification_ran</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">unclassified_item_count</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">unclassified_dois</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">unclassified_abstracts</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">unclassified_doi_abstract_dict</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">unclassified_items</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">unclassified_details_dict</span><span class="p">:</span> <span class="n">Dict</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;dois&quot;</span><span class="p">:</span> <span class="p">[],</span>
+            <span class="s2">&quot;abstracts&quot;</span><span class="p">:</span> <span class="p">[],</span>
+            <span class="s2">&quot;items&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="p">}</span>
+
+<div class="viewcode-block" id="ClassificationOrchestrator.run_classification">
+<a class="viewcode-back" href="../../../orchestrators.html#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.run_classification">[docs]</a>
+    <span class="k">def</span> <span class="nf">run_classification</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">data</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">],</span>
+        <span class="n">pre_classification_model</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">classification_model</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">theme_model</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Processes and classifies a list of research metadata dictionaries.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            data: List of dictionaries containing research metadata.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            List[Dict]: Modified data with classifications injected.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">classified_data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_classification_orchestrator</span><span class="p">(</span>
+            <span class="n">data</span><span class="p">,</span>
+            <span class="n">pre_classification_model</span><span class="o">=</span><span class="n">pre_classification_model</span><span class="p">,</span>
+            <span class="n">classification_model</span><span class="o">=</span><span class="n">classification_model</span><span class="p">,</span>
+            <span class="n">theme_model</span><span class="o">=</span><span class="n">theme_model</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_set_classification_ran_true</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">classified_data</span></div>
+
+
+<div class="viewcode-block" id="ClassificationOrchestrator.get_unclassified_item_count">
+<a class="viewcode-back" href="../../../orchestrators.html#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.get_unclassified_item_count">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_unclassified_item_count</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Gets the number of unclassified items.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            int: Number of unclassified items.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            RuntimeError: If classification has not been run yet.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_validate_classification_ran</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_has_ran_classification</span><span class="p">())</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">unclassified_item_count</span></div>
+
+
+<div class="viewcode-block" id="ClassificationOrchestrator.get_unclassified_dois">
+<a class="viewcode-back" href="../../../orchestrators.html#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.get_unclassified_dois">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_unclassified_dois</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Gets the DOIs of unclassified items.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            List[str]: List of unclassified DOIs.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            RuntimeError: If classification has not been run yet.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_validate_classification_ran</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_has_ran_classification</span><span class="p">())</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">unclassified_dois</span></div>
+
+
+<div class="viewcode-block" id="ClassificationOrchestrator.get_unclassified_abstracts">
+<a class="viewcode-back" href="../../../orchestrators.html#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.get_unclassified_abstracts">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_unclassified_abstracts</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Gets the abstracts of unclassified items.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            List[str]: List of unclassified abstracts.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            RuntimeError: If classification has not been run yet.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_validate_classification_ran</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_has_ran_classification</span><span class="p">())</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">unclassified_abstracts</span></div>
+
+
+<div class="viewcode-block" id="ClassificationOrchestrator.get_unclassified_doi_abstract_dict">
+<a class="viewcode-back" href="../../../orchestrators.html#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.get_unclassified_doi_abstract_dict">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_unclassified_doi_abstract_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Gets the DOI to abstract mapping dictionary for unclassified items.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Dict[str, str]: Dictionary mapping unclassified DOIs to abstracts.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            RuntimeError: If classification has not been run yet.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_validate_classification_ran</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_has_ran_classification</span><span class="p">())</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">unclassified_doi_abstract_dict</span></div>
+
+
+<div class="viewcode-block" id="ClassificationOrchestrator.get_unclassified_items">
+<a class="viewcode-back" href="../../../orchestrators.html#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.get_unclassified_items">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_unclassified_items</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Gets the unclassified items.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            List[Dict]: List of unclassified items.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            RuntimeError: If classification has not been run yet.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_validate_classification_ran</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_has_ran_classification</span><span class="p">())</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">unclassified_items</span></div>
+
+
+<div class="viewcode-block" id="ClassificationOrchestrator.get_unclassified_details_dict">
+<a class="viewcode-back" href="../../../orchestrators.html#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator.get_unclassified_details_dict">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_unclassified_details_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Gets the details of unclassified items.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Dict: Details of unclassified items.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            RuntimeError: If classification has not been run yet.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_validate_classification_ran</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_has_ran_classification</span><span class="p">())</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">unclassified_details_dict</span></div>
+
+
+<div class="viewcode-block" id="ClassificationOrchestrator._classification_orchestrator">
+<a class="viewcode-back" href="../../../orchestrators.html#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._classification_orchestrator">[docs]</a>
+    <span class="k">def</span> <span class="nf">_classification_orchestrator</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">data</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">],</span>
+        <span class="n">pre_classification_model</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">classification_model</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">theme_model</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Core classification logic for processing research metadata.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            data: List of dictionaries containing research metadata.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            List[Dict]: Modified data with classifications injected.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+
+        <span class="c1"># This must be a `while` loop because the list `data` is modified during iteration.</span>
+        <span class="c1"># Specifically, items may be removed (via `pop`) when an error occurs. A `for` loop</span>
+        <span class="c1"># uses an iterator tied to the list&#39;s initial state and does not account for changes</span>
+        <span class="c1"># to the list structure. Modifying the list while using a `for` loop would cause</span>
+        <span class="c1"># skipped items, incorrect indexing, or runtime errors.</span>
+        <span class="c1">#</span>
+        <span class="c1"># With a `while` loop, we have full control over the index (`i`). If an item is</span>
+        <span class="c1"># removed, the remaining items shift, and the loop naturally rechecks the current</span>
+        <span class="c1"># index without skipping. This ensures every item is processed exactly once, and</span>
+        <span class="c1"># the logic remains robust despite the dynamic list modifications.</span>
+        <span class="c1">#</span>
+        <span class="c1"># Do not attempt to use a `for` loop here—it will not handle these modifications safely.</span>
+        <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+            <span class="n">item</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">doi</span><span class="p">,</span> <span class="n">abstract</span><span class="p">,</span> <span class="n">extra_context</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_classification_dependencies</span><span class="p">(</span>
+                    <span class="n">item</span>
+                <span class="p">)</span>
+                <span class="n">normalized_abstract</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_normalize_abstract</span><span class="p">(</span><span class="n">abstract</span><span class="p">)</span>
+                <span class="n">doi_abstract_dict</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_doi_abstract_dict</span><span class="p">(</span>
+                    <span class="n">doi</span><span class="p">,</span> <span class="n">normalized_abstract</span>
+                <span class="p">)</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="n">doi_abstract_dict</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">_update_classified_instance_variables</span><span class="p">(</span>
+                        <span class="n">item</span><span class="o">=</span><span class="n">item</span><span class="p">,</span> <span class="n">doi</span><span class="o">=</span><span class="n">doi</span><span class="p">,</span> <span class="n">abstract</span><span class="o">=</span><span class="n">abstract</span>
+                    <span class="p">)</span>
+                    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+                    <span class="k">continue</span>
+
+                <span class="n">classifier</span><span class="p">:</span> <span class="n">AbstractClassifier</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">abstract_classifier_factory</span><span class="p">(</span>
+                    <span class="n">doi_abstract_dict</span><span class="o">=</span><span class="n">doi_abstract_dict</span><span class="p">,</span>
+                    <span class="n">extra_context</span><span class="o">=</span><span class="n">extra_context</span><span class="p">,</span>
+                    <span class="n">pre_classification_model</span><span class="o">=</span><span class="n">pre_classification_model</span><span class="p">,</span>
+                    <span class="n">classification_model</span><span class="o">=</span><span class="n">classification_model</span><span class="p">,</span>
+                    <span class="n">theme_model</span><span class="o">=</span><span class="n">theme_model</span><span class="p">,</span>
+                <span class="p">)</span>
+
+                <span class="n">classifier</span><span class="o">.</span><span class="n">classify</span><span class="p">()</span>
+
+                <span class="bp">self</span><span class="o">.</span><span class="n">_inject_categories</span><span class="p">(</span>
+                    <span class="n">data</span><span class="o">=</span><span class="n">item</span><span class="p">,</span> <span class="n">categories</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_extract_categories</span><span class="p">(</span><span class="n">doi</span><span class="p">,</span> <span class="n">classifier</span><span class="p">)</span>
+                <span class="p">)</span>
+
+                <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+
+            <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error processing item </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Popping the item at index </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2"> from data&quot;</span><span class="p">)</span>
+                <span class="n">data</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">data</span></div>
+
+
+<div class="viewcode-block" id="ClassificationOrchestrator._inject_categories">
+<a class="viewcode-back" href="../../../orchestrators.html#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._inject_categories">[docs]</a>
+    <span class="k">def</span> <span class="nf">_inject_categories</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">data</span><span class="p">:</span> <span class="n">Dict</span><span class="p">,</span>
+        <span class="n">categories</span><span class="p">:</span> <span class="n">ClassificationResultsDict</span> <span class="o">|</span> <span class="n">ClassificationResultsTuple</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Adds classification results to a research metadata dictionary.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            data: Research metadata dictionary.</span>
+<span class="sd">            categories: Classification results including categories and themes.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">data</span><span class="p">[</span><span class="s2">&quot;categories&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="n">data</span><span class="p">[</span><span class="s2">&quot;categories&quot;</span><span class="p">][</span><span class="s2">&quot;top&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">categories</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;top_categories&quot;</span><span class="p">,</span> <span class="p">[])</span>
+        <span class="n">data</span><span class="p">[</span><span class="s2">&quot;categories&quot;</span><span class="p">][</span><span class="s2">&quot;mid&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">categories</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;mid_categories&quot;</span><span class="p">,</span> <span class="p">[])</span>
+        <span class="n">data</span><span class="p">[</span><span class="s2">&quot;categories&quot;</span><span class="p">][</span><span class="s2">&quot;low&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">categories</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;low_categories&quot;</span><span class="p">,</span> <span class="p">[])</span>
+        <span class="n">data</span><span class="p">[</span><span class="s2">&quot;themes&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">categories</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;themes&quot;</span><span class="p">,</span> <span class="p">[])</span></div>
+
+
+<div class="viewcode-block" id="ClassificationOrchestrator._extract_categories">
+<a class="viewcode-back" href="../../../orchestrators.html#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._extract_categories">[docs]</a>
+    <span class="k">def</span> <span class="nf">_extract_categories</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">doi</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">classifier</span><span class="p">:</span> <span class="n">AbstractClassifier</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ClassificationResultsDict</span> <span class="o">|</span> <span class="n">ClassificationResultsTuple</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Gets classification results for a specific DOI.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            item: Research metadata dictionary.</span>
+<span class="sd">            doi: DOI identifier.</span>
+<span class="sd">            classifier: Classifier instance that performed classification.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            ClassificationResults: Dictionary of classification results.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># .get_classification_results_by_doi() has a argument of return_type that can be set to either a dictionary or a tuple</span>
+        <span class="c1"># By default it returns a dict, it you want a tuple you can do return_type=tuple</span>
+        <span class="k">return</span> <span class="n">classifier</span><span class="o">.</span><span class="n">get_classification_results_by_doi</span><span class="p">(</span><span class="n">doi</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="ClassificationOrchestrator._make_doi_abstract_dict">
+<a class="viewcode-back" href="../../../orchestrators.html#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._make_doi_abstract_dict">[docs]</a>
+    <span class="k">def</span> <span class="nf">_make_doi_abstract_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">doi</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">abstract</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Creates a DOI to abstract mapping dictionary.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            doi: DOI identifier.</span>
+<span class="sd">            abstract: Research abstract text.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Dict[str, str]: Dictionary mapping DOI to abstract and extra context.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">doi</span> <span class="ow">and</span> <span class="n">abstract</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">{</span><span class="n">doi</span><span class="p">:</span> <span class="n">abstract</span><span class="p">}</span>
+        <span class="k">return</span> <span class="p">{}</span></div>
+
+
+<div class="viewcode-block" id="ClassificationOrchestrator._get_classification_dependencies">
+<a class="viewcode-back" href="../../../orchestrators.html#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._get_classification_dependencies">[docs]</a>
+    <span class="k">def</span> <span class="nf">_get_classification_dependencies</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">,</span> <span class="nb">dict</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Extracts DOI, abstract, and extra context from a research metadata dictionary.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            item: Research metadata dictionary.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Tuple[str, str, dict]: DOI, abstract, and extra context pair.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">result</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="n">AttributeTypes</span><span class="p">,</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">bool</span><span class="p">,</span> <span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">utilities</span><span class="o">.</span><span class="n">get_attributes</span><span class="p">(</span>
+            <span class="n">item</span><span class="p">,</span>
+            <span class="p">[</span>
+                <span class="n">AttributeTypes</span><span class="o">.</span><span class="n">CROSSREF_DOI</span><span class="p">,</span>
+                <span class="n">AttributeTypes</span><span class="o">.</span><span class="n">CROSSREF_ABSTRACT</span><span class="p">,</span>
+                <span class="n">AttributeTypes</span><span class="o">.</span><span class="n">CROSSREF_EXTRA_CONTEXT</span><span class="p">,</span>
+            <span class="p">],</span>
+        <span class="p">)</span>
+        <span class="n">doi</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="n">result</span><span class="p">[</span><span class="n">AttributeTypes</span><span class="o">.</span><span class="n">CROSSREF_DOI</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+            <span class="k">if</span> <span class="n">result</span><span class="p">[</span><span class="n">AttributeTypes</span><span class="o">.</span><span class="n">CROSSREF_DOI</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+            <span class="k">else</span> <span class="kc">None</span>
+        <span class="p">)</span>
+        <span class="n">abstract</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="n">result</span><span class="p">[</span><span class="n">AttributeTypes</span><span class="o">.</span><span class="n">CROSSREF_ABSTRACT</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+            <span class="k">if</span> <span class="n">result</span><span class="p">[</span><span class="n">AttributeTypes</span><span class="o">.</span><span class="n">CROSSREF_ABSTRACT</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+            <span class="k">else</span> <span class="kc">None</span>
+        <span class="p">)</span>
+        <span class="n">extra_context</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="n">result</span><span class="p">[</span><span class="n">AttributeTypes</span><span class="o">.</span><span class="n">CROSSREF_EXTRA_CONTEXT</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+            <span class="k">if</span> <span class="n">result</span><span class="p">[</span><span class="n">AttributeTypes</span><span class="o">.</span><span class="n">CROSSREF_EXTRA_CONTEXT</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+            <span class="k">else</span> <span class="kc">None</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="n">doi</span><span class="p">,</span> <span class="n">abstract</span><span class="p">,</span> <span class="n">extra_context</span></div>
+
+
+<div class="viewcode-block" id="ClassificationOrchestrator._update_classified_instance_variables">
+<a class="viewcode-back" href="../../../orchestrators.html#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._update_classified_instance_variables">[docs]</a>
+    <span class="k">def</span> <span class="nf">_update_classified_instance_variables</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">:</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">doi</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">abstract</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Updates tracking variables for unclassified items.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            item: Research metadata dictionary.</span>
+<span class="sd">            doi: DOI identifier.</span>
+<span class="sd">            abstract: Research abstract text.</span>
+<span class="sd">            extra_context: Extra context dictionary.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">unclassified_item_count</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">unclassified_dois</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">doi</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">doi</span>
+            <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">unclassified_dois</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;NULL&quot;</span><span class="p">)</span>
+        <span class="p">)</span>
+        <span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">unclassified_abstracts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">abstract</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">abstract</span>
+            <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">unclassified_abstracts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;NULL&quot;</span><span class="p">)</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">unclassified_doi_abstract_dict</span><span class="p">[</span><span class="n">doi</span><span class="p">]</span> <span class="o">=</span> <span class="n">abstract</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">unclassified_items</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+        <span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">unclassified_details_dict</span><span class="p">[</span><span class="s2">&quot;dois&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">doi</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">doi</span>
+            <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">unclassified_details_dict</span><span class="p">[</span><span class="s2">&quot;dois&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;NULL&quot;</span><span class="p">)</span>
+        <span class="p">)</span>
+        <span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">unclassified_details_dict</span><span class="p">[</span><span class="s2">&quot;abstracts&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">abstract</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">abstract</span>
+            <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">unclassified_details_dict</span><span class="p">[</span><span class="s2">&quot;abstracts&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;NULL&quot;</span><span class="p">)</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">unclassified_details_dict</span><span class="p">[</span><span class="s2">&quot;items&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="ClassificationOrchestrator._set_classification_ran_true">
+<a class="viewcode-back" href="../../../orchestrators.html#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._set_classification_ran_true">[docs]</a>
+    <span class="k">def</span> <span class="nf">_set_classification_ran_true</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Sets the classification ran flag to true.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_classification_ran</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span></div>
+
+
+<div class="viewcode-block" id="ClassificationOrchestrator._has_ran_classification">
+<a class="viewcode-back" href="../../../orchestrators.html#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._has_ran_classification">[docs]</a>
+    <span class="k">def</span> <span class="nf">_has_ran_classification</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Checks if classification has been run.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_classification_ran</span></div>
+
+
+<div class="viewcode-block" id="ClassificationOrchestrator._validate_classification_ran">
+<a class="viewcode-back" href="../../../orchestrators.html#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._validate_classification_ran">[docs]</a>
+    <span class="k">def</span> <span class="nf">_validate_classification_ran</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">classification_ran</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Validates if classification has been run.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            classification_ran: Boolean indicating if classification has been run.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            RuntimeError: If classification has not been run yet.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">classification_ran</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span>
+                <span class="s2">&quot;Classification has not been run yet. &quot;</span>
+                <span class="s2">&quot;Call run_classification() on your data before attempting to retrieve unclassified attributes. &quot;</span>
+                <span class="s2">&quot;Data should be a list of loaded crossref JSON objects.&quot;</span>
+            <span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="ClassificationOrchestrator._normalize_abstract">
+<a class="viewcode-back" href="../../../orchestrators.html#academic_metrics.orchestrators.classification_orchestrator.ClassificationOrchestrator._normalize_abstract">[docs]</a>
+    <span class="k">def</span> <span class="nf">_normalize_abstract</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">abstract</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Normalizes an abstract by removing LaTeX and converting any resulting unicode to ASCII.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            abstract: Research abstract text.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            str: Normalized abstract.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">converter</span><span class="p">:</span> <span class="n">LatexNodes2Text</span> <span class="o">=</span> <span class="n">LatexNodes2Text</span><span class="p">(</span><span class="n">math_mode</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="p">)</span>
+        <span class="n">unicode_abstract</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">converter</span><span class="o">.</span><span class="n">latex_to_text</span><span class="p">(</span><span class="n">abstract</span><span class="p">)</span>
+        <span class="n">ascii_abstract</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">unidecode</span><span class="p">(</span><span class="n">unicode_abstract</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">ascii_abstract</span></div>
+</div>
+
+</pre></div>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="clearer"></div>
+    </div>
+    <div class="button_nav_wrapper">
+        <div class="button_nav">
+            <div class="left">
+                
+            </div>
+
+            <div class="right">
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Spencer Presley, Cole Barbes.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    </div>
+
+<p id="theme_credit">Styled using the <a href="https://github.com/piccolo-orm/piccolo_theme">Piccolo Theme</a></p>
+  </body>
+</html>
