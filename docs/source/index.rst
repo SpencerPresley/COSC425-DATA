@@ -10,11 +10,9 @@ Welcome to Academic Metrics's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   abstract_classifier
-   category_processor
-   faculty_set_postprocessor
+
+   AI
    config
-   chain_builder
    ai_prompts
    data_collection
    dataclass_models
