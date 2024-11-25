@@ -3,6 +3,19 @@ from typing import Optional, cast
 
 EXECUTE = False
 
+# Dummy paths for documentation/import
+_PROJECT_ROOT = Path("/dummy/project")
+_SRC_ROOT = Path("/dummy/src")
+_ACADEMIC_METRICS_ROOT = Path("/dummy/academic_metrics")
+_DATA_ROOT = Path("/dummy/data")
+_DATA_CORE_ROOT = Path("/dummy/data/core")
+_DATA_OTHER_ROOT = Path("/dummy/data/other")
+SPLIT_FILES_DIR_PATH = Path("/dummy/data/core/crossref_split_files")
+INPUT_FILES_DIR_PATH = Path("/dummy/data/core/input_files")
+OUTPUT_FILES_DIR_PATH = Path("/dummy/data/core/output_files")
+_ACADEMIC_METRICS_PACKAGE_ROOT = Path("/dummy/academic_metrics")
+LOG_DIR_PATH = Path("/dummy/academic_metrics/logs")
+
 
 def locate_academic_metrics_root(marker: str = "COSC425-DATA") -> Path:
     """Find the repository root directory."""
@@ -40,6 +53,5 @@ if EXECUTE:
     SPLIT_FILES_DIR_PATH = _DATA_CORE_ROOT / "crossref_split_files"
     INPUT_FILES_DIR_PATH = _DATA_CORE_ROOT / "input_files"
     OUTPUT_FILES_DIR_PATH = _DATA_CORE_ROOT / "output_files"
-
     _ACADEMIC_METRICS_PACKAGE_ROOT = _SRC_ROOT / "academic_metrics"
     LOG_DIR_PATH = _ACADEMIC_METRICS_PACKAGE_ROOT / "logs"
