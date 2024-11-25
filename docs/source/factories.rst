@@ -7,7 +7,7 @@ Submodules
 factories.abstract\_classifier\_factory module
 ----------------------------------------------
 
-.. automodule:: academic_metrics.factories.abstract_classifier_factory
+.. automodule:: factories.abstract_classifier_factory
    :members:
    :no-index:
    :undoc-members:
@@ -16,7 +16,7 @@ factories.abstract\_classifier\_factory module
 factories.dataclass\_factory module
 -----------------------------------
 
-.. automodule:: academic_metrics.factories.dataclass_factory
+.. automodule:: factories.dataclass_factory
    :members:
    :no-index:
    :undoc-members:
@@ -25,7 +25,7 @@ factories.dataclass\_factory module
 factories.strategy\_factory module
 ----------------------------------
 
-.. automodule:: academic_metrics.factories.strategy_factory
+.. automodule:: factories.strategy_factory
    :members:
    :no-index:
    :undoc-members:
@@ -34,7 +34,7 @@ factories.strategy\_factory module
 Module contents
 ---------------
 
-.. automodule:: academic_metrics.factories
+.. automodule:: factories
    :members:
    :undoc-members:
    :show-inheritance:

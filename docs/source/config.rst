@@ -3,7 +3,7 @@ Global Configuration
 
 Overview
 ----------
-.. automodule:: academic_metrics.configs.global_config
+.. automodule:: configs.global_config
    :no-members:
 
 Module Constants
@@ -36,7 +36,7 @@ Classes
 
 Color Formatter
 ~~~~~~~~~~~~~~~~
-.. autoclass:: academic_metrics.configs.global_config.ColorFormatter
+.. autoclass:: configs.global_config.ColorFormatter
    :members:
    :undoc-members:
    :show-inheritance:
@@ -49,8 +49,8 @@ Functions
 
 Configure Logging
 ~~~~~~~~~~~~~~~~~~
-.. autofunction:: academic_metrics.configs.global_config.configure_logging
+.. autofunction:: configs.global_config.configure_logging
 
 Set Log to Console
 ~~~~~~~~~~~~~~~~~~~
-.. autofunction:: academic_metrics.configs.global_config.set_log_to_console
+.. autofunction:: configs.global_config.set_log_to_console

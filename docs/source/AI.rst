@@ -1,23 +1,22 @@
-DB package
+AI package
 ==========
 
 Submodules
 ----------
 
-DB.DatabaseSetup module
------------------------
+AI.AbstractClassifier module
+----------------------------
 
-.. automodule:: DB.DatabaseSetup
+.. automodule:: AI.AbstractClassifier
    :members:
    :no-index:
    :undoc-members:
    :show-inheritance:
-   :special-members:
 
 Module contents
 ---------------
 
-.. automodule:: DB
+.. automodule:: AI
    :members:
    :undoc-members:
    :show-inheritance:

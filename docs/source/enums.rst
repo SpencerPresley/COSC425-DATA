@@ -7,7 +7,7 @@ Submodules
 enums.dataclass\_enums module
 -----------------------------
 
-.. automodule:: academic_metrics.enums.dataclass_enums
+.. automodule:: enums.dataclass_enums
    :members:
    :no-index:
    :undoc-members:
@@ -16,7 +16,7 @@ enums.dataclass\_enums module
 enums.enums module
 ------------------
 
-.. automodule:: academic_metrics.enums.enums
+.. automodule:: enums.enums
    :members:
    :no-index:
    :undoc-members:
@@ -25,7 +25,7 @@ enums.enums module
 Module contents
 ---------------
 
-.. automodule:: academic_metrics.enums
+.. automodule:: enums
    :members:
    :undoc-members:
    :show-inheritance:

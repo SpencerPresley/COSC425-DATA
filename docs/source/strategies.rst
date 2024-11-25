@@ -7,7 +7,7 @@ Submodules
 strategies.AttributeExtractionStrategies module
 -----------------------------------------------
 
-.. automodule:: academic_metrics.strategies.AttributeExtractionStrategies
+.. automodule:: strategies.AttributeExtractionStrategies
    :members:
    :no-index:
    :undoc-members:
@@ -16,7 +16,7 @@ strategies.AttributeExtractionStrategies module
 Module contents
 ---------------
 
-.. automodule:: academic_metrics.strategies
+.. automodule:: strategies
    :members:
    :undoc-members:
    :show-inheritance:

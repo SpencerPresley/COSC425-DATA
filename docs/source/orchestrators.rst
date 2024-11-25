@@ -7,7 +7,7 @@ Submodules
 orchestrators.category\_data\_orchestrator module
 -------------------------------------------------
 
-.. automodule:: academic_metrics.orchestrators.category_data_orchestrator
+.. automodule:: orchestrators.category_data_orchestrator
    :members:
    :no-index:
    :undoc-members:
@@ -16,7 +16,7 @@ orchestrators.category\_data\_orchestrator module
 orchestrators.classification\_orchestrator module
 -------------------------------------------------
 
-.. automodule:: academic_metrics.orchestrators.classification_orchestrator
+.. automodule:: orchestrators.classification_orchestrator
    :members:
    :no-index:
    :undoc-members:
@@ -25,7 +25,7 @@ orchestrators.classification\_orchestrator module
 Module contents
 ---------------
 
-.. automodule:: academic_metrics.orchestrators
+.. automodule:: orchestrators
    :members:
    :undoc-members:
    :show-inheritance:

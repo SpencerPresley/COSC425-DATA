@@ -7,7 +7,7 @@ Submodules
 data\_collection.CrossrefWrapper module
 ---------------------------------------
 
-.. automodule:: academic_metrics.data_collection.CrossrefWrapper
+.. automodule:: data_collection.CrossrefWrapper
    :members:
    :no-index:
    :undoc-members:
@@ -16,7 +16,7 @@ data\_collection.CrossrefWrapper module
 data\_collection.scraper module
 -------------------------------
 
-.. automodule:: academic_metrics.data_collection.scraper
+.. automodule:: data_collection.scraper
    :members:
    :no-index:
    :undoc-members:
@@ -25,7 +25,7 @@ data\_collection.scraper module
 Module contents
 ---------------
 
-.. automodule:: academic_metrics.data_collection
+.. automodule:: data_collection
    :members:
    :undoc-members:
    :show-inheritance:
