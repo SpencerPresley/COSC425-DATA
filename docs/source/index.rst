@@ -10,8 +10,7 @@ Welcome to Academic Metrics's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-
-   AI
+   ai
    config
    ai_prompts
    data_collection
