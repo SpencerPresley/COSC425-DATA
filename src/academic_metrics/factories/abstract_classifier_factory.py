@@ -8,7 +8,7 @@ from typing import TYPE_CHECKING, Dict
 if TYPE_CHECKING:
     from academic_metrics.utils.taxonomy_util import Taxonomy
 
-from academic_metrics.AI.AbstractClassifier import AbstractClassifier
+from academic_metrics.AI import AbstractClassifier
 from academic_metrics.configs import (
     configure_logging,
     DEBUG,
@@ -57,9 +57,9 @@ class ClassifierFactory:
         self,
         doi_abstract_dict: Dict[str, str],
         extra_context: dict | None = None,
-        pre_classification_model: str | None = None,
-        classification_model: str | None = None,
-        theme_model: str | None = None,
+        pre_classification_model: str | None = "gpt-4o-mini",
+        classification_model: str | None = "gpt-4o-mini",
+        theme_model: str | None = "gpt-4o-mini",
     ) -> AbstractClassifier:
         """Creates an AbstractClassifier instance.
 

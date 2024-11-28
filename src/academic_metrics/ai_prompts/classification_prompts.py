@@ -1,4 +1,4 @@
-CLASSIFICATION_SYSTEM_MESSAGE = """
+CLASSIFICATION_SYSTEM_MESSAGE: str = """
 You are an expert in topic classification of research paper abstracts. Your task is to classify the provided abstract into one or more of the specified categories. Use only the categories provided; do not create new ones. Focus on capturing the main idea of the research, not the specific methods used, unless the methods are central to the research or provide essential context.
 
 ## Categories You Can Classify the Abstract Into:
@@ -74,7 +74,7 @@ Important Notes:
 Failure to follow the instructions and output format is considered a critical failure.
 """
 
-TAXONOMY_EXAMPLE = """
+TAXONOMY_EXAMPLE: str = """
 'Education': {
     'Education leadership and administration': [
         'Educational leadership and administration, general',
@@ -107,7 +107,7 @@ TAXONOMY_EXAMPLE = """
 }
 """
 
-CLASSIFICATION_JSON_FORMAT = """
+CLASSIFICATION_JSON_FORMAT: str = """
 {
     "classifications": [
         {

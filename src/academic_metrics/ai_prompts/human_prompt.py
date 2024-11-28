@@ -1,1 +1,6 @@
-HUMAN_MESSAGE_PROMPT = "## Abstract:\n{abstract}\n## Extra Context:\n{extra_context}"
+HUMAN_MESSAGE_PROMPT: str = """
+## Abstract:
+{abstract}
+## Extra Context:
+{extra_context}
+"""

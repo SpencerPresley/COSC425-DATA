@@ -9,7 +9,6 @@ DB.DatabaseSetup module
 
 .. automodule:: academic_metrics.DB.DatabaseSetup
    :members:
-   :no-index:
    :undoc-members:
    :show-inheritance:
    :special-members:

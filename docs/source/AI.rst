@@ -4,12 +4,11 @@ AI package
 Submodules
 ----------
 
-AI.AbstractClassifier module
-----------------------------------------------
+AI.abstract\_classifier module
+------------------------------
 
-.. automodule:: academic_metrics.AI.AbstractClassifier
+.. automodule:: academic_metrics.AI.abstract_classifier
    :members:
-   :no-index:
    :undoc-members:
    :show-inheritance:
 

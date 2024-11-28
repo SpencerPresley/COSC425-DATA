@@ -3,7 +3,7 @@ from typing import Dict, Any, cast
 import warnings
 import os
 
-from academic_metrics.constants import LOG_DIR_PATH, EXECUTE
+from academic_metrics.constants import LOG_DIR_PATH, EXECUTING_SYSTEM
 
 
 class ColorFormatter(logging.Formatter):
@@ -86,7 +86,7 @@ VALID_LOG_LEVELS = {DEBUG, INFO, WARNING, ERROR, CRITICAL}
 _config_logger = logging.getLogger(__name__)
 _config_logger.setLevel(LOG_LEVEL)
 
-if EXECUTE:
+if EXECUTING_SYSTEM:
     _config_log_file_path = LOG_DIR_PATH / "config.log"
     _file_handler = logging.FileHandler(_config_log_file_path)
     _file_handler.setLevel(LOG_LEVEL)
@@ -252,3 +252,12 @@ def configure_logging(
 
     _configured_loggers[module_name] = logger
     return logger
+
+
+def toggle_executing_system() -> None:
+    """Toggle the global EXECUTING_SYSTEM variable.
+
+    Void function which inverts the current value of EXECUTING_SYSTEM.
+    """
+    global EXECUTING_SYSTEM
+    EXECUTING_SYSTEM = not EXECUTING_SYSTEM

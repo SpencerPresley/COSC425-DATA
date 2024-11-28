@@ -143,7 +143,7 @@ class FacultyStats(AbstractBaseDataClass):
     faculty_stats: Dict[str, FacultyInfo] = field(default_factory=dict)
 
     def refine_faculty_stats(
-        self, *, faculty_name_unrefined: str, name_variations: Dict[str, Any]
+        self, *, faculty_name_unrefined: str, variations: Dict[str, Any]
     ) -> None:
         """
         Refines faculty statistics by updating faculty names based on variations.
@@ -152,16 +152,14 @@ class FacultyStats(AbstractBaseDataClass):
             faculty_name_unrefined (str): Original faculty name
             name_variations (Dict[str, Any]): Dictionary of name variations
         """
-        refined_name = self.get_refined_faculty_name(
-            faculty_name_unrefined, name_variations
-        )
+        refined_name = self.get_refined_faculty_name(faculty_name_unrefined, variations)
         if faculty_name_unrefined in self.faculty_stats:
             self.faculty_stats[refined_name] = self.faculty_stats.pop(
                 faculty_name_unrefined
             )
 
     def get_refined_faculty_name(
-        self, unrefined_name: str, name_variations: Dict[str, Any]
+        self, unrefined_name: str, variations: Dict[str, Any]
     ) -> str:
         """
         Gets the refined name for a faculty member.
@@ -173,9 +171,9 @@ class FacultyStats(AbstractBaseDataClass):
         Returns:
             str: Refined faculty name
         """
-        for normalized_name, name_variation in name_variations.items():
-            if unrefined_name in name_variation.variations:
-                return name_variation.most_frequent_variation()
+        for _, variation in variations.items():
+            if unrefined_name in variation.variations:
+                return variation.most_frequent_variation()
         return unrefined_name
 
     def set_params(self, params: Dict[str, Any]) -> None:

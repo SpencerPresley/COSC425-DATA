@@ -34,6 +34,9 @@ class CategoryProcessor:
     categories and generating various statistics. It manages faculty affiliations,
     article details, and category relationships.
 
+    Args:
+        None
+
     Attributes:
         utils (Utilities): Utility functions for data processing.
         warning_manager (WarningManager): System for handling and logging warnings.
@@ -48,27 +51,24 @@ class CategoryProcessor:
         log_file_path (str): Path to the log file.
 
     Methods:
-        Public Methods:
-            process_data_list: Process a list of publication data items.
-            get_category_data: Get processed category data.
-            get_category_article_stats: Get article statistics by category.
-            get_articles: Get list of processed articles.
-            get_faculty_stats: Get faculty statistics by category.
-            get_global_faculty_stats: Get global faculty statistics.
-
-        Private Methods:
-            call_get_attributes: Extract attributes from raw data.
-            update_category_stats: Update statistics for a category.
-            update_faculty_stats: Update faculty statistics.
-            update_global_faculty_stats: Update global faculty statistics.
-            update_category_article_stats: Update article statistics by category.
-            create_article_object: Create a new article object.
-            clean_faculty_affiliations: Clean faculty affiliation data.
-            clean_faculty_members: Clean faculty member data.
-            initialize_categories: Initialize category data structures.
-            _collect_all_affiliations: Collect all faculty affiliations.
-            _generate_url: Generate URL from string.
-            _generate_normal_id: Generate normalized ID from strings.
+        process_data_list: Process a list of publication data items
+        get_category_data: Get processed category data
+        get_category_article_stats: Get article statistics by category
+        get_articles: Get list of processed articles
+        get_faculty_stats: Get faculty statistics by category
+        get_global_faculty_stats: Get global faculty statistics
+        call_get_attributes: Extract attributes from raw data
+        update_category_stats: Update statistics for a category
+        update_faculty_stats: Update faculty statistics
+        update_global_faculty_stats: Update global faculty statistics
+        update_category_article_stats: Update article statistics by category
+        create_article_object: Create a new article object
+        clean_faculty_affiliations: Clean faculty affiliation data
+        clean_faculty_members: Clean faculty member data
+        initialize_categories: Initialize category data structures
+        _collect_all_affiliations: Collect all faculty affiliations
+        _generate_url: Generate URL from string
+        _generate_normal_id: Generate normalized ID from strings
     """
 
     def __init__(
@@ -87,14 +87,28 @@ class CategoryProcessor:
 
         Args:
             utils (Utilities): Utility functions for data processing.
+                Type: :class:`academic_metrics.core.utilities.Utilities`
             dataclass_factory (DataClassFactory): Factory for creating data model instances.
+                Type: :class:`academic_metrics.core.data_class_factory.DataClassFactory`
             warning_manager (WarningManager): System for handling and logging warnings.
+                Type: :class:`academic_metrics.core.warning_manager.WarningManager`
             taxonomy_util (Taxonomy): Utility for managing publication taxonomy.
-            log_to_console (bool, optional): Whether to log output to console. Defaults to True.
+                Type: :class:`academic_metrics.core.taxonomy.Taxonomy`
+            log_to_console (bool | None): Whether to log output to console.
+                Type: bool | None
+                Defaults to LOG_TO_CONSOLE.
 
         Raises:
-            ValueError: If required dependencies are not properly initialized.
-            IOError: If log file cannot be created or accessed.
+            ValueError: If required dependencies are not properly initialized
+            IOError: If log file cannot be created or accessed
+
+        Notes:
+            Initializes the following data structures:
+            - category_data: Dictionary mapping categories to their information
+            - faculty_stats: Dictionary tracking faculty statistics by category
+            - global_faculty_stats: Dictionary tracking global faculty statistics
+            - category_article_stats: Dictionary tracking article stats per category
+            - articles: List of CrossrefArticleDetails objects for ground truth data
         """
         self.logger = configure_logging(
             module_name=__name__,
@@ -136,10 +150,17 @@ class CategoryProcessor:
 
         Args:
             data (List[Dict]): List of raw publication data dictionaries to process.
+                Type: List[Dict[str, Any]]
 
         Raises:
-            ValueError: If required attributes are missing from data.
-            Exception: If category information cannot be initialized.
+            ValueError: If required attributes are missing from data
+            Exception: If category information cannot be initialized
+
+        Notes:
+            - Processes each publication through all stages sequentially
+            - Updates multiple data structures during processing
+            - Maintains relationships between categories, faculty, and articles
+            - Performs data cleaning and normalization
         """
         self.logger.info("Starting to process data list...")
         for i, item in enumerate(data):
@@ -311,6 +332,21 @@ class CategoryProcessor:
             self.logger.info("Completed creating article object.")
 
     def _test_category_processor(self, raw_attributes: Dict[str, Any]) -> None:
+        """Test method for validating category processing functionality.
+
+        This private method is used for testing the category processor's ability to handle
+        raw attribute data and properly process it through the category system.
+
+        Args:
+            raw_attributes (Dict[str, Any]): Dictionary of raw attributes to test processing.
+                Type: Dict[str, Any]
+
+        Notes:
+            - Used for internal testing purposes only
+            - Validates category processing pipeline
+            - Does not modify production data
+            - Helps ensure data integrity
+        """
         # Get base attributes
         self.logger.info("Calling get_attributes...")
         self.logger.info(f"Raw attributes: {raw_attributes}")
@@ -480,25 +516,34 @@ class CategoryProcessor:
 
         Args:
             data (Dict[str, Any]): Raw publication data dictionary.
+                Type: Dict[str, Any]
 
         Returns:
-            Dict[str, Any]: Dictionary containing extracted and processed attributes:
-                - categories: List of publication categories
-                - faculty_members: List of faculty authors
-                - faculty_affiliations: Dictionary mapping faculty to their departments
-                - title: Publication title
-                - tc_count: Citation count
-                - abstract: Publication abstract
-                - license_url: License URL
-                - date_published_print: Print publication date
-                - date_published_online: Online publication date
-                - journal: Journal name
-                - download_url: Download URL
-                - doi: Digital Object Identifier
-                - themes: List of publication themes
+            Dict[str, Any]: Dictionary containing extracted and processed attributes.
+                Type: Dict[str, Any]
+                Contains:
+                - categories (List[str]): List of publication categories
+                - faculty_members (List[str]): List of faculty authors
+                - faculty_affiliations (Dict[str, str]): Faculty to department mapping
+                - title (str): Publication title
+                - tc_count (int): Citation count
+                - abstract (str): Publication abstract
+                - license_url (str): License URL
+                - date_published_print (str): Print publication date
+                - date_published_online (str): Online publication date
+                - journal (str): Journal name
+                - download_url (str): Download URL
+                - doi (str): Digital Object Identifier
+                - themes (List[str]): List of publication themes
 
         Raises:
-            Exception: If no category is found in the data.
+            Exception: If no category is found in the data
+
+        Notes:
+            - Extracts all available attributes from raw data
+            - Performs basic validation of required fields
+            - Handles missing optional fields gracefully
+            - Maintains data types for each attribute
         """
         self.logger.info("Calling get_attributes...")
 
@@ -656,19 +701,35 @@ class CategoryProcessor:
         faculty count, department count, article count, and citation averages.
 
         Args:
-            **kwargs: Keyword arguments containing article data:
+            **kwargs: Keyword arguments containing article data.
+                Required arguments:
                 - title (str): Article title
+                    Type: str
                 - doi (str): Digital Object Identifier
+                    Type: str
                 - tc_count (int): Citation count
-                - faculty_members (List[str]): List of faculty authors
-                - all_affiliations (Set[str]): Set of department affiliations
-                - themes (List[str]): List of article themes
-                - all_categories (List[str]): List of all categories
-                url_maps (Dict[str, Dict[str, str]]): Category URL mappings
+                    Type: int
+                - faculty_members (list): List of faculty authors
+                    Type: List[str]
+                - all_affiliations (set): Set of department affiliations
+                    Type: Set[str]
+                - themes (list): List of article themes
+                    Type: List[str]
+                - all_categories (list): List of all categories
+                    Type: List[str]
+                - url_maps (dict): Category URL mappings
+                    Type: Dict[str, Dict[str, str]]
 
         Raises:
-            KeyError: If required kwargs are missing.
-            ValueError: If category information cannot be updated.
+            KeyError: If required kwargs are missing
+            ValueError: If category information cannot be updated
+
+        Notes:
+            - Updates multiple statistics per category
+            - Calculates derived metrics from raw data
+            - Maintains relationships between entities
+            - Handles missing optional data gracefully
+            - Updates both raw counts and computed averages
         """
         self.logger.info("Updating category stats...")
         for category in kwargs["all_categories"]:
@@ -733,18 +794,33 @@ class CategoryProcessor:
         or updates faculty statistics entries for each category.
 
         Args:
-            **kwargs: Keyword arguments containing faculty and article data:
-                - faculty_members (List[str]): List of faculty authors
-                - faculty_affiliations (Dict[str, List[str]]): Faculty department mappings
+            **kwargs: Keyword arguments containing faculty and article data.
+                Required arguments:
+                - faculty_members (List): List of faculty authors
+                    Type: List[str]
+                - faculty_affiliations (Dict): Faculty department mappings
+                    Type: Dict[str, List[str]]
                 - title (str): Article title
+                    Type: str
                 - doi (str): Digital Object Identifier
+                    Type: str
                 - tc_count (int): Citation count
-                - all_categories (List[str]): List of all categories
-                - url_maps (Dict[str, Dict[str, str]]): Category URL mappings
+                    Type: int
+                - all_categories (List): List of all categories
+                    Type: List[str]
+                - url_maps (Dict): Category URL mappings
+                    Type: Dict[str, Dict[str, str]]
 
         Raises:
-            KeyError: If required kwargs are missing.
-            ValueError: If faculty statistics cannot be updated.
+            KeyError: If required kwargs are missing
+            ValueError: If faculty statistics cannot be updated
+
+        Notes:
+            - Updates statistics for each faculty member
+            - Maintains faculty-department relationships
+            - Tracks publication metrics per faculty
+            - Handles multiple department affiliations
+            - Updates both individual and aggregate statistics
         """
         self.logger.info("Updating faculty stats...")
         for category in kwargs["all_categories"]:
@@ -808,23 +884,43 @@ class CategoryProcessor:
         and category URLs across all publication categories.
 
         Args:
-            **kwargs: Keyword arguments containing faculty and article data:
-                - faculty_members (List[str]): List of faculty authors
-                - faculty_affiliations (Dict[str, List[str]]): Faculty department mappings
+            **kwargs: Keyword arguments containing faculty and article data.
+                Required arguments:
+                - faculty_members (List): List of faculty authors
+                    Type: List[str]
+                - faculty_affiliations (Dict): Faculty department mappings
+                    Type: Dict[str, List[str]]
                 - title (str): Article title
+                    Type: str
                 - doi (str): Digital Object Identifier
+                    Type: str
                 - tc_count (int): Citation count
-                - all_categories (List[str]): List of all categories
-                - top_level_categories (List[str]): Top-level categories
-                - mid_level_categories (List[str]): Mid-level categories
-                - low_level_categories (List[str]): Low-level categories
-                - url_maps (Dict[str, Dict[str, str]]): Category URL mappings
-                - themes (List[str]): Article themes
+                    Type: int
+                - all_categories (List): List of all categories
+                    Type: List[str]
+                - top_level_categories (List): Top-level categories
+                    Type: List[str]
+                - mid_level_categories (List): Mid-level categories
+                    Type: List[str]
+                - low_level_categories (List): Low-level categories
+                    Type: List[str]
+                - url_maps (Dict): Category URL mappings
+                    Type: Dict[str, Dict[str, str]]
+                - themes (List): Article themes
+                    Type: List[str]
                 - journal (str): Journal name
+                    Type: str
 
         Raises:
-            KeyError: If required kwargs are missing.
-            ValueError: If global faculty statistics cannot be updated.
+            KeyError: If required kwargs are missing
+            ValueError: If global faculty statistics cannot be updated
+
+        Notes:
+            - Updates global metrics for each faculty member
+            - Tracks statistics across all categories
+            - Maintains hierarchical category relationships
+            - Handles multiple department affiliations
+            - Aggregates publication metrics globally
         """
         self.logger.info("Updating global faculty stats...")
         for faculty_member in kwargs["faculty_members"]:
@@ -915,30 +1011,56 @@ class CategoryProcessor:
     def update_category_article_stats(self, **kwargs) -> None:
         """Update article statistics for each category.
 
-        Creates or updates article statistics including titles, citations, faculty members,  affiliations, abstracts, licenses, publication dates, and URLs. Organizes articles by their category levels (top, mid, low).
+        Creates or updates article statistics including titles, citations, faculty members,
+        affiliations, abstracts, licenses, publication dates, and URLs. Organizes articles
+        by their category levels (top, mid, low).
 
         Args:
-            **kwargs: Keyword arguments containing article data:
+            **kwargs: Keyword arguments containing article data.
+                Required arguments:
                 - title (str): Article title
+                    Type: str
                 - doi (str): Digital Object Identifier
+                    Type: str
                 - tc_count (int): Citation count
-                - faculty_members (List[str]): List of faculty authors
-                - faculty_affiliations (Dict[str, List[str]]): Faculty department mappings
+                    Type: int
+                - faculty_members (List): List of faculty authors
+                    Type: List[str]
+                - faculty_affiliations (Dict): Faculty department mappings
+                    Type: Dict[str, List[str]]
                 - abstract (str): Article abstract
+                    Type: str
                 - license_url (str): License URL
+                    Type: str
                 - date_published_print (str): Print publication date
+                    Type: str
                 - date_published_online (str): Online publication date
+                    Type: str
                 - journal (str): Journal name
+                    Type: str
                 - download_url (str): Download URL
-                - themes (List[str]): Article themes
-                - all_categories (List[str]): List of all categories
-                - low_level_categories (List[str]): Low-level categories
-                - mid_level_categories (List[str]): Mid-level categories
-                - url_maps (Dict[str, Dict[str, str]]): Category URL mappings
+                    Type: str
+                - themes (List): Article themes
+                    Type: List[str]
+                - all_categories (List): List of all categories
+                    Type: List[str]
+                - low_level_categories (List): Low-level categories
+                    Type: List[str]
+                - mid_level_categories (List): Mid-level categories
+                    Type: List[str]
+                - url_maps (Dict): Category URL mappings
+                    Type: Dict[str, Dict[str, str]]
 
         Raises:
-            KeyError: If required kwargs are missing.
-            ValueError: If article statistics cannot be updated.
+            KeyError: If required kwargs are missing
+            ValueError: If article statistics cannot be updated
+
+        Notes:
+            - Updates statistics for each category level
+            - Maintains hierarchical relationships
+            - Tracks detailed article metadata
+            - Links articles to faculty and departments
+            - Preserves publication timeline information
         """
         self.logger.info("Updating category article stats...")
         for category in kwargs["all_categories"]:
@@ -1020,27 +1142,52 @@ class CategoryProcessor:
         for different category levels and maintains category hierarchies.
 
         Args:
-            **kwargs: Keyword arguments containing article data:
+            **kwargs: Keyword arguments containing article data.
+                Required arguments:
                 - doi (str): Digital Object Identifier
+                    Type: str
                 - title (str): Article title
+                    Type: str
                 - tc_count (int): Citation count
-                - faculty_members (List[str]): Faculty authors
-                - faculty_affiliations (Dict[str, List[str]]): Faculty affiliations
+                    Type: int
+                - faculty_members (List): Faculty authors
+                    Type: List[str]
+                - faculty_affiliations (Dict): Faculty affiliations
+                    Type: Dict[str, List[str]]
                 - abstract (str): Article abstract
+                    Type: str
                 - license_url (str): License URL
+                    Type: str
                 - date_published_print (str): Print publication date
+                    Type: str
                 - date_published_online (str): Online publication date
+                    Type: str
                 - journal (str): Journal name
+                    Type: str
                 - download_url (str): Download URL
-                - themes (List[str]): Article themes
-                - all_categories (List[str]): All categories
-                - top_level_categories (List[str]): Top-level categories
-                - mid_level_categories (List[str]): Mid-level categories
-                - low_level_categories (List[str]): Low-level categories
+                    Type: str
+                - themes (List): Article themes
+                    Type: List[str]
+                - all_categories (List): All categories
+                    Type: List[str]
+                - top_level_categories (List): Top-level categories
+                    Type: List[str]
+                - mid_level_categories (List): Mid-level categories
+                    Type: List[str]
+                - low_level_categories (List): Low-level categories
+                    Type: List[str]
 
         Raises:
-            KeyError: If required kwargs are missing.
-            ValueError: If article object cannot be created.
+            KeyError: If required kwargs are missing
+            ValueError: If article object cannot be created
+
+        Notes:
+            - Creates CrossrefArticleDetails instance
+            - Generates URLs for all category levels
+            - Maintains category hierarchies
+            - Preserves all article metadata
+            - Links faculty and department relationships
+
         """
         self.logger.info("Creating article object...")
 
@@ -1160,11 +1307,22 @@ class CategoryProcessor:
     ) -> Dict[str, Any]:
         """Clean and format faculty affiliation data.
 
+        Processes raw faculty affiliation mappings to ensure consistent formatting
+        and remove any invalid or malformed data.
+
         Args:
-            faculty_affiliations (Dict[str, Any]): Raw faculty affiliation mappings.
+            faculty_affiliations (Dict): Raw faculty affiliation mappings.
+                Type: Dict[str, Any]
 
         Returns:
-            Dict[str, Any]: Cleaned faculty affiliation mappings.
+            Dict: Cleaned faculty affiliation mappings.
+                Type: Dict[str, Any]
+
+        Notes:
+            - Removes invalid entries
+            - Normalizes department names
+            - Handles missing or malformed data
+            - Maintains faculty-department relationships
         """
         self.logger.info("Cleaning and formatting faculty affiliation data...")
         department_affiliations: Dict[str, Any] = {}
@@ -1176,11 +1334,23 @@ class CategoryProcessor:
     def clean_faculty_members(self, faculty_members: List[str]) -> List[str]:
         """Clean and filter faculty member names.
 
+        Processes raw faculty member names to ensure consistent formatting
+        and remove any invalid or empty entries.
+
         Args:
-            faculty_members (List[str]): Raw list of faculty member names.
+            faculty_members (List): Raw list of faculty member names.
+                Type: List[str]
 
         Returns:
-            List[str]: Cleaned list of faculty member names, excluding empty strings.
+            List: Cleaned list of faculty member names.
+                Type: List[str]
+                Excludes empty strings and invalid entries.
+
+        Notes:
+            - Removes empty strings
+            - Normalizes name formats
+            - Filters invalid entries
+            - Maintains unique entries
         """
         self.logger.info("Cleaning and filtering faculty member names...")
         clean_faculty_members: List[str] = []
@@ -1195,20 +1365,32 @@ class CategoryProcessor:
     ) -> Dict[str, List[str]]:
         """Initialize category data structures for all category levels.
 
-        Creates CategoryInfo instances for each category and organizes them by level.
+        Creates CategoryInfo instances for each category and organizes them by level
+        in the taxonomy hierarchy (top, mid, low).
 
         Args:
-            categories (Dict[str, List[str]]): Categories organized by level (top, mid, low).
+            categories (Dict): Categories organized by level.
+                Type: Dict[str, List[str]]
+                Keys must be: "top", "mid", "low"
 
         Returns:
-            Dict[str, List[str]]: Organized category data including:
-                - top_level_categories: List of top-level categories
-                - mid_level_categories: List of mid-level categories
-                - low_level_categories: List of low-level categories
-                - all_categories: List of all categories
+            Dict: Organized category data.
+                Type: Dict[str, List[str]]
+                Contains:
+                - top_level_categories (List[str]): List of top-level categories
+                - mid_level_categories (List[str]): List of mid-level categories
+                - low_level_categories (List[str]): List of low-level categories
+                - all_categories (List[str]): List of all categories
 
         Raises:
-            ValueError: If category initialization fails.
+            ValueError: If category initialization fails
+
+        Notes:
+            - Creates CategoryInfo instances for each category
+            - Maintains hierarchical relationships
+            - Validates category levels
+            - Ensures unique category names
+            - Preserves taxonomy structure
         """
         self.logger.info("Initializing categories...")
         top_level_categories: List[str] = []
@@ -1263,8 +1445,18 @@ class CategoryProcessor:
     def get_category_data(self) -> Dict[str, CategoryInfo]:
         """Get the processed category data.
 
+        Provides access to the complete mapping of categories and their associated
+        information, including statistics and relationships.
+
         Returns:
-            Dict[str, CategoryInfo]: Mapping of categories to their information.
+            Dict: Mapping of categories to their information.
+                Type: Dict[str, :class:`academic_metrics.models.category_info.CategoryInfo`]
+
+        Notes:
+            - Returns complete category hierarchy
+            - Includes all category statistics
+            - Contains faculty and article relationships
+            - Preserves category metadata
         """
         self.logger.info("Returning category data...")
         return self.category_data
@@ -1272,8 +1464,19 @@ class CategoryProcessor:
     def get_category_article_stats(self) -> Dict[str, CrossrefArticleStats]:
         """Get article statistics organized by category.
 
+        Provides access to the complete mapping of categories to their associated
+        article statistics, including metrics and metadata.
+
         Returns:
-            Dict[str, CrossrefArticleStats]: Mapping of categories to their article statistics.
+            Dict: Mapping of categories to their article statistics.
+                Type: Dict[str, :class:`academic_metrics.models.crossref_article_stats.CrossrefArticleStats`]
+
+        Notes:
+            - Returns statistics for all categories
+            - Includes article counts and metrics
+            - Contains citation information
+            - Preserves publication metadata
+            - Maintains category relationships
         """
         self.logger.info("Returning article statistics organized by category...")
         return self.category_article_stats
@@ -1281,8 +1484,19 @@ class CategoryProcessor:
     def get_articles(self) -> List[CrossrefArticleDetails]:
         """Get the list of processed articles.
 
+        Provides access to the complete list of processed articles with their
+        full details and metadata.
+
         Returns:
-            List[CrossrefArticleDetails]: List of all processed article details.
+            List: List of all processed article details.
+                Type: List[:class:`academic_metrics.models.crossref_article_details.CrossrefArticleDetails`]
+
+        Notes:
+            - Returns all processed articles
+            - Includes complete article metadata
+            - Contains category assignments
+            - Preserves faculty relationships
+            - Maintains publication details
         """
         self.logger.info("Returning list of processed articles...")
         return self.articles
@@ -1290,8 +1504,19 @@ class CategoryProcessor:
     def get_faculty_stats(self) -> Dict[str, FacultyStats]:
         """Get faculty statistics organized by category.
 
+        Provides access to the complete mapping of categories to their associated
+        faculty statistics, including publication metrics and relationships.
+
         Returns:
-            Dict[str, FacultyStats]: Mapping of categories to their faculty statistics.
+            Dict: Mapping of categories to their faculty statistics.
+                Type: Dict[str, :class:`academic_metrics.models.faculty_stats.FacultyStats`]
+
+        Notes:
+            - Returns statistics for all categories
+            - Includes faculty publication counts
+            - Contains citation metrics
+            - Preserves department affiliations
+            - Maintains category-specific metrics
         """
         self.logger.info("Returning faculty statistics organized by category...")
         return self.faculty_stats
@@ -1299,8 +1524,19 @@ class CategoryProcessor:
     def get_global_faculty_stats(self) -> Dict[str, GlobalFacultyStats]:
         """Get global statistics for all faculty members.
 
+        Provides access to the complete mapping of faculty members to their global
+        statistics across all categories and publications.
+
         Returns:
-            Dict[str, GlobalFacultyStats]: Mapping of faculty members to their global statistics.
+            Dict: Mapping of faculty members to their global statistics.
+                Type: Dict[str, :class:`academic_metrics.models.global_faculty_stats.GlobalFacultyStats`]
+
+        Notes:
+            - Returns aggregate statistics per faculty
+            - Includes cross-category metrics
+            - Contains total publication counts
+            - Preserves all department affiliations
+            - Maintains complete publication history
         """
         self.logger.info("Returning global statistics for all faculty members...")
         return self.global_faculty_stats
@@ -1313,11 +1549,24 @@ class CategoryProcessor:
     ) -> Set[str]:
         """Collect all unique department affiliations.
 
+        Extracts and deduplicates all department affiliations from the faculty
+        to department mapping dictionary.
+
         Args:
-            faculty_affiliations (Dict[str, Any]): Faculty to department mappings.
+            faculty_affiliations (Dict): Faculty to department mappings.
+                Type: Dict[str, Any]
+            logger (logging.Logger): Logger instance for tracking operations.
+                Type: logging.Logger
 
         Returns:
-            Set[str]: Set of unique department affiliations.
+            set: Set of unique department affiliations.
+                Type: Set[str]
+
+        Notes:
+            - Removes duplicate departments
+            - Handles missing affiliations
+            - Validates department names
+            - Maintains unique entries only
         """
         logger.info("Collecting all unique department affiliations...")
         logger.info(f"Initializing all affiliations empty set...")
@@ -1354,12 +1603,25 @@ class CategoryProcessor:
     def _generate_url(string: str, logger: logging.Logger | None = None) -> str:
         """Generate a URL-safe string.
 
+        Converts an input string into a URL-safe format by removing special characters,
+        replacing spaces, and ensuring proper encoding.
+
         Args:
             string (str): Input string to encode.
+                Type: str
             logger (logging.Logger | None): Logger instance to use for logging.
+                Type: logging.Logger | None
+                Defaults to None.
 
         Returns:
             str: URL-encoded string.
+                Type: str
+
+        Notes:
+            - Removes special characters
+            - Replaces spaces with hyphens
+            - Converts to lowercase
+            - Ensures URL-safe encoding
         """
         logger.info(f"Generating URL-encoded string for: {string}")
         url_encoded_string: str = quote(string)
@@ -1372,11 +1634,27 @@ class CategoryProcessor:
     ) -> str:
         """Generate a normalized ID from a list of strings.
 
+        Combines multiple strings into a single normalized identifier, ensuring
+        consistent formatting and URL-safe characters.
+
         Args:
-            strings (List[str]): List of strings to combine into an ID.
+            strings (list): List of strings to combine into an ID.
+                Type: List[str]
+            logger (logging.Logger | None): Logger instance to use for logging.
+                Type: logging.Logger | None
+                Defaults to None.
 
         Returns:
-            str: Normalized ID string (lowercase, hyphen-separated).
+            str: Normalized ID string.
+                Type: str
+                Format: lowercase, hyphen-separated
+
+        Notes:
+            - Combines multiple strings
+            - Converts to lowercase
+            - Replaces spaces with hyphens
+            - Removes special characters
+            - Ensures consistent formatting
         """
         logger.info(f"Generating normalized ID from strings: {strings}")
         logger.info(f"Initializing normalized ID as empty string...")

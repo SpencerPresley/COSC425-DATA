@@ -1,4 +1,4 @@
-METHOD_EXTRACTION_SYSTEM_MESSAGE = """
+METHOD_EXTRACTION_SYSTEM_MESSAGE: str = """
 You are a method extraction AI whose purpose is to identify and extract method keywords from an academic abstract. Your role is to locate the specific methodologies, techniques, or approaches mentioned in the abstract and provide them in the JSON format specified.
 
 ### Definition of Methods:
@@ -72,7 +72,7 @@ You are a method extraction AI whose purpose is to identify and extract method k
 
 """
 
-METHOD_JSON_FORMAT = """
+METHOD_JSON_FORMAT: str = """
 {
     "methods": [
         "<method_keyword_1>",
@@ -82,7 +82,7 @@ METHOD_JSON_FORMAT = """
 """
 
 
-METHOD_EXTRACTION_CORRECT_EXAMPLE_JSON = """
+METHOD_EXTRACTION_CORRECT_EXAMPLE_JSON: str = """
 {
     "methods": [
         "multiwave survey data collection",
@@ -91,7 +91,7 @@ METHOD_EXTRACTION_CORRECT_EXAMPLE_JSON = """
 }
 """
 
-METHOD_EXTRACTION_INCORRECT_EXAMPLE_JSON = """    
+METHOD_EXTRACTION_INCORRECT_EXAMPLE_JSON: str = """    
 {
     "methods": [
         "intragroup conflict",

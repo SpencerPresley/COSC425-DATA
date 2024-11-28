@@ -10,7 +10,7 @@ from . import (
     strategies,
     utils,
 )
-from .core import CategoryProcessor, FacultyPostprocessor, NameVariation
+from .core import CategoryProcessor
 from .data_collection.CrossrefWrapper import CrossrefWrapper
 from .data_collection.scraper import Scraper
 from .dataclass_models.concrete_dataclasses import (
@@ -30,3 +30,4 @@ from .factories import (
 
 # Expose commonly used classes/functions at the package level
 from .utils import Taxonomy, Utilities, WarningManager
+from .other import TAXONOMY_AS_STRING

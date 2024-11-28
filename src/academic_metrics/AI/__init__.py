@@ -1,1 +1,1 @@
-from .AbstractClassifier import AbstractClassifier
+from .abstract_classifier import AbstractClassifier

@@ -1,4 +1,4 @@
-THEME_RECOGNITION_SYSTEM_MESSAGE = """
+THEME_RECOGNITION_SYSTEM_MESSAGE: str = """
 You are an AI assistant who is an expert in recognizing themes present in research paper abstracts. Your task is to identify the main themes present in the abstract. A theme is a main idea or central concept that the research is exploring; it should not be driven by the specific methods used to conduct the research.
 
 Previous AI assistants have processed the abstract in the following ways:
@@ -93,7 +93,7 @@ Your output should be a JSON object following the provided structure:
 
 """
 
-THEME_RECOGNITION_JSON_FORMAT = """
+THEME_RECOGNITION_JSON_FORMAT: str = """
 {
     "themes": ["<list of all the themes you identified to be present in the abstract>"]
 }

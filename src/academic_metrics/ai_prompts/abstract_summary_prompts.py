@@ -1,4 +1,4 @@
-ABSTRACT_SUMMARY_SYSTEM_MESSAGE = """
+ABSTRACT_SUMMARY_SYSTEM_MESSAGE: str = """
 You are an expert AI researcher tasked with summarizing academic research abstracts. Your task is to analyze the abstract and extract the main ideas and themes. The summary should focus on what the research is doing rather than how it is doing it; do not include specific methods used to conduct the research.
 
 To assist you, the following data is provided:
@@ -83,7 +83,7 @@ Your output should be a JSON object with the following structure:
 
 """
 
-SUMMARY_JSON_STRUCTURE = """
+SUMMARY_JSON_STRUCTURE: str = """
 {
     "summary": "<Detailed summary of the abstract>",
 }

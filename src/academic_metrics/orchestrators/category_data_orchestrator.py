@@ -14,18 +14,21 @@ from academic_metrics.dataclass_models import CategoryInfo, FacultyStats
 if TYPE_CHECKING:
     from academic_metrics.core import (
         CategoryProcessor,
-        FacultyPostprocessor,
-        NameVariation,
     )
     from academic_metrics.dataclass_models import (
         CrossrefArticleDetails,
         CrossrefArticleStats,
+        StringVariation,
     )
     from academic_metrics.factories import (
         DataClassFactory,
         StrategyFactory,
         Utilities,
         WarningManager,
+    )
+    from academic_metrics.postprocessing import (
+        DepartmentPostprocessor,
+        FacultyPostprocessor,
     )
 
 
@@ -57,35 +60,33 @@ class CategoryDataOrchestrator:
         log_file_path (str): Path to the log file.
 
     Methods:
-        Public Methods:
-            run_orchestrator: Executes the main data processing workflow.
-            get_final_category_data: Returns processed category data.
-            get_final_faculty_data: Returns processed faculty data.
-            get_final_global_faculty_data: Returns processed global faculty data.
-            get_final_article_stats_data: Returns processed article statistics.
-            get_final_article_data: Returns processed article details.
-
-        Private Methods:
-            _save_all_results: Saves all processed data to files.
-            _refine_faculty_sets: Refines faculty sets by removing duplicates.
-            _refine_faculty_stats: Refines faculty statistics based on name variations.
-            _clean_category_data: Prepares category data by removing unwanted keys.
-            _serialize_and_save_category_data: Serializes and saves category data.
-            _serialize_and_save_faculty_stats: Serializes and saves faculty statistics.
-            _serialize_and_save_global_faculty_stats: Serializes and saves global faculty statistics.
-            _serialize_and_save_category_article_stats: Serializes and saves article statistics.
-            _serialize_and_save_articles: Serializes and saves article details.
-            _flatten_to_list: Flattens nested data structures into a list.
-            _write_to_json: Writes data to JSON file.
+        :meth:`~academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.run_orchestrator`: Executes the main data processing workflow.
+        :meth:`~academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.get_final_category_data`: Returns processed category data.
+        :meth:`~academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.get_final_faculty_data`: Returns processed faculty data.
+        :meth:`~academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.get_final_global_faculty_data`: Returns processed global faculty data.
+        :meth:`~academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.get_final_article_stats_data`: Returns processed article statistics.
+        :meth:`~academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator.get_final_article_data`: Returns processed article details.
+        :meth:`~academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._save_all_results`: Saves all processed data to files.
+        :meth:`~academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._refine_faculty_sets`: Refines faculty sets by removing duplicates.
+        :meth:`~academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._refine_faculty_stats`: Refines faculty statistics based on name variations.
+        :meth:`~academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._clean_category_data`: Prepares category data by removing unwanted keys.
+        :meth:`~academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._serialize_and_save_category_data`: Serializes and saves category data.
+        :meth:`~academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._serialize_and_save_faculty_stats`: Serializes and saves faculty statistics.
+        :meth:`~academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._serialize_and_save_global_faculty_stats`: Serializes and saves global faculty statistics.
+        :meth:`~academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._serialize_and_save_category_article_stats`: Serializes and saves article statistics.
+        :meth:`~academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._serialize_and_save_articles`: Serializes and saves article details.
+        :meth:`~academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._flatten_to_list`: Flattens nested data structures into a list.
+        :meth:`~academic_metrics.orchestrators.category_data_orchestrator.CategoryDataOrchestrator._write_to_json`: Writes data to JSON file.
     """
 
     def __init__(
         self,
         *,
-        data: list[dict],
+        data: List[Dict],
         output_dir_path: str,
         category_processor: CategoryProcessor,
         faculty_postprocessor: FacultyPostprocessor,
+        department_postprocessor: DepartmentPostprocessor,
         strategy_factory: StrategyFactory,
         dataclass_factory: DataClassFactory,
         warning_manager: WarningManager,
@@ -98,7 +99,7 @@ class CategoryDataOrchestrator:
         initializes internal data structures for storing processed results.
 
         Args:
-            data (list[dict]): Raw classified publication data to process.
+            data (List[Dict]): Raw classified publication data to process.
             output_dir_path (str): Directory path where output files will be saved.
             category_processor (CategoryProcessor): Processor for handling category-related operations.
             faculty_postprocessor (FacultyPostprocessor): Processor for faculty data refinement.
@@ -109,11 +110,8 @@ class CategoryDataOrchestrator:
             extend (bool, optional): Whether to extend existing data files. Defaults to False.
 
         Raises:
-            ValueError:
-            - If output directory path doesn't exist or isn't writable.
-
-            TypeError:
-            - If any of the processor or factory arguments are of incorrect type.
+            ValueError: If output directory path doesn't exist or isn't writable.
+            TypeError: If any of the processor or factory arguments are of incorrect type.
         """
         self.logger = configure_logging(
             module_name=__name__,
@@ -156,6 +154,12 @@ class CategoryDataOrchestrator:
         self.faculty_postprocessor: FacultyPostprocessor = faculty_postprocessor
         self.logger.info("Faculty postprocessor assigned.")
 
+        self.logger.info("Assigning department postprocessor...")
+        self.department_postprocessor: DepartmentPostprocessor = (
+            department_postprocessor
+        )
+        self.logger.info("Department postprocessor assigned.")
+
         self.logger.info("Initializing final data structures...")
         self.final_category_data: List[Dict] = []
         self.final_faculty_data: List[Dict] = []
@@ -164,7 +168,7 @@ class CategoryDataOrchestrator:
         self.final_global_faculty_data: List[Dict] = []
         self.logger.info("Final data structures initialized.")
 
-    def run_orchestrator(self) -> None:
+    def run_orchestrator(self, category_data: List[Dict] | None = None) -> None:
         """Execute the main data processing workflow.
 
         Processes the raw publication data through several stages:
@@ -179,21 +183,24 @@ class CategoryDataOrchestrator:
             IOError: If saving results to files fails.
         """
         self.logger.info("Processing data through category processor...")
-        self.category_processor.process_data_list(self.data)
+        if category_data is None:
+            self.category_processor.process_data_list(self.data)
+
         self.logger.info("Data processed through category processor.")
 
         # category counts dict to pass to refine faculty sets
         self.logger.info("Getting category data...")
-        category_data: dict[str, CategoryInfo] = (
-            self.category_processor.get_category_data()
-        )
+        if category_data is None:
+            category_data: dict[str, CategoryInfo] = (
+                self.category_processor.get_category_data()
+            )
         self.logger.info("Category data retrieved.")
 
         # Refine faculty sets to remove near duplicates and update counts
         self.logger.info(
             "Refining faculty sets to remove near duplicates and update counts..."
         )
-        self._refine_faculty_sets(
+        self._refine_faculty(
             faculty_postprocessor=self.faculty_postprocessor,
             category_dict=category_data,
         )
@@ -202,10 +209,17 @@ class CategoryDataOrchestrator:
         self.logger.info("Refining faculty statistics with name variations...")
         self._refine_faculty_stats(
             faculty_stats=self.category_processor.faculty_stats,
-            name_variations=self.faculty_postprocessor.name_variations,
+            variations=self.faculty_postprocessor.string_variations,
             category_dict=category_data,
         )
         self.logger.info("Faculty statistics refined.")
+
+        self.logger.info("Processing department sets...")
+        self._refine_departments(
+            department_postprocessor=self.department_postprocessor,
+            category_dict=category_data,
+        )
+        self.logger.info("Department sets processed.")
 
         self.logger.info("Saving all processed results to files...")
         self._save_all_results()
@@ -352,59 +366,70 @@ class CategoryDataOrchestrator:
         )
         self.logger.info("Global faculty stats serialized and saved.")
 
-    @staticmethod
-    def _refine_faculty_sets(
+    def _refine_faculty(
+        self,
         faculty_postprocessor: FacultyPostprocessor,
         category_dict: dict[str, CategoryInfo],
     ) -> None:
-        """
-        Refines faculty sets by removing near duplicates and updating counts.
+        """Refines faculty sets by removing near duplicates and updating counts.
+
+        Uses FacultyPostprocessor to clean faculty data by removing near-duplicate
+        entries and updating all related faculty and department counts.
 
         Args:
             faculty_postprocessor (FacultyPostprocessor): Postprocessor for faculty data.
-            faculty_department_manager (FacultyDepartmentManager): Manager for faculty and department data.
-            category_dict (dict[str, CategoryInfo]): Dictionary of categories and their information.
+                Type: :class:`academic_metrics.postprocessors.faculty_postprocessor.FacultyPostprocessor`
+            category_dict (dict): Dictionary of categories and their information.
+                Type: Dict[str, :class:`academic_metrics.models.category_info.CategoryInfo`]
 
-        Design:
-            Uses FacultyPostprocessor to remove near-duplicate faculty entries.
-            Updates faculty and department counts after refinement.
-
-        Summary:
-            Improves the quality of faculty data by removing duplicates and updating related counts.
+        Notes:
+            - Removes near-duplicate faculty entries
+            - Updates faculty counts per category
+            - Updates department counts
+            - Maintains faculty-department relationships
+            - Ensures data consistency after refinement
         """
+        self.logger.info("Refining faculty sets...")
         # Remove near duplicates
         faculty_postprocessor.remove_near_duplicates(category_dict=category_dict)
 
         # Update counts for each category
+        self.logger.info("Updating category counts...")
         for _, info in category_dict.items():
             info.set_params(
                 {
                     "faculty_count": len(info.faculty),
-                    "department_count": len(info.departments),
                 }
             )
+        self.logger.info("Faculty sets refined and counts updated.")
 
     def _refine_faculty_stats(
         self,
         *,
         faculty_stats: Dict[str, FacultyStats],
-        name_variations: Dict[str, NameVariation],
+        variations: Dict[str, StringVariation],
         category_dict: Dict[str, CategoryInfo],
     ) -> None:
-        """
-        Refines faculty statistics based on name variations.
+        """Refines faculty statistics based on name variations.
+
+        Processes faculty statistics to account for name variations, ensuring accurate
+        attribution of publications and metrics across all faculty members.
 
         Args:
-            faculty_stats (dict[str, FacultyStats]): Dictionary of faculty statistics.
-            name_variations (dict[str, NameVariation]): Dictionary of name variations.
-            category_dict (dict[str, CategoryInfo]): Dictionary of categories and their information.
+            faculty_stats (Dict): Dictionary of faculty statistics.
+                Type: Dict[str, :class:`academic_metrics.models.faculty_stats.FacultyStats`]
+            variations (Dict): Dictionary of name variations.
+                Type: Dict[str, :class:`academic_metrics.models.string_variation.StringVariation`]
+            category_dict (Dict): Dictionary of categories and their information.
+                Type: Dict[str, :class:`academic_metrics.models.category_info.CategoryInfo`]
 
-        Design:
-            Iterates through categories and faculty members.
-            Applies refinement to faculty statistics based on name variations.
-
-        Summary:
-            Improves the accuracy of faculty statistics by accounting for name variations.
+        Notes:
+            - Iterates through all categories
+            - Processes each faculty member
+            - Applies name variation matching
+            - Updates publication counts
+            - Ensures metric consistency
+            - Maintains statistical accuracy
         """
         self.logger.info("Refining faculty statistics with name variations...")
         self.logger.info("Grabbing category_dict keys...")
@@ -429,20 +454,67 @@ class CategoryDataOrchestrator:
             for faculty_member in faculty_members:
                 faculty_stats[category].refine_faculty_stats(
                     faculty_name_unrefined=faculty_member,
-                    name_variations=name_variations,
+                    variations=variations,
                 )
             self.logger.info("Faculty stats refined.")
+
+    def _refine_departments(
+        self,
+        department_postprocessor: DepartmentPostprocessor,
+        category_dict: dict[str, CategoryInfo],
+    ) -> None:
+        """Processes department sets by removing near duplicates and updates counts.
+
+        Uses DepartmentPostprocessor to clean department data by removing near-duplicate
+        entries and updating all related department counts and relationships.
+
+        Args:
+            department_postprocessor (DepartmentPostprocessor): Postprocessor for department data.
+                Type: :class:`academic_metrics.postprocessors.department_postprocessor.DepartmentPostprocessor`
+            category_dict (dict): Dictionary of categories and their information.
+                Type: Dict[str, :class:`academic_metrics.models.category_info.CategoryInfo`]
+
+        Notes:
+            - Removes near-duplicate department entries
+            - Updates department counts per category
+            - Maintains faculty-department relationships
+            - Ensures naming consistency
+            - Preserves hierarchical relationships
+            - Updates all related statistics
+        """
+        self.logger.info("Processing department sets...")
+        department_postprocessor.remove_near_duplicates(category_dict=category_dict)
+
+        self.logger.info("Updating department counts...")
+        for _, info in category_dict.items():
+            info.set_params(
+                {
+                    "department_count": len(info.departments),
+                }
+            )
+        self.logger.info("Departments refined.")
 
     def _clean_category_data(
         self, category_data: Dict[str, CategoryInfo]
     ) -> Dict[str, Dict]:
         """Prepare category data by removing unwanted keys.
 
+        Cleans the raw category data by removing specified keys that are not needed
+        for further processing or analysis.
+
         Args:
-            category_data (Dict[str, CategoryInfo]): Raw category data to clean.
+            category_data (Dict): Raw category data to clean.
+                Type: Dict[str, :class:`academic_metrics.models.category_info.CategoryInfo`]
 
         Returns:
-            Dict[str, Dict]: Cleaned category data with specified keys removed.
+            dict: Cleaned category data with specified keys removed.
+                Type: Dict[str, Dict]
+
+        Notes:
+            - Identifies and removes unnecessary keys
+            - Preserves essential category information
+            - Ensures data consistency
+            - Prepares data for downstream processing
         """
         self.logger.info("Cleaning category data...")
         # True: Exclude value(s) for key
@@ -478,12 +550,24 @@ class CategoryDataOrchestrator:
     ) -> None:
         """Serialize and save category data to JSON file.
 
+        Converts the category data dictionary to JSON format and saves it to the
+        specified file path, creating directories if needed.
+
         Args:
             output_path (str): Path where the JSON file will be saved.
-            category_data (Dict[str, Dict]): Category data to serialize.
+                Type: str
+            category_data (Dict): Category data to serialize.
+                Type: Dict[str, Dict]
 
         Raises:
-            IOError: If file writing fails.
+            IOError: If file writing fails or directory creation fails
+
+        Notes:
+            - Creates output directory if needed
+            - Serializes data to JSON format
+            - Handles nested dictionary structures
+            - Ensures proper file encoding
+            - Validates output before saving
         """
         self.logger.info("Cleaning category data...")
         # Step 1: Clean the data
@@ -508,12 +592,24 @@ class CategoryDataOrchestrator:
     ) -> None:
         """Serialize and save faculty statistics to JSON file.
 
+        Converts the faculty statistics dictionary to JSON format and saves it to the
+        specified file path, creating directories if needed.
+
         Args:
             output_path (str): Path where the JSON file will be saved.
-            faculty_stats (Dict[str, FacultyStats]): Faculty statistics to serialize.
+                Type: str
+            faculty_stats (Dict): Faculty statistics to serialize.
+                Type: Dict[str, :class:`academic_metrics.models.faculty_stats.FacultyStats`]
 
         Raises:
-            IOError: If file writing fails.
+            IOError: If file writing fails or directory creation fails
+
+        Notes:
+            - Creates output directory if needed
+            - Serializes data to JSON format
+            - Handles nested dictionary structures
+            - Ensures proper file encoding
+            - Validates output before saving
         """
         self.logger.info("Serializing and saving faculty stats...")
 
@@ -525,8 +621,8 @@ class CategoryDataOrchestrator:
         # Define exclude keys map to parse into a list of keys to exclude from final dict
         self.logger.info("Defining exclude keys map...")
         exclude_keys_map = {
-            "article_count": True,
-            "average_citations": True,
+            "article_count": False,
+            "average_citations": False,
             "doi_citation_map": True,
         }
         self.logger.info(f"Exclude keys map: {exclude_keys_map}")
@@ -579,20 +675,32 @@ class CategoryDataOrchestrator:
     ) -> None:
         """Serialize and save global faculty statistics to JSON file.
 
+        Converts the global faculty statistics dictionary to JSON format and saves it to the
+        specified file path, creating directories if needed.
+
         Args:
             output_path (str): Path where the JSON file will be saved.
-            global_faculty_stats (Dict[str, FacultyStats]): Global faculty statistics to serialize.
+                Type: str
+            global_faculty_stats (Dict): Global faculty statistics to serialize.
+                Type: Dict[str, :class:`academic_metrics.models.faculty_stats.FacultyStats`]
 
         Raises:
-            IOError: If file writing fails.
+            IOError: If file writing fails or directory creation fails
+
+        Notes:
+            - Creates output directory if needed
+            - Serializes data to JSON format
+            - Handles nested dictionary structures
+            - Ensures proper file encoding
+            - Validates output before saving
         """
         self.logger.info("Serializing and saving global faculty stats...")
 
         # Step 0: Define exclude keys map to parse into a list of keys to exclude from final dict
         self.logger.info("Defining exclude keys map...")
         exclude_keys_map = {
-            "article_count": True,
-            "average_citations": True,
+            "article_count": False,
+            "average_citations": False,
             "citation_map": True,
         }
         self.logger.info(f"Exclude keys map: {exclude_keys_map}")
@@ -624,12 +732,24 @@ class CategoryDataOrchestrator:
     ) -> None:
         """Serialize and save article statistics to JSON file.
 
+        Converts the category article statistics dictionary to JSON format and saves it to the
+        specified file path, creating directories if needed.
+
         Args:
             output_path (str): Path where the JSON file will be saved.
-            article_stats (Dict[str, CrossrefArticleStats]): Article statistics to serialize.
+                Type: str
+            article_stats (Dict): Article statistics to serialize.
+                Type: Dict[str, :class:`academic_metrics.models.crossref_article_stats.CrossrefArticleStats`]
 
         Raises:
-            IOError: If file writing fails.
+            IOError: If file writing fails or directory creation fails
+
+        Notes:
+            - Creates output directory if needed
+            - Serializes data to JSON format
+            - Handles nested dictionary structures
+            - Ensures proper file encoding
+            - Validates output before saving
         """
         self.logger.info("Serializing and saving article stats...")
 
@@ -663,12 +783,24 @@ class CategoryDataOrchestrator:
     ) -> None:
         """Serialize and save article details to JSON file.
 
+        Converts the list of article details to JSON format and saves it to the
+        specified file path, creating directories if needed.
+
         Args:
             output_path (str): Path where the JSON file will be saved.
-            articles (List[CrossrefArticleDetails]): Article details to serialize.
+                Type: str
+            articles (List): Article details to serialize.
+                Type: List[:class:`academic_metrics.models.crossref_article_details.CrossrefArticleDetails`]
 
         Raises:
-            IOError: If file writing fails.
+            IOError: If file writing fails or directory creation fails
+
+        Notes:
+            - Creates output directory if needed
+            - Serializes data to JSON format
+            - Handles complex article objects
+            - Ensures proper file encoding
+            - Validates output before saving
         """
         self.logger.info("Serializing and saving articles...")
 
@@ -688,15 +820,39 @@ class CategoryDataOrchestrator:
     def _flatten_to_list(self, data: Union[Dict, List]) -> List[Dict]:
         """Recursively flatten nested dictionaries/lists into a flat list.
 
+        Transforms a complex nested structure of dictionaries and lists into a single
+        flat list of dictionaries, preserving all data.
+
         Args:
             data (Union[Dict, List]): Nested structure of dictionaries and lists.
+                Type: Union[Dict[str, Any], List[Dict[str, Any]]]
 
         Returns:
-            List[Dict]: Flattened list of dictionaries.
+            List: Flattened list of dictionaries.
+                Type: List[Dict[str, Any]]
 
-        Example:
-            Input: {"cat1": {"article_map": {"doi1": {...}, "doi2": {...}}}}
-            Output: [{...}, {...}]  # List of article dictionaries
+        Notes:
+            - Handles arbitrary nesting depth
+            - Preserves dictionary contents
+            - Maintains data relationships
+            - Removes nested structure
+            - Keeps all original values
+
+        Examples:
+            Input:
+                {
+                    "cat1": {
+                        "article_map": {
+                            "doi1": {"title": "Article 1"},
+                            "doi2": {"title": "Article 2"}
+                        }
+                    }
+                }
+            Output:
+                [
+                    {"title": "Article 1"},
+                    {"title": "Article 2"}
+                ]
         """
         self.logger.info("Flattening...")
         flattened: List[Dict] = []
@@ -721,12 +877,25 @@ class CategoryDataOrchestrator:
     def _write_to_json(self, data: Union[List[Dict], Dict], output_path: str) -> None:
         """Write data to JSON file, handling extend mode.
 
+        Writes the provided data to a JSON file at the specified path, creating
+        directories if needed and handling both new files and file extensions.
+
         Args:
             data (Union[List[Dict], Dict]): Data to write to file.
+                Type: Union[List[Dict[str, Any]], Dict[str, Any]]
             output_path (str): Path where the JSON file will be saved.
+                Type: str
 
         Raises:
-            IOError: If file operations fail.
+            IOError: If file operations fail (creation, writing, or directory access)
+
+        Notes:
+            - Creates output directory if needed
+            - Handles both new and existing files
+            - Supports list and dictionary data
+            - Ensures proper JSON formatting
+            - Validates file permissions
+            - Maintains data integrity
         """
         self.logger.info("Checking if extending...")
         if self.extend:
@@ -751,75 +920,130 @@ class CategoryDataOrchestrator:
 
 
 if __name__ == "__main__":
-    import tempfile
+    # import tempfile
 
-    # Create a test CategoryInfo object
-    test_category = CategoryInfo(
-        _id="Psychology",
-        url="Psychology",
-        category_name="Psychology",
-        faculty_count=6,
-        department_count=4,
-        article_count=3,
-        faculty={"Sook-Hyun Kim", "Jose I. Juncosa", "Suzanne L. Osman"},
-        departments={
-            "Department of Psychology, Salisbury University, Salisbury, MD, USA"
-        },
-        titles={"Korean fathers' immigration experience"},
-        tc_count=0,
-        citation_average=0.0,
-        doi_list={"10.1177/10778012241234897"},
-        themes={"Parenting Challenges", "Cultural Identity"},
+    # # Create a test CategoryInfo object
+    # test_category = CategoryInfo(
+    #     _id="Psychology",
+    #     url="Psychology",
+    #     category_name="Psychology",
+    #     faculty_count=6,
+    #     department_count=4,
+    #     article_count=3,
+    #     faculty={"Sook-Hyun Kim", "Jose I. Juncosa", "Suzanne L. Osman"},
+    #     departments={
+    #         "Department of Psychology, Salisbury University, Salisbury, MD, USA"
+    #     },
+    #     titles={"Korean fathers' immigration experience"},
+    #     tc_count=0,
+    #     citation_average=0.0,
+    #     doi_list={"10.1177/10778012241234897"},
+    #     themes={"Parenting Challenges", "Cultural Identity"},
+    # )
+
+    # # Create the input dictionary format
+    # category_data = {"Psychology": test_category}
+
+    # # Create a minimal orchestrator instance
+    # with tempfile.TemporaryDirectory() as temp_dir:
+    #     orchestrator = CategoryDataOrchestrator(
+    #         data=[],
+    #         output_dir_path=temp_dir,
+    #         category_processor=None,
+    #         faculty_postprocessor=None,
+    #         strategy_factory=None,
+    #         dataclass_factory=None,
+    #         warning_manager=None,
+    #         utilities=None,
+    #     )
+
+    #     # Test the serialization
+    #     output_path = os.path.join(temp_dir, "test_categories.json")
+    #     print("\nTesting category serialization:")
+    #     print(f"Input category data: {category_data}")
+
+    #     orchestrator._serialize_and_save_category_data(
+    #         output_path=output_path, category_data=category_data
+    #     )
+
+    #     print("\nAfter serialization:")
+    #     print(
+    #         f"Has final_category_data: {hasattr(orchestrator, 'final_category_data')}"
+    #     )
+    #     if hasattr(orchestrator, "final_category_data"):
+    #         print(
+    #             f"Length of final_category_data: {len(orchestrator.final_category_data)}"
+    #         )
+    #         print(f"Content: {orchestrator.final_category_data}")
+
+    #     # Test retrieval
+    #     try:
+    #         retrieved_data = orchestrator.get_final_category_data()
+    #         print("\nSuccessfully retrieved data:")
+    #         print(f"Length: {len(retrieved_data)}")
+    #         print(f"Content: {retrieved_data}")
+
+    #         # Also check the JSON file
+    #         print("\nJSON file content:")
+    #         with open(output_path, "r") as f:
+    #             json_content = json.load(f)
+    #             print(f"JSON length: {len(json_content)}")
+    #             print(f"JSON content: {json_content}")
+
+    #     except ValueError as e:
+    #         print(f"\nError retrieving data: {e}")
+    from academic_metrics.utils import (
+        MinHashUtility,
+        Utilities,
+        WarningManager,
+        Taxonomy,
     )
 
-    # Create the input dictionary format
-    category_data = {"Psychology": test_category}
+    from academic_metrics.core import CategoryProcessor
+    from academic_metrics.postprocessing import (
+        DepartmentPostprocessor,
+        FacultyPostprocessor,
+    )
+    from academic_metrics.factories import StrategyFactory, DataClassFactory
 
-    # Create a minimal orchestrator instance
-    with tempfile.TemporaryDirectory() as temp_dir:
-        orchestrator = CategoryDataOrchestrator(
-            data=[],
-            output_dir_path=temp_dir,
-            category_processor=None,
-            faculty_postprocessor=None,
-            strategy_factory=None,
-            dataclass_factory=None,
-            warning_manager=None,
-            utilities=None,
-        )
+    from academic_metrics.constants import (
+        INPUT_FILES_DIR_PATH,
+        LOG_DIR_PATH,
+        OUTPUT_FILES_DIR_PATH,
+        SPLIT_FILES_DIR_PATH,
+    )
 
-        # Test the serialization
-        output_path = os.path.join(temp_dir, "test_categories.json")
-        print("\nTesting category serialization:")
-        print(f"Input category data: {category_data}")
+    taxonomy = Taxonomy()
+    minhash_util = MinHashUtility(num_hashes=100)
+    warning_manager = WarningManager()
+    strategy_factory = StrategyFactory()
+    dataclass_factory = DataClassFactory()
+    utilities = Utilities(
+        strategy_factory=strategy_factory,
+        warning_manager=warning_manager,
+    )
+    category_processor = CategoryProcessor(
+        utils=utilities,
+        dataclass_factory=dataclass_factory,
+        warning_manager=warning_manager,
+        taxonomy_util=taxonomy,
+    )
+    faculty_postprocessor = FacultyPostprocessor(minhash_util=minhash_util)
+    department_postprocessor = DepartmentPostprocessor(minhash_util=minhash_util)
 
-        orchestrator._serialize_and_save_category_data(
-            output_path=output_path, category_data=category_data
-        )
+    with open("test_processed_category_data.json", "r") as f:
+        data = json.load(f)
 
-        print("\nAfter serialization:")
-        print(
-            f"Has final_category_data: {hasattr(orchestrator, 'final_category_data')}"
-        )
-        if hasattr(orchestrator, "final_category_data"):
-            print(
-                f"Length of final_category_data: {len(orchestrator.final_category_data)}"
-            )
-            print(f"Content: {orchestrator.final_category_data}")
+    orchestrator = CategoryDataOrchestrator(
+        data=data,
+        output_dir_path=OUTPUT_FILES_DIR_PATH,
+        category_processor=category_processor,
+        faculty_postprocessor=faculty_postprocessor,
+        department_postprocessor=department_postprocessor,
+        strategy_factory=strategy_factory,
+        dataclass_factory=dataclass_factory,
+        warning_manager=warning_manager,
+        utilities=utilities,
+    )
 
-        # Test retrieval
-        try:
-            retrieved_data = orchestrator.get_final_category_data()
-            print("\nSuccessfully retrieved data:")
-            print(f"Length: {len(retrieved_data)}")
-            print(f"Content: {retrieved_data}")
-
-            # Also check the JSON file
-            print("\nJSON file content:")
-            with open(output_path, "r") as f:
-                json_content = json.load(f)
-                print(f"JSON length: {len(json_content)}")
-                print(f"JSON content: {json_content}")
-
-        except ValueError as e:
-            print(f"\nError retrieving data: {e}")
+    orchestrator.run_orchestrator(data)

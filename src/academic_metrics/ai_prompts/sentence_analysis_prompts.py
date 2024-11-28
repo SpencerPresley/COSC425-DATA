@@ -1,4 +1,4 @@
-ABSTRACT_SENTENCE_ANALYSIS_SYSTEM_MESSAGE = """
+ABSTRACT_SENTENCE_ANALYSIS_SYSTEM_MESSAGE: str = """
 You are tasked with analyzing an abstract of a research paper. Your task involves the following steps:
 
 Steps to follow:
@@ -21,7 +21,7 @@ IMPORTANT: If within the values to the keys in the json, you use any other notat
 IMPORTANT: You must return the output in the specified JSON format. If you do not return the output in the specified JSON format, you have failed.
 """
 
-SENTENCE_ANALYSIS_JSON_EXAMPLE = """
+SENTENCE_ANALYSIS_JSON_EXAMPLE: str = """
     {
       "sentence_details": [
         {

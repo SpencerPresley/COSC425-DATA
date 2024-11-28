@@ -9,7 +9,6 @@ strategies.AttributeExtractionStrategies module
 
 .. automodule:: academic_metrics.strategies.AttributeExtractionStrategies
    :members:
-   :no-index:
    :undoc-members:
    :show-inheritance:
 

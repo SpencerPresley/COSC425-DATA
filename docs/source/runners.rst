@@ -9,10 +9,8 @@ runners.pipeline module
 
 .. automodule:: academic_metrics.runners.pipeline
    :members:
-   :no-index:
    :undoc-members:
    :show-inheritance:
-   :special-members: __init__
 
 Module contents
 ---------------

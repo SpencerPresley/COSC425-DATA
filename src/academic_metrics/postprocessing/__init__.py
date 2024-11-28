@@ -1,0 +1,3 @@
+from .BasePostprocessor import BasePostprocessor
+from .FacultyPostprocessor import FacultyPostprocessor
+from .DepartmentPostprocessor import DepartmentPostprocessor

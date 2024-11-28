@@ -38,11 +38,10 @@ Color Formatter
 ~~~~~~~~~~~~~~~~
 .. autoclass:: academic_metrics.configs.global_config.ColorFormatter
    :members:
-   :no-index:
    :undoc-members:
    :show-inheritance:
    :private-members:
-   :special-members:
+   :special-members: __init__
 
 Functions
 -----------

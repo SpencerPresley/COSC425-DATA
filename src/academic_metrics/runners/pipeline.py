@@ -11,7 +11,11 @@ from academic_metrics.constants import (
     OUTPUT_FILES_DIR_PATH,
     SPLIT_FILES_DIR_PATH,
 )
-from academic_metrics.core import CategoryProcessor, FacultyPostprocessor
+from academic_metrics.core import CategoryProcessor
+from academic_metrics.postprocessing import (
+    FacultyPostprocessor,
+    DepartmentPostprocessor,
+)
 from academic_metrics.data_collection import CrossrefWrapper, Scraper
 from academic_metrics.DB import DatabaseWrapper
 from academic_metrics.enums import AttributeTypes
@@ -29,6 +33,7 @@ from academic_metrics.utils import (
     Taxonomy,
     Utilities,
     WarningManager,
+    MinHashUtility,
 )
 from academic_metrics.configs import configure_logging, DEBUG
 
@@ -64,6 +69,7 @@ class PipelineRunner:
         dataclass_factory (DataClassFactory): Data class creation utility.
         category_processor (CategoryProcessor): Category statistics processor.
         faculty_postprocessor (FacultyPostprocessor): Faculty data processor.
+        department_postprocessor (DepartmentPostprocessor): Department data processor.
         debug (bool): Debug mode flag.
 
     Methods:
@@ -106,9 +112,9 @@ class PipelineRunner:
         mongodb_url: str,
         db_name: str | None = "Site_Data",
         debug: bool | None = False,
-        pre_classification_model: str | None = None,
-        classification_model: str | None = None,
-        theme_model: str | None = None,
+        pre_classification_model: str | None = "gpt-4o-mini",
+        classification_model: str | None = "gpt-4o-mini",
+        theme_model: str | None = "gpt-4o-mini",
     ):
         """Initialize the PipelineRunner with necessary configurations and dependencies.
 
@@ -124,7 +130,6 @@ class PipelineRunner:
         Raises:
             Exception: If logger setup fails or required dependencies cannot be initialized.
         """
-
         self.logger: logging.Logger = configure_logging(__name__, "pipeline", DEBUG)
         self.logger.info("Initializing PipelineRunner...")
         self.logger.info("PipelineRunner logger initialized successfully")
@@ -182,11 +187,21 @@ class PipelineRunner:
         self.category_processor: CategoryProcessor = self._create_category_processor()
         self.logger.info("CategoryProcessor instance created successfully")
 
+        self.logger.info("Creating MinHashUtility instance...")
+        self.minhash_util: MinHashUtility = self._create_minhash_util()
+        self.logger.info("MinHashUtility instance created successfully")
+
         self.logger.info("Creating FacultyPostprocessor instance...")
         self.faculty_postprocessor: FacultyPostprocessor = (
-            self._create_faculty_postprocessor()
+            self._create_faculty_postprocessor(minhash_util=self.minhash_util)
         )
         self.logger.info("FacultyPostprocessor instance created successfully")
+
+        self.logger.info("Creating DepartmentPostprocessor instance...")
+        self.department_postprocessor: DepartmentPostprocessor = (
+            self._create_department_postprocessor(minhash_util=self.minhash_util)
+        )
+        self.logger.info("DepartmentPostprocessor instance created successfully")
 
         self.logger.info("Setting debug mode...")
         self.debug: bool = debug
@@ -238,7 +253,9 @@ class PipelineRunner:
         # Get the existing DOIs from the database
         # so that we don't process duplicates
         self.logger.info("Getting existing DOIs from database...")
-        existing_dois: List[str] = self.db.get_dois()
+        existing_dois: List[str] = []
+        if save_to_db:
+            existing_dois: List[str] = self.db.get_dois()
         self.logger.info(f"Found {len(existing_dois)} existing DOIs in database")
 
         # Get data from crossref for the school and date range
@@ -354,7 +371,8 @@ class PipelineRunner:
             "Processing classified data and generating category statistics..."
         )
         category_orchestrator: CategoryDataOrchestrator = self._create_orchestrator(
-            data=data, extend=save_offline_kwargs["extend"]
+            data=data,
+            extend=save_offline_kwargs["extend"],
         )
         category_orchestrator.run_orchestrator()
         self.logger.info("Category statistics processing complete")
@@ -515,6 +533,7 @@ class PipelineRunner:
             output_dir_path=OUTPUT_FILES_DIR_PATH,
             category_processor=self.category_processor,
             faculty_postprocessor=self.faculty_postprocessor,
+            department_postprocessor=self.department_postprocessor,
             warning_manager=self.warning_manager,
             strategy_factory=self.strategy_factory,
             utilities=self.utilities,
@@ -630,13 +649,35 @@ class PipelineRunner:
             taxonomy_util=self.taxonomy,
         )
 
-    def _create_faculty_postprocessor(self) -> FacultyPostprocessor:
+    def _create_minhash_util(self) -> MinHashUtility:
+        """Create a new MinHashUtility instance for minhash operations.
+
+        Returns:
+            MinHashUtility: A new instance of the minhash utility.
+        """
+        return MinHashUtility(
+            num_hashes=100,
+        )
+
+    def _create_faculty_postprocessor(
+        self, minhash_util: MinHashUtility
+    ) -> FacultyPostprocessor:
         """Create a new FacultyPostprocessor for processing faculty data.
 
         Returns:
             FacultyPostprocessor: A new instance of the faculty post-processor.
         """
-        return FacultyPostprocessor()
+        return FacultyPostprocessor(minhash_util=minhash_util)
+
+    def _create_department_postprocessor(
+        self, minhash_util: MinHashUtility
+    ) -> DepartmentPostprocessor:
+        """Create a new DepartmentPostprocessor for processing department data.
+
+        Returns:
+            DepartmentPostprocessor: A new instance of the department post-processor.
+        """
+        return DepartmentPostprocessor(minhash_util=minhash_util, threshold=0.5)
 
     def _create_scraper(self) -> Scraper:
         """Create a new Scraper instance for web scraping.
@@ -692,18 +733,21 @@ if __name__ == "__main__":
     parser.add_argument(
         "--pre-classification-model",
         type=str,
+        default="gpt-4o-mini",
         choices=["gpt-4o-mini", "gpt-4o"],
         help="Valid pre-classification-model's are 'gpt-4o-mini' or 'gpt-4o'",
     )
     parser.add_argument(
         "--classification-model",
         type=str,
+        default="gpt-4o-mini",
         choices=["gpt-4o-mini", "gpt-4o"],
         help="Valid classification-model's are 'gpt-4o-mini' or 'gpt-4o'",
     )
     parser.add_argument(
         "--theme-model",
         type=str,
+        default="gpt-4o-mini",
         choices=["gpt-4o-mini", "gpt-4o"],
         help="Valid theme-model's are 'gpt-4o-mini' or 'gpt-4o'",
     )
@@ -731,18 +775,37 @@ if __name__ == "__main__":
 
         # Execute test run
         pipeline.test_run()
-
     else:
         # Normal pipeline execution
         logger.info(f"Running in production mode using Live MongoDB URL")
         mongodb_url = os.getenv("MONGODB_URL")
-        years = ["2021", "2020", "2019", "2018", "2017"]
+        years = [
+            # "2024",
+            # "2023",
+            # "2022",
+            # "2021",
+            # "2020",
+            # "2019",
+            # "2018",
+            # "2017",
+            # "2016",
+            # "2015",
+            # "2014",
+            # "2013",
+            "2012",
+            "2011",
+            "2010",
+            "2009",
+        ]
         months = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
 
         processed_dict = defaultdict(list)
 
         for year in years:
-            for month in months:
+
+            current_months = months[8:] if year == "2012" else months
+
+            for month in current_months:
                 pipeline_runner = PipelineRunner(
                     ai_api_key=ai_api_key,
                     crossref_affiliation="Salisbury University",
