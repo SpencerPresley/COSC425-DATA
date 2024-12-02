@@ -5,7 +5,7 @@ import os
 
 load_dotenv()
 
-mongodb_url = os.getenv("MONGODB_URL")
+mongodb_url = os.getenv("LOCAL_MONGODB_URL")
 db = DatabaseWrapper(db_name="Site_Data", mongo_url=mongodb_url)
 
 db.clear_collection()
