@@ -5,6 +5,15 @@ import os
 
 from academic_metrics.constants import LOG_DIR_PATH
 
+RELEASE_MODE = True
+
+if RELEASE_MODE:
+    LOG_TO_CONSOLE = True  # Keep console logging for warnings/errors
+    LOG_LEVEL = logging.WARNING  # Only show WARNING and above in release
+else:
+    LOG_TO_CONSOLE = True
+    LOG_LEVEL = logging.DEBUG
+
 
 class ColorFormatter(logging.Formatter):
     """Custom formatter that adds colors to log levels
@@ -87,17 +96,18 @@ _config_logger = logging.getLogger(__name__)
 _config_logger.setLevel(LOG_LEVEL)
 
 if os.environ.get("READTHEDOCS") != "True":
-    _config_log_file_path = LOG_DIR_PATH / "config.log"
-    _file_handler = logging.FileHandler(_config_log_file_path)
-    _file_handler.setLevel(LOG_LEVEL)
-    _config_file_formatter = logging.Formatter(
-        "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-    )
-    _config_color_formatter = ColorFormatter(
-        "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-    )
-    _file_handler.setFormatter(_config_file_formatter)
-    _config_logger.addHandler(_file_handler)
+    if not RELEASE_MODE:
+        _config_log_file_path = LOG_DIR_PATH / "config.log"
+        _file_handler = logging.FileHandler(_config_log_file_path)
+        _file_handler.setLevel(LOG_LEVEL)
+        _config_file_formatter = logging.Formatter(
+            "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+        )
+        _config_color_formatter = ColorFormatter(
+            "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+        )
+        _file_handler.setFormatter(_config_file_formatter)
+        _config_logger.addHandler(_file_handler)
 
     if LOG_TO_CONSOLE:
         _console_handler = logging.StreamHandler()
@@ -236,12 +246,13 @@ def configure_logging(
         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
     )
 
-    log_file_path = LOG_DIR_PATH / f"{log_file_name}.log"
-    os.makedirs(os.path.dirname(log_file_path), exist_ok=True)
-    file_handler = logging.FileHandler(log_file_path)
-    file_handler.setLevel(log_level)
-    file_handler.setFormatter(file_formatter)
-    logger.addHandler(file_handler)
+    if not RELEASE_MODE:
+        log_file_path = LOG_DIR_PATH / f"{log_file_name}.log"
+        os.makedirs(os.path.dirname(log_file_path), exist_ok=True)
+        file_handler = logging.FileHandler(log_file_path)
+        file_handler.setLevel(log_level)
+        file_handler.setFormatter(file_formatter)
+        logger.addHandler(file_handler)
 
     if LOG_TO_CONSOLE:
         console_handler = logging.StreamHandler()
