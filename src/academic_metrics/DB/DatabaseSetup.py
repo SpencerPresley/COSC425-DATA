@@ -184,20 +184,6 @@ class DatabaseWrapper:
             existing_data["citation_average"] = new_average
             self.logger.debug(f"Updated citation average to: {new_average}")
 
-            # Update numeric counts
-            existing_data["faculty_count"] = existing_data.get(
-                "faculty_count", 0
-            ) + new_data.get("faculty_count", 0)
-            existing_data["department_count"] = existing_data.get(
-                "department_count", 0
-            ) + new_data.get("department_count", 0)
-            existing_data["article_count"] = existing_data.get(
-                "article_count", 0
-            ) + new_data.get("article_count", 0)
-            existing_data["tc_count"] = existing_data.get("tc_count", 0) + new_data.get(
-                "tc_count", 0
-            )
-
             # Update lists using set operations with None protection
             existing_data["doi_list"] = list(set(existing_dois).union(new_dois))
 
@@ -223,6 +209,14 @@ class DatabaseWrapper:
                 set(existing_data.get("titles", []) or []).union(
                     new_data.get("titles", []) or []
                 )
+            )
+
+            # Update numeric counts
+            existing_data["faculty_count"] = len(existing_data["faculty"])
+            existing_data["department_count"] = len(existing_data["departments"])
+            existing_data["article_count"] = len(existing_data["titles"])
+            existing_data["tc_count"] = existing_data.get("tc_count", 0) + new_data.get(
+                "tc_count", 0
             )
 
             self.logger.debug(
@@ -422,6 +416,13 @@ class DatabaseWrapper:
         self.process(article_data, "article_data")
         self.process(faculty_data, "faculty_data")
 
+    def fix_counts(self):
+        existing_data = list(self.category_collection.find({}))
+        for data in existing_data:
+            data["faculty_count"] = len(data["faculty"])
+            data["department_count"] = len(data["departments"])
+            self.category_collection.update_one({"_id": data["_id"]}, {"$set": data})
+
     def clear_collection(self):
         """Clear the entire collection."""
         self.category_collection.delete_many({})
@@ -440,28 +441,29 @@ if __name__ == "__main__":
     load_dotenv()
     mongo_url = os.getenv("MONGODB_URL")
 
-    # Handle article data
-    with open(
-        "../../data/core/output_files/test_processed_article_stats_obj_data.json", "r"
-    ) as f:
-        article_data = json.load(f)
+    # # Handle article data
+    # with open(
+    #     "../../data/core/output_files/test_processed_article_stats_obj_data.json", "r"
+    # ) as f:
+    #     article_data = json.load(f)
 
-    # Handle category data
-    with open(
-        "../../data/core/output_files/test_processed_category_data.json", "r"
-    ) as f:
-        category_data = json.load(f)
+    # # Handle category data
+    # with open(
+    #     "../../data/core/output_files/test_processed_category_data.json", "r"
+    # ) as f:
+    #     category_data = json.load(f)
 
-    # Handle faculty data
-    with open(
-        "../../data/core/output_files/test_processed_global_faculty_stats_data.json",
-        "r",
-    ) as f:
-        faculty_data = json.load(f)
+    # # Handle faculty data
+    # with open(
+    #     "../../data/core/output_files/test_processed_global_faculty_stats_data.json",
+    #     "r",
+    # ) as f:
+    #     faculty_data = json.load(f)
 
     database = DatabaseWrapper(db_name="Site_Data", mongo_url=mongo_url)
-    database.clear_collection()
+    # database.clear_collection()
 
-    database.process(article_data, "article_data")
-    database.process(category_data, "category_data")
-    database.process(faculty_data, "faculty_data")
+    # database.process(article_data, "article_data")
+    # database.process(category_data, "category_data")
+    # database.process(faculty_data, "faculty_data")
+    database.fix_counts()
