@@ -103,11 +103,12 @@ if os.environ.get("READTHEDOCS") != "True":
         _config_file_formatter = logging.Formatter(
             "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
         )
-        _config_color_formatter = ColorFormatter(
-            "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-        )
         _file_handler.setFormatter(_config_file_formatter)
         _config_logger.addHandler(_file_handler)
+
+    _config_color_formatter = ColorFormatter(
+        "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    )
 
     if LOG_TO_CONSOLE:
         _console_handler = logging.StreamHandler()
