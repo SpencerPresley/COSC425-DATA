@@ -816,6 +816,13 @@ if __name__ == "__main__":
         help="Name of the database to use",
     )
 
+    parser.add_argument(
+        "--crossref-affiliation",
+        type=str,
+        required=True,
+        help="The affiliation to use for the Crossref API",
+    )
+
     args = parser.parse_args()
 
     # Configure logging
@@ -852,7 +859,7 @@ if __name__ == "__main__":
             for month in months:
                 pipeline_runner = PipelineRunner(
                     ai_api_key=ai_api_key,
-                    crossref_affiliation="Salisbury University",
+                    crossref_affiliation=args.crossref_affiliation,
                     data_from_month=int(month),
                     data_to_month=int(month),
                     data_from_year=int(year),

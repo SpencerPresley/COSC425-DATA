@@ -131,6 +131,7 @@ To run it you will need to pass in the following arguments:
 - `--from-year` - The year to start collecting data from, defaults to 2024
 - `--to-year` - The year to end collecting data on, defaults to 2024
 - `--db-name` - The name of the database to use (required)
+- `--crossref-affiliation` - The affiliation to use for the Crossref API, defaults to Salisbury University (required)
 
 If you want to save the data to excel files you can pass in the `--as-excel` argument.
 
@@ -138,10 +139,10 @@ If you want to save the data to excel files you can pass in the `--as-excel` arg
 
 Example:
 
-Say you want to collect data for every month from 2019 to 2024 and save it to excel files. You would run the following command:
+Say you want to collect data for every month from 2019 to 2024 for Salisbury University and save it to excel files. You would run the following command:
 
 ```bash
-python pipeline.py --from-month=1 --to-month=12 --from-year=2019 --to-year=2024 --as-excel --db-name=Your_Database_Name
+python pipeline.py --from-month=1 --to-month=12 --from-year=2019 --to-year=2024 --crossref-affiliation="Salisbury University" --as-excel --db-name=Your_Database_Name
 ```
 
 The default AI model used for all parts is `gpt-4o-mini`. If you want to use a different model you can use the following arguments:
@@ -155,7 +156,7 @@ The default AI model used for all parts is `gpt-4o-mini`. If you want to use a d
 Here's how you would run the pipeline using the larger `gpt-4o` model:
 
 ```bash
-python pipeline.py --from-month=1 --to-month=12 --from-year=2019 --to-year=2024 --as-excel --db-name=Your_Database_Name --pre-classification-model=gpt-4o --classification-model=gpt-4o --theme-model=gpt-4o
+python pipeline.py --from-month=1 --to-month=12 --from-year=2019 --to-year=2024 --crossref-affiliation="Salisbury University" --as-excel --db-name=Your_Database_Name --pre-classification-model=gpt-4o --classification-model=gpt-4o --theme-model=gpt-4o
 ```
 
 ### Option 2 - Your own script (Not recommended)
