@@ -126,11 +126,11 @@ python pipeline.py --help
 
 To run it you will need to pass in the following arguments:
 
-`--from-month` - The month to start collecting data from, defaults to 1
-`--to-month` - The month to end collecting data on, defaults to 12
-`--from-year` - The year to start collecting data from, defaults to 2024
-`--to-year` - The year to end collecting data on, defaults to 2024
-`--db-name` - The name of the database to use (required)
+- `--from-month` - The month to start collecting data from, defaults to 1
+- `--to-month` - The month to end collecting data on, defaults to 12
+- `--from-year` - The year to start collecting data from, defaults to 2024
+- `--to-year` - The year to end collecting data on, defaults to 2024
+- `--db-name` - The name of the database to use (required)
 
 If you want to save the data to excel files you can pass in the `--as-excel` argument.
 
@@ -146,9 +146,9 @@ python pipeline.py --from-month=1 --to-month=12 --from-year=2019 --to-year=2024 
 
 The default AI model used for all parts is `gpt-4o-mini`. If you want to use a different model you can use the following arguments:
 
-`--pre-classification-model` - The model to use for the pre-classification step
-`--classification-model` - The model to use for the classification step
-`--theme-model` - The model to use for the theme extraction step
+- `--pre-classification-model` - The model to use for the pre-classification step
+- `--classification-model` - The model to use for the classification step
+- `--theme-model` - The model to use for the theme extraction step
 
 > Note: This process consumes a lot of tokens, during testing we found that using `gpt-4o-mini` was the most cost effective and provided good results. If you want to use a larger model like `gpt-4o` you can do so, but be warned it will run through your tokens very quickly. If you do use a larger model I recommend you start with a smaller date range and work your way up.
 
