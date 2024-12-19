@@ -722,11 +722,16 @@ class PipelineRunner:
         )
 
 
-def make_excel(self, db: DatabaseWrapper):
-    """Save all data from database to JSON and optionally Excel files.
+def make_excel(db: DatabaseWrapper):
+    """Save all data from database to Excel files.
+
+    Loads article data, category data, and faculty data from the database and saves them to Excel files.
+
+    This is done by calling :meth:`~academic_metrics.DB.DatabaseWrapper.get_all_data` to retrieve the data,
+    then converting each dataset to a pandas DataFrame and saving to Excel via the :meth:`~pandas.DataFrame.to_excel` method.
 
     Args:
-        save_excel (bool): If True, also saves data to Excel files. Defaults to False.
+        db (DatabaseWrapper): The database wrapper to get data from.
     """
     articles, categories, faculty = db.get_all_data()
 
