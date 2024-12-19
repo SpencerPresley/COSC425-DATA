@@ -26,6 +26,7 @@ dependencies = [
     "langchain_google_genai==2.0.5",
     "langchain_openai==0.2.9",
     "openai==1.55.0",
+    "pandas==2.2.3",
     "pydantic==2.9.2",
     "pylatexenc==2.10",
     "pymongo==4.10.1",

@@ -219,6 +219,10 @@ class PipelineRunner:
         self.theme_model: str | None = theme_model
         self.logger.info("Theme-model set successfully")
 
+        self.logger.info("Setting save-excel...")
+        self.save_excel: bool | None = save_excel
+        self.logger.info("Save-excel set successfully")
+
         self.logger.info("PipelineRunner initialized successfully")
 
     def run_pipeline(
@@ -718,6 +722,21 @@ class PipelineRunner:
         )
 
 
+def make_excel(self, db: DatabaseWrapper):
+    """Save all data from database to JSON and optionally Excel files.
+
+    Args:
+        save_excel (bool): If True, also saves data to Excel files. Defaults to False.
+    """
+    articles, categories, faculty = db.get_all_data()
+
+    import pandas as pd
+
+    pd.DataFrame(articles).to_excel("article_data.xlsx", index=False)
+    pd.DataFrame(categories).to_excel("category_data.xlsx", index=False)
+    pd.DataFrame(faculty).to_excel("faculty_data.xlsx", index=False)
+
+
 if __name__ == "__main__":
     import argparse
     from dotenv import load_dotenv
@@ -752,6 +771,51 @@ if __name__ == "__main__":
         help="Valid theme-model's are 'gpt-4o-mini' or 'gpt-4o'",
     )
 
+    parser.add_argument(
+        "--from-year",
+        type=int,
+        default=2024,
+        required=True,
+        help="Starting year for data collection (e.g., 2019)",
+    )
+
+    parser.add_argument(
+        "--to-year",
+        type=int,
+        default=2024,
+        required=True,
+        help="Ending year for data collection (e.g., 2024)",
+    )
+
+    parser.add_argument(
+        "--from-month",
+        type=int,
+        default=1,
+        choices=range(1, 13),
+        help="Starting month (1-12, default: 1)",
+    )
+
+    parser.add_argument(
+        "--to-month",
+        type=int,
+        default=12,
+        choices=range(1, 13),
+        help="Ending month (1-12, default: 12)",
+    )
+
+    parser.add_argument(
+        "--as-excel",
+        action="store_true",
+        help="Save data to excel files. This is an additional action, it doesn't remove other data output types.",
+    )
+
+    parser.add_argument(
+        "--db-name",
+        type=str,
+        default="Site_Data",
+        help="Name of the database to use",
+    )
+
     args = parser.parse_args()
 
     # Configure logging
@@ -779,35 +843,13 @@ if __name__ == "__main__":
         # Normal pipeline execution
         logger.info(f"Running in production mode using Live MongoDB URL")
         mongodb_url = os.getenv("LOCAL_MONGODB_URL")
-        # years = [
-        #     # "2024",
-        #     # "2023",
-        #     # "2022",
-        #     # "2021",
-        #     # "2020",
-        #     # "2019",
-        #     # "2018",
-        #     # "2017",
-        #     # "2016",
-        #     # "2015",
-        #     # "2014",
-        #     # "2013",
-        #     "2012",
-        #     "2011",
-        #     "2010",
-        #     "2009",
-        # ]
-        # months = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
-        years = ["2019"]
-        months = ["11"]
+        years = [str(year) for year in range(args.from_year, args.to_year + 1)]
+        months = [str(month) for month in range(args.from_month, args.to_month + 1)]
 
         processed_dict = defaultdict(list)
 
         for year in years:
-
-            current_months = months[8:] if year == "2012" else months
-
-            for month in current_months:
+            for month in months:
                 pipeline_runner = PipelineRunner(
                     ai_api_key=ai_api_key,
                     crossref_affiliation="Salisbury University",
@@ -816,6 +858,7 @@ if __name__ == "__main__":
                     data_from_year=int(year),
                     data_to_year=int(year),
                     mongodb_url=mongodb_url,
+                    db_name=args.db_name,
                     pre_classification_model=pre_classification_model,
                     classification_model=classification_model,
                     theme_model=theme_model,
@@ -828,3 +871,9 @@ if __name__ == "__main__":
 
     with open("processed_data.json", "w") as file:
         json.dump(processed_dict, file, indent=4)
+
+    if args.as_excel:
+        logger.info("Creating Excel files...")
+        db = DatabaseWrapper(db_name=args.db_name, mongo_url=mongodb_url)
+
+        make_excel(db)
