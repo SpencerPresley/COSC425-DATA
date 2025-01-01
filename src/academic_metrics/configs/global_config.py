@@ -3,9 +3,8 @@ from typing import Dict, Any, cast
 import warnings
 import os
 
-from academic_metrics.constants import LOG_DIR_PATH
+from academic_metrics.constants import LOG_DIR_PATH, RELEASE_MODE
 
-RELEASE_MODE = True
 LOG_TO_CONSOLE = False
 LOG_LEVEL = logging.INFO
 

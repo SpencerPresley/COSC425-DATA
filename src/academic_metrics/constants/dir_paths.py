@@ -4,6 +4,8 @@ from typing import Optional, cast
 import sys
 import platformdirs
 
+RELEASE_MODE = True
+
 
 def get_package_data_dir() -> Path:
     """Get the appropriate data directory for the package based on platform."""
@@ -61,13 +63,17 @@ if os.environ.get("READTHEDOCS") == "True":
     OUTPUT_FILES_DIR_PATH = Path("/dummy/data/core/output_files")
     _ACADEMIC_METRICS_PACKAGE_ROOT = Path("/dummy/academic_metrics")
     LOG_DIR_PATH = Path("/dummy/academic_metrics/logs")
+
 elif getattr(sys, "frozen", False):
     # Handle PyInstaller case if needed
+
     _PROJECT_ROOT = Path(sys._MEIPASS)
     _DATA_ROOT = get_package_data_dir()
 
 else:
+
     # System executing, set paths to actual locations
+
     try:
         # Try development paths first
         _PROJECT_ROOT = locate_academic_metrics_root()
@@ -79,12 +85,20 @@ else:
         _DATA_ROOT = get_package_data_dir()
 
 # Common path definitions that work for both dev and installed scenarios
-_DATA_CORE_ROOT = _DATA_ROOT / "core"
-_DATA_OTHER_ROOT = _DATA_ROOT / "other"
-SPLIT_FILES_DIR_PATH = _DATA_CORE_ROOT / "crossref_split_files"
-INPUT_FILES_DIR_PATH = _DATA_CORE_ROOT / "input_files"
-OUTPUT_FILES_DIR_PATH = _DATA_CORE_ROOT / "output_files"
-LOG_DIR_PATH = _DATA_ROOT / "logs"
+if RELEASE_MODE:
+    _DATA_CORE_ROOT = Path(".") / "core"
+    _DATA_OTHER_ROOT = _DATA_ROOT / "other"
+    SPLIT_FILES_DIR_PATH = _DATA_CORE_ROOT / "crossref_split_files"
+    INPUT_FILES_DIR_PATH = _DATA_CORE_ROOT / "input_files"
+    OUTPUT_FILES_DIR_PATH = _DATA_CORE_ROOT / "output_files"
+    LOG_DIR_PATH = Path(".") / "logs"  # Changed to use current directory
+else:
+    _DATA_CORE_ROOT = _DATA_ROOT / "core"
+    _DATA_OTHER_ROOT = _DATA_ROOT / "other"
+    SPLIT_FILES_DIR_PATH = _DATA_CORE_ROOT / "crossref_split_files"
+    INPUT_FILES_DIR_PATH = _DATA_CORE_ROOT / "input_files"
+    OUTPUT_FILES_DIR_PATH = _DATA_CORE_ROOT / "output_files"
+    LOG_DIR_PATH = _DATA_ROOT / "logs"
 
 # Create directories if they don't exist
 for path in [
@@ -93,4 +107,9 @@ for path in [
     OUTPUT_FILES_DIR_PATH,
     LOG_DIR_PATH,
 ]:
-    path.parent.mkdir(parents=True, exist_ok=True)
+    if RELEASE_MODE:
+        # In release mode, create directories in current working directory
+        Path(path).mkdir(parents=True, exist_ok=True)
+    else:
+        # In development mode, use the original behavior
+        path.parent.mkdir(parents=True, exist_ok=True)
