@@ -1,6 +1,13 @@
 from pathlib import Path
 import os
 from typing import Optional, cast
+import sys
+import platformdirs
+
+
+def get_package_data_dir() -> Path:
+    """Get the appropriate data directory for the package based on platform."""
+    return Path(platformdirs.user_data_dir("academic_metrics"))
 
 
 def locate_academic_metrics_root(marker: str | None = "COSC425-DATA") -> Path:
@@ -54,16 +61,36 @@ if os.environ.get("READTHEDOCS") == "True":
     OUTPUT_FILES_DIR_PATH = Path("/dummy/data/core/output_files")
     _ACADEMIC_METRICS_PACKAGE_ROOT = Path("/dummy/academic_metrics")
     LOG_DIR_PATH = Path("/dummy/academic_metrics/logs")
+elif getattr(sys, "frozen", False):
+    # Handle PyInstaller case if needed
+    _PROJECT_ROOT = Path(sys._MEIPASS)
+    _DATA_ROOT = get_package_data_dir()
+
 else:
     # System executing, set paths to actual locations
-    _PROJECT_ROOT = locate_academic_metrics_root()
-    _SRC_ROOT = locate_src_root()
-    _ACADEMIC_METRICS_ROOT = _PROJECT_ROOT / "academic_metrics"
-    _DATA_ROOT = _SRC_ROOT / "data"
-    _DATA_CORE_ROOT = _DATA_ROOT / "core"
-    _DATA_OTHER_ROOT = _DATA_ROOT / "other"
-    SPLIT_FILES_DIR_PATH = _DATA_CORE_ROOT / "crossref_split_files"
-    INPUT_FILES_DIR_PATH = _DATA_CORE_ROOT / "input_files"
-    OUTPUT_FILES_DIR_PATH = _DATA_CORE_ROOT / "output_files"
-    _ACADEMIC_METRICS_PACKAGE_ROOT = _SRC_ROOT / "academic_metrics"
-    LOG_DIR_PATH = _ACADEMIC_METRICS_PACKAGE_ROOT / "logs"
+    try:
+        # Try development paths first
+        _PROJECT_ROOT = locate_academic_metrics_root()
+        _SRC_ROOT = locate_src_root()
+        _DATA_ROOT = _SRC_ROOT / "data"
+    except FileNotFoundError:
+        # Fallback to installed package paths
+        _PROJECT_ROOT = Path(__file__).parent.parent.parent
+        _DATA_ROOT = get_package_data_dir()
+
+# Common path definitions that work for both dev and installed scenarios
+_DATA_CORE_ROOT = _DATA_ROOT / "core"
+_DATA_OTHER_ROOT = _DATA_ROOT / "other"
+SPLIT_FILES_DIR_PATH = _DATA_CORE_ROOT / "crossref_split_files"
+INPUT_FILES_DIR_PATH = _DATA_CORE_ROOT / "input_files"
+OUTPUT_FILES_DIR_PATH = _DATA_CORE_ROOT / "output_files"
+LOG_DIR_PATH = _DATA_ROOT / "logs"
+
+# Create directories if they don't exist
+for path in [
+    SPLIT_FILES_DIR_PATH,
+    INPUT_FILES_DIR_PATH,
+    OUTPUT_FILES_DIR_PATH,
+    LOG_DIR_PATH,
+]:
+    path.parent.mkdir(parents=True, exist_ok=True)
