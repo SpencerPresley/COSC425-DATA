@@ -11,4 +11,5 @@ from .global_config import (
     WARNING,
     ERROR,
     CRITICAL,
+    RELEASE_MODE,
 )
