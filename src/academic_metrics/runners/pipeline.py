@@ -718,7 +718,7 @@ class PipelineRunner:
         )
 
 
-def make_excel(db: DatabaseWrapper):
+def get_excel_report(db: DatabaseWrapper):
     """Save all data from database to Excel files.
 
     Args:
@@ -733,7 +733,7 @@ def make_excel(db: DatabaseWrapper):
     pd.DataFrame(faculty).to_excel("faculty_data.xlsx", index=False)
 
 
-if __name__ == "__main__":
+def main():
     import argparse
     from dotenv import load_dotenv
 
@@ -879,4 +879,12 @@ if __name__ == "__main__":
         logger.info("Creating Excel files...")
         db = DatabaseWrapper(db_name=args.db_name, mongo_url=mongodb_url)
 
-        make_excel(db)
+        get_excel_report(db)
+
+
+def command_line_runner():
+    main()
+
+
+if __name__ == "__main__":
+    main()
