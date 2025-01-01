@@ -219,10 +219,6 @@ class PipelineRunner:
         self.theme_model: str | None = theme_model
         self.logger.info("Theme-model set successfully")
 
-        self.logger.info("Setting save-excel...")
-        self.save_excel: bool | None = save_excel
-        self.logger.info("Save-excel set successfully")
-
         self.logger.info("PipelineRunner initialized successfully")
 
     def run_pipeline(
