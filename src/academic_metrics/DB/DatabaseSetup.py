@@ -78,6 +78,7 @@ class DatabaseWrapper:
         if not mongo_url:
             print("Url error")
             return
+
         self.mongo_url = mongo_url
         self.client = MongoClient(self.mongo_url, server_api=ServerApi("1"))
         self.db = self.client[db_name]

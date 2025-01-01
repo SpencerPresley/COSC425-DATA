@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "academic_metrics"
-version = "1.0.0"
+version = "1.0.1"
 description = "A tool to extract and format academic data from Web of Science and Crossref"
 authors = [
     { name = "Spencer Presley", email = "spencerpresley96@gmail.com" },
@@ -25,7 +25,7 @@ dependencies = [
     "langchain_core==0.3.19",
     "langchain_google_genai==2.0.5",
     "langchain_openai==0.2.9",
-    "openai==1.55.0",
+    "openai==1.58.1",
     "pandas==2.2.3",
     "pydantic==2.9.2",
     "pylatexenc==2.10",

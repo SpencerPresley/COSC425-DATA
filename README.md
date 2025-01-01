@@ -156,7 +156,7 @@ The default AI model used for all parts is `gpt-4o-mini`. If you want to use a d
 Here's how you would run the pipeline using the larger `gpt-4o` model:
 
 ```bash
-python pipeline.py --from-month=1 --to-month=12 --from-year=2019 --to-year=2024 --crossref-affiliation="Salisbury University" --as-excel --db-name=Your_Database_Name --pre-classification-model=gpt-4o --classification-model=gpt-4o --theme-model=gpt-4o
+python pipeline.py --from-month=1 --to-month=12 --from-year=2019 --to-year=2024 --crossref-affiliation="Salisbury University" --**as**-excel --db-name=Your_Database_Name --pre-classification-model=gpt-4o --classification-model=gpt-4o --theme-model=gpt-4o
 ```
 
 ### Option 2 - Your own script (Not recommended)
