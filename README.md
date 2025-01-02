@@ -666,7 +666,7 @@ command_line_runner()
 ```
 
 > [!WARNING]
-> If you did not use the `MONGODB_URI` and `OPENAI_API_KEY` as the variable names in the .env file, you will need to make a couple changes to the above code.
+> If you did not use `MONGODB_URI` and `OPENAI_API_KEY` as the variable names in the .env file, you will need to make a couple changes to the above code.
 
 **How to use with different variable names:**
 
