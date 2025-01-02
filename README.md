@@ -54,7 +54,7 @@ To see a demo of the site, you can watch the below video:
 
 [![Demo Video](https://img.youtube.com/vi/LojIwEvFgrk/maxresdefault.jpg)](https://youtu.be/LojIwEvFgrk)
 
-## Installation via pip
+## Installation and setup via pip
 
 Hey all, we are pleased to announce as of January 1st, 2025, you can now install the *Academic Metrics* package via *pip* and easily run the system. Below are instructions outlining step by step how to do it.
 
