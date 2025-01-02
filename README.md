@@ -606,20 +606,6 @@ For this option you need to do the following:
     python run_am.py
     ```
 
-    If you get the following error:
-
-    ```bash
-    'python' is not recognized as an internal or external command, operable program or batch file.
-    ```
-
-    Then it's likely one of the following issues, I recommend checking the following in order:
-
-    - Try using `python3` instead of `python`
-    - Make sure python is installed on your system
-    - Make sure python is added to your system path, to see how to do this, you can look [here](https://realpython.com/add-python-to-path/)
-
-    The latter two are likely not to be the issue, as you would've ran into them when setting up your virtual environment, but if the first does not fix the issue, then check the other two.
-
 </br>
 
 ## Option 2 - Command Line Interface
