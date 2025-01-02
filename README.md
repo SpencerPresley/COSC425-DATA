@@ -10,7 +10,7 @@
 
 **What is it?**
 
-This repository (COSC425-DATA) is the host of the source code for the **Academic Metrics** package.
+This repository (COSC425-DATA) hosts the source code for the **Academic Metrics** package.
 
 **Academic Metrics** is an AI-powered toolkit for collecting and classifying academic research publications.
 
