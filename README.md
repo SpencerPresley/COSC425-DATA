@@ -55,9 +55,13 @@ To see a demo of the site, you can watch the below video:
 
 [![Demo Video](https://img.youtube.com/vi/LojIwEvFgrk/maxresdefault.jpg)](https://youtu.be/LojIwEvFgrk)
 
+---
+
 ## Installation and setup via pip
 
 Hey all, we are pleased to announce as of January 1st, 2025, you can now install the *Academic Metrics* package via *pip* and easily run the system. Below are instructions outlining step by step how to do it.
+
+</br>
 
 ### 0. External Setup
 
@@ -77,6 +81,10 @@ To create a new db with a custom name you can run `use <db_name>`.
 
 Collection creation is handled by the system, you do not need to create them.
 
+</br>
+
+---
+
 ### 1. Installation and setup
 
 Install `academic_metrics>=1.0.98` via pip.
@@ -87,58 +95,98 @@ To install the latest version of the package, you can run the following command:
 pip install academic-metrics
 ```
 
-**Virtual environment (Optional, but recommended):**
+</br>
 
-1. Create a virtual environment:
+### Virtual environment (Optional, but recommended):
+
+</br>
+
+**1. Create a virtual environment:**
+
+</br>
 
 >[!NOTE]
 > For these virtual environment examples we will be using `am_data_collection` as the name of the environment.
 
-**venv**:
+</br>
+
+**With venv**:
+
+</br>
 
 > [!NOTE]
 > venv is of the form `python -m venv <env_name>`
+
+</br>
 
 ```bash
 python -m venv am_data_collection
 ```
 
-**conda**:
+</br>
+
+**With conda**:
+
+</br>
 
 > [!NOTE]
 > conda is of the form
 >
 > `conda create -n <env_name> python=<python_version>`
 
+</br>
+
 ```bash
 conda create -n am_data_collection python=3.12
 ```
 
-2. Activate the virtual environment:
+</br>
+</br>
 
-**venv**:
+**2. Activate the virtual environment:**
+
+</br>
+
+**With venv**:
+
+</br>
 
 > [!NOTE]
 > venv is of the form:
 >
 > `source <env_name>/bin/activate`
 
+</br>
+
 ```bash
 source am_data_collection/bin/activate
 ```
 
-**conda**:
+</br>
+</br>
+
+**With Conda**:
+
+</br>
 
 > [!NOTE]
 > conda is of the form `conda activate <env_name>`
+
+</br>
 
 ```bash
 conda activate am_data_collection
 ```
 
+</br>
+
+---
+
 ### 2. Creating the directory and necessary files
 
-1. Create the directory and navigate into it:
+</br>
+
+1. **Create the directory and navigate into it:**
 
    For this example we will be using `am_data_collection` as the name of the directory, but you can name it whatever you want.
 
@@ -163,7 +211,9 @@ conda activate am_data_collection
     mkdir am_data_collection; cd am_data_collection
     ```
 
-2. Create a `.env` file inside the directory you just created.
+</br>
+
+2. **Create a `.env` file inside the directory you just created.**
 
     **Linux/Mac**:
 
@@ -185,9 +235,15 @@ conda activate am_data_collection
 
     You should now have a `.env` file in your directory.
 
+</br>
+
+---
+
 ### 3. Setting required environment variables
 
-1. Open the `.env` file you just created, and add the following variables:
+</br>
+
+1. **Open the `.env` file you just created, and add the following variables:**
 
    - a variable to store your MongoDB URI, I recommend `MONGODB_URI`
    - a variable to store your database name, I recommend `DB_NAME`
@@ -203,7 +259,9 @@ conda activate am_data_collection
     OPENAI_API_KEY=""
     ```
 
-2. Retrieve and set your MongoDB URI:
+    </br>
+
+2. **Retrieve and set your MongoDB URI:**
 
     For local MongoDB it's typically:
 
@@ -233,11 +291,15 @@ conda activate am_data_collection
     MONGODB_URI="mongodb+srv://<username>:<password>@<cluster-name>.<unique-id>.mongodb.net/?retryWrites=true&w=majority&appName=<YourAppNameOnAtlas>"
     ```
 
+</br>
+
 > [!WARNING]
 > I recommend starting locally unless you need to use a live MongoDB instance.
 > This will avoid the need to deal with setting up MongoDB Atlas, which while not difficult, it is an added step.
 
-3. Set your database name
+</br>
+
+3. **Set your database name**
 
     You can pick any name you want for `DB_NAME`, but it needs to be a name of a valid database on your mongodb server. To make one on the command line you can run:
 
@@ -263,7 +325,9 @@ conda activate am_data_collection
     DB_NAME="academic_metrics_data"
     ```
 
-4. Set your OpenAI API Key
+    </br>
+
+4. **Set your OpenAI API Key**
 
     If you do not have an OpenAI API key you will need to create one, but do not worry, it's easy.
 
@@ -281,6 +345,8 @@ conda activate am_data_collection
     OPENAI_API_KEY="sk-proj..."
     ```
 
+    </br>
+
 > [!IMPORTANT]
 > You will need to add funds to your OpenAI account to use the API.
 >
@@ -294,6 +360,8 @@ conda activate am_data_collection
 >
 > You do not have to change anything in the code once you run it again, the system checks for existing data and only processes data that has not yet been processed.
 
+</br>
+
 All together your `.env` file should look like this:
 
 ```python
@@ -301,6 +369,10 @@ MONGODB_URI="mongodb://localhost:27017"
 DB_NAME="academic_metrics_data"
 OPENAI_API_KEY="sk-proj..."
 ```
+
+</br>
+
+---
 
 ### 4. Quick Setup and Usage
 
@@ -315,11 +387,15 @@ If you do not have any experience with python or programming, and just want a pl
 
 Both options are simple to setup and use. I will detail the process for both options below. I suggest briefly reading through both options and then picking the one you prefer. Once you've picked one, simply follow the instructions for that option.
 
+</br>
+
 ## Option 1 - Short Script
 
 For this option you need to do the following:
+</br>
+</br>
 
-1. Create the python file
+1. **Create the python file**
 
     Within your directory, create a new python file, for this example we will be using `run_am.py`, but you can name it whatever you want.
 
@@ -343,7 +419,9 @@ For this option you need to do the following:
 
     You should now have a python file in your directory whose name matches the one you created.
 
-2. Copy paste the following code into the file you just created:
+    </br>
+
+2. **Copy paste the following code into the file you just created:**
 
     ```python
 
@@ -520,7 +598,9 @@ For this option you need to do the following:
     get_excel_report(db)
     ```
 
-3. Run the script
+</br>
+
+3. **Run the script**
 
     ```bash
     python run_am.py
@@ -540,44 +620,50 @@ For this option you need to do the following:
 
     The latter two are likely not to be the issue, as you would've ran into them when setting up your virtual environment, but if the first does not fix the issue, then check the other two.
 
+</br>
+
 ## Option 2 - Command Line Interface
 
 For this options you will still need to create a python file, but the code will only be a couple lines long as you'll be passing in your arguments via the command line.
 
-1. Create the python file
+</br>
 
-    Within your directory, create a new python file, for this example we will be using `run_am.py`, but you can name it whatever you want.
+### 1. Create the python file
 
-    **Linux/Mac**:
+Within your directory, create a new python file, for this example we will be using `run_am.py`, but you can name it whatever you want.
 
-    ```bash
-    touch run_am.py
-    ```
+**Linux/Mac**:
 
-    **Windows (Command Prompt):**
+```bash
+touch run_am.py
+```
 
-    ```cmd
-    type nul > run_am.py
-    ```
+**Windows (Command Prompt):**
 
-    **Windows (PowerShell):**
+```cmd
+type nul > run_am.py
+```
 
-    ```powershell
-    New-Item -Path run_am.py -Type File
-    ```
+**Windows (PowerShell):**
 
-    You should now have a python file in your directory whose name matches the one you created.
+```powershell
+New-Item -Path run_am.py -Type File
+```
 
-2. Copy and paste the following code into the file you just created:
+You should now have a python file in your directory whose name matches the one you created.
+</br>
+</br>
 
-    ```python
-    from dotenv import load_dotenv
-    from academic_metrics.runners import command_line_runner
+### 2. Copy and paste the following code into the file you just created
 
-    load_dotenv()
+```python
+from dotenv import load_dotenv
+from academic_metrics.runners import command_line_runner
 
-    command_line_runner()
-    ```
+load_dotenv()
+
+command_line_runner()
+```
 
 > [!WARNING]
 > If you did not use the `MONGODB_URI` and `OPENAI_API_KEY` as the variable names in the .env file, you will need to make a couple changes to the above code.
@@ -601,7 +687,9 @@ command_line_runner(
 )
 ```
 
-1. Run the script
+</br>
+
+### 3. Run the script
 
 For this option you will still run the script from command line, but you will also be passing in arguments, details laid out below.
 
@@ -624,6 +712,8 @@ If you want to save the data to excel files you can pass in the `--as-excel` arg
 
 >[!NOTE]
 > The `--as-excel` argument is an additional action, it doesn't remove the the saving to other data formats, but merely adds the excel saving functionality.
+
+---
 
 ### Examples
 
@@ -666,6 +756,8 @@ python run_am.py --from-month=1 \
 --classification-model=gpt-4o \
 --theme-model=gpt-4o
 ```
+
+---
 
 ## Wrapping Up
 
