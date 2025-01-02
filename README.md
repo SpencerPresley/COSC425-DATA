@@ -67,7 +67,7 @@ Setting up mongod:
 
 To see instructions on how to install and run mongod see the [MongoDB documentation](https://www.mongodb.com/docs/manual/installation/).
 
-If you have struggles setting up mongodb, google, youtube, and chatgpt are your friends.
+If you have struggles setting up MongoDB, google, youtube, and chatgpt are your friends.
 
 The installation is rather easy, just follow the instructions and you should be able to get it running.
 
