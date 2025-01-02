@@ -34,7 +34,7 @@ The system:
 - **Configurable Pipeline**: Customizable date ranges, models, and processing options
 - **And more!**: There are many useful tools within the academic metrics package that can be used for much more than just classification of academic research data, and they're all quite intuitive to use. See [Other Uses](./additional_information/OtherUses.md) for more information.
 
-## Documentation and example site built using the Salisbury University data from 2009-2024
+## Documentation and example site built using Salisbury University data from 2009-2024
 
 To be able to see any and all implementation details from the code logic, structure, prompts, and more you can check out our documentation. The documentation is built with [*Sphinx*](https://github.com/sphinx-doc/sphinx), allowing for easy use and a sense of famliarity.
 
