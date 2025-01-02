@@ -404,7 +404,7 @@ For this option you need to do the following:
             # data_to_month: the month to end collecting data on
             # data_from_year: the year to start collecting data from
             # data_to_year: the year to end collecting data on
-            # mongodb_url: the URL of the MongoDB server
+            # mongodb_uri: the URL of the MongoDB server
             # db_name: the name of the database to use
             pipeline_runner = PipelineRunner(
                 ai_api_key=ai_api_key,
@@ -449,7 +449,7 @@ For this option you need to do the following:
     # If you used the same names as the ones in the examples, you can just copy paste these
     # if you used different names, you will need to change them to match the ones in your .env file
     ai_api_key = os.getenv("OPENAI_API_KEY")
-    mongodb_url = os.getenv("MONGODB_URI")
+    mongodb_uri = os.getenv("MONGODB_URI")
     db_name = os.getenv("DB_NAME")
 
     # Set the date range you want to process
@@ -494,7 +494,7 @@ For this option you need to do the following:
             # data_to_month: the month to end collecting data on
             # data_from_year: the year to start collecting data from
             # data_to_year: the year to end collecting data on
-            # mongodb_url: the URL of the MongoDB server
+            # mongodb_uri: the URL of the MongoDB server
             # db_name: the name of the database to use
             pipeline_runner = PipelineRunner(
                 ai_api_key=ai_api_key,
@@ -571,7 +571,10 @@ For this options you will still need to create a python file, but the code will 
 2. Copy and paste the following code into the file you just created:
 
     ```python
+    from dotenv import load_dotenv
     from academic_metrics.runners import command_line_runner
+
+    load_dotenv()
 
     command_line_runner()
     ```
@@ -586,7 +589,10 @@ The `command_line_runner` functions takes in 2 optional arguments, `openai_api_k
 To use the different names, do the following:
 
 ```python
+from dotenv import load_dotenv
 from academic_metrics.runners import command_line_runner
+
+load_dotenv()
 
 # The strings should be changes to match the names you used in your .env file
 command_line_runner(
@@ -630,7 +636,7 @@ python run_am.py --from-month=1 \
 --to-year=2024 \
 --crossref-affiliation="Salisbury University" \
 --as-excel \
---db-name=Your_Database_Name
+--db-name="Your_Database_Name"
 ```
 
 The default AI model used for all parts is `gpt-4o-mini`. If you want to use a different model you can use the following arguments:
