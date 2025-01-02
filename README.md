@@ -594,7 +594,7 @@ For this option you need to do the following:
     # Call the get_excel_report function, passing in the db object, to save the data to excel files
     #
     # Once this finishes running, you should have 3 excel files in your directory:
-    # article_data.xlsx, author_data.xlsx, and category_data.xlsx
+    # article_data.xlsx, faculty_data.xlsx, and category_data.xlsx
     get_excel_report(db)
     ```
 
