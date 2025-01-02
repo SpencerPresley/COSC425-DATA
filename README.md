@@ -5,7 +5,8 @@
 > Install with: `pip install academic-metrics`
 >
 > This is the recommended installation method for most users.
-> See [**Installation via pip**](#installation-via-pip)
+>
+> See [**Installation and setup via pip**](#installation-and-setup-via-pip)
 
 **What is it?**
 
@@ -90,42 +91,46 @@ pip install academic-metrics
 
 1. Create a virtual environment:
 
-    >[!NOTE]
-    > For these virtual environment examples we will be using `am_data_collection` as the name of the environment.
+>[!NOTE]
+> For these virtual environment examples we will be using `am_data_collection` as the name of the environment.
 
-    **venv**:
+**venv**:
 
-    > [!NOTE]
-    > venv is of the form `python -m venv <env_name>`
+> [!NOTE]
+> venv is of the form `python -m venv <env_name>`
 
-    ```bash
-    python -m venv am_data_collection
-    ```
+```bash
+python -m venv am_data_collection
+```
 
-    **conda**:
+**conda**:
 
-    > [!NOTE]
-    > conda is of the form `conda create -n <env_name> python=<python_version>`
+> [!NOTE]
+> conda is of the form
+>
+> `conda create -n <env_name> python=<python_version>`
 
-    ```bash
-    conda create -n am_data_collection python=3.12
-    ```
+```bash
+conda create -n am_data_collection python=3.12
+```
 
 2. Activate the virtual environment:
 
-    **venv**:
+**venv**:
 
-    > [!NOTE]
-    > venv is of the form `source <env_name>/bin/activate`
+> [!NOTE]
+> venv is of the form:
+>
+> `source <env_name>/bin/activate`
 
-    ```bash
-    source am_data_collection/bin/activate
-    ```
+```bash
+source am_data_collection/bin/activate
+```
 
-    **conda**:
+**conda**:
 
-    > [!NOTE]
-    > conda is of the form `conda activate <env_name>`
+> [!NOTE]
+> conda is of the form `conda activate <env_name>`
 
 ```bash
 conda activate am_data_collection
@@ -208,10 +213,6 @@ conda activate am_data_collection
 
     For live MongoDB:
 
-    [!WARNING]
-    > I recommend starting locally unless you need to use a live MongoDB instance.
-    > This will avoid the need to deal with setting up MongoDB Atlas, which while not difficult, it is an added step.
-
     For a live version you should use the MongoDB Atlas URI. It should look something like this:
 
     ```bash
@@ -231,6 +232,10 @@ conda activate am_data_collection
     ```python
     MONGODB_URI="mongodb+srv://<username>:<password>@<cluster-name>.<unique-id>.mongodb.net/?retryWrites=true&w=majority&appName=<YourAppNameOnAtlas>"
     ```
+
+> [!WARNING]
+> I recommend starting locally unless you need to use a live MongoDB instance.
+> This will avoid the need to deal with setting up MongoDB Atlas, which while not difficult, it is an added step.
 
 3. Set your database name
 
@@ -276,17 +281,18 @@ conda activate am_data_collection
     OPENAI_API_KEY="sk-proj..."
     ```
 
-    >[!IMPORTANT]
-    > You will need to add funds to your OpenAI account to use the API.
-    >
-    > When using the default model for the system (gpt-4o-mini), it cost us about $3-4 dollars to process all of the data from Salisbury University from 2009-2024.
-    >
-    > For larger models such as gpt-4o, the cost will be much higher.
-    >
-    > We saw good results using gpt-4o-mini, and it's also the most cost effective. So I recommend starting with that.
-    >
-    > Additionally, whether you opt to use our command line interface or your own script, the data is processed one month at a time and saved to the database, so if you run out of funds on your OpenAI account you will not lose data for the entire run, only the current month being processed. Simply add funds to your account and continue.
-    > You do not have to change anything in the code once you run it again, the system checks for existing data and only processes data that has not yet been processed.
+> [!IMPORTANT]
+> You will need to add funds to your OpenAI account to use the API.
+>
+> When using the default model for the system (gpt-4o-mini), it cost us about $3-4 dollars to process all of the data from Salisbury University from 2009-2024.
+>
+> For larger models such as gpt-4o, the cost will be much higher.
+>
+> We saw good results using gpt-4o-mini, and it's also the most cost effective. So I recommend starting with that.
+>
+> Additionally, whether you opt to use our command line interface or your own script, the data is processed one month at a time and saved to the database, so if you run out of funds on your OpenAI account you will not lose data for the entire run, only the current month being processed. Simply add funds to your account and continue.
+>
+> You do not have to change anything in the code once you run it again, the system checks for existing data and only processes data that has not yet been processed.
 
 All together your `.env` file should look like this:
 
@@ -564,32 +570,32 @@ For this options you will still need to create a python file, but the code will 
 
 2. Copy and paste the following code into the file you just created:
 
-   ```python
-   from academic_metrics.runners import command_line_runner
-
-   command_line_runner()
-   ```
-
-   > [!WARNING]
-   > If you did not use the `MONGODB_URI` and `OPENAI_API_KEY` as the variable names in the .env file, you will need to make a couple changes to the above code.
-
-    **How to use with different variable names:**
-
-    The `command_line_runner` functions takes in 2 optional arguments, `openai_api_key_env_var_name` and `mongodb_uri_env_var_name` corresponding to the names of the environment variables you used in your .env file.
-
-    To use the different names, do the following:
-
     ```python
     from academic_metrics.runners import command_line_runner
 
-    # The strings should be changes to match the names you used in your .env file
-    command_line_runner(
-        openai_api_key_env_var_name="YOUR_OPENAI_API_KEY_ENV_VAR_NAME",
-        mongodb_uri_env_var_name="YOUR_MONGODB_URI_ENV_VAR_NAME",
-    )
+    command_line_runner()
     ```
 
-3. Run the script
+> [!WARNING]
+> If you did not use the `MONGODB_URI` and `OPENAI_API_KEY` as the variable names in the .env file, you will need to make a couple changes to the above code.
+
+**How to use with different variable names:**
+
+The `command_line_runner` functions takes in 2 optional arguments, `openai_api_key_env_var_name` and `mongodb_uri_env_var_name` corresponding to the names of the environment variables you used in your .env file.
+
+To use the different names, do the following:
+
+```python
+from academic_metrics.runners import command_line_runner
+
+# The strings should be changes to match the names you used in your .env file
+command_line_runner(
+    openai_api_key_env_var_name="YOUR_OPENAI_API_KEY_ENV_VAR_NAME",
+    mongodb_uri_env_var_name="YOUR_MONGODB_URI_ENV_VAR_NAME",
+)
+```
+
+1. Run the script
 
 For this option you will still run the script from command line, but you will also be passing in arguments, details laid out below.
 
