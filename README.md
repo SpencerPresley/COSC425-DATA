@@ -605,7 +605,7 @@ command_line_runner(
 
 For this option you will still run the script from command line, but you will also be passing in arguments, details laid out below.
 
-There are various command line arguments you can pass in, almost all are detailed here, but to complete list you can run:
+There are various command line arguments you can pass in, almost all are detailed here, but to see a complete list you can run:
 
 ```bash
 python run_am.py --help
