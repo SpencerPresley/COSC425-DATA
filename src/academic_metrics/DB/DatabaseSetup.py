@@ -62,12 +62,12 @@ class DatabaseWrapper:
         close_connection: Close the connection to the MongoDB server.
     """
 
-    def __init__(self, *, db_name: str, mongo_url: str):
+    def __init__(self, *, db_name: str, mongo_uri: str):
         """Initialize the DatabaseWrapper with database name, collection name, and MongoDB URL.
 
         Args:
             db_name (str): Name of the database.
-            mongo_url (str): MongoDB URL.
+            mongo_uri (str): MongoDB URI.
         """
         self.logger = configure_logging(
             module_name=__name__,
@@ -75,12 +75,12 @@ class DatabaseWrapper:
             log_level=DEBUG,
         )
 
-        if not mongo_url:
+        if not mongo_uri:
             print("Url error")
             return
 
-        self.mongo_url = mongo_url
-        self.client = MongoClient(self.mongo_url, server_api=ServerApi("1"))
+        self.mongo_uri = mongo_uri
+        self.client = MongoClient(self.mongo_uri, server_api=ServerApi("1"))
         self.db = self.client[db_name]
         self.article_collection: Collection = self.db["article_data"]
         self.category_collection: Collection = self.db["category_data"]
@@ -440,7 +440,7 @@ class DatabaseWrapper:
 if __name__ == "__main__":
     # Load environment variables
     load_dotenv()
-    mongo_url = os.getenv("MONGODB_URL")
+    mongo_uri = os.getenv("MONGODB_URI")
 
     # # Handle article data
     # with open(
@@ -461,7 +461,7 @@ if __name__ == "__main__":
     # ) as f:
     #     faculty_data = json.load(f)
 
-    database = DatabaseWrapper(db_name="Site_Data", mongo_url=mongo_url)
+    database = DatabaseWrapper(db_name="Site_Data", mongo_uri=mongo_uri)
     # database.clear_collection()
 
     # database.process(article_data, "article_data")

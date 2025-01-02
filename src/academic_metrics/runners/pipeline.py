@@ -57,7 +57,7 @@ class PipelineRunner:
         logger (logging.Logger): Pipeline-wide logger instance.
         ai_api_key (str): API key for AI services.
         db_name (str): Name of the MongoDB database.
-        mongodb_url (str): URL for MongoDB connection.
+        mongodb_uri (str): URI for MongoDB connection.
         db (DatabaseWrapper): Database interface instance.
         scraper (Scraper): Web scraping utility instance.
         crossref_wrapper (CrossrefWrapper): Crossref API interface instance.
@@ -109,7 +109,7 @@ class PipelineRunner:
         data_to_month: int,
         data_from_year: int,
         data_to_year: int,
-        mongodb_url: str,
+        mongodb_uri: str,
         db_name: str | None = "Site_Data",
         debug: bool | None = False,
         pre_classification_model: str | None = "gpt-4o-mini",
@@ -123,7 +123,7 @@ class PipelineRunner:
             crossref_affiliation (str): Institution name to search for in Crossref.
             data_from_year (int): Start year for publication data collection.
             data_to_year (int): End year for publication data collection.
-            mongodb_url (str): Connection URL for MongoDB instance.
+            mongodb_uri (str): Connection URL for MongoDB instance.
             db_name (str, optional): Name of the MongoDB database. Defaults to "Site_Data".
             debug (bool, optional): Enable debug mode for additional logging and controls. Defaults to False.
 
@@ -137,7 +137,7 @@ class PipelineRunner:
         self.logger.info("Initializing PipelineRunner dependencies...")
         self.ai_api_key: str = ai_api_key
         self.db_name: str = db_name
-        self.mongodb_url: str = mongodb_url
+        self.mongodb_uri: str = mongodb_uri
 
         self.logger.info("Creating DatabaseWrapper instance...")
         self.db: DatabaseWrapper = self._create_db()
@@ -693,7 +693,7 @@ class PipelineRunner:
         Returns:
             DatabaseWrapper: A database wrapper configured with connection details.
         """
-        return DatabaseWrapper(db_name=self.db_name, mongo_url=self.mongodb_url)
+        return DatabaseWrapper(db_name=self.db_name, mongo_uri=self.mongodb_uri)
 
     @staticmethod
     def _encode_affiliation(affiliation: str) -> str:
@@ -733,17 +733,48 @@ def get_excel_report(db: DatabaseWrapper):
     pd.DataFrame(faculty).to_excel("faculty_data.xlsx", index=False)
 
 
-def main():
+def main(
+    openai_api_key_env_var_name: str | None = "OPENAI_API_KEY",
+    mongodb_uri_env_var_name: str | None = "MONGODB_URI",
+):
+    if openai_api_key_env_var_name is None:
+        raise ValueError("openai_api_key_env_var_name cannot be None")
+
+    if mongodb_uri_env_var_name is None:
+        raise ValueError("mongodb_uri_env_var_name cannot be None")
+
     import argparse
     from dotenv import load_dotenv
 
     load_dotenv()
-    ai_api_key = os.getenv("OPENAI_API_KEY")
+    ai_api_key = os.getenv(openai_api_key_env_var_name)
+    mongodb_uri = os.getenv(mongodb_uri_env_var_name)
+
+    if ai_api_key is None:
+        raise ValueError(
+            f"\n\nError: {openai_api_key_env_var_name} environment variable not found."
+            "\n\nPlease set the environment variable and try again."
+            "\nIf you are unsure how to set an environment variable, or you do not have an OpenAI API key,"
+            "\nplease refer to the README.md file for more information:"
+            "\nhttps://github.com/spencerpresley/COSC425-DATA"
+        )
+
+    if mongodb_uri is None:
+        raise ValueError(
+            f"\n\nError: {mongodb_uri_env_var_name} environment variable not found."
+            "\n\nPlease set the environment variable and try again."
+            "\nIf you are unsure how to set an environment variable, or you do not have a MongoDB URI,"
+            "\nplease refer to the README.md file for more information:"
+            "\nhttps://github.com/spencerpresley/COSC425-DATA"
+        )
 
     # Create argument parser
     parser = argparse.ArgumentParser(description="Run the academic metrics pipeline")
+
     parser.add_argument(
-        "--test-run", action="store_true", help="Run in test mode using local MongoDB"
+        "--test-run",
+        action="store_true",
+        help="Run in test mode using local MongoDB",
     )
     parser.add_argument(
         "--pre-classification-model",
@@ -831,21 +862,21 @@ def main():
     if args.test_run:
         # Load local mongodb url
         logger.info("Running in test mode using local MongoDB...")
-        mongodb_url = os.getenv("LOCAL_MONGODB_URL")
+        mongodb_uri = os.getenv("LOCAL_MONGODB_URL")
         pipeline = PipelineRunner(
             ai_api_key=ai_api_key,
             crossref_affiliation="Salisbury University",
             data_from_year=2024,
             data_to_year=2024,
-            mongodb_url=mongodb_url,
+            mongodb_uri=mongodb_uri,
         )
 
         # Execute test run
         pipeline.test_run()
     else:
         # Normal pipeline execution
-        logger.info(f"Running in production mode using Live MongoDB URL")
-        mongodb_url = os.getenv("LOCAL_MONGODB_URL")
+        logger.info(f"Running in production mode...")
+        mongodb_uri = os.getenv(mongodb_uri_env_var_name)
         years = [str(year) for year in range(args.from_year, args.to_year + 1)]
         months = [str(month) for month in range(args.from_month, args.to_month + 1)]
 
@@ -860,7 +891,7 @@ def main():
                     data_to_month=int(month),
                     data_from_year=int(year),
                     data_to_year=int(year),
-                    mongodb_url=mongodb_url,
+                    mongodb_uri=mongodb_uri,
                     db_name=args.db_name,
                     pre_classification_model=pre_classification_model,
                     classification_model=classification_model,
@@ -872,19 +903,21 @@ def main():
 
     logger.info(f"Processed data: {json.dumps(processed_dict, indent=4)}")
 
-    with open("processed_data.json", "w") as file:
-        json.dump(processed_dict, file, indent=4)
-
     if args.as_excel:
         logger.info("Creating Excel files...")
-        db = DatabaseWrapper(db_name=args.db_name, mongo_url=mongodb_url)
+        db = DatabaseWrapper(db_name=args.db_name, mongo_uri=mongodb_uri)
 
         get_excel_report(db)
 
+        logger.info("Excel files created successfully")
 
-def command_line_runner():
-    main()
+
+def command_line_runner(
+    openai_api_key_env_var_name: str | None = "OPENAI_API_KEY",
+    mongodb_uri_env_var_name: str | None = "MONGODB_URI",
+):
+    main(openai_api_key_env_var_name, mongodb_uri_env_var_name)
 
 
 if __name__ == "__main__":
-    main()
+    command_line_runner(mongodb_uri_env_var_name="LOCAL_MONGODB_URL")

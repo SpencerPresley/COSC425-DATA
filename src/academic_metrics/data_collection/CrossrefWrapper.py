@@ -19,8 +19,7 @@ if TYPE_CHECKING:
 
 
 class CrossrefWrapper:
-    """
-    A wrapper class for interacting with the Crossref API to fetch and process publication data.
+    """A wrapper class for interacting with the Crossref API to fetch and process publication data.
 
     Attributes:
         base_url (str): The base URL for the Crossref API.
@@ -58,8 +57,7 @@ class CrossrefWrapper:
         test_run: bool | None = False,
         run_scraper: bool | None = True,
     ) -> Self:
-        """
-        Initializes the CrossrefWrapper with the given parameters.
+        """Initializes the CrossrefWrapper with the given parameters.
 
         Args:
             base_url (str): The base URL for the Crossref API.
@@ -115,8 +113,7 @@ class CrossrefWrapper:
         retries: int,
         retry_delay: int,
     ) -> dict[str, Any] | None:
-        """
-        Fetches data from the given URL using aiohttp.
+        """Fetches data from the given URL using aiohttp.
 
         Args:
             session (aiohttp.ClientSession): The aiohttp session to use for the request.
@@ -167,8 +164,7 @@ class CrossrefWrapper:
         cursor: str,
         has_abstract: bool | None = False,
     ) -> str:
-        """
-        Builds the request URL for the Crossref API.
+        """Builds the request URL for the Crossref API.
 
         Args:
             base_url (str): The base URL for the Crossref API.
@@ -197,8 +193,7 @@ class CrossrefWrapper:
         to_date: str,
         affiliation: str | None = "salisbury univ",
     ) -> list[dict[str, Any]]:
-        """
-        Processes the items fetched from the Crossref API, filtering by date and affiliation.
+        """Processes the items fetched from the Crossref API, filtering by date and affiliation.
 
         Args:
             data (dict): The data fetched from the Crossref API.
@@ -267,8 +262,7 @@ class CrossrefWrapper:
         retries: int = 5,
         retry_delay: int = 3,
     ) -> tuple[list[dict[str, Any]], str | None]:
-        """
-        Collects data for a range of years asynchronously.
+        """Collects data for a range of years asynchronously.
 
         Args:
             session (aiohttp.ClientSession): The aiohttp session to use for the request.
@@ -495,14 +489,11 @@ class CrossrefWrapper:
                 if "abstract" not in item:
                     item["abstract"] = abstract
 
-                self.logger.info(
-                    f"\n\nProcessed {num_processed}/{len(self.result)}\n\n"
-                )
                 item["extra_context"] = extra_context
 
                 num_processed += 1
                 self.logger.info(
-                    f"\n\n\nPROCESSED **{i}/{len(self.result)}** ITEMS\n\n\n"
+                    f"\n\n\nPROCESSED **{num_processed}/{len(self.result)}** ITEMS\n\n\n"
                 )
                 i += 1
 

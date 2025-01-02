@@ -1,2 +1,1 @@
-from .pipeline import PipelineRunner
-from .pipeline import get_excel_report
+from .pipeline import PipelineRunner, get_excel_report, command_line_runner
