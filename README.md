@@ -89,15 +89,13 @@ Hey all, Spencer here, we are pleased to announce as of January 1st, 2025, you c
 
 1. **Installing and setting up Python 3.12:**
 
-    > [!NOTE]
-    > This project requires Python 3.12. For detailed Python installation instructions, see our [Python Installation Guide](./additional_information/_guides/_python_install.md).
+    While you should be able to use any version of Python > 3.7, we recommend using Python 3.12 as that is the version we used to develop the system, and the one it's been tested on.
+
+    For a detailed Python installation guide, see our [Python Installation Guide](./additional_information/_guides/_python_install.md).
 
 2. **Installing and setting up MongoDB:**
 
-    > [!NOTE]
-    > For detailed MongoDB installation and setup
-    > instructions, see our
-    > [MongoDB Installation Guide](./additional_information/_guides/_mongodb_install.md).
+    For a detailed MongoDB installation and setup guide, see our [MongoDB Installation Guide](./additional_information/_guides/_mongodb_install.md).
 
     Once you have MongoDB installed and running, you can create a database to store your data in, if you haven't already.
 
@@ -248,11 +246,11 @@ You should now have a `.env` file in your directory.
 
     </br>
 
-    > [!WARNING]
-    > I recommend starting locally unless you need to use a live MongoDB instance.
-    > This will avoid the need to deal with setting up MongoDB Atlas, which while not difficult, it is an added step.
+> [!WARNING]
+> I recommend starting locally unless you need to use a live MongoDB instance.
+> This will avoid the need to deal with setting up MongoDB Atlas, which while not difficult, it is an added step.
 
-    </br>
+</br>
 
 3. **Set your database name**
 
@@ -607,34 +605,34 @@ For this options you will still need to create a python file, but the code will 
     command_line_runner()
     ```
 
-    > [!WARNING]
-    > If you did not use `MONGODB_URI` and `OPENAI_API_KEY` as the variable names in the .env file, you will need to make a couple changes to the above code.
+> [!WARNING]
+> If you did not use `MONGODB_URI` and `OPENAI_API_KEY` as the variable names in the .env file, you will need to make a couple changes to the above code.
 
-    **How to use with different variable names:**
+**How to use with different variable names:**
 
-    The `command_line_runner` function takes in 2 optional arguments:
+The `command_line_runner` function takes in 2 optional arguments:
 
-    - `openai_api_key_env_var_name`
-    - `mongodb_uri_env_var_name`
+- `openai_api_key_env_var_name`
+- `mongodb_uri_env_var_name`
 
-    Which correspond to the names of the environment variables you used in your .env file.
+Which correspond to the names of the environment variables you used in your .env file.
 
-    To use the different names, do the following:
+To use the different names, do the following:
 
-    ```python
-    from dotenv import load_dotenv
-    from academic_metrics.runners import command_line_runner
+```python
+from dotenv import load_dotenv
+from academic_metrics.runners import command_line_runner
 
-    load_dotenv()
+load_dotenv()
 
-    # The strings should be changes to match the names you used in your .env file
-    command_line_runner(
-        openai_api_key_env_var_name="YOUR_OPENAI_API_KEY_ENV_VAR_NAME",
-        mongodb_uri_env_var_name="YOUR_MONGODB_URI_ENV_VAR_NAME",
-    )
-    ```
+# The strings should be changes to match the names you used in your .env file
+command_line_runner(
+    openai_api_key_env_var_name="YOUR_OPENAI_API_KEY_ENV_VAR_NAME",
+    mongodb_uri_env_var_name="YOUR_MONGODB_URI_ENV_VAR_NAME",
+)
+```
 
-    </br>
+</br>
 
 3. **Run the script**
 
@@ -657,10 +655,10 @@ For this options you will still need to create a python file, but the code will 
 
     If you want to save the data to excel files you can pass in the `--as-excel` argument.
 
-    >[!NOTE]
-    > The `--as-excel` argument is an additional action, it doesn't remove the the saving to other data formats, but merely adds the excel saving functionality.
+>[!NOTE]
+> The `--as-excel` argument is an additional action, it doesn't remove the the saving to other data formats, but merely adds the excel saving functionality.
 
-    </br>
+</br>
 
 #### Examples
 

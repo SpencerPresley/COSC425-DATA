@@ -306,9 +306,7 @@ db.your_collection_name.find()
 
 1. **Enable Authentication (Optional)**
 
-    > [!TIP]
-    > If you are not the only person using your machine
-    > or just need added security, you can conduct the following to add **authentication** to your MongoDB instance.
+    If for whatever reason you need added security for your MongoDB instance, you can conduct the following to add authentication to your database:
 
     ```bash
     use admin
