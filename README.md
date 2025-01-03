@@ -731,11 +731,15 @@ python run_am.py \
 ```
 
 >[!WARNING]
-> This process consumes a lot of tokens, during testing we found that using `gpt-4o-mini` was the most cost effective and provided good results.
+> This process consumes a lot of tokens, and OpenAI API service usage is based off the number of input/output tokens used, with each model having different cost per input/output token.
 >
-> If you want to use a larger model like `gpt-4o` you can do so, but be warned it will run through your tokens very quickly.
+> During testing we found that using `gpt-4o-mini` was the most cost effective and provided good results.
 >
-> If you do use a larger model I recommend you start with a smaller date range and work your way up.
+> If you want to use a larger model like `gpt-4o` you can do so, but be warned it could end up running through your funds very quickly, depending on the size of the date range you're processing, and how many articles Crossref covers for the institution being processed.
+>
+> If you are interested in using a larger model, I recommend you first start with a smaller model on a limited date range to see if you're satisfied with the results.
+>
+> If you do decide to use a larger model, I recommend you start with a smaller date range to see what it costs, and then work your way up.
 
 </br>
 
