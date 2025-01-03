@@ -1,4 +1,4 @@
-# COSC425-DATA
+# Academic Metrics
 
 > [!IMPORTANT]  
 > 🎉 **Now Available on PyPI!**  
@@ -6,7 +6,7 @@
 >
 > This is the recommended installation method for most users.
 >
-> See [**Installation and setup via pip**](#installation-and-setup-via-pip)
+> See [**Installation and Setup Steps**](#installation-and-setup-steps)
 
 **What is it?**
 
@@ -22,6 +22,26 @@ The system:
 - Generates comprehensive analytics at article, author, and category levels
 - Stores results in MongoDB (local or live via atlas), local JSON files, and optionally Excel files
 
+## Table of Contents
+
+- [Academic Metrics](#academic-metrics)
+  - [Table of Contents](#table-of-contents)
+  - [Features](#features)
+  - [Documentation](#documentation)
+  - [Example Site and Demo](#example-site-and-demo)
+  - [Installation and Setup Steps](#installation-and-setup-steps)
+    - [0. External Setup](#0-external-setup)
+    - [1. Installation and Setup](#1-installation-and-setup)
+    - [2. Creating the directory and necessary files](#2-creating-the-directory-and-necessary-files)
+    - [3. Setting up a Virtual Environment (Optional but Recommended)](#3-setting-up-a-virtual-environment-optional-but-recommended)
+    - [4. Environment Setup](#4-environment-setup)
+    - [5. Setting required environment variables](#5-setting-required-environment-variables)
+    - [6. Using the package](#6-using-the-package)
+      - [Option 1 (Short Script)](#option-1-short-script)
+      - [Option 2 (Command Line Interface)](#option-2-command-line-interface)
+      - [Examples](#examples)
+  - [Wrapping Up](#wrapping-up)
+
 ## Features
 
 - **Data Collection**: Automated fetching of publications via Crossref API
@@ -34,11 +54,13 @@ The system:
 - **Configurable Pipeline**: Customizable date ranges, models, and processing options
 - **And more!**: There are many useful tools within the academic metrics package that can be used for much more than just classification of academic research data, and they're all quite intuitive to use. See [Other Uses](./additional_information/OtherUses.md) for more information.
 
-## Documentation and example site built using Salisbury University data from 2009-2024
+## Documentation
 
-To be able to see any and all implementation details from the code logic, structure, prompts, and more you can check out our documentation. The documentation is built with [*Sphinx*](https://github.com/sphinx-doc/sphinx), allowing for easy use and a sense of famliarity.
+To be able to see any and all implementation details regarding code logic, structure, prompts, and more you can check out our documentation. The documentation is built with [*Sphinx*](https://github.com/sphinx-doc/sphinx), allowing for easy use and a sense of famliarity.
 
 [**Academic Metrics Documentation**](https://cosc425-data.readthedocs.io/en/latest/)
+
+## Example Site and Demo
 
 We also built an example site with the data we collected so that you can get a small idea of the potential uses for the data. This is by no means the only use case, but it does serve as a nice introduction to decide if this package would be useful for you.
 
@@ -57,35 +79,43 @@ To see a demo of the site, you can watch the below video:
 
 ---
 
-## Installation and setup via pip
+## Installation and Setup Steps
 
-Hey all, we are pleased to announce as of January 1st, 2025, you can now install the *Academic Metrics* package via *pip* and easily run the system. Below are instructions outlining step by step how to do it.
+Hey all, Spencer here, we are pleased to announce as of January 1st, 2025, you can now install the *Academic Metrics* package via *pip* and easily run the entire system via a short script or command line interface. Below are instructions outlining step by step how to do it. The steps walkthrough each piece of the process starting with installing python and setting up your environment, if you do not need help with those type of steps or want to jump straight to the code, first see [1. Installation and setup](#1-installation-and-setup), then you can skip to [6. Using the package](#6-using-the-package).
 
 </br>
 
 ### 0. External Setup
 
-Recommended to use `python 3.12` as that is the version used for development and has not been tested on other versions.
+1. **Installing and setting up Python 3.12:**
 
-Setting up mongod:
+    > [!NOTE]
+    > This project requires Python 3.12. For detailed Python installation instructions, see our [Python Installation Guide](./additional_information/_guides/_python_install.md).
 
-To see instructions on how to install and run mongod see the [MongoDB documentation](https://www.mongodb.com/docs/manual/installation/).
+2. **Installing and setting up MongoDB:**
 
-If you have struggles setting up MongoDB, google, youtube, and chatgpt are your friends.
+    > [!NOTE]
+    > For detailed MongoDB installation and setup
+    > instructions, see our
+    > [MongoDB Installation Guide](./additional_information/_guides/_mongodb_install.md).
 
-The installation is rather easy, just follow the instructions and you should be able to get it running.
+    Once you have MongoDB installed and running, you can create a database to store your data in, if you haven't already.
 
-To find the name of your db you can run `mongosh` and then `show dbs` to see a list of all the databases on your server.
+    To create a new database, you can run:
 
-To create a new db with a custom name you can run `use <db_name>`.
+    ```bash
+    use <db_name>
+    ```
 
-Collection creation is handled by the system, you do not need to create them.
+    If you need more help, the MongoDB Installation Guide goes into more detail on how to create a database and verify it exists.
 
-</br>
+    Collection creation is handled by the system, you do not need to create them.
 
----
+    </br>
 
-### 1. Installation and setup
+    ---
+
+### 1. Installation and Setup
 
 Install `academic_metrics>=1.0.98` via pip.
 
@@ -96,91 +126,6 @@ pip install academic-metrics
 ```
 
 </br>
-
-### Virtual environment (Optional, but recommended):
-
-</br>
-
-**1. Create a virtual environment:**
-
-</br>
-
->[!NOTE]
-> For these virtual environment examples we will be using `am_data_collection` as the name of the environment.
-
-</br>
-
-**With venv**:
-
-</br>
-
-> [!NOTE]
-> venv is of the form `python -m venv <env_name>`
-
-</br>
-
-```bash
-python -m venv am_data_collection
-```
-
-</br>
-
-**With conda**:
-
-</br>
-
-> [!NOTE]
-> conda is of the form
->
-> `conda create -n <env_name> python=<python_version>`
-
-</br>
-
-```bash
-conda create -n am_data_collection python=3.12
-```
-
-</br>
-</br>
-
-**2. Activate the virtual environment:**
-
-</br>
-
-**With venv**:
-
-</br>
-
-> [!NOTE]
-> venv is of the form:
->
-> `source <env_name>/bin/activate`
-
-</br>
-
-```bash
-source am_data_collection/bin/activate
-```
-
-</br>
-</br>
-
-**With Conda**:
-
-</br>
-
-> [!NOTE]
-> conda is of the form `conda activate <env_name>`
-
-</br>
-
-```bash
-conda activate am_data_collection
-```
-
-</br>
-
----
 
 ### 2. Creating the directory and necessary files
 
@@ -213,33 +158,43 @@ conda activate am_data_collection
 
 </br>
 
-2. **Create a `.env` file inside the directory you just created.**
+### 3. Setting up a Virtual Environment (Optional but Recommended)
 
-    **Linux/Mac**:
-
-    ```bash
-    touch .env
-    ```
-
-    **Windows** (Command Prompt):
-
-    ```cmd
-    type nul > .env
-    ```
-
-    **Windows** (PowerShell):
-
-    ```powershell
-    New-Item -Path .env -Type File
-    ```
-
-    You should now have a `.env` file in your directory.
+> [!NOTE]
+> Now that you've created and entered your project directory, you can set up a virtual environment.
+> For detailed instructions on setting up and using virtual environments, see our [Python Installation Guide - Virtual Environments Section](./additional_information/_guides/_python_install.md#setting-up-virtual-environments).
+>
+> After setting up your virtual environment, return here to continue with the next steps.
 
 </br>
 
----
+### 4. Environment Setup
 
-### 3. Setting required environment variables
+**Create a `.env` file inside the directory you just created.**
+
+**Linux/Mac**:
+
+```bash
+touch .env
+```
+
+**Windows** (Command Prompt):
+
+```cmd
+type nul > .env
+```
+
+**Windows** (PowerShell):
+
+```powershell
+New-Item -Path .env -Type File
+```
+
+You should now have a `.env` file in your directory.
+
+</br>
+
+### 5. Setting required environment variables
 
 </br>
 
@@ -291,13 +246,13 @@ conda activate am_data_collection
     MONGODB_URI="mongodb+srv://<username>:<password>@<cluster-name>.<unique-id>.mongodb.net/?retryWrites=true&w=majority&appName=<YourAppNameOnAtlas>"
     ```
 
-</br>
+    </br>
 
-> [!WARNING]
-> I recommend starting locally unless you need to use a live MongoDB instance.
-> This will avoid the need to deal with setting up MongoDB Atlas, which while not difficult, it is an added step.
+    > [!WARNING]
+    > I recommend starting locally unless you need to use a live MongoDB instance.
+    > This will avoid the need to deal with setting up MongoDB Atlas, which while not difficult, it is an added step.
 
-</br>
+    </br>
 
 3. **Set your database name**
 
@@ -372,24 +327,25 @@ OPENAI_API_KEY="sk-proj..."
 
 </br>
 
----
+### 6. Using the package
 
-### 4. Quick Setup and Usage
-
-For running the core system you have 2 options for how to do it.
+To use the system, you have 2 options:
 
 1. Writing a short script (code provided) to loop over a range of dates you'd like to collect.
+
 2. Using a provided function to run a command line interface version.
 
-If you have experience with python, or don't mind learning a couple basics about loops, I recommend the first option.
+For most users, I recommend the second option, it's only a few lines of code which you can copy and paste, the rest of the usage is handled by the command line interface and doesn't require any additional coding, you can find the second option in the [Option 2 (Command Line Interface)](#option-2-command-line-interface) section.
 
-If you do not have any experience with python or programming, and just want a plug and play solution, the second option works great.
+On the other hand, if you plan on using the main system, or other tools within the package within your own scripts, or just don't enjoy using command line interfaces, I recommend the first option.
 
-Both options are simple to setup and use. I will detail the process for both options below. I suggest briefly reading through both options and then picking the one you prefer. Once you've picked one, simply follow the instructions for that option.
+While I recommend the second option unless you're planning on using the package's offerings in a more complex manner, the basic code to run the system for the first option is provided in full in [Option 1 (Short Script)](#option-1-short-script) section.
+
+To see some examples of more complex use cases with examples, you can check out the [Other Uses](./additional_information/OtherUses.md) section.
 
 </br>
 
-## Option 1 - Short Script
+#### Option 1 (Short Script)
 
 For this option you need to do the following:
 </br>
@@ -598,7 +554,7 @@ For this option you need to do the following:
     get_excel_report(db)
     ```
 
-</br>
+    </br>
 
 3. **Run the script**
 
@@ -608,100 +564,105 @@ For this option you need to do the following:
 
 </br>
 
-## Option 2 - Command Line Interface
+#### Option 2 (Command Line Interface)
 
 For this options you will still need to create a python file, but the code will only be a couple lines long as you'll be passing in your arguments via the command line.
 
 </br>
 
-### 1. Create the python file
+1. **Create the python file**
 
-Within your directory, create a new python file, for this example we will be using `run_am.py`, but you can name it whatever you want.
+    Within your directory, create a new python file, for this example we will be using `run_am.py`, but you can name it whatever you want.
 
-**Linux/Mac**:
+    **Linux/Mac**:
 
-```bash
-touch run_am.py
-```
+    ```bash
+    touch run_am.py
+    ```
 
-**Windows (Command Prompt):**
+    **Windows (Command Prompt):**
 
-```cmd
-type nul > run_am.py
-```
+    ```cmd
+    type nul > run_am.py
+    ```
 
-**Windows (PowerShell):**
+    **Windows (PowerShell):**
 
-```powershell
-New-Item -Path run_am.py -Type File
-```
+    ```powershell
+    New-Item -Path run_am.py -Type File
+    ```
 
-You should now have a python file in your directory whose name matches the one you created.
-</br>
-</br>
+    You should now have a python file in your directory whose name matches the one you created.
 
-### 2. Copy and paste the following code into the file you just created
+    </br>
 
-```python
-from dotenv import load_dotenv
-from academic_metrics.runners import command_line_runner
+2. **Copy and paste the following code into the file you just created**
 
-load_dotenv()
+    ```python
+    from dotenv import load_dotenv
+    from academic_metrics.runners import command_line_runner
 
-command_line_runner()
-```
+    load_dotenv()
 
-> [!WARNING]
-> If you did not use `MONGODB_URI` and `OPENAI_API_KEY` as the variable names in the .env file, you will need to make a couple changes to the above code.
+    command_line_runner()
+    ```
 
-**How to use with different variable names:**
+    > [!WARNING]
+    > If you did not use `MONGODB_URI` and `OPENAI_API_KEY` as the variable names in the .env file, you will need to make a couple changes to the above code.
 
-The `command_line_runner` functions takes in 2 optional arguments, `openai_api_key_env_var_name` and `mongodb_uri_env_var_name` corresponding to the names of the environment variables you used in your .env file.
+    **How to use with different variable names:**
 
-To use the different names, do the following:
+    The `command_line_runner` function takes in 2 optional arguments:
 
-```python
-from dotenv import load_dotenv
-from academic_metrics.runners import command_line_runner
+    - `openai_api_key_env_var_name`
+    - `mongodb_uri_env_var_name`
 
-load_dotenv()
+    Which correspond to the names of the environment variables you used in your .env file.
 
-# The strings should be changes to match the names you used in your .env file
-command_line_runner(
-    openai_api_key_env_var_name="YOUR_OPENAI_API_KEY_ENV_VAR_NAME",
-    mongodb_uri_env_var_name="YOUR_MONGODB_URI_ENV_VAR_NAME",
-)
-```
+    To use the different names, do the following:
 
-</br>
+    ```python
+    from dotenv import load_dotenv
+    from academic_metrics.runners import command_line_runner
 
-### 3. Run the script
+    load_dotenv()
 
-For this option you will still run the script from command line, but you will also be passing in arguments, details laid out below.
+    # The strings should be changes to match the names you used in your .env file
+    command_line_runner(
+        openai_api_key_env_var_name="YOUR_OPENAI_API_KEY_ENV_VAR_NAME",
+        mongodb_uri_env_var_name="YOUR_MONGODB_URI_ENV_VAR_NAME",
+    )
+    ```
 
-There are various command line arguments you can pass in, almost all are detailed here, but to see a complete list you can run:
+    </br>
 
-```bash
-python run_am.py --help
-```
+3. **Run the script**
 
-To run it, you can use the following arguments:
+    For this option you will still run the script from command line, but you will also be passing in arguments, details laid out below.
 
-- `--from-month` - The month to start collecting data from, defaults to 1
-- `--to-month` - The month to end collecting data on, defaults to 12
-- `--from-year` - The year to start collecting data from, defaults to 2024
-- `--to-year` - The year to end collecting data on, defaults to 2024
-- `--db-name` - The name of the database to use (required)
-- `--crossref-affiliation` - The affiliation to use for the Crossref API, defaults to Salisbury University (required)
+    There are various command line arguments you can pass in, almost all are detailed here, but to see a complete list you can run:
 
-If you want to save the data to excel files you can pass in the `--as-excel` argument.
+    ```bash
+    python run_am.py --help
+    ```
 
->[!NOTE]
-> The `--as-excel` argument is an additional action, it doesn't remove the the saving to other data formats, but merely adds the excel saving functionality.
+    When running the script, you can configure the pipeline by passing in the following arguments:
 
----
+    - `--from-month` - The month to start collecting data from, defaults to 1
+    - `--to-month` - The month to end collecting data on, defaults to 12
+    - `--from-year` - The year to start collecting data from, defaults to 2024
+    - `--to-year` - The year to end collecting data on, defaults to 2024
+    - `--db-name` - The name of the database to use (required)
+    - `--crossref-affiliation` - The affiliation to use for the Crossref API, defaults to Salisbury University (required)
 
-### Examples
+    If you want to save the data to excel files you can pass in the `--as-excel` argument.
+
+    >[!NOTE]
+    > The `--as-excel` argument is an additional action, it doesn't remove the the saving to other data formats, but merely adds the excel saving functionality.
+
+    </br>
+
+#### Examples
 
 Say you want to collect data for every month from 2019 to 2024 for Salisbury University and save it to excel files. You would run the following command:
 
@@ -715,18 +676,32 @@ python run_am.py --from-month=1 \
 --db-name="Your_Database_Name"
 ```
 
-The default AI model used for all parts is `gpt-4o-mini`. If you want to use a different model you can use the following arguments:
+To make this simpler, we can actually take advantage of the default values for some of the arguments.
+
+Recall from before:
+
+- `--from-month` defaults to `1`
+- `--to-month` defaults to `12`
+- `--from-year` defaults to `2024`
+- `--to-year` defaults to `2024`
+- `--crossref-affiliation` defaults to `Salisbury University`
+
+Using the defaults, we can make that command much more concise:
+
+```bash
+python run_am.py \
+--from-year=2019 \
+--as-excel \
+--db-name="Your_Database_Name"
+```
+
+**On AI Models**:
+
+The default AI (LLM) model used for all phases is `gpt-4o-mini`. You can specify a different model for each phase independently by passing in the following arguments:
 
 - `--pre-classification-model` - The model to use for the pre-classification step
 - `--classification-model` - The model to use for the classification step
 - `--theme-model` - The model to use for the theme extraction step
-
->[!WARNING]
-> This process consumes a lot of tokens, during testing we found that using `gpt-4o-mini` was the most cost effective and provided good results.
->
-> If you want to use a larger model like `gpt-4o` you can do so, but be warned it will run through your tokens very quickly.
->
-> If you do use a larger model I recommend you start with a smaller date range and work your way up.
 
 Here's how you would run the pipeline using the larger `gpt-4o` model:
 
@@ -737,11 +712,74 @@ python run_am.py --from-month=1 \
 --to-year=2024 \
 --crossref-affiliation="Salisbury University" \
 --as-excel \
---db-name=Your_Database_Name \
---pre-classification-model=gpt-4o \
---classification-model=gpt-4o \
---theme-model=gpt-4o
+--db-name="Your_Database_Name" \
+--pre-classification-model="gpt-4o" \
+--classification-model="gpt-4o" \
+--theme-model="gpt-4o"
 ```
+
+and taking advantage of the defaults:
+
+```bash
+python run_am.py \
+--from-year=2019 \
+--as-excel \
+--db-name="Your_Database_Name" \
+--pre-classification-model="gpt-4o" \
+--classification-model="gpt-4o" \
+--theme-model="gpt-4o"
+```
+
+>[!WARNING]
+> This process consumes a lot of tokens, during testing we found that using `gpt-4o-mini` was the most cost effective and provided good results.
+>
+> If you want to use a larger model like `gpt-4o` you can do so, but be warned it will run through your tokens very quickly.
+>
+> If you do use a larger model I recommend you start with a smaller date range and work your way up.
+
+</br>
+
+**Other institutions**:
+
+Our system uses the Crossref API to collect available data, then it scrapes the DOI link to get any missing data as well as any additional data that may be available.
+
+We found that the Crossref API sometimes misses some Abstracts for example, our scraping process will fill in nearly all, if not all, of the missing abstracts.
+
+Due to this, and the wealth of institutions Crossref covers, you can use the system for any institution that has a DOI link.
+
+Here's how you'd run the same query on the system but for **University of Maryland** data:
+
+```bash
+python run_am.py \
+--from-year=2019 \
+--as-excel \
+--db-name="Your_Database_Name" \
+--crossref-affiliation="University of Maryland"
+```
+
+You can even go back as far as you want, for example say you want to collect all data from the beginning of the 21st century:
+
+```bash
+python run_am.py \
+--from-year=2000 \
+--as-excel \
+--db-name="Your_Database_Name" \
+--crossref-affiliation="University of Maryland"
+```
+
+Or maybe you want to collect all data as far back as possible, so you can see longterm trends and history of the institution:
+
+```bash
+python run_am.py \
+--from-year=1900 \
+--as-excel \
+--db-name="Your_Database_Name" \
+--crossref-affiliation="University of Maryland"
+```
+
+The from year does not require that there be data that far back, it simply means that is the cutoff point for the data you want to collect.
+
+So say you're not entirely sure what year your University started, or aren't sure how far back Crossref covers, you can simply enter a very far back year, like 1900, and the system will collect all data from that year and onwards.
 
 ---
 
@@ -749,8 +787,13 @@ python run_am.py --from-month=1 \
 
 That's it! You've now successfully installed and run the system.
 
-If you have any questions, or need help, feel free to reach out to me at `spencerpresley96@gmail.com`.
+If you have any questions, need help, or have interest in collaborating on this project or others, feel free to reach out to me, contact information is provided below.
 
-If you are a potential employer, please reach out to me at `spencerpresley96@gmail.com` so that I can provide you with a copy of my resume. You can also reach out to me on linkedin at [https://www.linkedin.com/in/spencerpresley96/](https://www.linkedin.com/in/spencerpresley96/).
+If you are a potential employer, please reach out to me by email or linkedin, contact information is provided below.
+
+Contact information:
+
+- Email: [spencerpresley96@gmail.com](mailto:spencerpresley96@gmail.com)
+- LinkedIn: [https://www.linkedin.com/in/spencerpresley96/](https://www.linkedin.com/in/spencerpresley96/)
 
 Happy coding!
