@@ -38,6 +38,7 @@ We'll walk through:
   - [Setting Up Virtual Environments](#setting-up-virtual-environments)
     - [Using venv (Built-in)](#using-venv-built-in)
       - [1. Create a new virtual environment](#1-create-a-new-virtual-environment)
+      - [1. Create a new virtual environment (Aliased)](#1-create-a-new-virtual-environment-aliased)
       - [2. Activate the environment](#2-activate-the-environment)
     - [Using Conda (Recommended)](#using-conda-recommended)
       - [1. Install Miniconda](#1-install-miniconda)
@@ -51,6 +52,9 @@ We'll walk through:
   - [Package Management](#package-management)
     - [Using pip (Python Package Installer)](#using-pip-python-package-installer)
   - [Additional Resources](#additional-resources)
+  - [Basic Commands](#basic-commands)
+    - [Running a Python Script](#running-a-python-script)
+  - [Aliasing Python and Pip](#aliasing-python-and-pip)
   - [Getting Help](#getting-help)
 
 </br>
@@ -202,15 +206,10 @@ python -m venv <env_name>
 
 **macOS/Linux**:
 
-There's a useful tip outlined in [this](#3-multiple-python-versions) section which covers **aliasing** the `python` and `pip` commands to use the version you'd like to use, it will streamline the below process and only takes a couple of seconds to do.
-
-If you'd like to take advantage of aliasing, follow the above link to that section, complete the steps outlined in the tip, then come back to this section.
-
-Otherwise, continue forward with this section.
-
-```bash
-python -m venv <env_name>
-```
+> [!NOTE]  
+> Before continuing, I'd like to make you aware of a useful tip outlined in [Aliasing Python and Pip](#aliasing-python-and-pip) section, which covers **aliasing** the `python` and `pip` commands to use the version you'd like to use, it will streamline the below process and only takes a couple of seconds to do.
+>
+> If you'd like to take advantage of aliasing, follow the above link to that section, complete the steps outlined in the tip, then skip to the [1. Create a new virtual environment (Aliased)](#1-create-a-new-virtual-environment-aliased) section to create a new virtual environment.
 
 If you did not follow the steps to alias the `python` and `pip` commands, you can use the following command to check which version of python `python3` is aliased to:
 
@@ -218,13 +217,19 @@ If you did not follow the steps to alias the `python` and `pip` commands, you ca
 which python3
 ```
 
-If `python3` is aliased to `python3.12` then you can use the following command:
+If `python3` fails with the error:
 
 ```bash
-python3 -m venv <env_name>
+python3: command not found
 ```
 
-If `python3` is not aliased to `python3.12` first check if `python3.12` is installed:
+Try:
+
+```bash
+which python
+```
+
+If neither of `python3` or `python` are aliased to `python3.12` first check if `python3.12` is installed:
 
 ```bash
 which python3.12
@@ -236,6 +241,20 @@ If `python3.12` is installed, but isn't aliased to `python3`, then you can inste
 
 ```bash
 python3.12 -m venv <env_name>
+```
+
+</br>
+
+#### 1. Create a new virtual environment (Aliased)
+
+This section is if you followed [Aliasing Python and Pip](#aliasing-python-and-pip) section linked to in [1. Create a new virtual environment](#1-create-a-new-virtual-environment) section.
+
+If you did not follow those steps, you can skip this section and continue to the [2. Activate the environment](#2-activate-the-environment) section.
+
+For those who did follow those steps, you can use the following command to create a new virtual environment:
+
+```bash
+python -m venv <venv_name>
 ```
 
 </br>
@@ -356,92 +375,7 @@ conda activate <env_name>
 
 </br>
 
-> [!TIP]  
-> **Aliasing the `python` and `pip` commands**
->
-> For **macOS/Linux** If you'd like to be able to use `python` instead of `python3`/`python3.12`, you can add the following to your shell profile:
->
-> ```bash
-> alias python=python3.12
-> alias pip="python3.12 -m pip"
-> ```
->
-> To do so run the following command:
->
-> **Zsh**:
->
-> ```bash
-> echo 'alias python=python3.12' >> ~/.zshrc
-> echo 'alias pip="python3.12 -m pip"' >> ~/.zshrc
-> source ~/.zshrc
-> ```
->
-> **Bash**:
->
-> ```bash
-> echo 'alias python=python3.12' >> ~/.bashrc
-> echo 'alias pip="python3.12 -m pip"' >> ~/.bashrc
-> source ~/.bashrc
-> ```
->
-> Then when installing packages and running scripts instead of:
->
-> **Zsh**:
->
-> ```bash
-> pip3.12 install package_name
-> python3.12 script.py
-> ```
->
-> **Bash**:
->
-> ```bash
-> pip3 install package_name
-> python3 script.py
-> ```
->
-> You can simply use:
->
-> ```bash
-> pip install package_name
-> python script.py
-> ```
->
-> If at a later date you'd like to revert back you can simply remove the alias by running the following command:
->
-> **Zsh**:
->
-> ```bash
-> unalias python
-> unalias pip
-> ```
->
-> **Bash**:
->
-> ```bash
-> unalias python
-> unalias pip
-> ```
->
-> or if you'd like to change which version of python and pip you're using you can simply change the alias to the version you'd like to use. You can change the alias to the version you'd like to use by running the following command:
->
-> **Zsh**:
->
-> ```bash
-> alias python=python3.x
-> alias pip="python3.x -m pip"
-> ```
->
-> **Bash**:
->
-> ```bash
-> alias python=python3.x
-> alias pip="python3.x -m pip"
-> ```
->
-> Where `x` is the version extension you'd like to use, such as `3.12`, `3.11`, `3.9`, etc.
-
-</br>
+For a simpler approach, see [Aliasing Python and Pip](#aliasing-python-and-pip)
 
 ## Package Management
 
@@ -468,6 +402,124 @@ pip list
 - [Official Python Documentation](https://docs.python.org/3.12/)
 - [Python Virtual Environments Guide](https://docs.python.org/3/tutorial/venv.html)
 - [pip Documentation](https://pip.pypa.io/en/stable/)
+
+## Basic Commands
+
+### Running a Python Script
+
+- If you followed the aliases your python and pip commands as outlined in [Aliasing Python and Pip](#aliasing-python-and-pip) section, you can simply use the following commands to run a python script:
+
+    ```bash
+    python script.py
+    ```
+
+- If `python` is the command tied to your python installation (doesn't give the error `python: command not found`), and `python` is aliased to `python3.12` when running the command `which python`, you can use the following command to run a python script:
+
+    ```bash
+    python3.12 script.py
+    ```
+
+- If `python3` is the command tied to your python installation (doesn't give the error `python3: command not found`), and `python3` is aliased to `python3.12` when running the command `which python3`, you can use the following command to run a python script:
+
+    ```bash
+    python3 script.py
+    ```
+
+- If none of the above works, and you're sure you have python 3.12 installed, you can use the following command to run a python script:
+
+    ```bash
+    python3.12 script.py
+    ```
+
+</br>
+
+## Aliasing Python and Pip
+
+**Aliasing the `python` and `pip` commands**
+
+For **macOS/Linux** If you'd like to be able to use `python` instead of `python3`/`python3.12`, you can add the following to your shell profile:
+
+```bash
+alias python=python3.12
+alias pip="python3.12 -m pip"
+```
+
+To do so run the following command:
+
+**Zsh**:
+
+```bash
+echo 'alias python=python3.12' >> ~/.zshrc
+echo 'alias pip="python3.12 -m pip"' >> ~/.zshrc
+source ~/.zshrc
+```
+
+**Bash**:
+
+```bash
+echo 'alias python=python3.12' >> ~/.bashrc
+echo 'alias pip="python3.12 -m pip"' >> ~/.bashrc
+source ~/.bashrc
+```
+
+Then when installing packages and running scripts instead of:
+
+**Zsh**:
+
+```bash
+pip3.12 install package_name
+python3.12 script.py
+```
+
+**Bash**:
+
+```bash
+pip3 install package_name
+python3 script.py
+```
+
+You can simply use:
+
+```bash
+pip install package_name
+python script.py
+```
+
+If at a later date you'd like to revert back you can simply remove the alias by running the following command:
+
+**Zsh**:
+
+```bash
+unalias python
+unalias pip
+```
+
+**Bash**:
+
+```bash
+unalias python
+unalias pip
+```
+
+or if you'd like to change which version of python and pip you're using you can simply change the alias to the version you'd like to use. You can change the alias to the version you'd like to use by running the following command:
+
+**Zsh**:
+
+```bash
+alias python=python3.x
+alias pip="python3.x -m pip"
+```
+
+**Bash**:
+
+```bash
+alias python=python3.x
+alias pip="python3.x -m pip"
+```
+
+Where `x` is the version extension you'd like to use, such as `3.12`, `3.11`, `3.9`, etc.
+
+</br>
 
 ## Getting Help
 
