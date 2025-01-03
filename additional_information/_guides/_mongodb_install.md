@@ -16,8 +16,16 @@ MongoDB is a popular NoSQL database that stores data in flexible, [_JSON-like_](
   - [Table of Contents](#table-of-contents)
   - [Local Installation](#local-installation)
     - [Windows Installation](#windows-installation)
+      - [1. Download MongoDB Community Server](#1-download-mongodb-community-server)
+      - [2. Run the Installer](#2-run-the-installer)
+      - [3. Start MongoDB](#3-start-mongodb)
+      - [4. Verify Installation and Connection](#4-verify-installation-and-connection)
     - [macOS Installation](#macos-installation)
+      - [1. Using Homebrew (Recommended)](#1-using-homebrew-recommended)
+      - [2. Verify Installation and Connection](#2-verify-installation-and-connection)
     - [Linux Installation](#linux-installation)
+      - [1. Ubuntu/Debian](#1-ubuntudebian)
+      - [2. Verify Installation and Connection](#2-verify-installation-and-connection-1)
   - [MongoDB Atlas Setup](#mongodb-atlas-setup)
     - [Creating an Account](#creating-an-account)
     - [Setting up a Cluster](#setting-up-a-cluster)
@@ -36,133 +44,133 @@ MongoDB is a popular NoSQL database that stores data in flexible, [_JSON-like_](
 
 ### Windows Installation
 
-1. **Download MongoDB Community Server**
+#### 1. Download MongoDB Community Server
 
-   - Visit [MongoDB Download Center](https://www.mongodb.com/try/download/community)
-   - Select "Windows" as your platform
-   - Choose "msi" as the package
-   - Click "Download"
+- Visit [MongoDB Download Center](https://www.mongodb.com/try/download/community)
+- Select "Windows" as your platform
+- Choose "msi" as the package
+- Click "Download"
 
-2. **Run the Installer**
+#### 2. Run the Installer
 
-   - Double-click the downloaded .msi file
-   - Choose "Complete" installation
-   - ✅ Check "Install MongoDB as a Service"
-   - Click "Install"
+- Double-click the downloaded .msi file
+- Choose "Complete" installation
+- ✅ Check "Install MongoDB as a Service"
+- Click "Install"
 
-3. **Start MongoDB**
+#### 3. Start MongoDB
 
-    ```bash
-    # Check if MongoDB is running
-    net start MongoDB
-    ```
+```bash
+# Check if MongoDB is running
+net start MongoDB
+```
 
-    - If you see "The MongoDB Server service is starting.", wait a moment.
+- If you see "The MongoDB Server service is starting.", wait a moment.
 
-    - If you see "The MongoDB Server service was started successfully.", you're ready to go.
+- If you see "The MongoDB Server service was started successfully.", you're ready to go.
 
-    - If you see "The MongoDB Server service is not started.", run:
+- If you see "The MongoDB Server service is not started.", run:
 
-        ```bash
-        net start MongoDB
-        ```
+  ```bash
+  net start MongoDB
+  ```
 
-4. **Verify Installation and Connection**
+#### 4. Verify Installation and Connection
 
-    ```bash
-    # Try to connect to MongoDB
-    mongosh
-    ```
+```bash
+# Try to connect to MongoDB
+mongosh
+```
 
-    You should see something like:
+You should see something like:
 
-    ```bash
-    Current Mongosh Log ID: ...
-    Connecting to: mongodb://127.0.0.1:27017...
-    Using MongoDB: x.x.x
-    ```
+```bash
+Current Mongosh Log ID: ...
+Connecting to: mongodb://127.0.0.1:27017...
+Using MongoDB: x.x.x
+```
 
 ### macOS Installation
 
-1. **Using Homebrew (Recommended)**
+#### 1. Using Homebrew (Recommended)
 
-    ```bash
-    # Check if Homebrew is installed
-    brew --version
-    
-    # Install Homebrew if not already installed
-    #
-    #
-    # Bash
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    #
-    #
-    # Zsh
-    /bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```bash
+# Check if Homebrew is installed
+brew --version
 
-    # If Homebrew is already installed, check if MongoDB is installed
-    brew list | grep mongodb-community
+# Install Homebrew if not already installed
+#
+#
+# Bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+#
+#
+# Zsh
+/bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-    # If MongoDB is already installed, check if it is running
-    brew services list | grep mongodb-community
+# If Homebrew is already installed, check if MongoDB is installed
+brew list | grep mongodb-community
 
-    # If MongoDB is not installed, install it
-    brew tap mongodb/brew
-    brew install mongodb-community
+# If MongoDB is already installed, check if it is running
+brew services list | grep mongodb-community
 
-    # If you just installed MongoDB, or it wasn't running, start it
-    brew services start mongodb-community
-    ```
+# If MongoDB is not installed, install it
+brew tap mongodb/brew
+brew install mongodb-community
 
-2. **Verify Installation and Connection**
+# If you just installed MongoDB, or it wasn't running, start it
+brew services start mongodb-community
+```
 
-   ```bash
-   # Try to connect to MongoDB
-   mongosh
-   ```
+#### 2. Verify Installation and Connection
+
+```bash
+# Try to connect to MongoDB
+mongosh
+```
 
 ### Linux Installation
 
-1. **Ubuntu/Debian**
+#### 1. Ubuntu/Debian
 
-    ```bash
-    # Check if MongoDB is installed
-    sudo apt-get install -y mongodb-org
+```bash
+# Check if MongoDB is installed
+sudo apt-get install -y mongodb-org
 
-    # If MongoDB is already installed, check if it is running
-    sudo systemctl status mongod
+# If MongoDB is already installed, check if it is running
+sudo systemctl status mongod
 
-    # If MongoDB installed but not running, start it
-    sudo systemctl start mongod
+# If MongoDB installed but not running, start it
+sudo systemctl start mongod
 
-    # If MongoDB is not installed, install it
-    #
-    #
-    # Import MongoDB public key
-    curl -fsSL https://pgp.mongodb.com/server-7.0.asc | \
-    sudo gpg -o /usr/share/keyrings/mongodb-server-7.0.gpg \
-    --dearmor
+# If MongoDB is not installed, install it
+#
+#
+# Import MongoDB public key
+curl -fsSL https://pgp.mongodb.com/server-7.0.asc | \
+sudo gpg -o /usr/share/keyrings/mongodb-server-7.0.gpg \
+--dearmor
 
-    # Create list file
-    echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | \
-    sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list
-   
-    # Update package list
-    sudo apt-get update
+# Create list file
+echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | \
+sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list
 
-    # Install MongoDB
-    sudo apt-get install -y mongodb-org
+# Update package list
+sudo apt-get update
 
-    # Start MongoDB
-    sudo systemctl start mongod
-    ```
+# Install MongoDB
+sudo apt-get install -y mongodb-org
 
-2. **Verify Installation and Connection**
+# Start MongoDB
+sudo systemctl start mongod
+```
 
-    ```bash
-    # Try to connect to MongoDB
-    mongosh
-    ```
+#### 2. Verify Installation and Connection
+
+```bash
+# Try to connect to MongoDB
+mongosh
+```
 
 ## MongoDB Atlas Setup
 

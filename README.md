@@ -33,13 +33,23 @@ The system:
     - [0. External Setup](#0-external-setup)
     - [1. Installation](#1-installation)
     - [2. Creating the directory and necessary files](#2-creating-the-directory-and-necessary-files)
-    - [3. Setting up a Virtual Environment (Optional but Recommended)](#3-setting-up-a-virtual-environment-optional-but-recommended)
-    - [4. Environment Setup](#4-environment-setup)
+    - [3. Virtual Environment (Optional but Recommended)](#3-virtual-environment-optional-but-recommended)
+    - [4. Environment Variables](#4-environment-variables)
     - [5. Setting required environment variables](#5-setting-required-environment-variables)
+      - [1. Open the `.env` file you just created, and add the following variables](#1-open-the-env-file-you-just-created-and-add-the-following-variables)
+      - [2. Retrieve and set your MongoDB URI](#2-retrieve-and-set-your-mongodb-uri)
+      - [3. Set your database name](#3-set-your-database-name)
+      - [4. Set your OpenAI API Key](#4-set-your-openai-api-key)
     - [6. Using the package](#6-using-the-package)
       - [Option 1 (Short Script)](#option-1-short-script)
+        - [1. Create the python file](#1-create-the-python-file)
+        - [2. Copy paste the following code into the file you just created](#2-copy-paste-the-following-code-into-the-file-you-just-created)
+        - [3. Run the script](#3-run-the-script)
       - [Option 2 (Command Line Interface)](#option-2-command-line-interface)
-      - [Examples](#examples)
+        - [1. Create the python file](#1-create-the-python-file-1)
+        - [2. Copy and paste the following code into the file you just created](#2-copy-and-paste-the-following-code-into-the-file-you-just-created)
+        - [3. Run the script](#3-run-the-script-1)
+        - [Examples](#examples)
   - [Wrapping Up](#wrapping-up)
 
 ## Features
@@ -123,11 +133,7 @@ To install the latest version of the package, you can run the following command:
 pip install academic-metrics
 ```
 
-</br>
-
 ### 2. Creating the directory and necessary files
-
-</br>
 
 1. **Create the directory and navigate into it:**
 
@@ -156,17 +162,17 @@ pip install academic-metrics
 
 </br>
 
-### 3. Setting up a Virtual Environment (Optional but Recommended)
+### 3. Virtual Environment (Optional but Recommended)
 
-> [!NOTE]
-> Now that you've created and entered your project directory, you can set up a virtual environment.
-> For detailed instructions on setting up and using virtual environments, see our [Python Installation Guide - Virtual Environments Section](./additional_information/_guides/_python_install.md#setting-up-virtual-environments).
->
-> After setting up your virtual environment, return here to continue with the next steps.
+Now that you've created and entered your project directory, you can set up a virtual environment.
+
+For detailed instructions on setting up and using virtual environments, see our [Python Installation Guide - Virtual Environments Section](./additional_information/_guides/_python_install.md#setting-up-virtual-environments).
+
+After setting up your virtual environment, return here to continue with the next steps.
 
 </br>
 
-### 4. Environment Setup
+### 4. Environment Variables
 
 **Create a `.env` file inside the directory you just created.**
 
@@ -196,55 +202,55 @@ You should now have a `.env` file in your directory.
 
 </br>
 
-1. **Open the `.env` file you just created, and add the following variables:**
+#### 1. Open the `.env` file you just created, and add the following variables
 
-   - a variable to store your MongoDB URI, I recommend `MONGODB_URI`
-   - a variable to store your database name, I recommend `DB_NAME`
-   - a variable to store your OpenAI API Key, I recommend `OPENAI_API_KEY`
+- a variable to store your MongoDB URI, I recommend `MONGODB_URI`
+- a variable to store your database name, I recommend `DB_NAME`
+- a variable to store your OpenAI API Key, I recommend `OPENAI_API_KEY`
 
-    After each variable you should add `=""` to the end of the variable.
+ After each variable you should add `=""` to the end of the variable.
 
-    Once you've done this, your `.env` file should look something like this:
+ Once you've done this, your `.env` file should look something like this:
 
-    ```python
-    MONGODB_URI=""
-    DB_NAME=""
-    OPENAI_API_KEY=""
-    ```
+```python
+MONGODB_URI=""
+DB_NAME=""
+OPENAI_API_KEY=""
+```
 
-    </br>
+</br>
 
-2. **Retrieve and set your MongoDB URI:**
+#### 2. Retrieve and set your MongoDB URI
 
-    For local MongoDB it's typically:
+For local MongoDB it's typically:
 
-    ```python
-    MONGODB_URI="mongodb://localhost:27017"
-    ```
+```python
+MONGODB_URI="mongodb://localhost:27017"
+```
 
-    For live MongoDB:
+For live MongoDB:
 
-    For a live version you should use the MongoDB Atlas URI. It should look something like this:
+For a live version you should use the MongoDB Atlas URI. It should look something like this:
 
-    ```bash
-    mongodb+srv://<username>:<password>@<cluster-name>.<unique-id>.mongodb.net/?retryWrites=true&w=majority&appName=<YourAppNameOnAtlas>
-    ```
+```bash
+mongodb+srv://<username>:<password>@<cluster-name>.<unique-id>.mongodb.net/?retryWrites=true&w=majority&appName=<YourAppNameOnAtlas>
+```
 
-    So in the `.env` file you should have something that looks like this:
+So in the `.env` file you should have something that looks like this:
 
-    Local:
+Local:
 
-    ```python
-    MONGODB_URI="mongodb://localhost:27017"
-    ```
+```python
+MONGODB_URI="mongodb://localhost:27017"
+```
 
-    Live:
+Live:
 
-    ```python
-    MONGODB_URI="mongodb+srv://<username>:<password>@<cluster-name>.<unique-id>.mongodb.net/?retryWrites=true&w=majority&appName=<YourAppNameOnAtlas>"
-    ```
+```python
+MONGODB_URI="mongodb+srv://<username>:<password>@<cluster-name>.<unique-id>.mongodb.net/?retryWrites=true&w=majority&appName=<YourAppNameOnAtlas>"
+```
 
-    </br>
+</br>
 
 > [!WARNING]
 > I recommend starting locally unless you need to use a live MongoDB instance.
@@ -252,53 +258,53 @@ You should now have a `.env` file in your directory.
 
 </br>
 
-3. **Set your database name**
+#### 3. Set your database name
 
-    You can pick any name you want for `DB_NAME`, but it needs to be a name of a valid database on your mongodb server. To make one on the command line you can run:
+You can pick any name you want for `DB_NAME`, but it needs to be a name of a valid database on your mongodb server. To make one on the command line you can run:
 
-    ```bash
-    mongosh
-    use <db_name>
-    ```
+```bash
+mongosh
+use <db_name>
+```
 
-    For this demonstration we will be using `academic_metrics_data` as the `DB_NAME`.
+For this demonstration we will be using `academic_metrics_data` as the `DB_NAME`.
 
-    First we'll create the database on the command line:
+First we'll create the database on the command line:
 
-    ```bash
-    mongosh
-    use academic_metrics_data
-    ```
+```bash
+mongosh
+use academic_metrics_data
+```
 
-    This is to ensure the database actually exists so that the system can access it.
+This is to ensure the database actually exists so that the system can access it.
 
-    Now that the database exists, we'll set the `DB_NAME` in the `.env` file.
+Now that the database exists, we'll set the `DB_NAME` in the `.env` file.
 
-    ```python
-    DB_NAME="academic_metrics_data"
-    ```
+```python
+DB_NAME="academic_metrics_data"
+```
 
-    </br>
+</br>
 
-4. **Set your OpenAI API Key**
+#### 4. Set your OpenAI API Key
 
-    If you do not have an OpenAI API key you will need to create one, but do not worry, it's easy.
+If you do not have an OpenAI API key you will need to create one, but do not worry, it's easy.
 
-    Go to the following link and click on "+ Create new secret key":
+Go to the following link and click on "+ Create new secret key":
 
-    [https://platform.openai.com/api-keys](https://platform.openai.com/api-keys)
+[https://platform.openai.com/api-keys](https://platform.openai.com/api-keys)
 
-    Give the key a name, and then copy the key.
+Give the key a name, and then copy the key.
 
-    Then in the `.env` file paste the key in the `OPENAI_API_KEY` variable.
+Then in the `.env` file paste the key in the `OPENAI_API_KEY` variable.
 
-    It should look similar to this, but with the full key instead of `sk-proj...`:
+It should look similar to this, but with the full key instead of `sk-proj...`:
 
-    ```python
-    OPENAI_API_KEY="sk-proj..."
-    ```
+```python
+OPENAI_API_KEY="sk-proj..."
+```
 
-    </br>
+</br>
 
 > [!IMPORTANT]
 > You will need to add funds to your OpenAI account to use the API.
@@ -349,216 +355,216 @@ For this option you need to do the following:
 </br>
 </br>
 
-1. **Create the python file**
+##### 1. Create the python file
 
-    Within your directory, create a new python file, for this example we will be using `run_am.py`, but you can name it whatever you want.
+Within your directory, create a new python file, for this example we will be using `run_am.py`, but you can name it whatever you want.
 
-    **Linux/Mac**:
+**Linux/Mac**:
 
-    ```bash
-    touch run_am.py
-    ```
+```bash
+touch run_am.py
+```
 
-    **Windows (Command Prompt):**
+**Windows (Command Prompt):**
 
-    ```cmd
-    type nul > run_am.py
-    ```
+```cmd
+type nul > run_am.py
+```
 
-    **Windows (PowerShell):**
+**Windows (PowerShell):**
 
-    ```powershell
-    New-Item -Path run_am.py -Type File
-    ```
+```powershell
+New-Item -Path run_am.py -Type File
+```
 
-    You should now have a python file in your directory whose name matches the one you created.
+You should now have a python file in your directory whose name matches the one you created.
 
-    </br>
+</br>
 
-2. **Copy paste the following code into the file you just created:**
+##### 2. Copy paste the following code into the file you just created
 
-    ```python
+```python
 
-    # dotenv is the python package responsible for handling env files
-    from dotenv import load_dotenv
+# dotenv is the python package responsible for handling env files
+from dotenv import load_dotenv
 
-    # os is used to get the environment variables from the .env file
-    import os
+# os is used to get the environment variables from the .env file
+import os
 
-    # PipelineRunner is the main class used to run the pipeline
-    from academic_metrics.runners import PipelineRunner
+# PipelineRunner is the main class used to run the pipeline
+from academic_metrics.runners import PipelineRunner
 
-    # load_dotenv is used to load the environment variables from the .env file
-    load_dotenv()
+# load_dotenv is used to load the environment variables from the .env file
+load_dotenv()
 
-    # Get the environment variables from the .env file
-    ai_api_key = os.getenv("OPENAI_API_KEY")
-    mongodb_uri = os.getenv("MONGODB_URI")
-    db_name = os.getenv("DB_NAME")
+# Get the environment variables from the .env file
+ai_api_key = os.getenv("OPENAI_API_KEY")
+mongodb_uri = os.getenv("MONGODB_URI")
+db_name = os.getenv("DB_NAME")
 
-    # Set the date range you want to process
-    # Years is a list of years as strings you want to process
-    # Months is a list of strings representing the months you want processed for each year
-    # For example if you want to process data from 2009-2024 for all months out of the year, you would do:
-    # Note: the process runs left to right, so from beginning of list to the end of the list,
-    # so this will process 2024, then 2023, then 2022, etc.
-    # Data will be saved after each month is processed.
-    years = [
-        "2024",
-        "2023",
-        "2022",
-        "2021",
-        "2020",
-        "2019",
-        "2018",
-        "2017",
-        "2016",
-        "2015",
-        "2014",
-        "2013",
-        "2012",
-        "2011",
-        "2010",
-        "2009",
-    ]
-    months = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
+# Set the date range you want to process
+# Years is a list of years as strings you want to process
+# Months is a list of strings representing the months you want processed for each year
+# For example if you want to process data from 2009-2024 for all months out of the year, you would do:
+# Note: the process runs left to right, so from beginning of list to the end of the list,
+# so this will process 2024, then 2023, then 2022, etc.
+# Data will be saved after each month is processed.
+years = [
+    "2024",
+    "2023",
+    "2022",
+    "2021",
+    "2020",
+    "2019",
+    "2018",
+    "2017",
+    "2016",
+    "2015",
+    "2014",
+    "2013",
+    "2012",
+    "2011",
+    "2010",
+    "2009",
+]
+months = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
 
-    # Loop over the years and months and run the pipeline for each month
-    # New objects are created for each month to avoid memory issues as well as to avoid overwriting data
-    for year in years:
-        for month in months:
+# Loop over the years and months and run the pipeline for each month
+# New objects are created for each month to avoid memory issues as well as to avoid overwriting data
+for year in years:
+    for month in months:
 
-            # Create a new PipelineRunner object for each month
-            # parameters:
-            # ai_api_key: the OpenAI API key
-            # crossref_affiliation: the affiliation to use for the Crossref API
-            # data_from_month: the month to start collecting data from
-            # data_to_month: the month to end collecting data on
-            # data_from_year: the year to start collecting data from
-            # data_to_year: the year to end collecting data on
-            # mongodb_uri: the URL of the MongoDB server
-            # db_name: the name of the database to use
-            pipeline_runner = PipelineRunner(
-                ai_api_key=ai_api_key,
-                crossref_affiliation="Salisbury University",
-                data_from_month=int(month),
-                data_to_month=int(month),
-                data_from_year=int(year),
-                data_to_year=int(year),
-                mongodb_uri=mongodb_uri,
-                db_name=db_name,
-            ) 
+        # Create a new PipelineRunner object for each month
+        # parameters:
+        # ai_api_key: the OpenAI API key
+        # crossref_affiliation: the affiliation to use for the Crossref API
+        # data_from_month: the month to start collecting data from
+        # data_to_month: the month to end collecting data on
+        # data_from_year: the year to start collecting data from
+        # data_to_year: the year to end collecting data on
+        # mongodb_uri: the URL of the MongoDB server
+        # db_name: the name of the database to use
+        pipeline_runner = PipelineRunner(
+            ai_api_key=ai_api_key,
+            crossref_affiliation="Salisbury University",
+            data_from_month=int(month),
+            data_to_month=int(month),
+            data_from_year=int(year),
+            data_to_year=int(year),
+            mongodb_uri=mongodb_uri,
+            db_name=db_name,
+        ) 
 
-            # Run the pipeline for the current month
-            pipeline_runner.run_pipeline()
-    ```
+        # Run the pipeline for the current month
+        pipeline_runner.run_pipeline()
+```
 
-    If you'd like to save the data to excel files in addition to the other data formats, you can do so via importing the function `get_excel_report` from `academic_metrics.runners` and calling it at the end of the script.
+If you'd like to save the data to excel files in addition to the other data formats, you can do so via importing the function `get_excel_report` from `academic_metrics.runners` and calling it at the end of the script.
 
-    Full code for convenience:
+Full code for convenience:
 
-    ```python
+```python
 
-    # dotenv is the python package responsible for handling env files
-    from dotenv import load_dotenv
+# dotenv is the python package responsible for handling env files
+from dotenv import load_dotenv
 
-    # os is used to get the environment variables from the .env file
-    import os
+# os is used to get the environment variables from the .env file
+import os
 
-    # PipelineRunner is the main class used to run the pipeline
-    # get_excel_report is the function used to save the data to excel files
-    # it takes in a DatabaseWrapper object as a parameter, which connects to the database
-    # and retrives the data before writing it to 3 seperate excel files. One for each data type.
-    from academic_metrics.runners import PipelineRunner, get_excel_report
+# PipelineRunner is the main class used to run the pipeline
+# get_excel_report is the function used to save the data to excel files
+# it takes in a DatabaseWrapper object as a parameter, which connects to the database
+# and retrives the data before writing it to 3 seperate excel files. One for each data type.
+from academic_metrics.runners import PipelineRunner, get_excel_report
 
-    # DatabaseWrapper is the class used to connect to the database and retrieve the data
-    from academic_metrics.DB import DatabaseWrapper
+# DatabaseWrapper is the class used to connect to the database and retrieve the data
+from academic_metrics.DB import DatabaseWrapper
 
-    # load_dotenv is used to load the environment variables from the .env file
-    load_dotenv()
+# load_dotenv is used to load the environment variables from the .env file
+load_dotenv()
 
-    # Get the environment variables from the .env file
-    # If you used the same names as the ones in the examples, you can just copy paste these
-    # if you used different names, you will need to change them to match the ones in your .env file
-    ai_api_key = os.getenv("OPENAI_API_KEY")
-    mongodb_uri = os.getenv("MONGODB_URI")
-    db_name = os.getenv("DB_NAME")
+# Get the environment variables from the .env file
+# If you used the same names as the ones in the examples, you can just copy paste these
+# if you used different names, you will need to change them to match the ones in your .env file
+ai_api_key = os.getenv("OPENAI_API_KEY")
+mongodb_uri = os.getenv("MONGODB_URI")
+db_name = os.getenv("DB_NAME")
 
-    # Set the date range you want to process
-    # Years is a list of years as strings you want to process
-    # Months is a list of strings representing the months you want processed for each year
-    # For example if you want to process data from 2009-2024 for all months out of the year, you would do:
-    # Note: the process runs left to right, so from beginning of list to the end of the list,
-    # so this will process 2024, then 2023, then 2022, etc.
-    # Data will be saved after each month is processed.
-    years = [
-        "2024",
-        "2023",
-        "2022",
-        "2021",
-        "2020",
-        "2019",
-        "2018",
-        "2017",
-        "2016",
-        "2015",
-        "2014",
-        "2013",
-        "2012",
-        "2011",
-        "2010",
-        "2009",
-    ]
-    months = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
+# Set the date range you want to process
+# Years is a list of years as strings you want to process
+# Months is a list of strings representing the months you want processed for each year
+# For example if you want to process data from 2009-2024 for all months out of the year, you would do:
+# Note: the process runs left to right, so from beginning of list to the end of the list,
+# so this will process 2024, then 2023, then 2022, etc.
+# Data will be saved after each month is processed.
+years = [
+    "2024",
+    "2023",
+    "2022",
+    "2021",
+    "2020",
+    "2019",
+    "2018",
+    "2017",
+    "2016",
+    "2015",
+    "2014",
+    "2013",
+    "2012",
+    "2011",
+    "2010",
+    "2009",
+]
+months = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
 
-    # Loop over the years and months and run the pipeline for each month
-    #
-    # New objects are created for each month 
-    # to avoid memory issues as well as to avoid overwriting data
-    for year in years:
-        for month in months:
+# Loop over the years and months and run the pipeline for each month
+#
+# New objects are created for each month 
+# to avoid memory issues as well as to avoid overwriting data
+for year in years:
+    for month in months:
 
-            # Create a new PipelineRunner object for each month
-            # parameters:
-            # ai_api_key: the OpenAI API key
-            # crossref_affiliation: the affiliation to use for the Crossref API
-            # data_from_month: the month to start collecting data from
-            # data_to_month: the month to end collecting data on
-            # data_from_year: the year to start collecting data from
-            # data_to_year: the year to end collecting data on
-            # mongodb_uri: the URL of the MongoDB server
-            # db_name: the name of the database to use
-            pipeline_runner = PipelineRunner(
-                ai_api_key=ai_api_key,
-                crossref_affiliation="Salisbury University",
-                data_from_month=int(month),
-                data_to_month=int(month),
-                data_from_year=int(year),
-                data_to_year=int(year),
-                mongodb_uri=mongodb_uri,
-                db_name=db_name,
-            ) 
+        # Create a new PipelineRunner object for each month
+        # parameters:
+        # ai_api_key: the OpenAI API key
+        # crossref_affiliation: the affiliation to use for the Crossref API
+        # data_from_month: the month to start collecting data from
+        # data_to_month: the month to end collecting data on
+        # data_from_year: the year to start collecting data from
+        # data_to_year: the year to end collecting data on
+        # mongodb_uri: the URL of the MongoDB server
+        # db_name: the name of the database to use
+        pipeline_runner = PipelineRunner(
+            ai_api_key=ai_api_key,
+            crossref_affiliation="Salisbury University",
+            data_from_month=int(month),
+            data_to_month=int(month),
+            data_from_year=int(year),
+            data_to_year=int(year),
+            mongodb_uri=mongodb_uri,
+            db_name=db_name,
+        ) 
 
-            # Run the pipeline for the current month
-            pipeline_runner.run_pipeline()
+        # Run the pipeline for the current month
+        pipeline_runner.run_pipeline()
 
-    # Create a new DatabaseWrapper object so it can be given to get_excel_report
-    db = DatabaseWrapper(db_name=db_name, mongo_uri=mongodb_uri)
+# Create a new DatabaseWrapper object so it can be given to get_excel_report
+db = DatabaseWrapper(db_name=db_name, mongo_uri=mongodb_uri)
 
-    # Call the get_excel_report function, passing in the db object, to save the data to excel files
-    #
-    # Once this finishes running, you should have 3 excel files in your directory:
-    # article_data.xlsx, faculty_data.xlsx, and category_data.xlsx
-    get_excel_report(db)
-    ```
+# Call the get_excel_report function, passing in the db object, to save the data to excel files
+#
+# Once this finishes running, you should have 3 excel files in your directory:
+# article_data.xlsx, faculty_data.xlsx, and category_data.xlsx
+get_excel_report(db)
+```
 
-    </br>
+</br>
 
-3. **Run the script**
+##### 3. Run the script
 
-    ```bash
-    python run_am.py
-    ```
+```bash
+python run_am.py
+```
 
 </br>
 
@@ -568,42 +574,42 @@ For this options you will still need to create a python file, but the code will 
 
 </br>
 
-1. **Create the python file**
+##### 1. Create the python file
 
-    Within your directory, create a new python file, for this example we will be using `run_am.py`, but you can name it whatever you want.
+Within your directory, create a new python file, for this example we will be using `run_am.py`, but you can name it whatever you want.
 
-    **Linux/Mac**:
+**Linux/Mac**:
 
-    ```bash
-    touch run_am.py
-    ```
+```bash
+touch run_am.py
+```
 
-    **Windows (Command Prompt):**
+**Windows (Command Prompt):**
 
-    ```cmd
-    type nul > run_am.py
-    ```
+```cmd
+type nul > run_am.py
+```
 
-    **Windows (PowerShell):**
+**Windows (PowerShell):**
 
-    ```powershell
-    New-Item -Path run_am.py -Type File
-    ```
+```powershell
+New-Item -Path run_am.py -Type File
+```
 
-    You should now have a python file in your directory whose name matches the one you created.
+You should now have a python file in your directory whose name matches the one you created.
 
-    </br>
+</br>
 
-2. **Copy and paste the following code into the file you just created**
+##### 2. Copy and paste the following code into the file you just created
 
-    ```python
-    from dotenv import load_dotenv
-    from academic_metrics.runners import command_line_runner
+```python
+from dotenv import load_dotenv
+from academic_metrics.runners import command_line_runner
 
-    load_dotenv()
+load_dotenv()
 
-    command_line_runner()
-    ```
+command_line_runner()
+```
 
 > [!WARNING]
 > If you did not use `MONGODB_URI` and `OPENAI_API_KEY` as the variable names in the .env file, you will need to make a couple changes to the above code.
@@ -634,33 +640,33 @@ command_line_runner(
 
 </br>
 
-3. **Run the script**
+##### 3. Run the script
 
-    For this option you will still run the script from command line, but you will also be passing in arguments, details laid out below.
+For this option you will still run the script from command line, but you will also be passing in arguments, details laid out below.
 
-    There are various command line arguments you can pass in, almost all are detailed here, but to see a complete list you can run:
+There are various command line arguments you can pass in, almost all are detailed here, but to see a complete list you can run:
 
-    ```bash
-    python run_am.py --help
-    ```
+```bash
+python run_am.py --help
+```
 
-    When running the script, you can configure the pipeline by passing in the following arguments:
+When running the script, you can configure the pipeline by passing in the following arguments:
 
-    - `--from-month` - The month to start collecting data from, defaults to 1
-    - `--to-month` - The month to end collecting data on, defaults to 12
-    - `--from-year` - The year to start collecting data from, defaults to 2024
-    - `--to-year` - The year to end collecting data on, defaults to 2024
-    - `--db-name` - The name of the database to use (required)
-    - `--crossref-affiliation` - The affiliation to use for the Crossref API, defaults to Salisbury University (required)
+- `--from-month` - The month to start collecting data from, defaults to 1
+- `--to-month` - The month to end collecting data on, defaults to 12
+- `--from-year` - The year to start collecting data from, defaults to 2024
+- `--to-year` - The year to end collecting data on, defaults to 2024
+- `--db-name` - The name of the database to use (required)
+- `--crossref-affiliation` - The affiliation to use for the Crossref API, defaults to Salisbury University (required)
 
-    If you want to save the data to excel files you can pass in the `--as-excel` argument.
+If you want to save the data to excel files you can pass in the `--as-excel` argument.
 
 >[!NOTE]
 > The `--as-excel` argument is an additional action, it doesn't remove the the saving to other data formats, but merely adds the excel saving functionality.
 
 </br>
 
-#### Examples
+##### Examples
 
 Say you want to collect data for every month from 2019 to 2024 for Salisbury University and save it to excel files. You would run the following command:
 
@@ -692,6 +698,8 @@ python run_am.py \
 --as-excel \
 --db-name="Your_Database_Name"
 ```
+
+</br>
 
 **On AI Models**:
 

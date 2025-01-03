@@ -202,12 +202,11 @@ python -m venv <env_name>
 
 **macOS/Linux**:
 
-> [!TIP]  
-> There's a useful tip outlined in [this](#3-multiple-python-versions) section which covers **aliasing** the `python` and `pip` commands to use the version you'd like to use, it will streamline the below process and only takes a couple of seconds to do.
->
-> If you'd like to take advantage of aliasing, follow the above link to that section, complete the steps outlined in the tip, then come back to this section.
->
-> Otherwise, continue forward with this section.
+There's a useful tip outlined in [this](#3-multiple-python-versions) section which covers **aliasing** the `python` and `pip` commands to use the version you'd like to use, it will streamline the below process and only takes a couple of seconds to do.
+
+If you'd like to take advantage of aliasing, follow the above link to that section, complete the steps outlined in the tip, then come back to this section.
+
+Otherwise, continue forward with this section.
 
 ```bash
 python -m venv <env_name>
