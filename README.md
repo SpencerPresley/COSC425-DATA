@@ -89,7 +89,7 @@ Hey all, Spencer here, we are pleased to announce as of January 1st, 2025, you c
 
 1. **Installing and setting up Python 3.12:**
 
-    While you should be able to use any version of Python > 3.7, we recommend using Python 3.12 as that is the version we used to develop the system, and the one it's been tested on.
+    While you should be able to use any version of Python >= 3.7, we recommend using Python 3.12 as that is the version we used to develop the system, and the one it's been tested on.
 
     For a detailed Python installation guide, see our [Python Installation Guide](./additional_information/_guides/_python_install.md).
 
