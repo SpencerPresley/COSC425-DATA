@@ -226,8 +226,26 @@ brew services start mongodb-community
 
 **Linux**:
 
+Most common services to try:
+
 ```bash
 sudo systemctl start mongod
+```
+
+```bash
+sudo systemctl start mongodb
+```
+
+You can verify the correct service name on your system with:
+
+```bash
+systemctl list-units | grep mongo
+```
+
+If that gives you an `invalid permission` error, you can try:
+
+```bash
+sudo systemctl list-units | grep mongo
 ```
 
 ### Using mongosh
