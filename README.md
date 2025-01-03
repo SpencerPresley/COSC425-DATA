@@ -31,7 +31,7 @@ The system:
   - [Example Site and Demo](#example-site-and-demo)
   - [Installation and Setup Steps](#installation-and-setup-steps)
     - [0. External Setup](#0-external-setup)
-    - [1. Installation and Setup](#1-installation-and-setup)
+    - [1. Installation](#1-installation)
     - [2. Creating the directory and necessary files](#2-creating-the-directory-and-necessary-files)
     - [3. Setting up a Virtual Environment (Optional but Recommended)](#3-setting-up-a-virtual-environment-optional-but-recommended)
     - [4. Environment Setup](#4-environment-setup)
@@ -81,7 +81,7 @@ To see a demo of the site, you can watch the below video:
 
 ## Installation and Setup Steps
 
-Hey all, Spencer here, we are pleased to announce as of January 1st, 2025, you can now install the *Academic Metrics* package via *pip* and easily run the entire system via a short script or command line interface. Below are instructions outlining step by step how to do it. The steps walkthrough each piece of the process starting with installing python and setting up your environment, if you do not need help with those type of steps or want to jump straight to the code, first see [1. Installation and setup](#1-installation-and-setup), then you can skip to [6. Using the package](#6-using-the-package).
+Hey all, Spencer here, we are pleased to announce as of January 1st, 2025, you can now install the *Academic Metrics* package via *pip* and easily run the entire system via a short script or command line interface. Below are instructions outlining step by step how to do it. The steps walkthrough each piece of the process starting with installing python and setting up your environment, if you do not need help with those type of steps or want to jump straight to the code, first see [1. Installation](#1-installation), then you can skip to [6. Using the package](#6-using-the-package).
 
 </br>
 
@@ -113,7 +113,7 @@ Hey all, Spencer here, we are pleased to announce as of January 1st, 2025, you c
 
     ---
 
-### 1. Installation and Setup
+### 1. Installation
 
 Install `academic_metrics>=1.0.98` via pip.
 
