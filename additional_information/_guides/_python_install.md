@@ -407,11 +407,15 @@ pip list
 
 ### Running a Python Script
 
-- If you followed the aliases your python and pip commands as outlined in [Aliasing Python and Pip](#aliasing-python-and-pip) section, you can simply use the following commands to run a python script:
+A useful tip to know, which will standardize and simplify the process of running scripts, is to alias the `python` command to the version you'd like to use. You can find more information on how to do this in the [Aliasing Python and Pip](#aliasing-python-and-pip) section.
 
-    ```bash
-    python script.py
-    ```
+If you've aliased the `python` or `python3` commands to `python3.12`, you can simply use the following command to run a python script:
+
+```bash
+python script.py
+```
+
+If you haven't aliased the `python` or `python3` commands to `python3.12` for whatever reason, then you can follow the below steps to learn how to run a python script:
 
 - If `python` is the command tied to your python installation (doesn't give the error `python: command not found`), and `python` is aliased to `python3.12` when running the command `which python`, you can use the following command to run a python script:
 
