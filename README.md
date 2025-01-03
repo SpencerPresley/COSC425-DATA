@@ -743,7 +743,7 @@ python run_am.py \
 >
 > If you are interested in using a larger model, I recommend you first start with a smaller model on a limited date range to see if you're satisfied with the results.
 >
-> If you do decide to use a larger model, I recommend you start with a smaller date range to see what it costs, and then work your way up.
+> If you then decide to use a larger model such as `gpt-4o`, whether it be out of curiosity or you want to see if it provides better results, I still recommend you start with a smaller date range to get an idea of what it will cost. If you then decide the cost is acceptable, then you should start expanding the date range.
 
 </br>
 
