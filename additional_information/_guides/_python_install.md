@@ -429,7 +429,7 @@ If you haven't aliased the `python` or `python3` commands to `python3.12` for wh
     python3 script.py
     ```
 
-- If none of the above works, and you're sure you have python 3.12 installed, you can use the following command to run a python script:
+- If none of the above works, and you're sure you have python 3.12 installed (you can check this by running the command `which python3.12`), you can use the following command to run a python script:
 
     ```bash
     python3.12 script.py
