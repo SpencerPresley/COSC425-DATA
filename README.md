@@ -735,7 +735,9 @@ python run_am.py \
 >
 > You can check the cost of each model at [https://openai.com/api/pricing/](https://openai.com/api/pricing/).
 >
-> During testing we found that using `gpt-4o-mini` was the most cost effective and provided good results.
+> During testing we found that using `gpt-4o-mini` was the most cost effective.
+>
+> In addition we spent a lot of time testing prompts and models, our prompts have been tuned to a point where they elicit good results from `gpt-4o-mini`, thus a larger model may not be necessary to get the results you want.
 >
 > If you want to use a larger model like `gpt-4o` you can do so, but be warned it could end up running through your funds very quickly, depending on the size of the date range you're processing, and how many articles Crossref covers for the institution being processed.
 >
