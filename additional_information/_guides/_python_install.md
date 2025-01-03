@@ -359,11 +359,11 @@ conda activate <env_name>
 > [!TIP]  
 > **Aliasing the `python` and `pip` commands**
 >
-> For **macOS/Linux** If you'd like to be able to use `python` and `pip` instead of `python3`/`python3.12` and `pip3`/`pip3.12` you can add the following to your shell profile:
+> For **macOS/Linux** If you'd like to be able to use `python` instead of `python3`/`python3.12`, you can add the following to your shell profile:
 >
 > ```bash
 > alias python=python3.12
-> alias pip=pip3.12
+> alias pip="python3.12 -m pip"
 > ```
 >
 > To do so run the following command:
@@ -372,7 +372,7 @@ conda activate <env_name>
 >
 > ```bash
 > echo 'alias python=python3.12' >> ~/.zshrc
-> echo 'alias pip=pip3.12' >> ~/.zshrc
+> echo 'alias pip="python3.12 -m pip"' >> ~/.zshrc
 > source ~/.zshrc
 > ```
 >
@@ -380,7 +380,7 @@ conda activate <env_name>
 >
 > ```bash
 > echo 'alias python=python3.12' >> ~/.bashrc
-> echo 'alias pip=pip3.12' >> ~/.bashrc
+> echo 'alias pip="python3.12 -m pip"' >> ~/.bashrc
 > source ~/.bashrc
 > ```
 >
@@ -429,17 +429,17 @@ conda activate <env_name>
 >
 > ```bash
 > alias python=python3.x
-> alias pip=pip3.x
+> alias pip="python3.x -m pip"
 > ```
 >
 > **Bash**:
 >
 > ```bash
 > alias python=python3.x
-> alias pip=pip3.x
+> alias pip="python3.x -m pip"
 > ```
 >
-> Where `x` is the version extension you'd like to use, such as `3.12` or `3.11`.
+> Where `x` is the version extension you'd like to use, such as `3.12`, `3.11`, `3.9`, etc.
 
 </br>
 
