@@ -1,19 +1,15 @@
 # Academic Metrics (Archive)
 
-> [!IMPORTANT]
-> **Please see the migration notice below.**
->
-> **This projects main repository has moved.**
->
-> **This repository now only serves as an archive of the old repository.**
->
-> **The reason for the move is to clean up the repository of old files, while maintaining them for reference.**
-
 ## Migration Notice
 
-**THIS REPOSITORY HAS MOVED!**
-
-Please see the new repository **[here](https://github.com/SpencerPresley/AcademicMetrics)**
+> [!IMPORTANT]
+> This projects main repository has moved.
+>
+> This repository now only serves as an archive of the old repository.
+>
+> The reason for the move is to clean up the repository of old files, while maintaining them for reference.
+>
+> You can find the new repository at [https://github.com/SpencerPresley/AcademicMetrics](https://github.com/SpencerPresley/AcademicMetrics)
 
 ## Welcome to Academic Metrics
 
