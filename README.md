@@ -1,12 +1,12 @@
 # Academic Metrics
 
-> [!CRITICAL]
+> [!IMPORTANT]
 > This Repository has moved.
 > Please see the new repository **[here](https://github.com/SpencerPresley/AcademicMetrics)**
 
 Welcome to Academic Metrics!
 
-> [!IMPORTANT]  
+> [!NOTE]  
 > 🎉 **Now Available on PyPI!**  
 > Install with: `pip install academic-metrics`
 >
