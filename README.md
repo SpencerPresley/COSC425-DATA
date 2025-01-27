@@ -24,9 +24,11 @@ The system can be used to:
 - Store results in MongoDB (local or live via atlas), local JSON files, and Excel files
 
 > [!TIP]
-> Academic Metrics utilizes an early version of [AIChainComposer](https://github.com/SpencerPresley/AIChainComposer) for workingn with LLMs. *AIChainComposer* is a powerful tool to quickly, easily, and efficiently build out programmatic workflows with LLMs.
+> Academic Metrics utilizes an early version of **[AIChainComposer](https://github.com/SpencerPresley/AIChainComposer)** for working with LLMs.
 >
-> AIChainComposer is now provided as a standalone package, and is available on [PyPI](pypi.org/project/ChainComposer/), allowing you to use the same tools that allowed for the development of Academic Metrics in your own projects.
+> **AIChainComposer** is a powerful tool to quickly, easily, and efficiently build out programmatic workflows with LLMs.
+>
+> **AIChainComposer** is now provided as a standalone package, and is available on [PyPI](pypi.org/project/ChainComposer/), allowing you to use the same tools that allowed for the development of Academic Metrics in your own projects.
 
 ## Table of Contents
 
