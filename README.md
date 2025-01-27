@@ -13,27 +13,22 @@
 
 ## Welcome to Academic Metrics
 
-> [!NOTE]  
-> 🎉 **Now Available on PyPI!**  
-> Install with: `pip install academic-metrics`
+**What is Academic Metrics?**
+
+*Academic Metrics* is an AI-powered toolkit for collecting, classifying, and analyzing academic publications.
+
+The system can be used to:
+
+- Collect publication data from Crossref API based on institutional affiliation
+- Classify research into NSF PhD research focus areas utilizing LLMs
+- Extract and analyze themes and methodologies from abstracts
+- Generate comprehensive analytics at article, author, and category levels
+- Store results in MongoDB (local or live via atlas), local JSON files, and Excel files
+
+> [!TIP]
+> Academic Metrics utilizes an early version of [AIChainComposer](https://github.com/SpencerPresley/AIChainComposer) for workingn with LLMs. *AIChainComposer* is a powerful tool to quickly, easily, and efficiently build out programmatic workflows with LLMs.
 >
-> This is the recommended installation method for most users.
->
-> See [**Installation and Setup Steps**](#installation-and-setup-steps)
-
-**What is it?**
-
-This repository (COSC425-DATA) hosts the source code for the **Academic Metrics** package.
-
-**Academic Metrics** is an AI-powered toolkit for collecting and classifying academic research publications.
-
-The system:
-
-- Collects publication data from Crossref API based on institutional affiliation
-- Uses LLMs to classify research into NSF PhD research focus areas
-- Extracts and analyzes themes and methodologies from abstracts
-- Generates comprehensive analytics at article, author, and category levels
-- Stores results in MongoDB (local or live via atlas), local JSON files, and optionally Excel files
+> AIChainComposer is now provided as a standalone package, and is available on [PyPI](pypi.org/project/ChainComposer/), allowing you to use the same tools that allowed for the development of Academic Metrics in your own projects.
 
 ## Table of Contents
 
