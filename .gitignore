@@ -173,3 +173,7 @@ Miniconda3-latest-Linux-x86_64.sh
 .DS_Store
 /apitoolchain
 **.log
+
+# Migration Script and requirements file
+migrate_repo.py
+migrate_requirements.txt
