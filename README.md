@@ -5,11 +5,9 @@
 > [!IMPORTANT]
 > This projects main repository has moved.
 >
-> This repository now only serves as an archive of the old repository.
+> You can find the new repository at [https://github.com/SpencerPresley/AcademicMetrics](https://github.com/SpencerPresley/AcademicMetrics)
 >
 > The reason for the move is to clean up the repository of old files, while maintaining them for reference.
->
-> You can find the new repository at [https://github.com/SpencerPresley/AcademicMetrics](https://github.com/SpencerPresley/AcademicMetrics)
 
 ## Welcome to Academic Metrics
 
