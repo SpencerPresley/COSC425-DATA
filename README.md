@@ -1,13 +1,13 @@
-# Academic Metrics
+# Academic Metrics (Archive)
 
 > [!IMPORTANT]
-> Please see the migration notice below.
+> **Please see the migration notice below.**
 >
-> This projects main repository has moved.
+> **This projects main repository has moved.**
 >
-> This repository now only serves as an archive of the old repository.
+> **This repository now only serves as an archive of the old repository.**
 >
-> The reason for the move is to clean up the repository of old files, while maintaining them for reference.
+> **The reason for the move is to clean up the repository of old files, while maintaining them for reference.**
 
 ## Migration Notice
 
@@ -41,7 +41,7 @@ The system:
 
 ## Table of Contents
 
-- [Academic Metrics](#academic-metrics)
+- [Academic Metrics (Archive)](#academic-metrics-archive)
   - [Migration Notice](#migration-notice)
   - [Welcome to Academic Metrics](#welcome-to-academic-metrics)
   - [Table of Contents](#table-of-contents)
